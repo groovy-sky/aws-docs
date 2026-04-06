@@ -8,7 +8,7 @@ existing policy attached to the directory bucket. If the access preview is for a
 resource and you do not specify the Amazon S3 bucket policy, the access preview assumes an
 directory bucket without a policy. To propose deletion of an existing bucket policy, you
 can specify an empty string. For more information about Amazon S3 directory bucket policies, see
-[Example bucket policies for directory buckets](../../../../services/s3/latest/userguide/s3-express-security-iam-example-bucket-policies.md) in the Amazon Simple Storage Service User
+[Example bucket policies for directory buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-security-iam-example-bucket-policies.html) in the Amazon Simple Storage Service User
 Guide.
 
 ## Contents
@@ -35,13 +35,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/accessanalyzer-2019-11-01/s3expressdirectorybucketconfiguration.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/accessanalyzer-2019-11-01/S3ExpressDirectoryBucketConfiguration)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/accessanalyzer-2019-11-01/s3expressdirectorybucketconfiguration.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/accessanalyzer-2019-11-01/S3ExpressDirectoryBucketConfiguration)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/accessanalyzer-2019-11-01/s3expressdirectorybucketconfiguration.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/accessanalyzer-2019-11-01/S3ExpressDirectoryBucketConfiguration)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
 
 S3ExpressDirectoryAccessPointConfiguration
 

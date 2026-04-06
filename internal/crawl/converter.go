@@ -19,10 +19,11 @@ var blankLinePattern = regexp.MustCompile(`\n{3,}`)
 type Converter struct {
 	config config.Config
 	mapper *Mapper
+	exists func(string) bool
 }
 
-func NewConverter(cfg config.Config, mapper *Mapper) *Converter {
-	return &Converter{config: cfg, mapper: mapper}
+func NewConverter(cfg config.Config, mapper *Mapper, exists func(string) bool) *Converter {
+	return &Converter{config: cfg, mapper: mapper, exists: exists}
 }
 
 func (c *Converter) Convert(document ExtractedDocument, sourceURL string) (MarkdownDocument, error) {
@@ -88,6 +89,11 @@ func (c *Converter) rewriteHref(sourceURL string, href string) string {
 	anchor := ""
 	if parsed, err := url.Parse(href); err == nil && parsed.Fragment != "" {
 		anchor = "#" + parsed.Fragment
+	}
+
+	targetPath := c.mapper.RepoPath(resolved)
+	if c.exists == nil || !c.exists(targetPath) {
+		return resolved + anchor
 	}
 
 	return c.mapper.RelativeLink(sourceURL, resolved) + anchor

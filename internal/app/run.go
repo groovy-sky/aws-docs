@@ -13,13 +13,17 @@ import (
 )
 
 type Options struct {
-	ConfigPath string
-	Mode       string
-	URL        string
-	MaxPages   int
+	ConfigPath  string
+	Mode        string
+	URL         string
+	MaxSections int
 }
 
 func Run(ctx context.Context, options Options) error {
+	if options.Mode == "" || options.Mode == "partial" {
+		options.Mode = "incremental"
+	}
+
 	workingDir, err := os.Getwd()
 	if err != nil {
 		return fmt.Errorf("get working directory: %w", err)
@@ -30,8 +34,8 @@ func Run(ctx context.Context, options Options) error {
 		return err
 	}
 	metadataPath := resolvePath(workingDir, cfg.MetadataDB)
-	if options.MaxPages > 0 {
-		cfg.MaxPages = options.MaxPages
+	if options.MaxSections > 0 {
+		cfg.MaxSections = options.MaxSections
 	}
 
 	database, err := store.Open(metadataPath)
@@ -48,14 +52,14 @@ func Run(ctx context.Context, options Options) error {
 
 	mapper := crawl.NewMapper(cfg.OutputDir)
 	extractor := crawl.NewExtractor(cfg)
-	converter := crawl.NewConverter(cfg, mapper)
 	writer := write.New(workingDir)
+	converter := crawl.NewConverter(cfg, mapper, writer.Exists)
 
 	runner := crawl.NewCrawler(cfg, database, fetcher, extractor, converter, mapper, writer, robots)
 	return runner.Run(ctx, crawl.RunOptions{
-		Mode:     options.Mode,
-		URL:      options.URL,
-		MaxPages: cfg.MaxPages,
+		Mode:        options.Mode,
+		URL:         options.URL,
+		MaxSections: cfg.MaxSections,
 	})
 }
 

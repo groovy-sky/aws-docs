@@ -3,7 +3,7 @@
 The proposed access control configuration for an Amazon EBS volume snapshot. You can propose
 a configuration for a new Amazon EBS volume snapshot or an Amazon EBS volume snapshot that you own by
 specifying the user IDs, groups, and optional AWS KMS encryption key. For more information,
-see [ModifySnapshotAttribute](../../../awsec2/latest/apireference/api-modifysnapshotattribute.md).
+see [ModifySnapshotAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifySnapshotAttribute.html).
 
 ## Contents
 
@@ -67,13 +67,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/accessanalyzer-2019-11-01/ebssnapshotconfiguration.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/accessanalyzer-2019-11-01/EbsSnapshotConfiguration)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/accessanalyzer-2019-11-01/ebssnapshotconfiguration.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/accessanalyzer-2019-11-01/EbsSnapshotConfiguration)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/accessanalyzer-2019-11-01/ebssnapshotconfiguration.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/accessanalyzer-2019-11-01/EbsSnapshotConfiguration)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
 
 DynamodbTableConfiguration
 

@@ -5,7 +5,7 @@ apply to the Amazon S3 access point. You can make the access point accessible fr
 or you can specify that all requests made through that access point must originate from a
 specific virtual private cloud (VPC). You can specify only one type of network
 configuration. For more information, see [Creating access\
-points](../../../../services/s3/latest/dev/creating-access-points.md).
+points](https://docs.aws.amazon.com/AmazonS3/latest/dev/creating-access-points.html).
 
 ## Contents
 
@@ -26,7 +26,7 @@ Required: No
 
 The proposed virtual private cloud (VPC) configuration for the Amazon S3 access point. VPC
 configuration does not apply to multi-region access points. For more information, see
-[VpcConfiguration](../../../../services/s3/latest/api/api-control-vpcconfiguration.md).
+[VpcConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_VpcConfiguration.html).
 
 Type: [VpcConfiguration](api-vpcconfiguration.md) object
 
@@ -36,13 +36,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/accessanalyzer-2019-11-01/networkoriginconfiguration.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/accessanalyzer-2019-11-01/NetworkOriginConfiguration)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/accessanalyzer-2019-11-01/networkoriginconfiguration.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/accessanalyzer-2019-11-01/NetworkOriginConfiguration)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/accessanalyzer-2019-11-01/networkoriginconfiguration.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/accessanalyzer-2019-11-01/NetworkOriginConfiguration)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
 
 Location
 

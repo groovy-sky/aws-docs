@@ -15,7 +15,14 @@ func NormalizeURL(rawURL string, cfg config.Config) (string, error) {
 		return "", err
 	}
 
+	parsed.Scheme = strings.ToLower(parsed.Scheme)
 	parsed.Host = strings.ToLower(parsed.Host)
+	if parsed.Scheme == "" {
+		parsed.Scheme = "https"
+	}
+	if parsed.Scheme == "http" && hostAllowed(parsed.Host, cfg) {
+		parsed.Scheme = "https"
+	}
 	parsed.Fragment = ""
 	if parsed.Path == "" {
 		parsed.Path = "/"
@@ -73,14 +80,7 @@ func IsAllowedURL(rawURL string, cfg config.Config) bool {
 	}
 	pathValue := strings.ToLower(parsed.Path)
 	host := strings.ToLower(parsed.Host)
-	allowed := false
-	for _, value := range cfg.AllowedHosts {
-		if host == value {
-			allowed = true
-			break
-		}
-	}
-	if !allowed {
+	if !hostAllowed(host, cfg) {
 		return false
 	}
 
@@ -136,6 +136,16 @@ func isLikelyDocPath(pathValue string) bool {
 func shouldDropQueryParam(key string, ignored []string) bool {
 	for _, prefix := range ignored {
 		if prefix != "" && strings.HasPrefix(key, prefix) {
+			return true
+		}
+	}
+	return false
+}
+
+func hostAllowed(host string, cfg config.Config) bool {
+	host = strings.ToLower(strings.TrimSpace(host))
+	for _, value := range cfg.AllowedHosts {
+		if host == strings.ToLower(strings.TrimSpace(value)) {
 			return true
 		}
 	}

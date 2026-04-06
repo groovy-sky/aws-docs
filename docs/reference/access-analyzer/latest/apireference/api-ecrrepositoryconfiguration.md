@@ -2,7 +2,7 @@
 
 The proposed access control configuration for an Amazon ECR repository. You can propose a
 configuration for a new Amazon ECR repository or an existing Amazon ECR repository that you own by
-specifying the Amazon ECR policy. For more information, see [Repository](../../../amazonecr/latest/apireference/api-repository.md).
+specifying the Amazon ECR policy. For more information, see [Repository](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Repository.html).
 
 - If the configuration is for an existing Amazon ECR repository and you do not specify
 the Amazon ECR policy, then the access preview uses the existing Amazon ECR policy for the
@@ -20,7 +20,7 @@ empty string for the Amazon ECR policy.
 
 The JSON repository policy text to apply to the Amazon ECR repository. For more information,
 see [Private repository\
-policy examples](../../../../services/amazonecr/latest/userguide/repository-policy-examples.md) in the _Amazon ECR User Guide_.
+policy examples](https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-policy-examples.html) in the _Amazon ECR User Guide_.
 
 Type: String
 
@@ -30,13 +30,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/accessanalyzer-2019-11-01/ecrrepositoryconfiguration.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/accessanalyzer-2019-11-01/EcrRepositoryConfiguration)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/accessanalyzer-2019-11-01/ecrrepositoryconfiguration.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/accessanalyzer-2019-11-01/EcrRepositoryConfiguration)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/accessanalyzer-2019-11-01/ecrrepositoryconfiguration.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/accessanalyzer-2019-11-01/EcrRepositoryConfiguration)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
 
 EbsSnapshotConfiguration
 

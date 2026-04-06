@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"sort"
 
 	"github.com/groovy-sky/aws-docs/internal/model"
 	bolt "go.etcd.io/bbolt"
@@ -13,6 +14,8 @@ import (
 var (
 	pagesBucket = []byte("pages")
 	linksBucket = []byte("links")
+	seedsBucket = []byte("seeds")
+	seedsKey    = []byte("all")
 )
 
 type Store struct {
@@ -33,6 +36,9 @@ func Open(path string) (*Store, error) {
 			return err
 		}
 		if _, err := tx.CreateBucketIfNotExists(linksBucket); err != nil {
+			return err
+		}
+		if _, err := tx.CreateBucketIfNotExists(seedsBucket); err != nil {
 			return err
 		}
 		return nil
@@ -99,5 +105,41 @@ func (s *Store) PutLinks(rawURL string, links []string) error {
 			return err
 		}
 		return tx.Bucket(linksBucket).Put([]byte(rawURL), encoded)
+	})
+}
+
+func (s *Store) GetSeeds() ([]string, error) {
+	var seeds []string
+	err := s.db.View(func(tx *bolt.Tx) error {
+		value := tx.Bucket(seedsBucket).Get(seedsKey)
+		if value == nil {
+			return nil
+		}
+		return json.Unmarshal(value, &seeds)
+	})
+	if err != nil {
+		return nil, fmt.Errorf("get seeds: %w", err)
+	}
+	return seeds, nil
+}
+
+func (s *Store) PutSeeds(seeds []string) error {
+	unique := make([]string, 0, len(seeds))
+	seen := map[string]struct{}{}
+	for _, seed := range seeds {
+		if _, exists := seen[seed]; exists {
+			continue
+		}
+		seen[seed] = struct{}{}
+		unique = append(unique, seed)
+	}
+	sort.Strings(unique)
+
+	return s.db.Update(func(tx *bolt.Tx) error {
+		encoded, err := json.Marshal(unique)
+		if err != nil {
+			return err
+		}
+		return tx.Bucket(seedsBucket).Put(seedsKey, encoded)
 	})
 }

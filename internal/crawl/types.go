@@ -24,7 +24,7 @@ type MarkdownDocument struct {
 }
 
 type RunOptions struct {
-	Mode     string
-	URL      string
-	MaxPages int
+	Mode        string
+	URL         string
+	MaxSections int
 }

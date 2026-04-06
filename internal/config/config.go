@@ -14,7 +14,9 @@ type Config struct {
 	AllowedHosts          []string `json:"allowed_hosts"`
 	OutputDir             string   `json:"output_dir"`
 	MetadataDB            string   `json:"metadata_db"`
+	EnableRobotsStructure bool     `json:"enable_robots_structure"`
 	EnableRobotsSitemaps  bool     `json:"enable_robots_sitemaps"`
+	MaxRobotsSections     int      `json:"max_robots_sections"`
 	MaxSitemapURLs        int      `json:"max_sitemap_urls"`
 	MaxSitemapFiles       int      `json:"max_sitemap_files"`
 	UserAgent             string   `json:"user_agent"`
@@ -23,7 +25,7 @@ type Config struct {
 	Burst                 int      `json:"burst"`
 	MaxRetries            int      `json:"max_retries"`
 	RequestTimeoutSeconds int      `json:"request_timeout_seconds"`
-	MaxPages              int      `json:"max_pages"`
+	MaxSections           int      `json:"max_sections"`
 	Selectors             []string `json:"selectors"`
 	ExcludeSelectors      []string `json:"exclude_selectors"`
 	IgnoredQueryParams    []string `json:"ignored_query_params"`
@@ -42,7 +44,9 @@ func Default() Config {
 		AllowedHosts:          []string{"docs.aws.amazon.com"},
 		OutputDir:             "docs",
 		MetadataDB:            "metadata/crawl.db",
+		EnableRobotsStructure: true,
 		EnableRobotsSitemaps:  true,
+		MaxRobotsSections:     500,
 		MaxSitemapURLs:        50000,
 		MaxSitemapFiles:       1000,
 		UserAgent:             "aws-docs-mirror/0.1 (+https://github.com/groovy-sky/aws-docs)",
@@ -51,7 +55,7 @@ func Default() Config {
 		Burst:                 1,
 		MaxRetries:            3,
 		RequestTimeoutSeconds: 20,
-		MaxPages:              25,
+		MaxSections:           25,
 		Selectors: []string{
 			"#main-content",
 			"main",
@@ -137,6 +141,9 @@ func (c *Config) normalize() {
 	if c.UserAgent == "" {
 		c.UserAgent = Default().UserAgent
 	}
+	if c.MaxRobotsSections < 1 {
+		c.MaxRobotsSections = 500
+	}
 	if c.MaxSitemapURLs < 1 {
 		c.MaxSitemapURLs = 50000
 	}
@@ -158,8 +165,8 @@ func (c *Config) normalize() {
 	if c.RequestTimeoutSeconds < 1 {
 		c.RequestTimeoutSeconds = 20
 	}
-	if c.MaxPages < 0 {
-		c.MaxPages = 0
+	if c.MaxSections < 0 {
+		c.MaxSections = 0
 	}
 	if len(c.AllowedHosts) == 0 {
 		c.AllowedHosts = []string{"docs.aws.amazon.com"}

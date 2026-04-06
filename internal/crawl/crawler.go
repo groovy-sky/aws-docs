@@ -44,23 +44,40 @@ func (c *Crawler) Run(ctx context.Context, options RunOptions) error {
 		return err
 	}
 
-	seen := make(map[string]struct{}, len(queue))
-	for _, item := range queue {
-		seen[item] = struct{}{}
+	sectionLimitedMode := options.Mode == "incremental" || options.Mode == "partial"
+	allowedSections := map[string]struct{}{}
+	if sectionLimitedMode && options.MaxSections > 0 {
+		for _, item := range queue {
+			section := sectionKey(item)
+			if _, exists := allowedSections[section]; exists {
+				continue
+			}
+			allowedSections[section] = struct{}{}
+			if len(allowedSections) >= options.MaxSections {
+				break
+			}
+		}
 	}
 
-	processed := 0
-	for len(queue) > 0 {
-		if options.MaxPages > 0 && processed >= options.MaxPages {
-			break
+	seen := make(map[string]struct{}, len(queue))
+	filteredQueue := make([]string, 0, len(queue))
+	for _, item := range queue {
+		if len(allowedSections) > 0 {
+			if _, ok := allowedSections[sectionKey(item)]; !ok {
+				continue
+			}
 		}
+		seen[item] = struct{}{}
+		filteredQueue = append(filteredQueue, item)
+	}
+	queue = filteredQueue
 
+	for len(queue) > 0 {
 		current := queue[0]
 		queue = queue[1:]
 		if err := c.processURL(ctx, current, options.Mode); err != nil {
 			log.Printf("skip %s: %v", current, err)
 		}
-		processed++
 
 		if options.Mode == "refresh-url" {
 			continue
@@ -82,6 +99,11 @@ func (c *Crawler) Run(ctx context.Context, options RunOptions) error {
 			if !IsAllowedURL(link, c.config) || !c.allowedByRobots(link) {
 				continue
 			}
+			if len(allowedSections) > 0 {
+				if _, ok := allowedSections[sectionKey(link)]; !ok {
+					continue
+				}
+			}
 			seen[link] = struct{}{}
 			queue = append(queue, link)
 		}
@@ -102,9 +124,47 @@ func (c *Crawler) seedQueue(ctx context.Context, options RunOptions) ([]string, 
 		return []string{normalized}, nil
 	}
 
-	queue := make([]string, 0, len(c.config.Seeds))
+	storedSeeds, err := c.store.GetSeeds()
+	if err != nil {
+		return nil, err
+	}
+	if len(storedSeeds) > 0 {
+		normalizedSeeds := make([]string, 0, len(storedSeeds))
+		seenNormalized := map[string]struct{}{}
+		changed := false
+		for _, seed := range storedSeeds {
+			normalized, normalizeErr := NormalizeURL(seed, c.config)
+			if normalizeErr != nil {
+				changed = true
+				continue
+			}
+			if normalized != seed {
+				changed = true
+			}
+			if _, exists := seenNormalized[normalized]; exists {
+				changed = true
+				continue
+			}
+			seenNormalized[normalized] = struct{}{}
+			normalizedSeeds = append(normalizedSeeds, normalized)
+		}
+		if changed {
+			if err := c.store.PutSeeds(normalizedSeeds); err != nil {
+				return nil, err
+			}
+			storedSeeds = normalizedSeeds
+		}
+	}
+	if len(storedSeeds) == 0 {
+		storedSeeds, err = c.discoverAndPersistSeeds(ctx)
+		if err != nil {
+			return nil, err
+		}
+	}
+
+	queue := make([]string, 0, len(storedSeeds))
 	seen := map[string]struct{}{}
-	for _, seed := range c.config.Seeds {
+	for _, seed := range storedSeeds {
 		normalized, err := NormalizeURL(seed, c.config)
 		if err != nil {
 			return nil, fmt.Errorf("normalize seed %q: %w", seed, err)
@@ -117,7 +177,21 @@ func (c *Crawler) seedQueue(ctx context.Context, options RunOptions) ([]string, 
 		}
 	}
 
-	if c.config.EnableRobotsSitemaps {
+	if len(queue) == 0 {
+		for _, seed := range c.config.Seeds {
+			normalized, err := NormalizeURL(seed, c.config)
+			if err != nil {
+				return nil, fmt.Errorf("normalize fallback seed %q: %w", seed, err)
+			}
+			if _, exists := seen[normalized]; exists || !IsAllowedURL(normalized, c.config) {
+				continue
+			}
+			seen[normalized] = struct{}{}
+			queue = append(queue, normalized)
+		}
+	}
+
+	if options.Mode == "full" && c.config.EnableRobotsSitemaps {
 		sitemapURLs, err := DiscoverURLsFromRobotsSitemaps(ctx, c.fetcher.HTTPClient(), c.config)
 		if err != nil {
 			log.Printf("sitemap discovery failed: %v", err)
@@ -130,20 +204,68 @@ func (c *Crawler) seedQueue(ctx context.Context, options RunOptions) ([]string, 
 				queue = append(queue, discoveredURL)
 			}
 
-			serviceRootSeeds := DeriveServiceRootSeeds(sitemapURLs, c.config)
-			for _, rootURL := range serviceRootSeeds {
-				if _, exists := seen[rootURL]; exists {
-					continue
-				}
-				seen[rootURL] = struct{}{}
-				queue = append(queue, rootURL)
-			}
-
-			log.Printf("seeded %d URLs and %d service roots from robots sitemaps", len(sitemapURLs), len(serviceRootSeeds))
+			log.Printf("seeded %d sitemap URLs for full crawl", len(sitemapURLs))
 		}
 	}
 
 	return queue, nil
+}
+
+func (c *Crawler) discoverAndPersistSeeds(ctx context.Context) ([]string, error) {
+	seeds := make([]string, 0)
+	seen := map[string]struct{}{}
+
+	addSeed := func(rawURL string) {
+		normalized, err := NormalizeURL(rawURL, c.config)
+		if err != nil || !IsAllowedURL(normalized, c.config) {
+			return
+		}
+		if _, exists := seen[normalized]; exists {
+			return
+		}
+		seen[normalized] = struct{}{}
+		seeds = append(seeds, normalized)
+	}
+
+	for _, host := range c.config.AllowedHosts {
+		addSeed("https://" + host + "/")
+	}
+
+	if c.config.EnableRobotsStructure {
+		for _, host := range c.config.AllowedHosts {
+			structure, err := DiscoverRobotsStructure(ctx, c.fetcher.HTTPClient(), host, c.config)
+			if err != nil {
+				log.Printf("robots structure discovery failed for %s: %v", host, err)
+				continue
+			}
+			for _, rootURL := range structure.SectionRoots {
+				addSeed(rootURL)
+			}
+		}
+	}
+
+	if c.config.EnableRobotsSitemaps {
+		sitemapURLs, err := DiscoverURLsFromRobotsSitemaps(ctx, c.fetcher.HTTPClient(), c.config)
+		if err != nil {
+			log.Printf("sitemap discovery failed: %v", err)
+		} else {
+			for _, rootURL := range DeriveServiceRootSeeds(sitemapURLs, c.config) {
+				addSeed(rootURL)
+			}
+		}
+	}
+
+	if len(seeds) == 0 {
+		for _, seed := range c.config.Seeds {
+			addSeed(seed)
+		}
+	}
+
+	if err := c.store.PutSeeds(seeds); err != nil {
+		return nil, err
+	}
+	log.Printf("stored %d robots-derived seeds in metadata db", len(seeds))
+	return seeds, nil
 }
 
 func (c *Crawler) processURL(ctx context.Context, pageURL string, mode string) error {
@@ -157,6 +279,9 @@ func (c *Crawler) processURL(ctx context.Context, pageURL string, mode string) e
 	}
 	expectedPath := c.mapper.RepoPath(pageURL)
 	if mode == "full" {
+		previous = nil
+	} else if mode == "refresh-url" {
+		// Refresh should always re-fetch and regenerate content for the requested URL.
 		previous = nil
 	} else if previous != nil && (previous.RepoPath != expectedPath || !c.writer.Exists(expectedPath)) {
 		previous = nil
@@ -223,8 +348,13 @@ func (c *Crawler) processURL(ctx context.Context, pageURL string, mode string) e
 	if err := c.store.PutLinks(canonicalURL, discovered); err != nil {
 		return err
 	}
+	if canonicalURL != pageURL {
+		if err := c.store.PutLinks(pageURL, discovered); err != nil {
+			return err
+		}
+	}
 
-	return c.store.PutPage(model.PageRecord{
+	record := model.PageRecord{
 		URL:          canonicalURL,
 		RepoPath:     repoPath,
 		ETag:         result.ETag,
@@ -232,7 +362,19 @@ func (c *Crawler) processURL(ctx context.Context, pageURL string, mode string) e
 		ContentHash:  markdownDocument.ContentHash,
 		LastFetched:  time.Now().UTC(),
 		StatusCode:   result.StatusCode,
-	})
+	}
+	if err := c.store.PutPage(record); err != nil {
+		return err
+	}
+
+	if canonicalURL != pageURL {
+		record.URL = pageURL
+		if err := c.store.PutPage(record); err != nil {
+			return err
+		}
+	}
+
+	return nil
 }
 
 func (c *Crawler) allowedByRobots(rawURL string) bool {
@@ -241,4 +383,19 @@ func (c *Crawler) allowedByRobots(rawURL string) bool {
 		return false
 	}
 	return c.robots == nil || c.robots.Allowed(parsed.Path)
+}
+
+func sectionKey(rawURL string) string {
+	parsed, err := url.Parse(rawURL)
+	if err != nil {
+		return ""
+	}
+
+	host := strings.ToLower(parsed.Host)
+	trimmedPath := strings.Trim(parsed.EscapedPath(), "/")
+	if trimmedPath == "" {
+		return host + "/"
+	}
+	firstSegment := strings.SplitN(trimmedPath, "/", 2)[0]
+	return host + "/" + firstSegment
 }

@@ -2,7 +2,7 @@
 
 A proposed access control list grant configuration for an Amazon S3 bucket. For more
 information, see [How to Specify an\
-ACL](../../../../services/s3/latest/dev/acl-overview.md#setting-acls).
+ACL](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#setting-acls).
 
 ## Contents
 
@@ -30,13 +30,13 @@ Required: Yes
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/accessanalyzer-2019-11-01/s3bucketaclgrantconfiguration.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/accessanalyzer-2019-11-01/S3BucketAclGrantConfiguration)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/accessanalyzer-2019-11-01/s3bucketaclgrantconfiguration.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/accessanalyzer-2019-11-01/S3BucketAclGrantConfiguration)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/accessanalyzer-2019-11-01/s3bucketaclgrantconfiguration.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/accessanalyzer-2019-11-01/S3BucketAclGrantConfiguration)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
 
 S3AccessPointConfiguration
 

@@ -1,0 +1,66 @@
+# DomainValidationOption
+
+Contains information about the domain names that you want ACM to use to send you
+emails that enable you to validate domain ownership.
+
+## Contents
+
+###### Note
+
+In the following list, the required parameters are described first.
+
+**DomainName**
+
+A fully qualified domain name (FQDN) in the certificate request.
+
+Type: String
+
+Length Constraints: Minimum length of 1. Maximum length of 253.
+
+Pattern: `(\*\.)?(((?!-)[A-Za-z0-9-]{0,62}[A-Za-z0-9])\.)+((?!-)[A-Za-z0-9-]{1,62}[A-Za-z0-9])`
+
+Required: Yes
+
+**ValidationDomain**
+
+The domain name that you want ACM to use to send you validation emails. This domain
+name is the suffix of the email addresses that you want ACM to use. This must be the
+same as the `DomainName` value or a superdomain of the
+`DomainName` value. For example, if you request a certificate for
+`testing.example.com`, you can specify `example.com` for this
+value. In that case, ACM sends domain validation emails to the following five
+addresses:
+
+- admin@example.com
+
+- administrator@example.com
+
+- hostmaster@example.com
+
+- postmaster@example.com
+
+- webmaster@example.com
+
+Type: String
+
+Length Constraints: Minimum length of 1. Maximum length of 253.
+
+Pattern: `(\*\.)?(((?!-)[A-Za-z0-9-]{0,62}[A-Za-z0-9])\.)+((?!-)[A-Za-z0-9-]{1,62}[A-Za-z0-9])`
+
+Required: Yes
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/acm-2015-12-08/domainvalidationoption.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/acm-2015-12-08/domainvalidationoption.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/acm-2015-12-08/domainvalidationoption.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+DomainValidation
+
+ExpiryEventsConfiguration

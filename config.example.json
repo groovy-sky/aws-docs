@@ -10,7 +10,9 @@
   ],
   "output_dir": "docs",
   "metadata_db": "metadata/crawl.db",
+  "enable_robots_structure": true,
   "enable_robots_sitemaps": true,
+  "max_robots_sections": 500,
   "max_sitemap_urls": 50000,
   "max_sitemap_files": 1000,
   "user_agent": "aws-docs-mirror/0.1 (+https://github.com/groovy-sky/aws-docs)",
@@ -19,7 +21,7 @@
   "burst": 1,
   "max_retries": 3,
   "request_timeout_seconds": 20,
-  "max_pages": 25,
+  "max_sections": 25,
   "selectors": [
     "#main-content",
     "main",

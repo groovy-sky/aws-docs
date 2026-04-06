@@ -3,7 +3,7 @@
 The proposed access control configuration for an Amazon RDS DB snapshot. You can propose a
 configuration for a new Amazon RDS DB snapshot or an Amazon RDS DB snapshot that you own by
 specifying the `RdsDbSnapshotAttributeValue` and optional AWS KMS encryption key.
-For more information, see [ModifyDBSnapshotAttribute](../../../amazonrds/latest/apireference/api-modifydbsnapshotattribute.md).
+For more information, see [ModifyDBSnapshotAttribute](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBSnapshotAttribute.html).
 
 ## Contents
 
@@ -38,13 +38,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/accessanalyzer-2019-11-01/rdsdbsnapshotconfiguration.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/accessanalyzer-2019-11-01/RdsDbSnapshotConfiguration)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/accessanalyzer-2019-11-01/rdsdbsnapshotconfiguration.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/accessanalyzer-2019-11-01/RdsDbSnapshotConfiguration)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/accessanalyzer-2019-11-01/rdsdbsnapshotconfiguration.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/accessanalyzer-2019-11-01/RdsDbSnapshotConfiguration)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
 
 RdsDbSnapshotAttributeValue
 
