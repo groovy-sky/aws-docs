@@ -1,0 +1,84 @@
+# Amazon Athena ODBC 2.x
+
+You can use an ODBC connection to connect to Amazon Athena from many third-party SQL client
+tools and applications. You set up the ODBC connection on your client computer.
+
+## Considerations and limitations
+
+For information on migrating from the Athena ODBC 1.x driver to the Athena 2.x
+ODBC driver, see [Migrate to the ODBC 2.x driver](https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-migrating.html).
+
+## ODBC 2.x driver download
+
+To download the Amazon Athena 2.x ODBC driver, visit the links on this page.
+
+###### Important
+
+When you use the ODBC 2.x driver, be sure to note the following
+requirements:
+
+- Open port 444 – Keep port 444, which
+Athena uses to stream query results, open to outbound traffic. When you use a
+PrivateLink endpoint to connect to Athena, ensure that the security group
+attached to the PrivateLink endpoint is open to inbound traffic on port 444.
+
+- athena:GetQueryResultsStream policy
+– Add the `athena:GetQueryResultsStream` policy action to
+the IAM principals that use the ODBC driver. This policy action is not
+exposed directly with the API. It is used only with the ODBC and JDBC
+drivers as part of streaming results support. For an example policy, see
+[AWS managed policy: AWSQuicksightAthenaAccess](security-iam-awsmanpol.md#awsquicksightathenaaccess-managed-policy).
+
+###### Important
+
+Security update: Version 2.1.0.0 includes security
+enhancements to authentication, query processing, and transport security components.
+We recommend upgrading to this version to benefit from these improvements. For details,
+see the [Amazon Athena ODBC 2.x release notes](https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-release-notes.html).
+
+### Linux
+
+Driver versionDownload linkODBC 2.1.0.0 for Linux 64-bit[Linux 64 bit ODBC driver 2.1.0.0](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.1.0.0/Linux/AmazonAthenaODBC-2.1.0.0.rpm)
+
+### macOS (ARM)
+
+Driver versionDownload linkODBC 2.1.0.0 for macOS 64-bit (ARM)[macOS 64 bit ODBC driver 2.1.0.0 (ARM)](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.1.0.0/Mac/arm/AmazonAthenaODBC-2.1.0.0_arm.pkg)
+
+### macOS (Intel)
+
+Driver versionDownload linkODBC 2.1.0.0 for macOS 64-bit (Intel)[macOS 64 bit ODBC driver 2.1.0.0 (Intel)](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.1.0.0/Mac/Intel/AmazonAthenaODBC-2.1.0.0_x86.pkg)
+
+### Windows
+
+Driver versionDownload linkODBC 2.1.0.0 for Windows 64-bit[Windows 64 bit ODBC driver 2.1.0.0](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.1.0.0/Windows/AmazonAthenaODBC-2.1.0.0.msi)
+
+### Licenses
+
+- [AWS license](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.1.0.0/LICENSE.txt)
+
+- [Third party license](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.1.0.0/THIRD_PARTY_LICENSES.txt)
+
+## Trusted identity propagation with ODBC
+
+You can now connect to Amazon Athena using ODBC drivers with single sign-on capabilities through AWS Identity and Access Management Identity Center.
+When you access Athena from tools like PowerBI, Tableau, or DBeaver, your identity and
+permissions automatically propagate to Athena through IAM Identity Center. For more
+information, see [Use Trusted identity propagation with Amazon Athena drivers](using-trusted-identity-propagation.md).
+
+###### Topics
+
+- [Get started with the ODBC 2.x driver](https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-getting-started.html)
+
+- [Athena ODBC 2.x connection parameters](https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-connection-parameters.html)
+
+- [Migrate to the ODBC 2.x driver](https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-migrating.html)
+
+- [Troubleshoot the ODBC 2.x driver](https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-troubleshooting.html)
+
+- [Amazon Athena ODBC 2.x release notes](https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-release-notes.html)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+Connect to Athena with ODBC
+
+Get started with ODBC 2.x

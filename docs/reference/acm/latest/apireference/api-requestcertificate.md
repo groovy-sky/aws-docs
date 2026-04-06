@@ -7,8 +7,8 @@ certificate, you must specify a fully qualified domain name (FQDN) in the
 
 If you are requesting a private certificate, domain validation is not required. If you
 are requesting a public certificate, each domain name that you specify must be validated
-to verify that you own or control the domain. You can use [DNS validation](../../../../services/acm/latest/userguide/gs-acm-validate-dns.md) or [email\
-validation](../../../../services/acm/latest/userguide/gs-acm-validate-email.md). We recommend that you use DNS validation.
+to verify that you own or control the domain. You can use [DNS validation](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-validate-dns.html) or [email\
+validation](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-validate-email.html). We recommend that you use DNS validation.
 
 ###### Note
 
@@ -87,7 +87,7 @@ Required: Yes
 The Amazon Resource Name (ARN) of the private certificate authority (CA) that will be
 used to issue the certificate. If you do not provide an ARN and you are trying to
 request a private certificate, ACM will attempt to issue a public certificate. For
-more information about private CAs, see the [AWS Private Certificate Authority](../../../../services/privateca/latest/userguide/pcawelcome.md) user guide. The ARN must have
+more information about private CAs, see the [AWS Private Certificate Authority](https://docs.aws.amazon.com/privateca/latest/userguide/PcaWelcome.html) user guide. The ARN must have
 the following form:
 
 `arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012`
@@ -139,7 +139,7 @@ a particular size, while others allow the use of either RSA and ECDSA keys to en
 that compatibility is not broken. Check the requirements for the AWS service where you
 plan to deploy your certificate. For more information about selecting an algorithm, see
 [Key\
-algorithms](../../../../services/acm/latest/userguide/acm-certificate-characteristics.md#algorithms-term).
+algorithms](https://docs.aws.amazon.com/acm/latest/userguide/acm-certificate-characteristics.html#algorithms-term).
 
 ###### Note
 
@@ -242,8 +242,8 @@ Required: No
 **[ValidationMethod](#API_RequestCertificate_RequestSyntax)**
 
 The method you want to use if you are requesting a public certificate to validate that
-you own or control domain. You can [validate with DNS](../../../../services/acm/latest/userguide/gs-acm-validate-dns.md) or [validate with\
-email](../../../../services/acm/latest/userguide/gs-acm-validate-email.md). We recommend that you use DNS validation.
+you own or control domain. You can [validate with DNS](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-validate-dns.html) or [validate with\
+email](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-validate-email.html). We recommend that you use DNS validation.
 
 Type: String
 
@@ -430,23 +430,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/acm-2015-12-08/RequestCertificate)
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/acm-2015-12-08/requestcertificate.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/acm-2015-12-08/RequestCertificate)
 
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/acm-2015-12-08/requestcertificate.md)
+- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/acm-2015-12-08/RequestCertificate)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/acm-2015-12-08/requestcertificate.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/acm-2015-12-08/RequestCertificate)
 
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/acm-2015-12-08/requestcertificate.md)
+- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/acm-2015-12-08/RequestCertificate)
 
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/acm-2015-12-08/requestcertificate.md)
+- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/acm-2015-12-08/RequestCertificate)
 
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/acm-2015-12-08/requestcertificate.md)
+- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/acm-2015-12-08/RequestCertificate)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/acm-2015-12-08/RequestCertificate)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/acm-2015-12-08/requestcertificate.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/acm-2015-12-08/RequestCertificate)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
 
 RenewCertificate
 

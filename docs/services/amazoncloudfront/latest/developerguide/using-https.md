@@ -1,0 +1,57 @@
+# Use HTTPS with CloudFront
+
+You can configure CloudFront to require that viewers use HTTPS so that connections are encrypted
+when CloudFront communicates with viewers. You also can configure CloudFront to use HTTPS with your
+origin so that connections are encrypted when CloudFront communicates with your origin.
+
+If you configure CloudFront to require HTTPS both to communicate with viewers and to communicate
+with your origin, here’s what happens when CloudFront receives a request:
+
+1. A viewer submits an HTTPS request to CloudFront. There’s some SSL/TLS negotiation here
+    between the viewer and CloudFront. In the end, the viewer submits the request in an
+    encrypted format.
+
+2. If the CloudFront edge location contains a cached response, CloudFront encrypts the response
+    and returns it to the viewer, and the viewer decrypts it.
+
+3. If the CloudFront edge location doesn’t contain a cached response, CloudFront performs SSL/TLS
+    negotiation with your origin and, when the negotiation is complete, forwards the
+    request to your origin in an encrypted format.
+
+4. Your origin decrypts the request, processes it (generates a response), encrypts
+    the response, and returns the response to CloudFront.
+
+5. CloudFront decrypts the response, re-encrypts it, and forwards it to the viewer. CloudFront
+    also caches the response in the edge location so that it’s available the next time
+    it’s requested.
+
+6. The viewer decrypts the response.
+
+The process works basically the same way whether your origin is an Amazon S3 bucket, MediaStore, or a custom origin such as an
+HTTP/S server.
+
+###### Note
+
+To help thwart SSL renegotiation-type attacks, CloudFront does not support renegotiation for viewer and origin requests.
+
+Alternatively, you can turn on mutual authentication for your CloudFront distribution. For more information, see [Mutual TLS authentication with CloudFront (Viewer mTLS)](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/mtls-authentication.html).
+
+For information about how to require HTTPS between viewers and CloudFront, and between CloudFront and your origin, see the following topics.
+
+###### Topics
+
+- [Require HTTPS between viewers and CloudFront](using-https-viewers-to-cloudfront.md)
+
+- [Require HTTPS to a custom origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-https-cloudfront-to-custom-origin.html)
+
+- [Require HTTPS to an Amazon S3 origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-https-cloudfront-to-s3-origin.html)
+
+- [Supported protocols and ciphers between viewers and CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/secure-connections-supported-viewer-protocols-ciphers.html)
+
+- [Supported protocols and ciphers between CloudFront and the origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/secure-connections-supported-ciphers-cloudfront-to-origin.html)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+Configure secure access and restrict access to content
+
+Require HTTPS between viewers and CloudFront

@@ -1,0 +1,271 @@
+# INSERT INTO
+
+Inserts new rows into a destination table based on a `SELECT` query statement
+that runs on a source table, or based on a set of `VALUES` provided as part of
+the statement. When the source table is based on underlying data in one format, such as CSV
+or JSON, and the destination table is based on another format, such as Parquet or ORC, you
+can use `INSERT INTO` queries to transform selected data into the destination
+table's format.
+
+## Considerations and limitations
+
+Consider the following when using `INSERT` queries with Athena.
+
+- When running an `INSERT` query on a table with underlying data that
+is encrypted in Amazon S3, the output files that the `INSERT` query writes
+are not encrypted by default. We recommend that you encrypt `INSERT`
+query results if you are inserting into tables with encrypted data.
+
+For more information about encrypting query results using the console, see
+[Encrypt Athena query results stored in Amazon S3](https://docs.aws.amazon.com/athena/latest/ug/encrypting-query-results-stored-in-s3.html). To enable
+encryption using the AWS CLI or Athena API, use the
+`EncryptionConfiguration` properties of the [StartQueryExecution](https://docs.aws.amazon.com/athena/latest/APIReference/API_StartQueryExecution.html) action to specify Amazon S3 encryption options
+according to your requirements.
+
+- For `INSERT INTO` statements, the expected bucket owner setting
+does not apply to the destination table location in Amazon S3. The expected bucket owner setting applies only to the Amazon S3
+output location that you specify for Athena query results. For
+more information, see [Specify a query result location using the Athena console](https://docs.aws.amazon.com/athena/latest/ug/query-results-specify-location-console.html).
+
+- For ACID compliant `INSERT INTO` statements, see the `INSERT
+                          INTO` section of [Update Iceberg table data](https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-updating-iceberg-table-data.html).
+
+### Supported formats and SerDes
+
+You can run an `INSERT` query on tables created from data with the
+following formats and SerDes.
+
+Data formatSerDe
+
+Avro
+
+org.apache.hadoop.hive.serde2.avro.AvroSerDe
+
+Ioncom.amazon.ionhiveserde.IonHiveSerDe
+
+JSON
+
+org.apache.hive.hcatalog.data.JsonSerDe
+
+ORC
+
+org.apache.hadoop.hive.ql.io.orc.OrcSerde
+
+Parquet
+
+org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe
+
+Text file
+
+org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+
+###### Note
+
+TSV and custom-delimited files are supported.
+
+CSVorg.apache.hadoop.hive.serde2.OpenCSVSerde
+
+###### Note
+
+Writes are only supported for string types. From Athena,
+you cannot write to any tables that contain non-string types
+in Glue schema. For more information, see [CSV SerDe](https://docs.aws.amazon.com/athena/latest/ug/csv-serde.html#csv-serde-opencsvserde-considerations-non-string).
+
+### Bucketed tables not supported
+
+`INSERT INTO` is not supported on bucketed tables. For more
+information, see [Use partitioning and bucketing](https://docs.aws.amazon.com/athena/latest/ug/ctas-partitioning-and-bucketing.html).
+
+### Federated queries not supported
+
+`INSERT INTO` is not supported for federated queries. Attempting to do
+so may result in the error message **`This operation is currently not**
+**supported for external catalogs`**. For information about federated
+queries, see [Use Amazon Athena Federated Query](https://docs.aws.amazon.com/athena/latest/ug/federated-queries.html).
+
+### Partitioning
+
+Consider the points in this section when using partitioning with `INSERT
+                    INTO` or `CREATE TABLE AS SELECT` queries.
+
+#### Limits
+
+The `INSERT INTO` statement supports writing a maximum of 100
+partitions to the destination table. If you run the `SELECT` clause
+on a table with more than 100 partitions, the query fails unless the
+`SELECT` query is limited to 100 partitions or fewer.
+
+For information about working around this limitation, see [Use CTAS and INSERT INTO to work around the 100 partition limit](https://docs.aws.amazon.com/athena/latest/ug/ctas-insert-into.html).
+
+#### Column ordering
+
+`INSERT INTO` or `CREATE TABLE AS SELECT` statements
+expect the partitioned column to be the last column in the list of projected
+columns in a `SELECT` statement.
+
+If the source table is non-partitioned, or partitioned on different columns
+compared to the destination table, queries like `INSERT INTO
+                            destination_table SELECT * FROM
+                            source_table` consider the values in
+the last column of the source table to be values for a partition column in the
+destination table. Keep this in mind when trying to create a partitioned table
+from a non-partitioned table.
+
+#### Resources
+
+For more information about using `INSERT INTO` with partitioning,
+see the following resources.
+
+- For inserting partitioned data into a partitioned table, see [Use CTAS and INSERT INTO to work around the 100 partition limit](https://docs.aws.amazon.com/athena/latest/ug/ctas-insert-into.html).
+
+- For inserting unpartitioned data into a partitioned table, see [Use CTAS and INSERT INTO for ETL and data analysis](https://docs.aws.amazon.com/athena/latest/ug/ctas-insert-into-etl.html).
+
+### Files written to Amazon S3
+
+Athena writes files to source data locations in Amazon S3 as a result of the
+`INSERT` command. Each `INSERT` operation creates a new
+file, rather than appending to an existing file. The file locations depend on the
+structure of the table and the `SELECT` query, if present. Athena
+generates a data manifest file for each `INSERT` query. The manifest
+tracks the files that the query wrote. It is saved to the Athena query result
+location in Amazon S3. For more information, see [Identify query output files](https://docs.aws.amazon.com/athena/latest/ug/querying-finding-output-files.html#querying-identifying-output-files).
+
+### Avoid highly transactional updates
+
+When you use `INSERT INTO` to add rows to a table in Amazon S3, Athena does
+not rewrite or modify existing files. Instead, it writes the rows as one or more new
+files. Because tables with [many small files\
+result in lower query performance](https://docs.aws.amazon.com/athena/latest/ug/performance-tuning-data-optimization-techniques.html#performance-tuning-avoid-having-too-many-files), and write and read operations such as
+`PutObject` and `GetObject` result in higher costs from
+Amazon S3, consider the following options when using `INSERT INTO`:
+
+- Run `INSERT INTO` operations less frequently on larger batches
+of rows.
+
+- For large data ingestion volumes, consider using a service like [Amazon Data Firehose](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html).
+
+- Avoid using `INSERT INTO` altogether. Instead, accumulate rows
+into larger files and upload them directly to Amazon S3 where they can be queried
+by Athena.
+
+### Locating orphaned files
+
+If a `CTAS` or `INSERT INTO` statement fails, orphaned data
+can be left in the data location and might be read in subsequent queries. To locate
+orphaned files for inspection or deletion, you can use the data manifest file that
+Athena provides to track the list of files to be written. For more information, see
+[Identify query output files](https://docs.aws.amazon.com/athena/latest/ug/querying-finding-output-files.html#querying-identifying-output-files) and [DataManifestLocation](https://docs.aws.amazon.com/athena/latest/APIReference/API_QueryExecutionStatistics.html#athena-Type-QueryExecutionStatistics-DataManifestLocation).
+
+## INSERT INTO...SELECT
+
+Specifies the query to run on one table, `source_table`, which determines
+rows to insert into a second table, `destination_table`. If the
+`SELECT` query specifies columns in the `source_table`, the
+columns must precisely match those in the `destination_table`.
+
+For more information about `SELECT` queries, see [SELECT](select.md).
+
+### Synopsis
+
+```sql
+
+INSERT INTO destination_table
+SELECT select_query
+FROM source_table_or_view
+```
+
+### Examples
+
+Select all rows in the `vancouver_pageviews` table and insert them into
+the `canada_pageviews` table:
+
+```sql
+
+INSERT INTO canada_pageviews
+SELECT *
+FROM vancouver_pageviews;
+```
+
+Select only those rows in the `vancouver_pageviews` table where the
+`date` column has a value between `2019-07-01` and
+`2019-07-31`, and then insert them into
+`canada_july_pageviews`:
+
+```sql
+
+INSERT INTO canada_july_pageviews
+SELECT *
+FROM vancouver_pageviews
+WHERE date
+    BETWEEN date '2019-07-01'
+        AND '2019-07-31';
+```
+
+Select the values in the `city` and `state` columns in the
+`cities_world` table only from those rows with a value of
+`usa` in the `country` column and insert them into the
+`city` and `state` columns in the `cities_usa`
+table:
+
+```sql
+
+INSERT INTO cities_usa (city,state)
+SELECT city,state
+FROM cities_world
+    WHERE country='usa'
+```
+
+## INSERT INTO...VALUES
+
+Inserts rows into an existing table by specifying columns and values. Specified
+columns and associated data types must precisely match the columns and data types in the
+destination table.
+
+###### Important
+
+We do not recommend inserting rows using `VALUES` because Athena
+generates files for each `INSERT` operation. This can cause many small
+files to be created and degrade the table's query performance. To identify files
+that an `INSERT` query creates, examine the data manifest file. For more
+information, see [Work with query results and recent queries](https://docs.aws.amazon.com/athena/latest/ug/querying.html).
+
+### Synopsis
+
+```sql
+
+INSERT INTO destination_table [(col1,col2,...)]
+VALUES (col1value,col2value,...)[,
+       (col1value,col2value,...)][,
+       ...]
+```
+
+### Examples
+
+In the following examples, the cities table has three columns: `id`,
+`city`, `state`, `state_motto`. The
+`id` column is type `INT` and all other columns are type
+`VARCHAR`.
+
+Insert a single row into the `cities` table, with all column values
+specified:
+
+```sql
+
+INSERT INTO cities
+VALUES (1,'Lansing','MI','Si quaeris peninsulam amoenam circumspice')
+```
+
+Insert two rows into the `cities` table:
+
+```sql
+
+INSERT INTO cities
+VALUES (1,'Lansing','MI','Si quaeris peninsulam amoenam circumspice'),
+       (3,'Boise','ID','Esto perpetua')
+```
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+SELECT
+
+VALUES

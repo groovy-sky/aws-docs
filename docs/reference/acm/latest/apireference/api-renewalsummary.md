@@ -1,6 +1,6 @@
 # RenewalSummary
 
-Contains information about the status of ACM's [managed renewal](../../../../services/acm/latest/userguide/acm-renewal.md) for the certificate. This
+Contains information about the status of ACM's [managed renewal](https://docs.aws.amazon.com/acm/latest/userguide/acm-renewal.html) for the certificate. This
 structure exists only when the certificate type is `AMAZON_ISSUED`.
 
 ## Contents
@@ -12,7 +12,7 @@ In the following list, the required parameters are described first.
 **DomainValidationOptions**
 
 Contains information about the validation of each domain name in the certificate, as
-it pertains to ACM's [managed renewal](../../../../services/acm/latest/userguide/acm-renewal.md). This is different from the initial validation that occurs
+it pertains to ACM's [managed renewal](https://docs.aws.amazon.com/acm/latest/userguide/acm-renewal.html). This is different from the initial validation that occurs
 as a result of the [RequestCertificate](api-requestcertificate.md) request. This field exists only
 when the certificate type is `AMAZON_ISSUED`.
 
@@ -24,7 +24,7 @@ Required: Yes
 
 **RenewalStatus**
 
-The status of ACM's [managed renewal](../../../../services/acm/latest/userguide/acm-renewal.md) of the certificate.
+The status of ACM's [managed renewal](https://docs.aws.amazon.com/acm/latest/userguide/acm-renewal.html) of the certificate.
 
 Type: String
 
@@ -54,13 +54,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/acm-2015-12-08/renewalsummary.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/acm-2015-12-08/RenewalSummary)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/acm-2015-12-08/renewalsummary.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/acm-2015-12-08/RenewalSummary)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/acm-2015-12-08/renewalsummary.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/acm-2015-12-08/RenewalSummary)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
 
 KeyUsage
 

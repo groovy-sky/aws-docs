@@ -1,0 +1,93 @@
+# SecurityGroup
+
+Describes a security group.
+
+## Contents
+
+**groupDescription**
+
+A description of the security group.
+
+Type: String
+
+Required: No
+
+**groupId**
+
+The ID of the security group.
+
+Type: String
+
+Required: No
+
+**groupName**
+
+The name of the security group.
+
+Type: String
+
+Required: No
+
+**IpPermissions.N**
+
+The inbound rules associated with the security group.
+
+Type: Array of [IpPermission](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpPermission.html) objects
+
+Required: No
+
+**IpPermissionsEgress.N**
+
+The outbound rules associated with the security group.
+
+Type: Array of [IpPermission](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpPermission.html) objects
+
+Required: No
+
+**ownerId**
+
+The AWS account ID of the owner of the security group.
+
+Type: String
+
+Required: No
+
+**securityGroupArn**
+
+The ARN of the security group.
+
+Type: String
+
+Required: No
+
+**TagSet.N**
+
+Any tags assigned to the security group.
+
+Type: Array of [Tag](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Tag.html) objects
+
+Required: No
+
+**vpcId**
+
+The ID of the VPC for the security group.
+
+Type: String
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/SecurityGroup)
+
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/SecurityGroup)
+
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/SecurityGroup)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+SecondarySubnetIpv4CidrBlockAssociation
+
+SecurityGroupForVpc

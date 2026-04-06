@@ -1,0 +1,1405 @@
+# Amazon MQ release notes
+
+The following table lists Amazon MQ feature releases and improvements.
+
+DateDocumentation UpdateFebruary 19, 2026
+
+Amazon MQ Amazon MQ now supports ActiveMQ 5.19, a new minor engine version release.
+
+For more information, see
+
+- [ActiveMQ 5.19 Release Page](https://activemq.apache.org/components/classic/download/classic-05-19-01)
+
+- [Managing Amazon MQ for ActiveMQ engine versions](activemq-version-management.md)
+
+- [Upgrading an Amazon MQ broker engine version](upgrading-brokers.md)
+
+- [Using Spring XML configuration files](amazon-mq-broker-configuration-parameters.md#working-with-spring-xml-configuration-files)
+
+January 22, 2026
+
+Amazon MQ now supports JMS topic exchange plugin for brokers on RabbitMQ 4.2 and above. You can use the official [RabbitMQ JMS client](https://www.rabbitmq.com/client-libraries/jms-client) to run JMS workloads on Amazon MQ for RabbitMQ broker. It supports JMS 1.1, 2.0 and 3.1.
+
+For more information, see
+
+- [Official JMS 2.0 spec (backward compatible with and extended JMS 1.1)](https://javaee.github.io/jms-spec/pages/JMS20FinalRelease)
+
+- [Official JMS 3.1 spec](https://jakarta.ee/specifications/messaging/3.1)
+
+- [Limitation of RabbitMQ JMS client](https://rabbitmq.github.io/rabbitmq-jms-client/2.x/stable/htmlsingle/index.html)
+
+- [Connecting your JMS application to Amazon MQ for RabbitMQ broker](rabbitmq-tutorial-jms.md)
+
+January 8, 2026
+
+Amazon MQ now supports SSL certificate authentication for brokers on RabbitMQ 4.2 and above using X.509 client certificates, and mutual TLS (mTLS) configuration. You can configure SSL certificate authentication and mTLS through AWS Management Console, AWS CloudFormation, AWS CLI, or AWS CDK in all AWS Regions where Amazon MQ is available.
+
+For more information, see [SSL certificate authentication](ssl-for-amq-for-rabbitmq.md) and [Configuring mTLS](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/configure-mtls.html).
+
+January 6, 2026
+
+Amazon MQ now supports HTTP authentication and authorization for brokers on RabbitMQ 4.2 and above with external HTTP servers. You can configure HTTP authentication through AWS Management Console, AWS CloudFormation, AWS CLI, or AWS CDK in all AWS Regions where Amazon MQ is available.
+
+For more information, see [HTTP authentication and authorization](http-for-amq-for-rabbitmq.md).
+
+November 20, 2025
+
+Amazon MQ now supports RabbitMQ 4.2, a new major version release which introduces native support for the AMQP 1.0 protocol,
+a new Raft based metadata store Khepri, local shovels, and message priorities for quorum queues.
+RabbitMQ 4.2 also includes various bug fixes and performance improvements for throughput and memory management.
+While this version introduces new features, there are some breaking changes.
+
+For more information, see
+
+- [RabbitMQ 4](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitmq-4.html)
+
+- [Open-source RabbitMQ release notes](https://www.rabbitmq.com/release-information)
+
+- [Configuring resource limits](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/configure-resource-limits.html)
+
+- [Supported Protocols](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitmq-supported-protocols.html)
+
+- [Amazon MQ Version upgrades](upgrading-brokers.md)
+
+November 18, 2024
+
+Amazon MQ now supports Graviton3 powered m7g instances for RabbitMQ in a range of sizes from medium to 16xlarge in Africa (Cape Town).
+
+For more information, see [Amazon MQ for RabbitMQ broker instance types](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rmq-broker-instance-types.html).
+
+November 17, 2025
+
+Amazon MQ now supports LDAP authentication and authorization for RabbitMQ brokers with external LDAP directory services. You can configure LDAP through AWS Management Console, AWS CloudFormation, AWS CLI, or AWS CDK in all AWS Regions where Amazon MQ is available.
+
+For more information, see [LDAP authentication and authorization for Amazon MQ for RabbitMQ](ldap-for-amq-for-rabbitmq.md).
+
+October 22, 2025
+
+Amazon MQ is now available in the Asia Pacific (New Zealand) Region.
+
+For information
+on available regions, see [AWS\
+Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/amazon-mq.html) in the _AWS General Reference guide_.
+
+September 3, 2025
+
+Amazon MQ now supports OAuth 2.0 authentication and authorization for RabbitMQ brokers with public identity providers (IdPs). You can configure OAuth 2.0 through AWS Management Console, AWS CloudFormation, AWS CLI, or AWS CDK in all AWS Regions where Amazon MQ is available.
+
+For more information, see [OAuth 2.0 authentication and authorization for Amazon MQ for RabbitMQ](oauth-for-amq-for-rabbitmq.md).
+
+July 22, 2025
+
+Amazon MQ now supports Graviton3 powered `m7g` instances for RabbitMQ in a range of sizes from medium to 16xlarge.
+RabbitMQ clusters running on `m7g` instances deliver up to 50% higher workload capacity
+and up to 85% throughput improvements over comparable Amazon MQ for RabbitMQ clusters running on `m5` instances.
+
+`M7g` instances also have optimized disk volume sizes that vary by instance size.
+For more information, see [Broker instance types](broker-instance-types.md).
+
+`M7g` instances on Amazon MQ are available today across all generally
+available Regions except Africa (Cape Town), Canada West (Calgary), and Europe (Milan) Regions.
+
+July 8, 2025
+
+Amazon MQ is now available in the Asia Pacific (Taipei) Region.
+
+For information
+on available regions, see [AWS\
+Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/amazon-mq.html) in the _AWS General Reference guide_.
+
+April 22, 2025
+
+You can now delete Amazon MQ broker configurations using the
+`DeleteConfiguration` API. For more information,
+see [Configurations](../api-reference/configurations-configuration-id.md)
+in the _Amazon MQ API Reference_.
+
+April 16, 2025
+
+Amazon MQ for RabbitMQ now supports using dual-stack (IPv4 and IPv6) endpoints
+to connect to public and private brokers.
+For more information, see [Connecting to Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/connect-to-amazonmq.html) and
+[Configuring a private Amazon MQ broker](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/configuring-private-broker.html).
+
+April 7, 2025
+
+Amazon MQ is now available in Asia Pacific (Thailand)
+and Mexico (Central) Regions.
+
+For information
+on available regions, see [AWS\
+Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/amazon-mq.html) in the _AWS General Reference guide_.
+
+February 13, 2025
+
+Amazon MQ API FIPS endpoints are now available in the Canada (Central)
+and Canada West (Calgary) Regions.
+
+For more information on using FIPS endpoints with the Amazon MQ API,
+see [Connecting to Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/connect-to-amazonmq.html).
+
+For information
+on available regions, see [AWS\
+Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/amazon-mq.html) in the _AWS General Reference guide_.
+
+February 12, 2025
+
+Amazon MQ is announcing the following instance type end of support dates:
+
+[Broker instance types](broker-instance-types.md)
+
+- ActiveMQ `mq.t2.micro`: May 12, 2025
+
+- ActiveMQ `mq.m4.large`: May 12, 2025
+
+You cannot create brokers on `mq.t2.micro` or `mq.m4.large`
+after March 17, 2025.
+
+December 10, 2024
+
+Amazon MQ now supports using AWS PrivateLink to connect between your virtual private clouds (VPCs)
+and the Amazon MQ API without exposing your traffic to the public internet.
+For more information, see [Connect to Amazon MQ using AWS PrivateLink](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/connect-to-amazonmq.html#connect-with-private-link).
+
+November 18, 2024
+
+Amazon MQ is now available in the Asia Pacific (Malaysia) Region. For information
+on available regions, see [AWS\
+Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/amazon-mq.html) in the _AWS General Reference guide_.
+
+November 14, 2024
+
+Amazon MQ is announcing the following engine version end of support dates:
+
+[Managing Amazon MQ for ActiveMQ engine versions](activemq-version-management.md)
+
+- ActiveMQ 5.17: June 16, 2025
+
+[Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md)
+
+- RabbitMQ 3.11: February 17, 2025
+
+- RabbitMQ 3.12: March 17, 2025
+
+For more information on upgrading to the latest version, see
+[Upgrading an Amazon MQ broker engine version](upgrading-brokers.md)
+
+November 13, 2024
+
+Amazon MQ now supports dual-stack service endpoints which you can connect to using either IPv4 or IPv6.
+Amazon MQ dual-stack Regional service endpoints can be resolved with
+both `A` and `AAAA` DNS records. For more information,
+see [Connecting to Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/connect-to-amazonmq.html).
+
+July 25, 2024
+
+Amazon MQ now supports ActiveMQ 5.18, a new minor engine version release. For more
+information, see the following:
+
+- [ActiveMQ 5.18 Release Page](https://activemq.apache.org/activemq-5018004-release)
+
+- [Managing Amazon MQ for ActiveMQ engine versions](activemq-version-management.md)
+
+- [Upgrading an Amazon MQ broker engine version](upgrading-brokers.md)
+
+- [Using Spring XML configuration files](amazon-mq-broker-configuration-parameters.md#working-with-spring-xml-configuration-files)
+
+July 22, 2024
+
+Amazon MQ now supports quorum queues only on brokers using version 3.13 and above.
+Quorum queues are a replicated FIFO queue type that use the Raft consensus algorithm to maintain data consistency.
+Quorum queues provide poison message handling, which can help you manage unprocessed messages.
+
+To get started with quorum queues, see [Quorum queues for RabbitMQ on Amazon MQ](quorum-queues.md).
+
+July 2, 2024
+
+Amazon MQ for RabbitMQ now supports RabbitMQ 3.13, a minor version release.
+For all brokers using engine version 3.13 and above, Amazon MQ manages upgrades to the latest supported patch version during the maintenance window.
+For more information, see
+[Upgrading an Amazon MQ broker engine version](upgrading-brokers.md).
+
+[Amazon MQ for RabbitMQ sizing guidelines](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitmq-sizing-guidelines.html)
+have been updated to include new limits for queues, consumers per channel, and shovels for
+brokers using engine version 3.13.
+
+For more information about the fixes and features in this release, see the [RabbitMQ 3.13 release notes](https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.13.3) on the RabbitMQ server GitHub repository.
+
+For more information about supported Amazon MQ for RabbitMQ versions and broker upgrades, see
+[Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md).
+
+June 10, 2024
+
+Amazon MQ is now available in the Canada West (Calgary) Region. For information
+on available regions, see [AWS\
+Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/amazon-mq.html) in the _AWS General Reference guide_.
+
+May 10, 2024
+
+The Amazon MQ version support calendar indicates when a broker engine version
+reaches end of support. When an engine version reaches end of support,
+Amazon MQ updates all brokers on the version to the next supported minor version automatically.
+Amazon MQ provides at least a 90 day notice before an engine version reaches end of support.
+
+To view the version support calendar and end of support, see the following:
+
+- [Managing Amazon MQ for ActiveMQ engine versions](activemq-version-management.md)
+
+- [Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md)
+
+You can also enable automatic minor version upgrades for your broker to update
+to the next patch version during a maintenance window. For more information, see
+[Upgrading an Amazon MQ broker engine version](upgrading-brokers.md)
+
+May 9, 2024
+
+Amazon MQ for RabbitMQ now supports RabbitMQ 3.12, a minor version release.
+All brokers on 3.12.13 and above use Classic Queues version 2 (CQv2),
+and all queues on 3.12.13 and above behave as lazy queues.
+
+We recommend brokers on versions prior
+to 3.12.13 enable CQv2
+and lazy queues,
+or upgrade to the newest version of Amazon MQ for RabbitMQ.
+
+For more information about the fixes and features in this release, see the following:
+
+- [RabbitMQ 3.12 release notes](https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.12.13) on the RabbitMQ server GitHub repository.
+
+For more information about supported Amazon MQ for RabbitMQ versions and broker upgrades, see
+[Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md).
+
+March 4, 2024
+
+Amazon MQ for RabbitMQ now supports RabbitMQ 3.11.28.
+
+For more information about the fixes and features in this release, see the following:
+
+- [RabbitMQ 3.11.28 release notes](https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.11.28) on the RabbitMQ server GitHub repository
+
+- [RabbitMQ changelog](https://www.rabbitmq.com/changelog.html)
+
+For more information about supported Amazon MQ for RabbitMQ versions and broker upgrades, see
+[Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md).
+
+January 19, 2024
+
+Amazon MQ for RabbitMQ does not support the username "guest", and will
+delete the default guest account when you create a new broker.
+Amazon MQ will also periodically delete any customer created account called "guest".
+
+December 15, 2023
+
+Amazon MQ is now available in the Israel (Tel Aviv) Region. For information
+on available regions, see [AWS\
+Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/amazon-mq.html) in the _AWS General Reference guide_.
+
+December 11, 2023
+
+Amazon MQ for RabbitMQ now supports RabbitMQ 3.10.25.
+
+For more information about the fixes and features in this release, see the following:
+
+- [RabbitMQ 3.10.25 release notes](https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.10.25) on the RabbitMQ server GitHub repository
+
+- [RabbitMQ changelog](https://www.rabbitmq.com/changelog.html)
+
+For more information about supported Amazon MQ for RabbitMQ versions and broker upgrades, see
+[Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md).
+
+October 26, 2023
+
+Amazon MQ has released the latest ActiveMQ minor versions 5.15.16, 5.16.7, 5.17.6
+with a critical update. We have deprecated the older minor versions of ActiveMQ
+and will be updating all brokers on any version of 5.15 to 5.15.16, or 5.16 to 5.16.7 and 5.17 to 5.17.6.
+
+For more information on updating your ActiveMQ broker, see
+[Managing Amazon MQ for ActiveMQ engine versions](activemq-version-management.md).
+
+September 27, 2023
+
+Amazon MQ for RabbitMQ now supports RabbitMQ 3.11.20.
+
+For more information about the fixes and features in this release, see the following:
+
+- [RabbitMQ 3.11.20 release notes](https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.11.20) on the RabbitMQ server GitHub repository
+
+- [RabbitMQ changelog](https://www.rabbitmq.com/changelog.html)
+
+For more information about supported Amazon MQ for RabbitMQ versions and broker upgrades, see
+[Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md).
+
+July 27, 2023
+
+Amazon MQ for RabbitMQ now supports RabbitMQ 3.11.16
+
+For more information about the fixes and features in this release, see the following:
+
+- [RabbitMQ 3.11.16 release notes](https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.11.16) on the RabbitMQ server GitHub repository
+
+- [RabbitMQ changelog](https://www.rabbitmq.com/changelog.html)
+
+For more information about supported Amazon MQ for RabbitMQ versions and broker upgrades, see
+[Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md).
+
+July 27, 2023
+
+Amazon MQ for RabbitMQ now supports creating and applying configurations to
+your RabbitMQ broker.
+
+For more information on adding confgurations to
+your broker, see
+[RabbitMQ Broker Configurations](rabbitmq-broker-configuration-parameters.md).
+
+For more information about this feature, see:
+
+- [Operator policies](https://www.rabbitmq.com/parameters.html)
+
+- [Changes to the operator policies](https://www.rabbitmq.com/parameters.html)
+
+June 23, 2023
+
+Amazon MQ now supports ActiveMQ 5.17.3, a new minor engine version release.
+This release supports the new cross-Region data replication (CRDR) feature from Amazon MQ.
+
+For more
+information, see the following:
+
+- To get started with CRDR, see [Cross-Region data replication for Amazon MQ for ActiveMQ](crdr-for-active-mq.md) in the Developer Guide.
+
+- [ActiveMQ 5.17.3 Release Page](https://activemq.apache.org/activemq-5017003-release)
+
+- [Managing Amazon MQ for ActiveMQ engine versions](activemq-version-management.md)
+
+- [Upgrading an Amazon MQ broker engine version](upgrading-brokers.md)
+
+- [Using Spring XML configuration files](amazon-mq-broker-configuration-parameters.md#working-with-spring-xml-configuration-files)
+
+June 21, 2023
+
+Amazon MQ for ActiveMQ now offers a cross-Region data replication (CRDR) feature
+that allows for asynchronous message replication from the primary broker in a primary AWS Region
+to the replica broker in a replica Region.
+If the primary broker in the primary Region fails, you can promote the replica broker in the secondary Region to primary by initiating a switchover or failover.
+
+To get started with CRDR, see [Cross-Region data replication for Amazon MQ for ActiveMQ](crdr-for-active-mq.md) in the Developer Guide.
+
+May 18, 2023
+
+Amazon MQ is now available in the following regions:
+
+- Asia Pacific (Melbourne)
+
+- Asia Pacific (Hyderabad)
+
+- Europe (Spain)
+
+- Europe (Zurich)
+
+For information
+on available regions, see [AWS\
+Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/amazon-mq.html) in the _AWS General Reference guide_.
+
+April 14, 2023
+
+Amazon MQ for RabbitMQ now supports RabbitMQ version 3.9.27.
+
+For more information about the fixes and features in this release, see the following:
+
+- [RabbitMQ 3.9.27 release notes](https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.9.27) on the RabbitMQ server GitHub repository
+
+- [RabbitMQ changelog](https://www.rabbitmq.com/changelog.html)
+
+For more information about supported Amazon MQ for RabbitMQ versions and broker upgrades, see
+[Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md).
+
+April 14, 2023
+
+Amazon MQ for RabbitMQ now supports RabbitMQ version 3.10.20.
+
+For more information about the fixes and features in this release, see the following:
+
+- [RabbitMQ 3.10.20 release notes](https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.10.20) on the RabbitMQ server GitHub repository
+
+- [RabbitMQ changelog](https://www.rabbitmq.com/changelog.html)
+
+For more information about supported Amazon MQ for RabbitMQ versions and broker upgrades, see
+[Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md).
+
+March 31, 2023
+
+Amazon MQ for RabbitMQ has disabled RabbitMQ engine version 3.10.17
+
+The Amazon MQ for RabbitMQ team, and the open source maintainers of RabbitMQ, have identified an
+[issue with the RabbitMQ management console](https://github.com/rabbitmq/rabbitmq-server/issues/7142) on version 3.10.17.
+Amazon MQ has retracted this version. To mitigate the impacts of this issue, create new brokers with version 3.10.10
+while we work to support a new patch version of RabbitMQ. We recommend activating the
+[Version upgrade](upgrading-brokers.md) option to automatically get the latest bug fixes,
+security updates and performance enhancements.
+
+For more information on available Amazon MQ for RabbitMQ versions, see
+[Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md).
+
+March 1, 2023
+
+Amazon MQ for RabbitMQ now supports RabbitMQ version 3.10.17.
+
+For more information about the fixes and features in this release, see the following:
+
+- [RabbitMQ 3.10.17 release notes](https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.10.17) on the RabbitMQ server GitHub repository
+
+- [RabbitMQ changelog](https://www.rabbitmq.com/changelog.html)
+
+For more information about supported Amazon MQ for RabbitMQ versions and broker upgrades, see
+[Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md).
+
+February 21, 2023
+
+Amazon MQ for RabbitMQ now integrates with AWS Key Management Service (KMS) to offer server-side
+encryption. You can now select your own customer managed CMK, or use an
+AWS managed KMS key in your AWS KMS account. For more information, see [Encryption at rest](data-protection.md#data-protection-encryption-at-rest).
+
+Amazon MQ supports using AWS KMS keys in the following
+ways.
+
+- **Amazon MQ owned KMS key (default)** — The key is owned and managed by Amazon MQ and is
+not in your account.
+
+- **AWS managed KMS key** — The AWS managed KMS key ( `aws/mq`)
+is a KMS key in your account that is created, managed, and used on your behalf
+by Amazon MQ.
+
+- **Select existing customer managed KMS key** —
+Customer managed KMS keys are created and managed by you in AWS Key Management Service
+(KMS).
+
+January 13, 2023
+
+Amazon MQ for RabbitMQ now supports RabbitMQ version 3.8.34.
+
+For more information about the fixes and features in this release, see the following:
+
+- [RabbitMQ 3.8.34 release notes](https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.8.34) on the RabbitMQ server GitHub repository
+
+- [RabbitMQ changelog](https://www.rabbitmq.com/changelog.html)
+
+For more information about supported Amazon MQ for RabbitMQ versions and broker upgrades, see
+[Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md).
+
+December 15, 2022
+
+Amazon MQ for RabbitMQ now supports RabbitMQ version 3.9.24.
+
+For more information about the fixes and features in this release, see the following:
+
+- [RabbitMQ 3.9.24 release notes](https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.9.24) on the RabbitMQ server GitHub repository
+
+- [RabbitMQ changelog](https://www.rabbitmq.com/changelog.html)
+
+For more information about supported Amazon MQ for RabbitMQ versions and broker upgrades, see
+[Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md).
+
+December 13, 2022
+
+Amazon MQ is now available in the Middle East (UAE) Region. For information
+on available regions, see [AWS\
+Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/amazon-mq.html) in the _AWS General Reference guide_.
+
+November 14, 2022
+
+Amazon MQ for RabbitMQ now supports 3.10, a major engine version release.
+You can now enable classic Queues version 2 (CQv2) on your RabbitMQ queues. Direct updates from 3.8 to 3.10 are not supported.
+For more information, see the following:
+
+- [RabbitMQ 3.10.10 release notes](https://blog.rabbitmq.com/posts/2022/05/rabbitmq-3.10-release-overview)
+
+- [RabbitMQ changelog](https://www.rabbitmq.com/changelog.html)
+
+For more information about supported Amazon MQ for RabbitMQ versions and broker upgrades, see
+[Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md).
+
+November 9, 2022
+
+Amazon MQ now supports ActiveMQ 5.17.2, a new minor engine version release. For more
+information, see the following:
+
+- [ActiveMQ 5.17.2 Release Page](https://activemq.apache.org/activemq-5017002-release)
+
+- [Managing Amazon MQ for ActiveMQ engine versions](activemq-version-management.md)
+
+- [Upgrading an Amazon MQ broker engine version](upgrading-brokers.md)
+
+- [Using Spring XML configuration files](amazon-mq-broker-configuration-parameters.md#working-with-spring-xml-configuration-files)
+
+August 17, 2022
+
+Amazon MQ now supports ActiveMQ 5.17.1, a new major engine version release. For more
+information, see the following:
+
+- [ActiveMQ 5.17.1 Release Page](https://activemq.apache.org/activemq-5017001-release)
+
+- [Managing Amazon MQ for ActiveMQ engine versions](activemq-version-management.md)
+
+- [Upgrading an Amazon MQ broker engine version](upgrading-brokers.md)
+
+- [Using Spring XML configuration files](amazon-mq-broker-configuration-parameters.md#working-with-spring-xml-configuration-files)
+
+July 14, 2022
+
+Amazon MQ now supports ActiveMQ 5.16.5, a minor engine version release. For more information, see the
+following:
+
+- [ActiveMQ 5.16.5 Release Page](https://activemq.apache.org/activemq-5016005-release)
+
+- [Managing Amazon MQ for ActiveMQ engine versions](activemq-version-management.md)
+
+- [Using Spring XML configuration files](amazon-mq-broker-configuration-parameters.md#working-with-spring-xml-configuration-files)
+
+- [Upgrading an Amazon MQ broker engine version](upgrading-brokers.md)
+
+May 4, 2022
+
+Amazon MQ adds inclusive language for `networkConnector` element in broker configuration.
+
+- [Creating and configuring an Amazon MQ network of brokers](amazon-mq-creating-configuring-network-of-brokers.md#creating-configuring-network-of-brokers-configure-network-connectors)
+
+April 25, 2022
+
+Amazon MQ This release adds the `CRITICAL_ACTION_REQUIRED` broker state and the `ActionRequired` API property.
+`CRITICAL_ACTION_REQUIRED` informs you when your broker is degraded. `ActionRequired` provides you with a code
+which you can use to find instructions in the Developer Guide on how to resolve the issue.
+
+- [Troubleshooting Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/troubleshooting.html)
+
+- [`ActionRequired`](../api-reference/brokers-broker-id.md#brokers-broker-id-prop-actionrequired) documentation in the
+_Amazon MQ API Reference_.
+
+April 20, 2022
+
+Amazon MQ now supports ActiveMQ 5.16.4, a minor engine version release. For more information, see the
+following:
+
+- [ActiveMQ 5.16.4 Release Page](https://activemq.apache.org/activemq-5016004-release)
+
+- [Managing Amazon MQ for ActiveMQ engine versions](activemq-version-management.md)
+
+- [Using Spring XML configuration files](amazon-mq-broker-configuration-parameters.md#working-with-spring-xml-configuration-files)
+
+- [Upgrading an Amazon MQ broker engine version](upgrading-brokers.md)
+
+March 1, 2022
+
+Amazon MQ is now available in the Asia Pacific (Jakarta) Region. For information
+on available regions, see [AWS\
+Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/amazon-mq.html) in the _AWS General Reference guide_.
+
+February 25, 2022
+
+Amazon MQ for RabbitMQ now supports RabbitMQ version 3.8.27.
+
+For more information about the fixes and features in this release, see the following:
+
+- [RabbitMQ 3.8.27 release notes](https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.8.27) on the RabbitMQ server GitHub repository
+
+- [RabbitMQ changelog](https://www.rabbitmq.com/changelog.html)
+
+For more information about supported Amazon MQ for RabbitMQ versions and broker upgrades, see
+[Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md).
+
+February 16, 2022
+
+Amazon MQ is now available in the Africa (Cape Town) Region. For information
+on available regions, see [AWS\
+Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/amazon-mq.html) in the _AWS General Reference guide_.
+
+February 14, 2022
+
+Amazon MQ for RabbitMQ now supports RabbitMQ version 3.9.13. Automatic minor version upgrades
+cannot be used to upgrade from Rabbit 3.8 to 3.9. To do so, [manually upgrade your broker](upgrading-brokers.md).
+
+For more information on new features introduced in RabbitMQ 3.9, see the
+[release notes page for version 3.9.0](https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.9.0) on the GitHub website.
+
+###### Note
+
+Currently, Amazon MQ does not support [streams](https://www.rabbitmq.com/streams.html), or using structured logging in JSON, introduced in RabbitMQ 3.9.
+
+For more information about the fixes and features in this release, see the following:
+
+- [RabbitMQ 3.9.13 release notes](https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.9.13) on the RabbitMQ server GitHub repository
+
+- [RabbitMQ changelog](https://www.rabbitmq.com/changelog.html)
+
+For more information about supported Amazon MQ for RabbitMQ versions and broker upgrades, see
+[Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md).
+
+February 07, 2022
+
+Amazon MQ for RabbitMQ introduces new broker metrics, allowing you to monitor average resource utilization
+across all three nodes in a cluster deployment.
+
+For more information, see the following:
+
+- [Available CloudWatch metrics for Amazon MQ for RabbitMQ brokers](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitmq-logging-monitoring.html)
+
+January 18, 2022
+
+Amazon MQ for RabbitMQ now supports RabbitMQ version 3.8.26.
+
+For more information about the fixes and features in this release, see the following:
+
+- [RabbitMQ 3.8.26 release notes](https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.8.26) on the RabbitMQ server GitHub repository
+
+- [RabbitMQ changelog](https://www.rabbitmq.com/changelog.html)
+
+For more information about supported Amazon MQ for RabbitMQ versions and broker upgrades, see
+[Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md).
+
+January 13, 2022
+
+Amazon MQ introduces the `RABBITMQ_MEMORY_ALARM` status code to inform you when your broker has raised
+a high memory alarm and is in an unhealthy state. Amazon MQ provides detailed information and recommendations to help you diagnose,
+resolve and prevent high memory alarms. For more information, see the following.
+
+- [Amazon MQ for RabbitMQ: High memory alarm](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/troubleshooting-action-required-codes-rabbitmq-memory-alarm.html)
+
+January 6, 2022
+
+When you configure CloudWatch Logs for Amazon MQ for ActiveMQ brokers, Amazon MQ supports using the `aws:SourceArn`
+and `aws:SourceAccount`
+global condition context keys in IAM resource-based policies to prevent the confused deputy problem. For more information, see the following.
+
+- [Cross-service confused deputy prevention](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/configure-logging-monitoring-activemq.html#security-logging-monitoring-configure-cloudwatch-confused-deputy)
+
+December 20, 2021
+
+Amazon MQ for ActiveMQ introduces a set of new metrics, allowing you to monitor the maximum number of connections you can make to your broker
+using different supported transport protocols, as well as an additional new metric that allows you to monitor the number of nodes connected to your broker in a
+[network of brokers](network-of-brokers.md). For more information, see the following.
+
+- [Available CloudWatch metrics Amazon MQ for ActiveMQ brokers](activemq-logging-monitoring.md)
+
+November 16, 2021
+
+Amazon MQ for RabbitMQ now supports RabbitMQ version 3.8.23.
+
+For more information about the fixes and features in this release, see the following:
+
+- [RabbitMQ 3.8.23 release notes](https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.8.23) on the RabbitMQ server GitHub repository
+
+- [RabbitMQ changelog](https://www.rabbitmq.com/changelog.html)
+
+For more information about supported Amazon MQ for RabbitMQ versions and broker upgrades, see
+[Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md).
+
+October 12, 2021
+
+Amazon MQ now supports ActiveMQ 5.16.3, a minor engine version release. For more information, see the
+following:
+
+- [ActiveMQ 5.16.3 Release Page](https://activemq.apache.org/activemq-5016003-release)
+
+- [Managing Amazon MQ for ActiveMQ engine versions](activemq-version-management.md)
+
+- [Upgrading an Amazon MQ broker engine version](upgrading-brokers.md)
+
+- [Using Spring XML configuration files](amazon-mq-broker-configuration-parameters.md#working-with-spring-xml-configuration-files)
+
+September 8, 2021
+
+Amazon MQ for RabbitMQ now supports RabbitMQ version 3.8.22.
+
+This release includes a fix for an issue with queues using [per-message TTL (time to live)](https://github.com/rabbitmq/rabbitmq-server/discussions/3272),
+identified in the previously supported version, RabbitMQ 3.8.17. We recommend upgrading your existing brokers to version 3.8.22.
+
+For more information about the fixes and features in this release, see the following:
+
+- [RabbitMQ 3.8.22 release notes](https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.8.22) on the RabbitMQ server GitHub repository
+
+- [RabbitMQ changelog](https://www.rabbitmq.com/changelog.html)
+
+For more information about supported Amazon MQ for RabbitMQ versions and broker upgrades, see
+[Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md)
+
+August 25, 2021
+
+Amazon MQ for RabbitMQ has temporarily disabled RabbitMQ engine version 3.8.17 due to an issue identified with
+[queues using per-message time-to-live (TTL)](https://github.com/rabbitmq/rabbitmq-server/discussions/3272).
+We recommend using version 3.8.11.
+
+July 29, 2021
+
+Amazon MQ for RabbitMQ now supports RabbitMQ version 3.8.17. For more information about the fixes and features contained in this update,
+see the following:
+
+- [RabbitMQ 3.8.17 release notes](https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.8.17) on the RabbitMQ server GitHub repository
+
+- [RabbitMQ changelog](https://www.rabbitmq.com/changelog.html)
+
+- [Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md)
+
+July 16, 2021
+
+You can now adjust the maintenance window of an Amazon MQ broker using the AWS Management Console, AWS CLI, or the Amazon MQ API.
+To learn more about broker maintenance windows, see the following.
+
+- [Scheduling the maintenance window for an Amazon MQ broker](maintaining-brokers.md)
+
+July 6, 2021
+
+Amazon MQ for RabbitMQ introduces support for the Consistent Hash exchange type. Consistent Hash
+exchanges route messages to queues based on a hash value calculated from the routing key of a message.
+For more information, see the following:
+
+- [Consistent Hash exchange plugin](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitmq-basic-elements-plugins.html#rabbitmq-consistent-hash-exchange)
+
+- [RabbitMQ Consistent Hash Exchange Type](https://github.com/rabbitmq/rabbitmq-server/tree/master/deps/rabbitmq_consistent_hash_exchange) on the RabbitMQ GitHub repository
+
+June 7, 2021
+
+Amazon MQ now supports ActiveMQ 5.16.2, a new major engine version release. For more information, see the
+following:
+
+- [ActiveMQ 5.16.2 Release Page](https://activemq.apache.org/activemq-5016002-release)
+
+- [Managing Amazon MQ for ActiveMQ engine versions](activemq-version-management.md)
+
+- [Upgrading an Amazon MQ broker engine version](upgrading-brokers.md)
+
+- [Using Spring XML configuration files](amazon-mq-broker-configuration-parameters.md#working-with-spring-xml-configuration-files)
+
+May 26, 2021
+
+Amazon MQ for RabbitMQ is now available in the China (Beijing) and China (Ningxia) Regions. For information
+on available regions, see [AWS\
+Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#amazon-mq_region).
+
+May 18, 2021
+
+Amazon MQ for RabbitMQ implements broker defaults.
+
+When you first create a broker,
+Amazon MQ creates a set of broker policies and vhost limits based on the
+instance type and deployment mode you choose, in order to optimize the broker's
+performance. For more information, see the following:
+[https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/rabbitmq-defaults.html](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitmq-defaults.html)
+
+May 5, 2021
+
+Amazon MQ now supports ActiveMQ 5.15.15. For more information, see the
+following:
+
+- [ActiveMQ 5.15.15 Release Page](https://activemq.apache.org/activemq-5015015-release)
+
+- [Managing Amazon MQ for ActiveMQ engine versions](activemq-version-management.md)
+
+- [Using Spring XML configuration files](amazon-mq-broker-configuration-parameters.md#working-with-spring-xml-configuration-files)
+
+May 5, 2021
+
+Amazon MQ started tracking changes to AWS managed policies. For more information, see the following:
+
+- [AWS managed policies for Amazon MQ](security-iam-awsmanpol.md)
+
+April 14, 2021
+
+Amazon MQ is now available in the China (Beijing) and China (Ningxia) Regions. For information
+on available regions, see [AWS\
+Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#amazon-mq_region).
+
+April 7, 2021
+
+Amazon MQ now supports RabbitMQ 3.8.11. For more information about the fixes and features contained in this update,
+see the following:
+
+- [RabbitMQ 3.8.11 release notes](https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.8.11) on the RabbitMQ server GitHub repository
+
+- [RabbitMQ changelog](https://www.rabbitmq.com/changelog.html)
+
+- [Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md)
+
+April 1, 2021
+
+Amazon MQ is now available in the Asia Pacific (Osaka) Region. For information
+about available regions, see [Amazon MQ regions and endpoints](https://docs.aws.amazon.com/general/latest/gr/amazon-mq.html).
+
+December 21, 2020
+
+Amazon MQ now supports ActiveMQ 5.15.14. For more information, see the
+following:
+
+- [ActiveMQ 5.15.14 Release Notes](https://activemq.apache.org/activemq-51514-release)
+
+- [Managing Amazon MQ for ActiveMQ engine versions](activemq-version-management.md)
+
+- [Using Spring XML configuration files](amazon-mq-broker-configuration-parameters.md#working-with-spring-xml-configuration-files)
+
+- ###### Important
+
+Due to a known Apache ActiveMQ issue in this release, the new **Pause Queue** button in the ActiveMQ web console
+cannot be used with Amazon MQ for ActiveMQ brokers. For more information about this issue, see
+[AMQ-8104](https://issues.apache.org/jira/browse/AMQ-8104).
+
+November 4, 2020
+
+Amazon MQ now supports [RabbitMQ](https://www.rabbitmq.com/), a popular open source message broker.
+This enables you to migrate your existing RabbitMQ message brokers to AWS without having to rewrite code.
+
+Amazon MQ for RabbitMQ manages both individual and clustered message brokers and handles tasks like provisioning the
+infrastructure, setting up the broker, and updating the software.
+
+- Amazon MQ supports RabbitMQ 3.8.6. For more information about supported engine versions, see [Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md).
+
+- The [AWS Free Tier](https://aws.amazon.com/free) includes up to 750 hours of a
+single-instance `mq.t3.micro` broker and up to 20GB of storage per month for one year.
+For more information about supported instance types, see [Broker instance types](broker-instance-types.md).
+
+- With Amazon MQ for RabbitMQ, you can access your brokers using AMQP 0-9-1,
+and with any language supported by the [RabbitMQ client libraries](https://www.rabbitmq.com/devtools.html).
+For more information about supported protocols and cipher suites, see [Amazon MQ for RabbitMQ protocols](data-protection.md#rabbitmq-protocol-and-ciphers).
+
+- Amazon MQ for RabbitMQ is available in all regions that Amazon MQ is currently available. To learn more about all of the available regions,
+see the [AWS Region Table](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services).
+
+To get started with using Amazon MQ, create a broker, and connect a JVM-based application to your RabbitMQ broker, see
+[Getting started: Creating and connecting to a RabbitMQ broker](getting-started-rabbitmq.md).
+
+October 22, 2020
+
+Amazon MQ supports ActiveMQ 5.15.13. For more information, see the
+following:
+
+- [ActiveMQ 5.15.13 Release Notes](https://activemq.apache.org/activemq-51513-release)
+
+- [Managing Amazon MQ for ActiveMQ engine versions](activemq-version-management.md)
+
+- [Using Spring XML configuration files](amazon-mq-broker-configuration-parameters.md#working-with-spring-xml-configuration-files)
+
+September 30, 2020
+
+Amazon MQ is now available in the Europe (Milan) Region. For information
+about available regions, see [Amazon MQ regions and endpoints](https://docs.aws.amazon.com/general/latest/gr/amazon-mq.html).
+
+July 27, 2020
+
+You can authenticate Amazon MQ users using the credentials stored in your
+Active Directory or other LDAP server. You can also add, delete, and
+modify Amazon MQ users and assign permissions to topics and queues. For more
+information, see [Integrate LDAP with ActiveMQ](security-authentication-authorization.md#integrate-ldap).
+
+July 17, 2020
+
+Amazon MQ now supports the `mq.t3.micro` instance type. For
+more information, see [Broker instance types](broker-instance-types.md).
+
+June 30, 2020
+
+Amazon MQ supports ActiveMQ 5.15.12. For more information, see the
+following:
+
+- [ActiveMQ 5.15.12 Release Notes](https://activemq.apache.org/activemq-51512-release)
+
+- [Managing Amazon MQ for ActiveMQ engine versions](activemq-version-management.md)
+
+- [Using Spring XML configuration files](amazon-mq-broker-configuration-parameters.md#working-with-spring-xml-configuration-files)
+
+April 30, 2020
+
+Amazon MQ supports a new child collection element,
+`systemUsage`, on the `broker` element. For
+more information, see [systemUsage](child-element-details.md#systemUsage).
+
+Amazon MQ also supports three new attributes on the `kahaDB`
+child element.
+
+- `journalDiskSyncInterval` \- Interval (ms) for when to
+perform a disk sync if
+`journalDiskSyncStrategy=periodic`.
+
+- `journalDiskSyncStrategy` \- configures the disk sync
+policy.
+
+- `preallocationStrategy` \- configures how the broker
+will try to preallocate the journal files when a new journal
+file is needed.
+
+For more information, see [Attributes](child-element-details.md#kahaDB-attributes).
+
+March 3, 2020
+
+Amazon MQ supports two new CloudWatch metrics
+
+- `TempPercentUsage` \- The percentage of available
+temporary storage used by non-persistent messages.
+
+- `JobSchedulerStorePercentUsage` \- The percentage of
+disk space used by the job scheduler store.
+
+For more information, see [Monitoring and logging Amazon MQ brokers](security-logging-monitoring.md).
+
+February 4, 2020Amazon MQ is available in the Asia Pacific (Hong Kong) and Middle East (Bahrain)
+regions. For information on available regions, see [AWS\
+Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#amazon-mq_region).January 22, 2020
+
+Amazon MQ supports ActiveMQ 5.15.10. For more information, see the
+following:
+
+- [ActiveMQ 5.15.10 Release Notes](https://activemq.apache.org/activemq-51510-release)
+
+- [Managing Amazon MQ for ActiveMQ engine versions](activemq-version-management.md)
+
+- [Using Spring XML configuration files](amazon-mq-broker-configuration-parameters.md#working-with-spring-xml-configuration-files)
+
+December 19, 2019Amazon MQ is available in the Europe (Stockholm) and South America (São Paulo)
+regions. For information on available regions, see [AWS\
+Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#amazon-mq_region).December 16, 2019Amazon MQ supports creating throughput-optimized brokers by using Amazon Elastic Block Store
+(EBS)—instead of the default Amazon Elastic File System (Amazon EFS)—for broker
+storage. To take advantage of high durability and replication across multiple Availability Zones, use Amazon EFS.
+To take advantage of low latency and high throughput, use Amazon EBS.
+
+###### Important
+
+- You can use Amazon EBS only with the `mq.m5` broker instance type family.
+
+- Although you can change the _broker instance type_, you can't change the
+_broker storage type_ after you create the broker.
+
+- Amazon EBS replicates data within a single Availability Zone and doesn't support the
+[ActiveMQ active/standby](amazon-mq-broker-architecture.md#active-standby-broker-deployment) deployment mode.
+
+For more information, see the following:
+
+- [Storage](broker-storage.md)
+
+- [Choose the correct broker storage type for the best throughput](best-practices-activemq.md#broker-storage-types-choosing)
+
+- The `storageType` property of the [`broker-instance-options`](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/broker-instance-options.html) resource
+in the _Amazon MQ REST API Reference_
+
+- The `BurstBalance`, `VolumeReadOps`, and
+`VolumeWriteOps` metrics in the [Monitoring and logging Amazon MQ brokers](security-logging-monitoring.md) section.
+
+October 18, 2019
+
+Two Amazon CloudWatch metrics are available: `TotalEnqueueCount` and
+`TotalDequeueCount`. For more information, see [Monitoring and logging Amazon MQ brokers](security-logging-monitoring.md)
+
+October 11, 2019
+
+Amazon MQ now supports Federal Information Processing Standard 140-2
+(FIPS) compliant endpoints in U.S. commercial regions.
+
+For more information see the following:
+
+- [Federal\
+Information Processing Standard (FIPS) 140-2](https://aws.amazon.com/compliance/fips)
+
+- [Amazon MQ Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#amazon-mq_region)
+
+September 30, 2019
+
+Amazon MQ now includes the ability to scale your brokers by changing
+the host instance type. For more information, see the
+`hostInstanceType` property of `UpdateBrokerInput`, and the
+`pendingHostInstanceType` property of `DescribeBrokerOutput`.
+
+August 30, 2019
+
+You can now update the security groups associated with a broker, both
+in the console and with [`UpdateBrokerInput`](../api-reference/brokers-broker-id.md#brokers-broker-id-model-updatebrokerinput).
+
+July 22, 2019
+
+Amazon MQ integrates with AWS Key Management Service (KMS) to offer server-side
+encryption. You can now select your own customer managed CMK, or use an
+AWS managed KMS key in your AWS KMS account. For more information, see [Encryption at rest](data-protection.md#data-protection-encryption-at-rest).
+
+Amazon MQ supports using AWS KMS keys in the following
+ways.
+
+- **AWS owned KMS key** — The key is owned
+Amazon MQ and is not in your account.
+
+- **AWS managed KMS key** — The AWS managed KMS key (aws/mq) is a KMS key in your account that is created, managed,
+and used on your behalf by Amazon MQ.
+
+- **Select existing customer managed CMK**
+— Customer managed CMKs are created and managed by you in
+AWS Key Management Service (KMS).
+
+June 19, 2019Amazon MQ is available in the Europe (Paris) and Asia Pacific (Mumbai)
+regions. For information on available regions, see [AWS\
+Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#amazon-mq_region).June 12, 2019Amazon MQ is available in the Canada (Central) region. For information
+on available regions, see [AWS\
+Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#amazon-mq_region).June 3, 2019
+
+Two new Amazon CloudWatch metrics are available:
+`EstablishedConnectionsCount` and
+`InactiveDurableSubscribers`. For more information, see
+the following:
+
+- [Monitoring and logging Amazon MQ brokers](security-logging-monitoring.md)
+
+- [Monitoring and logging Amazon MQ brokers](security-logging-monitoring.md)
+
+May 10, 2019
+
+Data storage for new `mq.t2.micro` instance types is
+limited to 20 GB. For more information, see the following:
+
+- [Data Storage](amazon-mq-limits.md#data-storage-limits)
+
+- [Broker instance types](broker-instance-types.md)
+
+April 29, 2019
+
+You can now use tag-based policies and resource-level permissions.
+For more information, see the following:
+
+- [How Amazon MQ works with IAM](security-iam-service-with-iam.md)
+
+- [Resource-level permissions for Amazon MQ API actions](security-api-authentication-authorization.md#security-supported-iam-actions-resources)
+
+April 16, 2019
+
+You can now retrieve information about broker engine and broker
+instance options using the REST API. For more information, see the
+following:
+
+- [Broker\
+instance options](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/broker-instance-options.html)
+
+- [Broker\
+engine types](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/broker-engine-types.html)
+
+April 8, 2019
+
+Amazon MQ supports ActiveMQ 5.15.9. For more information, see the
+following:
+
+- [ActiveMQ 5.15.9 Release Notes](https://issues.apache.org/jira/secure/ReleaseNote.jspa?Create=Create&atl_token=A5KQ-2QAV-T4JA-FDED%7C35bdc422838889098b8e9b64d138bf97db8f7f82%7Clout&projectId=12311210&styleName=Text&version=12344450)
+
+- [Managing Amazon MQ for ActiveMQ engine versions](activemq-version-management.md)
+
+- [Using Spring XML configuration files](amazon-mq-broker-configuration-parameters.md#working-with-spring-xml-configuration-files)
+
+March 4, 2019Improved the documentation for configuring dynamic failover and the
+rebalancing of clients for a network of brokers. Enable dynamic failover by
+configuring `transportConnectors` along with
+`networkConnectors` configuration options. For more
+information, see the following:
+
+- [Dynamic Failover With Transport Connectors](network-of-brokers.md#transport-connectors)
+
+- [Amazon MQ network of brokers](network-of-brokers.md)
+
+- [Amazon MQ Broker Configuration Parameters](amazon-mq-broker-configuration-parameters.md)
+
+February 27, 2019Amazon MQ is available in the Europe (London) Region in addition to the
+following regions:
+
+- Asia Pacific (Singapore)
+
+- US East (Ohio)
+
+- US East (N. Virginia)
+
+- US West (N. California)
+
+- US West (Oregon)
+
+- Asia Pacific (Tokyo)
+
+- Asia Pacific (Seoul)
+
+- Asia Pacific (Sydney)
+
+- Europe (Frankfurt)
+
+- Europe (Ireland)
+
+January 24, 2019
+
+The default configuration now includes a policy to purge inactive
+destinations.
+
+January 17, 2019
+
+Amazon MQ `mq.t2.micro` instance types now support only 100
+connections per wire-level protocol. For more information, see, [Quotas in Amazon MQ](amazon-mq-limits.md).
+
+December 19, 2018You can configure a series of Amazon MQ brokers in a network of brokers. For
+more information, see the following sections:
+
+- [Amazon MQ network of brokers](network-of-brokers.md)
+
+- [Creating and Configuring a Network of Brokers](amazon-mq-creating-configuring-network-of-brokers.md)
+
+- [Configure Your Network of Brokers Correctly](best-practices-activemq.md#network-of-brokers-configure-correctly)
+
+- `networkConnector`
+
+- `networkConnectionStartAsync`
+
+December 11, 2018Amazon MQ supports ActiveMQ 5.15.8, 5.15.6, and 5.15.0.
+
+- Resolved bugs and improvements in ActiveMQ:
+
+- [ActiveMQ 5.15.8 Release Notes](https://issues.apache.org/jira/secure/ReleaseNote.jspa?Create=Create&atl_token=A5KQ-2QAV-T4JA-FDED%7Ce767efb47d2196ab945146ed285c1496e25eb830%7Clout&projectId=12311210&styleName=&version=12344359)
+
+- [ActiveMQ 5.15.7 Release Notes](https://issues.apache.org/jira/secure/ReleaseNote.jspa?Create=Create&atl_token=A5KQ-2QAV-T4JA-FDED%7Ce767efb47d2196ab945146ed285c1496e25eb830%7Clout&projectId=12311210&styleName=&version=12344049)
+
+December 5, 2018AWS supports resource tagging to help track your cost allocation. You
+can tag resources when creating them, or by viewing the details of that
+resource. For more information, see [Tagging\
+resources](amazon-mq-tagging.md).November 19, 2018AWS has expanded its SOC compliance program to include Amazon MQ as an
+[SOC compliant\
+service](https://aws.amazon.com/compliance/soc-faqs).October 15, 2018
+
+- The maximum number of groups per user is 20. For more
+information, see [Users](amazon-mq-limits.md#activemq-user-limits).
+
+- The maximum number of connections per broker, per wire-level
+protocol is 1,000. For more information, see [Brokers](amazon-mq-limits.md#broker-limits).
+
+October 2, 2018AWS has expanded its HIPAA compliance program to include Amazon MQ as a
+[HIPAA Eligible\
+Service](https://aws.amazon.com/compliance/hipaa-compliance).September 27, 2018Amazon MQ supports ActiveMQ 5.15.6, in addition to 5.15.0. For more
+information, see the following:
+
+- [Getting started: Creating and connecting to an ActiveMQ broker](getting-started-activemq.md)
+
+- Resolved bugs and improvements in the ActiveMQ
+documentation:
+
+- [ActiveMQ 5.15.6 Release Notes](https://issues.apache.org/jira/secure/ReleaseNote.jspa?Create=Create&atl_token=A5KQ-2QAV-T4JA-FDED%7Ce12d82c21a72df503099c516372b854b9690c811%7Clout&projectId=12311210&styleName=Html&version=12343805)
+
+- [ActiveMQ 5.15.5 Release Notes](https://issues.apache.org/jira/secure/ReleaseNote.jspa?Create=Create&atl_token=A5KQ-2QAV-T4JA-FDED%7Ce12d82c21a72df503099c516372b854b9690c811%7Clout&projectId=12311210&styleName=Html&version=12343307)
+
+- [ActiveMQ 5.15.4 Release Notes](https://issues.apache.org/jira/secure/ReleaseNote.jspa?Create=Create&atl_token=A5KQ-2QAV-T4JA-FDED%7Ce12d82c21a72df503099c516372b854b9690c811%7Clout&projectId=12311210&styleName=Html&version=12342685)
+
+- [ActiveMQ 5.15.3 Release Notes](https://issues.apache.org/jira/secure/ReleaseNote.jspa?Create=Create&atl_token=A5KQ-2QAV-T4JA-FDED%7Ce12d82c21a72df503099c516372b854b9690c811%7Clout&projectId=12311210&styleName=Html&version=12341947)
+
+- [ActiveMQ 5.15.2 Release Notes](https://issues.apache.org/jira/secure/ReleaseNote.jspa?Create=Create&atl_token=A5KQ-2QAV-T4JA-FDED%7Ce12d82c21a72df503099c516372b854b9690c811%7Clout&projectId=12311210&styleName=Html&version=12341669)
+
+- [ActiveMQ 5.15.1 Release Notes](https://issues.apache.org/jira/secure/ReleaseNote.jspa?Create=Create&atl_token=A5KQ-2QAV-T4JA-FDED%7Ce12d82c21a72df503099c516372b854b9690c811%7Clout&projectId=12311210&styleName=Html&version=12341031)
+
+- [ActiveMQ Client 5.15.6](https://mvnrepository.com/artifact/org.apache.activemq/activemq-client)
+
+August 31, 2018
+
+- The following metrics are available:
+
+- `CurrentConnectionsCount`
+
+- `TotalConsumerCount`
+
+- `TotalProducerCount`
+
+For more information, see the [Monitoring and logging Amazon MQ brokers](security-logging-monitoring.md) section.
+
+- The IP address of the broker is displayed on the
+**Details** page.
+
+###### Note
+
+For brokers with public accessibility disabled, the
+internal IP address is displayed.
+
+August 30, 2018Amazon MQ is available in the Asia Pacific (Singapore) Region in addition to
+the following regions:
+
+- US East (Ohio)
+
+- US East (N. Virginia)
+
+- US West (N. California)
+
+- US West (Oregon)
+
+- Asia Pacific (Tokyo)
+
+- Asia Pacific (Seoul)
+
+- Asia Pacific (Sydney)
+
+- Europe (Frankfurt)
+
+- Europe (Ireland)
+
+July 30, 2018You can configure Amazon MQ to publish general and audit logs to Amazon CloudWatch Logs.
+For more information, see [Monitoring and logging Amazon MQ brokers](security-logging-monitoring.md).July 25, 2018Amazon MQ is available in the Asia Pacific (Tokyo) and
+Asia Pacific (Seoul) Regions in addition to the following regions:
+
+- US East (Ohio)
+
+- US East (N. Virginia)
+
+- US West (N. California)
+
+- US West (Oregon)
+
+- Asia Pacific (Sydney)
+
+- Europe (Frankfurt)
+
+- Europe (Ireland)
+
+July 19, 2018You can use AWS CloudTrail to log Amazon MQ API calls. For more information, see
+[Logging Amazon MQ API calls using CloudTrail](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/security-logging-monitoring-cloudtrail.html).June 29, 2018In addition to `mq.t2.micro` and `mq.m4.large`, the
+following broker instance types are available for regular development,
+testing, and production workloads that require high throughput:
+
+- `mq.m5.large`
+
+- `mq.m5.xlarge`
+
+- `mq.m5.2xlarge`
+
+- `mq.m5.4xlarge`
+
+For more information, see [Broker instance types](broker-instance-types.md).
+
+June 27, 2018Amazon MQ is available in the US West (N. California) Region in addition to the
+following regions:
+
+- US East (Ohio)
+
+- US East (N. Virginia)
+
+- US West (Oregon)
+
+- Asia Pacific (Sydney)
+
+- Europe (Frankfurt)
+
+- Europe (Ireland)
+
+June 14, 2018
+
+- You can use the [`AWS::Amazon MQ::Broker`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html) AWS CloudFormation
+resource to perform the following actions:
+
+- Create a broker.
+
+- Add configuration changes or modify users for the
+specified broker.
+
+- Return information about the specified broker.
+
+- Delete the specified broker.
+
+###### Note
+
+When you change any property of the [Amazon MQ Broker ConfigurationId](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-configurationid.html) or [Amazon MQ Broker User](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-user.html) property type, the broker is
+rebooted immediately.
+
+- You can use the [`AWS::Amazon MQ::Configuration`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html)
+AWS CloudFormation resource to perform the following actions:
+
+- Create a configuration.
+
+- Update the specified configuration.
+
+- Return information about the specified
+configuration.
+
+###### Note
+
+You can use CloudFormation to modify—but not
+delete—an Amazon MQ configuration.
+
+June 7, 2018The Amazon MQ console supports German, Brazilian Portuguese, Spanish,
+Italian, and Traditional Chinese.May 17, 2018The limit of number of users per broker is 250. For more information, see
+[Users](amazon-mq-limits.md#activemq-user-limits).March 13, 2018Creating a broker takes about 15 minutes. For more information, see [Finish creating the\
+broker](getting-started-activemq.md).March 1, 2018
+
+- You can configure the [concurrent store and dispatch](best-practices-activemq.md#disable-concurrent-store-and-dispatch-queues-flag-slow-consumers) for Apache KahaDB
+using the [concurrentStoreAndDispatchQueues](child-element-details.md#concurrentStoreAndDispatchQueues)
+attribute.
+
+- The
+
+> `CpuCreditBalance` CloudWatch metric is
+available for `mq.t2.micro` broker instance
+type.
+
+January 10, 2018
+
+The following changes affect the [Amazon MQ console](https://console.aws.amazon.com/amazon-mq):
+
+- In the broker list, the **Creation** column
+is hidden by default. To customize the page size and columns,
+choose ![Gear or cog icon representing settings or configuration options.](https://docs.aws.amazon.com/images/amazon-mq/latest/developer-guide/images/amazon-mq-tutorials-broker-list-preferences.png).
+
+- On the
+**`MyBroker`**
+page, in the **Connections** section, choosing
+the name of your security group or ![Pencil icon indicating an edit or modification action.](https://docs.aws.amazon.com/images/amazon-mq/latest/developer-guide/images/amazon-mq-tutorials-broker-details-link.png) opens the EC2 console (instead of the VPC
+console). The EC2 console allows more intuitive configuration of
+inbound and outbound rules. For more information, see the
+updated [Connecting a Java application to your broker](amazon-mq-connecting-application.md) section.
+
+January 9, 2018
+
+- The permission for REST operation ID [`UpdateBroker`](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/rest-api-broker.html#rest-api-broker-methods-put) is listed correctly
+as `mq:UpdateBroker` on the IAM console.
+
+- The erroneous `mq:DescribeEngine` permission is
+removed from the IAM console.
+
+November 28, 2017This is the initial release of Amazon MQ and the
+_Amazon MQ Developer Guide_.
+
+- Amazon MQ is avaialble in the following regions:
+
+- US East (Ohio)
+
+- US East (N. Virginia)
+
+- US West (Oregon)
+
+- Asia Pacific (Sydney)
+
+- Europe (Frankfurt)
+
+- Europe (Ireland)
+
+Using the `mq.t2.micro` instance type is subject to _[CPU credits and baseline performance](https://docs.aws.amazon.com/AWSEC2/latest/DeveloperGuide/t2-credits-baseline-concepts.html)_—with the ability
+to _burst_ above the baseline level (for more information, see the [CpuCreditBalance](activemq-logging-monitoring.md#security-logging-monitoring-cloudwatch-metrics) metric).
+If your application requires _fixed performance_, consider using an `mq.m5.large` instance type.
+
+- You can create `mq.m4.large` and
+`mq.t2.micro` brokers.
+
+Using the `mq.t2.micro` instance type is subject to _[CPU credits and baseline performance](https://docs.aws.amazon.com/AWSEC2/latest/DeveloperGuide/t2-credits-baseline-concepts.html)_—with the ability
+to _burst_ above the baseline level (for more information, see the [CpuCreditBalance](activemq-logging-monitoring.md#security-logging-monitoring-cloudwatch-metrics) metric).
+If your application requires _fixed performance_, consider using an `mq.m5.large` instance type.
+
+- You can use the ActiveMQ 5.15.0 broker engine.
+
+- You can also create and manage brokers programmatically using Amazon MQ
+[REST API](../api-reference.md) and AWS SDKs.
+
+- You can access your brokers by using [any programming language that ActiveMQ supports](http://activemq.apache.org/cross-language-clients.html) and by enabling TLS explicitly for the following protocols:
+
+- [AMQP](http://activemq.apache.org/amqp.html)
+
+- [MQTT](http://activemq.apache.org/mqtt.html)
+
+- MQTT over [WebSocket](http://activemq.apache.org/websockets.html)
+
+- [OpenWire](http://activemq.apache.org/openwire.html)
+
+- [STOMP](http://activemq.apache.org/stomp.html)
+
+- STOMP over WebSocket
+
+- You can connect to ActiveMQ brokers using [various ActiveMQ clients](http://activemq.apache.org/cross-language-clients.html).
+We recommend using the [ActiveMQ Client](https://mvnrepository.com/artifact/org.apache.activemq/activemq-client). For more information, see [Connecting a Java application to your broker](amazon-mq-connecting-application.md).
+
+- Your broker can send and receive messages of any size.
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+Related resources

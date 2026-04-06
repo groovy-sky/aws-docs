@@ -1,0 +1,81 @@
+![AWS logo](https://docs.aws.amazon.com/amazonq/detector-library/_next/static/media/aws-logo.506636a4.svg)
+
+[Amazon QDetector Library](../../detector-library.md) [Sign in to Amazon Q](https://console.aws.amazon.com/amazonq/home)
+
+#### Amazon Q
+
+###### Detector Library
+
+#### TypeScript detectors(104/104)
+
+[Integer overflow](integer-overflow.md) [AWS insecure transmission CDK](aws-insecure-transmission-cdk.md) [Insecure cookie](insecure-cookie.md) [AWS credentials logged](aws-logged-credentials.md) [SQL injection](sql-injection.md) [Insecure connection using unencrypted protocol](insecure-connection.md) [New function detected](new-function-detected.md) [Batch request with unchecked failures](aws-batch-write-output-ignored.md) [Unvalidated expansion of archive files](do-not-expand-archive-files-without-validating.md) [Missing pagination](missing-pagination.md) [XPath injection](xpath-injection.md) [Logging of sensitive information](logging-of-sensitive-information.md) [Override of reserved variable names in a Lambda function](lambda-override-reserved.md) [Insecure CORS policy](insecure-cors-policy.md) [Improper input validation](improper-input-validation.md) [Hardcoded credentials](hardcoded-credentials.md) [Invoke super appropriately](invoke-super-appropriately.md) [Numeric truncation error](numeric-truncation-error.md) [Avoid nan in comparison](avoid-nan-in-comparison.md) [Missing check on method output](missing-check-on-method-output.md) [Insufficiently protected credentials](insufficiently-protected-credentials.md) [Improper restriction of rendered UI layers or frames](improper-restriction-of-frames.md) [Pseudorandom number generators](pseudorandom-number-generator.md) [AWS missing encryption CDK](aws-missing-encryption-cdk.md) [Catch and swallow exception](swallow-exceptions.md) [Header injection](header-injection.md) [Use {} instead of new Object()](literal-instead-of-new-object.md) [Hardcoded IP address](hardcoded-ip-address.md) [Untrusted Amazon Machine Images](untrusted-amazon-machine-images.md) [Weak obfuscation of web requests](weak-obfuscation-of-request.md) [File Race Bad](file-race-bad.md) [Improper certificate validation](improper-certificate-validation.md) [Sendfile injection](sendfile-injection.md) [Cryptographic key generator](cryptographic-key-generator.md) [improper input validation cdk](improper-input-validation-cdk.md) [XML external entity](xml-external-entity.md) [Timing attack](timing-attack.md) [Missing Amazon S3 bucket owner condition](s3-verify-bucket-owner.md) [Insecure hashing](insecure-hashing.md) [Session fixation](session-fixation.md) [Use of Default Credentials CDK](use-of-default-credentials-cdk.md) [File injection](file-injection.md) [Improper Restriction of Operations within the Bounds of a Memory Buffer](improper-restriction-of-operations.md) [Limit request length](limit-on-request-content-length.md) [Log injection](log-injection.md) [Type confusion](type-confusion.md) [Server side request forgery](server-side-request-forgery.md) [aws kmskey encryption cdk](aws-kmskey-encryption-cdk.md) [Inefficient polling of AWS resource](aws-polling-instead-of-waiter.md) [Avoid Undefined As Variable Name](avoid-undefined-as-variable-name.md) [Index of method comparison](index-of-method-comparison.md) [String passed to \`setInterval\` or \`setTimeout\`](do-not-pass-string-to-setinterval-or-settimeout.md) [Data loss in a batch request](unchecked-batch-failures.md) [Tainted input for Docker API](tainted-input-for-docker-api.md) [Insecure temporary file or directory](insecure-temp-file.md) [Check failed records when using kinesis](kinesis-failed-record-check.md) [AWS api logging disabled cdk](api-logging-disabled-cdk.md) [Improper Access Control CDK](improper-access-control-cdk.md) [Least privilege violation](least-privilege-violation.md) [File extension validation](file-extension-validation.md) [Resource leak](resource-leak.md) [Set SNS Return Subscription ARN](sns-set-return-subscription-arn.md) [Insecure object attribute modification](insecure-object-attribute-modification.md) [Missing Authentication for Critical Function CDK](missing-authentication-for-critical-function-cdk.md) [Typeof expression](typeof-expression.md) [AWS missing encryption of sensitive data cdk](missing-encryption-of-sensitive-data-cdk.md) [Unauthenticated Amazon SNS unsubscribe requests might succeed](sns-authenticate-on-unsubscribe.md) [Cross-site request forgery](cross-site-request-forgery.md) [Client-side KMS reencryption](aws-kms-reencryption.md) [Insecure cryptography](insecure-cryptography.md) [Deserialization of untrusted object](untrusted-deserialization.md) [Clear text credentials](clear-text-credentials.md) [Improper handling of case sensitivity](improper-handling-of-case-sensitivity.md) [Unsanitized input is run as code](code-injection.md) [Protection mechanism failure](protection-mechanism-failure.md) [Use of a deprecated method](deprecated-method.md) [Sensitive information leak](sensitive-information-leak.md) [DNS prefetching](dns-prefetching.md) [Exposure of Sensitive Information CDK](exposure-of-sensitive-information-cdk.md) [Insecure JWT parsing](insecure-jwt-parsing.md) [Loose file permissions](loose-file-permissions.md) [Missing Authorization CDK](missing-authorization-cdk.md) [Sensitive query string](sensitive-query-string.md) [Insufficient Logging CDK](insufficient-logging-cdk.md) [OS command injection](os-command-injection.md) [NoSQL injection](nosql-injection.md) [Unverified hostname](https://docs.aws.amazon.com/amazonq/detector-library/typescript/unverified-hostname) [Path traversal](https://docs.aws.amazon.com/amazonq/detector-library/typescript/path-traversal) [Origins-verified cross-origin communications](https://docs.aws.amazon.com/amazonq/detector-library/typescript/origins-verified-cross-origin-communications) [LDAP injection](https://docs.aws.amazon.com/amazonq/detector-library/typescript/ldap-injection) [SNS don't bind subscribe and publish](https://docs.aws.amazon.com/amazonq/detector-library/typescript/sns-no-bind-subscribe-publish) [S3 partial encrypt CDK](https://docs.aws.amazon.com/amazonq/detector-library/typescript/s3-partial-encrypt-cdk) [Non-literal regular expression](https://docs.aws.amazon.com/amazonq/detector-library/typescript/non-literal-regular-expression) [Stack trace exposure](https://docs.aws.amazon.com/amazonq/detector-library/typescript/stack-trace-exposure) [File and directory information exposure](https://docs.aws.amazon.com/amazonq/detector-library/typescript/file-and-directory-information-exposure) [Usage of an API that is not recommended](https://docs.aws.amazon.com/amazonq/detector-library/typescript/not-recommended-apis) [Lazy Load Module](https://docs.aws.amazon.com/amazonq/detector-library/typescript/lazy-load-module) [Disabled HTML autoescape](https://docs.aws.amazon.com/amazonq/detector-library/typescript/do-not-disable-html-autoescape) [Improper access control](https://docs.aws.amazon.com/amazonq/detector-library/typescript/improper-access-control) [Cross-site scripting](https://docs.aws.amazon.com/amazonq/detector-library/typescript/cross-site-scripting) [Sensitive data stored unencrypted due to partial encryption](https://docs.aws.amazon.com/amazonq/detector-library/typescript/partial-encryption) [AWS client not reused in a Lambda function](https://docs.aws.amazon.com/amazonq/detector-library/typescript/lambda-client-reuse) [URL redirection to untrusted site](https://docs.aws.amazon.com/amazonq/detector-library/typescript/open-redirect) [Untrusted data in security decision](https://docs.aws.amazon.com/amazonq/detector-library/typescript/untrusted-data-in-decision)
+
+# Unverified hostname [High](https://docs.aws.amazon.com/amazonq/detector-library/typescript/severity/high)
+
+Unverified hostnames can allow man-in-the-middle attacks. When establishing an SSL/TLS connection, use the default `checkServerIdentity` or confirm that the certificate's hostname-specific data matches the server hostname to avoid these attacks.
+
+**Detector ID**
+
+typescript/unverified-hostname@v1.0
+
+**Category**
+
+[Security](https://docs.aws.amazon.com/amazonq/detector-library/typescript/categories/security)
+
+**Common Weakness Enumeration (CWE)![external icon](https://docs.aws.amazon.com/amazonq/detector-library/_next/static/media/external.cdeb5c57.svg)**
+
+[CWE-297](https://cwe.mitre.org/data/definitions/297.html)
+
+**Tags**
+
+[\# owasp-top10](https://docs.aws.amazon.com/amazonq/detector-library/typescript/tags/owasp-top10)
+
+* * *
+
+#### Noncompliant example
+
+```typescript
+1import https from 'https'
+2function unverifiedHostnameNoncompliant() {
+3  var options = {
+4    hostname: "encrypted.google.com",
+5    port: 3000,
+6    path: "/pathname/",
+7    method: "POST",
+8    // Noncompliant: hostname is not verified.
+9    checkServerIdentity: function (host: any) {
+10      console.log("unverified hostname");
+11    },
+12  };
+13  var request = https.request(options, (response: any) => {
+14    let data = "hello";
+15    console.log(data);
+16  });
+17}
+
+```
+
+#### Compliant example
+
+```typescript
+1import https from 'https'
+2function unverifiedHostnameCompliant() {
+3  var options = {
+4    hostname: "encrypted.google.com",
+5    port: 3000,
+6    path: "/pathname/",
+7    method: "POST",
+8    // Compliant: hostname is verified before using it.
+9    checkServerIdentity: function (host: string) {
+10      if (host != "github.com") {
+11        console.log("verified hostname");
+12      }
+13    },
+14  };
+15  var request = https.request(options, (response: any) => {
+16    let data = "hello";
+17    console.log(data);
+18  });
+19}
+
+```

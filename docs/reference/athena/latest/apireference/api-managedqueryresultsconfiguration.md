@@ -1,0 +1,43 @@
+# ManagedQueryResultsConfiguration
+
+The configuration for storing results in Athena owned storage, which includes whether this feature is enabled; whether encryption configuration, if any, is used for encrypting query results.
+
+## Contents
+
+**Enabled**
+
+If set to true, allows you to store query results in Athena owned storage. If set to
+false, workgroup member stores query results in location specified under
+`ResultConfiguration$OutputLocation`. The default is false. A workgroup
+cannot have the `ResultConfiguration$OutputLocation` parameter when you set
+this field to true.
+
+Type: Boolean
+
+Required: Yes
+
+**EncryptionConfiguration**
+
+If you encrypt query and calculation results in Athena owned storage, this field
+indicates the encryption option (for example, SSE\_KMS or CSE\_KMS) and key
+information.
+
+Type: [ManagedQueryResultsEncryptionConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_ManagedQueryResultsEncryptionConfiguration.html) object
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/ManagedQueryResultsConfiguration)
+
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/ManagedQueryResultsConfiguration)
+
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/ManagedQueryResultsConfiguration)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+ManagedLoggingConfiguration
+
+ManagedQueryResultsConfigurationUpdates

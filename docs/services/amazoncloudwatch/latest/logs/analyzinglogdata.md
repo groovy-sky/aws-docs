@@ -1,0 +1,148 @@
+# Analyzing log data with CloudWatch Logs Insights
+
+With CloudWatch Logs Insights, you can interactively search and analyze your log data in Amazon CloudWatch Logs. You can
+perform queries to help you more efficiently and effectively respond to operational issues.
+In addition to querying using log groups, you can query using facets, data source, and data
+type. If an issue occurs, you can use CloudWatch Logs Insights to identify potential causes and validate
+deployed fixes. You are limited to 100 concurrent CloudWatch Logs Insights QL per account,
+including queries added to dashboards. Additionally , You can run 15 concurrent queries for
+either OpenSearch Service PPL or OpenSearch Service SQL.
+
+CloudWatch Logs Insights supports three query languages that you can use for your queries:
+
+- A purpose-built **Logs Insights query language (Logs Insights**
+**QL)** with a few simple but powerful commands.
+
+- **OpenSearch Service Piped Processing Language (PPL)**. OpenSearch PPL enables
+you to analyze your logs using a set of commands delimited by pipes (\|).
+
+With OpenSearch PPL you can retrieve, query, and analyze data by using commands
+that are piped together, making it easier to understand and compose complex queries.
+The syntax enables the chaining of commands to transform and process data. With PPL,
+you can filter and aggregate data, and use a rich set of math, string, date,
+conditional and other functions for analysis.
+
+- **OpenSearch Service Structured Query Language (SQL)**. With OpenSearch SQL
+queries, you can analyze your logs in a declarative manner. You can use commands
+such as SELECT, FROM, WHERE, GROUP BY, HAVING, and various other commands and
+functions available in SQL. You can execute JOINs across log groups, correlate data
+across logs using sub-queries, and use the rich set of JSON, Mathematical, String,
+Conditional and other SQL functions to perform powerful analysis on logs.
+
+When you use either SQL or PPL commands, make sure to enclose fields with special
+characters (non-alphabetic and non-numeric) in backticks to successfully query them.
+For example, enclose `@message`, `Operation.Export`, and
+`Test::Field` in backticks. You don't need to enclose fields with
+purely alphabetical names in backticks.
+
+CloudWatch Logs Insights offers the following features that are available for use with any of the query
+languages.
+
+- Automatic [discovery of log fields](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_AnalyzeLogData-discoverable-fields.html) in logs from AWS
+services such as Amazon Route 53, AWS Lambda, AWS CloudTrail, and Amazon VPC, and any application or
+custom log that emits log events as JSON.
+
+- Creating [field\
+indexes](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogs-Field-Indexing.html) to reduce costs and speed results, especially for
+queries of large number of log groups or log events. After creating field indexes of
+fields that are common in your log events, you can use them in in a query. The query
+skips processing log events that are known to not include the indexed field, and
+processes less data.
+
+###### Note
+
+The `filterIndex` command is available only in Logs Insights
+QL.
+
+- [Detection and analysis of\
+patterns](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_AnalyzeLogData_Patterns.html) in your log events. A pattern is a shared text
+structure that recurs among your log fields. When you view the results of a query,
+you can choose the **Patterns** tab to see the patterns that CloudWatch Logs
+found based on a sample of your results.
+
+- [Saving\
+queries](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_Insights-Saving-Queries.html), seeing your query history, re-running saved
+queries, and [using\
+saved queries with parameters](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_Insights-Saving-Queries.html#CWL_Insights-Parameterized-Queries).
+
+- [Adding queries to\
+dashboards](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_ExportQueryResults.html).
+
+- [Encrypting query\
+results with AWS Key Management Service](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogs-Insights-Query-Encrypt.html).
+
+- [Query generation using\
+natural language](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogs-Insights-Query-Assist.html) lets you use natural language to create CloudWatch Logs Insights queries.
+You can ask questions about or describe the data you're looking for, then the AI
+generates a query based on your prompt and provides a line-by-line explanation of
+how the query works.
+
+- [Use facets to group, filter, and\
+interactively explore your logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogs-Facets.html).
+
+The following CloudWatch Logs Insights features are supported only when you use Logs Insights QL.
+
+- [Comparison queries](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_AnalyzeLogData_Compare.html) that compare
+log events in a log group with log events from a previous time period.
+
+###### Important
+
+CloudWatch Logs Insights can't access log events with timestamps that pre-date the creation time of the
+log group.
+
+If you are signed in to an account set up as a monitoring account in CloudWatch cross-account
+observability, you can run CloudWatch Logs Insights queries on log groups in source accounts linked to
+this monitoring account. You can run a query that queries multiple log groups located in
+different accounts. For more information, see [CloudWatch cross-account observability](../monitoring/cloudwatch-unified-cross-account.md).
+
+When you create queries using Logs Insights QL, you can also use natural language to
+create CloudWatch Logs Insights queries. To do so, ask questions about or describe the data you're looking
+for. This AI-assisted capability generates a query based on your prompt and provides a
+line-by-line explanation of how the query works. For more information, see [Use natural\
+language to generate and update CloudWatch Logs Insights queries](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogs-Insights-Query-Assist.html).
+
+Queries using any of the supported query languages time out after 60 minutes, if they have
+not completed. Query results are available for seven days.
+
+CloudWatch Logs Insights queries incur charges based on the amount of data that is queried,
+regardless of query language. For more information, see [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing).
+
+You can use CloudWatch Logs Insights to search log data that was sent to CloudWatch Logs on November 5, 2018 or
+later.
+
+###### Important
+
+If your network security team doesn't allow the use of web sockets, you can't
+currently access the CloudWatch Logs Insights portion of the CloudWatch console. You can use the CloudWatch Logs Insights query
+capabilities using APIs. For more information, see [StartQuery](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_StartQuery.html) in the
+_Amazon CloudWatch Logs API Reference_.
+
+###### Contents
+
+- [Supported query languages](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_AnalyzeLogData_Languages.html)
+
+- [Use natural language to generate and update CloudWatch Logs Insights queries](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogs-Insights-Query-Assist.html)
+
+- [Supported logs and discovered fields](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_AnalyzeLogData-discoverable-fields.html)
+
+- [Create field indexes to improve query performance and reduce scan volume](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogs-Field-Indexing.html)
+
+- [Use facets to group and explore logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogs-Facets.html)
+
+- [Pattern analysis](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_AnalyzeLogData_Patterns.html)
+
+- [Save and re-run CloudWatch Logs Insights queries](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_Insights-Saving-Queries.html)
+
+- [Add query to dashboard or export query results](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_ExportQueryResults.html)
+
+- [View running queries or query history](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogs-Insights-Query-History.html)
+
+- [Encrypt query results with AWS Key Management Service](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogs-Insights-Query-Encrypt.html)
+
+- [Generate a natural language summary from CloudWatch Logs Insights query results](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogs-Insights-Query-Results-Summary.html)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+Supported third-party sources for data sources
+
+Supported query languages

@@ -4,7 +4,7 @@ Welcome to the AWS Certificate Manager (ACM) API Reference. This guide provides 
 and usage examples for each ACM API operation.
 
 You can use ACM to manage SSL/TLS certificates for your AWS-based websites and
-applications. For general information about using ACM, see the [AWS Certificate Manager User Guide](../../../../services/acm/latest/userguide.md).
+applications. For general information about using ACM, see the [AWS Certificate Manager User Guide](https://docs.aws.amazon.com/acm/latest/userguide).
 
 Instead of using the ACM API directly, you can use one of the AWS SDKs or command
 line tools to interact with the ACM API. These tools are available for a variety of
@@ -14,9 +14,9 @@ programming languages and platforms. For more information, see [Tools for Amazon
 
 You must sign your API requests to ACM using Signature Version 4. When you use the
 AWS SDKs and command line tools, they sign API requests for you. If you do not use these tools,
-you must calculate the signature yourself. For more information, see [Signature Version 4 Signing Process](../../../../general/general/latest/gr/signature-version-4.md) in
+you must calculate the signature yourself. For more information, see [Signature Version 4 Signing Process](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) in
 the _Amazon Web Services General Reference_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
 
 Actions
