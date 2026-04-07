@@ -66,8 +66,8 @@ terraform/exposed-ec2-user-data-secret-terraform@v1.0
 29  sudo apt-get install -y apache2
 30  sudo systemctl start apache2
 31  sudo systemctl enable apache2
-32  export AWS_ACCESS_KEY_ID=EXAMPLE_ACCESS_KEY_ID
-33  export AWS_SECRET_ACCESS_KEY=EXAMPLE_SECRET_ACCESS_KEY
+32  export AWS_ACCESS_KEY_ID=AWS_ACCESS_KEY_ID_REDACTED
+33  export AWS_SECRET_ACCESS_KEY=AWS_SECRET_ACCESS_KEY_REDACTED
 34  export AWS_DEFAULT_REGION=us-west-2
 35  echo "<h1>Deployed via Terraform</h1>" | sudo tee /var/www/html/index.html
 36  EOF
