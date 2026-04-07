@@ -1,0 +1,86 @@
+# Managing the cache configuration for an app
+
+Amplify uses Amazon CloudFront to manage the caching configuration for your hosted applications. A
+cache configuration is applied to each app to optimize for the best performance.
+
+On August 13, 2024, Amplify released improvements to caching efficiency for applications. For more information, see [CDN Caching Improvements for Better App Performance with AWS Amplify Hosting](https://aws.amazon.com/blogs/mobile/cdn-caching-improvements-for-better-app-performance-with-aws-amplify-hosting).
+
+The following table summarizes Amplify support for specific caching behaviors before and
+after the caching improvements release.
+
+Caching behaviorPrevious supportWith caching improvements
+
+You can add custom headers for an app in the Amplify console or in a `customHeaders.yaml` file. One of the headers that you can override is
+`Cache-Control`. For more information, see [Setting custom headers for an Amplify app](https://docs.aws.amazon.com/amplify/latest/userguide/custom-headers.html).
+
+Yes
+
+Yes
+
+Amplify respects the `Cache-Control` headers that you define in a `customHeaders.yaml` file and they take precedence over Amplify's
+default cache settings.
+
+YesYes
+
+Amplify respects the `Cache-Control` headers set within an application’s framework for dynamic routes (for example, Next.js SSR routes). If a
+`Cache-Control` header is set in the app's `customHeaders.yaml` file, this takes precedence over settings in the
+`next.config.js` file.
+
+Yes
+
+Yes
+
+Each new CI/CD app deployment clears the cache.
+
+Yes
+
+Yes
+
+You can turn on performance mode for an app.
+
+Yes
+
+No
+
+The performance mode setting is no longer available in the
+Amplify console. However, you can create a `Cache-Control` header that sets the
+`s-maxage` directive. For instructions, see [Using the Cache-Control header to increase app performance](https://docs.aws.amazon.com/amplify/latest/userguide/Using-headers-to-control-cache-duration.html).
+
+The following table lists the changes to the default values for specific cache
+settings.
+
+Cache settingPrevious default valueDefault value with caching improvements
+
+Cache duration for static assets
+
+Two seconds
+
+One year
+
+Cache duration for reverse proxy responses
+
+Two seconds
+
+Zero seconds (no caching)
+
+Max Time to Live (TTL)
+
+Ten minutes
+
+One year
+
+For more information about how Amplify determines the caching configuration to apply to an application and instructions on managing cache key configuration, see the following topics.
+
+###### Topics
+
+- [How Amplify applies cache configuration to an app](https://docs.aws.amazon.com/amplify/latest/userguide/cache-configuration-type.html)
+
+- [Managing cache key cookies](https://docs.aws.amazon.com/amplify/latest/userguide/cache-key-cookies.html)
+
+- [Using the Cache-Control header to increase app performance](https://docs.aws.amazon.com/amplify/latest/userguide/Using-headers-to-control-cache-duration.html)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+Monorepo custom headers
+
+How Amplify applies cache configuration
