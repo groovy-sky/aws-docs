@@ -6,37 +6,37 @@ Please update your bookmarks and links. For help getting started with CloudForma
 
 **Resource types**
 
-- [AWS::RDS::CustomDBEngineVersion](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-customdbengineversion.html)
+- [AWS::RDS::CustomDBEngineVersion](aws-resource-rds-customdbengineversion.md)
 
-- [AWS::RDS::DBCluster](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbcluster.html)
+- [AWS::RDS::DBCluster](aws-resource-rds-dbcluster.md)
 
-- [AWS::RDS::DBClusterParameterGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbclusterparametergroup.html)
+- [AWS::RDS::DBClusterParameterGroup](aws-resource-rds-dbclusterparametergroup.md)
 
 - [AWS::RDS::DBInstance](aws-resource-rds-dbinstance.md)
 
-- [AWS::RDS::DBParameterGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbparametergroup.html)
+- [AWS::RDS::DBParameterGroup](aws-resource-rds-dbparametergroup.md)
 
-- [AWS::RDS::DBProxy](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbproxy.html)
+- [AWS::RDS::DBProxy](aws-resource-rds-dbproxy.md)
 
-- [AWS::RDS::DBProxyEndpoint](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbproxyendpoint.html)
+- [AWS::RDS::DBProxyEndpoint](aws-resource-rds-dbproxyendpoint.md)
 
-- [AWS::RDS::DBProxyTargetGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbproxytargetgroup.html)
+- [AWS::RDS::DBProxyTargetGroup](aws-resource-rds-dbproxytargetgroup.md)
 
-- [AWS::RDS::DBSecurityGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbsecuritygroup.html)
+- [AWS::RDS::DBSecurityGroup](aws-resource-rds-dbsecuritygroup.md)
 
-- [AWS::RDS::DBSecurityGroupIngress](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbsecuritygroupingress.html)
+- [AWS::RDS::DBSecurityGroupIngress](aws-resource-rds-dbsecuritygroupingress.md)
 
-- [AWS::RDS::DBShardGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbshardgroup.html)
+- [AWS::RDS::DBShardGroup](aws-resource-rds-dbshardgroup.md)
 
-- [AWS::RDS::DBSubnetGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-dbsubnetgroup.html)
+- [AWS::RDS::DBSubnetGroup](aws-resource-rds-dbsubnetgroup.md)
 
-- [AWS::RDS::EventSubscription](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-eventsubscription.html)
+- [AWS::RDS::EventSubscription](aws-resource-rds-eventsubscription.md)
 
-- [AWS::RDS::GlobalCluster](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-globalcluster.html)
+- [AWS::RDS::GlobalCluster](aws-resource-rds-globalcluster.md)
 
-- [AWS::RDS::Integration](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-integration.html)
+- [AWS::RDS::Integration](aws-resource-rds-integration.md)
 
-- [AWS::RDS::OptionGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-rds-optiongroup.html)
+- [AWS::RDS::OptionGroup](aws-resource-rds-optiongroup.md)
 
 [Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
 
