@@ -12,7 +12,7 @@ You must specify at least one parameter for the launch template data.
 
 The block device mapping.
 
-Type: Array of [LaunchTemplateBlockDeviceMappingRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateBlockDeviceMappingRequest.html) objects
+Type: Array of [LaunchTemplateBlockDeviceMappingRequest](api-launchtemplateblockdevicemappingrequest.md) objects
 
 Required: No
 
@@ -23,7 +23,7 @@ instance's Capacity Reservation preference defaults to `open`, which enables
 it to run in any open Capacity Reservation that has matching attributes (instance type,
 platform, Availability Zone).
 
-Type: [LaunchTemplateCapacityReservationSpecificationRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateCapacityReservationSpecificationRequest.html) object
+Type: [LaunchTemplateCapacityReservationSpecificationRequest](api-launchtemplatecapacityreservationspecificationrequest.md) object
 
 Required: No
 
@@ -33,7 +33,7 @@ The CPU options for the instance. For more information, see [CPU\
 options for Amazon EC2 instances](../../../../services/ec2/latest/userguide/instance-optimize-cpu.md) in the
 _Amazon EC2 User Guide_.
 
-Type: [LaunchTemplateCpuOptionsRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateCpuOptionsRequest.html) object
+Type: [LaunchTemplateCpuOptionsRequest](api-launchtemplatecpuoptionsrequest.md) object
 
 Required: No
 
@@ -105,19 +105,19 @@ your Deep Learning (DL) inference workloads.
 
 You cannot specify accelerators from different generations in the same request.
 
-Type: Array of [LaunchTemplateElasticInferenceAccelerator](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateElasticInferenceAccelerator.html) objects
+Type: Array of [LaunchTemplateElasticInferenceAccelerator](api-launchtemplateelasticinferenceaccelerator.md) objects
 
 Required: No
 
 **EnclaveOptions**
 
 Indicates whether the instance is enabled for AWS Nitro Enclaves. For more
-information, see [What is Nitro Enclaves?](https://docs.aws.amazon.com/enclaves/latest/user/nitro-enclave.html) in the
+information, see [What is Nitro Enclaves?](../../../../services/enclaves/latest/user/nitro-enclave.md) in the
 _AWS Nitro Enclaves User Guide_.
 
 You can't enable AWS Nitro Enclaves and hibernation on the same instance.
 
-Type: [LaunchTemplateEnclaveOptionsRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateEnclaveOptionsRequest.html) object
+Type: [LaunchTemplateEnclaveOptionsRequest](api-launchtemplateenclaveoptionsrequest.md) object
 
 Required: No
 
@@ -128,7 +128,7 @@ if the instance meets the [hibernation\
 prerequisites](../../../../services/ec2/latest/userguide/hibernating-prerequisites.md). For more information, see [Hibernate your Amazon EC2 instance](../../../../services/ec2/latest/userguide/hibernate.md)
 in the _Amazon EC2 User Guide_.
 
-Type: [LaunchTemplateHibernationOptionsRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateHibernationOptionsRequest.html) object
+Type: [LaunchTemplateHibernationOptionsRequest](api-launchtemplatehibernationoptionsrequest.md) object
 
 Required: No
 
@@ -136,7 +136,7 @@ Required: No
 
 The name or Amazon Resource Name (ARN) of an IAM instance profile.
 
-Type: [LaunchTemplateIamInstanceProfileSpecificationRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateIamInstanceProfileSpecificationRequest.html) object
+Type: [LaunchTemplateIamInstanceProfileSpecificationRequest](api-launchtemplateiaminstanceprofilespecificationrequest.md) object
 
 Required: No
 
@@ -209,7 +209,7 @@ Required: No
 
 The market (purchasing) option for the instances.
 
-Type: [LaunchTemplateInstanceMarketOptionsRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateInstanceMarketOptionsRequest.html) object
+Type: [LaunchTemplateInstanceMarketOptionsRequest](api-launchtemplateinstancemarketoptionsrequest.md) object
 
 Required: No
 
@@ -243,7 +243,7 @@ Attribute-based instance type selection is only supported when using Auto Scalin
 groups, EC2 Fleet, and Spot Fleet to launch instances. If you plan to use the launch template in
 the [launch instance\
 wizard](../../../../services/ec2/latest/userguide/ec2-launch-instance-wizard.md), or with the [RunInstances](api-runinstances.md) API or
-[AWS::EC2::Instance](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html)
+[AWS::EC2::Instance](../../../../services/cloudformation/latest/userguide/aws-properties-ec2-instance.md)
 AWS CloudFormation resource, you can't specify `InstanceRequirements`.
 
 For more information, see [Specify attributes for instance type selection for EC2 Fleet or Spot Fleet](../../../../services/ec2/latest/userguide/ec2-fleet-attribute-based-instance-type-selection.md) and [Spot\
@@ -299,7 +299,7 @@ Required: No
 
 The license configurations.
 
-Type: Array of [LaunchTemplateLicenseConfigurationRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateLicenseConfigurationRequest.html) objects
+Type: Array of [LaunchTemplateLicenseConfigurationRequest](api-launchtemplatelicenseconfigurationrequest.md) objects
 
 Required: No
 
@@ -307,7 +307,7 @@ Required: No
 
 The maintenance options for the instance.
 
-Type: [LaunchTemplateInstanceMaintenanceOptionsRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateInstanceMaintenanceOptionsRequest.html) object
+Type: [LaunchTemplateInstanceMaintenanceOptionsRequest](api-launchtemplateinstancemaintenanceoptionsrequest.md) object
 
 Required: No
 
@@ -317,7 +317,7 @@ The metadata options for the instance. For more information, see [Configure\
 the Instance Metadata Service options](../../../../services/ec2/latest/userguide/configuring-instance-metadata-options.md) in the
 _Amazon EC2 User Guide_.
 
-Type: [LaunchTemplateInstanceMetadataOptionsRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateInstanceMetadataOptionsRequest.html) object
+Type: [LaunchTemplateInstanceMetadataOptionsRequest](api-launchtemplateinstancemetadataoptionsrequest.md) object
 
 Required: No
 
@@ -325,7 +325,7 @@ Required: No
 
 The monitoring for the instance.
 
-Type: [LaunchTemplatesMonitoringRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplatesMonitoringRequest.html) object
+Type: [LaunchTemplatesMonitoringRequest](api-launchtemplatesmonitoringrequest.md) object
 
 Required: No
 
@@ -333,7 +333,7 @@ Required: No
 
 The network interfaces for the instance.
 
-Type: Array of [LaunchTemplateInstanceNetworkInterfaceSpecificationRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateInstanceNetworkInterfaceSpecificationRequest.html) objects
+Type: Array of [LaunchTemplateInstanceNetworkInterfaceSpecificationRequest](api-launchtemplateinstancenetworkinterfacespecificationrequest.md) objects
 
 Required: No
 
@@ -342,7 +342,7 @@ Required: No
 Contains launch template settings to boost network performance for the type of
 workload that runs on your instance.
 
-Type: [LaunchTemplateNetworkPerformanceOptionsRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateNetworkPerformanceOptionsRequest.html) object
+Type: [LaunchTemplateNetworkPerformanceOptionsRequest](api-launchtemplatenetworkperformanceoptionsrequest.md) object
 
 Required: No
 
@@ -358,7 +358,7 @@ Required: No
 
 The placement for the instance.
 
-Type: [LaunchTemplatePlacementRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplatePlacementRequest.html) object
+Type: [LaunchTemplatePlacementRequest](api-launchtemplateplacementrequest.md) object
 
 Required: No
 
@@ -367,7 +367,7 @@ Required: No
 The options for the instance hostname. The default values are inherited from the
 subnet.
 
-Type: [LaunchTemplatePrivateDnsNameOptionsRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplatePrivateDnsNameOptionsRequest.html) object
+Type: [LaunchTemplatePrivateDnsNameOptionsRequest](api-launchtemplateprivatednsnameoptionsrequest.md) object
 
 Required: No
 
@@ -379,7 +379,7 @@ The ID of the RAM disk.
 
 We recommend that you use PV-GRUB instead of kernels and RAM disks. For more
 information, see [User provided\
-kernels](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/UserProvidedkernels.html) in the _Amazon EC2 User Guide_.
+kernels](../../../../services/ec2/latest/userguide/userprovidedkernels.md) in the _Amazon EC2 User Guide_.
 
 Type: String
 
@@ -389,7 +389,7 @@ Required: No
 
 The secondary interfaces to associate with instances launched from the template.
 
-Type: Array of [LaunchTemplateInstanceSecondaryInterfaceSpecificationRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateInstanceSecondaryInterfaceSpecificationRequest.html) objects
+Type: Array of [LaunchTemplateInstanceSecondaryInterfaceSpecificationRequest](api-launchtemplateinstancesecondaryinterfacespecificationrequest.md) objects
 
 Required: No
 
@@ -421,7 +421,7 @@ Required: No
 The tags to apply to the resources that are created during instance launch. These tags
 are not applied to the launch template.
 
-Type: Array of [LaunchTemplateTagSpecificationRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateTagSpecificationRequest.html) objects
+Type: Array of [LaunchTemplateTagSpecificationRequest](api-launchtemplatetagspecificationrequest.md) objects
 
 Required: No
 
@@ -433,7 +433,7 @@ instance with user data input](../../../../services/ec2/latest/userguide/user-da
 _Amazon EC2 User Guide_.
 
 If you are creating the launch template for use with AWS Batch, the user
-data must be provided in the [MIME multi-part archive format](https://cloudinit.readthedocs.io/en/latest/topics/format.html). For more information, see [Amazon EC2 user data in launch templates](https://docs.aws.amazon.com/batch/latest/userguide/launch-templates.html#lt-user-data) in the
+data must be provided in the [MIME multi-part archive format](https://cloudinit.readthedocs.io/en/latest/topics/format.html). For more information, see [Amazon EC2 user data in launch templates](../../../../services/batch/latest/userguide/launch-templates.md#lt-user-data) in the
 _AWS Batch User Guide_.
 
 Type: String
@@ -444,13 +444,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/RequestLaunchTemplateData)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/requestlaunchtemplatedata.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/RequestLaunchTemplateData)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/requestlaunchtemplatedata.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/RequestLaunchTemplateData)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/requestlaunchtemplatedata.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 RequestIpamResourceTag
 

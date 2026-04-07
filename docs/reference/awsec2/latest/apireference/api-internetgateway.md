@@ -8,7 +8,7 @@ Describes an internet gateway.
 
 Any VPCs attached to the internet gateway.
 
-Type: Array of [InternetGatewayAttachment](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InternetGatewayAttachment.html) objects
+Type: Array of [InternetGatewayAttachment](api-internetgatewayattachment.md) objects
 
 Required: No
 
@@ -32,7 +32,7 @@ Required: No
 
 Any tags assigned to the internet gateway.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Required: No
 
@@ -40,13 +40,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/InternetGateway)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/internetgateway.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/InternetGateway)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/internetgateway.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/InternetGateway)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/internetgateway.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 IntegrateServices
 

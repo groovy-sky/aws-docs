@@ -17,7 +17,7 @@ are interrupted or you terminate them manually.
 After you terminate an instance, you can no longer connect to it, and it can't be recovered.
 All attached Amazon EBS volumes that are configured to be deleted on termination are also permanently
 deleted and can't be recovered. All data stored on instance store volumes is permanently lost.
-For more information, see [How instance termination works](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/how-ec2-instance-termination-works.html).
+For more information, see [How instance termination works](../../../../services/ec2/latest/userguide/how-ec2-instance-termination-works.md).
 
 Before you terminate an instance, ensure that you have backed up all data that you need to
 retain after the termination to persistent storage.
@@ -77,13 +77,13 @@ Type: String
 
 Information about the Spot Fleet requests that are successfully canceled.
 
-Type: Array of [CancelSpotFleetRequestsSuccessItem](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelSpotFleetRequestsSuccessItem.html) objects
+Type: Array of [CancelSpotFleetRequestsSuccessItem](api-cancelspotfleetrequestssuccessitem.md) objects
 
 **unsuccessfulFleetRequestSet**
 
 Information about the Spot Fleet requests that are not successfully canceled.
 
-Type: Array of [CancelSpotFleetRequestsErrorItem](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelSpotFleetRequestsErrorItem.html) objects
+Type: Array of [CancelSpotFleetRequestsErrorItem](api-cancelspotfleetrequestserroritem.md) objects
 
 ## Errors
 
@@ -132,23 +132,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CancelSpotFleetRequests)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CancelSpotFleetRequests)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/cancelspotfleetrequests.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CancelSpotFleetRequests)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/cancelspotfleetrequests.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CancelSpotFleetRequests)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/cancelspotfleetrequests.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CancelSpotFleetRequests)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/cancelspotfleetrequests.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CancelSpotFleetRequests)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/cancelspotfleetrequests.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CancelSpotFleetRequests)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/cancelspotfleetrequests.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CancelSpotFleetRequests)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CancelSpotFleetRequests)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/cancelspotfleetrequests.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CancelReservedInstancesListing
 

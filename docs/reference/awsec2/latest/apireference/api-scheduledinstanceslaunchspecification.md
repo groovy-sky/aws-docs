@@ -19,7 +19,7 @@ Required: Yes
 
 The block device mapping entries.
 
-Type: Array of [ScheduledInstancesBlockDeviceMapping](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ScheduledInstancesBlockDeviceMapping.html) objects
+Type: Array of [ScheduledInstancesBlockDeviceMapping](api-scheduledinstancesblockdevicemapping.md) objects
 
 Required: No
 
@@ -37,7 +37,7 @@ Required: No
 
 The IAM instance profile.
 
-Type: [ScheduledInstancesIamInstanceProfile](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ScheduledInstancesIamInstanceProfile.html) object
+Type: [ScheduledInstancesIamInstanceProfile](api-scheduledinstancesiaminstanceprofile.md) object
 
 Required: No
 
@@ -69,7 +69,7 @@ Required: No
 
 Enable or disable monitoring for the instances.
 
-Type: [ScheduledInstancesMonitoring](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ScheduledInstancesMonitoring.html) object
+Type: [ScheduledInstancesMonitoring](api-scheduledinstancesmonitoring.md) object
 
 Required: No
 
@@ -77,7 +77,7 @@ Required: No
 
 The network interfaces.
 
-Type: Array of [ScheduledInstancesNetworkInterface](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ScheduledInstancesNetworkInterface.html) objects
+Type: Array of [ScheduledInstancesNetworkInterface](api-scheduledinstancesnetworkinterface.md) objects
 
 Required: No
 
@@ -85,7 +85,7 @@ Required: No
 
 The placement information.
 
-Type: [ScheduledInstancesPlacement](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ScheduledInstancesPlacement.html) object
+Type: [ScheduledInstancesPlacement](api-scheduledinstancesplacement.md) object
 
 Required: No
 
@@ -125,13 +125,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ScheduledInstancesLaunchSpecification)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/scheduledinstanceslaunchspecification.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ScheduledInstancesLaunchSpecification)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/scheduledinstanceslaunchspecification.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ScheduledInstancesLaunchSpecification)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/scheduledinstanceslaunchspecification.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ScheduledInstancesIpv6Address
 

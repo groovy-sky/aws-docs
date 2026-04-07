@@ -27,7 +27,7 @@ Required: No
 The launch templates and overrides that were used for launching the instances. The
 values that you specify in the Overrides replace the values in the launch template.
 
-Type: [LaunchTemplateAndOverridesResponse](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateAndOverridesResponse.html) object
+Type: [LaunchTemplateAndOverridesResponse](api-launchtemplateandoverridesresponse.md) object
 
 Required: No
 
@@ -46,13 +46,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateFleetError)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createfleeterror.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateFleetError)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createfleeterror.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateFleetError)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createfleeterror.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CpuPerformanceFactorRequest
 

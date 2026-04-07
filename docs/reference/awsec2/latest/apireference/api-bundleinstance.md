@@ -41,7 +41,7 @@ The bucket in which to store the AMI. You can specify a bucket that you already 
 new bucket that Amazon EC2 creates on your behalf. If you specify a bucket that belongs to someone
 else, Amazon EC2 returns an error.
 
-Type: [Storage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Storage.html) object
+Type: [Storage](api-storage.md) object
 
 Required: Yes
 
@@ -53,7 +53,7 @@ The following elements are returned by the service.
 
 Information about the bundle task.
 
-Type: [BundleTask](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_BundleTask.html) object
+Type: [BundleTask](api-bundletask.md) object
 
 **requestId**
 
@@ -73,7 +73,7 @@ This example request bundles the specified instance.
 
 Before you specify a value for your access key ID, review and follow the guidance in
 [Best\
-Practices for AWS accounts](https://docs.aws.amazon.com/accounts/latest/reference/best-practices.html) in the _AWS Account Management Reference_
+Practices for AWS accounts](../../../../services/accounts/latest/reference/best-practices.md) in the _AWS Account Management Reference_
 _Guide_.
 
 #### Sample Request
@@ -82,7 +82,7 @@ _Guide_.
 
 https://ec2.amazonaws.com/?Action=BundleInstance
 &InstanceId=i-1234567890abcdef0
-&Storage.S3.AWSAccessKeyId='AKIAIOSFODNN7EXAMPLE'
+&Storage.S3.AWSAccessKeyId='AWS_ACCESS_KEY_ID_REDACTED'
 &Storage.S3.Bucket=myawsbucket
 &Storage.S3.Prefix=winami
 &Storage.S3.UploadPolicy=eyJleHBpcmF0aW9uIjogIjIwMDgtMDgtMzBUMDg6NDk6MD
@@ -123,23 +123,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/BundleInstance)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/BundleInstance)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/bundleinstance.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/BundleInstance)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/bundleinstance.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/BundleInstance)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/bundleinstance.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/BundleInstance)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/bundleinstance.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/BundleInstance)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/bundleinstance.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/BundleInstance)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/bundleinstance.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/BundleInstance)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/BundleInstance)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/bundleinstance.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AuthorizeSecurityGroupIngress
 

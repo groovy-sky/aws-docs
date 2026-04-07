@@ -5,17 +5,17 @@ users, and IAM roles) can connect.
 
 Before you create an endpoint service, you must create one of the following for your service:
 
-- A [Network Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/network).
+- A [Network Load Balancer](../../../../services/elasticloadbalancing/latest/network.md).
 Service consumers connect to your service using an interface endpoint.
 
-- A [Gateway Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway).
+- A [Gateway Load Balancer](../../../../services/elasticloadbalancing/latest/gateway.md).
 Service consumers connect to your service using a Gateway Load Balancer endpoint.
 
 If you set the private DNS name, you must prove that you own the private DNS domain
 name.
 
 For more information, see the [AWS PrivateLink \
-Guide](https://docs.aws.amazon.com/vpc/latest/privatelink).
+Guide](../../../../services/vpc/latest/privatelink.md).
 
 ## Request Parameters
 
@@ -122,7 +122,7 @@ Type: String
 
 Information about the service configuration.
 
-Type: [ServiceConfiguration](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ServiceConfiguration.html) object
+Type: [ServiceConfiguration](api-serviceconfiguration.md) object
 
 ## Errors
 
@@ -224,23 +224,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateVpcEndpointServiceConfiguration)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateVpcEndpointServiceConfiguration)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createvpcendpointserviceconfiguration.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateVpcEndpointServiceConfiguration)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createvpcendpointserviceconfiguration.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateVpcEndpointServiceConfiguration)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createvpcendpointserviceconfiguration.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateVpcEndpointServiceConfiguration)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createvpcendpointserviceconfiguration.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateVpcEndpointServiceConfiguration)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createvpcendpointserviceconfiguration.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateVpcEndpointServiceConfiguration)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createvpcendpointserviceconfiguration.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateVpcEndpointServiceConfiguration)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateVpcEndpointServiceConfiguration)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createvpcendpointserviceconfiguration.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateVpcEndpointConnectionNotification
 

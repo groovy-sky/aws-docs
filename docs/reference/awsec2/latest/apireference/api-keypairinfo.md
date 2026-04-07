@@ -20,14 +20,14 @@ Required: No
 
 **keyFingerprint**
 
-If you used [CreateKeyPair](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateKeyPair.html) to create the key pair:
+If you used [CreateKeyPair](api-createkeypair.md) to create the key pair:
 
 - For RSA key pairs, the key fingerprint is the SHA-1 digest of the DER encoded private key.
 
 - For ED25519 key pairs, the key fingerprint is the base64-encoded SHA-256 digest, which
 is the default for OpenSSH, starting with [OpenSSH 6.8](http://www.openssh.com/txt/release-6.8).
 
-If you used [ImportKeyPair](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportKeyPair.html) to provide AWS the public key:
+If you used [ImportKeyPair](api-importkeypair.md) to provide AWS the public key:
 
 - For RSA key pairs, the key fingerprint is the MD5 public key fingerprint as specified in section 4 of RFC4716.
 
@@ -84,13 +84,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/KeyPairInfo)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/keypairinfo.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/KeyPairInfo)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/keypairinfo.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/KeyPairInfo)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/keypairinfo.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Ipv6Range
 

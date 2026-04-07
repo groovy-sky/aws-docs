@@ -22,7 +22,7 @@ When you stop an instance in a subnet, it retains its private IPv4 address. It's
 therefore possible to have a subnet with no running instances (they're all stopped), but
 no remaining IP addresses available.
 
-For more information, see [Subnets](https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html) in the _Amazon VPC User Guide_.
+For more information, see [Subnets](../../../../services/vpc/latest/userguide/configure-subnets.md) in the _Amazon VPC User Guide_.
 
 ## Request Parameters
 
@@ -37,7 +37,7 @@ do not necessarily select a different zone for each subnet.
 
 To create a subnet in a Local Zone, set this value to the Local Zone ID, for example
 `us-west-2-lax-1a`. For information about the Regions that support Local Zones,
-see [Available Local Zones](https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zones.html).
+see [Available Local Zones](../../../../services/local-zones/latest/ug/available-local-zones.md).
 
 To create a subnet in an Outpost, set this value to the Availability Zone for the
 Outpost and specify the Outpost ARN.
@@ -315,23 +315,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateSubnet)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateSubnet)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createsubnet.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateSubnet)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createsubnet.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateSubnet)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createsubnet.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateSubnet)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createsubnet.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateSubnet)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createsubnet.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateSubnet)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createsubnet.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateSubnet)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateSubnet)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createsubnet.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateStoreImageTask
 

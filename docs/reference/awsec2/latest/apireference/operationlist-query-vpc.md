@@ -315,7 +315,7 @@ The following API actions are available for Amazon VPC. To learn more about Amaz
 
 - [RejectVpcPeeringConnection](api-rejectvpcpeeringconnection.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 VM Import/Export actions
 

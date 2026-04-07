@@ -63,13 +63,13 @@ Required: No
 
 Information about the instances running on the Dedicated Host.
 
-Type: [AvailableCapacity](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AvailableCapacity.html) object
+Type: [AvailableCapacity](api-availablecapacity.md) object
 
 Required: No
 
 **clientToken**
 
-Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensuring Idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html).
+Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensuring Idempotency](run-instance-idempotency.md).
 
 Type: String
 
@@ -98,7 +98,7 @@ Required: No
 
 The hardware specifications of the Dedicated Host.
 
-Type: [HostProperties](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HostProperties.html) object
+Type: [HostProperties](api-hostproperties.md) object
 
 Required: No
 
@@ -125,7 +125,7 @@ Required: No
 
 The IDs and instance type that are currently running on the Dedicated Host.
 
-Type: Array of [HostInstance](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HostInstance.html) objects
+Type: Array of [HostInstance](api-hostinstance.md) objects
 
 Required: No
 
@@ -185,13 +185,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/Host)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/host.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/Host)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/host.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/Host)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/host.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 HistoryRecordEntry
 

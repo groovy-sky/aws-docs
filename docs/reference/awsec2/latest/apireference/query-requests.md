@@ -3,7 +3,7 @@
 Query requests are HTTP or HTTPS requests that use the HTTP verb GET or POST and a
 Query parameter named `Action`. For each Amazon EC2 API action, you can choose whether to use GET or POST.
 Regardless of which verb you choose, the same data is sent and received. For a list of Amazon EC2 API actions,
-see [Actions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/query-apis.html).
+see [Actions](query-apis.md).
 
 ###### Contents
 
@@ -33,7 +33,7 @@ to make them easier to read.
 The request consists of the following:
 
 - **Endpoint**: The URL that serves as the entry point for the web
-service. For more information, see [Amazon EC2 service endpoints](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-endpoints.html).
+service. For more information, see [Amazon EC2 service endpoints](../../../../services/ec2/latest/devguide/ec2-endpoints.md).
 
 - **Action**: The action that you want to perform; for
 example, use `RunInstances` to launch an instance.
@@ -47,7 +47,7 @@ the version is 2016-11-15.
 - **Authorization parameters**: The authorization parameters that
 AWS uses to ensure the validity and authenticity of the request. Amazon EC2 supports Signature Version 2
 and Signature Version 4. We recommend that you use Signature Version 4. For more information,
-see [Signing AWS API requests](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html) in
+see [Signing AWS API requests](../../../../services/iam/latest/userguide/reference-aws-signing.md) in
 the _IAM User Guide_.
 
 The following optional parameters can be included in your request:
@@ -94,10 +94,10 @@ host:ec2.amazonaws.com
 
 The first line specifies the endpoint of the request. After the endpoint is a
 question mark (?), which separates the endpoint from the parameters. For more information
-about Amazon EC2 endpoints, see [Amazon EC2 service endpoints](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-endpoints.html).
+about Amazon EC2 endpoints, see [Amazon EC2 service endpoints](../../../../services/ec2/latest/devguide/ec2-endpoints.md).
 
 The `Action` parameter indicates the action to perform. For a complete list of
-actions, see [Actions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/query-apis.html). The
+actions, see [Actions](query-apis.md). The
 remaining lines specify additional parameters for the request.
 
 In the example Query requests we present in the Amazon EC2 API documentation, we omit the
@@ -122,7 +122,7 @@ https://ec2.amazonaws.com/?Action=RunInstances
 
 Before you specify your access key ID for the `AWSAccessKeyId` or
 `Credential` parameter, review and follow the guidance in
-[AWS security credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html).
+[AWS security credentials](../../../../services/iam/latest/userguide/security-creds.md).
 
 ## Query parameters
 
@@ -156,7 +156,7 @@ You can send Query requests over either the HTTP or HTTPS protocol.
 
 Regardless of which protocol you use, you must include a signature in every Query request.
 Amazon EC2 supports Signature Version 2 and Signature Version 4. We recommend that you use
-Signature Version 4. For more information, see [Signing AWS API requests](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html) in the _IAM User Guide_.
+Signature Version 4. For more information, see [Signing AWS API requests](../../../../services/iam/latest/userguide/reference-aws-signing.md) in the _IAM User Guide_.
 
 Signature Version 4 requests allow you to specify all the authorization parameters in a
 single header, for example:
@@ -244,13 +244,13 @@ potentially return a large number of results, such as `DescribeInstances`.
 Using pagination bounds the number of items returned and the time it takes for these
 calls to return.
 
-For more information, see [Pagination](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-pagination.html) in the _Amazon EC2 Developer Guide_.
+For more information, see [Pagination](../../../../services/ec2/latest/devguide/ec2-api-pagination.md) in the _Amazon EC2 Developer Guide_.
 
 ## Preventing requests over HTTP
 
 If your workload does not require you to use HTTP, we recommend that you avoid
 using it to prevent transmitting and receiving unencrypted data, and to use HTTPS
-instead. You can use the [`aws:SecureTransport`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-securetransport) global IAM condition key in
+instead. You can use the [`aws:SecureTransport`](../../../../services/iam/latest/userguide/reference-policies-condition-keys.md#condition-keys-securetransport) global IAM condition key in
 your IAM policies to prevent users from sending requests over HTTP.
 
 The following example policy prevents users from sending requests over HTTP.
@@ -274,7 +274,7 @@ The following example policy prevents users from sending requests over HTTP.
 }
 ```
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Making API requests
 

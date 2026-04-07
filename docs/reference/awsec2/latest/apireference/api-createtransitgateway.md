@@ -6,16 +6,16 @@ You can use a transit gateway to interconnect your virtual private clouds (VPC) 
 After the transit gateway enters the `available` state, you can attach your VPCs and VPN
 connections to the transit gateway.
 
-To attach your VPCs, use [CreateTransitGatewayVpcAttachment](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTransitGatewayVpcAttachment.html).
+To attach your VPCs, use [CreateTransitGatewayVpcAttachment](api-createtransitgatewayvpcattachment.md).
 
 To attach a VPN connection, use [CreateCustomerGateway](api-createcustomergateway.md) to create a customer
 gateway and specify the ID of the customer gateway and the ID of the transit gateway in a call to
-[CreateVpnConnection](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpnConnection.html).
+[CreateVpnConnection](api-createvpnconnection.md).
 
 When you create a transit gateway, we create a default transit gateway route table and use it as the default association route table
-and the default propagation route table. You can use [CreateTransitGatewayRouteTable](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTransitGatewayRouteTable.html) to create
+and the default propagation route table. You can use [CreateTransitGatewayRouteTable](api-createtransitgatewayroutetable.md) to create
 additional transit gateway route tables. If you disable automatic route propagation, we do not create a default transit gateway route table.
-You can use [EnableTransitGatewayRouteTablePropagation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableTransitGatewayRouteTablePropagation.html) to propagate routes from a resource
+You can use [EnableTransitGatewayRouteTablePropagation](api-enabletransitgatewayroutetablepropagation.md) to propagate routes from a resource
 attachment to a transit gateway route table. If you disable automatic associations, you can use [AssociateTransitGatewayRouteTable](api-associatetransitgatewayroutetable.md) to associate a resource attachment with a transit gateway route table.
 
 ## Request Parameters
@@ -44,7 +44,7 @@ Required: No
 
 The transit gateway options.
 
-Type: [TransitGatewayRequestOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGatewayRequestOptions.html) object
+Type: [TransitGatewayRequestOptions](api-transitgatewayrequestoptions.md) object
 
 Required: No
 
@@ -70,7 +70,7 @@ Type: String
 
 Information about the transit gateway.
 
-Type: [TransitGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGateway.html) object
+Type: [TransitGateway](api-transitgateway.md) object
 
 ## Errors
 
@@ -84,23 +84,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateTransitGateway)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateTransitGateway)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createtransitgateway.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateTransitGateway)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createtransitgateway.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateTransitGateway)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createtransitgateway.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateTransitGateway)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createtransitgateway.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateTransitGateway)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createtransitgateway.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateTransitGateway)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createtransitgateway.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateTransitGateway)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateTransitGateway)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createtransitgateway.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateTrafficMirrorTarget
 

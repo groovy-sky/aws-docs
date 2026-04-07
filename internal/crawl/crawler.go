@@ -47,15 +47,15 @@ func (c *Crawler) Run(ctx context.Context, options RunOptions) error {
 	sectionLimitedMode := options.Mode == "incremental" || options.Mode == "partial"
 	allowedSections := map[string]struct{}{}
 	if sectionLimitedMode && options.MaxSections > 0 {
-		for _, item := range queue {
-			section := sectionKey(item)
-			if _, exists := allowedSections[section]; exists {
-				continue
-			}
-			allowedSections[section] = struct{}{}
-			if len(allowedSections) >= options.MaxSections {
-				break
-			}
+		cursor, err := c.store.GetSectionCursor()
+		if err != nil {
+			return err
+		}
+
+		var nextCursor int
+		allowedSections, nextCursor = selectSectionsForRun(queue, options.MaxSections, cursor)
+		if err := c.store.PutSectionCursor(nextCursor); err != nil {
+			return err
 		}
 	}
 
@@ -71,6 +71,13 @@ func (c *Crawler) Run(ctx context.Context, options RunOptions) error {
 		filteredQueue = append(filteredQueue, item)
 	}
 	queue = filteredQueue
+	if len(allowedSections) > 0 {
+		log.Printf("crawl run: mode=%s max-sections=%d selected-sections=%d seed-urls=%d", options.Mode, options.MaxSections, len(allowedSections), len(queue))
+	} else {
+		log.Printf("crawl run: mode=%s seed-urls=%d", options.Mode, len(queue))
+	}
+
+	processedCount := 0
 
 	for len(queue) > 0 {
 		current := queue[0]
@@ -80,6 +87,7 @@ func (c *Crawler) Run(ctx context.Context, options RunOptions) error {
 			log.Printf("skip %s: %v", current, err)
 			continue
 		}
+		processedCount++
 
 		if options.Mode == "refresh-url" {
 			continue
@@ -101,6 +109,8 @@ func (c *Crawler) Run(ctx context.Context, options RunOptions) error {
 			queue = append(queue, link)
 		}
 	}
+
+	log.Printf("crawl run completed: processed-urls=%d", processedCount)
 
 	return nil
 }
@@ -202,6 +212,25 @@ func (c *Crawler) seedQueue(ctx context.Context, options RunOptions) ([]string, 
 		}
 	}
 
+	if (options.Mode == "incremental" || options.Mode == "partial") && options.MaxSections > 0 {
+		if uniqueSectionsCount(queue) < options.MaxSections {
+			for _, seed := range c.config.Seeds {
+				normalized, err := canonicalizeSeedURL(seed, c.config)
+				if err != nil || normalized == "" {
+					continue
+				}
+				if _, exists := seen[normalized]; exists || !IsAllowedURL(normalized, c.config) {
+					continue
+				}
+				seen[normalized] = struct{}{}
+				queue = append(queue, normalized)
+				if uniqueSectionsCount(queue) >= options.MaxSections {
+					break
+				}
+			}
+		}
+	}
+
 	if options.Mode == "full" && c.config.EnableRobotsSitemaps {
 		sitemapURLs, err := DiscoverURLsFromRobotsSitemaps(ctx, c.fetcher.HTTPClient(), c.config)
 		if err != nil {
@@ -220,6 +249,18 @@ func (c *Crawler) seedQueue(ctx context.Context, options RunOptions) ([]string, 
 	}
 
 	return queue, nil
+}
+
+func uniqueSectionsCount(urls []string) int {
+	seen := map[string]struct{}{}
+	for _, item := range urls {
+		key := sectionKey(item)
+		if key == "" {
+			continue
+		}
+		seen[key] = struct{}{}
+	}
+	return len(seen)
 }
 
 func (c *Crawler) discoverAndPersistSeeds(ctx context.Context) ([]string, error) {
@@ -294,6 +335,13 @@ func (c *Crawler) processURL(ctx context.Context, pageURL string) ([]string, err
 	extracted, err := c.extractor.Extract(result.FinalURL, result.Body)
 	if err != nil {
 		return nil, err
+	}
+	if strings.TrimSpace(extracted.RedirectURL) != "" {
+		resolved, err := ResolveURL(result.FinalURL, extracted.RedirectURL, c.config)
+		if err != nil {
+			return nil, fmt.Errorf("resolve redirect target %q: %w", extracted.RedirectURL, err)
+		}
+		return []string{resolved}, nil
 	}
 
 	canonicalURL, err := NormalizeURL(extracted.CanonicalURL, c.config)
@@ -380,6 +428,47 @@ func canonicalizeSeedURL(rawURL string, cfg config.Config) (string, error) {
 	parsed.Fragment = ""
 
 	return NormalizeURL(parsed.String(), cfg)
+}
+
+func selectSectionsForRun(queue []string, limit int, cursor int) (map[string]struct{}, int) {
+	orderedSections := make([]string, 0, len(queue))
+	seen := map[string]struct{}{}
+	for _, item := range queue {
+		section := sectionKey(item)
+		if section == "" {
+			continue
+		}
+		if _, exists := seen[section]; exists {
+			continue
+		}
+		seen[section] = struct{}{}
+		orderedSections = append(orderedSections, section)
+	}
+
+	if len(orderedSections) == 0 {
+		return map[string]struct{}{}, 0
+	}
+	if limit <= 0 || limit >= len(orderedSections) {
+		selected := make(map[string]struct{}, len(orderedSections))
+		for _, section := range orderedSections {
+			selected[section] = struct{}{}
+		}
+		return selected, 0
+	}
+
+	start := 0
+	if cursor > 0 {
+		start = cursor % len(orderedSections)
+	}
+
+	selected := make(map[string]struct{}, limit)
+	for index := 0; index < limit; index++ {
+		section := orderedSections[(start+index)%len(orderedSections)]
+		selected[section] = struct{}{}
+	}
+
+	next := (start + limit) % len(orderedSections)
+	return selected, next
 }
 
 func (c *Crawler) filterReachableSeeds(ctx context.Context, seeds []string) []string {

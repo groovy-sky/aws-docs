@@ -2,7 +2,7 @@
 
 Describes one or more of your VPN connections.
 
-For more information, see [AWS Site-to-Site VPN](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html) in the _AWS Site-to-Site VPN_
+For more information, see [AWS Site-to-Site VPN](../../../../services/vpn/latest/s2svpn/vpc-vpn.md) in the _AWS Site-to-Site VPN_
 _User Guide_.
 
 ## Request Parameters
@@ -88,7 +88,7 @@ Type: String
 
 Information about one or more VPN connections.
 
-Type: Array of [VpnConnection](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VpnConnection.html) objects
+Type: Array of [VpnConnection](api-vpnconnection.md) objects
 
 ## Errors
 
@@ -102,7 +102,7 @@ This example describes the specified VPN connection. The response includes the
 customer gateway device configuration information. Because it's a long set of
 information, we haven't displayed it here. To see an example of the
 configuration information, see the [Your customer gateway\
-device](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html).
+device](../../../../services/vpn/latest/s2svpn/your-cgw.md).
 
 #### Sample Request
 
@@ -190,23 +190,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/DescribeVpnConnections)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DescribeVpnConnections)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/describevpnconnections.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/DescribeVpnConnections)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/describevpnconnections.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DescribeVpnConnections)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/describevpnconnections.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DescribeVpnConnections)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/describevpnconnections.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DescribeVpnConnections)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/describevpnconnections.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DescribeVpnConnections)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/describevpnconnections.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DescribeVpnConnections)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DescribeVpnConnections)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describevpnconnections.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DescribeVpnConcentrators
 

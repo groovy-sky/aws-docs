@@ -17,7 +17,7 @@ Required: No
 
 The security group and AWS account ID pairs.
 
-Type: Array of [UserIdGroupPair](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UserIdGroupPair.html) objects
+Type: Array of [UserIdGroupPair](api-useridgrouppair.md) objects
 
 Required: No
 
@@ -41,7 +41,7 @@ Required: No
 
 The IPv4 address ranges.
 
-Type: Array of [IpRange](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpRange.html) objects
+Type: Array of [IpRange](api-iprange.md) objects
 
 Required: No
 
@@ -49,7 +49,7 @@ Required: No
 
 The IPv6 address ranges.
 
-Type: Array of [Ipv6Range](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Ipv6Range.html) objects
+Type: Array of [Ipv6Range](api-ipv6range.md) objects
 
 Required: No
 
@@ -57,7 +57,7 @@ Required: No
 
 The prefix list IDs.
 
-Type: Array of [PrefixListId](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PrefixListId.html) objects
+Type: Array of [PrefixListId](api-prefixlistid.md) objects
 
 Required: No
 
@@ -75,13 +75,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/IpPermission)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/ippermission.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/IpPermission)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/ippermission.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/IpPermission)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ippermission.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 IpamScopeExternalAuthorityConfiguration
 

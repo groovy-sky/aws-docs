@@ -6,7 +6,7 @@ type, EBS optimization, platform, instance store settings, Availability Zone, or
 tenancy. If you need to modify any of these attributes, we recommend that you cancel the
 Capacity Reservation, and then create a new one with the required attributes. For more
 information, see [Modify an active\
-Capacity Reservation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservations-modify.html).
+Capacity Reservation](../../../../services/ec2/latest/userguide/capacity-reservations-modify.md).
 
 The allowed modifications depend on the state of the Capacity Reservation:
 
@@ -157,23 +157,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ModifyCapacityReservation)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ModifyCapacityReservation)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/modifycapacityreservation.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ModifyCapacityReservation)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/modifycapacityreservation.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ModifyCapacityReservation)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/modifycapacityreservation.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ModifyCapacityReservation)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/modifycapacityreservation.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ModifyCapacityReservation)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/modifycapacityreservation.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ModifyCapacityReservation)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/modifycapacityreservation.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ModifyCapacityReservation)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ModifyCapacityReservation)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifycapacityreservation.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ModifyAvailabilityZoneGroup
 

@@ -8,7 +8,7 @@ Describes the placement of an instance.
 
 The affinity setting for the instance on the Dedicated Host.
 
-This parameter is not supported for [CreateFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFleet) or [ImportInstance](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportInstance.html).
+This parameter is not supported for [CreateFleet](api-createfleet.md) or [ImportInstance](api-importinstance.md).
 
 Type: String
 
@@ -22,7 +22,7 @@ On input, you can specify `AvailabilityZone` or `AvailabilityZoneId`,
 but not both. If you specify neither one, Amazon EC2 automatically selects an Availability Zone
 for you.
 
-This parameter is not supported for [CreateFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFleet).
+This parameter is not supported for [CreateFleet](api-createfleet.md).
 
 Type: String
 
@@ -36,7 +36,7 @@ On input, you can specify `AvailabilityZone` or `AvailabilityZoneId`,
 but not both. If you specify neither one, Amazon EC2 automatically selects an Availability Zone
 for you.
 
-This parameter is not supported for [CreateFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFleet).
+This parameter is not supported for [CreateFleet](api-createfleet.md).
 
 Type: String
 
@@ -68,7 +68,7 @@ Required: No
 
 The ID of the Dedicated Host on which the instance resides.
 
-This parameter is not supported for [CreateFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFleet) or [ImportInstance](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportInstance.html).
+This parameter is not supported for [CreateFleet](api-createfleet.md) or [ImportInstance](api-importinstance.md).
 
 Type: String
 
@@ -80,7 +80,7 @@ The ARN of the host resource group in which to launch the instances.
 
 On input, if you specify this parameter, either omit the **Tenancy** parameter or set it to `host`.
 
-This parameter is not supported for [CreateFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFleet).
+This parameter is not supported for [CreateFleet](api-createfleet.md).
 
 Type: String
 
@@ -91,7 +91,7 @@ Required: No
 The number of the partition that the instance is in. Valid only if the placement group
 strategy is set to `partition`.
 
-This parameter is not supported for [CreateFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFleet).
+This parameter is not supported for [CreateFleet](api-createfleet.md).
 
 Type: Integer
 
@@ -110,8 +110,8 @@ Required: No
 The tenancy of the instance. An instance with a
 tenancy of `dedicated` runs on single-tenant hardware.
 
-This parameter is not supported for [CreateFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFleet). The
-`host` tenancy is not supported for [ImportInstance](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportInstance.html) or
+This parameter is not supported for [CreateFleet](api-createfleet.md). The
+`host` tenancy is not supported for [ImportInstance](api-importinstance.md) or
 for T3 instances that are configured for the `unlimited` CPU credit
 option.
 
@@ -125,13 +125,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/Placement)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/placement.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/Placement)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/placement.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/Placement)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/placement.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Phase2IntegrityAlgorithmsRequestListValue
 

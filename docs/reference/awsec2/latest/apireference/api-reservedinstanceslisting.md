@@ -8,7 +8,7 @@ Describes a Reserved Instance listing.
 
 A unique, case-sensitive key supplied by the client to ensure that the request is
 idempotent. For more information, see [Ensuring\
-Idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html).
+Idempotency](run-instance-idempotency.md).
 
 Type: String
 
@@ -26,7 +26,7 @@ Required: No
 
 The number of instances in this state.
 
-Type: Array of [InstanceCount](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceCount.html) objects
+Type: Array of [InstanceCount](api-instancecount.md) objects
 
 Required: No
 
@@ -34,7 +34,7 @@ Required: No
 
 The price of the Reserved Instance listing.
 
-Type: Array of [PriceSchedule](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PriceSchedule.html) objects
+Type: Array of [PriceSchedule](api-priceschedule.md) objects
 
 Required: No
 
@@ -93,13 +93,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ReservedInstancesListing)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/reservedinstanceslisting.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ReservedInstancesListing)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/reservedinstanceslisting.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ReservedInstancesListing)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/reservedinstanceslisting.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ReservedInstancesId
 

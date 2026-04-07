@@ -9,7 +9,7 @@ specified in the request.
 
 Indicates whether to enable the instance for AMD SEV-SNP. AMD SEV-SNP is supported
 with M6a, R6a, and C6a instance types only. For more information, see
-[AMD SEV-SNP](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sev-snp.html).
+[AMD SEV-SNP](../../../../services/ec2/latest/userguide/sev-snp.md).
 
 Type: String
 
@@ -51,13 +51,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CpuOptionsRequest)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/cpuoptionsrequest.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CpuOptionsRequest)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/cpuoptionsrequest.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CpuOptionsRequest)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/cpuoptionsrequest.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CpuOptions
 

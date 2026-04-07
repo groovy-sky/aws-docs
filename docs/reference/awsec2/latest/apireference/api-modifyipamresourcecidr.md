@@ -2,7 +2,7 @@
 
 Modify a resource CIDR. You can use this action to transfer resource CIDRs between scopes and ignore resource CIDRs that you do not want to manage. If set to false, the resource will not be tracked for overlap, it cannot be auto-imported into a pool, and it will be removed from any pool it has an allocation in.
 
-For more information, see [Move resource CIDRs between scopes](https://docs.aws.amazon.com/vpc/latest/ipam/move-resource-ipam.html) and [Change the monitoring state of resource CIDRs](https://docs.aws.amazon.com/vpc/latest/ipam/change-monitoring-state-ipam.html) in the _Amazon VPC IPAM User Guide_.
+For more information, see [Move resource CIDRs between scopes](../../../../services/vpc/latest/ipam/move-resource-ipam.md) and [Change the monitoring state of resource CIDRs](../../../../services/vpc/latest/ipam/change-monitoring-state-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 ## Request Parameters
 
@@ -74,7 +74,7 @@ The following elements are returned by the service.
 
 The CIDR of the resource.
 
-Type: [IpamResourceCidr](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamResourceCidr.html) object
+Type: [IpamResourceCidr](api-ipamresourcecidr.md) object
 
 **requestId**
 
@@ -94,23 +94,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ModifyIpamResourceCidr)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ModifyIpamResourceCidr)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/modifyipamresourcecidr.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ModifyIpamResourceCidr)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/modifyipamresourcecidr.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ModifyIpamResourceCidr)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/modifyipamresourcecidr.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ModifyIpamResourceCidr)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/modifyipamresourcecidr.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ModifyIpamResourceCidr)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/modifyipamresourcecidr.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ModifyIpamResourceCidr)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/modifyipamresourcecidr.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ModifyIpamResourceCidr)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ModifyIpamResourceCidr)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifyipamresourcecidr.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ModifyIpamPrefixListResolverTarget
 

@@ -9,7 +9,7 @@ Describes the status of an instance.
 Reports impaired functionality that stems from an attached Amazon EBS volume that is
 unreachable and unable to complete I/O operations.
 
-Type: [EbsStatusSummary](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EbsStatusSummary.html) object
+Type: [EbsStatusSummary](api-ebsstatussummary.md) object
 
 Required: No
 
@@ -33,7 +33,7 @@ Required: No
 
 Any scheduled events associated with the instance.
 
-Type: Array of [InstanceStatusEvent](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceStatusEvent.html) objects
+Type: Array of [InstanceStatusEvent](api-instancestatusevent.md) objects
 
 Required: No
 
@@ -59,7 +59,7 @@ Required: No
 Reports impaired functionality that stems from issues internal to the instance, such
 as impaired reachability.
 
-Type: [InstanceStatusSummary](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceStatusSummary.html) object
+Type: [InstanceStatusSummary](api-instancestatussummary.md) object
 
 Required: No
 
@@ -84,7 +84,7 @@ Required: No
 Reports impaired functionality that stems from issues related to the systems that
 support an instance, such as hardware failures and network connectivity problems.
 
-Type: [InstanceStatusSummary](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceStatusSummary.html) object
+Type: [InstanceStatusSummary](api-instancestatussummary.md) object
 
 Required: No
 
@@ -92,13 +92,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/InstanceStatus)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/instancestatus.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/InstanceStatus)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/instancestatus.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/InstanceStatus)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/instancestatus.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 InstanceStateChange
 

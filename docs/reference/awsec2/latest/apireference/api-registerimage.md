@@ -3,7 +3,7 @@
 Registers an AMI. When you're creating an instance-store backed AMI, registering the AMI
 is the final step in the creation process. For more information about creating AMIs, see
 [Create an AMI from a snapshot](../../../../services/ec2/latest/userguide/creating-an-ami-ebs.md#creating-launching-ami-from-snapshot) and [Create an instance-store\
-backed AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami-instance-store.html) in the _Amazon EC2 User Guide_.
+backed AMI](../../../../services/ec2/latest/userguide/creating-an-ami-instance-store.md) in the _Amazon EC2 User Guide_.
 
 ###### Note
 
@@ -24,7 +24,7 @@ the encryption state of the volume using the block device mapping. If the snapsh
 encrypted, or encryption by default is enabled, the root volume of an instance launched from
 the AMI is encrypted.
 
-For more information, see [Create an AMI from a snapshot](../../../../services/ec2/latest/userguide/creating-an-ami-ebs.md#creating-launching-ami-from-snapshot) and [Use encryption with EBS-backed AMIs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIEncryption.html)
+For more information, see [Create an AMI from a snapshot](../../../../services/ec2/latest/userguide/creating-an-ami-ebs.md#creating-launching-ami-from-snapshot) and [Use encryption with EBS-backed AMIs](../../../../services/ec2/latest/userguide/amiencryption.md)
 in the _Amazon EC2 User Guide_.
 
 **AWS Marketplace product codes**
@@ -33,7 +33,7 @@ If any snapshots have AWS Marketplace product codes, they are copied to the new 
 
 In most cases, AMIs for Windows, RedHat, SUSE, and SQL Server require correct licensing
 information to be present on the AMI. For more information, see [Understand AMI billing\
-information](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-billing-info.html) in the _Amazon EC2 User Guide_. When creating an AMI from
+information](../../../../services/ec2/latest/userguide/ami-billing-info.md) in the _Amazon EC2 User Guide_. When creating an AMI from
 a snapshot, the `RegisterImage` operation derives the correct billing information
 from the snapshot's metadata, but this requires the appropriate metadata to be present. To
 verify if the correct billing information was applied, check the `PlatformDetails`
@@ -48,7 +48,7 @@ from an AMI with a billing product code, make sure that the Reserved Instance ha
 billing product code. If you purchase a Reserved Instance without the matching billing product
 code, the Reserved Instance is not applied to the On-Demand Instance. For information
 about how to obtain the platform details and billing information of an AMI, see [Understand AMI\
-billing information](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-billing-info.html) in the _Amazon EC2 User Guide_.
+billing information](../../../../services/ec2/latest/userguide/ami-billing-info.md) in the _Amazon EC2 User Guide_.
 
 ## Request Parameters
 
@@ -149,7 +149,7 @@ Required: No
 
 The full path to your AMI manifest in Amazon S3 storage. The specified bucket must have the
 `aws-exec-read` canned access control list (ACL) to ensure that it can be
-accessed by Amazon EC2. For more information, see [Canned ACL](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl) in the
+accessed by Amazon EC2. For more information, see [Canned ACL](../../../../services/s3/latest/dev/acl-overview.md#canned-acl) in the
 _Amazon S3 Service Developer Guide_.
 
 Type: String
@@ -241,7 +241,7 @@ Required: No
 **TpmSupport**
 
 Set to `v2.0` to enable Trusted Platform Module (TPM) support. For more
-information, see [NitroTPM](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nitrotpm.html) in the _Amazon EC2 User Guide_.
+information, see [NitroTPM](../../../../services/ec2/latest/userguide/nitrotpm.md) in the _Amazon EC2 User Guide_.
 
 Type: String
 
@@ -255,7 +255,7 @@ Base64 representation of the non-volatile UEFI variable store. To retrieve the U
 use the [GetInstanceUefiData](api-getinstanceuefidata.md) command. You can inspect and modify the UEFI data by using the
 [python-uefivars tool](https://github.com/awslabs/python-uefivars) on
 GitHub. For more information, see [UEFI Secure Boot for Amazon EC2\
-instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/uefi-secure-boot.html) in the _Amazon EC2 User Guide_.
+instances](../../../../services/ec2/latest/userguide/uefi-secure-boot.md) in the _Amazon EC2 User Guide_.
 
 Type: String
 
@@ -385,23 +385,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/RegisterImage)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/RegisterImage)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/registerimage.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/RegisterImage)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/registerimage.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/RegisterImage)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/registerimage.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/RegisterImage)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/registerimage.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/RegisterImage)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/registerimage.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/RegisterImage)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/registerimage.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/RegisterImage)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/RegisterImage)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/registerimage.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 RebootInstances
 

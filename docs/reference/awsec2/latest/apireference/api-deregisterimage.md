@@ -7,7 +7,7 @@ If a deregistered EBS-backed AMI matches a Recycle Bin retention rule, it moves 
 Recycle Bin for the specified retention period. It can be restored before its retention period
 expires, after which it is permanently deleted. If the deregistered AMI doesn't match a
 retention rule, it is permanently deleted immediately. For more information, see [Recover deleted Amazon EBS\
-snapshots and EBS-backed AMIs with Recycle Bin](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/recycle-bin.html) in the _Amazon EBS User_
+snapshots and EBS-backed AMIs with Recycle Bin](../../../../services/ec2/latest/userguide/recycle-bin.md) in the _Amazon EBS User_
 _Guide_.
 
 When deregistering an EBS-backed AMI, you can optionally delete its associated snapshots
@@ -25,7 +25,7 @@ to incur snapshot storage costs.
 - For instance store-backed AMIs: The files uploaded to Amazon S3 during AMI creation. You'll
 continue to incur S3 storage costs.
 
-For more information, see [Deregister an Amazon EC2 AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/deregister-ami.html) in the
+For more information, see [Deregister an Amazon EC2 AMI](../../../../services/ec2/latest/userguide/deregister-ami.md) in the
 _Amazon EC2 User Guide_.
 
 ## Request Parameters
@@ -74,7 +74,7 @@ The following elements are returned by the service.
 The deletion result for each snapshot associated with the AMI, including the snapshot ID
 and its success or error code.
 
-Type: Array of [DeleteSnapshotReturnCode](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteSnapshotReturnCode.html) objects
+Type: Array of [DeleteSnapshotReturnCode](api-deletesnapshotreturncode.md) objects
 
 **requestId**
 
@@ -125,23 +125,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/DeregisterImage)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DeregisterImage)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/deregisterimage.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/DeregisterImage)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/deregisterimage.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DeregisterImage)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/deregisterimage.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DeregisterImage)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/deregisterimage.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DeregisterImage)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/deregisterimage.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DeregisterImage)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/deregisterimage.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DeregisterImage)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DeregisterImage)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deregisterimage.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DeprovisionPublicIpv4PoolCidr
 

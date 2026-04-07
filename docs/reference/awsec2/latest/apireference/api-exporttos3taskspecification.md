@@ -29,7 +29,7 @@ Required: No
 
 The Amazon S3 bucket for the destination image. The destination bucket must exist and have
 an access control list (ACL) attached that specifies the Region-specific canonical account ID for
-the `Grantee`. For more information about the ACL to your S3 bucket, see [Prerequisites](https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport.html#vmexport-prerequisites) in the VM Import/Export User Guide.
+the `Grantee`. For more information about the ACL to your S3 bucket, see [Prerequisites](../../../../services/vm-import/latest/userguide/vmexport.md#vmexport-prerequisites) in the VM Import/Export User Guide.
 
 Type: String
 
@@ -48,13 +48,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ExportToS3TaskSpecification)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/exporttos3taskspecification.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ExportToS3TaskSpecification)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/exporttos3taskspecification.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ExportToS3TaskSpecification)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/exporttos3taskspecification.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ExportToS3Task
 

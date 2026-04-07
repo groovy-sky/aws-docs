@@ -33,7 +33,7 @@ Zones)
 
 - Within same Outpost
 
-- Cross-partition copies (use [CreateStoreImageTask](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateStoreImageTask.html) instead)
+- Cross-partition copies (use [CreateStoreImageTask](api-createstoreimagetask.md) instead)
 
 ###### Destination specification
 
@@ -60,7 +60,7 @@ are automatically encrypted during copy. In Local Zones where encryption is not 
 snapshots retain their original encryption state (encrypted or unencrypted) by
 default.
 
-For more information, including the required permissions for copying an AMI, see [Copy an Amazon EC2 AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/CopyingAMIs.html) in the
+For more information, including the required permissions for copying an AMI, see [Copy an Amazon EC2 AMI](../../../../services/ec2/latest/userguide/copyingamis.md) in the
 _Amazon EC2 User Guide_.
 
 ## Request Parameters
@@ -71,7 +71,7 @@ The following parameters are for this specific action. For more information abou
 
 Unique, case-sensitive identifier you provide to ensure idempotency of the request. For
 more information, see [Ensuring idempotency in\
-Amazon EC2 API requests](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the _Amazon EC2 API_
+Amazon EC2 API requests](run-instance-idempotency.md) in the _Amazon EC2 API_
 _Reference_.
 
 Type: String
@@ -163,7 +163,7 @@ Specifies whether to encrypt the snapshots of the copied image.
 You can encrypt a copy of an unencrypted snapshot, but you cannot create an unencrypted
 copy of an encrypted snapshot. The default KMS key for Amazon EBS is used unless you specify a
 non-default AWS Key Management Service (AWS KMS) KMS key using `KmsKeyId`. For more information, see [Use encryption with\
-EBS-backed AMIs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIEncryption.html) in the _Amazon EC2 User Guide_.
+EBS-backed AMIs](../../../../services/ec2/latest/userguide/amiencryption.md) in the _Amazon EC2 User Guide_.
 
 Type: Boolean
 
@@ -221,7 +221,7 @@ This parameter is not supported when copying an AMI to or from a Local Zone, or 
 Outpost.
 
 For more information, see [Time-based copies for Amazon EBS snapshots and\
-EBS-backed AMIs](https://docs.aws.amazon.com/ebs/latest/userguide/time-based-copies.html).
+EBS-backed AMIs](../../../../services/ebs/latest/userguide/time-based-copies.md).
 
 Type: Long
 
@@ -320,23 +320,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CopyImage)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CopyImage)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/copyimage.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CopyImage)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/copyimage.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CopyImage)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/copyimage.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CopyImage)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/copyimage.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CopyImage)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/copyimage.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CopyImage)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/copyimage.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CopyImage)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CopyImage)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/copyimage.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CopyFpgaImage
 

@@ -1,0 +1,74 @@
+# LaunchTemplateSpotMarketOptions
+
+The options for Spot Instances.
+
+## Contents
+
+**blockDurationMinutes**
+
+The required duration for the Spot Instances (also known as Spot blocks), in minutes.
+This value must be a multiple of 60 (60, 120, 180, 240, 300, or 360).
+
+Type: Integer
+
+Required: No
+
+**instanceInterruptionBehavior**
+
+The behavior when a Spot Instance is interrupted.
+
+Type: String
+
+Valid Values: `hibernate | stop | terminate`
+
+Required: No
+
+**maxPrice**
+
+The maximum hourly price you're willing to pay for a Spot Instance. We do not
+recommend using this parameter because it can lead to increased interruptions. If you do
+not specify this parameter, you will pay the current Spot price. If you do specify this
+parameter, it must be more than USD $0.001. Specifying a value below USD $0.001 will
+result in an `InvalidParameterValue` error message when the launch template
+is used to launch an instance.
+
+Type: String
+
+Required: No
+
+**spotInstanceType**
+
+The Spot Instance request type.
+
+Type: String
+
+Valid Values: `one-time | persistent`
+
+Required: No
+
+**validUntil**
+
+The end date of the request. For a one-time request, the request remains active until
+all instances launch, the request is canceled, or this date is reached. If the request
+is persistent, it remains active until it is canceled or this date and time is
+reached.
+
+Type: Timestamp
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/launchtemplatespotmarketoptions.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/launchtemplatespotmarketoptions.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/launchtemplatespotmarketoptions.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+LaunchTemplateSpecification
+
+LaunchTemplateSpotMarketOptionsRequest

@@ -8,7 +8,7 @@ Instance status includes the following components:
 
 - **Status checks** \- Amazon EC2 performs status
 checks on running EC2 instances to identify hardware and software issues. For
-more information, see [Status checks for your instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-system-instance-status-check.html) and [Troubleshoot\
+more information, see [Status checks for your instances](../../../../services/ec2/latest/userguide/monitoring-system-instance-status-check.md) and [Troubleshoot\
 instances with failed status checks](../../../../services/ec2/latest/userguide/troubleshootinginstances.md) in the _Amazon EC2 User_
 _Guide_.
 
@@ -27,7 +27,7 @@ The Amazon EC2 API follows an eventual consistency model. This means that the re
 API command you run that creates or modifies resources might not be immediately
 available to all subsequent commands you run. For guidance on how to manage eventual
 consistency, see [Eventual consistency in the\
-Amazon EC2 API](https://docs.aws.amazon.com/ec2/latest/devguide/eventual-consistency.html) in the _Amazon EC2 Developer_
+Amazon EC2 API](../../../../services/ec2/latest/devguide/eventual-consistency.md) in the _Amazon EC2 Developer_
 _Guide_.
 
 ###### Note
@@ -171,7 +171,7 @@ The following elements are returned by the service.
 
 Information about the status of the instances.
 
-Type: Array of [InstanceStatus](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceStatus.html) objects
+Type: Array of [InstanceStatus](api-instancestatus.md) objects
 
 **nextToken**
 
@@ -379,23 +379,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/DescribeInstanceStatus)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DescribeInstanceStatus)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/describeinstancestatus.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/DescribeInstanceStatus)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/describeinstancestatus.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DescribeInstanceStatus)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/describeinstancestatus.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DescribeInstanceStatus)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/describeinstancestatus.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DescribeInstanceStatus)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/describeinstancestatus.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DescribeInstanceStatus)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/describeinstancestatus.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DescribeInstanceStatus)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DescribeInstanceStatus)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describeinstancestatus.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DescribeInstanceSqlHaStates
 

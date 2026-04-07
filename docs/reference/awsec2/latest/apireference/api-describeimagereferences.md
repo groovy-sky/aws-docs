@@ -3,7 +3,7 @@
 Describes your AWS resources that are referencing the specified images.
 
 For more information, see [Identify your resources referencing\
-specified AMIs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-ami-references.html) in the _Amazon EC2 User Guide_.
+specified AMIs](../../../../services/ec2/latest/userguide/ec2-ami-references.md) in the _Amazon EC2 User Guide_.
 
 ## Request Parameters
 
@@ -34,7 +34,7 @@ Required: Yes
 Specifies whether to check all supported AWS resource types for image references. When
 specified, default values are applied for `ResourceTypeOptions`. For the default
 values, see [How AMI\
-reference checks work](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-ami-references.html#how-ami-references-works) in the _Amazon EC2 User Guide_. If you also
+reference checks work](../../../../services/ec2/latest/userguide/ec2-ami-references.md#how-ami-references-works) in the _Amazon EC2 User Guide_. If you also
 specify `ResourceTypes` with `ResourceTypeOptions`, your specified
 values override the default values.
 
@@ -76,7 +76,7 @@ The AWS resource types to check for image references.
 Either `IncludeAllResourceTypes` or `ResourceTypes` must be
 specified.
 
-Type: Array of [ResourceTypeRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ResourceTypeRequest.html) objects
+Type: Array of [ResourceTypeRequest](api-resourcetyperequest.md) objects
 
 Required: No
 
@@ -88,7 +88,7 @@ The following elements are returned by the service.
 
 The resources that are referencing the specified images.
 
-Type: Array of [ImageReference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImageReference.html) objects
+Type: Array of [ImageReference](api-imagereference.md) objects
 
 **nextToken**
 
@@ -115,23 +115,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/DescribeImageReferences)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DescribeImageReferences)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/describeimagereferences.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/DescribeImageReferences)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/describeimagereferences.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DescribeImageReferences)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/describeimagereferences.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DescribeImageReferences)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/describeimagereferences.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DescribeImageReferences)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/describeimagereferences.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DescribeImageReferences)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/describeimagereferences.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DescribeImageReferences)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DescribeImageReferences)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describeimagereferences.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DescribeImageAttribute
 

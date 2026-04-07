@@ -2,7 +2,7 @@
 
 Describes the configuration settings for VPC Encryption Control.
 
-For more information, see [Enforce VPC encryption in transit](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-encryption-controls.html) in the _Amazon VPC User Guide_.
+For more information, see [Enforce VPC encryption in transit](../../../../services/vpc/latest/userguide/vpc-encryption-controls.md) in the _Amazon VPC User Guide_.
 
 ## Contents
 
@@ -100,13 +100,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/VpcEncryptionControlConfiguration)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/vpcencryptioncontrolconfiguration.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/VpcEncryptionControlConfiguration)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/vpcencryptioncontrolconfiguration.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/VpcEncryptionControlConfiguration)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/vpcencryptioncontrolconfiguration.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 VpcEncryptionControl
 

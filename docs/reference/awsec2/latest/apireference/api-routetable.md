@@ -8,7 +8,7 @@ Describes a route table.
 
 The associations between the route table and your subnets or gateways.
 
-Type: Array of [RouteTableAssociation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RouteTableAssociation.html) objects
+Type: Array of [RouteTableAssociation](api-routetableassociation.md) objects
 
 Required: No
 
@@ -24,7 +24,7 @@ Required: No
 
 Any virtual private gateway (VGW) propagating routes.
 
-Type: Array of [PropagatingVgw](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PropagatingVgw.html) objects
+Type: Array of [PropagatingVgw](api-propagatingvgw.md) objects
 
 Required: No
 
@@ -32,7 +32,7 @@ Required: No
 
 The routes in the route table.
 
-Type: Array of [Route](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Route.html) objects
+Type: Array of [Route](api-route.md) objects
 
 Required: No
 
@@ -48,7 +48,7 @@ Required: No
 
 Any tags assigned to the route table.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Required: No
 
@@ -64,13 +64,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/RouteTable)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/routetable.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/RouteTable)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/routetable.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/RouteTable)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/routetable.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 RouteServerRouteInstallationDetail
 

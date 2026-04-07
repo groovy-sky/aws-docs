@@ -9,7 +9,7 @@ Purchases the Scheduled Instances with the specified schedule.
 Scheduled Instances enable you to purchase Amazon EC2 compute capacity by the hour for a one-year term.
 Before you can purchase a Scheduled Instance, you must call [DescribeScheduledInstanceAvailability](api-describescheduledinstanceavailability.md)
 to check for available schedules and obtain a purchase token. After you purchase a Scheduled Instance,
-you must call [RunScheduledInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RunScheduledInstances.html) during each scheduled time period.
+you must call [RunScheduledInstances](api-runscheduledinstances.md) during each scheduled time period.
 
 After you purchase a Scheduled Instance, you can't cancel, modify, or resell your purchase.
 
@@ -20,7 +20,7 @@ The following parameters are for this specific action. For more information abou
 **ClientToken**
 
 Unique, case-sensitive identifier that ensures the idempotency of the request.
-For more information, see [Ensuring Idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html).
+For more information, see [Ensuring Idempotency](run-instance-idempotency.md).
 
 Type: String
 
@@ -40,7 +40,7 @@ Required: No
 
 The purchase requests.
 
-Type: Array of [PurchaseRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PurchaseRequest.html) objects
+Type: Array of [PurchaseRequest](api-purchaserequest.md) objects
 
 Array Members: Minimum number of 1 item.
 
@@ -60,7 +60,7 @@ Type: String
 
 Information about the Scheduled Instances.
 
-Type: Array of [ScheduledInstance](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ScheduledInstance.html) objects
+Type: Array of [ScheduledInstance](api-scheduledinstance.md) objects
 
 ## Errors
 
@@ -74,23 +74,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/PurchaseScheduledInstances)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/PurchaseScheduledInstances)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/purchasescheduledinstances.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/PurchaseScheduledInstances)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/purchasescheduledinstances.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/PurchaseScheduledInstances)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/purchasescheduledinstances.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/PurchaseScheduledInstances)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/purchasescheduledinstances.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/PurchaseScheduledInstances)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/purchasescheduledinstances.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/PurchaseScheduledInstances)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/purchasescheduledinstances.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/PurchaseScheduledInstances)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/PurchaseScheduledInstances)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/purchasescheduledinstances.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 PurchaseReservedInstancesOffering
 

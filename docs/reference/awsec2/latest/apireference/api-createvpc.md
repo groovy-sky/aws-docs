@@ -7,14 +7,14 @@ IPAM-allocated IPv4 CIDR block. You can optionally associate an IPv6 CIDR block 
 VPC. You can choose an IPv6 CIDR block, an Amazon-provided IPv6 CIDR block, an
 IPAM-allocated IPv6 CIDR block, or an IPv6 CIDR block that you brought to AWS. For
 more information, see [IP addressing for your VPCs and\
-subnets](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-ip-addressing.html) in the _Amazon VPC User Guide_.
+subnets](../../../../services/vpc/latest/userguide/vpc-ip-addressing.md) in the _Amazon VPC User Guide_.
 
 By default, each instance that you launch in the VPC has the default DHCP options, which
 include only a default DNS server that we provide (AmazonProvidedDNS). For more
-information, see [DHCP option sets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_DHCP_Options.html) in the _Amazon VPC User Guide_.
+information, see [DHCP option sets](../../../../services/vpc/latest/userguide/vpc-dhcp-options.md) in the _Amazon VPC User Guide_.
 
 You can specify DNS options and tenancy for a VPC when you create it. You can't change
-the tenancy of a VPC after you create it. For more information, see [VPC configuration options](https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc-options.html) in the
+the tenancy of a VPC after you create it. For more information, see [VPC configuration options](../../../../services/vpc/latest/userguide/create-vpc-options.md) in the
 _Amazon VPC User Guide_.
 
 ## Request Parameters
@@ -69,7 +69,7 @@ Required: No
 
 **Ipv4IpamPoolId**
 
-The ID of an IPv4 IPAM pool you want to use for allocating this VPC's CIDR. For more information, see [What is IPAM?](https://docs.aws.amazon.com/vpc/latest/ipam/what-is-it-ipam.html) in the _Amazon VPC IPAM User Guide_.
+The ID of an IPv4 IPAM pool you want to use for allocating this VPC's CIDR. For more information, see [What is IPAM?](../../../../services/vpc/latest/ipam/what-is-it-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 Type: String
 
@@ -77,7 +77,7 @@ Required: No
 
 **Ipv4NetmaskLength**
 
-The netmask length of the IPv4 CIDR you want to allocate to this VPC from an Amazon VPC IP Address Manager (IPAM) pool. For more information about IPAM, see [What is IPAM?](https://docs.aws.amazon.com/vpc/latest/ipam/what-is-it-ipam.html) in the _Amazon VPC IPAM User Guide_.
+The netmask length of the IPv4 CIDR you want to allocate to this VPC from an Amazon VPC IP Address Manager (IPAM) pool. For more information about IPAM, see [What is IPAM?](../../../../services/vpc/latest/ipam/what-is-it-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 Type: Integer
 
@@ -105,7 +105,7 @@ Required: No
 
 **Ipv6IpamPoolId**
 
-The ID of an IPv6 IPAM pool which will be used to allocate this VPC an IPv6 CIDR. IPAM is a VPC feature that you can use to automate your IP address management workflows including assigning, tracking, troubleshooting, and auditing IP addresses across AWS Regions and accounts throughout your AWS Organization. For more information, see [What is IPAM?](https://docs.aws.amazon.com/vpc/latest/ipam/what-is-it-ipam.html) in the _Amazon VPC IPAM User Guide_.
+The ID of an IPv6 IPAM pool which will be used to allocate this VPC an IPv6 CIDR. IPAM is a VPC feature that you can use to automate your IP address management workflows including assigning, tracking, troubleshooting, and auditing IP addresses across AWS Regions and accounts throughout your AWS Organization. For more information, see [What is IPAM?](../../../../services/vpc/latest/ipam/what-is-it-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 Type: String
 
@@ -113,7 +113,7 @@ Required: No
 
 **Ipv6NetmaskLength**
 
-The netmask length of the IPv6 CIDR you want to allocate to this VPC from an Amazon VPC IP Address Manager (IPAM) pool. For more information about IPAM, see [What is IPAM?](https://docs.aws.amazon.com/vpc/latest/ipam/what-is-it-ipam.html) in the _Amazon VPC IPAM User Guide_.
+The netmask length of the IPv6 CIDR you want to allocate to this VPC from an Amazon VPC IP Address Manager (IPAM) pool. For more information about IPAM, see [What is IPAM?](../../../../services/vpc/latest/ipam/what-is-it-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 Type: Integer
 
@@ -139,9 +139,9 @@ Required: No
 
 Specifies the encryption control configuration to apply to the VPC during creation. VPC Encryption Control enables you to enforce encryption for all data in transit within and between VPCs to meet compliance requirements.
 
-For more information, see [Enforce VPC encryption in transit](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-encryption-controls.html) in the _Amazon VPC User Guide_.
+For more information, see [Enforce VPC encryption in transit](../../../../services/vpc/latest/userguide/vpc-encryption-controls.md) in the _Amazon VPC User Guide_.
 
-Type: [VpcEncryptionControlConfiguration](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VpcEncryptionControlConfiguration.html) object
+Type: [VpcEncryptionControlConfiguration](api-vpcencryptioncontrolconfiguration.md) object
 
 Required: No
 
@@ -378,23 +378,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateVpc)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateVpc)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createvpc.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateVpc)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createvpc.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateVpc)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createvpc.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateVpc)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createvpc.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateVpc)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createvpc.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateVpc)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createvpc.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateVpc)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateVpc)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createvpc.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateVolume
 

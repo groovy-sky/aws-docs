@@ -17,7 +17,7 @@ Zone.
 
 When copying snapshots to a Region, the encryption outcome for the snapshot copy depends on the
 Amazon EBS encryption by default setting for the destination Region, the encryption status of the source
-snapshot, and the encryption parameters you specify in the request. For more information, see [Encryption and snapshot copying](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-copy-snapshot.html#creating-encrypted-snapshots).
+snapshot, and the encryption parameters you specify in the request. For more information, see [Encryption and snapshot copying](../../../../services/ebs/latest/userguide/ebs-copy-snapshot.md#creating-encrypted-snapshots).
 
 Snapshots copied to an Outpost must be encrypted. Unencrypted snapshots are not supported
 on Outposts. For more information, [Amazon EBS local snapshots on Outposts](../../../../services/ebs/latest/userguide/snapshots-outposts.md#considerations).
@@ -27,7 +27,7 @@ on Outposts. For more information, [Amazon EBS local snapshots on Outposts](../.
 Snapshots copies have an arbitrary source volume ID. Do not use this volume ID for
 any purpose.
 
-For more information, see [Copy an Amazon EBS snapshot](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-copy-snapshot.html) in the
+For more information, see [Copy an Amazon EBS snapshot](../../../../services/ebs/latest/userguide/ebs-copy-snapshot.md) in the
 _Amazon EBS User Guide_.
 
 ## Request Parameters
@@ -42,7 +42,7 @@ Not supported when copying snapshots to or from Local Zones or Outposts.
 
 Specify a completion duration, in 15 minute increments, to initiate a time-based snapshot
 copy. Time-based snapshot copy operations complete within the specified duration. For more
-information, see [Time-based copies](https://docs.aws.amazon.com/ebs/latest/userguide/time-based-copies.html).
+information, see [Time-based copies](../../../../services/ebs/latest/userguide/time-based-copies.md).
 
 If you do not specify a value, the snapshot copy operation is completed on a
 best-effort basis.
@@ -117,7 +117,7 @@ Required: No
 To encrypt a copy of an unencrypted snapshot if encryption by default is not enabled,
 enable encryption using this parameter. Otherwise, omit this parameter. Copies of encrypted
 snapshots are encrypted, even if you omit this parameter and encryption by default is not
-enabled. You cannot set this parameter to false. For more information, see [Amazon EBS encryption](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html) in the
+enabled. You cannot set this parameter to false. For more information, see [Amazon EBS encryption](../../../../services/ebs/latest/userguide/ebs-encryption.md) in the
 _Amazon EBS User Guide_.
 
 Type: Boolean
@@ -281,23 +281,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CopySnapshot)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CopySnapshot)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/copysnapshot.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CopySnapshot)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/copysnapshot.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CopySnapshot)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/copysnapshot.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CopySnapshot)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/copysnapshot.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CopySnapshot)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/copysnapshot.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CopySnapshot)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/copysnapshot.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CopySnapshot)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CopySnapshot)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/copysnapshot.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CopyImage
 

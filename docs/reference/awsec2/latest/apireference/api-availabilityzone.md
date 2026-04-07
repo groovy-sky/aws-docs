@@ -8,7 +8,7 @@ Describes Availability Zones, Local Zones, and Wavelength Zones.
 
 The geography information for the Availability Zone or Local Zone. The geography is returned as a list.
 
-Type: Array of [AvailabilityZoneGeography](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AvailabilityZoneGeography.html) objects
+Type: Array of [AvailabilityZoneGeography](api-availabilityzonegeography.md) objects
 
 Required: No
 
@@ -39,7 +39,7 @@ Required: No
 
 Any messages about the Availability Zone, Local Zone, or Wavelength Zone.
 
-Type: Array of [AvailabilityZoneMessage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AvailabilityZoneMessage.html) objects
+Type: Array of [AvailabilityZoneMessage](api-availabilityzonemessage.md) objects
 
 Required: No
 
@@ -96,7 +96,7 @@ Required: No
 The sub-geography information for the Availability Zone or Local Zone. The sub-geography is returned
 as a list.
 
-Type: Array of [AvailabilityZoneSubGeography](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AvailabilityZoneSubGeography.html) objects
+Type: Array of [AvailabilityZoneSubGeography](api-availabilityzonesubgeography.md) objects
 
 Required: No
 
@@ -142,13 +142,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/AvailabilityZone)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/availabilityzone.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/AvailabilityZone)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/availabilityzone.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/AvailabilityZone)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/availabilityzone.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AuthorizationRule
 

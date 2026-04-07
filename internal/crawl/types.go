@@ -16,6 +16,7 @@ type ExtractedDocument struct {
 	Title        string
 	HTML         string
 	Links        []string
+	RedirectURL  string
 }
 
 type MarkdownDocument struct {

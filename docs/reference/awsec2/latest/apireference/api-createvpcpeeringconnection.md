@@ -8,7 +8,7 @@ The requester VPC and accepter VPC cannot have overlapping CIDR blocks.
 ###### Note
 
 Limitations and rules apply to a VPC peering connection. For more information, see
-the [VPC peering limitations](https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-basics.html#vpc-peering-limitations) in the _VPC Peering Guide_.
+the [VPC peering limitations](../../../../services/vpc/latest/peering/vpc-peering-basics.md#vpc-peering-limitations) in the _VPC Peering Guide_.
 
 The owner of the accepter VPC must accept the peering request to activate the peering
 connection. The VPC peering connection request expires after 7 days, after which it
@@ -92,7 +92,7 @@ Type: String
 
 Information about the VPC peering connection.
 
-Type: [VpcPeeringConnection](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VpcPeeringConnection.html) object
+Type: [VpcPeeringConnection](api-vpcpeeringconnection.md) object
 
 ## Errors
 
@@ -191,23 +191,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateVpcPeeringConnection)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateVpcPeeringConnection)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createvpcpeeringconnection.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateVpcPeeringConnection)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createvpcpeeringconnection.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateVpcPeeringConnection)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createvpcpeeringconnection.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateVpcPeeringConnection)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createvpcpeeringconnection.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateVpcPeeringConnection)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createvpcpeeringconnection.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateVpcPeeringConnection)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createvpcpeeringconnection.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateVpcPeeringConnection)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateVpcPeeringConnection)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createvpcpeeringconnection.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateVpcEndpointServiceConfiguration
 

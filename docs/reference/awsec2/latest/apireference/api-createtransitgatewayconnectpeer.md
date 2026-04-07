@@ -5,7 +5,7 @@ transit gateway and an appliance.
 
 The peer address and transit gateway address must be the same IP address family (IPv4 or IPv6).
 
-For more information, see [Connect peers](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-connect.html#tgw-connect-peer)
+For more information, see [Connect peers](../../../../services/vpc/latest/tgw/tgw-connect.md#tgw-connect-peer)
 in the _AWS Transit Gateways Guide_.
 
 ## Request Parameters
@@ -16,7 +16,7 @@ The following parameters are for this specific action. For more information abou
 
 The BGP options for the Connect peer.
 
-Type: [TransitGatewayConnectRequestBgpOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGatewayConnectRequestBgpOptions.html) object
+Type: [TransitGatewayConnectRequestBgpOptions](api-transitgatewayconnectrequestbgpoptions.md) object
 
 Required: No
 
@@ -90,7 +90,7 @@ Type: String
 
 Information about the Connect peer.
 
-Type: [TransitGatewayConnectPeer](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGatewayConnectPeer.html) object
+Type: [TransitGatewayConnectPeer](api-transitgatewayconnectpeer.md) object
 
 ## Errors
 
@@ -104,23 +104,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateTransitGatewayConnectPeer)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateTransitGatewayConnectPeer)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createtransitgatewayconnectpeer.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateTransitGatewayConnectPeer)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createtransitgatewayconnectpeer.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateTransitGatewayConnectPeer)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createtransitgatewayconnectpeer.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateTransitGatewayConnectPeer)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createtransitgatewayconnectpeer.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateTransitGatewayConnectPeer)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createtransitgatewayconnectpeer.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateTransitGatewayConnectPeer)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createtransitgatewayconnectpeer.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateTransitGatewayConnectPeer)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateTransitGatewayConnectPeer)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createtransitgatewayconnectpeer.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateTransitGatewayConnect
 

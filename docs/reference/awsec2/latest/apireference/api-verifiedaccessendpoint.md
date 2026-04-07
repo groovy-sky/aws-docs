@@ -29,7 +29,7 @@ Required: No
 
 The options for a CIDR endpoint.
 
-Type: [VerifiedAccessEndpointCidrOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedAccessEndpointCidrOptions.html) object
+Type: [VerifiedAccessEndpointCidrOptions](api-verifiedaccessendpointcidroptions.md) object
 
 Required: No
 
@@ -106,7 +106,7 @@ Required: No
 The load balancer details if creating the AWS Verified Access endpoint as
 `load-balancer` type.
 
-Type: [VerifiedAccessEndpointLoadBalancerOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedAccessEndpointLoadBalancerOptions.html) object
+Type: [VerifiedAccessEndpointLoadBalancerOptions](api-verifiedaccessendpointloadbalanceroptions.md) object
 
 Required: No
 
@@ -114,7 +114,7 @@ Required: No
 
 The options for network-interface type endpoint.
 
-Type: [VerifiedAccessEndpointEniOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedAccessEndpointEniOptions.html) object
+Type: [VerifiedAccessEndpointEniOptions](api-verifiedaccessendpointenioptions.md) object
 
 Required: No
 
@@ -122,7 +122,7 @@ Required: No
 
 The options for an RDS endpoint.
 
-Type: [VerifiedAccessEndpointRdsOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedAccessEndpointRdsOptions.html) object
+Type: [VerifiedAccessEndpointRdsOptions](api-verifiedaccessendpointrdsoptions.md) object
 
 Required: No
 
@@ -138,7 +138,7 @@ Required: No
 
 The options in use for server side encryption.
 
-Type: [VerifiedAccessSseSpecificationResponse](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedAccessSseSpecificationResponse.html) object
+Type: [VerifiedAccessSseSpecificationResponse](api-verifiedaccessssespecificationresponse.md) object
 
 Required: No
 
@@ -146,7 +146,7 @@ Required: No
 
 The endpoint status.
 
-Type: [VerifiedAccessEndpointStatus](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedAccessEndpointStatus.html) object
+Type: [VerifiedAccessEndpointStatus](api-verifiedaccessendpointstatus.md) object
 
 Required: No
 
@@ -186,13 +186,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/VerifiedAccessEndpoint)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/verifiedaccessendpoint.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/VerifiedAccessEndpoint)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/verifiedaccessendpoint.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/VerifiedAccessEndpoint)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/verifiedaccessendpoint.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 VCpuInfo
 

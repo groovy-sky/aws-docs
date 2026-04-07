@@ -8,7 +8,7 @@ Describes a Reserved Instance modification.
 
 A unique, case-sensitive key supplied by the client to ensure that the request is
 idempotent. For more information, see [Ensuring\
-Idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html).
+Idempotency](run-instance-idempotency.md).
 
 Type: String
 
@@ -35,7 +35,7 @@ Required: No
 Contains target configurations along with their corresponding new Reserved Instance
 IDs.
 
-Type: Array of [ReservedInstancesModificationResult](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReservedInstancesModificationResult.html) objects
+Type: Array of [ReservedInstancesModificationResult](api-reservedinstancesmodificationresult.md) objects
 
 Required: No
 
@@ -51,7 +51,7 @@ Required: No
 
 The IDs of one or more Reserved Instances.
 
-Type: Array of [ReservedInstancesId](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReservedInstancesId.html) objects
+Type: Array of [ReservedInstancesId](api-reservedinstancesid.md) objects
 
 Required: No
 
@@ -83,13 +83,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ReservedInstancesModification)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/reservedinstancesmodification.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ReservedInstancesModification)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/reservedinstancesmodification.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ReservedInstancesModification)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/reservedinstancesmodification.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ReservedInstancesListing
 

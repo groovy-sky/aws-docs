@@ -14,7 +14,7 @@ Required: No
 
 **complianceStatus**
 
-The compliance status of the IPAM resource. For more information on compliance statuses, see [Monitor CIDR usage by resource](https://docs.aws.amazon.com/vpc/latest/ipam/monitor-cidr-compliance-ipam.html) in the _Amazon VPC IPAM User Guide_.
+The compliance status of the IPAM resource. For more information on compliance statuses, see [Monitor CIDR usage by resource](../../../../services/vpc/latest/ipam/monitor-cidr-compliance-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 Type: String
 
@@ -62,7 +62,7 @@ Required: No
 
 **managementState**
 
-The management state of the resource. For more information about management states, see [Monitor CIDR usage by resource](https://docs.aws.amazon.com/vpc/latest/ipam/monitor-cidr-compliance-ipam.html) in the _Amazon VPC IPAM User Guide_.
+The management state of the resource. For more information about management states, see [Monitor CIDR usage by resource](../../../../services/vpc/latest/ipam/monitor-cidr-compliance-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 Type: String
 
@@ -72,7 +72,7 @@ Required: No
 
 **overlapStatus**
 
-The overlap status of an IPAM resource. The overlap status tells you if the CIDR for a resource overlaps with another CIDR in the scope. For more information on overlap statuses, see [Monitor CIDR usage by resource](https://docs.aws.amazon.com/vpc/latest/ipam/monitor-cidr-compliance-ipam.html) in the _Amazon VPC IPAM User Guide_.
+The overlap status of an IPAM resource. The overlap status tells you if the CIDR for a resource overlaps with another CIDR in the scope. For more information on overlap statuses, see [Monitor CIDR usage by resource](../../../../services/vpc/latest/ipam/monitor-cidr-compliance-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 Type: String
 
@@ -124,7 +124,7 @@ Required: No
 
 The tags for an IPAM resource.
 
-Type: Array of [IpamResourceTag](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamResourceTag.html) objects
+Type: Array of [IpamResourceTag](api-ipamresourcetag.md) objects
 
 Required: No
 
@@ -150,13 +150,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/IpamResourceCidr)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/ipamresourcecidr.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/IpamResourceCidr)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/ipamresourcecidr.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/IpamResourceCidr)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ipamresourcecidr.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 IpamPublicAddressTags
 

@@ -58,19 +58,19 @@ Type: Array of [BlockDeviceMapping](api-blockdevicemapping.md) objects
 
 The boot mode.
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 **deregistrationProtection**
 
 Indicates whether deregistration protection is enabled for the AMI.
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 **description**
 
 A description for the AMI.
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 **imageId**
 
@@ -84,15 +84,15 @@ If `v2.0`, it indicates that IMDSv2 is specified in the AMI. Instances launched
 from this AMI will have `HttpTokens` automatically set to `required` so
 that, by default, the instance requires that IMDSv2 is used when requesting instance metadata.
 In addition, `HttpPutResponseHopLimit` is set to `2`. For more
-information, see [Configure the AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-new-instances.html#configure-IMDS-new-instances-ami-configuration) in the _Amazon EC2 User Guide_.
+information, see [Configure the AMI](../../../../services/ec2/latest/userguide/configuring-imds-new-instances.md#configure-IMDS-new-instances-ami-configuration) in the _Amazon EC2 User Guide_.
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 **kernel**
 
 The kernel ID.
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 **lastLaunchedTime**
 
@@ -104,25 +104,25 @@ to launch an instance, there is a 24-hour delay before that usage is reported.
 
 `lastLaunchedTime` data is available starting April 2017.
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 **launchPermission**
 
 The launch permissions.
 
-Type: Array of [LaunchPermission](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchPermission.html) objects
+Type: Array of [LaunchPermission](api-launchpermission.md) objects
 
 **productCodes**
 
 The product codes.
 
-Type: Array of [ProductCode](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ProductCode.html) objects
+Type: Array of [ProductCode](api-productcode.md) objects
 
 **ramdisk**
 
 The RAM disk ID.
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 **requestId**
 
@@ -135,23 +135,23 @@ Type: String
 Indicates whether enhanced networking with the Intel 82599 Virtual Function interface is
 enabled.
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 **tpmSupport**
 
 If the image is configured for NitroTPM support, the value is `v2.0`.
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 **uefiData**
 
 Base64 representation of the non-volatile UEFI variable store. To retrieve the UEFI data,
-use the [GetInstanceUefiData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetInstanceUefiData) command. You can inspect and modify the UEFI data by using the
+use the [GetInstanceUefiData](api-getinstanceuefidata.md) command. You can inspect and modify the UEFI data by using the
 [python-uefivars tool](https://github.com/awslabs/python-uefivars) on
 GitHub. For more information, see [UEFI Secure Boot for Amazon EC2\
-instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/uefi-secure-boot.html) in the _Amazon EC2 User Guide_.
+instances](../../../../services/ec2/latest/userguide/uefi-secure-boot.md) in the _Amazon EC2 User Guide_.
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 ## Errors
 
@@ -229,23 +229,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/DescribeImageAttribute)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DescribeImageAttribute)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/describeimageattribute.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/DescribeImageAttribute)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/describeimageattribute.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DescribeImageAttribute)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/describeimageattribute.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DescribeImageAttribute)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/describeimageattribute.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DescribeImageAttribute)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/describeimageattribute.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DescribeImageAttribute)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/describeimageattribute.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DescribeImageAttribute)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DescribeImageAttribute)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describeimageattribute.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DescribeIdFormat
 

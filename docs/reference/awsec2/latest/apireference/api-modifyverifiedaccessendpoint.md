@@ -10,14 +10,14 @@ The following parameters are for this specific action. For more information abou
 
 The CIDR options.
 
-Type: [ModifyVerifiedAccessEndpointCidrOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVerifiedAccessEndpointCidrOptions.html) object
+Type: [ModifyVerifiedAccessEndpointCidrOptions](api-modifyverifiedaccessendpointcidroptions.md) object
 
 Required: No
 
 **ClientToken**
 
 A unique, case-sensitive token that you provide to ensure idempotency of your
-modification request. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html).
+modification request. For more information, see [Ensuring idempotency](../../../../services/ec2/latest/devguide/ec2-api-idempotency.md).
 
 Type: String
 
@@ -46,7 +46,7 @@ Required: No
 The load balancer details if creating the Verified Access endpoint as
 `load-balancer` type.
 
-Type: [ModifyVerifiedAccessEndpointLoadBalancerOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVerifiedAccessEndpointLoadBalancerOptions.html) object
+Type: [ModifyVerifiedAccessEndpointLoadBalancerOptions](api-modifyverifiedaccessendpointloadbalanceroptions.md) object
 
 Required: No
 
@@ -54,7 +54,7 @@ Required: No
 
 The network interface options.
 
-Type: [ModifyVerifiedAccessEndpointEniOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVerifiedAccessEndpointEniOptions.html) object
+Type: [ModifyVerifiedAccessEndpointEniOptions](api-modifyverifiedaccessendpointenioptions.md) object
 
 Required: No
 
@@ -62,7 +62,7 @@ Required: No
 
 The RDS options.
 
-Type: [ModifyVerifiedAccessEndpointRdsOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVerifiedAccessEndpointRdsOptions.html) object
+Type: [ModifyVerifiedAccessEndpointRdsOptions](api-modifyverifiedaccessendpointrdsoptions.md) object
 
 Required: No
 
@@ -96,7 +96,7 @@ Type: String
 
 Details about the Verified Access endpoint.
 
-Type: [VerifiedAccessEndpoint](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedAccessEndpoint.html) object
+Type: [VerifiedAccessEndpoint](api-verifiedaccessendpoint.md) object
 
 ## Errors
 
@@ -110,23 +110,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ModifyVerifiedAccessEndpoint)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ModifyVerifiedAccessEndpoint)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/modifyverifiedaccessendpoint.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ModifyVerifiedAccessEndpoint)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/modifyverifiedaccessendpoint.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ModifyVerifiedAccessEndpoint)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/modifyverifiedaccessendpoint.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ModifyVerifiedAccessEndpoint)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/modifyverifiedaccessendpoint.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ModifyVerifiedAccessEndpoint)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/modifyverifiedaccessendpoint.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ModifyVerifiedAccessEndpoint)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/modifyverifiedaccessendpoint.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ModifyVerifiedAccessEndpoint)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ModifyVerifiedAccessEndpoint)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifyverifiedaccessendpoint.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ModifyTransitGatewayVpcAttachment
 

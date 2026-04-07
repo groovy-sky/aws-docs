@@ -1,7 +1,7 @@
 # CreateCapacityReservationFleet
 
 Creates a Capacity Reservation Fleet. For more information, see [Create a\
-Capacity Reservation Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/work-with-cr-fleets.html#create-crfleet) in the
+Capacity Reservation Fleet](../../../../services/ec2/latest/userguide/work-with-cr-fleets.md#create-crfleet) in the
 _Amazon EC2 User Guide_.
 
 ## Request Parameters
@@ -13,7 +13,7 @@ The following parameters are for this specific action. For more information abou
 The strategy used by the Capacity Reservation Fleet to determine which of the
 specified instance types to use. Currently, only the `prioritized` allocation
 strategy is supported. For more information, see [Allocation\
-strategy](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/crfleet-concepts.html#allocation-strategy) in the _Amazon EC2 User Guide_.
+strategy](../../../../services/ec2/latest/userguide/crfleet-concepts.md#allocation-strategy) in the _Amazon EC2 User Guide_.
 
 Valid values: `prioritized`
 
@@ -23,7 +23,7 @@ Required: No
 
 **ClientToken**
 
-Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensure Idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html).
+Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensure Idempotency](run-instance-idempotency.md).
 
 Type: String
 
@@ -73,7 +73,7 @@ Required: No
 
 Information about the instance types for which to reserve the capacity.
 
-Type: Array of [ReservationFleetInstanceSpecification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReservationFleetInstanceSpecification.html) objects
+Type: Array of [ReservationFleetInstanceSpecification](api-reservationfleetinstancespecification.md) objects
 
 Required: Yes
 
@@ -111,7 +111,7 @@ This value, together with the instance type weights that you assign to each inst
 type used by the Fleet determine the number of instances for which the Fleet reserves
 capacity. Both values are based on units that make sense for your workload. For more
 information, see [Total target\
-capacity](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/crfleet-concepts.html#target-capacity) in the _Amazon EC2 User Guide_.
+capacity](../../../../services/ec2/latest/userguide/crfleet-concepts.md#target-capacity) in the _Amazon EC2 User Guide_.
 
 Type: Integer
 
@@ -150,7 +150,7 @@ Type: Timestamp
 Information about the individual Capacity Reservations in the Capacity Reservation
 Fleet.
 
-Type: Array of [FleetCapacityReservation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FleetCapacityReservation.html) objects
+Type: Array of [FleetCapacityReservation](api-fleetcapacityreservation.md) objects
 
 **instanceMatchCriteria**
 
@@ -213,23 +213,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateCapacityReservationFleet)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateCapacityReservationFleet)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createcapacityreservationfleet.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateCapacityReservationFleet)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createcapacityreservationfleet.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateCapacityReservationFleet)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createcapacityreservationfleet.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateCapacityReservationFleet)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createcapacityreservationfleet.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateCapacityReservationFleet)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createcapacityreservationfleet.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateCapacityReservationFleet)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createcapacityreservationfleet.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateCapacityReservationFleet)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateCapacityReservationFleet)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createcapacityreservationfleet.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateCapacityReservationBySplitting
 

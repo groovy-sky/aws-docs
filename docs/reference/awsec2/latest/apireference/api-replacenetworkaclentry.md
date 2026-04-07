@@ -1,6 +1,6 @@
 # ReplaceNetworkAclEntry
 
-Replaces an entry (rule) in a network ACL. For more information, see [Network ACLs](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html) in the
+Replaces an entry (rule) in a network ACL. For more information, see [Network ACLs](../../../../services/vpc/latest/userguide/vpc-network-acls.md) in the
 _Amazon VPC User Guide_.
 
 ## Request Parameters
@@ -41,7 +41,7 @@ Required: Yes
 ICMP protocol: The ICMP or ICMPv6 type and code. Required if specifying protocol
 1 (ICMP) or protocol 58 (ICMPv6) with an IPv6 CIDR block.
 
-Type: [IcmpTypeCode](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IcmpTypeCode.html) object
+Type: [IcmpTypeCode](api-icmptypecode.md) object
 
 Required: No
 
@@ -67,7 +67,7 @@ Required: Yes
 TCP or UDP protocols: The range of ports the rule applies to.
 Required if specifying protocol 6 (TCP) or 17 (UDP).
 
-Type: [PortRange](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PortRange.html) object
+Type: [PortRange](api-portrange.md) object
 
 Required: No
 
@@ -163,23 +163,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ReplaceNetworkAclEntry)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ReplaceNetworkAclEntry)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/replacenetworkaclentry.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ReplaceNetworkAclEntry)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/replacenetworkaclentry.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ReplaceNetworkAclEntry)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/replacenetworkaclentry.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ReplaceNetworkAclEntry)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/replacenetworkaclentry.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ReplaceNetworkAclEntry)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/replacenetworkaclentry.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ReplaceNetworkAclEntry)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/replacenetworkaclentry.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ReplaceNetworkAclEntry)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ReplaceNetworkAclEntry)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/replacenetworkaclentry.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ReplaceNetworkAclAssociation
 

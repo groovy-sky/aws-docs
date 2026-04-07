@@ -2,7 +2,7 @@
 
 Most Amazon EC2 API actions support the parameters described in the following tables. The common
 parameters vary depending on whether you're using Signature Version 2 or Signature Version 4 to
-sign your requests. For more information, see [Signing AWS API requests](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html) in the _IAM User Guide_.
+sign your requests. For more information, see [Signing AWS API requests](../../../../services/iam/latest/userguide/reference-aws-signing.md) in the _IAM User Guide_.
 
 ###### Contents
 
@@ -91,7 +91,7 @@ No
 The `X-Amz-Algorithm`, `X-Amz-Credential`,
 `X-Amz-SignedHeaders`, and `X-Amz-Signature` parameters can either
 be specified as separate parameters in the query string, or their values can be included in
-a single `Authorization` header. For more information, see [Signing AWS API requests](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html) in the _IAM User Guide_.
+a single `Authorization` header. For more information, see [Signing AWS API requests](../../../../services/iam/latest/userguide/reference-aws-signing.md) in the _IAM User Guide_.
 
 ## Parameters for Signature Version 2
 
@@ -117,7 +117,7 @@ The access key ID for the request sender. This identifies the account which will
 charged for usage of the service. The account that's associated with the access key
 ID must be signed up for Amazon EC2, or the request isn't accepted.
 
-Example: `AKIAIOSFODNN7EXAMPLE`
+Example: `AWS_ACCESS_KEY_ID_REDACTED`
 
 Yes
 
@@ -188,7 +188,7 @@ Parameter values must be URL-encoded. This is true for any Query parameter passe
 and is typically necessary in the `Signature` parameter. Some clients do
 this automatically, but this is not the norm.
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 VM Import Manifest
 

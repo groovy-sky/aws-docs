@@ -8,7 +8,7 @@ This API action supports only single-volume VMs. To import multi-volume VMs, use
 
 Creates an import volume task using metadata from the specified disk image.
 
-For information about the import manifest referenced by this API action, see [VM Import Manifest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/manifest.html).
+For information about the import manifest referenced by this API action, see [VM Import Manifest](manifest.md).
 
 This API action is not supported by the AWS Command Line Interface (AWS CLI).
 
@@ -60,7 +60,7 @@ Required: No
 
 The disk image.
 
-Type: [DiskImageDetail](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DiskImageDetail.html) object
+Type: [DiskImageDetail](api-diskimagedetail.md) object
 
 Required: Yes
 
@@ -68,7 +68,7 @@ Required: Yes
 
 The volume size.
 
-Type: [VolumeDetail](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VolumeDetail.html) object
+Type: [VolumeDetail](api-volumedetail.md) object
 
 Required: Yes
 
@@ -80,7 +80,7 @@ The following elements are returned by the service.
 
 Information about the conversion task.
 
-Type: [ConversionTask](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ConversionTask.html) object
+Type: [ConversionTask](api-conversiontask.md) object
 
 **requestId**
 
@@ -107,7 +107,7 @@ https://ec2.amazonaws.com/?Action=ImportVolume
 &AvailabilityZone=us-east-1c
 &Image.Format=VMDK
 &Image.Bytes=128696320
-&Image.ImportManifestUrl=https://s3.amazonaws.com/amzn-s3-demo-bucket/​a3a5e1b6-590d-43cc-97c1-15c7325d3f41/​Win_2008_Server_Data_Center_SP2_32-bit.​vmdkmanifest.xml?AWSAccessKeyId=​AKIAIOSFODNN7EXAMPLE&​Expires=1294855591&​Signature=5snej01TlTtL0uR7KExtEXAMPLE%3D
+&Image.ImportManifestUrl=https://s3.amazonaws.com/amzn-s3-demo-bucket/​a3a5e1b6-590d-43cc-97c1-15c7325d3f41/​Win_2008_Server_Data_Center_SP2_32-bit.​vmdkmanifest.xml?AWSAccessKeyId=​AWS_ACCESS_KEY_ID_REDACTED&​Expires=1294855591&​Signature=5snej01TlTtL0uR7KExtEXAMPLE%3D
 &Volume.Size=8
 &AUTHPARAMS>
 ```
@@ -128,7 +128,7 @@ https://ec2.amazonaws.com/?Action=ImportVolume
             <format>VDMK</format>
             <size>128696320</size>
             <importManifestUrl>
-               https://s3.amazonaws.com/amzn-s3-demo-bucket/​a3a5e1b6-590d-43cc-97c1-15c7325d3f41/​Win_2008_Server_Data_Center_SP2_32-bit.​vmdkmanifest.xml?AWSAccessKeyId=​AKIAIOSFODNN7EXAMPLE&​Expires=1294855591&​Signature=5snej01TlTtL0uR7KExtEXAMPLE%3D
+               https://s3.amazonaws.com/amzn-s3-demo-bucket/​a3a5e1b6-590d-43cc-97c1-15c7325d3f41/​Win_2008_Server_Data_Center_SP2_32-bit.​vmdkmanifest.xml?AWSAccessKeyId=​AWS_ACCESS_KEY_ID_REDACTED&​Expires=1294855591&​Signature=5snej01TlTtL0uR7KExtEXAMPLE%3D
             </importManifestUrl>
             <checksum>ccb1b0536a4a70e86016b85229b5c6b10b14a4eb</checksum>
         </image>
@@ -151,23 +151,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ImportVolume)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ImportVolume)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/importvolume.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ImportVolume)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/importvolume.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ImportVolume)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/importvolume.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ImportVolume)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/importvolume.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ImportVolume)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/importvolume.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ImportVolume)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/importvolume.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ImportVolume)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ImportVolume)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/importvolume.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ImportSnapshot
 

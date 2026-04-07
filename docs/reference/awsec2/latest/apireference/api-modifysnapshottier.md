@@ -3,7 +3,7 @@
 Archives an Amazon EBS snapshot. When you archive a snapshot, it is converted to a full
 snapshot that includes all of the blocks of data that were written to the volume at the
 time the snapshot was created, and moved from the standard tier to the archive
-tier. For more information, see [Archive Amazon EBS snapshots](https://docs.aws.amazon.com/ebs/latest/userguide/snapshot-archive.html)
+tier. For more information, see [Archive Amazon EBS snapshots](../../../../services/ebs/latest/userguide/snapshot-archive.md)
 in the _Amazon EBS User Guide_.
 
 ## Request Parameters
@@ -72,23 +72,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ModifySnapshotTier)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ModifySnapshotTier)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/modifysnapshottier.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ModifySnapshotTier)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/modifysnapshottier.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ModifySnapshotTier)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/modifysnapshottier.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ModifySnapshotTier)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/modifysnapshottier.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ModifySnapshotTier)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/modifysnapshottier.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ModifySnapshotTier)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/modifysnapshottier.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ModifySnapshotTier)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ModifySnapshotTier)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifysnapshottier.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ModifySnapshotAttribute
 

@@ -16,7 +16,7 @@ This topic documents the structure of the manifest and provides a sample file.
 ###### Note
 
 Direct manipulation of the manifest departs from the standard workflow of the
-Amazon EC2 API. We recommend that you follow the procedures in [VM Import/Export processes](https://docs.aws.amazon.com/vm-import/latest/userguide/import-export-processes.html)
+Amazon EC2 API. We recommend that you follow the procedures in [VM Import/Export processes](../../../../services/vm-import/latest/userguide/import-export-processes.md)
 instead.
 
 ## Manifest Schema
@@ -198,7 +198,7 @@ containing the parts are on a local system and must be uploaded to Amazon S3.
         <version>1.0.0</version>
         <release>2010-11-15</release>
     </importer>
-    <self-destruct-url>https://example-disk-part-bucket.s3.amazonaws.com/d6e1ca17-72f6-4ab0-b2c8-d7ba8186cb23/cirros-0.3.2-x86_64-disk.vmdkmanifest.xml?AWSAccessKeyId=AKIAIOSFODNN7EXAMPLE&amp;Expires=1416618486&amp;Signature=m%2Bl%2FkuKuvfEeD%2Fya%2B0TrgeiH%2FLM%3D</self-destruct-url>
+    <self-destruct-url>https://example-disk-part-bucket.s3.amazonaws.com/d6e1ca17-72f6-4ab0-b2c8-d7ba8186cb23/cirros-0.3.2-x86_64-disk.vmdkmanifest.xml?AWSAccessKeyId=AWS_ACCESS_KEY_ID_REDACTED&amp;Expires=1416618486&amp;Signature=m%2Bl%2FkuKuvfEeD%2Fya%2B0TrgeiH%2FLM%3D</self-destruct-url>
     <import>
         <size>12595200</size>
         <volume-size>1</volume-size>
@@ -206,16 +206,16 @@ containing the parts are on a local system and must be uploaded to Amazon S3.
             <part index="0">
                 <byte-range end="10485759" start="0"/>
                 <key>d6e1ca17-72f6-4ab0-b2c8-d7ba8186cb23/cirros-0.3.2-x86_64-disk.vmdk.part0</key>
-                <head-url>https://example-disk-part-bucket.s3.amazonaws.com/d6e1ca17-72f6-4ab0-b2c8-d7ba8186cb23/cirros-0.3.2-x86_64-disk.vmdk.part0?AWSAccessKeyId=AKIAIOSFODNN7EXAMPLE&amp;Expires=1416618486&amp;Signature=2yqS2VGYXGmqcbu%2FrQEn8FGIKaI%3D</head-url>
-                <get-url>https://example-disk-part-bucket.s3.amazonaws.com/d6e1ca17-72f6-4ab0-b2c8-d7ba8186cb23/cirros-0.3.2-x86_64-disk.vmdk.part0?AWSAccessKeyId=AKIAIOSFODNN7EXAMPLE&amp;Expires=1416618486&amp;Signature=nEvl8VhFoEuIjJFRkAYB2IWKRtY%3D</get-url>
-                <delete-url>https://example-disk-part-bucket.s3.amazonaws.com/d6e1ca17-72f6-4ab0-b2c8-d7ba8186cb23/cirros-0.3.2-x86_64-disk.vmdk.part0?AWSAccessKeyId=AKIAIOSFODNN7EXAMPLE&amp;Expires=1416618486&amp;Signature=CX19zc4Eys8BN%2FXsoepk%2Bi3i4No%3D</delete-url>
+                <head-url>https://example-disk-part-bucket.s3.amazonaws.com/d6e1ca17-72f6-4ab0-b2c8-d7ba8186cb23/cirros-0.3.2-x86_64-disk.vmdk.part0?AWSAccessKeyId=AWS_ACCESS_KEY_ID_REDACTED&amp;Expires=1416618486&amp;Signature=2yqS2VGYXGmqcbu%2FrQEn8FGIKaI%3D</head-url>
+                <get-url>https://example-disk-part-bucket.s3.amazonaws.com/d6e1ca17-72f6-4ab0-b2c8-d7ba8186cb23/cirros-0.3.2-x86_64-disk.vmdk.part0?AWSAccessKeyId=AWS_ACCESS_KEY_ID_REDACTED&amp;Expires=1416618486&amp;Signature=nEvl8VhFoEuIjJFRkAYB2IWKRtY%3D</get-url>
+                <delete-url>https://example-disk-part-bucket.s3.amazonaws.com/d6e1ca17-72f6-4ab0-b2c8-d7ba8186cb23/cirros-0.3.2-x86_64-disk.vmdk.part0?AWSAccessKeyId=AWS_ACCESS_KEY_ID_REDACTED&amp;Expires=1416618486&amp;Signature=CX19zc4Eys8BN%2FXsoepk%2Bi3i4No%3D</delete-url>
             </part>
             <part index="1">
                 <byte-range end="12595199" start="10485760"/>
                 <key>d6e1ca17-72f6-4ab0-b2c8-d7ba8186cb23/cirros-0.3.2-x86_64-disk.vmdk.part1</key>
-                <head-url>https://example-disk-part-bucket.s3.amazonaws.com/d6e1ca17-72f6-4ab0-b2c8-d7ba8186cb23/cirros-0.3.2-x86_64-disk.vmdk.part1?AWSAccessKeyId=AKIAIOSFODNN7EXAMPLE&amp;Expires=1416618486&amp;Signature=3b%2F8ky92L8g%2BBf15Ou194VnR4Js%3D</head-url>
-                <get-url>https://example-disk-part-bucket.s3.amazonaws.com/d6e1ca17-72f6-4ab0-b2c8-d7ba8186cb23/cirros-0.3.2-x86_64-disk.vmdk.part1?AWSAccessKeyId=AKIAIOSFODNN7EXAMPLE&amp;Expires=1416618486&amp;Signature=W%2FxagI5ChmfqqgY8WwyDJ3Rgviw%3D</get-url>
-                <delete-url>https://example-disk-part-bucket.s3.amazonaws.com/d6e1ca17-72f6-4ab0-b2c8-d7ba8186cb23/cirros-0.3.2-x86_64-disk.vmdk.part1?AWSAccessKeyId=AKIAIOSFODNN7EXAMPLE&amp;Expires=1416618486&amp;Signature=08FH3QPwkIcNURnNpT9DIvvhQ0I%3D</delete-url>
+                <head-url>https://example-disk-part-bucket.s3.amazonaws.com/d6e1ca17-72f6-4ab0-b2c8-d7ba8186cb23/cirros-0.3.2-x86_64-disk.vmdk.part1?AWSAccessKeyId=AWS_ACCESS_KEY_ID_REDACTED&amp;Expires=1416618486&amp;Signature=3b%2F8ky92L8g%2BBf15Ou194VnR4Js%3D</head-url>
+                <get-url>https://example-disk-part-bucket.s3.amazonaws.com/d6e1ca17-72f6-4ab0-b2c8-d7ba8186cb23/cirros-0.3.2-x86_64-disk.vmdk.part1?AWSAccessKeyId=AWS_ACCESS_KEY_ID_REDACTED&amp;Expires=1416618486&amp;Signature=W%2FxagI5ChmfqqgY8WwyDJ3Rgviw%3D</get-url>
+                <delete-url>https://example-disk-part-bucket.s3.amazonaws.com/d6e1ca17-72f6-4ab0-b2c8-d7ba8186cb23/cirros-0.3.2-x86_64-disk.vmdk.part1?AWSAccessKeyId=AWS_ACCESS_KEY_ID_REDACTED&amp;Expires=1416618486&amp;Signature=08FH3QPwkIcNURnNpT9DIvvhQ0I%3D</delete-url>
             </part>
         </parts>
     </import>
@@ -236,7 +236,7 @@ uploaded to Amazon S3.
         <version>1.0.0</version>
         <release>2010-11-15</release>
     </importer>
-    <self-destruct-url>https://example-disk-part-bucket.s3.ap-northeast-2.amazonaws.com/Linux_RHEL_59_64.vmdk?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJ26ZRPZDGYJT4KAQFEXAMPLE%2Fap-northeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20151119T234529Z&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=4dbf803f2e52fb6a876d3b63778033af42ec11155b37366ab4fca56691672807&amp;X-Amz-SignedHeaders=Host</self-destruct-url>
+    <self-destruct-url>https://example-disk-part-bucket.s3.ap-northeast-2.amazonaws.com/Linux_RHEL_59_64.vmdk?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED%2Fap-northeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20151119T234529Z&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=4dbf803f2e52fb6a876d3b63778033af42ec11155b37366ab4fca56691672807&amp;X-Amz-SignedHeaders=Host</self-destruct-url>
     <import>
         <size>994433536</size>
         <volume-size>1</volume-size>
@@ -244,16 +244,16 @@ uploaded to Amazon S3.
             <part index="0">
                 <byte-range end="994433536" start="0"/>
                 <key>Linux_RHEL_59_64.vmdk</key>
-                <head-url>https://example-disk-part-bucket.s3.ap-northeast-2.amazonaws.com/Linux_RHEL_59_64.vmdk?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJ26ZRPZDGYJT4KAQFEXAMPLE%2Fap-northeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20151119T234529Z&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=4c3a7bdf3ef8fa53a5585fc67747c81ea1f65bf09f3768998a575dabf5dfda2e&amp;X-Amz-SignedHeaders=Host</head-url>
-                <get-url>https://example-disk-part-bucket.s3.ap-northeast-2.amazonaws.com/Linux_RHEL_59_64.vmdk?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJ26ZRPZDGYJT4KAQFEXAMPLE%2Fap-northeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20151119T234529Z&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=329d6abb673e4ce11c0aa602f34f62fb8ced703e8ae6c04f24c16e79d7699e52&amp;X-Amz-SignedHeaders=Host</get-url>
-                <delete-url>https://example-disk-part-bucket.s3.ap-northeast-2.amazonaws.com/Linux_RHEL_59_64.vmdk?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJ26ZRPZDGYJT4KAQFEXAMPLE%2Fap-northeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20151119T234529Z&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=4dbf803f2e52fb6a876d3b63778033af42ec11155b37366ab4fca56691672807&amp;X-Amz-SignedHeaders=Host</delete-url>
+                <head-url>https://example-disk-part-bucket.s3.ap-northeast-2.amazonaws.com/Linux_RHEL_59_64.vmdk?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED%2Fap-northeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20151119T234529Z&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=4c3a7bdf3ef8fa53a5585fc67747c81ea1f65bf09f3768998a575dabf5dfda2e&amp;X-Amz-SignedHeaders=Host</head-url>
+                <get-url>https://example-disk-part-bucket.s3.ap-northeast-2.amazonaws.com/Linux_RHEL_59_64.vmdk?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED%2Fap-northeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20151119T234529Z&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=329d6abb673e4ce11c0aa602f34f62fb8ced703e8ae6c04f24c16e79d7699e52&amp;X-Amz-SignedHeaders=Host</get-url>
+                <delete-url>https://example-disk-part-bucket.s3.ap-northeast-2.amazonaws.com/Linux_RHEL_59_64.vmdk?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED%2Fap-northeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20151119T234529Z&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=4dbf803f2e52fb6a876d3b63778033af42ec11155b37366ab4fca56691672807&amp;X-Amz-SignedHeaders=Host</delete-url>
             </part>
         </parts>
     </import>
 </manifest>
 ```
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CORS support
 

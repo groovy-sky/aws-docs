@@ -4,14 +4,14 @@ A binary representation of the UEFI variable store. Only non-volatile variables 
 stored. This is a base64 encoded and zlib compressed binary value that must be properly
 encoded.
 
-When you use [register-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) to create
+When you use [register-image](../../../../services/cli/latest/reference/ec2/register-image.md) to create
 an AMI, you can create an exact copy of your variable store by passing the UEFI data in
 the `UefiData` parameter. You can modify the UEFI data by using the [python-uefivars tool](https://github.com/awslabs/python-uefivars) on
 GitHub. You can use the tool to convert the UEFI data into a human-readable format
 (JSON), which you can inspect and modify, and then convert back into the binary format
 to use with register-image.
 
-For more information, see [UEFI Secure Boot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/uefi-secure-boot.html) in the
+For more information, see [UEFI Secure Boot](../../../../services/ec2/latest/userguide/uefi-secure-boot.md) in the
 _Amazon EC2 User Guide_.
 
 ## Request Parameters
@@ -70,23 +70,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/GetInstanceUefiData)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/GetInstanceUefiData)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/getinstanceuefidata.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/GetInstanceUefiData)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/getinstanceuefidata.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/GetInstanceUefiData)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/getinstanceuefidata.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/GetInstanceUefiData)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/getinstanceuefidata.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/GetInstanceUefiData)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/getinstanceuefidata.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/GetInstanceUefiData)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/getinstanceuefidata.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/GetInstanceUefiData)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/GetInstanceUefiData)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/getinstanceuefidata.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GetInstanceTypesFromInstanceRequirements
 

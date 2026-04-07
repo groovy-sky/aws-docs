@@ -6,7 +6,7 @@ from the subnet or gateway to be routed according to the routes in the route tab
 action returns an association ID, which you need in order to disassociate the route
 table later. A route table can be associated with multiple subnets.
 
-For more information, see [Route tables](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html) in the
+For more information, see [Route tables](../../../../services/vpc/latest/userguide/vpc-route-tables.md) in the
 _Amazon VPC User Guide_.
 
 ## Request Parameters
@@ -70,7 +70,7 @@ Type: String
 
 The state of the association.
 
-Type: [RouteTableAssociationState](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RouteTableAssociationState.html) object
+Type: [RouteTableAssociationState](api-routetableassociationstate.md) object
 
 **requestId**
 
@@ -132,23 +132,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/AssociateRouteTable)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/AssociateRouteTable)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/associateroutetable.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/AssociateRouteTable)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/associateroutetable.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/AssociateRouteTable)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/associateroutetable.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/AssociateRouteTable)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/associateroutetable.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/AssociateRouteTable)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/associateroutetable.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/AssociateRouteTable)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/associateroutetable.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/AssociateRouteTable)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/AssociateRouteTable)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/associateroutetable.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AssociateRouteServer
 

@@ -1,6 +1,6 @@
 # ClientVpnAuthenticationRequest
 
-Describes the authentication method to be used by a Client VPN endpoint. For more information, see [Authentication](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/authentication-authrization.html#client-authentication)
+Describes the authentication method to be used by a Client VPN endpoint. For more information, see [Authentication](../../../../services/vpn/latest/clientvpn-admin/authentication-authrization.md#client-authentication)
 in the _AWS Client VPN Administrator Guide_.
 
 ## Contents
@@ -9,7 +9,7 @@ in the _AWS Client VPN Administrator Guide_.
 
 Information about the Active Directory to be used, if applicable. You must provide this information if **Type** is `directory-service-authentication`.
 
-Type: [DirectoryServiceAuthenticationRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DirectoryServiceAuthenticationRequest.html) object
+Type: [DirectoryServiceAuthenticationRequest](api-directoryserviceauthenticationrequest.md) object
 
 Required: No
 
@@ -17,7 +17,7 @@ Required: No
 
 Information about the IAM SAML identity provider to be used, if applicable. You must provide this information if **Type** is `federated-authentication`.
 
-Type: [FederatedAuthenticationRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FederatedAuthenticationRequest.html) object
+Type: [FederatedAuthenticationRequest](api-federatedauthenticationrequest.md) object
 
 Required: No
 
@@ -25,7 +25,7 @@ Required: No
 
 Information about the authentication certificates to be used, if applicable. You must provide this information if **Type** is `certificate-authentication`.
 
-Type: [CertificateAuthenticationRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CertificateAuthenticationRequest.html) object
+Type: [CertificateAuthenticationRequest](api-certificateauthenticationrequest.md) object
 
 Required: No
 
@@ -43,13 +43,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ClientVpnAuthenticationRequest)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/clientvpnauthenticationrequest.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ClientVpnAuthenticationRequest)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/clientvpnauthenticationrequest.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ClientVpnAuthenticationRequest)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/clientvpnauthenticationrequest.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ClientVpnAuthentication
 

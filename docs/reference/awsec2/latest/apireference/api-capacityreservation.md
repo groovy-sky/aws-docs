@@ -33,7 +33,7 @@ Required: No
 
 Information about instance capacity usage.
 
-Type: Array of [CapacityAllocation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityAllocation.html) objects
+Type: Array of [CapacityAllocation](api-capacityallocation.md) objects
 
 Required: No
 
@@ -75,7 +75,7 @@ Required: No
 
 Information about your commitment for a future-dated Capacity Reservation.
 
-Type: [CapacityReservationCommitmentInfo](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityReservationCommitmentInfo.html) object
+Type: [CapacityReservationCommitmentInfo](api-capacityreservationcommitmentinfo.md) object
 
 Required: No
 
@@ -200,7 +200,7 @@ Required: No
 
 Contains allocation details for interruptible reservations, including current allocated instances and target instance counts within the interruptibleCapacityAllocation object.
 
-Type: [InterruptibleCapacityAllocation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InterruptibleCapacityAllocation.html) object
+Type: [InterruptibleCapacityAllocation](api-interruptiblecapacityallocation.md) object
 
 Required: No
 
@@ -208,7 +208,7 @@ Required: No
 
 Information about the interruption configuration and association with the source reservation for interruptible Capacity Reservations.
 
-Type: [InterruptionInfo](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InterruptionInfo.html) object
+Type: [InterruptionInfo](api-interruptioninfo.md) object
 
 Required: No
 
@@ -359,13 +359,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CapacityReservation)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/capacityreservation.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CapacityReservation)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/capacityreservation.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CapacityReservation)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/capacityreservation.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CapacityManagerDimension
 

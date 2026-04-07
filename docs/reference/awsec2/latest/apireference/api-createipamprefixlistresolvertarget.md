@@ -4,7 +4,7 @@ Creates an IPAM prefix list resolver target.
 
 An IPAM prefix list resolver target is an association between a specific customer-managed prefix list and an IPAM prefix list resolver. The target enables the resolver to synchronize CIDRs selected by its rules into the specified prefix list, which can then be referenced in AWS resources.
 
-For more information about IPAM prefix list resolver, see [Automate prefix list updates with IPAM](https://docs.aws.amazon.com/vpc/latest/ipam/automate-prefix-list-updates.html) in the _Amazon VPC IPAM User Guide_.
+For more information about IPAM prefix list resolver, see [Automate prefix list updates with IPAM](../../../../services/vpc/latest/ipam/automate-prefix-list-updates.md) in the _Amazon VPC IPAM User Guide_.
 
 ## Request Parameters
 
@@ -12,7 +12,7 @@ The following parameters are for this specific action. For more information abou
 
 **ClientToken**
 
-A unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html).
+A unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensuring idempotency](../../../../services/ec2/latest/devguide/ec2-api-idempotency.md).
 
 Type: String
 
@@ -88,7 +88,7 @@ The following elements are returned by the service.
 
 Information about the IPAM prefix list resolver target that was created.
 
-Type: [IpamPrefixListResolverTarget](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamPrefixListResolverTarget.html) object
+Type: [IpamPrefixListResolverTarget](api-ipamprefixlistresolvertarget.md) object
 
 **requestId**
 
@@ -108,23 +108,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateIpamPrefixListResolverTarget)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateIpamPrefixListResolverTarget)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createipamprefixlistresolvertarget.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateIpamPrefixListResolverTarget)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createipamprefixlistresolvertarget.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateIpamPrefixListResolverTarget)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createipamprefixlistresolvertarget.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateIpamPrefixListResolverTarget)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createipamprefixlistresolvertarget.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateIpamPrefixListResolverTarget)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createipamprefixlistresolvertarget.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateIpamPrefixListResolverTarget)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createipamprefixlistresolvertarget.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateIpamPrefixListResolverTarget)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateIpamPrefixListResolverTarget)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createipamprefixlistresolvertarget.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateIpamPrefixListResolver
 

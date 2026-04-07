@@ -13,9 +13,9 @@ Route server supports the follow route table types:
 
 - Internet gateway route tables
 
-Route server does not support route tables associated with virtual private gateways. To propagate routes into a transit gateway route table, use [Transit Gateway Connect](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-connect.html).
+Route server does not support route tables associated with virtual private gateways. To propagate routes into a transit gateway route table, use [Transit Gateway Connect](../../../../services/vpc/latest/tgw/tgw-connect.md).
 
-For more information see [Dynamic routing in your VPC with VPC Route Server](https://docs.aws.amazon.com/vpc/latest/userguide/dynamic-routing-route-server.html) in the _Amazon VPC User Guide_.
+For more information see [Dynamic routing in your VPC with VPC Route Server](../../../../services/vpc/latest/userguide/dynamic-routing-route-server.md) in the _Amazon VPC User Guide_.
 
 ## Request Parameters
 
@@ -87,7 +87,7 @@ Type: String
 
 Information about the modified route server.
 
-Type: [RouteServer](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RouteServer.html) object
+Type: [RouteServer](api-routeserver.md) object
 
 ## Errors
 
@@ -101,23 +101,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ModifyRouteServer)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ModifyRouteServer)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/modifyrouteserver.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ModifyRouteServer)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/modifyrouteserver.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ModifyRouteServer)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/modifyrouteserver.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ModifyRouteServer)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/modifyrouteserver.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ModifyRouteServer)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/modifyrouteserver.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ModifyRouteServer)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/modifyrouteserver.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ModifyRouteServer)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ModifyRouteServer)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifyrouteserver.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ModifyReservedInstances
 

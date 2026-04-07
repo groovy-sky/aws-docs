@@ -27,7 +27,7 @@ Required: No
 
 Any block device mapping entries for the instance.
 
-Type: Array of [InstanceBlockDeviceMapping](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceBlockDeviceMapping.html) objects
+Type: Array of [InstanceBlockDeviceMapping](api-instanceblockdevicemapping.md) objects
 
 Required: No
 
@@ -41,7 +41,7 @@ is the boot mode that is used to boot the instance at launch or start.
 
 The operating system contained in the AMI must be configured to support the specified boot mode.
 
-For more information, see [Boot modes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-boot.html) in the
+For more information, see [Boot modes](../../../../services/ec2/latest/userguide/ami-boot.md) in the
 _Amazon EC2 User Guide_.
 
 Type: String
@@ -75,7 +75,7 @@ Required: No
 
 Information about the Capacity Reservation targeting option.
 
-Type: [CapacityReservationSpecificationResponse](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityReservationSpecificationResponse.html) object
+Type: [CapacityReservationSpecificationResponse](api-capacityreservationspecificationresponse.md) object
 
 Required: No
 
@@ -92,13 +92,13 @@ Required: No
 
 The CPU options for the instance.
 
-Type: [CpuOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CpuOptions.html) object
+Type: [CpuOptions](api-cpuoptions.md) object
 
 Required: No
 
 **currentInstanceBootMode**
 
-The boot mode that is used to boot the instance at launch or start. For more information, see [Boot modes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-boot.html) in the
+The boot mode that is used to boot the instance at launch or start. For more information, see [Boot modes](../../../../services/ec2/latest/userguide/ami-boot.md) in the
 _Amazon EC2 User Guide_.
 
 Type: String
@@ -112,7 +112,7 @@ Required: No
 The public DNS name assigned to the instance. This name is not available
 until the instance enters the `running` state. This name is only
 available if you've enabled DNS hostnames for your VPC. The format of this
-name depends on the [public hostname type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hostname-types.html#public-hostnames).
+name depends on the [public hostname type](../../../../services/ec2/latest/userguide/hostname-types.md#public-hostnames).
 
 Type: String
 
@@ -137,7 +137,7 @@ Deprecated.
 
 Amazon Elastic Graphics reached end of life on January 8, 2024.
 
-Type: Array of [ElasticGpuAssociation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ElasticGpuAssociation.html) objects
+Type: Array of [ElasticGpuAssociation](api-elasticgpuassociation.md) objects
 
 Required: No
 
@@ -149,7 +149,7 @@ Deprecated
 
 Amazon Elastic Inference is no longer available.
 
-Type: Array of [ElasticInferenceAcceleratorAssociation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ElasticInferenceAcceleratorAssociation.html) objects
+Type: Array of [ElasticInferenceAcceleratorAssociation](api-elasticinferenceacceleratorassociation.md) objects
 
 Required: No
 
@@ -166,7 +166,7 @@ Required: No
 Indicates whether the instance is enabled for AWS Nitro
 Enclaves.
 
-Type: [EnclaveOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnclaveOptions.html) object
+Type: [EnclaveOptions](api-enclaveoptions.md) object
 
 Required: No
 
@@ -182,7 +182,7 @@ Required: No
 
 Indicates whether the instance is enabled for hibernation.
 
-Type: [HibernationOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HibernationOptions.html) object
+Type: [HibernationOptions](api-hibernationoptions.md) object
 
 Required: No
 
@@ -202,7 +202,7 @@ Required: No
 The IAM instance profile associated with the instance, if
 applicable.
 
-Type: [IamInstanceProfile](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IamInstanceProfile.html) object
+Type: [IamInstanceProfile](api-iaminstanceprofile.md) object
 
 Required: No
 
@@ -236,7 +236,7 @@ Required: No
 
 The current state of the instance.
 
-Type: [InstanceState](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceState.html) object
+Type: [InstanceState](api-instancestate.md) object
 
 Required: No
 
@@ -300,7 +300,7 @@ Required: No
 
 The license configurations for the instance.
 
-Type: Array of [LicenseConfiguration](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LicenseConfiguration.html) objects
+Type: Array of [LicenseConfiguration](api-licenseconfiguration.md) objects
 
 Required: No
 
@@ -308,7 +308,7 @@ Required: No
 
 Provides information on the recovery and maintenance options of your instance.
 
-Type: [InstanceMaintenanceOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceMaintenanceOptions.html) object
+Type: [InstanceMaintenanceOptions](api-instancemaintenanceoptions.md) object
 
 Required: No
 
@@ -316,7 +316,7 @@ Required: No
 
 The metadata options for the instance.
 
-Type: [InstanceMetadataOptionsResponse](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceMetadataOptionsResponse.html) object
+Type: [InstanceMetadataOptionsResponse](api-instancemetadataoptionsresponse.md) object
 
 Required: No
 
@@ -324,7 +324,7 @@ Required: No
 
 The monitoring for the instance.
 
-Type: [Monitoring](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Monitoring.html) object
+Type: [Monitoring](api-monitoring.md) object
 
 Required: No
 
@@ -332,7 +332,7 @@ Required: No
 
 The network interfaces for the instance.
 
-Type: Array of [InstanceNetworkInterface](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceNetworkInterface.html) objects
+Type: Array of [InstanceNetworkInterface](api-instancenetworkinterface.md) objects
 
 Required: No
 
@@ -340,7 +340,7 @@ Required: No
 
 Contains settings for the network performance options for your instance.
 
-Type: [InstanceNetworkPerformanceOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceNetworkPerformanceOptions.html) object
+Type: [InstanceNetworkPerformanceOptions](api-instancenetworkperformanceoptions.md) object
 
 Required: No
 
@@ -381,7 +381,7 @@ Required: No
 **platformDetails**
 
 The platform details value for the instance. For more information, see [AMI\
-billing information fields](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/billing-info-fields.html) in the
+billing information fields](../../../../services/ec2/latest/userguide/billing-info-fields.md) in the
 _Amazon EC2 User Guide_.
 
 Type: String
@@ -407,7 +407,7 @@ Required: No
 
 The options for the instance hostname.
 
-Type: [PrivateDnsNameOptionsResponse](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PrivateDnsNameOptionsResponse.html) object
+Type: [PrivateDnsNameOptionsResponse](api-privatednsnameoptionsresponse.md) object
 
 Required: No
 
@@ -423,7 +423,7 @@ Required: No
 
 The product codes attached to this instance, if applicable.
 
-Type: Array of [ProductCode](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ProductCode.html) objects
+Type: Array of [ProductCode](api-productcode.md) objects
 
 Required: No
 
@@ -467,7 +467,7 @@ Required: No
 
 The secondary interfaces for the instance.
 
-Type: Array of [InstanceSecondaryInterface](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceSecondaryInterface.html) objects
+Type: Array of [InstanceSecondaryInterface](api-instancesecondaryinterface.md) objects
 
 Required: No
 
@@ -500,7 +500,7 @@ Required: No
 
 The reason for the most recent state transition.
 
-Type: [StateReason](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StateReason.html) object
+Type: [StateReason](api-statereason.md) object
 
 Required: No
 
@@ -523,7 +523,7 @@ Required: No
 **tpmSupport**
 
 If the instance is configured for NitroTPM support, the value is `v2.0`.
-For more information, see [NitroTPM](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nitrotpm.html) in the
+For more information, see [NitroTPM](../../../../services/ec2/latest/userguide/nitrotpm.md) in the
 _Amazon EC2 User Guide_.
 
 Type: String
@@ -533,7 +533,7 @@ Required: No
 **usageOperation**
 
 The usage operation value for the instance. For more information, see [AMI\
-billing information fields](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/billing-info-fields.html) in the
+billing information fields](../../../../services/ec2/latest/userguide/billing-info-fields.md) in the
 _Amazon EC2 User Guide_.
 
 Type: String
@@ -570,13 +570,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/Instance)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/instance.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/Instance)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/instance.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/Instance)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/instance.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 InitializationStatusDetails
 

@@ -28,11 +28,11 @@ Attribute-based instance type selection is only supported when using Auto Scalin
 groups, EC2 Fleet, and Spot Fleet to launch instances. If you plan to use the launch template in
 the [launch instance\
 wizard](../../../../services/ec2/latest/userguide/ec2-launch-instance-wizard.md), or with the [RunInstances](api-runinstances.md) API or
-[AWS::EC2::Instance](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html)
+[AWS::EC2::Instance](../../../../services/cloudformation/latest/userguide/aws-properties-ec2-instance.md)
 AWS CloudFormation resource, you can't specify
 `InstanceRequirements`.
 
-For more information, see [Specify attributes for instance type selection for EC2 Fleet or Spot Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-attribute-based-instance-type-selection.html) and [Spot\
+For more information, see [Specify attributes for instance type selection for EC2 Fleet or Spot Fleet](../../../../services/ec2/latest/userguide/ec2-fleet-attribute-based-instance-type-selection.md) and [Spot\
 placement score](../../../../services/ec2/latest/userguide/spot-placement-score.md) in the _Amazon EC2 User Guide_.
 
 ## Contents
@@ -41,7 +41,7 @@ placement score](../../../../services/ec2/latest/userguide/spot-placement-score.
 
 The minimum and maximum amount of memory, in MiB.
 
-Type: [MemoryMiBRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MemoryMiBRequest.html) object
+Type: [MemoryMiBRequest](api-memorymibrequest.md) object
 
 Required: Yes
 
@@ -49,7 +49,7 @@ Required: Yes
 
 The minimum and maximum number of vCPUs.
 
-Type: [VCpuCountRangeRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VCpuCountRangeRequest.html) object
+Type: [VCpuCountRangeRequest](api-vcpucountrangerequest.md) object
 
 Required: Yes
 
@@ -62,7 +62,7 @@ To exclude accelerator-enabled instance types, set `Max` to `0`.
 
 Default: No minimum or maximum limits
 
-Type: [AcceleratorCountRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AcceleratorCountRequest.html) object
+Type: [AcceleratorCountRequest](api-acceleratorcountrequest.md) object
 
 Required: No
 
@@ -144,7 +144,7 @@ The minimum and maximum amount of total accelerator memory, in MiB.
 
 Default: No minimum or maximum limits
 
-Type: [AcceleratorTotalMemoryMiBRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AcceleratorTotalMemoryMiBRequest.html) object
+Type: [AcceleratorTotalMemoryMiBRequest](api-acceleratortotalmemorymibrequest.md) object
 
 Required: No
 
@@ -225,7 +225,7 @@ EBS–optimized instances](../../../../services/ec2/latest/userguide/ebs-optimiz
 
 Default: No minimum or maximum limits
 
-Type: [BaselineEbsBandwidthMbpsRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_BaselineEbsBandwidthMbpsRequest.html) object
+Type: [BaselineEbsBandwidthMbpsRequest](api-baselineebsbandwidthmbpsrequest.md) object
 
 Required: No
 
@@ -236,9 +236,9 @@ The instance family establishes the lowest acceptable level of performance. Amaz
 baseline to guide instance type selection, but there is no guarantee that the selected
 instance types will always exceed the baseline for every application. Currently, this
 parameter only supports CPU performance as a baseline performance factor. For more
-information, see [Performance protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-attribute-based-instance-type-selection.html#ec2fleet-abis-performance-protection) in the _Amazon EC2 User Guide_.
+information, see [Performance protection](../../../../services/ec2/latest/userguide/ec2-fleet-attribute-based-instance-type-selection.md#ec2fleet-abis-performance-protection) in the _Amazon EC2 User Guide_.
 
-Type: [BaselinePerformanceFactorsRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_BaselinePerformanceFactorsRequest.html) object
+Type: [BaselinePerformanceFactorsRequest](api-baselineperformancefactorsrequest.md) object
 
 Required: No
 
@@ -341,7 +341,7 @@ Required: No
 
 Indicates whether instance types with instance store volumes are included, excluded, or required. For more information,
 [Amazon\
-EC2 instance store](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) in the _Amazon EC2 User Guide_.
+EC2 instance store](../../../../services/ec2/latest/userguide/instancestorage.md) in the _Amazon EC2 User Guide_.
 
 - To include instance types with instance store volumes, specify
 `included`.
@@ -414,7 +414,7 @@ The minimum and maximum amount of memory per vCPU, in GiB.
 
 Default: No minimum or maximum limits
 
-Type: [MemoryGiBPerVCpuRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MemoryGiBPerVCpuRequest.html) object
+Type: [MemoryGiBPerVCpuRequest](api-memorygibpervcpurequest.md) object
 
 Required: No
 
@@ -425,7 +425,7 @@ The minimum and maximum amount of baseline network bandwidth, in gigabits per se
 
 Default: No minimum or maximum limits
 
-Type: [NetworkBandwidthGbpsRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkBandwidthGbpsRequest.html) object
+Type: [NetworkBandwidthGbpsRequest](api-networkbandwidthgbpsrequest.md) object
 
 Required: No
 
@@ -435,7 +435,7 @@ The minimum and maximum number of network interfaces.
 
 Default: No minimum or maximum limits
 
-Type: [NetworkInterfaceCountRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkInterfaceCountRequest.html) object
+Type: [NetworkInterfaceCountRequest](api-networkinterfacecountrequest.md) object
 
 Required: No
 
@@ -452,7 +452,7 @@ The parameter accepts an integer, which Amazon EC2 interprets as a percentage.
 To indicate no price protection threshold, specify a high value, such as
 `999999`.
 
-This parameter is not supported for [GetSpotPlacementScores](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetSpotPlacementScores.html) and [GetInstanceTypesFromInstanceRequirements](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetInstanceTypesFromInstanceRequirements.html).
+This parameter is not supported for [GetSpotPlacementScores](api-getspotplacementscores.md) and [GetInstanceTypesFromInstanceRequirements](api-getinstancetypesfrominstancerequirements.md).
 
 ###### Note
 
@@ -470,7 +470,7 @@ Required: No
 
 Specifies whether instance types must support encrypting in-transit traffic between
 instances. For more information, including the supported instance types, see [Encryption in\
-transit](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/data-protection.html#encryption-transit) in the _Amazon EC2 User Guide_.
+transit](../../../../services/ec2/latest/userguide/data-protection.md#encryption-transit) in the _Amazon EC2 User Guide_.
 
 Default: `false`
 
@@ -482,7 +482,7 @@ Required: No
 
 Indicates whether instance types must support hibernation for On-Demand Instances.
 
-This parameter is not supported for [GetSpotPlacementScores](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetSpotPlacementScores.html).
+This parameter is not supported for [GetSpotPlacementScores](api-getspotplacementscores.md).
 
 Default: `false`
 
@@ -507,7 +507,7 @@ If you set `TargetCapacityUnitType` to `vcpu` or
 `memory-mib`, the price protection threshold is applied based on the
 per-vCPU or per-memory price instead of the per-instance price.
 
-This parameter is not supported for [GetSpotPlacementScores](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetSpotPlacementScores.html) and [GetInstanceTypesFromInstanceRequirements](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetInstanceTypesFromInstanceRequirements.html).
+This parameter is not supported for [GetSpotPlacementScores](api-getspotplacementscores.md) and [GetInstanceTypesFromInstanceRequirements](api-getinstancetypesfrominstancerequirements.md).
 
 ###### Note
 
@@ -531,7 +531,7 @@ The minimum and maximum amount of total local storage, in GB.
 
 Default: No minimum or maximum limits
 
-Type: [TotalLocalStorageGBRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TotalLocalStorageGBRequest.html) object
+Type: [TotalLocalStorageGBRequest](api-totallocalstoragegbrequest.md) object
 
 Required: No
 
@@ -539,13 +539,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/InstanceRequirementsRequest)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/instancerequirementsrequest.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/InstanceRequirementsRequest)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/instancerequirementsrequest.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/InstanceRequirementsRequest)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/instancerequirementsrequest.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 InstanceRequirements
 

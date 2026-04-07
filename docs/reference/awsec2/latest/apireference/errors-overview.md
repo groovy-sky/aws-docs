@@ -63,14 +63,14 @@ request or more than 15 minutes after the request expiration date (such
 as for presigned URLs), or the date stamp on the request is more than 15
 minutes in the future. If you're using temporary security credentials,
 this error can also occur if the credentials have expired. For more
-information, see [Temporary security credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html) in the
+information, see [Temporary security credentials](../../../../services/iam/latest/userguide/id-credentials-temp.md) in the
 _IAM User Guide_.`TagPolicyViolation`You attempted to create or update a resource with tags that are not
 compliant with the tag policy requirements for this account. For more
 information, see [Grant permission to tag resources during creation.](../../../../services/ec2/latest/userguide/supported-iam-actions-tagging.md)`UnauthorizedOperation`You are not authorized to perform this operation. Check your IAM
 policies, and ensure that you are using the correct credentials. For
 more information, see [Identity and access management for Amazon EC2](../../../../services/ec2/latest/userguide/security-iam.md). If the returned message is encoded, you
 can decode it using the `DecodeAuthorizationMessage` action.
-For more information, see [DecodeAuthorizationMessage](https://docs.aws.amazon.com/STS/latest/APIReference/API_DecodeAuthorizationMessage.html) in the
+For more information, see [DecodeAuthorizationMessage](../../../sts/latest/apireference/api-decodeauthorizationmessage.md) in the
 _AWS Security Token Service API Reference_.`UnknownParameter`An unknown or unrecognized parameter was supplied. Requests that
 could cause this error include supplying a misspelled parameter or a
 parameter that is not supported for the specified API version.`UnsupportedInstanceAttribute`The specified attribute cannot be modified.`UnsupportedOperation`The specified request includes an unsupported operation. For example,
@@ -105,7 +105,7 @@ for Amazon EC2 instances](../../../../services/ec2/latest/userguide/volume-limit
 information, see [Amazon EBS volume types](../../../../services/ebs/latest/userguide/ebs-volume-types.md).`BundlingInProgress`The specified instance already has a bundling task in progress.
 `CannotDelete`You cannot delete the 'default' security group in your VPC, but you
 can change its rules. For more information, see [Amazon EC2 security\
-groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html).`CapacityBlockDescribeLimitExceeded`You've reached the limit for this account. The returned message provides details.`ClientInvalidParameterValue`A parameter specified in a request is not valid, is unsupported, or
+groups](../../../../services/ec2/latest/userguide/using-network-security.md).`CapacityBlockDescribeLimitExceeded`You've reached the limit for this account. The returned message provides details.`ClientInvalidParameterValue`A parameter specified in a request is not valid, is unsupported, or
 cannot be used. The returned message provides an explanation of the
 error value. For example, if you are launching an instance, you can't
 specify a security group and subnet that are in different VPCs.`ClientVpnAuthorizationRuleLimitExceeded`You've reached the limit on the number of authorization rules that can be added to a single Client VPN endpoint.`ClientVpnCertificateRevocationListLimitExceeded`You've reached the limit on the number of client certificate revocation lists that can be added to a single Client VPN endpoint.`ClientVpnEndpointAssociationExists`The specified target network is already associated with the Client VPN endpoint.`ClientVpnEndpointLimitExceeded`You've reached the limit on the number of Client VPN endpoints that you can create.`ClientVpnRouteLimitExceeded`You've reached the limit on the number of routes that can be added to a single Client VPN endpoint.`ClientVpnTerminateConnectionsLimitExceeded`The number of client connections you're attempting to terminate exceeds the limit.`ConcurrentCreateImageNoRebootLimitExceeded`
@@ -122,7 +122,7 @@ limit.`ConcurrentTagAccess`You can't run simultaneous commands to modify a tag f
 resource. Allow sufficient wait time for the previous request to
 complete, then retry your request.`CreditSpecificationUpdateInProgress`The default credit specification for the instance family is currently being updated. It
 takes about five minutes to complete. For more information, see [Set the default credit specification for the account](../../../../services/ec2/latest/userguide/burstable-performance-instances-how-to.md#burstable-performance-instance-set-default-credit-specification-for-account).`CustomerGatewayLimitExceeded`You've reached the limit on the number of customer gateways you can create for the AWS
-Region. For more information, see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html).`CustomerKeyHasBeenRevoked`The KMS key cannot be accessed. For more information, see [Amazon EBS encryption](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html).`DeclarativePoliciesAccessDeniedException`You do not have sufficient access to perform this action, or the specified
+Region. For more information, see [Amazon VPC quotas](../../../../services/vpc/latest/userguide/amazon-vpc-limits.md).`CustomerKeyHasBeenRevoked`The KMS key cannot be accessed. For more information, see [Amazon EBS encryption](../../../../services/ebs/latest/userguide/ebs-encryption.md).`DeclarativePoliciesAccessDeniedException`You do not have sufficient access to perform this action, or the specified
 `TargetId` does not exist, or the specified
 `TargetId` is not in your organization. To generate an
 account status report for declarative policies, the caller must be the
@@ -132,22 +132,22 @@ organization.`DeclarativePoliciesNotEnabledException`Trusted access is not enabl
 the declarative policy will enforce a baseline configuration. The API
 uses the following service principal to identify the EC2 service:
 `ec2.amazonaws.com`. For more information on how to
-enable trusted access with the AWS CLI and AWS SDKs, see [Using Organizations with other AWS services](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).`DeleteConversionTaskError`The conversion task cannot be canceled. `DefaultSubnetAlreadyExistsInAvailabilityZone`A default subnet already exists in the specified Availability Zone.
+enable trusted access with the AWS CLI and AWS SDKs, see [Using Organizations with other AWS services](../../../../services/organizations/latest/userguide/orgs-integrate-services.md).`DeleteConversionTaskError`The conversion task cannot be canceled. `DefaultSubnetAlreadyExistsInAvailabilityZone`A default subnet already exists in the specified Availability Zone.
 You can have only one default subnet per Availability Zone.`DefaultVpcAlreadyExists`A default VPC already exists in the AWS Region. You can only have one default VPC per
 Region.`DefaultVpcDoesNotExist`There is no default VPC in which to carry out the request. If you've
 deleted your default VPC, you can create a new one. For more
-information, see [Create a default VPC](https://docs.aws.amazon.com/vpc/latest/userguide/default-vpc.html#create-default-vpc).`DependencyViolation`The specified object has dependent resources. A number of resources
+information, see [Create a default VPC](../../../../services/vpc/latest/userguide/default-vpc.md#create-default-vpc).`DependencyViolation`The specified object has dependent resources. A number of resources
 in a VPC may have dependent resources, which prevent you from deleting
 or detaching them. Remove the dependencies first, then retry your
 request. For example, this error occurs if you try to delete a security
 group in a VPC that is in use by another security group.`DiskImageSizeTooLarge`The disk image exceeds the allowed limit (for instance or volume
 import).`DuplicateSubnetsInSameZone`For an interface VPC endpoint, you can specify only one subnet per
 Availability Zone.`EncryptedVolumesNotSupported`Encrypted Amazon EBS volumes may only be attached to instances that
-support Amazon EBS encryption. For more information, see [Amazon EBS encryption](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html).`ExistingVpcEndpointConnections`You cannot delete a VPC endpoint service configuration or change the
+support Amazon EBS encryption. For more information, see [Amazon EBS encryption](../../../../services/ebs/latest/userguide/ebs-encryption.md).`ExistingVpcEndpointConnections`You cannot delete a VPC endpoint service configuration or change the
 load balancers for the endpoint service if there are endpoints attached
 to the service.`FleetNotInModifiableState`The Spot Fleet request must be in the `active` state in order to modify it.
-For more information, see [Spot Fleet request types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-fleet-requests.html).`FlowLogAlreadyExists`A flow log with the specified configuration already exists.`FlowLogsLimitExceeded`You've reached the limit on the number of flow logs you can create.
-For more information, see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html).`FilterLimitExceeded`The request uses too many filters or too many filter
+For more information, see [Spot Fleet request types](../../../../services/ec2/latest/userguide/spot-fleet-requests.md).`FlowLogAlreadyExists`A flow log with the specified configuration already exists.`FlowLogsLimitExceeded`You've reached the limit on the number of flow logs you can create.
+For more information, see [Amazon VPC quotas](../../../../services/vpc/latest/userguide/amazon-vpc-limits.md).`FilterLimitExceeded`The request uses too many filters or too many filter
 values.`Gateway.NotAttached`An internet gateway is not attached to a VPC. If you are trying to detach an internet
 gateway, ensure that you specify the correct VPC. If you are trying to
 associate an Elastic IP address with a network interface or an instance,
@@ -191,7 +191,7 @@ yet reached the `completed` status. This error can also
 occur if you start report generation while another report is being
 generated. Only one report per organization can be generated at a
 time. For more information, see [Generating the account status report for declarative\
-policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_declarative_status-report.html).
+policies](../../../../services/organizations/latest/userguide/orgs-manage-policies-declarative-status-report.md).
 
 `IncompatibleHostRequirements`There are no available or compatible Dedicated Hosts available on which to launch or
 start the instance.`InstanceCreditSpecification.NotSupported`The specified instance does not use CPU credits for CPU usage; only T2 instances use
@@ -214,7 +214,7 @@ already associated with a target. An interface can only be associated
 with a session, or with a target, but not both. If the interface is
 associated with a target, it cannot be associated with another
 target.`InternetGatewayLimitExceeded`You've reached the limit on the number of internet gateways that you can create. For
-more information, see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html).`InvalidAddress.Locked`The specified Elastic IP address cannot be released from your account. A reverse DNS
+more information, see [Amazon VPC quotas](../../../../services/vpc/latest/userguide/amazon-vpc-limits.md).`InvalidAddress.Locked`The specified Elastic IP address cannot be released from your account. A reverse DNS
 record may be associated with the Elastic IP address. To unlock the
 address, contact [Support](https://aws.amazon.com/contact-us).`InvalidAddress.Malformed`The specified IP address is not valid. Ensure that you provide the
 address in the form `xx.xx.xx.xx`; for example,
@@ -249,7 +249,7 @@ Region.`InvalidCapacityBlockOfferingIdExpired`The Capacity Block offering ID is 
 AWS Region in which the carrier gateway is located, if it's not in the default
 Region.`InvalidCidr.InUse`The specified inside tunnel CIDR is already in use by another VPN
 tunnel for the virtual private gateway.`InvalidClientToken`The specified client token is not valid. For more information, see
-[Ensuring idempotency](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html).`InvalidClientVpnActiveAssociationNotFound`You cannot perform this action on the Client VPN endpoint while it is in the `pending-association` state.`InvalidClientVpnAssociationIdNotFound`The specified target network association cannot be found.`InvalidClientVpnConnection.IdNotFound`The specified Client VPN endpoint cannot be found.`InvalidClientVpnConnection.UserNotFound`The specified user does not have an active connection to the specified Client VPN endpoint.`InvalidClientVpnDuplicateAssociationException`The specified target network has already been associated with the Client VPN endpoint.`InvalidClientVpnDuplicateAuthorizationRule`The specified authorization has already been added to the Client VPN endpoint.`InvalidClientVpnDuplicateRoute`The specified route has already been added to the Client VPN endpoint.`InvalidClientVpnEndpointAuthorizationRuleNotFound`The specified authorization rule cannot be found.`InvalidClientVpnEndpointId.NotFound`The specified Client VPN Endpoint cannot be found.`InvalidClientVpnRouteNotFound`The specified route cannot be found.`InvalidClientVpnSubnetId.DifferentAccount`The specified subnet belongs to a different account.`InvalidClientVpnSubnetId.DuplicateAz`You have already associated a subnet from this Availability Zone with the Client VPN
+[Ensuring idempotency](../../../../services/ec2/latest/devguide/ec2-api-idempotency.md).`InvalidClientVpnActiveAssociationNotFound`You cannot perform this action on the Client VPN endpoint while it is in the `pending-association` state.`InvalidClientVpnAssociationIdNotFound`The specified target network association cannot be found.`InvalidClientVpnConnection.IdNotFound`The specified Client VPN endpoint cannot be found.`InvalidClientVpnConnection.UserNotFound`The specified user does not have an active connection to the specified Client VPN endpoint.`InvalidClientVpnDuplicateAssociationException`The specified target network has already been associated with the Client VPN endpoint.`InvalidClientVpnDuplicateAuthorizationRule`The specified authorization has already been added to the Client VPN endpoint.`InvalidClientVpnDuplicateRoute`The specified route has already been added to the Client VPN endpoint.`InvalidClientVpnEndpointAuthorizationRuleNotFound`The specified authorization rule cannot be found.`InvalidClientVpnEndpointId.NotFound`The specified Client VPN Endpoint cannot be found.`InvalidClientVpnRouteNotFound`The specified route cannot be found.`InvalidClientVpnSubnetId.DifferentAccount`The specified subnet belongs to a different account.`InvalidClientVpnSubnetId.DuplicateAz`You have already associated a subnet from this Availability Zone with the Client VPN
 endpoint.`InvalidClientVpnSubnetId.NotFound`The specified subnet cannot be found in the VPN with which the Client VPN endpoint is associated.`InvalidClientVpnSubnetId.OverlappingCidr`The specified target network's CIDR range overlaps with the Client VPN endpoint's client CIDR range.`InvalidConversionTaskId`The specified conversion task ID (for instance or volume import) is
 not valid.`InvalidConversionTaskId.Malformed`The specified conversion task ID (for instance or volume import) is
 malformed. Ensure that you've specified the ID in the form
@@ -258,7 +258,7 @@ import-i- _xxxxxxxx_.`InvalidCpuCredits`The specified CpuCredit value is invalid
 `unlimited`.`InvalidCustomerGateway.DuplicateIpAddress`There is a conflict among the specified gateway IP addresses. Each VPN connection in an
 AWS Region must be created with a unique customer gateway IP address
 (across all AWS accounts). For more information, see [Your customer gateway\
-device](https://docs.aws.amazon.com/vpc/latest/adminguide/Introduction.html#Summary) in the _AWS Site-to-Site VPN User Guide_.`InvalidCustomerGatewayId.Malformed`The specified customer gateway ID is malformed, or cannot be found. Specify the ID in
+device](../../../../services/vpc/latest/adminguide/introduction.md#Summary) in the _AWS Site-to-Site VPN User Guide_.`InvalidCustomerGatewayId.Malformed`The specified customer gateway ID is malformed, or cannot be found. Specify the ID in
 the form cgw- _xxxxxxxx_, and ensure that you specify
 the AWS Region in which the customer gateway is located, if it's not in
 the default Region.`InvalidCustomerGatewayID.NotFound`The specified customer gateway ID cannot be found. Ensure that you specify the AWS
@@ -269,7 +269,7 @@ be used.`InvalidParameterValue`The device to which you are trying to attach (for
 `InvalidDeclarativePoliciesReportId.Malformed`The specified account status report ID for declarative policies is
 malformed. Ensure that you specify the ID in the form
 p- _xxxxxxxxxx_. For more information, see [Generating the account status report for declarative\
-policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_declarative_status-report.html).`InvalidDhcpOptionID.NotFound`The specified DHCP options set does not exist. Ensure that you specify the AWS Region
+policies](../../../../services/organizations/latest/userguide/orgs-manage-policies-declarative-status-report.md).`InvalidDhcpOptionID.NotFound`The specified DHCP options set does not exist. Ensure that you specify the AWS Region
 in which the DHCP options set is located, if it's not in the default
 Region.`InvalidDhcpOptionsID.NotFound`The specified DHCP options set does not exist. Ensure that you specify the AWS Region
 in which the DHCP options set is located, if it's not in the default
@@ -294,7 +294,7 @@ The specified security group does not exist.
 
 This error can occur because the ID of a recently created security
 group has not propagated through the system. For more information,
-see [Ensuring idempotency](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html).
+see [Ensuring idempotency](../../../../services/ec2/latest/devguide/ec2-api-idempotency.md).
 
 You can't specify a security group that is in a different AWS Region or VPC than the
 request.
@@ -315,7 +315,7 @@ correctly. Ensure that you provide the full ID in the form
 hro- _xxxxxxxxxxxxxxxxx_.`InvalidHostState`The Dedicated Host must be in the `available` state to
 complete the operation.`InvalidIamInstanceProfileArn.Malformed`The specified IAM instance profile ARN is not valid. For more
 information about valid ARN formats, see [Amazon Resource\
-Names (ARNs)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html).`InvalidID`The specified ID for the resource you are trying to tag is not valid.
+Names (ARNs)](../../../../services/iam/latest/userguide/reference-arns.md).`InvalidID`The specified ID for the resource you are trying to tag is not valid.
 Ensure that you provide the full resource ID; for example,
 ami-2bb65342 for an AMI.
 
@@ -363,7 +363,7 @@ part of the request.
 the request, in the form i- _xxxxxxxx_ or
 i- _xxxxxxxxxxxxxxxxx_.`InvalidInstanceID.NotFound`The specified instance does not exist. This error might occur because the ID of a
 recently created instance has not propagated through the system. For
-more information, see [Ensuring idempotency](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html).`InvalidInstanceID.NotLinkable`The specified instance cannot be linked to the specified VPC. This error may also occur
+more information, see [Ensuring idempotency](../../../../services/ec2/latest/devguide/ec2-api-idempotency.md).`InvalidInstanceID.NotLinkable`The specified instance cannot be linked to the specified VPC. This error may also occur
 if the instance was recently launched, and its ID has not yet propagated
 through the system. Wait a few minutes, or wait until the instance is in
 the `running` state, and then try again.`InvalidInstanceState`The instance is not in an appropriate state to complete the request.
@@ -500,7 +500,7 @@ unsuccessful items. If the request succeeds, the list is empty.`InvalidVpcEndpoi
 ID in the form vpc- _xxxxxxxxxxxxxxxxx_.`InvalidVpcID.NotFound`The specified VPC does not exist. `InvalidVpcPeeringConnectionId.Malformed`The specified VPC peering connection ID is malformed. Ensure that you
 provide the ID in the form pcx- _xxxxxxxxxxxxxxxxx_.`InvalidVpcPeeringConnectionID.NotFound`The specified VPC peering connection ID does not exist.`InvalidVpcPeeringConnectionState.DnsHostnamesDisabled`To enable DNS hostname resolution for the VPC peering connection, DNS hostname support
 must be enabled for the VPCs.`InvalidVpcRange`The specified CIDR block range is not valid. The block range must be
-between a /28 netmask and /16 netmask. For more information, see [VPC CIDR blocks](https://docs.aws.amazon.com/vpc/latest/userguide/configure-your-vpc.html#vpc-cidr-blocks).
+between a /28 netmask and /16 netmask. For more information, see [VPC CIDR blocks](../../../../services/vpc/latest/userguide/configure-your-vpc.md#vpc-cidr-blocks).
 `InvalidVpcState`The specified VPC already has a virtual private gateway attached to
 it.`InvalidVpnConnectionID`The specified VPN connection ID cannot be found.`InvalidVpnConnectionID.NotFound`The specified VPN connection ID does not exist.`InvalidVpnConnection.InvalidState`The VPN connection must be in the `available` state to complete the request.`InvalidVpnConnection.InvalidType`The specified VPN connection does not support static routes.`InvalidVpnGatewayAttachment.NotFound`An attachment between the specified virtual private gateway and
 specified VPC does not exist. This error can also occur if you've
@@ -520,23 +520,23 @@ configurations. You can retry configurations that you used within
 the last 24 hours, or wait for 24 hours before specifying a new
 configuration. For more information, see [Spot placement \
 score](../../../../services/ec2/latest/userguide/spot-placement-score.md).`MaxIOPSLimitExceeded`You've reached the limit on your IOPS usage for the AWS Region.
-For more information, see [Quotas for Amazon EBS](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-resource-quotas.html).`MaxScheduledInstanceCapacityExceeded`You've attempted to launch more instances than you purchased.`MaxSpotFleetRequestCountExceeded`You've reached one or both of these limits: the total number of Spot Fleet requests
+For more information, see [Quotas for Amazon EBS](../../../../services/ebs/latest/userguide/ebs-resource-quotas.md).`MaxScheduledInstanceCapacityExceeded`You've attempted to launch more instances than you purchased.`MaxSpotFleetRequestCountExceeded`You've reached one or both of these limits: the total number of Spot Fleet requests
 that you can make, or the total number of instances in all Spot Fleets
 for the AWS Region (the target capacity). For more information, see
 [Fleet quotas](../../../../services/ec2/latest/userguide/fleet-quotas.md).`MaxSpotInstanceCountExceeded`You've reached the limit on the number of Spot Instances that you can launch. The limit
 depends on the instance type. For more information, see [Spot Instance limits](../../../../services/ec2/latest/userguide/using-spot-limits.md).`MaxTemplateLimitExceeded`You've reached the limit on the number of launch templates you can
 create. For more information, see [Launch template restrictions](../../../../services/ec2/latest/userguide/launch-template-restrictions.md).`MaxTemplateVersionLimitExceeded`You've reached the limit on the number of launch template versions that you can create.
 For more information, see [Launch template restrictions](../../../../services/ec2/latest/userguide/launch-template-restrictions.md).`MissingInput`An input parameter is missing.`NatGatewayLimitExceeded`You've reached the limit on the number of NAT gateways that you can
-create. For more information, see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html).`NatGatewayMalformed`The specified NAT gateway ID is not formed correctly. Ensure that you
+create. For more information, see [Amazon VPC quotas](../../../../services/vpc/latest/userguide/amazon-vpc-limits.md).`NatGatewayMalformed`The specified NAT gateway ID is not formed correctly. Ensure that you
 specify the NAT gateway ID in the form
 nat- _xxxxxxxxxxxxxxxxx_.`NatGatewayNotFound`The specified NAT gateway does not exist.`NetworkAclEntryAlreadyExists`The specified rule number already exists in this network ACL.`NetworkAclEntryLimitExceeded`You've reached the limit on the number of rules that you can add to
-the network ACL. For more information, see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html).`NetworkAclLimitExceeded`You've reached the limit on the number of network ACLs that you can
-create for the specified VPC. For more information, see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html).`NetworkInterfaceLimitExceeded`You've reached the limit on the number of network interfaces that you
-can create. For more information, see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html).`NetworkInterfaceNotSupported`The network interface is not supported for Traffic Mirroring.`NetworkLoadBalancerNotFoundException`The specified Network Load Balancer does not exist.`NlbInUseByTrafficMirrorTargetException`The Network Load Balancer is already configured as a Traffic Mirror target.`NonEBSInstance`The specified instance does not support Amazon EBS. Restart the instance
+the network ACL. For more information, see [Amazon VPC quotas](../../../../services/vpc/latest/userguide/amazon-vpc-limits.md).`NetworkAclLimitExceeded`You've reached the limit on the number of network ACLs that you can
+create for the specified VPC. For more information, see [Amazon VPC quotas](../../../../services/vpc/latest/userguide/amazon-vpc-limits.md).`NetworkInterfaceLimitExceeded`You've reached the limit on the number of network interfaces that you
+can create. For more information, see [Amazon VPC quotas](../../../../services/vpc/latest/userguide/amazon-vpc-limits.md).`NetworkInterfaceNotSupported`The network interface is not supported for Traffic Mirroring.`NetworkLoadBalancerNotFoundException`The specified Network Load Balancer does not exist.`NlbInUseByTrafficMirrorTargetException`The Network Load Balancer is already configured as a Traffic Mirror target.`NonEBSInstance`The specified instance does not support Amazon EBS. Restart the instance
 and try again, to ensure that the code is run on an instance with
 updated code.`NoSuchVersion`The specified API version does not exist.`NotExportable`The specified instance cannot be exported. You can only export certain
 instances. For more
-information, see [Considerations for instance export](https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport.html#vmexport-limits).`OperationNotPermitted`The specified operation is not allowed. This error can occur for a
+information, see [Considerations for instance export](../../../../services/vm-import/latest/userguide/vmexport.md#vmexport-limits).`OperationNotPermitted`The specified operation is not allowed. This error can occur for a
 number of reasons; for example, you might be trying to terminate an
 instance that has termination protection enabled, or trying to detach
 the primary network interface (eth0) from an instance.`OutstandingVpcPeeringConnectionLimitExceeded`You've reached the limit on the number of VPC peering connection
@@ -586,8 +586,8 @@ have too many snapshot copies in progress.`RetryableError`A request submitted by
 table.`RouteLimitExceeded`You've reached the limit on the number of routes that you can add to
 a route table.`RouteTableLimitExceeded `You've reached the limit on the number of route tables that you can
 create for the specified VPC. For more information about route table
-limits, see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html).`RulesPerSecurityGroupLimitExceeded`You've reached the limit on the number of rules that you can add to a
-security group. For more information, see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html).`ScheduledInstanceLimitExceeded`You've reached the limit on the number of Scheduled Instances that
+limits, see [Amazon VPC quotas](../../../../services/vpc/latest/userguide/amazon-vpc-limits.md).`RulesPerSecurityGroupLimitExceeded`You've reached the limit on the number of rules that you can add to a
+security group. For more information, see [Amazon VPC quotas](../../../../services/vpc/latest/userguide/amazon-vpc-limits.md).`ScheduledInstanceLimitExceeded`You've reached the limit on the number of Scheduled Instances that
 you can purchase. `ScheduledInstanceParameterMismatch`The launch specification does not match the details for the Scheduled
 Instance.`ScheduledInstanceSlotNotOpen`You can launch a Scheduled Instance only during its scheduled time
 periods.`ScheduledInstanceSlotUnavailable`The requested Scheduled Instance is no longer available during this
@@ -596,7 +596,7 @@ can create, or that you can assign to an instance.`SecurityGroupsPerInstanceLimi
 can assign to an instance. For more information, see [Amazon EC2 security\
 groups](../../../../services/ec2/latest/userguide/ec2-security-groups.md).`SecurityGroupsPerInterfaceLimitExceeded`You've reached the limit on the number of security groups you can
 associate with the specified network interface. For more information,
-see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html).`SignatureDoesNotMatch`The request signature that Amazon has does not match the signature
+see [Amazon VPC quotas](../../../../services/vpc/latest/userguide/amazon-vpc-limits.md).`SignatureDoesNotMatch`The request signature that Amazon has does not match the signature
 that you provided. Check your AWS credentials and signing method.
 `SnapshotCopyUnsupported.InterRegion`Inter-region snapshot copy is not supported for this AWS Region.`SnapshotCreationPerVolumeRateExceeded`The rate limit for creating concurrent snapshots of an EBS volume has
 been exceeded. Wait at least 15 seconds between concurrent volume
@@ -604,7 +604,7 @@ snapshots.`SnapshotLimitExceeded`You've reached the limit on the number of Amazo
 can create.`SpotMaxPriceTooLow`The request can't be fulfilled yet because your maximum price is
 below the Spot price. In this case, no instance is launched and your
 request remains `open`.`SubnetLimitExceeded`You've reached the limit on the number of subnets that you can create
-for the specified VPC. For more information, see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html).`TagLimitExceeded`You've reached the limit on the number of tags that you can assign to the specified
+for the specified VPC. For more information, see [Amazon VPC quotas](../../../../services/vpc/latest/userguide/amazon-vpc-limits.md).`TagLimitExceeded`You've reached the limit on the number of tags that you can assign to the specified
 resource. For more information, see [Tag\
 restrictions](../../../../services/ec2/latest/userguide/using-tags.md#tag-restrictions).`TargetCapacityLimitExceededException`The value for `targetCapacity` exceeds your limit on the amount of Spot
 placement target capacity you can explore. Reduce the
@@ -645,9 +645,9 @@ On-Demand instance limits and try again. For more information, see
 [EC2 On-Demand instance\
 limits](https://aws.amazon.com/ec2/faqs).`VolumeInUse`The specified Amazon EBS volume is attached to an instance. Ensure that
 the specified volume is in an ‘available’ state.`VolumeIOPSLimit`The maximum IOPS limit for the volume has been reached. For more information, see [Amazon EBS volume types](../../../../services/ebs/latest/userguide/ebs-volume-types.md).`VolumeLimitExceeded`You've reached the limit on your Amazon EBS volume storage. For more
-information, see [Quotas for Amazon EBS](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-resource-quotas.html).`VolumeModificationSizeLimitExceeded
+information, see [Quotas for Amazon EBS](../../../../services/ebs/latest/userguide/ebs-resource-quotas.md).`VolumeModificationSizeLimitExceeded
 							`You've reached the limit on your Amazon EBS volume modification storage in
-this Region. For more information, see [Quotas for Amazon EBS](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-resource-quotas.html).`VolumeTypeNotAvailableInZone`
+this Region. For more information, see [Quotas for Amazon EBS](../../../../services/ebs/latest/userguide/ebs-resource-quotas.md).`VolumeTypeNotAvailableInZone`
 
 The specified Availability Zone does not support Provisioned IOPS SSD
 volumes. Try launching your instance in a different Availability
@@ -658,15 +658,15 @@ request.
 `VPCIdNotSpecified`You have no default VPC in which to carry out the request. Specify a VPC or subnet ID
 or, in the case of security groups, specify the ID and not the security group name.
 If you deleted your default VPC, you can create a new one. For more information, see
-[Create a default VPC](https://docs.aws.amazon.com/vpc/latest/userguide/default-vpc.html#create-default-vpc).`VpcEndpointLimitExceeded`You've reached the limit on the number of VPC endpoints that you can create in the AWS
-Region. For more information, see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html).`VpcLimitExceeded`You've reached the limit on the number of VPCs that you can create in the AWS Region.
-For more information about VPC limits, see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html).`VpcPeeringConnectionAlreadyExists`A VPC peering connection between the VPCs already exists.`VpcPeeringConnectionsPerVpcLimitExceeded`You've reached the limit on the number of VPC peering connections that you can have per
-VPC. For more information, see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html).`VPCResourceNotSpecified`The specified resource can be used only in a VPC; for example, T2 instances. Ensure
+[Create a default VPC](../../../../services/vpc/latest/userguide/default-vpc.md#create-default-vpc).`VpcEndpointLimitExceeded`You've reached the limit on the number of VPC endpoints that you can create in the AWS
+Region. For more information, see [Amazon VPC quotas](../../../../services/vpc/latest/userguide/amazon-vpc-limits.md).`VpcLimitExceeded`You've reached the limit on the number of VPCs that you can create in the AWS Region.
+For more information about VPC limits, see [Amazon VPC quotas](../../../../services/vpc/latest/userguide/amazon-vpc-limits.md).`VpcPeeringConnectionAlreadyExists`A VPC peering connection between the VPCs already exists.`VpcPeeringConnectionsPerVpcLimitExceeded`You've reached the limit on the number of VPC peering connections that you can have per
+VPC. For more information, see [Amazon VPC quotas](../../../../services/vpc/latest/userguide/amazon-vpc-limits.md).`VPCResourceNotSpecified`The specified resource can be used only in a VPC; for example, T2 instances. Ensure
 that you have a VPC in your account, and then specify a subnet ID or
 network interface ID in the request.`VpnConnectionLimitExceeded`You've reached the limit on the number of VPN connections that you
-can create. For more information, see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html).`VpnGatewayAttachmentLimitExceeded`You've reached the limit on the number of VPCs that can be attached
+can create. For more information, see [Amazon VPC quotas](../../../../services/vpc/latest/userguide/amazon-vpc-limits.md).`VpnGatewayAttachmentLimitExceeded`You've reached the limit on the number of VPCs that can be attached
 to the specified virtual private gateway.`VpnGatewayLimitExceeded`You've reached the limit on the number of virtual private gateways that you can
-create. For more information about limits, see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html).`ZonesMismatched`The Availability Zone for the instance does not match that of the
+create. For more information about limits, see [Amazon VPC quotas](../../../../services/vpc/latest/userguide/amazon-vpc-limits.md).`ZonesMismatched`The Availability Zone for the instance does not match that of the
 Dedicated Host.
 
 ### Common causes of client errors
@@ -684,13 +684,13 @@ for example, `Client.InvalidInstanceID.NotFound`.
 
 - **Allow for eventual consistency**: Some errors are
 caused because a previous request has not yet propagated thorough the
-system. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html).
+system. For more information, see [Ensuring idempotency](../../../../services/ec2/latest/devguide/ec2-api-idempotency.md).
 
 - **Use a sleep interval between request rates**: Amazon EC2 API requests are
 throttled to help maintain the performance of the service. If your requests
 have been throttled, you get the following error:
 `Client.RequestLimitExceeded`. For more information, see
-[Ensuring idempotency](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html).
+[Ensuring idempotency](../../../../services/ec2/latest/devguide/ec2-api-idempotency.md).
 
 - **Use the full ID of the resource**: When specifying a
 resource, ensure that you use its full ID, and not its user-supplied name or
@@ -789,8 +789,8 @@ The Amazon EC2 API follows an eventual consistency model, due to the distributed
 the system supporting the API. This means that when you run an API command, the result
 may not be immediately visible to subsequent API commands, which can result in an error.
 
-For more information about eventual consistency and how to manage it, see [Eventual consistency](https://docs.aws.amazon.com/ec2/latest/devguide/eventual-consistency.html).
+For more information about eventual consistency and how to manage it, see [Eventual consistency](../../../../services/ec2/latest/devguide/eventual-consistency.md).
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Permissions

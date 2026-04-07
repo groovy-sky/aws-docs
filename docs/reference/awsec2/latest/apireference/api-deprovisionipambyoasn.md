@@ -1,7 +1,7 @@
 # DeprovisionIpamByoasn
 
-Deprovisions your Autonomous System Number (ASN) from your AWS account. This action can only be called after any BYOIP CIDR associations are removed from your AWS account with [DisassociateIpamByoasn](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateIpamByoasn.html).
-For more information, see [Tutorial: Bring your ASN to IPAM](https://docs.aws.amazon.com/vpc/latest/ipam/tutorials-byoasn.html) in the _Amazon VPC IPAM guide_.
+Deprovisions your Autonomous System Number (ASN) from your AWS account. This action can only be called after any BYOIP CIDR associations are removed from your AWS account with [DisassociateIpamByoasn](api-disassociateipambyoasn.md).
+For more information, see [Tutorial: Bring your ASN to IPAM](../../../../services/vpc/latest/ipam/tutorials-byoasn.md) in the _Amazon VPC IPAM guide_.
 
 ## Request Parameters
 
@@ -41,7 +41,7 @@ The following elements are returned by the service.
 
 An ASN and BYOIP CIDR association.
 
-Type: [Byoasn](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Byoasn.html) object
+Type: [Byoasn](api-byoasn.md) object
 
 **requestId**
 
@@ -61,23 +61,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/DeprovisionIpamByoasn)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DeprovisionIpamByoasn)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/deprovisionipambyoasn.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/DeprovisionIpamByoasn)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/deprovisionipambyoasn.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DeprovisionIpamByoasn)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/deprovisionipambyoasn.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DeprovisionIpamByoasn)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/deprovisionipambyoasn.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DeprovisionIpamByoasn)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/deprovisionipambyoasn.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DeprovisionIpamByoasn)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/deprovisionipambyoasn.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DeprovisionIpamByoasn)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DeprovisionIpamByoasn)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deprovisionipambyoasn.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DeprovisionByoipCidr
 

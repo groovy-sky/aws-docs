@@ -16,15 +16,15 @@ Required: No
 
 Potential intermediate components.
 
-Type: Array of [AlternatePathHint](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AlternatePathHint.html) objects
+Type: Array of [AlternatePathHint](api-alternatepathhint.md) objects
 
 Required: No
 
 **ExplanationSet.N**
 
-The explanations. For more information, see [Reachability Analyzer explanation codes](https://docs.aws.amazon.com/vpc/latest/reachability/explanation-codes.html).
+The explanations. For more information, see [Reachability Analyzer explanation codes](../../../../services/vpc/latest/reachability/explanation-codes.md).
 
-Type: Array of [Explanation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Explanation.html) objects
+Type: Array of [Explanation](api-explanation.md) objects
 
 Required: No
 
@@ -52,7 +52,7 @@ Required: No
 
 The components in the path from source to destination.
 
-Type: Array of [PathComponent](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PathComponent.html) objects
+Type: Array of [PathComponent](api-pathcomponent.md) objects
 
 Required: No
 
@@ -94,7 +94,7 @@ Required: No
 
 The components in the path from destination to source.
 
-Type: Array of [PathComponent](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PathComponent.html) objects
+Type: Array of [PathComponent](api-pathcomponent.md) objects
 
 Required: No
 
@@ -152,13 +152,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/NetworkInsightsAnalysis)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/networkinsightsanalysis.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/NetworkInsightsAnalysis)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/networkinsightsanalysis.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/NetworkInsightsAnalysis)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/networkinsightsanalysis.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 NetworkInsightsAccessScopeContent
 

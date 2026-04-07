@@ -8,9 +8,9 @@ When you specify multiple parameters, you get instance types that satisfy all of
 specified parameters. If you specify multiple values for a parameter, you get instance
 types that satisfy any of the specified values.
 
-For more information, see [Preview instance types with specified attributes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-attribute-based-instance-type-selection.html#ec2fleet-get-instance-types-from-instance-requirements), [Specify attributes for instance type selection for EC2 Fleet or Spot Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-attribute-based-instance-type-selection.html), and [Spot\
+For more information, see [Preview instance types with specified attributes](../../../../services/ec2/latest/userguide/ec2-fleet-attribute-based-instance-type-selection.md#ec2fleet-get-instance-types-from-instance-requirements), [Specify attributes for instance type selection for EC2 Fleet or Spot Fleet](../../../../services/ec2/latest/userguide/ec2-fleet-attribute-based-instance-type-selection.md), and [Spot\
 placement score](../../../../services/ec2/latest/userguide/spot-placement-score.md) in the _Amazon EC2 User Guide_, and [Creating\
-mixed instance groups using attribute-based instance type selection](https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-asg-instance-type-requirements.html) in the
+mixed instance groups using attribute-based instance type selection](../../../../services/autoscaling/ec2/userguide/create-asg-instance-type-requirements.md) in the
 _Amazon EC2 Auto Scaling User Guide_.
 
 ## Request Parameters
@@ -93,7 +93,7 @@ The following elements are returned by the service.
 
 The instance types with the specified instance attributes.
 
-Type: Array of [InstanceTypeInfoFromInstanceRequirements](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceTypeInfoFromInstanceRequirements.html) objects
+Type: Array of [InstanceTypeInfoFromInstanceRequirements](api-instancetypeinfofrominstancerequirements.md) objects
 
 **nextToken**
 
@@ -120,23 +120,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/GetInstanceTypesFromInstanceRequirements)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/GetInstanceTypesFromInstanceRequirements)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/getinstancetypesfrominstancerequirements.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/GetInstanceTypesFromInstanceRequirements)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/getinstancetypesfrominstancerequirements.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/GetInstanceTypesFromInstanceRequirements)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/getinstancetypesfrominstancerequirements.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/GetInstanceTypesFromInstanceRequirements)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/getinstancetypesfrominstancerequirements.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/GetInstanceTypesFromInstanceRequirements)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/getinstancetypesfrominstancerequirements.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/GetInstanceTypesFromInstanceRequirements)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/getinstancetypesfrominstancerequirements.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/GetInstanceTypesFromInstanceRequirements)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/GetInstanceTypesFromInstanceRequirements)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/getinstancetypesfrominstancerequirements.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GetInstanceTpmEkPub
 

@@ -20,7 +20,7 @@ types](../../../../services/ec2/latest/userguide/instance-types.md).
 
 - If you don't specify a security group ID, we use the default security group
 for the VPC. For more information, see [Security\
-groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html).
+groups](../../../../services/ec2/latest/userguide/using-network-security.md).
 
 - If any of the AMIs have a product code attached for which the user has not
 subscribed, the request fails.
@@ -35,7 +35,7 @@ example, create five separate launch requests for 100 instances each instead of 
 launch request for 500 instances.
 
 `RunInstances` is subject to both request rate limiting and resource rate
-limiting. For more information, see [Request throttling](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-throttling.html).
+limiting. For more information, see [Request throttling](../../../../services/ec2/latest/devguide/ec2-api-throttling.md).
 
 An instance is ready for you to use when it's in the `running` state. You
 can check the state of your instance using [DescribeInstances](api-describeinstances.md). You can
@@ -49,7 +49,7 @@ feature to provide secure access without passwords. For more information, see [K
 pairs](../../../../services/ec2/latest/userguide/ec2-key-pairs.md).
 
 For troubleshooting, see [What to do if\
-an instance immediately terminates](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_InstanceStraightToTerminated.html), and [Troubleshooting connecting to your instance](../../../../services/ec2/latest/userguide/troubleshootinginstancesconnecting.md).
+an instance immediately terminates](../../../../services/ec2/latest/userguide/using-instancestraighttoterminated.md), and [Troubleshooting connecting to your instance](../../../../services/ec2/latest/userguide/troubleshootinginstancesconnecting.md).
 
 ## Request Parameters
 
@@ -219,7 +219,7 @@ Required: No
 
 Indicates whether the instance is enabled for AWS Nitro Enclaves. For
 more information, see [AWS Nitro\
-Enclaves User Guide](https://docs.aws.amazon.com/enclaves/latest/user).
+Enclaves User Guide](../../../../services/enclaves/latest/user.md).
 
 You can't enable AWS Nitro Enclaves and hibernation on the same
 instance.
@@ -284,7 +284,7 @@ Required: No
 **InstanceType**
 
 The instance type. For more information, see [Amazon EC2 Instance\
-Types Guide](https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-types.html).
+Types Guide](../../../../services/ec2/latest/instancetypes/instance-types.md).
 
 Type: String
 
@@ -328,7 +328,7 @@ The ID of the kernel.
 ###### Important
 
 We recommend that you use PV-GRUB instead of kernels and RAM disks. For more
-information, see [PV-GRUB](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/UserProvidedkernels.html) in the
+information, see [PV-GRUB](../../../../services/ec2/latest/userguide/userprovidedkernels.md) in the
 _Amazon EC2 User Guide_.
 
 Type: String
@@ -381,7 +381,7 @@ launches the largest possible number of instances above the specified minimum
 count.
 
 Constraints: Between 1 and the quota for the specified instance type for your account for this Region.
-For more information, see [Amazon EC2 instance type quotas](https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-instance-quotas.html).
+For more information, see [Amazon EC2 instance type quotas](../../../../services/ec2/latest/instancetypes/ec2-instance-quotas.md).
 
 Type: Integer
 
@@ -402,7 +402,7 @@ capacity than Amazon EC2 can provide in the target Availability Zone, Amazon EC2
 not launch any instances.
 
 Constraints: Between 1 and the quota for the specified instance type for your account for this Region.
-For more information, see [Amazon EC2 instance type quotas](https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-instance-quotas.html).
+For more information, see [Amazon EC2 instance type quotas](../../../../services/ec2/latest/instancetypes/ec2-instance-quotas.md).
 
 Type: Integer
 
@@ -485,7 +485,7 @@ search for the kernel ID.
 ###### Important
 
 We recommend that you use PV-GRUB instead of kernels and RAM disks. For more
-information, see [PV-GRUB](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/UserProvidedkernels.html) in the
+information, see [PV-GRUB](../../../../services/ec2/latest/userguide/userprovidedkernels.md) in the
 _Amazon EC2 User Guide_.
 
 Type: String
@@ -727,7 +727,7 @@ instance store volumes mapped to `/dev/sdc` and
 The EBS volume attached to the instance is encrypted using a customer managed
 KMS key.
 
-For more information about block device mappings, see [EbsBlockDevice](api-ebsblockdevice.md) and [Modifying block device mappings during launch](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-ec2-instances.html#modify-block-device).
+For more information about block device mappings, see [EbsBlockDevice](api-ebsblockdevice.md) and [Modifying block device mappings during launch](../../../../services/cli/latest/userguide/cli-services-ec2-instances.md#modify-block-device).
 
 For more information, see [Amazon EBS encryption](../../../../services/ebs/latest/userguide/ebs-encryption.md).
 
@@ -1300,23 +1300,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/RunInstances)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/RunInstances)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/runinstances.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/RunInstances)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/runinstances.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/RunInstances)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/runinstances.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/RunInstances)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/runinstances.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/RunInstances)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/runinstances.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/RunInstances)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/runinstances.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/RunInstances)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/RunInstances)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/runinstances.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 RevokeSecurityGroupIngress
 

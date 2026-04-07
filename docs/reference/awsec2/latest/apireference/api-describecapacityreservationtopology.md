@@ -8,7 +8,7 @@ together to support your tightly coupled workloads.
 
 Capacity Reservation topology is supported for specific instance types only. For more
 information, see [Prerequisites\
-for Amazon EC2 instance topology](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-topology-prerequisites.html) in the
+for Amazon EC2 instance topology](../../../../services/ec2/latest/userguide/ec2-instance-topology-prerequisites.md) in the
 _Amazon EC2 User Guide_.
 
 ###### Note
@@ -19,10 +19,10 @@ DescribeCapacityReservationTopology API command immediately after launching
 instances, the response might return a `null` value for
 `capacityBlockId` because the data might not have fully propagated
 across all subsystems. For more information, see [Eventual consistency in the\
-Amazon EC2 API](https://docs.aws.amazon.com/ec2/latest/devguide/eventual-consistency.html) in the _Amazon EC2 Developer_
+Amazon EC2 API](../../../../services/ec2/latest/devguide/eventual-consistency.md) in the _Amazon EC2 Developer_
 _Guide_.
 
-For more information, see [Amazon EC2 topology](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-topology.html) in
+For more information, see [Amazon EC2 topology](../../../../services/ec2/latest/userguide/ec2-instance-topology.md) in
 the _Amazon EC2 User Guide_.
 
 ## Request Parameters
@@ -102,7 +102,7 @@ The following elements are returned by the service.
 
 Information about the topology of each Capacity Reservation.
 
-Type: Array of [CapacityReservationTopology](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityReservationTopology.html) objects
+Type: Array of [CapacityReservationTopology](api-capacityreservationtopology.md) objects
 
 **nextToken**
 
@@ -129,23 +129,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/DescribeCapacityReservationTopology)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DescribeCapacityReservationTopology)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/describecapacityreservationtopology.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/DescribeCapacityReservationTopology)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/describecapacityreservationtopology.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DescribeCapacityReservationTopology)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/describecapacityreservationtopology.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DescribeCapacityReservationTopology)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/describecapacityreservationtopology.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DescribeCapacityReservationTopology)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/describecapacityreservationtopology.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DescribeCapacityReservationTopology)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/describecapacityreservationtopology.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DescribeCapacityReservationTopology)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DescribeCapacityReservationTopology)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describecapacityreservationtopology.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DescribeCapacityReservations
 

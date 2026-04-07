@@ -46,38 +46,38 @@ The following elements are returned by the service.
 
 The block device mapping of the instance.
 
-Type: Array of [InstanceBlockDeviceMapping](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceBlockDeviceMapping.html) objects
+Type: Array of [InstanceBlockDeviceMapping](api-instanceblockdevicemapping.md) objects
 
 **disableApiStop**
 
 Indicates whether stop protection is enabled for the instance.
 
-Type: [AttributeBooleanValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeBooleanValue.html) object
+Type: [AttributeBooleanValue](api-attributebooleanvalue.md) object
 
 **disableApiTermination**
 
 Indicates whether termination protection is enabled. If the value is `true`,
 you can't terminate the instance using the Amazon EC2 console, command line tools, or API.
 
-Type: [AttributeBooleanValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeBooleanValue.html) object
+Type: [AttributeBooleanValue](api-attributebooleanvalue.md) object
 
 **ebsOptimized**
 
 Indicates whether the instance is optimized for Amazon EBS I/O.
 
-Type: [AttributeBooleanValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeBooleanValue.html) object
+Type: [AttributeBooleanValue](api-attributebooleanvalue.md) object
 
 **enaSupport**
 
 Indicates whether enhanced networking with ENA is enabled.
 
-Type: [AttributeBooleanValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeBooleanValue.html) object
+Type: [AttributeBooleanValue](api-attributebooleanvalue.md) object
 
 **enclaveOptions**
 
 Indicates whether the instance is enabled for AWS Nitro Enclaves.
 
-Type: [EnclaveOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnclaveOptions.html) object
+Type: [EnclaveOptions](api-enclaveoptions.md) object
 
 **groupSet**
 
@@ -96,31 +96,31 @@ Type: String
 Indicates whether an instance stops or terminates when you initiate shutdown from the
 instance (using the operating system command for system shutdown).
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 **instanceType**
 
 The instance type.
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 **kernel**
 
 The kernel ID.
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 **productCodes**
 
 The product codes.
 
-Type: Array of [ProductCode](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ProductCode.html) objects
+Type: Array of [ProductCode](api-productcode.md) objects
 
 **ramdisk**
 
 The RAM disk ID.
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 **requestId**
 
@@ -133,26 +133,26 @@ Type: String
 The device name of the root device volume (for example,
 `/dev/sda1`).
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 **sourceDestCheck**
 
 Indicates whether source/destination checks are enabled.
 
-Type: [AttributeBooleanValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeBooleanValue.html) object
+Type: [AttributeBooleanValue](api-attributebooleanvalue.md) object
 
 **sriovNetSupport**
 
 Indicates whether enhanced networking with the Intel 82599 Virtual Function interface
 is enabled.
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 **userData**
 
 The user data.
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 ## Errors
 
@@ -252,23 +252,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/DescribeInstanceAttribute)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DescribeInstanceAttribute)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/describeinstanceattribute.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/DescribeInstanceAttribute)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/describeinstanceattribute.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DescribeInstanceAttribute)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/describeinstanceattribute.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DescribeInstanceAttribute)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/describeinstanceattribute.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DescribeInstanceAttribute)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/describeinstanceattribute.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DescribeInstanceAttribute)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/describeinstanceattribute.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DescribeInstanceAttribute)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DescribeInstanceAttribute)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describeinstanceattribute.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DescribeImportSnapshotTasks
 

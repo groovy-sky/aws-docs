@@ -6,8 +6,11 @@ This file is auto-generated after crawl runs and lists currently parsed services
 
 - Mode: `incremental`
 - Status: `success`
-- Updated at (UTC): `2026-04-07T14:00:54Z`
+- Updated at (UTC): `2026-04-07T16:44:39Z`
 
-Total services: 1
+Total services: 4
 
+- [Ebs](docs/services/ebs/latest/userguide/ebs-encryption.md)
+- [Ec2](docs/services/ec2/latest/devguide/ec2-api-idempotency.md)
+- [Linux](docs/services/linux/al2/ug/userprovidedkernels.md)
 - [Vpc](docs/services/vpc/index.md)

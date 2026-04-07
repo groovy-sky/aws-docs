@@ -40,7 +40,7 @@ The launch template to use when launching Windows instances from pre-provisioned
 snapshots. Launch template parameters can include either the name or ID of the launch
 template, but not both.
 
-Type: [FastLaunchLaunchTemplateSpecificationRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FastLaunchLaunchTemplateSpecificationRequest.html) object
+Type: [FastLaunchLaunchTemplateSpecificationRequest](api-fastlaunchlaunchtemplatespecificationrequest.md) object
 
 Required: No
 
@@ -69,7 +69,7 @@ Configuration settings for creating and managing the snapshots that are used for
 pre-provisioning the AMI for Windows fast launch. The associated `ResourceType`
 must be `snapshot`.
 
-Type: [FastLaunchSnapshotConfigurationRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FastLaunchSnapshotConfigurationRequest.html) object
+Type: [FastLaunchSnapshotConfigurationRequest](api-fastlaunchsnapshotconfigurationrequest.md) object
 
 Required: No
 
@@ -88,7 +88,7 @@ Type: String
 The launch template that is used when launching Windows instances from pre-provisioned
 snapshots.
 
-Type: [FastLaunchLaunchTemplateSpecificationResponse](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FastLaunchLaunchTemplateSpecificationResponse.html) object
+Type: [FastLaunchLaunchTemplateSpecificationResponse](api-fastlaunchlaunchtemplatespecificationresponse.md) object
 
 **maxParallelLaunches**
 
@@ -124,7 +124,7 @@ Settings to create and manage the pre-provisioned snapshots that Amazon EC2 uses
 launches from the Windows AMI. This property is returned when the associated
 `resourceType` is `snapshot`.
 
-Type: [FastLaunchSnapshotConfigurationResponse](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FastLaunchSnapshotConfigurationResponse.html) object
+Type: [FastLaunchSnapshotConfigurationResponse](api-fastlaunchsnapshotconfigurationresponse.md) object
 
 **state**
 
@@ -158,23 +158,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/EnableFastLaunch)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/EnableFastLaunch)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/enablefastlaunch.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/EnableFastLaunch)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/enablefastlaunch.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/EnableFastLaunch)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/enablefastlaunch.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/EnableFastLaunch)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/enablefastlaunch.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/EnableFastLaunch)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/enablefastlaunch.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/EnableFastLaunch)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/enablefastlaunch.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/EnableFastLaunch)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/EnableFastLaunch)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/enablefastlaunch.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 EnableEbsEncryptionByDefault
 

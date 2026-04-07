@@ -2,7 +2,7 @@
 
 The following API actions are available for Amazon VPC IP Address Manager (IPAM). For more
 information, see the [IPAM User\
-Guide](https://docs.aws.amazon.com/vpc/latest/ipam).
+Guide](../../../../services/vpc/latest/ipam.md).
 
 ###### BYOASN
 
@@ -108,7 +108,7 @@ Guide](https://docs.aws.amazon.com/vpc/latest/ipam).
 
 - [ModifyIpamScope](api-modifyipamscope.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Secondary Networks actions
 

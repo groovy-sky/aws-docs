@@ -4,18 +4,18 @@ Enables EBS encryption by default for your account in the current Region.
 
 After you enable encryption by default, the EBS volumes that you create are
 always encrypted, either using the default KMS key or the KMS key that you specified
-when you created each volume. For more information, see [Amazon EBS encryption](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html) in the
+when you created each volume. For more information, see [Amazon EBS encryption](../../../../services/ebs/latest/userguide/ebs-encryption.md) in the
 _Amazon EBS User Guide_.
 
 You can specify the default KMS key for encryption by default using
-[ModifyEbsDefaultKmsKeyId](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyEbsDefaultKmsKeyId.html) or [ResetEbsDefaultKmsKeyId](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ResetEbsDefaultKmsKeyId.html).
+[ModifyEbsDefaultKmsKeyId](api-modifyebsdefaultkmskeyid.md) or [ResetEbsDefaultKmsKeyId](api-resetebsdefaultkmskeyid.md).
 
 Enabling encryption by default has no effect on the encryption status of your
 existing volumes.
 
 After you enable encryption by default, you can no longer launch instances
 using instance types that do not support encryption. For more information, see [Supported\
-instance types](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption-requirements.html#ebs-encryption_supported_instances).
+instance types](../../../../services/ebs/latest/userguide/ebs-encryption-requirements.md#ebs-encryption_supported_instances).
 
 ## Request Parameters
 
@@ -59,23 +59,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/EnableEbsEncryptionByDefault)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/EnableEbsEncryptionByDefault)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/enableebsencryptionbydefault.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/EnableEbsEncryptionByDefault)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/enableebsencryptionbydefault.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/EnableEbsEncryptionByDefault)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/enableebsencryptionbydefault.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/EnableEbsEncryptionByDefault)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/enableebsencryptionbydefault.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/EnableEbsEncryptionByDefault)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/enableebsencryptionbydefault.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/EnableEbsEncryptionByDefault)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/enableebsencryptionbydefault.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/EnableEbsEncryptionByDefault)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/EnableEbsEncryptionByDefault)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/enableebsencryptionbydefault.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 EnableCapacityManager
 

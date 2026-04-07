@@ -14,11 +14,11 @@ but not both. If neither is specified, Amazon EC2 automatically selects an Avail
 the Region.
 
 This parameter is not supported when using
-[CreateFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFleet.html),
-[CreateImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateImage.html),
+[CreateFleet](api-createfleet.md),
+[CreateImage](api-createimage.md),
 [DescribeImages](api-describeimages.md),
-[RequestSpotFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RequestSpotFleet.html),
-[RequestSpotInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RequestSpotInstances.html), and
+[RequestSpotFleet](api-requestspotfleet.md),
+[RequestSpotInstances](api-requestspotinstances.md), and
 [RunInstances](api-runinstances.md).
 
 Type: String
@@ -35,11 +35,11 @@ but not both. If neither is specified, Amazon EC2 automatically selects an Avail
 the Region.
 
 This parameter is not supported when using
-[CreateFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFleet.html),
-[CreateImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateImage.html),
+[CreateFleet](api-createfleet.md),
+[CreateImage](api-createimage.md),
 [DescribeImages](api-describeimages.md),
-[RequestSpotFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RequestSpotFleet.html),
-[RequestSpotInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RequestSpotInstances.html), and
+[RequestSpotFleet](api-requestspotfleet.md),
+[RequestSpotInstances](api-requestspotinstances.md), and
 [RunInstances](api-runinstances.md).
 
 Type: String
@@ -49,7 +49,7 @@ Required: No
 **DeleteOnTermination** (request), **deleteOnTermination** (response)
 
 Indicates whether the EBS volume is deleted on instance termination. For more
-information, see [Preserving Amazon EBS volumes on instance termination](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#preserving-volumes-on-termination) in the
+information, see [Preserving Amazon EBS volumes on instance termination](../../../../services/ec2/latest/userguide/terminating-instances.md#preserving-volumes-on-termination) in the
 _Amazon EC2 User Guide_.
 
 Type: Boolean
@@ -68,16 +68,16 @@ Required: No
 
 Indicates whether the encryption state of an EBS volume is changed while being
 restored from a backing snapshot. The effect of setting the encryption state to `true` depends on
-the volume origin (new or from a snapshot), starting encryption state, ownership, and whether encryption by default is enabled. For more information, see [Amazon EBS encryption](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html#encryption-parameters) in the _Amazon EBS User Guide_.
+the volume origin (new or from a snapshot), starting encryption state, ownership, and whether encryption by default is enabled. For more information, see [Amazon EBS encryption](../../../../services/ebs/latest/userguide/ebs-encryption.md#encryption-parameters) in the _Amazon EBS User Guide_.
 
 In no case can you remove encryption from an encrypted volume.
 
 Encrypted volumes can only be attached to instances that support Amazon EBS encryption. For
-more information, see [Supported instance types](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption-requirements.html#ebs-encryption_supported_instances).
+more information, see [Supported instance types](../../../../services/ebs/latest/userguide/ebs-encryption-requirements.md#ebs-encryption_supported_instances).
 
-This parameter is not returned by [DescribeImageAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeImageAttribute.html).
+This parameter is not returned by [DescribeImageAttribute](api-describeimageattribute.md).
 
-For [CreateImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateImage.html) and [RegisterImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RegisterImage.html), whether you can
+For [CreateImage](api-createimage.md) and [RegisterImage](api-registerimage.md), whether you can
 include this parameter, and the allowed values differ depending on the type of block
 device mapping you are creating.
 
@@ -138,8 +138,8 @@ Identifier (key ID, key alias, key ARN, or alias ARN) of the customer managed KM
 to use for EBS encryption.
 
 This parameter is only supported on `BlockDeviceMapping` objects called by
-[RunInstances](api-runinstances.md), [RequestSpotFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RequestSpotFleet.html),
-and [RequestSpotInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RequestSpotInstances.html).
+[RunInstances](api-runinstances.md), [RequestSpotFleet](api-requestspotfleet.md),
+and [RequestSpotInstances](api-requestspotinstances.md).
 
 Type: String
 
@@ -149,7 +149,7 @@ Required: No
 
 The ARN of the Outpost on which the snapshot is stored.
 
-This parameter is not supported when using [CreateImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateImage.html).
+This parameter is not supported when using [CreateImage](api-createimage.md).
 
 Type: String
 
@@ -182,7 +182,7 @@ blocks from Amazon S3 to the volume. This is also known as _volume_
 _initialization_. Specifying a volume initialization rate ensures that the volume is initialized
 at a predictable and consistent rate after creation. For more information, see
 [Initialize \
-Amazon EBS volumes](https://docs.aws.amazon.com/ebs/latest/userguide/initalize-volume.html) in the _Amazon EC2 User Guide_.
+Amazon EBS volumes](../../../../services/ebs/latest/userguide/initalize-volume.md) in the _Amazon EC2 User Guide_.
 
 This parameter is supported only for volumes created from snapshots. Omit this parameter
 if:
@@ -198,7 +198,7 @@ the volume will be initialized at the specified rate instead of fast snapshot re
 
 - You want to create a volume that is initialized at the default rate.
 
-This parameter is not supported when using [CreateImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateImage.html)
+This parameter is not supported when using [CreateImage](api-createimage.md)
 and [DescribeImages](api-describeimages.md).
 
 Valid range: 100 - 300 MiB/s
@@ -246,13 +246,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/EbsBlockDevice)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/ebsblockdevice.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/EbsBlockDevice)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/ebsblockdevice.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/EbsBlockDevice)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ebsblockdevice.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DnsServersOptionsModifyStructure
 

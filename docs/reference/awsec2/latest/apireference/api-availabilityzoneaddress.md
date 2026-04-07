@@ -4,7 +4,7 @@ For regional NAT gateways only: The configuration specifying which Elastic IP ad
 
 A regional NAT gateway is a single NAT Gateway that works across multiple availability zones (AZs) in your VPC, providing redundancy, scalability and availability across all the AZs in a Region.
 
-For more information, see [Regional NAT gateways for automatic multi-AZ expansion](https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html) in the _Amazon VPC User Guide_.
+For more information, see [Regional NAT gateways for automatic multi-AZ expansion](../../../../services/vpc/latest/userguide/nat-gateways-regional.md) in the _Amazon VPC User Guide_.
 
 ## Contents
 
@@ -40,13 +40,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/AvailabilityZoneAddress)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/availabilityzoneaddress.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/AvailabilityZoneAddress)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/availabilityzoneaddress.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/AvailabilityZoneAddress)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/availabilityzoneaddress.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AvailabilityZone
 

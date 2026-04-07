@@ -1,0 +1,35 @@
+# LaunchTemplateNetworkPerformanceOptions
+
+With network performance options, you can adjust your bandwidth preferences to meet
+the needs of the workload that runs on your instance at launch.
+
+## Contents
+
+**bandwidthWeighting**
+
+When you configure network bandwidth weighting, you can boost baseline bandwidth for
+either networking or EBS by up to 25%. The total available baseline bandwidth for your
+instance remains the same. The default option uses the standard bandwidth configuration
+for your instance type.
+
+Type: String
+
+Valid Values: `default | vpc-1 | ebs-1`
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/launchtemplatenetworkperformanceoptions.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/launchtemplatenetworkperformanceoptions.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/launchtemplatenetworkperformanceoptions.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+LaunchTemplateLicenseConfigurationRequest
+
+LaunchTemplateNetworkPerformanceOptionsRequest

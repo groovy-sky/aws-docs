@@ -9,7 +9,7 @@ Describes the configuration of a Spot Fleet request.
 The Amazon Resource Name (ARN) of an AWS Identity and Access Management (IAM) role
 that grants the Spot Fleet the permission to request, launch, terminate, and tag instances
 on your behalf. For more information, see [Spot\
-Fleet prerequisites](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-fleet-requests.html#spot-fleet-prerequisites) in the _Amazon EC2 User Guide_. Spot Fleet can
+Fleet prerequisites](../../../../services/ec2/latest/userguide/spot-fleet-requests.md#spot-fleet-prerequisites) in the _Amazon EC2 User Guide_. Spot Fleet can
 terminate Spot Instances on your behalf when you cancel its Spot Fleet request using [CancelSpotFleetRequests](api-cancelspotfleetrequests.md) or when the Spot Fleet request expires, if you set
 `TerminateInstancesWithExpiration`.
 
@@ -33,7 +33,7 @@ Required: Yes
 
 The strategy that determines how to allocate the target Spot Instance capacity across the Spot Instance
 pools specified by the Spot Fleet launch configuration. For more information, see [Allocation\
-strategies for Spot Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-fleet-allocation-strategy.html) in the _Amazon EC2 User Guide_.
+strategies for Spot Instances](../../../../services/ec2/latest/userguide/spot-fleet-allocation-strategy.md) in the _Amazon EC2 User Guide_.
 
 priceCapacityOptimized (recommended)
 
@@ -90,7 +90,7 @@ Required: No
 **ClientToken** (request), **clientToken** (response)
 
 A unique, case-sensitive identifier that you provide to ensure the idempotency of your
-listings. This helps to avoid duplicate listings. For more information, see [Ensuring Idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html).
+listings. This helps to avoid duplicate listings. For more information, see [Ensuring Idempotency](run-instance-idempotency.md).
 
 Type: String
 
@@ -170,7 +170,7 @@ If an AMI specified in a launch specification is deregistered or disabled, no ne
 instances can be launched from the AMI. For fleets of type `maintain`, the
 target capacity will not be maintained.
 
-Type: Array of [SpotFleetLaunchSpecification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SpotFleetLaunchSpecification.html) objects
+Type: Array of [SpotFleetLaunchSpecification](api-spotfleetlaunchspecification.md) objects
 
 Required: No
 
@@ -194,7 +194,7 @@ With Network Load Balancers, Spot Fleet cannot register instances that have the
 following instance types: C1, CC1, CC2, CG1, CG2, CR1, CS1, G1, G2, HI1, HS1, M1, M2,
 M3, and T1.
 
-Type: [LoadBalancersConfig](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LoadBalancersConfig.html) object
+Type: [LoadBalancersConfig](api-loadbalancersconfig.md) object
 
 Required: No
 
@@ -269,7 +269,7 @@ Required: No
 The strategies for managing your Spot Instances that are at an elevated risk of being
 interrupted.
 
-Type: [SpotMaintenanceStrategies](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SpotMaintenanceStrategies.html) object
+Type: [SpotMaintenanceStrategies](api-spotmaintenancestrategies.md) object
 
 Required: No
 
@@ -391,13 +391,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/SpotFleetRequestConfigData)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/spotfleetrequestconfigdata.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/SpotFleetRequestConfigData)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/spotfleetrequestconfigdata.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/SpotFleetRequestConfigData)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/spotfleetrequestconfigdata.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 SpotFleetRequestConfig
 

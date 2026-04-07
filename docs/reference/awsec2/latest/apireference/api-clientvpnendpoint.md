@@ -10,7 +10,7 @@ _This member has been deprecated._
 
 Information about the associated target networks. A target network is a subnet in a VPC.
 
-Type: Array of [AssociatedTargetNetwork](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociatedTargetNetwork.html) objects
+Type: Array of [AssociatedTargetNetwork](api-associatedtargetnetwork.md) objects
 
 Required: No
 
@@ -18,7 +18,7 @@ Required: No
 
 Information about the authentication method used by the Client VPN endpoint.
 
-Type: Array of [ClientVpnAuthentication](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientVpnAuthentication.html) objects
+Type: Array of [ClientVpnAuthentication](api-clientvpnauthentication.md) objects
 
 Required: No
 
@@ -34,7 +34,7 @@ Required: No
 
 The options for managing connection authorization for new client connections.
 
-Type: [ClientConnectResponseOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientConnectResponseOptions.html) object
+Type: [ClientConnectResponseOptions](api-clientconnectresponseoptions.md) object
 
 Required: No
 
@@ -43,7 +43,7 @@ Required: No
 Options for enabling a customizable text banner that will be displayed on AWS provided clients when a VPN session is
 established.
 
-Type: [ClientLoginBannerResponseOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientLoginBannerResponseOptions.html) object
+Type: [ClientLoginBannerResponseOptions](api-clientloginbannerresponseoptions.md) object
 
 Required: No
 
@@ -55,7 +55,7 @@ his feature helps improve your security posture by ensuring that network traffic
 Client route enforcement works by monitoring the route table of a connected device for routing policy changes to the VPN connection. If the feature detects any VPN routing policy modifications, it will automatically force an update to the route table,
 reverting it back to the expected route configurations.
 
-Type: [ClientRouteEnforcementResponseOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientRouteEnforcementResponseOptions.html) object
+Type: [ClientRouteEnforcementResponseOptions](api-clientrouteenforcementresponseoptions.md) object
 
 Required: No
 
@@ -71,7 +71,7 @@ Required: No
 
 Information about the client connection logging options for the Client VPN endpoint.
 
-Type: [ConnectionLogResponseOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ConnectionLogResponseOptions.html) object
+Type: [ConnectionLogResponseOptions](api-connectionlogresponseoptions.md) object
 
 Required: No
 
@@ -173,7 +173,7 @@ Required: No
 
 Indicates whether split-tunnel is enabled in the AWS Client VPN endpoint.
 
-For information about split-tunnel VPN endpoints, see [Split-Tunnel AWS Client VPN endpoint](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/split-tunnel-vpn.html)
+For information about split-tunnel VPN endpoints, see [Split-Tunnel AWS Client VPN endpoint](../../../../services/vpn/latest/clientvpn-admin/split-tunnel-vpn.md)
 in the _AWS Client VPN Administrator Guide_.
 
 Type: Boolean
@@ -246,13 +246,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ClientVpnEndpoint)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/clientvpnendpoint.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ClientVpnEndpoint)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/clientvpnendpoint.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ClientVpnEndpoint)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/clientvpnendpoint.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ClientVpnConnectionStatus
 

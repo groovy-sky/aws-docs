@@ -48,7 +48,7 @@ Required: No
 
 The operating Regions for the resource discovery. Operating Regions are AWS Regions where the IPAM is allowed to manage IP address CIDRs. IPAM only discovers and monitors resources in the AWS Regions you select as operating Regions.
 
-Type: Array of [IpamOperatingRegion](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamOperatingRegion.html) objects
+Type: Array of [IpamOperatingRegion](api-ipamoperatingregion.md) objects
 
 Required: No
 
@@ -56,7 +56,7 @@ Required: No
 
 If your IPAM is integrated with AWS Organizations and you add an organizational unit (OU) exclusion, IPAM will not manage the IP addresses in accounts in that OU exclusion.
 
-Type: Array of [IpamOrganizationalUnitExclusion](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamOrganizationalUnitExclusion.html) objects
+Type: Array of [IpamOrganizationalUnitExclusion](api-ipamorganizationalunitexclusion.md) objects
 
 Required: No
 
@@ -114,13 +114,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/IpamResourceDiscovery)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/ipamresourcediscovery.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/IpamResourceDiscovery)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/ipamresourcediscovery.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/IpamResourceDiscovery)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ipamresourcediscovery.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 IpamResourceCidr
 

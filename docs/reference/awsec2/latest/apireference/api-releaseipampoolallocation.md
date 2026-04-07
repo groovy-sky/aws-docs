@@ -1,10 +1,10 @@
 # ReleaseIpamPoolAllocation
 
-Release an allocation within an IPAM pool. The Region you use should be the IPAM pool locale. The locale is the AWS Region where this IPAM pool is available for allocations. You can only use this action to release manual allocations. To remove an allocation for a resource without deleting the resource, set its monitored state to false using [ModifyIpamResourceCidr](api-modifyipamresourcecidr.md). For more information, see [Release an allocation](https://docs.aws.amazon.com/vpc/latest/ipam/release-alloc-ipam.html) in the _Amazon VPC IPAM User Guide_.
+Release an allocation within an IPAM pool. The Region you use should be the IPAM pool locale. The locale is the AWS Region where this IPAM pool is available for allocations. You can only use this action to release manual allocations. To remove an allocation for a resource without deleting the resource, set its monitored state to false using [ModifyIpamResourceCidr](api-modifyipamresourcecidr.md). For more information, see [Release an allocation](../../../../services/vpc/latest/ipam/release-alloc-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 ###### Note
 
-All EC2 API actions follow an [eventual consistency](https://docs.aws.amazon.com/ec2/latest/devguide/eventual-consistency.html) model.
+All EC2 API actions follow an [eventual consistency](../../../../services/ec2/latest/devguide/eventual-consistency.md) model.
 
 ## Request Parameters
 
@@ -72,23 +72,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ReleaseIpamPoolAllocation)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ReleaseIpamPoolAllocation)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/releaseipampoolallocation.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ReleaseIpamPoolAllocation)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/releaseipampoolallocation.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ReleaseIpamPoolAllocation)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/releaseipampoolallocation.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ReleaseIpamPoolAllocation)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/releaseipampoolallocation.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ReleaseIpamPoolAllocation)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/releaseipampoolallocation.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ReleaseIpamPoolAllocation)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/releaseipampoolallocation.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ReleaseIpamPoolAllocation)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ReleaseIpamPoolAllocation)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/releaseipampoolallocation.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ReleaseHosts
 

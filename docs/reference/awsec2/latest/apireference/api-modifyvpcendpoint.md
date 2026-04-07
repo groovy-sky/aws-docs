@@ -3,7 +3,7 @@
 Modifies attributes of a specified VPC endpoint. The attributes that you can modify
 depend on the type of VPC endpoint (interface, gateway, or Gateway Load Balancer). For more information,
 see the [AWS PrivateLink \
-Guide](https://docs.aws.amazon.com/vpc/latest/privatelink).
+Guide](../../../../services/vpc/latest/privatelink.md).
 
 ## Request Parameters
 
@@ -38,7 +38,7 @@ Required: No
 
 The DNS options for the endpoint.
 
-Type: [DnsOptionsSpecification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DnsOptionsSpecification.html) object
+Type: [DnsOptionsSpecification](api-dnsoptionsspecification.md) object
 
 Required: No
 
@@ -116,7 +116,7 @@ Required: No
 
 The subnet configurations for the endpoint.
 
-Type: Array of [SubnetConfiguration](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SubnetConfiguration.html) objects
+Type: Array of [SubnetConfiguration](api-subnetconfiguration.md) objects
 
 Required: No
 
@@ -199,23 +199,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ModifyVpcEndpoint)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ModifyVpcEndpoint)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/modifyvpcendpoint.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ModifyVpcEndpoint)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/modifyvpcendpoint.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ModifyVpcEndpoint)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/modifyvpcendpoint.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ModifyVpcEndpoint)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/modifyvpcendpoint.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ModifyVpcEndpoint)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/modifyvpcendpoint.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ModifyVpcEndpoint)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/modifyvpcendpoint.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ModifyVpcEndpoint)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ModifyVpcEndpoint)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifyvpcendpoint.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ModifyVpcEncryptionControl
 

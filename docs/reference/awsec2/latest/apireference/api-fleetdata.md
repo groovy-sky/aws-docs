@@ -28,7 +28,7 @@ Required: No
 
 Unique, case-sensitive identifier that you provide to ensure the idempotency of the
 request. For more information, see [Ensuring\
-idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html).
+idempotency](run-instance-idempotency.md).
 
 Constraints: Maximum 64 ASCII characters
 
@@ -57,7 +57,7 @@ Required: No
 Information about the instances that could not be launched by the fleet. Valid only when
 **Type** is set to `instant`.
 
-Type: Array of [DescribeFleetError](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeFleetError.html) objects
+Type: Array of [DescribeFleetError](api-describefleeterror.md) objects
 
 Required: No
 
@@ -87,7 +87,7 @@ Required: No
 Information about the instances that were launched by the fleet. Valid only when
 **Type** is set to `instant`.
 
-Type: Array of [DescribeFleetsInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeFleetsInstances.html) objects
+Type: Array of [DescribeFleetsInstances](api-describefleetsinstances.md) objects
 
 Required: No
 
@@ -123,7 +123,7 @@ Required: No
 
 The launch template and overrides.
 
-Type: Array of [FleetLaunchTemplateConfig](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FleetLaunchTemplateConfig.html) objects
+Type: Array of [FleetLaunchTemplateConfig](api-fleetlaunchtemplateconfig.md) objects
 
 Required: No
 
@@ -131,7 +131,7 @@ Required: No
 
 The allocation strategy of On-Demand Instances in an EC2 Fleet.
 
-Type: [OnDemandOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_OnDemandOptions.html) object
+Type: [OnDemandOptions](api-ondemandoptions.md) object
 
 Required: No
 
@@ -149,7 +149,7 @@ Required: No
 
 Defines EC2 Fleet preferences for utilizing reserved capacity when DefaultTargetCapacityType is set to `reserved-capacity`.
 
-Type: [ReservedCapacityOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReservedCapacityOptions.html) object
+Type: [ReservedCapacityOptions](api-reservedcapacityoptions.md) object
 
 Required: No
 
@@ -157,7 +157,7 @@ Required: No
 
 The configuration of Spot Instances in an EC2 Fleet.
 
-Type: [SpotOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SpotOptions.html) object
+Type: [SpotOptions](api-spotoptions.md) object
 
 Required: No
 
@@ -176,7 +176,7 @@ instances or a performance characteristic that is important to your application 
 such as vCPUs, memory, or I/O. If the request type is `maintain`, you can
 specify a target capacity of 0 and add capacity later.
 
-Type: [TargetCapacitySpecification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TargetCapacitySpecification.html) object
+Type: [TargetCapacitySpecification](api-targetcapacityspecification.md) object
 
 Required: No
 
@@ -229,13 +229,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/FleetData)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/fleetdata.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/FleetData)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/fleetdata.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/FleetData)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/fleetdata.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 FleetCapacityReservation
 

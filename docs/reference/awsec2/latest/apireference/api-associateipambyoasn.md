@@ -1,10 +1,10 @@
 # AssociateIpamByoasn
 
 Associates your Autonomous System Number (ASN) with a BYOIP CIDR that you own in the same AWS Region.
-For more information, see [Tutorial: Bring your ASN to IPAM](https://docs.aws.amazon.com/vpc/latest/ipam/tutorials-byoasn.html) in the _Amazon VPC IPAM guide_.
+For more information, see [Tutorial: Bring your ASN to IPAM](../../../../services/vpc/latest/ipam/tutorials-byoasn.md) in the _Amazon VPC IPAM guide_.
 
 After the association succeeds, the ASN is eligible for
-advertisement. You can view the association with [DescribeByoipCidrs](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeByoipCidrs.html). You can advertise the CIDR with [AdvertiseByoipCidr](api-advertisebyoipcidr.md).
+advertisement. You can view the association with [DescribeByoipCidrs](api-describebyoipcidrs.md). You can advertise the CIDR with [AdvertiseByoipCidr](api-advertisebyoipcidr.md).
 
 ## Request Parameters
 
@@ -44,7 +44,7 @@ The following elements are returned by the service.
 
 The ASN and BYOIP CIDR association.
 
-Type: [AsnAssociation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AsnAssociation.html) object
+Type: [AsnAssociation](api-asnassociation.md) object
 
 **requestId**
 
@@ -64,23 +64,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/AssociateIpamByoasn)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/AssociateIpamByoasn)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/associateipambyoasn.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/AssociateIpamByoasn)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/associateipambyoasn.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/AssociateIpamByoasn)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/associateipambyoasn.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/AssociateIpamByoasn)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/associateipambyoasn.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/AssociateIpamByoasn)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/associateipambyoasn.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/AssociateIpamByoasn)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/associateipambyoasn.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/AssociateIpamByoasn)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/AssociateIpamByoasn)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/associateipambyoasn.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AssociateInstanceEventWindow
 

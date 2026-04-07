@@ -10,7 +10,7 @@ associated with an ENI attached to an instance that has multiple ENIs, we recomm
 you use the [ModifyNetworkInterfaceAttribute](api-modifynetworkinterfaceattribute.md) action.
 
 To modify some attributes, the instance must be stopped. For more information, see
-[Modify a stopped instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_ChangingAttributesWhileInstanceStopped.html) in the
+[Modify a stopped instance](../../../../services/ec2/latest/userguide/using-changingattributeswhileinstancestopped.md) in the
 _Amazon EC2 User Guide_.
 
 ## Request Parameters
@@ -26,7 +26,7 @@ The name of the attribute to modify.
 When changing the instance type: If the original instance type is configured for
 configurable bandwidth, and the desired instance type doesn't support configurable
 bandwidth, first set the existing bandwidth configuration to `default`
-using the [ModifyInstanceNetworkPerformanceOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyInstanceNetworkPerformanceOptions.html)
+using the [ModifyInstanceNetworkPerformanceOptions](api-modifyinstancenetworkperformanceoptions.md)
 operation.
 
 Type: String
@@ -47,7 +47,7 @@ To add instance store volumes to an Amazon EBS-backed instance, you must add the
 you launch the instance. For more information, see [Update the block device mapping when launching an instance](../../../../services/ec2/latest/userguide/block-device-mapping-concepts.md#Using_OverridingAMIBDM) in the
 _Amazon EC2 User Guide_.
 
-Type: Array of [InstanceBlockDeviceMappingSpecification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceBlockDeviceMappingSpecification.html) objects
+Type: Array of [InstanceBlockDeviceMappingSpecification](api-instanceblockdevicemappingspecification.md) objects
 
 Required: No
 
@@ -57,7 +57,7 @@ Indicates whether an instance is enabled for stop protection. For more informati
 see [Enable stop\
 protection for your instance](../../../../services/ec2/latest/userguide/ec2-stop-protection.md).
 
-Type: [AttributeBooleanValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeBooleanValue.html) object
+Type: [AttributeBooleanValue](api-attributebooleanvalue.md) object
 
 Required: No
 
@@ -67,7 +67,7 @@ Enable or disable termination protection for the instance. If the value is `true
 you can't terminate the instance using the Amazon EC2 console, command line interface, or API.
 You can't enable termination protection for Spot Instances.
 
-Type: [AttributeBooleanValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeBooleanValue.html) object
+Type: [AttributeBooleanValue](api-attributebooleanvalue.md) object
 
 Required: No
 
@@ -88,7 +88,7 @@ provides dedicated throughput to Amazon EBS and an optimized configuration stack
 provide optimal EBS I/O performance. This optimization isn't available with all instance
 types. Additional usage charges apply when using an EBS Optimized instance.
 
-Type: [AttributeBooleanValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeBooleanValue.html) object
+Type: [AttributeBooleanValue](api-attributebooleanvalue.md) object
 
 Required: No
 
@@ -100,7 +100,7 @@ instance.
 This option is supported only for HVM instances. Specifying this option with a PV
 instance can make it unreachable.
 
-Type: [AttributeBooleanValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeBooleanValue.html) object
+Type: [AttributeBooleanValue](api-attributebooleanvalue.md) object
 
 Required: No
 
@@ -127,7 +127,7 @@ Required: Yes
 Specifies whether an instance stops or terminates when you initiate shutdown from the
 instance (using the operating system command for system shutdown).
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 Required: No
 
@@ -137,25 +137,25 @@ Changes the instance type to the specified value. For more information, see [Ins
 types](../../../../services/ec2/latest/userguide/instance-types.md) in the _Amazon EC2 User Guide_. If the instance type is
 not valid, the error returned is `InvalidInstanceAttributeValue`.
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 Required: No
 
 **Kernel**
 
 Changes the instance's kernel to the specified value. We recommend that you use
-PV-GRUB instead of kernels and RAM disks. For more information, see [PV-GRUB](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/UserProvidedKernels.html).
+PV-GRUB instead of kernels and RAM disks. For more information, see [PV-GRUB](../../../../services/ec2/latest/userguide/userprovidedkernels.md).
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 Required: No
 
 **Ramdisk**
 
 Changes the instance's RAM disk to the specified value. We recommend that you use
-PV-GRUB instead of kernels and RAM disks. For more information, see [PV-GRUB](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/UserProvidedKernels.html).
+PV-GRUB instead of kernels and RAM disks. For more information, see [PV-GRUB](../../../../services/ec2/latest/userguide/userprovidedkernels.md).
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 Required: No
 
@@ -168,7 +168,7 @@ disabled. The default value is `true`. You must disable source/destination
 checks if the instance runs services such as network address translation, routing, or
 firewalls.
 
-Type: [AttributeBooleanValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeBooleanValue.html) object
+Type: [AttributeBooleanValue](api-attributebooleanvalue.md) object
 
 Required: No
 
@@ -183,7 +183,7 @@ interface at this time.
 This option is supported only for HVM instances. Specifying this option with a PV
 instance can make it unreachable.
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 Required: No
 
@@ -191,9 +191,9 @@ Required: No
 
 Changes the instance's user data to the specified value. User data must be base64-encoded.
 Depending on the tool or SDK that you're using, the base64-encoding might be performed for you.
-For more information, see [Work with instance user data](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-add-user-data.html).
+For more information, see [Work with instance user data](../../../../services/ec2/latest/userguide/instancedata-add-user-data.md).
 
-Type: [BlobAttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_BlobAttributeValue.html) object
+Type: [BlobAttributeValue](api-blobattributevalue.md) object
 
 Required: No
 
@@ -312,23 +312,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ModifyInstanceAttribute)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ModifyInstanceAttribute)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/modifyinstanceattribute.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ModifyInstanceAttribute)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/modifyinstanceattribute.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ModifyInstanceAttribute)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/modifyinstanceattribute.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ModifyInstanceAttribute)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/modifyinstanceattribute.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ModifyInstanceAttribute)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/modifyinstanceattribute.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ModifyInstanceAttribute)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/modifyinstanceattribute.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ModifyInstanceAttribute)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ModifyInstanceAttribute)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifyinstanceattribute.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ModifyImageAttribute
 

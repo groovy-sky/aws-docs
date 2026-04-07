@@ -17,7 +17,7 @@ values are `ok`, `impaired` , `warning`, or
 `ok`. If the check fails, the overall status is `impaired`. If the
 status is `insufficient-data`, then the checks might still be taking place on your
 volume at the time. We recommend that you retry the request. For more information about volume
-status, see [Monitor the status of your volumes](https://docs.aws.amazon.com/ebs/latest/userguide/monitoring-volume-status.html) in the _Amazon EBS User Guide_.
+status, see [Monitor the status of your volumes](../../../../services/ebs/latest/userguide/monitoring-volume-status.md) in the _Amazon EBS User Guide_.
 
 _Events_: Reflect the cause of a volume status and might require you to
 take action. For example, if your volume returns an `impaired` status, then the
@@ -31,7 +31,7 @@ shows `potential-data-inconsistency`, then the action shows
 `enable-volume-io`. This means that you may want to enable the I/O operations for
 the volume and then check the volume for data consistency. For more information, see
 [Work with an \
-impaired EBS volume](https://docs.aws.amazon.com/ebs/latest/userguide/work_volumes_impaired.html).
+impaired EBS volume](../../../../services/ebs/latest/userguide/work-volumes-impaired.md).
 
 Volume status is based on the volume status checks, and does not reflect the volume state.
 Therefore, volume status does not indicate volumes in the `error` state (for
@@ -150,7 +150,7 @@ Type: String
 
 Information about the status of the volumes.
 
-Type: Array of [VolumeStatusItem](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VolumeStatusItem.html) objects
+Type: Array of [VolumeStatusItem](api-volumestatusitem.md) objects
 
 ## Errors
 
@@ -253,23 +253,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/DescribeVolumeStatus)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DescribeVolumeStatus)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/describevolumestatus.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/DescribeVolumeStatus)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/describevolumestatus.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DescribeVolumeStatus)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/describevolumestatus.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DescribeVolumeStatus)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/describevolumestatus.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DescribeVolumeStatus)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/describevolumestatus.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DescribeVolumeStatus)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/describevolumestatus.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DescribeVolumeStatus)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DescribeVolumeStatus)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describevolumestatus.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DescribeVolumesModifications
 

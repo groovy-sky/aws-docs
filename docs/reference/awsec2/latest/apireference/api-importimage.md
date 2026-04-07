@@ -4,7 +4,7 @@
 
 To import your virtual machines (VMs) with a console-based experience, you can use the
 _Import virtual machine images to AWS_ template in the [Migration Hub Orchestrator console](https://console.aws.amazon.com/migrationhub/orchestrator). For more
-information, see the [_AWS Migration Hub Orchestrator User Guide_](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/import-vm-images.html).
+information, see the [_AWS Migration Hub Orchestrator User Guide_](../../../../services/migrationhub-orchestrator/latest/userguide/import-vm-images.md).
 
 Import single or multi-volume disk images or EBS snapshots into an Amazon Machine Image (AMI).
 
@@ -16,7 +16,7 @@ VM Import task. This ensures your operating system is licensed appropriately and
 optimized.
 
 For more information, see [Importing a \
-VM as an image using VM Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html) in the _VM Import/Export User Guide_.
+VM as an image using VM Import/Export](../../../../services/vm-import/latest/userguide/vmimport-image-import.md) in the _VM Import/Export User Guide_.
 
 ## Request Parameters
 
@@ -39,7 +39,7 @@ The boot mode of the virtual machine.
 ###### Note
 
 The `uefi-preferred` boot mode isn't supported for importing images. For more
-information, see [Boot modes](https://docs.aws.amazon.com/vm-import/latest/userguide/prerequisites.html#vmimport-boot-modes) in
+information, see [Boot modes](../../../../services/vm-import/latest/userguide/prerequisites.md#vmimport-boot-modes) in
 the _VM Import/Export User Guide_.
 
 Type: String
@@ -52,7 +52,7 @@ Required: No
 
 The client-specific data.
 
-Type: [ClientData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientData.html) object
+Type: [ClientData](api-clientdata.md) object
 
 Required: No
 
@@ -76,7 +76,7 @@ Required: No
 
 Information about the disk containers.
 
-Type: Array of [ImageDiskContainer](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImageDiskContainer.html) objects
+Type: Array of [ImageDiskContainer](api-imagediskcontainer.md) objects
 
 Required: No
 
@@ -93,7 +93,7 @@ Required: No
 **Encrypted**
 
 Specifies whether the destination AMI of the imported image should be encrypted. The default KMS key for EBS is used
-unless you specify a non-default KMS key using `KmsKeyId`. For more information, see [Amazon EBS Encryption](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html) in the
+unless you specify a non-default KMS key using `KmsKeyId`. For more information, see [Amazon EBS Encryption](../../../../services/ec2/latest/userguide/ebsencryption.md) in the
 _Amazon Elastic Compute Cloud User Guide_.
 
 Type: Boolean
@@ -142,7 +142,7 @@ Required: No
 
 The ARNs of the license configurations.
 
-Type: Array of [ImportImageLicenseConfigurationRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportImageLicenseConfigurationRequest.html) objects
+Type: Array of [ImportImageLicenseConfigurationRequest](api-importimagelicenseconfigurationrequest.md) objects
 
 Required: No
 
@@ -157,7 +157,7 @@ system, and the same as choosing `BYOL` when importing a Windows client operatin
 system (such as Windows 10) or a Linux operating system.
 
 To use `BYOL`, you must have existing licenses with rights to use these licenses in a third party
-cloud, such as AWS. For more information, see [Prerequisites](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html#prerequisites-image) in the
+cloud, such as AWS. For more information, see [Prerequisites](../../../../services/vm-import/latest/userguide/vmimport-image-import.md#prerequisites-image) in the
 VM Import/Export User Guide.
 
 Type: String
@@ -194,7 +194,7 @@ Required: No
 
 **UsageOperation**
 
-The usage operation value. For more information, see [Licensing options](https://docs.aws.amazon.com/vm-import/latest/userguide/vmie_prereqs.html#prerequisites) in the _VM Import/Export User Guide_.
+The usage operation value. For more information, see [Licensing options](../../../../services/vm-import/latest/userguide/vmie-prereqs.md#prerequisites) in the _VM Import/Export User Guide_.
 
 Type: String
 
@@ -250,7 +250,7 @@ Type: String
 
 The ARNs of the license configurations.
 
-Type: Array of [ImportImageLicenseConfigurationResponse](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportImageLicenseConfigurationResponse.html) objects
+Type: Array of [ImportImageLicenseConfigurationResponse](api-importimagelicenseconfigurationresponse.md) objects
 
 **licenseType**
 
@@ -280,7 +280,7 @@ Type: String
 
 Information about the snapshots.
 
-Type: Array of [SnapshotDetail](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SnapshotDetail.html) objects
+Type: Array of [SnapshotDetail](api-snapshotdetail.md) objects
 
 **status**
 
@@ -318,23 +318,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ImportImage)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ImportImage)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/importimage.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ImportImage)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/importimage.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ImportImage)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/importimage.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ImportImage)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/importimage.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ImportImage)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/importimage.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ImportImage)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/importimage.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ImportImage)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ImportImage)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/importimage.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ImportClientVpnClientCertificateRevocationList
 

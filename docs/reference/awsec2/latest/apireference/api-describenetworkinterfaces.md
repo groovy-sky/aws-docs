@@ -15,7 +15,7 @@ susceptible to throttling and timeouts.
 
 ## Request Parameters
 
-The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/CommonParameters.html).
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
 
 **DryRun**
 
@@ -158,7 +158,7 @@ For example, to find all resources that have a tag with the key `Owner` and the 
 
 - `vpc-id` \- The ID of the VPC for the network interface.
 
-Type: Array of [Filter](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Filter.html) objects
+Type: Array of [Filter](api-filter.md) objects
 
 Required: No
 
@@ -167,7 +167,7 @@ Required: No
 The maximum number of items to return for this request. To get the next page of items,
 make another request with the token returned in the output. You cannot specify this
 parameter and the network interface IDs parameter in the same request. For more
-information, see [Pagination](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Query-Requests.html#api-pagination).
+information, see [Pagination](query-requests.md#api-pagination).
 
 Type: Integer
 
@@ -202,7 +202,7 @@ The following elements are returned by the service.
 
 Information about the network interfaces.
 
-Type: Array of [NetworkInterface](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkInterface.html) objects
+Type: Array of [NetworkInterface](api-networkinterface.md) objects
 
 **nextToken**
 
@@ -219,7 +219,7 @@ Type: String
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common client error codes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/errors-overview.html#CommonErrors).
+For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
 
 ## Examples
 
@@ -360,23 +360,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/DescribeNetworkInterfaces)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DescribeNetworkInterfaces)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/describenetworkinterfaces.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/DescribeNetworkInterfaces)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/describenetworkinterfaces.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DescribeNetworkInterfaces)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/describenetworkinterfaces.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DescribeNetworkInterfaces)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/describenetworkinterfaces.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DescribeNetworkInterfaces)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/describenetworkinterfaces.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DescribeNetworkInterfaces)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/describenetworkinterfaces.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DescribeNetworkInterfaces)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DescribeNetworkInterfaces)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describenetworkinterfaces.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DescribeNetworkInterfacePermissions
 

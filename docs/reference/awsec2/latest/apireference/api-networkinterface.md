@@ -17,7 +17,7 @@ Required: No
 The association information for an Elastic IP address (IPv4) associated with the
 network interface.
 
-Type: [NetworkInterfaceAssociation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkInterfaceAssociation.html) object
+Type: [NetworkInterfaceAssociation](api-networkinterfaceassociation.md) object
 
 Required: No
 
@@ -25,7 +25,7 @@ Required: No
 
 The network interface attachment.
 
-Type: [NetworkInterfaceAttachment](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkInterfaceAttachment.html) object
+Type: [NetworkInterfaceAttachment](api-networkinterfaceattachment.md) object
 
 Required: No
 
@@ -49,10 +49,10 @@ Required: No
 
 A security group connection tracking configuration that enables you to set the timeout
 for connection tracking on an Elastic network interface. For more information, see
-[Connection tracking timeouts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-connection-tracking.html#connection-tracking-timeouts) in the
+[Connection tracking timeouts](../../../../services/ec2/latest/userguide/security-group-connection-tracking.md#connection-tracking-timeouts) in the
 _Amazon EC2 User Guide_.
 
-Type: [ConnectionTrackingConfiguration](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ConnectionTrackingConfiguration.html) object
+Type: [ConnectionTrackingConfiguration](api-connectiontrackingconfiguration.md) object
 
 Required: No
 
@@ -80,7 +80,7 @@ Required: No
 
 Any security groups for the network interface.
 
-Type: Array of [GroupIdentifier](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GroupIdentifier.html) objects
+Type: Array of [GroupIdentifier](api-groupidentifier.md) objects
 
 Required: No
 
@@ -98,7 +98,7 @@ Required: No
 
 The IPv4 prefixes that are assigned to the network interface.
 
-Type: Array of [Ipv4PrefixSpecification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Ipv4PrefixSpecification.html) objects
+Type: Array of [Ipv4PrefixSpecification](api-ipv4prefixspecification.md) objects
 
 Required: No
 
@@ -114,7 +114,7 @@ Required: No
 
 The IPv6 addresses associated with the network interface.
 
-Type: Array of [NetworkInterfaceIpv6Address](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkInterfaceIpv6Address.html) objects
+Type: Array of [NetworkInterfaceIpv6Address](api-networkinterfaceipv6address.md) objects
 
 Required: No
 
@@ -130,7 +130,7 @@ Required: No
 
 The IPv6 prefixes that are assigned to the network interface.
 
-Type: Array of [Ipv6PrefixSpecification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Ipv6PrefixSpecification.html) objects
+Type: Array of [Ipv6PrefixSpecification](api-ipv6prefixspecification.md) objects
 
 Required: No
 
@@ -154,7 +154,7 @@ Required: No
 
 The service provider that manages the network interface.
 
-Type: [OperatorResponse](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_OperatorResponse.html) object
+Type: [OperatorResponse](api-operatorresponse.md) object
 
 Required: No
 
@@ -176,7 +176,7 @@ Required: No
 
 **privateDnsName**
 
-The private hostname. For more information, see [EC2 instance hostnames, DNS names, and domains](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-naming.html) in the _Amazon EC2 User Guide_.
+The private hostname. For more information, see [EC2 instance hostnames, DNS names, and domains](../../../../services/ec2/latest/userguide/ec2-instance-naming.md) in the _Amazon EC2 User Guide_.
 
 Type: String
 
@@ -194,13 +194,13 @@ Required: No
 
 The private IPv4 addresses associated with the network interface.
 
-Type: Array of [NetworkInterfacePrivateIpAddress](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkInterfacePrivateIpAddress.html) objects
+Type: Array of [NetworkInterfacePrivateIpAddress](api-networkinterfaceprivateipaddress.md) objects
 
 Required: No
 
 **publicDnsName**
 
-A public hostname. For more information, see [EC2 instance hostnames, DNS names, and domains](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-naming.html) in the _Amazon EC2 User Guide_.
+A public hostname. For more information, see [EC2 instance hostnames, DNS names, and domains](../../../../services/ec2/latest/userguide/ec2-instance-naming.md) in the _Amazon EC2 User Guide_.
 
 Type: String
 
@@ -208,9 +208,9 @@ Required: No
 
 **publicIpDnsNameOptions**
 
-Public hostname type options. For more information, see [EC2 instance hostnames, DNS names, and domains](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-naming.html) in the _Amazon EC2 User Guide_.
+Public hostname type options. For more information, see [EC2 instance hostnames, DNS names, and domains](../../../../services/ec2/latest/userguide/ec2-instance-naming.md) in the _Amazon EC2 User Guide_.
 
-Type: [PublicIpDnsNameOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PublicIpDnsNameOptions.html) object
+Type: [PublicIpDnsNameOptions](api-publicipdnsnameoptions.md) object
 
 Required: No
 
@@ -261,7 +261,7 @@ Required: No
 
 Any tags assigned to the network interface.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Required: No
 
@@ -277,13 +277,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/NetworkInterface)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/networkinterface.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/NetworkInterface)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/networkinterface.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/NetworkInterface)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/networkinterface.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 NetworkInsightsPath
 

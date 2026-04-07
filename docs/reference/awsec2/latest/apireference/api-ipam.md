@@ -1,6 +1,6 @@
 # Ipam
 
-IPAM is a VPC feature that you can use to automate your IP address management workflows including assigning, tracking, troubleshooting, and auditing IP addresses across AWS Regions and accounts throughout your AWS Organization. For more information, see [What is IPAM?](https://docs.aws.amazon.com/vpc/latest/ipam/what-is-it-ipam.html) in the _Amazon VPC IPAM User Guide_.
+IPAM is a VPC feature that you can use to automate your IP address management workflows including assigning, tracking, troubleshooting, and auditing IP addresses across AWS Regions and accounts throughout your AWS Organization. For more information, see [What is IPAM?](../../../../services/vpc/latest/ipam/what-is-it-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 ## Contents
 
@@ -64,7 +64,7 @@ Required: No
 
 **meteredAccount**
 
-A metered account is an AWS account that is charged for active IP addresses managed in IPAM. For more information, see [Enable cost distribution](https://docs.aws.amazon.com/vpc/latest/ipam/ipam-enable-cost-distro.html) in the _Amazon VPC IPAM User Guide_.
+A metered account is an AWS account that is charged for active IP addresses managed in IPAM. For more information, see [Enable cost distribution](../../../../services/vpc/latest/ipam/ipam-enable-cost-distro.md) in the _Amazon VPC IPAM User Guide_.
 
 Possible values:
 
@@ -82,9 +82,9 @@ Required: No
 
 The operating Regions for an IPAM. Operating Regions are AWS Regions where the IPAM is allowed to manage IP address CIDRs. IPAM only discovers and monitors resources in the AWS Regions you select as operating Regions.
 
-For more information about operating Regions, see [Create an IPAM](https://docs.aws.amazon.com/vpc/latest/ipam/create-ipam.html) in the _Amazon VPC IPAM User Guide_.
+For more information about operating Regions, see [Create an IPAM](../../../../services/vpc/latest/ipam/create-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
-Type: Array of [IpamOperatingRegion](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamOperatingRegion.html) objects
+Type: Array of [IpamOperatingRegion](api-ipamoperatingregion.md) objects
 
 Required: No
 
@@ -122,7 +122,7 @@ Required: No
 
 **scopeCount**
 
-The number of scopes in the IPAM. The scope quota is 5. For more information on quotas, see [Quotas in IPAM](https://docs.aws.amazon.com/vpc/latest/ipam/quotas-ipam.html) in the _Amazon VPC IPAM User Guide_.
+The number of scopes in the IPAM. The scope quota is 5. For more information on quotas, see [Quotas in IPAM](../../../../services/vpc/latest/ipam/quotas-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 Type: Integer
 
@@ -169,13 +169,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/Ipam)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/ipam.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/Ipam)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/ipam.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/Ipam)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ipam.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 InterruptionInfo
 

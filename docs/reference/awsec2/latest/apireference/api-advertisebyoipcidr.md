@@ -14,7 +14,7 @@ location and start advertising it through AWS.
 It can take a few minutes before traffic to the specified addresses starts routing to AWS
 because of BGP propagation delays.
 
-To stop advertising the BYOIP CIDR, use [WithdrawByoipCidr](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_WithdrawByoipCidr.html).
+To stop advertising the BYOIP CIDR, use [WithdrawByoipCidr](api-withdrawbyoipcidr.md).
 
 ## Request Parameters
 
@@ -49,7 +49,7 @@ Required: No
 
 **NetworkBorderGroup**
 
-If you have [Local Zones](https://docs.aws.amazon.com/local-zones/latest/ug/how-local-zones-work.html) enabled, you can choose a network border group for Local Zones when you provision and advertise a BYOIPv4 CIDR. Choose the network border group carefully as the EIP and the AWS resource it is associated with must reside in the same network border group.
+If you have [Local Zones](../../../../services/local-zones/latest/ug/how-local-zones-work.md) enabled, you can choose a network border group for Local Zones when you provision and advertise a BYOIPv4 CIDR. Choose the network border group carefully as the EIP and the AWS resource it is associated with must reside in the same network border group.
 
 You can provision BYOIP address ranges to and advertise them in the following Local Zone network border groups:
 
@@ -75,7 +75,7 @@ The following elements are returned by the service.
 
 Information about the address range.
 
-Type: [ByoipCidr](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ByoipCidr.html) object
+Type: [ByoipCidr](api-byoipcidr.md) object
 
 **requestId**
 
@@ -95,23 +95,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/AdvertiseByoipCidr)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/AdvertiseByoipCidr)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/advertisebyoipcidr.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/AdvertiseByoipCidr)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/advertisebyoipcidr.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/AdvertiseByoipCidr)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/advertisebyoipcidr.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/AdvertiseByoipCidr)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/advertisebyoipcidr.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/AdvertiseByoipCidr)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/advertisebyoipcidr.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/AdvertiseByoipCidr)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/advertisebyoipcidr.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/AdvertiseByoipCidr)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/AdvertiseByoipCidr)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/advertisebyoipcidr.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AcceptVpcPeeringConnection
 

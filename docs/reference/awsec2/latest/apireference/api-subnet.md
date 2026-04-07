@@ -42,7 +42,7 @@ Required: No
 
 The state of VPC Block Public Access (BPA).
 
-Type: [BlockPublicAccessStates](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_BlockPublicAccessStates.html) object
+Type: [BlockPublicAccessStates](api-blockpublicaccessstates.md) object
 
 Required: No
 
@@ -93,7 +93,7 @@ Required: No
 
 Information about the IPv6 CIDR blocks associated with the subnet.
 
-Type: Array of [SubnetIpv6CidrBlockAssociation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SubnetIpv6CidrBlockAssociation.html) objects
+Type: Array of [SubnetIpv6CidrBlockAssociation](api-subnetipv6cidrblockassociation.md) objects
 
 Required: No
 
@@ -146,7 +146,7 @@ Required: No
 The type of hostnames to assign to instances in the subnet at launch. An instance hostname
 is based on the IPv4 address or ID of the instance.
 
-Type: [PrivateDnsNameOptionsOnLaunch](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PrivateDnsNameOptionsOnLaunch.html) object
+Type: [PrivateDnsNameOptionsOnLaunch](api-privatednsnameoptionsonlaunch.md) object
 
 Required: No
 
@@ -186,7 +186,7 @@ Required: No
 
 Any tags assigned to the subnet.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Required: No
 
@@ -195,7 +195,7 @@ Required: No
 Indicates if this is a subnet used with Amazon Elastic VMware Service (EVS).
 Possible values are `Elastic VMware Service` or no value. For more
 information about Amazon EVS, see [_Amazon Elastic VMware Service_\
-_API Reference_](https://docs.aws.amazon.com/evs/latest/APIReference/Welcome.html).
+_API Reference_](../../../evs/latest/apireference/welcome.md).
 
 Type: String
 
@@ -213,13 +213,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/Subnet)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/subnet.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/Subnet)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/subnet.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/Subnet)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/subnet.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 StoreImageTaskResult
 

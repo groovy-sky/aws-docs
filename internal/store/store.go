@@ -6,13 +6,16 @@ import (
 	"os"
 	"path/filepath"
 	"sort"
+	"strconv"
 
 	bolt "go.etcd.io/bbolt"
 )
 
 var (
-	seedsBucket = []byte("seeds")
-	seedsKey    = []byte("all")
+	seedsBucket      = []byte("seeds")
+	seedsKey         = []byte("all")
+	stateBucket      = []byte("state")
+	sectionCursorKey = []byte("section_cursor")
 )
 
 type Store struct {
@@ -34,12 +37,54 @@ func Open(path string) (*Store, error) {
 		if _, err := tx.CreateBucketIfNotExists(seedsBucket); err != nil {
 			return err
 		}
+		if _, err := tx.CreateBucketIfNotExists(stateBucket); err != nil {
+			return err
+		}
 		return nil
 	}); err != nil {
 		_ = database.Close()
 		return nil, fmt.Errorf("initialize metadata db: %w", err)
 	}
 	return store, nil
+}
+
+func (s *Store) GetSectionCursor() (int, error) {
+	value := 0
+	err := s.db.View(func(tx *bolt.Tx) error {
+		raw := tx.Bucket(stateBucket).Get(sectionCursorKey)
+		if raw == nil {
+			value = 0
+			return nil
+		}
+
+		parsed, err := strconv.Atoi(string(raw))
+		if err != nil {
+			value = 0
+			return nil
+		}
+		if parsed < 0 {
+			value = 0
+			return nil
+		}
+
+		value = parsed
+		return nil
+	})
+	if err != nil {
+		return 0, fmt.Errorf("get section cursor: %w", err)
+	}
+
+	return value, nil
+}
+
+func (s *Store) PutSectionCursor(cursor int) error {
+	if cursor < 0 {
+		cursor = 0
+	}
+
+	return s.db.Update(func(tx *bolt.Tx) error {
+		return tx.Bucket(stateBucket).Put(sectionCursorKey, []byte(strconv.Itoa(cursor)))
+	})
 }
 
 func (s *Store) Close() error {

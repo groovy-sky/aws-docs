@@ -7,11 +7,11 @@ provisioned, it is ready to be advertised.
 AWS verifies that you own the address range and are authorized to advertise it.
 You must ensure that the address range is registered to you and that you created an
 RPKI ROA to authorize Amazon ASNs 16509 and 14618 to advertise the address range.
-For more information, see [Bring your own IP addresses (BYOIP)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-byoip.html) in the _Amazon EC2 User Guide_.
+For more information, see [Bring your own IP addresses (BYOIP)](../../../../services/ec2/latest/userguide/ec2-byoip.md) in the _Amazon EC2 User Guide_.
 
 Provisioning an address range is an asynchronous operation, so the call returns immediately,
 but the address range is not ready to use until its status changes from `pending-provision`
-to `provisioned`. For more information, see [Onboard your address range](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/byoip-onboard.html).
+to `provisioned`. For more information, see [Onboard your address range](../../../../services/ec2/latest/userguide/byoip-onboard.md).
 
 ## Request Parameters
 
@@ -32,7 +32,7 @@ Required: Yes
 A signed document that proves that you are authorized to bring the specified IP address
 range to Amazon using BYOIP.
 
-Type: [CidrAuthorizationContext](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CidrAuthorizationContext.html) object
+Type: [CidrAuthorizationContext](api-cidrauthorizationcontext.md) object
 
 Required: No
 
@@ -64,7 +64,7 @@ Required: No
 
 **NetworkBorderGroup**
 
-If you have [Local Zones](https://docs.aws.amazon.com/local-zones/latest/ug/how-local-zones-work.html) enabled, you can choose a network border group for Local Zones when you provision and advertise a BYOIPv4 CIDR. Choose the network border group carefully as the EIP and the AWS resource it is associated with must reside in the same network border group.
+If you have [Local Zones](../../../../services/local-zones/latest/ug/how-local-zones-work.md) enabled, you can choose a network border group for Local Zones when you provision and advertise a BYOIPv4 CIDR. Choose the network border group carefully as the EIP and the AWS resource it is associated with must reside in the same network border group.
 
 You can provision BYOIP address ranges to and advertise them in the following Local Zone network border groups:
 
@@ -109,7 +109,7 @@ The following elements are returned by the service.
 
 Information about the address range.
 
-Type: [ByoipCidr](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ByoipCidr.html) object
+Type: [ByoipCidr](api-byoipcidr.md) object
 
 **requestId**
 
@@ -129,23 +129,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ProvisionByoipCidr)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ProvisionByoipCidr)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/provisionbyoipcidr.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ProvisionByoipCidr)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/provisionbyoipcidr.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ProvisionByoipCidr)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/provisionbyoipcidr.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ProvisionByoipCidr)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/provisionbyoipcidr.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ProvisionByoipCidr)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/provisionbyoipcidr.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ProvisionByoipCidr)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/provisionbyoipcidr.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ProvisionByoipCidr)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ProvisionByoipCidr)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/provisionbyoipcidr.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 MoveCapacityReservationInstances
 

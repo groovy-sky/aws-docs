@@ -2,11 +2,11 @@
 
 Stores an AMI as a single object in an Amazon S3 bucket.
 
-To use this API, you must have the required permissions. For more information, see [Permissions for storing and restoring AMIs using S3](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/work-with-ami-store-restore.html#ami-s3-permissions) in the
+To use this API, you must have the required permissions. For more information, see [Permissions for storing and restoring AMIs using S3](../../../../services/ec2/latest/userguide/work-with-ami-store-restore.md#ami-s3-permissions) in the
 _Amazon EC2 User Guide_.
 
 For more information, see [Store and restore an AMI using\
-S3](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-store-restore.html) in the _Amazon EC2 User Guide_.
+S3](../../../../services/ec2/latest/userguide/ami-store-restore.md) in the _Amazon EC2 User Guide_.
 
 ## Request Parameters
 
@@ -44,7 +44,7 @@ Required: Yes
 
 The tags to apply to the AMI object that will be stored in the Amazon S3 bucket.
 
-Type: Array of [S3ObjectTag](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_S3ObjectTag.html) objects
+Type: Array of [S3ObjectTag](api-s3objecttag.md) objects
 
 Required: No
 
@@ -76,23 +76,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateStoreImageTask)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateStoreImageTask)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createstoreimagetask.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateStoreImageTask)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createstoreimagetask.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateStoreImageTask)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createstoreimagetask.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateStoreImageTask)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createstoreimagetask.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateStoreImageTask)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createstoreimagetask.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateStoreImageTask)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createstoreimagetask.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateStoreImageTask)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateStoreImageTask)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createstoreimagetask.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateSpotDatafeedSubscription
 

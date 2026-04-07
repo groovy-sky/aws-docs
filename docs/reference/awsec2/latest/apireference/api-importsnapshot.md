@@ -2,7 +2,7 @@
 
 Imports a disk into an EBS snapshot.
 
-For more information, see [Importing a disk as a snapshot using VM Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-import-snapshot.html) in the
+For more information, see [Importing a disk as a snapshot using VM Import/Export](../../../../services/vm-import/latest/userguide/vmimport-import-snapshot.md) in the
 _VM Import/Export User Guide_.
 
 ## Request Parameters
@@ -13,7 +13,7 @@ The following parameters are for this specific action. For more information abou
 
 The client-specific data.
 
-Type: [ClientData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientData.html) object
+Type: [ClientData](api-clientdata.md) object
 
 Required: No
 
@@ -37,7 +37,7 @@ Required: No
 
 Information about the disk container.
 
-Type: [SnapshotDiskContainer](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SnapshotDiskContainer.html) object
+Type: [SnapshotDiskContainer](api-snapshotdiskcontainer.md) object
 
 Required: No
 
@@ -54,7 +54,7 @@ Required: No
 **Encrypted**
 
 Specifies whether the destination snapshot of the imported image should be encrypted. The default KMS key for EBS is
-used unless you specify a non-default KMS key using `KmsKeyId`. For more information, see [Amazon EBS Encryption](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html) in the
+used unless you specify a non-default KMS key using `KmsKeyId`. For more information, see [Amazon EBS Encryption](../../../../services/ec2/latest/userguide/ebsencryption.md) in the
 _Amazon Elastic Compute Cloud User Guide_.
 
 Type: Boolean
@@ -131,7 +131,7 @@ Type: String
 
 Information about the import snapshot task.
 
-Type: [SnapshotTaskDetail](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SnapshotTaskDetail.html) object
+Type: [SnapshotTaskDetail](api-snapshottaskdetail.md) object
 
 **tagSet**
 
@@ -151,23 +151,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ImportSnapshot)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ImportSnapshot)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/importsnapshot.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ImportSnapshot)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/importsnapshot.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ImportSnapshot)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/importsnapshot.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ImportSnapshot)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/importsnapshot.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ImportSnapshot)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/importsnapshot.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ImportSnapshot)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/importsnapshot.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ImportSnapshot)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ImportSnapshot)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/importsnapshot.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ImportKeyPair
 

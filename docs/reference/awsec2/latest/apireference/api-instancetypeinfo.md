@@ -50,7 +50,7 @@ Required: No
 
 Describes the Amazon EBS settings for the instance type.
 
-Type: [EbsInfo](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EbsInfo.html) object
+Type: [EbsInfo](api-ebsinfo.md) object
 
 Required: No
 
@@ -58,7 +58,7 @@ Required: No
 
 Describes the FPGA accelerator settings for the instance type.
 
-Type: [FpgaInfo](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FpgaInfo.html) object
+Type: [FpgaInfo](api-fpgainfo.md) object
 
 Required: No
 
@@ -74,7 +74,7 @@ Required: No
 
 Describes the GPU accelerator settings for the instance type.
 
-Type: [GpuInfo](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GpuInfo.html) object
+Type: [GpuInfo](api-gpuinfo.md) object
 
 Required: No
 
@@ -100,7 +100,7 @@ Required: No
 
 Describes the Inference accelerator settings for the instance type.
 
-Type: [InferenceAcceleratorInfo](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InferenceAcceleratorInfo.html) object
+Type: [InferenceAcceleratorInfo](api-inferenceacceleratorinfo.md) object
 
 Required: No
 
@@ -108,7 +108,7 @@ Required: No
 
 Describes the instance storage for the instance type.
 
-Type: [InstanceStorageInfo](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceStorageInfo.html) object
+Type: [InstanceStorageInfo](api-instancestorageinfo.md) object
 
 Required: No
 
@@ -135,7 +135,7 @@ Required: No
 
 Describes the media accelerator settings for the instance type.
 
-Type: [MediaAcceleratorInfo](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MediaAcceleratorInfo.html) object
+Type: [MediaAcceleratorInfo](api-mediaacceleratorinfo.md) object
 
 Required: No
 
@@ -143,7 +143,7 @@ Required: No
 
 Describes the memory for the instance type.
 
-Type: [MemoryInfo](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MemoryInfo.html) object
+Type: [MemoryInfo](api-memoryinfo.md) object
 
 Required: No
 
@@ -151,7 +151,7 @@ Required: No
 
 Describes the network settings for the instance type.
 
-Type: [NetworkInfo](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkInfo.html) object
+Type: [NetworkInfo](api-networkinfo.md) object
 
 Required: No
 
@@ -159,7 +159,7 @@ Required: No
 
 Describes the Neuron accelerator settings for the instance type.
 
-Type: [NeuronInfo](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NeuronInfo.html) object
+Type: [NeuronInfo](api-neuroninfo.md) object
 
 Required: No
 
@@ -177,7 +177,7 @@ Required: No
 
 Describes the supported NitroTPM versions for the instance type.
 
-Type: [NitroTpmInfo](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NitroTpmInfo.html) object
+Type: [NitroTpmInfo](api-nitrotpminfo.md) object
 
 Required: No
 
@@ -206,7 +206,7 @@ Required: No
 
 Describes the placement group settings for the instance type.
 
-Type: [PlacementGroupInfo](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PlacementGroupInfo.html) object
+Type: [PlacementGroupInfo](api-placementgroupinfo.md) object
 
 Required: No
 
@@ -214,7 +214,7 @@ Required: No
 
 Describes the processor.
 
-Type: [ProcessorInfo](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ProcessorInfo.html) object
+Type: [ProcessorInfo](api-processorinfo.md) object
 
 Required: No
 
@@ -277,7 +277,7 @@ Required: No
 
 Describes the vCPU configurations for the instance type.
 
-Type: [VCpuInfo](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VCpuInfo.html) object
+Type: [VCpuInfo](api-vcpuinfo.md) object
 
 Required: No
 
@@ -285,13 +285,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/InstanceTypeInfo)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/instancetypeinfo.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/InstanceTypeInfo)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/instancetypeinfo.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/InstanceTypeInfo)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/instancetypeinfo.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 InstanceTopology
 

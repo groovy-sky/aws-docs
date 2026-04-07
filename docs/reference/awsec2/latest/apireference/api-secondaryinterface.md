@@ -8,7 +8,7 @@ Describes a secondary interface.
 
 The attachment information for the secondary interface.
 
-Type: [SecondaryInterfaceAttachment](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SecondaryInterfaceAttachment.html) object
+Type: [SecondaryInterfaceAttachment](api-secondaryinterfaceattachment.md) object
 
 Required: No
 
@@ -48,7 +48,7 @@ Required: No
 
 The private IPv4 addresses associated with the secondary interface.
 
-Type: Array of [SecondaryInterfaceIpv4Address](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SecondaryInterfaceIpv4Address.html) objects
+Type: Array of [SecondaryInterfaceIpv4Address](api-secondaryinterfaceipv4address.md) objects
 
 Required: No
 
@@ -134,13 +134,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/SecondaryInterface)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/secondaryinterface.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/SecondaryInterface)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/secondaryinterface.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/SecondaryInterface)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/secondaryinterface.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ScheduledInstancesPrivateIpAddressConfig
 

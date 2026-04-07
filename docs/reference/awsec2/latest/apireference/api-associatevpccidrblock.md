@@ -2,13 +2,13 @@
 
 Associates a CIDR block with your VPC. You can associate a secondary IPv4 CIDR block,
 an Amazon-provided IPv6 CIDR block, or an IPv6 CIDR block from an IPv6 address pool that
-you provisioned through bring your own IP addresses ( [BYOIP](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-byoip.html)).
+you provisioned through bring your own IP addresses ( [BYOIP](../../../../services/ec2/latest/userguide/ec2-byoip.md)).
 
 You must specify one of the following in the request: an IPv4 CIDR block, an IPv6
 pool, or an Amazon-provided IPv6 CIDR block.
 
 For more information about associating CIDR blocks with your VPC and applicable
-restrictions, see [IP addressing for your VPCs and subnets](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-ip-addressing.html)
+restrictions, see [IP addressing for your VPCs and subnets](../../../../services/vpc/latest/userguide/vpc-ip-addressing.md)
 in the _Amazon VPC User Guide_.
 
 ## Request Parameters
@@ -34,7 +34,7 @@ Required: No
 
 **Ipv4IpamPoolId**
 
-Associate a CIDR allocated from an IPv4 IPAM pool to a VPC. For more information about Amazon VPC IP Address Manager (IPAM), see [What is IPAM?](https://docs.aws.amazon.com/vpc/latest/ipam/what-is-it-ipam.html) in the _Amazon VPC IPAM User Guide_.
+Associate a CIDR allocated from an IPv4 IPAM pool to a VPC. For more information about Amazon VPC IP Address Manager (IPAM), see [What is IPAM?](../../../../services/vpc/latest/ipam/what-is-it-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 Type: String
 
@@ -42,7 +42,7 @@ Required: No
 
 **Ipv4NetmaskLength**
 
-The netmask length of the IPv4 CIDR you would like to associate from an Amazon VPC IP Address Manager (IPAM) pool. For more information about IPAM, see [What is IPAM?](https://docs.aws.amazon.com/vpc/latest/ipam/what-is-it-ipam.html) in the _Amazon VPC IPAM User Guide_.
+The netmask length of the IPv4 CIDR you would like to associate from an Amazon VPC IP Address Manager (IPAM) pool. For more information about IPAM, see [What is IPAM?](../../../../services/vpc/latest/ipam/what-is-it-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 Type: Integer
 
@@ -73,7 +73,7 @@ Required: No
 
 **Ipv6IpamPoolId**
 
-Associates a CIDR allocated from an IPv6 IPAM pool to a VPC. For more information about Amazon VPC IP Address Manager (IPAM), see [What is IPAM?](https://docs.aws.amazon.com/vpc/latest/ipam/what-is-it-ipam.html) in the _Amazon VPC IPAM User Guide_.
+Associates a CIDR allocated from an IPv6 IPAM pool to a VPC. For more information about Amazon VPC IP Address Manager (IPAM), see [What is IPAM?](../../../../services/vpc/latest/ipam/what-is-it-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 Type: String
 
@@ -81,7 +81,7 @@ Required: No
 
 **Ipv6NetmaskLength**
 
-The netmask length of the IPv6 CIDR you would like to associate from an Amazon VPC IP Address Manager (IPAM) pool. For more information about IPAM, see [What is IPAM?](https://docs.aws.amazon.com/vpc/latest/ipam/what-is-it-ipam.html) in the _Amazon VPC IPAM User Guide_.
+The netmask length of the IPv6 CIDR you would like to associate from an Amazon VPC IP Address Manager (IPAM) pool. For more information about IPAM, see [What is IPAM?](../../../../services/vpc/latest/ipam/what-is-it-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 Type: Integer
 
@@ -207,23 +207,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/AssociateVpcCidrBlock)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/AssociateVpcCidrBlock)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/associatevpccidrblock.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/AssociateVpcCidrBlock)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/associatevpccidrblock.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/AssociateVpcCidrBlock)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/associatevpccidrblock.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/AssociateVpcCidrBlock)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/associatevpccidrblock.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/AssociateVpcCidrBlock)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/associatevpccidrblock.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/AssociateVpcCidrBlock)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/associatevpccidrblock.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/AssociateVpcCidrBlock)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/AssociateVpcCidrBlock)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/associatevpccidrblock.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AssociateTrunkInterface
 

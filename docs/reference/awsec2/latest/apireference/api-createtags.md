@@ -8,7 +8,7 @@ optional value. Tag keys must be unique per resource.
 For more information about tags, see [Tag your Amazon EC2 resources](../../../../services/ec2/latest/userguide/using-tags.md) in the
 _Amazon Elastic Compute Cloud User Guide_. For more information about
 creating IAM policies that control users' access to resources based on tags, see [Supported\
-resource-level permissions for Amazon EC2 API actions](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-supported-iam-actions-resources.html) in the _Amazon_
+resource-level permissions for Amazon EC2 API actions](../../../../services/ec2/latest/userguide/ec2-supported-iam-actions-resources.md) in the _Amazon_
 _Elastic Compute Cloud User Guide_.
 
 ## Request Parameters
@@ -106,23 +106,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateTags)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateTags)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createtags.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateTags)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createtags.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateTags)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createtags.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateTags)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createtags.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateTags)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createtags.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateTags)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createtags.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateTags)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateTags)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createtags.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateSubnetCidrReservation
 

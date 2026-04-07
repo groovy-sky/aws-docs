@@ -2,7 +2,7 @@
 
 Associates an AWS Identity and Access Management (IAM) role with an AWS Certificate Manager (ACM) certificate.
 This enables the certificate to be used by the ACM for Nitro Enclaves application inside an enclave. For more
-information, see [AWS Certificate Manager for Nitro Enclaves](https://docs.aws.amazon.com/enclaves/latest/user/nitro-enclave-refapp.html) in the _AWS Nitro Enclaves_
+information, see [AWS Certificate Manager for Nitro Enclaves](../../../../services/enclaves/latest/user/nitro-enclave-refapp.md) in the _AWS Nitro Enclaves_
 _User Guide_.
 
 When the IAM role is associated with the ACM certificate, the certificate, certificate chain, and encrypted
@@ -12,7 +12,7 @@ is encrypted with an AWS managed key that has an attached attestation-based key 
 To enable the IAM role to access the Amazon S3 object, you must grant it permission to call `s3:GetObject`
 on the Amazon S3 bucket returned by the command. To enable the IAM role to access the KMS key,
 you must grant it permission to call `kms:Decrypt` on the KMS key returned by the command.
-For more information, see [Grant the role permission to access the certificate and encryption key](https://docs.aws.amazon.com/enclaves/latest/user/nitro-enclave-refapp.html#add-policy) in the
+For more information, see [Grant the role permission to access the certificate and encryption key](../../../../services/enclaves/latest/user/nitro-enclave-refapp.md#add-policy) in the
 _AWS Nitro Enclaves User Guide_.
 
 ## Request Parameters
@@ -85,23 +85,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/AssociateEnclaveCertificateIamRole)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/AssociateEnclaveCertificateIamRole)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/associateenclavecertificateiamrole.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/AssociateEnclaveCertificateIamRole)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/associateenclavecertificateiamrole.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/AssociateEnclaveCertificateIamRole)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/associateenclavecertificateiamrole.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/AssociateEnclaveCertificateIamRole)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/associateenclavecertificateiamrole.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/AssociateEnclaveCertificateIamRole)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/associateenclavecertificateiamrole.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/AssociateEnclaveCertificateIamRole)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/associateenclavecertificateiamrole.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/AssociateEnclaveCertificateIamRole)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/AssociateEnclaveCertificateIamRole)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/associateenclavecertificateiamrole.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AssociateDhcpOptions
 

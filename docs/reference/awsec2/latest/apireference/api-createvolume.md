@@ -7,13 +7,13 @@ Any AWS Marketplace product codes from the snapshot are propagated to the volume
 
 You can create encrypted volumes. Encrypted volumes must be attached to instances that
 support Amazon EBS encryption. Volumes that are created from encrypted snapshots are also automatically
-encrypted. For more information, see [Amazon EBS encryption](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html)
+encrypted. For more information, see [Amazon EBS encryption](../../../../services/ebs/latest/userguide/ebs-encryption.md)
 in the _Amazon EBS User Guide_.
 
 You can tag your volumes during creation. For more information, see [Tag your Amazon EC2\
 resources](../../../../services/ec2/latest/userguide/using-tags.md) in the _Amazon EC2 User Guide_.
 
-For more information, see [Create an Amazon EBS volume](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-creating-volume.html) in the
+For more information, see [Create an Amazon EBS volume](../../../../services/ebs/latest/userguide/ebs-creating-volume.md) in the
 _Amazon EBS User Guide_.
 
 ## Request Parameters
@@ -46,7 +46,7 @@ Required: No
 
 Unique, case-sensitive identifier that you provide to ensure the idempotency
 of the request. For more information, see [Ensure \
-Idempotency](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html).
+Idempotency](../../../../services/ec2/latest/devguide/ec2-api-idempotency.md).
 
 Type: String
 
@@ -67,12 +67,12 @@ Required: No
 Indicates whether the volume should be encrypted.
 The effect of setting the encryption state to `true` depends on
 the volume origin (new or from a snapshot), starting encryption state, ownership, and whether encryption by default is enabled.
-For more information, see [Encryption by default](https://docs.aws.amazon.com/ebs/latest/userguide/work-with-ebs-encr.html#encryption-by-default)
+For more information, see [Encryption by default](../../../../services/ebs/latest/userguide/work-with-ebs-encr.md#encryption-by-default)
 in the _Amazon EBS User Guide_.
 
 Encrypted Amazon EBS volumes must be attached to instances that support Amazon EBS encryption.
 For more information, see [Supported\
-instance types](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption-requirements.html#ebs-encryption_supported_instances).
+instance types](../../../../services/ebs/latest/userguide/ebs-encryption-requirements.md#ebs-encryption_supported_instances).
 
 Type: Boolean
 
@@ -94,7 +94,7 @@ Valid ranges:
 
 ###### Note
 
-[Instances built on the Nitro System](https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-nitro-instances.html) can support up to 256,000 IOPS. Other instances can support up to 32,000
+[Instances built on the Nitro System](../../../../services/ec2/latest/instancetypes/ec2-nitro-instances.md) can support up to 256,000 IOPS. Other instances can support up to 32,000
 IOPS.
 
 Type: Integer
@@ -127,9 +127,9 @@ Required: No
 **MultiAttachEnabled**
 
 Indicates whether to enable Amazon EBS Multi-Attach. If you enable Multi-Attach, you can attach the
-volume to up to 16 [Instances built on the Nitro System](https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-nitro-instances.html) in the same Availability Zone. This parameter is
+volume to up to 16 [Instances built on the Nitro System](../../../../services/ec2/latest/instancetypes/ec2-nitro-instances.md) in the same Availability Zone. This parameter is
 supported with `io1` and `io2` volumes only. For more information,
-see [Amazon EBS Multi-Attach](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volumes-multi.html) in the _Amazon EBS User Guide_.
+see [Amazon EBS Multi-Attach](../../../../services/ebs/latest/userguide/ebs-volumes-multi.md) in the _Amazon EBS User Guide_.
 
 Type: Boolean
 
@@ -227,7 +227,7 @@ the volume will be initialized at the specified rate instead of fast snapshot re
 
 - You want to create a volume that is initialized at the default rate.
 
-For more information, see [Initialize Amazon EBS volumes](https://docs.aws.amazon.com/ebs/latest/userguide/initalize-volume.html) in the _Amazon EC2 User Guide_.
+For more information, see [Initialize Amazon EBS volumes](../../../../services/ebs/latest/userguide/initalize-volume.md) in the _Amazon EC2 User Guide_.
 
 Valid range: 100 - 300 MiB/s
 
@@ -276,7 +276,7 @@ This parameter is not returned by CreateVolume.
 
 Information about the volume attachments.
 
-Type: Array of [VolumeAttachment](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VolumeAttachment.html) objects
+Type: Array of [VolumeAttachment](api-volumeattachment.md) objects
 
 **availabilityZone**
 
@@ -554,23 +554,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateVolume)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateVolume)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createvolume.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateVolume)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createvolume.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateVolume)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createvolume.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateVolume)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createvolume.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateVolume)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createvolume.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateVolume)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createvolume.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateVolume)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateVolume)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createvolume.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateVerifiedAccessTrustProvider
 

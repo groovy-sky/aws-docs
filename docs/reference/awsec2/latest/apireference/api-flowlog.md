@@ -53,7 +53,7 @@ Required: No
 
 The destination options.
 
-Type: [DestinationOptionsResponse](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DestinationOptionsResponse.html) object
+Type: [DestinationOptionsResponse](api-destinationoptionsresponse.md) object
 
 Required: No
 
@@ -112,7 +112,7 @@ Required: No
 The maximum interval of time, in seconds, during which a flow of packets is captured and aggregated into a flow log record.
 
 When a network interface is attached to a [Nitro-based\
-instance](https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-nitro-instances.html), the aggregation interval is always 60 seconds (1 minute) or less,
+instance](../../../../services/ec2/latest/instancetypes/ec2-nitro-instances.md), the aggregation interval is always 60 seconds (1 minute) or less,
 regardless of the specified value.
 
 Valid Values: `60` \| `600`
@@ -151,13 +151,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/FlowLog)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/flowlog.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/FlowLog)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/flowlog.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/FlowLog)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/flowlog.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 FleetSpotMaintenanceStrategiesRequest
 

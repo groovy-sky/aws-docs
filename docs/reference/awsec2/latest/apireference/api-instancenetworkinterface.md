@@ -9,7 +9,7 @@ Describes a network interface.
 The association information for an Elastic IPv4 associated with the network
 interface.
 
-Type: [InstanceNetworkInterfaceAssociation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceNetworkInterfaceAssociation.html) object
+Type: [InstanceNetworkInterfaceAssociation](api-instancenetworkinterfaceassociation.md) object
 
 Required: No
 
@@ -17,7 +17,7 @@ Required: No
 
 The network interface attachment.
 
-Type: [InstanceNetworkInterfaceAttachment](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceNetworkInterfaceAttachment.html) object
+Type: [InstanceNetworkInterfaceAttachment](api-instancenetworkinterfaceattachment.md) object
 
 Required: No
 
@@ -28,7 +28,7 @@ for connection tracking on an Elastic network interface. For more information, s
 [Connection tracking timeouts](../../../../services/ec2/latest/userguide/security-group-connection-tracking.md#connection-tracking-timeouts) in the
 _Amazon EC2 User Guide_.
 
-Type: [ConnectionTrackingSpecificationResponse](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ConnectionTrackingSpecificationResponse.html) object
+Type: [ConnectionTrackingSpecificationResponse](api-connectiontrackingspecificationresponse.md) object
 
 Required: No
 
@@ -63,7 +63,7 @@ Required: No
 
 The IPv4 delegated prefixes that are assigned to the network interface.
 
-Type: Array of [InstanceIpv4Prefix](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceIpv4Prefix.html) objects
+Type: Array of [InstanceIpv4Prefix](api-instanceipv4prefix.md) objects
 
 Required: No
 
@@ -79,7 +79,7 @@ Required: No
 
 The IPv6 delegated prefixes that are assigned to the network interface.
 
-Type: Array of [InstanceIpv6Prefix](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceIpv6Prefix.html) objects
+Type: Array of [InstanceIpv6Prefix](api-instanceipv6prefix.md) objects
 
 Required: No
 
@@ -135,7 +135,7 @@ Required: No
 
 The private IPv4 addresses associated with the network interface.
 
-Type: Array of [InstancePrivateIpAddress](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstancePrivateIpAddress.html) objects
+Type: Array of [InstancePrivateIpAddress](api-instanceprivateipaddress.md) objects
 
 Required: No
 
@@ -177,13 +177,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/InstanceNetworkInterface)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/instancenetworkinterface.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/InstanceNetworkInterface)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/instancenetworkinterface.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/InstanceNetworkInterface)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/instancenetworkinterface.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 InstanceMonitoring
 

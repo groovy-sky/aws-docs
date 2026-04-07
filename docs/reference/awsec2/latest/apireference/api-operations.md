@@ -2,1519 +2,1519 @@
 
 The following actions are supported:
 
-- [AcceptAddressTransfer](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AcceptAddressTransfer.html)
+- [AcceptAddressTransfer](api-acceptaddresstransfer.md)
 
-- [AcceptCapacityReservationBillingOwnership](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AcceptCapacityReservationBillingOwnership.html)
+- [AcceptCapacityReservationBillingOwnership](api-acceptcapacityreservationbillingownership.md)
 
-- [AcceptReservedInstancesExchangeQuote](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AcceptReservedInstancesExchangeQuote.html)
+- [AcceptReservedInstancesExchangeQuote](api-acceptreservedinstancesexchangequote.md)
 
-- [AcceptTransitGatewayMulticastDomainAssociations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AcceptTransitGatewayMulticastDomainAssociations.html)
+- [AcceptTransitGatewayMulticastDomainAssociations](api-accepttransitgatewaymulticastdomainassociations.md)
 
-- [AcceptTransitGatewayPeeringAttachment](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AcceptTransitGatewayPeeringAttachment.html)
+- [AcceptTransitGatewayPeeringAttachment](api-accepttransitgatewaypeeringattachment.md)
 
-- [AcceptTransitGatewayVpcAttachment](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AcceptTransitGatewayVpcAttachment.html)
+- [AcceptTransitGatewayVpcAttachment](api-accepttransitgatewayvpcattachment.md)
 
-- [AcceptVpcEndpointConnections](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AcceptVpcEndpointConnections.html)
+- [AcceptVpcEndpointConnections](api-acceptvpcendpointconnections.md)
 
-- [AcceptVpcPeeringConnection](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AcceptVpcPeeringConnection.html)
+- [AcceptVpcPeeringConnection](api-acceptvpcpeeringconnection.md)
 
-- [AdvertiseByoipCidr](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AdvertiseByoipCidr.html)
+- [AdvertiseByoipCidr](api-advertisebyoipcidr.md)
 
-- [AllocateAddress](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AllocateAddress.html)
+- [AllocateAddress](api-allocateaddress.md)
 
-- [AllocateHosts](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AllocateHosts.html)
+- [AllocateHosts](api-allocatehosts.md)
 
-- [AllocateIpamPoolCidr](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AllocateIpamPoolCidr.html)
+- [AllocateIpamPoolCidr](api-allocateipampoolcidr.md)
 
-- [ApplySecurityGroupsToClientVpnTargetNetwork](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ApplySecurityGroupsToClientVpnTargetNetwork.html)
+- [ApplySecurityGroupsToClientVpnTargetNetwork](api-applysecuritygroupstoclientvpntargetnetwork.md)
 
-- [AssignIpv6Addresses](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssignIpv6Addresses.html)
+- [AssignIpv6Addresses](api-assignipv6addresses.md)
 
-- [AssignPrivateIpAddresses](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssignPrivateIpAddresses.html)
+- [AssignPrivateIpAddresses](api-assignprivateipaddresses.md)
 
-- [AssignPrivateNatGatewayAddress](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssignPrivateNatGatewayAddress.html)
+- [AssignPrivateNatGatewayAddress](api-assignprivatenatgatewayaddress.md)
 
-- [AssociateAddress](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateAddress.html)
+- [AssociateAddress](api-associateaddress.md)
 
-- [AssociateCapacityReservationBillingOwner](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateCapacityReservationBillingOwner.html)
+- [AssociateCapacityReservationBillingOwner](api-associatecapacityreservationbillingowner.md)
 
-- [AssociateClientVpnTargetNetwork](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateClientVpnTargetNetwork.html)
+- [AssociateClientVpnTargetNetwork](api-associateclientvpntargetnetwork.md)
 
-- [AssociateDhcpOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateDhcpOptions.html)
+- [AssociateDhcpOptions](api-associatedhcpoptions.md)
 
-- [AssociateEnclaveCertificateIamRole](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateEnclaveCertificateIamRole.html)
+- [AssociateEnclaveCertificateIamRole](api-associateenclavecertificateiamrole.md)
 
-- [AssociateIamInstanceProfile](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateIamInstanceProfile.html)
+- [AssociateIamInstanceProfile](api-associateiaminstanceprofile.md)
 
-- [AssociateInstanceEventWindow](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateInstanceEventWindow.html)
+- [AssociateInstanceEventWindow](api-associateinstanceeventwindow.md)
 
-- [AssociateIpamByoasn](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateIpamByoasn.html)
+- [AssociateIpamByoasn](api-associateipambyoasn.md)
 
-- [AssociateIpamResourceDiscovery](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateIpamResourceDiscovery.html)
+- [AssociateIpamResourceDiscovery](api-associateipamresourcediscovery.md)
 
-- [AssociateNatGatewayAddress](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateNatGatewayAddress.html)
+- [AssociateNatGatewayAddress](api-associatenatgatewayaddress.md)
 
-- [AssociateRouteServer](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateRouteServer.html)
+- [AssociateRouteServer](api-associaterouteserver.md)
 
-- [AssociateRouteTable](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateRouteTable.html)
+- [AssociateRouteTable](api-associateroutetable.md)
 
-- [AssociateSecurityGroupVpc](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateSecurityGroupVpc.html)
+- [AssociateSecurityGroupVpc](api-associatesecuritygroupvpc.md)
 
-- [AssociateSubnetCidrBlock](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateSubnetCidrBlock.html)
+- [AssociateSubnetCidrBlock](api-associatesubnetcidrblock.md)
 
-- [AssociateTransitGatewayMulticastDomain](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateTransitGatewayMulticastDomain.html)
+- [AssociateTransitGatewayMulticastDomain](api-associatetransitgatewaymulticastdomain.md)
 
-- [AssociateTransitGatewayPolicyTable](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateTransitGatewayPolicyTable.html)
+- [AssociateTransitGatewayPolicyTable](api-associatetransitgatewaypolicytable.md)
 
-- [AssociateTransitGatewayRouteTable](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateTransitGatewayRouteTable.html)
+- [AssociateTransitGatewayRouteTable](api-associatetransitgatewayroutetable.md)
 
-- [AssociateTrunkInterface](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateTrunkInterface.html)
+- [AssociateTrunkInterface](api-associatetrunkinterface.md)
 
-- [AssociateVpcCidrBlock](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateVpcCidrBlock.html)
+- [AssociateVpcCidrBlock](api-associatevpccidrblock.md)
 
-- [AttachClassicLinkVpc](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttachClassicLinkVpc.html)
+- [AttachClassicLinkVpc](api-attachclassiclinkvpc.md)
 
-- [AttachInternetGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttachInternetGateway.html)
+- [AttachInternetGateway](api-attachinternetgateway.md)
 
-- [AttachNetworkInterface](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttachNetworkInterface.html)
+- [AttachNetworkInterface](api-attachnetworkinterface.md)
 
-- [AttachVerifiedAccessTrustProvider](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttachVerifiedAccessTrustProvider.html)
+- [AttachVerifiedAccessTrustProvider](api-attachverifiedaccesstrustprovider.md)
 
-- [AttachVolume](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttachVolume.html)
+- [AttachVolume](api-attachvolume.md)
 
-- [AttachVpnGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttachVpnGateway.html)
+- [AttachVpnGateway](api-attachvpngateway.md)
 
-- [AuthorizeClientVpnIngress](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AuthorizeClientVpnIngress.html)
+- [AuthorizeClientVpnIngress](api-authorizeclientvpningress.md)
 
-- [AuthorizeSecurityGroupEgress](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AuthorizeSecurityGroupEgress.html)
+- [AuthorizeSecurityGroupEgress](api-authorizesecuritygroupegress.md)
 
-- [AuthorizeSecurityGroupIngress](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AuthorizeSecurityGroupIngress.html)
+- [AuthorizeSecurityGroupIngress](api-authorizesecuritygroupingress.md)
 
-- [BundleInstance](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_BundleInstance.html)
+- [BundleInstance](api-bundleinstance.md)
 
-- [CancelBundleTask](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelBundleTask.html)
+- [CancelBundleTask](api-cancelbundletask.md)
 
-- [CancelCapacityReservation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelCapacityReservation.html)
+- [CancelCapacityReservation](api-cancelcapacityreservation.md)
 
-- [CancelCapacityReservationFleets](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelCapacityReservationFleets.html)
+- [CancelCapacityReservationFleets](api-cancelcapacityreservationfleets.md)
 
-- [CancelConversionTask](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelConversionTask.html)
+- [CancelConversionTask](api-cancelconversiontask.md)
 
-- [CancelDeclarativePoliciesReport](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelDeclarativePoliciesReport.html)
+- [CancelDeclarativePoliciesReport](api-canceldeclarativepoliciesreport.md)
 
-- [CancelExportTask](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelExportTask.html)
+- [CancelExportTask](api-cancelexporttask.md)
 
-- [CancelImageLaunchPermission](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelImageLaunchPermission.html)
+- [CancelImageLaunchPermission](api-cancelimagelaunchpermission.md)
 
-- [CancelImportTask](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelImportTask.html)
+- [CancelImportTask](api-cancelimporttask.md)
 
-- [CancelReservedInstancesListing](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelReservedInstancesListing.html)
+- [CancelReservedInstancesListing](api-cancelreservedinstanceslisting.md)
 
-- [CancelSpotFleetRequests](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelSpotFleetRequests.html)
+- [CancelSpotFleetRequests](api-cancelspotfleetrequests.md)
 
-- [CancelSpotInstanceRequests](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelSpotInstanceRequests.html)
+- [CancelSpotInstanceRequests](api-cancelspotinstancerequests.md)
 
-- [ConfirmProductInstance](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ConfirmProductInstance.html)
+- [ConfirmProductInstance](api-confirmproductinstance.md)
 
-- [CopyFpgaImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CopyFpgaImage.html)
+- [CopyFpgaImage](api-copyfpgaimage.md)
 
-- [CopyImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CopyImage.html)
+- [CopyImage](api-copyimage.md)
 
-- [CopySnapshot](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CopySnapshot.html)
+- [CopySnapshot](api-copysnapshot.md)
 
-- [CopyVolumes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CopyVolumes.html)
+- [CopyVolumes](api-copyvolumes.md)
 
-- [CreateCapacityManagerDataExport](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateCapacityManagerDataExport.html)
+- [CreateCapacityManagerDataExport](api-createcapacitymanagerdataexport.md)
 
-- [CreateCapacityReservation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateCapacityReservation.html)
+- [CreateCapacityReservation](api-createcapacityreservation.md)
 
-- [CreateCapacityReservationBySplitting](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateCapacityReservationBySplitting.html)
+- [CreateCapacityReservationBySplitting](api-createcapacityreservationbysplitting.md)
 
-- [CreateCapacityReservationFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateCapacityReservationFleet.html)
+- [CreateCapacityReservationFleet](api-createcapacityreservationfleet.md)
 
-- [CreateCarrierGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateCarrierGateway.html)
+- [CreateCarrierGateway](api-createcarriergateway.md)
 
-- [CreateClientVpnEndpoint](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateClientVpnEndpoint.html)
+- [CreateClientVpnEndpoint](api-createclientvpnendpoint.md)
 
-- [CreateClientVpnRoute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateClientVpnRoute.html)
+- [CreateClientVpnRoute](api-createclientvpnroute.md)
 
-- [CreateCoipCidr](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateCoipCidr.html)
+- [CreateCoipCidr](api-createcoipcidr.md)
 
-- [CreateCoipPool](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateCoipPool.html)
+- [CreateCoipPool](api-createcoippool.md)
 
-- [CreateCustomerGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateCustomerGateway.html)
+- [CreateCustomerGateway](api-createcustomergateway.md)
 
-- [CreateDefaultSubnet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateDefaultSubnet.html)
+- [CreateDefaultSubnet](api-createdefaultsubnet.md)
 
-- [CreateDefaultVpc](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateDefaultVpc.html)
+- [CreateDefaultVpc](api-createdefaultvpc.md)
 
-- [CreateDelegateMacVolumeOwnershipTask](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateDelegateMacVolumeOwnershipTask.html)
+- [CreateDelegateMacVolumeOwnershipTask](api-createdelegatemacvolumeownershiptask.md)
 
-- [CreateDhcpOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateDhcpOptions.html)
+- [CreateDhcpOptions](api-createdhcpoptions.md)
 
-- [CreateEgressOnlyInternetGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateEgressOnlyInternetGateway.html)
+- [CreateEgressOnlyInternetGateway](api-createegressonlyinternetgateway.md)
 
-- [CreateFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFleet.html)
+- [CreateFleet](api-createfleet.md)
 
-- [CreateFlowLogs](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFlowLogs.html)
+- [CreateFlowLogs](api-createflowlogs.md)
 
-- [CreateFpgaImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFpgaImage.html)
+- [CreateFpgaImage](api-createfpgaimage.md)
 
-- [CreateImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateImage.html)
+- [CreateImage](api-createimage.md)
 
-- [CreateImageUsageReport](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateImageUsageReport.html)
+- [CreateImageUsageReport](api-createimageusagereport.md)
 
-- [CreateInstanceConnectEndpoint](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateInstanceConnectEndpoint.html)
+- [CreateInstanceConnectEndpoint](api-createinstanceconnectendpoint.md)
 
-- [CreateInstanceEventWindow](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateInstanceEventWindow.html)
+- [CreateInstanceEventWindow](api-createinstanceeventwindow.md)
 
-- [CreateInstanceExportTask](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateInstanceExportTask.html)
+- [CreateInstanceExportTask](api-createinstanceexporttask.md)
 
-- [CreateInternetGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateInternetGateway.html)
+- [CreateInternetGateway](api-createinternetgateway.md)
 
-- [CreateInterruptibleCapacityReservationAllocation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateInterruptibleCapacityReservationAllocation.html)
+- [CreateInterruptibleCapacityReservationAllocation](api-createinterruptiblecapacityreservationallocation.md)
 
-- [CreateIpam](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateIpam.html)
+- [CreateIpam](api-createipam.md)
 
-- [CreateIpamExternalResourceVerificationToken](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateIpamExternalResourceVerificationToken.html)
+- [CreateIpamExternalResourceVerificationToken](api-createipamexternalresourceverificationtoken.md)
 
-- [CreateIpamPolicy](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateIpamPolicy.html)
+- [CreateIpamPolicy](api-createipampolicy.md)
 
-- [CreateIpamPool](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateIpamPool.html)
+- [CreateIpamPool](api-createipampool.md)
 
-- [CreateIpamPrefixListResolver](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateIpamPrefixListResolver.html)
+- [CreateIpamPrefixListResolver](api-createipamprefixlistresolver.md)
 
-- [CreateIpamPrefixListResolverTarget](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateIpamPrefixListResolverTarget.html)
+- [CreateIpamPrefixListResolverTarget](api-createipamprefixlistresolvertarget.md)
 
-- [CreateIpamResourceDiscovery](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateIpamResourceDiscovery.html)
+- [CreateIpamResourceDiscovery](api-createipamresourcediscovery.md)
 
-- [CreateIpamScope](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateIpamScope.html)
+- [CreateIpamScope](api-createipamscope.md)
 
-- [CreateKeyPair](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateKeyPair.html)
+- [CreateKeyPair](api-createkeypair.md)
 
-- [CreateLaunchTemplate](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateLaunchTemplate.html)
+- [CreateLaunchTemplate](api-createlaunchtemplate.md)
 
-- [CreateLaunchTemplateVersion](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateLaunchTemplateVersion.html)
+- [CreateLaunchTemplateVersion](api-createlaunchtemplateversion.md)
 
-- [CreateLocalGatewayRoute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateLocalGatewayRoute.html)
+- [CreateLocalGatewayRoute](api-createlocalgatewayroute.md)
 
-- [CreateLocalGatewayRouteTable](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateLocalGatewayRouteTable.html)
+- [CreateLocalGatewayRouteTable](api-createlocalgatewayroutetable.md)
 
-- [CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociation.html)
+- [CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociation](api-createlocalgatewayroutetablevirtualinterfacegroupassociation.md)
 
-- [CreateLocalGatewayRouteTableVpcAssociation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateLocalGatewayRouteTableVpcAssociation.html)
+- [CreateLocalGatewayRouteTableVpcAssociation](api-createlocalgatewayroutetablevpcassociation.md)
 
-- [CreateLocalGatewayVirtualInterface](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateLocalGatewayVirtualInterface.html)
+- [CreateLocalGatewayVirtualInterface](api-createlocalgatewayvirtualinterface.md)
 
-- [CreateLocalGatewayVirtualInterfaceGroup](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateLocalGatewayVirtualInterfaceGroup.html)
+- [CreateLocalGatewayVirtualInterfaceGroup](api-createlocalgatewayvirtualinterfacegroup.md)
 
-- [CreateMacSystemIntegrityProtectionModificationTask](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateMacSystemIntegrityProtectionModificationTask.html)
+- [CreateMacSystemIntegrityProtectionModificationTask](api-createmacsystemintegrityprotectionmodificationtask.md)
 
-- [CreateManagedPrefixList](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateManagedPrefixList.html)
+- [CreateManagedPrefixList](api-createmanagedprefixlist.md)
 
-- [CreateNatGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNatGateway.html)
+- [CreateNatGateway](api-createnatgateway.md)
 
-- [CreateNetworkAcl](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNetworkAcl.html)
+- [CreateNetworkAcl](api-createnetworkacl.md)
 
-- [CreateNetworkAclEntry](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNetworkAclEntry.html)
+- [CreateNetworkAclEntry](api-createnetworkaclentry.md)
 
-- [CreateNetworkInsightsAccessScope](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNetworkInsightsAccessScope.html)
+- [CreateNetworkInsightsAccessScope](api-createnetworkinsightsaccessscope.md)
 
-- [CreateNetworkInsightsPath](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNetworkInsightsPath.html)
+- [CreateNetworkInsightsPath](api-createnetworkinsightspath.md)
 
 - [CreateNetworkInterface](api-createnetworkinterface.md)
 
 - [CreateNetworkInterfacePermission](api-createnetworkinterfacepermission.md)
 
-- [CreatePlacementGroup](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreatePlacementGroup.html)
+- [CreatePlacementGroup](api-createplacementgroup.md)
 
-- [CreatePublicIpv4Pool](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreatePublicIpv4Pool.html)
+- [CreatePublicIpv4Pool](api-createpublicipv4pool.md)
 
-- [CreateReplaceRootVolumeTask](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateReplaceRootVolumeTask.html)
+- [CreateReplaceRootVolumeTask](api-createreplacerootvolumetask.md)
 
-- [CreateReservedInstancesListing](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateReservedInstancesListing.html)
+- [CreateReservedInstancesListing](api-createreservedinstanceslisting.md)
 
-- [CreateRestoreImageTask](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateRestoreImageTask.html)
+- [CreateRestoreImageTask](api-createrestoreimagetask.md)
 
-- [CreateRoute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateRoute.html)
+- [CreateRoute](api-createroute.md)
 
-- [CreateRouteServer](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateRouteServer.html)
+- [CreateRouteServer](api-createrouteserver.md)
 
-- [CreateRouteServerEndpoint](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateRouteServerEndpoint.html)
+- [CreateRouteServerEndpoint](api-createrouteserverendpoint.md)
 
-- [CreateRouteServerPeer](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateRouteServerPeer.html)
+- [CreateRouteServerPeer](api-createrouteserverpeer.md)
 
-- [CreateRouteTable](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateRouteTable.html)
+- [CreateRouteTable](api-createroutetable.md)
 
-- [CreateSecondaryNetwork](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSecondaryNetwork.html)
+- [CreateSecondaryNetwork](api-createsecondarynetwork.md)
 
-- [CreateSecondarySubnet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSecondarySubnet.html)
+- [CreateSecondarySubnet](api-createsecondarysubnet.md)
 
-- [CreateSecurityGroup](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSecurityGroup.html)
+- [CreateSecurityGroup](api-createsecuritygroup.md)
 
-- [CreateSnapshot](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSnapshot.html)
+- [CreateSnapshot](api-createsnapshot.md)
 
-- [CreateSnapshots](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSnapshots.html)
+- [CreateSnapshots](api-createsnapshots.md)
 
-- [CreateSpotDatafeedSubscription](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSpotDatafeedSubscription.html)
+- [CreateSpotDatafeedSubscription](api-createspotdatafeedsubscription.md)
 
-- [CreateStoreImageTask](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateStoreImageTask.html)
+- [CreateStoreImageTask](api-createstoreimagetask.md)
 
-- [CreateSubnet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSubnet.html)
+- [CreateSubnet](api-createsubnet.md)
 
-- [CreateSubnetCidrReservation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSubnetCidrReservation.html)
+- [CreateSubnetCidrReservation](api-createsubnetcidrreservation.md)
 
-- [CreateTags](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTags.html)
+- [CreateTags](api-createtags.md)
 
-- [CreateTrafficMirrorFilter](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTrafficMirrorFilter.html)
+- [CreateTrafficMirrorFilter](api-createtrafficmirrorfilter.md)
 
-- [CreateTrafficMirrorFilterRule](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTrafficMirrorFilterRule.html)
+- [CreateTrafficMirrorFilterRule](api-createtrafficmirrorfilterrule.md)
 
-- [CreateTrafficMirrorSession](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTrafficMirrorSession.html)
+- [CreateTrafficMirrorSession](api-createtrafficmirrorsession.md)
 
-- [CreateTrafficMirrorTarget](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTrafficMirrorTarget.html)
+- [CreateTrafficMirrorTarget](api-createtrafficmirrortarget.md)
 
-- [CreateTransitGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTransitGateway.html)
+- [CreateTransitGateway](api-createtransitgateway.md)
 
-- [CreateTransitGatewayConnect](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTransitGatewayConnect.html)
+- [CreateTransitGatewayConnect](api-createtransitgatewayconnect.md)
 
-- [CreateTransitGatewayConnectPeer](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTransitGatewayConnectPeer.html)
+- [CreateTransitGatewayConnectPeer](api-createtransitgatewayconnectpeer.md)
 
-- [CreateTransitGatewayMeteringPolicy](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTransitGatewayMeteringPolicy.html)
+- [CreateTransitGatewayMeteringPolicy](api-createtransitgatewaymeteringpolicy.md)
 
-- [CreateTransitGatewayMeteringPolicyEntry](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTransitGatewayMeteringPolicyEntry.html)
+- [CreateTransitGatewayMeteringPolicyEntry](api-createtransitgatewaymeteringpolicyentry.md)
 
-- [CreateTransitGatewayMulticastDomain](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTransitGatewayMulticastDomain.html)
+- [CreateTransitGatewayMulticastDomain](api-createtransitgatewaymulticastdomain.md)
 
-- [CreateTransitGatewayPeeringAttachment](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTransitGatewayPeeringAttachment.html)
+- [CreateTransitGatewayPeeringAttachment](api-createtransitgatewaypeeringattachment.md)
 
-- [CreateTransitGatewayPolicyTable](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTransitGatewayPolicyTable.html)
+- [CreateTransitGatewayPolicyTable](api-createtransitgatewaypolicytable.md)
 
-- [CreateTransitGatewayPrefixListReference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTransitGatewayPrefixListReference.html)
+- [CreateTransitGatewayPrefixListReference](api-createtransitgatewayprefixlistreference.md)
 
-- [CreateTransitGatewayRoute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTransitGatewayRoute.html)
+- [CreateTransitGatewayRoute](api-createtransitgatewayroute.md)
 
-- [CreateTransitGatewayRouteTable](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTransitGatewayRouteTable.html)
+- [CreateTransitGatewayRouteTable](api-createtransitgatewayroutetable.md)
 
-- [CreateTransitGatewayRouteTableAnnouncement](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTransitGatewayRouteTableAnnouncement.html)
+- [CreateTransitGatewayRouteTableAnnouncement](api-createtransitgatewayroutetableannouncement.md)
 
-- [CreateTransitGatewayVpcAttachment](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTransitGatewayVpcAttachment.html)
+- [CreateTransitGatewayVpcAttachment](api-createtransitgatewayvpcattachment.md)
 
-- [CreateVerifiedAccessEndpoint](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVerifiedAccessEndpoint.html)
+- [CreateVerifiedAccessEndpoint](api-createverifiedaccessendpoint.md)
 
-- [CreateVerifiedAccessGroup](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVerifiedAccessGroup.html)
+- [CreateVerifiedAccessGroup](api-createverifiedaccessgroup.md)
 
-- [CreateVerifiedAccessInstance](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVerifiedAccessInstance.html)
+- [CreateVerifiedAccessInstance](api-createverifiedaccessinstance.md)
 
-- [CreateVerifiedAccessTrustProvider](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVerifiedAccessTrustProvider.html)
+- [CreateVerifiedAccessTrustProvider](api-createverifiedaccesstrustprovider.md)
 
-- [CreateVolume](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVolume.html)
+- [CreateVolume](api-createvolume.md)
 
-- [CreateVpc](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpc.html)
+- [CreateVpc](api-createvpc.md)
 
-- [CreateVpcBlockPublicAccessExclusion](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpcBlockPublicAccessExclusion.html)
+- [CreateVpcBlockPublicAccessExclusion](api-createvpcblockpublicaccessexclusion.md)
 
-- [CreateVpcEncryptionControl](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpcEncryptionControl.html)
+- [CreateVpcEncryptionControl](api-createvpcencryptioncontrol.md)
 
-- [CreateVpcEndpoint](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpcEndpoint.html)
+- [CreateVpcEndpoint](api-createvpcendpoint.md)
 
-- [CreateVpcEndpointConnectionNotification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpcEndpointConnectionNotification.html)
+- [CreateVpcEndpointConnectionNotification](api-createvpcendpointconnectionnotification.md)
 
-- [CreateVpcEndpointServiceConfiguration](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpcEndpointServiceConfiguration.html)
+- [CreateVpcEndpointServiceConfiguration](api-createvpcendpointserviceconfiguration.md)
 
-- [CreateVpcPeeringConnection](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpcPeeringConnection.html)
+- [CreateVpcPeeringConnection](api-createvpcpeeringconnection.md)
 
-- [CreateVpnConcentrator](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpnConcentrator.html)
+- [CreateVpnConcentrator](api-createvpnconcentrator.md)
 
-- [CreateVpnConnection](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpnConnection.html)
+- [CreateVpnConnection](api-createvpnconnection.md)
 
-- [CreateVpnConnectionRoute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpnConnectionRoute.html)
+- [CreateVpnConnectionRoute](api-createvpnconnectionroute.md)
 
-- [CreateVpnGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpnGateway.html)
+- [CreateVpnGateway](api-createvpngateway.md)
 
-- [DeleteCapacityManagerDataExport](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteCapacityManagerDataExport.html)
+- [DeleteCapacityManagerDataExport](api-deletecapacitymanagerdataexport.md)
 
-- [DeleteCarrierGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteCarrierGateway.html)
+- [DeleteCarrierGateway](api-deletecarriergateway.md)
 
-- [DeleteClientVpnEndpoint](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteClientVpnEndpoint.html)
+- [DeleteClientVpnEndpoint](api-deleteclientvpnendpoint.md)
 
-- [DeleteClientVpnRoute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteClientVpnRoute.html)
+- [DeleteClientVpnRoute](api-deleteclientvpnroute.md)
 
-- [DeleteCoipCidr](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteCoipCidr.html)
+- [DeleteCoipCidr](api-deletecoipcidr.md)
 
-- [DeleteCoipPool](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteCoipPool.html)
+- [DeleteCoipPool](api-deletecoippool.md)
 
-- [DeleteCustomerGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteCustomerGateway.html)
+- [DeleteCustomerGateway](api-deletecustomergateway.md)
 
-- [DeleteDhcpOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteDhcpOptions.html)
+- [DeleteDhcpOptions](api-deletedhcpoptions.md)
 
-- [DeleteEgressOnlyInternetGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteEgressOnlyInternetGateway.html)
+- [DeleteEgressOnlyInternetGateway](api-deleteegressonlyinternetgateway.md)
 
-- [DeleteFleets](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteFleets.html)
+- [DeleteFleets](api-deletefleets.md)
 
-- [DeleteFlowLogs](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteFlowLogs.html)
+- [DeleteFlowLogs](api-deleteflowlogs.md)
 
-- [DeleteFpgaImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteFpgaImage.html)
+- [DeleteFpgaImage](api-deletefpgaimage.md)
 
-- [DeleteImageUsageReport](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteImageUsageReport.html)
+- [DeleteImageUsageReport](api-deleteimageusagereport.md)
 
-- [DeleteInstanceConnectEndpoint](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteInstanceConnectEndpoint.html)
+- [DeleteInstanceConnectEndpoint](api-deleteinstanceconnectendpoint.md)
 
-- [DeleteInstanceEventWindow](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteInstanceEventWindow.html)
+- [DeleteInstanceEventWindow](api-deleteinstanceeventwindow.md)
 
-- [DeleteInternetGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteInternetGateway.html)
+- [DeleteInternetGateway](api-deleteinternetgateway.md)
 
-- [DeleteIpam](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteIpam.html)
+- [DeleteIpam](api-deleteipam.md)
 
-- [DeleteIpamExternalResourceVerificationToken](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteIpamExternalResourceVerificationToken.html)
+- [DeleteIpamExternalResourceVerificationToken](api-deleteipamexternalresourceverificationtoken.md)
 
-- [DeleteIpamPolicy](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteIpamPolicy.html)
+- [DeleteIpamPolicy](api-deleteipampolicy.md)
 
-- [DeleteIpamPool](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteIpamPool.html)
+- [DeleteIpamPool](api-deleteipampool.md)
 
-- [DeleteIpamPrefixListResolver](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteIpamPrefixListResolver.html)
+- [DeleteIpamPrefixListResolver](api-deleteipamprefixlistresolver.md)
 
-- [DeleteIpamPrefixListResolverTarget](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteIpamPrefixListResolverTarget.html)
+- [DeleteIpamPrefixListResolverTarget](api-deleteipamprefixlistresolvertarget.md)
 
-- [DeleteIpamResourceDiscovery](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteIpamResourceDiscovery.html)
+- [DeleteIpamResourceDiscovery](api-deleteipamresourcediscovery.md)
 
-- [DeleteIpamScope](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteIpamScope.html)
+- [DeleteIpamScope](api-deleteipamscope.md)
 
-- [DeleteKeyPair](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteKeyPair.html)
+- [DeleteKeyPair](api-deletekeypair.md)
 
-- [DeleteLaunchTemplate](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteLaunchTemplate.html)
+- [DeleteLaunchTemplate](api-deletelaunchtemplate.md)
 
-- [DeleteLaunchTemplateVersions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteLaunchTemplateVersions.html)
+- [DeleteLaunchTemplateVersions](api-deletelaunchtemplateversions.md)
 
-- [DeleteLocalGatewayRoute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteLocalGatewayRoute.html)
+- [DeleteLocalGatewayRoute](api-deletelocalgatewayroute.md)
 
-- [DeleteLocalGatewayRouteTable](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteLocalGatewayRouteTable.html)
+- [DeleteLocalGatewayRouteTable](api-deletelocalgatewayroutetable.md)
 
-- [DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation.html)
+- [DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation](api-deletelocalgatewayroutetablevirtualinterfacegroupassociation.md)
 
-- [DeleteLocalGatewayRouteTableVpcAssociation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteLocalGatewayRouteTableVpcAssociation.html)
+- [DeleteLocalGatewayRouteTableVpcAssociation](api-deletelocalgatewayroutetablevpcassociation.md)
 
-- [DeleteLocalGatewayVirtualInterface](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteLocalGatewayVirtualInterface.html)
+- [DeleteLocalGatewayVirtualInterface](api-deletelocalgatewayvirtualinterface.md)
 
-- [DeleteLocalGatewayVirtualInterfaceGroup](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteLocalGatewayVirtualInterfaceGroup.html)
+- [DeleteLocalGatewayVirtualInterfaceGroup](api-deletelocalgatewayvirtualinterfacegroup.md)
 
-- [DeleteManagedPrefixList](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteManagedPrefixList.html)
+- [DeleteManagedPrefixList](api-deletemanagedprefixlist.md)
 
-- [DeleteNatGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNatGateway.html)
+- [DeleteNatGateway](api-deletenatgateway.md)
 
-- [DeleteNetworkAcl](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNetworkAcl.html)
+- [DeleteNetworkAcl](api-deletenetworkacl.md)
 
-- [DeleteNetworkAclEntry](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNetworkAclEntry.html)
+- [DeleteNetworkAclEntry](api-deletenetworkaclentry.md)
 
-- [DeleteNetworkInsightsAccessScope](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNetworkInsightsAccessScope.html)
+- [DeleteNetworkInsightsAccessScope](api-deletenetworkinsightsaccessscope.md)
 
-- [DeleteNetworkInsightsAccessScopeAnalysis](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNetworkInsightsAccessScopeAnalysis.html)
+- [DeleteNetworkInsightsAccessScopeAnalysis](api-deletenetworkinsightsaccessscopeanalysis.md)
 
-- [DeleteNetworkInsightsAnalysis](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNetworkInsightsAnalysis.html)
+- [DeleteNetworkInsightsAnalysis](api-deletenetworkinsightsanalysis.md)
 
-- [DeleteNetworkInsightsPath](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNetworkInsightsPath.html)
+- [DeleteNetworkInsightsPath](api-deletenetworkinsightspath.md)
 
 - [DeleteNetworkInterface](api-deletenetworkinterface.md)
 
 - [DeleteNetworkInterfacePermission](api-deletenetworkinterfacepermission.md)
 
-- [DeletePlacementGroup](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeletePlacementGroup.html)
+- [DeletePlacementGroup](api-deleteplacementgroup.md)
 
-- [DeletePublicIpv4Pool](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeletePublicIpv4Pool.html)
+- [DeletePublicIpv4Pool](api-deletepublicipv4pool.md)
 
-- [DeleteQueuedReservedInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteQueuedReservedInstances.html)
+- [DeleteQueuedReservedInstances](api-deletequeuedreservedinstances.md)
 
-- [DeleteRoute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteRoute.html)
+- [DeleteRoute](api-deleteroute.md)
 
-- [DeleteRouteServer](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteRouteServer.html)
+- [DeleteRouteServer](api-deleterouteserver.md)
 
-- [DeleteRouteServerEndpoint](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteRouteServerEndpoint.html)
+- [DeleteRouteServerEndpoint](api-deleterouteserverendpoint.md)
 
-- [DeleteRouteServerPeer](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteRouteServerPeer.html)
+- [DeleteRouteServerPeer](api-deleterouteserverpeer.md)
 
-- [DeleteRouteTable](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteRouteTable.html)
+- [DeleteRouteTable](api-deleteroutetable.md)
 
-- [DeleteSecondaryNetwork](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteSecondaryNetwork.html)
+- [DeleteSecondaryNetwork](api-deletesecondarynetwork.md)
 
-- [DeleteSecondarySubnet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteSecondarySubnet.html)
+- [DeleteSecondarySubnet](api-deletesecondarysubnet.md)
 
-- [DeleteSecurityGroup](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteSecurityGroup.html)
+- [DeleteSecurityGroup](api-deletesecuritygroup.md)
 
-- [DeleteSnapshot](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteSnapshot.html)
+- [DeleteSnapshot](api-deletesnapshot.md)
 
-- [DeleteSpotDatafeedSubscription](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteSpotDatafeedSubscription.html)
+- [DeleteSpotDatafeedSubscription](api-deletespotdatafeedsubscription.md)
 
-- [DeleteSubnet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteSubnet.html)
+- [DeleteSubnet](api-deletesubnet.md)
 
-- [DeleteSubnetCidrReservation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteSubnetCidrReservation.html)
+- [DeleteSubnetCidrReservation](api-deletesubnetcidrreservation.md)
 
-- [DeleteTags](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTags.html)
+- [DeleteTags](api-deletetags.md)
 
-- [DeleteTrafficMirrorFilter](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTrafficMirrorFilter.html)
+- [DeleteTrafficMirrorFilter](api-deletetrafficmirrorfilter.md)
 
-- [DeleteTrafficMirrorFilterRule](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTrafficMirrorFilterRule.html)
+- [DeleteTrafficMirrorFilterRule](api-deletetrafficmirrorfilterrule.md)
 
-- [DeleteTrafficMirrorSession](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTrafficMirrorSession.html)
+- [DeleteTrafficMirrorSession](api-deletetrafficmirrorsession.md)
 
-- [DeleteTrafficMirrorTarget](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTrafficMirrorTarget.html)
+- [DeleteTrafficMirrorTarget](api-deletetrafficmirrortarget.md)
 
-- [DeleteTransitGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTransitGateway.html)
+- [DeleteTransitGateway](api-deletetransitgateway.md)
 
-- [DeleteTransitGatewayConnect](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTransitGatewayConnect.html)
+- [DeleteTransitGatewayConnect](api-deletetransitgatewayconnect.md)
 
-- [DeleteTransitGatewayConnectPeer](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTransitGatewayConnectPeer.html)
+- [DeleteTransitGatewayConnectPeer](api-deletetransitgatewayconnectpeer.md)
 
-- [DeleteTransitGatewayMeteringPolicy](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTransitGatewayMeteringPolicy.html)
+- [DeleteTransitGatewayMeteringPolicy](api-deletetransitgatewaymeteringpolicy.md)
 
-- [DeleteTransitGatewayMeteringPolicyEntry](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTransitGatewayMeteringPolicyEntry.html)
+- [DeleteTransitGatewayMeteringPolicyEntry](api-deletetransitgatewaymeteringpolicyentry.md)
 
-- [DeleteTransitGatewayMulticastDomain](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTransitGatewayMulticastDomain.html)
+- [DeleteTransitGatewayMulticastDomain](api-deletetransitgatewaymulticastdomain.md)
 
-- [DeleteTransitGatewayPeeringAttachment](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTransitGatewayPeeringAttachment.html)
+- [DeleteTransitGatewayPeeringAttachment](api-deletetransitgatewaypeeringattachment.md)
 
-- [DeleteTransitGatewayPolicyTable](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTransitGatewayPolicyTable.html)
+- [DeleteTransitGatewayPolicyTable](api-deletetransitgatewaypolicytable.md)
 
-- [DeleteTransitGatewayPrefixListReference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTransitGatewayPrefixListReference.html)
+- [DeleteTransitGatewayPrefixListReference](api-deletetransitgatewayprefixlistreference.md)
 
-- [DeleteTransitGatewayRoute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTransitGatewayRoute.html)
+- [DeleteTransitGatewayRoute](api-deletetransitgatewayroute.md)
 
-- [DeleteTransitGatewayRouteTable](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTransitGatewayRouteTable.html)
+- [DeleteTransitGatewayRouteTable](api-deletetransitgatewayroutetable.md)
 
-- [DeleteTransitGatewayRouteTableAnnouncement](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTransitGatewayRouteTableAnnouncement.html)
+- [DeleteTransitGatewayRouteTableAnnouncement](api-deletetransitgatewayroutetableannouncement.md)
 
-- [DeleteTransitGatewayVpcAttachment](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTransitGatewayVpcAttachment.html)
+- [DeleteTransitGatewayVpcAttachment](api-deletetransitgatewayvpcattachment.md)
 
-- [DeleteVerifiedAccessEndpoint](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVerifiedAccessEndpoint.html)
+- [DeleteVerifiedAccessEndpoint](api-deleteverifiedaccessendpoint.md)
 
-- [DeleteVerifiedAccessGroup](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVerifiedAccessGroup.html)
+- [DeleteVerifiedAccessGroup](api-deleteverifiedaccessgroup.md)
 
-- [DeleteVerifiedAccessInstance](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVerifiedAccessInstance.html)
+- [DeleteVerifiedAccessInstance](api-deleteverifiedaccessinstance.md)
 
-- [DeleteVerifiedAccessTrustProvider](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVerifiedAccessTrustProvider.html)
+- [DeleteVerifiedAccessTrustProvider](api-deleteverifiedaccesstrustprovider.md)
 
-- [DeleteVolume](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVolume.html)
+- [DeleteVolume](api-deletevolume.md)
 
-- [DeleteVpc](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpc.html)
+- [DeleteVpc](api-deletevpc.md)
 
-- [DeleteVpcBlockPublicAccessExclusion](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpcBlockPublicAccessExclusion.html)
+- [DeleteVpcBlockPublicAccessExclusion](api-deletevpcblockpublicaccessexclusion.md)
 
-- [DeleteVpcEncryptionControl](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpcEncryptionControl.html)
+- [DeleteVpcEncryptionControl](api-deletevpcencryptioncontrol.md)
 
-- [DeleteVpcEndpointConnectionNotifications](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpcEndpointConnectionNotifications.html)
+- [DeleteVpcEndpointConnectionNotifications](api-deletevpcendpointconnectionnotifications.md)
 
-- [DeleteVpcEndpoints](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpcEndpoints.html)
+- [DeleteVpcEndpoints](api-deletevpcendpoints.md)
 
-- [DeleteVpcEndpointServiceConfigurations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpcEndpointServiceConfigurations.html)
+- [DeleteVpcEndpointServiceConfigurations](api-deletevpcendpointserviceconfigurations.md)
 
-- [DeleteVpcPeeringConnection](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpcPeeringConnection.html)
+- [DeleteVpcPeeringConnection](api-deletevpcpeeringconnection.md)
 
-- [DeleteVpnConcentrator](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpnConcentrator.html)
+- [DeleteVpnConcentrator](api-deletevpnconcentrator.md)
 
-- [DeleteVpnConnection](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpnConnection.html)
+- [DeleteVpnConnection](api-deletevpnconnection.md)
 
-- [DeleteVpnConnectionRoute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpnConnectionRoute.html)
+- [DeleteVpnConnectionRoute](api-deletevpnconnectionroute.md)
 
-- [DeleteVpnGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpnGateway.html)
+- [DeleteVpnGateway](api-deletevpngateway.md)
 
-- [DeprovisionByoipCidr](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeprovisionByoipCidr.html)
+- [DeprovisionByoipCidr](api-deprovisionbyoipcidr.md)
 
-- [DeprovisionIpamByoasn](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeprovisionIpamByoasn.html)
+- [DeprovisionIpamByoasn](api-deprovisionipambyoasn.md)
 
-- [DeprovisionIpamPoolCidr](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeprovisionIpamPoolCidr.html)
+- [DeprovisionIpamPoolCidr](api-deprovisionipampoolcidr.md)
 
-- [DeprovisionPublicIpv4PoolCidr](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeprovisionPublicIpv4PoolCidr.html)
+- [DeprovisionPublicIpv4PoolCidr](api-deprovisionpublicipv4poolcidr.md)
 
-- [DeregisterImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeregisterImage.html)
+- [DeregisterImage](api-deregisterimage.md)
 
-- [DeregisterInstanceEventNotificationAttributes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeregisterInstanceEventNotificationAttributes.html)
+- [DeregisterInstanceEventNotificationAttributes](api-deregisterinstanceeventnotificationattributes.md)
 
-- [DeregisterTransitGatewayMulticastGroupMembers](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeregisterTransitGatewayMulticastGroupMembers.html)
+- [DeregisterTransitGatewayMulticastGroupMembers](api-deregistertransitgatewaymulticastgroupmembers.md)
 
-- [DeregisterTransitGatewayMulticastGroupSources](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeregisterTransitGatewayMulticastGroupSources.html)
+- [DeregisterTransitGatewayMulticastGroupSources](api-deregistertransitgatewaymulticastgroupsources.md)
 
-- [DescribeAccountAttributes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAccountAttributes.html)
+- [DescribeAccountAttributes](api-describeaccountattributes.md)
 
-- [DescribeAddresses](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAddresses.html)
+- [DescribeAddresses](api-describeaddresses.md)
 
-- [DescribeAddressesAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAddressesAttribute.html)
+- [DescribeAddressesAttribute](api-describeaddressesattribute.md)
 
-- [DescribeAddressTransfers](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAddressTransfers.html)
+- [DescribeAddressTransfers](api-describeaddresstransfers.md)
 
-- [DescribeAggregateIdFormat](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAggregateIdFormat.html)
+- [DescribeAggregateIdFormat](api-describeaggregateidformat.md)
 
 - [DescribeAvailabilityZones](api-describeavailabilityzones.md)
 
-- [DescribeAwsNetworkPerformanceMetricSubscriptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAwsNetworkPerformanceMetricSubscriptions.html)
+- [DescribeAwsNetworkPerformanceMetricSubscriptions](api-describeawsnetworkperformancemetricsubscriptions.md)
 
-- [DescribeBundleTasks](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeBundleTasks.html)
+- [DescribeBundleTasks](api-describebundletasks.md)
 
-- [DescribeByoipCidrs](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeByoipCidrs.html)
+- [DescribeByoipCidrs](api-describebyoipcidrs.md)
 
-- [DescribeCapacityBlockExtensionHistory](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeCapacityBlockExtensionHistory.html)
+- [DescribeCapacityBlockExtensionHistory](api-describecapacityblockextensionhistory.md)
 
-- [DescribeCapacityBlockExtensionOfferings](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeCapacityBlockExtensionOfferings.html)
+- [DescribeCapacityBlockExtensionOfferings](api-describecapacityblockextensionofferings.md)
 
-- [DescribeCapacityBlockOfferings](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeCapacityBlockOfferings.html)
+- [DescribeCapacityBlockOfferings](api-describecapacityblockofferings.md)
 
-- [DescribeCapacityBlocks](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeCapacityBlocks.html)
+- [DescribeCapacityBlocks](api-describecapacityblocks.md)
 
-- [DescribeCapacityBlockStatus](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeCapacityBlockStatus.html)
+- [DescribeCapacityBlockStatus](api-describecapacityblockstatus.md)
 
-- [DescribeCapacityManagerDataExports](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeCapacityManagerDataExports.html)
+- [DescribeCapacityManagerDataExports](api-describecapacitymanagerdataexports.md)
 
-- [DescribeCapacityReservationBillingRequests](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeCapacityReservationBillingRequests.html)
+- [DescribeCapacityReservationBillingRequests](api-describecapacityreservationbillingrequests.md)
 
-- [DescribeCapacityReservationFleets](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeCapacityReservationFleets.html)
+- [DescribeCapacityReservationFleets](api-describecapacityreservationfleets.md)
 
-- [DescribeCapacityReservations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeCapacityReservations.html)
+- [DescribeCapacityReservations](api-describecapacityreservations.md)
 
-- [DescribeCapacityReservationTopology](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeCapacityReservationTopology.html)
+- [DescribeCapacityReservationTopology](api-describecapacityreservationtopology.md)
 
-- [DescribeCarrierGateways](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeCarrierGateways.html)
+- [DescribeCarrierGateways](api-describecarriergateways.md)
 
-- [DescribeClassicLinkInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeClassicLinkInstances.html)
+- [DescribeClassicLinkInstances](api-describeclassiclinkinstances.md)
 
-- [DescribeClientVpnAuthorizationRules](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeClientVpnAuthorizationRules.html)
+- [DescribeClientVpnAuthorizationRules](api-describeclientvpnauthorizationrules.md)
 
-- [DescribeClientVpnConnections](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeClientVpnConnections.html)
+- [DescribeClientVpnConnections](api-describeclientvpnconnections.md)
 
-- [DescribeClientVpnEndpoints](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeClientVpnEndpoints.html)
+- [DescribeClientVpnEndpoints](api-describeclientvpnendpoints.md)
 
-- [DescribeClientVpnRoutes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeClientVpnRoutes.html)
+- [DescribeClientVpnRoutes](api-describeclientvpnroutes.md)
 
-- [DescribeClientVpnTargetNetworks](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeClientVpnTargetNetworks.html)
+- [DescribeClientVpnTargetNetworks](api-describeclientvpntargetnetworks.md)
 
-- [DescribeCoipPools](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeCoipPools.html)
+- [DescribeCoipPools](api-describecoippools.md)
 
-- [DescribeConversionTasks](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeConversionTasks.html)
+- [DescribeConversionTasks](api-describeconversiontasks.md)
 
-- [DescribeCustomerGateways](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeCustomerGateways.html)
+- [DescribeCustomerGateways](api-describecustomergateways.md)
 
-- [DescribeDeclarativePoliciesReports](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeDeclarativePoliciesReports.html)
+- [DescribeDeclarativePoliciesReports](api-describedeclarativepoliciesreports.md)
 
-- [DescribeDhcpOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeDhcpOptions.html)
+- [DescribeDhcpOptions](api-describedhcpoptions.md)
 
-- [DescribeEgressOnlyInternetGateways](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeEgressOnlyInternetGateways.html)
+- [DescribeEgressOnlyInternetGateways](api-describeegressonlyinternetgateways.md)
 
-- [DescribeElasticGpus](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeElasticGpus.html)
+- [DescribeElasticGpus](api-describeelasticgpus.md)
 
-- [DescribeExportImageTasks](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeExportImageTasks.html)
+- [DescribeExportImageTasks](api-describeexportimagetasks.md)
 
-- [DescribeExportTasks](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeExportTasks.html)
+- [DescribeExportTasks](api-describeexporttasks.md)
 
-- [DescribeFastLaunchImages](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeFastLaunchImages.html)
+- [DescribeFastLaunchImages](api-describefastlaunchimages.md)
 
-- [DescribeFastSnapshotRestores](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeFastSnapshotRestores.html)
+- [DescribeFastSnapshotRestores](api-describefastsnapshotrestores.md)
 
-- [DescribeFleetHistory](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeFleetHistory.html)
+- [DescribeFleetHistory](api-describefleethistory.md)
 
-- [DescribeFleetInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeFleetInstances.html)
+- [DescribeFleetInstances](api-describefleetinstances.md)
 
-- [DescribeFleets](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeFleets.html)
+- [DescribeFleets](api-describefleets.md)
 
-- [DescribeFlowLogs](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeFlowLogs.html)
+- [DescribeFlowLogs](api-describeflowlogs.md)
 
-- [DescribeFpgaImageAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeFpgaImageAttribute.html)
+- [DescribeFpgaImageAttribute](api-describefpgaimageattribute.md)
 
-- [DescribeFpgaImages](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeFpgaImages.html)
+- [DescribeFpgaImages](api-describefpgaimages.md)
 
-- [DescribeHostReservationOfferings](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeHostReservationOfferings.html)
+- [DescribeHostReservationOfferings](api-describehostreservationofferings.md)
 
-- [DescribeHostReservations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeHostReservations.html)
+- [DescribeHostReservations](api-describehostreservations.md)
 
-- [DescribeHosts](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeHosts.html)
+- [DescribeHosts](api-describehosts.md)
 
-- [DescribeIamInstanceProfileAssociations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeIamInstanceProfileAssociations.html)
+- [DescribeIamInstanceProfileAssociations](api-describeiaminstanceprofileassociations.md)
 
-- [DescribeIdentityIdFormat](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeIdentityIdFormat.html)
+- [DescribeIdentityIdFormat](api-describeidentityidformat.md)
 
 - [DescribeIdFormat](api-describeidformat.md)
 
-- [DescribeImageAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeImageAttribute.html)
+- [DescribeImageAttribute](api-describeimageattribute.md)
 
-- [DescribeImageReferences](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeImageReferences.html)
+- [DescribeImageReferences](api-describeimagereferences.md)
 
 - [DescribeImages](api-describeimages.md)
 
-- [DescribeImageUsageReportEntries](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeImageUsageReportEntries.html)
+- [DescribeImageUsageReportEntries](api-describeimageusagereportentries.md)
 
-- [DescribeImageUsageReports](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeImageUsageReports.html)
+- [DescribeImageUsageReports](api-describeimageusagereports.md)
 
-- [DescribeImportImageTasks](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeImportImageTasks.html)
+- [DescribeImportImageTasks](api-describeimportimagetasks.md)
 
-- [DescribeImportSnapshotTasks](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeImportSnapshotTasks.html)
+- [DescribeImportSnapshotTasks](api-describeimportsnapshottasks.md)
 
-- [DescribeInstanceAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstanceAttribute.html)
+- [DescribeInstanceAttribute](api-describeinstanceattribute.md)
 
-- [DescribeInstanceConnectEndpoints](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstanceConnectEndpoints.html)
+- [DescribeInstanceConnectEndpoints](api-describeinstanceconnectendpoints.md)
 
-- [DescribeInstanceCreditSpecifications](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstanceCreditSpecifications.html)
+- [DescribeInstanceCreditSpecifications](api-describeinstancecreditspecifications.md)
 
-- [DescribeInstanceEventNotificationAttributes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstanceEventNotificationAttributes.html)
+- [DescribeInstanceEventNotificationAttributes](api-describeinstanceeventnotificationattributes.md)
 
-- [DescribeInstanceEventWindows](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstanceEventWindows.html)
+- [DescribeInstanceEventWindows](api-describeinstanceeventwindows.md)
 
-- [DescribeInstanceImageMetadata](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstanceImageMetadata.html)
+- [DescribeInstanceImageMetadata](api-describeinstanceimagemetadata.md)
 
 - [DescribeInstances](api-describeinstances.md)
 
-- [DescribeInstanceSqlHaHistoryStates](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstanceSqlHaHistoryStates.html)
+- [DescribeInstanceSqlHaHistoryStates](api-describeinstancesqlhahistorystates.md)
 
-- [DescribeInstanceSqlHaStates](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstanceSqlHaStates.html)
+- [DescribeInstanceSqlHaStates](api-describeinstancesqlhastates.md)
 
-- [DescribeInstanceStatus](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstanceStatus.html)
+- [DescribeInstanceStatus](api-describeinstancestatus.md)
 
-- [DescribeInstanceTopology](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstanceTopology.html)
+- [DescribeInstanceTopology](api-describeinstancetopology.md)
 
-- [DescribeInstanceTypeOfferings](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstanceTypeOfferings.html)
+- [DescribeInstanceTypeOfferings](api-describeinstancetypeofferings.md)
 
-- [DescribeInstanceTypes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstanceTypes.html)
+- [DescribeInstanceTypes](api-describeinstancetypes.md)
 
 - [DescribeInternetGateways](api-describeinternetgateways.md)
 
-- [DescribeIpamByoasn](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeIpamByoasn.html)
+- [DescribeIpamByoasn](api-describeipambyoasn.md)
 
-- [DescribeIpamExternalResourceVerificationTokens](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeIpamExternalResourceVerificationTokens.html)
+- [DescribeIpamExternalResourceVerificationTokens](api-describeipamexternalresourceverificationtokens.md)
 
-- [DescribeIpamPolicies](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeIpamPolicies.html)
+- [DescribeIpamPolicies](api-describeipampolicies.md)
 
-- [DescribeIpamPools](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeIpamPools.html)
+- [DescribeIpamPools](api-describeipampools.md)
 
-- [DescribeIpamPrefixListResolvers](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeIpamPrefixListResolvers.html)
+- [DescribeIpamPrefixListResolvers](api-describeipamprefixlistresolvers.md)
 
-- [DescribeIpamPrefixListResolverTargets](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeIpamPrefixListResolverTargets.html)
+- [DescribeIpamPrefixListResolverTargets](api-describeipamprefixlistresolvertargets.md)
 
-- [DescribeIpamResourceDiscoveries](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeIpamResourceDiscoveries.html)
+- [DescribeIpamResourceDiscoveries](api-describeipamresourcediscoveries.md)
 
-- [DescribeIpamResourceDiscoveryAssociations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeIpamResourceDiscoveryAssociations.html)
+- [DescribeIpamResourceDiscoveryAssociations](api-describeipamresourcediscoveryassociations.md)
 
-- [DescribeIpams](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeIpams.html)
+- [DescribeIpams](api-describeipams.md)
 
-- [DescribeIpamScopes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeIpamScopes.html)
+- [DescribeIpamScopes](api-describeipamscopes.md)
 
-- [DescribeIpv6Pools](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeIpv6Pools.html)
+- [DescribeIpv6Pools](api-describeipv6pools.md)
 
 - [DescribeKeyPairs](api-describekeypairs.md)
 
-- [DescribeLaunchTemplates](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html)
+- [DescribeLaunchTemplates](api-describelaunchtemplates.md)
 
-- [DescribeLaunchTemplateVersions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplateVersions.html)
+- [DescribeLaunchTemplateVersions](api-describelaunchtemplateversions.md)
 
-- [DescribeLocalGatewayRouteTables](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLocalGatewayRouteTables.html)
+- [DescribeLocalGatewayRouteTables](api-describelocalgatewayroutetables.md)
 
-- [DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations.html)
+- [DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations](api-describelocalgatewayroutetablevirtualinterfacegroupassociations.md)
 
-- [DescribeLocalGatewayRouteTableVpcAssociations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLocalGatewayRouteTableVpcAssociations.html)
+- [DescribeLocalGatewayRouteTableVpcAssociations](api-describelocalgatewayroutetablevpcassociations.md)
 
-- [DescribeLocalGateways](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLocalGateways.html)
+- [DescribeLocalGateways](api-describelocalgateways.md)
 
-- [DescribeLocalGatewayVirtualInterfaceGroups](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLocalGatewayVirtualInterfaceGroups.html)
+- [DescribeLocalGatewayVirtualInterfaceGroups](api-describelocalgatewayvirtualinterfacegroups.md)
 
-- [DescribeLocalGatewayVirtualInterfaces](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLocalGatewayVirtualInterfaces.html)
+- [DescribeLocalGatewayVirtualInterfaces](api-describelocalgatewayvirtualinterfaces.md)
 
-- [DescribeLockedSnapshots](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLockedSnapshots.html)
+- [DescribeLockedSnapshots](api-describelockedsnapshots.md)
 
-- [DescribeMacHosts](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeMacHosts.html)
+- [DescribeMacHosts](api-describemachosts.md)
 
-- [DescribeMacModificationTasks](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeMacModificationTasks.html)
+- [DescribeMacModificationTasks](api-describemacmodificationtasks.md)
 
-- [DescribeManagedPrefixLists](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeManagedPrefixLists.html)
+- [DescribeManagedPrefixLists](api-describemanagedprefixlists.md)
 
-- [DescribeMovingAddresses](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeMovingAddresses.html)
+- [DescribeMovingAddresses](api-describemovingaddresses.md)
 
-- [DescribeNatGateways](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeNatGateways.html)
+- [DescribeNatGateways](api-describenatgateways.md)
 
-- [DescribeNetworkAcls](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeNetworkAcls.html)
+- [DescribeNetworkAcls](api-describenetworkacls.md)
 
-- [DescribeNetworkInsightsAccessScopeAnalyses](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeNetworkInsightsAccessScopeAnalyses.html)
+- [DescribeNetworkInsightsAccessScopeAnalyses](api-describenetworkinsightsaccessscopeanalyses.md)
 
-- [DescribeNetworkInsightsAccessScopes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeNetworkInsightsAccessScopes.html)
+- [DescribeNetworkInsightsAccessScopes](api-describenetworkinsightsaccessscopes.md)
 
-- [DescribeNetworkInsightsAnalyses](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeNetworkInsightsAnalyses.html)
+- [DescribeNetworkInsightsAnalyses](api-describenetworkinsightsanalyses.md)
 
-- [DescribeNetworkInsightsPaths](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeNetworkInsightsPaths.html)
+- [DescribeNetworkInsightsPaths](api-describenetworkinsightspaths.md)
 
-- [DescribeNetworkInterfaceAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeNetworkInterfaceAttribute.html)
+- [DescribeNetworkInterfaceAttribute](api-describenetworkinterfaceattribute.md)
 
 - [DescribeNetworkInterfacePermissions](api-describenetworkinterfacepermissions.md)
 
 - [DescribeNetworkInterfaces](api-describenetworkinterfaces.md)
 
-- [DescribeOutpostLags](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeOutpostLags.html)
+- [DescribeOutpostLags](api-describeoutpostlags.md)
 
-- [DescribePlacementGroups](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribePlacementGroups.html)
+- [DescribePlacementGroups](api-describeplacementgroups.md)
 
-- [DescribePrefixLists](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribePrefixLists.html)
+- [DescribePrefixLists](api-describeprefixlists.md)
 
-- [DescribePrincipalIdFormat](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribePrincipalIdFormat.html)
+- [DescribePrincipalIdFormat](api-describeprincipalidformat.md)
 
-- [DescribePublicIpv4Pools](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribePublicIpv4Pools.html)
+- [DescribePublicIpv4Pools](api-describepublicipv4pools.md)
 
-- [DescribeRegions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeRegions.html)
+- [DescribeRegions](api-describeregions.md)
 
-- [DescribeReplaceRootVolumeTasks](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeReplaceRootVolumeTasks.html)
+- [DescribeReplaceRootVolumeTasks](api-describereplacerootvolumetasks.md)
 
-- [DescribeReservedInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeReservedInstances.html)
+- [DescribeReservedInstances](api-describereservedinstances.md)
 
-- [DescribeReservedInstancesListings](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeReservedInstancesListings.html)
+- [DescribeReservedInstancesListings](api-describereservedinstanceslistings.md)
 
-- [DescribeReservedInstancesModifications](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeReservedInstancesModifications.html)
+- [DescribeReservedInstancesModifications](api-describereservedinstancesmodifications.md)
 
-- [DescribeReservedInstancesOfferings](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeReservedInstancesOfferings.html)
+- [DescribeReservedInstancesOfferings](api-describereservedinstancesofferings.md)
 
-- [DescribeRouteServerEndpoints](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeRouteServerEndpoints.html)
+- [DescribeRouteServerEndpoints](api-describerouteserverendpoints.md)
 
-- [DescribeRouteServerPeers](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeRouteServerPeers.html)
+- [DescribeRouteServerPeers](api-describerouteserverpeers.md)
 
-- [DescribeRouteServers](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeRouteServers.html)
+- [DescribeRouteServers](api-describerouteservers.md)
 
 - [DescribeRouteTables](api-describeroutetables.md)
 
-- [DescribeScheduledInstanceAvailability](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeScheduledInstanceAvailability.html)
+- [DescribeScheduledInstanceAvailability](api-describescheduledinstanceavailability.md)
 
-- [DescribeScheduledInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeScheduledInstances.html)
+- [DescribeScheduledInstances](api-describescheduledinstances.md)
 
-- [DescribeSecondaryInterfaces](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSecondaryInterfaces.html)
+- [DescribeSecondaryInterfaces](api-describesecondaryinterfaces.md)
 
-- [DescribeSecondaryNetworks](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSecondaryNetworks.html)
+- [DescribeSecondaryNetworks](api-describesecondarynetworks.md)
 
-- [DescribeSecondarySubnets](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSecondarySubnets.html)
+- [DescribeSecondarySubnets](api-describesecondarysubnets.md)
 
-- [DescribeSecurityGroupReferences](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSecurityGroupReferences.html)
+- [DescribeSecurityGroupReferences](api-describesecuritygroupreferences.md)
 
-- [DescribeSecurityGroupRules](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSecurityGroupRules.html)
+- [DescribeSecurityGroupRules](api-describesecuritygrouprules.md)
 
 - [DescribeSecurityGroups](api-describesecuritygroups.md)
 
-- [DescribeSecurityGroupVpcAssociations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSecurityGroupVpcAssociations.html)
+- [DescribeSecurityGroupVpcAssociations](api-describesecuritygroupvpcassociations.md)
 
-- [DescribeServiceLinkVirtualInterfaces](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeServiceLinkVirtualInterfaces.html)
+- [DescribeServiceLinkVirtualInterfaces](api-describeservicelinkvirtualinterfaces.md)
 
-- [DescribeSnapshotAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSnapshotAttribute.html)
+- [DescribeSnapshotAttribute](api-describesnapshotattribute.md)
 
 - [DescribeSnapshots](api-describesnapshots.md)
 
-- [DescribeSnapshotTierStatus](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSnapshotTierStatus.html)
+- [DescribeSnapshotTierStatus](api-describesnapshottierstatus.md)
 
-- [DescribeSpotDatafeedSubscription](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSpotDatafeedSubscription.html)
+- [DescribeSpotDatafeedSubscription](api-describespotdatafeedsubscription.md)
 
-- [DescribeSpotFleetInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSpotFleetInstances.html)
+- [DescribeSpotFleetInstances](api-describespotfleetinstances.md)
 
-- [DescribeSpotFleetRequestHistory](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSpotFleetRequestHistory.html)
+- [DescribeSpotFleetRequestHistory](api-describespotfleetrequesthistory.md)
 
-- [DescribeSpotFleetRequests](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSpotFleetRequests.html)
+- [DescribeSpotFleetRequests](api-describespotfleetrequests.md)
 
-- [DescribeSpotInstanceRequests](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSpotInstanceRequests.html)
+- [DescribeSpotInstanceRequests](api-describespotinstancerequests.md)
 
-- [DescribeSpotPriceHistory](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSpotPriceHistory.html)
+- [DescribeSpotPriceHistory](api-describespotpricehistory.md)
 
-- [DescribeStaleSecurityGroups](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeStaleSecurityGroups.html)
+- [DescribeStaleSecurityGroups](api-describestalesecuritygroups.md)
 
-- [DescribeStoreImageTasks](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeStoreImageTasks.html)
+- [DescribeStoreImageTasks](api-describestoreimagetasks.md)
 
 - [DescribeSubnets](api-describesubnets.md)
 
 - [DescribeTags](api-describetags.md)
 
-- [DescribeTrafficMirrorFilterRules](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeTrafficMirrorFilterRules.html)
+- [DescribeTrafficMirrorFilterRules](api-describetrafficmirrorfilterrules.md)
 
-- [DescribeTrafficMirrorFilters](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeTrafficMirrorFilters.html)
+- [DescribeTrafficMirrorFilters](api-describetrafficmirrorfilters.md)
 
-- [DescribeTrafficMirrorSessions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeTrafficMirrorSessions.html)
+- [DescribeTrafficMirrorSessions](api-describetrafficmirrorsessions.md)
 
-- [DescribeTrafficMirrorTargets](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeTrafficMirrorTargets.html)
+- [DescribeTrafficMirrorTargets](api-describetrafficmirrortargets.md)
 
-- [DescribeTransitGatewayAttachments](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeTransitGatewayAttachments.html)
+- [DescribeTransitGatewayAttachments](api-describetransitgatewayattachments.md)
 
-- [DescribeTransitGatewayConnectPeers](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeTransitGatewayConnectPeers.html)
+- [DescribeTransitGatewayConnectPeers](api-describetransitgatewayconnectpeers.md)
 
-- [DescribeTransitGatewayConnects](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeTransitGatewayConnects.html)
+- [DescribeTransitGatewayConnects](api-describetransitgatewayconnects.md)
 
-- [DescribeTransitGatewayMeteringPolicies](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeTransitGatewayMeteringPolicies.html)
+- [DescribeTransitGatewayMeteringPolicies](api-describetransitgatewaymeteringpolicies.md)
 
-- [DescribeTransitGatewayMulticastDomains](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeTransitGatewayMulticastDomains.html)
+- [DescribeTransitGatewayMulticastDomains](api-describetransitgatewaymulticastdomains.md)
 
-- [DescribeTransitGatewayPeeringAttachments](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeTransitGatewayPeeringAttachments.html)
+- [DescribeTransitGatewayPeeringAttachments](api-describetransitgatewaypeeringattachments.md)
 
-- [DescribeTransitGatewayPolicyTables](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeTransitGatewayPolicyTables.html)
+- [DescribeTransitGatewayPolicyTables](api-describetransitgatewaypolicytables.md)
 
-- [DescribeTransitGatewayRouteTableAnnouncements](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeTransitGatewayRouteTableAnnouncements.html)
+- [DescribeTransitGatewayRouteTableAnnouncements](api-describetransitgatewayroutetableannouncements.md)
 
-- [DescribeTransitGatewayRouteTables](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeTransitGatewayRouteTables.html)
+- [DescribeTransitGatewayRouteTables](api-describetransitgatewayroutetables.md)
 
-- [DescribeTransitGateways](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeTransitGateways.html)
+- [DescribeTransitGateways](api-describetransitgateways.md)
 
-- [DescribeTransitGatewayVpcAttachments](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeTransitGatewayVpcAttachments.html)
+- [DescribeTransitGatewayVpcAttachments](api-describetransitgatewayvpcattachments.md)
 
-- [DescribeTrunkInterfaceAssociations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeTrunkInterfaceAssociations.html)
+- [DescribeTrunkInterfaceAssociations](api-describetrunkinterfaceassociations.md)
 
-- [DescribeVerifiedAccessEndpoints](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVerifiedAccessEndpoints.html)
+- [DescribeVerifiedAccessEndpoints](api-describeverifiedaccessendpoints.md)
 
-- [DescribeVerifiedAccessGroups](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVerifiedAccessGroups.html)
+- [DescribeVerifiedAccessGroups](api-describeverifiedaccessgroups.md)
 
-- [DescribeVerifiedAccessInstanceLoggingConfigurations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVerifiedAccessInstanceLoggingConfigurations.html)
+- [DescribeVerifiedAccessInstanceLoggingConfigurations](api-describeverifiedaccessinstanceloggingconfigurations.md)
 
-- [DescribeVerifiedAccessInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVerifiedAccessInstances.html)
+- [DescribeVerifiedAccessInstances](api-describeverifiedaccessinstances.md)
 
-- [DescribeVerifiedAccessTrustProviders](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVerifiedAccessTrustProviders.html)
+- [DescribeVerifiedAccessTrustProviders](api-describeverifiedaccesstrustproviders.md)
 
-- [DescribeVolumeAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVolumeAttribute.html)
+- [DescribeVolumeAttribute](api-describevolumeattribute.md)
 
 - [DescribeVolumes](api-describevolumes.md)
 
-- [DescribeVolumesModifications](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVolumesModifications.html)
+- [DescribeVolumesModifications](api-describevolumesmodifications.md)
 
-- [DescribeVolumeStatus](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVolumeStatus.html)
+- [DescribeVolumeStatus](api-describevolumestatus.md)
 
-- [DescribeVpcAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcAttribute.html)
+- [DescribeVpcAttribute](api-describevpcattribute.md)
 
-- [DescribeVpcBlockPublicAccessExclusions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcBlockPublicAccessExclusions.html)
+- [DescribeVpcBlockPublicAccessExclusions](api-describevpcblockpublicaccessexclusions.md)
 
-- [DescribeVpcBlockPublicAccessOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcBlockPublicAccessOptions.html)
+- [DescribeVpcBlockPublicAccessOptions](api-describevpcblockpublicaccessoptions.md)
 
-- [DescribeVpcClassicLink](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcClassicLink.html)
+- [DescribeVpcClassicLink](api-describevpcclassiclink.md)
 
-- [DescribeVpcClassicLinkDnsSupport](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcClassicLinkDnsSupport.html)
+- [DescribeVpcClassicLinkDnsSupport](api-describevpcclassiclinkdnssupport.md)
 
-- [DescribeVpcEncryptionControls](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcEncryptionControls.html)
+- [DescribeVpcEncryptionControls](api-describevpcencryptioncontrols.md)
 
-- [DescribeVpcEndpointAssociations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcEndpointAssociations.html)
+- [DescribeVpcEndpointAssociations](api-describevpcendpointassociations.md)
 
-- [DescribeVpcEndpointConnectionNotifications](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcEndpointConnectionNotifications.html)
+- [DescribeVpcEndpointConnectionNotifications](api-describevpcendpointconnectionnotifications.md)
 
-- [DescribeVpcEndpointConnections](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcEndpointConnections.html)
+- [DescribeVpcEndpointConnections](api-describevpcendpointconnections.md)
 
-- [DescribeVpcEndpoints](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcEndpoints.html)
+- [DescribeVpcEndpoints](api-describevpcendpoints.md)
 
-- [DescribeVpcEndpointServiceConfigurations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcEndpointServiceConfigurations.html)
+- [DescribeVpcEndpointServiceConfigurations](api-describevpcendpointserviceconfigurations.md)
 
-- [DescribeVpcEndpointServicePermissions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcEndpointServicePermissions.html)
+- [DescribeVpcEndpointServicePermissions](api-describevpcendpointservicepermissions.md)
 
 - [DescribeVpcEndpointServices](api-describevpcendpointservices.md)
 
-- [DescribeVpcPeeringConnections](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcPeeringConnections.html)
+- [DescribeVpcPeeringConnections](api-describevpcpeeringconnections.md)
 
 - [DescribeVpcs](api-describevpcs.md)
 
-- [DescribeVpnConcentrators](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpnConcentrators.html)
+- [DescribeVpnConcentrators](api-describevpnconcentrators.md)
 
-- [DescribeVpnConnections](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpnConnections.html)
+- [DescribeVpnConnections](api-describevpnconnections.md)
 
-- [DescribeVpnGateways](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpnGateways.html)
+- [DescribeVpnGateways](api-describevpngateways.md)
 
-- [DetachClassicLinkVpc](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DetachClassicLinkVpc.html)
+- [DetachClassicLinkVpc](api-detachclassiclinkvpc.md)
 
-- [DetachInternetGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DetachInternetGateway.html)
+- [DetachInternetGateway](api-detachinternetgateway.md)
 
 - [DetachNetworkInterface](api-detachnetworkinterface.md)
 
-- [DetachVerifiedAccessTrustProvider](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DetachVerifiedAccessTrustProvider.html)
+- [DetachVerifiedAccessTrustProvider](api-detachverifiedaccesstrustprovider.md)
 
-- [DetachVolume](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DetachVolume.html)
+- [DetachVolume](api-detachvolume.md)
 
-- [DetachVpnGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DetachVpnGateway.html)
+- [DetachVpnGateway](api-detachvpngateway.md)
 
-- [DisableAddressTransfer](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableAddressTransfer.html)
+- [DisableAddressTransfer](api-disableaddresstransfer.md)
 
-- [DisableAllowedImagesSettings](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableAllowedImagesSettings.html)
+- [DisableAllowedImagesSettings](api-disableallowedimagessettings.md)
 
-- [DisableAwsNetworkPerformanceMetricSubscription](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableAwsNetworkPerformanceMetricSubscription.html)
+- [DisableAwsNetworkPerformanceMetricSubscription](api-disableawsnetworkperformancemetricsubscription.md)
 
-- [DisableCapacityManager](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableCapacityManager.html)
+- [DisableCapacityManager](api-disablecapacitymanager.md)
 
-- [DisableEbsEncryptionByDefault](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableEbsEncryptionByDefault.html)
+- [DisableEbsEncryptionByDefault](api-disableebsencryptionbydefault.md)
 
-- [DisableFastLaunch](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableFastLaunch.html)
+- [DisableFastLaunch](api-disablefastlaunch.md)
 
-- [DisableFastSnapshotRestores](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableFastSnapshotRestores.html)
+- [DisableFastSnapshotRestores](api-disablefastsnapshotrestores.md)
 
-- [DisableImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableImage.html)
+- [DisableImage](api-disableimage.md)
 
-- [DisableImageBlockPublicAccess](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableImageBlockPublicAccess.html)
+- [DisableImageBlockPublicAccess](api-disableimageblockpublicaccess.md)
 
-- [DisableImageDeprecation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableImageDeprecation.html)
+- [DisableImageDeprecation](api-disableimagedeprecation.md)
 
-- [DisableImageDeregistrationProtection](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableImageDeregistrationProtection.html)
+- [DisableImageDeregistrationProtection](api-disableimagederegistrationprotection.md)
 
-- [DisableInstanceSqlHaStandbyDetections](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableInstanceSqlHaStandbyDetections.html)
+- [DisableInstanceSqlHaStandbyDetections](api-disableinstancesqlhastandbydetections.md)
 
-- [DisableIpamOrganizationAdminAccount](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableIpamOrganizationAdminAccount.html)
+- [DisableIpamOrganizationAdminAccount](api-disableipamorganizationadminaccount.md)
 
-- [DisableIpamPolicy](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableIpamPolicy.html)
+- [DisableIpamPolicy](api-disableipampolicy.md)
 
-- [DisableRouteServerPropagation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableRouteServerPropagation.html)
+- [DisableRouteServerPropagation](api-disablerouteserverpropagation.md)
 
-- [DisableSerialConsoleAccess](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableSerialConsoleAccess.html)
+- [DisableSerialConsoleAccess](api-disableserialconsoleaccess.md)
 
-- [DisableSnapshotBlockPublicAccess](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableSnapshotBlockPublicAccess.html)
+- [DisableSnapshotBlockPublicAccess](api-disablesnapshotblockpublicaccess.md)
 
-- [DisableTransitGatewayRouteTablePropagation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableTransitGatewayRouteTablePropagation.html)
+- [DisableTransitGatewayRouteTablePropagation](api-disabletransitgatewayroutetablepropagation.md)
 
-- [DisableVgwRoutePropagation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableVgwRoutePropagation.html)
+- [DisableVgwRoutePropagation](api-disablevgwroutepropagation.md)
 
-- [DisableVpcClassicLink](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableVpcClassicLink.html)
+- [DisableVpcClassicLink](api-disablevpcclassiclink.md)
 
-- [DisableVpcClassicLinkDnsSupport](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableVpcClassicLinkDnsSupport.html)
+- [DisableVpcClassicLinkDnsSupport](api-disablevpcclassiclinkdnssupport.md)
 
-- [DisassociateAddress](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateAddress.html)
+- [DisassociateAddress](api-disassociateaddress.md)
 
-- [DisassociateCapacityReservationBillingOwner](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateCapacityReservationBillingOwner.html)
+- [DisassociateCapacityReservationBillingOwner](api-disassociatecapacityreservationbillingowner.md)
 
-- [DisassociateClientVpnTargetNetwork](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateClientVpnTargetNetwork.html)
+- [DisassociateClientVpnTargetNetwork](api-disassociateclientvpntargetnetwork.md)
 
-- [DisassociateEnclaveCertificateIamRole](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateEnclaveCertificateIamRole.html)
+- [DisassociateEnclaveCertificateIamRole](api-disassociateenclavecertificateiamrole.md)
 
-- [DisassociateIamInstanceProfile](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateIamInstanceProfile.html)
+- [DisassociateIamInstanceProfile](api-disassociateiaminstanceprofile.md)
 
-- [DisassociateInstanceEventWindow](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateInstanceEventWindow.html)
+- [DisassociateInstanceEventWindow](api-disassociateinstanceeventwindow.md)
 
-- [DisassociateIpamByoasn](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateIpamByoasn.html)
+- [DisassociateIpamByoasn](api-disassociateipambyoasn.md)
 
-- [DisassociateIpamResourceDiscovery](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateIpamResourceDiscovery.html)
+- [DisassociateIpamResourceDiscovery](api-disassociateipamresourcediscovery.md)
 
-- [DisassociateNatGatewayAddress](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateNatGatewayAddress.html)
+- [DisassociateNatGatewayAddress](api-disassociatenatgatewayaddress.md)
 
-- [DisassociateRouteServer](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateRouteServer.html)
+- [DisassociateRouteServer](api-disassociaterouteserver.md)
 
-- [DisassociateRouteTable](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateRouteTable.html)
+- [DisassociateRouteTable](api-disassociateroutetable.md)
 
-- [DisassociateSecurityGroupVpc](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateSecurityGroupVpc.html)
+- [DisassociateSecurityGroupVpc](api-disassociatesecuritygroupvpc.md)
 
-- [DisassociateSubnetCidrBlock](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateSubnetCidrBlock.html)
+- [DisassociateSubnetCidrBlock](api-disassociatesubnetcidrblock.md)
 
-- [DisassociateTransitGatewayMulticastDomain](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateTransitGatewayMulticastDomain.html)
+- [DisassociateTransitGatewayMulticastDomain](api-disassociatetransitgatewaymulticastdomain.md)
 
-- [DisassociateTransitGatewayPolicyTable](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateTransitGatewayPolicyTable.html)
+- [DisassociateTransitGatewayPolicyTable](api-disassociatetransitgatewaypolicytable.md)
 
-- [DisassociateTransitGatewayRouteTable](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateTransitGatewayRouteTable.html)
+- [DisassociateTransitGatewayRouteTable](api-disassociatetransitgatewayroutetable.md)
 
-- [DisassociateTrunkInterface](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateTrunkInterface.html)
+- [DisassociateTrunkInterface](api-disassociatetrunkinterface.md)
 
-- [DisassociateVpcCidrBlock](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateVpcCidrBlock.html)
+- [DisassociateVpcCidrBlock](api-disassociatevpccidrblock.md)
 
-- [EnableAddressTransfer](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableAddressTransfer.html)
+- [EnableAddressTransfer](api-enableaddresstransfer.md)
 
-- [EnableAllowedImagesSettings](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableAllowedImagesSettings.html)
+- [EnableAllowedImagesSettings](api-enableallowedimagessettings.md)
 
-- [EnableAwsNetworkPerformanceMetricSubscription](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableAwsNetworkPerformanceMetricSubscription.html)
+- [EnableAwsNetworkPerformanceMetricSubscription](api-enableawsnetworkperformancemetricsubscription.md)
 
-- [EnableCapacityManager](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableCapacityManager.html)
+- [EnableCapacityManager](api-enablecapacitymanager.md)
 
-- [EnableEbsEncryptionByDefault](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableEbsEncryptionByDefault.html)
+- [EnableEbsEncryptionByDefault](api-enableebsencryptionbydefault.md)
 
-- [EnableFastLaunch](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableFastLaunch.html)
+- [EnableFastLaunch](api-enablefastlaunch.md)
 
-- [EnableFastSnapshotRestores](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableFastSnapshotRestores.html)
+- [EnableFastSnapshotRestores](api-enablefastsnapshotrestores.md)
 
-- [EnableImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableImage.html)
+- [EnableImage](api-enableimage.md)
 
-- [EnableImageBlockPublicAccess](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableImageBlockPublicAccess.html)
+- [EnableImageBlockPublicAccess](api-enableimageblockpublicaccess.md)
 
-- [EnableImageDeprecation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableImageDeprecation.html)
+- [EnableImageDeprecation](api-enableimagedeprecation.md)
 
-- [EnableImageDeregistrationProtection](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableImageDeregistrationProtection.html)
+- [EnableImageDeregistrationProtection](api-enableimagederegistrationprotection.md)
 
-- [EnableInstanceSqlHaStandbyDetections](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableInstanceSqlHaStandbyDetections.html)
+- [EnableInstanceSqlHaStandbyDetections](api-enableinstancesqlhastandbydetections.md)
 
-- [EnableIpamOrganizationAdminAccount](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableIpamOrganizationAdminAccount.html)
+- [EnableIpamOrganizationAdminAccount](api-enableipamorganizationadminaccount.md)
 
-- [EnableIpamPolicy](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableIpamPolicy.html)
+- [EnableIpamPolicy](api-enableipampolicy.md)
 
-- [EnableReachabilityAnalyzerOrganizationSharing](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableReachabilityAnalyzerOrganizationSharing.html)
+- [EnableReachabilityAnalyzerOrganizationSharing](api-enablereachabilityanalyzerorganizationsharing.md)
 
-- [EnableRouteServerPropagation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableRouteServerPropagation.html)
+- [EnableRouteServerPropagation](api-enablerouteserverpropagation.md)
 
-- [EnableSerialConsoleAccess](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableSerialConsoleAccess.html)
+- [EnableSerialConsoleAccess](api-enableserialconsoleaccess.md)
 
-- [EnableSnapshotBlockPublicAccess](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableSnapshotBlockPublicAccess.html)
+- [EnableSnapshotBlockPublicAccess](api-enablesnapshotblockpublicaccess.md)
 
-- [EnableTransitGatewayRouteTablePropagation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableTransitGatewayRouteTablePropagation.html)
+- [EnableTransitGatewayRouteTablePropagation](api-enabletransitgatewayroutetablepropagation.md)
 
-- [EnableVgwRoutePropagation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableVgwRoutePropagation.html)
+- [EnableVgwRoutePropagation](api-enablevgwroutepropagation.md)
 
-- [EnableVolumeIO](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableVolumeIO.html)
+- [EnableVolumeIO](api-enablevolumeio.md)
 
-- [EnableVpcClassicLink](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableVpcClassicLink.html)
+- [EnableVpcClassicLink](api-enablevpcclassiclink.md)
 
-- [EnableVpcClassicLinkDnsSupport](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableVpcClassicLinkDnsSupport.html)
+- [EnableVpcClassicLinkDnsSupport](api-enablevpcclassiclinkdnssupport.md)
 
-- [ExportClientVpnClientCertificateRevocationList](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ExportClientVpnClientCertificateRevocationList.html)
+- [ExportClientVpnClientCertificateRevocationList](api-exportclientvpnclientcertificaterevocationlist.md)
 
-- [ExportClientVpnClientConfiguration](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ExportClientVpnClientConfiguration.html)
+- [ExportClientVpnClientConfiguration](api-exportclientvpnclientconfiguration.md)
 
-- [ExportImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ExportImage.html)
+- [ExportImage](api-exportimage.md)
 
-- [ExportTransitGatewayRoutes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ExportTransitGatewayRoutes.html)
+- [ExportTransitGatewayRoutes](api-exporttransitgatewayroutes.md)
 
-- [ExportVerifiedAccessInstanceClientConfiguration](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ExportVerifiedAccessInstanceClientConfiguration.html)
+- [ExportVerifiedAccessInstanceClientConfiguration](api-exportverifiedaccessinstanceclientconfiguration.md)
 
-- [GetActiveVpnTunnelStatus](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetActiveVpnTunnelStatus.html)
+- [GetActiveVpnTunnelStatus](api-getactivevpntunnelstatus.md)
 
-- [GetAllowedImagesSettings](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetAllowedImagesSettings.html)
+- [GetAllowedImagesSettings](api-getallowedimagessettings.md)
 
-- [GetAssociatedEnclaveCertificateIamRoles](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetAssociatedEnclaveCertificateIamRoles.html)
+- [GetAssociatedEnclaveCertificateIamRoles](api-getassociatedenclavecertificateiamroles.md)
 
-- [GetAssociatedIpv6PoolCidrs](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetAssociatedIpv6PoolCidrs.html)
+- [GetAssociatedIpv6PoolCidrs](api-getassociatedipv6poolcidrs.md)
 
-- [GetAwsNetworkPerformanceData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetAwsNetworkPerformanceData.html)
+- [GetAwsNetworkPerformanceData](api-getawsnetworkperformancedata.md)
 
-- [GetCapacityManagerAttributes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetCapacityManagerAttributes.html)
+- [GetCapacityManagerAttributes](api-getcapacitymanagerattributes.md)
 
-- [GetCapacityManagerMetricData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetCapacityManagerMetricData.html)
+- [GetCapacityManagerMetricData](api-getcapacitymanagermetricdata.md)
 
-- [GetCapacityManagerMetricDimensions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetCapacityManagerMetricDimensions.html)
+- [GetCapacityManagerMetricDimensions](api-getcapacitymanagermetricdimensions.md)
 
-- [GetCapacityReservationUsage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetCapacityReservationUsage.html)
+- [GetCapacityReservationUsage](api-getcapacityreservationusage.md)
 
-- [GetCoipPoolUsage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetCoipPoolUsage.html)
+- [GetCoipPoolUsage](api-getcoippoolusage.md)
 
-- [GetConsoleOutput](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetConsoleOutput.html)
+- [GetConsoleOutput](api-getconsoleoutput.md)
 
-- [GetConsoleScreenshot](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetConsoleScreenshot.html)
+- [GetConsoleScreenshot](api-getconsolescreenshot.md)
 
-- [GetDeclarativePoliciesReportSummary](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetDeclarativePoliciesReportSummary.html)
+- [GetDeclarativePoliciesReportSummary](api-getdeclarativepoliciesreportsummary.md)
 
-- [GetDefaultCreditSpecification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetDefaultCreditSpecification.html)
+- [GetDefaultCreditSpecification](api-getdefaultcreditspecification.md)
 
-- [GetEbsDefaultKmsKeyId](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetEbsDefaultKmsKeyId.html)
+- [GetEbsDefaultKmsKeyId](api-getebsdefaultkmskeyid.md)
 
-- [GetEbsEncryptionByDefault](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetEbsEncryptionByDefault.html)
+- [GetEbsEncryptionByDefault](api-getebsencryptionbydefault.md)
 
-- [GetEnabledIpamPolicy](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetEnabledIpamPolicy.html)
+- [GetEnabledIpamPolicy](api-getenabledipampolicy.md)
 
-- [GetFlowLogsIntegrationTemplate](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetFlowLogsIntegrationTemplate.html)
+- [GetFlowLogsIntegrationTemplate](api-getflowlogsintegrationtemplate.md)
 
-- [GetGroupsForCapacityReservation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetGroupsForCapacityReservation.html)
+- [GetGroupsForCapacityReservation](api-getgroupsforcapacityreservation.md)
 
-- [GetHostReservationPurchasePreview](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetHostReservationPurchasePreview.html)
+- [GetHostReservationPurchasePreview](api-gethostreservationpurchasepreview.md)
 
-- [GetImageAncestry](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetImageAncestry.html)
+- [GetImageAncestry](api-getimageancestry.md)
 
-- [GetImageBlockPublicAccessState](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetImageBlockPublicAccessState.html)
+- [GetImageBlockPublicAccessState](api-getimageblockpublicaccessstate.md)
 
-- [GetInstanceMetadataDefaults](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetInstanceMetadataDefaults.html)
+- [GetInstanceMetadataDefaults](api-getinstancemetadatadefaults.md)
 
-- [GetInstanceTpmEkPub](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetInstanceTpmEkPub.html)
+- [GetInstanceTpmEkPub](api-getinstancetpmekpub.md)
 
-- [GetInstanceTypesFromInstanceRequirements](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetInstanceTypesFromInstanceRequirements.html)
+- [GetInstanceTypesFromInstanceRequirements](api-getinstancetypesfrominstancerequirements.md)
 
-- [GetInstanceUefiData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetInstanceUefiData.html)
+- [GetInstanceUefiData](api-getinstanceuefidata.md)
 
-- [GetIpamAddressHistory](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamAddressHistory.html)
+- [GetIpamAddressHistory](api-getipamaddresshistory.md)
 
-- [GetIpamDiscoveredAccounts](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamDiscoveredAccounts.html)
+- [GetIpamDiscoveredAccounts](api-getipamdiscoveredaccounts.md)
 
-- [GetIpamDiscoveredPublicAddresses](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamDiscoveredPublicAddresses.html)
+- [GetIpamDiscoveredPublicAddresses](api-getipamdiscoveredpublicaddresses.md)
 
-- [GetIpamDiscoveredResourceCidrs](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamDiscoveredResourceCidrs.html)
+- [GetIpamDiscoveredResourceCidrs](api-getipamdiscoveredresourcecidrs.md)
 
-- [GetIpamPolicyAllocationRules](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamPolicyAllocationRules.html)
+- [GetIpamPolicyAllocationRules](api-getipampolicyallocationrules.md)
 
-- [GetIpamPolicyOrganizationTargets](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamPolicyOrganizationTargets.html)
+- [GetIpamPolicyOrganizationTargets](api-getipampolicyorganizationtargets.md)
 
-- [GetIpamPoolAllocations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamPoolAllocations.html)
+- [GetIpamPoolAllocations](api-getipampoolallocations.md)
 
-- [GetIpamPoolCidrs](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamPoolCidrs.html)
+- [GetIpamPoolCidrs](api-getipampoolcidrs.md)
 
-- [GetIpamPrefixListResolverRules](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamPrefixListResolverRules.html)
+- [GetIpamPrefixListResolverRules](api-getipamprefixlistresolverrules.md)
 
-- [GetIpamPrefixListResolverVersionEntries](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamPrefixListResolverVersionEntries.html)
+- [GetIpamPrefixListResolverVersionEntries](api-getipamprefixlistresolverversionentries.md)
 
-- [GetIpamPrefixListResolverVersions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamPrefixListResolverVersions.html)
+- [GetIpamPrefixListResolverVersions](api-getipamprefixlistresolverversions.md)
 
-- [GetIpamResourceCidrs](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamResourceCidrs.html)
+- [GetIpamResourceCidrs](api-getipamresourcecidrs.md)
 
-- [GetLaunchTemplateData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetLaunchTemplateData.html)
+- [GetLaunchTemplateData](api-getlaunchtemplatedata.md)
 
-- [GetManagedPrefixListAssociations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetManagedPrefixListAssociations.html)
+- [GetManagedPrefixListAssociations](api-getmanagedprefixlistassociations.md)
 
-- [GetManagedPrefixListEntries](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetManagedPrefixListEntries.html)
+- [GetManagedPrefixListEntries](api-getmanagedprefixlistentries.md)
 
-- [GetNetworkInsightsAccessScopeAnalysisFindings](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetNetworkInsightsAccessScopeAnalysisFindings.html)
+- [GetNetworkInsightsAccessScopeAnalysisFindings](api-getnetworkinsightsaccessscopeanalysisfindings.md)
 
-- [GetNetworkInsightsAccessScopeContent](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetNetworkInsightsAccessScopeContent.html)
+- [GetNetworkInsightsAccessScopeContent](api-getnetworkinsightsaccessscopecontent.md)
 
-- [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html)
+- [GetPasswordData](api-getpassworddata.md)
 
-- [GetReservedInstancesExchangeQuote](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetReservedInstancesExchangeQuote.html)
+- [GetReservedInstancesExchangeQuote](api-getreservedinstancesexchangequote.md)
 
-- [GetRouteServerAssociations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetRouteServerAssociations.html)
+- [GetRouteServerAssociations](api-getrouteserverassociations.md)
 
-- [GetRouteServerPropagations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetRouteServerPropagations.html)
+- [GetRouteServerPropagations](api-getrouteserverpropagations.md)
 
-- [GetRouteServerRoutingDatabase](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetRouteServerRoutingDatabase.html)
+- [GetRouteServerRoutingDatabase](api-getrouteserverroutingdatabase.md)
 
-- [GetSecurityGroupsForVpc](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetSecurityGroupsForVpc.html)
+- [GetSecurityGroupsForVpc](api-getsecuritygroupsforvpc.md)
 
-- [GetSerialConsoleAccessStatus](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetSerialConsoleAccessStatus.html)
+- [GetSerialConsoleAccessStatus](api-getserialconsoleaccessstatus.md)
 
-- [GetSnapshotBlockPublicAccessState](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetSnapshotBlockPublicAccessState.html)
+- [GetSnapshotBlockPublicAccessState](api-getsnapshotblockpublicaccessstate.md)
 
-- [GetSpotPlacementScores](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetSpotPlacementScores.html)
+- [GetSpotPlacementScores](api-getspotplacementscores.md)
 
-- [GetSubnetCidrReservations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetSubnetCidrReservations.html)
+- [GetSubnetCidrReservations](api-getsubnetcidrreservations.md)
 
-- [GetTransitGatewayAttachmentPropagations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetTransitGatewayAttachmentPropagations.html)
+- [GetTransitGatewayAttachmentPropagations](api-gettransitgatewayattachmentpropagations.md)
 
-- [GetTransitGatewayMeteringPolicyEntries](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetTransitGatewayMeteringPolicyEntries.html)
+- [GetTransitGatewayMeteringPolicyEntries](api-gettransitgatewaymeteringpolicyentries.md)
 
-- [GetTransitGatewayMulticastDomainAssociations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetTransitGatewayMulticastDomainAssociations.html)
+- [GetTransitGatewayMulticastDomainAssociations](api-gettransitgatewaymulticastdomainassociations.md)
 
-- [GetTransitGatewayPolicyTableAssociations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetTransitGatewayPolicyTableAssociations.html)
+- [GetTransitGatewayPolicyTableAssociations](api-gettransitgatewaypolicytableassociations.md)
 
-- [GetTransitGatewayPolicyTableEntries](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetTransitGatewayPolicyTableEntries.html)
+- [GetTransitGatewayPolicyTableEntries](api-gettransitgatewaypolicytableentries.md)
 
-- [GetTransitGatewayPrefixListReferences](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetTransitGatewayPrefixListReferences.html)
+- [GetTransitGatewayPrefixListReferences](api-gettransitgatewayprefixlistreferences.md)
 
-- [GetTransitGatewayRouteTableAssociations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetTransitGatewayRouteTableAssociations.html)
+- [GetTransitGatewayRouteTableAssociations](api-gettransitgatewayroutetableassociations.md)
 
-- [GetTransitGatewayRouteTablePropagations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetTransitGatewayRouteTablePropagations.html)
+- [GetTransitGatewayRouteTablePropagations](api-gettransitgatewayroutetablepropagations.md)
 
-- [GetVerifiedAccessEndpointPolicy](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetVerifiedAccessEndpointPolicy.html)
+- [GetVerifiedAccessEndpointPolicy](api-getverifiedaccessendpointpolicy.md)
 
-- [GetVerifiedAccessEndpointTargets](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetVerifiedAccessEndpointTargets.html)
+- [GetVerifiedAccessEndpointTargets](api-getverifiedaccessendpointtargets.md)
 
-- [GetVerifiedAccessGroupPolicy](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetVerifiedAccessGroupPolicy.html)
+- [GetVerifiedAccessGroupPolicy](api-getverifiedaccessgrouppolicy.md)
 
-- [GetVpcResourcesBlockingEncryptionEnforcement](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetVpcResourcesBlockingEncryptionEnforcement.html)
+- [GetVpcResourcesBlockingEncryptionEnforcement](api-getvpcresourcesblockingencryptionenforcement.md)
 
-- [GetVpnConnectionDeviceSampleConfiguration](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetVpnConnectionDeviceSampleConfiguration.html)
+- [GetVpnConnectionDeviceSampleConfiguration](api-getvpnconnectiondevicesampleconfiguration.md)
 
-- [GetVpnConnectionDeviceTypes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetVpnConnectionDeviceTypes.html)
+- [GetVpnConnectionDeviceTypes](api-getvpnconnectiondevicetypes.md)
 
-- [GetVpnTunnelReplacementStatus](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetVpnTunnelReplacementStatus.html)
+- [GetVpnTunnelReplacementStatus](api-getvpntunnelreplacementstatus.md)
 
-- [ImportClientVpnClientCertificateRevocationList](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportClientVpnClientCertificateRevocationList.html)
+- [ImportClientVpnClientCertificateRevocationList](api-importclientvpnclientcertificaterevocationlist.md)
 
-- [ImportImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportImage.html)
+- [ImportImage](api-importimage.md)
 
-- [ImportInstance](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportInstance.html)
+- [ImportInstance](api-importinstance.md)
 
-- [ImportKeyPair](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportKeyPair.html)
+- [ImportKeyPair](api-importkeypair.md)
 
-- [ImportSnapshot](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportSnapshot.html)
+- [ImportSnapshot](api-importsnapshot.md)
 
-- [ImportVolume](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportVolume.html)
+- [ImportVolume](api-importvolume.md)
 
-- [ListImagesInRecycleBin](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ListImagesInRecycleBin.html)
+- [ListImagesInRecycleBin](api-listimagesinrecyclebin.md)
 
-- [ListSnapshotsInRecycleBin](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ListSnapshotsInRecycleBin.html)
+- [ListSnapshotsInRecycleBin](api-listsnapshotsinrecyclebin.md)
 
-- [ListVolumesInRecycleBin](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ListVolumesInRecycleBin.html)
+- [ListVolumesInRecycleBin](api-listvolumesinrecyclebin.md)
 
-- [LockSnapshot](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LockSnapshot.html)
+- [LockSnapshot](api-locksnapshot.md)
 
-- [ModifyAddressAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyAddressAttribute.html)
+- [ModifyAddressAttribute](api-modifyaddressattribute.md)
 
-- [ModifyAvailabilityZoneGroup](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyAvailabilityZoneGroup.html)
+- [ModifyAvailabilityZoneGroup](api-modifyavailabilityzonegroup.md)
 
-- [ModifyCapacityReservation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyCapacityReservation.html)
+- [ModifyCapacityReservation](api-modifycapacityreservation.md)
 
-- [ModifyCapacityReservationFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyCapacityReservationFleet.html)
+- [ModifyCapacityReservationFleet](api-modifycapacityreservationfleet.md)
 
-- [ModifyClientVpnEndpoint](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyClientVpnEndpoint.html)
+- [ModifyClientVpnEndpoint](api-modifyclientvpnendpoint.md)
 
-- [ModifyDefaultCreditSpecification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyDefaultCreditSpecification.html)
+- [ModifyDefaultCreditSpecification](api-modifydefaultcreditspecification.md)
 
-- [ModifyEbsDefaultKmsKeyId](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyEbsDefaultKmsKeyId.html)
+- [ModifyEbsDefaultKmsKeyId](api-modifyebsdefaultkmskeyid.md)
 
-- [ModifyFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyFleet.html)
+- [ModifyFleet](api-modifyfleet.md)
 
-- [ModifyFpgaImageAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyFpgaImageAttribute.html)
+- [ModifyFpgaImageAttribute](api-modifyfpgaimageattribute.md)
 
-- [ModifyHosts](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyHosts.html)
+- [ModifyHosts](api-modifyhosts.md)
 
-- [ModifyIdentityIdFormat](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIdentityIdFormat.html)
+- [ModifyIdentityIdFormat](api-modifyidentityidformat.md)
 
-- [ModifyIdFormat](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIdFormat.html)
+- [ModifyIdFormat](api-modifyidformat.md)
 
-- [ModifyImageAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyImageAttribute.html)
+- [ModifyImageAttribute](api-modifyimageattribute.md)
 
-- [ModifyInstanceAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyInstanceAttribute.html)
+- [ModifyInstanceAttribute](api-modifyinstanceattribute.md)
 
-- [ModifyInstanceCapacityReservationAttributes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyInstanceCapacityReservationAttributes.html)
+- [ModifyInstanceCapacityReservationAttributes](api-modifyinstancecapacityreservationattributes.md)
 
-- [ModifyInstanceConnectEndpoint](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyInstanceConnectEndpoint.html)
+- [ModifyInstanceConnectEndpoint](api-modifyinstanceconnectendpoint.md)
 
-- [ModifyInstanceCpuOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyInstanceCpuOptions.html)
+- [ModifyInstanceCpuOptions](api-modifyinstancecpuoptions.md)
 
-- [ModifyInstanceCreditSpecification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyInstanceCreditSpecification.html)
+- [ModifyInstanceCreditSpecification](api-modifyinstancecreditspecification.md)
 
-- [ModifyInstanceEventStartTime](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyInstanceEventStartTime.html)
+- [ModifyInstanceEventStartTime](api-modifyinstanceeventstarttime.md)
 
-- [ModifyInstanceEventWindow](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyInstanceEventWindow.html)
+- [ModifyInstanceEventWindow](api-modifyinstanceeventwindow.md)
 
-- [ModifyInstanceMaintenanceOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyInstanceMaintenanceOptions.html)
+- [ModifyInstanceMaintenanceOptions](api-modifyinstancemaintenanceoptions.md)
 
-- [ModifyInstanceMetadataDefaults](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyInstanceMetadataDefaults.html)
+- [ModifyInstanceMetadataDefaults](api-modifyinstancemetadatadefaults.md)
 
-- [ModifyInstanceMetadataOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyInstanceMetadataOptions.html)
+- [ModifyInstanceMetadataOptions](api-modifyinstancemetadataoptions.md)
 
-- [ModifyInstanceNetworkPerformanceOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyInstanceNetworkPerformanceOptions.html)
+- [ModifyInstanceNetworkPerformanceOptions](api-modifyinstancenetworkperformanceoptions.md)
 
-- [ModifyInstancePlacement](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyInstancePlacement.html)
+- [ModifyInstancePlacement](api-modifyinstanceplacement.md)
 
-- [ModifyIpam](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIpam.html)
+- [ModifyIpam](api-modifyipam.md)
 
-- [ModifyIpamPolicyAllocationRules](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIpamPolicyAllocationRules.html)
+- [ModifyIpamPolicyAllocationRules](api-modifyipampolicyallocationrules.md)
 
-- [ModifyIpamPool](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIpamPool.html)
+- [ModifyIpamPool](api-modifyipampool.md)
 
-- [ModifyIpamPrefixListResolver](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIpamPrefixListResolver.html)
+- [ModifyIpamPrefixListResolver](api-modifyipamprefixlistresolver.md)
 
-- [ModifyIpamPrefixListResolverTarget](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIpamPrefixListResolverTarget.html)
+- [ModifyIpamPrefixListResolverTarget](api-modifyipamprefixlistresolvertarget.md)
 
-- [ModifyIpamResourceCidr](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIpamResourceCidr.html)
+- [ModifyIpamResourceCidr](api-modifyipamresourcecidr.md)
 
-- [ModifyIpamResourceDiscovery](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIpamResourceDiscovery.html)
+- [ModifyIpamResourceDiscovery](api-modifyipamresourcediscovery.md)
 
-- [ModifyIpamScope](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIpamScope.html)
+- [ModifyIpamScope](api-modifyipamscope.md)
 
-- [ModifyLaunchTemplate](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyLaunchTemplate.html)
+- [ModifyLaunchTemplate](api-modifylaunchtemplate.md)
 
-- [ModifyLocalGatewayRoute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyLocalGatewayRoute.html)
+- [ModifyLocalGatewayRoute](api-modifylocalgatewayroute.md)
 
-- [ModifyManagedPrefixList](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyManagedPrefixList.html)
+- [ModifyManagedPrefixList](api-modifymanagedprefixlist.md)
 
-- [ModifyNetworkInterfaceAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyNetworkInterfaceAttribute.html)
+- [ModifyNetworkInterfaceAttribute](api-modifynetworkinterfaceattribute.md)
 
-- [ModifyPrivateDnsNameOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyPrivateDnsNameOptions.html)
+- [ModifyPrivateDnsNameOptions](api-modifyprivatednsnameoptions.md)
 
-- [ModifyPublicIpDnsNameOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyPublicIpDnsNameOptions.html)
+- [ModifyPublicIpDnsNameOptions](api-modifypublicipdnsnameoptions.md)
 
-- [ModifyReservedInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyReservedInstances.html)
+- [ModifyReservedInstances](api-modifyreservedinstances.md)
 
-- [ModifyRouteServer](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyRouteServer.html)
+- [ModifyRouteServer](api-modifyrouteserver.md)
 
-- [ModifySecurityGroupRules](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifySecurityGroupRules.html)
+- [ModifySecurityGroupRules](api-modifysecuritygrouprules.md)
 
-- [ModifySnapshotAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifySnapshotAttribute.html)
+- [ModifySnapshotAttribute](api-modifysnapshotattribute.md)
 
-- [ModifySnapshotTier](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifySnapshotTier.html)
+- [ModifySnapshotTier](api-modifysnapshottier.md)
 
-- [ModifySpotFleetRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifySpotFleetRequest.html)
+- [ModifySpotFleetRequest](api-modifyspotfleetrequest.md)
 
-- [ModifySubnetAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifySubnetAttribute.html)
+- [ModifySubnetAttribute](api-modifysubnetattribute.md)
 
-- [ModifyTrafficMirrorFilterNetworkServices](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyTrafficMirrorFilterNetworkServices.html)
+- [ModifyTrafficMirrorFilterNetworkServices](api-modifytrafficmirrorfilternetworkservices.md)
 
-- [ModifyTrafficMirrorFilterRule](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyTrafficMirrorFilterRule.html)
+- [ModifyTrafficMirrorFilterRule](api-modifytrafficmirrorfilterrule.md)
 
-- [ModifyTrafficMirrorSession](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyTrafficMirrorSession.html)
+- [ModifyTrafficMirrorSession](api-modifytrafficmirrorsession.md)
 
-- [ModifyTransitGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyTransitGateway.html)
+- [ModifyTransitGateway](api-modifytransitgateway.md)
 
-- [ModifyTransitGatewayMeteringPolicy](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyTransitGatewayMeteringPolicy.html)
+- [ModifyTransitGatewayMeteringPolicy](api-modifytransitgatewaymeteringpolicy.md)
 
-- [ModifyTransitGatewayPrefixListReference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyTransitGatewayPrefixListReference.html)
+- [ModifyTransitGatewayPrefixListReference](api-modifytransitgatewayprefixlistreference.md)
 
-- [ModifyTransitGatewayVpcAttachment](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyTransitGatewayVpcAttachment.html)
+- [ModifyTransitGatewayVpcAttachment](api-modifytransitgatewayvpcattachment.md)
 
-- [ModifyVerifiedAccessEndpoint](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVerifiedAccessEndpoint.html)
+- [ModifyVerifiedAccessEndpoint](api-modifyverifiedaccessendpoint.md)
 
-- [ModifyVerifiedAccessEndpointPolicy](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVerifiedAccessEndpointPolicy.html)
+- [ModifyVerifiedAccessEndpointPolicy](api-modifyverifiedaccessendpointpolicy.md)
 
-- [ModifyVerifiedAccessGroup](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVerifiedAccessGroup.html)
+- [ModifyVerifiedAccessGroup](api-modifyverifiedaccessgroup.md)
 
-- [ModifyVerifiedAccessGroupPolicy](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVerifiedAccessGroupPolicy.html)
+- [ModifyVerifiedAccessGroupPolicy](api-modifyverifiedaccessgrouppolicy.md)
 
-- [ModifyVerifiedAccessInstance](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVerifiedAccessInstance.html)
+- [ModifyVerifiedAccessInstance](api-modifyverifiedaccessinstance.md)
 
-- [ModifyVerifiedAccessInstanceLoggingConfiguration](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVerifiedAccessInstanceLoggingConfiguration.html)
+- [ModifyVerifiedAccessInstanceLoggingConfiguration](api-modifyverifiedaccessinstanceloggingconfiguration.md)
 
-- [ModifyVerifiedAccessTrustProvider](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVerifiedAccessTrustProvider.html)
+- [ModifyVerifiedAccessTrustProvider](api-modifyverifiedaccesstrustprovider.md)
 
-- [ModifyVolume](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVolume.html)
+- [ModifyVolume](api-modifyvolume.md)
 
-- [ModifyVolumeAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVolumeAttribute.html)
+- [ModifyVolumeAttribute](api-modifyvolumeattribute.md)
 
-- [ModifyVpcAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpcAttribute.html)
+- [ModifyVpcAttribute](api-modifyvpcattribute.md)
 
-- [ModifyVpcBlockPublicAccessExclusion](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpcBlockPublicAccessExclusion.html)
+- [ModifyVpcBlockPublicAccessExclusion](api-modifyvpcblockpublicaccessexclusion.md)
 
-- [ModifyVpcBlockPublicAccessOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpcBlockPublicAccessOptions.html)
+- [ModifyVpcBlockPublicAccessOptions](api-modifyvpcblockpublicaccessoptions.md)
 
-- [ModifyVpcEncryptionControl](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpcEncryptionControl.html)
+- [ModifyVpcEncryptionControl](api-modifyvpcencryptioncontrol.md)
 
-- [ModifyVpcEndpoint](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpcEndpoint.html)
+- [ModifyVpcEndpoint](api-modifyvpcendpoint.md)
 
-- [ModifyVpcEndpointConnectionNotification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpcEndpointConnectionNotification.html)
+- [ModifyVpcEndpointConnectionNotification](api-modifyvpcendpointconnectionnotification.md)
 
-- [ModifyVpcEndpointServiceConfiguration](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpcEndpointServiceConfiguration.html)
+- [ModifyVpcEndpointServiceConfiguration](api-modifyvpcendpointserviceconfiguration.md)
 
-- [ModifyVpcEndpointServicePayerResponsibility](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpcEndpointServicePayerResponsibility.html)
+- [ModifyVpcEndpointServicePayerResponsibility](api-modifyvpcendpointservicepayerresponsibility.md)
 
-- [ModifyVpcEndpointServicePermissions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpcEndpointServicePermissions.html)
+- [ModifyVpcEndpointServicePermissions](api-modifyvpcendpointservicepermissions.md)
 
-- [ModifyVpcPeeringConnectionOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpcPeeringConnectionOptions.html)
+- [ModifyVpcPeeringConnectionOptions](api-modifyvpcpeeringconnectionoptions.md)
 
-- [ModifyVpcTenancy](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpcTenancy.html)
+- [ModifyVpcTenancy](api-modifyvpctenancy.md)
 
-- [ModifyVpnConnection](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpnConnection.html)
+- [ModifyVpnConnection](api-modifyvpnconnection.md)
 
-- [ModifyVpnConnectionOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpnConnectionOptions.html)
+- [ModifyVpnConnectionOptions](api-modifyvpnconnectionoptions.md)
 
-- [ModifyVpnTunnelCertificate](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpnTunnelCertificate.html)
+- [ModifyVpnTunnelCertificate](api-modifyvpntunnelcertificate.md)
 
-- [ModifyVpnTunnelOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpnTunnelOptions.html)
+- [ModifyVpnTunnelOptions](api-modifyvpntunneloptions.md)
 
-- [MonitorInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MonitorInstances.html)
+- [MonitorInstances](api-monitorinstances.md)
 
-- [MoveAddressToVpc](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MoveAddressToVpc.html)
+- [MoveAddressToVpc](api-moveaddresstovpc.md)
 
-- [MoveByoipCidrToIpam](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MoveByoipCidrToIpam.html)
+- [MoveByoipCidrToIpam](api-movebyoipcidrtoipam.md)
 
-- [MoveCapacityReservationInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MoveCapacityReservationInstances.html)
+- [MoveCapacityReservationInstances](api-movecapacityreservationinstances.md)
 
-- [ProvisionByoipCidr](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ProvisionByoipCidr.html)
+- [ProvisionByoipCidr](api-provisionbyoipcidr.md)
 
-- [ProvisionIpamByoasn](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ProvisionIpamByoasn.html)
+- [ProvisionIpamByoasn](api-provisionipambyoasn.md)
 
-- [ProvisionIpamPoolCidr](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ProvisionIpamPoolCidr.html)
+- [ProvisionIpamPoolCidr](api-provisionipampoolcidr.md)
 
-- [ProvisionPublicIpv4PoolCidr](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ProvisionPublicIpv4PoolCidr.html)
+- [ProvisionPublicIpv4PoolCidr](api-provisionpublicipv4poolcidr.md)
 
-- [PurchaseCapacityBlock](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PurchaseCapacityBlock.html)
+- [PurchaseCapacityBlock](api-purchasecapacityblock.md)
 
-- [PurchaseCapacityBlockExtension](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PurchaseCapacityBlockExtension.html)
+- [PurchaseCapacityBlockExtension](api-purchasecapacityblockextension.md)
 
-- [PurchaseHostReservation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PurchaseHostReservation.html)
+- [PurchaseHostReservation](api-purchasehostreservation.md)
 
-- [PurchaseReservedInstancesOffering](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PurchaseReservedInstancesOffering.html)
+- [PurchaseReservedInstancesOffering](api-purchasereservedinstancesoffering.md)
 
-- [PurchaseScheduledInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PurchaseScheduledInstances.html)
+- [PurchaseScheduledInstances](api-purchasescheduledinstances.md)
 
-- [RebootInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RebootInstances.html)
+- [RebootInstances](api-rebootinstances.md)
 
-- [RegisterImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RegisterImage.html)
+- [RegisterImage](api-registerimage.md)
 
-- [RegisterInstanceEventNotificationAttributes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RegisterInstanceEventNotificationAttributes.html)
+- [RegisterInstanceEventNotificationAttributes](api-registerinstanceeventnotificationattributes.md)
 
-- [RegisterTransitGatewayMulticastGroupMembers](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RegisterTransitGatewayMulticastGroupMembers.html)
+- [RegisterTransitGatewayMulticastGroupMembers](api-registertransitgatewaymulticastgroupmembers.md)
 
-- [RegisterTransitGatewayMulticastGroupSources](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RegisterTransitGatewayMulticastGroupSources.html)
+- [RegisterTransitGatewayMulticastGroupSources](api-registertransitgatewaymulticastgroupsources.md)
 
-- [RejectCapacityReservationBillingOwnership](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RejectCapacityReservationBillingOwnership.html)
+- [RejectCapacityReservationBillingOwnership](api-rejectcapacityreservationbillingownership.md)
 
-- [RejectTransitGatewayMulticastDomainAssociations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RejectTransitGatewayMulticastDomainAssociations.html)
+- [RejectTransitGatewayMulticastDomainAssociations](api-rejecttransitgatewaymulticastdomainassociations.md)
 
-- [RejectTransitGatewayPeeringAttachment](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RejectTransitGatewayPeeringAttachment.html)
+- [RejectTransitGatewayPeeringAttachment](api-rejecttransitgatewaypeeringattachment.md)
 
-- [RejectTransitGatewayVpcAttachment](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RejectTransitGatewayVpcAttachment.html)
+- [RejectTransitGatewayVpcAttachment](api-rejecttransitgatewayvpcattachment.md)
 
-- [RejectVpcEndpointConnections](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RejectVpcEndpointConnections.html)
+- [RejectVpcEndpointConnections](api-rejectvpcendpointconnections.md)
 
-- [RejectVpcPeeringConnection](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RejectVpcPeeringConnection.html)
+- [RejectVpcPeeringConnection](api-rejectvpcpeeringconnection.md)
 
-- [ReleaseAddress](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReleaseAddress.html)
+- [ReleaseAddress](api-releaseaddress.md)
 
-- [ReleaseHosts](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReleaseHosts.html)
+- [ReleaseHosts](api-releasehosts.md)
 
-- [ReleaseIpamPoolAllocation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReleaseIpamPoolAllocation.html)
+- [ReleaseIpamPoolAllocation](api-releaseipampoolallocation.md)
 
-- [ReplaceIamInstanceProfileAssociation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReplaceIamInstanceProfileAssociation.html)
+- [ReplaceIamInstanceProfileAssociation](api-replaceiaminstanceprofileassociation.md)
 
-- [ReplaceImageCriteriaInAllowedImagesSettings](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReplaceImageCriteriaInAllowedImagesSettings.html)
+- [ReplaceImageCriteriaInAllowedImagesSettings](api-replaceimagecriteriainallowedimagessettings.md)
 
-- [ReplaceNetworkAclAssociation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReplaceNetworkAclAssociation.html)
+- [ReplaceNetworkAclAssociation](api-replacenetworkaclassociation.md)
 
-- [ReplaceNetworkAclEntry](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReplaceNetworkAclEntry.html)
+- [ReplaceNetworkAclEntry](api-replacenetworkaclentry.md)
 
-- [ReplaceRoute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReplaceRoute.html)
+- [ReplaceRoute](api-replaceroute.md)
 
-- [ReplaceRouteTableAssociation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReplaceRouteTableAssociation.html)
+- [ReplaceRouteTableAssociation](api-replaceroutetableassociation.md)
 
-- [ReplaceTransitGatewayRoute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReplaceTransitGatewayRoute.html)
+- [ReplaceTransitGatewayRoute](api-replacetransitgatewayroute.md)
 
-- [ReplaceVpnTunnel](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReplaceVpnTunnel.html)
+- [ReplaceVpnTunnel](api-replacevpntunnel.md)
 
-- [ReportInstanceStatus](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReportInstanceStatus.html)
+- [ReportInstanceStatus](api-reportinstancestatus.md)
 
-- [RequestSpotFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RequestSpotFleet.html)
+- [RequestSpotFleet](api-requestspotfleet.md)
 
-- [RequestSpotInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RequestSpotInstances.html)
+- [RequestSpotInstances](api-requestspotinstances.md)
 
-- [ResetAddressAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ResetAddressAttribute.html)
+- [ResetAddressAttribute](api-resetaddressattribute.md)
 
-- [ResetEbsDefaultKmsKeyId](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ResetEbsDefaultKmsKeyId.html)
+- [ResetEbsDefaultKmsKeyId](api-resetebsdefaultkmskeyid.md)
 
-- [ResetFpgaImageAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ResetFpgaImageAttribute.html)
+- [ResetFpgaImageAttribute](api-resetfpgaimageattribute.md)
 
-- [ResetImageAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ResetImageAttribute.html)
+- [ResetImageAttribute](api-resetimageattribute.md)
 
-- [ResetInstanceAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ResetInstanceAttribute.html)
+- [ResetInstanceAttribute](api-resetinstanceattribute.md)
 
-- [ResetNetworkInterfaceAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ResetNetworkInterfaceAttribute.html)
+- [ResetNetworkInterfaceAttribute](api-resetnetworkinterfaceattribute.md)
 
-- [ResetSnapshotAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ResetSnapshotAttribute.html)
+- [ResetSnapshotAttribute](api-resetsnapshotattribute.md)
 
-- [RestoreAddressToClassic](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RestoreAddressToClassic.html)
+- [RestoreAddressToClassic](api-restoreaddresstoclassic.md)
 
-- [RestoreImageFromRecycleBin](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RestoreImageFromRecycleBin.html)
+- [RestoreImageFromRecycleBin](api-restoreimagefromrecyclebin.md)
 
-- [RestoreManagedPrefixListVersion](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RestoreManagedPrefixListVersion.html)
+- [RestoreManagedPrefixListVersion](api-restoremanagedprefixlistversion.md)
 
-- [RestoreSnapshotFromRecycleBin](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RestoreSnapshotFromRecycleBin.html)
+- [RestoreSnapshotFromRecycleBin](api-restoresnapshotfromrecyclebin.md)
 
-- [RestoreSnapshotTier](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RestoreSnapshotTier.html)
+- [RestoreSnapshotTier](api-restoresnapshottier.md)
 
-- [RestoreVolumeFromRecycleBin](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RestoreVolumeFromRecycleBin.html)
+- [RestoreVolumeFromRecycleBin](api-restorevolumefromrecyclebin.md)
 
-- [RevokeClientVpnIngress](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RevokeClientVpnIngress.html)
+- [RevokeClientVpnIngress](api-revokeclientvpningress.md)
 
-- [RevokeSecurityGroupEgress](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RevokeSecurityGroupEgress.html)
+- [RevokeSecurityGroupEgress](api-revokesecuritygroupegress.md)
 
-- [RevokeSecurityGroupIngress](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RevokeSecurityGroupIngress.html)
+- [RevokeSecurityGroupIngress](api-revokesecuritygroupingress.md)
 
 - [RunInstances](api-runinstances.md)
 
-- [RunScheduledInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RunScheduledInstances.html)
+- [RunScheduledInstances](api-runscheduledinstances.md)
 
-- [SearchLocalGatewayRoutes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SearchLocalGatewayRoutes.html)
+- [SearchLocalGatewayRoutes](api-searchlocalgatewayroutes.md)
 
-- [SearchTransitGatewayMulticastGroups](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SearchTransitGatewayMulticastGroups.html)
+- [SearchTransitGatewayMulticastGroups](api-searchtransitgatewaymulticastgroups.md)
 
-- [SearchTransitGatewayRoutes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SearchTransitGatewayRoutes.html)
+- [SearchTransitGatewayRoutes](api-searchtransitgatewayroutes.md)
 
-- [SendDiagnosticInterrupt](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SendDiagnosticInterrupt.html)
+- [SendDiagnosticInterrupt](api-senddiagnosticinterrupt.md)
 
 - [StartDeclarativePoliciesReport](api-startdeclarativepoliciesreport.md)
 
-- [StartInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StartInstances.html)
+- [StartInstances](api-startinstances.md)
 
-- [StartNetworkInsightsAccessScopeAnalysis](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StartNetworkInsightsAccessScopeAnalysis.html)
+- [StartNetworkInsightsAccessScopeAnalysis](api-startnetworkinsightsaccessscopeanalysis.md)
 
-- [StartNetworkInsightsAnalysis](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StartNetworkInsightsAnalysis.html)
+- [StartNetworkInsightsAnalysis](api-startnetworkinsightsanalysis.md)
 
-- [StartVpcEndpointServicePrivateDnsVerification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StartVpcEndpointServicePrivateDnsVerification.html)
+- [StartVpcEndpointServicePrivateDnsVerification](api-startvpcendpointserviceprivatednsverification.md)
 
-- [StopInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StopInstances.html)
+- [StopInstances](api-stopinstances.md)
 
-- [TerminateClientVpnConnections](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TerminateClientVpnConnections.html)
+- [TerminateClientVpnConnections](api-terminateclientvpnconnections.md)
 
-- [TerminateInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TerminateInstances.html)
+- [TerminateInstances](api-terminateinstances.md)
 
-- [UnassignIpv6Addresses](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UnassignIpv6Addresses.html)
+- [UnassignIpv6Addresses](api-unassignipv6addresses.md)
 
-- [UnassignPrivateIpAddresses](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UnassignPrivateIpAddresses.html)
+- [UnassignPrivateIpAddresses](api-unassignprivateipaddresses.md)
 
-- [UnassignPrivateNatGatewayAddress](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UnassignPrivateNatGatewayAddress.html)
+- [UnassignPrivateNatGatewayAddress](api-unassignprivatenatgatewayaddress.md)
 
-- [UnlockSnapshot](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UnlockSnapshot.html)
+- [UnlockSnapshot](api-unlocksnapshot.md)
 
-- [UnmonitorInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UnmonitorInstances.html)
+- [UnmonitorInstances](api-unmonitorinstances.md)
 
-- [UpdateCapacityManagerOrganizationsAccess](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UpdateCapacityManagerOrganizationsAccess.html)
+- [UpdateCapacityManagerOrganizationsAccess](api-updatecapacitymanagerorganizationsaccess.md)
 
-- [UpdateInterruptibleCapacityReservationAllocation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UpdateInterruptibleCapacityReservationAllocation.html)
+- [UpdateInterruptibleCapacityReservationAllocation](api-updateinterruptiblecapacityreservationallocation.md)
 
-- [UpdateSecurityGroupRuleDescriptionsEgress](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UpdateSecurityGroupRuleDescriptionsEgress.html)
+- [UpdateSecurityGroupRuleDescriptionsEgress](api-updatesecuritygroupruledescriptionsegress.md)
 
-- [UpdateSecurityGroupRuleDescriptionsIngress](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UpdateSecurityGroupRuleDescriptionsIngress.html)
+- [UpdateSecurityGroupRuleDescriptionsIngress](api-updatesecuritygroupruledescriptionsingress.md)
 
-- [WithdrawByoipCidr](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_WithdrawByoipCidr.html)
+- [WithdrawByoipCidr](api-withdrawbyoipcidr.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AWS Wavelength actions
 

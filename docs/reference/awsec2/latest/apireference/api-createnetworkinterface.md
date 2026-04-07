@@ -5,16 +5,16 @@ Creates a network interface in the specified subnet.
 The number of IP addresses you can assign to a network interface varies by instance
 type.
 
-For more information about network interfaces, see [Elastic network interfaces](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html) in the
+For more information about network interfaces, see [Elastic network interfaces](../../../../services/ec2/latest/userguide/using-eni.md) in the
 _Amazon EC2 User Guide_.
 
 ## Request Parameters
 
-The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/CommonParameters.html).
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
 
 **ClientToken**
 
-Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html).
+Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensuring idempotency](../../../../services/ec2/latest/devguide/ec2-api-idempotency.md).
 
 Type: String
 
@@ -24,7 +24,7 @@ Required: No
 
 A connection tracking specification for the network interface.
 
-Type: [ConnectionTrackingSpecificationRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ConnectionTrackingSpecificationRequest.html) object
+Type: [ConnectionTrackingSpecificationRequest](api-connectiontrackingspecificationrequest.md) object
 
 Required: No
 
@@ -87,7 +87,7 @@ You can't specify IPv4 prefixes if you've specified one of the following: a coun
 IPv4 prefixes, specific private IPv4 addresses, or a count of private IPv4
 addresses.
 
-Type: Array of [Ipv4PrefixSpecificationRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Ipv4PrefixSpecificationRequest.html) objects
+Type: Array of [Ipv4PrefixSpecificationRequest](api-ipv4prefixspecificationrequest.md) objects
 
 Required: No
 
@@ -128,7 +128,7 @@ You can't specify IPv6 addresses using this parameter if you've specified one of
 following: a count of IPv6 addresses, specific IPv6 prefixes, or a count of IPv6
 prefixes.
 
-Type: Array of [InstanceIpv6Address](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceIpv6Address.html) objects
+Type: Array of [InstanceIpv6Address](api-instanceipv6address.md) objects
 
 Required: No
 
@@ -139,7 +139,7 @@ The IPv6 prefixes assigned to the network interface.
 You can't specify IPv6 prefixes if you've specified one of the following: a count of
 IPv6 prefixes, specific IPv6 addresses, or a count of IPv6 addresses.
 
-Type: Array of [Ipv6PrefixSpecificationRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Ipv6PrefixSpecificationRequest.html) objects
+Type: Array of [Ipv6PrefixSpecificationRequest](api-ipv6prefixspecificationrequest.md) objects
 
 Required: No
 
@@ -159,7 +159,7 @@ Required: No
 
 Reserved for internal use.
 
-Type: [OperatorRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_OperatorRequest.html) object
+Type: [OperatorRequest](api-operatorrequest.md) object
 
 Required: No
 
@@ -183,7 +183,7 @@ You can't specify private IPv4 addresses if you've specified one of the followin
 count of private IPv4 addresses, specific IPv4 prefixes, or a count of IPv4
 prefixes.
 
-Type: Array of [PrivateIpAddressSpecification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PrivateIpAddressSpecification.html) objects
+Type: Array of [PrivateIpAddressSpecification](api-privateipaddressspecification.md) objects
 
 Required: No
 
@@ -222,7 +222,7 @@ Required: Yes
 
 The tags to apply to the new network interface.
 
-Type: Array of [TagSpecification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TagSpecification.html) objects
+Type: Array of [TagSpecification](api-tagspecification.md) objects
 
 Required: No
 
@@ -240,7 +240,7 @@ Type: String
 
 Information about the network interface.
 
-Type: [NetworkInterface](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkInterface.html) object
+Type: [NetworkInterface](api-networkinterface.md) object
 
 **requestId**
 
@@ -250,7 +250,7 @@ Type: String
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common client error codes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/errors-overview.html#CommonErrors).
+For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
 
 ## Examples
 
@@ -465,23 +465,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateNetworkInterface)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateNetworkInterface)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createnetworkinterface.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateNetworkInterface)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createnetworkinterface.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateNetworkInterface)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createnetworkinterface.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateNetworkInterface)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createnetworkinterface.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateNetworkInterface)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createnetworkinterface.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateNetworkInterface)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createnetworkinterface.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateNetworkInterface)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateNetworkInterface)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createnetworkinterface.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateNetworkInsightsPath
 

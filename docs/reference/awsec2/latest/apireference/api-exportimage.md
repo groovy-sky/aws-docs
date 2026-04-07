@@ -1,7 +1,7 @@
 # ExportImage
 
 Exports an Amazon Machine Image (AMI) to a VM file. For more information, see [Exporting a VM\
-directly from an Amazon Machine Image (AMI)](https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport_image.html) in the
+directly from an Amazon Machine Image (AMI)](../../../../services/vm-import/latest/userguide/vmexport-image.md) in the
 _VM Import/Export User Guide_.
 
 ## Request Parameters
@@ -65,7 +65,7 @@ Required: No
 
 The Amazon S3 bucket for the destination image. The destination bucket must exist.
 
-Type: [ExportTaskS3LocationRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ExportTaskS3LocationRequest.html) object
+Type: [ExportTaskS3LocationRequest](api-exporttasks3locationrequest.md) object
 
 Required: Yes
 
@@ -130,7 +130,7 @@ Type: String
 
 Information about the destination Amazon S3 bucket.
 
-Type: [ExportTaskS3Location](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ExportTaskS3Location.html) object
+Type: [ExportTaskS3Location](api-exporttasks3location.md) object
 
 **status**
 
@@ -163,23 +163,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ExportImage)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ExportImage)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/exportimage.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ExportImage)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/exportimage.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ExportImage)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/exportimage.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ExportImage)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/exportimage.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ExportImage)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/exportimage.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ExportImage)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/exportimage.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ExportImage)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ExportImage)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/exportimage.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ExportClientVpnClientConfiguration
 

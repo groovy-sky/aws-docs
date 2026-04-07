@@ -2,7 +2,7 @@
 
 Create an IP address pool for Amazon VPC IP Address Manager (IPAM). In IPAM, a pool is a collection of contiguous IP addresses CIDRs. Pools enable you to organize your IP addresses according to your routing and security needs. For example, if you have separate routing and security needs for development and production applications, you can create a pool for each.
 
-For more information, see [Create a top-level pool](https://docs.aws.amazon.com/vpc/latest/ipam/create-top-ipam.html) in the _Amazon VPC IPAM User Guide_.
+For more information, see [Create a top-level pool](../../../../services/vpc/latest/ipam/create-top-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 ## Request Parameters
 
@@ -55,7 +55,7 @@ Required: No
 
 Tags that are required for resources that use CIDRs from this IPAM pool. Resources that do not have these tags will not be allowed to allocate space from the pool. If the resources have their tags changed after they have allocated space or if the allocation tagging requirements are changed on the pool, the resource may be marked as noncompliant.
 
-Type: Array of [RequestIpamResourceTag](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RequestIpamResourceTag.html) objects
+Type: Array of [RequestIpamResourceTag](api-requestipamresourcetag.md) objects
 
 Required: No
 
@@ -86,7 +86,7 @@ Required: No
 
 **ClientToken**
 
-A unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html).
+A unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensuring idempotency](../../../../services/ec2/latest/devguide/ec2-api-idempotency.md).
 
 Type: String
 
@@ -124,7 +124,7 @@ The locale for the pool should be one of the following:
 
 - An AWS Region where you want this IPAM pool to be available for allocations.
 
-- The network border group for an AWS Local Zone where you want this IPAM pool to be available for allocations ( [supported Local Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-byoip.html#byoip-zone-avail)). This option is only available for IPAM IPv4 pools in the public scope.
+- The network border group for an AWS Local Zone where you want this IPAM pool to be available for allocations ( [supported Local Zones](../../../../services/ec2/latest/userguide/ec2-byoip.md#byoip-zone-avail)). This option is only available for IPAM IPv4 pools in the public scope.
 
 Possible values: Any AWS Region or supported AWS Local Zone. Default is `none` and means any locale.
 
@@ -134,8 +134,8 @@ Required: No
 
 **PublicIpSource**
 
-The IP address source for pools in the public scope. Only used for provisioning IP address CIDRs to pools in the public scope. Default is `byoip`. For more information, see [Create IPv6 pools](https://docs.aws.amazon.com/vpc/latest/ipam/intro-create-ipv6-pools.html) in the _Amazon VPC IPAM User Guide_.
-By default, you can add only one Amazon-provided IPv6 CIDR block to a top-level IPv6 pool if PublicIpSource is `amazon`. For information on increasing the default limit, see [Quotas for your IPAM](https://docs.aws.amazon.com/vpc/latest/ipam/quotas-ipam.html) in the _Amazon VPC IPAM User Guide_.
+The IP address source for pools in the public scope. Only used for provisioning IP address CIDRs to pools in the public scope. Default is `byoip`. For more information, see [Create IPv6 pools](../../../../services/vpc/latest/ipam/intro-create-ipv6-pools.md) in the _Amazon VPC IPAM User Guide_.
+By default, you can add only one Amazon-provided IPv6 CIDR block to a top-level IPv6 pool if PublicIpSource is `amazon`. For information on increasing the default limit, see [Quotas for your IPAM](../../../../services/vpc/latest/ipam/quotas-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 Type: String
 
@@ -163,7 +163,7 @@ Required: No
 
 The resource used to provision CIDRs to a resource planning pool.
 
-Type: [IpamPoolSourceResourceRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamPoolSourceResourceRequest.html) object
+Type: [IpamPoolSourceResourceRequest](api-ipampoolsourceresourcerequest.md) object
 
 Required: No
 
@@ -184,7 +184,7 @@ The following elements are returned by the service.
 
 Information about the IPAM pool created.
 
-Type: [IpamPool](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamPool.html) object
+Type: [IpamPool](api-ipampool.md) object
 
 **requestId**
 
@@ -204,23 +204,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateIpamPool)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateIpamPool)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createipampool.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateIpamPool)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createipampool.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateIpamPool)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createipampool.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateIpamPool)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createipampool.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateIpamPool)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createipampool.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateIpamPool)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createipampool.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateIpamPool)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateIpamPool)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createipampool.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateIpamPolicy
 

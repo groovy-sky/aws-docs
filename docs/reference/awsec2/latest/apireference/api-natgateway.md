@@ -8,7 +8,7 @@ Describes a NAT gateway.
 
 The proxy appliances attached to the NAT Gateway for filtering and inspecting traffic to prevent data exfiltration.
 
-Type: Array of [NatGatewayAttachedAppliance](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NatGatewayAttachedAppliance.html) objects
+Type: Array of [NatGatewayAttachedAppliance](api-natgatewayattachedappliance.md) objects
 
 Required: No
 
@@ -18,7 +18,7 @@ For regional NAT gateways only: Indicates whether AWS automatically manages AZ c
 
 A regional NAT gateway is a single NAT Gateway that works across multiple availability zones (AZs) in your VPC, providing redundancy, scalability and availability across all the AZs in a Region.
 
-For more information, see [Regional NAT gateways for automatic multi-AZ expansion](https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html) in the _Amazon VPC User Guide_.
+For more information, see [Regional NAT gateways for automatic multi-AZ expansion](../../../../services/vpc/latest/userguide/nat-gateways-regional.md) in the _Amazon VPC User Guide_.
 
 Type: String
 
@@ -30,7 +30,7 @@ Required: No
 
 For regional NAT gateways only: Indicates whether AWS automatically allocates additional Elastic IP addresses (EIPs) in an AZ when the NAT gateway needs more ports due to increased concurrent connections to a single destination from that AZ.
 
-For more information, see [Regional NAT gateways for automatic multi-AZ expansion](https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html) in the _Amazon VPC User Guide_.
+For more information, see [Regional NAT gateways for automatic multi-AZ expansion](../../../../services/vpc/latest/userguide/nat-gateways-regional.md) in the _Amazon VPC User Guide_.
 
 Type: String
 
@@ -44,7 +44,7 @@ Indicates whether this is a zonal (single-AZ) or regional (multi-AZ) NAT gateway
 
 A zonal NAT gateway is a NAT Gateway that provides redundancy and scalability within a single availability zone. A regional NAT gateway is a single NAT Gateway that works across multiple availability zones (AZs) in your VPC, providing redundancy, scalability and availability across all the AZs in a Region.
 
-For more information, see [Regional NAT gateways for automatic multi-AZ expansion](https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html) in the _Amazon VPC User Guide_.
+For more information, see [Regional NAT gateways for automatic multi-AZ expansion](../../../../services/vpc/latest/userguide/nat-gateways-regional.md) in the _Amazon VPC User Guide_.
 
 Type: String
 
@@ -127,10 +127,10 @@ Required: No
 
 **provisionedBandwidth**
 
-Reserved. If you need to sustain traffic greater than the [documented limits](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html#vpc-limits-gateways),
+Reserved. If you need to sustain traffic greater than the [documented limits](../../../../services/vpc/latest/userguide/amazon-vpc-limits.md#vpc-limits-gateways),
 contact AWS Support.
 
-Type: [ProvisionedBandwidth](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ProvisionedBandwidth.html) object
+Type: [ProvisionedBandwidth](api-provisionedbandwidth.md) object
 
 Required: No
 
@@ -195,13 +195,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/NatGateway)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/natgateway.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/NatGateway)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/natgateway.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/NatGateway)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/natgateway.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 MovingAddressStatus
 

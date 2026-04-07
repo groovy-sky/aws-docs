@@ -17,7 +17,7 @@ Required: No
 
 Information about the Capacity Reservation.
 
-Type: [CapacityReservationInfo](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityReservationInfo.html) object
+Type: [CapacityReservationInfo](api-capacityreservationinfo.md) object
 
 Required: No
 
@@ -40,7 +40,7 @@ Required: No
 **status**
 
 The status of the request. For more information, see [View billing assignment\
-requests for a shared Amazon EC2 Capacity Reservation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/view-billing-transfers.html).
+requests for a shared Amazon EC2 Capacity Reservation](../../../../services/ec2/latest/userguide/view-billing-transfers.md).
 
 Type: String
 
@@ -72,13 +72,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CapacityReservationBillingRequest)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/capacityreservationbillingrequest.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CapacityReservationBillingRequest)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/capacityreservationbillingrequest.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CapacityReservationBillingRequest)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/capacityreservationbillingrequest.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CapacityReservation
 

@@ -1,6 +1,6 @@
 # TerminateInstances
 
-Terminates (deletes) the specified instances. This operation is [idempotent](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html); if you
+Terminates (deletes) the specified instances. This operation is [idempotent](../../../../services/ec2/latest/devguide/ec2-api-idempotency.md); if you
 terminate an instance more than once, each call succeeds.
 
 ###### Important
@@ -10,7 +10,7 @@ terminate an instance more than once, each call succeeds.
 After you terminate an instance, you can no longer connect to it, and it can't be recovered.
 All attached Amazon EBS volumes that are configured to be deleted on termination are also permanently
 deleted and can't be recovered. All data stored on instance store volumes is permanently lost.
-For more information, see [How instance termination works](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/how-ec2-instance-termination-works.html).
+For more information, see [How instance termination works](../../../../services/ec2/latest/userguide/how-ec2-instance-termination-works.md).
 
 Before you terminate an instance, ensure that you have backed up all data that you need to
 retain after the termination to persistent storage.
@@ -72,7 +72,7 @@ When you terminate an instance, we attempt to terminate it forcibly after a shor
 while. If your instance appears stuck in the shutting-down state after a period of time,
 there might be an issue with the underlying host computer. For more information about
 terminating and troubleshooting terminating your instances, see [Terminate Amazon EC2 instances](../../../../general/index.md) and
-[Troubleshooting terminating your instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstancesShuttingDown.html) in the
+[Troubleshooting terminating your instance](../../../../services/ec2/latest/userguide/troubleshootinginstancesshuttingdown.md) in the
 _Amazon EC2 User Guide_.
 
 ## Request Parameters
@@ -130,7 +130,7 @@ The following elements are returned by the service.
 
 Information about the terminated instances.
 
-Type: Array of [InstanceStateChange](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceStateChange.html) objects
+Type: Array of [InstanceStateChange](api-instancestatechange.md) objects
 
 **requestId**
 
@@ -187,23 +187,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/TerminateInstances)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/TerminateInstances)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/terminateinstances.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/TerminateInstances)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/terminateinstances.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/TerminateInstances)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/terminateinstances.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/TerminateInstances)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/terminateinstances.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/TerminateInstances)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/terminateinstances.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/TerminateInstances)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/terminateinstances.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/TerminateInstances)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/TerminateInstances)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/terminateinstances.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 TerminateClientVpnConnections
 

@@ -6,12 +6,12 @@ AWS creates a unique AWS managed KMS key in each Region for use with encryption 
 you change the default KMS key to a symmetric customer managed KMS key, it is used instead of the AWS
 managed KMS key. Amazon EBS does not support asymmetric KMS keys.
 
-To reset the default KMS key to the AWS managed KMS key for EBS, use [ResetEbsDefaultKmsKeyId](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ResetEbsDefaultKmsKeyId.html).
+To reset the default KMS key to the AWS managed KMS key for EBS, use [ResetEbsDefaultKmsKeyId](api-resetebsdefaultkmskeyid.md).
 
 If you delete or disable the customer managed KMS key that you specified for use with
 encryption by default, your instances will fail to launch.
 
-For more information, see [Amazon EBS encryption](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html)
+For more information, see [Amazon EBS encryption](../../../../services/ebs/latest/userguide/ebs-encryption.md)
 in the _Amazon EBS User Guide_.
 
 ## Request Parameters
@@ -81,23 +81,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ModifyEbsDefaultKmsKeyId)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ModifyEbsDefaultKmsKeyId)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/modifyebsdefaultkmskeyid.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ModifyEbsDefaultKmsKeyId)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/modifyebsdefaultkmskeyid.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ModifyEbsDefaultKmsKeyId)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/modifyebsdefaultkmskeyid.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ModifyEbsDefaultKmsKeyId)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/modifyebsdefaultkmskeyid.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ModifyEbsDefaultKmsKeyId)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/modifyebsdefaultkmskeyid.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ModifyEbsDefaultKmsKeyId)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/modifyebsdefaultkmskeyid.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ModifyEbsDefaultKmsKeyId)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ModifyEbsDefaultKmsKeyId)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifyebsdefaultkmskeyid.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ModifyDefaultCreditSpecification
 

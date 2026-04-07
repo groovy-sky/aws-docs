@@ -13,7 +13,7 @@ Specifies the advertisement method for the BYOIP CIDR. Valid values are:
 
 - `anycast`: IP is advertised from multiple global locations simultaneously (global services like CloudFront)
 
-For more information, see [Bring your own IP to CloudFront using IPAM](https://docs.aws.amazon.com/vpc/latest/ipam/tutorials-byoip-cloudfront.html) in the _Amazon VPC IPAM User Guide_.
+For more information, see [Bring your own IP to CloudFront using IPAM](../../../../services/vpc/latest/ipam/tutorials-byoip-cloudfront.md) in the _Amazon VPC IPAM User Guide_.
 
 Type: String
 
@@ -23,7 +23,7 @@ Required: No
 
 The BYOIP CIDR associations with ASNs.
 
-Type: Array of [AsnAssociation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AsnAssociation.html) objects
+Type: Array of [AsnAssociation](api-asnassociation.md) objects
 
 Required: No
 
@@ -45,7 +45,7 @@ Required: No
 
 **networkBorderGroup**
 
-If you have [Local Zones](https://docs.aws.amazon.com/local-zones/latest/ug/how-local-zones-work.html) enabled, you can choose a network border group for Local Zones when you provision and advertise a BYOIPv4 CIDR. Choose the network border group carefully as the EIP and the AWS resource it is associated with must reside in the same network border group.
+If you have [Local Zones](../../../../services/local-zones/latest/ug/how-local-zones-work.md) enabled, you can choose a network border group for Local Zones when you provision and advertise a BYOIPv4 CIDR. Choose the network border group carefully as the EIP and the AWS resource it is associated with must reside in the same network border group.
 
 You can provision BYOIP address ranges to and advertise them in the following Local Zone network border groups:
 
@@ -101,13 +101,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ByoipCidr)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/byoipcidr.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ByoipCidr)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/byoipcidr.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ByoipCidr)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/byoipcidr.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Byoasn
 

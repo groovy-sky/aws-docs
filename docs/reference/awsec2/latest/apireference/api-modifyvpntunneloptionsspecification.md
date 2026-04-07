@@ -43,7 +43,7 @@ The IKE versions that are permitted for the VPN tunnel.
 
 Valid values: `ikev1` \| `ikev2`
 
-Type: Array of [IKEVersionsRequestListValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IKEVersionsRequestListValue.html) objects
+Type: Array of [IKEVersionsRequestListValue](api-ikeversionsrequestlistvalue.md) objects
 
 Required: No
 
@@ -51,7 +51,7 @@ Required: No
 
 Options for logging VPN tunnel activity.
 
-Type: [VpnTunnelLogOptionsSpecification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VpnTunnelLogOptionsSpecification.html) object
+Type: [VpnTunnelLogOptionsSpecification](api-vpntunnellogoptionsspecification.md) object
 
 Required: No
 
@@ -64,7 +64,7 @@ Valid values: `2` \| `14` \| `15` \| `16` \|
 `17` \| `18` \| `19` \| `20` \|
 `21` \| `22` \| `23` \| `24`
 
-Type: Array of [Phase1DHGroupNumbersRequestListValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Phase1DHGroupNumbersRequestListValue.html) objects
+Type: Array of [Phase1DHGroupNumbersRequestListValue](api-phase1dhgroupnumbersrequestlistvalue.md) objects
 
 Required: No
 
@@ -76,7 +76,7 @@ IKE negotiations.
 Valid values: `AES128` \| `AES256` \| `AES128-GCM-16` \|
 `AES256-GCM-16`
 
-Type: Array of [Phase1EncryptionAlgorithmsRequestListValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Phase1EncryptionAlgorithmsRequestListValue.html) objects
+Type: Array of [Phase1EncryptionAlgorithmsRequestListValue](api-phase1encryptionalgorithmsrequestlistvalue.md) objects
 
 Required: No
 
@@ -88,7 +88,7 @@ negotiations.
 Valid values: `SHA1` \| `SHA2-256` \| `SHA2-384` \|
 `SHA2-512`
 
-Type: Array of [Phase1IntegrityAlgorithmsRequestListValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Phase1IntegrityAlgorithmsRequestListValue.html) objects
+Type: Array of [Phase1IntegrityAlgorithmsRequestListValue](api-phase1integrityalgorithmsrequestlistvalue.md) objects
 
 Required: No
 
@@ -114,7 +114,7 @@ Valid values: `2` \| `5` \| `14` \| `15` \|
 `20` \| `21` \| `22` \| `23` \|
 `24`
 
-Type: Array of [Phase2DHGroupNumbersRequestListValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Phase2DHGroupNumbersRequestListValue.html) objects
+Type: Array of [Phase2DHGroupNumbersRequestListValue](api-phase2dhgroupnumbersrequestlistvalue.md) objects
 
 Required: No
 
@@ -126,7 +126,7 @@ IKE negotiations.
 Valid values: `AES128` \| `AES256` \| `AES128-GCM-16` \|
 `AES256-GCM-16`
 
-Type: Array of [Phase2EncryptionAlgorithmsRequestListValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Phase2EncryptionAlgorithmsRequestListValue.html) objects
+Type: Array of [Phase2EncryptionAlgorithmsRequestListValue](api-phase2encryptionalgorithmsrequestlistvalue.md) objects
 
 Required: No
 
@@ -138,7 +138,7 @@ negotiations.
 Valid values: `SHA1` \| `SHA2-256` \| `SHA2-384` \|
 `SHA2-512`
 
-Type: Array of [Phase2IntegrityAlgorithmsRequestListValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Phase2IntegrityAlgorithmsRequestListValue.html) objects
+Type: Array of [Phase2IntegrityAlgorithmsRequestListValue](api-phase2integrityalgorithmsrequestlistvalue.md) objects
 
 Required: No
 
@@ -264,13 +264,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ModifyVpnTunnelOptionsSpecification)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/modifyvpntunneloptionsspecification.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ModifyVpnTunnelOptionsSpecification)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/modifyvpntunneloptionsspecification.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ModifyVpnTunnelOptionsSpecification)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifyvpntunneloptionsspecification.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ModifyVerifiedAccessTrustProviderOidcOptions
 

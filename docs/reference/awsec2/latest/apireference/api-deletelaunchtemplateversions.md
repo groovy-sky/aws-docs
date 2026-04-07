@@ -10,7 +10,7 @@ You can delete up to 200 launch template versions in a single request. To delete
 than 200 versions in a single request, use [DeleteLaunchTemplate](api-deletelaunchtemplate.md), which
 deletes the launch template and all of its versions.
 
-For more information, see [Delete a launch template version](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/delete-launch-template.html#delete-launch-template-version) in the
+For more information, see [Delete a launch template version](../../../../services/ec2/latest/userguide/delete-launch-template.md#delete-launch-template-version) in the
 _Amazon EC2 User Guide_.
 
 ## Request Parameters
@@ -77,13 +77,13 @@ Type: String
 
 Information about the launch template versions that were successfully deleted.
 
-Type: Array of [DeleteLaunchTemplateVersionsResponseSuccessItem](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteLaunchTemplateVersionsResponseSuccessItem.html) objects
+Type: Array of [DeleteLaunchTemplateVersionsResponseSuccessItem](api-deletelaunchtemplateversionsresponsesuccessitem.md) objects
 
 **unsuccessfullyDeletedLaunchTemplateVersionSet**
 
 Information about the launch template versions that could not be deleted.
 
-Type: Array of [DeleteLaunchTemplateVersionsResponseErrorItem](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteLaunchTemplateVersionsResponseErrorItem.html) objects
+Type: Array of [DeleteLaunchTemplateVersionsResponseErrorItem](api-deletelaunchtemplateversionsresponseerroritem.md) objects
 
 ## Errors
 
@@ -131,23 +131,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/DeleteLaunchTemplateVersions)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DeleteLaunchTemplateVersions)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/deletelaunchtemplateversions.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/DeleteLaunchTemplateVersions)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/deletelaunchtemplateversions.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DeleteLaunchTemplateVersions)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/deletelaunchtemplateversions.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DeleteLaunchTemplateVersions)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/deletelaunchtemplateversions.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DeleteLaunchTemplateVersions)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/deletelaunchtemplateversions.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DeleteLaunchTemplateVersions)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/deletelaunchtemplateversions.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DeleteLaunchTemplateVersions)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DeleteLaunchTemplateVersions)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deletelaunchtemplateversions.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DeleteLaunchTemplate
 

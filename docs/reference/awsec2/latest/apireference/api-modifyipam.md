@@ -10,9 +10,9 @@ The following parameters are for this specific action. For more information abou
 
 Choose the operating Regions for the IPAM. Operating Regions are AWS Regions where the IPAM is allowed to manage IP address CIDRs. IPAM only discovers and monitors resources in the AWS Regions you select as operating Regions.
 
-For more information about operating Regions, see [Create an IPAM](https://docs.aws.amazon.com/vpc/latest/ipam/create-ipam.html) in the _Amazon VPC IPAM User Guide_.
+For more information about operating Regions, see [Create an IPAM](../../../../services/vpc/latest/ipam/create-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
-Type: Array of [AddIpamOperatingRegion](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AddIpamOperatingRegion.html) objects
+Type: Array of [AddIpamOperatingRegion](api-addipamoperatingregion.md) objects
 
 Array Members: Minimum number of 0 items. Maximum number of 50 items.
 
@@ -54,7 +54,7 @@ Required: Yes
 
 **MeteredAccount**
 
-A metered account is an AWS account that is charged for active IP addresses managed in IPAM. For more information, see [Enable cost distribution](https://docs.aws.amazon.com/vpc/latest/ipam/ipam-enable-cost-distro.html) in the _Amazon VPC IPAM User Guide_.
+A metered account is an AWS account that is charged for active IP addresses managed in IPAM. For more information, see [Enable cost distribution](../../../../services/vpc/latest/ipam/ipam-enable-cost-distro.md) in the _Amazon VPC IPAM User Guide_.
 
 Possible values:
 
@@ -72,7 +72,7 @@ Required: No
 
 The operating Regions to remove.
 
-Type: Array of [RemoveIpamOperatingRegion](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RemoveIpamOperatingRegion.html) objects
+Type: Array of [RemoveIpamOperatingRegion](api-removeipamoperatingregion.md) objects
 
 Array Members: Minimum number of 0 items. Maximum number of 50 items.
 
@@ -96,7 +96,7 @@ The following elements are returned by the service.
 
 The results of the modification.
 
-Type: [Ipam](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Ipam.html) object
+Type: [Ipam](api-ipam.md) object
 
 **requestId**
 
@@ -116,23 +116,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ModifyIpam)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ModifyIpam)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/modifyipam.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ModifyIpam)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/modifyipam.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ModifyIpam)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/modifyipam.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ModifyIpam)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/modifyipam.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ModifyIpam)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/modifyipam.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ModifyIpam)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/modifyipam.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ModifyIpam)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ModifyIpam)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifyipam.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ModifyInstancePlacement
 

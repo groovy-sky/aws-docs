@@ -40,7 +40,7 @@ Enables you to reference a security group across VPCs attached to a transit gate
 
 This option is disabled by default.
 
-For more information about security group referencing, see [Security group referencing](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-vpc-attachments.html#vpc-attachment-security) in the _AWS Transit Gateways Guide_.
+For more information about security group referencing, see [Security group referencing](../../../../services/vpc/latest/tgw/tgw-vpc-attachments.md#vpc-attachment-security) in the _AWS Transit Gateways Guide_.
 
 Type: String
 
@@ -52,13 +52,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ModifyTransitGatewayVpcAttachmentRequestOptions)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/modifytransitgatewayvpcattachmentrequestoptions.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ModifyTransitGatewayVpcAttachmentRequestOptions)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/modifytransitgatewayvpcattachmentrequestoptions.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ModifyTransitGatewayVpcAttachmentRequestOptions)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifytransitgatewayvpcattachmentrequestoptions.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ModifyTransitGatewayOptions
 

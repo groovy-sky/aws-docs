@@ -1,6 +1,6 @@
 # IpamAddressHistoryRecord
 
-The historical record of a CIDR within an IPAM scope. For more information, see [View the history of IP addresses](https://docs.aws.amazon.com/vpc/latest/ipam/view-history-cidr-ipam.html) in the _Amazon VPC IPAM User Guide_.
+The historical record of a CIDR within an IPAM scope. For more information, see [View the history of IP addresses](../../../../services/vpc/latest/ipam/view-history-cidr-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 ## Contents
 
@@ -14,7 +14,7 @@ Required: No
 
 **resourceComplianceStatus**
 
-The compliance status of a resource. For more information on compliance statuses, see [Monitor CIDR usage by resource](https://docs.aws.amazon.com/vpc/latest/ipam/monitor-cidr-compliance-ipam.html) in the _Amazon VPC IPAM User Guide_.
+The compliance status of a resource. For more information on compliance statuses, see [Monitor CIDR usage by resource](../../../../services/vpc/latest/ipam/monitor-cidr-compliance-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 Type: String
 
@@ -40,7 +40,7 @@ Required: No
 
 **resourceOverlapStatus**
 
-The overlap status of an IPAM resource. The overlap status tells you if the CIDR for a resource overlaps with another CIDR in the scope. For more information on overlap statuses, see [Monitor CIDR usage by resource](https://docs.aws.amazon.com/vpc/latest/ipam/monitor-cidr-compliance-ipam.html) in the _Amazon VPC IPAM User Guide_.
+The overlap status of an IPAM resource. The overlap status tells you if the CIDR for a resource overlaps with another CIDR in the scope. For more information on overlap statuses, see [Monitor CIDR usage by resource](../../../../services/vpc/latest/ipam/monitor-cidr-compliance-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 Type: String
 
@@ -102,13 +102,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/IpamAddressHistoryRecord)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/ipamaddresshistoryrecord.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/IpamAddressHistoryRecord)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/ipamaddresshistoryrecord.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/IpamAddressHistoryRecord)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ipamaddresshistoryrecord.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Ipam
 

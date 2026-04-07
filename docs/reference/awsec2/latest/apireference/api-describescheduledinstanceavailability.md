@@ -4,7 +4,7 @@ Finds available schedules that meet the specified criteria.
 
 You can search for an available schedule no more than 3 months in advance. You must meet the minimum required duration of 1,200 hours per year. For example, the minimum daily schedule is 4 hours, the minimum weekly schedule is 24 hours, and the minimum monthly schedule is 100 hours.
 
-After you find a schedule that meets your needs, call [PurchaseScheduledInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PurchaseScheduledInstances.html)
+After you find a schedule that meets your needs, call [PurchaseScheduledInstances](api-purchasescheduledinstances.md)
 to purchase Scheduled Instances with that schedule.
 
 ## Request Parameters
@@ -39,7 +39,7 @@ Required: No
 
 The time period for the first schedule to start.
 
-Type: [SlotDateTimeRangeRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SlotDateTimeRangeRequest.html) object
+Type: [SlotDateTimeRangeRequest](api-slotdatetimerangerequest.md) object
 
 Required: Yes
 
@@ -85,7 +85,7 @@ Required: No
 
 The schedule recurrence.
 
-Type: [ScheduledInstanceRecurrenceRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ScheduledInstanceRecurrenceRequest.html) object
+Type: [ScheduledInstanceRecurrenceRequest](api-scheduledinstancerecurrencerequest.md) object
 
 Required: Yes
 
@@ -109,7 +109,7 @@ Type: String
 
 Information about the available Scheduled Instances.
 
-Type: Array of [ScheduledInstanceAvailability](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ScheduledInstanceAvailability.html) objects
+Type: Array of [ScheduledInstanceAvailability](api-scheduledinstanceavailability.md) objects
 
 ## Errors
 
@@ -123,23 +123,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/DescribeScheduledInstanceAvailability)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DescribeScheduledInstanceAvailability)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/describescheduledinstanceavailability.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/DescribeScheduledInstanceAvailability)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/describescheduledinstanceavailability.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DescribeScheduledInstanceAvailability)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/describescheduledinstanceavailability.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DescribeScheduledInstanceAvailability)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/describescheduledinstanceavailability.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DescribeScheduledInstanceAvailability)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/describescheduledinstanceavailability.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DescribeScheduledInstanceAvailability)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/describescheduledinstanceavailability.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DescribeScheduledInstanceAvailability)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DescribeScheduledInstanceAvailability)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describescheduledinstanceavailability.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DescribeRouteTables
 

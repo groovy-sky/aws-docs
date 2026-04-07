@@ -3,13 +3,13 @@
 You can modify several parameters of an existing EBS volume, including volume size, volume
 type, and IOPS capacity. If your EBS volume is attached to a current-generation EC2 instance
 type, you might be able to apply these changes without stopping the instance or detaching the
-volume from it. For more information about modifying EBS volumes, see [Amazon EBS Elastic Volumes](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-modify-volume.html)
+volume from it. For more information about modifying EBS volumes, see [Amazon EBS Elastic Volumes](../../../../services/ebs/latest/userguide/ebs-modify-volume.md)
 in the _Amazon EBS User Guide_.
 
 When you complete a resize operation on your volume, you need to extend the volume's
-file-system size to take advantage of the new storage capacity. For more information, see [Extend the file system](https://docs.aws.amazon.com/ebs/latest/userguide/recognize-expanded-volume-linux.html).
+file-system size to take advantage of the new storage capacity. For more information, see [Extend the file system](../../../../services/ebs/latest/userguide/recognize-expanded-volume-linux.md).
 
-For more information, see [Monitor the progress of volume modifications](https://docs.aws.amazon.com/ebs/latest/userguide/monitoring-volume-modifications.html) in the _Amazon EBS User Guide_.
+For more information, see [Monitor the progress of volume modifications](../../../../services/ebs/latest/userguide/monitoring-volume-modifications.md) in the _Amazon EBS User Guide_.
 
 With previous-generation instance types, resizing an EBS volume might require detaching and
 reattaching the volume or stopping and restarting the instance.
@@ -49,7 +49,7 @@ The following are the supported values for each volume type:
 
 ###### Note
 
-[Instances built on the Nitro System](https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-nitro-instances.html) can support up to 256,000 IOPS. Other instances can support up to 32,000
+[Instances built on the Nitro System](../../../../services/ec2/latest/instancetypes/ec2-nitro-instances.md) can support up to 256,000 IOPS. Other instances can support up to 32,000
 IOPS.
 
 Default: The existing value is retained if you keep the same volume type. If you change
@@ -62,9 +62,9 @@ Required: No
 **MultiAttachEnabled**
 
 Specifies whether to enable Amazon EBS Multi-Attach. If you enable Multi-Attach, you can attach the
-volume to up to 16 [Nitro-based instances](https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-nitro-instances.html) in the same Availability Zone. This parameter is
+volume to up to 16 [Nitro-based instances](../../../../services/ec2/latest/instancetypes/ec2-nitro-instances.md) in the same Availability Zone. This parameter is
 supported with `io1` and `io2` volumes only. For more information, see
-[Amazon EBS Multi-Attach](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volumes-multi.html) in the _Amazon EBS User Guide_.
+[Amazon EBS Multi-Attach](../../../../services/ebs/latest/userguide/ebs-volumes-multi.md) in the _Amazon EBS User Guide_.
 
 Type: Boolean
 
@@ -143,7 +143,7 @@ Type: String
 
 Information about the volume modification.
 
-Type: [VolumeModification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VolumeModification.html) object
+Type: [VolumeModification](api-volumemodification.md) object
 
 ## Errors
 
@@ -225,23 +225,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ModifyVolume)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ModifyVolume)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/modifyvolume.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ModifyVolume)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/modifyvolume.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ModifyVolume)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/modifyvolume.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ModifyVolume)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/modifyvolume.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ModifyVolume)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/modifyvolume.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ModifyVolume)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/modifyvolume.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ModifyVolume)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ModifyVolume)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifyvolume.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ModifyVerifiedAccessTrustProvider
 

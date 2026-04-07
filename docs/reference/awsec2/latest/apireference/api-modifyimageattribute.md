@@ -31,7 +31,7 @@ Required: No
 
 A new description for the AMI.
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 Required: No
 
@@ -67,7 +67,7 @@ Do not use this parameter unless your AMI software supports IMDSv2. After you se
 value to `v2.0`, you can't undo it. The only way to “reset” your AMI is to create
 a new AMI from the underlying snapshot.
 
-Type: [AttributeValue](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttributeValue.html) object
+Type: [AttributeValue](api-attributevalue.md) object
 
 Required: No
 
@@ -75,7 +75,7 @@ Required: No
 
 A new launch permission for the AMI.
 
-Type: [LaunchPermissionModifications](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchPermissionModifications.html) object
+Type: [LaunchPermissionModifications](api-launchpermissionmodifications.md) object
 
 Required: No
 
@@ -276,23 +276,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ModifyImageAttribute)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ModifyImageAttribute)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/modifyimageattribute.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ModifyImageAttribute)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/modifyimageattribute.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ModifyImageAttribute)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/modifyimageattribute.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ModifyImageAttribute)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/modifyimageattribute.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ModifyImageAttribute)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/modifyimageattribute.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ModifyImageAttribute)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/modifyimageattribute.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ModifyImageAttribute)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ModifyImageAttribute)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifyimageattribute.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ModifyIdFormat
 

@@ -8,7 +8,7 @@ The information for a launch template.
 
 The block device mappings.
 
-Type: Array of [LaunchTemplateBlockDeviceMapping](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateBlockDeviceMapping.html) objects
+Type: Array of [LaunchTemplateBlockDeviceMapping](api-launchtemplateblockdevicemapping.md) objects
 
 Required: No
 
@@ -16,7 +16,7 @@ Required: No
 
 Information about the Capacity Reservation targeting option.
 
-Type: [LaunchTemplateCapacityReservationSpecificationResponse](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateCapacityReservationSpecificationResponse.html) object
+Type: [LaunchTemplateCapacityReservationSpecificationResponse](api-launchtemplatecapacityreservationspecificationresponse.md) object
 
 Required: No
 
@@ -26,7 +26,7 @@ The CPU options for the instance. For more information, see [CPU\
 options for Amazon EC2 instances](../../../../services/ec2/latest/userguide/instance-optimize-cpu.md) in the
 _Amazon EC2 User Guide_.
 
-Type: [LaunchTemplateCpuOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateCpuOptions.html) object
+Type: [LaunchTemplateCpuOptions](api-launchtemplatecpuoptions.md) object
 
 Required: No
 
@@ -34,7 +34,7 @@ Required: No
 
 The credit option for CPU usage of the instance.
 
-Type: [CreditSpecification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreditSpecification.html) object
+Type: [CreditSpecification](api-creditspecification.md) object
 
 Required: No
 
@@ -73,7 +73,7 @@ Deprecated.
 
 Amazon Elastic Graphics reached end of life on January 8, 2024.
 
-Type: Array of [ElasticGpuSpecificationResponse](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ElasticGpuSpecificationResponse.html) objects
+Type: Array of [ElasticGpuSpecificationResponse](api-elasticgpuspecificationresponse.md) objects
 
 Required: No
 
@@ -89,7 +89,7 @@ your Deep Learning (DL) inference workloads.
 
 You cannot specify accelerators from different generations in the same request.
 
-Type: Array of [LaunchTemplateElasticInferenceAcceleratorResponse](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateElasticInferenceAcceleratorResponse.html) objects
+Type: Array of [LaunchTemplateElasticInferenceAcceleratorResponse](api-launchtemplateelasticinferenceacceleratorresponse.md) objects
 
 Required: No
 
@@ -97,7 +97,7 @@ Required: No
 
 Indicates whether the instance is enabled for AWS Nitro Enclaves.
 
-Type: [LaunchTemplateEnclaveOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateEnclaveOptions.html) object
+Type: [LaunchTemplateEnclaveOptions](api-launchtemplateenclaveoptions.md) object
 
 Required: No
 
@@ -107,7 +107,7 @@ Indicates whether an instance is configured for hibernation. For more informatio
 [Hibernate\
 your Amazon EC2 instance](../../../../services/ec2/latest/userguide/hibernate.md) in the _Amazon EC2 User Guide_.
 
-Type: [LaunchTemplateHibernationOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateHibernationOptions.html) object
+Type: [LaunchTemplateHibernationOptions](api-launchtemplatehibernationoptions.md) object
 
 Required: No
 
@@ -115,7 +115,7 @@ Required: No
 
 The IAM instance profile.
 
-Type: [LaunchTemplateIamInstanceProfileSpecification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateIamInstanceProfileSpecification.html) object
+Type: [LaunchTemplateIamInstanceProfileSpecification](api-launchtemplateiaminstanceprofilespecification.md) object
 
 Required: No
 
@@ -159,7 +159,7 @@ Required: No
 
 The market (purchasing) option for the instances.
 
-Type: [LaunchTemplateInstanceMarketOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateInstanceMarketOptions.html) object
+Type: [LaunchTemplateInstanceMarketOptions](api-launchtemplateinstancemarketoptions.md) object
 
 Required: No
 
@@ -171,7 +171,7 @@ identify instance types with these attributes.
 If you specify `InstanceRequirements`, you can't specify
 `InstanceTypes`.
 
-Type: [InstanceRequirements](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceRequirements.html) object
+Type: [InstanceRequirements](api-instancerequirements.md) object
 
 Required: No
 
@@ -205,7 +205,7 @@ Required: No
 
 The license configurations.
 
-Type: Array of [LaunchTemplateLicenseConfiguration](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateLicenseConfiguration.html) objects
+Type: Array of [LaunchTemplateLicenseConfiguration](api-launchtemplatelicenseconfiguration.md) objects
 
 Required: No
 
@@ -213,7 +213,7 @@ Required: No
 
 The maintenance options for your instance.
 
-Type: [LaunchTemplateInstanceMaintenanceOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateInstanceMaintenanceOptions.html) object
+Type: [LaunchTemplateInstanceMaintenanceOptions](api-launchtemplateinstancemaintenanceoptions.md) object
 
 Required: No
 
@@ -223,7 +223,7 @@ The metadata options for the instance. For more information, see [Configure\
 the Instance Metadata Service options](../../../../services/ec2/latest/userguide/configuring-instance-metadata-options.md) in the
 _Amazon EC2 User Guide_.
 
-Type: [LaunchTemplateInstanceMetadataOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateInstanceMetadataOptions.html) object
+Type: [LaunchTemplateInstanceMetadataOptions](api-launchtemplateinstancemetadataoptions.md) object
 
 Required: No
 
@@ -231,7 +231,7 @@ Required: No
 
 The monitoring for the instance.
 
-Type: [LaunchTemplatesMonitoring](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplatesMonitoring.html) object
+Type: [LaunchTemplatesMonitoring](api-launchtemplatesmonitoring.md) object
 
 Required: No
 
@@ -239,7 +239,7 @@ Required: No
 
 The network interfaces.
 
-Type: Array of [LaunchTemplateInstanceNetworkInterfaceSpecification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateInstanceNetworkInterfaceSpecification.html) objects
+Type: Array of [LaunchTemplateInstanceNetworkInterfaceSpecification](api-launchtemplateinstancenetworkinterfacespecification.md) objects
 
 Required: No
 
@@ -248,7 +248,7 @@ Required: No
 Contains the launch template settings for network performance options for your
 instance.
 
-Type: [LaunchTemplateNetworkPerformanceOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateNetworkPerformanceOptions.html) object
+Type: [LaunchTemplateNetworkPerformanceOptions](api-launchtemplatenetworkperformanceoptions.md) object
 
 Required: No
 
@@ -264,7 +264,7 @@ Required: No
 
 The placement of the instance.
 
-Type: [LaunchTemplatePlacement](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplatePlacement.html) object
+Type: [LaunchTemplatePlacement](api-launchtemplateplacement.md) object
 
 Required: No
 
@@ -272,7 +272,7 @@ Required: No
 
 The options for the instance hostname.
 
-Type: [LaunchTemplatePrivateDnsNameOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplatePrivateDnsNameOptions.html) object
+Type: [LaunchTemplatePrivateDnsNameOptions](api-launchtemplateprivatednsnameoptions.md) object
 
 Required: No
 
@@ -288,7 +288,7 @@ Required: No
 
 The secondary interfaces associated with the launch template.
 
-Type: Array of [LaunchTemplateInstanceSecondaryInterfaceSpecification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateInstanceSecondaryInterfaceSpecification.html) objects
+Type: Array of [LaunchTemplateInstanceSecondaryInterfaceSpecification](api-launchtemplateinstancesecondaryinterfacespecification.md) objects
 
 Required: No
 
@@ -313,7 +313,7 @@ Required: No
 The tags that are applied to the resources that are created during instance
 launch.
 
-Type: Array of [LaunchTemplateTagSpecification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplateTagSpecification.html) objects
+Type: Array of [LaunchTemplateTagSpecification](api-launchtemplatetagspecification.md) objects
 
 Required: No
 
@@ -329,13 +329,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ResponseLaunchTemplateData)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/responselaunchtemplatedata.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ResponseLaunchTemplateData)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/responselaunchtemplatedata.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ResponseLaunchTemplateData)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/responselaunchtemplatedata.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ResponseError
 

@@ -8,27 +8,27 @@ results that match all of the specified filters.
 
 The filters supported by a describe operation are documented with the describe operation. For example:
 
-- [DescribeAvailabilityZones](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAvailabilityZones.html)
+- [DescribeAvailabilityZones](api-describeavailabilityzones.md)
 
-- [DescribeImages](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeImages.html)
+- [DescribeImages](api-describeimages.md)
 
-- [DescribeInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstances.html)
+- [DescribeInstances](api-describeinstances.md)
 
-- [DescribeKeyPairs](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeKeyPairs.html)
+- [DescribeKeyPairs](api-describekeypairs.md)
 
 - [DescribeSecurityGroups](api-describesecuritygroups.md)
 
-- [DescribeSnapshots](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSnapshots.html)
+- [DescribeSnapshots](api-describesnapshots.md)
 
 - [DescribeSubnets](api-describesubnets.md)
 
-- [DescribeTags](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeTags.html)
+- [DescribeTags](api-describetags.md)
 
-- [DescribeVolumes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVolumes.html)
+- [DescribeVolumes](api-describevolumes.md)
 
 - [DescribeVpcs](api-describevpcs.md)
 
-For more information, see [List and filter using the CLI and API](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Filtering.html#Filtering_Resources_CLI) in the _Amazon EC2 User Guide_.
+For more information, see [List and filter using the CLI and API](../../../../services/ec2/latest/userguide/using-filtering.md#Filtering_Resources_CLI) in the _Amazon EC2 User Guide_.
 
 ## Contents
 
@@ -54,13 +54,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/Filter)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/filter.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/Filter)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/filter.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/Filter)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/filter.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 FederatedAuthenticationRequest
 

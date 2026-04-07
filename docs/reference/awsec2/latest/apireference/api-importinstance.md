@@ -4,14 +4,14 @@
 
 We recommend that you use the [`ImportImage`](api-importimage.md)
 API instead. For more information, see [Importing a VM as an image using VM\
-Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html) in the _VM Import/Export User Guide_.
+Import/Export](../../../../services/vm-import/latest/userguide/vmimport-image-import.md) in the _VM Import/Export User Guide_.
 
 Creates an import instance task using metadata from the specified disk image.
 
 This API action supports only single-volume VMs. To import multi-volume VMs, use [ImportImage](api-importimage.md)
 instead.
 
-For information about the import manifest referenced by this API action, see [VM Import Manifest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/manifest.html).
+For information about the import manifest referenced by this API action, see [VM Import Manifest](manifest.md).
 
 This API action is not supported by the AWS Command Line Interface (AWS CLI).
 
@@ -31,7 +31,7 @@ Required: No
 
 The disk image.
 
-Type: Array of [DiskImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DiskImage.html) objects
+Type: Array of [DiskImage](api-diskimage.md) objects
 
 Required: No
 
@@ -49,7 +49,7 @@ Required: No
 
 The launch specification.
 
-Type: [ImportInstanceLaunchSpecification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportInstanceLaunchSpecification.html) object
+Type: [ImportInstanceLaunchSpecification](api-importinstancelaunchspecification.md) object
 
 Required: No
 
@@ -71,7 +71,7 @@ The following elements are returned by the service.
 
 Information about the conversion task.
 
-Type: [ConversionTask](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ConversionTask.html) object
+Type: [ConversionTask](api-conversiontask.md) object
 
 **requestId**
 
@@ -99,7 +99,7 @@ https://ec2.amazonaws.com/?Action=ImportInstance
 &LaunchSpecification.InstanceType=m1.xlarge
 &DiskImage.1.Image.Format=VMDK
 &DiskImage.1.Image.Bytes=1179593728
-&DiskImage.1.Image.ImportManifestUrl=https://s3.amazonaws.com/amzn-s3-demo-bucket/​a3a5e1b6-590d-43cc-97c1-15c7325d3f41/​Win_2008_Server_Data_Center_SP2_32-bit.​vmdkmanifest.xml?AWSAccessKeyId=​AKIAIOSFODNN7EXAMPLE&​Expires=1294855591&​Signature=5snej01TlTtL0uR7KExtEXAMPLE%3D
+&DiskImage.1.Image.ImportManifestUrl=https://s3.amazonaws.com/amzn-s3-demo-bucket/​a3a5e1b6-590d-43cc-97c1-15c7325d3f41/​Win_2008_Server_Data_Center_SP2_32-bit.​vmdkmanifest.xml?AWSAccessKeyId=​AWS_ACCESS_KEY_ID_REDACTED&​Expires=1294855591&​Signature=5snej01TlTtL0uR7KExtEXAMPLE%3D
 &DiskImage.1.Volume.Size=12
 &Platform=Windows
 &AUTHPARAMS
@@ -122,7 +122,7 @@ https://ec2.amazonaws.com/?Action=ImportInstance
                 <format>VMDK</format>
                 <size>1179593728</size>
                 <importManifestUrl>
-                 https://s3.amazonaws.com/amzn-s3-demo-bucket/​a3a5e1b6-590d-43cc-97c1-15c7325d3f41/​Win_2008_Server_Data_Center_SP2_32-bit.​vmdkmanifest.xml?AWSAccessKeyId=​AKIAIOSFODNN7EXAMPLE&​Expires=1294855591&​Signature=5snej01TlTtL0uR7KExtEXAMPLE%3D
+                 https://s3.amazonaws.com/amzn-s3-demo-bucket/​a3a5e1b6-590d-43cc-97c1-15c7325d3f41/​Win_2008_Server_Data_Center_SP2_32-bit.​vmdkmanifest.xml?AWSAccessKeyId=​AWS_ACCESS_KEY_ID_REDACTED&​Expires=1294855591&​Signature=5snej01TlTtL0uR7KExtEXAMPLE%3D
                 </importManifestUrl>
              </image>
              <description/>
@@ -149,23 +149,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ImportInstance)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ImportInstance)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/importinstance.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ImportInstance)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/importinstance.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ImportInstance)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/importinstance.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ImportInstance)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/importinstance.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ImportInstance)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/importinstance.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ImportInstance)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/importinstance.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ImportInstance)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ImportInstance)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/importinstance.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ImportImage
 

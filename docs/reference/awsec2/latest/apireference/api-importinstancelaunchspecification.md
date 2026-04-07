@@ -51,7 +51,7 @@ Required: No
 
 **InstanceType**
 
-The instance type. For more information about the instance types that you can import, see [Instance Types](https://docs.aws.amazon.com/vm-import/latest/userguide/vmie_prereqs.html#vmimport-instance-types) in the
+The instance type. For more information about the instance types that you can import, see [Instance Types](../../../../services/vm-import/latest/userguide/vmie-prereqs.md#vmimport-instance-types) in the
 VM Import/Export User Guide.
 
 Type: String
@@ -96,7 +96,7 @@ Required: No
 
 The Base64-encoded user data to make available to the instance.
 
-Type: [UserData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UserData.html) object
+Type: [UserData](api-userdata.md) object
 
 Required: No
 
@@ -104,13 +104,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ImportInstanceLaunchSpecification)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/importinstancelaunchspecification.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ImportInstanceLaunchSpecification)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/importinstancelaunchspecification.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ImportInstanceLaunchSpecification)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/importinstancelaunchspecification.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ImportImageTask
 

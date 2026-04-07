@@ -32,6 +32,10 @@ func (e *Extractor) Extract(rawURL string, body []byte) (ExtractedDocument, erro
 		return ExtractedDocument{}, fmt.Errorf("parse HTML: %w", err)
 	}
 
+	if redirectURL, ok := extractDocumentRedirectURL(document); ok {
+		return ExtractedDocument{RedirectURL: redirectURL}, nil
+	}
+
 	if landing, ok := extractLandingPageDocument(document, rawURL); ok {
 		return landing, nil
 	}
@@ -80,6 +84,55 @@ func (e *Extractor) Extract(rawURL string, body []byte) (ExtractedDocument, erro
 		HTML:         htmlValue,
 		Links:        links,
 	}, nil
+}
+
+func extractDocumentRedirectURL(document *goquery.Document) (string, bool) {
+	var redirectURL string
+	document.Find("meta[http-equiv]").EachWithBreak(func(_ int, selection *goquery.Selection) bool {
+		httpEquiv, exists := selection.Attr("http-equiv")
+		if !exists || !strings.EqualFold(strings.TrimSpace(httpEquiv), "refresh") {
+			return true
+		}
+
+		content, exists := selection.Attr("content")
+		if !exists {
+			return true
+		}
+
+		if target, ok := parseMetaRefreshTarget(content); ok {
+			redirectURL = target
+			return false
+		}
+
+		return true
+	})
+
+	if redirectURL == "" {
+		return "", false
+	}
+
+	return redirectURL, true
+}
+
+func parseMetaRefreshTarget(content string) (string, bool) {
+	for _, part := range strings.Split(content, ";") {
+		trimmed := strings.TrimSpace(part)
+		if len(trimmed) < 4 {
+			continue
+		}
+		if !strings.EqualFold(trimmed[:4], "url=") {
+			continue
+		}
+
+		target := strings.TrimSpace(trimmed[4:])
+		target = strings.Trim(target, `"'`)
+		if target == "" {
+			return "", false
+		}
+		return target, true
+	}
+
+	return "", false
 }
 
 var (

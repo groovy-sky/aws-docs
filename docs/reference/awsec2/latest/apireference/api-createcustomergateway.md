@@ -10,7 +10,7 @@ For devices that use Border Gateway Protocol (BGP), you can also provide the dev
 BGP Autonomous System Number (ASN). You can use an existing ASN assigned to your network.
 If you don't have an ASN already, you can use a private ASN. For more information, see
 [Customer gateway \
-options for your Site-to-Site VPN connection](https://docs.aws.amazon.com/vpn/latest/s2svpn/cgw-options.html) in the _AWS Site-to-Site VPN User Guide_.
+options for your Site-to-Site VPN connection](../../../../services/vpn/latest/s2svpn/cgw-options.md) in the _AWS Site-to-Site VPN User Guide_.
 
 To create more than one customer gateway with the same VPN type, IP address, and
 BGP ASN, specify a unique device name for each customer gateway. An identical request
@@ -119,7 +119,7 @@ The following elements are returned by the service.
 
 Information about the customer gateway.
 
-Type: [CustomerGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CustomerGateway.html) object
+Type: [CustomerGateway](api-customergateway.md) object
 
 **requestId**
 
@@ -176,23 +176,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateCustomerGateway)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateCustomerGateway)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createcustomergateway.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateCustomerGateway)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createcustomergateway.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateCustomerGateway)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createcustomergateway.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateCustomerGateway)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createcustomergateway.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateCustomerGateway)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createcustomergateway.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateCustomerGateway)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createcustomergateway.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateCustomerGateway)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateCustomerGateway)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createcustomergateway.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateCoipPool
 

@@ -5,7 +5,7 @@ subnet, or VPC.
 
 Flow log data for a monitored network interface is recorded as flow log records, which are log events
 consisting of fields that describe the traffic flow. For more information, see
-[Flow log records](https://docs.aws.amazon.com/vpc/latest/userguide/flow-log-records.html)
+[Flow log records](../../../../services/vpc/latest/userguide/flow-log-records.md)
 in the _Amazon VPC User Guide_.
 
 When publishing to CloudWatch Logs, flow log records are published to a log group, and each network
@@ -24,7 +24,7 @@ The following parameters are for this specific action. For more information abou
 
 Unique, case-sensitive identifier that you provide to ensure the idempotency of the
 request. For more information, see [How to ensure\
-idempotency](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html).
+idempotency](../../../../services/ec2/latest/devguide/ec2-api-idempotency.md).
 
 Type: String
 
@@ -54,7 +54,7 @@ Required: No
 
 The destination options.
 
-Type: [DestinationOptionsRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DestinationOptionsRequest.html) object
+Type: [DestinationOptionsRequest](api-destinationoptionsrequest.md) object
 
 Required: No
 
@@ -109,9 +109,9 @@ Required: No
 The fields to include in the flow log record. List the fields in the order in which
 they should appear. If you omit this parameter, the flow log is created using the
 default format. If you specify this parameter, you must include at least one
-field. For more information about the available fields, see [Flow log records](https://docs.aws.amazon.com/vpc/latest/userguide/flow-log-records.html)
+field. For more information about the available fields, see [Flow log records](../../../../services/vpc/latest/userguide/flow-log-records.md)
 in the _Amazon VPC User Guide_ or [Transit Gateway Flow Log\
-records](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-flow-logs.html#flow-log-records) in the _AWS Transit Gateway Guide_.
+records](../../../../services/vpc/latest/tgw/tgw-flow-logs.md#flow-log-records) in the _AWS Transit Gateway Guide_.
 
 Specify the fields using the `${field-id}` format, separated by spaces.
 
@@ -136,7 +136,7 @@ The possible values are 60 seconds (1 minute) or 600 seconds (10 minutes).
 This parameter must be 60 seconds for transit gateway resource types.
 
 When a network interface is attached to a [Nitro-based\
-instance](https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-nitro-instances.html), the aggregation interval is always 60 seconds or less, regardless
+instance](../../../../services/ec2/latest/instancetypes/ec2-nitro-instances.md), the aggregation interval is always 60 seconds or less, regardless
 of the value that you specify.
 
 Default: 600
@@ -214,7 +214,7 @@ Type: String
 
 Information about the flow logs that could not be created successfully.
 
-Type: Array of [UnsuccessfulItem](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UnsuccessfulItem.html) objects
+Type: Array of [UnsuccessfulItem](api-unsuccessfulitem.md) objects
 
 ## Errors
 
@@ -305,23 +305,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateFlowLogs)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateFlowLogs)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createflowlogs.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateFlowLogs)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createflowlogs.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateFlowLogs)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createflowlogs.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateFlowLogs)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createflowlogs.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateFlowLogs)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createflowlogs.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateFlowLogs)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createflowlogs.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateFlowLogs)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateFlowLogs)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createflowlogs.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateFleet
 

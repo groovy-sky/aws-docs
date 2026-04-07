@@ -15,7 +15,7 @@ AMIs.
 
 - `missing-permissions` \- The snapshot was not deleted because the role lacks
 `DeleteSnapshot` permissions. For more information, see [How\
-Amazon EBS works with IAM](https://docs.aws.amazon.com/ebs/latest/userguide/security_iam_service-with-iam.html).
+Amazon EBS works with IAM](../../../../services/ebs/latest/userguide/security-iam-service-with-iam.md).
 
 - `internal-error` \- The snapshot was not deleted due to a server
 error.
@@ -24,7 +24,7 @@ error.
 error.
 
 For details about an error, check the `DeleteSnapshot` event in the CloudTrail
-event history. For more information, see [View event history](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/tutorial-event-history.html)
+event history. For more information, see [View event history](../../../../services/awscloudtrail/latest/userguide/tutorial-event-history.md)
 in the _AWS CloudTrail User Guide_.
 
 Type: String
@@ -45,13 +45,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DeleteSnapshotReturnCode)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/deletesnapshotreturncode.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DeleteSnapshotReturnCode)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/deletesnapshotreturncode.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DeleteSnapshotReturnCode)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deletesnapshotreturncode.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DeleteQueuedReservedInstancesError
 

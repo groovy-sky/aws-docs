@@ -2,7 +2,7 @@
 
 Creates a System Integrity Protection (SIP) modification task to configure the SIP settings
 for an x86 Mac instance or Apple silicon Mac instance. For more information, see
-[Configure SIP for Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/mac-sip-settings.html#mac-sip-configure) in the _Amazon EC2 User Guide_.
+[Configure SIP for Amazon EC2 instances](../../../../services/ec2/latest/userguide/mac-sip-settings.md#mac-sip-configure) in the _Amazon EC2 User Guide_.
 
 When you configure the SIP settings for your instance, you can either enable
 or disable all SIP settings, or you can specify a custom SIP configuration that
@@ -10,7 +10,7 @@ selectively enables or disables specific SIP settings.
 
 ###### Note
 
-If you implement a custom configuration, [connect to the instance and verify the settings](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/mac-sip-settings.html#mac-sip-check-settings) to ensure that your
+If you implement a custom configuration, [connect to the instance and verify the settings](../../../../services/ec2/latest/userguide/mac-sip-settings.md#mac-sip-check-settings) to ensure that your
 requirements are properly implemented and functioning as intended.
 
 SIP configurations might change with macOS updates. We recommend that you
@@ -41,7 +41,7 @@ The following parameters are for this specific action. For more information abou
 
 **ClientToken**
 
-Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensuring Idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html).
+Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensuring Idempotency](run-instance-idempotency.md).
 
 Type: String
 
@@ -105,7 +105,7 @@ Specifies the overrides to selectively enable or disable individual SIP settings
 The individual settings you specify here override the overall SIP status you specify
 for **MacSystemIntegrityProtectionStatus**.
 
-Type: [MacSystemIntegrityProtectionConfigurationRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MacSystemIntegrityProtectionConfigurationRequest.html) object
+Type: [MacSystemIntegrityProtectionConfigurationRequest](api-macsystemintegrityprotectionconfigurationrequest.md) object
 
 Required: No
 
@@ -136,7 +136,7 @@ The following elements are returned by the service.
 
 Information about the SIP modification task.
 
-Type: [MacModificationTask](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MacModificationTask.html) object
+Type: [MacModificationTask](api-macmodificationtask.md) object
 
 **requestId**
 
@@ -156,23 +156,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateMacSystemIntegrityProtectionModificationTask)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateMacSystemIntegrityProtectionModificationTask)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createmacsystemintegrityprotectionmodificationtask.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateMacSystemIntegrityProtectionModificationTask)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createmacsystemintegrityprotectionmodificationtask.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateMacSystemIntegrityProtectionModificationTask)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createmacsystemintegrityprotectionmodificationtask.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateMacSystemIntegrityProtectionModificationTask)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createmacsystemintegrityprotectionmodificationtask.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateMacSystemIntegrityProtectionModificationTask)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createmacsystemintegrityprotectionmodificationtask.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateMacSystemIntegrityProtectionModificationTask)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createmacsystemintegrityprotectionmodificationtask.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateMacSystemIntegrityProtectionModificationTask)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateMacSystemIntegrityProtectionModificationTask)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createmacsystemintegrityprotectionmodificationtask.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateLocalGatewayVirtualInterfaceGroup
 

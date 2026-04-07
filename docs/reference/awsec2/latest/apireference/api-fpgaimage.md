@@ -80,7 +80,7 @@ Required: No
 
 Information about the PCI bus.
 
-Type: [PciId](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PciId.html) object
+Type: [PciId](api-pciid.md) object
 
 Required: No
 
@@ -112,7 +112,7 @@ Required: No
 
 Information about the state of the AFI.
 
-Type: [FpgaImageState](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FpgaImageState.html) object
+Type: [FpgaImageState](api-fpgaimagestate.md) object
 
 Required: No
 
@@ -136,13 +136,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/FpgaImage)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/fpgaimage.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/FpgaImage)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/fpgaimage.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/FpgaImage)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/fpgaimage.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 FpgaDeviceMemoryInfo
 

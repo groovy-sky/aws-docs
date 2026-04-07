@@ -33,7 +33,7 @@ identify instance types with those attributes.
 If you specify `InstanceRequirementsWithMetadata`, you can't specify
 `InstanceTypes`.
 
-Type: [InstanceRequirementsWithMetadataRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceRequirementsWithMetadataRequest.html) object
+Type: [InstanceRequirementsWithMetadataRequest](api-instancerequirementswithmetadatarequest.md) object
 
 Required: No
 
@@ -155,7 +155,7 @@ Different  Regions or Availability Zones might return the same score.
 The Spot placement score serves as a recommendation only. No score guarantees that your
 Spot request will be fully or partially fulfilled.
 
-Type: Array of [SpotPlacementScore](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SpotPlacementScore.html) objects
+Type: Array of [SpotPlacementScore](api-spotplacementscore.md) objects
 
 ## Errors
 
@@ -169,23 +169,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/GetSpotPlacementScores)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/GetSpotPlacementScores)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/getspotplacementscores.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/GetSpotPlacementScores)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/getspotplacementscores.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/GetSpotPlacementScores)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/getspotplacementscores.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/GetSpotPlacementScores)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/getspotplacementscores.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/GetSpotPlacementScores)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/getspotplacementscores.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/GetSpotPlacementScores)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/getspotplacementscores.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/GetSpotPlacementScores)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/GetSpotPlacementScores)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/getspotplacementscores.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GetSnapshotBlockPublicAccessState
 

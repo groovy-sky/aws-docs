@@ -4,7 +4,7 @@ Describes the specified security groups or all of your security groups.
 
 ## Request Parameters
 
-The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/CommonParameters.html).
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
 
 **DryRun**
 
@@ -90,7 +90,7 @@ For example, to find all resources that have a tag with the key `Owner` and the 
 
 - `vpc-id` \- The ID of the VPC specified when the security group was created.
 
-Type: Array of [Filter](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Filter.html) objects
+Type: Array of [Filter](api-filter.md) objects
 
 Required: No
 
@@ -120,7 +120,7 @@ Required: No
 The maximum number of items to return for this request. To get the next page of items,
 make another request with the token returned in the output. This value can be between 5 and 1000.
 If this parameter is not specified, then all items are returned. For more information, see
-[Pagination](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Query-Requests.html#api-pagination).
+[Pagination](query-requests.md#api-pagination).
 
 Type: Integer
 
@@ -157,11 +157,11 @@ Type: String
 
 Information about the security groups.
 
-Type: Array of [SecurityGroup](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SecurityGroup.html) objects
+Type: Array of [SecurityGroup](api-securitygroup.md) objects
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common client error codes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/errors-overview.html#CommonErrors).
+For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
 
 ## Examples
 
@@ -418,23 +418,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/DescribeSecurityGroups)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DescribeSecurityGroups)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/describesecuritygroups.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/DescribeSecurityGroups)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/describesecuritygroups.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DescribeSecurityGroups)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/describesecuritygroups.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DescribeSecurityGroups)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/describesecuritygroups.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DescribeSecurityGroups)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/describesecuritygroups.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DescribeSecurityGroups)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/describesecuritygroups.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DescribeSecurityGroups)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DescribeSecurityGroups)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describesecuritygroups.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DescribeSecurityGroupRules
 

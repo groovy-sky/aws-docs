@@ -2,7 +2,7 @@
 
 Allocate a CIDR from an IPAM pool. The Region you use should be the IPAM pool locale. The locale is the AWS Region where this IPAM pool is available for allocations.
 
-In IPAM, an allocation is a CIDR assignment from an IPAM pool to another IPAM pool or to a resource. For more information, see [Allocate CIDRs](https://docs.aws.amazon.com/vpc/latest/ipam/allocate-cidrs-ipam.html) in the _Amazon VPC IPAM User Guide_.
+In IPAM, an allocation is a CIDR assignment from an IPAM pool to another IPAM pool or to a resource. For more information, see [Allocate CIDRs](../../../../services/vpc/latest/ipam/allocate-cidrs-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 ###### Note
 
@@ -36,7 +36,7 @@ Required: No
 
 **ClientToken**
 
-A unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html).
+A unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensuring idempotency](../../../../services/ec2/latest/devguide/ec2-api-idempotency.md).
 
 Type: String
 
@@ -106,7 +106,7 @@ The following elements are returned by the service.
 
 Information about the allocation created.
 
-Type: [IpamPoolAllocation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamPoolAllocation.html) object
+Type: [IpamPoolAllocation](api-ipampoolallocation.md) object
 
 **requestId**
 
@@ -126,23 +126,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/AllocateIpamPoolCidr)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/AllocateIpamPoolCidr)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/allocateipampoolcidr.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/AllocateIpamPoolCidr)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/allocateipampoolcidr.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/AllocateIpamPoolCidr)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/allocateipampoolcidr.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/AllocateIpamPoolCidr)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/allocateipampoolcidr.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/AllocateIpamPoolCidr)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/allocateipampoolcidr.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/AllocateIpamPoolCidr)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/allocateipampoolcidr.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/AllocateIpamPoolCidr)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/AllocateIpamPoolCidr)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/allocateipampoolcidr.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AllocateHosts
 

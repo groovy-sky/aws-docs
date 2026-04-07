@@ -11,8 +11,8 @@ To queue a purchase for a future date and time, specify a purchase time. If you 
 specify a purchase time, the default is the current time.
 
 For more information, see [Reserved\
-Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts-on-demand-reserved-instances.html) and [Sell in the Reserved Instance\
-Marketplace](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-market-general.html) in the _Amazon EC2 User Guide_.
+Instances](../../../../services/ec2/latest/userguide/concepts-on-demand-reserved-instances.md) and [Sell in the Reserved Instance\
+Marketplace](../../../../services/ec2/latest/userguide/ri-market-general.md) in the _Amazon EC2 User Guide_.
 
 ## Request Parameters
 
@@ -42,7 +42,7 @@ Required: Yes
 Specified for Reserved Instance Marketplace offerings to limit the total order and ensure
 that the Reserved Instances are not purchased at unexpected prices.
 
-Type: [ReservedInstanceLimitPrice](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReservedInstanceLimitPrice.html) object
+Type: [ReservedInstanceLimitPrice](api-reservedinstancelimitprice.md) object
 
 Required: No
 
@@ -76,7 +76,7 @@ Type: String
 **reservedInstancesId**
 
 The IDs of the purchased Reserved Instances. If your purchase crosses into a discounted
-pricing tier, the final Reserved Instances IDs might change. For more information, see [Crossing pricing tiers](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts-reserved-instances-application.html#crossing-pricing-tiers) in the _Amazon EC2 User Guide_.
+pricing tier, the final Reserved Instances IDs might change. For more information, see [Crossing pricing tiers](../../../../services/ec2/latest/userguide/concepts-reserved-instances-application.md#crossing-pricing-tiers) in the _Amazon EC2 User Guide_.
 
 Type: String
 
@@ -144,23 +144,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/PurchaseReservedInstancesOffering)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/PurchaseReservedInstancesOffering)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/purchasereservedinstancesoffering.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/PurchaseReservedInstancesOffering)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/purchasereservedinstancesoffering.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/PurchaseReservedInstancesOffering)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/purchasereservedinstancesoffering.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/PurchaseReservedInstancesOffering)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/purchasereservedinstancesoffering.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/PurchaseReservedInstancesOffering)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/purchasereservedinstancesoffering.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/PurchaseReservedInstancesOffering)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/purchasereservedinstancesoffering.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/PurchaseReservedInstancesOffering)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/PurchaseReservedInstancesOffering)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/purchasereservedinstancesoffering.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 PurchaseHostReservation
 

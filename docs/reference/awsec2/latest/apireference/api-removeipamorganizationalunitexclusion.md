@@ -1,6 +1,6 @@
 # RemoveIpamOrganizationalUnitExclusion
 
-Remove an Organizational Unit (OU) exclusion to your IPAM. If your IPAM is integrated with AWS Organizations and you add an organizational unit (OU) exclusion, IPAM will not manage the IP addresses in accounts in that OU exclusion. There is a limit on the number of exclusions you can create. For more information, see [Quotas for your IPAM](https://docs.aws.amazon.com/vpc/latest/ipam/quotas-ipam.html) in the _Amazon VPC IPAM User Guide_.
+Remove an Organizational Unit (OU) exclusion to your IPAM. If your IPAM is integrated with AWS Organizations and you add an organizational unit (OU) exclusion, IPAM will not manage the IP addresses in accounts in that OU exclusion. There is a limit on the number of exclusions you can create. For more information, see [Quotas for your IPAM](../../../../services/vpc/latest/ipam/quotas-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 ## Contents
 
@@ -22,7 +22,7 @@ An AWS Organizations entity path. Build the path for the OU(s) using AWS Organiz
 
 - In this example, IPAM will not manage the IP addresses in accounts in the OU ( `ou-ghi0-awsccccc`) or in accounts in any OUs that are children of the OU.
 
-For more information on how to construct an entity path, see [Understand the AWS Organizations entity path](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_last-accessed-view-data-orgs.html#access_policies_access-advisor-viewing-orgs-entity-path) in the _AWS Identity and Access Management User Guide_.
+For more information on how to construct an entity path, see [Understand the AWS Organizations entity path](../../../../services/iam/latest/userguide/access-policies-last-accessed-view-data-orgs.md#access_policies_access-advisor-viewing-orgs-entity-path) in the _AWS Identity and Access Management User Guide_.
 
 Type: String
 
@@ -32,13 +32,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/RemoveIpamOrganizationalUnitExclusion)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/removeipamorganizationalunitexclusion.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/RemoveIpamOrganizationalUnitExclusion)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/removeipamorganizationalunitexclusion.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/RemoveIpamOrganizationalUnitExclusion)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/removeipamorganizationalunitexclusion.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 RemoveIpamOperatingRegion
 

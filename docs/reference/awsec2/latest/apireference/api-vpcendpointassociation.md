@@ -27,7 +27,7 @@ Required: No
 
 The DNS entry of the VPC endpoint association.
 
-Type: [DnsEntry](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DnsEntry.html) object
+Type: [DnsEntry](api-dnsentry.md) object
 
 Required: No
 
@@ -59,7 +59,7 @@ Required: No
 
 The private DNS entry of the VPC endpoint association.
 
-Type: [DnsEntry](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DnsEntry.html) object
+Type: [DnsEntry](api-dnsentry.md) object
 
 Required: No
 
@@ -107,13 +107,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/VpcEndpointAssociation)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/vpcendpointassociation.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/VpcEndpointAssociation)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/vpcendpointassociation.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/VpcEndpointAssociation)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/vpcendpointassociation.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 VpcEndpoint
 

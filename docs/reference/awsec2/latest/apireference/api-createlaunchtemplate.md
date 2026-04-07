@@ -24,7 +24,7 @@ request. If a client token isn't specified, a randomly generated token is used i
 request to ensure idempotency.
 
 For more information, see [Ensuring\
-idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html).
+idempotency](run-instance-idempotency.md).
 
 Constraint: Maximum 128 ASCII characters.
 
@@ -47,7 +47,7 @@ Required: No
 
 The information for the launch template.
 
-Type: [RequestLaunchTemplateData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RequestLaunchTemplateData.html) object
+Type: [RequestLaunchTemplateData](api-requestlaunchtemplatedata.md) object
 
 Required: Yes
 
@@ -78,7 +78,7 @@ resource type must be `launch-template`.
 
 To specify the tags for the resources that are created when an instance is launched,
 you must use the `TagSpecifications` parameter in the [launch template\
-data](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RequestLaunchTemplateData.html) structure.
+data](api-requestlaunchtemplatedata.md) structure.
 
 Type: Array of [TagSpecification](api-tagspecification.md) objects
 
@@ -102,7 +102,7 @@ The following elements are returned by the service.
 
 Information about the launch template.
 
-Type: [LaunchTemplate](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTemplate.html) object
+Type: [LaunchTemplate](api-launchtemplate.md) object
 
 **requestId**
 
@@ -116,7 +116,7 @@ If the launch template contains parameters or parameter combinations that are no
 valid, an error code and an error message are returned for each issue that's
 found.
 
-Type: [ValidationWarning](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ValidationWarning.html) object
+Type: [ValidationWarning](api-validationwarning.md) object
 
 ## Errors
 
@@ -193,23 +193,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateLaunchTemplate)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateLaunchTemplate)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createlaunchtemplate.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateLaunchTemplate)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createlaunchtemplate.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateLaunchTemplate)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createlaunchtemplate.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateLaunchTemplate)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createlaunchtemplate.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateLaunchTemplate)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createlaunchtemplate.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateLaunchTemplate)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createlaunchtemplate.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateLaunchTemplate)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateLaunchTemplate)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createlaunchtemplate.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateKeyPair
 

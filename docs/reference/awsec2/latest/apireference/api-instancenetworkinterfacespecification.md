@@ -9,7 +9,7 @@ Describes a network interface.
 Indicates whether to assign a carrier IP address to the network interface.
 
 You can only assign a carrier IP address to a network interface that is in a subnet in
-a Wavelength Zone. For more information about carrier IP addresses, see [Carrier IP address](https://docs.aws.amazon.com/wavelength/latest/developerguide/how-wavelengths-work.html#provider-owned-ip) in the _AWS Wavelength Developer_
+a Wavelength Zone. For more information about carrier IP addresses, see [Carrier IP address](../../../../services/wavelength/latest/developerguide/how-wavelengths-work.md#provider-owned-ip) in the _AWS Wavelength Developer_
 _Guide_.
 
 Type: Boolean
@@ -86,7 +86,7 @@ Required: No
 Specifies the ENA Express settings for the network interface that's attached to
 the instance.
 
-Type: [EnaSrdSpecificationRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnaSrdSpecificationRequest.html) object
+Type: [EnaSrdSpecificationRequest](api-enasrdspecificationrequest.md) object
 
 Required: No
 
@@ -168,7 +168,7 @@ The index of the network card. Some instance types support multiple network card
 primary network interface must be assigned to network card index 0. The default is
 network card index 0.
 
-If you are using [RequestSpotInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RequestSpotInstances.html) to create Spot Instances, omit this parameter because
+If you are using [RequestSpotInstances](api-requestspotinstances.md) to create Spot Instances, omit this parameter because
 you can’t specify the network card index when using this API. To specify the network
 card index, use [RunInstances](api-runinstances.md).
 
@@ -249,13 +249,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/InstanceNetworkInterfaceSpecification)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/instancenetworkinterfacespecification.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/InstanceNetworkInterfaceSpecification)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/instancenetworkinterfacespecification.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/InstanceNetworkInterfaceSpecification)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/instancenetworkinterfacespecification.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 InstanceNetworkInterfaceAttachment
 

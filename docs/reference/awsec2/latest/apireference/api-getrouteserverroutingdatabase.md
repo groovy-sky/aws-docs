@@ -13,7 +13,7 @@ Route server supports the follow route table types:
 
 - Internet gateway route tables
 
-Route server does not support route tables associated with virtual private gateways. To propagate routes into a transit gateway route table, use [Transit Gateway Connect](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-connect.html).
+Route server does not support route tables associated with virtual private gateways. To propagate routes into a transit gateway route table, use [Transit Gateway Connect](../../../../services/vpc/latest/tgw/tgw-connect.md).
 
 ## Request Parameters
 
@@ -89,7 +89,7 @@ Type: String
 
 The collection of routes in the route server's routing database.
 
-Type: Array of [RouteServerRoute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RouteServerRoute.html) objects
+Type: Array of [RouteServerRoute](api-routeserverroute.md) objects
 
 ## Errors
 
@@ -103,23 +103,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/GetRouteServerRoutingDatabase)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/GetRouteServerRoutingDatabase)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/getrouteserverroutingdatabase.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/GetRouteServerRoutingDatabase)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/getrouteserverroutingdatabase.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/GetRouteServerRoutingDatabase)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/getrouteserverroutingdatabase.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/GetRouteServerRoutingDatabase)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/getrouteserverroutingdatabase.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/GetRouteServerRoutingDatabase)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/getrouteserverroutingdatabase.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/GetRouteServerRoutingDatabase)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/getrouteserverroutingdatabase.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/GetRouteServerRoutingDatabase)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/GetRouteServerRoutingDatabase)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/getrouteserverroutingdatabase.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GetRouteServerPropagations
 

@@ -49,7 +49,7 @@ Required: No
 
 Tags that are required for resources that use CIDRs from this IPAM pool. Resources that do not have these tags will not be allowed to allocate space from the pool. If the resources have their tags changed after they have allocated space or if the allocation tagging requirements are changed on the pool, the resource may be marked as noncompliant.
 
-Type: Array of [IpamResourceTag](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamResourceTag.html) objects
+Type: Array of [IpamResourceTag](api-ipamresourcetag.md) objects
 
 Required: No
 
@@ -168,7 +168,7 @@ Required: No
 
 **poolDepth**
 
-The depth of pools in your IPAM pool. The pool depth quota is 10. For more information, see [Quotas in IPAM](https://docs.aws.amazon.com/vpc/latest/ipam/quotas-ipam.html) in the _Amazon VPC IPAM User Guide_.
+The depth of pools in your IPAM pool. The pool depth quota is 10. For more information, see [Quotas in IPAM](../../../../services/vpc/latest/ipam/quotas-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 Type: Integer
 
@@ -176,8 +176,8 @@ Required: No
 
 **publicIpSource**
 
-The IP address source for pools in the public scope. Only used for provisioning IP address CIDRs to pools in the public scope. Default is `BYOIP`. For more information, see [Create IPv6 pools](https://docs.aws.amazon.com/vpc/latest/ipam/intro-create-ipv6-pools.html) in the _Amazon VPC IPAM User Guide_.
-By default, you can add only one Amazon-provided IPv6 CIDR block to a top-level IPv6 pool. For information on increasing the default limit, see [Quotas for your IPAM](https://docs.aws.amazon.com/vpc/latest/ipam/quotas-ipam.html) in the _Amazon VPC IPAM User Guide_.
+The IP address source for pools in the public scope. Only used for provisioning IP address CIDRs to pools in the public scope. Default is `BYOIP`. For more information, see [Create IPv6 pools](../../../../services/vpc/latest/ipam/intro-create-ipv6-pools.md) in the _Amazon VPC IPAM User Guide_.
+By default, you can add only one Amazon-provided IPv6 CIDR block to a top-level IPv6 pool. For information on increasing the default limit, see [Quotas for your IPAM](../../../../services/vpc/latest/ipam/quotas-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 Type: String
 
@@ -205,7 +205,7 @@ Required: No
 
 The resource used to provision CIDRs to a resource planning pool.
 
-Type: [IpamPoolSourceResource](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamPoolSourceResource.html) object
+Type: [IpamPoolSourceResource](api-ipampoolsourceresource.md) object
 
 Required: No
 
@@ -240,13 +240,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/IpamPool)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/ipampool.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/IpamPool)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/ipampool.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/IpamPool)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ipampool.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 IpamPolicyOrganizationTarget
 

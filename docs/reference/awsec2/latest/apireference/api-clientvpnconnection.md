@@ -105,7 +105,7 @@ Required: No
 
 The current state of the client connection.
 
-Type: [ClientVpnConnectionStatus](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientVpnConnectionStatus.html) object
+Type: [ClientVpnConnectionStatus](api-clientvpnconnectionstatus.md) object
 
 Required: No
 
@@ -130,13 +130,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ClientVpnConnection)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/clientvpnconnection.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ClientVpnConnection)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/clientvpnconnection.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ClientVpnConnection)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/clientvpnconnection.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ClientVpnAuthorizationRuleStatus
 

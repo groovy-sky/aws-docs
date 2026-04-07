@@ -6,7 +6,7 @@ Describes attributes of your AWS account. The following are the supported accoun
 
 - `max-instances`: This attribute is no longer supported. The returned
 value does not reflect your actual vCPU limit for running On-Demand Instances.
-For more information, see [On-Demand Instance Limits](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-on-demand-instances.html#ec2-on-demand-instances-limits) in the
+For more information, see [On-Demand Instance Limits](../../../../services/ec2/latest/userguide/ec2-on-demand-instances.md#ec2-on-demand-instances-limits) in the
 _Amazon Elastic Compute Cloud User Guide_.
 
 - `max-elastic-ips`: The maximum number of Elastic IP addresses that you can allocate.
@@ -56,7 +56,7 @@ The following elements are returned by the service.
 
 Information about the account attributes.
 
-Type: Array of [AccountAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AccountAttribute.html) objects
+Type: Array of [AccountAttribute](api-accountattribute.md) objects
 
 **requestId**
 
@@ -76,23 +76,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/DescribeAccountAttributes)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DescribeAccountAttributes)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/describeaccountattributes.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/DescribeAccountAttributes)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/describeaccountattributes.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DescribeAccountAttributes)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/describeaccountattributes.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DescribeAccountAttributes)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/describeaccountattributes.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DescribeAccountAttributes)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/describeaccountattributes.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DescribeAccountAttributes)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/describeaccountattributes.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DescribeAccountAttributes)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DescribeAccountAttributes)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describeaccountattributes.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DeregisterTransitGatewayMulticastGroupSources
 

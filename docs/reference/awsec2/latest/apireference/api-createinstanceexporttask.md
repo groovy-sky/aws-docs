@@ -4,7 +4,7 @@ Exports a running or stopped instance to an Amazon S3 bucket.
 
 For information about the prerequisites for your Amazon S3 bucket, supported operating systems,
 image formats, and known limitations for the types of instances you can export, see [Exporting an instance as a VM Using VM\
-Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport.html) in the _VM Import/Export User Guide_.
+Import/Export](../../../../services/vm-import/latest/userguide/vmexport.md) in the _VM Import/Export User Guide_.
 
 ## Request Parameters
 
@@ -22,7 +22,7 @@ Required: No
 
 The format and location for an export instance task.
 
-Type: [ExportToS3TaskSpecification](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ExportToS3TaskSpecification.html) object
+Type: [ExportToS3TaskSpecification](api-exporttos3taskspecification.md) object
 
 Required: Yes
 
@@ -60,7 +60,7 @@ The following elements are returned by the service.
 
 Information about the export instance task.
 
-Type: [ExportTask](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ExportTask.html) object
+Type: [ExportTask](api-exporttask.md) object
 
 **requestId**
 
@@ -126,23 +126,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateInstanceExportTask)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateInstanceExportTask)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createinstanceexporttask.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateInstanceExportTask)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createinstanceexporttask.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateInstanceExportTask)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createinstanceexporttask.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateInstanceExportTask)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createinstanceexporttask.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateInstanceExportTask)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createinstanceexporttask.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateInstanceExportTask)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createinstanceexporttask.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateInstanceExportTask)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateInstanceExportTask)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createinstanceexporttask.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateInstanceEventWindow
 

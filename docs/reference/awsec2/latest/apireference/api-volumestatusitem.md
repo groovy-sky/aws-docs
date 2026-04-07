@@ -8,7 +8,7 @@ Describes the volume status.
 
 The details of the operation.
 
-Type: Array of [VolumeStatusAction](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VolumeStatusAction.html) objects
+Type: Array of [VolumeStatusAction](api-volumestatusaction.md) objects
 
 Required: No
 
@@ -16,7 +16,7 @@ Required: No
 
 Information about the instances to which the volume is attached.
 
-Type: Array of [VolumeStatusAttachmentStatus](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VolumeStatusAttachmentStatus.html) objects
+Type: Array of [VolumeStatusAttachmentStatus](api-volumestatusattachmentstatus.md) objects
 
 Required: No
 
@@ -40,7 +40,7 @@ Required: No
 
 A list of events associated with the volume.
 
-Type: Array of [VolumeStatusEvent](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VolumeStatusEvent.html) objects
+Type: Array of [VolumeStatusEvent](api-volumestatusevent.md) objects
 
 Required: No
 
@@ -53,9 +53,9 @@ Only available for volumes created from snapshots. Not available for empty
 volumes created without a snapshot.
 
 For more information, see
-[Initialize Amazon EBS volumes](https://docs.aws.amazon.com/ebs/latest/userguide/initalize-volume.html).
+[Initialize Amazon EBS volumes](../../../../services/ebs/latest/userguide/initalize-volume.md).
 
-Type: [InitializationStatusDetails](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InitializationStatusDetails.html) object
+Type: [InitializationStatusDetails](api-initializationstatusdetails.md) object
 
 Required: No
 
@@ -79,7 +79,7 @@ Required: No
 
 The volume status.
 
-Type: [VolumeStatusInfo](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VolumeStatusInfo.html) object
+Type: [VolumeStatusInfo](api-volumestatusinfo.md) object
 
 Required: No
 
@@ -87,13 +87,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/VolumeStatusItem)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/volumestatusitem.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/VolumeStatusItem)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/volumestatusitem.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/VolumeStatusItem)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/volumestatusitem.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 VolumeStatusInfo
 

@@ -10,7 +10,7 @@ The following parameters are for this specific action. For more information abou
 
 Add operating Regions to the resource discovery. Operating Regions are AWS Regions where the IPAM is allowed to manage IP address CIDRs. IPAM only discovers and monitors resources in the AWS Regions you select as operating Regions.
 
-Type: Array of [AddIpamOperatingRegion](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AddIpamOperatingRegion.html) objects
+Type: Array of [AddIpamOperatingRegion](api-addipamoperatingregion.md) objects
 
 Array Members: Minimum number of 0 items. Maximum number of 50 items.
 
@@ -18,14 +18,14 @@ Required: No
 
 **AddOrganizationalUnitExclusion.N**
 
-Add an Organizational Unit (OU) exclusion to your IPAM. If your IPAM is integrated with AWS Organizations and you add an organizational unit (OU) exclusion, IPAM will not manage the IP addresses in accounts in that OU exclusion. There is a limit on the number of exclusions you can create. For more information, see [Quotas for your IPAM](https://docs.aws.amazon.com/vpc/latest/ipam/quotas-ipam.html) in the _Amazon VPC IPAM User Guide_.
+Add an Organizational Unit (OU) exclusion to your IPAM. If your IPAM is integrated with AWS Organizations and you add an organizational unit (OU) exclusion, IPAM will not manage the IP addresses in accounts in that OU exclusion. There is a limit on the number of exclusions you can create. For more information, see [Quotas for your IPAM](../../../../services/vpc/latest/ipam/quotas-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 ###### Note
 
 The resulting set of exclusions must not result in "overlap", meaning two or more OU
-exclusions must not exclude the same OU. For more information and examples, see the AWS CLI request process in [Add or remove OU exclusions](https://docs.aws.amazon.com/vpc/latest/ipam/exclude-ous.html#exclude-ous-create-delete) in the _Amazon VPC User Guide_.
+exclusions must not exclude the same OU. For more information and examples, see the AWS CLI request process in [Add or remove OU exclusions](../../../../services/vpc/latest/ipam/exclude-ous.md#exclude-ous-create-delete) in the _Amazon VPC User Guide_.
 
-Type: Array of [AddIpamOrganizationalUnitExclusion](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AddIpamOrganizationalUnitExclusion.html) objects
+Type: Array of [AddIpamOrganizationalUnitExclusion](api-addipamorganizationalunitexclusion.md) objects
 
 Array Members: Minimum number of 0 items. Maximum number of 10 items.
 
@@ -61,7 +61,7 @@ Required: Yes
 
 Remove operating Regions.
 
-Type: Array of [RemoveIpamOperatingRegion](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RemoveIpamOperatingRegion.html) objects
+Type: Array of [RemoveIpamOperatingRegion](api-removeipamoperatingregion.md) objects
 
 Array Members: Minimum number of 0 items. Maximum number of 50 items.
 
@@ -69,14 +69,14 @@ Required: No
 
 **RemoveOrganizationalUnitExclusion.N**
 
-Remove an Organizational Unit (OU) exclusion to your IPAM. If your IPAM is integrated with AWS Organizations and you add an organizational unit (OU) exclusion, IPAM will not manage the IP addresses in accounts in that OU exclusion. There is a limit on the number of exclusions you can create. For more information, see [Quotas for your IPAM](https://docs.aws.amazon.com/vpc/latest/ipam/quotas-ipam.html) in the _Amazon VPC IPAM User Guide_.
+Remove an Organizational Unit (OU) exclusion to your IPAM. If your IPAM is integrated with AWS Organizations and you add an organizational unit (OU) exclusion, IPAM will not manage the IP addresses in accounts in that OU exclusion. There is a limit on the number of exclusions you can create. For more information, see [Quotas for your IPAM](../../../../services/vpc/latest/ipam/quotas-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 ###### Note
 
 The resulting set of exclusions must not result in "overlap", meaning two or more OU
-exclusions must not exclude the same OU. For more information and examples, see the AWS CLI request process in [Add or remove OU exclusions](https://docs.aws.amazon.com/vpc/latest/ipam/exclude-ous.html#exclude-ous-create-delete) in the _Amazon VPC User Guide_.
+exclusions must not exclude the same OU. For more information and examples, see the AWS CLI request process in [Add or remove OU exclusions](../../../../services/vpc/latest/ipam/exclude-ous.md#exclude-ous-create-delete) in the _Amazon VPC User Guide_.
 
-Type: Array of [RemoveIpamOrganizationalUnitExclusion](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RemoveIpamOrganizationalUnitExclusion.html) objects
+Type: Array of [RemoveIpamOrganizationalUnitExclusion](api-removeipamorganizationalunitexclusion.md) objects
 
 Array Members: Minimum number of 0 items. Maximum number of 10 items.
 
@@ -90,7 +90,7 @@ The following elements are returned by the service.
 
 A resource discovery.
 
-Type: [IpamResourceDiscovery](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamResourceDiscovery.html) object
+Type: [IpamResourceDiscovery](api-ipamresourcediscovery.md) object
 
 **requestId**
 
@@ -110,23 +110,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ModifyIpamResourceDiscovery)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ModifyIpamResourceDiscovery)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/modifyipamresourcediscovery.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ModifyIpamResourceDiscovery)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/modifyipamresourcediscovery.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ModifyIpamResourceDiscovery)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/modifyipamresourcediscovery.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ModifyIpamResourceDiscovery)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/modifyipamresourcediscovery.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ModifyIpamResourceDiscovery)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/modifyipamresourcediscovery.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ModifyIpamResourceDiscovery)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/modifyipamresourcediscovery.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ModifyIpamResourceDiscovery)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ModifyIpamResourceDiscovery)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifyipamresourcediscovery.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ModifyIpamResourceCidr
 

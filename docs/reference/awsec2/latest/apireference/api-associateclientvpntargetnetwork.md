@@ -2,7 +2,7 @@
 
 Associates a target network with a Client VPN endpoint. A target network is a subnet in a VPC. You can associate multiple subnets from the same VPC with a Client VPN endpoint. You can associate only one subnet in each Availability Zone. We recommend that you associate at least two subnets to provide Availability Zone redundancy.
 
-If you specified a VPC when you created the Client VPN endpoint or if you have previous subnet associations, the specified subnet must be in the same VPC. To specify a subnet that's in a different VPC, you must first modify the Client VPN endpoint ( [ModifyClientVpnEndpoint](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyClientVpnEndpoint.html)) and change the VPC that's associated with it.
+If you specified a VPC when you created the Client VPN endpoint or if you have previous subnet associations, the specified subnet must be in the same VPC. To specify a subnet that's in a different VPC, you must first modify the Client VPN endpoint ( [ModifyClientVpnEndpoint](api-modifyclientvpnendpoint.md)) and change the VPC that's associated with it.
 
 ## Request Parameters
 
@@ -11,7 +11,7 @@ The following parameters are for this specific action. For more information abou
 **ClientToken**
 
 Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
-For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html).
+For more information, see [Ensuring idempotency](../../../../services/ec2/latest/devguide/ec2-api-idempotency.md).
 
 Type: String
 
@@ -61,7 +61,7 @@ Type: String
 
 The current state of the target network association.
 
-Type: [AssociationStatus](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociationStatus.html) object
+Type: [AssociationStatus](api-associationstatus.md) object
 
 ## Errors
 
@@ -104,23 +104,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/AssociateClientVpnTargetNetwork)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/AssociateClientVpnTargetNetwork)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/associateclientvpntargetnetwork.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/AssociateClientVpnTargetNetwork)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/associateclientvpntargetnetwork.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/AssociateClientVpnTargetNetwork)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/associateclientvpntargetnetwork.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/AssociateClientVpnTargetNetwork)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/associateclientvpntargetnetwork.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/AssociateClientVpnTargetNetwork)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/associateclientvpntargetnetwork.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/AssociateClientVpnTargetNetwork)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/associateclientvpntargetnetwork.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/AssociateClientVpnTargetNetwork)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/AssociateClientVpnTargetNetwork)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/associateclientvpntargetnetwork.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AssociateCapacityReservationBillingOwner
 

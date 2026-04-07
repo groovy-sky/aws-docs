@@ -5,10 +5,10 @@ Delete an IPAM pool.
 ###### Note
 
 You cannot delete an IPAM pool if there are allocations in it or CIDRs provisioned to it. To release
-allocations, see [ReleaseIpamPoolAllocation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReleaseIpamPoolAllocation.html). To deprovision pool
-CIDRs, see [DeprovisionIpamPoolCidr](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeprovisionIpamPoolCidr.html).
+allocations, see [ReleaseIpamPoolAllocation](api-releaseipampoolallocation.md). To deprovision pool
+CIDRs, see [DeprovisionIpamPoolCidr](api-deprovisionipampoolcidr.md).
 
-For more information, see [Delete a pool](https://docs.aws.amazon.com/vpc/latest/ipam/delete-pool-ipam.html) in the _Amazon VPC IPAM User Guide_.
+For more information, see [Delete a pool](../../../../services/vpc/latest/ipam/delete-pool-ipam.md) in the _Amazon VPC IPAM User Guide_.
 
 ## Request Parameters
 
@@ -53,7 +53,7 @@ The following elements are returned by the service.
 
 Information about the results of the deletion.
 
-Type: [IpamPool](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamPool.html) object
+Type: [IpamPool](api-ipampool.md) object
 
 **requestId**
 
@@ -73,23 +73,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/DeleteIpamPool)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DeleteIpamPool)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/deleteipampool.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/DeleteIpamPool)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/deleteipampool.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DeleteIpamPool)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/deleteipampool.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DeleteIpamPool)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/deleteipampool.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DeleteIpamPool)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/deleteipampool.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DeleteIpamPool)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/deleteipampool.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DeleteIpamPool)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DeleteIpamPool)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deleteipampool.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DeleteIpamPolicy
 

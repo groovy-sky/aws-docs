@@ -45,7 +45,7 @@ To exclude accelerator-enabled instance types, set `Max` to `0`.
 
 Default: No minimum or maximum limits
 
-Type: [AcceleratorCount](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AcceleratorCount.html) object
+Type: [AcceleratorCount](api-acceleratorcount.md) object
 
 Required: No
 
@@ -127,7 +127,7 @@ The minimum and maximum amount of total accelerator memory, in MiB.
 
 Default: No minimum or maximum limits
 
-Type: [AcceleratorTotalMemoryMiB](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AcceleratorTotalMemoryMiB.html) object
+Type: [AcceleratorTotalMemoryMiB](api-acceleratortotalmemorymib.md) object
 
 Required: No
 
@@ -208,7 +208,7 @@ EBS–optimized instances](../../../../services/ec2/latest/userguide/ebs-optimiz
 
 Default: No minimum or maximum limits
 
-Type: [BaselineEbsBandwidthMbps](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_BaselineEbsBandwidthMbps.html) object
+Type: [BaselineEbsBandwidthMbps](api-baselineebsbandwidthmbps.md) object
 
 Required: No
 
@@ -221,7 +221,7 @@ instance types will always exceed the baseline for every application. Currently,
 parameter only supports CPU performance as a baseline performance factor. For more
 information, see [Performance protection](../../../../services/ec2/latest/userguide/ec2-fleet-attribute-based-instance-type-selection.md#ec2fleet-abis-performance-protection) in the _Amazon EC2 User Guide_.
 
-Type: [BaselinePerformanceFactors](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_BaselinePerformanceFactors.html) object
+Type: [BaselinePerformanceFactors](api-baselineperformancefactors.md) object
 
 Required: No
 
@@ -397,7 +397,7 @@ The minimum and maximum amount of memory per vCPU, in GiB.
 
 Default: No minimum or maximum limits
 
-Type: [MemoryGiBPerVCpu](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MemoryGiBPerVCpu.html) object
+Type: [MemoryGiBPerVCpu](api-memorygibpervcpu.md) object
 
 Required: No
 
@@ -405,7 +405,7 @@ Required: No
 
 The minimum and maximum amount of memory, in MiB.
 
-Type: [MemoryMiB](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MemoryMiB.html) object
+Type: [MemoryMiB](api-memorymib.md) object
 
 Required: No
 
@@ -415,7 +415,7 @@ The minimum and maximum amount of network bandwidth, in gigabits per second (Gbp
 
 Default: No minimum or maximum limits
 
-Type: [NetworkBandwidthGbps](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkBandwidthGbps.html) object
+Type: [NetworkBandwidthGbps](api-networkbandwidthgbps.md) object
 
 Required: No
 
@@ -425,7 +425,7 @@ The minimum and maximum number of network interfaces.
 
 Default: No minimum or maximum limits
 
-Type: [NetworkInterfaceCount](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkInterfaceCount.html) object
+Type: [NetworkInterfaceCount](api-networkinterfacecount.md) object
 
 Required: No
 
@@ -521,7 +521,7 @@ The minimum and maximum amount of total local storage, in GB.
 
 Default: No minimum or maximum limits
 
-Type: [TotalLocalStorageGB](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TotalLocalStorageGB.html) object
+Type: [TotalLocalStorageGB](api-totallocalstoragegb.md) object
 
 Required: No
 
@@ -529,7 +529,7 @@ Required: No
 
 The minimum and maximum number of vCPUs.
 
-Type: [VCpuCountRange](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VCpuCountRange.html) object
+Type: [VCpuCountRange](api-vcpucountrange.md) object
 
 Required: No
 
@@ -537,13 +537,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/InstanceRequirements)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/instancerequirements.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/InstanceRequirements)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/instancerequirements.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/InstanceRequirements)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/instancerequirements.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 InstancePrivateIpAddress
 

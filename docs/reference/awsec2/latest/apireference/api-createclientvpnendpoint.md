@@ -12,7 +12,7 @@ The following parameters are for this specific action. For more information abou
 
 Information about the authentication method to be used to authenticate clients.
 
-Type: Array of [ClientVpnAuthenticationRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientVpnAuthenticationRequest.html) objects
+Type: Array of [ClientVpnAuthenticationRequest](api-clientvpnauthenticationrequest.md) objects
 
 Required: Yes
 
@@ -28,7 +28,7 @@ Required: No
 
 The options for managing connection authorization for new client connections.
 
-Type: [ClientConnectOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientConnectOptions.html) object
+Type: [ClientConnectOptions](api-clientconnectoptions.md) object
 
 Required: No
 
@@ -37,7 +37,7 @@ Required: No
 Options for enabling a customizable text banner that will be displayed on
 AWS provided clients when a VPN session is established.
 
-Type: [ClientLoginBannerOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientLoginBannerOptions.html) object
+Type: [ClientLoginBannerOptions](api-clientloginbanneroptions.md) object
 
 Required: No
 
@@ -49,14 +49,14 @@ his feature helps improve your security posture by ensuring that network traffic
 Client route enforcement works by monitoring the route table of a connected device for routing policy changes to the VPN connection. If the feature detects any VPN routing policy modifications, it will automatically force an update to the route table,
 reverting it back to the expected route configurations.
 
-Type: [ClientRouteEnforcementOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientRouteEnforcementOptions.html) object
+Type: [ClientRouteEnforcementOptions](api-clientrouteenforcementoptions.md) object
 
 Required: No
 
 **ClientToken**
 
 Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
-For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html).
+For more information, see [Ensuring idempotency](../../../../services/ec2/latest/devguide/ec2-api-idempotency.md).
 
 Type: String
 
@@ -77,7 +77,7 @@ Cloudwatch Logs log stream. The following information is logged:
 
 - Client connection termination time
 
-Type: [ConnectionLogOptions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ConnectionLogOptions.html) object
+Type: [ConnectionLogOptions](api-connectionlogoptions.md) object
 
 Required: Yes
 
@@ -175,7 +175,7 @@ Indicates whether split-tunnel is enabled on the AWS Client VPN endpoint.
 
 By default, split-tunnel on a VPN endpoint is disabled.
 
-For information about split-tunnel VPN endpoints, see [Split-tunnel AWS Client VPN endpoint](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/split-tunnel-vpn.html) in the
+For information about split-tunnel VPN endpoints, see [Split-tunnel AWS Client VPN endpoint](../../../../services/vpn/latest/clientvpn-admin/split-tunnel-vpn.md) in the
 _AWS Client VPN Administrator Guide_.
 
 Type: Boolean
@@ -258,7 +258,7 @@ Type: String
 
 The current state of the Client VPN endpoint.
 
-Type: [ClientVpnEndpointStatus](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientVpnEndpointStatus.html) object
+Type: [ClientVpnEndpointStatus](api-clientvpnendpointstatus.md) object
 
 ## Errors
 
@@ -306,23 +306,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateClientVpnEndpoint)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateClientVpnEndpoint)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createclientvpnendpoint.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateClientVpnEndpoint)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createclientvpnendpoint.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateClientVpnEndpoint)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createclientvpnendpoint.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateClientVpnEndpoint)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createclientvpnendpoint.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateClientVpnEndpoint)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createclientvpnendpoint.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateClientVpnEndpoint)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createclientvpnendpoint.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateClientVpnEndpoint)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateClientVpnEndpoint)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createclientvpnendpoint.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateCarrierGateway
 

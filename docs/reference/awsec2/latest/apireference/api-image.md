@@ -237,7 +237,7 @@ Required: No
 
 The platform details associated with the billing code of the AMI. For more information,
 see [Understand\
-AMI billing information](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-billing-info.html) in the _Amazon EC2 User Guide_.
+AMI billing information](../../../../services/ec2/latest/userguide/ami-billing-info.md) in the _Amazon EC2 User Guide_.
 
 Type: String
 
@@ -247,7 +247,7 @@ Required: No
 
 Any product codes associated with the AMI.
 
-Type: Array of [ProductCode](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ProductCode.html) objects
+Type: Array of [ProductCode](api-productcode.md) objects
 
 Required: No
 
@@ -282,10 +282,10 @@ Required: No
 
 The ID of the source AMI from which the AMI was created.
 
-The ID only appears if the AMI was created using [CreateImage](api-createimage.md), [CopyImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CopyImage.html), or [CreateRestoreImageTask](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateRestoreImageTask.html). The ID does not appear
+The ID only appears if the AMI was created using [CreateImage](api-createimage.md), [CopyImage](api-copyimage.md), or [CreateRestoreImageTask](api-createrestoreimagetask.md). The ID does not appear
 if the AMI was created using any other API. For some older AMIs, the ID might not be
 available. For more information, see [Identify the\
-source AMI used to create a new Amazon EC2 AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/identify-source-ami-used-to-create-new-ami.html) in the
+source AMI used to create a new Amazon EC2 AMI](../../../../services/ec2/latest/userguide/identify-source-ami-used-to-create-new-ami.md) in the
 _Amazon EC2 User Guide_.
 
 Type: String
@@ -296,10 +296,10 @@ Required: No
 
 The Region of the source AMI.
 
-The Region only appears if the AMI was created using [CreateImage](api-createimage.md), [CopyImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CopyImage.html), or [CreateRestoreImageTask](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateRestoreImageTask.html). The Region does not
+The Region only appears if the AMI was created using [CreateImage](api-createimage.md), [CopyImage](api-copyimage.md), or [CreateRestoreImageTask](api-createrestoreimagetask.md). The Region does not
 appear if the AMI was created using any other API. For some older AMIs, the Region might not
 be available. For more information, see [Identify the\
-source AMI used to create a new Amazon EC2 AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/identify-source-ami-used-to-create-new-ami.html) in the
+source AMI used to create a new Amazon EC2 AMI](../../../../services/ec2/latest/userguide/identify-source-ami-used-to-create-new-ami.md) in the
 _Amazon EC2 User Guide_.
 
 Type: String
@@ -328,7 +328,7 @@ Required: No
 
 The reason for the state change.
 
-Type: [StateReason](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StateReason.html) object
+Type: [StateReason](api-statereason.md) object
 
 Required: No
 
@@ -343,7 +343,7 @@ Required: No
 **tpmSupport**
 
 If the image is configured for NitroTPM support, the value is `v2.0`. For more
-information, see [NitroTPM](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nitrotpm.html) in the _Amazon EC2 User Guide_.
+information, see [NitroTPM](../../../../services/ec2/latest/userguide/nitrotpm.md) in the _Amazon EC2 User Guide_.
 
 Type: String
 
@@ -354,10 +354,10 @@ Required: No
 **usageOperation**
 
 The operation of the Amazon EC2 instance and the billing code that is associated with the AMI.
-`usageOperation` corresponds to the [lineitem/Operation](https://docs.aws.amazon.com/cur/latest/userguide/Lineitem-columns.html#Lineitem-details-O-Operation) column on your AWS Cost and Usage Report and in the [AWS Price\
+`usageOperation` corresponds to the [lineitem/Operation](../../../../services/cur/latest/userguide/lineitem-columns.md#Lineitem-details-O-Operation) column on your AWS Cost and Usage Report and in the [AWS Price\
 List API](../../../../services/awsaccountbilling/latest/aboutv2/price-changes.md). You can view these fields on the **Instances** or **AMIs** pages in the Amazon EC2 console,
 or in the responses that are returned by the [DescribeImages](api-describeimages.md) command in
-the Amazon EC2 API, or the [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command in the
+the Amazon EC2 API, or the [describe-images](../../../../services/cli/latest/reference/ec2/describe-images.md) command in the
 AWS CLI.
 
 Type: String
@@ -378,13 +378,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/Image)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/image.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/Image)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/image.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/Image)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/image.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 IKEVersionsRequestListValue
 

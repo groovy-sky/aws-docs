@@ -22,7 +22,7 @@ management account or delegated administrators for the organization.
 - An S3 bucket must be available before generating the report (you can create a
 new one or use an existing one), it must be in the same Region where the report
 generation request is made, and it must have an appropriate bucket policy. For a
-sample S3 policy, see _Sample Amazon S3 policy_ under [Examples](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StartDeclarativePoliciesReport.html#API_StartDeclarativePoliciesReport_Examples).
+sample S3 policy, see _Sample Amazon S3 policy_ under [Examples](api-startdeclarativepoliciesreport.md#API_StartDeclarativePoliciesReport_Examples).
 
 - Trusted access must be enabled for the service for which the declarative
 policy will enforce a baseline configuration. If you use the AWS Organizations
@@ -30,14 +30,14 @@ console, this is done automatically when you enable declarative policies. The
 API uses the following service principal to identify the EC2 service:
 `ec2.amazonaws.com`. For more information on how to enable
 trusted access with the AWS CLI and AWS SDKs, see [Using\
-Organizations with other AWS services](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html) in the
+Organizations with other AWS services](../../../../services/organizations/latest/userguide/orgs-integrate-services.md) in the
 _AWS Organizations User Guide_.
 
 - Only one report per organization can be generated at a time. Attempting to
 generate a report while another is in progress will result in an error.
 
 For more information, including the required IAM permissions to run this API, see
-[Generating the account status report for declarative policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_declarative_status-report.html) in the
+[Generating the account status report for declarative policies](../../../../services/organizations/latest/userguide/orgs-manage-policies-declarative-status-report.md) in the
 _AWS Organizations User Guide_.
 
 ## Request Parameters
@@ -124,7 +124,7 @@ principal access to the Amazon S3 bucket where the report will be stored. To do
 this, attach the following policy to the bucket. Remember to replace
 _amzn-s3-demo-bucket_ in the policy with your actual S3
 bucket name, and _identity\_ARN_ with the [IAM\
-identity](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns) used to call the
+identity](../../../../services/iam/latest/userguide/reference-identifiers.md#identifiers-arns) used to call the
 `StartDeclarativePoliciesReport` API. The statement in the
 `Condition` element ensures that the service can call the
 operation on your behalf using the credentials used to call the
@@ -161,23 +161,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/StartDeclarativePoliciesReport)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/StartDeclarativePoliciesReport)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/startdeclarativepoliciesreport.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/StartDeclarativePoliciesReport)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/startdeclarativepoliciesreport.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/StartDeclarativePoliciesReport)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/startdeclarativepoliciesreport.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/StartDeclarativePoliciesReport)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/startdeclarativepoliciesreport.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/StartDeclarativePoliciesReport)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/startdeclarativepoliciesreport.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/StartDeclarativePoliciesReport)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/startdeclarativepoliciesreport.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/StartDeclarativePoliciesReport)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/StartDeclarativePoliciesReport)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/startdeclarativepoliciesreport.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 SendDiagnosticInterrupt
 

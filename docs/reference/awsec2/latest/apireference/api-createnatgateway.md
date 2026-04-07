@@ -12,7 +12,7 @@ networks through a transit gateway or virtual private gateway. Common use cases 
 running large workloads behind a small pool of allowlisted IPv4 addresses, preserving
 private IPv4 addresses, and communicating between overlapping networks.
 
-For more information, see [NAT gateways](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html) in the _Amazon VPC User Guide_.
+For more information, see [NAT gateways](../../../../services/vpc/latest/userguide/vpc-nat-gateway.md) in the _Amazon VPC User Guide_.
 
 ###### Important
 
@@ -21,7 +21,7 @@ the network border group of the EIPs must match the network border group of the 
 that the public NAT gateway is in. If it's not the same, the NAT gateway will fail to launch.
 You can see the network border group for the subnet's AZ by viewing the details of the subnet.
 Similarly, you can view the network border group of an EIP by viewing the details of the EIP address.
-For more information about network border groups and EIPs, see [Allocate an Elastic IP address](https://docs.aws.amazon.com/vpc/latest/userguide/WorkWithEIPs.html)
+For more information about network border groups and EIPs, see [Allocate an Elastic IP address](../../../../services/vpc/latest/userguide/workwitheips.md)
 in the _Amazon VPC User Guide_.
 
 ## Request Parameters
@@ -44,7 +44,7 @@ Specifies whether to create a zonal (single-AZ) or regional (multi-AZ) NAT gatew
 
 A zonal NAT gateway is a NAT Gateway that provides redundancy and scalability within a single availability zone. A regional NAT gateway is a single NAT Gateway that works across multiple availability zones (AZs) in your VPC, providing redundancy, scalability and availability across all the AZs in a Region.
 
-For more information, see [Regional NAT gateways for automatic multi-AZ expansion](https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html) in the _Amazon VPC User Guide_.
+For more information, see [Regional NAT gateways for automatic multi-AZ expansion](../../../../services/vpc/latest/userguide/nat-gateways-regional.md) in the _Amazon VPC User Guide_.
 
 Type: String
 
@@ -58,16 +58,16 @@ For regional NAT gateways only: Specifies which Availability Zones you want the 
 
 A regional NAT gateway is a single NAT Gateway that works across multiple availability zones (AZs) in your VPC, providing redundancy, scalability and availability across all the AZs in a Region.
 
-For more information, see [Regional NAT gateways for automatic multi-AZ expansion](https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html) in the _Amazon VPC User Guide_.
+For more information, see [Regional NAT gateways for automatic multi-AZ expansion](../../../../services/vpc/latest/userguide/nat-gateways-regional.md) in the _Amazon VPC User Guide_.
 
-Type: Array of [AvailabilityZoneAddress](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AvailabilityZoneAddress.html) objects
+Type: Array of [AvailabilityZoneAddress](api-availabilityzoneaddress.md) objects
 
 Required: No
 
 **ClientToken**
 
 Unique, case-sensitive identifier that you provide to ensure the idempotency of the
-request. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html).
+request. For more information, see [Ensuring idempotency](../../../../services/ec2/latest/devguide/ec2-api-idempotency.md).
 
 Constraint: Maximum 64 ASCII characters.
 
@@ -106,7 +106,7 @@ Required: No
 
 **SecondaryAllocationId.N**
 
-Secondary EIP allocation IDs. For more information, see [Create a NAT gateway](https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateway-working-with.html)
+Secondary EIP allocation IDs. For more information, see [Create a NAT gateway](../../../../services/vpc/latest/userguide/nat-gateway-working-with.md)
 in the _Amazon VPC User Guide_.
 
 Type: Array of strings
@@ -116,7 +116,7 @@ Required: No
 **SecondaryPrivateIpAddress.N**
 
 Secondary private IPv4 addresses. For more information about secondary addresses, see
-[Create a NAT gateway](https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateway-working-with.html) in the _Amazon VPC User Guide_.
+[Create a NAT gateway](../../../../services/vpc/latest/userguide/nat-gateway-working-with.md) in the _Amazon VPC User Guide_.
 
 Type: Array of strings
 
@@ -125,7 +125,7 @@ Required: No
 **SecondaryPrivateIpAddressCount**
 
 \[Private NAT gateway only\] The number of secondary private IPv4 addresses you want to assign to the NAT gateway.
-For more information about secondary addresses, see [Create a NAT gateway](https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateway-working-with.html)
+For more information about secondary addresses, see [Create a NAT gateway](../../../../services/vpc/latest/userguide/nat-gateway-working-with.md)
 in the _Amazon VPC User Guide_.
 
 Type: Integer
@@ -172,7 +172,7 @@ Type: String
 
 Information about the NAT gateway.
 
-Type: [NatGateway](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NatGateway.html) object
+Type: [NatGateway](api-natgateway.md) object
 
 **requestId**
 
@@ -271,23 +271,23 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateNatGateway)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateNatGateway)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createnatgateway.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateNatGateway)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createnatgateway.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateNatGateway)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createnatgateway.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateNatGateway)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createnatgateway.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateNatGateway)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createnatgateway.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateNatGateway)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createnatgateway.md)
 
 - [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateNatGateway)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateNatGateway)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createnatgateway.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateManagedPrefixList
 
