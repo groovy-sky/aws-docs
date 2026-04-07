@@ -1,0 +1,72 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::CloudFormation::StackSet Tag
+
+The Tag type enables you to specify a key-value pair that can be used to store information
+about an CloudFormation stack.
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "Key" : String,
+  "Value" : String
+}
+
+```
+
+### YAML
+
+```yaml
+
+  Key: String
+  Value: String
+
+```
+
+## Properties
+
+`Key`
+
+A string used to identify this tag. You can specify a maximum of 128 characters for a tag
+key. Tags owned by AWS have the reserved prefix: `aws:`.
+
+_Required_: Yes
+
+_Type_: String
+
+_Pattern_: `^(?!aws:.*)[a-zA-Z0-9\s\:\_\.\/\=\+\-]+$`
+
+_Minimum_: `1`
+
+_Maximum_: `128`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`Value`
+
+A string that contains the value for this tag. You can specify a maximum of 256 characters
+for a tag value.
+
+_Required_: Yes
+
+_Type_: String
+
+_Minimum_: `1`
+
+_Maximum_: `256`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+StackInstances
+
+AWS::CloudFormation::TypeActivation

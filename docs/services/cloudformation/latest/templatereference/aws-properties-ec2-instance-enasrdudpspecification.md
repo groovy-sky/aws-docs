@@ -1,0 +1,52 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::EC2::Instance EnaSrdUdpSpecification
+
+ENA Express is compatible with both TCP and UDP transport protocols. When it's enabled, TCP traffic
+automatically uses it. However, some UDP-based applications are designed to handle network packets that are
+out of order, without a need for retransmission, such as live video broadcasting or other near-real-time
+applications. For UDP traffic, you can specify whether to use ENA Express, based on your application
+environment needs.
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "EnaSrdUdpEnabled" : Boolean
+}
+
+```
+
+### YAML
+
+```yaml
+
+  EnaSrdUdpEnabled: Boolean
+
+```
+
+## Properties
+
+`EnaSrdUdpEnabled`
+
+Indicates whether UDP traffic to and from the instance uses ENA Express. To specify this setting,
+you must first enable ENA Express.
+
+_Required_: No
+
+_Type_: Boolean
+
+_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+EnaSrdSpecification
+
+EnclaveOptions

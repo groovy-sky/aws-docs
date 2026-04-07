@@ -42,7 +42,7 @@ The input parameter values to use with the associated SSM document.
 
 _Required_: No
 
-_Type_: Array of [AssociationParameter](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-ec2-instance-associationparameter.html)
+_Type_: Array of [AssociationParameter](aws-properties-ec2-instance-associationparameter.md)
 
 _Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
 

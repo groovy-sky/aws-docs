@@ -1,0 +1,74 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::CE::AnomalyMonitor ResourceTag
+
+The tag structure that contains a tag key and value.
+
+###### Note
+
+Tagging is supported only for the following Cost Explorer resource types:
+[`AnomalyMonitor`](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AnomalyMonitor.html), [`AnomalySubscription`](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AnomalySubscription.html), [`CostCategory`](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_CostCategory.html).
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "Key" : String,
+  "Value" : String
+}
+
+```
+
+### YAML
+
+```yaml
+
+  Key: String
+  Value: String
+
+```
+
+## Properties
+
+`Key`
+
+The key that's associated with the tag.
+
+_Required_: Yes
+
+_Type_: String
+
+_Pattern_: `^(?!aws:).*$`
+
+_Minimum_: `1`
+
+_Maximum_: `128`
+
+_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+
+`Value`
+
+The value that's associated with the tag.
+
+_Required_: Yes
+
+_Type_: String
+
+_Minimum_: `0`
+
+_Maximum_: `256`
+
+_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+AWS::CE::AnomalyMonitor
+
+AWS::CE::AnomalySubscription

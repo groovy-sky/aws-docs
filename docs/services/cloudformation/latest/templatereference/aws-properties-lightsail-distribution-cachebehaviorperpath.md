@@ -1,0 +1,108 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::Lightsail::Distribution CacheBehaviorPerPath
+
+`CacheBehaviorPerPath` is a property of the [AWS::Lightsail::Distribution](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-distribution.html) resource. It describes the per-path cache behavior
+of an Amazon Lightsail content delivery network (CDN) distribution.
+
+Use a per-path cache behavior to override the default cache behavior of a distribution,
+or to add an exception to it. For example, if you set the `CacheBehavior` to
+`cache`, you can use a per-path cache behavior to specify a directory,
+file, or file type that your distribution will cache. If you don’t want your distribution
+to cache a specified directory, file, or file type, set the per-path cache behavior to
+`dont-cache`.
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "Behavior" : String,
+  "Path" : String
+}
+
+```
+
+### YAML
+
+```yaml
+
+  Behavior: String
+  Path: String
+
+```
+
+## Properties
+
+`Behavior`
+
+The cache behavior for the specified path.
+
+You can specify one of the following per-path cache behaviors:
+
+- **`cache`** \- This behavior caches the specified path.
+
+- **`dont-cache`** \- This behavior doesn't cache the specified path.
+
+_Required_: No
+
+_Type_: String
+
+_Allowed values_: `dont-cache | cache`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`Path`
+
+The path to a directory or file to cache, or not cache. Use an asterisk symbol to
+specify wildcard directories ( `path/to/assets/*`), and file types ( `*.html`,
+`*jpg`, `*js`). Directories and file paths are case-sensitive.
+
+Examples:
+
+- Specify the following to cache all files in the document root of an Apache web
+server running on a instance.
+
+`var/www/html/`
+
+- Specify the following file to cache only the index page in the document root of an
+Apache web server.
+
+`var/www/html/index.html`
+
+- Specify the following to cache only the .html files in the document root of an
+Apache web server.
+
+`var/www/html/*.html`
+
+- Specify the following to cache only the .jpg, .png, and .gif files in the images
+sub-directory of the document root of an Apache web server.
+
+`var/www/html/images/*.jpg`
+
+`var/www/html/images/*.png`
+
+`var/www/html/images/*.gif`
+
+Specify the following to cache all files in the images subdirectory of the
+document root of an Apache web server.
+
+`var/www/html/images/`
+
+_Required_: No
+
+_Type_: String
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+CacheBehavior
+
+CacheSettings

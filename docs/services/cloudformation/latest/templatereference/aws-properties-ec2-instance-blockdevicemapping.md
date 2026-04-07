@@ -49,7 +49,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `DeviceName`
 
-The device name. For available device names, see [Device names for volumes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/device_naming.html).
+The device name. For available device names, see [Device names for volumes](../../../ec2/latest/userguide/device-naming.md).
 
 ###### Important
 
@@ -75,7 +75,7 @@ interrupting the instance. Modifying any other parameter results in instance [re
 
 _Required_: Conditional
 
-_Type_: [Ebs](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-ec2-instance-ebs.html)
+_Type_: [Ebs](aws-properties-ec2-instance-ebs.md)
 
 _Update requires_: [Some interruptions](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-some-interrupt)
 

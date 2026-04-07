@@ -1,0 +1,83 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::ApiGateway::RestApi EndpointConfiguration
+
+The `EndpointConfiguration` property type specifies the endpoint types and IP address types of a REST API.
+
+`EndpointConfiguration` is a property of the [AWS::ApiGateway::RestApi](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html) resource.
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "IpAddressType" : String,
+  "Types" : [ String, ... ],
+  "VpcEndpointIds" : [ String, ... ]
+}
+
+```
+
+### YAML
+
+```yaml
+
+  IpAddressType: String
+  Types:
+    - String
+  VpcEndpointIds:
+    - String
+
+```
+
+## Properties
+
+`IpAddressType`
+
+The IP address types that can invoke an API (RestApi). Use `ipv4` to allow only IPv4 addresses to
+invoke an API, or use `dualstack` to allow both IPv4 and IPv6 addresses to invoke an API. For the
+`PRIVATE` endpoint type, only `dualstack` is supported.
+
+_Required_: No
+
+_Type_: String
+
+_Allowed values_: `ipv4 | dualstack`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`Types`
+
+A list of endpoint types of an API (RestApi) or its custom domain name (DomainName). For an edge-optimized API and its custom domain name, the endpoint type is `"EDGE"`. For a regional API and its custom domain name, the endpoint type is `REGIONAL`. For a private API, the endpoint type is `PRIVATE`.
+
+_Required_: No
+
+_Type_: Array of String
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`VpcEndpointIds`
+
+A list of VpcEndpointIds of an API (RestApi) against which to create Route53 ALIASes. It is only supported for `PRIVATE` endpoint type.
+
+_Required_: No
+
+_Type_: Array of String
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+## See also
+
+- [RestApi](../../../apigateway/latest/api/api-restapi.md) in the _Amazon API Gateway REST API Reference_
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+AWS::ApiGateway::RestApi
+
+S3Location
