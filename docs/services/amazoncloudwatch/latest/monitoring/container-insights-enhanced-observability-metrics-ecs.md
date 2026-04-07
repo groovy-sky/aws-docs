@@ -1,0 +1,913 @@
+# Amazon ECS Container Insights with enhanced observability metrics
+
+Container Insights with enhanced observability provides deeper visibility into containerized workloads by offering:
+
+- Higher metrics granularity at both task and container levels
+
+- Improved monitoring and troubleshooting capabilities
+
+- Integration with CloudWatch Logs for:
+
+- Correlating metrics anomalies with log entries
+
+- Performing faster root cause analysis
+
+- Reducing resolution time for complex container issues
+
+**Use cases**
+
+Container Insights with enhanced observability extends the capabilities of standard Container Insights. It enables the following use cases:
+
+- **Task-level troubleshooting** – Identify performance bottlenecks at the task level. Analyze task-level metrics and compare them with reserved resources to determine if tasks have sufficient processing capacity
+
+- **Container-level resource optimization** – Track utilization against reservation levels to identify containers that are either resource-constrained or over-provisioned
+
+- **Container health assessment** – Monitor restart counts and state transitions to detect unstable containers requiring intervention
+
+- **Application performance monitoring** – Track how applications communicate with each other, monitor resource usage patterns, and optimize data storage performance
+
+- **Operational monitoring** – Monitor deployments, track task sets for blue or green deployments, and maintain platform health through service metrics
+
+For more information on Amazon ECS metrics, see [Amazon ECS service utilization metrics use cases](../../../amazonecs/latest/developerguide/service-utilization-metrics-explanation.md) and for information on container insights with enhanced observability
+[Amazon ECS Container Insights with enhanced observability metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Container-Insights-enhanced-observability-metrics-ECS.html).
+
+Container Insights also shows cluster, service, and daemon-wide statistics by
+averaging data across all tasks. This provides a higher-level view of your service and
+daemon health, assisting in both environment monitoring and capacity planning.
+
+###### Note
+
+Amazon ECS Managed Daemon metrics use the same `ECS/ContainerInsights` namespace and
+the same `ServiceName` dimension as service metrics. For daemon metrics, the
+`ServiceName` dimension value uses the format
+`daemon:daemon-name`. For example, a daemon named
+`my-daemon` has a `ServiceName` dimension value of
+`daemon:my-daemon`. All metrics in the table below that include the
+`ServiceName` dimension also apply to Managed Daemons.
+
+The following table lists the metrics and dimensions that Container Insights with
+enhanced observability collects for Amazon ECS. These metrics are in the
+`ECS/ContainerInsights` namespace. For more information, see [Metrics](cloudwatch-concepts.md#Metric).
+
+If you do not see any Container Insights metrics in your console, be sure that you have
+completed the setup of Container Insights with enhanced observability. Metrics do not appear
+before Container Insights with enhanced observability has been set up completely. For more
+information, see [Set up Container Insights with enhanced observability](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/deploy-container-insights-ECS-cluster.html#set-container-insights-ECS-cluster-enhanced).
+
+The following metrics are available for all launch types.
+
+Metric nameDimensionsDescription
+
+`ContainerInstanceCount`
+
+`ClusterName`
+
+The number of EC2 instances running the Amazon ECS agent that are registered with a
+cluster.
+
+This metric is collected only for container instances that are running Amazon ECS
+tasks in the cluster. It is not collected for empty container instances that do
+not have any Amazon ECS tasks.
+
+Unit: Count
+
+`ContainerCpuUtilized`
+
+`ClusterName`
+
+`ContainerName`, `TaskId`, `ServiceName`,
+`ClusterName`
+
+`ContainerName`, `TaskDefinitionFamily`,
+`ClusterName`, `TaskId`
+
+`TaskDefinitionFamily`, `ClusterName`,
+`ContainerName`
+
+`ServiceName`, `ClusterName`,
+`ContainerName`
+
+The CPU units used by containers in the resource that is specified by the
+dimension set that you're using.
+
+Also applies to Managed Daemons.
+
+Unit: None
+
+`ContainerCpuReserved`
+
+`ClusterName`
+
+`ContainerName`, `TaskId`, `ServiceName`,
+`ClusterName`
+
+`ContainerName`, `TaskDefinitionFamily`,
+`ClusterName`, `TaskId`
+
+`TaskDefinitionFamily`, `ClusterName`,
+`ContainerName`
+
+`ServiceName`, `ClusterName`,
+`ContainerName`
+
+The CPU units reserved by containers in the resource that is specified by the
+dimension set that you're using. This metric is collected based on the CPU
+reservation defined in the task definition, for example, at the task or all
+containers level. If this is not specified in the task definition, then the
+instance CPU reservation is used.
+
+Also applies to Managed Daemons.
+
+Unit: None
+
+`ContainerCpuUtilization`
+
+`TaskDefinitionFamily`, `ClusterName`
+
+`ServiceName`, `ClusterName`
+
+`ClusterName`
+
+`ClusterName`, `ServiceName`, `TaskId`
+
+`ClusterName`, `TaskDefinitionFamily`,
+`TaskId`
+
+The total percentage of CPU units being used by containers in the resource that
+is specified by the dimension set that you're using.
+
+Unit: Percent
+
+`ContainerMemoryUtilized`
+
+`ClusterName`
+
+`ContainerName`, `TaskId`, `ServiceName`,
+`ClusterName`
+
+`ContainerName`, `TaskDefinitionFamily`,
+`ClusterName`, `TaskId`
+
+`TaskDefinitionFamily`, `ClusterName`,
+`ContainerName`
+
+`ServiceName`, `ClusterName`,
+`ContainerName`
+
+The memory being used by containers in the resource that is specified by the
+dimension set that you're using.
+
+Also applies to Managed Daemons.
+
+Unit: Megabytes
+
+`ContainerMemoryReserved`
+
+`ClusterName`
+
+`ContainerName`, `TaskId`, `ServiceName`,
+`ClusterName`
+
+`ContainerName`, `TaskDefinitionFamily`,
+`ClusterName`, `TaskId`
+
+`TaskDefinitionFamily`, `ClusterName`,
+`ContainerName`
+
+`ServiceName`, `ClusterName`,
+`ContainerName`
+
+The memory that is reserved by containers in the resource that is specified by
+the dimension set that you're using.
+
+This metric is collected based on the memory reservation defined in the task
+definition, for example, at the task or all containers level. If this is not
+specified in the task definition, then the instance memory reservation is
+used.
+
+Also applies to Managed Daemons.
+
+Unit: Megabytes
+
+`ContainerMemoryUtilization`
+
+`ClusterName`
+
+`ContainerName`, `TaskId`, `ServiceName`,
+`ClusterName`
+
+`ContainerName`, `TaskDefinitionFamily`,
+`ClusterName`, `TaskId`
+
+`TaskDefinitionFamily`, `ClusterName`,
+`ContainerName`
+
+`ServiceName`, `ClusterName`,
+`ContainerName`
+
+The total percentage of memory being used by containers in the resource that is
+specified by the dimension set that you're using.
+
+Also applies to Managed Daemons.
+
+Unit: Percent
+
+`ContainerNetworkRxBytes`
+
+`TaskDefinitionFamily`, `ClusterName`
+
+`ServiceName`, `ClusterName`
+
+`ClusterName`
+
+`ClusterName`, `ServiceName`, `TaskId`
+
+`ClusterName`, `TaskDefinitionFamily`,
+`TaskId`
+
+The number of bytes received by the container that is specified by the
+dimensions that you're using. This metric is obtained from the Docker
+runtime.
+
+This metric is available only for containers in tasks using the
+`awsvpc` or `bridge` network modes.
+
+Also applies to Managed Daemons.
+
+Unit: Bytes/Second
+
+`ContainerNetworkTxBytes`
+
+`TaskDefinitionFamily`, `ClusterName`
+
+`ServiceName`, `ClusterName`
+
+`ClusterName`
+
+`ClusterName`, `ServiceName`, `TaskId`
+
+`ClusterName`, `TaskDefinitionFamily`,
+`TaskId`
+
+The number of bytes transmitted by the container that is specified by the
+dimensions that you're using. This metric is obtained from the Docker
+runtime.
+
+This metric is available only for containers in tasks using the
+`awsvpc` or `bridge` network modes.
+
+Also applies to Managed Daemons.
+
+Unit: Bytes/Second
+
+`ContainerStorageReadBytes`
+
+`ClusterName`
+
+`ClusterName`, `ServiceName`, `ContainerName`
+
+`ClusterName`, `TaskDefinitionFamily`, `ContainerName`
+
+`ClusterName`, `ServiceName`, `TaskId`, `ContainerName`
+
+`ClusterName`, `TaskDefinitionFamily`, `TaskId`, `ContainerName`
+
+The number of bytes read from storage on the container in the resource that is
+specified by the dimensions that you're using. This does not include read bytes
+for your storage devices. This metric is obtained from the Docker runtime.
+
+Also applies to Managed Daemons.
+
+Unit: Bytes
+
+`ContainerStorageWriteBytes`
+
+`ClusterName`
+
+`ClusterName`, `ServiceName`,
+`ContainerName`
+
+`ClusterName`, `TaskDefinitionFamily`,
+`ContainerName`
+
+`ClusterName`, `ServiceName`, `TaskId`,
+`ContainerName`
+
+`ClusterName`, `TaskDefinitionFamily`,
+`TaskId`, `ContainerName`
+
+The number of bytes written to storage in the container that is specified by
+the dimensions that you're using. This metric is obtained from the Docker
+runtime.
+
+Also applies to Managed Daemons.
+
+Unit: Bytes
+
+`CpuUtilized`
+
+`TaskDefinitionFamily`, `ClusterName`
+
+`ServiceName`, `ClusterName`
+
+`ClusterName`
+
+`ClusterName`, `ServiceName`, `TaskId`
+
+`ClusterName`, `TaskDefinitionFamily`,
+`TaskId`
+
+The CPU units used by tasks in the resource that is specified by the dimension
+set that you're using.
+
+Also applies to Managed Daemons.
+
+Unit: None
+
+`CpuReserved`
+
+`TaskDefinitionFamily`, `ClusterName`
+
+`ServiceName`, `ClusterName`
+
+`ClusterName`
+
+`ClusterName`, `ServiceName`, `TaskId`
+
+`ClusterName`, `TaskDefinitionFamily`,
+`TaskId`
+
+The CPU units reserved by tasks in the resource that is specified by the
+dimension set that you're using. This metric is collected based on the CPU
+reservation defined in the task definition, for example, at the task or all
+containers level. If this is not specified in the task definition, then the
+instance CPU reservation is used.
+
+Also applies to Managed Daemons.
+
+Unit: None
+
+`DeploymentCount`
+
+`ServiceName`, `ClusterName`
+
+The number of deployments in an Amazon ECS service.
+
+Unit: Count
+
+`DesiredTaskCount`
+
+`ServiceName`, `ClusterName`
+
+The desired number of tasks for an Amazon ECS service.
+
+Unit: Count
+
+`EBSFilesystemSize`
+
+`ClusterName` , `TaskDefinitionFamily`,
+`VolumeName`
+
+`TaskDefinitionFamily`, `ClusterName`
+
+`ServiceName`, `ClusterName`
+
+The total amount, in gigabytes (GB), of Amazon EBS filesystem storage that is
+allocated to the resources specified by the dimensions you're using.
+
+This metric is only available for tasks that run on Amazon ECS infrastructure
+running on Fargate using platform version `1.4.0` or Amazon EC2 instances
+using container agent version `1.79.0` or later.
+
+Also applies to Managed Daemons.
+
+Unit: Gigabytes (GB)
+
+`EBSFilesystemUtilized`
+
+`ClusterName` , `TaskDefinitionFamily`,
+`VolumeName`
+
+`TaskDefinitionFamily`, `ClusterName`
+
+`ServiceName`, `ClusterName`
+
+The total amount, in gigabytes (GB), of Amazon EBS filesystem storage that is being
+used by the resources specified by the dimensions that you're using.
+
+This metric is only available for tasks that run on Amazon ECS infrastructure
+running on Fargate using platform version `1.4.0` or Amazon EC2 instances
+using container agent version `1.79.0` or later.
+
+For tasks run on Fargate, Fargate reserves space on the disk that is only
+used by Fargate. There is no cost associated with the space Fargate uses, but
+you will see this additional storage using tools like `df`.
+
+Also applies to Managed Daemons.
+
+Unit: Gigabytes (GB)
+
+`TaskEBSFilesystemUtilization`
+
+`TaskDefinitionFamily`, `ClusterName`
+
+`ClusterName`, `ServiceName`
+
+`ClusterName`
+
+`ClusterName`, `ServiceName`, `TaskId`
+
+`TaskDefinitionFamily`, `ClusterName`, `TaskId`
+
+The percentage of Amazon EBS filesystem storage that is being used by the task specified by the dimensions that you're using.
+
+This metric is only available for tasks that run on Amazon ECS infrastructure
+running on Fargate using platform version `1.4.0` or Amazon EC2 instances
+using container agent version `1.79.0` or later.
+
+Also applies to Managed Daemons.
+
+Unit: Percent
+
+`EphemeralStorageReserved` [1](#ci-enhanced-metrics-ecs-storage-fargate-note)
+
+`TaskDefinitionFamily`, `ClusterName`
+
+`ServiceName`, `ClusterName`
+
+`ClusterName`
+
+`ClusterName`, `ServiceName`, `TaskId`
+
+`ClusterName`, `TaskDefinitionFamily`,
+`TaskId`
+
+The number of bytes reserved from ephemeral storage in the resource that is
+specified by the dimensions that you're using. Ephemeral storage is used for the
+container root filesystem and any bind mount host volumes defined in the container
+image and task definition. The amount of ephemeral storage can’t be changed in a
+running task.
+
+This metric is only available for tasks that run on Fargate Linux platform
+version 1.4.0 or later.
+
+Also applies to Managed Daemons.
+
+Unit: Gigabytes (GB)
+
+`EphemeralStorageUtilized` [1](container-insights-metrics-ecs.md#ci-metrics-ecs-storage-fargate-note)
+
+`ClusterName`
+
+`ClusterName`, `TaskDefinitionFamily`
+
+`ClusterName`, `ServiceName`
+
+`ClusterName`, `ServiceName`, `TaskId`
+
+`ClusterName`, `TaskDefinitionFamily`, `TaskId`
+
+The number of bytes used from ephemeral storage in the resource that is
+specified by the dimensions that you're using. Ephemeral storage is used for the
+container root filesystem and any bind mount host volumes defined in the container
+image and task definition. The amount of ephemeral storage can’t be changed in a
+running task.
+
+This metric is only available for tasks that run on Fargate Linux platform
+version 1.4.0 or later.
+
+Also applies to Managed Daemons.
+
+Unit: Gigabytes (GB)
+
+`MemoryUtilized`
+
+`TaskDefinitionFamily`, `ClusterName`
+
+`ServiceName`, `ClusterName`
+
+`ClusterName`
+
+`ClusterName`, `ServiceName`, `TaskId`
+
+`ClusterName`, `TaskDefinitionFamily`,
+`TaskId`
+
+The memory being used by tasks in the resource that is specified by the
+dimension set that you're using.
+
+Also applies to Managed Daemons.
+
+Unit: Megabytes
+
+`MemoryReserved`
+
+`TaskDefinitionFamily`, `ClusterName`
+
+`ServiceName`, `ClusterName`
+
+`ClusterName`
+
+`ClusterName`, `ServiceName`, `TaskId`
+
+`ClusterName`, `TaskDefinitionFamily`,
+`TaskId`
+
+The memory that is reserved by tasks in the resource that is specified by the
+dimension set that you're using.
+
+This metric is collected based on the memory reservation defined in the task
+definition, for example, at the task or all containers level. If this is not
+specified in the task definition, then the instance memory reservation is
+used.
+
+Also applies to Managed Daemons.
+
+Unit: Megabytes
+
+`NetworkRxBytes`
+
+`TaskDefinitionFamily`, `ClusterName`
+
+`ServiceName`, `ClusterName`
+
+`ClusterName`
+
+`ClusterName`, `ServiceName`, `TaskId`
+
+`ClusterName`, `TaskDefinitionFamily`,
+`TaskId`
+
+The number of bytes received by the resource that is specified by the
+dimensions that you're using. This metric is obtained from the Docker
+runtime.
+
+This metric is available only for containers in tasks using the
+`awsvpc` or `bridge` network modes.
+
+Also applies to Managed Daemons.
+
+Unit: Bytes/Second
+
+`NetworkTxBytes`
+
+`TaskDefinitionFamily`, `ClusterName`
+
+`ServiceName`, `ClusterName`
+
+`ClusterName`
+
+`ClusterName`, `ServiceName`, `TaskId`
+
+`ClusterName`, `TaskDefinitionFamily`,
+`TaskId`
+
+The number of bytes transmitted by the resource that is specified by the
+dimensions that you're using. This metric is obtained from the Docker
+runtime.
+
+This metric is available only for containers in tasks using the
+`awsvpc` or `bridge` network modes.
+
+Also applies to Managed Daemons.
+
+Unit: Bytes/Second
+
+`PendingTaskCount`
+
+`ServiceName`, `ClusterName`
+
+The number of tasks currently in the `PENDING` state.
+
+Unit: Count
+
+`RunningTaskCount`
+
+`ServiceName`, `ClusterName`
+
+The number of tasks currently in the `RUNNING` state.
+
+Unit: Count
+
+`RestartCount`
+
+`ClusterName`
+
+`ClusterName`, `ServiceName`
+
+`ClusterName`, `TaskDefinitionFamily`
+
+`ClusterName`, `ServiceName`, `TaskId`
+
+`ClusterName`, `TaskDefinitionFamily`,
+`TaskId`
+
+`ClusterName`, `ServiceName`, `ContainerName`
+
+`ClusterName`, `ServiceName`, `TaskId`, `ContainerName`
+
+`TaskDefinitionFamily`, `ClusterName`, `ContainerName`
+
+`TaskDefinitionFamily`, `ClusterName`, `TaskId`, `ContainerName`
+
+The number of times a container in an Amazon ECS task has been restarted.
+
+This metric is collected only for containers that have a restart policy
+enabled.
+
+Also applies to Managed Daemons.
+
+Unit: Count
+
+`UnHealthyContainerHealthStatus`
+
+`ClusterName`
+
+`ClusterName`, `ServiceName`, `ContainerName`
+
+`ClusterName`, `TaskDefinitionFamily`, `ContainerName`
+
+`ClusterName`, `ServiceName`, `TaskId`, `ContainerName`
+
+`ClusterName`, `TaskDefinitionFamily`, `TaskId`, `ContainerName`
+
+The number of unhealthy containers based on container health check status. A
+container is considered unhealthy when its health check returns an unhealthy
+status.
+
+This metric is collected only for containers that have a health check
+configured in the task definition.
+
+The metric value is 1 when the container health status is
+`UNHEALTHY`, and 0 when the health status is
+`HEALTHY`.
+
+Unit: Count
+
+`ServiceCount`
+
+`ClusterName`
+
+The number of services in the cluster.
+
+Unit: Count
+
+`StorageReadBytes`
+
+`TaskDefinitionFamily`, `ClusterName`
+
+`ServiceName`, `ClusterName`
+
+`ClusterName`
+
+`ClusterName`, `ServiceName`, `TaskId`
+
+`ClusterName`, `TaskDefinitionFamily`,
+`TaskId`
+
+The number of bytes read from storage on the instance in the resource that is
+specified by the dimensions that you're using. This does not include read bytes
+for your storage devices. This metric is obtained from the Docker runtime.
+
+Also applies to Managed Daemons.
+
+Unit: Bytes
+
+`StorageWriteBytes`
+
+`TaskDefinitionFamily`, `ClusterName`
+
+`ServiceName`, `ClusterName`
+
+`ClusterName`
+
+`ClusterName`, `ServiceName`, `TaskId`
+
+`ClusterName`, `TaskDefinitionFamily`,
+`TaskId`
+
+The number of bytes written to storage in the resource that is specified by
+the dimensions that you're using. This metric is obtained from the Docker
+runtime.
+
+Also applies to Managed Daemons.
+
+Unit: Bytes
+
+`TaskCount`
+
+`ClusterName`
+
+The number of tasks running in the cluster.
+
+Unit: Count
+
+`TaskCpuUtilization`
+
+`TaskDefinitionFamily`, `ClusterName`
+
+`ServiceName`, `ClusterName`
+
+`ClusterName`
+
+`ClusterName`, `ServiceName`, `TaskId`
+
+`ClusterName`, `TaskDefinitionFamily`,
+`TaskId`
+
+The total percentage of CPU units being used by a task.
+
+Also applies to Managed Daemons.
+
+Unit: Percent
+
+`TaskEphemeralStorageUtilization`
+
+`TaskDefinitionFamily`, `ClusterName`
+
+`ServiceName`, `ClusterName`
+
+`ClusterName`
+
+`ClusterName`, `ServiceName`, `TaskId`
+
+`ClusterName`, `TaskDefinitionFamily`,
+`TaskId`
+
+The total percentage of ephemeral storage being used by a task.
+
+Also applies to Managed Daemons.
+
+Unit: Percent
+
+`TaskMemoryUtilization`
+
+`TaskDefinitionFamily`, `ClusterName`
+
+`ServiceName`, `ClusterName`
+
+`ClusterName`
+
+`ClusterName`, `ServiceName`, `TaskId`
+
+`ClusterName`, `TaskDefinitionFamily`,
+`TaskId`
+
+The total percentage of memory being used by a task.
+
+Also applies to Managed Daemons.
+
+Unit: Percent
+
+`TaskSetCount`
+
+`ServiceName`, `ClusterName`
+
+The number of task sets in the service.
+
+Unit: Count
+
+###### Note
+
+The
+`EphemeralStorageReserved` and `EphemeralStorageUtilized` metrics
+are only available for tasks that run on Fargate Linux platform version 1.4.0 or
+later.
+
+Fargate reserves space on disk. It is only used by Fargate. You aren't billed for it.
+It isn't shown in these metrics. However, you can see this additional storage in other
+tools such as `df`.
+
+The following metrics are available when you complete the steps in [Deploying the CloudWatch agent to collect EC2 instance-level metrics on Amazon ECS](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/deploy-container-insights-ECS-instancelevel.html) and use the EC2 launch
+type.
+
+Metric nameDimensionsDescription
+
+`instance_cpu_limit`
+
+`ClusterName`
+
+The maximum number of CPU units that can be assigned to a single EC2 instance
+in the cluster.
+
+Unit: None
+
+`instance_cpu_reserved_capacity`
+
+`ClusterName`
+
+`InstanceId`, `ContainerInstanceId`,
+`ClusterName`
+
+The percentage of CPU currently being reserved on a single EC2 instance in the
+cluster.
+
+Unit: Percent
+
+`instance_cpu_usage_total`
+
+`ClusterName`
+
+The number of CPU units being used on a Single EC2 instance in the
+cluster.
+
+Unit: None
+
+`instance_cpu_utilization`
+
+`ClusterName`
+
+`InstanceId`, `ContainerInstanceId`,
+`ClusterName`
+
+The total percentage of CPU units being used on a single EC2 instance in the
+cluster.
+
+Unit: Percent
+
+`instance_filesystem_utilization`
+
+`ClusterName`
+
+`InstanceId`, `ContainerInstanceId`,
+`ClusterName`
+
+The total percentage of file system capacity being used on a single EC2
+instance in the cluster.
+
+Unit: Percent
+
+`instance_memory_limit`
+
+`ClusterName`
+
+The maximum amount of memory, in bytes, that can be assigned to a single EC2
+instance in this cluster.
+
+Unit: Bytes
+
+`instance_memory_reserved_capacity`
+
+`ClusterName`
+
+`InstanceId`, `ContainerInstanceId`,
+`ClusterName`
+
+The percentage of Memory currently being reserved on a single EC2 instance in
+the cluster.
+
+Unit: Percent
+
+`instance_memory_utilization`
+
+`ClusterName`
+
+`InstanceId`, `ContainerInstanceId`,
+`ClusterName`
+
+The total percentage of memory being used on a single EC2 instance in the
+cluster.
+
+###### Note
+
+If you're using the Java ZGC garbage collector for your application, this
+metric might be inaccurate.
+
+Unit: Percent
+
+`instance_memory_working_set`
+
+`ClusterName`
+
+The amount of memory, in bytes, being used on a single EC2 instance in the
+cluster.
+
+###### Note
+
+If you're using the Java ZGC garbage collector for your application, this
+metric might be inaccurate.
+
+Unit: Bytes
+
+`instance_network_total_bytes`
+
+`ClusterName`
+
+The total number of bytes per second transmitted and received over the network
+on a single EC2 instance in the cluster.
+
+Unit: Bytes/second
+
+`instance_number_of_running_tasks`
+
+`ClusterName`
+
+The number of running tasks on a single EC2 instance in the cluster.
+
+Unit: Count
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+Metrics collected by Container Insights
+
+Amazon ECS Container Insights metrics

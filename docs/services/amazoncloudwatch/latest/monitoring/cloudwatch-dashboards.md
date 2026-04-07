@@ -53,7 +53,7 @@ You can add dashboards
 to a favorites list,
 where you can access not only your favorite dashboards, but also your recently visited dashboards.
 For more information,
-see [Add a dashboard to your favorites list](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/add-dashboard-to-favorites.html).
+see [Add a dashboard to your favorites list](add-dashboard-to-favorites.md).
 
 To access CloudWatch dashboards, you need one of the following:
 
@@ -75,44 +75,44 @@ policy
 
 ###### Topics
 
-- [Getting started with automatic dashboards](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/GettingStarted.html)
+- [Getting started with automatic dashboards](gettingstarted.md)
 
-- [Creating a customized dashboard](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create_dashboard.html)
+- [Creating a customized dashboard](create-dashboard.md)
 
-- [Creating a cross-account cross-Region dashboard with the console](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create_xaxr_dashboard.html)
+- [Creating a cross-account cross-Region dashboard with the console](create-xaxr-dashboard.md)
 
 - [Create a cross-account cross-Region dashboard programmatically](#create_xaxr_dashboard_API)
 
 - [Creating a graph with metrics from different accounts and Regions](#create-graph-xaxr-dashboard)
 
-- [Adding an alarm from a different account to a cross-account dashboard](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-alarm-xaxr-dashboard.html)
+- [Adding an alarm from a different account to a cross-account dashboard](create-alarm-xaxr-dashboard.md)
 
-- [Creating dashboards with variables](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_dashboard_variables.html)
+- [Creating dashboards with variables](cloudwatch-dashboard-variables.md)
 
-- [Using widgets on dashboards](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-and-work-with-widgets.html)
+- [Using widgets on dashboards](create-and-work-with-widgets.md)
 
-- [Sharing dashboards](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch-dashboard-sharing.html)
+- [Sharing dashboards](cloudwatch-dashboard-sharing.md)
 
-- [Using live data](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch-live-data.html)
+- [Using live data](cloudwatch-live-data.md)
 
-- [Viewing an animated dashboard](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch-animated-dashboard.html)
+- [Viewing an animated dashboard](cloudwatch-animated-dashboard.md)
 
 - [Add a dashboard \
-to your favorites list](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/add-dashboard-to-favorites.html)
+to your favorites list](add-dashboard-to-favorites.md)
 
-- [Changing the period override setting or refresh interval](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/change_dashboard_refresh_interval.html)
+- [Changing the period override setting or refresh interval](change-dashboard-refresh-interval.md)
 
-- [Changing the time range or time zone format](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/change_dashboard_time_format.html)
+- [Changing the time range or time zone format](change-dashboard-time-format.md)
 
 ## Create a cross-account cross-Region dashboard programmatically
 
 You can use the AWS APIs and SDKs to create dashboards programmatically. For more information,
-see [PutDashboard](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutDashboard).
+see [PutDashboard](../../../../reference/amazoncloudwatch/latest/apireference/api-putdashboard.md).
 
 To enable cross-account cross-Region dashboards, we have added new parameters
 to the dashboard body structure, as shown in the following table
 and examples. For more information about overall dashboard body structure, see
-[Dashboard Body Structure and Syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CloudWatch-Dashboard-Body-Structure.html).
+[Dashboard Body Structure and Syntax](../../../../reference/amazoncloudwatch/latest/apireference/cloudwatch-dashboard-body-structure.md).
 
 ParameterUseScopeDefault
 
@@ -278,13 +278,13 @@ copy this dashboard JSON to use as a template to create similar dashboards.
     near the top-right
     of the screen.
 
-5. Add the metrics you want to the graph. For more information, see [Graphing metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/graph_metrics.html).
+5. Add the metrics you want to the graph. For more information, see [Graphing metrics](graph-metrics.md).
 
 6. Repeat steps 4-5 to add metrics from other accounts and Regions.
 
 7. (Optional) Choose the **Graphed metrics** tab and add
     a metric math function that uses the metrics that you have chosen. For more
-    information, see [Using math expressions with CloudWatch metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/using-metric-math.html).
+    information, see [Using math expressions with CloudWatch metrics](using-metric-math.md).
 
 You can also set up a single graph to include multiple
     `SEARCH` functions. Each search can refer to a different
