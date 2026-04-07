@@ -9,7 +9,6 @@ import (
 	"io"
 	"net/http"
 	"net/url"
-	"path"
 	"strings"
 
 	"github.com/groovy-sky/aws-docs/internal/config"
@@ -127,17 +126,12 @@ func DeriveServiceRootSeeds(pageURLs []string, cfg config.Config) []string {
 			continue
 		}
 
-		cleanPath := strings.Trim(path.Clean(parsed.Path), "/")
-		if cleanPath == "" {
+		seedPath := deriveSectionSeedPath(parsed.Path)
+		if seedPath == "" {
 			continue
 		}
 
-		firstSegment := strings.Split(cleanPath, "/")[0]
-		if firstSegment == "" {
-			continue
-		}
-
-		rootURL := parsed.Scheme + "://" + parsed.Host + "/" + firstSegment + "/"
+		rootURL := parsed.Scheme + "://" + parsed.Host + seedPath
 		normalized, err := NormalizeURL(rootURL, cfg)
 		if err != nil || !IsAllowedURL(normalized, cfg) {
 			continue

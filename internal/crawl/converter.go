@@ -91,11 +91,8 @@ func (c *Converter) rewriteHref(sourceURL string, href string) string {
 		anchor = "#" + parsed.Fragment
 	}
 
-	targetPath := c.mapper.RepoPath(resolved)
-	if c.exists == nil || !c.exists(targetPath) {
-		return resolved + anchor
-	}
-
+	// Always rewrite in-domain documentation links to local relative paths.
+	// Using filesystem existence here makes output depend on crawl order.
 	return c.mapper.RelativeLink(sourceURL, resolved) + anchor
 }
 

@@ -3,13 +3,13 @@ package crawl
 import (
 	"context"
 	"fmt"
+	"io"
 	"log"
+	"net/http"
 	"net/url"
 	"strings"
-	"time"
 
 	"github.com/groovy-sky/aws-docs/internal/config"
-	"github.com/groovy-sky/aws-docs/internal/model"
 	"github.com/groovy-sky/aws-docs/internal/store"
 	"github.com/groovy-sky/aws-docs/internal/write"
 )
@@ -75,24 +75,17 @@ func (c *Crawler) Run(ctx context.Context, options RunOptions) error {
 	for len(queue) > 0 {
 		current := queue[0]
 		queue = queue[1:]
-		if err := c.processURL(ctx, current, options.Mode); err != nil {
+		discovered, err := c.processURL(ctx, current)
+		if err != nil {
 			log.Printf("skip %s: %v", current, err)
+			continue
 		}
 
 		if options.Mode == "refresh-url" {
 			continue
 		}
 
-		record, err := c.store.GetPage(current)
-		if err != nil || record == nil || record.LastError != "" {
-			continue
-		}
-
-		links, err := c.store.GetLinks(current)
-		if err != nil {
-			continue
-		}
-		for _, link := range links {
+		for _, link := range discovered {
 			if _, exists := seen[link]; exists {
 				continue
 			}
@@ -133,8 +126,12 @@ func (c *Crawler) seedQueue(ctx context.Context, options RunOptions) ([]string, 
 		seenNormalized := map[string]struct{}{}
 		changed := false
 		for _, seed := range storedSeeds {
-			normalized, normalizeErr := NormalizeURL(seed, c.config)
+			normalized, normalizeErr := canonicalizeSeedURL(seed, c.config)
 			if normalizeErr != nil {
+				changed = true
+				continue
+			}
+			if normalized == "" {
 				changed = true
 				continue
 			}
@@ -154,6 +151,14 @@ func (c *Crawler) seedQueue(ctx context.Context, options RunOptions) ([]string, 
 			}
 			storedSeeds = normalizedSeeds
 		}
+
+		filteredSeeds := c.filterReachableSeeds(ctx, storedSeeds)
+		if len(filteredSeeds) != len(storedSeeds) {
+			if err := c.store.PutSeeds(filteredSeeds); err != nil {
+				return nil, err
+			}
+			storedSeeds = filteredSeeds
+		}
 	}
 	if len(storedSeeds) == 0 {
 		storedSeeds, err = c.discoverAndPersistSeeds(ctx)
@@ -165,9 +170,12 @@ func (c *Crawler) seedQueue(ctx context.Context, options RunOptions) ([]string, 
 	queue := make([]string, 0, len(storedSeeds))
 	seen := map[string]struct{}{}
 	for _, seed := range storedSeeds {
-		normalized, err := NormalizeURL(seed, c.config)
+		normalized, err := canonicalizeSeedURL(seed, c.config)
 		if err != nil {
 			return nil, fmt.Errorf("normalize seed %q: %w", seed, err)
+		}
+		if normalized == "" {
+			continue
 		}
 		if IsAllowedURL(normalized, c.config) {
 			if _, exists := seen[normalized]; !exists {
@@ -179,9 +187,12 @@ func (c *Crawler) seedQueue(ctx context.Context, options RunOptions) ([]string, 
 
 	if len(queue) == 0 {
 		for _, seed := range c.config.Seeds {
-			normalized, err := NormalizeURL(seed, c.config)
+			normalized, err := canonicalizeSeedURL(seed, c.config)
 			if err != nil {
 				return nil, fmt.Errorf("normalize fallback seed %q: %w", seed, err)
+			}
+			if normalized == "" {
+				continue
 			}
 			if _, exists := seen[normalized]; exists || !IsAllowedURL(normalized, c.config) {
 				continue
@@ -216,7 +227,7 @@ func (c *Crawler) discoverAndPersistSeeds(ctx context.Context) ([]string, error)
 	seen := map[string]struct{}{}
 
 	addSeed := func(rawURL string) {
-		normalized, err := NormalizeURL(rawURL, c.config)
+		normalized, err := canonicalizeSeedURL(rawURL, c.config)
 		if err != nil || !IsAllowedURL(normalized, c.config) {
 			return
 		}
@@ -261,6 +272,8 @@ func (c *Crawler) discoverAndPersistSeeds(ctx context.Context) ([]string, error)
 		}
 	}
 
+	seeds = c.filterReachableSeeds(ctx, seeds)
+
 	if err := c.store.PutSeeds(seeds); err != nil {
 		return nil, err
 	}
@@ -268,54 +281,19 @@ func (c *Crawler) discoverAndPersistSeeds(ctx context.Context) ([]string, error)
 	return seeds, nil
 }
 
-func (c *Crawler) processURL(ctx context.Context, pageURL string, mode string) error {
+func (c *Crawler) processURL(ctx context.Context, pageURL string) ([]string, error) {
 	if !c.allowedByRobots(pageURL) {
-		return fmt.Errorf("blocked by robots.txt")
+		return nil, fmt.Errorf("blocked by robots.txt")
 	}
 
-	previous, err := c.store.GetPage(pageURL)
+	result, err := c.fetcher.Fetch(ctx, pageURL)
 	if err != nil {
-		return fmt.Errorf("read metadata: %w", err)
-	}
-	expectedPath := c.mapper.RepoPath(pageURL)
-	if mode == "full" {
-		previous = nil
-	} else if mode == "refresh-url" {
-		// Refresh should always re-fetch and regenerate content for the requested URL.
-		previous = nil
-	} else if previous != nil && (previous.RepoPath != expectedPath || !c.writer.Exists(expectedPath)) {
-		previous = nil
-	}
-
-	result, err := c.fetcher.Fetch(ctx, pageURL, previous)
-	if err != nil {
-		return c.store.PutPage(model.PageRecord{
-			URL:         pageURL,
-			RepoPath:    c.mapper.RepoPath(pageURL),
-			LastFetched: time.Now().UTC(),
-			StatusCode:  result.StatusCode,
-			LastError:   err.Error(),
-		})
-	}
-
-	if result.NotModified && previous != nil {
-		previous.LastFetched = time.Now().UTC()
-		previous.StatusCode = result.StatusCode
-		previous.LastError = ""
-		return c.store.PutPage(*previous)
+		return nil, err
 	}
 
 	extracted, err := c.extractor.Extract(result.FinalURL, result.Body)
 	if err != nil {
-		return c.store.PutPage(model.PageRecord{
-			URL:          pageURL,
-			RepoPath:     c.mapper.RepoPath(pageURL),
-			ETag:         result.ETag,
-			LastModified: result.LastModified,
-			LastFetched:  time.Now().UTC(),
-			StatusCode:   result.StatusCode,
-			LastError:    err.Error(),
-		})
+		return nil, err
 	}
 
 	canonicalURL, err := NormalizeURL(extracted.CanonicalURL, c.config)
@@ -324,14 +302,12 @@ func (c *Crawler) processURL(ctx context.Context, pageURL string, mode string) e
 	}
 	markdownDocument, err := c.converter.Convert(extracted, canonicalURL)
 	if err != nil {
-		return fmt.Errorf("convert %s: %w", canonicalURL, err)
+		return nil, fmt.Errorf("convert %s: %w", canonicalURL, err)
 	}
 
 	repoPath := c.mapper.RepoPath(canonicalURL)
-	if previous == nil || previous.ContentHash != markdownDocument.ContentHash || !c.writer.Exists(repoPath) {
-		if err := c.writer.Write(repoPath, markdownDocument.Markdown); err != nil {
-			return fmt.Errorf("write %s: %w", repoPath, err)
-		}
+	if err := c.writer.Write(repoPath, markdownDocument.Markdown); err != nil {
+		return nil, fmt.Errorf("write %s: %w", repoPath, err)
 	}
 
 	discovered := make([]string, 0, len(extracted.Links))
@@ -345,36 +321,7 @@ func (c *Crawler) processURL(ctx context.Context, pageURL string, mode string) e
 		}
 	}
 
-	if err := c.store.PutLinks(canonicalURL, discovered); err != nil {
-		return err
-	}
-	if canonicalURL != pageURL {
-		if err := c.store.PutLinks(pageURL, discovered); err != nil {
-			return err
-		}
-	}
-
-	record := model.PageRecord{
-		URL:          canonicalURL,
-		RepoPath:     repoPath,
-		ETag:         result.ETag,
-		LastModified: result.LastModified,
-		ContentHash:  markdownDocument.ContentHash,
-		LastFetched:  time.Now().UTC(),
-		StatusCode:   result.StatusCode,
-	}
-	if err := c.store.PutPage(record); err != nil {
-		return err
-	}
-
-	if canonicalURL != pageURL {
-		record.URL = pageURL
-		if err := c.store.PutPage(record); err != nil {
-			return err
-		}
-	}
-
-	return nil
+	return discovered, nil
 }
 
 func (c *Crawler) allowedByRobots(rawURL string) bool {
@@ -398,4 +345,63 @@ func sectionKey(rawURL string) string {
 	}
 	firstSegment := strings.SplitN(trimmedPath, "/", 2)[0]
 	return host + "/" + firstSegment
+}
+
+func canonicalizeSeedURL(rawURL string, cfg config.Config) (string, error) {
+	normalized, err := NormalizeURL(rawURL, cfg)
+	if err != nil {
+		return "", err
+	}
+
+	parsed, err := url.Parse(normalized)
+	if err != nil {
+		return "", err
+	}
+
+	trimmed := strings.Trim(parsed.Path, "/")
+	if trimmed == "" {
+		return normalized, nil
+	}
+	segments := strings.Split(trimmed, "/")
+	if len(segments) == 1 {
+		return "", nil
+	}
+	if strings.Contains(segments[0], ".") {
+		return normalized, nil
+	}
+
+	seedPath := deriveSectionSeedPath(parsed.Path)
+	if seedPath == "" {
+		return "", nil
+	}
+	parsed.Path = seedPath
+	parsed.RawPath = ""
+	parsed.RawQuery = ""
+	parsed.Fragment = ""
+
+	return NormalizeURL(parsed.String(), cfg)
+}
+
+func (c *Crawler) filterReachableSeeds(ctx context.Context, seeds []string) []string {
+	filtered := make([]string, 0, len(seeds))
+	for _, seed := range seeds {
+		request, err := http.NewRequestWithContext(ctx, http.MethodGet, seed, nil)
+		if err != nil {
+			continue
+		}
+		request.Header.Set("User-Agent", c.config.UserAgent)
+		request.Header.Set("Accept", "text/html,application/xhtml+xml")
+
+		response, err := c.fetcher.HTTPClient().Do(request)
+		if err != nil {
+			continue
+		}
+		_, _ = io.Copy(io.Discard, response.Body)
+		_ = response.Body.Close()
+
+		if response.StatusCode >= http.StatusOK && response.StatusCode < http.StatusBadRequest {
+			filtered = append(filtered, seed)
+		}
+	}
+	return filtered
 }

@@ -135,18 +135,12 @@ func deriveSectionRootsFromRobots(host string, structure RobotsStructure, cfg co
 		if value == "" || value == "/" || strings.HasPrefix(value, "*") {
 			return
 		}
-		if !strings.HasPrefix(value, "/") {
-			value = "/" + value
-		}
-		value = strings.Trim(strings.SplitN(value, "?", 2)[0], "/")
-		if value == "" {
+
+		seedPath := deriveSectionSeedPath(value)
+		if seedPath == "" {
 			return
 		}
-		segment := strings.Split(value, "/")[0]
-		if segment == "" {
-			return
-		}
-		candidate := "https://" + host + "/" + segment + "/"
+		candidate := "https://" + host + seedPath
 		normalized, err := NormalizeURL(candidate, cfg)
 		if err != nil || !IsAllowedURL(normalized, cfg) {
 			return

@@ -10,7 +10,6 @@ import (
 
 	"github.com/cenkalti/backoff/v4"
 	"github.com/groovy-sky/aws-docs/internal/config"
-	"github.com/groovy-sky/aws-docs/internal/model"
 	"golang.org/x/time/rate"
 )
 
@@ -45,7 +44,7 @@ func (f *Fetcher) HTTPClient() *http.Client {
 	return f.client
 }
 
-func (f *Fetcher) Fetch(ctx context.Context, rawURL string, previous *model.PageRecord) (FetchResult, error) {
+func (f *Fetcher) Fetch(ctx context.Context, rawURL string) (FetchResult, error) {
 	var result FetchResult
 	operation := func() error {
 		if err := f.limiter.Wait(ctx); err != nil {
@@ -58,14 +57,6 @@ func (f *Fetcher) Fetch(ctx context.Context, rawURL string, previous *model.Page
 		}
 		request.Header.Set("User-Agent", f.userAgent)
 		request.Header.Set("Accept", "text/html,application/xhtml+xml")
-		if previous != nil {
-			if previous.ETag != "" {
-				request.Header.Set("If-None-Match", previous.ETag)
-			}
-			if previous.LastModified != "" {
-				request.Header.Set("If-Modified-Since", previous.LastModified)
-			}
-		}
 
 		response, err := f.client.Do(request)
 		if err != nil {

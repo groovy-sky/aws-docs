@@ -40,6 +40,10 @@ func Default() Config {
 			"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html",
 			"https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
 			"https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
+			"https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+			"https://docs.aws.amazon.com/lambda/latest/dg/welcome.html",
+			"https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html",
+			"https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html",
 		},
 		AllowedHosts:          []string{"docs.aws.amazon.com"},
 		OutputDir:             "docs",
@@ -106,6 +110,8 @@ func Default() Config {
 			"/training/",
 			"/premiumsupport/",
 			"/solutions/",
+			"/aws-sdk-php/v3/",
+			"/awsjavascriptsdk/",
 		},
 	}
 }
