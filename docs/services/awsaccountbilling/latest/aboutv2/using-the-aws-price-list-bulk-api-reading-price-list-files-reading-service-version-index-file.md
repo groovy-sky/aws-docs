@@ -1,0 +1,27 @@
+# Reading the service version index file
+
+To provide feedback about AWS Price List, complete this [short survey](https://amazonmr.au1.qualtrics.com/jfe/form/SV_cO0deTMyKyFeezA). Your responses will be anonymous. **Note:** This survey is in English only.
+
+The service version index file is available in JSON format. To read the file, you can use a text program
+or an application that parses the JSON.
+
+The service version index file consists of two main sections:
+
+- Metadata about the service version index file
+
+- List of all versions of price list files available for an AWS service
+
+The information about a service version includes the URL that you can use to download
+the prices for that service for the specified time period.
+
+###### Topics
+
+- [Service version index file for an AWS service](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/service-version-index-file-for-aws-service.html)
+
+- [Service version index file for Savings Plan](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/service-version-index-file-for-savings-plans.html)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+Read the price list files
+
+Service version index file for an AWS service
