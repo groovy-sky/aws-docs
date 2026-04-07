@@ -1,0 +1,92 @@
+# TaskOverride
+
+The overrides that are associated with a task.
+
+## Contents
+
+**containerOverrides**
+
+One or more container overrides that are sent to a task.
+
+Type: Array of [ContainerOverride](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerOverride.html) objects
+
+Required: No
+
+**cpu**
+
+The CPU override for the task.
+
+Type: String
+
+Required: No
+
+**ephemeralStorage**
+
+The ephemeral storage setting override for the task.
+
+###### Note
+
+This parameter is only supported for tasks hosted on Fargate that use the
+following platform versions:
+
+- Linux platform version `1.4.0` or later.
+
+- Windows platform version `1.0.0` or later.
+
+Type: [EphemeralStorage](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_EphemeralStorage.html) object
+
+Required: No
+
+**executionRoleArn**
+
+The Amazon Resource Name (ARN) of the task execution role override for the task. For
+more information, see [Amazon ECS task\
+execution IAM role](../../../../services/amazonecs/latest/developerguide/task-execution-iam-role.md) in the _Amazon Elastic Container Service_
+_Developer Guide_.
+
+Type: String
+
+Required: No
+
+**inferenceAcceleratorOverrides**
+
+The Elastic Inference accelerator override for the task.
+
+Type: Array of [InferenceAcceleratorOverride](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_InferenceAcceleratorOverride.html) objects
+
+Required: No
+
+**memory**
+
+The memory override for the task.
+
+Type: String
+
+Required: No
+
+**taskRoleArn**
+
+The Amazon Resource Name (ARN) of the role that containers in this task can assume.
+All containers in this task are granted the permissions that are specified in this role.
+For more information, see [IAM Role for Tasks](../../../../services/amazonecs/latest/developerguide/task-iam-roles.md)
+in the _Amazon Elastic Container Service Developer Guide_.
+
+Type: String
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/TaskOverride)
+
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/TaskOverride)
+
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/TaskOverride)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+TaskManagedEBSVolumeTerminationPolicy
+
+TaskSet
