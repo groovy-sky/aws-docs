@@ -1,0 +1,121 @@
+# Parameter
+
+This data type is used as a request parameter in the
+`ModifyDBParameterGroup` and `ResetDBParameterGroup` actions.
+
+This data type is used as a response element in the
+`DescribeEngineDefaultParameters` and `DescribeDBParameters` actions.
+
+## Contents
+
+###### Note
+
+In the following list, the required parameters are described first.
+
+**AllowedValues**
+
+Specifies the valid range of values for the parameter.
+
+Type: String
+
+Required: No
+
+**ApplyMethod**
+
+Indicates when to apply parameter updates.
+
+Type: String
+
+Valid Values: `immediate | pending-reboot`
+
+Required: No
+
+**ApplyType**
+
+Specifies the engine specific parameters type.
+
+Type: String
+
+Required: No
+
+**DataType**
+
+Specifies the valid data type for the parameter.
+
+Type: String
+
+Required: No
+
+**Description**
+
+Provides a description of the parameter.
+
+Type: String
+
+Required: No
+
+**IsModifiable**
+
+Indicates whether ( `true`) or not ( `false`) the parameter can be modified.
+Some parameters have security or operational implications
+that prevent them from being changed.
+
+Type: Boolean
+
+Required: No
+
+**MinimumEngineVersion**
+
+The earliest engine version to which the parameter can apply.
+
+Type: String
+
+Required: No
+
+**ParameterName**
+
+The name of the parameter.
+
+Type: String
+
+Required: No
+
+**ParameterValue**
+
+The value of the parameter.
+
+Type: String
+
+Required: No
+
+**Source**
+
+The source of the parameter value.
+
+Type: String
+
+Required: No
+
+**SupportedEngineModes.member.N**
+
+The valid DB engine modes.
+
+Type: Array of strings
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/Parameter)
+
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/Parameter)
+
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/Parameter)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+Outpost
+
+PendingCloudwatchLogsExports
