@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"time"
 
 	"github.com/groovy-sky/aws-docs/internal/config"
 	"github.com/groovy-sky/aws-docs/internal/crawl"
@@ -19,7 +20,7 @@ type Options struct {
 	MaxSections int
 }
 
-func Run(ctx context.Context, options Options) error {
+func Run(ctx context.Context, options Options) (runErr error) {
 	if options.Mode == "" || options.Mode == "partial" {
 		options.Mode = "incremental"
 	}
@@ -29,10 +30,32 @@ func Run(ctx context.Context, options Options) error {
 		return fmt.Errorf("get working directory: %w", err)
 	}
 
+	writer := write.New(workingDir)
+	outputDir := "docs"
+	defer func() {
+		status := "success"
+		errorText := ""
+		if runErr != nil {
+			status = "error"
+			errorText = runErr.Error()
+		}
+
+		indexErr := writer.WriteServicesIndex(outputDir, write.ServicesIndexRunInfo{
+			Mode:        options.Mode,
+			Status:      status,
+			Error:       errorText,
+			GeneratedAt: time.Now().UTC(),
+		})
+		if indexErr != nil && runErr == nil {
+			runErr = fmt.Errorf("write services index: %w", indexErr)
+		}
+	}()
+
 	cfg, err := config.Load(options.ConfigPath)
 	if err != nil {
 		return err
 	}
+	outputDir = cfg.OutputDir
 	metadataPath := resolvePath(workingDir, cfg.MetadataDB)
 	if options.MaxSections > 0 {
 		cfg.MaxSections = options.MaxSections
@@ -52,15 +75,19 @@ func Run(ctx context.Context, options Options) error {
 
 	mapper := crawl.NewMapper(cfg.OutputDir)
 	extractor := crawl.NewExtractor(cfg)
-	writer := write.New(workingDir)
 	converter := crawl.NewConverter(cfg, mapper, writer.Exists)
 
 	runner := crawl.NewCrawler(cfg, database, fetcher, extractor, converter, mapper, writer, robots)
-	return runner.Run(ctx, crawl.RunOptions{
+	runErr = runner.Run(ctx, crawl.RunOptions{
 		Mode:        options.Mode,
 		URL:         options.URL,
 		MaxSections: cfg.MaxSections,
 	})
+	if runErr != nil {
+		return runErr
+	}
+
+	return nil
 }
 
 func resolvePath(baseDir string, value string) string {

@@ -58,3 +58,5 @@ Notes:
 - To run effectively unbounded in `partial`/`incremental` mode with a config file, set `"max_sections": 0` and do not pass `-max-sections`.
 
 Mirrored output is written under `docs/`, and crawl state is stored in `metadata/crawl.db`.
+
+On every `./cmd/aws-docs` invocation, a root `SERVICES.md` file is updated with run status metadata and links to currently parsed services.
