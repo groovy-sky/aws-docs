@@ -1,0 +1,86 @@
+# Determine the boot mode of the operating system for your EC2 instance
+
+The boot mode of the AMI guides Amazon EC2 on which boot mode to use to boot an instance. To view
+whether the operating system of your instance is configured for UEFI, you need to
+connect to your instance using SSH (Linux instances) or RDP (Windows instances).
+
+Use the instructions for your instance's operating system.
+
+###### To determine the boot mode of the instance’s operating system
+
+1. [Connect to your Linux instance using SSH](connect-linux-inst-ssh.md).
+
+2. To view the boot mode of the operating system, try one of the following:
+
+- Run the following command.
+
+```nohighlight
+
+[ec2-user ~]$ sudo /usr/sbin/efibootmgr
+```
+
+Expected output from an instance booted in UEFI boot mode
+
+```nohighlight
+
+BootCurrent: 0001
+Timeout: 0 seconds
+BootOrder: 0000,0001
+Boot0000* UiApp
+Boot0001* UEFI Amazon Elastic Block Store vol-xyz
+```
+
+- Run the following command to verify the existence of the `/sys/firmware/efi`
+directory. This directory exists only if the instance boots using UEFI.
+If this directory doesn't exist, the command returns `Legacy BIOS
+  								Boot Detected`.
+
+```nohighlight
+
+[ec2-user ~]$ [ -d /sys/firmware/efi ] && echo "UEFI Boot Detected" || echo "Legacy BIOS Boot Detected"
+```
+
+Expected output from an instance booted in UEFI boot mode
+
+```nohighlight
+
+UEFI Boot Detected
+```
+
+Expected output from an instance booted in Legacy BIOS boot mode
+
+```nohighlight
+
+Legacy BIOS Boot Detected
+```
+
+- Run the following command to verify that EFI appears in the `dmesg`
+output.
+
+```nohighlight
+
+[ec2-user ~]$ dmesg | grep -i "EFI"
+```
+
+Expected output from an instance booted in UEFI boot mode
+
+```nohighlight
+
+[    0.000000] efi: Getting EFI parameters from FDT:
+[    0.000000] efi: EFI v2.70 by EDK II
+```
+
+###### To determine the boot mode of the instance’s operating system
+
+1. [Connect to your Windows instance using RDP](connecting-to-windows-instance.md).
+
+2. Go to **System Information** and check the **BIOS Mode**
+    row.
+
+![System Information window showing the BIOS Mode row selected. The value for BIOS Mode is Legacy.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/BIOS-mode-win.png)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+Instance boot mode
+
+Set AMI boot mode

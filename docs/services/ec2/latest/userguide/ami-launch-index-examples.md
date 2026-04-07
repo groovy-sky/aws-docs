@@ -1,0 +1,152 @@
+# Identify each instance launched in a single request
+
+This example demonstrates how you can use both user data and instance metadata to
+configure your Amazon EC2 instances.
+
+###### Note
+
+The examples in this section use the IPv4 address of the IMDS:
+`169.254.169.254`. If you are retrieving instance metadata for EC2
+instances over the IPv6 address, ensure that you enable and use the IPv6 address
+instead: `[fd00:ec2::254]`. The IPv6 address of the IMDS is
+compatible with IMDSv2 commands. The IPv6 address is only accessible on
+[Nitro-based instances](instance-types.md#instance-hypervisor-type) in [IPv6-supported subnets](https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html#subnet-ip-address-range) (dual stack or IPv6 only).
+
+Alice wants to launch four instances of her favorite database AMI, with the first
+acting as the original instance and the remaining three acting as replicas. When she
+launches them, she wants to add user data about the replication strategy for each
+replica. She is aware that this data will be available to all four instances, so she
+needs to structure the user data in a way that allows each instance to recognize which
+parts are applicable to it. She can do this using the `ami-launch-index`
+instance metadata value, which will be unique for each instance. If she starts more than
+one instance at the same time, the `ami-launch-index` indicates the order in
+which the instances were launched. The value of the first instance launched is
+`0`.
+
+Here is the user data that Alice has constructed.
+
+```nohighlight
+
+replicate-every=1min | replicate-every=5min | replicate-every=10min
+```
+
+The `replicate-every=1min` data defines the first replica's configuration,
+`replicate-every=5min` defines the second replica's configuration, and so
+on. Alice decides to provide this data as an ASCII string with a pipe symbol
+( `|`) delimiting the data for the separate instances.
+
+Alice launches four instances using the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command,
+specifying the user data.
+
+```nohighlight
+
+aws ec2 run-instances \
+    --image-id ami-0abcdef1234567890 \
+    --count 4 \
+    --instance-type t2.micro \
+    --user-data "replicate-every=1min | replicate-every=5min | replicate-every=10min"
+```
+
+After they're launched, all instances have a copy of the user data and the common
+metadata shown here:
+
+- AMI ID: ami-0abcdef1234567890
+
+- Reservation ID: r-1234567890abcabc0
+
+- Public keys: none
+
+- Security group name: default
+
+- Instance type: t2.micro
+
+However, each instance has unique metadata, as shown in the following tables.
+
+MetadataValueinstance-idi-1234567890abcdef0ami-launch-index0public-hostnameec2-203-0-113-25.compute-1.amazonaws.compublic-ipv467.202.51.223local-hostnameip-10-251-50-12.ec2.internallocal-ipv410.251.50.35
+
+MetadataValueinstance-idi-0598c7d356eba48d7ami-launch-index1public-hostnameec2-67-202-51-224.compute-1.amazonaws.compublic-ipv467.202.51.224local-hostnameip-10-251-50-36.ec2.internallocal-ipv410.251.50.36
+
+MetadataValueinstance-idi-0ee992212549ce0e7ami-launch-index2public-hostnameec2-67-202-51-225.compute-1.amazonaws.compublic-ipv467.202.51.225local-hostnameip-10-251-50-37.ec2.internallocal-ipv410.251.50.37
+
+MetadataValueinstance-idi-1234567890abcdef0ami-launch-index3public-hostnameec2-67-202-51-226.compute-1.amazonaws.compublic-ipv467.202.51.226local-hostnameip-10-251-50-38.ec2.internallocal-ipv410.251.50.38
+
+Alice can use the `ami-launch-index` value to determine which portion of
+the user data is applicable to a particular instance.
+
+1. She connects to one of the instances, and retrieves the
+    `ami-launch-index` for that instance to ensure it is one of the
+    replicas:
+IMDSv2
+
+```nohighlight
+
+[ec2-user ~]$ TOKEN=`curl -X PUT "http://169.254.169.254/latest/meta-data/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
+&& curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/ami-launch-index
+2
+```
+
+For the following steps, the IMDSv2 requests use the
+stored token from the preceding IMDSv2 command, assuming the
+token has not expired.
+
+IMDSv1
+
+```nohighlight
+
+[ec2-user ~]$ curl http://169.254.169.254/latest/meta-data/ami-launch-index
+2
+```
+
+2. She saves the `ami-launch-index` as a variable.
+IMDSv2
+
+```nohighlight
+
+[ec2-user ~]$ ami_launch_index=`curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/ami-launch-index`
+```
+
+IMDSv1
+
+```nohighlight
+
+[ec2-user ~]$ ami_launch_index=`curl http://169.254.169.254/latest/meta-data/ami-launch-index`
+```
+
+3. She saves the user data as a variable.
+IMDSv2
+
+```nohighlight
+
+[ec2-user ~]$ user_data=`curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/user-data`
+```
+
+IMDSv1
+
+```nohighlight
+
+[ec2-user ~]$ user_data=`curl http://169.254.169.254/latest/user-data`
+```
+
+4. Finally, Alice uses the **cut** command to extract the portion
+    of the user data that is applicable to that instance.
+IMDSv2
+
+```nohighlight
+
+[ec2-user ~]$ echo $user_data | cut -d"|" -f"$ami_launch_index"
+replicate-every=5min
+```
+
+IMDSv1
+
+```nohighlight
+
+[ec2-user ~]$ echo $user_data | cut -d"|" -f"$ami_launch_index"
+replicate-every=5min
+```
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+Run commands at launch
+
+Detect whether a host is an EC2 instance

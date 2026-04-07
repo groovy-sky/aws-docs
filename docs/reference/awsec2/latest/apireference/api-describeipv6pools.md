@@ -1,0 +1,113 @@
+# DescribeIpv6Pools
+
+Describes your IPv6 address pools.
+
+## Request Parameters
+
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+
+**DryRun**
+
+Checks whether you have the required permissions for the action, without actually making the request,
+and provides an error response. If you have the required permissions, the error response is `DryRunOperation`.
+Otherwise, it is `UnauthorizedOperation`.
+
+Type: Boolean
+
+Required: No
+
+**Filter.N**
+
+One or more filters.
+
+- `tag`:<key> - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value.
+For example, to find all resources that have a tag with the key `Owner` and the value `TeamA`, specify `tag:Owner` for the filter name and `TeamA` for the filter value.
+
+- `tag-key` \- The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.
+
+Type: Array of [Filter](api-filter.md) objects
+
+Required: No
+
+**MaxResults**
+
+The maximum number of results to return with a single call.
+To retrieve the remaining results, make another call with the returned `nextToken` value.
+
+Type: Integer
+
+Valid Range: Minimum value of 1. Maximum value of 1000.
+
+Required: No
+
+**NextToken**
+
+The token for the next page of results.
+
+Type: String
+
+Required: No
+
+**PoolId.N**
+
+The IDs of the IPv6 address pools.
+
+Type: Array of strings
+
+Required: No
+
+## Response Elements
+
+The following elements are returned by the service.
+
+**ipv6PoolSet**
+
+Information about the IPv6 address pools.
+
+Type: Array of [Ipv6Pool](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Ipv6Pool.html) objects
+
+**nextToken**
+
+The token to use to retrieve the next page of results. This value is `null` when there are no more results to return.
+
+Type: String
+
+**requestId**
+
+The ID of the request.
+
+Type: String
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/DescribeIpv6Pools)
+
+- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/DescribeIpv6Pools)
+
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DescribeIpv6Pools)
+
+- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/DescribeIpv6Pools)
+
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DescribeIpv6Pools)
+
+- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DescribeIpv6Pools)
+
+- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DescribeIpv6Pools)
+
+- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DescribeIpv6Pools)
+
+- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DescribeIpv6Pools)
+
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DescribeIpv6Pools)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+DescribeIpamScopes
+
+DescribeKeyPairs

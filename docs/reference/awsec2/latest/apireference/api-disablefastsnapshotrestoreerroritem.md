@@ -1,0 +1,37 @@
+# DisableFastSnapshotRestoreErrorItem
+
+Contains information about the errors that occurred when disabling fast snapshot restores.
+
+## Contents
+
+**FastSnapshotRestoreStateErrorSet.N**
+
+The errors.
+
+Type: Array of [DisableFastSnapshotRestoreStateErrorItem](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableFastSnapshotRestoreStateErrorItem.html) objects
+
+Required: No
+
+**snapshotId**
+
+The ID of the snapshot.
+
+Type: String
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DisableFastSnapshotRestoreErrorItem)
+
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DisableFastSnapshotRestoreErrorItem)
+
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DisableFastSnapshotRestoreErrorItem)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+DirectoryServiceAuthenticationRequest
+
+DisableFastSnapshotRestoreStateError

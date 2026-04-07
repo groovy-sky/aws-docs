@@ -1,0 +1,100 @@
+# Purchasing On-Demand Instances for Amazon EC2
+
+With On-Demand Instances, you pay for compute capacity by the second with no long-term commitments. You
+have full control over the instance's lifecycle—you decide when to launch, stop,
+hibernate, start, reboot, or terminate it.
+
+There is no long-term commitment required when you purchase On-Demand Instances. You pay only for the
+seconds that your On-Demand Instances are in the `running` state, with a 60-second minimum.
+The price per second for a running On-Demand Instance is fixed, and is listed on the [Amazon EC2 Pricing, On-Demand\
+Pricing page](https://aws.amazon.com/ec2/pricing/on-demand).
+
+We recommend that you use On-Demand Instances for applications with short-term, irregular workloads
+that cannot be interrupted.
+
+For significant savings over On-Demand Instances, use [AWS Savings Plans](https://aws.amazon.com/savingsplans),
+[Spot Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html), or
+[Reserved Instances for Amazon EC2 overview](ec2-reserved-instances.md).
+
+###### Contents
+
+- [On-Demand Instance quotas](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-on-demand-instances.html#ec2-on-demand-instances-limits)
+
+  - [Monitor On-Demand Instance quotas and usage](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-on-demand-instances.html#monitoring-on-demand-limits)
+
+  - [Request a quota increase](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-on-demand-instances.html#vcpu-limits-request-increase)
+- [Query the prices of On-Demand Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-on-demand-instances.html#query-aws-price-list)
+
+## On-Demand Instance quotas
+
+There are quotas for the number of running On-Demand Instances per AWS account per Region. On-Demand Instance
+quotas are managed in terms of the _number of virtual central_
+_processing units (vCPUs)_ that your running On-Demand Instances are using, regardless
+of the instance type. Each quota type specifies the maximum number of vCPUs for one or more
+instance families.
+
+Your account includes the following quotas for On-Demand Instances. Instances that are in the
+pending, stopping, stopped, and hibernated states do not count towards your On-Demand Instance
+quotas. Capacity Reservations count toward your On-Demand Instance quotas, even if they are unused.
+
+NameDefaultAdjustableRunning On-Demand DL instances0[Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-6E869C2A)Running On-Demand F instances0[Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-74FC7D96)Running On-Demand G and VT instances0[Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-DB2E81BA)Running On-Demand HPC instances0[Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-F7808C92)Running On-Demand High Memory instances0[Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-43DA4232)Running On-Demand Inf instances0[Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-1945791B)Running On-Demand P instances0[Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-417A185B)Running On-Demand Standard (A, C, D, H, I, M, R, T, Z) instances5[Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-1216C47A)Running On-Demand Trn instances0[Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-2C3B7624)Running On-Demand X instances0[Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-7295265B)
+
+For information about the different instance families, generations, and sizes, see
+the [Amazon EC2 Instance Types Guide](https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-types.html).
+
+You can launch any combination of instance types that meet your changing application
+needs, as long as the number of vCPUs does not exceed your account quota. For example,
+with a Standard instance quota of 256 vCPUs, you could launch 32 `m5.2xlarge`
+instances (32 x 8 vCPUs) or 16 `c5.4xlarge` instances (16 x 16 vCPUs). For
+more information, see [EC2 On-Demand Instance limits](https://aws.amazon.com/ec2/faqs).
+
+###### Tasks
+
+- [Monitor On-Demand Instance quotas and usage](#monitoring-on-demand-limits)
+
+- [Request a quota increase](#vcpu-limits-request-increase)
+
+### Monitor On-Demand Instance quotas and usage
+
+You can view and manage your On-Demand Instance quotas for each Region using the following methods.
+
+###### To view your current quotas using the Service Quotas console
+
+1. Open the Service Quotas console at [https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas).
+
+2. From the navigation bar, select a Region.
+
+3. In the filter field, enter `On-Demand`.
+
+4. The **Applied quota value** column displays the maximum
+    number of vCPUs for each On-Demand Instance quota type for your account.
+
+###### To view your current quotas using the AWS Trusted Advisor console
+
+Open [Service limits page](https://console.aws.amazon.com/trustedadvisor/home?) in the AWS Trusted Advisor console.
+
+###### To configure CloudWatch alarms
+
+With Amazon CloudWatch metrics integration, you can monitor your EC2 usage against your
+quotas. You can also configure alarms to warn about approaching quotas. For more information, see [Service\
+Quotas and Amazon CloudWatch alarms](https://docs.aws.amazon.com/servicequotas/latest/userguide/configure-cloudwatch.html) in the _Service Quotas User Guide_.
+
+### Request a quota increase
+
+Even though Amazon EC2 automatically increases your On-Demand Instance quotas based on your usage,
+you can request a quota increase if necessary. For example, if you intend to launch
+more instances than your current quota allows, you can request a quota increase by
+using the
+Service Quotas console described in [Amazon EC2 service quotas](ec2-resource-limits.md).
+
+## Query the prices of On-Demand Instances
+
+You can use the Price List Service API or the AWS Price List API to query the
+prices of On-Demand Instances. For more information, see [Using the AWS Price List API](../../../awsaccountbilling/latest/aboutv2/price-changes.md)
+in the _AWS Billing User Guide_.
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+Billing and purchasing options
+
+Reserved Instances

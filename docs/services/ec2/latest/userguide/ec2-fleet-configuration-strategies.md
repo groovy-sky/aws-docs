@@ -1,0 +1,29 @@
+# Configuration options for your EC2 Fleet or Spot Fleet
+
+When planning your EC2 Fleet or Spot Fleet, we recommend that you consider the following options when
+deciding how to configure your fleet.
+
+Configuration optionQuestionDocumentationFleet request type
+
+Do you want a fleet that submits a one-time request for the desired target capacity, or
+a fleet that maintains target capacity over time?
+
+[EC2 Fleet and Spot Fleet request types](ec2-fleet-request-type.md)Spot InstancesDo you plan to include Spot Instances in your fleet? Review the Spot best practices and use them
+when you plan your fleet so that you can provision the instances at the
+lowest possible price.[Best practices for Amazon EC2 Spot](spot-best-practices.md)Spending limit for your fleetDo you want to limit how much you'll pay for your fleet per hour?[Set a spending limit for your EC2 Fleet or Spot Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-control-spending.html)Instance types and attribute-based instance type selection
+
+Do you want to specify the instance types in your fleet, or let Amazon EC2
+select the instance types that meet your application
+requirements?
+
+[Specify attributes for instance type selection for EC2 Fleet or Spot Fleet](ec2-fleet-attribute-based-instance-type-selection.md)Instance weightingDo you want to assign weights to each instance type to represent their compute capacity
+and performance, so that Amazon EC2 can select any combination of available
+instance types to fulfil your desired target capacity?[Use instance weighting to manage cost and performance of your EC2 Fleet or Spot Fleet](ec2-fleet-instance-weighting.md)Allocation strategiesDo you want to decide whether to optimize for available capacity, price, or instance
+types to use for the Spot Instances and On-Demand Instances in your fleet?[Use allocation strategies to determine how EC2 Fleet or Spot Fleet fulfills Spot and On-Demand capacity](ec2-fleet-allocation-strategy.md)Capacity RebalancingDo you want your fleet to automatically replace at-risk Spot Instances?[Use Capacity Rebalancing in EC2 Fleet and Spot Fleet to replace at-risk Spot Instances](ec2-fleet-capacity-rebalance.md)On-Demand Capacity ReservationDo you want to reserve capacity for the On-Demand Instances in your fleet?[Use Capacity Reservations to reserve On-Demand capacity in EC2 Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-on-demand-capacity-reservations.html)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+Which fleet method to
+use?
+
+Request types

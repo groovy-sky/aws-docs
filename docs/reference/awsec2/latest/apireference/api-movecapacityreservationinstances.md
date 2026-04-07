@@ -1,0 +1,125 @@
+# MoveCapacityReservationInstances
+
+Move available capacity from a source Capacity Reservation to a destination Capacity
+Reservation. The source Capacity Reservation and the destination Capacity Reservation
+must be `active`, owned by your AWS account, and share the following:
+
+- Instance type
+
+- Platform
+
+- Availability Zone
+
+- Tenancy
+
+- Placement group
+
+- Capacity Reservation end time - `At specific time` or
+`Manually`.
+
+## Request Parameters
+
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+
+**ClientToken**
+
+Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensure Idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html).
+
+Type: String
+
+Required: No
+
+**DestinationCapacityReservationId**
+
+The ID of the Capacity Reservation that you want to move capacity into.
+
+Type: String
+
+Required: Yes
+
+**DryRun**
+
+Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is `DryRunOperation`. Otherwise, it is `UnauthorizedOperation`.
+
+Type: Boolean
+
+Required: No
+
+**InstanceCount**
+
+The number of instances that you want to move from the source Capacity Reservation.
+
+Type: Integer
+
+Required: Yes
+
+**SourceCapacityReservationId**
+
+The ID of the Capacity Reservation from which you want to move capacity.
+
+Type: String
+
+Required: Yes
+
+## Response Elements
+
+The following elements are returned by the service.
+
+**destinationCapacityReservation**
+
+Information about the destination Capacity Reservation.
+
+Type: [CapacityReservation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityReservation.html) object
+
+**instanceCount**
+
+The number of instances that were moved from the source Capacity Reservation to the
+destination Capacity Reservation.
+
+Type: Integer
+
+**requestId**
+
+The ID of the request.
+
+Type: String
+
+**sourceCapacityReservation**
+
+Information about the source Capacity Reservation.
+
+Type: [CapacityReservation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityReservation.html) object
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/MoveCapacityReservationInstances)
+
+- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/MoveCapacityReservationInstances)
+
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/MoveCapacityReservationInstances)
+
+- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/MoveCapacityReservationInstances)
+
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/MoveCapacityReservationInstances)
+
+- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/MoveCapacityReservationInstances)
+
+- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/MoveCapacityReservationInstances)
+
+- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/MoveCapacityReservationInstances)
+
+- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/MoveCapacityReservationInstances)
+
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/MoveCapacityReservationInstances)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+MoveByoipCidrToIpam
+
+ProvisionByoipCidr

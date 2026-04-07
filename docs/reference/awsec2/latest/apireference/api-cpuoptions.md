@@ -1,0 +1,58 @@
+# CpuOptions
+
+The CPU options for the instance.
+
+## Contents
+
+**amdSevSnp**
+
+Indicates whether the instance is enabled for AMD SEV-SNP. For more information, see
+[AMD SEV-SNP](../../../../services/ec2/latest/userguide/sev-snp.md).
+
+Type: String
+
+Valid Values: `enabled | disabled`
+
+Required: No
+
+**coreCount**
+
+The number of CPU cores for the instance.
+
+Type: Integer
+
+Required: No
+
+**nestedVirtualization**
+
+Indicates whether the instance is enabled for nested virtualization.
+
+Type: String
+
+Valid Values: `enabled | disabled`
+
+Required: No
+
+**threadsPerCore**
+
+The number of threads per CPU core.
+
+Type: Integer
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CpuOptions)
+
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CpuOptions)
+
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CpuOptions)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+ConversionTask
+
+CpuOptionsRequest

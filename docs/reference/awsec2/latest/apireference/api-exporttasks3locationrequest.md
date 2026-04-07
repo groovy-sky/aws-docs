@@ -1,0 +1,37 @@
+# ExportTaskS3LocationRequest
+
+Describes the destination for an export image task.
+
+## Contents
+
+**S3Bucket**
+
+The destination Amazon S3 bucket.
+
+Type: String
+
+Required: Yes
+
+**S3Prefix**
+
+The prefix (logical hierarchy) in the bucket.
+
+Type: String
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ExportTaskS3LocationRequest)
+
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ExportTaskS3LocationRequest)
+
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ExportTaskS3LocationRequest)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+ExportTaskS3Location
+
+ExportToS3Task

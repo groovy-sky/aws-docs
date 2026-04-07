@@ -1,13 +1,13 @@
 # Connect to your Linux instance using an SSH client
 
 You can use Secure Shell (SSH) to connect to your Linux instance from your local computer.
-For more information about other options, see [Connect to your EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect.html).
+For more information about other options, see [Connect to your EC2 instance](connect.md).
 
 ###### Note
 
 If you receive an error while attempting to connect to your instance, make sure that
 your instance meets all of the [SSH connection prerequisites](#ssh-prereqs-linux-from-linux-macos). If it meets all of the
-prerequisites, and you're still not able to connect to your Linux instance, see [Troubleshoot issues connecting to your Amazon EC2 Linux instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstancesConnecting.html).
+prerequisites, and you're still not able to connect to your Linux instance, see [Troubleshoot issues connecting to your Amazon EC2 Linux instance](troubleshootinginstancesconnecting.md).
 
 ###### Contents
 
@@ -23,18 +23,18 @@ Before you can connect to your Linux instance using SSH, complete the following 
 
 - Check that your instance has passed its status checks.
 It can take a few minutes for an instance to be ready to accept connection requests.
-For more information, see [View status checks](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_status.html).
+For more information, see [View status checks](viewing-status.md).
 
-- [Get the required instance details](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connection-prereqs-general.html#connection-prereqs-get-info-about-instance).
+- [Get the required instance details](connection-prereqs-general.md#connection-prereqs-get-info-about-instance).
 
-- [Locate the private key and set permissions](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connection-prereqs-general.html#connection-prereqs-private-key).
+- [Locate the private key and set permissions](connection-prereqs-general.md#connection-prereqs-private-key).
 
-- [(Optional) Get the instance fingerprint](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connection-prereqs-general.html#connection-prereqs-fingerprint).
+- [(Optional) Get the instance fingerprint](connection-prereqs-general.md#connection-prereqs-fingerprint).
 
 **Allow inbound SSH traffic from your IP address.**
 
 Ensure that the security group associated with your instance allows incoming SSH
-traffic from your IP address. For more information, see [Rules to connect to instances from your computer](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules-reference.html#sg-rules-local-access).
+traffic from your IP address. For more information, see [Rules to connect to instances from your computer](security-group-rules-reference.md#sg-rules-local-access).
 
 **Install an SSH client on your local computer (if needed).**
 
@@ -114,7 +114,7 @@ RestartNeeded : True
 After you install WSL on Windows, you can connect to your Linux instance from
 your Windows computer using Linux command line tools, such as an SSH client.
 
-Follow the instructions in [Install Windows Subsystem for Linux on your EC2 Windows instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-wsl-on-ec2-windows-instance.html). If you follow the instructions
+Follow the instructions in [Install Windows Subsystem for Linux on your EC2 Windows instance](install-wsl-on-ec2-windows-instance.md). If you follow the instructions
 in Microsoft's installation guide, they install the Ubuntu distribution of Linux.
 You can install a different Linux distribution if you prefer.
 
@@ -172,7 +172,7 @@ Are you sure you want to continue connecting (yes/no)?
     fingerprint. If these fingerprints don't match, someone might be attempting
     a man-in-the-middle attack. If they match, continue to the next step. For more
     information, see [Get the instance \
-    fingerprint](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connection-prereqs-general.html#connection-prereqs-fingerprint).
+    fingerprint](connection-prereqs-general.md#connection-prereqs-fingerprint).
 
 4. Enter `yes`.
 

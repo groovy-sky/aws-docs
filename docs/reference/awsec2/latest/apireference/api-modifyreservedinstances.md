@@ -1,0 +1,118 @@
+# ModifyReservedInstances
+
+Modifies the configuration of your Reserved Instances, such as the Availability Zone,
+instance count, or instance type. The Reserved Instances to be modified must be identical,
+except for Availability Zone, network platform, and instance type.
+
+For more information, see [Modify Reserved Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-modifying.html) in the
+_Amazon EC2 User Guide_.
+
+## Request Parameters
+
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+
+**ClientToken**
+
+A unique, case-sensitive token you provide to ensure idempotency of your modification
+request. For more information, see [Ensuring\
+Idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html).
+
+Type: String
+
+Required: No
+
+**ReservedInstancesConfigurationSetItemType.N**
+
+The configuration settings for the Reserved Instances to modify.
+
+Type: Array of [ReservedInstancesConfiguration](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReservedInstancesConfiguration.html) objects
+
+Required: Yes
+
+**ReservedInstancesId.N**
+
+The IDs of the Reserved Instances to modify.
+
+Type: Array of strings
+
+Required: Yes
+
+## Response Elements
+
+The following elements are returned by the service.
+
+**requestId**
+
+The ID of the request.
+
+Type: String
+
+**reservedInstancesModificationId**
+
+The ID for the modification.
+
+Type: String
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+
+## Examples
+
+### Example
+
+This example illustrates one usage of ModifyReservedInstances.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=ModifyReservedInstances
+&ClientToken=myClientToken
+&ReservedInstancesConfigurationSetItemType.1.AvailabilityZone=us-east-1a
+&ReservedInstancesConfigurationSetItemType.1.InstanceCount=1
+&ReservedInstancesConfigurationSetItemType.1.Platform=EC2-VPC
+&ReservedInstancesConfigurationSetItemType.1.InstanceType=m1.small
+&ReservedInstancesId.1=d16f7a91-4d0f-4f19-9d7f-a74d26b1ccfa
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```
+
+<ModifyReservedInstancesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+<requestId>bef729b6-0731-4489-8881-2258746ae163</requestId>
+<reservedInstancesModificationId>rimod-3aae219d-3d63-47a9-a7e9-e764example</reservedInstancesModificationId>
+</ModifyReservedInstancesResponse>
+```
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/ModifyReservedInstances)
+
+- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ModifyReservedInstances)
+
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ModifyReservedInstances)
+
+- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ModifyReservedInstances)
+
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ModifyReservedInstances)
+
+- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ModifyReservedInstances)
+
+- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ModifyReservedInstances)
+
+- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ModifyReservedInstances)
+
+- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ModifyReservedInstances)
+
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ModifyReservedInstances)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+ModifyPublicIpDnsNameOptions
+
+ModifyRouteServer

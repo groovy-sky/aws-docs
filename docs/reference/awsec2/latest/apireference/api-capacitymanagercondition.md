@@ -1,0 +1,29 @@
+# CapacityManagerCondition
+
+Represents a filter condition for Capacity Manager queries. Contains dimension-based filtering criteria used to narrow down metric data and dimension results.
+
+## Contents
+
+**DimensionCondition**
+
+The dimension-based condition that specifies how to filter the data based on dimension values.
+
+Type: [DimensionCondition](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DimensionCondition.html) object
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CapacityManagerCondition)
+
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CapacityManagerCondition)
+
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CapacityManagerCondition)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+CapacityBlockStatus
+
+CapacityManagerDataExportResponse

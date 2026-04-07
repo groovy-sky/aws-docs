@@ -1,0 +1,45 @@
+# VerifiedAccessEndpointTarget
+
+Describes the targets for the specified Verified Access endpoint.
+
+## Contents
+
+**verifiedAccessEndpointId**
+
+The ID of the Verified Access endpoint.
+
+Type: String
+
+Required: No
+
+**verifiedAccessEndpointTargetDns**
+
+The DNS name of the target.
+
+Type: String
+
+Required: No
+
+**verifiedAccessEndpointTargetIpAddress**
+
+The IP address of the target.
+
+Type: String
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/VerifiedAccessEndpointTarget)
+
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/VerifiedAccessEndpointTarget)
+
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/VerifiedAccessEndpointTarget)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+VerifiedAccessEndpointStatus
+
+VerifiedAccessGroup
