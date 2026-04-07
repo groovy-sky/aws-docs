@@ -1,0 +1,106 @@
+# AmazonECSComputeServiceRolePolicy
+
+**Description**: Policy to enable Amazon ECS Compute to manage your EC2 instances and related resources as part of ECS managed instances
+
+`AmazonECSComputeServiceRolePolicy` is an [AWS managed policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies).
+
+## Using this policy
+
+This policy is attached to a service-linked role that allows the service to perform actions on
+your behalf. You cannot attach this policy to your users, groups, or roles.
+
+## Policy details
+
+- **Type**: Service-linked role policy
+
+- **Creation time**: March 24, 2025, 17:37 UTC
+
+- **Edited time:** February 12, 2026, 17:57 UTC
+
+- **ARN**:
+`arn:aws:iam::aws:policy/aws-service-role/AmazonECSComputeServiceRolePolicy`
+
+## Policy version
+
+**Policy version:** v6 (default)
+
+The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a
+request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
+
+## JSON policy document
+
+```json
+
+{
+  "Version" : "2012-10-17",
+  "Statement" : [
+    {
+      "Sid" : "ReadOnlyPermissionsForInstanceManagement",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:DescribeInstances",
+        "ec2:DescribeInstanceStatus",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeFleets"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "ReadOnlyPermissionsForInstanceEventWindows",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:DescribeInstanceEventWindows"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "ReadOnlyPermissionsForLaunchTemplates",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:DescribeLaunchTemplates",
+        "ec2:DescribeLaunchTemplateVersions"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "DeleteManagedLaunchTemplate",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:DeleteLaunchTemplate",
+        "ec2:DeleteLaunchTemplateVersions"
+      ],
+      "Resource" : "arn:aws:ec2:*:*:launch-template/*",
+      "Condition" : {
+        "StringEquals" : {
+          "ec2:ManagedResourceOperator" : "ecs.amazonaws.com"
+        }
+      }
+    },
+    {
+      "Sid" : "TerminateManagedInstances",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:TerminateInstances"
+      ],
+      "Resource" : "arn:aws:ec2:*:*:instance/*",
+      "Condition" : {
+        "StringEquals" : {
+          "ec2:ManagedResourceOperator" : "ecs.amazonaws.com"
+        }
+      }
+    }
+  ]
+}
+```
+
+## Learn more
+
+- [Understand versioning for IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-versioning.html)
+
+- [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+AmazonECS\_FullAccess
+
+AmazonECSInfrastructureRoleforExpressGatewayServices
