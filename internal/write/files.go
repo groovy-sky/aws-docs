@@ -28,6 +28,7 @@ func (w *FileWriter) Write(relativePath string, content string) error {
 	if !strings.HasPrefix(fullPath, w.root) {
 		return fmt.Errorf("refusing to write outside root: %s", relativePath)
 	}
+	content = sanitizeSensitiveContent(content)
 	if err := os.MkdirAll(filepath.Dir(fullPath), 0o755); err != nil {
 		return fmt.Errorf("create output directory: %w", err)
 	}
