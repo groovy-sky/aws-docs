@@ -1,0 +1,4 @@
+# Local crawler state
+metadata/crawl.db
+metadata/*.db
+metadata/*.db-*
