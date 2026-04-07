@@ -1,0 +1,57 @@
+# VectorBucket
+
+The attributes of a vector bucket.
+
+## Contents
+
+**creationTime**
+
+Date and time when the vector bucket was created.
+
+Type: Timestamp
+
+Required: Yes
+
+**vectorBucketArn**
+
+The Amazon Resource Name (ARN) of the vector bucket.
+
+Type: String
+
+Pattern: `arn:aws[-a-z0-9]*:s3vectors:[a-z0-9-]+:[0-9]{12}:bucket/[a-z0-9][a-z0-9-.]{1,61}[a-z0-9]`
+
+Required: Yes
+
+**vectorBucketName**
+
+The name of the vector bucket.
+
+Type: String
+
+Length Constraints: Minimum length of 3. Maximum length of 63.
+
+Required: Yes
+
+**encryptionConfiguration**
+
+The encryption configuration for the vector bucket.
+
+Type: [EncryptionConfiguration](api-s3vectorbuckets-encryptionconfiguration.md) object
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/s3vectors-2025-07-15/VectorBucket)
+
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3vectors-2025-07-15/VectorBucket)
+
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3vectors-2025-07-15/VectorBucket)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+ValidationExceptionField
+
+VectorBucketSummary

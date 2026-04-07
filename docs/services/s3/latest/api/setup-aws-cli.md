@@ -4,7 +4,7 @@ The Amazon S3 AWS CLI commands are organized into different sets in AWS CLI Comm
 
 - `s3` – Describes high-level commands for working with objects and buckets. These include copy, list and move actions. For a complete list of commands in this set, see [s3](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/index.html) in the AWS CLI Command Reference.
 
-- `s3api` – Describes low-level commands that manage S3 resources such as buckets, objects, sessions and multipart uploads. These commands correspond to the [Amazon S3 API](https://docs.aws.amazon.com/AmazonS3/latest/API/API_Operations_Amazon_Simple_Storage_Service.html) operations. For a complete list of CLI commands in this set, see [s3api](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/index.html) in the AWS CLI Command Reference.
+- `s3api` – Describes low-level commands that manage S3 resources such as buckets, objects, sessions and multipart uploads. These commands correspond to the [Amazon S3 API](api-operations-amazon-simple-storage-service.md) operations. For a complete list of CLI commands in this set, see [s3api](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/index.html) in the AWS CLI Command Reference.
 
 - `s3control` – Describes low-level commands that manage all other S3 resources such as Access Grants, Storage Lens groups, and Amazon S3 on Outposts buckets. These commands correspond to the [Amazon S3 Control](api-operations-aws-s3-control.md) API operations. For a complete list of CLI commands in this set, see [s3control](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/index.html) in the AWS CLI Command Reference.
 

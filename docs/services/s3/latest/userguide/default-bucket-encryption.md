@@ -11,7 +11,7 @@ applies to all new objects in your Amazon S3 buckets, and comes at no cost to yo
 If you need more control over your encryption keys, such as managing key rotation and access
 policy grants, you can elect to use server-side encryption with AWS Key Management Service (AWS KMS) keys
 (SSE-KMS), or dual-layer server-side encryption with AWS KMS keys (DSSE-KMS). For more information
-about SSE-KMS, see [Specifying server-side encryption with AWS KMS (SSE-KMS)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/specifying-kms-encryption.html). For more information about DSSE-KMS, see [Using dual-layer server-side encryption with AWS KMS keys (DSSE-KMS)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingDSSEncryption.html).
+about SSE-KMS, see [Specifying server-side encryption with AWS KMS (SSE-KMS)](specifying-kms-encryption.md). For more information about DSSE-KMS, see [Using dual-layer server-side encryption with AWS KMS keys (DSSE-KMS)](usingdssencryption.md).
 
 If you want to use a KMS key that is owned by a different account, you must have
 permission to use the key. For more information about cross-account permissions for KMS keys,
@@ -140,7 +140,7 @@ encryption KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/conce
 _AWS Key Management Service Developer Guide_.
 
 For more information about using SSE-KMS with Amazon S3, see [Using server-side encryption with AWS KMS keys (SSE-KMS)](usingkmsencryption.md). For more
-information about using DSSE-KMS, see [Using dual-layer server-side encryption with AWS KMS keys (DSSE-KMS)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingDSSEncryption.html).
+information about using DSSE-KMS, see [Using dual-layer server-side encryption with AWS KMS keys (DSSE-KMS)](usingdssencryption.md).
 
 2. When you configure your bucket to use default encryption with SSE-KMS, you can
        also enable an S3 Bucket Key. S3 Bucket Keys lower the cost of encryption by decreasing

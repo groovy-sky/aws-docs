@@ -59,7 +59,7 @@ Part of the sign-up procedure involves receiving a phone call or text message an
     a verification code on the phone keypad.
 
 When you sign up for an AWS account, an _AWS account root user_ is created. The root user has access to all AWS services
-    and resources in the account. As a security best practice, assign administrative access to a user, and use only the root user to perform [tasks that require root user access](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#root-user-tasks).
+    and resources in the account. As a security best practice, assign administrative access to a user, and use only the root user to perform [tasks that require root user access](../../../iam/latest/userguide/id-root-user.md#root-user-tasks).
 
 AWS sends you a confirmation email after the sign-up process is
 complete. At any time, you can view your current account activity and manage your account by
@@ -691,7 +691,7 @@ only the intended access to your S3 resources.
 
 ### Protect and monitor your storage
 
-- [Protecting your storage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/data-protection.html) – After
+- [Protecting your storage](data-protection.md) – After
 you create buckets and upload objects in Amazon S3, you can protect your object
 storage. For example, you can use S3 Versioning, S3 Replication, and Multi-Region Access Point
 failover controls for disaster recovery, AWS Backup to back up your data, and
@@ -728,7 +728,7 @@ The Amazon S3 REST API is an HTTP interface to Amazon S3. With the REST API,
 you use standard HTTP requests to create, fetch, and delete buckets
 and objects. To use the REST API, you can use any toolkit that
 supports HTTP. You can even use a browser to fetch objects, as long
-as they are anonymously readable. For more information, see [Developing with Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/API/developing-s3.html) in the _Amazon S3 API Reference_.
+as they are anonymously readable. For more information, see [Developing with Amazon S3](../api/developing-s3.md) in the _Amazon S3 API Reference_.
 
 To help you build applications using the language of your choice, we provide the
 following resources.
@@ -771,7 +771,7 @@ Developer Center](https://aws.amazon.com/code/Amazon-S3) and [AWS\
 Code Sample Catalog](https://docs.aws.amazon.com/code-samples/latest/catalog/welcome.html) have sample code and
 libraries written especially for Amazon S3. You can use these
 code samples to understand how to implement the Amazon S3
-API. You can also view the [_Amazon Simple Storage Service API Reference_](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html)
+API. You can also view the [_Amazon Simple Storage Service API Reference_](../api/welcome.md)
 to understand the Amazon S3 API operations in detail.
 
 ### Learn from tutorials

@@ -16,7 +16,7 @@ visit the [Service Quotas\
 console](https://console.aws.amazon.com/servicequotas/home/services/s3/quotas).
 
 You can store any number of objects in a bucket. For a list of restriction and limitations related
-to Amazon S3 general purpose buckets, see [General purpose bucket quotas, limitations, and restrictions](https://docs.aws.amazon.com/AmazonS3/latest/userguide/BucketRestrictions.html).
+to Amazon S3 general purpose buckets, see [General purpose bucket quotas, limitations, and restrictions](bucketrestrictions.md).
 
 ## General purpose bucket settings
 
@@ -41,7 +41,7 @@ objects. You can use Object Lock to help meet regulatory requirements that requi
 to add another layer of protection against object changes or deletion. For more information, see
 [Locking objects with Object Lock](object-lock.md).
 
-- **Tags** – An AWS tag is a key-value pair that holds metadata. You attach the tags to your Amazon S3 resources, such as buckets. You can tag resources when you create them or manage tags on existing resources. You can use tags for cost allocation to track storage costs by bucket tag in AWS Billing and Cost Management. You can also use tags for attribute-based access control (ABAC), to scale access permissions and grant access to S3 resources based on their tags. For more information, see [Using tags with S3 general purpose buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/buckets-tagging.html).
+- **Tags** – An AWS tag is a key-value pair that holds metadata. You attach the tags to your Amazon S3 resources, such as buckets. You can tag resources when you create them or manage tags on existing resources. You can use tags for cost allocation to track storage costs by bucket tag in AWS Billing and Cost Management. You can also use tags for attribute-based access control (ABAC), to scale access permissions and grant access to S3 resources based on their tags. For more information, see [Using tags with S3 general purpose buckets](buckets-tagging.md).
 
 After you create a general purpose bucket, or when you're creating a general purpose bucket by using the Amazon S3 console, you can also
 use the following settings to control other aspects of your bucket's behavior:
@@ -65,10 +65,10 @@ encryption configuration for every bucket in Amazon S3. All new objects uploaded
 automatically encrypted with SSE-S3 as the base level of encryption. If you want to use a different
 type of default encryption, you can specify server-side encryption with AWS Key Management Service (AWS KMS) keys
 (SSE-KMS), dual-layer server-side encryption with AWS KMS keys (DSSE-KMS), or server-side encryption
-with customer-provided keys (SSE-C) to encrypt your data. For more information, see [Setting default server-side encryption behavior for Amazon S3 buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-encryption.html).
+with customer-provided keys (SSE-C) to encrypt your data. For more information, see [Setting default server-side encryption behavior for Amazon S3 buckets](bucket-encryption.md).
 
 You can use the Amazon S3 console, Amazon S3 REST API, AWS Command Line Interface (AWS CLI), or AWS SDKs to create a general purpose bucket.
-For more information about the permissions required to create a general purpose bucket, see [CreateBucket](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucket.html) in the
+For more information about the permissions required to create a general purpose bucket, see [CreateBucket](../api/api-createbucket.md) in the
 _Amazon Simple Storage Service API Reference_.
 
 If you're having trouble creating an Amazon S3 bucket, see [How do I troubleshoot errors when\
@@ -165,7 +165,7 @@ the `bucket-owner-full-control` canned ACL.
 If you apply the **Bucket owner preferred** setting, to
 require all Amazon S3 uploads to include the `bucket-owner-full-control`
 canned ACL, you can [add a\
-bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ensure-object-ownership.html#ensure-object-ownership-bucket-policy) that allows only object uploads that use this
+bucket policy](ensure-object-ownership.md#ensure-object-ownership-bucket-policy) that allows only object uploads that use this
 ACL.
 
 - **Object writer** – The AWS account that uploads an
@@ -202,7 +202,7 @@ permission is needed. To enable ACLs, you must have the
 
 10. (Optional) Under **Tags**, you can choose to add tags to your bucket. With
      AWS cost allocation, you can use bucket tags to annotate billing for your use of a bucket. A tag is a
-     key-value pair that represents a label that you assign to a bucket. For more information, see [Using cost allocation S3 bucket tags](https://docs.aws.amazon.com/AmazonS3/latest/userguide/CostAllocTagging.html).
+     key-value pair that represents a label that you assign to a bucket. For more information, see [Using cost allocation S3 bucket tags](costalloctagging.md).
 
     To add a bucket tag, enter a **Key** and optionally a
      **Value** and choose **Add Tag**.
@@ -226,10 +226,10 @@ the _AWS Key Management Service Developer Guide_.
 
 Buckets and new objects are encrypted by using server-side encryption with Amazon S3 managed keys
 (SSE-S3) as the base level of encryption configuration. For more information about default encryption,
-see [Setting default server-side encryption behavior for Amazon S3 buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-encryption.html). For more information about
+see [Setting default server-side encryption behavior for Amazon S3 buckets](bucket-encryption.md). For more information about
 SSE-S3, see [Using server-side encryption with Amazon S3 managed keys (SSE-S3)](usingserversideencryption.md).
 
-For more information about using server-side encryption to encrypt your data, see [Protecting data with encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingEncryption.html).
+For more information about using server-side encryption to encrypt your data, see [Protecting data with encryption](usingencryption.md).
 
 12. If you chose **Server-side encryption with AWS Key Management Service keys (SSE-KMS)** or
      **Dual-layer server-side encryption with AWS Key Management Service (AWS KMS) keys (DSSE-KMS)**, do the
@@ -260,8 +260,8 @@ KMS key that isn't listed, you must enter your KMS key ARN. If you want to use a
 that's owned by a different account, you must first have permission to use the key, and then you
 must enter the KMS key ARN. For more information about cross account permissions for KMS keys,
 see [Creating KMS keys that other accounts can use](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html#cross-account-console) in the
-_AWS Key Management Service Developer Guide_. For more information about SSE-KMS, see [Specifying server-side encryption with AWS KMS (SSE-KMS)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/specifying-kms-encryption.html). For more
-information about DSSE-KMS, see [Using dual-layer server-side encryption with AWS KMS keys (DSSE-KMS)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingDSSEncryption.html).
+_AWS Key Management Service Developer Guide_. For more information about SSE-KMS, see [Specifying server-side encryption with AWS KMS (SSE-KMS)](specifying-kms-encryption.md). For more
+information about DSSE-KMS, see [Using dual-layer server-side encryption with AWS KMS keys (DSSE-KMS)](usingdssencryption.md).
 
 When you use an AWS KMS key for server-side encryption in Amazon S3, you must
 choose a symmetric encryption KMS key. Amazon S3 supports only symmetric encryption KMS keys and not
@@ -270,7 +270,7 @@ asymmetric KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/find-
 
     2. When you configure your bucket to use default encryption with SSE-KMS, you can also use S3 Bucket Keys.
         S3 Bucket Keys lower the cost of encryption by decreasing request traffic from Amazon S3 to AWS KMS. For more
-        information, see [Reducing the cost of SSE-KMS with Amazon S3 Bucket Keys](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-key.html). S3 Bucket Keys aren't
+        information, see [Reducing the cost of SSE-KMS with Amazon S3 Bucket Keys](bucket-key.md). S3 Bucket Keys aren't
         supported for DSSE-KMS.
 
        By default, S3 Bucket Keys are enabled in the Amazon S3 console. We recommend leaving S3 Bucket Keys enabled to
@@ -303,11 +303,11 @@ When you use the AWS SDKs to create a general purpose bucket, you must create a 
 client to send a request to create a bucket. As a best practice, you should create your client and
 bucket in the same AWS Region. If you don't specify a Region when you create a client or a bucket,
 Amazon S3 uses the default Region, US East (N. Virginia). If you want to constrain the bucket creation to a
-specific AWS Region, use the [LocationConstraint](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucketConfiguration.html) condition key.
+specific AWS Region, use the [LocationConstraint](../api/api-createbucketconfiguration.md) condition key.
 
 To create a client to access a dual-stack endpoint, you must specify an AWS Region. For
 more information, see [Using Amazon S3\
-dual-stack endpoints](https://docs.aws.amazon.com/AmazonS3/latest/API/dual-stack-endpoints.html#dual-stack-endpoints-description) in the _Amazon S3 API Reference_. For a list of
+dual-stack endpoints](../api/dual-stack-endpoints.md#dual-stack-endpoints-description) in the _Amazon S3 API Reference_. For a list of
 available AWS Regions, see [Amazon Simple Storage Service\
 endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/s3.html) in the _AWS General Reference_.
 
@@ -316,7 +316,7 @@ client uses this endpoint to communicate with Amazon S3:
 `s3.region.amazonaws.com`. If your
 Region launched after March 20, 2019, your client and bucket must be in the same
 Region. However, you can use a client in the US East (N. Virginia) Region to create a bucket in
-any Region that launched before March 20, 2019. For more information, see [Legacy endpoints](https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html#s3-legacy-endpoints).
+any Region that launched before March 20, 2019. For more information, see [Legacy endpoints](virtualhosting.md#s3-legacy-endpoints).
 
 These AWS SDK code examples perform the following tasks:
 
@@ -336,11 +336,11 @@ create the bucket in the Region where you created a client.
 _location_ subresource that's associated with the bucket.
 
 For additional AWS SDK examples and examples in other languages, see [Use\
-CreateBucket with an AWS SDK or CLI](https://docs.aws.amazon.com/AmazonS3/latest/API/s3_example_s3_CreateBucket_section.html) in the _Amazon Simple Storage Service API Reference_.
+CreateBucket with an AWS SDK or CLI](../api/s3-example-s3-createbucket-section.md) in the _Amazon Simple Storage Service API Reference_.
 
 Java
 
-For examples of how to create a bucket with the AWS SDK for Java, see [Create a bucket](https://docs.aws.amazon.com/AmazonS3/latest/API/s3_example_s3_CreateBucket_section.html) in the _Amazon S3 API Reference_.
+For examples of how to create a bucket with the AWS SDK for Java, see [Create a bucket](../api/s3-example-s3-createbucket-section.md) in the _Amazon S3 API Reference_.
 
 When using the AWS SDK for Java v2, you can create a general purpose bucket with a globally unique identifier (GUID) appended to the bucket name to ensure uniqueness. Use `UUID.randomUUID().toString().replace("-", "")` to generate a GUID and concatenate it with your base bucket name. This approach helps avoid bucket naming conflicts across all AWS accounts.
 

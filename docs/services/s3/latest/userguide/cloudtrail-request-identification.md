@@ -2,7 +2,7 @@
 
 In Amazon S3, you can identify requests using an AWS CloudTrail event log. AWS CloudTrail is the
 preferred way of identifying Amazon S3 requests, but if you are using Amazon S3 server access
-logs, see [Using Amazon S3 server access logs to identify requests](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-s3-access-logs-to-identify-requests.html).
+logs, see [Using Amazon S3 server access logs to identify requests](using-s3-access-logs-to-identify-requests.md).
 
 ###### Topics
 
@@ -54,7 +54,7 @@ you must enable CloudTrail data events. (This feature is turned off by
 default.)
 
 AWS CloudTrail is the preferred method for identifying Signature Version 2 requests.
-If you're using Amazon S3 server-access logs, see [Identifying Signature Version 2 requests by using Amazon S3 access logs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-s3-access-logs-to-identify-requests.html#using-s3-access-logs-to-identify-sigv2-requests).
+If you're using Amazon S3 server-access logs, see [Identifying Signature Version 2 requests by using Amazon S3 access logs](using-s3-access-logs-to-identify-requests.md#using-s3-access-logs-to-identify-sigv2-requests).
 
 ###### Topics
 
@@ -315,7 +315,7 @@ identifying any anonymous requests to your buckets.
 - This query only retrieves information from the time at which
 logging was enabled.
 
-If you are using Amazon S3 server access logs, see [Identifying object access requests by using Amazon S3 access logs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-s3-access-logs-to-identify-requests.html#using-s3-access-logs-to-identify-objects-access).
+If you are using Amazon S3 server access logs, see [Identifying object access requests by using Amazon S3 access logs](using-s3-access-logs-to-identify-requests.md#using-s3-access-logs-to-identify-objects-access).
 
 [Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
 
