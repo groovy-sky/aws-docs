@@ -1,0 +1,65 @@
+# IAM profile
+
+You can configure a named profile to connect to Amazon Athena using the ODBC driver. You
+can use a named profile with one of the following credential sources:
+
+- `Ec2InstanceMetadata` – Retrieves credentials from the Amazon EC2
+Instance Metadata Service (IMDS). Use this when running on an Amazon EC2 instance.
+
+- `EcsContainer` – Retrieves credentials from the Amazon ECS Task
+Role endpoint. Use this when running in an Amazon ECS container.
+
+- `Environment` – Retrieves credentials from environment
+variables ( `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`,
+`AWS_SESSION_TOKEN`).
+
+Set the `credential_source` parameter in your AWS profile configuration
+to the appropriate value for your environment. If you want to use a custom credentials
+provider in a named profile, specify a value for the `plugin_name` parameter
+in your profile configuration.
+
+## Authentication type
+
+**Connection string name****Parameter type****Default value****Connection string example**AuthenticationTypeRequired`IAM Credentials``AuthenticationType=IAM Profile;`
+
+## AWS profile
+
+The profile name to use for your ODBC connection. For more information about
+profiles, see [Using named profiles](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html#cli-configure-files-using-profiles) in the _AWS Command Line Interface User Guide_.
+
+**Connection string name****Parameter type****Default value****Connection string example**AWSProfileRequired`none``AWSProfile=default;`
+
+## Preferred role
+
+The Amazon Resource Name (ARN) of the role to assume. The preferred role parameter
+is used when the custom credentials provider is specified by the
+`plugin_name` parameter in your profile configuration. For more
+information about ARN roles, see [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the
+_AWS Security Token Service API Reference_.
+
+**Connection string name****Parameter type****Default value****Connection string example**preferred\_roleOptional`none``preferred_role=arn:aws:IAM::123456789012:id/user1;`
+
+## Session duration
+
+The duration, in seconds, of the role session. For more information about session
+duration, see [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the
+_AWS Security Token Service API Reference_. The session duration
+parameter is used when the custom credentials provider is specified by the
+`plugin_name` parameter in your profile configuration.
+
+**Connection string name****Parameter type****Default value****Connection string example**durationOptional`900``duration=900;`
+
+## Plugin name
+
+Specifies the name of a custom credentials provider used in a named profile. This
+parameter can take the same values as those in the **Authentication**
+**Type** field of the ODBC Data Source Administrator, but is used only by
+`AWSProfile` configuration.
+
+**Connection string name****Parameter type****Default value****Connection string example**plugin\_nameOptional`none``plugin_name=AzureAD;`
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+IAM credentials
+
+AD FS
