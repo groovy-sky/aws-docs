@@ -1,0 +1,31 @@
+# Encrypting client connections with SSL/TLS to MySQL DB instances on Amazon RDS
+
+Secure Sockets Layer (SSL) is an industry-standard protocol for securing network
+connections between client and server. After SSL version 3.0, the name was changed to
+Transport Layer Security (TLS). Amazon RDS supports SSL/TLS encryption for MySQL DB instances.
+Using SSL/TLS, you can encrypt a connection between your application client and your MySQL
+DB instance. SSL/TLS support is available in all AWS Regions for MySQL.
+
+With Amazon RDS, you can secure data in transit by encrypting client connections to MySQL DB
+instances with SSL/TLS, requiring SSL/TLS for all connections to a MySQL DB instance, and
+connecting from the MySQL command-line client with SSL/TLS (encrypted). The following
+sections provide guidance on configuring and utilizing SSL/TLS encryption for MySQL DB
+instances on Amazon RDS.
+
+###### Topics
+
+- [SSL/TLS support for MySQL DB instances on Amazon RDS](mysql-concepts-sslsupport.md)
+
+- [Requiring SSL/TLS for specific user accounts to a MySQL DB instance on Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql-ssl-connections.require-ssl-users.html)
+
+- [Requiring SSL/TLS for all connections to a MySQL DB instance on Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql-ssl-connections.require-ssl.html)
+
+- [Connecting to your MySQL DB instance on Amazon RDS with SSL/TLS from the MySQL command-line client (encrypted)](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectToInstanceSSL.CLI.html)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+Password
+validation
+
+SSL/TLS support with
+MySQL

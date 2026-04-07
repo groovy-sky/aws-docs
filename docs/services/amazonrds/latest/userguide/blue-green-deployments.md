@@ -1,0 +1,35 @@
+# Using Amazon RDS Blue/Green Deployments for database updates
+
+A blue/green deployment copies a production database environment to a separate,
+synchronized staging environment. By using Amazon RDS Blue/Green Deployments, you
+can make changes to the database in the staging environment without affecting the production
+environment. For example, you can upgrade the major or minor DB engine version or change
+database parameters in the staging environment. When you're ready, you can promote the
+staging environment to be the new production database environment, with downtime typically
+under one minute.
+
+###### Note
+
+Currently, Blue/Green Deployments are supported for RDS for MariaDB, RDS for MySQL, and RDS for PostgreSQL only. For Amazon Aurora availability, see
+[Using Amazon Aurora\
+Blue/Green Deployments for database updates](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/blue-green-deployments.html) in the _Amazon Aurora_
+_User Guide_.
+
+###### Topics
+
+- [Overview of Amazon RDS Blue/Green Deployments](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments-overview.html)
+
+- [Creating a blue/green deployment in Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments-creating.html)
+
+- [Viewing a blue/green deployment in Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments-viewing.html)
+
+- [Switching a blue/green deployment in Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments-switching.html)
+
+- [Deleting a blue/green deployment in Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments-deleting.html)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+Restoring a DB instance or a Multi-AZ DB cluster
+
+Overview of Blue/Green
+Deployments

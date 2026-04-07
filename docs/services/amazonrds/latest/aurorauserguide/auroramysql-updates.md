@@ -1,0 +1,39 @@
+# Database engine updates for Amazon Aurora MySQL
+
+Amazon Aurora releases updates regularly. Updates are applied to Aurora DB clusters during system
+maintenance windows. The timing when updates are applied depends on the region and
+maintenance window setting for the DB cluster, as well as the type of update.
+
+Amazon Aurora releases are made available to all AWS Regions over the course of multiple days.
+Some Regions might temporarily show an engine version that isn't available in a different Region yet.
+
+Updates are applied to all instances in a DB cluster at the same time. An update requires a database restart on
+all instances in a DB cluster, so you experience 20 to 30 seconds of downtime, after which you can resume using
+your DB cluster or clusters. You can view or change your maintenance window settings from the
+[AWS Management Console](https://console.aws.amazon.com/).
+
+For details about the Aurora MySQL versions that are supported by Amazon Aurora, see the [_Release Notes for Aurora MySQL_](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/Welcome.html).
+
+Following, you can learn how to choose the right Aurora MySQL version for your cluster, how to specify the
+version when you create or upgrade a cluster, and the procedures to upgrade a cluster from one version to
+another with minimal interruption.
+
+###### Topics
+
+- [Checking Aurora MySQL version numbers](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Updates.Versions.html)
+
+- [Long-term support (LTS) and beta releases for Amazon Aurora MySQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Update.SpecialVersions.html)
+
+- [Preparing for Amazon Aurora MySQL-Compatible Edition version 2 end of standard support](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.MySQL57.EOL.html)
+
+- [Preparing for Amazon Aurora MySQL-Compatible Edition version 1 end of life](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.MySQL56.EOL.html)
+
+- [Upgrading Amazon Aurora MySQL DB clusters](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Updates.Upgrading.html)
+
+- [Database engine updates and fixes for Amazon Aurora MySQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Updates.RN.html)
+
+[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+
+information\_schema tables
+
+Checking version numbers
