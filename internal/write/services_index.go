@@ -14,6 +14,11 @@ type serviceEntry struct {
 	Link string
 }
 
+type docBucket struct {
+	SectionName string
+	Entries     []serviceEntry
+}
+
 type ServicesIndexRunInfo struct {
 	Mode        string
 	Status      string
@@ -23,26 +28,52 @@ type ServicesIndexRunInfo struct {
 
 func (w *FileWriter) WriteServicesIndex(outputDir string, runInfo ServicesIndexRunInfo) error {
 	outputRoot := filepath.Join(w.root, filepath.Clean(outputDir))
-	servicesRoot := filepath.Join(outputRoot, "services")
-	entries, err := collectServiceEntries(servicesRoot, w.root)
+	buckets := make([]docBucket, 0, 3)
+
+	serviceEntries, err := collectBucketEntries(filepath.Join(outputRoot, "services"), w.root)
 	if err != nil {
 		return err
 	}
+	if len(serviceEntries) > 0 {
+		buckets = append(buckets, docBucket{SectionName: "Services", Entries: serviceEntries})
+	}
 
-	content := buildServicesIndexMarkdown(entries, runInfo)
+	referenceEntries, err := collectBucketEntries(filepath.Join(outputRoot, "reference"), w.root)
+	if err != nil {
+		return err
+	}
+	if len(referenceEntries) > 0 {
+		buckets = append(buckets, docBucket{SectionName: "Reference", Entries: referenceEntries})
+	}
+
+	generalEntries, err := collectBucketEntries(filepath.Join(outputRoot, "general"), w.root)
+	if err != nil {
+		return err
+	}
+	if len(generalEntries) == 0 {
+		link, found := pickServiceLink(filepath.Join(outputRoot, "general"), w.root)
+		if found {
+			generalEntries = []serviceEntry{{Name: "General", Link: link}}
+		}
+	}
+	if len(generalEntries) > 0 {
+		buckets = append(buckets, docBucket{SectionName: "General", Entries: generalEntries})
+	}
+
+	content := buildServicesIndexMarkdown(buckets, runInfo)
 	if err := w.Write("SERVICES.md", content); err != nil {
 		return fmt.Errorf("write root services index: %w", err)
 	}
 	return nil
 }
 
-func collectServiceEntries(servicesRoot string, repoRoot string) ([]serviceEntry, error) {
-	items, err := os.ReadDir(servicesRoot)
+func collectBucketEntries(bucketRoot string, repoRoot string) ([]serviceEntry, error) {
+	items, err := os.ReadDir(bucketRoot)
 	if err != nil {
 		if os.IsNotExist(err) {
 			return []serviceEntry{}, nil
 		}
-		return nil, fmt.Errorf("read services directory: %w", err)
+		return nil, fmt.Errorf("read bucket directory: %w", err)
 	}
 
 	entries := make([]serviceEntry, 0, len(items))
@@ -52,7 +83,7 @@ func collectServiceEntries(servicesRoot string, repoRoot string) ([]serviceEntry
 		}
 
 		serviceKey := item.Name()
-		servicePath := filepath.Join(servicesRoot, serviceKey)
+		servicePath := filepath.Join(bucketRoot, serviceKey)
 		link, found := pickServiceLink(servicePath, repoRoot)
 		if !found {
 			continue
@@ -131,40 +162,44 @@ func humanizeServiceName(value string) string {
 	return strings.Join(parts, " ")
 }
 
-func buildServicesIndexMarkdown(entries []serviceEntry, runInfo ServicesIndexRunInfo) string {
+func buildServicesIndexMarkdown(buckets []docBucket, runInfo ServicesIndexRunInfo) string {
 	var builder strings.Builder
 	builder.WriteString("# Parsed Services\n\n")
-	builder.WriteString("This file is auto-generated after crawl runs and lists currently parsed services.\n\n")
+	builder.WriteString("This file is auto-generated after crawl runs and lists currently mirrored content.\n\n")
+
+	hasContent := false
+	for _, bucket := range buckets {
+		if len(bucket.Entries) == 0 {
+			continue
+		}
+		hasContent = true
+		builder.WriteString(fmt.Sprintf("## %s (%d)\n\n", bucket.SectionName, len(bucket.Entries)))
+		for _, entry := range bucket.Entries {
+			builder.WriteString("- [")
+			builder.WriteString(entry.Name)
+			builder.WriteString("](")
+			builder.WriteString(entry.Link)
+			builder.WriteString(")\n")
+		}
+		builder.WriteString("\n")
+	}
+
+	if !hasContent {
+		builder.WriteString("No content found yet.\n\n")
+	}
+
 	builder.WriteString("## Last run\n\n")
-	builder.WriteString("- Mode: `")
+	builder.WriteString("Last run: mode=")
 	builder.WriteString(strings.TrimSpace(runInfo.Mode))
-	builder.WriteString("`\n")
-	builder.WriteString("- Status: `")
+	builder.WriteString(", status=")
 	builder.WriteString(strings.TrimSpace(runInfo.Status))
-	builder.WriteString("`\n")
-	builder.WriteString("- Updated at (UTC): `")
+	builder.WriteString(", updated_at_utc=")
 	builder.WriteString(runInfo.GeneratedAt.UTC().Format(time.RFC3339))
-	builder.WriteString("`\n")
 	if strings.TrimSpace(runInfo.Error) != "" {
-		builder.WriteString("- Error: `")
+		builder.WriteString(", error=")
 		builder.WriteString(runInfo.Error)
-		builder.WriteString("`\n")
 	}
 	builder.WriteString("\n")
-
-	if len(entries) == 0 {
-		builder.WriteString("No parsed services found yet.\n")
-		return builder.String()
-	}
-
-	builder.WriteString(fmt.Sprintf("Total services: %d\n\n", len(entries)))
-	for _, entry := range entries {
-		builder.WriteString("- [")
-		builder.WriteString(entry.Name)
-		builder.WriteString("](")
-		builder.WriteString(entry.Link)
-		builder.WriteString(")\n")
-	}
 
 	return builder.String()
 }

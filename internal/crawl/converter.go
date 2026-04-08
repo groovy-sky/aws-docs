@@ -16,6 +16,8 @@ import (
 
 var blankLinePattern = regexp.MustCompile(`\n{3,}`)
 
+const docsSourceAttribution = "All content copied from https://docs.aws.amazon.com/."
+
 type Converter struct {
 	config config.Config
 	mapper *Mapper
@@ -39,6 +41,7 @@ func (c *Converter) Convert(document ExtractedDocument, sourceURL string) (Markd
 	}
 
 	normalized := normalizeMarkdown(markdownText)
+	normalized = appendSourceAttribution(normalized)
 	hash := sha256.Sum256([]byte(normalized))
 
 	return MarkdownDocument{
@@ -135,4 +138,12 @@ func normalizeMarkdown(value string) string {
 	value = blankLinePattern.ReplaceAllString(value, "\n\n")
 	value = strings.TrimSpace(value) + "\n"
 	return value
+}
+
+func appendSourceAttribution(markdown string) string {
+	markdown = strings.TrimSpace(markdown)
+	if markdown == "" {
+		return docsSourceAttribution + "\n"
+	}
+	return markdown + "\n\n" + docsSourceAttribution + "\n"
 }

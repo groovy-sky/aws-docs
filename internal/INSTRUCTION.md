@@ -31,7 +31,7 @@ This document stores the current runtime logic of the crawler so future work can
 	- `crawl.NewExtractor`
 	- `crawl.NewConverter`
 	- `crawl.NewCrawler`
-- At the end of every run (success or failure), `write.WriteServicesIndex` updates root `SERVICES.md` with run metadata and discovered service links.
+- At the end of every run (success or failure), `write.WriteServicesIndex` updates root `SERVICES.md` with a structured view grouped into three sections — `## Services`, `## Reference`, and `## General` — each listing their entries with entry counts, followed by a one-line `## Last run` summary. The general section falls back to a single `docs/general/index.md` entry when no subdirectories with markdown files are found.
 
 ## Crawl Pipeline
 
@@ -98,7 +98,7 @@ Current redirect handling:
 - `Converter` rewrites in-domain documentation links to local relative markdown links.
 - Link rewriting is host-based for `docs.aws.amazon.com` and is not gated by include/exclude crawl filters, so markdown stays repository-local even when crawl filters skip those URLs.
 - Non-document asset href values (for example image and binary file extensions) stay absolute.
-- Conversion uses `html-to-markdown` then normalizes whitespace for deterministic output.
+- Conversion uses `html-to-markdown` then normalizes whitespace for deterministic output, and appends a source attribution footer that states all content was copied from `https://docs.aws.amazon.com/`.
 - Content hash is SHA-256 of normalized markdown.
 
 ## URL to Path Mapping

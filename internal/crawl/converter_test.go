@@ -7,6 +7,27 @@ import (
 	"github.com/groovy-sky/aws-docs/internal/config"
 )
 
+func TestConvertAppendsSourceAttribution(t *testing.T) {
+	converter := NewConverter(config.Default(), NewMapper("docs"), nil)
+
+	document := ExtractedDocument{
+		CanonicalURL: "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+		HTML:         "<h1>VPC</h1><p>Example content.</p>",
+	}
+
+	markdownDocument, err := converter.Convert(document, document.CanonicalURL)
+	if err != nil {
+		t.Fatalf("Convert returned error: %v", err)
+	}
+
+	if !strings.Contains(markdownDocument.Markdown, "All content copied from https://docs.aws.amazon.com/.") {
+		t.Fatalf("Convert markdown missing attribution footer:\n%s", markdownDocument.Markdown)
+	}
+	if !strings.HasSuffix(markdownDocument.Markdown, "All content copied from https://docs.aws.amazon.com/.\n") {
+		t.Fatalf("Convert markdown should end with attribution footer:\n%s", markdownDocument.Markdown)
+	}
+}
+
 func TestRewriteHrefRewritesInDomainLinkEvenWhenExcludedByFilters(t *testing.T) {
 	cfg := config.Default()
 	cfg.ExcludePathPatterns = []string{"/aws-sdk-php/v3/"}
