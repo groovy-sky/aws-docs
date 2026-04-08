@@ -626,7 +626,7 @@ A widget of type `text` can have one or two parameters in the `properties` secti
 and the `transparent` field is optional.
 
 For more information about the style of markdown supported in CloudWatch text widgets, see
-[Using Markdown in the Console](../../../../general/general/latest/gr/aws-markdown.md).
+[Using Markdown in the Console](../../../../general/latest/gr/aws-markdown.md).
 
 **markdown**
 
@@ -2270,8 +2270,10 @@ currently in ALARM or INSUFFICIENT\_DATA state:
 }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Tag
 
 GetMetricWidgetImage: Metric Widget Structure and Syntax
+
+All content copied from https://docs.aws.amazon.com/.

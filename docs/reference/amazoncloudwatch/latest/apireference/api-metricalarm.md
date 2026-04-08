@@ -319,7 +319,7 @@ Required: No
 
 Sets how this alarm is to handle missing data points. The valid values are
 `breaching`, `notBreaching`, `ignore`, and
-`missing`. For more information, see [Configuring how CloudWatch alarms treat missing data](../../../../services/amazoncloudwatch/latest/monitoring/alarmthatsendsemail-alarms-and-missing-data.md).
+`missing`. For more information, see [Configuring how CloudWatch alarms treat missing data](../../../../services/amazoncloudwatch/latest/monitoring/alarmthatsendsemail.md#alarms-and-missing-data).
 
 If this parameter is omitted, the default behavior of `missing` is
 used.
@@ -354,8 +354,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/monitoring-2010-08-01/metricalarm.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Metric
 
 MetricCharacteristics
+
+All content copied from https://docs.aws.amazon.com/.

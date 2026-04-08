@@ -1,0 +1,31 @@
+# Amazon Virtual Private Cloud (Amazon VPC)
+
+The following example shows a component configuration in JSON format for Amazon VPC.
+
+```json
+
+{
+  "alarmMetrics": [
+    {
+      "alarmMetricName": "NetworkAddressUsage",
+      "monitor": true
+    },
+    {
+      "alarmMetricName": "NetworkAddressUsagePeered",
+      "monitor": true
+    },
+    {
+      "alarmMetricName": "VPCFirewallQueryVolume",
+      "monitor": true
+    }
+  ]
+}
+```
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Amazon SNS topic
+
+Amazon VPC Network Address Translation (NAT) gateways
+
+All content copied from https://docs.aws.amazon.com/.

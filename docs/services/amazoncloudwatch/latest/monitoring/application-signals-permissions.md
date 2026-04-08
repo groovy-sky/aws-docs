@@ -1,0 +1,172 @@
+# Permissions required for Application Signals
+
+This section explains the permissions necessary for you to enable, manage, and operate
+Application Signals.
+
+## Permissions to enable and manage Application Signals
+
+To manage Application Signals, you must be signed on with the required permissions. To view the contents of the **CloudWatchApplicationSignalsFullAccess** policy, see [CloudWatchApplicationSignalsFullAccess](../../../aws-managed-policy/latest/reference/cloudwatchapplicationsignalsfullaccess.md).
+
+To enable Application Signals on Amazon EC2, or custom
+architectures, see [Enable Application Signals on Amazon EC2](cloudwatch-application-signals-enable-ec2main.md). To enable and manage
+Application Signals on Amazon EKS using the [Amazon CloudWatch Observability EKS\
+add-on](install-cloudwatch-observability-eks-addon.md), you need the following permissions.
+
+###### Important
+
+These permissions include `iam:PassRole` with `Resource "*”`
+and `eks:CreateAddon` with `Resource “*”`. These are powerful
+permissions and you should use caution in granting them.
+
+JSON
+
+```json
+
+{
+    "Version":"2012-10-17",
+    "Statement": [
+    {
+    "Sid": "CloudWatchApplicationSignalsEksAddonManagementPermissions",
+    "Effect": "Allow",
+    "Action": [
+    "eks:AccessKubernetesApi",
+    "eks:CreateAddon",
+    "eks:DescribeAddon",
+    "eks:DescribeAddonConfiguration",
+    "eks:DescribeAddonVersions",
+    "eks:DescribeCluster",
+    "eks:DescribeUpdate",
+    "eks:ListAddons",
+    "eks:ListClusters",
+    "eks:ListUpdates",
+    "iam:ListRoles",
+    "iam:PassRole"
+    ],
+    "Resource": "*",
+    "Condition": {
+    "StringEquals": {
+    "iam:PassedToService": [
+    "eks.amazonaws.com",
+    "application-signals.cloudwatch.amazonaws.com"
+    ]
+    }
+    }
+    },
+    {
+    "Sid": "CloudWatchApplicationSignalsEksCloudWatchObservabilityAddonManagementPermissions",
+    "Effect": "Allow",
+    "Action": [
+    "eks:DeleteAddon",
+    "eks:UpdateAddon"
+    ],
+    "Resource": "arn:aws:eks:*:*:addon/*/amazon-cloudwatch-observability/*"
+    }
+    ]
+    }
+
+```
+
+The Application Signals dashboard shows the AWS Service Catalog AppRegistry
+applications that your SLOs are associated with. To see these applications in the SLO
+pages, you must have the following permissions:
+
+JSON
+
+```json
+
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Sid": "CloudWatchApplicationSignalsTaggingReadPermissions",
+            "Effect": "Allow",
+            "Action": "tag:GetResources",
+            "Resource": "*"
+        }
+    ]
+}
+
+```
+
+## Operating Application Signals
+
+Service operators who are using Application Signals to monitor services and SLOs must
+be signed on to an account with read only permissions. To view the contents of the **CloudWatchApplicationSignalsReadOnlyAccess** policy,
+see [CloudWatchApplicationSignalsReadOnlyAccess](../../../aws-managed-policy/latest/reference/cloudwatchapplicationsignalsreadonlyaccess.md).
+
+To see which AWS Service Catalog AppRegistry Applications that your SLOs are
+associated within the Application Signals dashboard, you must have the following
+permissions:
+
+JSON
+
+```json
+
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Sid": "CloudWatchApplicationSignalsTaggingReadPermissions",
+            "Effect": "Allow",
+            "Action": "tag:GetResources",
+            "Resource": "*"
+        }
+    ]
+}
+
+```
+
+To check if Application Signals on Amazon EKS using the [Amazon CloudWatch Observability EKS\
+add-on](install-cloudwatch-observability-eks-addon.md) is enabled, you need to have the following permissions:
+
+JSON
+
+```json
+
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Sid": "CloudWatchApplicationSignalsResourceExplorerReadPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "resource-explorer-2:ListIndexes",
+                "resource-explorer-2:Search"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "CloudWatchApplicationSignalsResourceExplorerSLRPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreateServiceLinkedRole"
+            ],
+            "Resource": "arn:aws:iam::*:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer",
+            "Condition": {
+                "StringEquals": {
+                    "iam:AWSServiceName": [
+                        "resource-explorer-2.amazonaws.com"
+                    ]
+                }
+            }
+        },
+        {
+            "Sid": "CloudWatchApplicationSignalsResourceExplorerCreateIndexPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "resource-explorer-2:CreateIndex"
+            ],
+            "Resource": "arn:aws:resource-explorer-2:*:*:index/*"
+        }
+    ]
+}
+
+```
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Application Signals
+
+Supported systems
+
+All content copied from https://docs.aws.amazon.com/.

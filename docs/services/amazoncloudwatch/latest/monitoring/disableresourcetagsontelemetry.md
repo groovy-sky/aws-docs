@@ -1,0 +1,43 @@
+# Disable resource tags on telemetry
+
+If you don't need resource tags for telemetry, disable the feature. When disabled, CloudWatch stops enriching telemetry with tags. You can enable it again at any time. For more information, see [Enable resource tags on telemetry](enableresourcetagsontelemetry.md).
+
+Verify you have permissions to disable resource tags for telemetry.
+
+###### Note
+
+To disable resource tags on telemetry, you must be signed in to an IAM principal that has the `observabilityadmin:StopTelemetryEnrichment` and `resource-explorer-2:DeleteStreamingAccessForService` permissions.
+
+###### To disable resource tags for telemetry (CloudWatch Console)
+
+1. Open the CloudWatch console at
+    [https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch).
+
+2. In the navigation pane, choose **CloudWatch**, then choose **Settings**.
+
+3. In the **Enable resource tags for telemetry** pane, choose **off**.
+
+4. In the confirm modal, read through the consequences of disabling resource tags for telemetry, then type `confirm` and choose **Disable resource tags**.
+
+###### Note
+
+In the CloudWatch console, you must be signed in to an IAM principal that has the `observabilityadmin:GetTelemetryEnrichmentStatus` permission.
+
+###### To disable resource tags for telemetry (AWS CLI)
+
+Use the `stop-telemetry-enrichment` command to disable resource tags for telemetry.
+
+```
+
+aws observabilityadmin stop-telemetry-enrichment
+```
+
+After you complete these steps, CloudWatch stops enriching telemetry with tags. Telemetry previously enriched with resource tags can still be discovered for up to 14 days after disabling.
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Using resource tags for telemetry
+
+Troubleshooting
+
+All content copied from https://docs.aws.amazon.com/.

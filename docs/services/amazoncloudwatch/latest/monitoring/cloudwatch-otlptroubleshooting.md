@@ -1,0 +1,69 @@
+# Troubleshooting
+
+The following are the common troubleshooting scenarios and solutions for OTLP endpoint.
+
+IssueDescriptionSolution
+
+Non-existing AWS credentials when launching OCB collector
+
+Collector throws the following error when starting.
+
+_Error: invalid configuration: extensions::sigv4auth: could not retrieve credential provider: failed to refresh cached credentials, no EC2 IMDS role found, operation error ec2imds: GetMetadata, request canceled, context deadline exceeded_.
+
+Enter the correct credentials.
+
+Invalid AWS credentials
+
+Collector throws HTTP Status Code 403, Message=The security token included in the request is invalid., Details=\[\]“ when sending requests though OTLP endpoint.
+
+Refresh the AWS credentials on the collector server.
+
+Transactions Search disabled
+
+Collector throws Message=The OTLP API is supported with CloudWatch Logs as a Trace Segment Destination.
+
+Make sure Transaction Search is enabled in CloudWatch before using the OTLP endpoint for traces. For more information, see [Transaction Search](cloudwatch-transaction-search.md).Batching and timeout issues
+
+Collector throws one of these issues:
+
+- max elapsed time expired failed to make an HTTP request
+
+- io.opentelemetry.exporter.internal.http.HttpExporter - Failed to export spans. The request could not be executed. Full error message: timeout
+
+- io.opentelemetry.exporter.internal.grpc.GrpcExporter - Failed to export spans. Server responded with gRPC status code 2. Error message: timeout
+
+- rpc error: code = DeadlineExceeded desc = context deadline exceeded
+
+- rpc error: code = ResourceExhausted desc = Too many requests", "dropped\_items": 1024
+
+Tune batching and timeout policies using [batchprocessor](https://github.com/open-telemetry/opentelemetry-collector/tree/main/processor/batchprocessor).Retry issues
+
+Transient network issues between the collector and OTLP endpoint.
+
+- rpc error: code = Unavailable desc = error reading from server: read tcp
+
+- rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway);
+
+- rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 503 (Service Unavailable)
+
+Tune retry policy using [exporter](https://github.com/open-telemetry/opentelemetry-collector/blob/main/exporter/exporterhelper/README.md).Payload rejectedNAMake sure the payload sent to the trace endpoint is within the limits and restrictions. For more information, see [Endpoint limits and restrictions](cloudwatch-otlpendpoint.md#CloudWatch-LimitsandRestrictions).No auth header injected to outgoing export requests in ADOT
+
+Generic 403 error, "Missing Authentication Token":
+
+Example:
+
+`ERROR:opentelemetry.exporter.otlp.proto.http.trace_exporter:Failed to export batch code: 403, reason: Missing Authentication Token`
+
+- Verify that you're using the correct supported version of ADOT.
+
+- Make sure your credentials are set up correctly by following the [standard AWS SDK credential provider chain](../../../../reference/sdkref/latest/guide/standardized-credentials.md)
+
+Logs or spans not appearing in CloudWatch log groupsNo logs or spans are appearing in the expected CloudWatch log groups ( `aws/spans` for spans and your specified custom log group for logs).Make sure that the library to be instrumented is supported by auto-instrumentation. See supported libraries for [Java](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/docs/supported-libraries.md), [Python](http://github.com/open-telemetry/opentelemetry-python-contrib/blob/main/instrumentation/README.md), [JavaScript](https://github.com/open-telemetry/opentelemetry-js-contrib/tree/main/packages/auto-instrumentations-node) and [.NET](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/main/docs/internal/instrumentation-libraries.md).
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Enabling vended metrics in PromQL
+
+Network Monitoring
+
+All content copied from https://docs.aws.amazon.com/.

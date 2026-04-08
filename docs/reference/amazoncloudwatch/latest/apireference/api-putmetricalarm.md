@@ -28,7 +28,7 @@ The first time you create an alarm in the AWS Management Console, the AWS CLI, o
 service-linked role for you. The service-linked roles are called
 `AWSServiceRoleForCloudWatchEvents` and
 `AWSServiceRoleForCloudWatchAlarms_ActionSSM`. For more information, see
-[AWS service-linked role](../../../../services/iam/latest/userguide/id-roles-terms-and-concepts-iam-term-service-linked-role.md).
+[AWS service-linked role](../../../../services/iam/latest/userguide/id-roles-terms-and-concepts.md#iam-term-service-linked-role).
 
 Each `PutMetricAlarm` action has a maximum uncompressed payload of 120
 KB.
@@ -172,7 +172,7 @@ Required: No
 
 The number of data points that must be breaching to trigger the alarm. This is used
 only if you are setting an "M out of N" alarm. In that case, this value is the M. For
-more information, see [Evaluating an Alarm](../../../../services/amazoncloudwatch/latest/monitoring/alarmthatsendsemail-alarm-evaluation.md) in the _Amazon CloudWatch User_
+more information, see [Evaluating an Alarm](../../../../services/amazoncloudwatch/latest/monitoring/alarmthatsendsemail.md#alarm-evaluation) in the _Amazon CloudWatch User_
 _Guide_.
 
 Type: Integer
@@ -197,7 +197,7 @@ Used only for alarms based on percentiles. If you specify `ignore`, the
 alarm state does not change during periods with too few data points to be statistically
 significant. If you specify `evaluate` or omit this parameter, the alarm is
 always evaluated and possibly changes state no matter how many data points are
-available. For more information, see [Percentile-Based CloudWatch Alarms and Low Data Samples](../../../../services/amazoncloudwatch/latest/monitoring/alarmthatsendsemail-percentiles-with-low-samples.md).
+available. For more information, see [Percentile-Based CloudWatch Alarms and Low Data Samples](../../../../services/amazoncloudwatch/latest/monitoring/alarmthatsendsemail.md#percentiles-with-low-samples).
 
 Valid Values: `evaluate | ignore`
 
@@ -581,7 +581,7 @@ Required: No
 
 Sets how this alarm is to handle missing data points. If
 `TreatMissingData` is omitted, the default behavior of
-`missing` is used. For more information, see [Configuring How CloudWatch Alarms Treats Missing Data](../../../../services/amazoncloudwatch/latest/monitoring/alarmthatsendsemail-alarms-and-missing-data.md).
+`missing` is used. For more information, see [Configuring How CloudWatch Alarms Treats Missing Data](../../../../services/amazoncloudwatch/latest/monitoring/alarmthatsendsemail.md#alarms-and-missing-data).
 
 Valid Values: `breaching | notBreaching | ignore | missing`
 
@@ -898,8 +898,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/monitoring-2010-08-01/putmetricalarm.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 PutManagedInsightRules
 
 PutMetricData
+
+All content copied from https://docs.aws.amazon.com/.

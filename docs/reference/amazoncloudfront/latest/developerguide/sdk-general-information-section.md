@@ -65,8 +65,10 @@ SDK documentationCode examples
 
 Can't find what you need? Request a code example by using the **Provide feedback** link at the bottom of this page.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CloudFront edge servers
 
 Get started
+
+All content copied from https://docs.aws.amazon.com/.

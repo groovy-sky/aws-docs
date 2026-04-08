@@ -16,7 +16,7 @@ The ARN format of a Contributor Insights rule is
 `arn:aws:cloudwatch:Region:account-id:insight-rule/insight-rule-name
                   `
 
-For more information about ARN format, see [Resource Types Defined by Amazon CloudWatch](../../../../services/iam/latest/userguide/list-amazoncloudwatch-amazoncloudwatch-resources-for-iam-policies.md) in the _Amazon Web_
+For more information about ARN format, see [Resource Types Defined by Amazon CloudWatch](../../../../services/iam/latest/userguide/list-amazoncloudwatch.md#amazoncloudwatch-resources-for-iam-policies) in the _Amazon Web_
 _Services General Reference_.
 
 Type: String
@@ -98,8 +98,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/monitoring-2010-08-01/untagresource.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 TagResource
 
 Data Types
+
+All content copied from https://docs.aws.amazon.com/.

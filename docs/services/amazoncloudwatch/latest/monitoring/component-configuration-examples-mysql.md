@@ -1,0 +1,34 @@
+# RDS MariaDB and RDS MySQL
+
+The following example shows a component configuration in JSON format for RDS
+MariaDB and RDS MySQL.
+
+```json
+
+{
+  "alarmMetrics": [
+    {
+      "alarmMetricName": "CPUUtilization",
+      "monitor": true
+    }
+  ],
+  "logs": [
+    {
+      "logType": "MYSQL",
+      "monitor": true,
+    },
+    {
+      "logType": "MYSQL_SLOW_QUERY",
+      "monitor": false
+    }
+  ]
+}
+```
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Kubernetes on Amazon EC2
+
+RDS Oracle
+
+All content copied from https://docs.aws.amazon.com/.
