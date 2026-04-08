@@ -33,8 +33,10 @@ This guide describes the IAM Access Analyzer operations that you can call progra
 For general information about IAM Access Analyzer, see [Using AWS Identity and Access Management Access Analyzer](../../../../services/iam/latest/userguide/what-is-access-analyzer.md) in
 the **IAM User Guide**.
 
-This document was last published on April 5, 2026.
+This document was last published on April 8, 2026.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Actions
+
+All content copied from https://docs.aws.amazon.com/.
