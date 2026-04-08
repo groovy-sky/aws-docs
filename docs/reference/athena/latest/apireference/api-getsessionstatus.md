@@ -13,7 +13,7 @@ Gets the current status of a session.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/athena/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -62,11 +62,11 @@ Length Constraints: Minimum length of 1. Maximum length of 256.
 
 Contains information about the status of the session.
 
-Type: [SessionStatus](https://docs.aws.amazon.com/athena/latest/APIReference/API_SessionStatus.html) object
+Type: [SessionStatus](api-sessionstatus.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/athena/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **InternalServerException**
 
@@ -101,27 +101,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/athena-2017-05-18/GetSessionStatus)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/athena-2017-05-18/getsessionstatus.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/athena-2017-05-18/GetSessionStatus)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/athena-2017-05-18/getsessionstatus.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/GetSessionStatus)
+- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/getsessionstatus.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/athena-2017-05-18/GetSessionStatus)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/athena-2017-05-18/getsessionstatus.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/GetSessionStatus)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/getsessionstatus.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/athena-2017-05-18/GetSessionStatus)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/athena-2017-05-18/getsessionstatus.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/athena-2017-05-18/GetSessionStatus)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/athena-2017-05-18/getsessionstatus.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/athena-2017-05-18/GetSessionStatus)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/athena-2017-05-18/getsessionstatus.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/athena-2017-05-18/GetSessionStatus)
+- [AWS SDK for Python](../../../../services/goto/boto3/athena-2017-05-18/getsessionstatus.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/GetSessionStatus)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/getsessionstatus.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GetSessionEndpoint
 

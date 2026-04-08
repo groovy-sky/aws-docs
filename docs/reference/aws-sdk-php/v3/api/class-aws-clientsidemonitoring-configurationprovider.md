@@ -38,32 +38,32 @@ $promise = $composed();
 $config = $promise->wait();
 `
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#toc)
+### Table of Contents  [header link](class-aws-clientsidemonitoring-configurationprovider-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-clientsidemonitoring-configurationprovider-toc-interfaces.md)
 
 [ConfigurationProviderInterface](class-aws-configurationproviderinterface.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#toc-constants)
+#### Constants  [header link](class-aws-clientsidemonitoring-configurationprovider-toc-constants.md)
 
-[DEFAULT\_CLIENT\_ID](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#constant_DEFAULT_CLIENT_ID)
-= '' [DEFAULT\_ENABLED](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#constant_DEFAULT_ENABLED)
-= false [DEFAULT\_HOST](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#constant_DEFAULT_HOST)
-= '127.0.0.1' [DEFAULT\_PORT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#constant_DEFAULT_PORT)
-= 31000 [ENV\_CLIENT\_ID](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#constant_ENV_CLIENT_ID)
+[DEFAULT\_CLIENT\_ID](class-aws-clientsidemonitoring-configurationprovider-constant-default-client-id.md)
+= '' [DEFAULT\_ENABLED](class-aws-clientsidemonitoring-configurationprovider-constant-default-enabled.md)
+= false [DEFAULT\_HOST](class-aws-clientsidemonitoring-configurationprovider-constant-default-host.md)
+= '127.0.0.1' [DEFAULT\_PORT](class-aws-clientsidemonitoring-configurationprovider-constant-default-port.md)
+= 31000 [ENV\_CLIENT\_ID](class-aws-clientsidemonitoring-configurationprovider-constant-env-client-id.md)
 = 'AWS\_CSM\_CLIENT\_ID' [ENV\_CONFIG\_FILE](class-aws-abstractconfigurationprovider.md#constant_ENV_CONFIG_FILE)
-= 'AWS\_CONFIG\_FILE' [ENV\_ENABLED](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#constant_ENV_ENABLED)
-= 'AWS\_CSM\_ENABLED' [ENV\_HOST](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#constant_ENV_HOST)
-= 'AWS\_CSM\_HOST' [ENV\_PORT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#constant_ENV_PORT)
-= 'AWS\_CSM\_PORT' [ENV\_PROFILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#constant_ENV_PROFILE)
+= 'AWS\_CONFIG\_FILE' [ENV\_ENABLED](class-aws-clientsidemonitoring-configurationprovider-constant-env-enabled.md)
+= 'AWS\_CSM\_ENABLED' [ENV\_HOST](class-aws-clientsidemonitoring-configurationprovider-constant-env-host.md)
+= 'AWS\_CSM\_HOST' [ENV\_PORT](class-aws-clientsidemonitoring-configurationprovider-constant-env-port.md)
+= 'AWS\_CSM\_PORT' [ENV\_PROFILE](class-aws-clientsidemonitoring-configurationprovider-constant-env-profile.md)
 = 'AWS\_PROFILE'
 
-#### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#toc-properties)
+#### Properties  [header link](class-aws-clientsidemonitoring-configurationprovider-toc-properties.md)
 
-[$cacheKey](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#property_cacheKey)
+[$cacheKey](class-aws-clientsidemonitoring-configurationprovider-property-cachekey.md)
 : mixed
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#toc-methods)
+#### Methods  [header link](class-aws-clientsidemonitoring-configurationprovider-toc-methods.md)
 
 [cache()](class-aws-abstractconfigurationprovider.md#method_cache)
 : callable Wraps a config provider and saves provided configuration in an
@@ -71,25 +71,25 @@ instance of Aws\\CacheInterface. Forwards calls when no config found
 in cache and updates cache with the results.[chain()](class-aws-abstractconfigurationprovider.md#method_chain)
 : callable Creates an aggregate configuration provider that invokes the provided
 variadic providers one after the other until a provider returns
-configuration.[defaultProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#method_defaultProvider)
+configuration.[defaultProvider()](class-aws-clientsidemonitoring-configurationprovider-method-defaultprovider.md)
 : callable Create a default config provider that first checks for environment
 variables, then checks for a specified profile in the environment-defined
 config file location (env variable is 'AWS\_CONFIG\_FILE', file location
 defaults to ~/.aws/config), then checks for the "default" profile in the
 environment-defined config file location, and failing those uses a default
-fallback set of configuration options.[env()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#method_env)
-: callable Provider that creates CSM config from environment variables.[fallback()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#method_fallback)
-: callable Fallback config options when other sources are not set.[ini()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#method_ini)
+fallback set of configuration options.[env()](class-aws-clientsidemonitoring-configurationprovider-method-env.md)
+: callable Provider that creates CSM config from environment variables.[fallback()](class-aws-clientsidemonitoring-configurationprovider-method-fallback.md)
+: callable Fallback config options when other sources are not set.[ini()](class-aws-clientsidemonitoring-configurationprovider-method-ini.md)
 : callable Config provider that creates config using a config file whose location
 is specified by an environment variable 'AWS\_CONFIG\_FILE', defaulting to
 ~/.aws/config if not specified[memoize()](class-aws-abstractconfigurationprovider.md#method_memoize)
-: callable Wraps a config provider and caches previously provided configuration.[unwrap()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#method_unwrap)
+: callable Wraps a config provider and caches previously provided configuration.[unwrap()](class-aws-clientsidemonitoring-configurationprovider-method-unwrap.md)
 : [ConfigurationInterface](class-aws-clientsidemonitoring-configurationinterface.md)Unwraps a configuration object in whatever valid form it is in,
 always returning a ConfigurationInterface object.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#constants)
+### Constants  [header link](class-aws-clientsidemonitoring-configurationprovider-constants.md)
 
-#### DEFAULT\_CLIENT\_ID  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#constant_DEFAULT_CLIENT_ID)
+#### DEFAULT\_CLIENT\_ID  [header link](class-aws-clientsidemonitoring-configurationprovider-constant-default-client-id.md)
 
 `
     public
@@ -98,7 +98,7 @@ always returning a ConfigurationInterface object.
     = ''
 `
 
-#### DEFAULT\_ENABLED  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#constant_DEFAULT_ENABLED)
+#### DEFAULT\_ENABLED  [header link](class-aws-clientsidemonitoring-configurationprovider-constant-default-enabled.md)
 
 `
     public
@@ -107,7 +107,7 @@ always returning a ConfigurationInterface object.
     = false
 `
 
-#### DEFAULT\_HOST  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#constant_DEFAULT_HOST)
+#### DEFAULT\_HOST  [header link](class-aws-clientsidemonitoring-configurationprovider-constant-default-host.md)
 
 `
     public
@@ -116,7 +116,7 @@ always returning a ConfigurationInterface object.
     = '127.0.0.1'
 `
 
-#### DEFAULT\_PORT  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#constant_DEFAULT_PORT)
+#### DEFAULT\_PORT  [header link](class-aws-clientsidemonitoring-configurationprovider-constant-default-port.md)
 
 `
     public
@@ -125,7 +125,7 @@ always returning a ConfigurationInterface object.
     = 31000
 `
 
-#### ENV\_CLIENT\_ID  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#constant_ENV_CLIENT_ID)
+#### ENV\_CLIENT\_ID  [header link](class-aws-clientsidemonitoring-configurationprovider-constant-env-client-id.md)
 
 `
     public
@@ -143,7 +143,7 @@ always returning a ConfigurationInterface object.
     = 'AWS_CONFIG_FILE'
 `
 
-#### ENV\_ENABLED  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#constant_ENV_ENABLED)
+#### ENV\_ENABLED  [header link](class-aws-clientsidemonitoring-configurationprovider-constant-env-enabled.md)
 
 `
     public
@@ -152,7 +152,7 @@ always returning a ConfigurationInterface object.
     = 'AWS_CSM_ENABLED'
 `
 
-#### ENV\_HOST  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#constant_ENV_HOST)
+#### ENV\_HOST  [header link](class-aws-clientsidemonitoring-configurationprovider-constant-env-host.md)
 
 `
     public
@@ -161,7 +161,7 @@ always returning a ConfigurationInterface object.
     = 'AWS_CSM_HOST'
 `
 
-#### ENV\_PORT  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#constant_ENV_PORT)
+#### ENV\_PORT  [header link](class-aws-clientsidemonitoring-configurationprovider-constant-env-port.md)
 
 `
     public
@@ -170,7 +170,7 @@ always returning a ConfigurationInterface object.
     = 'AWS_CSM_PORT'
 `
 
-#### ENV\_PROFILE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#constant_ENV_PROFILE)
+#### ENV\_PROFILE  [header link](class-aws-clientsidemonitoring-configurationprovider-constant-env-profile.md)
 
 `
     public
@@ -179,9 +179,9 @@ always returning a ConfigurationInterface object.
     = 'AWS_PROFILE'
 `
 
-### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#properties)
+### Properties  [header link](class-aws-clientsidemonitoring-configurationprovider-properties.md)
 
-#### $cacheKey  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#property_cacheKey)
+#### $cacheKey  [header link](class-aws-clientsidemonitoring-configurationprovider-property-cachekey.md)
 
 `
     public
@@ -189,7 +189,7 @@ always returning a ConfigurationInterface object.
     $cacheKey
      = 'aws_cached_csm_config'`
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#methods)
+### Methods  [header link](class-aws-clientsidemonitoring-configurationprovider-methods.md)
 
 #### cache()  [header link](class-aws-abstractconfigurationprovider.md\#method_cache)
 
@@ -237,7 +237,7 @@ configuration.
 
 callable
 
-#### defaultProvider()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#method_defaultProvider)
+#### defaultProvider()  [header link](class-aws-clientsidemonitoring-configurationprovider-method-defaultprovider.md)
 
 Create a default config provider that first checks for environment
 variables, then checks for a specified profile in the environment-defined
@@ -263,7 +263,7 @@ $config
 
 callable
 
-#### env()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#method_env)
+#### env()  [header link](class-aws-clientsidemonitoring-configurationprovider-method-env.md)
 
 Provider that creates CSM config from environment variables.
 
@@ -275,7 +275,7 @@ Provider that creates CSM config from environment variables.
 
 callable
 
-#### fallback()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#method_fallback)
+#### fallback()  [header link](class-aws-clientsidemonitoring-configurationprovider-method-fallback.md)
 
 Fallback config options when other sources are not set.
 
@@ -287,7 +287,7 @@ Fallback config options when other sources are not set.
 
 callable
 
-#### ini()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#method_ini)
+#### ini()  [header link](class-aws-clientsidemonitoring-configurationprovider-method-ini.md)
 
 Config provider that creates config using a config file whose location
 is specified by an environment variable 'AWS\_CONFIG\_FILE', defaulting to
@@ -336,7 +336,7 @@ Config provider function to wrap.
 
 callable
 
-#### unwrap()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#method_unwrap)
+#### unwrap()  [header link](class-aws-clientsidemonitoring-configurationprovider-method-unwrap.md)
 
 Unwraps a configuration object in whatever valid form it is in,
 always returning a ConfigurationInterface object.
@@ -350,7 +350,7 @@ always returning a ConfigurationInterface object.
 $config
 : mixed
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html\#method_unwrap\#tags)
+##### Tags  [header link](class-aws-clientsidemonitoring-configurationprovider-method-unwrap-tags.md)
 
 throwsInvalidArgumentException
 
@@ -364,30 +364,30 @@ throwsInvalidArgumentException
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#toc-constants)
-  - [Properties](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#toc-properties)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#toc-methods)
+  - [Constants](class-aws-clientsidemonitoring-configurationprovider-toc-constants.md)
+  - [Properties](class-aws-clientsidemonitoring-configurationprovider-toc-properties.md)
+  - [Methods](class-aws-clientsidemonitoring-configurationprovider-toc-methods.md)
 - Constants
-  - [DEFAULT\_CLIENT\_ID](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#constant_DEFAULT_CLIENT_ID)
-  - [DEFAULT\_ENABLED](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#constant_DEFAULT_ENABLED)
-  - [DEFAULT\_HOST](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#constant_DEFAULT_HOST)
-  - [DEFAULT\_PORT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#constant_DEFAULT_PORT)
-  - [ENV\_CLIENT\_ID](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#constant_ENV_CLIENT_ID)
+  - [DEFAULT\_CLIENT\_ID](class-aws-clientsidemonitoring-configurationprovider-constant-default-client-id.md)
+  - [DEFAULT\_ENABLED](class-aws-clientsidemonitoring-configurationprovider-constant-default-enabled.md)
+  - [DEFAULT\_HOST](class-aws-clientsidemonitoring-configurationprovider-constant-default-host.md)
+  - [DEFAULT\_PORT](class-aws-clientsidemonitoring-configurationprovider-constant-default-port.md)
+  - [ENV\_CLIENT\_ID](class-aws-clientsidemonitoring-configurationprovider-constant-env-client-id.md)
   - [ENV\_CONFIG\_FILE](class-aws-abstractconfigurationprovider.md#constant_ENV_CONFIG_FILE)
-  - [ENV\_ENABLED](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#constant_ENV_ENABLED)
-  - [ENV\_HOST](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#constant_ENV_HOST)
-  - [ENV\_PORT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#constant_ENV_PORT)
-  - [ENV\_PROFILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#constant_ENV_PROFILE)
+  - [ENV\_ENABLED](class-aws-clientsidemonitoring-configurationprovider-constant-env-enabled.md)
+  - [ENV\_HOST](class-aws-clientsidemonitoring-configurationprovider-constant-env-host.md)
+  - [ENV\_PORT](class-aws-clientsidemonitoring-configurationprovider-constant-env-port.md)
+  - [ENV\_PROFILE](class-aws-clientsidemonitoring-configurationprovider-constant-env-profile.md)
 - Properties
-  - [$cacheKey](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#property_cacheKey)
+  - [$cacheKey](class-aws-clientsidemonitoring-configurationprovider-property-cachekey.md)
 - Methods
   - [cache()](class-aws-abstractconfigurationprovider.md#method_cache)
   - [chain()](class-aws-abstractconfigurationprovider.md#method_chain)
-  - [defaultProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#method_defaultProvider)
-  - [env()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#method_env)
-  - [fallback()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#method_fallback)
-  - [ini()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#method_ini)
+  - [defaultProvider()](class-aws-clientsidemonitoring-configurationprovider-method-defaultprovider.md)
+  - [env()](class-aws-clientsidemonitoring-configurationprovider-method-env.md)
+  - [fallback()](class-aws-clientsidemonitoring-configurationprovider-method-fallback.md)
+  - [ini()](class-aws-clientsidemonitoring-configurationprovider-method-ini.md)
   - [memoize()](class-aws-abstractconfigurationprovider.md#method_memoize)
-  - [unwrap()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#method_unwrap)
+  - [unwrap()](class-aws-clientsidemonitoring-configurationprovider-method-unwrap.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html#top)
+[Back To Top](class-aws-clientsidemonitoring-configurationprovider-top.md)

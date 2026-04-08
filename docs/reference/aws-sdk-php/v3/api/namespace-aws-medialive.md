@@ -4,15 +4,15 @@ Menu
 
 ## MediaLive
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.medialive.html\#toc)
+### Table of Contents  [header link](namespace-aws-medialive-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.medialive.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-medialive-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.medialive.exception.html)
+[Exception](namespace-aws-medialive-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.medialive.html\#toc-classes)
+#### Classes  [header link](namespace-aws-medialive-toc-classes.md)
 
-[MediaLiveClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaLive.MediaLiveClient.html)This client is used to interact with the **AWS Elemental MediaLive** service.
+[MediaLiveClient](class-aws-medialive-medialiveclient.md)This client is used to interact with the **AWS Elemental MediaLive** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.medialive.html#toc-classes)
+  - [Classes](namespace-aws-medialive-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.medialive.html#top)
+[Back To Top](namespace-aws-medialive-top.md)

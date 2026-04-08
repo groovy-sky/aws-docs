@@ -4,15 +4,15 @@ Menu
 
 ## CloudDirectory
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.clouddirectory.html\#toc)
+### Table of Contents  [header link](namespace-aws-clouddirectory-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.clouddirectory.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-clouddirectory-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.clouddirectory.exception.html)
+[Exception](namespace-aws-clouddirectory-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.clouddirectory.html\#toc-classes)
+#### Classes  [header link](namespace-aws-clouddirectory-toc-classes.md)
 
-[CloudDirectoryClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudDirectory.CloudDirectoryClient.html)This client is used to interact with the **Amazon CloudDirectory** service.
+[CloudDirectoryClient](class-aws-clouddirectory-clouddirectoryclient.md)This client is used to interact with the **Amazon CloudDirectory** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.clouddirectory.html#toc-classes)
+  - [Classes](namespace-aws-clouddirectory-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.clouddirectory.html#top)
+[Back To Top](namespace-aws-clouddirectory-top.md)

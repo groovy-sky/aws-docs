@@ -7,17 +7,17 @@ Menu
 
 Extracts a region, bucket, key, and and if a URI is in path-style
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3UriParser.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3uriparser-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3UriParser.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3uriparser-toc-methods.md)
 
-[parse()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3UriParser.html#method_parse)
+[parse()](class-aws-s3-s3uriparser-method-parse.md)
 : array<string\|int, mixed> Parses a URL or S3 StreamWrapper Uri (s3://) into an associative array
 of Amazon S3 data including:
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3UriParser.html\#methods)
+### Methods  [header link](class-aws-s3-s3uriparser-methods.md)
 
-#### parse()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3UriParser.html\#method_parse)
+#### parse()  [header link](class-aws-s3-s3uriparser-method-parse.md)
 
 Parses a URL or S3 StreamWrapper Uri (s3://) into an associative array
 of Amazon S3 data including:
@@ -36,7 +36,7 @@ of Amazon S3 data including:
 $uri
 : string\| [UriInterface](class-psr-http-message-uriinterface.md)
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3UriParser.html\#method_parse\#tags)
+##### Tags  [header link](class-aws-s3-s3uriparser-method-parse-tags.md)
 
 throwsInvalidArgumentException\| [InvalidArnException](class-aws-arn-exception-invalidarnexception.md)
 
@@ -50,8 +50,8 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3UriParser.html#toc-methods)
+  - [Methods](class-aws-s3-s3uriparser-toc-methods.md)
 - Methods
-  - [parse()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3UriParser.html#method_parse)
+  - [parse()](class-aws-s3-s3uriparser-method-parse.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3UriParser.html#top)
+[Back To Top](class-aws-s3-s3uriparser-top.md)

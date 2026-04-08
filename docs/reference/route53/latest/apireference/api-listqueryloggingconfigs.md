@@ -34,7 +34,7 @@ Length Constraints: Maximum length of 32.
 
 (Optional) The maximum number of query logging configurations that you want Amazon
 Route 53 to return in response to the current request. If the current AWS account has more than `MaxResults` configurations, use the
-value of [NextToken](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListQueryLoggingConfigs.html#API_ListQueryLoggingConfigs_RequestSyntax) in the response to get the next page of results.
+value of [NextToken](api-listqueryloggingconfigs-api-listqueryloggingconfigs-requestsyntax.md) in the response to get the next page of results.
 
 If you don't specify a value for `MaxResults`, Route 53 returns up to 100
 configurations.
@@ -94,7 +94,7 @@ associated with the current AWS account, `NextToken` doesn't
 appear in the response.
 
 If a response doesn't include the last of the configurations, you can get more
-configurations by submitting another [ListQueryLoggingConfigs](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListQueryLoggingConfigs.html) request. Get the value of `NextToken`
+configurations by submitting another [ListQueryLoggingConfigs](api-listqueryloggingconfigs.md) request. Get the value of `NextToken`
 that Amazon Route 53 returned in the previous response and include it in
 `NextToken` in the next request.
 
@@ -104,10 +104,10 @@ Length Constraints: Maximum length of 1024.
 
 **[QueryLoggingConfigs](#API_ListQueryLoggingConfigs_ResponseSyntax)**
 
-An array that contains one [QueryLoggingConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_QueryLoggingConfig.html) element for each configuration for DNS query logging
+An array that contains one [QueryLoggingConfig](api-queryloggingconfig.md) element for each configuration for DNS query logging
 that is associated with the current AWS account.
 
-Type: Array of [QueryLoggingConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_QueryLoggingConfig.html) objects
+Type: Array of [QueryLoggingConfig](api-queryloggingconfig.md) objects
 
 ## Errors
 
@@ -177,27 +177,27 @@ HTTP/1.1 200 OK
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/route53-2013-04-01/ListQueryLoggingConfigs)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53-2013-04-01/listqueryloggingconfigs.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/route53-2013-04-01/ListQueryLoggingConfigs)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53-2013-04-01/listqueryloggingconfigs.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53-2013-04-01/ListQueryLoggingConfigs)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53-2013-04-01/listqueryloggingconfigs.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/route53-2013-04-01/ListQueryLoggingConfigs)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53-2013-04-01/listqueryloggingconfigs.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53-2013-04-01/ListQueryLoggingConfigs)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53-2013-04-01/listqueryloggingconfigs.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/route53-2013-04-01/ListQueryLoggingConfigs)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53-2013-04-01/listqueryloggingconfigs.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/route53-2013-04-01/ListQueryLoggingConfigs)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53-2013-04-01/listqueryloggingconfigs.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/route53-2013-04-01/ListQueryLoggingConfigs)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53-2013-04-01/listqueryloggingconfigs.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/route53-2013-04-01/ListQueryLoggingConfigs)
+- [AWS SDK for Python](../../../../services/goto/boto3/route53-2013-04-01/listqueryloggingconfigs.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53-2013-04-01/ListQueryLoggingConfigs)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53-2013-04-01/listqueryloggingconfigs.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ListHostedZonesByVPC
 

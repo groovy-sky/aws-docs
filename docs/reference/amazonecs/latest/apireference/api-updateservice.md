@@ -29,14 +29,14 @@ only the desired count, deployment configuration, health check grace period, tas
 placement constraints and strategies, enable ECS managed tags option, and propagate tags
 can be updated using this API. If the network configuration, platform version, task
 definition, or load balancer need to be updated, create a new AWS CodeDeploy deployment. For
-more information, see [CreateDeployment](https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_CreateDeployment.html) in the _AWS CodeDeploy API_
+more information, see [CreateDeployment](../../../codedeploy/latest/apireference/api-createdeployment.md) in the _AWS CodeDeploy API_
 _Reference_.
 
 For services using an external deployment controller, you can update only the desired
 count, task placement constraints and strategies, health check grace period, enable ECS
 managed tags option, and propagate tags option, using this API. If the launch type, load
 balancer, network configuration, platform version, or task definition need to be
-updated, create a new task set For more information, see [CreateTaskSet](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateTaskSet.html).
+updated, create a new task set For more information, see [CreateTaskSet](api-createtaskset.md).
 
 You can add to or subtract from the number of instantiations of a task definition in a
 service by specifying the cluster that the service is running in and a new
@@ -81,7 +81,7 @@ deployment batch size. For example, if `desiredCount` is four tasks,
 a maximum of 200% starts four new tasks before stopping the four older tasks
 (provided that the cluster resources required to do this are available).
 
-When [UpdateService](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_UpdateService.html)
+When [UpdateService](api-updateservice.md)
 stops a task during a deployment, the equivalent of `docker stop` is issued
 to the containers running in the task. This results in a `SIGTERM` and a
 30-second timeout. After this, `SIGKILL` is sent and the containers are
@@ -313,7 +313,7 @@ running tasks for this service.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -382,11 +382,11 @@ type.
 Pass an empty list in the `capacityProviderStrategy`
 parameter.
 
-For information about AWS CDK considerations, see [AWS CDK considerations](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/update-service-parameters.html).
+For information about AWS CDK considerations, see [AWS CDK considerations](../../../../services/amazonecs/latest/developerguide/update-service-parameters.md).
 
 This parameter doesn't trigger a new service deployment.
 
-Type: Array of [CapacityProviderStrategyItem](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CapacityProviderStrategyItem.html) objects
+Type: Array of [CapacityProviderStrategyItem](api-capacityproviderstrategyitem.md) objects
 
 Required: No
 
@@ -408,7 +408,7 @@ and the ordering of stopping and starting tasks.
 
 This parameter doesn't trigger a new service deployment.
 
-Type: [DeploymentConfiguration](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeploymentConfiguration.html) object
+Type: [DeploymentConfiguration](api-deploymentconfiguration.md) object
 
 Required: No
 
@@ -416,7 +416,7 @@ Required: No
 
 The deployment controller to use for the service.
 
-Type: [DeploymentController](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeploymentController.html) object
+Type: [DeploymentController](api-deploymentcontroller.md) object
 
 Required: No
 
@@ -520,21 +520,21 @@ target groups by using `
                      CreateDeployment
                   ` through AWS CodeDeploy. Note that multiple target groups
 are not supported for blue/green deployments. For more information see [Register\
-multiple target groups with a service](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/register-multiple-targetgroups.html) in the _Amazon Elastic_
+multiple target groups with a service](../../../../services/amazonecs/latest/developerguide/register-multiple-targetgroups.md) in the _Amazon Elastic_
 _Container Service Developer Guide_.
 
 For services that use the external deployment controller, you can add, update, or
-remove load balancers by using [CreateTaskSet](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateTaskSet.html).
+remove load balancers by using [CreateTaskSet](api-createtaskset.md).
 Note that multiple target groups are not supported for external deployments. For more
 information see [Register\
-multiple target groups with a service](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/register-multiple-targetgroups.html) in the _Amazon Elastic_
+multiple target groups with a service](../../../../services/amazonecs/latest/developerguide/register-multiple-targetgroups.md) in the _Amazon Elastic_
 _Container Service Developer Guide_.
 
 You can remove existing `loadBalancers` by passing an empty list.
 
 This parameter triggers a new service deployment.
 
-Type: Array of [LoadBalancer](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_LoadBalancer.html) objects
+Type: Array of [LoadBalancer](api-loadbalancer.md) objects
 
 Required: No
 
@@ -561,7 +561,7 @@ constraints in the task definition and those specified at runtime.
 
 This parameter doesn't trigger a new service deployment.
 
-Type: Array of [PlacementConstraint](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_PlacementConstraint.html) objects
+Type: Array of [PlacementConstraint](api-placementconstraint.md) objects
 
 Required: No
 
@@ -576,7 +576,7 @@ You can specify a maximum of five strategy rules for each service.
 
 This parameter doesn't trigger a new service deployment.
 
-Type: Array of [PlacementStrategy](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_PlacementStrategy.html) objects
+Type: Array of [PlacementStrategy](api-placementstrategy.md) objects
 
 Required: No
 
@@ -586,7 +586,7 @@ The platform version that your tasks in the service run on. A platform version i
 specified for tasks using the Fargate launch type. If a platform version is not
 specified, the `LATEST` platform version is used. For more information, see
 [AWS Fargate\
-Platform Versions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html) in the _Amazon Elastic Container Service_
+Platform Versions](../../../../services/amazonecs/latest/developerguide/platform-versions.md) in the _Amazon Elastic Container Service_
 _Developer Guide_.
 
 This parameter triggers a new service deployment.
@@ -634,7 +634,7 @@ in the _Amazon Elastic Container Service Developer Guide_.
 
 This parameter triggers a new service deployment.
 
-Type: [ServiceConnectConfiguration](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ServiceConnectConfiguration.html) object
+Type: [ServiceConnectConfiguration](api-serviceconnectconfiguration.md) object
 
 Required: No
 
@@ -660,7 +660,7 @@ list.
 
 This parameter triggers a new service deployment.
 
-Type: Array of [ServiceRegistry](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ServiceRegistry.html) objects
+Type: Array of [ServiceRegistry](api-serviceregistry.md) objects
 
 Required: No
 
@@ -682,14 +682,14 @@ Required: No
 **[volumeConfigurations](#API_UpdateService_RequestSyntax)**
 
 The details of the volume that was `configuredAtLaunch`. You can configure
-the size, volumeType, IOPS, throughput, snapshot and encryption in [ServiceManagedEBSVolumeConfiguration](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ServiceManagedEBSVolumeConfiguration.html). The `name` of the volume
+the size, volumeType, IOPS, throughput, snapshot and encryption in [ServiceManagedEBSVolumeConfiguration](api-servicemanagedebsvolumeconfiguration.md). The `name` of the volume
 must match the `name` from the task definition. If set to null, no new
 deployment is triggered. Otherwise, if this configuration differs from the existing one,
 it triggers a new deployment.
 
 This parameter triggers a new service deployment.
 
-Type: Array of [ServiceVolumeConfiguration](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ServiceVolumeConfiguration.html) objects
+Type: Array of [ServiceVolumeConfiguration](api-servicevolumeconfiguration.md) objects
 
 Required: No
 
@@ -700,7 +700,7 @@ updated.
 
 This parameter triggers a new service deployment.
 
-Type: Array of [VpcLatticeConfiguration](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_VpcLatticeConfiguration.html) objects
+Type: Array of [VpcLatticeConfiguration](api-vpclatticeconfiguration.md) objects
 
 Required: No
 
@@ -1049,11 +1049,11 @@ The following data is returned in JSON format by the service.
 
 The full description of your service following the update call.
 
-Type: [Service](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Service.html) object
+Type: [Service](api-service.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **AccessDeniedException**
 
@@ -1079,7 +1079,7 @@ HTTP Status Code: 400
 
 **ClusterNotFoundException**
 
-The specified cluster wasn't found. You can view your available clusters with [ListClusters](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListClusters.html). Amazon ECS clusters are Region specific.
+The specified cluster wasn't found. You can view your available clusters with [ListClusters](api-listclusters.md). Amazon ECS clusters are Region specific.
 
 **message**
 
@@ -1093,7 +1093,7 @@ The specified parameter isn't valid. Review the available parameters for the API
 request.
 
 For more information about service event errors, see [Amazon ECS\
-service event messages](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-event-messages-list.html).
+service event messages](../../../../services/amazonecs/latest/developerguide/service-event-messages-list.md).
 
 **message**
 
@@ -1155,7 +1155,7 @@ HTTP Status Code: 400
 
 **ServiceNotFoundException**
 
-The specified service wasn't found. You can view your available services with [ListServices](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListServices.html). Amazon ECS services are cluster specific and Region
+The specified service wasn't found. You can view your available services with [ListServices](api-listservices.md). Amazon ECS services are cluster specific and Region
 specific.
 
 **message**
@@ -1179,7 +1179,7 @@ HTTP Status Code: 400
 In the following example or examples, the Authorization header contents
 ( `AUTHPARAMS`) must be replaced with an AWS Signature
 Version 4 signature. For more information, see [Signature\
-Version 4 Signing Process](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) in the _AWS_
+Version 4 Signing Process](../../../../general/general/latest/gr/signature-version-4.md) in the _AWS_
 _General Reference_.
 
 You only need to learn how to sign HTTP requests if you intend to create them
@@ -1259,27 +1259,27 @@ x-amzn-RequestId: 123a4b56-7c89-01d2-3ef4-example5678f
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ecs-2014-11-13/UpdateService)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ecs-2014-11-13/updateservice.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ecs-2014-11-13/UpdateService)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ecs-2014-11-13/updateservice.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/UpdateService)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/updateservice.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ecs-2014-11-13/UpdateService)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ecs-2014-11-13/updateservice.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/UpdateService)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/updateservice.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ecs-2014-11-13/UpdateService)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ecs-2014-11-13/updateservice.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ecs-2014-11-13/UpdateService)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ecs-2014-11-13/updateservice.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ecs-2014-11-13/UpdateService)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ecs-2014-11-13/updateservice.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ecs-2014-11-13/UpdateService)
+- [AWS SDK for Python](../../../../services/goto/boto3/ecs-2014-11-13/updateservice.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/UpdateService)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/updateservice.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 UpdateExpressGatewayService
 

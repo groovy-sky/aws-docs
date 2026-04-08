@@ -4,15 +4,15 @@ Menu
 
 ## CloudFront
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudfront.html\#toc)
+### Table of Contents  [header link](namespace-aws-cloudfront-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudfront.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-cloudfront-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudfront.exception.html)
+[Exception](namespace-aws-cloudfront-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudfront.html\#toc-classes)
+#### Classes  [header link](namespace-aws-cloudfront-toc-classes.md)
 
-[CloudFrontClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.CloudFrontClient.html)This client is used to interact with the **Amazon CloudFront** service.[CookieSigner](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.CookieSigner.html)[UrlSigner](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.UrlSigner.html)This client is used to interact with the **Amazon CloudFront** service.
+[CloudFrontClient](class-aws-cloudfront-cloudfrontclient.md)This client is used to interact with the **Amazon CloudFront** service.[CookieSigner](class-aws-cloudfront-cookiesigner.md)[UrlSigner](class-aws-cloudfront-urlsigner.md)This client is used to interact with the **Amazon CloudFront** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudfront.html#toc-classes)
+  - [Classes](namespace-aws-cloudfront-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudfront.html#top)
+[Back To Top](namespace-aws-cloudfront-top.md)

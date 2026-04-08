@@ -17,42 +17,42 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-05-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html)
+- [**2018-05-10**](api-rolesanywhere-2018-05-10.md)
 
-  - [CreateProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#createprofile)
-  - [CreateTrustAnchor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#createtrustanchor)
-  - [DeleteAttributeMapping](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#deleteattributemapping)
-  - [DeleteCrl](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#deletecrl)
-  - [DeleteProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#deleteprofile)
-  - [DeleteTrustAnchor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#deletetrustanchor)
-  - [DisableCrl](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#disablecrl)
-  - [DisableProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#disableprofile)
-  - [DisableTrustAnchor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#disabletrustanchor)
-  - [EnableCrl](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#enablecrl)
-  - [EnableProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#enableprofile)
-  - [EnableTrustAnchor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#enabletrustanchor)
-  - [GetCrl](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#getcrl)
-  - [GetProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#getprofile)
-  - [GetSubject](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#getsubject)
-  - [GetTrustAnchor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#gettrustanchor)
-  - [ImportCrl](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#importcrl)
-  - [ListCrls](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#listcrls)
-  - [ListProfiles](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#listprofiles)
-  - [ListSubjects](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#listsubjects)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#listtagsforresource)
-  - [ListTrustAnchors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#listtrustanchors)
-  - [PutAttributeMapping](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#putattributemapping)
-  - [PutNotificationSettings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#putnotificationsettings)
-  - [ResetNotificationSettings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#resetnotificationsettings)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#untagresource)
-  - [UpdateCrl](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#updatecrl)
-  - [UpdateProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#updateprofile)
-  - [UpdateTrustAnchor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rolesanywhere-2018-05-10.html#updatetrustanchor)
+  - [CreateProfile](api-rolesanywhere-2018-05-10-createprofile.md)
+  - [CreateTrustAnchor](api-rolesanywhere-2018-05-10-createtrustanchor.md)
+  - [DeleteAttributeMapping](api-rolesanywhere-2018-05-10-deleteattributemapping.md)
+  - [DeleteCrl](api-rolesanywhere-2018-05-10-deletecrl.md)
+  - [DeleteProfile](api-rolesanywhere-2018-05-10-deleteprofile.md)
+  - [DeleteTrustAnchor](api-rolesanywhere-2018-05-10-deletetrustanchor.md)
+  - [DisableCrl](api-rolesanywhere-2018-05-10-disablecrl.md)
+  - [DisableProfile](api-rolesanywhere-2018-05-10-disableprofile.md)
+  - [DisableTrustAnchor](api-rolesanywhere-2018-05-10-disabletrustanchor.md)
+  - [EnableCrl](api-rolesanywhere-2018-05-10-enablecrl.md)
+  - [EnableProfile](api-rolesanywhere-2018-05-10-enableprofile.md)
+  - [EnableTrustAnchor](api-rolesanywhere-2018-05-10-enabletrustanchor.md)
+  - [GetCrl](api-rolesanywhere-2018-05-10-getcrl.md)
+  - [GetProfile](api-rolesanywhere-2018-05-10-getprofile.md)
+  - [GetSubject](api-rolesanywhere-2018-05-10-getsubject.md)
+  - [GetTrustAnchor](api-rolesanywhere-2018-05-10-gettrustanchor.md)
+  - [ImportCrl](api-rolesanywhere-2018-05-10-importcrl.md)
+  - [ListCrls](api-rolesanywhere-2018-05-10-listcrls.md)
+  - [ListProfiles](api-rolesanywhere-2018-05-10-listprofiles.md)
+  - [ListSubjects](api-rolesanywhere-2018-05-10-listsubjects.md)
+  - [ListTagsForResource](api-rolesanywhere-2018-05-10-listtagsforresource.md)
+  - [ListTrustAnchors](api-rolesanywhere-2018-05-10-listtrustanchors.md)
+  - [PutAttributeMapping](api-rolesanywhere-2018-05-10-putattributemapping.md)
+  - [PutNotificationSettings](api-rolesanywhere-2018-05-10-putnotificationsettings.md)
+  - [ResetNotificationSettings](api-rolesanywhere-2018-05-10-resetnotificationsettings.md)
+  - [TagResource](api-rolesanywhere-2018-05-10-tagresource.md)
+  - [UntagResource](api-rolesanywhere-2018-05-10-untagresource.md)
+  - [UpdateCrl](api-rolesanywhere-2018-05-10-updatecrl.md)
+  - [UpdateProfile](api-rolesanywhere-2018-05-10-updateprofile.md)
+  - [UpdateTrustAnchor](api-rolesanywhere-2018-05-10-updatetrustanchor.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RolesAnywhere.RolesAnywhereClient.html\#toc)
+### Table of Contents  [header link](class-aws-rolesanywhere-rolesanywhereclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RolesAnywhere.RolesAnywhereClient.html\#toc-methods)
+#### Methods  [header link](class-aws-rolesanywhere-rolesanywhereclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -83,7 +83,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RolesAnywhere.RolesAnywhereClient.html\#methods)
+### Methods  [header link](class-aws-rolesanywhere-rolesanywhereclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -550,7 +550,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RolesAnywhere.RolesAnywhereClient.html#toc-methods)
+  - [Methods](class-aws-rolesanywhere-rolesanywhereclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -577,4 +577,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RolesAnywhere.RolesAnywhereClient.html#top)
+[Back To Top](class-aws-rolesanywhere-rolesanywhereclient-top.md)

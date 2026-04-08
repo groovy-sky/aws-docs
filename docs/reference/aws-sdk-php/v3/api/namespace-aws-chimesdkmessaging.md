@@ -4,15 +4,15 @@ Menu
 
 ## ChimeSDKMessaging
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkmessaging.html\#toc)
+### Table of Contents  [header link](namespace-aws-chimesdkmessaging-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkmessaging.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-chimesdkmessaging-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkmessaging.exception.html)
+[Exception](namespace-aws-chimesdkmessaging-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkmessaging.html\#toc-classes)
+#### Classes  [header link](namespace-aws-chimesdkmessaging-toc-classes.md)
 
-[ChimeSDKMessagingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKMessaging.ChimeSDKMessagingClient.html)This client is used to interact with the **Amazon Chime SDK Messaging** service.
+[ChimeSDKMessagingClient](class-aws-chimesdkmessaging-chimesdkmessagingclient.md)This client is used to interact with the **Amazon Chime SDK Messaging** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkmessaging.html#toc-classes)
+  - [Classes](namespace-aws-chimesdkmessaging-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkmessaging.html#top)
+[Back To Top](namespace-aws-chimesdkmessaging-top.md)

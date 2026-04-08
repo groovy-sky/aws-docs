@@ -22,7 +22,7 @@ haven't reported data in the past two weeks. To retrieve those metrics, use [Get
 The dimensions to filter against. Only the dimension with names that match exactly will be
 returned. If you specify one dimension name and a metric has that dimension and also other dimensions, it will be returned.
 
-Type: Array of [DimensionFilter](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_DimensionFilter.html) objects
+Type: Array of [DimensionFilter](api-dimensionfilter.md) objects
 
 Array Members: Maximum number of 10 items.
 
@@ -108,7 +108,7 @@ The following elements are returned by the service.
 
 The metrics that match your request.
 
-Type: Array of [Metric](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_Metric.html) objects
+Type: Array of [Metric](api-metric.md) objects
 
 **NextToken**
 
@@ -187,27 +187,27 @@ only the source account with the ID `111111111111`.
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/monitoring-2010-08-01/ListMetrics)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/monitoring-2010-08-01/listmetrics.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/monitoring-2010-08-01/ListMetrics)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/monitoring-2010-08-01/listmetrics.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/ListMetrics)
+- [AWS SDK for C++](../../../goto/sdkforcpp/monitoring-2010-08-01/listmetrics.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/monitoring-2010-08-01/ListMetrics)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/monitoring-2010-08-01/listmetrics.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/ListMetrics)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/monitoring-2010-08-01/listmetrics.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/monitoring-2010-08-01/ListMetrics)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/monitoring-2010-08-01/listmetrics.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/monitoring-2010-08-01/ListMetrics)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/monitoring-2010-08-01/listmetrics.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/monitoring-2010-08-01/ListMetrics)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/monitoring-2010-08-01/listmetrics.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/ListMetrics)
+- [AWS SDK for Python](../../../../services/goto/boto3/monitoring-2010-08-01/listmetrics.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/monitoring-2010-08-01/ListMetrics)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/monitoring-2010-08-01/listmetrics.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ListManagedInsightRules
 

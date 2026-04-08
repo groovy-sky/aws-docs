@@ -4,15 +4,15 @@ Menu
 
 ## Ecs
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ecs.html\#toc)
+### Table of Contents  [header link](namespace-aws-ecs-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ecs.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-ecs-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ecs.exception.html)
+[Exception](namespace-aws-ecs-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ecs.html\#toc-classes)
+#### Classes  [header link](namespace-aws-ecs-toc-classes.md)
 
-[EcsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ecs.EcsClient.html)This client is used to interact with \*\*Amazon ECS\*\*.
+[EcsClient](class-aws-ecs-ecsclient.md)This client is used to interact with \*\*Amazon ECS\*\*.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ecs.html#toc-classes)
+  - [Classes](namespace-aws-ecs-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ecs.html#top)
+[Back To Top](namespace-aws-ecs-top.md)

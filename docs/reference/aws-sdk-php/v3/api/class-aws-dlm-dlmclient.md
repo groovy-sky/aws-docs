@@ -17,20 +17,20 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-01-12**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dlm-2018-01-12.html)
+- [**2018-01-12**](api-dlm-2018-01-12.md)
 
-  - [CreateLifecyclePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dlm-2018-01-12.html#createlifecyclepolicy)
-  - [DeleteLifecyclePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dlm-2018-01-12.html#deletelifecyclepolicy)
-  - [GetLifecyclePolicies](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dlm-2018-01-12.html#getlifecyclepolicies)
-  - [GetLifecyclePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dlm-2018-01-12.html#getlifecyclepolicy)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dlm-2018-01-12.html#listtagsforresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dlm-2018-01-12.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dlm-2018-01-12.html#untagresource)
-  - [UpdateLifecyclePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dlm-2018-01-12.html#updatelifecyclepolicy)
+  - [CreateLifecyclePolicy](api-dlm-2018-01-12-createlifecyclepolicy.md)
+  - [DeleteLifecyclePolicy](api-dlm-2018-01-12-deletelifecyclepolicy.md)
+  - [GetLifecyclePolicies](api-dlm-2018-01-12-getlifecyclepolicies.md)
+  - [GetLifecyclePolicy](api-dlm-2018-01-12-getlifecyclepolicy.md)
+  - [ListTagsForResource](api-dlm-2018-01-12-listtagsforresource.md)
+  - [TagResource](api-dlm-2018-01-12-tagresource.md)
+  - [UntagResource](api-dlm-2018-01-12-untagresource.md)
+  - [UpdateLifecyclePolicy](api-dlm-2018-01-12-updatelifecyclepolicy.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DLM.DLMClient.html\#toc)
+### Table of Contents  [header link](class-aws-dlm-dlmclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DLM.DLMClient.html\#toc-methods)
+#### Methods  [header link](class-aws-dlm-dlmclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -61,7 +61,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DLM.DLMClient.html\#methods)
+### Methods  [header link](class-aws-dlm-dlmclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -528,7 +528,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DLM.DLMClient.html#toc-methods)
+  - [Methods](class-aws-dlm-dlmclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -555,4 +555,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DLM.DLMClient.html#top)
+[Back To Top](class-aws-dlm-dlmclient-top.md)

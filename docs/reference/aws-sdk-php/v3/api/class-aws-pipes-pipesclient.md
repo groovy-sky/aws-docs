@@ -17,22 +17,22 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2015-10-07**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pipes-2015-10-07.html)
+- [**2015-10-07**](api-pipes-2015-10-07.md)
 
-  - [CreatePipe](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pipes-2015-10-07.html#createpipe)
-  - [DeletePipe](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pipes-2015-10-07.html#deletepipe)
-  - [DescribePipe](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pipes-2015-10-07.html#describepipe)
-  - [ListPipes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pipes-2015-10-07.html#listpipes)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pipes-2015-10-07.html#listtagsforresource)
-  - [StartPipe](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pipes-2015-10-07.html#startpipe)
-  - [StopPipe](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pipes-2015-10-07.html#stoppipe)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pipes-2015-10-07.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pipes-2015-10-07.html#untagresource)
-  - [UpdatePipe](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pipes-2015-10-07.html#updatepipe)
+  - [CreatePipe](api-pipes-2015-10-07-createpipe.md)
+  - [DeletePipe](api-pipes-2015-10-07-deletepipe.md)
+  - [DescribePipe](api-pipes-2015-10-07-describepipe.md)
+  - [ListPipes](api-pipes-2015-10-07-listpipes.md)
+  - [ListTagsForResource](api-pipes-2015-10-07-listtagsforresource.md)
+  - [StartPipe](api-pipes-2015-10-07-startpipe.md)
+  - [StopPipe](api-pipes-2015-10-07-stoppipe.md)
+  - [TagResource](api-pipes-2015-10-07-tagresource.md)
+  - [UntagResource](api-pipes-2015-10-07-untagresource.md)
+  - [UpdatePipe](api-pipes-2015-10-07-updatepipe.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Pipes.PipesClient.html\#toc)
+### Table of Contents  [header link](class-aws-pipes-pipesclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Pipes.PipesClient.html\#toc-methods)
+#### Methods  [header link](class-aws-pipes-pipesclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -63,7 +63,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Pipes.PipesClient.html\#methods)
+### Methods  [header link](class-aws-pipes-pipesclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -530,7 +530,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Pipes.PipesClient.html#toc-methods)
+  - [Methods](class-aws-pipes-pipesclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -557,4 +557,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Pipes.PipesClient.html#top)
+[Back To Top](class-aws-pipes-pipesclient-top.md)

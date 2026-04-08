@@ -7,21 +7,21 @@ Menu
 
 Represents a section of the AWS cloud.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionInterface.html\#toc)
+### Table of Contents  [header link](class-aws-endpoint-partitioninterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-endpoint-partitioninterface-toc-methods.md)
 
-[\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionInterface.html#method___invoke)
-: array<string\|int, mixed> A partition must be invokable as an endpoint provider.[getAvailableEndpoints()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionInterface.html#method_getAvailableEndpoints)
-: array<string\|int, string> Return the endpoints supported by a given service.[getName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionInterface.html#method_getName)
+[\_\_invoke()](class-aws-endpoint-partitioninterface-method-invoke.md)
+: array<string\|int, mixed> A partition must be invokable as an endpoint provider.[getAvailableEndpoints()](class-aws-endpoint-partitioninterface-method-getavailableendpoints.md)
+: array<string\|int, string> Return the endpoints supported by a given service.[getName()](class-aws-endpoint-partitioninterface-method-getname.md)
 : string Returns the partition's short name, e.g., 'aws,' 'aws-cn,' or
-'aws-us-gov.'[isRegionMatch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionInterface.html#method_isRegionMatch)
+'aws-us-gov.'[isRegionMatch()](class-aws-endpoint-partitioninterface-method-isregionmatch.md)
 : bool Determine if this partition contains the provided region. Include the
 name of the service to inspect non-regional endpoints
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionInterface.html\#methods)
+### Methods  [header link](class-aws-endpoint-partitioninterface-methods.md)
 
-#### \_\_invoke()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionInterface.html\#method___invoke)
+#### \_\_invoke()  [header link](class-aws-endpoint-partitioninterface-method-invoke.md)
 
 A partition must be invokable as an endpoint provider.
 
@@ -35,15 +35,15 @@ $args
 : array<string\|int, mixed>
 = \[\]
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionInterface.html\#method___invoke\#tags)
+##### Tags  [header link](class-aws-endpoint-partitioninterface-method-invoke-tags.md)
 
-see[EndpointProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.EndpointProvider.html)
+see[EndpointProvider](class-aws-endpoint-endpointprovider.md)
 
 ##### Return values
 
 array<string\|int, mixed>
 
-#### getAvailableEndpoints()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionInterface.html\#method_getAvailableEndpoints)
+#### getAvailableEndpoints()  [header link](class-aws-endpoint-partitioninterface-method-getavailableendpoints.md)
 
 Return the endpoints supported by a given service.
 
@@ -74,7 +74,7 @@ DynamoDB or
 
 array<string\|int, string>
 
-#### getName()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionInterface.html\#method_getName)
+#### getName()  [header link](class-aws-endpoint-partitioninterface-method-getname.md)
 
 Returns the partition's short name, e.g., 'aws,' 'aws-cn,' or
 'aws-us-gov.'
@@ -87,7 +87,7 @@ Returns the partition's short name, e.g., 'aws,' 'aws-cn,' or
 
 string
 
-#### isRegionMatch()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionInterface.html\#method_isRegionMatch)
+#### isRegionMatch()  [header link](class-aws-endpoint-partitioninterface-method-isregionmatch.md)
 
 Determine if this partition contains the provided region. Include the
 name of the service to inspect non-regional endpoints
@@ -112,12 +112,12 @@ bool
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionInterface.html#toc-methods)
+  - [Constants](class-aws-endpoint-partitioninterface-toc-constants.md)
+  - [Methods](class-aws-endpoint-partitioninterface-toc-methods.md)
 - Methods
-  - [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionInterface.html#method___invoke)
-  - [getAvailableEndpoints()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionInterface.html#method_getAvailableEndpoints)
-  - [getName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionInterface.html#method_getName)
-  - [isRegionMatch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionInterface.html#method_isRegionMatch)
+  - [\_\_invoke()](class-aws-endpoint-partitioninterface-method-invoke.md)
+  - [getAvailableEndpoints()](class-aws-endpoint-partitioninterface-method-getavailableendpoints.md)
+  - [getName()](class-aws-endpoint-partitioninterface-method-getname.md)
+  - [isRegionMatch()](class-aws-endpoint-partitioninterface-method-isregionmatch.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionInterface.html#top)
+[Back To Top](class-aws-endpoint-partitioninterface-top.md)

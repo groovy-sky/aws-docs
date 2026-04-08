@@ -2,149 +2,149 @@
 
 The following actions are supported by Amazon Route 53:
 
-- [ActivateKeySigningKey](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ActivateKeySigningKey.html)
+- [ActivateKeySigningKey](api-activatekeysigningkey.md)
 
 - [AssociateVPCWithHostedZone](api-associatevpcwithhostedzone.md)
 
-- [ChangeCidrCollection](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ChangeCidrCollection.html)
+- [ChangeCidrCollection](api-changecidrcollection.md)
 
 - [ChangeResourceRecordSets](api-changeresourcerecordsets.md)
 
-- [ChangeTagsForResource](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ChangeTagsForResource.html)
+- [ChangeTagsForResource](api-changetagsforresource.md)
 
-- [CreateCidrCollection](https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateCidrCollection.html)
+- [CreateCidrCollection](api-createcidrcollection.md)
 
-- [CreateHealthCheck](https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateHealthCheck.html)
+- [CreateHealthCheck](api-createhealthcheck.md)
 
 - [CreateHostedZone](api-createhostedzone.md)
 
-- [CreateKeySigningKey](https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateKeySigningKey.html)
+- [CreateKeySigningKey](api-createkeysigningkey.md)
 
-- [CreateQueryLoggingConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateQueryLoggingConfig.html)
+- [CreateQueryLoggingConfig](api-createqueryloggingconfig.md)
 
 - [CreateReusableDelegationSet](api-createreusabledelegationset.md)
 
-- [CreateTrafficPolicy](https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateTrafficPolicy.html)
+- [CreateTrafficPolicy](api-createtrafficpolicy.md)
 
-- [CreateTrafficPolicyInstance](https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateTrafficPolicyInstance.html)
+- [CreateTrafficPolicyInstance](api-createtrafficpolicyinstance.md)
 
-- [CreateTrafficPolicyVersion](https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateTrafficPolicyVersion.html)
+- [CreateTrafficPolicyVersion](api-createtrafficpolicyversion.md)
 
 - [CreateVPCAssociationAuthorization](api-createvpcassociationauthorization.md)
 
-- [DeactivateKeySigningKey](https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeactivateKeySigningKey.html)
+- [DeactivateKeySigningKey](api-deactivatekeysigningkey.md)
 
-- [DeleteCidrCollection](https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteCidrCollection.html)
+- [DeleteCidrCollection](api-deletecidrcollection.md)
 
-- [DeleteHealthCheck](https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteHealthCheck.html)
+- [DeleteHealthCheck](api-deletehealthcheck.md)
 
-- [DeleteHostedZone](https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteHostedZone.html)
+- [DeleteHostedZone](api-deletehostedzone.md)
 
-- [DeleteKeySigningKey](https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteKeySigningKey.html)
+- [DeleteKeySigningKey](api-deletekeysigningkey.md)
 
-- [DeleteQueryLoggingConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteQueryLoggingConfig.html)
+- [DeleteQueryLoggingConfig](api-deletequeryloggingconfig.md)
 
-- [DeleteReusableDelegationSet](https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteReusableDelegationSet.html)
+- [DeleteReusableDelegationSet](api-deletereusabledelegationset.md)
 
-- [DeleteTrafficPolicy](https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteTrafficPolicy.html)
+- [DeleteTrafficPolicy](api-deletetrafficpolicy.md)
 
-- [DeleteTrafficPolicyInstance](https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteTrafficPolicyInstance.html)
+- [DeleteTrafficPolicyInstance](api-deletetrafficpolicyinstance.md)
 
 - [DeleteVPCAssociationAuthorization](api-deletevpcassociationauthorization.md)
 
-- [DisableHostedZoneDNSSEC](https://docs.aws.amazon.com/Route53/latest/APIReference/API_DisableHostedZoneDNSSEC.html)
+- [DisableHostedZoneDNSSEC](api-disablehostedzonednssec.md)
 
 - [DisassociateVPCFromHostedZone](api-disassociatevpcfromhostedzone.md)
 
-- [EnableHostedZoneDNSSEC](https://docs.aws.amazon.com/Route53/latest/APIReference/API_EnableHostedZoneDNSSEC.html)
+- [EnableHostedZoneDNSSEC](api-enablehostedzonednssec.md)
 
 - [GetAccountLimit](api-getaccountlimit.md)
 
 - [GetChange](api-getchange.md)
 
-- [GetCheckerIpRanges](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetCheckerIpRanges.html)
+- [GetCheckerIpRanges](api-getcheckeripranges.md)
 
-- [GetDNSSEC](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetDNSSEC.html)
+- [GetDNSSEC](api-getdnssec.md)
 
-- [GetGeoLocation](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetGeoLocation.html)
+- [GetGeoLocation](api-getgeolocation.md)
 
-- [GetHealthCheck](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetHealthCheck.html)
+- [GetHealthCheck](api-gethealthcheck.md)
 
-- [GetHealthCheckCount](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetHealthCheckCount.html)
+- [GetHealthCheckCount](api-gethealthcheckcount.md)
 
-- [GetHealthCheckLastFailureReason](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetHealthCheckLastFailureReason.html)
+- [GetHealthCheckLastFailureReason](api-gethealthchecklastfailurereason.md)
 
-- [GetHealthCheckStatus](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetHealthCheckStatus.html)
+- [GetHealthCheckStatus](api-gethealthcheckstatus.md)
 
 - [GetHostedZone](api-gethostedzone.md)
 
-- [GetHostedZoneCount](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetHostedZoneCount.html)
+- [GetHostedZoneCount](api-gethostedzonecount.md)
 
 - [GetHostedZoneLimit](api-gethostedzonelimit.md)
 
-- [GetQueryLoggingConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetQueryLoggingConfig.html)
+- [GetQueryLoggingConfig](api-getqueryloggingconfig.md)
 
-- [GetReusableDelegationSet](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetReusableDelegationSet.html)
+- [GetReusableDelegationSet](api-getreusabledelegationset.md)
 
 - [GetReusableDelegationSetLimit](api-getreusabledelegationsetlimit.md)
 
-- [GetTrafficPolicy](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetTrafficPolicy.html)
+- [GetTrafficPolicy](api-gettrafficpolicy.md)
 
-- [GetTrafficPolicyInstance](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetTrafficPolicyInstance.html)
+- [GetTrafficPolicyInstance](api-gettrafficpolicyinstance.md)
 
-- [GetTrafficPolicyInstanceCount](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetTrafficPolicyInstanceCount.html)
+- [GetTrafficPolicyInstanceCount](api-gettrafficpolicyinstancecount.md)
 
-- [ListCidrBlocks](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListCidrBlocks.html)
+- [ListCidrBlocks](api-listcidrblocks.md)
 
-- [ListCidrCollections](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListCidrCollections.html)
+- [ListCidrCollections](api-listcidrcollections.md)
 
-- [ListCidrLocations](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListCidrLocations.html)
+- [ListCidrLocations](api-listcidrlocations.md)
 
-- [ListGeoLocations](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListGeoLocations.html)
+- [ListGeoLocations](api-listgeolocations.md)
 
-- [ListHealthChecks](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListHealthChecks.html)
+- [ListHealthChecks](api-listhealthchecks.md)
 
 - [ListHostedZones](api-listhostedzones.md)
 
-- [ListHostedZonesByName](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListHostedZonesByName.html)
+- [ListHostedZonesByName](api-listhostedzonesbyname.md)
 
 - [ListHostedZonesByVPC](api-listhostedzonesbyvpc.md)
 
-- [ListQueryLoggingConfigs](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListQueryLoggingConfigs.html)
+- [ListQueryLoggingConfigs](api-listqueryloggingconfigs.md)
 
-- [ListResourceRecordSets](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListResourceRecordSets.html)
+- [ListResourceRecordSets](api-listresourcerecordsets.md)
 
-- [ListReusableDelegationSets](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListReusableDelegationSets.html)
+- [ListReusableDelegationSets](api-listreusabledelegationsets.md)
 
-- [ListTagsForResource](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListTagsForResource.html)
+- [ListTagsForResource](api-listtagsforresource.md)
 
-- [ListTagsForResources](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListTagsForResources.html)
+- [ListTagsForResources](api-listtagsforresources.md)
 
-- [ListTrafficPolicies](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListTrafficPolicies.html)
+- [ListTrafficPolicies](api-listtrafficpolicies.md)
 
-- [ListTrafficPolicyInstances](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListTrafficPolicyInstances.html)
+- [ListTrafficPolicyInstances](api-listtrafficpolicyinstances.md)
 
-- [ListTrafficPolicyInstancesByHostedZone](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListTrafficPolicyInstancesByHostedZone.html)
+- [ListTrafficPolicyInstancesByHostedZone](api-listtrafficpolicyinstancesbyhostedzone.md)
 
-- [ListTrafficPolicyInstancesByPolicy](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListTrafficPolicyInstancesByPolicy.html)
+- [ListTrafficPolicyInstancesByPolicy](api-listtrafficpolicyinstancesbypolicy.md)
 
-- [ListTrafficPolicyVersions](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListTrafficPolicyVersions.html)
+- [ListTrafficPolicyVersions](api-listtrafficpolicyversions.md)
 
-- [ListVPCAssociationAuthorizations](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListVPCAssociationAuthorizations.html)
+- [ListVPCAssociationAuthorizations](api-listvpcassociationauthorizations.md)
 
-- [TestDNSAnswer](https://docs.aws.amazon.com/Route53/latest/APIReference/API_TestDNSAnswer.html)
+- [TestDNSAnswer](api-testdnsanswer.md)
 
-- [UpdateHealthCheck](https://docs.aws.amazon.com/Route53/latest/APIReference/API_UpdateHealthCheck.html)
+- [UpdateHealthCheck](api-updatehealthcheck.md)
 
-- [UpdateHostedZoneComment](https://docs.aws.amazon.com/Route53/latest/APIReference/API_UpdateHostedZoneComment.html)
+- [UpdateHostedZoneComment](api-updatehostedzonecomment.md)
 
-- [UpdateHostedZoneFeatures](https://docs.aws.amazon.com/Route53/latest/APIReference/API_UpdateHostedZoneFeatures.html)
+- [UpdateHostedZoneFeatures](api-updatehostedzonefeatures.md)
 
-- [UpdateTrafficPolicyComment](https://docs.aws.amazon.com/Route53/latest/APIReference/API_UpdateTrafficPolicyComment.html)
+- [UpdateTrafficPolicyComment](api-updatetrafficpolicycomment.md)
 
-- [UpdateTrafficPolicyInstance](https://docs.aws.amazon.com/Route53/latest/APIReference/API_UpdateTrafficPolicyInstance.html)
+- [UpdateTrafficPolicyInstance](api-updatetrafficpolicyinstance.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Actions
 

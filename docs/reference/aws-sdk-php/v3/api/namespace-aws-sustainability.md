@@ -4,15 +4,15 @@ Menu
 
 ## Sustainability
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sustainability.html\#toc)
+### Table of Contents  [header link](namespace-aws-sustainability-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sustainability.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-sustainability-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sustainability.exception.html)
+[Exception](namespace-aws-sustainability-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sustainability.html\#toc-classes)
+#### Classes  [header link](namespace-aws-sustainability-toc-classes.md)
 
-[SustainabilityClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sustainability.SustainabilityClient.html)This client is used to interact with the **AWS Sustainability** service.
+[SustainabilityClient](class-aws-sustainability-sustainabilityclient.md)This client is used to interact with the **AWS Sustainability** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sustainability.html#toc-classes)
+  - [Classes](namespace-aws-sustainability-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sustainability.html#top)
+[Back To Top](namespace-aws-sustainability-top.md)

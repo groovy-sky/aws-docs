@@ -17,16 +17,16 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2019-06-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sso-2019-06-10.html)
+- [**2019-06-10**](api-sso-2019-06-10.md)
 
-  - [GetRoleCredentials](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sso-2019-06-10.html#getrolecredentials)
-  - [ListAccountRoles](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sso-2019-06-10.html#listaccountroles)
-  - [ListAccounts](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sso-2019-06-10.html#listaccounts)
-  - [Logout](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sso-2019-06-10.html#logout)
+  - [GetRoleCredentials](api-sso-2019-06-10-getrolecredentials.md)
+  - [ListAccountRoles](api-sso-2019-06-10-listaccountroles.md)
+  - [ListAccounts](api-sso-2019-06-10-listaccounts.md)
+  - [Logout](api-sso-2019-06-10-logout.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSO.SSOClient.html\#toc)
+### Table of Contents  [header link](class-aws-sso-ssoclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSO.SSOClient.html\#toc-methods)
+#### Methods  [header link](class-aws-sso-ssoclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -57,7 +57,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSO.SSOClient.html\#methods)
+### Methods  [header link](class-aws-sso-ssoclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -524,7 +524,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSO.SSOClient.html#toc-methods)
+  - [Methods](class-aws-sso-ssoclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -551,4 +551,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSO.SSOClient.html#top)
+[Back To Top](class-aws-sso-ssoclient-top.md)

@@ -17,15 +17,15 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2021-05-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-guiconnect-2021-05-01.html)
+- [**2021-05-01**](api-ssm-guiconnect-2021-05-01.md)
 
-  - [DeleteConnectionRecordingPreferences](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-guiconnect-2021-05-01.html#deleteconnectionrecordingpreferences)
-  - [GetConnectionRecordingPreferences](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-guiconnect-2021-05-01.html#getconnectionrecordingpreferences)
-  - [UpdateConnectionRecordingPreferences](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-guiconnect-2021-05-01.html#updateconnectionrecordingpreferences)
+  - [DeleteConnectionRecordingPreferences](api-ssm-guiconnect-2021-05-01-deleteconnectionrecordingpreferences.md)
+  - [GetConnectionRecordingPreferences](api-ssm-guiconnect-2021-05-01-getconnectionrecordingpreferences.md)
+  - [UpdateConnectionRecordingPreferences](api-ssm-guiconnect-2021-05-01-updateconnectionrecordingpreferences.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMGuiConnect.SSMGuiConnectClient.html\#toc)
+### Table of Contents  [header link](class-aws-ssmguiconnect-ssmguiconnectclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMGuiConnect.SSMGuiConnectClient.html\#toc-methods)
+#### Methods  [header link](class-aws-ssmguiconnect-ssmguiconnectclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -56,7 +56,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMGuiConnect.SSMGuiConnectClient.html\#methods)
+### Methods  [header link](class-aws-ssmguiconnect-ssmguiconnectclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -523,7 +523,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMGuiConnect.SSMGuiConnectClient.html#toc-methods)
+  - [Methods](class-aws-ssmguiconnect-ssmguiconnectclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -550,4 +550,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMGuiConnect.SSMGuiConnectClient.html#top)
+[Back To Top](class-aws-ssmguiconnect-ssmguiconnectclient-top.md)

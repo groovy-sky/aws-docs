@@ -55,7 +55,7 @@ In the following screenshot, the selected line represents a
     the detail view (outlined in the screenshot) indicate that there
     are 10 Reserved Instances for this configuration.
 
-![This image shows the Reserved Instances screen in the Amazon EC2 console. The Instance count field is outlined in the screenshot.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ri-instance-count.png)
+![This image shows the Reserved Instances screen in the Amazon EC2 console. The Instance count field is outlined in the screenshot.](../../../images/awsec2/latest/userguide/images/ri-instance-count-png.md)
 
 AWS CLI
 

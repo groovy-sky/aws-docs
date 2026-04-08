@@ -1,7 +1,7 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Psr7](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.psr7.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Psr7](namespace-guzzlehttp-psr7.md)
 
 ## FnStream        in package    - [Aws](package-aws.md)       implements  [StreamInterface](class-psr-http-message-streaminterface.md)
 
@@ -12,40 +12,40 @@ Compose stream implementations based on a hash of functions.
 Allows for easy testing and extension of a provided stream without needing
 to create a concrete class for a simple extension point.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-psr7-fnstream-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#toc-interfaces)
+#### Interfaces  [header link](class-guzzlehttp-psr7-fnstream-toc-interfaces.md)
 
 [StreamInterface](class-psr-http-message-streaminterface.md)Describes a data stream.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-psr7-fnstream-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method___construct)
-: mixed [\_\_destruct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method___destruct)
-: mixed The close method is called on the underlying stream only if possible.[\_\_get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method___get)
-: void Lazily determine which methods are not implemented.[\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method___toString)
-: string Reads all data from the stream into a string, from the beginning to end.[\_\_wakeup()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method___wakeup)
-: void An unserialize would allow the \_\_destruct to run when the unserialized value goes out of scope.[close()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_close)
-: void Closes the stream and any underlying resources.[decorate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_decorate)
-: [FnStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html)Adds custom functionality to an underlying stream by intercepting
-specific method calls.[detach()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_detach)
-: resource\|null Separates any underlying resources from the stream.[eof()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_eof)
-: bool Returns true if the stream is at the end of the stream.[getContents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_getContents)
-: string Returns the remaining contents in a string[getMetadata()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_getMetadata)
-: mixed Get stream metadata as an associative array or retrieve a specific key.[getSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_getSize)
-: int\|null Get the size of the stream if known.[isReadable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_isReadable)
-: bool Returns whether or not the stream is readable.[isSeekable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_isSeekable)
-: bool Returns whether or not the stream is seekable.[isWritable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_isWritable)
-: bool Returns whether or not the stream is writable.[read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_read)
-: string Read data from the stream.[rewind()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_rewind)
-: void Seek to the beginning of the stream.[seek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_seek)
-: void Seek to a position in the stream.[tell()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_tell)
-: int Returns the current position of the file read/write pointer[write()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_write)
+[\_\_construct()](class-guzzlehttp-psr7-fnstream-method-construct.md)
+: mixed [\_\_destruct()](class-guzzlehttp-psr7-fnstream-method-destruct.md)
+: mixed The close method is called on the underlying stream only if possible.[\_\_get()](class-guzzlehttp-psr7-fnstream-method-get.md)
+: void Lazily determine which methods are not implemented.[\_\_toString()](class-guzzlehttp-psr7-fnstream-method-tostring.md)
+: string Reads all data from the stream into a string, from the beginning to end.[\_\_wakeup()](class-guzzlehttp-psr7-fnstream-method-wakeup.md)
+: void An unserialize would allow the \_\_destruct to run when the unserialized value goes out of scope.[close()](class-guzzlehttp-psr7-fnstream-method-close.md)
+: void Closes the stream and any underlying resources.[decorate()](class-guzzlehttp-psr7-fnstream-method-decorate.md)
+: [FnStream](class-guzzlehttp-psr7-fnstream.md)Adds custom functionality to an underlying stream by intercepting
+specific method calls.[detach()](class-guzzlehttp-psr7-fnstream-method-detach.md)
+: resource\|null Separates any underlying resources from the stream.[eof()](class-guzzlehttp-psr7-fnstream-method-eof.md)
+: bool Returns true if the stream is at the end of the stream.[getContents()](class-guzzlehttp-psr7-fnstream-method-getcontents.md)
+: string Returns the remaining contents in a string[getMetadata()](class-guzzlehttp-psr7-fnstream-method-getmetadata.md)
+: mixed Get stream metadata as an associative array or retrieve a specific key.[getSize()](class-guzzlehttp-psr7-fnstream-method-getsize.md)
+: int\|null Get the size of the stream if known.[isReadable()](class-guzzlehttp-psr7-fnstream-method-isreadable.md)
+: bool Returns whether or not the stream is readable.[isSeekable()](class-guzzlehttp-psr7-fnstream-method-isseekable.md)
+: bool Returns whether or not the stream is seekable.[isWritable()](class-guzzlehttp-psr7-fnstream-method-iswritable.md)
+: bool Returns whether or not the stream is writable.[read()](class-guzzlehttp-psr7-fnstream-method-read.md)
+: string Read data from the stream.[rewind()](class-guzzlehttp-psr7-fnstream-method-rewind.md)
+: void Seek to the beginning of the stream.[seek()](class-guzzlehttp-psr7-fnstream-method-seek.md)
+: void Seek to a position in the stream.[tell()](class-guzzlehttp-psr7-fnstream-method-tell.md)
+: int Returns the current position of the file read/write pointer[write()](class-guzzlehttp-psr7-fnstream-method-write.md)
 : int Write data to the stream.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#methods)
+### Methods  [header link](class-guzzlehttp-psr7-fnstream-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#method___construct)
+#### \_\_construct()  [header link](class-guzzlehttp-psr7-fnstream-method-construct.md)
 
 `
     public
@@ -58,7 +58,7 @@ $methods
 
 Hash of method name to a callable.
 
-#### \_\_destruct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#method___destruct)
+#### \_\_destruct()  [header link](class-guzzlehttp-psr7-fnstream-method-destruct.md)
 
 The close method is called on the underlying stream only if possible.
 
@@ -66,7 +66,7 @@ The close method is called on the underlying stream only if possible.
     public
                     __destruct() : mixed`
 
-#### \_\_get()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#method___get)
+#### \_\_get()  [header link](class-guzzlehttp-psr7-fnstream-method-get.md)
 
 Lazily determine which methods are not implemented.
 
@@ -79,11 +79,11 @@ Lazily determine which methods are not implemented.
 $name
 : string
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#method___get\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-fnstream-method-get-tags.md)
 
 throwsBadMethodCallException
 
-#### \_\_toString()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#method___toString)
+#### \_\_toString()  [header link](class-guzzlehttp-psr7-fnstream-method-tostring.md)
 
 Reads all data from the stream into a string, from the beginning to end.
 
@@ -103,7 +103,7 @@ string casting operations.
 
 string
 
-#### \_\_wakeup()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#method___wakeup)
+#### \_\_wakeup()  [header link](class-guzzlehttp-psr7-fnstream-method-wakeup.md)
 
 An unserialize would allow the \_\_destruct to run when the unserialized value goes out of scope.
 
@@ -111,11 +111,11 @@ An unserialize would allow the \_\_destruct to run when the unserialized value g
     public
                     __wakeup() : void`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#method___wakeup\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-fnstream-method-wakeup-tags.md)
 
 throwsLogicException
 
-#### close()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#method_close)
+#### close()  [header link](class-guzzlehttp-psr7-fnstream-method-close.md)
 
 Closes the stream and any underlying resources.
 
@@ -123,7 +123,7 @@ Closes the stream and any underlying resources.
     public
                     close() : void`
 
-#### decorate()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#method_decorate)
+#### decorate()  [header link](class-guzzlehttp-psr7-fnstream-method-decorate.md)
 
 Adds custom functionality to an underlying stream by intercepting
 specific method calls.
@@ -146,9 +146,9 @@ Hash of method name to a closure
 
 ##### Return values
 
-[FnStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html)
+[FnStream](class-guzzlehttp-psr7-fnstream.md)
 
-#### detach()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#method_detach)
+#### detach()  [header link](class-guzzlehttp-psr7-fnstream-method-detach.md)
 
 Separates any underlying resources from the stream.
 
@@ -165,7 +165,7 @@ resource\|null
 
 Underlying PHP stream, if any
 
-#### eof()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#method_eof)
+#### eof()  [header link](class-guzzlehttp-psr7-fnstream-method-eof.md)
 
 Returns true if the stream is at the end of the stream.
 
@@ -177,7 +177,7 @@ Returns true if the stream is at the end of the stream.
 
 bool
 
-#### getContents()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#method_getContents)
+#### getContents()  [header link](class-guzzlehttp-psr7-fnstream-method-getcontents.md)
 
 Returns the remaining contents in a string
 
@@ -189,7 +189,7 @@ Returns the remaining contents in a string
 
 string
 
-#### getMetadata()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#method_getMetadata)
+#### getMetadata()  [header link](class-guzzlehttp-psr7-fnstream-method-getmetadata.md)
 
 Get stream metadata as an associative array or retrieve a specific key.
 
@@ -205,7 +205,7 @@ $key
 
 Specific metadata to retrieve.
 
-#### getSize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#method_getSize)
+#### getSize()  [header link](class-guzzlehttp-psr7-fnstream-method-getsize.md)
 
 Get the size of the stream if known.
 
@@ -220,7 +220,7 @@ int\|null
 
 Returns the size in bytes if known, or null if unknown.
 
-#### isReadable()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#method_isReadable)
+#### isReadable()  [header link](class-guzzlehttp-psr7-fnstream-method-isreadable.md)
 
 Returns whether or not the stream is readable.
 
@@ -232,7 +232,7 @@ Returns whether or not the stream is readable.
 
 bool
 
-#### isSeekable()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#method_isSeekable)
+#### isSeekable()  [header link](class-guzzlehttp-psr7-fnstream-method-isseekable.md)
 
 Returns whether or not the stream is seekable.
 
@@ -244,7 +244,7 @@ Returns whether or not the stream is seekable.
 
 bool
 
-#### isWritable()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#method_isWritable)
+#### isWritable()  [header link](class-guzzlehttp-psr7-fnstream-method-iswritable.md)
 
 Returns whether or not the stream is writable.
 
@@ -256,7 +256,7 @@ Returns whether or not the stream is writable.
 
 bool
 
-#### read()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#method_read)
+#### read()  [header link](class-guzzlehttp-psr7-fnstream-method-read.md)
 
 Read data from the stream.
 
@@ -281,7 +281,7 @@ string
 Returns the data read from the stream, or an empty string
 if no bytes are available.
 
-#### rewind()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#method_rewind)
+#### rewind()  [header link](class-guzzlehttp-psr7-fnstream-method-rewind.md)
 
 Seek to the beginning of the stream.
 
@@ -292,7 +292,7 @@ Seek to the beginning of the stream.
 If the stream is not seekable, this method will raise an exception;
 otherwise, it will perform a seek(0).
 
-#### seek()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#method_seek)
+#### seek()  [header link](class-guzzlehttp-psr7-fnstream-method-seek.md)
 
 Seek to a position in the stream.
 
@@ -317,7 +317,7 @@ PHP $whence values for `fseek()`. SEEK\_SET: Set position equal to
 offset bytes SEEK\_CUR: Set position to current location plus offset
 SEEK\_END: Set position to end-of-stream plus offset.
 
-#### tell()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#method_tell)
+#### tell()  [header link](class-guzzlehttp-psr7-fnstream-method-tell.md)
 
 Returns the current position of the file read/write pointer
 
@@ -332,7 +332,7 @@ int
 
 Position of the file pointer
 
-#### write()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html\#method_write)
+#### write()  [header link](class-guzzlehttp-psr7-fnstream-method-write.md)
 
 Write data to the stream.
 
@@ -361,27 +361,27 @@ Returns the number of bytes written to the stream.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#toc-methods)
+  - [Methods](class-guzzlehttp-psr7-fnstream-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method___construct)
-  - [\_\_destruct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method___destruct)
-  - [\_\_get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method___get)
-  - [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method___toString)
-  - [\_\_wakeup()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method___wakeup)
-  - [close()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_close)
-  - [decorate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_decorate)
-  - [detach()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_detach)
-  - [eof()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_eof)
-  - [getContents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_getContents)
-  - [getMetadata()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_getMetadata)
-  - [getSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_getSize)
-  - [isReadable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_isReadable)
-  - [isSeekable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_isSeekable)
-  - [isWritable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_isWritable)
-  - [read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_read)
-  - [rewind()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_rewind)
-  - [seek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_seek)
-  - [tell()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_tell)
-  - [write()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#method_write)
+  - [\_\_construct()](class-guzzlehttp-psr7-fnstream-method-construct.md)
+  - [\_\_destruct()](class-guzzlehttp-psr7-fnstream-method-destruct.md)
+  - [\_\_get()](class-guzzlehttp-psr7-fnstream-method-get.md)
+  - [\_\_toString()](class-guzzlehttp-psr7-fnstream-method-tostring.md)
+  - [\_\_wakeup()](class-guzzlehttp-psr7-fnstream-method-wakeup.md)
+  - [close()](class-guzzlehttp-psr7-fnstream-method-close.md)
+  - [decorate()](class-guzzlehttp-psr7-fnstream-method-decorate.md)
+  - [detach()](class-guzzlehttp-psr7-fnstream-method-detach.md)
+  - [eof()](class-guzzlehttp-psr7-fnstream-method-eof.md)
+  - [getContents()](class-guzzlehttp-psr7-fnstream-method-getcontents.md)
+  - [getMetadata()](class-guzzlehttp-psr7-fnstream-method-getmetadata.md)
+  - [getSize()](class-guzzlehttp-psr7-fnstream-method-getsize.md)
+  - [isReadable()](class-guzzlehttp-psr7-fnstream-method-isreadable.md)
+  - [isSeekable()](class-guzzlehttp-psr7-fnstream-method-isseekable.md)
+  - [isWritable()](class-guzzlehttp-psr7-fnstream-method-iswritable.md)
+  - [read()](class-guzzlehttp-psr7-fnstream-method-read.md)
+  - [rewind()](class-guzzlehttp-psr7-fnstream-method-rewind.md)
+  - [seek()](class-guzzlehttp-psr7-fnstream-method-seek.md)
+  - [tell()](class-guzzlehttp-psr7-fnstream-method-tell.md)
+  - [write()](class-guzzlehttp-psr7-fnstream-method-write.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.FnStream.html#top)
+[Back To Top](class-guzzlehttp-psr7-fnstream-top.md)

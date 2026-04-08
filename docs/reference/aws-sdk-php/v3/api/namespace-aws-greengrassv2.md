@@ -4,15 +4,15 @@ Menu
 
 ## GreengrassV2
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.greengrassv2.html\#toc)
+### Table of Contents  [header link](namespace-aws-greengrassv2-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.greengrassv2.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-greengrassv2-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.greengrassv2.exception.html)
+[Exception](namespace-aws-greengrassv2-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.greengrassv2.html\#toc-classes)
+#### Classes  [header link](namespace-aws-greengrassv2-toc-classes.md)
 
-[GreengrassV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GreengrassV2.GreengrassV2Client.html)This client is used to interact with the **AWS IoT Greengrass V2** service.
+[GreengrassV2Client](class-aws-greengrassv2-greengrassv2client.md)This client is used to interact with the **AWS IoT Greengrass V2** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.greengrassv2.html#toc-classes)
+  - [Classes](namespace-aws-greengrassv2-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.greengrassv2.html#top)
+[Back To Top](namespace-aws-greengrassv2-top.md)

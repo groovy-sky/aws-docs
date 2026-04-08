@@ -5,27 +5,27 @@ Menu
 
 ## PostObject        in package    - [Aws](package-aws.md)
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html\#tags)
+##### Tags  [header link](class-aws-s3-postobject-tags.md)
 
 deprecated
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html\#toc)
+### Table of Contents  [header link](class-aws-s3-postobject-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-postobject-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html#method___construct)
-: mixed Constructs the PostObject.[getBucket()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html#method_getBucket)
-: string Gets the bucket name.[getClient()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html#method_getClient)
-: [S3ClientInterface](class-aws-s3-s3clientinterface.md)Gets the S3 client.[getFormAttributes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html#method_getFormAttributes)
-: array<string\|int, mixed> Gets the form attributes as an array.[getFormInputs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html#method_getFormInputs)
-: array<string\|int, mixed> Gets the form inputs as an array.[getJsonPolicy()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html#method_getJsonPolicy)
-: string Gets the raw JSON policy.[setFormAttribute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html#method_setFormAttribute)
-: mixed Set a form attribute.[setFormInput()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html#method_setFormInput)
+[\_\_construct()](class-aws-s3-postobject-method-construct.md)
+: mixed Constructs the PostObject.[getBucket()](class-aws-s3-postobject-method-getbucket.md)
+: string Gets the bucket name.[getClient()](class-aws-s3-postobject-method-getclient.md)
+: [S3ClientInterface](class-aws-s3-s3clientinterface.md)Gets the S3 client.[getFormAttributes()](class-aws-s3-postobject-method-getformattributes.md)
+: array<string\|int, mixed> Gets the form attributes as an array.[getFormInputs()](class-aws-s3-postobject-method-getforminputs.md)
+: array<string\|int, mixed> Gets the form inputs as an array.[getJsonPolicy()](class-aws-s3-postobject-method-getjsonpolicy.md)
+: string Gets the raw JSON policy.[setFormAttribute()](class-aws-s3-postobject-method-setformattribute.md)
+: mixed Set a form attribute.[setFormInput()](class-aws-s3-postobject-method-setforminput.md)
 : mixed Set a form input.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html\#methods)
+### Methods  [header link](class-aws-s3-postobject-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-postobject-method-construct.md)
 
 Constructs the PostObject.
 
@@ -59,7 +59,7 @@ The policy will be base64 encoded
 and applied to the form on your
 behalf.
 
-#### getBucket()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html\#method_getBucket)
+#### getBucket()  [header link](class-aws-s3-postobject-method-getbucket.md)
 
 Gets the bucket name.
 
@@ -71,7 +71,7 @@ Gets the bucket name.
 
 string
 
-#### getClient()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html\#method_getClient)
+#### getClient()  [header link](class-aws-s3-postobject-method-getclient.md)
 
 Gets the S3 client.
 
@@ -83,7 +83,7 @@ Gets the S3 client.
 
 [S3ClientInterface](class-aws-s3-s3clientinterface.md)
 
-#### getFormAttributes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html\#method_getFormAttributes)
+#### getFormAttributes()  [header link](class-aws-s3-postobject-method-getformattributes.md)
 
 Gets the form attributes as an array.
 
@@ -95,7 +95,7 @@ Gets the form attributes as an array.
 
 array<string\|int, mixed>
 
-#### getFormInputs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html\#method_getFormInputs)
+#### getFormInputs()  [header link](class-aws-s3-postobject-method-getforminputs.md)
 
 Gets the form inputs as an array.
 
@@ -107,7 +107,7 @@ Gets the form inputs as an array.
 
 array<string\|int, mixed>
 
-#### getJsonPolicy()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html\#method_getJsonPolicy)
+#### getJsonPolicy()  [header link](class-aws-s3-postobject-method-getjsonpolicy.md)
 
 Gets the raw JSON policy.
 
@@ -119,7 +119,7 @@ Gets the raw JSON policy.
 
 string
 
-#### setFormAttribute()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html\#method_setFormAttribute)
+#### setFormAttribute()  [header link](class-aws-s3-postobject-method-setformattribute.md)
 
 Set a form attribute.
 
@@ -139,7 +139,7 @@ $value
 
 Value to set.
 
-#### setFormInput()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html\#method_setFormInput)
+#### setFormInput()  [header link](class-aws-s3-postobject-method-setforminput.md)
 
 Set a form input.
 
@@ -166,15 +166,15 @@ Value to set.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html#toc-methods)
+  - [Methods](class-aws-s3-postobject-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html#method___construct)
-  - [getBucket()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html#method_getBucket)
-  - [getClient()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html#method_getClient)
-  - [getFormAttributes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html#method_getFormAttributes)
-  - [getFormInputs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html#method_getFormInputs)
-  - [getJsonPolicy()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html#method_getJsonPolicy)
-  - [setFormAttribute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html#method_setFormAttribute)
-  - [setFormInput()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html#method_setFormInput)
+  - [\_\_construct()](class-aws-s3-postobject-method-construct.md)
+  - [getBucket()](class-aws-s3-postobject-method-getbucket.md)
+  - [getClient()](class-aws-s3-postobject-method-getclient.md)
+  - [getFormAttributes()](class-aws-s3-postobject-method-getformattributes.md)
+  - [getFormInputs()](class-aws-s3-postobject-method-getforminputs.md)
+  - [getJsonPolicy()](class-aws-s3-postobject-method-getjsonpolicy.md)
+  - [setFormAttribute()](class-aws-s3-postobject-method-setformattribute.md)
+  - [setFormInput()](class-aws-s3-postobject-method-setforminput.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html#top)
+[Back To Top](class-aws-s3-postobject-top.md)

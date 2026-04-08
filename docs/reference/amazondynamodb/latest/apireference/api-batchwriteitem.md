@@ -41,7 +41,7 @@ underlying read or write requests can still fail due to throttling on the indivi
 tables. If you delay the batch operation using exponential backoff, the individual
 requests in the batch are much more likely to succeed.
 
-For more information, see [Batch Operations and Error Handling](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ErrorHandling.html#Programming.Errors.BatchOperations) in the _Amazon DynamoDB_
+For more information, see [Batch Operations and Error Handling](../../../../services/dynamodb/latest/developerguide/errorhandling-programming-errors-batchoperations.md) in the _Amazon DynamoDB_
 _Developer Guide_.
 
 With `BatchWriteItem`, you can efficiently write or delete large amounts of
@@ -186,7 +186,7 @@ If you specify any attributes that are part of an index key, then the
 data types for those attributes must match those of the schema in the
 table's attribute definition.
 
-Type: String to array of [WriteRequest](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_WriteRequest.html) objects map
+Type: String to array of [WriteRequest](api-writerequest.md) objects map
 
 Map Entries: Maximum number of 25 items.
 
@@ -360,7 +360,7 @@ throughput.
 
 - `CapacityUnits` \- The total number of capacity units consumed.
 
-Type: Array of [ConsumedCapacity](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ConsumedCapacity.html) objects
+Type: Array of [ConsumedCapacity](api-consumedcapacity.md) objects
 
 **[ItemCollectionMetrics](#API_BatchWriteItem_ResponseSyntax)**
 
@@ -383,7 +383,7 @@ secondary index is approaching its size limit.
 The estimate is subject to change over time; therefore, do not rely on the
 precision or accuracy of the estimate.
 
-Type: String to array of [ItemCollectionMetrics](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ItemCollectionMetrics.html) objects map
+Type: String to array of [ItemCollectionMetrics](api-itemcollectionmetrics.md) objects map
 
 Key Length Constraints: Minimum length of 1. Maximum length of 1024.
 
@@ -425,7 +425,7 @@ table's attribute definition.
 If there are no unprocessed items remaining, the response contains an empty
 `UnprocessedItems` map.
 
-Type: String to array of [WriteRequest](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_WriteRequest.html) objects map
+Type: String to array of [WriteRequest](api-writerequest.md) objects map
 
 Map Entries: Maximum number of 25 items.
 
@@ -462,7 +462,7 @@ HTTP Status Code: 400
 **ProvisionedThroughputExceededException**
 
 The request was denied due to request throttling. For detailed information about
-why the request was throttled and the ARN of the impacted resource, find the [ThrottlingReason](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ThrottlingReason.html) field in the returned exception. The AWS
+why the request was throttled and the ARN of the impacted resource, find the [ThrottlingReason](api-throttlingreason.md) field in the returned exception. The AWS
 SDKs for DynamoDB automatically retry requests that receive this exception.
 Your request is eventually successful, unless your retry queue is too large to finish.
 Reduce the frequency of requests and use exponential backoff. For more information, go
@@ -474,7 +474,7 @@ You exceeded your maximum allowed provisioned throughput.
 
 **ThrottlingReasons**
 
-A list of [ThrottlingReason](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ThrottlingReason.html) that
+A list of [ThrottlingReason](api-throttlingreason.md) that
 provide detailed diagnostic information about why the request was throttled.
 
 HTTP Status Code: 400
@@ -490,12 +490,12 @@ HTTP Status Code: 400
 
 Throughput exceeds the current throughput quota for your account. For detailed
 information about why the request was throttled and the ARN of the impacted resource,
-find the [ThrottlingReason](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ThrottlingReason.html) field in the returned exception. Contact [Support](https://aws.amazon.com/support) to request a quota
+find the [ThrottlingReason](api-throttlingreason.md) field in the returned exception. Contact [Support](https://aws.amazon.com/support) to request a quota
 increase.
 
 **ThrottlingReasons**
 
-A list of [ThrottlingReason](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ThrottlingReason.html) that
+A list of [ThrottlingReason](api-throttlingreason.md) that
 provide detailed diagnostic information about why the request was throttled.
 
 HTTP Status Code: 400
@@ -514,11 +514,11 @@ HTTP Status Code: 400
 **ThrottlingException**
 
 The request was denied due to request throttling. For detailed information about why
-the request was throttled and the ARN of the impacted resource, find the [ThrottlingReason](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ThrottlingReason.html) field in the returned exception.
+the request was throttled and the ARN of the impacted resource, find the [ThrottlingReason](api-throttlingreason.md) field in the returned exception.
 
 **throttlingReasons**
 
-A list of [ThrottlingReason](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ThrottlingReason.html) that
+A list of [ThrottlingReason](api-throttlingreason.md) that
 provide detailed diagnostic information about why the request was throttled.
 
 HTTP Status Code: 400
@@ -645,27 +645,27 @@ Date: <Date>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/dynamodb-2012-08-10/BatchWriteItem)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/dynamodb-2012-08-10/batchwriteitem.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/BatchWriteItem)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/dynamodb-2012-08-10/batchwriteitem.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/BatchWriteItem)
+- [AWS SDK for C++](../../../goto/sdkforcpp/dynamodb-2012-08-10/batchwriteitem.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/dynamodb-2012-08-10/BatchWriteItem)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/dynamodb-2012-08-10/batchwriteitem.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/BatchWriteItem)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/dynamodb-2012-08-10/batchwriteitem.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/dynamodb-2012-08-10/BatchWriteItem)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/dynamodb-2012-08-10/batchwriteitem.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/dynamodb-2012-08-10/BatchWriteItem)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/dynamodb-2012-08-10/batchwriteitem.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/BatchWriteItem)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/dynamodb-2012-08-10/batchwriteitem.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/BatchWriteItem)
+- [AWS SDK for Python](../../../../services/goto/boto3/dynamodb-2012-08-10/batchwriteitem.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/BatchWriteItem)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/batchwriteitem.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 BatchGetItem
 

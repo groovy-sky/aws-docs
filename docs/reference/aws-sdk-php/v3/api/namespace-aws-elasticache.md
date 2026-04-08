@@ -4,15 +4,15 @@ Menu
 
 ## ElastiCache
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticache.html\#toc)
+### Table of Contents  [header link](namespace-aws-elasticache-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticache.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-elasticache-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticache.exception.html)
+[Exception](namespace-aws-elasticache-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticache.html\#toc-classes)
+#### Classes  [header link](namespace-aws-elasticache-toc-classes.md)
 
-[ElastiCacheClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElastiCache.ElastiCacheClient.html)This client is used to interact with the **Amazon ElastiCache** service.
+[ElastiCacheClient](class-aws-elasticache-elasticacheclient.md)This client is used to interact with the **Amazon ElastiCache** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticache.html#toc-classes)
+  - [Classes](namespace-aws-elasticache-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticache.html#top)
+[Back To Top](namespace-aws-elasticache-top.md)

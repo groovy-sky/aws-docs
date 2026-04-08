@@ -80,13 +80,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53resolver-2018-04-01/ResolverRuleAssociation)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53resolver-2018-04-01/resolverruleassociation.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53resolver-2018-04-01/ResolverRuleAssociation)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53resolver-2018-04-01/resolverruleassociation.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53resolver-2018-04-01/ResolverRuleAssociation)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53resolver-2018-04-01/resolverruleassociation.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ResolverRule
 

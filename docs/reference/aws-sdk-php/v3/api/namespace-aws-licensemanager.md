@@ -4,15 +4,15 @@ Menu
 
 ## LicenseManager
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.licensemanager.html\#toc)
+### Table of Contents  [header link](namespace-aws-licensemanager-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.licensemanager.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-licensemanager-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.licensemanager.exception.html)
+[Exception](namespace-aws-licensemanager-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.licensemanager.html\#toc-classes)
+#### Classes  [header link](namespace-aws-licensemanager-toc-classes.md)
 
-[LicenseManagerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LicenseManager.LicenseManagerClient.html)This client is used to interact with the **AWS License Manager** service.
+[LicenseManagerClient](class-aws-licensemanager-licensemanagerclient.md)This client is used to interact with the **AWS License Manager** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.licensemanager.html#toc-classes)
+  - [Classes](namespace-aws-licensemanager-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.licensemanager.html#top)
+[Back To Top](namespace-aws-licensemanager-top.md)

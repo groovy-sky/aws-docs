@@ -2,7 +2,7 @@
 
 An attribute is a name-value pair that's associated with an Amazon ECS object. Use
 attributes to extend the Amazon ECS data model by adding custom metadata to your
-resources. For more information, see [Attributes](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-placement-constraints.html#attributes) in the _Amazon Elastic Container Service Developer_
+resources. For more information, see [Attributes](../../../../services/amazonecs/latest/developerguide/task-placement-constraints-attributes.md) in the _Amazon Elastic Container Service Developer_
 _Guide_.
 
 ## Contents
@@ -52,13 +52,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/Attribute)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/attribute.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/Attribute)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/attribute.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/Attribute)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/attribute.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AttachmentStateChange
 

@@ -4,15 +4,15 @@ Menu
 
 ## mgn
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mgn.html\#toc)
+### Table of Contents  [header link](namespace-aws-mgn-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mgn.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-mgn-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mgn.exception.html)
+[Exception](namespace-aws-mgn-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mgn.html\#toc-classes)
+#### Classes  [header link](namespace-aws-mgn-toc-classes.md)
 
-[mgnClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.mgn.mgnClient.html)This client is used to interact with the **Application Migration Service** service.
+[mgnClient](class-aws-mgn-mgnclient.md)This client is used to interact with the **Application Migration Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mgn.html#toc-classes)
+  - [Classes](namespace-aws-mgn-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mgn.html#top)
+[Back To Top](namespace-aws-mgn-top.md)

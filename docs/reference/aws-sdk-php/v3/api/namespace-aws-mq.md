@@ -4,15 +4,15 @@ Menu
 
 ## MQ
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mq.html\#toc)
+### Table of Contents  [header link](namespace-aws-mq-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mq.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-mq-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mq.exception.html)
+[Exception](namespace-aws-mq-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mq.html\#toc-classes)
+#### Classes  [header link](namespace-aws-mq-toc-classes.md)
 
-[MQClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MQ.MQClient.html)This client is used to interact with the **AmazonMQ** service.
+[MQClient](class-aws-mq-mqclient.md)This client is used to interact with the **AmazonMQ** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mq.html#toc-classes)
+  - [Classes](namespace-aws-mq-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mq.html#top)
+[Back To Top](namespace-aws-mq-top.md)

@@ -2,8 +2,8 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
-- [Progress](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.progress.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
+- [Progress](namespace-aws-s3-s3transfer-progress.md)
 
 ## AbstractProgressBarFormat        in package    - [Aws](package-aws.md)
 
@@ -11,22 +11,22 @@ AbstractYes
 
 Defines a progress bar format.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-progress-abstractprogressbarformat-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-progress-abstractprogressbarformat-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html#method___construct)
-: mixed [format()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html#method_format)
-: string [getArgs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html#method_getArgs)
-: array<string\|int, mixed> [getFormatParameters()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html#method_getFormatParameters)
-: array<string\|int, mixed> [getFormatTemplate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html#method_getFormatTemplate)
-: string [setArg()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html#method_setArg)
-: void [setArgs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html#method_setArgs)
+[\_\_construct()](class-aws-s3-s3transfer-progress-abstractprogressbarformat-method-construct.md)
+: mixed [format()](class-aws-s3-s3transfer-progress-abstractprogressbarformat-method-format.md)
+: string [getArgs()](class-aws-s3-s3transfer-progress-abstractprogressbarformat-method-getargs.md)
+: array<string\|int, mixed> [getFormatParameters()](class-aws-s3-s3transfer-progress-abstractprogressbarformat-method-getformatparameters.md)
+: array<string\|int, mixed> [getFormatTemplate()](class-aws-s3-s3transfer-progress-abstractprogressbarformat-method-getformattemplate.md)
+: string [setArg()](class-aws-s3-s3transfer-progress-abstractprogressbarformat-method-setarg.md)
+: void [setArgs()](class-aws-s3-s3transfer-progress-abstractprogressbarformat-method-setargs.md)
 : void To set multiple arguments at once.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-progress-abstractprogressbarformat-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3transfer-progress-abstractprogressbarformat-method-construct.md)
 
 `
     public
@@ -38,7 +38,7 @@ $args
 : array<string\|int, mixed>
 = \[\]
 
-#### format()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html\#method_format)
+#### format()  [header link](class-aws-s3-s3transfer-progress-abstractprogressbarformat-method-format.md)
 
 `
     public
@@ -48,7 +48,7 @@ $args
 
 string
 
-#### getArgs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html\#method_getArgs)
+#### getArgs()  [header link](class-aws-s3-s3transfer-progress-abstractprogressbarformat-method-getargs.md)
 
 `
     public
@@ -58,7 +58,7 @@ string
 
 array<string\|int, mixed>
 
-#### getFormatParameters()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html\#method_getFormatParameters)
+#### getFormatParameters()  [header link](class-aws-s3-s3transfer-progress-abstractprogressbarformat-method-getformatparameters.md)
 
 `
     public
@@ -68,7 +68,7 @@ array<string\|int, mixed>
 
 array<string\|int, mixed>
 
-#### getFormatTemplate()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html\#method_getFormatTemplate)
+#### getFormatTemplate()  [header link](class-aws-s3-s3transfer-progress-abstractprogressbarformat-method-getformattemplate.md)
 
 `
     public
@@ -78,7 +78,7 @@ array<string\|int, mixed>
 
 string
 
-#### setArg()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html\#method_setArg)
+#### setArg()  [header link](class-aws-s3-s3transfer-progress-abstractprogressbarformat-method-setarg.md)
 
 `
     public
@@ -90,7 +90,7 @@ $key
 : string$value
 : mixed
 
-#### setArgs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html\#method_setArgs)
+#### setArgs()  [header link](class-aws-s3-s3transfer-progress-abstractprogressbarformat-method-setargs.md)
 
 To set multiple arguments at once.
 
@@ -113,14 +113,14 @@ $args
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html#toc-methods)
+  - [Methods](class-aws-s3-s3transfer-progress-abstractprogressbarformat-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html#method___construct)
-  - [format()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html#method_format)
-  - [getArgs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html#method_getArgs)
-  - [getFormatParameters()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html#method_getFormatParameters)
-  - [getFormatTemplate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html#method_getFormatTemplate)
-  - [setArg()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html#method_setArg)
-  - [setArgs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html#method_setArgs)
+  - [\_\_construct()](class-aws-s3-s3transfer-progress-abstractprogressbarformat-method-construct.md)
+  - [format()](class-aws-s3-s3transfer-progress-abstractprogressbarformat-method-format.md)
+  - [getArgs()](class-aws-s3-s3transfer-progress-abstractprogressbarformat-method-getargs.md)
+  - [getFormatParameters()](class-aws-s3-s3transfer-progress-abstractprogressbarformat-method-getformatparameters.md)
+  - [getFormatTemplate()](class-aws-s3-s3transfer-progress-abstractprogressbarformat-method-getformattemplate.md)
+  - [setArg()](class-aws-s3-s3transfer-progress-abstractprogressbarformat-method-setarg.md)
+  - [setArgs()](class-aws-s3-s3transfer-progress-abstractprogressbarformat-method-setargs.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html#top)
+[Back To Top](class-aws-s3-s3transfer-progress-abstractprogressbarformat-top.md)

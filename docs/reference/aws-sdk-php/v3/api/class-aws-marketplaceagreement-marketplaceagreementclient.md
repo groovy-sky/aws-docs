@@ -17,27 +17,27 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2020-03-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-agreement-2020-03-01.html)
+- [**2020-03-01**](api-marketplace-agreement-2020-03-01.md)
 
-  - [BatchCreateBillingAdjustmentRequest](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-agreement-2020-03-01.html#batchcreatebillingadjustmentrequest)
-  - [CancelAgreementCancellationRequest](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-agreement-2020-03-01.html#cancelagreementcancellationrequest)
-  - [CancelAgreementPaymentRequest](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-agreement-2020-03-01.html#cancelagreementpaymentrequest)
-  - [DescribeAgreement](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-agreement-2020-03-01.html#describeagreement)
-  - [GetAgreementCancellationRequest](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-agreement-2020-03-01.html#getagreementcancellationrequest)
-  - [GetAgreementPaymentRequest](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-agreement-2020-03-01.html#getagreementpaymentrequest)
-  - [GetAgreementTerms](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-agreement-2020-03-01.html#getagreementterms)
-  - [GetBillingAdjustmentRequest](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-agreement-2020-03-01.html#getbillingadjustmentrequest)
-  - [ListAgreementCancellationRequests](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-agreement-2020-03-01.html#listagreementcancellationrequests)
-  - [ListAgreementInvoiceLineItems](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-agreement-2020-03-01.html#listagreementinvoicelineitems)
-  - [ListAgreementPaymentRequests](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-agreement-2020-03-01.html#listagreementpaymentrequests)
-  - [ListBillingAdjustmentRequests](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-agreement-2020-03-01.html#listbillingadjustmentrequests)
-  - [SearchAgreements](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-agreement-2020-03-01.html#searchagreements)
-  - [SendAgreementCancellationRequest](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-agreement-2020-03-01.html#sendagreementcancellationrequest)
-  - [SendAgreementPaymentRequest](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-agreement-2020-03-01.html#sendagreementpaymentrequest)
+  - [BatchCreateBillingAdjustmentRequest](api-marketplace-agreement-2020-03-01-batchcreatebillingadjustmentrequest.md)
+  - [CancelAgreementCancellationRequest](api-marketplace-agreement-2020-03-01-cancelagreementcancellationrequest.md)
+  - [CancelAgreementPaymentRequest](api-marketplace-agreement-2020-03-01-cancelagreementpaymentrequest.md)
+  - [DescribeAgreement](api-marketplace-agreement-2020-03-01-describeagreement.md)
+  - [GetAgreementCancellationRequest](api-marketplace-agreement-2020-03-01-getagreementcancellationrequest.md)
+  - [GetAgreementPaymentRequest](api-marketplace-agreement-2020-03-01-getagreementpaymentrequest.md)
+  - [GetAgreementTerms](api-marketplace-agreement-2020-03-01-getagreementterms.md)
+  - [GetBillingAdjustmentRequest](api-marketplace-agreement-2020-03-01-getbillingadjustmentrequest.md)
+  - [ListAgreementCancellationRequests](api-marketplace-agreement-2020-03-01-listagreementcancellationrequests.md)
+  - [ListAgreementInvoiceLineItems](api-marketplace-agreement-2020-03-01-listagreementinvoicelineitems.md)
+  - [ListAgreementPaymentRequests](api-marketplace-agreement-2020-03-01-listagreementpaymentrequests.md)
+  - [ListBillingAdjustmentRequests](api-marketplace-agreement-2020-03-01-listbillingadjustmentrequests.md)
+  - [SearchAgreements](api-marketplace-agreement-2020-03-01-searchagreements.md)
+  - [SendAgreementCancellationRequest](api-marketplace-agreement-2020-03-01-sendagreementcancellationrequest.md)
+  - [SendAgreementPaymentRequest](api-marketplace-agreement-2020-03-01-sendagreementpaymentrequest.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceAgreement.MarketplaceAgreementClient.html\#toc)
+### Table of Contents  [header link](class-aws-marketplaceagreement-marketplaceagreementclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceAgreement.MarketplaceAgreementClient.html\#toc-methods)
+#### Methods  [header link](class-aws-marketplaceagreement-marketplaceagreementclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -68,7 +68,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceAgreement.MarketplaceAgreementClient.html\#methods)
+### Methods  [header link](class-aws-marketplaceagreement-marketplaceagreementclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -535,7 +535,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceAgreement.MarketplaceAgreementClient.html#toc-methods)
+  - [Methods](class-aws-marketplaceagreement-marketplaceagreementclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -562,4 +562,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceAgreement.MarketplaceAgreementClient.html#top)
+[Back To Top](class-aws-marketplaceagreement-marketplaceagreementclient-top.md)

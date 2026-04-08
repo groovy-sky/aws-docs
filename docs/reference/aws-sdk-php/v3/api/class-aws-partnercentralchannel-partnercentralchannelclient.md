@@ -17,29 +17,29 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2024-03-18**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-channel-2024-03-18.html)
+- [**2024-03-18**](api-partnercentral-channel-2024-03-18.md)
 
-  - [AcceptChannelHandshake](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-channel-2024-03-18.html#acceptchannelhandshake)
-  - [CancelChannelHandshake](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-channel-2024-03-18.html#cancelchannelhandshake)
-  - [CreateChannelHandshake](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-channel-2024-03-18.html#createchannelhandshake)
-  - [CreateProgramManagementAccount](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-channel-2024-03-18.html#createprogrammanagementaccount)
-  - [CreateRelationship](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-channel-2024-03-18.html#createrelationship)
-  - [DeleteProgramManagementAccount](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-channel-2024-03-18.html#deleteprogrammanagementaccount)
-  - [DeleteRelationship](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-channel-2024-03-18.html#deleterelationship)
-  - [GetRelationship](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-channel-2024-03-18.html#getrelationship)
-  - [ListChannelHandshakes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-channel-2024-03-18.html#listchannelhandshakes)
-  - [ListProgramManagementAccounts](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-channel-2024-03-18.html#listprogrammanagementaccounts)
-  - [ListRelationships](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-channel-2024-03-18.html#listrelationships)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-channel-2024-03-18.html#listtagsforresource)
-  - [RejectChannelHandshake](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-channel-2024-03-18.html#rejectchannelhandshake)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-channel-2024-03-18.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-channel-2024-03-18.html#untagresource)
-  - [UpdateProgramManagementAccount](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-channel-2024-03-18.html#updateprogrammanagementaccount)
-  - [UpdateRelationship](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-channel-2024-03-18.html#updaterelationship)
+  - [AcceptChannelHandshake](api-partnercentral-channel-2024-03-18-acceptchannelhandshake.md)
+  - [CancelChannelHandshake](api-partnercentral-channel-2024-03-18-cancelchannelhandshake.md)
+  - [CreateChannelHandshake](api-partnercentral-channel-2024-03-18-createchannelhandshake.md)
+  - [CreateProgramManagementAccount](api-partnercentral-channel-2024-03-18-createprogrammanagementaccount.md)
+  - [CreateRelationship](api-partnercentral-channel-2024-03-18-createrelationship.md)
+  - [DeleteProgramManagementAccount](api-partnercentral-channel-2024-03-18-deleteprogrammanagementaccount.md)
+  - [DeleteRelationship](api-partnercentral-channel-2024-03-18-deleterelationship.md)
+  - [GetRelationship](api-partnercentral-channel-2024-03-18-getrelationship.md)
+  - [ListChannelHandshakes](api-partnercentral-channel-2024-03-18-listchannelhandshakes.md)
+  - [ListProgramManagementAccounts](api-partnercentral-channel-2024-03-18-listprogrammanagementaccounts.md)
+  - [ListRelationships](api-partnercentral-channel-2024-03-18-listrelationships.md)
+  - [ListTagsForResource](api-partnercentral-channel-2024-03-18-listtagsforresource.md)
+  - [RejectChannelHandshake](api-partnercentral-channel-2024-03-18-rejectchannelhandshake.md)
+  - [TagResource](api-partnercentral-channel-2024-03-18-tagresource.md)
+  - [UntagResource](api-partnercentral-channel-2024-03-18-untagresource.md)
+  - [UpdateProgramManagementAccount](api-partnercentral-channel-2024-03-18-updateprogrammanagementaccount.md)
+  - [UpdateRelationship](api-partnercentral-channel-2024-03-18-updaterelationship.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralChannel.PartnerCentralChannelClient.html\#toc)
+### Table of Contents  [header link](class-aws-partnercentralchannel-partnercentralchannelclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralChannel.PartnerCentralChannelClient.html\#toc-methods)
+#### Methods  [header link](class-aws-partnercentralchannel-partnercentralchannelclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -70,7 +70,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralChannel.PartnerCentralChannelClient.html\#methods)
+### Methods  [header link](class-aws-partnercentralchannel-partnercentralchannelclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -537,7 +537,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralChannel.PartnerCentralChannelClient.html#toc-methods)
+  - [Methods](class-aws-partnercentralchannel-partnercentralchannelclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -564,4 +564,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralChannel.PartnerCentralChannelClient.html#top)
+[Back To Top](class-aws-partnercentralchannel-partnercentralchannelclient-top.md)

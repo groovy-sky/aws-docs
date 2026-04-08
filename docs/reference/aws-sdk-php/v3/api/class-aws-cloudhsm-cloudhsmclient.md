@@ -17,32 +17,32 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2014-05-30**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsm-2014-05-30.html)
+- [**2014-05-30**](api-cloudhsm-2014-05-30.md)
 
-  - [AddTagsToResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsm-2014-05-30.html#addtagstoresource)
-  - [CreateHapg](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsm-2014-05-30.html#createhapg)
-  - [CreateHsm](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsm-2014-05-30.html#createhsm)
-  - [CreateLunaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsm-2014-05-30.html#createlunaclient)
-  - [DeleteHapg](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsm-2014-05-30.html#deletehapg)
-  - [DeleteHsm](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsm-2014-05-30.html#deletehsm)
-  - [DeleteLunaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsm-2014-05-30.html#deletelunaclient)
-  - [DescribeHapg](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsm-2014-05-30.html#describehapg)
-  - [DescribeHsm](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsm-2014-05-30.html#describehsm)
-  - [DescribeLunaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsm-2014-05-30.html#describelunaclient)
-  - [GetConfigFiles](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsm-2014-05-30.html#getconfigfiles)
-  - [ListAvailableZones](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsm-2014-05-30.html#listavailablezones)
-  - [ListHapgs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsm-2014-05-30.html#listhapgs)
-  - [ListHsms](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsm-2014-05-30.html#listhsms)
-  - [ListLunaClients](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsm-2014-05-30.html#listlunaclients)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsm-2014-05-30.html#listtagsforresource)
-  - [ModifyHapg](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsm-2014-05-30.html#modifyhapg)
-  - [ModifyHsm](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsm-2014-05-30.html#modifyhsm)
-  - [ModifyLunaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsm-2014-05-30.html#modifylunaclient)
-  - [RemoveTagsFromResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsm-2014-05-30.html#removetagsfromresource)
+  - [AddTagsToResource](api-cloudhsm-2014-05-30-addtagstoresource.md)
+  - [CreateHapg](api-cloudhsm-2014-05-30-createhapg.md)
+  - [CreateHsm](api-cloudhsm-2014-05-30-createhsm.md)
+  - [CreateLunaClient](api-cloudhsm-2014-05-30-createlunaclient.md)
+  - [DeleteHapg](api-cloudhsm-2014-05-30-deletehapg.md)
+  - [DeleteHsm](api-cloudhsm-2014-05-30-deletehsm.md)
+  - [DeleteLunaClient](api-cloudhsm-2014-05-30-deletelunaclient.md)
+  - [DescribeHapg](api-cloudhsm-2014-05-30-describehapg.md)
+  - [DescribeHsm](api-cloudhsm-2014-05-30-describehsm.md)
+  - [DescribeLunaClient](api-cloudhsm-2014-05-30-describelunaclient.md)
+  - [GetConfigFiles](api-cloudhsm-2014-05-30-getconfigfiles.md)
+  - [ListAvailableZones](api-cloudhsm-2014-05-30-listavailablezones.md)
+  - [ListHapgs](api-cloudhsm-2014-05-30-listhapgs.md)
+  - [ListHsms](api-cloudhsm-2014-05-30-listhsms.md)
+  - [ListLunaClients](api-cloudhsm-2014-05-30-listlunaclients.md)
+  - [ListTagsForResource](api-cloudhsm-2014-05-30-listtagsforresource.md)
+  - [ModifyHapg](api-cloudhsm-2014-05-30-modifyhapg.md)
+  - [ModifyHsm](api-cloudhsm-2014-05-30-modifyhsm.md)
+  - [ModifyLunaClient](api-cloudhsm-2014-05-30-modifylunaclient.md)
+  - [RemoveTagsFromResource](api-cloudhsm-2014-05-30-removetagsfromresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudHsm.CloudHsmClient.html\#toc)
+### Table of Contents  [header link](class-aws-cloudhsm-cloudhsmclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudHsm.CloudHsmClient.html\#toc-methods)
+#### Methods  [header link](class-aws-cloudhsm-cloudhsmclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -73,7 +73,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudHsm.CloudHsmClient.html\#methods)
+### Methods  [header link](class-aws-cloudhsm-cloudhsmclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -540,7 +540,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudHsm.CloudHsmClient.html#toc-methods)
+  - [Methods](class-aws-cloudhsm-cloudhsmclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -567,4 +567,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudHsm.CloudHsmClient.html#top)
+[Back To Top](class-aws-cloudhsm-cloudhsmclient-top.md)

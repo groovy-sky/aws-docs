@@ -46,7 +46,7 @@ except for the namespaces that you specify here.
 You cannot include `ExcludeFilters` and `IncludeFilters` in the
 same operation.
 
-Type: Array of [MetricStreamFilter](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricStreamFilter.html) objects
+Type: Array of [MetricStreamFilter](api-metricstreamfilter.md) objects
 
 Required: No
 
@@ -70,7 +70,7 @@ namespaces that you specify here.
 You cannot include `IncludeFilters` and `ExcludeFilters` in the
 same operation.
 
-Type: Array of [MetricStreamFilter](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricStreamFilter.html) objects
+Type: Array of [MetricStreamFilter](api-metricstreamfilter.md) objects
 
 Required: No
 
@@ -103,7 +103,7 @@ Required: Yes
 
 The output format for the stream. Valid values are `json`,
 `opentelemetry1.0`, and `opentelemetry0.7`. For more
-information about metric stream output formats, see [Metric streams output formats](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-metric-streams-formats.html).
+information about metric stream output formats, see [Metric streams output formats](../../../../services/amazoncloudwatch/latest/monitoring/cloudwatch-metric-streams-formats.md).
 
 Type: String
 
@@ -144,7 +144,7 @@ statistic that is supported by CloudWatch, listed in [CloudWatch statistics defi
 is `opentelemetry1.0` or `opentelemetry0.7`, you can stream
 percentile statistics such as p95, p99.9, and so on.
 
-Type: Array of [MetricStreamStatisticsConfiguration](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricStreamStatisticsConfiguration.html) objects
+Type: Array of [MetricStreamStatisticsConfiguration](api-metricstreamstatisticsconfiguration.md) objects
 
 Required: No
 
@@ -323,27 +323,27 @@ statistics.
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/monitoring-2010-08-01/PutMetricStream)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/monitoring-2010-08-01/putmetricstream.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/monitoring-2010-08-01/PutMetricStream)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/monitoring-2010-08-01/putmetricstream.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/PutMetricStream)
+- [AWS SDK for C++](../../../goto/sdkforcpp/monitoring-2010-08-01/putmetricstream.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/monitoring-2010-08-01/PutMetricStream)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/monitoring-2010-08-01/putmetricstream.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/PutMetricStream)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/monitoring-2010-08-01/putmetricstream.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/monitoring-2010-08-01/PutMetricStream)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/monitoring-2010-08-01/putmetricstream.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/monitoring-2010-08-01/PutMetricStream)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/monitoring-2010-08-01/putmetricstream.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/monitoring-2010-08-01/PutMetricStream)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/monitoring-2010-08-01/putmetricstream.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/PutMetricStream)
+- [AWS SDK for Python](../../../../services/goto/boto3/monitoring-2010-08-01/putmetricstream.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/monitoring-2010-08-01/PutMetricStream)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/monitoring-2010-08-01/putmetricstream.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 PutMetricData
 

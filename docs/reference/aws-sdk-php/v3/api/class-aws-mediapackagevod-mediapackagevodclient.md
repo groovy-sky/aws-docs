@@ -17,29 +17,29 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-11-07**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-vod-2018-11-07.html)
+- [**2018-11-07**](api-mediapackage-vod-2018-11-07.md)
 
-  - [ConfigureLogs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-vod-2018-11-07.html#configurelogs)
-  - [CreateAsset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-vod-2018-11-07.html#createasset)
-  - [CreatePackagingConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-vod-2018-11-07.html#createpackagingconfiguration)
-  - [CreatePackagingGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-vod-2018-11-07.html#createpackaginggroup)
-  - [DeleteAsset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-vod-2018-11-07.html#deleteasset)
-  - [DeletePackagingConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-vod-2018-11-07.html#deletepackagingconfiguration)
-  - [DeletePackagingGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-vod-2018-11-07.html#deletepackaginggroup)
-  - [DescribeAsset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-vod-2018-11-07.html#describeasset)
-  - [DescribePackagingConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-vod-2018-11-07.html#describepackagingconfiguration)
-  - [DescribePackagingGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-vod-2018-11-07.html#describepackaginggroup)
-  - [ListAssets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-vod-2018-11-07.html#listassets)
-  - [ListPackagingConfigurations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-vod-2018-11-07.html#listpackagingconfigurations)
-  - [ListPackagingGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-vod-2018-11-07.html#listpackaginggroups)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-vod-2018-11-07.html#listtagsforresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-vod-2018-11-07.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-vod-2018-11-07.html#untagresource)
-  - [UpdatePackagingGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-vod-2018-11-07.html#updatepackaginggroup)
+  - [ConfigureLogs](api-mediapackage-vod-2018-11-07-configurelogs.md)
+  - [CreateAsset](api-mediapackage-vod-2018-11-07-createasset.md)
+  - [CreatePackagingConfiguration](api-mediapackage-vod-2018-11-07-createpackagingconfiguration.md)
+  - [CreatePackagingGroup](api-mediapackage-vod-2018-11-07-createpackaginggroup.md)
+  - [DeleteAsset](api-mediapackage-vod-2018-11-07-deleteasset.md)
+  - [DeletePackagingConfiguration](api-mediapackage-vod-2018-11-07-deletepackagingconfiguration.md)
+  - [DeletePackagingGroup](api-mediapackage-vod-2018-11-07-deletepackaginggroup.md)
+  - [DescribeAsset](api-mediapackage-vod-2018-11-07-describeasset.md)
+  - [DescribePackagingConfiguration](api-mediapackage-vod-2018-11-07-describepackagingconfiguration.md)
+  - [DescribePackagingGroup](api-mediapackage-vod-2018-11-07-describepackaginggroup.md)
+  - [ListAssets](api-mediapackage-vod-2018-11-07-listassets.md)
+  - [ListPackagingConfigurations](api-mediapackage-vod-2018-11-07-listpackagingconfigurations.md)
+  - [ListPackagingGroups](api-mediapackage-vod-2018-11-07-listpackaginggroups.md)
+  - [ListTagsForResource](api-mediapackage-vod-2018-11-07-listtagsforresource.md)
+  - [TagResource](api-mediapackage-vod-2018-11-07-tagresource.md)
+  - [UntagResource](api-mediapackage-vod-2018-11-07-untagresource.md)
+  - [UpdatePackagingGroup](api-mediapackage-vod-2018-11-07-updatepackaginggroup.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackageVod.MediaPackageVodClient.html\#toc)
+### Table of Contents  [header link](class-aws-mediapackagevod-mediapackagevodclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackageVod.MediaPackageVodClient.html\#toc-methods)
+#### Methods  [header link](class-aws-mediapackagevod-mediapackagevodclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -70,7 +70,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackageVod.MediaPackageVodClient.html\#methods)
+### Methods  [header link](class-aws-mediapackagevod-mediapackagevodclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -537,7 +537,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackageVod.MediaPackageVodClient.html#toc-methods)
+  - [Methods](class-aws-mediapackagevod-mediapackagevodclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -564,4 +564,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackageVod.MediaPackageVodClient.html#top)
+[Back To Top](class-aws-mediapackagevod-mediapackagevodclient-top.md)

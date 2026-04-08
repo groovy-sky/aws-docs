@@ -1,31 +1,31 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Psr7](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.psr7.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Psr7](namespace-guzzlehttp-psr7.md)
 
 ## UploadedFile        in package    - [Aws](package-aws.md)       implements  [UploadedFileInterface](class-psr-http-message-uploadedfileinterface.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-psr7-uploadedfile-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html\#toc-interfaces)
+#### Interfaces  [header link](class-guzzlehttp-psr7-uploadedfile-toc-interfaces.md)
 
 [UploadedFileInterface](class-psr-http-message-uploadedfileinterface.md)Value object representing a file uploaded through an HTTP request.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-psr7-uploadedfile-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html#method___construct)
-: mixed [getClientFilename()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html#method_getClientFilename)
-: string\|null Retrieve the filename sent by the client.[getClientMediaType()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html#method_getClientMediaType)
-: string\|null Retrieve the media type sent by the client.[getError()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html#method_getError)
-: int Retrieve the error associated with the uploaded file.[getSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html#method_getSize)
-: int\|null Retrieve the file size.[getStream()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html#method_getStream)
-: [StreamInterface](class-psr-http-message-streaminterface.md)Retrieve a stream representing the uploaded file.[isMoved()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html#method_isMoved)
-: bool [moveTo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html#method_moveTo)
+[\_\_construct()](class-guzzlehttp-psr7-uploadedfile-method-construct.md)
+: mixed [getClientFilename()](class-guzzlehttp-psr7-uploadedfile-method-getclientfilename.md)
+: string\|null Retrieve the filename sent by the client.[getClientMediaType()](class-guzzlehttp-psr7-uploadedfile-method-getclientmediatype.md)
+: string\|null Retrieve the media type sent by the client.[getError()](class-guzzlehttp-psr7-uploadedfile-method-geterror.md)
+: int Retrieve the error associated with the uploaded file.[getSize()](class-guzzlehttp-psr7-uploadedfile-method-getsize.md)
+: int\|null Retrieve the file size.[getStream()](class-guzzlehttp-psr7-uploadedfile-method-getstream.md)
+: [StreamInterface](class-psr-http-message-streaminterface.md)Retrieve a stream representing the uploaded file.[isMoved()](class-guzzlehttp-psr7-uploadedfile-method-ismoved.md)
+: bool [moveTo()](class-guzzlehttp-psr7-uploadedfile-method-moveto.md)
 : void Move the uploaded file to a new location.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html\#methods)
+### Methods  [header link](class-guzzlehttp-psr7-uploadedfile-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html\#method___construct)
+#### \_\_construct()  [header link](class-guzzlehttp-psr7-uploadedfile-method-construct.md)
 
 `
     public
@@ -42,7 +42,7 @@ $streamOrFile
 : string\|null
 = null
 
-#### getClientFilename()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html\#method_getClientFilename)
+#### getClientFilename()  [header link](class-guzzlehttp-psr7-uploadedfile-method-getclientfilename.md)
 
 Retrieve the filename sent by the client.
 
@@ -65,7 +65,7 @@ string\|null
 The filename sent by the client or null if none
 was provided.
 
-#### getClientMediaType()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html\#method_getClientMediaType)
+#### getClientMediaType()  [header link](class-guzzlehttp-psr7-uploadedfile-method-getclientmediatype.md)
 
 Retrieve the media type sent by the client.
 
@@ -88,7 +88,7 @@ string\|null
 The media type sent by the client or null if none
 was provided.
 
-#### getError()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html\#method_getError)
+#### getError()  [header link](class-guzzlehttp-psr7-uploadedfile-method-geterror.md)
 
 Retrieve the error associated with the uploaded file.
 
@@ -111,7 +111,7 @@ int
 
 One of PHP's UPLOAD\_ERR\_XXX constants.
 
-#### getSize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html\#method_getSize)
+#### getSize()  [header link](class-guzzlehttp-psr7-uploadedfile-method-getsize.md)
 
 Retrieve the file size.
 
@@ -130,7 +130,7 @@ int\|null
 
 The file size in bytes or null if unknown.
 
-#### getStream()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html\#method_getStream)
+#### getStream()  [header link](class-guzzlehttp-psr7-uploadedfile-method-getstream.md)
 
 Retrieve a stream representing the uploaded file.
 
@@ -154,7 +154,7 @@ an exception.
 
 Stream representation of the uploaded file.
 
-#### isMoved()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html\#method_isMoved)
+#### isMoved()  [header link](class-guzzlehttp-psr7-uploadedfile-method-ismoved.md)
 
 `
     public
@@ -164,7 +164,7 @@ Stream representation of the uploaded file.
 
 bool
 
-#### moveTo()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html\#method_moveTo)
+#### moveTo()  [header link](class-guzzlehttp-psr7-uploadedfile-method-moveto.md)
 
 Move the uploaded file to a new location.
 
@@ -208,15 +208,15 @@ Path to which to move the uploaded file.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html#toc-methods)
+  - [Methods](class-guzzlehttp-psr7-uploadedfile-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html#method___construct)
-  - [getClientFilename()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html#method_getClientFilename)
-  - [getClientMediaType()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html#method_getClientMediaType)
-  - [getError()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html#method_getError)
-  - [getSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html#method_getSize)
-  - [getStream()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html#method_getStream)
-  - [isMoved()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html#method_isMoved)
-  - [moveTo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html#method_moveTo)
+  - [\_\_construct()](class-guzzlehttp-psr7-uploadedfile-method-construct.md)
+  - [getClientFilename()](class-guzzlehttp-psr7-uploadedfile-method-getclientfilename.md)
+  - [getClientMediaType()](class-guzzlehttp-psr7-uploadedfile-method-getclientmediatype.md)
+  - [getError()](class-guzzlehttp-psr7-uploadedfile-method-geterror.md)
+  - [getSize()](class-guzzlehttp-psr7-uploadedfile-method-getsize.md)
+  - [getStream()](class-guzzlehttp-psr7-uploadedfile-method-getstream.md)
+  - [isMoved()](class-guzzlehttp-psr7-uploadedfile-method-ismoved.md)
+  - [moveTo()](class-guzzlehttp-psr7-uploadedfile-method-moveto.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UploadedFile.html#top)
+[Back To Top](class-guzzlehttp-psr7-uploadedfile-top.md)

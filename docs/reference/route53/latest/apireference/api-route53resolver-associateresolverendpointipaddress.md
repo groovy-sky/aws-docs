@@ -4,7 +4,7 @@ Adds IP addresses to an inbound or an outbound Resolver endpoint. If you want to
 submit one `AssociateResolverEndpointIpAddress` request for each IP address.
 
 To remove an IP address from an endpoint, see
-[DisassociateResolverEndpointIpAddress](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_DisassociateResolverEndpointIpAddress.html).
+[DisassociateResolverEndpointIpAddress](api-route53resolver-disassociateresolverendpointipaddress.md).
 
 ## Request Syntax
 
@@ -32,7 +32,7 @@ The request accepts the following data in JSON format.
 Either the IPv4 address that you want to add to a Resolver endpoint or a subnet ID. If you specify a subnet ID,
 Resolver chooses an IP address for you from the available IPs in the specified subnet.
 
-Type: [IpAddressUpdate](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_IpAddressUpdate.html) object
+Type: [IpAddressUpdate](api-route53resolver-ipaddressupdate.md) object
 
 Required: Yes
 
@@ -219,27 +219,27 @@ Connection: keep-alive
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/route53resolver-2018-04-01/AssociateResolverEndpointIpAddress)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53resolver-2018-04-01/associateresolverendpointipaddress.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/route53resolver-2018-04-01/AssociateResolverEndpointIpAddress)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53resolver-2018-04-01/associateresolverendpointipaddress.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53resolver-2018-04-01/AssociateResolverEndpointIpAddress)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53resolver-2018-04-01/associateresolverendpointipaddress.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/route53resolver-2018-04-01/AssociateResolverEndpointIpAddress)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53resolver-2018-04-01/associateresolverendpointipaddress.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53resolver-2018-04-01/AssociateResolverEndpointIpAddress)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53resolver-2018-04-01/associateresolverendpointipaddress.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/route53resolver-2018-04-01/AssociateResolverEndpointIpAddress)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53resolver-2018-04-01/associateresolverendpointipaddress.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/route53resolver-2018-04-01/AssociateResolverEndpointIpAddress)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53resolver-2018-04-01/associateresolverendpointipaddress.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/route53resolver-2018-04-01/AssociateResolverEndpointIpAddress)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53resolver-2018-04-01/associateresolverendpointipaddress.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/route53resolver-2018-04-01/AssociateResolverEndpointIpAddress)
+- [AWS SDK for Python](../../../../services/goto/boto3/route53resolver-2018-04-01/associateresolverendpointipaddress.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53resolver-2018-04-01/AssociateResolverEndpointIpAddress)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53resolver-2018-04-01/associateresolverendpointipaddress.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AssociateFirewallRuleGroup
 

@@ -2,27 +2,27 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
-- [Models](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.models.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
+- [Models](namespace-aws-s3-s3transfer-models.md)
 
 ## DownloadDirectoryResult        in package    - [Aws](package-aws.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadDirectoryResult.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-models-downloaddirectoryresult-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadDirectoryResult.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-models-downloaddirectoryresult-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadDirectoryResult.html#method___construct)
-: mixed [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadDirectoryResult.html#method___toString)
-: string [getObjectsDownloaded()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadDirectoryResult.html#method_getObjectsDownloaded)
-: int [getObjectsFailed()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadDirectoryResult.html#method_getObjectsFailed)
-: int [getReason()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadDirectoryResult.html#method_getReason)
+[\_\_construct()](class-aws-s3-s3transfer-models-downloaddirectoryresult-method-construct.md)
+: mixed [\_\_toString()](class-aws-s3-s3transfer-models-downloaddirectoryresult-method-tostring.md)
+: string [getObjectsDownloaded()](class-aws-s3-s3transfer-models-downloaddirectoryresult-method-getobjectsdownloaded.md)
+: int [getObjectsFailed()](class-aws-s3-s3transfer-models-downloaddirectoryresult-method-getobjectsfailed.md)
+: int [getReason()](class-aws-s3-s3transfer-models-downloaddirectoryresult-method-getreason.md)
 : Throwable\|null
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadDirectoryResult.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-models-downloaddirectoryresult-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadDirectoryResult.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3transfer-models-downloaddirectoryresult-method-construct.md)
 
 `
     public
@@ -36,7 +36,7 @@ $objectsDownloaded
 : Throwable\|null
 = null
 
-#### \_\_toString()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadDirectoryResult.html\#method___toString)
+#### \_\_toString()  [header link](class-aws-s3-s3transfer-models-downloaddirectoryresult-method-tostring.md)
 
 `
     public
@@ -46,7 +46,7 @@ $objectsDownloaded
 
 string
 
-#### getObjectsDownloaded()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadDirectoryResult.html\#method_getObjectsDownloaded)
+#### getObjectsDownloaded()  [header link](class-aws-s3-s3transfer-models-downloaddirectoryresult-method-getobjectsdownloaded.md)
 
 `
     public
@@ -56,7 +56,7 @@ string
 
 int
 
-#### getObjectsFailed()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadDirectoryResult.html\#method_getObjectsFailed)
+#### getObjectsFailed()  [header link](class-aws-s3-s3transfer-models-downloaddirectoryresult-method-getobjectsfailed.md)
 
 `
     public
@@ -66,7 +66,7 @@ int
 
 int
 
-#### getReason()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadDirectoryResult.html\#method_getReason)
+#### getReason()  [header link](class-aws-s3-s3transfer-models-downloaddirectoryresult-method-getreason.md)
 
 `
     public
@@ -82,12 +82,12 @@ Throwable\|null
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadDirectoryResult.html#toc-methods)
+  - [Methods](class-aws-s3-s3transfer-models-downloaddirectoryresult-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadDirectoryResult.html#method___construct)
-  - [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadDirectoryResult.html#method___toString)
-  - [getObjectsDownloaded()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadDirectoryResult.html#method_getObjectsDownloaded)
-  - [getObjectsFailed()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadDirectoryResult.html#method_getObjectsFailed)
-  - [getReason()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadDirectoryResult.html#method_getReason)
+  - [\_\_construct()](class-aws-s3-s3transfer-models-downloaddirectoryresult-method-construct.md)
+  - [\_\_toString()](class-aws-s3-s3transfer-models-downloaddirectoryresult-method-tostring.md)
+  - [getObjectsDownloaded()](class-aws-s3-s3transfer-models-downloaddirectoryresult-method-getobjectsdownloaded.md)
+  - [getObjectsFailed()](class-aws-s3-s3transfer-models-downloaddirectoryresult-method-getobjectsfailed.md)
+  - [getReason()](class-aws-s3-s3transfer-models-downloaddirectoryresult-method-getreason.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadDirectoryResult.html#top)
+[Back To Top](class-aws-s3-s3transfer-models-downloaddirectoryresult-top.md)

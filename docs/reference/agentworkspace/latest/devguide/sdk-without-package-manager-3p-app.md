@@ -84,7 +84,7 @@ contactClient.onCleared(function (event) {
 4. Lifecycle callbacks ( `onCreate`, `onDestroy`) are
     optional but useful for managing app state
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Using with StreamsJS
 

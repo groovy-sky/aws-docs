@@ -4,15 +4,15 @@ Menu
 
 ## OpenSearchServerless
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.opensearchserverless.html\#toc)
+### Table of Contents  [header link](namespace-aws-opensearchserverless-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.opensearchserverless.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-opensearchserverless-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.opensearchserverless.exception.html)
+[Exception](namespace-aws-opensearchserverless-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.opensearchserverless.html\#toc-classes)
+#### Classes  [header link](namespace-aws-opensearchserverless-toc-classes.md)
 
-[OpenSearchServerlessClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.OpenSearchServerless.OpenSearchServerlessClient.html)This client is used to interact with the **OpenSearch Service Serverless** service.
+[OpenSearchServerlessClient](class-aws-opensearchserverless-opensearchserverlessclient.md)This client is used to interact with the **OpenSearch Service Serverless** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.opensearchserverless.html#toc-classes)
+  - [Classes](namespace-aws-opensearchserverless-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.opensearchserverless.html#top)
+[Back To Top](namespace-aws-opensearchserverless-top.md)

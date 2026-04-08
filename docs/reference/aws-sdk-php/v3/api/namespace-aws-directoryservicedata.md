@@ -4,15 +4,15 @@ Menu
 
 ## DirectoryServiceData
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.directoryservicedata.html\#toc)
+### Table of Contents  [header link](namespace-aws-directoryservicedata-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.directoryservicedata.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-directoryservicedata-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.directoryservicedata.exception.html)
+[Exception](namespace-aws-directoryservicedata-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.directoryservicedata.html\#toc-classes)
+#### Classes  [header link](namespace-aws-directoryservicedata-toc-classes.md)
 
-[DirectoryServiceDataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DirectoryServiceData.DirectoryServiceDataClient.html)This client is used to interact with the **AWS Directory Service Data** service.
+[DirectoryServiceDataClient](class-aws-directoryservicedata-directoryservicedataclient.md)This client is used to interact with the **AWS Directory Service Data** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.directoryservicedata.html#toc-classes)
+  - [Classes](namespace-aws-directoryservicedata-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.directoryservicedata.html#top)
+[Back To Top](namespace-aws-directoryservicedata-top.md)

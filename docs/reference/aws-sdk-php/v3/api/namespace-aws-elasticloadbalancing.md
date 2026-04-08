@@ -4,15 +4,15 @@ Menu
 
 ## ElasticLoadBalancing
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticloadbalancing.html\#toc)
+### Table of Contents  [header link](namespace-aws-elasticloadbalancing-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticloadbalancing.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-elasticloadbalancing-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticloadbalancing.exception.html)
+[Exception](namespace-aws-elasticloadbalancing-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticloadbalancing.html\#toc-classes)
+#### Classes  [header link](namespace-aws-elasticloadbalancing-toc-classes.md)
 
-[ElasticLoadBalancingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElasticLoadBalancing.ElasticLoadBalancingClient.html)This client is used to interact with the **Elastic Load Balancing** service.
+[ElasticLoadBalancingClient](class-aws-elasticloadbalancing-elasticloadbalancingclient.md)This client is used to interact with the **Elastic Load Balancing** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticloadbalancing.html#toc-classes)
+  - [Classes](namespace-aws-elasticloadbalancing-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticloadbalancing.html#top)
+[Back To Top](namespace-aws-elasticloadbalancing-top.md)

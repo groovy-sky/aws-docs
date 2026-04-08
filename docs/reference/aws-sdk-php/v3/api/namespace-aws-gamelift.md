@@ -4,15 +4,15 @@ Menu
 
 ## GameLift
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.gamelift.html\#toc)
+### Table of Contents  [header link](namespace-aws-gamelift-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.gamelift.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-gamelift-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.gamelift.exception.html)
+[Exception](namespace-aws-gamelift-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.gamelift.html\#toc-classes)
+#### Classes  [header link](namespace-aws-gamelift-toc-classes.md)
 
-[GameLiftClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GameLift.GameLiftClient.html)This client is used to interact with the **Amazon GameLift** service.
+[GameLiftClient](class-aws-gamelift-gameliftclient.md)This client is used to interact with the **Amazon GameLift** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.gamelift.html#toc-classes)
+  - [Classes](namespace-aws-gamelift-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.gamelift.html#top)
+[Back To Top](namespace-aws-gamelift-top.md)

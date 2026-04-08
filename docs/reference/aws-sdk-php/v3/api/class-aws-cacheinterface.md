@@ -6,18 +6,18 @@ Menu
 
 Represents a simple cache interface.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CacheInterface.html\#toc)
+### Table of Contents  [header link](class-aws-cacheinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CacheInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-cacheinterface-toc-methods.md)
 
-[get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CacheInterface.html#method_get)
-: mixed\|null Get a cache item by key.[remove()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CacheInterface.html#method_remove)
-: mixed Remove a cache key.[set()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CacheInterface.html#method_set)
+[get()](class-aws-cacheinterface-method-get.md)
+: mixed\|null Get a cache item by key.[remove()](class-aws-cacheinterface-method-remove.md)
+: mixed Remove a cache key.[set()](class-aws-cacheinterface-method-set.md)
 : mixed Set a cache key value.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CacheInterface.html\#methods)
+### Methods  [header link](class-aws-cacheinterface-methods.md)
 
-#### get()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CacheInterface.html\#method_get)
+#### get()  [header link](class-aws-cacheinterface-method-get.md)
 
 Get a cache item by key.
 
@@ -39,7 +39,7 @@ mixed\|null
 
 Returns the value or null if not found.
 
-#### remove()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CacheInterface.html\#method_remove)
+#### remove()  [header link](class-aws-cacheinterface-method-remove.md)
 
 Remove a cache key.
 
@@ -54,7 +54,7 @@ $key
 
 Key to remove.
 
-#### set()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CacheInterface.html\#method_set)
+#### set()  [header link](class-aws-cacheinterface-method-set.md)
 
 Set a cache key value.
 
@@ -88,11 +88,11 @@ to 0 to allow an unlimited lifetime.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CacheInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CacheInterface.html#toc-methods)
+  - [Constants](class-aws-cacheinterface-toc-constants.md)
+  - [Methods](class-aws-cacheinterface-toc-methods.md)
 - Methods
-  - [get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CacheInterface.html#method_get)
-  - [remove()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CacheInterface.html#method_remove)
-  - [set()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CacheInterface.html#method_set)
+  - [get()](class-aws-cacheinterface-method-get.md)
+  - [remove()](class-aws-cacheinterface-method-remove.md)
+  - [set()](class-aws-cacheinterface-method-set.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CacheInterface.html#top)
+[Back To Top](class-aws-cacheinterface-top.md)

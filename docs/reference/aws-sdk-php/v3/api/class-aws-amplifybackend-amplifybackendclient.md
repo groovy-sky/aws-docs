@@ -17,43 +17,43 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2020-08-11**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html)
+- [**2020-08-11**](api-amplifybackend-2020-08-11.md)
 
-  - [CloneBackend](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#clonebackend)
-  - [CreateBackend](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#createbackend)
-  - [CreateBackendAPI](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#createbackendapi)
-  - [CreateBackendAuth](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#createbackendauth)
-  - [CreateBackendConfig](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#createbackendconfig)
-  - [CreateBackendStorage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#createbackendstorage)
-  - [CreateToken](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#createtoken)
-  - [DeleteBackend](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#deletebackend)
-  - [DeleteBackendAPI](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#deletebackendapi)
-  - [DeleteBackendAuth](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#deletebackendauth)
-  - [DeleteBackendStorage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#deletebackendstorage)
-  - [DeleteToken](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#deletetoken)
-  - [GenerateBackendAPIModels](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#generatebackendapimodels)
-  - [GetBackend](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#getbackend)
-  - [GetBackendAPI](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#getbackendapi)
-  - [GetBackendAPIModels](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#getbackendapimodels)
-  - [GetBackendAuth](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#getbackendauth)
-  - [GetBackendJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#getbackendjob)
-  - [GetBackendStorage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#getbackendstorage)
-  - [GetChallengeToken](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#getchallengetoken)
-  - [ImportBackendAuth](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#importbackendauth)
-  - [ImportBackendStorage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#importbackendstorage)
-  - [ListBackendJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#listbackendjobs)
-  - [ListS3Buckets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#lists3buckets)
-  - [RemoveAllBackends](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#removeallbackends)
-  - [RemoveBackendConfig](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#removebackendconfig)
-  - [UpdateBackendAPI](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#updatebackendapi)
-  - [UpdateBackendAuth](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#updatebackendauth)
-  - [UpdateBackendConfig](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#updatebackendconfig)
-  - [UpdateBackendJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#updatebackendjob)
-  - [UpdateBackendStorage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifybackend-2020-08-11.html#updatebackendstorage)
+  - [CloneBackend](api-amplifybackend-2020-08-11-clonebackend.md)
+  - [CreateBackend](api-amplifybackend-2020-08-11-createbackend.md)
+  - [CreateBackendAPI](api-amplifybackend-2020-08-11-createbackendapi.md)
+  - [CreateBackendAuth](api-amplifybackend-2020-08-11-createbackendauth.md)
+  - [CreateBackendConfig](api-amplifybackend-2020-08-11-createbackendconfig.md)
+  - [CreateBackendStorage](api-amplifybackend-2020-08-11-createbackendstorage.md)
+  - [CreateToken](api-amplifybackend-2020-08-11-createtoken.md)
+  - [DeleteBackend](api-amplifybackend-2020-08-11-deletebackend.md)
+  - [DeleteBackendAPI](api-amplifybackend-2020-08-11-deletebackendapi.md)
+  - [DeleteBackendAuth](api-amplifybackend-2020-08-11-deletebackendauth.md)
+  - [DeleteBackendStorage](api-amplifybackend-2020-08-11-deletebackendstorage.md)
+  - [DeleteToken](api-amplifybackend-2020-08-11-deletetoken.md)
+  - [GenerateBackendAPIModels](api-amplifybackend-2020-08-11-generatebackendapimodels.md)
+  - [GetBackend](api-amplifybackend-2020-08-11-getbackend.md)
+  - [GetBackendAPI](api-amplifybackend-2020-08-11-getbackendapi.md)
+  - [GetBackendAPIModels](api-amplifybackend-2020-08-11-getbackendapimodels.md)
+  - [GetBackendAuth](api-amplifybackend-2020-08-11-getbackendauth.md)
+  - [GetBackendJob](api-amplifybackend-2020-08-11-getbackendjob.md)
+  - [GetBackendStorage](api-amplifybackend-2020-08-11-getbackendstorage.md)
+  - [GetChallengeToken](api-amplifybackend-2020-08-11-getchallengetoken.md)
+  - [ImportBackendAuth](api-amplifybackend-2020-08-11-importbackendauth.md)
+  - [ImportBackendStorage](api-amplifybackend-2020-08-11-importbackendstorage.md)
+  - [ListBackendJobs](api-amplifybackend-2020-08-11-listbackendjobs.md)
+  - [ListS3Buckets](api-amplifybackend-2020-08-11-lists3buckets.md)
+  - [RemoveAllBackends](api-amplifybackend-2020-08-11-removeallbackends.md)
+  - [RemoveBackendConfig](api-amplifybackend-2020-08-11-removebackendconfig.md)
+  - [UpdateBackendAPI](api-amplifybackend-2020-08-11-updatebackendapi.md)
+  - [UpdateBackendAuth](api-amplifybackend-2020-08-11-updatebackendauth.md)
+  - [UpdateBackendConfig](api-amplifybackend-2020-08-11-updatebackendconfig.md)
+  - [UpdateBackendJob](api-amplifybackend-2020-08-11-updatebackendjob.md)
+  - [UpdateBackendStorage](api-amplifybackend-2020-08-11-updatebackendstorage.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AmplifyBackend.AmplifyBackendClient.html\#toc)
+### Table of Contents  [header link](class-aws-amplifybackend-amplifybackendclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AmplifyBackend.AmplifyBackendClient.html\#toc-methods)
+#### Methods  [header link](class-aws-amplifybackend-amplifybackendclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -84,7 +84,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AmplifyBackend.AmplifyBackendClient.html\#methods)
+### Methods  [header link](class-aws-amplifybackend-amplifybackendclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -551,7 +551,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AmplifyBackend.AmplifyBackendClient.html#toc-methods)
+  - [Methods](class-aws-amplifybackend-amplifybackendclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -578,4 +578,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AmplifyBackend.AmplifyBackendClient.html#top)
+[Back To Top](class-aws-amplifybackend-amplifybackendclient-top.md)

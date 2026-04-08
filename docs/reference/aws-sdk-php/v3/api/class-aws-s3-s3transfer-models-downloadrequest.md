@@ -2,32 +2,32 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
-- [Models](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.models.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
+- [Models](namespace-aws-s3-s3transfer-models.md)
 
 ## DownloadRequest     extends [AbstractTransferRequest](class-aws-s3-s3transfer-models-abstracttransferrequest.md)   in package    - [Aws](package-aws.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-models-downloadrequest-toc.md)
 
-#### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html\#toc-properties)
+#### Properties  [header link](class-aws-s3-s3transfer-models-downloadrequest-toc-properties.md)
 
-[$configKeys](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html#property_configKeys)
+[$configKeys](class-aws-s3-s3transfer-models-downloadrequest-property-configkeys.md)
 : array<string\|int, mixed>
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-models-downloadrequest-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html#method___construct)
-: mixed [fromDownloadRequestAndDownloadHandler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html#method_fromDownloadRequestAndDownloadHandler)
+[\_\_construct()](class-aws-s3-s3transfer-models-downloadrequest-method-construct.md)
+: mixed [fromDownloadRequestAndDownloadHandler()](class-aws-s3-s3transfer-models-downloadrequest-method-fromdownloadrequestanddownloadhandler.md)
 : self [getConfig()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getConfig)
-: array<string\|int, mixed> [getDownloadHandler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html#method_getDownloadHandler)
-: [AbstractDownloadHandler](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.AbstractDownloadHandler.html)[getListeners()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getListeners)
-: array<string\|int, mixed> Get current listeners.[getObjectRequestArgs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html#method_getObjectRequestArgs)
+: array<string\|int, mixed> [getDownloadHandler()](class-aws-s3-s3transfer-models-downloadrequest-method-getdownloadhandler.md)
+: [AbstractDownloadHandler](class-aws-s3-s3transfer-utils-abstractdownloadhandler.md)[getListeners()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getListeners)
+: array<string\|int, mixed> Get current listeners.[getObjectRequestArgs()](class-aws-s3-s3transfer-models-downloadrequest-method-getobjectrequestargs.md)
 : array<string\|int, mixed> [getProgressTracker()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getProgressTracker)
-: [AbstractTransferListener](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractTransferListener.html) \|null Get the progress tracker.[getSingleObjectListeners()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getSingleObjectListeners)
-: array<string\|int, mixed> Get listeners that should receive single-object events.[getSource()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html#method_getSource)
-: array<string\|int, mixed>\|string\|null [normalizeSourceAsArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html#method_normalizeSourceAsArray)
+: [AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md) \|null Get the progress tracker.[getSingleObjectListeners()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getSingleObjectListeners)
+: array<string\|int, mixed> Get listeners that should receive single-object events.[getSource()](class-aws-s3-s3transfer-models-downloadrequest-method-getsource.md)
+: array<string\|int, mixed>\|string\|null [normalizeSourceAsArray()](class-aws-s3-s3transfer-models-downloadrequest-method-normalizesourceasarray.md)
 : array<string\|int, mixed> Helper method to normalize the source as an array with:
 \- Bucket
 \- Key[updateConfigWithDefaults()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_updateConfigWithDefaults)
@@ -35,9 +35,9 @@ FinalYes
 : void For validating config. By default, it provides an empty
 implementation.
 
-### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html\#properties)
+### Properties  [header link](class-aws-s3-s3transfer-models-downloadrequest-properties.md)
 
-#### $configKeys  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html\#property_configKeys)
+#### $configKeys  [header link](class-aws-s3-s3transfer-models-downloadrequest-property-configkeys.md)
 
 `
     public
@@ -45,9 +45,9 @@ implementation.
     $configKeys
      = ['response_checksum_validation' => 'string', 'multipart_download_type' => 'string', 'track_progress' => 'bool', 'concurrency' => 'int', 'resume_enabled' => 'bool', 'resume_file_path' => 'string', 'target_part_size_bytes' => 'int']`
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-models-downloadrequest-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3transfer-models-downloadrequest-method-construct.md)
 
 `
     public
@@ -90,14 +90,14 @@ location to be generated. If specified the file name must end in `.resume`
 otherwise it will be added automatically.
 
 $downloadHandler
-: [AbstractDownloadHandler](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.AbstractDownloadHandler.html) \|null
+: [AbstractDownloadHandler](class-aws-s3-s3transfer-utils-abstractdownloadhandler.md) \|null
 = null$listeners
-: array<string\|int, [AbstractTransferListener](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractTransferListener.html) >\|null
+: array<string\|int, [AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md) >\|null
 = \[\]$progressTracker
-: [AbstractTransferListener](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractTransferListener.html) \|null
+: [AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md) \|null
 = null
 
-#### fromDownloadRequestAndDownloadHandler()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html\#method_fromDownloadRequestAndDownloadHandler)
+#### fromDownloadRequestAndDownloadHandler()  [header link](class-aws-s3-s3transfer-models-downloadrequest-method-fromdownloadrequestanddownloadhandler.md)
 
 `
     public
@@ -106,8 +106,8 @@ $downloadHandler
 ##### Parameters
 
 $downloadRequest
-: [DownloadRequest](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html)$downloadHandler
-: [FileDownloadHandler](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html)
+: [DownloadRequest](class-aws-s3-s3transfer-models-downloadrequest.md)$downloadHandler
+: [FileDownloadHandler](class-aws-s3-s3transfer-utils-filedownloadhandler.md)
 
 ##### Return values
 
@@ -123,7 +123,7 @@ self
 
 array<string\|int, mixed>
 
-#### getDownloadHandler()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html\#method_getDownloadHandler)
+#### getDownloadHandler()  [header link](class-aws-s3-s3transfer-models-downloadrequest-method-getdownloadhandler.md)
 
 `
     public
@@ -131,7 +131,7 @@ array<string\|int, mixed>
 
 ##### Return values
 
-[AbstractDownloadHandler](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.AbstractDownloadHandler.html)
+[AbstractDownloadHandler](class-aws-s3-s3transfer-utils-abstractdownloadhandler.md)
 
 #### getListeners()  [header link](class-aws-s3-s3transfer-models-abstracttransferrequest.md\#method_getListeners)
 
@@ -145,7 +145,7 @@ Get current listeners.
 
 array<string\|int, mixed>
 
-#### getObjectRequestArgs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html\#method_getObjectRequestArgs)
+#### getObjectRequestArgs()  [header link](class-aws-s3-s3transfer-models-downloadrequest-method-getobjectrequestargs.md)
 
 `
     public
@@ -165,7 +165,7 @@ Get the progress tracker.
 
 ##### Return values
 
-[AbstractTransferListener](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractTransferListener.html) \|null
+[AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md) \|null
 
 #### getSingleObjectListeners()  [header link](class-aws-s3-s3transfer-models-abstracttransferrequest.md\#method_getSingleObjectListeners)
 
@@ -179,7 +179,7 @@ Get listeners that should receive single-object events.
 
 array<string\|int, mixed>
 
-#### getSource()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html\#method_getSource)
+#### getSource()  [header link](class-aws-s3-s3transfer-models-downloadrequest-method-getsource.md)
 
 `
     public
@@ -189,7 +189,7 @@ array<string\|int, mixed>
 
 array<string\|int, mixed>\|string\|null
 
-#### normalizeSourceAsArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html\#method_normalizeSourceAsArray)
+#### normalizeSourceAsArray()  [header link](class-aws-s3-s3transfer-models-downloadrequest-method-normalizesourceasarray.md)
 
 Helper method to normalize the source as an array with:
 \- Bucket
@@ -230,22 +230,22 @@ implementation.
 **On this page**
 
 - Table Of Contents
-  - [Properties](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html#toc-properties)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html#toc-methods)
+  - [Properties](class-aws-s3-s3transfer-models-downloadrequest-toc-properties.md)
+  - [Methods](class-aws-s3-s3transfer-models-downloadrequest-toc-methods.md)
 - Properties
-  - [$configKeys](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html#property_configKeys)
+  - [$configKeys](class-aws-s3-s3transfer-models-downloadrequest-property-configkeys.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html#method___construct)
-  - [fromDownloadRequestAndDownloadHandler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html#method_fromDownloadRequestAndDownloadHandler)
+  - [\_\_construct()](class-aws-s3-s3transfer-models-downloadrequest-method-construct.md)
+  - [fromDownloadRequestAndDownloadHandler()](class-aws-s3-s3transfer-models-downloadrequest-method-fromdownloadrequestanddownloadhandler.md)
   - [getConfig()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getConfig)
-  - [getDownloadHandler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html#method_getDownloadHandler)
+  - [getDownloadHandler()](class-aws-s3-s3transfer-models-downloadrequest-method-getdownloadhandler.md)
   - [getListeners()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getListeners)
-  - [getObjectRequestArgs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html#method_getObjectRequestArgs)
+  - [getObjectRequestArgs()](class-aws-s3-s3transfer-models-downloadrequest-method-getobjectrequestargs.md)
   - [getProgressTracker()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getProgressTracker)
   - [getSingleObjectListeners()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getSingleObjectListeners)
-  - [getSource()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html#method_getSource)
-  - [normalizeSourceAsArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html#method_normalizeSourceAsArray)
+  - [getSource()](class-aws-s3-s3transfer-models-downloadrequest-method-getsource.md)
+  - [normalizeSourceAsArray()](class-aws-s3-s3transfer-models-downloadrequest-method-normalizesourceasarray.md)
   - [updateConfigWithDefaults()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_updateConfigWithDefaults)
   - [validateConfig()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_validateConfig)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html#top)
+[Back To Top](class-aws-s3-s3transfer-models-downloadrequest-top.md)

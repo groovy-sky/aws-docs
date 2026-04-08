@@ -2,17 +2,17 @@
 
 The following actions are supported by AWS Free Tier:
 
-- [GetAccountActivity](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_freetier_GetAccountActivity.html)
+- [GetAccountActivity](api-freetier-getaccountactivity.md)
 
-- [GetAccountPlanState](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_freetier_GetAccountPlanState.html)
+- [GetAccountPlanState](api-freetier-getaccountplanstate.md)
 
-- [GetFreeTierUsage](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_freetier_GetFreeTierUsage.html)
+- [GetFreeTierUsage](api-freetier-getfreetierusage.md)
 
-- [ListAccountActivities](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_freetier_ListAccountActivities.html)
+- [ListAccountActivities](api-freetier-listaccountactivities.md)
 
-- [UpgradeAccountPlan](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_freetier_UpgradeAccountPlan.html)
+- [UpgradeAccountPlan](api-freetier-upgradeaccountplan.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 UntagResource
 

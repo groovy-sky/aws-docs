@@ -17,27 +17,27 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2022-06-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-oam-2022-06-10.html)
+- [**2022-06-10**](api-oam-2022-06-10.md)
 
-  - [CreateLink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-oam-2022-06-10.html#createlink)
-  - [CreateSink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-oam-2022-06-10.html#createsink)
-  - [DeleteLink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-oam-2022-06-10.html#deletelink)
-  - [DeleteSink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-oam-2022-06-10.html#deletesink)
-  - [GetLink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-oam-2022-06-10.html#getlink)
-  - [GetSink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-oam-2022-06-10.html#getsink)
-  - [GetSinkPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-oam-2022-06-10.html#getsinkpolicy)
-  - [ListAttachedLinks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-oam-2022-06-10.html#listattachedlinks)
-  - [ListLinks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-oam-2022-06-10.html#listlinks)
-  - [ListSinks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-oam-2022-06-10.html#listsinks)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-oam-2022-06-10.html#listtagsforresource)
-  - [PutSinkPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-oam-2022-06-10.html#putsinkpolicy)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-oam-2022-06-10.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-oam-2022-06-10.html#untagresource)
-  - [UpdateLink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-oam-2022-06-10.html#updatelink)
+  - [CreateLink](api-oam-2022-06-10-createlink.md)
+  - [CreateSink](api-oam-2022-06-10-createsink.md)
+  - [DeleteLink](api-oam-2022-06-10-deletelink.md)
+  - [DeleteSink](api-oam-2022-06-10-deletesink.md)
+  - [GetLink](api-oam-2022-06-10-getlink.md)
+  - [GetSink](api-oam-2022-06-10-getsink.md)
+  - [GetSinkPolicy](api-oam-2022-06-10-getsinkpolicy.md)
+  - [ListAttachedLinks](api-oam-2022-06-10-listattachedlinks.md)
+  - [ListLinks](api-oam-2022-06-10-listlinks.md)
+  - [ListSinks](api-oam-2022-06-10-listsinks.md)
+  - [ListTagsForResource](api-oam-2022-06-10-listtagsforresource.md)
+  - [PutSinkPolicy](api-oam-2022-06-10-putsinkpolicy.md)
+  - [TagResource](api-oam-2022-06-10-tagresource.md)
+  - [UntagResource](api-oam-2022-06-10-untagresource.md)
+  - [UpdateLink](api-oam-2022-06-10-updatelink.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.OAM.OAMClient.html\#toc)
+### Table of Contents  [header link](class-aws-oam-oamclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.OAM.OAMClient.html\#toc-methods)
+#### Methods  [header link](class-aws-oam-oamclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -68,7 +68,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.OAM.OAMClient.html\#methods)
+### Methods  [header link](class-aws-oam-oamclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -535,7 +535,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.OAM.OAMClient.html#toc-methods)
+  - [Methods](class-aws-oam-oamclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -562,4 +562,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.OAM.OAMClient.html#top)
+[Back To Top](class-aws-oam-oamclient-top.md)

@@ -1,4 +1,4 @@
-![AWS logo](https://docs.aws.amazon.com/amazonq/detector-library/_next/static/media/aws-logo.506636a4.svg)
+![AWS logo](../../../../../services/amazonq/detector-library/next/static/media/aws-logo-506636a4-svg.md)
 
 [Amazon QDetector Library](../../../../../services/amazonq/detector-library.md) [Sign in to Amazon Q](https://console.aws.amazon.com/amazonq/home)
 

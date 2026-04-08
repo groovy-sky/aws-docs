@@ -45,7 +45,7 @@ _drifted_, from its expected configuration, as defined in the stack template
 and any values specified as template parameters. For more information, see [Detect\
 unmanaged configuration changes to stacks and resources with drift detection](../../../../services/cloudformation/latest/userguide/using-cfn-stack-drift.md).
 
-Type: [StackDriftInformationSummary](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_StackDriftInformationSummary.html) object
+Type: [StackDriftInformationSummary](api-stackdriftinformationsummary.md) object
 
 Required: No
 
@@ -53,7 +53,7 @@ Required: No
 
 Information about the most recent operations performed on this stack.
 
-Type: Array of [OperationEntry](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_OperationEntry.html) objects
+Type: Array of [OperationEntry](api-operationentry.md) objects
 
 Required: No
 
@@ -118,13 +118,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/StackSummary)
+- [AWS SDK for C++](../../../goto/sdkforcpp/cloudformation-2010-05-15/stacksummary.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/StackSummary)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudformation-2010-05-15/stacksummary.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/StackSummary)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/stacksummary.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 StackSetSummary
 

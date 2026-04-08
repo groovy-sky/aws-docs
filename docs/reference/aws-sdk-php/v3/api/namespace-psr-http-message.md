@@ -5,9 +5,9 @@ Menu
 
 ## Message
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.message.html\#toc)
+### Table of Contents  [header link](namespace-psr-http-message-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.message.html\#toc-interfaces)
+#### Interfaces  [header link](namespace-psr-http-message-toc-interfaces.md)
 
 [MessageInterface](class-psr-http-message-messageinterface.md)HTTP messages consist of requests from a client to a server and responses
 from a server to a client. This interface defines the methods common to
@@ -22,6 +22,6 @@ each.[RequestInterface](class-psr-http-message-requestinterface.md)Representatio
 **On this page**
 
 - Table Of Contents
-  - [Interfaces](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.message.html#toc-interfaces)
+  - [Interfaces](namespace-psr-http-message-toc-interfaces.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.message.html#top)
+[Back To Top](namespace-psr-http-message-top.md)

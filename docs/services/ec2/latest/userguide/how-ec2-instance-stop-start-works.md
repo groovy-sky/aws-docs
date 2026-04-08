@@ -91,7 +91,7 @@ labeled **Running EC2 instance**, shows the instance in the
 labeled **Lost**, shows the resources that are lost when the
 instance is stopped.
 
-![The public IPv4 address, RAM, and instance storage data are lost when an instance is stopped.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/stop-instance.png)
+![The public IPv4 address, RAM, and instance storage data are lost when an instance is stopped.](../../../images/awsec2/latest/userguide/images/stop-instance-png.md)
 
 For information about what happens when you stop a Mac instance,
 see [Stop or terminate your Amazon EC2 Mac instance](mac-instance-stop.md).

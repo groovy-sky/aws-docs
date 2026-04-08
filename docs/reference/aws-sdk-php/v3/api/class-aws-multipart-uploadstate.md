@@ -10,39 +10,39 @@ Representation of the multipart upload.
 This object keeps track of the state of the upload, including the status and
 which parts have been uploaded.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html\#toc)
+### Table of Contents  [header link](class-aws-multipart-uploadstate-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html\#toc-constants)
+#### Constants  [header link](class-aws-multipart-uploadstate-toc-constants.md)
 
-[COMPLETED](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#constant_COMPLETED)
-= 2 [CREATED](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#constant_CREATED)
-= 0 [INITIATED](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#constant_INITIATED)
-= 1 [PROGRESS\_THRESHOLD\_SIZE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#constant_PROGRESS_THRESHOLD_SIZE)
+[COMPLETED](class-aws-multipart-uploadstate-constant-completed.md)
+= 2 [CREATED](class-aws-multipart-uploadstate-constant-created.md)
+= 0 [INITIATED](class-aws-multipart-uploadstate-constant-initiated.md)
+= 1 [PROGRESS\_THRESHOLD\_SIZE](class-aws-multipart-uploadstate-constant-progress-threshold-size.md)
 = 8
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html\#toc-methods)
+#### Methods  [header link](class-aws-multipart-uploadstate-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method___construct)
-: mixed [getDisplayProgress()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_getDisplayProgress)
-: void Prints progress of upload.[getId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_getId)
+[\_\_construct()](class-aws-multipart-uploadstate-method-construct.md)
+: mixed [getDisplayProgress()](class-aws-multipart-uploadstate-method-getdisplayprogress.md)
+: void Prints progress of upload.[getId()](class-aws-multipart-uploadstate-method-getid.md)
 : array<string\|int, mixed> Get the upload's ID, which is a tuple of parameters that can uniquely
-identify the upload.[getPartSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_getPartSize)
-: int Get the part size.[getUploadedParts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_getUploadedParts)
-: array<string\|int, mixed> Returns a sorted list of all the uploaded parts.[hasPartBeenUploaded()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_hasPartBeenUploaded)
-: bool Returns whether a part has been uploaded.[isCompleted()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_isCompleted)
-: bool Determines whether the upload state is in the COMPLETED status.[isInitiated()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_isInitiated)
-: bool Determines whether the upload state is in the INITIATED status.[markPartAsUploaded()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_markPartAsUploaded)
-: mixed Marks a part as being uploaded.[setPartSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_setPartSize)
-: mixed Set the part size.[setProgressThresholds()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_setProgressThresholds)
+identify the upload.[getPartSize()](class-aws-multipart-uploadstate-method-getpartsize.md)
+: int Get the part size.[getUploadedParts()](class-aws-multipart-uploadstate-method-getuploadedparts.md)
+: array<string\|int, mixed> Returns a sorted list of all the uploaded parts.[hasPartBeenUploaded()](class-aws-multipart-uploadstate-method-haspartbeenuploaded.md)
+: bool Returns whether a part has been uploaded.[isCompleted()](class-aws-multipart-uploadstate-method-iscompleted.md)
+: bool Determines whether the upload state is in the COMPLETED status.[isInitiated()](class-aws-multipart-uploadstate-method-isinitiated.md)
+: bool Determines whether the upload state is in the INITIATED status.[markPartAsUploaded()](class-aws-multipart-uploadstate-method-markpartasuploaded.md)
+: mixed Marks a part as being uploaded.[setPartSize()](class-aws-multipart-uploadstate-method-setpartsize.md)
+: mixed Set the part size.[setProgressThresholds()](class-aws-multipart-uploadstate-method-setprogressthresholds.md)
 : array<string\|int, mixed> Sets the 1/8th thresholds array. $totalSize is only sent if
-'track\_upload' is true.[setStatus()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_setStatus)
-: mixed Set the status of the upload.[setUploadId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_setUploadId)
+'track\_upload' is true.[setStatus()](class-aws-multipart-uploadstate-method-setstatus.md)
+: mixed Set the status of the upload.[setUploadId()](class-aws-multipart-uploadstate-method-setuploadid.md)
 : mixed Sets the "upload\_id", or 3rd part of the upload's ID. This typically
 only needs to be done after initiating an upload.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html\#constants)
+### Constants  [header link](class-aws-multipart-uploadstate-constants.md)
 
-#### COMPLETED  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html\#constant_COMPLETED)
+#### COMPLETED  [header link](class-aws-multipart-uploadstate-constant-completed.md)
 
 `
     public
@@ -51,7 +51,7 @@ only needs to be done after initiating an upload.
     = 2
 `
 
-#### CREATED  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html\#constant_CREATED)
+#### CREATED  [header link](class-aws-multipart-uploadstate-constant-created.md)
 
 `
     public
@@ -60,7 +60,7 @@ only needs to be done after initiating an upload.
     = 0
 `
 
-#### INITIATED  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html\#constant_INITIATED)
+#### INITIATED  [header link](class-aws-multipart-uploadstate-constant-initiated.md)
 
 `
     public
@@ -69,7 +69,7 @@ only needs to be done after initiating an upload.
     = 1
 `
 
-#### PROGRESS\_THRESHOLD\_SIZE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html\#constant_PROGRESS_THRESHOLD_SIZE)
+#### PROGRESS\_THRESHOLD\_SIZE  [header link](class-aws-multipart-uploadstate-constant-progress-threshold-size.md)
 
 `
     public
@@ -78,9 +78,9 @@ only needs to be done after initiating an upload.
     = 8
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html\#methods)
+### Methods  [header link](class-aws-multipart-uploadstate-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-multipart-uploadstate-method-construct.md)
 
 `
     public
@@ -97,7 +97,7 @@ $config
 : array<string\|int, mixed>
 = \[\]
 
-#### getDisplayProgress()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html\#method_getDisplayProgress)
+#### getDisplayProgress()  [header link](class-aws-multipart-uploadstate-method-getdisplayprogress.md)
 
 Prints progress of upload.
 
@@ -112,7 +112,7 @@ $totalUploaded
 
 numeric Size of upload so far.
 
-#### getId()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html\#method_getId)
+#### getId()  [header link](class-aws-multipart-uploadstate-method-getid.md)
 
 Get the upload's ID, which is a tuple of parameters that can uniquely
 identify the upload.
@@ -125,7 +125,7 @@ identify the upload.
 
 array<string\|int, mixed>
 
-#### getPartSize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html\#method_getPartSize)
+#### getPartSize()  [header link](class-aws-multipart-uploadstate-method-getpartsize.md)
 
 Get the part size.
 
@@ -137,7 +137,7 @@ Get the part size.
 
 int
 
-#### getUploadedParts()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html\#method_getUploadedParts)
+#### getUploadedParts()  [header link](class-aws-multipart-uploadstate-method-getuploadedparts.md)
 
 Returns a sorted list of all the uploaded parts.
 
@@ -149,7 +149,7 @@ Returns a sorted list of all the uploaded parts.
 
 array<string\|int, mixed>
 
-#### hasPartBeenUploaded()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html\#method_hasPartBeenUploaded)
+#### hasPartBeenUploaded()  [header link](class-aws-multipart-uploadstate-method-haspartbeenuploaded.md)
 
 Returns whether a part has been uploaded.
 
@@ -168,7 +168,7 @@ The part number.
 
 bool
 
-#### isCompleted()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html\#method_isCompleted)
+#### isCompleted()  [header link](class-aws-multipart-uploadstate-method-iscompleted.md)
 
 Determines whether the upload state is in the COMPLETED status.
 
@@ -180,7 +180,7 @@ Determines whether the upload state is in the COMPLETED status.
 
 bool
 
-#### isInitiated()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html\#method_isInitiated)
+#### isInitiated()  [header link](class-aws-multipart-uploadstate-method-isinitiated.md)
 
 Determines whether the upload state is in the INITIATED status.
 
@@ -192,7 +192,7 @@ Determines whether the upload state is in the INITIATED status.
 
 bool
 
-#### markPartAsUploaded()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html\#method_markPartAsUploaded)
+#### markPartAsUploaded()  [header link](class-aws-multipart-uploadstate-method-markpartasuploaded.md)
 
 Marks a part as being uploaded.
 
@@ -214,7 +214,7 @@ $partData
 Data from the upload operation that needs to be
 recalled during the complete operation.
 
-#### setPartSize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html\#method_setPartSize)
+#### setPartSize()  [header link](class-aws-multipart-uploadstate-method-setpartsize.md)
 
 Set the part size.
 
@@ -229,7 +229,7 @@ $partSize
 
 int Size of upload parts.
 
-#### setProgressThresholds()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html\#method_setProgressThresholds)
+#### setProgressThresholds()  [header link](class-aws-multipart-uploadstate-method-setprogressthresholds.md)
 
 Sets the 1/8th thresholds array. $totalSize is only sent if
 'track\_upload' is true.
@@ -249,7 +249,7 @@ numeric Size of object to upload.
 
 array<string\|int, mixed>
 
-#### setStatus()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html\#method_setStatus)
+#### setStatus()  [header link](class-aws-multipart-uploadstate-method-setstatus.md)
 
 Set the status of the upload.
 
@@ -265,7 +265,7 @@ $status
 Status is an integer code defined by the constants
 CREATED, INITIATED, and COMPLETED on this class.
 
-#### setUploadId()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html\#method_setUploadId)
+#### setUploadId()  [header link](class-aws-multipart-uploadstate-method-setuploadid.md)
 
 Sets the "upload\_id", or 3rd part of the upload's ID. This typically
 only needs to be done after initiating an upload.
@@ -293,26 +293,26 @@ The param value of the upload\_id.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#toc-methods)
+  - [Constants](class-aws-multipart-uploadstate-toc-constants.md)
+  - [Methods](class-aws-multipart-uploadstate-toc-methods.md)
 - Constants
-  - [COMPLETED](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#constant_COMPLETED)
-  - [CREATED](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#constant_CREATED)
-  - [INITIATED](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#constant_INITIATED)
-  - [PROGRESS\_THRESHOLD\_SIZE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#constant_PROGRESS_THRESHOLD_SIZE)
+  - [COMPLETED](class-aws-multipart-uploadstate-constant-completed.md)
+  - [CREATED](class-aws-multipart-uploadstate-constant-created.md)
+  - [INITIATED](class-aws-multipart-uploadstate-constant-initiated.md)
+  - [PROGRESS\_THRESHOLD\_SIZE](class-aws-multipart-uploadstate-constant-progress-threshold-size.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method___construct)
-  - [getDisplayProgress()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_getDisplayProgress)
-  - [getId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_getId)
-  - [getPartSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_getPartSize)
-  - [getUploadedParts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_getUploadedParts)
-  - [hasPartBeenUploaded()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_hasPartBeenUploaded)
-  - [isCompleted()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_isCompleted)
-  - [isInitiated()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_isInitiated)
-  - [markPartAsUploaded()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_markPartAsUploaded)
-  - [setPartSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_setPartSize)
-  - [setProgressThresholds()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_setProgressThresholds)
-  - [setStatus()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_setStatus)
-  - [setUploadId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#method_setUploadId)
+  - [\_\_construct()](class-aws-multipart-uploadstate-method-construct.md)
+  - [getDisplayProgress()](class-aws-multipart-uploadstate-method-getdisplayprogress.md)
+  - [getId()](class-aws-multipart-uploadstate-method-getid.md)
+  - [getPartSize()](class-aws-multipart-uploadstate-method-getpartsize.md)
+  - [getUploadedParts()](class-aws-multipart-uploadstate-method-getuploadedparts.md)
+  - [hasPartBeenUploaded()](class-aws-multipart-uploadstate-method-haspartbeenuploaded.md)
+  - [isCompleted()](class-aws-multipart-uploadstate-method-iscompleted.md)
+  - [isInitiated()](class-aws-multipart-uploadstate-method-isinitiated.md)
+  - [markPartAsUploaded()](class-aws-multipart-uploadstate-method-markpartasuploaded.md)
+  - [setPartSize()](class-aws-multipart-uploadstate-method-setpartsize.md)
+  - [setProgressThresholds()](class-aws-multipart-uploadstate-method-setprogressthresholds.md)
+  - [setStatus()](class-aws-multipart-uploadstate-method-setstatus.md)
+  - [setUploadId()](class-aws-multipart-uploadstate-method-setuploadid.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html#top)
+[Back To Top](class-aws-multipart-uploadstate-top.md)

@@ -2,36 +2,36 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
-- [Models](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.models.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
+- [Models](namespace-aws-s3-s3transfer-models.md)
 
 ## AbstractResumableTransfer        in package    - [Aws](package-aws.md)
 
 AbstractYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-models-abstractresumabletransfer-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-models-abstractresumabletransfer-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method___construct)
-: mixed [deleteResumeFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_deleteResumeFile)
-: void [fromFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_fromFile)
-: self Load a resumable state from a file.[fromJson()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_fromJson)
-: self Deserialize a resumable state from JSON format.[getBucket()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_getBucket)
-: string [getConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_getConfig)
-: array<string\|int, mixed> [getCurrentSnapshot()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_getCurrentSnapshot)
-: array<string\|int, mixed> [getKey()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_getKey)
-: string [getRequestArgs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_getRequestArgs)
-: array<string\|int, mixed> [getResumeFilePath()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_getResumeFilePath)
-: string [isResumeFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_isResumeFile)
-: bool Check if a file path is a valid resume file.[toFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_toFile)
-: void Save the resumable state to a file.[toJson()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_toJson)
-: string Serialize the resumable state to JSON format.[updateCurrentSnapshot()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_updateCurrentSnapshot)
+[\_\_construct()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-construct.md)
+: mixed [deleteResumeFile()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-deleteresumefile.md)
+: void [fromFile()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-fromfile.md)
+: self Load a resumable state from a file.[fromJson()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-fromjson.md)
+: self Deserialize a resumable state from JSON format.[getBucket()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-getbucket.md)
+: string [getConfig()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-getconfig.md)
+: array<string\|int, mixed> [getCurrentSnapshot()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-getcurrentsnapshot.md)
+: array<string\|int, mixed> [getKey()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-getkey.md)
+: string [getRequestArgs()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-getrequestargs.md)
+: array<string\|int, mixed> [getResumeFilePath()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-getresumefilepath.md)
+: string [isResumeFile()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-isresumefile.md)
+: bool Check if a file path is a valid resume file.[toFile()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-tofile.md)
+: void Save the resumable state to a file.[toJson()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-tojson.md)
+: string Serialize the resumable state to JSON format.[updateCurrentSnapshot()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-updatecurrentsnapshot.md)
 : void Update the current snapshot.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-models-abstractresumabletransfer-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-construct.md)
 
 `
     public
@@ -55,7 +55,7 @@ $currentSnapshot
 
 The current progress snapshot
 
-#### deleteResumeFile()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html\#method_deleteResumeFile)
+#### deleteResumeFile()  [header link](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-deleteresumefile.md)
 
 `
     public
@@ -67,7 +67,7 @@ $filePath
 : string\|null
 = null
 
-#### fromFile()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html\#method_fromFile)
+#### fromFile()  [header link](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-fromfile.md)
 
 Load a resumable state from a file.
 
@@ -82,7 +82,7 @@ $filePath
 
 Path to the resume file
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html\#method_fromFile\#tags)
+##### Tags  [header link](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-fromfile-tags.md)
 
 throws[S3TransferException](class-aws-s3-s3transfer-exception-s3transferexception.md)
 
@@ -92,7 +92,7 @@ If the file cannot be read or is invalid
 
 self
 
-#### fromJson()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html\#method_fromJson)
+#### fromJson()  [header link](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-fromjson.md)
 
 Deserialize a resumable state from JSON format.
 
@@ -107,7 +107,7 @@ $json
 
 JSON-encoded state
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html\#method_fromJson\#tags)
+##### Tags  [header link](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-fromjson-tags.md)
 
 throws[S3TransferException](class-aws-s3-s3transfer-exception-s3transferexception.md)
 
@@ -117,7 +117,7 @@ If the JSON is invalid or missing required fields
 
 self
 
-#### getBucket()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html\#method_getBucket)
+#### getBucket()  [header link](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-getbucket.md)
 
 `
     public
@@ -127,7 +127,7 @@ self
 
 string
 
-#### getConfig()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html\#method_getConfig)
+#### getConfig()  [header link](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-getconfig.md)
 
 `
     public
@@ -137,7 +137,7 @@ string
 
 array<string\|int, mixed>
 
-#### getCurrentSnapshot()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html\#method_getCurrentSnapshot)
+#### getCurrentSnapshot()  [header link](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-getcurrentsnapshot.md)
 
 `
     public
@@ -147,7 +147,7 @@ array<string\|int, mixed>
 
 array<string\|int, mixed>
 
-#### getKey()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html\#method_getKey)
+#### getKey()  [header link](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-getkey.md)
 
 `
     public
@@ -157,7 +157,7 @@ array<string\|int, mixed>
 
 string
 
-#### getRequestArgs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html\#method_getRequestArgs)
+#### getRequestArgs()  [header link](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-getrequestargs.md)
 
 `
     public
@@ -167,7 +167,7 @@ string
 
 array<string\|int, mixed>
 
-#### getResumeFilePath()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html\#method_getResumeFilePath)
+#### getResumeFilePath()  [header link](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-getresumefilepath.md)
 
 `
     public
@@ -177,7 +177,7 @@ array<string\|int, mixed>
 
 string
 
-#### isResumeFile()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html\#method_isResumeFile)
+#### isResumeFile()  [header link](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-isresumefile.md)
 
 Check if a file path is a valid resume file.
 
@@ -194,7 +194,7 @@ $filePath
 
 bool
 
-#### toFile()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html\#method_toFile)
+#### toFile()  [header link](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-tofile.md)
 
 Save the resumable state to a file.
 
@@ -213,7 +213,7 @@ $filePath
 
 Path where the resume file should be saved
 
-#### toJson()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html\#method_toJson)
+#### toJson()  [header link](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-tojson.md)
 
 Serialize the resumable state to JSON format.
 
@@ -228,7 +228,7 @@ string
 
 JSON-encoded state
 
-#### updateCurrentSnapshot()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html\#method_updateCurrentSnapshot)
+#### updateCurrentSnapshot()  [header link](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-updatecurrentsnapshot.md)
 
 Update the current snapshot.
 
@@ -250,21 +250,21 @@ The new snapshot data
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#toc-methods)
+  - [Methods](class-aws-s3-s3transfer-models-abstractresumabletransfer-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method___construct)
-  - [deleteResumeFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_deleteResumeFile)
-  - [fromFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_fromFile)
-  - [fromJson()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_fromJson)
-  - [getBucket()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_getBucket)
-  - [getConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_getConfig)
-  - [getCurrentSnapshot()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_getCurrentSnapshot)
-  - [getKey()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_getKey)
-  - [getRequestArgs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_getRequestArgs)
-  - [getResumeFilePath()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_getResumeFilePath)
-  - [isResumeFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_isResumeFile)
-  - [toFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_toFile)
-  - [toJson()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_toJson)
-  - [updateCurrentSnapshot()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#method_updateCurrentSnapshot)
+  - [\_\_construct()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-construct.md)
+  - [deleteResumeFile()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-deleteresumefile.md)
+  - [fromFile()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-fromfile.md)
+  - [fromJson()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-fromjson.md)
+  - [getBucket()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-getbucket.md)
+  - [getConfig()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-getconfig.md)
+  - [getCurrentSnapshot()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-getcurrentsnapshot.md)
+  - [getKey()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-getkey.md)
+  - [getRequestArgs()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-getrequestargs.md)
+  - [getResumeFilePath()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-getresumefilepath.md)
+  - [isResumeFile()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-isresumefile.md)
+  - [toFile()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-tofile.md)
+  - [toJson()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-tojson.md)
+  - [updateCurrentSnapshot()](class-aws-s3-s3transfer-models-abstractresumabletransfer-method-updatecurrentsnapshot.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractResumableTransfer.html#top)
+[Back To Top](class-aws-s3-s3transfer-models-abstractresumabletransfer-top.md)

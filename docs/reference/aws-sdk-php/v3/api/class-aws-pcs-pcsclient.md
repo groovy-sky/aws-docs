@@ -17,31 +17,31 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2023-02-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pcs-2023-02-10.html)
+- [**2023-02-10**](api-pcs-2023-02-10.md)
 
-  - [CreateCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pcs-2023-02-10.html#createcluster)
-  - [CreateComputeNodeGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pcs-2023-02-10.html#createcomputenodegroup)
-  - [CreateQueue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pcs-2023-02-10.html#createqueue)
-  - [DeleteCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pcs-2023-02-10.html#deletecluster)
-  - [DeleteComputeNodeGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pcs-2023-02-10.html#deletecomputenodegroup)
-  - [DeleteQueue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pcs-2023-02-10.html#deletequeue)
-  - [GetCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pcs-2023-02-10.html#getcluster)
-  - [GetComputeNodeGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pcs-2023-02-10.html#getcomputenodegroup)
-  - [GetQueue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pcs-2023-02-10.html#getqueue)
-  - [ListClusters](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pcs-2023-02-10.html#listclusters)
-  - [ListComputeNodeGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pcs-2023-02-10.html#listcomputenodegroups)
-  - [ListQueues](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pcs-2023-02-10.html#listqueues)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pcs-2023-02-10.html#listtagsforresource)
-  - [RegisterComputeNodeGroupInstance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pcs-2023-02-10.html#registercomputenodegroupinstance)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pcs-2023-02-10.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pcs-2023-02-10.html#untagresource)
-  - [UpdateCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pcs-2023-02-10.html#updatecluster)
-  - [UpdateComputeNodeGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pcs-2023-02-10.html#updatecomputenodegroup)
-  - [UpdateQueue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pcs-2023-02-10.html#updatequeue)
+  - [CreateCluster](api-pcs-2023-02-10-createcluster.md)
+  - [CreateComputeNodeGroup](api-pcs-2023-02-10-createcomputenodegroup.md)
+  - [CreateQueue](api-pcs-2023-02-10-createqueue.md)
+  - [DeleteCluster](api-pcs-2023-02-10-deletecluster.md)
+  - [DeleteComputeNodeGroup](api-pcs-2023-02-10-deletecomputenodegroup.md)
+  - [DeleteQueue](api-pcs-2023-02-10-deletequeue.md)
+  - [GetCluster](api-pcs-2023-02-10-getcluster.md)
+  - [GetComputeNodeGroup](api-pcs-2023-02-10-getcomputenodegroup.md)
+  - [GetQueue](api-pcs-2023-02-10-getqueue.md)
+  - [ListClusters](api-pcs-2023-02-10-listclusters.md)
+  - [ListComputeNodeGroups](api-pcs-2023-02-10-listcomputenodegroups.md)
+  - [ListQueues](api-pcs-2023-02-10-listqueues.md)
+  - [ListTagsForResource](api-pcs-2023-02-10-listtagsforresource.md)
+  - [RegisterComputeNodeGroupInstance](api-pcs-2023-02-10-registercomputenodegroupinstance.md)
+  - [TagResource](api-pcs-2023-02-10-tagresource.md)
+  - [UntagResource](api-pcs-2023-02-10-untagresource.md)
+  - [UpdateCluster](api-pcs-2023-02-10-updatecluster.md)
+  - [UpdateComputeNodeGroup](api-pcs-2023-02-10-updatecomputenodegroup.md)
+  - [UpdateQueue](api-pcs-2023-02-10-updatequeue.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PCS.PCSClient.html\#toc)
+### Table of Contents  [header link](class-aws-pcs-pcsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PCS.PCSClient.html\#toc-methods)
+#### Methods  [header link](class-aws-pcs-pcsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -72,7 +72,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PCS.PCSClient.html\#methods)
+### Methods  [header link](class-aws-pcs-pcsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -539,7 +539,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PCS.PCSClient.html#toc-methods)
+  - [Methods](class-aws-pcs-pcsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -566,4 +566,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PCS.PCSClient.html#top)
+[Back To Top](class-aws-pcs-pcsclient-top.md)

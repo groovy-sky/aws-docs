@@ -4,15 +4,15 @@ Menu
 
 ## PCS
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pcs.html\#toc)
+### Table of Contents  [header link](namespace-aws-pcs-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pcs.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-pcs-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pcs.exception.html)
+[Exception](namespace-aws-pcs-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pcs.html\#toc-classes)
+#### Classes  [header link](namespace-aws-pcs-toc-classes.md)
 
-[PCSClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PCS.PCSClient.html)This client is used to interact with the **AWS Parallel Computing Service** service.
+[PCSClient](class-aws-pcs-pcsclient.md)This client is used to interact with the **AWS Parallel Computing Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pcs.html#toc-classes)
+  - [Classes](namespace-aws-pcs-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pcs.html#top)
+[Back To Top](namespace-aws-pcs-top.md)

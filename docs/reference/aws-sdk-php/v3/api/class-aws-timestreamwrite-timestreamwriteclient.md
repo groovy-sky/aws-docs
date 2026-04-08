@@ -17,31 +17,31 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-11-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-write-2018-11-01.html)
+- [**2018-11-01**](api-timestream-write-2018-11-01.md)
 
-  - [CreateBatchLoadTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-write-2018-11-01.html#createbatchloadtask)
-  - [CreateDatabase](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-write-2018-11-01.html#createdatabase)
-  - [CreateTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-write-2018-11-01.html#createtable)
-  - [DeleteDatabase](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-write-2018-11-01.html#deletedatabase)
-  - [DeleteTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-write-2018-11-01.html#deletetable)
-  - [DescribeBatchLoadTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-write-2018-11-01.html#describebatchloadtask)
-  - [DescribeDatabase](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-write-2018-11-01.html#describedatabase)
-  - [DescribeEndpoints](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-write-2018-11-01.html#describeendpoints)
-  - [DescribeTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-write-2018-11-01.html#describetable)
-  - [ListBatchLoadTasks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-write-2018-11-01.html#listbatchloadtasks)
-  - [ListDatabases](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-write-2018-11-01.html#listdatabases)
-  - [ListTables](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-write-2018-11-01.html#listtables)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-write-2018-11-01.html#listtagsforresource)
-  - [ResumeBatchLoadTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-write-2018-11-01.html#resumebatchloadtask)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-write-2018-11-01.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-write-2018-11-01.html#untagresource)
-  - [UpdateDatabase](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-write-2018-11-01.html#updatedatabase)
-  - [UpdateTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-write-2018-11-01.html#updatetable)
-  - [WriteRecords](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-write-2018-11-01.html#writerecords)
+  - [CreateBatchLoadTask](api-timestream-write-2018-11-01-createbatchloadtask.md)
+  - [CreateDatabase](api-timestream-write-2018-11-01-createdatabase.md)
+  - [CreateTable](api-timestream-write-2018-11-01-createtable.md)
+  - [DeleteDatabase](api-timestream-write-2018-11-01-deletedatabase.md)
+  - [DeleteTable](api-timestream-write-2018-11-01-deletetable.md)
+  - [DescribeBatchLoadTask](api-timestream-write-2018-11-01-describebatchloadtask.md)
+  - [DescribeDatabase](api-timestream-write-2018-11-01-describedatabase.md)
+  - [DescribeEndpoints](api-timestream-write-2018-11-01-describeendpoints.md)
+  - [DescribeTable](api-timestream-write-2018-11-01-describetable.md)
+  - [ListBatchLoadTasks](api-timestream-write-2018-11-01-listbatchloadtasks.md)
+  - [ListDatabases](api-timestream-write-2018-11-01-listdatabases.md)
+  - [ListTables](api-timestream-write-2018-11-01-listtables.md)
+  - [ListTagsForResource](api-timestream-write-2018-11-01-listtagsforresource.md)
+  - [ResumeBatchLoadTask](api-timestream-write-2018-11-01-resumebatchloadtask.md)
+  - [TagResource](api-timestream-write-2018-11-01-tagresource.md)
+  - [UntagResource](api-timestream-write-2018-11-01-untagresource.md)
+  - [UpdateDatabase](api-timestream-write-2018-11-01-updatedatabase.md)
+  - [UpdateTable](api-timestream-write-2018-11-01-updatetable.md)
+  - [WriteRecords](api-timestream-write-2018-11-01-writerecords.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TimestreamWrite.TimestreamWriteClient.html\#toc)
+### Table of Contents  [header link](class-aws-timestreamwrite-timestreamwriteclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TimestreamWrite.TimestreamWriteClient.html\#toc-methods)
+#### Methods  [header link](class-aws-timestreamwrite-timestreamwriteclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -72,7 +72,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TimestreamWrite.TimestreamWriteClient.html\#methods)
+### Methods  [header link](class-aws-timestreamwrite-timestreamwriteclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -539,7 +539,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TimestreamWrite.TimestreamWriteClient.html#toc-methods)
+  - [Methods](class-aws-timestreamwrite-timestreamwriteclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -566,4 +566,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TimestreamWrite.TimestreamWriteClient.html#top)
+[Back To Top](class-aws-timestreamwrite-timestreamwriteclient-top.md)

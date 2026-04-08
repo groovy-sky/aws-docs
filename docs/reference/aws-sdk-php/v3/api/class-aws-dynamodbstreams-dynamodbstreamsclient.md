@@ -17,16 +17,16 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2012-08-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-streams.dynamodb-2012-08-10.html)
+- [**2012-08-10**](api-streams-dynamodb-2012-08-10.md)
 
-  - [DescribeStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-streams.dynamodb-2012-08-10.html#describestream)
-  - [GetRecords](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-streams.dynamodb-2012-08-10.html#getrecords)
-  - [GetShardIterator](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-streams.dynamodb-2012-08-10.html#getsharditerator)
-  - [ListStreams](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-streams.dynamodb-2012-08-10.html#liststreams)
+  - [DescribeStream](api-streams-dynamodb-2012-08-10-describestream.md)
+  - [GetRecords](api-streams-dynamodb-2012-08-10-getrecords.md)
+  - [GetShardIterator](api-streams-dynamodb-2012-08-10-getsharditerator.md)
+  - [ListStreams](api-streams-dynamodb-2012-08-10-liststreams.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDbStreams.DynamoDbStreamsClient.html\#toc)
+### Table of Contents  [header link](class-aws-dynamodbstreams-dynamodbstreamsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDbStreams.DynamoDbStreamsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-dynamodbstreams-dynamodbstreamsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -35,7 +35,7 @@ specific API operation can be done using magic methods (e.g.,
 : mixed [executeAsync()](class-aws-awsclienttrait.md#method_executeAsync)
 : mixed [factory()](class-aws-awsclient.md#method_factory)
 : static [getApi()](class-aws-awsclienttrait.md#method_getApi)
-: [Service](class-aws-api-service.md)[getArguments()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDbStreams.DynamoDbStreamsClient.html#method_getArguments)
+: [Service](class-aws-api-service.md)[getArguments()](class-aws-dynamodbstreams-dynamodbstreamsclient-method-getarguments.md)
 : array<string\|int, mixed> Get an array of client constructor arguments used by the client.[getClientBuiltIns()](class-aws-awsclient.md#method_getClientBuiltIns)
 : array<string\|int, mixed> Provides the set of built-in keys and values
 used for endpoint resolution[getClientContextParams()](class-aws-awsclient.md#method_getClientContextParams)
@@ -57,7 +57,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDbStreams.DynamoDbStreamsClient.html\#methods)
+### Methods  [header link](class-aws-dynamodbstreams-dynamodbstreamsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -299,7 +299,7 @@ static
 
 [Service](class-aws-api-service.md)
 
-#### getArguments()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDbStreams.DynamoDbStreamsClient.html\#method_getArguments)
+#### getArguments()  [header link](class-aws-dynamodbstreams-dynamodbstreamsclient-method-getarguments.md)
 
 Get an array of client constructor arguments used by the client.
 
@@ -524,7 +524,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDbStreams.DynamoDbStreamsClient.html#toc-methods)
+  - [Methods](class-aws-dynamodbstreams-dynamodbstreamsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -533,7 +533,7 @@ $name
   - [executeAsync()](class-aws-awsclienttrait.md#method_executeAsync)
   - [factory()](class-aws-awsclient.md#method_factory)
   - [getApi()](class-aws-awsclienttrait.md#method_getApi)
-  - [getArguments()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDbStreams.DynamoDbStreamsClient.html#method_getArguments)
+  - [getArguments()](class-aws-dynamodbstreams-dynamodbstreamsclient-method-getarguments.md)
   - [getClientBuiltIns()](class-aws-awsclient.md#method_getClientBuiltIns)
   - [getClientContextParams()](class-aws-awsclient.md#method_getClientContextParams)
   - [getCommand()](class-aws-awsclienttrait.md#method_getCommand)
@@ -551,4 +551,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDbStreams.DynamoDbStreamsClient.html#top)
+[Back To Top](class-aws-dynamodbstreams-dynamodbstreamsclient-top.md)

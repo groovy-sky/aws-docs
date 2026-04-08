@@ -2,11 +2,11 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [Api](namespace-aws-api.md)
-- [Parser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.api.parser.html)
+- [Parser](namespace-aws-api-parser.md)
 
 ## MetadataParserTrait
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.MetadataParserTrait.html\#toc)
+### Table of Contents  [header link](class-aws-api-parser-metadataparsertrait-toc.md)
 
 ×
 
@@ -14,4 +14,4 @@ Menu
 
 - Table Of Contents
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.MetadataParserTrait.html#top)
+[Back To Top](class-aws-api-parser-metadataparsertrait-top.md)

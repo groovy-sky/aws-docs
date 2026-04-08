@@ -26,7 +26,7 @@ process, and performance details. A time range for exported agent data may be se
 five concurrently running exports. Export of detailed agent data is limited to two exports per
 day.
 
-If you enable `ec2RecommendationsPreferences` in `preferences` [ExportPreferences](https://docs.aws.amazon.com/application-discovery/latest/APIReference/API_ExportPreferences.html), an Amazon EC2 instance matching the characteristics
+If you enable `ec2RecommendationsPreferences` in `preferences` [ExportPreferences](api-exportpreferences.md), an Amazon EC2 instance matching the characteristics
 of each server in Application Discovery Service is generated. Changing the attributes of the
 `ec2RecommendationsPreferences` changes the criteria of the
 recommendation.
@@ -52,7 +52,7 @@ recommendation.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/application-discovery/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -86,15 +86,15 @@ results of the `DescribeAgents` API or CLI. If no filter is present,
 AWS Application Discovery Service Agentless Collector collectors data and summary data from Application Discovery
 Agent agents.
 
-Type: Array of [ExportFilter](https://docs.aws.amazon.com/application-discovery/latest/APIReference/API_ExportFilter.html) objects
+Type: Array of [ExportFilter](api-exportfilter.md) objects
 
 Required: No
 
 **[preferences](#API_StartExportTask_RequestSyntax)**
 
-Indicates the type of data that needs to be exported. Only one [ExportPreferences](https://docs.aws.amazon.com/application-discovery/latest/APIReference/API_ExportPreferences.html) can be enabled at any time.
+Indicates the type of data that needs to be exported. Only one [ExportPreferences](api-exportpreferences.md) can be enabled at any time.
 
-Type: [ExportPreferences](https://docs.aws.amazon.com/application-discovery/latest/APIReference/API_ExportPreferences.html) object
+Type: [ExportPreferences](api-exportpreferences.md) object
 
 **Note:** This object is a Union. Only one member of this object can be specified or returned.
 
@@ -137,7 +137,7 @@ Pattern: `\S*`
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/application-discovery/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **AuthorizationErrorException**
 
@@ -187,7 +187,7 @@ HTTP Status Code: 500
 In the following example or examples, the Authorization header contents
 ( `AUTHPARAMS`) must be replaced with an AWS Signature Version 4 signature.
 For more information about creating these signatures, see [Signature Version 4\
-Signing Process](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) in the _AWS General Reference_.
+Signing Process](../../../../general/general/latest/gr/signature-version-4.md) in the _AWS General Reference_.
 
 You only need to learn how to sign HTTP requests if you intend to manually create
 them. When you use the [AWS Command Line Interface\
@@ -255,27 +255,27 @@ Date: Tue, 13 Jun 2023 00:44:54 GMT
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/discovery-2015-11-01/StartExportTask)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/discovery-2015-11-01/startexporttask.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/discovery-2015-11-01/StartExportTask)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/discovery-2015-11-01/startexporttask.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/discovery-2015-11-01/StartExportTask)
+- [AWS SDK for C++](../../../goto/sdkforcpp/discovery-2015-11-01/startexporttask.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/discovery-2015-11-01/StartExportTask)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/discovery-2015-11-01/startexporttask.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/discovery-2015-11-01/StartExportTask)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/discovery-2015-11-01/startexporttask.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/discovery-2015-11-01/StartExportTask)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/discovery-2015-11-01/startexporttask.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/discovery-2015-11-01/StartExportTask)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/discovery-2015-11-01/startexporttask.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/discovery-2015-11-01/StartExportTask)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/discovery-2015-11-01/startexporttask.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/discovery-2015-11-01/StartExportTask)
+- [AWS SDK for Python](../../../../services/goto/boto3/discovery-2015-11-01/startexporttask.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/discovery-2015-11-01/StartExportTask)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/discovery-2015-11-01/startexporttask.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 StartDataCollectionByAgentIds
 

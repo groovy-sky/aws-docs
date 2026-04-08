@@ -4,15 +4,15 @@ Menu
 
 ## SageMakerFeatureStoreRuntime
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakerfeaturestoreruntime.html\#toc)
+### Table of Contents  [header link](namespace-aws-sagemakerfeaturestoreruntime-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakerfeaturestoreruntime.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-sagemakerfeaturestoreruntime-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakerfeaturestoreruntime.exception.html)
+[Exception](namespace-aws-sagemakerfeaturestoreruntime-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakerfeaturestoreruntime.html\#toc-classes)
+#### Classes  [header link](namespace-aws-sagemakerfeaturestoreruntime-toc-classes.md)
 
-[SageMakerFeatureStoreRuntimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMakerFeatureStoreRuntime.SageMakerFeatureStoreRuntimeClient.html)This client is used to interact with the **Amazon SageMaker Feature Store Runtime** service.
+[SageMakerFeatureStoreRuntimeClient](class-aws-sagemakerfeaturestoreruntime-sagemakerfeaturestoreruntimeclient.md)This client is used to interact with the **Amazon SageMaker Feature Store Runtime** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakerfeaturestoreruntime.html#toc-classes)
+  - [Classes](namespace-aws-sagemakerfeaturestoreruntime-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakerfeaturestoreruntime.html#top)
+[Back To Top](namespace-aws-sagemakerfeaturestoreruntime-top.md)

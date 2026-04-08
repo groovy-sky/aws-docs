@@ -2,123 +2,123 @@
 
 The following actions are supported:
 
-- [BatchCheckLayerAvailability](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_BatchCheckLayerAvailability.html)
+- [BatchCheckLayerAvailability](api-batchchecklayeravailability.md)
 
-- [BatchDeleteImage](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_BatchDeleteImage.html)
+- [BatchDeleteImage](api-batchdeleteimage.md)
 
-- [BatchGetImage](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_BatchGetImage.html)
+- [BatchGetImage](api-batchgetimage.md)
 
-- [BatchGetRepositoryScanningConfiguration](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_BatchGetRepositoryScanningConfiguration.html)
+- [BatchGetRepositoryScanningConfiguration](api-batchgetrepositoryscanningconfiguration.md)
 
-- [CompleteLayerUpload](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_CompleteLayerUpload.html)
+- [CompleteLayerUpload](api-completelayerupload.md)
 
-- [CreatePullThroughCacheRule](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_CreatePullThroughCacheRule.html)
+- [CreatePullThroughCacheRule](api-createpullthroughcacherule.md)
 
-- [CreateRepository](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_CreateRepository.html)
+- [CreateRepository](api-createrepository.md)
 
-- [CreateRepositoryCreationTemplate](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_CreateRepositoryCreationTemplate.html)
+- [CreateRepositoryCreationTemplate](api-createrepositorycreationtemplate.md)
 
-- [DeleteLifecyclePolicy](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DeleteLifecyclePolicy.html)
+- [DeleteLifecyclePolicy](api-deletelifecyclepolicy.md)
 
-- [DeletePullThroughCacheRule](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DeletePullThroughCacheRule.html)
+- [DeletePullThroughCacheRule](api-deletepullthroughcacherule.md)
 
-- [DeleteRegistryPolicy](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DeleteRegistryPolicy.html)
+- [DeleteRegistryPolicy](api-deleteregistrypolicy.md)
 
-- [DeleteRepository](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DeleteRepository.html)
+- [DeleteRepository](api-deleterepository.md)
 
-- [DeleteRepositoryCreationTemplate](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DeleteRepositoryCreationTemplate.html)
+- [DeleteRepositoryCreationTemplate](api-deleterepositorycreationtemplate.md)
 
-- [DeleteRepositoryPolicy](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DeleteRepositoryPolicy.html)
+- [DeleteRepositoryPolicy](api-deleterepositorypolicy.md)
 
-- [DeleteSigningConfiguration](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DeleteSigningConfiguration.html)
+- [DeleteSigningConfiguration](api-deletesigningconfiguration.md)
 
-- [DeregisterPullTimeUpdateExclusion](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DeregisterPullTimeUpdateExclusion.html)
+- [DeregisterPullTimeUpdateExclusion](api-deregisterpulltimeupdateexclusion.md)
 
-- [DescribeImageReplicationStatus](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DescribeImageReplicationStatus.html)
+- [DescribeImageReplicationStatus](api-describeimagereplicationstatus.md)
 
-- [DescribeImages](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DescribeImages.html)
+- [DescribeImages](api-describeimages.md)
 
-- [DescribeImageScanFindings](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DescribeImageScanFindings.html)
+- [DescribeImageScanFindings](api-describeimagescanfindings.md)
 
-- [DescribeImageSigningStatus](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DescribeImageSigningStatus.html)
+- [DescribeImageSigningStatus](api-describeimagesigningstatus.md)
 
-- [DescribePullThroughCacheRules](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DescribePullThroughCacheRules.html)
+- [DescribePullThroughCacheRules](api-describepullthroughcacherules.md)
 
-- [DescribeRegistry](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DescribeRegistry.html)
+- [DescribeRegistry](api-describeregistry.md)
 
-- [DescribeRepositories](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DescribeRepositories.html)
+- [DescribeRepositories](api-describerepositories.md)
 
-- [DescribeRepositoryCreationTemplates](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DescribeRepositoryCreationTemplates.html)
+- [DescribeRepositoryCreationTemplates](api-describerepositorycreationtemplates.md)
 
-- [GetAccountSetting](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_GetAccountSetting.html)
+- [GetAccountSetting](api-getaccountsetting.md)
 
-- [GetAuthorizationToken](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_GetAuthorizationToken.html)
+- [GetAuthorizationToken](api-getauthorizationtoken.md)
 
-- [GetDownloadUrlForLayer](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_GetDownloadUrlForLayer.html)
+- [GetDownloadUrlForLayer](api-getdownloadurlforlayer.md)
 
-- [GetLifecyclePolicy](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_GetLifecyclePolicy.html)
+- [GetLifecyclePolicy](api-getlifecyclepolicy.md)
 
-- [GetLifecyclePolicyPreview](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_GetLifecyclePolicyPreview.html)
+- [GetLifecyclePolicyPreview](api-getlifecyclepolicypreview.md)
 
-- [GetRegistryPolicy](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_GetRegistryPolicy.html)
+- [GetRegistryPolicy](api-getregistrypolicy.md)
 
-- [GetRegistryScanningConfiguration](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_GetRegistryScanningConfiguration.html)
+- [GetRegistryScanningConfiguration](api-getregistryscanningconfiguration.md)
 
-- [GetRepositoryPolicy](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_GetRepositoryPolicy.html)
+- [GetRepositoryPolicy](api-getrepositorypolicy.md)
 
-- [GetSigningConfiguration](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_GetSigningConfiguration.html)
+- [GetSigningConfiguration](api-getsigningconfiguration.md)
 
-- [InitiateLayerUpload](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_InitiateLayerUpload.html)
+- [InitiateLayerUpload](api-initiatelayerupload.md)
 
-- [ListImageReferrers](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ListImageReferrers.html)
+- [ListImageReferrers](api-listimagereferrers.md)
 
-- [ListImages](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ListImages.html)
+- [ListImages](api-listimages.md)
 
-- [ListPullTimeUpdateExclusions](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ListPullTimeUpdateExclusions.html)
+- [ListPullTimeUpdateExclusions](api-listpulltimeupdateexclusions.md)
 
-- [ListTagsForResource](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ListTagsForResource.html)
+- [ListTagsForResource](api-listtagsforresource.md)
 
-- [PutAccountSetting](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_PutAccountSetting.html)
+- [PutAccountSetting](api-putaccountsetting.md)
 
-- [PutImage](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_PutImage.html)
+- [PutImage](api-putimage.md)
 
-- [PutImageScanningConfiguration](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_PutImageScanningConfiguration.html)
+- [PutImageScanningConfiguration](api-putimagescanningconfiguration.md)
 
-- [PutImageTagMutability](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_PutImageTagMutability.html)
+- [PutImageTagMutability](api-putimagetagmutability.md)
 
-- [PutLifecyclePolicy](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_PutLifecyclePolicy.html)
+- [PutLifecyclePolicy](api-putlifecyclepolicy.md)
 
-- [PutRegistryPolicy](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_PutRegistryPolicy.html)
+- [PutRegistryPolicy](api-putregistrypolicy.md)
 
-- [PutRegistryScanningConfiguration](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_PutRegistryScanningConfiguration.html)
+- [PutRegistryScanningConfiguration](api-putregistryscanningconfiguration.md)
 
-- [PutReplicationConfiguration](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_PutReplicationConfiguration.html)
+- [PutReplicationConfiguration](api-putreplicationconfiguration.md)
 
-- [PutSigningConfiguration](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_PutSigningConfiguration.html)
+- [PutSigningConfiguration](api-putsigningconfiguration.md)
 
-- [RegisterPullTimeUpdateExclusion](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_RegisterPullTimeUpdateExclusion.html)
+- [RegisterPullTimeUpdateExclusion](api-registerpulltimeupdateexclusion.md)
 
-- [SetRepositoryPolicy](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_SetRepositoryPolicy.html)
+- [SetRepositoryPolicy](api-setrepositorypolicy.md)
 
-- [StartImageScan](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_StartImageScan.html)
+- [StartImageScan](api-startimagescan.md)
 
-- [StartLifecyclePolicyPreview](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_StartLifecyclePolicyPreview.html)
+- [StartLifecyclePolicyPreview](api-startlifecyclepolicypreview.md)
 
-- [TagResource](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_TagResource.html)
+- [TagResource](api-tagresource.md)
 
-- [UntagResource](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_UntagResource.html)
+- [UntagResource](api-untagresource.md)
 
-- [UpdateImageStorageClass](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_UpdateImageStorageClass.html)
+- [UpdateImageStorageClass](api-updateimagestorageclass.md)
 
-- [UpdatePullThroughCacheRule](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_UpdatePullThroughCacheRule.html)
+- [UpdatePullThroughCacheRule](api-updatepullthroughcacherule.md)
 
-- [UpdateRepositoryCreationTemplate](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_UpdateRepositoryCreationTemplate.html)
+- [UpdateRepositoryCreationTemplate](api-updaterepositorycreationtemplate.md)
 
-- [UploadLayerPart](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_UploadLayerPart.html)
+- [UploadLayerPart](api-uploadlayerpart.md)
 
-- [ValidatePullThroughCacheRule](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ValidatePullThroughCacheRule.html)
+- [ValidatePullThroughCacheRule](api-validatepullthroughcacherule.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Welcome
 

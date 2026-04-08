@@ -9,7 +9,7 @@ _reference measurements_ of that AMI. An Attestable AMI is an AMI built from the
 reference measurements are measurements of all of your software and configurations that you have included in your AMI. For
 more information about how you can obtain the reference measurements, see [Build the sample image description](build-sample-ami.md).
 
-![Generating a reference measurements with Attestable AMIs.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/attestable-ami.PNG)
+![Generating a reference measurements with Attestable AMIs.](../../../images/awsec2/latest/userguide/images/attestable-ami-png.md)
 
 The next step is to launch a [Nitro-TPM enabled EC2 instance](enable-nitrotpm-prerequisites.md#nitrotpm-instancetypes)
 with the Attestable AMI. After you have launched the instance, you can use the [NitroTPM tools](attestation-get-doc.md) to generate the _Attestation Document_. Then you can compare the actual measurements
@@ -19,7 +19,7 @@ configurations that you trust.
 By comparing the reference measurements generated during the Attestable AMI creation process with the measurements included
 in an instance's Attestation Document, you can validate that only software and code that you trust are running on the instance.
 
-![Generating a Attestation Document.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/attestation-document.PNG)
+![Generating a Attestation Document.](../../../images/awsec2/latest/userguide/images/attestation-document-png.md)
 
 ## Integration with AWS KMS
 

@@ -14,10 +14,10 @@ parameter, specify `CREATE`. To create a change set for an existing stack, speci
 `UPDATE` for the `ChangeSetType` parameter. To create a change set for
 an import operation, specify `IMPORT` for the `ChangeSetType` parameter.
 After the `CreateChangeSet` call successfully completes, CloudFormation starts creating
-the change set. To check the status of the change set or to review it, use the [DescribeChangeSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeChangeSet.html) action.
+the change set. To check the status of the change set or to review it, use the [DescribeChangeSet](api-describechangeset.md) action.
 
 When you are satisfied with the changes the change set will make, execute the change set
-by using the [ExecuteChangeSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ExecuteChangeSet.html) action. CloudFormation doesn't make changes until
+by using the [ExecuteChangeSet](api-executechangeset.md) action. CloudFormation doesn't make changes until
 you execute the change set.
 
 To create a change set for the entire stack hierarchy, set
@@ -52,21 +52,21 @@ specify `CAPABILITY_NAMED_IAM`.
 If your stack template contains these resources, we suggest that you review all
 permissions associated with them and edit their permissions if necessary.
 
-- [AWS::IAM::AccessKey](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-accesskey.html)
+- [AWS::IAM::AccessKey](../../../../services/cloudformation/latest/templatereference/aws-resource-iam-accesskey.md)
 
-- [AWS::IAM::Group](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-group.html)
+- [AWS::IAM::Group](../../../../services/cloudformation/latest/templatereference/aws-resource-iam-group.md)
 
-- [AWS::IAM::InstanceProfile](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-instanceprofile.html)
+- [AWS::IAM::InstanceProfile](../../../../services/cloudformation/latest/templatereference/aws-resource-iam-instanceprofile.md)
 
-- [AWS::IAM::ManagedPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-managedpolicy.html)
+- [AWS::IAM::ManagedPolicy](../../../../services/cloudformation/latest/templatereference/aws-resource-iam-managedpolicy.md)
 
-- [AWS::IAM::Policy](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-policy.html)
+- [AWS::IAM::Policy](../../../../services/cloudformation/latest/templatereference/aws-resource-iam-policy.md)
 
-- [AWS::IAM::Role](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-role.html)
+- [AWS::IAM::Role](../../../../services/cloudformation/latest/templatereference/aws-resource-iam-role.md)
 
-- [AWS::IAM::User](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-user.html)
+- [AWS::IAM::User](../../../../services/cloudformation/latest/templatereference/aws-resource-iam-user.md)
 
-- [AWS::IAM::UserToGroupAddition](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-usertogroupaddition.html)
+- [AWS::IAM::UserToGroupAddition](../../../../services/cloudformation/latest/templatereference/aws-resource-iam-usertogroupaddition.md)
 
 For more information, see [Acknowledging IAM resources in CloudFormation templates](../../../../services/cloudformation/latest/userguide/control-access-with-iam.md#using-iam-capabilities).
 
@@ -79,8 +79,8 @@ from the processed template, so that they can review the changes resulting from 
 before actually creating the stack. If your stack template contains one or more macros,
 and you choose to create a stack directly from the processed template, without first
 reviewing the resulting changes in a change set, you must acknowledge this capability.
-This includes the [AWS::Include](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-aws-include.html)
-and [AWS::Serverless](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-aws-serverless.html) transforms, which are macros hosted by CloudFormation.
+This includes the [AWS::Include](../../../../services/cloudformation/latest/userguide/transform-aws-include.md)
+and [AWS::Serverless](../../../../services/cloudformation/latest/userguide/transform-aws-serverless.md) transforms, which are macros hosted by CloudFormation.
 
 ###### Note
 
@@ -89,10 +89,10 @@ change sets has no effect.
 
 If you want to create a stack from a stack template that contains macros
 _and_ nested stacks, you must create or update the stack directly
-from the template using the [CreateStack](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStack.html) or [UpdateStack](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_UpdateStack.html) action, and specifying this capability.
+from the template using the [CreateStack](api-createstack.md) or [UpdateStack](api-updatestack.md) action, and specifying this capability.
 
 For more information about macros, see [Perform custom processing\
-on CloudFormation templates with template macros](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-macros.html).
+on CloudFormation templates with template macros](../../../../services/cloudformation/latest/userguide/template-macros.md).
 
 ###### Note
 
@@ -164,7 +164,7 @@ resource states in line with template definitions. Provides a three-way comparis
 actual state, previous deployment state, and desired state.
 
 For more information, see [Using drift-aware\
-change sets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/drift-aware-change-sets.html) in the _AWS CloudFormation User Guide_.
+change sets](../../../../services/cloudformation/latest/userguide/drift-aware-change-sets.md) in the _AWS CloudFormation User Guide_.
 
 Type: String
 
@@ -186,14 +186,14 @@ Required: No
 
 Indicates if the change set auto-imports resources that already exist. For more
 information, see [Import AWS\
-resources into a CloudFormation stack automatically](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/import-resources-automatically.html) in the
+resources into a CloudFormation stack automatically](../../../../services/cloudformation/latest/userguide/import-resources-automatically.md) in the
 _AWS CloudFormation User Guide_.
 
 ###### Note
 
 This parameter can only import resources that have custom names in templates. For more
 information, see [name\
-type](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-name.html) in the _AWS CloudFormation User Guide_. To import resources that do not
+type](../../../../services/cloudformation/latest/templatereference/aws-properties-name.md) in the _AWS CloudFormation User Guide_. To import resources that do not
 accept custom names, such as EC2 instances, use the `ResourcesToImport` parameter
 instead.
 
@@ -225,7 +225,7 @@ Required: No
 **OnStackFailure**
 
 Determines what action will be taken if stack creation fails. If this parameter is
-specified, the `DisableRollback` parameter to the [ExecuteChangeSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ExecuteChangeSet.html) API operation must not be specified. This must be one of these
+specified, the `DisableRollback` parameter to the [ExecuteChangeSet](api-executechangeset.md) API operation must not be specified. This must be one of these
 values:
 
 - `DELETE` \- Deletes the change set if the stack creation fails. This is only
@@ -234,11 +234,11 @@ deletion of the stack fails, the status of the stack is `DELETE_FAILED`.
 
 - `DO_NOTHING` \- if the stack creation fails, do nothing. This is equivalent
 to specifying `true` for the `DisableRollback` parameter to the
-[ExecuteChangeSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ExecuteChangeSet.html) API operation.
+[ExecuteChangeSet](api-executechangeset.md) API operation.
 
 - `ROLLBACK` \- if the stack creation fails, roll back the stack. This is
 equivalent to specifying `false` for the `DisableRollback` parameter
-to the [ExecuteChangeSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ExecuteChangeSet.html) API operation.
+to the [ExecuteChangeSet](api-executechangeset.md) API operation.
 
 For nested stacks, when the `OnStackFailure` parameter is set to
 `DELETE` for the change set for the parent stack, any failure in a child stack
@@ -253,9 +253,9 @@ Required: No
 **Parameters.member.N**
 
 A list of `Parameter` structures that specify input parameters for the change
-set. For more information, see the [Parameter](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_Parameter.html) data type.
+set. For more information, see the [Parameter](api-parameter.md) data type.
 
-Type: Array of [Parameter](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_Parameter.html) objects
+Type: Array of [Parameter](api-parameter.md) objects
 
 Required: No
 
@@ -263,7 +263,7 @@ Required: No
 
 The resources to import into your stack.
 
-Type: Array of [ResourceToImport](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ResourceToImport.html) objects
+Type: Array of [ResourceToImport](api-resourcetoimport.md) objects
 
 Array Members: Maximum number of 200 items.
 
@@ -314,7 +314,7 @@ Required: No
 The rollback triggers for CloudFormation to monitor during stack creation and updating
 operations, and for the specified monitoring period afterwards.
 
-Type: [RollbackConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_RollbackConfiguration.html) object
+Type: [RollbackConfiguration](api-rollbackconfiguration.md) object
 
 Required: No
 
@@ -337,7 +337,7 @@ Required: Yes
 Key-value pairs to associate with this stack. CloudFormation also propagates these tags to
 resources in the stack. You can specify a maximum of 50 tags.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Array Members: Maximum number of 50 items.
 
@@ -484,27 +484,27 @@ https://cloudformation.us-east-1.amazonaws.com/
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/CreateChangeSet)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/cloudformation-2010-05-15/createchangeset.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/CreateChangeSet)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/cloudformation-2010-05-15/createchangeset.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/CreateChangeSet)
+- [AWS SDK for C++](../../../goto/sdkforcpp/cloudformation-2010-05-15/createchangeset.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/CreateChangeSet)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/cloudformation-2010-05-15/createchangeset.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/CreateChangeSet)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudformation-2010-05-15/createchangeset.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/CreateChangeSet)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/cloudformation-2010-05-15/createchangeset.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/CreateChangeSet)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/cloudformation-2010-05-15/createchangeset.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/CreateChangeSet)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/cloudformation-2010-05-15/createchangeset.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/CreateChangeSet)
+- [AWS SDK for Python](../../../../services/goto/boto3/cloudformation-2010-05-15/createchangeset.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/CreateChangeSet)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/createchangeset.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ContinueUpdateRollback
 

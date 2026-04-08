@@ -4,15 +4,15 @@ Menu
 
 ## DirectoryService
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.directoryservice.html\#toc)
+### Table of Contents  [header link](namespace-aws-directoryservice-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.directoryservice.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-directoryservice-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.directoryservice.exception.html)
+[Exception](namespace-aws-directoryservice-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.directoryservice.html\#toc-classes)
+#### Classes  [header link](namespace-aws-directoryservice-toc-classes.md)
 
-[DirectoryServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DirectoryService.DirectoryServiceClient.html)AWS Directory Service client
+[DirectoryServiceClient](class-aws-directoryservice-directoryserviceclient.md)AWS Directory Service client
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.directoryservice.html#toc-classes)
+  - [Classes](namespace-aws-directoryservice-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.directoryservice.html#top)
+[Back To Top](namespace-aws-directoryservice-top.md)

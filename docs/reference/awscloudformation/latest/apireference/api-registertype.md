@@ -10,7 +10,7 @@ available for use in CloudFormation templates in your AWS account, and includes:
 - Making the extension available for use in your account.
 
 For more information about how to develop extensions and ready them for registration, see
-[Creating resource types using the CloudFormation CLI](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-types.html) in the
+[Creating resource types using the CloudFormation CLI](../../../../services/cloudformation-cli/latest/userguide/resource-types.md) in the
 _AWS CloudFormation Command Line Interface (CLI) User Guide_.
 
 You can have a maximum of 50 resource extension versions registered at a time. This
@@ -18,7 +18,7 @@ maximum is per account and per Region. Use [DeregisterType](api-deregistertype.m
 to deregister specific extension versions if necessary.
 
 Once you have initiated a registration request using RegisterType, you
-can use [DescribeTypeRegistration](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeTypeRegistration.html) to monitor the progress of the registration
+can use [DescribeTypeRegistration](api-describetyperegistration.md) to monitor the progress of the registration
 request.
 
 Once you have registered a private extension in your account and Region, use [SetTypeConfiguration](api-settypeconfiguration.md) to specify configuration properties for the extension. For
@@ -53,12 +53,12 @@ the extension.
 For CloudFormation to assume the specified execution role, the role must contain a trust
 relationship with the CloudFormation service principal
 ( `resources.cloudformation.amazonaws.com`). For more information about adding
-trust relationships, see [Modifying a role trust policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/roles-managingrole-editing-console.html#roles-managingrole_edit-trust-policy) in the _AWS Identity and Access Management User_
+trust relationships, see [Modifying a role trust policy](../../../../services/iam/latest/userguide/roles-managingrole-editing-console-roles-managingrole-edit-trust-policy.md) in the _AWS Identity and Access Management User_
 _Guide_.
 
 If your extension calls AWS APIs in any of its handlers, you must create an
 _[IAM\_
-_execution role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)_ that includes the necessary permissions to call those
+_execution role](../../../../services/iam/latest/userguide/id-roles.md)_ that includes the necessary permissions to call those
 AWS APIs, and provision that execution role in your account. When CloudFormation needs to invoke
 the resource type handler, CloudFormation assumes this execution role to create a temporary
 session token, which it then passes to the resource type handler, thereby supplying your
@@ -76,7 +76,7 @@ Required: No
 
 Specifies logging configuration information for an extension.
 
-Type: [LoggingConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_LoggingConfig.html) object
+Type: [LoggingConfig](api-loggingconfig.md) object
 
 Required: No
 
@@ -86,7 +86,7 @@ A URL to the S3 bucket that contains the extension project package that contains
 necessary files for the extension you want to register.
 
 For information about generating a schema handler package for the extension you want to
-register, see [submit](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-cli-submit.html) in
+register, see [submit](../../../../services/cloudformation-cli/latest/userguide/resource-type-cli-submit.md) in
 the _AWS CloudFormation Command Line Interface (CLI) User Guide_.
 
 ###### Note
@@ -94,7 +94,7 @@ the _AWS CloudFormation Command Line Interface (CLI) User Guide_.
 The user registering the extension must be able to access the package in the S3 bucket.
 That's, the user needs to have [GetObject](../../../../services/s3/latest/api/api-getobject.md) permissions for the schema
 handler package. For more information, see [Actions, Resources, and Condition Keys for\
-Amazon S3](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazons3.html) in the _AWS Identity and Access Management User Guide_.
+Amazon S3](../../../../services/iam/latest/userguide/list-amazons3.md) in the _AWS Identity and Access Management User Guide_.
 
 Type: String
 
@@ -157,7 +157,7 @@ The following element is returned by the service.
 
 The identifier for this registration request.
 
-Use this registration token when calling [DescribeTypeRegistration](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeTypeRegistration.html), which
+Use this registration token when calling [DescribeTypeRegistration](api-describetyperegistration.md), which
 returns information about the status and IDs of the extension registration.
 
 Type: String
@@ -221,27 +221,27 @@ https://cloudformation.us-east-1.amazonaws.com/
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/RegisterType)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/cloudformation-2010-05-15/registertype.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/RegisterType)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/cloudformation-2010-05-15/registertype.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/RegisterType)
+- [AWS SDK for C++](../../../goto/sdkforcpp/cloudformation-2010-05-15/registertype.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/RegisterType)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/cloudformation-2010-05-15/registertype.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/RegisterType)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudformation-2010-05-15/registertype.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/RegisterType)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/cloudformation-2010-05-15/registertype.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/RegisterType)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/cloudformation-2010-05-15/registertype.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/RegisterType)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/cloudformation-2010-05-15/registertype.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/RegisterType)
+- [AWS SDK for Python](../../../../services/goto/boto3/cloudformation-2010-05-15/registertype.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/RegisterType)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/registertype.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 RegisterPublisher
 

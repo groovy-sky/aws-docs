@@ -4,15 +4,15 @@ Menu
 
 ## SnowDeviceManagement
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.snowdevicemanagement.html\#toc)
+### Table of Contents  [header link](namespace-aws-snowdevicemanagement-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.snowdevicemanagement.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-snowdevicemanagement-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.snowdevicemanagement.exception.html)
+[Exception](namespace-aws-snowdevicemanagement-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.snowdevicemanagement.html\#toc-classes)
+#### Classes  [header link](namespace-aws-snowdevicemanagement-toc-classes.md)
 
-[SnowDeviceManagementClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SnowDeviceManagement.SnowDeviceManagementClient.html)This client is used to interact with the **AWS Snow Device Management** service.
+[SnowDeviceManagementClient](class-aws-snowdevicemanagement-snowdevicemanagementclient.md)This client is used to interact with the **AWS Snow Device Management** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.snowdevicemanagement.html#toc-classes)
+  - [Classes](namespace-aws-snowdevicemanagement-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.snowdevicemanagement.html#top)
+[Back To Top](namespace-aws-snowdevicemanagement-top.md)

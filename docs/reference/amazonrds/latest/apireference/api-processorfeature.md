@@ -40,7 +40,7 @@ non-null values only if the following conditions are met:
 
 - The current number CPU cores and threads is set to a non-default value.
 
-For more information, see [Configuring the processor for a DB instance class in RDS for Oracle](../../../../services/amazonrds/latest/userguide/concepts-dbinstanceclass.md#USER_ConfigureProcessor), [Optimizing your RDS for SQL Server CPU](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Concepts.General.OptimizeCPU.html), and [DB instance classes](../../../../services/amazonrds/latest/userguide/concepts-dbinstanceclass.md)
+For more information, see [Configuring the processor for a DB instance class in RDS for Oracle](../../../../services/amazonrds/latest/userguide/concepts-dbinstanceclass.md#USER_ConfigureProcessor), [Optimizing your RDS for SQL Server CPU](../../../../services/amazonrds/latest/userguide/sqlserver-concepts-general-optimizecpu.md), and [DB instance classes](../../../../services/amazonrds/latest/userguide/concepts-dbinstanceclass.md)
 in the _Amazon RDS User Guide._
 
 ## Contents
@@ -69,13 +69,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/ProcessorFeature)
+- [AWS SDK for C++](../../../goto/sdkforcpp/rds-2014-10-31/processorfeature.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/ProcessorFeature)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/rds-2014-10-31/processorfeature.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/ProcessorFeature)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/processorfeature.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 PerformanceIssueDetails
 

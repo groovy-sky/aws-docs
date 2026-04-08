@@ -8,15 +8,15 @@ desired capacity.
 This operation must be called from the Region in which the Auto Scaling group was
 created.
 
-You can view the instances in the warm pool using the [DescribeWarmPool](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DescribeWarmPool.html) API call.
-If you are no longer using a warm pool, you can delete it by calling the [DeleteWarmPool](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DeleteWarmPool.html) API.
+You can view the instances in the warm pool using the [DescribeWarmPool](api-describewarmpool.md) API call.
+If you are no longer using a warm pool, you can delete it by calling the [DeleteWarmPool](api-deletewarmpool.md) API.
 
 For more information, see [Warm pools for\
 Amazon EC2 Auto Scaling](../../../../services/autoscaling/ec2/userguide/ec2-auto-scaling-warm-pools.md) in the _Amazon EC2 Auto Scaling User Guide_.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 **AutoScalingGroupName**
 
@@ -36,7 +36,7 @@ Indicates whether instances in the Auto Scaling group can be returned to the war
 scale in. The default is to terminate instances in the Auto Scaling group when the group scales
 in.
 
-Type: [InstanceReusePolicy](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_InstanceReusePolicy.html) object
+Type: [InstanceReusePolicy](api-instancereusepolicy.md) object
 
 Required: No
 
@@ -95,7 +95,7 @@ Required: No
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **InstanceRefreshInProgress**
 
@@ -108,7 +108,7 @@ HTTP Status Code: 400
 
 You have already reached a limit for your Amazon EC2 Auto Scaling resources
 (for example, Auto Scaling groups, launch configurations, or lifecycle hooks). For more
-information, see [DescribeAccountLimits](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DescribeAccountLimits.html).
+information, see [DescribeAccountLimits](api-describeaccountlimits.md).
 
 **message**
 
@@ -146,27 +146,27 @@ https://autoscaling.amazonaws.com/?Action=PutWarmPool
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/autoscaling-2011-01-01/PutWarmPool)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/autoscaling-2011-01-01/putwarmpool.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/autoscaling-2011-01-01/PutWarmPool)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/autoscaling-2011-01-01/putwarmpool.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/autoscaling-2011-01-01/PutWarmPool)
+- [AWS SDK for C++](../../../goto/sdkforcpp/autoscaling-2011-01-01/putwarmpool.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/autoscaling-2011-01-01/PutWarmPool)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/autoscaling-2011-01-01/putwarmpool.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/autoscaling-2011-01-01/PutWarmPool)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/autoscaling-2011-01-01/putwarmpool.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/autoscaling-2011-01-01/PutWarmPool)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/autoscaling-2011-01-01/putwarmpool.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/autoscaling-2011-01-01/PutWarmPool)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/autoscaling-2011-01-01/putwarmpool.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/autoscaling-2011-01-01/PutWarmPool)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/autoscaling-2011-01-01/putwarmpool.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/autoscaling-2011-01-01/PutWarmPool)
+- [AWS SDK for Python](../../../../services/goto/boto3/autoscaling-2011-01-01/putwarmpool.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/autoscaling-2011-01-01/PutWarmPool)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/autoscaling-2011-01-01/putwarmpool.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 PutScheduledUpdateGroupAction
 

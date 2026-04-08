@@ -208,12 +208,12 @@ _Guide_.
 
 For more information about AWS Billing and Cost Management endpoints, see
 [AWS Billing and Cost Management\
-endpoints](https://docs.aws.amazon.com/general/latest/gr/billing.html) in the _Amazon Web Services General Reference_.
+endpoints](../../../../general/general/latest/gr/billing.md) in the _Amazon Web Services General Reference_.
 
 For more information about AWS Billing and Cost Management quotas, see
-[Quotas and restrictions](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) in the _AWS Billing User_
+[Quotas and restrictions](../../../../services/awsaccountbilling/latest/aboutv2/billing-limits.md) in the _AWS Billing User_
 _Guide_ and [Quotas and\
-restrictions](https://docs.aws.amazon.com/cost-management/latest/userguide/management-limits.html) in the _AWS Cost Management User_
+restrictions](../../../../services/cost-management/latest/userguide/management-limits.md) in the _AWS Cost Management User_
 _Guide_.
 
 ## Tax Settings
@@ -230,6 +230,6 @@ Service Endpoint
 
 - https://tax.us-east-1.amazonaws.com
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Actions

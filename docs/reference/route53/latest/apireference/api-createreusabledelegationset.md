@@ -13,7 +13,7 @@ You can't associate a reusable delegation set with a private hosted zone.
 
 For information about using a reusable delegation set to configure white label name
 servers, see [Configuring White\
-Label Name Servers](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/white-label-name-servers.html).
+Label Name Servers](../../../../services/route53/latest/developerguide/white-label-name-servers.md).
 
 The process for migrating existing hosted zones to use a reusable delegation set is
 comparable to the process for configuring white label name servers. You need to perform
@@ -145,11 +145,11 @@ Required: Yes
 
 A complex type that contains name server information.
 
-Type: [DelegationSet](https://docs.aws.amazon.com/Route53/latest/APIReference/API_DelegationSet.html) object
+Type: [DelegationSet](api-delegationset.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/Route53/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **DelegationSetAlreadyCreated**
 
@@ -255,27 +255,27 @@ HTTP/1.1 201 Created
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/route53-2013-04-01/CreateReusableDelegationSet)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53-2013-04-01/createreusabledelegationset.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/route53-2013-04-01/CreateReusableDelegationSet)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53-2013-04-01/createreusabledelegationset.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53-2013-04-01/CreateReusableDelegationSet)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53-2013-04-01/createreusabledelegationset.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/route53-2013-04-01/CreateReusableDelegationSet)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53-2013-04-01/createreusabledelegationset.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53-2013-04-01/CreateReusableDelegationSet)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53-2013-04-01/createreusabledelegationset.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/route53-2013-04-01/CreateReusableDelegationSet)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53-2013-04-01/createreusabledelegationset.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/route53-2013-04-01/CreateReusableDelegationSet)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53-2013-04-01/createreusabledelegationset.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/route53-2013-04-01/CreateReusableDelegationSet)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53-2013-04-01/createreusabledelegationset.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/route53-2013-04-01/CreateReusableDelegationSet)
+- [AWS SDK for Python](../../../../services/goto/boto3/route53-2013-04-01/createreusabledelegationset.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53-2013-04-01/CreateReusableDelegationSet)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53-2013-04-01/createreusabledelegationset.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateQueryLoggingConfig
 

@@ -4,15 +4,15 @@ Menu
 
 ## AppRunner
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.apprunner.html\#toc)
+### Table of Contents  [header link](namespace-aws-apprunner-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.apprunner.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-apprunner-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.apprunner.exception.html)
+[Exception](namespace-aws-apprunner-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.apprunner.html\#toc-classes)
+#### Classes  [header link](namespace-aws-apprunner-toc-classes.md)
 
-[AppRunnerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppRunner.AppRunnerClient.html)This client is used to interact with the **AWS App Runner** service.
+[AppRunnerClient](class-aws-apprunner-apprunnerclient.md)This client is used to interact with the **AWS App Runner** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.apprunner.html#toc-classes)
+  - [Classes](namespace-aws-apprunner-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.apprunner.html#top)
+[Back To Top](namespace-aws-apprunner-top.md)

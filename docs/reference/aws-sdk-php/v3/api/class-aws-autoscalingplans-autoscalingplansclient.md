@@ -17,18 +17,18 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-01-06**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-autoscaling-plans-2018-01-06.html)
+- [**2018-01-06**](api-autoscaling-plans-2018-01-06.md)
 
-  - [CreateScalingPlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-autoscaling-plans-2018-01-06.html#createscalingplan)
-  - [DeleteScalingPlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-autoscaling-plans-2018-01-06.html#deletescalingplan)
-  - [DescribeScalingPlanResources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-autoscaling-plans-2018-01-06.html#describescalingplanresources)
-  - [DescribeScalingPlans](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-autoscaling-plans-2018-01-06.html#describescalingplans)
-  - [GetScalingPlanResourceForecastData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-autoscaling-plans-2018-01-06.html#getscalingplanresourceforecastdata)
-  - [UpdateScalingPlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-autoscaling-plans-2018-01-06.html#updatescalingplan)
+  - [CreateScalingPlan](api-autoscaling-plans-2018-01-06-createscalingplan.md)
+  - [DeleteScalingPlan](api-autoscaling-plans-2018-01-06-deletescalingplan.md)
+  - [DescribeScalingPlanResources](api-autoscaling-plans-2018-01-06-describescalingplanresources.md)
+  - [DescribeScalingPlans](api-autoscaling-plans-2018-01-06-describescalingplans.md)
+  - [GetScalingPlanResourceForecastData](api-autoscaling-plans-2018-01-06-getscalingplanresourceforecastdata.md)
+  - [UpdateScalingPlan](api-autoscaling-plans-2018-01-06-updatescalingplan.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AutoScalingPlans.AutoScalingPlansClient.html\#toc)
+### Table of Contents  [header link](class-aws-autoscalingplans-autoscalingplansclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AutoScalingPlans.AutoScalingPlansClient.html\#toc-methods)
+#### Methods  [header link](class-aws-autoscalingplans-autoscalingplansclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -59,7 +59,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AutoScalingPlans.AutoScalingPlansClient.html\#methods)
+### Methods  [header link](class-aws-autoscalingplans-autoscalingplansclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -526,7 +526,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AutoScalingPlans.AutoScalingPlansClient.html#toc-methods)
+  - [Methods](class-aws-autoscalingplans-autoscalingplansclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -553,4 +553,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AutoScalingPlans.AutoScalingPlansClient.html#top)
+[Back To Top](class-aws-autoscalingplans-autoscalingplansclient-top.md)

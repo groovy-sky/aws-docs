@@ -4,15 +4,15 @@ Menu
 
 ## WafRegional
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wafregional.html\#toc)
+### Table of Contents  [header link](namespace-aws-wafregional-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wafregional.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-wafregional-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wafregional.exception.html)
+[Exception](namespace-aws-wafregional-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wafregional.html\#toc-classes)
+#### Classes  [header link](namespace-aws-wafregional-toc-classes.md)
 
-[WafRegionalClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WafRegional.WafRegionalClient.html)This client is used to interact with the **AWS WAF Regional** service.
+[WafRegionalClient](class-aws-wafregional-wafregionalclient.md)This client is used to interact with the **AWS WAF Regional** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wafregional.html#toc-classes)
+  - [Classes](namespace-aws-wafregional-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wafregional.html#top)
+[Back To Top](namespace-aws-wafregional-top.md)

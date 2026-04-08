@@ -1,8 +1,8 @@
 Menu
 
-- [Psr](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.html)
-- [Http](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.html)
-- [Message](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.message.html)
+- [Psr](namespace-psr.md)
+- [Http](namespace-psr-http.md)
+- [Message](namespace-psr-http-message.md)
 
 ## UriInterface     in    - [Aws](package-aws.md)
 
@@ -23,35 +23,35 @@ Typically the Host header will be also be present in the request message.
 For server-side requests, the scheme will typically be discoverable in the
 server parameters.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#tags)
+##### Tags  [header link](class-psr-http-message-uriinterface-tags.md)
 
 link[(the URI specification)](http://tools.ietf.org/html/rfc3986)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#toc)
+### Table of Contents  [header link](class-psr-http-message-uriinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#toc-methods)
+#### Methods  [header link](class-psr-http-message-uriinterface-toc-methods.md)
 
-[\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method___toString)
-: string Return the string representation as a URI reference.[getAuthority()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_getAuthority)
-: string Retrieve the authority component of the URI.[getFragment()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_getFragment)
-: string Retrieve the fragment component of the URI.[getHost()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_getHost)
-: string Retrieve the host component of the URI.[getPath()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_getPath)
-: string Retrieve the path component of the URI.[getPort()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_getPort)
-: null\|int Retrieve the port component of the URI.[getQuery()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_getQuery)
-: string Retrieve the query string of the URI.[getScheme()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_getScheme)
-: string Retrieve the scheme component of the URI.[getUserInfo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_getUserInfo)
-: string Retrieve the user information component of the URI.[withFragment()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_withFragment)
-: static Return an instance with the specified URI fragment.[withHost()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_withHost)
-: static Return an instance with the specified host.[withPath()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_withPath)
-: static Return an instance with the specified path.[withPort()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_withPort)
-: static Return an instance with the specified port.[withQuery()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_withQuery)
-: static Return an instance with the specified query string.[withScheme()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_withScheme)
-: static Return an instance with the specified scheme.[withUserInfo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_withUserInfo)
+[\_\_toString()](class-psr-http-message-uriinterface-method-tostring.md)
+: string Return the string representation as a URI reference.[getAuthority()](class-psr-http-message-uriinterface-method-getauthority.md)
+: string Retrieve the authority component of the URI.[getFragment()](class-psr-http-message-uriinterface-method-getfragment.md)
+: string Retrieve the fragment component of the URI.[getHost()](class-psr-http-message-uriinterface-method-gethost.md)
+: string Retrieve the host component of the URI.[getPath()](class-psr-http-message-uriinterface-method-getpath.md)
+: string Retrieve the path component of the URI.[getPort()](class-psr-http-message-uriinterface-method-getport.md)
+: null\|int Retrieve the port component of the URI.[getQuery()](class-psr-http-message-uriinterface-method-getquery.md)
+: string Retrieve the query string of the URI.[getScheme()](class-psr-http-message-uriinterface-method-getscheme.md)
+: string Retrieve the scheme component of the URI.[getUserInfo()](class-psr-http-message-uriinterface-method-getuserinfo.md)
+: string Retrieve the user information component of the URI.[withFragment()](class-psr-http-message-uriinterface-method-withfragment.md)
+: static Return an instance with the specified URI fragment.[withHost()](class-psr-http-message-uriinterface-method-withhost.md)
+: static Return an instance with the specified host.[withPath()](class-psr-http-message-uriinterface-method-withpath.md)
+: static Return an instance with the specified path.[withPort()](class-psr-http-message-uriinterface-method-withport.md)
+: static Return an instance with the specified port.[withQuery()](class-psr-http-message-uriinterface-method-withquery.md)
+: static Return an instance with the specified query string.[withScheme()](class-psr-http-message-uriinterface-method-withscheme.md)
+: static Return an instance with the specified scheme.[withUserInfo()](class-psr-http-message-uriinterface-method-withuserinfo.md)
 : static Return an instance with the specified user information.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#methods)
+### Methods  [header link](class-psr-http-message-uriinterface-methods.md)
 
-#### \_\_toString()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method___toString)
+#### \_\_toString()  [header link](class-psr-http-message-uriinterface-method-tostring.md)
 
 Return the string representation as a URI reference.
 
@@ -76,7 +76,7 @@ valid as PHP does not allow to throw an exception in \_\_toString():
 - If a query is present, it MUST be prefixed by "?".
 - If a fragment is present, it MUST be prefixed by "#".
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method___toString\#tags)
+##### Tags  [header link](class-psr-http-message-uriinterface-method-tostring-tags.md)
 
 see[http://tools.ietf.org/html/rfc3986#section-4.1](http://tools.ietf.org/html/rfc3986)
 
@@ -84,7 +84,7 @@ see[http://tools.ietf.org/html/rfc3986#section-4.1](http://tools.ietf.org/html/r
 
 string
 
-#### getAuthority()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_getAuthority)
+#### getAuthority()  [header link](class-psr-http-message-uriinterface-method-getauthority.md)
 
 Retrieve the authority component of the URI.
 
@@ -105,7 +105,7 @@ The authority syntax of the URI is:
 If the port component is not set or is the standard port for the current
 scheme, it SHOULD NOT be included.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_getAuthority\#tags)
+##### Tags  [header link](class-psr-http-message-uriinterface-method-getauthority-tags.md)
 
 see[https://tools.ietf.org/html/rfc3986#section-3.2](https://tools.ietf.org/html/rfc3986)
 
@@ -116,7 +116,7 @@ string
 
 The URI authority, in "\[user-info@\]host\[:port\]" format.
 
-#### getFragment()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_getFragment)
+#### getFragment()  [header link](class-psr-http-message-uriinterface-method-getfragment.md)
 
 Retrieve the fragment component of the URI.
 
@@ -133,7 +133,7 @@ The value returned MUST be percent-encoded, but MUST NOT double-encode
 any characters. To determine what characters to encode, please refer to
 RFC 3986, Sections 2 and 3.5.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_getFragment\#tags)
+##### Tags  [header link](class-psr-http-message-uriinterface-method-getfragment-tags.md)
 
 see[https://tools.ietf.org/html/rfc3986#section-2](https://tools.ietf.org/html/rfc3986)see[https://tools.ietf.org/html/rfc3986#section-3.5](https://tools.ietf.org/html/rfc3986)
 
@@ -144,7 +144,7 @@ string
 
 The URI fragment.
 
-#### getHost()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_getHost)
+#### getHost()  [header link](class-psr-http-message-uriinterface-method-gethost.md)
 
 Retrieve the host component of the URI.
 
@@ -157,7 +157,7 @@ If no host is present, this method MUST return an empty string.
 The value returned MUST be normalized to lowercase, per RFC 3986
 Section 3.2.2.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_getHost\#tags)
+##### Tags  [header link](class-psr-http-message-uriinterface-method-gethost-tags.md)
 
 see[http://tools.ietf.org/html/rfc3986#section-3.2.2](http://tools.ietf.org/html/rfc3986)
 
@@ -168,7 +168,7 @@ string
 
 The URI host.
 
-#### getPath()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_getPath)
+#### getPath()  [header link](class-psr-http-message-uriinterface-method-getpath.md)
 
 Retrieve the path component of the URI.
 
@@ -194,7 +194,7 @@ As an example, if the value should include a slash ("/") not intended as
 delimiter between path segments, that value MUST be passed in encoded
 form (e.g., "%2F") to the instance.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_getPath\#tags)
+##### Tags  [header link](class-psr-http-message-uriinterface-method-getpath-tags.md)
 
 see[https://tools.ietf.org/html/rfc3986#section-2](https://tools.ietf.org/html/rfc3986)see[https://tools.ietf.org/html/rfc3986#section-3.3](https://tools.ietf.org/html/rfc3986)
 
@@ -205,7 +205,7 @@ string
 
 The URI path.
 
-#### getPort()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_getPort)
+#### getPort()  [header link](class-psr-http-message-uriinterface-method-getport.md)
 
 Retrieve the port component of the URI.
 
@@ -230,7 +230,7 @@ null\|int
 
 The URI port.
 
-#### getQuery()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_getQuery)
+#### getQuery()  [header link](class-psr-http-message-uriinterface-method-getquery.md)
 
 Retrieve the query string of the URI.
 
@@ -251,7 +251,7 @@ As an example, if a value in a key/value pair of the query string should
 include an ampersand ("&") not intended as a delimiter between values,
 that value MUST be passed in encoded form (e.g., "%26") to the instance.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_getQuery\#tags)
+##### Tags  [header link](class-psr-http-message-uriinterface-method-getquery-tags.md)
 
 see[https://tools.ietf.org/html/rfc3986#section-2](https://tools.ietf.org/html/rfc3986)see[https://tools.ietf.org/html/rfc3986#section-3.4](https://tools.ietf.org/html/rfc3986)
 
@@ -262,7 +262,7 @@ string
 
 The URI query string.
 
-#### getScheme()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_getScheme)
+#### getScheme()  [header link](class-psr-http-message-uriinterface-method-getscheme.md)
 
 Retrieve the scheme component of the URI.
 
@@ -278,7 +278,7 @@ Section 3.1.
 The trailing ":" character is not part of the scheme and MUST NOT be
 added.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_getScheme\#tags)
+##### Tags  [header link](class-psr-http-message-uriinterface-method-getscheme-tags.md)
 
 see[https://tools.ietf.org/html/rfc3986#section-3.1](https://tools.ietf.org/html/rfc3986)
 
@@ -289,7 +289,7 @@ string
 
 The URI scheme.
 
-#### getUserInfo()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_getUserInfo)
+#### getUserInfo()  [header link](class-psr-http-message-uriinterface-method-getuserinfo.md)
 
 Retrieve the user information component of the URI.
 
@@ -314,7 +314,7 @@ string
 
 The URI user information, in "username\[:password\]" format.
 
-#### withFragment()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_withFragment)
+#### withFragment()  [header link](class-psr-http-message-uriinterface-method-withfragment.md)
 
 Return an instance with the specified URI fragment.
 
@@ -344,7 +344,7 @@ static
 
 A new instance with the specified fragment.
 
-#### withHost()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_withHost)
+#### withHost()  [header link](class-psr-http-message-uriinterface-method-withhost.md)
 
 Return an instance with the specified host.
 
@@ -364,7 +364,7 @@ $host
 
 The hostname to use with the new instance.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_withHost\#tags)
+##### Tags  [header link](class-psr-http-message-uriinterface-method-withhost-tags.md)
 
 throwsInvalidArgumentException
 
@@ -377,7 +377,7 @@ static
 
 A new instance with the specified host.
 
-#### withPath()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_withPath)
+#### withPath()  [header link](class-psr-http-message-uriinterface-method-withpath.md)
 
 Return an instance with the specified path.
 
@@ -407,7 +407,7 @@ $path
 
 The path to use with the new instance.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_withPath\#tags)
+##### Tags  [header link](class-psr-http-message-uriinterface-method-withpath-tags.md)
 
 throwsInvalidArgumentException
 
@@ -420,7 +420,7 @@ static
 
 A new instance with the specified path.
 
-#### withPort()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_withPort)
+#### withPort()  [header link](class-psr-http-message-uriinterface-method-withport.md)
 
 Return an instance with the specified port.
 
@@ -445,7 +445,7 @@ $port
 The port to use with the new instance; a null value
 removes the port information.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_withPort\#tags)
+##### Tags  [header link](class-psr-http-message-uriinterface-method-withport-tags.md)
 
 throwsInvalidArgumentException
 
@@ -458,7 +458,7 @@ static
 
 A new instance with the specified port.
 
-#### withQuery()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_withQuery)
+#### withQuery()  [header link](class-psr-http-message-uriinterface-method-withquery.md)
 
 Return an instance with the specified query string.
 
@@ -481,7 +481,7 @@ $query
 
 The query string to use with the new instance.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_withQuery\#tags)
+##### Tags  [header link](class-psr-http-message-uriinterface-method-withquery-tags.md)
 
 throwsInvalidArgumentException
 
@@ -494,7 +494,7 @@ static
 
 A new instance with the specified query string.
 
-#### withScheme()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_withScheme)
+#### withScheme()  [header link](class-psr-http-message-uriinterface-method-withscheme.md)
 
 Return an instance with the specified scheme.
 
@@ -517,7 +517,7 @@ $scheme
 
 The scheme to use with the new instance.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_withScheme\#tags)
+##### Tags  [header link](class-psr-http-message-uriinterface-method-withscheme-tags.md)
 
 throwsInvalidArgumentException
 
@@ -530,7 +530,7 @@ static
 
 A new instance with the specified scheme.
 
-#### withUserInfo()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html\#method_withUserInfo)
+#### withUserInfo()  [header link](class-psr-http-message-uriinterface-method-withuserinfo.md)
 
 Return an instance with the specified user information.
 
@@ -572,24 +572,24 @@ A new instance with the specified user information.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#toc-methods)
+  - [Constants](class-psr-http-message-uriinterface-toc-constants.md)
+  - [Methods](class-psr-http-message-uriinterface-toc-methods.md)
 - Methods
-  - [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method___toString)
-  - [getAuthority()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_getAuthority)
-  - [getFragment()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_getFragment)
-  - [getHost()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_getHost)
-  - [getPath()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_getPath)
-  - [getPort()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_getPort)
-  - [getQuery()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_getQuery)
-  - [getScheme()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_getScheme)
-  - [getUserInfo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_getUserInfo)
-  - [withFragment()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_withFragment)
-  - [withHost()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_withHost)
-  - [withPath()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_withPath)
-  - [withPort()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_withPort)
-  - [withQuery()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_withQuery)
-  - [withScheme()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_withScheme)
-  - [withUserInfo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#method_withUserInfo)
+  - [\_\_toString()](class-psr-http-message-uriinterface-method-tostring.md)
+  - [getAuthority()](class-psr-http-message-uriinterface-method-getauthority.md)
+  - [getFragment()](class-psr-http-message-uriinterface-method-getfragment.md)
+  - [getHost()](class-psr-http-message-uriinterface-method-gethost.md)
+  - [getPath()](class-psr-http-message-uriinterface-method-getpath.md)
+  - [getPort()](class-psr-http-message-uriinterface-method-getport.md)
+  - [getQuery()](class-psr-http-message-uriinterface-method-getquery.md)
+  - [getScheme()](class-psr-http-message-uriinterface-method-getscheme.md)
+  - [getUserInfo()](class-psr-http-message-uriinterface-method-getuserinfo.md)
+  - [withFragment()](class-psr-http-message-uriinterface-method-withfragment.md)
+  - [withHost()](class-psr-http-message-uriinterface-method-withhost.md)
+  - [withPath()](class-psr-http-message-uriinterface-method-withpath.md)
+  - [withPort()](class-psr-http-message-uriinterface-method-withport.md)
+  - [withQuery()](class-psr-http-message-uriinterface-method-withquery.md)
+  - [withScheme()](class-psr-http-message-uriinterface-method-withscheme.md)
+  - [withUserInfo()](class-psr-http-message-uriinterface-method-withuserinfo.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html#top)
+[Back To Top](class-psr-http-message-uriinterface-top.md)

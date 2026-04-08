@@ -1,29 +1,29 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Promise](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.promise.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Promise](namespace-guzzlehttp-promise.md)
 
 ## Each        in package    - [Aws](package-aws.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Each.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-promise-each-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Each.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-promise-each-toc-methods.md)
 
-[of()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Each.html#method_of)
+[of()](class-guzzlehttp-promise-each-method-of.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Given an iterator that yields promises or values, returns a promise that
 is fulfilled with a null value when the iterator has been consumed or
-the aggregate promise has been fulfilled or rejected.[ofLimit()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Each.html#method_ofLimit)
+the aggregate promise has been fulfilled or rejected.[ofLimit()](class-guzzlehttp-promise-each-method-oflimit.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Like of, but only allows a certain number of outstanding promises at any
-given time.[ofLimitAll()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Each.html#method_ofLimitAll)
+given time.[ofLimitAll()](class-guzzlehttp-promise-each-method-oflimitall.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Like limit, but ensures that no promise in the given $iterable argument
 is rejected. If any promise is rejected, then the aggregate promise is
 rejected with the encountered rejection.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Each.html\#methods)
+### Methods  [header link](class-guzzlehttp-promise-each-methods.md)
 
-#### of()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Each.html\#method_of)
+#### of()  [header link](class-guzzlehttp-promise-each-method-of.md)
 
 Given an iterator that yields promises or values, returns a promise that
 is fulfilled with a null value when the iterator has been consumed or
@@ -58,7 +58,7 @@ $onFulfilled
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### ofLimit()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Each.html\#method_ofLimit)
+#### ofLimit()  [header link](class-guzzlehttp-promise-each-method-oflimit.md)
 
 Like of, but only allows a certain number of outstanding promises at any
 given time.
@@ -85,7 +85,7 @@ $iterable
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### ofLimitAll()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Each.html\#method_ofLimitAll)
+#### ofLimitAll()  [header link](class-guzzlehttp-promise-each-method-oflimitall.md)
 
 Like limit, but ensures that no promise in the given $iterable argument
 is rejected. If any promise is rejected, then the aggregate promise is
@@ -113,10 +113,10 @@ $iterable
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Each.html#toc-methods)
+  - [Methods](class-guzzlehttp-promise-each-toc-methods.md)
 - Methods
-  - [of()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Each.html#method_of)
-  - [ofLimit()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Each.html#method_ofLimit)
-  - [ofLimitAll()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Each.html#method_ofLimitAll)
+  - [of()](class-guzzlehttp-promise-each-method-of.md)
+  - [ofLimit()](class-guzzlehttp-promise-each-method-oflimit.md)
+  - [ofLimitAll()](class-guzzlehttp-promise-each-method-oflimitall.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Each.html#top)
+[Back To Top](class-guzzlehttp-promise-each-top.md)

@@ -6,7 +6,7 @@ specified, the access preview uses the existing setting. If the proposed configu
 for a new bucket and the configuration is not specified, the access preview uses
 `false`. If the proposed configuration is for a new access point or
 multi-region access point and the access point BPA configuration is not specified, the
-access preview uses `true`. For more information, see [PublicAccessBlockConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-publicaccessblockconfiguration.html).
+access preview uses `true`. For more information, see [PublicAccessBlockConfiguration](../../../../services/cloudformation/latest/userguide/aws-properties-s3-bucket-publicaccessblockconfiguration.md).
 
 ## Contents
 
@@ -31,13 +31,13 @@ Required: Yes
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/accessanalyzer-2019-11-01/S3PublicAccessBlockConfiguration)
+- [AWS SDK for C++](../../../goto/sdkforcpp/accessanalyzer-2019-11-01/s3publicaccessblockconfiguration.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/accessanalyzer-2019-11-01/S3PublicAccessBlockConfiguration)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/accessanalyzer-2019-11-01/s3publicaccessblockconfiguration.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/accessanalyzer-2019-11-01/S3PublicAccessBlockConfiguration)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/accessanalyzer-2019-11-01/s3publicaccessblockconfiguration.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 S3ExpressDirectoryBucketConfiguration
 

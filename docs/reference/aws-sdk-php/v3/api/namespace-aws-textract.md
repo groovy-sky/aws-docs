@@ -4,15 +4,15 @@ Menu
 
 ## Textract
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.textract.html\#toc)
+### Table of Contents  [header link](namespace-aws-textract-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.textract.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-textract-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.textract.exception.html)
+[Exception](namespace-aws-textract-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.textract.html\#toc-classes)
+#### Classes  [header link](namespace-aws-textract-toc-classes.md)
 
-[TextractClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Textract.TextractClient.html)This client is used to interact with the **Amazon Textract** service.
+[TextractClient](class-aws-textract-textractclient.md)This client is used to interact with the **Amazon Textract** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.textract.html#toc-classes)
+  - [Classes](namespace-aws-textract-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.textract.html#top)
+[Back To Top](namespace-aws-textract-top.md)

@@ -9,7 +9,7 @@ ACM, see [Importing Certificates](../../../../services/acm/latest/userguide/impo
 
 ###### Note
 
-ACM does not provide [managed renewal](https://docs.aws.amazon.com/acm/latest/userguide/acm-renewal.html) for certificates that
+ACM does not provide [managed renewal](../../../../services/acm/latest/userguide/acm-renewal.md) for certificates that
 you import.
 
 Note the following guidelines when importing third party certificates:
@@ -52,7 +52,7 @@ algorithm of the signing CA. For example, if the signing CA key type is RSA,
 then the certificate key type must also be RSA.
 
 This operation returns the [Amazon\
-Resource Name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) of the imported certificate.
+Resource Name (ARN)](../../../../general/general/latest/gr/aws-arns-and-namespaces.md) of the imported certificate.
 
 ## Request Syntax
 
@@ -105,7 +105,7 @@ Required: Yes
 **[CertificateArn](#API_ImportCertificate_RequestSyntax)**
 
 The [Amazon Resource Name\
-(ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) of an imported certificate to replace. To import a new certificate,
+(ARN)](../../../../general/general/latest/gr/aws-arns-and-namespaces.md) of an imported certificate to replace. To import a new certificate,
 omit this field.
 
 Type: String
@@ -156,7 +156,7 @@ The following data is returned in JSON format by the service.
 **[CertificateArn](#API_ImportCertificate_ResponseSyntax)**
 
 The [Amazon Resource Name\
-(ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) of the imported certificate.
+(ARN)](../../../../general/general/latest/gr/aws-arns-and-namespaces.md) of the imported certificate.
 
 Type: String
 
@@ -258,27 +258,27 @@ Date: Tue, 11 Oct 2016 18:47:46 GMT
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/acm-2015-12-08/ImportCertificate)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/acm-2015-12-08/importcertificate.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/acm-2015-12-08/ImportCertificate)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/acm-2015-12-08/importcertificate.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/acm-2015-12-08/ImportCertificate)
+- [AWS SDK for C++](../../../goto/sdkforcpp/acm-2015-12-08/importcertificate.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/acm-2015-12-08/ImportCertificate)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/acm-2015-12-08/importcertificate.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/acm-2015-12-08/ImportCertificate)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/acm-2015-12-08/importcertificate.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/acm-2015-12-08/ImportCertificate)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/acm-2015-12-08/importcertificate.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/acm-2015-12-08/ImportCertificate)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/acm-2015-12-08/importcertificate.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/acm-2015-12-08/ImportCertificate)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/acm-2015-12-08/importcertificate.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/acm-2015-12-08/ImportCertificate)
+- [AWS SDK for Python](../../../../services/goto/boto3/acm-2015-12-08/importcertificate.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/acm-2015-12-08/ImportCertificate)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/acm-2015-12-08/importcertificate.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GetCertificate
 

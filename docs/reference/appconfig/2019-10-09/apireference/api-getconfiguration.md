@@ -35,23 +35,23 @@ Required: Yes
 
 **[ClientConfigurationVersion](#API_GetConfiguration_RequestSyntax)**
 
-The configuration version returned in the most recent [GetConfiguration](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_GetConfiguration.html)
+The configuration version returned in the most recent [GetConfiguration](api-getconfiguration.md)
 response.
 
 ###### Important
 
 AWS AppConfig uses the value of the `ClientConfigurationVersion`
 parameter to identify the configuration version on your clients. If you don’t send
-`ClientConfigurationVersion` with each call to [GetConfiguration](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_GetConfiguration.html), your clients receive the current configuration. You are
+`ClientConfigurationVersion` with each call to [GetConfiguration](api-getconfiguration.md), your clients receive the current configuration. You are
 charged each time your clients receive a configuration.
 
-To avoid excess charges, we recommend you use the [StartConfigurationSession](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/StartConfigurationSession.html) and [GetLatestConfiguration](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/GetLatestConfiguration.html) APIs, which track the client configuration version on
-your behalf. If you choose to continue using [GetConfiguration](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_GetConfiguration.html), we
+To avoid excess charges, we recommend you use the [StartConfigurationSession](startconfigurationsession.md) and [GetLatestConfiguration](getlatestconfiguration.md) APIs, which track the client configuration version on
+your behalf. If you choose to continue using [GetConfiguration](api-getconfiguration.md), we
 recommend that you include the `ClientConfigurationVersion` value with every
-call to [GetConfiguration](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_GetConfiguration.html). The value to use for
+call to [GetConfiguration](api-getconfiguration.md). The value to use for
 `ClientConfigurationVersion` comes from the
-`ConfigurationVersion` attribute returned by [GetConfiguration](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_GetConfiguration.html) when there is new or updated data, and should be saved
-for subsequent calls to [GetConfiguration](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_GetConfiguration.html).
+`ConfigurationVersion` attribute returned by [GetConfiguration](api-getconfiguration.md) when there is new or updated data, and should be saved
+for subsequent calls to [GetConfiguration](api-getconfiguration.md).
 
 For more information about working with configurations, see [Retrieving feature flags and\
 configuration data in AWS AppConfig](../../../../services/appconfig/latest/userguide/retrieving-feature-flags.md) in the _AWS AppConfig_
@@ -193,27 +193,27 @@ Authorization: AWS4-HMAC-SHA256 Credential=AKIAIOSFODNN7EXAMPLE/20210917/us-east
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appconfig-2019-10-09/GetConfiguration)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/appconfig-2019-10-09/getconfiguration.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appconfig-2019-10-09/GetConfiguration)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appconfig-2019-10-09/getconfiguration.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appconfig-2019-10-09/GetConfiguration)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appconfig-2019-10-09/getconfiguration.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appconfig-2019-10-09/GetConfiguration)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/appconfig-2019-10-09/getconfiguration.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appconfig-2019-10-09/GetConfiguration)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appconfig-2019-10-09/getconfiguration.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appconfig-2019-10-09/GetConfiguration)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appconfig-2019-10-09/getconfiguration.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appconfig-2019-10-09/GetConfiguration)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appconfig-2019-10-09/getconfiguration.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appconfig-2019-10-09/GetConfiguration)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appconfig-2019-10-09/getconfiguration.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/appconfig-2019-10-09/GetConfiguration)
+- [AWS SDK for Python](../../../../services/goto/boto3/appconfig-2019-10-09/getconfiguration.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appconfig-2019-10-09/GetConfiguration)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appconfig-2019-10-09/getconfiguration.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GetApplication
 

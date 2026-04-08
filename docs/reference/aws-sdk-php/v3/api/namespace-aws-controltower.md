@@ -4,15 +4,15 @@ Menu
 
 ## ControlTower
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.controltower.html\#toc)
+### Table of Contents  [header link](namespace-aws-controltower-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.controltower.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-controltower-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.controltower.exception.html)
+[Exception](namespace-aws-controltower-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.controltower.html\#toc-classes)
+#### Classes  [header link](namespace-aws-controltower-toc-classes.md)
 
-[ControlTowerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ControlTower.ControlTowerClient.html)This client is used to interact with the **AWS Control Tower** service.
+[ControlTowerClient](class-aws-controltower-controltowerclient.md)This client is used to interact with the **AWS Control Tower** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.controltower.html#toc-classes)
+  - [Classes](namespace-aws-controltower-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.controltower.html#top)
+[Back To Top](namespace-aws-controltower-top.md)

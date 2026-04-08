@@ -2,13 +2,13 @@
 
 The following actions are supported:
 
-- [BatchGetNamedQuery](https://docs.aws.amazon.com/athena/latest/APIReference/API_BatchGetNamedQuery.html)
+- [BatchGetNamedQuery](api-batchgetnamedquery.md)
 
-- [BatchGetPreparedStatement](https://docs.aws.amazon.com/athena/latest/APIReference/API_BatchGetPreparedStatement.html)
+- [BatchGetPreparedStatement](api-batchgetpreparedstatement.md)
 
-- [BatchGetQueryExecution](https://docs.aws.amazon.com/athena/latest/APIReference/API_BatchGetQueryExecution.html)
+- [BatchGetQueryExecution](api-batchgetqueryexecution.md)
 
-- [CancelCapacityReservation](https://docs.aws.amazon.com/athena/latest/APIReference/API_CancelCapacityReservation.html)
+- [CancelCapacityReservation](api-cancelcapacityreservation.md)
 
 - [CreateCapacityReservation](api-createcapacityreservation.md)
 
@@ -24,17 +24,17 @@ The following actions are supported:
 
 - [CreateWorkGroup](api-createworkgroup.md)
 
-- [DeleteCapacityReservation](https://docs.aws.amazon.com/athena/latest/APIReference/API_DeleteCapacityReservation.html)
+- [DeleteCapacityReservation](api-deletecapacityreservation.md)
 
-- [DeleteDataCatalog](https://docs.aws.amazon.com/athena/latest/APIReference/API_DeleteDataCatalog.html)
+- [DeleteDataCatalog](api-deletedatacatalog.md)
 
-- [DeleteNamedQuery](https://docs.aws.amazon.com/athena/latest/APIReference/API_DeleteNamedQuery.html)
+- [DeleteNamedQuery](api-deletenamedquery.md)
 
 - [DeleteNotebook](api-deletenotebook.md)
 
-- [DeletePreparedStatement](https://docs.aws.amazon.com/athena/latest/APIReference/API_DeletePreparedStatement.html)
+- [DeletePreparedStatement](api-deletepreparedstatement.md)
 
-- [DeleteWorkGroup](https://docs.aws.amazon.com/athena/latest/APIReference/API_DeleteWorkGroup.html)
+- [DeleteWorkGroup](api-deleteworkgroup.md)
 
 - [ExportNotebook](api-exportnotebook.md)
 
@@ -44,37 +44,37 @@ The following actions are supported:
 
 - [GetCalculationExecutionStatus](api-getcalculationexecutionstatus.md)
 
-- [GetCapacityAssignmentConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetCapacityAssignmentConfiguration.html)
+- [GetCapacityAssignmentConfiguration](api-getcapacityassignmentconfiguration.md)
 
-- [GetCapacityReservation](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetCapacityReservation.html)
+- [GetCapacityReservation](api-getcapacityreservation.md)
 
-- [GetDatabase](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetDatabase.html)
+- [GetDatabase](api-getdatabase.md)
 
-- [GetDataCatalog](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetDataCatalog.html)
+- [GetDataCatalog](api-getdatacatalog.md)
 
-- [GetNamedQuery](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetNamedQuery.html)
+- [GetNamedQuery](api-getnamedquery.md)
 
 - [GetNotebookMetadata](api-getnotebookmetadata.md)
 
-- [GetPreparedStatement](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetPreparedStatement.html)
+- [GetPreparedStatement](api-getpreparedstatement.md)
 
-- [GetQueryExecution](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetQueryExecution.html)
+- [GetQueryExecution](api-getqueryexecution.md)
 
-- [GetQueryResults](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetQueryResults.html)
+- [GetQueryResults](api-getqueryresults.md)
 
-- [GetQueryRuntimeStatistics](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetQueryRuntimeStatistics.html)
+- [GetQueryRuntimeStatistics](api-getqueryruntimestatistics.md)
 
-- [GetResourceDashboard](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetResourceDashboard.html)
+- [GetResourceDashboard](api-getresourcedashboard.md)
 
 - [GetSession](api-getsession.md)
 
-- [GetSessionEndpoint](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetSessionEndpoint.html)
+- [GetSessionEndpoint](api-getsessionendpoint.md)
 
 - [GetSessionStatus](api-getsessionstatus.md)
 
-- [GetTableMetadata](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetTableMetadata.html)
+- [GetTableMetadata](api-gettablemetadata.md)
 
-- [GetWorkGroup](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetWorkGroup.html)
+- [GetWorkGroup](api-getworkgroup.md)
 
 - [ImportNotebook](api-importnotebook.md)
 
@@ -82,67 +82,67 @@ The following actions are supported:
 
 - [ListCalculationExecutions](api-listcalculationexecutions.md)
 
-- [ListCapacityReservations](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListCapacityReservations.html)
+- [ListCapacityReservations](api-listcapacityreservations.md)
 
-- [ListDatabases](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListDatabases.html)
+- [ListDatabases](api-listdatabases.md)
 
-- [ListDataCatalogs](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListDataCatalogs.html)
+- [ListDataCatalogs](api-listdatacatalogs.md)
 
 - [ListEngineVersions](api-listengineversions.md)
 
 - [ListExecutors](api-listexecutors.md)
 
-- [ListNamedQueries](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListNamedQueries.html)
+- [ListNamedQueries](api-listnamedqueries.md)
 
 - [ListNotebookMetadata](api-listnotebookmetadata.md)
 
 - [ListNotebookSessions](api-listnotebooksessions.md)
 
-- [ListPreparedStatements](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListPreparedStatements.html)
+- [ListPreparedStatements](api-listpreparedstatements.md)
 
-- [ListQueryExecutions](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListQueryExecutions.html)
+- [ListQueryExecutions](api-listqueryexecutions.md)
 
 - [ListSessions](api-listsessions.md)
 
-- [ListTableMetadata](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListTableMetadata.html)
+- [ListTableMetadata](api-listtablemetadata.md)
 
-- [ListTagsForResource](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListTagsForResource.html)
+- [ListTagsForResource](api-listtagsforresource.md)
 
-- [ListWorkGroups](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListWorkGroups.html)
+- [ListWorkGroups](api-listworkgroups.md)
 
-- [PutCapacityAssignmentConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_PutCapacityAssignmentConfiguration.html)
+- [PutCapacityAssignmentConfiguration](api-putcapacityassignmentconfiguration.md)
 
 - [StartCalculationExecution](api-startcalculationexecution.md)
 
-- [StartQueryExecution](https://docs.aws.amazon.com/athena/latest/APIReference/API_StartQueryExecution.html)
+- [StartQueryExecution](api-startqueryexecution.md)
 
 - [StartSession](api-startsession.md)
 
 - [StopCalculationExecution](api-stopcalculationexecution.md)
 
-- [StopQueryExecution](https://docs.aws.amazon.com/athena/latest/APIReference/API_StopQueryExecution.html)
+- [StopQueryExecution](api-stopqueryexecution.md)
 
-- [TagResource](https://docs.aws.amazon.com/athena/latest/APIReference/API_TagResource.html)
+- [TagResource](api-tagresource.md)
 
 - [TerminateSession](api-terminatesession.md)
 
-- [UntagResource](https://docs.aws.amazon.com/athena/latest/APIReference/API_UntagResource.html)
+- [UntagResource](api-untagresource.md)
 
-- [UpdateCapacityReservation](https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateCapacityReservation.html)
+- [UpdateCapacityReservation](api-updatecapacityreservation.md)
 
-- [UpdateDataCatalog](https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateDataCatalog.html)
+- [UpdateDataCatalog](api-updatedatacatalog.md)
 
-- [UpdateNamedQuery](https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateNamedQuery.html)
+- [UpdateNamedQuery](api-updatenamedquery.md)
 
 - [UpdateNotebook](api-updatenotebook.md)
 
 - [UpdateNotebookMetadata](api-updatenotebookmetadata.md)
 
-- [UpdatePreparedStatement](https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdatePreparedStatement.html)
+- [UpdatePreparedStatement](api-updatepreparedstatement.md)
 
-- [UpdateWorkGroup](https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateWorkGroup.html)
+- [UpdateWorkGroup](api-updateworkgroup.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Welcome
 

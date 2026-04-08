@@ -17,17 +17,17 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2019-11-07**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-a2i-runtime-2019-11-07.html)
+- [**2019-11-07**](api-sagemaker-a2i-runtime-2019-11-07.md)
 
-  - [DeleteHumanLoop](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-a2i-runtime-2019-11-07.html#deletehumanloop)
-  - [DescribeHumanLoop](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-a2i-runtime-2019-11-07.html#describehumanloop)
-  - [ListHumanLoops](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-a2i-runtime-2019-11-07.html#listhumanloops)
-  - [StartHumanLoop](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-a2i-runtime-2019-11-07.html#starthumanloop)
-  - [StopHumanLoop](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-a2i-runtime-2019-11-07.html#stophumanloop)
+  - [DeleteHumanLoop](api-sagemaker-a2i-runtime-2019-11-07-deletehumanloop.md)
+  - [DescribeHumanLoop](api-sagemaker-a2i-runtime-2019-11-07-describehumanloop.md)
+  - [ListHumanLoops](api-sagemaker-a2i-runtime-2019-11-07-listhumanloops.md)
+  - [StartHumanLoop](api-sagemaker-a2i-runtime-2019-11-07-starthumanloop.md)
+  - [StopHumanLoop](api-sagemaker-a2i-runtime-2019-11-07-stophumanloop.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AugmentedAIRuntime.AugmentedAIRuntimeClient.html\#toc)
+### Table of Contents  [header link](class-aws-augmentedairuntime-augmentedairuntimeclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AugmentedAIRuntime.AugmentedAIRuntimeClient.html\#toc-methods)
+#### Methods  [header link](class-aws-augmentedairuntime-augmentedairuntimeclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -58,7 +58,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AugmentedAIRuntime.AugmentedAIRuntimeClient.html\#methods)
+### Methods  [header link](class-aws-augmentedairuntime-augmentedairuntimeclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -525,7 +525,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AugmentedAIRuntime.AugmentedAIRuntimeClient.html#toc-methods)
+  - [Methods](class-aws-augmentedairuntime-augmentedairuntimeclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -552,4 +552,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AugmentedAIRuntime.AugmentedAIRuntimeClient.html#top)
+[Back To Top](class-aws-augmentedairuntime-augmentedairuntimeclient-top.md)

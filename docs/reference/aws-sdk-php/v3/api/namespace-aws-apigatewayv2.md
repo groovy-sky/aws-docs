@@ -4,15 +4,15 @@ Menu
 
 ## ApiGatewayV2
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.apigatewayv2.html\#toc)
+### Table of Contents  [header link](namespace-aws-apigatewayv2-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.apigatewayv2.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-apigatewayv2-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.apigatewayv2.exception.html)
+[Exception](namespace-aws-apigatewayv2-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.apigatewayv2.html\#toc-classes)
+#### Classes  [header link](namespace-aws-apigatewayv2-toc-classes.md)
 
-[ApiGatewayV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApiGatewayV2.ApiGatewayV2Client.html)This client is used to interact with the **AmazonApiGatewayV2** service.
+[ApiGatewayV2Client](class-aws-apigatewayv2-apigatewayv2client.md)This client is used to interact with the **AmazonApiGatewayV2** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.apigatewayv2.html#toc-classes)
+  - [Classes](namespace-aws-apigatewayv2-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.apigatewayv2.html#top)
+[Back To Top](namespace-aws-apigatewayv2-top.md)

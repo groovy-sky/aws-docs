@@ -17,28 +17,28 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-05-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53profiles-2018-05-10.html)
+- [**2018-05-10**](api-route53profiles-2018-05-10.md)
 
-  - [AssociateProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53profiles-2018-05-10.html#associateprofile)
-  - [AssociateResourceToProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53profiles-2018-05-10.html#associateresourcetoprofile)
-  - [CreateProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53profiles-2018-05-10.html#createprofile)
-  - [DeleteProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53profiles-2018-05-10.html#deleteprofile)
-  - [DisassociateProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53profiles-2018-05-10.html#disassociateprofile)
-  - [DisassociateResourceFromProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53profiles-2018-05-10.html#disassociateresourcefromprofile)
-  - [GetProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53profiles-2018-05-10.html#getprofile)
-  - [GetProfileAssociation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53profiles-2018-05-10.html#getprofileassociation)
-  - [GetProfileResourceAssociation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53profiles-2018-05-10.html#getprofileresourceassociation)
-  - [ListProfileAssociations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53profiles-2018-05-10.html#listprofileassociations)
-  - [ListProfileResourceAssociations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53profiles-2018-05-10.html#listprofileresourceassociations)
-  - [ListProfiles](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53profiles-2018-05-10.html#listprofiles)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53profiles-2018-05-10.html#listtagsforresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53profiles-2018-05-10.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53profiles-2018-05-10.html#untagresource)
-  - [UpdateProfileResourceAssociation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53profiles-2018-05-10.html#updateprofileresourceassociation)
+  - [AssociateProfile](api-route53profiles-2018-05-10-associateprofile.md)
+  - [AssociateResourceToProfile](api-route53profiles-2018-05-10-associateresourcetoprofile.md)
+  - [CreateProfile](api-route53profiles-2018-05-10-createprofile.md)
+  - [DeleteProfile](api-route53profiles-2018-05-10-deleteprofile.md)
+  - [DisassociateProfile](api-route53profiles-2018-05-10-disassociateprofile.md)
+  - [DisassociateResourceFromProfile](api-route53profiles-2018-05-10-disassociateresourcefromprofile.md)
+  - [GetProfile](api-route53profiles-2018-05-10-getprofile.md)
+  - [GetProfileAssociation](api-route53profiles-2018-05-10-getprofileassociation.md)
+  - [GetProfileResourceAssociation](api-route53profiles-2018-05-10-getprofileresourceassociation.md)
+  - [ListProfileAssociations](api-route53profiles-2018-05-10-listprofileassociations.md)
+  - [ListProfileResourceAssociations](api-route53profiles-2018-05-10-listprofileresourceassociations.md)
+  - [ListProfiles](api-route53profiles-2018-05-10-listprofiles.md)
+  - [ListTagsForResource](api-route53profiles-2018-05-10-listtagsforresource.md)
+  - [TagResource](api-route53profiles-2018-05-10-tagresource.md)
+  - [UntagResource](api-route53profiles-2018-05-10-untagresource.md)
+  - [UpdateProfileResourceAssociation](api-route53profiles-2018-05-10-updateprofileresourceassociation.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53Profiles.Route53ProfilesClient.html\#toc)
+### Table of Contents  [header link](class-aws-route53profiles-route53profilesclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53Profiles.Route53ProfilesClient.html\#toc-methods)
+#### Methods  [header link](class-aws-route53profiles-route53profilesclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -69,7 +69,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53Profiles.Route53ProfilesClient.html\#methods)
+### Methods  [header link](class-aws-route53profiles-route53profilesclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -536,7 +536,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53Profiles.Route53ProfilesClient.html#toc-methods)
+  - [Methods](class-aws-route53profiles-route53profilesclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -563,4 +563,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53Profiles.Route53ProfilesClient.html#top)
+[Back To Top](class-aws-route53profiles-route53profilesclient-top.md)

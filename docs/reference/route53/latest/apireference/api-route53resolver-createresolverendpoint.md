@@ -41,7 +41,7 @@ to your network.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/Route53/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -82,7 +82,7 @@ DNS queries to (for inbound endpoints). The subnet ID uniquely identifies a VPC.
 
 Even though the minimum is 1, Route 53 requires that you create at least two.
 
-Type: Array of [IpAddressRequest](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_IpAddressRequest.html) objects
+Type: Array of [IpAddressRequest](api-route53resolver-ipaddressrequest.md) objects
 
 Array Members: Minimum number of 2 items. Maximum number of 20 items.
 
@@ -182,7 +182,7 @@ When set to false, metrics are not published. Default is false.
 ###### Note
 
 Standard CloudWatch pricing and charges are applied for using the Route 53 Resolver
-endpoint RNI enhanced metrics. For more information, see [Detailed metrics](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/monitoring-resolver-with-cloudwatch.html).
+endpoint RNI enhanced metrics. For more information, see [Detailed metrics](../../../../services/route53/latest/developerguide/monitoring-resolver-with-cloudwatch.md).
 
 Type: Boolean
 
@@ -210,7 +210,7 @@ Required: Yes
 
 A list of the tag keys and values that you want to associate with the endpoint.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_Tag.html) objects
+Type: Array of [Tag](api-route53resolver-tag.md) objects
 
 Array Members: Maximum number of 200 items.
 
@@ -225,7 +225,7 @@ When set to false, metrics are not published. Default is false. This is not supp
 ###### Note
 
 Standard CloudWatch pricing and charges are applied for using the Route 53 Resolver
-endpoint target name server metrics. For more information, see [Detailed metrics](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/monitoring-resolver-with-cloudwatch.html).
+endpoint target name server metrics. For more information, see [Detailed metrics](../../../../services/route53/latest/developerguide/monitoring-resolver-with-cloudwatch.md).
 
 Type: Boolean
 
@@ -269,7 +269,7 @@ The following data is returned in JSON format by the service.
 
 Information about the `CreateResolverEndpoint` request, including the status of the request.
 
-Type: [ResolverEndpoint](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ResolverEndpoint.html) object
+Type: [ResolverEndpoint](api-route53resolver-resolverendpoint.md) object
 
 ## Errors
 
@@ -432,27 +432,27 @@ Connection: keep-alive
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/route53resolver-2018-04-01/CreateResolverEndpoint)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53resolver-2018-04-01/createresolverendpoint.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/route53resolver-2018-04-01/CreateResolverEndpoint)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53resolver-2018-04-01/createresolverendpoint.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53resolver-2018-04-01/CreateResolverEndpoint)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53resolver-2018-04-01/createresolverendpoint.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/route53resolver-2018-04-01/CreateResolverEndpoint)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53resolver-2018-04-01/createresolverendpoint.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53resolver-2018-04-01/CreateResolverEndpoint)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53resolver-2018-04-01/createresolverendpoint.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/route53resolver-2018-04-01/CreateResolverEndpoint)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53resolver-2018-04-01/createresolverendpoint.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/route53resolver-2018-04-01/CreateResolverEndpoint)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53resolver-2018-04-01/createresolverendpoint.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/route53resolver-2018-04-01/CreateResolverEndpoint)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53resolver-2018-04-01/createresolverendpoint.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/route53resolver-2018-04-01/CreateResolverEndpoint)
+- [AWS SDK for Python](../../../../services/goto/boto3/route53resolver-2018-04-01/createresolverendpoint.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53resolver-2018-04-01/CreateResolverEndpoint)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53resolver-2018-04-01/createresolverendpoint.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateOutpostResolver
 

@@ -4,15 +4,15 @@ Menu
 
 ## Wickr
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wickr.html\#toc)
+### Table of Contents  [header link](namespace-aws-wickr-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wickr.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-wickr-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wickr.exception.html)
+[Exception](namespace-aws-wickr-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wickr.html\#toc-classes)
+#### Classes  [header link](namespace-aws-wickr-toc-classes.md)
 
-[WickrClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Wickr.WickrClient.html)This client is used to interact with the **AWS Wickr Admin API** service.
+[WickrClient](class-aws-wickr-wickrclient.md)This client is used to interact with the **AWS Wickr Admin API** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wickr.html#toc-classes)
+  - [Classes](namespace-aws-wickr-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wickr.html#top)
+[Back To Top](namespace-aws-wickr-top.md)

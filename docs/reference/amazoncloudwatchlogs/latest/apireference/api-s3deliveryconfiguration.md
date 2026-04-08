@@ -18,7 +18,7 @@ Required: No
 
 This string allows re-configuring the S3 object prefix to contain either static or
 variable sections. The valid variables to use in the suffix path will vary by each log source.
-To find the values supported for the suffix path for each log source, use the [DescribeConfigurationTemplates](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DescribeConfigurationTemplates.html) operation and check the
+To find the values supported for the suffix path for each log source, use the [DescribeConfigurationTemplates](api-describeconfigurationtemplates.md) operation and check the
 `allowedSuffixPathFields` field in the response.
 
 Type: String
@@ -31,13 +31,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/S3DeliveryConfiguration)
+- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/s3deliveryconfiguration.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/S3DeliveryConfiguration)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/s3deliveryconfiguration.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/logs-2014-03-28/S3DeliveryConfiguration)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/s3deliveryconfiguration.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 S3Configuration
 

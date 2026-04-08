@@ -4,28 +4,28 @@ Menu
 
 ## DoctrineCacheAdapter        in package    - [Aws](package-aws.md)       implements  [CacheInterface](class-aws-cacheinterface.md), Cache
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html\#toc)
+### Table of Contents  [header link](class-aws-doctrinecacheadapter-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-doctrinecacheadapter-toc-interfaces.md)
 
 [CacheInterface](class-aws-cacheinterface.md)Represents a simple cache interface.Cache
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html\#toc-methods)
+#### Methods  [header link](class-aws-doctrinecacheadapter-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html#method___construct)
-: mixed [contains()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html#method_contains)
-: bool [delete()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html#method_delete)
-: bool [fetch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html#method_fetch)
-: mixed [get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html#method_get)
-: mixed\|null Get a cache item by key.[getStats()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html#method_getStats)
-: array<string\|int, mixed>\|null [remove()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html#method_remove)
-: mixed Remove a cache key.[save()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html#method_save)
-: bool [set()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html#method_set)
+[\_\_construct()](class-aws-doctrinecacheadapter-method-construct.md)
+: mixed [contains()](class-aws-doctrinecacheadapter-method-contains.md)
+: bool [delete()](class-aws-doctrinecacheadapter-method-delete.md)
+: bool [fetch()](class-aws-doctrinecacheadapter-method-fetch.md)
+: mixed [get()](class-aws-doctrinecacheadapter-method-get.md)
+: mixed\|null Get a cache item by key.[getStats()](class-aws-doctrinecacheadapter-method-getstats.md)
+: array<string\|int, mixed>\|null [remove()](class-aws-doctrinecacheadapter-method-remove.md)
+: mixed Remove a cache key.[save()](class-aws-doctrinecacheadapter-method-save.md)
+: bool [set()](class-aws-doctrinecacheadapter-method-set.md)
 : mixed Set a cache key value.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html\#methods)
+### Methods  [header link](class-aws-doctrinecacheadapter-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-doctrinecacheadapter-method-construct.md)
 
 `
     public
@@ -36,7 +36,7 @@ Menu
 $cache
 : Cache
 
-#### contains()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html\#method_contains)
+#### contains()  [header link](class-aws-doctrinecacheadapter-method-contains.md)
 
 `
     public
@@ -51,7 +51,7 @@ $key
 
 bool
 
-#### delete()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html\#method_delete)
+#### delete()  [header link](class-aws-doctrinecacheadapter-method-delete.md)
 
 `
     public
@@ -66,7 +66,7 @@ $key
 
 bool
 
-#### fetch()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html\#method_fetch)
+#### fetch()  [header link](class-aws-doctrinecacheadapter-method-fetch.md)
 
 `
     public
@@ -77,7 +77,7 @@ bool
 $key
 : mixed
 
-#### get()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html\#method_get)
+#### get()  [header link](class-aws-doctrinecacheadapter-method-get.md)
 
 Get a cache item by key.
 
@@ -99,7 +99,7 @@ mixed\|null
 
 Returns the value or null if not found.
 
-#### getStats()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html\#method_getStats)
+#### getStats()  [header link](class-aws-doctrinecacheadapter-method-getstats.md)
 
 `
     public
@@ -109,7 +109,7 @@ Returns the value or null if not found.
 
 array<string\|int, mixed>\|null
 
-#### remove()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html\#method_remove)
+#### remove()  [header link](class-aws-doctrinecacheadapter-method-remove.md)
 
 Remove a cache key.
 
@@ -124,7 +124,7 @@ $key
 
 Key to remove.
 
-#### save()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html\#method_save)
+#### save()  [header link](class-aws-doctrinecacheadapter-method-save.md)
 
 `
     public
@@ -142,7 +142,7 @@ $key
 
 bool
 
-#### set()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html\#method_set)
+#### set()  [header link](class-aws-doctrinecacheadapter-method-set.md)
 
 Set a cache key value.
 
@@ -176,16 +176,16 @@ to 0 to allow an unlimited lifetime.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html#toc-methods)
+  - [Methods](class-aws-doctrinecacheadapter-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html#method___construct)
-  - [contains()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html#method_contains)
-  - [delete()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html#method_delete)
-  - [fetch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html#method_fetch)
-  - [get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html#method_get)
-  - [getStats()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html#method_getStats)
-  - [remove()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html#method_remove)
-  - [save()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html#method_save)
-  - [set()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html#method_set)
+  - [\_\_construct()](class-aws-doctrinecacheadapter-method-construct.md)
+  - [contains()](class-aws-doctrinecacheadapter-method-contains.md)
+  - [delete()](class-aws-doctrinecacheadapter-method-delete.md)
+  - [fetch()](class-aws-doctrinecacheadapter-method-fetch.md)
+  - [get()](class-aws-doctrinecacheadapter-method-get.md)
+  - [getStats()](class-aws-doctrinecacheadapter-method-getstats.md)
+  - [remove()](class-aws-doctrinecacheadapter-method-remove.md)
+  - [save()](class-aws-doctrinecacheadapter-method-save.md)
+  - [set()](class-aws-doctrinecacheadapter-method-set.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DoctrineCacheAdapter.html#top)
+[Back To Top](class-aws-doctrinecacheadapter-top.md)

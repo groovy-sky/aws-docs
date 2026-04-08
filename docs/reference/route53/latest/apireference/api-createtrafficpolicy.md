@@ -43,7 +43,7 @@ Required: No
 
 **[Document](#API_CreateTrafficPolicy_RequestSyntax)**
 
-The definition of this traffic policy in JSON format. For more information, see [Traffic Policy Document Format](https://docs.aws.amazon.com/Route53/latest/APIReference/api-policies-traffic-policy-document-format.html).
+The definition of this traffic policy in JSON format. For more information, see [Traffic Policy Document Format](api-policies-traffic-policy-document-format.md).
 
 Type: String
 
@@ -104,7 +104,7 @@ Required: Yes
 
 A complex type that contains settings for the new traffic policy.
 
-Type: [TrafficPolicy](https://docs.aws.amazon.com/Route53/latest/APIReference/API_TrafficPolicy.html) object
+Type: [TrafficPolicy](api-trafficpolicy.md) object
 
 ## Errors
 
@@ -193,27 +193,27 @@ HTTP/1.1 200 OK
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/route53-2013-04-01/CreateTrafficPolicy)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53-2013-04-01/createtrafficpolicy.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/route53-2013-04-01/CreateTrafficPolicy)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53-2013-04-01/createtrafficpolicy.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53-2013-04-01/CreateTrafficPolicy)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53-2013-04-01/createtrafficpolicy.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/route53-2013-04-01/CreateTrafficPolicy)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53-2013-04-01/createtrafficpolicy.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53-2013-04-01/CreateTrafficPolicy)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53-2013-04-01/createtrafficpolicy.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/route53-2013-04-01/CreateTrafficPolicy)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53-2013-04-01/createtrafficpolicy.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/route53-2013-04-01/CreateTrafficPolicy)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53-2013-04-01/createtrafficpolicy.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/route53-2013-04-01/CreateTrafficPolicy)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53-2013-04-01/createtrafficpolicy.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/route53-2013-04-01/CreateTrafficPolicy)
+- [AWS SDK for Python](../../../../services/goto/boto3/route53-2013-04-01/createtrafficpolicy.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53-2013-04-01/CreateTrafficPolicy)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53-2013-04-01/createtrafficpolicy.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateReusableDelegationSet
 

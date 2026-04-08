@@ -46,7 +46,7 @@ Required: Yes
 The rules are processed in order. If there are multiple rules that match the line
 item, then the first rule to match is used to determine that cost category value.
 
-Type: Array of [CostCategoryRule](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_CostCategoryRule.html) objects
+Type: Array of [CostCategoryRule](api-costcategoryrule.md) objects
 
 Array Members: Minimum number of 1 item. Maximum number of 500 items.
 
@@ -92,7 +92,7 @@ Required: No
 The list of processing statuses for Cost Management products for a specific cost
 category.
 
-Type: Array of [CostCategoryProcessingStatus](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_CostCategoryProcessingStatus.html) objects
+Type: Array of [CostCategoryProcessingStatus](api-costcategoryprocessingstatus.md) objects
 
 Required: No
 
@@ -100,7 +100,7 @@ Required: No
 
 The split charge rules that are used to allocate your charges between your cost category values.
 
-Type: Array of [CostCategorySplitChargeRule](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_CostCategorySplitChargeRule.html) objects
+Type: Array of [CostCategorySplitChargeRule](api-costcategorysplitchargerule.md) objects
 
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 
@@ -110,13 +110,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ce-2017-10-25/CostCategory)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ce-2017-10-25/costcategory.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ce-2017-10-25/CostCategory)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ce-2017-10-25/costcategory.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ce-2017-10-25/CostCategory)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ce-2017-10-25/costcategory.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CostAndUsageComparison
 

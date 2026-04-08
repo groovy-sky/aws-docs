@@ -4,15 +4,15 @@ Menu
 
 ## CodeGuruSecurity
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codegurusecurity.html\#toc)
+### Table of Contents  [header link](namespace-aws-codegurusecurity-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codegurusecurity.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-codegurusecurity-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codegurusecurity.exception.html)
+[Exception](namespace-aws-codegurusecurity-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codegurusecurity.html\#toc-classes)
+#### Classes  [header link](namespace-aws-codegurusecurity-toc-classes.md)
 
-[CodeGuruSecurityClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruSecurity.CodeGuruSecurityClient.html)This client is used to interact with the **Amazon CodeGuru Security** service.
+[CodeGuruSecurityClient](class-aws-codegurusecurity-codegurusecurityclient.md)This client is used to interact with the **Amazon CodeGuru Security** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codegurusecurity.html#toc-classes)
+  - [Classes](namespace-aws-codegurusecurity-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codegurusecurity.html#top)
+[Back To Top](namespace-aws-codegurusecurity-top.md)

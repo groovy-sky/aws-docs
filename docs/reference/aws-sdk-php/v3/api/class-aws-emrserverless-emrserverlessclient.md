@@ -17,28 +17,28 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2021-07-13**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-serverless-2021-07-13.html)
+- [**2021-07-13**](api-emr-serverless-2021-07-13.md)
 
-  - [CancelJobRun](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-serverless-2021-07-13.html#canceljobrun)
-  - [CreateApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-serverless-2021-07-13.html#createapplication)
-  - [DeleteApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-serverless-2021-07-13.html#deleteapplication)
-  - [GetApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-serverless-2021-07-13.html#getapplication)
-  - [GetDashboardForJobRun](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-serverless-2021-07-13.html#getdashboardforjobrun)
-  - [GetJobRun](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-serverless-2021-07-13.html#getjobrun)
-  - [ListApplications](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-serverless-2021-07-13.html#listapplications)
-  - [ListJobRunAttempts](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-serverless-2021-07-13.html#listjobrunattempts)
-  - [ListJobRuns](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-serverless-2021-07-13.html#listjobruns)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-serverless-2021-07-13.html#listtagsforresource)
-  - [StartApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-serverless-2021-07-13.html#startapplication)
-  - [StartJobRun](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-serverless-2021-07-13.html#startjobrun)
-  - [StopApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-serverless-2021-07-13.html#stopapplication)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-serverless-2021-07-13.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-serverless-2021-07-13.html#untagresource)
-  - [UpdateApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-serverless-2021-07-13.html#updateapplication)
+  - [CancelJobRun](api-emr-serverless-2021-07-13-canceljobrun.md)
+  - [CreateApplication](api-emr-serverless-2021-07-13-createapplication.md)
+  - [DeleteApplication](api-emr-serverless-2021-07-13-deleteapplication.md)
+  - [GetApplication](api-emr-serverless-2021-07-13-getapplication.md)
+  - [GetDashboardForJobRun](api-emr-serverless-2021-07-13-getdashboardforjobrun.md)
+  - [GetJobRun](api-emr-serverless-2021-07-13-getjobrun.md)
+  - [ListApplications](api-emr-serverless-2021-07-13-listapplications.md)
+  - [ListJobRunAttempts](api-emr-serverless-2021-07-13-listjobrunattempts.md)
+  - [ListJobRuns](api-emr-serverless-2021-07-13-listjobruns.md)
+  - [ListTagsForResource](api-emr-serverless-2021-07-13-listtagsforresource.md)
+  - [StartApplication](api-emr-serverless-2021-07-13-startapplication.md)
+  - [StartJobRun](api-emr-serverless-2021-07-13-startjobrun.md)
+  - [StopApplication](api-emr-serverless-2021-07-13-stopapplication.md)
+  - [TagResource](api-emr-serverless-2021-07-13-tagresource.md)
+  - [UntagResource](api-emr-serverless-2021-07-13-untagresource.md)
+  - [UpdateApplication](api-emr-serverless-2021-07-13-updateapplication.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EMRServerless.EMRServerlessClient.html\#toc)
+### Table of Contents  [header link](class-aws-emrserverless-emrserverlessclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EMRServerless.EMRServerlessClient.html\#toc-methods)
+#### Methods  [header link](class-aws-emrserverless-emrserverlessclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -69,7 +69,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EMRServerless.EMRServerlessClient.html\#methods)
+### Methods  [header link](class-aws-emrserverless-emrserverlessclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -536,7 +536,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EMRServerless.EMRServerlessClient.html#toc-methods)
+  - [Methods](class-aws-emrserverless-emrserverlessclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -563,4 +563,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EMRServerless.EMRServerlessClient.html#top)
+[Back To Top](class-aws-emrserverless-emrserverlessclient-top.md)

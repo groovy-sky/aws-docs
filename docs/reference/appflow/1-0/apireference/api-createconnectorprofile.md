@@ -337,7 +337,7 @@ Required: No
 
 Defines the connector-specific configuration and credentials.
 
-Type: [ConnectorProfileConfig](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ConnectorProfileConfig.html) object
+Type: [ConnectorProfileConfig](api-connectorprofileconfig.md) object
 
 Required: Yes
 
@@ -408,7 +408,7 @@ Pattern: `arn:aws:appflow:.*:[0-9]+:.*`
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/appflow/1.0/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **ConflictException**
 
@@ -710,27 +710,27 @@ This example shows a sample request and response for the
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appflow-2020-08-23/CreateConnectorProfile)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/appflow-2020-08-23/createconnectorprofile.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appflow-2020-08-23/CreateConnectorProfile)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appflow-2020-08-23/createconnectorprofile.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/CreateConnectorProfile)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/createconnectorprofile.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appflow-2020-08-23/CreateConnectorProfile)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/appflow-2020-08-23/createconnectorprofile.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/CreateConnectorProfile)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/createconnectorprofile.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appflow-2020-08-23/CreateConnectorProfile)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appflow-2020-08-23/createconnectorprofile.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appflow-2020-08-23/CreateConnectorProfile)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appflow-2020-08-23/createconnectorprofile.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appflow-2020-08-23/CreateConnectorProfile)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appflow-2020-08-23/createconnectorprofile.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/appflow-2020-08-23/CreateConnectorProfile)
+- [AWS SDK for Python](../../../../services/goto/boto3/appflow-2020-08-23/createconnectorprofile.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/CreateConnectorProfile)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/createconnectorprofile.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CancelFlowExecutions
 

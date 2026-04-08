@@ -4,15 +4,15 @@ Menu
 
 ## PinpointSMSVoice
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pinpointsmsvoice.html\#toc)
+### Table of Contents  [header link](namespace-aws-pinpointsmsvoice-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pinpointsmsvoice.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-pinpointsmsvoice-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pinpointsmsvoice.exception.html)
+[Exception](namespace-aws-pinpointsmsvoice-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pinpointsmsvoice.html\#toc-classes)
+#### Classes  [header link](namespace-aws-pinpointsmsvoice-toc-classes.md)
 
-[PinpointSMSVoiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PinpointSMSVoice.PinpointSMSVoiceClient.html)This client is used to interact with the **Amazon Pinpoint SMS and Voice Service** service.
+[PinpointSMSVoiceClient](class-aws-pinpointsmsvoice-pinpointsmsvoiceclient.md)This client is used to interact with the **Amazon Pinpoint SMS and Voice Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pinpointsmsvoice.html#toc-classes)
+  - [Classes](namespace-aws-pinpointsmsvoice-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pinpointsmsvoice.html#top)
+[Back To Top](namespace-aws-pinpointsmsvoice-top.md)

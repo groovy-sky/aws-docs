@@ -4,15 +4,15 @@ Menu
 
 ## Neptune
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.neptune.html\#toc)
+### Table of Contents  [header link](namespace-aws-neptune-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.neptune.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-neptune-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.neptune.exception.html)
+[Exception](namespace-aws-neptune-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.neptune.html\#toc-classes)
+#### Classes  [header link](namespace-aws-neptune-toc-classes.md)
 
-[NeptuneClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Neptune.NeptuneClient.html)This client is used to interact with the **Amazon Neptune** service.
+[NeptuneClient](class-aws-neptune-neptuneclient.md)This client is used to interact with the **Amazon Neptune** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.neptune.html#toc-classes)
+  - [Classes](namespace-aws-neptune-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.neptune.html#top)
+[Back To Top](namespace-aws-neptune-top.md)

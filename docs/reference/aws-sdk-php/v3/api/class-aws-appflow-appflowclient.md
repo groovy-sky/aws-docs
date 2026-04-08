@@ -17,37 +17,37 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2020-08-23**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html)
+- [**2020-08-23**](api-appflow-2020-08-23.md)
 
-  - [CancelFlowExecutions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#cancelflowexecutions)
-  - [CreateConnectorProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#createconnectorprofile)
-  - [CreateFlow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#createflow)
-  - [DeleteConnectorProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#deleteconnectorprofile)
-  - [DeleteFlow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#deleteflow)
-  - [DescribeConnector](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#describeconnector)
-  - [DescribeConnectorEntity](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#describeconnectorentity)
-  - [DescribeConnectorProfiles](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#describeconnectorprofiles)
-  - [DescribeConnectors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#describeconnectors)
-  - [DescribeFlow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#describeflow)
-  - [DescribeFlowExecutionRecords](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#describeflowexecutionrecords)
-  - [ListConnectorEntities](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#listconnectorentities)
-  - [ListConnectors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#listconnectors)
-  - [ListFlows](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#listflows)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#listtagsforresource)
-  - [RegisterConnector](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#registerconnector)
-  - [ResetConnectorMetadataCache](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#resetconnectormetadatacache)
-  - [StartFlow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#startflow)
-  - [StopFlow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#stopflow)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#tagresource)
-  - [UnregisterConnector](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#unregisterconnector)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#untagresource)
-  - [UpdateConnectorProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#updateconnectorprofile)
-  - [UpdateConnectorRegistration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#updateconnectorregistration)
-  - [UpdateFlow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appflow-2020-08-23.html#updateflow)
+  - [CancelFlowExecutions](api-appflow-2020-08-23-cancelflowexecutions.md)
+  - [CreateConnectorProfile](api-appflow-2020-08-23-createconnectorprofile.md)
+  - [CreateFlow](api-appflow-2020-08-23-createflow.md)
+  - [DeleteConnectorProfile](api-appflow-2020-08-23-deleteconnectorprofile.md)
+  - [DeleteFlow](api-appflow-2020-08-23-deleteflow.md)
+  - [DescribeConnector](api-appflow-2020-08-23-describeconnector.md)
+  - [DescribeConnectorEntity](api-appflow-2020-08-23-describeconnectorentity.md)
+  - [DescribeConnectorProfiles](api-appflow-2020-08-23-describeconnectorprofiles.md)
+  - [DescribeConnectors](api-appflow-2020-08-23-describeconnectors.md)
+  - [DescribeFlow](api-appflow-2020-08-23-describeflow.md)
+  - [DescribeFlowExecutionRecords](api-appflow-2020-08-23-describeflowexecutionrecords.md)
+  - [ListConnectorEntities](api-appflow-2020-08-23-listconnectorentities.md)
+  - [ListConnectors](api-appflow-2020-08-23-listconnectors.md)
+  - [ListFlows](api-appflow-2020-08-23-listflows.md)
+  - [ListTagsForResource](api-appflow-2020-08-23-listtagsforresource.md)
+  - [RegisterConnector](api-appflow-2020-08-23-registerconnector.md)
+  - [ResetConnectorMetadataCache](api-appflow-2020-08-23-resetconnectormetadatacache.md)
+  - [StartFlow](api-appflow-2020-08-23-startflow.md)
+  - [StopFlow](api-appflow-2020-08-23-stopflow.md)
+  - [TagResource](api-appflow-2020-08-23-tagresource.md)
+  - [UnregisterConnector](api-appflow-2020-08-23-unregisterconnector.md)
+  - [UntagResource](api-appflow-2020-08-23-untagresource.md)
+  - [UpdateConnectorProfile](api-appflow-2020-08-23-updateconnectorprofile.md)
+  - [UpdateConnectorRegistration](api-appflow-2020-08-23-updateconnectorregistration.md)
+  - [UpdateFlow](api-appflow-2020-08-23-updateflow.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Appflow.AppflowClient.html\#toc)
+### Table of Contents  [header link](class-aws-appflow-appflowclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Appflow.AppflowClient.html\#toc-methods)
+#### Methods  [header link](class-aws-appflow-appflowclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -78,7 +78,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Appflow.AppflowClient.html\#methods)
+### Methods  [header link](class-aws-appflow-appflowclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -545,7 +545,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Appflow.AppflowClient.html#toc-methods)
+  - [Methods](class-aws-appflow-appflowclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -572,4 +572,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Appflow.AppflowClient.html#top)
+[Back To Top](class-aws-appflow-appflowclient-top.md)

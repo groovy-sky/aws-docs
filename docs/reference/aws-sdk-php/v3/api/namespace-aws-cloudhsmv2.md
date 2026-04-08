@@ -4,15 +4,15 @@ Menu
 
 ## CloudHSMV2
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudhsmv2.html\#toc)
+### Table of Contents  [header link](namespace-aws-cloudhsmv2-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudhsmv2.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-cloudhsmv2-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudhsmv2.exception.html)
+[Exception](namespace-aws-cloudhsmv2-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudhsmv2.html\#toc-classes)
+#### Classes  [header link](namespace-aws-cloudhsmv2-toc-classes.md)
 
-[CloudHSMV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudHSMV2.CloudHSMV2Client.html)This client is used to interact with the **AWS CloudHSM V2** service.
+[CloudHSMV2Client](class-aws-cloudhsmv2-cloudhsmv2client.md)This client is used to interact with the **AWS CloudHSM V2** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudhsmv2.html#toc-classes)
+  - [Classes](namespace-aws-cloudhsmv2-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudhsmv2.html#top)
+[Back To Top](namespace-aws-cloudhsmv2-top.md)

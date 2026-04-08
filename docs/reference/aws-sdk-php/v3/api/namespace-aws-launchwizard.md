@@ -4,15 +4,15 @@ Menu
 
 ## LaunchWizard
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.launchwizard.html\#toc)
+### Table of Contents  [header link](namespace-aws-launchwizard-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.launchwizard.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-launchwizard-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.launchwizard.exception.html)
+[Exception](namespace-aws-launchwizard-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.launchwizard.html\#toc-classes)
+#### Classes  [header link](namespace-aws-launchwizard-toc-classes.md)
 
-[LaunchWizardClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LaunchWizard.LaunchWizardClient.html)This client is used to interact with the **AWS Launch Wizard** service.
+[LaunchWizardClient](class-aws-launchwizard-launchwizardclient.md)This client is used to interact with the **AWS Launch Wizard** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.launchwizard.html#toc-classes)
+  - [Classes](namespace-aws-launchwizard-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.launchwizard.html#top)
+[Back To Top](namespace-aws-launchwizard-top.md)

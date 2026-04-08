@@ -4,15 +4,15 @@ Menu
 
 ## IVS
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ivs.html\#toc)
+### Table of Contents  [header link](namespace-aws-ivs-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ivs.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-ivs-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ivs.exception.html)
+[Exception](namespace-aws-ivs-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ivs.html\#toc-classes)
+#### Classes  [header link](namespace-aws-ivs-toc-classes.md)
 
-[IVSClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IVS.IVSClient.html)This client is used to interact with the **Amazon Interactive Video Service** service.
+[IVSClient](class-aws-ivs-ivsclient.md)This client is used to interact with the **Amazon Interactive Video Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ivs.html#toc-classes)
+  - [Classes](namespace-aws-ivs-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ivs.html#top)
+[Back To Top](namespace-aws-ivs-top.md)

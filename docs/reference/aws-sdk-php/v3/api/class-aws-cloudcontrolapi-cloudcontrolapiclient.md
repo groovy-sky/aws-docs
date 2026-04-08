@@ -17,20 +17,20 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2021-09-30**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudcontrol-2021-09-30.html)
+- [**2021-09-30**](api-cloudcontrol-2021-09-30.md)
 
-  - [CancelResourceRequest](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudcontrol-2021-09-30.html#cancelresourcerequest)
-  - [CreateResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudcontrol-2021-09-30.html#createresource)
-  - [DeleteResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudcontrol-2021-09-30.html#deleteresource)
-  - [GetResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudcontrol-2021-09-30.html#getresource)
-  - [GetResourceRequestStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudcontrol-2021-09-30.html#getresourcerequeststatus)
-  - [ListResourceRequests](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudcontrol-2021-09-30.html#listresourcerequests)
-  - [ListResources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudcontrol-2021-09-30.html#listresources)
-  - [UpdateResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudcontrol-2021-09-30.html#updateresource)
+  - [CancelResourceRequest](api-cloudcontrol-2021-09-30-cancelresourcerequest.md)
+  - [CreateResource](api-cloudcontrol-2021-09-30-createresource.md)
+  - [DeleteResource](api-cloudcontrol-2021-09-30-deleteresource.md)
+  - [GetResource](api-cloudcontrol-2021-09-30-getresource.md)
+  - [GetResourceRequestStatus](api-cloudcontrol-2021-09-30-getresourcerequeststatus.md)
+  - [ListResourceRequests](api-cloudcontrol-2021-09-30-listresourcerequests.md)
+  - [ListResources](api-cloudcontrol-2021-09-30-listresources.md)
+  - [UpdateResource](api-cloudcontrol-2021-09-30-updateresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudControlApi.CloudControlApiClient.html\#toc)
+### Table of Contents  [header link](class-aws-cloudcontrolapi-cloudcontrolapiclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudControlApi.CloudControlApiClient.html\#toc-methods)
+#### Methods  [header link](class-aws-cloudcontrolapi-cloudcontrolapiclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -61,7 +61,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudControlApi.CloudControlApiClient.html\#methods)
+### Methods  [header link](class-aws-cloudcontrolapi-cloudcontrolapiclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -528,7 +528,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudControlApi.CloudControlApiClient.html#toc-methods)
+  - [Methods](class-aws-cloudcontrolapi-cloudcontrolapiclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -555,4 +555,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudControlApi.CloudControlApiClient.html#top)
+[Back To Top](class-aws-cloudcontrolapi-cloudcontrolapiclient-top.md)

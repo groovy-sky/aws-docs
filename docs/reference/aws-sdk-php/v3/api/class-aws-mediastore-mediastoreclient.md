@@ -17,33 +17,33 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-09-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediastore-2017-09-01.html)
+- [**2017-09-01**](api-mediastore-2017-09-01.md)
 
-  - [CreateContainer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediastore-2017-09-01.html#createcontainer)
-  - [DeleteContainer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediastore-2017-09-01.html#deletecontainer)
-  - [DeleteContainerPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediastore-2017-09-01.html#deletecontainerpolicy)
-  - [DeleteCorsPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediastore-2017-09-01.html#deletecorspolicy)
-  - [DeleteLifecyclePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediastore-2017-09-01.html#deletelifecyclepolicy)
-  - [DeleteMetricPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediastore-2017-09-01.html#deletemetricpolicy)
-  - [DescribeContainer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediastore-2017-09-01.html#describecontainer)
-  - [GetContainerPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediastore-2017-09-01.html#getcontainerpolicy)
-  - [GetCorsPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediastore-2017-09-01.html#getcorspolicy)
-  - [GetLifecyclePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediastore-2017-09-01.html#getlifecyclepolicy)
-  - [GetMetricPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediastore-2017-09-01.html#getmetricpolicy)
-  - [ListContainers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediastore-2017-09-01.html#listcontainers)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediastore-2017-09-01.html#listtagsforresource)
-  - [PutContainerPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediastore-2017-09-01.html#putcontainerpolicy)
-  - [PutCorsPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediastore-2017-09-01.html#putcorspolicy)
-  - [PutLifecyclePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediastore-2017-09-01.html#putlifecyclepolicy)
-  - [PutMetricPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediastore-2017-09-01.html#putmetricpolicy)
-  - [StartAccessLogging](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediastore-2017-09-01.html#startaccesslogging)
-  - [StopAccessLogging](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediastore-2017-09-01.html#stopaccesslogging)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediastore-2017-09-01.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediastore-2017-09-01.html#untagresource)
+  - [CreateContainer](api-mediastore-2017-09-01-createcontainer.md)
+  - [DeleteContainer](api-mediastore-2017-09-01-deletecontainer.md)
+  - [DeleteContainerPolicy](api-mediastore-2017-09-01-deletecontainerpolicy.md)
+  - [DeleteCorsPolicy](api-mediastore-2017-09-01-deletecorspolicy.md)
+  - [DeleteLifecyclePolicy](api-mediastore-2017-09-01-deletelifecyclepolicy.md)
+  - [DeleteMetricPolicy](api-mediastore-2017-09-01-deletemetricpolicy.md)
+  - [DescribeContainer](api-mediastore-2017-09-01-describecontainer.md)
+  - [GetContainerPolicy](api-mediastore-2017-09-01-getcontainerpolicy.md)
+  - [GetCorsPolicy](api-mediastore-2017-09-01-getcorspolicy.md)
+  - [GetLifecyclePolicy](api-mediastore-2017-09-01-getlifecyclepolicy.md)
+  - [GetMetricPolicy](api-mediastore-2017-09-01-getmetricpolicy.md)
+  - [ListContainers](api-mediastore-2017-09-01-listcontainers.md)
+  - [ListTagsForResource](api-mediastore-2017-09-01-listtagsforresource.md)
+  - [PutContainerPolicy](api-mediastore-2017-09-01-putcontainerpolicy.md)
+  - [PutCorsPolicy](api-mediastore-2017-09-01-putcorspolicy.md)
+  - [PutLifecyclePolicy](api-mediastore-2017-09-01-putlifecyclepolicy.md)
+  - [PutMetricPolicy](api-mediastore-2017-09-01-putmetricpolicy.md)
+  - [StartAccessLogging](api-mediastore-2017-09-01-startaccesslogging.md)
+  - [StopAccessLogging](api-mediastore-2017-09-01-stopaccesslogging.md)
+  - [TagResource](api-mediastore-2017-09-01-tagresource.md)
+  - [UntagResource](api-mediastore-2017-09-01-untagresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaStore.MediaStoreClient.html\#toc)
+### Table of Contents  [header link](class-aws-mediastore-mediastoreclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaStore.MediaStoreClient.html\#toc-methods)
+#### Methods  [header link](class-aws-mediastore-mediastoreclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -74,7 +74,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaStore.MediaStoreClient.html\#methods)
+### Methods  [header link](class-aws-mediastore-mediastoreclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -541,7 +541,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaStore.MediaStoreClient.html#toc-methods)
+  - [Methods](class-aws-mediastore-mediastoreclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -568,4 +568,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaStore.MediaStoreClient.html#top)
+[Back To Top](class-aws-mediastore-mediastoreclient-top.md)

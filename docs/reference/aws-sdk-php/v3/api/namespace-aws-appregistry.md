@@ -4,15 +4,15 @@ Menu
 
 ## AppRegistry
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appregistry.html\#toc)
+### Table of Contents  [header link](namespace-aws-appregistry-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appregistry.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-appregistry-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appregistry.exception.html)
+[Exception](namespace-aws-appregistry-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appregistry.html\#toc-classes)
+#### Classes  [header link](namespace-aws-appregistry-toc-classes.md)
 
-[AppRegistryClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppRegistry.AppRegistryClient.html)This client is used to interact with the **AWS Service Catalog App Registry** service.
+[AppRegistryClient](class-aws-appregistry-appregistryclient.md)This client is used to interact with the **AWS Service Catalog App Registry** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appregistry.html#toc-classes)
+  - [Classes](namespace-aws-appregistry-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appregistry.html#top)
+[Back To Top](namespace-aws-appregistry-top.md)

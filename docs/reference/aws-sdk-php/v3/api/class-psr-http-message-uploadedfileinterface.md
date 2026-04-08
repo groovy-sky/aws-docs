@@ -1,8 +1,8 @@
 Menu
 
-- [Psr](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.html)
-- [Http](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.html)
-- [Message](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.message.html)
+- [Psr](namespace-psr.md)
+- [Http](namespace-psr-http.md)
+- [Message](namespace-psr-http-message.md)
 
 ## UploadedFileInterface     in    - [Aws](package-aws.md)
 
@@ -13,21 +13,21 @@ might change state MUST be implemented such that they retain the internal
 state of the current instance and return an instance that contains the
 changed state.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html\#toc)
+### Table of Contents  [header link](class-psr-http-message-uploadedfileinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html\#toc-methods)
+#### Methods  [header link](class-psr-http-message-uploadedfileinterface-toc-methods.md)
 
-[getClientFilename()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html#method_getClientFilename)
-: string\|null Retrieve the filename sent by the client.[getClientMediaType()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html#method_getClientMediaType)
-: string\|null Retrieve the media type sent by the client.[getError()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html#method_getError)
-: int Retrieve the error associated with the uploaded file.[getSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html#method_getSize)
-: int\|null Retrieve the file size.[getStream()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html#method_getStream)
-: [StreamInterface](class-psr-http-message-streaminterface.md)Retrieve a stream representing the uploaded file.[moveTo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html#method_moveTo)
+[getClientFilename()](class-psr-http-message-uploadedfileinterface-method-getclientfilename.md)
+: string\|null Retrieve the filename sent by the client.[getClientMediaType()](class-psr-http-message-uploadedfileinterface-method-getclientmediatype.md)
+: string\|null Retrieve the media type sent by the client.[getError()](class-psr-http-message-uploadedfileinterface-method-geterror.md)
+: int Retrieve the error associated with the uploaded file.[getSize()](class-psr-http-message-uploadedfileinterface-method-getsize.md)
+: int\|null Retrieve the file size.[getStream()](class-psr-http-message-uploadedfileinterface-method-getstream.md)
+: [StreamInterface](class-psr-http-message-streaminterface.md)Retrieve a stream representing the uploaded file.[moveTo()](class-psr-http-message-uploadedfileinterface-method-moveto.md)
 : void Move the uploaded file to a new location.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html\#methods)
+### Methods  [header link](class-psr-http-message-uploadedfileinterface-methods.md)
 
-#### getClientFilename()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html\#method_getClientFilename)
+#### getClientFilename()  [header link](class-psr-http-message-uploadedfileinterface-method-getclientfilename.md)
 
 Retrieve the filename sent by the client.
 
@@ -50,7 +50,7 @@ string\|null
 The filename sent by the client or null if none
 was provided.
 
-#### getClientMediaType()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html\#method_getClientMediaType)
+#### getClientMediaType()  [header link](class-psr-http-message-uploadedfileinterface-method-getclientmediatype.md)
 
 Retrieve the media type sent by the client.
 
@@ -73,7 +73,7 @@ string\|null
 The media type sent by the client or null if none
 was provided.
 
-#### getError()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html\#method_getError)
+#### getError()  [header link](class-psr-http-message-uploadedfileinterface-method-geterror.md)
 
 Retrieve the error associated with the uploaded file.
 
@@ -89,7 +89,7 @@ UPLOAD\_ERR\_OK.
 Implementations SHOULD return the value stored in the "error" key of
 the file in the $\_FILES array.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html\#method_getError\#tags)
+##### Tags  [header link](class-psr-http-message-uploadedfileinterface-method-geterror-tags.md)
 
 see[http://php.net/manual/en/features.file-upload.errors.php](http://php.net/manual/en/features.file-upload.errors.php)
 
@@ -100,7 +100,7 @@ int
 
 One of PHP's UPLOAD\_ERR\_XXX constants.
 
-#### getSize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html\#method_getSize)
+#### getSize()  [header link](class-psr-http-message-uploadedfileinterface-method-getsize.md)
 
 Retrieve the file size.
 
@@ -119,7 +119,7 @@ int\|null
 
 The file size in bytes or null if unknown.
 
-#### getStream()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html\#method_getStream)
+#### getStream()  [header link](class-psr-http-message-uploadedfileinterface-method-getstream.md)
 
 Retrieve a stream representing the uploaded file.
 
@@ -136,7 +136,7 @@ native PHP stream wrapper to work with such functions).
 If the moveTo() method has been called previously, this method MUST raise
 an exception.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html\#method_getStream\#tags)
+##### Tags  [header link](class-psr-http-message-uploadedfileinterface-method-getstream-tags.md)
 
 throwsRuntimeException
 
@@ -150,7 +150,7 @@ created.
 
 Stream representation of the uploaded file.
 
-#### moveTo()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html\#method_moveTo)
+#### moveTo()  [header link](class-psr-http-message-uploadedfileinterface-method-moveto.md)
 
 Move the uploaded file to a new location.
 
@@ -187,7 +187,7 @@ $targetPath
 
 Path to which to move the uploaded file.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html\#method_moveTo\#tags)
+##### Tags  [header link](class-psr-http-message-uploadedfileinterface-method-moveto-tags.md)
 
 see[http://php.net/is\_uploaded\_file](http://php.net/is_uploaded_file)see[http://php.net/move\_uploaded\_file](http://php.net/move_uploaded_file)throwsInvalidArgumentException
 
@@ -205,14 +205,14 @@ the second or subsequent call to the method.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html#toc-methods)
+  - [Constants](class-psr-http-message-uploadedfileinterface-toc-constants.md)
+  - [Methods](class-psr-http-message-uploadedfileinterface-toc-methods.md)
 - Methods
-  - [getClientFilename()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html#method_getClientFilename)
-  - [getClientMediaType()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html#method_getClientMediaType)
-  - [getError()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html#method_getError)
-  - [getSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html#method_getSize)
-  - [getStream()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html#method_getStream)
-  - [moveTo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html#method_moveTo)
+  - [getClientFilename()](class-psr-http-message-uploadedfileinterface-method-getclientfilename.md)
+  - [getClientMediaType()](class-psr-http-message-uploadedfileinterface-method-getclientmediatype.md)
+  - [getError()](class-psr-http-message-uploadedfileinterface-method-geterror.md)
+  - [getSize()](class-psr-http-message-uploadedfileinterface-method-getsize.md)
+  - [getStream()](class-psr-http-message-uploadedfileinterface-method-getstream.md)
+  - [moveTo()](class-psr-http-message-uploadedfileinterface-method-moveto.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UploadedFileInterface.html#top)
+[Back To Top](class-psr-http-message-uploadedfileinterface-top.md)

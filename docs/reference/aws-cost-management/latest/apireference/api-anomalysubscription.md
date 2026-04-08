@@ -22,7 +22,7 @@ from the [`GetAnomalies`](api-getanomalies.md) API.
 The frequency that anomaly notifications are sent. Notifications are sent either over
 email (for DAILY and WEEKLY frequencies) or SNS (for IMMEDIATE frequency). For more
 information, see [Creating an Amazon SNS topic for\
-anomaly notifications](https://docs.aws.amazon.com/cost-management/latest/userguide/ad-SNS.html).
+anomaly notifications](../../../../services/cost-management/latest/userguide/ad-sns.md).
 
 Type: String
 
@@ -46,7 +46,7 @@ Required: Yes
 
 A list of subscribers to notify.
 
-Type: Array of [Subscriber](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Subscriber.html) objects
+Type: Array of [Subscriber](api-subscriber.md) objects
 
 Required: Yes
 
@@ -152,13 +152,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ce-2017-10-25/AnomalySubscription)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ce-2017-10-25/anomalysubscription.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ce-2017-10-25/AnomalySubscription)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ce-2017-10-25/anomalysubscription.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ce-2017-10-25/AnomalySubscription)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ce-2017-10-25/anomalysubscription.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AnomalyScore
 

@@ -1,7 +1,7 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Psr7](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.psr7.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Psr7](namespace-guzzlehttp-psr7.md)
 
 ## StreamWrapper        in package    - [Aws](package-aws.md)
 
@@ -9,36 +9,36 @@ FinalYes
 
 Converts Guzzle streams into PHP stream resources.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-streamwrapper-tags.md)
 
 see[https://www.php.net/streamwrapper](https://www.php.net/streamwrapper)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-psr7-streamwrapper-toc.md)
 
-#### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html\#toc-properties)
+#### Properties  [header link](class-guzzlehttp-psr7-streamwrapper-toc-properties.md)
 
-[$context](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#property_context)
+[$context](class-guzzlehttp-psr7-streamwrapper-property-context.md)
 : resource
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-psr7-streamwrapper-toc-methods.md)
 
-[createStreamContext()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_createStreamContext)
-: resource Creates a stream context that can be used to open a stream as a php stream resource.[getResource()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_getResource)
-: resource Returns a resource representing the stream.[register()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_register)
-: void Registers the stream wrapper if needed[stream\_cast()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_stream_cast)
-: resource\|false [stream\_eof()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_stream_eof)
-: bool [stream\_open()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_stream_open)
-: bool [stream\_read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_stream_read)
-: string [stream\_seek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_stream_seek)
-: bool [stream\_stat()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_stream_stat)
-: array{dev: int, ino: int, mode: int, nlink: int, uid: int, gid: int, rdev: int, size: int, atime: int, mtime: int, ctime: int, blksize: int, blocks: int}\|false [stream\_tell()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_stream_tell)
-: int [stream\_write()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_stream_write)
-: int [url\_stat()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_url_stat)
+[createStreamContext()](class-guzzlehttp-psr7-streamwrapper-method-createstreamcontext.md)
+: resource Creates a stream context that can be used to open a stream as a php stream resource.[getResource()](class-guzzlehttp-psr7-streamwrapper-method-getresource.md)
+: resource Returns a resource representing the stream.[register()](class-guzzlehttp-psr7-streamwrapper-method-register.md)
+: void Registers the stream wrapper if needed[stream\_cast()](class-guzzlehttp-psr7-streamwrapper-method-stream-cast.md)
+: resource\|false [stream\_eof()](class-guzzlehttp-psr7-streamwrapper-method-stream-eof.md)
+: bool [stream\_open()](class-guzzlehttp-psr7-streamwrapper-method-stream-open.md)
+: bool [stream\_read()](class-guzzlehttp-psr7-streamwrapper-method-stream-read.md)
+: string [stream\_seek()](class-guzzlehttp-psr7-streamwrapper-method-stream-seek.md)
+: bool [stream\_stat()](class-guzzlehttp-psr7-streamwrapper-method-stream-stat.md)
+: array{dev: int, ino: int, mode: int, nlink: int, uid: int, gid: int, rdev: int, size: int, atime: int, mtime: int, ctime: int, blksize: int, blocks: int}\|false [stream\_tell()](class-guzzlehttp-psr7-streamwrapper-method-stream-tell.md)
+: int [stream\_write()](class-guzzlehttp-psr7-streamwrapper-method-stream-write.md)
+: int [url\_stat()](class-guzzlehttp-psr7-streamwrapper-method-url-stat.md)
 : array{dev: int, ino: int, mode: int, nlink: int, uid: int, gid: int, rdev: int, size: int, atime: int, mtime: int, ctime: int, blksize: int, blocks: int}
 
-### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html\#properties)
+### Properties  [header link](class-guzzlehttp-psr7-streamwrapper-properties.md)
 
-#### $context  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html\#property_context)
+#### $context  [header link](class-guzzlehttp-psr7-streamwrapper-property-context.md)
 
 `
     public
@@ -46,9 +46,9 @@ see[https://www.php.net/streamwrapper](https://www.php.net/streamwrapper)
     $context
     `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html\#methods)
+### Methods  [header link](class-guzzlehttp-psr7-streamwrapper-methods.md)
 
-#### createStreamContext()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html\#method_createStreamContext)
+#### createStreamContext()  [header link](class-guzzlehttp-psr7-streamwrapper-method-createstreamcontext.md)
 
 Creates a stream context that can be used to open a stream as a php stream resource.
 
@@ -65,7 +65,7 @@ $stream
 
 resource
 
-#### getResource()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html\#method_getResource)
+#### getResource()  [header link](class-guzzlehttp-psr7-streamwrapper-method-getresource.md)
 
 Returns a resource representing the stream.
 
@@ -80,7 +80,7 @@ $stream
 
 The stream to get a resource for
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html\#method_getResource\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-streamwrapper-method-getresource-tags.md)
 
 throwsInvalidArgumentException
 
@@ -90,7 +90,7 @@ if stream is not readable or writable
 
 resource
 
-#### register()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html\#method_register)
+#### register()  [header link](class-guzzlehttp-psr7-streamwrapper-method-register.md)
 
 Registers the stream wrapper if needed
 
@@ -98,7 +98,7 @@ Registers the stream wrapper if needed
     public
             static        register() : void`
 
-#### stream\_cast()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html\#method_stream_cast)
+#### stream\_cast()  [header link](class-guzzlehttp-psr7-streamwrapper-method-stream-cast.md)
 
 `
     public
@@ -113,7 +113,7 @@ $cast\_as
 
 resource\|false
 
-#### stream\_eof()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html\#method_stream_eof)
+#### stream\_eof()  [header link](class-guzzlehttp-psr7-streamwrapper-method-stream-eof.md)
 
 `
     public
@@ -123,7 +123,7 @@ resource\|false
 
 bool
 
-#### stream\_open()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html\#method_stream_open)
+#### stream\_open()  [header link](class-guzzlehttp-psr7-streamwrapper-method-stream-open.md)
 
 `
     public
@@ -142,7 +142,7 @@ $path
 
 bool
 
-#### stream\_read()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html\#method_stream_read)
+#### stream\_read()  [header link](class-guzzlehttp-psr7-streamwrapper-method-stream-read.md)
 
 `
     public
@@ -157,7 +157,7 @@ $count
 
 string
 
-#### stream\_seek()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html\#method_stream_seek)
+#### stream\_seek()  [header link](class-guzzlehttp-psr7-streamwrapper-method-stream-seek.md)
 
 `
     public
@@ -173,7 +173,7 @@ $offset
 
 bool
 
-#### stream\_stat()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html\#method_stream_stat)
+#### stream\_stat()  [header link](class-guzzlehttp-psr7-streamwrapper-method-stream-stat.md)
 
 `
     public
@@ -183,7 +183,7 @@ bool
 
 array{dev: int, ino: int, mode: int, nlink: int, uid: int, gid: int, rdev: int, size: int, atime: int, mtime: int, ctime: int, blksize: int, blocks: int}\|false
 
-#### stream\_tell()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html\#method_stream_tell)
+#### stream\_tell()  [header link](class-guzzlehttp-psr7-streamwrapper-method-stream-tell.md)
 
 `
     public
@@ -193,7 +193,7 @@ array{dev: int, ino: int, mode: int, nlink: int, uid: int, gid: int, rdev: int, 
 
 int
 
-#### stream\_write()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html\#method_stream_write)
+#### stream\_write()  [header link](class-guzzlehttp-psr7-streamwrapper-method-stream-write.md)
 
 `
     public
@@ -208,7 +208,7 @@ $data
 
 int
 
-#### url\_stat()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html\#method_url_stat)
+#### url\_stat()  [header link](class-guzzlehttp-psr7-streamwrapper-method-url-stat.md)
 
 `
     public
@@ -230,22 +230,22 @@ array{dev: int, ino: int, mode: int, nlink: int, uid: int, gid: int, rdev: int, 
 **On this page**
 
 - Table Of Contents
-  - [Properties](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#toc-properties)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#toc-methods)
+  - [Properties](class-guzzlehttp-psr7-streamwrapper-toc-properties.md)
+  - [Methods](class-guzzlehttp-psr7-streamwrapper-toc-methods.md)
 - Properties
-  - [$context](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#property_context)
+  - [$context](class-guzzlehttp-psr7-streamwrapper-property-context.md)
 - Methods
-  - [createStreamContext()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_createStreamContext)
-  - [getResource()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_getResource)
-  - [register()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_register)
-  - [stream\_cast()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_stream_cast)
-  - [stream\_eof()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_stream_eof)
-  - [stream\_open()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_stream_open)
-  - [stream\_read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_stream_read)
-  - [stream\_seek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_stream_seek)
-  - [stream\_stat()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_stream_stat)
-  - [stream\_tell()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_stream_tell)
-  - [stream\_write()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_stream_write)
-  - [url\_stat()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#method_url_stat)
+  - [createStreamContext()](class-guzzlehttp-psr7-streamwrapper-method-createstreamcontext.md)
+  - [getResource()](class-guzzlehttp-psr7-streamwrapper-method-getresource.md)
+  - [register()](class-guzzlehttp-psr7-streamwrapper-method-register.md)
+  - [stream\_cast()](class-guzzlehttp-psr7-streamwrapper-method-stream-cast.md)
+  - [stream\_eof()](class-guzzlehttp-psr7-streamwrapper-method-stream-eof.md)
+  - [stream\_open()](class-guzzlehttp-psr7-streamwrapper-method-stream-open.md)
+  - [stream\_read()](class-guzzlehttp-psr7-streamwrapper-method-stream-read.md)
+  - [stream\_seek()](class-guzzlehttp-psr7-streamwrapper-method-stream-seek.md)
+  - [stream\_stat()](class-guzzlehttp-psr7-streamwrapper-method-stream-stat.md)
+  - [stream\_tell()](class-guzzlehttp-psr7-streamwrapper-method-stream-tell.md)
+  - [stream\_write()](class-guzzlehttp-psr7-streamwrapper-method-stream-write.md)
+  - [url\_stat()](class-guzzlehttp-psr7-streamwrapper-method-url-stat.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamWrapper.html#top)
+[Back To Top](class-guzzlehttp-psr7-streamwrapper-top.md)

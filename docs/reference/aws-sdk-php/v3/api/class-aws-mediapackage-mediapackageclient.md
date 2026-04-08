@@ -17,31 +17,31 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-10-12**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-2017-10-12.html)
+- [**2017-10-12**](api-mediapackage-2017-10-12.md)
 
-  - [ConfigureLogs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-2017-10-12.html#configurelogs)
-  - [CreateChannel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-2017-10-12.html#createchannel)
-  - [CreateHarvestJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-2017-10-12.html#createharvestjob)
-  - [CreateOriginEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-2017-10-12.html#createoriginendpoint)
-  - [DeleteChannel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-2017-10-12.html#deletechannel)
-  - [DeleteOriginEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-2017-10-12.html#deleteoriginendpoint)
-  - [DescribeChannel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-2017-10-12.html#describechannel)
-  - [DescribeHarvestJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-2017-10-12.html#describeharvestjob)
-  - [DescribeOriginEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-2017-10-12.html#describeoriginendpoint)
-  - [ListChannels](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-2017-10-12.html#listchannels)
-  - [ListHarvestJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-2017-10-12.html#listharvestjobs)
-  - [ListOriginEndpoints](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-2017-10-12.html#listoriginendpoints)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-2017-10-12.html#listtagsforresource)
-  - [RotateChannelCredentials](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-2017-10-12.html#rotatechannelcredentials)
-  - [RotateIngestEndpointCredentials](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-2017-10-12.html#rotateingestendpointcredentials)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-2017-10-12.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-2017-10-12.html#untagresource)
-  - [UpdateChannel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-2017-10-12.html#updatechannel)
-  - [UpdateOriginEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackage-2017-10-12.html#updateoriginendpoint)
+  - [ConfigureLogs](api-mediapackage-2017-10-12-configurelogs.md)
+  - [CreateChannel](api-mediapackage-2017-10-12-createchannel.md)
+  - [CreateHarvestJob](api-mediapackage-2017-10-12-createharvestjob.md)
+  - [CreateOriginEndpoint](api-mediapackage-2017-10-12-createoriginendpoint.md)
+  - [DeleteChannel](api-mediapackage-2017-10-12-deletechannel.md)
+  - [DeleteOriginEndpoint](api-mediapackage-2017-10-12-deleteoriginendpoint.md)
+  - [DescribeChannel](api-mediapackage-2017-10-12-describechannel.md)
+  - [DescribeHarvestJob](api-mediapackage-2017-10-12-describeharvestjob.md)
+  - [DescribeOriginEndpoint](api-mediapackage-2017-10-12-describeoriginendpoint.md)
+  - [ListChannels](api-mediapackage-2017-10-12-listchannels.md)
+  - [ListHarvestJobs](api-mediapackage-2017-10-12-listharvestjobs.md)
+  - [ListOriginEndpoints](api-mediapackage-2017-10-12-listoriginendpoints.md)
+  - [ListTagsForResource](api-mediapackage-2017-10-12-listtagsforresource.md)
+  - [RotateChannelCredentials](api-mediapackage-2017-10-12-rotatechannelcredentials.md)
+  - [RotateIngestEndpointCredentials](api-mediapackage-2017-10-12-rotateingestendpointcredentials.md)
+  - [TagResource](api-mediapackage-2017-10-12-tagresource.md)
+  - [UntagResource](api-mediapackage-2017-10-12-untagresource.md)
+  - [UpdateChannel](api-mediapackage-2017-10-12-updatechannel.md)
+  - [UpdateOriginEndpoint](api-mediapackage-2017-10-12-updateoriginendpoint.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackage.MediaPackageClient.html\#toc)
+### Table of Contents  [header link](class-aws-mediapackage-mediapackageclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackage.MediaPackageClient.html\#toc-methods)
+#### Methods  [header link](class-aws-mediapackage-mediapackageclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -72,7 +72,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackage.MediaPackageClient.html\#methods)
+### Methods  [header link](class-aws-mediapackage-mediapackageclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -539,7 +539,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackage.MediaPackageClient.html#toc-methods)
+  - [Methods](class-aws-mediapackage-mediapackageclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -566,4 +566,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackage.MediaPackageClient.html#top)
+[Back To Top](class-aws-mediapackage-mediapackageclient-top.md)

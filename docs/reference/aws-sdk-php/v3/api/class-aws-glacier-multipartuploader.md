@@ -3,27 +3,27 @@ Menu
 - [Aws](namespace-aws.md)
 - [Glacier](namespace-aws-glacier.md)
 
-## MultipartUploader     extends [AbstractUploader](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.AbstractUploader.html)   in package    - [Aws](package-aws.md)
+## MultipartUploader     extends [AbstractUploader](class-aws-multipart-abstractuploader.md)   in package    - [Aws](package-aws.md)
 
 Encapsulates the execution of a multipart upload to Glacier.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.MultipartUploader.html\#toc)
+### Table of Contents  [header link](class-aws-glacier-multipartuploader-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.MultipartUploader.html\#toc-constants)
+#### Constants  [header link](class-aws-glacier-multipartuploader-toc-constants.md)
 
-[PART\_MIN\_SIZE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.MultipartUploader.html#constant_PART_MIN_SIZE)
+[PART\_MIN\_SIZE](class-aws-glacier-multipartuploader-constant-part-min-size.md)
 = 1048576
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.MultipartUploader.html\#toc-methods)
+#### Methods  [header link](class-aws-glacier-multipartuploader-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.MultipartUploader.html#method___construct)
-: mixed Creates a multipart upload for a Glacier archive.[getStateFromService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.MultipartUploader.html#method_getStateFromService)
-: [UploadState](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html)Creates an UploadState object for a multipart upload by querying the
+[\_\_construct()](class-aws-glacier-multipartuploader-method-construct.md)
+: mixed Creates a multipart upload for a Glacier archive.[getStateFromService()](class-aws-glacier-multipartuploader-method-getstatefromservice.md)
+: [UploadState](class-aws-multipart-uploadstate.md)Creates an UploadState object for a multipart upload by querying the
 service for the specified upload's information.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.MultipartUploader.html\#constants)
+### Constants  [header link](class-aws-glacier-multipartuploader-constants.md)
 
-#### PART\_MIN\_SIZE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.MultipartUploader.html\#constant_PART_MIN_SIZE)
+#### PART\_MIN\_SIZE  [header link](class-aws-glacier-multipartuploader-constant-part-min-size.md)
 
 `
     public
@@ -32,9 +32,9 @@ service for the specified upload's information.
     = 1048576
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.MultipartUploader.html\#methods)
+### Methods  [header link](class-aws-glacier-multipartuploader-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.MultipartUploader.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-glacier-multipartuploader-method-construct.md)
 
 Creates a multipart upload for a Glacier archive.
 
@@ -89,7 +89,7 @@ $config
 
 Configuration used to perform the upload.
 
-#### getStateFromService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.MultipartUploader.html\#method_getStateFromService)
+#### getStateFromService()  [header link](class-aws-glacier-multipartuploader-method-getstatefromservice.md)
 
 Creates an UploadState object for a multipart upload by querying the
 service for the specified upload's information.
@@ -123,7 +123,7 @@ Account ID for the multipart upload.
 
 ##### Return values
 
-[UploadState](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html)
+[UploadState](class-aws-multipart-uploadstate.md)
 <\-\- modeled\_exceptions -->
 
 ×
@@ -131,12 +131,12 @@ Account ID for the multipart upload.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.MultipartUploader.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.MultipartUploader.html#toc-methods)
+  - [Constants](class-aws-glacier-multipartuploader-toc-constants.md)
+  - [Methods](class-aws-glacier-multipartuploader-toc-methods.md)
 - Constants
-  - [PART\_MIN\_SIZE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.MultipartUploader.html#constant_PART_MIN_SIZE)
+  - [PART\_MIN\_SIZE](class-aws-glacier-multipartuploader-constant-part-min-size.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.MultipartUploader.html#method___construct)
-  - [getStateFromService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.MultipartUploader.html#method_getStateFromService)
+  - [\_\_construct()](class-aws-glacier-multipartuploader-method-construct.md)
+  - [getStateFromService()](class-aws-glacier-multipartuploader-method-getstatefromservice.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.MultipartUploader.html#top)
+[Back To Top](class-aws-glacier-multipartuploader-top.md)

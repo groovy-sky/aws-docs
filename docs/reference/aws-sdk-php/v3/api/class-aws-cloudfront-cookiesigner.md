@@ -5,17 +5,17 @@ Menu
 
 ## CookieSigner        in package    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.CookieSigner.html\#toc)
+### Table of Contents  [header link](class-aws-cloudfront-cookiesigner-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.CookieSigner.html\#toc-methods)
+#### Methods  [header link](class-aws-cloudfront-cookiesigner-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.CookieSigner.html#method___construct)
-: mixed [getSignedCookie()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.CookieSigner.html#method_getSignedCookie)
+[\_\_construct()](class-aws-cloudfront-cookiesigner-method-construct.md)
+: mixed [getSignedCookie()](class-aws-cloudfront-cookiesigner-method-getsignedcookie.md)
 : array<string\|int, mixed> Create a signed Amazon CloudFront Cookie.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.CookieSigner.html\#methods)
+### Methods  [header link](class-aws-cloudfront-cookiesigner-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.CookieSigner.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-cloudfront-cookiesigner-method-construct.md)
 
 `
     public
@@ -33,7 +33,7 @@ $privateKey
 
 string Path to the private key used for signing
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.CookieSigner.html\#method___construct\#tags)
+##### Tags  [header link](class-aws-cloudfront-cookiesigner-method-construct-tags.md)
 
 throwsRuntimeException
 
@@ -43,7 +43,7 @@ throwsInvalidArgumentException
 
 if the private key cannot be found.
 
-#### getSignedCookie()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.CookieSigner.html\#method_getSignedCookie)
+#### getSignedCookie()  [header link](class-aws-cloudfront-cookiesigner-method-getsignedcookie.md)
 
 Create a signed Amazon CloudFront Cookie.
 
@@ -77,7 +77,7 @@ JSON policy. Use this option when
 creating a signed cookie for a custom
 policy.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.CookieSigner.html\#method_getSignedCookie\#tags)
+##### Tags  [header link](class-aws-cloudfront-cookiesigner-method-getsignedcookie-tags.md)
 
 throwsInvalidArgumentException
 
@@ -99,9 +99,9 @@ The authenticated cookie parameters
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.CookieSigner.html#toc-methods)
+  - [Methods](class-aws-cloudfront-cookiesigner-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.CookieSigner.html#method___construct)
-  - [getSignedCookie()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.CookieSigner.html#method_getSignedCookie)
+  - [\_\_construct()](class-aws-cloudfront-cookiesigner-method-construct.md)
+  - [getSignedCookie()](class-aws-cloudfront-cookiesigner-method-getsignedcookie.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.CookieSigner.html#top)
+[Back To Top](class-aws-cloudfront-cookiesigner-top.md)

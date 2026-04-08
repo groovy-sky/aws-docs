@@ -2,7 +2,7 @@ Menu
 
 - [Aws](namespace-aws.md)
 
-## Waiter        in package    - [Aws](package-aws.md)       implements  [PromisorInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromisorInterface.html)
+## Waiter        in package    - [Aws](package-aws.md)       implements  [PromisorInterface](class-guzzlehttp-promise-promisorinterface.md)
 
 "Waiters" are associated with an AWS resource (e.g., EC2 instance), and poll
 that resource and until it is in a particular state.
@@ -16,21 +16,21 @@ on whether you call wait() on the promise.
 The configuration for the waiter must include information about the operation
 and the conditions for wait completion.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Waiter.html\#toc)
+### Table of Contents  [header link](class-aws-waiter-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Waiter.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-waiter-toc-interfaces.md)
 
-[PromisorInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromisorInterface.html)Interface used with classes that return a promise.
+[PromisorInterface](class-guzzlehttp-promise-promisorinterface.md)Interface used with classes that return a promise.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Waiter.html\#toc-methods)
+#### Methods  [header link](class-aws-waiter-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Waiter.html#method___construct)
-: mixed The array of configuration options include:[promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Waiter.html#method_promise)
-: [Coroutine](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html)Returns a promise.
+[\_\_construct()](class-aws-waiter-method-construct.md)
+: mixed The array of configuration options include:[promise()](class-aws-waiter-method-promise.md)
+: [Coroutine](class-guzzlehttp-promise-coroutine.md)Returns a promise.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Waiter.html\#methods)
+### Methods  [header link](class-aws-waiter-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Waiter.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-waiter-method-construct.md)
 
 The array of configuration options include:
 
@@ -68,13 +68,13 @@ $config
 
 Waiter config that overrides defaults.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Waiter.html\#method___construct\#tags)
+##### Tags  [header link](class-aws-waiter-method-construct-tags.md)
 
 throwsInvalidArgumentException
 
 if the configuration is incomplete.
 
-#### promise()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Waiter.html\#method_promise)
+#### promise()  [header link](class-aws-waiter-method-promise.md)
 
 Returns a promise.
 
@@ -84,7 +84,7 @@ Returns a promise.
 
 ##### Return values
 
-[Coroutine](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html)
+[Coroutine](class-guzzlehttp-promise-coroutine.md)
 <\-\- modeled\_exceptions -->
 
 ×
@@ -92,9 +92,9 @@ Returns a promise.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Waiter.html#toc-methods)
+  - [Methods](class-aws-waiter-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Waiter.html#method___construct)
-  - [promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Waiter.html#method_promise)
+  - [\_\_construct()](class-aws-waiter-method-construct.md)
+  - [promise()](class-aws-waiter-method-promise.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Waiter.html#top)
+[Back To Top](class-aws-waiter-top.md)

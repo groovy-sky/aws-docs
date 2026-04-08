@@ -76,7 +76,7 @@ CPU configuration of 32 vCPUs for the instance type (3200 vCPU hours).
 
 The bill shows one line item with a combined rate that includes both usage and licensing fees.
 
-![Sample bill with default billing for license-included Windows and SQL Server Enterprise instance.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/optimize-cpus-sample-bill-default.png)
+![Sample bill with default billing for license-included Windows and SQL Server Enterprise instance.](../../../images/awsec2/latest/userguide/images/optimize-cpus-sample-bill-default-png.md)
 
 **Example 2: Optimize CPUs billing** This example shows an r7i.8xlarge
 instance launched from a license-included Windows and SQL Server Enterprise AMI. To save on license fees,
@@ -95,7 +95,7 @@ Billing description: **Amazon EC2 Optimize CPU License Included Third Party Fees
 The second line item covers licensing fees based on the number of vCPUs that were active
 for the billing period ($673.60).
 
-![Sample bill with Optimize CPUs billing for a license-included Windows and SQL Server Enterprise instance.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/optimize-cpus-sample-bill-optimized.png)
+![Sample bill with Optimize CPUs billing for a license-included Windows and SQL Server Enterprise instance.](../../../images/awsec2/latest/userguide/images/optimize-cpus-sample-bill-optimized-png.md)
 
 **Example 3: Optimize CPUs billing with Savings Plans** This example shows an
 r7i.8xlarge instance launched from a license-included Windows and SQL Server Enterprise AMI. To save on
@@ -124,7 +124,7 @@ Billing description: **Amazon EC2 Optimize CPU License Included Third Party Fees
 The third line item covers licensing fees based on the number of vCPUs that were active
 for the billing period ($673.60).
 
-![Sample bill with a Savings Plan and Optimize CPUs billing for a license-included Windows and SQL Server Enterprise instance.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/optimize-cpus-sample-bill-savings-plan.png)
+![Sample bill with a Savings Plan and Optimize CPUs billing for a license-included Windows and SQL Server Enterprise instance.](../../../images/awsec2/latest/userguide/images/optimize-cpus-sample-bill-savings-plan-png.md)
 
 [Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 

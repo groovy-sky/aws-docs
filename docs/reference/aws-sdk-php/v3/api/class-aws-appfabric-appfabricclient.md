@@ -17,38 +17,38 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2023-05-19**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html)
+- [**2023-05-19**](api-appfabric-2023-05-19.md)
 
-  - [BatchGetUserAccessTasks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#batchgetuseraccesstasks)
-  - [ConnectAppAuthorization](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#connectappauthorization)
-  - [CreateAppAuthorization](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#createappauthorization)
-  - [CreateAppBundle](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#createappbundle)
-  - [CreateIngestion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#createingestion)
-  - [CreateIngestionDestination](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#createingestiondestination)
-  - [DeleteAppAuthorization](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#deleteappauthorization)
-  - [DeleteAppBundle](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#deleteappbundle)
-  - [DeleteIngestion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#deleteingestion)
-  - [DeleteIngestionDestination](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#deleteingestiondestination)
-  - [GetAppAuthorization](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#getappauthorization)
-  - [GetAppBundle](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#getappbundle)
-  - [GetIngestion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#getingestion)
-  - [GetIngestionDestination](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#getingestiondestination)
-  - [ListAppAuthorizations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#listappauthorizations)
-  - [ListAppBundles](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#listappbundles)
-  - [ListIngestionDestinations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#listingestiondestinations)
-  - [ListIngestions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#listingestions)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#listtagsforresource)
-  - [StartIngestion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#startingestion)
-  - [StartUserAccessTasks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#startuseraccesstasks)
-  - [StopIngestion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#stopingestion)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#untagresource)
-  - [UpdateAppAuthorization](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#updateappauthorization)
-  - [UpdateIngestionDestination](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appfabric-2023-05-19.html#updateingestiondestination)
+  - [BatchGetUserAccessTasks](api-appfabric-2023-05-19-batchgetuseraccesstasks.md)
+  - [ConnectAppAuthorization](api-appfabric-2023-05-19-connectappauthorization.md)
+  - [CreateAppAuthorization](api-appfabric-2023-05-19-createappauthorization.md)
+  - [CreateAppBundle](api-appfabric-2023-05-19-createappbundle.md)
+  - [CreateIngestion](api-appfabric-2023-05-19-createingestion.md)
+  - [CreateIngestionDestination](api-appfabric-2023-05-19-createingestiondestination.md)
+  - [DeleteAppAuthorization](api-appfabric-2023-05-19-deleteappauthorization.md)
+  - [DeleteAppBundle](api-appfabric-2023-05-19-deleteappbundle.md)
+  - [DeleteIngestion](api-appfabric-2023-05-19-deleteingestion.md)
+  - [DeleteIngestionDestination](api-appfabric-2023-05-19-deleteingestiondestination.md)
+  - [GetAppAuthorization](api-appfabric-2023-05-19-getappauthorization.md)
+  - [GetAppBundle](api-appfabric-2023-05-19-getappbundle.md)
+  - [GetIngestion](api-appfabric-2023-05-19-getingestion.md)
+  - [GetIngestionDestination](api-appfabric-2023-05-19-getingestiondestination.md)
+  - [ListAppAuthorizations](api-appfabric-2023-05-19-listappauthorizations.md)
+  - [ListAppBundles](api-appfabric-2023-05-19-listappbundles.md)
+  - [ListIngestionDestinations](api-appfabric-2023-05-19-listingestiondestinations.md)
+  - [ListIngestions](api-appfabric-2023-05-19-listingestions.md)
+  - [ListTagsForResource](api-appfabric-2023-05-19-listtagsforresource.md)
+  - [StartIngestion](api-appfabric-2023-05-19-startingestion.md)
+  - [StartUserAccessTasks](api-appfabric-2023-05-19-startuseraccesstasks.md)
+  - [StopIngestion](api-appfabric-2023-05-19-stopingestion.md)
+  - [TagResource](api-appfabric-2023-05-19-tagresource.md)
+  - [UntagResource](api-appfabric-2023-05-19-untagresource.md)
+  - [UpdateAppAuthorization](api-appfabric-2023-05-19-updateappauthorization.md)
+  - [UpdateIngestionDestination](api-appfabric-2023-05-19-updateingestiondestination.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppFabric.AppFabricClient.html\#toc)
+### Table of Contents  [header link](class-aws-appfabric-appfabricclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppFabric.AppFabricClient.html\#toc-methods)
+#### Methods  [header link](class-aws-appfabric-appfabricclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -79,7 +79,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppFabric.AppFabricClient.html\#methods)
+### Methods  [header link](class-aws-appfabric-appfabricclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -546,7 +546,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppFabric.AppFabricClient.html#toc-methods)
+  - [Methods](class-aws-appfabric-appfabricclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -573,4 +573,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppFabric.AppFabricClient.html#top)
+[Back To Top](class-aws-appfabric-appfabricclient-top.md)

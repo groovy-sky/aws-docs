@@ -17,21 +17,21 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2025-08-18**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-dashboards-2025-08-18.html)
+- [**2025-08-18**](api-bcm-dashboards-2025-08-18.md)
 
-  - [CreateDashboard](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-dashboards-2025-08-18.html#createdashboard)
-  - [DeleteDashboard](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-dashboards-2025-08-18.html#deletedashboard)
-  - [GetDashboard](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-dashboards-2025-08-18.html#getdashboard)
-  - [GetResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-dashboards-2025-08-18.html#getresourcepolicy)
-  - [ListDashboards](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-dashboards-2025-08-18.html#listdashboards)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-dashboards-2025-08-18.html#listtagsforresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-dashboards-2025-08-18.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-dashboards-2025-08-18.html#untagresource)
-  - [UpdateDashboard](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-dashboards-2025-08-18.html#updatedashboard)
+  - [CreateDashboard](api-bcm-dashboards-2025-08-18-createdashboard.md)
+  - [DeleteDashboard](api-bcm-dashboards-2025-08-18-deletedashboard.md)
+  - [GetDashboard](api-bcm-dashboards-2025-08-18-getdashboard.md)
+  - [GetResourcePolicy](api-bcm-dashboards-2025-08-18-getresourcepolicy.md)
+  - [ListDashboards](api-bcm-dashboards-2025-08-18-listdashboards.md)
+  - [ListTagsForResource](api-bcm-dashboards-2025-08-18-listtagsforresource.md)
+  - [TagResource](api-bcm-dashboards-2025-08-18-tagresource.md)
+  - [UntagResource](api-bcm-dashboards-2025-08-18-untagresource.md)
+  - [UpdateDashboard](api-bcm-dashboards-2025-08-18-updatedashboard.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BCMDashboards.BCMDashboardsClient.html\#toc)
+### Table of Contents  [header link](class-aws-bcmdashboards-bcmdashboardsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BCMDashboards.BCMDashboardsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-bcmdashboards-bcmdashboardsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -62,7 +62,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BCMDashboards.BCMDashboardsClient.html\#methods)
+### Methods  [header link](class-aws-bcmdashboards-bcmdashboardsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -529,7 +529,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BCMDashboards.BCMDashboardsClient.html#toc-methods)
+  - [Methods](class-aws-bcmdashboards-bcmdashboardsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -556,4 +556,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BCMDashboards.BCMDashboardsClient.html#top)
+[Back To Top](class-aws-bcmdashboards-bcmdashboardsclient-top.md)

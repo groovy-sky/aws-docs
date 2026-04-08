@@ -17,36 +17,36 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2020-06-24**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html)
+- [**2020-06-24**](api-servicecatalog-appregistry-2020-06-24.md)
 
-  - [AssociateAttributeGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#associateattributegroup)
-  - [AssociateResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#associateresource)
-  - [CreateApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#createapplication)
-  - [CreateAttributeGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#createattributegroup)
-  - [DeleteApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#deleteapplication)
-  - [DeleteAttributeGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#deleteattributegroup)
-  - [DisassociateAttributeGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#disassociateattributegroup)
-  - [DisassociateResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#disassociateresource)
-  - [GetApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#getapplication)
-  - [GetAssociatedResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#getassociatedresource)
-  - [GetAttributeGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#getattributegroup)
-  - [GetConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#getconfiguration)
-  - [ListApplications](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#listapplications)
-  - [ListAssociatedAttributeGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#listassociatedattributegroups)
-  - [ListAssociatedResources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#listassociatedresources)
-  - [ListAttributeGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#listattributegroups)
-  - [ListAttributeGroupsForApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#listattributegroupsforapplication)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#listtagsforresource)
-  - [PutConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#putconfiguration)
-  - [SyncResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#syncresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#untagresource)
-  - [UpdateApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#updateapplication)
-  - [UpdateAttributeGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicecatalog-appregistry-2020-06-24.html#updateattributegroup)
+  - [AssociateAttributeGroup](api-servicecatalog-appregistry-2020-06-24-associateattributegroup.md)
+  - [AssociateResource](api-servicecatalog-appregistry-2020-06-24-associateresource.md)
+  - [CreateApplication](api-servicecatalog-appregistry-2020-06-24-createapplication.md)
+  - [CreateAttributeGroup](api-servicecatalog-appregistry-2020-06-24-createattributegroup.md)
+  - [DeleteApplication](api-servicecatalog-appregistry-2020-06-24-deleteapplication.md)
+  - [DeleteAttributeGroup](api-servicecatalog-appregistry-2020-06-24-deleteattributegroup.md)
+  - [DisassociateAttributeGroup](api-servicecatalog-appregistry-2020-06-24-disassociateattributegroup.md)
+  - [DisassociateResource](api-servicecatalog-appregistry-2020-06-24-disassociateresource.md)
+  - [GetApplication](api-servicecatalog-appregistry-2020-06-24-getapplication.md)
+  - [GetAssociatedResource](api-servicecatalog-appregistry-2020-06-24-getassociatedresource.md)
+  - [GetAttributeGroup](api-servicecatalog-appregistry-2020-06-24-getattributegroup.md)
+  - [GetConfiguration](api-servicecatalog-appregistry-2020-06-24-getconfiguration.md)
+  - [ListApplications](api-servicecatalog-appregistry-2020-06-24-listapplications.md)
+  - [ListAssociatedAttributeGroups](api-servicecatalog-appregistry-2020-06-24-listassociatedattributegroups.md)
+  - [ListAssociatedResources](api-servicecatalog-appregistry-2020-06-24-listassociatedresources.md)
+  - [ListAttributeGroups](api-servicecatalog-appregistry-2020-06-24-listattributegroups.md)
+  - [ListAttributeGroupsForApplication](api-servicecatalog-appregistry-2020-06-24-listattributegroupsforapplication.md)
+  - [ListTagsForResource](api-servicecatalog-appregistry-2020-06-24-listtagsforresource.md)
+  - [PutConfiguration](api-servicecatalog-appregistry-2020-06-24-putconfiguration.md)
+  - [SyncResource](api-servicecatalog-appregistry-2020-06-24-syncresource.md)
+  - [TagResource](api-servicecatalog-appregistry-2020-06-24-tagresource.md)
+  - [UntagResource](api-servicecatalog-appregistry-2020-06-24-untagresource.md)
+  - [UpdateApplication](api-servicecatalog-appregistry-2020-06-24-updateapplication.md)
+  - [UpdateAttributeGroup](api-servicecatalog-appregistry-2020-06-24-updateattributegroup.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppRegistry.AppRegistryClient.html\#toc)
+### Table of Contents  [header link](class-aws-appregistry-appregistryclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppRegistry.AppRegistryClient.html\#toc-methods)
+#### Methods  [header link](class-aws-appregistry-appregistryclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -77,7 +77,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppRegistry.AppRegistryClient.html\#methods)
+### Methods  [header link](class-aws-appregistry-appregistryclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -544,7 +544,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppRegistry.AppRegistryClient.html#toc-methods)
+  - [Methods](class-aws-appregistry-appregistryclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -571,4 +571,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppRegistry.AppRegistryClient.html#top)
+[Back To Top](class-aws-appregistry-appregistryclient-top.md)

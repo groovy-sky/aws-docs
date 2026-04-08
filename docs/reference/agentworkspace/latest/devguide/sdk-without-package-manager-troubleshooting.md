@@ -26,7 +26,7 @@ provider after `connect.core.onInitialized()` fires.
 Verify you passed the provider when creating the clients. The provider
 establishes the communication channel between your code and Amazon Connect.
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Updating the bundle
 

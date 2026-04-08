@@ -4,23 +4,23 @@ Menu
 
 ## Psr16CacheAdapter        in package    - [Aws](package-aws.md)       implements  [CacheInterface](class-aws-cacheinterface.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Psr16CacheAdapter.html\#toc)
+### Table of Contents  [header link](class-aws-psr16cacheadapter-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Psr16CacheAdapter.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-psr16cacheadapter-toc-interfaces.md)
 
 [CacheInterface](class-aws-cacheinterface.md)Represents a simple cache interface.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Psr16CacheAdapter.html\#toc-methods)
+#### Methods  [header link](class-aws-psr16cacheadapter-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Psr16CacheAdapter.html#method___construct)
-: mixed [get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Psr16CacheAdapter.html#method_get)
-: mixed\|null Get a cache item by key.[remove()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Psr16CacheAdapter.html#method_remove)
-: mixed Remove a cache key.[set()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Psr16CacheAdapter.html#method_set)
+[\_\_construct()](class-aws-psr16cacheadapter-method-construct.md)
+: mixed [get()](class-aws-psr16cacheadapter-method-get.md)
+: mixed\|null Get a cache item by key.[remove()](class-aws-psr16cacheadapter-method-remove.md)
+: mixed Remove a cache key.[set()](class-aws-psr16cacheadapter-method-set.md)
 : mixed Set a cache key value.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Psr16CacheAdapter.html\#methods)
+### Methods  [header link](class-aws-psr16cacheadapter-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Psr16CacheAdapter.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-psr16cacheadapter-method-construct.md)
 
 `
     public
@@ -31,7 +31,7 @@ Menu
 $cache
 : CacheInterface
 
-#### get()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Psr16CacheAdapter.html\#method_get)
+#### get()  [header link](class-aws-psr16cacheadapter-method-get.md)
 
 Get a cache item by key.
 
@@ -53,7 +53,7 @@ mixed\|null
 
 Returns the value or null if not found.
 
-#### remove()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Psr16CacheAdapter.html\#method_remove)
+#### remove()  [header link](class-aws-psr16cacheadapter-method-remove.md)
 
 Remove a cache key.
 
@@ -68,7 +68,7 @@ $key
 
 Key to remove.
 
-#### set()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Psr16CacheAdapter.html\#method_set)
+#### set()  [header link](class-aws-psr16cacheadapter-method-set.md)
 
 Set a cache key value.
 
@@ -102,11 +102,11 @@ to 0 to allow an unlimited lifetime.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Psr16CacheAdapter.html#toc-methods)
+  - [Methods](class-aws-psr16cacheadapter-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Psr16CacheAdapter.html#method___construct)
-  - [get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Psr16CacheAdapter.html#method_get)
-  - [remove()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Psr16CacheAdapter.html#method_remove)
-  - [set()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Psr16CacheAdapter.html#method_set)
+  - [\_\_construct()](class-aws-psr16cacheadapter-method-construct.md)
+  - [get()](class-aws-psr16cacheadapter-method-get.md)
+  - [remove()](class-aws-psr16cacheadapter-method-remove.md)
+  - [set()](class-aws-psr16cacheadapter-method-set.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Psr16CacheAdapter.html#top)
+[Back To Top](class-aws-psr16cacheadapter-top.md)

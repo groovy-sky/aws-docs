@@ -4,15 +4,15 @@ Menu
 
 ## BCMDashboards
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bcmdashboards.html\#toc)
+### Table of Contents  [header link](namespace-aws-bcmdashboards-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bcmdashboards.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-bcmdashboards-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bcmdashboards.exception.html)
+[Exception](namespace-aws-bcmdashboards-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bcmdashboards.html\#toc-classes)
+#### Classes  [header link](namespace-aws-bcmdashboards-toc-classes.md)
 
-[BCMDashboardsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BCMDashboards.BCMDashboardsClient.html)This client is used to interact with the **AWS Billing and Cost Management Dashboards** service.
+[BCMDashboardsClient](class-aws-bcmdashboards-bcmdashboardsclient.md)This client is used to interact with the **AWS Billing and Cost Management Dashboards** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bcmdashboards.html#toc-classes)
+  - [Classes](namespace-aws-bcmdashboards-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bcmdashboards.html#top)
+[Back To Top](namespace-aws-bcmdashboards-top.md)

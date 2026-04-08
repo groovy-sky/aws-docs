@@ -4,15 +4,15 @@ Menu
 
 ## DLM
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dlm.html\#toc)
+### Table of Contents  [header link](namespace-aws-dlm-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dlm.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-dlm-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dlm.exception.html)
+[Exception](namespace-aws-dlm-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dlm.html\#toc-classes)
+#### Classes  [header link](namespace-aws-dlm-toc-classes.md)
 
-[DLMClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DLM.DLMClient.html)This client is used to interact with the **Amazon Data Lifecycle Manager** service.
+[DLMClient](class-aws-dlm-dlmclient.md)This client is used to interact with the **Amazon Data Lifecycle Manager** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dlm.html#toc-classes)
+  - [Classes](namespace-aws-dlm-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dlm.html#top)
+[Back To Top](namespace-aws-dlm-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## KafkaConnect
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kafkaconnect.html\#toc)
+### Table of Contents  [header link](namespace-aws-kafkaconnect-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kafkaconnect.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-kafkaconnect-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kafkaconnect.exception.html)
+[Exception](namespace-aws-kafkaconnect-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kafkaconnect.html\#toc-classes)
+#### Classes  [header link](namespace-aws-kafkaconnect-toc-classes.md)
 
-[KafkaConnectClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KafkaConnect.KafkaConnectClient.html)This client is used to interact with the **Managed Streaming for Kafka Connect** service.
+[KafkaConnectClient](class-aws-kafkaconnect-kafkaconnectclient.md)This client is used to interact with the **Managed Streaming for Kafka Connect** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kafkaconnect.html#toc-classes)
+  - [Classes](namespace-aws-kafkaconnect-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kafkaconnect.html#top)
+[Back To Top](namespace-aws-kafkaconnect-top.md)

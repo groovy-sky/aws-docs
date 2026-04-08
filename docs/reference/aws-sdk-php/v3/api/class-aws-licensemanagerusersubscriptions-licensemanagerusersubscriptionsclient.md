@@ -17,29 +17,29 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-05-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-user-subscriptions-2018-05-10.html)
+- [**2018-05-10**](api-license-manager-user-subscriptions-2018-05-10.md)
 
-  - [AssociateUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-user-subscriptions-2018-05-10.html#associateuser)
-  - [CreateLicenseServerEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-user-subscriptions-2018-05-10.html#createlicenseserverendpoint)
-  - [DeleteLicenseServerEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-user-subscriptions-2018-05-10.html#deletelicenseserverendpoint)
-  - [DeregisterIdentityProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-user-subscriptions-2018-05-10.html#deregisteridentityprovider)
-  - [DisassociateUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-user-subscriptions-2018-05-10.html#disassociateuser)
-  - [ListIdentityProviders](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-user-subscriptions-2018-05-10.html#listidentityproviders)
-  - [ListInstances](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-user-subscriptions-2018-05-10.html#listinstances)
-  - [ListLicenseServerEndpoints](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-user-subscriptions-2018-05-10.html#listlicenseserverendpoints)
-  - [ListProductSubscriptions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-user-subscriptions-2018-05-10.html#listproductsubscriptions)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-user-subscriptions-2018-05-10.html#listtagsforresource)
-  - [ListUserAssociations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-user-subscriptions-2018-05-10.html#listuserassociations)
-  - [RegisterIdentityProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-user-subscriptions-2018-05-10.html#registeridentityprovider)
-  - [StartProductSubscription](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-user-subscriptions-2018-05-10.html#startproductsubscription)
-  - [StopProductSubscription](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-user-subscriptions-2018-05-10.html#stopproductsubscription)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-user-subscriptions-2018-05-10.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-user-subscriptions-2018-05-10.html#untagresource)
-  - [UpdateIdentityProviderSettings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-user-subscriptions-2018-05-10.html#updateidentityprovidersettings)
+  - [AssociateUser](api-license-manager-user-subscriptions-2018-05-10-associateuser.md)
+  - [CreateLicenseServerEndpoint](api-license-manager-user-subscriptions-2018-05-10-createlicenseserverendpoint.md)
+  - [DeleteLicenseServerEndpoint](api-license-manager-user-subscriptions-2018-05-10-deletelicenseserverendpoint.md)
+  - [DeregisterIdentityProvider](api-license-manager-user-subscriptions-2018-05-10-deregisteridentityprovider.md)
+  - [DisassociateUser](api-license-manager-user-subscriptions-2018-05-10-disassociateuser.md)
+  - [ListIdentityProviders](api-license-manager-user-subscriptions-2018-05-10-listidentityproviders.md)
+  - [ListInstances](api-license-manager-user-subscriptions-2018-05-10-listinstances.md)
+  - [ListLicenseServerEndpoints](api-license-manager-user-subscriptions-2018-05-10-listlicenseserverendpoints.md)
+  - [ListProductSubscriptions](api-license-manager-user-subscriptions-2018-05-10-listproductsubscriptions.md)
+  - [ListTagsForResource](api-license-manager-user-subscriptions-2018-05-10-listtagsforresource.md)
+  - [ListUserAssociations](api-license-manager-user-subscriptions-2018-05-10-listuserassociations.md)
+  - [RegisterIdentityProvider](api-license-manager-user-subscriptions-2018-05-10-registeridentityprovider.md)
+  - [StartProductSubscription](api-license-manager-user-subscriptions-2018-05-10-startproductsubscription.md)
+  - [StopProductSubscription](api-license-manager-user-subscriptions-2018-05-10-stopproductsubscription.md)
+  - [TagResource](api-license-manager-user-subscriptions-2018-05-10-tagresource.md)
+  - [UntagResource](api-license-manager-user-subscriptions-2018-05-10-untagresource.md)
+  - [UpdateIdentityProviderSettings](api-license-manager-user-subscriptions-2018-05-10-updateidentityprovidersettings.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LicenseManagerUserSubscriptions.LicenseManagerUserSubscriptionsClient.html\#toc)
+### Table of Contents  [header link](class-aws-licensemanagerusersubscriptions-licensemanagerusersubscriptionsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LicenseManagerUserSubscriptions.LicenseManagerUserSubscriptionsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-licensemanagerusersubscriptions-licensemanagerusersubscriptionsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -70,7 +70,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LicenseManagerUserSubscriptions.LicenseManagerUserSubscriptionsClient.html\#methods)
+### Methods  [header link](class-aws-licensemanagerusersubscriptions-licensemanagerusersubscriptionsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -537,7 +537,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LicenseManagerUserSubscriptions.LicenseManagerUserSubscriptionsClient.html#toc-methods)
+  - [Methods](class-aws-licensemanagerusersubscriptions-licensemanagerusersubscriptionsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -564,4 +564,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LicenseManagerUserSubscriptions.LicenseManagerUserSubscriptionsClient.html#top)
+[Back To Top](class-aws-licensemanagerusersubscriptions-licensemanagerusersubscriptionsclient-top.md)

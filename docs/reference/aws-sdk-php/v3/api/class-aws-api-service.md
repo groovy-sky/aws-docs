@@ -1,58 +1,58 @@
 Menu
 
 - [Aws](namespace-aws.md)
-- [Api](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.api.html)
+- [Api](namespace-aws-api.md)
 
-## Service     extends [AbstractModel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html)   in package    - [Aws](package-aws.md)
+## Service     extends [AbstractModel](class-aws-api-abstractmodel.md)   in package    - [Aws](package-aws.md)
 
 Represents a web service API model.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#toc)
+### Table of Contents  [header link](class-aws-api-service-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#toc-methods)
+#### Methods  [header link](class-aws-api-service-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method___construct)
-: mixed [createErrorParser()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_createErrorParser)
-: callable Creates an error parser for the given protocol.[createParser()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_createParser)
-: callable Applies the listeners needed to parse client models.[createSerializer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_createSerializer)
-: callable Creates a request serializer for the provided API object.[getApiVersion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getApiVersion)
-: string Get the API version of the service[getClientContextParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getClientContextParams)
-: array<string\|int, mixed> Get all the context params of the description.[getDefinition()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getDefinition)
-: callable Get the service's definition.[getEndpointPrefix()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getEndpointPrefix)
-: string Get the API version of the service[getErrorShapes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getErrorShapes)
-: array<string\|int, mixed> Get all of the error shapes of the service[getMetadata()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getMetadata)
-: mixed Get all of the service metadata or a specific metadata key value.[getOperation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getOperation)
-: [Operation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html)Get an operation by name.[getOperations()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getOperations)
-: array<string\|int, [Operation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html) \> Get all of the operations of the description.[getPaginatorConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getPaginatorConfig)
-: array<string\|int, mixed> Retrieve a paginator by name.[getPaginators()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getPaginators)
+[\_\_construct()](class-aws-api-abstractmodel-method-construct.md)
+: mixed [createErrorParser()](class-aws-api-service-method-createerrorparser.md)
+: callable Creates an error parser for the given protocol.[createParser()](class-aws-api-service-method-createparser.md)
+: callable Applies the listeners needed to parse client models.[createSerializer()](class-aws-api-service-method-createserializer.md)
+: callable Creates a request serializer for the provided API object.[getApiVersion()](class-aws-api-service-method-getapiversion.md)
+: string Get the API version of the service[getClientContextParams()](class-aws-api-service-method-getclientcontextparams.md)
+: array<string\|int, mixed> Get all the context params of the description.[getDefinition()](class-aws-api-service-method-getdefinition.md)
+: callable Get the service's definition.[getEndpointPrefix()](class-aws-api-service-method-getendpointprefix.md)
+: string Get the API version of the service[getErrorShapes()](class-aws-api-service-method-geterrorshapes.md)
+: array<string\|int, mixed> Get all of the error shapes of the service[getMetadata()](class-aws-api-service-method-getmetadata.md)
+: mixed Get all of the service metadata or a specific metadata key value.[getOperation()](class-aws-api-service-method-getoperation.md)
+: [Operation](class-aws-api-operation.md)Get an operation by name.[getOperations()](class-aws-api-service-method-getoperations.md)
+: array<string\|int, [Operation](class-aws-api-operation.md) \> Get all of the operations of the description.[getPaginatorConfig()](class-aws-api-service-method-getpaginatorconfig.md)
+: array<string\|int, mixed> Retrieve a paginator by name.[getPaginators()](class-aws-api-service-method-getpaginators.md)
 : array<string\|int, mixed> Gets an associative array of available paginator configurations where
 the key is the name of the paginator, and the value is the paginator
-configuration.[getProtocol()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getProtocol)
-: string Get the protocol used by the service.[getProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getProvider)
-: callable Get the service's api provider.[getServiceFullName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getServiceFullName)
-: string Get the full name of the service[getServiceId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getServiceId)
-: string Get the service id[getServiceName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getServiceName)
-: string Get the service name.[getShapeMap()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getShapeMap)
-: [ShapeMap](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html)Get the shape map used by the API.[getSignatureVersion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getSignatureVersion)
-: string Get the default signature version of the service.[getSigningName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getSigningName)
-: string Get the signing name used by the service.[getUid()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getUid)
-: string Get the uid string used by the service[getWaiterConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getWaiterConfig)
-: array<string\|int, mixed> Get a waiter configuration by name.[getWaiters()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getWaiters)
+configuration.[getProtocol()](class-aws-api-service-method-getprotocol.md)
+: string Get the protocol used by the service.[getProvider()](class-aws-api-service-method-getprovider.md)
+: callable Get the service's api provider.[getServiceFullName()](class-aws-api-service-method-getservicefullname.md)
+: string Get the full name of the service[getServiceId()](class-aws-api-service-method-getserviceid.md)
+: string Get the service id[getServiceName()](class-aws-api-service-method-getservicename.md)
+: string Get the service name.[getShapeMap()](class-aws-api-service-method-getshapemap.md)
+: [ShapeMap](class-aws-api-shapemap.md)Get the shape map used by the API.[getSignatureVersion()](class-aws-api-service-method-getsignatureversion.md)
+: string Get the default signature version of the service.[getSigningName()](class-aws-api-service-method-getsigningname.md)
+: string Get the signing name used by the service.[getUid()](class-aws-api-service-method-getuid.md)
+: string Get the uid string used by the service[getWaiterConfig()](class-aws-api-service-method-getwaiterconfig.md)
+: array<string\|int, mixed> Get a waiter configuration by name.[getWaiters()](class-aws-api-service-method-getwaiters.md)
 : array<string\|int, mixed> Gets an associative array of available waiter configurations where the
 key is the name of the waiter, and the value is the waiter
-configuration.[hasOperation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_hasOperation)
-: bool Check if the description has a specific operation by name.[hasPaginator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_hasPaginator)
-: bool Determines if the service has a paginator by name.[hasWaiter()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_hasWaiter)
-: bool Determines if the service has a waiter by name.[offsetExists()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method_offsetExists)
-: bool [offsetGet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method_offsetGet)
-: mixed\|null [offsetSet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method_offsetSet)
-: void [offsetUnset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method_offsetUnset)
-: void [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method_toArray)
+configuration.[hasOperation()](class-aws-api-service-method-hasoperation.md)
+: bool Check if the description has a specific operation by name.[hasPaginator()](class-aws-api-service-method-haspaginator.md)
+: bool Determines if the service has a paginator by name.[hasWaiter()](class-aws-api-service-method-haswaiter.md)
+: bool Determines if the service has a waiter by name.[offsetExists()](class-aws-api-abstractmodel-method-offsetexists.md)
+: bool [offsetGet()](class-aws-api-abstractmodel-method-offsetget.md)
+: mixed\|null [offsetSet()](class-aws-api-abstractmodel-method-offsetset.md)
+: void [offsetUnset()](class-aws-api-abstractmodel-method-offsetunset.md)
+: void [toArray()](class-aws-api-abstractmodel-method-toarray.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#methods)
+### Methods  [header link](class-aws-api-service-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-api-abstractmodel-method-construct.md)
 
 `
     public
@@ -66,11 +66,11 @@ $definition
 Service description
 
 $shapeMap
-: [ShapeMap](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html)
+: [ShapeMap](class-aws-api-shapemap.md)
 
 Shapemap used for creating shapes
 
-#### createErrorParser()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_createErrorParser)
+#### createErrorParser()  [header link](class-aws-api-service-method-createerrorparser.md)
 
 Creates an error parser for the given protocol.
 
@@ -88,10 +88,10 @@ $protocol
 Protocol to parse (e.g., query, json, etc.)
 
 $api
-: [Service](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html) \|null
+: [Service](class-aws-api-service.md) \|null
 = null
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_createErrorParser\#tags)
+##### Tags  [header link](class-aws-api-service-method-createerrorparser-tags.md)
 
 throwsUnexpectedValueException
 
@@ -99,7 +99,7 @@ throwsUnexpectedValueException
 
 callable
 
-#### createParser()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_createParser)
+#### createParser()  [header link](class-aws-api-service-method-createparser.md)
 
 Applies the listeners needed to parse client models.
 
@@ -110,11 +110,11 @@ Applies the listeners needed to parse client models.
 ##### Parameters
 
 $api
-: [Service](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html)
+: [Service](class-aws-api-service.md)
 
 API to create a parser for
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_createParser\#tags)
+##### Tags  [header link](class-aws-api-service-method-createparser-tags.md)
 
 throwsUnexpectedValueException
 
@@ -122,7 +122,7 @@ throwsUnexpectedValueException
 
 callable
 
-#### createSerializer()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_createSerializer)
+#### createSerializer()  [header link](class-aws-api-service-method-createserializer.md)
 
 Creates a request serializer for the provided API object.
 
@@ -133,7 +133,7 @@ Creates a request serializer for the provided API object.
 ##### Parameters
 
 $api
-: [Service](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html)
+: [Service](class-aws-api-service.md)
 
 API that contains a protocol.
 
@@ -142,7 +142,7 @@ $endpoint
 
 Endpoint to send requests to.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_createSerializer\#tags)
+##### Tags  [header link](class-aws-api-service-method-createserializer-tags.md)
 
 throwsUnexpectedValueException
 
@@ -150,7 +150,7 @@ throwsUnexpectedValueException
 
 callable
 
-#### getApiVersion()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getApiVersion)
+#### getApiVersion()  [header link](class-aws-api-service-method-getapiversion.md)
 
 Get the API version of the service
 
@@ -162,7 +162,7 @@ Get the API version of the service
 
 string
 
-#### getClientContextParams()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getClientContextParams)
+#### getClientContextParams()  [header link](class-aws-api-service-method-getclientcontextparams.md)
 
 Get all the context params of the description.
 
@@ -174,7 +174,7 @@ Get all the context params of the description.
 
 array<string\|int, mixed>
 
-#### getDefinition()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getDefinition)
+#### getDefinition()  [header link](class-aws-api-service-method-getdefinition.md)
 
 Get the service's definition.
 
@@ -186,7 +186,7 @@ Get the service's definition.
 
 callable
 
-#### getEndpointPrefix()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getEndpointPrefix)
+#### getEndpointPrefix()  [header link](class-aws-api-service-method-getendpointprefix.md)
 
 Get the API version of the service
 
@@ -198,7 +198,7 @@ Get the API version of the service
 
 string
 
-#### getErrorShapes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getErrorShapes)
+#### getErrorShapes()  [header link](class-aws-api-service-method-geterrorshapes.md)
 
 Get all of the error shapes of the service
 
@@ -210,7 +210,7 @@ Get all of the error shapes of the service
 
 array<string\|int, mixed>
 
-#### getMetadata()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getMetadata)
+#### getMetadata()  [header link](class-aws-api-service-method-getmetadata.md)
 
 Get all of the service metadata or a specific metadata key value.
 
@@ -233,7 +233,7 @@ mixed
 
 Returns the result or null if the key is not found
 
-#### getOperation()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getOperation)
+#### getOperation()  [header link](class-aws-api-service-method-getoperation.md)
 
 Get an operation by name.
 
@@ -248,7 +248,7 @@ $name
 
 Operation to retrieve by name
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getOperation\#tags)
+##### Tags  [header link](class-aws-api-service-method-getoperation-tags.md)
 
 throwsInvalidArgumentException
 
@@ -256,9 +256,9 @@ If the operation is not found
 
 ##### Return values
 
-[Operation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html)
+[Operation](class-aws-api-operation.md)
 
-#### getOperations()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getOperations)
+#### getOperations()  [header link](class-aws-api-service-method-getoperations.md)
 
 Get all of the operations of the description.
 
@@ -268,9 +268,9 @@ Get all of the operations of the description.
 
 ##### Return values
 
-array<string\|int, [Operation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html) >
+array<string\|int, [Operation](class-aws-api-operation.md) >
 
-#### getPaginatorConfig()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getPaginatorConfig)
+#### getPaginatorConfig()  [header link](class-aws-api-service-method-getpaginatorconfig.md)
 
 Retrieve a paginator by name.
 
@@ -286,7 +286,7 @@ $name
 Paginator to retrieve by name. This argument is
 typically the operation name.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getPaginatorConfig\#tags)
+##### Tags  [header link](class-aws-api-service-method-getpaginatorconfig-tags.md)
 
 throwsUnexpectedValueException
 
@@ -300,7 +300,7 @@ The configuration format of paginators may change in the future
 
 array<string\|int, mixed>
 
-#### getPaginators()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getPaginators)
+#### getPaginators()  [header link](class-aws-api-service-method-getpaginators.md)
 
 Gets an associative array of available paginator configurations where
 the key is the name of the paginator, and the value is the paginator
@@ -310,7 +310,7 @@ configuration.
     public
                     getPaginators() : array<string|int, mixed>`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getPaginators\#tags)
+##### Tags  [header link](class-aws-api-service-method-getpaginators-tags.md)
 
 unstable
 
@@ -320,7 +320,7 @@ The configuration format of paginators may change in the future
 
 array<string\|int, mixed>
 
-#### getProtocol()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getProtocol)
+#### getProtocol()  [header link](class-aws-api-service-method-getprotocol.md)
 
 Get the protocol used by the service.
 
@@ -332,7 +332,7 @@ Get the protocol used by the service.
 
 string
 
-#### getProvider()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getProvider)
+#### getProvider()  [header link](class-aws-api-service-method-getprovider.md)
 
 Get the service's api provider.
 
@@ -344,7 +344,7 @@ Get the service's api provider.
 
 callable
 
-#### getServiceFullName()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getServiceFullName)
+#### getServiceFullName()  [header link](class-aws-api-service-method-getservicefullname.md)
 
 Get the full name of the service
 
@@ -356,7 +356,7 @@ Get the full name of the service
 
 string
 
-#### getServiceId()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getServiceId)
+#### getServiceId()  [header link](class-aws-api-service-method-getserviceid.md)
 
 Get the service id
 
@@ -368,7 +368,7 @@ Get the service id
 
 string
 
-#### getServiceName()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getServiceName)
+#### getServiceName()  [header link](class-aws-api-service-method-getservicename.md)
 
 Get the service name.
 
@@ -380,7 +380,7 @@ Get the service name.
 
 string
 
-#### getShapeMap()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getShapeMap)
+#### getShapeMap()  [header link](class-aws-api-service-method-getshapemap.md)
 
 Get the shape map used by the API.
 
@@ -390,9 +390,9 @@ Get the shape map used by the API.
 
 ##### Return values
 
-[ShapeMap](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html)
+[ShapeMap](class-aws-api-shapemap.md)
 
-#### getSignatureVersion()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getSignatureVersion)
+#### getSignatureVersion()  [header link](class-aws-api-service-method-getsignatureversion.md)
 
 Get the default signature version of the service.
 
@@ -406,7 +406,7 @@ Note: this method assumes "v4" when not specified in the model.
 
 string
 
-#### getSigningName()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getSigningName)
+#### getSigningName()  [header link](class-aws-api-service-method-getsigningname.md)
 
 Get the signing name used by the service.
 
@@ -418,7 +418,7 @@ Get the signing name used by the service.
 
 string
 
-#### getUid()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getUid)
+#### getUid()  [header link](class-aws-api-service-method-getuid.md)
 
 Get the uid string used by the service
 
@@ -430,7 +430,7 @@ Get the uid string used by the service
 
 string
 
-#### getWaiterConfig()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getWaiterConfig)
+#### getWaiterConfig()  [header link](class-aws-api-service-method-getwaiterconfig.md)
 
 Get a waiter configuration by name.
 
@@ -445,7 +445,7 @@ $name
 
 Name of the waiter by name.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getWaiterConfig\#tags)
+##### Tags  [header link](class-aws-api-service-method-getwaiterconfig-tags.md)
 
 throwsUnexpectedValueException
 
@@ -455,7 +455,7 @@ if the waiter does not exist.
 
 array<string\|int, mixed>
 
-#### getWaiters()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_getWaiters)
+#### getWaiters()  [header link](class-aws-api-service-method-getwaiters.md)
 
 Gets an associative array of available waiter configurations where the
 key is the name of the waiter, and the value is the waiter
@@ -469,7 +469,7 @@ configuration.
 
 array<string\|int, mixed>
 
-#### hasOperation()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_hasOperation)
+#### hasOperation()  [header link](class-aws-api-service-method-hasoperation.md)
 
 Check if the description has a specific operation by name.
 
@@ -488,7 +488,7 @@ Operation to check by name
 
 bool
 
-#### hasPaginator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_hasPaginator)
+#### hasPaginator()  [header link](class-aws-api-service-method-haspaginator.md)
 
 Determines if the service has a paginator by name.
 
@@ -507,7 +507,7 @@ Name of the paginator.
 
 bool
 
-#### hasWaiter()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html\#method_hasWaiter)
+#### hasWaiter()  [header link](class-aws-api-service-method-haswaiter.md)
 
 Determines if the service has a waiter by name.
 
@@ -526,7 +526,7 @@ Name of the waiter.
 
 bool
 
-#### offsetExists()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html\#method_offsetExists)
+#### offsetExists()  [header link](class-aws-api-abstractmodel-method-offsetexists.md)
 
 `
     public
@@ -541,7 +541,7 @@ $offset
 
 bool
 
-#### offsetGet()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html\#method_offsetGet)
+#### offsetGet()  [header link](class-aws-api-abstractmodel-method-offsetget.md)
 
 `
     public
@@ -556,7 +556,7 @@ $offset
 
 mixed\|null
 
-#### offsetSet()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html\#method_offsetSet)
+#### offsetSet()  [header link](class-aws-api-abstractmodel-method-offsetset.md)
 
 `
     public
@@ -568,7 +568,7 @@ $offset
 : mixed$value
 : mixed
 
-#### offsetUnset()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html\#method_offsetUnset)
+#### offsetUnset()  [header link](class-aws-api-abstractmodel-method-offsetunset.md)
 
 `
     public
@@ -579,7 +579,7 @@ $offset
 $offset
 : mixed
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html\#method_toArray)
+#### toArray()  [header link](class-aws-api-abstractmodel-method-toarray.md)
 
 `
     public
@@ -592,40 +592,40 @@ $offset
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#toc-methods)
+  - [Methods](class-aws-api-service-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method___construct)
-  - [createErrorParser()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_createErrorParser)
-  - [createParser()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_createParser)
-  - [createSerializer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_createSerializer)
-  - [getApiVersion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getApiVersion)
-  - [getClientContextParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getClientContextParams)
-  - [getDefinition()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getDefinition)
-  - [getEndpointPrefix()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getEndpointPrefix)
-  - [getErrorShapes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getErrorShapes)
-  - [getMetadata()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getMetadata)
-  - [getOperation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getOperation)
-  - [getOperations()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getOperations)
-  - [getPaginatorConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getPaginatorConfig)
-  - [getPaginators()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getPaginators)
-  - [getProtocol()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getProtocol)
-  - [getProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getProvider)
-  - [getServiceFullName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getServiceFullName)
-  - [getServiceId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getServiceId)
-  - [getServiceName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getServiceName)
-  - [getShapeMap()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getShapeMap)
-  - [getSignatureVersion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getSignatureVersion)
-  - [getSigningName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getSigningName)
-  - [getUid()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getUid)
-  - [getWaiterConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getWaiterConfig)
-  - [getWaiters()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_getWaiters)
-  - [hasOperation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_hasOperation)
-  - [hasPaginator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_hasPaginator)
-  - [hasWaiter()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#method_hasWaiter)
-  - [offsetExists()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method_offsetExists)
-  - [offsetGet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method_offsetGet)
-  - [offsetSet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method_offsetSet)
-  - [offsetUnset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method_offsetUnset)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method_toArray)
+  - [\_\_construct()](class-aws-api-abstractmodel-method-construct.md)
+  - [createErrorParser()](class-aws-api-service-method-createerrorparser.md)
+  - [createParser()](class-aws-api-service-method-createparser.md)
+  - [createSerializer()](class-aws-api-service-method-createserializer.md)
+  - [getApiVersion()](class-aws-api-service-method-getapiversion.md)
+  - [getClientContextParams()](class-aws-api-service-method-getclientcontextparams.md)
+  - [getDefinition()](class-aws-api-service-method-getdefinition.md)
+  - [getEndpointPrefix()](class-aws-api-service-method-getendpointprefix.md)
+  - [getErrorShapes()](class-aws-api-service-method-geterrorshapes.md)
+  - [getMetadata()](class-aws-api-service-method-getmetadata.md)
+  - [getOperation()](class-aws-api-service-method-getoperation.md)
+  - [getOperations()](class-aws-api-service-method-getoperations.md)
+  - [getPaginatorConfig()](class-aws-api-service-method-getpaginatorconfig.md)
+  - [getPaginators()](class-aws-api-service-method-getpaginators.md)
+  - [getProtocol()](class-aws-api-service-method-getprotocol.md)
+  - [getProvider()](class-aws-api-service-method-getprovider.md)
+  - [getServiceFullName()](class-aws-api-service-method-getservicefullname.md)
+  - [getServiceId()](class-aws-api-service-method-getserviceid.md)
+  - [getServiceName()](class-aws-api-service-method-getservicename.md)
+  - [getShapeMap()](class-aws-api-service-method-getshapemap.md)
+  - [getSignatureVersion()](class-aws-api-service-method-getsignatureversion.md)
+  - [getSigningName()](class-aws-api-service-method-getsigningname.md)
+  - [getUid()](class-aws-api-service-method-getuid.md)
+  - [getWaiterConfig()](class-aws-api-service-method-getwaiterconfig.md)
+  - [getWaiters()](class-aws-api-service-method-getwaiters.md)
+  - [hasOperation()](class-aws-api-service-method-hasoperation.md)
+  - [hasPaginator()](class-aws-api-service-method-haspaginator.md)
+  - [hasWaiter()](class-aws-api-service-method-haswaiter.md)
+  - [offsetExists()](class-aws-api-abstractmodel-method-offsetexists.md)
+  - [offsetGet()](class-aws-api-abstractmodel-method-offsetget.md)
+  - [offsetSet()](class-aws-api-abstractmodel-method-offsetset.md)
+  - [offsetUnset()](class-aws-api-abstractmodel-method-offsetunset.md)
+  - [toArray()](class-aws-api-abstractmodel-method-toarray.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html#top)
+[Back To Top](class-aws-api-service-top.md)

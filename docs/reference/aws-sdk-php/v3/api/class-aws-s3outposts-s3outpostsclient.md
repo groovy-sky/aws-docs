@@ -17,17 +17,17 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-07-25**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3outposts-2017-07-25.html)
+- [**2017-07-25**](api-s3outposts-2017-07-25.md)
 
-  - [CreateEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3outposts-2017-07-25.html#createendpoint)
-  - [DeleteEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3outposts-2017-07-25.html#deleteendpoint)
-  - [ListEndpoints](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3outposts-2017-07-25.html#listendpoints)
-  - [ListOutpostsWithS3](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3outposts-2017-07-25.html#listoutpostswiths3)
-  - [ListSharedEndpoints](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3outposts-2017-07-25.html#listsharedendpoints)
+  - [CreateEndpoint](api-s3outposts-2017-07-25-createendpoint.md)
+  - [DeleteEndpoint](api-s3outposts-2017-07-25-deleteendpoint.md)
+  - [ListEndpoints](api-s3outposts-2017-07-25-listendpoints.md)
+  - [ListOutpostsWithS3](api-s3outposts-2017-07-25-listoutpostswiths3.md)
+  - [ListSharedEndpoints](api-s3outposts-2017-07-25-listsharedendpoints.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3Outposts.S3OutpostsClient.html\#toc)
+### Table of Contents  [header link](class-aws-s3outposts-s3outpostsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3Outposts.S3OutpostsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-s3outposts-s3outpostsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -58,7 +58,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3Outposts.S3OutpostsClient.html\#methods)
+### Methods  [header link](class-aws-s3outposts-s3outpostsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -525,7 +525,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3Outposts.S3OutpostsClient.html#toc-methods)
+  - [Methods](class-aws-s3outposts-s3outpostsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -552,4 +552,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3Outposts.S3OutpostsClient.html#top)
+[Back To Top](class-aws-s3outposts-s3outpostsclient-top.md)

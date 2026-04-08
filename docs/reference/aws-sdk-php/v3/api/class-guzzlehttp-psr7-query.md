@@ -1,23 +1,23 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Psr7](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.psr7.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Psr7](namespace-guzzlehttp-psr7.md)
 
 ## Query        in package    - [Aws](package-aws.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Query.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-psr7-query-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Query.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-psr7-query-toc-methods.md)
 
-[build()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Query.html#method_build)
-: string Build a query string from an array of key value pairs.[parse()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Query.html#method_parse)
+[build()](class-guzzlehttp-psr7-query-method-build.md)
+: string Build a query string from an array of key value pairs.[parse()](class-guzzlehttp-psr7-query-method-parse.md)
 : array<string\|int, mixed> Parse a query string into an associative array.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Query.html\#methods)
+### Methods  [header link](class-guzzlehttp-psr7-query-methods.md)
 
-#### build()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Query.html\#method_build)
+#### build()  [header link](class-guzzlehttp-psr7-query-method-build.md)
 
 Build a query string from an array of key value pairs.
 
@@ -56,7 +56,7 @@ false as false/true.
 
 string
 
-#### parse()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Query.html\#method_parse)
+#### parse()  [header link](class-guzzlehttp-psr7-query-method-parse.md)
 
 Parse a query string into an associative array.
 
@@ -92,9 +92,9 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Query.html#toc-methods)
+  - [Methods](class-guzzlehttp-psr7-query-toc-methods.md)
 - Methods
-  - [build()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Query.html#method_build)
-  - [parse()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Query.html#method_parse)
+  - [build()](class-guzzlehttp-psr7-query-method-build.md)
+  - [parse()](class-guzzlehttp-psr7-query-method-parse.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Query.html#top)
+[Back To Top](class-guzzlehttp-psr7-query-top.md)

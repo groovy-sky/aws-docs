@@ -2,21 +2,21 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [UseArnRegion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.usearnregion.html)
+- [UseArnRegion](namespace-aws-s3-usearnregion.md)
 
 ## ConfigurationInterface     in    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.UseArnRegion.ConfigurationInterface.html\#toc)
+### Table of Contents  [header link](class-aws-s3-usearnregion-configurationinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.UseArnRegion.ConfigurationInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-usearnregion-configurationinterface-toc-methods.md)
 
-[isUseArnRegion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.UseArnRegion.ConfigurationInterface.html#method_isUseArnRegion)
-: bool Returns whether or not to use the ARN region if it differs from client[toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.UseArnRegion.ConfigurationInterface.html#method_toArray)
+[isUseArnRegion()](class-aws-s3-usearnregion-configurationinterface-method-isusearnregion.md)
+: bool Returns whether or not to use the ARN region if it differs from client[toArray()](class-aws-s3-usearnregion-configurationinterface-method-toarray.md)
 : array<string\|int, mixed> Returns the configuration as an associative array
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.UseArnRegion.ConfigurationInterface.html\#methods)
+### Methods  [header link](class-aws-s3-usearnregion-configurationinterface-methods.md)
 
-#### isUseArnRegion()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.UseArnRegion.ConfigurationInterface.html\#method_isUseArnRegion)
+#### isUseArnRegion()  [header link](class-aws-s3-usearnregion-configurationinterface-method-isusearnregion.md)
 
 Returns whether or not to use the ARN region if it differs from client
 
@@ -28,7 +28,7 @@ Returns whether or not to use the ARN region if it differs from client
 
 bool
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.UseArnRegion.ConfigurationInterface.html\#method_toArray)
+#### toArray()  [header link](class-aws-s3-usearnregion-configurationinterface-method-toarray.md)
 
 Returns the configuration as an associative array
 
@@ -46,10 +46,10 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.UseArnRegion.ConfigurationInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.UseArnRegion.ConfigurationInterface.html#toc-methods)
+  - [Constants](class-aws-s3-usearnregion-configurationinterface-toc-constants.md)
+  - [Methods](class-aws-s3-usearnregion-configurationinterface-toc-methods.md)
 - Methods
-  - [isUseArnRegion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.UseArnRegion.ConfigurationInterface.html#method_isUseArnRegion)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.UseArnRegion.ConfigurationInterface.html#method_toArray)
+  - [isUseArnRegion()](class-aws-s3-usearnregion-configurationinterface-method-isusearnregion.md)
+  - [toArray()](class-aws-s3-usearnregion-configurationinterface-method-toarray.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.UseArnRegion.ConfigurationInterface.html#top)
+[Back To Top](class-aws-s3-usearnregion-configurationinterface-top.md)

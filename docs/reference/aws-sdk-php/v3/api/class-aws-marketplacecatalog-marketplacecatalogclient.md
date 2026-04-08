@@ -17,25 +17,25 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-09-17**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-catalog-2018-09-17.html)
+- [**2018-09-17**](api-marketplace-catalog-2018-09-17.md)
 
-  - [BatchDescribeEntities](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-catalog-2018-09-17.html#batchdescribeentities)
-  - [CancelChangeSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-catalog-2018-09-17.html#cancelchangeset)
-  - [DeleteResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-catalog-2018-09-17.html#deleteresourcepolicy)
-  - [DescribeChangeSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-catalog-2018-09-17.html#describechangeset)
-  - [DescribeEntity](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-catalog-2018-09-17.html#describeentity)
-  - [GetResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-catalog-2018-09-17.html#getresourcepolicy)
-  - [ListChangeSets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-catalog-2018-09-17.html#listchangesets)
-  - [ListEntities](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-catalog-2018-09-17.html#listentities)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-catalog-2018-09-17.html#listtagsforresource)
-  - [PutResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-catalog-2018-09-17.html#putresourcepolicy)
-  - [StartChangeSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-catalog-2018-09-17.html#startchangeset)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-catalog-2018-09-17.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-catalog-2018-09-17.html#untagresource)
+  - [BatchDescribeEntities](api-marketplace-catalog-2018-09-17-batchdescribeentities.md)
+  - [CancelChangeSet](api-marketplace-catalog-2018-09-17-cancelchangeset.md)
+  - [DeleteResourcePolicy](api-marketplace-catalog-2018-09-17-deleteresourcepolicy.md)
+  - [DescribeChangeSet](api-marketplace-catalog-2018-09-17-describechangeset.md)
+  - [DescribeEntity](api-marketplace-catalog-2018-09-17-describeentity.md)
+  - [GetResourcePolicy](api-marketplace-catalog-2018-09-17-getresourcepolicy.md)
+  - [ListChangeSets](api-marketplace-catalog-2018-09-17-listchangesets.md)
+  - [ListEntities](api-marketplace-catalog-2018-09-17-listentities.md)
+  - [ListTagsForResource](api-marketplace-catalog-2018-09-17-listtagsforresource.md)
+  - [PutResourcePolicy](api-marketplace-catalog-2018-09-17-putresourcepolicy.md)
+  - [StartChangeSet](api-marketplace-catalog-2018-09-17-startchangeset.md)
+  - [TagResource](api-marketplace-catalog-2018-09-17-tagresource.md)
+  - [UntagResource](api-marketplace-catalog-2018-09-17-untagresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceCatalog.MarketplaceCatalogClient.html\#toc)
+### Table of Contents  [header link](class-aws-marketplacecatalog-marketplacecatalogclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceCatalog.MarketplaceCatalogClient.html\#toc-methods)
+#### Methods  [header link](class-aws-marketplacecatalog-marketplacecatalogclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -66,7 +66,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceCatalog.MarketplaceCatalogClient.html\#methods)
+### Methods  [header link](class-aws-marketplacecatalog-marketplacecatalogclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -533,7 +533,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceCatalog.MarketplaceCatalogClient.html#toc-methods)
+  - [Methods](class-aws-marketplacecatalog-marketplacecatalogclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -560,4 +560,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceCatalog.MarketplaceCatalogClient.html#top)
+[Back To Top](class-aws-marketplacecatalog-marketplacecatalogclient-top.md)

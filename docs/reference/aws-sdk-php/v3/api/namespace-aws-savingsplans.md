@@ -4,15 +4,15 @@ Menu
 
 ## SavingsPlans
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.savingsplans.html\#toc)
+### Table of Contents  [header link](namespace-aws-savingsplans-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.savingsplans.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-savingsplans-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.savingsplans.exception.html)
+[Exception](namespace-aws-savingsplans-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.savingsplans.html\#toc-classes)
+#### Classes  [header link](namespace-aws-savingsplans-toc-classes.md)
 
-[SavingsPlansClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SavingsPlans.SavingsPlansClient.html)This client is used to interact with the **AWS Savings Plans** service.
+[SavingsPlansClient](class-aws-savingsplans-savingsplansclient.md)This client is used to interact with the **AWS Savings Plans** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.savingsplans.html#toc-classes)
+  - [Classes](namespace-aws-savingsplans-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.savingsplans.html#top)
+[Back To Top](namespace-aws-savingsplans-top.md)

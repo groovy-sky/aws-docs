@@ -36,7 +36,7 @@ Required: No
 A list of configuration IDs that produced warnings regarding their deletion, paired with
 a warning message.
 
-Type: Array of [DeletionWarning](https://docs.aws.amazon.com/application-discovery/latest/APIReference/API_DeletionWarning.html) objects
+Type: Array of [DeletionWarning](api-deletionwarning.md) objects
 
 Required: No
 
@@ -53,7 +53,7 @@ Required: No
 A list of configuration IDs that failed to delete during the deletion task, each paired
 with an error message.
 
-Type: Array of [FailedConfiguration](https://docs.aws.amazon.com/application-discovery/latest/APIReference/API_FailedConfiguration.html) objects
+Type: Array of [FailedConfiguration](api-failedconfiguration.md) objects
 
 Required: No
 
@@ -103,13 +103,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/discovery-2015-11-01/BatchDeleteConfigurationTask)
+- [AWS SDK for C++](../../../goto/sdkforcpp/discovery-2015-11-01/batchdeleteconfigurationtask.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/discovery-2015-11-01/BatchDeleteConfigurationTask)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/discovery-2015-11-01/batchdeleteconfigurationtask.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/discovery-2015-11-01/BatchDeleteConfigurationTask)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/discovery-2015-11-01/batchdeleteconfigurationtask.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 BatchDeleteAgentError
 

@@ -193,7 +193,7 @@ An array of attributes that describe the key schema for the table and indexes. I
 are adding a new global secondary index to the table, `AttributeDefinitions`
 must include the key element(s) of the new index.
 
-Type: Array of [AttributeDefinition](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_AttributeDefinition.html) objects
+Type: Array of [AttributeDefinition](api-attributedefinition.md) objects
 
 Required: No
 
@@ -244,10 +244,10 @@ You can create or delete only one global secondary index per `UpdateTable`
 operation.
 
 For more information, see [Managing Global\
-Secondary Indexes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI.OnlineOps.html) in the _Amazon DynamoDB Developer_
+Secondary Indexes](../../../../services/dynamodb/latest/developerguide/gsi-onlineops.md) in the _Amazon DynamoDB Developer_
 _Guide_.
 
-Type: Array of [GlobalSecondaryIndexUpdate](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GlobalSecondaryIndexUpdate.html) objects
+Type: Array of [GlobalSecondaryIndexUpdate](api-globalsecondaryindexupdate.md) objects
 
 Required: No
 
@@ -282,10 +282,10 @@ witness. For each witness, you can request one action:
 You can create or delete only one witness per `UpdateTable`
 operation.
 
-For more information, see [Multi-Region strong consistency (MRSC)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables_HowItWorks.html#V2globaltables_HowItWorks.consistency-modes) in the Amazon DynamoDB
+For more information, see [Multi-Region strong consistency (MRSC)](../../../../services/dynamodb/latest/developerguide/v2globaltables-howitworks-v2globaltables-howitworks-consistency-modes.md) in the Amazon DynamoDB
 Developer Guide
 
-Type: Array of [GlobalTableWitnessGroupUpdate](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GlobalTableWitnessGroupUpdate.html) objects
+Type: Array of [GlobalTableWitnessGroupUpdate](api-globaltablewitnessgroupupdate.md) objects
 
 Array Members: Fixed number of 1 item.
 
@@ -294,7 +294,7 @@ Required: No
 **[MultiRegionConsistency](#API_UpdateTable_RequestSyntax)**
 
 Specifies the consistency mode for a new global table. This parameter is only valid
-when you create a global table by specifying one or more [Create](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ReplicationGroupUpdate.html#DDB-Type-ReplicationGroupUpdate-Create) actions in the [ReplicaUpdates](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateTable.html#DDB-UpdateTable-request-ReplicaUpdates) action list.
+when you create a global table by specifying one or more [Create](api-replicationgroupupdate-ddb-type-replicationgroupupdate-create.md) actions in the [ReplicaUpdates](api-updatetable-ddb-updatetable-request-replicaupdates.md) action list.
 
 You can specify one of the following consistency modes:
 
@@ -307,7 +307,7 @@ consistency (MRSC).
 
 If you don't specify this field, the global table consistency mode defaults to
 `EVENTUAL`. For more information about global tables consistency modes,
-see [Consistency modes](https://docs.aws.amazon.com/V2globaltables_HowItWorks.html#V2globaltables_HowItWorks.consistency-modes) in DynamoDB developer guide.
+see [Consistency modes](../../../../services/v2globaltables-howitworks-v2globaltables-howitworks-consistency-modes/index.md) in DynamoDB developer guide.
 
 Type: String
 
@@ -321,7 +321,7 @@ Updates the maximum number of read and write units for the specified table in
 on-demand capacity mode. If you use this parameter, you must specify
 `MaxReadRequestUnits`, `MaxWriteRequestUnits`, or both.
 
-Type: [OnDemandThroughput](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_OnDemandThroughput.html) object
+Type: [OnDemandThroughput](api-ondemandthroughput.md) object
 
 Required: No
 
@@ -337,7 +337,7 @@ Required: No
 
 A list of replica update actions (create, delete, or update) for the table.
 
-Type: Array of [ReplicationGroupUpdate](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ReplicationGroupUpdate.html) objects
+Type: Array of [ReplicationGroupUpdate](api-replicationgroupupdate.md) objects
 
 Array Members: Minimum number of 1 item.
 
@@ -347,7 +347,7 @@ Required: No
 
 The new server-side encryption settings for the specified table.
 
-Type: [SSESpecification](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_SSESpecification.html) object
+Type: [SSESpecification](api-ssespecification.md) object
 
 Required: No
 
@@ -361,7 +361,7 @@ You receive a `ValidationException` if you try to enable a stream on a
 table that already has a stream, or if you try to disable a stream on a table that
 doesn't have a stream.
 
-Type: [StreamSpecification](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_StreamSpecification.html) object
+Type: [StreamSpecification](api-streamspecification.md) object
 
 Required: No
 
@@ -381,7 +381,7 @@ Required: No
 Represents the warm throughput (in read units per second and write units per second)
 for updating a table.
 
-Type: [WarmThroughput](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_WarmThroughput.html) object
+Type: [WarmThroughput](api-warmthroughput.md) object
 
 Required: No
 
@@ -578,7 +578,7 @@ The following data is returned in JSON format by the service.
 
 Represents the properties of the table.
 
-Type: [TableDescription](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TableDescription.html) object
+Type: [TableDescription](api-tabledescription.md) object
 
 ## Errors
 
@@ -762,27 +762,27 @@ Date: <Date>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/dynamodb-2012-08-10/UpdateTable)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/dynamodb-2012-08-10/updatetable.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/UpdateTable)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/dynamodb-2012-08-10/updatetable.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/UpdateTable)
+- [AWS SDK for C++](../../../goto/sdkforcpp/dynamodb-2012-08-10/updatetable.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/dynamodb-2012-08-10/UpdateTable)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/dynamodb-2012-08-10/updatetable.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateTable)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/dynamodb-2012-08-10/updatetable.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/dynamodb-2012-08-10/UpdateTable)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/dynamodb-2012-08-10/updatetable.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/dynamodb-2012-08-10/UpdateTable)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/dynamodb-2012-08-10/updatetable.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/UpdateTable)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/dynamodb-2012-08-10/updatetable.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/UpdateTable)
+- [AWS SDK for Python](../../../../services/goto/boto3/dynamodb-2012-08-10/updatetable.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/UpdateTable)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/updatetable.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 UpdateKinesisStreamingDestination
 

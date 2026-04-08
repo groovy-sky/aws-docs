@@ -17,43 +17,43 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2015-02-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html)
+- [**2015-02-01**](api-elasticfilesystem-2015-02-01.md)
 
-  - [CreateAccessPoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#createaccesspoint)
-  - [CreateFileSystem](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#createfilesystem)
-  - [CreateMountTarget](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#createmounttarget)
-  - [CreateReplicationConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#createreplicationconfiguration)
-  - [CreateTags](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#createtags)
-  - [DeleteAccessPoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#deleteaccesspoint)
-  - [DeleteFileSystem](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#deletefilesystem)
-  - [DeleteFileSystemPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#deletefilesystempolicy)
-  - [DeleteMountTarget](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#deletemounttarget)
-  - [DeleteReplicationConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#deletereplicationconfiguration)
-  - [DeleteTags](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#deletetags)
-  - [DescribeAccessPoints](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#describeaccesspoints)
-  - [DescribeAccountPreferences](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#describeaccountpreferences)
-  - [DescribeBackupPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#describebackuppolicy)
-  - [DescribeFileSystemPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#describefilesystempolicy)
-  - [DescribeFileSystems](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#describefilesystems)
-  - [DescribeLifecycleConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#describelifecycleconfiguration)
-  - [DescribeMountTargetSecurityGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#describemounttargetsecuritygroups)
-  - [DescribeMountTargets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#describemounttargets)
-  - [DescribeReplicationConfigurations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#describereplicationconfigurations)
-  - [DescribeTags](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#describetags)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#listtagsforresource)
-  - [ModifyMountTargetSecurityGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#modifymounttargetsecuritygroups)
-  - [PutAccountPreferences](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#putaccountpreferences)
-  - [PutBackupPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#putbackuppolicy)
-  - [PutFileSystemPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#putfilesystempolicy)
-  - [PutLifecycleConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#putlifecycleconfiguration)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#untagresource)
-  - [UpdateFileSystem](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#updatefilesystem)
-  - [UpdateFileSystemProtection](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticfilesystem-2015-02-01.html#updatefilesystemprotection)
+  - [CreateAccessPoint](api-elasticfilesystem-2015-02-01-createaccesspoint.md)
+  - [CreateFileSystem](api-elasticfilesystem-2015-02-01-createfilesystem.md)
+  - [CreateMountTarget](api-elasticfilesystem-2015-02-01-createmounttarget.md)
+  - [CreateReplicationConfiguration](api-elasticfilesystem-2015-02-01-createreplicationconfiguration.md)
+  - [CreateTags](api-elasticfilesystem-2015-02-01-createtags.md)
+  - [DeleteAccessPoint](api-elasticfilesystem-2015-02-01-deleteaccesspoint.md)
+  - [DeleteFileSystem](api-elasticfilesystem-2015-02-01-deletefilesystem.md)
+  - [DeleteFileSystemPolicy](api-elasticfilesystem-2015-02-01-deletefilesystempolicy.md)
+  - [DeleteMountTarget](api-elasticfilesystem-2015-02-01-deletemounttarget.md)
+  - [DeleteReplicationConfiguration](api-elasticfilesystem-2015-02-01-deletereplicationconfiguration.md)
+  - [DeleteTags](api-elasticfilesystem-2015-02-01-deletetags.md)
+  - [DescribeAccessPoints](api-elasticfilesystem-2015-02-01-describeaccesspoints.md)
+  - [DescribeAccountPreferences](api-elasticfilesystem-2015-02-01-describeaccountpreferences.md)
+  - [DescribeBackupPolicy](api-elasticfilesystem-2015-02-01-describebackuppolicy.md)
+  - [DescribeFileSystemPolicy](api-elasticfilesystem-2015-02-01-describefilesystempolicy.md)
+  - [DescribeFileSystems](api-elasticfilesystem-2015-02-01-describefilesystems.md)
+  - [DescribeLifecycleConfiguration](api-elasticfilesystem-2015-02-01-describelifecycleconfiguration.md)
+  - [DescribeMountTargetSecurityGroups](api-elasticfilesystem-2015-02-01-describemounttargetsecuritygroups.md)
+  - [DescribeMountTargets](api-elasticfilesystem-2015-02-01-describemounttargets.md)
+  - [DescribeReplicationConfigurations](api-elasticfilesystem-2015-02-01-describereplicationconfigurations.md)
+  - [DescribeTags](api-elasticfilesystem-2015-02-01-describetags.md)
+  - [ListTagsForResource](api-elasticfilesystem-2015-02-01-listtagsforresource.md)
+  - [ModifyMountTargetSecurityGroups](api-elasticfilesystem-2015-02-01-modifymounttargetsecuritygroups.md)
+  - [PutAccountPreferences](api-elasticfilesystem-2015-02-01-putaccountpreferences.md)
+  - [PutBackupPolicy](api-elasticfilesystem-2015-02-01-putbackuppolicy.md)
+  - [PutFileSystemPolicy](api-elasticfilesystem-2015-02-01-putfilesystempolicy.md)
+  - [PutLifecycleConfiguration](api-elasticfilesystem-2015-02-01-putlifecycleconfiguration.md)
+  - [TagResource](api-elasticfilesystem-2015-02-01-tagresource.md)
+  - [UntagResource](api-elasticfilesystem-2015-02-01-untagresource.md)
+  - [UpdateFileSystem](api-elasticfilesystem-2015-02-01-updatefilesystem.md)
+  - [UpdateFileSystemProtection](api-elasticfilesystem-2015-02-01-updatefilesystemprotection.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Efs.EfsClient.html\#toc)
+### Table of Contents  [header link](class-aws-efs-efsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Efs.EfsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-efs-efsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -84,7 +84,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Efs.EfsClient.html\#methods)
+### Methods  [header link](class-aws-efs-efsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -551,7 +551,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Efs.EfsClient.html#toc-methods)
+  - [Methods](class-aws-efs-efsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -578,4 +578,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Efs.EfsClient.html#top)
+[Back To Top](class-aws-efs-efsclient-top.md)

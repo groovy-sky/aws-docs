@@ -20,7 +20,7 @@ specify as many as 10 time ranges.
 
 The configuration can also include the time zone to use for the metric.
 
-Type: [AnomalyDetectorConfiguration](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_AnomalyDetectorConfiguration.html) object
+Type: [AnomalyDetectorConfiguration](api-anomalydetectorconfiguration.md) object
 
 Required: No
 
@@ -42,7 +42,7 @@ Use this object to include parameters to provide information about your metric t
 CloudWatch to help it build more accurate anomaly detection models.
 Currently, it includes the `PeriodicSpikes` parameter.
 
-Type: [MetricCharacteristics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricCharacteristics.html) object
+Type: [MetricCharacteristics](api-metriccharacteristics.md) object
 
 Required: No
 
@@ -67,7 +67,7 @@ parameters in the same operation:
 Instead, specify the metric math anomaly detector attributes as part of the property
 `MetricMathAnomalyDetector`.
 
-Type: [MetricMathAnomalyDetector](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricMathAnomalyDetector.html) object
+Type: [MetricMathAnomalyDetector](api-metricmathanomalydetector.md) object
 
 Required: No
 
@@ -118,7 +118,7 @@ parameters in the same operation:
 Instead, specify the single metric anomaly detector attributes as part of the property
 `SingleMetricAnomalyDetector`.
 
-Type: [SingleMetricAnomalyDetector](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_SingleMetricAnomalyDetector.html) object
+Type: [SingleMetricAnomalyDetector](api-singlemetricanomalydetector.md) object
 
 Required: No
 
@@ -183,27 +183,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/monitoring-2010-08-01/PutAnomalyDetector)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/monitoring-2010-08-01/putanomalydetector.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/monitoring-2010-08-01/PutAnomalyDetector)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/monitoring-2010-08-01/putanomalydetector.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/PutAnomalyDetector)
+- [AWS SDK for C++](../../../goto/sdkforcpp/monitoring-2010-08-01/putanomalydetector.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/monitoring-2010-08-01/PutAnomalyDetector)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/monitoring-2010-08-01/putanomalydetector.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/PutAnomalyDetector)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/monitoring-2010-08-01/putanomalydetector.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/monitoring-2010-08-01/PutAnomalyDetector)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/monitoring-2010-08-01/putanomalydetector.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/monitoring-2010-08-01/PutAnomalyDetector)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/monitoring-2010-08-01/putanomalydetector.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/monitoring-2010-08-01/PutAnomalyDetector)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/monitoring-2010-08-01/putanomalydetector.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/PutAnomalyDetector)
+- [AWS SDK for Python](../../../../services/goto/boto3/monitoring-2010-08-01/putanomalydetector.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/monitoring-2010-08-01/PutAnomalyDetector)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/monitoring-2010-08-01/putanomalydetector.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 PutAlarmMuteRule
 

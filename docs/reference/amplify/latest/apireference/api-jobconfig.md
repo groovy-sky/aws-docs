@@ -4,7 +4,7 @@ Describes the configuration details that apply to the jobs for an Amplify app.
 
 Use `JobConfig` to apply configuration to jobs, such as customizing the build instance size when you create or
 update an Amplify app. For more information about customizable build
-instances, see [Custom build instances](https://docs.aws.amazon.com/amplify/latest/userguide/custom-build-instance.html) in the _Amplify User Guide_.
+instances, see [Custom build instances](../../../../services/amplify/latest/userguide/custom-build-instance.md) in the _Amplify User Guide_.
 
 ## Contents
 
@@ -52,13 +52,13 @@ Required: Yes
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/amplify-2017-07-25/JobConfig)
+- [AWS SDK for C++](../../../goto/sdkforcpp/amplify-2017-07-25/jobconfig.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/amplify-2017-07-25/JobConfig)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/amplify-2017-07-25/jobconfig.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/amplify-2017-07-25/JobConfig)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/amplify-2017-07-25/jobconfig.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Job
 

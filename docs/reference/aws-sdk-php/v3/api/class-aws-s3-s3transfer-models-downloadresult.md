@@ -2,8 +2,8 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
-- [Models](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.models.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
+- [Models](namespace-aws-s3-s3transfer-models.md)
 
 ## DownloadResult     extends [Result](class-aws-result.md)   in package    - [Aws](package-aws.md)
 
@@ -11,16 +11,16 @@ FinalYes
 
 AWS result.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadResult.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-models-downloadresult-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadResult.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-models-downloadresult-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadResult.html#method___construct)
+[\_\_construct()](class-aws-s3-s3transfer-models-downloadresult-method-construct.md)
 : mixed [\_\_toString()](class-aws-result.md#method___toString)
 : string Provides debug information about the result object[appendMonitoringEvent()](class-aws-hasmonitoringeventstrait.md#method_appendMonitoringEvent)
 : mixed Append a client-side monitoring event to this object's event list[count()](class-aws-hasdatatrait.md#method_count)
 : int [get()](class-aws-result.md#method_get)
-: mixed\|null Get a specific key value from the result model.[getDownloadDataResult()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadResult.html#method_getDownloadDataResult)
+: mixed\|null Get a specific key value from the result model.[getDownloadDataResult()](class-aws-s3-s3transfer-models-downloadresult-method-getdownloaddataresult.md)
 : mixed [getIterator()](class-aws-hasdatatrait.md#method_getIterator)
 : Traversable[getMonitoringEvents()](class-aws-hasmonitoringeventstrait.md#method_getMonitoringEvents)
 : array<string\|int, mixed> Get client-side monitoring events attached to this object. Each event is
@@ -37,9 +37,9 @@ array modification (e.g., $foo\['bar'\]\['baz'\] = 'qux').[offsetSet()](class-aw
 of the Result model.[toArray()](class-aws-hasdatatrait.md#method_toArray)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadResult.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-models-downloadresult-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadResult.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3transfer-models-downloadresult-method-construct.md)
 
 `
     public
@@ -109,7 +109,7 @@ mixed\|null
 
 Value of the key or NULL if not found.
 
-#### getDownloadDataResult()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadResult.html\#method_getDownloadDataResult)
+#### getDownloadDataResult()  [header link](class-aws-s3-s3transfer-models-downloadresult-method-getdownloaddataresult.md)
 
 `
     public
@@ -280,14 +280,14 @@ Returns the result of the JMESPath expression.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadResult.html#toc-methods)
+  - [Methods](class-aws-s3-s3transfer-models-downloadresult-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadResult.html#method___construct)
+  - [\_\_construct()](class-aws-s3-s3transfer-models-downloadresult-method-construct.md)
   - [\_\_toString()](class-aws-result.md#method___toString)
   - [appendMonitoringEvent()](class-aws-hasmonitoringeventstrait.md#method_appendMonitoringEvent)
   - [count()](class-aws-hasdatatrait.md#method_count)
   - [get()](class-aws-result.md#method_get)
-  - [getDownloadDataResult()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadResult.html#method_getDownloadDataResult)
+  - [getDownloadDataResult()](class-aws-s3-s3transfer-models-downloadresult-method-getdownloaddataresult.md)
   - [getIterator()](class-aws-hasdatatrait.md#method_getIterator)
   - [getMonitoringEvents()](class-aws-hasmonitoringeventstrait.md#method_getMonitoringEvents)
   - [getPath()](class-aws-result.md#method_getPath)
@@ -300,4 +300,4 @@ Returns the result of the JMESPath expression.
   - [search()](class-aws-result.md#method_search)
   - [toArray()](class-aws-hasdatatrait.md#method_toArray)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadResult.html#top)
+[Back To Top](class-aws-s3-s3transfer-models-downloadresult-top.md)

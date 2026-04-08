@@ -53,16 +53,16 @@ To learn more about the supported keywords that you can use when mapping a contr
 source, see the following pages in the _AWS Audit Manager User_
 _Guide_:
 
-- [AWS Config rules supported by AWS Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/userguide/control-data-sources-config.html)
+- [AWS Config rules supported by AWS Audit Manager](../../../../services/audit-manager/latest/userguide/control-data-sources-config.md)
 
-- [AWS Security Hub CSPM controls supported by AWS Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/userguide/control-data-sources-ash.html)
+- [AWS Security Hub CSPM controls supported by AWS Audit Manager](../../../../services/audit-manager/latest/userguide/control-data-sources-ash.md)
 
 - [API calls\
-supported by AWS Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/userguide/control-data-sources-api.html)
+supported by AWS Audit Manager](../../../../services/audit-manager/latest/userguide/control-data-sources-api.md)
 
-- [AWS CloudTrail event names supported by AWS Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/userguide/control-data-sources-cloudtrail.html)
+- [AWS CloudTrail event names supported by AWS Audit Manager](../../../../services/audit-manager/latest/userguide/control-data-sources-cloudtrail.md)
 
-Type: [SourceKeyword](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_SourceKeyword.html) object
+Type: [SourceKeyword](api-sourcekeyword.md) object
 
 Required: No
 
@@ -122,13 +122,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/auditmanager-2017-07-25/ControlMappingSource)
+- [AWS SDK for C++](../../../goto/sdkforcpp/auditmanager-2017-07-25/controlmappingsource.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/auditmanager-2017-07-25/ControlMappingSource)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/auditmanager-2017-07-25/controlmappingsource.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/auditmanager-2017-07-25/ControlMappingSource)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/auditmanager-2017-07-25/controlmappingsource.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ControlInsightsMetadataItem
 

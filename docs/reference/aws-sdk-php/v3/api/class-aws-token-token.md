@@ -8,31 +8,31 @@ Menu
 Basic implementation of the AWS Token interface that allows callers to
 pass in an AWS token in the constructor.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#toc)
+### Table of Contents  [header link](class-aws-token-token-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-token-token-toc-interfaces.md)
 
 [TokenInterface](class-aws-token-tokeninterface.md)Provides access to an AWS token used for accessing AWS servicesSerializable
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#toc-methods)
+#### Methods  [header link](class-aws-token-token-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method___construct)
+[\_\_construct()](class-aws-token-token-method-construct.md)
 : mixed Constructs a new basic token object, with the specified AWS
-token[\_\_serialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method___serialize)
-: array<string\|int, mixed> [\_\_set\_state()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method___set_state)
-: mixed Sets the state of a token object[\_\_unserialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method___unserialize)
-: mixed Sets the state of this object from an array[getExpiration()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_getExpiration)
-: int Get the UNIX timestamp in which the token will expire[getSource()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_getSource)
-: string\|null [getToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_getToken)
-: string Returns the token this token object.[isExpired()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_isExpired)
-: bool Check if the token are expired[serialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_serialize)
-: string [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_toArray)
-: array<string\|int, mixed> Converts the token to an associative array.[unserialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_unserialize)
+token[\_\_serialize()](class-aws-token-token-method-serialize.md)
+: array<string\|int, mixed> [\_\_set\_state()](class-aws-token-token-method-set-state.md)
+: mixed Sets the state of a token object[\_\_unserialize()](class-aws-token-token-method-unserialize.md)
+: mixed Sets the state of this object from an array[getExpiration()](class-aws-token-token-method-getexpiration.md)
+: int Get the UNIX timestamp in which the token will expire[getSource()](class-aws-token-token-method-getsource.md)
+: string\|null [getToken()](class-aws-token-token-method-gettoken.md)
+: string Returns the token this token object.[isExpired()](class-aws-token-token-method-isexpired.md)
+: bool Check if the token are expired[serialize()](class-aws-token-token-method-serialize.md)
+: string [toArray()](class-aws-token-token-method-toarray.md)
+: array<string\|int, mixed> Converts the token to an associative array.[unserialize()](class-aws-token-token-method-unserialize.md)
 : mixed Sets the state of the object from serialized json data
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#methods)
+### Methods  [header link](class-aws-token-token-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-token-token-method-construct.md)
 
 Constructs a new basic token object, with the specified AWS
 token
@@ -55,10 +55,10 @@ $expires
 UNIX timestamp for when the token expires
 
 $source
-: [TokenSource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenSource.html) \|null
+: [TokenSource](class-aws-token-tokensource.md) \|null
 = null
 
-#### \_\_serialize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#method___serialize)
+#### \_\_serialize()  [header link](class-aws-token-token-method-serialize.md)
 
 `
     public
@@ -68,7 +68,7 @@ $source
 
 array<string\|int, mixed>
 
-#### \_\_set\_state()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#method___set_state)
+#### \_\_set\_state()  [header link](class-aws-token-token-method-set-state.md)
 
 Sets the state of a token object
 
@@ -83,7 +83,7 @@ $state
 
 array containing 'token' and 'expires'
 
-#### \_\_unserialize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#method___unserialize)
+#### \_\_unserialize()  [header link](class-aws-token-token-method-unserialize.md)
 
 Sets the state of this object from an array
 
@@ -96,7 +96,7 @@ Sets the state of this object from an array
 $data
 : mixed
 
-#### getExpiration()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#method_getExpiration)
+#### getExpiration()  [header link](class-aws-token-token-method-getexpiration.md)
 
 Get the UNIX timestamp in which the token will expire
 
@@ -108,7 +108,7 @@ Get the UNIX timestamp in which the token will expire
 
 int
 
-#### getSource()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#method_getSource)
+#### getSource()  [header link](class-aws-token-token-method-getsource.md)
 
 `
     public
@@ -118,7 +118,7 @@ int
 
 string\|null
 
-#### getToken()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#method_getToken)
+#### getToken()  [header link](class-aws-token-token-method-gettoken.md)
 
 Returns the token this token object.
 
@@ -130,7 +130,7 @@ Returns the token this token object.
 
 string
 
-#### isExpired()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#method_isExpired)
+#### isExpired()  [header link](class-aws-token-token-method-isexpired.md)
 
 Check if the token are expired
 
@@ -142,7 +142,7 @@ Check if the token are expired
 
 bool
 
-#### serialize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#method_serialize)
+#### serialize()  [header link](class-aws-token-token-method-serialize.md)
 
 `
     public
@@ -152,7 +152,7 @@ bool
 
 string
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#method_toArray)
+#### toArray()  [header link](class-aws-token-token-method-toarray.md)
 
 Converts the token to an associative array.
 
@@ -164,7 +164,7 @@ Converts the token to an associative array.
 
 array<string\|int, mixed>
 
-#### unserialize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#method_unserialize)
+#### unserialize()  [header link](class-aws-token-token-method-unserialize.md)
 
 Sets the state of the object from serialized json data
 
@@ -183,18 +183,18 @@ $serialized
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#toc-methods)
+  - [Methods](class-aws-token-token-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method___construct)
-  - [\_\_serialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method___serialize)
-  - [\_\_set\_state()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method___set_state)
-  - [\_\_unserialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method___unserialize)
-  - [getExpiration()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_getExpiration)
-  - [getSource()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_getSource)
-  - [getToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_getToken)
-  - [isExpired()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_isExpired)
-  - [serialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_serialize)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_toArray)
-  - [unserialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_unserialize)
+  - [\_\_construct()](class-aws-token-token-method-construct.md)
+  - [\_\_serialize()](class-aws-token-token-method-serialize.md)
+  - [\_\_set\_state()](class-aws-token-token-method-set-state.md)
+  - [\_\_unserialize()](class-aws-token-token-method-unserialize.md)
+  - [getExpiration()](class-aws-token-token-method-getexpiration.md)
+  - [getSource()](class-aws-token-token-method-getsource.md)
+  - [getToken()](class-aws-token-token-method-gettoken.md)
+  - [isExpired()](class-aws-token-token-method-isexpired.md)
+  - [serialize()](class-aws-token-token-method-serialize.md)
+  - [toArray()](class-aws-token-token-method-toarray.md)
+  - [unserialize()](class-aws-token-token-method-unserialize.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#top)
+[Back To Top](class-aws-token-token-top.md)

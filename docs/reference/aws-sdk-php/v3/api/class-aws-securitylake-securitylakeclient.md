@@ -17,43 +17,43 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-05-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html)
+- [**2018-05-10**](api-securitylake-2018-05-10.md)
 
-  - [CreateAwsLogSource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#createawslogsource)
-  - [CreateCustomLogSource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#createcustomlogsource)
-  - [CreateDataLake](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#createdatalake)
-  - [CreateDataLakeExceptionSubscription](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#createdatalakeexceptionsubscription)
-  - [CreateDataLakeOrganizationConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#createdatalakeorganizationconfiguration)
-  - [CreateSubscriber](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#createsubscriber)
-  - [CreateSubscriberNotification](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#createsubscribernotification)
-  - [DeleteAwsLogSource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#deleteawslogsource)
-  - [DeleteCustomLogSource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#deletecustomlogsource)
-  - [DeleteDataLake](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#deletedatalake)
-  - [DeleteDataLakeExceptionSubscription](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#deletedatalakeexceptionsubscription)
-  - [DeleteDataLakeOrganizationConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#deletedatalakeorganizationconfiguration)
-  - [DeleteSubscriber](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#deletesubscriber)
-  - [DeleteSubscriberNotification](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#deletesubscribernotification)
-  - [DeregisterDataLakeDelegatedAdministrator](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#deregisterdatalakedelegatedadministrator)
-  - [GetDataLakeExceptionSubscription](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#getdatalakeexceptionsubscription)
-  - [GetDataLakeOrganizationConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#getdatalakeorganizationconfiguration)
-  - [GetDataLakeSources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#getdatalakesources)
-  - [GetSubscriber](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#getsubscriber)
-  - [ListDataLakeExceptions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#listdatalakeexceptions)
-  - [ListDataLakes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#listdatalakes)
-  - [ListLogSources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#listlogsources)
-  - [ListSubscribers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#listsubscribers)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#listtagsforresource)
-  - [RegisterDataLakeDelegatedAdministrator](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#registerdatalakedelegatedadministrator)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#untagresource)
-  - [UpdateDataLake](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#updatedatalake)
-  - [UpdateDataLakeExceptionSubscription](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#updatedatalakeexceptionsubscription)
-  - [UpdateSubscriber](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#updatesubscriber)
-  - [UpdateSubscriberNotification](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-securitylake-2018-05-10.html#updatesubscribernotification)
+  - [CreateAwsLogSource](api-securitylake-2018-05-10-createawslogsource.md)
+  - [CreateCustomLogSource](api-securitylake-2018-05-10-createcustomlogsource.md)
+  - [CreateDataLake](api-securitylake-2018-05-10-createdatalake.md)
+  - [CreateDataLakeExceptionSubscription](api-securitylake-2018-05-10-createdatalakeexceptionsubscription.md)
+  - [CreateDataLakeOrganizationConfiguration](api-securitylake-2018-05-10-createdatalakeorganizationconfiguration.md)
+  - [CreateSubscriber](api-securitylake-2018-05-10-createsubscriber.md)
+  - [CreateSubscriberNotification](api-securitylake-2018-05-10-createsubscribernotification.md)
+  - [DeleteAwsLogSource](api-securitylake-2018-05-10-deleteawslogsource.md)
+  - [DeleteCustomLogSource](api-securitylake-2018-05-10-deletecustomlogsource.md)
+  - [DeleteDataLake](api-securitylake-2018-05-10-deletedatalake.md)
+  - [DeleteDataLakeExceptionSubscription](api-securitylake-2018-05-10-deletedatalakeexceptionsubscription.md)
+  - [DeleteDataLakeOrganizationConfiguration](api-securitylake-2018-05-10-deletedatalakeorganizationconfiguration.md)
+  - [DeleteSubscriber](api-securitylake-2018-05-10-deletesubscriber.md)
+  - [DeleteSubscriberNotification](api-securitylake-2018-05-10-deletesubscribernotification.md)
+  - [DeregisterDataLakeDelegatedAdministrator](api-securitylake-2018-05-10-deregisterdatalakedelegatedadministrator.md)
+  - [GetDataLakeExceptionSubscription](api-securitylake-2018-05-10-getdatalakeexceptionsubscription.md)
+  - [GetDataLakeOrganizationConfiguration](api-securitylake-2018-05-10-getdatalakeorganizationconfiguration.md)
+  - [GetDataLakeSources](api-securitylake-2018-05-10-getdatalakesources.md)
+  - [GetSubscriber](api-securitylake-2018-05-10-getsubscriber.md)
+  - [ListDataLakeExceptions](api-securitylake-2018-05-10-listdatalakeexceptions.md)
+  - [ListDataLakes](api-securitylake-2018-05-10-listdatalakes.md)
+  - [ListLogSources](api-securitylake-2018-05-10-listlogsources.md)
+  - [ListSubscribers](api-securitylake-2018-05-10-listsubscribers.md)
+  - [ListTagsForResource](api-securitylake-2018-05-10-listtagsforresource.md)
+  - [RegisterDataLakeDelegatedAdministrator](api-securitylake-2018-05-10-registerdatalakedelegatedadministrator.md)
+  - [TagResource](api-securitylake-2018-05-10-tagresource.md)
+  - [UntagResource](api-securitylake-2018-05-10-untagresource.md)
+  - [UpdateDataLake](api-securitylake-2018-05-10-updatedatalake.md)
+  - [UpdateDataLakeExceptionSubscription](api-securitylake-2018-05-10-updatedatalakeexceptionsubscription.md)
+  - [UpdateSubscriber](api-securitylake-2018-05-10-updatesubscriber.md)
+  - [UpdateSubscriberNotification](api-securitylake-2018-05-10-updatesubscribernotification.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecurityLake.SecurityLakeClient.html\#toc)
+### Table of Contents  [header link](class-aws-securitylake-securitylakeclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecurityLake.SecurityLakeClient.html\#toc-methods)
+#### Methods  [header link](class-aws-securitylake-securitylakeclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -84,7 +84,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecurityLake.SecurityLakeClient.html\#methods)
+### Methods  [header link](class-aws-securitylake-securitylakeclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -551,7 +551,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecurityLake.SecurityLakeClient.html#toc-methods)
+  - [Methods](class-aws-securitylake-securitylakeclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -578,4 +578,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecurityLake.SecurityLakeClient.html#top)
+[Back To Top](class-aws-securitylake-securitylakeclient-top.md)

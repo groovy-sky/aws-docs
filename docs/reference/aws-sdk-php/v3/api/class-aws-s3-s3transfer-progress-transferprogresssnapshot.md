@@ -2,32 +2,32 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
-- [Progress](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.progress.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
+- [Progress](namespace-aws-s3-s3transfer-progress.md)
 
 ## TransferProgressSnapshot        in package    - [Aws](package-aws.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-progress-transferprogresssnapshot-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-progress-transferprogresssnapshot-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html#method___construct)
-: mixed [fromArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html#method_fromArray)
-: [TransferProgressSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html)[getIdentifier()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html#method_getIdentifier)
-: string [getReason()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html#method_getReason)
-: Throwable\|string\|null [getResponse()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html#method_getResponse)
-: array<string\|int, mixed>\|null [getTotalBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html#method_getTotalBytes)
-: int [getTransferredBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html#method_getTransferredBytes)
-: int [ratioTransferred()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html#method_ratioTransferred)
-: float [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html#method_toArray)
-: array<string\|int, mixed> [withResponse()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html#method_withResponse)
-: [TransferProgressSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html)
+[\_\_construct()](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-construct.md)
+: mixed [fromArray()](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-fromarray.md)
+: [TransferProgressSnapshot](class-aws-s3-s3transfer-progress-transferprogresssnapshot.md)[getIdentifier()](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-getidentifier.md)
+: string [getReason()](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-getreason.md)
+: Throwable\|string\|null [getResponse()](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-getresponse.md)
+: array<string\|int, mixed>\|null [getTotalBytes()](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-gettotalbytes.md)
+: int [getTransferredBytes()](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-gettransferredbytes.md)
+: int [ratioTransferred()](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-ratiotransferred.md)
+: float [toArray()](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-toarray.md)
+: array<string\|int, mixed> [withResponse()](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-withresponse.md)
+: [TransferProgressSnapshot](class-aws-s3-s3transfer-progress-transferprogresssnapshot.md)
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-progress-transferprogresssnapshot-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-construct.md)
 
 `
     public
@@ -44,7 +44,7 @@ $identifier
 : Throwable\|string\|null
 = null
 
-#### fromArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html\#method_fromArray)
+#### fromArray()  [header link](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-fromarray.md)
 
 `
     public
@@ -57,9 +57,9 @@ $data
 
 ##### Return values
 
-[TransferProgressSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html)
+[TransferProgressSnapshot](class-aws-s3-s3transfer-progress-transferprogresssnapshot.md)
 
-#### getIdentifier()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html\#method_getIdentifier)
+#### getIdentifier()  [header link](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-getidentifier.md)
 
 `
     public
@@ -69,7 +69,7 @@ $data
 
 string
 
-#### getReason()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html\#method_getReason)
+#### getReason()  [header link](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-getreason.md)
 
 `
     public
@@ -79,7 +79,7 @@ string
 
 Throwable\|string\|null
 
-#### getResponse()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html\#method_getResponse)
+#### getResponse()  [header link](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-getresponse.md)
 
 `
     public
@@ -89,7 +89,7 @@ Throwable\|string\|null
 
 array<string\|int, mixed>\|null
 
-#### getTotalBytes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html\#method_getTotalBytes)
+#### getTotalBytes()  [header link](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-gettotalbytes.md)
 
 `
     public
@@ -99,7 +99,7 @@ array<string\|int, mixed>\|null
 
 int
 
-#### getTransferredBytes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html\#method_getTransferredBytes)
+#### getTransferredBytes()  [header link](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-gettransferredbytes.md)
 
 `
     public
@@ -109,7 +109,7 @@ int
 
 int
 
-#### ratioTransferred()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html\#method_ratioTransferred)
+#### ratioTransferred()  [header link](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-ratiotransferred.md)
 
 `
     public
@@ -119,7 +119,7 @@ int
 
 float
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html\#method_toArray)
+#### toArray()  [header link](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-toarray.md)
 
 `
     public
@@ -129,7 +129,7 @@ float
 
 array<string\|int, mixed>
 
-#### withResponse()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html\#method_withResponse)
+#### withResponse()  [header link](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-withresponse.md)
 
 `
     public
@@ -142,7 +142,7 @@ $response
 
 ##### Return values
 
-[TransferProgressSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html)
+[TransferProgressSnapshot](class-aws-s3-s3transfer-progress-transferprogresssnapshot.md)
 <\-\- modeled\_exceptions -->
 
 ×
@@ -150,17 +150,17 @@ $response
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html#toc-methods)
+  - [Methods](class-aws-s3-s3transfer-progress-transferprogresssnapshot-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html#method___construct)
-  - [fromArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html#method_fromArray)
-  - [getIdentifier()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html#method_getIdentifier)
-  - [getReason()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html#method_getReason)
-  - [getResponse()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html#method_getResponse)
-  - [getTotalBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html#method_getTotalBytes)
-  - [getTransferredBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html#method_getTransferredBytes)
-  - [ratioTransferred()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html#method_ratioTransferred)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html#method_toArray)
-  - [withResponse()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html#method_withResponse)
+  - [\_\_construct()](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-construct.md)
+  - [fromArray()](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-fromarray.md)
+  - [getIdentifier()](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-getidentifier.md)
+  - [getReason()](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-getreason.md)
+  - [getResponse()](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-getresponse.md)
+  - [getTotalBytes()](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-gettotalbytes.md)
+  - [getTransferredBytes()](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-gettransferredbytes.md)
+  - [ratioTransferred()](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-ratiotransferred.md)
+  - [toArray()](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-toarray.md)
+  - [withResponse()](class-aws-s3-s3transfer-progress-transferprogresssnapshot-method-withresponse.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html#top)
+[Back To Top](class-aws-s3-s3transfer-progress-transferprogresssnapshot-top.md)

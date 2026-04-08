@@ -104,7 +104,7 @@ The specified parameter isn't valid. Review the available parameters for the API
 request.
 
 For more information about service event errors, see [Amazon ECS\
-service event messages](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-event-messages-list.html).
+service event messages](../../../../services/amazonecs/latest/developerguide/service-event-messages-list.md).
 
 **message**
 
@@ -127,7 +127,7 @@ HTTP Status Code: 500
 In the following example or examples, the Authorization header contents
 ( `AUTHPARAMS`) must be replaced with an AWS Signature
 Version 4 signature. For more information, see [Signature\
-Version 4 Signing Process](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) in the _AWS_
+Version 4 Signing Process](../../../../general/general/latest/gr/signature-version-4.md) in the _AWS_
 _General Reference_.
 
 You only need to learn how to sign HTTP requests if you intend to create them
@@ -179,27 +179,27 @@ x-amzn-RequestId: 123a4b56-7c89-01d2-3ef4-example5678f
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ecs-2014-11-13/ListClusters)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ecs-2014-11-13/listclusters.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ecs-2014-11-13/ListClusters)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ecs-2014-11-13/listclusters.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/ListClusters)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/listclusters.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ecs-2014-11-13/ListClusters)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ecs-2014-11-13/listclusters.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/ListClusters)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/listclusters.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ecs-2014-11-13/ListClusters)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ecs-2014-11-13/listclusters.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ecs-2014-11-13/ListClusters)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ecs-2014-11-13/listclusters.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ecs-2014-11-13/ListClusters)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ecs-2014-11-13/listclusters.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ecs-2014-11-13/ListClusters)
+- [AWS SDK for Python](../../../../services/goto/boto3/ecs-2014-11-13/listclusters.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/ListClusters)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/listclusters.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ListAttributes
 

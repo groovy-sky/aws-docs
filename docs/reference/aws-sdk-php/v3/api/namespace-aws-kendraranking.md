@@ -4,15 +4,15 @@ Menu
 
 ## KendraRanking
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kendraranking.html\#toc)
+### Table of Contents  [header link](namespace-aws-kendraranking-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kendraranking.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-kendraranking-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kendraranking.exception.html)
+[Exception](namespace-aws-kendraranking-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kendraranking.html\#toc-classes)
+#### Classes  [header link](namespace-aws-kendraranking-toc-classes.md)
 
-[KendraRankingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KendraRanking.KendraRankingClient.html)This client is used to interact with the **Amazon Kendra Intelligent Ranking** service.
+[KendraRankingClient](class-aws-kendraranking-kendrarankingclient.md)This client is used to interact with the **Amazon Kendra Intelligent Ranking** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kendraranking.html#toc-classes)
+  - [Classes](namespace-aws-kendraranking-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kendraranking.html#top)
+[Back To Top](namespace-aws-kendraranking-top.md)

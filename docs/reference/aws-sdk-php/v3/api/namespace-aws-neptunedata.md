@@ -4,15 +4,15 @@ Menu
 
 ## Neptunedata
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.neptunedata.html\#toc)
+### Table of Contents  [header link](namespace-aws-neptunedata-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.neptunedata.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-neptunedata-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.neptunedata.exception.html)
+[Exception](namespace-aws-neptunedata-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.neptunedata.html\#toc-classes)
+#### Classes  [header link](namespace-aws-neptunedata-toc-classes.md)
 
-[NeptunedataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Neptunedata.NeptunedataClient.html)This client is used to interact with the **Amazon NeptuneData** service.
+[NeptunedataClient](class-aws-neptunedata-neptunedataclient.md)This client is used to interact with the **Amazon NeptuneData** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.neptunedata.html#toc-classes)
+  - [Classes](namespace-aws-neptunedata-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.neptunedata.html#top)
+[Back To Top](namespace-aws-neptunedata-top.md)

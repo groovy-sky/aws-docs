@@ -4,15 +4,15 @@ Menu
 
 ## MigrationHubStrategyRecommendations
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.migrationhubstrategyrecommendations.html\#toc)
+### Table of Contents  [header link](namespace-aws-migrationhubstrategyrecommendations-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.migrationhubstrategyrecommendations.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-migrationhubstrategyrecommendations-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.migrationhubstrategyrecommendations.exception.html)
+[Exception](namespace-aws-migrationhubstrategyrecommendations-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.migrationhubstrategyrecommendations.html\#toc-classes)
+#### Classes  [header link](namespace-aws-migrationhubstrategyrecommendations-toc-classes.md)
 
-[MigrationHubStrategyRecommendationsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubStrategyRecommendations.MigrationHubStrategyRecommendationsClient.html)This client is used to interact with the **Migration Hub Strategy Recommendations** service.
+[MigrationHubStrategyRecommendationsClient](class-aws-migrationhubstrategyrecommendations-migrationhubstrategyrecommendationsclient.md)This client is used to interact with the **Migration Hub Strategy Recommendations** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.migrationhubstrategyrecommendations.html#toc-classes)
+  - [Classes](namespace-aws-migrationhubstrategyrecommendations-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.migrationhubstrategyrecommendations.html#top)
+[Back To Top](namespace-aws-migrationhubstrategyrecommendations-top.md)

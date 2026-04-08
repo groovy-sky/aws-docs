@@ -64,7 +64,7 @@ when it reaches an `IDLE` state.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/athena/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -111,7 +111,7 @@ Required: No
 Contains engine data processing unit (DPU) configuration settings and parameter
 mappings.
 
-Type: [EngineConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_EngineConfiguration.html) object
+Type: [EngineConfiguration](api-engineconfiguration.md) object
 
 Required: Yes
 
@@ -134,7 +134,7 @@ Required: No
 Contains the configuration settings for managed log persistence, delivering logs to Amazon S3 buckets,
 Amazon CloudWatch log groups etc.
 
-Type: [MonitoringConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_MonitoringConfiguration.html) object
+Type: [MonitoringConfiguration](api-monitoringconfiguration.md) object
 
 Required: No
 
@@ -144,7 +144,7 @@ The notebook version. This value is supplied automatically for notebook sessions
 the Athena console and is not required for programmatic session access. The
 only valid notebook version is `Athena notebook version 1`. If
 you specify a value for `NotebookVersion`, you must also specify a value for
-`NotebookId`. See [EngineConfiguration:AdditionalConfigs](https://docs.aws.amazon.com/athena/latest/APIReference/API_EngineConfiguration.html#athena-Type-EngineConfiguration-AdditionalConfigs).
+`NotebookId`. See [EngineConfiguration:AdditionalConfigs](api-engineconfiguration-athena-type-engineconfiguration-additionalconfigs.md).
 
 Type: String
 
@@ -166,7 +166,7 @@ Required: No
 
 A list of comma separated tags to add to the session that is created.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/athena/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Required: No
 
@@ -233,7 +233,7 @@ Valid Values: `CREATING | CREATED | IDLE | BUSY | TERMINATING | TERMINATED | DEG
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/athena/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **InternalServerException**
 
@@ -285,27 +285,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/athena-2017-05-18/StartSession)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/athena-2017-05-18/startsession.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/athena-2017-05-18/StartSession)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/athena-2017-05-18/startsession.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/StartSession)
+- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/startsession.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/athena-2017-05-18/StartSession)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/athena-2017-05-18/startsession.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/StartSession)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/startsession.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/athena-2017-05-18/StartSession)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/athena-2017-05-18/startsession.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/athena-2017-05-18/StartSession)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/athena-2017-05-18/startsession.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/athena-2017-05-18/StartSession)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/athena-2017-05-18/startsession.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/athena-2017-05-18/StartSession)
+- [AWS SDK for Python](../../../../services/goto/boto3/athena-2017-05-18/startsession.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/StartSession)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/startsession.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 StartQueryExecution
 

@@ -4,15 +4,15 @@ Menu
 
 ## CodeCatalyst
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codecatalyst.html\#toc)
+### Table of Contents  [header link](namespace-aws-codecatalyst-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codecatalyst.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-codecatalyst-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codecatalyst.exception.html)
+[Exception](namespace-aws-codecatalyst-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codecatalyst.html\#toc-classes)
+#### Classes  [header link](namespace-aws-codecatalyst-toc-classes.md)
 
-[CodeCatalystClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeCatalyst.CodeCatalystClient.html)This client is used to interact with the **Amazon CodeCatalyst** service.
+[CodeCatalystClient](class-aws-codecatalyst-codecatalystclient.md)This client is used to interact with the **Amazon CodeCatalyst** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codecatalyst.html#toc-classes)
+  - [Classes](namespace-aws-codecatalyst-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codecatalyst.html#top)
+[Back To Top](namespace-aws-codecatalyst-top.md)

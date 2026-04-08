@@ -4,20 +4,20 @@ Menu
 
 ## Signature
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.signature.html\#toc)
+### Table of Contents  [header link](namespace-aws-signature-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.signature.html\#toc-interfaces)
+#### Interfaces  [header link](namespace-aws-signature-toc-interfaces.md)
 
-[SignatureInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureInterface.html)Interface used to provide interchangeable strategies for signing requests
+[SignatureInterface](class-aws-signature-signatureinterface.md)Interface used to provide interchangeable strategies for signing requests
 using the various AWS signature protocols.
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.signature.html\#toc-classes)
+#### Classes  [header link](namespace-aws-signature-toc-classes.md)
 
-[AnonymousSignature](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.AnonymousSignature.html)Provides anonymous client access (does not sign requests).[DpopSignature](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.DpopSignature.html)[S3ExpressSignature](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.S3ExpressSignature.html)Amazon S3 signature version 4 support.[S3SignatureV4](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.S3SignatureV4.html)Amazon S3 signature version 4 support.[SignatureProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureProvider.html)Signature providers.[SignatureV4](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html)Signature Version 4
+[AnonymousSignature](class-aws-signature-anonymoussignature.md)Provides anonymous client access (does not sign requests).[DpopSignature](class-aws-signature-dpopsignature.md)[S3ExpressSignature](class-aws-signature-s3expresssignature.md)Amazon S3 signature version 4 support.[S3SignatureV4](class-aws-signature-s3signaturev4.md)Amazon S3 signature version 4 support.[SignatureProvider](class-aws-signature-signatureprovider.md)Signature providers.[SignatureV4](class-aws-signature-signaturev4.md)Signature Version 4
 
-#### Traits  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.signature.html\#toc-traits)
+#### Traits  [header link](namespace-aws-signature-toc-traits.md)
 
-[SignatureTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureTrait.html)Provides signature calculation for SignatureV4.
+[SignatureTrait](class-aws-signature-signaturetrait.md)Provides signature calculation for SignatureV4.
 
 ```
 
@@ -28,8 +28,8 @@ using the various AWS signature protocols.
 **On this page**
 
 - Table Of Contents
-  - [Interfaces](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.signature.html#toc-interfaces)
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.signature.html#toc-classes)
-  - [Traits](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.signature.html#toc-traits)
+  - [Interfaces](namespace-aws-signature-toc-interfaces.md)
+  - [Classes](namespace-aws-signature-toc-classes.md)
+  - [Traits](namespace-aws-signature-toc-traits.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.signature.html#top)
+[Back To Top](namespace-aws-signature-top.md)

@@ -8,7 +8,7 @@ these console controls, numbered **1** ( **View alarms**) and
 **2** (a **+** sign for creating or editing an
 alarm).
 
-![The controls in the Instances table in the EC2 console for viewing and creating alarms. 1. View alarms 2. Plus sign symbol.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/instance-alarms.png)
+![The controls in the Instances table in the EC2 console for viewing and creating alarms. 1. View alarms 2. Plus sign symbol.](../../../images/awsec2/latest/userguide/images/instance-alarms-png.md)
 
 ## View alarms from the Instances screen
 

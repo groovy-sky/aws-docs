@@ -55,7 +55,7 @@ Required: Yes
 When removing authorization to associate a VPC that was created by one AWS account with a hosted zone that was created with a different AWS account, a complex type that includes the ID and region of the
 VPC.
 
-Type: [VPC](https://docs.aws.amazon.com/Route53/latest/APIReference/API_VPC.html) object
+Type: [VPC](api-vpc.md) object
 
 Required: Yes
 
@@ -73,7 +73,7 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/Route53/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **ConcurrentModification**
 
@@ -149,27 +149,27 @@ HTTP/1.1 200
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/route53-2013-04-01/DeleteVPCAssociationAuthorization)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53-2013-04-01/deletevpcassociationauthorization.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/route53-2013-04-01/DeleteVPCAssociationAuthorization)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53-2013-04-01/deletevpcassociationauthorization.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53-2013-04-01/DeleteVPCAssociationAuthorization)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53-2013-04-01/deletevpcassociationauthorization.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/route53-2013-04-01/DeleteVPCAssociationAuthorization)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53-2013-04-01/deletevpcassociationauthorization.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53-2013-04-01/DeleteVPCAssociationAuthorization)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53-2013-04-01/deletevpcassociationauthorization.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/route53-2013-04-01/DeleteVPCAssociationAuthorization)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53-2013-04-01/deletevpcassociationauthorization.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/route53-2013-04-01/DeleteVPCAssociationAuthorization)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53-2013-04-01/deletevpcassociationauthorization.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/route53-2013-04-01/DeleteVPCAssociationAuthorization)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53-2013-04-01/deletevpcassociationauthorization.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/route53-2013-04-01/DeleteVPCAssociationAuthorization)
+- [AWS SDK for Python](../../../../services/goto/boto3/route53-2013-04-01/deletevpcassociationauthorization.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53-2013-04-01/DeleteVPCAssociationAuthorization)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53-2013-04-01/deletevpcassociationauthorization.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DeleteTrafficPolicyInstance
 

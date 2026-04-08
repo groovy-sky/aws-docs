@@ -117,7 +117,7 @@ AWS CloudFormation
 Use a language-specific AWS SDK to launch an instance.AWS SDK
 
 [AWS SDK for\
-.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/ec2-2016-11-15/RunInstances)
+.NET](../../../../reference/goto/dotnetsdkv3/ec2-2016-11-15/runinstances.md)
 
 [AWS SDK for\
 C++](../../../../reference/goto/sdkforcpp/ec2-2016-11-15/runinstances.md)
@@ -129,13 +129,13 @@ Go](../../../../reference/goto/sdkforgov1/ec2-2016-11-15/runinstances.md)
 Java](../../../../reference/goto/sdkforjava/ec2-2016-11-15/runinstances.md)
 
 [AWS SDK\
-for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/ec2-2016-11-15/RunInstances)
+for JavaScript](../../../../reference/goto/awsjavascriptsdk/ec2-2016-11-15/runinstances.md)
 
 [AWS SDK for PHP\
 V3](../../../../reference/goto/sdkforphpv3/ec2-2016-11-15/runinstances.md)
 
 [AWS SDK for\
-Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/RunInstances)
+Python](../../../goto/boto3/ec2-2016-11-15/runinstances.md)
 
 [AWS SDK for\
 Ruby V3](../../../../reference/goto/sdkforrubyv3/ec2-2016-11-15/runinstances.md)

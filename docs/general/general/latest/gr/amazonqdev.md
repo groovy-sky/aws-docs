@@ -47,13 +47,13 @@ month.
 ### Quotas for Amazon Q Developer Pro (in the AWS Management Console)
 
 FeatureQuota (per user)[Generative\
-SQL](https://docs.aws.amazon.com/redshift/latest/mgmt/query-editor-v2-generative-ai.html)1,000 queries per month[Analyze network reachability](https://docs.aws.amazon.com/vpc/latest/reachability/amazon-q-network-reachability-analysis.html)20 requests per day
+SQL](../../../../services/redshift/latest/mgmt/query-editor-v2-generative-ai.md)1,000 queries per month[Analyze network reachability](../../../../services/vpc/latest/reachability/amazon-q-network-reachability-analysis.md)20 requests per day
 
 ### Quotas for Amazon Q Developer Pro (in Amazon CodeCatalyst)
 
-FeatureQuota (per user)[Amazon Q Developer Agent for software development](https://docs.aws.amazon.com/codecatalyst/latest/adminguide/managing-generative-ai-features.html)30 per month[Pull request summaries](https://docs.aws.amazon.com/codecatalyst/latest/userguide/getting-started-project-assistance.html#getting-started-project-assistance-pull-request-summary)20 per month
+FeatureQuota (per user)[Amazon Q Developer Agent for software development](../../../../services/codecatalyst/latest/adminguide/managing-generative-ai-features.md)30 per month[Pull request summaries](../../../../services/codecatalyst/latest/userguide/getting-started-project-assistance-getting-started-project-assistance-pull-request-summary.md)20 per month
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](docconventions.md)
 
 Amazon Q Business
 

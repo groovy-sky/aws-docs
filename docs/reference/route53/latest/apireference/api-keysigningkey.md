@@ -115,7 +115,7 @@ principal for your account. Specify the following:
 - `"Service": "dnssec-route53.amazonaws.com"`
 
 For more information about working with the customer managed key in AWS KMS, see [AWS Key Management Service\
-concepts](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html).
+concepts](../../../../services/kms/latest/developerguide/concepts.md).
 
 Type: String
 
@@ -222,13 +222,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53-2013-04-01/KeySigningKey)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53-2013-04-01/keysigningkey.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53-2013-04-01/KeySigningKey)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53-2013-04-01/keysigningkey.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53-2013-04-01/KeySigningKey)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53-2013-04-01/keysigningkey.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 HostedZoneSummary
 

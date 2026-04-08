@@ -17,27 +17,27 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-05-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-launch-wizard-2018-05-10.html)
+- [**2018-05-10**](api-launch-wizard-2018-05-10.md)
 
-  - [CreateDeployment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-launch-wizard-2018-05-10.html#createdeployment)
-  - [DeleteDeployment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-launch-wizard-2018-05-10.html#deletedeployment)
-  - [GetDeployment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-launch-wizard-2018-05-10.html#getdeployment)
-  - [GetDeploymentPatternVersion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-launch-wizard-2018-05-10.html#getdeploymentpatternversion)
-  - [GetWorkload](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-launch-wizard-2018-05-10.html#getworkload)
-  - [GetWorkloadDeploymentPattern](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-launch-wizard-2018-05-10.html#getworkloaddeploymentpattern)
-  - [ListDeploymentEvents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-launch-wizard-2018-05-10.html#listdeploymentevents)
-  - [ListDeploymentPatternVersions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-launch-wizard-2018-05-10.html#listdeploymentpatternversions)
-  - [ListDeployments](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-launch-wizard-2018-05-10.html#listdeployments)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-launch-wizard-2018-05-10.html#listtagsforresource)
-  - [ListWorkloadDeploymentPatterns](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-launch-wizard-2018-05-10.html#listworkloaddeploymentpatterns)
-  - [ListWorkloads](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-launch-wizard-2018-05-10.html#listworkloads)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-launch-wizard-2018-05-10.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-launch-wizard-2018-05-10.html#untagresource)
-  - [UpdateDeployment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-launch-wizard-2018-05-10.html#updatedeployment)
+  - [CreateDeployment](api-launch-wizard-2018-05-10-createdeployment.md)
+  - [DeleteDeployment](api-launch-wizard-2018-05-10-deletedeployment.md)
+  - [GetDeployment](api-launch-wizard-2018-05-10-getdeployment.md)
+  - [GetDeploymentPatternVersion](api-launch-wizard-2018-05-10-getdeploymentpatternversion.md)
+  - [GetWorkload](api-launch-wizard-2018-05-10-getworkload.md)
+  - [GetWorkloadDeploymentPattern](api-launch-wizard-2018-05-10-getworkloaddeploymentpattern.md)
+  - [ListDeploymentEvents](api-launch-wizard-2018-05-10-listdeploymentevents.md)
+  - [ListDeploymentPatternVersions](api-launch-wizard-2018-05-10-listdeploymentpatternversions.md)
+  - [ListDeployments](api-launch-wizard-2018-05-10-listdeployments.md)
+  - [ListTagsForResource](api-launch-wizard-2018-05-10-listtagsforresource.md)
+  - [ListWorkloadDeploymentPatterns](api-launch-wizard-2018-05-10-listworkloaddeploymentpatterns.md)
+  - [ListWorkloads](api-launch-wizard-2018-05-10-listworkloads.md)
+  - [TagResource](api-launch-wizard-2018-05-10-tagresource.md)
+  - [UntagResource](api-launch-wizard-2018-05-10-untagresource.md)
+  - [UpdateDeployment](api-launch-wizard-2018-05-10-updatedeployment.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LaunchWizard.LaunchWizardClient.html\#toc)
+### Table of Contents  [header link](class-aws-launchwizard-launchwizardclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LaunchWizard.LaunchWizardClient.html\#toc-methods)
+#### Methods  [header link](class-aws-launchwizard-launchwizardclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -68,7 +68,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LaunchWizard.LaunchWizardClient.html\#methods)
+### Methods  [header link](class-aws-launchwizard-launchwizardclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -535,7 +535,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LaunchWizard.LaunchWizardClient.html#toc-methods)
+  - [Methods](class-aws-launchwizard-launchwizardclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -562,4 +562,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LaunchWizard.LaunchWizardClient.html#top)
+[Back To Top](class-aws-launchwizard-launchwizardclient-top.md)

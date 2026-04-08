@@ -2,9 +2,9 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [Crypto](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.crypto.html)
+- [Crypto](namespace-aws-s3-crypto.md)
 
-## S3EncryptionClientV2     extends AbstractCryptoClientV2   in package    - [Aws](package-aws.md)       Uses  [CipherBuilderTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.Cipher.CipherBuilderTrait.html), [CryptoParamsTraitV2](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.CryptoParamsTraitV2.html), [DecryptionTraitV2](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.DecryptionTraitV2.html), [EncryptionTraitV2](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.EncryptionTraitV2.html), [UserAgentTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.UserAgentTrait.html)
+## S3EncryptionClientV2     extends AbstractCryptoClientV2   in package    - [Aws](package-aws.md)       Uses  [CipherBuilderTrait](class-aws-crypto-cipher-cipherbuildertrait.md), [CryptoParamsTraitV2](class-aws-s3-crypto-cryptoparamstraitv2.md), [DecryptionTraitV2](class-aws-crypto-decryptiontraitv2.md), [EncryptionTraitV2](class-aws-crypto-encryptiontraitv2.md), [UserAgentTrait](class-aws-s3-crypto-useragenttrait.md)
 
 Provides a wrapper for an S3Client that supplies functionality to encrypt
 data on putObject\[Async\] calls and decrypt data on getObject\[Async\] calls.
@@ -68,28 +68,28 @@ $encryptionClient->getObject([
 ]);
 `
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html\#toc)
+### Table of Contents  [header link](class-aws-s3-crypto-s3encryptionclientv2-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html\#toc-constants)
+#### Constants  [header link](class-aws-s3-crypto-s3encryptionclientv2-toc-constants.md)
 
-[CRYPTO\_VERSION](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html#constant_CRYPTO_VERSION)
+[CRYPTO\_VERSION](class-aws-s3-crypto-s3encryptionclientv2-constant-crypto-version.md)
 = '2.1'
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-crypto-s3encryptionclientv2-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html#method___construct)
-: mixed [getObject()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html#method_getObject)
-: [Result](class-aws-result.md)Retrieves an object from S3 and decrypts the data in the 'Body' field.[getObjectAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html#method_getObjectAsync)
+[\_\_construct()](class-aws-s3-crypto-s3encryptionclientv2-method-construct.md)
+: mixed [getObject()](class-aws-s3-crypto-s3encryptionclientv2-method-getobject.md)
+: [Result](class-aws-result.md)Retrieves an object from S3 and decrypts the data in the 'Body' field.[getObjectAsync()](class-aws-s3-crypto-s3encryptionclientv2-method-getobjectasync.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Promises to retrieve an object from S3 and decrypt the data in the
-'Body' field.[putObject()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html#method_putObject)
+'Body' field.[putObject()](class-aws-s3-crypto-s3encryptionclientv2-method-putobject.md)
 : [Result](class-aws-result.md)Encrypts the data in the 'Body' field of $args and uploads it to the
-specified location on S3.[putObjectAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html#method_putObjectAsync)
+specified location on S3.[putObjectAsync()](class-aws-s3-crypto-s3encryptionclientv2-method-putobjectasync.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Encrypts the data in the 'Body' field of $args and promises to upload it
 to the specified location on S3.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html\#constants)
+### Constants  [header link](class-aws-s3-crypto-s3encryptionclientv2-constants.md)
 
-#### CRYPTO\_VERSION  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html\#constant_CRYPTO_VERSION)
+#### CRYPTO\_VERSION  [header link](class-aws-s3-crypto-s3encryptionclientv2-constant-crypto-version.md)
 
 `
     public
@@ -98,9 +98,9 @@ to the specified location on S3.
     = '2.1'
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html\#methods)
+### Methods  [header link](class-aws-s3-crypto-s3encryptionclientv2-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-crypto-s3encryptionclientv2-method-construct.md)
 
 `
     public
@@ -123,7 +123,7 @@ Suffix for a client wide
 default when using instruction
 files for metadata storage.
 
-#### getObject()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html\#method_getObject)
+#### getObject()  [header link](class-aws-s3-crypto-s3encryptionclientv2-method-getobject.md)
 
 Retrieves an object from S3 and decrypts the data in the 'Body' field.
 
@@ -172,7 +172,7 @@ KMS materials for any KMS key ID, instead of needing the KMS key ID to
 be specified and provided to the decrypt operation. Ignored for non-KMS
 materials providers. Defaults to false.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html\#method_getObject\#tags)
+##### Tags  [header link](class-aws-s3-crypto-s3encryptionclientv2-method-getobject-tags.md)
 
 throwsInvalidArgumentException
 
@@ -188,7 +188,7 @@ GetObject call result with the 'Body' field
 wrapped in a decryption stream with its metadata
 information.
 
-#### getObjectAsync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html\#method_getObjectAsync)
+#### getObjectAsync()  [header link](class-aws-s3-crypto-s3encryptionclientv2-method-getobjectasync.md)
 
 Promises to retrieve an object from S3 and decrypt the data in the
 'Body' field.
@@ -245,7 +245,7 @@ KMS materials for any KMS key ID, instead of needing the KMS key ID to
 be specified and provided to the decrypt operation. Ignored for non-KMS
 materials providers. Defaults to false.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html\#method_getObjectAsync\#tags)
+##### Tags  [header link](class-aws-s3-crypto-s3encryptionclientv2-method-getobjectasync-tags.md)
 
 throwsInvalidArgumentException
 
@@ -256,7 +256,7 @@ passed or are passed incorrectly.
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### putObject()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html\#method_putObject)
+#### putObject()  [header link](class-aws-s3-crypto-s3encryptionclientv2-method-putobject.md)
 
 Encrypts the data in the 'Body' field of $args and uploads it to the
 specified location on S3.
@@ -309,7 +309,7 @@ to default.
 instruction file if an using an InstructionFileMetadataHandler was
 determined.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html\#method_putObject\#tags)
+##### Tags  [header link](class-aws-s3-crypto-s3encryptionclientv2-method-putobject-tags.md)
 
 throwsInvalidArgumentException
 
@@ -324,7 +324,7 @@ passed or are passed incorrectly.
 PutObject call result with the details of uploading
 the encrypted file.
 
-#### putObjectAsync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html\#method_putObjectAsync)
+#### putObjectAsync()  [header link](class-aws-s3-crypto-s3encryptionclientv2-method-putobjectasync.md)
 
 Encrypts the data in the 'Body' field of $args and promises to upload it
 to the specified location on S3.
@@ -376,7 +376,7 @@ to default.
 - @InstructionFileSuffix: (string\|null) Suffix used when writing to an
 instruction file if using an InstructionFileMetadataHandler.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html\#method_putObjectAsync\#tags)
+##### Tags  [header link](class-aws-s3-crypto-s3encryptionclientv2-method-putobjectasync-tags.md)
 
 throwsInvalidArgumentException
 
@@ -393,15 +393,15 @@ passed or are passed incorrectly.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html#toc-methods)
+  - [Constants](class-aws-s3-crypto-s3encryptionclientv2-toc-constants.md)
+  - [Methods](class-aws-s3-crypto-s3encryptionclientv2-toc-methods.md)
 - Constants
-  - [CRYPTO\_VERSION](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html#constant_CRYPTO_VERSION)
+  - [CRYPTO\_VERSION](class-aws-s3-crypto-s3encryptionclientv2-constant-crypto-version.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html#method___construct)
-  - [getObject()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html#method_getObject)
-  - [getObjectAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html#method_getObjectAsync)
-  - [putObject()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html#method_putObject)
-  - [putObjectAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html#method_putObjectAsync)
+  - [\_\_construct()](class-aws-s3-crypto-s3encryptionclientv2-method-construct.md)
+  - [getObject()](class-aws-s3-crypto-s3encryptionclientv2-method-getobject.md)
+  - [getObjectAsync()](class-aws-s3-crypto-s3encryptionclientv2-method-getobjectasync.md)
+  - [putObject()](class-aws-s3-crypto-s3encryptionclientv2-method-putobject.md)
+  - [putObjectAsync()](class-aws-s3-crypto-s3encryptionclientv2-method-putobjectasync.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionClientV2.html#top)
+[Back To Top](class-aws-s3-crypto-s3encryptionclientv2-top.md)

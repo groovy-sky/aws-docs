@@ -4,15 +4,15 @@ Menu
 
 ## ApiGatewayManagementApi
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.apigatewaymanagementapi.html\#toc)
+### Table of Contents  [header link](namespace-aws-apigatewaymanagementapi-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.apigatewaymanagementapi.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-apigatewaymanagementapi-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.apigatewaymanagementapi.exception.html)
+[Exception](namespace-aws-apigatewaymanagementapi-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.apigatewaymanagementapi.html\#toc-classes)
+#### Classes  [header link](namespace-aws-apigatewaymanagementapi-toc-classes.md)
 
-[ApiGatewayManagementApiClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApiGatewayManagementApi.ApiGatewayManagementApiClient.html)This client is used to interact with the **AmazonApiGatewayManagementApi** service.
+[ApiGatewayManagementApiClient](class-aws-apigatewaymanagementapi-apigatewaymanagementapiclient.md)This client is used to interact with the **AmazonApiGatewayManagementApi** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.apigatewaymanagementapi.html#toc-classes)
+  - [Classes](namespace-aws-apigatewaymanagementapi-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.apigatewaymanagementapi.html#top)
+[Back To Top](namespace-aws-apigatewaymanagementapi-top.md)

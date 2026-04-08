@@ -17,43 +17,43 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-10-17**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html)
+- [**2017-10-17**](api-secretsmanager-2017-10-17.md)
 
-  - [BatchGetSecretValue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#batchgetsecretvalue)
-  - [CancelRotateSecret](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#cancelrotatesecret)
-  - [CreateSecret](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#createsecret)
-  - [DeleteResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#deleteresourcepolicy)
-  - [DeleteSecret](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#deletesecret)
-  - [DescribeSecret](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#describesecret)
-  - [GetRandomPassword](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#getrandompassword)
-  - [GetResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#getresourcepolicy)
-  - [GetSecretValue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#getsecretvalue)
-  - [ListSecretVersionIds](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#listsecretversionids)
-  - [ListSecrets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#listsecrets)
-  - [PutResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#putresourcepolicy)
-  - [PutSecretValue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#putsecretvalue)
-  - [RemoveRegionsFromReplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#removeregionsfromreplication)
-  - [ReplicateSecretToRegions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#replicatesecrettoregions)
-  - [RestoreSecret](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#restoresecret)
-  - [RotateSecret](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#rotatesecret)
-  - [StopReplicationToReplica](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#stopreplicationtoreplica)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#untagresource)
-  - [UpdateSecret](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#updatesecret)
-  - [UpdateSecretVersionStage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#updatesecretversionstage)
-  - [ValidateResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-secretsmanager-2017-10-17.html#validateresourcepolicy)
+  - [BatchGetSecretValue](api-secretsmanager-2017-10-17-batchgetsecretvalue.md)
+  - [CancelRotateSecret](api-secretsmanager-2017-10-17-cancelrotatesecret.md)
+  - [CreateSecret](api-secretsmanager-2017-10-17-createsecret.md)
+  - [DeleteResourcePolicy](api-secretsmanager-2017-10-17-deleteresourcepolicy.md)
+  - [DeleteSecret](api-secretsmanager-2017-10-17-deletesecret.md)
+  - [DescribeSecret](api-secretsmanager-2017-10-17-describesecret.md)
+  - [GetRandomPassword](api-secretsmanager-2017-10-17-getrandompassword.md)
+  - [GetResourcePolicy](api-secretsmanager-2017-10-17-getresourcepolicy.md)
+  - [GetSecretValue](api-secretsmanager-2017-10-17-getsecretvalue.md)
+  - [ListSecretVersionIds](api-secretsmanager-2017-10-17-listsecretversionids.md)
+  - [ListSecrets](api-secretsmanager-2017-10-17-listsecrets.md)
+  - [PutResourcePolicy](api-secretsmanager-2017-10-17-putresourcepolicy.md)
+  - [PutSecretValue](api-secretsmanager-2017-10-17-putsecretvalue.md)
+  - [RemoveRegionsFromReplication](api-secretsmanager-2017-10-17-removeregionsfromreplication.md)
+  - [ReplicateSecretToRegions](api-secretsmanager-2017-10-17-replicatesecrettoregions.md)
+  - [RestoreSecret](api-secretsmanager-2017-10-17-restoresecret.md)
+  - [RotateSecret](api-secretsmanager-2017-10-17-rotatesecret.md)
+  - [StopReplicationToReplica](api-secretsmanager-2017-10-17-stopreplicationtoreplica.md)
+  - [TagResource](api-secretsmanager-2017-10-17-tagresource.md)
+  - [UntagResource](api-secretsmanager-2017-10-17-untagresource.md)
+  - [UpdateSecret](api-secretsmanager-2017-10-17-updatesecret.md)
+  - [UpdateSecretVersionStage](api-secretsmanager-2017-10-17-updatesecretversionstage.md)
+  - [ValidateResourcePolicy](api-secretsmanager-2017-10-17-validateresourcepolicy.md)
 
 ## Examples
 
 ### Legacy Code Examples With Guidance
 
-The following examples demonstrate how to use this service with the AWS SDK for PHP. These code examples are available in the [AWS SDK for PHP Developer Guide](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/secretsmanager-examples-manage-secret.html).
+The following examples demonstrate how to use this service with the AWS SDK for PHP. These code examples are available in the [AWS SDK for PHP Developer Guide](../../../sdk-for-php/v3/developer-guide/secretsmanager-examples-manage-secret.md).
 
-- [Managing secrets using the Secrets Manager API](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/secretsmanager-examples-manage-secret.html)
+- [Managing secrets using the Secrets Manager API](../../../sdk-for-php/v3/developer-guide/secretsmanager-examples-manage-secret.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecretsManager.SecretsManagerClient.html\#toc)
+### Table of Contents  [header link](class-aws-secretsmanager-secretsmanagerclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecretsManager.SecretsManagerClient.html\#toc-methods)
+#### Methods  [header link](class-aws-secretsmanager-secretsmanagerclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -84,7 +84,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecretsManager.SecretsManagerClient.html\#methods)
+### Methods  [header link](class-aws-secretsmanager-secretsmanagerclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -551,7 +551,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecretsManager.SecretsManagerClient.html#toc-methods)
+  - [Methods](class-aws-secretsmanager-secretsmanagerclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -578,4 +578,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecretsManager.SecretsManagerClient.html#top)
+[Back To Top](class-aws-secretsmanager-secretsmanagerclient-top.md)

@@ -2,23 +2,23 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [Handler](namespace-aws-handler.md)
-- [Guzzle](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.handler.guzzle.html)
+- [Guzzle](namespace-aws-handler-guzzle.md)
 
 ## GuzzleHandler        in package    - [Aws](package-aws.md)
 
 A request handler that sends PSR-7-compatible requests with Guzzle.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Handler.Guzzle.GuzzleHandler.html\#toc)
+### Table of Contents  [header link](class-aws-handler-guzzle-guzzlehandler-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Handler.Guzzle.GuzzleHandler.html\#toc-methods)
+#### Methods  [header link](class-aws-handler-guzzle-guzzlehandler-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Handler.Guzzle.GuzzleHandler.html#method___construct)
-: mixed [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Handler.Guzzle.GuzzleHandler.html#method___invoke)
-: [Promise](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Promise.html)
+[\_\_construct()](class-aws-handler-guzzle-guzzlehandler-method-construct.md)
+: mixed [\_\_invoke()](class-aws-handler-guzzle-guzzlehandler-method-invoke.md)
+: [Promise](class-guzzlehttp-promise-promise.md)
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Handler.Guzzle.GuzzleHandler.html\#methods)
+### Methods  [header link](class-aws-handler-guzzle-guzzlehandler-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Handler.Guzzle.GuzzleHandler.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-handler-guzzle-guzzlehandler-method-construct.md)
 
 `
     public
@@ -30,7 +30,7 @@ $client
 : ClientInterface
 = null
 
-#### \_\_invoke()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Handler.Guzzle.GuzzleHandler.html\#method___invoke)
+#### \_\_invoke()  [header link](class-aws-handler-guzzle-guzzlehandler-method-invoke.md)
 
 `
     public
@@ -45,7 +45,7 @@ $request
 
 ##### Return values
 
-[Promise](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Promise.html)
+[Promise](class-guzzlehttp-promise-promise.md)
 <\-\- modeled\_exceptions -->
 
 ×
@@ -53,9 +53,9 @@ $request
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Handler.Guzzle.GuzzleHandler.html#toc-methods)
+  - [Methods](class-aws-handler-guzzle-guzzlehandler-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Handler.Guzzle.GuzzleHandler.html#method___construct)
-  - [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Handler.Guzzle.GuzzleHandler.html#method___invoke)
+  - [\_\_construct()](class-aws-handler-guzzle-guzzlehandler-method-construct.md)
+  - [\_\_invoke()](class-aws-handler-guzzle-guzzlehandler-method-invoke.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Handler.Guzzle.GuzzleHandler.html#top)
+[Back To Top](class-aws-handler-guzzle-guzzlehandler-top.md)

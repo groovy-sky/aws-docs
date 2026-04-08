@@ -2,39 +2,39 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
-- [Models](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.models.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
+- [Models](namespace-aws-s3-s3transfer-models.md)
 
 ## UploadRequest     extends [AbstractTransferRequest](class-aws-s3-s3transfer-models-abstracttransferrequest.md)   in package    - [Aws](package-aws.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-models-uploadrequest-toc.md)
 
-#### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html\#toc-properties)
+#### Properties  [header link](class-aws-s3-s3transfer-models-uploadrequest-toc-properties.md)
 
-[$configKeys](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html#property_configKeys)
+[$configKeys](class-aws-s3-s3transfer-models-uploadrequest-property-configkeys.md)
 : array<string\|int, mixed>
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-models-uploadrequest-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html#method___construct)
+[\_\_construct()](class-aws-s3-s3transfer-models-uploadrequest-method-construct.md)
 : mixed [getConfig()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getConfig)
 : array<string\|int, mixed> [getListeners()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getListeners)
 : array<string\|int, mixed> Get current listeners.[getProgressTracker()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getProgressTracker)
-: [AbstractTransferListener](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractTransferListener.html) \|null Get the progress tracker.[getSingleObjectListeners()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getSingleObjectListeners)
-: array<string\|int, mixed> Get listeners that should receive single-object events.[getSource()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html#method_getSource)
-: [StreamInterface](class-psr-http-message-streaminterface.md) \|string Get the source.[getUploadRequestArgs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html#method_getUploadRequestArgs)
+: [AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md) \|null Get the progress tracker.[getSingleObjectListeners()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getSingleObjectListeners)
+: array<string\|int, mixed> Get listeners that should receive single-object events.[getSource()](class-aws-s3-s3transfer-models-uploadrequest-method-getsource.md)
+: [StreamInterface](class-psr-http-message-streaminterface.md) \|string Get the source.[getUploadRequestArgs()](class-aws-s3-s3transfer-models-uploadrequest-method-getuploadrequestargs.md)
 : array<string\|int, mixed> Get the put object request.[updateConfigWithDefaults()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_updateConfigWithDefaults)
 : void [validateConfig()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_validateConfig)
 : void For validating config. By default, it provides an empty
-implementation.[validateRequiredParameters()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html#method_validateRequiredParameters)
-: void Helper method for validating required parameters.[validateSource()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html#method_validateSource)
+implementation.[validateRequiredParameters()](class-aws-s3-s3transfer-models-uploadrequest-method-validaterequiredparameters.md)
+: void Helper method for validating required parameters.[validateSource()](class-aws-s3-s3transfer-models-uploadrequest-method-validatesource.md)
 : void Helper method for validating the given source.
 
-### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html\#properties)
+### Properties  [header link](class-aws-s3-s3transfer-models-uploadrequest-properties.md)
 
-#### $configKeys  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html\#property_configKeys)
+#### $configKeys  [header link](class-aws-s3-s3transfer-models-uploadrequest-property-configkeys.md)
 
 `
     public
@@ -42,9 +42,9 @@ implementation.[validateRequiredParameters()](https://docs.aws.amazon.com/aws-sd
     $configKeys
      = ['multipart_upload_threshold_bytes' => 'int', 'target_part_size_bytes' => 'int', 'track_progress' => 'bool', 'concurrency' => 'int', 'request_checksum_calculation' => 'string', 'resume_enabled' => 'bool', 'resume_file_path' => 'string']`
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-models-uploadrequest-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3transfer-models-uploadrequest-method-construct.md)
 
 `
     public
@@ -86,9 +86,9 @@ location to be generated. If specified the file name must end in `.resume`
 otherwise it will be added automatically.
 
 $listeners
-: array<string\|int, [AbstractTransferListener](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractTransferListener.html) >\|null
+: array<string\|int, [AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md) >\|null
 = \[\]$progressTracker
-: [AbstractTransferListener](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractTransferListener.html) \|null
+: [AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md) \|null
 = null
 
 #### getConfig()  [header link](class-aws-s3-s3transfer-models-abstracttransferrequest.md\#method_getConfig)
@@ -123,7 +123,7 @@ Get the progress tracker.
 
 ##### Return values
 
-[AbstractTransferListener](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractTransferListener.html) \|null
+[AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md) \|null
 
 #### getSingleObjectListeners()  [header link](class-aws-s3-s3transfer-models-abstracttransferrequest.md\#method_getSingleObjectListeners)
 
@@ -137,7 +137,7 @@ Get listeners that should receive single-object events.
 
 array<string\|int, mixed>
 
-#### getSource()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html\#method_getSource)
+#### getSource()  [header link](class-aws-s3-s3transfer-models-uploadrequest-method-getsource.md)
 
 Get the source.
 
@@ -149,7 +149,7 @@ Get the source.
 
 [StreamInterface](class-psr-http-message-streaminterface.md) \|string
 
-#### getUploadRequestArgs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html\#method_getUploadRequestArgs)
+#### getUploadRequestArgs()  [header link](class-aws-s3-s3transfer-models-uploadrequest-method-getuploadrequestargs.md)
 
 Get the put object request.
 
@@ -181,7 +181,7 @@ implementation.
     public
                     validateConfig() : void`
 
-#### validateRequiredParameters()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html\#method_validateRequiredParameters)
+#### validateRequiredParameters()  [header link](class-aws-s3-s3transfer-models-uploadrequest-method-validaterequiredparameters.md)
 
 Helper method for validating required parameters.
 
@@ -195,7 +195,7 @@ $customMessage
 : string\|null
 = null
 
-#### validateSource()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html\#method_validateSource)
+#### validateSource()  [header link](class-aws-s3-s3transfer-models-uploadrequest-method-validatesource.md)
 
 Helper method for validating the given source.
 
@@ -210,21 +210,21 @@ Helper method for validating the given source.
 **On this page**
 
 - Table Of Contents
-  - [Properties](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html#toc-properties)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html#toc-methods)
+  - [Properties](class-aws-s3-s3transfer-models-uploadrequest-toc-properties.md)
+  - [Methods](class-aws-s3-s3transfer-models-uploadrequest-toc-methods.md)
 - Properties
-  - [$configKeys](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html#property_configKeys)
+  - [$configKeys](class-aws-s3-s3transfer-models-uploadrequest-property-configkeys.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html#method___construct)
+  - [\_\_construct()](class-aws-s3-s3transfer-models-uploadrequest-method-construct.md)
   - [getConfig()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getConfig)
   - [getListeners()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getListeners)
   - [getProgressTracker()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getProgressTracker)
   - [getSingleObjectListeners()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getSingleObjectListeners)
-  - [getSource()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html#method_getSource)
-  - [getUploadRequestArgs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html#method_getUploadRequestArgs)
+  - [getSource()](class-aws-s3-s3transfer-models-uploadrequest-method-getsource.md)
+  - [getUploadRequestArgs()](class-aws-s3-s3transfer-models-uploadrequest-method-getuploadrequestargs.md)
   - [updateConfigWithDefaults()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_updateConfigWithDefaults)
   - [validateConfig()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_validateConfig)
-  - [validateRequiredParameters()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html#method_validateRequiredParameters)
-  - [validateSource()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html#method_validateSource)
+  - [validateRequiredParameters()](class-aws-s3-s3transfer-models-uploadrequest-method-validaterequiredparameters.md)
+  - [validateSource()](class-aws-s3-s3transfer-models-uploadrequest-method-validatesource.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadRequest.html#top)
+[Back To Top](class-aws-s3-s3transfer-models-uploadrequest-top.md)

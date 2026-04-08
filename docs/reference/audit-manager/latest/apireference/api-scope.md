@@ -39,7 +39,7 @@ This API parameter is no longer supported. If you use this parameter to specify 
 or more AWS services, Audit Manager ignores this input. Instead, the
 value for `awsServices` will show as empty.
 
-Type: Array of [AWSService](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_AWSService.html) objects
+Type: Array of [AWSService](api-awsservice.md) objects
 
 Required: No
 
@@ -47,13 +47,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/auditmanager-2017-07-25/Scope)
+- [AWS SDK for C++](../../../goto/sdkforcpp/auditmanager-2017-07-25/scope.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/auditmanager-2017-07-25/Scope)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/auditmanager-2017-07-25/scope.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/auditmanager-2017-07-25/Scope)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/auditmanager-2017-07-25/scope.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Role
 

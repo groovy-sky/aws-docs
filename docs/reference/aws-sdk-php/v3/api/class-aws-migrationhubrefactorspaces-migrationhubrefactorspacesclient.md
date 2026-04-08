@@ -17,36 +17,36 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2021-10-26**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html)
+- [**2021-10-26**](api-migration-hub-refactor-spaces-2021-10-26.md)
 
-  - [CreateApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#createapplication)
-  - [CreateEnvironment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#createenvironment)
-  - [CreateRoute](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#createroute)
-  - [CreateService](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#createservice)
-  - [DeleteApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#deleteapplication)
-  - [DeleteEnvironment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#deleteenvironment)
-  - [DeleteResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#deleteresourcepolicy)
-  - [DeleteRoute](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#deleteroute)
-  - [DeleteService](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#deleteservice)
-  - [GetApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#getapplication)
-  - [GetEnvironment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#getenvironment)
-  - [GetResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#getresourcepolicy)
-  - [GetRoute](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#getroute)
-  - [GetService](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#getservice)
-  - [ListApplications](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#listapplications)
-  - [ListEnvironmentVpcs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#listenvironmentvpcs)
-  - [ListEnvironments](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#listenvironments)
-  - [ListRoutes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#listroutes)
-  - [ListServices](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#listservices)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#listtagsforresource)
-  - [PutResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#putresourcepolicy)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#untagresource)
-  - [UpdateRoute](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migration-hub-refactor-spaces-2021-10-26.html#updateroute)
+  - [CreateApplication](api-migration-hub-refactor-spaces-2021-10-26-createapplication.md)
+  - [CreateEnvironment](api-migration-hub-refactor-spaces-2021-10-26-createenvironment.md)
+  - [CreateRoute](api-migration-hub-refactor-spaces-2021-10-26-createroute.md)
+  - [CreateService](api-migration-hub-refactor-spaces-2021-10-26-createservice.md)
+  - [DeleteApplication](api-migration-hub-refactor-spaces-2021-10-26-deleteapplication.md)
+  - [DeleteEnvironment](api-migration-hub-refactor-spaces-2021-10-26-deleteenvironment.md)
+  - [DeleteResourcePolicy](api-migration-hub-refactor-spaces-2021-10-26-deleteresourcepolicy.md)
+  - [DeleteRoute](api-migration-hub-refactor-spaces-2021-10-26-deleteroute.md)
+  - [DeleteService](api-migration-hub-refactor-spaces-2021-10-26-deleteservice.md)
+  - [GetApplication](api-migration-hub-refactor-spaces-2021-10-26-getapplication.md)
+  - [GetEnvironment](api-migration-hub-refactor-spaces-2021-10-26-getenvironment.md)
+  - [GetResourcePolicy](api-migration-hub-refactor-spaces-2021-10-26-getresourcepolicy.md)
+  - [GetRoute](api-migration-hub-refactor-spaces-2021-10-26-getroute.md)
+  - [GetService](api-migration-hub-refactor-spaces-2021-10-26-getservice.md)
+  - [ListApplications](api-migration-hub-refactor-spaces-2021-10-26-listapplications.md)
+  - [ListEnvironmentVpcs](api-migration-hub-refactor-spaces-2021-10-26-listenvironmentvpcs.md)
+  - [ListEnvironments](api-migration-hub-refactor-spaces-2021-10-26-listenvironments.md)
+  - [ListRoutes](api-migration-hub-refactor-spaces-2021-10-26-listroutes.md)
+  - [ListServices](api-migration-hub-refactor-spaces-2021-10-26-listservices.md)
+  - [ListTagsForResource](api-migration-hub-refactor-spaces-2021-10-26-listtagsforresource.md)
+  - [PutResourcePolicy](api-migration-hub-refactor-spaces-2021-10-26-putresourcepolicy.md)
+  - [TagResource](api-migration-hub-refactor-spaces-2021-10-26-tagresource.md)
+  - [UntagResource](api-migration-hub-refactor-spaces-2021-10-26-untagresource.md)
+  - [UpdateRoute](api-migration-hub-refactor-spaces-2021-10-26-updateroute.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubRefactorSpaces.MigrationHubRefactorSpacesClient.html\#toc)
+### Table of Contents  [header link](class-aws-migrationhubrefactorspaces-migrationhubrefactorspacesclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubRefactorSpaces.MigrationHubRefactorSpacesClient.html\#toc-methods)
+#### Methods  [header link](class-aws-migrationhubrefactorspaces-migrationhubrefactorspacesclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -77,7 +77,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubRefactorSpaces.MigrationHubRefactorSpacesClient.html\#methods)
+### Methods  [header link](class-aws-migrationhubrefactorspaces-migrationhubrefactorspacesclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -544,7 +544,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubRefactorSpaces.MigrationHubRefactorSpacesClient.html#toc-methods)
+  - [Methods](class-aws-migrationhubrefactorspaces-migrationhubrefactorspacesclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -571,4 +571,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubRefactorSpaces.MigrationHubRefactorSpacesClient.html#top)
+[Back To Top](class-aws-migrationhubrefactorspaces-migrationhubrefactorspacesclient-top.md)

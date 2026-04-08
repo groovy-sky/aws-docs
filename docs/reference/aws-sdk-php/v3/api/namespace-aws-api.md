@@ -4,22 +4,22 @@ Menu
 
 ## Api
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.api.html\#toc)
+### Table of Contents  [header link](namespace-aws-api-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.api.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-api-namespaces.md)
 
-[Cbor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.api.cbor.html)[ErrorParser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.api.errorparser.html)[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.api.exception.html)[Parser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.api.parser.html)[Serializer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.api.serializer.html)
+[Cbor](namespace-aws-api-cbor.md)[ErrorParser](namespace-aws-api-errorparser.md)[Exception](namespace-aws-api-exception.md)[Parser](namespace-aws-api-parser.md)[Serializer](namespace-aws-api-serializer.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.api.html\#toc-classes)
+#### Classes  [header link](namespace-aws-api-toc-classes.md)
 
-[AbstractModel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html)Base class that is used by most API shapes[ApiProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html)API providers.[DateTimeResult](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DateTimeResult.html)DateTime overrides that make DateTime work more seamlessly as a string,
-with JSON documents, and with JMESPath.[DocModel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html)Encapsulates the documentation strings for a given service-version and
+[AbstractModel](class-aws-api-abstractmodel.md)Base class that is used by most API shapes[ApiProvider](class-aws-api-apiprovider.md)API providers.[DateTimeResult](class-aws-api-datetimeresult.md)DateTime overrides that make DateTime work more seamlessly as a string,
+with JSON documents, and with JMESPath.[DocModel](class-aws-api-docmodel.md)Encapsulates the documentation strings for a given service-version and
 provides methods for extracting the desired parts related to a service,
-operation, error, or shape (i.e., parameter).[ListShape](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ListShape.html)Represents a list shape.[MapShape](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.MapShape.html)Represents a map shape.[Operation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html)Represents an API operation.[Service](class-aws-api-service.md)Represents a web service API model.[Shape](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Shape.html)Base class representing a modeled shape.[ShapeMap](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html)Builds shape based on shape references.[StructureShape](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html)Represents a structure shape and resolve member shape references.[TimestampShape](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.TimestampShape.html)Represents a timestamp shape.[Validator](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Validator.html)Validates a schema against a hash of input.
+operation, error, or shape (i.e., parameter).[ListShape](class-aws-api-listshape.md)Represents a list shape.[MapShape](class-aws-api-mapshape.md)Represents a map shape.[Operation](class-aws-api-operation.md)Represents an API operation.[Service](class-aws-api-service.md)Represents a web service API model.[Shape](class-aws-api-shape.md)Base class representing a modeled shape.[ShapeMap](class-aws-api-shapemap.md)Builds shape based on shape references.[StructureShape](class-aws-api-structureshape.md)Represents a structure shape and resolve member shape references.[TimestampShape](class-aws-api-timestampshape.md)Represents a timestamp shape.[Validator](class-aws-api-validator.md)Validates a schema against a hash of input.
 
-#### Enums  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.api.html\#toc-enums)
+#### Enums  [header link](namespace-aws-api-toc-enums.md)
 
-[SupportedProtocols](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html)Priority ordered collection of supported AWS protocols.
+[SupportedProtocols](class-aws-api-supportedprotocols.md)Priority ordered collection of supported AWS protocols.
 
 ```
 
@@ -30,7 +30,7 @@ operation, error, or shape (i.e., parameter).[ListShape](https://docs.aws.amazon
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.api.html#toc-classes)
-  - [Enums](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.api.html#toc-enums)
+  - [Classes](namespace-aws-api-toc-classes.md)
+  - [Enums](namespace-aws-api-toc-enums.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.api.html#top)
+[Back To Top](namespace-aws-api-top.md)

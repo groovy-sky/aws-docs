@@ -16,36 +16,36 @@ provided options.
 
 Yields an array containing the Amazon S3 bucket and key of the log file.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html\#toc)
+### Table of Contents  [header link](class-aws-cloudtrail-logfileiterator-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html\#toc-constants)
+#### Constants  [header link](class-aws-cloudtrail-logfileiterator-toc-constants.md)
 
-[ACCOUNT\_ID](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#constant_ACCOUNT_ID)
-= 'account\_id' [DEFAULT\_TRAIL\_NAME](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#constant_DEFAULT_TRAIL_NAME)
-= 'Default' [END\_DATE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#constant_END_DATE)
-= 'end\_date' [KEY\_PREFIX](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#constant_KEY_PREFIX)
-= 'key\_prefix' [LOG\_REGION](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#constant_LOG_REGION)
-= 'log\_region' [PREFIX\_TEMPLATE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#constant_PREFIX_TEMPLATE)
-= 'prefix/AWSLogs/account/CloudTrail/region/date/' [PREFIX\_WILDCARD](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#constant_PREFIX_WILDCARD)
-= '\*' [START\_DATE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#constant_START_DATE)
-= 'start\_date' [TRAIL\_NAME](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#constant_TRAIL_NAME)
+[ACCOUNT\_ID](class-aws-cloudtrail-logfileiterator-constant-account-id.md)
+= 'account\_id' [DEFAULT\_TRAIL\_NAME](class-aws-cloudtrail-logfileiterator-constant-default-trail-name.md)
+= 'Default' [END\_DATE](class-aws-cloudtrail-logfileiterator-constant-end-date.md)
+= 'end\_date' [KEY\_PREFIX](class-aws-cloudtrail-logfileiterator-constant-key-prefix.md)
+= 'key\_prefix' [LOG\_REGION](class-aws-cloudtrail-logfileiterator-constant-log-region.md)
+= 'log\_region' [PREFIX\_TEMPLATE](class-aws-cloudtrail-logfileiterator-constant-prefix-template.md)
+= 'prefix/AWSLogs/account/CloudTrail/region/date/' [PREFIX\_WILDCARD](class-aws-cloudtrail-logfileiterator-constant-prefix-wildcard.md)
+= '\*' [START\_DATE](class-aws-cloudtrail-logfileiterator-constant-start-date.md)
+= 'start\_date' [TRAIL\_NAME](class-aws-cloudtrail-logfileiterator-constant-trail-name.md)
 = 'trail\_name'
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html\#toc-methods)
+#### Methods  [header link](class-aws-cloudtrail-logfileiterator-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#method___construct)
-: mixed Constructs a LogFileIterator using the specified options:[current()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#method_current)
+[\_\_construct()](class-aws-cloudtrail-logfileiterator-method-construct.md)
+: mixed Constructs a LogFileIterator using the specified options:[current()](class-aws-cloudtrail-logfileiterator-method-current.md)
 : array<string\|int, mixed>\|bool An override of the typical current behavior of \\IteratorIterator to
-format the output such that the bucket and key are returned in an array[forTrail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#method_forTrail)
-: [LogRecordIterator](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html)Constructs a LogRecordIterator. This factory method is used if the name
+format the output such that the bucket and key are returned in an array[forTrail()](class-aws-cloudtrail-logfileiterator-method-fortrail.md)
+: [LogRecordIterator](class-aws-cloudtrail-logrecorditerator.md)Constructs a LogRecordIterator. This factory method is used if the name
 of the S3 bucket containing your logs is not known. This factory method
 uses a CloudTrail client and the trail name (or "Default") to find the
 information about the trail necessary for constructing the
 LogRecordIterator.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html\#constants)
+### Constants  [header link](class-aws-cloudtrail-logfileiterator-constants.md)
 
-#### ACCOUNT\_ID  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html\#constant_ACCOUNT_ID)
+#### ACCOUNT\_ID  [header link](class-aws-cloudtrail-logfileiterator-constant-account-id.md)
 
 `
     public
@@ -54,7 +54,7 @@ LogRecordIterator.
     = 'account_id'
 `
 
-#### DEFAULT\_TRAIL\_NAME  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html\#constant_DEFAULT_TRAIL_NAME)
+#### DEFAULT\_TRAIL\_NAME  [header link](class-aws-cloudtrail-logfileiterator-constant-default-trail-name.md)
 
 `
     public
@@ -63,7 +63,7 @@ LogRecordIterator.
     = 'Default'
 `
 
-#### END\_DATE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html\#constant_END_DATE)
+#### END\_DATE  [header link](class-aws-cloudtrail-logfileiterator-constant-end-date.md)
 
 `
     public
@@ -72,7 +72,7 @@ LogRecordIterator.
     = 'end_date'
 `
 
-#### KEY\_PREFIX  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html\#constant_KEY_PREFIX)
+#### KEY\_PREFIX  [header link](class-aws-cloudtrail-logfileiterator-constant-key-prefix.md)
 
 `
     public
@@ -81,7 +81,7 @@ LogRecordIterator.
     = 'key_prefix'
 `
 
-#### LOG\_REGION  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html\#constant_LOG_REGION)
+#### LOG\_REGION  [header link](class-aws-cloudtrail-logfileiterator-constant-log-region.md)
 
 `
     public
@@ -90,7 +90,7 @@ LogRecordIterator.
     = 'log_region'
 `
 
-#### PREFIX\_TEMPLATE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html\#constant_PREFIX_TEMPLATE)
+#### PREFIX\_TEMPLATE  [header link](class-aws-cloudtrail-logfileiterator-constant-prefix-template.md)
 
 `
     public
@@ -99,7 +99,7 @@ LogRecordIterator.
     = 'prefix/AWSLogs/account/CloudTrail/region/date/'
 `
 
-#### PREFIX\_WILDCARD  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html\#constant_PREFIX_WILDCARD)
+#### PREFIX\_WILDCARD  [header link](class-aws-cloudtrail-logfileiterator-constant-prefix-wildcard.md)
 
 `
     public
@@ -108,7 +108,7 @@ LogRecordIterator.
     = '*'
 `
 
-#### START\_DATE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html\#constant_START_DATE)
+#### START\_DATE  [header link](class-aws-cloudtrail-logfileiterator-constant-start-date.md)
 
 `
     public
@@ -117,7 +117,7 @@ LogRecordIterator.
     = 'start_date'
 `
 
-#### TRAIL\_NAME  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html\#constant_TRAIL_NAME)
+#### TRAIL\_NAME  [header link](class-aws-cloudtrail-logfileiterator-constant-trail-name.md)
 
 `
     public
@@ -126,9 +126,9 @@ LogRecordIterator.
     = 'trail_name'
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html\#methods)
+### Methods  [header link](class-aws-cloudtrail-logfileiterator-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-cloudtrail-logfileiterator-method-construct.md)
 
 Constructs a LogFileIterator using the specified options:
 
@@ -161,7 +161,7 @@ $s3Client
 : array<string\|int, mixed>
 = \[\]
 
-#### current()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html\#method_current)
+#### current()  [header link](class-aws-cloudtrail-logfileiterator-method-current.md)
 
 An override of the typical current behavior of \\IteratorIterator to
 format the output such that the bucket and key are returned in an array
@@ -174,7 +174,7 @@ format the output such that the bucket and key are returned in an array
 
 array<string\|int, mixed>\|bool
 
-#### forTrail()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html\#method_forTrail)
+#### forTrail()  [header link](class-aws-cloudtrail-logfileiterator-method-fortrail.md)
 
 Constructs a LogRecordIterator. This factory method is used if the name
 of the S3 bucket containing your logs is not known. This factory method
@@ -194,13 +194,13 @@ $s3Client
 : array<string\|int, mixed>
 = \[\]
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html\#method_forTrail\#tags)
+##### Tags  [header link](class-aws-cloudtrail-logfileiterator-method-fortrail-tags.md)
 
 throwsInvalidArgumentExceptionseeLogRecordIterator::\_\_contruct
 
 ##### Return values
 
-[LogRecordIterator](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html)
+[LogRecordIterator](class-aws-cloudtrail-logrecorditerator.md)
 <\-\- modeled\_exceptions -->
 
 ×
@@ -208,21 +208,21 @@ throwsInvalidArgumentExceptionseeLogRecordIterator::\_\_contruct
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#toc-methods)
+  - [Constants](class-aws-cloudtrail-logfileiterator-toc-constants.md)
+  - [Methods](class-aws-cloudtrail-logfileiterator-toc-methods.md)
 - Constants
-  - [ACCOUNT\_ID](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#constant_ACCOUNT_ID)
-  - [DEFAULT\_TRAIL\_NAME](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#constant_DEFAULT_TRAIL_NAME)
-  - [END\_DATE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#constant_END_DATE)
-  - [KEY\_PREFIX](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#constant_KEY_PREFIX)
-  - [LOG\_REGION](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#constant_LOG_REGION)
-  - [PREFIX\_TEMPLATE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#constant_PREFIX_TEMPLATE)
-  - [PREFIX\_WILDCARD](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#constant_PREFIX_WILDCARD)
-  - [START\_DATE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#constant_START_DATE)
-  - [TRAIL\_NAME](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#constant_TRAIL_NAME)
+  - [ACCOUNT\_ID](class-aws-cloudtrail-logfileiterator-constant-account-id.md)
+  - [DEFAULT\_TRAIL\_NAME](class-aws-cloudtrail-logfileiterator-constant-default-trail-name.md)
+  - [END\_DATE](class-aws-cloudtrail-logfileiterator-constant-end-date.md)
+  - [KEY\_PREFIX](class-aws-cloudtrail-logfileiterator-constant-key-prefix.md)
+  - [LOG\_REGION](class-aws-cloudtrail-logfileiterator-constant-log-region.md)
+  - [PREFIX\_TEMPLATE](class-aws-cloudtrail-logfileiterator-constant-prefix-template.md)
+  - [PREFIX\_WILDCARD](class-aws-cloudtrail-logfileiterator-constant-prefix-wildcard.md)
+  - [START\_DATE](class-aws-cloudtrail-logfileiterator-constant-start-date.md)
+  - [TRAIL\_NAME](class-aws-cloudtrail-logfileiterator-constant-trail-name.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#method___construct)
-  - [current()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#method_current)
-  - [forTrail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#method_forTrail)
+  - [\_\_construct()](class-aws-cloudtrail-logfileiterator-method-construct.md)
+  - [current()](class-aws-cloudtrail-logfileiterator-method-current.md)
+  - [forTrail()](class-aws-cloudtrail-logfileiterator-method-fortrail.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html#top)
+[Back To Top](class-aws-cloudtrail-logfileiterator-top.md)

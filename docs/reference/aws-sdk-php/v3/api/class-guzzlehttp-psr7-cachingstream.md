@@ -1,47 +1,47 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Psr7](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.psr7.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Psr7](namespace-guzzlehttp-psr7.md)
 
-## CachingStream        in package    - [Aws](package-aws.md)       implements  [StreamInterface](class-psr-http-message-streaminterface.md)  Uses  [StreamDecoratorTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html)
+## CachingStream        in package    - [Aws](package-aws.md)       implements  [StreamInterface](class-psr-http-message-streaminterface.md)  Uses  [StreamDecoratorTrait](class-guzzlehttp-psr7-streamdecoratortrait.md)
 
 FinalYes
 
 Stream decorator that can cache previously read bytes from a sequentially
 read stream.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-psr7-cachingstream-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html\#toc-interfaces)
+#### Interfaces  [header link](class-guzzlehttp-psr7-cachingstream-toc-interfaces.md)
 
 [StreamInterface](class-psr-http-message-streaminterface.md)Describes a data stream.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-psr7-cachingstream-toc-methods.md)
 
-[\_\_call()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method___call)
-: mixed Allow decorators to implement custom methods[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html#method___construct)
-: mixed We will treat the buffer object as the body of the stream[\_\_get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method___get)
+[\_\_call()](class-guzzlehttp-psr7-streamdecoratortrait-method-call.md)
+: mixed Allow decorators to implement custom methods[\_\_construct()](class-guzzlehttp-psr7-cachingstream-method-construct.md)
+: mixed We will treat the buffer object as the body of the stream[\_\_get()](class-guzzlehttp-psr7-streamdecoratortrait-method-get.md)
 : [StreamInterface](class-psr-http-message-streaminterface.md)Magic method used to create a new stream if streams are not added in
-the constructor of a decorator (e.g., LazyOpenStream).[\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method___toString)
-: string [close()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html#method_close)
-: void Close both the remote stream and buffer stream[detach()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_detach)
-: mixed [eof()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html#method_eof)
-: bool Returns true if the stream is at the end of the stream.[getContents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_getContents)
-: string [getMetadata()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_getMetadata)
-: mixed [getSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html#method_getSize)
-: int\|null Get the size of the stream if known.[isReadable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_isReadable)
-: bool [isSeekable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_isSeekable)
-: bool [isWritable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_isWritable)
-: bool [read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html#method_read)
-: string Read data from the stream.[rewind()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html#method_rewind)
-: void Seek to the beginning of the stream.[seek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html#method_seek)
-: void Seek to a position in the stream.[tell()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_tell)
-: int [write()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html#method_write)
+the constructor of a decorator (e.g., LazyOpenStream).[\_\_toString()](class-guzzlehttp-psr7-streamdecoratortrait-method-tostring.md)
+: string [close()](class-guzzlehttp-psr7-cachingstream-method-close.md)
+: void Close both the remote stream and buffer stream[detach()](class-guzzlehttp-psr7-streamdecoratortrait-method-detach.md)
+: mixed [eof()](class-guzzlehttp-psr7-cachingstream-method-eof.md)
+: bool Returns true if the stream is at the end of the stream.[getContents()](class-guzzlehttp-psr7-streamdecoratortrait-method-getcontents.md)
+: string [getMetadata()](class-guzzlehttp-psr7-streamdecoratortrait-method-getmetadata.md)
+: mixed [getSize()](class-guzzlehttp-psr7-cachingstream-method-getsize.md)
+: int\|null Get the size of the stream if known.[isReadable()](class-guzzlehttp-psr7-streamdecoratortrait-method-isreadable.md)
+: bool [isSeekable()](class-guzzlehttp-psr7-streamdecoratortrait-method-isseekable.md)
+: bool [isWritable()](class-guzzlehttp-psr7-streamdecoratortrait-method-iswritable.md)
+: bool [read()](class-guzzlehttp-psr7-cachingstream-method-read.md)
+: string Read data from the stream.[rewind()](class-guzzlehttp-psr7-cachingstream-method-rewind.md)
+: void Seek to the beginning of the stream.[seek()](class-guzzlehttp-psr7-cachingstream-method-seek.md)
+: void Seek to a position in the stream.[tell()](class-guzzlehttp-psr7-streamdecoratortrait-method-tell.md)
+: int [write()](class-guzzlehttp-psr7-cachingstream-method-write.md)
 : int Write data to the stream.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html\#methods)
+### Methods  [header link](class-guzzlehttp-psr7-cachingstream-methods.md)
 
-#### \_\_call()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method___call)
+#### \_\_call()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-call.md)
 
 Allow decorators to implement custom methods
 
@@ -55,7 +55,7 @@ $method
 : string$args
 : array<string\|int, mixed>
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html\#method___construct)
+#### \_\_construct()  [header link](class-guzzlehttp-psr7-cachingstream-method-construct.md)
 
 We will treat the buffer object as the body of the stream
 
@@ -76,7 +76,7 @@ $target
 
 Optionally specify where data is cached
 
-#### \_\_get()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method___get)
+#### \_\_get()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-get.md)
 
 Magic method used to create a new stream if streams are not added in
 the constructor of a decorator (e.g., LazyOpenStream).
@@ -94,7 +94,7 @@ $name
 
 [StreamInterface](class-psr-http-message-streaminterface.md)
 
-#### \_\_toString()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method___toString)
+#### \_\_toString()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-tostring.md)
 
 `
     public
@@ -104,7 +104,7 @@ $name
 
 string
 
-#### close()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html\#method_close)
+#### close()  [header link](class-guzzlehttp-psr7-cachingstream-method-close.md)
 
 Close both the remote stream and buffer stream
 
@@ -112,13 +112,13 @@ Close both the remote stream and buffer stream
     public
                     close() : void`
 
-#### detach()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_detach)
+#### detach()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-detach.md)
 
 `
     public
                     detach() : mixed`
 
-#### eof()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html\#method_eof)
+#### eof()  [header link](class-guzzlehttp-psr7-cachingstream-method-eof.md)
 
 Returns true if the stream is at the end of the stream.
 
@@ -130,7 +130,7 @@ Returns true if the stream is at the end of the stream.
 
 bool
 
-#### getContents()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_getContents)
+#### getContents()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-getcontents.md)
 
 `
     public
@@ -140,7 +140,7 @@ bool
 
 string
 
-#### getMetadata()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_getMetadata)
+#### getMetadata()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-getmetadata.md)
 
 `
     public
@@ -152,7 +152,7 @@ $key
 : mixed
 = null
 
-#### getSize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html\#method_getSize)
+#### getSize()  [header link](class-guzzlehttp-psr7-cachingstream-method-getsize.md)
 
 Get the size of the stream if known.
 
@@ -167,7 +167,7 @@ int\|null
 
 Returns the size in bytes if known, or null if unknown.
 
-#### isReadable()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_isReadable)
+#### isReadable()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-isreadable.md)
 
 `
     public
@@ -177,7 +177,7 @@ Returns the size in bytes if known, or null if unknown.
 
 bool
 
-#### isSeekable()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_isSeekable)
+#### isSeekable()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-isseekable.md)
 
 `
     public
@@ -187,7 +187,7 @@ bool
 
 bool
 
-#### isWritable()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_isWritable)
+#### isWritable()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-iswritable.md)
 
 `
     public
@@ -197,7 +197,7 @@ bool
 
 bool
 
-#### read()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html\#method_read)
+#### read()  [header link](class-guzzlehttp-psr7-cachingstream-method-read.md)
 
 Read data from the stream.
 
@@ -222,7 +222,7 @@ string
 Returns the data read from the stream, or an empty string
 if no bytes are available.
 
-#### rewind()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html\#method_rewind)
+#### rewind()  [header link](class-guzzlehttp-psr7-cachingstream-method-rewind.md)
 
 Seek to the beginning of the stream.
 
@@ -233,7 +233,7 @@ Seek to the beginning of the stream.
 If the stream is not seekable, this method will raise an exception;
 otherwise, it will perform a seek(0).
 
-#### seek()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html\#method_seek)
+#### seek()  [header link](class-guzzlehttp-psr7-cachingstream-method-seek.md)
 
 Seek to a position in the stream.
 
@@ -258,7 +258,7 @@ PHP $whence values for `fseek()`. SEEK\_SET: Set position equal to
 offset bytes SEEK\_CUR: Set position to current location plus offset
 SEEK\_END: Set position to end-of-stream plus offset.
 
-#### tell()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_tell)
+#### tell()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-tell.md)
 
 `
     public
@@ -268,7 +268,7 @@ SEEK\_END: Set position to end-of-stream plus offset.
 
 int
 
-#### write()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html\#method_write)
+#### write()  [header link](class-guzzlehttp-psr7-cachingstream-method-write.md)
 
 Write data to the stream.
 
@@ -297,25 +297,25 @@ Returns the number of bytes written to the stream.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html#toc-methods)
+  - [Methods](class-guzzlehttp-psr7-cachingstream-toc-methods.md)
 - Methods
-  - [\_\_call()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method___call)
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html#method___construct)
-  - [\_\_get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method___get)
-  - [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method___toString)
-  - [close()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html#method_close)
-  - [detach()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_detach)
-  - [eof()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html#method_eof)
-  - [getContents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_getContents)
-  - [getMetadata()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_getMetadata)
-  - [getSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html#method_getSize)
-  - [isReadable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_isReadable)
-  - [isSeekable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_isSeekable)
-  - [isWritable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_isWritable)
-  - [read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html#method_read)
-  - [rewind()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html#method_rewind)
-  - [seek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html#method_seek)
-  - [tell()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_tell)
-  - [write()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html#method_write)
+  - [\_\_call()](class-guzzlehttp-psr7-streamdecoratortrait-method-call.md)
+  - [\_\_construct()](class-guzzlehttp-psr7-cachingstream-method-construct.md)
+  - [\_\_get()](class-guzzlehttp-psr7-streamdecoratortrait-method-get.md)
+  - [\_\_toString()](class-guzzlehttp-psr7-streamdecoratortrait-method-tostring.md)
+  - [close()](class-guzzlehttp-psr7-cachingstream-method-close.md)
+  - [detach()](class-guzzlehttp-psr7-streamdecoratortrait-method-detach.md)
+  - [eof()](class-guzzlehttp-psr7-cachingstream-method-eof.md)
+  - [getContents()](class-guzzlehttp-psr7-streamdecoratortrait-method-getcontents.md)
+  - [getMetadata()](class-guzzlehttp-psr7-streamdecoratortrait-method-getmetadata.md)
+  - [getSize()](class-guzzlehttp-psr7-cachingstream-method-getsize.md)
+  - [isReadable()](class-guzzlehttp-psr7-streamdecoratortrait-method-isreadable.md)
+  - [isSeekable()](class-guzzlehttp-psr7-streamdecoratortrait-method-isseekable.md)
+  - [isWritable()](class-guzzlehttp-psr7-streamdecoratortrait-method-iswritable.md)
+  - [read()](class-guzzlehttp-psr7-cachingstream-method-read.md)
+  - [rewind()](class-guzzlehttp-psr7-cachingstream-method-rewind.md)
+  - [seek()](class-guzzlehttp-psr7-cachingstream-method-seek.md)
+  - [tell()](class-guzzlehttp-psr7-streamdecoratortrait-method-tell.md)
+  - [write()](class-guzzlehttp-psr7-cachingstream-method-write.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.CachingStream.html#top)
+[Back To Top](class-guzzlehttp-psr7-cachingstream-top.md)

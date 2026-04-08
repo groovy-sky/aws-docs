@@ -4,15 +4,15 @@ Menu
 
 ## GlobalAccelerator
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.globalaccelerator.html\#toc)
+### Table of Contents  [header link](namespace-aws-globalaccelerator-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.globalaccelerator.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-globalaccelerator-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.globalaccelerator.exception.html)
+[Exception](namespace-aws-globalaccelerator-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.globalaccelerator.html\#toc-classes)
+#### Classes  [header link](namespace-aws-globalaccelerator-toc-classes.md)
 
-[GlobalAcceleratorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GlobalAccelerator.GlobalAcceleratorClient.html)This client is used to interact with the **AWS Global Accelerator** service.
+[GlobalAcceleratorClient](class-aws-globalaccelerator-globalacceleratorclient.md)This client is used to interact with the **AWS Global Accelerator** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.globalaccelerator.html#toc-classes)
+  - [Classes](namespace-aws-globalaccelerator-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.globalaccelerator.html#top)
+[Back To Top](namespace-aws-globalaccelerator-top.md)

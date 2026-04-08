@@ -8,7 +8,7 @@ before you call `ModifyDBInstance`.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 **DBInstanceIdentifier**
 
@@ -28,7 +28,7 @@ A list of additional storage volumes to modify or delete for the DB instance. Yo
 create up to 3 additional storage volumes. Additional storage volumes are supported for
 RDS for Oracle and RDS for SQL Server DB instances only.
 
-Type: Array of [ModifyAdditionalStorageVolume](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyAdditionalStorageVolume.html) objects
+Type: Array of [ModifyAdditionalStorageVolume](api-modifyadditionalstoragevolume.md) objects
 
 Required: No
 
@@ -77,8 +77,8 @@ Specifies whether the modifications in this request and any pending modification
 regardless of the `PreferredMaintenanceWindow` setting for the DB instance. By default, this parameter is disabled.
 
 If this parameter is disabled, changes to the DB instance are applied during the next maintenance window. Some parameter changes can cause an outage
-and are applied on the next call to [RebootDBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RebootDBInstance.html), or the next failure reboot. Review the table of parameters in
-[Modifying a DB Instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.DBInstance.Modifying.html) in the
+and are applied on the next call to [RebootDBInstance](api-rebootdbinstance.md), or the next failure reboot. Review the table of parameters in
+[Modifying a DB Instance](../../../../services/amazonrds/latest/userguide/overview-dbinstance-modifying.md) in the
 _Amazon RDS User Guide_ to see the impact of enabling or disabling `ApplyImmediately` for each modified parameter and to
 determine when the changes are applied.
 
@@ -115,7 +115,7 @@ doesn't cause an outage.
 
 For an RDS Custom DB instance, don't enable this setting. Otherwise, the operation returns an error.
 
-For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Upgrading.html#USER_UpgradeDBInstance.Upgrading.AutoMinorVersionUpgrades).
+For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](../../../../services/amazonrds/latest/userguide/user-upgradedbinstance-upgrading-user-upgradedbinstance-upgrading-autominorversionupgrades.md).
 
 Type: Boolean
 
@@ -172,8 +172,8 @@ The CA certificate identifier to use for the DB instance's server certificate.
 This setting doesn't apply to RDS Custom DB instances.
 
 For more information, see [Using SSL/TLS to encrypt a connection to a DB \
-instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.SSL.html) in the _Amazon RDS User Guide_ and
-[Using SSL/TLS to encrypt a connection to a DB cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/UsingWithRDS.SSL.html) in the _Amazon Aurora_
+instance](../../../../services/amazonrds/latest/userguide/usingwithrds-ssl.md) in the _Amazon RDS User Guide_ and
+[Using SSL/TLS to encrypt a connection to a DB cluster](../../../../services/amazonrds/latest/aurorauserguide/usingwithrds-ssl.md) in the _Amazon Aurora_
 _User Guide_.
 
 Type: String
@@ -196,10 +196,10 @@ If you are using SSL/TLS to connect to the DB instance, follow the appropriate i
 DB engine to rotate your SSL/TLS certificate:
 
 - For more information about rotating your SSL/TLS certificate for RDS DB engines, see
-[Rotating Your SSL/TLS Certificate.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.SSL-certificate-rotation.html) in the _Amazon RDS User Guide._
+[Rotating Your SSL/TLS Certificate.](../../../../services/amazonrds/latest/userguide/usingwithrds-ssl-certificate-rotation.md) in the _Amazon RDS User Guide._
 
 - For more information about rotating your SSL/TLS certificate for Aurora DB engines, see
-[Rotating Your SSL/TLS Certificate](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/UsingWithRDS.SSL-certificate-rotation.html) in the _Amazon Aurora User Guide_.
+[Rotating Your SSL/TLS Certificate](../../../../services/amazonrds/latest/aurorauserguide/usingwithrds-ssl-certificate-rotation.md) in the _Amazon Aurora User Guide_.
 
 This setting doesn't apply to RDS Custom DB instances.
 
@@ -227,11 +227,11 @@ The following values are valid for each DB engine:
 
 - RDS for PostgreSQL - `postgresql | upgrade | iam-db-auth-error`
 
-For more information about exporting CloudWatch Logs for Amazon RDS, see [Publishing Database Logs to Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.html#USER_LogAccess.Procedural.UploadtoCloudWatch) in the _Amazon RDS User Guide_.
+For more information about exporting CloudWatch Logs for Amazon RDS, see [Publishing Database Logs to Amazon CloudWatch Logs](../../../../services/amazonrds/latest/userguide/user-logaccess-user-logaccess-procedural-uploadtocloudwatch.md) in the _Amazon RDS User Guide_.
 
-For more information about exporting CloudWatch Logs for Amazon Aurora, see [Publishing Database Logs to Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_LogAccess.html#USER_LogAccess.Procedural.UploadtoCloudWatch) in the _Amazon Aurora User Guide_.
+For more information about exporting CloudWatch Logs for Amazon Aurora, see [Publishing Database Logs to Amazon CloudWatch Logs](../../../../services/amazonrds/latest/aurorauserguide/user-logaccess-user-logaccess-procedural-uploadtocloudwatch.md) in the _Amazon Aurora User Guide_.
 
-Type: [CloudwatchLogsExportConfiguration](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CloudwatchLogsExportConfiguration.html) object
+Type: [CloudwatchLogsExportConfiguration](api-cloudwatchlogsexportconfiguration.md) object
 
 Required: No
 
@@ -264,10 +264,10 @@ Required: No
 **DBInstanceClass**
 
 The new compute and memory capacity of the DB instance, for example `db.m4.large`. Not all DB instance classes are available in all
-AWS Regions, or for all database engines. For the full list of DB instance classes, and availability for your engine, see [DB Instance Class](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html) in the
+AWS Regions, or for all database engines. For the full list of DB instance classes, and availability for your engine, see [DB Instance Class](../../../../services/amazonrds/latest/userguide/concepts-dbinstanceclass.md) in the
 _Amazon RDS User Guide_ or
 [Aurora\
-DB instance classes](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.DBInstanceClass.html) in the _Amazon Aurora User Guide_. For RDS Custom, see [DB instance class support for RDS Custom for Oracle](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-reqs-limits.html#custom-reqs-limits.instances) and [DB instance class support for RDS Custom for SQL Server](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-reqs-limits-MS.html#custom-reqs-limits.instancesMS).
+DB instance classes](../../../../services/amazonrds/latest/aurorauserguide/concepts-dbinstanceclass.md) in the _Amazon Aurora User Guide_. For RDS Custom, see [DB instance class support for RDS Custom for Oracle](../../../../services/amazonrds/latest/userguide/custom-reqs-limits-custom-reqs-limits-instances.md) and [DB instance class support for RDS Custom for SQL Server](../../../../services/amazonrds/latest/userguide/custom-reqs-limits-ms-custom-reqs-limits-instancesms.md).
 
 If you modify the DB instance class, an outage occurs during the change. The change is
 applied during the next maintenance window, unless you specify
@@ -370,7 +370,7 @@ You can use this parameter to move your DB instance to a different VPC.
 
 If your DB instance isn't in a VPC, you can also use this parameter to move your DB instance into a VPC.
 For more information, see
-[Working with a DB instance in a VPC](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.WorkingWithRDSInstanceinaVPC.html#USER_VPC.Non-VPC2VPC)
+[Working with a DB instance in a VPC](../../../../services/amazonrds/latest/userguide/user-vpc-workingwithrdsinstanceinavpc-user-vpc-non-vpc2vpc.md)
 in the _Amazon RDS User Guide_.
 
 Changing the subnet group causes an outage during the change.
@@ -402,7 +402,7 @@ Required: No
 Specifies whether the DB instance has deletion protection enabled.
 The database can't be deleted when deletion protection is enabled. By default,
 deletion protection isn't enabled. For more information, see
-[Deleting a DB Instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DeleteInstance.html).
+[Deleting a DB Instance](../../../../services/amazonrds/latest/userguide/user-deleteinstance.md).
 
 This setting doesn't apply to Amazon Aurora DB instances. You can enable or disable deletion protection for the DB cluster.
 For more information, see `ModifyDBCluster`. DB instances in a DB cluster can be deleted even when deletion protection is enabled for the DB cluster.
@@ -426,7 +426,7 @@ Specify `none` to remove the instance from its current domain.
 You must create the domain before this operation. Currently, you can create only Db2, MySQL, Microsoft SQL
 Server, Oracle, and PostgreSQL DB instances in an Active Directory Domain.
 
-For more information, see [Kerberos Authentication](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/kerberos-authentication.html) in the _Amazon RDS User Guide_.
+For more information, see [Kerberos Authentication](../../../../services/amazonrds/latest/userguide/kerberos-authentication.md) in the _Amazon RDS User Guide_.
 
 This setting doesn't apply to RDS Custom DB instances.
 
@@ -508,7 +508,7 @@ private cloud (VPC) on your local network.
 For more information about RDS on Outposts, see [Working with Amazon RDS on AWS Outposts](../../../../services/amazonrds/latest/userguide/rds-on-outposts.md)
 in the _Amazon RDS User Guide_.
 
-For more information about CoIPs, see [Customer-owned IP addresses](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html#ip-addressing)
+For more information about CoIPs, see [Customer-owned IP addresses](../../../../services/outposts/latest/userguide/routing-ip-addressing.md)
 in the _AWS Outposts User Guide_.
 
 Type: Boolean
@@ -524,7 +524,7 @@ This setting doesn't apply to Amazon Aurora. Mapping AWS IAM accounts to databas
 cluster.
 
 For more information about IAM database authentication, see
-[IAM Database Authentication for MySQL and PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html) in the _Amazon RDS User Guide._
+[IAM Database Authentication for MySQL and PostgreSQL](../../../../services/amazonrds/latest/userguide/usingwithrds-iamdbauth.md) in the _Amazon RDS User Guide._
 
 This setting doesn't apply to RDS Custom DB instances.
 
@@ -537,7 +537,7 @@ Required: No
 Specifies whether to enable Performance Insights for the DB instance.
 
 For more information, see
-[Using Amazon Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html) in the _Amazon RDS User Guide_.
+[Using Amazon Performance Insights](../../../../services/amazonrds/latest/userguide/user-perfinsights.md) in the _Amazon RDS User Guide_.
 
 This setting doesn't apply to RDS Custom DB instances.
 
@@ -683,7 +683,7 @@ master user password is not managed with AWS Secrets Manager, then you must spec
 In this case, Amazon RDS deletes the secret and uses the new password for the master user specified by
 `MasterUserPassword`.
 
-For more information, see [Password management with AWS Secrets Manager](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-secrets-manager.html)
+For more information, see [Password management with AWS Secrets Manager](../../../../services/amazonrds/latest/userguide/rds-secrets-manager.md)
 in the _Amazon RDS User Guide._
 
 Constraints:
@@ -810,7 +810,7 @@ Required: No
 The upper limit in gibibytes (GiB) to which Amazon RDS can automatically scale the storage of the DB instance.
 
 For more information about this setting, including limitations that apply to it, see
-[Managing capacity automatically with Amazon RDS storage autoscaling](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIOPS.StorageTypes.html#USER_PIOPS.Autoscaling)
+[Managing capacity automatically with Amazon RDS storage autoscaling](../../../../services/amazonrds/latest/userguide/user-piops-storagetypes-user-piops-autoscaling.md)
 in the _Amazon RDS User Guide_.
 
 This setting doesn't apply to RDS Custom DB instances.
@@ -842,7 +842,7 @@ Required: No
 The ARN for the IAM role that permits RDS to send enhanced monitoring metrics to Amazon CloudWatch Logs. For
 example, `arn:aws:iam:123456789012:role/emaccess`. For information on creating a monitoring role,
 see [To \
-create an IAM role for Amazon RDS Enhanced Monitoring](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.html#USER_Monitoring.OS.IAMRole) in the _Amazon RDS User Guide._
+create an IAM role for Amazon RDS Enhanced Monitoring](../../../../services/amazonrds/latest/userguide/user-monitoring-user-monitoring-os-iamrole.md) in the _Amazon RDS User Guide._
 
 If `MonitoringInterval` is set to a value other than `0`, supply a `MonitoringRoleArn`
 value.
@@ -895,7 +895,7 @@ The network type is determined by the `DBSubnetGroup` specified for the DB insta
 A `DBSubnetGroup` can support only the IPv4 protocol or the IPv4 and the IPv6
 protocols ( `DUAL`).
 
-For more information, see [Working with a DB instance in a VPC](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.WorkingWithRDSInstanceinaVPC.html) in the
+For more information, see [Working with a DB instance in a VPC](../../../../services/amazonrds/latest/userguide/user-vpc-workingwithrdsinstanceinavpc.md) in the
 _Amazon RDS User Guide._
 
 Valid Values: `IPV4 | DUAL`
@@ -993,7 +993,7 @@ if automated backups are enabled,
 as determined by the `BackupRetentionPeriod` parameter.
 Changing this parameter doesn't result in an outage and the change is asynchronously applied as soon as possible.
 The default is a 30-minute window selected at random from an
-8-hour block of time for each AWS Region. For more information, see [Backup window](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html#USER_WorkingWithAutomatedBackups.BackupWindow) in the _Amazon RDS User Guide_.
+8-hour block of time for each AWS Region. For more information, see [Backup window](../../../../services/amazonrds/latest/userguide/user-workingwithautomatedbackups-user-workingwithautomatedbackups-backupwindow.md) in the _Amazon RDS User Guide_.
 
 This setting doesn't apply to Amazon Aurora DB instances. The daily time range for creating automated backups is managed by
 the DB cluster. For more information, see `ModifyDBCluster`.
@@ -1023,7 +1023,7 @@ of the DB instance. If you change this window to the current time, there must be
 minutes between the current time and end of the window to ensure pending changes are
 applied.
 
-For more information, see [Amazon RDS Maintenance Window](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Maintenance.html#Concepts.DBMaintenance) in the _Amazon RDS User Guide._
+For more information, see [Amazon RDS Maintenance Window](../../../../services/amazonrds/latest/userguide/user-upgradedbinstance-maintenance-concepts-dbmaintenance.md) in the _Amazon RDS User Guide._
 
 Default: Uses existing setting
 
@@ -1049,7 +1049,7 @@ The number of CPU cores and the number of threads per core for the DB instance c
 
 This setting doesn't apply to RDS Custom DB instances.
 
-Type: Array of [ProcessorFeature](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ProcessorFeature.html) objects
+Type: Array of [ProcessorFeature](api-processorfeature.md) objects
 
 Required: No
 
@@ -1057,7 +1057,7 @@ Required: No
 
 The order of priority in which an Aurora Replica is promoted to the primary instance
 after a failure of the existing primary instance. For more information,
-see [Fault Tolerance for an Aurora DB Cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.AuroraHighAvailability.html#Aurora.Managing.FaultTolerance) in the _Amazon Aurora User Guide_.
+see [Fault Tolerance for an Aurora DB Cluster](../../../../services/amazonrds/latest/aurorauserguide/concepts-aurorahighavailability-aurora-managing-faulttolerance.md) in the _Amazon Aurora User Guide_.
 
 This setting doesn't apply to RDS Custom DB instances.
 
@@ -1106,7 +1106,7 @@ connections, a standby replica can't serve a read-only workload.
 
 You can create a combination of standby and read-only DB replicas for the
 same primary DB instance. For more information, see [Working with\
-replicas for Amazon RDS for Db2](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-replication.html) in the _Amazon RDS User_
+replicas for Amazon RDS for Db2](../../../../services/amazonrds/latest/userguide/db2-replication.md) in the _Amazon RDS User_
 _Guide_.
 
 To create standby DB replicas for RDS for Db2, set this parameter to
@@ -1121,7 +1121,7 @@ user connections, a mounted replica can't serve a read-only workload.
 
 You can create a combination of mounted and read-only DB replicas for the
 same primary DB instance. For more information, see [Working with\
-read replicas for Amazon RDS for Oracle](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-read-replicas.html) in the _Amazon_
+read replicas for Amazon RDS for Oracle](../../../../services/amazonrds/latest/userguide/oracle-read-replicas.md) in the _Amazon_
 _RDS User Guide_.
 
 For RDS Custom, you must specify this parameter and set it to
@@ -1159,7 +1159,7 @@ master user password.
 This setting is valid only if the master user password is managed by RDS in AWS Secrets
 Manager for the DB instance. The secret value contains the updated password.
 
-For more information, see [Password management with AWS Secrets Manager](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-secrets-manager.html)
+For more information, see [Password management with AWS Secrets Manager](../../../../services/amazonrds/latest/userguide/rds-secrets-manager.md)
 in the _Amazon RDS User Guide._
 
 Constraints:
@@ -1219,7 +1219,7 @@ Valid Values:
 
 - `auto-backup` \- The DB instance's automated backup.
 
-Type: Array of [TagSpecification](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_TagSpecification.html) objects
+Type: Array of [TagSpecification](api-tagspecification.md) objects
 
 Required: No
 
@@ -1288,11 +1288,11 @@ This data type is used as a response element in the operations `CreateDBInstance
 `RestoreDBInstanceFromDBSnapshot`, `RestoreDBInstanceFromS3`, `RestoreDBInstanceToPointInTime`,
 `StartDBInstance`, and `StopDBInstance`.
 
-Type: [DBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBInstance.html) object
+Type: [DBInstance](api-dbinstance.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **AuthorizationNotFound**
 
@@ -1530,27 +1530,27 @@ https://rds.us-east-1.amazonaws.com/
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/rds-2014-10-31/ModifyDBInstance)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/rds-2014-10-31/modifydbinstance.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/rds-2014-10-31/ModifyDBInstance)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/rds-2014-10-31/modifydbinstance.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/ModifyDBInstance)
+- [AWS SDK for C++](../../../goto/sdkforcpp/rds-2014-10-31/modifydbinstance.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/rds-2014-10-31/ModifyDBInstance)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/rds-2014-10-31/modifydbinstance.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/ModifyDBInstance)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/rds-2014-10-31/modifydbinstance.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/rds-2014-10-31/ModifyDBInstance)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/rds-2014-10-31/modifydbinstance.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/rds-2014-10-31/ModifyDBInstance)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/rds-2014-10-31/modifydbinstance.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/rds-2014-10-31/ModifyDBInstance)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/rds-2014-10-31/modifydbinstance.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/ModifyDBInstance)
+- [AWS SDK for Python](../../../../services/goto/boto3/rds-2014-10-31/modifydbinstance.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/ModifyDBInstance)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/modifydbinstance.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ModifyDBClusterSnapshotAttribute
 

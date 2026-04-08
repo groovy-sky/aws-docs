@@ -1,48 +1,48 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Psr7](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.psr7.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Psr7](namespace-guzzlehttp-psr7.md)
 
-## MultipartStream        in package    - [Aws](package-aws.md)       implements  [StreamInterface](class-psr-http-message-streaminterface.md)  Uses  [StreamDecoratorTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html)
+## MultipartStream        in package    - [Aws](package-aws.md)       implements  [StreamInterface](class-psr-http-message-streaminterface.md)  Uses  [StreamDecoratorTrait](class-guzzlehttp-psr7-streamdecoratortrait.md)
 
 FinalYes
 
 Stream that when read returns bytes for a streaming multipart or
 multipart/form-data stream.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MultipartStream.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-psr7-multipartstream-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MultipartStream.html\#toc-interfaces)
+#### Interfaces  [header link](class-guzzlehttp-psr7-multipartstream-toc-interfaces.md)
 
 [StreamInterface](class-psr-http-message-streaminterface.md)Describes a data stream.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MultipartStream.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-psr7-multipartstream-toc-methods.md)
 
-[\_\_call()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method___call)
-: mixed Allow decorators to implement custom methods[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MultipartStream.html#method___construct)
-: mixed [\_\_get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method___get)
+[\_\_call()](class-guzzlehttp-psr7-streamdecoratortrait-method-call.md)
+: mixed Allow decorators to implement custom methods[\_\_construct()](class-guzzlehttp-psr7-multipartstream-method-construct.md)
+: mixed [\_\_get()](class-guzzlehttp-psr7-streamdecoratortrait-method-get.md)
 : [StreamInterface](class-psr-http-message-streaminterface.md)Magic method used to create a new stream if streams are not added in
-the constructor of a decorator (e.g., LazyOpenStream).[\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method___toString)
-: string [close()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_close)
-: void [detach()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_detach)
-: mixed [eof()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_eof)
-: bool [getBoundary()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MultipartStream.html#method_getBoundary)
-: string [getContents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_getContents)
-: string [getMetadata()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_getMetadata)
-: mixed [getSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_getSize)
-: int\|null [isReadable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_isReadable)
-: bool [isSeekable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_isSeekable)
-: bool [isWritable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MultipartStream.html#method_isWritable)
-: bool Returns whether or not the stream is writable.[read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_read)
-: string [rewind()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_rewind)
-: void [seek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_seek)
-: void [tell()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_tell)
-: int [write()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_write)
+the constructor of a decorator (e.g., LazyOpenStream).[\_\_toString()](class-guzzlehttp-psr7-streamdecoratortrait-method-tostring.md)
+: string [close()](class-guzzlehttp-psr7-streamdecoratortrait-method-close.md)
+: void [detach()](class-guzzlehttp-psr7-streamdecoratortrait-method-detach.md)
+: mixed [eof()](class-guzzlehttp-psr7-streamdecoratortrait-method-eof.md)
+: bool [getBoundary()](class-guzzlehttp-psr7-multipartstream-method-getboundary.md)
+: string [getContents()](class-guzzlehttp-psr7-streamdecoratortrait-method-getcontents.md)
+: string [getMetadata()](class-guzzlehttp-psr7-streamdecoratortrait-method-getmetadata.md)
+: mixed [getSize()](class-guzzlehttp-psr7-streamdecoratortrait-method-getsize.md)
+: int\|null [isReadable()](class-guzzlehttp-psr7-streamdecoratortrait-method-isreadable.md)
+: bool [isSeekable()](class-guzzlehttp-psr7-streamdecoratortrait-method-isseekable.md)
+: bool [isWritable()](class-guzzlehttp-psr7-multipartstream-method-iswritable.md)
+: bool Returns whether or not the stream is writable.[read()](class-guzzlehttp-psr7-streamdecoratortrait-method-read.md)
+: string [rewind()](class-guzzlehttp-psr7-streamdecoratortrait-method-rewind.md)
+: void [seek()](class-guzzlehttp-psr7-streamdecoratortrait-method-seek.md)
+: void [tell()](class-guzzlehttp-psr7-streamdecoratortrait-method-tell.md)
+: int [write()](class-guzzlehttp-psr7-streamdecoratortrait-method-write.md)
 : int
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MultipartStream.html\#methods)
+### Methods  [header link](class-guzzlehttp-psr7-multipartstream-methods.md)
 
-#### \_\_call()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method___call)
+#### \_\_call()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-call.md)
 
 Allow decorators to implement custom methods
 
@@ -56,7 +56,7 @@ $method
 : string$args
 : array<string\|int, mixed>
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MultipartStream.html\#method___construct)
+#### \_\_construct()  [header link](class-guzzlehttp-psr7-multipartstream-method-construct.md)
 
 `
     public
@@ -89,11 +89,11 @@ $boundary
 
 You can optionally provide a specific boundary
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MultipartStream.html\#method___construct\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-multipartstream-method-construct-tags.md)
 
 throwsInvalidArgumentException
 
-#### \_\_get()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method___get)
+#### \_\_get()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-get.md)
 
 Magic method used to create a new stream if streams are not added in
 the constructor of a decorator (e.g., LazyOpenStream).
@@ -111,7 +111,7 @@ $name
 
 [StreamInterface](class-psr-http-message-streaminterface.md)
 
-#### \_\_toString()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method___toString)
+#### \_\_toString()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-tostring.md)
 
 `
     public
@@ -121,19 +121,19 @@ $name
 
 string
 
-#### close()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_close)
+#### close()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-close.md)
 
 `
     public
                     close() : void`
 
-#### detach()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_detach)
+#### detach()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-detach.md)
 
 `
     public
                     detach() : mixed`
 
-#### eof()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_eof)
+#### eof()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-eof.md)
 
 `
     public
@@ -143,7 +143,7 @@ string
 
 bool
 
-#### getBoundary()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MultipartStream.html\#method_getBoundary)
+#### getBoundary()  [header link](class-guzzlehttp-psr7-multipartstream-method-getboundary.md)
 
 `
     public
@@ -153,7 +153,7 @@ bool
 
 string
 
-#### getContents()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_getContents)
+#### getContents()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-getcontents.md)
 
 `
     public
@@ -163,7 +163,7 @@ string
 
 string
 
-#### getMetadata()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_getMetadata)
+#### getMetadata()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-getmetadata.md)
 
 `
     public
@@ -175,7 +175,7 @@ $key
 : mixed
 = null
 
-#### getSize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_getSize)
+#### getSize()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-getsize.md)
 
 `
     public
@@ -185,7 +185,7 @@ $key
 
 int\|null
 
-#### isReadable()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_isReadable)
+#### isReadable()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-isreadable.md)
 
 `
     public
@@ -195,7 +195,7 @@ int\|null
 
 bool
 
-#### isSeekable()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_isSeekable)
+#### isSeekable()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-isseekable.md)
 
 `
     public
@@ -205,7 +205,7 @@ bool
 
 bool
 
-#### isWritable()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MultipartStream.html\#method_isWritable)
+#### isWritable()  [header link](class-guzzlehttp-psr7-multipartstream-method-iswritable.md)
 
 Returns whether or not the stream is writable.
 
@@ -217,7 +217,7 @@ Returns whether or not the stream is writable.
 
 bool
 
-#### read()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_read)
+#### read()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-read.md)
 
 `
     public
@@ -232,13 +232,13 @@ $length
 
 string
 
-#### rewind()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_rewind)
+#### rewind()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-rewind.md)
 
 `
     public
                     rewind() : void`
 
-#### seek()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_seek)
+#### seek()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-seek.md)
 
 `
     public
@@ -251,7 +251,7 @@ $offset
 : mixed
 = SEEK\_SET
 
-#### tell()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_tell)
+#### tell()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-tell.md)
 
 `
     public
@@ -261,7 +261,7 @@ $offset
 
 int
 
-#### write()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_write)
+#### write()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-write.md)
 
 `
     public
@@ -282,26 +282,26 @@ int
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MultipartStream.html#toc-methods)
+  - [Methods](class-guzzlehttp-psr7-multipartstream-toc-methods.md)
 - Methods
-  - [\_\_call()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method___call)
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MultipartStream.html#method___construct)
-  - [\_\_get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method___get)
-  - [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method___toString)
-  - [close()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_close)
-  - [detach()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_detach)
-  - [eof()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_eof)
-  - [getBoundary()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MultipartStream.html#method_getBoundary)
-  - [getContents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_getContents)
-  - [getMetadata()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_getMetadata)
-  - [getSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_getSize)
-  - [isReadable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_isReadable)
-  - [isSeekable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_isSeekable)
-  - [isWritable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MultipartStream.html#method_isWritable)
-  - [read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_read)
-  - [rewind()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_rewind)
-  - [seek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_seek)
-  - [tell()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_tell)
-  - [write()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_write)
+  - [\_\_call()](class-guzzlehttp-psr7-streamdecoratortrait-method-call.md)
+  - [\_\_construct()](class-guzzlehttp-psr7-multipartstream-method-construct.md)
+  - [\_\_get()](class-guzzlehttp-psr7-streamdecoratortrait-method-get.md)
+  - [\_\_toString()](class-guzzlehttp-psr7-streamdecoratortrait-method-tostring.md)
+  - [close()](class-guzzlehttp-psr7-streamdecoratortrait-method-close.md)
+  - [detach()](class-guzzlehttp-psr7-streamdecoratortrait-method-detach.md)
+  - [eof()](class-guzzlehttp-psr7-streamdecoratortrait-method-eof.md)
+  - [getBoundary()](class-guzzlehttp-psr7-multipartstream-method-getboundary.md)
+  - [getContents()](class-guzzlehttp-psr7-streamdecoratortrait-method-getcontents.md)
+  - [getMetadata()](class-guzzlehttp-psr7-streamdecoratortrait-method-getmetadata.md)
+  - [getSize()](class-guzzlehttp-psr7-streamdecoratortrait-method-getsize.md)
+  - [isReadable()](class-guzzlehttp-psr7-streamdecoratortrait-method-isreadable.md)
+  - [isSeekable()](class-guzzlehttp-psr7-streamdecoratortrait-method-isseekable.md)
+  - [isWritable()](class-guzzlehttp-psr7-multipartstream-method-iswritable.md)
+  - [read()](class-guzzlehttp-psr7-streamdecoratortrait-method-read.md)
+  - [rewind()](class-guzzlehttp-psr7-streamdecoratortrait-method-rewind.md)
+  - [seek()](class-guzzlehttp-psr7-streamdecoratortrait-method-seek.md)
+  - [tell()](class-guzzlehttp-psr7-streamdecoratortrait-method-tell.md)
+  - [write()](class-guzzlehttp-psr7-streamdecoratortrait-method-write.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MultipartStream.html#top)
+[Back To Top](class-guzzlehttp-psr7-multipartstream-top.md)

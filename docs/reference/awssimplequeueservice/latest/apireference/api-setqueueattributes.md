@@ -14,7 +14,7 @@ messages.
 
 - Cross-account permissions don't apply to this action. For more information,
 see [Grant \
-cross-account permissions to a role and a username](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-customer-managed-policy-examples.html#grant-cross-account-permissions-to-role-and-user-name) in the _Amazon SQS Developer Guide_.
+cross-account permissions to a role and a username](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/sqs-customer-managed-policy-examples-grant-cross-account-permissions-to-role-and-user-name.md) in the _Amazon SQS Developer Guide_.
 
 - To remove the ability to change queue permissions, you must deny permission to the `AddPermission`, `RemovePermission`, and `SetQueueAttributes` actions in your IAM policy.
 
@@ -32,7 +32,7 @@ cross-account permissions to a role and a username](https://docs.aws.amazon.com/
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -63,7 +63,7 @@ the age of existing messages.
 
 - `Policy` – The queue's policy. A valid AWS policy. For more
 information about policy structure, see [Overview of AWS IAM\
-Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/PoliciesOverview.html) in the _AWS Identity and Access Management User_
+Policies](../../../../services/iam/latest/userguide/policiesoverview.md) in the _AWS Identity and Access Management User_
 _Guide_.
 
 - `ReceiveMessageWaitTimeSeconds` – The length of time, in
@@ -124,11 +124,11 @@ key (CMK) for Amazon SQS or a custom CMK. For more information, see [Key Terms](
 always `alias/aws/sqs`, the alias of a custom CMK can, for example,
 be `alias/MyAlias
                           `. For more examples, see
-[KeyId](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html#API_DescribeKey_RequestParameters) in the _AWS Key Management Service API_
+[KeyId](../../../kms/latest/apireference/api-describekey-api-describekey-requestparameters.md) in the _AWS Key Management Service API_
 _Reference_.
 
 - `KmsDataKeyReusePeriodSeconds` – The length of time, in
-seconds, for which Amazon SQS can reuse a [data key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#data-keys) to
+seconds, for which Amazon SQS can reuse a [data key](../../../../services/kms/latest/developerguide/concepts-data-keys.md) to
 encrypt or decrypt messages before calling AWS KMS again. An integer
 representing seconds, between 60 seconds (1 minute) and 86,400 seconds (24
 hours). Default: 300 (5 minutes). A shorter time period provides better security
@@ -137,10 +137,10 @@ more information, see [How Does the Data Key Reuse Period Work?](../../../../ser
 
 - `SqsManagedSseEnabled` – Enables server-side queue encryption
 using SQS owned encryption keys. Only one server-side encryption option is
-supported per queue (for example, [SSE-KMS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-configure-sse-existing-queue.html) or [SSE-SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-configure-sqs-sse-queue.html)).
+supported per queue (for example, [SSE-KMS](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/sqs-configure-sse-existing-queue.md) or [SSE-SQS](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/sqs-configure-sqs-sse-queue.md)).
 
 The following attribute applies only to [FIFO (first-in-first-out)\
-queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues.html):
+queues](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/fifo-queues.md):
 
 - `ContentBasedDeduplication` – Enables content-based
 deduplication. For more information, see [Exactly-once processing](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/fifo-queues-exactly-once-processing.md) in the _Amazon SQS Developer_
@@ -200,7 +200,7 @@ If you set these attributes to anything other than the values shown for enabling
 throughput, normal throughput is in effect and deduplication occurs as specified.
 
 For information on throughput quotas,
-see [Quotas related to messages](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/quotas-messages.html)
+see [Quotas related to messages](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/quotas-messages.md)
 in the _Amazon SQS Developer Guide_.
 
 Type: String to string map
@@ -225,7 +225,7 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Errors](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Errors](commonerrors.md).
 
 **InvalidAddress**
 
@@ -275,7 +275,7 @@ The request was denied due to request throttling.
 request.
 
 - Ensure that the request rate is within the Amazon SQS limits for
-sending messages. For more information, see [Amazon SQS quotas](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-quotas.html#quotas-requests) in the _Amazon SQS_
+sending messages. For more information, see [Amazon SQS quotas](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/sqs-quotas-quotas-requests.md) in the _Amazon SQS_
 _Developer Guide_.
 
 HTTP Status Code: 400
@@ -291,9 +291,9 @@ HTTP Status Code: 400
 The following example query request sets a policy that gives all users `
             ReceiveMessage
          ` permission for a queue named
-`MyQueue`. For more examples of policies, see [Custom Amazon SQS Access Policy Language Examples](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-creating-custom-policies-access-policy-examples.html) in the _Amazon SQS_
+`MyQueue`. For more examples of policies, see [Custom Amazon SQS Access Policy Language Examples](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/sqs-creating-custom-policies-access-policy-examples.md) in the _Amazon SQS_
 _Developer Guide_. The structure of `AUTHPARAMS` depends on the signature of the API request.
-For more information, see [Examples of Signed Signature Version 4 Requests](https://docs.aws.amazon.com/general/latest/gr/sigv4-signed-request-examples.html) in the _AWS General Reference_.
+For more information, see [Examples of Signed Signature Version 4 Requests](../../../../general/general/latest/gr/sigv4-signed-request-examples.md) in the _AWS General Reference_.
 
 ### Example
 
@@ -368,7 +368,7 @@ HTTP/1.1 200 OK
 
 The following example query request sets the visibility timeout to 35 seconds
 for a queue named `MyQueue`. The structure of `AUTHPARAMS` depends on the signature of the API request.
-For more information, see [Examples of Signed Signature Version 4 Requests](https://docs.aws.amazon.com/general/latest/gr/sigv4-signed-request-examples.html) in the _AWS General Reference_.
+For more information, see [Examples of Signed Signature Version 4 Requests](../../../../general/general/latest/gr/sigv4-signed-request-examples.md) in the _AWS General Reference_.
 
 ###### Note
 
@@ -690,27 +690,27 @@ HTTP/1.1 200 OK
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/sqs-2012-11-05/SetQueueAttributes)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/sqs-2012-11-05/setqueueattributes.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/sqs-2012-11-05/SetQueueAttributes)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/sqs-2012-11-05/setqueueattributes.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/sqs-2012-11-05/SetQueueAttributes)
+- [AWS SDK for C++](../../../goto/sdkforcpp/sqs-2012-11-05/setqueueattributes.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/sqs-2012-11-05/SetQueueAttributes)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/sqs-2012-11-05/setqueueattributes.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sqs-2012-11-05/SetQueueAttributes)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/sqs-2012-11-05/setqueueattributes.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/sqs-2012-11-05/SetQueueAttributes)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/sqs-2012-11-05/setqueueattributes.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/sqs-2012-11-05/SetQueueAttributes)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/sqs-2012-11-05/setqueueattributes.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/sqs-2012-11-05/SetQueueAttributes)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/sqs-2012-11-05/setqueueattributes.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/sqs-2012-11-05/SetQueueAttributes)
+- [AWS SDK for Python](../../../../services/goto/boto3/sqs-2012-11-05/setqueueattributes.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sqs-2012-11-05/SetQueueAttributes)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/sqs-2012-11-05/setqueueattributes.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 SendMessageBatch
 

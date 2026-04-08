@@ -46,7 +46,7 @@ Region, in order to benefit from the billing discount.
 
 The following diagram shows a basic scenario of purchasing and using Reserved Instances.
 
-![Purchasing Reserved Instances.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ri-basics.png)
+![Purchasing Reserved Instances.](../../../images/awsec2/latest/userguide/images/ri-basics-png.md)
 
 In this scenario, you have a running On-Demand Instance (T2) in your account, for which you're
 currently paying On-Demand rates. You purchase a Reserved Instance that matches the attributes of

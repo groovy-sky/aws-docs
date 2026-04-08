@@ -4,15 +4,15 @@ Menu
 
 ## SSMQuickSetup
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmquicksetup.html\#toc)
+### Table of Contents  [header link](namespace-aws-ssmquicksetup-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmquicksetup.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-ssmquicksetup-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmquicksetup.exception.html)
+[Exception](namespace-aws-ssmquicksetup-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmquicksetup.html\#toc-classes)
+#### Classes  [header link](namespace-aws-ssmquicksetup-toc-classes.md)
 
-[SSMQuickSetupClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMQuickSetup.SSMQuickSetupClient.html)This client is used to interact with the **AWS Systems Manager QuickSetup** service.
+[SSMQuickSetupClient](class-aws-ssmquicksetup-ssmquicksetupclient.md)This client is used to interact with the **AWS Systems Manager QuickSetup** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmquicksetup.html#toc-classes)
+  - [Classes](namespace-aws-ssmquicksetup-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmquicksetup.html#top)
+[Back To Top](namespace-aws-ssmquicksetup-top.md)

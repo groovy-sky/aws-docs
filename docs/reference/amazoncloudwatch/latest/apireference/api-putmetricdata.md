@@ -3,7 +3,7 @@
 Publishes metric data to Amazon CloudWatch. CloudWatch associates the data with the
 specified metric. If the specified metric does not exist, CloudWatch creates the metric.
 When CloudWatch creates a metric, it can take up to fifteen minutes for the metric to
-appear in calls to [ListMetrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_ListMetrics.html).
+appear in calls to [ListMetrics](api-listmetrics.md).
 
 You can publish metrics with associated entity data (so that related telemetry can be
 found and viewed together), or publish metric data by itself. To send entity data with
@@ -65,7 +65,7 @@ two `EntityMetricData` objects, each of which can contain a single
 The limit of metrics allowed, 1000, is the sum of both `EntityMetricData`
 and `MetricData` metrics.
 
-Type: Array of [EntityMetricData](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_EntityMetricData.html) objects
+Type: Array of [EntityMetricData](api-entitymetricdata.md) objects
 
 Required: No
 
@@ -400,27 +400,27 @@ https://monitoring.us-west-1.amazonaws.com
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/monitoring-2010-08-01/PutMetricData)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/monitoring-2010-08-01/putmetricdata.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/monitoring-2010-08-01/PutMetricData)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/monitoring-2010-08-01/putmetricdata.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/PutMetricData)
+- [AWS SDK for C++](../../../goto/sdkforcpp/monitoring-2010-08-01/putmetricdata.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/monitoring-2010-08-01/PutMetricData)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/monitoring-2010-08-01/putmetricdata.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/PutMetricData)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/monitoring-2010-08-01/putmetricdata.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/monitoring-2010-08-01/PutMetricData)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/monitoring-2010-08-01/putmetricdata.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/monitoring-2010-08-01/PutMetricData)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/monitoring-2010-08-01/putmetricdata.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/monitoring-2010-08-01/PutMetricData)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/monitoring-2010-08-01/putmetricdata.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/PutMetricData)
+- [AWS SDK for Python](../../../../services/goto/boto3/monitoring-2010-08-01/putmetricdata.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/monitoring-2010-08-01/PutMetricData)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/monitoring-2010-08-01/putmetricdata.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 PutMetricAlarm
 

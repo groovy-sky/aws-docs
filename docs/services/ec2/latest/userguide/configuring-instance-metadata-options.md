@@ -221,7 +221,7 @@ determined by the settings at the different levels of the configuration and
 where enforcement is evaluated. The table that follows provides the specific
 settings at each level.
 
-![A flowchart that shows the evaluation points for the instance metadata version and IMDSv2 enforcement.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/imds-defaults-launch-flow.png)
+![A flowchart that shows the evaluation points for the instance metadata version and IMDSv2 enforcement.](../../../images/awsec2/latest/userguide/images/imds-defaults-launch-flow-png.md)
 
 The table shows how the metadata version for an instance at launch (indicated by
 **Resulting instance configuration** in column 4) is

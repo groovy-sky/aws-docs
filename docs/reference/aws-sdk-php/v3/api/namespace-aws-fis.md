@@ -4,15 +4,15 @@ Menu
 
 ## FIS
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.fis.html\#toc)
+### Table of Contents  [header link](namespace-aws-fis-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.fis.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-fis-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.fis.exception.html)
+[Exception](namespace-aws-fis-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.fis.html\#toc-classes)
+#### Classes  [header link](namespace-aws-fis-toc-classes.md)
 
-[FISClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FIS.FISClient.html)This client is used to interact with the **AWS Fault Injection Simulator** service.
+[FISClient](class-aws-fis-fisclient.md)This client is used to interact with the **AWS Fault Injection Simulator** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.fis.html#toc-classes)
+  - [Classes](namespace-aws-fis-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.fis.html#top)
+[Back To Top](namespace-aws-fis-top.md)

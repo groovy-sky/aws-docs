@@ -8,7 +8,7 @@ This stores the information that is required to query a particular connector.
 
 The properties that are required to query the custom Connector.
 
-Type: [CustomConnectorDestinationProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_CustomConnectorDestinationProperties.html) object
+Type: [CustomConnectorDestinationProperties](api-customconnectordestinationproperties.md) object
 
 Required: No
 
@@ -16,7 +16,7 @@ Required: No
 
 The properties required to query Amazon Connect Customer Profiles.
 
-Type: [CustomerProfilesDestinationProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_CustomerProfilesDestinationProperties.html) object
+Type: [CustomerProfilesDestinationProperties](api-customerprofilesdestinationproperties.md) object
 
 Required: No
 
@@ -24,7 +24,7 @@ Required: No
 
 The properties required to query Amazon EventBridge.
 
-Type: [EventBridgeDestinationProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_EventBridgeDestinationProperties.html) object
+Type: [EventBridgeDestinationProperties](api-eventbridgedestinationproperties.md) object
 
 Required: No
 
@@ -32,7 +32,7 @@ Required: No
 
 The properties required to query Amazon Honeycode.
 
-Type: [HoneycodeDestinationProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_HoneycodeDestinationProperties.html) object
+Type: [HoneycodeDestinationProperties](api-honeycodedestinationproperties.md) object
 
 Required: No
 
@@ -40,7 +40,7 @@ Required: No
 
 The properties required to query Amazon Lookout for Metrics.
 
-Type: [LookoutMetricsDestinationProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_LookoutMetricsDestinationProperties.html) object
+Type: [LookoutMetricsDestinationProperties](api-lookoutmetricsdestinationproperties.md) object
 
 Required: No
 
@@ -48,7 +48,7 @@ Required: No
 
 The properties required to query Marketo.
 
-Type: [MarketoDestinationProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_MarketoDestinationProperties.html) object
+Type: [MarketoDestinationProperties](api-marketodestinationproperties.md) object
 
 Required: No
 
@@ -56,7 +56,7 @@ Required: No
 
 The properties required to query Amazon Redshift.
 
-Type: [RedshiftDestinationProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_RedshiftDestinationProperties.html) object
+Type: [RedshiftDestinationProperties](api-redshiftdestinationproperties.md) object
 
 Required: No
 
@@ -64,7 +64,7 @@ Required: No
 
 The properties required to query Amazon S3.
 
-Type: [S3DestinationProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_S3DestinationProperties.html) object
+Type: [S3DestinationProperties](api-s3destinationproperties.md) object
 
 Required: No
 
@@ -72,7 +72,7 @@ Required: No
 
 The properties required to query Salesforce.
 
-Type: [SalesforceDestinationProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SalesforceDestinationProperties.html) object
+Type: [SalesforceDestinationProperties](api-salesforcedestinationproperties.md) object
 
 Required: No
 
@@ -80,7 +80,7 @@ Required: No
 
 The properties required to query SAPOData.
 
-Type: [SAPODataDestinationProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SAPODataDestinationProperties.html) object
+Type: [SAPODataDestinationProperties](api-sapodatadestinationproperties.md) object
 
 Required: No
 
@@ -88,7 +88,7 @@ Required: No
 
 The properties required to query Snowflake.
 
-Type: [SnowflakeDestinationProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SnowflakeDestinationProperties.html) object
+Type: [SnowflakeDestinationProperties](api-snowflakedestinationproperties.md) object
 
 Required: No
 
@@ -96,7 +96,7 @@ Required: No
 
 The properties required to query Upsolver.
 
-Type: [UpsolverDestinationProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_UpsolverDestinationProperties.html) object
+Type: [UpsolverDestinationProperties](api-upsolverdestinationproperties.md) object
 
 Required: No
 
@@ -104,7 +104,7 @@ Required: No
 
 The properties required to query Zendesk.
 
-Type: [ZendeskDestinationProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ZendeskDestinationProperties.html) object
+Type: [ZendeskDestinationProperties](api-zendeskdestinationproperties.md) object
 
 Required: No
 
@@ -112,13 +112,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/DestinationConnectorProperties)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/destinationconnectorproperties.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/DestinationConnectorProperties)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/destinationconnectorproperties.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/DestinationConnectorProperties)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/destinationconnectorproperties.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DataTransferApi
 

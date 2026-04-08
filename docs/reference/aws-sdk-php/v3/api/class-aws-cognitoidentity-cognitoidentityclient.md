@@ -17,35 +17,35 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2014-06-30**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html)
+- [**2014-06-30**](api-cognito-identity-2014-06-30.md)
 
-  - [CreateIdentityPool](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#createidentitypool)
-  - [DeleteIdentities](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#deleteidentities)
-  - [DeleteIdentityPool](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#deleteidentitypool)
-  - [DescribeIdentity](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#describeidentity)
-  - [DescribeIdentityPool](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#describeidentitypool)
-  - [GetCredentialsForIdentity](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#getcredentialsforidentity)
-  - [GetId](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#getid)
-  - [GetIdentityPoolRoles](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#getidentitypoolroles)
-  - [GetOpenIdToken](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#getopenidtoken)
-  - [GetOpenIdTokenForDeveloperIdentity](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#getopenidtokenfordeveloperidentity)
-  - [GetPrincipalTagAttributeMap](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#getprincipaltagattributemap)
-  - [ListIdentities](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#listidentities)
-  - [ListIdentityPools](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#listidentitypools)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#listtagsforresource)
-  - [LookupDeveloperIdentity](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#lookupdeveloperidentity)
-  - [MergeDeveloperIdentities](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#mergedeveloperidentities)
-  - [SetIdentityPoolRoles](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#setidentitypoolroles)
-  - [SetPrincipalTagAttributeMap](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#setprincipaltagattributemap)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#tagresource)
-  - [UnlinkDeveloperIdentity](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#unlinkdeveloperidentity)
-  - [UnlinkIdentity](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#unlinkidentity)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#untagresource)
-  - [UpdateIdentityPool](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-identity-2014-06-30.html#updateidentitypool)
+  - [CreateIdentityPool](api-cognito-identity-2014-06-30-createidentitypool.md)
+  - [DeleteIdentities](api-cognito-identity-2014-06-30-deleteidentities.md)
+  - [DeleteIdentityPool](api-cognito-identity-2014-06-30-deleteidentitypool.md)
+  - [DescribeIdentity](api-cognito-identity-2014-06-30-describeidentity.md)
+  - [DescribeIdentityPool](api-cognito-identity-2014-06-30-describeidentitypool.md)
+  - [GetCredentialsForIdentity](api-cognito-identity-2014-06-30-getcredentialsforidentity.md)
+  - [GetId](api-cognito-identity-2014-06-30-getid.md)
+  - [GetIdentityPoolRoles](api-cognito-identity-2014-06-30-getidentitypoolroles.md)
+  - [GetOpenIdToken](api-cognito-identity-2014-06-30-getopenidtoken.md)
+  - [GetOpenIdTokenForDeveloperIdentity](api-cognito-identity-2014-06-30-getopenidtokenfordeveloperidentity.md)
+  - [GetPrincipalTagAttributeMap](api-cognito-identity-2014-06-30-getprincipaltagattributemap.md)
+  - [ListIdentities](api-cognito-identity-2014-06-30-listidentities.md)
+  - [ListIdentityPools](api-cognito-identity-2014-06-30-listidentitypools.md)
+  - [ListTagsForResource](api-cognito-identity-2014-06-30-listtagsforresource.md)
+  - [LookupDeveloperIdentity](api-cognito-identity-2014-06-30-lookupdeveloperidentity.md)
+  - [MergeDeveloperIdentities](api-cognito-identity-2014-06-30-mergedeveloperidentities.md)
+  - [SetIdentityPoolRoles](api-cognito-identity-2014-06-30-setidentitypoolroles.md)
+  - [SetPrincipalTagAttributeMap](api-cognito-identity-2014-06-30-setprincipaltagattributemap.md)
+  - [TagResource](api-cognito-identity-2014-06-30-tagresource.md)
+  - [UnlinkDeveloperIdentity](api-cognito-identity-2014-06-30-unlinkdeveloperidentity.md)
+  - [UnlinkIdentity](api-cognito-identity-2014-06-30-unlinkidentity.md)
+  - [UntagResource](api-cognito-identity-2014-06-30-untagresource.md)
+  - [UpdateIdentityPool](api-cognito-identity-2014-06-30-updateidentitypool.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentity.CognitoIdentityClient.html\#toc)
+### Table of Contents  [header link](class-aws-cognitoidentity-cognitoidentityclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentity.CognitoIdentityClient.html\#toc-methods)
+#### Methods  [header link](class-aws-cognitoidentity-cognitoidentityclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -76,7 +76,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentity.CognitoIdentityClient.html\#methods)
+### Methods  [header link](class-aws-cognitoidentity-cognitoidentityclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -543,7 +543,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentity.CognitoIdentityClient.html#toc-methods)
+  - [Methods](class-aws-cognitoidentity-cognitoidentityclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -570,4 +570,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentity.CognitoIdentityClient.html#top)
+[Back To Top](class-aws-cognitoidentity-cognitoidentityclient-top.md)

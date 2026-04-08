@@ -4,15 +4,15 @@ Menu
 
 ## QBusiness
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.qbusiness.html\#toc)
+### Table of Contents  [header link](namespace-aws-qbusiness-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.qbusiness.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-qbusiness-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.qbusiness.exception.html)
+[Exception](namespace-aws-qbusiness-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.qbusiness.html\#toc-classes)
+#### Classes  [header link](namespace-aws-qbusiness-toc-classes.md)
 
-[QBusinessClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.QBusiness.QBusinessClient.html)This client is used to interact with the **QBusiness** service.
+[QBusinessClient](class-aws-qbusiness-qbusinessclient.md)This client is used to interact with the **QBusiness** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.qbusiness.html#toc-classes)
+  - [Classes](namespace-aws-qbusiness-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.qbusiness.html#top)
+[Back To Top](namespace-aws-qbusiness-top.md)

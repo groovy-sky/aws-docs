@@ -72,7 +72,7 @@ Alternatively, if you started the process in the launch instance wizard or the
     for **Instance type**, choose the instance type, and complete the
     procedure to launch an instance or create a launch template.
 
-![This animation shows how to get instance type suggestions using the EC2 instance type finder. For the text version of this animation, see the steps in the preceding procedure.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/use-ec2-instance-type-finder-animation.gif)
+![This animation shows how to get instance type suggestions using the EC2 instance type finder. For the text version of this animation, see the steps in the preceding procedure.](../../../images/awsec2/latest/userguide/images/use-ec2-instance-type-finder-animation-gif.md)
 
 [Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 

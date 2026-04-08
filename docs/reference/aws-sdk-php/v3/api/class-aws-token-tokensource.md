@@ -5,24 +5,24 @@ Menu
 
 ## TokenSource     : string     in package    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenSource.html\#toc)
+### Table of Contents  [header link](class-aws-token-tokensource-toc.md)
 
-#### Cases  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenSource.html\#toc-cases)
+#### Cases  [header link](class-aws-token-tokensource-toc-cases.md)
 
-[BEARER\_SERVICE\_ENV\_VARS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenSource.html#enumcase_BEARER_SERVICE_ENV_VARS)
+[BEARER\_SERVICE\_ENV\_VARS](class-aws-token-tokensource-enumcase-bearer-service-env-vars.md)
 = 'bearer\_service\_env\_vars'
 
-### Cases  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenSource.html\#cases)
+### Cases  [header link](class-aws-token-tokensource-cases.md)
 
-#### BEARER\_SERVICE\_ENV\_VARS  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenSource.html\#enumcase_BEARER_SERVICE_ENV_VARS)
+#### BEARER\_SERVICE\_ENV\_VARS  [header link](class-aws-token-tokensource-enumcase-bearer-service-env-vars.md)
 
 ×
 
 **On this page**
 
 - Table Of Contents
-  - [Cases](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenSource.html#toc-cases)
+  - [Cases](class-aws-token-tokensource-toc-cases.md)
 - Cases
-  - [BEARER\_SERVICE\_ENV\_VARS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenSource.html#enumcase_BEARER_SERVICE_ENV_VARS)
+  - [BEARER\_SERVICE\_ENV\_VARS](class-aws-token-tokensource-enumcase-bearer-service-env-vars.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenSource.html#top)
+[Back To Top](class-aws-token-tokensource-top.md)

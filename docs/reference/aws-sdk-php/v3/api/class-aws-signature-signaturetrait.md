@@ -7,7 +7,7 @@ Menu
 
 Provides signature calculation for SignatureV4.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureTrait.html\#toc)
+### Table of Contents  [header link](class-aws-signature-signaturetrait-toc.md)
 
 ×
 
@@ -15,4 +15,4 @@ Provides signature calculation for SignatureV4.
 
 - Table Of Contents
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureTrait.html#top)
+[Back To Top](class-aws-signature-signaturetrait-top.md)

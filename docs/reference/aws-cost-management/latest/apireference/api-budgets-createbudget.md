@@ -7,7 +7,7 @@ Creates a budget and, if included, notifications and subscribers.
 Only one of `BudgetLimit` or `PlannedBudgetLimits` can be present in
 the syntax at one time. Use the syntax that matches your use case. The Request Syntax
 section shows the `BudgetLimit` syntax. For `PlannedBudgetLimits`,
-see the [Examples](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_budgets_CreateBudget.html#API_CreateBudget_Examples) section.
+see the [Examples](api-budgets-createbudget-api-createbudget-examples.md) section.
 
 Similarly, only one set of filter and metric selections can be present in the syntax
 at one time. Either `FilterExpression` and `Metrics` or
@@ -155,7 +155,7 @@ Required: Yes
 
 The budget object that you want to create.
 
-Type: [Budget](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_budgets_Budget.html) object
+Type: [Budget](api-budgets-budget.md) object
 
 Required: Yes
 
@@ -163,7 +163,7 @@ Required: Yes
 
 A notification that you want to associate with a budget. A budget can have up to five notifications, and each notification can have one SNS subscriber and up to 10 email subscribers. If you include notifications and subscribers in your `CreateBudget` call, AWS creates the notifications and subscribers for you.
 
-Type: Array of [NotificationWithSubscribers](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_budgets_NotificationWithSubscribers.html) objects
+Type: Array of [NotificationWithSubscribers](api-budgets-notificationwithsubscribers.md) objects
 
 Array Members: Maximum number of 10 items.
 
@@ -174,7 +174,7 @@ Required: No
 An optional list of tags to associate with the specified budget. Each tag consists of a
 key and a value, and each key must be unique for the resource.
 
-Type: Array of [ResourceTag](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_budgets_ResourceTag.html) objects
+Type: Array of [ResourceTag](api-budgets-resourcetag.md) objects
 
 Array Members: Minimum number of 0 items. Maximum number of 200 items.
 
@@ -714,27 +714,27 @@ X-Amz-Target: AWSBudgetServiceGateway.CreateBudget
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/budgets-2016-10-20/CreateBudget)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/budgets-2016-10-20/createbudget.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/budgets-2016-10-20/CreateBudget)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/budgets-2016-10-20/createbudget.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/budgets-2016-10-20/CreateBudget)
+- [AWS SDK for C++](../../../goto/sdkforcpp/budgets-2016-10-20/createbudget.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/budgets-2016-10-20/CreateBudget)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/budgets-2016-10-20/createbudget.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/budgets-2016-10-20/CreateBudget)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/budgets-2016-10-20/createbudget.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/budgets-2016-10-20/CreateBudget)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/budgets-2016-10-20/createbudget.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/budgets-2016-10-20/CreateBudget)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/budgets-2016-10-20/createbudget.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/budgets-2016-10-20/CreateBudget)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/budgets-2016-10-20/createbudget.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/budgets-2016-10-20/CreateBudget)
+- [AWS SDK for Python](../../../../services/goto/boto3/budgets-2016-10-20/createbudget.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/budgets-2016-10-20/CreateBudget)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/budgets-2016-10-20/createbudget.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AWS Budgets
 

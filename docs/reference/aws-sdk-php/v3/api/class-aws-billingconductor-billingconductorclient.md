@@ -17,44 +17,44 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2021-07-30**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html)
+- [**2021-07-30**](api-billingconductor-2021-07-30.md)
 
-  - [AssociateAccounts](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#associateaccounts)
-  - [AssociatePricingRules](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#associatepricingrules)
-  - [BatchAssociateResourcesToCustomLineItem](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#batchassociateresourcestocustomlineitem)
-  - [BatchDisassociateResourcesFromCustomLineItem](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#batchdisassociateresourcesfromcustomlineitem)
-  - [CreateBillingGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#createbillinggroup)
-  - [CreateCustomLineItem](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#createcustomlineitem)
-  - [CreatePricingPlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#createpricingplan)
-  - [CreatePricingRule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#createpricingrule)
-  - [DeleteBillingGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#deletebillinggroup)
-  - [DeleteCustomLineItem](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#deletecustomlineitem)
-  - [DeletePricingPlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#deletepricingplan)
-  - [DeletePricingRule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#deletepricingrule)
-  - [DisassociateAccounts](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#disassociateaccounts)
-  - [DisassociatePricingRules](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#disassociatepricingrules)
-  - [GetBillingGroupCostReport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#getbillinggroupcostreport)
-  - [ListAccountAssociations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#listaccountassociations)
-  - [ListBillingGroupCostReports](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#listbillinggroupcostreports)
-  - [ListBillingGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#listbillinggroups)
-  - [ListCustomLineItemVersions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#listcustomlineitemversions)
-  - [ListCustomLineItems](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#listcustomlineitems)
-  - [ListPricingPlans](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#listpricingplans)
-  - [ListPricingPlansAssociatedWithPricingRule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#listpricingplansassociatedwithpricingrule)
-  - [ListPricingRules](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#listpricingrules)
-  - [ListPricingRulesAssociatedToPricingPlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#listpricingrulesassociatedtopricingplan)
-  - [ListResourcesAssociatedToCustomLineItem](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#listresourcesassociatedtocustomlineitem)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#listtagsforresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#untagresource)
-  - [UpdateBillingGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#updatebillinggroup)
-  - [UpdateCustomLineItem](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#updatecustomlineitem)
-  - [UpdatePricingPlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#updatepricingplan)
-  - [UpdatePricingRule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billingconductor-2021-07-30.html#updatepricingrule)
+  - [AssociateAccounts](api-billingconductor-2021-07-30-associateaccounts.md)
+  - [AssociatePricingRules](api-billingconductor-2021-07-30-associatepricingrules.md)
+  - [BatchAssociateResourcesToCustomLineItem](api-billingconductor-2021-07-30-batchassociateresourcestocustomlineitem.md)
+  - [BatchDisassociateResourcesFromCustomLineItem](api-billingconductor-2021-07-30-batchdisassociateresourcesfromcustomlineitem.md)
+  - [CreateBillingGroup](api-billingconductor-2021-07-30-createbillinggroup.md)
+  - [CreateCustomLineItem](api-billingconductor-2021-07-30-createcustomlineitem.md)
+  - [CreatePricingPlan](api-billingconductor-2021-07-30-createpricingplan.md)
+  - [CreatePricingRule](api-billingconductor-2021-07-30-createpricingrule.md)
+  - [DeleteBillingGroup](api-billingconductor-2021-07-30-deletebillinggroup.md)
+  - [DeleteCustomLineItem](api-billingconductor-2021-07-30-deletecustomlineitem.md)
+  - [DeletePricingPlan](api-billingconductor-2021-07-30-deletepricingplan.md)
+  - [DeletePricingRule](api-billingconductor-2021-07-30-deletepricingrule.md)
+  - [DisassociateAccounts](api-billingconductor-2021-07-30-disassociateaccounts.md)
+  - [DisassociatePricingRules](api-billingconductor-2021-07-30-disassociatepricingrules.md)
+  - [GetBillingGroupCostReport](api-billingconductor-2021-07-30-getbillinggroupcostreport.md)
+  - [ListAccountAssociations](api-billingconductor-2021-07-30-listaccountassociations.md)
+  - [ListBillingGroupCostReports](api-billingconductor-2021-07-30-listbillinggroupcostreports.md)
+  - [ListBillingGroups](api-billingconductor-2021-07-30-listbillinggroups.md)
+  - [ListCustomLineItemVersions](api-billingconductor-2021-07-30-listcustomlineitemversions.md)
+  - [ListCustomLineItems](api-billingconductor-2021-07-30-listcustomlineitems.md)
+  - [ListPricingPlans](api-billingconductor-2021-07-30-listpricingplans.md)
+  - [ListPricingPlansAssociatedWithPricingRule](api-billingconductor-2021-07-30-listpricingplansassociatedwithpricingrule.md)
+  - [ListPricingRules](api-billingconductor-2021-07-30-listpricingrules.md)
+  - [ListPricingRulesAssociatedToPricingPlan](api-billingconductor-2021-07-30-listpricingrulesassociatedtopricingplan.md)
+  - [ListResourcesAssociatedToCustomLineItem](api-billingconductor-2021-07-30-listresourcesassociatedtocustomlineitem.md)
+  - [ListTagsForResource](api-billingconductor-2021-07-30-listtagsforresource.md)
+  - [TagResource](api-billingconductor-2021-07-30-tagresource.md)
+  - [UntagResource](api-billingconductor-2021-07-30-untagresource.md)
+  - [UpdateBillingGroup](api-billingconductor-2021-07-30-updatebillinggroup.md)
+  - [UpdateCustomLineItem](api-billingconductor-2021-07-30-updatecustomlineitem.md)
+  - [UpdatePricingPlan](api-billingconductor-2021-07-30-updatepricingplan.md)
+  - [UpdatePricingRule](api-billingconductor-2021-07-30-updatepricingrule.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BillingConductor.BillingConductorClient.html\#toc)
+### Table of Contents  [header link](class-aws-billingconductor-billingconductorclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BillingConductor.BillingConductorClient.html\#toc-methods)
+#### Methods  [header link](class-aws-billingconductor-billingconductorclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -85,7 +85,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BillingConductor.BillingConductorClient.html\#methods)
+### Methods  [header link](class-aws-billingconductor-billingconductorclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -552,7 +552,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BillingConductor.BillingConductorClient.html#toc-methods)
+  - [Methods](class-aws-billingconductor-billingconductorclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -579,4 +579,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BillingConductor.BillingConductorClient.html#top)
+[Back To Top](class-aws-billingconductor-billingconductorclient-top.md)

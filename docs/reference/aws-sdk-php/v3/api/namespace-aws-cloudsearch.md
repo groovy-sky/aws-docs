@@ -4,15 +4,15 @@ Menu
 
 ## CloudSearch
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudsearch.html\#toc)
+### Table of Contents  [header link](namespace-aws-cloudsearch-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudsearch.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-cloudsearch-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudsearch.exception.html)
+[Exception](namespace-aws-cloudsearch-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudsearch.html\#toc-classes)
+#### Classes  [header link](namespace-aws-cloudsearch-toc-classes.md)
 
-[CloudSearchClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearch.CloudSearchClient.html)This client is used to interact with the **Amazon CloudSearch** service.
+[CloudSearchClient](class-aws-cloudsearch-cloudsearchclient.md)This client is used to interact with the **Amazon CloudSearch** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudsearch.html#toc-classes)
+  - [Classes](namespace-aws-cloudsearch-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudsearch.html#top)
+[Back To Top](namespace-aws-cloudsearch-top.md)

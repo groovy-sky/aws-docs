@@ -4,15 +4,15 @@ Menu
 
 ## ManagedBlockchainQuery
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.managedblockchainquery.html\#toc)
+### Table of Contents  [header link](namespace-aws-managedblockchainquery-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.managedblockchainquery.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-managedblockchainquery-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.managedblockchainquery.exception.html)
+[Exception](namespace-aws-managedblockchainquery-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.managedblockchainquery.html\#toc-classes)
+#### Classes  [header link](namespace-aws-managedblockchainquery-toc-classes.md)
 
-[ManagedBlockchainQueryClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedBlockchainQuery.ManagedBlockchainQueryClient.html)This client is used to interact with the **Amazon Managed Blockchain Query** service.
+[ManagedBlockchainQueryClient](class-aws-managedblockchainquery-managedblockchainqueryclient.md)This client is used to interact with the **Amazon Managed Blockchain Query** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.managedblockchainquery.html#toc-classes)
+  - [Classes](namespace-aws-managedblockchainquery-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.managedblockchainquery.html#top)
+[Back To Top](namespace-aws-managedblockchainquery-top.md)

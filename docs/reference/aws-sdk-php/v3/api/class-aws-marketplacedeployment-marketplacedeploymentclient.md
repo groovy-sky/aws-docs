@@ -17,16 +17,16 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2023-01-25**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-deployment-2023-01-25.html)
+- [**2023-01-25**](api-marketplace-deployment-2023-01-25.md)
 
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-deployment-2023-01-25.html#listtagsforresource)
-  - [PutDeploymentParameter](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-deployment-2023-01-25.html#putdeploymentparameter)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-deployment-2023-01-25.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-marketplace-deployment-2023-01-25.html#untagresource)
+  - [ListTagsForResource](api-marketplace-deployment-2023-01-25-listtagsforresource.md)
+  - [PutDeploymentParameter](api-marketplace-deployment-2023-01-25-putdeploymentparameter.md)
+  - [TagResource](api-marketplace-deployment-2023-01-25-tagresource.md)
+  - [UntagResource](api-marketplace-deployment-2023-01-25-untagresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceDeployment.MarketplaceDeploymentClient.html\#toc)
+### Table of Contents  [header link](class-aws-marketplacedeployment-marketplacedeploymentclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceDeployment.MarketplaceDeploymentClient.html\#toc-methods)
+#### Methods  [header link](class-aws-marketplacedeployment-marketplacedeploymentclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -57,7 +57,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceDeployment.MarketplaceDeploymentClient.html\#methods)
+### Methods  [header link](class-aws-marketplacedeployment-marketplacedeploymentclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -524,7 +524,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceDeployment.MarketplaceDeploymentClient.html#toc-methods)
+  - [Methods](class-aws-marketplacedeployment-marketplacedeploymentclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -551,4 +551,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceDeployment.MarketplaceDeploymentClient.html#top)
+[Back To Top](class-aws-marketplacedeployment-marketplacedeploymentclient-top.md)

@@ -2,7 +2,7 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [EndpointV2](namespace-aws-endpointv2.md)
-- [Rule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpointv2.rule.html)
+- [Rule](namespace-aws-endpointv2-rule.md)
 
 ## AbstractRule        in package    - [Aws](package-aws.md)
 
@@ -11,19 +11,19 @@ AbstractYes
 A rule within a rule set. All rules contain a conditions property,
 which can be empty, and documentation about the rule.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.AbstractRule.html\#toc)
+### Table of Contents  [header link](class-aws-endpointv2-rule-abstractrule-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.AbstractRule.html\#toc-methods)
+#### Methods  [header link](class-aws-endpointv2-rule-abstractrule-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.AbstractRule.html#method___construct)
-: mixed [evaluate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.AbstractRule.html#method_evaluate)
-: mixed [getConditions()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.AbstractRule.html#method_getConditions)
-: array<string\|int, mixed> [getDocumentation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.AbstractRule.html#method_getDocumentation)
+[\_\_construct()](class-aws-endpointv2-rule-abstractrule-method-construct.md)
+: mixed [evaluate()](class-aws-endpointv2-rule-abstractrule-method-evaluate.md)
+: mixed [getConditions()](class-aws-endpointv2-rule-abstractrule-method-getconditions.md)
+: array<string\|int, mixed> [getDocumentation()](class-aws-endpointv2-rule-abstractrule-method-getdocumentation.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.AbstractRule.html\#methods)
+### Methods  [header link](class-aws-endpointv2-rule-abstractrule-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.AbstractRule.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-endpointv2-rule-abstractrule-method-construct.md)
 
 `
     public
@@ -34,7 +34,7 @@ which can be empty, and documentation about the rule.
 $definition
 : array<string\|int, mixed>
 
-#### evaluate()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.AbstractRule.html\#method_evaluate)
+#### evaluate()  [header link](class-aws-endpointv2-rule-abstractrule-method-evaluate.md)
 
 `
     public
@@ -46,7 +46,7 @@ $inputParameters
 : array<string\|int, mixed>$standardLibrary
 : RulesetStandardLibrary
 
-#### getConditions()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.AbstractRule.html\#method_getConditions)
+#### getConditions()  [header link](class-aws-endpointv2-rule-abstractrule-method-getconditions.md)
 
 `
     public
@@ -56,7 +56,7 @@ $inputParameters
 
 array<string\|int, mixed>
 
-#### getDocumentation()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.AbstractRule.html\#method_getDocumentation)
+#### getDocumentation()  [header link](class-aws-endpointv2-rule-abstractrule-method-getdocumentation.md)
 
 `
     public
@@ -69,11 +69,11 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.AbstractRule.html#toc-methods)
+  - [Methods](class-aws-endpointv2-rule-abstractrule-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.AbstractRule.html#method___construct)
-  - [evaluate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.AbstractRule.html#method_evaluate)
-  - [getConditions()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.AbstractRule.html#method_getConditions)
-  - [getDocumentation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.AbstractRule.html#method_getDocumentation)
+  - [\_\_construct()](class-aws-endpointv2-rule-abstractrule-method-construct.md)
+  - [evaluate()](class-aws-endpointv2-rule-abstractrule-method-evaluate.md)
+  - [getConditions()](class-aws-endpointv2-rule-abstractrule-method-getconditions.md)
+  - [getDocumentation()](class-aws-endpointv2-rule-abstractrule-method-getdocumentation.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.AbstractRule.html#top)
+[Back To Top](class-aws-endpointv2-rule-abstractrule-top.md)

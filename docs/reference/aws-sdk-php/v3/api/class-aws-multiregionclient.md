@@ -4,36 +4,36 @@ Menu
 
 ## MultiRegionClient        in package    - [Aws](package-aws.md)       implements  [AwsClientInterface](class-aws-awsclientinterface.md)  Uses  [AwsClientTrait](class-aws-awsclienttrait.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html\#toc)
+### Table of Contents  [header link](class-aws-multiregionclient-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-multiregionclient-toc-interfaces.md)
 
 [AwsClientInterface](class-aws-awsclientinterface.md)Represents an AWS client.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html\#toc-methods)
+#### Methods  [header link](class-aws-multiregionclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
-: mixed [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html#method___construct)
+: mixed [\_\_construct()](class-aws-multiregionclient-method-construct.md)
 : mixed The multi-region client constructor accepts the following options:[execute()](class-aws-awsclienttrait.md#method_execute)
 : mixed [executeAsync()](class-aws-awsclienttrait.md#method_executeAsync)
-: mixed [getApi()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html#method_getApi)
-: [Service](class-aws-api-service.md)Get the service description associated with the client.[getArguments()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html#method_getArguments)
-: mixed [getCommand()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html#method_getCommand)
-: [CommandInterface](class-aws-commandinterface.md)Create a command for an operation name.[getConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html#method_getConfig)
-: mixed\|null Get a client configuration value.[getCredentials()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html#method_getCredentials)
+: mixed [getApi()](class-aws-multiregionclient-method-getapi.md)
+: [Service](class-aws-api-service.md)Get the service description associated with the client.[getArguments()](class-aws-multiregionclient-method-getarguments.md)
+: mixed [getCommand()](class-aws-multiregionclient-method-getcommand.md)
+: [CommandInterface](class-aws-commandinterface.md)Create a command for an operation name.[getConfig()](class-aws-multiregionclient-method-getconfig.md)
+: mixed\|null Get a client configuration value.[getCredentials()](class-aws-multiregionclient-method-getcredentials.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Returns a promise that is fulfilled with an
-{@see \\Aws\\Credentials\\CredentialsInterface} object.[getEndpoint()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html#method_getEndpoint)
-: [UriInterface](class-psr-http-message-uriinterface.md)Gets the default endpoint, or base URL, used by the client.[getHandlerList()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html#method_getHandlerList)
+{@see \\Aws\\Credentials\\CredentialsInterface} object.[getEndpoint()](class-aws-multiregionclient-method-getendpoint.md)
+: [UriInterface](class-psr-http-message-uriinterface.md)Gets the default endpoint, or base URL, used by the client.[getHandlerList()](class-aws-multiregionclient-method-gethandlerlist.md)
 : [HandlerList](class-aws-handlerlist.md)Get the handler list used to transfer commands.[getIterator()](class-aws-awsclienttrait.md#method_getIterator)
 : mixed [getPaginator()](class-aws-awsclienttrait.md#method_getPaginator)
-: mixed [getRegion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html#method_getRegion)
+: mixed [getRegion()](class-aws-multiregionclient-method-getregion.md)
 : string Get the region to which the client is configured to send requests by
 default.[getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
-: mixed [useCustomHandler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html#method_useCustomHandler)
+: mixed [useCustomHandler()](class-aws-multiregionclient-method-usecustomhandler.md)
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html\#methods)
+### Methods  [header link](class-aws-multiregionclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -47,7 +47,7 @@ $name
 : mixed$args
 : array<string\|int, mixed>
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-multiregionclient-method-construct.md)
 
 The multi-region client constructor accepts the following options:
 
@@ -94,7 +94,7 @@ $command
 $command
 : [CommandInterface](class-aws-commandinterface.md)
 
-#### getApi()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html\#method_getApi)
+#### getApi()  [header link](class-aws-multiregionclient-method-getapi.md)
 
 Get the service description associated with the client.
 
@@ -106,13 +106,13 @@ Get the service description associated with the client.
 
 [Service](class-aws-api-service.md)
 
-#### getArguments()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html\#method_getArguments)
+#### getArguments()  [header link](class-aws-multiregionclient-method-getarguments.md)
 
 `
     public
             static        getArguments() : mixed`
 
-#### getCommand()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html\#method_getCommand)
+#### getCommand()  [header link](class-aws-multiregionclient-method-getcommand.md)
 
 Create a command for an operation name.
 
@@ -142,7 +142,7 @@ $args
 
 Arguments to pass to the command
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html\#method_getCommand\#tags)
+##### Tags  [header link](class-aws-multiregionclient-method-getcommand-tags.md)
 
 throwsInvalidArgumentException
 
@@ -152,7 +152,7 @@ if no command can be found by name
 
 [CommandInterface](class-aws-commandinterface.md)
 
-#### getConfig()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html\#method_getConfig)
+#### getConfig()  [header link](class-aws-multiregionclient-method-getconfig.md)
 
 Get a client configuration value.
 
@@ -173,7 +173,7 @@ all options.
 
 mixed\|null
 
-#### getCredentials()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html\#method_getCredentials)
+#### getCredentials()  [header link](class-aws-multiregionclient-method-getcredentials.md)
 
 Returns a promise that is fulfilled with an
 {@see \\Aws\\Credentials\\CredentialsInterface} object.
@@ -189,7 +189,7 @@ on the returned promise.
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### getEndpoint()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html\#method_getEndpoint)
+#### getEndpoint()  [header link](class-aws-multiregionclient-method-getendpoint.md)
 
 Gets the default endpoint, or base URL, used by the client.
 
@@ -201,7 +201,7 @@ Gets the default endpoint, or base URL, used by the client.
 
 [UriInterface](class-psr-http-message-uriinterface.md)
 
-#### getHandlerList()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html\#method_getHandlerList)
+#### getHandlerList()  [header link](class-aws-multiregionclient-method-gethandlerlist.md)
 
 Get the handler list used to transfer commands.
 
@@ -242,7 +242,7 @@ $name
 : array<string\|int, mixed>
 = \[\]
 
-#### getRegion()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html\#method_getRegion)
+#### getRegion()  [header link](class-aws-multiregionclient-method-getregion.md)
 
 Get the region to which the client is configured to send requests by
 default.
@@ -268,7 +268,7 @@ $name
 : array<string\|int, mixed>
 = \[\]
 
-#### useCustomHandler()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html\#method_useCustomHandler)
+#### useCustomHandler()  [header link](class-aws-multiregionclient-method-usecustomhandler.md)
 
 `
     public
@@ -298,24 +298,24 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html#toc-methods)
+  - [Methods](class-aws-multiregionclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html#method___construct)
+  - [\_\_construct()](class-aws-multiregionclient-method-construct.md)
   - [execute()](class-aws-awsclienttrait.md#method_execute)
   - [executeAsync()](class-aws-awsclienttrait.md#method_executeAsync)
-  - [getApi()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html#method_getApi)
-  - [getArguments()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html#method_getArguments)
-  - [getCommand()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html#method_getCommand)
-  - [getConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html#method_getConfig)
-  - [getCredentials()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html#method_getCredentials)
-  - [getEndpoint()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html#method_getEndpoint)
-  - [getHandlerList()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html#method_getHandlerList)
+  - [getApi()](class-aws-multiregionclient-method-getapi.md)
+  - [getArguments()](class-aws-multiregionclient-method-getarguments.md)
+  - [getCommand()](class-aws-multiregionclient-method-getcommand.md)
+  - [getConfig()](class-aws-multiregionclient-method-getconfig.md)
+  - [getCredentials()](class-aws-multiregionclient-method-getcredentials.md)
+  - [getEndpoint()](class-aws-multiregionclient-method-getendpoint.md)
+  - [getHandlerList()](class-aws-multiregionclient-method-gethandlerlist.md)
   - [getIterator()](class-aws-awsclienttrait.md#method_getIterator)
   - [getPaginator()](class-aws-awsclienttrait.md#method_getPaginator)
-  - [getRegion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html#method_getRegion)
+  - [getRegion()](class-aws-multiregionclient-method-getregion.md)
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
-  - [useCustomHandler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html#method_useCustomHandler)
+  - [useCustomHandler()](class-aws-multiregionclient-method-usecustomhandler.md)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MultiRegionClient.html#top)
+[Back To Top](class-aws-multiregionclient-top.md)

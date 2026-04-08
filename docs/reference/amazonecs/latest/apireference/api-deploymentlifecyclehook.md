@@ -2,7 +2,7 @@
 
 A deployment lifecycle hook runs custom logic at specific stages of the deployment process. Currently, you can use Lambda functions as hook targets.
 
-For more information, see [Lifecycle hooks for Amazon ECS service deployments](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-lifecycle-hooks.html) in the _Amazon Elastic Container Service Developer Guide_.
+For more information, see [Lifecycle hooks for Amazon ECS service deployments](../../../../services/amazonecs/latest/developerguide/deployment-lifecycle-hooks.md) in the _Amazon Elastic Container Service Developer Guide_.
 
 ## Contents
 
@@ -83,7 +83,7 @@ Required: No
 The Amazon Resource Name (ARN) of the IAM role that grants Amazon ECS permission to call Lambda functions on your behalf.
 
 For more information, see [Permissions required\
-for Lambda functions in Amazon ECS blue/green deployments](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/blue-green-permissions.html) in the _Amazon Elastic Container Service Developer Guide_.
+for Lambda functions in Amazon ECS blue/green deployments](../../../../services/amazonecs/latest/developerguide/blue-green-permissions.md) in the _Amazon Elastic Container Service Developer Guide_.
 
 Type: String
 
@@ -93,13 +93,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/DeploymentLifecycleHook)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/deploymentlifecyclehook.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/DeploymentLifecycleHook)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/deploymentlifecyclehook.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/DeploymentLifecycleHook)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/deploymentlifecyclehook.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DeploymentEphemeralStorage
 

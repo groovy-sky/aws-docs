@@ -36,7 +36,7 @@ bytes a log group is storing.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -58,7 +58,7 @@ The number of days to retain the log events in the specified log group. Possible
 are: 1, 3, 5, 7, 14, 30, 60, 90, 120, 150, 180, 365, 400, 545, 731, 1096, 1827, 2192, 2557,
 2922, 3288, and 3653.
 
-To set a log group so that its log events do not expire, use [DeleteRetentionPolicy](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DeleteRetentionPolicy.html).
+To set a log group so that its log events do not expire, use [DeleteRetentionPolicy](api-deleteretentionpolicy.md).
 
 Type: Integer
 
@@ -70,7 +70,7 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **InvalidParameterException**
 
@@ -138,27 +138,27 @@ Date: <Date>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/logs-2014-03-28/PutRetentionPolicy)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/logs-2014-03-28/putretentionpolicy.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/logs-2014-03-28/PutRetentionPolicy)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/logs-2014-03-28/putretentionpolicy.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/PutRetentionPolicy)
+- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/putretentionpolicy.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/logs-2014-03-28/PutRetentionPolicy)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/logs-2014-03-28/putretentionpolicy.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/PutRetentionPolicy)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/putretentionpolicy.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/logs-2014-03-28/PutRetentionPolicy)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/logs-2014-03-28/putretentionpolicy.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/logs-2014-03-28/PutRetentionPolicy)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/logs-2014-03-28/putretentionpolicy.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/logs-2014-03-28/PutRetentionPolicy)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/logs-2014-03-28/putretentionpolicy.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/logs-2014-03-28/PutRetentionPolicy)
+- [AWS SDK for Python](../../../../services/goto/boto3/logs-2014-03-28/putretentionpolicy.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/logs-2014-03-28/PutRetentionPolicy)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/putretentionpolicy.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 PutResourcePolicy
 

@@ -17,25 +17,25 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-07-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-healthlake-2017-07-01.html)
+- [**2017-07-01**](api-healthlake-2017-07-01.md)
 
-  - [CreateFHIRDatastore](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-healthlake-2017-07-01.html#createfhirdatastore)
-  - [DeleteFHIRDatastore](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-healthlake-2017-07-01.html#deletefhirdatastore)
-  - [DescribeFHIRDatastore](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-healthlake-2017-07-01.html#describefhirdatastore)
-  - [DescribeFHIRExportJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-healthlake-2017-07-01.html#describefhirexportjob)
-  - [DescribeFHIRImportJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-healthlake-2017-07-01.html#describefhirimportjob)
-  - [ListFHIRDatastores](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-healthlake-2017-07-01.html#listfhirdatastores)
-  - [ListFHIRExportJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-healthlake-2017-07-01.html#listfhirexportjobs)
-  - [ListFHIRImportJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-healthlake-2017-07-01.html#listfhirimportjobs)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-healthlake-2017-07-01.html#listtagsforresource)
-  - [StartFHIRExportJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-healthlake-2017-07-01.html#startfhirexportjob)
-  - [StartFHIRImportJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-healthlake-2017-07-01.html#startfhirimportjob)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-healthlake-2017-07-01.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-healthlake-2017-07-01.html#untagresource)
+  - [CreateFHIRDatastore](api-healthlake-2017-07-01-createfhirdatastore.md)
+  - [DeleteFHIRDatastore](api-healthlake-2017-07-01-deletefhirdatastore.md)
+  - [DescribeFHIRDatastore](api-healthlake-2017-07-01-describefhirdatastore.md)
+  - [DescribeFHIRExportJob](api-healthlake-2017-07-01-describefhirexportjob.md)
+  - [DescribeFHIRImportJob](api-healthlake-2017-07-01-describefhirimportjob.md)
+  - [ListFHIRDatastores](api-healthlake-2017-07-01-listfhirdatastores.md)
+  - [ListFHIRExportJobs](api-healthlake-2017-07-01-listfhirexportjobs.md)
+  - [ListFHIRImportJobs](api-healthlake-2017-07-01-listfhirimportjobs.md)
+  - [ListTagsForResource](api-healthlake-2017-07-01-listtagsforresource.md)
+  - [StartFHIRExportJob](api-healthlake-2017-07-01-startfhirexportjob.md)
+  - [StartFHIRImportJob](api-healthlake-2017-07-01-startfhirimportjob.md)
+  - [TagResource](api-healthlake-2017-07-01-tagresource.md)
+  - [UntagResource](api-healthlake-2017-07-01-untagresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HealthLake.HealthLakeClient.html\#toc)
+### Table of Contents  [header link](class-aws-healthlake-healthlakeclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HealthLake.HealthLakeClient.html\#toc-methods)
+#### Methods  [header link](class-aws-healthlake-healthlakeclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -66,7 +66,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HealthLake.HealthLakeClient.html\#methods)
+### Methods  [header link](class-aws-healthlake-healthlakeclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -533,7 +533,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HealthLake.HealthLakeClient.html#toc-methods)
+  - [Methods](class-aws-healthlake-healthlakeclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -560,4 +560,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HealthLake.HealthLakeClient.html#top)
+[Back To Top](class-aws-healthlake-healthlakeclient-top.md)

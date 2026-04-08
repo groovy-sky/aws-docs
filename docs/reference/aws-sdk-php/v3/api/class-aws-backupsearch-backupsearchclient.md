@@ -17,24 +17,24 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-05-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backupsearch-2018-05-10.html)
+- [**2018-05-10**](api-backupsearch-2018-05-10.md)
 
-  - [GetSearchJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backupsearch-2018-05-10.html#getsearchjob)
-  - [GetSearchResultExportJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backupsearch-2018-05-10.html#getsearchresultexportjob)
-  - [ListSearchJobBackups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backupsearch-2018-05-10.html#listsearchjobbackups)
-  - [ListSearchJobResults](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backupsearch-2018-05-10.html#listsearchjobresults)
-  - [ListSearchJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backupsearch-2018-05-10.html#listsearchjobs)
-  - [ListSearchResultExportJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backupsearch-2018-05-10.html#listsearchresultexportjobs)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backupsearch-2018-05-10.html#listtagsforresource)
-  - [StartSearchJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backupsearch-2018-05-10.html#startsearchjob)
-  - [StartSearchResultExportJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backupsearch-2018-05-10.html#startsearchresultexportjob)
-  - [StopSearchJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backupsearch-2018-05-10.html#stopsearchjob)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backupsearch-2018-05-10.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backupsearch-2018-05-10.html#untagresource)
+  - [GetSearchJob](api-backupsearch-2018-05-10-getsearchjob.md)
+  - [GetSearchResultExportJob](api-backupsearch-2018-05-10-getsearchresultexportjob.md)
+  - [ListSearchJobBackups](api-backupsearch-2018-05-10-listsearchjobbackups.md)
+  - [ListSearchJobResults](api-backupsearch-2018-05-10-listsearchjobresults.md)
+  - [ListSearchJobs](api-backupsearch-2018-05-10-listsearchjobs.md)
+  - [ListSearchResultExportJobs](api-backupsearch-2018-05-10-listsearchresultexportjobs.md)
+  - [ListTagsForResource](api-backupsearch-2018-05-10-listtagsforresource.md)
+  - [StartSearchJob](api-backupsearch-2018-05-10-startsearchjob.md)
+  - [StartSearchResultExportJob](api-backupsearch-2018-05-10-startsearchresultexportjob.md)
+  - [StopSearchJob](api-backupsearch-2018-05-10-stopsearchjob.md)
+  - [TagResource](api-backupsearch-2018-05-10-tagresource.md)
+  - [UntagResource](api-backupsearch-2018-05-10-untagresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BackupSearch.BackupSearchClient.html\#toc)
+### Table of Contents  [header link](class-aws-backupsearch-backupsearchclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BackupSearch.BackupSearchClient.html\#toc-methods)
+#### Methods  [header link](class-aws-backupsearch-backupsearchclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -65,7 +65,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BackupSearch.BackupSearchClient.html\#methods)
+### Methods  [header link](class-aws-backupsearch-backupsearchclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -532,7 +532,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BackupSearch.BackupSearchClient.html#toc-methods)
+  - [Methods](class-aws-backupsearch-backupsearchclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -559,4 +559,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BackupSearch.BackupSearchClient.html#top)
+[Back To Top](class-aws-backupsearch-backupsearchclient-top.md)

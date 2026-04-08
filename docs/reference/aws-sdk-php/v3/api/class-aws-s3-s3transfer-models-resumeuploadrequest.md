@@ -2,26 +2,26 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
-- [Models](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.models.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
+- [Models](namespace-aws-s3-s3transfer-models.md)
 
 ## ResumeUploadRequest        in package    - [Aws](package-aws.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeUploadRequest.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-models-resumeuploadrequest-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeUploadRequest.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-models-resumeuploadrequest-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeUploadRequest.html#method___construct)
-: mixed [getListeners()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeUploadRequest.html#method_getListeners)
-: array<string\|int, mixed> [getProgressTracker()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeUploadRequest.html#method_getProgressTracker)
-: [AbstractTransferListener](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractTransferListener.html) \|null [getResumableUpload()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeUploadRequest.html#method_getResumableUpload)
+[\_\_construct()](class-aws-s3-s3transfer-models-resumeuploadrequest-method-construct.md)
+: mixed [getListeners()](class-aws-s3-s3transfer-models-resumeuploadrequest-method-getlisteners.md)
+: array<string\|int, mixed> [getProgressTracker()](class-aws-s3-s3transfer-models-resumeuploadrequest-method-getprogresstracker.md)
+: [AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md) \|null [getResumableUpload()](class-aws-s3-s3transfer-models-resumeuploadrequest-method-getresumableupload.md)
 : string\| [ResumableUpload](class-aws-s3-s3transfer-models-resumableupload.md)
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeUploadRequest.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-models-resumeuploadrequest-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeUploadRequest.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3transfer-models-resumeuploadrequest-method-construct.md)
 
 `
     public
@@ -33,10 +33,10 @@ $resumableUpload
 : [ResumableUpload](class-aws-s3-s3transfer-models-resumableupload.md) \|string$listeners
 : array<string\|int, mixed>
 = \[\]$progressTracker
-: [AbstractTransferListener](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractTransferListener.html) \|null
+: [AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md) \|null
 = null
 
-#### getListeners()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeUploadRequest.html\#method_getListeners)
+#### getListeners()  [header link](class-aws-s3-s3transfer-models-resumeuploadrequest-method-getlisteners.md)
 
 `
     public
@@ -46,7 +46,7 @@ $resumableUpload
 
 array<string\|int, mixed>
 
-#### getProgressTracker()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeUploadRequest.html\#method_getProgressTracker)
+#### getProgressTracker()  [header link](class-aws-s3-s3transfer-models-resumeuploadrequest-method-getprogresstracker.md)
 
 `
     public
@@ -54,9 +54,9 @@ array<string\|int, mixed>
 
 ##### Return values
 
-[AbstractTransferListener](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractTransferListener.html) \|null
+[AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md) \|null
 
-#### getResumableUpload()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeUploadRequest.html\#method_getResumableUpload)
+#### getResumableUpload()  [header link](class-aws-s3-s3transfer-models-resumeuploadrequest-method-getresumableupload.md)
 
 `
     public
@@ -72,11 +72,11 @@ string\| [ResumableUpload](class-aws-s3-s3transfer-models-resumableupload.md)
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeUploadRequest.html#toc-methods)
+  - [Methods](class-aws-s3-s3transfer-models-resumeuploadrequest-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeUploadRequest.html#method___construct)
-  - [getListeners()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeUploadRequest.html#method_getListeners)
-  - [getProgressTracker()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeUploadRequest.html#method_getProgressTracker)
-  - [getResumableUpload()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeUploadRequest.html#method_getResumableUpload)
+  - [\_\_construct()](class-aws-s3-s3transfer-models-resumeuploadrequest-method-construct.md)
+  - [getListeners()](class-aws-s3-s3transfer-models-resumeuploadrequest-method-getlisteners.md)
+  - [getProgressTracker()](class-aws-s3-s3transfer-models-resumeuploadrequest-method-getprogresstracker.md)
+  - [getResumableUpload()](class-aws-s3-s3transfer-models-resumeuploadrequest-method-getresumableupload.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeUploadRequest.html#top)
+[Back To Top](class-aws-s3-s3transfer-models-resumeuploadrequest-top.md)

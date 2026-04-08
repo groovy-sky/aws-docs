@@ -20,7 +20,7 @@ Returns the scan findings for the specified image.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -28,7 +28,7 @@ The request accepts the following data in JSON format.
 
 An object with identifying information for an image in an Amazon ECR repository.
 
-Type: [ImageIdentifier](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ImageIdentifier.html) object
+Type: [ImageIdentifier](api-imageidentifier.md) object
 
 Required: Yes
 
@@ -226,19 +226,19 @@ The following data is returned in JSON format by the service.
 
 An object with identifying information for an image in an Amazon ECR repository.
 
-Type: [ImageIdentifier](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ImageIdentifier.html) object
+Type: [ImageIdentifier](api-imageidentifier.md) object
 
 **[imageScanFindings](#API_DescribeImageScanFindings_ResponseSyntax)**
 
 The information contained in the image scan findings.
 
-Type: [ImageScanFindings](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ImageScanFindings.html) object
+Type: [ImageScanFindings](api-imagescanfindings.md) object
 
 **[imageScanStatus](#API_DescribeImageScanFindings_ResponseSyntax)**
 
 The current state of the scan.
 
-Type: [ImageScanStatus](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ImageScanStatus.html) object
+Type: [ImageScanStatus](api-imagescanstatus.md) object
 
 **[nextToken](#API_DescribeImageScanFindings_ResponseSyntax)**
 
@@ -270,7 +270,7 @@ Pattern: `[a-z0-9]+((\.|_|__|-+)[a-z0-9]+)*(\/[a-z0-9]+((\.|_|__|-+)[a-z0-9]+)*)
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **ImageNotFoundException**
 
@@ -328,7 +328,7 @@ HTTP Status Code: 400
 In the following example or examples, the Authorization header contents
 ( `AUTHPARAMS`) must be replaced with an AWS Signature Version 4
 signature. For more information about creating these signatures, see [Signature\
-Version 4 Signing Process](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) in the _AWS General_
+Version 4 Signing Process](../../../../general/general/latest/gr/signature-version-4.md) in the _AWS General_
 _Reference_.
 
 You only need to learn how to sign HTTP requests if you intend to manually
@@ -570,27 +570,27 @@ x-amzn-RequestId: 3081a92b-2066-41f8-8a47-0580288ada9e
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ecr-2015-09-21/DescribeImageScanFindings)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ecr-2015-09-21/describeimagescanfindings.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ecr-2015-09-21/DescribeImageScanFindings)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ecr-2015-09-21/describeimagescanfindings.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecr-2015-09-21/DescribeImageScanFindings)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecr-2015-09-21/describeimagescanfindings.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ecr-2015-09-21/DescribeImageScanFindings)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ecr-2015-09-21/describeimagescanfindings.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecr-2015-09-21/DescribeImageScanFindings)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecr-2015-09-21/describeimagescanfindings.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ecr-2015-09-21/DescribeImageScanFindings)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ecr-2015-09-21/describeimagescanfindings.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ecr-2015-09-21/DescribeImageScanFindings)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ecr-2015-09-21/describeimagescanfindings.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ecr-2015-09-21/DescribeImageScanFindings)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ecr-2015-09-21/describeimagescanfindings.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ecr-2015-09-21/DescribeImageScanFindings)
+- [AWS SDK for Python](../../../../services/goto/boto3/ecr-2015-09-21/describeimagescanfindings.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecr-2015-09-21/DescribeImageScanFindings)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecr-2015-09-21/describeimagescanfindings.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DescribeImages
 

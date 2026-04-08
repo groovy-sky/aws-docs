@@ -6,17 +6,17 @@ Menu
 
 Traces state changes between middlewares.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TraceMiddleware.html\#toc)
+### Table of Contents  [header link](class-aws-tracemiddleware-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TraceMiddleware.html\#toc-methods)
+#### Methods  [header link](class-aws-tracemiddleware-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TraceMiddleware.html#method___construct)
-: mixed Configuration array can contain the following key value pairs.[\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TraceMiddleware.html#method___invoke)
+[\_\_construct()](class-aws-tracemiddleware-method-construct.md)
+: mixed Configuration array can contain the following key value pairs.[\_\_invoke()](class-aws-tracemiddleware-method-invoke.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TraceMiddleware.html\#methods)
+### Methods  [header link](class-aws-tracemiddleware-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TraceMiddleware.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-tracemiddleware-method-construct.md)
 
 Configuration array can contain the following key value pairs.
 
@@ -50,7 +50,7 @@ $config
 : [Service](class-aws-api-service.md) \|null
 = null
 
-#### \_\_invoke()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TraceMiddleware.html\#method___invoke)
+#### \_\_invoke()  [header link](class-aws-tracemiddleware-method-invoke.md)
 
 `
     public
@@ -68,9 +68,9 @@ $step
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TraceMiddleware.html#toc-methods)
+  - [Methods](class-aws-tracemiddleware-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TraceMiddleware.html#method___construct)
-  - [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TraceMiddleware.html#method___invoke)
+  - [\_\_construct()](class-aws-tracemiddleware-method-construct.md)
+  - [\_\_invoke()](class-aws-tracemiddleware-method-invoke.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TraceMiddleware.html#top)
+[Back To Top](class-aws-tracemiddleware-top.md)

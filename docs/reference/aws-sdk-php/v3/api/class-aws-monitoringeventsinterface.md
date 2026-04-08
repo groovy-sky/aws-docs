@@ -6,19 +6,19 @@ Menu
 
 Interface for adding and retrieving client-side monitoring events
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MonitoringEventsInterface.html\#toc)
+### Table of Contents  [header link](class-aws-monitoringeventsinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MonitoringEventsInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-monitoringeventsinterface-toc-methods.md)
 
-[appendMonitoringEvent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MonitoringEventsInterface.html#method_appendMonitoringEvent)
-: mixed Append a client-side monitoring event to this object's event list[getMonitoringEvents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MonitoringEventsInterface.html#method_getMonitoringEvents)
+[appendMonitoringEvent()](class-aws-monitoringeventsinterface-method-appendmonitoringevent.md)
+: mixed Append a client-side monitoring event to this object's event list[getMonitoringEvents()](class-aws-monitoringeventsinterface-method-getmonitoringevents.md)
 : array<string\|int, mixed> Get client-side monitoring events attached to this object. Each event is
-represented as an associative array within the returned array.[prependMonitoringEvent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MonitoringEventsInterface.html#method_prependMonitoringEvent)
+represented as an associative array within the returned array.[prependMonitoringEvent()](class-aws-monitoringeventsinterface-method-prependmonitoringevent.md)
 : mixed Prepend a client-side monitoring event to this object's event list
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MonitoringEventsInterface.html\#methods)
+### Methods  [header link](class-aws-monitoringeventsinterface-methods.md)
 
-#### appendMonitoringEvent()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MonitoringEventsInterface.html\#method_appendMonitoringEvent)
+#### appendMonitoringEvent()  [header link](class-aws-monitoringeventsinterface-method-appendmonitoringevent.md)
 
 Append a client-side monitoring event to this object's event list
 
@@ -31,7 +31,7 @@ Append a client-side monitoring event to this object's event list
 $event
 : array<string\|int, mixed>
 
-#### getMonitoringEvents()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MonitoringEventsInterface.html\#method_getMonitoringEvents)
+#### getMonitoringEvents()  [header link](class-aws-monitoringeventsinterface-method-getmonitoringevents.md)
 
 Get client-side monitoring events attached to this object. Each event is
 represented as an associative array within the returned array.
@@ -44,7 +44,7 @@ represented as an associative array within the returned array.
 
 array<string\|int, mixed>
 
-#### prependMonitoringEvent()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MonitoringEventsInterface.html\#method_prependMonitoringEvent)
+#### prependMonitoringEvent()  [header link](class-aws-monitoringeventsinterface-method-prependmonitoringevent.md)
 
 Prepend a client-side monitoring event to this object's event list
 
@@ -63,11 +63,11 @@ $event
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MonitoringEventsInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MonitoringEventsInterface.html#toc-methods)
+  - [Constants](class-aws-monitoringeventsinterface-toc-constants.md)
+  - [Methods](class-aws-monitoringeventsinterface-toc-methods.md)
 - Methods
-  - [appendMonitoringEvent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MonitoringEventsInterface.html#method_appendMonitoringEvent)
-  - [getMonitoringEvents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MonitoringEventsInterface.html#method_getMonitoringEvents)
-  - [prependMonitoringEvent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MonitoringEventsInterface.html#method_prependMonitoringEvent)
+  - [appendMonitoringEvent()](class-aws-monitoringeventsinterface-method-appendmonitoringevent.md)
+  - [getMonitoringEvents()](class-aws-monitoringeventsinterface-method-getmonitoringevents.md)
+  - [prependMonitoringEvent()](class-aws-monitoringeventsinterface-method-prependmonitoringevent.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MonitoringEventsInterface.html#top)
+[Back To Top](class-aws-monitoringeventsinterface-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## Swf
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.swf.html\#toc)
+### Table of Contents  [header link](namespace-aws-swf-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.swf.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-swf-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.swf.exception.html)
+[Exception](namespace-aws-swf-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.swf.html\#toc-classes)
+#### Classes  [header link](namespace-aws-swf-toc-classes.md)
 
-[SwfClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Swf.SwfClient.html)Amazon Simple Workflow Service (Amazon SWF) client.
+[SwfClient](class-aws-swf-swfclient.md)Amazon Simple Workflow Service (Amazon SWF) client.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.swf.html#toc-classes)
+  - [Classes](namespace-aws-swf-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.swf.html#top)
+[Back To Top](namespace-aws-swf-top.md)

@@ -31,7 +31,7 @@ Console
 3. You can view the information about each public key in the **Key**
 **pairs** table.
 
-![Key pairs table.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/key-pairs-describe-console.png)
+![Key pairs table.](../../../images/awsec2/latest/userguide/images/key-pairs-describe-console-png.md)
 
 4. To view a public key's tags, select the checkbox next to the key, and then
     choose **Actions**, **Manage tags**.

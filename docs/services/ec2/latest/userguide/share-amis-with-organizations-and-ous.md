@@ -22,7 +22,7 @@ AMI. The accounts in the organization and OU outside the dotted line (indicated 
 number **3**) do not have access to the AMI because they
 are not children of the OU that the AMI is shared with.
 
-![The AMI is shared with an OU, and all children OUs and accounts get access to the AMI.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ami-share-with-orgs-and-ous.png)
+![The AMI is shared with an OU, and all children OUs and accounts get access to the AMI.](../../../images/awsec2/latest/userguide/images/ami-share-with-orgs-and-ous-png.md)
 
 ###### Topics
 

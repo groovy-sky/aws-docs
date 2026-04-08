@@ -4,15 +4,15 @@ Menu
 
 ## FMS
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.fms.html\#toc)
+### Table of Contents  [header link](namespace-aws-fms-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.fms.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-fms-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.fms.exception.html)
+[Exception](namespace-aws-fms-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.fms.html\#toc-classes)
+#### Classes  [header link](namespace-aws-fms-toc-classes.md)
 
-[FMSClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FMS.FMSClient.html)This client is used to interact with the **Firewall Management Service** service.
+[FMSClient](class-aws-fms-fmsclient.md)This client is used to interact with the **Firewall Management Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.fms.html#toc-classes)
+  - [Classes](namespace-aws-fms-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.fms.html#top)
+[Back To Top](namespace-aws-fms-top.md)

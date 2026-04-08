@@ -7,37 +7,37 @@ Menu
 
 Credential provider that provides credentials from the EC2 metadata service.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#toc)
+### Table of Contents  [header link](class-aws-credentials-instanceprofileprovider-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#toc-constants)
+#### Constants  [header link](class-aws-credentials-instanceprofileprovider-toc-constants.md)
 
-[CFG\_EC2\_METADATA\_SERVICE\_ENDPOINT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_CFG_EC2_METADATA_SERVICE_ENDPOINT)
-= 'ec2\_metadata\_service\_endpoint' [CFG\_EC2\_METADATA\_SERVICE\_ENDPOINT\_MODE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_CFG_EC2_METADATA_SERVICE_ENDPOINT_MODE)
-= 'ec2\_metadata\_service\_endpoint\_mode' [CFG\_EC2\_METADATA\_V1\_DISABLED](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_CFG_EC2_METADATA_V1_DISABLED)
-= 'ec2\_metadata\_v1\_disabled' [CRED\_PATH](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_CRED_PATH)
-= 'meta-data/iam/security-credentials/' [DEFAULT\_AWS\_EC2\_METADATA\_V1\_DISABLED](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_DEFAULT_AWS_EC2_METADATA_V1_DISABLED)
-= false [DEFAULT\_METADATA\_SERVICE\_IPv4\_ENDPOINT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_DEFAULT_METADATA_SERVICE_IPv4_ENDPOINT)
-= 'http://169.254.169.254' [DEFAULT\_METADATA\_SERVICE\_IPv6\_ENDPOINT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_DEFAULT_METADATA_SERVICE_IPv6_ENDPOINT)
-= 'http://\[fd00:ec2::254\]' [DEFAULT\_RETRIES](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_DEFAULT_RETRIES)
-= 3 [DEFAULT\_TIMEOUT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_DEFAULT_TIMEOUT)
-= 1.0 [DEFAULT\_TOKEN\_TTL\_SECONDS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_DEFAULT_TOKEN_TTL_SECONDS)
-= 21600 [ENDPOINT\_MODE\_IPv4](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_ENDPOINT_MODE_IPv4)
-= 'IPv4' [ENDPOINT\_MODE\_IPv6](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_ENDPOINT_MODE_IPv6)
-= 'IPv6' [ENV\_DISABLE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_ENV_DISABLE)
-= 'AWS\_EC2\_METADATA\_DISABLED' [ENV\_RETRIES](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_ENV_RETRIES)
-= 'AWS\_METADATA\_SERVICE\_NUM\_ATTEMPTS' [ENV\_TIMEOUT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_ENV_TIMEOUT)
-= 'AWS\_METADATA\_SERVICE\_TIMEOUT' [TOKEN\_PATH](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_TOKEN_PATH)
+[CFG\_EC2\_METADATA\_SERVICE\_ENDPOINT](class-aws-credentials-instanceprofileprovider-constant-cfg-ec2-metadata-service-endpoint.md)
+= 'ec2\_metadata\_service\_endpoint' [CFG\_EC2\_METADATA\_SERVICE\_ENDPOINT\_MODE](class-aws-credentials-instanceprofileprovider-constant-cfg-ec2-metadata-service-endpoint-mode.md)
+= 'ec2\_metadata\_service\_endpoint\_mode' [CFG\_EC2\_METADATA\_V1\_DISABLED](class-aws-credentials-instanceprofileprovider-constant-cfg-ec2-metadata-v1-disabled.md)
+= 'ec2\_metadata\_v1\_disabled' [CRED\_PATH](class-aws-credentials-instanceprofileprovider-constant-cred-path.md)
+= 'meta-data/iam/security-credentials/' [DEFAULT\_AWS\_EC2\_METADATA\_V1\_DISABLED](class-aws-credentials-instanceprofileprovider-constant-default-aws-ec2-metadata-v1-disabled.md)
+= false [DEFAULT\_METADATA\_SERVICE\_IPv4\_ENDPOINT](class-aws-credentials-instanceprofileprovider-constant-default-metadata-service-ipv4-endpoint.md)
+= 'http://169.254.169.254' [DEFAULT\_METADATA\_SERVICE\_IPv6\_ENDPOINT](class-aws-credentials-instanceprofileprovider-constant-default-metadata-service-ipv6-endpoint.md)
+= 'http://\[fd00:ec2::254\]' [DEFAULT\_RETRIES](class-aws-credentials-instanceprofileprovider-constant-default-retries.md)
+= 3 [DEFAULT\_TIMEOUT](class-aws-credentials-instanceprofileprovider-constant-default-timeout.md)
+= 1.0 [DEFAULT\_TOKEN\_TTL\_SECONDS](class-aws-credentials-instanceprofileprovider-constant-default-token-ttl-seconds.md)
+= 21600 [ENDPOINT\_MODE\_IPv4](class-aws-credentials-instanceprofileprovider-constant-endpoint-mode-ipv4.md)
+= 'IPv4' [ENDPOINT\_MODE\_IPv6](class-aws-credentials-instanceprofileprovider-constant-endpoint-mode-ipv6.md)
+= 'IPv6' [ENV\_DISABLE](class-aws-credentials-instanceprofileprovider-constant-env-disable.md)
+= 'AWS\_EC2\_METADATA\_DISABLED' [ENV\_RETRIES](class-aws-credentials-instanceprofileprovider-constant-env-retries.md)
+= 'AWS\_METADATA\_SERVICE\_NUM\_ATTEMPTS' [ENV\_TIMEOUT](class-aws-credentials-instanceprofileprovider-constant-env-timeout.md)
+= 'AWS\_METADATA\_SERVICE\_TIMEOUT' [TOKEN\_PATH](class-aws-credentials-instanceprofileprovider-constant-token-path.md)
 = 'api/token'
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#toc-methods)
+#### Methods  [header link](class-aws-credentials-instanceprofileprovider-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#method___construct)
-: mixed The constructor accepts the following options:[\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#method___invoke)
+[\_\_construct()](class-aws-credentials-instanceprofileprovider-method-construct.md)
+: mixed The constructor accepts the following options:[\_\_invoke()](class-aws-credentials-instanceprofileprovider-method-invoke.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Loads instance profile credentials.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#constants)
+### Constants  [header link](class-aws-credentials-instanceprofileprovider-constants.md)
 
-#### CFG\_EC2\_METADATA\_SERVICE\_ENDPOINT  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#constant_CFG_EC2_METADATA_SERVICE_ENDPOINT)
+#### CFG\_EC2\_METADATA\_SERVICE\_ENDPOINT  [header link](class-aws-credentials-instanceprofileprovider-constant-cfg-ec2-metadata-service-endpoint.md)
 
 `
     public
@@ -46,7 +46,7 @@ Credential provider that provides credentials from the EC2 metadata service.
     = 'ec2_metadata_service_endpoint'
 `
 
-#### CFG\_EC2\_METADATA\_SERVICE\_ENDPOINT\_MODE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#constant_CFG_EC2_METADATA_SERVICE_ENDPOINT_MODE)
+#### CFG\_EC2\_METADATA\_SERVICE\_ENDPOINT\_MODE  [header link](class-aws-credentials-instanceprofileprovider-constant-cfg-ec2-metadata-service-endpoint-mode.md)
 
 `
     public
@@ -55,7 +55,7 @@ Credential provider that provides credentials from the EC2 metadata service.
     = 'ec2_metadata_service_endpoint_mode'
 `
 
-#### CFG\_EC2\_METADATA\_V1\_DISABLED  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#constant_CFG_EC2_METADATA_V1_DISABLED)
+#### CFG\_EC2\_METADATA\_V1\_DISABLED  [header link](class-aws-credentials-instanceprofileprovider-constant-cfg-ec2-metadata-v1-disabled.md)
 
 `
     public
@@ -64,7 +64,7 @@ Credential provider that provides credentials from the EC2 metadata service.
     = 'ec2_metadata_v1_disabled'
 `
 
-#### CRED\_PATH  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#constant_CRED_PATH)
+#### CRED\_PATH  [header link](class-aws-credentials-instanceprofileprovider-constant-cred-path.md)
 
 `
     public
@@ -73,7 +73,7 @@ Credential provider that provides credentials from the EC2 metadata service.
     = 'meta-data/iam/security-credentials/'
 `
 
-#### DEFAULT\_AWS\_EC2\_METADATA\_V1\_DISABLED  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#constant_DEFAULT_AWS_EC2_METADATA_V1_DISABLED)
+#### DEFAULT\_AWS\_EC2\_METADATA\_V1\_DISABLED  [header link](class-aws-credentials-instanceprofileprovider-constant-default-aws-ec2-metadata-v1-disabled.md)
 
 `
     public
@@ -82,7 +82,7 @@ Credential provider that provides credentials from the EC2 metadata service.
     = false
 `
 
-#### DEFAULT\_METADATA\_SERVICE\_IPv4\_ENDPOINT  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#constant_DEFAULT_METADATA_SERVICE_IPv4_ENDPOINT)
+#### DEFAULT\_METADATA\_SERVICE\_IPv4\_ENDPOINT  [header link](class-aws-credentials-instanceprofileprovider-constant-default-metadata-service-ipv4-endpoint.md)
 
 `
     public
@@ -91,7 +91,7 @@ Credential provider that provides credentials from the EC2 metadata service.
     = 'http://169.254.169.254'
 `
 
-#### DEFAULT\_METADATA\_SERVICE\_IPv6\_ENDPOINT  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#constant_DEFAULT_METADATA_SERVICE_IPv6_ENDPOINT)
+#### DEFAULT\_METADATA\_SERVICE\_IPv6\_ENDPOINT  [header link](class-aws-credentials-instanceprofileprovider-constant-default-metadata-service-ipv6-endpoint.md)
 
 `
     public
@@ -100,7 +100,7 @@ Credential provider that provides credentials from the EC2 metadata service.
     = 'http://[fd00:ec2::254]'
 `
 
-#### DEFAULT\_RETRIES  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#constant_DEFAULT_RETRIES)
+#### DEFAULT\_RETRIES  [header link](class-aws-credentials-instanceprofileprovider-constant-default-retries.md)
 
 `
     public
@@ -109,7 +109,7 @@ Credential provider that provides credentials from the EC2 metadata service.
     = 3
 `
 
-#### DEFAULT\_TIMEOUT  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#constant_DEFAULT_TIMEOUT)
+#### DEFAULT\_TIMEOUT  [header link](class-aws-credentials-instanceprofileprovider-constant-default-timeout.md)
 
 `
     public
@@ -118,7 +118,7 @@ Credential provider that provides credentials from the EC2 metadata service.
     = 1.0
 `
 
-#### DEFAULT\_TOKEN\_TTL\_SECONDS  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#constant_DEFAULT_TOKEN_TTL_SECONDS)
+#### DEFAULT\_TOKEN\_TTL\_SECONDS  [header link](class-aws-credentials-instanceprofileprovider-constant-default-token-ttl-seconds.md)
 
 `
     public
@@ -127,7 +127,7 @@ Credential provider that provides credentials from the EC2 metadata service.
     = 21600
 `
 
-#### ENDPOINT\_MODE\_IPv4  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#constant_ENDPOINT_MODE_IPv4)
+#### ENDPOINT\_MODE\_IPv4  [header link](class-aws-credentials-instanceprofileprovider-constant-endpoint-mode-ipv4.md)
 
 `
     public
@@ -136,7 +136,7 @@ Credential provider that provides credentials from the EC2 metadata service.
     = 'IPv4'
 `
 
-#### ENDPOINT\_MODE\_IPv6  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#constant_ENDPOINT_MODE_IPv6)
+#### ENDPOINT\_MODE\_IPv6  [header link](class-aws-credentials-instanceprofileprovider-constant-endpoint-mode-ipv6.md)
 
 `
     public
@@ -145,7 +145,7 @@ Credential provider that provides credentials from the EC2 metadata service.
     = 'IPv6'
 `
 
-#### ENV\_DISABLE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#constant_ENV_DISABLE)
+#### ENV\_DISABLE  [header link](class-aws-credentials-instanceprofileprovider-constant-env-disable.md)
 
 `
     public
@@ -154,7 +154,7 @@ Credential provider that provides credentials from the EC2 metadata service.
     = 'AWS_EC2_METADATA_DISABLED'
 `
 
-#### ENV\_RETRIES  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#constant_ENV_RETRIES)
+#### ENV\_RETRIES  [header link](class-aws-credentials-instanceprofileprovider-constant-env-retries.md)
 
 `
     public
@@ -163,7 +163,7 @@ Credential provider that provides credentials from the EC2 metadata service.
     = 'AWS_METADATA_SERVICE_NUM_ATTEMPTS'
 `
 
-#### ENV\_TIMEOUT  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#constant_ENV_TIMEOUT)
+#### ENV\_TIMEOUT  [header link](class-aws-credentials-instanceprofileprovider-constant-env-timeout.md)
 
 `
     public
@@ -172,7 +172,7 @@ Credential provider that provides credentials from the EC2 metadata service.
     = 'AWS_METADATA_SERVICE_TIMEOUT'
 `
 
-#### TOKEN\_PATH  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#constant_TOKEN_PATH)
+#### TOKEN\_PATH  [header link](class-aws-credentials-instanceprofileprovider-constant-token-path.md)
 
 `
     public
@@ -181,9 +181,9 @@ Credential provider that provides credentials from the EC2 metadata service.
     = 'api/token'
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#methods)
+### Methods  [header link](class-aws-credentials-instanceprofileprovider-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-credentials-instanceprofileprovider-method-construct.md)
 
 The constructor accepts the following options:
 
@@ -211,7 +211,7 @@ $config
 
 Configuration options.
 
-#### \_\_invoke()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html\#method___invoke)
+#### \_\_invoke()  [header link](class-aws-credentials-instanceprofileprovider-method-invoke.md)
 
 Loads instance profile credentials.
 
@@ -235,27 +235,27 @@ $previousCredentials
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#toc-methods)
+  - [Constants](class-aws-credentials-instanceprofileprovider-toc-constants.md)
+  - [Methods](class-aws-credentials-instanceprofileprovider-toc-methods.md)
 - Constants
-  - [CFG\_EC2\_METADATA\_SERVICE\_ENDPOINT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_CFG_EC2_METADATA_SERVICE_ENDPOINT)
-  - [CFG\_EC2\_METADATA\_SERVICE\_ENDPOINT\_MODE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_CFG_EC2_METADATA_SERVICE_ENDPOINT_MODE)
-  - [CFG\_EC2\_METADATA\_V1\_DISABLED](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_CFG_EC2_METADATA_V1_DISABLED)
-  - [CRED\_PATH](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_CRED_PATH)
-  - [DEFAULT\_AWS\_EC2\_METADATA\_V1\_DISABLED](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_DEFAULT_AWS_EC2_METADATA_V1_DISABLED)
-  - [DEFAULT\_METADATA\_SERVICE\_IPv4\_ENDPOINT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_DEFAULT_METADATA_SERVICE_IPv4_ENDPOINT)
-  - [DEFAULT\_METADATA\_SERVICE\_IPv6\_ENDPOINT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_DEFAULT_METADATA_SERVICE_IPv6_ENDPOINT)
-  - [DEFAULT\_RETRIES](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_DEFAULT_RETRIES)
-  - [DEFAULT\_TIMEOUT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_DEFAULT_TIMEOUT)
-  - [DEFAULT\_TOKEN\_TTL\_SECONDS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_DEFAULT_TOKEN_TTL_SECONDS)
-  - [ENDPOINT\_MODE\_IPv4](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_ENDPOINT_MODE_IPv4)
-  - [ENDPOINT\_MODE\_IPv6](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_ENDPOINT_MODE_IPv6)
-  - [ENV\_DISABLE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_ENV_DISABLE)
-  - [ENV\_RETRIES](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_ENV_RETRIES)
-  - [ENV\_TIMEOUT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_ENV_TIMEOUT)
-  - [TOKEN\_PATH](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#constant_TOKEN_PATH)
+  - [CFG\_EC2\_METADATA\_SERVICE\_ENDPOINT](class-aws-credentials-instanceprofileprovider-constant-cfg-ec2-metadata-service-endpoint.md)
+  - [CFG\_EC2\_METADATA\_SERVICE\_ENDPOINT\_MODE](class-aws-credentials-instanceprofileprovider-constant-cfg-ec2-metadata-service-endpoint-mode.md)
+  - [CFG\_EC2\_METADATA\_V1\_DISABLED](class-aws-credentials-instanceprofileprovider-constant-cfg-ec2-metadata-v1-disabled.md)
+  - [CRED\_PATH](class-aws-credentials-instanceprofileprovider-constant-cred-path.md)
+  - [DEFAULT\_AWS\_EC2\_METADATA\_V1\_DISABLED](class-aws-credentials-instanceprofileprovider-constant-default-aws-ec2-metadata-v1-disabled.md)
+  - [DEFAULT\_METADATA\_SERVICE\_IPv4\_ENDPOINT](class-aws-credentials-instanceprofileprovider-constant-default-metadata-service-ipv4-endpoint.md)
+  - [DEFAULT\_METADATA\_SERVICE\_IPv6\_ENDPOINT](class-aws-credentials-instanceprofileprovider-constant-default-metadata-service-ipv6-endpoint.md)
+  - [DEFAULT\_RETRIES](class-aws-credentials-instanceprofileprovider-constant-default-retries.md)
+  - [DEFAULT\_TIMEOUT](class-aws-credentials-instanceprofileprovider-constant-default-timeout.md)
+  - [DEFAULT\_TOKEN\_TTL\_SECONDS](class-aws-credentials-instanceprofileprovider-constant-default-token-ttl-seconds.md)
+  - [ENDPOINT\_MODE\_IPv4](class-aws-credentials-instanceprofileprovider-constant-endpoint-mode-ipv4.md)
+  - [ENDPOINT\_MODE\_IPv6](class-aws-credentials-instanceprofileprovider-constant-endpoint-mode-ipv6.md)
+  - [ENV\_DISABLE](class-aws-credentials-instanceprofileprovider-constant-env-disable.md)
+  - [ENV\_RETRIES](class-aws-credentials-instanceprofileprovider-constant-env-retries.md)
+  - [ENV\_TIMEOUT](class-aws-credentials-instanceprofileprovider-constant-env-timeout.md)
+  - [TOKEN\_PATH](class-aws-credentials-instanceprofileprovider-constant-token-path.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#method___construct)
-  - [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#method___invoke)
+  - [\_\_construct()](class-aws-credentials-instanceprofileprovider-method-construct.md)
+  - [\_\_invoke()](class-aws-credentials-instanceprofileprovider-method-invoke.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html#top)
+[Back To Top](class-aws-credentials-instanceprofileprovider-top.md)

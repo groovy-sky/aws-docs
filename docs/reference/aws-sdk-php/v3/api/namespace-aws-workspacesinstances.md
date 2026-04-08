@@ -4,15 +4,15 @@ Menu
 
 ## WorkspacesInstances
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workspacesinstances.html\#toc)
+### Table of Contents  [header link](namespace-aws-workspacesinstances-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workspacesinstances.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-workspacesinstances-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workspacesinstances.exception.html)
+[Exception](namespace-aws-workspacesinstances-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workspacesinstances.html\#toc-classes)
+#### Classes  [header link](namespace-aws-workspacesinstances-toc-classes.md)
 
-[WorkspacesInstancesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkspacesInstances.WorkspacesInstancesClient.html)This client is used to interact with the **Amazon Workspaces Instances** service.
+[WorkspacesInstancesClient](class-aws-workspacesinstances-workspacesinstancesclient.md)This client is used to interact with the **Amazon Workspaces Instances** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workspacesinstances.html#toc-classes)
+  - [Classes](namespace-aws-workspacesinstances-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workspacesinstances.html#top)
+[Back To Top](namespace-aws-workspacesinstances-top.md)

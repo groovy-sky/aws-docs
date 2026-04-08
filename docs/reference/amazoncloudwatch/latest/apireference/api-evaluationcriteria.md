@@ -13,7 +13,7 @@ This data type is a UNION, so only one of the following members can be specified
 
 The PromQL criteria for the alarm evaluation.
 
-Type: [AlarmPromQLCriteria](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_AlarmPromQLCriteria.html) object
+Type: [AlarmPromQLCriteria](api-alarmpromqlcriteria.md) object
 
 Required: No
 
@@ -21,13 +21,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/EvaluationCriteria)
+- [AWS SDK for C++](../../../goto/sdkforcpp/monitoring-2010-08-01/evaluationcriteria.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/EvaluationCriteria)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/monitoring-2010-08-01/evaluationcriteria.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/monitoring-2010-08-01/EvaluationCriteria)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/monitoring-2010-08-01/evaluationcriteria.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 EntityMetricData
 

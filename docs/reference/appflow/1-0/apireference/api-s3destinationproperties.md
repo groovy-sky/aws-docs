@@ -34,7 +34,7 @@ Required: No
 The configuration that determines how Amazon AppFlow should format the flow output
 data when Amazon S3 is used as the destination.
 
-Type: [S3OutputFormatConfig](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_S3OutputFormatConfig.html) object
+Type: [S3OutputFormatConfig](api-s3outputformatconfig.md) object
 
 Required: No
 
@@ -42,13 +42,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/S3DestinationProperties)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/s3destinationproperties.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/S3DestinationProperties)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/s3destinationproperties.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/S3DestinationProperties)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/s3destinationproperties.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 RegistrationOutput
 

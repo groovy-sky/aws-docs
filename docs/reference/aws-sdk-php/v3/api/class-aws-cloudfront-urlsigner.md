@@ -7,17 +7,17 @@ Menu
 
 Creates signed URLs for Amazon CloudFront resources.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.UrlSigner.html\#toc)
+### Table of Contents  [header link](class-aws-cloudfront-urlsigner-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.UrlSigner.html\#toc-methods)
+#### Methods  [header link](class-aws-cloudfront-urlsigner-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.UrlSigner.html#method___construct)
-: mixed [getSignedUrl()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.UrlSigner.html#method_getSignedUrl)
+[\_\_construct()](class-aws-cloudfront-urlsigner-method-construct.md)
+: mixed [getSignedUrl()](class-aws-cloudfront-urlsigner-method-getsignedurl.md)
 : string Create a signed Amazon CloudFront URL.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.UrlSigner.html\#methods)
+### Methods  [header link](class-aws-cloudfront-urlsigner-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.UrlSigner.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-cloudfront-urlsigner-method-construct.md)
 
 `
     public
@@ -35,7 +35,7 @@ $privateKey
 
 string Path to the private key used for signing
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.UrlSigner.html\#method___construct\#tags)
+##### Tags  [header link](class-aws-cloudfront-urlsigner-method-construct-tags.md)
 
 throwsRuntimeException
 
@@ -45,7 +45,7 @@ throwsInvalidArgumentException
 
 if the private key cannot be found.
 
-#### getSignedUrl()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.UrlSigner.html\#method_getSignedUrl)
+#### getSignedUrl()  [header link](class-aws-cloudfront-urlsigner-method-getsignedurl.md)
 
 Create a signed Amazon CloudFront URL.
 
@@ -83,13 +83,13 @@ JSON policy. Use this option when
 creating a signed URL for a custom
 policy.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.UrlSigner.html\#method_getSignedUrl\#tags)
+##### Tags  [header link](class-aws-cloudfront-urlsigner-method-getsignedurl-tags.md)
 
 throwsInvalidArgumentException
 
 if the URL provided is invalid
 
-link[http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/WorkingWithStreamingDistributions.html](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/WorkingWithStreamingDistributions.html)
+link[http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/WorkingWithStreamingDistributions.html](../../../../services/amazoncloudfront/latest/developerguide/workingwithstreamingdistributions.md)
 
 ##### Return values
 
@@ -105,9 +105,9 @@ The file URL with authentication parameters
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.UrlSigner.html#toc-methods)
+  - [Methods](class-aws-cloudfront-urlsigner-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.UrlSigner.html#method___construct)
-  - [getSignedUrl()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.UrlSigner.html#method_getSignedUrl)
+  - [\_\_construct()](class-aws-cloudfront-urlsigner-method-construct.md)
+  - [getSignedUrl()](class-aws-cloudfront-urlsigner-method-getsignedurl.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.UrlSigner.html#top)
+[Back To Top](class-aws-cloudfront-urlsigner-top.md)

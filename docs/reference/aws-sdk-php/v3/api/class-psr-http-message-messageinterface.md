@@ -1,8 +1,8 @@
 Menu
 
-- [Psr](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.html)
-- [Http](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.html)
-- [Message](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.message.html)
+- [Psr](namespace-psr.md)
+- [Http](namespace-psr-http.md)
+- [Message](namespace-psr-http-message.md)
 
 ## MessageInterface     in    - [Aws](package-aws.md)
 
@@ -14,30 +14,30 @@ Messages are considered immutable; all methods that might change state MUST
 be implemented such that they retain the internal state of the current
 message and return an instance that contains the changed state.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html\#tags)
+##### Tags  [header link](class-psr-http-message-messageinterface-tags.md)
 
 link[http://www.ietf.org/rfc/rfc7230.txt](http://www.ietf.org/rfc/rfc7230.txt)link[http://www.ietf.org/rfc/rfc7231.txt](http://www.ietf.org/rfc/rfc7231.txt)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html\#toc)
+### Table of Contents  [header link](class-psr-http-message-messageinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html\#toc-methods)
+#### Methods  [header link](class-psr-http-message-messageinterface-toc-methods.md)
 
-[getBody()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#method_getBody)
-: [StreamInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html)Gets the body of the message.[getHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#method_getHeader)
-: array<string\|int, string> Retrieves a message header value by the given case-insensitive name.[getHeaderLine()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#method_getHeaderLine)
-: string Retrieves a comma-separated string of the values for a single header.[getHeaders()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#method_getHeaders)
-: array<string\|int, array<string\|int, string>> Retrieves all message header values.[getProtocolVersion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#method_getProtocolVersion)
-: string Retrieves the HTTP protocol version as a string.[hasHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#method_hasHeader)
-: bool Checks if a header exists by the given case-insensitive name.[withAddedHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#method_withAddedHeader)
-: static Return an instance with the specified header appended with the given value.[withBody()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#method_withBody)
-: static Return an instance with the specified message body.[withHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#method_withHeader)
-: static Return an instance with the provided value replacing the specified header.[withoutHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#method_withoutHeader)
-: static Return an instance without the specified header.[withProtocolVersion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#method_withProtocolVersion)
+[getBody()](class-psr-http-message-messageinterface-method-getbody.md)
+: [StreamInterface](class-psr-http-message-streaminterface.md)Gets the body of the message.[getHeader()](class-psr-http-message-messageinterface-method-getheader.md)
+: array<string\|int, string> Retrieves a message header value by the given case-insensitive name.[getHeaderLine()](class-psr-http-message-messageinterface-method-getheaderline.md)
+: string Retrieves a comma-separated string of the values for a single header.[getHeaders()](class-psr-http-message-messageinterface-method-getheaders.md)
+: array<string\|int, array<string\|int, string>> Retrieves all message header values.[getProtocolVersion()](class-psr-http-message-messageinterface-method-getprotocolversion.md)
+: string Retrieves the HTTP protocol version as a string.[hasHeader()](class-psr-http-message-messageinterface-method-hasheader.md)
+: bool Checks if a header exists by the given case-insensitive name.[withAddedHeader()](class-psr-http-message-messageinterface-method-withaddedheader.md)
+: static Return an instance with the specified header appended with the given value.[withBody()](class-psr-http-message-messageinterface-method-withbody.md)
+: static Return an instance with the specified message body.[withHeader()](class-psr-http-message-messageinterface-method-withheader.md)
+: static Return an instance with the provided value replacing the specified header.[withoutHeader()](class-psr-http-message-messageinterface-method-withoutheader.md)
+: static Return an instance without the specified header.[withProtocolVersion()](class-psr-http-message-messageinterface-method-withprotocolversion.md)
 : static Return an instance with the specified HTTP protocol version.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html\#methods)
+### Methods  [header link](class-psr-http-message-messageinterface-methods.md)
 
-#### getBody()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html\#method_getBody)
+#### getBody()  [header link](class-psr-http-message-messageinterface-method-getbody.md)
 
 Gets the body of the message.
 
@@ -47,12 +47,12 @@ Gets the body of the message.
 
 ##### Return values
 
-[StreamInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html)
+[StreamInterface](class-psr-http-message-streaminterface.md)
 —
 
 Returns the body as a stream.
 
-#### getHeader()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html\#method_getHeader)
+#### getHeader()  [header link](class-psr-http-message-messageinterface-method-getheader.md)
 
 Retrieves a message header value by the given case-insensitive name.
 
@@ -82,7 +82,7 @@ An array of string values as provided for the given
 header. If the header does not appear in the message, this method MUST
 return an empty array.
 
-#### getHeaderLine()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html\#method_getHeaderLine)
+#### getHeaderLine()  [header link](class-psr-http-message-messageinterface-method-getheaderline.md)
 
 Retrieves a comma-separated string of the values for a single header.
 
@@ -117,7 +117,7 @@ A string of values as provided for the given header
 concatenated together using a comma. If the header does not appear in
 the message, this method MUST return an empty string.
 
-#### getHeaders()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html\#method_getHeaders)
+#### getHeaders()  [header link](class-psr-http-message-messageinterface-method-getheaders.md)
 
 Retrieves all message header values.
 
@@ -155,7 +155,7 @@ Returns an associative array of the message's headers. Each
 key MUST be a header name, and each value MUST be an array of strings
 for that header.
 
-#### getProtocolVersion()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html\#method_getProtocolVersion)
+#### getProtocolVersion()  [header link](class-psr-http-message-messageinterface-method-getprotocolversion.md)
 
 Retrieves the HTTP protocol version as a string.
 
@@ -172,7 +172,7 @@ string
 
 HTTP protocol version.
 
-#### hasHeader()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html\#method_hasHeader)
+#### hasHeader()  [header link](class-psr-http-message-messageinterface-method-hasheader.md)
 
 Checks if a header exists by the given case-insensitive name.
 
@@ -196,7 +196,7 @@ Returns true if any header names match the given header
 name using a case-insensitive string comparison. Returns false if
 no matching header name is found in the message.
 
-#### withAddedHeader()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html\#method_withAddedHeader)
+#### withAddedHeader()  [header link](class-psr-http-message-messageinterface-method-withaddedheader.md)
 
 Return an instance with the specified header appended with the given value.
 
@@ -224,7 +224,7 @@ $value
 
 Header value(s).
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html\#method_withAddedHeader\#tags)
+##### Tags  [header link](class-psr-http-message-messageinterface-method-withaddedheader-tags.md)
 
 throwsInvalidArgumentException
 
@@ -234,7 +234,7 @@ for invalid header names or values.
 
 static
 
-#### withBody()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html\#method_withBody)
+#### withBody()  [header link](class-psr-http-message-messageinterface-method-withbody.md)
 
 Return an instance with the specified message body.
 
@@ -251,11 +251,11 @@ new body stream.
 ##### Parameters
 
 $body
-: [StreamInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html)
+: [StreamInterface](class-psr-http-message-streaminterface.md)
 
 Body.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html\#method_withBody\#tags)
+##### Tags  [header link](class-psr-http-message-messageinterface-method-withbody-tags.md)
 
 throwsInvalidArgumentException
 
@@ -265,7 +265,7 @@ When the body is not valid.
 
 static
 
-#### withHeader()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html\#method_withHeader)
+#### withHeader()  [header link](class-psr-http-message-messageinterface-method-withheader.md)
 
 Return an instance with the provided value replacing the specified header.
 
@@ -292,7 +292,7 @@ $value
 
 Header value(s).
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html\#method_withHeader\#tags)
+##### Tags  [header link](class-psr-http-message-messageinterface-method-withheader-tags.md)
 
 throwsInvalidArgumentException
 
@@ -302,7 +302,7 @@ for invalid header names or values.
 
 static
 
-#### withoutHeader()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html\#method_withoutHeader)
+#### withoutHeader()  [header link](class-psr-http-message-messageinterface-method-withoutheader.md)
 
 Return an instance without the specified header.
 
@@ -327,7 +327,7 @@ Case-insensitive header field name to remove.
 
 static
 
-#### withProtocolVersion()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html\#method_withProtocolVersion)
+#### withProtocolVersion()  [header link](class-psr-http-message-messageinterface-method-withprotocolversion.md)
 
 Return an instance with the specified HTTP protocol version.
 
@@ -359,19 +359,19 @@ static
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#toc-methods)
+  - [Constants](class-psr-http-message-messageinterface-toc-constants.md)
+  - [Methods](class-psr-http-message-messageinterface-toc-methods.md)
 - Methods
-  - [getBody()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#method_getBody)
-  - [getHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#method_getHeader)
-  - [getHeaderLine()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#method_getHeaderLine)
-  - [getHeaders()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#method_getHeaders)
-  - [getProtocolVersion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#method_getProtocolVersion)
-  - [hasHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#method_hasHeader)
-  - [withAddedHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#method_withAddedHeader)
-  - [withBody()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#method_withBody)
-  - [withHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#method_withHeader)
-  - [withoutHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#method_withoutHeader)
-  - [withProtocolVersion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#method_withProtocolVersion)
+  - [getBody()](class-psr-http-message-messageinterface-method-getbody.md)
+  - [getHeader()](class-psr-http-message-messageinterface-method-getheader.md)
+  - [getHeaderLine()](class-psr-http-message-messageinterface-method-getheaderline.md)
+  - [getHeaders()](class-psr-http-message-messageinterface-method-getheaders.md)
+  - [getProtocolVersion()](class-psr-http-message-messageinterface-method-getprotocolversion.md)
+  - [hasHeader()](class-psr-http-message-messageinterface-method-hasheader.md)
+  - [withAddedHeader()](class-psr-http-message-messageinterface-method-withaddedheader.md)
+  - [withBody()](class-psr-http-message-messageinterface-method-withbody.md)
+  - [withHeader()](class-psr-http-message-messageinterface-method-withheader.md)
+  - [withoutHeader()](class-psr-http-message-messageinterface-method-withoutheader.md)
+  - [withProtocolVersion()](class-psr-http-message-messageinterface-method-withprotocolversion.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.MessageInterface.html#top)
+[Back To Top](class-psr-http-message-messageinterface-top.md)

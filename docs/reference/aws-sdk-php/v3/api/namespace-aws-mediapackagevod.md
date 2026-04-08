@@ -4,15 +4,15 @@ Menu
 
 ## MediaPackageVod
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mediapackagevod.html\#toc)
+### Table of Contents  [header link](namespace-aws-mediapackagevod-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mediapackagevod.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-mediapackagevod-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mediapackagevod.exception.html)
+[Exception](namespace-aws-mediapackagevod-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mediapackagevod.html\#toc-classes)
+#### Classes  [header link](namespace-aws-mediapackagevod-toc-classes.md)
 
-[MediaPackageVodClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackageVod.MediaPackageVodClient.html)This client is used to interact with the **AWS Elemental MediaPackage VOD** service.
+[MediaPackageVodClient](class-aws-mediapackagevod-mediapackagevodclient.md)This client is used to interact with the **AWS Elemental MediaPackage VOD** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mediapackagevod.html#toc-classes)
+  - [Classes](namespace-aws-mediapackagevod-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mediapackagevod.html#top)
+[Back To Top](namespace-aws-mediapackagevod-top.md)

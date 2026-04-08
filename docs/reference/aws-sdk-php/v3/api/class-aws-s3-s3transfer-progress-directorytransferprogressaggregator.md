@@ -2,8 +2,8 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
-- [Progress](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.progress.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
+- [Progress](namespace-aws-s3-s3transfer-progress.md)
 
 ## DirectoryTransferProgressAggregator     extends [AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md)   in package    - [Aws](package-aws.md)
 
@@ -14,31 +14,31 @@ Aggregates per-object progress snapshots into a directory-level snapshot.
 Acts as an object-level listener and emits directory-level events through an
 internal notifier to the provided directory listeners.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html\#toc-constants)
+#### Constants  [header link](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-toc-constants.md)
 
 [PROGRESS\_SNAPSHOT\_KEY](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#constant_PROGRESS_SNAPSHOT_KEY)
 = 'progress\_snapshot' [REASON\_KEY](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#constant_REASON_KEY)
 = 'reason' [REQUEST\_ARGS\_KEY](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#constant_REQUEST_ARGS_KEY)
 = 'request\_args'
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html#method___construct)
-: mixed [bytesTransferred()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html#method_bytesTransferred)
-: bool [getSnapshot()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html#method_getSnapshot)
-: [DirectoryTransferProgressSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressSnapshot.html)[incrementTotals()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html#method_incrementTotals)
-: void Update totals, useful when object list is streamed.[notifyDirectoryComplete()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html#method_notifyDirectoryComplete)
-: void Notify directory listeners that the directory transfer completed.[notifyDirectoryFail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html#method_notifyDirectoryFail)
-: void Notify directory listeners that the directory transfer failed.[notifyDirectoryInitiated()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html#method_notifyDirectoryInitiated)
+[\_\_construct()](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-construct.md)
+: mixed [bytesTransferred()](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-bytestransferred.md)
+: bool [getSnapshot()](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-getsnapshot.md)
+: [DirectoryTransferProgressSnapshot](class-aws-s3-s3transfer-progress-directorytransferprogresssnapshot.md)[incrementTotals()](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-incrementtotals.md)
+: void Update totals, useful when object list is streamed.[notifyDirectoryComplete()](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-notifydirectorycomplete.md)
+: void Notify directory listeners that the directory transfer completed.[notifyDirectoryFail()](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-notifydirectoryfail.md)
+: void Notify directory listeners that the directory transfer failed.[notifyDirectoryInitiated()](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-notifydirectoryinitiated.md)
 : void Notify directory listeners that the directory transfer has been initiated.[priority()](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#method_priority)
-: int To provide an order on which listener is notified first.[transferComplete()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html#method_transferComplete)
-: void [transferFail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html#method_transferFail)
+: int To provide an order on which listener is notified first.[transferComplete()](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-transfercomplete.md)
+: void [transferFail()](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-transferfail.md)
 : void [transferInitiated()](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#method_transferInitiated)
 : void
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html\#constants)
+### Constants  [header link](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-constants.md)
 
 #### PROGRESS\_SNAPSHOT\_KEY  [header link](class-aws-s3-s3transfer-progress-abstracttransferlistener.md\#constant_PROGRESS_SNAPSHOT_KEY)
 
@@ -67,9 +67,9 @@ internal notifier to the provided directory listeners.
     = 'request_args'
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-construct.md)
 
 `
     public
@@ -86,7 +86,7 @@ $identifier
 : [AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md) \|null
 = null
 
-#### bytesTransferred()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html\#method_bytesTransferred)
+#### bytesTransferred()  [header link](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-bytestransferred.md)
 
 `
     public
@@ -101,7 +101,7 @@ $context
 as part of the operation that originated the bytes transferred event.
 - progress\_snapshot: (TransferProgressSnapshot) The transfer snapshot holder.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html\#method_bytesTransferred\#tags)
+##### Tags  [header link](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-bytestransferred-tags.md)
 
 inheritDoc
 
@@ -112,7 +112,7 @@ bool
 
 true to notify successful handling otherwise false.
 
-#### getSnapshot()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html\#method_getSnapshot)
+#### getSnapshot()  [header link](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-getsnapshot.md)
 
 `
     public
@@ -120,9 +120,9 @@ true to notify successful handling otherwise false.
 
 ##### Return values
 
-[DirectoryTransferProgressSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressSnapshot.html)
+[DirectoryTransferProgressSnapshot](class-aws-s3-s3transfer-progress-directorytransferprogresssnapshot.md)
 
-#### incrementTotals()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html\#method_incrementTotals)
+#### incrementTotals()  [header link](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-incrementtotals.md)
 
 Update totals, useful when object list is streamed.
 
@@ -137,7 +137,7 @@ $bytes
 : int
 = 1
 
-#### notifyDirectoryComplete()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html\#method_notifyDirectoryComplete)
+#### notifyDirectoryComplete()  [header link](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-notifydirectorycomplete.md)
 
 Notify directory listeners that the directory transfer completed.
 
@@ -151,7 +151,7 @@ $response
 : array<string\|int, mixed>\|null
 = null
 
-#### notifyDirectoryFail()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html\#method_notifyDirectoryFail)
+#### notifyDirectoryFail()  [header link](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-notifydirectoryfail.md)
 
 Notify directory listeners that the directory transfer failed.
 
@@ -164,7 +164,7 @@ Notify directory listeners that the directory transfer failed.
 $reason
 : Throwable\|string
 
-#### notifyDirectoryInitiated()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html\#method_notifyDirectoryInitiated)
+#### notifyDirectoryInitiated()  [header link](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-notifydirectoryinitiated.md)
 
 Notify directory listeners that the directory transfer has been initiated.
 
@@ -191,7 +191,7 @@ By default, it will provide a neutral value.
 
 int
 
-#### transferComplete()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html\#method_transferComplete)
+#### transferComplete()  [header link](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-transfercomplete.md)
 
 `
     public
@@ -206,11 +206,11 @@ $context
 as part of the operation that originated the bytes transferred event.
 - progress\_snapshot: (TransferProgressSnapshot) The transfer snapshot holder.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html\#method_transferComplete\#tags)
+##### Tags  [header link](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-transfercomplete-tags.md)
 
 inheritDoc
 
-#### transferFail()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html\#method_transferFail)
+#### transferFail()  [header link](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-transferfail.md)
 
 `
     public
@@ -226,7 +226,7 @@ as part of the operation that originated the bytes transferred event.
 - progress\_snapshot: (TransferProgressSnapshot) The transfer snapshot holder.
 - reason: (Throwable) The exception originated by the transfer failure.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html\#method_transferFail\#tags)
+##### Tags  [header link](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-transferfail-tags.md)
 
 inheritDoc
 
@@ -252,23 +252,23 @@ as part of the request initialization.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html#toc-methods)
+  - [Constants](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-toc-constants.md)
+  - [Methods](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-toc-methods.md)
 - Constants
   - [PROGRESS\_SNAPSHOT\_KEY](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#constant_PROGRESS_SNAPSHOT_KEY)
   - [REASON\_KEY](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#constant_REASON_KEY)
   - [REQUEST\_ARGS\_KEY](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#constant_REQUEST_ARGS_KEY)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html#method___construct)
-  - [bytesTransferred()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html#method_bytesTransferred)
-  - [getSnapshot()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html#method_getSnapshot)
-  - [incrementTotals()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html#method_incrementTotals)
-  - [notifyDirectoryComplete()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html#method_notifyDirectoryComplete)
-  - [notifyDirectoryFail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html#method_notifyDirectoryFail)
-  - [notifyDirectoryInitiated()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html#method_notifyDirectoryInitiated)
+  - [\_\_construct()](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-construct.md)
+  - [bytesTransferred()](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-bytestransferred.md)
+  - [getSnapshot()](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-getsnapshot.md)
+  - [incrementTotals()](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-incrementtotals.md)
+  - [notifyDirectoryComplete()](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-notifydirectorycomplete.md)
+  - [notifyDirectoryFail()](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-notifydirectoryfail.md)
+  - [notifyDirectoryInitiated()](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-notifydirectoryinitiated.md)
   - [priority()](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#method_priority)
-  - [transferComplete()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html#method_transferComplete)
-  - [transferFail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html#method_transferFail)
+  - [transferComplete()](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-transfercomplete.md)
+  - [transferFail()](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-method-transferfail.md)
   - [transferInitiated()](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#method_transferInitiated)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.DirectoryTransferProgressAggregator.html#top)
+[Back To Top](class-aws-s3-s3transfer-progress-directorytransferprogressaggregator-top.md)

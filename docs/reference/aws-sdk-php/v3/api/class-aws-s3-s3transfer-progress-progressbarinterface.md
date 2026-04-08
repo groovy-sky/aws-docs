@@ -2,26 +2,26 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
-- [Progress](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.progress.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
+- [Progress](namespace-aws-s3-s3transfer-progress.md)
 
 ## ProgressBarInterface     in    - [Aws](package-aws.md)
 
 Progress bar base implementation.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressBarInterface.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-progress-progressbarinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressBarInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-progress-progressbarinterface-toc-methods.md)
 
-[getPercentCompleted()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressBarInterface.html#method_getPercentCompleted)
-: int [getProgressBarFormat()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressBarInterface.html#method_getProgressBarFormat)
-: [AbstractProgressBarFormat](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html)[render()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressBarInterface.html#method_render)
-: string [setPercentCompleted()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressBarInterface.html#method_setPercentCompleted)
+[getPercentCompleted()](class-aws-s3-s3transfer-progress-progressbarinterface-method-getpercentcompleted.md)
+: int [getProgressBarFormat()](class-aws-s3-s3transfer-progress-progressbarinterface-method-getprogressbarformat.md)
+: [AbstractProgressBarFormat](class-aws-s3-s3transfer-progress-abstractprogressbarformat.md)[render()](class-aws-s3-s3transfer-progress-progressbarinterface-method-render.md)
+: string [setPercentCompleted()](class-aws-s3-s3transfer-progress-progressbarinterface-method-setpercentcompleted.md)
 : void
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressBarInterface.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-progress-progressbarinterface-methods.md)
 
-#### getPercentCompleted()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressBarInterface.html\#method_getPercentCompleted)
+#### getPercentCompleted()  [header link](class-aws-s3-s3transfer-progress-progressbarinterface-method-getpercentcompleted.md)
 
 `
     public
@@ -31,7 +31,7 @@ Progress bar base implementation.
 
 int
 
-#### getProgressBarFormat()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressBarInterface.html\#method_getProgressBarFormat)
+#### getProgressBarFormat()  [header link](class-aws-s3-s3transfer-progress-progressbarinterface-method-getprogressbarformat.md)
 
 `
     public
@@ -39,9 +39,9 @@ int
 
 ##### Return values
 
-[AbstractProgressBarFormat](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractProgressBarFormat.html)
+[AbstractProgressBarFormat](class-aws-s3-s3transfer-progress-abstractprogressbarformat.md)
 
-#### render()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressBarInterface.html\#method_render)
+#### render()  [header link](class-aws-s3-s3transfer-progress-progressbarinterface-method-render.md)
 
 `
     public
@@ -51,7 +51,7 @@ int
 
 string
 
-#### setPercentCompleted()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressBarInterface.html\#method_setPercentCompleted)
+#### setPercentCompleted()  [header link](class-aws-s3-s3transfer-progress-progressbarinterface-method-setpercentcompleted.md)
 
 `
     public
@@ -68,12 +68,12 @@ $percent
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressBarInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressBarInterface.html#toc-methods)
+  - [Constants](class-aws-s3-s3transfer-progress-progressbarinterface-toc-constants.md)
+  - [Methods](class-aws-s3-s3transfer-progress-progressbarinterface-toc-methods.md)
 - Methods
-  - [getPercentCompleted()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressBarInterface.html#method_getPercentCompleted)
-  - [getProgressBarFormat()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressBarInterface.html#method_getProgressBarFormat)
-  - [render()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressBarInterface.html#method_render)
-  - [setPercentCompleted()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressBarInterface.html#method_setPercentCompleted)
+  - [getPercentCompleted()](class-aws-s3-s3transfer-progress-progressbarinterface-method-getpercentcompleted.md)
+  - [getProgressBarFormat()](class-aws-s3-s3transfer-progress-progressbarinterface-method-getprogressbarformat.md)
+  - [render()](class-aws-s3-s3transfer-progress-progressbarinterface-method-render.md)
+  - [setPercentCompleted()](class-aws-s3-s3transfer-progress-progressbarinterface-method-setpercentcompleted.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressBarInterface.html#top)
+[Back To Top](class-aws-s3-s3transfer-progress-progressbarinterface-top.md)

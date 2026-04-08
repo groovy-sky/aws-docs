@@ -19,7 +19,7 @@ list of authorized AWS account IDs for the `ValuesToAdd` parameter. You
 can't use `all` as a value for that parameter in this case.
 
 To view which AWS accounts have access to copy or restore a manual DB snapshot, or
-whether a manual DB snapshot public or private, use the [DescribeDBSnapshotAttributes](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBSnapshotAttributes.html) API operation. The accounts are returned as
+whether a manual DB snapshot public or private, use the [DescribeDBSnapshotAttributes](api-describedbsnapshotattributes.md) API operation. The accounts are returned as
 values for the `restore` attribute.
 
 ## Request Parameters
@@ -36,7 +36,7 @@ set this value to `restore`.
 ###### Note
 
 To view the list of attributes available to modify, use the
-[DescribeDBSnapshotAttributes](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBSnapshotAttributes.html) API operation.
+[DescribeDBSnapshotAttributes](api-describedbsnapshotattributes.md) API operation.
 
 Type: String
 
@@ -92,7 +92,7 @@ Manual DB snapshot attributes are used to authorize other AWS accounts
 to copy or restore a manual DB snapshot. For more information, see the `ModifyDBSnapshotAttribute`
 API action.
 
-Type: [DBSnapshotAttributesResult](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBSnapshotAttributesResult.html) object
+Type: [DBSnapshotAttributesResult](api-dbsnapshotattributesresult.md) object
 
 ## Errors
 
@@ -173,27 +173,27 @@ https://rds.us-west-2.amazonaws.com/
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/rds-2014-10-31/ModifyDBSnapshotAttribute)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/rds-2014-10-31/modifydbsnapshotattribute.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/rds-2014-10-31/ModifyDBSnapshotAttribute)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/rds-2014-10-31/modifydbsnapshotattribute.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/ModifyDBSnapshotAttribute)
+- [AWS SDK for C++](../../../goto/sdkforcpp/rds-2014-10-31/modifydbsnapshotattribute.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/rds-2014-10-31/ModifyDBSnapshotAttribute)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/rds-2014-10-31/modifydbsnapshotattribute.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/ModifyDBSnapshotAttribute)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/rds-2014-10-31/modifydbsnapshotattribute.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/rds-2014-10-31/ModifyDBSnapshotAttribute)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/rds-2014-10-31/modifydbsnapshotattribute.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/rds-2014-10-31/ModifyDBSnapshotAttribute)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/rds-2014-10-31/modifydbsnapshotattribute.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/rds-2014-10-31/ModifyDBSnapshotAttribute)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/rds-2014-10-31/modifydbsnapshotattribute.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/ModifyDBSnapshotAttribute)
+- [AWS SDK for Python](../../../../services/goto/boto3/rds-2014-10-31/modifydbsnapshotattribute.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/ModifyDBSnapshotAttribute)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/modifydbsnapshotattribute.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ModifyDBSnapshot
 

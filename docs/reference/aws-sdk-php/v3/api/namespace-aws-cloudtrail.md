@@ -4,15 +4,15 @@ Menu
 
 ## CloudTrail
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudtrail.html\#toc)
+### Table of Contents  [header link](namespace-aws-cloudtrail-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudtrail.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-cloudtrail-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudtrail.exception.html)
+[Exception](namespace-aws-cloudtrail-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudtrail.html\#toc-classes)
+#### Classes  [header link](namespace-aws-cloudtrail-toc-classes.md)
 
-[CloudTrailClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.CloudTrailClient.html)This client is used to interact with the **AWS CloudTrail** service.[LogFileIterator](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileIterator.html)This client is used to interact with the **AWS CloudTrail** service.[LogFileReader](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileReader.html)This client is used to interact with the **AWS CloudTrail** service.[LogRecordIterator](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html)This client is used to interact with the **AWS CloudTrail** service.
+[CloudTrailClient](class-aws-cloudtrail-cloudtrailclient.md)This client is used to interact with the **AWS CloudTrail** service.[LogFileIterator](class-aws-cloudtrail-logfileiterator.md)This client is used to interact with the **AWS CloudTrail** service.[LogFileReader](class-aws-cloudtrail-logfilereader.md)This client is used to interact with the **AWS CloudTrail** service.[LogRecordIterator](class-aws-cloudtrail-logrecorditerator.md)This client is used to interact with the **AWS CloudTrail** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudtrail.html#toc-classes)
+  - [Classes](namespace-aws-cloudtrail-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudtrail.html#top)
+[Back To Top](namespace-aws-cloudtrail-top.md)

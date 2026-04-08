@@ -2,20 +2,20 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [EndpointV2](namespace-aws-endpointv2.md)
-- [Rule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpointv2.rule.html)
+- [Rule](namespace-aws-endpointv2-rule.md)
 
 ## RuleCreator        in package    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.RuleCreator.html\#toc)
+### Table of Contents  [header link](class-aws-endpointv2-rule-rulecreator-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.RuleCreator.html\#toc-methods)
+#### Methods  [header link](class-aws-endpointv2-rule-rulecreator-toc-methods.md)
 
-[create()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.RuleCreator.html#method_create)
+[create()](class-aws-endpointv2-rule-rulecreator-method-create.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.RuleCreator.html\#methods)
+### Methods  [header link](class-aws-endpointv2-rule-rulecreator-methods.md)
 
-#### create()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.RuleCreator.html\#method_create)
+#### create()  [header link](class-aws-endpointv2-rule-rulecreator-method-create.md)
 
 `
     public
@@ -33,8 +33,8 @@ $type
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.RuleCreator.html#toc-methods)
+  - [Methods](class-aws-endpointv2-rule-rulecreator-toc-methods.md)
 - Methods
-  - [create()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.RuleCreator.html#method_create)
+  - [create()](class-aws-endpointv2-rule-rulecreator-method-create.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.RuleCreator.html#top)
+[Back To Top](class-aws-endpointv2-rule-rulecreator-top.md)

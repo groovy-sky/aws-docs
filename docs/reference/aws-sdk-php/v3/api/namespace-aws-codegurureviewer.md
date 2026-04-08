@@ -4,15 +4,15 @@ Menu
 
 ## CodeGuruReviewer
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codegurureviewer.html\#toc)
+### Table of Contents  [header link](namespace-aws-codegurureviewer-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codegurureviewer.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-codegurureviewer-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codegurureviewer.exception.html)
+[Exception](namespace-aws-codegurureviewer-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codegurureviewer.html\#toc-classes)
+#### Classes  [header link](namespace-aws-codegurureviewer-toc-classes.md)
 
-[CodeGuruReviewerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruReviewer.CodeGuruReviewerClient.html)This client is used to interact with the **Amazon CodeGuru Reviewer** service.
+[CodeGuruReviewerClient](class-aws-codegurureviewer-codegurureviewerclient.md)This client is used to interact with the **Amazon CodeGuru Reviewer** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codegurureviewer.html#toc-classes)
+  - [Classes](namespace-aws-codegurureviewer-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codegurureviewer.html#top)
+[Back To Top](namespace-aws-codegurureviewer-top.md)

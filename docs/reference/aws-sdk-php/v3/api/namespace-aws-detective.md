@@ -4,15 +4,15 @@ Menu
 
 ## Detective
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.detective.html\#toc)
+### Table of Contents  [header link](namespace-aws-detective-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.detective.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-detective-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.detective.exception.html)
+[Exception](namespace-aws-detective-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.detective.html\#toc-classes)
+#### Classes  [header link](namespace-aws-detective-toc-classes.md)
 
-[DetectiveClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Detective.DetectiveClient.html)This client is used to interact with the **Amazon Detective** service.
+[DetectiveClient](class-aws-detective-detectiveclient.md)This client is used to interact with the **Amazon Detective** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.detective.html#toc-classes)
+  - [Classes](namespace-aws-detective-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.detective.html#top)
+[Back To Top](namespace-aws-detective-top.md)

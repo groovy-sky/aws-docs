@@ -4,15 +4,15 @@ Menu
 
 ## WorkSpacesWeb
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workspacesweb.html\#toc)
+### Table of Contents  [header link](namespace-aws-workspacesweb-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workspacesweb.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-workspacesweb-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workspacesweb.exception.html)
+[Exception](namespace-aws-workspacesweb-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workspacesweb.html\#toc-classes)
+#### Classes  [header link](namespace-aws-workspacesweb-toc-classes.md)
 
-[WorkSpacesWebClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkSpacesWeb.WorkSpacesWebClient.html)This client is used to interact with the **Amazon WorkSpaces Web** service.
+[WorkSpacesWebClient](class-aws-workspacesweb-workspaceswebclient.md)This client is used to interact with the **Amazon WorkSpaces Web** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workspacesweb.html#toc-classes)
+  - [Classes](namespace-aws-workspacesweb-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workspacesweb.html#top)
+[Back To Top](namespace-aws-workspacesweb-top.md)

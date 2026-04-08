@@ -63,7 +63,7 @@ criteria against which to evaluate the AMIs. The criteria are made up of one or 
 `ImageCriterion` as shown in the following diagram. An explanation
 follows the diagram.
 
-![The Allowed AMIs ImageCriteria configuration hierarchy.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ami_allowed-amis-imagecriteria.png)
+![The Allowed AMIs ImageCriteria configuration hierarchy.](../../../images/awsec2/latest/userguide/images/ami-allowed-amis-imagecriteria-png.md)
 
 The configuration has three levels:
 

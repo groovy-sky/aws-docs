@@ -17,37 +17,37 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2023-04-19**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html)
+- [**2023-04-19**](api-networkflowmonitor-2023-04-19.md)
 
-  - [CreateMonitor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#createmonitor)
-  - [CreateScope](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#createscope)
-  - [DeleteMonitor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#deletemonitor)
-  - [DeleteScope](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#deletescope)
-  - [GetMonitor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#getmonitor)
-  - [GetQueryResultsMonitorTopContributors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#getqueryresultsmonitortopcontributors)
-  - [GetQueryResultsWorkloadInsightsTopContributors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#getqueryresultsworkloadinsightstopcontributors)
-  - [GetQueryResultsWorkloadInsightsTopContributorsData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#getqueryresultsworkloadinsightstopcontributorsdata)
-  - [GetQueryStatusMonitorTopContributors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#getquerystatusmonitortopcontributors)
-  - [GetQueryStatusWorkloadInsightsTopContributors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#getquerystatusworkloadinsightstopcontributors)
-  - [GetQueryStatusWorkloadInsightsTopContributorsData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#getquerystatusworkloadinsightstopcontributorsdata)
-  - [GetScope](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#getscope)
-  - [ListMonitors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#listmonitors)
-  - [ListScopes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#listscopes)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#listtagsforresource)
-  - [StartQueryMonitorTopContributors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#startquerymonitortopcontributors)
-  - [StartQueryWorkloadInsightsTopContributors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#startqueryworkloadinsightstopcontributors)
-  - [StartQueryWorkloadInsightsTopContributorsData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#startqueryworkloadinsightstopcontributorsdata)
-  - [StopQueryMonitorTopContributors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#stopquerymonitortopcontributors)
-  - [StopQueryWorkloadInsightsTopContributors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#stopqueryworkloadinsightstopcontributors)
-  - [StopQueryWorkloadInsightsTopContributorsData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#stopqueryworkloadinsightstopcontributorsdata)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#untagresource)
-  - [UpdateMonitor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#updatemonitor)
-  - [UpdateScope](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkflowmonitor-2023-04-19.html#updatescope)
+  - [CreateMonitor](api-networkflowmonitor-2023-04-19-createmonitor.md)
+  - [CreateScope](api-networkflowmonitor-2023-04-19-createscope.md)
+  - [DeleteMonitor](api-networkflowmonitor-2023-04-19-deletemonitor.md)
+  - [DeleteScope](api-networkflowmonitor-2023-04-19-deletescope.md)
+  - [GetMonitor](api-networkflowmonitor-2023-04-19-getmonitor.md)
+  - [GetQueryResultsMonitorTopContributors](api-networkflowmonitor-2023-04-19-getqueryresultsmonitortopcontributors.md)
+  - [GetQueryResultsWorkloadInsightsTopContributors](api-networkflowmonitor-2023-04-19-getqueryresultsworkloadinsightstopcontributors.md)
+  - [GetQueryResultsWorkloadInsightsTopContributorsData](api-networkflowmonitor-2023-04-19-getqueryresultsworkloadinsightstopcontributorsdata.md)
+  - [GetQueryStatusMonitorTopContributors](api-networkflowmonitor-2023-04-19-getquerystatusmonitortopcontributors.md)
+  - [GetQueryStatusWorkloadInsightsTopContributors](api-networkflowmonitor-2023-04-19-getquerystatusworkloadinsightstopcontributors.md)
+  - [GetQueryStatusWorkloadInsightsTopContributorsData](api-networkflowmonitor-2023-04-19-getquerystatusworkloadinsightstopcontributorsdata.md)
+  - [GetScope](api-networkflowmonitor-2023-04-19-getscope.md)
+  - [ListMonitors](api-networkflowmonitor-2023-04-19-listmonitors.md)
+  - [ListScopes](api-networkflowmonitor-2023-04-19-listscopes.md)
+  - [ListTagsForResource](api-networkflowmonitor-2023-04-19-listtagsforresource.md)
+  - [StartQueryMonitorTopContributors](api-networkflowmonitor-2023-04-19-startquerymonitortopcontributors.md)
+  - [StartQueryWorkloadInsightsTopContributors](api-networkflowmonitor-2023-04-19-startqueryworkloadinsightstopcontributors.md)
+  - [StartQueryWorkloadInsightsTopContributorsData](api-networkflowmonitor-2023-04-19-startqueryworkloadinsightstopcontributorsdata.md)
+  - [StopQueryMonitorTopContributors](api-networkflowmonitor-2023-04-19-stopquerymonitortopcontributors.md)
+  - [StopQueryWorkloadInsightsTopContributors](api-networkflowmonitor-2023-04-19-stopqueryworkloadinsightstopcontributors.md)
+  - [StopQueryWorkloadInsightsTopContributorsData](api-networkflowmonitor-2023-04-19-stopqueryworkloadinsightstopcontributorsdata.md)
+  - [TagResource](api-networkflowmonitor-2023-04-19-tagresource.md)
+  - [UntagResource](api-networkflowmonitor-2023-04-19-untagresource.md)
+  - [UpdateMonitor](api-networkflowmonitor-2023-04-19-updatemonitor.md)
+  - [UpdateScope](api-networkflowmonitor-2023-04-19-updatescope.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkFlowMonitor.NetworkFlowMonitorClient.html\#toc)
+### Table of Contents  [header link](class-aws-networkflowmonitor-networkflowmonitorclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkFlowMonitor.NetworkFlowMonitorClient.html\#toc-methods)
+#### Methods  [header link](class-aws-networkflowmonitor-networkflowmonitorclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -78,7 +78,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkFlowMonitor.NetworkFlowMonitorClient.html\#methods)
+### Methods  [header link](class-aws-networkflowmonitor-networkflowmonitorclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -545,7 +545,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkFlowMonitor.NetworkFlowMonitorClient.html#toc-methods)
+  - [Methods](class-aws-networkflowmonitor-networkflowmonitorclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -572,4 +572,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkFlowMonitor.NetworkFlowMonitorClient.html#top)
+[Back To Top](class-aws-networkflowmonitor-networkflowmonitorclient-top.md)

@@ -76,7 +76,7 @@ A complex type that identifies the CloudWatch alarm that you want Amazon Route 5
 health checkers to use to determine whether the specified health check is
 healthy.
 
-Type: [AlarmIdentifier](https://docs.aws.amazon.com/Route53/latest/APIReference/API_AlarmIdentifier.html) object
+Type: [AlarmIdentifier](api-alarmidentifier.md) object
 
 Required: No
 
@@ -453,7 +453,7 @@ Required: No
 The Amazon Resource Name (ARN) for the Route 53 Application Recovery Controller
 routing control.
 
-For more information about Route 53 Application Recovery Controller, see [Route 53 Application Recovery Controller Developer Guide.](https://docs.aws.amazon.com/r53recovery/latest/dg/what-is-route-53-recovery.html).
+For more information about Route 53 Application Recovery Controller, see [Route 53 Application Recovery Controller Developer Guide.](../../../../services/r53recovery/latest/dg/what-is-route-53-recovery.md).
 
 Type: String
 
@@ -481,13 +481,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53-2013-04-01/HealthCheckConfig)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53-2013-04-01/healthcheckconfig.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53-2013-04-01/HealthCheckConfig)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53-2013-04-01/healthcheckconfig.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53-2013-04-01/HealthCheckConfig)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53-2013-04-01/healthcheckconfig.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 HealthCheck
 

@@ -17,29 +17,29 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2024-12-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-invoicing-2024-12-01.html)
+- [**2024-12-01**](api-invoicing-2024-12-01.md)
 
-  - [BatchGetInvoiceProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-invoicing-2024-12-01.html#batchgetinvoiceprofile)
-  - [CreateInvoiceUnit](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-invoicing-2024-12-01.html#createinvoiceunit)
-  - [CreateProcurementPortalPreference](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-invoicing-2024-12-01.html#createprocurementportalpreference)
-  - [DeleteInvoiceUnit](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-invoicing-2024-12-01.html#deleteinvoiceunit)
-  - [DeleteProcurementPortalPreference](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-invoicing-2024-12-01.html#deleteprocurementportalpreference)
-  - [GetInvoicePDF](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-invoicing-2024-12-01.html#getinvoicepdf)
-  - [GetInvoiceUnit](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-invoicing-2024-12-01.html#getinvoiceunit)
-  - [GetProcurementPortalPreference](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-invoicing-2024-12-01.html#getprocurementportalpreference)
-  - [ListInvoiceSummaries](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-invoicing-2024-12-01.html#listinvoicesummaries)
-  - [ListInvoiceUnits](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-invoicing-2024-12-01.html#listinvoiceunits)
-  - [ListProcurementPortalPreferences](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-invoicing-2024-12-01.html#listprocurementportalpreferences)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-invoicing-2024-12-01.html#listtagsforresource)
-  - [PutProcurementPortalPreference](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-invoicing-2024-12-01.html#putprocurementportalpreference)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-invoicing-2024-12-01.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-invoicing-2024-12-01.html#untagresource)
-  - [UpdateInvoiceUnit](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-invoicing-2024-12-01.html#updateinvoiceunit)
-  - [UpdateProcurementPortalPreferenceStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-invoicing-2024-12-01.html#updateprocurementportalpreferencestatus)
+  - [BatchGetInvoiceProfile](api-invoicing-2024-12-01-batchgetinvoiceprofile.md)
+  - [CreateInvoiceUnit](api-invoicing-2024-12-01-createinvoiceunit.md)
+  - [CreateProcurementPortalPreference](api-invoicing-2024-12-01-createprocurementportalpreference.md)
+  - [DeleteInvoiceUnit](api-invoicing-2024-12-01-deleteinvoiceunit.md)
+  - [DeleteProcurementPortalPreference](api-invoicing-2024-12-01-deleteprocurementportalpreference.md)
+  - [GetInvoicePDF](api-invoicing-2024-12-01-getinvoicepdf.md)
+  - [GetInvoiceUnit](api-invoicing-2024-12-01-getinvoiceunit.md)
+  - [GetProcurementPortalPreference](api-invoicing-2024-12-01-getprocurementportalpreference.md)
+  - [ListInvoiceSummaries](api-invoicing-2024-12-01-listinvoicesummaries.md)
+  - [ListInvoiceUnits](api-invoicing-2024-12-01-listinvoiceunits.md)
+  - [ListProcurementPortalPreferences](api-invoicing-2024-12-01-listprocurementportalpreferences.md)
+  - [ListTagsForResource](api-invoicing-2024-12-01-listtagsforresource.md)
+  - [PutProcurementPortalPreference](api-invoicing-2024-12-01-putprocurementportalpreference.md)
+  - [TagResource](api-invoicing-2024-12-01-tagresource.md)
+  - [UntagResource](api-invoicing-2024-12-01-untagresource.md)
+  - [UpdateInvoiceUnit](api-invoicing-2024-12-01-updateinvoiceunit.md)
+  - [UpdateProcurementPortalPreferenceStatus](api-invoicing-2024-12-01-updateprocurementportalpreferencestatus.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Invoicing.InvoicingClient.html\#toc)
+### Table of Contents  [header link](class-aws-invoicing-invoicingclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Invoicing.InvoicingClient.html\#toc-methods)
+#### Methods  [header link](class-aws-invoicing-invoicingclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -70,7 +70,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Invoicing.InvoicingClient.html\#methods)
+### Methods  [header link](class-aws-invoicing-invoicingclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -537,7 +537,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Invoicing.InvoicingClient.html#toc-methods)
+  - [Methods](class-aws-invoicing-invoicingclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -564,4 +564,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Invoicing.InvoicingClient.html#top)
+[Back To Top](class-aws-invoicing-invoicingclient-top.md)

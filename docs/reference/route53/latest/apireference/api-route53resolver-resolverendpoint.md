@@ -2,11 +2,11 @@
 
 In the response to a
 [CreateResolverEndpoint](api-route53resolver-createresolverendpoint.md),
-[DeleteResolverEndpoint](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_DeleteResolverEndpoint.html),
-[GetResolverEndpoint](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetResolverEndpoint.html),
+[DeleteResolverEndpoint](api-route53resolver-deleteresolverendpoint.md),
+[GetResolverEndpoint](api-route53resolver-getresolverendpoint.md),
 Updates the name, or ResolverEndpointType for an endpoint,
 or
-[UpdateResolverEndpoint](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_UpdateResolverEndpoint.html)
+[UpdateResolverEndpoint](api-route53resolver-updateresolverendpoint.md)
 request, a complex type that contains settings for an existing inbound or outbound Resolver endpoint.
 
 ## Contents
@@ -262,13 +262,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53resolver-2018-04-01/ResolverEndpoint)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53resolver-2018-04-01/resolverendpoint.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53resolver-2018-04-01/ResolverEndpoint)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53resolver-2018-04-01/resolverendpoint.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53resolver-2018-04-01/ResolverEndpoint)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53resolver-2018-04-01/resolverendpoint.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ResolverDnssecConfig
 

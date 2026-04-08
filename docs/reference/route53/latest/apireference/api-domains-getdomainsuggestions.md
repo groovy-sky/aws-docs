@@ -96,7 +96,7 @@ A list of possible domain names. If you specified `true` for
 `OnlyAvailable` in the request, the list contains only domains that are
 available for registration.
 
-Type: Array of [DomainSuggestion](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_DomainSuggestion.html) objects
+Type: Array of [DomainSuggestion](api-domains-domainsuggestion.md) objects
 
 ## Errors
 
@@ -179,27 +179,27 @@ Content-Length:[number of characters in the JSON string]
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/route53domains-2014-05-15/GetDomainSuggestions)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53domains-2014-05-15/getdomainsuggestions.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/route53domains-2014-05-15/GetDomainSuggestions)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53domains-2014-05-15/getdomainsuggestions.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53domains-2014-05-15/GetDomainSuggestions)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53domains-2014-05-15/getdomainsuggestions.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/route53domains-2014-05-15/GetDomainSuggestions)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53domains-2014-05-15/getdomainsuggestions.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53domains-2014-05-15/GetDomainSuggestions)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53domains-2014-05-15/getdomainsuggestions.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/route53domains-2014-05-15/GetDomainSuggestions)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53domains-2014-05-15/getdomainsuggestions.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/route53domains-2014-05-15/GetDomainSuggestions)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53domains-2014-05-15/getdomainsuggestions.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/route53domains-2014-05-15/GetDomainSuggestions)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53domains-2014-05-15/getdomainsuggestions.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/route53domains-2014-05-15/GetDomainSuggestions)
+- [AWS SDK for Python](../../../../services/goto/boto3/route53domains-2014-05-15/getdomainsuggestions.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53domains-2014-05-15/GetDomainSuggestions)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53domains-2014-05-15/getdomainsuggestions.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GetDomainDetail
 

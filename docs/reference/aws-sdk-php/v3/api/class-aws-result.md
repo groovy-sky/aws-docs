@@ -2,42 +2,42 @@ Menu
 
 - [Aws](namespace-aws.md)
 
-## Result        in package    - [Aws](package-aws.md)       implements  [ResultInterface](class-aws-resultinterface.md), [MonitoringEventsInterface](class-aws-monitoringeventsinterface.md)  Uses  [HasDataTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html), [HasMonitoringEventsTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html)
+## Result        in package    - [Aws](package-aws.md)       implements  [ResultInterface](class-aws-resultinterface.md), [MonitoringEventsInterface](class-aws-monitoringeventsinterface.md)  Uses  [HasDataTrait](class-aws-hasdatatrait.md), [HasMonitoringEventsTrait](class-aws-hasmonitoringeventstrait.md)
 
 AWS result.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html\#toc)
+### Table of Contents  [header link](class-aws-result-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-result-toc-interfaces.md)
 
 [ResultInterface](class-aws-resultinterface.md)Represents an AWS result object that is returned from executing an operation.[MonitoringEventsInterface](class-aws-monitoringeventsinterface.md)Interface for adding and retrieving client-side monitoring events
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html\#toc-methods)
+#### Methods  [header link](class-aws-result-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html#method___construct)
-: mixed [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html#method___toString)
-: string Provides debug information about the result object[appendMonitoringEvent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html#method_appendMonitoringEvent)
-: mixed Append a client-side monitoring event to this object's event list[count()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_count)
-: int [get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html#method_get)
-: mixed\|null Get a specific key value from the result model.[getIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_getIterator)
-: Traversable[getMonitoringEvents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html#method_getMonitoringEvents)
+[\_\_construct()](class-aws-result-method-construct.md)
+: mixed [\_\_toString()](class-aws-result-method-tostring.md)
+: string Provides debug information about the result object[appendMonitoringEvent()](class-aws-hasmonitoringeventstrait-method-appendmonitoringevent.md)
+: mixed Append a client-side monitoring event to this object's event list[count()](class-aws-hasdatatrait-method-count.md)
+: int [get()](class-aws-result-method-get.md)
+: mixed\|null Get a specific key value from the result model.[getIterator()](class-aws-hasdatatrait-method-getiterator.md)
+: Traversable[getMonitoringEvents()](class-aws-hasmonitoringeventstrait-method-getmonitoringevents.md)
 : array<string\|int, mixed> Get client-side monitoring events attached to this object. Each event is
-represented as an associative array within the returned array.[getPath()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html#method_getPath)
-: mixed [hasKey()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html#method_hasKey)
-: bool Check if the model contains a key by name[offsetExists()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetExists)
-: bool [offsetGet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetGet)
+represented as an associative array within the returned array.[getPath()](class-aws-result-method-getpath.md)
+: mixed [hasKey()](class-aws-result-method-haskey.md)
+: bool Check if the model contains a key by name[offsetExists()](class-aws-hasdatatrait-method-offsetexists.md)
+: bool [offsetGet()](class-aws-hasdatatrait-method-offsetget.md)
 : mixed\|null This method returns a reference to the variable to allow for indirect
-array modification (e.g., $foo\['bar'\]\['baz'\] = 'qux').[offsetSet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetSet)
-: void [offsetUnset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetUnset)
-: void [prependMonitoringEvent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html#method_prependMonitoringEvent)
-: mixed Prepend a client-side monitoring event to this object's event list[search()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html#method_search)
+array modification (e.g., $foo\['bar'\]\['baz'\] = 'qux').[offsetSet()](class-aws-hasdatatrait-method-offsetset.md)
+: void [offsetUnset()](class-aws-hasdatatrait-method-offsetunset.md)
+: void [prependMonitoringEvent()](class-aws-hasmonitoringeventstrait-method-prependmonitoringevent.md)
+: mixed Prepend a client-side monitoring event to this object's event list[search()](class-aws-result-method-search.md)
 : mixed Returns the result of executing a JMESPath expression on the contents
-of the Result model.[toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_toArray)
+of the Result model.[toArray()](class-aws-hasdatatrait-method-toarray.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html\#methods)
+### Methods  [header link](class-aws-result-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-result-method-construct.md)
 
 `
     public
@@ -49,7 +49,7 @@ $data
 : array<string\|int, mixed>
 = \[\]
 
-#### \_\_toString()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html\#method___toString)
+#### \_\_toString()  [header link](class-aws-result-method-tostring.md)
 
 Provides debug information about the result object
 
@@ -61,7 +61,7 @@ Provides debug information about the result object
 
 string
 
-#### appendMonitoringEvent()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html\#method_appendMonitoringEvent)
+#### appendMonitoringEvent()  [header link](class-aws-hasmonitoringeventstrait-method-appendmonitoringevent.md)
 
 Append a client-side monitoring event to this object's event list
 
@@ -74,7 +74,7 @@ Append a client-side monitoring event to this object's event list
 $event
 : array<string\|int, mixed>
 
-#### count()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_count)
+#### count()  [header link](class-aws-hasdatatrait-method-count.md)
 
 `
     public
@@ -84,7 +84,7 @@ $event
 
 int
 
-#### get()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html\#method_get)
+#### get()  [header link](class-aws-result-method-get.md)
 
 Get a specific key value from the result model.
 
@@ -106,7 +106,7 @@ mixed\|null
 
 Value of the key or NULL if not found.
 
-#### getIterator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_getIterator)
+#### getIterator()  [header link](class-aws-hasdatatrait-method-getiterator.md)
 
 `
     public
@@ -116,7 +116,7 @@ Value of the key or NULL if not found.
 
 Traversable
 
-#### getMonitoringEvents()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html\#method_getMonitoringEvents)
+#### getMonitoringEvents()  [header link](class-aws-hasmonitoringeventstrait-method-getmonitoringevents.md)
 
 Get client-side monitoring events attached to this object. Each event is
 represented as an associative array within the returned array.
@@ -129,7 +129,7 @@ represented as an associative array within the returned array.
 
 array<string\|int, mixed>
 
-#### getPath()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html\#method_getPath)
+#### getPath()  [header link](class-aws-result-method-getpath.md)
 
 `
     public
@@ -140,11 +140,11 @@ array<string\|int, mixed>
 $path
 : mixed
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html\#method_getPath\#tags)
+##### Tags  [header link](class-aws-result-method-getpath-tags.md)
 
 deprecated
 
-#### hasKey()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html\#method_hasKey)
+#### hasKey()  [header link](class-aws-result-method-haskey.md)
 
 Check if the model contains a key by name
 
@@ -163,7 +163,7 @@ Name of the key to retrieve
 
 bool
 
-#### offsetExists()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_offsetExists)
+#### offsetExists()  [header link](class-aws-hasdatatrait-method-offsetexists.md)
 
 `
     public
@@ -178,7 +178,7 @@ $offset
 
 bool
 
-#### offsetGet()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_offsetGet)
+#### offsetGet()  [header link](class-aws-hasdatatrait-method-offsetget.md)
 
 This method returns a reference to the variable to allow for indirect
 array modification (e.g., $foo\['bar'\]\['baz'\] = 'qux').
@@ -196,7 +196,7 @@ $offset
 
 mixed\|null
 
-#### offsetSet()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_offsetSet)
+#### offsetSet()  [header link](class-aws-hasdatatrait-method-offsetset.md)
 
 `
     public
@@ -208,7 +208,7 @@ $offset
 : mixed$value
 : mixed
 
-#### offsetUnset()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_offsetUnset)
+#### offsetUnset()  [header link](class-aws-hasdatatrait-method-offsetunset.md)
 
 `
     public
@@ -219,7 +219,7 @@ $offset
 $offset
 : mixed
 
-#### prependMonitoringEvent()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html\#method_prependMonitoringEvent)
+#### prependMonitoringEvent()  [header link](class-aws-hasmonitoringeventstrait-method-prependmonitoringevent.md)
 
 Prepend a client-side monitoring event to this object's event list
 
@@ -232,7 +232,7 @@ Prepend a client-side monitoring event to this object's event list
 $event
 : array<string\|int, mixed>
 
-#### search()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html\#method_search)
+#### search()  [header link](class-aws-result-method-search.md)
 
 Returns the result of executing a JMESPath expression on the contents
 of the Result model.
@@ -258,7 +258,7 @@ mixed
 
 Returns the result of the JMESPath expression.
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_toArray)
+#### toArray()  [header link](class-aws-hasdatatrait-method-toarray.md)
 
 `
     public
@@ -271,23 +271,23 @@ Returns the result of the JMESPath expression.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html#toc-methods)
+  - [Methods](class-aws-result-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html#method___construct)
-  - [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html#method___toString)
-  - [appendMonitoringEvent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html#method_appendMonitoringEvent)
-  - [count()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_count)
-  - [get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html#method_get)
-  - [getIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_getIterator)
-  - [getMonitoringEvents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html#method_getMonitoringEvents)
-  - [getPath()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html#method_getPath)
-  - [hasKey()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html#method_hasKey)
-  - [offsetExists()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetExists)
-  - [offsetGet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetGet)
-  - [offsetSet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetSet)
-  - [offsetUnset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetUnset)
-  - [prependMonitoringEvent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html#method_prependMonitoringEvent)
-  - [search()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html#method_search)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_toArray)
+  - [\_\_construct()](class-aws-result-method-construct.md)
+  - [\_\_toString()](class-aws-result-method-tostring.md)
+  - [appendMonitoringEvent()](class-aws-hasmonitoringeventstrait-method-appendmonitoringevent.md)
+  - [count()](class-aws-hasdatatrait-method-count.md)
+  - [get()](class-aws-result-method-get.md)
+  - [getIterator()](class-aws-hasdatatrait-method-getiterator.md)
+  - [getMonitoringEvents()](class-aws-hasmonitoringeventstrait-method-getmonitoringevents.md)
+  - [getPath()](class-aws-result-method-getpath.md)
+  - [hasKey()](class-aws-result-method-haskey.md)
+  - [offsetExists()](class-aws-hasdatatrait-method-offsetexists.md)
+  - [offsetGet()](class-aws-hasdatatrait-method-offsetget.md)
+  - [offsetSet()](class-aws-hasdatatrait-method-offsetset.md)
+  - [offsetUnset()](class-aws-hasdatatrait-method-offsetunset.md)
+  - [prependMonitoringEvent()](class-aws-hasmonitoringeventstrait-method-prependmonitoringevent.md)
+  - [search()](class-aws-result-method-search.md)
+  - [toArray()](class-aws-hasdatatrait-method-toarray.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html#top)
+[Back To Top](class-aws-result-top.md)

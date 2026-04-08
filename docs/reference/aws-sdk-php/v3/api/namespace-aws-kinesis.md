@@ -4,15 +4,15 @@ Menu
 
 ## Kinesis
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesis.html\#toc)
+### Table of Contents  [header link](namespace-aws-kinesis-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesis.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-kinesis-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesis.exception.html)
+[Exception](namespace-aws-kinesis-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesis.html\#toc-classes)
+#### Classes  [header link](namespace-aws-kinesis-toc-classes.md)
 
-[KinesisClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Kinesis.KinesisClient.html)This client is used to interact with the **Amazon Kinesis** service.
+[KinesisClient](class-aws-kinesis-kinesisclient.md)This client is used to interact with the **Amazon Kinesis** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesis.html#toc-classes)
+  - [Classes](namespace-aws-kinesis-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesis.html#top)
+[Back To Top](namespace-aws-kinesis-top.md)

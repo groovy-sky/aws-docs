@@ -4,15 +4,15 @@ Menu
 
 ## Macie2
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.macie2.html\#toc)
+### Table of Contents  [header link](namespace-aws-macie2-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.macie2.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-macie2-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.macie2.exception.html)
+[Exception](namespace-aws-macie2-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.macie2.html\#toc-classes)
+#### Classes  [header link](namespace-aws-macie2-toc-classes.md)
 
-[Macie2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Macie2.Macie2Client.html)This client is used to interact with the **Amazon Macie 2** service.
+[Macie2Client](class-aws-macie2-macie2client.md)This client is used to interact with the **Amazon Macie 2** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.macie2.html#toc-classes)
+  - [Classes](namespace-aws-macie2-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.macie2.html#top)
+[Back To Top](namespace-aws-macie2-top.md)

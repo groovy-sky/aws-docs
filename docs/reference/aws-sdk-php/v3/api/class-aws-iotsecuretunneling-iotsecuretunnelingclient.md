@@ -17,20 +17,20 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-10-05**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotsecuretunneling-2018-10-05.html)
+- [**2018-10-05**](api-iotsecuretunneling-2018-10-05.md)
 
-  - [CloseTunnel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotsecuretunneling-2018-10-05.html#closetunnel)
-  - [DescribeTunnel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotsecuretunneling-2018-10-05.html#describetunnel)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotsecuretunneling-2018-10-05.html#listtagsforresource)
-  - [ListTunnels](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotsecuretunneling-2018-10-05.html#listtunnels)
-  - [OpenTunnel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotsecuretunneling-2018-10-05.html#opentunnel)
-  - [RotateTunnelAccessToken](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotsecuretunneling-2018-10-05.html#rotatetunnelaccesstoken)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotsecuretunneling-2018-10-05.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotsecuretunneling-2018-10-05.html#untagresource)
+  - [CloseTunnel](api-iotsecuretunneling-2018-10-05-closetunnel.md)
+  - [DescribeTunnel](api-iotsecuretunneling-2018-10-05-describetunnel.md)
+  - [ListTagsForResource](api-iotsecuretunneling-2018-10-05-listtagsforresource.md)
+  - [ListTunnels](api-iotsecuretunneling-2018-10-05-listtunnels.md)
+  - [OpenTunnel](api-iotsecuretunneling-2018-10-05-opentunnel.md)
+  - [RotateTunnelAccessToken](api-iotsecuretunneling-2018-10-05-rotatetunnelaccesstoken.md)
+  - [TagResource](api-iotsecuretunneling-2018-10-05-tagresource.md)
+  - [UntagResource](api-iotsecuretunneling-2018-10-05-untagresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTSecureTunneling.IoTSecureTunnelingClient.html\#toc)
+### Table of Contents  [header link](class-aws-iotsecuretunneling-iotsecuretunnelingclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTSecureTunneling.IoTSecureTunnelingClient.html\#toc-methods)
+#### Methods  [header link](class-aws-iotsecuretunneling-iotsecuretunnelingclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -61,7 +61,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTSecureTunneling.IoTSecureTunnelingClient.html\#methods)
+### Methods  [header link](class-aws-iotsecuretunneling-iotsecuretunnelingclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -528,7 +528,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTSecureTunneling.IoTSecureTunnelingClient.html#toc-methods)
+  - [Methods](class-aws-iotsecuretunneling-iotsecuretunnelingclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -555,4 +555,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTSecureTunneling.IoTSecureTunnelingClient.html#top)
+[Back To Top](class-aws-iotsecuretunneling-iotsecuretunnelingclient-top.md)

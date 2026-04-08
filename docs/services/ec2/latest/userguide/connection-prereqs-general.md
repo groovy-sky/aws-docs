@@ -20,14 +20,14 @@ For more information, see [View status checks](viewing-status.md).
 To prepare to connect to your instance, get the following information from the Amazon EC2 console
 or by using the command line.
 
-![The Instances pane of the Amazon EC2 console.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/connection-prereqs-console2.png)
+![The Instances pane of the Amazon EC2 console.](../../../images/awsec2/latest/userguide/images/connection-prereqs-console2-png.md)
 
 - Get the public DNS name of the instance.
 
 You can get the public DNS for your instance from the Amazon EC2 console. Check the
 **Public IPv4 DNS** column of the
 **Instances** pane. If this column is hidden, choose the
-settings icon ( ![The gear icon.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/settings-icon.png) ) in the top-right corner of the screen, and select
+settings icon ( ![The gear icon.](../../../images/awsec2/latest/userguide/images/settings-icon-png.md) ) in the top-right corner of the screen, and select
 **Public IPv4 DNS**. You can also find the public DNS in the
 instance information section of the **Instances** pane. When you
 select the instance in the **Instances** pane of the Amazon EC2 console,

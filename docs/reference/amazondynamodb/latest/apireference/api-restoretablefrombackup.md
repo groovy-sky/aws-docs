@@ -132,7 +132,7 @@ List of global secondary indexes for the restored table. The indexes provided sh
 match existing secondary indexes. You can choose to exclude some or all of the indexes
 at the time of restore.
 
-Type: Array of [GlobalSecondaryIndex](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GlobalSecondaryIndex.html) objects
+Type: Array of [GlobalSecondaryIndex](api-globalsecondaryindex.md) objects
 
 Required: No
 
@@ -142,7 +142,7 @@ List of local secondary indexes for the restored table. The indexes provided sho
 match existing secondary indexes. You can choose to exclude some or all of the indexes
 at the time of restore.
 
-Type: Array of [LocalSecondaryIndex](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_LocalSecondaryIndex.html) objects
+Type: Array of [LocalSecondaryIndex](api-localsecondaryindex.md) objects
 
 Required: No
 
@@ -152,7 +152,7 @@ Sets the maximum number of read and write units for the specified on-demand tabl
 you use this parameter, you must specify `MaxReadRequestUnits`,
 `MaxWriteRequestUnits`, or both.
 
-Type: [OnDemandThroughput](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_OnDemandThroughput.html) object
+Type: [OnDemandThroughput](api-ondemandthroughput.md) object
 
 Required: No
 
@@ -168,7 +168,7 @@ Required: No
 
 The new server-side encryption settings for the restored table.
 
-Type: [SSESpecification](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_SSESpecification.html) object
+Type: [SSESpecification](api-ssespecification.md) object
 
 Required: No
 
@@ -441,27 +441,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/dynamodb-2012-08-10/RestoreTableFromBackup)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/dynamodb-2012-08-10/restoretablefrombackup.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/RestoreTableFromBackup)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/dynamodb-2012-08-10/restoretablefrombackup.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/RestoreTableFromBackup)
+- [AWS SDK for C++](../../../goto/sdkforcpp/dynamodb-2012-08-10/restoretablefrombackup.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/dynamodb-2012-08-10/RestoreTableFromBackup)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/dynamodb-2012-08-10/restoretablefrombackup.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/RestoreTableFromBackup)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/dynamodb-2012-08-10/restoretablefrombackup.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/dynamodb-2012-08-10/RestoreTableFromBackup)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/dynamodb-2012-08-10/restoretablefrombackup.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/dynamodb-2012-08-10/RestoreTableFromBackup)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/dynamodb-2012-08-10/restoretablefrombackup.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/RestoreTableFromBackup)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/dynamodb-2012-08-10/restoretablefrombackup.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/RestoreTableFromBackup)
+- [AWS SDK for Python](../../../../services/goto/boto3/dynamodb-2012-08-10/restoretablefrombackup.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/RestoreTableFromBackup)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/restoretablefrombackup.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Query
 

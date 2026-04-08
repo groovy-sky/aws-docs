@@ -37,14 +37,14 @@ for `DesiredCapacity`, and the new `MaxSize` is smaller
 than the current size of the group, this sets the group's
 `DesiredCapacity` to the new `MaxSize` value.
 
-To see which properties have been set, call the [DescribeAutoScalingGroups](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DescribeAutoScalingGroups.html) API.
+To see which properties have been set, call the [DescribeAutoScalingGroups](api-describeautoscalinggroups.md) API.
 To view the scaling policies for an Auto Scaling
-group, call the [DescribePolicies](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DescribePolicies.html) API. If the group has scaling
-policies, you can update them by calling the [PutScalingPolicy](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_PutScalingPolicy.html) API.
+group, call the [DescribePolicies](api-describepolicies.md) API. If the group has scaling
+policies, you can update them by calling the [PutScalingPolicy](api-putscalingpolicy.md) API.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 **AutoScalingGroupName**
 
@@ -62,7 +62,7 @@ Required: Yes
 
 The instance capacity distribution across Availability Zones.
 
-Type: [AvailabilityZoneDistribution](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_AvailabilityZoneDistribution.html) object
+Type: [AvailabilityZoneDistribution](api-availabilityzonedistribution.md) object
 
 Required: No
 
@@ -70,7 +70,7 @@ Required: No
 
 The policy for Availability Zone impairment.
 
-Type: [AvailabilityZoneImpairmentPolicy](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_AvailabilityZoneImpairmentPolicy.html) object
+Type: [AvailabilityZoneImpairmentPolicy](api-availabilityzoneimpairmentpolicy.md) object
 
 Required: No
 
@@ -93,7 +93,7 @@ Rebalancing in Auto Scaling to replace at-risk Spot Instances](../../../../servi
 
 ###### Note
 
-To suspend rebalancing across Availability Zones, use the [SuspendProcesses](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_SuspendedProcess.html) API.
+To suspend rebalancing across Availability Zones, use the [SuspendProcesses](api-suspendedprocess.md) API.
 
 Type: Boolean
 
@@ -103,7 +103,7 @@ Required: No
 
 The capacity reservation specification for the Auto Scaling group.
 
-Type: [CapacityReservationSpecification](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_CapacityReservationSpecification.html) object
+Type: [CapacityReservationSpecification](api-capacityreservationspecification.md) object
 
 Required: No
 
@@ -166,7 +166,7 @@ The valid values are `none`, `prevent-force-deletion`, and `prevent-all-deletion
 Default: `none`
 
 For more information, see
-[Configure deletion protection for your Amazon EC2 Auto Scaling resources](https://docs.aws.amazon.com/autoscaling/ec2/userguide/resource-deletion-protection.html)
+[Configure deletion protection for your Amazon EC2 Auto Scaling resources](../../../../services/autoscaling/ec2/userguide/resource-deletion-protection.md)
 in the _Amazon EC2 Auto Scaling User Guide_.
 
 Type: String
@@ -248,10 +248,10 @@ transitions through its lifecycle states. Configure retention triggers to specif
 move to a `Retained` state instead of automatic termination.
 
 For more information, see
-[Control instance retention with instance lifecycle policies](https://docs.aws.amazon.com/autoscaling/ec2/userguide/instance-lifecycle-policy.html)
+[Control instance retention with instance lifecycle policies](../../../../services/autoscaling/ec2/userguide/instance-lifecycle-policy.md)
 in the _Amazon EC2 Auto Scaling User Guide_.
 
-Type: [InstanceLifecyclePolicy](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_InstanceLifecyclePolicy.html) object
+Type: [InstanceLifecyclePolicy](api-instancelifecyclepolicy.md) object
 
 Required: No
 
@@ -260,7 +260,7 @@ Required: No
 An instance maintenance policy. For more information, see [Set instance maintenance policy](../../../../services/autoscaling/ec2/userguide/ec2-auto-scaling-instance-maintenance-policy.md) in the
 _Amazon EC2 Auto Scaling User Guide_.
 
-Type: [InstanceMaintenancePolicy](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_InstanceMaintenancePolicy.html) object
+Type: [InstanceMaintenancePolicy](api-instancemaintenancepolicy.md) object
 
 Required: No
 
@@ -331,7 +331,7 @@ The mixed instances policy. For more information, see [Auto Scaling\
 groups with multiple instance types and purchase options](../../../../services/autoscaling/ec2/userguide/ec2-auto-scaling-mixed-instances-groups.md) in the
 _Amazon EC2 Auto Scaling User Guide_.
 
-Type: [MixedInstancesPolicy](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_MixedInstancesPolicy.html) object
+Type: [MixedInstancesPolicy](api-mixedinstancespolicy.md) object
 
 Required: No
 
@@ -384,7 +384,7 @@ Required: No
 **SkipZonalShiftValidation**
 
 If you enable zonal shift with cross-zone disabled load balancers, capacity could become imbalanced across Availability Zones. To skip the validation, specify `true`. For more information, see
-[Auto Scaling group zonal shift](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-zonal-shift.html) in the _Amazon EC2 Auto Scaling User Guide_.
+[Auto Scaling group zonal shift](../../../../services/autoscaling/ec2/userguide/ec2-auto-scaling-zonal-shift.md) in the _Amazon EC2 Auto Scaling User Guide_.
 
 Type: Boolean
 
@@ -427,7 +427,7 @@ Required: No
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **ResourceContention**
 
@@ -492,27 +492,27 @@ https://autoscaling.amazonaws.com/?Action=UpdateAutoScalingGroup
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/autoscaling-2011-01-01/UpdateAutoScalingGroup)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/autoscaling-2011-01-01/updateautoscalinggroup.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/autoscaling-2011-01-01/UpdateAutoScalingGroup)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/autoscaling-2011-01-01/updateautoscalinggroup.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/autoscaling-2011-01-01/UpdateAutoScalingGroup)
+- [AWS SDK for C++](../../../goto/sdkforcpp/autoscaling-2011-01-01/updateautoscalinggroup.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/autoscaling-2011-01-01/UpdateAutoScalingGroup)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/autoscaling-2011-01-01/updateautoscalinggroup.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/autoscaling-2011-01-01/UpdateAutoScalingGroup)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/autoscaling-2011-01-01/updateautoscalinggroup.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/autoscaling-2011-01-01/UpdateAutoScalingGroup)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/autoscaling-2011-01-01/updateautoscalinggroup.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/autoscaling-2011-01-01/UpdateAutoScalingGroup)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/autoscaling-2011-01-01/updateautoscalinggroup.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/autoscaling-2011-01-01/UpdateAutoScalingGroup)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/autoscaling-2011-01-01/updateautoscalinggroup.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/autoscaling-2011-01-01/UpdateAutoScalingGroup)
+- [AWS SDK for Python](../../../../services/goto/boto3/autoscaling-2011-01-01/updateautoscalinggroup.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/autoscaling-2011-01-01/UpdateAutoScalingGroup)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/autoscaling-2011-01-01/updateautoscalinggroup.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 TerminateInstanceInAutoScalingGroup
 

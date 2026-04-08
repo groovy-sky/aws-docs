@@ -17,40 +17,40 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2021-08-11**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html)
+- [**2021-08-11**](api-amplifyuibuilder-2021-08-11.md)
 
-  - [CreateComponent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#createcomponent)
-  - [CreateForm](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#createform)
-  - [CreateTheme](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#createtheme)
-  - [DeleteComponent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#deletecomponent)
-  - [DeleteForm](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#deleteform)
-  - [DeleteTheme](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#deletetheme)
-  - [ExchangeCodeForToken](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#exchangecodefortoken)
-  - [ExportComponents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#exportcomponents)
-  - [ExportForms](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#exportforms)
-  - [ExportThemes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#exportthemes)
-  - [GetCodegenJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#getcodegenjob)
-  - [GetComponent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#getcomponent)
-  - [GetForm](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#getform)
-  - [GetMetadata](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#getmetadata)
-  - [GetTheme](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#gettheme)
-  - [ListCodegenJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#listcodegenjobs)
-  - [ListComponents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#listcomponents)
-  - [ListForms](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#listforms)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#listtagsforresource)
-  - [ListThemes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#listthemes)
-  - [PutMetadataFlag](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#putmetadataflag)
-  - [RefreshToken](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#refreshtoken)
-  - [StartCodegenJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#startcodegenjob)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#untagresource)
-  - [UpdateComponent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#updatecomponent)
-  - [UpdateForm](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#updateform)
-  - [UpdateTheme](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-amplifyuibuilder-2021-08-11.html#updatetheme)
+  - [CreateComponent](api-amplifyuibuilder-2021-08-11-createcomponent.md)
+  - [CreateForm](api-amplifyuibuilder-2021-08-11-createform.md)
+  - [CreateTheme](api-amplifyuibuilder-2021-08-11-createtheme.md)
+  - [DeleteComponent](api-amplifyuibuilder-2021-08-11-deletecomponent.md)
+  - [DeleteForm](api-amplifyuibuilder-2021-08-11-deleteform.md)
+  - [DeleteTheme](api-amplifyuibuilder-2021-08-11-deletetheme.md)
+  - [ExchangeCodeForToken](api-amplifyuibuilder-2021-08-11-exchangecodefortoken.md)
+  - [ExportComponents](api-amplifyuibuilder-2021-08-11-exportcomponents.md)
+  - [ExportForms](api-amplifyuibuilder-2021-08-11-exportforms.md)
+  - [ExportThemes](api-amplifyuibuilder-2021-08-11-exportthemes.md)
+  - [GetCodegenJob](api-amplifyuibuilder-2021-08-11-getcodegenjob.md)
+  - [GetComponent](api-amplifyuibuilder-2021-08-11-getcomponent.md)
+  - [GetForm](api-amplifyuibuilder-2021-08-11-getform.md)
+  - [GetMetadata](api-amplifyuibuilder-2021-08-11-getmetadata.md)
+  - [GetTheme](api-amplifyuibuilder-2021-08-11-gettheme.md)
+  - [ListCodegenJobs](api-amplifyuibuilder-2021-08-11-listcodegenjobs.md)
+  - [ListComponents](api-amplifyuibuilder-2021-08-11-listcomponents.md)
+  - [ListForms](api-amplifyuibuilder-2021-08-11-listforms.md)
+  - [ListTagsForResource](api-amplifyuibuilder-2021-08-11-listtagsforresource.md)
+  - [ListThemes](api-amplifyuibuilder-2021-08-11-listthemes.md)
+  - [PutMetadataFlag](api-amplifyuibuilder-2021-08-11-putmetadataflag.md)
+  - [RefreshToken](api-amplifyuibuilder-2021-08-11-refreshtoken.md)
+  - [StartCodegenJob](api-amplifyuibuilder-2021-08-11-startcodegenjob.md)
+  - [TagResource](api-amplifyuibuilder-2021-08-11-tagresource.md)
+  - [UntagResource](api-amplifyuibuilder-2021-08-11-untagresource.md)
+  - [UpdateComponent](api-amplifyuibuilder-2021-08-11-updatecomponent.md)
+  - [UpdateForm](api-amplifyuibuilder-2021-08-11-updateform.md)
+  - [UpdateTheme](api-amplifyuibuilder-2021-08-11-updatetheme.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AmplifyUIBuilder.AmplifyUIBuilderClient.html\#toc)
+### Table of Contents  [header link](class-aws-amplifyuibuilder-amplifyuibuilderclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AmplifyUIBuilder.AmplifyUIBuilderClient.html\#toc-methods)
+#### Methods  [header link](class-aws-amplifyuibuilder-amplifyuibuilderclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -81,7 +81,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AmplifyUIBuilder.AmplifyUIBuilderClient.html\#methods)
+### Methods  [header link](class-aws-amplifyuibuilder-amplifyuibuilderclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -548,7 +548,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AmplifyUIBuilder.AmplifyUIBuilderClient.html#toc-methods)
+  - [Methods](class-aws-amplifyuibuilder-amplifyuibuilderclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -575,4 +575,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AmplifyUIBuilder.AmplifyUIBuilderClient.html#top)
+[Back To Top](class-aws-amplifyuibuilder-amplifyuibuilderclient-top.md)

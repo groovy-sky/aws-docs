@@ -9,7 +9,7 @@ Use the following links to get started using the CloudWatch Logs Query API:
 - [Actions](api-operations.md):
 An alphabetical list of all CloudWatch Logs actions.
 
-- [Data Types](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_Types.html):
+- [Data Types](api-types.md):
 An alphabetical list of all CloudWatch Logs data types.
 
 - [Common Parameters](commonparameters.md):
@@ -18,7 +18,7 @@ Parameters that all Query actions can use.
 - [Common Error Types](commonerrors.md):
 Client and server errors that all actions can return.
 
-- [Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#cwl_region):
+- [Regions and Endpoints](../../../../general/general/latest/gr/rande-cwl-region.md):
 Supported regions and endpoints for all AWS products.
 
 Alternatively, you can use one of the [AWS SDKs](https://aws.amazon.com/tools) to access CloudWatch Logs
@@ -41,6 +41,6 @@ following AWS developer centers:
 
 - [Windows and .NET Developer Center](http://aws.amazon.com/net)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Actions

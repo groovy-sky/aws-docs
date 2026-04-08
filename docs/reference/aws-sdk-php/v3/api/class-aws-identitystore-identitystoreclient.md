@@ -17,31 +17,31 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2020-06-15**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-identitystore-2020-06-15.html)
+- [**2020-06-15**](api-identitystore-2020-06-15.md)
 
-  - [CreateGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-identitystore-2020-06-15.html#creategroup)
-  - [CreateGroupMembership](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-identitystore-2020-06-15.html#creategroupmembership)
-  - [CreateUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-identitystore-2020-06-15.html#createuser)
-  - [DeleteGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-identitystore-2020-06-15.html#deletegroup)
-  - [DeleteGroupMembership](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-identitystore-2020-06-15.html#deletegroupmembership)
-  - [DeleteUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-identitystore-2020-06-15.html#deleteuser)
-  - [DescribeGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-identitystore-2020-06-15.html#describegroup)
-  - [DescribeGroupMembership](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-identitystore-2020-06-15.html#describegroupmembership)
-  - [DescribeUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-identitystore-2020-06-15.html#describeuser)
-  - [GetGroupId](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-identitystore-2020-06-15.html#getgroupid)
-  - [GetGroupMembershipId](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-identitystore-2020-06-15.html#getgroupmembershipid)
-  - [GetUserId](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-identitystore-2020-06-15.html#getuserid)
-  - [IsMemberInGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-identitystore-2020-06-15.html#ismemberingroups)
-  - [ListGroupMemberships](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-identitystore-2020-06-15.html#listgroupmemberships)
-  - [ListGroupMembershipsForMember](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-identitystore-2020-06-15.html#listgroupmembershipsformember)
-  - [ListGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-identitystore-2020-06-15.html#listgroups)
-  - [ListUsers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-identitystore-2020-06-15.html#listusers)
-  - [UpdateGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-identitystore-2020-06-15.html#updategroup)
-  - [UpdateUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-identitystore-2020-06-15.html#updateuser)
+  - [CreateGroup](api-identitystore-2020-06-15-creategroup.md)
+  - [CreateGroupMembership](api-identitystore-2020-06-15-creategroupmembership.md)
+  - [CreateUser](api-identitystore-2020-06-15-createuser.md)
+  - [DeleteGroup](api-identitystore-2020-06-15-deletegroup.md)
+  - [DeleteGroupMembership](api-identitystore-2020-06-15-deletegroupmembership.md)
+  - [DeleteUser](api-identitystore-2020-06-15-deleteuser.md)
+  - [DescribeGroup](api-identitystore-2020-06-15-describegroup.md)
+  - [DescribeGroupMembership](api-identitystore-2020-06-15-describegroupmembership.md)
+  - [DescribeUser](api-identitystore-2020-06-15-describeuser.md)
+  - [GetGroupId](api-identitystore-2020-06-15-getgroupid.md)
+  - [GetGroupMembershipId](api-identitystore-2020-06-15-getgroupmembershipid.md)
+  - [GetUserId](api-identitystore-2020-06-15-getuserid.md)
+  - [IsMemberInGroups](api-identitystore-2020-06-15-ismemberingroups.md)
+  - [ListGroupMemberships](api-identitystore-2020-06-15-listgroupmemberships.md)
+  - [ListGroupMembershipsForMember](api-identitystore-2020-06-15-listgroupmembershipsformember.md)
+  - [ListGroups](api-identitystore-2020-06-15-listgroups.md)
+  - [ListUsers](api-identitystore-2020-06-15-listusers.md)
+  - [UpdateGroup](api-identitystore-2020-06-15-updategroup.md)
+  - [UpdateUser](api-identitystore-2020-06-15-updateuser.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IdentityStore.IdentityStoreClient.html\#toc)
+### Table of Contents  [header link](class-aws-identitystore-identitystoreclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IdentityStore.IdentityStoreClient.html\#toc-methods)
+#### Methods  [header link](class-aws-identitystore-identitystoreclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -72,7 +72,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IdentityStore.IdentityStoreClient.html\#methods)
+### Methods  [header link](class-aws-identitystore-identitystoreclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -539,7 +539,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IdentityStore.IdentityStoreClient.html#toc-methods)
+  - [Methods](class-aws-identitystore-identitystoreclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -566,4 +566,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IdentityStore.IdentityStoreClient.html#top)
+[Back To Top](class-aws-identitystore-identitystoreclient-top.md)

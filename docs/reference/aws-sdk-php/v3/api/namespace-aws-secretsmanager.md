@@ -4,15 +4,15 @@ Menu
 
 ## SecretsManager
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.secretsmanager.html\#toc)
+### Table of Contents  [header link](namespace-aws-secretsmanager-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.secretsmanager.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-secretsmanager-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.secretsmanager.exception.html)
+[Exception](namespace-aws-secretsmanager-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.secretsmanager.html\#toc-classes)
+#### Classes  [header link](namespace-aws-secretsmanager-toc-classes.md)
 
-[SecretsManagerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecretsManager.SecretsManagerClient.html)This client is used to interact with the **AWS Secrets Manager** service.
+[SecretsManagerClient](class-aws-secretsmanager-secretsmanagerclient.md)This client is used to interact with the **AWS Secrets Manager** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.secretsmanager.html#toc-classes)
+  - [Classes](namespace-aws-secretsmanager-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.secretsmanager.html#top)
+[Back To Top](namespace-aws-secretsmanager-top.md)

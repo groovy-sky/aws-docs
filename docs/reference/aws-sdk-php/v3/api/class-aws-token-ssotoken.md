@@ -3,38 +3,38 @@ Menu
 - [Aws](namespace-aws.md)
 - [Token](namespace-aws-token.md)
 
-## SsoToken     extends [Token](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html)   in package    - [Aws](package-aws.md)
+## SsoToken     extends [Token](class-aws-token-token.md)   in package    - [Aws](package-aws.md)
 
 Token that comes from the SSO provider
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html\#toc)
+### Table of Contents  [header link](class-aws-token-ssotoken-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html\#toc-methods)
+#### Methods  [header link](class-aws-token-ssotoken-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html#method___construct)
+[\_\_construct()](class-aws-token-ssotoken-method-construct.md)
 : mixed Constructs a new SSO token object, with the specified AWS
-token[\_\_serialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method___serialize)
-: array<string\|int, mixed> [\_\_set\_state()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method___set_state)
-: mixed Sets the state of a token object[\_\_unserialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method___unserialize)
-: mixed Sets the state of this object from an array[fromTokenData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html#method_fromTokenData)
-: [SsoToken](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html)Creates an instance of SsoToken from a token data.[getClientId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html#method_getClientId)
-: string\|null [getClientSecret()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html#method_getClientSecret)
-: string\|null [getExpiration()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_getExpiration)
-: int Get the UNIX timestamp in which the token will expire[getRefreshToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html#method_getRefreshToken)
-: string\|null [getRegion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html#method_getRegion)
-: string\|null [getRegistrationExpiresAt()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html#method_getRegistrationExpiresAt)
-: int\|null [getSource()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_getSource)
-: string\|null [getStartUrl()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html#method_getStartUrl)
-: string\|null [getToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_getToken)
-: string Returns the token this token object.[isExpired()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html#method_isExpired)
-: bool Check if the token are expired[serialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_serialize)
-: string [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_toArray)
-: array<string\|int, mixed> Converts the token to an associative array.[unserialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_unserialize)
+token[\_\_serialize()](class-aws-token-token-method-serialize.md)
+: array<string\|int, mixed> [\_\_set\_state()](class-aws-token-token-method-set-state.md)
+: mixed Sets the state of a token object[\_\_unserialize()](class-aws-token-token-method-unserialize.md)
+: mixed Sets the state of this object from an array[fromTokenData()](class-aws-token-ssotoken-method-fromtokendata.md)
+: [SsoToken](class-aws-token-ssotoken.md)Creates an instance of SsoToken from a token data.[getClientId()](class-aws-token-ssotoken-method-getclientid.md)
+: string\|null [getClientSecret()](class-aws-token-ssotoken-method-getclientsecret.md)
+: string\|null [getExpiration()](class-aws-token-token-method-getexpiration.md)
+: int Get the UNIX timestamp in which the token will expire[getRefreshToken()](class-aws-token-ssotoken-method-getrefreshtoken.md)
+: string\|null [getRegion()](class-aws-token-ssotoken-method-getregion.md)
+: string\|null [getRegistrationExpiresAt()](class-aws-token-ssotoken-method-getregistrationexpiresat.md)
+: int\|null [getSource()](class-aws-token-token-method-getsource.md)
+: string\|null [getStartUrl()](class-aws-token-ssotoken-method-getstarturl.md)
+: string\|null [getToken()](class-aws-token-token-method-gettoken.md)
+: string Returns the token this token object.[isExpired()](class-aws-token-ssotoken-method-isexpired.md)
+: bool Check if the token are expired[serialize()](class-aws-token-token-method-serialize.md)
+: string [toArray()](class-aws-token-token-method-toarray.md)
+: array<string\|int, mixed> Converts the token to an associative array.[unserialize()](class-aws-token-token-method-unserialize.md)
 : mixed Sets the state of the object from serialized json data
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html\#methods)
+### Methods  [header link](class-aws-token-ssotoken-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-token-ssotoken-method-construct.md)
 
 Constructs a new SSO token object, with the specified AWS
 token
@@ -91,7 +91,7 @@ $startUrl
 
 The configured sso\_start\_url for the profile that credentials are being resolved for
 
-#### \_\_serialize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#method___serialize)
+#### \_\_serialize()  [header link](class-aws-token-token-method-serialize.md)
 
 `
     public
@@ -101,7 +101,7 @@ The configured sso\_start\_url for the profile that credentials are being resolv
 
 array<string\|int, mixed>
 
-#### \_\_set\_state()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#method___set_state)
+#### \_\_set\_state()  [header link](class-aws-token-token-method-set-state.md)
 
 Sets the state of a token object
 
@@ -116,7 +116,7 @@ $state
 
 array containing 'token' and 'expires'
 
-#### \_\_unserialize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#method___unserialize)
+#### \_\_unserialize()  [header link](class-aws-token-token-method-unserialize.md)
 
 Sets the state of this object from an array
 
@@ -129,7 +129,7 @@ Sets the state of this object from an array
 $data
 : mixed
 
-#### fromTokenData()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html\#method_fromTokenData)
+#### fromTokenData()  [header link](class-aws-token-ssotoken-method-fromtokendata.md)
 
 Creates an instance of SsoToken from a token data.
 
@@ -144,9 +144,9 @@ $tokenData
 
 ##### Return values
 
-[SsoToken](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html)
+[SsoToken](class-aws-token-ssotoken.md)
 
-#### getClientId()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html\#method_getClientId)
+#### getClientId()  [header link](class-aws-token-ssotoken-method-getclientid.md)
 
 `
     public
@@ -156,7 +156,7 @@ $tokenData
 
 string\|null
 
-#### getClientSecret()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html\#method_getClientSecret)
+#### getClientSecret()  [header link](class-aws-token-ssotoken-method-getclientsecret.md)
 
 `
     public
@@ -166,7 +166,7 @@ string\|null
 
 string\|null
 
-#### getExpiration()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#method_getExpiration)
+#### getExpiration()  [header link](class-aws-token-token-method-getexpiration.md)
 
 Get the UNIX timestamp in which the token will expire
 
@@ -178,7 +178,7 @@ Get the UNIX timestamp in which the token will expire
 
 int
 
-#### getRefreshToken()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html\#method_getRefreshToken)
+#### getRefreshToken()  [header link](class-aws-token-ssotoken-method-getrefreshtoken.md)
 
 `
     public
@@ -188,7 +188,7 @@ int
 
 string\|null
 
-#### getRegion()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html\#method_getRegion)
+#### getRegion()  [header link](class-aws-token-ssotoken-method-getregion.md)
 
 `
     public
@@ -198,7 +198,7 @@ string\|null
 
 string\|null
 
-#### getRegistrationExpiresAt()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html\#method_getRegistrationExpiresAt)
+#### getRegistrationExpiresAt()  [header link](class-aws-token-ssotoken-method-getregistrationexpiresat.md)
 
 `
     public
@@ -208,7 +208,7 @@ string\|null
 
 int\|null
 
-#### getSource()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#method_getSource)
+#### getSource()  [header link](class-aws-token-token-method-getsource.md)
 
 `
     public
@@ -218,7 +218,7 @@ int\|null
 
 string\|null
 
-#### getStartUrl()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html\#method_getStartUrl)
+#### getStartUrl()  [header link](class-aws-token-ssotoken-method-getstarturl.md)
 
 `
     public
@@ -228,7 +228,7 @@ string\|null
 
 string\|null
 
-#### getToken()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#method_getToken)
+#### getToken()  [header link](class-aws-token-token-method-gettoken.md)
 
 Returns the token this token object.
 
@@ -240,7 +240,7 @@ Returns the token this token object.
 
 string
 
-#### isExpired()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html\#method_isExpired)
+#### isExpired()  [header link](class-aws-token-ssotoken-method-isexpired.md)
 
 Check if the token are expired
 
@@ -252,7 +252,7 @@ Check if the token are expired
 
 bool
 
-#### serialize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#method_serialize)
+#### serialize()  [header link](class-aws-token-token-method-serialize.md)
 
 `
     public
@@ -262,7 +262,7 @@ bool
 
 string
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#method_toArray)
+#### toArray()  [header link](class-aws-token-token-method-toarray.md)
 
 Converts the token to an associative array.
 
@@ -274,7 +274,7 @@ Converts the token to an associative array.
 
 array<string\|int, mixed>
 
-#### unserialize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html\#method_unserialize)
+#### unserialize()  [header link](class-aws-token-token-method-unserialize.md)
 
 Sets the state of the object from serialized json data
 
@@ -293,25 +293,25 @@ $serialized
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html#toc-methods)
+  - [Methods](class-aws-token-ssotoken-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html#method___construct)
-  - [\_\_serialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method___serialize)
-  - [\_\_set\_state()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method___set_state)
-  - [\_\_unserialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method___unserialize)
-  - [fromTokenData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html#method_fromTokenData)
-  - [getClientId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html#method_getClientId)
-  - [getClientSecret()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html#method_getClientSecret)
-  - [getExpiration()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_getExpiration)
-  - [getRefreshToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html#method_getRefreshToken)
-  - [getRegion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html#method_getRegion)
-  - [getRegistrationExpiresAt()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html#method_getRegistrationExpiresAt)
-  - [getSource()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_getSource)
-  - [getStartUrl()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html#method_getStartUrl)
-  - [getToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_getToken)
-  - [isExpired()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html#method_isExpired)
-  - [serialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_serialize)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_toArray)
-  - [unserialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html#method_unserialize)
+  - [\_\_construct()](class-aws-token-ssotoken-method-construct.md)
+  - [\_\_serialize()](class-aws-token-token-method-serialize.md)
+  - [\_\_set\_state()](class-aws-token-token-method-set-state.md)
+  - [\_\_unserialize()](class-aws-token-token-method-unserialize.md)
+  - [fromTokenData()](class-aws-token-ssotoken-method-fromtokendata.md)
+  - [getClientId()](class-aws-token-ssotoken-method-getclientid.md)
+  - [getClientSecret()](class-aws-token-ssotoken-method-getclientsecret.md)
+  - [getExpiration()](class-aws-token-token-method-getexpiration.md)
+  - [getRefreshToken()](class-aws-token-ssotoken-method-getrefreshtoken.md)
+  - [getRegion()](class-aws-token-ssotoken-method-getregion.md)
+  - [getRegistrationExpiresAt()](class-aws-token-ssotoken-method-getregistrationexpiresat.md)
+  - [getSource()](class-aws-token-token-method-getsource.md)
+  - [getStartUrl()](class-aws-token-ssotoken-method-getstarturl.md)
+  - [getToken()](class-aws-token-token-method-gettoken.md)
+  - [isExpired()](class-aws-token-ssotoken-method-isexpired.md)
+  - [serialize()](class-aws-token-token-method-serialize.md)
+  - [toArray()](class-aws-token-token-method-toarray.md)
+  - [unserialize()](class-aws-token-token-method-unserialize.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html#top)
+[Back To Top](class-aws-token-ssotoken-top.md)

@@ -7,22 +7,22 @@ Menu
 
 Provides access to defaultsMode configuration
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html\#toc)
+### Table of Contents  [header link](class-aws-defaultsmode-configurationinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-defaultsmode-configurationinterface-toc-methods.md)
 
-[getConnectTimeoutInMillis()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html#method_getConnectTimeoutInMillis)
-: int Returns the connection timeout in milliseconds[getHttpRequestTimeoutInMillis()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html#method_getHttpRequestTimeoutInMillis)
-: int Returns the http request timeout in milliseconds[getMode()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html#method_getMode)
+[getConnectTimeoutInMillis()](class-aws-defaultsmode-configurationinterface-method-getconnecttimeoutinmillis.md)
+: int Returns the connection timeout in milliseconds[getHttpRequestTimeoutInMillis()](class-aws-defaultsmode-configurationinterface-method-gethttprequesttimeoutinmillis.md)
+: int Returns the http request timeout in milliseconds[getMode()](class-aws-defaultsmode-configurationinterface-method-getmode.md)
 : string Returns the configuration mode. Available modes include 'legacy', 'standard', and
-'adapative'.[getS3UsEast1RegionalEndpoints()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html#method_getS3UsEast1RegionalEndpoints)
-: bool Returns the s3 us-east-1 regional endpoints option[getStsRegionalEndpoints()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html#method_getStsRegionalEndpoints)
-: bool Returns the sts regional endpoints option[toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html#method_toArray)
+'adapative'.[getS3UsEast1RegionalEndpoints()](class-aws-defaultsmode-configurationinterface-method-gets3useast1regionalendpoints.md)
+: bool Returns the s3 us-east-1 regional endpoints option[getStsRegionalEndpoints()](class-aws-defaultsmode-configurationinterface-method-getstsregionalendpoints.md)
+: bool Returns the sts regional endpoints option[toArray()](class-aws-defaultsmode-configurationinterface-method-toarray.md)
 : array<string\|int, mixed> Returns the configuration as an associative array
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html\#methods)
+### Methods  [header link](class-aws-defaultsmode-configurationinterface-methods.md)
 
-#### getConnectTimeoutInMillis()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html\#method_getConnectTimeoutInMillis)
+#### getConnectTimeoutInMillis()  [header link](class-aws-defaultsmode-configurationinterface-method-getconnecttimeoutinmillis.md)
 
 Returns the connection timeout in milliseconds
 
@@ -34,7 +34,7 @@ Returns the connection timeout in milliseconds
 
 int
 
-#### getHttpRequestTimeoutInMillis()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html\#method_getHttpRequestTimeoutInMillis)
+#### getHttpRequestTimeoutInMillis()  [header link](class-aws-defaultsmode-configurationinterface-method-gethttprequesttimeoutinmillis.md)
 
 Returns the http request timeout in milliseconds
 
@@ -46,7 +46,7 @@ Returns the http request timeout in milliseconds
 
 int
 
-#### getMode()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html\#method_getMode)
+#### getMode()  [header link](class-aws-defaultsmode-configurationinterface-method-getmode.md)
 
 Returns the configuration mode. Available modes include 'legacy', 'standard', and
 'adapative'.
@@ -59,7 +59,7 @@ Returns the configuration mode. Available modes include 'legacy', 'standard', an
 
 string
 
-#### getS3UsEast1RegionalEndpoints()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html\#method_getS3UsEast1RegionalEndpoints)
+#### getS3UsEast1RegionalEndpoints()  [header link](class-aws-defaultsmode-configurationinterface-method-gets3useast1regionalendpoints.md)
 
 Returns the s3 us-east-1 regional endpoints option
 
@@ -71,7 +71,7 @@ Returns the s3 us-east-1 regional endpoints option
 
 bool
 
-#### getStsRegionalEndpoints()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html\#method_getStsRegionalEndpoints)
+#### getStsRegionalEndpoints()  [header link](class-aws-defaultsmode-configurationinterface-method-getstsregionalendpoints.md)
 
 Returns the sts regional endpoints option
 
@@ -83,7 +83,7 @@ Returns the sts regional endpoints option
 
 bool
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html\#method_toArray)
+#### toArray()  [header link](class-aws-defaultsmode-configurationinterface-method-toarray.md)
 
 Returns the configuration as an associative array
 
@@ -101,14 +101,14 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html#toc-methods)
+  - [Constants](class-aws-defaultsmode-configurationinterface-toc-constants.md)
+  - [Methods](class-aws-defaultsmode-configurationinterface-toc-methods.md)
 - Methods
-  - [getConnectTimeoutInMillis()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html#method_getConnectTimeoutInMillis)
-  - [getHttpRequestTimeoutInMillis()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html#method_getHttpRequestTimeoutInMillis)
-  - [getMode()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html#method_getMode)
-  - [getS3UsEast1RegionalEndpoints()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html#method_getS3UsEast1RegionalEndpoints)
-  - [getStsRegionalEndpoints()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html#method_getStsRegionalEndpoints)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html#method_toArray)
+  - [getConnectTimeoutInMillis()](class-aws-defaultsmode-configurationinterface-method-getconnecttimeoutinmillis.md)
+  - [getHttpRequestTimeoutInMillis()](class-aws-defaultsmode-configurationinterface-method-gethttprequesttimeoutinmillis.md)
+  - [getMode()](class-aws-defaultsmode-configurationinterface-method-getmode.md)
+  - [getS3UsEast1RegionalEndpoints()](class-aws-defaultsmode-configurationinterface-method-gets3useast1regionalendpoints.md)
+  - [getStsRegionalEndpoints()](class-aws-defaultsmode-configurationinterface-method-getstsregionalendpoints.md)
+  - [toArray()](class-aws-defaultsmode-configurationinterface-method-toarray.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html#top)
+[Back To Top](class-aws-defaultsmode-configurationinterface-top.md)

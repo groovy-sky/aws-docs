@@ -4,15 +4,15 @@ Menu
 
 ## DevOpsAgent
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.devopsagent.html\#toc)
+### Table of Contents  [header link](namespace-aws-devopsagent-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.devopsagent.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-devopsagent-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.devopsagent.exception.html)
+[Exception](namespace-aws-devopsagent-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.devopsagent.html\#toc-classes)
+#### Classes  [header link](namespace-aws-devopsagent-toc-classes.md)
 
-[DevOpsAgentClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DevOpsAgent.DevOpsAgentClient.html)This client is used to interact with the **AWS DevOps Agent Service** service.
+[DevOpsAgentClient](class-aws-devopsagent-devopsagentclient.md)This client is used to interact with the **AWS DevOps Agent Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.devopsagent.html#toc-classes)
+  - [Classes](namespace-aws-devopsagent-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.devopsagent.html#top)
+[Back To Top](namespace-aws-devopsagent-top.md)

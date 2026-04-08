@@ -17,15 +17,15 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-05-13**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-runtime.sagemaker-2017-05-13.html)
+- [**2017-05-13**](api-runtime-sagemaker-2017-05-13.md)
 
-  - [InvokeEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-runtime.sagemaker-2017-05-13.html#invokeendpoint)
-  - [InvokeEndpointAsync](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-runtime.sagemaker-2017-05-13.html#invokeendpointasync)
-  - [InvokeEndpointWithResponseStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-runtime.sagemaker-2017-05-13.html#invokeendpointwithresponsestream)
+  - [InvokeEndpoint](api-runtime-sagemaker-2017-05-13-invokeendpoint.md)
+  - [InvokeEndpointAsync](api-runtime-sagemaker-2017-05-13-invokeendpointasync.md)
+  - [InvokeEndpointWithResponseStream](api-runtime-sagemaker-2017-05-13-invokeendpointwithresponsestream.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMakerRuntime.SageMakerRuntimeClient.html\#toc)
+### Table of Contents  [header link](class-aws-sagemakerruntime-sagemakerruntimeclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMakerRuntime.SageMakerRuntimeClient.html\#toc-methods)
+#### Methods  [header link](class-aws-sagemakerruntime-sagemakerruntimeclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -56,7 +56,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMakerRuntime.SageMakerRuntimeClient.html\#methods)
+### Methods  [header link](class-aws-sagemakerruntime-sagemakerruntimeclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -523,7 +523,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMakerRuntime.SageMakerRuntimeClient.html#toc-methods)
+  - [Methods](class-aws-sagemakerruntime-sagemakerruntimeclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -550,4 +550,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMakerRuntime.SageMakerRuntimeClient.html#top)
+[Back To Top](class-aws-sagemakerruntime-sagemakerruntimeclient-top.md)

@@ -17,27 +17,27 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2024-07-26**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-serverless-2024-07-26.html)
+- [**2024-07-26**](api-mwaa-serverless-2024-07-26.md)
 
-  - [CreateWorkflow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-serverless-2024-07-26.html#createworkflow)
-  - [DeleteWorkflow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-serverless-2024-07-26.html#deleteworkflow)
-  - [GetTaskInstance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-serverless-2024-07-26.html#gettaskinstance)
-  - [GetWorkflow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-serverless-2024-07-26.html#getworkflow)
-  - [GetWorkflowRun](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-serverless-2024-07-26.html#getworkflowrun)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-serverless-2024-07-26.html#listtagsforresource)
-  - [ListTaskInstances](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-serverless-2024-07-26.html#listtaskinstances)
-  - [ListWorkflowRuns](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-serverless-2024-07-26.html#listworkflowruns)
-  - [ListWorkflowVersions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-serverless-2024-07-26.html#listworkflowversions)
-  - [ListWorkflows](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-serverless-2024-07-26.html#listworkflows)
-  - [StartWorkflowRun](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-serverless-2024-07-26.html#startworkflowrun)
-  - [StopWorkflowRun](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-serverless-2024-07-26.html#stopworkflowrun)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-serverless-2024-07-26.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-serverless-2024-07-26.html#untagresource)
-  - [UpdateWorkflow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-serverless-2024-07-26.html#updateworkflow)
+  - [CreateWorkflow](api-mwaa-serverless-2024-07-26-createworkflow.md)
+  - [DeleteWorkflow](api-mwaa-serverless-2024-07-26-deleteworkflow.md)
+  - [GetTaskInstance](api-mwaa-serverless-2024-07-26-gettaskinstance.md)
+  - [GetWorkflow](api-mwaa-serverless-2024-07-26-getworkflow.md)
+  - [GetWorkflowRun](api-mwaa-serverless-2024-07-26-getworkflowrun.md)
+  - [ListTagsForResource](api-mwaa-serverless-2024-07-26-listtagsforresource.md)
+  - [ListTaskInstances](api-mwaa-serverless-2024-07-26-listtaskinstances.md)
+  - [ListWorkflowRuns](api-mwaa-serverless-2024-07-26-listworkflowruns.md)
+  - [ListWorkflowVersions](api-mwaa-serverless-2024-07-26-listworkflowversions.md)
+  - [ListWorkflows](api-mwaa-serverless-2024-07-26-listworkflows.md)
+  - [StartWorkflowRun](api-mwaa-serverless-2024-07-26-startworkflowrun.md)
+  - [StopWorkflowRun](api-mwaa-serverless-2024-07-26-stopworkflowrun.md)
+  - [TagResource](api-mwaa-serverless-2024-07-26-tagresource.md)
+  - [UntagResource](api-mwaa-serverless-2024-07-26-untagresource.md)
+  - [UpdateWorkflow](api-mwaa-serverless-2024-07-26-updateworkflow.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MWAAServerless.MWAAServerlessClient.html\#toc)
+### Table of Contents  [header link](class-aws-mwaaserverless-mwaaserverlessclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MWAAServerless.MWAAServerlessClient.html\#toc-methods)
+#### Methods  [header link](class-aws-mwaaserverless-mwaaserverlessclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -68,7 +68,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MWAAServerless.MWAAServerlessClient.html\#methods)
+### Methods  [header link](class-aws-mwaaserverless-mwaaserverlessclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -535,7 +535,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MWAAServerless.MWAAServerlessClient.html#toc-methods)
+  - [Methods](class-aws-mwaaserverless-mwaaserverlessclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -562,4 +562,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MWAAServerless.MWAAServerlessClient.html#top)
+[Back To Top](class-aws-mwaaserverless-mwaaserverlessclient-top.md)

@@ -17,7 +17,7 @@ The request uses the following URI parameters.
 **[Id](#API_GetServiceLevelObjective_RequestSyntax)**
 
 The ARN or name of the SLO that you want to retrieve information about. You can find the ARNs
-of SLOs by using the [ListServiceLevelObjectives](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_ListServiceLevelObjectives.html)
+of SLOs by using the [ListServiceLevelObjectives](../../../amazoncloudwatch/latest/apireference/api-listservicelevelobjectives.md)
 operation.
 
 Pattern: `[0-9A-Za-z][-._0-9A-Za-z ]{0,126}[0-9A-Za-z]$|^arn:(aws|aws-us-gov):application-signals:[^:]*:[^:]*:slo/[0-9A-Za-z][-._0-9A-Za-z ]{0,126}[0-9A-Za-z]`
@@ -169,11 +169,11 @@ The following data is returned in JSON format by the service.
 
 A structure containing the information about the SLO.
 
-Type: [ServiceLevelObjective](https://docs.aws.amazon.com/applicationsignals/latest/APIReference/API_ServiceLevelObjective.html) object
+Type: [ServiceLevelObjective](api-servicelevelobjective.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/applicationsignals/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **ResourceNotFoundException**
 
@@ -205,27 +205,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/application-signals-2024-04-15/GetServiceLevelObjective)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/application-signals-2024-04-15/getservicelevelobjective.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/application-signals-2024-04-15/GetServiceLevelObjective)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/application-signals-2024-04-15/getservicelevelobjective.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/application-signals-2024-04-15/GetServiceLevelObjective)
+- [AWS SDK for C++](../../../goto/sdkforcpp/application-signals-2024-04-15/getservicelevelobjective.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/application-signals-2024-04-15/GetServiceLevelObjective)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/application-signals-2024-04-15/getservicelevelobjective.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/application-signals-2024-04-15/GetServiceLevelObjective)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/application-signals-2024-04-15/getservicelevelobjective.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/application-signals-2024-04-15/GetServiceLevelObjective)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/application-signals-2024-04-15/getservicelevelobjective.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/application-signals-2024-04-15/GetServiceLevelObjective)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/application-signals-2024-04-15/getservicelevelobjective.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/application-signals-2024-04-15/GetServiceLevelObjective)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/application-signals-2024-04-15/getservicelevelobjective.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/application-signals-2024-04-15/GetServiceLevelObjective)
+- [AWS SDK for Python](../../../../services/goto/boto3/application-signals-2024-04-15/getservicelevelobjective.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/application-signals-2024-04-15/GetServiceLevelObjective)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/application-signals-2024-04-15/getservicelevelobjective.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GetService
 

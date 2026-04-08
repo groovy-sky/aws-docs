@@ -7,40 +7,40 @@ Menu
 
 Priority ordered collection of supported AWS protocols.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html\#toc)
+### Table of Contents  [header link](class-aws-api-supportedprotocols-toc.md)
 
-#### Cases  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html\#toc-cases)
+#### Cases  [header link](class-aws-api-supportedprotocols-toc-cases.md)
 
-[CBOR](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html#enumcase_CBOR)
-= 'smithy-rpc-v2-cbor' [EC2](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html#enumcase_EC2)
-= 'ec2' [JSON](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html#enumcase_JSON)
-= 'json' [QUERY](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html#enumcase_QUERY)
-= 'query' [REST\_JSON](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html#enumcase_REST_JSON)
-= 'rest-json' [REST\_XML](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html#enumcase_REST_XML)
+[CBOR](class-aws-api-supportedprotocols-enumcase-cbor.md)
+= 'smithy-rpc-v2-cbor' [EC2](class-aws-api-supportedprotocols-enumcase-ec2.md)
+= 'ec2' [JSON](class-aws-api-supportedprotocols-enumcase-json.md)
+= 'json' [QUERY](class-aws-api-supportedprotocols-enumcase-query.md)
+= 'query' [REST\_JSON](class-aws-api-supportedprotocols-enumcase-rest-json.md)
+= 'rest-json' [REST\_XML](class-aws-api-supportedprotocols-enumcase-rest-xml.md)
 = 'rest-xml'
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html\#toc-methods)
+#### Methods  [header link](class-aws-api-supportedprotocols-toc-methods.md)
 
-[isSupported()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html#method_isSupported)
+[isSupported()](class-aws-api-supportedprotocols-method-issupported.md)
 : bool Check if a protocol is valid.
 
-### Cases  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html\#cases)
+### Cases  [header link](class-aws-api-supportedprotocols-cases.md)
 
-#### JSON  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html\#enumcase_JSON)
+#### JSON  [header link](class-aws-api-supportedprotocols-enumcase-json.md)
 
-#### CBOR  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html\#enumcase_CBOR)
+#### CBOR  [header link](class-aws-api-supportedprotocols-enumcase-cbor.md)
 
-#### REST\_JSON  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html\#enumcase_REST_JSON)
+#### REST\_JSON  [header link](class-aws-api-supportedprotocols-enumcase-rest-json.md)
 
-#### REST\_XML  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html\#enumcase_REST_XML)
+#### REST\_XML  [header link](class-aws-api-supportedprotocols-enumcase-rest-xml.md)
 
-#### QUERY  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html\#enumcase_QUERY)
+#### QUERY  [header link](class-aws-api-supportedprotocols-enumcase-query.md)
 
-#### EC2  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html\#enumcase_EC2)
+#### EC2  [header link](class-aws-api-supportedprotocols-enumcase-ec2.md)
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html\#methods)
+### Methods  [header link](class-aws-api-supportedprotocols-methods.md)
 
-#### isSupported()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html\#method_isSupported)
+#### isSupported()  [header link](class-aws-api-supportedprotocols-method-issupported.md)
 
 Check if a protocol is valid.
 
@@ -67,16 +67,16 @@ True if the protocol is supported, otherwise false.
 **On this page**
 
 - Table Of Contents
-  - [Cases](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html#toc-cases)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html#toc-methods)
+  - [Cases](class-aws-api-supportedprotocols-toc-cases.md)
+  - [Methods](class-aws-api-supportedprotocols-toc-methods.md)
 - Cases
-  - [JSON](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html#enumcase_JSON)
-  - [CBOR](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html#enumcase_CBOR)
-  - [REST\_JSON](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html#enumcase_REST_JSON)
-  - [REST\_XML](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html#enumcase_REST_XML)
-  - [QUERY](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html#enumcase_QUERY)
-  - [EC2](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html#enumcase_EC2)
+  - [JSON](class-aws-api-supportedprotocols-enumcase-json.md)
+  - [CBOR](class-aws-api-supportedprotocols-enumcase-cbor.md)
+  - [REST\_JSON](class-aws-api-supportedprotocols-enumcase-rest-json.md)
+  - [REST\_XML](class-aws-api-supportedprotocols-enumcase-rest-xml.md)
+  - [QUERY](class-aws-api-supportedprotocols-enumcase-query.md)
+  - [EC2](class-aws-api-supportedprotocols-enumcase-ec2.md)
 - Methods
-  - [isSupported()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html#method_isSupported)
+  - [isSupported()](class-aws-api-supportedprotocols-method-issupported.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.SupportedProtocols.html#top)
+[Back To Top](class-aws-api-supportedprotocols-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## CloudWatchRUM
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudwatchrum.html\#toc)
+### Table of Contents  [header link](namespace-aws-cloudwatchrum-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudwatchrum.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-cloudwatchrum-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudwatchrum.exception.html)
+[Exception](namespace-aws-cloudwatchrum-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudwatchrum.html\#toc-classes)
+#### Classes  [header link](namespace-aws-cloudwatchrum-toc-classes.md)
 
-[CloudWatchRUMClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudWatchRUM.CloudWatchRUMClient.html)This client is used to interact with the **CloudWatch RUM** service.
+[CloudWatchRUMClient](class-aws-cloudwatchrum-cloudwatchrumclient.md)This client is used to interact with the **CloudWatch RUM** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudwatchrum.html#toc-classes)
+  - [Classes](namespace-aws-cloudwatchrum-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudwatchrum.html#top)
+[Back To Top](namespace-aws-cloudwatchrum-top.md)

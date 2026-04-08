@@ -18,29 +18,29 @@ record from any log files that match the provided options.
 A log record containing data about an AWS API call is yielded for each
 iteration on this object.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html\#toc)
+### Table of Contents  [header link](class-aws-cloudtrail-logrecorditerator-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-cloudtrail-logrecorditerator-toc-interfaces.md)
 
 OuterIterator
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html\#toc-methods)
+#### Methods  [header link](class-aws-cloudtrail-logrecorditerator-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html#method___construct)
-: mixed [current()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html#method_current)
-: array<string\|int, mixed>\|false Returns the current log record as an array.[forBucket()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html#method_forBucket)
-: [LogRecordIterator](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html)[forFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html#method_forFile)
-: [LogRecordIterator](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html)[forTrail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html#method_forTrail)
-: [LogRecordIterator](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html)[getInnerIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html#method_getInnerIterator)
-: mixed [key()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html#method_key)
-: mixed [next()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html#method_next)
-: mixed [rewind()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html#method_rewind)
-: mixed [valid()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html#method_valid)
+[\_\_construct()](class-aws-cloudtrail-logrecorditerator-method-construct.md)
+: mixed [current()](class-aws-cloudtrail-logrecorditerator-method-current.md)
+: array<string\|int, mixed>\|false Returns the current log record as an array.[forBucket()](class-aws-cloudtrail-logrecorditerator-method-forbucket.md)
+: [LogRecordIterator](class-aws-cloudtrail-logrecorditerator.md)[forFile()](class-aws-cloudtrail-logrecorditerator-method-forfile.md)
+: [LogRecordIterator](class-aws-cloudtrail-logrecorditerator.md)[forTrail()](class-aws-cloudtrail-logrecorditerator-method-fortrail.md)
+: [LogRecordIterator](class-aws-cloudtrail-logrecorditerator.md)[getInnerIterator()](class-aws-cloudtrail-logrecorditerator-method-getinneriterator.md)
+: mixed [key()](class-aws-cloudtrail-logrecorditerator-method-key.md)
+: mixed [next()](class-aws-cloudtrail-logrecorditerator-method-next.md)
+: mixed [rewind()](class-aws-cloudtrail-logrecorditerator-method-rewind.md)
+: mixed [valid()](class-aws-cloudtrail-logrecorditerator-method-valid.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html\#methods)
+### Methods  [header link](class-aws-cloudtrail-logrecorditerator-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-cloudtrail-logrecorditerator-method-construct.md)
 
 `
     public
@@ -52,7 +52,7 @@ $logFileReader
 : [LogFileReader](class-aws-cloudtrail-logfilereader.md)$logFileIterator
 : Iterator
 
-#### current()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html\#method_current)
+#### current()  [header link](class-aws-cloudtrail-logrecorditerator-method-current.md)
 
 Returns the current log record as an array.
 
@@ -64,7 +64,7 @@ Returns the current log record as an array.
 
 array<string\|int, mixed>\|false
 
-#### forBucket()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html\#method_forBucket)
+#### forBucket()  [header link](class-aws-cloudtrail-logrecorditerator-method-forbucket.md)
 
 `
     public
@@ -80,9 +80,9 @@ $s3Client
 
 ##### Return values
 
-[LogRecordIterator](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html)
+[LogRecordIterator](class-aws-cloudtrail-logrecorditerator.md)
 
-#### forFile()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html\#method_forFile)
+#### forFile()  [header link](class-aws-cloudtrail-logrecorditerator-method-forfile.md)
 
 `
     public
@@ -97,9 +97,9 @@ $s3Client
 
 ##### Return values
 
-[LogRecordIterator](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html)
+[LogRecordIterator](class-aws-cloudtrail-logrecorditerator.md)
 
-#### forTrail()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html\#method_forTrail)
+#### forTrail()  [header link](class-aws-cloudtrail-logrecorditerator-method-fortrail.md)
 
 `
     public
@@ -115,33 +115,33 @@ $s3Client
 
 ##### Return values
 
-[LogRecordIterator](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html)
+[LogRecordIterator](class-aws-cloudtrail-logrecorditerator.md)
 
-#### getInnerIterator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html\#method_getInnerIterator)
+#### getInnerIterator()  [header link](class-aws-cloudtrail-logrecorditerator-method-getinneriterator.md)
 
 `
     public
                     getInnerIterator() : mixed`
 
-#### key()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html\#method_key)
+#### key()  [header link](class-aws-cloudtrail-logrecorditerator-method-key.md)
 
 `
     public
                     key() : mixed`
 
-#### next()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html\#method_next)
+#### next()  [header link](class-aws-cloudtrail-logrecorditerator-method-next.md)
 
 `
     public
                     next() : mixed`
 
-#### rewind()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html\#method_rewind)
+#### rewind()  [header link](class-aws-cloudtrail-logrecorditerator-method-rewind.md)
 
 `
     public
                     rewind() : mixed`
 
-#### valid()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html\#method_valid)
+#### valid()  [header link](class-aws-cloudtrail-logrecorditerator-method-valid.md)
 
 `
     public
@@ -154,17 +154,17 @@ $s3Client
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html#toc-methods)
+  - [Methods](class-aws-cloudtrail-logrecorditerator-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html#method___construct)
-  - [current()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html#method_current)
-  - [forBucket()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html#method_forBucket)
-  - [forFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html#method_forFile)
-  - [forTrail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html#method_forTrail)
-  - [getInnerIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html#method_getInnerIterator)
-  - [key()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html#method_key)
-  - [next()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html#method_next)
-  - [rewind()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html#method_rewind)
-  - [valid()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html#method_valid)
+  - [\_\_construct()](class-aws-cloudtrail-logrecorditerator-method-construct.md)
+  - [current()](class-aws-cloudtrail-logrecorditerator-method-current.md)
+  - [forBucket()](class-aws-cloudtrail-logrecorditerator-method-forbucket.md)
+  - [forFile()](class-aws-cloudtrail-logrecorditerator-method-forfile.md)
+  - [forTrail()](class-aws-cloudtrail-logrecorditerator-method-fortrail.md)
+  - [getInnerIterator()](class-aws-cloudtrail-logrecorditerator-method-getinneriterator.md)
+  - [key()](class-aws-cloudtrail-logrecorditerator-method-key.md)
+  - [next()](class-aws-cloudtrail-logrecorditerator-method-next.md)
+  - [rewind()](class-aws-cloudtrail-logrecorditerator-method-rewind.md)
+  - [valid()](class-aws-cloudtrail-logrecorditerator-method-valid.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogRecordIterator.html#top)
+[Back To Top](class-aws-cloudtrail-logrecorditerator-top.md)

@@ -2,11 +2,11 @@ Menu
 
 ## Psr
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.html\#toc)
+### Table of Contents  [header link](namespace-psr-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.html\#namespaces)
+#### Namespaces  [header link](namespace-psr-namespaces.md)
 
-[Http](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.html)
+[Http](namespace-psr-http.md)
 
 ```
 
@@ -18,4 +18,4 @@ Menu
 
 - Table Of Contents
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.html#top)
+[Back To Top](namespace-psr-top.md)

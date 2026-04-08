@@ -4,16 +4,16 @@ Menu
 
 ## EndpointV2
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpointv2.html\#toc)
+### Table of Contents  [header link](namespace-aws-endpointv2-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpointv2.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-endpointv2-namespaces.md)
 
-[Rule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpointv2.rule.html)[Ruleset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpointv2.ruleset.html)
+[Rule](namespace-aws-endpointv2-rule.md)[Ruleset](namespace-aws-endpointv2-ruleset.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpointv2.html\#toc-classes)
+#### Classes  [header link](namespace-aws-endpointv2-toc-classes.md)
 
-[EndpointDefinitionProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.EndpointDefinitionProvider.html)Provides Endpoint-related artifacts used for endpoint resolution
-and testing.[EndpointProviderV2](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.EndpointProviderV2.html)Given a service's Ruleset and client-provided input parameters, provides
+[EndpointDefinitionProvider](class-aws-endpointv2-endpointdefinitionprovider.md)Provides Endpoint-related artifacts used for endpoint resolution
+and testing.[EndpointProviderV2](class-aws-endpointv2-endpointproviderv2.md)Given a service's Ruleset and client-provided input parameters, provides
 either an object reflecting the properties of a resolved endpoint,
 or throws an error.
 
@@ -26,6 +26,6 @@ or throws an error.
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpointv2.html#toc-classes)
+  - [Classes](namespace-aws-endpointv2-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpointv2.html#top)
+[Back To Top](namespace-aws-endpointv2-top.md)

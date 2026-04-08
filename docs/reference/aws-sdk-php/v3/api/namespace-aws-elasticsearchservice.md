@@ -4,15 +4,15 @@ Menu
 
 ## ElasticsearchService
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticsearchservice.html\#toc)
+### Table of Contents  [header link](namespace-aws-elasticsearchservice-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticsearchservice.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-elasticsearchservice-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticsearchservice.exception.html)
+[Exception](namespace-aws-elasticsearchservice-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticsearchservice.html\#toc-classes)
+#### Classes  [header link](namespace-aws-elasticsearchservice-toc-classes.md)
 
-[ElasticsearchServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElasticsearchService.ElasticsearchServiceClient.html)This client is used to interact with the **Amazon Elasticsearch Service** service.
+[ElasticsearchServiceClient](class-aws-elasticsearchservice-elasticsearchserviceclient.md)This client is used to interact with the **Amazon Elasticsearch Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticsearchservice.html#toc-classes)
+  - [Classes](namespace-aws-elasticsearchservice-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticsearchservice.html#top)
+[Back To Top](namespace-aws-elasticsearchservice-top.md)

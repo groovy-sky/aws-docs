@@ -1,13 +1,13 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Psr7](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.psr7.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Psr7](namespace-guzzlehttp-psr7.md)
 
 ## Uri        in package    - [Aws](package-aws.md)       implements  [UriInterface](class-psr-http-message-uriinterface.md), JsonSerializable
 
 PSR-7 URI implementation.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-uri-tags.md)
 
 author
 
@@ -21,48 +21,48 @@ author
 
 Matthew Weier O'Phinney
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-psr7-uri-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#toc-interfaces)
+#### Interfaces  [header link](class-guzzlehttp-psr7-uri-toc-interfaces.md)
 
 [UriInterface](class-psr-http-message-uriinterface.md)Value object representing a URI.JsonSerializable
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-psr7-uri-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method___construct)
-: mixed [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method___toString)
-: string Return the string representation as a URI reference.[composeComponents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_composeComponents)
-: string Composes a URI reference string from its various components.[fromParts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_fromParts)
-: [UriInterface](class-psr-http-message-uriinterface.md)Creates a URI from a hash of \`parse\_url\` components.[getAuthority()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_getAuthority)
-: string Retrieve the authority component of the URI.[getFragment()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_getFragment)
-: string Retrieve the fragment component of the URI.[getHost()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_getHost)
-: string Retrieve the host component of the URI.[getPath()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_getPath)
-: string Retrieve the path component of the URI.[getPort()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_getPort)
-: null\|int Retrieve the port component of the URI.[getQuery()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_getQuery)
-: string Retrieve the query string of the URI.[getScheme()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_getScheme)
-: string Retrieve the scheme component of the URI.[getUserInfo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_getUserInfo)
-: string Retrieve the user information component of the URI.[isAbsolute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_isAbsolute)
-: bool Whether the URI is absolute, i.e. it has a scheme.[isAbsolutePathReference()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_isAbsolutePathReference)
-: bool Whether the URI is a absolute-path reference.[isDefaultPort()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_isDefaultPort)
-: bool Whether the URI has the default port of the current scheme.[isNetworkPathReference()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_isNetworkPathReference)
-: bool Whether the URI is a network-path reference.[isRelativePathReference()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_isRelativePathReference)
-: bool Whether the URI is a relative-path reference.[isSameDocumentReference()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_isSameDocumentReference)
-: bool Whether the URI is a same-document reference.[jsonSerialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_jsonSerialize)
-: string [withFragment()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_withFragment)
-: static Return an instance with the specified URI fragment.[withHost()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_withHost)
-: static Return an instance with the specified host.[withoutQueryValue()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_withoutQueryValue)
-: [UriInterface](class-psr-http-message-uriinterface.md)Creates a new URI with a specific query string value removed.[withPath()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_withPath)
-: static Return an instance with the specified path.[withPort()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_withPort)
-: static Return an instance with the specified port.[withQuery()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_withQuery)
-: static Return an instance with the specified query string.[withQueryValue()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_withQueryValue)
-: [UriInterface](class-psr-http-message-uriinterface.md)Creates a new URI with a specific query string value.[withQueryValues()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_withQueryValues)
-: [UriInterface](class-psr-http-message-uriinterface.md)Creates a new URI with multiple specific query string values.[withScheme()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_withScheme)
-: static Return an instance with the specified scheme.[withUserInfo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_withUserInfo)
+[\_\_construct()](class-guzzlehttp-psr7-uri-method-construct.md)
+: mixed [\_\_toString()](class-guzzlehttp-psr7-uri-method-tostring.md)
+: string Return the string representation as a URI reference.[composeComponents()](class-guzzlehttp-psr7-uri-method-composecomponents.md)
+: string Composes a URI reference string from its various components.[fromParts()](class-guzzlehttp-psr7-uri-method-fromparts.md)
+: [UriInterface](class-psr-http-message-uriinterface.md)Creates a URI from a hash of \`parse\_url\` components.[getAuthority()](class-guzzlehttp-psr7-uri-method-getauthority.md)
+: string Retrieve the authority component of the URI.[getFragment()](class-guzzlehttp-psr7-uri-method-getfragment.md)
+: string Retrieve the fragment component of the URI.[getHost()](class-guzzlehttp-psr7-uri-method-gethost.md)
+: string Retrieve the host component of the URI.[getPath()](class-guzzlehttp-psr7-uri-method-getpath.md)
+: string Retrieve the path component of the URI.[getPort()](class-guzzlehttp-psr7-uri-method-getport.md)
+: null\|int Retrieve the port component of the URI.[getQuery()](class-guzzlehttp-psr7-uri-method-getquery.md)
+: string Retrieve the query string of the URI.[getScheme()](class-guzzlehttp-psr7-uri-method-getscheme.md)
+: string Retrieve the scheme component of the URI.[getUserInfo()](class-guzzlehttp-psr7-uri-method-getuserinfo.md)
+: string Retrieve the user information component of the URI.[isAbsolute()](class-guzzlehttp-psr7-uri-method-isabsolute.md)
+: bool Whether the URI is absolute, i.e. it has a scheme.[isAbsolutePathReference()](class-guzzlehttp-psr7-uri-method-isabsolutepathreference.md)
+: bool Whether the URI is a absolute-path reference.[isDefaultPort()](class-guzzlehttp-psr7-uri-method-isdefaultport.md)
+: bool Whether the URI has the default port of the current scheme.[isNetworkPathReference()](class-guzzlehttp-psr7-uri-method-isnetworkpathreference.md)
+: bool Whether the URI is a network-path reference.[isRelativePathReference()](class-guzzlehttp-psr7-uri-method-isrelativepathreference.md)
+: bool Whether the URI is a relative-path reference.[isSameDocumentReference()](class-guzzlehttp-psr7-uri-method-issamedocumentreference.md)
+: bool Whether the URI is a same-document reference.[jsonSerialize()](class-guzzlehttp-psr7-uri-method-jsonserialize.md)
+: string [withFragment()](class-guzzlehttp-psr7-uri-method-withfragment.md)
+: static Return an instance with the specified URI fragment.[withHost()](class-guzzlehttp-psr7-uri-method-withhost.md)
+: static Return an instance with the specified host.[withoutQueryValue()](class-guzzlehttp-psr7-uri-method-withoutqueryvalue.md)
+: [UriInterface](class-psr-http-message-uriinterface.md)Creates a new URI with a specific query string value removed.[withPath()](class-guzzlehttp-psr7-uri-method-withpath.md)
+: static Return an instance with the specified path.[withPort()](class-guzzlehttp-psr7-uri-method-withport.md)
+: static Return an instance with the specified port.[withQuery()](class-guzzlehttp-psr7-uri-method-withquery.md)
+: static Return an instance with the specified query string.[withQueryValue()](class-guzzlehttp-psr7-uri-method-withqueryvalue.md)
+: [UriInterface](class-psr-http-message-uriinterface.md)Creates a new URI with a specific query string value.[withQueryValues()](class-guzzlehttp-psr7-uri-method-withqueryvalues.md)
+: [UriInterface](class-psr-http-message-uriinterface.md)Creates a new URI with multiple specific query string values.[withScheme()](class-guzzlehttp-psr7-uri-method-withscheme.md)
+: static Return an instance with the specified scheme.[withUserInfo()](class-guzzlehttp-psr7-uri-method-withuserinfo.md)
 : static Return an instance with the specified user information.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#methods)
+### Methods  [header link](class-guzzlehttp-psr7-uri-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method___construct)
+#### \_\_construct()  [header link](class-guzzlehttp-psr7-uri-method-construct.md)
 
 `
     public
@@ -74,7 +74,7 @@ $uri
 : string
 = ''
 
-#### \_\_toString()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method___toString)
+#### \_\_toString()  [header link](class-guzzlehttp-psr7-uri-method-tostring.md)
 
 Return the string representation as a URI reference.
 
@@ -103,7 +103,7 @@ valid as PHP does not allow to throw an exception in \_\_toString():
 
 string
 
-#### composeComponents()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_composeComponents)
+#### composeComponents()  [header link](class-guzzlehttp-psr7-uri-method-composecomponents.md)
 
 Composes a URI reference string from its various components.
 
@@ -133,7 +133,7 @@ $scheme
 : string\|null$fragment
 : string\|null
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_composeComponents\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-uri-method-composecomponents-tags.md)
 
 see[https://datatracker.ietf.org/doc/html/rfc3986#section-5.3](https://datatracker.ietf.org/doc/html/rfc3986)
 
@@ -141,7 +141,7 @@ see[https://datatracker.ietf.org/doc/html/rfc3986#section-5.3](https://datatrack
 
 string
 
-#### fromParts()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_fromParts)
+#### fromParts()  [header link](class-guzzlehttp-psr7-uri-method-fromparts.md)
 
 Creates a URI from a hash of \`parse\_url\` components.
 
@@ -154,7 +154,7 @@ Creates a URI from a hash of \`parse\_url\` components.
 $parts
 : array<string\|int, mixed>
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_fromParts\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-uri-method-fromparts-tags.md)
 
 see[https://www.php.net/manual/en/function.parse-url.php](https://www.php.net/manual/en/function.parse-url.php)throws[MalformedUriException](class-guzzlehttp-psr7-exception-malformeduriexception.md)
 
@@ -164,7 +164,7 @@ If the components do not form a valid URI.
 
 [UriInterface](class-psr-http-message-uriinterface.md)
 
-#### getAuthority()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_getAuthority)
+#### getAuthority()  [header link](class-guzzlehttp-psr7-uri-method-getauthority.md)
 
 Retrieve the authority component of the URI.
 
@@ -192,7 +192,7 @@ string
 
 The URI authority, in "\[user-info@\]host\[:port\]" format.
 
-#### getFragment()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_getFragment)
+#### getFragment()  [header link](class-guzzlehttp-psr7-uri-method-getfragment.md)
 
 Retrieve the fragment component of the URI.
 
@@ -216,7 +216,7 @@ string
 
 The URI fragment.
 
-#### getHost()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_getHost)
+#### getHost()  [header link](class-guzzlehttp-psr7-uri-method-gethost.md)
 
 Retrieve the host component of the URI.
 
@@ -236,7 +236,7 @@ string
 
 The URI host.
 
-#### getPath()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_getPath)
+#### getPath()  [header link](class-guzzlehttp-psr7-uri-method-getpath.md)
 
 Retrieve the path component of the URI.
 
@@ -269,7 +269,7 @@ string
 
 The URI path.
 
-#### getPort()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_getPort)
+#### getPort()  [header link](class-guzzlehttp-psr7-uri-method-getport.md)
 
 Retrieve the port component of the URI.
 
@@ -294,7 +294,7 @@ null\|int
 
 The URI port.
 
-#### getQuery()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_getQuery)
+#### getQuery()  [header link](class-guzzlehttp-psr7-uri-method-getquery.md)
 
 Retrieve the query string of the URI.
 
@@ -322,7 +322,7 @@ string
 
 The URI query string.
 
-#### getScheme()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_getScheme)
+#### getScheme()  [header link](class-guzzlehttp-psr7-uri-method-getscheme.md)
 
 Retrieve the scheme component of the URI.
 
@@ -345,7 +345,7 @@ string
 
 The URI scheme.
 
-#### getUserInfo()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_getUserInfo)
+#### getUserInfo()  [header link](class-guzzlehttp-psr7-uri-method-getuserinfo.md)
 
 Retrieve the user information component of the URI.
 
@@ -370,7 +370,7 @@ string
 
 The URI user information, in "username\[:password\]" format.
 
-#### isAbsolute()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_isAbsolute)
+#### isAbsolute()  [header link](class-guzzlehttp-psr7-uri-method-isabsolute.md)
 
 Whether the URI is absolute, i.e. it has a scheme.
 
@@ -391,7 +391,7 @@ to another URI, the base URI. Relative references can be divided into several fo
 $uri
 : [UriInterface](class-psr-http-message-uriinterface.md)
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_isAbsolute\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-uri-method-isabsolute-tags.md)
 
 seeUri::isNetworkPathReferenceseeUri::isAbsolutePathReferenceseeUri::isRelativePathReferencesee[https://datatracker.ietf.org/doc/html/rfc3986#section-4](https://datatracker.ietf.org/doc/html/rfc3986)
 
@@ -399,7 +399,7 @@ seeUri::isNetworkPathReferenceseeUri::isAbsolutePathReferenceseeUri::isRelativeP
 
 bool
 
-#### isAbsolutePathReference()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_isAbsolutePathReference)
+#### isAbsolutePathReference()  [header link](class-guzzlehttp-psr7-uri-method-isabsolutepathreference.md)
 
 Whether the URI is a absolute-path reference.
 
@@ -414,7 +414,7 @@ A relative reference that begins with a single slash character is termed an abso
 $uri
 : [UriInterface](class-psr-http-message-uriinterface.md)
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_isAbsolutePathReference\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-uri-method-isabsolutepathreference-tags.md)
 
 see[https://datatracker.ietf.org/doc/html/rfc3986#section-4.2](https://datatracker.ietf.org/doc/html/rfc3986)
 
@@ -422,7 +422,7 @@ see[https://datatracker.ietf.org/doc/html/rfc3986#section-4.2](https://datatrack
 
 bool
 
-#### isDefaultPort()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_isDefaultPort)
+#### isDefaultPort()  [header link](class-guzzlehttp-psr7-uri-method-isdefaultport.md)
 
 Whether the URI has the default port of the current scheme.
 
@@ -442,7 +442,7 @@ $uri
 
 bool
 
-#### isNetworkPathReference()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_isNetworkPathReference)
+#### isNetworkPathReference()  [header link](class-guzzlehttp-psr7-uri-method-isnetworkpathreference.md)
 
 Whether the URI is a network-path reference.
 
@@ -457,7 +457,7 @@ A relative reference that begins with two slash characters is termed an network-
 $uri
 : [UriInterface](class-psr-http-message-uriinterface.md)
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_isNetworkPathReference\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-uri-method-isnetworkpathreference-tags.md)
 
 see[https://datatracker.ietf.org/doc/html/rfc3986#section-4.2](https://datatracker.ietf.org/doc/html/rfc3986)
 
@@ -465,7 +465,7 @@ see[https://datatracker.ietf.org/doc/html/rfc3986#section-4.2](https://datatrack
 
 bool
 
-#### isRelativePathReference()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_isRelativePathReference)
+#### isRelativePathReference()  [header link](class-guzzlehttp-psr7-uri-method-isrelativepathreference.md)
 
 Whether the URI is a relative-path reference.
 
@@ -480,7 +480,7 @@ A relative reference that does not begin with a slash character is termed a rela
 $uri
 : [UriInterface](class-psr-http-message-uriinterface.md)
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_isRelativePathReference\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-uri-method-isrelativepathreference-tags.md)
 
 see[https://datatracker.ietf.org/doc/html/rfc3986#section-4.2](https://datatracker.ietf.org/doc/html/rfc3986)
 
@@ -488,7 +488,7 @@ see[https://datatracker.ietf.org/doc/html/rfc3986#section-4.2](https://datatrack
 
 bool
 
-#### isSameDocumentReference()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_isSameDocumentReference)
+#### isSameDocumentReference()  [header link](class-guzzlehttp-psr7-uri-method-issamedocumentreference.md)
 
 Whether the URI is a same-document reference.
 
@@ -513,7 +513,7 @@ $base
 
 An optional base URI to compare against
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_isSameDocumentReference\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-uri-method-issamedocumentreference-tags.md)
 
 see[https://datatracker.ietf.org/doc/html/rfc3986#section-4.4](https://datatracker.ietf.org/doc/html/rfc3986)
 
@@ -521,7 +521,7 @@ see[https://datatracker.ietf.org/doc/html/rfc3986#section-4.4](https://datatrack
 
 bool
 
-#### jsonSerialize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_jsonSerialize)
+#### jsonSerialize()  [header link](class-guzzlehttp-psr7-uri-method-jsonserialize.md)
 
 `
     public
@@ -531,7 +531,7 @@ bool
 
 string
 
-#### withFragment()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_withFragment)
+#### withFragment()  [header link](class-guzzlehttp-psr7-uri-method-withfragment.md)
 
 Return an instance with the specified URI fragment.
 
@@ -561,7 +561,7 @@ static
 
 A new instance with the specified fragment.
 
-#### withHost()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_withHost)
+#### withHost()  [header link](class-guzzlehttp-psr7-uri-method-withhost.md)
 
 Return an instance with the specified host.
 
@@ -588,7 +588,7 @@ static
 
 A new instance with the specified host.
 
-#### withoutQueryValue()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_withoutQueryValue)
+#### withoutQueryValue()  [header link](class-guzzlehttp-psr7-uri-method-withoutqueryvalue.md)
 
 Creates a new URI with a specific query string value removed.
 
@@ -615,7 +615,7 @@ Query string key to remove.
 
 [UriInterface](class-psr-http-message-uriinterface.md)
 
-#### withPath()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_withPath)
+#### withPath()  [header link](class-guzzlehttp-psr7-uri-method-withpath.md)
 
 Return an instance with the specified path.
 
@@ -652,7 +652,7 @@ static
 
 A new instance with the specified path.
 
-#### withPort()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_withPort)
+#### withPort()  [header link](class-guzzlehttp-psr7-uri-method-withport.md)
 
 Return an instance with the specified port.
 
@@ -684,7 +684,7 @@ static
 
 A new instance with the specified port.
 
-#### withQuery()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_withQuery)
+#### withQuery()  [header link](class-guzzlehttp-psr7-uri-method-withquery.md)
 
 Return an instance with the specified query string.
 
@@ -714,7 +714,7 @@ static
 
 A new instance with the specified query string.
 
-#### withQueryValue()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_withQueryValue)
+#### withQueryValue()  [header link](class-guzzlehttp-psr7-uri-method-withqueryvalue.md)
 
 Creates a new URI with a specific query string value.
 
@@ -749,7 +749,7 @@ Value to set
 
 [UriInterface](class-psr-http-message-uriinterface.md)
 
-#### withQueryValues()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_withQueryValues)
+#### withQueryValues()  [header link](class-guzzlehttp-psr7-uri-method-withqueryvalues.md)
 
 Creates a new URI with multiple specific query string values.
 
@@ -775,7 +775,7 @@ Associative array of key and values
 
 [UriInterface](class-psr-http-message-uriinterface.md)
 
-#### withScheme()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_withScheme)
+#### withScheme()  [header link](class-guzzlehttp-psr7-uri-method-withscheme.md)
 
 Return an instance with the specified scheme.
 
@@ -805,7 +805,7 @@ static
 
 A new instance with the specified scheme.
 
-#### withUserInfo()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html\#method_withUserInfo)
+#### withUserInfo()  [header link](class-guzzlehttp-psr7-uri-method-withuserinfo.md)
 
 Return an instance with the specified user information.
 
@@ -847,36 +847,36 @@ A new instance with the specified user information.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#toc-methods)
+  - [Methods](class-guzzlehttp-psr7-uri-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method___construct)
-  - [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method___toString)
-  - [composeComponents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_composeComponents)
-  - [fromParts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_fromParts)
-  - [getAuthority()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_getAuthority)
-  - [getFragment()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_getFragment)
-  - [getHost()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_getHost)
-  - [getPath()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_getPath)
-  - [getPort()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_getPort)
-  - [getQuery()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_getQuery)
-  - [getScheme()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_getScheme)
-  - [getUserInfo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_getUserInfo)
-  - [isAbsolute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_isAbsolute)
-  - [isAbsolutePathReference()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_isAbsolutePathReference)
-  - [isDefaultPort()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_isDefaultPort)
-  - [isNetworkPathReference()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_isNetworkPathReference)
-  - [isRelativePathReference()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_isRelativePathReference)
-  - [isSameDocumentReference()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_isSameDocumentReference)
-  - [jsonSerialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_jsonSerialize)
-  - [withFragment()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_withFragment)
-  - [withHost()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_withHost)
-  - [withoutQueryValue()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_withoutQueryValue)
-  - [withPath()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_withPath)
-  - [withPort()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_withPort)
-  - [withQuery()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_withQuery)
-  - [withQueryValue()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_withQueryValue)
-  - [withQueryValues()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_withQueryValues)
-  - [withScheme()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_withScheme)
-  - [withUserInfo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#method_withUserInfo)
+  - [\_\_construct()](class-guzzlehttp-psr7-uri-method-construct.md)
+  - [\_\_toString()](class-guzzlehttp-psr7-uri-method-tostring.md)
+  - [composeComponents()](class-guzzlehttp-psr7-uri-method-composecomponents.md)
+  - [fromParts()](class-guzzlehttp-psr7-uri-method-fromparts.md)
+  - [getAuthority()](class-guzzlehttp-psr7-uri-method-getauthority.md)
+  - [getFragment()](class-guzzlehttp-psr7-uri-method-getfragment.md)
+  - [getHost()](class-guzzlehttp-psr7-uri-method-gethost.md)
+  - [getPath()](class-guzzlehttp-psr7-uri-method-getpath.md)
+  - [getPort()](class-guzzlehttp-psr7-uri-method-getport.md)
+  - [getQuery()](class-guzzlehttp-psr7-uri-method-getquery.md)
+  - [getScheme()](class-guzzlehttp-psr7-uri-method-getscheme.md)
+  - [getUserInfo()](class-guzzlehttp-psr7-uri-method-getuserinfo.md)
+  - [isAbsolute()](class-guzzlehttp-psr7-uri-method-isabsolute.md)
+  - [isAbsolutePathReference()](class-guzzlehttp-psr7-uri-method-isabsolutepathreference.md)
+  - [isDefaultPort()](class-guzzlehttp-psr7-uri-method-isdefaultport.md)
+  - [isNetworkPathReference()](class-guzzlehttp-psr7-uri-method-isnetworkpathreference.md)
+  - [isRelativePathReference()](class-guzzlehttp-psr7-uri-method-isrelativepathreference.md)
+  - [isSameDocumentReference()](class-guzzlehttp-psr7-uri-method-issamedocumentreference.md)
+  - [jsonSerialize()](class-guzzlehttp-psr7-uri-method-jsonserialize.md)
+  - [withFragment()](class-guzzlehttp-psr7-uri-method-withfragment.md)
+  - [withHost()](class-guzzlehttp-psr7-uri-method-withhost.md)
+  - [withoutQueryValue()](class-guzzlehttp-psr7-uri-method-withoutqueryvalue.md)
+  - [withPath()](class-guzzlehttp-psr7-uri-method-withpath.md)
+  - [withPort()](class-guzzlehttp-psr7-uri-method-withport.md)
+  - [withQuery()](class-guzzlehttp-psr7-uri-method-withquery.md)
+  - [withQueryValue()](class-guzzlehttp-psr7-uri-method-withqueryvalue.md)
+  - [withQueryValues()](class-guzzlehttp-psr7-uri-method-withqueryvalues.md)
+  - [withScheme()](class-guzzlehttp-psr7-uri-method-withscheme.md)
+  - [withUserInfo()](class-guzzlehttp-psr7-uri-method-withuserinfo.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Uri.html#top)
+[Back To Top](class-guzzlehttp-psr7-uri-top.md)

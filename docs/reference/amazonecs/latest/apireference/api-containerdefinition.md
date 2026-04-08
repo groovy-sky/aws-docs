@@ -109,8 +109,8 @@ isn't joined to the domain for domainless authentication. Other applications on 
 instance can't use the domainless credentials. You can use this parameter to run tasks
 on the same instance, even it the tasks need to join different domains. For more
 information, see [Using gMSAs for Windows\
-Containers](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/windows-gmsa.html) and [Using gMSAs for Linux\
-Containers](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/linux-gmsa.html).
+Containers](../../../../services/amazonecs/latest/developerguide/windows-gmsa.md) and [Using gMSAs for Linux\
+Containers](../../../../services/amazonecs/latest/developerguide/linux-gmsa.md).
 
 Type: Array of strings
 
@@ -210,8 +210,8 @@ SELinux and AppArmor multi-level security systems.
 
 For any tasks on EC2, this parameter can be used to reference a credential spec file
 that configures a container for Active Directory authentication. For more information,
-see [Using gMSAs for Windows Containers](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/windows-gmsa.html) and [Using gMSAs for Linux\
-Containers](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/linux-gmsa.html) in the _Amazon Elastic Container Service Developer_
+see [Using gMSAs for Windows Containers](../../../../services/amazonecs/latest/developerguide/windows-gmsa.md) and [Using gMSAs for Linux\
+Containers](../../../../services/amazonecs/latest/developerguide/linux-gmsa.md) in the _Amazon Elastic Container Service Developer_
 _Guide_.
 
 This parameter maps to `SecurityOpt` in the docker container create command
@@ -261,7 +261,7 @@ option to docker run.
 We don't recommend that you use plaintext environment variables for sensitive
 information, such as credential data.
 
-Type: Array of [KeyValuePair](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_KeyValuePair.html) objects
+Type: Array of [KeyValuePair](api-keyvaluepair.md) objects
 
 Required: No
 
@@ -283,7 +283,7 @@ variable names. For more information, see [Specifying Environment\
 Variables](../../../../services/amazonecs/latest/developerguide/taskdef-envfiles.md) in the _Amazon Elastic Container Service Developer_
 _Guide_.
 
-Type: Array of [EnvironmentFile](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_EnvironmentFile.html) objects
+Type: Array of [EnvironmentFile](api-environmentfile.md) objects
 
 Required: No
 
@@ -299,7 +299,7 @@ All tasks must have at least one essential container. If you have an application
 that's composed of multiple containers, group containers that are used for a common
 purpose into components, and separate the different components into multiple task
 definitions. For more information, see [Application\
-Architecture](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/application_architecture.html) in the _Amazon Elastic Container Service Developer_
+Architecture](../../../../services/amazonecs/latest/developerguide/application-architecture.md) in the _Amazon Elastic Container Service Developer_
 _Guide_.
 
 Type: Boolean
@@ -317,17 +317,17 @@ container create command and the `--add-host` option to docker run.
 This parameter isn't supported for Windows containers or tasks that use the
 `awsvpc` network mode.
 
-Type: Array of [HostEntry](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_HostEntry.html) objects
+Type: Array of [HostEntry](api-hostentry.md) objects
 
 Required: No
 
 **firelensConfiguration**
 
 The FireLens configuration for the container. This is used to specify and configure a
-log router for container logs. For more information, see [Custom Log Routing](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using_firelens.html)
+log router for container logs. For more information, see [Custom Log Routing](../../../../services/amazonecs/latest/developerguide/using-firelens.md)
 in the _Amazon Elastic Container Service Developer Guide_.
 
-Type: [FirelensConfiguration](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_FirelensConfiguration.html) object
+Type: [FirelensConfiguration](api-firelensconfiguration.md) object
 
 Required: No
 
@@ -337,7 +337,7 @@ The container health check command and associated configuration parameters for t
 container. This parameter maps to `HealthCheck` in the docker container
 create command and the `HEALTHCHECK` parameter of docker run.
 
-Type: [HealthCheck](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_HealthCheck.html) object
+Type: [HealthCheck](api-healthcheck.md) object
 
 Required: No
 
@@ -438,13 +438,13 @@ Required: No
 **linuxParameters**
 
 Linux-specific modifications that are applied to the default Docker container
-configuration, such as Linux kernel capabilities. For more information see [KernelCapabilities](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_KernelCapabilities.html).
+configuration, such as Linux kernel capabilities. For more information see [KernelCapabilities](api-kernelcapabilities.md).
 
 ###### Note
 
 This parameter is not supported for Windows containers.
 
-Type: [LinuxParameters](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_LinuxParameters.html) object
+Type: [LinuxParameters](api-linuxparameters.md) object
 
 Required: No
 
@@ -560,7 +560,7 @@ Windows containers can mount whole directories on the same drive as
 `$env:ProgramData`. Windows containers can't mount directories on a
 different drive, and mount point can't be across drives.
 
-Type: Array of [MountPoint](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_MountPoint.html) objects
+Type: Array of [MountPoint](api-mountpoint.md) objects
 
 Required: No
 
@@ -602,10 +602,10 @@ After a task reaches the `RUNNING` status, manual and automatic host
 and container port assignments are visible in the **Network**
 **Bindings** section of a container description for a selected task in
 the Amazon ECS console. The assignments are also visible in the
-`networkBindings` section [DescribeTasks](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeTasks.html)
+`networkBindings` section [DescribeTasks](api-describetasks.md)
 responses.
 
-Type: Array of [PortMapping](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_PortMapping.html) objects
+Type: Array of [PortMapping](api-portmapping.md) objects
 
 Required: No
 
@@ -652,7 +652,7 @@ Required: No
 
 The private repository authentication credentials to use.
 
-Type: [RepositoryCredentials](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RepositoryCredentials.html) object
+Type: [RepositoryCredentials](api-repositorycredentials.md) object
 
 Required: No
 
@@ -661,7 +661,7 @@ Required: No
 The type and amount of a resource to assign to a container. The only supported
 resource is a GPU.
 
-Type: Array of [ResourceRequirement](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ResourceRequirement.html) objects
+Type: Array of [ResourceRequirement](api-resourcerequirement.md) objects
 
 Required: No
 
@@ -670,10 +670,10 @@ Required: No
 The restart policy for a container. When you set up a restart policy, Amazon ECS can
 restart the container without needing to replace the task. For more information, see
 [Restart\
-individual containers in Amazon ECS tasks with container restart policies](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/container-restart-policy.html) in
+individual containers in Amazon ECS tasks with container restart policies](../../../../services/amazonecs/latest/developerguide/container-restart-policy.md) in
 the _Amazon Elastic Container Service Developer Guide_.
 
-Type: [ContainerRestartPolicy](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerRestartPolicy.html) object
+Type: [ContainerRestartPolicy](api-containerrestartpolicy.md) object
 
 Required: No
 
@@ -683,7 +683,7 @@ The secrets to pass to the container. For more information, see [Specifying\
 Sensitive Data](../../../../services/amazonecs/latest/developerguide/specifying-sensitive-data.md) in the _Amazon Elastic Container Service Developer_
 _Guide_.
 
-Type: Array of [Secret](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Secret.html) objects
+Type: Array of [Secret](api-secret.md) objects
 
 Required: No
 
@@ -771,7 +771,7 @@ A list of namespaced kernel parameters to set in the container. This parameter m
 `net.ipv4.tcp_keepalive_time` setting to maintain longer lived
 connections.
 
-Type: Array of [SystemControl](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_SystemControl.html) objects
+Type: Array of [SystemControl](api-systemcontrol.md) objects
 
 Required: No
 
@@ -781,7 +781,7 @@ A list of `ulimits` to set in the container. If a `ulimit` value
 is specified in a task definition, it overrides the default values set by Docker. This
 parameter maps to `Ulimits` in the docker container create command and the
 `--ulimit` option to docker run. Valid naming values are displayed in the
-[Ulimit](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Ulimit.html) data type.
+[Ulimit](api-ulimit.md) data type.
 
 Amazon ECS tasks hosted on AWS Fargate use the default resource limit values
 set by the operating system with the exception of the `nofile` resource limit
@@ -799,7 +799,7 @@ log in to your container instance and run the following command: `sudo docker
 
 This parameter is not supported for Windows containers.
 
-Type: Array of [Ulimit](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Ulimit.html) objects
+Type: Array of [Ulimit](api-ulimit.md) objects
 
 Required: No
 
@@ -844,7 +844,7 @@ container definition to an image digest. By default, the value is `enabled`.
 If you set the value for a container as `disabled`, Amazon ECS will not
 resolve the provided container image tag to a digest and will use the original image URI
 specified in the container definition for deployment. For more information about
-container image resolution, see [Container image resolution](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-ecs.html#deployment-container-image-stability) in the _Amazon ECS Developer_
+container image resolution, see [Container image resolution](../../../../services/amazonecs/latest/developerguide/deployment-type-ecs-deployment-container-image-stability.md) in the _Amazon ECS Developer_
 _Guide_.
 
 Type: String
@@ -859,7 +859,7 @@ Data volumes to mount from another container. This parameter maps to
 `VolumesFrom` in the docker container create command and the
 `--volumes-from` option to docker run.
 
-Type: Array of [VolumeFrom](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_VolumeFrom.html) objects
+Type: Array of [VolumeFrom](api-volumefrom.md) objects
 
 Required: No
 
@@ -877,13 +877,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/ContainerDefinition)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/containerdefinition.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/ContainerDefinition)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/containerdefinition.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/ContainerDefinition)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/containerdefinition.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Container
 

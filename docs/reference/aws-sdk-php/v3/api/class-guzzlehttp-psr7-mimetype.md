@@ -1,23 +1,23 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Psr7](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.psr7.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Psr7](namespace-guzzlehttp-psr7.md)
 
 ## MimeType        in package    - [Aws](package-aws.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MimeType.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-psr7-mimetype-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MimeType.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-psr7-mimetype-toc-methods.md)
 
-[fromExtension()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MimeType.html#method_fromExtension)
-: string\|null Maps a file extensions to a mimetype.[fromFilename()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MimeType.html#method_fromFilename)
+[fromExtension()](class-guzzlehttp-psr7-mimetype-method-fromextension.md)
+: string\|null Maps a file extensions to a mimetype.[fromFilename()](class-guzzlehttp-psr7-mimetype-method-fromfilename.md)
 : string\|null Determines the mimetype of a file by looking at its extension.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MimeType.html\#methods)
+### Methods  [header link](class-guzzlehttp-psr7-mimetype-methods.md)
 
-#### fromExtension()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MimeType.html\#method_fromExtension)
+#### fromExtension()  [header link](class-guzzlehttp-psr7-mimetype-method-fromextension.md)
 
 Maps a file extensions to a mimetype.
 
@@ -30,7 +30,7 @@ Maps a file extensions to a mimetype.
 $extension
 : string
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MimeType.html\#method_fromExtension\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-mimetype-method-fromextension-tags.md)
 
 see[https://raw.githubusercontent.com/jshttp/mime-db/master/db.json](https://raw.githubusercontent.com/jshttp/mime-db/master/db.json)
 
@@ -38,7 +38,7 @@ see[https://raw.githubusercontent.com/jshttp/mime-db/master/db.json](https://raw
 
 string\|null
 
-#### fromFilename()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MimeType.html\#method_fromFilename)
+#### fromFilename()  [header link](class-guzzlehttp-psr7-mimetype-method-fromfilename.md)
 
 Determines the mimetype of a file by looking at its extension.
 
@@ -51,7 +51,7 @@ Determines the mimetype of a file by looking at its extension.
 $filename
 : string
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MimeType.html\#method_fromFilename\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-mimetype-method-fromfilename-tags.md)
 
 see[https://raw.githubusercontent.com/jshttp/mime-db/master/db.json](https://raw.githubusercontent.com/jshttp/mime-db/master/db.json)
 
@@ -65,9 +65,9 @@ string\|null
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MimeType.html#toc-methods)
+  - [Methods](class-guzzlehttp-psr7-mimetype-toc-methods.md)
 - Methods
-  - [fromExtension()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MimeType.html#method_fromExtension)
-  - [fromFilename()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MimeType.html#method_fromFilename)
+  - [fromExtension()](class-guzzlehttp-psr7-mimetype-method-fromextension.md)
+  - [fromFilename()](class-guzzlehttp-psr7-mimetype-method-fromfilename.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MimeType.html#top)
+[Back To Top](class-guzzlehttp-psr7-mimetype-top.md)

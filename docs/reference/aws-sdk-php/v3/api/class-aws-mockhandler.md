@@ -7,29 +7,29 @@ Menu
 Returns promises that are rejected or fulfilled using a queue of
 Aws\\ResultInterface and Aws\\Exception\\AwsException objects.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html\#toc)
+### Table of Contents  [header link](class-aws-mockhandler-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-mockhandler-toc-interfaces.md)
 
 Countable
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html\#toc-methods)
+#### Methods  [header link](class-aws-mockhandler-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html#method___construct)
+[\_\_construct()](class-aws-mockhandler-method-construct.md)
 : mixed The passed in value must be an array of {@see Aws\\ResultInterface} or
 {@see AwsException} objects that acts as a queue of results or
-exceptions to return each time the handler is invoked.[\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html#method___invoke)
-: mixed [append()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html#method_append)
+exceptions to return each time the handler is invoked.[\_\_invoke()](class-aws-mockhandler-method-invoke.md)
+: mixed [append()](class-aws-mockhandler-method-append.md)
 : mixed Adds one or more variadic ResultInterface or AwsException objects to the
-queue.[appendException()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html#method_appendException)
-: mixed Adds one or more \\Exception or \\Throwable to the queue[count()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html#method_count)
-: int Returns the number of remaining items in the queue.[getLastCommand()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html#method_getLastCommand)
-: [CommandInterface](class-aws-commandinterface.md)Get the last received command.[getLastRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html#method_getLastRequest)
+queue.[appendException()](class-aws-mockhandler-method-appendexception.md)
+: mixed Adds one or more \\Exception or \\Throwable to the queue[count()](class-aws-mockhandler-method-count.md)
+: int Returns the number of remaining items in the queue.[getLastCommand()](class-aws-mockhandler-method-getlastcommand.md)
+: [CommandInterface](class-aws-commandinterface.md)Get the last received command.[getLastRequest()](class-aws-mockhandler-method-getlastrequest.md)
 : [RequestInterface](class-psr-http-message-requestinterface.md) \|null Get the last received request.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html\#methods)
+### Methods  [header link](class-aws-mockhandler-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-mockhandler-method-construct.md)
 
 The passed in value must be an array of {@see Aws\\ResultInterface} or
 {@see AwsException} objects that acts as a queue of results or
@@ -55,7 +55,7 @@ $onRejected
 
 Callback to invoke when the return value is rejected.
 
-#### \_\_invoke()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html\#method___invoke)
+#### \_\_invoke()  [header link](class-aws-mockhandler-method-invoke.md)
 
 `
     public
@@ -67,7 +67,7 @@ $command
 : [CommandInterface](class-aws-commandinterface.md)$request
 : [RequestInterface](class-psr-http-message-requestinterface.md)
 
-#### append()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html\#method_append)
+#### append()  [header link](class-aws-mockhandler-method-append.md)
 
 Adds one or more variadic ResultInterface or AwsException objects to the
 queue.
@@ -76,7 +76,7 @@ queue.
     public
                     append() : mixed`
 
-#### appendException()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html\#method_appendException)
+#### appendException()  [header link](class-aws-mockhandler-method-appendexception.md)
 
 Adds one or more \\Exception or \\Throwable to the queue
 
@@ -84,7 +84,7 @@ Adds one or more \\Exception or \\Throwable to the queue
     public
                     appendException() : mixed`
 
-#### count()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html\#method_count)
+#### count()  [header link](class-aws-mockhandler-method-count.md)
 
 Returns the number of remaining items in the queue.
 
@@ -96,7 +96,7 @@ Returns the number of remaining items in the queue.
 
 int
 
-#### getLastCommand()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html\#method_getLastCommand)
+#### getLastCommand()  [header link](class-aws-mockhandler-method-getlastcommand.md)
 
 Get the last received command.
 
@@ -108,7 +108,7 @@ Get the last received command.
 
 [CommandInterface](class-aws-commandinterface.md)
 
-#### getLastRequest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html\#method_getLastRequest)
+#### getLastRequest()  [header link](class-aws-mockhandler-method-getlastrequest.md)
 
 Get the last received request.
 
@@ -126,14 +126,14 @@ Get the last received request.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html#toc-methods)
+  - [Methods](class-aws-mockhandler-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html#method___construct)
-  - [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html#method___invoke)
-  - [append()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html#method_append)
-  - [appendException()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html#method_appendException)
-  - [count()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html#method_count)
-  - [getLastCommand()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html#method_getLastCommand)
-  - [getLastRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html#method_getLastRequest)
+  - [\_\_construct()](class-aws-mockhandler-method-construct.md)
+  - [\_\_invoke()](class-aws-mockhandler-method-invoke.md)
+  - [append()](class-aws-mockhandler-method-append.md)
+  - [appendException()](class-aws-mockhandler-method-appendexception.md)
+  - [count()](class-aws-mockhandler-method-count.md)
+  - [getLastCommand()](class-aws-mockhandler-method-getlastcommand.md)
+  - [getLastRequest()](class-aws-mockhandler-method-getlastrequest.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MockHandler.html#top)
+[Back To Top](class-aws-mockhandler-top.md)

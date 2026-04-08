@@ -11,7 +11,7 @@ following diagram. It's important that you store your private key in a secure pl
 anyone who possesses your private key can connect to your instances that use the key
 pair.
 
-![A key pair consists of a private key for your computer and a public key for your instance.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ec2-key-pair.png)
+![A key pair consists of a private key for your computer and a public key for your instance.](../../../images/awsec2/latest/userguide/images/ec2-key-pair-png.md)
 
 When you launch an instance, you can [specify a key pair](ec2-instance-launch-parameters.md#liw-key-pair),
 so that you can connect to your instance using a method that requires a key pair. Depending on

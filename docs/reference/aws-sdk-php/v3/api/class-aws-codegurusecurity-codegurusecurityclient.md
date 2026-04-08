@@ -17,25 +17,25 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-05-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-security-2018-05-10.html)
+- [**2018-05-10**](api-codeguru-security-2018-05-10.md)
 
-  - [BatchGetFindings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-security-2018-05-10.html#batchgetfindings)
-  - [CreateScan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-security-2018-05-10.html#createscan)
-  - [CreateUploadUrl](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-security-2018-05-10.html#createuploadurl)
-  - [GetAccountConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-security-2018-05-10.html#getaccountconfiguration)
-  - [GetFindings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-security-2018-05-10.html#getfindings)
-  - [GetMetricsSummary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-security-2018-05-10.html#getmetricssummary)
-  - [GetScan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-security-2018-05-10.html#getscan)
-  - [ListFindingsMetrics](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-security-2018-05-10.html#listfindingsmetrics)
-  - [ListScans](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-security-2018-05-10.html#listscans)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-security-2018-05-10.html#listtagsforresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-security-2018-05-10.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-security-2018-05-10.html#untagresource)
-  - [UpdateAccountConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-security-2018-05-10.html#updateaccountconfiguration)
+  - [BatchGetFindings](api-codeguru-security-2018-05-10-batchgetfindings.md)
+  - [CreateScan](api-codeguru-security-2018-05-10-createscan.md)
+  - [CreateUploadUrl](api-codeguru-security-2018-05-10-createuploadurl.md)
+  - [GetAccountConfiguration](api-codeguru-security-2018-05-10-getaccountconfiguration.md)
+  - [GetFindings](api-codeguru-security-2018-05-10-getfindings.md)
+  - [GetMetricsSummary](api-codeguru-security-2018-05-10-getmetricssummary.md)
+  - [GetScan](api-codeguru-security-2018-05-10-getscan.md)
+  - [ListFindingsMetrics](api-codeguru-security-2018-05-10-listfindingsmetrics.md)
+  - [ListScans](api-codeguru-security-2018-05-10-listscans.md)
+  - [ListTagsForResource](api-codeguru-security-2018-05-10-listtagsforresource.md)
+  - [TagResource](api-codeguru-security-2018-05-10-tagresource.md)
+  - [UntagResource](api-codeguru-security-2018-05-10-untagresource.md)
+  - [UpdateAccountConfiguration](api-codeguru-security-2018-05-10-updateaccountconfiguration.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruSecurity.CodeGuruSecurityClient.html\#toc)
+### Table of Contents  [header link](class-aws-codegurusecurity-codegurusecurityclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruSecurity.CodeGuruSecurityClient.html\#toc-methods)
+#### Methods  [header link](class-aws-codegurusecurity-codegurusecurityclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -66,7 +66,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruSecurity.CodeGuruSecurityClient.html\#methods)
+### Methods  [header link](class-aws-codegurusecurity-codegurusecurityclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -533,7 +533,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruSecurity.CodeGuruSecurityClient.html#toc-methods)
+  - [Methods](class-aws-codegurusecurity-codegurusecurityclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -560,4 +560,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruSecurity.CodeGuruSecurityClient.html#top)
+[Back To Top](class-aws-codegurusecurity-codegurusecurityclient-top.md)

@@ -2,14 +2,14 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
-- [Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.exception.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
+- [Exception](namespace-aws-s3-s3transfer-exception.md)
 
 ## ProgressTrackerException     extends RuntimeException   in package    - [Aws](package-aws.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Exception.ProgressTrackerException.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-exception-progresstrackerexception-toc.md)
 
 ×
 
@@ -17,4 +17,4 @@ FinalYes
 
 - Table Of Contents
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Exception.ProgressTrackerException.html#top)
+[Back To Top](class-aws-s3-s3transfer-exception-progresstrackerexception-top.md)

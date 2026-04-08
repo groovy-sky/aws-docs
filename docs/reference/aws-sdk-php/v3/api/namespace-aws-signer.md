@@ -4,15 +4,15 @@ Menu
 
 ## signer
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.signer.html\#toc)
+### Table of Contents  [header link](namespace-aws-signer-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.signer.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-signer-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.signer.exception.html)
+[Exception](namespace-aws-signer-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.signer.html\#toc-classes)
+#### Classes  [header link](namespace-aws-signer-toc-classes.md)
 
-[signerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.signer.signerClient.html)This client is used to interact with the **AWS Signer** service.
+[signerClient](class-aws-signer-signerclient.md)This client is used to interact with the **AWS Signer** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.signer.html#toc-classes)
+  - [Classes](namespace-aws-signer-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.signer.html#top)
+[Back To Top](namespace-aws-signer-top.md)

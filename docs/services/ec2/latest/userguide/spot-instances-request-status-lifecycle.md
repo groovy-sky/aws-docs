@@ -4,7 +4,7 @@ The following diagram shows you the paths that your Spot request can follow thro
 lifecycle, from submission to termination. Each step is depicted as a node, and the
 status code for each node describes the status of the Spot request and Spot Instance.
 
-![Life cycle of a Spot Instance request.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/spot-request-status-diagram.png)
+![Life cycle of a Spot Instance request.](../../../images/awsec2/latest/userguide/images/spot-request-status-diagram-png.md)
 
 ###### Pending evaluation
 

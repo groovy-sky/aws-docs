@@ -79,7 +79,7 @@ The preceding sample creates output similar to the following.
 {Tags: [{Key: Purpose,Value: Test}, {Key: Short_Name,Value: My_Cert}]}
 ```
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 RenewCertificate
 

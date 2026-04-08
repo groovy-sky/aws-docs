@@ -9,36 +9,36 @@ Credential provider that fetches container credentials with GET request.
 
 container environment variables are used in constructing request URI.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html\#toc)
+### Table of Contents  [header link](class-aws-credentials-ecscredentialprovider-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html\#toc-constants)
+#### Constants  [header link](class-aws-credentials-ecscredentialprovider-toc-constants.md)
 
-[DEFAULT\_ENV\_RETRIES](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#constant_DEFAULT_ENV_RETRIES)
-= 3 [DEFAULT\_ENV\_TIMEOUT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#constant_DEFAULT_ENV_TIMEOUT)
-= 1.0 [EKS\_SERVER\_HOST\_IPV4](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#constant_EKS_SERVER_HOST_IPV4)
-= '169.254.170.23' [EKS\_SERVER\_HOST\_IPV6](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#constant_EKS_SERVER_HOST_IPV6)
-= 'fd00:ec2::23' [ENV\_AUTH\_TOKEN](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#constant_ENV_AUTH_TOKEN)
-= "AWS\_CONTAINER\_AUTHORIZATION\_TOKEN" [ENV\_AUTH\_TOKEN\_FILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#constant_ENV_AUTH_TOKEN_FILE)
-= "AWS\_CONTAINER\_AUTHORIZATION\_TOKEN\_FILE" [ENV\_FULL\_URI](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#constant_ENV_FULL_URI)
-= "AWS\_CONTAINER\_CREDENTIALS\_FULL\_URI" [ENV\_RETRIES](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#constant_ENV_RETRIES)
-= 'AWS\_METADATA\_SERVICE\_NUM\_ATTEMPTS' [ENV\_TIMEOUT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#constant_ENV_TIMEOUT)
-= 'AWS\_METADATA\_SERVICE\_TIMEOUT' [ENV\_URI](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#constant_ENV_URI)
-= "AWS\_CONTAINER\_CREDENTIALS\_RELATIVE\_URI" [SERVER\_URI](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#constant_SERVER_URI)
+[DEFAULT\_ENV\_RETRIES](class-aws-credentials-ecscredentialprovider-constant-default-env-retries.md)
+= 3 [DEFAULT\_ENV\_TIMEOUT](class-aws-credentials-ecscredentialprovider-constant-default-env-timeout.md)
+= 1.0 [EKS\_SERVER\_HOST\_IPV4](class-aws-credentials-ecscredentialprovider-constant-eks-server-host-ipv4.md)
+= '169.254.170.23' [EKS\_SERVER\_HOST\_IPV6](class-aws-credentials-ecscredentialprovider-constant-eks-server-host-ipv6.md)
+= 'fd00:ec2::23' [ENV\_AUTH\_TOKEN](class-aws-credentials-ecscredentialprovider-constant-env-auth-token.md)
+= "AWS\_CONTAINER\_AUTHORIZATION\_TOKEN" [ENV\_AUTH\_TOKEN\_FILE](class-aws-credentials-ecscredentialprovider-constant-env-auth-token-file.md)
+= "AWS\_CONTAINER\_AUTHORIZATION\_TOKEN\_FILE" [ENV\_FULL\_URI](class-aws-credentials-ecscredentialprovider-constant-env-full-uri.md)
+= "AWS\_CONTAINER\_CREDENTIALS\_FULL\_URI" [ENV\_RETRIES](class-aws-credentials-ecscredentialprovider-constant-env-retries.md)
+= 'AWS\_METADATA\_SERVICE\_NUM\_ATTEMPTS' [ENV\_TIMEOUT](class-aws-credentials-ecscredentialprovider-constant-env-timeout.md)
+= 'AWS\_METADATA\_SERVICE\_TIMEOUT' [ENV\_URI](class-aws-credentials-ecscredentialprovider-constant-env-uri.md)
+= "AWS\_CONTAINER\_CREDENTIALS\_RELATIVE\_URI" [SERVER\_URI](class-aws-credentials-ecscredentialprovider-constant-server-uri.md)
 = 'http://169.254.170.2'
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html\#toc-methods)
+#### Methods  [header link](class-aws-credentials-ecscredentialprovider-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#method___construct)
+[\_\_construct()](class-aws-credentials-ecscredentialprovider-method-construct.md)
 : mixed The constructor accepts following options:
 \- timeout: (optional) Connection timeout, in seconds, default 1.0
-\- retries: Optional number of retries to be attempted, default 3.[\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#method___invoke)
-: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Load container credentials.[getAttempts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#method_getAttempts)
-: int Returns the number of attempts that have been done.[setHeaderForAuthToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#method_setHeaderForAuthToken)
+\- retries: Optional number of retries to be attempted, default 3.[\_\_invoke()](class-aws-credentials-ecscredentialprovider-method-invoke.md)
+: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Load container credentials.[getAttempts()](class-aws-credentials-ecscredentialprovider-method-getattempts.md)
+: int Returns the number of attempts that have been done.[setHeaderForAuthToken()](class-aws-credentials-ecscredentialprovider-method-setheaderforauthtoken.md)
 : mixed
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html\#constants)
+### Constants  [header link](class-aws-credentials-ecscredentialprovider-constants.md)
 
-#### DEFAULT\_ENV\_RETRIES  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html\#constant_DEFAULT_ENV_RETRIES)
+#### DEFAULT\_ENV\_RETRIES  [header link](class-aws-credentials-ecscredentialprovider-constant-default-env-retries.md)
 
 `
     public
@@ -47,7 +47,7 @@ container environment variables are used in constructing request URI.
     = 3
 `
 
-#### DEFAULT\_ENV\_TIMEOUT  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html\#constant_DEFAULT_ENV_TIMEOUT)
+#### DEFAULT\_ENV\_TIMEOUT  [header link](class-aws-credentials-ecscredentialprovider-constant-default-env-timeout.md)
 
 `
     public
@@ -56,7 +56,7 @@ container environment variables are used in constructing request URI.
     = 1.0
 `
 
-#### EKS\_SERVER\_HOST\_IPV4  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html\#constant_EKS_SERVER_HOST_IPV4)
+#### EKS\_SERVER\_HOST\_IPV4  [header link](class-aws-credentials-ecscredentialprovider-constant-eks-server-host-ipv4.md)
 
 `
     public
@@ -65,7 +65,7 @@ container environment variables are used in constructing request URI.
     = '169.254.170.23'
 `
 
-#### EKS\_SERVER\_HOST\_IPV6  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html\#constant_EKS_SERVER_HOST_IPV6)
+#### EKS\_SERVER\_HOST\_IPV6  [header link](class-aws-credentials-ecscredentialprovider-constant-eks-server-host-ipv6.md)
 
 `
     public
@@ -74,7 +74,7 @@ container environment variables are used in constructing request URI.
     = 'fd00:ec2::23'
 `
 
-#### ENV\_AUTH\_TOKEN  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html\#constant_ENV_AUTH_TOKEN)
+#### ENV\_AUTH\_TOKEN  [header link](class-aws-credentials-ecscredentialprovider-constant-env-auth-token.md)
 
 `
     public
@@ -83,7 +83,7 @@ container environment variables are used in constructing request URI.
     = "AWS_CONTAINER_AUTHORIZATION_TOKEN"
 `
 
-#### ENV\_AUTH\_TOKEN\_FILE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html\#constant_ENV_AUTH_TOKEN_FILE)
+#### ENV\_AUTH\_TOKEN\_FILE  [header link](class-aws-credentials-ecscredentialprovider-constant-env-auth-token-file.md)
 
 `
     public
@@ -92,7 +92,7 @@ container environment variables are used in constructing request URI.
     = "AWS_CONTAINER_AUTHORIZATION_TOKEN_FILE"
 `
 
-#### ENV\_FULL\_URI  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html\#constant_ENV_FULL_URI)
+#### ENV\_FULL\_URI  [header link](class-aws-credentials-ecscredentialprovider-constant-env-full-uri.md)
 
 `
     public
@@ -101,7 +101,7 @@ container environment variables are used in constructing request URI.
     = "AWS_CONTAINER_CREDENTIALS_FULL_URI"
 `
 
-#### ENV\_RETRIES  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html\#constant_ENV_RETRIES)
+#### ENV\_RETRIES  [header link](class-aws-credentials-ecscredentialprovider-constant-env-retries.md)
 
 `
     public
@@ -110,7 +110,7 @@ container environment variables are used in constructing request URI.
     = 'AWS_METADATA_SERVICE_NUM_ATTEMPTS'
 `
 
-#### ENV\_TIMEOUT  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html\#constant_ENV_TIMEOUT)
+#### ENV\_TIMEOUT  [header link](class-aws-credentials-ecscredentialprovider-constant-env-timeout.md)
 
 `
     public
@@ -119,7 +119,7 @@ container environment variables are used in constructing request URI.
     = 'AWS_METADATA_SERVICE_TIMEOUT'
 `
 
-#### ENV\_URI  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html\#constant_ENV_URI)
+#### ENV\_URI  [header link](class-aws-credentials-ecscredentialprovider-constant-env-uri.md)
 
 `
     public
@@ -128,7 +128,7 @@ container environment variables are used in constructing request URI.
     = "AWS_CONTAINER_CREDENTIALS_RELATIVE_URI"
 `
 
-#### SERVER\_URI  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html\#constant_SERVER_URI)
+#### SERVER\_URI  [header link](class-aws-credentials-ecscredentialprovider-constant-server-uri.md)
 
 `
     public
@@ -137,9 +137,9 @@ container environment variables are used in constructing request URI.
     = 'http://169.254.170.2'
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html\#methods)
+### Methods  [header link](class-aws-credentials-ecscredentialprovider-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-credentials-ecscredentialprovider-method-construct.md)
 
 The constructor accepts following options:
 \- timeout: (optional) Connection timeout, in seconds, default 1.0
@@ -159,7 +159,7 @@ $config
 
 Configuration options
 
-#### \_\_invoke()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html\#method___invoke)
+#### \_\_invoke()  [header link](class-aws-credentials-ecscredentialprovider-method-invoke.md)
 
 Load container credentials.
 
@@ -167,7 +167,7 @@ Load container credentials.
     public
                     __invoke() : PromiseInterface`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html\#method___invoke\#tags)
+##### Tags  [header link](class-aws-credentials-ecscredentialprovider-method-invoke-tags.md)
 
 throwsGuzzleException
 
@@ -175,7 +175,7 @@ throwsGuzzleException
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### getAttempts()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html\#method_getAttempts)
+#### getAttempts()  [header link](class-aws-credentials-ecscredentialprovider-method-getattempts.md)
 
 Returns the number of attempts that have been done.
 
@@ -187,13 +187,13 @@ Returns the number of attempts that have been done.
 
 int
 
-#### setHeaderForAuthToken()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html\#method_setHeaderForAuthToken)
+#### setHeaderForAuthToken()  [header link](class-aws-credentials-ecscredentialprovider-method-setheaderforauthtoken.md)
 
 `
     public
                     setHeaderForAuthToken() : mixed`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html\#method_setHeaderForAuthToken\#tags)
+##### Tags  [header link](class-aws-credentials-ecscredentialprovider-method-setheaderforauthtoken-tags.md)
 
 deprecated
 <\-\- modeled\_exceptions -->
@@ -203,24 +203,24 @@ deprecated
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#toc-methods)
+  - [Constants](class-aws-credentials-ecscredentialprovider-toc-constants.md)
+  - [Methods](class-aws-credentials-ecscredentialprovider-toc-methods.md)
 - Constants
-  - [DEFAULT\_ENV\_RETRIES](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#constant_DEFAULT_ENV_RETRIES)
-  - [DEFAULT\_ENV\_TIMEOUT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#constant_DEFAULT_ENV_TIMEOUT)
-  - [EKS\_SERVER\_HOST\_IPV4](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#constant_EKS_SERVER_HOST_IPV4)
-  - [EKS\_SERVER\_HOST\_IPV6](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#constant_EKS_SERVER_HOST_IPV6)
-  - [ENV\_AUTH\_TOKEN](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#constant_ENV_AUTH_TOKEN)
-  - [ENV\_AUTH\_TOKEN\_FILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#constant_ENV_AUTH_TOKEN_FILE)
-  - [ENV\_FULL\_URI](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#constant_ENV_FULL_URI)
-  - [ENV\_RETRIES](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#constant_ENV_RETRIES)
-  - [ENV\_TIMEOUT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#constant_ENV_TIMEOUT)
-  - [ENV\_URI](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#constant_ENV_URI)
-  - [SERVER\_URI](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#constant_SERVER_URI)
+  - [DEFAULT\_ENV\_RETRIES](class-aws-credentials-ecscredentialprovider-constant-default-env-retries.md)
+  - [DEFAULT\_ENV\_TIMEOUT](class-aws-credentials-ecscredentialprovider-constant-default-env-timeout.md)
+  - [EKS\_SERVER\_HOST\_IPV4](class-aws-credentials-ecscredentialprovider-constant-eks-server-host-ipv4.md)
+  - [EKS\_SERVER\_HOST\_IPV6](class-aws-credentials-ecscredentialprovider-constant-eks-server-host-ipv6.md)
+  - [ENV\_AUTH\_TOKEN](class-aws-credentials-ecscredentialprovider-constant-env-auth-token.md)
+  - [ENV\_AUTH\_TOKEN\_FILE](class-aws-credentials-ecscredentialprovider-constant-env-auth-token-file.md)
+  - [ENV\_FULL\_URI](class-aws-credentials-ecscredentialprovider-constant-env-full-uri.md)
+  - [ENV\_RETRIES](class-aws-credentials-ecscredentialprovider-constant-env-retries.md)
+  - [ENV\_TIMEOUT](class-aws-credentials-ecscredentialprovider-constant-env-timeout.md)
+  - [ENV\_URI](class-aws-credentials-ecscredentialprovider-constant-env-uri.md)
+  - [SERVER\_URI](class-aws-credentials-ecscredentialprovider-constant-server-uri.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#method___construct)
-  - [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#method___invoke)
-  - [getAttempts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#method_getAttempts)
-  - [setHeaderForAuthToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#method_setHeaderForAuthToken)
+  - [\_\_construct()](class-aws-credentials-ecscredentialprovider-method-construct.md)
+  - [\_\_invoke()](class-aws-credentials-ecscredentialprovider-method-invoke.md)
+  - [getAttempts()](class-aws-credentials-ecscredentialprovider-method-getattempts.md)
+  - [setHeaderForAuthToken()](class-aws-credentials-ecscredentialprovider-method-setheaderforauthtoken.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html#top)
+[Back To Top](class-aws-credentials-ecscredentialprovider-top.md)

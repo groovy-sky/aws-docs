@@ -2,12 +2,12 @@
 
 Returns the details of a single named query or a list of up to 50 queries, which you
 provide as an array of query ID strings. Requires you to have access to the workgroup in
-which the queries were saved. Use [ListNamedQueriesInput](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListNamedQueriesInput.html) to get the
+which the queries were saved. Use [ListNamedQueriesInput](api-listnamedqueriesinput.md) to get the
 list of named query IDs in the specified workgroup. If information could not be
 retrieved for a submitted query ID, information about the query ID submitted is listed
-under [UnprocessedNamedQueryId](https://docs.aws.amazon.com/athena/latest/APIReference/API_UnprocessedNamedQueryId.html). Named queries differ from executed
-queries. Use [BatchGetQueryExecutionInput](https://docs.aws.amazon.com/athena/latest/APIReference/API_BatchGetQueryExecutionInput.html) to get details about each
-unique query execution, and [ListQueryExecutionsInput](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListQueryExecutionsInput.html) to get a list of
+under [UnprocessedNamedQueryId](api-unprocessednamedqueryid.md). Named queries differ from executed
+queries. Use [BatchGetQueryExecutionInput](api-batchgetqueryexecutioninput.md) to get details about each
+unique query execution, and [ListQueryExecutionsInput](api-listqueryexecutionsinput.md) to get a list of
 query execution IDs.
 
 ## Request Syntax
@@ -74,13 +74,13 @@ The following data is returned in JSON format by the service.
 
 Information about the named query IDs submitted.
 
-Type: Array of [NamedQuery](https://docs.aws.amazon.com/athena/latest/APIReference/API_NamedQuery.html) objects
+Type: Array of [NamedQuery](api-namedquery.md) objects
 
 **[UnprocessedNamedQueryIds](#API_BatchGetNamedQuery_ResponseSyntax)**
 
 Information about provided query IDs.
 
-Type: Array of [UnprocessedNamedQueryId](https://docs.aws.amazon.com/athena/latest/APIReference/API_UnprocessedNamedQueryId.html) objects
+Type: Array of [UnprocessedNamedQueryId](api-unprocessednamedqueryid.md) objects
 
 ## Errors
 
@@ -109,27 +109,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/athena-2017-05-18/BatchGetNamedQuery)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/athena-2017-05-18/batchgetnamedquery.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/athena-2017-05-18/BatchGetNamedQuery)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/athena-2017-05-18/batchgetnamedquery.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/BatchGetNamedQuery)
+- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/batchgetnamedquery.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/athena-2017-05-18/BatchGetNamedQuery)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/athena-2017-05-18/batchgetnamedquery.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/BatchGetNamedQuery)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/batchgetnamedquery.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/athena-2017-05-18/BatchGetNamedQuery)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/athena-2017-05-18/batchgetnamedquery.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/athena-2017-05-18/BatchGetNamedQuery)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/athena-2017-05-18/batchgetnamedquery.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/athena-2017-05-18/BatchGetNamedQuery)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/athena-2017-05-18/batchgetnamedquery.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/athena-2017-05-18/BatchGetNamedQuery)
+- [AWS SDK for Python](../../../../services/goto/boto3/athena-2017-05-18/batchgetnamedquery.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/BatchGetNamedQuery)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/batchgetnamedquery.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Actions
 

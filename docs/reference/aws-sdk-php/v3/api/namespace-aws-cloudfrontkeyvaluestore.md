@@ -4,15 +4,15 @@ Menu
 
 ## CloudFrontKeyValueStore
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudfrontkeyvaluestore.html\#toc)
+### Table of Contents  [header link](namespace-aws-cloudfrontkeyvaluestore-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudfrontkeyvaluestore.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-cloudfrontkeyvaluestore-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudfrontkeyvaluestore.exception.html)
+[Exception](namespace-aws-cloudfrontkeyvaluestore-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudfrontkeyvaluestore.html\#toc-classes)
+#### Classes  [header link](namespace-aws-cloudfrontkeyvaluestore-toc-classes.md)
 
-[CloudFrontKeyValueStoreClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFrontKeyValueStore.CloudFrontKeyValueStoreClient.html)This client is used to interact with the **Amazon CloudFront KeyValueStore** service.
+[CloudFrontKeyValueStoreClient](class-aws-cloudfrontkeyvaluestore-cloudfrontkeyvaluestoreclient.md)This client is used to interact with the **Amazon CloudFront KeyValueStore** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudfrontkeyvaluestore.html#toc-classes)
+  - [Classes](namespace-aws-cloudfrontkeyvaluestore-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudfrontkeyvaluestore.html#top)
+[Back To Top](namespace-aws-cloudfrontkeyvaluestore-top.md)

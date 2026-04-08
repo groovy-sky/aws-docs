@@ -72,7 +72,7 @@ point for traffic destined to your instances in the VPC. If the route table for 
 allows traffic from subnet A, then you can use the endpoint to reach instances in subnet
 B.
 
-![Overview of the EC2 Instance Connect Endpoint flow.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ec2-instance-connect-endpoint.png)
+![Overview of the EC2 Instance Connect Endpoint flow.](../../../images/awsec2/latest/userguide/images/ec2-instance-connect-endpoint-png.md)
 
 ## Considerations
 

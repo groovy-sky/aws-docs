@@ -4,15 +4,15 @@ Menu
 
 ## IoTTwinMaker
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iottwinmaker.html\#toc)
+### Table of Contents  [header link](namespace-aws-iottwinmaker-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iottwinmaker.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-iottwinmaker-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iottwinmaker.exception.html)
+[Exception](namespace-aws-iottwinmaker-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iottwinmaker.html\#toc-classes)
+#### Classes  [header link](namespace-aws-iottwinmaker-toc-classes.md)
 
-[IoTTwinMakerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTTwinMaker.IoTTwinMakerClient.html)This client is used to interact with the **AWS IoT TwinMaker** service.
+[IoTTwinMakerClient](class-aws-iottwinmaker-iottwinmakerclient.md)This client is used to interact with the **AWS IoT TwinMaker** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iottwinmaker.html#toc-classes)
+  - [Classes](namespace-aws-iottwinmaker-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iottwinmaker.html#top)
+[Back To Top](namespace-aws-iottwinmaker-top.md)

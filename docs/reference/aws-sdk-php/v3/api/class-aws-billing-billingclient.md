@@ -17,24 +17,24 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2023-09-07**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billing-2023-09-07.html)
+- [**2023-09-07**](api-billing-2023-09-07.md)
 
-  - [AssociateSourceViews](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billing-2023-09-07.html#associatesourceviews)
-  - [CreateBillingView](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billing-2023-09-07.html#createbillingview)
-  - [DeleteBillingView](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billing-2023-09-07.html#deletebillingview)
-  - [DisassociateSourceViews](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billing-2023-09-07.html#disassociatesourceviews)
-  - [GetBillingView](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billing-2023-09-07.html#getbillingview)
-  - [GetResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billing-2023-09-07.html#getresourcepolicy)
-  - [ListBillingViews](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billing-2023-09-07.html#listbillingviews)
-  - [ListSourceViewsForBillingView](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billing-2023-09-07.html#listsourceviewsforbillingview)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billing-2023-09-07.html#listtagsforresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billing-2023-09-07.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billing-2023-09-07.html#untagresource)
-  - [UpdateBillingView](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-billing-2023-09-07.html#updatebillingview)
+  - [AssociateSourceViews](api-billing-2023-09-07-associatesourceviews.md)
+  - [CreateBillingView](api-billing-2023-09-07-createbillingview.md)
+  - [DeleteBillingView](api-billing-2023-09-07-deletebillingview.md)
+  - [DisassociateSourceViews](api-billing-2023-09-07-disassociatesourceviews.md)
+  - [GetBillingView](api-billing-2023-09-07-getbillingview.md)
+  - [GetResourcePolicy](api-billing-2023-09-07-getresourcepolicy.md)
+  - [ListBillingViews](api-billing-2023-09-07-listbillingviews.md)
+  - [ListSourceViewsForBillingView](api-billing-2023-09-07-listsourceviewsforbillingview.md)
+  - [ListTagsForResource](api-billing-2023-09-07-listtagsforresource.md)
+  - [TagResource](api-billing-2023-09-07-tagresource.md)
+  - [UntagResource](api-billing-2023-09-07-untagresource.md)
+  - [UpdateBillingView](api-billing-2023-09-07-updatebillingview.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Billing.BillingClient.html\#toc)
+### Table of Contents  [header link](class-aws-billing-billingclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Billing.BillingClient.html\#toc-methods)
+#### Methods  [header link](class-aws-billing-billingclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -65,7 +65,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Billing.BillingClient.html\#methods)
+### Methods  [header link](class-aws-billing-billingclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -532,7 +532,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Billing.BillingClient.html#toc-methods)
+  - [Methods](class-aws-billing-billingclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -559,4 +559,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Billing.BillingClient.html#top)
+[Back To Top](class-aws-billing-billingclient-top.md)

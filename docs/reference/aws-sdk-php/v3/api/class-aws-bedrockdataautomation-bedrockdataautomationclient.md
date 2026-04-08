@@ -17,39 +17,39 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2023-07-26**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html)
+- [**2023-07-26**](api-bedrock-data-automation-2023-07-26.md)
 
-  - [CopyBlueprintStage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#copyblueprintstage)
-  - [CreateBlueprint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#createblueprint)
-  - [CreateBlueprintVersion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#createblueprintversion)
-  - [CreateDataAutomationLibrary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#createdataautomationlibrary)
-  - [CreateDataAutomationProject](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#createdataautomationproject)
-  - [DeleteBlueprint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#deleteblueprint)
-  - [DeleteDataAutomationLibrary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#deletedataautomationlibrary)
-  - [DeleteDataAutomationProject](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#deletedataautomationproject)
-  - [GetBlueprint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#getblueprint)
-  - [GetBlueprintOptimizationStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#getblueprintoptimizationstatus)
-  - [GetDataAutomationLibrary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#getdataautomationlibrary)
-  - [GetDataAutomationLibraryEntity](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#getdataautomationlibraryentity)
-  - [GetDataAutomationLibraryIngestionJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#getdataautomationlibraryingestionjob)
-  - [GetDataAutomationProject](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#getdataautomationproject)
-  - [InvokeBlueprintOptimizationAsync](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#invokeblueprintoptimizationasync)
-  - [InvokeDataAutomationLibraryIngestionJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#invokedataautomationlibraryingestionjob)
-  - [ListBlueprints](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#listblueprints)
-  - [ListDataAutomationLibraries](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#listdataautomationlibraries)
-  - [ListDataAutomationLibraryEntities](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#listdataautomationlibraryentities)
-  - [ListDataAutomationLibraryIngestionJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#listdataautomationlibraryingestionjobs)
-  - [ListDataAutomationProjects](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#listdataautomationprojects)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#listtagsforresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#untagresource)
-  - [UpdateBlueprint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#updateblueprint)
-  - [UpdateDataAutomationLibrary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#updatedataautomationlibrary)
-  - [UpdateDataAutomationProject](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-data-automation-2023-07-26.html#updatedataautomationproject)
+  - [CopyBlueprintStage](api-bedrock-data-automation-2023-07-26-copyblueprintstage.md)
+  - [CreateBlueprint](api-bedrock-data-automation-2023-07-26-createblueprint.md)
+  - [CreateBlueprintVersion](api-bedrock-data-automation-2023-07-26-createblueprintversion.md)
+  - [CreateDataAutomationLibrary](api-bedrock-data-automation-2023-07-26-createdataautomationlibrary.md)
+  - [CreateDataAutomationProject](api-bedrock-data-automation-2023-07-26-createdataautomationproject.md)
+  - [DeleteBlueprint](api-bedrock-data-automation-2023-07-26-deleteblueprint.md)
+  - [DeleteDataAutomationLibrary](api-bedrock-data-automation-2023-07-26-deletedataautomationlibrary.md)
+  - [DeleteDataAutomationProject](api-bedrock-data-automation-2023-07-26-deletedataautomationproject.md)
+  - [GetBlueprint](api-bedrock-data-automation-2023-07-26-getblueprint.md)
+  - [GetBlueprintOptimizationStatus](api-bedrock-data-automation-2023-07-26-getblueprintoptimizationstatus.md)
+  - [GetDataAutomationLibrary](api-bedrock-data-automation-2023-07-26-getdataautomationlibrary.md)
+  - [GetDataAutomationLibraryEntity](api-bedrock-data-automation-2023-07-26-getdataautomationlibraryentity.md)
+  - [GetDataAutomationLibraryIngestionJob](api-bedrock-data-automation-2023-07-26-getdataautomationlibraryingestionjob.md)
+  - [GetDataAutomationProject](api-bedrock-data-automation-2023-07-26-getdataautomationproject.md)
+  - [InvokeBlueprintOptimizationAsync](api-bedrock-data-automation-2023-07-26-invokeblueprintoptimizationasync.md)
+  - [InvokeDataAutomationLibraryIngestionJob](api-bedrock-data-automation-2023-07-26-invokedataautomationlibraryingestionjob.md)
+  - [ListBlueprints](api-bedrock-data-automation-2023-07-26-listblueprints.md)
+  - [ListDataAutomationLibraries](api-bedrock-data-automation-2023-07-26-listdataautomationlibraries.md)
+  - [ListDataAutomationLibraryEntities](api-bedrock-data-automation-2023-07-26-listdataautomationlibraryentities.md)
+  - [ListDataAutomationLibraryIngestionJobs](api-bedrock-data-automation-2023-07-26-listdataautomationlibraryingestionjobs.md)
+  - [ListDataAutomationProjects](api-bedrock-data-automation-2023-07-26-listdataautomationprojects.md)
+  - [ListTagsForResource](api-bedrock-data-automation-2023-07-26-listtagsforresource.md)
+  - [TagResource](api-bedrock-data-automation-2023-07-26-tagresource.md)
+  - [UntagResource](api-bedrock-data-automation-2023-07-26-untagresource.md)
+  - [UpdateBlueprint](api-bedrock-data-automation-2023-07-26-updateblueprint.md)
+  - [UpdateDataAutomationLibrary](api-bedrock-data-automation-2023-07-26-updatedataautomationlibrary.md)
+  - [UpdateDataAutomationProject](api-bedrock-data-automation-2023-07-26-updatedataautomationproject.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockDataAutomation.BedrockDataAutomationClient.html\#toc)
+### Table of Contents  [header link](class-aws-bedrockdataautomation-bedrockdataautomationclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockDataAutomation.BedrockDataAutomationClient.html\#toc-methods)
+#### Methods  [header link](class-aws-bedrockdataautomation-bedrockdataautomationclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -80,7 +80,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockDataAutomation.BedrockDataAutomationClient.html\#methods)
+### Methods  [header link](class-aws-bedrockdataautomation-bedrockdataautomationclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -547,7 +547,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockDataAutomation.BedrockDataAutomationClient.html#toc-methods)
+  - [Methods](class-aws-bedrockdataautomation-bedrockdataautomationclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -574,4 +574,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockDataAutomation.BedrockDataAutomationClient.html#top)
+[Back To Top](class-aws-bedrockdataautomation-bedrockdataautomationclient-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## Sns
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sns.html\#toc)
+### Table of Contents  [header link](namespace-aws-sns-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sns.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-sns-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sns.exception.html)
+[Exception](namespace-aws-sns-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sns.html\#toc-classes)
+#### Classes  [header link](namespace-aws-sns-toc-classes.md)
 
-[Message](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html)Represents an SNS message received over http(s).[MessageValidator](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html)Uses openssl to verify SNS messages to ensure that they were sent by AWS.[SnsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.SnsClient.html)This client is used to interact with the **Amazon Simple Notification Service (Amazon SNS)**.
+[Message](class-aws-sns-message.md)Represents an SNS message received over http(s).[MessageValidator](class-aws-sns-messagevalidator.md)Uses openssl to verify SNS messages to ensure that they were sent by AWS.[SnsClient](class-aws-sns-snsclient.md)This client is used to interact with the **Amazon Simple Notification Service (Amazon SNS)**.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sns.html#toc-classes)
+  - [Classes](namespace-aws-sns-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sns.html#top)
+[Back To Top](namespace-aws-sns-top.md)

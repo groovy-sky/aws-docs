@@ -5,7 +5,7 @@ Menu
 
 ## EncryptionTraitV2
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.EncryptionTraitV2.html\#toc)
+### Table of Contents  [header link](class-aws-crypto-encryptiontraitv2-toc.md)
 
 ×
 
@@ -13,4 +13,4 @@ Menu
 
 - Table Of Contents
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.EncryptionTraitV2.html#top)
+[Back To Top](class-aws-crypto-encryptiontraitv2-top.md)

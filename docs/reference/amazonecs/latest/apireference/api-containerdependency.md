@@ -8,13 +8,13 @@ Your Amazon ECS container instances require at least version 1.26.0 of the conta
 agent to use container dependencies. However, we recommend using the latest container
 agent version. For information about checking your agent version and updating to the
 latest version, see [Updating the Amazon ECS\
-Container Agent](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-agent-update.html) in the _Amazon Elastic Container Service Developer_
+Container Agent](../../../../services/amazonecs/latest/developerguide/ecs-agent-update.md) in the _Amazon Elastic Container Service Developer_
 _Guide_. If you're using an Amazon ECS-optimized Linux AMI, your instance
 needs at least version 1.26.0-1 of the `ecs-init` package. If your container
 instances are launched from version `20190301` or later, then they contain
 the required versions of the container agent and `ecs-init`. For more
 information, see [Amazon ECS-optimized\
-Linux AMI](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-optimized_AMI.html) in the _Amazon Elastic Container Service Developer_
+Linux AMI](../../../../services/amazonecs/latest/developerguide/ecs-optimized-ami.md) in the _Amazon Elastic Container Service Developer_
 _Guide_.
 
 ###### Note
@@ -26,7 +26,7 @@ following platforms:
 
 - Windows platform version `1.0.0` or later.
 
-For more information about how to create a container dependency, see [Container dependency](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/example_task_definitions.html#example_task_definition-containerdependency) in the _Amazon Elastic Container Service_
+For more information about how to create a container dependency, see [Container dependency](../../../../services/amazonecs/latest/developerguide/example-task-definitions-example-task-definition-containerdependency.md) in the _Amazon Elastic Container Service_
 _Developer Guide_.
 
 ## Contents
@@ -72,13 +72,13 @@ Required: Yes
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/ContainerDependency)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/containerdependency.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/ContainerDependency)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/containerdependency.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/ContainerDependency)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/containerdependency.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ContainerDefinition
 

@@ -17,14 +17,14 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-06-26**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-forecastquery-2018-06-26.html)
+- [**2018-06-26**](api-forecastquery-2018-06-26.md)
 
-  - [QueryForecast](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-forecastquery-2018-06-26.html#queryforecast)
-  - [QueryWhatIfForecast](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-forecastquery-2018-06-26.html#querywhatifforecast)
+  - [QueryForecast](api-forecastquery-2018-06-26-queryforecast.md)
+  - [QueryWhatIfForecast](api-forecastquery-2018-06-26-querywhatifforecast.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ForecastQueryService.ForecastQueryServiceClient.html\#toc)
+### Table of Contents  [header link](class-aws-forecastqueryservice-forecastqueryserviceclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ForecastQueryService.ForecastQueryServiceClient.html\#toc-methods)
+#### Methods  [header link](class-aws-forecastqueryservice-forecastqueryserviceclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -55,7 +55,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ForecastQueryService.ForecastQueryServiceClient.html\#methods)
+### Methods  [header link](class-aws-forecastqueryservice-forecastqueryserviceclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -522,7 +522,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ForecastQueryService.ForecastQueryServiceClient.html#toc-methods)
+  - [Methods](class-aws-forecastqueryservice-forecastqueryserviceclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -549,4 +549,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ForecastQueryService.ForecastQueryServiceClient.html#top)
+[Back To Top](class-aws-forecastqueryservice-forecastqueryserviceclient-top.md)

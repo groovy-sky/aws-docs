@@ -17,39 +17,39 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2023-05-15**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html)
+- [**2023-05-15**](api-rtbfabric-2023-05-15.md)
 
-  - [AcceptLink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#acceptlink)
-  - [CreateInboundExternalLink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#createinboundexternallink)
-  - [CreateLink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#createlink)
-  - [CreateOutboundExternalLink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#createoutboundexternallink)
-  - [CreateRequesterGateway](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#createrequestergateway)
-  - [CreateResponderGateway](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#createrespondergateway)
-  - [DeleteInboundExternalLink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#deleteinboundexternallink)
-  - [DeleteLink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#deletelink)
-  - [DeleteOutboundExternalLink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#deleteoutboundexternallink)
-  - [DeleteRequesterGateway](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#deleterequestergateway)
-  - [DeleteResponderGateway](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#deleterespondergateway)
-  - [GetInboundExternalLink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#getinboundexternallink)
-  - [GetLink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#getlink)
-  - [GetOutboundExternalLink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#getoutboundexternallink)
-  - [GetRequesterGateway](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#getrequestergateway)
-  - [GetResponderGateway](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#getrespondergateway)
-  - [ListLinks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#listlinks)
-  - [ListRequesterGateways](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#listrequestergateways)
-  - [ListResponderGateways](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#listrespondergateways)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#listtagsforresource)
-  - [RejectLink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#rejectlink)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#untagresource)
-  - [UpdateLink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#updatelink)
-  - [UpdateLinkModuleFlow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#updatelinkmoduleflow)
-  - [UpdateRequesterGateway](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#updaterequestergateway)
-  - [UpdateResponderGateway](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rtbfabric-2023-05-15.html#updaterespondergateway)
+  - [AcceptLink](api-rtbfabric-2023-05-15-acceptlink.md)
+  - [CreateInboundExternalLink](api-rtbfabric-2023-05-15-createinboundexternallink.md)
+  - [CreateLink](api-rtbfabric-2023-05-15-createlink.md)
+  - [CreateOutboundExternalLink](api-rtbfabric-2023-05-15-createoutboundexternallink.md)
+  - [CreateRequesterGateway](api-rtbfabric-2023-05-15-createrequestergateway.md)
+  - [CreateResponderGateway](api-rtbfabric-2023-05-15-createrespondergateway.md)
+  - [DeleteInboundExternalLink](api-rtbfabric-2023-05-15-deleteinboundexternallink.md)
+  - [DeleteLink](api-rtbfabric-2023-05-15-deletelink.md)
+  - [DeleteOutboundExternalLink](api-rtbfabric-2023-05-15-deleteoutboundexternallink.md)
+  - [DeleteRequesterGateway](api-rtbfabric-2023-05-15-deleterequestergateway.md)
+  - [DeleteResponderGateway](api-rtbfabric-2023-05-15-deleterespondergateway.md)
+  - [GetInboundExternalLink](api-rtbfabric-2023-05-15-getinboundexternallink.md)
+  - [GetLink](api-rtbfabric-2023-05-15-getlink.md)
+  - [GetOutboundExternalLink](api-rtbfabric-2023-05-15-getoutboundexternallink.md)
+  - [GetRequesterGateway](api-rtbfabric-2023-05-15-getrequestergateway.md)
+  - [GetResponderGateway](api-rtbfabric-2023-05-15-getrespondergateway.md)
+  - [ListLinks](api-rtbfabric-2023-05-15-listlinks.md)
+  - [ListRequesterGateways](api-rtbfabric-2023-05-15-listrequestergateways.md)
+  - [ListResponderGateways](api-rtbfabric-2023-05-15-listrespondergateways.md)
+  - [ListTagsForResource](api-rtbfabric-2023-05-15-listtagsforresource.md)
+  - [RejectLink](api-rtbfabric-2023-05-15-rejectlink.md)
+  - [TagResource](api-rtbfabric-2023-05-15-tagresource.md)
+  - [UntagResource](api-rtbfabric-2023-05-15-untagresource.md)
+  - [UpdateLink](api-rtbfabric-2023-05-15-updatelink.md)
+  - [UpdateLinkModuleFlow](api-rtbfabric-2023-05-15-updatelinkmoduleflow.md)
+  - [UpdateRequesterGateway](api-rtbfabric-2023-05-15-updaterequestergateway.md)
+  - [UpdateResponderGateway](api-rtbfabric-2023-05-15-updaterespondergateway.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RTBFabric.RTBFabricClient.html\#toc)
+### Table of Contents  [header link](class-aws-rtbfabric-rtbfabricclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RTBFabric.RTBFabricClient.html\#toc-methods)
+#### Methods  [header link](class-aws-rtbfabric-rtbfabricclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -80,7 +80,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RTBFabric.RTBFabricClient.html\#methods)
+### Methods  [header link](class-aws-rtbfabric-rtbfabricclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -547,7 +547,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RTBFabric.RTBFabricClient.html#toc-methods)
+  - [Methods](class-aws-rtbfabric-rtbfabricclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -574,4 +574,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RTBFabric.RTBFabricClient.html#top)
+[Back To Top](class-aws-rtbfabric-rtbfabricclient-top.md)

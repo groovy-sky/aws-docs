@@ -25,7 +25,7 @@ can't alias their AMIs. This enables you to easily find AMIs from Amazon or veri
 partners.
 
 To become a verified provider, you must register as a seller on the AWS Marketplace. Once registered,
-you can list your AMI on the AWS Marketplace. For more information, see [Getting started as a seller](https://docs.aws.amazon.com/marketplace/latest/userguide/user-guide-for-sellers.html) and [AMI-based products](https://docs.aws.amazon.com/marketplace/latest/userguide/ami-products.html) in
+you can list your AMI on the AWS Marketplace. For more information, see [Getting started as a seller](../../../marketplace/latest/userguide/user-guide-for-sellers.md) and [AMI-based products](../../../marketplace/latest/userguide/ami-products.md) in
 the _AWS Marketplace Seller Guide_.
 
 ###### Shared AMI topics

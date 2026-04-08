@@ -11,7 +11,7 @@ AWS services that are in this list.
 ###### Note
 
 For information about why it's no longer possible to specify services in scope manually, see
-[I can't edit the services in scope for my assessment](https://docs.aws.amazon.com/audit-manager/latest/userguide/evidence-collection-issues.html#unable-to-edit-services) in
+[I can't edit the services in scope for my assessment](../../../../services/audit-manager/latest/userguide/evidence-collection-issues-unable-to-edit-services.md) in
 the _Troubleshooting_ section of the AWS Audit Manager user
 guide.
 
@@ -60,7 +60,7 @@ The following data is returned in JSON format by the service.
 
 The metadata that's associated with the AWS service.
 
-Type: Array of [ServiceMetadata](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_ServiceMetadata.html) objects
+Type: Array of [ServiceMetadata](api-servicemetadata.md) objects
 
 ## Errors
 
@@ -1039,27 +1039,27 @@ Audit Manager can collect evidence from.
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/auditmanager-2017-07-25/GetServicesInScope)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/auditmanager-2017-07-25/getservicesinscope.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/auditmanager-2017-07-25/GetServicesInScope)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/auditmanager-2017-07-25/getservicesinscope.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/auditmanager-2017-07-25/GetServicesInScope)
+- [AWS SDK for C++](../../../goto/sdkforcpp/auditmanager-2017-07-25/getservicesinscope.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/auditmanager-2017-07-25/GetServicesInScope)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/auditmanager-2017-07-25/getservicesinscope.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/auditmanager-2017-07-25/GetServicesInScope)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/auditmanager-2017-07-25/getservicesinscope.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/auditmanager-2017-07-25/GetServicesInScope)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/auditmanager-2017-07-25/getservicesinscope.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/auditmanager-2017-07-25/GetServicesInScope)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/auditmanager-2017-07-25/getservicesinscope.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/auditmanager-2017-07-25/GetServicesInScope)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/auditmanager-2017-07-25/getservicesinscope.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/auditmanager-2017-07-25/GetServicesInScope)
+- [AWS SDK for Python](../../../../services/goto/boto3/auditmanager-2017-07-25/getservicesinscope.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/auditmanager-2017-07-25/GetServicesInScope)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/auditmanager-2017-07-25/getservicesinscope.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GetOrganizationAdminAccount
 

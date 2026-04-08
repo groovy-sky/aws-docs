@@ -2,23 +2,23 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [Sts](namespace-aws-sts.md)
-- [RegionalEndpoints](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sts.regionalendpoints.html)
+- [RegionalEndpoints](namespace-aws-sts-regionalendpoints.md)
 
 ## ConfigurationInterface     in    - [Aws](package-aws.md)
 
 Provides access to STS regional endpoints configuration options: endpoints\_type
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.ConfigurationInterface.html\#toc)
+### Table of Contents  [header link](class-aws-sts-regionalendpoints-configurationinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.ConfigurationInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-sts-regionalendpoints-configurationinterface-toc-methods.md)
 
-[getEndpointsType()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.ConfigurationInterface.html#method_getEndpointsType)
-: string Returns the endpoints type[toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.ConfigurationInterface.html#method_toArray)
+[getEndpointsType()](class-aws-sts-regionalendpoints-configurationinterface-method-getendpointstype.md)
+: string Returns the endpoints type[toArray()](class-aws-sts-regionalendpoints-configurationinterface-method-toarray.md)
 : array<string\|int, mixed> Returns the configuration as an associative array
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.ConfigurationInterface.html\#methods)
+### Methods  [header link](class-aws-sts-regionalendpoints-configurationinterface-methods.md)
 
-#### getEndpointsType()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.ConfigurationInterface.html\#method_getEndpointsType)
+#### getEndpointsType()  [header link](class-aws-sts-regionalendpoints-configurationinterface-method-getendpointstype.md)
 
 Returns the endpoints type
 
@@ -30,7 +30,7 @@ Returns the endpoints type
 
 string
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.ConfigurationInterface.html\#method_toArray)
+#### toArray()  [header link](class-aws-sts-regionalendpoints-configurationinterface-method-toarray.md)
 
 Returns the configuration as an associative array
 
@@ -48,10 +48,10 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.ConfigurationInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.ConfigurationInterface.html#toc-methods)
+  - [Constants](class-aws-sts-regionalendpoints-configurationinterface-toc-constants.md)
+  - [Methods](class-aws-sts-regionalendpoints-configurationinterface-toc-methods.md)
 - Methods
-  - [getEndpointsType()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.ConfigurationInterface.html#method_getEndpointsType)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.ConfigurationInterface.html#method_toArray)
+  - [getEndpointsType()](class-aws-sts-regionalendpoints-configurationinterface-method-getendpointstype.md)
+  - [toArray()](class-aws-sts-regionalendpoints-configurationinterface-method-toarray.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.ConfigurationInterface.html#top)
+[Back To Top](class-aws-sts-regionalendpoints-configurationinterface-top.md)

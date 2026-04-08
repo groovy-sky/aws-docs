@@ -2,30 +2,30 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [EndpointV2](namespace-aws-endpointv2.md)
-- [Rule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpointv2.rule.html)
+- [Rule](namespace-aws-endpointv2-rule.md)
 
 ## TreeRule     extends [AbstractRule](class-aws-endpointv2-rule-abstractrule.md)   in package    - [Aws](package-aws.md)
 
 A rule within a rule set. All rules contain a conditions property,
 which can be empty, and documentation about the rule.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.TreeRule.html\#toc)
+### Table of Contents  [header link](class-aws-endpointv2-rule-treerule-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.TreeRule.html\#toc-methods)
+#### Methods  [header link](class-aws-endpointv2-rule-treerule-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.TreeRule.html#method___construct)
-: mixed [evaluate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.TreeRule.html#method_evaluate)
+[\_\_construct()](class-aws-endpointv2-rule-treerule-method-construct.md)
+: mixed [evaluate()](class-aws-endpointv2-rule-treerule-method-evaluate.md)
 : mixed If a tree rule's conditions evaluate successfully, iterate over its
 subordinate rules and return a result if there is one. If any of the
 subsequent rules are trees, the function will recurse until it reaches
 an error or an endpoint rule[getConditions()](class-aws-endpointv2-rule-abstractrule.md#method_getConditions)
 : array<string\|int, mixed> [getDocumentation()](class-aws-endpointv2-rule-abstractrule.md#method_getDocumentation)
-: mixed [getRules()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.TreeRule.html#method_getRules)
+: mixed [getRules()](class-aws-endpointv2-rule-treerule-method-getrules.md)
 : array<string\|int, mixed>
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.TreeRule.html\#methods)
+### Methods  [header link](class-aws-endpointv2-rule-treerule-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.TreeRule.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-endpointv2-rule-treerule-method-construct.md)
 
 `
     public
@@ -36,7 +36,7 @@ an error or an endpoint rule[getConditions()](class-aws-endpointv2-rule-abstract
 $definition
 : array<string\|int, mixed>
 
-#### evaluate()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.TreeRule.html\#method_evaluate)
+#### evaluate()  [header link](class-aws-endpointv2-rule-treerule-method-evaluate.md)
 
 If a tree rule's conditions evaluate successfully, iterate over its
 subordinate rules and return a result if there is one. If any of the
@@ -69,7 +69,7 @@ array<string\|int, mixed>
     public
                     getDocumentation() : mixed`
 
-#### getRules()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.TreeRule.html\#method_getRules)
+#### getRules()  [header link](class-aws-endpointv2-rule-treerule-method-getrules.md)
 
 `
     public
@@ -85,12 +85,12 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.TreeRule.html#toc-methods)
+  - [Methods](class-aws-endpointv2-rule-treerule-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.TreeRule.html#method___construct)
-  - [evaluate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.TreeRule.html#method_evaluate)
+  - [\_\_construct()](class-aws-endpointv2-rule-treerule-method-construct.md)
+  - [evaluate()](class-aws-endpointv2-rule-treerule-method-evaluate.md)
   - [getConditions()](class-aws-endpointv2-rule-abstractrule.md#method_getConditions)
   - [getDocumentation()](class-aws-endpointv2-rule-abstractrule.md#method_getDocumentation)
-  - [getRules()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.TreeRule.html#method_getRules)
+  - [getRules()](class-aws-endpointv2-rule-treerule-method-getrules.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.TreeRule.html#top)
+[Back To Top](class-aws-endpointv2-rule-treerule-top.md)

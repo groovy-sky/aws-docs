@@ -4,15 +4,15 @@ Menu
 
 ## LexRuntimeService
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lexruntimeservice.html\#toc)
+### Table of Contents  [header link](namespace-aws-lexruntimeservice-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lexruntimeservice.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-lexruntimeservice-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lexruntimeservice.exception.html)
+[Exception](namespace-aws-lexruntimeservice-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lexruntimeservice.html\#toc-classes)
+#### Classes  [header link](namespace-aws-lexruntimeservice-toc-classes.md)
 
-[LexRuntimeServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LexRuntimeService.LexRuntimeServiceClient.html)This client is used to interact with the **Amazon Lex Runtime Service** service.
+[LexRuntimeServiceClient](class-aws-lexruntimeservice-lexruntimeserviceclient.md)This client is used to interact with the **Amazon Lex Runtime Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lexruntimeservice.html#toc-classes)
+  - [Classes](namespace-aws-lexruntimeservice-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lexruntimeservice.html#top)
+[Back To Top](namespace-aws-lexruntimeservice-top.md)

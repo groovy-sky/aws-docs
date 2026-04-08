@@ -17,48 +17,48 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2012-06-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html)
+- [**2012-06-01**](api-glacier-2012-06-01.md)
 
-  - [AbortMultipartUpload](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#abortmultipartupload)
-  - [AbortVaultLock](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#abortvaultlock)
-  - [AddTagsToVault](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#addtagstovault)
-  - [CompleteMultipartUpload](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#completemultipartupload)
-  - [CompleteVaultLock](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#completevaultlock)
-  - [CreateVault](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#createvault)
-  - [DeleteArchive](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#deletearchive)
-  - [DeleteVault](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#deletevault)
-  - [DeleteVaultAccessPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#deletevaultaccesspolicy)
-  - [DeleteVaultNotifications](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#deletevaultnotifications)
-  - [DescribeJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#describejob)
-  - [DescribeVault](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#describevault)
-  - [GetDataRetrievalPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#getdataretrievalpolicy)
-  - [GetJobOutput](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#getjoboutput)
-  - [GetVaultAccessPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#getvaultaccesspolicy)
-  - [GetVaultLock](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#getvaultlock)
-  - [GetVaultNotifications](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#getvaultnotifications)
-  - [InitiateJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#initiatejob)
-  - [InitiateMultipartUpload](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#initiatemultipartupload)
-  - [InitiateVaultLock](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#initiatevaultlock)
-  - [ListJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#listjobs)
-  - [ListMultipartUploads](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#listmultipartuploads)
-  - [ListParts](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#listparts)
-  - [ListProvisionedCapacity](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#listprovisionedcapacity)
-  - [ListTagsForVault](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#listtagsforvault)
-  - [ListVaults](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#listvaults)
-  - [PurchaseProvisionedCapacity](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#purchaseprovisionedcapacity)
-  - [RemoveTagsFromVault](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#removetagsfromvault)
-  - [SetDataRetrievalPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#setdataretrievalpolicy)
-  - [SetVaultAccessPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#setvaultaccesspolicy)
-  - [SetVaultNotifications](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#setvaultnotifications)
-  - [UploadArchive](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#uploadarchive)
-  - [UploadMultipartPart](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-glacier-2012-06-01.html#uploadmultipartpart)
+  - [AbortMultipartUpload](api-glacier-2012-06-01-abortmultipartupload.md)
+  - [AbortVaultLock](api-glacier-2012-06-01-abortvaultlock.md)
+  - [AddTagsToVault](api-glacier-2012-06-01-addtagstovault.md)
+  - [CompleteMultipartUpload](api-glacier-2012-06-01-completemultipartupload.md)
+  - [CompleteVaultLock](api-glacier-2012-06-01-completevaultlock.md)
+  - [CreateVault](api-glacier-2012-06-01-createvault.md)
+  - [DeleteArchive](api-glacier-2012-06-01-deletearchive.md)
+  - [DeleteVault](api-glacier-2012-06-01-deletevault.md)
+  - [DeleteVaultAccessPolicy](api-glacier-2012-06-01-deletevaultaccesspolicy.md)
+  - [DeleteVaultNotifications](api-glacier-2012-06-01-deletevaultnotifications.md)
+  - [DescribeJob](api-glacier-2012-06-01-describejob.md)
+  - [DescribeVault](api-glacier-2012-06-01-describevault.md)
+  - [GetDataRetrievalPolicy](api-glacier-2012-06-01-getdataretrievalpolicy.md)
+  - [GetJobOutput](api-glacier-2012-06-01-getjoboutput.md)
+  - [GetVaultAccessPolicy](api-glacier-2012-06-01-getvaultaccesspolicy.md)
+  - [GetVaultLock](api-glacier-2012-06-01-getvaultlock.md)
+  - [GetVaultNotifications](api-glacier-2012-06-01-getvaultnotifications.md)
+  - [InitiateJob](api-glacier-2012-06-01-initiatejob.md)
+  - [InitiateMultipartUpload](api-glacier-2012-06-01-initiatemultipartupload.md)
+  - [InitiateVaultLock](api-glacier-2012-06-01-initiatevaultlock.md)
+  - [ListJobs](api-glacier-2012-06-01-listjobs.md)
+  - [ListMultipartUploads](api-glacier-2012-06-01-listmultipartuploads.md)
+  - [ListParts](api-glacier-2012-06-01-listparts.md)
+  - [ListProvisionedCapacity](api-glacier-2012-06-01-listprovisionedcapacity.md)
+  - [ListTagsForVault](api-glacier-2012-06-01-listtagsforvault.md)
+  - [ListVaults](api-glacier-2012-06-01-listvaults.md)
+  - [PurchaseProvisionedCapacity](api-glacier-2012-06-01-purchaseprovisionedcapacity.md)
+  - [RemoveTagsFromVault](api-glacier-2012-06-01-removetagsfromvault.md)
+  - [SetDataRetrievalPolicy](api-glacier-2012-06-01-setdataretrievalpolicy.md)
+  - [SetVaultAccessPolicy](api-glacier-2012-06-01-setvaultaccesspolicy.md)
+  - [SetVaultNotifications](api-glacier-2012-06-01-setvaultnotifications.md)
+  - [UploadArchive](api-glacier-2012-06-01-uploadarchive.md)
+  - [UploadMultipartPart](api-glacier-2012-06-01-uploadmultipartpart.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.GlacierClient.html\#toc)
+### Table of Contents  [header link](class-aws-glacier-glacierclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.GlacierClient.html\#toc-methods)
+#### Methods  [header link](class-aws-glacier-glacierclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
-: mixed [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.GlacierClient.html#method___construct)
+: mixed [\_\_construct()](class-aws-glacier-glacierclient-method-construct.md)
 : mixed The client constructor accepts the following options:[\_\_sleep()](class-aws-awsclient.md#method___sleep)
 : mixed [execute()](class-aws-awsclienttrait.md#method_execute)
 : mixed [executeAsync()](class-aws-awsclienttrait.md#method_executeAsync)
@@ -69,7 +69,7 @@ specific API operation can be done using magic methods (e.g.,
 : array<string\|int, mixed> Provides the set of built-in keys and values
 used for endpoint resolution[getClientContextParams()](class-aws-awsclient.md#method_getClientContextParams)
 : array<string\|int, mixed> Provides the set of service context parameter
-key-value pairs used for endpoint resolution.[getCommand()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.GlacierClient.html#method_getCommand)
+key-value pairs used for endpoint resolution.[getCommand()](class-aws-glacier-glacierclient-method-getcommand.md)
 : [CommandInterface](class-aws-commandinterface.md)Create a command for an operation name.[getConfig()](class-aws-awsclient.md#method_getConfig)
 : mixed\|null Get a client configuration value.[getCredentials()](class-aws-awsclient.md#method_getCredentials)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Returns a promise that is fulfilled with an
@@ -86,7 +86,7 @@ key-value pairs used for endpoint resolution.[getCommand()](https://docs.aws.ama
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.GlacierClient.html\#methods)
+### Methods  [header link](class-aws-glacier-glacierclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -100,7 +100,7 @@ $name
 : mixed$args
 : array<string\|int, mixed>
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.GlacierClient.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-glacier-glacierclient-method-construct.md)
 
 The client constructor accepts the following options:
 
@@ -359,7 +359,7 @@ key-value pairs used for endpoint resolution.
 
 array<string\|int, mixed>
 
-#### getCommand()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.GlacierClient.html\#method_getCommand)
+#### getCommand()  [header link](class-aws-glacier-glacierclient-method-getcommand.md)
 
 Create a command for an operation name.
 
@@ -556,10 +556,10 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.GlacierClient.html#toc-methods)
+  - [Methods](class-aws-glacier-glacierclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.GlacierClient.html#method___construct)
+  - [\_\_construct()](class-aws-glacier-glacierclient-method-construct.md)
   - [\_\_sleep()](class-aws-awsclient.md#method___sleep)
   - [execute()](class-aws-awsclienttrait.md#method_execute)
   - [executeAsync()](class-aws-awsclienttrait.md#method_executeAsync)
@@ -568,7 +568,7 @@ $name
   - [getArguments()](class-aws-awsclient.md#method_getArguments)
   - [getClientBuiltIns()](class-aws-awsclient.md#method_getClientBuiltIns)
   - [getClientContextParams()](class-aws-awsclient.md#method_getClientContextParams)
-  - [getCommand()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.GlacierClient.html#method_getCommand)
+  - [getCommand()](class-aws-glacier-glacierclient-method-getcommand.md)
   - [getConfig()](class-aws-awsclient.md#method_getConfig)
   - [getCredentials()](class-aws-awsclient.md#method_getCredentials)
   - [getEndpoint()](class-aws-awsclient.md#method_getEndpoint)
@@ -583,4 +583,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.GlacierClient.html#top)
+[Back To Top](class-aws-glacier-glacierclient-top.md)

@@ -37,7 +37,7 @@ or `Failed to read SecureBoot`.
     If UEFI Secure Boot is enabled, the value is **Supported**,
     as shown in the following image.
 
-![Secure Boot State within System Information.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/secure-boot-state-win.png)
+![Secure Boot State within System Information.](../../../images/awsec2/latest/userguide/images/secure-boot-state-win-png.md)
 
 You can also use the Windows PowerShell Cmdlet
 `Confirm-SecureBootUEFI` to check the Secure Boot status. For more

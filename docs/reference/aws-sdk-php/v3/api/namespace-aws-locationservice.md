@@ -4,15 +4,15 @@ Menu
 
 ## LocationService
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.locationservice.html\#toc)
+### Table of Contents  [header link](namespace-aws-locationservice-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.locationservice.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-locationservice-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.locationservice.exception.html)
+[Exception](namespace-aws-locationservice-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.locationservice.html\#toc-classes)
+#### Classes  [header link](namespace-aws-locationservice-toc-classes.md)
 
-[LocationServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LocationService.LocationServiceClient.html)This client is used to interact with the **Amazon Location Service** service.
+[LocationServiceClient](class-aws-locationservice-locationserviceclient.md)This client is used to interact with the **Amazon Location Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.locationservice.html#toc-classes)
+  - [Classes](namespace-aws-locationservice-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.locationservice.html#top)
+[Back To Top](namespace-aws-locationservice-top.md)

@@ -70,7 +70,7 @@ The following actions are supported by Amazon Route 53 domain registration:
 
 - [ViewBilling](api-domains-viewbilling.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 UpdateTrafficPolicyInstance
 

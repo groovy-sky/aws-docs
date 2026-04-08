@@ -5,7 +5,7 @@ Menu
 
 ## CommonRuntimeException     extends RuntimeException   in package    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.CommonRuntimeException.html\#toc)
+### Table of Contents  [header link](class-aws-exception-commonruntimeexception-toc.md)
 
 ×
 
@@ -13,4 +13,4 @@ Menu
 
 - Table Of Contents
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.CommonRuntimeException.html#top)
+[Back To Top](class-aws-exception-commonruntimeexception-top.md)

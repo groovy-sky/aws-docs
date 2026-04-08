@@ -4,15 +4,15 @@ Menu
 
 ## Route53RecoveryCluster
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53recoverycluster.html\#toc)
+### Table of Contents  [header link](namespace-aws-route53recoverycluster-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53recoverycluster.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-route53recoverycluster-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53recoverycluster.exception.html)
+[Exception](namespace-aws-route53recoverycluster-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53recoverycluster.html\#toc-classes)
+#### Classes  [header link](namespace-aws-route53recoverycluster-toc-classes.md)
 
-[Route53RecoveryClusterClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryCluster.Route53RecoveryClusterClient.html)This client is used to interact with the **Route53 Recovery Cluster** service.
+[Route53RecoveryClusterClient](class-aws-route53recoverycluster-route53recoveryclusterclient.md)This client is used to interact with the **Route53 Recovery Cluster** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53recoverycluster.html#toc-classes)
+  - [Classes](namespace-aws-route53recoverycluster-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53recoverycluster.html#top)
+[Back To Top](namespace-aws-route53recoverycluster-top.md)

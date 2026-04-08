@@ -1,8 +1,8 @@
 Menu
 
-- [Psr](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.html)
-- [Http](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.html)
-- [Message](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.message.html)
+- [Psr](namespace-psr.md)
+- [Http](namespace-psr-http.md)
+- [Message](namespace-psr-http-message.md)
 
 ## ServerRequestInterface    extends  [RequestInterface](class-psr-http-message-requestinterface.md)   in    - [Aws](package-aws.md)
 
@@ -43,45 +43,45 @@ Requests are considered immutable; all methods that might change state MUST
 be implemented such that they retain the internal state of the current
 message and return an instance that contains the changed state.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html\#toc)
+### Table of Contents  [header link](class-psr-http-message-serverrequestinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html\#toc-methods)
+#### Methods  [header link](class-psr-http-message-serverrequestinterface-toc-methods.md)
 
-[getAttribute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_getAttribute)
-: mixed Retrieve a single derived request attribute.[getAttributes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_getAttributes)
+[getAttribute()](class-psr-http-message-serverrequestinterface-method-getattribute.md)
+: mixed Retrieve a single derived request attribute.[getAttributes()](class-psr-http-message-serverrequestinterface-method-getattributes.md)
 : array<string\|int, mixed> Retrieve attributes derived from the request.[getBody()](class-psr-http-message-messageinterface.md#method_getBody)
-: [StreamInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html)Gets the body of the message.[getCookieParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_getCookieParams)
+: [StreamInterface](class-psr-http-message-streaminterface.md)Gets the body of the message.[getCookieParams()](class-psr-http-message-serverrequestinterface-method-getcookieparams.md)
 : array<string\|int, mixed> Retrieve cookies.[getHeader()](class-psr-http-message-messageinterface.md#method_getHeader)
 : array<string\|int, string> Retrieves a message header value by the given case-insensitive name.[getHeaderLine()](class-psr-http-message-messageinterface.md#method_getHeaderLine)
 : string Retrieves a comma-separated string of the values for a single header.[getHeaders()](class-psr-http-message-messageinterface.md#method_getHeaders)
 : array<string\|int, array<string\|int, string>> Retrieves all message header values.[getMethod()](class-psr-http-message-requestinterface.md#method_getMethod)
-: string Retrieves the HTTP method of the request.[getParsedBody()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_getParsedBody)
+: string Retrieves the HTTP method of the request.[getParsedBody()](class-psr-http-message-serverrequestinterface-method-getparsedbody.md)
 : null\|array<string\|int, mixed>\|object Retrieve any parameters provided in the request body.[getProtocolVersion()](class-psr-http-message-messageinterface.md#method_getProtocolVersion)
-: string Retrieves the HTTP protocol version as a string.[getQueryParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_getQueryParams)
+: string Retrieves the HTTP protocol version as a string.[getQueryParams()](class-psr-http-message-serverrequestinterface-method-getqueryparams.md)
 : array<string\|int, mixed> Retrieve query string arguments.[getRequestTarget()](class-psr-http-message-requestinterface.md#method_getRequestTarget)
-: string Retrieves the message's request target.[getServerParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_getServerParams)
-: array<string\|int, mixed> Retrieve server parameters.[getUploadedFiles()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_getUploadedFiles)
+: string Retrieves the message's request target.[getServerParams()](class-psr-http-message-serverrequestinterface-method-getserverparams.md)
+: array<string\|int, mixed> Retrieve server parameters.[getUploadedFiles()](class-psr-http-message-serverrequestinterface-method-getuploadedfiles.md)
 : array<string\|int, mixed> Retrieve normalized file upload data.[getUri()](class-psr-http-message-requestinterface.md#method_getUri)
 : [UriInterface](class-psr-http-message-uriinterface.md)Retrieves the URI instance.[hasHeader()](class-psr-http-message-messageinterface.md#method_hasHeader)
 : bool Checks if a header exists by the given case-insensitive name.[withAddedHeader()](class-psr-http-message-messageinterface.md#method_withAddedHeader)
-: static Return an instance with the specified header appended with the given value.[withAttribute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_withAttribute)
+: static Return an instance with the specified header appended with the given value.[withAttribute()](class-psr-http-message-serverrequestinterface-method-withattribute.md)
 : static Return an instance with the specified derived request attribute.[withBody()](class-psr-http-message-messageinterface.md#method_withBody)
-: static Return an instance with the specified message body.[withCookieParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_withCookieParams)
+: static Return an instance with the specified message body.[withCookieParams()](class-psr-http-message-serverrequestinterface-method-withcookieparams.md)
 : static Return an instance with the specified cookies.[withHeader()](class-psr-http-message-messageinterface.md#method_withHeader)
 : static Return an instance with the provided value replacing the specified header.[withMethod()](class-psr-http-message-requestinterface.md#method_withMethod)
-: static Return an instance with the provided HTTP method.[withoutAttribute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_withoutAttribute)
+: static Return an instance with the provided HTTP method.[withoutAttribute()](class-psr-http-message-serverrequestinterface-method-withoutattribute.md)
 : static Return an instance that removes the specified derived request attribute.[withoutHeader()](class-psr-http-message-messageinterface.md#method_withoutHeader)
-: static Return an instance without the specified header.[withParsedBody()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_withParsedBody)
+: static Return an instance without the specified header.[withParsedBody()](class-psr-http-message-serverrequestinterface-method-withparsedbody.md)
 : static Return an instance with the specified body parameters.[withProtocolVersion()](class-psr-http-message-messageinterface.md#method_withProtocolVersion)
-: static Return an instance with the specified HTTP protocol version.[withQueryParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_withQueryParams)
+: static Return an instance with the specified HTTP protocol version.[withQueryParams()](class-psr-http-message-serverrequestinterface-method-withqueryparams.md)
 : static Return an instance with the specified query string arguments.[withRequestTarget()](class-psr-http-message-requestinterface.md#method_withRequestTarget)
-: static Return an instance with the specific request-target.[withUploadedFiles()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_withUploadedFiles)
+: static Return an instance with the specific request-target.[withUploadedFiles()](class-psr-http-message-serverrequestinterface-method-withuploadedfiles.md)
 : static Create a new instance with the specified uploaded files.[withUri()](class-psr-http-message-requestinterface.md#method_withUri)
 : static Returns an instance with the provided URI.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html\#methods)
+### Methods  [header link](class-psr-http-message-serverrequestinterface-methods.md)
 
-#### getAttribute()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html\#method_getAttribute)
+#### getAttribute()  [header link](class-psr-http-message-serverrequestinterface-method-getattribute.md)
 
 Retrieve a single derived request attribute.
 
@@ -109,11 +109,11 @@ $default
 
 Default value to return if the attribute does not exist.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html\#method_getAttribute\#tags)
+##### Tags  [header link](class-psr-http-message-serverrequestinterface-method-getattribute-tags.md)
 
 seegetAttributes()
 
-#### getAttributes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html\#method_getAttributes)
+#### getAttributes()  [header link](class-psr-http-message-serverrequestinterface-method-getattributes.md)
 
 Retrieve attributes derived from the request.
 
@@ -144,12 +144,12 @@ Gets the body of the message.
 
 ##### Return values
 
-[StreamInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html)
+[StreamInterface](class-psr-http-message-streaminterface.md)
 —
 
 Returns the body as a stream.
 
-#### getCookieParams()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html\#method_getCookieParams)
+#### getCookieParams()  [header link](class-psr-http-message-serverrequestinterface-method-getcookieparams.md)
 
 Retrieve cookies.
 
@@ -284,7 +284,7 @@ string
 
 Returns the request method.
 
-#### getParsedBody()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html\#method_getParsedBody)
+#### getParsedBody()  [header link](class-psr-http-message-serverrequestinterface-method-getparsedbody.md)
 
 Retrieve any parameters provided in the request body.
 
@@ -326,7 +326,7 @@ string
 
 HTTP protocol version.
 
-#### getQueryParams()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html\#method_getQueryParams)
+#### getQueryParams()  [header link](class-psr-http-message-serverrequestinterface-method-getqueryparams.md)
 
 Retrieve query string arguments.
 
@@ -368,7 +368,7 @@ provided, this method MUST return the string "/".
 
 string
 
-#### getServerParams()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html\#method_getServerParams)
+#### getServerParams()  [header link](class-psr-http-message-serverrequestinterface-method-getserverparams.md)
 
 Retrieve server parameters.
 
@@ -384,7 +384,7 @@ REQUIRED to originate from $\_SERVER.
 
 array<string\|int, mixed>
 
-#### getUploadedFiles()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html\#method_getUploadedFiles)
+#### getUploadedFiles()  [header link](class-psr-http-message-serverrequestinterface-method-getuploadedfiles.md)
 
 Retrieve normalized file upload data.
 
@@ -490,7 +490,7 @@ for invalid header names or values.
 
 static
 
-#### withAttribute()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html\#method_withAttribute)
+#### withAttribute()  [header link](class-psr-http-message-serverrequestinterface-method-withattribute.md)
 
 Return an instance with the specified derived request attribute.
 
@@ -517,7 +517,7 @@ $value
 
 The value of the attribute.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html\#method_withAttribute\#tags)
+##### Tags  [header link](class-psr-http-message-serverrequestinterface-method-withattribute-tags.md)
 
 seegetAttributes()
 
@@ -542,7 +542,7 @@ new body stream.
 ##### Parameters
 
 $body
-: [StreamInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html)
+: [StreamInterface](class-psr-http-message-streaminterface.md)
 
 Body.
 
@@ -556,7 +556,7 @@ When the body is not valid.
 
 static
 
-#### withCookieParams()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html\#method_withCookieParams)
+#### withCookieParams()  [header link](class-psr-http-message-serverrequestinterface-method-withcookieparams.md)
 
 Return an instance with the specified cookies.
 
@@ -656,7 +656,7 @@ for invalid HTTP methods.
 
 static
 
-#### withoutAttribute()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html\#method_withoutAttribute)
+#### withoutAttribute()  [header link](class-psr-http-message-serverrequestinterface-method-withoutattribute.md)
 
 Return an instance that removes the specified derived request attribute.
 
@@ -678,7 +678,7 @@ $name
 
 The attribute name.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html\#method_withoutAttribute\#tags)
+##### Tags  [header link](class-psr-http-message-serverrequestinterface-method-withoutattribute-tags.md)
 
 seegetAttributes()
 
@@ -711,7 +711,7 @@ Case-insensitive header field name to remove.
 
 static
 
-#### withParsedBody()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html\#method_withParsedBody)
+#### withParsedBody()  [header link](class-psr-http-message-serverrequestinterface-method-withparsedbody.md)
 
 Return an instance with the specified body parameters.
 
@@ -746,7 +746,7 @@ $data
 The deserialized body data. This will
 typically be in an array or object.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html\#method_withParsedBody\#tags)
+##### Tags  [header link](class-psr-http-message-serverrequestinterface-method-withparsedbody-tags.md)
 
 throwsInvalidArgumentException
 
@@ -783,7 +783,7 @@ HTTP protocol version
 
 static
 
-#### withQueryParams()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html\#method_withQueryParams)
+#### withQueryParams()  [header link](class-psr-http-message-serverrequestinterface-method-withqueryparams.md)
 
 Return an instance with the specified query string arguments.
 
@@ -849,7 +849,7 @@ request-target forms allowed in request messages)](http://tools.ietf.org/html/rf
 
 static
 
-#### withUploadedFiles()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html\#method_withUploadedFiles)
+#### withUploadedFiles()  [header link](class-psr-http-message-serverrequestinterface-method-withuploadedfiles.md)
 
 Create a new instance with the specified uploaded files.
 
@@ -868,7 +868,7 @@ $uploadedFiles
 
 An array tree of UploadedFileInterface instances.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html\#method_withUploadedFiles\#tags)
+##### Tags  [header link](class-psr-http-message-serverrequestinterface-method-withuploadedfiles-tags.md)
 
 throwsInvalidArgumentException
 
@@ -935,38 +935,38 @@ static
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#toc-methods)
+  - [Constants](class-psr-http-message-serverrequestinterface-toc-constants.md)
+  - [Methods](class-psr-http-message-serverrequestinterface-toc-methods.md)
 - Methods
-  - [getAttribute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_getAttribute)
-  - [getAttributes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_getAttributes)
+  - [getAttribute()](class-psr-http-message-serverrequestinterface-method-getattribute.md)
+  - [getAttributes()](class-psr-http-message-serverrequestinterface-method-getattributes.md)
   - [getBody()](class-psr-http-message-messageinterface.md#method_getBody)
-  - [getCookieParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_getCookieParams)
+  - [getCookieParams()](class-psr-http-message-serverrequestinterface-method-getcookieparams.md)
   - [getHeader()](class-psr-http-message-messageinterface.md#method_getHeader)
   - [getHeaderLine()](class-psr-http-message-messageinterface.md#method_getHeaderLine)
   - [getHeaders()](class-psr-http-message-messageinterface.md#method_getHeaders)
   - [getMethod()](class-psr-http-message-requestinterface.md#method_getMethod)
-  - [getParsedBody()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_getParsedBody)
+  - [getParsedBody()](class-psr-http-message-serverrequestinterface-method-getparsedbody.md)
   - [getProtocolVersion()](class-psr-http-message-messageinterface.md#method_getProtocolVersion)
-  - [getQueryParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_getQueryParams)
+  - [getQueryParams()](class-psr-http-message-serverrequestinterface-method-getqueryparams.md)
   - [getRequestTarget()](class-psr-http-message-requestinterface.md#method_getRequestTarget)
-  - [getServerParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_getServerParams)
-  - [getUploadedFiles()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_getUploadedFiles)
+  - [getServerParams()](class-psr-http-message-serverrequestinterface-method-getserverparams.md)
+  - [getUploadedFiles()](class-psr-http-message-serverrequestinterface-method-getuploadedfiles.md)
   - [getUri()](class-psr-http-message-requestinterface.md#method_getUri)
   - [hasHeader()](class-psr-http-message-messageinterface.md#method_hasHeader)
   - [withAddedHeader()](class-psr-http-message-messageinterface.md#method_withAddedHeader)
-  - [withAttribute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_withAttribute)
+  - [withAttribute()](class-psr-http-message-serverrequestinterface-method-withattribute.md)
   - [withBody()](class-psr-http-message-messageinterface.md#method_withBody)
-  - [withCookieParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_withCookieParams)
+  - [withCookieParams()](class-psr-http-message-serverrequestinterface-method-withcookieparams.md)
   - [withHeader()](class-psr-http-message-messageinterface.md#method_withHeader)
   - [withMethod()](class-psr-http-message-requestinterface.md#method_withMethod)
-  - [withoutAttribute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_withoutAttribute)
+  - [withoutAttribute()](class-psr-http-message-serverrequestinterface-method-withoutattribute.md)
   - [withoutHeader()](class-psr-http-message-messageinterface.md#method_withoutHeader)
-  - [withParsedBody()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_withParsedBody)
+  - [withParsedBody()](class-psr-http-message-serverrequestinterface-method-withparsedbody.md)
   - [withProtocolVersion()](class-psr-http-message-messageinterface.md#method_withProtocolVersion)
-  - [withQueryParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_withQueryParams)
+  - [withQueryParams()](class-psr-http-message-serverrequestinterface-method-withqueryparams.md)
   - [withRequestTarget()](class-psr-http-message-requestinterface.md#method_withRequestTarget)
-  - [withUploadedFiles()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#method_withUploadedFiles)
+  - [withUploadedFiles()](class-psr-http-message-serverrequestinterface-method-withuploadedfiles.md)
   - [withUri()](class-psr-http-message-requestinterface.md#method_withUri)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ServerRequestInterface.html#top)
+[Back To Top](class-psr-http-message-serverrequestinterface-top.md)

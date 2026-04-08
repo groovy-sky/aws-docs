@@ -4,15 +4,15 @@ Menu
 
 ## IoTEventsData
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ioteventsdata.html\#toc)
+### Table of Contents  [header link](namespace-aws-ioteventsdata-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ioteventsdata.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-ioteventsdata-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ioteventsdata.exception.html)
+[Exception](namespace-aws-ioteventsdata-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ioteventsdata.html\#toc-classes)
+#### Classes  [header link](namespace-aws-ioteventsdata-toc-classes.md)
 
-[IoTEventsDataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTEventsData.IoTEventsDataClient.html)This client is used to interact with the **AWS IoT Events Data** service.
+[IoTEventsDataClient](class-aws-ioteventsdata-ioteventsdataclient.md)This client is used to interact with the **AWS IoT Events Data** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ioteventsdata.html#toc-classes)
+  - [Classes](namespace-aws-ioteventsdata-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ioteventsdata.html#top)
+[Back To Top](namespace-aws-ioteventsdata-top.md)

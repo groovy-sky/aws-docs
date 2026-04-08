@@ -4,15 +4,15 @@ Menu
 
 ## RolesAnywhere
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.rolesanywhere.html\#toc)
+### Table of Contents  [header link](namespace-aws-rolesanywhere-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.rolesanywhere.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-rolesanywhere-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.rolesanywhere.exception.html)
+[Exception](namespace-aws-rolesanywhere-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.rolesanywhere.html\#toc-classes)
+#### Classes  [header link](namespace-aws-rolesanywhere-toc-classes.md)
 
-[RolesAnywhereClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RolesAnywhere.RolesAnywhereClient.html)This client is used to interact with the **IAM Roles Anywhere** service.
+[RolesAnywhereClient](class-aws-rolesanywhere-rolesanywhereclient.md)This client is used to interact with the **IAM Roles Anywhere** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.rolesanywhere.html#toc-classes)
+  - [Classes](namespace-aws-rolesanywhere-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.rolesanywhere.html#top)
+[Back To Top](namespace-aws-rolesanywhere-top.md)

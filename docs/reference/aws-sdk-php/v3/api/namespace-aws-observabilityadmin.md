@@ -4,15 +4,15 @@ Menu
 
 ## ObservabilityAdmin
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.observabilityadmin.html\#toc)
+### Table of Contents  [header link](namespace-aws-observabilityadmin-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.observabilityadmin.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-observabilityadmin-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.observabilityadmin.exception.html)
+[Exception](namespace-aws-observabilityadmin-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.observabilityadmin.html\#toc-classes)
+#### Classes  [header link](namespace-aws-observabilityadmin-toc-classes.md)
 
-[ObservabilityAdminClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ObservabilityAdmin.ObservabilityAdminClient.html)This client is used to interact with the **CloudWatch Observability Admin Service** service.
+[ObservabilityAdminClient](class-aws-observabilityadmin-observabilityadminclient.md)This client is used to interact with the **CloudWatch Observability Admin Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.observabilityadmin.html#toc-classes)
+  - [Classes](namespace-aws-observabilityadmin-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.observabilityadmin.html#top)
+[Back To Top](namespace-aws-observabilityadmin-top.md)

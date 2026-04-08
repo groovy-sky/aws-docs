@@ -22,7 +22,7 @@ Note the following:
 - For public hosted zones, Route 53 automatically creates a default SOA record
 and four NS records for the zone. For more information about SOA and NS records,
 see [NS and SOA Records\
-that Route 53 Creates for a Hosted Zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/SOA-NSrecords.html) in the
+that Route 53 Creates for a Hosted Zone](../../../../services/route53/latest/developerguide/soa-nsrecords.md) in the
 _Amazon Route 53 Developer Guide_.
 
 If you want to use the same name servers for multiple public hosted zones, you
@@ -57,7 +57,7 @@ The following are the supported partitions:
 
 - `aws-us-gov` \- AWS GovCloud (US) Region
 
-For more information, see [Access Management](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html)
+For more information, see [Access Management](../../../../general/general/latest/gr/aws-arns-and-namespaces.md)
 in the _AWS General Reference_.
 
 ## Request Syntax
@@ -113,7 +113,7 @@ Required: Yes
 
 If you want to associate a reusable delegation set with this hosted zone, the ID that
 Amazon Route 53 assigned to the reusable delegation set when you created it.
-For more information about reusable delegation sets, see [CreateReusableDelegationSet](https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateReusableDelegationSet.html).
+For more information about reusable delegation sets, see [CreateReusableDelegationSet](api-createreusabledelegationset.md).
 
 If you are using a reusable delegation set to create a public hosted zone for a subdomain,
 make sure that the parent hosted zone doesn't use one or more of the same name servers.
@@ -137,7 +137,7 @@ Required: No
 If you don't specify a comment or the `PrivateZone` element, omit
 `HostedZoneConfig` and the other elements.
 
-Type: [HostedZoneConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_HostedZoneConfig.html) object
+Type: [HostedZoneConfig](api-hostedzoneconfig.md) object
 
 Required: No
 
@@ -170,9 +170,9 @@ You can specify only one Amazon VPC when you create a private hosted zone. If yo
 associating a VPC with a hosted zone with this request, the paramaters
 `VPCId` and `VPCRegion` are also required.
 
-To associate additional Amazon VPCs with the hosted zone, use [AssociateVPCWithHostedZone](https://docs.aws.amazon.com/Route53/latest/APIReference/API_AssociateVPCWithHostedZone.html) after you create a hosted zone.
+To associate additional Amazon VPCs with the hosted zone, use [AssociateVPCWithHostedZone](api-associatevpcwithhostedzone.md) after you create a hosted zone.
 
-Type: [VPC](https://docs.aws.amazon.com/Route53/latest/APIReference/API_VPC.html) object
+Type: [VPC](api-vpc.md) object
 
 Required: No
 
@@ -249,30 +249,30 @@ Required: Yes
 A complex type that contains information about the `CreateHostedZone`
 request.
 
-Type: [ChangeInfo](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ChangeInfo.html) object
+Type: [ChangeInfo](api-changeinfo.md) object
 
 **[DelegationSet](#API_CreateHostedZone_ResponseSyntax)**
 
 A complex type that describes the name servers for this hosted zone.
 
-Type: [DelegationSet](https://docs.aws.amazon.com/Route53/latest/APIReference/API_DelegationSet.html) object
+Type: [DelegationSet](api-delegationset.md) object
 
 **[HostedZone](#API_CreateHostedZone_ResponseSyntax)**
 
 A complex type that contains general information about the hosted zone.
 
-Type: [HostedZone](https://docs.aws.amazon.com/Route53/latest/APIReference/API_HostedZone.html) object
+Type: [HostedZone](api-hostedzone.md) object
 
 **[VPC](#API_CreateHostedZone_ResponseSyntax)**
 
 A complex type that contains information about an Amazon VPC that you associated with
 this hosted zone.
 
-Type: [VPC](https://docs.aws.amazon.com/Route53/latest/APIReference/API_VPC.html) object
+Type: [VPC](api-vpc.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/Route53/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **ConflictingDomainExists**
 
@@ -284,7 +284,7 @@ and test.example.com) can't have any common name servers. You tried to create a
 hosted zone that has the same name as an existing hosted zone or that's the
 parent or child of an existing hosted zone, and you specified a delegation set
 that shares one or more name servers with the existing hosted zone. For more
-information, see [CreateReusableDelegationSet](https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateReusableDelegationSet.html).
+information, see [CreateReusableDelegationSet](api-createreusabledelegationset.md).
 
 - **Create a private hosted zone:** A hosted zone
 with the specified name already exists and is already associated with the Amazon
@@ -367,10 +367,10 @@ hosted zones that can be associated with a reusable delegation set.
 For information about default limits, see [Limits](../../../../services/route53/latest/developerguide/dnslimitations.md) in the
 _Amazon Route 53 Developer Guide_.
 
-To get the current limit on hosted zones that can be created by an account, see [GetAccountLimit](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetAccountLimit.html).
+To get the current limit on hosted zones that can be created by an account, see [GetAccountLimit](api-getaccountlimit.md).
 
 To get the current limit on hosted zones that can be associated with a reusable
-delegation set, see [GetReusableDelegationSetLimit](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetReusableDelegationSetLimit.html).
+delegation set, see [GetReusableDelegationSetLimit](api-getreusabledelegationsetlimit.md).
 
 To request a higher limit, [create a\
 case](http://aws.amazon.com/route53-request) with the AWS Support Center.
@@ -492,27 +492,27 @@ HTTP/1.1 201 Created
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/route53-2013-04-01/CreateHostedZone)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53-2013-04-01/createhostedzone.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/route53-2013-04-01/CreateHostedZone)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53-2013-04-01/createhostedzone.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53-2013-04-01/CreateHostedZone)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53-2013-04-01/createhostedzone.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/route53-2013-04-01/CreateHostedZone)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53-2013-04-01/createhostedzone.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53-2013-04-01/CreateHostedZone)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53-2013-04-01/createhostedzone.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/route53-2013-04-01/CreateHostedZone)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53-2013-04-01/createhostedzone.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/route53-2013-04-01/CreateHostedZone)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53-2013-04-01/createhostedzone.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/route53-2013-04-01/CreateHostedZone)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53-2013-04-01/createhostedzone.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/route53-2013-04-01/CreateHostedZone)
+- [AWS SDK for Python](../../../../services/goto/boto3/route53-2013-04-01/createhostedzone.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53-2013-04-01/CreateHostedZone)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53-2013-04-01/createhostedzone.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateHealthCheck
 

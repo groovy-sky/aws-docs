@@ -4,15 +4,15 @@ Menu
 
 ## Amplify
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.amplify.html\#toc)
+### Table of Contents  [header link](namespace-aws-amplify-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.amplify.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-amplify-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.amplify.exception.html)
+[Exception](namespace-aws-amplify-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.amplify.html\#toc-classes)
+#### Classes  [header link](namespace-aws-amplify-toc-classes.md)
 
-[AmplifyClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Amplify.AmplifyClient.html)This client is used to interact with the **AWS Amplify** service.
+[AmplifyClient](class-aws-amplify-amplifyclient.md)This client is used to interact with the **AWS Amplify** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.amplify.html#toc-classes)
+  - [Classes](namespace-aws-amplify-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.amplify.html#top)
+[Back To Top](namespace-aws-amplify-top.md)

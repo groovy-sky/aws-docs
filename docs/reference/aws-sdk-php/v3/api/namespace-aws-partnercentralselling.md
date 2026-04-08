@@ -4,15 +4,15 @@ Menu
 
 ## PartnerCentralSelling
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.partnercentralselling.html\#toc)
+### Table of Contents  [header link](namespace-aws-partnercentralselling-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.partnercentralselling.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-partnercentralselling-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.partnercentralselling.exception.html)
+[Exception](namespace-aws-partnercentralselling-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.partnercentralselling.html\#toc-classes)
+#### Classes  [header link](namespace-aws-partnercentralselling-toc-classes.md)
 
-[PartnerCentralSellingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralSelling.PartnerCentralSellingClient.html)This client is used to interact with the **Partner Central Selling API** service.
+[PartnerCentralSellingClient](class-aws-partnercentralselling-partnercentralsellingclient.md)This client is used to interact with the **Partner Central Selling API** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.partnercentralselling.html#toc-classes)
+  - [Classes](namespace-aws-partnercentralselling-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.partnercentralselling.html#top)
+[Back To Top](namespace-aws-partnercentralselling-top.md)

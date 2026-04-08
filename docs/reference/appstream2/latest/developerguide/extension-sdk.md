@@ -18,18 +18,18 @@ allow conditional access policies.
 
 - Perform arbitrary data transfers over an established remote session.
 
-To get started with the Amazon DCV Extension SDK, see [What is the Amazon DCV Extension SDK?](https://docs.aws.amazon.com/dcv/latest/extsdkguide/what-is.html). The
+To get started with the Amazon DCV Extension SDK, see [What is the Amazon DCV Extension SDK?](../../../dcv/latest/extsdkguide/what-is.md). The
 SDK itself can be found in the [Amazon DCV Extension SDK Github repository](https://github.com/aws-samples/dcv-extension-sdk). In addition, integration examples of
 the SDK can be found in the [Amazon DCV Extension SDK\
 Samples Github repository](https://github.com/aws-samples/dcv-extension-sdk-samples).
 
 ###### Topics
 
-- [Extension SDK Prerequisites for Amazon WorkSpaces Applications](https://docs.aws.amazon.com/appstream2/latest/developerguide/extension-sdk-prereq.html)
+- [Extension SDK Prerequisites for Amazon WorkSpaces Applications](extension-sdk-prereq.md)
 
-- [Third-party vendor extensions for Amazon WorkSpaces Applications](https://docs.aws.amazon.com/appstream2/latest/developerguide/extension-sdk-isv.html)
+- [Third-party vendor extensions for Amazon WorkSpaces Applications](extension-sdk-isv.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Regional Settings
 

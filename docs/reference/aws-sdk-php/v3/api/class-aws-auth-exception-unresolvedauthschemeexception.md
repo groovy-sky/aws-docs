@@ -2,19 +2,19 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [Auth](namespace-aws-auth.md)
-- [Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.auth.exception.html)
+- [Exception](namespace-aws-auth-exception.md)
 
 ## UnresolvedAuthSchemeException     extends RuntimeException   in package    - [Aws](package-aws.md)       implements  [MonitoringEventsInterface](class-aws-monitoringeventsinterface.md)  Uses  [HasMonitoringEventsTrait](class-aws-hasmonitoringeventstrait.md)
 
 Represents an error when attempting to resolve authentication.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.Exception.UnresolvedAuthSchemeException.html\#toc)
+### Table of Contents  [header link](class-aws-auth-exception-unresolvedauthschemeexception-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.Exception.UnresolvedAuthSchemeException.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-auth-exception-unresolvedauthschemeexception-toc-interfaces.md)
 
 [MonitoringEventsInterface](class-aws-monitoringeventsinterface.md)Interface for adding and retrieving client-side monitoring events
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.Exception.UnresolvedAuthSchemeException.html\#toc-methods)
+#### Methods  [header link](class-aws-auth-exception-unresolvedauthschemeexception-toc-methods.md)
 
 [appendMonitoringEvent()](class-aws-hasmonitoringeventstrait.md#method_appendMonitoringEvent)
 : mixed Append a client-side monitoring event to this object's event list[getMonitoringEvents()](class-aws-hasmonitoringeventstrait.md#method_getMonitoringEvents)
@@ -22,7 +22,7 @@ Represents an error when attempting to resolve authentication.
 represented as an associative array within the returned array.[prependMonitoringEvent()](class-aws-hasmonitoringeventstrait.md#method_prependMonitoringEvent)
 : mixed Prepend a client-side monitoring event to this object's event list
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.Exception.UnresolvedAuthSchemeException.html\#methods)
+### Methods  [header link](class-aws-auth-exception-unresolvedauthschemeexception-methods.md)
 
 #### appendMonitoringEvent()  [header link](class-aws-hasmonitoringeventstrait.md\#method_appendMonitoringEvent)
 
@@ -69,10 +69,10 @@ $event
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.Exception.UnresolvedAuthSchemeException.html#toc-methods)
+  - [Methods](class-aws-auth-exception-unresolvedauthschemeexception-toc-methods.md)
 - Methods
   - [appendMonitoringEvent()](class-aws-hasmonitoringeventstrait.md#method_appendMonitoringEvent)
   - [getMonitoringEvents()](class-aws-hasmonitoringeventstrait.md#method_getMonitoringEvents)
   - [prependMonitoringEvent()](class-aws-hasmonitoringeventstrait.md#method_prependMonitoringEvent)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.Exception.UnresolvedAuthSchemeException.html#top)
+[Back To Top](class-aws-auth-exception-unresolvedauthschemeexception-top.md)

@@ -17,31 +17,31 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2022-05-13**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-repostspace-2022-05-13.html)
+- [**2022-05-13**](api-repostspace-2022-05-13.md)
 
-  - [BatchAddChannelRoleToAccessors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-repostspace-2022-05-13.html#batchaddchannelroletoaccessors)
-  - [BatchAddRole](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-repostspace-2022-05-13.html#batchaddrole)
-  - [BatchRemoveChannelRoleFromAccessors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-repostspace-2022-05-13.html#batchremovechannelrolefromaccessors)
-  - [BatchRemoveRole](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-repostspace-2022-05-13.html#batchremoverole)
-  - [CreateChannel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-repostspace-2022-05-13.html#createchannel)
-  - [CreateSpace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-repostspace-2022-05-13.html#createspace)
-  - [DeleteSpace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-repostspace-2022-05-13.html#deletespace)
-  - [DeregisterAdmin](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-repostspace-2022-05-13.html#deregisteradmin)
-  - [GetChannel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-repostspace-2022-05-13.html#getchannel)
-  - [GetSpace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-repostspace-2022-05-13.html#getspace)
-  - [ListChannels](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-repostspace-2022-05-13.html#listchannels)
-  - [ListSpaces](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-repostspace-2022-05-13.html#listspaces)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-repostspace-2022-05-13.html#listtagsforresource)
-  - [RegisterAdmin](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-repostspace-2022-05-13.html#registeradmin)
-  - [SendInvites](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-repostspace-2022-05-13.html#sendinvites)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-repostspace-2022-05-13.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-repostspace-2022-05-13.html#untagresource)
-  - [UpdateChannel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-repostspace-2022-05-13.html#updatechannel)
-  - [UpdateSpace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-repostspace-2022-05-13.html#updatespace)
+  - [BatchAddChannelRoleToAccessors](api-repostspace-2022-05-13-batchaddchannelroletoaccessors.md)
+  - [BatchAddRole](api-repostspace-2022-05-13-batchaddrole.md)
+  - [BatchRemoveChannelRoleFromAccessors](api-repostspace-2022-05-13-batchremovechannelrolefromaccessors.md)
+  - [BatchRemoveRole](api-repostspace-2022-05-13-batchremoverole.md)
+  - [CreateChannel](api-repostspace-2022-05-13-createchannel.md)
+  - [CreateSpace](api-repostspace-2022-05-13-createspace.md)
+  - [DeleteSpace](api-repostspace-2022-05-13-deletespace.md)
+  - [DeregisterAdmin](api-repostspace-2022-05-13-deregisteradmin.md)
+  - [GetChannel](api-repostspace-2022-05-13-getchannel.md)
+  - [GetSpace](api-repostspace-2022-05-13-getspace.md)
+  - [ListChannels](api-repostspace-2022-05-13-listchannels.md)
+  - [ListSpaces](api-repostspace-2022-05-13-listspaces.md)
+  - [ListTagsForResource](api-repostspace-2022-05-13-listtagsforresource.md)
+  - [RegisterAdmin](api-repostspace-2022-05-13-registeradmin.md)
+  - [SendInvites](api-repostspace-2022-05-13-sendinvites.md)
+  - [TagResource](api-repostspace-2022-05-13-tagresource.md)
+  - [UntagResource](api-repostspace-2022-05-13-untagresource.md)
+  - [UpdateChannel](api-repostspace-2022-05-13-updatechannel.md)
+  - [UpdateSpace](api-repostspace-2022-05-13-updatespace.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Repostspace.RepostspaceClient.html\#toc)
+### Table of Contents  [header link](class-aws-repostspace-repostspaceclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Repostspace.RepostspaceClient.html\#toc-methods)
+#### Methods  [header link](class-aws-repostspace-repostspaceclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -72,7 +72,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Repostspace.RepostspaceClient.html\#methods)
+### Methods  [header link](class-aws-repostspace-repostspaceclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -539,7 +539,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Repostspace.RepostspaceClient.html#toc-methods)
+  - [Methods](class-aws-repostspace-repostspaceclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -566,4 +566,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Repostspace.RepostspaceClient.html#top)
+[Back To Top](class-aws-repostspace-repostspaceclient-top.md)

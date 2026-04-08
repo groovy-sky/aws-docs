@@ -7,22 +7,22 @@ Menu
 
 Provides anonymous client access (does not sign requests).
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.AnonymousSignature.html\#toc)
+### Table of Contents  [header link](class-aws-signature-anonymoussignature-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.AnonymousSignature.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-signature-anonymoussignature-toc-interfaces.md)
 
 [SignatureInterface](class-aws-signature-signatureinterface.md)Interface used to provide interchangeable strategies for signing requests
 using the various AWS signature protocols.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.AnonymousSignature.html\#toc-methods)
+#### Methods  [header link](class-aws-signature-anonymoussignature-toc-methods.md)
 
-[presign()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.AnonymousSignature.html#method_presign)
-: [RequestInterface](class-psr-http-message-requestinterface.md)/\\*\\* {@inheritdoc}[signRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.AnonymousSignature.html#method_signRequest)
+[presign()](class-aws-signature-anonymoussignature-method-presign.md)
+: [RequestInterface](class-psr-http-message-requestinterface.md)/\\*\\* {@inheritdoc}[signRequest()](class-aws-signature-anonymoussignature-method-signrequest.md)
 : [RequestInterface](class-psr-http-message-requestinterface.md)/\\*\\* {@inheritdoc}
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.AnonymousSignature.html\#methods)
+### Methods  [header link](class-aws-signature-anonymoussignature-methods.md)
 
-#### presign()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.AnonymousSignature.html\#method_presign)
+#### presign()  [header link](class-aws-signature-anonymoussignature-method-presign.md)
 
 /\\*\\* {@inheritdoc}
 
@@ -57,7 +57,7 @@ $options
 
 [RequestInterface](class-psr-http-message-requestinterface.md)
 
-#### signRequest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.AnonymousSignature.html\#method_signRequest)
+#### signRequest()  [header link](class-aws-signature-anonymoussignature-method-signrequest.md)
 
 /\\*\\* {@inheritdoc}
 
@@ -91,9 +91,9 @@ Returns the modified request.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.AnonymousSignature.html#toc-methods)
+  - [Methods](class-aws-signature-anonymoussignature-toc-methods.md)
 - Methods
-  - [presign()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.AnonymousSignature.html#method_presign)
-  - [signRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.AnonymousSignature.html#method_signRequest)
+  - [presign()](class-aws-signature-anonymoussignature-method-presign.md)
+  - [signRequest()](class-aws-signature-anonymoussignature-method-signrequest.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.AnonymousSignature.html#top)
+[Back To Top](class-aws-signature-anonymoussignature-top.md)

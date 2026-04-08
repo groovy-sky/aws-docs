@@ -33,7 +33,7 @@ compliance purposes.
 
 To enable access logs, you must also specify a `logConfiguration` in the `serviceConnectConfiguration`.
 
-Type: [ServiceConnectAccessLogConfiguration](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ServiceConnectAccessLogConfiguration.html) object
+Type: [ServiceConnectAccessLogConfiguration](api-serviceconnectaccesslogconfiguration.md) object
 
 Required: No
 
@@ -89,7 +89,7 @@ Required: No
 The namespace name or full Amazon Resource Name (ARN) of the AWS Cloud Map namespace for use
 with Service Connect. The namespace must be in the same AWS Region as the
 Amazon ECS service and cluster. The type of namespace doesn't affect Service Connect.
-For more information about AWS Cloud Map, see [Working with Services](https://docs.aws.amazon.com/cloud-map/latest/dg/working-with-services.html)
+For more information about AWS Cloud Map, see [Working with Services](../../../../services/cloud-map/latest/dg/working-with-services.md)
 in the _AWS Cloud Map Developer Guide_.
 
 Type: String
@@ -110,7 +110,7 @@ An object selects a port from the task definition, assigns a name for the AWS Cl
 service, and a list of aliases (endpoints) and ports for client applications to refer to
 this service.
 
-Type: Array of [ServiceConnectService](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ServiceConnectService.html) objects
+Type: Array of [ServiceConnectService](api-serviceconnectservice.md) objects
 
 Required: No
 
@@ -118,13 +118,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/ServiceConnectConfiguration)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/serviceconnectconfiguration.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/ServiceConnectConfiguration)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/serviceconnectconfiguration.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/ServiceConnectConfiguration)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/serviceconnectconfiguration.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ServiceConnectClientAlias
 

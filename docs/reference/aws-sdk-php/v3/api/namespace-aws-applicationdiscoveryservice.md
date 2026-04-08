@@ -4,15 +4,15 @@ Menu
 
 ## ApplicationDiscoveryService
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationdiscoveryservice.html\#toc)
+### Table of Contents  [header link](namespace-aws-applicationdiscoveryservice-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationdiscoveryservice.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-applicationdiscoveryservice-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationdiscoveryservice.exception.html)
+[Exception](namespace-aws-applicationdiscoveryservice-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationdiscoveryservice.html\#toc-classes)
+#### Classes  [header link](namespace-aws-applicationdiscoveryservice-toc-classes.md)
 
-[ApplicationDiscoveryServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationDiscoveryService.ApplicationDiscoveryServiceClient.html)This client is used to interact with the **AWS Application Discovery Service** service.
+[ApplicationDiscoveryServiceClient](class-aws-applicationdiscoveryservice-applicationdiscoveryserviceclient.md)This client is used to interact with the **AWS Application Discovery Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationdiscoveryservice.html#toc-classes)
+  - [Classes](namespace-aws-applicationdiscoveryservice-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationdiscoveryservice.html#top)
+[Back To Top](namespace-aws-applicationdiscoveryservice-top.md)

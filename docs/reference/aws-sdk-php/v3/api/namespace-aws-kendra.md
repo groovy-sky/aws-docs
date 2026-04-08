@@ -4,15 +4,15 @@ Menu
 
 ## kendra
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kendra.html\#toc)
+### Table of Contents  [header link](namespace-aws-kendra-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kendra.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-kendra-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kendra.exception.html)
+[Exception](namespace-aws-kendra-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kendra.html\#toc-classes)
+#### Classes  [header link](namespace-aws-kendra-toc-classes.md)
 
-[kendraClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.kendra.kendraClient.html)This client is used to interact with the **AWSKendraFrontendService** service.
+[kendraClient](class-aws-kendra-kendraclient.md)This client is used to interact with the **AWSKendraFrontendService** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kendra.html#toc-classes)
+  - [Classes](namespace-aws-kendra-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kendra.html#top)
+[Back To Top](namespace-aws-kendra-top.md)

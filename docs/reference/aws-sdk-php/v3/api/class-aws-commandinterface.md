@@ -1,8 +1,8 @@
 Menu
 
-- [Aws](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.html)
+- [Aws](namespace-aws.md)
 
-## CommandInterface    extends  ArrayAccess, Countable, IteratorAggregate   in    - [Aws](https://docs.aws.amazon.com/aws-sdk-php/v3/api/package-Aws.html)
+## CommandInterface    extends  ArrayAccess, Countable, IteratorAggregate   in    - [Aws](package-aws.md)
 
 A command object encapsulates the input parameters used to control the
 creation of a HTTP request and processing of a HTTP response.
@@ -10,19 +10,19 @@ creation of a HTTP request and processing of a HTTP response.
 Using the toArray() method will return the input parameters of the command
 as an associative array.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html\#toc)
+### Table of Contents  [header link](class-aws-commandinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-commandinterface-toc-methods.md)
 
-[getHandlerList()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html#method_getHandlerList)
-: [HandlerList](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html)Get the handler list used to transfer the command.[getName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html#method_getName)
-: string Get the name of the command[hasParam()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html#method_hasParam)
-: bool Check if the command has a parameter by name.[toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html#method_toArray)
+[getHandlerList()](class-aws-commandinterface-method-gethandlerlist.md)
+: [HandlerList](class-aws-handlerlist.md)Get the handler list used to transfer the command.[getName()](class-aws-commandinterface-method-getname.md)
+: string Get the name of the command[hasParam()](class-aws-commandinterface-method-hasparam.md)
+: bool Check if the command has a parameter by name.[toArray()](class-aws-commandinterface-method-toarray.md)
 : array<string\|int, mixed> Converts the command parameters to an array
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html\#methods)
+### Methods  [header link](class-aws-commandinterface-methods.md)
 
-#### getHandlerList()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html\#method_getHandlerList)
+#### getHandlerList()  [header link](class-aws-commandinterface-method-gethandlerlist.md)
 
 Get the handler list used to transfer the command.
 
@@ -32,9 +32,9 @@ Get the handler list used to transfer the command.
 
 ##### Return values
 
-[HandlerList](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html)
+[HandlerList](class-aws-handlerlist.md)
 
-#### getName()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html\#method_getName)
+#### getName()  [header link](class-aws-commandinterface-method-getname.md)
 
 Get the name of the command
 
@@ -46,7 +46,7 @@ Get the name of the command
 
 string
 
-#### hasParam()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html\#method_hasParam)
+#### hasParam()  [header link](class-aws-commandinterface-method-hasparam.md)
 
 Check if the command has a parameter by name.
 
@@ -65,7 +65,7 @@ Name of the parameter to check
 
 bool
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html\#method_toArray)
+#### toArray()  [header link](class-aws-commandinterface-method-toarray.md)
 
 Converts the command parameters to an array
 
@@ -83,12 +83,12 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html#toc-methods)
+  - [Constants](class-aws-commandinterface-toc-constants.md)
+  - [Methods](class-aws-commandinterface-toc-methods.md)
 - Methods
-  - [getHandlerList()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html#method_getHandlerList)
-  - [getName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html#method_getName)
-  - [hasParam()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html#method_hasParam)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html#method_toArray)
+  - [getHandlerList()](class-aws-commandinterface-method-gethandlerlist.md)
+  - [getName()](class-aws-commandinterface-method-getname.md)
+  - [hasParam()](class-aws-commandinterface-method-hasparam.md)
+  - [toArray()](class-aws-commandinterface-method-toarray.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html#top)
+[Back To Top](class-aws-commandinterface-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## AppIntegrationsService
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appintegrationsservice.html\#toc)
+### Table of Contents  [header link](namespace-aws-appintegrationsservice-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appintegrationsservice.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-appintegrationsservice-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appintegrationsservice.exception.html)
+[Exception](namespace-aws-appintegrationsservice-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appintegrationsservice.html\#toc-classes)
+#### Classes  [header link](namespace-aws-appintegrationsservice-toc-classes.md)
 
-[AppIntegrationsServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppIntegrationsService.AppIntegrationsServiceClient.html)This client is used to interact with the **Amazon AppIntegrations Service** service.
+[AppIntegrationsServiceClient](class-aws-appintegrationsservice-appintegrationsserviceclient.md)This client is used to interact with the **Amazon AppIntegrations Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appintegrationsservice.html#toc-classes)
+  - [Classes](namespace-aws-appintegrationsservice-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appintegrationsservice.html#top)
+[Back To Top](namespace-aws-appintegrationsservice-top.md)

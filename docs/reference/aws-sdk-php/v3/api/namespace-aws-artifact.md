@@ -4,15 +4,15 @@ Menu
 
 ## Artifact
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.artifact.html\#toc)
+### Table of Contents  [header link](namespace-aws-artifact-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.artifact.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-artifact-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.artifact.exception.html)
+[Exception](namespace-aws-artifact-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.artifact.html\#toc-classes)
+#### Classes  [header link](namespace-aws-artifact-toc-classes.md)
 
-[ArtifactClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Artifact.ArtifactClient.html)This client is used to interact with the **AWS Artifact** service.
+[ArtifactClient](class-aws-artifact-artifactclient.md)This client is used to interact with the **AWS Artifact** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.artifact.html#toc-classes)
+  - [Classes](namespace-aws-artifact-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.artifact.html#top)
+[Back To Top](namespace-aws-artifact-top.md)

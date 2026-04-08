@@ -22,7 +22,7 @@ associated with that resource are deleted as well.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -34,7 +34,7 @@ definitions, clusters, and container instances.
 
 In order to tag a service that has the following ARN format, you need to migrate the
 service to the long ARN. For more information, see [Migrate an Amazon\
-ECS short service ARN to a long ARN](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-arn-migration.html) in the _Amazon Elastic_
+ECS short service ARN to a long ARN](../../../../services/amazonecs/latest/developerguide/service-arn-migration.md) in the _Amazon Elastic_
 _Container Service Developer Guide_.
 
 `arn:aws:ecs:region:aws_account_id:service/service-name`
@@ -79,7 +79,7 @@ AWS use. You cannot edit or delete tag keys or values with
 this prefix. Tags with this prefix do not count against your tags per resource
 limit.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Array Members: Minimum number of 0 items. Maximum number of 50 items.
 
@@ -91,7 +91,7 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **ClientException**
 
@@ -107,7 +107,7 @@ HTTP Status Code: 400
 
 **ClusterNotFoundException**
 
-The specified cluster wasn't found. You can view your available clusters with [ListClusters](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListClusters.html). Amazon ECS clusters are Region specific.
+The specified cluster wasn't found. You can view your available clusters with [ListClusters](api-listclusters.md). Amazon ECS clusters are Region specific.
 
 **message**
 
@@ -121,7 +121,7 @@ The specified parameter isn't valid. Review the available parameters for the API
 request.
 
 For more information about service event errors, see [Amazon ECS\
-service event messages](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-event-messages-list.html).
+service event messages](../../../../services/amazonecs/latest/developerguide/service-event-messages-list.md).
 
 **message**
 
@@ -154,7 +154,7 @@ HTTP Status Code: 500
 In the following example or examples, the Authorization header contents
 ( `AUTHPARAMS`) must be replaced with an AWS Signature
 Version 4 signature. For more information, see [Signature\
-Version 4 Signing Process](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) in the _AWS_
+Version 4 Signing Process](../../../../general/general/latest/gr/signature-version-4.md) in the _AWS_
 _General Reference_.
 
 You only need to learn how to sign HTTP requests if you intend to create them
@@ -255,27 +255,27 @@ Date: Wed, 19 Oct 2022 20:01:34 GMT
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ecs-2014-11-13/TagResource)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ecs-2014-11-13/tagresource.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ecs-2014-11-13/TagResource)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ecs-2014-11-13/tagresource.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/TagResource)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/tagresource.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ecs-2014-11-13/TagResource)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ecs-2014-11-13/tagresource.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/TagResource)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/tagresource.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ecs-2014-11-13/TagResource)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ecs-2014-11-13/tagresource.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ecs-2014-11-13/TagResource)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ecs-2014-11-13/tagresource.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ecs-2014-11-13/TagResource)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ecs-2014-11-13/tagresource.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ecs-2014-11-13/TagResource)
+- [AWS SDK for Python](../../../../services/goto/boto3/ecs-2014-11-13/tagresource.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/TagResource)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/tagresource.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 SubmitTaskStateChange
 

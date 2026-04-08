@@ -17,23 +17,23 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2019-12-20**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-redshift-data-2019-12-20.html)
+- [**2019-12-20**](api-redshift-data-2019-12-20.md)
 
-  - [BatchExecuteStatement](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-redshift-data-2019-12-20.html#batchexecutestatement)
-  - [CancelStatement](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-redshift-data-2019-12-20.html#cancelstatement)
-  - [DescribeStatement](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-redshift-data-2019-12-20.html#describestatement)
-  - [DescribeTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-redshift-data-2019-12-20.html#describetable)
-  - [ExecuteStatement](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-redshift-data-2019-12-20.html#executestatement)
-  - [GetStatementResult](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-redshift-data-2019-12-20.html#getstatementresult)
-  - [GetStatementResultV2](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-redshift-data-2019-12-20.html#getstatementresultv2)
-  - [ListDatabases](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-redshift-data-2019-12-20.html#listdatabases)
-  - [ListSchemas](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-redshift-data-2019-12-20.html#listschemas)
-  - [ListStatements](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-redshift-data-2019-12-20.html#liststatements)
-  - [ListTables](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-redshift-data-2019-12-20.html#listtables)
+  - [BatchExecuteStatement](api-redshift-data-2019-12-20-batchexecutestatement.md)
+  - [CancelStatement](api-redshift-data-2019-12-20-cancelstatement.md)
+  - [DescribeStatement](api-redshift-data-2019-12-20-describestatement.md)
+  - [DescribeTable](api-redshift-data-2019-12-20-describetable.md)
+  - [ExecuteStatement](api-redshift-data-2019-12-20-executestatement.md)
+  - [GetStatementResult](api-redshift-data-2019-12-20-getstatementresult.md)
+  - [GetStatementResultV2](api-redshift-data-2019-12-20-getstatementresultv2.md)
+  - [ListDatabases](api-redshift-data-2019-12-20-listdatabases.md)
+  - [ListSchemas](api-redshift-data-2019-12-20-listschemas.md)
+  - [ListStatements](api-redshift-data-2019-12-20-liststatements.md)
+  - [ListTables](api-redshift-data-2019-12-20-listtables.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RedshiftDataAPIService.RedshiftDataAPIServiceClient.html\#toc)
+### Table of Contents  [header link](class-aws-redshiftdataapiservice-redshiftdataapiserviceclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RedshiftDataAPIService.RedshiftDataAPIServiceClient.html\#toc-methods)
+#### Methods  [header link](class-aws-redshiftdataapiservice-redshiftdataapiserviceclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -64,7 +64,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RedshiftDataAPIService.RedshiftDataAPIServiceClient.html\#methods)
+### Methods  [header link](class-aws-redshiftdataapiservice-redshiftdataapiserviceclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -531,7 +531,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RedshiftDataAPIService.RedshiftDataAPIServiceClient.html#toc-methods)
+  - [Methods](class-aws-redshiftdataapiservice-redshiftdataapiserviceclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -558,4 +558,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RedshiftDataAPIService.RedshiftDataAPIServiceClient.html#top)
+[Back To Top](class-aws-redshiftdataapiservice-redshiftdataapiserviceclient-top.md)

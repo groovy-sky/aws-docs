@@ -21,7 +21,7 @@ Required: Yes
 Represents the settings of a global secondary index for a global table that will be
 modified.
 
-Type: Array of [ReplicaGlobalSecondaryIndexSettingsUpdate](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ReplicaGlobalSecondaryIndexSettingsUpdate.html) objects
+Type: Array of [ReplicaGlobalSecondaryIndexSettingsUpdate](api-replicaglobalsecondaryindexsettingsupdate.md) objects
 
 Array Members: Minimum number of 1 item. Maximum number of 20 items.
 
@@ -39,7 +39,7 @@ Required: No
 **ReplicaProvisionedReadCapacityUnits**
 
 The maximum number of strongly consistent reads consumed per second before DynamoDB
-returns a `ThrottlingException`. For more information, see [Specifying Read and Write Requirements](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.html#ProvisionedThroughput) in the _Amazon DynamoDB_
+returns a `ThrottlingException`. For more information, see [Specifying Read and Write Requirements](../../../../services/dynamodb/latest/developerguide/workingwithtables-provisionedthroughput.md) in the _Amazon DynamoDB_
 _Developer Guide_.
 
 Type: Long
@@ -63,13 +63,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/ReplicaSettingsUpdate)
+- [AWS SDK for C++](../../../goto/sdkforcpp/dynamodb-2012-08-10/replicasettingsupdate.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/ReplicaSettingsUpdate)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/dynamodb-2012-08-10/replicasettingsupdate.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/ReplicaSettingsUpdate)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/replicasettingsupdate.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ReplicaSettingsDescription
 

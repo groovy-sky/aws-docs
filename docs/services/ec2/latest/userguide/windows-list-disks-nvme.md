@@ -35,7 +35,7 @@ The following is an example that shows the disks that are available if you
     launch an `r5d.4xlarge` instance with two additional EBS
     volumes.
 
-![Disk Management with a root volume, two instance store volumes, and two EBS volumes.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/disk_management_nvme.png)
+![Disk Management with a root volume, two instance store volumes, and two EBS volumes.](../../../images/awsec2/latest/userguide/images/disk-management-nvme-png.md)
 
 PowerShell
 

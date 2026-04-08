@@ -13,7 +13,7 @@ In the following list, the required parameters are described first.
 
 The Amazon Resource Name (ARN) of the certificate. For more information about ARNs,
 see [Amazon Resource Names\
-(ARNs)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) in the _AWS General Reference_.
+(ARNs)](../../../../general/general/latest/gr/aws-arns-and-namespaces.md) in the _AWS General Reference_.
 
 Type: String
 
@@ -199,7 +199,7 @@ Required: No
 
 **RenewalSummary**
 
-Contains information about the status of ACM's [managed renewal](https://docs.aws.amazon.com/acm/latest/userguide/acm-renewal.html) for the certificate. This
+Contains information about the status of ACM's [managed renewal](../../../../services/acm/latest/userguide/acm-renewal.md) for the certificate. This
 field exists only when the certificate type is `AMAZON_ISSUED`.
 
 Type: [RenewalSummary](api-renewalsummary.md) object
@@ -247,7 +247,7 @@ Required: No
 The status of the certificate.
 
 A certificate enters status PENDING\_VALIDATION upon being requested, unless it fails for
-any of the reasons given in the troubleshooting topic [Certificate request fails](https://docs.aws.amazon.com/acm/latest/userguide/troubleshooting-failed.html). ACM makes
+any of the reasons given in the troubleshooting topic [Certificate request fails](../../../../services/acm/latest/userguide/troubleshooting-failed.md). ACM makes
 repeated attempts to validate a certificate for 72 hours and then times out. If a certificate
 shows status FAILED or VALIDATION\_TIMED\_OUT, delete the request, correct the issue with [DNS validation](../../../../services/acm/latest/userguide/dns-validation.md) or [Email validation](../../../../services/acm/latest/userguide/email-validation.md), and
 try again. If validation succeeds, the certificate enters status ISSUED.
@@ -289,7 +289,7 @@ Required: No
 
 The source of the certificate. For certificates provided by ACM, this value is
 `AMAZON_ISSUED`. For certificates that you imported with [ImportCertificate](api-importcertificate.md), this value is `IMPORTED`. ACM does not provide
-[managed renewal](https://docs.aws.amazon.com/acm/latest/userguide/acm-renewal.html) for
+[managed renewal](../../../../services/acm/latest/userguide/acm-renewal.md) for
 imported certificates. For more information about the differences between certificates that
 you import and those that ACM provides, see [Importing Certificates](../../../../services/acm/latest/userguide/import-certificate.md) in the
 _AWS Certificate Manager User Guide_.
@@ -304,13 +304,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/acm-2015-12-08/CertificateDetail)
+- [AWS SDK for C++](../../../goto/sdkforcpp/acm-2015-12-08/certificatedetail.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/acm-2015-12-08/CertificateDetail)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/acm-2015-12-08/certificatedetail.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/acm-2015-12-08/CertificateDetail)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/acm-2015-12-08/certificatedetail.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Data Types
 

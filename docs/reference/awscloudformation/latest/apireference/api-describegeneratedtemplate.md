@@ -59,14 +59,14 @@ Type: Timestamp
 
 An object describing the progress of the template generation.
 
-Type: [TemplateProgress](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_TemplateProgress.html) object
+Type: [TemplateProgress](api-templateprogress.md) object
 
 **Resources.member.N**
 
 A list of objects describing the details of the resources in the template
 generation.
 
-Type: Array of [ResourceDetail](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ResourceDetail.html) objects
+Type: Array of [ResourceDetail](api-resourcedetail.md) objects
 
 Array Members: Minimum number of 1 item. Maximum number of 500 items.
 
@@ -115,7 +115,7 @@ Length Constraints: Minimum length of 1. Maximum length of 256.
 The configuration details of the generated template, including the
 `DeletionPolicy` and `UpdateReplacePolicy`.
 
-Type: [TemplateConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_TemplateConfiguration.html) object
+Type: [TemplateConfiguration](api-templateconfiguration.md) object
 
 **TotalWarnings**
 
@@ -140,27 +140,27 @@ HTTP Status Code: 404
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/DescribeGeneratedTemplate)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/cloudformation-2010-05-15/describegeneratedtemplate.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/DescribeGeneratedTemplate)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/cloudformation-2010-05-15/describegeneratedtemplate.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/DescribeGeneratedTemplate)
+- [AWS SDK for C++](../../../goto/sdkforcpp/cloudformation-2010-05-15/describegeneratedtemplate.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/DescribeGeneratedTemplate)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/cloudformation-2010-05-15/describegeneratedtemplate.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/DescribeGeneratedTemplate)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudformation-2010-05-15/describegeneratedtemplate.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/DescribeGeneratedTemplate)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/cloudformation-2010-05-15/describegeneratedtemplate.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/DescribeGeneratedTemplate)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/cloudformation-2010-05-15/describegeneratedtemplate.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/DescribeGeneratedTemplate)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/cloudformation-2010-05-15/describegeneratedtemplate.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/DescribeGeneratedTemplate)
+- [AWS SDK for Python](../../../../services/goto/boto3/cloudformation-2010-05-15/describegeneratedtemplate.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/DescribeGeneratedTemplate)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/describegeneratedtemplate.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DescribeEvents
 

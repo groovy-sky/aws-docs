@@ -2,28 +2,28 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [EndpointV2](namespace-aws-endpointv2.md)
-- [Rule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpointv2.rule.html)
+- [Rule](namespace-aws-endpointv2-rule.md)
 
 ## ErrorRule     extends [AbstractRule](class-aws-endpointv2-rule-abstractrule.md)   in package    - [Aws](package-aws.md)
 
 A rule within a rule set. All rules contain a conditions property,
 which can be empty, and documentation about the rule.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.ErrorRule.html\#toc)
+### Table of Contents  [header link](class-aws-endpointv2-rule-errorrule-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.ErrorRule.html\#toc-methods)
+#### Methods  [header link](class-aws-endpointv2-rule-errorrule-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.ErrorRule.html#method___construct)
-: mixed [evaluate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.ErrorRule.html#method_evaluate)
+[\_\_construct()](class-aws-endpointv2-rule-errorrule-method-construct.md)
+: mixed [evaluate()](class-aws-endpointv2-rule-errorrule-method-evaluate.md)
 : null If an error rule's conditions are met, raise an
 UnresolvedEndpointError containing the fully resolved error string.[getConditions()](class-aws-endpointv2-rule-abstractrule.md#method_getConditions)
 : array<string\|int, mixed> [getDocumentation()](class-aws-endpointv2-rule-abstractrule.md#method_getDocumentation)
-: mixed [getError()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.ErrorRule.html#method_getError)
+: mixed [getError()](class-aws-endpointv2-rule-errorrule-method-geterror.md)
 : array<string\|int, mixed>
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.ErrorRule.html\#methods)
+### Methods  [header link](class-aws-endpointv2-rule-errorrule-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.ErrorRule.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-endpointv2-rule-errorrule-method-construct.md)
 
 `
     public
@@ -34,7 +34,7 @@ UnresolvedEndpointError containing the fully resolved error string.[getCondition
 $definition
 : mixed
 
-#### evaluate()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.ErrorRule.html\#method_evaluate)
+#### evaluate()  [header link](class-aws-endpointv2-rule-errorrule-method-evaluate.md)
 
 If an error rule's conditions are met, raise an
 UnresolvedEndpointError containing the fully resolved error string.
@@ -49,9 +49,9 @@ $inputParameters
 : array<string\|int, mixed>$standardLibrary
 : RulesetStandardLibrary
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.ErrorRule.html\#method_evaluate\#tags)
+##### Tags  [header link](class-aws-endpointv2-rule-errorrule-method-evaluate-tags.md)
 
-throws[UnresolvedEndpointException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.UnresolvedEndpointException.html)
+throws[UnresolvedEndpointException](class-aws-exception-unresolvedendpointexception.md)
 
 ##### Return values
 
@@ -73,7 +73,7 @@ array<string\|int, mixed>
     public
                     getDocumentation() : mixed`
 
-#### getError()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.ErrorRule.html\#method_getError)
+#### getError()  [header link](class-aws-endpointv2-rule-errorrule-method-geterror.md)
 
 `
     public
@@ -89,12 +89,12 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.ErrorRule.html#toc-methods)
+  - [Methods](class-aws-endpointv2-rule-errorrule-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.ErrorRule.html#method___construct)
-  - [evaluate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.ErrorRule.html#method_evaluate)
+  - [\_\_construct()](class-aws-endpointv2-rule-errorrule-method-construct.md)
+  - [evaluate()](class-aws-endpointv2-rule-errorrule-method-evaluate.md)
   - [getConditions()](class-aws-endpointv2-rule-abstractrule.md#method_getConditions)
   - [getDocumentation()](class-aws-endpointv2-rule-abstractrule.md#method_getDocumentation)
-  - [getError()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.ErrorRule.html#method_getError)
+  - [getError()](class-aws-endpointv2-rule-errorrule-method-geterror.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Rule.ErrorRule.html#top)
+[Back To Top](class-aws-endpointv2-rule-errorrule-top.md)

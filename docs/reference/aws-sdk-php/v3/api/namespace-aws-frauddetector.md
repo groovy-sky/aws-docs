@@ -4,15 +4,15 @@ Menu
 
 ## FraudDetector
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.frauddetector.html\#toc)
+### Table of Contents  [header link](namespace-aws-frauddetector-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.frauddetector.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-frauddetector-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.frauddetector.exception.html)
+[Exception](namespace-aws-frauddetector-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.frauddetector.html\#toc-classes)
+#### Classes  [header link](namespace-aws-frauddetector-toc-classes.md)
 
-[FraudDetectorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FraudDetector.FraudDetectorClient.html)This client is used to interact with the **Amazon Fraud Detector** service.
+[FraudDetectorClient](class-aws-frauddetector-frauddetectorclient.md)This client is used to interact with the **Amazon Fraud Detector** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.frauddetector.html#toc-classes)
+  - [Classes](namespace-aws-frauddetector-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.frauddetector.html#top)
+[Back To Top](namespace-aws-frauddetector-top.md)

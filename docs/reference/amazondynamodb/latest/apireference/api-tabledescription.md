@@ -12,7 +12,7 @@ In the following list, the required parameters are described first.
 
 Contains information about the table archive.
 
-Type: [ArchivalSummary](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ArchivalSummary.html) object
+Type: [ArchivalSummary](api-archivalsummary.md) object
 
 Required: No
 
@@ -27,7 +27,7 @@ Each `AttributeDefinition` object in this array is composed of:
 
 - `AttributeType` \- The data type for the attribute.
 
-Type: Array of [AttributeDefinition](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_AttributeDefinition.html) objects
+Type: Array of [AttributeDefinition](api-attributedefinition.md) objects
 
 Required: No
 
@@ -35,7 +35,7 @@ Required: No
 
 Contains the details for the read/write capacity mode.
 
-Type: [BillingModeSummary](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_BillingModeSummary.html) object
+Type: [BillingModeSummary](api-billingmodesummary.md) object
 
 Required: No
 
@@ -134,7 +134,7 @@ data about increases and decreases.
 If the table is in the `DELETING` state, no information about indexes will
 be returned.
 
-Type: Array of [GlobalSecondaryIndexDescription](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GlobalSecondaryIndexDescription.html) objects
+Type: Array of [GlobalSecondaryIndexDescription](api-globalsecondaryindexdescription.md) objects
 
 Required: No
 
@@ -171,7 +171,7 @@ Required: No
 The witness Region and its current status in the MRSC global table. Only one witness
 Region can be configured per MRSC global table.
 
-Type: Array of [GlobalTableWitnessDescription](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GlobalTableWitnessDescription.html) objects
+Type: Array of [GlobalTableWitnessDescription](api-globaltablewitnessdescription.md) objects
 
 Required: No
 
@@ -209,10 +209,10 @@ _attribute_. The term "range attribute" derives from the way
 DynamoDB stores items with the same partition key physically close together,
 in sorted order by the sort key value.
 
-For more information about primary keys, see [Primary Key](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DataModel.html#DataModelPrimaryKey) in the _Amazon DynamoDB Developer_
+For more information about primary keys, see [Primary Key](../../../../services/dynamodb/latest/developerguide/datamodel-datamodelprimarykey.md) in the _Amazon DynamoDB Developer_
 _Guide_.
 
-Type: Array of [KeySchemaElement](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_KeySchemaElement.html) objects
+Type: Array of [KeySchemaElement](api-keyschemaelement.md) objects
 
 Array Members: Minimum number of 1 item.
 
@@ -300,7 +300,7 @@ reflected in this value.
 If the table is in the `DELETING` state, no information about indexes will
 be returned.
 
-Type: Array of [LocalSecondaryIndexDescription](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_LocalSecondaryIndexDescription.html) objects
+Type: Array of [LocalSecondaryIndexDescription](api-localsecondaryindexdescription.md) objects
 
 Required: No
 
@@ -316,7 +316,7 @@ multi-Region strong consistency (MRSC).
 
 If you don't specify this field, the global table consistency mode defaults to
 `EVENTUAL`. For more information about global tables consistency modes,
-see [Consistency modes](https://docs.aws.amazon.com/V2globaltables_HowItWorks.html#V2globaltables_HowItWorks.consistency-modes) in DynamoDB developer guide.
+see [Consistency modes](../../../../services/v2globaltables-howitworks-v2globaltables-howitworks-consistency-modes/index.md) in DynamoDB developer guide.
 
 Type: String
 
@@ -330,7 +330,7 @@ The maximum number of read and write units for the specified on-demand table. If
 use this parameter, you must specify `MaxReadRequestUnits`,
 `MaxWriteRequestUnits`, or both.
 
-Type: [OnDemandThroughput](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_OnDemandThroughput.html) object
+Type: [OnDemandThroughput](api-ondemandthroughput.md) object
 
 Required: No
 
@@ -339,7 +339,7 @@ Required: No
 The provisioned throughput settings for the table, consisting of read and write
 capacity units, along with data about increases and decreases.
 
-Type: [ProvisionedThroughputDescription](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ProvisionedThroughputDescription.html) object
+Type: [ProvisionedThroughputDescription](api-provisionedthroughputdescription.md) object
 
 Required: No
 
@@ -347,7 +347,7 @@ Required: No
 
 Represents replicas of the table.
 
-Type: Array of [ReplicaDescription](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ReplicaDescription.html) objects
+Type: Array of [ReplicaDescription](api-replicadescription.md) objects
 
 Required: No
 
@@ -355,7 +355,7 @@ Required: No
 
 Contains details for the restore.
 
-Type: [RestoreSummary](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_RestoreSummary.html) object
+Type: [RestoreSummary](api-restoresummary.md) object
 
 Required: No
 
@@ -363,7 +363,7 @@ Required: No
 
 The description of the server-side encryption status on the specified table.
 
-Type: [SSEDescription](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_SSEDescription.html) object
+Type: [SSEDescription](api-ssedescription.md) object
 
 Required: No
 
@@ -371,7 +371,7 @@ Required: No
 
 The current DynamoDB Streams configuration for the table.
 
-Type: [StreamSpecification](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_StreamSpecification.html) object
+Type: [StreamSpecification](api-streamspecification.md) object
 
 Required: No
 
@@ -387,7 +387,7 @@ Required: No
 
 Contains details of the table class.
 
-Type: [TableClassSummary](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TableClassSummary.html) object
+Type: [TableClassSummary](api-tableclasssummary.md) object
 
 Required: No
 
@@ -459,7 +459,7 @@ Required: No
 
 Describes the warm throughput value of the base table.
 
-Type: [TableWarmThroughputDescription](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TableWarmThroughputDescription.html) object
+Type: [TableWarmThroughputDescription](api-tablewarmthroughputdescription.md) object
 
 Required: No
 
@@ -467,13 +467,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/TableDescription)
+- [AWS SDK for C++](../../../goto/sdkforcpp/dynamodb-2012-08-10/tabledescription.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/TableDescription)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/dynamodb-2012-08-10/tabledescription.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/TableDescription)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/tabledescription.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 TableCreationParameters
 

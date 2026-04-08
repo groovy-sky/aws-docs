@@ -4,15 +4,15 @@ Menu
 
 ## DatabaseMigrationService
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.databasemigrationservice.html\#toc)
+### Table of Contents  [header link](namespace-aws-databasemigrationservice-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.databasemigrationservice.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-databasemigrationservice-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.databasemigrationservice.exception.html)
+[Exception](namespace-aws-databasemigrationservice-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.databasemigrationservice.html\#toc-classes)
+#### Classes  [header link](namespace-aws-databasemigrationservice-toc-classes.md)
 
-[DatabaseMigrationServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DatabaseMigrationService.DatabaseMigrationServiceClient.html)This client is used to interact with the **AWS Database Migration Service** service.
+[DatabaseMigrationServiceClient](class-aws-databasemigrationservice-databasemigrationserviceclient.md)This client is used to interact with the **AWS Database Migration Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.databasemigrationservice.html#toc-classes)
+  - [Classes](namespace-aws-databasemigrationservice-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.databasemigrationservice.html#top)
+[Back To Top](namespace-aws-databasemigrationservice-top.md)

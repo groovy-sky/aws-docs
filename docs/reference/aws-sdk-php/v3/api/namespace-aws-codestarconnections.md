@@ -4,15 +4,15 @@ Menu
 
 ## CodeStarconnections
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codestarconnections.html\#toc)
+### Table of Contents  [header link](namespace-aws-codestarconnections-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codestarconnections.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-codestarconnections-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codestarconnections.exception.html)
+[Exception](namespace-aws-codestarconnections-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codestarconnections.html\#toc-classes)
+#### Classes  [header link](namespace-aws-codestarconnections-toc-classes.md)
 
-[CodeStarconnectionsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeStarconnections.CodeStarconnectionsClient.html)This client is used to interact with the **AWS CodeStar connections** service.
+[CodeStarconnectionsClient](class-aws-codestarconnections-codestarconnectionsclient.md)This client is used to interact with the **AWS CodeStar connections** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codestarconnections.html#toc-classes)
+  - [Classes](namespace-aws-codestarconnections-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codestarconnections.html#top)
+[Back To Top](namespace-aws-codestarconnections-top.md)

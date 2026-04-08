@@ -25,7 +25,7 @@ name.
 If you want to avoid the monthly charge for the hosted zone, you can transfer DNS
 service for the domain to a free DNS service. When you transfer DNS service, you have to
 update the name servers for the domain registration. If the domain is registered with
-Route 53, see [UpdateDomainNameservers](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_UpdateDomainNameservers.html) for information about how to replace Route 53 name servers with name servers for the new DNS service. If the domain is
+Route 53, see [UpdateDomainNameservers](api-domains-updatedomainnameservers.md) for information about how to replace Route 53 name servers with name servers for the new DNS service. If the domain is
 registered with another registrar, use the method provided by the registrar to update
 name servers for the domain registration. For more information, perform an internet
 search on "free DNS service."
@@ -182,27 +182,27 @@ HTTP/1.1 200 OK
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/route53-2013-04-01/DeleteHostedZone)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53-2013-04-01/deletehostedzone.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/route53-2013-04-01/DeleteHostedZone)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53-2013-04-01/deletehostedzone.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53-2013-04-01/DeleteHostedZone)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53-2013-04-01/deletehostedzone.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/route53-2013-04-01/DeleteHostedZone)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53-2013-04-01/deletehostedzone.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53-2013-04-01/DeleteHostedZone)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53-2013-04-01/deletehostedzone.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/route53-2013-04-01/DeleteHostedZone)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53-2013-04-01/deletehostedzone.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/route53-2013-04-01/DeleteHostedZone)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53-2013-04-01/deletehostedzone.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/route53-2013-04-01/DeleteHostedZone)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53-2013-04-01/deletehostedzone.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/route53-2013-04-01/DeleteHostedZone)
+- [AWS SDK for Python](../../../../services/goto/boto3/route53-2013-04-01/deletehostedzone.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53-2013-04-01/DeleteHostedZone)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53-2013-04-01/deletehostedzone.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DeleteHealthCheck
 

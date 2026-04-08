@@ -4,15 +4,15 @@ Menu
 
 ## Lightsail
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lightsail.html\#toc)
+### Table of Contents  [header link](namespace-aws-lightsail-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lightsail.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-lightsail-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lightsail.exception.html)
+[Exception](namespace-aws-lightsail-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lightsail.html\#toc-classes)
+#### Classes  [header link](namespace-aws-lightsail-toc-classes.md)
 
-[LightsailClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Lightsail.LightsailClient.html)This client is used to interact with the **Amazon Lightsail** service.
+[LightsailClient](class-aws-lightsail-lightsailclient.md)This client is used to interact with the **Amazon Lightsail** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lightsail.html#toc-classes)
+  - [Classes](namespace-aws-lightsail-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lightsail.html#top)
+[Back To Top](namespace-aws-lightsail-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## ChimeSDKVoice
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkvoice.html\#toc)
+### Table of Contents  [header link](namespace-aws-chimesdkvoice-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkvoice.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-chimesdkvoice-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkvoice.exception.html)
+[Exception](namespace-aws-chimesdkvoice-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkvoice.html\#toc-classes)
+#### Classes  [header link](namespace-aws-chimesdkvoice-toc-classes.md)
 
-[ChimeSDKVoiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKVoice.ChimeSDKVoiceClient.html)This client is used to interact with the **Amazon Chime SDK Voice** service.
+[ChimeSDKVoiceClient](class-aws-chimesdkvoice-chimesdkvoiceclient.md)This client is used to interact with the **Amazon Chime SDK Voice** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkvoice.html#toc-classes)
+  - [Classes](namespace-aws-chimesdkvoice-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkvoice.html#top)
+[Back To Top](namespace-aws-chimesdkvoice-top.md)

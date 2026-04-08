@@ -7,23 +7,23 @@ Menu
 Trait implementing ToArrayInterface, \\ArrayAccess, \\Countable, and
 \\IteratorAggregate
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#toc)
+### Table of Contents  [header link](class-aws-hasdatatrait-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#toc-methods)
+#### Methods  [header link](class-aws-hasdatatrait-toc-methods.md)
 
-[count()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_count)
-: int [getIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_getIterator)
-: Traversable[offsetExists()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetExists)
-: bool [offsetGet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetGet)
+[count()](class-aws-hasdatatrait-method-count.md)
+: int [getIterator()](class-aws-hasdatatrait-method-getiterator.md)
+: Traversable[offsetExists()](class-aws-hasdatatrait-method-offsetexists.md)
+: bool [offsetGet()](class-aws-hasdatatrait-method-offsetget.md)
 : mixed\|null This method returns a reference to the variable to allow for indirect
-array modification (e.g., $foo\['bar'\]\['baz'\] = 'qux').[offsetSet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetSet)
-: void [offsetUnset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetUnset)
-: void [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_toArray)
+array modification (e.g., $foo\['bar'\]\['baz'\] = 'qux').[offsetSet()](class-aws-hasdatatrait-method-offsetset.md)
+: void [offsetUnset()](class-aws-hasdatatrait-method-offsetunset.md)
+: void [toArray()](class-aws-hasdatatrait-method-toarray.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#methods)
+### Methods  [header link](class-aws-hasdatatrait-methods.md)
 
-#### count()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_count)
+#### count()  [header link](class-aws-hasdatatrait-method-count.md)
 
 `
     public
@@ -33,7 +33,7 @@ array modification (e.g., $foo\['bar'\]\['baz'\] = 'qux').[offsetSet()](https://
 
 int
 
-#### getIterator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_getIterator)
+#### getIterator()  [header link](class-aws-hasdatatrait-method-getiterator.md)
 
 `
     public
@@ -43,7 +43,7 @@ int
 
 Traversable
 
-#### offsetExists()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_offsetExists)
+#### offsetExists()  [header link](class-aws-hasdatatrait-method-offsetexists.md)
 
 `
     public
@@ -58,7 +58,7 @@ $offset
 
 bool
 
-#### offsetGet()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_offsetGet)
+#### offsetGet()  [header link](class-aws-hasdatatrait-method-offsetget.md)
 
 This method returns a reference to the variable to allow for indirect
 array modification (e.g., $foo\['bar'\]\['baz'\] = 'qux').
@@ -76,7 +76,7 @@ $offset
 
 mixed\|null
 
-#### offsetSet()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_offsetSet)
+#### offsetSet()  [header link](class-aws-hasdatatrait-method-offsetset.md)
 
 `
     public
@@ -88,7 +88,7 @@ $offset
 : mixed$value
 : mixed
 
-#### offsetUnset()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_offsetUnset)
+#### offsetUnset()  [header link](class-aws-hasdatatrait-method-offsetunset.md)
 
 `
     public
@@ -99,7 +99,7 @@ $offset
 $offset
 : mixed
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_toArray)
+#### toArray()  [header link](class-aws-hasdatatrait-method-toarray.md)
 
 `
     public
@@ -112,14 +112,14 @@ $offset
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#toc-methods)
+  - [Methods](class-aws-hasdatatrait-toc-methods.md)
 - Methods
-  - [count()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_count)
-  - [getIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_getIterator)
-  - [offsetExists()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetExists)
-  - [offsetGet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetGet)
-  - [offsetSet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetSet)
-  - [offsetUnset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetUnset)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_toArray)
+  - [count()](class-aws-hasdatatrait-method-count.md)
+  - [getIterator()](class-aws-hasdatatrait-method-getiterator.md)
+  - [offsetExists()](class-aws-hasdatatrait-method-offsetexists.md)
+  - [offsetGet()](class-aws-hasdatatrait-method-offsetget.md)
+  - [offsetSet()](class-aws-hasdatatrait-method-offsetset.md)
+  - [offsetUnset()](class-aws-hasdatatrait-method-offsetunset.md)
+  - [toArray()](class-aws-hasdatatrait-method-toarray.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#top)
+[Back To Top](class-aws-hasdatatrait-top.md)

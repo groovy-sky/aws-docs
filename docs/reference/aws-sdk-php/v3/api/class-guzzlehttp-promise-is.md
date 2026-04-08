@@ -1,25 +1,25 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Promise](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.promise.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Promise](namespace-guzzlehttp-promise.md)
 
 ## Is        in package    - [Aws](package-aws.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Is.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-promise-is-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Is.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-promise-is-toc-methods.md)
 
-[fulfilled()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Is.html#method_fulfilled)
-: bool Returns true if a promise is fulfilled.[pending()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Is.html#method_pending)
-: bool Returns true if a promise is pending.[rejected()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Is.html#method_rejected)
-: bool Returns true if a promise is rejected.[settled()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Is.html#method_settled)
+[fulfilled()](class-guzzlehttp-promise-is-method-fulfilled.md)
+: bool Returns true if a promise is fulfilled.[pending()](class-guzzlehttp-promise-is-method-pending.md)
+: bool Returns true if a promise is pending.[rejected()](class-guzzlehttp-promise-is-method-rejected.md)
+: bool Returns true if a promise is rejected.[settled()](class-guzzlehttp-promise-is-method-settled.md)
 : bool Returns true if a promise is fulfilled or rejected.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Is.html\#methods)
+### Methods  [header link](class-guzzlehttp-promise-is-methods.md)
 
-#### fulfilled()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Is.html\#method_fulfilled)
+#### fulfilled()  [header link](class-guzzlehttp-promise-is-method-fulfilled.md)
 
 Returns true if a promise is fulfilled.
 
@@ -36,7 +36,7 @@ $promise
 
 bool
 
-#### pending()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Is.html\#method_pending)
+#### pending()  [header link](class-guzzlehttp-promise-is-method-pending.md)
 
 Returns true if a promise is pending.
 
@@ -53,7 +53,7 @@ $promise
 
 bool
 
-#### rejected()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Is.html\#method_rejected)
+#### rejected()  [header link](class-guzzlehttp-promise-is-method-rejected.md)
 
 Returns true if a promise is rejected.
 
@@ -70,7 +70,7 @@ $promise
 
 bool
 
-#### settled()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Is.html\#method_settled)
+#### settled()  [header link](class-guzzlehttp-promise-is-method-settled.md)
 
 Returns true if a promise is fulfilled or rejected.
 
@@ -93,11 +93,11 @@ bool
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Is.html#toc-methods)
+  - [Methods](class-guzzlehttp-promise-is-toc-methods.md)
 - Methods
-  - [fulfilled()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Is.html#method_fulfilled)
-  - [pending()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Is.html#method_pending)
-  - [rejected()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Is.html#method_rejected)
-  - [settled()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Is.html#method_settled)
+  - [fulfilled()](class-guzzlehttp-promise-is-method-fulfilled.md)
+  - [pending()](class-guzzlehttp-promise-is-method-pending.md)
+  - [rejected()](class-guzzlehttp-promise-is-method-rejected.md)
+  - [settled()](class-guzzlehttp-promise-is-method-settled.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Is.html#top)
+[Back To Top](class-guzzlehttp-promise-is-top.md)

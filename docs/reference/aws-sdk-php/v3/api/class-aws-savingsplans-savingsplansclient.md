@@ -17,22 +17,22 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2019-06-28**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-savingsplans-2019-06-28.html)
+- [**2019-06-28**](api-savingsplans-2019-06-28.md)
 
-  - [CreateSavingsPlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-savingsplans-2019-06-28.html#createsavingsplan)
-  - [DeleteQueuedSavingsPlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-savingsplans-2019-06-28.html#deletequeuedsavingsplan)
-  - [DescribeSavingsPlanRates](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-savingsplans-2019-06-28.html#describesavingsplanrates)
-  - [DescribeSavingsPlans](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-savingsplans-2019-06-28.html#describesavingsplans)
-  - [DescribeSavingsPlansOfferingRates](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-savingsplans-2019-06-28.html#describesavingsplansofferingrates)
-  - [DescribeSavingsPlansOfferings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-savingsplans-2019-06-28.html#describesavingsplansofferings)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-savingsplans-2019-06-28.html#listtagsforresource)
-  - [ReturnSavingsPlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-savingsplans-2019-06-28.html#returnsavingsplan)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-savingsplans-2019-06-28.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-savingsplans-2019-06-28.html#untagresource)
+  - [CreateSavingsPlan](api-savingsplans-2019-06-28-createsavingsplan.md)
+  - [DeleteQueuedSavingsPlan](api-savingsplans-2019-06-28-deletequeuedsavingsplan.md)
+  - [DescribeSavingsPlanRates](api-savingsplans-2019-06-28-describesavingsplanrates.md)
+  - [DescribeSavingsPlans](api-savingsplans-2019-06-28-describesavingsplans.md)
+  - [DescribeSavingsPlansOfferingRates](api-savingsplans-2019-06-28-describesavingsplansofferingrates.md)
+  - [DescribeSavingsPlansOfferings](api-savingsplans-2019-06-28-describesavingsplansofferings.md)
+  - [ListTagsForResource](api-savingsplans-2019-06-28-listtagsforresource.md)
+  - [ReturnSavingsPlan](api-savingsplans-2019-06-28-returnsavingsplan.md)
+  - [TagResource](api-savingsplans-2019-06-28-tagresource.md)
+  - [UntagResource](api-savingsplans-2019-06-28-untagresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SavingsPlans.SavingsPlansClient.html\#toc)
+### Table of Contents  [header link](class-aws-savingsplans-savingsplansclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SavingsPlans.SavingsPlansClient.html\#toc-methods)
+#### Methods  [header link](class-aws-savingsplans-savingsplansclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -63,7 +63,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SavingsPlans.SavingsPlansClient.html\#methods)
+### Methods  [header link](class-aws-savingsplans-savingsplansclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -530,7 +530,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SavingsPlans.SavingsPlansClient.html#toc-methods)
+  - [Methods](class-aws-savingsplans-savingsplansclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -557,4 +557,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SavingsPlans.SavingsPlansClient.html#top)
+[Back To Top](class-aws-savingsplans-savingsplansclient-top.md)

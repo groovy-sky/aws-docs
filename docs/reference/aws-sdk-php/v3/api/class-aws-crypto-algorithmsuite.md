@@ -5,55 +5,55 @@ Menu
 
 ## AlgorithmSuite     : int     in package    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#toc)
+### Table of Contents  [header link](class-aws-crypto-algorithmsuite-toc.md)
 
-#### Cases  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#toc-cases)
+#### Cases  [header link](class-aws-crypto-algorithmsuite-toc-cases.md)
 
-[ALG\_AES\_256\_CBC\_IV16\_NO\_KDF](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#enumcase_ALG_AES_256_CBC_IV16_NO_KDF)
-= 0x70 [ALG\_AES\_256\_GCM\_HKDF\_SHA512\_COMMIT\_KEY](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#enumcase_ALG_AES_256_GCM_HKDF_SHA512_COMMIT_KEY)
-= 0x73 [ALG\_AES\_256\_GCM\_IV12\_TAG16\_NO\_KDF](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#enumcase_ALG_AES_256_GCM_IV12_TAG16_NO_KDF)
+[ALG\_AES\_256\_CBC\_IV16\_NO\_KDF](class-aws-crypto-algorithmsuite-enumcase-alg-aes-256-cbc-iv16-no-kdf.md)
+= 0x70 [ALG\_AES\_256\_GCM\_HKDF\_SHA512\_COMMIT\_KEY](class-aws-crypto-algorithmsuite-enumcase-alg-aes-256-gcm-hkdf-sha512-commit-key.md)
+= 0x73 [ALG\_AES\_256\_GCM\_IV12\_TAG16\_NO\_KDF](class-aws-crypto-algorithmsuite-enumcase-alg-aes-256-gcm-iv12-tag16-no-kdf.md)
 = 0x72
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#toc-methods)
+#### Methods  [header link](class-aws-crypto-algorithmsuite-toc-methods.md)
 
-[getCipherBlockSizeBits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getCipherBlockSizeBits)
-: int [getCipherBlockSizeBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getCipherBlockSizeBytes)
-: int [getCipherMaxContentLengthBits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getCipherMaxContentLengthBits)
-: int [getCipherMaxContentLengthBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getCipherMaxContentLengthBytes)
-: int [getCipherName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getCipherName)
-: string [getCipherTagLengthBits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getCipherTagLengthBits)
-: int [getCipherTagLengthInBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getCipherTagLengthInBytes)
-: int [getCommitmentInputKeyLengthBits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getCommitmentInputKeyLengthBits)
-: int [getCommitmentInputKeyLengthBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getCommitmentInputKeyLengthBytes)
-: int [getCommitmentOutputKeyLengthBits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getCommitmentOutputKeyLengthBits)
-: int [getCommitmentOutputKeyLengthBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getCommitmentOutputKeyLengthBytes)
-: int [getDataKeyAlgorithm()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getDataKeyAlgorithm)
-: string [getDataKeyLengthBits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getDataKeyLengthBits)
-: string [getDerivationInputKeyLengthBits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getDerivationInputKeyLengthBits)
-: int [getDerivationInputKeyLengthBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getDerivationInputKeyLengthBytes)
-: int [getDerivationOutputKeyLengthBits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getDerivationOutputKeyLengthBits)
-: int [getDerivationOutputKeyLengthBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getDerivationOutputKeyLengthBytes)
-: int [getHashingAlgorithm()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getHashingAlgorithm)
-: string [getId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getId)
-: int [getIvLengthBits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getIvLengthBits)
-: int [getIvLengthBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getIvLengthBytes)
-: int [getKeyCommitmentSaltLengthBits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getKeyCommitmentSaltLengthBits)
-: int [isKeyCommitting()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_isKeyCommitting)
-: bool [isLegacy()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_isLegacy)
-: bool [validateCommitmentPolicyOnEncrypt()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_validateCommitmentPolicyOnEncrypt)
+[getCipherBlockSizeBits()](class-aws-crypto-algorithmsuite-method-getcipherblocksizebits.md)
+: int [getCipherBlockSizeBytes()](class-aws-crypto-algorithmsuite-method-getcipherblocksizebytes.md)
+: int [getCipherMaxContentLengthBits()](class-aws-crypto-algorithmsuite-method-getciphermaxcontentlengthbits.md)
+: int [getCipherMaxContentLengthBytes()](class-aws-crypto-algorithmsuite-method-getciphermaxcontentlengthbytes.md)
+: int [getCipherName()](class-aws-crypto-algorithmsuite-method-getciphername.md)
+: string [getCipherTagLengthBits()](class-aws-crypto-algorithmsuite-method-getciphertaglengthbits.md)
+: int [getCipherTagLengthInBytes()](class-aws-crypto-algorithmsuite-method-getciphertaglengthinbytes.md)
+: int [getCommitmentInputKeyLengthBits()](class-aws-crypto-algorithmsuite-method-getcommitmentinputkeylengthbits.md)
+: int [getCommitmentInputKeyLengthBytes()](class-aws-crypto-algorithmsuite-method-getcommitmentinputkeylengthbytes.md)
+: int [getCommitmentOutputKeyLengthBits()](class-aws-crypto-algorithmsuite-method-getcommitmentoutputkeylengthbits.md)
+: int [getCommitmentOutputKeyLengthBytes()](class-aws-crypto-algorithmsuite-method-getcommitmentoutputkeylengthbytes.md)
+: int [getDataKeyAlgorithm()](class-aws-crypto-algorithmsuite-method-getdatakeyalgorithm.md)
+: string [getDataKeyLengthBits()](class-aws-crypto-algorithmsuite-method-getdatakeylengthbits.md)
+: string [getDerivationInputKeyLengthBits()](class-aws-crypto-algorithmsuite-method-getderivationinputkeylengthbits.md)
+: int [getDerivationInputKeyLengthBytes()](class-aws-crypto-algorithmsuite-method-getderivationinputkeylengthbytes.md)
+: int [getDerivationOutputKeyLengthBits()](class-aws-crypto-algorithmsuite-method-getderivationoutputkeylengthbits.md)
+: int [getDerivationOutputKeyLengthBytes()](class-aws-crypto-algorithmsuite-method-getderivationoutputkeylengthbytes.md)
+: int [getHashingAlgorithm()](class-aws-crypto-algorithmsuite-method-gethashingalgorithm.md)
+: string [getId()](class-aws-crypto-algorithmsuite-method-getid.md)
+: int [getIvLengthBits()](class-aws-crypto-algorithmsuite-method-getivlengthbits.md)
+: int [getIvLengthBytes()](class-aws-crypto-algorithmsuite-method-getivlengthbytes.md)
+: int [getKeyCommitmentSaltLengthBits()](class-aws-crypto-algorithmsuite-method-getkeycommitmentsaltlengthbits.md)
+: int [isKeyCommitting()](class-aws-crypto-algorithmsuite-method-iskeycommitting.md)
+: bool [isLegacy()](class-aws-crypto-algorithmsuite-method-islegacy.md)
+: bool [validateCommitmentPolicyOnEncrypt()](class-aws-crypto-algorithmsuite-method-validatecommitmentpolicyonencrypt.md)
 : self
 
-### Cases  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#cases)
+### Cases  [header link](class-aws-crypto-algorithmsuite-cases.md)
 
-#### ALG\_AES\_256\_GCM\_HKDF\_SHA512\_COMMIT\_KEY  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#enumcase_ALG_AES_256_GCM_HKDF_SHA512_COMMIT_KEY)
+#### ALG\_AES\_256\_GCM\_HKDF\_SHA512\_COMMIT\_KEY  [header link](class-aws-crypto-algorithmsuite-enumcase-alg-aes-256-gcm-hkdf-sha512-commit-key.md)
 
-#### ALG\_AES\_256\_GCM\_IV12\_TAG16\_NO\_KDF  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#enumcase_ALG_AES_256_GCM_IV12_TAG16_NO_KDF)
+#### ALG\_AES\_256\_GCM\_IV12\_TAG16\_NO\_KDF  [header link](class-aws-crypto-algorithmsuite-enumcase-alg-aes-256-gcm-iv12-tag16-no-kdf.md)
 
-#### ALG\_AES\_256\_CBC\_IV16\_NO\_KDF  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#enumcase_ALG_AES_256_CBC_IV16_NO_KDF)
+#### ALG\_AES\_256\_CBC\_IV16\_NO\_KDF  [header link](class-aws-crypto-algorithmsuite-enumcase-alg-aes-256-cbc-iv16-no-kdf.md)
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#methods)
+### Methods  [header link](class-aws-crypto-algorithmsuite-methods.md)
 
-#### getCipherBlockSizeBits()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_getCipherBlockSizeBits)
+#### getCipherBlockSizeBits()  [header link](class-aws-crypto-algorithmsuite-method-getcipherblocksizebits.md)
 
 `
     public
@@ -63,7 +63,7 @@ Menu
 
 int
 
-#### getCipherBlockSizeBytes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_getCipherBlockSizeBytes)
+#### getCipherBlockSizeBytes()  [header link](class-aws-crypto-algorithmsuite-method-getcipherblocksizebytes.md)
 
 `
     public
@@ -73,7 +73,7 @@ int
 
 int
 
-#### getCipherMaxContentLengthBits()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_getCipherMaxContentLengthBits)
+#### getCipherMaxContentLengthBits()  [header link](class-aws-crypto-algorithmsuite-method-getciphermaxcontentlengthbits.md)
 
 `
     public
@@ -83,7 +83,7 @@ int
 
 int
 
-#### getCipherMaxContentLengthBytes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_getCipherMaxContentLengthBytes)
+#### getCipherMaxContentLengthBytes()  [header link](class-aws-crypto-algorithmsuite-method-getciphermaxcontentlengthbytes.md)
 
 `
     public
@@ -93,7 +93,7 @@ int
 
 int
 
-#### getCipherName()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_getCipherName)
+#### getCipherName()  [header link](class-aws-crypto-algorithmsuite-method-getciphername.md)
 
 `
     public
@@ -103,7 +103,7 @@ int
 
 string
 
-#### getCipherTagLengthBits()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_getCipherTagLengthBits)
+#### getCipherTagLengthBits()  [header link](class-aws-crypto-algorithmsuite-method-getciphertaglengthbits.md)
 
 `
     public
@@ -113,7 +113,7 @@ string
 
 int
 
-#### getCipherTagLengthInBytes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_getCipherTagLengthInBytes)
+#### getCipherTagLengthInBytes()  [header link](class-aws-crypto-algorithmsuite-method-getciphertaglengthinbytes.md)
 
 `
     public
@@ -123,7 +123,7 @@ int
 
 int
 
-#### getCommitmentInputKeyLengthBits()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_getCommitmentInputKeyLengthBits)
+#### getCommitmentInputKeyLengthBits()  [header link](class-aws-crypto-algorithmsuite-method-getcommitmentinputkeylengthbits.md)
 
 `
     public
@@ -133,7 +133,7 @@ int
 
 int
 
-#### getCommitmentInputKeyLengthBytes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_getCommitmentInputKeyLengthBytes)
+#### getCommitmentInputKeyLengthBytes()  [header link](class-aws-crypto-algorithmsuite-method-getcommitmentinputkeylengthbytes.md)
 
 `
     public
@@ -143,7 +143,7 @@ int
 
 int
 
-#### getCommitmentOutputKeyLengthBits()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_getCommitmentOutputKeyLengthBits)
+#### getCommitmentOutputKeyLengthBits()  [header link](class-aws-crypto-algorithmsuite-method-getcommitmentoutputkeylengthbits.md)
 
 `
     public
@@ -153,7 +153,7 @@ int
 
 int
 
-#### getCommitmentOutputKeyLengthBytes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_getCommitmentOutputKeyLengthBytes)
+#### getCommitmentOutputKeyLengthBytes()  [header link](class-aws-crypto-algorithmsuite-method-getcommitmentoutputkeylengthbytes.md)
 
 `
     public
@@ -163,7 +163,7 @@ int
 
 int
 
-#### getDataKeyAlgorithm()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_getDataKeyAlgorithm)
+#### getDataKeyAlgorithm()  [header link](class-aws-crypto-algorithmsuite-method-getdatakeyalgorithm.md)
 
 `
     public
@@ -173,7 +173,7 @@ int
 
 string
 
-#### getDataKeyLengthBits()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_getDataKeyLengthBits)
+#### getDataKeyLengthBits()  [header link](class-aws-crypto-algorithmsuite-method-getdatakeylengthbits.md)
 
 `
     public
@@ -183,7 +183,7 @@ string
 
 string
 
-#### getDerivationInputKeyLengthBits()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_getDerivationInputKeyLengthBits)
+#### getDerivationInputKeyLengthBits()  [header link](class-aws-crypto-algorithmsuite-method-getderivationinputkeylengthbits.md)
 
 `
     public
@@ -193,7 +193,7 @@ string
 
 int
 
-#### getDerivationInputKeyLengthBytes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_getDerivationInputKeyLengthBytes)
+#### getDerivationInputKeyLengthBytes()  [header link](class-aws-crypto-algorithmsuite-method-getderivationinputkeylengthbytes.md)
 
 `
     public
@@ -203,7 +203,7 @@ int
 
 int
 
-#### getDerivationOutputKeyLengthBits()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_getDerivationOutputKeyLengthBits)
+#### getDerivationOutputKeyLengthBits()  [header link](class-aws-crypto-algorithmsuite-method-getderivationoutputkeylengthbits.md)
 
 `
     public
@@ -213,7 +213,7 @@ int
 
 int
 
-#### getDerivationOutputKeyLengthBytes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_getDerivationOutputKeyLengthBytes)
+#### getDerivationOutputKeyLengthBytes()  [header link](class-aws-crypto-algorithmsuite-method-getderivationoutputkeylengthbytes.md)
 
 `
     public
@@ -223,7 +223,7 @@ int
 
 int
 
-#### getHashingAlgorithm()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_getHashingAlgorithm)
+#### getHashingAlgorithm()  [header link](class-aws-crypto-algorithmsuite-method-gethashingalgorithm.md)
 
 `
     public
@@ -233,7 +233,7 @@ int
 
 string
 
-#### getId()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_getId)
+#### getId()  [header link](class-aws-crypto-algorithmsuite-method-getid.md)
 
 `
     public
@@ -243,7 +243,7 @@ string
 
 int
 
-#### getIvLengthBits()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_getIvLengthBits)
+#### getIvLengthBits()  [header link](class-aws-crypto-algorithmsuite-method-getivlengthbits.md)
 
 `
     public
@@ -253,7 +253,7 @@ int
 
 int
 
-#### getIvLengthBytes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_getIvLengthBytes)
+#### getIvLengthBytes()  [header link](class-aws-crypto-algorithmsuite-method-getivlengthbytes.md)
 
 `
     public
@@ -263,7 +263,7 @@ int
 
 int
 
-#### getKeyCommitmentSaltLengthBits()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_getKeyCommitmentSaltLengthBits)
+#### getKeyCommitmentSaltLengthBits()  [header link](class-aws-crypto-algorithmsuite-method-getkeycommitmentsaltlengthbits.md)
 
 `
     public
@@ -273,7 +273,7 @@ int
 
 int
 
-#### isKeyCommitting()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_isKeyCommitting)
+#### isKeyCommitting()  [header link](class-aws-crypto-algorithmsuite-method-iskeycommitting.md)
 
 `
     public
@@ -283,7 +283,7 @@ int
 
 bool
 
-#### isLegacy()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_isLegacy)
+#### isLegacy()  [header link](class-aws-crypto-algorithmsuite-method-islegacy.md)
 
 `
     public
@@ -293,7 +293,7 @@ bool
 
 bool
 
-#### validateCommitmentPolicyOnEncrypt()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html\#method_validateCommitmentPolicyOnEncrypt)
+#### validateCommitmentPolicyOnEncrypt()  [header link](class-aws-crypto-algorithmsuite-method-validatecommitmentpolicyonencrypt.md)
 
 `
     public
@@ -315,37 +315,37 @@ self
 **On this page**
 
 - Table Of Contents
-  - [Cases](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#toc-cases)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#toc-methods)
+  - [Cases](class-aws-crypto-algorithmsuite-toc-cases.md)
+  - [Methods](class-aws-crypto-algorithmsuite-toc-methods.md)
 - Cases
-  - [ALG\_AES\_256\_GCM\_HKDF\_SHA512\_COMMIT\_KEY](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#enumcase_ALG_AES_256_GCM_HKDF_SHA512_COMMIT_KEY)
-  - [ALG\_AES\_256\_GCM\_IV12\_TAG16\_NO\_KDF](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#enumcase_ALG_AES_256_GCM_IV12_TAG16_NO_KDF)
-  - [ALG\_AES\_256\_CBC\_IV16\_NO\_KDF](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#enumcase_ALG_AES_256_CBC_IV16_NO_KDF)
+  - [ALG\_AES\_256\_GCM\_HKDF\_SHA512\_COMMIT\_KEY](class-aws-crypto-algorithmsuite-enumcase-alg-aes-256-gcm-hkdf-sha512-commit-key.md)
+  - [ALG\_AES\_256\_GCM\_IV12\_TAG16\_NO\_KDF](class-aws-crypto-algorithmsuite-enumcase-alg-aes-256-gcm-iv12-tag16-no-kdf.md)
+  - [ALG\_AES\_256\_CBC\_IV16\_NO\_KDF](class-aws-crypto-algorithmsuite-enumcase-alg-aes-256-cbc-iv16-no-kdf.md)
 - Methods
-  - [getCipherBlockSizeBits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getCipherBlockSizeBits)
-  - [getCipherBlockSizeBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getCipherBlockSizeBytes)
-  - [getCipherMaxContentLengthBits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getCipherMaxContentLengthBits)
-  - [getCipherMaxContentLengthBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getCipherMaxContentLengthBytes)
-  - [getCipherName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getCipherName)
-  - [getCipherTagLengthBits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getCipherTagLengthBits)
-  - [getCipherTagLengthInBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getCipherTagLengthInBytes)
-  - [getCommitmentInputKeyLengthBits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getCommitmentInputKeyLengthBits)
-  - [getCommitmentInputKeyLengthBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getCommitmentInputKeyLengthBytes)
-  - [getCommitmentOutputKeyLengthBits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getCommitmentOutputKeyLengthBits)
-  - [getCommitmentOutputKeyLengthBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getCommitmentOutputKeyLengthBytes)
-  - [getDataKeyAlgorithm()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getDataKeyAlgorithm)
-  - [getDataKeyLengthBits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getDataKeyLengthBits)
-  - [getDerivationInputKeyLengthBits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getDerivationInputKeyLengthBits)
-  - [getDerivationInputKeyLengthBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getDerivationInputKeyLengthBytes)
-  - [getDerivationOutputKeyLengthBits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getDerivationOutputKeyLengthBits)
-  - [getDerivationOutputKeyLengthBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getDerivationOutputKeyLengthBytes)
-  - [getHashingAlgorithm()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getHashingAlgorithm)
-  - [getId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getId)
-  - [getIvLengthBits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getIvLengthBits)
-  - [getIvLengthBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getIvLengthBytes)
-  - [getKeyCommitmentSaltLengthBits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_getKeyCommitmentSaltLengthBits)
-  - [isKeyCommitting()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_isKeyCommitting)
-  - [isLegacy()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_isLegacy)
-  - [validateCommitmentPolicyOnEncrypt()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#method_validateCommitmentPolicyOnEncrypt)
+  - [getCipherBlockSizeBits()](class-aws-crypto-algorithmsuite-method-getcipherblocksizebits.md)
+  - [getCipherBlockSizeBytes()](class-aws-crypto-algorithmsuite-method-getcipherblocksizebytes.md)
+  - [getCipherMaxContentLengthBits()](class-aws-crypto-algorithmsuite-method-getciphermaxcontentlengthbits.md)
+  - [getCipherMaxContentLengthBytes()](class-aws-crypto-algorithmsuite-method-getciphermaxcontentlengthbytes.md)
+  - [getCipherName()](class-aws-crypto-algorithmsuite-method-getciphername.md)
+  - [getCipherTagLengthBits()](class-aws-crypto-algorithmsuite-method-getciphertaglengthbits.md)
+  - [getCipherTagLengthInBytes()](class-aws-crypto-algorithmsuite-method-getciphertaglengthinbytes.md)
+  - [getCommitmentInputKeyLengthBits()](class-aws-crypto-algorithmsuite-method-getcommitmentinputkeylengthbits.md)
+  - [getCommitmentInputKeyLengthBytes()](class-aws-crypto-algorithmsuite-method-getcommitmentinputkeylengthbytes.md)
+  - [getCommitmentOutputKeyLengthBits()](class-aws-crypto-algorithmsuite-method-getcommitmentoutputkeylengthbits.md)
+  - [getCommitmentOutputKeyLengthBytes()](class-aws-crypto-algorithmsuite-method-getcommitmentoutputkeylengthbytes.md)
+  - [getDataKeyAlgorithm()](class-aws-crypto-algorithmsuite-method-getdatakeyalgorithm.md)
+  - [getDataKeyLengthBits()](class-aws-crypto-algorithmsuite-method-getdatakeylengthbits.md)
+  - [getDerivationInputKeyLengthBits()](class-aws-crypto-algorithmsuite-method-getderivationinputkeylengthbits.md)
+  - [getDerivationInputKeyLengthBytes()](class-aws-crypto-algorithmsuite-method-getderivationinputkeylengthbytes.md)
+  - [getDerivationOutputKeyLengthBits()](class-aws-crypto-algorithmsuite-method-getderivationoutputkeylengthbits.md)
+  - [getDerivationOutputKeyLengthBytes()](class-aws-crypto-algorithmsuite-method-getderivationoutputkeylengthbytes.md)
+  - [getHashingAlgorithm()](class-aws-crypto-algorithmsuite-method-gethashingalgorithm.md)
+  - [getId()](class-aws-crypto-algorithmsuite-method-getid.md)
+  - [getIvLengthBits()](class-aws-crypto-algorithmsuite-method-getivlengthbits.md)
+  - [getIvLengthBytes()](class-aws-crypto-algorithmsuite-method-getivlengthbytes.md)
+  - [getKeyCommitmentSaltLengthBits()](class-aws-crypto-algorithmsuite-method-getkeycommitmentsaltlengthbits.md)
+  - [isKeyCommitting()](class-aws-crypto-algorithmsuite-method-iskeycommitting.md)
+  - [isLegacy()](class-aws-crypto-algorithmsuite-method-islegacy.md)
+  - [validateCommitmentPolicyOnEncrypt()](class-aws-crypto-algorithmsuite-method-validatecommitmentpolicyonencrypt.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html#top)
+[Back To Top](class-aws-crypto-algorithmsuite-top.md)

@@ -4,16 +4,16 @@ Menu
 
 ## ConfigurationProviderInterface     in    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConfigurationProviderInterface.html\#toc)
+### Table of Contents  [header link](class-aws-configurationproviderinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConfigurationProviderInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-configurationproviderinterface-toc-methods.md)
 
-[defaultProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConfigurationProviderInterface.html#method_defaultProvider)
+[defaultProvider()](class-aws-configurationproviderinterface-method-defaultprovider.md)
 : callable Create a default config provider
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConfigurationProviderInterface.html\#methods)
+### Methods  [header link](class-aws-configurationproviderinterface-methods.md)
 
-#### defaultProvider()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConfigurationProviderInterface.html\#method_defaultProvider)
+#### defaultProvider()  [header link](class-aws-configurationproviderinterface-method-defaultprovider.md)
 
 Create a default config provider
 
@@ -37,9 +37,9 @@ callable
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConfigurationProviderInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConfigurationProviderInterface.html#toc-methods)
+  - [Constants](class-aws-configurationproviderinterface-toc-constants.md)
+  - [Methods](class-aws-configurationproviderinterface-toc-methods.md)
 - Methods
-  - [defaultProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConfigurationProviderInterface.html#method_defaultProvider)
+  - [defaultProvider()](class-aws-configurationproviderinterface-method-defaultprovider.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConfigurationProviderInterface.html#top)
+[Back To Top](class-aws-configurationproviderinterface-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## ResilienceHub
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.resiliencehub.html\#toc)
+### Table of Contents  [header link](namespace-aws-resiliencehub-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.resiliencehub.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-resiliencehub-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.resiliencehub.exception.html)
+[Exception](namespace-aws-resiliencehub-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.resiliencehub.html\#toc-classes)
+#### Classes  [header link](namespace-aws-resiliencehub-toc-classes.md)
 
-[ResilienceHubClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResilienceHub.ResilienceHubClient.html)This client is used to interact with the **AWS Resilience Hub** service.
+[ResilienceHubClient](class-aws-resiliencehub-resiliencehubclient.md)This client is used to interact with the **AWS Resilience Hub** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.resiliencehub.html#toc-classes)
+  - [Classes](namespace-aws-resiliencehub-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.resiliencehub.html#top)
+[Back To Top](namespace-aws-resiliencehub-top.md)

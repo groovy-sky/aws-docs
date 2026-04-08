@@ -156,7 +156,7 @@ and security controls. Create an AMI catalog containing customized security conf
 baselines to ensure that all Windows instances are launched with standard security controls.
 Security baselines can be baked into an AMI, bootstrapped dynamically when an EC2 instance is
 launched, or packaged as a product for uniform distribution through AWS Service Catalog
-portfolios. For more information on securing an AMI, see [Best Practices for Building an AMI](https://docs.aws.amazon.com/marketplace/latest/userguide/best-practices-for-building-your-amis.html).
+portfolios. For more information on securing an AMI, see [Best Practices for Building an AMI](../../../marketplace/latest/userguide/best-practices-for-building-your-amis.md).
 
 Each Amazon EC2 instance should adhere to organizational security standards. Do not install any
 Windows roles and features that are not required, and do install software to protect against

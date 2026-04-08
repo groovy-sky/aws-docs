@@ -48,7 +48,7 @@ The following diagram illustrates how tagging works. In this example, you've ass
 tags to each of your instances—one tag with the key `Owner` and
 another with the key `Stack`. Each tag also has an associated value.
 
-![Tag example](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/Tag_Example.png)
+![Tag example](../../../images/awsec2/latest/userguide/images/tag-example-png.md)
 
 We recommend that you devise a set of tag keys that meets your needs for each resource type.
 Using a consistent set of tag keys makes it easier for you to manage your resources. You can

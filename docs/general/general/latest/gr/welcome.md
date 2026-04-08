@@ -40,17 +40,17 @@ are not included in the `.json` file.
 
 For more information, see the following resources:
 
-- [AWS IP address ranges](https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html) in the
+- [AWS IP address ranges](../../../../services/vpc/latest/userguide/aws-ip-ranges.md) in the
 _Amazon VPC User Guide_
 
-- [AWS services that support IPv6](https://docs.aws.amazon.com/vpc/latest/userguide/aws-ipv6-support.html) in the
+- [AWS services that support IPv6](../../../../services/vpc/latest/userguide/aws-ipv6-support.md) in the
 _Amazon VPC User Guide_
 
 ## AWS APIs
 
 The following pages provide information that is useful when using an AWS API:
 
-- [Retry behavior](https://docs.aws.amazon.com/sdkref/latest/guide/feature-retry-behavior.html) in the
+- [Retry behavior](../../../../reference/sdkref/latest/guide/feature-retry-behavior.md) in the
 _AWS SDKs and Tools Reference Guide_
 
 - [Signing AWS API requests](../../../../services/iam/latest/userguide/reference-aws-signing.md) in the
@@ -66,11 +66,11 @@ You can learn about the endpoints and service quotas in the following pages:
 
 - [Service endpoints and quotas](aws-service-information.md)
 
-- [Specifying which AWS Regions your account can use](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-regions.html) in the _AWS Account Management Guide_
+- [Specifying which AWS Regions your account can use](../../../../services/accounts/latest/reference/manage-acct-regions.md) in the _AWS Account Management Guide_
 
 ## AWS Glossary
 
-For the latest AWS terminology, see the [AWS Glossary](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html).
+For the latest AWS terminology, see the [AWS Glossary](../../../../services/glossary/latest/reference/glos-chap.md).
 
 [Document Conventions](docconventions.md)
 

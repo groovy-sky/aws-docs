@@ -7,19 +7,19 @@ Menu
 
 Represents a structure shape and resolve member shape references.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html\#toc)
+### Table of Contents  [header link](class-aws-api-structureshape-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html\#toc-methods)
+#### Methods  [header link](class-aws-api-structureshape-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html#method___construct)
+[\_\_construct()](class-aws-api-structureshape-method-construct.md)
 : mixed [create()](class-aws-api-shape.md#method_create)
 : mixed Get a concrete shape for the given definition.[getContextParam()](class-aws-api-shape.md#method_getContextParam)
-: mixed Get a context param definition.[getMember()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html#method_getMember)
-: [Shape](class-aws-api-shape.md)Retrieve a member by name.[getMembers()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html#method_getMembers)
+: mixed Get a context param definition.[getMember()](class-aws-api-structureshape-method-getmember.md)
+: [Shape](class-aws-api-shape.md)Retrieve a member by name.[getMembers()](class-aws-api-structureshape-method-getmembers.md)
 : array<string\|int, [Shape](class-aws-api-shape.md) \> Gets a list of all members[getName()](class-aws-api-shape.md#method_getName)
-: string Get the name of the shape[getOriginalDefinition()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html#method_getOriginalDefinition)
+: string Get the name of the shape[getOriginalDefinition()](class-aws-api-structureshape-method-getoriginaldefinition.md)
 : array<string\|int, mixed>\|null Used to look up a shape's original definition.[getType()](class-aws-api-shape.md#method_getType)
-: string Get the type of the shape[hasMember()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html#method_hasMember)
+: string Get the type of the shape[hasMember()](class-aws-api-structureshape-method-hasmember.md)
 : bool Check if a specific member exists by name.[offsetExists()](class-aws-api-abstractmodel.md#method_offsetExists)
 : bool [offsetGet()](class-aws-api-abstractmodel.md#method_offsetGet)
 : mixed\|null [offsetSet()](class-aws-api-abstractmodel.md#method_offsetSet)
@@ -27,9 +27,9 @@ Represents a structure shape and resolve member shape references.
 : void [toArray()](class-aws-api-abstractmodel.md#method_toArray)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html\#methods)
+### Methods  [header link](class-aws-api-structureshape-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-api-structureshape-method-construct.md)
 
 `
     public
@@ -69,7 +69,7 @@ Get a context param definition.
     public
                     getContextParam() : mixed`
 
-#### getMember()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html\#method_getMember)
+#### getMember()  [header link](class-aws-api-structureshape-method-getmember.md)
 
 Retrieve a member by name.
 
@@ -84,7 +84,7 @@ $name
 
 Name of the member to retrieve
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html\#method_getMember\#tags)
+##### Tags  [header link](class-aws-api-structureshape-method-getmember-tags.md)
 
 throwsInvalidArgumentException
 
@@ -94,7 +94,7 @@ if the member is not found.
 
 [Shape](class-aws-api-shape.md)
 
-#### getMembers()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html\#method_getMembers)
+#### getMembers()  [header link](class-aws-api-structureshape-method-getmembers.md)
 
 Gets a list of all members
 
@@ -118,7 +118,7 @@ Get the name of the shape
 
 string
 
-#### getOriginalDefinition()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html\#method_getOriginalDefinition)
+#### getOriginalDefinition()  [header link](class-aws-api-structureshape-method-getoriginaldefinition.md)
 
 Used to look up a shape's original definition.
 
@@ -147,7 +147,7 @@ Get the type of the shape
 
 string
 
-#### hasMember()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html\#method_hasMember)
+#### hasMember()  [header link](class-aws-api-structureshape-method-hasmember.md)
 
 Check if a specific member exists by name.
 
@@ -232,21 +232,21 @@ $offset
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html#toc-methods)
+  - [Methods](class-aws-api-structureshape-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html#method___construct)
+  - [\_\_construct()](class-aws-api-structureshape-method-construct.md)
   - [create()](class-aws-api-shape.md#method_create)
   - [getContextParam()](class-aws-api-shape.md#method_getContextParam)
-  - [getMember()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html#method_getMember)
-  - [getMembers()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html#method_getMembers)
+  - [getMember()](class-aws-api-structureshape-method-getmember.md)
+  - [getMembers()](class-aws-api-structureshape-method-getmembers.md)
   - [getName()](class-aws-api-shape.md#method_getName)
-  - [getOriginalDefinition()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html#method_getOriginalDefinition)
+  - [getOriginalDefinition()](class-aws-api-structureshape-method-getoriginaldefinition.md)
   - [getType()](class-aws-api-shape.md#method_getType)
-  - [hasMember()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html#method_hasMember)
+  - [hasMember()](class-aws-api-structureshape-method-hasmember.md)
   - [offsetExists()](class-aws-api-abstractmodel.md#method_offsetExists)
   - [offsetGet()](class-aws-api-abstractmodel.md#method_offsetGet)
   - [offsetSet()](class-aws-api-abstractmodel.md#method_offsetSet)
   - [offsetUnset()](class-aws-api-abstractmodel.md#method_offsetUnset)
   - [toArray()](class-aws-api-abstractmodel.md#method_toArray)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html#top)
+[Back To Top](class-aws-api-structureshape-top.md)

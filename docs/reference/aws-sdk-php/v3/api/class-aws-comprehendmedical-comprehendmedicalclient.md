@@ -17,38 +17,38 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-10-30**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html)
+- [**2018-10-30**](api-comprehendmedical-2018-10-30.md)
 
-  - [DescribeEntitiesDetectionV2Job](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#describeentitiesdetectionv2job)
-  - [DescribeICD10CMInferenceJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#describeicd10cminferencejob)
-  - [DescribePHIDetectionJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#describephidetectionjob)
-  - [DescribeRxNormInferenceJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#describerxnorminferencejob)
-  - [DescribeSNOMEDCTInferenceJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#describesnomedctinferencejob)
-  - [DetectEntities](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#detectentities)
-  - [DetectEntitiesV2](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#detectentitiesv2)
-  - [DetectPHI](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#detectphi)
-  - [InferICD10CM](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#infericd10cm)
-  - [InferRxNorm](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#inferrxnorm)
-  - [InferSNOMEDCT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#infersnomedct)
-  - [ListEntitiesDetectionV2Jobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#listentitiesdetectionv2jobs)
-  - [ListICD10CMInferenceJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#listicd10cminferencejobs)
-  - [ListPHIDetectionJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#listphidetectionjobs)
-  - [ListRxNormInferenceJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#listrxnorminferencejobs)
-  - [ListSNOMEDCTInferenceJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#listsnomedctinferencejobs)
-  - [StartEntitiesDetectionV2Job](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#startentitiesdetectionv2job)
-  - [StartICD10CMInferenceJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#starticd10cminferencejob)
-  - [StartPHIDetectionJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#startphidetectionjob)
-  - [StartRxNormInferenceJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#startrxnorminferencejob)
-  - [StartSNOMEDCTInferenceJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#startsnomedctinferencejob)
-  - [StopEntitiesDetectionV2Job](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#stopentitiesdetectionv2job)
-  - [StopICD10CMInferenceJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#stopicd10cminferencejob)
-  - [StopPHIDetectionJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#stopphidetectionjob)
-  - [StopRxNormInferenceJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#stoprxnorminferencejob)
-  - [StopSNOMEDCTInferenceJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-comprehendmedical-2018-10-30.html#stopsnomedctinferencejob)
+  - [DescribeEntitiesDetectionV2Job](api-comprehendmedical-2018-10-30-describeentitiesdetectionv2job.md)
+  - [DescribeICD10CMInferenceJob](api-comprehendmedical-2018-10-30-describeicd10cminferencejob.md)
+  - [DescribePHIDetectionJob](api-comprehendmedical-2018-10-30-describephidetectionjob.md)
+  - [DescribeRxNormInferenceJob](api-comprehendmedical-2018-10-30-describerxnorminferencejob.md)
+  - [DescribeSNOMEDCTInferenceJob](api-comprehendmedical-2018-10-30-describesnomedctinferencejob.md)
+  - [DetectEntities](api-comprehendmedical-2018-10-30-detectentities.md)
+  - [DetectEntitiesV2](api-comprehendmedical-2018-10-30-detectentitiesv2.md)
+  - [DetectPHI](api-comprehendmedical-2018-10-30-detectphi.md)
+  - [InferICD10CM](api-comprehendmedical-2018-10-30-infericd10cm.md)
+  - [InferRxNorm](api-comprehendmedical-2018-10-30-inferrxnorm.md)
+  - [InferSNOMEDCT](api-comprehendmedical-2018-10-30-infersnomedct.md)
+  - [ListEntitiesDetectionV2Jobs](api-comprehendmedical-2018-10-30-listentitiesdetectionv2jobs.md)
+  - [ListICD10CMInferenceJobs](api-comprehendmedical-2018-10-30-listicd10cminferencejobs.md)
+  - [ListPHIDetectionJobs](api-comprehendmedical-2018-10-30-listphidetectionjobs.md)
+  - [ListRxNormInferenceJobs](api-comprehendmedical-2018-10-30-listrxnorminferencejobs.md)
+  - [ListSNOMEDCTInferenceJobs](api-comprehendmedical-2018-10-30-listsnomedctinferencejobs.md)
+  - [StartEntitiesDetectionV2Job](api-comprehendmedical-2018-10-30-startentitiesdetectionv2job.md)
+  - [StartICD10CMInferenceJob](api-comprehendmedical-2018-10-30-starticd10cminferencejob.md)
+  - [StartPHIDetectionJob](api-comprehendmedical-2018-10-30-startphidetectionjob.md)
+  - [StartRxNormInferenceJob](api-comprehendmedical-2018-10-30-startrxnorminferencejob.md)
+  - [StartSNOMEDCTInferenceJob](api-comprehendmedical-2018-10-30-startsnomedctinferencejob.md)
+  - [StopEntitiesDetectionV2Job](api-comprehendmedical-2018-10-30-stopentitiesdetectionv2job.md)
+  - [StopICD10CMInferenceJob](api-comprehendmedical-2018-10-30-stopicd10cminferencejob.md)
+  - [StopPHIDetectionJob](api-comprehendmedical-2018-10-30-stopphidetectionjob.md)
+  - [StopRxNormInferenceJob](api-comprehendmedical-2018-10-30-stoprxnorminferencejob.md)
+  - [StopSNOMEDCTInferenceJob](api-comprehendmedical-2018-10-30-stopsnomedctinferencejob.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComprehendMedical.ComprehendMedicalClient.html\#toc)
+### Table of Contents  [header link](class-aws-comprehendmedical-comprehendmedicalclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComprehendMedical.ComprehendMedicalClient.html\#toc-methods)
+#### Methods  [header link](class-aws-comprehendmedical-comprehendmedicalclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -79,7 +79,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComprehendMedical.ComprehendMedicalClient.html\#methods)
+### Methods  [header link](class-aws-comprehendmedical-comprehendmedicalclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -546,7 +546,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComprehendMedical.ComprehendMedicalClient.html#toc-methods)
+  - [Methods](class-aws-comprehendmedical-comprehendmedicalclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -573,4 +573,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComprehendMedical.ComprehendMedicalClient.html#top)
+[Back To Top](class-aws-comprehendmedical-comprehendmedicalclient-top.md)

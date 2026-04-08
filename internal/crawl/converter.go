@@ -82,18 +82,37 @@ func (c *Converter) rewriteHref(sourceURL string, href string) string {
 	if err != nil {
 		return href
 	}
-	if !IsAllowedURL(resolved, c.config) {
+
+	parsedResolved, err := url.Parse(resolved)
+	if err != nil {
+		return resolved
+	}
+	if !hostAllowed(parsedResolved.Host, c.config) {
+		return resolved
+	}
+	if !isLikelyDocumentHref(parsedResolved.Path) {
 		return resolved
 	}
 
 	anchor := ""
-	if parsed, err := url.Parse(href); err == nil && parsed.Fragment != "" {
-		anchor = "#" + parsed.Fragment
+	if parsedHref, err := url.Parse(href); err == nil && parsedHref.Fragment != "" {
+		anchor = "#" + parsedHref.Fragment
 	}
 
-	// Always rewrite in-domain documentation links to local relative paths.
-	// Using filesystem existence here makes output depend on crawl order.
+	// Rewrite in-domain document links to local relative paths regardless of
+	// include/exclude crawl filters so markdown stays repository-local.
 	return c.mapper.RelativeLink(sourceURL, resolved) + anchor
+}
+
+func isLikelyDocumentHref(pathValue string) bool {
+	lower := strings.ToLower(pathValue)
+	assetSuffixes := []string{".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".ico", ".pdf", ".zip", ".tar", ".gz", ".css", ".js"}
+	for _, suffix := range assetSuffixes {
+		if strings.HasSuffix(lower, suffix) {
+			return false
+		}
+	}
+	return true
 }
 
 func (c *Converter) rewriteAssetURL(sourceURL string, value string) string {

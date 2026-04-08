@@ -4,15 +4,15 @@ Menu
 
 ## BCMPricingCalculator
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bcmpricingcalculator.html\#toc)
+### Table of Contents  [header link](namespace-aws-bcmpricingcalculator-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bcmpricingcalculator.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-bcmpricingcalculator-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bcmpricingcalculator.exception.html)
+[Exception](namespace-aws-bcmpricingcalculator-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bcmpricingcalculator.html\#toc-classes)
+#### Classes  [header link](namespace-aws-bcmpricingcalculator-toc-classes.md)
 
-[BCMPricingCalculatorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BCMPricingCalculator.BCMPricingCalculatorClient.html)This client is used to interact with the **AWS Billing and Cost Management Pricing Calculator** service.
+[BCMPricingCalculatorClient](class-aws-bcmpricingcalculator-bcmpricingcalculatorclient.md)This client is used to interact with the **AWS Billing and Cost Management Pricing Calculator** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bcmpricingcalculator.html#toc-classes)
+  - [Classes](namespace-aws-bcmpricingcalculator-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bcmpricingcalculator.html#top)
+[Back To Top](namespace-aws-bcmpricingcalculator-top.md)

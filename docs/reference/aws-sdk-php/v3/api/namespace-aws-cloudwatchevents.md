@@ -4,15 +4,15 @@ Menu
 
 ## CloudWatchEvents
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudwatchevents.html\#toc)
+### Table of Contents  [header link](namespace-aws-cloudwatchevents-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudwatchevents.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-cloudwatchevents-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudwatchevents.exception.html)
+[Exception](namespace-aws-cloudwatchevents-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudwatchevents.html\#toc-classes)
+#### Classes  [header link](namespace-aws-cloudwatchevents-toc-classes.md)
 
-[CloudWatchEventsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudWatchEvents.CloudWatchEventsClient.html)This client is used to interact with the **Amazon CloudWatch Events** service.
+[CloudWatchEventsClient](class-aws-cloudwatchevents-cloudwatcheventsclient.md)This client is used to interact with the **Amazon CloudWatch Events** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudwatchevents.html#toc-classes)
+  - [Classes](namespace-aws-cloudwatchevents-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudwatchevents.html#top)
+[Back To Top](namespace-aws-cloudwatchevents-top.md)

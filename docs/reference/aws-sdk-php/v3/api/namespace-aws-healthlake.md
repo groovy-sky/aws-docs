@@ -4,15 +4,15 @@ Menu
 
 ## HealthLake
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.healthlake.html\#toc)
+### Table of Contents  [header link](namespace-aws-healthlake-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.healthlake.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-healthlake-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.healthlake.exception.html)
+[Exception](namespace-aws-healthlake-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.healthlake.html\#toc-classes)
+#### Classes  [header link](namespace-aws-healthlake-toc-classes.md)
 
-[HealthLakeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HealthLake.HealthLakeClient.html)This client is used to interact with the **Amazon HealthLake** service.
+[HealthLakeClient](class-aws-healthlake-healthlakeclient.md)This client is used to interact with the **Amazon HealthLake** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.healthlake.html#toc-classes)
+  - [Classes](namespace-aws-healthlake-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.healthlake.html#top)
+[Back To Top](namespace-aws-healthlake-top.md)

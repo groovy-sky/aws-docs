@@ -25,7 +25,7 @@ Required: No
 The amount of throughput consumed on each global index affected by the
 operation.
 
-Type: String to [Capacity](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Capacity.html) object map
+Type: String to [Capacity](api-capacity.md) object map
 
 Key Length Constraints: Minimum length of 3. Maximum length of 255.
 
@@ -38,7 +38,7 @@ Required: No
 The amount of throughput consumed on each local index affected by the
 operation.
 
-Type: String to [Capacity](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Capacity.html) object map
+Type: String to [Capacity](api-capacity.md) object map
 
 Key Length Constraints: Minimum length of 3. Maximum length of 255.
 
@@ -58,7 +58,7 @@ Required: No
 
 The amount of throughput consumed on the table affected by the operation.
 
-Type: [Capacity](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Capacity.html) object
+Type: [Capacity](api-capacity.md) object
 
 Required: No
 
@@ -85,13 +85,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/ConsumedCapacity)
+- [AWS SDK for C++](../../../goto/sdkforcpp/dynamodb-2012-08-10/consumedcapacity.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/ConsumedCapacity)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/dynamodb-2012-08-10/consumedcapacity.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/ConsumedCapacity)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/consumedcapacity.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ConditionCheck
 

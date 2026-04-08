@@ -8,36 +8,36 @@ Menu
 Basic implementation of the AWS Credentials interface that allows callers to
 pass in the AWS Access Key and AWS Secret Access Key in the constructor.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html\#toc)
+### Table of Contents  [header link](class-aws-credentials-credentials-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-credentials-credentials-toc-interfaces.md)
 
 [CredentialsInterface](class-aws-credentials-credentialsinterface.md)Provides access to the AWS credentials used for accessing AWS services: AWS
 access key ID, secret access key, and security token. These credentials are
 used to securely sign requests to AWS services.Serializable
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html\#toc-methods)
+#### Methods  [header link](class-aws-credentials-credentials-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method___construct)
+[\_\_construct()](class-aws-credentials-credentials-method-construct.md)
 : mixed Constructs a new BasicAWSCredentials object, with the specified AWS
-access key and AWS secret key[\_\_serialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method___serialize)
-: mixed [\_\_set\_state()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method___set_state)
-: mixed [\_\_unserialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method___unserialize)
-: mixed [getAccessKeyId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method_getAccessKeyId)
-: string Returns the AWS access key ID for this credentials object.[getAccountId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method_getAccountId)
-: mixed [getExpiration()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method_getExpiration)
-: int\|null Get the UNIX timestamp in which the credentials will expire[getSecretKey()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method_getSecretKey)
-: string Returns the AWS secret access key for this credentials object.[getSecurityToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method_getSecurityToken)
-: string\|null Get the associated security token if available[getSource()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method_getSource)
-: mixed [isExpired()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method_isExpired)
-: bool Check if the credentials are expired[serialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method_serialize)
-: mixed [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method_toArray)
-: array<string\|int, mixed> Converts the credentials to an associative array.[unserialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method_unserialize)
+access key and AWS secret key[\_\_serialize()](class-aws-credentials-credentials-method-serialize.md)
+: mixed [\_\_set\_state()](class-aws-credentials-credentials-method-set-state.md)
+: mixed [\_\_unserialize()](class-aws-credentials-credentials-method-unserialize.md)
+: mixed [getAccessKeyId()](class-aws-credentials-credentials-method-getaccesskeyid.md)
+: string Returns the AWS access key ID for this credentials object.[getAccountId()](class-aws-credentials-credentials-method-getaccountid.md)
+: mixed [getExpiration()](class-aws-credentials-credentials-method-getexpiration.md)
+: int\|null Get the UNIX timestamp in which the credentials will expire[getSecretKey()](class-aws-credentials-credentials-method-getsecretkey.md)
+: string Returns the AWS secret access key for this credentials object.[getSecurityToken()](class-aws-credentials-credentials-method-getsecuritytoken.md)
+: string\|null Get the associated security token if available[getSource()](class-aws-credentials-credentials-method-getsource.md)
+: mixed [isExpired()](class-aws-credentials-credentials-method-isexpired.md)
+: bool Check if the credentials are expired[serialize()](class-aws-credentials-credentials-method-serialize.md)
+: mixed [toArray()](class-aws-credentials-credentials-method-toarray.md)
+: array<string\|int, mixed> Converts the credentials to an associative array.[unserialize()](class-aws-credentials-credentials-method-unserialize.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html\#methods)
+### Methods  [header link](class-aws-credentials-credentials-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-credentials-credentials-method-construct.md)
 
 Constructs a new BasicAWSCredentials object, with the specified AWS
 access key and AWS secret key
@@ -76,13 +76,13 @@ $accountId
 : mixed
 = CredentialSources::STATIC
 
-#### \_\_serialize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html\#method___serialize)
+#### \_\_serialize()  [header link](class-aws-credentials-credentials-method-serialize.md)
 
 `
     public
                     __serialize() : mixed`
 
-#### \_\_set\_state()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html\#method___set_state)
+#### \_\_set\_state()  [header link](class-aws-credentials-credentials-method-set-state.md)
 
 `
     public
@@ -93,7 +93,7 @@ $accountId
 $state
 : array<string\|int, mixed>
 
-#### \_\_unserialize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html\#method___unserialize)
+#### \_\_unserialize()  [header link](class-aws-credentials-credentials-method-unserialize.md)
 
 `
     public
@@ -104,7 +104,7 @@ $state
 $data
 : mixed
 
-#### getAccessKeyId()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html\#method_getAccessKeyId)
+#### getAccessKeyId()  [header link](class-aws-credentials-credentials-method-getaccesskeyid.md)
 
 Returns the AWS access key ID for this credentials object.
 
@@ -116,13 +116,13 @@ Returns the AWS access key ID for this credentials object.
 
 string
 
-#### getAccountId()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html\#method_getAccountId)
+#### getAccountId()  [header link](class-aws-credentials-credentials-method-getaccountid.md)
 
 `
     public
                     getAccountId() : mixed`
 
-#### getExpiration()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html\#method_getExpiration)
+#### getExpiration()  [header link](class-aws-credentials-credentials-method-getexpiration.md)
 
 Get the UNIX timestamp in which the credentials will expire
 
@@ -134,7 +134,7 @@ Get the UNIX timestamp in which the credentials will expire
 
 int\|null
 
-#### getSecretKey()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html\#method_getSecretKey)
+#### getSecretKey()  [header link](class-aws-credentials-credentials-method-getsecretkey.md)
 
 Returns the AWS secret access key for this credentials object.
 
@@ -146,7 +146,7 @@ Returns the AWS secret access key for this credentials object.
 
 string
 
-#### getSecurityToken()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html\#method_getSecurityToken)
+#### getSecurityToken()  [header link](class-aws-credentials-credentials-method-getsecuritytoken.md)
 
 Get the associated security token if available
 
@@ -158,13 +158,13 @@ Get the associated security token if available
 
 string\|null
 
-#### getSource()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html\#method_getSource)
+#### getSource()  [header link](class-aws-credentials-credentials-method-getsource.md)
 
 `
     public
                     getSource() : mixed`
 
-#### isExpired()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html\#method_isExpired)
+#### isExpired()  [header link](class-aws-credentials-credentials-method-isexpired.md)
 
 Check if the credentials are expired
 
@@ -176,13 +176,13 @@ Check if the credentials are expired
 
 bool
 
-#### serialize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html\#method_serialize)
+#### serialize()  [header link](class-aws-credentials-credentials-method-serialize.md)
 
 `
     public
                     serialize() : mixed`
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html\#method_toArray)
+#### toArray()  [header link](class-aws-credentials-credentials-method-toarray.md)
 
 Converts the credentials to an associative array.
 
@@ -194,7 +194,7 @@ Converts the credentials to an associative array.
 
 array<string\|int, mixed>
 
-#### unserialize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html\#method_unserialize)
+#### unserialize()  [header link](class-aws-credentials-credentials-method-unserialize.md)
 
 `
     public
@@ -211,21 +211,21 @@ $serialized
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#toc-methods)
+  - [Methods](class-aws-credentials-credentials-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method___construct)
-  - [\_\_serialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method___serialize)
-  - [\_\_set\_state()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method___set_state)
-  - [\_\_unserialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method___unserialize)
-  - [getAccessKeyId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method_getAccessKeyId)
-  - [getAccountId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method_getAccountId)
-  - [getExpiration()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method_getExpiration)
-  - [getSecretKey()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method_getSecretKey)
-  - [getSecurityToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method_getSecurityToken)
-  - [getSource()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method_getSource)
-  - [isExpired()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method_isExpired)
-  - [serialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method_serialize)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method_toArray)
-  - [unserialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#method_unserialize)
+  - [\_\_construct()](class-aws-credentials-credentials-method-construct.md)
+  - [\_\_serialize()](class-aws-credentials-credentials-method-serialize.md)
+  - [\_\_set\_state()](class-aws-credentials-credentials-method-set-state.md)
+  - [\_\_unserialize()](class-aws-credentials-credentials-method-unserialize.md)
+  - [getAccessKeyId()](class-aws-credentials-credentials-method-getaccesskeyid.md)
+  - [getAccountId()](class-aws-credentials-credentials-method-getaccountid.md)
+  - [getExpiration()](class-aws-credentials-credentials-method-getexpiration.md)
+  - [getSecretKey()](class-aws-credentials-credentials-method-getsecretkey.md)
+  - [getSecurityToken()](class-aws-credentials-credentials-method-getsecuritytoken.md)
+  - [getSource()](class-aws-credentials-credentials-method-getsource.md)
+  - [isExpired()](class-aws-credentials-credentials-method-isexpired.md)
+  - [serialize()](class-aws-credentials-credentials-method-serialize.md)
+  - [toArray()](class-aws-credentials-credentials-method-toarray.md)
+  - [unserialize()](class-aws-credentials-credentials-method-unserialize.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html#top)
+[Back To Top](class-aws-credentials-credentials-top.md)

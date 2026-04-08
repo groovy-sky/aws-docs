@@ -2,27 +2,27 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
 
 ## DirectoryDownloader        in package    - [Aws](package-aws.md)       implements  [PromisorInterface](class-guzzlehttp-promise-promisorinterface.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryDownloader.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-directorydownloader-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryDownloader.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-s3-s3transfer-directorydownloader-toc-interfaces.md)
 
 [PromisorInterface](class-guzzlehttp-promise-promisorinterface.md)Interface used with classes that return a promise.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryDownloader.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-directorydownloader-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryDownloader.html#method___construct)
-: mixed [promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryDownloader.html#method_promise)
+[\_\_construct()](class-aws-s3-s3transfer-directorydownloader-method-construct.md)
+: mixed [promise()](class-aws-s3-s3transfer-directorydownloader-method-promise.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Returns a promise.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryDownloader.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-directorydownloader-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryDownloader.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3transfer-directorydownloader-method-construct.md)
 
 `
     public
@@ -38,9 +38,9 @@ $s3Client
 A closure that receives (S3ClientInterface, DownloadFileRequest) and returns PromiseInterface
 
 $downloadDirectoryRequest
-: [DownloadDirectoryRequest](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadDirectoryRequest.html)
+: [DownloadDirectoryRequest](class-aws-s3-s3transfer-models-downloaddirectoryrequest.md)
 
-#### promise()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryDownloader.html\#method_promise)
+#### promise()  [header link](class-aws-s3-s3transfer-directorydownloader-method-promise.md)
 
 Returns a promise.
 
@@ -48,7 +48,7 @@ Returns a promise.
     public
                     promise() : PromiseInterface`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryDownloader.html\#method_promise\#tags)
+##### Tags  [header link](class-aws-s3-s3transfer-directorydownloader-method-promise-tags.md)
 
 throwsThrowable
 
@@ -62,9 +62,9 @@ throwsThrowable
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryDownloader.html#toc-methods)
+  - [Methods](class-aws-s3-s3transfer-directorydownloader-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryDownloader.html#method___construct)
-  - [promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryDownloader.html#method_promise)
+  - [\_\_construct()](class-aws-s3-s3transfer-directorydownloader-method-construct.md)
+  - [promise()](class-aws-s3-s3transfer-directorydownloader-method-promise.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryDownloader.html#top)
+[Back To Top](class-aws-s3-s3transfer-directorydownloader-top.md)

@@ -17,37 +17,37 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-05-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html)
+- [**2018-05-10**](api-pca-connector-ad-2018-05-10.md)
 
-  - [CreateConnector](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#createconnector)
-  - [CreateDirectoryRegistration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#createdirectoryregistration)
-  - [CreateServicePrincipalName](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#createserviceprincipalname)
-  - [CreateTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#createtemplate)
-  - [CreateTemplateGroupAccessControlEntry](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#createtemplategroupaccesscontrolentry)
-  - [DeleteConnector](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#deleteconnector)
-  - [DeleteDirectoryRegistration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#deletedirectoryregistration)
-  - [DeleteServicePrincipalName](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#deleteserviceprincipalname)
-  - [DeleteTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#deletetemplate)
-  - [DeleteTemplateGroupAccessControlEntry](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#deletetemplategroupaccesscontrolentry)
-  - [GetConnector](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#getconnector)
-  - [GetDirectoryRegistration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#getdirectoryregistration)
-  - [GetServicePrincipalName](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#getserviceprincipalname)
-  - [GetTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#gettemplate)
-  - [GetTemplateGroupAccessControlEntry](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#gettemplategroupaccesscontrolentry)
-  - [ListConnectors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#listconnectors)
-  - [ListDirectoryRegistrations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#listdirectoryregistrations)
-  - [ListServicePrincipalNames](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#listserviceprincipalnames)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#listtagsforresource)
-  - [ListTemplateGroupAccessControlEntries](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#listtemplategroupaccesscontrolentries)
-  - [ListTemplates](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#listtemplates)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#untagresource)
-  - [UpdateTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#updatetemplate)
-  - [UpdateTemplateGroupAccessControlEntry](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-ad-2018-05-10.html#updatetemplategroupaccesscontrolentry)
+  - [CreateConnector](api-pca-connector-ad-2018-05-10-createconnector.md)
+  - [CreateDirectoryRegistration](api-pca-connector-ad-2018-05-10-createdirectoryregistration.md)
+  - [CreateServicePrincipalName](api-pca-connector-ad-2018-05-10-createserviceprincipalname.md)
+  - [CreateTemplate](api-pca-connector-ad-2018-05-10-createtemplate.md)
+  - [CreateTemplateGroupAccessControlEntry](api-pca-connector-ad-2018-05-10-createtemplategroupaccesscontrolentry.md)
+  - [DeleteConnector](api-pca-connector-ad-2018-05-10-deleteconnector.md)
+  - [DeleteDirectoryRegistration](api-pca-connector-ad-2018-05-10-deletedirectoryregistration.md)
+  - [DeleteServicePrincipalName](api-pca-connector-ad-2018-05-10-deleteserviceprincipalname.md)
+  - [DeleteTemplate](api-pca-connector-ad-2018-05-10-deletetemplate.md)
+  - [DeleteTemplateGroupAccessControlEntry](api-pca-connector-ad-2018-05-10-deletetemplategroupaccesscontrolentry.md)
+  - [GetConnector](api-pca-connector-ad-2018-05-10-getconnector.md)
+  - [GetDirectoryRegistration](api-pca-connector-ad-2018-05-10-getdirectoryregistration.md)
+  - [GetServicePrincipalName](api-pca-connector-ad-2018-05-10-getserviceprincipalname.md)
+  - [GetTemplate](api-pca-connector-ad-2018-05-10-gettemplate.md)
+  - [GetTemplateGroupAccessControlEntry](api-pca-connector-ad-2018-05-10-gettemplategroupaccesscontrolentry.md)
+  - [ListConnectors](api-pca-connector-ad-2018-05-10-listconnectors.md)
+  - [ListDirectoryRegistrations](api-pca-connector-ad-2018-05-10-listdirectoryregistrations.md)
+  - [ListServicePrincipalNames](api-pca-connector-ad-2018-05-10-listserviceprincipalnames.md)
+  - [ListTagsForResource](api-pca-connector-ad-2018-05-10-listtagsforresource.md)
+  - [ListTemplateGroupAccessControlEntries](api-pca-connector-ad-2018-05-10-listtemplategroupaccesscontrolentries.md)
+  - [ListTemplates](api-pca-connector-ad-2018-05-10-listtemplates.md)
+  - [TagResource](api-pca-connector-ad-2018-05-10-tagresource.md)
+  - [UntagResource](api-pca-connector-ad-2018-05-10-untagresource.md)
+  - [UpdateTemplate](api-pca-connector-ad-2018-05-10-updatetemplate.md)
+  - [UpdateTemplateGroupAccessControlEntry](api-pca-connector-ad-2018-05-10-updatetemplategroupaccesscontrolentry.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PcaConnectorAd.PcaConnectorAdClient.html\#toc)
+### Table of Contents  [header link](class-aws-pcaconnectorad-pcaconnectoradclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PcaConnectorAd.PcaConnectorAdClient.html\#toc-methods)
+#### Methods  [header link](class-aws-pcaconnectorad-pcaconnectoradclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -78,7 +78,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PcaConnectorAd.PcaConnectorAdClient.html\#methods)
+### Methods  [header link](class-aws-pcaconnectorad-pcaconnectoradclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -545,7 +545,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PcaConnectorAd.PcaConnectorAdClient.html#toc-methods)
+  - [Methods](class-aws-pcaconnectorad-pcaconnectoradclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -572,4 +572,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PcaConnectorAd.PcaConnectorAdClient.html#top)
+[Back To Top](class-aws-pcaconnectorad-pcaconnectoradclient-top.md)

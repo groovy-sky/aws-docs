@@ -8,20 +8,20 @@ Menu
 Provides access to client-side monitoring configuration options:
 'client\_id', 'enabled', 'host', 'port'
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationInterface.html\#toc)
+### Table of Contents  [header link](class-aws-clientsidemonitoring-configurationinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-clientsidemonitoring-configurationinterface-toc-methods.md)
 
-[getClientId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationInterface.html#method_getClientId)
-: string\|null Returns the Client ID, if available.[getHost()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationInterface.html#method_getHost)
-: string\|null Returns the configured host.[getPort()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationInterface.html#method_getPort)
-: int\|null Returns the configured port.[isEnabled()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationInterface.html#method_isEnabled)
-: bool Checks whether or not client-side monitoring is enabled.[toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationInterface.html#method_toArray)
+[getClientId()](class-aws-clientsidemonitoring-configurationinterface-method-getclientid.md)
+: string\|null Returns the Client ID, if available.[getHost()](class-aws-clientsidemonitoring-configurationinterface-method-gethost.md)
+: string\|null Returns the configured host.[getPort()](class-aws-clientsidemonitoring-configurationinterface-method-getport.md)
+: int\|null Returns the configured port.[isEnabled()](class-aws-clientsidemonitoring-configurationinterface-method-isenabled.md)
+: bool Checks whether or not client-side monitoring is enabled.[toArray()](class-aws-clientsidemonitoring-configurationinterface-method-toarray.md)
 : array<string\|int, mixed> Returns the configuration as an associative array.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationInterface.html\#methods)
+### Methods  [header link](class-aws-clientsidemonitoring-configurationinterface-methods.md)
 
-#### getClientId()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationInterface.html\#method_getClientId)
+#### getClientId()  [header link](class-aws-clientsidemonitoring-configurationinterface-method-getclientid.md)
 
 Returns the Client ID, if available.
 
@@ -33,7 +33,7 @@ Returns the Client ID, if available.
 
 string\|null
 
-#### getHost()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationInterface.html\#method_getHost)
+#### getHost()  [header link](class-aws-clientsidemonitoring-configurationinterface-method-gethost.md)
 
 Returns the configured host.
 
@@ -45,7 +45,7 @@ Returns the configured host.
 
 string\|null
 
-#### getPort()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationInterface.html\#method_getPort)
+#### getPort()  [header link](class-aws-clientsidemonitoring-configurationinterface-method-getport.md)
 
 Returns the configured port.
 
@@ -57,7 +57,7 @@ Returns the configured port.
 
 int\|null
 
-#### isEnabled()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationInterface.html\#method_isEnabled)
+#### isEnabled()  [header link](class-aws-clientsidemonitoring-configurationinterface-method-isenabled.md)
 
 Checks whether or not client-side monitoring is enabled.
 
@@ -69,7 +69,7 @@ Checks whether or not client-side monitoring is enabled.
 
 bool
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationInterface.html\#method_toArray)
+#### toArray()  [header link](class-aws-clientsidemonitoring-configurationinterface-method-toarray.md)
 
 Returns the configuration as an associative array.
 
@@ -87,13 +87,13 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationInterface.html#toc-methods)
+  - [Constants](class-aws-clientsidemonitoring-configurationinterface-toc-constants.md)
+  - [Methods](class-aws-clientsidemonitoring-configurationinterface-toc-methods.md)
 - Methods
-  - [getClientId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationInterface.html#method_getClientId)
-  - [getHost()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationInterface.html#method_getHost)
-  - [getPort()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationInterface.html#method_getPort)
-  - [isEnabled()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationInterface.html#method_isEnabled)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationInterface.html#method_toArray)
+  - [getClientId()](class-aws-clientsidemonitoring-configurationinterface-method-getclientid.md)
+  - [getHost()](class-aws-clientsidemonitoring-configurationinterface-method-gethost.md)
+  - [getPort()](class-aws-clientsidemonitoring-configurationinterface-method-getport.md)
+  - [isEnabled()](class-aws-clientsidemonitoring-configurationinterface-method-isenabled.md)
+  - [toArray()](class-aws-clientsidemonitoring-configurationinterface-method-toarray.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationInterface.html#top)
+[Back To Top](class-aws-clientsidemonitoring-configurationinterface-top.md)

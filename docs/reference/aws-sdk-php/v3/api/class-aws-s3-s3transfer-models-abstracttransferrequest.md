@@ -2,35 +2,35 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
-- [Models](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.models.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
+- [Models](namespace-aws-s3-s3transfer-models.md)
 
 ## AbstractTransferRequest        in package    - [Aws](package-aws.md)
 
 AbstractYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-models-abstracttransferrequest-toc.md)
 
-#### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html\#toc-properties)
+#### Properties  [header link](class-aws-s3-s3transfer-models-abstracttransferrequest-toc-properties.md)
 
-[$configKeys](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html#property_configKeys)
+[$configKeys](class-aws-s3-s3transfer-models-abstracttransferrequest-property-configkeys.md)
 : array<string\|int, mixed>
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-models-abstracttransferrequest-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html#method___construct)
-: mixed [getConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html#method_getConfig)
-: array<string\|int, mixed> [getListeners()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html#method_getListeners)
-: array<string\|int, mixed> Get current listeners.[getProgressTracker()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html#method_getProgressTracker)
-: [AbstractTransferListener](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractTransferListener.html) \|null Get the progress tracker.[getSingleObjectListeners()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html#method_getSingleObjectListeners)
-: array<string\|int, mixed> Get listeners that should receive single-object events.[updateConfigWithDefaults()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html#method_updateConfigWithDefaults)
-: void [validateConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html#method_validateConfig)
+[\_\_construct()](class-aws-s3-s3transfer-models-abstracttransferrequest-method-construct.md)
+: mixed [getConfig()](class-aws-s3-s3transfer-models-abstracttransferrequest-method-getconfig.md)
+: array<string\|int, mixed> [getListeners()](class-aws-s3-s3transfer-models-abstracttransferrequest-method-getlisteners.md)
+: array<string\|int, mixed> Get current listeners.[getProgressTracker()](class-aws-s3-s3transfer-models-abstracttransferrequest-method-getprogresstracker.md)
+: [AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md) \|null Get the progress tracker.[getSingleObjectListeners()](class-aws-s3-s3transfer-models-abstracttransferrequest-method-getsingleobjectlisteners.md)
+: array<string\|int, mixed> Get listeners that should receive single-object events.[updateConfigWithDefaults()](class-aws-s3-s3transfer-models-abstracttransferrequest-method-updateconfigwithdefaults.md)
+: void [validateConfig()](class-aws-s3-s3transfer-models-abstracttransferrequest-method-validateconfig.md)
 : void For validating config. By default, it provides an empty
 implementation.
 
-### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html\#properties)
+### Properties  [header link](class-aws-s3-s3transfer-models-abstracttransferrequest-properties.md)
 
-#### $configKeys  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html\#property_configKeys)
+#### $configKeys  [header link](class-aws-s3-s3transfer-models-abstracttransferrequest-property-configkeys.md)
 
 `
     public
@@ -38,9 +38,9 @@ implementation.
     $configKeys
      = ['track_progress' => 'bool']`
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-models-abstracttransferrequest-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3transfer-models-abstracttransferrequest-method-construct.md)
 
 `
     public
@@ -50,12 +50,12 @@ implementation.
 
 $listeners
 : array<string\|int, mixed>$progressTracker
-: [AbstractTransferListener](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractTransferListener.html) \|null$config
+: [AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md) \|null$config
 : array<string\|int, mixed>$singleObjectListeners
 : array<string\|int, mixed>
 = \[\]
 
-#### getConfig()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html\#method_getConfig)
+#### getConfig()  [header link](class-aws-s3-s3transfer-models-abstracttransferrequest-method-getconfig.md)
 
 `
     public
@@ -65,7 +65,7 @@ $listeners
 
 array<string\|int, mixed>
 
-#### getListeners()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html\#method_getListeners)
+#### getListeners()  [header link](class-aws-s3-s3transfer-models-abstracttransferrequest-method-getlisteners.md)
 
 Get current listeners.
 
@@ -77,7 +77,7 @@ Get current listeners.
 
 array<string\|int, mixed>
 
-#### getProgressTracker()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html\#method_getProgressTracker)
+#### getProgressTracker()  [header link](class-aws-s3-s3transfer-models-abstracttransferrequest-method-getprogresstracker.md)
 
 Get the progress tracker.
 
@@ -87,9 +87,9 @@ Get the progress tracker.
 
 ##### Return values
 
-[AbstractTransferListener](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractTransferListener.html) \|null
+[AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md) \|null
 
-#### getSingleObjectListeners()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html\#method_getSingleObjectListeners)
+#### getSingleObjectListeners()  [header link](class-aws-s3-s3transfer-models-abstracttransferrequest-method-getsingleobjectlisteners.md)
 
 Get listeners that should receive single-object events.
 
@@ -101,7 +101,7 @@ Get listeners that should receive single-object events.
 
 array<string\|int, mixed>
 
-#### updateConfigWithDefaults()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html\#method_updateConfigWithDefaults)
+#### updateConfigWithDefaults()  [header link](class-aws-s3-s3transfer-models-abstracttransferrequest-method-updateconfigwithdefaults.md)
 
 `
     public
@@ -112,7 +112,7 @@ array<string\|int, mixed>
 $defaultConfig
 : array<string\|int, mixed>
 
-#### validateConfig()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html\#method_validateConfig)
+#### validateConfig()  [header link](class-aws-s3-s3transfer-models-abstracttransferrequest-method-validateconfig.md)
 
 For validating config. By default, it provides an empty
 implementation.
@@ -128,17 +128,17 @@ implementation.
 **On this page**
 
 - Table Of Contents
-  - [Properties](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html#toc-properties)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html#toc-methods)
+  - [Properties](class-aws-s3-s3transfer-models-abstracttransferrequest-toc-properties.md)
+  - [Methods](class-aws-s3-s3transfer-models-abstracttransferrequest-toc-methods.md)
 - Properties
-  - [$configKeys](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html#property_configKeys)
+  - [$configKeys](class-aws-s3-s3transfer-models-abstracttransferrequest-property-configkeys.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html#method___construct)
-  - [getConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html#method_getConfig)
-  - [getListeners()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html#method_getListeners)
-  - [getProgressTracker()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html#method_getProgressTracker)
-  - [getSingleObjectListeners()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html#method_getSingleObjectListeners)
-  - [updateConfigWithDefaults()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html#method_updateConfigWithDefaults)
-  - [validateConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html#method_validateConfig)
+  - [\_\_construct()](class-aws-s3-s3transfer-models-abstracttransferrequest-method-construct.md)
+  - [getConfig()](class-aws-s3-s3transfer-models-abstracttransferrequest-method-getconfig.md)
+  - [getListeners()](class-aws-s3-s3transfer-models-abstracttransferrequest-method-getlisteners.md)
+  - [getProgressTracker()](class-aws-s3-s3transfer-models-abstracttransferrequest-method-getprogresstracker.md)
+  - [getSingleObjectListeners()](class-aws-s3-s3transfer-models-abstracttransferrequest-method-getsingleobjectlisteners.md)
+  - [updateConfigWithDefaults()](class-aws-s3-s3transfer-models-abstracttransferrequest-method-updateconfigwithdefaults.md)
+  - [validateConfig()](class-aws-s3-s3transfer-models-abstracttransferrequest-method-validateconfig.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.AbstractTransferRequest.html#top)
+[Back To Top](class-aws-s3-s3transfer-models-abstracttransferrequest-top.md)

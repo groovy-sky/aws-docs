@@ -4,15 +4,15 @@ Menu
 
 ## TaxSettings
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.taxsettings.html\#toc)
+### Table of Contents  [header link](namespace-aws-taxsettings-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.taxsettings.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-taxsettings-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.taxsettings.exception.html)
+[Exception](namespace-aws-taxsettings-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.taxsettings.html\#toc-classes)
+#### Classes  [header link](namespace-aws-taxsettings-toc-classes.md)
 
-[TaxSettingsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TaxSettings.TaxSettingsClient.html)This client is used to interact with the **Tax Settings** service.
+[TaxSettingsClient](class-aws-taxsettings-taxsettingsclient.md)This client is used to interact with the **Tax Settings** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.taxsettings.html#toc-classes)
+  - [Classes](namespace-aws-taxsettings-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.taxsettings.html#top)
+[Back To Top](namespace-aws-taxsettings-top.md)

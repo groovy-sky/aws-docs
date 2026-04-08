@@ -4,15 +4,15 @@ Menu
 
 ## MigrationHubConfig
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.migrationhubconfig.html\#toc)
+### Table of Contents  [header link](namespace-aws-migrationhubconfig-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.migrationhubconfig.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-migrationhubconfig-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.migrationhubconfig.exception.html)
+[Exception](namespace-aws-migrationhubconfig-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.migrationhubconfig.html\#toc-classes)
+#### Classes  [header link](namespace-aws-migrationhubconfig-toc-classes.md)
 
-[MigrationHubConfigClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubConfig.MigrationHubConfigClient.html)This client is used to interact with the **AWS Migration Hub Config** service.
+[MigrationHubConfigClient](class-aws-migrationhubconfig-migrationhubconfigclient.md)This client is used to interact with the **AWS Migration Hub Config** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.migrationhubconfig.html#toc-classes)
+  - [Classes](namespace-aws-migrationhubconfig-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.migrationhubconfig.html#top)
+[Back To Top](namespace-aws-migrationhubconfig-top.md)

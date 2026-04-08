@@ -3,7 +3,7 @@
 Create a task set in the specified cluster and service. This is used when a service
 uses the `EXTERNAL` deployment controller type. For more information, see
 [Amazon ECS deployment\
-types](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-types.html) in the _Amazon Elastic Container Service Developer_
+types](../../../../services/amazonecs/latest/developerguide/deployment-types.md) in the _Amazon Elastic Container Service Developer_
 _Guide_.
 
 ###### Note
@@ -78,7 +78,7 @@ _Developer Guide_.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -89,7 +89,7 @@ The capacity provider strategy to use for the task set.
 A capacity provider strategy consists of one or more capacity providers along with the
 `base` and `weight` to assign to them. A capacity provider
 must be associated with the cluster to be used in a capacity provider strategy. The
-[PutClusterCapacityProviders](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_PutClusterCapacityProviders.html) API is used to associate a capacity provider
+[PutClusterCapacityProviders](api-putclustercapacityproviders.md) API is used to associate a capacity provider
 with a cluster. Only capacity providers with an `ACTIVE` or
 `UPDATING` status can be used.
 
@@ -99,17 +99,17 @@ parameter must be omitted. If no `capacityProviderStrategy` or
 `defaultCapacityProviderStrategy` for the cluster is used.
 
 If specifying a capacity provider that uses an Auto Scaling group, the capacity
-provider must already be created. New capacity providers can be created with the [CreateCapacityProviderProvider](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateCapacityProviderProvider.html) API operation.
+provider must already be created. New capacity providers can be created with the [CreateCapacityProviderProvider](api-createcapacityproviderprovider.md) API operation.
 
 To use a AWS Fargate capacity provider, specify either the `FARGATE` or
 `FARGATE_SPOT` capacity providers. The AWS Fargate capacity providers
 are available to all accounts and only need to be associated with a cluster to be
 used.
 
-The [PutClusterCapacityProviders](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_PutClusterCapacityProviders.html) API operation is used to update the list of
+The [PutClusterCapacityProviders](api-putclustercapacityproviders.md) API operation is used to update the list of
 available capacity providers for a cluster after the cluster is created.
 
-Type: Array of [CapacityProviderStrategyItem](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CapacityProviderStrategyItem.html) objects
+Type: Array of [CapacityProviderStrategyItem](api-capacityproviderstrategyitem.md) objects
 
 Required: No
 
@@ -147,7 +147,7 @@ Required: No
 **[launchType](#API_CreateTaskSet_RequestSyntax)**
 
 The launch type that new tasks in the task set uses. For more information, see [Amazon\
-ECS launch types](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_types.html) in the _Amazon Elastic Container Service Developer_
+ECS launch types](../../../../services/amazonecs/latest/developerguide/launch-types.md) in the _Amazon Elastic Container Service Developer_
 _Guide_.
 
 If a `launchType` is specified, the `capacityProviderStrategy`
@@ -165,7 +165,7 @@ A load balancer object representing the load balancer to use with the task set. 
 supported load balancer types are either an Application Load Balancer or a Network Load
 Balancer.
 
-Type: Array of [LoadBalancer](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_LoadBalancer.html) objects
+Type: Array of [LoadBalancer](api-loadbalancer.md) objects
 
 Required: No
 
@@ -192,7 +192,7 @@ Required: No
 A floating-point percentage of the desired number of tasks to place and keep running
 in the task set.
 
-Type: [Scale](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Scale.html) object
+Type: [Scale](api-scale.md) object
 
 Required: No
 
@@ -211,7 +211,7 @@ The details of the service discovery registries to assign to this task set. For 
 information, see [Service\
 discovery](../../../../services/amazonecs/latest/developerguide/service-discovery.md).
 
-Type: Array of [ServiceRegistry](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ServiceRegistry.html) objects
+Type: Array of [ServiceRegistry](api-serviceregistry.md) objects
 
 Required: No
 
@@ -245,7 +245,7 @@ AWS use. You cannot edit or delete tag keys or values with
 this prefix. Tags with this prefix do not count against your tags per resource
 limit.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Array Members: Minimum number of 0 items. Maximum number of 50 items.
 
@@ -350,11 +350,11 @@ Information about a set of Amazon ECS tasks in either an AWS CodeDeploy or an
 number of tasks, how many tasks are running, and whether the task set serves production
 traffic.
 
-Type: [TaskSet](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_TaskSet.html) object
+Type: [TaskSet](api-taskset.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **AccessDeniedException**
 
@@ -380,7 +380,7 @@ HTTP Status Code: 400
 
 **ClusterNotFoundException**
 
-The specified cluster wasn't found. You can view your available clusters with [ListClusters](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListClusters.html). Amazon ECS clusters are Region specific.
+The specified cluster wasn't found. You can view your available clusters with [ListClusters](api-listclusters.md). Amazon ECS clusters are Region specific.
 
 **message**
 
@@ -394,7 +394,7 @@ The specified parameter isn't valid. Review the available parameters for the API
 request.
 
 For more information about service event errors, see [Amazon ECS\
-service event messages](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-event-messages-list.html).
+service event messages](../../../../services/amazonecs/latest/developerguide/service-event-messages-list.md).
 
 **message**
 
@@ -456,7 +456,7 @@ HTTP Status Code: 400
 
 **ServiceNotFoundException**
 
-The specified service wasn't found. You can view your available services with [ListServices](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListServices.html). Amazon ECS services are cluster specific and Region
+The specified service wasn't found. You can view your available services with [ListServices](api-listservices.md). Amazon ECS services are cluster specific and Region
 specific.
 
 **message**
@@ -479,27 +479,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ecs-2014-11-13/CreateTaskSet)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ecs-2014-11-13/createtaskset.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ecs-2014-11-13/CreateTaskSet)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ecs-2014-11-13/createtaskset.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/CreateTaskSet)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/createtaskset.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ecs-2014-11-13/CreateTaskSet)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ecs-2014-11-13/createtaskset.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/CreateTaskSet)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/createtaskset.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ecs-2014-11-13/CreateTaskSet)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ecs-2014-11-13/createtaskset.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ecs-2014-11-13/CreateTaskSet)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ecs-2014-11-13/createtaskset.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ecs-2014-11-13/CreateTaskSet)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ecs-2014-11-13/createtaskset.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ecs-2014-11-13/CreateTaskSet)
+- [AWS SDK for Python](../../../../services/goto/boto3/ecs-2014-11-13/createtaskset.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/CreateTaskSet)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/createtaskset.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateService
 

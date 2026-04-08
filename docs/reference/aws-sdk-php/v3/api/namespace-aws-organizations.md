@@ -4,15 +4,15 @@ Menu
 
 ## Organizations
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.organizations.html\#toc)
+### Table of Contents  [header link](namespace-aws-organizations-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.organizations.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-organizations-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.organizations.exception.html)
+[Exception](namespace-aws-organizations-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.organizations.html\#toc-classes)
+#### Classes  [header link](namespace-aws-organizations-toc-classes.md)
 
-[OrganizationsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Organizations.OrganizationsClient.html)This client is used to interact with the **AWS Organizations** service.
+[OrganizationsClient](class-aws-organizations-organizationsclient.md)This client is used to interact with the **AWS Organizations** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.organizations.html#toc-classes)
+  - [Classes](namespace-aws-organizations-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.organizations.html#top)
+[Back To Top](namespace-aws-organizations-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## Support
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.support.html\#toc)
+### Table of Contents  [header link](namespace-aws-support-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.support.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-support-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.support.exception.html)
+[Exception](namespace-aws-support-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.support.html\#toc-classes)
+#### Classes  [header link](namespace-aws-support-toc-classes.md)
 
-[SupportClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Support.SupportClient.html)AWS Support client.
+[SupportClient](class-aws-support-supportclient.md)AWS Support client.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.support.html#toc-classes)
+  - [Classes](namespace-aws-support-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.support.html#top)
+[Back To Top](namespace-aws-support-top.md)

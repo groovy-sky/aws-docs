@@ -4,15 +4,15 @@ Menu
 
 ## DevOpsGuru
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.devopsguru.html\#toc)
+### Table of Contents  [header link](namespace-aws-devopsguru-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.devopsguru.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-devopsguru-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.devopsguru.exception.html)
+[Exception](namespace-aws-devopsguru-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.devopsguru.html\#toc-classes)
+#### Classes  [header link](namespace-aws-devopsguru-toc-classes.md)
 
-[DevOpsGuruClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DevOpsGuru.DevOpsGuruClient.html)This client is used to interact with the **Amazon DevOps Guru** service.
+[DevOpsGuruClient](class-aws-devopsguru-devopsguruclient.md)This client is used to interact with the **Amazon DevOps Guru** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.devopsguru.html#toc-classes)
+  - [Classes](namespace-aws-devopsguru-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.devopsguru.html#top)
+[Back To Top](namespace-aws-devopsguru-top.md)

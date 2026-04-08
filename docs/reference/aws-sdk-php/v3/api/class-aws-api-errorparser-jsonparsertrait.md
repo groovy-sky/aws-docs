@@ -2,13 +2,13 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [Api](namespace-aws-api.md)
-- [ErrorParser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.api.errorparser.html)
+- [ErrorParser](namespace-aws-api-errorparser.md)
 
 ## JsonParserTrait
 
 Provides basic JSON error parsing functionality.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.JsonParserTrait.html\#toc)
+### Table of Contents  [header link](class-aws-api-errorparser-jsonparsertrait-toc.md)
 
 ×
 
@@ -16,4 +16,4 @@ Provides basic JSON error parsing functionality.
 
 - Table Of Contents
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.JsonParserTrait.html#top)
+[Back To Top](class-aws-api-errorparser-jsonparsertrait-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## ForecastQueryService
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.forecastqueryservice.html\#toc)
+### Table of Contents  [header link](namespace-aws-forecastqueryservice-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.forecastqueryservice.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-forecastqueryservice-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.forecastqueryservice.exception.html)
+[Exception](namespace-aws-forecastqueryservice-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.forecastqueryservice.html\#toc-classes)
+#### Classes  [header link](namespace-aws-forecastqueryservice-toc-classes.md)
 
-[ForecastQueryServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ForecastQueryService.ForecastQueryServiceClient.html)This client is used to interact with the **Amazon Forecast Query Service** service.
+[ForecastQueryServiceClient](class-aws-forecastqueryservice-forecastqueryserviceclient.md)This client is used to interact with the **Amazon Forecast Query Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.forecastqueryservice.html#toc-classes)
+  - [Classes](namespace-aws-forecastqueryservice-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.forecastqueryservice.html#top)
+[Back To Top](namespace-aws-forecastqueryservice-top.md)

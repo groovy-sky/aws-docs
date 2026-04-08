@@ -4,19 +4,19 @@ Menu
 
 ## Endpoint
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpoint.html\#toc)
+### Table of Contents  [header link](namespace-aws-endpoint-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpoint.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-endpoint-namespaces.md)
 
-[UseDualstackEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpoint.usedualstackendpoint.html)[UseFipsEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpoint.usefipsendpoint.html)
+[UseDualstackEndpoint](namespace-aws-endpoint-usedualstackendpoint.md)[UseFipsEndpoint](namespace-aws-endpoint-usefipsendpoint.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpoint.html\#toc-interfaces)
+#### Interfaces  [header link](namespace-aws-endpoint-toc-interfaces.md)
 
-[PartitionInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionInterface.html)Represents a section of the AWS cloud.
+[PartitionInterface](class-aws-endpoint-partitioninterface.md)Represents a section of the AWS cloud.
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpoint.html\#toc-classes)
+#### Classes  [header link](namespace-aws-endpoint-toc-classes.md)
 
-[EndpointProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.EndpointProvider.html)Endpoint providers.[Partition](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html)Default implementation of an AWS partition.[PartitionEndpointProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html)[PatternEndpointProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PatternEndpointProvider.html)Provides endpoints based on an endpoint pattern configuration array.
+[EndpointProvider](class-aws-endpoint-endpointprovider.md)Endpoint providers.[Partition](class-aws-endpoint-partition.md)Default implementation of an AWS partition.[PartitionEndpointProvider](class-aws-endpoint-partitionendpointprovider.md)[PatternEndpointProvider](class-aws-endpoint-patternendpointprovider.md)Provides endpoints based on an endpoint pattern configuration array.
 
 ```
 
@@ -27,7 +27,7 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Interfaces](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpoint.html#toc-interfaces)
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpoint.html#toc-classes)
+  - [Interfaces](namespace-aws-endpoint-toc-interfaces.md)
+  - [Classes](namespace-aws-endpoint-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpoint.html#top)
+[Back To Top](namespace-aws-endpoint-top.md)

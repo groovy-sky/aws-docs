@@ -4,15 +4,15 @@ Menu
 
 ## MedicalImaging
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.medicalimaging.html\#toc)
+### Table of Contents  [header link](namespace-aws-medicalimaging-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.medicalimaging.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-medicalimaging-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.medicalimaging.exception.html)
+[Exception](namespace-aws-medicalimaging-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.medicalimaging.html\#toc-classes)
+#### Classes  [header link](namespace-aws-medicalimaging-toc-classes.md)
 
-[MedicalImagingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MedicalImaging.MedicalImagingClient.html)This client is used to interact with the **AWS Health Imaging** service.
+[MedicalImagingClient](class-aws-medicalimaging-medicalimagingclient.md)This client is used to interact with the **AWS Health Imaging** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.medicalimaging.html#toc-classes)
+  - [Classes](namespace-aws-medicalimaging-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.medicalimaging.html#top)
+[Back To Top](namespace-aws-medicalimaging-top.md)

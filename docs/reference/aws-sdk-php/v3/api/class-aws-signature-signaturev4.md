@@ -3,42 +3,42 @@ Menu
 - [Aws](namespace-aws.md)
 - [Signature](namespace-aws-signature.md)
 
-## SignatureV4        in package    - [Aws](package-aws.md)       implements  [SignatureInterface](class-aws-signature-signatureinterface.md)  Uses  [SignatureTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureTrait.html)
+## SignatureV4        in package    - [Aws](package-aws.md)       implements  [SignatureInterface](class-aws-signature-signatureinterface.md)  Uses  [SignatureTrait](class-aws-signature-signaturetrait.md)
 
 Signature Version 4
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html\#tags)
+##### Tags  [header link](class-aws-signature-signaturev4-tags.md)
 
-link[http://docs.aws.amazon.com/general/latest/gr/signature-version-4.html](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html)
+link[http://docs.aws.amazon.com/general/latest/gr/signature-version-4.html](../../../../general/general/latest/gr/signature-version-4.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html\#toc)
+### Table of Contents  [header link](class-aws-signature-signaturev4-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-signature-signaturev4-toc-interfaces.md)
 
 [SignatureInterface](class-aws-signature-signatureinterface.md)Interface used to provide interchangeable strategies for signing requests
 using the various AWS signature protocols.
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html\#toc-constants)
+#### Constants  [header link](class-aws-signature-signaturev4-toc-constants.md)
 
-[AMZ\_CONTENT\_SHA256\_HEADER](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html#constant_AMZ_CONTENT_SHA256_HEADER)
-= 'X-Amz-Content-Sha256' [ISO8601\_BASIC](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html#constant_ISO8601_BASIC)
-= 'Ymd\\\THis\\\Z' [UNSIGNED\_PAYLOAD](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html#constant_UNSIGNED_PAYLOAD)
+[AMZ\_CONTENT\_SHA256\_HEADER](class-aws-signature-signaturev4-constant-amz-content-sha256-header.md)
+= 'X-Amz-Content-Sha256' [ISO8601\_BASIC](class-aws-signature-signaturev4-constant-iso8601-basic.md)
+= 'Ymd\\\THis\\\Z' [UNSIGNED\_PAYLOAD](class-aws-signature-signaturev4-constant-unsigned-payload.md)
 = 'UNSIGNED-PAYLOAD'
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html\#toc-methods)
+#### Methods  [header link](class-aws-signature-signaturev4-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html#method___construct)
-: mixed [convertPostToGet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html#method_convertPostToGet)
+[\_\_construct()](class-aws-signature-signaturev4-method-construct.md)
+: mixed [convertPostToGet()](class-aws-signature-signaturev4-method-convertposttoget.md)
 : [RequestInterface](class-psr-http-message-requestinterface.md)Converts a POST request to a GET request by moving POST fields into the
-query string.[presign()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html#method_presign)
-: [RequestInterface](class-psr-http-message-requestinterface.md)Create a pre-signed request.[signRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html#method_signRequest)
+query string.[presign()](class-aws-signature-signaturev4-method-presign.md)
+: [RequestInterface](class-psr-http-message-requestinterface.md)Create a pre-signed request.[signRequest()](class-aws-signature-signaturev4-method-signrequest.md)
 : [RequestInterface](class-psr-http-message-requestinterface.md)Signs the specified request with an AWS signing protocol by using the
 provided AWS account credentials and adding the required headers to the
 request.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html\#constants)
+### Constants  [header link](class-aws-signature-signaturev4-constants.md)
 
-#### AMZ\_CONTENT\_SHA256\_HEADER  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html\#constant_AMZ_CONTENT_SHA256_HEADER)
+#### AMZ\_CONTENT\_SHA256\_HEADER  [header link](class-aws-signature-signaturev4-constant-amz-content-sha256-header.md)
 
 `
     public
@@ -47,7 +47,7 @@ request.
     = 'X-Amz-Content-Sha256'
 `
 
-#### ISO8601\_BASIC  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html\#constant_ISO8601_BASIC)
+#### ISO8601\_BASIC  [header link](class-aws-signature-signaturev4-constant-iso8601-basic.md)
 
 `
     public
@@ -56,7 +56,7 @@ request.
     = 'Ymd\\THis\\Z'
 `
 
-#### UNSIGNED\_PAYLOAD  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html\#constant_UNSIGNED_PAYLOAD)
+#### UNSIGNED\_PAYLOAD  [header link](class-aws-signature-signaturev4-constant-unsigned-payload.md)
 
 `
     public
@@ -65,9 +65,9 @@ request.
     = 'UNSIGNED-PAYLOAD'
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html\#methods)
+### Methods  [header link](class-aws-signature-signaturev4-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-signature-signaturev4-method-construct.md)
 
 `
     public
@@ -94,7 +94,7 @@ Array of configuration options used when signing
 - unsigned-body: Flag to make request have unsigned payload.
 Unsigned body is used primarily for streaming requests.
 
-#### convertPostToGet()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html\#method_convertPostToGet)
+#### convertPostToGet()  [header link](class-aws-signature-signaturev4-method-convertposttoget.md)
 
 Converts a POST request to a GET request by moving POST fields into the
 query string.
@@ -116,7 +116,7 @@ $additionalQueryParams
 : mixed
 = ""
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html\#method_convertPostToGet\#tags)
+##### Tags  [header link](class-aws-signature-signaturev4-method-convertposttoget-tags.md)
 
 throwsInvalidArgumentException
 
@@ -126,7 +126,7 @@ if the method is not POST
 
 [RequestInterface](class-psr-http-message-requestinterface.md)
 
-#### presign()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html\#method_presign)
+#### presign()  [header link](class-aws-signature-signaturev4-method-presign.md)
 
 Create a pre-signed request.
 
@@ -161,7 +161,7 @@ $options
 
 [RequestInterface](class-psr-http-message-requestinterface.md)
 
-#### signRequest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html\#method_signRequest)
+#### signRequest()  [header link](class-aws-signature-signaturev4-method-signrequest.md)
 
 Signs the specified request with an AWS signing protocol by using the
 provided AWS account credentials and adding the required headers to the
@@ -201,16 +201,16 @@ Returns the modified request.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html#toc-methods)
+  - [Constants](class-aws-signature-signaturev4-toc-constants.md)
+  - [Methods](class-aws-signature-signaturev4-toc-methods.md)
 - Constants
-  - [AMZ\_CONTENT\_SHA256\_HEADER](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html#constant_AMZ_CONTENT_SHA256_HEADER)
-  - [ISO8601\_BASIC](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html#constant_ISO8601_BASIC)
-  - [UNSIGNED\_PAYLOAD](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html#constant_UNSIGNED_PAYLOAD)
+  - [AMZ\_CONTENT\_SHA256\_HEADER](class-aws-signature-signaturev4-constant-amz-content-sha256-header.md)
+  - [ISO8601\_BASIC](class-aws-signature-signaturev4-constant-iso8601-basic.md)
+  - [UNSIGNED\_PAYLOAD](class-aws-signature-signaturev4-constant-unsigned-payload.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html#method___construct)
-  - [convertPostToGet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html#method_convertPostToGet)
-  - [presign()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html#method_presign)
-  - [signRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html#method_signRequest)
+  - [\_\_construct()](class-aws-signature-signaturev4-method-construct.md)
+  - [convertPostToGet()](class-aws-signature-signaturev4-method-convertposttoget.md)
+  - [presign()](class-aws-signature-signaturev4-method-presign.md)
+  - [signRequest()](class-aws-signature-signaturev4-method-signrequest.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureV4.html#top)
+[Back To Top](class-aws-signature-signaturev4-top.md)

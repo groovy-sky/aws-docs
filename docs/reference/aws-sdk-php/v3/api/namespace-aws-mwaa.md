@@ -4,15 +4,15 @@ Menu
 
 ## MWAA
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mwaa.html\#toc)
+### Table of Contents  [header link](namespace-aws-mwaa-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mwaa.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-mwaa-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mwaa.exception.html)
+[Exception](namespace-aws-mwaa-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mwaa.html\#toc-classes)
+#### Classes  [header link](namespace-aws-mwaa-toc-classes.md)
 
-[MWAAClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MWAA.MWAAClient.html)This client is used to interact with the **AmazonMWAA** service.
+[MWAAClient](class-aws-mwaa-mwaaclient.md)This client is used to interact with the **AmazonMWAA** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mwaa.html#toc-classes)
+  - [Classes](namespace-aws-mwaa-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mwaa.html#top)
+[Back To Top](namespace-aws-mwaa-top.md)

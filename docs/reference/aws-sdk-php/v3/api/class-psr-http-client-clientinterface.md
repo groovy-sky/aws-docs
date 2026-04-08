@@ -1,21 +1,21 @@
 Menu
 
-- [Psr](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.html)
-- [Http](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.html)
-- [Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.client.html)
+- [Psr](namespace-psr.md)
+- [Http](namespace-psr-http.md)
+- [Client](namespace-psr-http-client.md)
 
 ## ClientInterface     in    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.ClientInterface.html\#toc)
+### Table of Contents  [header link](class-psr-http-client-clientinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.ClientInterface.html\#toc-methods)
+#### Methods  [header link](class-psr-http-client-clientinterface-toc-methods.md)
 
-[sendRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.ClientInterface.html#method_sendRequest)
-: [ResponseInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html)Sends a PSR-7 request and returns a PSR-7 response.
+[sendRequest()](class-psr-http-client-clientinterface-method-sendrequest.md)
+: [ResponseInterface](class-psr-http-message-responseinterface.md)Sends a PSR-7 request and returns a PSR-7 response.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.ClientInterface.html\#methods)
+### Methods  [header link](class-psr-http-client-clientinterface-methods.md)
 
-#### sendRequest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.ClientInterface.html\#method_sendRequest)
+#### sendRequest()  [header link](class-psr-http-client-clientinterface-method-sendrequest.md)
 
 Sends a PSR-7 request and returns a PSR-7 response.
 
@@ -28,7 +28,7 @@ Sends a PSR-7 request and returns a PSR-7 response.
 $request
 : [RequestInterface](class-psr-http-message-requestinterface.md)
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.ClientInterface.html\#method_sendRequest\#tags)
+##### Tags  [header link](class-psr-http-client-clientinterface-method-sendrequest-tags.md)
 
 throws[ClientExceptionInterface](class-psr-http-client-clientexceptioninterface.md)
 
@@ -36,7 +36,7 @@ If an error happens while processing the request.
 
 ##### Return values
 
-[ResponseInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html)
+[ResponseInterface](class-psr-http-message-responseinterface.md)
 <\-\- modeled\_exceptions -->
 
 ×
@@ -44,9 +44,9 @@ If an error happens while processing the request.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.ClientInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.ClientInterface.html#toc-methods)
+  - [Constants](class-psr-http-client-clientinterface-toc-constants.md)
+  - [Methods](class-psr-http-client-clientinterface-toc-methods.md)
 - Methods
-  - [sendRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.ClientInterface.html#method_sendRequest)
+  - [sendRequest()](class-psr-http-client-clientinterface-method-sendrequest.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.ClientInterface.html#top)
+[Back To Top](class-psr-http-client-clientinterface-top.md)

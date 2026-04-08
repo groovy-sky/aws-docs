@@ -9,7 +9,7 @@ Availability Zone.
 
 You can use the `ReplicationSourceIdentifier` parameter to create an Amazon
 Aurora DB cluster as a read replica of another DB cluster or Amazon RDS for MySQL or
-PostgreSQL DB instance. For more information about Amazon Aurora, see [What is Amazon Aurora?](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html) in the _Amazon Aurora User_
+PostgreSQL DB instance. For more information about Amazon Aurora, see [What is Amazon Aurora?](../../../../services/amazonrds/latest/aurorauserguide/chap-auroraoverview.md) in the _Amazon Aurora User_
 _Guide_.
 
 You can also use the `ReplicationSourceIdentifier` parameter to create a
@@ -24,7 +24,7 @@ with a writer instance and feature specific values set to all other input parame
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 **DBClusterIdentifier**
 
@@ -64,7 +64,7 @@ Valid Values:
 - `postgres`
 
 - `neptune` \- For information about using Amazon Neptune, see the
-[_Amazon Neptune User Guide_](https://docs.aws.amazon.com/neptune/latest/userguide/intro.html).
+[_Amazon Neptune User Guide_](../../../../services/neptune/latest/userguide/intro.md).
 
 Type: String
 
@@ -89,7 +89,7 @@ By default, minor engine upgrades are applied automatically.
 
 Valid for Cluster Type: Aurora DB clusters and Multi-AZ DB cluster.
 
-For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Upgrading.html#USER_UpgradeDBInstance.Upgrading.AutoMinorVersionUpgrades).
+For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](../../../../services/amazonrds/latest/userguide/user-upgradedbinstance-upgrading-user-upgradedbinstance-upgrading-autominorversionupgrades.md).
 
 Type: Boolean
 
@@ -106,7 +106,7 @@ cluster with one writer instance and three reader instances, RDS might distribut
 writer instance to AZ 1, the first reader instance to AZ 2, the second reader instance
 to AZ 3, and the third reader instance to either AZ 1, AZ 2, or AZ 3.
 
-For more information, see [Availability Zones](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.RegionsAndAvailabilityZones.html#Concepts.RegionsAndAvailabilityZones.AvailabilityZones) and [High availability for Aurora DB instances](../../../../services/amazonrds/latest/aurorauserguide/concepts-aurorahighavailability.md#Concepts.AuroraHighAvailability.Instances) in the _Amazon Aurora_
+For more information, see [Availability Zones](../../../../services/amazonrds/latest/aurorauserguide/concepts-regionsandavailabilityzones-concepts-regionsandavailabilityzones-availabilityzones.md) and [High availability for Aurora DB instances](../../../../services/amazonrds/latest/aurorauserguide/concepts-aurorahighavailability.md#Concepts.AuroraHighAvailability.Instances) in the _Amazon Aurora_
 _User Guide_.
 
 Valid for Cluster Type: Aurora DB clusters only
@@ -304,7 +304,7 @@ The Active Directory directory ID to create the DB cluster in.
 
 For Amazon Aurora DB clusters, Amazon RDS can use Kerberos authentication to authenticate users that connect to the DB cluster.
 
-For more information, see [Kerberos authentication](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/kerberos-authentication.html)
+For more information, see [Kerberos authentication](../../../../services/amazonrds/latest/aurorauserguide/kerberos-authentication.md)
 in the _Amazon Aurora User Guide_.
 
 Valid for Cluster Type: Aurora DB clusters only
@@ -341,7 +341,7 @@ The following values are valid for each DB engine:
 
 For more information about exporting CloudWatch Logs for Amazon RDS, see [Publishing Database Logs to Amazon CloudWatch Logs](../../../../services/amazonrds/latest/userguide/user-logaccess.md#USER_LogAccess.Procedural.UploadtoCloudWatch) in the _Amazon RDS User Guide_.
 
-For more information about exporting CloudWatch Logs for Amazon Aurora, see [Publishing Database Logs to Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_LogAccess.html#USER_LogAccess.Procedural.UploadtoCloudWatch) in the _Amazon Aurora User Guide_.
+For more information about exporting CloudWatch Logs for Amazon Aurora, see [Publishing Database Logs to Amazon CloudWatch Logs](../../../../services/amazonrds/latest/aurorauserguide/user-logaccess-user-logaccess-procedural-uploadtocloudwatch.md) in the _Amazon Aurora User Guide_.
 
 Type: Array of strings
 
@@ -373,7 +373,7 @@ When enabled, the HTTP endpoint provides a connectionless web service API (RDS D
 SQL queries on the DB cluster. You can also query your database
 from inside the RDS console with the RDS query editor.
 
-For more information, see [Using RDS Data API](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-api.html) in the
+For more information, see [Using RDS Data API](../../../../services/amazonrds/latest/aurorauserguide/data-api.md) in the
 _Amazon Aurora User Guide_.
 
 Valid for Cluster Type: Aurora DB clusters only
@@ -389,7 +389,7 @@ Management (IAM) accounts to database accounts. By default, mapping isn't
 enabled.
 
 For more information, see [IAM Database\
-Authentication](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/UsingWithRDS.IAMDBAuth.html) in the _Amazon Aurora User Guide_ or
+Authentication](../../../../services/amazonrds/latest/aurorauserguide/usingwithrds-iamdbauth.md) in the _Amazon Aurora User Guide_ or
 [IAM database\
 authentication for MariaDB, MySQL, and PostgreSQL](../../../../services/amazonrds/latest/userguide/usingwithrds-iamdbauth.md) in the _Amazon_
 _RDS User Guide_.
@@ -450,7 +450,7 @@ creating the DB cluster will fail if the DB major version is past its end of sta
 You can use this setting to enroll your DB cluster into Amazon RDS Extended Support. With RDS Extended Support,
 you can run the selected major engine version on your DB cluster past the end of standard support for that engine version. For more information, see the following sections:
 
-- Amazon Aurora - [Amazon RDS Extended Support with Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/extended-support.html) in the _Amazon Aurora User Guide_
+- Amazon Aurora - [Amazon RDS Extended Support with Amazon Aurora](../../../../services/amazonrds/latest/aurorauserguide/extended-support.md) in the _Amazon Aurora User Guide_
 
 - Amazon RDS - [Amazon RDS Extended Support with Amazon RDS](../../../../services/amazonrds/latest/userguide/extended-support.md) in the _Amazon RDS User Guide_
 
@@ -475,10 +475,10 @@ For information about limitations and requirements for Serverless DB clusters, s
 following sections in the _Amazon Aurora User Guide_:
 
 - [Limitations of Aurora\
-Serverless v1](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.html#aurora-serverless.limitations)
+Serverless v1](../../../../services/amazonrds/latest/aurorauserguide/aurora-serverless-aurora-serverless-limitations.md)
 
 - [Requirements\
-for Aurora Serverless v2](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.requirements.html)
+for Aurora Serverless v2](../../../../services/amazonrds/latest/aurorauserguide/aurora-serverless-v2-requirements.md)
 
 Valid for Cluster Type: Aurora DB clusters only
 
@@ -512,10 +512,10 @@ To list all of the available engine versions for RDS for PostgreSQL, use the fol
 
 For information about a specific engine, see the following topics:
 
-- Aurora MySQL - see [Database engine updates for Amazon Aurora MySQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Updates.html) in the
+- Aurora MySQL - see [Database engine updates for Amazon Aurora MySQL](../../../../services/amazonrds/latest/aurorauserguide/auroramysql-updates.md) in the
 _Amazon Aurora User Guide_.
 
-- Aurora PostgreSQL - see [Amazon Aurora PostgreSQL releases and engine versions](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.Updates.20180305.html) in the
+- Aurora PostgreSQL - see [Amazon Aurora PostgreSQL releases and engine versions](../../../../services/amazonrds/latest/aurorauserguide/aurorapostgresql-updates-20180305.md) in the
 _Amazon Aurora User Guide_.
 
 - RDS for MySQL - see [Amazon RDS for MySQL](../../../../services/amazonrds/latest/userguide/chap-mysql.md#MySQL.Concepts.VersionMgmt) in the _Amazon RDS User Guide_.
@@ -734,7 +734,7 @@ The network type is determined by the `DBSubnetGroup` specified for the DB clust
 A `DBSubnetGroup` can support only the IPv4 protocol or the IPv4 and the IPv6
 protocols ( `DUAL`).
 
-For more information, see [Working with a DB instance in a VPC](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_VPC.WorkingWithRDSInstanceinaVPC.html) in the
+For more information, see [Working with a DB instance in a VPC](../../../../services/amazonrds/latest/aurorauserguide/user-vpc-workingwithrdsinstanceinavpc.md) in the
 _Amazon Aurora User Guide._
 
 Valid for Cluster Type: Aurora DB clusters only
@@ -823,7 +823,7 @@ Valid for Cluster Type: Aurora DB clusters and Multi-AZ DB clusters
 The default is a 30-minute window selected at random from an
 8-hour block of time for each AWS Region.
 To view the time blocks available, see
-[Backup window](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Managing.Backups.html#Aurora.Managing.Backups.BackupWindow) in the _Amazon Aurora User Guide_.
+[Backup window](../../../../services/amazonrds/latest/aurorauserguide/aurora-managing-backups-aurora-managing-backups-backupwindow.md) in the _Amazon Aurora User Guide_.
 
 Constraints:
 
@@ -848,7 +848,7 @@ Valid for Cluster Type: Aurora DB clusters and Multi-AZ DB clusters
 The default is a 30-minute window selected at random from an
 8-hour block of time for each AWS Region, occurring on a random day of the
 week. To see the time blocks available, see
-[Adjusting the Preferred DB Cluster Maintenance Window](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_UpgradeDBInstance.Maintenance.html#AdjustingTheMaintenanceWindow.Aurora) in the _Amazon Aurora User Guide_.
+[Adjusting the Preferred DB Cluster Maintenance Window](../../../../services/amazonrds/latest/aurorauserguide/user-upgradedbinstance-maintenance-adjustingthemaintenancewindow-aurora.md) in the _Amazon Aurora User Guide_.
 
 Constraints:
 
@@ -894,7 +894,7 @@ Example: `arn:aws:rds:us-west-2:123456789012:cluster:aurora-cluster1`.
 
 To learn how to generate a Signature Version 4 signed request, see
 [Authenticating Requests: Using Query Parameters (AWS Signature Version 4)](../../../../services/s3/latest/api/sigv4-query-string-auth.md) and
-[Signature Version 4 Signing Process](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html).
+[Signature Version 4 Signing Process](../../../../general/general/latest/gr/signature-version-4.md).
 
 ###### Note
 
@@ -936,7 +936,7 @@ Required: No
 
 Reserved for future use.
 
-Type: [RdsCustomClusterConfiguration](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RdsCustomClusterConfiguration.html) object
+Type: [RdsCustomClusterConfiguration](api-rdscustomclusterconfiguration.md) object
 
 Required: No
 
@@ -957,7 +957,7 @@ For DB clusters in `serverless` DB engine mode, the scaling properties of the DB
 
 Valid for Cluster Type: Aurora DB clusters only
 
-Type: [ScalingConfiguration](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ScalingConfiguration.html) object
+Type: [ScalingConfiguration](api-scalingconfiguration.md) object
 
 Required: No
 
@@ -965,10 +965,10 @@ Required: No
 
 Contains the scaling configuration of an Aurora Serverless v2 DB cluster.
 
-For more information, see [Using Amazon Aurora Serverless v2](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.html) in the
+For more information, see [Using Amazon Aurora Serverless v2](../../../../services/amazonrds/latest/aurorauserguide/aurora-serverless-v2.md) in the
 _Amazon Aurora User Guide_.
 
-Type: [ServerlessV2ScalingConfiguration](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ServerlessV2ScalingConfiguration.html) object
+Type: [ServerlessV2ScalingConfiguration](api-serverlessv2scalingconfiguration.md) object
 
 Required: No
 
@@ -986,8 +986,8 @@ Required: No
 
 The storage type to associate with the DB cluster.
 
-For information on storage types for Aurora DB clusters, see [Storage configurations for Amazon Aurora DB clusters](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.StorageReliability.html#aurora-storage-type). For information on storage types for Multi-AZ DB
-clusters, see [Settings for creating Multi-AZ DB clusters](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/create-multi-az-db-cluster.html#create-multi-az-db-cluster-settings).
+For information on storage types for Aurora DB clusters, see [Storage configurations for Amazon Aurora DB clusters](../../../../services/amazonrds/latest/aurorauserguide/aurora-overview-storagereliability-aurora-storage-type.md). For information on storage types for Multi-AZ DB
+clusters, see [Settings for creating Multi-AZ DB clusters](../../../../services/amazonrds/latest/userguide/create-multi-az-db-cluster-create-multi-az-db-cluster-settings.md).
 
 This setting is required to create a Multi-AZ DB cluster.
 
@@ -1022,7 +1022,7 @@ Tags to assign to the DB cluster.
 
 Valid for Cluster Type: Aurora DB clusters and Multi-AZ DB clusters
 
-Type: Array of [Tag](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Required: No
 
@@ -1034,7 +1034,7 @@ Valid Values:
 
 - `cluster-auto-backup` \- The DB cluster's automated backup.
 
-Type: Array of [TagSpecification](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_TagSpecification.html) objects
+Type: Array of [TagSpecification](api-tagspecification.md) objects
 
 Required: No
 
@@ -1068,16 +1068,16 @@ For a Multi-AZ DB cluster, this data type is used as a response element in the o
 `RestoreDBClusterFromSnapshot`, and `RestoreDBClusterToPointInTime`.
 
 For more information on Amazon Aurora DB clusters, see
-[What is Amazon Aurora?](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html) in the _Amazon Aurora User Guide._
+[What is Amazon Aurora?](../../../../services/amazonrds/latest/aurorauserguide/chap-auroraoverview.md) in the _Amazon Aurora User Guide._
 
 For more information on Multi-AZ DB clusters, see
 [Multi-AZ deployments with two readable standby DB instances](../../../../services/amazonrds/latest/userguide/multi-az-db-clusters-concepts.md) in the _Amazon RDS User Guide._
 
-Type: [DBCluster](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBCluster.html) object
+Type: [DBCluster](api-dbcluster.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **DBClusterAlreadyExistsFault**
 
@@ -1537,27 +1537,27 @@ This example illustrates one usage of CreateDBCluster.
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/rds-2014-10-31/CreateDBCluster)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/rds-2014-10-31/createdbcluster.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/rds-2014-10-31/CreateDBCluster)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/rds-2014-10-31/createdbcluster.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/CreateDBCluster)
+- [AWS SDK for C++](../../../goto/sdkforcpp/rds-2014-10-31/createdbcluster.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/rds-2014-10-31/CreateDBCluster)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/rds-2014-10-31/createdbcluster.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/CreateDBCluster)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/rds-2014-10-31/createdbcluster.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/rds-2014-10-31/CreateDBCluster)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/rds-2014-10-31/createdbcluster.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/rds-2014-10-31/CreateDBCluster)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/rds-2014-10-31/createdbcluster.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/rds-2014-10-31/CreateDBCluster)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/rds-2014-10-31/createdbcluster.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/CreateDBCluster)
+- [AWS SDK for Python](../../../../services/goto/boto3/rds-2014-10-31/createdbcluster.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/CreateDBCluster)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/createdbcluster.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateCustomDBEngineVersion
 

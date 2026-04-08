@@ -4,15 +4,15 @@ Menu
 
 ## DataPipeline
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.datapipeline.html\#toc)
+### Table of Contents  [header link](namespace-aws-datapipeline-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.datapipeline.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-datapipeline-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.datapipeline.exception.html)
+[Exception](namespace-aws-datapipeline-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.datapipeline.html\#toc-classes)
+#### Classes  [header link](namespace-aws-datapipeline-toc-classes.md)
 
-[DataPipelineClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DataPipeline.DataPipelineClient.html)This client is used to interact with the **AWS Data Pipeline** service.
+[DataPipelineClient](class-aws-datapipeline-datapipelineclient.md)This client is used to interact with the **AWS Data Pipeline** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.datapipeline.html#toc-classes)
+  - [Classes](namespace-aws-datapipeline-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.datapipeline.html#top)
+[Back To Top](namespace-aws-datapipeline-top.md)

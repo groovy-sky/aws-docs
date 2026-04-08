@@ -4,15 +4,15 @@ Menu
 
 ## AppMesh
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appmesh.html\#toc)
+### Table of Contents  [header link](namespace-aws-appmesh-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appmesh.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-appmesh-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appmesh.exception.html)
+[Exception](namespace-aws-appmesh-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appmesh.html\#toc-classes)
+#### Classes  [header link](namespace-aws-appmesh-toc-classes.md)
 
-[AppMeshClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppMesh.AppMeshClient.html)This client is used to interact with the **AWS App Mesh** service.
+[AppMeshClient](class-aws-appmesh-appmeshclient.md)This client is used to interact with the **AWS App Mesh** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appmesh.html#toc-classes)
+  - [Classes](namespace-aws-appmesh-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appmesh.html#top)
+[Back To Top](namespace-aws-appmesh-top.md)

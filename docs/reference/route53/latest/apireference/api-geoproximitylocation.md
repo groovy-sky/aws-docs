@@ -43,7 +43,7 @@ Required: No
 
 Contains the longitude and latitude for a geographic region.
 
-Type: [Coordinates](https://docs.aws.amazon.com/Route53/latest/APIReference/API_Coordinates.html) object
+Type: [Coordinates](api-coordinates.md) object
 
 Required: No
 
@@ -54,7 +54,7 @@ Specifies an AWS Local Zone Group.
 A local Zone Group is usually the Local Zone code without the ending character. For example,
 if the Local Zone is `us-east-1-bue-1a` the Local Zone Group is `us-east-1-bue-1`.
 
-You can identify the Local Zones Group for a specific Local Zone by using the [describe-availability-zones](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-availability-zones.html) CLI command:
+You can identify the Local Zones Group for a specific Local Zone by using the [describe-availability-zones](../../../../services/cli/latest/reference/ec2/describe-availability-zones.md) CLI command:
 
 This command returns: `"GroupName": "us-west-2-den-1"`, specifying that the Local Zone `us-west-2-den-1a`
 belongs to the Local Zone Group `us-west-2-den-1`.
@@ -69,13 +69,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53-2013-04-01/GeoProximityLocation)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53-2013-04-01/geoproximitylocation.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53-2013-04-01/GeoProximityLocation)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53-2013-04-01/geoproximitylocation.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53-2013-04-01/GeoProximityLocation)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53-2013-04-01/geoproximitylocation.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GeoLocationDetails
 

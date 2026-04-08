@@ -8,24 +8,24 @@ A trait providing generic functionality for interacting with Amazon Web
 Services. This is meant to be used in classes implementing
 \\Aws\\AwsClientInterface
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#toc)
+### Table of Contents  [header link](class-aws-awsclienttrait-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#toc-methods)
+#### Methods  [header link](class-aws-awsclienttrait-toc-methods.md)
 
-[\_\_call()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method___call)
-: mixed [execute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_execute)
-: mixed [executeAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_executeAsync)
-: mixed [getApi()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getApi)
-: [Service](class-aws-api-service.md)[getCommand()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getCommand)
-: [CommandInterface](class-aws-commandinterface.md)[getIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getIterator)
-: mixed [getPaginator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getPaginator)
-: mixed [getWaiter()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getWaiter)
-: mixed [waitUntil()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_waitUntil)
+[\_\_call()](class-aws-awsclienttrait-method-call.md)
+: mixed [execute()](class-aws-awsclienttrait-method-execute.md)
+: mixed [executeAsync()](class-aws-awsclienttrait-method-executeasync.md)
+: mixed [getApi()](class-aws-awsclienttrait-method-getapi.md)
+: [Service](class-aws-api-service.md)[getCommand()](class-aws-awsclienttrait-method-getcommand.md)
+: [CommandInterface](class-aws-commandinterface.md)[getIterator()](class-aws-awsclienttrait-method-getiterator.md)
+: mixed [getPaginator()](class-aws-awsclienttrait-method-getpaginator.md)
+: mixed [getWaiter()](class-aws-awsclienttrait-method-getwaiter.md)
+: mixed [waitUntil()](class-aws-awsclienttrait-method-waituntil.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#methods)
+### Methods  [header link](class-aws-awsclienttrait-methods.md)
 
-#### \_\_call()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method___call)
+#### \_\_call()  [header link](class-aws-awsclienttrait-method-call.md)
 
 `
     public
@@ -37,7 +37,7 @@ $name
 : mixed$args
 : array<string\|int, mixed>
 
-#### execute()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method_execute)
+#### execute()  [header link](class-aws-awsclienttrait-method-execute.md)
 
 `
     public
@@ -48,7 +48,7 @@ $name
 $command
 : [CommandInterface](class-aws-commandinterface.md)
 
-#### executeAsync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method_executeAsync)
+#### executeAsync()  [header link](class-aws-awsclienttrait-method-executeasync.md)
 
 `
     public
@@ -59,7 +59,7 @@ $command
 $command
 : [CommandInterface](class-aws-commandinterface.md)
 
-#### getApi()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method_getApi)
+#### getApi()  [header link](class-aws-awsclienttrait-method-getapi.md)
 
 `
     public
@@ -69,7 +69,7 @@ $command
 
 [Service](class-aws-api-service.md)
 
-#### getCommand()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method_getCommand)
+#### getCommand()  [header link](class-aws-awsclienttrait-method-getcommand.md)
 
 `
     public
@@ -86,7 +86,7 @@ $name
 
 [CommandInterface](class-aws-commandinterface.md)
 
-#### getIterator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method_getIterator)
+#### getIterator()  [header link](class-aws-awsclienttrait-method-getiterator.md)
 
 `
     public
@@ -99,7 +99,7 @@ $name
 : array<string\|int, mixed>
 = \[\]
 
-#### getPaginator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method_getPaginator)
+#### getPaginator()  [header link](class-aws-awsclienttrait-method-getpaginator.md)
 
 `
     public
@@ -112,7 +112,7 @@ $name
 : array<string\|int, mixed>
 = \[\]
 
-#### getWaiter()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method_getWaiter)
+#### getWaiter()  [header link](class-aws-awsclienttrait-method-getwaiter.md)
 
 `
     public
@@ -125,7 +125,7 @@ $name
 : array<string\|int, mixed>
 = \[\]
 
-#### waitUntil()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method_waitUntil)
+#### waitUntil()  [header link](class-aws-awsclienttrait-method-waituntil.md)
 
 `
     public
@@ -144,16 +144,16 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#toc-methods)
+  - [Methods](class-aws-awsclienttrait-toc-methods.md)
 - Methods
-  - [\_\_call()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method___call)
-  - [execute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_execute)
-  - [executeAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_executeAsync)
-  - [getApi()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getApi)
-  - [getCommand()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getCommand)
-  - [getIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getIterator)
-  - [getPaginator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getPaginator)
-  - [getWaiter()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getWaiter)
-  - [waitUntil()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_waitUntil)
+  - [\_\_call()](class-aws-awsclienttrait-method-call.md)
+  - [execute()](class-aws-awsclienttrait-method-execute.md)
+  - [executeAsync()](class-aws-awsclienttrait-method-executeasync.md)
+  - [getApi()](class-aws-awsclienttrait-method-getapi.md)
+  - [getCommand()](class-aws-awsclienttrait-method-getcommand.md)
+  - [getIterator()](class-aws-awsclienttrait-method-getiterator.md)
+  - [getPaginator()](class-aws-awsclienttrait-method-getpaginator.md)
+  - [getWaiter()](class-aws-awsclienttrait-method-getwaiter.md)
+  - [waitUntil()](class-aws-awsclienttrait-method-waituntil.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#top)
+[Back To Top](class-aws-awsclienttrait-top.md)

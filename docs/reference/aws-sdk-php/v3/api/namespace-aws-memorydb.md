@@ -4,15 +4,15 @@ Menu
 
 ## MemoryDB
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.memorydb.html\#toc)
+### Table of Contents  [header link](namespace-aws-memorydb-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.memorydb.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-memorydb-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.memorydb.exception.html)
+[Exception](namespace-aws-memorydb-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.memorydb.html\#toc-classes)
+#### Classes  [header link](namespace-aws-memorydb-toc-classes.md)
 
-[MemoryDBClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MemoryDB.MemoryDBClient.html)This client is used to interact with the **Amazon MemoryDB** service.
+[MemoryDBClient](class-aws-memorydb-memorydbclient.md)This client is used to interact with the **Amazon MemoryDB** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.memorydb.html#toc-classes)
+  - [Classes](namespace-aws-memorydb-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.memorydb.html#top)
+[Back To Top](namespace-aws-memorydb-top.md)

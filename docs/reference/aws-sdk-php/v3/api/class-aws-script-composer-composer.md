@@ -2,28 +2,28 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [Script](namespace-aws-script.md)
-- [Composer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.script.composer.html)
+- [Composer](namespace-aws-script-composer.md)
 
 ## Composer        in package    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Script.Composer.Composer.html\#toc)
+### Table of Contents  [header link](class-aws-script-composer-composer-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Script.Composer.Composer.html\#toc-methods)
+#### Methods  [header link](class-aws-script-composer-composer-toc-methods.md)
 
-[buildServiceMapping()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Script.Composer.Composer.html#method_buildServiceMapping)
-: mixed [removeUnusedServices()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Script.Composer.Composer.html#method_removeUnusedServices)
-: mixed [removeUnusedServicesInDev()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Script.Composer.Composer.html#method_removeUnusedServicesInDev)
+[buildServiceMapping()](class-aws-script-composer-composer-method-buildservicemapping.md)
+: mixed [removeUnusedServices()](class-aws-script-composer-composer-method-removeunusedservices.md)
+: mixed [removeUnusedServicesInDev()](class-aws-script-composer-composer-method-removeunusedservicesindev.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Script.Composer.Composer.html\#methods)
+### Methods  [header link](class-aws-script-composer-composer-methods.md)
 
-#### buildServiceMapping()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Script.Composer.Composer.html\#method_buildServiceMapping)
+#### buildServiceMapping()  [header link](class-aws-script-composer-composer-method-buildservicemapping.md)
 
 `
     public
             static        buildServiceMapping() : mixed`
 
-#### removeUnusedServices()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Script.Composer.Composer.html\#method_removeUnusedServices)
+#### removeUnusedServices()  [header link](class-aws-script-composer-composer-method-removeunusedservices.md)
 
 `
     public
@@ -36,7 +36,7 @@ $event
 : Filesystem\|null
 = null
 
-#### removeUnusedServicesInDev()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Script.Composer.Composer.html\#method_removeUnusedServicesInDev)
+#### removeUnusedServicesInDev()  [header link](class-aws-script-composer-composer-method-removeunusedservicesindev.md)
 
 `
     public
@@ -55,10 +55,10 @@ $event
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Script.Composer.Composer.html#toc-methods)
+  - [Methods](class-aws-script-composer-composer-toc-methods.md)
 - Methods
-  - [buildServiceMapping()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Script.Composer.Composer.html#method_buildServiceMapping)
-  - [removeUnusedServices()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Script.Composer.Composer.html#method_removeUnusedServices)
-  - [removeUnusedServicesInDev()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Script.Composer.Composer.html#method_removeUnusedServicesInDev)
+  - [buildServiceMapping()](class-aws-script-composer-composer-method-buildservicemapping.md)
+  - [removeUnusedServices()](class-aws-script-composer-composer-method-removeunusedservices.md)
+  - [removeUnusedServicesInDev()](class-aws-script-composer-composer-method-removeunusedservicesindev.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Script.Composer.Composer.html#top)
+[Back To Top](class-aws-script-composer-composer-top.md)

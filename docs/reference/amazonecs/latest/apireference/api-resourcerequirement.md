@@ -28,7 +28,7 @@ number of GPUs that's reserved for all containers in a task can't exceed the num
 available GPUs on the container instance that the task is launched on.
 
 When the type is `InferenceAccelerator`, the `value` matches the
-`deviceName` for an [InferenceAccelerator](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_InferenceAccelerator.html) specified in a task definition.
+`deviceName` for an [InferenceAccelerator](api-inferenceaccelerator.md) specified in a task definition.
 
 Type: String
 
@@ -38,13 +38,13 @@ Required: Yes
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/ResourceRequirement)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/resourcerequirement.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/ResourceRequirement)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/resourcerequirement.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/ResourceRequirement)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/resourcerequirement.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Resource
 

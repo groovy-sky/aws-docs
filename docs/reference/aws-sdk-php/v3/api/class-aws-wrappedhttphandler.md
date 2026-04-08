@@ -19,18 +19,18 @@ response) was received.
 - connection\_error: (bool) True if the error is the result of failing to
 connect.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WrappedHttpHandler.html\#toc)
+### Table of Contents  [header link](class-aws-wrappedhttphandler-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WrappedHttpHandler.html\#toc-methods)
+#### Methods  [header link](class-aws-wrappedhttphandler-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WrappedHttpHandler.html#method___construct)
-: mixed [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WrappedHttpHandler.html#method___invoke)
+[\_\_construct()](class-aws-wrappedhttphandler-method-construct.md)
+: mixed [\_\_invoke()](class-aws-wrappedhttphandler-method-invoke.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Calls the simpler HTTP specific handler and wraps the returned promise
 with AWS specific values (e.g., a result object or AWS exception).
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WrappedHttpHandler.html\#methods)
+### Methods  [header link](class-aws-wrappedhttphandler-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WrappedHttpHandler.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-wrappedhttphandler-method-construct.md)
 
 `
     public
@@ -71,7 +71,7 @@ $collectStats
 Whether to collect HTTP transfer
 information.
 
-#### \_\_invoke()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WrappedHttpHandler.html\#method___invoke)
+#### \_\_invoke()  [header link](class-aws-wrappedhttphandler-method-invoke.md)
 
 Calls the simpler HTTP specific handler and wraps the returned promise
 with AWS specific values (e.g., a result object or AWS exception).
@@ -102,9 +102,9 @@ Request to send.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WrappedHttpHandler.html#toc-methods)
+  - [Methods](class-aws-wrappedhttphandler-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WrappedHttpHandler.html#method___construct)
-  - [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WrappedHttpHandler.html#method___invoke)
+  - [\_\_construct()](class-aws-wrappedhttphandler-method-construct.md)
+  - [\_\_invoke()](class-aws-wrappedhttphandler-method-invoke.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WrappedHttpHandler.html#top)
+[Back To Top](class-aws-wrappedhttphandler-top.md)

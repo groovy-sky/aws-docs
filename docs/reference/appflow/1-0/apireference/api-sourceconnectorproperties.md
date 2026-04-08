@@ -8,7 +8,7 @@ Specifies the information that is required to query a particular connector.
 
 Specifies the information that is required for querying Amplitude.
 
-Type: [AmplitudeSourceProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_AmplitudeSourceProperties.html) object
+Type: [AmplitudeSourceProperties](api-amplitudesourceproperties.md) object
 
 Required: No
 
@@ -17,7 +17,7 @@ Required: No
 The properties that are applied when the custom connector is being used as a
 source.
 
-Type: [CustomConnectorSourceProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_CustomConnectorSourceProperties.html) object
+Type: [CustomConnectorSourceProperties](api-customconnectorsourceproperties.md) object
 
 Required: No
 
@@ -25,7 +25,7 @@ Required: No
 
 Specifies the information that is required for querying Datadog.
 
-Type: [DatadogSourceProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DatadogSourceProperties.html) object
+Type: [DatadogSourceProperties](api-datadogsourceproperties.md) object
 
 Required: No
 
@@ -33,7 +33,7 @@ Required: No
 
 Specifies the information that is required for querying Dynatrace.
 
-Type: [DynatraceSourceProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DynatraceSourceProperties.html) object
+Type: [DynatraceSourceProperties](api-dynatracesourceproperties.md) object
 
 Required: No
 
@@ -41,7 +41,7 @@ Required: No
 
 Specifies the information that is required for querying Google Analytics.
 
-Type: [GoogleAnalyticsSourceProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_GoogleAnalyticsSourceProperties.html) object
+Type: [GoogleAnalyticsSourceProperties](api-googleanalyticssourceproperties.md) object
 
 Required: No
 
@@ -49,7 +49,7 @@ Required: No
 
 Specifies the information that is required for querying Infor Nexus.
 
-Type: [InforNexusSourceProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_InforNexusSourceProperties.html) object
+Type: [InforNexusSourceProperties](api-infornexussourceproperties.md) object
 
 Required: No
 
@@ -57,7 +57,7 @@ Required: No
 
 Specifies the information that is required for querying Marketo.
 
-Type: [MarketoSourceProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_MarketoSourceProperties.html) object
+Type: [MarketoSourceProperties](api-marketosourceproperties.md) object
 
 Required: No
 
@@ -65,7 +65,7 @@ Required: No
 
 Specifies the information that is required for querying Salesforce Pardot.
 
-Type: [PardotSourceProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_PardotSourceProperties.html) object
+Type: [PardotSourceProperties](api-pardotsourceproperties.md) object
 
 Required: No
 
@@ -73,7 +73,7 @@ Required: No
 
 Specifies the information that is required for querying Amazon S3.
 
-Type: [S3SourceProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_S3SourceProperties.html) object
+Type: [S3SourceProperties](api-s3sourceproperties.md) object
 
 Required: No
 
@@ -81,7 +81,7 @@ Required: No
 
 Specifies the information that is required for querying Salesforce.
 
-Type: [SalesforceSourceProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SalesforceSourceProperties.html) object
+Type: [SalesforceSourceProperties](api-salesforcesourceproperties.md) object
 
 Required: No
 
@@ -89,7 +89,7 @@ Required: No
 
 The properties that are applied when using SAPOData as a flow source.
 
-Type: [SAPODataSourceProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SAPODataSourceProperties.html) object
+Type: [SAPODataSourceProperties](api-sapodatasourceproperties.md) object
 
 Required: No
 
@@ -97,7 +97,7 @@ Required: No
 
 Specifies the information that is required for querying ServiceNow.
 
-Type: [ServiceNowSourceProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ServiceNowSourceProperties.html) object
+Type: [ServiceNowSourceProperties](api-servicenowsourceproperties.md) object
 
 Required: No
 
@@ -105,7 +105,7 @@ Required: No
 
 Specifies the information that is required for querying Singular.
 
-Type: [SingularSourceProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SingularSourceProperties.html) object
+Type: [SingularSourceProperties](api-singularsourceproperties.md) object
 
 Required: No
 
@@ -113,7 +113,7 @@ Required: No
 
 Specifies the information that is required for querying Slack.
 
-Type: [SlackSourceProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SlackSourceProperties.html) object
+Type: [SlackSourceProperties](api-slacksourceproperties.md) object
 
 Required: No
 
@@ -121,7 +121,7 @@ Required: No
 
 Specifies the information that is required for querying Trend Micro.
 
-Type: [TrendmicroSourceProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_TrendmicroSourceProperties.html) object
+Type: [TrendmicroSourceProperties](api-trendmicrosourceproperties.md) object
 
 Required: No
 
@@ -129,7 +129,7 @@ Required: No
 
 Specifies the information that is required for querying Veeva.
 
-Type: [VeevaSourceProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_VeevaSourceProperties.html) object
+Type: [VeevaSourceProperties](api-veevasourceproperties.md) object
 
 Required: No
 
@@ -137,7 +137,7 @@ Required: No
 
 Specifies the information that is required for querying Zendesk.
 
-Type: [ZendeskSourceProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ZendeskSourceProperties.html) object
+Type: [ZendeskSourceProperties](api-zendesksourceproperties.md) object
 
 Required: No
 
@@ -145,13 +145,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/SourceConnectorProperties)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/sourceconnectorproperties.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/SourceConnectorProperties)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/sourceconnectorproperties.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/SourceConnectorProperties)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/sourceconnectorproperties.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 SnowflakeMetadata
 

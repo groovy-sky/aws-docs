@@ -2,11 +2,11 @@ Menu
 
 ## GuzzleHttp
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html\#toc)
+### Table of Contents  [header link](namespace-guzzlehttp-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html\#namespaces)
+#### Namespaces  [header link](namespace-guzzlehttp-namespaces.md)
 
-[Promise](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.promise.html)[Psr7](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.psr7.html)
+[Promise](namespace-guzzlehttp-promise.md)[Psr7](namespace-guzzlehttp-psr7.md)
 
 ```
 
@@ -18,4 +18,4 @@ Menu
 
 - Table Of Contents
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html#top)
+[Back To Top](namespace-guzzlehttp-top.md)

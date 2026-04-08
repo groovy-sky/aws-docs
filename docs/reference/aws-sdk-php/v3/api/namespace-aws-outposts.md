@@ -4,15 +4,15 @@ Menu
 
 ## Outposts
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.outposts.html\#toc)
+### Table of Contents  [header link](namespace-aws-outposts-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.outposts.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-outposts-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.outposts.exception.html)
+[Exception](namespace-aws-outposts-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.outposts.html\#toc-classes)
+#### Classes  [header link](namespace-aws-outposts-toc-classes.md)
 
-[OutpostsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Outposts.OutpostsClient.html)This client is used to interact with the **AWS Outposts** service.
+[OutpostsClient](class-aws-outposts-outpostsclient.md)This client is used to interact with the **AWS Outposts** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.outposts.html#toc-classes)
+  - [Classes](namespace-aws-outposts-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.outposts.html#top)
+[Back To Top](namespace-aws-outposts-top.md)

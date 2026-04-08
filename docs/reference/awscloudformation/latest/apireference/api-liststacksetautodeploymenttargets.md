@@ -69,7 +69,7 @@ The following elements are returned by the service.
 **NextToken**
 
 If the request doesn't return all the remaining results, `NextToken` is set to
-a token. To retrieve the next set of results, call [ListStackSetAutoDeploymentTargets](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackSetAutoDeploymentTargets.html) again and use that value for the
+a token. To retrieve the next set of results, call [ListStackSetAutoDeploymentTargets](api-liststacksetautodeploymenttargets.md) again and use that value for the
 `NextToken` parameter. If the request returns all results, `NextToken`
 is set to an empty string.
 
@@ -81,7 +81,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 
 An array of summaries of the deployment targets for the StackSet.
 
-Type: Array of [StackSetAutoDeploymentTargetSummary](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_StackSetAutoDeploymentTargetSummary.html) objects
+Type: Array of [StackSetAutoDeploymentTargetSummary](api-stacksetautodeploymenttargetsummary.md) objects
 
 ## Errors
 
@@ -97,27 +97,27 @@ HTTP Status Code: 404
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/ListStackSetAutoDeploymentTargets)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/cloudformation-2010-05-15/liststacksetautodeploymenttargets.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/ListStackSetAutoDeploymentTargets)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/cloudformation-2010-05-15/liststacksetautodeploymenttargets.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/ListStackSetAutoDeploymentTargets)
+- [AWS SDK for C++](../../../goto/sdkforcpp/cloudformation-2010-05-15/liststacksetautodeploymenttargets.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/ListStackSetAutoDeploymentTargets)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/cloudformation-2010-05-15/liststacksetautodeploymenttargets.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/ListStackSetAutoDeploymentTargets)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudformation-2010-05-15/liststacksetautodeploymenttargets.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/ListStackSetAutoDeploymentTargets)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/cloudformation-2010-05-15/liststacksetautodeploymenttargets.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/ListStackSetAutoDeploymentTargets)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/cloudformation-2010-05-15/liststacksetautodeploymenttargets.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/ListStackSetAutoDeploymentTargets)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/cloudformation-2010-05-15/liststacksetautodeploymenttargets.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/ListStackSetAutoDeploymentTargets)
+- [AWS SDK for Python](../../../../services/goto/boto3/cloudformation-2010-05-15/liststacksetautodeploymenttargets.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/ListStackSetAutoDeploymentTargets)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/liststacksetautodeploymenttargets.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ListStacks
 

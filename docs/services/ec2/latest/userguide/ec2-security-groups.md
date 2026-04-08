@@ -50,7 +50,7 @@ then you can connect to your instance from your computer using SSH. If the secur
 contains a rule that allows all traffic from the resources associated with it, then each instance
 can receive any traffic sent from the other instances.
 
-![A VPC with a security group. The EC2 instances in the subnet are associated with the security group.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ec2-security-groups.png)
+![A VPC with a security group. The EC2 instances in the subnet are associated with the security group.](../../../images/awsec2/latest/userguide/images/ec2-security-groups-png.md)
 
 Security groups are stateful—if you send a request from your instance,
 the response traffic for that request is allowed to flow in regardless of inbound

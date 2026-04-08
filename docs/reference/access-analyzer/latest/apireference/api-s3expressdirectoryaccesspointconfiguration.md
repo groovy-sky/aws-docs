@@ -6,7 +6,7 @@ for an existing Amazon S3 directory bucket, the access preview uses the proposed
 configuration in place of the existing access points. To propose an access point without a
 policy, you can provide an empty string as the access point policy. For more information
 about access points for Amazon S3 directory buckets, see [Managing access to\
-directory buckets with access points](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-directory-buckets.html) in the Amazon Simple Storage Service User Guide.
+directory buckets with access points](../../../../services/s3/latest/userguide/access-points-directory-buckets.md) in the Amazon Simple Storage Service User Guide.
 
 ## Contents
 
@@ -25,7 +25,7 @@ apply to the Amazon S3 access point. You can make the access point accessible fr
 or you can specify that all requests made through that access point must originate from a
 specific virtual private cloud (VPC). You can specify only one type of network
 configuration. For more information, see [Creating access\
-points](https://docs.aws.amazon.com/AmazonS3/latest/dev/creating-access-points.html).
+points](../../../../services/s3/latest/dev/creating-access-points.md).
 
 Type: [NetworkOriginConfiguration](api-networkoriginconfiguration.md) object
 
@@ -37,13 +37,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/accessanalyzer-2019-11-01/S3ExpressDirectoryAccessPointConfiguration)
+- [AWS SDK for C++](../../../goto/sdkforcpp/accessanalyzer-2019-11-01/s3expressdirectoryaccesspointconfiguration.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/accessanalyzer-2019-11-01/S3ExpressDirectoryAccessPointConfiguration)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/accessanalyzer-2019-11-01/s3expressdirectoryaccesspointconfiguration.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/accessanalyzer-2019-11-01/S3ExpressDirectoryAccessPointConfiguration)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/accessanalyzer-2019-11-01/s3expressdirectoryaccesspointconfiguration.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 S3BucketConfiguration
 

@@ -2,7 +2,7 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
 
 ## MultipartUploader     extends [AbstractMultipartUploader](class-aws-s3-s3transfer-abstractmultipartuploader.md)   in package    - [Aws](package-aws.md)
 
@@ -10,29 +10,29 @@ FinalYes
 
 Multipart uploader implementation.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.MultipartUploader.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-multipartuploader-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.MultipartUploader.html\#toc-constants)
+#### Constants  [header link](class-aws-s3-s3transfer-multipartuploader-toc-constants.md)
 
-[DEFAULT\_CHECKSUM\_CALCULATION\_ALGORITHM](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.MultipartUploader.html#constant_DEFAULT_CHECKSUM_CALCULATION_ALGORITHM)
+[DEFAULT\_CHECKSUM\_CALCULATION\_ALGORITHM](class-aws-s3-s3transfer-multipartuploader-constant-default-checksum-calculation-algorithm.md)
 = 'crc32' [PART\_MAX\_NUM](class-aws-s3-s3transfer-abstractmultipartuploader.md#constant_PART_MAX_NUM)
 = 10000 [PART\_MAX\_SIZE](class-aws-s3-s3transfer-abstractmultipartuploader.md#constant_PART_MAX_SIZE)
 = 5 \* 1024 \* 1024 \* 1024 [PART\_MIN\_SIZE](class-aws-s3-s3transfer-abstractmultipartuploader.md#constant_PART_MIN_SIZE)
 = 5 \* 1024 \* 1024
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.MultipartUploader.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-multipartuploader-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.MultipartUploader.html#method___construct)
+[\_\_construct()](class-aws-s3-s3transfer-multipartuploader-method-construct.md)
 : mixed [getCurrentSnapshot()](class-aws-s3-s3transfer-abstractmultipartuploader.md#method_getCurrentSnapshot)
-: [TransferProgressSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html) \|null Get the current progress snapshot.[getPartsCompleted()](class-aws-s3-s3transfer-abstractmultipartuploader.md#method_getPartsCompleted)
+: [TransferProgressSnapshot](class-aws-s3-s3transfer-progress-transferprogresssnapshot.md) \|null Get the current progress snapshot.[getPartsCompleted()](class-aws-s3-s3transfer-abstractmultipartuploader.md#method_getPartsCompleted)
 : array<string\|int, mixed> [getUploadId()](class-aws-s3-s3transfer-abstractmultipartuploader.md#method_getUploadId)
 : string\|null [promise()](class-aws-s3-s3transfer-abstractmultipartuploader.md#method_promise)
-: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Returns a promise.[upload()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.MultipartUploader.html#method_upload)
+: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Returns a promise.[upload()](class-aws-s3-s3transfer-multipartuploader-method-upload.md)
 : [UploadResult](class-aws-s3-s3transfer-models-uploadresult.md)Sync upload method.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.MultipartUploader.html\#constants)
+### Constants  [header link](class-aws-s3-s3transfer-multipartuploader-constants.md)
 
-#### DEFAULT\_CHECKSUM\_CALCULATION\_ALGORITHM  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.MultipartUploader.html\#constant_DEFAULT_CHECKSUM_CALCULATION_ALGORITHM)
+#### DEFAULT\_CHECKSUM\_CALCULATION\_ALGORITHM  [header link](class-aws-s3-s3transfer-multipartuploader-constant-default-checksum-calculation-algorithm.md)
 
 `
     public
@@ -68,9 +68,9 @@ Multipart uploader implementation.
     = 5 * 1024 * 1024
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.MultipartUploader.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-multipartuploader-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.MultipartUploader.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3transfer-multipartuploader-method-construct.md)
 
 `
     public
@@ -90,7 +90,7 @@ $s3Client
 - concurrency: (int, optional)
 
 $listenerNotifier
-: [TransferListenerNotifier](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferListenerNotifier.html) \|null
+: [TransferListenerNotifier](class-aws-s3-s3transfer-progress-transferlistenernotifier.md) \|null
 = null$resumableUpload
 : [ResumableUpload](class-aws-s3-s3transfer-models-resumableupload.md) \|null
 = null
@@ -105,7 +105,7 @@ Get the current progress snapshot.
 
 ##### Return values
 
-[TransferProgressSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html) \|null
+[TransferProgressSnapshot](class-aws-s3-s3transfer-progress-transferprogresssnapshot.md) \|null
 
 #### getPartsCompleted()  [header link](class-aws-s3-s3transfer-abstractmultipartuploader.md\#method_getPartsCompleted)
 
@@ -139,7 +139,7 @@ Returns a promise.
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### upload()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.MultipartUploader.html\#method_upload)
+#### upload()  [header link](class-aws-s3-s3transfer-multipartuploader-method-upload.md)
 
 Sync upload method.
 
@@ -157,19 +157,19 @@ Sync upload method.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.MultipartUploader.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.MultipartUploader.html#toc-methods)
+  - [Constants](class-aws-s3-s3transfer-multipartuploader-toc-constants.md)
+  - [Methods](class-aws-s3-s3transfer-multipartuploader-toc-methods.md)
 - Constants
-  - [DEFAULT\_CHECKSUM\_CALCULATION\_ALGORITHM](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.MultipartUploader.html#constant_DEFAULT_CHECKSUM_CALCULATION_ALGORITHM)
+  - [DEFAULT\_CHECKSUM\_CALCULATION\_ALGORITHM](class-aws-s3-s3transfer-multipartuploader-constant-default-checksum-calculation-algorithm.md)
   - [PART\_MAX\_NUM](class-aws-s3-s3transfer-abstractmultipartuploader.md#constant_PART_MAX_NUM)
   - [PART\_MAX\_SIZE](class-aws-s3-s3transfer-abstractmultipartuploader.md#constant_PART_MAX_SIZE)
   - [PART\_MIN\_SIZE](class-aws-s3-s3transfer-abstractmultipartuploader.md#constant_PART_MIN_SIZE)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.MultipartUploader.html#method___construct)
+  - [\_\_construct()](class-aws-s3-s3transfer-multipartuploader-method-construct.md)
   - [getCurrentSnapshot()](class-aws-s3-s3transfer-abstractmultipartuploader.md#method_getCurrentSnapshot)
   - [getPartsCompleted()](class-aws-s3-s3transfer-abstractmultipartuploader.md#method_getPartsCompleted)
   - [getUploadId()](class-aws-s3-s3transfer-abstractmultipartuploader.md#method_getUploadId)
   - [promise()](class-aws-s3-s3transfer-abstractmultipartuploader.md#method_promise)
-  - [upload()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.MultipartUploader.html#method_upload)
+  - [upload()](class-aws-s3-s3transfer-multipartuploader-method-upload.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.MultipartUploader.html#top)
+[Back To Top](class-aws-s3-s3transfer-multipartuploader-top.md)

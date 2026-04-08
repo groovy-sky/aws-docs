@@ -3,51 +3,51 @@ Menu
 - [Aws](namespace-aws.md)
 - [DynamoDb](namespace-aws-dynamodb.md)
 
-## LockingSessionConnection     extends [StandardSessionConnection](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.StandardSessionConnection.html)   in package    - [Aws](package-aws.md)
+## LockingSessionConnection     extends [StandardSessionConnection](class-aws-dynamodb-standardsessionconnection.md)   in package    - [Aws](package-aws.md)
 
 The locking connection adds locking logic to the read operation.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.LockingSessionConnection.html\#toc)
+### Table of Contents  [header link](class-aws-dynamodb-lockingsessionconnection-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.LockingSessionConnection.html\#toc-methods)
+#### Methods  [header link](class-aws-dynamodb-lockingsessionconnection-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.LockingSessionConnection.html#method___construct)
-: mixed [delete()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.StandardSessionConnection.html#method_delete)
-: bool Deletes session record from DynamoDB[deleteExpired()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.StandardSessionConnection.html#method_deleteExpired)
-: bool Performs garbage collection on the sessions stored in the DynamoDB[getBatchConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_getBatchConfig)
-: mixed [getDataAttribute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_getDataAttribute)
-: string [getDataAttributeType()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_getDataAttributeType)
-: string [getHashKey()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_getHashKey)
-: string [getMaxLockRetryMicrotime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_getMaxLockRetryMicrotime)
-: number[getMaxLockWaitTime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_getMaxLockWaitTime)
-: number[getMinLockRetryMicrotime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_getMinLockRetryMicrotime)
-: number[getSessionLifetime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_getSessionLifetime)
-: number[getSessionLifetimeAttribute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_getSessionLifetimeAttribute)
-: string [getTableName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_getTableName)
-: string [initConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_initConfig)
+[\_\_construct()](class-aws-dynamodb-lockingsessionconnection-method-construct.md)
+: mixed [delete()](class-aws-dynamodb-standardsessionconnection-method-delete.md)
+: bool Deletes session record from DynamoDB[deleteExpired()](class-aws-dynamodb-standardsessionconnection-method-deleteexpired.md)
+: bool Performs garbage collection on the sessions stored in the DynamoDB[getBatchConfig()](class-aws-dynamodb-sessionconnectionconfigtrait-method-getbatchconfig.md)
+: mixed [getDataAttribute()](class-aws-dynamodb-sessionconnectionconfigtrait-method-getdataattribute.md)
+: string [getDataAttributeType()](class-aws-dynamodb-sessionconnectionconfigtrait-method-getdataattributetype.md)
+: string [getHashKey()](class-aws-dynamodb-sessionconnectionconfigtrait-method-gethashkey.md)
+: string [getMaxLockRetryMicrotime()](class-aws-dynamodb-sessionconnectionconfigtrait-method-getmaxlockretrymicrotime.md)
+: number[getMaxLockWaitTime()](class-aws-dynamodb-sessionconnectionconfigtrait-method-getmaxlockwaittime.md)
+: number[getMinLockRetryMicrotime()](class-aws-dynamodb-sessionconnectionconfigtrait-method-getminlockretrymicrotime.md)
+: number[getSessionLifetime()](class-aws-dynamodb-sessionconnectionconfigtrait-method-getsessionlifetime.md)
+: number[getSessionLifetimeAttribute()](class-aws-dynamodb-sessionconnectionconfigtrait-method-getsessionlifetimeattribute.md)
+: string [getTableName()](class-aws-dynamodb-sessionconnectionconfigtrait-method-gettablename.md)
+: string [initConfig()](class-aws-dynamodb-sessionconnectionconfigtrait-method-initconfig.md)
 : mixed It initialize the Config class and
-it sets values in case of valid configurations.[isConsistentRead()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_isConsistentRead)
-: bool [isLocking()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_isLocking)
-: bool [read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.LockingSessionConnection.html#method_read)
+it sets values in case of valid configurations.[isConsistentRead()](class-aws-dynamodb-sessionconnectionconfigtrait-method-isconsistentread.md)
+: bool [isLocking()](class-aws-dynamodb-sessionconnectionconfigtrait-method-islocking.md)
+: bool [read()](class-aws-dynamodb-lockingsessionconnection-method-read.md)
 : array<string\|int, mixed> {@inheritdoc}
-Retries the request until the lock can be acquired[setBatchConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setBatchConfig)
-: mixed [setConsistentRead()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setConsistentRead)
-: mixed [setDataAttribute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setDataAttribute)
-: mixed [setDataAttributeType()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setDataAttributeType)
-: mixed [setHashKey()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setHashKey)
-: mixed [setLocking()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setLocking)
-: mixed [setMaxLockRetryMicrotime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setMaxLockRetryMicrotime)
-: mixed [setMaxLockWaitTime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setMaxLockWaitTime)
-: mixed [setMinLockRetryMicrotime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setMinLockRetryMicrotime)
-: mixed [setSessionLifetime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setSessionLifetime)
-: mixed [setSessionLifetimeAttribute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setSessionLifetimeAttribute)
-: mixed [setTableName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setTableName)
-: mixed [write()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.StandardSessionConnection.html#method_write)
+Retries the request until the lock can be acquired[setBatchConfig()](class-aws-dynamodb-sessionconnectionconfigtrait-method-setbatchconfig.md)
+: mixed [setConsistentRead()](class-aws-dynamodb-sessionconnectionconfigtrait-method-setconsistentread.md)
+: mixed [setDataAttribute()](class-aws-dynamodb-sessionconnectionconfigtrait-method-setdataattribute.md)
+: mixed [setDataAttributeType()](class-aws-dynamodb-sessionconnectionconfigtrait-method-setdataattributetype.md)
+: mixed [setHashKey()](class-aws-dynamodb-sessionconnectionconfigtrait-method-sethashkey.md)
+: mixed [setLocking()](class-aws-dynamodb-sessionconnectionconfigtrait-method-setlocking.md)
+: mixed [setMaxLockRetryMicrotime()](class-aws-dynamodb-sessionconnectionconfigtrait-method-setmaxlockretrymicrotime.md)
+: mixed [setMaxLockWaitTime()](class-aws-dynamodb-sessionconnectionconfigtrait-method-setmaxlockwaittime.md)
+: mixed [setMinLockRetryMicrotime()](class-aws-dynamodb-sessionconnectionconfigtrait-method-setminlockretrymicrotime.md)
+: mixed [setSessionLifetime()](class-aws-dynamodb-sessionconnectionconfigtrait-method-setsessionlifetime.md)
+: mixed [setSessionLifetimeAttribute()](class-aws-dynamodb-sessionconnectionconfigtrait-method-setsessionlifetimeattribute.md)
+: mixed [setTableName()](class-aws-dynamodb-sessionconnectionconfigtrait-method-settablename.md)
+: mixed [write()](class-aws-dynamodb-standardsessionconnection-method-write.md)
 : bool Writes session data to DynamoDB
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.LockingSessionConnection.html\#methods)
+### Methods  [header link](class-aws-dynamodb-lockingsessionconnection-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.LockingSessionConnection.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-dynamodb-lockingsessionconnection-method-construct.md)
 
 `
     public
@@ -66,7 +66,7 @@ $config
 
 Session handler config
 
-#### delete()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.StandardSessionConnection.html\#method_delete)
+#### delete()  [header link](class-aws-dynamodb-standardsessionconnection-method-delete.md)
 
 Deletes session record from DynamoDB
 
@@ -85,7 +85,7 @@ Session ID
 
 bool
 
-#### deleteExpired()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.StandardSessionConnection.html\#method_deleteExpired)
+#### deleteExpired()  [header link](class-aws-dynamodb-standardsessionconnection-method-deleteexpired.md)
 
 Performs garbage collection on the sessions stored in the DynamoDB
 
@@ -97,13 +97,13 @@ Performs garbage collection on the sessions stored in the DynamoDB
 
 bool
 
-#### getBatchConfig()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_getBatchConfig)
+#### getBatchConfig()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-getbatchconfig.md)
 
 `
     public
                     getBatchConfig() : mixed`
 
-#### getDataAttribute()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_getDataAttribute)
+#### getDataAttribute()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-getdataattribute.md)
 
 `
     public
@@ -113,7 +113,7 @@ bool
 
 string
 
-#### getDataAttributeType()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_getDataAttributeType)
+#### getDataAttributeType()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-getdataattributetype.md)
 
 `
     public
@@ -123,7 +123,7 @@ string
 
 string
 
-#### getHashKey()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_getHashKey)
+#### getHashKey()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-gethashkey.md)
 
 `
     public
@@ -133,7 +133,7 @@ string
 
 string
 
-#### getMaxLockRetryMicrotime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_getMaxLockRetryMicrotime)
+#### getMaxLockRetryMicrotime()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-getmaxlockretrymicrotime.md)
 
 `
     public
@@ -143,7 +143,7 @@ string
 
 number
 
-#### getMaxLockWaitTime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_getMaxLockWaitTime)
+#### getMaxLockWaitTime()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-getmaxlockwaittime.md)
 
 `
     public
@@ -153,7 +153,7 @@ number
 
 number
 
-#### getMinLockRetryMicrotime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_getMinLockRetryMicrotime)
+#### getMinLockRetryMicrotime()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-getminlockretrymicrotime.md)
 
 `
     public
@@ -163,7 +163,7 @@ number
 
 number
 
-#### getSessionLifetime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_getSessionLifetime)
+#### getSessionLifetime()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-getsessionlifetime.md)
 
 `
     public
@@ -173,7 +173,7 @@ number
 
 number
 
-#### getSessionLifetimeAttribute()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_getSessionLifetimeAttribute)
+#### getSessionLifetimeAttribute()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-getsessionlifetimeattribute.md)
 
 `
     public
@@ -183,7 +183,7 @@ number
 
 string
 
-#### getTableName()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_getTableName)
+#### getTableName()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-gettablename.md)
 
 `
     public
@@ -193,7 +193,7 @@ string
 
 string
 
-#### initConfig()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_initConfig)
+#### initConfig()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-initconfig.md)
 
 It initialize the Config class and
 it sets values in case of valid configurations.
@@ -211,7 +211,7 @@ $config
 : array<string\|int, mixed>
 = \[\]
 
-#### isConsistentRead()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_isConsistentRead)
+#### isConsistentRead()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-isconsistentread.md)
 
 `
     public
@@ -221,7 +221,7 @@ $config
 
 bool
 
-#### isLocking()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_isLocking)
+#### isLocking()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-islocking.md)
 
 `
     public
@@ -231,7 +231,7 @@ bool
 
 bool
 
-#### read()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.LockingSessionConnection.html\#method_read)
+#### read()  [header link](class-aws-dynamodb-lockingsessionconnection-method-read.md)
 
 {@inheritdoc}
 Retries the request until the lock can be acquired
@@ -251,7 +251,7 @@ Session ID
 
 array<string\|int, mixed>
 
-#### setBatchConfig()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_setBatchConfig)
+#### setBatchConfig()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-setbatchconfig.md)
 
 `
     public
@@ -262,7 +262,7 @@ array<string\|int, mixed>
 $batchConfig
 : mixed
 
-#### setConsistentRead()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_setConsistentRead)
+#### setConsistentRead()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-setconsistentread.md)
 
 `
     public
@@ -273,7 +273,7 @@ $batchConfig
 $consistentRead
 : bool
 
-#### setDataAttribute()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_setDataAttribute)
+#### setDataAttribute()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-setdataattribute.md)
 
 `
     public
@@ -284,7 +284,7 @@ $consistentRead
 $dataAttribute
 : string
 
-#### setDataAttributeType()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_setDataAttributeType)
+#### setDataAttributeType()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-setdataattributetype.md)
 
 `
     public
@@ -295,7 +295,7 @@ $dataAttribute
 $dataAttributeType
 : string
 
-#### setHashKey()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_setHashKey)
+#### setHashKey()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-sethashkey.md)
 
 `
     public
@@ -306,7 +306,7 @@ $dataAttributeType
 $hashKey
 : string
 
-#### setLocking()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_setLocking)
+#### setLocking()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-setlocking.md)
 
 `
     public
@@ -317,7 +317,7 @@ $hashKey
 $locking
 : bool
 
-#### setMaxLockRetryMicrotime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_setMaxLockRetryMicrotime)
+#### setMaxLockRetryMicrotime()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-setmaxlockretrymicrotime.md)
 
 `
     public
@@ -328,7 +328,7 @@ $locking
 $maxLockRetryMicrotime
 : number
 
-#### setMaxLockWaitTime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_setMaxLockWaitTime)
+#### setMaxLockWaitTime()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-setmaxlockwaittime.md)
 
 `
     public
@@ -339,7 +339,7 @@ $maxLockRetryMicrotime
 $maxLockWaitTime
 : number
 
-#### setMinLockRetryMicrotime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_setMinLockRetryMicrotime)
+#### setMinLockRetryMicrotime()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-setminlockretrymicrotime.md)
 
 `
     public
@@ -350,7 +350,7 @@ $maxLockWaitTime
 $minLockRetryMicrotime
 : number
 
-#### setSessionLifetime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_setSessionLifetime)
+#### setSessionLifetime()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-setsessionlifetime.md)
 
 `
     public
@@ -361,7 +361,7 @@ $minLockRetryMicrotime
 $sessionLifetime
 : number
 
-#### setSessionLifetimeAttribute()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_setSessionLifetimeAttribute)
+#### setSessionLifetimeAttribute()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-setsessionlifetimeattribute.md)
 
 `
     public
@@ -372,7 +372,7 @@ $sessionLifetime
 $sessionLifetimeAttribute
 : string
 
-#### setTableName()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html\#method_setTableName)
+#### setTableName()  [header link](class-aws-dynamodb-sessionconnectionconfigtrait-method-settablename.md)
 
 `
     public
@@ -383,7 +383,7 @@ $sessionLifetimeAttribute
 $tableName
 : string
 
-#### write()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.StandardSessionConnection.html\#method_write)
+#### write()  [header link](class-aws-dynamodb-standardsessionconnection-method-write.md)
 
 Writes session data to DynamoDB
 
@@ -418,37 +418,37 @@ bool
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.LockingSessionConnection.html#toc-methods)
+  - [Methods](class-aws-dynamodb-lockingsessionconnection-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.LockingSessionConnection.html#method___construct)
-  - [delete()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.StandardSessionConnection.html#method_delete)
-  - [deleteExpired()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.StandardSessionConnection.html#method_deleteExpired)
-  - [getBatchConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_getBatchConfig)
-  - [getDataAttribute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_getDataAttribute)
-  - [getDataAttributeType()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_getDataAttributeType)
-  - [getHashKey()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_getHashKey)
-  - [getMaxLockRetryMicrotime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_getMaxLockRetryMicrotime)
-  - [getMaxLockWaitTime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_getMaxLockWaitTime)
-  - [getMinLockRetryMicrotime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_getMinLockRetryMicrotime)
-  - [getSessionLifetime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_getSessionLifetime)
-  - [getSessionLifetimeAttribute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_getSessionLifetimeAttribute)
-  - [getTableName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_getTableName)
-  - [initConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_initConfig)
-  - [isConsistentRead()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_isConsistentRead)
-  - [isLocking()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_isLocking)
-  - [read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.LockingSessionConnection.html#method_read)
-  - [setBatchConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setBatchConfig)
-  - [setConsistentRead()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setConsistentRead)
-  - [setDataAttribute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setDataAttribute)
-  - [setDataAttributeType()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setDataAttributeType)
-  - [setHashKey()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setHashKey)
-  - [setLocking()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setLocking)
-  - [setMaxLockRetryMicrotime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setMaxLockRetryMicrotime)
-  - [setMaxLockWaitTime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setMaxLockWaitTime)
-  - [setMinLockRetryMicrotime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setMinLockRetryMicrotime)
-  - [setSessionLifetime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setSessionLifetime)
-  - [setSessionLifetimeAttribute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setSessionLifetimeAttribute)
-  - [setTableName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html#method_setTableName)
-  - [write()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.StandardSessionConnection.html#method_write)
+  - [\_\_construct()](class-aws-dynamodb-lockingsessionconnection-method-construct.md)
+  - [delete()](class-aws-dynamodb-standardsessionconnection-method-delete.md)
+  - [deleteExpired()](class-aws-dynamodb-standardsessionconnection-method-deleteexpired.md)
+  - [getBatchConfig()](class-aws-dynamodb-sessionconnectionconfigtrait-method-getbatchconfig.md)
+  - [getDataAttribute()](class-aws-dynamodb-sessionconnectionconfigtrait-method-getdataattribute.md)
+  - [getDataAttributeType()](class-aws-dynamodb-sessionconnectionconfigtrait-method-getdataattributetype.md)
+  - [getHashKey()](class-aws-dynamodb-sessionconnectionconfigtrait-method-gethashkey.md)
+  - [getMaxLockRetryMicrotime()](class-aws-dynamodb-sessionconnectionconfigtrait-method-getmaxlockretrymicrotime.md)
+  - [getMaxLockWaitTime()](class-aws-dynamodb-sessionconnectionconfigtrait-method-getmaxlockwaittime.md)
+  - [getMinLockRetryMicrotime()](class-aws-dynamodb-sessionconnectionconfigtrait-method-getminlockretrymicrotime.md)
+  - [getSessionLifetime()](class-aws-dynamodb-sessionconnectionconfigtrait-method-getsessionlifetime.md)
+  - [getSessionLifetimeAttribute()](class-aws-dynamodb-sessionconnectionconfigtrait-method-getsessionlifetimeattribute.md)
+  - [getTableName()](class-aws-dynamodb-sessionconnectionconfigtrait-method-gettablename.md)
+  - [initConfig()](class-aws-dynamodb-sessionconnectionconfigtrait-method-initconfig.md)
+  - [isConsistentRead()](class-aws-dynamodb-sessionconnectionconfigtrait-method-isconsistentread.md)
+  - [isLocking()](class-aws-dynamodb-sessionconnectionconfigtrait-method-islocking.md)
+  - [read()](class-aws-dynamodb-lockingsessionconnection-method-read.md)
+  - [setBatchConfig()](class-aws-dynamodb-sessionconnectionconfigtrait-method-setbatchconfig.md)
+  - [setConsistentRead()](class-aws-dynamodb-sessionconnectionconfigtrait-method-setconsistentread.md)
+  - [setDataAttribute()](class-aws-dynamodb-sessionconnectionconfigtrait-method-setdataattribute.md)
+  - [setDataAttributeType()](class-aws-dynamodb-sessionconnectionconfigtrait-method-setdataattributetype.md)
+  - [setHashKey()](class-aws-dynamodb-sessionconnectionconfigtrait-method-sethashkey.md)
+  - [setLocking()](class-aws-dynamodb-sessionconnectionconfigtrait-method-setlocking.md)
+  - [setMaxLockRetryMicrotime()](class-aws-dynamodb-sessionconnectionconfigtrait-method-setmaxlockretrymicrotime.md)
+  - [setMaxLockWaitTime()](class-aws-dynamodb-sessionconnectionconfigtrait-method-setmaxlockwaittime.md)
+  - [setMinLockRetryMicrotime()](class-aws-dynamodb-sessionconnectionconfigtrait-method-setminlockretrymicrotime.md)
+  - [setSessionLifetime()](class-aws-dynamodb-sessionconnectionconfigtrait-method-setsessionlifetime.md)
+  - [setSessionLifetimeAttribute()](class-aws-dynamodb-sessionconnectionconfigtrait-method-setsessionlifetimeattribute.md)
+  - [setTableName()](class-aws-dynamodb-sessionconnectionconfigtrait-method-settablename.md)
+  - [write()](class-aws-dynamodb-standardsessionconnection-method-write.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.LockingSessionConnection.html#top)
+[Back To Top](class-aws-dynamodb-lockingsessionconnection-top.md)

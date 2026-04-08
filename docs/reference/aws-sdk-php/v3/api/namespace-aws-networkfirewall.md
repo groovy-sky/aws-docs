@@ -4,15 +4,15 @@ Menu
 
 ## NetworkFirewall
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkfirewall.html\#toc)
+### Table of Contents  [header link](namespace-aws-networkfirewall-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkfirewall.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-networkfirewall-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkfirewall.exception.html)
+[Exception](namespace-aws-networkfirewall-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkfirewall.html\#toc-classes)
+#### Classes  [header link](namespace-aws-networkfirewall-toc-classes.md)
 
-[NetworkFirewallClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkFirewall.NetworkFirewallClient.html)This client is used to interact with the **AWS Network Firewall** service.
+[NetworkFirewallClient](class-aws-networkfirewall-networkfirewallclient.md)This client is used to interact with the **AWS Network Firewall** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkfirewall.html#toc-classes)
+  - [Classes](namespace-aws-networkfirewall-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkfirewall.html#top)
+[Back To Top](namespace-aws-networkfirewall-top.md)

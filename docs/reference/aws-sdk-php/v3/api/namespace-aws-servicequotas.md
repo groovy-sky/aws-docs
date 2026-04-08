@@ -4,15 +4,15 @@ Menu
 
 ## ServiceQuotas
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.servicequotas.html\#toc)
+### Table of Contents  [header link](namespace-aws-servicequotas-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.servicequotas.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-servicequotas-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.servicequotas.exception.html)
+[Exception](namespace-aws-servicequotas-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.servicequotas.html\#toc-classes)
+#### Classes  [header link](namespace-aws-servicequotas-toc-classes.md)
 
-[ServiceQuotasClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServiceQuotas.ServiceQuotasClient.html)This client is used to interact with the **Service Quotas** service.
+[ServiceQuotasClient](class-aws-servicequotas-servicequotasclient.md)This client is used to interact with the **Service Quotas** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.servicequotas.html#toc-classes)
+  - [Classes](namespace-aws-servicequotas-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.servicequotas.html#top)
+[Back To Top](namespace-aws-servicequotas-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## ControlCatalog
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.controlcatalog.html\#toc)
+### Table of Contents  [header link](namespace-aws-controlcatalog-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.controlcatalog.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-controlcatalog-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.controlcatalog.exception.html)
+[Exception](namespace-aws-controlcatalog-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.controlcatalog.html\#toc-classes)
+#### Classes  [header link](namespace-aws-controlcatalog-toc-classes.md)
 
-[ControlCatalogClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ControlCatalog.ControlCatalogClient.html)This client is used to interact with the **AWS Control Catalog** service.
+[ControlCatalogClient](class-aws-controlcatalog-controlcatalogclient.md)This client is used to interact with the **AWS Control Catalog** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.controlcatalog.html#toc-classes)
+  - [Classes](namespace-aws-controlcatalog-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.controlcatalog.html#top)
+[Back To Top](namespace-aws-controlcatalog-top.md)

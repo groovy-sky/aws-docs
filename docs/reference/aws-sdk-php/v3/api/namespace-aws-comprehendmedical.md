@@ -4,15 +4,15 @@ Menu
 
 ## ComprehendMedical
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.comprehendmedical.html\#toc)
+### Table of Contents  [header link](namespace-aws-comprehendmedical-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.comprehendmedical.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-comprehendmedical-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.comprehendmedical.exception.html)
+[Exception](namespace-aws-comprehendmedical-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.comprehendmedical.html\#toc-classes)
+#### Classes  [header link](namespace-aws-comprehendmedical-toc-classes.md)
 
-[ComprehendMedicalClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComprehendMedical.ComprehendMedicalClient.html)This client is used to interact with the **AWS Comprehend Medical** service.
+[ComprehendMedicalClient](class-aws-comprehendmedical-comprehendmedicalclient.md)This client is used to interact with the **AWS Comprehend Medical** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.comprehendmedical.html#toc-classes)
+  - [Classes](namespace-aws-comprehendmedical-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.comprehendmedical.html#top)
+[Back To Top](namespace-aws-comprehendmedical-top.md)

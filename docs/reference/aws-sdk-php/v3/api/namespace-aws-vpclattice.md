@@ -4,15 +4,15 @@ Menu
 
 ## VPCLattice
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.vpclattice.html\#toc)
+### Table of Contents  [header link](namespace-aws-vpclattice-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.vpclattice.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-vpclattice-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.vpclattice.exception.html)
+[Exception](namespace-aws-vpclattice-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.vpclattice.html\#toc-classes)
+#### Classes  [header link](namespace-aws-vpclattice-toc-classes.md)
 
-[VPCLatticeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.VPCLattice.VPCLatticeClient.html)This client is used to interact with the **Amazon VPC Lattice** service.
+[VPCLatticeClient](class-aws-vpclattice-vpclatticeclient.md)This client is used to interact with the **Amazon VPC Lattice** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.vpclattice.html#toc-classes)
+  - [Classes](namespace-aws-vpclattice-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.vpclattice.html#top)
+[Back To Top](namespace-aws-vpclattice-top.md)

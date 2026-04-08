@@ -37,7 +37,7 @@ _Amazon EC2 User Guide_.
 
 The minimum and maximum instance memory size for an instance type, in MiB.
 
-Type: [MemoryMiBRequest](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_MemoryMiBRequest.html) object
+Type: [MemoryMiBRequest](api-memorymibrequest.md) object
 
 Required: Yes
 
@@ -45,7 +45,7 @@ Required: Yes
 
 The minimum and maximum number of vCPUs for an instance type.
 
-Type: [VCpuCountRequest](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_VCpuCountRequest.html) object
+Type: [VCpuCountRequest](api-vcpucountrequest.md) object
 
 Required: Yes
 
@@ -59,7 +59,7 @@ To exclude accelerator-enabled instance types, set `Max` to
 
 Default: No minimum or maximum limits
 
-Type: [AcceleratorCountRequest](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_AcceleratorCountRequest.html) object
+Type: [AcceleratorCountRequest](api-acceleratorcountrequest.md) object
 
 Required: No
 
@@ -119,7 +119,7 @@ MiB.
 
 Default: No minimum or maximum limits
 
-Type: [AcceleratorTotalMemoryMiBRequest](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_AcceleratorTotalMemoryMiBRequest.html) object
+Type: [AcceleratorTotalMemoryMiBRequest](api-acceleratortotalmemorymibrequest.md) object
 
 Required: No
 
@@ -195,7 +195,7 @@ in the _Amazon EC2 User Guide_.
 
 Default: No minimum or maximum limits
 
-Type: [BaselineEbsBandwidthMbpsRequest](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_BaselineEbsBandwidthMbpsRequest.html) object
+Type: [BaselineEbsBandwidthMbpsRequest](api-baselineebsbandwidthmbpsrequest.md) object
 
 Required: No
 
@@ -203,7 +203,7 @@ Required: No
 
 The baseline performance factors for the instance requirements.
 
-Type: [BaselinePerformanceFactorsRequest](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_BaselinePerformanceFactorsRequest.html) object
+Type: [BaselinePerformanceFactorsRequest](api-baselineperformancefactorsrequest.md) object
 
 Required: No
 
@@ -369,7 +369,7 @@ The minimum and maximum amount of memory per vCPU for an instance type, in GiB.
 
 Default: No minimum or maximum limits
 
-Type: [MemoryGiBPerVCpuRequest](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_MemoryGiBPerVCpuRequest.html) object
+Type: [MemoryGiBPerVCpuRequest](api-memorygibpervcpurequest.md) object
 
 Required: No
 
@@ -380,7 +380,7 @@ The minimum and maximum amount of network bandwidth, in gigabits per second
 
 Default: No minimum or maximum limits
 
-Type: [NetworkBandwidthGbpsRequest](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_NetworkBandwidthGbpsRequest.html) object
+Type: [NetworkBandwidthGbpsRequest](api-networkbandwidthgbpsrequest.md) object
 
 Required: No
 
@@ -390,7 +390,7 @@ The minimum and maximum number of network interfaces for an instance type.
 
 Default: No minimum or maximum limits
 
-Type: [NetworkInterfaceCountRequest](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_NetworkInterfaceCountRequest.html) object
+Type: [NetworkInterfaceCountRequest](api-networkinterfacecountrequest.md) object
 
 Required: No
 
@@ -472,7 +472,7 @@ The minimum and maximum total local storage size for an instance type, in GB.
 
 Default: No minimum or maximum limits
 
-Type: [TotalLocalStorageGBRequest](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_TotalLocalStorageGBRequest.html) object
+Type: [TotalLocalStorageGBRequest](api-totallocalstoragegbrequest.md) object
 
 Required: No
 
@@ -480,13 +480,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/autoscaling-2011-01-01/InstanceRequirements)
+- [AWS SDK for C++](../../../goto/sdkforcpp/autoscaling-2011-01-01/instancerequirements.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/autoscaling-2011-01-01/InstanceRequirements)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/autoscaling-2011-01-01/instancerequirements.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/autoscaling-2011-01-01/InstanceRequirements)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/autoscaling-2011-01-01/instancerequirements.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 InstanceRefreshWarmPoolProgress
 

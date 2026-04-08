@@ -4,15 +4,15 @@ Menu
 
 ## ElementalInference
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elementalinference.html\#toc)
+### Table of Contents  [header link](namespace-aws-elementalinference-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elementalinference.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-elementalinference-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elementalinference.exception.html)
+[Exception](namespace-aws-elementalinference-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elementalinference.html\#toc-classes)
+#### Classes  [header link](namespace-aws-elementalinference-toc-classes.md)
 
-[ElementalInferenceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElementalInference.ElementalInferenceClient.html)This client is used to interact with the **AWS Elemental Inference** service.
+[ElementalInferenceClient](class-aws-elementalinference-elementalinferenceclient.md)This client is used to interact with the **AWS Elemental Inference** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elementalinference.html#toc-classes)
+  - [Classes](namespace-aws-elementalinference-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elementalinference.html#top)
+[Back To Top](namespace-aws-elementalinference-top.md)

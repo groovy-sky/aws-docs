@@ -4,15 +4,15 @@ Menu
 
 ## CodeStarNotifications
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codestarnotifications.html\#toc)
+### Table of Contents  [header link](namespace-aws-codestarnotifications-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codestarnotifications.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-codestarnotifications-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codestarnotifications.exception.html)
+[Exception](namespace-aws-codestarnotifications-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codestarnotifications.html\#toc-classes)
+#### Classes  [header link](namespace-aws-codestarnotifications-toc-classes.md)
 
-[CodeStarNotificationsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeStarNotifications.CodeStarNotificationsClient.html)This client is used to interact with the **AWS CodeStar Notifications** service.
+[CodeStarNotificationsClient](class-aws-codestarnotifications-codestarnotificationsclient.md)This client is used to interact with the **AWS CodeStar Notifications** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codestarnotifications.html#toc-classes)
+  - [Classes](namespace-aws-codestarnotifications-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codestarnotifications.html#top)
+[Back To Top](namespace-aws-codestarnotifications-top.md)

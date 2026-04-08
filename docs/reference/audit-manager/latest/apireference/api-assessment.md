@@ -29,7 +29,7 @@ Required: No
 
 The framework that the assessment was created from.
 
-Type: [AssessmentFramework](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_AssessmentFramework.html) object
+Type: [AssessmentFramework](api-assessmentframework.md) object
 
 Required: No
 
@@ -37,7 +37,7 @@ Required: No
 
 The metadata for the assessment.
 
-Type: [AssessmentMetadata](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_AssessmentMetadata.html) object
+Type: [AssessmentMetadata](api-assessmentmetadata.md) object
 
 Required: No
 
@@ -63,13 +63,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/auditmanager-2017-07-25/Assessment)
+- [AWS SDK for C++](../../../goto/sdkforcpp/auditmanager-2017-07-25/assessment.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/auditmanager-2017-07-25/Assessment)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/auditmanager-2017-07-25/assessment.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/auditmanager-2017-07-25/Assessment)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/auditmanager-2017-07-25/assessment.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Data Types
 

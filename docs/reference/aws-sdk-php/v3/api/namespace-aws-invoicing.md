@@ -4,15 +4,15 @@ Menu
 
 ## Invoicing
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.invoicing.html\#toc)
+### Table of Contents  [header link](namespace-aws-invoicing-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.invoicing.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-invoicing-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.invoicing.exception.html)
+[Exception](namespace-aws-invoicing-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.invoicing.html\#toc-classes)
+#### Classes  [header link](namespace-aws-invoicing-toc-classes.md)
 
-[InvoicingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Invoicing.InvoicingClient.html)This client is used to interact with the **AWS Invoicing** service.
+[InvoicingClient](class-aws-invoicing-invoicingclient.md)This client is used to interact with the **AWS Invoicing** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.invoicing.html#toc-classes)
+  - [Classes](namespace-aws-invoicing-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.invoicing.html#top)
+[Back To Top](namespace-aws-invoicing-top.md)

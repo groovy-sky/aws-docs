@@ -50,7 +50,7 @@ resides. If you make changes to the source AMI and want those changes to be
 reflected in the AMIs in the target Regions, you must recopy the source AMI to
 the target Regions.
 
-![AMIs copied in different Regions](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ami_copy.png)
+![AMIs copied in different Regions](../../../images/awsec2/latest/userguide/images/ami-copy-png.md)
 
 When you first copy an Amazon S3-backed AMI to a Region, we create an Amazon S3 bucket for the
 AMIs copied to that Region. All Amazon S3-backed AMIs that you copy to that Region
@@ -175,7 +175,7 @@ AMIs, as well as charges for any instances you launch from either AMI.
 Enabling encryption by default has the same effect as setting the `Encrypted`
 parameter to `true` for all snapshots in the AMI.
 
-![Copy AMI and encrypt snapshot on the fly](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ami-to-ami-convert.png)
+![Copy AMI and encrypt snapshot on the fly](../../../images/awsec2/latest/userguide/images/ami-to-ami-convert-png.md)
 
 Setting the `Encrypted` parameter encrypts the single snapshot for this
 instance. If you do not specify the `KmsKeyId` parameter, the default

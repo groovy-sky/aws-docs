@@ -13,14 +13,14 @@ Console
 2. The dashboard displays any resources with an associated event
     under **Scheduled events**.
 
-![Viewing events using the dashboard.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/dashboard-scheduled-events.png)
+![Viewing events using the dashboard.](../../../images/awsec2/latest/userguide/images/dashboard-scheduled-events-png.md)
 
 3. For more detail, choose **Events** in the
     navigation pane. Any resources with an associated event are
     displayed. You can filter by characteristics such as event type,
     resource type, and Availability Zone.
 
-![Viewing events using the Events page.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/events-instance-scheduled-stop.png)
+![Viewing events using the Events page.](../../../images/awsec2/latest/userguide/images/events-instance-scheduled-stop-png.md)
 
 AWS CLI
 

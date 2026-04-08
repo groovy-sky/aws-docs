@@ -4,15 +4,15 @@ Menu
 
 ## Tnb
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.tnb.html\#toc)
+### Table of Contents  [header link](namespace-aws-tnb-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.tnb.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-tnb-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.tnb.exception.html)
+[Exception](namespace-aws-tnb-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.tnb.html\#toc-classes)
+#### Classes  [header link](namespace-aws-tnb-toc-classes.md)
 
-[TnbClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Tnb.TnbClient.html)This client is used to interact with the **AWS Telco Network Builder** service.
+[TnbClient](class-aws-tnb-tnbclient.md)This client is used to interact with the **AWS Telco Network Builder** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.tnb.html#toc-classes)
+  - [Classes](namespace-aws-tnb-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.tnb.html#top)
+[Back To Top](namespace-aws-tnb-top.md)

@@ -4,19 +4,19 @@ Menu
 
 ## HasMonitoringEventsTrait
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html\#toc)
+### Table of Contents  [header link](class-aws-hasmonitoringeventstrait-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html\#toc-methods)
+#### Methods  [header link](class-aws-hasmonitoringeventstrait-toc-methods.md)
 
-[appendMonitoringEvent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html#method_appendMonitoringEvent)
-: mixed Append a client-side monitoring event to this object's event list[getMonitoringEvents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html#method_getMonitoringEvents)
+[appendMonitoringEvent()](class-aws-hasmonitoringeventstrait-method-appendmonitoringevent.md)
+: mixed Append a client-side monitoring event to this object's event list[getMonitoringEvents()](class-aws-hasmonitoringeventstrait-method-getmonitoringevents.md)
 : array<string\|int, mixed> Get client-side monitoring events attached to this object. Each event is
-represented as an associative array within the returned array.[prependMonitoringEvent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html#method_prependMonitoringEvent)
+represented as an associative array within the returned array.[prependMonitoringEvent()](class-aws-hasmonitoringeventstrait-method-prependmonitoringevent.md)
 : mixed Prepend a client-side monitoring event to this object's event list
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html\#methods)
+### Methods  [header link](class-aws-hasmonitoringeventstrait-methods.md)
 
-#### appendMonitoringEvent()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html\#method_appendMonitoringEvent)
+#### appendMonitoringEvent()  [header link](class-aws-hasmonitoringeventstrait-method-appendmonitoringevent.md)
 
 Append a client-side monitoring event to this object's event list
 
@@ -29,7 +29,7 @@ Append a client-side monitoring event to this object's event list
 $event
 : array<string\|int, mixed>
 
-#### getMonitoringEvents()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html\#method_getMonitoringEvents)
+#### getMonitoringEvents()  [header link](class-aws-hasmonitoringeventstrait-method-getmonitoringevents.md)
 
 Get client-side monitoring events attached to this object. Each event is
 represented as an associative array within the returned array.
@@ -42,7 +42,7 @@ represented as an associative array within the returned array.
 
 array<string\|int, mixed>
 
-#### prependMonitoringEvent()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html\#method_prependMonitoringEvent)
+#### prependMonitoringEvent()  [header link](class-aws-hasmonitoringeventstrait-method-prependmonitoringevent.md)
 
 Prepend a client-side monitoring event to this object's event list
 
@@ -61,10 +61,10 @@ $event
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html#toc-methods)
+  - [Methods](class-aws-hasmonitoringeventstrait-toc-methods.md)
 - Methods
-  - [appendMonitoringEvent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html#method_appendMonitoringEvent)
-  - [getMonitoringEvents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html#method_getMonitoringEvents)
-  - [prependMonitoringEvent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html#method_prependMonitoringEvent)
+  - [appendMonitoringEvent()](class-aws-hasmonitoringeventstrait-method-appendmonitoringevent.md)
+  - [getMonitoringEvents()](class-aws-hasmonitoringeventstrait-method-getmonitoringevents.md)
+  - [prependMonitoringEvent()](class-aws-hasmonitoringeventstrait-method-prependmonitoringevent.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html#top)
+[Back To Top](class-aws-hasmonitoringeventstrait-top.md)

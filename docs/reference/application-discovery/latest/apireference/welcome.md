@@ -29,7 +29,7 @@ and network dependencies.
 - The information collected by agents is secured at rest and in transit to the
 Application Discovery Service database in the AWS cloud. For more information, see
 [AWS Application\
-Discovery Agent](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-agent.html).
+Discovery Agent](../../../../services/application-discovery/latest/userguide/discovery-agent.md).
 
 - **AWS Partner Network (APN) solutions** integrate with
 Application Discovery Service, enabling you to import details of your on-premises
@@ -70,7 +70,7 @@ APIs outside the home Region, an `InvalidInputException` is returned.
 Region.
 
 This guide is intended for use with the [AWS Application Discovery Service User\
-Guide](https://docs.aws.amazon.com/application-discovery/latest/userguide).
+Guide](../../../../services/application-discovery/latest/userguide.md).
 
 ###### Important
 
@@ -79,6 +79,6 @@ inspect collected data before it is shared with the service.
 
 This document was last published on April 5, 2026.
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Actions

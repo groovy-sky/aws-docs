@@ -1,58 +1,58 @@
 Menu
 
 - [Aws](namespace-aws.md)
-- [S3](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.html)
-- [Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.exception.html)
+- [S3](namespace-aws-s3.md)
+- [Exception](namespace-aws-s3-exception.md)
 
-## S3Exception     extends [AwsException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html)   in package    - [Aws](package-aws.md)
+## S3Exception     extends [AwsException](class-aws-exception-awsexception.md)   in package    - [Aws](package-aws.md)
 
 Represents an error interacting with the Amazon Simple Storage Service.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.S3Exception.html\#toc)
+### Table of Contents  [header link](class-aws-s3-exception-s3exception-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.S3Exception.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-exception-s3exception-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method___construct)
-: mixed [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method___toString)
-: mixed [appendMonitoringEvent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html#method_appendMonitoringEvent)
-: mixed Append a client-side monitoring event to this object's event list[count()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_count)
-: int [get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_get)
-: mixed [getAwsErrorCode()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_getAwsErrorCode)
-: string\|null Get the AWS error code.[getAwsErrorMessage()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_getAwsErrorMessage)
-: string\|null Get the concise error message if any.[getAwsErrorShape()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_getAwsErrorShape)
-: [Shape](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Shape.html) \|null Get the AWS error shape.[getAwsErrorType()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_getAwsErrorType)
-: string\|null Get the AWS error type.[getAwsRequestId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_getAwsRequestId)
+[\_\_construct()](class-aws-exception-awsexception-method-construct.md)
+: mixed [\_\_toString()](class-aws-exception-awsexception-method-tostring.md)
+: mixed [appendMonitoringEvent()](class-aws-hasmonitoringeventstrait-method-appendmonitoringevent.md)
+: mixed Append a client-side monitoring event to this object's event list[count()](class-aws-hasdatatrait-method-count.md)
+: int [get()](class-aws-exception-awsexception-method-get.md)
+: mixed [getAwsErrorCode()](class-aws-exception-awsexception-method-getawserrorcode.md)
+: string\|null Get the AWS error code.[getAwsErrorMessage()](class-aws-exception-awsexception-method-getawserrormessage.md)
+: string\|null Get the concise error message if any.[getAwsErrorShape()](class-aws-exception-awsexception-method-getawserrorshape.md)
+: [Shape](class-aws-api-shape.md) \|null Get the AWS error shape.[getAwsErrorType()](class-aws-exception-awsexception-method-getawserrortype.md)
+: string\|null Get the AWS error type.[getAwsRequestId()](class-aws-exception-awsexception-method-getawsrequestid.md)
 : string\|null Get the request ID of the error. This value is only present if a
 response was received and is not present in the event of a networking
-error.[getCommand()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_getCommand)
-: [CommandInterface](class-aws-commandinterface.md)Get the command that was executed.[getIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_getIterator)
-: Traversable[getMonitoringEvents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html#method_getMonitoringEvents)
+error.[getCommand()](class-aws-exception-awsexception-method-getcommand.md)
+: [CommandInterface](class-aws-commandinterface.md)Get the command that was executed.[getIterator()](class-aws-hasdatatrait-method-getiterator.md)
+: Traversable[getMonitoringEvents()](class-aws-hasmonitoringeventstrait-method-getmonitoringevents.md)
 : array<string\|int, mixed> Get client-side monitoring events attached to this object. Each event is
-represented as an associative array within the returned array.[getRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_getRequest)
-: [RequestInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.RequestInterface.html) \|null Get the sent HTTP request if any.[getResponse()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_getResponse)
-: [ResponseInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html) \|null Get the received HTTP response if any.[getResult()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_getResult)
-: [ResultInterface](class-aws-resultinterface.md) \|null Get the result of the exception if available[getStatusCode()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_getStatusCode)
-: int\|null If available, gets the HTTP status code of the corresponding response[getTransferInfo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_getTransferInfo)
+represented as an associative array within the returned array.[getRequest()](class-aws-exception-awsexception-method-getrequest.md)
+: [RequestInterface](class-psr-http-message-requestinterface.md) \|null Get the sent HTTP request if any.[getResponse()](class-aws-exception-awsexception-method-getresponse.md)
+: [ResponseInterface](class-psr-http-message-responseinterface.md) \|null Get the received HTTP response if any.[getResult()](class-aws-exception-awsexception-method-getresult.md)
+: [ResultInterface](class-aws-resultinterface.md) \|null Get the result of the exception if available[getStatusCode()](class-aws-exception-awsexception-method-getstatuscode.md)
+: int\|null If available, gets the HTTP status code of the corresponding response[getTransferInfo()](class-aws-exception-awsexception-method-gettransferinfo.md)
 : mixed\|null\|array<string\|int, mixed> Get all transfer information as an associative array if no $name
 argument is supplied, or gets a specific transfer statistic if
-a $name attribute is supplied (e.g., 'retries\_attempted').[hasKey()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_hasKey)
-: mixed [isConnectionError()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_isConnectionError)
-: bool Returns true if this is a connection error.[isMaxRetriesExceeded()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_isMaxRetriesExceeded)
-: bool Returns whether the max number of retries is exceeded.[offsetExists()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetExists)
-: bool [offsetGet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetGet)
+a $name attribute is supplied (e.g., 'retries\_attempted').[hasKey()](class-aws-exception-awsexception-method-haskey.md)
+: mixed [isConnectionError()](class-aws-exception-awsexception-method-isconnectionerror.md)
+: bool Returns true if this is a connection error.[isMaxRetriesExceeded()](class-aws-exception-awsexception-method-ismaxretriesexceeded.md)
+: bool Returns whether the max number of retries is exceeded.[offsetExists()](class-aws-hasdatatrait-method-offsetexists.md)
+: bool [offsetGet()](class-aws-hasdatatrait-method-offsetget.md)
 : mixed\|null This method returns a reference to the variable to allow for indirect
-array modification (e.g., $foo\['bar'\]\['baz'\] = 'qux').[offsetSet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetSet)
-: void [offsetUnset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetUnset)
-: void [prependMonitoringEvent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html#method_prependMonitoringEvent)
-: mixed Prepend a client-side monitoring event to this object's event list[search()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_search)
-: mixed [setMaxRetriesExceeded()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_setMaxRetriesExceeded)
-: mixed Sets the flag for max number of retries exceeded.[setTransferInfo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_setTransferInfo)
-: mixed Replace the transfer information associated with an exception.[toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_toArray)
+array modification (e.g., $foo\['bar'\]\['baz'\] = 'qux').[offsetSet()](class-aws-hasdatatrait-method-offsetset.md)
+: void [offsetUnset()](class-aws-hasdatatrait-method-offsetunset.md)
+: void [prependMonitoringEvent()](class-aws-hasmonitoringeventstrait-method-prependmonitoringevent.md)
+: mixed Prepend a client-side monitoring event to this object's event list[search()](class-aws-exception-awsexception-method-search.md)
+: mixed [setMaxRetriesExceeded()](class-aws-exception-awsexception-method-setmaxretriesexceeded.md)
+: mixed Sets the flag for max number of retries exceeded.[setTransferInfo()](class-aws-exception-awsexception-method-settransferinfo.md)
+: mixed Replace the transfer information associated with an exception.[toArray()](class-aws-hasdatatrait-method-toarray.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.S3Exception.html\#methods)
+### Methods  [header link](class-aws-s3-exception-s3exception-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-exception-awsexception-method-construct.md)
 
 `
     public
@@ -78,13 +78,13 @@ $previous
 
 Previous exception (if any)
 
-#### \_\_toString()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html\#method___toString)
+#### \_\_toString()  [header link](class-aws-exception-awsexception-method-tostring.md)
 
 `
     public
                     __toString() : mixed`
 
-#### appendMonitoringEvent()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html\#method_appendMonitoringEvent)
+#### appendMonitoringEvent()  [header link](class-aws-hasmonitoringeventstrait-method-appendmonitoringevent.md)
 
 Append a client-side monitoring event to this object's event list
 
@@ -97,7 +97,7 @@ Append a client-side monitoring event to this object's event list
 $event
 : array<string\|int, mixed>
 
-#### count()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_count)
+#### count()  [header link](class-aws-hasdatatrait-method-count.md)
 
 `
     public
@@ -107,7 +107,7 @@ $event
 
 int
 
-#### get()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html\#method_get)
+#### get()  [header link](class-aws-exception-awsexception-method-get.md)
 
 `
     public
@@ -118,7 +118,7 @@ int
 $key
 : mixed
 
-#### getAwsErrorCode()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html\#method_getAwsErrorCode)
+#### getAwsErrorCode()  [header link](class-aws-exception-awsexception-method-getawserrorcode.md)
 
 Get the AWS error code.
 
@@ -133,7 +133,7 @@ string\|null
 
 Returns null if no response was received
 
-#### getAwsErrorMessage()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html\#method_getAwsErrorMessage)
+#### getAwsErrorMessage()  [header link](class-aws-exception-awsexception-method-getawserrormessage.md)
 
 Get the concise error message if any.
 
@@ -145,7 +145,7 @@ Get the concise error message if any.
 
 string\|null
 
-#### getAwsErrorShape()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html\#method_getAwsErrorShape)
+#### getAwsErrorShape()  [header link](class-aws-exception-awsexception-method-getawserrorshape.md)
 
 Get the AWS error shape.
 
@@ -155,12 +155,12 @@ Get the AWS error shape.
 
 ##### Return values
 
-[Shape](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Shape.html) \|null
+[Shape](class-aws-api-shape.md) \|null
 —
 
 Returns null if no response was received
 
-#### getAwsErrorType()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html\#method_getAwsErrorType)
+#### getAwsErrorType()  [header link](class-aws-exception-awsexception-method-getawserrortype.md)
 
 Get the AWS error type.
 
@@ -175,7 +175,7 @@ string\|null
 
 Returns null if no response was received
 
-#### getAwsRequestId()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html\#method_getAwsRequestId)
+#### getAwsRequestId()  [header link](class-aws-exception-awsexception-method-getawsrequestid.md)
 
 Get the request ID of the error. This value is only present if a
 response was received and is not present in the event of a networking
@@ -192,7 +192,7 @@ string\|null
 
 Returns null if no response was received
 
-#### getCommand()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html\#method_getCommand)
+#### getCommand()  [header link](class-aws-exception-awsexception-method-getcommand.md)
 
 Get the command that was executed.
 
@@ -204,7 +204,7 @@ Get the command that was executed.
 
 [CommandInterface](class-aws-commandinterface.md)
 
-#### getIterator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_getIterator)
+#### getIterator()  [header link](class-aws-hasdatatrait-method-getiterator.md)
 
 `
     public
@@ -214,7 +214,7 @@ Get the command that was executed.
 
 Traversable
 
-#### getMonitoringEvents()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html\#method_getMonitoringEvents)
+#### getMonitoringEvents()  [header link](class-aws-hasmonitoringeventstrait-method-getmonitoringevents.md)
 
 Get client-side monitoring events attached to this object. Each event is
 represented as an associative array within the returned array.
@@ -227,7 +227,7 @@ represented as an associative array within the returned array.
 
 array<string\|int, mixed>
 
-#### getRequest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html\#method_getRequest)
+#### getRequest()  [header link](class-aws-exception-awsexception-method-getrequest.md)
 
 Get the sent HTTP request if any.
 
@@ -237,9 +237,9 @@ Get the sent HTTP request if any.
 
 ##### Return values
 
-[RequestInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.RequestInterface.html) \|null
+[RequestInterface](class-psr-http-message-requestinterface.md) \|null
 
-#### getResponse()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html\#method_getResponse)
+#### getResponse()  [header link](class-aws-exception-awsexception-method-getresponse.md)
 
 Get the received HTTP response if any.
 
@@ -249,9 +249,9 @@ Get the received HTTP response if any.
 
 ##### Return values
 
-[ResponseInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html) \|null
+[ResponseInterface](class-psr-http-message-responseinterface.md) \|null
 
-#### getResult()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html\#method_getResult)
+#### getResult()  [header link](class-aws-exception-awsexception-method-getresult.md)
 
 Get the result of the exception if available
 
@@ -263,7 +263,7 @@ Get the result of the exception if available
 
 [ResultInterface](class-aws-resultinterface.md) \|null
 
-#### getStatusCode()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html\#method_getStatusCode)
+#### getStatusCode()  [header link](class-aws-exception-awsexception-method-getstatuscode.md)
 
 If available, gets the HTTP status code of the corresponding response
 
@@ -275,7 +275,7 @@ If available, gets the HTTP status code of the corresponding response
 
 int\|null
 
-#### getTransferInfo()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html\#method_getTransferInfo)
+#### getTransferInfo()  [header link](class-aws-exception-awsexception-method-gettransferinfo.md)
 
 Get all transfer information as an associative array if no $name
 argument is supplied, or gets a specific transfer statistic if
@@ -297,7 +297,7 @@ Name of the transfer stat to retrieve
 
 mixed\|null\|array<string\|int, mixed>
 
-#### hasKey()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html\#method_hasKey)
+#### hasKey()  [header link](class-aws-exception-awsexception-method-haskey.md)
 
 `
     public
@@ -308,7 +308,7 @@ mixed\|null\|array<string\|int, mixed>
 $name
 : mixed
 
-#### isConnectionError()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html\#method_isConnectionError)
+#### isConnectionError()  [header link](class-aws-exception-awsexception-method-isconnectionerror.md)
 
 Returns true if this is a connection error.
 
@@ -320,7 +320,7 @@ Returns true if this is a connection error.
 
 bool
 
-#### isMaxRetriesExceeded()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html\#method_isMaxRetriesExceeded)
+#### isMaxRetriesExceeded()  [header link](class-aws-exception-awsexception-method-ismaxretriesexceeded.md)
 
 Returns whether the max number of retries is exceeded.
 
@@ -332,7 +332,7 @@ Returns whether the max number of retries is exceeded.
 
 bool
 
-#### offsetExists()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_offsetExists)
+#### offsetExists()  [header link](class-aws-hasdatatrait-method-offsetexists.md)
 
 `
     public
@@ -347,7 +347,7 @@ $offset
 
 bool
 
-#### offsetGet()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_offsetGet)
+#### offsetGet()  [header link](class-aws-hasdatatrait-method-offsetget.md)
 
 This method returns a reference to the variable to allow for indirect
 array modification (e.g., $foo\['bar'\]\['baz'\] = 'qux').
@@ -365,7 +365,7 @@ $offset
 
 mixed\|null
 
-#### offsetSet()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_offsetSet)
+#### offsetSet()  [header link](class-aws-hasdatatrait-method-offsetset.md)
 
 `
     public
@@ -377,7 +377,7 @@ $offset
 : mixed$value
 : mixed
 
-#### offsetUnset()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_offsetUnset)
+#### offsetUnset()  [header link](class-aws-hasdatatrait-method-offsetunset.md)
 
 `
     public
@@ -388,7 +388,7 @@ $offset
 $offset
 : mixed
 
-#### prependMonitoringEvent()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html\#method_prependMonitoringEvent)
+#### prependMonitoringEvent()  [header link](class-aws-hasmonitoringeventstrait-method-prependmonitoringevent.md)
 
 Prepend a client-side monitoring event to this object's event list
 
@@ -401,7 +401,7 @@ Prepend a client-side monitoring event to this object's event list
 $event
 : array<string\|int, mixed>
 
-#### search()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html\#method_search)
+#### search()  [header link](class-aws-exception-awsexception-method-search.md)
 
 `
     public
@@ -412,7 +412,7 @@ $event
 $expression
 : mixed
 
-#### setMaxRetriesExceeded()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html\#method_setMaxRetriesExceeded)
+#### setMaxRetriesExceeded()  [header link](class-aws-exception-awsexception-method-setmaxretriesexceeded.md)
 
 Sets the flag for max number of retries exceeded.
 
@@ -420,7 +420,7 @@ Sets the flag for max number of retries exceeded.
     public
                     setMaxRetriesExceeded() : mixed`
 
-#### setTransferInfo()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html\#method_setTransferInfo)
+#### setTransferInfo()  [header link](class-aws-exception-awsexception-method-settransferinfo.md)
 
 Replace the transfer information associated with an exception.
 
@@ -433,7 +433,7 @@ Replace the transfer information associated with an exception.
 $info
 : array<string\|int, mixed>
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_toArray)
+#### toArray()  [header link](class-aws-hasdatatrait-method-toarray.md)
 
 `
     public
@@ -446,37 +446,37 @@ $info
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.S3Exception.html#toc-methods)
+  - [Methods](class-aws-s3-exception-s3exception-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method___construct)
-  - [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method___toString)
-  - [appendMonitoringEvent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html#method_appendMonitoringEvent)
-  - [count()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_count)
-  - [get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_get)
-  - [getAwsErrorCode()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_getAwsErrorCode)
-  - [getAwsErrorMessage()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_getAwsErrorMessage)
-  - [getAwsErrorShape()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_getAwsErrorShape)
-  - [getAwsErrorType()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_getAwsErrorType)
-  - [getAwsRequestId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_getAwsRequestId)
-  - [getCommand()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_getCommand)
-  - [getIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_getIterator)
-  - [getMonitoringEvents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html#method_getMonitoringEvents)
-  - [getRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_getRequest)
-  - [getResponse()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_getResponse)
-  - [getResult()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_getResult)
-  - [getStatusCode()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_getStatusCode)
-  - [getTransferInfo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_getTransferInfo)
-  - [hasKey()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_hasKey)
-  - [isConnectionError()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_isConnectionError)
-  - [isMaxRetriesExceeded()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_isMaxRetriesExceeded)
-  - [offsetExists()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetExists)
-  - [offsetGet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetGet)
-  - [offsetSet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetSet)
-  - [offsetUnset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetUnset)
-  - [prependMonitoringEvent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasMonitoringEventsTrait.html#method_prependMonitoringEvent)
-  - [search()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_search)
-  - [setMaxRetriesExceeded()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_setMaxRetriesExceeded)
-  - [setTransferInfo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html#method_setTransferInfo)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_toArray)
+  - [\_\_construct()](class-aws-exception-awsexception-method-construct.md)
+  - [\_\_toString()](class-aws-exception-awsexception-method-tostring.md)
+  - [appendMonitoringEvent()](class-aws-hasmonitoringeventstrait-method-appendmonitoringevent.md)
+  - [count()](class-aws-hasdatatrait-method-count.md)
+  - [get()](class-aws-exception-awsexception-method-get.md)
+  - [getAwsErrorCode()](class-aws-exception-awsexception-method-getawserrorcode.md)
+  - [getAwsErrorMessage()](class-aws-exception-awsexception-method-getawserrormessage.md)
+  - [getAwsErrorShape()](class-aws-exception-awsexception-method-getawserrorshape.md)
+  - [getAwsErrorType()](class-aws-exception-awsexception-method-getawserrortype.md)
+  - [getAwsRequestId()](class-aws-exception-awsexception-method-getawsrequestid.md)
+  - [getCommand()](class-aws-exception-awsexception-method-getcommand.md)
+  - [getIterator()](class-aws-hasdatatrait-method-getiterator.md)
+  - [getMonitoringEvents()](class-aws-hasmonitoringeventstrait-method-getmonitoringevents.md)
+  - [getRequest()](class-aws-exception-awsexception-method-getrequest.md)
+  - [getResponse()](class-aws-exception-awsexception-method-getresponse.md)
+  - [getResult()](class-aws-exception-awsexception-method-getresult.md)
+  - [getStatusCode()](class-aws-exception-awsexception-method-getstatuscode.md)
+  - [getTransferInfo()](class-aws-exception-awsexception-method-gettransferinfo.md)
+  - [hasKey()](class-aws-exception-awsexception-method-haskey.md)
+  - [isConnectionError()](class-aws-exception-awsexception-method-isconnectionerror.md)
+  - [isMaxRetriesExceeded()](class-aws-exception-awsexception-method-ismaxretriesexceeded.md)
+  - [offsetExists()](class-aws-hasdatatrait-method-offsetexists.md)
+  - [offsetGet()](class-aws-hasdatatrait-method-offsetget.md)
+  - [offsetSet()](class-aws-hasdatatrait-method-offsetset.md)
+  - [offsetUnset()](class-aws-hasdatatrait-method-offsetunset.md)
+  - [prependMonitoringEvent()](class-aws-hasmonitoringeventstrait-method-prependmonitoringevent.md)
+  - [search()](class-aws-exception-awsexception-method-search.md)
+  - [setMaxRetriesExceeded()](class-aws-exception-awsexception-method-setmaxretriesexceeded.md)
+  - [setTransferInfo()](class-aws-exception-awsexception-method-settransferinfo.md)
+  - [toArray()](class-aws-hasdatatrait-method-toarray.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.S3Exception.html#top)
+[Back To Top](class-aws-s3-exception-s3exception-top.md)

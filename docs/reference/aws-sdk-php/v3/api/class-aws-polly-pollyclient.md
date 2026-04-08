@@ -17,26 +17,26 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2016-06-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-polly-2016-06-10.html)
+- [**2016-06-10**](api-polly-2016-06-10.md)
 
-  - [DeleteLexicon](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-polly-2016-06-10.html#deletelexicon)
-  - [DescribeVoices](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-polly-2016-06-10.html#describevoices)
-  - [GetLexicon](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-polly-2016-06-10.html#getlexicon)
-  - [GetSpeechSynthesisTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-polly-2016-06-10.html#getspeechsynthesistask)
-  - [ListLexicons](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-polly-2016-06-10.html#listlexicons)
-  - [ListSpeechSynthesisTasks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-polly-2016-06-10.html#listspeechsynthesistasks)
-  - [PutLexicon](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-polly-2016-06-10.html#putlexicon)
-  - [StartSpeechSynthesisTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-polly-2016-06-10.html#startspeechsynthesistask)
-  - [SynthesizeSpeech](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-polly-2016-06-10.html#synthesizespeech)
+  - [DeleteLexicon](api-polly-2016-06-10-deletelexicon.md)
+  - [DescribeVoices](api-polly-2016-06-10-describevoices.md)
+  - [GetLexicon](api-polly-2016-06-10-getlexicon.md)
+  - [GetSpeechSynthesisTask](api-polly-2016-06-10-getspeechsynthesistask.md)
+  - [ListLexicons](api-polly-2016-06-10-listlexicons.md)
+  - [ListSpeechSynthesisTasks](api-polly-2016-06-10-listspeechsynthesistasks.md)
+  - [PutLexicon](api-polly-2016-06-10-putlexicon.md)
+  - [StartSpeechSynthesisTask](api-polly-2016-06-10-startspeechsynthesistask.md)
+  - [SynthesizeSpeech](api-polly-2016-06-10-synthesizespeech.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Polly.PollyClient.html\#toc)
+### Table of Contents  [header link](class-aws-polly-pollyclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Polly.PollyClient.html\#toc-methods)
+#### Methods  [header link](class-aws-polly-pollyclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
 : mixed The client constructor accepts the following options:[\_\_sleep()](class-aws-awsclient.md#method___sleep)
-: mixed [createSynthesizeSpeechPreSignedUrl()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Polly.PollyClient.html#method_createSynthesizeSpeechPreSignedUrl)
+: mixed [createSynthesizeSpeechPreSignedUrl()](class-aws-polly-pollyclient-method-createsynthesizespeechpresignedurl.md)
 : string Create a pre-signed URL for Polly operation \`SynthesizeSpeech\`[execute()](class-aws-awsclienttrait.md#method_execute)
 : mixed [executeAsync()](class-aws-awsclienttrait.md#method_executeAsync)
 : mixed [factory()](class-aws-awsclient.md#method_factory)
@@ -63,7 +63,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Polly.PollyClient.html\#methods)
+### Methods  [header link](class-aws-polly-pollyclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -253,7 +253,7 @@ the service is not supported.
     public
                     __sleep() : mixed`
 
-#### createSynthesizeSpeechPreSignedUrl()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Polly.PollyClient.html\#method_createSynthesizeSpeechPreSignedUrl)
+#### createSynthesizeSpeechPreSignedUrl()  [header link](class-aws-polly-pollyclient-method-createsynthesizespeechpresignedurl.md)
 
 Create a pre-signed URL for Polly operation \`SynthesizeSpeech\`
 
@@ -550,12 +550,12 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Polly.PollyClient.html#toc-methods)
+  - [Methods](class-aws-polly-pollyclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
   - [\_\_sleep()](class-aws-awsclient.md#method___sleep)
-  - [createSynthesizeSpeechPreSignedUrl()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Polly.PollyClient.html#method_createSynthesizeSpeechPreSignedUrl)
+  - [createSynthesizeSpeechPreSignedUrl()](class-aws-polly-pollyclient-method-createsynthesizespeechpresignedurl.md)
   - [execute()](class-aws-awsclienttrait.md#method_execute)
   - [executeAsync()](class-aws-awsclienttrait.md#method_executeAsync)
   - [factory()](class-aws-awsclient.md#method_factory)
@@ -578,4 +578,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Polly.PollyClient.html#top)
+[Back To Top](class-aws-polly-pollyclient-top.md)

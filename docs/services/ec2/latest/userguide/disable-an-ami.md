@@ -159,7 +159,7 @@ Console
 
 3. From the filter bar, choose **Disabled images**.
 
-![The Disabled images filter.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ami-filter-by-disabled-images.png)
+![The Disabled images filter.](../../../images/awsec2/latest/userguide/images/ami-filter-by-disabled-images-png.md)
 
 AWS CLI
 

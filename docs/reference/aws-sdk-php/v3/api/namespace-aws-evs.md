@@ -4,15 +4,15 @@ Menu
 
 ## Evs
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.evs.html\#toc)
+### Table of Contents  [header link](namespace-aws-evs-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.evs.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-evs-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.evs.exception.html)
+[Exception](namespace-aws-evs-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.evs.html\#toc-classes)
+#### Classes  [header link](namespace-aws-evs-toc-classes.md)
 
-[EvsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Evs.EvsClient.html)This client is used to interact with the **Amazon Elastic VMware Service** service.
+[EvsClient](class-aws-evs-evsclient.md)This client is used to interact with the **Amazon Elastic VMware Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.evs.html#toc-classes)
+  - [Classes](namespace-aws-evs-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.evs.html#top)
+[Back To Top](namespace-aws-evs-top.md)

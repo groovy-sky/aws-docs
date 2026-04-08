@@ -135,7 +135,7 @@ This figure shows an example block device mapping for an EBS-backed instance. It
 one to `/dev/sdh` and the other to `/dev/sdj`. It also
 shows the EBS volume that is the root volume, `/dev/sda1`.
 
-![Relationship between instance, instance store volumes, and EBS volumes.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/block_device_mapping_figure.png)
+![Relationship between instance, instance store volumes, and EBS volumes.](../../../images/awsec2/latest/userguide/images/block-device-mapping-figure-png.md)
 
 Note that this example block device mapping is used in the example commands and APIs in
 this topic. You can find example commands and APIs that create block device mappings in

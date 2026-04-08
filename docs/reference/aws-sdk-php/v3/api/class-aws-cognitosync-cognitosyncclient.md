@@ -17,29 +17,29 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2014-06-30**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-sync-2014-06-30.html)
+- [**2014-06-30**](api-cognito-sync-2014-06-30.md)
 
-  - [BulkPublish](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-sync-2014-06-30.html#bulkpublish)
-  - [DeleteDataset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-sync-2014-06-30.html#deletedataset)
-  - [DescribeDataset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-sync-2014-06-30.html#describedataset)
-  - [DescribeIdentityPoolUsage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-sync-2014-06-30.html#describeidentitypoolusage)
-  - [DescribeIdentityUsage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-sync-2014-06-30.html#describeidentityusage)
-  - [GetBulkPublishDetails](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-sync-2014-06-30.html#getbulkpublishdetails)
-  - [GetCognitoEvents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-sync-2014-06-30.html#getcognitoevents)
-  - [GetIdentityPoolConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-sync-2014-06-30.html#getidentitypoolconfiguration)
-  - [ListDatasets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-sync-2014-06-30.html#listdatasets)
-  - [ListIdentityPoolUsage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-sync-2014-06-30.html#listidentitypoolusage)
-  - [ListRecords](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-sync-2014-06-30.html#listrecords)
-  - [RegisterDevice](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-sync-2014-06-30.html#registerdevice)
-  - [SetCognitoEvents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-sync-2014-06-30.html#setcognitoevents)
-  - [SetIdentityPoolConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-sync-2014-06-30.html#setidentitypoolconfiguration)
-  - [SubscribeToDataset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-sync-2014-06-30.html#subscribetodataset)
-  - [UnsubscribeFromDataset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-sync-2014-06-30.html#unsubscribefromdataset)
-  - [UpdateRecords](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-sync-2014-06-30.html#updaterecords)
+  - [BulkPublish](api-cognito-sync-2014-06-30-bulkpublish.md)
+  - [DeleteDataset](api-cognito-sync-2014-06-30-deletedataset.md)
+  - [DescribeDataset](api-cognito-sync-2014-06-30-describedataset.md)
+  - [DescribeIdentityPoolUsage](api-cognito-sync-2014-06-30-describeidentitypoolusage.md)
+  - [DescribeIdentityUsage](api-cognito-sync-2014-06-30-describeidentityusage.md)
+  - [GetBulkPublishDetails](api-cognito-sync-2014-06-30-getbulkpublishdetails.md)
+  - [GetCognitoEvents](api-cognito-sync-2014-06-30-getcognitoevents.md)
+  - [GetIdentityPoolConfiguration](api-cognito-sync-2014-06-30-getidentitypoolconfiguration.md)
+  - [ListDatasets](api-cognito-sync-2014-06-30-listdatasets.md)
+  - [ListIdentityPoolUsage](api-cognito-sync-2014-06-30-listidentitypoolusage.md)
+  - [ListRecords](api-cognito-sync-2014-06-30-listrecords.md)
+  - [RegisterDevice](api-cognito-sync-2014-06-30-registerdevice.md)
+  - [SetCognitoEvents](api-cognito-sync-2014-06-30-setcognitoevents.md)
+  - [SetIdentityPoolConfiguration](api-cognito-sync-2014-06-30-setidentitypoolconfiguration.md)
+  - [SubscribeToDataset](api-cognito-sync-2014-06-30-subscribetodataset.md)
+  - [UnsubscribeFromDataset](api-cognito-sync-2014-06-30-unsubscribefromdataset.md)
+  - [UpdateRecords](api-cognito-sync-2014-06-30-updaterecords.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoSync.CognitoSyncClient.html\#toc)
+### Table of Contents  [header link](class-aws-cognitosync-cognitosyncclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoSync.CognitoSyncClient.html\#toc-methods)
+#### Methods  [header link](class-aws-cognitosync-cognitosyncclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -70,7 +70,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoSync.CognitoSyncClient.html\#methods)
+### Methods  [header link](class-aws-cognitosync-cognitosyncclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -537,7 +537,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoSync.CognitoSyncClient.html#toc-methods)
+  - [Methods](class-aws-cognitosync-cognitosyncclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -564,4 +564,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoSync.CognitoSyncClient.html#top)
+[Back To Top](class-aws-cognitosync-cognitosyncclient-top.md)

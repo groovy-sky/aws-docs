@@ -24,7 +24,7 @@ group to be encrypted with that key. To have query results encrypted with a AWS 
 resource.
 
 - Specify the `resourceIdentifier` parameter with a `query-result`
-resource, to use that key to encrypt the stored results of all future [StartQuery](api-startquery.md) operations in the account. The response from a [GetQueryResults](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_GetQueryResults.html) operation will still return the query results in plain
+resource, to use that key to encrypt the stored results of all future [StartQuery](api-startquery.md) operations in the account. The response from a [GetQueryResults](api-getqueryresults.md) operation will still return the query results in plain
 text.
 
 Even if you have not associated a key with your query results, the query results are
@@ -44,7 +44,7 @@ will be unencryptable and unusable.
 CloudWatch Logs supports only symmetric KMS keys. Do not associate an
 asymmetric KMS key with your log group or query results. For more
 information, see [Using Symmetric and Asymmetric\
-Keys](https://docs.aws.amazon.com/kms/latest/developerguide/symmetric-asymmetric.html).
+Keys](../../../../services/kms/latest/developerguide/symmetric-asymmetric.md).
 
 It can take up to 5 minutes for this operation to take effect.
 
@@ -71,8 +71,8 @@ The request accepts the following data in JSON format.
 **[kmsKeyId](#API_AssociateKmsKey_RequestSyntax)**
 
 The Amazon Resource Name (ARN) of the KMS key to use when encrypting log
-data. This must be a symmetric KMS key. For more information, see [Amazon Resource Names](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html#arn-syntax-kms) and [Using Symmetric and Asymmetric\
-Keys](https://docs.aws.amazon.com/kms/latest/developerguide/symmetric-asymmetric.html).
+data. This must be a symmetric KMS key. For more information, see [Amazon Resource Names](../../../../general/general/latest/gr/aws-arns-and-namespaces-arn-syntax-kms.md) and [Using Symmetric and Asymmetric\
+Keys](../../../../services/kms/latest/developerguide/symmetric-asymmetric.md).
 
 Type: String
 
@@ -100,7 +100,7 @@ Required: No
 
 Specifies the target for this operation. You must specify one of the following:
 
-- Specify the following ARN to have future [GetQueryResults](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_GetQueryResults.html) operations in this account encrypt the results with the
+- Specify the following ARN to have future [GetQueryResults](api-getqueryresults.md) operations in this account encrypt the results with the
 specified AWS KMS key. Replace _REGION_ and
 _ACCOUNT\_ID_ with your Region and account ID.
 
@@ -235,27 +235,27 @@ Date: <Date>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/logs-2014-03-28/AssociateKmsKey)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/logs-2014-03-28/associatekmskey.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/logs-2014-03-28/AssociateKmsKey)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/logs-2014-03-28/associatekmskey.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/AssociateKmsKey)
+- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/associatekmskey.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/logs-2014-03-28/AssociateKmsKey)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/logs-2014-03-28/associatekmskey.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/AssociateKmsKey)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/associatekmskey.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/logs-2014-03-28/AssociateKmsKey)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/logs-2014-03-28/associatekmskey.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/logs-2014-03-28/AssociateKmsKey)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/logs-2014-03-28/associatekmskey.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/logs-2014-03-28/AssociateKmsKey)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/logs-2014-03-28/associatekmskey.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/logs-2014-03-28/AssociateKmsKey)
+- [AWS SDK for Python](../../../../services/goto/boto3/logs-2014-03-28/associatekmskey.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/logs-2014-03-28/AssociateKmsKey)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/associatekmskey.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Actions
 

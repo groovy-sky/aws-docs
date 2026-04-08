@@ -2,15 +2,15 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [IoTDeviceAdvisor](namespace-aws-iotdeviceadvisor.md)
-- [Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotdeviceadvisor.exception.html)
+- [Exception](namespace-aws-iotdeviceadvisor-exception.md)
 
 ## IoTDeviceAdvisorException     extends [AwsException](class-aws-exception-awsexception.md)   in package    - [Aws](package-aws.md)
 
 Represents an error interacting with the **AWS IoT Core Device Advisor** service.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTDeviceAdvisor.Exception.IoTDeviceAdvisorException.html\#toc)
+### Table of Contents  [header link](class-aws-iotdeviceadvisor-exception-iotdeviceadvisorexception-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTDeviceAdvisor.Exception.IoTDeviceAdvisorException.html\#toc-methods)
+#### Methods  [header link](class-aws-iotdeviceadvisor-exception-iotdeviceadvisorexception-toc-methods.md)
 
 [\_\_construct()](class-aws-exception-awsexception.md#method___construct)
 : mixed [\_\_toString()](class-aws-exception-awsexception.md#method___toString)
@@ -50,7 +50,7 @@ array modification (e.g., $foo\['bar'\]\['baz'\] = 'qux').[offsetSet()](class-aw
 : mixed Replace the transfer information associated with an exception.[toArray()](class-aws-hasdatatrait.md#method_toArray)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTDeviceAdvisor.Exception.IoTDeviceAdvisorException.html\#methods)
+### Methods  [header link](class-aws-iotdeviceadvisor-exception-iotdeviceadvisorexception-methods.md)
 
 #### \_\_construct()  [header link](class-aws-exception-awsexception.md\#method___construct)
 
@@ -446,7 +446,7 @@ $info
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTDeviceAdvisor.Exception.IoTDeviceAdvisorException.html#toc-methods)
+  - [Methods](class-aws-iotdeviceadvisor-exception-iotdeviceadvisorexception-toc-methods.md)
 - Methods
   - [\_\_construct()](class-aws-exception-awsexception.md#method___construct)
   - [\_\_toString()](class-aws-exception-awsexception.md#method___toString)
@@ -479,4 +479,4 @@ $info
   - [setTransferInfo()](class-aws-exception-awsexception.md#method_setTransferInfo)
   - [toArray()](class-aws-hasdatatrait.md#method_toArray)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTDeviceAdvisor.Exception.IoTDeviceAdvisorException.html#top)
+[Back To Top](class-aws-iotdeviceadvisor-exception-iotdeviceadvisorexception-top.md)

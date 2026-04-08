@@ -17,50 +17,50 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2010-03-31**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html)
+- [**2010-03-31**](api-sns-2010-03-31.md)
 
-  - [AddPermission](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#addpermission)
-  - [CheckIfPhoneNumberIsOptedOut](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#checkifphonenumberisoptedout)
-  - [ConfirmSubscription](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#confirmsubscription)
-  - [CreatePlatformApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#createplatformapplication)
-  - [CreatePlatformEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#createplatformendpoint)
-  - [CreateSMSSandboxPhoneNumber](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#createsmssandboxphonenumber)
-  - [CreateTopic](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#createtopic)
-  - [DeleteEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#deleteendpoint)
-  - [DeletePlatformApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#deleteplatformapplication)
-  - [DeleteSMSSandboxPhoneNumber](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#deletesmssandboxphonenumber)
-  - [DeleteTopic](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#deletetopic)
-  - [GetDataProtectionPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#getdataprotectionpolicy)
-  - [GetEndpointAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#getendpointattributes)
-  - [GetPlatformApplicationAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#getplatformapplicationattributes)
-  - [GetSMSAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#getsmsattributes)
-  - [GetSMSSandboxAccountStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#getsmssandboxaccountstatus)
-  - [GetSubscriptionAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#getsubscriptionattributes)
-  - [GetTopicAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#gettopicattributes)
-  - [ListEndpointsByPlatformApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#listendpointsbyplatformapplication)
-  - [ListOriginationNumbers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#listoriginationnumbers)
-  - [ListPhoneNumbersOptedOut](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#listphonenumbersoptedout)
-  - [ListPlatformApplications](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#listplatformapplications)
-  - [ListSMSSandboxPhoneNumbers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#listsmssandboxphonenumbers)
-  - [ListSubscriptions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#listsubscriptions)
-  - [ListSubscriptionsByTopic](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#listsubscriptionsbytopic)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#listtagsforresource)
-  - [ListTopics](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#listtopics)
-  - [OptInPhoneNumber](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#optinphonenumber)
-  - [Publish](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#publish)
-  - [PublishBatch](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#publishbatch)
-  - [PutDataProtectionPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#putdataprotectionpolicy)
-  - [RemovePermission](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#removepermission)
-  - [SetEndpointAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#setendpointattributes)
-  - [SetPlatformApplicationAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#setplatformapplicationattributes)
-  - [SetSMSAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#setsmsattributes)
-  - [SetSubscriptionAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#setsubscriptionattributes)
-  - [SetTopicAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#settopicattributes)
-  - [Subscribe](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#subscribe)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#tagresource)
-  - [Unsubscribe](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#unsubscribe)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#untagresource)
-  - [VerifySMSSandboxPhoneNumber](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sns-2010-03-31.html#verifysmssandboxphonenumber)
+  - [AddPermission](api-sns-2010-03-31-addpermission.md)
+  - [CheckIfPhoneNumberIsOptedOut](api-sns-2010-03-31-checkifphonenumberisoptedout.md)
+  - [ConfirmSubscription](api-sns-2010-03-31-confirmsubscription.md)
+  - [CreatePlatformApplication](api-sns-2010-03-31-createplatformapplication.md)
+  - [CreatePlatformEndpoint](api-sns-2010-03-31-createplatformendpoint.md)
+  - [CreateSMSSandboxPhoneNumber](api-sns-2010-03-31-createsmssandboxphonenumber.md)
+  - [CreateTopic](api-sns-2010-03-31-createtopic.md)
+  - [DeleteEndpoint](api-sns-2010-03-31-deleteendpoint.md)
+  - [DeletePlatformApplication](api-sns-2010-03-31-deleteplatformapplication.md)
+  - [DeleteSMSSandboxPhoneNumber](api-sns-2010-03-31-deletesmssandboxphonenumber.md)
+  - [DeleteTopic](api-sns-2010-03-31-deletetopic.md)
+  - [GetDataProtectionPolicy](api-sns-2010-03-31-getdataprotectionpolicy.md)
+  - [GetEndpointAttributes](api-sns-2010-03-31-getendpointattributes.md)
+  - [GetPlatformApplicationAttributes](api-sns-2010-03-31-getplatformapplicationattributes.md)
+  - [GetSMSAttributes](api-sns-2010-03-31-getsmsattributes.md)
+  - [GetSMSSandboxAccountStatus](api-sns-2010-03-31-getsmssandboxaccountstatus.md)
+  - [GetSubscriptionAttributes](api-sns-2010-03-31-getsubscriptionattributes.md)
+  - [GetTopicAttributes](api-sns-2010-03-31-gettopicattributes.md)
+  - [ListEndpointsByPlatformApplication](api-sns-2010-03-31-listendpointsbyplatformapplication.md)
+  - [ListOriginationNumbers](api-sns-2010-03-31-listoriginationnumbers.md)
+  - [ListPhoneNumbersOptedOut](api-sns-2010-03-31-listphonenumbersoptedout.md)
+  - [ListPlatformApplications](api-sns-2010-03-31-listplatformapplications.md)
+  - [ListSMSSandboxPhoneNumbers](api-sns-2010-03-31-listsmssandboxphonenumbers.md)
+  - [ListSubscriptions](api-sns-2010-03-31-listsubscriptions.md)
+  - [ListSubscriptionsByTopic](api-sns-2010-03-31-listsubscriptionsbytopic.md)
+  - [ListTagsForResource](api-sns-2010-03-31-listtagsforresource.md)
+  - [ListTopics](api-sns-2010-03-31-listtopics.md)
+  - [OptInPhoneNumber](api-sns-2010-03-31-optinphonenumber.md)
+  - [Publish](api-sns-2010-03-31-publish.md)
+  - [PublishBatch](api-sns-2010-03-31-publishbatch.md)
+  - [PutDataProtectionPolicy](api-sns-2010-03-31-putdataprotectionpolicy.md)
+  - [RemovePermission](api-sns-2010-03-31-removepermission.md)
+  - [SetEndpointAttributes](api-sns-2010-03-31-setendpointattributes.md)
+  - [SetPlatformApplicationAttributes](api-sns-2010-03-31-setplatformapplicationattributes.md)
+  - [SetSMSAttributes](api-sns-2010-03-31-setsmsattributes.md)
+  - [SetSubscriptionAttributes](api-sns-2010-03-31-setsubscriptionattributes.md)
+  - [SetTopicAttributes](api-sns-2010-03-31-settopicattributes.md)
+  - [Subscribe](api-sns-2010-03-31-subscribe.md)
+  - [TagResource](api-sns-2010-03-31-tagresource.md)
+  - [Unsubscribe](api-sns-2010-03-31-unsubscribe.md)
+  - [UntagResource](api-sns-2010-03-31-untagresource.md)
+  - [VerifySMSSandboxPhoneNumber](api-sns-2010-03-31-verifysmssandboxphonenumber.md)
 
 ## Examples
 
@@ -68,19 +68,19 @@ specific API operation can be done using magic methods (e.g.,
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for PHP with Amazon Simple Notification Service.
 
-- [See examples on AWS Docs](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/php_sns_code_examples.html)
+- [See examples on AWS Docs](../../../sdk-for-php/v3/developer-guide/php-sns-code-examples.md)
 
 ### Legacy Code Examples With Guidance
 
-The following examples demonstrate how to use this service with the AWS SDK for PHP. These code examples are available in the [AWS SDK for PHP Developer Guide](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/sns-examples.html).
+The following examples demonstrate how to use this service with the AWS SDK for PHP. These code examples are available in the [AWS SDK for PHP Developer Guide](../../../sdk-for-php/v3/developer-guide/sns-examples.md).
 
-- [Managing topics](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/sns-examples-managing-topics.html)
-- [Managing subscriptions](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/sns-examples-subscribing-unsubscribing-topics.html)
-- [Sending amazon SMS messages](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/sns-examples-sending-sms.html)
+- [Managing topics](../../../sdk-for-php/v3/developer-guide/sns-examples-managing-topics.md)
+- [Managing subscriptions](../../../sdk-for-php/v3/developer-guide/sns-examples-subscribing-unsubscribing-topics.md)
+- [Sending amazon SMS messages](../../../sdk-for-php/v3/developer-guide/sns-examples-sending-sms.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.SnsClient.html\#toc)
+### Table of Contents  [header link](class-aws-sns-snsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.SnsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-sns-snsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -111,7 +111,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.SnsClient.html\#methods)
+### Methods  [header link](class-aws-sns-snsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -578,7 +578,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.SnsClient.html#toc-methods)
+  - [Methods](class-aws-sns-snsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -605,4 +605,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.SnsClient.html#top)
+[Back To Top](class-aws-sns-snsclient-top.md)

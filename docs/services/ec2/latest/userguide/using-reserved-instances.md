@@ -46,7 +46,7 @@ Amazon EC2 Reserved Instances applying to my AWS billing in the way that I expec
 You can use various methods to launch the On-Demand Instances that use your Reserved Instance discount. For
 information about the different launch methods, see [Launch an Amazon EC2 instance](launchingandusinginstances.md).
 You can also use Amazon EC2 Auto Scaling to launch an instance. For more information, see the
-[Amazon EC2 Auto Scaling User Guide](https://docs.aws.amazon.com/autoscaling/ec2/userguide).
+[Amazon EC2 Auto Scaling User Guide](../../../autoscaling/ec2/userguide.md).
 
 [Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 

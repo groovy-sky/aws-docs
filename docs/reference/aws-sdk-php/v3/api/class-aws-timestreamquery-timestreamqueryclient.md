@@ -17,27 +17,27 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-11-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-query-2018-11-01.html)
+- [**2018-11-01**](api-timestream-query-2018-11-01.md)
 
-  - [CancelQuery](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-query-2018-11-01.html#cancelquery)
-  - [CreateScheduledQuery](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-query-2018-11-01.html#createscheduledquery)
-  - [DeleteScheduledQuery](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-query-2018-11-01.html#deletescheduledquery)
-  - [DescribeAccountSettings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-query-2018-11-01.html#describeaccountsettings)
-  - [DescribeEndpoints](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-query-2018-11-01.html#describeendpoints)
-  - [DescribeScheduledQuery](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-query-2018-11-01.html#describescheduledquery)
-  - [ExecuteScheduledQuery](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-query-2018-11-01.html#executescheduledquery)
-  - [ListScheduledQueries](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-query-2018-11-01.html#listscheduledqueries)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-query-2018-11-01.html#listtagsforresource)
-  - [PrepareQuery](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-query-2018-11-01.html#preparequery)
-  - [Query](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-query-2018-11-01.html#query)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-query-2018-11-01.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-query-2018-11-01.html#untagresource)
-  - [UpdateAccountSettings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-query-2018-11-01.html#updateaccountsettings)
-  - [UpdateScheduledQuery](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-query-2018-11-01.html#updatescheduledquery)
+  - [CancelQuery](api-timestream-query-2018-11-01-cancelquery.md)
+  - [CreateScheduledQuery](api-timestream-query-2018-11-01-createscheduledquery.md)
+  - [DeleteScheduledQuery](api-timestream-query-2018-11-01-deletescheduledquery.md)
+  - [DescribeAccountSettings](api-timestream-query-2018-11-01-describeaccountsettings.md)
+  - [DescribeEndpoints](api-timestream-query-2018-11-01-describeendpoints.md)
+  - [DescribeScheduledQuery](api-timestream-query-2018-11-01-describescheduledquery.md)
+  - [ExecuteScheduledQuery](api-timestream-query-2018-11-01-executescheduledquery.md)
+  - [ListScheduledQueries](api-timestream-query-2018-11-01-listscheduledqueries.md)
+  - [ListTagsForResource](api-timestream-query-2018-11-01-listtagsforresource.md)
+  - [PrepareQuery](api-timestream-query-2018-11-01-preparequery.md)
+  - [Query](api-timestream-query-2018-11-01-query.md)
+  - [TagResource](api-timestream-query-2018-11-01-tagresource.md)
+  - [UntagResource](api-timestream-query-2018-11-01-untagresource.md)
+  - [UpdateAccountSettings](api-timestream-query-2018-11-01-updateaccountsettings.md)
+  - [UpdateScheduledQuery](api-timestream-query-2018-11-01-updatescheduledquery.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TimestreamQuery.TimestreamQueryClient.html\#toc)
+### Table of Contents  [header link](class-aws-timestreamquery-timestreamqueryclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TimestreamQuery.TimestreamQueryClient.html\#toc-methods)
+#### Methods  [header link](class-aws-timestreamquery-timestreamqueryclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -68,7 +68,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TimestreamQuery.TimestreamQueryClient.html\#methods)
+### Methods  [header link](class-aws-timestreamquery-timestreamqueryclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -535,7 +535,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TimestreamQuery.TimestreamQueryClient.html#toc-methods)
+  - [Methods](class-aws-timestreamquery-timestreamqueryclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -562,4 +562,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TimestreamQuery.TimestreamQueryClient.html#top)
+[Back To Top](class-aws-timestreamquery-timestreamqueryclient-top.md)

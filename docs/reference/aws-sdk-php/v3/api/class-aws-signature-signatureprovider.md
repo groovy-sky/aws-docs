@@ -45,21 +45,21 @@ $nullValue = $c('???', 'abc', '123'); // Neither can handle this.
 
 ```
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureProvider.html\#toc)
+### Table of Contents  [header link](class-aws-signature-signatureprovider-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureProvider.html\#toc-methods)
+#### Methods  [header link](class-aws-signature-signatureprovider-toc-methods.md)
 
-[defaultProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureProvider.html#method_defaultProvider)
-: callable Default SDK signature provider.[memoize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureProvider.html#method_memoize)
+[defaultProvider()](class-aws-signature-signatureprovider-method-defaultprovider.md)
+: callable Default SDK signature provider.[memoize()](class-aws-signature-signatureprovider-method-memoize.md)
 : callable Creates a signature provider that caches previously created signature
 objects. The computed cache key is the concatenation of the version,
-service, and region.[resolve()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureProvider.html#method_resolve)
-: [SignatureInterface](class-aws-signature-signatureinterface.md)Resolves and signature provider and ensures a non-null return value.[version()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureProvider.html#method_version)
+service, and region.[resolve()](class-aws-signature-signatureprovider-method-resolve.md)
+: [SignatureInterface](class-aws-signature-signatureinterface.md)Resolves and signature provider and ensures a non-null return value.[version()](class-aws-signature-signatureprovider-method-version.md)
 : callable Creates signature objects from known signature versions.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureProvider.html\#methods)
+### Methods  [header link](class-aws-signature-signatureprovider-methods.md)
 
-#### defaultProvider()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureProvider.html\#method_defaultProvider)
+#### defaultProvider()  [header link](class-aws-signature-signatureprovider-method-defaultprovider.md)
 
 Default SDK signature provider.
 
@@ -71,7 +71,7 @@ Default SDK signature provider.
 
 callable
 
-#### memoize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureProvider.html\#method_memoize)
+#### memoize()  [header link](class-aws-signature-signatureprovider-method-memoize.md)
 
 Creates a signature provider that caches previously created signature
 objects. The computed cache key is the concatenation of the version,
@@ -92,7 +92,7 @@ Signature provider to wrap.
 
 callable
 
-#### resolve()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureProvider.html\#method_resolve)
+#### resolve()  [header link](class-aws-signature-signatureprovider-method-resolve.md)
 
 Resolves and signature provider and ensures a non-null return value.
 
@@ -122,7 +122,7 @@ $region
 
 Region name.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureProvider.html\#method_resolve\#tags)
+##### Tags  [header link](class-aws-signature-signatureprovider-method-resolve-tags.md)
 
 throws[UnresolvedSignatureException](class-aws-exception-unresolvedsignatureexception.md)
 
@@ -130,7 +130,7 @@ throws[UnresolvedSignatureException](class-aws-exception-unresolvedsignatureexce
 
 [SignatureInterface](class-aws-signature-signatureinterface.md)
 
-#### version()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureProvider.html\#method_version)
+#### version()  [header link](class-aws-signature-signatureprovider-method-version.md)
 
 Creates signature objects from known signature versions.
 
@@ -153,11 +153,11 @@ callable
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureProvider.html#toc-methods)
+  - [Methods](class-aws-signature-signatureprovider-toc-methods.md)
 - Methods
-  - [defaultProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureProvider.html#method_defaultProvider)
-  - [memoize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureProvider.html#method_memoize)
-  - [resolve()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureProvider.html#method_resolve)
-  - [version()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureProvider.html#method_version)
+  - [defaultProvider()](class-aws-signature-signatureprovider-method-defaultprovider.md)
+  - [memoize()](class-aws-signature-signatureprovider-method-memoize.md)
+  - [resolve()](class-aws-signature-signatureprovider-method-resolve.md)
+  - [version()](class-aws-signature-signatureprovider-method-version.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureProvider.html#top)
+[Back To Top](class-aws-signature-signatureprovider-top.md)

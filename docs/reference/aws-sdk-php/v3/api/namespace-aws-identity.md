@@ -4,11 +4,11 @@ Menu
 
 ## Identity
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.identity.html\#toc)
+### Table of Contents  [header link](namespace-aws-identity-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.identity.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-identity-namespaces.md)
 
-[S3](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.identity.s3.html)
+[S3](namespace-aws-identity-s3.md)
 
 ```
 
@@ -20,4 +20,4 @@ Menu
 
 - Table Of Contents
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.identity.html#top)
+[Back To Top](namespace-aws-identity-top.md)

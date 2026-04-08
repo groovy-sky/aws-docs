@@ -4,15 +4,15 @@ Menu
 
 ## TrustedAdvisor
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.trustedadvisor.html\#toc)
+### Table of Contents  [header link](namespace-aws-trustedadvisor-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.trustedadvisor.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-trustedadvisor-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.trustedadvisor.exception.html)
+[Exception](namespace-aws-trustedadvisor-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.trustedadvisor.html\#toc-classes)
+#### Classes  [header link](namespace-aws-trustedadvisor-toc-classes.md)
 
-[TrustedAdvisorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TrustedAdvisor.TrustedAdvisorClient.html)This client is used to interact with the **TrustedAdvisor Public API** service.
+[TrustedAdvisorClient](class-aws-trustedadvisor-trustedadvisorclient.md)This client is used to interact with the **TrustedAdvisor Public API** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.trustedadvisor.html#toc-classes)
+  - [Classes](namespace-aws-trustedadvisor-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.trustedadvisor.html#top)
+[Back To Top](namespace-aws-trustedadvisor-top.md)

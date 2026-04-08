@@ -1,21 +1,21 @@
 Menu
 
-- [Psr](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.html)
-- [Http](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.html)
-- [Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.client.html)
+- [Psr](namespace-psr.md)
+- [Http](namespace-psr-http.md)
+- [Client](namespace-psr-http-client.md)
 
 ## ClientExceptionInterface    extends  Throwable   in    - [Aws](package-aws.md)
 
 Every HTTP client related exception MUST implement this interface.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.ClientExceptionInterface.html\#toc)
+### Table of Contents  [header link](class-psr-http-client-clientexceptioninterface-toc.md)
 
 ×
 
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.ClientExceptionInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.ClientExceptionInterface.html#toc-methods)
+  - [Constants](class-psr-http-client-clientexceptioninterface-toc-constants.md)
+  - [Methods](class-psr-http-client-clientexceptioninterface-toc-methods.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.ClientExceptionInterface.html#top)
+[Back To Top](class-psr-http-client-clientexceptioninterface-top.md)

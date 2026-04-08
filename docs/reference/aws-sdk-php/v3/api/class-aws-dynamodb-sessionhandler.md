@@ -21,30 +21,30 @@ Note: the DynamoDB Session Handler does not allow garbage collection to be
 triggered randomly. You must run garbage collection manually or through other
 automated means using a cron job or similar scheduling technique.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html\#toc)
+### Table of Contents  [header link](class-aws-dynamodb-sessionhandler-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-dynamodb-sessionhandler-toc-interfaces.md)
 
 SessionHandlerInterface
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html\#toc-methods)
+#### Methods  [header link](class-aws-dynamodb-sessionhandler-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html#method___construct)
-: mixed [close()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html#method_close)
-: bool Close a session from writing.[destroy()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html#method_destroy)
-: bool Delete a session stored in DynamoDB.[fromClient()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html#method_fromClient)
-: [SessionHandler](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html)Creates a new DynamoDB Session Handler.[garbageCollect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html#method_garbageCollect)
-: mixed Triggers garbage collection on expired sessions.[gc()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html#method_gc)
+[\_\_construct()](class-aws-dynamodb-sessionhandler-method-construct.md)
+: mixed [close()](class-aws-dynamodb-sessionhandler-method-close.md)
+: bool Close a session from writing.[destroy()](class-aws-dynamodb-sessionhandler-method-destroy.md)
+: bool Delete a session stored in DynamoDB.[fromClient()](class-aws-dynamodb-sessionhandler-method-fromclient.md)
+: [SessionHandler](class-aws-dynamodb-sessionhandler.md)Creates a new DynamoDB Session Handler.[garbageCollect()](class-aws-dynamodb-sessionhandler-method-garbagecollect.md)
+: mixed Triggers garbage collection on expired sessions.[gc()](class-aws-dynamodb-sessionhandler-method-gc.md)
 : bool Satisfies the session handler interface, but does nothing. To do garbage
-collection, you must manually call the garbageCollect() method.[open()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html#method_open)
-: bool Open a session for writing. Triggered by session\_start().[read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html#method_read)
-: string Read a session stored in DynamoDB.[register()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html#method_register)
-: bool Register the DynamoDB session handler.[write()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html#method_write)
+collection, you must manually call the garbageCollect() method.[open()](class-aws-dynamodb-sessionhandler-method-open.md)
+: bool Open a session for writing. Triggered by session\_start().[read()](class-aws-dynamodb-sessionhandler-method-read.md)
+: string Read a session stored in DynamoDB.[register()](class-aws-dynamodb-sessionhandler-method-register.md)
+: bool Register the DynamoDB session handler.[write()](class-aws-dynamodb-sessionhandler-method-write.md)
 : bool Write a session to DynamoDB.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html\#methods)
+### Methods  [header link](class-aws-dynamodb-sessionhandler-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-dynamodb-sessionhandler-method-construct.md)
 
 `
     public
@@ -55,7 +55,7 @@ collection, you must manually call the garbageCollect() method.[open()](https://
 $connection
 : [SessionConnectionInterface](class-aws-dynamodb-sessionconnectioninterface.md)
 
-#### close()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html\#method_close)
+#### close()  [header link](class-aws-dynamodb-sessionhandler-method-close.md)
 
 Close a session from writing.
 
@@ -70,7 +70,7 @@ bool
 
 Success
 
-#### destroy()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html\#method_destroy)
+#### destroy()  [header link](class-aws-dynamodb-sessionhandler-method-destroy.md)
 
 Delete a session stored in DynamoDB.
 
@@ -92,7 +92,7 @@ bool
 
 Whether or not the operation succeeded.
 
-#### fromClient()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html\#method_fromClient)
+#### fromClient()  [header link](class-aws-dynamodb-sessionhandler-method-fromclient.md)
 
 Creates a new DynamoDB Session Handler.
 
@@ -132,9 +132,9 @@ Configuration for the Session Handler
 
 ##### Return values
 
-[SessionHandler](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html)
+[SessionHandler](class-aws-dynamodb-sessionhandler.md)
 
-#### garbageCollect()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html\#method_garbageCollect)
+#### garbageCollect()  [header link](class-aws-dynamodb-sessionhandler-method-garbagecollect.md)
 
 Triggers garbage collection on expired sessions.
 
@@ -142,11 +142,11 @@ Triggers garbage collection on expired sessions.
     public
                     garbageCollect() : mixed`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html\#method_garbageCollect\#tags)
+##### Tags  [header link](class-aws-dynamodb-sessionhandler-method-garbagecollect-tags.md)
 
 codeCoverageIgnore
 
-#### gc()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html\#method_gc)
+#### gc()  [header link](class-aws-dynamodb-sessionhandler-method-gc.md)
 
 Satisfies the session handler interface, but does nothing. To do garbage
 collection, you must manually call the garbageCollect() method.
@@ -162,7 +162,7 @@ $maxLifetime
 
 Ignored.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html\#method_gc\#tags)
+##### Tags  [header link](class-aws-dynamodb-sessionhandler-method-gc-tags.md)
 
 codeCoverageIgnore
 
@@ -173,7 +173,7 @@ bool
 
 Whether or not the operation succeeded.
 
-#### open()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html\#method_open)
+#### open()  [header link](class-aws-dynamodb-sessionhandler-method-open.md)
 
 Open a session for writing. Triggered by session\_start().
 
@@ -200,7 +200,7 @@ bool
 
 Whether or not the operation succeeded.
 
-#### read()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html\#method_read)
+#### read()  [header link](class-aws-dynamodb-sessionhandler-method-read.md)
 
 Read a session stored in DynamoDB.
 
@@ -222,7 +222,7 @@ string
 
 Session data.
 
-#### register()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html\#method_register)
+#### register()  [header link](class-aws-dynamodb-sessionhandler-method-register.md)
 
 Register the DynamoDB session handler.
 
@@ -230,7 +230,7 @@ Register the DynamoDB session handler.
     public
                     register() : bool`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html\#method_register\#tags)
+##### Tags  [header link](class-aws-dynamodb-sessionhandler-method-register-tags.md)
 
 codeCoverageIgnore
 
@@ -241,7 +241,7 @@ bool
 
 Whether or not the handler was registered.
 
-#### write()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html\#method_write)
+#### write()  [header link](class-aws-dynamodb-sessionhandler-method-write.md)
 
 Write a session to DynamoDB.
 
@@ -275,17 +275,17 @@ Whether or not the operation succeeded.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html#toc-methods)
+  - [Methods](class-aws-dynamodb-sessionhandler-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html#method___construct)
-  - [close()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html#method_close)
-  - [destroy()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html#method_destroy)
-  - [fromClient()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html#method_fromClient)
-  - [garbageCollect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html#method_garbageCollect)
-  - [gc()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html#method_gc)
-  - [open()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html#method_open)
-  - [read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html#method_read)
-  - [register()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html#method_register)
-  - [write()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html#method_write)
+  - [\_\_construct()](class-aws-dynamodb-sessionhandler-method-construct.md)
+  - [close()](class-aws-dynamodb-sessionhandler-method-close.md)
+  - [destroy()](class-aws-dynamodb-sessionhandler-method-destroy.md)
+  - [fromClient()](class-aws-dynamodb-sessionhandler-method-fromclient.md)
+  - [garbageCollect()](class-aws-dynamodb-sessionhandler-method-garbagecollect.md)
+  - [gc()](class-aws-dynamodb-sessionhandler-method-gc.md)
+  - [open()](class-aws-dynamodb-sessionhandler-method-open.md)
+  - [read()](class-aws-dynamodb-sessionhandler-method-read.md)
+  - [register()](class-aws-dynamodb-sessionhandler-method-register.md)
+  - [write()](class-aws-dynamodb-sessionhandler-method-write.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html#top)
+[Back To Top](class-aws-dynamodb-sessionhandler-top.md)

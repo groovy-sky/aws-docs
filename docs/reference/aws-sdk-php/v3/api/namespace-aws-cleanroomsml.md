@@ -4,15 +4,15 @@ Menu
 
 ## CleanRoomsML
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cleanroomsml.html\#toc)
+### Table of Contents  [header link](namespace-aws-cleanroomsml-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cleanroomsml.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-cleanroomsml-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cleanroomsml.exception.html)
+[Exception](namespace-aws-cleanroomsml-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cleanroomsml.html\#toc-classes)
+#### Classes  [header link](namespace-aws-cleanroomsml-toc-classes.md)
 
-[CleanRoomsMLClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CleanRoomsML.CleanRoomsMLClient.html)This client is used to interact with the **cleanrooms-ml** service.
+[CleanRoomsMLClient](class-aws-cleanroomsml-cleanroomsmlclient.md)This client is used to interact with the **cleanrooms-ml** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cleanroomsml.html#toc-classes)
+  - [Classes](namespace-aws-cleanroomsml-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cleanroomsml.html#top)
+[Back To Top](namespace-aws-cleanroomsml-top.md)

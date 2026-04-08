@@ -71,7 +71,7 @@ The following data is returned in JSON format by the service.
 The list of available extensions. The list includes AWS authored and
 user-created extensions.
 
-Type: Array of [ExtensionSummary](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_ExtensionSummary.html) objects
+Type: Array of [ExtensionSummary](api-extensionsummary.md) objects
 
 **[NextToken](#API_ListExtensions_ResponseSyntax)**
 
@@ -171,27 +171,27 @@ Authorization: AWS4-HMAC-SHA256 Credential=AKIAIOSFODNN7EXAMPLE/20220803/us-west
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appconfig-2019-10-09/ListExtensions)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/appconfig-2019-10-09/listextensions.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appconfig-2019-10-09/ListExtensions)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appconfig-2019-10-09/listextensions.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appconfig-2019-10-09/ListExtensions)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appconfig-2019-10-09/listextensions.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appconfig-2019-10-09/ListExtensions)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/appconfig-2019-10-09/listextensions.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appconfig-2019-10-09/ListExtensions)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appconfig-2019-10-09/listextensions.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appconfig-2019-10-09/ListExtensions)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appconfig-2019-10-09/listextensions.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appconfig-2019-10-09/ListExtensions)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appconfig-2019-10-09/listextensions.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appconfig-2019-10-09/ListExtensions)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appconfig-2019-10-09/listextensions.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/appconfig-2019-10-09/ListExtensions)
+- [AWS SDK for Python](../../../../services/goto/boto3/appconfig-2019-10-09/listextensions.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appconfig-2019-10-09/ListExtensions)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appconfig-2019-10-09/listextensions.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ListExtensionAssociations
 

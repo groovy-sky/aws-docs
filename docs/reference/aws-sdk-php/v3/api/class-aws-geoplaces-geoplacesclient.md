@@ -17,19 +17,19 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2020-11-19**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-geo-places-2020-11-19.html)
+- [**2020-11-19**](api-geo-places-2020-11-19.md)
 
-  - [Autocomplete](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-geo-places-2020-11-19.html#autocomplete)
-  - [Geocode](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-geo-places-2020-11-19.html#geocode)
-  - [GetPlace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-geo-places-2020-11-19.html#getplace)
-  - [ReverseGeocode](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-geo-places-2020-11-19.html#reversegeocode)
-  - [SearchNearby](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-geo-places-2020-11-19.html#searchnearby)
-  - [SearchText](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-geo-places-2020-11-19.html#searchtext)
-  - [Suggest](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-geo-places-2020-11-19.html#suggest)
+  - [Autocomplete](api-geo-places-2020-11-19-autocomplete.md)
+  - [Geocode](api-geo-places-2020-11-19-geocode.md)
+  - [GetPlace](api-geo-places-2020-11-19-getplace.md)
+  - [ReverseGeocode](api-geo-places-2020-11-19-reversegeocode.md)
+  - [SearchNearby](api-geo-places-2020-11-19-searchnearby.md)
+  - [SearchText](api-geo-places-2020-11-19-searchtext.md)
+  - [Suggest](api-geo-places-2020-11-19-suggest.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GeoPlaces.GeoPlacesClient.html\#toc)
+### Table of Contents  [header link](class-aws-geoplaces-geoplacesclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GeoPlaces.GeoPlacesClient.html\#toc-methods)
+#### Methods  [header link](class-aws-geoplaces-geoplacesclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -60,7 +60,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GeoPlaces.GeoPlacesClient.html\#methods)
+### Methods  [header link](class-aws-geoplaces-geoplacesclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -527,7 +527,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GeoPlaces.GeoPlacesClient.html#toc-methods)
+  - [Methods](class-aws-geoplaces-geoplacesclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -554,4 +554,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GeoPlaces.GeoPlacesClient.html#top)
+[Back To Top](class-aws-geoplaces-geoplacesclient-top.md)

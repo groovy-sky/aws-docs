@@ -17,35 +17,35 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-08-22**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html)
+- [**2017-08-22**](api-acm-pca-2017-08-22.md)
 
-  - [CreateCertificateAuthority](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#createcertificateauthority)
-  - [CreateCertificateAuthorityAuditReport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#createcertificateauthorityauditreport)
-  - [CreatePermission](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#createpermission)
-  - [DeleteCertificateAuthority](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#deletecertificateauthority)
-  - [DeletePermission](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#deletepermission)
-  - [DeletePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#deletepolicy)
-  - [DescribeCertificateAuthority](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#describecertificateauthority)
-  - [DescribeCertificateAuthorityAuditReport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#describecertificateauthorityauditreport)
-  - [GetCertificate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#getcertificate)
-  - [GetCertificateAuthorityCertificate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#getcertificateauthoritycertificate)
-  - [GetCertificateAuthorityCsr](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#getcertificateauthoritycsr)
-  - [GetPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#getpolicy)
-  - [ImportCertificateAuthorityCertificate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#importcertificateauthoritycertificate)
-  - [IssueCertificate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#issuecertificate)
-  - [ListCertificateAuthorities](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#listcertificateauthorities)
-  - [ListPermissions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#listpermissions)
-  - [ListTags](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#listtags)
-  - [PutPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#putpolicy)
-  - [RestoreCertificateAuthority](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#restorecertificateauthority)
-  - [RevokeCertificate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#revokecertificate)
-  - [TagCertificateAuthority](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#tagcertificateauthority)
-  - [UntagCertificateAuthority](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#untagcertificateauthority)
-  - [UpdateCertificateAuthority](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-pca-2017-08-22.html#updatecertificateauthority)
+  - [CreateCertificateAuthority](api-acm-pca-2017-08-22-createcertificateauthority.md)
+  - [CreateCertificateAuthorityAuditReport](api-acm-pca-2017-08-22-createcertificateauthorityauditreport.md)
+  - [CreatePermission](api-acm-pca-2017-08-22-createpermission.md)
+  - [DeleteCertificateAuthority](api-acm-pca-2017-08-22-deletecertificateauthority.md)
+  - [DeletePermission](api-acm-pca-2017-08-22-deletepermission.md)
+  - [DeletePolicy](api-acm-pca-2017-08-22-deletepolicy.md)
+  - [DescribeCertificateAuthority](api-acm-pca-2017-08-22-describecertificateauthority.md)
+  - [DescribeCertificateAuthorityAuditReport](api-acm-pca-2017-08-22-describecertificateauthorityauditreport.md)
+  - [GetCertificate](api-acm-pca-2017-08-22-getcertificate.md)
+  - [GetCertificateAuthorityCertificate](api-acm-pca-2017-08-22-getcertificateauthoritycertificate.md)
+  - [GetCertificateAuthorityCsr](api-acm-pca-2017-08-22-getcertificateauthoritycsr.md)
+  - [GetPolicy](api-acm-pca-2017-08-22-getpolicy.md)
+  - [ImportCertificateAuthorityCertificate](api-acm-pca-2017-08-22-importcertificateauthoritycertificate.md)
+  - [IssueCertificate](api-acm-pca-2017-08-22-issuecertificate.md)
+  - [ListCertificateAuthorities](api-acm-pca-2017-08-22-listcertificateauthorities.md)
+  - [ListPermissions](api-acm-pca-2017-08-22-listpermissions.md)
+  - [ListTags](api-acm-pca-2017-08-22-listtags.md)
+  - [PutPolicy](api-acm-pca-2017-08-22-putpolicy.md)
+  - [RestoreCertificateAuthority](api-acm-pca-2017-08-22-restorecertificateauthority.md)
+  - [RevokeCertificate](api-acm-pca-2017-08-22-revokecertificate.md)
+  - [TagCertificateAuthority](api-acm-pca-2017-08-22-tagcertificateauthority.md)
+  - [UntagCertificateAuthority](api-acm-pca-2017-08-22-untagcertificateauthority.md)
+  - [UpdateCertificateAuthority](api-acm-pca-2017-08-22-updatecertificateauthority.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ACMPCA.ACMPCAClient.html\#toc)
+### Table of Contents  [header link](class-aws-acmpca-acmpcaclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ACMPCA.ACMPCAClient.html\#toc-methods)
+#### Methods  [header link](class-aws-acmpca-acmpcaclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -76,7 +76,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ACMPCA.ACMPCAClient.html\#methods)
+### Methods  [header link](class-aws-acmpca-acmpcaclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -543,7 +543,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ACMPCA.ACMPCAClient.html#toc-methods)
+  - [Methods](class-aws-acmpca-acmpcaclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -570,4 +570,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ACMPCA.ACMPCAClient.html#top)
+[Back To Top](class-aws-acmpca-acmpcaclient-top.md)

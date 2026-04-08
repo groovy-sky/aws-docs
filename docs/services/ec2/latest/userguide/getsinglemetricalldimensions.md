@@ -34,7 +34,7 @@ statistics that include the data point.
     icon. To change the time range, select one of the predefined values or choose
     **custom**.
 
-![Metrics aggregated across your EC2 instances](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/metric_aggregated_instances.png)
+![Metrics aggregated across your EC2 instances](../../../images/awsec2/latest/userguide/images/metric-aggregated-instances-png.md)
 
 5. To change the statistic or the period for the metric, choose the **Graphed**
 **metrics** tab. Choose the column heading or an individual value, and then

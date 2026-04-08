@@ -104,7 +104,7 @@ this field blank.
 If you set the IP address to any value other than the current IP address,
 you will lose connectivity to the instance.
 
-![IP Addresses](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/windows-ip-static.png)
+![IP Addresses](../../../images/awsec2/latest/userguide/images/windows-ip-static-png.md)
 
 You will lose RDP connectivity to the Windows instance for a few seconds while the
 instance converts from using DHCP to static addressing. The instance retains the same IP
@@ -149,11 +149,11 @@ prepare a second private IP address.
      private IP address in [Step 1: Configure static IP addressing in your instance](#step1), and then
      choose **Add**.
 
-    ![TCP/IP Address dialog box](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/windows-ip-add.png)
+    ![TCP/IP Address dialog box](../../../images/awsec2/latest/userguide/images/windows-ip-add-png.md)
 
 11. Verify the IP address settings and choose **OK**.
 
-    ![IP Settings tab](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/windows-ip-advanced-tcpip.png)
+    ![IP Settings tab](../../../images/awsec2/latest/userguide/images/windows-ip-advanced-tcpip-png.md)
 
 12. Choose **OK**, **Close**.
 
@@ -207,7 +207,7 @@ private IP address.
 **address**, select the secondary private IP address. (By default, each website
     accepts HTTP requests from all IP addresses.)
 
-![IP Addresses](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/windows-ip-iis-site-binding.png)
+![IP Addresses](../../../images/awsec2/latest/userguide/images/windows-ip-iis-site-binding-png.md)
 
 7. Choose **OK**, **Close**.
 

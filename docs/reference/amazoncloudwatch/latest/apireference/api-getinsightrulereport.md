@@ -169,7 +169,7 @@ An array of the unique contributors found by this rule in this time period. If t
 rule contains multiple keys, each combination of values for the keys counts as a unique
 contributor.
 
-Type: Array of [InsightRuleContributor](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_InsightRuleContributor.html) objects
+Type: Array of [InsightRuleContributor](api-insightrulecontributor.md) objects
 
 **KeyLabels**
 
@@ -184,7 +184,7 @@ Type: Array of strings
 A time series of metric data points that matches the time period in the rule
 request.
 
-Type: Array of [InsightRuleMetricDatapoint](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_InsightRuleMetricDatapoint.html) objects
+Type: Array of [InsightRuleMetricDatapoint](api-insightrulemetricdatapoint.md) objects
 
 ## Errors
 
@@ -216,27 +216,27 @@ HTTP Status Code: 404
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/monitoring-2010-08-01/GetInsightRuleReport)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/monitoring-2010-08-01/getinsightrulereport.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/monitoring-2010-08-01/GetInsightRuleReport)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/monitoring-2010-08-01/getinsightrulereport.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/GetInsightRuleReport)
+- [AWS SDK for C++](../../../goto/sdkforcpp/monitoring-2010-08-01/getinsightrulereport.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/monitoring-2010-08-01/GetInsightRuleReport)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/monitoring-2010-08-01/getinsightrulereport.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/GetInsightRuleReport)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/monitoring-2010-08-01/getinsightrulereport.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/monitoring-2010-08-01/GetInsightRuleReport)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/monitoring-2010-08-01/getinsightrulereport.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/monitoring-2010-08-01/GetInsightRuleReport)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/monitoring-2010-08-01/getinsightrulereport.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/monitoring-2010-08-01/GetInsightRuleReport)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/monitoring-2010-08-01/getinsightrulereport.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/GetInsightRuleReport)
+- [AWS SDK for Python](../../../../services/goto/boto3/monitoring-2010-08-01/getinsightrulereport.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/monitoring-2010-08-01/GetInsightRuleReport)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/monitoring-2010-08-01/getinsightrulereport.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GetDashboard
 

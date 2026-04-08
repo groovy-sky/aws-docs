@@ -4,15 +4,15 @@ Menu
 
 ## finspace
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.finspace.html\#toc)
+### Table of Contents  [header link](namespace-aws-finspace-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.finspace.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-finspace-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.finspace.exception.html)
+[Exception](namespace-aws-finspace-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.finspace.html\#toc-classes)
+#### Classes  [header link](namespace-aws-finspace-toc-classes.md)
 
-[finspaceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.finspace.finspaceClient.html)This client is used to interact with the **FinSpace User Environment Management service** service.
+[finspaceClient](class-aws-finspace-finspaceclient.md)This client is used to interact with the **FinSpace User Environment Management service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.finspace.html#toc-classes)
+  - [Classes](namespace-aws-finspace-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.finspace.html#top)
+[Back To Top](namespace-aws-finspace-top.md)

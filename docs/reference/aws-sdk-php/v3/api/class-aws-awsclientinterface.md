@@ -1,35 +1,35 @@
 Menu
 
-- [Aws](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.html)
+- [Aws](namespace-aws.md)
 
-## AwsClientInterface     in    - [Aws](https://docs.aws.amazon.com/aws-sdk-php/v3/api/package-Aws.html)
+## AwsClientInterface     in    - [Aws](package-aws.md)
 
 Represents an AWS client.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#toc)
+### Table of Contents  [header link](class-aws-awsclientinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-awsclientinterface-toc-methods.md)
 
-[\_\_call()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method___call)
-: [ResultInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html)Creates and executes a command for an operation by name.[execute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_execute)
-: [ResultInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html)Execute a single command.[executeAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_executeAsync)
-: [PromiseInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html)Execute a command asynchronously.[getApi()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_getApi)
-: [Service](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html)Get the service description associated with the client.[getCommand()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_getCommand)
-: [CommandInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html)Create a command for an operation name.[getConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_getConfig)
-: mixed\|null Get a client configuration value.[getCredentials()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_getCredentials)
-: [PromiseInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html)Returns a promise that is fulfilled with an
-{@see \\Aws\\Credentials\\CredentialsInterface} object.[getEndpoint()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_getEndpoint)
-: [UriInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html)Gets the default endpoint, or base URL, used by the client.[getHandlerList()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_getHandlerList)
-: [HandlerList](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html)Get the handler list used to transfer commands.[getIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_getIterator)
-: IteratorGet a resource iterator for the specified operation.[getPaginator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_getPaginator)
-: [ResultPaginator](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html)Get a result paginator for the specified operation.[getRegion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_getRegion)
-: string Get the region to which the client is configured to send requests.[getWaiter()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_getWaiter)
-: [Waiter](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Waiter.html)Get a waiter that waits until a resource is in a particular state.[waitUntil()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_waitUntil)
+[\_\_call()](class-aws-awsclientinterface-method-call.md)
+: [ResultInterface](class-aws-resultinterface.md)Creates and executes a command for an operation by name.[execute()](class-aws-awsclientinterface-method-execute.md)
+: [ResultInterface](class-aws-resultinterface.md)Execute a single command.[executeAsync()](class-aws-awsclientinterface-method-executeasync.md)
+: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Execute a command asynchronously.[getApi()](class-aws-awsclientinterface-method-getapi.md)
+: [Service](class-aws-api-service.md)Get the service description associated with the client.[getCommand()](class-aws-awsclientinterface-method-getcommand.md)
+: [CommandInterface](class-aws-commandinterface.md)Create a command for an operation name.[getConfig()](class-aws-awsclientinterface-method-getconfig.md)
+: mixed\|null Get a client configuration value.[getCredentials()](class-aws-awsclientinterface-method-getcredentials.md)
+: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Returns a promise that is fulfilled with an
+{@see \\Aws\\Credentials\\CredentialsInterface} object.[getEndpoint()](class-aws-awsclientinterface-method-getendpoint.md)
+: [UriInterface](class-psr-http-message-uriinterface.md)Gets the default endpoint, or base URL, used by the client.[getHandlerList()](class-aws-awsclientinterface-method-gethandlerlist.md)
+: [HandlerList](class-aws-handlerlist.md)Get the handler list used to transfer commands.[getIterator()](class-aws-awsclientinterface-method-getiterator.md)
+: IteratorGet a resource iterator for the specified operation.[getPaginator()](class-aws-awsclientinterface-method-getpaginator.md)
+: [ResultPaginator](class-aws-resultpaginator.md)Get a result paginator for the specified operation.[getRegion()](class-aws-awsclientinterface-method-getregion.md)
+: string Get the region to which the client is configured to send requests.[getWaiter()](class-aws-awsclientinterface-method-getwaiter.md)
+: [Waiter](class-aws-waiter.md)Get a waiter that waits until a resource is in a particular state.[waitUntil()](class-aws-awsclientinterface-method-waituntil.md)
 : void Wait until a resource is in a particular state.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#methods)
+### Methods  [header link](class-aws-awsclientinterface-methods.md)
 
-#### \_\_call()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#method___call)
+#### \_\_call()  [header link](class-aws-awsclientinterface-method-call.md)
 
 Creates and executes a command for an operation by name.
 
@@ -52,15 +52,15 @@ $arguments
 
 Arguments to pass to the getCommand method.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#method___call\#tags)
+##### Tags  [header link](class-aws-awsclientinterface-method-call-tags.md)
 
 throwsException
 
 ##### Return values
 
-[ResultInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html)
+[ResultInterface](class-aws-resultinterface.md)
 
-#### execute()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#method_execute)
+#### execute()  [header link](class-aws-awsclientinterface-method-execute.md)
 
 Execute a single command.
 
@@ -71,19 +71,19 @@ Execute a single command.
 ##### Parameters
 
 $command
-: [CommandInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html)
+: [CommandInterface](class-aws-commandinterface.md)
 
 Command to execute
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#method_execute\#tags)
+##### Tags  [header link](class-aws-awsclientinterface-method-execute-tags.md)
 
 throwsException
 
 ##### Return values
 
-[ResultInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html)
+[ResultInterface](class-aws-resultinterface.md)
 
-#### executeAsync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#method_executeAsync)
+#### executeAsync()  [header link](class-aws-awsclientinterface-method-executeasync.md)
 
 Execute a command asynchronously.
 
@@ -94,15 +94,15 @@ Execute a command asynchronously.
 ##### Parameters
 
 $command
-: [CommandInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html)
+: [CommandInterface](class-aws-commandinterface.md)
 
 Command to execute
 
 ##### Return values
 
-[PromiseInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html)
+[PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### getApi()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#method_getApi)
+#### getApi()  [header link](class-aws-awsclientinterface-method-getapi.md)
 
 Get the service description associated with the client.
 
@@ -112,9 +112,9 @@ Get the service description associated with the client.
 
 ##### Return values
 
-[Service](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html)
+[Service](class-aws-api-service.md)
 
-#### getCommand()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#method_getCommand)
+#### getCommand()  [header link](class-aws-awsclientinterface-method-getcommand.md)
 
 Create a command for an operation name.
 
@@ -143,7 +143,7 @@ $args
 
 Arguments to pass to the command
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#method_getCommand\#tags)
+##### Tags  [header link](class-aws-awsclientinterface-method-getcommand-tags.md)
 
 throwsInvalidArgumentException
 
@@ -151,9 +151,9 @@ if no command can be found by name
 
 ##### Return values
 
-[CommandInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html)
+[CommandInterface](class-aws-commandinterface.md)
 
-#### getConfig()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#method_getConfig)
+#### getConfig()  [header link](class-aws-awsclientinterface-method-getconfig.md)
 
 Get a client configuration value.
 
@@ -174,7 +174,7 @@ all options.
 
 mixed\|null
 
-#### getCredentials()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#method_getCredentials)
+#### getCredentials()  [header link](class-aws-awsclientinterface-method-getcredentials.md)
 
 Returns a promise that is fulfilled with an
 {@see \\Aws\\Credentials\\CredentialsInterface} object.
@@ -188,9 +188,9 @@ on the returned promise.
 
 ##### Return values
 
-[PromiseInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html)
+[PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### getEndpoint()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#method_getEndpoint)
+#### getEndpoint()  [header link](class-aws-awsclientinterface-method-getendpoint.md)
 
 Gets the default endpoint, or base URL, used by the client.
 
@@ -200,9 +200,9 @@ Gets the default endpoint, or base URL, used by the client.
 
 ##### Return values
 
-[UriInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html)
+[UriInterface](class-psr-http-message-uriinterface.md)
 
-#### getHandlerList()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#method_getHandlerList)
+#### getHandlerList()  [header link](class-aws-awsclientinterface-method-gethandlerlist.md)
 
 Get the handler list used to transfer commands.
 
@@ -215,9 +215,9 @@ handler used to send HTTP requests.
 
 ##### Return values
 
-[HandlerList](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html)
+[HandlerList](class-aws-handlerlist.md)
 
-#### getIterator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#method_getIterator)
+#### getIterator()  [header link](class-aws-awsclientinterface-method-getiterator.md)
 
 Get a resource iterator for the specified operation.
 
@@ -238,7 +238,7 @@ $args
 
 Command arguments to use with each command.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#method_getIterator\#tags)
+##### Tags  [header link](class-aws-awsclientinterface-method-getiterator-tags.md)
 
 throwsUnexpectedValueException
 
@@ -248,7 +248,7 @@ if the iterator config is invalid.
 
 Iterator
 
-#### getPaginator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#method_getPaginator)
+#### getPaginator()  [header link](class-aws-awsclientinterface-method-getpaginator.md)
 
 Get a result paginator for the specified operation.
 
@@ -269,7 +269,7 @@ $args
 
 Command args to be used with each command
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#method_getPaginator\#tags)
+##### Tags  [header link](class-aws-awsclientinterface-method-getpaginator-tags.md)
 
 throwsUnexpectedValueException
 
@@ -277,9 +277,9 @@ if the iterator config is invalid.
 
 ##### Return values
 
-[ResultPaginator](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html)
+[ResultPaginator](class-aws-resultpaginator.md)
 
-#### getRegion()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#method_getRegion)
+#### getRegion()  [header link](class-aws-awsclientinterface-method-getregion.md)
 
 Get the region to which the client is configured to send requests.
 
@@ -291,7 +291,7 @@ Get the region to which the client is configured to send requests.
 
 string
 
-#### getWaiter()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#method_getWaiter)
+#### getWaiter()  [header link](class-aws-awsclientinterface-method-getwaiter.md)
 
 Get a waiter that waits until a resource is in a particular state.
 
@@ -321,7 +321,7 @@ by the waiter. Waiter configuration options
 can be provided in an associative array in
 the @waiter key.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#method_getWaiter\#tags)
+##### Tags  [header link](class-aws-awsclientinterface-method-getwaiter-tags.md)
 
 throwsUnexpectedValueException
 
@@ -329,9 +329,9 @@ if the waiter is invalid.
 
 ##### Return values
 
-[Waiter](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Waiter.html)
+[Waiter](class-aws-waiter.md)
 
-#### waitUntil()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#method_waitUntil)
+#### waitUntil()  [header link](class-aws-awsclientinterface-method-waituntil.md)
 
 Wait until a resource is in a particular state.
 
@@ -356,7 +356,7 @@ by the waiter. Waiter configuration options
 can be provided in an associative array in
 the @waiter key.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html\#method_waitUntil\#tags)
+##### Tags  [header link](class-aws-awsclientinterface-method-waituntil-tags.md)
 
 throwsUnexpectedValueException
 
@@ -369,22 +369,22 @@ if the waiter is invalid.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#toc-methods)
+  - [Constants](class-aws-awsclientinterface-toc-constants.md)
+  - [Methods](class-aws-awsclientinterface-toc-methods.md)
 - Methods
-  - [\_\_call()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method___call)
-  - [execute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_execute)
-  - [executeAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_executeAsync)
-  - [getApi()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_getApi)
-  - [getCommand()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_getCommand)
-  - [getConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_getConfig)
-  - [getCredentials()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_getCredentials)
-  - [getEndpoint()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_getEndpoint)
-  - [getHandlerList()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_getHandlerList)
-  - [getIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_getIterator)
-  - [getPaginator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_getPaginator)
-  - [getRegion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_getRegion)
-  - [getWaiter()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_getWaiter)
-  - [waitUntil()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#method_waitUntil)
+  - [\_\_call()](class-aws-awsclientinterface-method-call.md)
+  - [execute()](class-aws-awsclientinterface-method-execute.md)
+  - [executeAsync()](class-aws-awsclientinterface-method-executeasync.md)
+  - [getApi()](class-aws-awsclientinterface-method-getapi.md)
+  - [getCommand()](class-aws-awsclientinterface-method-getcommand.md)
+  - [getConfig()](class-aws-awsclientinterface-method-getconfig.md)
+  - [getCredentials()](class-aws-awsclientinterface-method-getcredentials.md)
+  - [getEndpoint()](class-aws-awsclientinterface-method-getendpoint.md)
+  - [getHandlerList()](class-aws-awsclientinterface-method-gethandlerlist.md)
+  - [getIterator()](class-aws-awsclientinterface-method-getiterator.md)
+  - [getPaginator()](class-aws-awsclientinterface-method-getpaginator.md)
+  - [getRegion()](class-aws-awsclientinterface-method-getregion.md)
+  - [getWaiter()](class-aws-awsclientinterface-method-getwaiter.md)
+  - [waitUntil()](class-aws-awsclientinterface-method-waituntil.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#top)
+[Back To Top](class-aws-awsclientinterface-top.md)

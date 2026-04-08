@@ -99,7 +99,7 @@ procedure.
 
 3. Find the **EC2 Free Tier** box (at top right).
 
-![The EC2 Free Tier box in the EC2 Dashboard.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ec2-free-tier-widget.png)
+![The EC2 Free Tier box in the EC2 Dashboard.](../../../images/awsec2/latest/userguide/images/ec2-free-tier-widget-png.md)
 
 4. In the **EC2 Free Tier** box, check your Free Tier usage, as
     follows:

@@ -10,7 +10,7 @@ data when Amazon S3 is used as the destination.
 The aggregation settings that you can use to customize the output format of your flow
 data.
 
-Type: [AggregationConfig](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_AggregationConfig.html) object
+Type: [AggregationConfig](api-aggregationconfig.md) object
 
 Required: No
 
@@ -28,7 +28,7 @@ Required: No
 
 Determines the prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. You can name folders according to the flow frequency and date.
 
-Type: [PrefixConfig](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_PrefixConfig.html) object
+Type: [PrefixConfig](api-prefixconfig.md) object
 
 Required: No
 
@@ -52,13 +52,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/S3OutputFormatConfig)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/s3outputformatconfig.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/S3OutputFormatConfig)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/s3outputformatconfig.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/S3OutputFormatConfig)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/s3outputformatconfig.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 S3Metadata
 

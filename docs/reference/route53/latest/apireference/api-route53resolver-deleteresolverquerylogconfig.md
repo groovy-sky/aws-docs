@@ -5,7 +5,7 @@ associated with the configuration. This also applies if the query logging config
 the other accounts have associated VPCs with the shared configuration.
 
 Before you can delete a query logging configuration, you must first disassociate all VPCs from the configuration. See
-[DisassociateResolverQueryLogConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_DisassociateResolverQueryLogConfig.html).
+[DisassociateResolverQueryLogConfig](api-route53resolver-disassociateresolverquerylogconfig.md).
 
 If you used Resource Access Manager (RAM) to share a query logging configuration with other accounts, you must stop sharing
 the configuration before you can delete a configuration. The accounts that you shared the configuration with can first disassociate VPCs
@@ -67,7 +67,7 @@ The following data is returned in JSON format by the service.
 
 Information about the query logging configuration that you deleted, including the status of the request.
 
-Type: [ResolverQueryLogConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ResolverQueryLogConfig.html) object
+Type: [ResolverQueryLogConfig](api-route53resolver-resolverquerylogconfig.md) object
 
 ## Errors
 
@@ -179,27 +179,27 @@ Connection: keep-alive
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/route53resolver-2018-04-01/DeleteResolverQueryLogConfig)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53resolver-2018-04-01/deleteresolverquerylogconfig.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/route53resolver-2018-04-01/DeleteResolverQueryLogConfig)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53resolver-2018-04-01/deleteresolverquerylogconfig.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53resolver-2018-04-01/DeleteResolverQueryLogConfig)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53resolver-2018-04-01/deleteresolverquerylogconfig.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/route53resolver-2018-04-01/DeleteResolverQueryLogConfig)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53resolver-2018-04-01/deleteresolverquerylogconfig.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53resolver-2018-04-01/DeleteResolverQueryLogConfig)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53resolver-2018-04-01/deleteresolverquerylogconfig.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/route53resolver-2018-04-01/DeleteResolverQueryLogConfig)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53resolver-2018-04-01/deleteresolverquerylogconfig.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/route53resolver-2018-04-01/DeleteResolverQueryLogConfig)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53resolver-2018-04-01/deleteresolverquerylogconfig.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/route53resolver-2018-04-01/DeleteResolverQueryLogConfig)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53resolver-2018-04-01/deleteresolverquerylogconfig.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/route53resolver-2018-04-01/DeleteResolverQueryLogConfig)
+- [AWS SDK for Python](../../../../services/goto/boto3/route53resolver-2018-04-01/deleteresolverquerylogconfig.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53resolver-2018-04-01/DeleteResolverQueryLogConfig)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53resolver-2018-04-01/deleteresolverquerylogconfig.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DeleteResolverEndpoint
 

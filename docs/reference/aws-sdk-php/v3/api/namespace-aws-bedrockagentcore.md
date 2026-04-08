@@ -4,15 +4,15 @@ Menu
 
 ## BedrockAgentCore
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockagentcore.html\#toc)
+### Table of Contents  [header link](namespace-aws-bedrockagentcore-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockagentcore.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-bedrockagentcore-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockagentcore.exception.html)
+[Exception](namespace-aws-bedrockagentcore-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockagentcore.html\#toc-classes)
+#### Classes  [header link](namespace-aws-bedrockagentcore-toc-classes.md)
 
-[BedrockAgentCoreClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockAgentCore.BedrockAgentCoreClient.html)This client is used to interact with the **Amazon Bedrock AgentCore Data Plane Fronting Layer** service.
+[BedrockAgentCoreClient](class-aws-bedrockagentcore-bedrockagentcoreclient.md)This client is used to interact with the **Amazon Bedrock AgentCore Data Plane Fronting Layer** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockagentcore.html#toc-classes)
+  - [Classes](namespace-aws-bedrockagentcore-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockagentcore.html#top)
+[Back To Top](namespace-aws-bedrockagentcore-top.md)

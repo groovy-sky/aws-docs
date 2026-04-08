@@ -4,15 +4,15 @@ Menu
 
 ## ServiceCatalog
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.servicecatalog.html\#toc)
+### Table of Contents  [header link](namespace-aws-servicecatalog-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.servicecatalog.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-servicecatalog-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.servicecatalog.exception.html)
+[Exception](namespace-aws-servicecatalog-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.servicecatalog.html\#toc-classes)
+#### Classes  [header link](namespace-aws-servicecatalog-toc-classes.md)
 
-[ServiceCatalogClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServiceCatalog.ServiceCatalogClient.html)This client is used to interact with the **AWS Service Catalog** service.
+[ServiceCatalogClient](class-aws-servicecatalog-servicecatalogclient.md)This client is used to interact with the **AWS Service Catalog** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.servicecatalog.html#toc-classes)
+  - [Classes](namespace-aws-servicecatalog-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.servicecatalog.html#top)
+[Back To Top](namespace-aws-servicecatalog-top.md)

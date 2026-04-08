@@ -4,15 +4,15 @@ Menu
 
 ## AppConfigData
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appconfigdata.html\#toc)
+### Table of Contents  [header link](namespace-aws-appconfigdata-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appconfigdata.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-appconfigdata-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appconfigdata.exception.html)
+[Exception](namespace-aws-appconfigdata-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appconfigdata.html\#toc-classes)
+#### Classes  [header link](namespace-aws-appconfigdata-toc-classes.md)
 
-[AppConfigDataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppConfigData.AppConfigDataClient.html)This client is used to interact with the **AWS AppConfig Data** service.
+[AppConfigDataClient](class-aws-appconfigdata-appconfigdataclient.md)This client is used to interact with the **AWS AppConfig Data** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appconfigdata.html#toc-classes)
+  - [Classes](namespace-aws-appconfigdata-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appconfigdata.html#top)
+[Back To Top](namespace-aws-appconfigdata-top.md)

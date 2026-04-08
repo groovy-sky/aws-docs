@@ -17,43 +17,43 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2019-12-02**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html)
+- [**2019-12-02**](api-schemas-2019-12-02.md)
 
-  - [CreateDiscoverer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#creatediscoverer)
-  - [CreateRegistry](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#createregistry)
-  - [CreateSchema](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#createschema)
-  - [DeleteDiscoverer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#deletediscoverer)
-  - [DeleteRegistry](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#deleteregistry)
-  - [DeleteResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#deleteresourcepolicy)
-  - [DeleteSchema](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#deleteschema)
-  - [DeleteSchemaVersion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#deleteschemaversion)
-  - [DescribeCodeBinding](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#describecodebinding)
-  - [DescribeDiscoverer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#describediscoverer)
-  - [DescribeRegistry](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#describeregistry)
-  - [DescribeSchema](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#describeschema)
-  - [ExportSchema](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#exportschema)
-  - [GetCodeBindingSource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#getcodebindingsource)
-  - [GetDiscoveredSchema](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#getdiscoveredschema)
-  - [GetResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#getresourcepolicy)
-  - [ListDiscoverers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#listdiscoverers)
-  - [ListRegistries](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#listregistries)
-  - [ListSchemaVersions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#listschemaversions)
-  - [ListSchemas](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#listschemas)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#listtagsforresource)
-  - [PutCodeBinding](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#putcodebinding)
-  - [PutResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#putresourcepolicy)
-  - [SearchSchemas](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#searchschemas)
-  - [StartDiscoverer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#startdiscoverer)
-  - [StopDiscoverer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#stopdiscoverer)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#untagresource)
-  - [UpdateDiscoverer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#updatediscoverer)
-  - [UpdateRegistry](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#updateregistry)
-  - [UpdateSchema](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-schemas-2019-12-02.html#updateschema)
+  - [CreateDiscoverer](api-schemas-2019-12-02-creatediscoverer.md)
+  - [CreateRegistry](api-schemas-2019-12-02-createregistry.md)
+  - [CreateSchema](api-schemas-2019-12-02-createschema.md)
+  - [DeleteDiscoverer](api-schemas-2019-12-02-deletediscoverer.md)
+  - [DeleteRegistry](api-schemas-2019-12-02-deleteregistry.md)
+  - [DeleteResourcePolicy](api-schemas-2019-12-02-deleteresourcepolicy.md)
+  - [DeleteSchema](api-schemas-2019-12-02-deleteschema.md)
+  - [DeleteSchemaVersion](api-schemas-2019-12-02-deleteschemaversion.md)
+  - [DescribeCodeBinding](api-schemas-2019-12-02-describecodebinding.md)
+  - [DescribeDiscoverer](api-schemas-2019-12-02-describediscoverer.md)
+  - [DescribeRegistry](api-schemas-2019-12-02-describeregistry.md)
+  - [DescribeSchema](api-schemas-2019-12-02-describeschema.md)
+  - [ExportSchema](api-schemas-2019-12-02-exportschema.md)
+  - [GetCodeBindingSource](api-schemas-2019-12-02-getcodebindingsource.md)
+  - [GetDiscoveredSchema](api-schemas-2019-12-02-getdiscoveredschema.md)
+  - [GetResourcePolicy](api-schemas-2019-12-02-getresourcepolicy.md)
+  - [ListDiscoverers](api-schemas-2019-12-02-listdiscoverers.md)
+  - [ListRegistries](api-schemas-2019-12-02-listregistries.md)
+  - [ListSchemaVersions](api-schemas-2019-12-02-listschemaversions.md)
+  - [ListSchemas](api-schemas-2019-12-02-listschemas.md)
+  - [ListTagsForResource](api-schemas-2019-12-02-listtagsforresource.md)
+  - [PutCodeBinding](api-schemas-2019-12-02-putcodebinding.md)
+  - [PutResourcePolicy](api-schemas-2019-12-02-putresourcepolicy.md)
+  - [SearchSchemas](api-schemas-2019-12-02-searchschemas.md)
+  - [StartDiscoverer](api-schemas-2019-12-02-startdiscoverer.md)
+  - [StopDiscoverer](api-schemas-2019-12-02-stopdiscoverer.md)
+  - [TagResource](api-schemas-2019-12-02-tagresource.md)
+  - [UntagResource](api-schemas-2019-12-02-untagresource.md)
+  - [UpdateDiscoverer](api-schemas-2019-12-02-updatediscoverer.md)
+  - [UpdateRegistry](api-schemas-2019-12-02-updateregistry.md)
+  - [UpdateSchema](api-schemas-2019-12-02-updateschema.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Schemas.SchemasClient.html\#toc)
+### Table of Contents  [header link](class-aws-schemas-schemasclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Schemas.SchemasClient.html\#toc-methods)
+#### Methods  [header link](class-aws-schemas-schemasclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -84,7 +84,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Schemas.SchemasClient.html\#methods)
+### Methods  [header link](class-aws-schemas-schemasclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -551,7 +551,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Schemas.SchemasClient.html#toc-methods)
+  - [Methods](class-aws-schemas-schemasclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -578,4 +578,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Schemas.SchemasClient.html#top)
+[Back To Top](class-aws-schemas-schemasclient-top.md)

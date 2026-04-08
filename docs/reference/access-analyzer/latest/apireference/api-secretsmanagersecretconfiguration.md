@@ -1,6 +1,6 @@
 # SecretsManagerSecretConfiguration
 
-The configuration for a Secrets Manager secret. For more information, see [CreateSecret](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_CreateSecret.html).
+The configuration for a Secrets Manager secret. For more information, see [CreateSecret](../../../secretsmanager/latest/apireference/api-createsecret.md).
 
 You can propose a configuration for a new secret or an existing secret that you own by
 specifying the secret policy and optional AWS KMS encryption key. If the configuration is for
@@ -12,7 +12,7 @@ configuration is for a new secret and you do not specify the KMS key ID, the acc
 preview uses the AWS managed key `aws/secretsmanager`. If you specify an empty
 string for the KMS key ID, the access preview uses the AWS managed key of the
 AWS account. For more information about secret policy limits, see [Quotas\
-for AWS Secrets Manager.](https://docs.aws.amazon.com/secretsmanager/latest/userguide/reference_limits.html).
+for AWS Secrets Manager.](../../../../services/secretsmanager/latest/userguide/reference-limits.md).
 
 ## Contents
 
@@ -36,13 +36,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/accessanalyzer-2019-11-01/SecretsManagerSecretConfiguration)
+- [AWS SDK for C++](../../../goto/sdkforcpp/accessanalyzer-2019-11-01/secretsmanagersecretconfiguration.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/accessanalyzer-2019-11-01/SecretsManagerSecretConfiguration)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/accessanalyzer-2019-11-01/secretsmanagersecretconfiguration.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/accessanalyzer-2019-11-01/SecretsManagerSecretConfiguration)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/accessanalyzer-2019-11-01/secretsmanagersecretconfiguration.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 S3PublicAccessBlockConfiguration
 

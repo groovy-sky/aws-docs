@@ -17,39 +17,39 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-09-24**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html)
+- [**2018-09-24**](api-managedblockchain-2018-09-24.md)
 
-  - [CreateAccessor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#createaccessor)
-  - [CreateMember](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#createmember)
-  - [CreateNetwork](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#createnetwork)
-  - [CreateNode](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#createnode)
-  - [CreateProposal](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#createproposal)
-  - [DeleteAccessor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#deleteaccessor)
-  - [DeleteMember](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#deletemember)
-  - [DeleteNode](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#deletenode)
-  - [GetAccessor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#getaccessor)
-  - [GetMember](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#getmember)
-  - [GetNetwork](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#getnetwork)
-  - [GetNode](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#getnode)
-  - [GetProposal](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#getproposal)
-  - [ListAccessors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#listaccessors)
-  - [ListInvitations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#listinvitations)
-  - [ListMembers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#listmembers)
-  - [ListNetworks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#listnetworks)
-  - [ListNodes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#listnodes)
-  - [ListProposalVotes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#listproposalvotes)
-  - [ListProposals](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#listproposals)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#listtagsforresource)
-  - [RejectInvitation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#rejectinvitation)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#untagresource)
-  - [UpdateMember](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#updatemember)
-  - [UpdateNode](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#updatenode)
-  - [VoteOnProposal](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-2018-09-24.html#voteonproposal)
+  - [CreateAccessor](api-managedblockchain-2018-09-24-createaccessor.md)
+  - [CreateMember](api-managedblockchain-2018-09-24-createmember.md)
+  - [CreateNetwork](api-managedblockchain-2018-09-24-createnetwork.md)
+  - [CreateNode](api-managedblockchain-2018-09-24-createnode.md)
+  - [CreateProposal](api-managedblockchain-2018-09-24-createproposal.md)
+  - [DeleteAccessor](api-managedblockchain-2018-09-24-deleteaccessor.md)
+  - [DeleteMember](api-managedblockchain-2018-09-24-deletemember.md)
+  - [DeleteNode](api-managedblockchain-2018-09-24-deletenode.md)
+  - [GetAccessor](api-managedblockchain-2018-09-24-getaccessor.md)
+  - [GetMember](api-managedblockchain-2018-09-24-getmember.md)
+  - [GetNetwork](api-managedblockchain-2018-09-24-getnetwork.md)
+  - [GetNode](api-managedblockchain-2018-09-24-getnode.md)
+  - [GetProposal](api-managedblockchain-2018-09-24-getproposal.md)
+  - [ListAccessors](api-managedblockchain-2018-09-24-listaccessors.md)
+  - [ListInvitations](api-managedblockchain-2018-09-24-listinvitations.md)
+  - [ListMembers](api-managedblockchain-2018-09-24-listmembers.md)
+  - [ListNetworks](api-managedblockchain-2018-09-24-listnetworks.md)
+  - [ListNodes](api-managedblockchain-2018-09-24-listnodes.md)
+  - [ListProposalVotes](api-managedblockchain-2018-09-24-listproposalvotes.md)
+  - [ListProposals](api-managedblockchain-2018-09-24-listproposals.md)
+  - [ListTagsForResource](api-managedblockchain-2018-09-24-listtagsforresource.md)
+  - [RejectInvitation](api-managedblockchain-2018-09-24-rejectinvitation.md)
+  - [TagResource](api-managedblockchain-2018-09-24-tagresource.md)
+  - [UntagResource](api-managedblockchain-2018-09-24-untagresource.md)
+  - [UpdateMember](api-managedblockchain-2018-09-24-updatemember.md)
+  - [UpdateNode](api-managedblockchain-2018-09-24-updatenode.md)
+  - [VoteOnProposal](api-managedblockchain-2018-09-24-voteonproposal.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedBlockchain.ManagedBlockchainClient.html\#toc)
+### Table of Contents  [header link](class-aws-managedblockchain-managedblockchainclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedBlockchain.ManagedBlockchainClient.html\#toc-methods)
+#### Methods  [header link](class-aws-managedblockchain-managedblockchainclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -80,7 +80,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedBlockchain.ManagedBlockchainClient.html\#methods)
+### Methods  [header link](class-aws-managedblockchain-managedblockchainclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -547,7 +547,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedBlockchain.ManagedBlockchainClient.html#toc-methods)
+  - [Methods](class-aws-managedblockchain-managedblockchainclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -574,4 +574,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedBlockchain.ManagedBlockchainClient.html#top)
+[Back To Top](class-aws-managedblockchain-managedblockchainclient-top.md)

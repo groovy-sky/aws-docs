@@ -4,15 +4,15 @@ Menu
 
 ## Panorama
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.panorama.html\#toc)
+### Table of Contents  [header link](namespace-aws-panorama-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.panorama.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-panorama-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.panorama.exception.html)
+[Exception](namespace-aws-panorama-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.panorama.html\#toc-classes)
+#### Classes  [header link](namespace-aws-panorama-toc-classes.md)
 
-[PanoramaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Panorama.PanoramaClient.html)This client is used to interact with the **AWS Panorama** service.
+[PanoramaClient](class-aws-panorama-panoramaclient.md)This client is used to interact with the **AWS Panorama** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.panorama.html#toc-classes)
+  - [Classes](namespace-aws-panorama-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.panorama.html#top)
+[Back To Top](namespace-aws-panorama-top.md)

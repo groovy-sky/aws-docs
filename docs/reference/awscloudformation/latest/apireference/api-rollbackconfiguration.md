@@ -19,7 +19,7 @@ The default is 0 minutes.
 If you specify a monitoring period but don't specify any rollback triggers, CloudFormation still
 waits the specified period of time before cleaning up old resources after update operations. You
 can use this monitoring period to perform any manual stack validation desired, and manually
-cancel the stack creation or update (using [CancelUpdateStack](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CancelUpdateStack.html), for example) as necessary.
+cancel the stack creation or update (using [CancelUpdateStack](api-cancelupdatestack.md), for example) as necessary.
 
 If you specify 0 for this parameter, CloudFormation still monitors the specified rollback
 triggers during stack creation and update operations. Then, for update operations, it begins
@@ -54,7 +54,7 @@ parameter.
 If a specified trigger is missing, the entire stack operation fails and is rolled
 back.
 
-Type: Array of [RollbackTrigger](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_RollbackTrigger.html) objects
+Type: Array of [RollbackTrigger](api-rollbacktrigger.md) objects
 
 Array Members: Maximum number of 5 items.
 
@@ -64,13 +64,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/RollbackConfiguration)
+- [AWS SDK for C++](../../../goto/sdkforcpp/cloudformation-2010-05-15/rollbackconfiguration.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/RollbackConfiguration)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudformation-2010-05-15/rollbackconfiguration.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/RollbackConfiguration)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/rollbackconfiguration.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ResourceToImport
 

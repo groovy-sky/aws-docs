@@ -4,15 +4,15 @@ Menu
 
 ## Greengrass
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.greengrass.html\#toc)
+### Table of Contents  [header link](namespace-aws-greengrass-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.greengrass.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-greengrass-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.greengrass.exception.html)
+[Exception](namespace-aws-greengrass-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.greengrass.html\#toc-classes)
+#### Classes  [header link](namespace-aws-greengrass-toc-classes.md)
 
-[GreengrassClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Greengrass.GreengrassClient.html)This client is used to interact with the **AWS Greengrass** service.
+[GreengrassClient](class-aws-greengrass-greengrassclient.md)This client is used to interact with the **AWS Greengrass** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.greengrass.html#toc-classes)
+  - [Classes](namespace-aws-greengrass-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.greengrass.html#top)
+[Back To Top](namespace-aws-greengrass-top.md)

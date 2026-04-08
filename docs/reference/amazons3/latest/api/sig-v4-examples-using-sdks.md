@@ -30,7 +30,7 @@ instructions for downloading the samples and for executing them.
 
 ## Signature Calculation Examples Using Java (AWS Signature Version 4)
 
-The Java sample that shows signature calculation can be downloaded at [https://docs.aws.amazon.com/AmazonS3/latest/API/samples/AWSS3SigV4JavaSamples.zip](https://docs.aws.amazon.com/AmazonS3/latest/API/samples/AWSS3SigV4JavaSamples.zip). Note that these samples use AWS SDK for Java v1, and we recommend using [AWS SDK for Java v2](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/home.html) for new applications. In
+The Java sample that shows signature calculation can be downloaded at [https://docs.aws.amazon.com/AmazonS3/latest/API/samples/AWSS3SigV4JavaSamples.zip](../../../../services/s3/latest/api/samples/awss3sigv4javasamples-zip.md). Note that these samples use AWS SDK for Java v1, and we recommend using [AWS SDK for Java v2](../../../sdk-for-java/latest/developer-guide/home.md) for new applications. In
 `RunAllSamples.java`, the `main()` function executes sample
 requests to create an object, retrieve an object, and create a presigned URL for the
 object. The sample creates an object from the text string provided in the code:
@@ -70,7 +70,7 @@ _Amazon Simple Storage Service User Guide_.
 
 If bucket is in the US East (N. Virginia) region, use us-east-1 to specify the region.
 For
-a list of other AWS Regions, go to [Amazon Simple Storage Service (S3)](https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region) in the
+a list of other AWS Regions, go to [Amazon Simple Storage Service (S3)](../../../../general/general/latest/gr/rande-s3-region.md) in the
 _AWS General Reference_.
 
 4. Compile the source code and store the compiled classes into the `bin/`
@@ -94,7 +94,7 @@ The code runs all the methods in `main()`. For each request, the output will
 
 ## Examples of Signature Calculations Using C\# (AWS Signature Version 4)
 
-The C# sample that shows signature calculation can be downloaded at [https://docs.aws.amazon.com/AmazonS3/latest/API/samples/AmazonS3SigV4\_Samples\_CSharp.zip](https://docs.aws.amazon.com/AmazonS3/latest/API/samples/AmazonS3SigV4_Samples_CSharp.zip). Note that these samples use AWS SDK for .NET v1, and we recommend using [AWS SDK for .NET v3](https://docs.aws.amazon.com/sdk-for-net/latest/developer-guide/home.html) for new applications.
+The C# sample that shows signature calculation can be downloaded at [https://docs.aws.amazon.com/AmazonS3/latest/API/samples/AmazonS3SigV4\_Samples\_CSharp.zip](../../../../services/s3/latest/api/samples/amazons3sigv4-samples-csharp-zip.md). Note that these samples use AWS SDK for .NET v1, and we recommend using [AWS SDK for .NET v3](../../../sdk-for-net/latest/developer-guide/home.md) for new applications.
 In `Program.cs`, the `main()` function executes sample requests to create an
 object, retrieve an object, and create a presigned URL for the object. The code for
 signature calculation is in the `\Signers` folder.
@@ -132,7 +132,7 @@ The sample creates an object in this bucket.
 6. To verify that the object was created, copy the presigned URL that the
     program creates, and then paste it in a browser window.
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Using Query Parameters
 

@@ -1,37 +1,37 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Promise](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.promise.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Promise](namespace-guzzlehttp-promise.md)
 
 ## Utils        in package    - [Aws](package-aws.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-promise-utils-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-promise-utils-toc-methods.md)
 
-[all()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html#method_all)
+[all()](class-guzzlehttp-promise-utils-method-all.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Given an array of promises, return a promise that is fulfilled when all
-the items in the array are fulfilled.[any()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html#method_any)
+the items in the array are fulfilled.[any()](class-guzzlehttp-promise-utils-method-any.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Like some(), with 1 as count. However, if the promise fulfills, the
-fulfillment value is not an array of 1 but the value directly.[inspect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html#method_inspect)
+fulfillment value is not an array of 1 but the value directly.[inspect()](class-guzzlehttp-promise-utils-method-inspect.md)
 : array<string\|int, mixed> Synchronously waits on a promise to resolve and returns an inspection
-state array.[inspectAll()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html#method_inspectAll)
+state array.[inspectAll()](class-guzzlehttp-promise-utils-method-inspectall.md)
 : array<string\|int, mixed> Waits on all of the provided promises, but does not unwrap rejected
-promises as thrown exception.[queue()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html#method_queue)
-: [TaskQueueInterface](class-guzzlehttp-promise-taskqueueinterface.md)Get the global task queue used for promise resolution.[settle()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html#method_settle)
+promises as thrown exception.[queue()](class-guzzlehttp-promise-utils-method-queue.md)
+: [TaskQueueInterface](class-guzzlehttp-promise-taskqueueinterface.md)Get the global task queue used for promise resolution.[settle()](class-guzzlehttp-promise-utils-method-settle.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Returns a promise that is fulfilled when all of the provided promises have
-been fulfilled or rejected.[some()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html#method_some)
+been fulfilled or rejected.[some()](class-guzzlehttp-promise-utils-method-some.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Initiate a competitive race between multiple promises or values (values
-will become immediately fulfilled promises).[task()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html#method_task)
+will become immediately fulfilled promises).[task()](class-guzzlehttp-promise-utils-method-task.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Adds a function to run in the task queue when it is next \`run()\` and
-returns a promise that is fulfilled or rejected with the result.[unwrap()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html#method_unwrap)
+returns a promise that is fulfilled or rejected with the result.[unwrap()](class-guzzlehttp-promise-utils-method-unwrap.md)
 : array<string\|int, mixed> Waits on all of the provided promises and returns the fulfilled values.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html\#methods)
+### Methods  [header link](class-guzzlehttp-promise-utils-methods.md)
 
-#### all()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html\#method_all)
+#### all()  [header link](class-guzzlehttp-promise-utils-method-all.md)
 
 Given an array of promises, return a promise that is fulfilled when all
 the items in the array are fulfilled.
@@ -61,7 +61,7 @@ If true, resolves new promises that might have been added to the stack during it
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### any()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html\#method_any)
+#### any()  [header link](class-guzzlehttp-promise-utils-method-any.md)
 
 Like some(), with 1 as count. However, if the promise fulfills, the
 fulfillment value is not an array of 1 but the value directly.
@@ -81,7 +81,7 @@ Promises or values.
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### inspect()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html\#method_inspect)
+#### inspect()  [header link](class-guzzlehttp-promise-utils-method-inspect.md)
 
 Synchronously waits on a promise to resolve and returns an inspection
 state array.
@@ -107,7 +107,7 @@ Promise or value.
 
 array<string\|int, mixed>
 
-#### inspectAll()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html\#method_inspectAll)
+#### inspectAll()  [header link](class-guzzlehttp-promise-utils-method-inspectall.md)
 
 Waits on all of the provided promises, but does not unwrap rejected
 promises as thrown exception.
@@ -125,7 +125,7 @@ $promises
 
 Traversable of promises to wait upon.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html\#method_inspectAll\#tags)
+##### Tags  [header link](class-guzzlehttp-promise-utils-method-inspectall-tags.md)
 
 seeinspect
 
@@ -135,7 +135,7 @@ for the inspection state array format.
 
 array<string\|int, mixed>
 
-#### queue()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html\#method_queue)
+#### queue()  [header link](class-guzzlehttp-promise-utils-method-queue.md)
 
 Get the global task queue used for promise resolution.
 
@@ -165,7 +165,7 @@ Optionally specify a new queue instance.
 
 [TaskQueueInterface](class-guzzlehttp-promise-taskqueueinterface.md)
 
-#### settle()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html\#method_settle)
+#### settle()  [header link](class-guzzlehttp-promise-utils-method-settle.md)
 
 Returns a promise that is fulfilled when all of the provided promises have
 been fulfilled or rejected.
@@ -183,7 +183,7 @@ $promises
 
 Promises or values.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html\#method_settle\#tags)
+##### Tags  [header link](class-guzzlehttp-promise-utils-method-settle-tags.md)
 
 seeinspect
 
@@ -193,7 +193,7 @@ for the inspection state array format.
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### some()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html\#method_some)
+#### some()  [header link](class-guzzlehttp-promise-utils-method-some.md)
 
 Initiate a competitive race between multiple promises or values (values
 will become immediately fulfilled promises).
@@ -225,7 +225,7 @@ Promises or values.
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### task()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html\#method_task)
+#### task()  [header link](class-guzzlehttp-promise-utils-method-task.md)
 
 Adds a function to run in the task queue when it is next \`run()\` and
 returns a promise that is fulfilled or rejected with the result.
@@ -245,7 +245,7 @@ Task function to run.
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### unwrap()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html\#method_unwrap)
+#### unwrap()  [header link](class-guzzlehttp-promise-utils-method-unwrap.md)
 
 Waits on all of the provided promises and returns the fulfilled values.
 
@@ -264,7 +264,7 @@ $promises
 
 Iterable of PromiseInterface objects to wait on.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html\#method_unwrap\#tags)
+##### Tags  [header link](class-guzzlehttp-promise-utils-method-unwrap-tags.md)
 
 throwsThrowable
 
@@ -280,16 +280,16 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html#toc-methods)
+  - [Methods](class-guzzlehttp-promise-utils-toc-methods.md)
 - Methods
-  - [all()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html#method_all)
-  - [any()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html#method_any)
-  - [inspect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html#method_inspect)
-  - [inspectAll()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html#method_inspectAll)
-  - [queue()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html#method_queue)
-  - [settle()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html#method_settle)
-  - [some()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html#method_some)
-  - [task()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html#method_task)
-  - [unwrap()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html#method_unwrap)
+  - [all()](class-guzzlehttp-promise-utils-method-all.md)
+  - [any()](class-guzzlehttp-promise-utils-method-any.md)
+  - [inspect()](class-guzzlehttp-promise-utils-method-inspect.md)
+  - [inspectAll()](class-guzzlehttp-promise-utils-method-inspectall.md)
+  - [queue()](class-guzzlehttp-promise-utils-method-queue.md)
+  - [settle()](class-guzzlehttp-promise-utils-method-settle.md)
+  - [some()](class-guzzlehttp-promise-utils-method-some.md)
+  - [task()](class-guzzlehttp-promise-utils-method-task.md)
+  - [unwrap()](class-guzzlehttp-promise-utils-method-unwrap.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Utils.html#top)
+[Back To Top](class-guzzlehttp-promise-utils-top.md)

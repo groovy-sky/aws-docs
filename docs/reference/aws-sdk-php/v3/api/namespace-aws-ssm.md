@@ -4,15 +4,15 @@ Menu
 
 ## Ssm
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssm.html\#toc)
+### Table of Contents  [header link](namespace-aws-ssm-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssm.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-ssm-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssm.exception.html)
+[Exception](namespace-aws-ssm-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssm.html\#toc-classes)
+#### Classes  [header link](namespace-aws-ssm-toc-classes.md)
 
-[SsmClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ssm.SsmClient.html)Amazon EC2 Simple Systems Manager client.
+[SsmClient](class-aws-ssm-ssmclient.md)Amazon EC2 Simple Systems Manager client.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssm.html#toc-classes)
+  - [Classes](namespace-aws-ssm-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssm.html#top)
+[Back To Top](namespace-aws-ssm-top.md)

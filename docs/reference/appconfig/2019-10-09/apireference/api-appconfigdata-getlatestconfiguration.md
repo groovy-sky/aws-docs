@@ -3,7 +3,7 @@
 Retrieves the latest deployed configuration. This API may return empty configuration
 data if the client already has the latest version. For more information about this API
 action and to view example AWS CLI commands that show how to use it with the [StartConfigurationSession](api-appconfigdata-startconfigurationsession.md) API action, see [Retrieving feature flags\
-and configuration data in AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/retrieving-feature-flags.html) in the
+and configuration data in AWS AppConfig](../../../../services/appconfig/latest/userguide/retrieving-feature-flags.md) in the
 _AWS AppConfig User Guide_.
 
 ###### Important
@@ -23,12 +23,12 @@ one.
 cache rather than directly calling AWS AppConfig. Caching can improve
 performance and reduce costs. You can use the AWS AppConfig
 AWS Lambda extension to cache data on your behalf. For more
-information, see [AWS AppConfig integration with Lambda extensions](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-integration-lambda-extensions.html)
+information, see [AWS AppConfig integration with Lambda extensions](../../../../services/appconfig/latest/userguide/appconfig-integration-lambda-extensions.md)
 in the AWS AppConfig User Guide.
 
 For containerized environments, you can use the AWS AppConfig agent for
 Amazon Elastic Container Service or Amazon Elastic Kubernetes Service. For more information, see
-[AWS AppConfig integration with Amazon ECS and Amazon EKS](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-integration-containers-agent.html).
+[AWS AppConfig integration with Amazon ECS and Amazon EKS](../../../../services/appconfig/latest/userguide/appconfig-integration-containers-agent.md).
 
 ## Request Syntax
 
@@ -124,7 +124,7 @@ version of configuration.
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **BadRequestException**
 
@@ -201,27 +201,27 @@ Authorization: AWS4-HMAC-SHA256 Credential=AKIAIOSFODNN7EXAMPLE/20220218/us-west
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appconfigdata-2021-11-11/GetLatestConfiguration)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/appconfigdata-2021-11-11/getlatestconfiguration.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appconfigdata-2021-11-11/GetLatestConfiguration)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appconfigdata-2021-11-11/getlatestconfiguration.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appconfigdata-2021-11-11/GetLatestConfiguration)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appconfigdata-2021-11-11/getlatestconfiguration.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appconfigdata-2021-11-11/GetLatestConfiguration)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/appconfigdata-2021-11-11/getlatestconfiguration.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appconfigdata-2021-11-11/GetLatestConfiguration)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appconfigdata-2021-11-11/getlatestconfiguration.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appconfigdata-2021-11-11/GetLatestConfiguration)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appconfigdata-2021-11-11/getlatestconfiguration.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appconfigdata-2021-11-11/GetLatestConfiguration)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appconfigdata-2021-11-11/getlatestconfiguration.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appconfigdata-2021-11-11/GetLatestConfiguration)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appconfigdata-2021-11-11/getlatestconfiguration.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/appconfigdata-2021-11-11/GetLatestConfiguration)
+- [AWS SDK for Python](../../../../services/goto/boto3/appconfigdata-2021-11-11/getlatestconfiguration.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appconfigdata-2021-11-11/GetLatestConfiguration)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appconfigdata-2021-11-11/getlatestconfiguration.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AWS AppConfig Data
 

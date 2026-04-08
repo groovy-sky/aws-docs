@@ -4,15 +4,15 @@ Menu
 
 ## CodeCommit
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codecommit.html\#toc)
+### Table of Contents  [header link](namespace-aws-codecommit-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codecommit.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-codecommit-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codecommit.exception.html)
+[Exception](namespace-aws-codecommit-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codecommit.html\#toc-classes)
+#### Classes  [header link](namespace-aws-codecommit-toc-classes.md)
 
-[CodeCommitClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeCommit.CodeCommitClient.html)This client is used to interact with the **AWS CodeCommit** service.
+[CodeCommitClient](class-aws-codecommit-codecommitclient.md)This client is used to interact with the **AWS CodeCommit** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codecommit.html#toc-classes)
+  - [Classes](namespace-aws-codecommit-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codecommit.html#top)
+[Back To Top](namespace-aws-codecommit-top.md)

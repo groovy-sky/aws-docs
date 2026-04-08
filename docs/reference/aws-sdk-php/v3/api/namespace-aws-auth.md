@@ -4,19 +4,19 @@ Menu
 
 ## Auth
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.auth.html\#toc)
+### Table of Contents  [header link](namespace-aws-auth-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.auth.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-auth-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.auth.exception.html)
+[Exception](namespace-aws-auth-exception.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.auth.html\#toc-interfaces)
+#### Interfaces  [header link](namespace-aws-auth-toc-interfaces.md)
 
-[AuthSchemeResolverInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolverInterface.html)An AuthSchemeResolver object determines which auth scheme will be used for request signing.
+[AuthSchemeResolverInterface](class-aws-auth-authschemeresolverinterface.md)An AuthSchemeResolver object determines which auth scheme will be used for request signing.
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.auth.html\#toc-classes)
+#### Classes  [header link](namespace-aws-auth-toc-classes.md)
 
-[AuthSchemeResolver](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolver.html)Houses logic for selecting an auth scheme modeled in a service's \`auth\` trait.
+[AuthSchemeResolver](class-aws-auth-authschemeresolver.md)Houses logic for selecting an auth scheme modeled in a service's \`auth\` trait.
 
 ```
 
@@ -27,7 +27,7 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Interfaces](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.auth.html#toc-interfaces)
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.auth.html#toc-classes)
+  - [Interfaces](namespace-aws-auth-toc-interfaces.md)
+  - [Classes](namespace-aws-auth-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.auth.html#top)
+[Back To Top](namespace-aws-auth-top.md)

@@ -73,7 +73,7 @@ stopped or hibernated, instead of being terminated, when they are interrupted. A
 automatically stops or hibernates your Spot Instances on interruption, and automatically
 resumes the instances when we have available capacity.
 
-We recommend that you create a rule in [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/index.html) that captures the rebalance
+We recommend that you create a rule in [Amazon EventBridge](../../../eventbridge/index.md) that captures the rebalance
 recommendations and interruption notifications, and then triggers a checkpoint for
 the progress of your workload or gracefully handles the interruption. For more
 information, see [Monitor rebalance recommendation signals](rebalance-recommendations.md#monitor-rebalance-recommendations). For a detailed example that

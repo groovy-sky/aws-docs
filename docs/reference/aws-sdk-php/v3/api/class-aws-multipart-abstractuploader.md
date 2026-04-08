@@ -7,16 +7,16 @@ Menu
 
 AbstractYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.AbstractUploader.html\#toc)
+### Table of Contents  [header link](class-aws-multipart-abstractuploader-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.AbstractUploader.html\#toc-methods)
+#### Methods  [header link](class-aws-multipart-abstractuploader-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.AbstractUploader.html#method___construct)
+[\_\_construct()](class-aws-multipart-abstractuploader-method-construct.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.AbstractUploader.html\#methods)
+### Methods  [header link](class-aws-multipart-abstractuploader-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.AbstractUploader.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-multipart-abstractuploader-method-construct.md)
 
 `
     public
@@ -36,8 +36,8 @@ $client
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.AbstractUploader.html#toc-methods)
+  - [Methods](class-aws-multipart-abstractuploader-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.AbstractUploader.html#method___construct)
+  - [\_\_construct()](class-aws-multipart-abstractuploader-method-construct.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.AbstractUploader.html#top)
+[Back To Top](class-aws-multipart-abstractuploader-top.md)

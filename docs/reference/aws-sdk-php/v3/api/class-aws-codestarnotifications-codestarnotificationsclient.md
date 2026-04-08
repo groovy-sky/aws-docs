@@ -17,25 +17,25 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2019-10-15**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codestar-notifications-2019-10-15.html)
+- [**2019-10-15**](api-codestar-notifications-2019-10-15.md)
 
-  - [CreateNotificationRule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codestar-notifications-2019-10-15.html#createnotificationrule)
-  - [DeleteNotificationRule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codestar-notifications-2019-10-15.html#deletenotificationrule)
-  - [DeleteTarget](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codestar-notifications-2019-10-15.html#deletetarget)
-  - [DescribeNotificationRule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codestar-notifications-2019-10-15.html#describenotificationrule)
-  - [ListEventTypes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codestar-notifications-2019-10-15.html#listeventtypes)
-  - [ListNotificationRules](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codestar-notifications-2019-10-15.html#listnotificationrules)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codestar-notifications-2019-10-15.html#listtagsforresource)
-  - [ListTargets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codestar-notifications-2019-10-15.html#listtargets)
-  - [Subscribe](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codestar-notifications-2019-10-15.html#subscribe)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codestar-notifications-2019-10-15.html#tagresource)
-  - [Unsubscribe](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codestar-notifications-2019-10-15.html#unsubscribe)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codestar-notifications-2019-10-15.html#untagresource)
-  - [UpdateNotificationRule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codestar-notifications-2019-10-15.html#updatenotificationrule)
+  - [CreateNotificationRule](api-codestar-notifications-2019-10-15-createnotificationrule.md)
+  - [DeleteNotificationRule](api-codestar-notifications-2019-10-15-deletenotificationrule.md)
+  - [DeleteTarget](api-codestar-notifications-2019-10-15-deletetarget.md)
+  - [DescribeNotificationRule](api-codestar-notifications-2019-10-15-describenotificationrule.md)
+  - [ListEventTypes](api-codestar-notifications-2019-10-15-listeventtypes.md)
+  - [ListNotificationRules](api-codestar-notifications-2019-10-15-listnotificationrules.md)
+  - [ListTagsForResource](api-codestar-notifications-2019-10-15-listtagsforresource.md)
+  - [ListTargets](api-codestar-notifications-2019-10-15-listtargets.md)
+  - [Subscribe](api-codestar-notifications-2019-10-15-subscribe.md)
+  - [TagResource](api-codestar-notifications-2019-10-15-tagresource.md)
+  - [Unsubscribe](api-codestar-notifications-2019-10-15-unsubscribe.md)
+  - [UntagResource](api-codestar-notifications-2019-10-15-untagresource.md)
+  - [UpdateNotificationRule](api-codestar-notifications-2019-10-15-updatenotificationrule.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeStarNotifications.CodeStarNotificationsClient.html\#toc)
+### Table of Contents  [header link](class-aws-codestarnotifications-codestarnotificationsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeStarNotifications.CodeStarNotificationsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-codestarnotifications-codestarnotificationsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -66,7 +66,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeStarNotifications.CodeStarNotificationsClient.html\#methods)
+### Methods  [header link](class-aws-codestarnotifications-codestarnotificationsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -533,7 +533,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeStarNotifications.CodeStarNotificationsClient.html#toc-methods)
+  - [Methods](class-aws-codestarnotifications-codestarnotificationsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -560,4 +560,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeStarNotifications.CodeStarNotificationsClient.html#top)
+[Back To Top](class-aws-codestarnotifications-codestarnotificationsclient-top.md)

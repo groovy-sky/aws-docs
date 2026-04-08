@@ -62,7 +62,7 @@ the default value for the queue.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -72,7 +72,7 @@ A list of `
                      SendMessageBatchRequestEntry
                   ` items.
 
-Type: Array of [SendMessageBatchRequestEntry](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatchRequestEntry.html) objects
+Type: Array of [SendMessageBatchRequestEntry](api-sendmessagebatchrequestentry.md) objects
 
 Required: Yes
 
@@ -125,7 +125,7 @@ A list of `
                   ` items with error
 details about each message that can't be enqueued.
 
-Type: Array of [BatchResultErrorEntry](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_BatchResultErrorEntry.html) objects
+Type: Array of [BatchResultErrorEntry](api-batchresulterrorentry.md) objects
 
 **[Successful](#API_SendMessageBatch_ResponseSyntax)**
 
@@ -133,11 +133,11 @@ A list of `
                      SendMessageBatchResultEntry
                   ` items.
 
-Type: Array of [SendMessageBatchResultEntry](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatchResultEntry.html) objects
+Type: Array of [SendMessageBatchResultEntry](api-sendmessagebatchresultentry.md) objects
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Errors](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Errors](commonerrors.md).
 
 **BatchEntryIdsNotDistinct**
 
@@ -249,7 +249,7 @@ HTTP Status Code: 400
 **TooManyEntriesInBatchRequest**
 
 The batch request contains more entries than permissible. For Amazon SQS, the
-maximum number of entries you can include in a single [SendMessageBatch](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatch.html), [DeleteMessageBatch](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_DeleteMessageBatch.html), or [ChangeMessageVisibilityBatch](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ChangeMessageVisibilityBatch.html) request is 10.
+maximum number of entries you can include in a single [SendMessageBatch](api-sendmessagebatch.md), [DeleteMessageBatch](api-deletemessagebatch.md), or [ChangeMessageVisibilityBatch](api-changemessagevisibilitybatch.md) request is 10.
 
 HTTP Status Code: 400
 
@@ -263,7 +263,7 @@ HTTP Status Code: 400
 
 The following example `SendMessageBatch` request sends two messages to
 the queue. You must URL-encode the entire URL. However, in this example only the message body is URL-encoded to make the example easier to read. The structure of `AUTHPARAMS` depends on the signature of the API request.
-For more information, see [Examples of Signed Signature Version 4 Requests](https://docs.aws.amazon.com/general/latest/gr/sigv4-signed-request-examples.html) in the _AWS General Reference_.
+For more information, see [Examples of Signed Signature Version 4 Requests](../../../../general/general/latest/gr/sigv4-signed-request-examples.md) in the _AWS General Reference_.
 
 ### Example
 
@@ -468,27 +468,27 @@ Action=SendMessageBatch
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/sqs-2012-11-05/SendMessageBatch)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/sqs-2012-11-05/sendmessagebatch.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/sqs-2012-11-05/SendMessageBatch)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/sqs-2012-11-05/sendmessagebatch.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/sqs-2012-11-05/SendMessageBatch)
+- [AWS SDK for C++](../../../goto/sdkforcpp/sqs-2012-11-05/sendmessagebatch.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/sqs-2012-11-05/SendMessageBatch)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/sqs-2012-11-05/sendmessagebatch.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sqs-2012-11-05/SendMessageBatch)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/sqs-2012-11-05/sendmessagebatch.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/sqs-2012-11-05/SendMessageBatch)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/sqs-2012-11-05/sendmessagebatch.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/sqs-2012-11-05/SendMessageBatch)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/sqs-2012-11-05/sendmessagebatch.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/sqs-2012-11-05/SendMessageBatch)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/sqs-2012-11-05/sendmessagebatch.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/sqs-2012-11-05/SendMessageBatch)
+- [AWS SDK for Python](../../../../services/goto/boto3/sqs-2012-11-05/sendmessagebatch.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sqs-2012-11-05/SendMessageBatch)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/sqs-2012-11-05/sendmessagebatch.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 SendMessage
 

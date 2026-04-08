@@ -30,7 +30,7 @@ For more information, see
 [Tagging Amazon RDS resources](../../../../services/amazonrds/latest/userguide/user-tagging.md) in the _Amazon RDS User Guide_ or
 [Tagging Amazon Aurora and Amazon RDS resources](../../../../services/amazonrds/latest/aurorauserguide/user-tagging.md) in the _Amazon Aurora User Guide_.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Required: No
 
@@ -38,13 +38,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/TagSpecification)
+- [AWS SDK for C++](../../../goto/sdkforcpp/rds-2014-10-31/tagspecification.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/TagSpecification)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/rds-2014-10-31/tagspecification.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/TagSpecification)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/tagspecification.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Tag
 

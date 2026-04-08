@@ -4,11 +4,11 @@ Menu
 
 ## Arn
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.arn.html\#toc)
+### Table of Contents  [header link](namespace-aws-arn-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.arn.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-arn-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.arn.exception.html)[S3](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.arn.s3.html)
+[Exception](namespace-aws-arn-exception.md)[S3](namespace-aws-arn-s3.md)
 
 ```
 
@@ -20,4 +20,4 @@ Menu
 
 - Table Of Contents
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.arn.html#top)
+[Back To Top](namespace-aws-arn-top.md)

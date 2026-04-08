@@ -4,15 +4,15 @@ Menu
 
 ## EventBridge
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.eventbridge.html\#toc)
+### Table of Contents  [header link](namespace-aws-eventbridge-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.eventbridge.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-eventbridge-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.eventbridge.exception.html)
+[Exception](namespace-aws-eventbridge-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.eventbridge.html\#toc-classes)
+#### Classes  [header link](namespace-aws-eventbridge-toc-classes.md)
 
-[EventBridgeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EventBridge.EventBridgeClient.html)This client is used to interact with the **Amazon EventBridge** service.
+[EventBridgeClient](class-aws-eventbridge-eventbridgeclient.md)This client is used to interact with the **Amazon EventBridge** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.eventbridge.html#toc-classes)
+  - [Classes](namespace-aws-eventbridge-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.eventbridge.html#top)
+[Back To Top](namespace-aws-eventbridge-top.md)

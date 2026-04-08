@@ -9,27 +9,27 @@ This class is maintained in [aws-php-sns-message-validator](https://github.com/a
 
 Uses openssl to verify SNS messages to ensure that they were sent by AWS.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html\#toc)
+### Table of Contents  [header link](class-aws-sns-messagevalidator-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html\#toc-constants)
+#### Constants  [header link](class-aws-sns-messagevalidator-toc-constants.md)
 
-[SIGNATURE\_VERSION\_1](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html#constant_SIGNATURE_VERSION_1)
-= '1' [SIGNATURE\_VERSION\_2](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html#constant_SIGNATURE_VERSION_2)
+[SIGNATURE\_VERSION\_1](class-aws-sns-messagevalidator-constant-signature-version-1.md)
+= '1' [SIGNATURE\_VERSION\_2](class-aws-sns-messagevalidator-constant-signature-version-2.md)
 = '2'
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html\#toc-methods)
+#### Methods  [header link](class-aws-sns-messagevalidator-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html#method___construct)
+[\_\_construct()](class-aws-sns-messagevalidator-method-construct.md)
 : mixed Constructs the Message Validator object and ensures that openssl is
-installed.[getStringToSign()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html#method_getStringToSign)
-: string Builds string-to-sign according to the SNS message spec.[isValid()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html#method_isValid)
+installed.[getStringToSign()](class-aws-sns-messagevalidator-method-getstringtosign.md)
+: string Builds string-to-sign according to the SNS message spec.[isValid()](class-aws-sns-messagevalidator-method-isvalid.md)
 : bool Determines if a message is valid and that is was delivered by AWS. This
-method does not throw exceptions and returns a simple boolean value.[validate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html#method_validate)
+method does not throw exceptions and returns a simple boolean value.[validate()](class-aws-sns-messagevalidator-method-validate.md)
 : mixed Validates a message from SNS to ensure that it was delivered by AWS.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html\#constants)
+### Constants  [header link](class-aws-sns-messagevalidator-constants.md)
 
-#### SIGNATURE\_VERSION\_1  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html\#constant_SIGNATURE_VERSION_1)
+#### SIGNATURE\_VERSION\_1  [header link](class-aws-sns-messagevalidator-constant-signature-version-1.md)
 
 `
     public
@@ -38,7 +38,7 @@ method does not throw exceptions and returns a simple boolean value.[validate()]
     = '1'
 `
 
-#### SIGNATURE\_VERSION\_2  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html\#constant_SIGNATURE_VERSION_2)
+#### SIGNATURE\_VERSION\_2  [header link](class-aws-sns-messagevalidator-constant-signature-version-2.md)
 
 `
     public
@@ -47,9 +47,9 @@ method does not throw exceptions and returns a simple boolean value.[validate()]
     = '2'
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html\#methods)
+### Methods  [header link](class-aws-sns-messagevalidator-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-sns-messagevalidator-method-construct.md)
 
 Constructs the Message Validator object and ensures that openssl is
 installed.
@@ -72,7 +72,7 @@ $hostNamePattern
 : string
 = ''
 
-#### getStringToSign()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html\#method_getStringToSign)
+#### getStringToSign()  [header link](class-aws-sns-messagevalidator-method-getstringtosign.md)
 
 Builds string-to-sign according to the SNS message spec.
 
@@ -87,15 +87,15 @@ $message
 
 Message for which to build the string-to-sign.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html\#method_getStringToSign\#tags)
+##### Tags  [header link](class-aws-sns-messagevalidator-method-getstringtosign-tags.md)
 
-link[http://docs.aws.amazon.com/sns/latest/gsg/SendMessageToHttp.verify.signature.html](https://docs.aws.amazon.com/sns/latest/gsg/SendMessageToHttp.verify.signature.html)
+link[http://docs.aws.amazon.com/sns/latest/gsg/SendMessageToHttp.verify.signature.html](../../../../services/sns/latest/gsg/sendmessagetohttp-verify-signature.md)
 
 ##### Return values
 
 string
 
-#### isValid()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html\#method_isValid)
+#### isValid()  [header link](class-aws-sns-messagevalidator-method-isvalid.md)
 
 Determines if a message is valid and that is was delivered by AWS. This
 method does not throw exceptions and returns a simple boolean value.
@@ -115,7 +115,7 @@ The message to validate
 
 bool
 
-#### validate()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html\#method_validate)
+#### validate()  [header link](class-aws-sns-messagevalidator-method-validate.md)
 
 Validates a message from SNS to ensure that it was delivered by AWS.
 
@@ -130,7 +130,7 @@ $message
 
 Message to validate.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html\#method_validate\#tags)
+##### Tags  [header link](class-aws-sns-messagevalidator-method-validate-tags.md)
 
 throws[InvalidSnsMessageException](class-aws-sns-exception-invalidsnsmessageexception.md)
 
@@ -145,15 +145,15 @@ signature is invalid.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html#toc-methods)
+  - [Constants](class-aws-sns-messagevalidator-toc-constants.md)
+  - [Methods](class-aws-sns-messagevalidator-toc-methods.md)
 - Constants
-  - [SIGNATURE\_VERSION\_1](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html#constant_SIGNATURE_VERSION_1)
-  - [SIGNATURE\_VERSION\_2](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html#constant_SIGNATURE_VERSION_2)
+  - [SIGNATURE\_VERSION\_1](class-aws-sns-messagevalidator-constant-signature-version-1.md)
+  - [SIGNATURE\_VERSION\_2](class-aws-sns-messagevalidator-constant-signature-version-2.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html#method___construct)
-  - [getStringToSign()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html#method_getStringToSign)
-  - [isValid()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html#method_isValid)
-  - [validate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html#method_validate)
+  - [\_\_construct()](class-aws-sns-messagevalidator-method-construct.md)
+  - [getStringToSign()](class-aws-sns-messagevalidator-method-getstringtosign.md)
+  - [isValid()](class-aws-sns-messagevalidator-method-isvalid.md)
+  - [validate()](class-aws-sns-messagevalidator-method-validate.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.MessageValidator.html#top)
+[Back To Top](class-aws-sns-messagevalidator-top.md)

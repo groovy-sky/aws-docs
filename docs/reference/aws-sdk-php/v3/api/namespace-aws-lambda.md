@@ -4,15 +4,15 @@ Menu
 
 ## Lambda
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lambda.html\#toc)
+### Table of Contents  [header link](namespace-aws-lambda-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lambda.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-lambda-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lambda.exception.html)
+[Exception](namespace-aws-lambda-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lambda.html\#toc-classes)
+#### Classes  [header link](namespace-aws-lambda-toc-classes.md)
 
-[LambdaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Lambda.LambdaClient.html)This client is used to interact with AWS Lambda
+[LambdaClient](class-aws-lambda-lambdaclient.md)This client is used to interact with AWS Lambda
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lambda.html#toc-classes)
+  - [Classes](namespace-aws-lambda-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lambda.html#top)
+[Back To Top](namespace-aws-lambda-top.md)

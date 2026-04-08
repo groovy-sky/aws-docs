@@ -3,21 +3,21 @@ Menu
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
 
-## MultipartCopy     extends AbstractUploadManager   in package    - [Aws](package-aws.md)       Uses  [MultipartUploadingTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploadingTrait.html)
+## MultipartCopy     extends AbstractUploadManager   in package    - [Aws](package-aws.md)       Uses  [MultipartUploadingTrait](class-aws-s3-multipartuploadingtrait.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartCopy.html\#toc)
+### Table of Contents  [header link](class-aws-s3-multipartcopy-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartCopy.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-multipartcopy-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartCopy.html#method___construct)
-: mixed Creates a multipart upload for copying an S3 object.[copy()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartCopy.html#method_copy)
-: mixed An alias of the self::upload method.[getStateFromService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploadingTrait.html#method_getStateFromService)
+[\_\_construct()](class-aws-s3-multipartcopy-method-construct.md)
+: mixed Creates a multipart upload for copying an S3 object.[copy()](class-aws-s3-multipartcopy-method-copy.md)
+: mixed An alias of the self::upload method.[getStateFromService()](class-aws-s3-multipartuploadingtrait-method-getstatefromservice.md)
 : [UploadState](class-aws-multipart-uploadstate.md)Creates an UploadState object for a multipart upload by querying the
 service for the specified upload's information.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartCopy.html\#methods)
+### Methods  [header link](class-aws-s3-multipartcopy-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartCopy.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-multipartcopy-method-construct.md)
 
 Creates a multipart upload for copying an S3 object.
 
@@ -80,7 +80,7 @@ $config
 
 Configuration used to perform the upload.
 
-#### copy()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartCopy.html\#method_copy)
+#### copy()  [header link](class-aws-s3-multipartcopy-method-copy.md)
 
 An alias of the self::upload method.
 
@@ -88,11 +88,11 @@ An alias of the self::upload method.
     public
                     copy() : mixed`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartCopy.html\#method_copy\#tags)
+##### Tags  [header link](class-aws-s3-multipartcopy-method-copy-tags.md)
 
 seeself::upload
 
-#### getStateFromService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploadingTrait.html\#method_getStateFromService)
+#### getStateFromService()  [header link](class-aws-s3-multipartuploadingtrait-method-getstatefromservice.md)
 
 Creates an UploadState object for a multipart upload by querying the
 service for the specified upload's information.
@@ -133,10 +133,10 @@ Upload ID for the multipart upload.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartCopy.html#toc-methods)
+  - [Methods](class-aws-s3-multipartcopy-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartCopy.html#method___construct)
-  - [copy()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartCopy.html#method_copy)
-  - [getStateFromService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploadingTrait.html#method_getStateFromService)
+  - [\_\_construct()](class-aws-s3-multipartcopy-method-construct.md)
+  - [copy()](class-aws-s3-multipartcopy-method-copy.md)
+  - [getStateFromService()](class-aws-s3-multipartuploadingtrait-method-getstatefromservice.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartCopy.html#top)
+[Back To Top](class-aws-s3-multipartcopy-top.md)

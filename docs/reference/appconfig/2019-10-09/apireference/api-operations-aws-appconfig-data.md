@@ -6,7 +6,7 @@ The following actions are supported by AWS AppConfig Data:
 
 - [StartConfigurationSession](api-appconfigdata-startconfigurationsession.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ValidateConfiguration
 

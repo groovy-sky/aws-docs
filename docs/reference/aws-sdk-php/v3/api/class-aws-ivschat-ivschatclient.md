@@ -17,29 +17,29 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2020-07-14**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ivschat-2020-07-14.html)
+- [**2020-07-14**](api-ivschat-2020-07-14.md)
 
-  - [CreateChatToken](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ivschat-2020-07-14.html#createchattoken)
-  - [CreateLoggingConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ivschat-2020-07-14.html#createloggingconfiguration)
-  - [CreateRoom](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ivschat-2020-07-14.html#createroom)
-  - [DeleteLoggingConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ivschat-2020-07-14.html#deleteloggingconfiguration)
-  - [DeleteMessage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ivschat-2020-07-14.html#deletemessage)
-  - [DeleteRoom](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ivschat-2020-07-14.html#deleteroom)
-  - [DisconnectUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ivschat-2020-07-14.html#disconnectuser)
-  - [GetLoggingConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ivschat-2020-07-14.html#getloggingconfiguration)
-  - [GetRoom](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ivschat-2020-07-14.html#getroom)
-  - [ListLoggingConfigurations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ivschat-2020-07-14.html#listloggingconfigurations)
-  - [ListRooms](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ivschat-2020-07-14.html#listrooms)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ivschat-2020-07-14.html#listtagsforresource)
-  - [SendEvent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ivschat-2020-07-14.html#sendevent)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ivschat-2020-07-14.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ivschat-2020-07-14.html#untagresource)
-  - [UpdateLoggingConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ivschat-2020-07-14.html#updateloggingconfiguration)
-  - [UpdateRoom](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ivschat-2020-07-14.html#updateroom)
+  - [CreateChatToken](api-ivschat-2020-07-14-createchattoken.md)
+  - [CreateLoggingConfiguration](api-ivschat-2020-07-14-createloggingconfiguration.md)
+  - [CreateRoom](api-ivschat-2020-07-14-createroom.md)
+  - [DeleteLoggingConfiguration](api-ivschat-2020-07-14-deleteloggingconfiguration.md)
+  - [DeleteMessage](api-ivschat-2020-07-14-deletemessage.md)
+  - [DeleteRoom](api-ivschat-2020-07-14-deleteroom.md)
+  - [DisconnectUser](api-ivschat-2020-07-14-disconnectuser.md)
+  - [GetLoggingConfiguration](api-ivschat-2020-07-14-getloggingconfiguration.md)
+  - [GetRoom](api-ivschat-2020-07-14-getroom.md)
+  - [ListLoggingConfigurations](api-ivschat-2020-07-14-listloggingconfigurations.md)
+  - [ListRooms](api-ivschat-2020-07-14-listrooms.md)
+  - [ListTagsForResource](api-ivschat-2020-07-14-listtagsforresource.md)
+  - [SendEvent](api-ivschat-2020-07-14-sendevent.md)
+  - [TagResource](api-ivschat-2020-07-14-tagresource.md)
+  - [UntagResource](api-ivschat-2020-07-14-untagresource.md)
+  - [UpdateLoggingConfiguration](api-ivschat-2020-07-14-updateloggingconfiguration.md)
+  - [UpdateRoom](api-ivschat-2020-07-14-updateroom.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ivschat.ivschatClient.html\#toc)
+### Table of Contents  [header link](class-aws-ivschat-ivschatclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ivschat.ivschatClient.html\#toc-methods)
+#### Methods  [header link](class-aws-ivschat-ivschatclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -70,7 +70,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ivschat.ivschatClient.html\#methods)
+### Methods  [header link](class-aws-ivschat-ivschatclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -537,7 +537,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ivschat.ivschatClient.html#toc-methods)
+  - [Methods](class-aws-ivschat-ivschatclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -564,4 +564,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ivschat.ivschatClient.html#top)
+[Back To Top](class-aws-ivschat-ivschatclient-top.md)

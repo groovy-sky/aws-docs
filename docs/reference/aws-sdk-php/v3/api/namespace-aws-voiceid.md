@@ -4,15 +4,15 @@ Menu
 
 ## VoiceID
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.voiceid.html\#toc)
+### Table of Contents  [header link](namespace-aws-voiceid-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.voiceid.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-voiceid-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.voiceid.exception.html)
+[Exception](namespace-aws-voiceid-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.voiceid.html\#toc-classes)
+#### Classes  [header link](namespace-aws-voiceid-toc-classes.md)
 
-[VoiceIDClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.VoiceID.VoiceIDClient.html)This client is used to interact with the **Amazon Voice ID** service.
+[VoiceIDClient](class-aws-voiceid-voiceidclient.md)This client is used to interact with the **Amazon Voice ID** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.voiceid.html#toc-classes)
+  - [Classes](namespace-aws-voiceid-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.voiceid.html#top)
+[Back To Top](namespace-aws-voiceid-top.md)

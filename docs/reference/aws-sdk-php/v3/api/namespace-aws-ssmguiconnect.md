@@ -4,15 +4,15 @@ Menu
 
 ## SSMGuiConnect
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmguiconnect.html\#toc)
+### Table of Contents  [header link](namespace-aws-ssmguiconnect-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmguiconnect.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-ssmguiconnect-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmguiconnect.exception.html)
+[Exception](namespace-aws-ssmguiconnect-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmguiconnect.html\#toc-classes)
+#### Classes  [header link](namespace-aws-ssmguiconnect-toc-classes.md)
 
-[SSMGuiConnectClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMGuiConnect.SSMGuiConnectClient.html)This client is used to interact with the **AWS SSM-GUIConnect** service.
+[SSMGuiConnectClient](class-aws-ssmguiconnect-ssmguiconnectclient.md)This client is used to interact with the **AWS SSM-GUIConnect** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmguiconnect.html#toc-classes)
+  - [Classes](namespace-aws-ssmguiconnect-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmguiconnect.html#top)
+[Back To Top](namespace-aws-ssmguiconnect-top.md)

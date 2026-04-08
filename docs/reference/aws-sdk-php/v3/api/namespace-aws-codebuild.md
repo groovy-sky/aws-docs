@@ -4,15 +4,15 @@ Menu
 
 ## CodeBuild
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codebuild.html\#toc)
+### Table of Contents  [header link](namespace-aws-codebuild-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codebuild.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-codebuild-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codebuild.exception.html)
+[Exception](namespace-aws-codebuild-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codebuild.html\#toc-classes)
+#### Classes  [header link](namespace-aws-codebuild-toc-classes.md)
 
-[CodeBuildClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeBuild.CodeBuildClient.html)This client is used to interact with the **AWS CodeBuild** service.
+[CodeBuildClient](class-aws-codebuild-codebuildclient.md)This client is used to interact with the **AWS CodeBuild** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codebuild.html#toc-classes)
+  - [Classes](namespace-aws-codebuild-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codebuild.html#top)
+[Back To Top](namespace-aws-codebuild-top.md)

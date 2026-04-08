@@ -52,7 +52,7 @@ Creates a fleet. A fleet consists of streaming instances that your users access 
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/appstream2/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -60,7 +60,7 @@ The request accepts the following data in JSON format.
 
 The desired capacity for the fleet. This is not allowed for Elastic fleets. For Elastic fleets, specify MaxConcurrentSessions instead.
 
-Type: [ComputeCapacity](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_ComputeCapacity.html) object
+Type: [ComputeCapacity](api-computecapacity.md) object
 
 Required: No
 
@@ -110,7 +110,7 @@ Required: No
 
 The name of the directory and organizational unit (OU) to use to join the fleet to a Microsoft Active Directory domain. This is not allowed for Elastic fleets.
 
-Type: [DomainJoinInfo](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_DomainJoinInfo.html) object
+Type: [DomainJoinInfo](api-domainjoininfo.md) object
 
 Required: No
 
@@ -368,7 +368,7 @@ Required: No
 
 The configuration for the root volume of fleet instances. Use this to customize storage capacity from 200 GB up to 500 GB based on your application requirements.
 
-Type: [VolumeConfig](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_VolumeConfig.html) object
+Type: [VolumeConfig](api-volumeconfig.md) object
 
 Required: No
 
@@ -376,7 +376,7 @@ Required: No
 
 The S3 location of the session scripts configuration zip file. This only applies to Elastic fleets.
 
-Type: [S3Location](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_S3Location.html) object
+Type: [S3Location](api-s3location.md) object
 
 Required: No
 
@@ -402,7 +402,7 @@ Generally allowed characters are: letters, numbers, and spaces representable in 
 
 \_ . : / = + \ - @
 
-For more information, see [Tagging Your Resources](https://docs.aws.amazon.com/appstream2/latest/developerguide/tagging-basic.html) in the _Amazon WorkSpaces Applications Administration Guide_.
+For more information, see [Tagging Your Resources](../../../../services/appstream2/latest/developerguide/tagging-basic.md) in the _Amazon WorkSpaces Applications Administration Guide_.
 
 Type: String to string map
 
@@ -434,7 +434,7 @@ Required: No
 
 The VPC configuration for the fleet. This is required for Elastic fleets, but not required for other fleet types. Elastic fleets require that you specify at least two subnets in different availability zones.
 
-Type: [VpcConfig](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_VpcConfig.html) object
+Type: [VpcConfig](api-vpcconfig.md) object
 
 Required: No
 
@@ -513,11 +513,11 @@ The following data is returned in JSON format by the service.
 
 Information about the fleet.
 
-Type: [Fleet](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Fleet.html) object
+Type: [Fleet](api-fleet.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/appstream2/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **ConcurrentModificationException**
 
@@ -633,27 +633,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appstream-2016-12-01/CreateFleet)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/appstream-2016-12-01/createfleet.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appstream-2016-12-01/CreateFleet)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appstream-2016-12-01/createfleet.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appstream-2016-12-01/CreateFleet)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appstream-2016-12-01/createfleet.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appstream-2016-12-01/CreateFleet)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/appstream-2016-12-01/createfleet.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appstream-2016-12-01/CreateFleet)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appstream-2016-12-01/createfleet.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appstream-2016-12-01/CreateFleet)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appstream-2016-12-01/createfleet.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appstream-2016-12-01/CreateFleet)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appstream-2016-12-01/createfleet.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appstream-2016-12-01/CreateFleet)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appstream-2016-12-01/createfleet.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/appstream-2016-12-01/CreateFleet)
+- [AWS SDK for Python](../../../../services/goto/boto3/appstream-2016-12-01/createfleet.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appstream-2016-12-01/CreateFleet)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appstream-2016-12-01/createfleet.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateExportImageTask
 

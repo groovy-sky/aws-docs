@@ -4,15 +4,15 @@ Menu
 
 ## MTurk
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mturk.html\#toc)
+### Table of Contents  [header link](namespace-aws-mturk-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mturk.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-mturk-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mturk.exception.html)
+[Exception](namespace-aws-mturk-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mturk.html\#toc-classes)
+#### Classes  [header link](namespace-aws-mturk-toc-classes.md)
 
-[MTurkClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MTurk.MTurkClient.html)This client is used to interact with the **Amazon Mechanical Turk Requester Service** service.
+[MTurkClient](class-aws-mturk-mturkclient.md)This client is used to interact with the **Amazon Mechanical Turk Requester Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mturk.html#toc-classes)
+  - [Classes](namespace-aws-mturk-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mturk.html#top)
+[Back To Top](namespace-aws-mturk-top.md)

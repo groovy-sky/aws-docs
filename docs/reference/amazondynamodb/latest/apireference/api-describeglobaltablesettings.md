@@ -6,7 +6,7 @@ Describes Region-specific settings for a global table.
 
 This documentation is for version 2017.11.29 (Legacy) of global tables, which should be avoided for new global tables. Customers should use [Global Tables version 2019.11.21 (Current)](../../../../services/dynamodb/latest/developerguide/globaltables.md) when possible, because it provides greater flexibility, higher efficiency, and consumes less write capacity than 2017.11.29 (Legacy).
 
-To determine which version you're using, see [Determining the global table version you are using](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.DetermineVersion.html). To update existing global tables from version 2017.11.29 (Legacy) to version 2019.11.21 (Current), see [Upgrading global tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables_upgrade.html).
+To determine which version you're using, see [Determining the global table version you are using](../../../../services/dynamodb/latest/developerguide/globaltables-determineversion.md). To update existing global tables from version 2017.11.29 (Legacy) to version 2019.11.21 (Current), see [Upgrading global tables](../../../../services/dynamodb/latest/developerguide/v2globaltables-upgrade.md).
 
 ## Request Syntax
 
@@ -158,7 +158,7 @@ Pattern: `[a-zA-Z0-9_.-]+`
 
 The Region-specific settings for the global table.
 
-Type: Array of [ReplicaSettingsDescription](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ReplicaSettingsDescription.html) objects
+Type: Array of [ReplicaSettingsDescription](api-replicasettingsdescription.md) objects
 
 ## Errors
 
@@ -184,27 +184,27 @@ HTTP Status Code: 500
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/dynamodb-2012-08-10/DescribeGlobalTableSettings)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/dynamodb-2012-08-10/describeglobaltablesettings.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/DescribeGlobalTableSettings)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/dynamodb-2012-08-10/describeglobaltablesettings.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/DescribeGlobalTableSettings)
+- [AWS SDK for C++](../../../goto/sdkforcpp/dynamodb-2012-08-10/describeglobaltablesettings.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/dynamodb-2012-08-10/DescribeGlobalTableSettings)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/dynamodb-2012-08-10/describeglobaltablesettings.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/DescribeGlobalTableSettings)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/dynamodb-2012-08-10/describeglobaltablesettings.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/dynamodb-2012-08-10/DescribeGlobalTableSettings)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/dynamodb-2012-08-10/describeglobaltablesettings.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/dynamodb-2012-08-10/DescribeGlobalTableSettings)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/dynamodb-2012-08-10/describeglobaltablesettings.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/DescribeGlobalTableSettings)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/dynamodb-2012-08-10/describeglobaltablesettings.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/DescribeGlobalTableSettings)
+- [AWS SDK for Python](../../../../services/goto/boto3/dynamodb-2012-08-10/describeglobaltablesettings.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/DescribeGlobalTableSettings)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/describeglobaltablesettings.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DescribeGlobalTable
 

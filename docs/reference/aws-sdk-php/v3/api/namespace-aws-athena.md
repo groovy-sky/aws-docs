@@ -4,15 +4,15 @@ Menu
 
 ## Athena
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.athena.html\#toc)
+### Table of Contents  [header link](namespace-aws-athena-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.athena.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-athena-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.athena.exception.html)
+[Exception](namespace-aws-athena-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.athena.html\#toc-classes)
+#### Classes  [header link](namespace-aws-athena-toc-classes.md)
 
-[AthenaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Athena.AthenaClient.html)This client is used to interact with the **Amazon Athena** service.
+[AthenaClient](class-aws-athena-athenaclient.md)This client is used to interact with the **Amazon Athena** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.athena.html#toc-classes)
+  - [Classes](namespace-aws-athena-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.athena.html#top)
+[Back To Top](namespace-aws-athena-top.md)

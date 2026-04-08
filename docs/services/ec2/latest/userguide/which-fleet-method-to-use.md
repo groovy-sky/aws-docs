@@ -6,7 +6,7 @@ list of additional features includes automatic health check replacements for bot
 and On-Demand Instances, application-based health checks, and an integration with Elastic Load Balancing to ensure an
 even distribution of application traffic to your healthy instances. You can also use
 Auto Scaling groups when you use AWS services such as Amazon ECS, Amazon EKS (self-managed node groups),
-and Amazon VPC Lattice. For more information, see the [Amazon EC2 Auto Scaling User Guide](https://docs.aws.amazon.com/autoscaling/ec2/userguide).
+and Amazon VPC Lattice. For more information, see the [Amazon EC2 Auto Scaling User Guide](../../../autoscaling/ec2/userguide.md).
 
 If you can't use Amazon EC2 Auto Scaling, then you might consider using EC2 Fleet or Spot Fleet. EC2 Fleet and Spot Fleet
 offer the same core functionality. However, EC2 Fleet is only available using a command line

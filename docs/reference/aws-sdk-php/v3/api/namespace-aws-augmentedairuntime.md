@@ -4,15 +4,15 @@ Menu
 
 ## AugmentedAIRuntime
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.augmentedairuntime.html\#toc)
+### Table of Contents  [header link](namespace-aws-augmentedairuntime-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.augmentedairuntime.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-augmentedairuntime-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.augmentedairuntime.exception.html)
+[Exception](namespace-aws-augmentedairuntime-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.augmentedairuntime.html\#toc-classes)
+#### Classes  [header link](namespace-aws-augmentedairuntime-toc-classes.md)
 
-[AugmentedAIRuntimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AugmentedAIRuntime.AugmentedAIRuntimeClient.html)This client is used to interact with the **Amazon Augmented AI Runtime** service.
+[AugmentedAIRuntimeClient](class-aws-augmentedairuntime-augmentedairuntimeclient.md)This client is used to interact with the **Amazon Augmented AI Runtime** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.augmentedairuntime.html#toc-classes)
+  - [Classes](namespace-aws-augmentedairuntime-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.augmentedairuntime.html#top)
+[Back To Top](namespace-aws-augmentedairuntime-top.md)

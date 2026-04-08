@@ -16,7 +16,7 @@ values.
 ###### Important
 
 To delete the resource record set that is associated with a traffic policy
-instance, use [DeleteTrafficPolicyInstance](https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteTrafficPolicyInstance.html). Amazon Route 53 will delete the
+instance, use [DeleteTrafficPolicyInstance](api-deletetrafficpolicyinstance.md). Amazon Route 53 will delete the
 resource record set automatically. If you delete the resource record set by
 using `ChangeResourceRecordSets`, Route 53 doesn't automatically
 delete the traffic policy instance, and you'll continue to be charged for it
@@ -36,7 +36,7 @@ Required: Yes
 
 Information about the resource record set to create, delete, or update.
 
-Type: [ResourceRecordSet](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ResourceRecordSet.html) object
+Type: [ResourceRecordSet](api-resourcerecordset.md) object
 
 Required: Yes
 
@@ -44,13 +44,13 @@ Required: Yes
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53-2013-04-01/Change)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53-2013-04-01/change.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53-2013-04-01/Change)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53-2013-04-01/change.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53-2013-04-01/Change)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53-2013-04-01/change.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AliasTarget
 

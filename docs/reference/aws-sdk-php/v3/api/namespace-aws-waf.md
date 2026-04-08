@@ -4,15 +4,15 @@ Menu
 
 ## Waf
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.waf.html\#toc)
+### Table of Contents  [header link](namespace-aws-waf-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.waf.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-waf-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.waf.exception.html)
+[Exception](namespace-aws-waf-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.waf.html\#toc-classes)
+#### Classes  [header link](namespace-aws-waf-toc-classes.md)
 
-[WafClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Waf.WafClient.html)This client is used to interact with the **AWS WAF** service.
+[WafClient](class-aws-waf-wafclient.md)This client is used to interact with the **AWS WAF** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.waf.html#toc-classes)
+  - [Classes](namespace-aws-waf-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.waf.html#top)
+[Back To Top](namespace-aws-waf-top.md)

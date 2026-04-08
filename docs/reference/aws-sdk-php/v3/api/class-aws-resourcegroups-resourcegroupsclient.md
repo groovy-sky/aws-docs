@@ -17,35 +17,35 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-11-27**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html)
+- [**2017-11-27**](api-resource-groups-2017-11-27.md)
 
-  - [CancelTagSyncTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#canceltagsynctask)
-  - [CreateGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#creategroup)
-  - [DeleteGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#deletegroup)
-  - [GetAccountSettings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#getaccountsettings)
-  - [GetGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#getgroup)
-  - [GetGroupConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#getgroupconfiguration)
-  - [GetGroupQuery](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#getgroupquery)
-  - [GetTagSyncTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#gettagsynctask)
-  - [GetTags](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#gettags)
-  - [GroupResources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#groupresources)
-  - [ListGroupResources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#listgroupresources)
-  - [ListGroupingStatuses](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#listgroupingstatuses)
-  - [ListGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#listgroups)
-  - [ListTagSyncTasks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#listtagsynctasks)
-  - [PutGroupConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#putgroupconfiguration)
-  - [SearchResources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#searchresources)
-  - [StartTagSyncTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#starttagsynctask)
-  - [Tag](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#tag)
-  - [UngroupResources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#ungroupresources)
-  - [Untag](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#untag)
-  - [UpdateAccountSettings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#updateaccountsettings)
-  - [UpdateGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#updategroup)
-  - [UpdateGroupQuery](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-groups-2017-11-27.html#updategroupquery)
+  - [CancelTagSyncTask](api-resource-groups-2017-11-27-canceltagsynctask.md)
+  - [CreateGroup](api-resource-groups-2017-11-27-creategroup.md)
+  - [DeleteGroup](api-resource-groups-2017-11-27-deletegroup.md)
+  - [GetAccountSettings](api-resource-groups-2017-11-27-getaccountsettings.md)
+  - [GetGroup](api-resource-groups-2017-11-27-getgroup.md)
+  - [GetGroupConfiguration](api-resource-groups-2017-11-27-getgroupconfiguration.md)
+  - [GetGroupQuery](api-resource-groups-2017-11-27-getgroupquery.md)
+  - [GetTagSyncTask](api-resource-groups-2017-11-27-gettagsynctask.md)
+  - [GetTags](api-resource-groups-2017-11-27-gettags.md)
+  - [GroupResources](api-resource-groups-2017-11-27-groupresources.md)
+  - [ListGroupResources](api-resource-groups-2017-11-27-listgroupresources.md)
+  - [ListGroupingStatuses](api-resource-groups-2017-11-27-listgroupingstatuses.md)
+  - [ListGroups](api-resource-groups-2017-11-27-listgroups.md)
+  - [ListTagSyncTasks](api-resource-groups-2017-11-27-listtagsynctasks.md)
+  - [PutGroupConfiguration](api-resource-groups-2017-11-27-putgroupconfiguration.md)
+  - [SearchResources](api-resource-groups-2017-11-27-searchresources.md)
+  - [StartTagSyncTask](api-resource-groups-2017-11-27-starttagsynctask.md)
+  - [Tag](api-resource-groups-2017-11-27-tag.md)
+  - [UngroupResources](api-resource-groups-2017-11-27-ungroupresources.md)
+  - [Untag](api-resource-groups-2017-11-27-untag.md)
+  - [UpdateAccountSettings](api-resource-groups-2017-11-27-updateaccountsettings.md)
+  - [UpdateGroup](api-resource-groups-2017-11-27-updategroup.md)
+  - [UpdateGroupQuery](api-resource-groups-2017-11-27-updategroupquery.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResourceGroups.ResourceGroupsClient.html\#toc)
+### Table of Contents  [header link](class-aws-resourcegroups-resourcegroupsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResourceGroups.ResourceGroupsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-resourcegroups-resourcegroupsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -76,7 +76,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResourceGroups.ResourceGroupsClient.html\#methods)
+### Methods  [header link](class-aws-resourcegroups-resourcegroupsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -543,7 +543,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResourceGroups.ResourceGroupsClient.html#toc-methods)
+  - [Methods](class-aws-resourcegroups-resourcegroupsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -570,4 +570,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResourceGroups.ResourceGroupsClient.html#top)
+[Back To Top](class-aws-resourcegroups-resourcegroupsclient-top.md)

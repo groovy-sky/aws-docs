@@ -17,31 +17,31 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-07-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-translate-2017-07-01.html)
+- [**2017-07-01**](api-translate-2017-07-01.md)
 
-  - [CreateParallelData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-translate-2017-07-01.html#createparalleldata)
-  - [DeleteParallelData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-translate-2017-07-01.html#deleteparalleldata)
-  - [DeleteTerminology](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-translate-2017-07-01.html#deleteterminology)
-  - [DescribeTextTranslationJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-translate-2017-07-01.html#describetexttranslationjob)
-  - [GetParallelData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-translate-2017-07-01.html#getparalleldata)
-  - [GetTerminology](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-translate-2017-07-01.html#getterminology)
-  - [ImportTerminology](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-translate-2017-07-01.html#importterminology)
-  - [ListLanguages](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-translate-2017-07-01.html#listlanguages)
-  - [ListParallelData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-translate-2017-07-01.html#listparalleldata)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-translate-2017-07-01.html#listtagsforresource)
-  - [ListTerminologies](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-translate-2017-07-01.html#listterminologies)
-  - [ListTextTranslationJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-translate-2017-07-01.html#listtexttranslationjobs)
-  - [StartTextTranslationJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-translate-2017-07-01.html#starttexttranslationjob)
-  - [StopTextTranslationJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-translate-2017-07-01.html#stoptexttranslationjob)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-translate-2017-07-01.html#tagresource)
-  - [TranslateDocument](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-translate-2017-07-01.html#translatedocument)
-  - [TranslateText](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-translate-2017-07-01.html#translatetext)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-translate-2017-07-01.html#untagresource)
-  - [UpdateParallelData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-translate-2017-07-01.html#updateparalleldata)
+  - [CreateParallelData](api-translate-2017-07-01-createparalleldata.md)
+  - [DeleteParallelData](api-translate-2017-07-01-deleteparalleldata.md)
+  - [DeleteTerminology](api-translate-2017-07-01-deleteterminology.md)
+  - [DescribeTextTranslationJob](api-translate-2017-07-01-describetexttranslationjob.md)
+  - [GetParallelData](api-translate-2017-07-01-getparalleldata.md)
+  - [GetTerminology](api-translate-2017-07-01-getterminology.md)
+  - [ImportTerminology](api-translate-2017-07-01-importterminology.md)
+  - [ListLanguages](api-translate-2017-07-01-listlanguages.md)
+  - [ListParallelData](api-translate-2017-07-01-listparalleldata.md)
+  - [ListTagsForResource](api-translate-2017-07-01-listtagsforresource.md)
+  - [ListTerminologies](api-translate-2017-07-01-listterminologies.md)
+  - [ListTextTranslationJobs](api-translate-2017-07-01-listtexttranslationjobs.md)
+  - [StartTextTranslationJob](api-translate-2017-07-01-starttexttranslationjob.md)
+  - [StopTextTranslationJob](api-translate-2017-07-01-stoptexttranslationjob.md)
+  - [TagResource](api-translate-2017-07-01-tagresource.md)
+  - [TranslateDocument](api-translate-2017-07-01-translatedocument.md)
+  - [TranslateText](api-translate-2017-07-01-translatetext.md)
+  - [UntagResource](api-translate-2017-07-01-untagresource.md)
+  - [UpdateParallelData](api-translate-2017-07-01-updateparalleldata.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Translate.TranslateClient.html\#toc)
+### Table of Contents  [header link](class-aws-translate-translateclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Translate.TranslateClient.html\#toc-methods)
+#### Methods  [header link](class-aws-translate-translateclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -72,7 +72,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Translate.TranslateClient.html\#methods)
+### Methods  [header link](class-aws-translate-translateclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -539,7 +539,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Translate.TranslateClient.html#toc-methods)
+  - [Methods](class-aws-translate-translateclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -566,4 +566,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Translate.TranslateClient.html#top)
+[Back To Top](class-aws-translate-translateclient-top.md)

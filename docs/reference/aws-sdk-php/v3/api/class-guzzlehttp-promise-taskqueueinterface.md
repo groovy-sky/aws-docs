@@ -1,23 +1,23 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Promise](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.promise.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Promise](namespace-guzzlehttp-promise.md)
 
 ## TaskQueueInterface     in    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueueInterface.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-promise-taskqueueinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueueInterface.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-promise-taskqueueinterface-toc-methods.md)
 
-[add()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueueInterface.html#method_add)
+[add()](class-guzzlehttp-promise-taskqueueinterface-method-add.md)
 : void Adds a task to the queue that will be executed the next time run is
-called.[isEmpty()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueueInterface.html#method_isEmpty)
-: bool Returns true if the queue is empty.[run()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueueInterface.html#method_run)
+called.[isEmpty()](class-guzzlehttp-promise-taskqueueinterface-method-isempty.md)
+: bool Returns true if the queue is empty.[run()](class-guzzlehttp-promise-taskqueueinterface-method-run.md)
 : void Execute all of the pending task in the queue.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueueInterface.html\#methods)
+### Methods  [header link](class-guzzlehttp-promise-taskqueueinterface-methods.md)
 
-#### add()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueueInterface.html\#method_add)
+#### add()  [header link](class-guzzlehttp-promise-taskqueueinterface-method-add.md)
 
 Adds a task to the queue that will be executed the next time run is
 called.
@@ -31,7 +31,7 @@ called.
 $task
 : callable
 
-#### isEmpty()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueueInterface.html\#method_isEmpty)
+#### isEmpty()  [header link](class-guzzlehttp-promise-taskqueueinterface-method-isempty.md)
 
 Returns true if the queue is empty.
 
@@ -43,7 +43,7 @@ Returns true if the queue is empty.
 
 bool
 
-#### run()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueueInterface.html\#method_run)
+#### run()  [header link](class-guzzlehttp-promise-taskqueueinterface-method-run.md)
 
 Execute all of the pending task in the queue.
 
@@ -58,11 +58,11 @@ Execute all of the pending task in the queue.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueueInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueueInterface.html#toc-methods)
+  - [Constants](class-guzzlehttp-promise-taskqueueinterface-toc-constants.md)
+  - [Methods](class-guzzlehttp-promise-taskqueueinterface-toc-methods.md)
 - Methods
-  - [add()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueueInterface.html#method_add)
-  - [isEmpty()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueueInterface.html#method_isEmpty)
-  - [run()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueueInterface.html#method_run)
+  - [add()](class-guzzlehttp-promise-taskqueueinterface-method-add.md)
+  - [isEmpty()](class-guzzlehttp-promise-taskqueueinterface-method-isempty.md)
+  - [run()](class-guzzlehttp-promise-taskqueueinterface-method-run.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueueInterface.html#top)
+[Back To Top](class-guzzlehttp-promise-taskqueueinterface-top.md)

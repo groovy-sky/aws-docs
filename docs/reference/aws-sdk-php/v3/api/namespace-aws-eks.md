@@ -4,15 +4,15 @@ Menu
 
 ## EKS
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.eks.html\#toc)
+### Table of Contents  [header link](namespace-aws-eks-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.eks.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-eks-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.eks.exception.html)
+[Exception](namespace-aws-eks-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.eks.html\#toc-classes)
+#### Classes  [header link](namespace-aws-eks-toc-classes.md)
 
-[EKSClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EKS.EKSClient.html)This client is used to interact with the **Amazon Elastic Container Service for Kubernetes** service.
+[EKSClient](class-aws-eks-eksclient.md)This client is used to interact with the **Amazon Elastic Container Service for Kubernetes** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.eks.html#toc-classes)
+  - [Classes](namespace-aws-eks-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.eks.html#top)
+[Back To Top](namespace-aws-eks-top.md)

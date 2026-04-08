@@ -17,16 +17,16 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2019-12-02**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-cluster-2019-12-02.html)
+- [**2019-12-02**](api-route53-recovery-cluster-2019-12-02.md)
 
-  - [GetRoutingControlState](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-cluster-2019-12-02.html#getroutingcontrolstate)
-  - [ListRoutingControls](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-cluster-2019-12-02.html#listroutingcontrols)
-  - [UpdateRoutingControlState](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-cluster-2019-12-02.html#updateroutingcontrolstate)
-  - [UpdateRoutingControlStates](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-cluster-2019-12-02.html#updateroutingcontrolstates)
+  - [GetRoutingControlState](api-route53-recovery-cluster-2019-12-02-getroutingcontrolstate.md)
+  - [ListRoutingControls](api-route53-recovery-cluster-2019-12-02-listroutingcontrols.md)
+  - [UpdateRoutingControlState](api-route53-recovery-cluster-2019-12-02-updateroutingcontrolstate.md)
+  - [UpdateRoutingControlStates](api-route53-recovery-cluster-2019-12-02-updateroutingcontrolstates.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryCluster.Route53RecoveryClusterClient.html\#toc)
+### Table of Contents  [header link](class-aws-route53recoverycluster-route53recoveryclusterclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryCluster.Route53RecoveryClusterClient.html\#toc-methods)
+#### Methods  [header link](class-aws-route53recoverycluster-route53recoveryclusterclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -57,7 +57,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryCluster.Route53RecoveryClusterClient.html\#methods)
+### Methods  [header link](class-aws-route53recoverycluster-route53recoveryclusterclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -524,7 +524,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryCluster.Route53RecoveryClusterClient.html#toc-methods)
+  - [Methods](class-aws-route53recoverycluster-route53recoveryclusterclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -551,4 +551,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryCluster.Route53RecoveryClusterClient.html#top)
+[Back To Top](class-aws-route53recoverycluster-route53recoveryclusterclient-top.md)

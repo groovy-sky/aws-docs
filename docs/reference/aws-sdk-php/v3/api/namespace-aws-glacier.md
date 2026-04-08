@@ -4,15 +4,15 @@ Menu
 
 ## Glacier
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.glacier.html\#toc)
+### Table of Contents  [header link](namespace-aws-glacier-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.glacier.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-glacier-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.glacier.exception.html)
+[Exception](namespace-aws-glacier-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.glacier.html\#toc-classes)
+#### Classes  [header link](namespace-aws-glacier-toc-classes.md)
 
-[GlacierClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.GlacierClient.html)This client is used to interact with the **Amazon Glacier** service.[MultipartUploader](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.MultipartUploader.html)This client is used to interact with the **Amazon Glacier** service.[TreeHash](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html)This client is used to interact with the **Amazon Glacier** service.
+[GlacierClient](class-aws-glacier-glacierclient.md)This client is used to interact with the **Amazon Glacier** service.[MultipartUploader](class-aws-glacier-multipartuploader.md)This client is used to interact with the **Amazon Glacier** service.[TreeHash](class-aws-glacier-treehash.md)This client is used to interact with the **Amazon Glacier** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.glacier.html#toc-classes)
+  - [Classes](namespace-aws-glacier-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.glacier.html#top)
+[Back To Top](namespace-aws-glacier-top.md)

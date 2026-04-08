@@ -4,15 +4,15 @@ Menu
 
 ## ARCRegionSwitch
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.arcregionswitch.html\#toc)
+### Table of Contents  [header link](namespace-aws-arcregionswitch-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.arcregionswitch.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-arcregionswitch-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.arcregionswitch.exception.html)
+[Exception](namespace-aws-arcregionswitch-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.arcregionswitch.html\#toc-classes)
+#### Classes  [header link](namespace-aws-arcregionswitch-toc-classes.md)
 
-[ARCRegionSwitchClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ARCRegionSwitch.ARCRegionSwitchClient.html)This client is used to interact with the **ARC - Region switch** service.
+[ARCRegionSwitchClient](class-aws-arcregionswitch-arcregionswitchclient.md)This client is used to interact with the **ARC - Region switch** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.arcregionswitch.html#toc-classes)
+  - [Classes](namespace-aws-arcregionswitch-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.arcregionswitch.html#top)
+[Back To Top](namespace-aws-arcregionswitch-top.md)

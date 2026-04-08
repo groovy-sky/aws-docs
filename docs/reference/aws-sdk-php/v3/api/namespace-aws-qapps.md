@@ -4,15 +4,15 @@ Menu
 
 ## QApps
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.qapps.html\#toc)
+### Table of Contents  [header link](namespace-aws-qapps-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.qapps.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-qapps-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.qapps.exception.html)
+[Exception](namespace-aws-qapps-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.qapps.html\#toc-classes)
+#### Classes  [header link](namespace-aws-qapps-toc-classes.md)
 
-[QAppsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.QApps.QAppsClient.html)This client is used to interact with the **QApps** service.
+[QAppsClient](class-aws-qapps-qappsclient.md)This client is used to interact with the **QApps** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.qapps.html#toc-classes)
+  - [Classes](namespace-aws-qapps-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.qapps.html#top)
+[Back To Top](namespace-aws-qapps-top.md)

@@ -23,7 +23,7 @@ network.
 The following image shows instances that are placed into a cluster placement
 group.
 
-![A cluster placement group.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/placement-group-cluster.png)
+![A cluster placement group.](../../../images/awsec2/latest/userguide/images/placement-group-cluster-png.md)
 
 Cluster placement groups are recommended for applications that benefit from low
 network latency, high network throughput, or both. They are also recommended when
@@ -116,7 +116,7 @@ partition do not share racks with the instances in the other partitions, allowin
 you to contain the impact of a single hardware failure to only the associated
 partition.
 
-![A partition placement group with three partitions.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/placement-group-partition.png)
+![A partition placement group with three partitions.](../../../images/awsec2/latest/userguide/images/placement-group-partition-png.md)
 
 Partition placement groups can be used to deploy large distributed and replicated
 workloads, such as HDFS, HBase, and Cassandra, across distinct racks. When you
@@ -183,7 +183,7 @@ The following image shows seven instances in a single Availability Zone that
 are placed into a spread placement group. The seven instances are placed on
 seven different racks, each rack has its own network and power source.
 
-![A spread placement group.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/placement-group-spread.png)
+![A spread placement group.](../../../images/awsec2/latest/userguide/images/placement-group-spread-png.md)
 
 A rack level spread placement group can span multiple Availability Zones in the same
 Region. In a Region, a rack level spread placement group can have a maximum of seven

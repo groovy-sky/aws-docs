@@ -17,43 +17,43 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2021-07-15**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html)
+- [**2021-07-15**](api-chime-sdk-media-pipelines-2021-07-15.md)
 
-  - [CreateMediaCapturePipeline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#createmediacapturepipeline)
-  - [CreateMediaConcatenationPipeline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#createmediaconcatenationpipeline)
-  - [CreateMediaInsightsPipeline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#createmediainsightspipeline)
-  - [CreateMediaInsightsPipelineConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#createmediainsightspipelineconfiguration)
-  - [CreateMediaLiveConnectorPipeline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#createmedialiveconnectorpipeline)
-  - [CreateMediaPipelineKinesisVideoStreamPool](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#createmediapipelinekinesisvideostreampool)
-  - [CreateMediaStreamPipeline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#createmediastreampipeline)
-  - [DeleteMediaCapturePipeline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#deletemediacapturepipeline)
-  - [DeleteMediaInsightsPipelineConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#deletemediainsightspipelineconfiguration)
-  - [DeleteMediaPipeline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#deletemediapipeline)
-  - [DeleteMediaPipelineKinesisVideoStreamPool](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#deletemediapipelinekinesisvideostreampool)
-  - [GetMediaCapturePipeline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#getmediacapturepipeline)
-  - [GetMediaInsightsPipelineConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#getmediainsightspipelineconfiguration)
-  - [GetMediaPipeline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#getmediapipeline)
-  - [GetMediaPipelineKinesisVideoStreamPool](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#getmediapipelinekinesisvideostreampool)
-  - [GetSpeakerSearchTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#getspeakersearchtask)
-  - [GetVoiceToneAnalysisTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#getvoicetoneanalysistask)
-  - [ListMediaCapturePipelines](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#listmediacapturepipelines)
-  - [ListMediaInsightsPipelineConfigurations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#listmediainsightspipelineconfigurations)
-  - [ListMediaPipelineKinesisVideoStreamPools](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#listmediapipelinekinesisvideostreampools)
-  - [ListMediaPipelines](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#listmediapipelines)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#listtagsforresource)
-  - [StartSpeakerSearchTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#startspeakersearchtask)
-  - [StartVoiceToneAnalysisTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#startvoicetoneanalysistask)
-  - [StopSpeakerSearchTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#stopspeakersearchtask)
-  - [StopVoiceToneAnalysisTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#stopvoicetoneanalysistask)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#untagresource)
-  - [UpdateMediaInsightsPipelineConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#updatemediainsightspipelineconfiguration)
-  - [UpdateMediaInsightsPipelineStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#updatemediainsightspipelinestatus)
-  - [UpdateMediaPipelineKinesisVideoStreamPool](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-media-pipelines-2021-07-15.html#updatemediapipelinekinesisvideostreampool)
+  - [CreateMediaCapturePipeline](api-chime-sdk-media-pipelines-2021-07-15-createmediacapturepipeline.md)
+  - [CreateMediaConcatenationPipeline](api-chime-sdk-media-pipelines-2021-07-15-createmediaconcatenationpipeline.md)
+  - [CreateMediaInsightsPipeline](api-chime-sdk-media-pipelines-2021-07-15-createmediainsightspipeline.md)
+  - [CreateMediaInsightsPipelineConfiguration](api-chime-sdk-media-pipelines-2021-07-15-createmediainsightspipelineconfiguration.md)
+  - [CreateMediaLiveConnectorPipeline](api-chime-sdk-media-pipelines-2021-07-15-createmedialiveconnectorpipeline.md)
+  - [CreateMediaPipelineKinesisVideoStreamPool](api-chime-sdk-media-pipelines-2021-07-15-createmediapipelinekinesisvideostreampool.md)
+  - [CreateMediaStreamPipeline](api-chime-sdk-media-pipelines-2021-07-15-createmediastreampipeline.md)
+  - [DeleteMediaCapturePipeline](api-chime-sdk-media-pipelines-2021-07-15-deletemediacapturepipeline.md)
+  - [DeleteMediaInsightsPipelineConfiguration](api-chime-sdk-media-pipelines-2021-07-15-deletemediainsightspipelineconfiguration.md)
+  - [DeleteMediaPipeline](api-chime-sdk-media-pipelines-2021-07-15-deletemediapipeline.md)
+  - [DeleteMediaPipelineKinesisVideoStreamPool](api-chime-sdk-media-pipelines-2021-07-15-deletemediapipelinekinesisvideostreampool.md)
+  - [GetMediaCapturePipeline](api-chime-sdk-media-pipelines-2021-07-15-getmediacapturepipeline.md)
+  - [GetMediaInsightsPipelineConfiguration](api-chime-sdk-media-pipelines-2021-07-15-getmediainsightspipelineconfiguration.md)
+  - [GetMediaPipeline](api-chime-sdk-media-pipelines-2021-07-15-getmediapipeline.md)
+  - [GetMediaPipelineKinesisVideoStreamPool](api-chime-sdk-media-pipelines-2021-07-15-getmediapipelinekinesisvideostreampool.md)
+  - [GetSpeakerSearchTask](api-chime-sdk-media-pipelines-2021-07-15-getspeakersearchtask.md)
+  - [GetVoiceToneAnalysisTask](api-chime-sdk-media-pipelines-2021-07-15-getvoicetoneanalysistask.md)
+  - [ListMediaCapturePipelines](api-chime-sdk-media-pipelines-2021-07-15-listmediacapturepipelines.md)
+  - [ListMediaInsightsPipelineConfigurations](api-chime-sdk-media-pipelines-2021-07-15-listmediainsightspipelineconfigurations.md)
+  - [ListMediaPipelineKinesisVideoStreamPools](api-chime-sdk-media-pipelines-2021-07-15-listmediapipelinekinesisvideostreampools.md)
+  - [ListMediaPipelines](api-chime-sdk-media-pipelines-2021-07-15-listmediapipelines.md)
+  - [ListTagsForResource](api-chime-sdk-media-pipelines-2021-07-15-listtagsforresource.md)
+  - [StartSpeakerSearchTask](api-chime-sdk-media-pipelines-2021-07-15-startspeakersearchtask.md)
+  - [StartVoiceToneAnalysisTask](api-chime-sdk-media-pipelines-2021-07-15-startvoicetoneanalysistask.md)
+  - [StopSpeakerSearchTask](api-chime-sdk-media-pipelines-2021-07-15-stopspeakersearchtask.md)
+  - [StopVoiceToneAnalysisTask](api-chime-sdk-media-pipelines-2021-07-15-stopvoicetoneanalysistask.md)
+  - [TagResource](api-chime-sdk-media-pipelines-2021-07-15-tagresource.md)
+  - [UntagResource](api-chime-sdk-media-pipelines-2021-07-15-untagresource.md)
+  - [UpdateMediaInsightsPipelineConfiguration](api-chime-sdk-media-pipelines-2021-07-15-updatemediainsightspipelineconfiguration.md)
+  - [UpdateMediaInsightsPipelineStatus](api-chime-sdk-media-pipelines-2021-07-15-updatemediainsightspipelinestatus.md)
+  - [UpdateMediaPipelineKinesisVideoStreamPool](api-chime-sdk-media-pipelines-2021-07-15-updatemediapipelinekinesisvideostreampool.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKMediaPipelines.ChimeSDKMediaPipelinesClient.html\#toc)
+### Table of Contents  [header link](class-aws-chimesdkmediapipelines-chimesdkmediapipelinesclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKMediaPipelines.ChimeSDKMediaPipelinesClient.html\#toc-methods)
+#### Methods  [header link](class-aws-chimesdkmediapipelines-chimesdkmediapipelinesclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -84,7 +84,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKMediaPipelines.ChimeSDKMediaPipelinesClient.html\#methods)
+### Methods  [header link](class-aws-chimesdkmediapipelines-chimesdkmediapipelinesclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -551,7 +551,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKMediaPipelines.ChimeSDKMediaPipelinesClient.html#toc-methods)
+  - [Methods](class-aws-chimesdkmediapipelines-chimesdkmediapipelinesclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -578,4 +578,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKMediaPipelines.ChimeSDKMediaPipelinesClient.html#top)
+[Back To Top](class-aws-chimesdkmediapipelines-chimesdkmediapipelinesclient-top.md)

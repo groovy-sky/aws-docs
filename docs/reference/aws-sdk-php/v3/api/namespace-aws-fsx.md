@@ -4,15 +4,15 @@ Menu
 
 ## FSx
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.fsx.html\#toc)
+### Table of Contents  [header link](namespace-aws-fsx-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.fsx.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-fsx-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.fsx.exception.html)
+[Exception](namespace-aws-fsx-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.fsx.html\#toc-classes)
+#### Classes  [header link](namespace-aws-fsx-toc-classes.md)
 
-[FSxClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FSx.FSxClient.html)This client is used to interact with the **Amazon FSx** service.
+[FSxClient](class-aws-fsx-fsxclient.md)This client is used to interact with the **Amazon FSx** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.fsx.html#toc-classes)
+  - [Classes](namespace-aws-fsx-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.fsx.html#top)
+[Back To Top](namespace-aws-fsx-top.md)

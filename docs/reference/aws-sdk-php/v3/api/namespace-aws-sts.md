@@ -4,15 +4,15 @@ Menu
 
 ## Sts
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sts.html\#toc)
+### Table of Contents  [header link](namespace-aws-sts-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sts.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-sts-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sts.exception.html)[RegionalEndpoints](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sts.regionalendpoints.html)
+[Exception](namespace-aws-sts-exception.md)[RegionalEndpoints](namespace-aws-sts-regionalendpoints.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sts.html\#toc-classes)
+#### Classes  [header link](namespace-aws-sts-toc-classes.md)
 
-[StsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.StsClient.html)This client is used to interact with the **AWS Security Token Service (AWS STS)**.
+[StsClient](class-aws-sts-stsclient.md)This client is used to interact with the **AWS Security Token Service (AWS STS)**.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sts.html#toc-classes)
+  - [Classes](namespace-aws-sts-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sts.html#top)
+[Back To Top](namespace-aws-sts-top.md)

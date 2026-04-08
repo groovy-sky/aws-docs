@@ -4,15 +4,15 @@ Menu
 
 ## MainframeModernization
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mainframemodernization.html\#toc)
+### Table of Contents  [header link](namespace-aws-mainframemodernization-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mainframemodernization.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-mainframemodernization-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mainframemodernization.exception.html)
+[Exception](namespace-aws-mainframemodernization-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mainframemodernization.html\#toc-classes)
+#### Classes  [header link](namespace-aws-mainframemodernization-toc-classes.md)
 
-[MainframeModernizationClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MainframeModernization.MainframeModernizationClient.html)This client is used to interact with the **AWSMainframeModernization** service.
+[MainframeModernizationClient](class-aws-mainframemodernization-mainframemodernizationclient.md)This client is used to interact with the **AWSMainframeModernization** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mainframemodernization.html#toc-classes)
+  - [Classes](namespace-aws-mainframemodernization-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mainframemodernization.html#top)
+[Back To Top](namespace-aws-mainframemodernization-top.md)

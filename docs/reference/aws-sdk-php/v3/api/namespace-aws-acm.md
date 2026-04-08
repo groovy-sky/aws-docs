@@ -4,15 +4,15 @@ Menu
 
 ## Acm
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.acm.html\#toc)
+### Table of Contents  [header link](namespace-aws-acm-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.acm.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-acm-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.acm.exception.html)
+[Exception](namespace-aws-acm-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.acm.html\#toc-classes)
+#### Classes  [header link](namespace-aws-acm-toc-classes.md)
 
-[AcmClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Acm.AcmClient.html)This client is used to interact with the **AWS Certificate Manager** service.
+[AcmClient](class-aws-acm-acmclient.md)This client is used to interact with the **AWS Certificate Manager** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.acm.html#toc-classes)
+  - [Classes](namespace-aws-acm-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.acm.html#top)
+[Back To Top](namespace-aws-acm-top.md)

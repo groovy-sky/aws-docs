@@ -4,15 +4,15 @@ Menu
 
 ## Appflow
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appflow.html\#toc)
+### Table of Contents  [header link](namespace-aws-appflow-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appflow.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-appflow-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appflow.exception.html)
+[Exception](namespace-aws-appflow-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appflow.html\#toc-classes)
+#### Classes  [header link](namespace-aws-appflow-toc-classes.md)
 
-[AppflowClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Appflow.AppflowClient.html)This client is used to interact with the **Amazon Appflow** service.
+[AppflowClient](class-aws-appflow-appflowclient.md)This client is used to interact with the **Amazon Appflow** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appflow.html#toc-classes)
+  - [Classes](namespace-aws-appflow-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appflow.html#top)
+[Back To Top](namespace-aws-appflow-top.md)

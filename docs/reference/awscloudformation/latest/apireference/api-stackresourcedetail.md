@@ -33,7 +33,7 @@ Required: Yes
 **ResourceType**
 
 Type of resource. For more information, see [AWS resource and\
-property types reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html) in the _AWS CloudFormation User Guide_.
+property types reference](../../../../services/cloudformation/latest/userguide/aws-template-resource-type-ref.md) in the _AWS CloudFormation User Guide_.
 
 Type: String
 
@@ -58,14 +58,14 @@ _drifted_, from its expected configuration, as defined in the stack template
 and any values specified as template parameters. For more information, see [Detect\
 unmanaged configuration changes to stacks and resources with drift detection](../../../../services/cloudformation/latest/userguide/using-cfn-stack-drift.md).
 
-Type: [StackResourceDriftInformation](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_StackResourceDriftInformation.html) object
+Type: [StackResourceDriftInformation](api-stackresourcedriftinformation.md) object
 
 Required: No
 
 **Metadata**
 
 The content of the `Metadata` attribute declared for the resource. For more
-information, see [Metadata attribute](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-metadata.html)
+information, see [Metadata attribute](../../../../services/cloudformation/latest/userguide/aws-attribute-metadata.md)
 in the _AWS CloudFormation User Guide_.
 
 Type: String
@@ -77,7 +77,7 @@ Required: No
 Contains information about the module from which the resource was created, if the resource
 was created from a module included in the stack template.
 
-Type: [ModuleInfo](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ModuleInfo.html) object
+Type: [ModuleInfo](api-moduleinfo.md) object
 
 Required: No
 
@@ -118,13 +118,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/StackResourceDetail)
+- [AWS SDK for C++](../../../goto/sdkforcpp/cloudformation-2010-05-15/stackresourcedetail.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/StackResourceDetail)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudformation-2010-05-15/stackresourcedetail.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/StackResourceDetail)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/stackresourcedetail.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 StackResource
 

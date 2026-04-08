@@ -1,8 +1,8 @@
 Menu
 
-- [Psr](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.html)
-- [Http](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.html)
-- [Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.client.html)
+- [Psr](namespace-psr.md)
+- [Http](namespace-psr-http.md)
+- [Client](namespace-psr-http-client.md)
 
 ## NetworkExceptionInterface    extends  [ClientExceptionInterface](class-psr-http-client-clientexceptioninterface.md)   in    - [Aws](package-aws.md)
 
@@ -12,16 +12,16 @@ There is no response object as this exception is thrown when no response has bee
 
 Example: the target host name can not be resolved or the connection failed.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.NetworkExceptionInterface.html\#toc)
+### Table of Contents  [header link](class-psr-http-client-networkexceptioninterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.NetworkExceptionInterface.html\#toc-methods)
+#### Methods  [header link](class-psr-http-client-networkexceptioninterface-toc-methods.md)
 
-[getRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.NetworkExceptionInterface.html#method_getRequest)
+[getRequest()](class-psr-http-client-networkexceptioninterface-method-getrequest.md)
 : [RequestInterface](class-psr-http-message-requestinterface.md)Returns the request.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.NetworkExceptionInterface.html\#methods)
+### Methods  [header link](class-psr-http-client-networkexceptioninterface-methods.md)
 
-#### getRequest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.NetworkExceptionInterface.html\#method_getRequest)
+#### getRequest()  [header link](class-psr-http-client-networkexceptioninterface-method-getrequest.md)
 
 Returns the request.
 
@@ -41,9 +41,9 @@ The request object MAY be a different object from the one passed to ClientInterf
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.NetworkExceptionInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.NetworkExceptionInterface.html#toc-methods)
+  - [Constants](class-psr-http-client-networkexceptioninterface-toc-constants.md)
+  - [Methods](class-psr-http-client-networkexceptioninterface-toc-methods.md)
 - Methods
-  - [getRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.NetworkExceptionInterface.html#method_getRequest)
+  - [getRequest()](class-psr-http-client-networkexceptioninterface-method-getrequest.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.NetworkExceptionInterface.html#top)
+[Back To Top](class-psr-http-client-networkexceptioninterface-top.md)

@@ -2,7 +2,7 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [Crypto](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.crypto.html)
+- [Crypto](namespace-aws-s3-crypto.md)
 
 ## InstructionFileMetadataStrategy        in package    - [Aws](package-aws.md)       implements  [MetadataStrategyInterface](class-aws-crypto-metadatastrategyinterface.md)
 
@@ -17,28 +17,28 @@ will be applied to each of the operations involved with the instruction file.
 If there is a failure after an instruction file has been uploaded, it will
 not be automatically deleted.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.InstructionFileMetadataStrategy.html\#toc)
+### Table of Contents  [header link](class-aws-s3-crypto-instructionfilemetadatastrategy-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.InstructionFileMetadataStrategy.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-s3-crypto-instructionfilemetadatastrategy-toc-interfaces.md)
 
 [MetadataStrategyInterface](class-aws-crypto-metadatastrategyinterface.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.InstructionFileMetadataStrategy.html\#toc-constants)
+#### Constants  [header link](class-aws-s3-crypto-instructionfilemetadatastrategy-toc-constants.md)
 
-[DEFAULT\_FILE\_SUFFIX](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.InstructionFileMetadataStrategy.html#constant_DEFAULT_FILE_SUFFIX)
+[DEFAULT\_FILE\_SUFFIX](class-aws-s3-crypto-instructionfilemetadatastrategy-constant-default-file-suffix.md)
 = '.instruction'
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.InstructionFileMetadataStrategy.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-crypto-instructionfilemetadatastrategy-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.InstructionFileMetadataStrategy.html#method___construct)
-: mixed [load()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.InstructionFileMetadataStrategy.html#method_load)
+[\_\_construct()](class-aws-s3-crypto-instructionfilemetadatastrategy-method-construct.md)
+: mixed [load()](class-aws-s3-crypto-instructionfilemetadatastrategy-method-load.md)
 : MetadataEnvelopeUses the strategy's client to retrieve the instruction file from S3 and generates
-a MetadataEnvelope from its contents.[save()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.InstructionFileMetadataStrategy.html#method_save)
+a MetadataEnvelope from its contents.[save()](class-aws-s3-crypto-instructionfilemetadatastrategy-method-save.md)
 : array<string\|int, mixed> Places the information in the MetadataEnvelope to a location on S3.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.InstructionFileMetadataStrategy.html\#constants)
+### Constants  [header link](class-aws-s3-crypto-instructionfilemetadatastrategy-constants.md)
 
-#### DEFAULT\_FILE\_SUFFIX  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.InstructionFileMetadataStrategy.html\#constant_DEFAULT_FILE_SUFFIX)
+#### DEFAULT\_FILE\_SUFFIX  [header link](class-aws-s3-crypto-instructionfilemetadatastrategy-constant-default-file-suffix.md)
 
 `
     public
@@ -47,9 +47,9 @@ a MetadataEnvelope from its contents.[save()](https://docs.aws.amazon.com/aws-sd
     = '.instruction'
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.InstructionFileMetadataStrategy.html\#methods)
+### Methods  [header link](class-aws-s3-crypto-instructionfilemetadatastrategy-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.InstructionFileMetadataStrategy.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-crypto-instructionfilemetadatastrategy-method-construct.md)
 
 `
     public
@@ -69,7 +69,7 @@ $suffix
 Optional override suffix for instruction file
 object keys.
 
-#### load()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.InstructionFileMetadataStrategy.html\#method_load)
+#### load()  [header link](class-aws-s3-crypto-instructionfilemetadatastrategy-method-load.md)
 
 Uses the strategy's client to retrieve the instruction file from S3 and generates
 a MetadataEnvelope from its contents.
@@ -91,7 +91,7 @@ configuration.
 
 MetadataEnvelope
 
-#### save()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.InstructionFileMetadataStrategy.html\#method_save)
+#### save()  [header link](class-aws-s3-crypto-instructionfilemetadatastrategy-method-save.md)
 
 Places the information in the MetadataEnvelope to a location on S3.
 
@@ -127,13 +127,13 @@ Updated arguments for PutObject.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.InstructionFileMetadataStrategy.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.InstructionFileMetadataStrategy.html#toc-methods)
+  - [Constants](class-aws-s3-crypto-instructionfilemetadatastrategy-toc-constants.md)
+  - [Methods](class-aws-s3-crypto-instructionfilemetadatastrategy-toc-methods.md)
 - Constants
-  - [DEFAULT\_FILE\_SUFFIX](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.InstructionFileMetadataStrategy.html#constant_DEFAULT_FILE_SUFFIX)
+  - [DEFAULT\_FILE\_SUFFIX](class-aws-s3-crypto-instructionfilemetadatastrategy-constant-default-file-suffix.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.InstructionFileMetadataStrategy.html#method___construct)
-  - [load()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.InstructionFileMetadataStrategy.html#method_load)
-  - [save()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.InstructionFileMetadataStrategy.html#method_save)
+  - [\_\_construct()](class-aws-s3-crypto-instructionfilemetadatastrategy-method-construct.md)
+  - [load()](class-aws-s3-crypto-instructionfilemetadatastrategy-method-load.md)
+  - [save()](class-aws-s3-crypto-instructionfilemetadatastrategy-method-save.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.InstructionFileMetadataStrategy.html#top)
+[Back To Top](class-aws-s3-crypto-instructionfilemetadatastrategy-top.md)

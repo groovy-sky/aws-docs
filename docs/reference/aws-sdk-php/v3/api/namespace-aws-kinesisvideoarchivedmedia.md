@@ -4,15 +4,15 @@ Menu
 
 ## KinesisVideoArchivedMedia
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisvideoarchivedmedia.html\#toc)
+### Table of Contents  [header link](namespace-aws-kinesisvideoarchivedmedia-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisvideoarchivedmedia.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-kinesisvideoarchivedmedia-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisvideoarchivedmedia.exception.html)
+[Exception](namespace-aws-kinesisvideoarchivedmedia-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisvideoarchivedmedia.html\#toc-classes)
+#### Classes  [header link](namespace-aws-kinesisvideoarchivedmedia-toc-classes.md)
 
-[KinesisVideoArchivedMediaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideoArchivedMedia.KinesisVideoArchivedMediaClient.html)This client is used to interact with the **Amazon Kinesis Video Streams Archived Media** service.
+[KinesisVideoArchivedMediaClient](class-aws-kinesisvideoarchivedmedia-kinesisvideoarchivedmediaclient.md)This client is used to interact with the **Amazon Kinesis Video Streams Archived Media** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisvideoarchivedmedia.html#toc-classes)
+  - [Classes](namespace-aws-kinesisvideoarchivedmedia-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisvideoarchivedmedia.html#top)
+[Back To Top](namespace-aws-kinesisvideoarchivedmedia-top.md)

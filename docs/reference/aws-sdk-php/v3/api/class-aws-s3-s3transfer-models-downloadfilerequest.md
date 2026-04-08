@@ -2,26 +2,26 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
-- [Models](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.models.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
+- [Models](namespace-aws-s3-s3transfer-models.md)
 
 ## DownloadFileRequest        in package    - [Aws](package-aws.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadFileRequest.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-models-downloadfilerequest-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadFileRequest.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-models-downloadfilerequest-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadFileRequest.html#method___construct)
-: mixed [getDestination()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadFileRequest.html#method_getDestination)
-: string [getDownloadRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadFileRequest.html#method_getDownloadRequest)
-: [DownloadRequest](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html)[isFailsWhenDestinationExists()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadFileRequest.html#method_isFailsWhenDestinationExists)
+[\_\_construct()](class-aws-s3-s3transfer-models-downloadfilerequest-method-construct.md)
+: mixed [getDestination()](class-aws-s3-s3transfer-models-downloadfilerequest-method-getdestination.md)
+: string [getDownloadRequest()](class-aws-s3-s3transfer-models-downloadfilerequest-method-getdownloadrequest.md)
+: [DownloadRequest](class-aws-s3-s3transfer-models-downloadrequest.md)[isFailsWhenDestinationExists()](class-aws-s3-s3transfer-models-downloadfilerequest-method-isfailswhendestinationexists.md)
 : bool
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadFileRequest.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-models-downloadfilerequest-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadFileRequest.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3transfer-models-downloadfilerequest-method-construct.md)
 
 `
     public
@@ -32,9 +32,9 @@ FinalYes
 $destination
 : string$failsWhenDestinationExists
 : bool$downloadRequest
-: [DownloadRequest](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html)
+: [DownloadRequest](class-aws-s3-s3transfer-models-downloadrequest.md)
 
-#### getDestination()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadFileRequest.html\#method_getDestination)
+#### getDestination()  [header link](class-aws-s3-s3transfer-models-downloadfilerequest-method-getdestination.md)
 
 `
     public
@@ -44,7 +44,7 @@ $destination
 
 string
 
-#### getDownloadRequest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadFileRequest.html\#method_getDownloadRequest)
+#### getDownloadRequest()  [header link](class-aws-s3-s3transfer-models-downloadfilerequest-method-getdownloadrequest.md)
 
 `
     public
@@ -52,9 +52,9 @@ string
 
 ##### Return values
 
-[DownloadRequest](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadRequest.html)
+[DownloadRequest](class-aws-s3-s3transfer-models-downloadrequest.md)
 
-#### isFailsWhenDestinationExists()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadFileRequest.html\#method_isFailsWhenDestinationExists)
+#### isFailsWhenDestinationExists()  [header link](class-aws-s3-s3transfer-models-downloadfilerequest-method-isfailswhendestinationexists.md)
 
 `
     public
@@ -70,11 +70,11 @@ bool
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadFileRequest.html#toc-methods)
+  - [Methods](class-aws-s3-s3transfer-models-downloadfilerequest-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadFileRequest.html#method___construct)
-  - [getDestination()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadFileRequest.html#method_getDestination)
-  - [getDownloadRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadFileRequest.html#method_getDownloadRequest)
-  - [isFailsWhenDestinationExists()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadFileRequest.html#method_isFailsWhenDestinationExists)
+  - [\_\_construct()](class-aws-s3-s3transfer-models-downloadfilerequest-method-construct.md)
+  - [getDestination()](class-aws-s3-s3transfer-models-downloadfilerequest-method-getdestination.md)
+  - [getDownloadRequest()](class-aws-s3-s3transfer-models-downloadfilerequest-method-getdownloadrequest.md)
+  - [isFailsWhenDestinationExists()](class-aws-s3-s3transfer-models-downloadfilerequest-method-isfailswhendestinationexists.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadFileRequest.html#top)
+[Back To Top](class-aws-s3-s3transfer-models-downloadfilerequest-top.md)

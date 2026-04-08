@@ -3,38 +3,38 @@ Menu
 - [Aws](namespace-aws.md)
 - [Crypto](namespace-aws-crypto.md)
 
-## KmsMaterialsProviderV3     extends [MaterialsProviderV3](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV3.html)   in package    - [Aws](package-aws.md)       implements  [MaterialsProviderInterfaceV3](class-aws-crypto-materialsproviderinterfacev3.md)
+## KmsMaterialsProviderV3     extends [MaterialsProviderV3](class-aws-crypto-materialsproviderv3.md)   in package    - [Aws](package-aws.md)       implements  [MaterialsProviderInterfaceV3](class-aws-crypto-materialsproviderinterfacev3.md)
 
 Uses KMS to supply materials for encrypting and decrypting data. This
 V2 implementation should be used with the V2 encryption clients (i.e.
 
 S3EncryptionClientV2).
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html\#toc)
+### Table of Contents  [header link](class-aws-crypto-kmsmaterialsproviderv3-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-crypto-kmsmaterialsproviderv3-toc-interfaces.md)
 
 [MaterialsProviderInterfaceV3](class-aws-crypto-materialsproviderinterfacev3.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html\#toc-constants)
+#### Constants  [header link](class-aws-crypto-kmsmaterialsproviderv3-toc-constants.md)
 
-[WRAP\_ALGORITHM\_NAME](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html#constant_WRAP_ALGORITHM_NAME)
+[WRAP\_ALGORITHM\_NAME](class-aws-crypto-kmsmaterialsproviderv3-constant-wrap-algorithm-name.md)
 = 'kms+context'
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html\#toc-methods)
+#### Methods  [header link](class-aws-crypto-kmsmaterialsproviderv3-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html#method___construct)
-: mixed [decryptCek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html#method_decryptCek)
+[\_\_construct()](class-aws-crypto-kmsmaterialsproviderv3-method-construct.md)
+: mixed [decryptCek()](class-aws-crypto-kmsmaterialsproviderv3-method-decryptcek.md)
 : string Takes an encrypted content encryption key (CEK) and material description
-for use decrypting the key according to the Provider's specifications.[generateCek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html#method_generateCek)
-: array<string\|int, mixed> [generateIv()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV3.html#method_generateIv)
-: string [getWrapAlgorithmName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html#method_getWrapAlgorithmName)
-: string Returns the wrap algorithm name for this Provider.[isSupportedKeySize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV3.html#method_isSupportedKeySize)
+for use decrypting the key according to the Provider's specifications.[generateCek()](class-aws-crypto-kmsmaterialsproviderv3-method-generatecek.md)
+: array<string\|int, mixed> [generateIv()](class-aws-crypto-materialsproviderv3-method-generateiv.md)
+: string [getWrapAlgorithmName()](class-aws-crypto-kmsmaterialsproviderv3-method-getwrapalgorithmname.md)
+: string Returns the wrap algorithm name for this Provider.[isSupportedKeySize()](class-aws-crypto-materialsproviderv3-method-issupportedkeysize.md)
 : bool Returns if the requested size is supported by AES.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html\#constants)
+### Constants  [header link](class-aws-crypto-kmsmaterialsproviderv3-constants.md)
 
-#### WRAP\_ALGORITHM\_NAME  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html\#constant_WRAP_ALGORITHM_NAME)
+#### WRAP\_ALGORITHM\_NAME  [header link](class-aws-crypto-kmsmaterialsproviderv3-constant-wrap-algorithm-name.md)
 
 `
     public
@@ -43,9 +43,9 @@ for use decrypting the key according to the Provider's specifications.[generateC
     = 'kms+context'
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html\#methods)
+### Methods  [header link](class-aws-crypto-kmsmaterialsproviderv3-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-crypto-kmsmaterialsproviderv3-method-construct.md)
 
 `
     public
@@ -54,7 +54,7 @@ for use decrypting the key according to the Provider's specifications.[generateC
 ##### Parameters
 
 $kmsClient
-: [KmsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Kms.KmsClient.html)
+: [KmsClient](class-aws-kms-kmsclient.md)
 
 A KMS Client for use encrypting and
 decrypting keys.
@@ -66,7 +66,7 @@ $kmsKeyId
 The private KMS key id to be used for encrypting
 and decrypting keys.
 
-#### decryptCek()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html\#method_decryptCek)
+#### decryptCek()  [header link](class-aws-crypto-kmsmaterialsproviderv3-method-decryptcek.md)
 
 Takes an encrypted content encryption key (CEK) and material description
 for use decrypting the key according to the Provider's specifications.
@@ -94,7 +94,7 @@ $options
 
 Options for use in decrypting the CEK.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html\#method_decryptCek\#tags)
+##### Tags  [header link](class-aws-crypto-kmsmaterialsproviderv3-method-decryptcek-tags.md)
 
 inheritDoc
 
@@ -102,7 +102,7 @@ inheritDoc
 
 string
 
-#### generateCek()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html\#method_generateCek)
+#### generateCek()  [header link](class-aws-crypto-kmsmaterialsproviderv3-method-generatecek.md)
 
 `
     public
@@ -126,7 +126,7 @@ $options
 
 Additional options to be used in CEK generation
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html\#method_generateCek\#tags)
+##### Tags  [header link](class-aws-crypto-kmsmaterialsproviderv3-method-generatecek-tags.md)
 
 inheritDoc
 
@@ -134,7 +134,7 @@ inheritDoc
 
 array<string\|int, mixed>
 
-#### generateIv()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV3.html\#method_generateIv)
+#### generateIv()  [header link](class-aws-crypto-materialsproviderv3-method-generateiv.md)
 
 `
     public
@@ -152,7 +152,7 @@ an initialization vector.
 
 string
 
-#### getWrapAlgorithmName()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html\#method_getWrapAlgorithmName)
+#### getWrapAlgorithmName()  [header link](class-aws-crypto-kmsmaterialsproviderv3-method-getwrapalgorithmname.md)
 
 Returns the wrap algorithm name for this Provider.
 
@@ -160,7 +160,7 @@ Returns the wrap algorithm name for this Provider.
     public
                     getWrapAlgorithmName() : string`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html\#method_getWrapAlgorithmName\#tags)
+##### Tags  [header link](class-aws-crypto-kmsmaterialsproviderv3-method-getwrapalgorithmname-tags.md)
 
 inheritDoc
 
@@ -168,7 +168,7 @@ inheritDoc
 
 string
 
-#### isSupportedKeySize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV3.html\#method_isSupportedKeySize)
+#### isSupportedKeySize()  [header link](class-aws-crypto-materialsproviderv3-method-issupportedkeysize.md)
 
 Returns if the requested size is supported by AES.
 
@@ -193,16 +193,16 @@ bool
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html#toc-methods)
+  - [Constants](class-aws-crypto-kmsmaterialsproviderv3-toc-constants.md)
+  - [Methods](class-aws-crypto-kmsmaterialsproviderv3-toc-methods.md)
 - Constants
-  - [WRAP\_ALGORITHM\_NAME](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html#constant_WRAP_ALGORITHM_NAME)
+  - [WRAP\_ALGORITHM\_NAME](class-aws-crypto-kmsmaterialsproviderv3-constant-wrap-algorithm-name.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html#method___construct)
-  - [decryptCek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html#method_decryptCek)
-  - [generateCek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html#method_generateCek)
-  - [generateIv()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV3.html#method_generateIv)
-  - [getWrapAlgorithmName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html#method_getWrapAlgorithmName)
-  - [isSupportedKeySize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV3.html#method_isSupportedKeySize)
+  - [\_\_construct()](class-aws-crypto-kmsmaterialsproviderv3-method-construct.md)
+  - [decryptCek()](class-aws-crypto-kmsmaterialsproviderv3-method-decryptcek.md)
+  - [generateCek()](class-aws-crypto-kmsmaterialsproviderv3-method-generatecek.md)
+  - [generateIv()](class-aws-crypto-materialsproviderv3-method-generateiv.md)
+  - [getWrapAlgorithmName()](class-aws-crypto-kmsmaterialsproviderv3-method-getwrapalgorithmname.md)
+  - [isSupportedKeySize()](class-aws-crypto-materialsproviderv3-method-issupportedkeysize.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html#top)
+[Back To Top](class-aws-crypto-kmsmaterialsproviderv3-top.md)

@@ -28,13 +28,13 @@ more information, see [Manage detailed monitoring for your EC2 instances](manage
     the pencil icon. To change the time range, select one of the predefined values or choose
     **custom**.
 
-![Graph a single metric](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/metric_statistics_ec2_instance.png)
+![Graph a single metric](../../../images/awsec2/latest/userguide/images/metric-statistics-ec2-instance-png.md)
 
 6. To change the statistic or the period for the metric, choose the **Graphed**
 **metrics** tab. Choose the column heading or an individual value, and then
     choose a different value.
 
-![Change the statistic or period for a metric](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/metric_statistics_ec2_instance_statistic_period.png)
+![Change the statistic or period for a metric](../../../images/awsec2/latest/userguide/images/metric-statistics-ec2-instance-statistic-period-png.md)
 
 ###### To get the CPU utilization for a specific instance (AWS CLI)
 

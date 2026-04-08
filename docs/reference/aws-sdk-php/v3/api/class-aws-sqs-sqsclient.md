@@ -17,31 +17,31 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2012-11-05**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html)
+- [**2012-11-05**](api-sqs-2012-11-05.md)
 
-  - [AddPermission](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#addpermission)
-  - [CancelMessageMoveTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#cancelmessagemovetask)
-  - [ChangeMessageVisibility](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#changemessagevisibility)
-  - [ChangeMessageVisibilityBatch](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#changemessagevisibilitybatch)
-  - [CreateQueue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#createqueue)
-  - [DeleteMessage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#deletemessage)
-  - [DeleteMessageBatch](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#deletemessagebatch)
-  - [DeleteQueue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#deletequeue)
-  - [GetQueueAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#getqueueattributes)
-  - [GetQueueUrl](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#getqueueurl)
-  - [ListDeadLetterSourceQueues](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#listdeadlettersourcequeues)
-  - [ListMessageMoveTasks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#listmessagemovetasks)
-  - [ListQueueTags](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#listqueuetags)
-  - [ListQueues](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#listqueues)
-  - [PurgeQueue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#purgequeue)
-  - [ReceiveMessage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#receivemessage)
-  - [RemovePermission](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#removepermission)
-  - [SendMessage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#sendmessage)
-  - [SendMessageBatch](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#sendmessagebatch)
-  - [SetQueueAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#setqueueattributes)
-  - [StartMessageMoveTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#startmessagemovetask)
-  - [TagQueue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#tagqueue)
-  - [UntagQueue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sqs-2012-11-05.html#untagqueue)
+  - [AddPermission](api-sqs-2012-11-05-addpermission.md)
+  - [CancelMessageMoveTask](api-sqs-2012-11-05-cancelmessagemovetask.md)
+  - [ChangeMessageVisibility](api-sqs-2012-11-05-changemessagevisibility.md)
+  - [ChangeMessageVisibilityBatch](api-sqs-2012-11-05-changemessagevisibilitybatch.md)
+  - [CreateQueue](api-sqs-2012-11-05-createqueue.md)
+  - [DeleteMessage](api-sqs-2012-11-05-deletemessage.md)
+  - [DeleteMessageBatch](api-sqs-2012-11-05-deletemessagebatch.md)
+  - [DeleteQueue](api-sqs-2012-11-05-deletequeue.md)
+  - [GetQueueAttributes](api-sqs-2012-11-05-getqueueattributes.md)
+  - [GetQueueUrl](api-sqs-2012-11-05-getqueueurl.md)
+  - [ListDeadLetterSourceQueues](api-sqs-2012-11-05-listdeadlettersourcequeues.md)
+  - [ListMessageMoveTasks](api-sqs-2012-11-05-listmessagemovetasks.md)
+  - [ListQueueTags](api-sqs-2012-11-05-listqueuetags.md)
+  - [ListQueues](api-sqs-2012-11-05-listqueues.md)
+  - [PurgeQueue](api-sqs-2012-11-05-purgequeue.md)
+  - [ReceiveMessage](api-sqs-2012-11-05-receivemessage.md)
+  - [RemovePermission](api-sqs-2012-11-05-removepermission.md)
+  - [SendMessage](api-sqs-2012-11-05-sendmessage.md)
+  - [SendMessageBatch](api-sqs-2012-11-05-sendmessagebatch.md)
+  - [SetQueueAttributes](api-sqs-2012-11-05-setqueueattributes.md)
+  - [StartMessageMoveTask](api-sqs-2012-11-05-startmessagemovetask.md)
+  - [TagQueue](api-sqs-2012-11-05-tagqueue.md)
+  - [UntagQueue](api-sqs-2012-11-05-untagqueue.md)
 
 ## Examples
 
@@ -49,24 +49,24 @@ specific API operation can be done using magic methods (e.g.,
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for PHP with Amazon Simple Queue Service.
 
-- [See examples on AWS Docs](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/php_sqs_code_examples.html)
+- [See examples on AWS Docs](../../../sdk-for-php/v3/developer-guide/php-sqs-code-examples.md)
 
 ### Legacy Code Examples With Guidance
 
-The following examples demonstrate how to use this service with the AWS SDK for PHP. These code examples are available in the [AWS SDK for PHP Developer Guide](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/sqs-examples.html).
+The following examples demonstrate how to use this service with the AWS SDK for PHP. These code examples are available in the [AWS SDK for PHP Developer Guide](../../../sdk-for-php/v3/developer-guide/sqs-examples.md).
 
-- [Enabling long polling](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/sqs-examples-enable-long-polling.html)
-- [Managing visibility timeout](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/sqs-examples-managing-visibility-timeout.html)
-- [Sending and receiving messages](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/sqs-examples-send-receive-messages.html)
-- [Using dead-letter queues](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/sqs-examples-dead-letter-queues.html)
-- [Using queues](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/sqs-examples-using-queues.html)
+- [Enabling long polling](../../../sdk-for-php/v3/developer-guide/sqs-examples-enable-long-polling.md)
+- [Managing visibility timeout](../../../sdk-for-php/v3/developer-guide/sqs-examples-managing-visibility-timeout.md)
+- [Sending and receiving messages](../../../sdk-for-php/v3/developer-guide/sqs-examples-send-receive-messages.md)
+- [Using dead-letter queues](../../../sdk-for-php/v3/developer-guide/sqs-examples-dead-letter-queues.md)
+- [Using queues](../../../sdk-for-php/v3/developer-guide/sqs-examples-using-queues.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sqs.SqsClient.html\#toc)
+### Table of Contents  [header link](class-aws-sqs-sqsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sqs.SqsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-sqs-sqsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
-: mixed [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sqs.SqsClient.html#method___construct)
+: mixed [\_\_construct()](class-aws-sqs-sqsclient-method-construct.md)
 : mixed The client constructor accepts the following options:[\_\_sleep()](class-aws-awsclient.md#method___sleep)
 : mixed [execute()](class-aws-awsclienttrait.md#method_execute)
 : mixed [executeAsync()](class-aws-awsclienttrait.md#method_executeAsync)
@@ -87,7 +87,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : array<string\|int, mixed> Retrieves arguments to be used in endpoint resolution.[getHandlerList()](class-aws-awsclient.md#method_getHandlerList)
 : [HandlerList](class-aws-handlerlist.md)Get the handler list used to transfer commands.[getIterator()](class-aws-awsclienttrait.md#method_getIterator)
 : mixed [getPaginator()](class-aws-awsclienttrait.md#method_getPaginator)
-: mixed [getQueueArn()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sqs.SqsClient.html#method_getQueueArn)
+: mixed [getQueueArn()](class-aws-sqs-sqsclient-method-getqueuearn.md)
 : string Converts a queue URL into a queue ARN.[getRegion()](class-aws-awsclient.md#method_getRegion)
 : string Get the region to which the client is configured to send requests.[getSignatureProvider()](class-aws-awsclient.md#method_getSignatureProvider)
 : callable Get the signature\_provider function of the client.[getToken()](class-aws-awsclient.md#method_getToken)
@@ -95,7 +95,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sqs.SqsClient.html\#methods)
+### Methods  [header link](class-aws-sqs-sqsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -109,7 +109,7 @@ $name
 : mixed$args
 : array<string\|int, mixed>
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sqs.SqsClient.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-sqs-sqsclient-method-construct.md)
 
 The client constructor accepts the following options:
 
@@ -491,7 +491,7 @@ $name
 : array<string\|int, mixed>
 = \[\]
 
-#### getQueueArn()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sqs.SqsClient.html\#method_getQueueArn)
+#### getQueueArn()  [header link](class-aws-sqs-sqsclient-method-getqueuearn.md)
 
 Converts a queue URL into a queue ARN.
 
@@ -576,10 +576,10 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sqs.SqsClient.html#toc-methods)
+  - [Methods](class-aws-sqs-sqsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sqs.SqsClient.html#method___construct)
+  - [\_\_construct()](class-aws-sqs-sqsclient-method-construct.md)
   - [\_\_sleep()](class-aws-awsclient.md#method___sleep)
   - [execute()](class-aws-awsclienttrait.md#method_execute)
   - [executeAsync()](class-aws-awsclienttrait.md#method_executeAsync)
@@ -597,11 +597,11 @@ $name
   - [getHandlerList()](class-aws-awsclient.md#method_getHandlerList)
   - [getIterator()](class-aws-awsclienttrait.md#method_getIterator)
   - [getPaginator()](class-aws-awsclienttrait.md#method_getPaginator)
-  - [getQueueArn()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sqs.SqsClient.html#method_getQueueArn)
+  - [getQueueArn()](class-aws-sqs-sqsclient-method-getqueuearn.md)
   - [getRegion()](class-aws-awsclient.md#method_getRegion)
   - [getSignatureProvider()](class-aws-awsclient.md#method_getSignatureProvider)
   - [getToken()](class-aws-awsclient.md#method_getToken)
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sqs.SqsClient.html#top)
+[Back To Top](class-aws-sqs-sqsclient-top.md)

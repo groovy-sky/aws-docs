@@ -30,7 +30,7 @@ you might create a CloudWatch metric that checks the status of the Amazon EC2
 create a health check that is based on the state of the alarm. For information
 about creating CloudWatch metrics and alarms by using the CloudWatch console,
 see the [Amazon\
-CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/WhatIsCloudWatch.html).
+CloudWatch User Guide](../../../../services/amazoncloudwatch/latest/developerguide/whatiscloudwatch.md).
 
 ## Request Syntax
 
@@ -211,7 +211,7 @@ Required: Yes
 
 A complex type that contains identifying information about the health check.
 
-Type: [HealthCheck](https://docs.aws.amazon.com/Route53/latest/APIReference/API_HealthCheck.html) object
+Type: [HealthCheck](api-healthcheck.md) object
 
 ## Errors
 
@@ -440,27 +440,27 @@ HTTP/1.1 201 Created
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/route53-2013-04-01/CreateHealthCheck)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53-2013-04-01/createhealthcheck.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/route53-2013-04-01/CreateHealthCheck)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53-2013-04-01/createhealthcheck.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53-2013-04-01/CreateHealthCheck)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53-2013-04-01/createhealthcheck.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/route53-2013-04-01/CreateHealthCheck)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53-2013-04-01/createhealthcheck.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53-2013-04-01/CreateHealthCheck)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53-2013-04-01/createhealthcheck.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/route53-2013-04-01/CreateHealthCheck)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53-2013-04-01/createhealthcheck.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/route53-2013-04-01/CreateHealthCheck)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53-2013-04-01/createhealthcheck.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/route53-2013-04-01/CreateHealthCheck)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53-2013-04-01/createhealthcheck.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/route53-2013-04-01/CreateHealthCheck)
+- [AWS SDK for Python](../../../../services/goto/boto3/route53-2013-04-01/createhealthcheck.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53-2013-04-01/CreateHealthCheck)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53-2013-04-01/createhealthcheck.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateCidrCollection
 

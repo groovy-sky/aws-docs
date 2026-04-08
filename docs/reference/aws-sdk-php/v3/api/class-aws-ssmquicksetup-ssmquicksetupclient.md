@@ -17,26 +17,26 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-05-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-quicksetup-2018-05-10.html)
+- [**2018-05-10**](api-ssm-quicksetup-2018-05-10.md)
 
-  - [CreateConfigurationManager](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-quicksetup-2018-05-10.html#createconfigurationmanager)
-  - [DeleteConfigurationManager](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-quicksetup-2018-05-10.html#deleteconfigurationmanager)
-  - [GetConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-quicksetup-2018-05-10.html#getconfiguration)
-  - [GetConfigurationManager](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-quicksetup-2018-05-10.html#getconfigurationmanager)
-  - [GetServiceSettings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-quicksetup-2018-05-10.html#getservicesettings)
-  - [ListConfigurationManagers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-quicksetup-2018-05-10.html#listconfigurationmanagers)
-  - [ListConfigurations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-quicksetup-2018-05-10.html#listconfigurations)
-  - [ListQuickSetupTypes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-quicksetup-2018-05-10.html#listquicksetuptypes)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-quicksetup-2018-05-10.html#listtagsforresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-quicksetup-2018-05-10.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-quicksetup-2018-05-10.html#untagresource)
-  - [UpdateConfigurationDefinition](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-quicksetup-2018-05-10.html#updateconfigurationdefinition)
-  - [UpdateConfigurationManager](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-quicksetup-2018-05-10.html#updateconfigurationmanager)
-  - [UpdateServiceSettings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-quicksetup-2018-05-10.html#updateservicesettings)
+  - [CreateConfigurationManager](api-ssm-quicksetup-2018-05-10-createconfigurationmanager.md)
+  - [DeleteConfigurationManager](api-ssm-quicksetup-2018-05-10-deleteconfigurationmanager.md)
+  - [GetConfiguration](api-ssm-quicksetup-2018-05-10-getconfiguration.md)
+  - [GetConfigurationManager](api-ssm-quicksetup-2018-05-10-getconfigurationmanager.md)
+  - [GetServiceSettings](api-ssm-quicksetup-2018-05-10-getservicesettings.md)
+  - [ListConfigurationManagers](api-ssm-quicksetup-2018-05-10-listconfigurationmanagers.md)
+  - [ListConfigurations](api-ssm-quicksetup-2018-05-10-listconfigurations.md)
+  - [ListQuickSetupTypes](api-ssm-quicksetup-2018-05-10-listquicksetuptypes.md)
+  - [ListTagsForResource](api-ssm-quicksetup-2018-05-10-listtagsforresource.md)
+  - [TagResource](api-ssm-quicksetup-2018-05-10-tagresource.md)
+  - [UntagResource](api-ssm-quicksetup-2018-05-10-untagresource.md)
+  - [UpdateConfigurationDefinition](api-ssm-quicksetup-2018-05-10-updateconfigurationdefinition.md)
+  - [UpdateConfigurationManager](api-ssm-quicksetup-2018-05-10-updateconfigurationmanager.md)
+  - [UpdateServiceSettings](api-ssm-quicksetup-2018-05-10-updateservicesettings.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMQuickSetup.SSMQuickSetupClient.html\#toc)
+### Table of Contents  [header link](class-aws-ssmquicksetup-ssmquicksetupclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMQuickSetup.SSMQuickSetupClient.html\#toc-methods)
+#### Methods  [header link](class-aws-ssmquicksetup-ssmquicksetupclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -67,7 +67,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMQuickSetup.SSMQuickSetupClient.html\#methods)
+### Methods  [header link](class-aws-ssmquicksetup-ssmquicksetupclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -534,7 +534,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMQuickSetup.SSMQuickSetupClient.html#toc-methods)
+  - [Methods](class-aws-ssmquicksetup-ssmquicksetupclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -561,4 +561,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMQuickSetup.SSMQuickSetupClient.html#top)
+[Back To Top](class-aws-ssmquicksetup-ssmquicksetupclient-top.md)

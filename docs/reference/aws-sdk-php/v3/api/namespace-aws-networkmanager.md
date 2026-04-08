@@ -4,15 +4,15 @@ Menu
 
 ## NetworkManager
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkmanager.html\#toc)
+### Table of Contents  [header link](namespace-aws-networkmanager-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkmanager.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-networkmanager-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkmanager.exception.html)
+[Exception](namespace-aws-networkmanager-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkmanager.html\#toc-classes)
+#### Classes  [header link](namespace-aws-networkmanager-toc-classes.md)
 
-[NetworkManagerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkManager.NetworkManagerClient.html)This client is used to interact with the **AWS Network Manager** service.
+[NetworkManagerClient](class-aws-networkmanager-networkmanagerclient.md)This client is used to interact with the **AWS Network Manager** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkmanager.html#toc-classes)
+  - [Classes](namespace-aws-networkmanager-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkmanager.html#top)
+[Back To Top](namespace-aws-networkmanager-top.md)

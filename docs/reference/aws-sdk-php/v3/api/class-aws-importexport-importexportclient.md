@@ -17,18 +17,18 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2010-06-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-importexport-2010-06-01.html)
+- [**2010-06-01**](api-importexport-2010-06-01.md)
 
-  - [CancelJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-importexport-2010-06-01.html#canceljob)
-  - [CreateJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-importexport-2010-06-01.html#createjob)
-  - [GetShippingLabel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-importexport-2010-06-01.html#getshippinglabel)
-  - [GetStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-importexport-2010-06-01.html#getstatus)
-  - [ListJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-importexport-2010-06-01.html#listjobs)
-  - [UpdateJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-importexport-2010-06-01.html#updatejob)
+  - [CancelJob](api-importexport-2010-06-01-canceljob.md)
+  - [CreateJob](api-importexport-2010-06-01-createjob.md)
+  - [GetShippingLabel](api-importexport-2010-06-01-getshippinglabel.md)
+  - [GetStatus](api-importexport-2010-06-01-getstatus.md)
+  - [ListJobs](api-importexport-2010-06-01-listjobs.md)
+  - [UpdateJob](api-importexport-2010-06-01-updatejob.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ImportExport.ImportExportClient.html\#toc)
+### Table of Contents  [header link](class-aws-importexport-importexportclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ImportExport.ImportExportClient.html\#toc-methods)
+#### Methods  [header link](class-aws-importexport-importexportclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -59,7 +59,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ImportExport.ImportExportClient.html\#methods)
+### Methods  [header link](class-aws-importexport-importexportclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -526,7 +526,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ImportExport.ImportExportClient.html#toc-methods)
+  - [Methods](class-aws-importexport-importexportclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -553,4 +553,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ImportExport.ImportExportClient.html#top)
+[Back To Top](class-aws-importexport-importexportclient-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## SecurityAgent
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securityagent.html\#toc)
+### Table of Contents  [header link](namespace-aws-securityagent-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securityagent.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-securityagent-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securityagent.exception.html)
+[Exception](namespace-aws-securityagent-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securityagent.html\#toc-classes)
+#### Classes  [header link](namespace-aws-securityagent-toc-classes.md)
 
-[SecurityAgentClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecurityAgent.SecurityAgentClient.html)This client is used to interact with the **AWS Security Agent** service.
+[SecurityAgentClient](class-aws-securityagent-securityagentclient.md)This client is used to interact with the **AWS Security Agent** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securityagent.html#toc-classes)
+  - [Classes](namespace-aws-securityagent-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securityagent.html#top)
+[Back To Top](namespace-aws-securityagent-top.md)

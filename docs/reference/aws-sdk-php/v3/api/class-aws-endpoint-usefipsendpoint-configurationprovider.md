@@ -2,7 +2,7 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [Endpoint](namespace-aws-endpoint.md)
-- [UseFipsEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpoint.usefipsendpoint.html)
+- [UseFipsEndpoint](namespace-aws-endpoint-usefipsendpoint.md)
 
 ## ConfigurationProvider     extends [AbstractConfigurationProvider](class-aws-abstractconfigurationprovider.md)   in package    - [Aws](package-aws.md)       implements  [ConfigurationProviderInterface](class-aws-configurationproviderinterface.md)
 
@@ -39,26 +39,26 @@ $promise = $composed();
 $config = $promise->wait();
 `
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html\#toc)
+### Table of Contents  [header link](class-aws-endpoint-usefipsendpoint-configurationprovider-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-endpoint-usefipsendpoint-configurationprovider-toc-interfaces.md)
 
 [ConfigurationProviderInterface](class-aws-configurationproviderinterface.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html\#toc-constants)
+#### Constants  [header link](class-aws-endpoint-usefipsendpoint-configurationprovider-toc-constants.md)
 
 [ENV\_CONFIG\_FILE](class-aws-abstractconfigurationprovider.md#constant_ENV_CONFIG_FILE)
 = 'AWS\_CONFIG\_FILE' [ENV\_PROFILE](class-aws-abstractconfigurationprovider.md#constant_ENV_PROFILE)
-= 'AWS\_PROFILE' [ENV\_USE\_FIPS\_ENDPOINT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html#constant_ENV_USE_FIPS_ENDPOINT)
-= 'AWS\_USE\_FIPS\_ENDPOINT' [INI\_USE\_FIPS\_ENDPOINT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html#constant_INI_USE_FIPS_ENDPOINT)
+= 'AWS\_PROFILE' [ENV\_USE\_FIPS\_ENDPOINT](class-aws-endpoint-usefipsendpoint-configurationprovider-constant-env-use-fips-endpoint.md)
+= 'AWS\_USE\_FIPS\_ENDPOINT' [INI\_USE\_FIPS\_ENDPOINT](class-aws-endpoint-usefipsendpoint-configurationprovider-constant-ini-use-fips-endpoint.md)
 = 'use\_fips\_endpoint'
 
-#### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html\#toc-properties)
+#### Properties  [header link](class-aws-endpoint-usefipsendpoint-configurationprovider-toc-properties.md)
 
-[$cacheKey](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html#property_cacheKey)
+[$cacheKey](class-aws-endpoint-usefipsendpoint-configurationprovider-property-cachekey.md)
 : mixed
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html\#toc-methods)
+#### Methods  [header link](class-aws-endpoint-usefipsendpoint-configurationprovider-toc-methods.md)
 
 [cache()](class-aws-abstractconfigurationprovider.md#method_cache)
 : callable Wraps a config provider and saves provided configuration in an
@@ -66,21 +66,21 @@ instance of Aws\\CacheInterface. Forwards calls when no config found
 in cache and updates cache with the results.[chain()](class-aws-abstractconfigurationprovider.md#method_chain)
 : callable Creates an aggregate configuration provider that invokes the provided
 variadic providers one after the other until a provider returns
-configuration.[defaultProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html#method_defaultProvider)
+configuration.[defaultProvider()](class-aws-endpoint-usefipsendpoint-configurationprovider-method-defaultprovider.md)
 : callable Create a default config provider that first checks for environment
 variables, then checks for a specified profile in the environment-defined
 config file location (env variable is 'AWS\_CONFIG\_FILE', file location
 defaults to ~/.aws/config), then checks for the "default" profile in the
 environment-defined config file location, and failing those uses a default
-fallback set of configuration options.[env()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html#method_env)
-: callable Provider that creates config from environment variables.[fallback()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html#method_fallback)
-: callable Fallback config options when other sources are not set.[ini()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html#method_ini)
+fallback set of configuration options.[env()](class-aws-endpoint-usefipsendpoint-configurationprovider-method-env.md)
+: callable Provider that creates config from environment variables.[fallback()](class-aws-endpoint-usefipsendpoint-configurationprovider-method-fallback.md)
+: callable Fallback config options when other sources are not set.[ini()](class-aws-endpoint-usefipsendpoint-configurationprovider-method-ini.md)
 : callable Config provider that creates config using a config file whose location
 is specified by an environment variable 'AWS\_CONFIG\_FILE', defaulting to
 ~/.aws/config if not specified[memoize()](class-aws-abstractconfigurationprovider.md#method_memoize)
 : callable Wraps a config provider and caches previously provided configuration.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html\#constants)
+### Constants  [header link](class-aws-endpoint-usefipsendpoint-configurationprovider-constants.md)
 
 #### ENV\_CONFIG\_FILE  [header link](class-aws-abstractconfigurationprovider.md\#constant_ENV_CONFIG_FILE)
 
@@ -100,7 +100,7 @@ is specified by an environment variable 'AWS\_CONFIG\_FILE', defaulting to
     = 'AWS_PROFILE'
 `
 
-#### ENV\_USE\_FIPS\_ENDPOINT  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html\#constant_ENV_USE_FIPS_ENDPOINT)
+#### ENV\_USE\_FIPS\_ENDPOINT  [header link](class-aws-endpoint-usefipsendpoint-configurationprovider-constant-env-use-fips-endpoint.md)
 
 `
     public
@@ -109,7 +109,7 @@ is specified by an environment variable 'AWS\_CONFIG\_FILE', defaulting to
     = 'AWS_USE_FIPS_ENDPOINT'
 `
 
-#### INI\_USE\_FIPS\_ENDPOINT  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html\#constant_INI_USE_FIPS_ENDPOINT)
+#### INI\_USE\_FIPS\_ENDPOINT  [header link](class-aws-endpoint-usefipsendpoint-configurationprovider-constant-ini-use-fips-endpoint.md)
 
 `
     public
@@ -118,9 +118,9 @@ is specified by an environment variable 'AWS\_CONFIG\_FILE', defaulting to
     = 'use_fips_endpoint'
 `
 
-### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html\#properties)
+### Properties  [header link](class-aws-endpoint-usefipsendpoint-configurationprovider-properties.md)
 
-#### $cacheKey  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html\#property_cacheKey)
+#### $cacheKey  [header link](class-aws-endpoint-usefipsendpoint-configurationprovider-property-cachekey.md)
 
 `
     public
@@ -128,7 +128,7 @@ is specified by an environment variable 'AWS\_CONFIG\_FILE', defaulting to
     $cacheKey
      = 'aws_cached_use_fips_endpoint_config'`
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html\#methods)
+### Methods  [header link](class-aws-endpoint-usefipsendpoint-configurationprovider-methods.md)
 
 #### cache()  [header link](class-aws-abstractconfigurationprovider.md\#method_cache)
 
@@ -176,7 +176,7 @@ configuration.
 
 callable
 
-#### defaultProvider()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html\#method_defaultProvider)
+#### defaultProvider()  [header link](class-aws-endpoint-usefipsendpoint-configurationprovider-method-defaultprovider.md)
 
 Create a default config provider that first checks for environment
 variables, then checks for a specified profile in the environment-defined
@@ -202,7 +202,7 @@ $config
 
 callable
 
-#### env()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html\#method_env)
+#### env()  [header link](class-aws-endpoint-usefipsendpoint-configurationprovider-method-env.md)
 
 Provider that creates config from environment variables.
 
@@ -214,7 +214,7 @@ Provider that creates config from environment variables.
 
 callable
 
-#### fallback()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html\#method_fallback)
+#### fallback()  [header link](class-aws-endpoint-usefipsendpoint-configurationprovider-method-fallback.md)
 
 Fallback config options when other sources are not set.
 
@@ -231,7 +231,7 @@ $region
 
 callable
 
-#### ini()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html\#method_ini)
+#### ini()  [header link](class-aws-endpoint-usefipsendpoint-configurationprovider-method-ini.md)
 
 Config provider that creates config using a config file whose location
 is specified by an environment variable 'AWS\_CONFIG\_FILE', defaulting to
@@ -286,23 +286,23 @@ callable
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html#toc-constants)
-  - [Properties](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html#toc-properties)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html#toc-methods)
+  - [Constants](class-aws-endpoint-usefipsendpoint-configurationprovider-toc-constants.md)
+  - [Properties](class-aws-endpoint-usefipsendpoint-configurationprovider-toc-properties.md)
+  - [Methods](class-aws-endpoint-usefipsendpoint-configurationprovider-toc-methods.md)
 - Constants
   - [ENV\_CONFIG\_FILE](class-aws-abstractconfigurationprovider.md#constant_ENV_CONFIG_FILE)
   - [ENV\_PROFILE](class-aws-abstractconfigurationprovider.md#constant_ENV_PROFILE)
-  - [ENV\_USE\_FIPS\_ENDPOINT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html#constant_ENV_USE_FIPS_ENDPOINT)
-  - [INI\_USE\_FIPS\_ENDPOINT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html#constant_INI_USE_FIPS_ENDPOINT)
+  - [ENV\_USE\_FIPS\_ENDPOINT](class-aws-endpoint-usefipsendpoint-configurationprovider-constant-env-use-fips-endpoint.md)
+  - [INI\_USE\_FIPS\_ENDPOINT](class-aws-endpoint-usefipsendpoint-configurationprovider-constant-ini-use-fips-endpoint.md)
 - Properties
-  - [$cacheKey](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html#property_cacheKey)
+  - [$cacheKey](class-aws-endpoint-usefipsendpoint-configurationprovider-property-cachekey.md)
 - Methods
   - [cache()](class-aws-abstractconfigurationprovider.md#method_cache)
   - [chain()](class-aws-abstractconfigurationprovider.md#method_chain)
-  - [defaultProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html#method_defaultProvider)
-  - [env()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html#method_env)
-  - [fallback()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html#method_fallback)
-  - [ini()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html#method_ini)
+  - [defaultProvider()](class-aws-endpoint-usefipsendpoint-configurationprovider-method-defaultprovider.md)
+  - [env()](class-aws-endpoint-usefipsendpoint-configurationprovider-method-env.md)
+  - [fallback()](class-aws-endpoint-usefipsendpoint-configurationprovider-method-fallback.md)
+  - [ini()](class-aws-endpoint-usefipsendpoint-configurationprovider-method-ini.md)
   - [memoize()](class-aws-abstractconfigurationprovider.md#method_memoize)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.ConfigurationProvider.html#top)
+[Back To Top](class-aws-endpoint-usefipsendpoint-configurationprovider-top.md)

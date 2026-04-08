@@ -4,15 +4,15 @@ Menu
 
 ## CodeConnections
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codeconnections.html\#toc)
+### Table of Contents  [header link](namespace-aws-codeconnections-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codeconnections.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-codeconnections-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codeconnections.exception.html)
+[Exception](namespace-aws-codeconnections-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codeconnections.html\#toc-classes)
+#### Classes  [header link](namespace-aws-codeconnections-toc-classes.md)
 
-[CodeConnectionsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeConnections.CodeConnectionsClient.html)This client is used to interact with the **AWS CodeConnections** service.
+[CodeConnectionsClient](class-aws-codeconnections-codeconnectionsclient.md)This client is used to interact with the **AWS CodeConnections** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codeconnections.html#toc-classes)
+  - [Classes](namespace-aws-codeconnections-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codeconnections.html#top)
+[Back To Top](namespace-aws-codeconnections-top.md)

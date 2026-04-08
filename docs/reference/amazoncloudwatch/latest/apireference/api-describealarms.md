@@ -157,13 +157,13 @@ The following elements are returned by the service.
 
 The information about any composite alarms returned by the operation.
 
-Type: Array of [CompositeAlarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_CompositeAlarm.html) objects
+Type: Array of [CompositeAlarm](api-compositealarm.md) objects
 
 **MetricAlarms**
 
 The information about any metric alarms returned by the operation.
 
-Type: Array of [MetricAlarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricAlarm.html) objects
+Type: Array of [MetricAlarm](api-metricalarm.md) objects
 
 **NextToken**
 
@@ -173,7 +173,7 @@ Type: String
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **InvalidNextToken**
 
@@ -187,27 +187,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/monitoring-2010-08-01/DescribeAlarms)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/monitoring-2010-08-01/describealarms.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/monitoring-2010-08-01/DescribeAlarms)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/monitoring-2010-08-01/describealarms.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/DescribeAlarms)
+- [AWS SDK for C++](../../../goto/sdkforcpp/monitoring-2010-08-01/describealarms.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/monitoring-2010-08-01/DescribeAlarms)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/monitoring-2010-08-01/describealarms.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/DescribeAlarms)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/monitoring-2010-08-01/describealarms.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/monitoring-2010-08-01/DescribeAlarms)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/monitoring-2010-08-01/describealarms.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/monitoring-2010-08-01/DescribeAlarms)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/monitoring-2010-08-01/describealarms.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/monitoring-2010-08-01/DescribeAlarms)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/monitoring-2010-08-01/describealarms.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/DescribeAlarms)
+- [AWS SDK for Python](../../../../services/goto/boto3/monitoring-2010-08-01/describealarms.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/monitoring-2010-08-01/DescribeAlarms)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/monitoring-2010-08-01/describealarms.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DescribeAlarmHistory
 

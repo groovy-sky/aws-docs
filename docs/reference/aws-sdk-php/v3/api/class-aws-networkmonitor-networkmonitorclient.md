@@ -17,24 +17,24 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2023-08-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkmonitor-2023-08-01.html)
+- [**2023-08-01**](api-networkmonitor-2023-08-01.md)
 
-  - [CreateMonitor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkmonitor-2023-08-01.html#createmonitor)
-  - [CreateProbe](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkmonitor-2023-08-01.html#createprobe)
-  - [DeleteMonitor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkmonitor-2023-08-01.html#deletemonitor)
-  - [DeleteProbe](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkmonitor-2023-08-01.html#deleteprobe)
-  - [GetMonitor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkmonitor-2023-08-01.html#getmonitor)
-  - [GetProbe](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkmonitor-2023-08-01.html#getprobe)
-  - [ListMonitors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkmonitor-2023-08-01.html#listmonitors)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkmonitor-2023-08-01.html#listtagsforresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkmonitor-2023-08-01.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkmonitor-2023-08-01.html#untagresource)
-  - [UpdateMonitor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkmonitor-2023-08-01.html#updatemonitor)
-  - [UpdateProbe](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-networkmonitor-2023-08-01.html#updateprobe)
+  - [CreateMonitor](api-networkmonitor-2023-08-01-createmonitor.md)
+  - [CreateProbe](api-networkmonitor-2023-08-01-createprobe.md)
+  - [DeleteMonitor](api-networkmonitor-2023-08-01-deletemonitor.md)
+  - [DeleteProbe](api-networkmonitor-2023-08-01-deleteprobe.md)
+  - [GetMonitor](api-networkmonitor-2023-08-01-getmonitor.md)
+  - [GetProbe](api-networkmonitor-2023-08-01-getprobe.md)
+  - [ListMonitors](api-networkmonitor-2023-08-01-listmonitors.md)
+  - [ListTagsForResource](api-networkmonitor-2023-08-01-listtagsforresource.md)
+  - [TagResource](api-networkmonitor-2023-08-01-tagresource.md)
+  - [UntagResource](api-networkmonitor-2023-08-01-untagresource.md)
+  - [UpdateMonitor](api-networkmonitor-2023-08-01-updatemonitor.md)
+  - [UpdateProbe](api-networkmonitor-2023-08-01-updateprobe.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkMonitor.NetworkMonitorClient.html\#toc)
+### Table of Contents  [header link](class-aws-networkmonitor-networkmonitorclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkMonitor.NetworkMonitorClient.html\#toc-methods)
+#### Methods  [header link](class-aws-networkmonitor-networkmonitorclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -65,7 +65,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkMonitor.NetworkMonitorClient.html\#methods)
+### Methods  [header link](class-aws-networkmonitor-networkmonitorclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -532,7 +532,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkMonitor.NetworkMonitorClient.html#toc-methods)
+  - [Methods](class-aws-networkmonitor-networkmonitorclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -559,4 +559,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkMonitor.NetworkMonitorClient.html#top)
+[Back To Top](class-aws-networkmonitor-networkmonitorclient-top.md)

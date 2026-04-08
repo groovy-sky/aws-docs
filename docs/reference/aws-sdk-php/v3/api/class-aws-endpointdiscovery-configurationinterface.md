@@ -8,18 +8,18 @@ Menu
 Provides access to endpoint discovery configuration options:
 'enabled', 'cache\_limit'
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.ConfigurationInterface.html\#toc)
+### Table of Contents  [header link](class-aws-endpointdiscovery-configurationinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.ConfigurationInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-endpointdiscovery-configurationinterface-toc-methods.md)
 
-[getCacheLimit()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.ConfigurationInterface.html#method_getCacheLimit)
-: string\|null Returns the cache limit, if available.[isEnabled()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.ConfigurationInterface.html#method_isEnabled)
-: bool Checks whether or not endpoint discovery is enabled.[toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.ConfigurationInterface.html#method_toArray)
+[getCacheLimit()](class-aws-endpointdiscovery-configurationinterface-method-getcachelimit.md)
+: string\|null Returns the cache limit, if available.[isEnabled()](class-aws-endpointdiscovery-configurationinterface-method-isenabled.md)
+: bool Checks whether or not endpoint discovery is enabled.[toArray()](class-aws-endpointdiscovery-configurationinterface-method-toarray.md)
 : array<string\|int, mixed> Returns the configuration as an associative array
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.ConfigurationInterface.html\#methods)
+### Methods  [header link](class-aws-endpointdiscovery-configurationinterface-methods.md)
 
-#### getCacheLimit()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.ConfigurationInterface.html\#method_getCacheLimit)
+#### getCacheLimit()  [header link](class-aws-endpointdiscovery-configurationinterface-method-getcachelimit.md)
 
 Returns the cache limit, if available.
 
@@ -31,7 +31,7 @@ Returns the cache limit, if available.
 
 string\|null
 
-#### isEnabled()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.ConfigurationInterface.html\#method_isEnabled)
+#### isEnabled()  [header link](class-aws-endpointdiscovery-configurationinterface-method-isenabled.md)
 
 Checks whether or not endpoint discovery is enabled.
 
@@ -43,7 +43,7 @@ Checks whether or not endpoint discovery is enabled.
 
 bool
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.ConfigurationInterface.html\#method_toArray)
+#### toArray()  [header link](class-aws-endpointdiscovery-configurationinterface-method-toarray.md)
 
 Returns the configuration as an associative array
 
@@ -61,11 +61,11 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.ConfigurationInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.ConfigurationInterface.html#toc-methods)
+  - [Constants](class-aws-endpointdiscovery-configurationinterface-toc-constants.md)
+  - [Methods](class-aws-endpointdiscovery-configurationinterface-toc-methods.md)
 - Methods
-  - [getCacheLimit()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.ConfigurationInterface.html#method_getCacheLimit)
-  - [isEnabled()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.ConfigurationInterface.html#method_isEnabled)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.ConfigurationInterface.html#method_toArray)
+  - [getCacheLimit()](class-aws-endpointdiscovery-configurationinterface-method-getcachelimit.md)
+  - [isEnabled()](class-aws-endpointdiscovery-configurationinterface-method-isenabled.md)
+  - [toArray()](class-aws-endpointdiscovery-configurationinterface-method-toarray.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.ConfigurationInterface.html#top)
+[Back To Top](class-aws-endpointdiscovery-configurationinterface-top.md)

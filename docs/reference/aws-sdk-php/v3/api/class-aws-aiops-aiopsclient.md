@@ -17,23 +17,23 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-05-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-aiops-2018-05-10.html)
+- [**2018-05-10**](api-aiops-2018-05-10.md)
 
-  - [CreateInvestigationGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-aiops-2018-05-10.html#createinvestigationgroup)
-  - [DeleteInvestigationGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-aiops-2018-05-10.html#deleteinvestigationgroup)
-  - [DeleteInvestigationGroupPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-aiops-2018-05-10.html#deleteinvestigationgrouppolicy)
-  - [GetInvestigationGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-aiops-2018-05-10.html#getinvestigationgroup)
-  - [GetInvestigationGroupPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-aiops-2018-05-10.html#getinvestigationgrouppolicy)
-  - [ListInvestigationGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-aiops-2018-05-10.html#listinvestigationgroups)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-aiops-2018-05-10.html#listtagsforresource)
-  - [PutInvestigationGroupPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-aiops-2018-05-10.html#putinvestigationgrouppolicy)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-aiops-2018-05-10.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-aiops-2018-05-10.html#untagresource)
-  - [UpdateInvestigationGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-aiops-2018-05-10.html#updateinvestigationgroup)
+  - [CreateInvestigationGroup](api-aiops-2018-05-10-createinvestigationgroup.md)
+  - [DeleteInvestigationGroup](api-aiops-2018-05-10-deleteinvestigationgroup.md)
+  - [DeleteInvestigationGroupPolicy](api-aiops-2018-05-10-deleteinvestigationgrouppolicy.md)
+  - [GetInvestigationGroup](api-aiops-2018-05-10-getinvestigationgroup.md)
+  - [GetInvestigationGroupPolicy](api-aiops-2018-05-10-getinvestigationgrouppolicy.md)
+  - [ListInvestigationGroups](api-aiops-2018-05-10-listinvestigationgroups.md)
+  - [ListTagsForResource](api-aiops-2018-05-10-listtagsforresource.md)
+  - [PutInvestigationGroupPolicy](api-aiops-2018-05-10-putinvestigationgrouppolicy.md)
+  - [TagResource](api-aiops-2018-05-10-tagresource.md)
+  - [UntagResource](api-aiops-2018-05-10-untagresource.md)
+  - [UpdateInvestigationGroup](api-aiops-2018-05-10-updateinvestigationgroup.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AIOps.AIOpsClient.html\#toc)
+### Table of Contents  [header link](class-aws-aiops-aiopsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AIOps.AIOpsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-aiops-aiopsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -64,7 +64,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AIOps.AIOpsClient.html\#methods)
+### Methods  [header link](class-aws-aiops-aiopsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -531,7 +531,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AIOps.AIOpsClient.html#toc-methods)
+  - [Methods](class-aws-aiops-aiopsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -558,4 +558,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AIOps.AIOpsClient.html#top)
+[Back To Top](class-aws-aiops-aiopsclient-top.md)

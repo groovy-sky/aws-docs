@@ -12,14 +12,14 @@ To learn more about the supported keywords that you can use when mapping a contr
 source, see the following pages in the _AWS Audit Manager User_
 _Guide_:
 
-- [AWS Config rules supported by AWS Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/userguide/control-data-sources-config.html)
+- [AWS Config rules supported by AWS Audit Manager](../../../../services/audit-manager/latest/userguide/control-data-sources-config.md)
 
-- [AWS Security Hub CSPM controls supported by AWS Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/userguide/control-data-sources-ash.html)
+- [AWS Security Hub CSPM controls supported by AWS Audit Manager](../../../../services/audit-manager/latest/userguide/control-data-sources-ash.md)
 
 - [API calls\
-supported by AWS Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/userguide/control-data-sources-api.html)
+supported by AWS Audit Manager](../../../../services/audit-manager/latest/userguide/control-data-sources-api.md)
 
-- [AWS CloudTrail event names supported by AWS Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/userguide/control-data-sources-cloudtrail.html)
+- [AWS CloudTrail event names supported by AWS Audit Manager](../../../../services/audit-manager/latest/userguide/control-data-sources-cloudtrail.md)
 
 ## Contents
 
@@ -58,8 +58,8 @@ Security Hub CSPM control, or the name of an AWS API call.
 If you’re mapping a data source to a rule in AWS Config, the
 `keywordValue` that you specify depends on the type of rule:
 
-- For [managed rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_use-managed-rules.html), you can use the rule identifier as the
-`keywordValue`. You can find the rule identifier from the [list of AWS Config managed rules](https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.html). For some
+- For [managed rules](../../../../services/config/latest/developerguide/evaluate-config-use-managed-rules.md), you can use the rule identifier as the
+`keywordValue`. You can find the rule identifier from the [list of AWS Config managed rules](../../../../services/config/latest/developerguide/managed-rules-by-aws-config.md). For some
 rules, the rule identifier is different from the rule name. For example, the rule
 name `restricted-ssh` has the following rule identifier:
 `INCOMING_SSH_DISABLED`. Make sure to use the rule identifier, not the
@@ -67,11 +67,11 @@ rule name.
 
 Keyword example for managed rules:
 
-- Managed rule name: [s3-bucket-acl-prohibited](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-acl-prohibited.html)
+- Managed rule name: [s3-bucket-acl-prohibited](../../../../services/config/latest/developerguide/s3-bucket-acl-prohibited.md)
 
 `keywordValue`: `S3_BUCKET_ACL_PROHIBITED`
 
-- For [custom rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_develop-rules.html), you form the `keywordValue`
+- For [custom rules](../../../../services/config/latest/developerguide/evaluate-config-develop-rules.md), you form the `keywordValue`
 by adding the `Custom_` prefix to the rule name. This prefix distinguishes
 the custom rule from a managed rule.
 
@@ -81,7 +81,7 @@ Keyword example for custom rules:
 
 `keywordValue`: `Custom_my-custom-config-rule`
 
-- For [service-linked rules](https://docs.aws.amazon.com/config/latest/developerguide/service-linked-awsconfig-rules.html), you form the
+- For [service-linked rules](../../../../services/config/latest/developerguide/service-linked-awsconfig-rules.md), you form the
 `keywordValue` by adding the `Custom_` prefix to the rule
 name. In addition, you remove the suffix ID that appears at the end of the rule name.
 
@@ -112,7 +112,7 @@ you're using.
 - For managed rules, make sure that the `keywordValue` is the rule identifier in
 `ALL_CAPS_WITH_UNDERSCORES`. For example,
 `CLOUDWATCH_LOG_GROUP_ENCRYPTED`. For accuracy, we recommend
-that you reference the list of [supported AWS Config managed rules](https://docs.aws.amazon.com/audit-manager/latest/userguide/control-data-sources-config.html).
+that you reference the list of [supported AWS Config managed rules](../../../../services/audit-manager/latest/userguide/control-data-sources-config.md).
 
 - For custom rules, make sure that the `keywordValue` has the `Custom_`
 prefix followed by the custom rule name. The format of the custom rule name
@@ -121,18 +121,18 @@ verify your custom rule name.
 
 2. For Security Hub CSPM: The format varies for Security Hub CSPM control names.
     For accuracy, we recommend that you reference the list of [supported\
-    AWS Security Hub CSPM controls](https://docs.aws.amazon.com/audit-manager/latest/userguide/control-data-sources-ash.html).
+    AWS Security Hub CSPM controls](../../../../services/audit-manager/latest/userguide/control-data-sources-ash.md).
 
 3. For AWS API calls: Make sure that the `keywordValue`
     is written as `serviceprefix_ActionName`. For example,
     `iam_ListGroups`. For accuracy, we recommend that you reference the
     list of [supported\
-    API calls](https://docs.aws.amazon.com/audit-manager/latest/userguide/control-data-sources-api.html).
+    API calls](../../../../services/audit-manager/latest/userguide/control-data-sources-api.md).
 
 4. For CloudTrail: Make sure that the `keywordValue` is written
     as `serviceprefix_ActionName`. For example,
     `cloudtrail_StartLogging`. For accuracy, we recommend that you
-    review the AWS service prefix and action names in the [Service Authorization Reference](https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html).
+    review the AWS service prefix and action names in the [Service Authorization Reference](../../../../services/service-authorization/latest/reference/reference-policies-actions-resources-contextkeys.md).
 
 Type: String
 
@@ -146,13 +146,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/auditmanager-2017-07-25/SourceKeyword)
+- [AWS SDK for C++](../../../goto/sdkforcpp/auditmanager-2017-07-25/sourcekeyword.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/auditmanager-2017-07-25/SourceKeyword)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/auditmanager-2017-07-25/sourcekeyword.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/auditmanager-2017-07-25/SourceKeyword)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/auditmanager-2017-07-25/sourcekeyword.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Settings
 

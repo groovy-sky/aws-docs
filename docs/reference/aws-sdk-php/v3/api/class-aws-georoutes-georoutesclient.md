@@ -17,17 +17,17 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2020-11-19**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-geo-routes-2020-11-19.html)
+- [**2020-11-19**](api-geo-routes-2020-11-19.md)
 
-  - [CalculateIsolines](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-geo-routes-2020-11-19.html#calculateisolines)
-  - [CalculateRouteMatrix](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-geo-routes-2020-11-19.html#calculateroutematrix)
-  - [CalculateRoutes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-geo-routes-2020-11-19.html#calculateroutes)
-  - [OptimizeWaypoints](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-geo-routes-2020-11-19.html#optimizewaypoints)
-  - [SnapToRoads](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-geo-routes-2020-11-19.html#snaptoroads)
+  - [CalculateIsolines](api-geo-routes-2020-11-19-calculateisolines.md)
+  - [CalculateRouteMatrix](api-geo-routes-2020-11-19-calculateroutematrix.md)
+  - [CalculateRoutes](api-geo-routes-2020-11-19-calculateroutes.md)
+  - [OptimizeWaypoints](api-geo-routes-2020-11-19-optimizewaypoints.md)
+  - [SnapToRoads](api-geo-routes-2020-11-19-snaptoroads.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GeoRoutes.GeoRoutesClient.html\#toc)
+### Table of Contents  [header link](class-aws-georoutes-georoutesclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GeoRoutes.GeoRoutesClient.html\#toc-methods)
+#### Methods  [header link](class-aws-georoutes-georoutesclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -58,7 +58,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GeoRoutes.GeoRoutesClient.html\#methods)
+### Methods  [header link](class-aws-georoutes-georoutesclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -525,7 +525,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GeoRoutes.GeoRoutesClient.html#toc-methods)
+  - [Methods](class-aws-georoutes-georoutesclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -552,4 +552,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GeoRoutes.GeoRoutesClient.html#top)
+[Back To Top](class-aws-georoutes-georoutesclient-top.md)

@@ -3,7 +3,7 @@ Menu
 - [Aws](namespace-aws.md)
 - [Crypto](namespace-aws-crypto.md)
 
-## AesStreamInterface    extends  [StreamInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html)   in    - [Aws](package-aws.md)
+## AesStreamInterface    extends  [StreamInterface](class-psr-http-message-streaminterface.md)   in    - [Aws](package-aws.md)
 
 Describes a data stream.
 
@@ -11,35 +11,35 @@ Typically, an instance will wrap a PHP stream; this interface provides
 a wrapper around the most common operations, including serialization of
 the entire stream to a string.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AesStreamInterface.html\#toc)
+### Table of Contents  [header link](class-aws-crypto-aesstreaminterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AesStreamInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-crypto-aesstreaminterface-toc-methods.md)
 
-[\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method___toString)
-: string Reads all data from the stream into a string, from the beginning to end.[close()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_close)
-: void Closes the stream and any underlying resources.[detach()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_detach)
-: resource\|null Separates any underlying resources from the stream.[eof()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_eof)
-: bool Returns true if the stream is at the end of the stream.[getAesName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AesStreamInterface.html#method_getAesName)
-: string Returns an AES recognizable name, such as 'AES/GCM/NoPadding'.[getContents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_getContents)
-: string Returns the remaining contents in a string[getCurrentIv()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AesStreamInterface.html#method_getCurrentIv)
+[\_\_toString()](class-psr-http-message-streaminterface-method-tostring.md)
+: string Reads all data from the stream into a string, from the beginning to end.[close()](class-psr-http-message-streaminterface-method-close.md)
+: void Closes the stream and any underlying resources.[detach()](class-psr-http-message-streaminterface-method-detach.md)
+: resource\|null Separates any underlying resources from the stream.[eof()](class-psr-http-message-streaminterface-method-eof.md)
+: bool Returns true if the stream is at the end of the stream.[getAesName()](class-aws-crypto-aesstreaminterface-method-getaesname.md)
+: string Returns an AES recognizable name, such as 'AES/GCM/NoPadding'.[getContents()](class-psr-http-message-streaminterface-method-getcontents.md)
+: string Returns the remaining contents in a string[getCurrentIv()](class-aws-crypto-aesstreaminterface-method-getcurrentiv.md)
 : string Returns the IV that should be used to initialize the next block in
-encrypt or decrypt.[getMetadata()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_getMetadata)
-: array<string\|int, mixed>\|mixed\|null Get stream metadata as an associative array or retrieve a specific key.[getOpenSslName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AesStreamInterface.html#method_getOpenSslName)
+encrypt or decrypt.[getMetadata()](class-psr-http-message-streaminterface-method-getmetadata.md)
+: array<string\|int, mixed>\|mixed\|null Get stream metadata as an associative array or retrieve a specific key.[getOpenSslName()](class-aws-crypto-aesstreaminterface-method-getopensslname.md)
 : string Returns an identifier recognizable by \`openssl\_\*\` functions, such as
-\`aes-256-cbc\` or \`aes-128-ctr\`.[getSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_getSize)
-: int\|null Get the size of the stream if known.[isReadable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_isReadable)
-: bool Returns whether or not the stream is readable.[isSeekable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_isSeekable)
-: bool Returns whether or not the stream is seekable.[isWritable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_isWritable)
-: bool Returns whether or not the stream is writable.[read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_read)
-: string Read data from the stream.[rewind()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_rewind)
-: void Seek to the beginning of the stream.[seek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_seek)
-: void Seek to a position in the stream.[tell()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_tell)
-: int Returns the current position of the file read/write pointer[write()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_write)
+\`aes-256-cbc\` or \`aes-128-ctr\`.[getSize()](class-psr-http-message-streaminterface-method-getsize.md)
+: int\|null Get the size of the stream if known.[isReadable()](class-psr-http-message-streaminterface-method-isreadable.md)
+: bool Returns whether or not the stream is readable.[isSeekable()](class-psr-http-message-streaminterface-method-isseekable.md)
+: bool Returns whether or not the stream is seekable.[isWritable()](class-psr-http-message-streaminterface-method-iswritable.md)
+: bool Returns whether or not the stream is writable.[read()](class-psr-http-message-streaminterface-method-read.md)
+: string Read data from the stream.[rewind()](class-psr-http-message-streaminterface-method-rewind.md)
+: void Seek to the beginning of the stream.[seek()](class-psr-http-message-streaminterface-method-seek.md)
+: void Seek to a position in the stream.[tell()](class-psr-http-message-streaminterface-method-tell.md)
+: int Returns the current position of the file read/write pointer[write()](class-psr-http-message-streaminterface-method-write.md)
 : int Write data to the stream.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AesStreamInterface.html\#methods)
+### Methods  [header link](class-aws-crypto-aesstreaminterface-methods.md)
 
-#### \_\_toString()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method___toString)
+#### \_\_toString()  [header link](class-psr-http-message-streaminterface-method-tostring.md)
 
 Reads all data from the stream into a string, from the beginning to end.
 
@@ -55,7 +55,7 @@ Warning: This could attempt to load a large amount of data into memory.
 This method MUST NOT raise an exception in order to conform with PHP's
 string casting operations.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method___toString\#tags)
+##### Tags  [header link](class-psr-http-message-streaminterface-method-tostring-tags.md)
 
 see[http://php.net/manual/en/language.oop5.magic.php#object.tostring](http://php.net/manual/en/language.oop5.magic.php)
 
@@ -63,7 +63,7 @@ see[http://php.net/manual/en/language.oop5.magic.php#object.tostring](http://php
 
 string
 
-#### close()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method_close)
+#### close()  [header link](class-psr-http-message-streaminterface-method-close.md)
 
 Closes the stream and any underlying resources.
 
@@ -71,7 +71,7 @@ Closes the stream and any underlying resources.
     public
                     close() : void`
 
-#### detach()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method_detach)
+#### detach()  [header link](class-psr-http-message-streaminterface-method-detach.md)
 
 Separates any underlying resources from the stream.
 
@@ -88,7 +88,7 @@ resource\|null
 
 Underlying PHP stream, if any
 
-#### eof()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method_eof)
+#### eof()  [header link](class-psr-http-message-streaminterface-method-eof.md)
 
 Returns true if the stream is at the end of the stream.
 
@@ -100,7 +100,7 @@ Returns true if the stream is at the end of the stream.
 
 bool
 
-#### getAesName()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AesStreamInterface.html\#method_getAesName)
+#### getAesName()  [header link](class-aws-crypto-aesstreaminterface-method-getaesname.md)
 
 Returns an AES recognizable name, such as 'AES/GCM/NoPadding'.
 
@@ -112,7 +112,7 @@ Returns an AES recognizable name, such as 'AES/GCM/NoPadding'.
 
 string
 
-#### getContents()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method_getContents)
+#### getContents()  [header link](class-psr-http-message-streaminterface-method-getcontents.md)
 
 Returns the remaining contents in a string
 
@@ -120,7 +120,7 @@ Returns the remaining contents in a string
     public
                     getContents() : string`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method_getContents\#tags)
+##### Tags  [header link](class-psr-http-message-streaminterface-method-getcontents-tags.md)
 
 throwsRuntimeException
 
@@ -131,7 +131,7 @@ reading.
 
 string
 
-#### getCurrentIv()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AesStreamInterface.html\#method_getCurrentIv)
+#### getCurrentIv()  [header link](class-aws-crypto-aesstreaminterface-method-getcurrentiv.md)
 
 Returns the IV that should be used to initialize the next block in
 encrypt or decrypt.
@@ -144,7 +144,7 @@ encrypt or decrypt.
 
 string
 
-#### getMetadata()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method_getMetadata)
+#### getMetadata()  [header link](class-psr-http-message-streaminterface-method-getmetadata.md)
 
 Get stream metadata as an associative array or retrieve a specific key.
 
@@ -163,7 +163,7 @@ $key
 
 Specific metadata to retrieve.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method_getMetadata\#tags)
+##### Tags  [header link](class-psr-http-message-streaminterface-method-getmetadata-tags.md)
 
 link[http://php.net/manual/en/function.stream-get-meta-data.php](http://php.net/manual/en/function.stream-get-meta-data.php)
 
@@ -176,7 +176,7 @@ Returns an associative array if no key is
 provided. Returns a specific key value if a key is provided and the
 value is found, or null if the key is not found.
 
-#### getOpenSslName()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AesStreamInterface.html\#method_getOpenSslName)
+#### getOpenSslName()  [header link](class-aws-crypto-aesstreaminterface-method-getopensslname.md)
 
 Returns an identifier recognizable by \`openssl\_\*\` functions, such as
 \`aes-256-cbc\` or \`aes-128-ctr\`.
@@ -189,7 +189,7 @@ Returns an identifier recognizable by \`openssl\_\*\` functions, such as
 
 string
 
-#### getSize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method_getSize)
+#### getSize()  [header link](class-psr-http-message-streaminterface-method-getsize.md)
 
 Get the size of the stream if known.
 
@@ -204,7 +204,7 @@ int\|null
 
 Returns the size in bytes if known, or null if unknown.
 
-#### isReadable()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method_isReadable)
+#### isReadable()  [header link](class-psr-http-message-streaminterface-method-isreadable.md)
 
 Returns whether or not the stream is readable.
 
@@ -216,7 +216,7 @@ Returns whether or not the stream is readable.
 
 bool
 
-#### isSeekable()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method_isSeekable)
+#### isSeekable()  [header link](class-psr-http-message-streaminterface-method-isseekable.md)
 
 Returns whether or not the stream is seekable.
 
@@ -228,7 +228,7 @@ Returns whether or not the stream is seekable.
 
 bool
 
-#### isWritable()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method_isWritable)
+#### isWritable()  [header link](class-psr-http-message-streaminterface-method-iswritable.md)
 
 Returns whether or not the stream is writable.
 
@@ -240,7 +240,7 @@ Returns whether or not the stream is writable.
 
 bool
 
-#### read()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method_read)
+#### read()  [header link](class-psr-http-message-streaminterface-method-read.md)
 
 Read data from the stream.
 
@@ -257,7 +257,7 @@ Read up to $length bytes from the object and return
 them. Fewer than $length bytes may be returned if underlying stream
 call returns fewer bytes.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method_read\#tags)
+##### Tags  [header link](class-psr-http-message-streaminterface-method-read-tags.md)
 
 throwsRuntimeException
 
@@ -271,7 +271,7 @@ string
 Returns the data read from the stream, or an empty string
 if no bytes are available.
 
-#### rewind()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method_rewind)
+#### rewind()  [header link](class-psr-http-message-streaminterface-method-rewind.md)
 
 Seek to the beginning of the stream.
 
@@ -282,13 +282,13 @@ Seek to the beginning of the stream.
 If the stream is not seekable, this method will raise an exception;
 otherwise, it will perform a seek(0).
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method_rewind\#tags)
+##### Tags  [header link](class-psr-http-message-streaminterface-method-rewind-tags.md)
 
 seeseek()link[http://www.php.net/manual/en/function.fseek.php](http://www.php.net/manual/en/function.fseek.php)throwsRuntimeException
 
 on failure.
 
-#### seek()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method_seek)
+#### seek()  [header link](class-psr-http-message-streaminterface-method-seek.md)
 
 Seek to a position in the stream.
 
@@ -313,13 +313,13 @@ PHP $whence values for `fseek()`. SEEK\_SET: Set position equal to
 offset bytes SEEK\_CUR: Set position to current location plus offset
 SEEK\_END: Set position to end-of-stream plus offset.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method_seek\#tags)
+##### Tags  [header link](class-psr-http-message-streaminterface-method-seek-tags.md)
 
 link[http://www.php.net/manual/en/function.fseek.php](http://www.php.net/manual/en/function.fseek.php)throwsRuntimeException
 
 on failure.
 
-#### tell()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method_tell)
+#### tell()  [header link](class-psr-http-message-streaminterface-method-tell.md)
 
 Returns the current position of the file read/write pointer
 
@@ -327,7 +327,7 @@ Returns the current position of the file read/write pointer
     public
                     tell() : int`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method_tell\#tags)
+##### Tags  [header link](class-psr-http-message-streaminterface-method-tell-tags.md)
 
 throwsRuntimeException
 
@@ -340,7 +340,7 @@ int
 
 Position of the file pointer
 
-#### write()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method_write)
+#### write()  [header link](class-psr-http-message-streaminterface-method-write.md)
 
 Write data to the stream.
 
@@ -355,7 +355,7 @@ $string
 
 The string that is to be written.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html\#method_write\#tags)
+##### Tags  [header link](class-psr-http-message-streaminterface-method-write-tags.md)
 
 throwsRuntimeException
 
@@ -375,26 +375,26 @@ Returns the number of bytes written to the stream.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AesStreamInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AesStreamInterface.html#toc-methods)
+  - [Constants](class-aws-crypto-aesstreaminterface-toc-constants.md)
+  - [Methods](class-aws-crypto-aesstreaminterface-toc-methods.md)
 - Methods
-  - [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method___toString)
-  - [close()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_close)
-  - [detach()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_detach)
-  - [eof()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_eof)
-  - [getAesName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AesStreamInterface.html#method_getAesName)
-  - [getContents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_getContents)
-  - [getCurrentIv()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AesStreamInterface.html#method_getCurrentIv)
-  - [getMetadata()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_getMetadata)
-  - [getOpenSslName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AesStreamInterface.html#method_getOpenSslName)
-  - [getSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_getSize)
-  - [isReadable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_isReadable)
-  - [isSeekable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_isSeekable)
-  - [isWritable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_isWritable)
-  - [read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_read)
-  - [rewind()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_rewind)
-  - [seek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_seek)
-  - [tell()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_tell)
-  - [write()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html#method_write)
+  - [\_\_toString()](class-psr-http-message-streaminterface-method-tostring.md)
+  - [close()](class-psr-http-message-streaminterface-method-close.md)
+  - [detach()](class-psr-http-message-streaminterface-method-detach.md)
+  - [eof()](class-psr-http-message-streaminterface-method-eof.md)
+  - [getAesName()](class-aws-crypto-aesstreaminterface-method-getaesname.md)
+  - [getContents()](class-psr-http-message-streaminterface-method-getcontents.md)
+  - [getCurrentIv()](class-aws-crypto-aesstreaminterface-method-getcurrentiv.md)
+  - [getMetadata()](class-psr-http-message-streaminterface-method-getmetadata.md)
+  - [getOpenSslName()](class-aws-crypto-aesstreaminterface-method-getopensslname.md)
+  - [getSize()](class-psr-http-message-streaminterface-method-getsize.md)
+  - [isReadable()](class-psr-http-message-streaminterface-method-isreadable.md)
+  - [isSeekable()](class-psr-http-message-streaminterface-method-isseekable.md)
+  - [isWritable()](class-psr-http-message-streaminterface-method-iswritable.md)
+  - [read()](class-psr-http-message-streaminterface-method-read.md)
+  - [rewind()](class-psr-http-message-streaminterface-method-rewind.md)
+  - [seek()](class-psr-http-message-streaminterface-method-seek.md)
+  - [tell()](class-psr-http-message-streaminterface-method-tell.md)
+  - [write()](class-psr-http-message-streaminterface-method-write.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AesStreamInterface.html#top)
+[Back To Top](class-aws-crypto-aesstreaminterface-top.md)

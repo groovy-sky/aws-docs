@@ -43,7 +43,7 @@ If a message contains characters outside the allowed set, Amazon SQS rejects the
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -67,9 +67,9 @@ Required: No
 Each message attribute consists of a `Name`, `Type`,
 and `Value`. For more information, see
 [Amazon SQS \
-message attributes](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-message-metadata.html#sqs-message-attributes) in the _Amazon SQS Developer Guide_.
+message attributes](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/sqs-message-metadata-sqs-message-attributes.md) in the _Amazon SQS Developer Guide_.
 
-Type: String to [MessageAttributeValue](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_MessageAttributeValue.html) object map
+Type: String to [MessageAttributeValue](api-messageattributevalue.md) object map
 
 Required: No
 
@@ -145,7 +145,7 @@ The maximum length of `MessageDeduplicationId` is 128 characters.
 ( `a-z`, `A-Z`, `0-9`) and punctuation
 ( ``!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~``).
 
-For best practices of using `MessageDeduplicationId`, see [Using the MessageDeduplicationId Property](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/using-messagededuplicationid-property.html) in the _Amazon SQS Developer_
+For best practices of using `MessageDeduplicationId`, see [Using the MessageDeduplicationId Property](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/using-messagededuplicationid-property.md) in the _Amazon SQS Developer_
 _Guide_.
 
 Type: String
@@ -191,7 +191,7 @@ The length of `MessageGroupId` is 128 characters. Valid values:
 alphanumeric characters and punctuation
 ``(!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~)``.
 
-For best practices of using `MessageGroupId`, see [Using the MessageGroupId Property](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/using-messagegroupid-property.html) in the _Amazon SQS Developer_
+For best practices of using `MessageGroupId`, see [Using the MessageGroupId Property](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/using-messagegroupid-property.md) in the _Amazon SQS Developer_
 _Guide_.
 
 Type: String
@@ -210,7 +210,7 @@ AWS X-Ray trace header string.
 
 - The size of a message system attribute doesn't count towards the total size of a message.
 
-Type: String to [MessageSystemAttributeValue](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_MessageSystemAttributeValue.html) object map
+Type: String to [MessageSystemAttributeValue](api-messagesystemattributevalue.md) object map
 
 Valid Keys: `AWSTraceHeader`
 
@@ -267,7 +267,7 @@ Type: String
 **[MessageId](#API_SendMessage_ResponseSyntax)**
 
 An attribute containing the `MessageId` of the message sent to the queue.
-For more information, see [Queue and Message Identifiers](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-queue-message-identifiers.html) in the _Amazon SQS Developer_
+For more information, see [Queue and Message Identifiers](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/sqs-queue-message-identifiers.md) in the _Amazon SQS Developer_
 _Guide_.
 
 Type: String
@@ -285,7 +285,7 @@ Type: String
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Errors](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Errors](commonerrors.md).
 
 **InvalidAddress**
 
@@ -386,7 +386,7 @@ HTTP Status Code: 400
 The following example `SendMessage` request sends a message containing
 `This is a test message` to the queue. You must URL-encode the entire URL. However, in this example only the message body is URL-encoded to make the example easier to read.
 The structure of `AUTHPARAMS` depends on the signature of the API request.
-For more information, see [Examples of Signed Signature Version 4 Requests](https://docs.aws.amazon.com/general/latest/gr/sigv4-signed-request-examples.html) in the _AWS General Reference_.
+For more information, see [Examples of Signed Signature Version 4 Requests](../../../../general/general/latest/gr/sigv4-signed-request-examples.md) in the _AWS General Reference_.
 
 ### Example
 
@@ -539,27 +539,27 @@ Action=SendMessage
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/sqs-2012-11-05/SendMessage)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/sqs-2012-11-05/sendmessage.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/sqs-2012-11-05/SendMessage)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/sqs-2012-11-05/sendmessage.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/sqs-2012-11-05/SendMessage)
+- [AWS SDK for C++](../../../goto/sdkforcpp/sqs-2012-11-05/sendmessage.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/sqs-2012-11-05/SendMessage)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/sqs-2012-11-05/sendmessage.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sqs-2012-11-05/SendMessage)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/sqs-2012-11-05/sendmessage.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/sqs-2012-11-05/SendMessage)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/sqs-2012-11-05/sendmessage.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/sqs-2012-11-05/SendMessage)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/sqs-2012-11-05/sendmessage.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/sqs-2012-11-05/SendMessage)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/sqs-2012-11-05/sendmessage.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/sqs-2012-11-05/SendMessage)
+- [AWS SDK for Python](../../../../services/goto/boto3/sqs-2012-11-05/sendmessage.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sqs-2012-11-05/SendMessage)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/sqs-2012-11-05/sendmessage.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 RemovePermission
 

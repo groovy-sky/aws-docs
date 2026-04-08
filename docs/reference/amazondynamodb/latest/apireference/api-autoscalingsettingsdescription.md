@@ -51,7 +51,7 @@ Required: No
 
 Information about the scaling policies.
 
-Type: Array of [AutoScalingPolicyDescription](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_AutoScalingPolicyDescription.html) objects
+Type: Array of [AutoScalingPolicyDescription](api-autoscalingpolicydescription.md) objects
 
 Required: No
 
@@ -59,13 +59,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/AutoScalingSettingsDescription)
+- [AWS SDK for C++](../../../goto/sdkforcpp/dynamodb-2012-08-10/autoscalingsettingsdescription.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/AutoScalingSettingsDescription)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/dynamodb-2012-08-10/autoscalingsettingsdescription.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/AutoScalingSettingsDescription)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/autoscalingsettingsdescription.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AutoScalingPolicyUpdate
 

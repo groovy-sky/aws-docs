@@ -17,29 +17,29 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2023-05-31**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-directory-service-data-2023-05-31.html)
+- [**2023-05-31**](api-directory-service-data-2023-05-31.md)
 
-  - [AddGroupMember](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-directory-service-data-2023-05-31.html#addgroupmember)
-  - [CreateGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-directory-service-data-2023-05-31.html#creategroup)
-  - [CreateUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-directory-service-data-2023-05-31.html#createuser)
-  - [DeleteGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-directory-service-data-2023-05-31.html#deletegroup)
-  - [DeleteUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-directory-service-data-2023-05-31.html#deleteuser)
-  - [DescribeGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-directory-service-data-2023-05-31.html#describegroup)
-  - [DescribeUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-directory-service-data-2023-05-31.html#describeuser)
-  - [DisableUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-directory-service-data-2023-05-31.html#disableuser)
-  - [ListGroupMembers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-directory-service-data-2023-05-31.html#listgroupmembers)
-  - [ListGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-directory-service-data-2023-05-31.html#listgroups)
-  - [ListGroupsForMember](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-directory-service-data-2023-05-31.html#listgroupsformember)
-  - [ListUsers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-directory-service-data-2023-05-31.html#listusers)
-  - [RemoveGroupMember](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-directory-service-data-2023-05-31.html#removegroupmember)
-  - [SearchGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-directory-service-data-2023-05-31.html#searchgroups)
-  - [SearchUsers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-directory-service-data-2023-05-31.html#searchusers)
-  - [UpdateGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-directory-service-data-2023-05-31.html#updategroup)
-  - [UpdateUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-directory-service-data-2023-05-31.html#updateuser)
+  - [AddGroupMember](api-directory-service-data-2023-05-31-addgroupmember.md)
+  - [CreateGroup](api-directory-service-data-2023-05-31-creategroup.md)
+  - [CreateUser](api-directory-service-data-2023-05-31-createuser.md)
+  - [DeleteGroup](api-directory-service-data-2023-05-31-deletegroup.md)
+  - [DeleteUser](api-directory-service-data-2023-05-31-deleteuser.md)
+  - [DescribeGroup](api-directory-service-data-2023-05-31-describegroup.md)
+  - [DescribeUser](api-directory-service-data-2023-05-31-describeuser.md)
+  - [DisableUser](api-directory-service-data-2023-05-31-disableuser.md)
+  - [ListGroupMembers](api-directory-service-data-2023-05-31-listgroupmembers.md)
+  - [ListGroups](api-directory-service-data-2023-05-31-listgroups.md)
+  - [ListGroupsForMember](api-directory-service-data-2023-05-31-listgroupsformember.md)
+  - [ListUsers](api-directory-service-data-2023-05-31-listusers.md)
+  - [RemoveGroupMember](api-directory-service-data-2023-05-31-removegroupmember.md)
+  - [SearchGroups](api-directory-service-data-2023-05-31-searchgroups.md)
+  - [SearchUsers](api-directory-service-data-2023-05-31-searchusers.md)
+  - [UpdateGroup](api-directory-service-data-2023-05-31-updategroup.md)
+  - [UpdateUser](api-directory-service-data-2023-05-31-updateuser.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DirectoryServiceData.DirectoryServiceDataClient.html\#toc)
+### Table of Contents  [header link](class-aws-directoryservicedata-directoryservicedataclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DirectoryServiceData.DirectoryServiceDataClient.html\#toc-methods)
+#### Methods  [header link](class-aws-directoryservicedata-directoryservicedataclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -70,7 +70,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DirectoryServiceData.DirectoryServiceDataClient.html\#methods)
+### Methods  [header link](class-aws-directoryservicedata-directoryservicedataclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -537,7 +537,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DirectoryServiceData.DirectoryServiceDataClient.html#toc-methods)
+  - [Methods](class-aws-directoryservicedata-directoryservicedataclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -564,4 +564,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DirectoryServiceData.DirectoryServiceDataClient.html#top)
+[Back To Top](class-aws-directoryservicedata-directoryservicedataclient-top.md)

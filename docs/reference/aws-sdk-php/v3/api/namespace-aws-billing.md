@@ -4,15 +4,15 @@ Menu
 
 ## Billing
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.billing.html\#toc)
+### Table of Contents  [header link](namespace-aws-billing-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.billing.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-billing-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.billing.exception.html)
+[Exception](namespace-aws-billing-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.billing.html\#toc-classes)
+#### Classes  [header link](namespace-aws-billing-toc-classes.md)
 
-[BillingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Billing.BillingClient.html)This client is used to interact with the **AWS Billing** service.
+[BillingClient](class-aws-billing-billingclient.md)This client is used to interact with the **AWS Billing** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.billing.html#toc-classes)
+  - [Classes](namespace-aws-billing-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.billing.html#top)
+[Back To Top](namespace-aws-billing-top.md)

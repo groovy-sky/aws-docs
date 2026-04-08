@@ -4,15 +4,15 @@ Menu
 
 ## LicenseManagerUserSubscriptions
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.licensemanagerusersubscriptions.html\#toc)
+### Table of Contents  [header link](namespace-aws-licensemanagerusersubscriptions-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.licensemanagerusersubscriptions.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-licensemanagerusersubscriptions-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.licensemanagerusersubscriptions.exception.html)
+[Exception](namespace-aws-licensemanagerusersubscriptions-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.licensemanagerusersubscriptions.html\#toc-classes)
+#### Classes  [header link](namespace-aws-licensemanagerusersubscriptions-toc-classes.md)
 
-[LicenseManagerUserSubscriptionsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LicenseManagerUserSubscriptions.LicenseManagerUserSubscriptionsClient.html)This client is used to interact with the **AWS License Manager User Subscriptions** service.
+[LicenseManagerUserSubscriptionsClient](class-aws-licensemanagerusersubscriptions-licensemanagerusersubscriptionsclient.md)This client is used to interact with the **AWS License Manager User Subscriptions** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.licensemanagerusersubscriptions.html#toc-classes)
+  - [Classes](namespace-aws-licensemanagerusersubscriptions-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.licensemanagerusersubscriptions.html#top)
+[Back To Top](namespace-aws-licensemanagerusersubscriptions-top.md)

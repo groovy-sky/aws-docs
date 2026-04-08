@@ -3,7 +3,7 @@
 Information about the DNSSEC key.
 
 You get this from your DNS provider and then give it to Route 53 (by using
-[AssociateDelegationSignerToDomain](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_AssociateDelegationSignerToDomain.html)) to pass it to the registry to establish
+[AssociateDelegationSignerToDomain](api-domains-associatedelegationsignertodomain.md)) to pass it to the registry to establish
 the chain of trust.
 
 ## Contents
@@ -58,7 +58,7 @@ Required: No
 
 **Id**
 
-An ID assigned to each DS record created by [AssociateDelegationSignerToDomain](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_AssociateDelegationSignerToDomain.html).
+An ID assigned to each DS record created by [AssociateDelegationSignerToDomain](api-domains-associatedelegationsignertodomain.md).
 
 Type: String
 
@@ -87,13 +87,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53domains-2014-05-15/DnssecKey)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53domains-2014-05-15/dnsseckey.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53domains-2014-05-15/DnssecKey)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53domains-2014-05-15/dnsseckey.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53domains-2014-05-15/DnssecKey)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53domains-2014-05-15/dnsseckey.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ContactDetail
 

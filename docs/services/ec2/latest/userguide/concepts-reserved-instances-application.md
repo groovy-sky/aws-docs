@@ -51,13 +51,13 @@ However, if you purchase one `m4.xlarge` Reserved Instance and run four
 same hour, the total running time for the instances is one hour, which results in
 one hour of Reserved Instance usage and 0 hours of On-Demand usage.
 
-![Four m4.xlarge instances running for 15 minutes each within the same hour.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ri-per-second-billing.png)
+![Four m4.xlarge instances running for 15 minutes each within the same hour.](../../../images/awsec2/latest/userguide/images/ri-per-second-billing-png.md)
 
 If multiple eligible instances are running concurrently, the Reserved Instance billing benefit
 is applied to all the instances at the same time up to a maximum of 3600 seconds in
 a clock-hour; thereafter, On-Demand rates apply.
 
-![Multiple instances running concurrently with Reserved Instance billing.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ri-per-second-billing-concurrent.png)
+![Multiple instances running concurrently with Reserved Instance billing.](../../../images/awsec2/latest/userguide/images/ri-per-second-billing-concurrent-png.md)
 
 **Cost Explorer** on the [Billing and Cost Management](https://console.aws.amazon.com/billing) console enables you to analyze the savings against running On-Demand Instances.
 The [Reserved Instances FAQ](https://aws.amazon.com/ec2/faqs)
@@ -170,7 +170,7 @@ value of $121.32.
 **Instances**.
 
 3. To display the **Upfront price** column, choose
-    settings ( ![Settings icon.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/settings-icon.png) ) in the top-right corner, turn on
+    settings ( ![Settings icon.](../../../images/awsec2/latest/userguide/images/settings-icon-png.md) ) in the top-right corner, turn on
     **Upfront price**, and choose
     **Confirm**.
 

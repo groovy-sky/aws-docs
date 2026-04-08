@@ -143,7 +143,7 @@ Required: No
 Describes a runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note
 that if a runtime is specified, code must also be specified.
 
-Type: [AppSyncRuntime](https://docs.aws.amazon.com/appsync/latest/APIReference/API_AppSyncRuntime.html) object
+Type: [AppSyncRuntime](api-appsyncruntime.md) object
 
 Required: No
 
@@ -154,7 +154,7 @@ Describes a Sync configuration for a resolver.
 Specifies which Conflict Detection strategy and Resolution strategy to use when the
 resolver is invoked.
 
-Type: [SyncConfig](https://docs.aws.amazon.com/appsync/latest/APIReference/API_SyncConfig.html) object
+Type: [SyncConfig](api-syncconfig.md) object
 
 Required: No
 
@@ -202,11 +202,11 @@ The following data is returned in JSON format by the service.
 
 The `Function` object.
 
-Type: [FunctionConfiguration](https://docs.aws.amazon.com/appsync/latest/APIReference/API_FunctionConfiguration.html) object
+Type: [FunctionConfiguration](api-functionconfiguration.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/appsync/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **BadRequestException**
 
@@ -255,27 +255,27 @@ HTTP Status Code: 401
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appsync-2017-07-25/CreateFunction)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/appsync-2017-07-25/createfunction.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appsync-2017-07-25/CreateFunction)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appsync-2017-07-25/createfunction.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appsync-2017-07-25/CreateFunction)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appsync-2017-07-25/createfunction.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appsync-2017-07-25/CreateFunction)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/appsync-2017-07-25/createfunction.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appsync-2017-07-25/CreateFunction)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appsync-2017-07-25/createfunction.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appsync-2017-07-25/CreateFunction)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appsync-2017-07-25/createfunction.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appsync-2017-07-25/CreateFunction)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appsync-2017-07-25/createfunction.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appsync-2017-07-25/CreateFunction)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appsync-2017-07-25/createfunction.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/appsync-2017-07-25/CreateFunction)
+- [AWS SDK for Python](../../../../services/goto/boto3/appsync-2017-07-25/createfunction.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appsync-2017-07-25/CreateFunction)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appsync-2017-07-25/createfunction.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateDomainName
 

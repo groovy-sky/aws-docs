@@ -17,35 +17,35 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2025-09-22**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html)
+- [**2025-09-22**](api-compute-optimizer-automation-2025-09-22.md)
 
-  - [AssociateAccounts](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#associateaccounts)
-  - [CreateAutomationRule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#createautomationrule)
-  - [DeleteAutomationRule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#deleteautomationrule)
-  - [DisassociateAccounts](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#disassociateaccounts)
-  - [GetAutomationEvent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#getautomationevent)
-  - [GetAutomationRule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#getautomationrule)
-  - [GetEnrollmentConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#getenrollmentconfiguration)
-  - [ListAccounts](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#listaccounts)
-  - [ListAutomationEventSteps](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#listautomationeventsteps)
-  - [ListAutomationEventSummaries](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#listautomationeventsummaries)
-  - [ListAutomationEvents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#listautomationevents)
-  - [ListAutomationRulePreview](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#listautomationrulepreview)
-  - [ListAutomationRulePreviewSummaries](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#listautomationrulepreviewsummaries)
-  - [ListAutomationRules](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#listautomationrules)
-  - [ListRecommendedActionSummaries](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#listrecommendedactionsummaries)
-  - [ListRecommendedActions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#listrecommendedactions)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#listtagsforresource)
-  - [RollbackAutomationEvent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#rollbackautomationevent)
-  - [StartAutomationEvent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#startautomationevent)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#untagresource)
-  - [UpdateAutomationRule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#updateautomationrule)
-  - [UpdateEnrollmentConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-automation-2025-09-22.html#updateenrollmentconfiguration)
+  - [AssociateAccounts](api-compute-optimizer-automation-2025-09-22-associateaccounts.md)
+  - [CreateAutomationRule](api-compute-optimizer-automation-2025-09-22-createautomationrule.md)
+  - [DeleteAutomationRule](api-compute-optimizer-automation-2025-09-22-deleteautomationrule.md)
+  - [DisassociateAccounts](api-compute-optimizer-automation-2025-09-22-disassociateaccounts.md)
+  - [GetAutomationEvent](api-compute-optimizer-automation-2025-09-22-getautomationevent.md)
+  - [GetAutomationRule](api-compute-optimizer-automation-2025-09-22-getautomationrule.md)
+  - [GetEnrollmentConfiguration](api-compute-optimizer-automation-2025-09-22-getenrollmentconfiguration.md)
+  - [ListAccounts](api-compute-optimizer-automation-2025-09-22-listaccounts.md)
+  - [ListAutomationEventSteps](api-compute-optimizer-automation-2025-09-22-listautomationeventsteps.md)
+  - [ListAutomationEventSummaries](api-compute-optimizer-automation-2025-09-22-listautomationeventsummaries.md)
+  - [ListAutomationEvents](api-compute-optimizer-automation-2025-09-22-listautomationevents.md)
+  - [ListAutomationRulePreview](api-compute-optimizer-automation-2025-09-22-listautomationrulepreview.md)
+  - [ListAutomationRulePreviewSummaries](api-compute-optimizer-automation-2025-09-22-listautomationrulepreviewsummaries.md)
+  - [ListAutomationRules](api-compute-optimizer-automation-2025-09-22-listautomationrules.md)
+  - [ListRecommendedActionSummaries](api-compute-optimizer-automation-2025-09-22-listrecommendedactionsummaries.md)
+  - [ListRecommendedActions](api-compute-optimizer-automation-2025-09-22-listrecommendedactions.md)
+  - [ListTagsForResource](api-compute-optimizer-automation-2025-09-22-listtagsforresource.md)
+  - [RollbackAutomationEvent](api-compute-optimizer-automation-2025-09-22-rollbackautomationevent.md)
+  - [StartAutomationEvent](api-compute-optimizer-automation-2025-09-22-startautomationevent.md)
+  - [TagResource](api-compute-optimizer-automation-2025-09-22-tagresource.md)
+  - [UntagResource](api-compute-optimizer-automation-2025-09-22-untagresource.md)
+  - [UpdateAutomationRule](api-compute-optimizer-automation-2025-09-22-updateautomationrule.md)
+  - [UpdateEnrollmentConfiguration](api-compute-optimizer-automation-2025-09-22-updateenrollmentconfiguration.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComputeOptimizerAutomation.ComputeOptimizerAutomationClient.html\#toc)
+### Table of Contents  [header link](class-aws-computeoptimizerautomation-computeoptimizerautomationclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComputeOptimizerAutomation.ComputeOptimizerAutomationClient.html\#toc-methods)
+#### Methods  [header link](class-aws-computeoptimizerautomation-computeoptimizerautomationclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -76,7 +76,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComputeOptimizerAutomation.ComputeOptimizerAutomationClient.html\#methods)
+### Methods  [header link](class-aws-computeoptimizerautomation-computeoptimizerautomationclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -543,7 +543,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComputeOptimizerAutomation.ComputeOptimizerAutomationClient.html#toc-methods)
+  - [Methods](class-aws-computeoptimizerautomation-computeoptimizerautomationclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -570,4 +570,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComputeOptimizerAutomation.ComputeOptimizerAutomationClient.html#top)
+[Back To Top](class-aws-computeoptimizerautomation-computeoptimizerautomationclient-top.md)

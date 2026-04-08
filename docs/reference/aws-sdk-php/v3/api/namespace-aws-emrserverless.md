@@ -4,15 +4,15 @@ Menu
 
 ## EMRServerless
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.emrserverless.html\#toc)
+### Table of Contents  [header link](namespace-aws-emrserverless-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.emrserverless.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-emrserverless-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.emrserverless.exception.html)
+[Exception](namespace-aws-emrserverless-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.emrserverless.html\#toc-classes)
+#### Classes  [header link](namespace-aws-emrserverless-toc-classes.md)
 
-[EMRServerlessClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EMRServerless.EMRServerlessClient.html)This client is used to interact with the **EMR Serverless** service.
+[EMRServerlessClient](class-aws-emrserverless-emrserverlessclient.md)This client is used to interact with the **EMR Serverless** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.emrserverless.html#toc-classes)
+  - [Classes](namespace-aws-emrserverless-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.emrserverless.html#top)
+[Back To Top](namespace-aws-emrserverless-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## WAFV2
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wafv2.html\#toc)
+### Table of Contents  [header link](namespace-aws-wafv2-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wafv2.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-wafv2-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wafv2.exception.html)
+[Exception](namespace-aws-wafv2-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wafv2.html\#toc-classes)
+#### Classes  [header link](namespace-aws-wafv2-toc-classes.md)
 
-[WAFV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WAFV2.WAFV2Client.html)This client is used to interact with the **AWS WAFV2** service.
+[WAFV2Client](class-aws-wafv2-wafv2client.md)This client is used to interact with the **AWS WAFV2** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wafv2.html#toc-classes)
+  - [Classes](namespace-aws-wafv2-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wafv2.html#top)
+[Back To Top](namespace-aws-wafv2-top.md)

@@ -17,25 +17,25 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-09-23**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloud9-2017-09-23.html)
+- [**2017-09-23**](api-cloud9-2017-09-23.md)
 
-  - [CreateEnvironmentEC2](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloud9-2017-09-23.html#createenvironmentec2)
-  - [CreateEnvironmentMembership](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloud9-2017-09-23.html#createenvironmentmembership)
-  - [DeleteEnvironment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloud9-2017-09-23.html#deleteenvironment)
-  - [DeleteEnvironmentMembership](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloud9-2017-09-23.html#deleteenvironmentmembership)
-  - [DescribeEnvironmentMemberships](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloud9-2017-09-23.html#describeenvironmentmemberships)
-  - [DescribeEnvironmentStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloud9-2017-09-23.html#describeenvironmentstatus)
-  - [DescribeEnvironments](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloud9-2017-09-23.html#describeenvironments)
-  - [ListEnvironments](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloud9-2017-09-23.html#listenvironments)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloud9-2017-09-23.html#listtagsforresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloud9-2017-09-23.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloud9-2017-09-23.html#untagresource)
-  - [UpdateEnvironment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloud9-2017-09-23.html#updateenvironment)
-  - [UpdateEnvironmentMembership](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloud9-2017-09-23.html#updateenvironmentmembership)
+  - [CreateEnvironmentEC2](api-cloud9-2017-09-23-createenvironmentec2.md)
+  - [CreateEnvironmentMembership](api-cloud9-2017-09-23-createenvironmentmembership.md)
+  - [DeleteEnvironment](api-cloud9-2017-09-23-deleteenvironment.md)
+  - [DeleteEnvironmentMembership](api-cloud9-2017-09-23-deleteenvironmentmembership.md)
+  - [DescribeEnvironmentMemberships](api-cloud9-2017-09-23-describeenvironmentmemberships.md)
+  - [DescribeEnvironmentStatus](api-cloud9-2017-09-23-describeenvironmentstatus.md)
+  - [DescribeEnvironments](api-cloud9-2017-09-23-describeenvironments.md)
+  - [ListEnvironments](api-cloud9-2017-09-23-listenvironments.md)
+  - [ListTagsForResource](api-cloud9-2017-09-23-listtagsforresource.md)
+  - [TagResource](api-cloud9-2017-09-23-tagresource.md)
+  - [UntagResource](api-cloud9-2017-09-23-untagresource.md)
+  - [UpdateEnvironment](api-cloud9-2017-09-23-updateenvironment.md)
+  - [UpdateEnvironmentMembership](api-cloud9-2017-09-23-updateenvironmentmembership.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Cloud9.Cloud9Client.html\#toc)
+### Table of Contents  [header link](class-aws-cloud9-cloud9client-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Cloud9.Cloud9Client.html\#toc-methods)
+#### Methods  [header link](class-aws-cloud9-cloud9client-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -66,7 +66,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Cloud9.Cloud9Client.html\#methods)
+### Methods  [header link](class-aws-cloud9-cloud9client-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -533,7 +533,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Cloud9.Cloud9Client.html#toc-methods)
+  - [Methods](class-aws-cloud9-cloud9client-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -560,4 +560,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Cloud9.Cloud9Client.html#top)
+[Back To Top](class-aws-cloud9-cloud9client-top.md)

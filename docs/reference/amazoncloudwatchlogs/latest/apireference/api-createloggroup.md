@@ -18,7 +18,7 @@ sign)
 
 When you create a log group, by default the log events in the log group do not expire.
 To set a retention policy so that events expire and are deleted after a specified time, use
-[PutRetentionPolicy](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutRetentionPolicy.html).
+[PutRetentionPolicy](api-putretentionpolicy.md).
 
 If you associate an AWS KMS key with the log group, ingested data is
 encrypted using the KMS key. This association is stored as long as the data
@@ -32,7 +32,7 @@ If you attempt to associate a KMS key with the log group but the KMS key does no
 
 CloudWatch Logs supports only symmetric KMS keys. Do not associate an
 asymmetric KMS key with your log group. For more information, see [Using\
-Symmetric and Asymmetric Keys](https://docs.aws.amazon.com/kms/latest/developerguide/symmetric-asymmetric.html).
+Symmetric and Asymmetric Keys](../../../../services/kms/latest/developerguide/symmetric-asymmetric.md).
 
 ## Request Syntax
 
@@ -51,7 +51,7 @@ Symmetric and Asymmetric Keys](https://docs.aws.amazon.com/kms/latest/developerg
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -69,7 +69,7 @@ Required: No
 
 The Amazon Resource Name (ARN) of the KMS key to use when encrypting log
 data. For more information, see [Amazon Resource\
-Names](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html#arn-syntax-kms).
+Names](../../../../general/general/latest/gr/aws-arns-and-namespaces-arn-syntax-kms.md).
 
 Type: String
 
@@ -100,7 +100,7 @@ If you omit this parameter, the default of `STANDARD` is used.
 The value of `logGroupClass` can't be changed after a log group is
 created.
 
-For details about the features supported by each class, see [Log classes](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch_Logs_Log_Classes.html)
+For details about the features supported by each class, see [Log classes](../../../../services/amazoncloudwatch/latest/logs/cloudwatch-logs-log-classes.md)
 
 Type: String
 
@@ -128,9 +128,9 @@ You can grant users access to certain log groups while preventing them from acce
 other log groups. To do so, tag your groups and use IAM policies that refer to
 those tags. To assign tags when you create a log group, you must have either the
 `logs:TagResource` or `logs:TagLogGroup` permission. For more
-information about tagging, see [Tagging AWS resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html). For
+information about tagging, see [Tagging AWS resources](../../../../general/general/latest/gr/aws-tagging.md). For
 more information about using tags to control access, see [Controlling access to Amazon Web Services\
-resources using tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html).
+resources using tags](../../../../services/iam/latest/userguide/access-tags.md).
 
 Type: String to string map
 
@@ -152,7 +152,7 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **InvalidParameterException**
 
@@ -225,27 +225,27 @@ Date: <Date>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/logs-2014-03-28/CreateLogGroup)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/logs-2014-03-28/createloggroup.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/logs-2014-03-28/CreateLogGroup)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/logs-2014-03-28/createloggroup.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/CreateLogGroup)
+- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/createloggroup.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/logs-2014-03-28/CreateLogGroup)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/logs-2014-03-28/createloggroup.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/CreateLogGroup)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/createloggroup.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/logs-2014-03-28/CreateLogGroup)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/logs-2014-03-28/createloggroup.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/logs-2014-03-28/CreateLogGroup)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/logs-2014-03-28/createloggroup.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/logs-2014-03-28/CreateLogGroup)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/logs-2014-03-28/createloggroup.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/logs-2014-03-28/CreateLogGroup)
+- [AWS SDK for Python](../../../../services/goto/boto3/logs-2014-03-28/createloggroup.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/logs-2014-03-28/CreateLogGroup)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/createloggroup.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateLogAnomalyDetector
 

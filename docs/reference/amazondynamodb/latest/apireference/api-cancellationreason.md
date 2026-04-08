@@ -23,7 +23,7 @@ Required: No
 
 Item in the request which caused the transaction to get cancelled.
 
-Type: String to [AttributeValue](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_AttributeValue.html) object map
+Type: String to [AttributeValue](api-attributevalue.md) object map
 
 Key Length Constraints: Maximum length of 65535.
 
@@ -41,13 +41,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/CancellationReason)
+- [AWS SDK for C++](../../../goto/sdkforcpp/dynamodb-2012-08-10/cancellationreason.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/CancellationReason)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/dynamodb-2012-08-10/cancellationreason.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/CancellationReason)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/cancellationreason.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 BillingModeSummary
 

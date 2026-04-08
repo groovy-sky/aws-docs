@@ -17,22 +17,22 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-11-14**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elementalinference-2018-11-14.html)
+- [**2018-11-14**](api-elementalinference-2018-11-14.md)
 
-  - [AssociateFeed](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elementalinference-2018-11-14.html#associatefeed)
-  - [CreateFeed](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elementalinference-2018-11-14.html#createfeed)
-  - [DeleteFeed](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elementalinference-2018-11-14.html#deletefeed)
-  - [DisassociateFeed](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elementalinference-2018-11-14.html#disassociatefeed)
-  - [GetFeed](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elementalinference-2018-11-14.html#getfeed)
-  - [ListFeeds](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elementalinference-2018-11-14.html#listfeeds)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elementalinference-2018-11-14.html#listtagsforresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elementalinference-2018-11-14.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elementalinference-2018-11-14.html#untagresource)
-  - [UpdateFeed](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elementalinference-2018-11-14.html#updatefeed)
+  - [AssociateFeed](api-elementalinference-2018-11-14-associatefeed.md)
+  - [CreateFeed](api-elementalinference-2018-11-14-createfeed.md)
+  - [DeleteFeed](api-elementalinference-2018-11-14-deletefeed.md)
+  - [DisassociateFeed](api-elementalinference-2018-11-14-disassociatefeed.md)
+  - [GetFeed](api-elementalinference-2018-11-14-getfeed.md)
+  - [ListFeeds](api-elementalinference-2018-11-14-listfeeds.md)
+  - [ListTagsForResource](api-elementalinference-2018-11-14-listtagsforresource.md)
+  - [TagResource](api-elementalinference-2018-11-14-tagresource.md)
+  - [UntagResource](api-elementalinference-2018-11-14-untagresource.md)
+  - [UpdateFeed](api-elementalinference-2018-11-14-updatefeed.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElementalInference.ElementalInferenceClient.html\#toc)
+### Table of Contents  [header link](class-aws-elementalinference-elementalinferenceclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElementalInference.ElementalInferenceClient.html\#toc-methods)
+#### Methods  [header link](class-aws-elementalinference-elementalinferenceclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -63,7 +63,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElementalInference.ElementalInferenceClient.html\#methods)
+### Methods  [header link](class-aws-elementalinference-elementalinferenceclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -530,7 +530,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElementalInference.ElementalInferenceClient.html#toc-methods)
+  - [Methods](class-aws-elementalinference-elementalinferenceclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -557,4 +557,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElementalInference.ElementalInferenceClient.html#top)
+[Back To Top](class-aws-elementalinference-elementalinferenceclient-top.md)

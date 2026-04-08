@@ -348,7 +348,7 @@ Required: No
 The configuration that controls how Amazon AppFlow places data in the destination
 connector.
 
-Type: Array of [DestinationFlowConfig](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DestinationFlowConfig.html) objects
+Type: Array of [DestinationFlowConfig](api-destinationflowconfig.md) objects
 
 Required: Yes
 
@@ -385,7 +385,7 @@ Specifies the configuration that Amazon AppFlow uses when it catalogs the data t
 transferred by the associated flow. When Amazon AppFlow catalogs the data from a flow, it
 stores metadata in a data catalog.
 
-Type: [MetadataCatalogConfig](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_MetadataCatalogConfig.html) object
+Type: [MetadataCatalogConfig](api-metadatacatalogconfig.md) object
 
 Required: No
 
@@ -394,7 +394,7 @@ Required: No
 The configuration that controls how Amazon AppFlow retrieves data from the source
 connector.
 
-Type: [SourceFlowConfig](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SourceFlowConfig.html) object
+Type: [SourceFlowConfig](api-sourceflowconfig.md) object
 
 Required: Yes
 
@@ -421,7 +421,7 @@ Required: No
 A list of tasks that Amazon AppFlow performs while transferring the data in the flow
 run.
 
-Type: Array of [Task](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_Task.html) objects
+Type: Array of [Task](api-task.md) objects
 
 Required: Yes
 
@@ -429,7 +429,7 @@ Required: Yes
 
 The trigger settings that determine how and when the flow runs.
 
-Type: [TriggerConfig](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_TriggerConfig.html) object
+Type: [TriggerConfig](api-triggerconfig.md) object
 
 Required: Yes
 
@@ -472,7 +472,7 @@ Valid Values: `Active | Deprecated | Deleted | Draft | Errored | Suspended`
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/appflow/1.0/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **AccessDeniedException**
 
@@ -926,27 +926,27 @@ import com.amazonaws.services.appflow.model.TriggerType;
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appflow-2020-08-23/CreateFlow)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/appflow-2020-08-23/createflow.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appflow-2020-08-23/CreateFlow)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appflow-2020-08-23/createflow.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/CreateFlow)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/createflow.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appflow-2020-08-23/CreateFlow)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/appflow-2020-08-23/createflow.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/CreateFlow)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/createflow.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appflow-2020-08-23/CreateFlow)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appflow-2020-08-23/createflow.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appflow-2020-08-23/CreateFlow)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appflow-2020-08-23/createflow.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appflow-2020-08-23/CreateFlow)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appflow-2020-08-23/createflow.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/appflow-2020-08-23/CreateFlow)
+- [AWS SDK for Python](../../../../services/goto/boto3/appflow-2020-08-23/createflow.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/CreateFlow)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/createflow.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateConnectorProfile
 

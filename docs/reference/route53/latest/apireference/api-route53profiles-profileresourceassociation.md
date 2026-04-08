@@ -110,13 +110,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53profiles-2018-05-10/ProfileResourceAssociation)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53profiles-2018-05-10/profileresourceassociation.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53profiles-2018-05-10/ProfileResourceAssociation)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53profiles-2018-05-10/profileresourceassociation.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53profiles-2018-05-10/ProfileResourceAssociation)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53profiles-2018-05-10/profileresourceassociation.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ProfileAssociation
 

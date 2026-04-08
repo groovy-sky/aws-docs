@@ -2,46 +2,46 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
-- [Utils](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.utils.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
+- [Utils](namespace-aws-s3-s3transfer-utils.md)
 
 ## FileDownloadHandler     extends [AbstractDownloadHandler](class-aws-s3-s3transfer-utils-abstractdownloadhandler.md)   in package    - [Aws](package-aws.md)       implements  [ResumableDownloadHandlerInterface](class-aws-s3-s3transfer-utils-resumabledownloadhandlerinterface.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-utils-filedownloadhandler-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-s3-s3transfer-utils-filedownloadhandler-toc-interfaces.md)
 
 [ResumableDownloadHandlerInterface](class-aws-s3-s3transfer-utils-resumabledownloadhandlerinterface.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html\#toc-constants)
+#### Constants  [header link](class-aws-s3-s3transfer-utils-filedownloadhandler-toc-constants.md)
 
 [PROGRESS\_SNAPSHOT\_KEY](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#constant_PROGRESS_SNAPSHOT_KEY)
 = 'progress\_snapshot' [REASON\_KEY](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#constant_REASON_KEY)
 = 'reason' [REQUEST\_ARGS\_KEY](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#constant_REQUEST_ARGS_KEY)
 = 'request\_args'
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-utils-filedownloadhandler-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method___construct)
-: mixed [bytesTransferred()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_bytesTransferred)
-: bool [getDestination()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_getDestination)
-: string [getFixedPartSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_getFixedPartSize)
-: int [getHandlerResult()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_getHandlerResult)
-: string Returns the handler result.[getResumeFilePath()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_getResumeFilePath)
-: string [getTemporaryFilePath()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_getTemporaryFilePath)
-: string [initializeDestination()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_initializeDestination)
-: void [isConcurrencySupported()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_isConcurrencySupported)
+[\_\_construct()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-construct.md)
+: mixed [bytesTransferred()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-bytestransferred.md)
+: bool [getDestination()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-getdestination.md)
+: string [getFixedPartSize()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-getfixedpartsize.md)
+: int [getHandlerResult()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-gethandlerresult.md)
+: string Returns the handler result.[getResumeFilePath()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-getresumefilepath.md)
+: string [getTemporaryFilePath()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-gettemporaryfilepath.md)
+: string [initializeDestination()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-initializedestination.md)
+: void [isConcurrencySupported()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-isconcurrencysupported.md)
 : bool To control whether the download handler supports
-concurrency.[isFailsWhenDestinationExists()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_isFailsWhenDestinationExists)
+concurrency.[isFailsWhenDestinationExists()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-isfailswhendestinationexists.md)
 : bool [priority()](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#method_priority)
-: int To provide an order on which listener is notified first.[transferComplete()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_transferComplete)
-: void [transferFail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_transferFail)
-: void [transferInitiated()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_transferInitiated)
+: int To provide an order on which listener is notified first.[transferComplete()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-transfercomplete.md)
+: void [transferFail()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-transferfail.md)
+: void [transferInitiated()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-transferinitiated.md)
 : void
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html\#constants)
+### Constants  [header link](class-aws-s3-s3transfer-utils-filedownloadhandler-constants.md)
 
 #### PROGRESS\_SNAPSHOT\_KEY  [header link](class-aws-s3-s3transfer-progress-abstracttransferlistener.md\#constant_PROGRESS_SNAPSHOT_KEY)
 
@@ -70,9 +70,9 @@ concurrency.[isFailsWhenDestinationExists()](https://docs.aws.amazon.com/aws-sdk
     = 'request_args'
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-utils-filedownloadhandler-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3transfer-utils-filedownloadhandler-method-construct.md)
 
 `
     public
@@ -90,7 +90,7 @@ $destination
 : int\|null
 = null
 
-#### bytesTransferred()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html\#method_bytesTransferred)
+#### bytesTransferred()  [header link](class-aws-s3-s3transfer-utils-filedownloadhandler-method-bytestransferred.md)
 
 `
     public
@@ -105,7 +105,7 @@ $context
 
 bool
 
-#### getDestination()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html\#method_getDestination)
+#### getDestination()  [header link](class-aws-s3-s3transfer-utils-filedownloadhandler-method-getdestination.md)
 
 `
     public
@@ -115,7 +115,7 @@ bool
 
 string
 
-#### getFixedPartSize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html\#method_getFixedPartSize)
+#### getFixedPartSize()  [header link](class-aws-s3-s3transfer-utils-filedownloadhandler-method-getfixedpartsize.md)
 
 `
     public
@@ -125,7 +125,7 @@ string
 
 int
 
-#### getHandlerResult()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html\#method_getHandlerResult)
+#### getHandlerResult()  [header link](class-aws-s3-s3transfer-utils-filedownloadhandler-method-gethandlerresult.md)
 
 Returns the handler result.
 
@@ -137,7 +137,7 @@ Returns the handler result.
 
 string
 
-#### getResumeFilePath()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html\#method_getResumeFilePath)
+#### getResumeFilePath()  [header link](class-aws-s3-s3transfer-utils-filedownloadhandler-method-getresumefilepath.md)
 
 `
     public
@@ -147,7 +147,7 @@ string
 
 string
 
-#### getTemporaryFilePath()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html\#method_getTemporaryFilePath)
+#### getTemporaryFilePath()  [header link](class-aws-s3-s3transfer-utils-filedownloadhandler-method-gettemporaryfilepath.md)
 
 `
     public
@@ -157,7 +157,7 @@ string
 
 string
 
-#### initializeDestination()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html\#method_initializeDestination)
+#### initializeDestination()  [header link](class-aws-s3-s3transfer-utils-filedownloadhandler-method-initializedestination.md)
 
 `
     public
@@ -168,7 +168,7 @@ string
 $response
 : array<string\|int, mixed>
 
-#### isConcurrencySupported()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html\#method_isConcurrencySupported)
+#### isConcurrencySupported()  [header link](class-aws-s3-s3transfer-utils-filedownloadhandler-method-isconcurrencysupported.md)
 
 To control whether the download handler supports
 concurrency.
@@ -177,7 +177,7 @@ concurrency.
     public
                     isConcurrencySupported() : bool`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html\#method_isConcurrencySupported\#tags)
+##### Tags  [header link](class-aws-s3-s3transfer-utils-filedownloadhandler-method-isconcurrencysupported-tags.md)
 
 inheritDoc
 
@@ -185,7 +185,7 @@ inheritDoc
 
 bool
 
-#### isFailsWhenDestinationExists()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html\#method_isFailsWhenDestinationExists)
+#### isFailsWhenDestinationExists()  [header link](class-aws-s3-s3transfer-utils-filedownloadhandler-method-isfailswhendestinationexists.md)
 
 `
     public
@@ -209,7 +209,7 @@ By default, it will provide a neutral value.
 
 int
 
-#### transferComplete()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html\#method_transferComplete)
+#### transferComplete()  [header link](class-aws-s3-s3transfer-utils-filedownloadhandler-method-transfercomplete.md)
 
 `
     public
@@ -220,7 +220,7 @@ int
 $context
 : array<string\|int, mixed>
 
-#### transferFail()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html\#method_transferFail)
+#### transferFail()  [header link](class-aws-s3-s3transfer-utils-filedownloadhandler-method-transferfail.md)
 
 `
     public
@@ -231,7 +231,7 @@ $context
 $context
 : array<string\|int, mixed>
 
-#### transferInitiated()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html\#method_transferInitiated)
+#### transferInitiated()  [header link](class-aws-s3-s3transfer-utils-filedownloadhandler-method-transferinitiated.md)
 
 `
     public
@@ -248,26 +248,26 @@ $context
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#toc-methods)
+  - [Constants](class-aws-s3-s3transfer-utils-filedownloadhandler-toc-constants.md)
+  - [Methods](class-aws-s3-s3transfer-utils-filedownloadhandler-toc-methods.md)
 - Constants
   - [PROGRESS\_SNAPSHOT\_KEY](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#constant_PROGRESS_SNAPSHOT_KEY)
   - [REASON\_KEY](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#constant_REASON_KEY)
   - [REQUEST\_ARGS\_KEY](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#constant_REQUEST_ARGS_KEY)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method___construct)
-  - [bytesTransferred()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_bytesTransferred)
-  - [getDestination()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_getDestination)
-  - [getFixedPartSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_getFixedPartSize)
-  - [getHandlerResult()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_getHandlerResult)
-  - [getResumeFilePath()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_getResumeFilePath)
-  - [getTemporaryFilePath()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_getTemporaryFilePath)
-  - [initializeDestination()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_initializeDestination)
-  - [isConcurrencySupported()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_isConcurrencySupported)
-  - [isFailsWhenDestinationExists()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_isFailsWhenDestinationExists)
+  - [\_\_construct()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-construct.md)
+  - [bytesTransferred()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-bytestransferred.md)
+  - [getDestination()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-getdestination.md)
+  - [getFixedPartSize()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-getfixedpartsize.md)
+  - [getHandlerResult()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-gethandlerresult.md)
+  - [getResumeFilePath()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-getresumefilepath.md)
+  - [getTemporaryFilePath()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-gettemporaryfilepath.md)
+  - [initializeDestination()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-initializedestination.md)
+  - [isConcurrencySupported()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-isconcurrencysupported.md)
+  - [isFailsWhenDestinationExists()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-isfailswhendestinationexists.md)
   - [priority()](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#method_priority)
-  - [transferComplete()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_transferComplete)
-  - [transferFail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_transferFail)
-  - [transferInitiated()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#method_transferInitiated)
+  - [transferComplete()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-transfercomplete.md)
+  - [transferFail()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-transferfail.md)
+  - [transferInitiated()](class-aws-s3-s3transfer-utils-filedownloadhandler-method-transferinitiated.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.FileDownloadHandler.html#top)
+[Back To Top](class-aws-s3-s3transfer-utils-filedownloadhandler-top.md)

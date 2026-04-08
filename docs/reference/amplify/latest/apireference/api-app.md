@@ -79,7 +79,7 @@ The environment variables for the Amplify app.
 
 For a list of the environment variables that are accessible to Amplify by default, see
 [Amplify\
-Environment variables](https://docs.aws.amazon.com/amplify/latest/userguide/amplify-console-environment-variables.html) in the _Amplify Hosting User_
+Environment variables](../../../../services/amplify/latest/userguide/amplify-console-environment-variables.md) in the _Amplify Hosting User_
 _Guide_.
 
 Type: String to string map
@@ -275,7 +275,7 @@ Required: No
 
 Describes the information about a production branch of the Amplify app.
 
-Type: [ProductionBranch](https://docs.aws.amazon.com/amplify/latest/APIReference/API_ProductionBranch.html) object
+Type: [ProductionBranch](api-productionbranch.md) object
 
 Required: No
 
@@ -320,7 +320,7 @@ Describes the Firewall configuration for the Amplify app. Firewall
 support enables you to protect your hosted applications with a direct integration with
 AWS WAF.
 
-Type: [WafConfiguration](https://docs.aws.amazon.com/amplify/latest/APIReference/API_WafConfiguration.html) object
+Type: [WafConfiguration](api-wafconfiguration.md) object
 
 Required: No
 
@@ -337,13 +337,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/amplify-2017-07-25/App)
+- [AWS SDK for C++](../../../goto/sdkforcpp/amplify-2017-07-25/app.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/amplify-2017-07-25/App)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/amplify-2017-07-25/app.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/amplify-2017-07-25/App)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/amplify-2017-07-25/app.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Data Types
 

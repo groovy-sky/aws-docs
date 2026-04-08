@@ -4,15 +4,15 @@ Menu
 
 ## CognitoSync
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cognitosync.html\#toc)
+### Table of Contents  [header link](namespace-aws-cognitosync-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cognitosync.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-cognitosync-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cognitosync.exception.html)
+[Exception](namespace-aws-cognitosync-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cognitosync.html\#toc-classes)
+#### Classes  [header link](namespace-aws-cognitosync-toc-classes.md)
 
-[CognitoSyncClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoSync.CognitoSyncClient.html)This client is used to interact with the **Amazon Cognito Sync** service.
+[CognitoSyncClient](class-aws-cognitosync-cognitosyncclient.md)This client is used to interact with the **Amazon Cognito Sync** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cognitosync.html#toc-classes)
+  - [Classes](namespace-aws-cognitosync-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cognitosync.html#top)
+[Back To Top](namespace-aws-cognitosync-top.md)

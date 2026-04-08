@@ -101,7 +101,7 @@ Required: Yes
 An array of sample log event messages that are considered to be part of this
 anomaly.
 
-Type: Array of [LogEvent](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_LogEvent.html) objects
+Type: Array of [LogEvent](api-logevent.md) objects
 
 Required: Yes
 
@@ -130,7 +130,7 @@ Required: Yes
 An array of structures where each structure contains information about one token that
 makes up the pattern.
 
-Type: Array of [PatternToken](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PatternToken.html) objects
+Type: Array of [PatternToken](api-patterntoken.md) objects
 
 Required: Yes
 
@@ -213,13 +213,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/Anomaly)
+- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/anomaly.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/Anomaly)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/anomaly.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/logs-2014-03-28/Anomaly)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/anomaly.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AggregateLogGroupSummary
 

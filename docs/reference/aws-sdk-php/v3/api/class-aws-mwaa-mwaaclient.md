@@ -17,24 +17,24 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2020-07-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-2020-07-01.html)
+- [**2020-07-01**](api-mwaa-2020-07-01.md)
 
-  - [CreateCliToken](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-2020-07-01.html#createclitoken)
-  - [CreateEnvironment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-2020-07-01.html#createenvironment)
-  - [CreateWebLoginToken](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-2020-07-01.html#createweblogintoken)
-  - [DeleteEnvironment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-2020-07-01.html#deleteenvironment)
-  - [GetEnvironment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-2020-07-01.html#getenvironment)
-  - [InvokeRestApi](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-2020-07-01.html#invokerestapi)
-  - [ListEnvironments](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-2020-07-01.html#listenvironments)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-2020-07-01.html#listtagsforresource)
-  - [PublishMetrics](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-2020-07-01.html#publishmetrics)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-2020-07-01.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-2020-07-01.html#untagresource)
-  - [UpdateEnvironment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mwaa-2020-07-01.html#updateenvironment)
+  - [CreateCliToken](api-mwaa-2020-07-01-createclitoken.md)
+  - [CreateEnvironment](api-mwaa-2020-07-01-createenvironment.md)
+  - [CreateWebLoginToken](api-mwaa-2020-07-01-createweblogintoken.md)
+  - [DeleteEnvironment](api-mwaa-2020-07-01-deleteenvironment.md)
+  - [GetEnvironment](api-mwaa-2020-07-01-getenvironment.md)
+  - [InvokeRestApi](api-mwaa-2020-07-01-invokerestapi.md)
+  - [ListEnvironments](api-mwaa-2020-07-01-listenvironments.md)
+  - [ListTagsForResource](api-mwaa-2020-07-01-listtagsforresource.md)
+  - [PublishMetrics](api-mwaa-2020-07-01-publishmetrics.md)
+  - [TagResource](api-mwaa-2020-07-01-tagresource.md)
+  - [UntagResource](api-mwaa-2020-07-01-untagresource.md)
+  - [UpdateEnvironment](api-mwaa-2020-07-01-updateenvironment.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MWAA.MWAAClient.html\#toc)
+### Table of Contents  [header link](class-aws-mwaa-mwaaclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MWAA.MWAAClient.html\#toc-methods)
+#### Methods  [header link](class-aws-mwaa-mwaaclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -65,7 +65,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MWAA.MWAAClient.html\#methods)
+### Methods  [header link](class-aws-mwaa-mwaaclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -532,7 +532,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MWAA.MWAAClient.html#toc-methods)
+  - [Methods](class-aws-mwaa-mwaaclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -559,4 +559,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MWAA.MWAAClient.html#top)
+[Back To Top](class-aws-mwaa-mwaaclient-top.md)

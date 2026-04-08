@@ -17,14 +17,14 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-04-02**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ec2-instance-connect-2018-04-02.html)
+- [**2018-04-02**](api-ec2-instance-connect-2018-04-02.md)
 
-  - [SendSSHPublicKey](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ec2-instance-connect-2018-04-02.html#sendsshpublickey)
-  - [SendSerialConsoleSSHPublicKey](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ec2-instance-connect-2018-04-02.html#sendserialconsolesshpublickey)
+  - [SendSSHPublicKey](api-ec2-instance-connect-2018-04-02-sendsshpublickey.md)
+  - [SendSerialConsoleSSHPublicKey](api-ec2-instance-connect-2018-04-02-sendserialconsolesshpublickey.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EC2InstanceConnect.EC2InstanceConnectClient.html\#toc)
+### Table of Contents  [header link](class-aws-ec2instanceconnect-ec2instanceconnectclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EC2InstanceConnect.EC2InstanceConnectClient.html\#toc-methods)
+#### Methods  [header link](class-aws-ec2instanceconnect-ec2instanceconnectclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -55,7 +55,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EC2InstanceConnect.EC2InstanceConnectClient.html\#methods)
+### Methods  [header link](class-aws-ec2instanceconnect-ec2instanceconnectclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -522,7 +522,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EC2InstanceConnect.EC2InstanceConnectClient.html#toc-methods)
+  - [Methods](class-aws-ec2instanceconnect-ec2instanceconnectclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -549,4 +549,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EC2InstanceConnect.EC2InstanceConnectClient.html#top)
+[Back To Top](class-aws-ec2instanceconnect-ec2instanceconnectclient-top.md)

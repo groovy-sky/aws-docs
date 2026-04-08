@@ -111,6 +111,6 @@ The input fails to satisfy the constraints specified by an AWS service.
 
 HTTP Status Code: 400
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Common Parameters

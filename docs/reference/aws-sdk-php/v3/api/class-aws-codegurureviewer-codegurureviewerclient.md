@@ -17,26 +17,26 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2019-09-19**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-reviewer-2019-09-19.html)
+- [**2019-09-19**](api-codeguru-reviewer-2019-09-19.md)
 
-  - [AssociateRepository](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-reviewer-2019-09-19.html#associaterepository)
-  - [CreateCodeReview](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-reviewer-2019-09-19.html#createcodereview)
-  - [DescribeCodeReview](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-reviewer-2019-09-19.html#describecodereview)
-  - [DescribeRecommendationFeedback](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-reviewer-2019-09-19.html#describerecommendationfeedback)
-  - [DescribeRepositoryAssociation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-reviewer-2019-09-19.html#describerepositoryassociation)
-  - [DisassociateRepository](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-reviewer-2019-09-19.html#disassociaterepository)
-  - [ListCodeReviews](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-reviewer-2019-09-19.html#listcodereviews)
-  - [ListRecommendationFeedback](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-reviewer-2019-09-19.html#listrecommendationfeedback)
-  - [ListRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-reviewer-2019-09-19.html#listrecommendations)
-  - [ListRepositoryAssociations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-reviewer-2019-09-19.html#listrepositoryassociations)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-reviewer-2019-09-19.html#listtagsforresource)
-  - [PutRecommendationFeedback](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-reviewer-2019-09-19.html#putrecommendationfeedback)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-reviewer-2019-09-19.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguru-reviewer-2019-09-19.html#untagresource)
+  - [AssociateRepository](api-codeguru-reviewer-2019-09-19-associaterepository.md)
+  - [CreateCodeReview](api-codeguru-reviewer-2019-09-19-createcodereview.md)
+  - [DescribeCodeReview](api-codeguru-reviewer-2019-09-19-describecodereview.md)
+  - [DescribeRecommendationFeedback](api-codeguru-reviewer-2019-09-19-describerecommendationfeedback.md)
+  - [DescribeRepositoryAssociation](api-codeguru-reviewer-2019-09-19-describerepositoryassociation.md)
+  - [DisassociateRepository](api-codeguru-reviewer-2019-09-19-disassociaterepository.md)
+  - [ListCodeReviews](api-codeguru-reviewer-2019-09-19-listcodereviews.md)
+  - [ListRecommendationFeedback](api-codeguru-reviewer-2019-09-19-listrecommendationfeedback.md)
+  - [ListRecommendations](api-codeguru-reviewer-2019-09-19-listrecommendations.md)
+  - [ListRepositoryAssociations](api-codeguru-reviewer-2019-09-19-listrepositoryassociations.md)
+  - [ListTagsForResource](api-codeguru-reviewer-2019-09-19-listtagsforresource.md)
+  - [PutRecommendationFeedback](api-codeguru-reviewer-2019-09-19-putrecommendationfeedback.md)
+  - [TagResource](api-codeguru-reviewer-2019-09-19-tagresource.md)
+  - [UntagResource](api-codeguru-reviewer-2019-09-19-untagresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruReviewer.CodeGuruReviewerClient.html\#toc)
+### Table of Contents  [header link](class-aws-codegurureviewer-codegurureviewerclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruReviewer.CodeGuruReviewerClient.html\#toc-methods)
+#### Methods  [header link](class-aws-codegurureviewer-codegurureviewerclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -67,7 +67,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruReviewer.CodeGuruReviewerClient.html\#methods)
+### Methods  [header link](class-aws-codegurureviewer-codegurureviewerclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -534,7 +534,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruReviewer.CodeGuruReviewerClient.html#toc-methods)
+  - [Methods](class-aws-codegurureviewer-codegurureviewerclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -561,4 +561,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruReviewer.CodeGuruReviewerClient.html#top)
+[Back To Top](class-aws-codegurureviewer-codegurureviewerclient-top.md)

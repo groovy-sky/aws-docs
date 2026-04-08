@@ -4,15 +4,15 @@ Menu
 
 ## SSO
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sso.html\#toc)
+### Table of Contents  [header link](namespace-aws-sso-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sso.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-sso-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sso.exception.html)
+[Exception](namespace-aws-sso-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sso.html\#toc-classes)
+#### Classes  [header link](namespace-aws-sso-toc-classes.md)
 
-[SSOClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSO.SSOClient.html)This client is used to interact with the **AWS Single Sign-On** service.
+[SSOClient](class-aws-sso-ssoclient.md)This client is used to interact with the **AWS Single Sign-On** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sso.html#toc-classes)
+  - [Classes](namespace-aws-sso-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sso.html#top)
+[Back To Top](namespace-aws-sso-top.md)

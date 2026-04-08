@@ -20,7 +20,7 @@ _Developer Guide_.
 
 The advanced settings for the load balancer used in blue/green deployments. Specify the alternate target group, listener rules, and IAM role required for traffic shifting during blue/green deployments.
 
-Type: [AdvancedConfiguration](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_AdvancedConfiguration.html) object
+Type: [AdvancedConfiguration](api-advancedconfiguration.md) object
 
 Required: No
 
@@ -69,11 +69,11 @@ A target group ARN is only specified when using an Application Load Balancer or
 Network Load Balancer.
 
 For services using the `ECS` deployment controller, you can specify one or
-multiple target groups. For more information, see [Registering multiple target groups with a service](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/register-multiple-targetgroups.html) in
+multiple target groups. For more information, see [Registering multiple target groups with a service](../../../../services/amazonecs/latest/developerguide/register-multiple-targetgroups.md) in
 the _Amazon Elastic Container Service Developer Guide_.
 
 For services using the `CODE_DEPLOY` deployment controller, you're required
-to define two target groups for the load balancer. For more information, see [Blue/green deployment with CodeDeploy](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-bluegreen.html) in the
+to define two target groups for the load balancer. For more information, see [Blue/green deployment with CodeDeploy](../../../../services/amazonecs/latest/developerguide/deployment-type-bluegreen.md) in the
 _Amazon Elastic Container Service Developer Guide_.
 
 ###### Important
@@ -92,13 +92,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/LoadBalancer)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/loadbalancer.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/LoadBalancer)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/loadbalancer.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/LoadBalancer)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/loadbalancer.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 LinuxParameters
 

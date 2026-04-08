@@ -28,7 +28,7 @@ Session Manager](../../../systems-manager/latest/userguide/session-manager-getti
 
 5. Choose **Connect** to start the session.
 
-![The Connect button on the Session Manager tab.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/connect-method-session-manager.png)
+![The Connect button on the Session Manager tab.](../../../images/awsec2/latest/userguide/images/connect-method-session-manager-png.md)
 
 ###### Troubleshooting
 

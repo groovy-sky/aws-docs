@@ -4,15 +4,15 @@ Menu
 
 ## ServerlessApplicationRepository
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.serverlessapplicationrepository.html\#toc)
+### Table of Contents  [header link](namespace-aws-serverlessapplicationrepository-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.serverlessapplicationrepository.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-serverlessapplicationrepository-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.serverlessapplicationrepository.exception.html)
+[Exception](namespace-aws-serverlessapplicationrepository-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.serverlessapplicationrepository.html\#toc-classes)
+#### Classes  [header link](namespace-aws-serverlessapplicationrepository-toc-classes.md)
 
-[ServerlessApplicationRepositoryClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServerlessApplicationRepository.ServerlessApplicationRepositoryClient.html)This client is used to interact with the **AWSServerlessApplicationRepository** service.
+[ServerlessApplicationRepositoryClient](class-aws-serverlessapplicationrepository-serverlessapplicationrepositoryclient.md)This client is used to interact with the **AWSServerlessApplicationRepository** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.serverlessapplicationrepository.html#toc-classes)
+  - [Classes](namespace-aws-serverlessapplicationrepository-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.serverlessapplicationrepository.html#top)
+[Back To Top](namespace-aws-serverlessapplicationrepository-top.md)

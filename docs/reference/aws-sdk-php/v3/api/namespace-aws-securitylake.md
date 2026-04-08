@@ -4,15 +4,15 @@ Menu
 
 ## SecurityLake
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securitylake.html\#toc)
+### Table of Contents  [header link](namespace-aws-securitylake-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securitylake.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-securitylake-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securitylake.exception.html)
+[Exception](namespace-aws-securitylake-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securitylake.html\#toc-classes)
+#### Classes  [header link](namespace-aws-securitylake-toc-classes.md)
 
-[SecurityLakeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecurityLake.SecurityLakeClient.html)This client is used to interact with the **Amazon Security Lake** service.
+[SecurityLakeClient](class-aws-securitylake-securitylakeclient.md)This client is used to interact with the **Amazon Security Lake** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securitylake.html#toc-classes)
+  - [Classes](namespace-aws-securitylake-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securitylake.html#top)
+[Back To Top](namespace-aws-securitylake-top.md)

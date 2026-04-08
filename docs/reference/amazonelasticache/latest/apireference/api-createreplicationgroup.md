@@ -24,7 +24,7 @@ group have too small a CIDR range or the subnets are shared and heavily used by 
 clusters. For more information, see [Creating a Subnet\
 Group](../../../../services/amazonelasticache/latest/dg/subnetgroups-creating.md). For versions below 5.0.6, the limit is 250 per cluster.
 
-To request a limit increase, see [Amazon Service Limits](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html) and
+To request a limit increase, see [Amazon Service Limits](../../../../general/general/latest/gr/aws-service-limits.md) and
 choose the limit type **Nodes per cluster per instance**
 **type**.
 
@@ -40,7 +40,7 @@ This operation is valid for Valkey and Redis OSS only.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 **ReplicationGroupDescription**
 
@@ -328,7 +328,7 @@ The name of the cache subnet group to be used for the replication group.
 ###### Important
 
 If you're going to launch your cluster in an Amazon VPC, you need to create a
-subnet group before you start creating a cluster. For more information, see [Subnets and Subnet Groups](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/SubnetGroups.html).
+subnet group before you start creating a cluster. For more information, see [Subnets and Subnet Groups](../../../../services/amazonelasticache/latest/dg/subnetgroups.md).
 
 Type: String
 
@@ -417,7 +417,7 @@ Required: No
 
 Specifies the destination, format and type of the logs.
 
-Type: Array of [LogDeliveryConfigurationRequest](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_LogDeliveryConfigurationRequest.html) objects
+Type: Array of [LogDeliveryConfigurationRequest](api-logdeliveryconfigurationrequest.md) objects
 
 Required: No
 
@@ -455,7 +455,7 @@ replication group, you can use this parameter to individually configure each nod
 (shard) using this parameter because you must specify the slots for each node
 group.
 
-Type: Array of [NodeGroupConfiguration](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_NodeGroupConfiguration.html) objects
+Type: Array of [NodeGroupConfiguration](api-nodegroupconfiguration.md) objects
 
 Required: No
 
@@ -664,7 +664,7 @@ tags as shown following: Key= `myKey`, Value= `myKeyValue`
 Key= `mySecondKey`, Value= `mySecondKeyValue`. Tags on
 replication groups will be replicated to all nodes.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Required: No
 
@@ -741,11 +741,11 @@ The following element is returned by the service.
 
 Contains all of the attributes of a specific Valkey or Redis OSS replication group.
 
-Type: [ReplicationGroup](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_ReplicationGroup.html) object
+Type: [ReplicationGroup](api-replicationgroup.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **CacheClusterNotFound**
 
@@ -790,7 +790,7 @@ HTTP Status Code: 404
 **InsufficientCacheClusterCapacity**
 
 The requested cache node type is not available in the specified Availability Zone. For
-more information, see [InsufficientCacheClusterCapacity](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ErrorMessages.html#ErrorMessages.INSUFFICIENT_CACHE_CLUSTER_CAPACITY) in the ElastiCache User Guide.
+more information, see [InsufficientCacheClusterCapacity](../../../../services/amazonelasticache/latest/dg/errormessages-errormessages-insufficient-cache-cluster-capacity.md) in the ElastiCache User Guide.
 
 HTTP Status Code: 400
 
@@ -1019,27 +1019,27 @@ https://elasticache.us-west-2.amazonaws.com/
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/elasticache-2015-02-02/CreateReplicationGroup)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/elasticache-2015-02-02/createreplicationgroup.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/elasticache-2015-02-02/CreateReplicationGroup)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/elasticache-2015-02-02/createreplicationgroup.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/elasticache-2015-02-02/CreateReplicationGroup)
+- [AWS SDK for C++](../../../goto/sdkforcpp/elasticache-2015-02-02/createreplicationgroup.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/elasticache-2015-02-02/CreateReplicationGroup)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/elasticache-2015-02-02/createreplicationgroup.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/elasticache-2015-02-02/CreateReplicationGroup)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/elasticache-2015-02-02/createreplicationgroup.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/elasticache-2015-02-02/CreateReplicationGroup)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/elasticache-2015-02-02/createreplicationgroup.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/elasticache-2015-02-02/CreateReplicationGroup)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/elasticache-2015-02-02/createreplicationgroup.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/elasticache-2015-02-02/CreateReplicationGroup)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/elasticache-2015-02-02/createreplicationgroup.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/elasticache-2015-02-02/CreateReplicationGroup)
+- [AWS SDK for Python](../../../../services/goto/boto3/elasticache-2015-02-02/createreplicationgroup.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/elasticache-2015-02-02/CreateReplicationGroup)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/elasticache-2015-02-02/createreplicationgroup.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateGlobalReplicationGroup
 

@@ -17,40 +17,40 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2019-11-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html)
+- [**2019-11-01**](api-compute-optimizer-2019-11-01.md)
 
-  - [DeleteRecommendationPreferences](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#deleterecommendationpreferences)
-  - [DescribeRecommendationExportJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#describerecommendationexportjobs)
-  - [ExportAutoScalingGroupRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#exportautoscalinggrouprecommendations)
-  - [ExportEBSVolumeRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#exportebsvolumerecommendations)
-  - [ExportEC2InstanceRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#exportec2instancerecommendations)
-  - [ExportECSServiceRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#exportecsservicerecommendations)
-  - [ExportIdleRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#exportidlerecommendations)
-  - [ExportLambdaFunctionRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#exportlambdafunctionrecommendations)
-  - [ExportLicenseRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#exportlicenserecommendations)
-  - [ExportRDSDatabaseRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#exportrdsdatabaserecommendations)
-  - [GetAutoScalingGroupRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#getautoscalinggrouprecommendations)
-  - [GetEBSVolumeRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#getebsvolumerecommendations)
-  - [GetEC2InstanceRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#getec2instancerecommendations)
-  - [GetEC2RecommendationProjectedMetrics](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#getec2recommendationprojectedmetrics)
-  - [GetECSServiceRecommendationProjectedMetrics](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#getecsservicerecommendationprojectedmetrics)
-  - [GetECSServiceRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#getecsservicerecommendations)
-  - [GetEffectiveRecommendationPreferences](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#geteffectiverecommendationpreferences)
-  - [GetEnrollmentStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#getenrollmentstatus)
-  - [GetEnrollmentStatusesForOrganization](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#getenrollmentstatusesfororganization)
-  - [GetIdleRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#getidlerecommendations)
-  - [GetLambdaFunctionRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#getlambdafunctionrecommendations)
-  - [GetLicenseRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#getlicenserecommendations)
-  - [GetRDSDatabaseRecommendationProjectedMetrics](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#getrdsdatabaserecommendationprojectedmetrics)
-  - [GetRDSDatabaseRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#getrdsdatabaserecommendations)
-  - [GetRecommendationPreferences](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#getrecommendationpreferences)
-  - [GetRecommendationSummaries](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#getrecommendationsummaries)
-  - [PutRecommendationPreferences](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#putrecommendationpreferences)
-  - [UpdateEnrollmentStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-compute-optimizer-2019-11-01.html#updateenrollmentstatus)
+  - [DeleteRecommendationPreferences](api-compute-optimizer-2019-11-01-deleterecommendationpreferences.md)
+  - [DescribeRecommendationExportJobs](api-compute-optimizer-2019-11-01-describerecommendationexportjobs.md)
+  - [ExportAutoScalingGroupRecommendations](api-compute-optimizer-2019-11-01-exportautoscalinggrouprecommendations.md)
+  - [ExportEBSVolumeRecommendations](api-compute-optimizer-2019-11-01-exportebsvolumerecommendations.md)
+  - [ExportEC2InstanceRecommendations](api-compute-optimizer-2019-11-01-exportec2instancerecommendations.md)
+  - [ExportECSServiceRecommendations](api-compute-optimizer-2019-11-01-exportecsservicerecommendations.md)
+  - [ExportIdleRecommendations](api-compute-optimizer-2019-11-01-exportidlerecommendations.md)
+  - [ExportLambdaFunctionRecommendations](api-compute-optimizer-2019-11-01-exportlambdafunctionrecommendations.md)
+  - [ExportLicenseRecommendations](api-compute-optimizer-2019-11-01-exportlicenserecommendations.md)
+  - [ExportRDSDatabaseRecommendations](api-compute-optimizer-2019-11-01-exportrdsdatabaserecommendations.md)
+  - [GetAutoScalingGroupRecommendations](api-compute-optimizer-2019-11-01-getautoscalinggrouprecommendations.md)
+  - [GetEBSVolumeRecommendations](api-compute-optimizer-2019-11-01-getebsvolumerecommendations.md)
+  - [GetEC2InstanceRecommendations](api-compute-optimizer-2019-11-01-getec2instancerecommendations.md)
+  - [GetEC2RecommendationProjectedMetrics](api-compute-optimizer-2019-11-01-getec2recommendationprojectedmetrics.md)
+  - [GetECSServiceRecommendationProjectedMetrics](api-compute-optimizer-2019-11-01-getecsservicerecommendationprojectedmetrics.md)
+  - [GetECSServiceRecommendations](api-compute-optimizer-2019-11-01-getecsservicerecommendations.md)
+  - [GetEffectiveRecommendationPreferences](api-compute-optimizer-2019-11-01-geteffectiverecommendationpreferences.md)
+  - [GetEnrollmentStatus](api-compute-optimizer-2019-11-01-getenrollmentstatus.md)
+  - [GetEnrollmentStatusesForOrganization](api-compute-optimizer-2019-11-01-getenrollmentstatusesfororganization.md)
+  - [GetIdleRecommendations](api-compute-optimizer-2019-11-01-getidlerecommendations.md)
+  - [GetLambdaFunctionRecommendations](api-compute-optimizer-2019-11-01-getlambdafunctionrecommendations.md)
+  - [GetLicenseRecommendations](api-compute-optimizer-2019-11-01-getlicenserecommendations.md)
+  - [GetRDSDatabaseRecommendationProjectedMetrics](api-compute-optimizer-2019-11-01-getrdsdatabaserecommendationprojectedmetrics.md)
+  - [GetRDSDatabaseRecommendations](api-compute-optimizer-2019-11-01-getrdsdatabaserecommendations.md)
+  - [GetRecommendationPreferences](api-compute-optimizer-2019-11-01-getrecommendationpreferences.md)
+  - [GetRecommendationSummaries](api-compute-optimizer-2019-11-01-getrecommendationsummaries.md)
+  - [PutRecommendationPreferences](api-compute-optimizer-2019-11-01-putrecommendationpreferences.md)
+  - [UpdateEnrollmentStatus](api-compute-optimizer-2019-11-01-updateenrollmentstatus.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComputeOptimizer.ComputeOptimizerClient.html\#toc)
+### Table of Contents  [header link](class-aws-computeoptimizer-computeoptimizerclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComputeOptimizer.ComputeOptimizerClient.html\#toc-methods)
+#### Methods  [header link](class-aws-computeoptimizer-computeoptimizerclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -81,7 +81,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComputeOptimizer.ComputeOptimizerClient.html\#methods)
+### Methods  [header link](class-aws-computeoptimizer-computeoptimizerclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -548,7 +548,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComputeOptimizer.ComputeOptimizerClient.html#toc-methods)
+  - [Methods](class-aws-computeoptimizer-computeoptimizerclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -575,4 +575,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComputeOptimizer.ComputeOptimizerClient.html#top)
+[Back To Top](class-aws-computeoptimizer-computeoptimizerclient-top.md)

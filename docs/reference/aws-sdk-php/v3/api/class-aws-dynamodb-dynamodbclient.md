@@ -17,80 +17,80 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2012-08-10 (latest)**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html)
+- [**2012-08-10 (latest)**](api-dynamodb-2012-08-10.md)
 
-  - [BatchExecuteStatement](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#batchexecutestatement)
-  - [BatchGetItem](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#batchgetitem)
-  - [BatchWriteItem](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#batchwriteitem)
-  - [CreateBackup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#createbackup)
-  - [CreateGlobalTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#createglobaltable)
-  - [CreateTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#createtable)
-  - [DeleteBackup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#deletebackup)
-  - [DeleteItem](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#deleteitem)
-  - [DeleteResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#deleteresourcepolicy)
-  - [DeleteTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#deletetable)
-  - [DescribeBackup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#describebackup)
-  - [DescribeContinuousBackups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#describecontinuousbackups)
-  - [DescribeContributorInsights](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#describecontributorinsights)
-  - [DescribeEndpoints](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#describeendpoints)
-  - [DescribeExport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#describeexport)
-  - [DescribeGlobalTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#describeglobaltable)
-  - [DescribeGlobalTableSettings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#describeglobaltablesettings)
-  - [DescribeImport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#describeimport)
-  - [DescribeKinesisStreamingDestination](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#describekinesisstreamingdestination)
-  - [DescribeLimits](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#describelimits)
-  - [DescribeTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#describetable)
-  - [DescribeTableReplicaAutoScaling](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#describetablereplicaautoscaling)
-  - [DescribeTimeToLive](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#describetimetolive)
-  - [DisableKinesisStreamingDestination](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#disablekinesisstreamingdestination)
-  - [EnableKinesisStreamingDestination](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#enablekinesisstreamingdestination)
-  - [ExecuteStatement](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#executestatement)
-  - [ExecuteTransaction](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#executetransaction)
-  - [ExportTableToPointInTime](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#exporttabletopointintime)
-  - [GetItem](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#getitem)
-  - [GetResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#getresourcepolicy)
-  - [ImportTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#importtable)
-  - [ListBackups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#listbackups)
-  - [ListContributorInsights](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#listcontributorinsights)
-  - [ListExports](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#listexports)
-  - [ListGlobalTables](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#listglobaltables)
-  - [ListImports](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#listimports)
-  - [ListTables](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#listtables)
-  - [ListTagsOfResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#listtagsofresource)
-  - [PutItem](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#putitem)
-  - [PutResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#putresourcepolicy)
-  - [Query](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#query)
-  - [RestoreTableFromBackup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#restoretablefrombackup)
-  - [RestoreTableToPointInTime](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#restoretabletopointintime)
-  - [Scan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#scan)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#tagresource)
-  - [TransactGetItems](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#transactgetitems)
-  - [TransactWriteItems](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#transactwriteitems)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#untagresource)
-  - [UpdateContinuousBackups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#updatecontinuousbackups)
-  - [UpdateContributorInsights](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#updatecontributorinsights)
-  - [UpdateGlobalTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#updateglobaltable)
-  - [UpdateGlobalTableSettings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#updateglobaltablesettings)
-  - [UpdateItem](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#updateitem)
-  - [UpdateKinesisStreamingDestination](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#updatekinesisstreamingdestination)
-  - [UpdateTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#updatetable)
-  - [UpdateTableReplicaAutoScaling](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#updatetablereplicaautoscaling)
-  - [UpdateTimeToLive](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2012-08-10.html#updatetimetolive)
-- [**2011-12-05**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2011-12-05.html)
+  - [BatchExecuteStatement](api-dynamodb-2012-08-10-batchexecutestatement.md)
+  - [BatchGetItem](api-dynamodb-2012-08-10-batchgetitem.md)
+  - [BatchWriteItem](api-dynamodb-2012-08-10-batchwriteitem.md)
+  - [CreateBackup](api-dynamodb-2012-08-10-createbackup.md)
+  - [CreateGlobalTable](api-dynamodb-2012-08-10-createglobaltable.md)
+  - [CreateTable](api-dynamodb-2012-08-10-createtable.md)
+  - [DeleteBackup](api-dynamodb-2012-08-10-deletebackup.md)
+  - [DeleteItem](api-dynamodb-2012-08-10-deleteitem.md)
+  - [DeleteResourcePolicy](api-dynamodb-2012-08-10-deleteresourcepolicy.md)
+  - [DeleteTable](api-dynamodb-2012-08-10-deletetable.md)
+  - [DescribeBackup](api-dynamodb-2012-08-10-describebackup.md)
+  - [DescribeContinuousBackups](api-dynamodb-2012-08-10-describecontinuousbackups.md)
+  - [DescribeContributorInsights](api-dynamodb-2012-08-10-describecontributorinsights.md)
+  - [DescribeEndpoints](api-dynamodb-2012-08-10-describeendpoints.md)
+  - [DescribeExport](api-dynamodb-2012-08-10-describeexport.md)
+  - [DescribeGlobalTable](api-dynamodb-2012-08-10-describeglobaltable.md)
+  - [DescribeGlobalTableSettings](api-dynamodb-2012-08-10-describeglobaltablesettings.md)
+  - [DescribeImport](api-dynamodb-2012-08-10-describeimport.md)
+  - [DescribeKinesisStreamingDestination](api-dynamodb-2012-08-10-describekinesisstreamingdestination.md)
+  - [DescribeLimits](api-dynamodb-2012-08-10-describelimits.md)
+  - [DescribeTable](api-dynamodb-2012-08-10-describetable.md)
+  - [DescribeTableReplicaAutoScaling](api-dynamodb-2012-08-10-describetablereplicaautoscaling.md)
+  - [DescribeTimeToLive](api-dynamodb-2012-08-10-describetimetolive.md)
+  - [DisableKinesisStreamingDestination](api-dynamodb-2012-08-10-disablekinesisstreamingdestination.md)
+  - [EnableKinesisStreamingDestination](api-dynamodb-2012-08-10-enablekinesisstreamingdestination.md)
+  - [ExecuteStatement](api-dynamodb-2012-08-10-executestatement.md)
+  - [ExecuteTransaction](api-dynamodb-2012-08-10-executetransaction.md)
+  - [ExportTableToPointInTime](api-dynamodb-2012-08-10-exporttabletopointintime.md)
+  - [GetItem](api-dynamodb-2012-08-10-getitem.md)
+  - [GetResourcePolicy](api-dynamodb-2012-08-10-getresourcepolicy.md)
+  - [ImportTable](api-dynamodb-2012-08-10-importtable.md)
+  - [ListBackups](api-dynamodb-2012-08-10-listbackups.md)
+  - [ListContributorInsights](api-dynamodb-2012-08-10-listcontributorinsights.md)
+  - [ListExports](api-dynamodb-2012-08-10-listexports.md)
+  - [ListGlobalTables](api-dynamodb-2012-08-10-listglobaltables.md)
+  - [ListImports](api-dynamodb-2012-08-10-listimports.md)
+  - [ListTables](api-dynamodb-2012-08-10-listtables.md)
+  - [ListTagsOfResource](api-dynamodb-2012-08-10-listtagsofresource.md)
+  - [PutItem](api-dynamodb-2012-08-10-putitem.md)
+  - [PutResourcePolicy](api-dynamodb-2012-08-10-putresourcepolicy.md)
+  - [Query](api-dynamodb-2012-08-10-query.md)
+  - [RestoreTableFromBackup](api-dynamodb-2012-08-10-restoretablefrombackup.md)
+  - [RestoreTableToPointInTime](api-dynamodb-2012-08-10-restoretabletopointintime.md)
+  - [Scan](api-dynamodb-2012-08-10-scan.md)
+  - [TagResource](api-dynamodb-2012-08-10-tagresource.md)
+  - [TransactGetItems](api-dynamodb-2012-08-10-transactgetitems.md)
+  - [TransactWriteItems](api-dynamodb-2012-08-10-transactwriteitems.md)
+  - [UntagResource](api-dynamodb-2012-08-10-untagresource.md)
+  - [UpdateContinuousBackups](api-dynamodb-2012-08-10-updatecontinuousbackups.md)
+  - [UpdateContributorInsights](api-dynamodb-2012-08-10-updatecontributorinsights.md)
+  - [UpdateGlobalTable](api-dynamodb-2012-08-10-updateglobaltable.md)
+  - [UpdateGlobalTableSettings](api-dynamodb-2012-08-10-updateglobaltablesettings.md)
+  - [UpdateItem](api-dynamodb-2012-08-10-updateitem.md)
+  - [UpdateKinesisStreamingDestination](api-dynamodb-2012-08-10-updatekinesisstreamingdestination.md)
+  - [UpdateTable](api-dynamodb-2012-08-10-updatetable.md)
+  - [UpdateTableReplicaAutoScaling](api-dynamodb-2012-08-10-updatetablereplicaautoscaling.md)
+  - [UpdateTimeToLive](api-dynamodb-2012-08-10-updatetimetolive.md)
+- [**2011-12-05**](api-dynamodb-2011-12-05.md)
 
-  - [BatchGetItem](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2011-12-05.html#batchgetitem)
-  - [BatchWriteItem](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2011-12-05.html#batchwriteitem)
-  - [CreateTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2011-12-05.html#createtable)
-  - [DeleteItem](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2011-12-05.html#deleteitem)
-  - [DeleteTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2011-12-05.html#deletetable)
-  - [DescribeTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2011-12-05.html#describetable)
-  - [GetItem](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2011-12-05.html#getitem)
-  - [ListTables](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2011-12-05.html#listtables)
-  - [PutItem](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2011-12-05.html#putitem)
-  - [Query](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2011-12-05.html#query)
-  - [Scan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2011-12-05.html#scan)
-  - [UpdateItem](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2011-12-05.html#updateitem)
-  - [UpdateTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dynamodb-2011-12-05.html#updatetable)
+  - [BatchGetItem](api-dynamodb-2011-12-05-batchgetitem.md)
+  - [BatchWriteItem](api-dynamodb-2011-12-05-batchwriteitem.md)
+  - [CreateTable](api-dynamodb-2011-12-05-createtable.md)
+  - [DeleteItem](api-dynamodb-2011-12-05-deleteitem.md)
+  - [DeleteTable](api-dynamodb-2011-12-05-deletetable.md)
+  - [DescribeTable](api-dynamodb-2011-12-05-describetable.md)
+  - [GetItem](api-dynamodb-2011-12-05-getitem.md)
+  - [ListTables](api-dynamodb-2011-12-05-listtables.md)
+  - [PutItem](api-dynamodb-2011-12-05-putitem.md)
+  - [Query](api-dynamodb-2011-12-05-query.md)
+  - [Scan](api-dynamodb-2011-12-05-scan.md)
+  - [UpdateItem](api-dynamodb-2011-12-05-updateitem.md)
+  - [UpdateTable](api-dynamodb-2011-12-05-updatetable.md)
 
 ## Examples
 
@@ -98,11 +98,11 @@ specific API operation can be done using magic methods (e.g.,
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for PHP with Amazon DynamoDB.
 
-- [See examples on AWS Docs](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/php_dynamodb_code_examples.html)
+- [See examples on AWS Docs](../../../sdk-for-php/v3/developer-guide/php-dynamodb-code-examples.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.DynamoDbClient.html\#toc)
+### Table of Contents  [header link](class-aws-dynamodb-dynamodbclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.DynamoDbClient.html\#toc-methods)
+#### Methods  [header link](class-aws-dynamodb-dynamodbclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -111,7 +111,7 @@ The following code examples show you how to perform actions and implement common
 : mixed [executeAsync()](class-aws-awsclienttrait.md#method_executeAsync)
 : mixed [factory()](class-aws-awsclient.md#method_factory)
 : static [getApi()](class-aws-awsclienttrait.md#method_getApi)
-: [Service](class-aws-api-service.md)[getArguments()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.DynamoDbClient.html#method_getArguments)
+: [Service](class-aws-api-service.md)[getArguments()](class-aws-dynamodb-dynamodbclient-method-getarguments.md)
 : array<string\|int, mixed> Get an array of client constructor arguments used by the client.[getClientBuiltIns()](class-aws-awsclient.md#method_getClientBuiltIns)
 : array<string\|int, mixed> Provides the set of built-in keys and values
 used for endpoint resolution[getClientContextParams()](class-aws-awsclient.md#method_getClientContextParams)
@@ -130,12 +130,12 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : string Get the region to which the client is configured to send requests.[getSignatureProvider()](class-aws-awsclient.md#method_getSignatureProvider)
 : callable Get the signature\_provider function of the client.[getToken()](class-aws-awsclient.md#method_getToken)
 : mixed [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
-: mixed [registerSessionHandler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.DynamoDbClient.html#method_registerSessionHandler)
-: [SessionHandler](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html)Convenience method for instantiating and registering the DynamoDB
+: mixed [registerSessionHandler()](class-aws-dynamodb-dynamodbclient-method-registersessionhandler.md)
+: [SessionHandler](class-aws-dynamodb-sessionhandler.md)Convenience method for instantiating and registering the DynamoDB
 Session handler with this DynamoDB client object.[waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.DynamoDbClient.html\#methods)
+### Methods  [header link](class-aws-dynamodb-dynamodbclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -377,7 +377,7 @@ static
 
 [Service](class-aws-api-service.md)
 
-#### getArguments()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.DynamoDbClient.html\#method_getArguments)
+#### getArguments()  [header link](class-aws-dynamodb-dynamodbclient-method-getarguments.md)
 
 Get an array of client constructor arguments used by the client.
 
@@ -583,7 +583,7 @@ $name
 : array<string\|int, mixed>
 = \[\]
 
-#### registerSessionHandler()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.DynamoDbClient.html\#method_registerSessionHandler)
+#### registerSessionHandler()  [header link](class-aws-dynamodb-dynamodbclient-method-registersessionhandler.md)
 
 Convenience method for instantiating and registering the DynamoDB
 Session handler with this DynamoDB client object.
@@ -602,7 +602,7 @@ Array of options for the session handler factory
 
 ##### Return values
 
-[SessionHandler](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html)
+[SessionHandler](class-aws-dynamodb-sessionhandler.md)
 
 #### waitUntil()  [header link](class-aws-awsclienttrait.md\#method_waitUntil)
 
@@ -623,7 +623,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.DynamoDbClient.html#toc-methods)
+  - [Methods](class-aws-dynamodb-dynamodbclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -632,7 +632,7 @@ $name
   - [executeAsync()](class-aws-awsclienttrait.md#method_executeAsync)
   - [factory()](class-aws-awsclient.md#method_factory)
   - [getApi()](class-aws-awsclienttrait.md#method_getApi)
-  - [getArguments()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.DynamoDbClient.html#method_getArguments)
+  - [getArguments()](class-aws-dynamodb-dynamodbclient-method-getarguments.md)
   - [getClientBuiltIns()](class-aws-awsclient.md#method_getClientBuiltIns)
   - [getClientContextParams()](class-aws-awsclient.md#method_getClientContextParams)
   - [getCommand()](class-aws-awsclienttrait.md#method_getCommand)
@@ -648,7 +648,7 @@ $name
   - [getSignatureProvider()](class-aws-awsclient.md#method_getSignatureProvider)
   - [getToken()](class-aws-awsclient.md#method_getToken)
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
-  - [registerSessionHandler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.DynamoDbClient.html#method_registerSessionHandler)
+  - [registerSessionHandler()](class-aws-dynamodb-dynamodbclient-method-registersessionhandler.md)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.DynamoDbClient.html#top)
+[Back To Top](class-aws-dynamodb-dynamodbclient-top.md)

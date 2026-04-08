@@ -4,15 +4,15 @@ Menu
 
 ## LexRuntimeV2
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lexruntimev2.html\#toc)
+### Table of Contents  [header link](namespace-aws-lexruntimev2-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lexruntimev2.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-lexruntimev2-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lexruntimev2.exception.html)
+[Exception](namespace-aws-lexruntimev2-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lexruntimev2.html\#toc-classes)
+#### Classes  [header link](namespace-aws-lexruntimev2-toc-classes.md)
 
-[LexRuntimeV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LexRuntimeV2.LexRuntimeV2Client.html)This client is used to interact with the **Amazon Lex Runtime V2** service.
+[LexRuntimeV2Client](class-aws-lexruntimev2-lexruntimev2client.md)This client is used to interact with the **Amazon Lex Runtime V2** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lexruntimev2.html#toc-classes)
+  - [Classes](namespace-aws-lexruntimev2-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lexruntimev2.html#top)
+[Back To Top](namespace-aws-lexruntimev2-top.md)

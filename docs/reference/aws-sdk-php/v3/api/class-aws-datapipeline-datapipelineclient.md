@@ -17,31 +17,31 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2012-10-29**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-datapipeline-2012-10-29.html)
+- [**2012-10-29**](api-datapipeline-2012-10-29.md)
 
-  - [ActivatePipeline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-datapipeline-2012-10-29.html#activatepipeline)
-  - [AddTags](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-datapipeline-2012-10-29.html#addtags)
-  - [CreatePipeline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-datapipeline-2012-10-29.html#createpipeline)
-  - [DeactivatePipeline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-datapipeline-2012-10-29.html#deactivatepipeline)
-  - [DeletePipeline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-datapipeline-2012-10-29.html#deletepipeline)
-  - [DescribeObjects](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-datapipeline-2012-10-29.html#describeobjects)
-  - [DescribePipelines](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-datapipeline-2012-10-29.html#describepipelines)
-  - [EvaluateExpression](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-datapipeline-2012-10-29.html#evaluateexpression)
-  - [GetPipelineDefinition](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-datapipeline-2012-10-29.html#getpipelinedefinition)
-  - [ListPipelines](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-datapipeline-2012-10-29.html#listpipelines)
-  - [PollForTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-datapipeline-2012-10-29.html#pollfortask)
-  - [PutPipelineDefinition](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-datapipeline-2012-10-29.html#putpipelinedefinition)
-  - [QueryObjects](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-datapipeline-2012-10-29.html#queryobjects)
-  - [RemoveTags](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-datapipeline-2012-10-29.html#removetags)
-  - [ReportTaskProgress](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-datapipeline-2012-10-29.html#reporttaskprogress)
-  - [ReportTaskRunnerHeartbeat](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-datapipeline-2012-10-29.html#reporttaskrunnerheartbeat)
-  - [SetStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-datapipeline-2012-10-29.html#setstatus)
-  - [SetTaskStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-datapipeline-2012-10-29.html#settaskstatus)
-  - [ValidatePipelineDefinition](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-datapipeline-2012-10-29.html#validatepipelinedefinition)
+  - [ActivatePipeline](api-datapipeline-2012-10-29-activatepipeline.md)
+  - [AddTags](api-datapipeline-2012-10-29-addtags.md)
+  - [CreatePipeline](api-datapipeline-2012-10-29-createpipeline.md)
+  - [DeactivatePipeline](api-datapipeline-2012-10-29-deactivatepipeline.md)
+  - [DeletePipeline](api-datapipeline-2012-10-29-deletepipeline.md)
+  - [DescribeObjects](api-datapipeline-2012-10-29-describeobjects.md)
+  - [DescribePipelines](api-datapipeline-2012-10-29-describepipelines.md)
+  - [EvaluateExpression](api-datapipeline-2012-10-29-evaluateexpression.md)
+  - [GetPipelineDefinition](api-datapipeline-2012-10-29-getpipelinedefinition.md)
+  - [ListPipelines](api-datapipeline-2012-10-29-listpipelines.md)
+  - [PollForTask](api-datapipeline-2012-10-29-pollfortask.md)
+  - [PutPipelineDefinition](api-datapipeline-2012-10-29-putpipelinedefinition.md)
+  - [QueryObjects](api-datapipeline-2012-10-29-queryobjects.md)
+  - [RemoveTags](api-datapipeline-2012-10-29-removetags.md)
+  - [ReportTaskProgress](api-datapipeline-2012-10-29-reporttaskprogress.md)
+  - [ReportTaskRunnerHeartbeat](api-datapipeline-2012-10-29-reporttaskrunnerheartbeat.md)
+  - [SetStatus](api-datapipeline-2012-10-29-setstatus.md)
+  - [SetTaskStatus](api-datapipeline-2012-10-29-settaskstatus.md)
+  - [ValidatePipelineDefinition](api-datapipeline-2012-10-29-validatepipelinedefinition.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DataPipeline.DataPipelineClient.html\#toc)
+### Table of Contents  [header link](class-aws-datapipeline-datapipelineclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DataPipeline.DataPipelineClient.html\#toc-methods)
+#### Methods  [header link](class-aws-datapipeline-datapipelineclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -72,7 +72,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DataPipeline.DataPipelineClient.html\#methods)
+### Methods  [header link](class-aws-datapipeline-datapipelineclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -539,7 +539,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DataPipeline.DataPipelineClient.html#toc-methods)
+  - [Methods](class-aws-datapipeline-datapipelineclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -566,4 +566,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DataPipeline.DataPipelineClient.html#top)
+[Back To Top](class-aws-datapipeline-datapipelineclient-top.md)

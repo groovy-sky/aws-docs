@@ -21,7 +21,7 @@ instance based on screenshots returned by the service.
 
 Console Screenshot Service returned the following.
 
-![Log on screen.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ts-cs-1.png)
+![Log on screen.](../../../images/awsec2/latest/userguide/images/ts-cs-1-png.md)
 
 If an instance becomes unreachable during logon, there could be a problem with
 your network configuration or Windows Remote Desktop Services. An instance can also
@@ -119,7 +119,7 @@ additional troubleshooting tips, see [High CPU usage shortly after Windows start
 
 Console Screenshot Service returned the following.
 
-![Recovery console screenshot.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ts-cs-2.png)
+![Recovery console screenshot.](../../../images/awsec2/latest/userguide/images/ts-cs-2-png.md)
 
 The operating system might boot into the Recovery console and get stuck in this
 state if the `bootstatuspolicy` is not set to
@@ -169,7 +169,7 @@ bcdedit /store Drive Letter:\boot\bcd /set {default} bootstatuspolicy ignoreallf
 
 Console Screenshot Service returned the following.
 
-![Windows Boot Manager Screen.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ts-cs-3.png)
+![Windows Boot Manager Screen.](../../../images/awsec2/latest/userguide/images/ts-cs-3-png.md)
 
 The operating system experienced a fatal corruption in the system file and/or the
 registry. When the instance is stuck in this state, you should recover the instance
@@ -182,7 +182,7 @@ instance in the same Availability Zone as a secondary volume.
 
 Console Screenshot Service returned the following.
 
-![Sysprep Screen.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ts-cs-4.png)
+![Sysprep Screen.](../../../images/awsec2/latest/userguide/images/ts-cs-4-png.md)
 
 You may see this screen if you did not use the EC2Config Service to call Sysprep
 or if the operating system failed while running Sysprep. You can reset the password
@@ -193,7 +193,7 @@ using [EC2Rescue](windows-server-ec2rescue.md). Otherwise, see
 
 Console Screenshot Service returned the following.
 
-![Getting Ready Screen.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ts-cs-5.png)
+![Getting Ready Screen.](../../../images/awsec2/latest/userguide/images/ts-cs-5-png.md)
 
 Refresh the Instance Console Screenshot Service repeatedly to verify that the
 progress ring is spinning. If the ring is spinning, wait for the operating system to
@@ -210,7 +210,7 @@ in the same Availability Zone as a secondary volume.
 
 Console Screenshot Service returned the following.
 
-![Windows Update Screen.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ts-cs-6.png)
+![Windows Update Screen.](../../../images/awsec2/latest/userguide/images/ts-cs-6-png.md)
 
 The Windows Update process is updating the registry. Wait for the update to
 finish. Do not reboot or stop the instance as this may cause data corruption during
@@ -226,7 +226,7 @@ types and faster EBS volumes.
 
 Console Screenshot Service returned the following.
 
-![Chkdsk Screen.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ts-cs-7.png)
+![Chkdsk Screen.](../../../images/awsec2/latest/userguide/images/ts-cs-7-png.md)
 
 Windows is running the chkdsk system tool on the drive to verify file system
 integrity and fix logical file system errors. Wait for process to complete.

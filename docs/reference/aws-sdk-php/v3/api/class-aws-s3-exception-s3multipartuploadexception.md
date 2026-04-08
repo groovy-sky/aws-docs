@@ -2,28 +2,28 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.exception.html)
+- [Exception](namespace-aws-s3-exception.md)
 
 ## S3MultipartUploadException     extends [MultipartUploadException](class-aws-exception-multipartuploadexception.md)   in package    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.S3MultipartUploadException.html\#toc)
+### Table of Contents  [header link](class-aws-s3-exception-s3multipartuploadexception-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.S3MultipartUploadException.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-exception-s3multipartuploadexception-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.S3MultipartUploadException.html#method___construct)
+[\_\_construct()](class-aws-s3-exception-s3multipartuploadexception-method-construct.md)
 : mixed [appendMonitoringEvent()](class-aws-hasmonitoringeventstrait.md#method_appendMonitoringEvent)
-: mixed Append a client-side monitoring event to this object's event list[getBucket()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.S3MultipartUploadException.html#method_getBucket)
-: string\|null Get the Bucket information of the transfer object[getKey()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.S3MultipartUploadException.html#method_getKey)
+: mixed Append a client-side monitoring event to this object's event list[getBucket()](class-aws-s3-exception-s3multipartuploadexception-method-getbucket.md)
+: string\|null Get the Bucket information of the transfer object[getKey()](class-aws-s3-exception-s3multipartuploadexception-method-getkey.md)
 : string\|null Get the Key information of the transfer object[getMonitoringEvents()](class-aws-hasmonitoringeventstrait.md#method_getMonitoringEvents)
 : array<string\|int, mixed> Get client-side monitoring events attached to this object. Each event is
-represented as an associative array within the returned array.[getSourceFileName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.S3MultipartUploadException.html#method_getSourceFileName)
+represented as an associative array within the returned array.[getSourceFileName()](class-aws-s3-exception-s3multipartuploadexception-method-getsourcefilename.md)
 : string\|null Get the source file name of the transfer object[getState()](class-aws-exception-multipartuploadexception.md#method_getState)
 : [UploadState](class-aws-multipart-uploadstate.md)Get the state of the transfer[prependMonitoringEvent()](class-aws-hasmonitoringeventstrait.md#method_prependMonitoringEvent)
 : mixed Prepend a client-side monitoring event to this object's event list
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.S3MultipartUploadException.html\#methods)
+### Methods  [header link](class-aws-s3-exception-s3multipartuploadexception-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.S3MultipartUploadException.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-exception-s3multipartuploadexception-method-construct.md)
 
 `
     public
@@ -59,7 +59,7 @@ Append a client-side monitoring event to this object's event list
 $event
 : array<string\|int, mixed>
 
-#### getBucket()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.S3MultipartUploadException.html\#method_getBucket)
+#### getBucket()  [header link](class-aws-s3-exception-s3multipartuploadexception-method-getbucket.md)
 
 Get the Bucket information of the transfer object
 
@@ -75,7 +75,7 @@ string\|null
 Returns null when 'Bucket' information
 is unavailable.
 
-#### getKey()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.S3MultipartUploadException.html\#method_getKey)
+#### getKey()  [header link](class-aws-s3-exception-s3multipartuploadexception-method-getkey.md)
 
 Get the Key information of the transfer object
 
@@ -104,7 +104,7 @@ represented as an associative array within the returned array.
 
 array<string\|int, mixed>
 
-#### getSourceFileName()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.S3MultipartUploadException.html\#method_getSourceFileName)
+#### getSourceFileName()  [header link](class-aws-s3-exception-s3multipartuploadexception-method-getsourcefilename.md)
 
 Get the source file name of the transfer object
 
@@ -151,15 +151,15 @@ $event
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.S3MultipartUploadException.html#toc-methods)
+  - [Methods](class-aws-s3-exception-s3multipartuploadexception-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.S3MultipartUploadException.html#method___construct)
+  - [\_\_construct()](class-aws-s3-exception-s3multipartuploadexception-method-construct.md)
   - [appendMonitoringEvent()](class-aws-hasmonitoringeventstrait.md#method_appendMonitoringEvent)
-  - [getBucket()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.S3MultipartUploadException.html#method_getBucket)
-  - [getKey()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.S3MultipartUploadException.html#method_getKey)
+  - [getBucket()](class-aws-s3-exception-s3multipartuploadexception-method-getbucket.md)
+  - [getKey()](class-aws-s3-exception-s3multipartuploadexception-method-getkey.md)
   - [getMonitoringEvents()](class-aws-hasmonitoringeventstrait.md#method_getMonitoringEvents)
-  - [getSourceFileName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.S3MultipartUploadException.html#method_getSourceFileName)
+  - [getSourceFileName()](class-aws-s3-exception-s3multipartuploadexception-method-getsourcefilename.md)
   - [getState()](class-aws-exception-multipartuploadexception.md#method_getState)
   - [prependMonitoringEvent()](class-aws-hasmonitoringeventstrait.md#method_prependMonitoringEvent)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.S3MultipartUploadException.html#top)
+[Back To Top](class-aws-s3-exception-s3multipartuploadexception-top.md)

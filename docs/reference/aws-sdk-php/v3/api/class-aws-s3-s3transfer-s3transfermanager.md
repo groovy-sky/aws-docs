@@ -2,34 +2,34 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
 
 ## S3TransferManager        in package    - [Aws](package-aws.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-s3transfermanager-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-s3transfermanager-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method___construct)
-: mixed [download()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method_download)
-: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)[downloadDirectory()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method_downloadDirectory)
-: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)[downloadFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method_downloadFile)
-: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)[getConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method_getConfig)
-: [S3TransferManagerConfig](class-aws-s3-s3transfer-models-s3transfermanagerconfig.md)[getS3Client()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method_getS3Client)
-: [S3ClientInterface](class-aws-s3-s3clientinterface.md)[isValidS3URI()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method_isValidS3URI)
-: bool Validates a string value is a valid S3 URI.[resumeDownload()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method_resumeDownload)
-: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)[resumeUpload()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method_resumeUpload)
-: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)[s3UriAsBucketAndKey()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method_s3UriAsBucketAndKey)
+[\_\_construct()](class-aws-s3-s3transfer-s3transfermanager-method-construct.md)
+: mixed [download()](class-aws-s3-s3transfer-s3transfermanager-method-download.md)
+: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)[downloadDirectory()](class-aws-s3-s3transfer-s3transfermanager-method-downloaddirectory.md)
+: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)[downloadFile()](class-aws-s3-s3transfer-s3transfermanager-method-downloadfile.md)
+: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)[getConfig()](class-aws-s3-s3transfer-s3transfermanager-method-getconfig.md)
+: [S3TransferManagerConfig](class-aws-s3-s3transfer-models-s3transfermanagerconfig.md)[getS3Client()](class-aws-s3-s3transfer-s3transfermanager-method-gets3client.md)
+: [S3ClientInterface](class-aws-s3-s3clientinterface.md)[isValidS3URI()](class-aws-s3-s3transfer-s3transfermanager-method-isvalids3uri.md)
+: bool Validates a string value is a valid S3 URI.[resumeDownload()](class-aws-s3-s3transfer-s3transfermanager-method-resumedownload.md)
+: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)[resumeUpload()](class-aws-s3-s3transfer-s3transfermanager-method-resumeupload.md)
+: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)[s3UriAsBucketAndKey()](class-aws-s3-s3transfer-s3transfermanager-method-s3uriasbucketandkey.md)
 : array<string\|int, mixed> Converts a S3 URI into an array with a Bucket and Key
-properties set.[upload()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method_upload)
-: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)[uploadDirectory()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method_uploadDirectory)
+properties set.[upload()](class-aws-s3-s3transfer-s3transfermanager-method-upload.md)
+: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)[uploadDirectory()](class-aws-s3-s3transfer-s3transfermanager-method-uploaddirectory.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-s3transfermanager-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3transfer-s3transfermanager-method-construct.md)
 
 `
     public
@@ -49,7 +49,7 @@ $config
 : array<string\|int, mixed>\| [S3TransferManagerConfig](class-aws-s3-s3transfer-models-s3transfermanagerconfig.md) \|null
 = null
 
-#### download()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html\#method_download)
+#### download()  [header link](class-aws-s3-s3transfer-s3transfermanager-method-download.md)
 
 `
     public
@@ -64,7 +64,7 @@ $downloadRequest
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### downloadDirectory()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html\#method_downloadDirectory)
+#### downloadDirectory()  [header link](class-aws-s3-s3transfer-s3transfermanager-method-downloaddirectory.md)
 
 `
     public
@@ -79,7 +79,7 @@ $downloadDirectoryRequest
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### downloadFile()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html\#method_downloadFile)
+#### downloadFile()  [header link](class-aws-s3-s3transfer-s3transfermanager-method-downloadfile.md)
 
 `
     public
@@ -96,7 +96,7 @@ $downloadFileRequest
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### getConfig()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html\#method_getConfig)
+#### getConfig()  [header link](class-aws-s3-s3transfer-s3transfermanager-method-getconfig.md)
 
 `
     public
@@ -106,7 +106,7 @@ $downloadFileRequest
 
 [S3TransferManagerConfig](class-aws-s3-s3transfer-models-s3transfermanagerconfig.md)
 
-#### getS3Client()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html\#method_getS3Client)
+#### getS3Client()  [header link](class-aws-s3-s3transfer-s3transfermanager-method-gets3client.md)
 
 `
     public
@@ -116,7 +116,7 @@ $downloadFileRequest
 
 [S3ClientInterface](class-aws-s3-s3clientinterface.md)
 
-#### isValidS3URI()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html\#method_isValidS3URI)
+#### isValidS3URI()  [header link](class-aws-s3-s3transfer-s3transfermanager-method-isvalids3uri.md)
 
 Validates a string value is a valid S3 URI.
 
@@ -135,7 +135,7 @@ $uri
 
 bool
 
-#### resumeDownload()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html\#method_resumeDownload)
+#### resumeDownload()  [header link](class-aws-s3-s3transfer-s3transfermanager-method-resumedownload.md)
 
 `
     public
@@ -150,7 +150,7 @@ $resumeDownloadRequest
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### resumeUpload()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html\#method_resumeUpload)
+#### resumeUpload()  [header link](class-aws-s3-s3transfer-s3transfermanager-method-resumeupload.md)
 
 `
     public
@@ -165,7 +165,7 @@ $resumeUploadRequest
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### s3UriAsBucketAndKey()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html\#method_s3UriAsBucketAndKey)
+#### s3UriAsBucketAndKey()  [header link](class-aws-s3-s3transfer-s3transfermanager-method-s3uriasbucketandkey.md)
 
 Converts a S3 URI into an array with a Bucket and Key
 properties set.
@@ -183,7 +183,7 @@ $uri
 
 array<string\|int, mixed>
 
-#### upload()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html\#method_upload)
+#### upload()  [header link](class-aws-s3-s3transfer-s3transfermanager-method-upload.md)
 
 `
     public
@@ -200,7 +200,7 @@ $uploadRequest
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### uploadDirectory()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html\#method_uploadDirectory)
+#### uploadDirectory()  [header link](class-aws-s3-s3transfer-s3transfermanager-method-uploaddirectory.md)
 
 `
     public
@@ -221,19 +221,19 @@ $uploadDirectoryRequest
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#toc-methods)
+  - [Methods](class-aws-s3-s3transfer-s3transfermanager-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method___construct)
-  - [download()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method_download)
-  - [downloadDirectory()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method_downloadDirectory)
-  - [downloadFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method_downloadFile)
-  - [getConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method_getConfig)
-  - [getS3Client()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method_getS3Client)
-  - [isValidS3URI()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method_isValidS3URI)
-  - [resumeDownload()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method_resumeDownload)
-  - [resumeUpload()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method_resumeUpload)
-  - [s3UriAsBucketAndKey()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method_s3UriAsBucketAndKey)
-  - [upload()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method_upload)
-  - [uploadDirectory()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#method_uploadDirectory)
+  - [\_\_construct()](class-aws-s3-s3transfer-s3transfermanager-method-construct.md)
+  - [download()](class-aws-s3-s3transfer-s3transfermanager-method-download.md)
+  - [downloadDirectory()](class-aws-s3-s3transfer-s3transfermanager-method-downloaddirectory.md)
+  - [downloadFile()](class-aws-s3-s3transfer-s3transfermanager-method-downloadfile.md)
+  - [getConfig()](class-aws-s3-s3transfer-s3transfermanager-method-getconfig.md)
+  - [getS3Client()](class-aws-s3-s3transfer-s3transfermanager-method-gets3client.md)
+  - [isValidS3URI()](class-aws-s3-s3transfer-s3transfermanager-method-isvalids3uri.md)
+  - [resumeDownload()](class-aws-s3-s3transfer-s3transfermanager-method-resumedownload.md)
+  - [resumeUpload()](class-aws-s3-s3transfer-s3transfermanager-method-resumeupload.md)
+  - [s3UriAsBucketAndKey()](class-aws-s3-s3transfer-s3transfermanager-method-s3uriasbucketandkey.md)
+  - [upload()](class-aws-s3-s3transfer-s3transfermanager-method-upload.md)
+  - [uploadDirectory()](class-aws-s3-s3transfer-s3transfermanager-method-uploaddirectory.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.S3TransferManager.html#top)
+[Back To Top](class-aws-s3-s3transfer-s3transfermanager-top.md)

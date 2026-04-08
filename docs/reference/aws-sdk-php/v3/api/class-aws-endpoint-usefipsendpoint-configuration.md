@@ -2,26 +2,26 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [Endpoint](namespace-aws-endpoint.md)
-- [UseFipsEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpoint.usefipsendpoint.html)
+- [UseFipsEndpoint](namespace-aws-endpoint-usefipsendpoint.md)
 
 ## Configuration        in package    - [Aws](package-aws.md)       implements  [ConfigurationInterface](class-aws-endpoint-usefipsendpoint-configurationinterface.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.Configuration.html\#toc)
+### Table of Contents  [header link](class-aws-endpoint-usefipsendpoint-configuration-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.Configuration.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-endpoint-usefipsendpoint-configuration-toc-interfaces.md)
 
 [ConfigurationInterface](class-aws-endpoint-usefipsendpoint-configurationinterface.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.Configuration.html\#toc-methods)
+#### Methods  [header link](class-aws-endpoint-usefipsendpoint-configuration-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.Configuration.html#method___construct)
-: mixed [isUseFipsEndpoint()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.Configuration.html#method_isUseFipsEndpoint)
-: bool Returns whether or not to use a FIPS endpoint[toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.Configuration.html#method_toArray)
+[\_\_construct()](class-aws-endpoint-usefipsendpoint-configuration-method-construct.md)
+: mixed [isUseFipsEndpoint()](class-aws-endpoint-usefipsendpoint-configuration-method-isusefipsendpoint.md)
+: bool Returns whether or not to use a FIPS endpoint[toArray()](class-aws-endpoint-usefipsendpoint-configuration-method-toarray.md)
 : array<string\|int, mixed> Returns the configuration as an associative array
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.Configuration.html\#methods)
+### Methods  [header link](class-aws-endpoint-usefipsendpoint-configuration-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.Configuration.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-endpoint-usefipsendpoint-configuration-method-construct.md)
 
 `
     public
@@ -32,7 +32,7 @@ Menu
 $useFipsEndpoint
 : mixed
 
-#### isUseFipsEndpoint()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.Configuration.html\#method_isUseFipsEndpoint)
+#### isUseFipsEndpoint()  [header link](class-aws-endpoint-usefipsendpoint-configuration-method-isusefipsendpoint.md)
 
 Returns whether or not to use a FIPS endpoint
 
@@ -44,7 +44,7 @@ Returns whether or not to use a FIPS endpoint
 
 bool
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.Configuration.html\#method_toArray)
+#### toArray()  [header link](class-aws-endpoint-usefipsendpoint-configuration-method-toarray.md)
 
 Returns the configuration as an associative array
 
@@ -62,10 +62,10 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.Configuration.html#toc-methods)
+  - [Methods](class-aws-endpoint-usefipsendpoint-configuration-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.Configuration.html#method___construct)
-  - [isUseFipsEndpoint()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.Configuration.html#method_isUseFipsEndpoint)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.Configuration.html#method_toArray)
+  - [\_\_construct()](class-aws-endpoint-usefipsendpoint-configuration-method-construct.md)
+  - [isUseFipsEndpoint()](class-aws-endpoint-usefipsendpoint-configuration-method-isusefipsendpoint.md)
+  - [toArray()](class-aws-endpoint-usefipsendpoint-configuration-method-toarray.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseFipsEndpoint.Configuration.html#top)
+[Back To Top](class-aws-endpoint-usefipsendpoint-configuration-top.md)

@@ -17,34 +17,34 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-10-11**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html)
+- [**2017-10-11**](api-synthetics-2017-10-11.md)
 
-  - [AssociateResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html#associateresource)
-  - [CreateCanary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html#createcanary)
-  - [CreateGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html#creategroup)
-  - [DeleteCanary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html#deletecanary)
-  - [DeleteGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html#deletegroup)
-  - [DescribeCanaries](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html#describecanaries)
-  - [DescribeCanariesLastRun](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html#describecanarieslastrun)
-  - [DescribeRuntimeVersions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html#describeruntimeversions)
-  - [DisassociateResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html#disassociateresource)
-  - [GetCanary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html#getcanary)
-  - [GetCanaryRuns](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html#getcanaryruns)
-  - [GetGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html#getgroup)
-  - [ListAssociatedGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html#listassociatedgroups)
-  - [ListGroupResources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html#listgroupresources)
-  - [ListGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html#listgroups)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html#listtagsforresource)
-  - [StartCanary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html#startcanary)
-  - [StartCanaryDryRun](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html#startcanarydryrun)
-  - [StopCanary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html#stopcanary)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html#untagresource)
-  - [UpdateCanary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-synthetics-2017-10-11.html#updatecanary)
+  - [AssociateResource](api-synthetics-2017-10-11-associateresource.md)
+  - [CreateCanary](api-synthetics-2017-10-11-createcanary.md)
+  - [CreateGroup](api-synthetics-2017-10-11-creategroup.md)
+  - [DeleteCanary](api-synthetics-2017-10-11-deletecanary.md)
+  - [DeleteGroup](api-synthetics-2017-10-11-deletegroup.md)
+  - [DescribeCanaries](api-synthetics-2017-10-11-describecanaries.md)
+  - [DescribeCanariesLastRun](api-synthetics-2017-10-11-describecanarieslastrun.md)
+  - [DescribeRuntimeVersions](api-synthetics-2017-10-11-describeruntimeversions.md)
+  - [DisassociateResource](api-synthetics-2017-10-11-disassociateresource.md)
+  - [GetCanary](api-synthetics-2017-10-11-getcanary.md)
+  - [GetCanaryRuns](api-synthetics-2017-10-11-getcanaryruns.md)
+  - [GetGroup](api-synthetics-2017-10-11-getgroup.md)
+  - [ListAssociatedGroups](api-synthetics-2017-10-11-listassociatedgroups.md)
+  - [ListGroupResources](api-synthetics-2017-10-11-listgroupresources.md)
+  - [ListGroups](api-synthetics-2017-10-11-listgroups.md)
+  - [ListTagsForResource](api-synthetics-2017-10-11-listtagsforresource.md)
+  - [StartCanary](api-synthetics-2017-10-11-startcanary.md)
+  - [StartCanaryDryRun](api-synthetics-2017-10-11-startcanarydryrun.md)
+  - [StopCanary](api-synthetics-2017-10-11-stopcanary.md)
+  - [TagResource](api-synthetics-2017-10-11-tagresource.md)
+  - [UntagResource](api-synthetics-2017-10-11-untagresource.md)
+  - [UpdateCanary](api-synthetics-2017-10-11-updatecanary.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Synthetics.SyntheticsClient.html\#toc)
+### Table of Contents  [header link](class-aws-synthetics-syntheticsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Synthetics.SyntheticsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-synthetics-syntheticsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -75,7 +75,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Synthetics.SyntheticsClient.html\#methods)
+### Methods  [header link](class-aws-synthetics-syntheticsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -542,7 +542,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Synthetics.SyntheticsClient.html#toc-methods)
+  - [Methods](class-aws-synthetics-syntheticsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -569,4 +569,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Synthetics.SyntheticsClient.html#top)
+[Back To Top](class-aws-synthetics-syntheticsclient-top.md)

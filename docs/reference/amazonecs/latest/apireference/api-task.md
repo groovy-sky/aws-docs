@@ -9,7 +9,7 @@ Details on a task in a cluster.
 The Elastic Network Adapter that's associated with the task if the task uses the
 `awsvpc` network mode.
 
-Type: Array of [Attachment](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Attachment.html) objects
+Type: Array of [Attachment](api-attachment.md) objects
 
 Required: No
 
@@ -17,7 +17,7 @@ Required: No
 
 The attributes of the task
 
-Type: Array of [Attribute](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Attribute.html) objects
+Type: Array of [Attribute](api-attribute.md) objects
 
 Required: No
 
@@ -76,7 +76,7 @@ Required: No
 
 The containers that's associated with the task.
 
-Type: Array of [Container](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Container.html) objects
+Type: Array of [Container](api-container.md) objects
 
 Required: No
 
@@ -113,7 +113,7 @@ Required: No
 **desiredStatus**
 
 The desired status of the task. For more information, see [Task\
-Lifecycle](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-lifecycle.html).
+Lifecycle](../../../../services/amazonecs/latest/developerguide/task-lifecycle.md).
 
 Type: String
 
@@ -149,7 +149,7 @@ Required: No
 
 The Fargate ephemeral storage settings for the task.
 
-Type: [TaskEphemeralStorage](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_TaskEphemeralStorage.html) object
+Type: [TaskEphemeralStorage](api-taskephemeralstorage.md) object
 
 Required: No
 
@@ -189,14 +189,14 @@ Required: No
 
 The Elastic Inference accelerator that's associated with the task.
 
-Type: Array of [InferenceAccelerator](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_InferenceAccelerator.html) objects
+Type: Array of [InferenceAccelerator](api-inferenceaccelerator.md) objects
 
 Required: No
 
 **lastStatus**
 
 The last known status for the task. For more information, see [Task\
-Lifecycle](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-lifecycle.html).
+Lifecycle](../../../../services/amazonecs/latest/developerguide/task-lifecycle.md).
 
 Type: String
 
@@ -205,7 +205,7 @@ Required: No
 **launchType**
 
 The infrastructure where your task runs on. For more information, see [Amazon\
-ECS launch types](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_types.html) in the _Amazon Elastic Container Service Developer_
+ECS launch types](../../../../services/amazonecs/latest/developerguide/launch-types.md) in the _Amazon Elastic Container Service Developer_
 _Guide_.
 
 Type: String
@@ -282,7 +282,7 @@ Required: No
 
 The platform version where your task runs on. A platform version is only specified for
 tasks that use the Fargate launch type. If you didn't specify one, the
-`LATEST` platform version is used. For more information, see [AWS Fargate Platform Versions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html) in the _Amazon Elastic_
+`LATEST` platform version is used. For more information, see [AWS Fargate Platform Versions](../../../../services/amazonecs/latest/developerguide/platform-versions.md) in the _Amazon Elastic_
 _Container Service Developer Guide_.
 
 Type: String
@@ -330,7 +330,7 @@ The stop code indicating why a task was stopped. The `stoppedReason` might
 contain additional details.
 
 For more information about stop code, see [Stopped tasks\
-error codes](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/stopped-task-error-codes.html) in the _Amazon ECS Developer Guide_.
+error codes](../../../../services/amazonecs/latest/developerguide/stopped-task-error-codes.md) in the _Amazon ECS Developer Guide_.
 
 Type: String
 
@@ -435,13 +435,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/Task)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/task.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/Task)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/task.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/Task)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/task.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Tag
 

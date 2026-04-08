@@ -8,21 +8,21 @@ Menu
 Interface used to provide interchangeable strategies for adding authorization
 to requests using the various AWS signature protocols.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BearerTokenAuthorization.html\#toc)
+### Table of Contents  [header link](class-aws-token-bearertokenauthorization-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BearerTokenAuthorization.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-token-bearertokenauthorization-toc-interfaces.md)
 
 [TokenAuthorization](class-aws-token-tokenauthorization.md)Interface used to provide interchangeable strategies for adding authorization
 to requests using the various AWS signature protocols.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BearerTokenAuthorization.html\#toc-methods)
+#### Methods  [header link](class-aws-token-bearertokenauthorization-toc-methods.md)
 
-[authorizeRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BearerTokenAuthorization.html#method_authorizeRequest)
+[authorizeRequest()](class-aws-token-bearertokenauthorization-method-authorizerequest.md)
 : [RequestInterface](class-psr-http-message-requestinterface.md)Adds the specified token to a request by adding the required headers.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BearerTokenAuthorization.html\#methods)
+### Methods  [header link](class-aws-token-bearertokenauthorization-methods.md)
 
-#### authorizeRequest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BearerTokenAuthorization.html\#method_authorizeRequest)
+#### authorizeRequest()  [header link](class-aws-token-bearertokenauthorization-method-authorizerequest.md)
 
 Adds the specified token to a request by adding the required headers.
 
@@ -56,8 +56,8 @@ Returns the modified request.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BearerTokenAuthorization.html#toc-methods)
+  - [Methods](class-aws-token-bearertokenauthorization-toc-methods.md)
 - Methods
-  - [authorizeRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BearerTokenAuthorization.html#method_authorizeRequest)
+  - [authorizeRequest()](class-aws-token-bearertokenauthorization-method-authorizerequest.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BearerTokenAuthorization.html#top)
+[Back To Top](class-aws-token-bearertokenauthorization-top.md)

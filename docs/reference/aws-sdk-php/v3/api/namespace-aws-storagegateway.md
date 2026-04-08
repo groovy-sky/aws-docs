@@ -4,15 +4,15 @@ Menu
 
 ## StorageGateway
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.storagegateway.html\#toc)
+### Table of Contents  [header link](namespace-aws-storagegateway-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.storagegateway.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-storagegateway-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.storagegateway.exception.html)
+[Exception](namespace-aws-storagegateway-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.storagegateway.html\#toc-classes)
+#### Classes  [header link](namespace-aws-storagegateway-toc-classes.md)
 
-[StorageGatewayClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.StorageGateway.StorageGatewayClient.html)AWS Storage Gateway client.
+[StorageGatewayClient](class-aws-storagegateway-storagegatewayclient.md)AWS Storage Gateway client.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.storagegateway.html#toc-classes)
+  - [Classes](namespace-aws-storagegateway-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.storagegateway.html#top)
+[Back To Top](namespace-aws-storagegateway-top.md)

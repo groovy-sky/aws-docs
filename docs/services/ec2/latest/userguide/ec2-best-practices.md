@@ -73,7 +73,7 @@ restarts. For more information, see [Amazon EC2 instance IP addressing](using-in
 manually attach a network interface or Elastic IP address to a replacement instance.
 For more information, see [Elastic network interfaces](using-eni.md). For
 an automated solution, you can use Amazon EC2 Auto Scaling. For more information, see the
-[Amazon EC2 Auto Scaling User Guide](https://docs.aws.amazon.com/autoscaling/ec2/userguide).
+[Amazon EC2 Auto Scaling User Guide](../../../autoscaling/ec2/userguide.md).
 
 - Regularly test the process of recovering your instances and Amazon EBS volumes to
 ensure data and services are restored successfully.

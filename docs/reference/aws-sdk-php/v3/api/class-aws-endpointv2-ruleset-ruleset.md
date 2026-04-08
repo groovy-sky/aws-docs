@@ -2,32 +2,32 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [EndpointV2](namespace-aws-endpointv2.md)
-- [Ruleset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpointv2.ruleset.html)
+- [Ruleset](namespace-aws-endpointv2-ruleset.md)
 
 ## Ruleset        in package    - [Aws](package-aws.md)
 
 A collection of rules, parameter definitions and a class of helper functions
 used to resolve either an endpoint or an error.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html\#toc)
+### Table of Contents  [header link](class-aws-endpointv2-ruleset-ruleset-toc.md)
 
-#### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html\#toc-properties)
+#### Properties  [header link](class-aws-endpointv2-ruleset-ruleset-toc-properties.md)
 
-[$standardLibrary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html#property_standardLibrary)
+[$standardLibrary](class-aws-endpointv2-ruleset-ruleset-property-standardlibrary.md)
 : RulesetStandardLibrary
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html\#toc-methods)
+#### Methods  [header link](class-aws-endpointv2-ruleset-ruleset-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html#method___construct)
-: mixed [evaluate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html#method_evaluate)
-: mixed Evaluate the ruleset against the input parameters.[getParameters()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html#method_getParameters)
-: array<string\|int, mixed> [getRules()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html#method_getRules)
-: array<string\|int, mixed> [getVersion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html#method_getVersion)
+[\_\_construct()](class-aws-endpointv2-ruleset-ruleset-method-construct.md)
+: mixed [evaluate()](class-aws-endpointv2-ruleset-ruleset-method-evaluate.md)
+: mixed Evaluate the ruleset against the input parameters.[getParameters()](class-aws-endpointv2-ruleset-ruleset-method-getparameters.md)
+: array<string\|int, mixed> [getRules()](class-aws-endpointv2-ruleset-ruleset-method-getrules.md)
+: array<string\|int, mixed> [getVersion()](class-aws-endpointv2-ruleset-ruleset-method-getversion.md)
 : mixed
 
-### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html\#properties)
+### Properties  [header link](class-aws-endpointv2-ruleset-ruleset-properties.md)
 
-#### $standardLibrary  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html\#property_standardLibrary)
+#### $standardLibrary  [header link](class-aws-endpointv2-ruleset-ruleset-property-standardlibrary.md)
 
 `
     public
@@ -35,9 +35,9 @@ used to resolve either an endpoint or an error.
     $standardLibrary
     `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html\#methods)
+### Methods  [header link](class-aws-endpointv2-ruleset-ruleset-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-endpointv2-ruleset-ruleset-method-construct.md)
 
 `
     public
@@ -49,7 +49,7 @@ $ruleset
 : array<string\|int, mixed>$partitions
 : array<string\|int, mixed>
 
-#### evaluate()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html\#method_evaluate)
+#### evaluate()  [header link](class-aws-endpointv2-ruleset-ruleset-method-evaluate.md)
 
 Evaluate the ruleset against the input parameters.
 
@@ -64,7 +64,7 @@ Return the first rule the parameters match against.
 $inputParameters
 : array<string\|int, mixed>
 
-#### getParameters()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html\#method_getParameters)
+#### getParameters()  [header link](class-aws-endpointv2-ruleset-ruleset-method-getparameters.md)
 
 `
     public
@@ -74,7 +74,7 @@ $inputParameters
 
 array<string\|int, mixed>
 
-#### getRules()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html\#method_getRules)
+#### getRules()  [header link](class-aws-endpointv2-ruleset-ruleset-method-getrules.md)
 
 `
     public
@@ -84,7 +84,7 @@ array<string\|int, mixed>
 
 array<string\|int, mixed>
 
-#### getVersion()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html\#method_getVersion)
+#### getVersion()  [header link](class-aws-endpointv2-ruleset-ruleset-method-getversion.md)
 
 `
     public
@@ -97,15 +97,15 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Properties](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html#toc-properties)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html#toc-methods)
+  - [Properties](class-aws-endpointv2-ruleset-ruleset-toc-properties.md)
+  - [Methods](class-aws-endpointv2-ruleset-ruleset-toc-methods.md)
 - Properties
-  - [$standardLibrary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html#property_standardLibrary)
+  - [$standardLibrary](class-aws-endpointv2-ruleset-ruleset-property-standardlibrary.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html#method___construct)
-  - [evaluate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html#method_evaluate)
-  - [getParameters()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html#method_getParameters)
-  - [getRules()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html#method_getRules)
-  - [getVersion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html#method_getVersion)
+  - [\_\_construct()](class-aws-endpointv2-ruleset-ruleset-method-construct.md)
+  - [evaluate()](class-aws-endpointv2-ruleset-ruleset-method-evaluate.md)
+  - [getParameters()](class-aws-endpointv2-ruleset-ruleset-method-getparameters.md)
+  - [getRules()](class-aws-endpointv2-ruleset-ruleset-method-getrules.md)
+  - [getVersion()](class-aws-endpointv2-ruleset-ruleset-method-getversion.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html#top)
+[Back To Top](class-aws-endpointv2-ruleset-ruleset-top.md)

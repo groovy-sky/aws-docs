@@ -46,7 +46,7 @@ The initial state of the builder is `PENDING`. When it is ready, the state is `R
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/appstream2/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -54,7 +54,7 @@ The request accepts the following data in JSON format.
 
 The list of interface VPC endpoint (interface endpoint) objects. Administrators can connect to the image builder only through the specified endpoints.
 
-Type: Array of [AccessEndpoint](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_AccessEndpoint.html) objects
+Type: Array of [AccessEndpoint](api-accessendpoint.md) objects
 
 Array Members: Minimum number of 1 item. Maximum number of 4 items.
 
@@ -106,7 +106,7 @@ Required: No
 
 The name of the directory and organizational unit (OU) to use to join the image builder to a Microsoft Active Directory domain.
 
-Type: [DomainJoinInfo](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_DomainJoinInfo.html) object
+Type: [DomainJoinInfo](api-domainjoininfo.md) object
 
 Required: No
 
@@ -266,7 +266,7 @@ Required: Yes
 
 The configuration for the root volume of the image builder. Use this to customize storage capacity from 200 GB up to 500 GB based on your application installation requirements.
 
-Type: [VolumeConfig](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_VolumeConfig.html) object
+Type: [VolumeConfig](api-volumeconfig.md) object
 
 Required: No
 
@@ -400,7 +400,7 @@ Generally allowed characters are: letters, numbers, and spaces representable in 
 
 If you do not specify a value, the value is set to an empty string.
 
-For more information about tags, see [Tagging Your Resources](https://docs.aws.amazon.com/appstream2/latest/developerguide/tagging-basic.html) in the _Amazon WorkSpaces Applications Administration Guide_.
+For more information about tags, see [Tagging Your Resources](../../../../services/appstream2/latest/developerguide/tagging-basic.md) in the _Amazon WorkSpaces Applications Administration Guide_.
 
 Type: String to string map
 
@@ -420,7 +420,7 @@ Required: No
 
 The VPC configuration for the image builder. You can specify only one subnet.
 
-Type: [VpcConfig](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_VpcConfig.html) object
+Type: [VpcConfig](api-vpcconfig.md) object
 
 Required: No
 
@@ -491,11 +491,11 @@ The following data is returned in JSON format by the service.
 
 Information about the image builder.
 
-Type: [ImageBuilder](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_ImageBuilder.html) object
+Type: [ImageBuilder](api-imagebuilder.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/appstream2/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **ConcurrentModificationException**
 
@@ -611,27 +611,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appstream-2016-12-01/CreateImageBuilder)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/appstream-2016-12-01/createimagebuilder.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appstream-2016-12-01/CreateImageBuilder)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appstream-2016-12-01/createimagebuilder.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appstream-2016-12-01/CreateImageBuilder)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appstream-2016-12-01/createimagebuilder.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appstream-2016-12-01/CreateImageBuilder)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/appstream-2016-12-01/createimagebuilder.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appstream-2016-12-01/CreateImageBuilder)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appstream-2016-12-01/createimagebuilder.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appstream-2016-12-01/CreateImageBuilder)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appstream-2016-12-01/createimagebuilder.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appstream-2016-12-01/CreateImageBuilder)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appstream-2016-12-01/createimagebuilder.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appstream-2016-12-01/CreateImageBuilder)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appstream-2016-12-01/createimagebuilder.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/appstream-2016-12-01/CreateImageBuilder)
+- [AWS SDK for Python](../../../../services/goto/boto3/appstream-2016-12-01/createimagebuilder.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appstream-2016-12-01/CreateImageBuilder)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appstream-2016-12-01/createimagebuilder.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateFleet
 

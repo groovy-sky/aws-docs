@@ -106,27 +106,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/freetier-2023-09-07/UpgradeAccountPlan)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/freetier-2023-09-07/upgradeaccountplan.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/freetier-2023-09-07/UpgradeAccountPlan)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/freetier-2023-09-07/upgradeaccountplan.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/freetier-2023-09-07/UpgradeAccountPlan)
+- [AWS SDK for C++](../../../goto/sdkforcpp/freetier-2023-09-07/upgradeaccountplan.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/freetier-2023-09-07/UpgradeAccountPlan)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/freetier-2023-09-07/upgradeaccountplan.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/freetier-2023-09-07/UpgradeAccountPlan)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/freetier-2023-09-07/upgradeaccountplan.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/freetier-2023-09-07/UpgradeAccountPlan)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/freetier-2023-09-07/upgradeaccountplan.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/freetier-2023-09-07/UpgradeAccountPlan)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/freetier-2023-09-07/upgradeaccountplan.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/freetier-2023-09-07/UpgradeAccountPlan)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/freetier-2023-09-07/upgradeaccountplan.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/freetier-2023-09-07/UpgradeAccountPlan)
+- [AWS SDK for Python](../../../../services/goto/boto3/freetier-2023-09-07/upgradeaccountplan.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/freetier-2023-09-07/UpgradeAccountPlan)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/freetier-2023-09-07/upgradeaccountplan.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ListAccountActivities
 

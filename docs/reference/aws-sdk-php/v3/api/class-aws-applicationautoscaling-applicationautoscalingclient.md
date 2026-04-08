@@ -17,26 +17,26 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2016-02-06**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-autoscaling-2016-02-06.html)
+- [**2016-02-06**](api-application-autoscaling-2016-02-06.md)
 
-  - [DeleteScalingPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-autoscaling-2016-02-06.html#deletescalingpolicy)
-  - [DeleteScheduledAction](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-autoscaling-2016-02-06.html#deletescheduledaction)
-  - [DeregisterScalableTarget](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-autoscaling-2016-02-06.html#deregisterscalabletarget)
-  - [DescribeScalableTargets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-autoscaling-2016-02-06.html#describescalabletargets)
-  - [DescribeScalingActivities](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-autoscaling-2016-02-06.html#describescalingactivities)
-  - [DescribeScalingPolicies](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-autoscaling-2016-02-06.html#describescalingpolicies)
-  - [DescribeScheduledActions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-autoscaling-2016-02-06.html#describescheduledactions)
-  - [GetPredictiveScalingForecast](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-autoscaling-2016-02-06.html#getpredictivescalingforecast)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-autoscaling-2016-02-06.html#listtagsforresource)
-  - [PutScalingPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-autoscaling-2016-02-06.html#putscalingpolicy)
-  - [PutScheduledAction](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-autoscaling-2016-02-06.html#putscheduledaction)
-  - [RegisterScalableTarget](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-autoscaling-2016-02-06.html#registerscalabletarget)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-autoscaling-2016-02-06.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-autoscaling-2016-02-06.html#untagresource)
+  - [DeleteScalingPolicy](api-application-autoscaling-2016-02-06-deletescalingpolicy.md)
+  - [DeleteScheduledAction](api-application-autoscaling-2016-02-06-deletescheduledaction.md)
+  - [DeregisterScalableTarget](api-application-autoscaling-2016-02-06-deregisterscalabletarget.md)
+  - [DescribeScalableTargets](api-application-autoscaling-2016-02-06-describescalabletargets.md)
+  - [DescribeScalingActivities](api-application-autoscaling-2016-02-06-describescalingactivities.md)
+  - [DescribeScalingPolicies](api-application-autoscaling-2016-02-06-describescalingpolicies.md)
+  - [DescribeScheduledActions](api-application-autoscaling-2016-02-06-describescheduledactions.md)
+  - [GetPredictiveScalingForecast](api-application-autoscaling-2016-02-06-getpredictivescalingforecast.md)
+  - [ListTagsForResource](api-application-autoscaling-2016-02-06-listtagsforresource.md)
+  - [PutScalingPolicy](api-application-autoscaling-2016-02-06-putscalingpolicy.md)
+  - [PutScheduledAction](api-application-autoscaling-2016-02-06-putscheduledaction.md)
+  - [RegisterScalableTarget](api-application-autoscaling-2016-02-06-registerscalabletarget.md)
+  - [TagResource](api-application-autoscaling-2016-02-06-tagresource.md)
+  - [UntagResource](api-application-autoscaling-2016-02-06-untagresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationAutoScaling.ApplicationAutoScalingClient.html\#toc)
+### Table of Contents  [header link](class-aws-applicationautoscaling-applicationautoscalingclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationAutoScaling.ApplicationAutoScalingClient.html\#toc-methods)
+#### Methods  [header link](class-aws-applicationautoscaling-applicationautoscalingclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -67,7 +67,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationAutoScaling.ApplicationAutoScalingClient.html\#methods)
+### Methods  [header link](class-aws-applicationautoscaling-applicationautoscalingclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -534,7 +534,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationAutoScaling.ApplicationAutoScalingClient.html#toc-methods)
+  - [Methods](class-aws-applicationautoscaling-applicationautoscalingclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -561,4 +561,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationAutoScaling.ApplicationAutoScalingClient.html#top)
+[Back To Top](class-aws-applicationautoscaling-applicationautoscalingclient-top.md)

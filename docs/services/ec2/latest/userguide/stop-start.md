@@ -238,7 +238,7 @@ You can use Instance Scheduler on AWS to automate the starting and
 stopping of EC2 instances. For more information, see [How do\
 I use Instance Scheduler with CloudFormation to schedule EC2\
 instances?](https://repost.aws/knowledge-center/stop-start-instance-scheduler) Note that [additional\
-charges apply](https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/cost.html).
+charges apply](../../../solutions/latest/instance-scheduler-on-aws/cost.md).
 
 **AWS Lambda and an Amazon EventBridge rule**
 

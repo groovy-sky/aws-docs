@@ -2,24 +2,24 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
-- [Utils](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.utils.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
+- [Utils](namespace-aws-s3-s3transfer-utils.md)
 
 ## ResumableDownloadHandlerInterface     in    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.ResumableDownloadHandlerInterface.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-utils-resumabledownloadhandlerinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.ResumableDownloadHandlerInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-utils-resumabledownloadhandlerinterface-toc-methods.md)
 
-[getDestination()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.ResumableDownloadHandlerInterface.html#method_getDestination)
-: string [getFixedPartSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.ResumableDownloadHandlerInterface.html#method_getFixedPartSize)
-: int [getResumeFilePath()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.ResumableDownloadHandlerInterface.html#method_getResumeFilePath)
-: string [getTemporaryFilePath()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.ResumableDownloadHandlerInterface.html#method_getTemporaryFilePath)
+[getDestination()](class-aws-s3-s3transfer-utils-resumabledownloadhandlerinterface-method-getdestination.md)
+: string [getFixedPartSize()](class-aws-s3-s3transfer-utils-resumabledownloadhandlerinterface-method-getfixedpartsize.md)
+: int [getResumeFilePath()](class-aws-s3-s3transfer-utils-resumabledownloadhandlerinterface-method-getresumefilepath.md)
+: string [getTemporaryFilePath()](class-aws-s3-s3transfer-utils-resumabledownloadhandlerinterface-method-gettemporaryfilepath.md)
 : string
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.ResumableDownloadHandlerInterface.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-utils-resumabledownloadhandlerinterface-methods.md)
 
-#### getDestination()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.ResumableDownloadHandlerInterface.html\#method_getDestination)
+#### getDestination()  [header link](class-aws-s3-s3transfer-utils-resumabledownloadhandlerinterface-method-getdestination.md)
 
 `
     public
@@ -29,7 +29,7 @@ Menu
 
 string
 
-#### getFixedPartSize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.ResumableDownloadHandlerInterface.html\#method_getFixedPartSize)
+#### getFixedPartSize()  [header link](class-aws-s3-s3transfer-utils-resumabledownloadhandlerinterface-method-getfixedpartsize.md)
 
 `
     public
@@ -39,7 +39,7 @@ string
 
 int
 
-#### getResumeFilePath()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.ResumableDownloadHandlerInterface.html\#method_getResumeFilePath)
+#### getResumeFilePath()  [header link](class-aws-s3-s3transfer-utils-resumabledownloadhandlerinterface-method-getresumefilepath.md)
 
 `
     public
@@ -49,7 +49,7 @@ int
 
 string
 
-#### getTemporaryFilePath()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.ResumableDownloadHandlerInterface.html\#method_getTemporaryFilePath)
+#### getTemporaryFilePath()  [header link](class-aws-s3-s3transfer-utils-resumabledownloadhandlerinterface-method-gettemporaryfilepath.md)
 
 `
     public
@@ -65,12 +65,12 @@ string
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.ResumableDownloadHandlerInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.ResumableDownloadHandlerInterface.html#toc-methods)
+  - [Constants](class-aws-s3-s3transfer-utils-resumabledownloadhandlerinterface-toc-constants.md)
+  - [Methods](class-aws-s3-s3transfer-utils-resumabledownloadhandlerinterface-toc-methods.md)
 - Methods
-  - [getDestination()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.ResumableDownloadHandlerInterface.html#method_getDestination)
-  - [getFixedPartSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.ResumableDownloadHandlerInterface.html#method_getFixedPartSize)
-  - [getResumeFilePath()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.ResumableDownloadHandlerInterface.html#method_getResumeFilePath)
-  - [getTemporaryFilePath()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.ResumableDownloadHandlerInterface.html#method_getTemporaryFilePath)
+  - [getDestination()](class-aws-s3-s3transfer-utils-resumabledownloadhandlerinterface-method-getdestination.md)
+  - [getFixedPartSize()](class-aws-s3-s3transfer-utils-resumabledownloadhandlerinterface-method-getfixedpartsize.md)
+  - [getResumeFilePath()](class-aws-s3-s3transfer-utils-resumabledownloadhandlerinterface-method-getresumefilepath.md)
+  - [getTemporaryFilePath()](class-aws-s3-s3transfer-utils-resumabledownloadhandlerinterface-method-gettemporaryfilepath.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.ResumableDownloadHandlerInterface.html#top)
+[Back To Top](class-aws-s3-s3transfer-utils-resumabledownloadhandlerinterface-top.md)

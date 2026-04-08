@@ -4,15 +4,15 @@ Menu
 
 ## ComputeOptimizerAutomation
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.computeoptimizerautomation.html\#toc)
+### Table of Contents  [header link](namespace-aws-computeoptimizerautomation-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.computeoptimizerautomation.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-computeoptimizerautomation-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.computeoptimizerautomation.exception.html)
+[Exception](namespace-aws-computeoptimizerautomation-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.computeoptimizerautomation.html\#toc-classes)
+#### Classes  [header link](namespace-aws-computeoptimizerautomation-toc-classes.md)
 
-[ComputeOptimizerAutomationClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComputeOptimizerAutomation.ComputeOptimizerAutomationClient.html)This client is used to interact with the **Compute Optimizer Automation** service.
+[ComputeOptimizerAutomationClient](class-aws-computeoptimizerautomation-computeoptimizerautomationclient.md)This client is used to interact with the **Compute Optimizer Automation** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.computeoptimizerautomation.html#toc-classes)
+  - [Classes](namespace-aws-computeoptimizerautomation-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.computeoptimizerautomation.html#top)
+[Back To Top](namespace-aws-computeoptimizerautomation-top.md)

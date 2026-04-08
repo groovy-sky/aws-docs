@@ -4,15 +4,15 @@ Menu
 
 ## PinpointEmail
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pinpointemail.html\#toc)
+### Table of Contents  [header link](namespace-aws-pinpointemail-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pinpointemail.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-pinpointemail-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pinpointemail.exception.html)
+[Exception](namespace-aws-pinpointemail-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pinpointemail.html\#toc-classes)
+#### Classes  [header link](namespace-aws-pinpointemail-toc-classes.md)
 
-[PinpointEmailClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PinpointEmail.PinpointEmailClient.html)This client is used to interact with the **Amazon Pinpoint Email Service** service.
+[PinpointEmailClient](class-aws-pinpointemail-pinpointemailclient.md)This client is used to interact with the **Amazon Pinpoint Email Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pinpointemail.html#toc-classes)
+  - [Classes](namespace-aws-pinpointemail-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pinpointemail.html#top)
+[Back To Top](namespace-aws-pinpointemail-top.md)

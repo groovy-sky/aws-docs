@@ -4,15 +4,15 @@ Menu
 
 ## OAM
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.oam.html\#toc)
+### Table of Contents  [header link](namespace-aws-oam-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.oam.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-oam-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.oam.exception.html)
+[Exception](namespace-aws-oam-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.oam.html\#toc-classes)
+#### Classes  [header link](namespace-aws-oam-toc-classes.md)
 
-[OAMClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.OAM.OAMClient.html)This client is used to interact with the **CloudWatch Observability Access Manager** service.
+[OAMClient](class-aws-oam-oamclient.md)This client is used to interact with the **CloudWatch Observability Access Manager** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.oam.html#toc-classes)
+  - [Classes](namespace-aws-oam-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.oam.html#top)
+[Back To Top](namespace-aws-oam-top.md)

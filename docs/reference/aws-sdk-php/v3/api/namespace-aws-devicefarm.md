@@ -4,15 +4,15 @@ Menu
 
 ## DeviceFarm
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.devicefarm.html\#toc)
+### Table of Contents  [header link](namespace-aws-devicefarm-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.devicefarm.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-devicefarm-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.devicefarm.exception.html)
+[Exception](namespace-aws-devicefarm-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.devicefarm.html\#toc-classes)
+#### Classes  [header link](namespace-aws-devicefarm-toc-classes.md)
 
-[DeviceFarmClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DeviceFarm.DeviceFarmClient.html)This client is used to interact with the **Amazon DeviceFarm** service.
+[DeviceFarmClient](class-aws-devicefarm-devicefarmclient.md)This client is used to interact with the **Amazon DeviceFarm** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.devicefarm.html#toc-classes)
+  - [Classes](namespace-aws-devicefarm-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.devicefarm.html#top)
+[Back To Top](namespace-aws-devicefarm-top.md)

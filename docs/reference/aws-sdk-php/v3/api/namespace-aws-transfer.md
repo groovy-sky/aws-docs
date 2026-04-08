@@ -4,15 +4,15 @@ Menu
 
 ## Transfer
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.transfer.html\#toc)
+### Table of Contents  [header link](namespace-aws-transfer-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.transfer.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-transfer-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.transfer.exception.html)
+[Exception](namespace-aws-transfer-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.transfer.html\#toc-classes)
+#### Classes  [header link](namespace-aws-transfer-toc-classes.md)
 
-[TransferClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Transfer.TransferClient.html)This client is used to interact with the **AWS Transfer for SFTP** service.
+[TransferClient](class-aws-transfer-transferclient.md)This client is used to interact with the **AWS Transfer for SFTP** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.transfer.html#toc-classes)
+  - [Classes](namespace-aws-transfer-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.transfer.html#top)
+[Back To Top](namespace-aws-transfer-top.md)

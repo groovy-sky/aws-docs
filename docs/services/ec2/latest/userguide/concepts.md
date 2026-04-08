@@ -12,7 +12,7 @@ the instance type that you specify determines the hardware available to your ins
 Each instance type offers a different balance of compute, memory, network, and storage
 resources. For more information, see the [Amazon EC2 Instance Types Guide](../instancetypes/instance-types.md).
 
-![Each EC2 instance type provides a balance of compute, memory, network, and storage resources.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/instance-types.png)
+![Each EC2 instance type provides a balance of compute, memory, network, and storage resources.](../../../images/awsec2/latest/userguide/images/instance-types-png.md)
 
 ## Features of Amazon EC2
 

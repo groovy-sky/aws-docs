@@ -4,15 +4,15 @@ Menu
 
 ## PartnerCentralAccount
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.partnercentralaccount.html\#toc)
+### Table of Contents  [header link](namespace-aws-partnercentralaccount-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.partnercentralaccount.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-partnercentralaccount-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.partnercentralaccount.exception.html)
+[Exception](namespace-aws-partnercentralaccount-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.partnercentralaccount.html\#toc-classes)
+#### Classes  [header link](namespace-aws-partnercentralaccount-toc-classes.md)
 
-[PartnerCentralAccountClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralAccount.PartnerCentralAccountClient.html)This client is used to interact with the **Partner Central Account API** service.
+[PartnerCentralAccountClient](class-aws-partnercentralaccount-partnercentralaccountclient.md)This client is used to interact with the **Partner Central Account API** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.partnercentralaccount.html#toc-classes)
+  - [Classes](namespace-aws-partnercentralaccount-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.partnercentralaccount.html#top)
+[Back To Top](namespace-aws-partnercentralaccount-top.md)

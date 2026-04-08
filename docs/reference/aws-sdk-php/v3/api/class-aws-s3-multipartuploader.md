@@ -3,29 +3,29 @@ Menu
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
 
-## MultipartUploader     extends [AbstractUploader](class-aws-multipart-abstractuploader.md)   in package    - [Aws](package-aws.md)       Uses  [MultipartUploadingTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploadingTrait.html)
+## MultipartUploader     extends [AbstractUploader](class-aws-multipart-abstractuploader.md)   in package    - [Aws](package-aws.md)       Uses  [MultipartUploadingTrait](class-aws-s3-multipartuploadingtrait.md)
 
 Encapsulates the execution of a multipart upload to S3 or Glacier.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html\#toc)
+### Table of Contents  [header link](class-aws-s3-multipartuploader-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html\#toc-constants)
+#### Constants  [header link](class-aws-s3-multipartuploader-toc-constants.md)
 
-[PART\_MAX\_NUM](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html#constant_PART_MAX_NUM)
-= 10000 [PART\_MAX\_SIZE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html#constant_PART_MAX_SIZE)
-= 5368709120 [PART\_MIN\_SIZE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html#constant_PART_MIN_SIZE)
+[PART\_MAX\_NUM](class-aws-s3-multipartuploader-constant-part-max-num.md)
+= 10000 [PART\_MAX\_SIZE](class-aws-s3-multipartuploader-constant-part-max-size.md)
+= 5368709120 [PART\_MIN\_SIZE](class-aws-s3-multipartuploader-constant-part-min-size.md)
 = 5242880
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-multipartuploader-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html#method___construct)
-: mixed Creates a multipart upload for an S3 object.[getStateFromService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploadingTrait.html#method_getStateFromService)
+[\_\_construct()](class-aws-s3-multipartuploader-method-construct.md)
+: mixed Creates a multipart upload for an S3 object.[getStateFromService()](class-aws-s3-multipartuploadingtrait-method-getstatefromservice.md)
 : [UploadState](class-aws-multipart-uploadstate.md)Creates an UploadState object for a multipart upload by querying the
 service for the specified upload's information.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html\#constants)
+### Constants  [header link](class-aws-s3-multipartuploader-constants.md)
 
-#### PART\_MAX\_NUM  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html\#constant_PART_MAX_NUM)
+#### PART\_MAX\_NUM  [header link](class-aws-s3-multipartuploader-constant-part-max-num.md)
 
 `
     public
@@ -34,7 +34,7 @@ service for the specified upload's information.
     = 10000
 `
 
-#### PART\_MAX\_SIZE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html\#constant_PART_MAX_SIZE)
+#### PART\_MAX\_SIZE  [header link](class-aws-s3-multipartuploader-constant-part-max-size.md)
 
 `
     public
@@ -43,7 +43,7 @@ service for the specified upload's information.
     = 5368709120
 `
 
-#### PART\_MIN\_SIZE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html\#constant_PART_MIN_SIZE)
+#### PART\_MIN\_SIZE  [header link](class-aws-s3-multipartuploader-constant-part-min-size.md)
 
 `
     public
@@ -52,9 +52,9 @@ service for the specified upload's information.
     = 5242880
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html\#methods)
+### Methods  [header link](class-aws-s3-multipartuploader-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-multipartuploader-method-construct.md)
 
 Creates a multipart upload for an S3 object.
 
@@ -115,7 +115,7 @@ $config
 
 Configuration used to perform the upload.
 
-#### getStateFromService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploadingTrait.html\#method_getStateFromService)
+#### getStateFromService()  [header link](class-aws-s3-multipartuploadingtrait-method-getstatefromservice.md)
 
 Creates an UploadState object for a multipart upload by querying the
 service for the specified upload's information.
@@ -156,14 +156,14 @@ Upload ID for the multipart upload.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html#toc-methods)
+  - [Constants](class-aws-s3-multipartuploader-toc-constants.md)
+  - [Methods](class-aws-s3-multipartuploader-toc-methods.md)
 - Constants
-  - [PART\_MAX\_NUM](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html#constant_PART_MAX_NUM)
-  - [PART\_MAX\_SIZE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html#constant_PART_MAX_SIZE)
-  - [PART\_MIN\_SIZE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html#constant_PART_MIN_SIZE)
+  - [PART\_MAX\_NUM](class-aws-s3-multipartuploader-constant-part-max-num.md)
+  - [PART\_MAX\_SIZE](class-aws-s3-multipartuploader-constant-part-max-size.md)
+  - [PART\_MIN\_SIZE](class-aws-s3-multipartuploader-constant-part-min-size.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html#method___construct)
-  - [getStateFromService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploadingTrait.html#method_getStateFromService)
+  - [\_\_construct()](class-aws-s3-multipartuploader-method-construct.md)
+  - [getStateFromService()](class-aws-s3-multipartuploadingtrait-method-getstatefromservice.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html#top)
+[Back To Top](class-aws-s3-multipartuploader-top.md)

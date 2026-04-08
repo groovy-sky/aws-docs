@@ -1,7 +1,7 @@
 # PlacementConstraint
 
 An object representing a constraint on task placement. For more information, see
-[Task placement constraints](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-placement-constraints.html) in the _Amazon_
+[Task placement constraints](../../../../services/amazonecs/latest/developerguide/task-placement-constraints.md) in the _Amazon_
 _Elastic Container Service Developer Guide_.
 
 ###### Note
@@ -15,7 +15,7 @@ supported.
 
 A cluster query language expression to apply to the constraint. The expression can
 have a maximum length of 2000 characters. You can't specify an expression if the
-constraint type is `distinctInstance`. For more information, see [Cluster query language](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-language.html) in the _Amazon Elastic_
+constraint type is `distinctInstance`. For more information, see [Cluster query language](../../../../services/amazonecs/latest/developerguide/cluster-query-language.md) in the _Amazon Elastic_
 _Container Service Developer Guide_.
 
 Type: String
@@ -39,13 +39,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/PlacementConstraint)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/placementconstraint.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/PlacementConstraint)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/placementconstraint.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/PlacementConstraint)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/placementconstraint.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 NetworkInterfaceCountRequest
 

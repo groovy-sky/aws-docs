@@ -4,16 +4,16 @@ Menu
 
 ## ResponseContainerInterface     in    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResponseContainerInterface.html\#toc)
+### Table of Contents  [header link](class-aws-responsecontainerinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResponseContainerInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-responsecontainerinterface-toc-methods.md)
 
-[getResponse()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResponseContainerInterface.html#method_getResponse)
-: [ResponseInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html) \|null Get the received HTTP response if any.
+[getResponse()](class-aws-responsecontainerinterface-method-getresponse.md)
+: [ResponseInterface](class-psr-http-message-responseinterface.md) \|null Get the received HTTP response if any.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResponseContainerInterface.html\#methods)
+### Methods  [header link](class-aws-responsecontainerinterface-methods.md)
 
-#### getResponse()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResponseContainerInterface.html\#method_getResponse)
+#### getResponse()  [header link](class-aws-responsecontainerinterface-method-getresponse.md)
 
 Get the received HTTP response if any.
 
@@ -23,7 +23,7 @@ Get the received HTTP response if any.
 
 ##### Return values
 
-[ResponseInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html) \|null
+[ResponseInterface](class-psr-http-message-responseinterface.md) \|null
 <\-\- modeled\_exceptions -->
 
 ×
@@ -31,9 +31,9 @@ Get the received HTTP response if any.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResponseContainerInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResponseContainerInterface.html#toc-methods)
+  - [Constants](class-aws-responsecontainerinterface-toc-constants.md)
+  - [Methods](class-aws-responsecontainerinterface-toc-methods.md)
 - Methods
-  - [getResponse()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResponseContainerInterface.html#method_getResponse)
+  - [getResponse()](class-aws-responsecontainerinterface-method-getresponse.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResponseContainerInterface.html#top)
+[Back To Top](class-aws-responsecontainerinterface-top.md)

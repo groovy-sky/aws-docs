@@ -210,7 +210,7 @@ A list of extensions that were processed as part of the deployment. The extensio
 were previously associated to the configuration profile, environment, or the application
 when `StartDeployment` was called.
 
-Type: Array of [AppliedExtension](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_AppliedExtension.html) objects
+Type: Array of [AppliedExtension](api-appliedextension.md) objects
 
 **[CompletedAt](#API_StartDeployment_ResponseSyntax)**
 
@@ -293,7 +293,7 @@ Pattern: `[a-z0-9]{4,7}`
 A list containing all events related to a deployment. The most recent events are
 displayed first.
 
-Type: Array of [DeploymentEvent](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_DeploymentEvent.html) objects
+Type: Array of [DeploymentEvent](api-deploymentevent.md) objects
 
 **[FinalBakeTimeInMinutes](#API_StartDeployment_ResponseSyntax)**
 
@@ -377,7 +377,7 @@ Pattern: `.*[^0-9].*`
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **BadRequestException**
 
@@ -469,27 +469,27 @@ Content-Length: 101
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appconfig-2019-10-09/StartDeployment)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/appconfig-2019-10-09/startdeployment.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appconfig-2019-10-09/StartDeployment)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appconfig-2019-10-09/startdeployment.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appconfig-2019-10-09/StartDeployment)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appconfig-2019-10-09/startdeployment.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appconfig-2019-10-09/StartDeployment)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/appconfig-2019-10-09/startdeployment.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appconfig-2019-10-09/StartDeployment)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appconfig-2019-10-09/startdeployment.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appconfig-2019-10-09/StartDeployment)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appconfig-2019-10-09/startdeployment.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appconfig-2019-10-09/StartDeployment)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appconfig-2019-10-09/startdeployment.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appconfig-2019-10-09/StartDeployment)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appconfig-2019-10-09/startdeployment.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/appconfig-2019-10-09/StartDeployment)
+- [AWS SDK for Python](../../../../services/goto/boto3/appconfig-2019-10-09/startdeployment.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appconfig-2019-10-09/StartDeployment)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appconfig-2019-10-09/startdeployment.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ListTagsForResource
 

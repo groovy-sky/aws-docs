@@ -17,46 +17,46 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2013-01-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html)
+- [**2013-01-01**](api-cloudsearch-2013-01-01.md)
 
-  - [BuildSuggesters](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#buildsuggesters)
-  - [CreateDomain](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#createdomain)
-  - [DefineAnalysisScheme](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#defineanalysisscheme)
-  - [DefineExpression](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#defineexpression)
-  - [DefineIndexField](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#defineindexfield)
-  - [DefineSuggester](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#definesuggester)
-  - [DeleteAnalysisScheme](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#deleteanalysisscheme)
-  - [DeleteDomain](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#deletedomain)
-  - [DeleteExpression](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#deleteexpression)
-  - [DeleteIndexField](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#deleteindexfield)
-  - [DeleteSuggester](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#deletesuggester)
-  - [DescribeAnalysisSchemes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#describeanalysisschemes)
-  - [DescribeAvailabilityOptions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#describeavailabilityoptions)
-  - [DescribeDomainEndpointOptions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#describedomainendpointoptions)
-  - [DescribeDomains](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#describedomains)
-  - [DescribeExpressions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#describeexpressions)
-  - [DescribeIndexFields](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#describeindexfields)
-  - [DescribeScalingParameters](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#describescalingparameters)
-  - [DescribeServiceAccessPolicies](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#describeserviceaccesspolicies)
-  - [DescribeSuggesters](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#describesuggesters)
-  - [IndexDocuments](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#indexdocuments)
-  - [ListDomainNames](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#listdomainnames)
-  - [UpdateAvailabilityOptions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#updateavailabilityoptions)
-  - [UpdateDomainEndpointOptions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#updatedomainendpointoptions)
-  - [UpdateScalingParameters](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#updatescalingparameters)
-  - [UpdateServiceAccessPolicies](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudsearch-2013-01-01.html#updateserviceaccesspolicies)
+  - [BuildSuggesters](api-cloudsearch-2013-01-01-buildsuggesters.md)
+  - [CreateDomain](api-cloudsearch-2013-01-01-createdomain.md)
+  - [DefineAnalysisScheme](api-cloudsearch-2013-01-01-defineanalysisscheme.md)
+  - [DefineExpression](api-cloudsearch-2013-01-01-defineexpression.md)
+  - [DefineIndexField](api-cloudsearch-2013-01-01-defineindexfield.md)
+  - [DefineSuggester](api-cloudsearch-2013-01-01-definesuggester.md)
+  - [DeleteAnalysisScheme](api-cloudsearch-2013-01-01-deleteanalysisscheme.md)
+  - [DeleteDomain](api-cloudsearch-2013-01-01-deletedomain.md)
+  - [DeleteExpression](api-cloudsearch-2013-01-01-deleteexpression.md)
+  - [DeleteIndexField](api-cloudsearch-2013-01-01-deleteindexfield.md)
+  - [DeleteSuggester](api-cloudsearch-2013-01-01-deletesuggester.md)
+  - [DescribeAnalysisSchemes](api-cloudsearch-2013-01-01-describeanalysisschemes.md)
+  - [DescribeAvailabilityOptions](api-cloudsearch-2013-01-01-describeavailabilityoptions.md)
+  - [DescribeDomainEndpointOptions](api-cloudsearch-2013-01-01-describedomainendpointoptions.md)
+  - [DescribeDomains](api-cloudsearch-2013-01-01-describedomains.md)
+  - [DescribeExpressions](api-cloudsearch-2013-01-01-describeexpressions.md)
+  - [DescribeIndexFields](api-cloudsearch-2013-01-01-describeindexfields.md)
+  - [DescribeScalingParameters](api-cloudsearch-2013-01-01-describescalingparameters.md)
+  - [DescribeServiceAccessPolicies](api-cloudsearch-2013-01-01-describeserviceaccesspolicies.md)
+  - [DescribeSuggesters](api-cloudsearch-2013-01-01-describesuggesters.md)
+  - [IndexDocuments](api-cloudsearch-2013-01-01-indexdocuments.md)
+  - [ListDomainNames](api-cloudsearch-2013-01-01-listdomainnames.md)
+  - [UpdateAvailabilityOptions](api-cloudsearch-2013-01-01-updateavailabilityoptions.md)
+  - [UpdateDomainEndpointOptions](api-cloudsearch-2013-01-01-updatedomainendpointoptions.md)
+  - [UpdateScalingParameters](api-cloudsearch-2013-01-01-updatescalingparameters.md)
+  - [UpdateServiceAccessPolicies](api-cloudsearch-2013-01-01-updateserviceaccesspolicies.md)
 
 ## Examples
 
 ### Legacy Code Examples With Guidance
 
-The following examples demonstrate how to use this service with the AWS SDK for PHP. These code examples are available in the [AWS SDK for PHP Developer Guide](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/service_cloudsearch-custom-requests.html).
+The following examples demonstrate how to use this service with the AWS SDK for PHP. These code examples are available in the [AWS SDK for PHP Developer Guide](../../../sdk-for-php/v3/developer-guide/service-cloudsearch-custom-requests.md).
 
-- [Signing custom Amazon CloudSearch domain requests](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/service_cloudsearch-custom-requests.html)
+- [Signing custom Amazon CloudSearch domain requests](../../../sdk-for-php/v3/developer-guide/service-cloudsearch-custom-requests.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearch.CloudSearchClient.html\#toc)
+### Table of Contents  [header link](class-aws-cloudsearch-cloudsearchclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearch.CloudSearchClient.html\#toc-methods)
+#### Methods  [header link](class-aws-cloudsearch-cloudsearchclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -87,7 +87,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearch.CloudSearchClient.html\#methods)
+### Methods  [header link](class-aws-cloudsearch-cloudsearchclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -554,7 +554,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearch.CloudSearchClient.html#toc-methods)
+  - [Methods](class-aws-cloudsearch-cloudsearchclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -581,4 +581,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearch.CloudSearchClient.html#top)
+[Back To Top](class-aws-cloudsearch-cloudsearchclient-top.md)

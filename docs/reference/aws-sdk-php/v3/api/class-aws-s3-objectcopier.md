@@ -8,30 +8,30 @@ Menu
 Copies objects from one S3 location to another, utilizing a multipart copy
 when appropriate.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html\#toc)
+### Table of Contents  [header link](class-aws-s3-objectcopier-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-s3-objectcopier-toc-interfaces.md)
 
 [PromisorInterface](class-guzzlehttp-promise-promisorinterface.md)Interface used with classes that return a promise.
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html\#toc-constants)
+#### Constants  [header link](class-aws-s3-objectcopier-toc-constants.md)
 
-[DEFAULT\_MULTIPART\_THRESHOLD](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html#constant_DEFAULT_MULTIPART_THRESHOLD)
+[DEFAULT\_MULTIPART\_THRESHOLD](class-aws-s3-objectcopier-constant-default-multipart-threshold.md)
 = \\Aws\\S3\\MultipartUploader::PART\_MAX\_SIZE
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-objectcopier-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html#method___construct)
-: mixed [copy()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html#method_copy)
+[\_\_construct()](class-aws-s3-objectcopier-method-construct.md)
+: mixed [copy()](class-aws-s3-objectcopier-method-copy.md)
 : [Result](class-aws-result.md)Perform the configured copy synchronously. Returns the result of the
-CompleteMultipartUpload or CopyObject operation.[promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html#method_promise)
-: [Coroutine](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html)Perform the configured copy asynchronously. Returns a promise that is
+CompleteMultipartUpload or CopyObject operation.[promise()](class-aws-s3-objectcopier-method-promise.md)
+: [Coroutine](class-guzzlehttp-promise-coroutine.md)Perform the configured copy asynchronously. Returns a promise that is
 fulfilled with the result of the CompleteMultipartUpload or CopyObject
 operation or rejected with an exception.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html\#constants)
+### Constants  [header link](class-aws-s3-objectcopier-constants.md)
 
-#### DEFAULT\_MULTIPART\_THRESHOLD  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html\#constant_DEFAULT_MULTIPART_THRESHOLD)
+#### DEFAULT\_MULTIPART\_THRESHOLD  [header link](class-aws-s3-objectcopier-constant-default-multipart-threshold.md)
 
 `
     public
@@ -40,9 +40,9 @@ operation or rejected with an exception.
     = \Aws\S3\MultipartUploader::PART_MAX_SIZE
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html\#methods)
+### Methods  [header link](class-aws-s3-objectcopier-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-objectcopier-method-construct.md)
 
 `
     public
@@ -89,11 +89,11 @@ copy process. Options passed in
 through 'params' are added to
 the sub commands.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html\#method___construct\#tags)
+##### Tags  [header link](class-aws-s3-objectcopier-method-construct-tags.md)
 
 throwsInvalidArgumentException
 
-#### copy()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html\#method_copy)
+#### copy()  [header link](class-aws-s3-objectcopier-method-copy.md)
 
 Perform the configured copy synchronously. Returns the result of the
 CompleteMultipartUpload or CopyObject operation.
@@ -102,7 +102,7 @@ CompleteMultipartUpload or CopyObject operation.
     public
                     copy() : Result`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html\#method_copy\#tags)
+##### Tags  [header link](class-aws-s3-objectcopier-method-copy-tags.md)
 
 throws[S3Exception](class-aws-s3-exception-s3exception.md)throws[MultipartUploadException](class-aws-exception-multipartuploadexception.md)
 
@@ -110,7 +110,7 @@ throws[S3Exception](class-aws-s3-exception-s3exception.md)throws[MultipartUpload
 
 [Result](class-aws-result.md)
 
-#### promise()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html\#method_promise)
+#### promise()  [header link](class-aws-s3-objectcopier-method-promise.md)
 
 Perform the configured copy asynchronously. Returns a promise that is
 fulfilled with the result of the CompleteMultipartUpload or CopyObject
@@ -122,7 +122,7 @@ operation or rejected with an exception.
 
 ##### Return values
 
-[Coroutine](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html)
+[Coroutine](class-guzzlehttp-promise-coroutine.md)
 <\-\- modeled\_exceptions -->
 
 ×
@@ -130,13 +130,13 @@ operation or rejected with an exception.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html#toc-methods)
+  - [Constants](class-aws-s3-objectcopier-toc-constants.md)
+  - [Methods](class-aws-s3-objectcopier-toc-methods.md)
 - Constants
-  - [DEFAULT\_MULTIPART\_THRESHOLD](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html#constant_DEFAULT_MULTIPART_THRESHOLD)
+  - [DEFAULT\_MULTIPART\_THRESHOLD](class-aws-s3-objectcopier-constant-default-multipart-threshold.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html#method___construct)
-  - [copy()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html#method_copy)
-  - [promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html#method_promise)
+  - [\_\_construct()](class-aws-s3-objectcopier-method-construct.md)
+  - [copy()](class-aws-s3-objectcopier-method-copy.md)
+  - [promise()](class-aws-s3-objectcopier-method-promise.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html#top)
+[Back To Top](class-aws-s3-objectcopier-top.md)

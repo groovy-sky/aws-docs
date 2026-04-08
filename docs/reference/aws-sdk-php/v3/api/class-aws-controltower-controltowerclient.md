@@ -17,40 +17,40 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-05-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html)
+- [**2018-05-10**](api-controltower-2018-05-10.md)
 
-  - [CreateLandingZone](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#createlandingzone)
-  - [DeleteLandingZone](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#deletelandingzone)
-  - [DisableBaseline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#disablebaseline)
-  - [DisableControl](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#disablecontrol)
-  - [EnableBaseline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#enablebaseline)
-  - [EnableControl](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#enablecontrol)
-  - [GetBaseline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#getbaseline)
-  - [GetBaselineOperation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#getbaselineoperation)
-  - [GetControlOperation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#getcontroloperation)
-  - [GetEnabledBaseline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#getenabledbaseline)
-  - [GetEnabledControl](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#getenabledcontrol)
-  - [GetLandingZone](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#getlandingzone)
-  - [GetLandingZoneOperation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#getlandingzoneoperation)
-  - [ListBaselines](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#listbaselines)
-  - [ListControlOperations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#listcontroloperations)
-  - [ListEnabledBaselines](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#listenabledbaselines)
-  - [ListEnabledControls](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#listenabledcontrols)
-  - [ListLandingZoneOperations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#listlandingzoneoperations)
-  - [ListLandingZones](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#listlandingzones)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#listtagsforresource)
-  - [ResetEnabledBaseline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#resetenabledbaseline)
-  - [ResetEnabledControl](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#resetenabledcontrol)
-  - [ResetLandingZone](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#resetlandingzone)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#untagresource)
-  - [UpdateEnabledBaseline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#updateenabledbaseline)
-  - [UpdateEnabledControl](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#updateenabledcontrol)
-  - [UpdateLandingZone](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-controltower-2018-05-10.html#updatelandingzone)
+  - [CreateLandingZone](api-controltower-2018-05-10-createlandingzone.md)
+  - [DeleteLandingZone](api-controltower-2018-05-10-deletelandingzone.md)
+  - [DisableBaseline](api-controltower-2018-05-10-disablebaseline.md)
+  - [DisableControl](api-controltower-2018-05-10-disablecontrol.md)
+  - [EnableBaseline](api-controltower-2018-05-10-enablebaseline.md)
+  - [EnableControl](api-controltower-2018-05-10-enablecontrol.md)
+  - [GetBaseline](api-controltower-2018-05-10-getbaseline.md)
+  - [GetBaselineOperation](api-controltower-2018-05-10-getbaselineoperation.md)
+  - [GetControlOperation](api-controltower-2018-05-10-getcontroloperation.md)
+  - [GetEnabledBaseline](api-controltower-2018-05-10-getenabledbaseline.md)
+  - [GetEnabledControl](api-controltower-2018-05-10-getenabledcontrol.md)
+  - [GetLandingZone](api-controltower-2018-05-10-getlandingzone.md)
+  - [GetLandingZoneOperation](api-controltower-2018-05-10-getlandingzoneoperation.md)
+  - [ListBaselines](api-controltower-2018-05-10-listbaselines.md)
+  - [ListControlOperations](api-controltower-2018-05-10-listcontroloperations.md)
+  - [ListEnabledBaselines](api-controltower-2018-05-10-listenabledbaselines.md)
+  - [ListEnabledControls](api-controltower-2018-05-10-listenabledcontrols.md)
+  - [ListLandingZoneOperations](api-controltower-2018-05-10-listlandingzoneoperations.md)
+  - [ListLandingZones](api-controltower-2018-05-10-listlandingzones.md)
+  - [ListTagsForResource](api-controltower-2018-05-10-listtagsforresource.md)
+  - [ResetEnabledBaseline](api-controltower-2018-05-10-resetenabledbaseline.md)
+  - [ResetEnabledControl](api-controltower-2018-05-10-resetenabledcontrol.md)
+  - [ResetLandingZone](api-controltower-2018-05-10-resetlandingzone.md)
+  - [TagResource](api-controltower-2018-05-10-tagresource.md)
+  - [UntagResource](api-controltower-2018-05-10-untagresource.md)
+  - [UpdateEnabledBaseline](api-controltower-2018-05-10-updateenabledbaseline.md)
+  - [UpdateEnabledControl](api-controltower-2018-05-10-updateenabledcontrol.md)
+  - [UpdateLandingZone](api-controltower-2018-05-10-updatelandingzone.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ControlTower.ControlTowerClient.html\#toc)
+### Table of Contents  [header link](class-aws-controltower-controltowerclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ControlTower.ControlTowerClient.html\#toc-methods)
+#### Methods  [header link](class-aws-controltower-controltowerclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -81,7 +81,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ControlTower.ControlTowerClient.html\#methods)
+### Methods  [header link](class-aws-controltower-controltowerclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -548,7 +548,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ControlTower.ControlTowerClient.html#toc-methods)
+  - [Methods](class-aws-controltower-controltowerclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -575,4 +575,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ControlTower.ControlTowerClient.html#top)
+[Back To Top](class-aws-controltower-controltowerclient-top.md)

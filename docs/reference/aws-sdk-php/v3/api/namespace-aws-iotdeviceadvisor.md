@@ -4,15 +4,15 @@ Menu
 
 ## IoTDeviceAdvisor
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotdeviceadvisor.html\#toc)
+### Table of Contents  [header link](namespace-aws-iotdeviceadvisor-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotdeviceadvisor.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-iotdeviceadvisor-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotdeviceadvisor.exception.html)
+[Exception](namespace-aws-iotdeviceadvisor-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotdeviceadvisor.html\#toc-classes)
+#### Classes  [header link](namespace-aws-iotdeviceadvisor-toc-classes.md)
 
-[IoTDeviceAdvisorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTDeviceAdvisor.IoTDeviceAdvisorClient.html)This client is used to interact with the **AWS IoT Core Device Advisor** service.
+[IoTDeviceAdvisorClient](class-aws-iotdeviceadvisor-iotdeviceadvisorclient.md)This client is used to interact with the **AWS IoT Core Device Advisor** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotdeviceadvisor.html#toc-classes)
+  - [Classes](namespace-aws-iotdeviceadvisor-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotdeviceadvisor.html#top)
+[Back To Top](namespace-aws-iotdeviceadvisor-top.md)

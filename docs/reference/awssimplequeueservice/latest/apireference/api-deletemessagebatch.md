@@ -34,7 +34,7 @@ The request accepts the following data in JSON format.
 
 Lists the receipt handles for the messages to be deleted.
 
-Type: Array of [DeleteMessageBatchRequestEntry](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_DeleteMessageBatchRequestEntry.html) objects
+Type: Array of [DeleteMessageBatchRequestEntry](api-deletemessagebatchrequestentry.md) objects
 
 Required: Yes
 
@@ -81,7 +81,7 @@ A list of `
                      BatchResultErrorEntry
                   ` items.
 
-Type: Array of [BatchResultErrorEntry](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_BatchResultErrorEntry.html) objects
+Type: Array of [BatchResultErrorEntry](api-batchresulterrorentry.md) objects
 
 **[Successful](#API_DeleteMessageBatch_ResponseSyntax)**
 
@@ -89,7 +89,7 @@ A list of `
                      DeleteMessageBatchResultEntry
                   ` items.
 
-Type: Array of [DeleteMessageBatchResultEntry](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_DeleteMessageBatchResultEntry.html) objects
+Type: Array of [DeleteMessageBatchResultEntry](api-deletemessagebatchresultentry.md) objects
 
 ## Errors
 
@@ -149,7 +149,7 @@ HTTP Status Code: 400
 **TooManyEntriesInBatchRequest**
 
 The batch request contains more entries than permissible. For Amazon SQS, the
-maximum number of entries you can include in a single [SendMessageBatch](api-sendmessagebatch.md), [DeleteMessageBatch](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_DeleteMessageBatch.html), or [ChangeMessageVisibilityBatch](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ChangeMessageVisibilityBatch.html) request is 10.
+maximum number of entries you can include in a single [SendMessageBatch](api-sendmessagebatch.md), [DeleteMessageBatch](api-deletemessagebatch.md), or [ChangeMessageVisibilityBatch](api-changemessagevisibilitybatch.md) request is 10.
 
 HTTP Status Code: 400
 
@@ -163,7 +163,7 @@ HTTP Status Code: 400
 
 The following examples show how a `DeleteMessageBatch` request deletes
 two messages. You must URL-encode the entire URL. However, in this example only the message body is URL-encoded to make the example easier to read. The structure of `AUTHPARAMS` depends on the signature of the API request.
-For more information, see [Examples of Signed Signature Version 4 Requests](https://docs.aws.amazon.com/general/latest/gr/sigv4-signed-request-examples.html) in the _AWS General Reference_.
+For more information, see [Examples of Signed Signature Version 4 Requests](../../../../general/general/latest/gr/sigv4-signed-request-examples.md) in the _AWS General Reference_.
 
 ### Example
 
@@ -267,27 +267,27 @@ HTTP/1.1 200 OK
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/sqs-2012-11-05/DeleteMessageBatch)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/sqs-2012-11-05/deletemessagebatch.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/sqs-2012-11-05/DeleteMessageBatch)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/sqs-2012-11-05/deletemessagebatch.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/sqs-2012-11-05/DeleteMessageBatch)
+- [AWS SDK for C++](../../../goto/sdkforcpp/sqs-2012-11-05/deletemessagebatch.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/sqs-2012-11-05/DeleteMessageBatch)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/sqs-2012-11-05/deletemessagebatch.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sqs-2012-11-05/DeleteMessageBatch)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/sqs-2012-11-05/deletemessagebatch.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/sqs-2012-11-05/DeleteMessageBatch)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/sqs-2012-11-05/deletemessagebatch.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/sqs-2012-11-05/DeleteMessageBatch)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/sqs-2012-11-05/deletemessagebatch.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/sqs-2012-11-05/DeleteMessageBatch)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/sqs-2012-11-05/deletemessagebatch.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/sqs-2012-11-05/DeleteMessageBatch)
+- [AWS SDK for Python](../../../../services/goto/boto3/sqs-2012-11-05/deletemessagebatch.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sqs-2012-11-05/DeleteMessageBatch)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/sqs-2012-11-05/deletemessagebatch.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DeleteMessage
 

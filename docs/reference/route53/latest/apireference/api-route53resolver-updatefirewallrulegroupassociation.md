@@ -1,6 +1,6 @@
 # UpdateFirewallRuleGroupAssociation
 
-Changes the association of a [FirewallRuleGroup](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_FirewallRuleGroup.html) with a VPC. The association enables DNS filtering for the VPC.
+Changes the association of a [FirewallRuleGroup](api-route53resolver-firewallrulegroup.md) with a VPC. The association enables DNS filtering for the VPC.
 
 ## Request Syntax
 
@@ -22,7 +22,7 @@ The request accepts the following data in JSON format.
 
 **[FirewallRuleGroupAssociationId](#API_route53resolver_UpdateFirewallRuleGroupAssociation_RequestSyntax)**
 
-The identifier of the [FirewallRuleGroupAssociation](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_FirewallRuleGroupAssociation.html).
+The identifier of the [FirewallRuleGroupAssociation](api-route53resolver-firewallrulegroupassociation.md).
 
 Type: String
 
@@ -99,7 +99,7 @@ The following data is returned in JSON format by the service.
 
 The association that you just updated.
 
-Type: [FirewallRuleGroupAssociation](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_FirewallRuleGroupAssociation.html) object
+Type: [FirewallRuleGroupAssociation](api-route53resolver-firewallrulegroupassociation.md) object
 
 ## Errors
 
@@ -155,27 +155,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/route53resolver-2018-04-01/UpdateFirewallRuleGroupAssociation)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53resolver-2018-04-01/updatefirewallrulegroupassociation.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/route53resolver-2018-04-01/UpdateFirewallRuleGroupAssociation)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53resolver-2018-04-01/updatefirewallrulegroupassociation.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53resolver-2018-04-01/UpdateFirewallRuleGroupAssociation)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53resolver-2018-04-01/updatefirewallrulegroupassociation.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/route53resolver-2018-04-01/UpdateFirewallRuleGroupAssociation)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53resolver-2018-04-01/updatefirewallrulegroupassociation.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53resolver-2018-04-01/UpdateFirewallRuleGroupAssociation)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53resolver-2018-04-01/updatefirewallrulegroupassociation.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/route53resolver-2018-04-01/UpdateFirewallRuleGroupAssociation)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53resolver-2018-04-01/updatefirewallrulegroupassociation.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/route53resolver-2018-04-01/UpdateFirewallRuleGroupAssociation)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53resolver-2018-04-01/updatefirewallrulegroupassociation.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/route53resolver-2018-04-01/UpdateFirewallRuleGroupAssociation)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53resolver-2018-04-01/updatefirewallrulegroupassociation.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/route53resolver-2018-04-01/UpdateFirewallRuleGroupAssociation)
+- [AWS SDK for Python](../../../../services/goto/boto3/route53resolver-2018-04-01/updatefirewallrulegroupassociation.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53resolver-2018-04-01/UpdateFirewallRuleGroupAssociation)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53resolver-2018-04-01/updatefirewallrulegroupassociation.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 UpdateFirewallRule
 

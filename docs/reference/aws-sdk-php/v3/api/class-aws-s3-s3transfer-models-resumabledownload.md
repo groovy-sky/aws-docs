@@ -2,8 +2,8 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
-- [Models](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.models.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
+- [Models](namespace-aws-s3-s3transfer-models.md)
 
 ## ResumableDownload     extends [AbstractResumableTransfer](class-aws-s3-s3transfer-models-abstractresumabletransfer.md)   in package    - [Aws](package-aws.md)
 
@@ -13,38 +13,38 @@ Represents the state of a resumable multipart download.
 
 This class can be serialized to/from JSON to persist download progress.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-models-resumabledownload-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-models-resumabledownload-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method___construct)
+[\_\_construct()](class-aws-s3-s3transfer-models-resumabledownload-method-construct.md)
 : mixed [deleteResumeFile()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_deleteResumeFile)
-: void [fromFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_fromFile)
-: self Load a resumable state from a file.[fromJson()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_fromJson)
+: void [fromFile()](class-aws-s3-s3transfer-models-resumabledownload-method-fromfile.md)
+: self Load a resumable state from a file.[fromJson()](class-aws-s3-s3transfer-models-resumabledownload-method-fromjson.md)
 : self Deserialize a resumable download state from JSON format.[getBucket()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getBucket)
 : string [getConfig()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getConfig)
 : array<string\|int, mixed> [getCurrentSnapshot()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getCurrentSnapshot)
-: array<string\|int, mixed> [getDestination()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_getDestination)
-: string [getETag()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_getETag)
-: string [getFixedPartSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_getFixedPartSize)
-: int [getInitialRequestResult()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_getInitialRequestResult)
+: array<string\|int, mixed> [getDestination()](class-aws-s3-s3transfer-models-resumabledownload-method-getdestination.md)
+: string [getETag()](class-aws-s3-s3transfer-models-resumabledownload-method-getetag.md)
+: string [getFixedPartSize()](class-aws-s3-s3transfer-models-resumabledownload-method-getfixedpartsize.md)
+: int [getInitialRequestResult()](class-aws-s3-s3transfer-models-resumabledownload-method-getinitialrequestresult.md)
 : array<string\|int, mixed> [getKey()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getKey)
-: string [getObjectSizeInBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_getObjectSizeInBytes)
-: int [getPartsCompleted()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_getPartsCompleted)
+: string [getObjectSizeInBytes()](class-aws-s3-s3transfer-models-resumabledownload-method-getobjectsizeinbytes.md)
+: int [getPartsCompleted()](class-aws-s3-s3transfer-models-resumabledownload-method-getpartscompleted.md)
 : array<string\|int, mixed> [getRequestArgs()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getRequestArgs)
 : array<string\|int, mixed> [getResumeFilePath()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getResumeFilePath)
-: string [getTemporaryFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_getTemporaryFile)
-: string\|null [getTotalNumberOfParts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_getTotalNumberOfParts)
+: string [getTemporaryFile()](class-aws-s3-s3transfer-models-resumabledownload-method-gettemporaryfile.md)
+: string\|null [getTotalNumberOfParts()](class-aws-s3-s3transfer-models-resumabledownload-method-gettotalnumberofparts.md)
 : int [isResumeFile()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_isResumeFile)
-: bool Check if a file path is a valid resume file.[markPartCompleted()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_markPartCompleted)
+: bool Check if a file path is a valid resume file.[markPartCompleted()](class-aws-s3-s3transfer-models-resumabledownload-method-markpartcompleted.md)
 : void Mark a part as completed.[toFile()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_toFile)
-: void Save the resumable state to a file.[toJson()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_toJson)
+: void Save the resumable state to a file.[toJson()](class-aws-s3-s3transfer-models-resumabledownload-method-tojson.md)
 : string Serialize the resumable download state to JSON format.[updateCurrentSnapshot()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_updateCurrentSnapshot)
 : void Update the current snapshot.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-models-resumabledownload-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3transfer-models-resumabledownload-method-construct.md)
 
 `
     public
@@ -120,7 +120,7 @@ $filePath
 : string\|null
 = null
 
-#### fromFile()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html\#method_fromFile)
+#### fromFile()  [header link](class-aws-s3-s3transfer-models-resumabledownload-method-fromfile.md)
 
 Load a resumable state from a file.
 
@@ -137,7 +137,7 @@ $filePath
 
 self
 
-#### fromJson()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html\#method_fromJson)
+#### fromJson()  [header link](class-aws-s3-s3transfer-models-resumabledownload-method-fromjson.md)
 
 Deserialize a resumable download state from JSON format.
 
@@ -152,7 +152,7 @@ $json
 
 JSON-encoded state
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html\#method_fromJson\#tags)
+##### Tags  [header link](class-aws-s3-s3transfer-models-resumabledownload-method-fromjson-tags.md)
 
 throws[S3TransferException](class-aws-s3-s3transfer-exception-s3transferexception.md)
 
@@ -192,7 +192,7 @@ array<string\|int, mixed>
 
 array<string\|int, mixed>
 
-#### getDestination()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html\#method_getDestination)
+#### getDestination()  [header link](class-aws-s3-s3transfer-models-resumabledownload-method-getdestination.md)
 
 `
     public
@@ -202,7 +202,7 @@ array<string\|int, mixed>
 
 string
 
-#### getETag()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html\#method_getETag)
+#### getETag()  [header link](class-aws-s3-s3transfer-models-resumabledownload-method-getetag.md)
 
 `
     public
@@ -212,7 +212,7 @@ string
 
 string
 
-#### getFixedPartSize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html\#method_getFixedPartSize)
+#### getFixedPartSize()  [header link](class-aws-s3-s3transfer-models-resumabledownload-method-getfixedpartsize.md)
 
 `
     public
@@ -222,7 +222,7 @@ string
 
 int
 
-#### getInitialRequestResult()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html\#method_getInitialRequestResult)
+#### getInitialRequestResult()  [header link](class-aws-s3-s3transfer-models-resumabledownload-method-getinitialrequestresult.md)
 
 `
     public
@@ -242,7 +242,7 @@ array<string\|int, mixed>
 
 string
 
-#### getObjectSizeInBytes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html\#method_getObjectSizeInBytes)
+#### getObjectSizeInBytes()  [header link](class-aws-s3-s3transfer-models-resumabledownload-method-getobjectsizeinbytes.md)
 
 `
     public
@@ -252,7 +252,7 @@ string
 
 int
 
-#### getPartsCompleted()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html\#method_getPartsCompleted)
+#### getPartsCompleted()  [header link](class-aws-s3-s3transfer-models-resumabledownload-method-getpartscompleted.md)
 
 `
     public
@@ -282,7 +282,7 @@ array<string\|int, mixed>
 
 string
 
-#### getTemporaryFile()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html\#method_getTemporaryFile)
+#### getTemporaryFile()  [header link](class-aws-s3-s3transfer-models-resumabledownload-method-gettemporaryfile.md)
 
 `
     public
@@ -292,7 +292,7 @@ string
 
 string\|null
 
-#### getTotalNumberOfParts()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html\#method_getTotalNumberOfParts)
+#### getTotalNumberOfParts()  [header link](class-aws-s3-s3transfer-models-resumabledownload-method-gettotalnumberofparts.md)
 
 `
     public
@@ -319,7 +319,7 @@ $filePath
 
 bool
 
-#### markPartCompleted()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html\#method_markPartCompleted)
+#### markPartCompleted()  [header link](class-aws-s3-s3transfer-models-resumabledownload-method-markpartcompleted.md)
 
 Mark a part as completed.
 
@@ -353,7 +353,7 @@ $filePath
 
 Path where the resume file should be saved
 
-#### toJson()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html\#method_toJson)
+#### toJson()  [header link](class-aws-s3-s3transfer-models-resumabledownload-method-tojson.md)
 
 Serialize the resumable download state to JSON format.
 
@@ -390,30 +390,30 @@ The new snapshot data
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#toc-methods)
+  - [Methods](class-aws-s3-s3transfer-models-resumabledownload-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method___construct)
+  - [\_\_construct()](class-aws-s3-s3transfer-models-resumabledownload-method-construct.md)
   - [deleteResumeFile()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_deleteResumeFile)
-  - [fromFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_fromFile)
-  - [fromJson()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_fromJson)
+  - [fromFile()](class-aws-s3-s3transfer-models-resumabledownload-method-fromfile.md)
+  - [fromJson()](class-aws-s3-s3transfer-models-resumabledownload-method-fromjson.md)
   - [getBucket()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getBucket)
   - [getConfig()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getConfig)
   - [getCurrentSnapshot()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getCurrentSnapshot)
-  - [getDestination()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_getDestination)
-  - [getETag()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_getETag)
-  - [getFixedPartSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_getFixedPartSize)
-  - [getInitialRequestResult()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_getInitialRequestResult)
+  - [getDestination()](class-aws-s3-s3transfer-models-resumabledownload-method-getdestination.md)
+  - [getETag()](class-aws-s3-s3transfer-models-resumabledownload-method-getetag.md)
+  - [getFixedPartSize()](class-aws-s3-s3transfer-models-resumabledownload-method-getfixedpartsize.md)
+  - [getInitialRequestResult()](class-aws-s3-s3transfer-models-resumabledownload-method-getinitialrequestresult.md)
   - [getKey()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getKey)
-  - [getObjectSizeInBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_getObjectSizeInBytes)
-  - [getPartsCompleted()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_getPartsCompleted)
+  - [getObjectSizeInBytes()](class-aws-s3-s3transfer-models-resumabledownload-method-getobjectsizeinbytes.md)
+  - [getPartsCompleted()](class-aws-s3-s3transfer-models-resumabledownload-method-getpartscompleted.md)
   - [getRequestArgs()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getRequestArgs)
   - [getResumeFilePath()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getResumeFilePath)
-  - [getTemporaryFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_getTemporaryFile)
-  - [getTotalNumberOfParts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_getTotalNumberOfParts)
+  - [getTemporaryFile()](class-aws-s3-s3transfer-models-resumabledownload-method-gettemporaryfile.md)
+  - [getTotalNumberOfParts()](class-aws-s3-s3transfer-models-resumabledownload-method-gettotalnumberofparts.md)
   - [isResumeFile()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_isResumeFile)
-  - [markPartCompleted()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_markPartCompleted)
+  - [markPartCompleted()](class-aws-s3-s3transfer-models-resumabledownload-method-markpartcompleted.md)
   - [toFile()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_toFile)
-  - [toJson()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#method_toJson)
+  - [toJson()](class-aws-s3-s3transfer-models-resumabledownload-method-tojson.md)
   - [updateCurrentSnapshot()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_updateCurrentSnapshot)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html#top)
+[Back To Top](class-aws-s3-s3transfer-models-resumabledownload-top.md)

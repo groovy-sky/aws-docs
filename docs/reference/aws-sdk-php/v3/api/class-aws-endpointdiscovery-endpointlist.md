@@ -5,19 +5,19 @@ Menu
 
 ## EndpointList        in package    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointList.html\#toc)
+### Table of Contents  [header link](class-aws-endpointdiscovery-endpointlist-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointList.html\#toc-methods)
+#### Methods  [header link](class-aws-endpointdiscovery-endpointlist-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointList.html#method___construct)
-: mixed [getActive()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointList.html#method_getActive)
-: null\|string Gets an active (unexpired) endpoint. Returns null if none found.[getEndpoint()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointList.html#method_getEndpoint)
-: null\|string Gets an active endpoint if possible, then an expired endpoint if possible.[remove()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointList.html#method_remove)
+[\_\_construct()](class-aws-endpointdiscovery-endpointlist-method-construct.md)
+: mixed [getActive()](class-aws-endpointdiscovery-endpointlist-method-getactive.md)
+: null\|string Gets an active (unexpired) endpoint. Returns null if none found.[getEndpoint()](class-aws-endpointdiscovery-endpointlist-method-getendpoint.md)
+: null\|string Gets an active endpoint if possible, then an expired endpoint if possible.[remove()](class-aws-endpointdiscovery-endpointlist-method-remove.md)
 : mixed Removes an endpoint from both lists.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointList.html\#methods)
+### Methods  [header link](class-aws-endpointdiscovery-endpointlist-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointList.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-endpointdiscovery-endpointlist-method-construct.md)
 
 `
     public
@@ -28,7 +28,7 @@ Menu
 $endpoints
 : array<string\|int, mixed>
 
-#### getActive()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointList.html\#method_getActive)
+#### getActive()  [header link](class-aws-endpointdiscovery-endpointlist-method-getactive.md)
 
 Gets an active (unexpired) endpoint. Returns null if none found.
 
@@ -40,7 +40,7 @@ Gets an active (unexpired) endpoint. Returns null if none found.
 
 null\|string
 
-#### getEndpoint()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointList.html\#method_getEndpoint)
+#### getEndpoint()  [header link](class-aws-endpointdiscovery-endpointlist-method-getendpoint.md)
 
 Gets an active endpoint if possible, then an expired endpoint if possible.
 
@@ -54,7 +54,7 @@ Returns null if no endpoints found.
 
 null\|string
 
-#### remove()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointList.html\#method_remove)
+#### remove()  [header link](class-aws-endpointdiscovery-endpointlist-method-remove.md)
 
 Removes an endpoint from both lists.
 
@@ -73,11 +73,11 @@ $key
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointList.html#toc-methods)
+  - [Methods](class-aws-endpointdiscovery-endpointlist-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointList.html#method___construct)
-  - [getActive()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointList.html#method_getActive)
-  - [getEndpoint()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointList.html#method_getEndpoint)
-  - [remove()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointList.html#method_remove)
+  - [\_\_construct()](class-aws-endpointdiscovery-endpointlist-method-construct.md)
+  - [getActive()](class-aws-endpointdiscovery-endpointlist-method-getactive.md)
+  - [getEndpoint()](class-aws-endpointdiscovery-endpointlist-method-getendpoint.md)
+  - [remove()](class-aws-endpointdiscovery-endpointlist-method-remove.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointList.html#top)
+[Back To Top](class-aws-endpointdiscovery-endpointlist-top.md)

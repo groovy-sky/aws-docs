@@ -4,20 +4,20 @@ Menu
 
 ## ClientSideMonitoring
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.clientsidemonitoring.html\#toc)
+### Table of Contents  [header link](namespace-aws-clientsidemonitoring-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.clientsidemonitoring.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-clientsidemonitoring-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.clientsidemonitoring.exception.html)
+[Exception](namespace-aws-clientsidemonitoring-exception.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.clientsidemonitoring.html\#toc-interfaces)
+#### Interfaces  [header link](namespace-aws-clientsidemonitoring-toc-interfaces.md)
 
-[ConfigurationInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationInterface.html)Provides access to client-side monitoring configuration options:
+[ConfigurationInterface](class-aws-clientsidemonitoring-configurationinterface.md)Provides access to client-side monitoring configuration options:
 'client\_id', 'enabled', 'host', 'port'
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.clientsidemonitoring.html\#toc-classes)
+#### Classes  [header link](namespace-aws-clientsidemonitoring-toc-classes.md)
 
-[Configuration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.Configuration.html)[ConfigurationProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ClientSideMonitoring.ConfigurationProvider.html)A configuration provider is a function that accepts no arguments and returns
+[Configuration](class-aws-clientsidemonitoring-configuration.md)[ConfigurationProvider](class-aws-clientsidemonitoring-configurationprovider.md)A configuration provider is a function that accepts no arguments and returns
 a promise that is fulfilled with a {@see \\Aws\\ClientSideMonitoring\\ConfigurationInterface}
 or rejected with an {@see \\Aws\\ClientSideMonitoring\\Exception\\ConfigurationException}.
 
@@ -30,7 +30,7 @@ or rejected with an {@see \\Aws\\ClientSideMonitoring\\Exception\\ConfigurationE
 **On this page**
 
 - Table Of Contents
-  - [Interfaces](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.clientsidemonitoring.html#toc-interfaces)
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.clientsidemonitoring.html#toc-classes)
+  - [Interfaces](namespace-aws-clientsidemonitoring-toc-interfaces.md)
+  - [Classes](namespace-aws-clientsidemonitoring-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.clientsidemonitoring.html#top)
+[Back To Top](namespace-aws-clientsidemonitoring-top.md)

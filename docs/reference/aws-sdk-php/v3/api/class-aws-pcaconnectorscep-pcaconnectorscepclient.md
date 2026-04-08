@@ -17,24 +17,24 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-05-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-scep-2018-05-10.html)
+- [**2018-05-10**](api-pca-connector-scep-2018-05-10.md)
 
-  - [CreateChallenge](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-scep-2018-05-10.html#createchallenge)
-  - [CreateConnector](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-scep-2018-05-10.html#createconnector)
-  - [DeleteChallenge](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-scep-2018-05-10.html#deletechallenge)
-  - [DeleteConnector](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-scep-2018-05-10.html#deleteconnector)
-  - [GetChallengeMetadata](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-scep-2018-05-10.html#getchallengemetadata)
-  - [GetChallengePassword](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-scep-2018-05-10.html#getchallengepassword)
-  - [GetConnector](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-scep-2018-05-10.html#getconnector)
-  - [ListChallengeMetadata](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-scep-2018-05-10.html#listchallengemetadata)
-  - [ListConnectors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-scep-2018-05-10.html#listconnectors)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-scep-2018-05-10.html#listtagsforresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-scep-2018-05-10.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pca-connector-scep-2018-05-10.html#untagresource)
+  - [CreateChallenge](api-pca-connector-scep-2018-05-10-createchallenge.md)
+  - [CreateConnector](api-pca-connector-scep-2018-05-10-createconnector.md)
+  - [DeleteChallenge](api-pca-connector-scep-2018-05-10-deletechallenge.md)
+  - [DeleteConnector](api-pca-connector-scep-2018-05-10-deleteconnector.md)
+  - [GetChallengeMetadata](api-pca-connector-scep-2018-05-10-getchallengemetadata.md)
+  - [GetChallengePassword](api-pca-connector-scep-2018-05-10-getchallengepassword.md)
+  - [GetConnector](api-pca-connector-scep-2018-05-10-getconnector.md)
+  - [ListChallengeMetadata](api-pca-connector-scep-2018-05-10-listchallengemetadata.md)
+  - [ListConnectors](api-pca-connector-scep-2018-05-10-listconnectors.md)
+  - [ListTagsForResource](api-pca-connector-scep-2018-05-10-listtagsforresource.md)
+  - [TagResource](api-pca-connector-scep-2018-05-10-tagresource.md)
+  - [UntagResource](api-pca-connector-scep-2018-05-10-untagresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PcaConnectorScep.PcaConnectorScepClient.html\#toc)
+### Table of Contents  [header link](class-aws-pcaconnectorscep-pcaconnectorscepclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PcaConnectorScep.PcaConnectorScepClient.html\#toc-methods)
+#### Methods  [header link](class-aws-pcaconnectorscep-pcaconnectorscepclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -65,7 +65,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PcaConnectorScep.PcaConnectorScepClient.html\#methods)
+### Methods  [header link](class-aws-pcaconnectorscep-pcaconnectorscepclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -532,7 +532,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PcaConnectorScep.PcaConnectorScepClient.html#toc-methods)
+  - [Methods](class-aws-pcaconnectorscep-pcaconnectorscepclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -559,4 +559,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PcaConnectorScep.PcaConnectorScepClient.html#top)
+[Back To Top](class-aws-pcaconnectorscep-pcaconnectorscepclient-top.md)

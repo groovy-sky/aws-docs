@@ -4,15 +4,15 @@ Menu
 
 ## Bedrock
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrock.html\#toc)
+### Table of Contents  [header link](namespace-aws-bedrock-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrock.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-bedrock-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrock.exception.html)
+[Exception](namespace-aws-bedrock-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrock.html\#toc-classes)
+#### Classes  [header link](namespace-aws-bedrock-toc-classes.md)
 
-[BedrockClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Bedrock.BedrockClient.html)This client is used to interact with the **Amazon Bedrock** service.
+[BedrockClient](class-aws-bedrock-bedrockclient.md)This client is used to interact with the **Amazon Bedrock** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrock.html#toc-classes)
+  - [Classes](namespace-aws-bedrock-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrock.html#top)
+[Back To Top](namespace-aws-bedrock-top.md)

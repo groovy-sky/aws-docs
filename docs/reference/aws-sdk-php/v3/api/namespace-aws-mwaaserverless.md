@@ -4,15 +4,15 @@ Menu
 
 ## MWAAServerless
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mwaaserverless.html\#toc)
+### Table of Contents  [header link](namespace-aws-mwaaserverless-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mwaaserverless.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-mwaaserverless-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mwaaserverless.exception.html)
+[Exception](namespace-aws-mwaaserverless-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mwaaserverless.html\#toc-classes)
+#### Classes  [header link](namespace-aws-mwaaserverless-toc-classes.md)
 
-[MWAAServerlessClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MWAAServerless.MWAAServerlessClient.html)This client is used to interact with the **AmazonMWAAServerless** service.
+[MWAAServerlessClient](class-aws-mwaaserverless-mwaaserverlessclient.md)This client is used to interact with the **AmazonMWAAServerless** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mwaaserverless.html#toc-classes)
+  - [Classes](namespace-aws-mwaaserverless-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mwaaserverless.html#top)
+[Back To Top](namespace-aws-mwaaserverless-top.md)

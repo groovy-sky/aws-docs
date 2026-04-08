@@ -17,31 +17,31 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2022-02-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspaces-2022-02-10.html)
+- [**2022-02-10**](api-keyspaces-2022-02-10.md)
 
-  - [CreateKeyspace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspaces-2022-02-10.html#createkeyspace)
-  - [CreateTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspaces-2022-02-10.html#createtable)
-  - [CreateType](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspaces-2022-02-10.html#createtype)
-  - [DeleteKeyspace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspaces-2022-02-10.html#deletekeyspace)
-  - [DeleteTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspaces-2022-02-10.html#deletetable)
-  - [DeleteType](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspaces-2022-02-10.html#deletetype)
-  - [GetKeyspace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspaces-2022-02-10.html#getkeyspace)
-  - [GetTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspaces-2022-02-10.html#gettable)
-  - [GetTableAutoScalingSettings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspaces-2022-02-10.html#gettableautoscalingsettings)
-  - [GetType](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspaces-2022-02-10.html#gettype)
-  - [ListKeyspaces](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspaces-2022-02-10.html#listkeyspaces)
-  - [ListTables](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspaces-2022-02-10.html#listtables)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspaces-2022-02-10.html#listtagsforresource)
-  - [ListTypes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspaces-2022-02-10.html#listtypes)
-  - [RestoreTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspaces-2022-02-10.html#restoretable)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspaces-2022-02-10.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspaces-2022-02-10.html#untagresource)
-  - [UpdateKeyspace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspaces-2022-02-10.html#updatekeyspace)
-  - [UpdateTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspaces-2022-02-10.html#updatetable)
+  - [CreateKeyspace](api-keyspaces-2022-02-10-createkeyspace.md)
+  - [CreateTable](api-keyspaces-2022-02-10-createtable.md)
+  - [CreateType](api-keyspaces-2022-02-10-createtype.md)
+  - [DeleteKeyspace](api-keyspaces-2022-02-10-deletekeyspace.md)
+  - [DeleteTable](api-keyspaces-2022-02-10-deletetable.md)
+  - [DeleteType](api-keyspaces-2022-02-10-deletetype.md)
+  - [GetKeyspace](api-keyspaces-2022-02-10-getkeyspace.md)
+  - [GetTable](api-keyspaces-2022-02-10-gettable.md)
+  - [GetTableAutoScalingSettings](api-keyspaces-2022-02-10-gettableautoscalingsettings.md)
+  - [GetType](api-keyspaces-2022-02-10-gettype.md)
+  - [ListKeyspaces](api-keyspaces-2022-02-10-listkeyspaces.md)
+  - [ListTables](api-keyspaces-2022-02-10-listtables.md)
+  - [ListTagsForResource](api-keyspaces-2022-02-10-listtagsforresource.md)
+  - [ListTypes](api-keyspaces-2022-02-10-listtypes.md)
+  - [RestoreTable](api-keyspaces-2022-02-10-restoretable.md)
+  - [TagResource](api-keyspaces-2022-02-10-tagresource.md)
+  - [UntagResource](api-keyspaces-2022-02-10-untagresource.md)
+  - [UpdateKeyspace](api-keyspaces-2022-02-10-updatekeyspace.md)
+  - [UpdateTable](api-keyspaces-2022-02-10-updatetable.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Keyspaces.KeyspacesClient.html\#toc)
+### Table of Contents  [header link](class-aws-keyspaces-keyspacesclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Keyspaces.KeyspacesClient.html\#toc-methods)
+#### Methods  [header link](class-aws-keyspaces-keyspacesclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -72,7 +72,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Keyspaces.KeyspacesClient.html\#methods)
+### Methods  [header link](class-aws-keyspaces-keyspacesclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -539,7 +539,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Keyspaces.KeyspacesClient.html#toc-methods)
+  - [Methods](class-aws-keyspaces-keyspacesclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -566,4 +566,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Keyspaces.KeyspacesClient.html#top)
+[Back To Top](class-aws-keyspaces-keyspacesclient-top.md)

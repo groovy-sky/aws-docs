@@ -4,15 +4,15 @@ Menu
 
 ## ARCZonalShift
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.arczonalshift.html\#toc)
+### Table of Contents  [header link](namespace-aws-arczonalshift-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.arczonalshift.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-arczonalshift-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.arczonalshift.exception.html)
+[Exception](namespace-aws-arczonalshift-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.arczonalshift.html\#toc-classes)
+#### Classes  [header link](namespace-aws-arczonalshift-toc-classes.md)
 
-[ARCZonalShiftClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ARCZonalShift.ARCZonalShiftClient.html)This client is used to interact with the **AWS ARC - Zonal Shift** service.
+[ARCZonalShiftClient](class-aws-arczonalshift-arczonalshiftclient.md)This client is used to interact with the **AWS ARC - Zonal Shift** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.arczonalshift.html#toc-classes)
+  - [Classes](namespace-aws-arczonalshift-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.arczonalshift.html#top)
+[Back To Top](namespace-aws-arczonalshift-top.md)

@@ -17,17 +17,17 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2016-11-28**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-runtime.lex-2016-11-28.html)
+- [**2016-11-28**](api-runtime-lex-2016-11-28.md)
 
-  - [DeleteSession](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-runtime.lex-2016-11-28.html#deletesession)
-  - [GetSession](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-runtime.lex-2016-11-28.html#getsession)
-  - [PostContent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-runtime.lex-2016-11-28.html#postcontent)
-  - [PostText](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-runtime.lex-2016-11-28.html#posttext)
-  - [PutSession](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-runtime.lex-2016-11-28.html#putsession)
+  - [DeleteSession](api-runtime-lex-2016-11-28-deletesession.md)
+  - [GetSession](api-runtime-lex-2016-11-28-getsession.md)
+  - [PostContent](api-runtime-lex-2016-11-28-postcontent.md)
+  - [PostText](api-runtime-lex-2016-11-28-posttext.md)
+  - [PutSession](api-runtime-lex-2016-11-28-putsession.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LexRuntimeService.LexRuntimeServiceClient.html\#toc)
+### Table of Contents  [header link](class-aws-lexruntimeservice-lexruntimeserviceclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LexRuntimeService.LexRuntimeServiceClient.html\#toc-methods)
+#### Methods  [header link](class-aws-lexruntimeservice-lexruntimeserviceclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -58,7 +58,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LexRuntimeService.LexRuntimeServiceClient.html\#methods)
+### Methods  [header link](class-aws-lexruntimeservice-lexruntimeserviceclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -525,7 +525,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LexRuntimeService.LexRuntimeServiceClient.html#toc-methods)
+  - [Methods](class-aws-lexruntimeservice-lexruntimeserviceclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -552,4 +552,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LexRuntimeService.LexRuntimeServiceClient.html#top)
+[Back To Top](class-aws-lexruntimeservice-lexruntimeserviceclient-top.md)

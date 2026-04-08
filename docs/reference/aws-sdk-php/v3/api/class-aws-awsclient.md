@@ -2,50 +2,50 @@ Menu
 
 - [Aws](namespace-aws.md)
 
-## AwsClient        in package    - [Aws](package-aws.md)       implements  [AwsClientInterface](class-aws-awsclientinterface.md)  Uses  [AwsClientTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html)
+## AwsClient        in package    - [Aws](package-aws.md)       implements  [AwsClientInterface](class-aws-awsclientinterface.md)  Uses  [AwsClientTrait](class-aws-awsclienttrait.md)
 
 Default AWS client implementation
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#toc)
+### Table of Contents  [header link](class-aws-awsclient-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-awsclient-toc-interfaces.md)
 
 [AwsClientInterface](class-aws-awsclientinterface.md)Represents an AWS client.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-awsclient-toc-methods.md)
 
-[\_\_call()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method___call)
-: mixed [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method___construct)
-: mixed The client constructor accepts the following options:[\_\_sleep()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method___sleep)
-: mixed [execute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_execute)
-: mixed [executeAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_executeAsync)
-: mixed [factory()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_factory)
-: static [getApi()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getApi)
-: [Service](class-aws-api-service.md)Get the service description associated with the client.[getArguments()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getArguments)
-: array<string\|int, mixed> Get an array of client constructor arguments used by the client.[getClientBuiltIns()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getClientBuiltIns)
+[\_\_call()](class-aws-awsclienttrait-method-call.md)
+: mixed [\_\_construct()](class-aws-awsclient-method-construct.md)
+: mixed The client constructor accepts the following options:[\_\_sleep()](class-aws-awsclient-method-sleep.md)
+: mixed [execute()](class-aws-awsclienttrait-method-execute.md)
+: mixed [executeAsync()](class-aws-awsclienttrait-method-executeasync.md)
+: mixed [factory()](class-aws-awsclient-method-factory.md)
+: static [getApi()](class-aws-awsclient-method-getapi.md)
+: [Service](class-aws-api-service.md)Get the service description associated with the client.[getArguments()](class-aws-awsclient-method-getarguments.md)
+: array<string\|int, mixed> Get an array of client constructor arguments used by the client.[getClientBuiltIns()](class-aws-awsclient-method-getclientbuiltins.md)
 : array<string\|int, mixed> Provides the set of built-in keys and values
-used for endpoint resolution[getClientContextParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getClientContextParams)
+used for endpoint resolution[getClientContextParams()](class-aws-awsclient-method-getclientcontextparams.md)
 : array<string\|int, mixed> Provides the set of service context parameter
-key-value pairs used for endpoint resolution.[getCommand()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getCommand)
-: [CommandInterface](class-aws-commandinterface.md)Create a command for an operation name.[getConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getConfig)
-: mixed\|null Get a client configuration value.[getCredentials()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getCredentials)
+key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclient-method-getcommand.md)
+: [CommandInterface](class-aws-commandinterface.md)Create a command for an operation name.[getConfig()](class-aws-awsclient-method-getconfig.md)
+: mixed\|null Get a client configuration value.[getCredentials()](class-aws-awsclient-method-getcredentials.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Returns a promise that is fulfilled with an
-{@see \\Aws\\Credentials\\CredentialsInterface} object.[getEndpoint()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getEndpoint)
-: [UriInterface](class-psr-http-message-uriinterface.md)Gets the default endpoint, or base URL, used by the client.[getEndpointProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getEndpointProvider)
-: mixed [getEndpointProviderArgs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getEndpointProviderArgs)
-: array<string\|int, mixed> Retrieves arguments to be used in endpoint resolution.[getHandlerList()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getHandlerList)
-: [HandlerList](class-aws-handlerlist.md)Get the handler list used to transfer commands.[getIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getIterator)
-: mixed [getPaginator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getPaginator)
-: mixed [getRegion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getRegion)
-: string Get the region to which the client is configured to send requests.[getSignatureProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getSignatureProvider)
-: callable Get the signature\_provider function of the client.[getToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getToken)
-: mixed [getWaiter()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getWaiter)
-: mixed [waitUntil()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_waitUntil)
+{@see \\Aws\\Credentials\\CredentialsInterface} object.[getEndpoint()](class-aws-awsclient-method-getendpoint.md)
+: [UriInterface](class-psr-http-message-uriinterface.md)Gets the default endpoint, or base URL, used by the client.[getEndpointProvider()](class-aws-awsclient-method-getendpointprovider.md)
+: mixed [getEndpointProviderArgs()](class-aws-awsclient-method-getendpointproviderargs.md)
+: array<string\|int, mixed> Retrieves arguments to be used in endpoint resolution.[getHandlerList()](class-aws-awsclient-method-gethandlerlist.md)
+: [HandlerList](class-aws-handlerlist.md)Get the handler list used to transfer commands.[getIterator()](class-aws-awsclienttrait-method-getiterator.md)
+: mixed [getPaginator()](class-aws-awsclienttrait-method-getpaginator.md)
+: mixed [getRegion()](class-aws-awsclient-method-getregion.md)
+: string Get the region to which the client is configured to send requests.[getSignatureProvider()](class-aws-awsclient-method-getsignatureprovider.md)
+: callable Get the signature\_provider function of the client.[getToken()](class-aws-awsclient-method-gettoken.md)
+: mixed [getWaiter()](class-aws-awsclienttrait-method-getwaiter.md)
+: mixed [waitUntil()](class-aws-awsclienttrait-method-waituntil.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#methods)
+### Methods  [header link](class-aws-awsclient-methods.md)
 
-#### \_\_call()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method___call)
+#### \_\_call()  [header link](class-aws-awsclienttrait-method-call.md)
 
 `
     public
@@ -57,7 +57,7 @@ $name
 : mixed$args
 : array<string\|int, mixed>
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-awsclient-method-construct.md)
 
 The client constructor accepts the following options:
 
@@ -220,20 +220,20 @@ $args
 
 Client configuration arguments.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method___construct\#tags)
+##### Tags  [header link](class-aws-awsclient-method-construct-tags.md)
 
 throwsInvalidArgumentException
 
 if any required options are missing or
 the service is not supported.
 
-#### \_\_sleep()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method___sleep)
+#### \_\_sleep()  [header link](class-aws-awsclient-method-sleep.md)
 
 `
     public
                     __sleep() : mixed`
 
-#### execute()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method_execute)
+#### execute()  [header link](class-aws-awsclienttrait-method-execute.md)
 
 `
     public
@@ -244,7 +244,7 @@ the service is not supported.
 $command
 : [CommandInterface](class-aws-commandinterface.md)
 
-#### executeAsync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method_executeAsync)
+#### executeAsync()  [header link](class-aws-awsclienttrait-method-executeasync.md)
 
 `
     public
@@ -255,7 +255,7 @@ $command
 $command
 : [CommandInterface](class-aws-commandinterface.md)
 
-#### factory()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_factory)
+#### factory()  [header link](class-aws-awsclient-method-factory.md)
 
 `
     public
@@ -267,7 +267,7 @@ $config
 : array<string\|int, mixed>
 = \[\]
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_factory\#tags)
+##### Tags  [header link](class-aws-awsclient-method-factory-tags.md)
 
 deprecated
 
@@ -275,7 +275,7 @@ deprecated
 
 static
 
-#### getApi()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getApi)
+#### getApi()  [header link](class-aws-awsclient-method-getapi.md)
 
 Get the service description associated with the client.
 
@@ -287,7 +287,7 @@ Get the service description associated with the client.
 
 [Service](class-aws-api-service.md)
 
-#### getArguments()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getArguments)
+#### getArguments()  [header link](class-aws-awsclient-method-getarguments.md)
 
 Get an array of client constructor arguments used by the client.
 
@@ -299,7 +299,7 @@ Get an array of client constructor arguments used by the client.
 
 array<string\|int, mixed>
 
-#### getClientBuiltIns()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getClientBuiltIns)
+#### getClientBuiltIns()  [header link](class-aws-awsclient-method-getclientbuiltins.md)
 
 Provides the set of built-in keys and values
 used for endpoint resolution
@@ -312,7 +312,7 @@ used for endpoint resolution
 
 array<string\|int, mixed>
 
-#### getClientContextParams()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getClientContextParams)
+#### getClientContextParams()  [header link](class-aws-awsclient-method-getclientcontextparams.md)
 
 Provides the set of service context parameter
 key-value pairs used for endpoint resolution.
@@ -325,7 +325,7 @@ key-value pairs used for endpoint resolution.
 
 array<string\|int, mixed>
 
-#### getCommand()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getCommand)
+#### getCommand()  [header link](class-aws-awsclient-method-getcommand.md)
 
 Create a command for an operation name.
 
@@ -358,7 +358,7 @@ Arguments to pass to the command
 
 [CommandInterface](class-aws-commandinterface.md)
 
-#### getConfig()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getConfig)
+#### getConfig()  [header link](class-aws-awsclient-method-getconfig.md)
 
 Get a client configuration value.
 
@@ -379,7 +379,7 @@ all options.
 
 mixed\|null
 
-#### getCredentials()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getCredentials)
+#### getCredentials()  [header link](class-aws-awsclient-method-getcredentials.md)
 
 Returns a promise that is fulfilled with an
 {@see \\Aws\\Credentials\\CredentialsInterface} object.
@@ -395,7 +395,7 @@ on the returned promise.
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### getEndpoint()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getEndpoint)
+#### getEndpoint()  [header link](class-aws-awsclient-method-getendpoint.md)
 
 Gets the default endpoint, or base URL, used by the client.
 
@@ -407,13 +407,13 @@ Gets the default endpoint, or base URL, used by the client.
 
 [UriInterface](class-psr-http-message-uriinterface.md)
 
-#### getEndpointProvider()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getEndpointProvider)
+#### getEndpointProvider()  [header link](class-aws-awsclient-method-getendpointprovider.md)
 
 `
     public
                     getEndpointProvider() : mixed`
 
-#### getEndpointProviderArgs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getEndpointProviderArgs)
+#### getEndpointProviderArgs()  [header link](class-aws-awsclient-method-getendpointproviderargs.md)
 
 Retrieves arguments to be used in endpoint resolution.
 
@@ -425,7 +425,7 @@ Retrieves arguments to be used in endpoint resolution.
 
 array<string\|int, mixed>
 
-#### getHandlerList()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getHandlerList)
+#### getHandlerList()  [header link](class-aws-awsclient-method-gethandlerlist.md)
 
 Get the handler list used to transfer commands.
 
@@ -440,7 +440,7 @@ handler used to send HTTP requests.
 
 [HandlerList](class-aws-handlerlist.md)
 
-#### getIterator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method_getIterator)
+#### getIterator()  [header link](class-aws-awsclienttrait-method-getiterator.md)
 
 `
     public
@@ -453,7 +453,7 @@ $name
 : array<string\|int, mixed>
 = \[\]
 
-#### getPaginator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method_getPaginator)
+#### getPaginator()  [header link](class-aws-awsclienttrait-method-getpaginator.md)
 
 `
     public
@@ -466,7 +466,7 @@ $name
 : array<string\|int, mixed>
 = \[\]
 
-#### getRegion()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getRegion)
+#### getRegion()  [header link](class-aws-awsclient-method-getregion.md)
 
 Get the region to which the client is configured to send requests.
 
@@ -478,7 +478,7 @@ Get the region to which the client is configured to send requests.
 
 string
 
-#### getSignatureProvider()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getSignatureProvider)
+#### getSignatureProvider()  [header link](class-aws-awsclient-method-getsignatureprovider.md)
 
 Get the signature\_provider function of the client.
 
@@ -490,13 +490,13 @@ Get the signature\_provider function of the client.
 
 callable
 
-#### getToken()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getToken)
+#### getToken()  [header link](class-aws-awsclient-method-gettoken.md)
 
 `
     public
                     getToken() : mixed`
 
-#### getWaiter()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method_getWaiter)
+#### getWaiter()  [header link](class-aws-awsclienttrait-method-getwaiter.md)
 
 `
     public
@@ -509,7 +509,7 @@ $name
 : array<string\|int, mixed>
 = \[\]
 
-#### waitUntil()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method_waitUntil)
+#### waitUntil()  [header link](class-aws-awsclienttrait-method-waituntil.md)
 
 `
     public
@@ -528,31 +528,31 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#toc-methods)
+  - [Methods](class-aws-awsclient-toc-methods.md)
 - Methods
-  - [\_\_call()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method___call)
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method___construct)
-  - [\_\_sleep()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method___sleep)
-  - [execute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_execute)
-  - [executeAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_executeAsync)
-  - [factory()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_factory)
-  - [getApi()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getApi)
-  - [getArguments()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getArguments)
-  - [getClientBuiltIns()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getClientBuiltIns)
-  - [getClientContextParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getClientContextParams)
-  - [getCommand()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getCommand)
-  - [getConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getConfig)
-  - [getCredentials()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getCredentials)
-  - [getEndpoint()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getEndpoint)
-  - [getEndpointProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getEndpointProvider)
-  - [getEndpointProviderArgs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getEndpointProviderArgs)
-  - [getHandlerList()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getHandlerList)
-  - [getIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getIterator)
-  - [getPaginator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getPaginator)
-  - [getRegion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getRegion)
-  - [getSignatureProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getSignatureProvider)
-  - [getToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getToken)
-  - [getWaiter()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getWaiter)
-  - [waitUntil()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_waitUntil)
+  - [\_\_call()](class-aws-awsclienttrait-method-call.md)
+  - [\_\_construct()](class-aws-awsclient-method-construct.md)
+  - [\_\_sleep()](class-aws-awsclient-method-sleep.md)
+  - [execute()](class-aws-awsclienttrait-method-execute.md)
+  - [executeAsync()](class-aws-awsclienttrait-method-executeasync.md)
+  - [factory()](class-aws-awsclient-method-factory.md)
+  - [getApi()](class-aws-awsclient-method-getapi.md)
+  - [getArguments()](class-aws-awsclient-method-getarguments.md)
+  - [getClientBuiltIns()](class-aws-awsclient-method-getclientbuiltins.md)
+  - [getClientContextParams()](class-aws-awsclient-method-getclientcontextparams.md)
+  - [getCommand()](class-aws-awsclient-method-getcommand.md)
+  - [getConfig()](class-aws-awsclient-method-getconfig.md)
+  - [getCredentials()](class-aws-awsclient-method-getcredentials.md)
+  - [getEndpoint()](class-aws-awsclient-method-getendpoint.md)
+  - [getEndpointProvider()](class-aws-awsclient-method-getendpointprovider.md)
+  - [getEndpointProviderArgs()](class-aws-awsclient-method-getendpointproviderargs.md)
+  - [getHandlerList()](class-aws-awsclient-method-gethandlerlist.md)
+  - [getIterator()](class-aws-awsclienttrait-method-getiterator.md)
+  - [getPaginator()](class-aws-awsclienttrait-method-getpaginator.md)
+  - [getRegion()](class-aws-awsclient-method-getregion.md)
+  - [getSignatureProvider()](class-aws-awsclient-method-getsignatureprovider.md)
+  - [getToken()](class-aws-awsclient-method-gettoken.md)
+  - [getWaiter()](class-aws-awsclienttrait-method-getwaiter.md)
+  - [waitUntil()](class-aws-awsclienttrait-method-waituntil.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#top)
+[Back To Top](class-aws-awsclient-top.md)

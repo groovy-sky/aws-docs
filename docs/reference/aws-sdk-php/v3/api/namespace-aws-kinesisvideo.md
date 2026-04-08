@@ -4,15 +4,15 @@ Menu
 
 ## KinesisVideo
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisvideo.html\#toc)
+### Table of Contents  [header link](namespace-aws-kinesisvideo-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisvideo.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-kinesisvideo-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisvideo.exception.html)
+[Exception](namespace-aws-kinesisvideo-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisvideo.html\#toc-classes)
+#### Classes  [header link](namespace-aws-kinesisvideo-toc-classes.md)
 
-[KinesisVideoClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideo.KinesisVideoClient.html)This client is used to interact with the **Amazon Kinesis Video Streams** service.
+[KinesisVideoClient](class-aws-kinesisvideo-kinesisvideoclient.md)This client is used to interact with the **Amazon Kinesis Video Streams** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisvideo.html#toc-classes)
+  - [Classes](namespace-aws-kinesisvideo-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisvideo.html#top)
+[Back To Top](namespace-aws-kinesisvideo-top.md)

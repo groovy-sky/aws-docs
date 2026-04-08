@@ -77,7 +77,7 @@ Expected output from an instance booted in UEFI boot mode
 2. Go to **System Information** and check the **BIOS Mode**
     row.
 
-![System Information window showing the BIOS Mode row selected. The value for BIOS Mode is Legacy.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/BIOS-mode-win.png)
+![System Information window showing the BIOS Mode row selected. The value for BIOS Mode is Legacy.](../../../images/awsec2/latest/userguide/images/bios-mode-win-png.md)
 
 [Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 

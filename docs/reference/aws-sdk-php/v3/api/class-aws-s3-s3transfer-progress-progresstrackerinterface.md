@@ -2,21 +2,21 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
-- [Progress](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.progress.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
+- [Progress](namespace-aws-s3-s3transfer-progress.md)
 
 ## ProgressTrackerInterface     in    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressTrackerInterface.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-progress-progresstrackerinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressTrackerInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-progress-progresstrackerinterface-toc-methods.md)
 
-[showProgress()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressTrackerInterface.html#method_showProgress)
+[showProgress()](class-aws-s3-s3transfer-progress-progresstrackerinterface-method-showprogress.md)
 : void To show the progress being tracked.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressTrackerInterface.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-progress-progresstrackerinterface-methods.md)
 
-#### showProgress()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressTrackerInterface.html\#method_showProgress)
+#### showProgress()  [header link](class-aws-s3-s3transfer-progress-progresstrackerinterface-method-showprogress.md)
 
 To show the progress being tracked.
 
@@ -31,9 +31,9 @@ To show the progress being tracked.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressTrackerInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressTrackerInterface.html#toc-methods)
+  - [Constants](class-aws-s3-s3transfer-progress-progresstrackerinterface-toc-constants.md)
+  - [Methods](class-aws-s3-s3transfer-progress-progresstrackerinterface-toc-methods.md)
 - Methods
-  - [showProgress()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressTrackerInterface.html#method_showProgress)
+  - [showProgress()](class-aws-s3-s3transfer-progress-progresstrackerinterface-method-showprogress.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ProgressTrackerInterface.html#top)
+[Back To Top](class-aws-s3-s3transfer-progress-progresstrackerinterface-top.md)

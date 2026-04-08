@@ -17,38 +17,38 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2021-09-14**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html)
+- [**2021-09-14**](api-payment-cryptography-2021-09-14.md)
 
-  - [AddKeyReplicationRegions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#addkeyreplicationregions)
-  - [CreateAlias](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#createalias)
-  - [CreateKey](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#createkey)
-  - [DeleteAlias](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#deletealias)
-  - [DeleteKey](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#deletekey)
-  - [DisableDefaultKeyReplicationRegions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#disabledefaultkeyreplicationregions)
-  - [EnableDefaultKeyReplicationRegions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#enabledefaultkeyreplicationregions)
-  - [ExportKey](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#exportkey)
-  - [GetAlias](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#getalias)
-  - [GetCertificateSigningRequest](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#getcertificatesigningrequest)
-  - [GetDefaultKeyReplicationRegions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#getdefaultkeyreplicationregions)
-  - [GetKey](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#getkey)
-  - [GetParametersForExport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#getparametersforexport)
-  - [GetParametersForImport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#getparametersforimport)
-  - [GetPublicKeyCertificate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#getpublickeycertificate)
-  - [ImportKey](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#importkey)
-  - [ListAliases](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#listaliases)
-  - [ListKeys](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#listkeys)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#listtagsforresource)
-  - [RemoveKeyReplicationRegions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#removekeyreplicationregions)
-  - [RestoreKey](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#restorekey)
-  - [StartKeyUsage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#startkeyusage)
-  - [StopKeyUsage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#stopkeyusage)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#untagresource)
-  - [UpdateAlias](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-2021-09-14.html#updatealias)
+  - [AddKeyReplicationRegions](api-payment-cryptography-2021-09-14-addkeyreplicationregions.md)
+  - [CreateAlias](api-payment-cryptography-2021-09-14-createalias.md)
+  - [CreateKey](api-payment-cryptography-2021-09-14-createkey.md)
+  - [DeleteAlias](api-payment-cryptography-2021-09-14-deletealias.md)
+  - [DeleteKey](api-payment-cryptography-2021-09-14-deletekey.md)
+  - [DisableDefaultKeyReplicationRegions](api-payment-cryptography-2021-09-14-disabledefaultkeyreplicationregions.md)
+  - [EnableDefaultKeyReplicationRegions](api-payment-cryptography-2021-09-14-enabledefaultkeyreplicationregions.md)
+  - [ExportKey](api-payment-cryptography-2021-09-14-exportkey.md)
+  - [GetAlias](api-payment-cryptography-2021-09-14-getalias.md)
+  - [GetCertificateSigningRequest](api-payment-cryptography-2021-09-14-getcertificatesigningrequest.md)
+  - [GetDefaultKeyReplicationRegions](api-payment-cryptography-2021-09-14-getdefaultkeyreplicationregions.md)
+  - [GetKey](api-payment-cryptography-2021-09-14-getkey.md)
+  - [GetParametersForExport](api-payment-cryptography-2021-09-14-getparametersforexport.md)
+  - [GetParametersForImport](api-payment-cryptography-2021-09-14-getparametersforimport.md)
+  - [GetPublicKeyCertificate](api-payment-cryptography-2021-09-14-getpublickeycertificate.md)
+  - [ImportKey](api-payment-cryptography-2021-09-14-importkey.md)
+  - [ListAliases](api-payment-cryptography-2021-09-14-listaliases.md)
+  - [ListKeys](api-payment-cryptography-2021-09-14-listkeys.md)
+  - [ListTagsForResource](api-payment-cryptography-2021-09-14-listtagsforresource.md)
+  - [RemoveKeyReplicationRegions](api-payment-cryptography-2021-09-14-removekeyreplicationregions.md)
+  - [RestoreKey](api-payment-cryptography-2021-09-14-restorekey.md)
+  - [StartKeyUsage](api-payment-cryptography-2021-09-14-startkeyusage.md)
+  - [StopKeyUsage](api-payment-cryptography-2021-09-14-stopkeyusage.md)
+  - [TagResource](api-payment-cryptography-2021-09-14-tagresource.md)
+  - [UntagResource](api-payment-cryptography-2021-09-14-untagresource.md)
+  - [UpdateAlias](api-payment-cryptography-2021-09-14-updatealias.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PaymentCryptography.PaymentCryptographyClient.html\#toc)
+### Table of Contents  [header link](class-aws-paymentcryptography-paymentcryptographyclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PaymentCryptography.PaymentCryptographyClient.html\#toc-methods)
+#### Methods  [header link](class-aws-paymentcryptography-paymentcryptographyclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -79,7 +79,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PaymentCryptography.PaymentCryptographyClient.html\#methods)
+### Methods  [header link](class-aws-paymentcryptography-paymentcryptographyclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -546,7 +546,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PaymentCryptography.PaymentCryptographyClient.html#toc-methods)
+  - [Methods](class-aws-paymentcryptography-paymentcryptographyclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -573,4 +573,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PaymentCryptography.PaymentCryptographyClient.html#top)
+[Back To Top](class-aws-paymentcryptography-paymentcryptographyclient-top.md)

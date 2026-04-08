@@ -17,35 +17,35 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2024-04-15**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html)
+- [**2024-04-15**](api-application-signals-2024-04-15.md)
 
-  - [BatchGetServiceLevelObjectiveBudgetReport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#batchgetservicelevelobjectivebudgetreport)
-  - [BatchUpdateExclusionWindows](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#batchupdateexclusionwindows)
-  - [CreateServiceLevelObjective](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#createservicelevelobjective)
-  - [DeleteGroupingConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#deletegroupingconfiguration)
-  - [DeleteServiceLevelObjective](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#deleteservicelevelobjective)
-  - [GetService](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#getservice)
-  - [GetServiceLevelObjective](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#getservicelevelobjective)
-  - [ListAuditFindings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#listauditfindings)
-  - [ListEntityEvents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#listentityevents)
-  - [ListGroupingAttributeDefinitions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#listgroupingattributedefinitions)
-  - [ListServiceDependencies](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#listservicedependencies)
-  - [ListServiceDependents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#listservicedependents)
-  - [ListServiceLevelObjectiveExclusionWindows](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#listservicelevelobjectiveexclusionwindows)
-  - [ListServiceLevelObjectives](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#listservicelevelobjectives)
-  - [ListServiceOperations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#listserviceoperations)
-  - [ListServiceStates](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#listservicestates)
-  - [ListServices](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#listservices)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#listtagsforresource)
-  - [PutGroupingConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#putgroupingconfiguration)
-  - [StartDiscovery](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#startdiscovery)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#untagresource)
-  - [UpdateServiceLevelObjective](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-application-signals-2024-04-15.html#updateservicelevelobjective)
+  - [BatchGetServiceLevelObjectiveBudgetReport](api-application-signals-2024-04-15-batchgetservicelevelobjectivebudgetreport.md)
+  - [BatchUpdateExclusionWindows](api-application-signals-2024-04-15-batchupdateexclusionwindows.md)
+  - [CreateServiceLevelObjective](api-application-signals-2024-04-15-createservicelevelobjective.md)
+  - [DeleteGroupingConfiguration](api-application-signals-2024-04-15-deletegroupingconfiguration.md)
+  - [DeleteServiceLevelObjective](api-application-signals-2024-04-15-deleteservicelevelobjective.md)
+  - [GetService](api-application-signals-2024-04-15-getservice.md)
+  - [GetServiceLevelObjective](api-application-signals-2024-04-15-getservicelevelobjective.md)
+  - [ListAuditFindings](api-application-signals-2024-04-15-listauditfindings.md)
+  - [ListEntityEvents](api-application-signals-2024-04-15-listentityevents.md)
+  - [ListGroupingAttributeDefinitions](api-application-signals-2024-04-15-listgroupingattributedefinitions.md)
+  - [ListServiceDependencies](api-application-signals-2024-04-15-listservicedependencies.md)
+  - [ListServiceDependents](api-application-signals-2024-04-15-listservicedependents.md)
+  - [ListServiceLevelObjectiveExclusionWindows](api-application-signals-2024-04-15-listservicelevelobjectiveexclusionwindows.md)
+  - [ListServiceLevelObjectives](api-application-signals-2024-04-15-listservicelevelobjectives.md)
+  - [ListServiceOperations](api-application-signals-2024-04-15-listserviceoperations.md)
+  - [ListServiceStates](api-application-signals-2024-04-15-listservicestates.md)
+  - [ListServices](api-application-signals-2024-04-15-listservices.md)
+  - [ListTagsForResource](api-application-signals-2024-04-15-listtagsforresource.md)
+  - [PutGroupingConfiguration](api-application-signals-2024-04-15-putgroupingconfiguration.md)
+  - [StartDiscovery](api-application-signals-2024-04-15-startdiscovery.md)
+  - [TagResource](api-application-signals-2024-04-15-tagresource.md)
+  - [UntagResource](api-application-signals-2024-04-15-untagresource.md)
+  - [UpdateServiceLevelObjective](api-application-signals-2024-04-15-updateservicelevelobjective.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationSignals.ApplicationSignalsClient.html\#toc)
+### Table of Contents  [header link](class-aws-applicationsignals-applicationsignalsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationSignals.ApplicationSignalsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-applicationsignals-applicationsignalsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -76,7 +76,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationSignals.ApplicationSignalsClient.html\#methods)
+### Methods  [header link](class-aws-applicationsignals-applicationsignalsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -543,7 +543,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationSignals.ApplicationSignalsClient.html#toc-methods)
+  - [Methods](class-aws-applicationsignals-applicationsignalsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -570,4 +570,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationSignals.ApplicationSignalsClient.html#top)
+[Back To Top](class-aws-applicationsignals-applicationsignalsclient-top.md)

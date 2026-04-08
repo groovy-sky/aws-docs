@@ -4,12 +4,12 @@ Menu
 
 ## Exception
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.exception.html\#toc)
+### Table of Contents  [header link](namespace-aws-exception-toc.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.exception.html\#toc-classes)
+#### Classes  [header link](namespace-aws-exception-toc-classes.md)
 
-[AwsException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html)Represents an AWS exception that is thrown when a command fails.[CommonRuntimeException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.CommonRuntimeException.html)[CouldNotCreateChecksumException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.CouldNotCreateChecksumException.html)[CredentialsException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.CredentialsException.html)[CryptoException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.CryptoException.html)This class represents exceptions related to logic surrounding client-side
-encryption usage.[CryptoPolyfillException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.CryptoPolyfillException.html)Class CryptoPolyfillException[EventStreamDataException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.EventStreamDataException.html)Represents an exception that was supplied via an EventStream.[IncalculablePayloadException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.IncalculablePayloadException.html)[InvalidJsonException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.InvalidJsonException.html)[InvalidRegionException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.InvalidRegionException.html)[MultipartUploadException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.MultipartUploadException.html)[TokenException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.TokenException.html)[UnresolvedApiException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.UnresolvedApiException.html)[UnresolvedEndpointException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.UnresolvedEndpointException.html)[UnresolvedSignatureException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.UnresolvedSignatureException.html)
+[AwsException](class-aws-exception-awsexception.md)Represents an AWS exception that is thrown when a command fails.[CommonRuntimeException](class-aws-exception-commonruntimeexception.md)[CouldNotCreateChecksumException](class-aws-exception-couldnotcreatechecksumexception.md)[CredentialsException](class-aws-exception-credentialsexception.md)[CryptoException](class-aws-exception-cryptoexception.md)This class represents exceptions related to logic surrounding client-side
+encryption usage.[CryptoPolyfillException](class-aws-exception-cryptopolyfillexception.md)Class CryptoPolyfillException[EventStreamDataException](class-aws-exception-eventstreamdataexception.md)Represents an exception that was supplied via an EventStream.[IncalculablePayloadException](class-aws-exception-incalculablepayloadexception.md)[InvalidJsonException](class-aws-exception-invalidjsonexception.md)[InvalidRegionException](class-aws-exception-invalidregionexception.md)[MultipartUploadException](class-aws-exception-multipartuploadexception.md)[TokenException](class-aws-exception-tokenexception.md)[UnresolvedApiException](class-aws-exception-unresolvedapiexception.md)[UnresolvedEndpointException](class-aws-exception-unresolvedendpointexception.md)[UnresolvedSignatureException](class-aws-exception-unresolvedsignatureexception.md)
 
 ```
 
@@ -20,6 +20,6 @@ encryption usage.[CryptoPolyfillException](https://docs.aws.amazon.com/aws-sdk-p
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.exception.html#toc-classes)
+  - [Classes](namespace-aws-exception-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.exception.html#top)
+[Back To Top](namespace-aws-exception-top.md)

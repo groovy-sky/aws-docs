@@ -17,29 +17,29 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-05-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-benefits-2018-05-10.html)
+- [**2018-05-10**](api-partnercentral-benefits-2018-05-10.md)
 
-  - [AmendBenefitApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-benefits-2018-05-10.html#amendbenefitapplication)
-  - [AssociateBenefitApplicationResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-benefits-2018-05-10.html#associatebenefitapplicationresource)
-  - [CancelBenefitApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-benefits-2018-05-10.html#cancelbenefitapplication)
-  - [CreateBenefitApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-benefits-2018-05-10.html#createbenefitapplication)
-  - [DisassociateBenefitApplicationResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-benefits-2018-05-10.html#disassociatebenefitapplicationresource)
-  - [GetBenefit](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-benefits-2018-05-10.html#getbenefit)
-  - [GetBenefitAllocation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-benefits-2018-05-10.html#getbenefitallocation)
-  - [GetBenefitApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-benefits-2018-05-10.html#getbenefitapplication)
-  - [ListBenefitAllocations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-benefits-2018-05-10.html#listbenefitallocations)
-  - [ListBenefitApplications](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-benefits-2018-05-10.html#listbenefitapplications)
-  - [ListBenefits](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-benefits-2018-05-10.html#listbenefits)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-benefits-2018-05-10.html#listtagsforresource)
-  - [RecallBenefitApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-benefits-2018-05-10.html#recallbenefitapplication)
-  - [SubmitBenefitApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-benefits-2018-05-10.html#submitbenefitapplication)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-benefits-2018-05-10.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-benefits-2018-05-10.html#untagresource)
-  - [UpdateBenefitApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-benefits-2018-05-10.html#updatebenefitapplication)
+  - [AmendBenefitApplication](api-partnercentral-benefits-2018-05-10-amendbenefitapplication.md)
+  - [AssociateBenefitApplicationResource](api-partnercentral-benefits-2018-05-10-associatebenefitapplicationresource.md)
+  - [CancelBenefitApplication](api-partnercentral-benefits-2018-05-10-cancelbenefitapplication.md)
+  - [CreateBenefitApplication](api-partnercentral-benefits-2018-05-10-createbenefitapplication.md)
+  - [DisassociateBenefitApplicationResource](api-partnercentral-benefits-2018-05-10-disassociatebenefitapplicationresource.md)
+  - [GetBenefit](api-partnercentral-benefits-2018-05-10-getbenefit.md)
+  - [GetBenefitAllocation](api-partnercentral-benefits-2018-05-10-getbenefitallocation.md)
+  - [GetBenefitApplication](api-partnercentral-benefits-2018-05-10-getbenefitapplication.md)
+  - [ListBenefitAllocations](api-partnercentral-benefits-2018-05-10-listbenefitallocations.md)
+  - [ListBenefitApplications](api-partnercentral-benefits-2018-05-10-listbenefitapplications.md)
+  - [ListBenefits](api-partnercentral-benefits-2018-05-10-listbenefits.md)
+  - [ListTagsForResource](api-partnercentral-benefits-2018-05-10-listtagsforresource.md)
+  - [RecallBenefitApplication](api-partnercentral-benefits-2018-05-10-recallbenefitapplication.md)
+  - [SubmitBenefitApplication](api-partnercentral-benefits-2018-05-10-submitbenefitapplication.md)
+  - [TagResource](api-partnercentral-benefits-2018-05-10-tagresource.md)
+  - [UntagResource](api-partnercentral-benefits-2018-05-10-untagresource.md)
+  - [UpdateBenefitApplication](api-partnercentral-benefits-2018-05-10-updatebenefitapplication.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralBenefits.PartnerCentralBenefitsClient.html\#toc)
+### Table of Contents  [header link](class-aws-partnercentralbenefits-partnercentralbenefitsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralBenefits.PartnerCentralBenefitsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-partnercentralbenefits-partnercentralbenefitsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -70,7 +70,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralBenefits.PartnerCentralBenefitsClient.html\#methods)
+### Methods  [header link](class-aws-partnercentralbenefits-partnercentralbenefitsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -537,7 +537,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralBenefits.PartnerCentralBenefitsClient.html#toc-methods)
+  - [Methods](class-aws-partnercentralbenefits-partnercentralbenefitsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -564,4 +564,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralBenefits.PartnerCentralBenefitsClient.html#top)
+[Back To Top](class-aws-partnercentralbenefits-partnercentralbenefitsclient-top.md)

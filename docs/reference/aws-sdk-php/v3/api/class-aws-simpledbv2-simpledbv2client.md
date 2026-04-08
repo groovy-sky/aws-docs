@@ -17,15 +17,15 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2025-09-26**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-simpledbv2-2025-09-26.html)
+- [**2025-09-26**](api-simpledbv2-2025-09-26.md)
 
-  - [GetExport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-simpledbv2-2025-09-26.html#getexport)
-  - [ListExports](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-simpledbv2-2025-09-26.html#listexports)
-  - [StartDomainExport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-simpledbv2-2025-09-26.html#startdomainexport)
+  - [GetExport](api-simpledbv2-2025-09-26-getexport.md)
+  - [ListExports](api-simpledbv2-2025-09-26-listexports.md)
+  - [StartDomainExport](api-simpledbv2-2025-09-26-startdomainexport.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SimpleDBv2.SimpleDBv2Client.html\#toc)
+### Table of Contents  [header link](class-aws-simpledbv2-simpledbv2client-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SimpleDBv2.SimpleDBv2Client.html\#toc-methods)
+#### Methods  [header link](class-aws-simpledbv2-simpledbv2client-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -56,7 +56,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SimpleDBv2.SimpleDBv2Client.html\#methods)
+### Methods  [header link](class-aws-simpledbv2-simpledbv2client-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -523,7 +523,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SimpleDBv2.SimpleDBv2Client.html#toc-methods)
+  - [Methods](class-aws-simpledbv2-simpledbv2client-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -550,4 +550,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SimpleDBv2.SimpleDBv2Client.html#top)
+[Back To Top](class-aws-simpledbv2-simpledbv2client-top.md)

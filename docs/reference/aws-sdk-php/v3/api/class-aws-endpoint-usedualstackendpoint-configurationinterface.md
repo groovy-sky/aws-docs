@@ -2,21 +2,21 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [Endpoint](namespace-aws-endpoint.md)
-- [UseDualstackEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpoint.usedualstackendpoint.html)
+- [UseDualstackEndpoint](namespace-aws-endpoint-usedualstackendpoint.md)
 
 ## ConfigurationInterface     in    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseDualstackEndpoint.ConfigurationInterface.html\#toc)
+### Table of Contents  [header link](class-aws-endpoint-usedualstackendpoint-configurationinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseDualstackEndpoint.ConfigurationInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-endpoint-usedualstackendpoint-configurationinterface-toc-methods.md)
 
-[isUseDualstackEndpoint()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseDualstackEndpoint.ConfigurationInterface.html#method_isUseDualstackEndpoint)
-: bool Returns whether or not to use a DUALSTACK endpoint[toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseDualstackEndpoint.ConfigurationInterface.html#method_toArray)
+[isUseDualstackEndpoint()](class-aws-endpoint-usedualstackendpoint-configurationinterface-method-isusedualstackendpoint.md)
+: bool Returns whether or not to use a DUALSTACK endpoint[toArray()](class-aws-endpoint-usedualstackendpoint-configurationinterface-method-toarray.md)
 : array<string\|int, mixed> Returns the configuration as an associative array
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseDualstackEndpoint.ConfigurationInterface.html\#methods)
+### Methods  [header link](class-aws-endpoint-usedualstackendpoint-configurationinterface-methods.md)
 
-#### isUseDualstackEndpoint()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseDualstackEndpoint.ConfigurationInterface.html\#method_isUseDualstackEndpoint)
+#### isUseDualstackEndpoint()  [header link](class-aws-endpoint-usedualstackendpoint-configurationinterface-method-isusedualstackendpoint.md)
 
 Returns whether or not to use a DUALSTACK endpoint
 
@@ -28,7 +28,7 @@ Returns whether or not to use a DUALSTACK endpoint
 
 bool
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseDualstackEndpoint.ConfigurationInterface.html\#method_toArray)
+#### toArray()  [header link](class-aws-endpoint-usedualstackendpoint-configurationinterface-method-toarray.md)
 
 Returns the configuration as an associative array
 
@@ -46,10 +46,10 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseDualstackEndpoint.ConfigurationInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseDualstackEndpoint.ConfigurationInterface.html#toc-methods)
+  - [Constants](class-aws-endpoint-usedualstackendpoint-configurationinterface-toc-constants.md)
+  - [Methods](class-aws-endpoint-usedualstackendpoint-configurationinterface-toc-methods.md)
 - Methods
-  - [isUseDualstackEndpoint()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseDualstackEndpoint.ConfigurationInterface.html#method_isUseDualstackEndpoint)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseDualstackEndpoint.ConfigurationInterface.html#method_toArray)
+  - [isUseDualstackEndpoint()](class-aws-endpoint-usedualstackendpoint-configurationinterface-method-isusedualstackendpoint.md)
+  - [toArray()](class-aws-endpoint-usedualstackendpoint-configurationinterface-method-toarray.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.UseDualstackEndpoint.ConfigurationInterface.html#top)
+[Back To Top](class-aws-endpoint-usedualstackendpoint-configurationinterface-top.md)

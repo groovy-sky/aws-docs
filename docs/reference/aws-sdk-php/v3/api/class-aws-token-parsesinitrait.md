@@ -5,7 +5,7 @@ Menu
 
 ## ParsesIniTrait
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.ParsesIniTrait.html\#toc)
+### Table of Contents  [header link](class-aws-token-parsesinitrait-toc.md)
 
 ×
 
@@ -13,4 +13,4 @@ Menu
 
 - Table Of Contents
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.ParsesIniTrait.html#top)
+[Back To Top](class-aws-token-parsesinitrait-top.md)

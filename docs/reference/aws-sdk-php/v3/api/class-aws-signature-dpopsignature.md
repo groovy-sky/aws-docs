@@ -7,22 +7,22 @@ Menu
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.DpopSignature.html\#toc)
+### Table of Contents  [header link](class-aws-signature-dpopsignature-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.DpopSignature.html\#toc-constants)
+#### Constants  [header link](class-aws-signature-dpopsignature-toc-constants.md)
 
-[ALLOW\_LISTED\_SERVICES](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.DpopSignature.html#constant_ALLOW_LISTED_SERVICES)
+[ALLOW\_LISTED\_SERVICES](class-aws-signature-dpopsignature-constant-allow-listed-services.md)
 = \['signin' => true\]
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.DpopSignature.html\#toc-methods)
+#### Methods  [header link](class-aws-signature-dpopsignature-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.DpopSignature.html#method___construct)
-: mixed Creates a new DpopSignature instance for the specified service[signRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.DpopSignature.html#method_signRequest)
+[\_\_construct()](class-aws-signature-dpopsignature-method-construct.md)
+: mixed Creates a new DpopSignature instance for the specified service[signRequest()](class-aws-signature-dpopsignature-method-signrequest.md)
 : [RequestInterface](class-psr-http-message-requestinterface.md)Signs an HTTP request with a DPoP header
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.DpopSignature.html\#constants)
+### Constants  [header link](class-aws-signature-dpopsignature-constants.md)
 
-#### ALLOW\_LISTED\_SERVICES  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.DpopSignature.html\#constant_ALLOW_LISTED_SERVICES)
+#### ALLOW\_LISTED\_SERVICES  [header link](class-aws-signature-dpopsignature-constant-allow-listed-services.md)
 
 `
     public
@@ -31,9 +31,9 @@ FinalYes
     = ['signin' => true]
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.DpopSignature.html\#methods)
+### Methods  [header link](class-aws-signature-dpopsignature-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.DpopSignature.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-signature-dpopsignature-method-construct.md)
 
 Creates a new DpopSignature instance for the specified service
 
@@ -48,7 +48,7 @@ $serviceName
 
 The name of the AWS service (must be in the allow list)
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.DpopSignature.html\#method___construct\#tags)
+##### Tags  [header link](class-aws-signature-dpopsignature-method-construct-tags.md)
 
 throwsRuntimeException
 
@@ -58,7 +58,7 @@ throwsInvalidArgumentException
 
 If the service is not in the allow list
 
-#### signRequest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.DpopSignature.html\#method_signRequest)
+#### signRequest()  [header link](class-aws-signature-dpopsignature-method-signrequest.md)
 
 Signs an HTTP request with a DPoP header
 
@@ -78,7 +78,7 @@ $key
 
 The private key for signing
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.DpopSignature.html\#method_signRequest\#tags)
+##### Tags  [header link](class-aws-signature-dpopsignature-method-signrequest-tags.md)
 
 throwsRuntimeException\|Exception
 
@@ -98,12 +98,12 @@ The request with the DPoP header added
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.DpopSignature.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.DpopSignature.html#toc-methods)
+  - [Constants](class-aws-signature-dpopsignature-toc-constants.md)
+  - [Methods](class-aws-signature-dpopsignature-toc-methods.md)
 - Constants
-  - [ALLOW\_LISTED\_SERVICES](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.DpopSignature.html#constant_ALLOW_LISTED_SERVICES)
+  - [ALLOW\_LISTED\_SERVICES](class-aws-signature-dpopsignature-constant-allow-listed-services.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.DpopSignature.html#method___construct)
-  - [signRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.DpopSignature.html#method_signRequest)
+  - [\_\_construct()](class-aws-signature-dpopsignature-method-construct.md)
+  - [signRequest()](class-aws-signature-dpopsignature-method-signrequest.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.DpopSignature.html#top)
+[Back To Top](class-aws-signature-dpopsignature-top.md)

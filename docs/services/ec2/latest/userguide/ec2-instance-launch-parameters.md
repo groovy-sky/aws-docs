@@ -649,7 +649,7 @@ maintain the correct number of instances to handle demand on your application,
 you can choose **consider EC2 Auto Scaling** to create a launch
 template and an Auto Scaling group. Auto Scaling scales the number of instances in the group
 according to your specifications. For more information, see the
-[Amazon EC2 Auto Scaling User Guide](https://docs.aws.amazon.com/autoscaling/ec2/userguide).
+[Amazon EC2 Auto Scaling User Guide](../../../autoscaling/ec2/userguide.md).
 
 ###### Note
 

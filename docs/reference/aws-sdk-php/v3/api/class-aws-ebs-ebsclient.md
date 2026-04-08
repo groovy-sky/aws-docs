@@ -17,18 +17,18 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2019-11-02**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ebs-2019-11-02.html)
+- [**2019-11-02**](api-ebs-2019-11-02.md)
 
-  - [CompleteSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ebs-2019-11-02.html#completesnapshot)
-  - [GetSnapshotBlock](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ebs-2019-11-02.html#getsnapshotblock)
-  - [ListChangedBlocks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ebs-2019-11-02.html#listchangedblocks)
-  - [ListSnapshotBlocks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ebs-2019-11-02.html#listsnapshotblocks)
-  - [PutSnapshotBlock](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ebs-2019-11-02.html#putsnapshotblock)
-  - [StartSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ebs-2019-11-02.html#startsnapshot)
+  - [CompleteSnapshot](api-ebs-2019-11-02-completesnapshot.md)
+  - [GetSnapshotBlock](api-ebs-2019-11-02-getsnapshotblock.md)
+  - [ListChangedBlocks](api-ebs-2019-11-02-listchangedblocks.md)
+  - [ListSnapshotBlocks](api-ebs-2019-11-02-listsnapshotblocks.md)
+  - [PutSnapshotBlock](api-ebs-2019-11-02-putsnapshotblock.md)
+  - [StartSnapshot](api-ebs-2019-11-02-startsnapshot.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EBS.EBSClient.html\#toc)
+### Table of Contents  [header link](class-aws-ebs-ebsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EBS.EBSClient.html\#toc-methods)
+#### Methods  [header link](class-aws-ebs-ebsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -59,7 +59,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EBS.EBSClient.html\#methods)
+### Methods  [header link](class-aws-ebs-ebsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -526,7 +526,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EBS.EBSClient.html#toc-methods)
+  - [Methods](class-aws-ebs-ebsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -553,4 +553,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EBS.EBSClient.html#top)
+[Back To Top](class-aws-ebs-ebsclient-top.md)

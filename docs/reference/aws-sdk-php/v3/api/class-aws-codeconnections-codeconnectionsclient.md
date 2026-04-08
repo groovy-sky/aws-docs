@@ -17,39 +17,39 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2023-12-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html)
+- [**2023-12-01**](api-codeconnections-2023-12-01.md)
 
-  - [CreateConnection](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#createconnection)
-  - [CreateHost](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#createhost)
-  - [CreateRepositoryLink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#createrepositorylink)
-  - [CreateSyncConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#createsyncconfiguration)
-  - [DeleteConnection](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#deleteconnection)
-  - [DeleteHost](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#deletehost)
-  - [DeleteRepositoryLink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#deleterepositorylink)
-  - [DeleteSyncConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#deletesyncconfiguration)
-  - [GetConnection](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#getconnection)
-  - [GetHost](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#gethost)
-  - [GetRepositoryLink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#getrepositorylink)
-  - [GetRepositorySyncStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#getrepositorysyncstatus)
-  - [GetResourceSyncStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#getresourcesyncstatus)
-  - [GetSyncBlockerSummary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#getsyncblockersummary)
-  - [GetSyncConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#getsyncconfiguration)
-  - [ListConnections](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#listconnections)
-  - [ListHosts](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#listhosts)
-  - [ListRepositoryLinks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#listrepositorylinks)
-  - [ListRepositorySyncDefinitions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#listrepositorysyncdefinitions)
-  - [ListSyncConfigurations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#listsyncconfigurations)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#listtagsforresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#untagresource)
-  - [UpdateHost](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#updatehost)
-  - [UpdateRepositoryLink](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#updaterepositorylink)
-  - [UpdateSyncBlocker](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#updatesyncblocker)
-  - [UpdateSyncConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeconnections-2023-12-01.html#updatesyncconfiguration)
+  - [CreateConnection](api-codeconnections-2023-12-01-createconnection.md)
+  - [CreateHost](api-codeconnections-2023-12-01-createhost.md)
+  - [CreateRepositoryLink](api-codeconnections-2023-12-01-createrepositorylink.md)
+  - [CreateSyncConfiguration](api-codeconnections-2023-12-01-createsyncconfiguration.md)
+  - [DeleteConnection](api-codeconnections-2023-12-01-deleteconnection.md)
+  - [DeleteHost](api-codeconnections-2023-12-01-deletehost.md)
+  - [DeleteRepositoryLink](api-codeconnections-2023-12-01-deleterepositorylink.md)
+  - [DeleteSyncConfiguration](api-codeconnections-2023-12-01-deletesyncconfiguration.md)
+  - [GetConnection](api-codeconnections-2023-12-01-getconnection.md)
+  - [GetHost](api-codeconnections-2023-12-01-gethost.md)
+  - [GetRepositoryLink](api-codeconnections-2023-12-01-getrepositorylink.md)
+  - [GetRepositorySyncStatus](api-codeconnections-2023-12-01-getrepositorysyncstatus.md)
+  - [GetResourceSyncStatus](api-codeconnections-2023-12-01-getresourcesyncstatus.md)
+  - [GetSyncBlockerSummary](api-codeconnections-2023-12-01-getsyncblockersummary.md)
+  - [GetSyncConfiguration](api-codeconnections-2023-12-01-getsyncconfiguration.md)
+  - [ListConnections](api-codeconnections-2023-12-01-listconnections.md)
+  - [ListHosts](api-codeconnections-2023-12-01-listhosts.md)
+  - [ListRepositoryLinks](api-codeconnections-2023-12-01-listrepositorylinks.md)
+  - [ListRepositorySyncDefinitions](api-codeconnections-2023-12-01-listrepositorysyncdefinitions.md)
+  - [ListSyncConfigurations](api-codeconnections-2023-12-01-listsyncconfigurations.md)
+  - [ListTagsForResource](api-codeconnections-2023-12-01-listtagsforresource.md)
+  - [TagResource](api-codeconnections-2023-12-01-tagresource.md)
+  - [UntagResource](api-codeconnections-2023-12-01-untagresource.md)
+  - [UpdateHost](api-codeconnections-2023-12-01-updatehost.md)
+  - [UpdateRepositoryLink](api-codeconnections-2023-12-01-updaterepositorylink.md)
+  - [UpdateSyncBlocker](api-codeconnections-2023-12-01-updatesyncblocker.md)
+  - [UpdateSyncConfiguration](api-codeconnections-2023-12-01-updatesyncconfiguration.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeConnections.CodeConnectionsClient.html\#toc)
+### Table of Contents  [header link](class-aws-codeconnections-codeconnectionsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeConnections.CodeConnectionsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-codeconnections-codeconnectionsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -80,7 +80,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeConnections.CodeConnectionsClient.html\#methods)
+### Methods  [header link](class-aws-codeconnections-codeconnectionsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -547,7 +547,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeConnections.CodeConnectionsClient.html#toc-methods)
+  - [Methods](class-aws-codeconnections-codeconnectionsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -574,4 +574,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeConnections.CodeConnectionsClient.html#top)
+[Back To Top](class-aws-codeconnections-codeconnectionsclient-top.md)

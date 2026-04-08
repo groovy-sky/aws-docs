@@ -9,25 +9,25 @@ AbstractYes
 
 Base class that is used by most API shapes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html\#toc)
+### Table of Contents  [header link](class-aws-api-abstractmodel-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-api-abstractmodel-toc-interfaces.md)
 
 ArrayAccess
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html\#toc-methods)
+#### Methods  [header link](class-aws-api-abstractmodel-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method___construct)
-: mixed [offsetExists()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method_offsetExists)
-: bool [offsetGet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method_offsetGet)
-: mixed\|null [offsetSet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method_offsetSet)
-: void [offsetUnset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method_offsetUnset)
-: void [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method_toArray)
+[\_\_construct()](class-aws-api-abstractmodel-method-construct.md)
+: mixed [offsetExists()](class-aws-api-abstractmodel-method-offsetexists.md)
+: bool [offsetGet()](class-aws-api-abstractmodel-method-offsetget.md)
+: mixed\|null [offsetSet()](class-aws-api-abstractmodel-method-offsetset.md)
+: void [offsetUnset()](class-aws-api-abstractmodel-method-offsetunset.md)
+: void [toArray()](class-aws-api-abstractmodel-method-toarray.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html\#methods)
+### Methods  [header link](class-aws-api-abstractmodel-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-api-abstractmodel-method-construct.md)
 
 `
     public
@@ -41,11 +41,11 @@ $definition
 Service description
 
 $shapeMap
-: [ShapeMap](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html)
+: [ShapeMap](class-aws-api-shapemap.md)
 
 Shapemap used for creating shapes
 
-#### offsetExists()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html\#method_offsetExists)
+#### offsetExists()  [header link](class-aws-api-abstractmodel-method-offsetexists.md)
 
 `
     public
@@ -60,7 +60,7 @@ $offset
 
 bool
 
-#### offsetGet()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html\#method_offsetGet)
+#### offsetGet()  [header link](class-aws-api-abstractmodel-method-offsetget.md)
 
 `
     public
@@ -75,7 +75,7 @@ $offset
 
 mixed\|null
 
-#### offsetSet()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html\#method_offsetSet)
+#### offsetSet()  [header link](class-aws-api-abstractmodel-method-offsetset.md)
 
 `
     public
@@ -87,7 +87,7 @@ $offset
 : mixed$value
 : mixed
 
-#### offsetUnset()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html\#method_offsetUnset)
+#### offsetUnset()  [header link](class-aws-api-abstractmodel-method-offsetunset.md)
 
 `
     public
@@ -98,7 +98,7 @@ $offset
 $offset
 : mixed
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html\#method_toArray)
+#### toArray()  [header link](class-aws-api-abstractmodel-method-toarray.md)
 
 `
     public
@@ -111,13 +111,13 @@ $offset
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#toc-methods)
+  - [Methods](class-aws-api-abstractmodel-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method___construct)
-  - [offsetExists()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method_offsetExists)
-  - [offsetGet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method_offsetGet)
-  - [offsetSet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method_offsetSet)
-  - [offsetUnset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method_offsetUnset)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#method_toArray)
+  - [\_\_construct()](class-aws-api-abstractmodel-method-construct.md)
+  - [offsetExists()](class-aws-api-abstractmodel-method-offsetexists.md)
+  - [offsetGet()](class-aws-api-abstractmodel-method-offsetget.md)
+  - [offsetSet()](class-aws-api-abstractmodel-method-offsetset.md)
+  - [offsetUnset()](class-aws-api-abstractmodel-method-offsetunset.md)
+  - [toArray()](class-aws-api-abstractmodel-method-toarray.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.AbstractModel.html#top)
+[Back To Top](class-aws-api-abstractmodel-top.md)

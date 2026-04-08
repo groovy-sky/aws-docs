@@ -17,42 +17,42 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2024-01-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html)
+- [**2024-01-01**](api-supplychain-2024-01-01.md)
 
-  - [CreateBillOfMaterialsImportJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#createbillofmaterialsimportjob)
-  - [CreateDataIntegrationFlow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#createdataintegrationflow)
-  - [CreateDataLakeDataset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#createdatalakedataset)
-  - [CreateDataLakeNamespace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#createdatalakenamespace)
-  - [CreateInstance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#createinstance)
-  - [DeleteDataIntegrationFlow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#deletedataintegrationflow)
-  - [DeleteDataLakeDataset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#deletedatalakedataset)
-  - [DeleteDataLakeNamespace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#deletedatalakenamespace)
-  - [DeleteInstance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#deleteinstance)
-  - [GetBillOfMaterialsImportJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#getbillofmaterialsimportjob)
-  - [GetDataIntegrationEvent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#getdataintegrationevent)
-  - [GetDataIntegrationFlow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#getdataintegrationflow)
-  - [GetDataIntegrationFlowExecution](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#getdataintegrationflowexecution)
-  - [GetDataLakeDataset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#getdatalakedataset)
-  - [GetDataLakeNamespace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#getdatalakenamespace)
-  - [GetInstance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#getinstance)
-  - [ListDataIntegrationEvents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#listdataintegrationevents)
-  - [ListDataIntegrationFlowExecutions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#listdataintegrationflowexecutions)
-  - [ListDataIntegrationFlows](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#listdataintegrationflows)
-  - [ListDataLakeDatasets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#listdatalakedatasets)
-  - [ListDataLakeNamespaces](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#listdatalakenamespaces)
-  - [ListInstances](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#listinstances)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#listtagsforresource)
-  - [SendDataIntegrationEvent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#senddataintegrationevent)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#untagresource)
-  - [UpdateDataIntegrationFlow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#updatedataintegrationflow)
-  - [UpdateDataLakeDataset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#updatedatalakedataset)
-  - [UpdateDataLakeNamespace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#updatedatalakenamespace)
-  - [UpdateInstance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-supplychain-2024-01-01.html#updateinstance)
+  - [CreateBillOfMaterialsImportJob](api-supplychain-2024-01-01-createbillofmaterialsimportjob.md)
+  - [CreateDataIntegrationFlow](api-supplychain-2024-01-01-createdataintegrationflow.md)
+  - [CreateDataLakeDataset](api-supplychain-2024-01-01-createdatalakedataset.md)
+  - [CreateDataLakeNamespace](api-supplychain-2024-01-01-createdatalakenamespace.md)
+  - [CreateInstance](api-supplychain-2024-01-01-createinstance.md)
+  - [DeleteDataIntegrationFlow](api-supplychain-2024-01-01-deletedataintegrationflow.md)
+  - [DeleteDataLakeDataset](api-supplychain-2024-01-01-deletedatalakedataset.md)
+  - [DeleteDataLakeNamespace](api-supplychain-2024-01-01-deletedatalakenamespace.md)
+  - [DeleteInstance](api-supplychain-2024-01-01-deleteinstance.md)
+  - [GetBillOfMaterialsImportJob](api-supplychain-2024-01-01-getbillofmaterialsimportjob.md)
+  - [GetDataIntegrationEvent](api-supplychain-2024-01-01-getdataintegrationevent.md)
+  - [GetDataIntegrationFlow](api-supplychain-2024-01-01-getdataintegrationflow.md)
+  - [GetDataIntegrationFlowExecution](api-supplychain-2024-01-01-getdataintegrationflowexecution.md)
+  - [GetDataLakeDataset](api-supplychain-2024-01-01-getdatalakedataset.md)
+  - [GetDataLakeNamespace](api-supplychain-2024-01-01-getdatalakenamespace.md)
+  - [GetInstance](api-supplychain-2024-01-01-getinstance.md)
+  - [ListDataIntegrationEvents](api-supplychain-2024-01-01-listdataintegrationevents.md)
+  - [ListDataIntegrationFlowExecutions](api-supplychain-2024-01-01-listdataintegrationflowexecutions.md)
+  - [ListDataIntegrationFlows](api-supplychain-2024-01-01-listdataintegrationflows.md)
+  - [ListDataLakeDatasets](api-supplychain-2024-01-01-listdatalakedatasets.md)
+  - [ListDataLakeNamespaces](api-supplychain-2024-01-01-listdatalakenamespaces.md)
+  - [ListInstances](api-supplychain-2024-01-01-listinstances.md)
+  - [ListTagsForResource](api-supplychain-2024-01-01-listtagsforresource.md)
+  - [SendDataIntegrationEvent](api-supplychain-2024-01-01-senddataintegrationevent.md)
+  - [TagResource](api-supplychain-2024-01-01-tagresource.md)
+  - [UntagResource](api-supplychain-2024-01-01-untagresource.md)
+  - [UpdateDataIntegrationFlow](api-supplychain-2024-01-01-updatedataintegrationflow.md)
+  - [UpdateDataLakeDataset](api-supplychain-2024-01-01-updatedatalakedataset.md)
+  - [UpdateDataLakeNamespace](api-supplychain-2024-01-01-updatedatalakenamespace.md)
+  - [UpdateInstance](api-supplychain-2024-01-01-updateinstance.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SupplyChain.SupplyChainClient.html\#toc)
+### Table of Contents  [header link](class-aws-supplychain-supplychainclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SupplyChain.SupplyChainClient.html\#toc-methods)
+#### Methods  [header link](class-aws-supplychain-supplychainclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -83,7 +83,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SupplyChain.SupplyChainClient.html\#methods)
+### Methods  [header link](class-aws-supplychain-supplychainclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -550,7 +550,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SupplyChain.SupplyChainClient.html#toc-methods)
+  - [Methods](class-aws-supplychain-supplychainclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -577,4 +577,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SupplyChain.SupplyChainClient.html#top)
+[Back To Top](class-aws-supplychain-supplychainclient-top.md)

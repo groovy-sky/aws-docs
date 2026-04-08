@@ -10,7 +10,7 @@ the request. Keep the following in mind:
 You can't change the queue type after you create it and you can't convert
 an existing standard queue into a FIFO queue. You must either create a new
 FIFO queue for your application or delete your existing standard queue and
-recreate it as a FIFO queue. For more information, see [Moving From a standard queue to a FIFO queue](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues.html#FIFO-queues-moving) in the
+recreate it as a FIFO queue. For more information, see [Moving From a standard queue to a FIFO queue](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/fifo-queues-fifo-queues-moving.md) in the
 _Amazon SQS Developer Guide_.
 
 - If you don't provide a value for an attribute, the queue is created with the
@@ -21,19 +21,19 @@ queue with the same name.
 
 To successfully create a new queue, you must provide a queue name that adheres to the
 [limits\
-related to queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/limits-queues.html) and is unique within the scope of your queues.
+related to queues](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/limits-queues.md) and is unique within the scope of your queues.
 
 ###### Note
 
 After you create a queue, you must wait at least one second after the queue is
 created to be able to use the queue.
 
-To retrieve the URL of a queue, use the [`GetQueueUrl`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueUrl.html) action. This action only requires the [`QueueName`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CreateQueue.html#API_CreateQueue_RequestSyntax) parameter.
+To retrieve the URL of a queue, use the [`GetQueueUrl`](api-getqueueurl.md) action. This action only requires the [`QueueName`](api-createqueue-api-createqueue-requestsyntax.md) parameter.
 
 When creating queues, keep the following points in mind:
 
 - If you specify the name of an existing queue and provide the exact same names
-and values for all its attributes, the [`CreateQueue`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CreateQueue.html) action will return the URL of the
+and values for all its attributes, the [`CreateQueue`](api-createqueue.md) action will return the URL of the
 existing queue instead of creating a new one.
 
 - If you attempt to create a queue with a name that already exists but with
@@ -45,7 +45,7 @@ altered.
 
 Cross-account permissions don't apply to this action. For more information,
 see [Grant \
-cross-account permissions to a role and a username](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-customer-managed-policy-examples.html#grant-cross-account-permissions-to-role-and-user-name) in the _Amazon SQS Developer Guide_.
+cross-account permissions to a role and a username](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/sqs-customer-managed-policy-examples-grant-cross-account-permissions-to-role-and-user-name.md) in the _Amazon SQS Developer Guide_.
 
 ## Request Syntax
 
@@ -64,7 +64,7 @@ cross-account permissions to a role and a username](https://docs.aws.amazon.com/
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -95,7 +95,7 @@ the age of existing messages.
 
 - `Policy` – The queue's policy. A valid AWS policy. For more
 information about policy structure, see [Overview of AWS IAM\
-Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/PoliciesOverview.html) in the _IAM User Guide_.
+Policies](../../../../services/iam/latest/userguide/policiesoverview.md) in the _IAM User Guide_.
 
 - `ReceiveMessageWaitTimeSeconds` – The length of time, in
 seconds, for which a `
@@ -155,11 +155,11 @@ key (CMK) for Amazon SQS or a custom CMK. For more information, see [Key Terms](
 always `alias/aws/sqs`, the alias of a custom CMK can, for example,
 be `alias/MyAlias
                           `. For more examples, see
-[KeyId](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html#API_DescribeKey_RequestParameters) in the _AWS Key Management Service API_
+[KeyId](../../../kms/latest/apireference/api-describekey-api-describekey-requestparameters.md) in the _AWS Key Management Service API_
 _Reference_.
 
 - `KmsDataKeyReusePeriodSeconds` – The length of time, in
-seconds, for which Amazon SQS can reuse a [data key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#data-keys) to
+seconds, for which Amazon SQS can reuse a [data key](../../../../services/kms/latest/developerguide/concepts-data-keys.md) to
 encrypt or decrypt messages before calling AWS KMS again. An integer
 representing seconds, between 60 seconds (1 minute) and 86,400 seconds (24
 hours). Default: 300 (5 minutes). A shorter time period provides better security
@@ -168,10 +168,10 @@ more information, see [How Does the Data Key Reuse Period Work?](../../../../ser
 
 - `SqsManagedSseEnabled` – Enables server-side queue encryption
 using SQS owned encryption keys. Only one server-side encryption option is
-supported per queue (for example, [SSE-KMS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-configure-sse-existing-queue.html) or [SSE-SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-configure-sqs-sse-queue.html)).
+supported per queue (for example, [SSE-KMS](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/sqs-configure-sse-existing-queue.md) or [SSE-SQS](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/sqs-configure-sqs-sse-queue.md)).
 
 The following attributes apply only to [FIFO (first-in-first-out)\
-queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues.html):
+queues](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/fifo-queues.md):
 
 - `FifoQueue` – Designates a queue as FIFO. Valid values are
 `true` and `false`. If you don't specify the `FifoQueue` attribute, Amazon SQS creates a standard queue. You
@@ -179,7 +179,7 @@ can provide this attribute only during queue creation. You can't change it for
 an existing queue. When you set this attribute, you must also provide the
 `MessageGroupId` for your messages explicitly.
 
-For more information, see [FIFO queue logic](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues-understanding-logic.html) in the _Amazon SQS Developer_
+For more information, see [FIFO queue logic](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/fifo-queues-understanding-logic.md) in the _Amazon SQS Developer_
 _Guide_.
 
 - `ContentBasedDeduplication` – Enables content-based
@@ -241,7 +241,7 @@ If you set these attributes to anything other than the values shown for enabling
 throughput, normal throughput is in effect and deduplication occurs as specified.
 
 For information on throughput quotas,
-see [Quotas related to messages](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/quotas-messages.html)
+see [Quotas related to messages](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/quotas-messages.md)
 in the _Amazon SQS Developer Guide_.
 
 Type: String to string map
@@ -283,7 +283,7 @@ When you use queue tags, keep the following guidelines in mind:
 - A new tag with a key identical to that of an existing tag overwrites the existing tag.
 
 For a full list of tag restrictions, see
-[Quotas related to queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-limits.html#limits-queues)
+[Quotas related to queues](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/sqs-limits-limits-queues.md)
 in the _Amazon SQS Developer Guide_.
 
 ###### Note
@@ -293,7 +293,7 @@ To be able to tag a queue on creation, you must have the
 
 Cross-account permissions don't apply to this action. For more information,
 see [Grant \
-cross-account permissions to a role and a username](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-customer-managed-policy-examples.html#grant-cross-account-permissions-to-role-and-user-name) in the _Amazon SQS Developer Guide_.
+cross-account permissions to a role and a username](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/sqs-customer-managed-policy-examples-grant-cross-account-permissions-to-role-and-user-name.md) in the _Amazon SQS Developer Guide_.
 
 Type: String to string map
 
@@ -322,7 +322,7 @@ Type: String
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Errors](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Errors](commonerrors.md).
 
 **InvalidAddress**
 
@@ -385,7 +385,7 @@ HTTP Status Code: 400
 
 The following example query requests create a new queue named
 `MyQueue`. The structure of `AUTHPARAMS` depends on the signature of the API request.
-For more information, see [Examples of Signed Signature Version 4 Requests](https://docs.aws.amazon.com/general/latest/gr/sigv4-signed-request-examples.html) in the _AWS General Reference_.
+For more information, see [Examples of Signed Signature Version 4 Requests](../../../../general/general/latest/gr/sigv4-signed-request-examples.md) in the _AWS General Reference_.
 
 ### Example
 
@@ -498,27 +498,27 @@ https://sqs.us-east-2.amazonaws.com/123456789012/MyQueue/
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/sqs-2012-11-05/CreateQueue)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/sqs-2012-11-05/createqueue.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/sqs-2012-11-05/CreateQueue)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/sqs-2012-11-05/createqueue.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/sqs-2012-11-05/CreateQueue)
+- [AWS SDK for C++](../../../goto/sdkforcpp/sqs-2012-11-05/createqueue.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/sqs-2012-11-05/CreateQueue)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/sqs-2012-11-05/createqueue.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sqs-2012-11-05/CreateQueue)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/sqs-2012-11-05/createqueue.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/sqs-2012-11-05/CreateQueue)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/sqs-2012-11-05/createqueue.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/sqs-2012-11-05/CreateQueue)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/sqs-2012-11-05/createqueue.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/sqs-2012-11-05/CreateQueue)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/sqs-2012-11-05/createqueue.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/sqs-2012-11-05/CreateQueue)
+- [AWS SDK for Python](../../../../services/goto/boto3/sqs-2012-11-05/createqueue.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sqs-2012-11-05/CreateQueue)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/sqs-2012-11-05/createqueue.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ChangeMessageVisibilityBatch
 

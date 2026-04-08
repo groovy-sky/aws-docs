@@ -17,24 +17,24 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2015-08-04**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-firehose-2015-08-04.html)
+- [**2015-08-04**](api-firehose-2015-08-04.md)
 
-  - [CreateDeliveryStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-firehose-2015-08-04.html#createdeliverystream)
-  - [DeleteDeliveryStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-firehose-2015-08-04.html#deletedeliverystream)
-  - [DescribeDeliveryStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-firehose-2015-08-04.html#describedeliverystream)
-  - [ListDeliveryStreams](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-firehose-2015-08-04.html#listdeliverystreams)
-  - [ListTagsForDeliveryStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-firehose-2015-08-04.html#listtagsfordeliverystream)
-  - [PutRecord](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-firehose-2015-08-04.html#putrecord)
-  - [PutRecordBatch](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-firehose-2015-08-04.html#putrecordbatch)
-  - [StartDeliveryStreamEncryption](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-firehose-2015-08-04.html#startdeliverystreamencryption)
-  - [StopDeliveryStreamEncryption](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-firehose-2015-08-04.html#stopdeliverystreamencryption)
-  - [TagDeliveryStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-firehose-2015-08-04.html#tagdeliverystream)
-  - [UntagDeliveryStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-firehose-2015-08-04.html#untagdeliverystream)
-  - [UpdateDestination](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-firehose-2015-08-04.html#updatedestination)
+  - [CreateDeliveryStream](api-firehose-2015-08-04-createdeliverystream.md)
+  - [DeleteDeliveryStream](api-firehose-2015-08-04-deletedeliverystream.md)
+  - [DescribeDeliveryStream](api-firehose-2015-08-04-describedeliverystream.md)
+  - [ListDeliveryStreams](api-firehose-2015-08-04-listdeliverystreams.md)
+  - [ListTagsForDeliveryStream](api-firehose-2015-08-04-listtagsfordeliverystream.md)
+  - [PutRecord](api-firehose-2015-08-04-putrecord.md)
+  - [PutRecordBatch](api-firehose-2015-08-04-putrecordbatch.md)
+  - [StartDeliveryStreamEncryption](api-firehose-2015-08-04-startdeliverystreamencryption.md)
+  - [StopDeliveryStreamEncryption](api-firehose-2015-08-04-stopdeliverystreamencryption.md)
+  - [TagDeliveryStream](api-firehose-2015-08-04-tagdeliverystream.md)
+  - [UntagDeliveryStream](api-firehose-2015-08-04-untagdeliverystream.md)
+  - [UpdateDestination](api-firehose-2015-08-04-updatedestination.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Firehose.FirehoseClient.html\#toc)
+### Table of Contents  [header link](class-aws-firehose-firehoseclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Firehose.FirehoseClient.html\#toc-methods)
+#### Methods  [header link](class-aws-firehose-firehoseclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -65,7 +65,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Firehose.FirehoseClient.html\#methods)
+### Methods  [header link](class-aws-firehose-firehoseclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -532,7 +532,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Firehose.FirehoseClient.html#toc-methods)
+  - [Methods](class-aws-firehose-firehoseclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -559,4 +559,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Firehose.FirehoseClient.html#top)
+[Back To Top](class-aws-firehose-firehoseclient-top.md)

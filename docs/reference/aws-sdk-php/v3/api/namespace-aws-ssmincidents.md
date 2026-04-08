@@ -4,15 +4,15 @@ Menu
 
 ## SSMIncidents
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmincidents.html\#toc)
+### Table of Contents  [header link](namespace-aws-ssmincidents-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmincidents.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-ssmincidents-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmincidents.exception.html)
+[Exception](namespace-aws-ssmincidents-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmincidents.html\#toc-classes)
+#### Classes  [header link](namespace-aws-ssmincidents-toc-classes.md)
 
-[SSMIncidentsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMIncidents.SSMIncidentsClient.html)This client is used to interact with the **AWS Systems Manager Incident Manager** service.
+[SSMIncidentsClient](class-aws-ssmincidents-ssmincidentsclient.md)This client is used to interact with the **AWS Systems Manager Incident Manager** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmincidents.html#toc-classes)
+  - [Classes](namespace-aws-ssmincidents-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmincidents.html#top)
+[Back To Top](namespace-aws-ssmincidents-top.md)

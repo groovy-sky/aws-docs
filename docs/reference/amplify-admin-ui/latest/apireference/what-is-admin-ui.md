@@ -22,6 +22,6 @@ access the data they need to develop and manage apps more efficiently.
 For more information on getting started with Amplify Studio, see [Getting started](https://docs.amplify.aws/console/adminui/start) in the
 _Amplify Docs_.
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Operations

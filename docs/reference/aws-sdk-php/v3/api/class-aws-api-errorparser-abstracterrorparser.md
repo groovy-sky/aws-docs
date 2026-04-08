@@ -2,22 +2,22 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [Api](namespace-aws-api.md)
-- [ErrorParser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.api.errorparser.html)
+- [ErrorParser](namespace-aws-api-errorparser.md)
 
-## AbstractErrorParser        in package    - [Aws](package-aws.md)       Uses  [MetadataParserTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.MetadataParserTrait.html), [PayloadParserTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.PayloadParserTrait.html)
+## AbstractErrorParser        in package    - [Aws](package-aws.md)       Uses  [MetadataParserTrait](class-aws-api-parser-metadataparsertrait.md), [PayloadParserTrait](class-aws-api-parser-payloadparsertrait.md)
 
 AbstractYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.AbstractErrorParser.html\#toc)
+### Table of Contents  [header link](class-aws-api-errorparser-abstracterrorparser-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.AbstractErrorParser.html\#toc-methods)
+#### Methods  [header link](class-aws-api-errorparser-abstracterrorparser-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.AbstractErrorParser.html#method___construct)
+[\_\_construct()](class-aws-api-errorparser-abstracterrorparser-method-construct.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.AbstractErrorParser.html\#methods)
+### Methods  [header link](class-aws-api-errorparser-abstracterrorparser-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.AbstractErrorParser.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-api-errorparser-abstracterrorparser-method-construct.md)
 
 `
     public
@@ -35,8 +35,8 @@ $api
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.AbstractErrorParser.html#toc-methods)
+  - [Methods](class-aws-api-errorparser-abstracterrorparser-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.AbstractErrorParser.html#method___construct)
+  - [\_\_construct()](class-aws-api-errorparser-abstracterrorparser-method-construct.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.AbstractErrorParser.html#top)
+[Back To Top](class-aws-api-errorparser-abstracterrorparser-top.md)

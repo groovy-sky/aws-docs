@@ -7,29 +7,29 @@ Menu
 
 Represents an SNS message received over http(s).
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html\#toc)
+### Table of Contents  [header link](class-aws-sns-message-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-sns-message-toc-interfaces.md)
 
 ArrayAccessIteratorAggregate
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html\#toc-methods)
+#### Methods  [header link](class-aws-sns-message-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html#method___construct)
-: mixed Creates a Message object from an array of raw message data.[fromJsonString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html#method_fromJsonString)
-: [Message](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html)Creates a Message object from a JSON-decodable string.[fromPsrRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html#method_fromPsrRequest)
-: [Message](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html)Creates a Message object from a PSR-7 Request or ServerRequest object.[fromRawPostData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html#method_fromRawPostData)
-: [Message](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html)Creates a Message object from the raw POST data[getIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html#method_getIterator)
-: mixed [offsetExists()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html#method_offsetExists)
-: mixed [offsetGet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html#method_offsetGet)
-: mixed [offsetSet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html#method_offsetSet)
-: mixed [offsetUnset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html#method_offsetUnset)
-: mixed [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html#method_toArray)
+[\_\_construct()](class-aws-sns-message-method-construct.md)
+: mixed Creates a Message object from an array of raw message data.[fromJsonString()](class-aws-sns-message-method-fromjsonstring.md)
+: [Message](class-aws-sns-message.md)Creates a Message object from a JSON-decodable string.[fromPsrRequest()](class-aws-sns-message-method-frompsrrequest.md)
+: [Message](class-aws-sns-message.md)Creates a Message object from a PSR-7 Request or ServerRequest object.[fromRawPostData()](class-aws-sns-message-method-fromrawpostdata.md)
+: [Message](class-aws-sns-message.md)Creates a Message object from the raw POST data[getIterator()](class-aws-sns-message-method-getiterator.md)
+: mixed [offsetExists()](class-aws-sns-message-method-offsetexists.md)
+: mixed [offsetGet()](class-aws-sns-message-method-offsetget.md)
+: mixed [offsetSet()](class-aws-sns-message-method-offsetset.md)
+: mixed [offsetUnset()](class-aws-sns-message-method-offsetunset.md)
+: mixed [toArray()](class-aws-sns-message-method-toarray.md)
 : array<string\|int, mixed> Get all the message data as a plain array.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html\#methods)
+### Methods  [header link](class-aws-sns-message-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-sns-message-method-construct.md)
 
 Creates a Message object from an array of raw message data.
 
@@ -44,14 +44,14 @@ $data
 
 The message data.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html\#method___construct\#tags)
+##### Tags  [header link](class-aws-sns-message-method-construct-tags.md)
 
 throwsInvalidArgumentException
 
 If a valid type is not provided or
 there are other required keys missing.
 
-#### fromJsonString()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html\#method_fromJsonString)
+#### fromJsonString()  [header link](class-aws-sns-message-method-fromjsonstring.md)
 
 Creates a Message object from a JSON-decodable string.
 
@@ -66,9 +66,9 @@ $requestBody
 
 ##### Return values
 
-[Message](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html)
+[Message](class-aws-sns-message.md)
 
-#### fromPsrRequest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html\#method_fromPsrRequest)
+#### fromPsrRequest()  [header link](class-aws-sns-message-method-frompsrrequest.md)
 
 Creates a Message object from a PSR-7 Request or ServerRequest object.
 
@@ -83,9 +83,9 @@ $request
 
 ##### Return values
 
-[Message](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html)
+[Message](class-aws-sns-message.md)
 
-#### fromRawPostData()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html\#method_fromRawPostData)
+#### fromRawPostData()  [header link](class-aws-sns-message-method-fromrawpostdata.md)
 
 Creates a Message object from the raw POST data
 
@@ -93,7 +93,7 @@ Creates a Message object from the raw POST data
     public
             static        fromRawPostData() : Message`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html\#method_fromRawPostData\#tags)
+##### Tags  [header link](class-aws-sns-message-method-fromrawpostdata-tags.md)
 
 throwsRuntimeException
 
@@ -101,15 +101,15 @@ If the POST data is absent, or not a valid JSON document
 
 ##### Return values
 
-[Message](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html)
+[Message](class-aws-sns-message.md)
 
-#### getIterator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html\#method_getIterator)
+#### getIterator()  [header link](class-aws-sns-message-method-getiterator.md)
 
 `
     public
                     getIterator() : mixed`
 
-#### offsetExists()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html\#method_offsetExists)
+#### offsetExists()  [header link](class-aws-sns-message-method-offsetexists.md)
 
 `
     public
@@ -120,7 +120,7 @@ If the POST data is absent, or not a valid JSON document
 $key
 : mixed
 
-#### offsetGet()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html\#method_offsetGet)
+#### offsetGet()  [header link](class-aws-sns-message-method-offsetget.md)
 
 `
     public
@@ -131,7 +131,7 @@ $key
 $key
 : mixed
 
-#### offsetSet()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html\#method_offsetSet)
+#### offsetSet()  [header link](class-aws-sns-message-method-offsetset.md)
 
 `
     public
@@ -143,7 +143,7 @@ $key
 : mixed$value
 : mixed
 
-#### offsetUnset()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html\#method_offsetUnset)
+#### offsetUnset()  [header link](class-aws-sns-message-method-offsetunset.md)
 
 `
     public
@@ -154,7 +154,7 @@ $key
 $key
 : mixed
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html\#method_toArray)
+#### toArray()  [header link](class-aws-sns-message-method-toarray.md)
 
 Get all the message data as a plain array.
 
@@ -172,17 +172,17 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html#toc-methods)
+  - [Methods](class-aws-sns-message-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html#method___construct)
-  - [fromJsonString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html#method_fromJsonString)
-  - [fromPsrRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html#method_fromPsrRequest)
-  - [fromRawPostData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html#method_fromRawPostData)
-  - [getIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html#method_getIterator)
-  - [offsetExists()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html#method_offsetExists)
-  - [offsetGet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html#method_offsetGet)
-  - [offsetSet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html#method_offsetSet)
-  - [offsetUnset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html#method_offsetUnset)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html#method_toArray)
+  - [\_\_construct()](class-aws-sns-message-method-construct.md)
+  - [fromJsonString()](class-aws-sns-message-method-fromjsonstring.md)
+  - [fromPsrRequest()](class-aws-sns-message-method-frompsrrequest.md)
+  - [fromRawPostData()](class-aws-sns-message-method-fromrawpostdata.md)
+  - [getIterator()](class-aws-sns-message-method-getiterator.md)
+  - [offsetExists()](class-aws-sns-message-method-offsetexists.md)
+  - [offsetGet()](class-aws-sns-message-method-offsetget.md)
+  - [offsetSet()](class-aws-sns-message-method-offsetset.md)
+  - [offsetUnset()](class-aws-sns-message-method-offsetunset.md)
+  - [toArray()](class-aws-sns-message-method-toarray.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Message.html#top)
+[Back To Top](class-aws-sns-message-top.md)

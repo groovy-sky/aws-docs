@@ -17,42 +17,42 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2022-12-25**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html)
+- [**2022-12-25**](api-mediapackagev2-2022-12-25.md)
 
-  - [CancelHarvestJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#cancelharvestjob)
-  - [CreateChannel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#createchannel)
-  - [CreateChannelGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#createchannelgroup)
-  - [CreateHarvestJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#createharvestjob)
-  - [CreateOriginEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#createoriginendpoint)
-  - [DeleteChannel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#deletechannel)
-  - [DeleteChannelGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#deletechannelgroup)
-  - [DeleteChannelPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#deletechannelpolicy)
-  - [DeleteOriginEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#deleteoriginendpoint)
-  - [DeleteOriginEndpointPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#deleteoriginendpointpolicy)
-  - [GetChannel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#getchannel)
-  - [GetChannelGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#getchannelgroup)
-  - [GetChannelPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#getchannelpolicy)
-  - [GetHarvestJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#getharvestjob)
-  - [GetOriginEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#getoriginendpoint)
-  - [GetOriginEndpointPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#getoriginendpointpolicy)
-  - [ListChannelGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#listchannelgroups)
-  - [ListChannels](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#listchannels)
-  - [ListHarvestJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#listharvestjobs)
-  - [ListOriginEndpoints](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#listoriginendpoints)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#listtagsforresource)
-  - [PutChannelPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#putchannelpolicy)
-  - [PutOriginEndpointPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#putoriginendpointpolicy)
-  - [ResetChannelState](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#resetchannelstate)
-  - [ResetOriginEndpointState](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#resetoriginendpointstate)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#untagresource)
-  - [UpdateChannel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#updatechannel)
-  - [UpdateChannelGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#updatechannelgroup)
-  - [UpdateOriginEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediapackagev2-2022-12-25.html#updateoriginendpoint)
+  - [CancelHarvestJob](api-mediapackagev2-2022-12-25-cancelharvestjob.md)
+  - [CreateChannel](api-mediapackagev2-2022-12-25-createchannel.md)
+  - [CreateChannelGroup](api-mediapackagev2-2022-12-25-createchannelgroup.md)
+  - [CreateHarvestJob](api-mediapackagev2-2022-12-25-createharvestjob.md)
+  - [CreateOriginEndpoint](api-mediapackagev2-2022-12-25-createoriginendpoint.md)
+  - [DeleteChannel](api-mediapackagev2-2022-12-25-deletechannel.md)
+  - [DeleteChannelGroup](api-mediapackagev2-2022-12-25-deletechannelgroup.md)
+  - [DeleteChannelPolicy](api-mediapackagev2-2022-12-25-deletechannelpolicy.md)
+  - [DeleteOriginEndpoint](api-mediapackagev2-2022-12-25-deleteoriginendpoint.md)
+  - [DeleteOriginEndpointPolicy](api-mediapackagev2-2022-12-25-deleteoriginendpointpolicy.md)
+  - [GetChannel](api-mediapackagev2-2022-12-25-getchannel.md)
+  - [GetChannelGroup](api-mediapackagev2-2022-12-25-getchannelgroup.md)
+  - [GetChannelPolicy](api-mediapackagev2-2022-12-25-getchannelpolicy.md)
+  - [GetHarvestJob](api-mediapackagev2-2022-12-25-getharvestjob.md)
+  - [GetOriginEndpoint](api-mediapackagev2-2022-12-25-getoriginendpoint.md)
+  - [GetOriginEndpointPolicy](api-mediapackagev2-2022-12-25-getoriginendpointpolicy.md)
+  - [ListChannelGroups](api-mediapackagev2-2022-12-25-listchannelgroups.md)
+  - [ListChannels](api-mediapackagev2-2022-12-25-listchannels.md)
+  - [ListHarvestJobs](api-mediapackagev2-2022-12-25-listharvestjobs.md)
+  - [ListOriginEndpoints](api-mediapackagev2-2022-12-25-listoriginendpoints.md)
+  - [ListTagsForResource](api-mediapackagev2-2022-12-25-listtagsforresource.md)
+  - [PutChannelPolicy](api-mediapackagev2-2022-12-25-putchannelpolicy.md)
+  - [PutOriginEndpointPolicy](api-mediapackagev2-2022-12-25-putoriginendpointpolicy.md)
+  - [ResetChannelState](api-mediapackagev2-2022-12-25-resetchannelstate.md)
+  - [ResetOriginEndpointState](api-mediapackagev2-2022-12-25-resetoriginendpointstate.md)
+  - [TagResource](api-mediapackagev2-2022-12-25-tagresource.md)
+  - [UntagResource](api-mediapackagev2-2022-12-25-untagresource.md)
+  - [UpdateChannel](api-mediapackagev2-2022-12-25-updatechannel.md)
+  - [UpdateChannelGroup](api-mediapackagev2-2022-12-25-updatechannelgroup.md)
+  - [UpdateOriginEndpoint](api-mediapackagev2-2022-12-25-updateoriginendpoint.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackageV2.MediaPackageV2Client.html\#toc)
+### Table of Contents  [header link](class-aws-mediapackagev2-mediapackagev2client-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackageV2.MediaPackageV2Client.html\#toc-methods)
+#### Methods  [header link](class-aws-mediapackagev2-mediapackagev2client-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -83,7 +83,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackageV2.MediaPackageV2Client.html\#methods)
+### Methods  [header link](class-aws-mediapackagev2-mediapackagev2client-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -550,7 +550,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackageV2.MediaPackageV2Client.html#toc-methods)
+  - [Methods](class-aws-mediapackagev2-mediapackagev2client-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -577,4 +577,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackageV2.MediaPackageV2Client.html#top)
+[Back To Top](class-aws-mediapackagev2-mediapackagev2client-top.md)

@@ -17,20 +17,20 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-09-05**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sms-voice-2018-09-05.html)
+- [**2018-09-05**](api-sms-voice-2018-09-05.md)
 
-  - [CreateConfigurationSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sms-voice-2018-09-05.html#createconfigurationset)
-  - [CreateConfigurationSetEventDestination](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sms-voice-2018-09-05.html#createconfigurationseteventdestination)
-  - [DeleteConfigurationSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sms-voice-2018-09-05.html#deleteconfigurationset)
-  - [DeleteConfigurationSetEventDestination](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sms-voice-2018-09-05.html#deleteconfigurationseteventdestination)
-  - [GetConfigurationSetEventDestinations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sms-voice-2018-09-05.html#getconfigurationseteventdestinations)
-  - [ListConfigurationSets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sms-voice-2018-09-05.html#listconfigurationsets)
-  - [SendVoiceMessage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sms-voice-2018-09-05.html#sendvoicemessage)
-  - [UpdateConfigurationSetEventDestination](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sms-voice-2018-09-05.html#updateconfigurationseteventdestination)
+  - [CreateConfigurationSet](api-sms-voice-2018-09-05-createconfigurationset.md)
+  - [CreateConfigurationSetEventDestination](api-sms-voice-2018-09-05-createconfigurationseteventdestination.md)
+  - [DeleteConfigurationSet](api-sms-voice-2018-09-05-deleteconfigurationset.md)
+  - [DeleteConfigurationSetEventDestination](api-sms-voice-2018-09-05-deleteconfigurationseteventdestination.md)
+  - [GetConfigurationSetEventDestinations](api-sms-voice-2018-09-05-getconfigurationseteventdestinations.md)
+  - [ListConfigurationSets](api-sms-voice-2018-09-05-listconfigurationsets.md)
+  - [SendVoiceMessage](api-sms-voice-2018-09-05-sendvoicemessage.md)
+  - [UpdateConfigurationSetEventDestination](api-sms-voice-2018-09-05-updateconfigurationseteventdestination.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PinpointSMSVoice.PinpointSMSVoiceClient.html\#toc)
+### Table of Contents  [header link](class-aws-pinpointsmsvoice-pinpointsmsvoiceclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PinpointSMSVoice.PinpointSMSVoiceClient.html\#toc-methods)
+#### Methods  [header link](class-aws-pinpointsmsvoice-pinpointsmsvoiceclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -61,7 +61,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PinpointSMSVoice.PinpointSMSVoiceClient.html\#methods)
+### Methods  [header link](class-aws-pinpointsmsvoice-pinpointsmsvoiceclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -528,7 +528,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PinpointSMSVoice.PinpointSMSVoiceClient.html#toc-methods)
+  - [Methods](class-aws-pinpointsmsvoice-pinpointsmsvoiceclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -555,4 +555,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PinpointSMSVoice.PinpointSMSVoiceClient.html#top)
+[Back To Top](class-aws-pinpointsmsvoice-pinpointsmsvoiceclient-top.md)

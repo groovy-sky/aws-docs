@@ -17,34 +17,34 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2022-07-26**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html)
+- [**2022-07-26**](api-mpa-2022-07-26.md)
 
-  - [CancelSession](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html#cancelsession)
-  - [CreateApprovalTeam](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html#createapprovalteam)
-  - [CreateIdentitySource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html#createidentitysource)
-  - [DeleteIdentitySource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html#deleteidentitysource)
-  - [DeleteInactiveApprovalTeamVersion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html#deleteinactiveapprovalteamversion)
-  - [GetApprovalTeam](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html#getapprovalteam)
-  - [GetIdentitySource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html#getidentitysource)
-  - [GetPolicyVersion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html#getpolicyversion)
-  - [GetResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html#getresourcepolicy)
-  - [GetSession](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html#getsession)
-  - [ListApprovalTeams](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html#listapprovalteams)
-  - [ListIdentitySources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html#listidentitysources)
-  - [ListPolicies](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html#listpolicies)
-  - [ListPolicyVersions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html#listpolicyversions)
-  - [ListResourcePolicies](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html#listresourcepolicies)
-  - [ListSessions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html#listsessions)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html#listtagsforresource)
-  - [StartActiveApprovalTeamDeletion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html#startactiveapprovalteamdeletion)
-  - [StartApprovalTeamBaseline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html#startapprovalteambaseline)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html#untagresource)
-  - [UpdateApprovalTeam](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mpa-2022-07-26.html#updateapprovalteam)
+  - [CancelSession](api-mpa-2022-07-26-cancelsession.md)
+  - [CreateApprovalTeam](api-mpa-2022-07-26-createapprovalteam.md)
+  - [CreateIdentitySource](api-mpa-2022-07-26-createidentitysource.md)
+  - [DeleteIdentitySource](api-mpa-2022-07-26-deleteidentitysource.md)
+  - [DeleteInactiveApprovalTeamVersion](api-mpa-2022-07-26-deleteinactiveapprovalteamversion.md)
+  - [GetApprovalTeam](api-mpa-2022-07-26-getapprovalteam.md)
+  - [GetIdentitySource](api-mpa-2022-07-26-getidentitysource.md)
+  - [GetPolicyVersion](api-mpa-2022-07-26-getpolicyversion.md)
+  - [GetResourcePolicy](api-mpa-2022-07-26-getresourcepolicy.md)
+  - [GetSession](api-mpa-2022-07-26-getsession.md)
+  - [ListApprovalTeams](api-mpa-2022-07-26-listapprovalteams.md)
+  - [ListIdentitySources](api-mpa-2022-07-26-listidentitysources.md)
+  - [ListPolicies](api-mpa-2022-07-26-listpolicies.md)
+  - [ListPolicyVersions](api-mpa-2022-07-26-listpolicyversions.md)
+  - [ListResourcePolicies](api-mpa-2022-07-26-listresourcepolicies.md)
+  - [ListSessions](api-mpa-2022-07-26-listsessions.md)
+  - [ListTagsForResource](api-mpa-2022-07-26-listtagsforresource.md)
+  - [StartActiveApprovalTeamDeletion](api-mpa-2022-07-26-startactiveapprovalteamdeletion.md)
+  - [StartApprovalTeamBaseline](api-mpa-2022-07-26-startapprovalteambaseline.md)
+  - [TagResource](api-mpa-2022-07-26-tagresource.md)
+  - [UntagResource](api-mpa-2022-07-26-untagresource.md)
+  - [UpdateApprovalTeam](api-mpa-2022-07-26-updateapprovalteam.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MPA.MPAClient.html\#toc)
+### Table of Contents  [header link](class-aws-mpa-mpaclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MPA.MPAClient.html\#toc-methods)
+#### Methods  [header link](class-aws-mpa-mpaclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -75,7 +75,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MPA.MPAClient.html\#methods)
+### Methods  [header link](class-aws-mpa-mpaclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -542,7 +542,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MPA.MPAClient.html#toc-methods)
+  - [Methods](class-aws-mpa-mpaclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -569,4 +569,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MPA.MPAClient.html#top)
+[Back To Top](class-aws-mpa-mpaclient-top.md)

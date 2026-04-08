@@ -3,36 +3,36 @@ Menu
 - [Aws](namespace-aws.md)
 - [Token](namespace-aws-token.md)
 
-## SsoTokenProvider        in package    - [Aws](package-aws.md)       implements  [RefreshableTokenProviderInterface](class-aws-token-refreshabletokenproviderinterface.md)  Uses  [ParsesIniTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.ParsesIniTrait.html)
+## SsoTokenProvider        in package    - [Aws](package-aws.md)       implements  [RefreshableTokenProviderInterface](class-aws-token-refreshabletokenproviderinterface.md)  Uses  [ParsesIniTrait](class-aws-token-parsesinitrait.md)
 
 Token that comes from the SSO provider
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html\#toc)
+### Table of Contents  [header link](class-aws-token-ssotokenprovider-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-token-ssotokenprovider-toc-interfaces.md)
 
 [RefreshableTokenProviderInterface](class-aws-token-refreshabletokenproviderinterface.md)Provides access to an AWS token used for accessing AWS services
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html\#toc-constants)
+#### Constants  [header link](class-aws-token-ssotokenprovider-toc-constants.md)
 
-[ENV\_PROFILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html#constant_ENV_PROFILE)
-= 'AWS\_PROFILE' [REFRESH\_ATTEMPT\_WINDOW\_IN\_SECS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html#constant_REFRESH_ATTEMPT_WINDOW_IN_SECS)
-= 30 [REFRESH\_WINDOW\_IN\_SECS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html#constant_REFRESH_WINDOW_IN_SECS)
+[ENV\_PROFILE](class-aws-token-ssotokenprovider-constant-env-profile.md)
+= 'AWS\_PROFILE' [REFRESH\_ATTEMPT\_WINDOW\_IN\_SECS](class-aws-token-ssotokenprovider-constant-refresh-attempt-window-in-secs.md)
+= 30 [REFRESH\_WINDOW\_IN\_SECS](class-aws-token-ssotokenprovider-constant-refresh-window-in-secs.md)
 = 300
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html\#toc-methods)
+#### Methods  [header link](class-aws-token-ssotokenprovider-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html#method___construct)
-: mixed Constructs a new SsoTokenProvider object, which will fetch a token from an authenticated SSO profile[\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html#method___invoke)
-: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Loads cached sso credentials.[getTokenData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html#method_getTokenData)
-: array<string\|int, mixed> [getTokenLocation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html#method_getTokenLocation)
-: string [refresh()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html#method_refresh)
-: array<string\|int, mixed> This method attempt to refresh when possible.[shouldAttemptRefresh()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html#method_shouldAttemptRefresh)
+[\_\_construct()](class-aws-token-ssotokenprovider-method-construct.md)
+: mixed Constructs a new SsoTokenProvider object, which will fetch a token from an authenticated SSO profile[\_\_invoke()](class-aws-token-ssotokenprovider-method-invoke.md)
+: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Loads cached sso credentials.[getTokenData()](class-aws-token-ssotokenprovider-method-gettokendata.md)
+: array<string\|int, mixed> [getTokenLocation()](class-aws-token-ssotokenprovider-method-gettokenlocation.md)
+: string [refresh()](class-aws-token-ssotokenprovider-method-refresh.md)
+: array<string\|int, mixed> This method attempt to refresh when possible.[shouldAttemptRefresh()](class-aws-token-ssotokenprovider-method-shouldattemptrefresh.md)
 : bool This method checks for whether a token refresh should happen.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html\#constants)
+### Constants  [header link](class-aws-token-ssotokenprovider-constants.md)
 
-#### ENV\_PROFILE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html\#constant_ENV_PROFILE)
+#### ENV\_PROFILE  [header link](class-aws-token-ssotokenprovider-constant-env-profile.md)
 
 `
     public
@@ -41,7 +41,7 @@ Token that comes from the SSO provider
     = 'AWS_PROFILE'
 `
 
-#### REFRESH\_ATTEMPT\_WINDOW\_IN\_SECS  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html\#constant_REFRESH_ATTEMPT_WINDOW_IN_SECS)
+#### REFRESH\_ATTEMPT\_WINDOW\_IN\_SECS  [header link](class-aws-token-ssotokenprovider-constant-refresh-attempt-window-in-secs.md)
 
 `
     public
@@ -50,7 +50,7 @@ Token that comes from the SSO provider
     = 30
 `
 
-#### REFRESH\_WINDOW\_IN\_SECS  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html\#constant_REFRESH_WINDOW_IN_SECS)
+#### REFRESH\_WINDOW\_IN\_SECS  [header link](class-aws-token-ssotokenprovider-constant-refresh-window-in-secs.md)
 
 `
     public
@@ -59,9 +59,9 @@ Token that comes from the SSO provider
     = 300
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html\#methods)
+### Methods  [header link](class-aws-token-ssotokenprovider-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-token-ssotokenprovider-method-construct.md)
 
 Constructs a new SsoTokenProvider object, which will fetch a token from an authenticated SSO profile
 
@@ -88,7 +88,7 @@ $ssoOidcClient
 
 The sso client for generating a new token
 
-#### \_\_invoke()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html\#method___invoke)
+#### \_\_invoke()  [header link](class-aws-token-ssotokenprovider-method-invoke.md)
 
 Loads cached sso credentials.
 
@@ -100,7 +100,7 @@ Loads cached sso credentials.
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### getTokenData()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html\#method_getTokenData)
+#### getTokenData()  [header link](class-aws-token-ssotokenprovider-method-gettokendata.md)
 
 `
     public
@@ -115,7 +115,7 @@ $tokenLocation
 
 array<string\|int, mixed>
 
-#### getTokenLocation()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html\#method_getTokenLocation)
+#### getTokenLocation()  [header link](class-aws-token-ssotokenprovider-method-gettokenlocation.md)
 
 `
     public
@@ -130,7 +130,7 @@ $sso\_session
 
 string
 
-#### refresh()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html\#method_refresh)
+#### refresh()  [header link](class-aws-token-ssotokenprovider-method-refresh.md)
 
 This method attempt to refresh when possible.
 
@@ -141,7 +141,7 @@ This method attempt to refresh when possible.
 If a refresh is not possible then it just returns
 the current token data as it is.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html\#method_refresh\#tags)
+##### Tags  [header link](class-aws-token-ssotokenprovider-method-refresh-tags.md)
 
 throws[TokenException](class-aws-exception-tokenexception.md)
 
@@ -149,7 +149,7 @@ throws[TokenException](class-aws-exception-tokenexception.md)
 
 array<string\|int, mixed>
 
-#### shouldAttemptRefresh()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html\#method_shouldAttemptRefresh)
+#### shouldAttemptRefresh()  [header link](class-aws-token-ssotokenprovider-method-shouldattemptrefresh.md)
 
 This method checks for whether a token refresh should happen.
 
@@ -171,18 +171,18 @@ bool
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html#toc-methods)
+  - [Constants](class-aws-token-ssotokenprovider-toc-constants.md)
+  - [Methods](class-aws-token-ssotokenprovider-toc-methods.md)
 - Constants
-  - [ENV\_PROFILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html#constant_ENV_PROFILE)
-  - [REFRESH\_ATTEMPT\_WINDOW\_IN\_SECS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html#constant_REFRESH_ATTEMPT_WINDOW_IN_SECS)
-  - [REFRESH\_WINDOW\_IN\_SECS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html#constant_REFRESH_WINDOW_IN_SECS)
+  - [ENV\_PROFILE](class-aws-token-ssotokenprovider-constant-env-profile.md)
+  - [REFRESH\_ATTEMPT\_WINDOW\_IN\_SECS](class-aws-token-ssotokenprovider-constant-refresh-attempt-window-in-secs.md)
+  - [REFRESH\_WINDOW\_IN\_SECS](class-aws-token-ssotokenprovider-constant-refresh-window-in-secs.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html#method___construct)
-  - [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html#method___invoke)
-  - [getTokenData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html#method_getTokenData)
-  - [getTokenLocation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html#method_getTokenLocation)
-  - [refresh()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html#method_refresh)
-  - [shouldAttemptRefresh()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html#method_shouldAttemptRefresh)
+  - [\_\_construct()](class-aws-token-ssotokenprovider-method-construct.md)
+  - [\_\_invoke()](class-aws-token-ssotokenprovider-method-invoke.md)
+  - [getTokenData()](class-aws-token-ssotokenprovider-method-gettokendata.md)
+  - [getTokenLocation()](class-aws-token-ssotokenprovider-method-gettokenlocation.md)
+  - [refresh()](class-aws-token-ssotokenprovider-method-refresh.md)
+  - [shouldAttemptRefresh()](class-aws-token-ssotokenprovider-method-shouldattemptrefresh.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html#top)
+[Back To Top](class-aws-token-ssotokenprovider-top.md)

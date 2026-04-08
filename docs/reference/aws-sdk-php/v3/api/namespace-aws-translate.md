@@ -4,15 +4,15 @@ Menu
 
 ## Translate
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.translate.html\#toc)
+### Table of Contents  [header link](namespace-aws-translate-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.translate.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-translate-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.translate.exception.html)
+[Exception](namespace-aws-translate-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.translate.html\#toc-classes)
+#### Classes  [header link](namespace-aws-translate-toc-classes.md)
 
-[TranslateClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Translate.TranslateClient.html)This client is used to interact with the **Amazon Translate** service.
+[TranslateClient](class-aws-translate-translateclient.md)This client is used to interact with the **Amazon Translate** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.translate.html#toc-classes)
+  - [Classes](namespace-aws-translate-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.translate.html#top)
+[Back To Top](namespace-aws-translate-top.md)

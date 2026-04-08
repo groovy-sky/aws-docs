@@ -2,13 +2,13 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [Sns](namespace-aws-sns.md)
-- [Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sns.exception.html)
+- [Exception](namespace-aws-sns-exception.md)
 
 ## InvalidSnsMessageException     extends RuntimeException   in package    - [Aws](package-aws.md)
 
 Runtime exception thrown by the SNS Message Validator.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Exception.InvalidSnsMessageException.html\#toc)
+### Table of Contents  [header link](class-aws-sns-exception-invalidsnsmessageexception-toc.md)
 
 ×
 
@@ -16,4 +16,4 @@ Runtime exception thrown by the SNS Message Validator.
 
 - Table Of Contents
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.Exception.InvalidSnsMessageException.html#top)
+[Back To Top](class-aws-sns-exception-invalidsnsmessageexception-top.md)

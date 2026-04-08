@@ -57,7 +57,7 @@ Required: Yes
 
 A list of the tag keys and values that you want to associate with the Route 53 Profile.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53profiles_Tag.html) objects
+Type: Array of [Tag](api-route53profiles-tag.md) objects
 
 Array Members: Minimum number of 0 items. Maximum number of 200 items.
 
@@ -96,7 +96,7 @@ The following data is returned in JSON format by the service.
 
 The Profile that you just created.
 
-Type: [Profile](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53profiles_Profile.html) object
+Type: [Profile](api-route53profiles-profile.md) object
 
 ## Errors
 
@@ -200,27 +200,27 @@ X-Amzn-Trace-Id: Root=1-65fa10fe-6e5a93a56a32afdfsd3example
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/route53profiles-2018-05-10/CreateProfile)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53profiles-2018-05-10/createprofile.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/route53profiles-2018-05-10/CreateProfile)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53profiles-2018-05-10/createprofile.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53profiles-2018-05-10/CreateProfile)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53profiles-2018-05-10/createprofile.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/route53profiles-2018-05-10/CreateProfile)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53profiles-2018-05-10/createprofile.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53profiles-2018-05-10/CreateProfile)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53profiles-2018-05-10/createprofile.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/route53profiles-2018-05-10/CreateProfile)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53profiles-2018-05-10/createprofile.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/route53profiles-2018-05-10/CreateProfile)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53profiles-2018-05-10/createprofile.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/route53profiles-2018-05-10/CreateProfile)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53profiles-2018-05-10/createprofile.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/route53profiles-2018-05-10/CreateProfile)
+- [AWS SDK for Python](../../../../services/goto/boto3/route53profiles-2018-05-10/createprofile.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53profiles-2018-05-10/CreateProfile)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53profiles-2018-05-10/createprofile.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AssociateResourceToProfile
 

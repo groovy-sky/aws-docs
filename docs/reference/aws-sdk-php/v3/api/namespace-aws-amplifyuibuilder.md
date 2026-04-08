@@ -4,15 +4,15 @@ Menu
 
 ## AmplifyUIBuilder
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.amplifyuibuilder.html\#toc)
+### Table of Contents  [header link](namespace-aws-amplifyuibuilder-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.amplifyuibuilder.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-amplifyuibuilder-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.amplifyuibuilder.exception.html)
+[Exception](namespace-aws-amplifyuibuilder-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.amplifyuibuilder.html\#toc-classes)
+#### Classes  [header link](namespace-aws-amplifyuibuilder-toc-classes.md)
 
-[AmplifyUIBuilderClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AmplifyUIBuilder.AmplifyUIBuilderClient.html)This client is used to interact with the **AWS Amplify UI Builder** service.
+[AmplifyUIBuilderClient](class-aws-amplifyuibuilder-amplifyuibuilderclient.md)This client is used to interact with the **AWS Amplify UI Builder** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.amplifyuibuilder.html#toc-classes)
+  - [Classes](namespace-aws-amplifyuibuilder-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.amplifyuibuilder.html#top)
+[Back To Top](namespace-aws-amplifyuibuilder-top.md)

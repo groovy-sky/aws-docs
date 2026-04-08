@@ -4,15 +4,15 @@ Menu
 
 ## KinesisAnalyticsV2
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisanalyticsv2.html\#toc)
+### Table of Contents  [header link](namespace-aws-kinesisanalyticsv2-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisanalyticsv2.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-kinesisanalyticsv2-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisanalyticsv2.exception.html)
+[Exception](namespace-aws-kinesisanalyticsv2-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisanalyticsv2.html\#toc-classes)
+#### Classes  [header link](namespace-aws-kinesisanalyticsv2-toc-classes.md)
 
-[KinesisAnalyticsV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisAnalyticsV2.KinesisAnalyticsV2Client.html)This client is used to interact with the **Amazon Kinesis Analytics** service.
+[KinesisAnalyticsV2Client](class-aws-kinesisanalyticsv2-kinesisanalyticsv2client.md)This client is used to interact with the **Amazon Kinesis Analytics** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisanalyticsv2.html#toc-classes)
+  - [Classes](namespace-aws-kinesisanalyticsv2-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisanalyticsv2.html#top)
+[Back To Top](namespace-aws-kinesisanalyticsv2-top.md)

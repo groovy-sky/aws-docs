@@ -3,7 +3,7 @@
 The advanced settings for a load balancer used in blue/green deployments. Specify the
 alternate target group, listener rules, and IAM role required for traffic shifting during
 blue/green deployments. For more information, see [Required resources for Amazon ECS\
-blue/green deployments](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/blue-green-deployment-implementation.html) in the _Amazon Elastic Container Service Developer Guide_.
+blue/green deployments](../../../../services/amazonecs/latest/developerguide/blue-green-deployment-implementation.md) in the _Amazon Elastic Container Service Developer Guide_.
 
 ## Contents
 
@@ -45,13 +45,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/AdvancedConfiguration)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/advancedconfiguration.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/AdvancedConfiguration)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/advancedconfiguration.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/AdvancedConfiguration)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/advancedconfiguration.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AcceleratorTotalMemoryMiBRequest
 

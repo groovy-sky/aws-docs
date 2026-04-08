@@ -4,15 +4,15 @@ Menu
 
 ## PrometheusService
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.prometheusservice.html\#toc)
+### Table of Contents  [header link](namespace-aws-prometheusservice-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.prometheusservice.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-prometheusservice-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.prometheusservice.exception.html)
+[Exception](namespace-aws-prometheusservice-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.prometheusservice.html\#toc-classes)
+#### Classes  [header link](namespace-aws-prometheusservice-toc-classes.md)
 
-[PrometheusServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PrometheusService.PrometheusServiceClient.html)This client is used to interact with the **Amazon Prometheus Service** service.
+[PrometheusServiceClient](class-aws-prometheusservice-prometheusserviceclient.md)This client is used to interact with the **Amazon Prometheus Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.prometheusservice.html#toc-classes)
+  - [Classes](namespace-aws-prometheusservice-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.prometheusservice.html#top)
+[Back To Top](namespace-aws-prometheusservice-top.md)

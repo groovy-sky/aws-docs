@@ -4,15 +4,15 @@ Menu
 
 ## SagemakerEdgeManager
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakeredgemanager.html\#toc)
+### Table of Contents  [header link](namespace-aws-sagemakeredgemanager-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakeredgemanager.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-sagemakeredgemanager-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakeredgemanager.exception.html)
+[Exception](namespace-aws-sagemakeredgemanager-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakeredgemanager.html\#toc-classes)
+#### Classes  [header link](namespace-aws-sagemakeredgemanager-toc-classes.md)
 
-[SagemakerEdgeManagerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SagemakerEdgeManager.SagemakerEdgeManagerClient.html)This client is used to interact with the **Amazon Sagemaker Edge Manager** service.
+[SagemakerEdgeManagerClient](class-aws-sagemakeredgemanager-sagemakeredgemanagerclient.md)This client is used to interact with the **Amazon Sagemaker Edge Manager** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakeredgemanager.html#toc-classes)
+  - [Classes](namespace-aws-sagemakeredgemanager-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakeredgemanager.html#top)
+[Back To Top](namespace-aws-sagemakeredgemanager-top.md)

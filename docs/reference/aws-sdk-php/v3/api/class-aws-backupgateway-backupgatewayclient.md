@@ -17,37 +17,37 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2021-01-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html)
+- [**2021-01-01**](api-backup-gateway-2021-01-01.md)
 
-  - [AssociateGatewayToServer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#associategatewaytoserver)
-  - [CreateGateway](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#creategateway)
-  - [DeleteGateway](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#deletegateway)
-  - [DeleteHypervisor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#deletehypervisor)
-  - [DisassociateGatewayFromServer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#disassociategatewayfromserver)
-  - [GetBandwidthRateLimitSchedule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#getbandwidthratelimitschedule)
-  - [GetGateway](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#getgateway)
-  - [GetHypervisor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#gethypervisor)
-  - [GetHypervisorPropertyMappings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#gethypervisorpropertymappings)
-  - [GetVirtualMachine](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#getvirtualmachine)
-  - [ImportHypervisorConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#importhypervisorconfiguration)
-  - [ListGateways](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#listgateways)
-  - [ListHypervisors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#listhypervisors)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#listtagsforresource)
-  - [ListVirtualMachines](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#listvirtualmachines)
-  - [PutBandwidthRateLimitSchedule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#putbandwidthratelimitschedule)
-  - [PutHypervisorPropertyMappings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#puthypervisorpropertymappings)
-  - [PutMaintenanceStartTime](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#putmaintenancestarttime)
-  - [StartVirtualMachinesMetadataSync](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#startvirtualmachinesmetadatasync)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#tagresource)
-  - [TestHypervisorConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#testhypervisorconfiguration)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#untagresource)
-  - [UpdateGatewayInformation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#updategatewayinformation)
-  - [UpdateGatewaySoftwareNow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#updategatewaysoftwarenow)
-  - [UpdateHypervisor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-backup-gateway-2021-01-01.html#updatehypervisor)
+  - [AssociateGatewayToServer](api-backup-gateway-2021-01-01-associategatewaytoserver.md)
+  - [CreateGateway](api-backup-gateway-2021-01-01-creategateway.md)
+  - [DeleteGateway](api-backup-gateway-2021-01-01-deletegateway.md)
+  - [DeleteHypervisor](api-backup-gateway-2021-01-01-deletehypervisor.md)
+  - [DisassociateGatewayFromServer](api-backup-gateway-2021-01-01-disassociategatewayfromserver.md)
+  - [GetBandwidthRateLimitSchedule](api-backup-gateway-2021-01-01-getbandwidthratelimitschedule.md)
+  - [GetGateway](api-backup-gateway-2021-01-01-getgateway.md)
+  - [GetHypervisor](api-backup-gateway-2021-01-01-gethypervisor.md)
+  - [GetHypervisorPropertyMappings](api-backup-gateway-2021-01-01-gethypervisorpropertymappings.md)
+  - [GetVirtualMachine](api-backup-gateway-2021-01-01-getvirtualmachine.md)
+  - [ImportHypervisorConfiguration](api-backup-gateway-2021-01-01-importhypervisorconfiguration.md)
+  - [ListGateways](api-backup-gateway-2021-01-01-listgateways.md)
+  - [ListHypervisors](api-backup-gateway-2021-01-01-listhypervisors.md)
+  - [ListTagsForResource](api-backup-gateway-2021-01-01-listtagsforresource.md)
+  - [ListVirtualMachines](api-backup-gateway-2021-01-01-listvirtualmachines.md)
+  - [PutBandwidthRateLimitSchedule](api-backup-gateway-2021-01-01-putbandwidthratelimitschedule.md)
+  - [PutHypervisorPropertyMappings](api-backup-gateway-2021-01-01-puthypervisorpropertymappings.md)
+  - [PutMaintenanceStartTime](api-backup-gateway-2021-01-01-putmaintenancestarttime.md)
+  - [StartVirtualMachinesMetadataSync](api-backup-gateway-2021-01-01-startvirtualmachinesmetadatasync.md)
+  - [TagResource](api-backup-gateway-2021-01-01-tagresource.md)
+  - [TestHypervisorConfiguration](api-backup-gateway-2021-01-01-testhypervisorconfiguration.md)
+  - [UntagResource](api-backup-gateway-2021-01-01-untagresource.md)
+  - [UpdateGatewayInformation](api-backup-gateway-2021-01-01-updategatewayinformation.md)
+  - [UpdateGatewaySoftwareNow](api-backup-gateway-2021-01-01-updategatewaysoftwarenow.md)
+  - [UpdateHypervisor](api-backup-gateway-2021-01-01-updatehypervisor.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BackupGateway.BackupGatewayClient.html\#toc)
+### Table of Contents  [header link](class-aws-backupgateway-backupgatewayclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BackupGateway.BackupGatewayClient.html\#toc-methods)
+#### Methods  [header link](class-aws-backupgateway-backupgatewayclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -78,7 +78,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BackupGateway.BackupGatewayClient.html\#methods)
+### Methods  [header link](class-aws-backupgateway-backupgatewayclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -545,7 +545,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BackupGateway.BackupGatewayClient.html#toc-methods)
+  - [Methods](class-aws-backupgateway-backupgatewayclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -572,4 +572,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BackupGateway.BackupGatewayClient.html#top)
+[Back To Top](class-aws-backupgateway-backupgatewayclient-top.md)

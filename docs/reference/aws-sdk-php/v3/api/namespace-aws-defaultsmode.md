@@ -4,19 +4,19 @@ Menu
 
 ## DefaultsMode
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.defaultsmode.html\#toc)
+### Table of Contents  [header link](namespace-aws-defaultsmode-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.defaultsmode.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-defaultsmode-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.defaultsmode.exception.html)
+[Exception](namespace-aws-defaultsmode-exception.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.defaultsmode.html\#toc-interfaces)
+#### Interfaces  [header link](namespace-aws-defaultsmode-toc-interfaces.md)
 
-[ConfigurationInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationInterface.html)Provides access to defaultsMode configuration
+[ConfigurationInterface](class-aws-defaultsmode-configurationinterface.md)Provides access to defaultsMode configuration
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.defaultsmode.html\#toc-classes)
+#### Classes  [header link](namespace-aws-defaultsmode-toc-classes.md)
 
-[Configuration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.Configuration.html)[ConfigurationProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DefaultsMode.ConfigurationProvider.html)A configuration provider is a function that returns a promise that is
+[Configuration](class-aws-defaultsmode-configuration.md)[ConfigurationProvider](class-aws-defaultsmode-configurationprovider.md)A configuration provider is a function that returns a promise that is
 fulfilled with a {@see \\Aws\\DefaultsMode\\ConfigurationInterface}
 or rejected with an {@see \\Aws\\DefaultsMode\\Exception\\ConfigurationException}.
 
@@ -29,7 +29,7 @@ or rejected with an {@see \\Aws\\DefaultsMode\\Exception\\ConfigurationException
 **On this page**
 
 - Table Of Contents
-  - [Interfaces](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.defaultsmode.html#toc-interfaces)
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.defaultsmode.html#toc-classes)
+  - [Interfaces](namespace-aws-defaultsmode-toc-interfaces.md)
+  - [Classes](namespace-aws-defaultsmode-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.defaultsmode.html#top)
+[Back To Top](namespace-aws-defaultsmode-top.md)

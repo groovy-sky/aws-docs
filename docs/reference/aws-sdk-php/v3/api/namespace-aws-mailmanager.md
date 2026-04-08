@@ -4,15 +4,15 @@ Menu
 
 ## MailManager
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mailmanager.html\#toc)
+### Table of Contents  [header link](namespace-aws-mailmanager-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mailmanager.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-mailmanager-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mailmanager.exception.html)
+[Exception](namespace-aws-mailmanager-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mailmanager.html\#toc-classes)
+#### Classes  [header link](namespace-aws-mailmanager-toc-classes.md)
 
-[MailManagerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MailManager.MailManagerClient.html)This client is used to interact with the **MailManager** service.
+[MailManagerClient](class-aws-mailmanager-mailmanagerclient.md)This client is used to interact with the **MailManager** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mailmanager.html#toc-classes)
+  - [Classes](namespace-aws-mailmanager-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mailmanager.html#top)
+[Back To Top](namespace-aws-mailmanager-top.md)

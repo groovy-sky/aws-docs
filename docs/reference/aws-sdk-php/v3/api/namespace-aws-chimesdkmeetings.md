@@ -4,15 +4,15 @@ Menu
 
 ## ChimeSDKMeetings
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkmeetings.html\#toc)
+### Table of Contents  [header link](namespace-aws-chimesdkmeetings-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkmeetings.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-chimesdkmeetings-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkmeetings.exception.html)
+[Exception](namespace-aws-chimesdkmeetings-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkmeetings.html\#toc-classes)
+#### Classes  [header link](namespace-aws-chimesdkmeetings-toc-classes.md)
 
-[ChimeSDKMeetingsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKMeetings.ChimeSDKMeetingsClient.html)This client is used to interact with the **Amazon Chime SDK Meetings** service.
+[ChimeSDKMeetingsClient](class-aws-chimesdkmeetings-chimesdkmeetingsclient.md)This client is used to interact with the **Amazon Chime SDK Meetings** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkmeetings.html#toc-classes)
+  - [Classes](namespace-aws-chimesdkmeetings-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkmeetings.html#top)
+[Back To Top](namespace-aws-chimesdkmeetings-top.md)

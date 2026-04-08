@@ -17,21 +17,21 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-05-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-notificationscontacts-2018-05-10.html)
+- [**2018-05-10**](api-notificationscontacts-2018-05-10.md)
 
-  - [ActivateEmailContact](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-notificationscontacts-2018-05-10.html#activateemailcontact)
-  - [CreateEmailContact](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-notificationscontacts-2018-05-10.html#createemailcontact)
-  - [DeleteEmailContact](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-notificationscontacts-2018-05-10.html#deleteemailcontact)
-  - [GetEmailContact](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-notificationscontacts-2018-05-10.html#getemailcontact)
-  - [ListEmailContacts](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-notificationscontacts-2018-05-10.html#listemailcontacts)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-notificationscontacts-2018-05-10.html#listtagsforresource)
-  - [SendActivationCode](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-notificationscontacts-2018-05-10.html#sendactivationcode)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-notificationscontacts-2018-05-10.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-notificationscontacts-2018-05-10.html#untagresource)
+  - [ActivateEmailContact](api-notificationscontacts-2018-05-10-activateemailcontact.md)
+  - [CreateEmailContact](api-notificationscontacts-2018-05-10-createemailcontact.md)
+  - [DeleteEmailContact](api-notificationscontacts-2018-05-10-deleteemailcontact.md)
+  - [GetEmailContact](api-notificationscontacts-2018-05-10-getemailcontact.md)
+  - [ListEmailContacts](api-notificationscontacts-2018-05-10-listemailcontacts.md)
+  - [ListTagsForResource](api-notificationscontacts-2018-05-10-listtagsforresource.md)
+  - [SendActivationCode](api-notificationscontacts-2018-05-10-sendactivationcode.md)
+  - [TagResource](api-notificationscontacts-2018-05-10-tagresource.md)
+  - [UntagResource](api-notificationscontacts-2018-05-10-untagresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NotificationsContacts.NotificationsContactsClient.html\#toc)
+### Table of Contents  [header link](class-aws-notificationscontacts-notificationscontactsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NotificationsContacts.NotificationsContactsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-notificationscontacts-notificationscontactsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -62,7 +62,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NotificationsContacts.NotificationsContactsClient.html\#methods)
+### Methods  [header link](class-aws-notificationscontacts-notificationscontactsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -529,7 +529,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NotificationsContacts.NotificationsContactsClient.html#toc-methods)
+  - [Methods](class-aws-notificationscontacts-notificationscontactsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -556,4 +556,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NotificationsContacts.NotificationsContactsClient.html#top)
+[Back To Top](class-aws-notificationscontacts-notificationscontactsclient-top.md)

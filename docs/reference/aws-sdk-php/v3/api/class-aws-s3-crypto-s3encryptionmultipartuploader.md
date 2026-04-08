@@ -2,40 +2,40 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [Crypto](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.crypto.html)
+- [Crypto](namespace-aws-s3-crypto.md)
 
-## S3EncryptionMultipartUploader     extends [MultipartUploader](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html)   in package    - [Aws](package-aws.md)       Uses  [CipherBuilderTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.Cipher.CipherBuilderTrait.html), [CryptoParamsTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.CryptoParamsTrait.html), [EncryptionTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.EncryptionTrait.html), [UserAgentTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.UserAgentTrait.html)
+## S3EncryptionMultipartUploader     extends [MultipartUploader](class-aws-s3-multipartuploader.md)   in package    - [Aws](package-aws.md)       Uses  [CipherBuilderTrait](class-aws-crypto-cipher-cipherbuildertrait.md), [CryptoParamsTrait](class-aws-s3-crypto-cryptoparamstrait.md), [EncryptionTrait](class-aws-crypto-encryptiontrait.md), [UserAgentTrait](class-aws-s3-crypto-useragenttrait.md)
 
 Encapsulates the execution of a multipart upload of an encrypted object to S3.
 
 Legacy implementation using older encryption workflow. Use
 S3EncryptionMultipartUploaderV2 if possible.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionMultipartUploader.html\#tags)
+##### Tags  [header link](class-aws-s3-crypto-s3encryptionmultipartuploader-tags.md)
 
 deprecated
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionMultipartUploader.html\#toc)
+### Table of Contents  [header link](class-aws-s3-crypto-s3encryptionmultipartuploader-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionMultipartUploader.html\#toc-constants)
+#### Constants  [header link](class-aws-s3-crypto-s3encryptionmultipartuploader-toc-constants.md)
 
-[CRYPTO\_VERSION](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionMultipartUploader.html#constant_CRYPTO_VERSION)
-= '1n' [PART\_MAX\_NUM](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html#constant_PART_MAX_NUM)
-= 10000 [PART\_MAX\_SIZE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html#constant_PART_MAX_SIZE)
-= 5368709120 [PART\_MIN\_SIZE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html#constant_PART_MIN_SIZE)
+[CRYPTO\_VERSION](class-aws-s3-crypto-s3encryptionmultipartuploader-constant-crypto-version.md)
+= '1n' [PART\_MAX\_NUM](class-aws-s3-multipartuploader-constant-part-max-num.md)
+= 10000 [PART\_MAX\_SIZE](class-aws-s3-multipartuploader-constant-part-max-size.md)
+= 5368709120 [PART\_MIN\_SIZE](class-aws-s3-multipartuploader-constant-part-min-size.md)
 = 5242880
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionMultipartUploader.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-crypto-s3encryptionmultipartuploader-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionMultipartUploader.html#method___construct)
-: mixed Creates a multipart upload for an S3 object after encrypting it.[getStateFromService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploadingTrait.html#method_getStateFromService)
+[\_\_construct()](class-aws-s3-crypto-s3encryptionmultipartuploader-method-construct.md)
+: mixed Creates a multipart upload for an S3 object after encrypting it.[getStateFromService()](class-aws-s3-multipartuploadingtrait-method-getstatefromservice.md)
 : [UploadState](class-aws-multipart-uploadstate.md)Creates an UploadState object for a multipart upload by querying the
-service for the specified upload's information.[isSupportedCipher()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionMultipartUploader.html#method_isSupportedCipher)
+service for the specified upload's information.[isSupportedCipher()](class-aws-s3-crypto-s3encryptionmultipartuploader-method-issupportedcipher.md)
 : bool Returns if the passed cipher name is supported for encryption by the SDK.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionMultipartUploader.html\#constants)
+### Constants  [header link](class-aws-s3-crypto-s3encryptionmultipartuploader-constants.md)
 
-#### CRYPTO\_VERSION  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionMultipartUploader.html\#constant_CRYPTO_VERSION)
+#### CRYPTO\_VERSION  [header link](class-aws-s3-crypto-s3encryptionmultipartuploader-constant-crypto-version.md)
 
 `
     public
@@ -44,7 +44,7 @@ service for the specified upload's information.[isSupportedCipher()](https://doc
     = '1n'
 `
 
-#### PART\_MAX\_NUM  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html\#constant_PART_MAX_NUM)
+#### PART\_MAX\_NUM  [header link](class-aws-s3-multipartuploader-constant-part-max-num.md)
 
 `
     public
@@ -53,7 +53,7 @@ service for the specified upload's information.[isSupportedCipher()](https://doc
     = 10000
 `
 
-#### PART\_MAX\_SIZE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html\#constant_PART_MAX_SIZE)
+#### PART\_MAX\_SIZE  [header link](class-aws-s3-multipartuploader-constant-part-max-size.md)
 
 `
     public
@@ -62,7 +62,7 @@ service for the specified upload's information.[isSupportedCipher()](https://doc
     = 5368709120
 `
 
-#### PART\_MIN\_SIZE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html\#constant_PART_MIN_SIZE)
+#### PART\_MIN\_SIZE  [header link](class-aws-s3-multipartuploader-constant-part-min-size.md)
 
 `
     public
@@ -71,9 +71,9 @@ service for the specified upload's information.[isSupportedCipher()](https://doc
     = 5242880
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionMultipartUploader.html\#methods)
+### Methods  [header link](class-aws-s3-crypto-s3encryptionmultipartuploader-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionMultipartUploader.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-crypto-s3encryptionmultipartuploader-method-construct.md)
 
 Creates a multipart upload for an S3 object after encrypting it.
 
@@ -152,7 +152,7 @@ $config
 
 Configuration used to perform the upload.
 
-#### getStateFromService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploadingTrait.html\#method_getStateFromService)
+#### getStateFromService()  [header link](class-aws-s3-multipartuploadingtrait-method-getstatefromservice.md)
 
 Creates an UploadState object for a multipart upload by querying the
 service for the specified upload's information.
@@ -187,7 +187,7 @@ Upload ID for the multipart upload.
 
 [UploadState](class-aws-multipart-uploadstate.md)
 
-#### isSupportedCipher()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionMultipartUploader.html\#method_isSupportedCipher)
+#### isSupportedCipher()  [header link](class-aws-s3-crypto-s3encryptionmultipartuploader-method-issupportedcipher.md)
 
 Returns if the passed cipher name is supported for encryption by the SDK.
 
@@ -216,16 +216,16 @@ If the cipher passed is in our supported list.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionMultipartUploader.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionMultipartUploader.html#toc-methods)
+  - [Constants](class-aws-s3-crypto-s3encryptionmultipartuploader-toc-constants.md)
+  - [Methods](class-aws-s3-crypto-s3encryptionmultipartuploader-toc-methods.md)
 - Constants
-  - [CRYPTO\_VERSION](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionMultipartUploader.html#constant_CRYPTO_VERSION)
-  - [PART\_MAX\_NUM](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html#constant_PART_MAX_NUM)
-  - [PART\_MAX\_SIZE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html#constant_PART_MAX_SIZE)
-  - [PART\_MIN\_SIZE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html#constant_PART_MIN_SIZE)
+  - [CRYPTO\_VERSION](class-aws-s3-crypto-s3encryptionmultipartuploader-constant-crypto-version.md)
+  - [PART\_MAX\_NUM](class-aws-s3-multipartuploader-constant-part-max-num.md)
+  - [PART\_MAX\_SIZE](class-aws-s3-multipartuploader-constant-part-max-size.md)
+  - [PART\_MIN\_SIZE](class-aws-s3-multipartuploader-constant-part-min-size.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionMultipartUploader.html#method___construct)
-  - [getStateFromService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploadingTrait.html#method_getStateFromService)
-  - [isSupportedCipher()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionMultipartUploader.html#method_isSupportedCipher)
+  - [\_\_construct()](class-aws-s3-crypto-s3encryptionmultipartuploader-method-construct.md)
+  - [getStateFromService()](class-aws-s3-multipartuploadingtrait-method-getstatefromservice.md)
+  - [isSupportedCipher()](class-aws-s3-crypto-s3encryptionmultipartuploader-method-issupportedcipher.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Crypto.S3EncryptionMultipartUploader.html#top)
+[Back To Top](class-aws-s3-crypto-s3encryptionmultipartuploader-top.md)

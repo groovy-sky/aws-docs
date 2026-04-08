@@ -4,15 +4,15 @@ Menu
 
 ## ConnectCampaignsV2
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectcampaignsv2.html\#toc)
+### Table of Contents  [header link](namespace-aws-connectcampaignsv2-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectcampaignsv2.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-connectcampaignsv2-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectcampaignsv2.exception.html)
+[Exception](namespace-aws-connectcampaignsv2-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectcampaignsv2.html\#toc-classes)
+#### Classes  [header link](namespace-aws-connectcampaignsv2-toc-classes.md)
 
-[ConnectCampaignsV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectCampaignsV2.ConnectCampaignsV2Client.html)This client is used to interact with the **AmazonConnectCampaignServiceV2** service.
+[ConnectCampaignsV2Client](class-aws-connectcampaignsv2-connectcampaignsv2client.md)This client is used to interact with the **AmazonConnectCampaignServiceV2** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectcampaignsv2.html#toc-classes)
+  - [Classes](namespace-aws-connectcampaignsv2-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectcampaignsv2.html#top)
+[Back To Top](namespace-aws-connectcampaignsv2-top.md)

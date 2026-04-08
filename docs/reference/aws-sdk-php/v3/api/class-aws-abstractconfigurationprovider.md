@@ -10,33 +10,33 @@ A configuration provider is a function that returns a promise that is
 fulfilled with a configuration object. This class provides base functionality
 usable by specific configuration provider implementations
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html\#toc)
+### Table of Contents  [header link](class-aws-abstractconfigurationprovider-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html\#toc-constants)
+#### Constants  [header link](class-aws-abstractconfigurationprovider-toc-constants.md)
 
-[ENV\_CONFIG\_FILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html#constant_ENV_CONFIG_FILE)
-= 'AWS\_CONFIG\_FILE' [ENV\_PROFILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html#constant_ENV_PROFILE)
+[ENV\_CONFIG\_FILE](class-aws-abstractconfigurationprovider-constant-env-config-file.md)
+= 'AWS\_CONFIG\_FILE' [ENV\_PROFILE](class-aws-abstractconfigurationprovider-constant-env-profile.md)
 = 'AWS\_PROFILE'
 
-#### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html\#toc-properties)
+#### Properties  [header link](class-aws-abstractconfigurationprovider-toc-properties.md)
 
-[$cacheKey](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html#property_cacheKey)
+[$cacheKey](class-aws-abstractconfigurationprovider-property-cachekey.md)
 : mixed
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html\#toc-methods)
+#### Methods  [header link](class-aws-abstractconfigurationprovider-toc-methods.md)
 
-[cache()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html#method_cache)
+[cache()](class-aws-abstractconfigurationprovider-method-cache.md)
 : callable Wraps a config provider and saves provided configuration in an
 instance of Aws\\CacheInterface. Forwards calls when no config found
-in cache and updates cache with the results.[chain()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html#method_chain)
+in cache and updates cache with the results.[chain()](class-aws-abstractconfigurationprovider-method-chain.md)
 : callable Creates an aggregate configuration provider that invokes the provided
 variadic providers one after the other until a provider returns
-configuration.[memoize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html#method_memoize)
+configuration.[memoize()](class-aws-abstractconfigurationprovider-method-memoize.md)
 : callable Wraps a config provider and caches previously provided configuration.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html\#constants)
+### Constants  [header link](class-aws-abstractconfigurationprovider-constants.md)
 
-#### ENV\_CONFIG\_FILE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html\#constant_ENV_CONFIG_FILE)
+#### ENV\_CONFIG\_FILE  [header link](class-aws-abstractconfigurationprovider-constant-env-config-file.md)
 
 `
     public
@@ -45,7 +45,7 @@ configuration.[memoize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-A
     = 'AWS_CONFIG_FILE'
 `
 
-#### ENV\_PROFILE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html\#constant_ENV_PROFILE)
+#### ENV\_PROFILE  [header link](class-aws-abstractconfigurationprovider-constant-env-profile.md)
 
 `
     public
@@ -54,9 +54,9 @@ configuration.[memoize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-A
     = 'AWS_PROFILE'
 `
 
-### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html\#properties)
+### Properties  [header link](class-aws-abstractconfigurationprovider-properties.md)
 
-#### $cacheKey  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html\#property_cacheKey)
+#### $cacheKey  [header link](class-aws-abstractconfigurationprovider-property-cachekey.md)
 
 `
     public
@@ -64,9 +64,9 @@ configuration.[memoize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-A
     $cacheKey
     `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html\#methods)
+### Methods  [header link](class-aws-abstractconfigurationprovider-methods.md)
 
-#### cache()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html\#method_cache)
+#### cache()  [header link](class-aws-abstractconfigurationprovider-method-cache.md)
 
 Wraps a config provider and saves provided configuration in an
 instance of Aws\\CacheInterface. Forwards calls when no config found
@@ -98,7 +98,7 @@ $cacheKey
 
 callable
 
-#### chain()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html\#method_chain)
+#### chain()  [header link](class-aws-abstractconfigurationprovider-method-chain.md)
 
 Creates an aggregate configuration provider that invokes the provided
 variadic providers one after the other until a provider returns
@@ -112,7 +112,7 @@ configuration.
 
 callable
 
-#### memoize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html\#method_memoize)
+#### memoize()  [header link](class-aws-abstractconfigurationprovider-method-memoize.md)
 
 Wraps a config provider and caches previously provided configuration.
 
@@ -137,17 +137,17 @@ callable
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html#toc-constants)
-  - [Properties](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html#toc-properties)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html#toc-methods)
+  - [Constants](class-aws-abstractconfigurationprovider-toc-constants.md)
+  - [Properties](class-aws-abstractconfigurationprovider-toc-properties.md)
+  - [Methods](class-aws-abstractconfigurationprovider-toc-methods.md)
 - Constants
-  - [ENV\_CONFIG\_FILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html#constant_ENV_CONFIG_FILE)
-  - [ENV\_PROFILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html#constant_ENV_PROFILE)
+  - [ENV\_CONFIG\_FILE](class-aws-abstractconfigurationprovider-constant-env-config-file.md)
+  - [ENV\_PROFILE](class-aws-abstractconfigurationprovider-constant-env-profile.md)
 - Properties
-  - [$cacheKey](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html#property_cacheKey)
+  - [$cacheKey](class-aws-abstractconfigurationprovider-property-cachekey.md)
 - Methods
-  - [cache()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html#method_cache)
-  - [chain()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html#method_chain)
-  - [memoize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html#method_memoize)
+  - [cache()](class-aws-abstractconfigurationprovider-method-cache.md)
+  - [chain()](class-aws-abstractconfigurationprovider-method-chain.md)
+  - [memoize()](class-aws-abstractconfigurationprovider-method-memoize.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AbstractConfigurationProvider.html#top)
+[Back To Top](class-aws-abstractconfigurationprovider-top.md)

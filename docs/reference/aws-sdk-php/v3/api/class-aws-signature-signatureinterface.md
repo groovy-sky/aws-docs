@@ -8,19 +8,19 @@ Menu
 Interface used to provide interchangeable strategies for signing requests
 using the various AWS signature protocols.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureInterface.html\#toc)
+### Table of Contents  [header link](class-aws-signature-signatureinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-signature-signatureinterface-toc-methods.md)
 
-[presign()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureInterface.html#method_presign)
-: [RequestInterface](class-psr-http-message-requestinterface.md)Create a pre-signed request.[signRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureInterface.html#method_signRequest)
+[presign()](class-aws-signature-signatureinterface-method-presign.md)
+: [RequestInterface](class-psr-http-message-requestinterface.md)Create a pre-signed request.[signRequest()](class-aws-signature-signatureinterface-method-signrequest.md)
 : [RequestInterface](class-psr-http-message-requestinterface.md)Signs the specified request with an AWS signing protocol by using the
 provided AWS account credentials and adding the required headers to the
 request.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureInterface.html\#methods)
+### Methods  [header link](class-aws-signature-signatureinterface-methods.md)
 
-#### presign()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureInterface.html\#method_presign)
+#### presign()  [header link](class-aws-signature-signatureinterface-method-presign.md)
 
 Create a pre-signed request.
 
@@ -55,7 +55,7 @@ $options
 
 [RequestInterface](class-psr-http-message-requestinterface.md)
 
-#### signRequest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureInterface.html\#method_signRequest)
+#### signRequest()  [header link](class-aws-signature-signatureinterface-method-signrequest.md)
 
 Signs the specified request with an AWS signing protocol by using the
 provided AWS account credentials and adding the required headers to the
@@ -91,10 +91,10 @@ Returns the modified request.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureInterface.html#toc-methods)
+  - [Constants](class-aws-signature-signatureinterface-toc-constants.md)
+  - [Methods](class-aws-signature-signatureinterface-toc-methods.md)
 - Methods
-  - [presign()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureInterface.html#method_presign)
-  - [signRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureInterface.html#method_signRequest)
+  - [presign()](class-aws-signature-signatureinterface-method-presign.md)
+  - [signRequest()](class-aws-signature-signatureinterface-method-signrequest.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signature.SignatureInterface.html#top)
+[Back To Top](class-aws-signature-signatureinterface-top.md)

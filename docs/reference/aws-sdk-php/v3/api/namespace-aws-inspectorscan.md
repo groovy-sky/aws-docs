@@ -4,15 +4,15 @@ Menu
 
 ## InspectorScan
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.inspectorscan.html\#toc)
+### Table of Contents  [header link](namespace-aws-inspectorscan-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.inspectorscan.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-inspectorscan-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.inspectorscan.exception.html)
+[Exception](namespace-aws-inspectorscan-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.inspectorscan.html\#toc-classes)
+#### Classes  [header link](namespace-aws-inspectorscan-toc-classes.md)
 
-[InspectorScanClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.InspectorScan.InspectorScanClient.html)This client is used to interact with the **Inspector Scan** service.
+[InspectorScanClient](class-aws-inspectorscan-inspectorscanclient.md)This client is used to interact with the **Inspector Scan** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.inspectorscan.html#toc-classes)
+  - [Classes](namespace-aws-inspectorscan-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.inspectorscan.html#top)
+[Back To Top](namespace-aws-inspectorscan-top.md)

@@ -8,16 +8,16 @@ Menu
 Interface used to provide interchangeable strategies for adding authorization
 to requests using the various AWS signature protocols.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenAuthorization.html\#toc)
+### Table of Contents  [header link](class-aws-token-tokenauthorization-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenAuthorization.html\#toc-methods)
+#### Methods  [header link](class-aws-token-tokenauthorization-toc-methods.md)
 
-[authorizeRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenAuthorization.html#method_authorizeRequest)
+[authorizeRequest()](class-aws-token-tokenauthorization-method-authorizerequest.md)
 : [RequestInterface](class-psr-http-message-requestinterface.md)Adds the specified token to a request by adding the required headers.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenAuthorization.html\#methods)
+### Methods  [header link](class-aws-token-tokenauthorization-methods.md)
 
-#### authorizeRequest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenAuthorization.html\#method_authorizeRequest)
+#### authorizeRequest()  [header link](class-aws-token-tokenauthorization-method-authorizerequest.md)
 
 Adds the specified token to a request by adding the required headers.
 
@@ -33,7 +33,7 @@ $request
 Request to sign
 
 $token
-: [TokenInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenInterface.html)
+: [TokenInterface](class-aws-token-tokeninterface.md)
 
 Token
 
@@ -51,9 +51,9 @@ Returns the modified request.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenAuthorization.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenAuthorization.html#toc-methods)
+  - [Constants](class-aws-token-tokenauthorization-toc-constants.md)
+  - [Methods](class-aws-token-tokenauthorization-toc-methods.md)
 - Methods
-  - [authorizeRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenAuthorization.html#method_authorizeRequest)
+  - [authorizeRequest()](class-aws-token-tokenauthorization-method-authorizerequest.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenAuthorization.html#top)
+[Back To Top](class-aws-token-tokenauthorization-top.md)

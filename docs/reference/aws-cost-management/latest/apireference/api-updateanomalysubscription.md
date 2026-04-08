@@ -5,7 +5,7 @@ Omitted fields are unchanged.
 
 ###### Note
 
-The JSON below describes the generic construct for each type. See [Request Parameters](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_UpdateAnomalySubscription.html#API_UpdateAnomalySubscription_RequestParameters) for possible values as they apply to
+The JSON below describes the generic construct for each type. See [Request Parameters](api-updateanomalysubscription-api-updateanomalysubscription-requestparameters.md) for possible values as they apply to
 `AnomalySubscription`.
 
 ## Request Syntax
@@ -84,7 +84,7 @@ Required: No
 
 The update to the subscriber list.
 
-Type: Array of [Subscriber](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Subscriber.html) objects
+Type: Array of [Subscriber](api-subscriber.md) objects
 
 Required: No
 
@@ -215,27 +215,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ce-2017-10-25/UpdateAnomalySubscription)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ce-2017-10-25/updateanomalysubscription.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ce-2017-10-25/UpdateAnomalySubscription)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ce-2017-10-25/updateanomalysubscription.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ce-2017-10-25/UpdateAnomalySubscription)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ce-2017-10-25/updateanomalysubscription.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ce-2017-10-25/UpdateAnomalySubscription)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ce-2017-10-25/updateanomalysubscription.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ce-2017-10-25/UpdateAnomalySubscription)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ce-2017-10-25/updateanomalysubscription.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ce-2017-10-25/UpdateAnomalySubscription)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ce-2017-10-25/updateanomalysubscription.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ce-2017-10-25/UpdateAnomalySubscription)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ce-2017-10-25/updateanomalysubscription.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ce-2017-10-25/UpdateAnomalySubscription)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ce-2017-10-25/updateanomalysubscription.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ce-2017-10-25/UpdateAnomalySubscription)
+- [AWS SDK for Python](../../../../services/goto/boto3/ce-2017-10-25/updateanomalysubscription.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ce-2017-10-25/UpdateAnomalySubscription)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ce-2017-10-25/updateanomalysubscription.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 UpdateAnomalyMonitor
 

@@ -116,7 +116,7 @@ predefined `FARGATE` and `FARGATE_SPOT` capacity providers.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -124,7 +124,7 @@ The request accepts the following data in JSON format.
 
 The details of the Auto Scaling group for the capacity provider.
 
-Type: [AutoScalingGroupProvider](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_AutoScalingGroupProvider.html) object
+Type: [AutoScalingGroupProvider](api-autoscalinggroupprovider.md) object
 
 Required: No
 
@@ -144,7 +144,7 @@ The configuration for the Amazon ECS Managed Instances provider. This configurat
 specifies how Amazon ECS manages Amazon EC2 instances on your behalf, including the
 infrastructure role, instance launch template, and tag propagation settings.
 
-Type: [CreateManagedInstancesProviderConfiguration](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateManagedInstancesProviderConfiguration.html) object
+Type: [CreateManagedInstancesProviderConfiguration](api-createmanagedinstancesproviderconfiguration.md) object
 
 Required: No
 
@@ -189,7 +189,7 @@ AWS use. You cannot edit or delete tag keys or values with
 this prefix. Tags with this prefix do not count against your tags per resource
 limit.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Array Members: Minimum number of 0 items. Maximum number of 50 items.
 
@@ -321,11 +321,11 @@ The following data is returned in JSON format by the service.
 
 The full description of the new capacity provider.
 
-Type: [CapacityProvider](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CapacityProvider.html) object
+Type: [CapacityProvider](api-capacityprovider.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **ClientException**
 
@@ -341,7 +341,7 @@ HTTP Status Code: 400
 
 **ClusterNotFoundException**
 
-The specified cluster wasn't found. You can view your available clusters with [ListClusters](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListClusters.html). Amazon ECS clusters are Region specific.
+The specified cluster wasn't found. You can view your available clusters with [ListClusters](api-listclusters.md). Amazon ECS clusters are Region specific.
 
 **message**
 
@@ -355,7 +355,7 @@ The specified parameter isn't valid. Review the available parameters for the API
 request.
 
 For more information about service event errors, see [Amazon ECS\
-service event messages](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-event-messages-list.html).
+service event messages](../../../../services/amazonecs/latest/developerguide/service-event-messages-list.md).
 
 **message**
 
@@ -411,27 +411,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ecs-2014-11-13/CreateCapacityProvider)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ecs-2014-11-13/createcapacityprovider.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ecs-2014-11-13/CreateCapacityProvider)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ecs-2014-11-13/createcapacityprovider.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/CreateCapacityProvider)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/createcapacityprovider.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ecs-2014-11-13/CreateCapacityProvider)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ecs-2014-11-13/createcapacityprovider.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/CreateCapacityProvider)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/createcapacityprovider.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ecs-2014-11-13/CreateCapacityProvider)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ecs-2014-11-13/createcapacityprovider.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ecs-2014-11-13/CreateCapacityProvider)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ecs-2014-11-13/createcapacityprovider.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ecs-2014-11-13/CreateCapacityProvider)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ecs-2014-11-13/createcapacityprovider.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ecs-2014-11-13/CreateCapacityProvider)
+- [AWS SDK for Python](../../../../services/goto/boto3/ecs-2014-11-13/createcapacityprovider.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/CreateCapacityProvider)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/createcapacityprovider.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Actions
 

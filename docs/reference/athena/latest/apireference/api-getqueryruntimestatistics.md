@@ -2,7 +2,7 @@
 
 Returns query execution runtime statistics related to a single execution of a query if
 you have access to the workgroup in which the query ran. Statistics from the
-`Timeline` section of the response object are available as soon as [QueryExecutionStatus:State](https://docs.aws.amazon.com/athena/latest/APIReference/API_QueryExecutionStatus.html#athena-Type-QueryExecutionStatus-State) is in a SUCCEEDED or FAILED state. The
+`Timeline` section of the response object are available as soon as [QueryExecutionStatus:State](api-queryexecutionstatus-athena-type-queryexecutionstatus-state.md) is in a SUCCEEDED or FAILED state. The
 remaining non-timeline statistics in the response (like stage-level input and output row
 count and data size) are updated asynchronously and may not be available immediately
 after a query completes or, in some cases, may not be returned. The non-timeline
@@ -89,7 +89,7 @@ The following data is returned in JSON format by the service.
 
 Runtime statistics about the query execution.
 
-Type: [QueryRuntimeStatistics](https://docs.aws.amazon.com/athena/latest/APIReference/API_QueryRuntimeStatistics.html) object
+Type: [QueryRuntimeStatistics](api-queryruntimestatistics.md) object
 
 ## Errors
 
@@ -118,27 +118,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/athena-2017-05-18/GetQueryRuntimeStatistics)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/athena-2017-05-18/getqueryruntimestatistics.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/athena-2017-05-18/GetQueryRuntimeStatistics)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/athena-2017-05-18/getqueryruntimestatistics.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/GetQueryRuntimeStatistics)
+- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/getqueryruntimestatistics.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/athena-2017-05-18/GetQueryRuntimeStatistics)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/athena-2017-05-18/getqueryruntimestatistics.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/GetQueryRuntimeStatistics)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/getqueryruntimestatistics.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/athena-2017-05-18/GetQueryRuntimeStatistics)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/athena-2017-05-18/getqueryruntimestatistics.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/athena-2017-05-18/GetQueryRuntimeStatistics)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/athena-2017-05-18/getqueryruntimestatistics.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/athena-2017-05-18/GetQueryRuntimeStatistics)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/athena-2017-05-18/getqueryruntimestatistics.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/athena-2017-05-18/GetQueryRuntimeStatistics)
+- [AWS SDK for Python](../../../../services/goto/boto3/athena-2017-05-18/getqueryruntimestatistics.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/GetQueryRuntimeStatistics)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/getqueryruntimestatistics.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GetQueryResults
 

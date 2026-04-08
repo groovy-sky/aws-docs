@@ -100,13 +100,13 @@ Reserved Instance in the US East (N. Virginia) and you have two running `t2.smal
 instances in your account in that Region, the billing benefit is applied in full
 to both instances.
 
-![Applying a Regional Reserved Instance.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ri-instance-flex-full.png)
+![Applying a Regional Reserved Instance.](../../../images/awsec2/latest/userguide/images/ri-instance-flex-full-png.md)
 
 Or, if you have one `t2.large` instance running in your account in
 the US East (N. Virginia) Region, the billing benefit is applied to 50% of the
 usage of the instance.
 
-![Applying a Regional Reserved Instance.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ri-instance-flex-partial.png)
+![Applying a Regional Reserved Instance.](../../../images/awsec2/latest/userguide/images/ri-instance-flex-partial-png.md)
 
 The normalization factor is also applied when modifying Reserved Instances. For more
 information, see [Modify Reserved Instances](ri-modifying.md).

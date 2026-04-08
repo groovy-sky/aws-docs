@@ -4,15 +4,15 @@ Menu
 
 ## SesV2
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sesv2.html\#toc)
+### Table of Contents  [header link](namespace-aws-sesv2-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sesv2.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-sesv2-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sesv2.exception.html)
+[Exception](namespace-aws-sesv2-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sesv2.html\#toc-classes)
+#### Classes  [header link](namespace-aws-sesv2-toc-classes.md)
 
-[SesV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SesV2.SesV2Client.html)This client is used to interact with the **Amazon Simple Email Service** service.
+[SesV2Client](class-aws-sesv2-sesv2client.md)This client is used to interact with the **Amazon Simple Email Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sesv2.html#toc-classes)
+  - [Classes](namespace-aws-sesv2-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sesv2.html#top)
+[Back To Top](namespace-aws-sesv2-top.md)

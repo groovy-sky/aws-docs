@@ -4,15 +4,15 @@ Menu
 
 ## ACMPCA
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.acmpca.html\#toc)
+### Table of Contents  [header link](namespace-aws-acmpca-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.acmpca.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-acmpca-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.acmpca.exception.html)
+[Exception](namespace-aws-acmpca-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.acmpca.html\#toc-classes)
+#### Classes  [header link](namespace-aws-acmpca-toc-classes.md)
 
-[ACMPCAClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ACMPCA.ACMPCAClient.html)This client is used to interact with the **AWS Certificate Manager Private Certificate Authority** service.
+[ACMPCAClient](class-aws-acmpca-acmpcaclient.md)This client is used to interact with the **AWS Certificate Manager Private Certificate Authority** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.acmpca.html#toc-classes)
+  - [Classes](namespace-aws-acmpca-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.acmpca.html#top)
+[Back To Top](namespace-aws-acmpca-top.md)

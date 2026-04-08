@@ -5,20 +5,20 @@ Menu
 
 ## MetadataStrategyInterface     in    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MetadataStrategyInterface.html\#toc)
+### Table of Contents  [header link](class-aws-crypto-metadatastrategyinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MetadataStrategyInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-crypto-metadatastrategyinterface-toc-methods.md)
 
-[load()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MetadataStrategyInterface.html#method_load)
+[load()](class-aws-crypto-metadatastrategyinterface-method-load.md)
 : MetadataEnvelopeGenerates a MetadataEnvelope according to the specific strategy using the
-passed arguments.[save()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MetadataStrategyInterface.html#method_save)
+passed arguments.[save()](class-aws-crypto-metadatastrategyinterface-method-save.md)
 : array<string\|int, mixed> Places the information in the MetadataEnvelope to the strategy specific
 location. Populates the PutObject arguments with any information
 necessary for loading.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MetadataStrategyInterface.html\#methods)
+### Methods  [header link](class-aws-crypto-metadatastrategyinterface-methods.md)
 
-#### load()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MetadataStrategyInterface.html\#method_load)
+#### load()  [header link](class-aws-crypto-metadatastrategyinterface-method-load.md)
 
 Generates a MetadataEnvelope according to the specific strategy using the
 passed arguments.
@@ -40,7 +40,7 @@ configuration.
 
 MetadataEnvelope
 
-#### save()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MetadataStrategyInterface.html\#method_save)
+#### save()  [header link](class-aws-crypto-metadatastrategyinterface-method-save.md)
 
 Places the information in the MetadataEnvelope to the strategy specific
 location. Populates the PutObject arguments with any information
@@ -77,10 +77,10 @@ Updated arguments for PutObject.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MetadataStrategyInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MetadataStrategyInterface.html#toc-methods)
+  - [Constants](class-aws-crypto-metadatastrategyinterface-toc-constants.md)
+  - [Methods](class-aws-crypto-metadatastrategyinterface-toc-methods.md)
 - Methods
-  - [load()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MetadataStrategyInterface.html#method_load)
-  - [save()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MetadataStrategyInterface.html#method_save)
+  - [load()](class-aws-crypto-metadatastrategyinterface-method-load.md)
+  - [save()](class-aws-crypto-metadatastrategyinterface-method-save.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MetadataStrategyInterface.html#top)
+[Back To Top](class-aws-crypto-metadatastrategyinterface-top.md)

@@ -17,43 +17,43 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-05-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html)
+- [**2018-05-10**](api-ssm-incidents-2018-05-10.md)
 
-  - [BatchGetIncidentFindings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#batchgetincidentfindings)
-  - [CreateReplicationSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#createreplicationset)
-  - [CreateResponsePlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#createresponseplan)
-  - [CreateTimelineEvent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#createtimelineevent)
-  - [DeleteIncidentRecord](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#deleteincidentrecord)
-  - [DeleteReplicationSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#deletereplicationset)
-  - [DeleteResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#deleteresourcepolicy)
-  - [DeleteResponsePlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#deleteresponseplan)
-  - [DeleteTimelineEvent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#deletetimelineevent)
-  - [GetIncidentRecord](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#getincidentrecord)
-  - [GetReplicationSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#getreplicationset)
-  - [GetResourcePolicies](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#getresourcepolicies)
-  - [GetResponsePlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#getresponseplan)
-  - [GetTimelineEvent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#gettimelineevent)
-  - [ListIncidentFindings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#listincidentfindings)
-  - [ListIncidentRecords](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#listincidentrecords)
-  - [ListRelatedItems](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#listrelateditems)
-  - [ListReplicationSets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#listreplicationsets)
-  - [ListResponsePlans](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#listresponseplans)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#listtagsforresource)
-  - [ListTimelineEvents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#listtimelineevents)
-  - [PutResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#putresourcepolicy)
-  - [StartIncident](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#startincident)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#untagresource)
-  - [UpdateDeletionProtection](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#updatedeletionprotection)
-  - [UpdateIncidentRecord](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#updateincidentrecord)
-  - [UpdateRelatedItems](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#updaterelateditems)
-  - [UpdateReplicationSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#updatereplicationset)
-  - [UpdateResponsePlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#updateresponseplan)
-  - [UpdateTimelineEvent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-incidents-2018-05-10.html#updatetimelineevent)
+  - [BatchGetIncidentFindings](api-ssm-incidents-2018-05-10-batchgetincidentfindings.md)
+  - [CreateReplicationSet](api-ssm-incidents-2018-05-10-createreplicationset.md)
+  - [CreateResponsePlan](api-ssm-incidents-2018-05-10-createresponseplan.md)
+  - [CreateTimelineEvent](api-ssm-incidents-2018-05-10-createtimelineevent.md)
+  - [DeleteIncidentRecord](api-ssm-incidents-2018-05-10-deleteincidentrecord.md)
+  - [DeleteReplicationSet](api-ssm-incidents-2018-05-10-deletereplicationset.md)
+  - [DeleteResourcePolicy](api-ssm-incidents-2018-05-10-deleteresourcepolicy.md)
+  - [DeleteResponsePlan](api-ssm-incidents-2018-05-10-deleteresponseplan.md)
+  - [DeleteTimelineEvent](api-ssm-incidents-2018-05-10-deletetimelineevent.md)
+  - [GetIncidentRecord](api-ssm-incidents-2018-05-10-getincidentrecord.md)
+  - [GetReplicationSet](api-ssm-incidents-2018-05-10-getreplicationset.md)
+  - [GetResourcePolicies](api-ssm-incidents-2018-05-10-getresourcepolicies.md)
+  - [GetResponsePlan](api-ssm-incidents-2018-05-10-getresponseplan.md)
+  - [GetTimelineEvent](api-ssm-incidents-2018-05-10-gettimelineevent.md)
+  - [ListIncidentFindings](api-ssm-incidents-2018-05-10-listincidentfindings.md)
+  - [ListIncidentRecords](api-ssm-incidents-2018-05-10-listincidentrecords.md)
+  - [ListRelatedItems](api-ssm-incidents-2018-05-10-listrelateditems.md)
+  - [ListReplicationSets](api-ssm-incidents-2018-05-10-listreplicationsets.md)
+  - [ListResponsePlans](api-ssm-incidents-2018-05-10-listresponseplans.md)
+  - [ListTagsForResource](api-ssm-incidents-2018-05-10-listtagsforresource.md)
+  - [ListTimelineEvents](api-ssm-incidents-2018-05-10-listtimelineevents.md)
+  - [PutResourcePolicy](api-ssm-incidents-2018-05-10-putresourcepolicy.md)
+  - [StartIncident](api-ssm-incidents-2018-05-10-startincident.md)
+  - [TagResource](api-ssm-incidents-2018-05-10-tagresource.md)
+  - [UntagResource](api-ssm-incidents-2018-05-10-untagresource.md)
+  - [UpdateDeletionProtection](api-ssm-incidents-2018-05-10-updatedeletionprotection.md)
+  - [UpdateIncidentRecord](api-ssm-incidents-2018-05-10-updateincidentrecord.md)
+  - [UpdateRelatedItems](api-ssm-incidents-2018-05-10-updaterelateditems.md)
+  - [UpdateReplicationSet](api-ssm-incidents-2018-05-10-updatereplicationset.md)
+  - [UpdateResponsePlan](api-ssm-incidents-2018-05-10-updateresponseplan.md)
+  - [UpdateTimelineEvent](api-ssm-incidents-2018-05-10-updatetimelineevent.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMIncidents.SSMIncidentsClient.html\#toc)
+### Table of Contents  [header link](class-aws-ssmincidents-ssmincidentsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMIncidents.SSMIncidentsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-ssmincidents-ssmincidentsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -84,7 +84,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMIncidents.SSMIncidentsClient.html\#methods)
+### Methods  [header link](class-aws-ssmincidents-ssmincidentsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -551,7 +551,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMIncidents.SSMIncidentsClient.html#toc-methods)
+  - [Methods](class-aws-ssmincidents-ssmincidentsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -578,4 +578,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMIncidents.SSMIncidentsClient.html#top)
+[Back To Top](class-aws-ssmincidents-ssmincidentsclient-top.md)

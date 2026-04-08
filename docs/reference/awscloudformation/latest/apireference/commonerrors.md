@@ -110,6 +110,6 @@ The input doesn't meet the required format or constraints. Check that all requir
 
 HTTP Status Code: 400
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Common Parameters

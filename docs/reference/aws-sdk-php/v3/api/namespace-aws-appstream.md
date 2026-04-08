@@ -4,15 +4,15 @@ Menu
 
 ## Appstream
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appstream.html\#toc)
+### Table of Contents  [header link](namespace-aws-appstream-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appstream.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-appstream-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appstream.exception.html)
+[Exception](namespace-aws-appstream-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appstream.html\#toc-classes)
+#### Classes  [header link](namespace-aws-appstream-toc-classes.md)
 
-[AppstreamClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Appstream.AppstreamClient.html)This client is used to interact with the **Amazon AppStream** service.
+[AppstreamClient](class-aws-appstream-appstreamclient.md)This client is used to interact with the **Amazon AppStream** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appstream.html#toc-classes)
+  - [Classes](namespace-aws-appstream-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appstream.html#top)
+[Back To Top](namespace-aws-appstream-top.md)

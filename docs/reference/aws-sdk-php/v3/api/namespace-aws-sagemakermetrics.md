@@ -4,15 +4,15 @@ Menu
 
 ## SageMakerMetrics
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakermetrics.html\#toc)
+### Table of Contents  [header link](namespace-aws-sagemakermetrics-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakermetrics.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-sagemakermetrics-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakermetrics.exception.html)
+[Exception](namespace-aws-sagemakermetrics-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakermetrics.html\#toc-classes)
+#### Classes  [header link](namespace-aws-sagemakermetrics-toc-classes.md)
 
-[SageMakerMetricsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMakerMetrics.SageMakerMetricsClient.html)This client is used to interact with the **Amazon SageMaker Metrics Service** service.
+[SageMakerMetricsClient](class-aws-sagemakermetrics-sagemakermetricsclient.md)This client is used to interact with the **Amazon SageMaker Metrics Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakermetrics.html#toc-classes)
+  - [Classes](namespace-aws-sagemakermetrics-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakermetrics.html#top)
+[Back To Top](namespace-aws-sagemakermetrics-top.md)

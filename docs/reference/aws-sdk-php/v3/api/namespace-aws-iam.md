@@ -4,15 +4,15 @@ Menu
 
 ## Iam
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iam.html\#toc)
+### Table of Contents  [header link](namespace-aws-iam-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iam.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-iam-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iam.exception.html)
+[Exception](namespace-aws-iam-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iam.html\#toc-classes)
+#### Classes  [header link](namespace-aws-iam-toc-classes.md)
 
-[IamClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Iam.IamClient.html)This client is used to interact with the **AWS Identity and Access Management (AWS IAM)** service.
+[IamClient](class-aws-iam-iamclient.md)This client is used to interact with the **AWS Identity and Access Management (AWS IAM)** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iam.html#toc-classes)
+  - [Classes](namespace-aws-iam-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iam.html#top)
+[Back To Top](namespace-aws-iam-top.md)

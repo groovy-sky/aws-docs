@@ -3,9 +3,9 @@
 Creates a launch configuration.
 
 If you exceed your maximum limit of launch configurations, the call fails. To query
-this limit, call the [DescribeAccountLimits](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DescribeAccountLimits.html) API.
+this limit, call the [DescribeAccountLimits](api-describeaccountlimits.md) API.
 For information about updating this limit, see [Quotas for \
-Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-quotas.html) in the _Amazon EC2 Auto Scaling User Guide_.
+Amazon EC2 Auto Scaling](../../../../services/autoscaling/ec2/userguide/ec2-auto-scaling-quotas.md) in the _Amazon EC2 Auto Scaling User Guide_.
 
 For more information, see [Launch\
 configurations](../../../../services/autoscaling/ec2/userguide/launch-configurations.md) in the _Amazon EC2 Auto Scaling User Guide_.
@@ -15,11 +15,11 @@ configurations](../../../../services/autoscaling/ec2/userguide/launch-configurat
 Amazon EC2 Auto Scaling configures instances launched as part of an Auto Scaling group using either a
 launch template or a launch configuration. We strongly recommend that you do not use
 launch configurations. They do not provide full functionality for Amazon EC2 Auto Scaling or Amazon EC2.
-For information about using launch templates, see [Launch templates](https://docs.aws.amazon.com/autoscaling/ec2/userguide/launch-templates.html) in the _Amazon EC2 Auto Scaling User Guide_.
+For information about using launch templates, see [Launch templates](../../../../services/autoscaling/ec2/userguide/launch-templates.md) in the _Amazon EC2 Auto Scaling User Guide_.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 **AssociatePublicIpAddress**
 
@@ -49,7 +49,7 @@ instances at launch. By default, the block devices specified in the block device
 for the AMI are used. For more information, see [Block device\
 mappings](../../../../services/ec2/latest/userguide/block-device-mapping-concepts.md) in the _Amazon EC2 User Guide_.
 
-Type: Array of [BlockDeviceMapping](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_BlockDeviceMapping.html) objects
+Type: Array of [BlockDeviceMapping](api-blockdevicemapping.md) objects
 
 Required: No
 
@@ -157,10 +157,10 @@ The default value is `true` (enabled).
 When detailed monitoring is enabled, Amazon CloudWatch generates metrics every minute and
 your account is charged a fee. When you disable detailed monitoring, CloudWatch generates
 metrics every 5 minutes. For more information, see [Configure\
-monitoring for Auto Scaling instances](https://docs.aws.amazon.com/autoscaling/latest/userguide/enable-as-instance-metrics.html) in the
+monitoring for Auto Scaling instances](../../../../services/autoscaling/latest/userguide/enable-as-instance-metrics.md) in the
 _Amazon EC2 Auto Scaling User Guide_.
 
-Type: [InstanceMonitoring](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_InstanceMonitoring.html) object
+Type: [InstanceMonitoring](api-instancemonitoring.md) object
 
 Required: No
 
@@ -189,7 +189,7 @@ The ID of the kernel associated with the AMI.
 
 We recommend that you use PV-GRUB instead of kernels and RAM disks. For more
 information, see [User provided\
-kernels](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/UserProvidedKernels.html) in the _Amazon EC2 User Guide_.
+kernels](../../../../services/ec2/latest/userguide/userprovidedkernels.md) in the _Amazon EC2 User Guide_.
 
 Type: String
 
@@ -230,7 +230,7 @@ Required: Yes
 The metadata options for the instances. For more information, see [Configure the instance metadata options](../../../../services/autoscaling/ec2/userguide/create-launch-config.md#launch-configurations-imds) in the
 _Amazon EC2 Auto Scaling User Guide_.
 
-Type: [InstanceMetadataOptions](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_InstanceMetadataOptions.html) object
+Type: [InstanceMetadataOptions](api-instancemetadataoptions.md) object
 
 Required: No
 
@@ -263,7 +263,7 @@ The ID of the RAM disk to select.
 
 We recommend that you use PV-GRUB instead of kernels and RAM disks. For more
 information, see [User provided\
-kernels](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/UserProvidedKernels.html) in the _Amazon EC2 User Guide_.
+kernels](../../../../services/ec2/latest/userguide/userprovidedkernels.md) in the _Amazon EC2 User Guide_.
 
 Type: String
 
@@ -312,7 +312,7 @@ Required: No
 
 The user data to make available to the launched EC2 instances. For more information,
 see [Instance metadata and user data](../../../../services/ec2/latest/userguide/ec2-instance-metadata.md) (Linux) and [Instance metadata and\
-user data](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2-instance-metadata.html) (Windows). If you are using a command line tool, base64-encoding
+user data](../../../../services/ec2/latest/windowsguide/ec2-instance-metadata.md) (Windows). If you are using a command line tool, base64-encoding
 is performed for you, and you can load the text from a file. Otherwise, you must provide
 base64-encoded text. User data is limited to 16 KB.
 
@@ -326,7 +326,7 @@ Required: No
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **AlreadyExists**
 
@@ -340,7 +340,7 @@ HTTP Status Code: 400
 
 You have already reached a limit for your Amazon EC2 Auto Scaling resources
 (for example, Auto Scaling groups, launch configurations, or lifecycle hooks). For more
-information, see [DescribeAccountLimits](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DescribeAccountLimits.html).
+information, see [DescribeAccountLimits](api-describeaccountlimits.md).
 
 **message**
 
@@ -378,27 +378,27 @@ https://autoscaling.amazonaws.com/?Action=CreateLaunchConfiguration
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/autoscaling-2011-01-01/CreateLaunchConfiguration)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/autoscaling-2011-01-01/createlaunchconfiguration.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/autoscaling-2011-01-01/CreateLaunchConfiguration)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/autoscaling-2011-01-01/createlaunchconfiguration.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/autoscaling-2011-01-01/CreateLaunchConfiguration)
+- [AWS SDK for C++](../../../goto/sdkforcpp/autoscaling-2011-01-01/createlaunchconfiguration.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/autoscaling-2011-01-01/CreateLaunchConfiguration)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/autoscaling-2011-01-01/createlaunchconfiguration.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/autoscaling-2011-01-01/CreateLaunchConfiguration)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/autoscaling-2011-01-01/createlaunchconfiguration.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/autoscaling-2011-01-01/CreateLaunchConfiguration)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/autoscaling-2011-01-01/createlaunchconfiguration.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/autoscaling-2011-01-01/CreateLaunchConfiguration)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/autoscaling-2011-01-01/createlaunchconfiguration.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/autoscaling-2011-01-01/CreateLaunchConfiguration)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/autoscaling-2011-01-01/createlaunchconfiguration.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/autoscaling-2011-01-01/CreateLaunchConfiguration)
+- [AWS SDK for Python](../../../../services/goto/boto3/autoscaling-2011-01-01/createlaunchconfiguration.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/autoscaling-2011-01-01/CreateLaunchConfiguration)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/autoscaling-2011-01-01/createlaunchconfiguration.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateAutoScalingGroup
 

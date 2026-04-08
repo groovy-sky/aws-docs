@@ -87,7 +87,7 @@ The request accepts the following data in JSON format.
 A list of additional authentication providers for the `GraphqlApi`
 API.
 
-Type: Array of [AdditionalAuthenticationProvider](https://docs.aws.amazon.com/appsync/latest/APIReference/API_AdditionalAuthenticationProvider.html) objects
+Type: Array of [AdditionalAuthenticationProvider](api-additionalauthenticationprovider.md) objects
 
 Required: No
 
@@ -117,7 +117,7 @@ Required: Yes
 
 The `enhancedMetricsConfig` object.
 
-Type: [EnhancedMetricsConfig](https://docs.aws.amazon.com/appsync/latest/APIReference/API_EnhancedMetricsConfig.html) object
+Type: [EnhancedMetricsConfig](api-enhancedmetricsconfig.md) object
 
 Required: No
 
@@ -141,7 +141,7 @@ Required: No
 
 Configuration for AWS Lambda function authorization.
 
-Type: [LambdaAuthorizerConfig](https://docs.aws.amazon.com/appsync/latest/APIReference/API_LambdaAuthorizerConfig.html) object
+Type: [LambdaAuthorizerConfig](api-lambdaauthorizerconfig.md) object
 
 Required: No
 
@@ -149,7 +149,7 @@ Required: No
 
 The Amazon CloudWatch Logs configuration.
 
-Type: [LogConfig](https://docs.aws.amazon.com/appsync/latest/APIReference/API_LogConfig.html) object
+Type: [LogConfig](api-logconfig.md) object
 
 Required: No
 
@@ -176,7 +176,7 @@ Required: Yes
 
 The OIDC configuration.
 
-Type: [OpenIDConnectConfig](https://docs.aws.amazon.com/appsync/latest/APIReference/API_OpenIDConnectConfig.html) object
+Type: [OpenIDConnectConfig](api-openidconnectconfig.md) object
 
 Required: No
 
@@ -243,7 +243,7 @@ Required: No
 
 The Amazon Cognito user pool configuration.
 
-Type: [UserPoolConfig](https://docs.aws.amazon.com/appsync/latest/APIReference/API_UserPoolConfig.html) object
+Type: [UserPoolConfig](api-userpoolconfig.md) object
 
 Required: No
 
@@ -363,11 +363,11 @@ The following data is returned in JSON format by the service.
 
 The `GraphqlApi`.
 
-Type: [GraphqlApi](https://docs.aws.amazon.com/appsync/latest/APIReference/API_GraphqlApi.html) object
+Type: [GraphqlApi](api-graphqlapi.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/appsync/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **ApiLimitExceededException**
 
@@ -421,27 +421,27 @@ HTTP Status Code: 401
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appsync-2017-07-25/CreateGraphqlApi)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/appsync-2017-07-25/creategraphqlapi.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appsync-2017-07-25/CreateGraphqlApi)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appsync-2017-07-25/creategraphqlapi.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appsync-2017-07-25/CreateGraphqlApi)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appsync-2017-07-25/creategraphqlapi.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appsync-2017-07-25/CreateGraphqlApi)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/appsync-2017-07-25/creategraphqlapi.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appsync-2017-07-25/CreateGraphqlApi)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appsync-2017-07-25/creategraphqlapi.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appsync-2017-07-25/CreateGraphqlApi)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appsync-2017-07-25/creategraphqlapi.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appsync-2017-07-25/CreateGraphqlApi)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appsync-2017-07-25/creategraphqlapi.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appsync-2017-07-25/CreateGraphqlApi)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appsync-2017-07-25/creategraphqlapi.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/appsync-2017-07-25/CreateGraphqlApi)
+- [AWS SDK for Python](../../../../services/goto/boto3/appsync-2017-07-25/creategraphqlapi.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appsync-2017-07-25/CreateGraphqlApi)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appsync-2017-07-25/creategraphqlapi.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateFunction
 

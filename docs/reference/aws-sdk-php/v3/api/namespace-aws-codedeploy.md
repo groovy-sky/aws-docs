@@ -4,15 +4,15 @@ Menu
 
 ## CodeDeploy
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codedeploy.html\#toc)
+### Table of Contents  [header link](namespace-aws-codedeploy-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codedeploy.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-codedeploy-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codedeploy.exception.html)
+[Exception](namespace-aws-codedeploy-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codedeploy.html\#toc-classes)
+#### Classes  [header link](namespace-aws-codedeploy-toc-classes.md)
 
-[CodeDeployClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeDeploy.CodeDeployClient.html)This client is used to interact with AWS CodeDeploy
+[CodeDeployClient](class-aws-codedeploy-codedeployclient.md)This client is used to interact with AWS CodeDeploy
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codedeploy.html#toc-classes)
+  - [Classes](namespace-aws-codedeploy-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.codedeploy.html#top)
+[Back To Top](namespace-aws-codedeploy-top.md)

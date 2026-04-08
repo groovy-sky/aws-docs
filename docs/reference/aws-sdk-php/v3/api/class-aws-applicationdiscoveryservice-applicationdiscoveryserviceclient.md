@@ -17,40 +17,40 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2015-11-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html)
+- [**2015-11-01**](api-discovery-2015-11-01.md)
 
-  - [AssociateConfigurationItemsToApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#associateconfigurationitemstoapplication)
-  - [BatchDeleteAgents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#batchdeleteagents)
-  - [BatchDeleteImportData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#batchdeleteimportdata)
-  - [CreateApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#createapplication)
-  - [CreateTags](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#createtags)
-  - [DeleteApplications](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#deleteapplications)
-  - [DeleteTags](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#deletetags)
-  - [DescribeAgents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#describeagents)
-  - [DescribeBatchDeleteConfigurationTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#describebatchdeleteconfigurationtask)
-  - [DescribeConfigurations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#describeconfigurations)
-  - [DescribeContinuousExports](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#describecontinuousexports)
-  - [DescribeExportConfigurations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#describeexportconfigurations)
-  - [DescribeExportTasks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#describeexporttasks)
-  - [DescribeImportTasks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#describeimporttasks)
-  - [DescribeTags](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#describetags)
-  - [DisassociateConfigurationItemsFromApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#disassociateconfigurationitemsfromapplication)
-  - [ExportConfigurations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#exportconfigurations)
-  - [GetDiscoverySummary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#getdiscoverysummary)
-  - [ListConfigurations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#listconfigurations)
-  - [ListServerNeighbors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#listserverneighbors)
-  - [StartBatchDeleteConfigurationTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#startbatchdeleteconfigurationtask)
-  - [StartContinuousExport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#startcontinuousexport)
-  - [StartDataCollectionByAgentIds](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#startdatacollectionbyagentids)
-  - [StartExportTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#startexporttask)
-  - [StartImportTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#startimporttask)
-  - [StopContinuousExport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#stopcontinuousexport)
-  - [StopDataCollectionByAgentIds](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#stopdatacollectionbyagentids)
-  - [UpdateApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-discovery-2015-11-01.html#updateapplication)
+  - [AssociateConfigurationItemsToApplication](api-discovery-2015-11-01-associateconfigurationitemstoapplication.md)
+  - [BatchDeleteAgents](api-discovery-2015-11-01-batchdeleteagents.md)
+  - [BatchDeleteImportData](api-discovery-2015-11-01-batchdeleteimportdata.md)
+  - [CreateApplication](api-discovery-2015-11-01-createapplication.md)
+  - [CreateTags](api-discovery-2015-11-01-createtags.md)
+  - [DeleteApplications](api-discovery-2015-11-01-deleteapplications.md)
+  - [DeleteTags](api-discovery-2015-11-01-deletetags.md)
+  - [DescribeAgents](api-discovery-2015-11-01-describeagents.md)
+  - [DescribeBatchDeleteConfigurationTask](api-discovery-2015-11-01-describebatchdeleteconfigurationtask.md)
+  - [DescribeConfigurations](api-discovery-2015-11-01-describeconfigurations.md)
+  - [DescribeContinuousExports](api-discovery-2015-11-01-describecontinuousexports.md)
+  - [DescribeExportConfigurations](api-discovery-2015-11-01-describeexportconfigurations.md)
+  - [DescribeExportTasks](api-discovery-2015-11-01-describeexporttasks.md)
+  - [DescribeImportTasks](api-discovery-2015-11-01-describeimporttasks.md)
+  - [DescribeTags](api-discovery-2015-11-01-describetags.md)
+  - [DisassociateConfigurationItemsFromApplication](api-discovery-2015-11-01-disassociateconfigurationitemsfromapplication.md)
+  - [ExportConfigurations](api-discovery-2015-11-01-exportconfigurations.md)
+  - [GetDiscoverySummary](api-discovery-2015-11-01-getdiscoverysummary.md)
+  - [ListConfigurations](api-discovery-2015-11-01-listconfigurations.md)
+  - [ListServerNeighbors](api-discovery-2015-11-01-listserverneighbors.md)
+  - [StartBatchDeleteConfigurationTask](api-discovery-2015-11-01-startbatchdeleteconfigurationtask.md)
+  - [StartContinuousExport](api-discovery-2015-11-01-startcontinuousexport.md)
+  - [StartDataCollectionByAgentIds](api-discovery-2015-11-01-startdatacollectionbyagentids.md)
+  - [StartExportTask](api-discovery-2015-11-01-startexporttask.md)
+  - [StartImportTask](api-discovery-2015-11-01-startimporttask.md)
+  - [StopContinuousExport](api-discovery-2015-11-01-stopcontinuousexport.md)
+  - [StopDataCollectionByAgentIds](api-discovery-2015-11-01-stopdatacollectionbyagentids.md)
+  - [UpdateApplication](api-discovery-2015-11-01-updateapplication.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationDiscoveryService.ApplicationDiscoveryServiceClient.html\#toc)
+### Table of Contents  [header link](class-aws-applicationdiscoveryservice-applicationdiscoveryserviceclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationDiscoveryService.ApplicationDiscoveryServiceClient.html\#toc-methods)
+#### Methods  [header link](class-aws-applicationdiscoveryservice-applicationdiscoveryserviceclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -81,7 +81,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationDiscoveryService.ApplicationDiscoveryServiceClient.html\#methods)
+### Methods  [header link](class-aws-applicationdiscoveryservice-applicationdiscoveryserviceclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -548,7 +548,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationDiscoveryService.ApplicationDiscoveryServiceClient.html#toc-methods)
+  - [Methods](class-aws-applicationdiscoveryservice-applicationdiscoveryserviceclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -575,4 +575,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationDiscoveryService.ApplicationDiscoveryServiceClient.html#top)
+[Back To Top](class-aws-applicationdiscoveryservice-applicationdiscoveryserviceclient-top.md)

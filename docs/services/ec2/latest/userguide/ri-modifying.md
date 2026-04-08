@@ -218,7 +218,7 @@ reservations to a single reservation with one `t2.medium` instance (2
 units), the footprint of the new reservation equals the footprint of the
 combined reservations.
 
-![Modifying Reserved Instances.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ri-modify-merge.png)
+![Modifying Reserved Instances.](../../../images/awsec2/latest/userguide/images/ri-modify-merge-png.md)
 
 You can also modify a reservation to divide it into two or more reservations.
 In the following example, you have a reservation with a `t2.medium`
@@ -226,7 +226,7 @@ instance (2 units). You can divide the reservation into two reservations, one
 with two `t2.nano` instances (.5 units) and the other with three
 `t2.micro` instances (1.5 units).
 
-![Modifying Reserved Instances.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ri-modify-divide.png)
+![Modifying Reserved Instances.](../../../images/awsec2/latest/userguide/images/ri-modify-divide-png.md)
 
 ### Normalization factors for bare metal instances
 

@@ -3,7 +3,7 @@ Menu
 - [Aws](namespace-aws.md)
 - [Token](namespace-aws-token.md)
 
-## TokenProvider        in package    - [Aws](package-aws.md)       Uses  [ParsesIniTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.ParsesIniTrait.html)
+## TokenProvider        in package    - [Aws](package-aws.md)       Uses  [ParsesIniTrait](class-aws-token-parsesinitrait.md)
 
 Token providers are functions that accept no arguments and return a
 promise that is fulfilled with an {@see \\Aws\\Token\\TokenInterface}
@@ -23,31 +23,31 @@ TokenProvider::chain. This function accepts
 providers as variadic arguments and returns a new function that will invoke
 each provider until a token is successfully returned.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html\#toc)
+### Table of Contents  [header link](class-aws-token-tokenprovider-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html\#toc-constants)
+#### Constants  [header link](class-aws-token-tokenprovider-toc-constants.md)
 
-[ENV\_PROFILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#constant_ENV_PROFILE)
+[ENV\_PROFILE](class-aws-token-tokenprovider-constant-env-profile.md)
 = 'AWS\_PROFILE'
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html\#toc-methods)
+#### Methods  [header link](class-aws-token-tokenprovider-toc-methods.md)
 
-[cache()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#method_cache)
+[cache()](class-aws-token-tokenprovider-method-cache.md)
 : callable Wraps a token provider and saves provided token in an
 instance of Aws\\CacheInterface. Forwards calls when no token found
-in cache and updates cache with the results.[chain()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#method_chain)
+in cache and updates cache with the results.[chain()](class-aws-token-tokenprovider-method-chain.md)
 : callable Creates an aggregate token provider that invokes the provided
 variadic providers one after the other until a provider returns
-a token.[defaultProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#method_defaultProvider)
+a token.[defaultProvider()](class-aws-token-tokenprovider-method-defaultprovider.md)
 : callable Create a default token provider tha checks for cached a SSO token from
-the CLI[fromToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#method_fromToken)
-: callable Create a token provider function from a static token.[memoize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#method_memoize)
-: callable Wraps a token provider and caches a previously provided token.[sso()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#method_sso)
+the CLI[fromToken()](class-aws-token-tokenprovider-method-fromtoken.md)
+: callable Create a token provider function from a static token.[memoize()](class-aws-token-tokenprovider-method-memoize.md)
+: callable Wraps a token provider and caches a previously provided token.[sso()](class-aws-token-tokenprovider-method-sso.md)
 : [SsoTokenProvider](class-aws-token-ssotokenprovider.md)Token provider that creates a token from cached sso credentials
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html\#constants)
+### Constants  [header link](class-aws-token-tokenprovider-constants.md)
 
-#### ENV\_PROFILE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html\#constant_ENV_PROFILE)
+#### ENV\_PROFILE  [header link](class-aws-token-tokenprovider-constant-env-profile.md)
 
 `
     public
@@ -56,9 +56,9 @@ the CLI[fromToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.To
     = 'AWS_PROFILE'
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html\#methods)
+### Methods  [header link](class-aws-token-tokenprovider-methods.md)
 
-#### cache()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html\#method_cache)
+#### cache()  [header link](class-aws-token-tokenprovider-method-cache.md)
 
 Wraps a token provider and saves provided token in an
 instance of Aws\\CacheInterface. Forwards calls when no token found
@@ -90,7 +90,7 @@ $cacheKey
 
 callable
 
-#### chain()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html\#method_chain)
+#### chain()  [header link](class-aws-token-tokenprovider-method-chain.md)
 
 Creates an aggregate token provider that invokes the provided
 variadic providers one after the other until a provider returns
@@ -104,7 +104,7 @@ a token.
 
 callable
 
-#### defaultProvider()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html\#method_defaultProvider)
+#### defaultProvider()  [header link](class-aws-token-tokenprovider-method-defaultprovider.md)
 
 Create a default token provider tha checks for cached a SSO token from
 the CLI
@@ -128,7 +128,7 @@ Optional array of token provider options.
 
 callable
 
-#### fromToken()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html\#method_fromToken)
+#### fromToken()  [header link](class-aws-token-tokenprovider-method-fromtoken.md)
 
 Create a token provider function from a static token.
 
@@ -145,7 +145,7 @@ $token
 
 callable
 
-#### memoize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html\#method_memoize)
+#### memoize()  [header link](class-aws-token-tokenprovider-method-memoize.md)
 
 Wraps a token provider and caches a previously provided token.
 
@@ -166,7 +166,7 @@ Token provider function to wrap.
 
 callable
 
-#### sso()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html\#method_sso)
+#### sso()  [header link](class-aws-token-tokenprovider-method-sso.md)
 
 Token provider that creates a token from cached sso credentials
 
@@ -192,7 +192,7 @@ $config
 
 configuration options
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html\#method_sso\#tags)
+##### Tags  [header link](class-aws-token-tokenprovider-method-sso-tags.md)
 
 see[SsoTokenProvider](class-aws-token-ssotokenprovider.md)
 
@@ -208,16 +208,16 @@ for $config details.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#toc-methods)
+  - [Constants](class-aws-token-tokenprovider-toc-constants.md)
+  - [Methods](class-aws-token-tokenprovider-toc-methods.md)
 - Constants
-  - [ENV\_PROFILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#constant_ENV_PROFILE)
+  - [ENV\_PROFILE](class-aws-token-tokenprovider-constant-env-profile.md)
 - Methods
-  - [cache()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#method_cache)
-  - [chain()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#method_chain)
-  - [defaultProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#method_defaultProvider)
-  - [fromToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#method_fromToken)
-  - [memoize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#method_memoize)
-  - [sso()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#method_sso)
+  - [cache()](class-aws-token-tokenprovider-method-cache.md)
+  - [chain()](class-aws-token-tokenprovider-method-chain.md)
+  - [defaultProvider()](class-aws-token-tokenprovider-method-defaultprovider.md)
+  - [fromToken()](class-aws-token-tokenprovider-method-fromtoken.md)
+  - [memoize()](class-aws-token-tokenprovider-method-memoize.md)
+  - [sso()](class-aws-token-tokenprovider-method-sso.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#top)
+[Back To Top](class-aws-token-tokenprovider-top.md)

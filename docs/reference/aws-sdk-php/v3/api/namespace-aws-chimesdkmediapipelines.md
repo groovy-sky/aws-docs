@@ -4,15 +4,15 @@ Menu
 
 ## ChimeSDKMediaPipelines
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkmediapipelines.html\#toc)
+### Table of Contents  [header link](namespace-aws-chimesdkmediapipelines-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkmediapipelines.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-chimesdkmediapipelines-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkmediapipelines.exception.html)
+[Exception](namespace-aws-chimesdkmediapipelines-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkmediapipelines.html\#toc-classes)
+#### Classes  [header link](namespace-aws-chimesdkmediapipelines-toc-classes.md)
 
-[ChimeSDKMediaPipelinesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKMediaPipelines.ChimeSDKMediaPipelinesClient.html)This client is used to interact with the **Amazon Chime SDK Media Pipelines** service.
+[ChimeSDKMediaPipelinesClient](class-aws-chimesdkmediapipelines-chimesdkmediapipelinesclient.md)This client is used to interact with the **Amazon Chime SDK Media Pipelines** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkmediapipelines.html#toc-classes)
+  - [Classes](namespace-aws-chimesdkmediapipelines-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chimesdkmediapipelines.html#top)
+[Back To Top](namespace-aws-chimesdkmediapipelines-top.md)

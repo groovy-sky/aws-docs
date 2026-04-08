@@ -9,17 +9,17 @@ FinalYes
 
 Credential provider for login using console credentials
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.LoginCredentialProvider.html\#toc)
+### Table of Contents  [header link](class-aws-credentials-logincredentialprovider-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.LoginCredentialProvider.html\#toc-methods)
+#### Methods  [header link](class-aws-credentials-logincredentialprovider-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.LoginCredentialProvider.html#method___construct)
-: mixed [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.LoginCredentialProvider.html#method___invoke)
+[\_\_construct()](class-aws-credentials-logincredentialprovider-method-construct.md)
+: mixed [\_\_invoke()](class-aws-credentials-logincredentialprovider-method-invoke.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Returns a promise that resolves to AWS credentials
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.LoginCredentialProvider.html\#methods)
+### Methods  [header link](class-aws-credentials-logincredentialprovider-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.LoginCredentialProvider.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-credentials-logincredentialprovider-method-construct.md)
 
 `
     public
@@ -40,7 +40,7 @@ Region used for refresh requests. If not provided,
 attempts will be made to resolve a region using
 `AWS_REGION`, then the profile specified for `login`.
 
-#### \_\_invoke()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.LoginCredentialProvider.html\#method___invoke)
+#### \_\_invoke()  [header link](class-aws-credentials-logincredentialprovider-method-invoke.md)
 
 Returns a promise that resolves to AWS credentials
 
@@ -51,13 +51,13 @@ Returns a promise that resolves to AWS credentials
 This method loads the cached token, refreshes it if necessary,
 and returns AWS credentials sourced from the access token.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.LoginCredentialProvider.html\#method___invoke\#tags)
+##### Tags  [header link](class-aws-credentials-logincredentialprovider-method-invoke-tags.md)
 
-throws[CredentialsException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.CredentialsException.html)
+throws[CredentialsException](class-aws-exception-credentialsexception.md)
 
 If re-authentication is required or credentials cannot be loaded
 
-throws[SigninException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signin.Exception.SigninException.html)
+throws[SigninException](class-aws-signin-exception-signinexception.md)
 
 If the token refresh fails with a SigninException
 
@@ -75,9 +75,9 @@ A promise that resolves to a Credentials object
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.LoginCredentialProvider.html#toc-methods)
+  - [Methods](class-aws-credentials-logincredentialprovider-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.LoginCredentialProvider.html#method___construct)
-  - [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.LoginCredentialProvider.html#method___invoke)
+  - [\_\_construct()](class-aws-credentials-logincredentialprovider-method-construct.md)
+  - [\_\_invoke()](class-aws-credentials-logincredentialprovider-method-invoke.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.LoginCredentialProvider.html#top)
+[Back To Top](class-aws-credentials-logincredentialprovider-top.md)

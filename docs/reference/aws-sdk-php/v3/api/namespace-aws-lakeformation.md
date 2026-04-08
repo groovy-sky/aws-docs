@@ -4,15 +4,15 @@ Menu
 
 ## LakeFormation
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lakeformation.html\#toc)
+### Table of Contents  [header link](namespace-aws-lakeformation-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lakeformation.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-lakeformation-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lakeformation.exception.html)
+[Exception](namespace-aws-lakeformation-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lakeformation.html\#toc-classes)
+#### Classes  [header link](namespace-aws-lakeformation-toc-classes.md)
 
-[LakeFormationClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LakeFormation.LakeFormationClient.html)This client is used to interact with the **AWS Lake Formation** service.
+[LakeFormationClient](class-aws-lakeformation-lakeformationclient.md)This client is used to interact with the **AWS Lake Formation** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lakeformation.html#toc-classes)
+  - [Classes](namespace-aws-lakeformation-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lakeformation.html#top)
+[Back To Top](namespace-aws-lakeformation-top.md)

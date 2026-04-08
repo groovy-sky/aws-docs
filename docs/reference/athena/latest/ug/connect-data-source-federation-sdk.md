@@ -15,7 +15,7 @@ your connector in this way, you can use it in your Athena queries.
 For information about how to download the SDK and detailed instructions for writing
 your own connector, see [Example Athena connector](https://github.com/awslabs/aws-athena-query-federation/tree/master/athena-example) on GitHub.
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Understand federated table name qualifiers
 

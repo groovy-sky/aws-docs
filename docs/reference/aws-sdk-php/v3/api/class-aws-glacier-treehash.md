@@ -7,30 +7,30 @@ Menu
 
 Encapsulates the creation of a tree hash from streamed data
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html\#toc)
+### Table of Contents  [header link](class-aws-glacier-treehash-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-glacier-treehash-toc-interfaces.md)
 
 [HashInterface](class-aws-hashinterface.md)Interface that allows implementing various incremental hashes.
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html\#toc-constants)
+#### Constants  [header link](class-aws-glacier-treehash-toc-constants.md)
 
-[EMPTY\_HASH](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html#constant_EMPTY_HASH)
-= 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' [MB](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html#constant_MB)
+[EMPTY\_HASH](class-aws-glacier-treehash-constant-empty-hash.md)
+= 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' [MB](class-aws-glacier-treehash-constant-mb.md)
 = 1048576
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html\#toc-methods)
+#### Methods  [header link](class-aws-glacier-treehash-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html#method___construct)
-: mixed [addChecksum()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html#method_addChecksum)
-: self Add a checksum to the tree hash directly[complete()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html#method_complete)
-: string Finalizes the incremental hash and returns the resulting digest.[reset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html#method_reset)
-: mixed Removes all data from the hash, effectively starting a new hash.[update()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html#method_update)
+[\_\_construct()](class-aws-glacier-treehash-method-construct.md)
+: mixed [addChecksum()](class-aws-glacier-treehash-method-addchecksum.md)
+: self Add a checksum to the tree hash directly[complete()](class-aws-glacier-treehash-method-complete.md)
+: string Finalizes the incremental hash and returns the resulting digest.[reset()](class-aws-glacier-treehash-method-reset.md)
+: mixed Removes all data from the hash, effectively starting a new hash.[update()](class-aws-glacier-treehash-method-update.md)
 : mixed Adds data to the hash.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html\#constants)
+### Constants  [header link](class-aws-glacier-treehash-constants.md)
 
-#### EMPTY\_HASH  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html\#constant_EMPTY_HASH)
+#### EMPTY\_HASH  [header link](class-aws-glacier-treehash-constant-empty-hash.md)
 
 `
     public
@@ -39,7 +39,7 @@ Encapsulates the creation of a tree hash from streamed data
     = 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
 `
 
-#### MB  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html\#constant_MB)
+#### MB  [header link](class-aws-glacier-treehash-constant-mb.md)
 
 `
     public
@@ -48,9 +48,9 @@ Encapsulates the creation of a tree hash from streamed data
     = 1048576
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html\#methods)
+### Methods  [header link](class-aws-glacier-treehash-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-glacier-treehash-method-construct.md)
 
 `
     public
@@ -62,7 +62,7 @@ $algorithm
 : mixed
 = 'sha256'
 
-#### addChecksum()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html\#method_addChecksum)
+#### addChecksum()  [header link](class-aws-glacier-treehash-method-addchecksum.md)
 
 Add a checksum to the tree hash directly
 
@@ -83,7 +83,7 @@ $inBinaryForm
 
 TRUE if checksum is in binary form
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html\#method_addChecksum\#tags)
+##### Tags  [header link](class-aws-glacier-treehash-method-addchecksum-tags.md)
 
 throwsLogicException
 
@@ -93,7 +93,7 @@ if the root tree hash is already calculated
 
 self
 
-#### complete()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html\#method_complete)
+#### complete()  [header link](class-aws-glacier-treehash-method-complete.md)
 
 Finalizes the incremental hash and returns the resulting digest.
 
@@ -105,7 +105,7 @@ Finalizes the incremental hash and returns the resulting digest.
 
 string
 
-#### reset()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html\#method_reset)
+#### reset()  [header link](class-aws-glacier-treehash-method-reset.md)
 
 Removes all data from the hash, effectively starting a new hash.
 
@@ -113,7 +113,7 @@ Removes all data from the hash, effectively starting a new hash.
     public
                     reset() : mixed`
 
-#### update()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html\#method_update)
+#### update()  [header link](class-aws-glacier-treehash-method-update.md)
 
 Adds data to the hash.
 
@@ -128,7 +128,7 @@ $data
 
 Data to add to the hash
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html\#method_update\#tags)
+##### Tags  [header link](class-aws-glacier-treehash-method-update-tags.md)
 
 throwsLogicException
 
@@ -141,16 +141,16 @@ if the root tree hash is already calculated
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html#toc-methods)
+  - [Constants](class-aws-glacier-treehash-toc-constants.md)
+  - [Methods](class-aws-glacier-treehash-toc-methods.md)
 - Constants
-  - [EMPTY\_HASH](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html#constant_EMPTY_HASH)
-  - [MB](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html#constant_MB)
+  - [EMPTY\_HASH](class-aws-glacier-treehash-constant-empty-hash.md)
+  - [MB](class-aws-glacier-treehash-constant-mb.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html#method___construct)
-  - [addChecksum()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html#method_addChecksum)
-  - [complete()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html#method_complete)
-  - [reset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html#method_reset)
-  - [update()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html#method_update)
+  - [\_\_construct()](class-aws-glacier-treehash-method-construct.md)
+  - [addChecksum()](class-aws-glacier-treehash-method-addchecksum.md)
+  - [complete()](class-aws-glacier-treehash-method-complete.md)
+  - [reset()](class-aws-glacier-treehash-method-reset.md)
+  - [update()](class-aws-glacier-treehash-method-update.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.TreeHash.html#top)
+[Back To Top](class-aws-glacier-treehash-top.md)

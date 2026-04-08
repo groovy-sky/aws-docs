@@ -1,32 +1,32 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Promise](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.promise.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Promise](namespace-guzzlehttp-promise.md)
 
 ## EachPromise        in package    - [Aws](package-aws.md)       implements  [PromisorInterface](class-guzzlehttp-promise-promisorinterface.md)
 
 Represents a promise that iterates over many promises and invokes
 side-effect functions in the process.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.EachPromise.html\#tags)
+##### Tags  [header link](class-guzzlehttp-promise-eachpromise-tags.md)
 
 final
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.EachPromise.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-promise-eachpromise-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.EachPromise.html\#toc-interfaces)
+#### Interfaces  [header link](class-guzzlehttp-promise-eachpromise-toc-interfaces.md)
 
 [PromisorInterface](class-guzzlehttp-promise-promisorinterface.md)Interface used with classes that return a promise.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.EachPromise.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-promise-eachpromise-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.EachPromise.html#method___construct)
-: mixed Configuration hash can include the following key value pairs:[promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.EachPromise.html#method_promise)
+[\_\_construct()](class-guzzlehttp-promise-eachpromise-method-construct.md)
+: mixed Configuration hash can include the following key value pairs:[promise()](class-guzzlehttp-promise-eachpromise-method-promise.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Returns a promise.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.EachPromise.html\#methods)
+### Methods  [header link](class-guzzlehttp-promise-eachpromise-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.EachPromise.html\#method___construct)
+#### \_\_construct()  [header link](class-guzzlehttp-promise-eachpromise-method-construct.md)
 
 Configuration hash can include the following key value pairs:
 
@@ -62,7 +62,7 @@ $config
 
 Configuration options
 
-#### promise()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.EachPromise.html\#method_promise)
+#### promise()  [header link](class-guzzlehttp-promise-eachpromise-method-promise.md)
 
 Returns a promise.
 
@@ -70,7 +70,7 @@ Returns a promise.
     public
                     promise() : PromiseInterface`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.EachPromise.html\#method_promise\#tags)
+##### Tags  [header link](class-guzzlehttp-promise-eachpromise-method-promise-tags.md)
 
 psalm-suppress
 
@@ -86,9 +86,9 @@ InvalidNullableReturnType
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.EachPromise.html#toc-methods)
+  - [Methods](class-guzzlehttp-promise-eachpromise-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.EachPromise.html#method___construct)
-  - [promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.EachPromise.html#method_promise)
+  - [\_\_construct()](class-guzzlehttp-promise-eachpromise-method-construct.md)
+  - [promise()](class-guzzlehttp-promise-eachpromise-method-promise.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.EachPromise.html#top)
+[Back To Top](class-guzzlehttp-promise-eachpromise-top.md)

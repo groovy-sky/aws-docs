@@ -4,15 +4,15 @@ Menu
 
 ## Schemas
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.schemas.html\#toc)
+### Table of Contents  [header link](namespace-aws-schemas-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.schemas.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-schemas-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.schemas.exception.html)
+[Exception](namespace-aws-schemas-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.schemas.html\#toc-classes)
+#### Classes  [header link](namespace-aws-schemas-toc-classes.md)
 
-[SchemasClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Schemas.SchemasClient.html)This client is used to interact with the **Schemas** service.
+[SchemasClient](class-aws-schemas-schemasclient.md)This client is used to interact with the **Schemas** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.schemas.html#toc-classes)
+  - [Classes](namespace-aws-schemas-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.schemas.html#top)
+[Back To Top](namespace-aws-schemas-top.md)

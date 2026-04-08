@@ -72,7 +72,7 @@ Valid Values: `CAPABILITY_IAM | CAPABILITY_NAMED_IAM | CAPABILITY_AUTO_EXPAND`
 A list of `Change` structures that describes the resources CloudFormation changes
 if you execute the change set.
 
-Type: Array of [Change](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_Change.html) objects
+Type: Array of [Change](api-change.md) objects
 
 **ChangeSetId**
 
@@ -136,7 +136,7 @@ Indicates if the change set imports resources that already exist.
 
 This parameter can only import resources that have [custom\
 names](../../../../services/cloudformation/latest/templatereference/aws-properties-name.md) in templates. To import resources that do not accept custom names, such as
-EC2 instances, use the [resource import](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resource-import.html)
+EC2 instances, use the [resource import](../../../../services/cloudformation/latest/userguide/resource-import.md)
 feature instead.
 
 Type: Boolean
@@ -168,7 +168,7 @@ Array Members: Maximum number of 5 items.
 **OnStackFailure**
 
 Determines what action will be taken if stack creation fails. When this parameter is
-specified, the `DisableRollback` parameter to the [ExecuteChangeSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ExecuteChangeSet.html) API operation must not be specified. This must be one of these
+specified, the `DisableRollback` parameter to the [ExecuteChangeSet](api-executechangeset.md) API operation must not be specified. This must be one of these
 values:
 
 - `DELETE` \- Deletes the change set if the stack creation fails. This is only
@@ -177,11 +177,11 @@ deletion of the stack fails, the status of the stack is `DELETE_FAILED`.
 
 - `DO_NOTHING` \- if the stack creation fails, do nothing. This is equivalent
 to specifying `true` for the `DisableRollback` parameter to the
-[ExecuteChangeSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ExecuteChangeSet.html) API operation.
+[ExecuteChangeSet](api-executechangeset.md) API operation.
 
 - `ROLLBACK` \- if the stack creation fails, roll back the stack. This is
 equivalent to specifying `false` for the `DisableRollback` parameter
-to the [ExecuteChangeSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ExecuteChangeSet.html) API operation.
+to the [ExecuteChangeSet](api-executechangeset.md) API operation.
 
 Type: String
 
@@ -190,9 +190,9 @@ Valid Values: `DO_NOTHING | ROLLBACK | DELETE`
 **Parameters.member.N**
 
 A list of `Parameter` structures that describes the input parameters and their
-values used to create the change set. For more information, see the [Parameter](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_Parameter.html) data type.
+values used to create the change set. For more information, see the [Parameter](api-parameter.md) data type.
 
-Type: Array of [Parameter](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_Parameter.html) objects
+Type: Array of [Parameter](api-parameter.md) objects
 
 **ParentChangeSetId**
 
@@ -210,7 +210,7 @@ Pattern: `arn:[-a-zA-Z0-9:/]*`
 The rollback triggers for CloudFormation to monitor during stack creation and updating
 operations, and for the specified monitoring period afterwards.
 
-Type: [RollbackConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_RollbackConfiguration.html) object
+Type: [RollbackConfiguration](api-rollbackconfiguration.md) object
 
 **RootChangeSetId**
 
@@ -273,7 +273,7 @@ Type: String
 
 If you execute the change set, the tags that will be associated with the stack.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Array Members: Maximum number of 50 items.
 
@@ -372,27 +372,27 @@ https://cloudformation.us-east-1.amazonaws.com/
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/DescribeChangeSet)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/cloudformation-2010-05-15/describechangeset.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/DescribeChangeSet)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/cloudformation-2010-05-15/describechangeset.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/DescribeChangeSet)
+- [AWS SDK for C++](../../../goto/sdkforcpp/cloudformation-2010-05-15/describechangeset.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/DescribeChangeSet)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/cloudformation-2010-05-15/describechangeset.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/DescribeChangeSet)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudformation-2010-05-15/describechangeset.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/DescribeChangeSet)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/cloudformation-2010-05-15/describechangeset.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/DescribeChangeSet)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/cloudformation-2010-05-15/describechangeset.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/DescribeChangeSet)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/cloudformation-2010-05-15/describechangeset.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/DescribeChangeSet)
+- [AWS SDK for Python](../../../../services/goto/boto3/cloudformation-2010-05-15/describechangeset.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/DescribeChangeSet)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/describechangeset.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DescribeAccountLimits
 

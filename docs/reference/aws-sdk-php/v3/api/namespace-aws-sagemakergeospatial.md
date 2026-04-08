@@ -4,15 +4,15 @@ Menu
 
 ## SageMakerGeospatial
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakergeospatial.html\#toc)
+### Table of Contents  [header link](namespace-aws-sagemakergeospatial-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakergeospatial.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-sagemakergeospatial-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakergeospatial.exception.html)
+[Exception](namespace-aws-sagemakergeospatial-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakergeospatial.html\#toc-classes)
+#### Classes  [header link](namespace-aws-sagemakergeospatial-toc-classes.md)
 
-[SageMakerGeospatialClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMakerGeospatial.SageMakerGeospatialClient.html)This client is used to interact with the **Amazon SageMaker geospatial capabilities** service.
+[SageMakerGeospatialClient](class-aws-sagemakergeospatial-sagemakergeospatialclient.md)This client is used to interact with the **Amazon SageMaker geospatial capabilities** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakergeospatial.html#toc-classes)
+  - [Classes](namespace-aws-sagemakergeospatial-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakergeospatial.html#top)
+[Back To Top](namespace-aws-sagemakergeospatial-top.md)

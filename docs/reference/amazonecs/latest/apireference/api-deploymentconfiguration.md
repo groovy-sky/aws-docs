@@ -9,7 +9,7 @@ the ordering of stopping and starting tasks.
 
 Information about the CloudWatch alarms.
 
-Type: [DeploymentAlarms](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeploymentAlarms.html) object
+Type: [DeploymentAlarms](api-deploymentalarms.md) object
 
 Required: No
 
@@ -31,7 +31,7 @@ is `CANARY`. This configuration enables shifting a fixed percentage of
 traffic for testing, followed by shifting the remaining traffic after a bake
 period.
 
-Type: [CanaryConfiguration](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CanaryConfiguration.html) object
+Type: [CanaryConfiguration](api-canaryconfiguration.md) object
 
 Required: No
 
@@ -51,7 +51,7 @@ For more information, see [Rolling\
 update](../../../../services/amazonecs/latest/developerguide/deployment-type-ecs.md) in the _Amazon Elastic Container Service Developer_
 _Guide_
 
-Type: [DeploymentCircuitBreaker](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeploymentCircuitBreaker.html) object
+Type: [DeploymentCircuitBreaker](api-deploymentcircuitbreaker.md) object
 
 Required: No
 
@@ -59,7 +59,7 @@ Required: No
 
 An array of deployment lifecycle hook objects to run custom logic at specific stages of the deployment lifecycle.
 
-Type: Array of [DeploymentLifecycleHook](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeploymentLifecycleHook.html) objects
+Type: Array of [DeploymentLifecycleHook](api-deploymentlifecyclehook.md) objects
 
 Required: No
 
@@ -69,7 +69,7 @@ Configuration for linear deployment strategy. Only valid when the deployment str
 is `LINEAR`. This configuration enables progressive traffic shifting in equal
 percentage increments with configurable bake times between each step.
 
-Type: [LinearConfiguration](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_LinearConfiguration.html) object
+Type: [LinearConfiguration](api-linearconfiguration.md) object
 
 Required: No
 
@@ -235,13 +235,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/DeploymentConfiguration)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/deploymentconfiguration.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/DeploymentConfiguration)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/deploymentconfiguration.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/DeploymentConfiguration)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/deploymentconfiguration.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DeploymentCircuitBreaker
 

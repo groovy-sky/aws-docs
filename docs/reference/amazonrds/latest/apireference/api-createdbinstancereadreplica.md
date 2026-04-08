@@ -20,7 +20,7 @@ Your source DB instance or cluster must have backup retention enabled.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 **DBInstanceIdentifier**
 
@@ -38,7 +38,7 @@ to three additional storage volumes using the names `rdsdbdata2`,
 `rdsdbdata3`, and `rdsdbdata4`. Additional storage volumes are
 supported for RDS for Oracle and RDS for SQL Server DB instances only.
 
-Type: Array of [AdditionalStorageVolume](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_AdditionalStorageVolume.html) objects
+Type: Array of [AdditionalStorageVolume](api-additionalstoragevolume.md) objects
 
 Required: No
 
@@ -67,7 +67,7 @@ This setting doesn't apply to RDS Custom DB instances.
 
 Default: Inherits the value from the source DB instance.
 
-For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Upgrading.html#USER_UpgradeDBInstance.Upgrading.AutoMinorVersionUpgrades).
+For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](../../../../services/amazonrds/latest/userguide/user-upgradedbinstance-upgrading-user-upgradedbinstance-upgrading-autominorversionupgrades.md).
 
 Type: Boolean
 
@@ -260,7 +260,7 @@ Required: No
 The Active Directory directory ID to create the DB instance in. Currently, only MySQL, Microsoft SQL
 Server, Oracle, and PostgreSQL DB instances can be created in an Active Directory Domain.
 
-For more information, see [Kerberos Authentication](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/kerberos-authentication.html) in the _Amazon RDS User Guide_.
+For more information, see [Kerberos Authentication](../../../../services/amazonrds/latest/userguide/kerberos-authentication.md) in the _Amazon RDS User Guide_.
 
 This setting doesn't apply to RDS Custom DB instances.
 
@@ -359,7 +359,7 @@ private cloud (VPC) on your local network.
 For more information about RDS on Outposts, see [Working with Amazon RDS on AWS Outposts](../../../../services/amazonrds/latest/userguide/rds-on-outposts.md)
 in the _Amazon RDS User Guide_.
 
-For more information about CoIPs, see [Customer-owned IP addresses](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html#ip-addressing)
+For more information about CoIPs, see [Customer-owned IP addresses](../../../../services/outposts/latest/userguide/routing-ip-addressing.md)
 in the _AWS Outposts User Guide_.
 
 Type: Boolean
@@ -463,7 +463,7 @@ Required: No
 The ARN for the IAM role that permits RDS to send enhanced monitoring metrics to Amazon CloudWatch Logs. For
 example, `arn:aws:iam:123456789012:role/emaccess`. For information on creating a monitoring role,
 go to [To \
-create an IAM role for Amazon RDS Enhanced Monitoring](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.html#USER_Monitoring.OS.IAMRole) in the _Amazon RDS User Guide_.
+create an IAM role for Amazon RDS Enhanced Monitoring](../../../../services/amazonrds/latest/userguide/user-monitoring-user-monitoring-os-iamrole.md) in the _Amazon RDS User Guide_.
 
 If `MonitoringInterval` is set to a value other than 0, then you must
 supply a `MonitoringRoleArn` value.
@@ -628,7 +628,7 @@ following example:
 
 To learn how to generate a Signature Version 4 signed request, see
 [Authenticating Requests: Using Query Parameters (AWS Signature Version 4)](../../../../services/s3/latest/api/sigv4-query-string-auth.md) and
-[Signature Version 4 Signing Process](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html).
+[Signature Version 4 Signing Process](../../../../general/general/latest/gr/signature-version-4.md).
 
 ###### Note
 
@@ -650,7 +650,7 @@ The number of CPU cores and the number of threads per core for the DB instance c
 
 This setting doesn't apply to RDS Custom DB instances.
 
-Type: Array of [ProcessorFeature](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ProcessorFeature.html) objects
+Type: Array of [ProcessorFeature](api-processorfeature.md) objects
 
 Required: No
 
@@ -688,7 +688,7 @@ cross-Region disaster recovery. Because it doesn't accept user
 connections, a standby replica can't serve a read-only workload.
 
 You can create a combination of standby and read-only DB replicas for the
-same primary DB instance. For more information, see [Working with replicas for Amazon RDS for Db2](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-replication.html) in the _Amazon RDS User_
+same primary DB instance. For more information, see [Working with replicas for Amazon RDS for Db2](../../../../services/amazonrds/latest/userguide/db2-replication.md) in the _Amazon RDS User_
 _Guide_.
 
 To create standby DB replicas for RDS for Db2, set this parameter to
@@ -757,10 +757,10 @@ instance.
 - Can't be specified if the `SourceDBClusterIdentifier` parameter is
 also specified.
 
-- For the limitations of Oracle read replicas, see [Version and licensing considerations for RDS for Oracle replicas](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-read-replicas.limitations.html#oracle-read-replicas.limitations.versions-and-licenses) in the
+- For the limitations of Oracle read replicas, see [Version and licensing considerations for RDS for Oracle replicas](../../../../services/amazonrds/latest/userguide/oracle-read-replicas-limitations-oracle-read-replicas-limitations-versions-and-licenses.md) in the
 _Amazon RDS User Guide_.
 
-- For the limitations of SQL Server read replicas, see [Read replica limitations with SQL Server](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.ReadReplicas.html#SQLServer.ReadReplicas.Limitations) in the _Amazon RDS User Guide_.
+- For the limitations of SQL Server read replicas, see [Read replica limitations with SQL Server](../../../../services/amazonrds/latest/userguide/sqlserver-readreplicas-sqlserver-readreplicas-limitations.md) in the _Amazon RDS User Guide_.
 
 - The specified DB instance must have automatic backups enabled, that is, its backup
 retention period must be greater than 0.
@@ -769,7 +769,7 @@ retention period must be greater than 0.
 instance identifier.
 
 - If the source DB instance is in a different AWS Region from the read
-replica, specify a valid DB instance ARN. For more information, see [Constructing an ARN for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Tagging.ARN.html#USER_Tagging.ARN.Constructing) in the _Amazon RDS User_
+replica, specify a valid DB instance ARN. For more information, see [Constructing an ARN for Amazon RDS](../../../../services/amazonrds/latest/userguide/user-tagging-arn-user-tagging-arn-constructing.md) in the _Amazon RDS User_
 _Guide_. This doesn't apply to SQL Server or RDS Custom, which
 don't support cross-Region replicas.
 
@@ -809,9 +809,9 @@ A list of tags.
 
 For more information, see
 [Tagging Amazon RDS resources](../../../../services/amazonrds/latest/userguide/user-tagging.md) in the _Amazon RDS User Guide_ or
-[Tagging Amazon Aurora and Amazon RDS resources](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Tagging.html) in the _Amazon Aurora User Guide_.
+[Tagging Amazon Aurora and Amazon RDS resources](../../../../services/amazonrds/latest/aurorauserguide/user-tagging.md) in the _Amazon Aurora User Guide_.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Required: No
 
@@ -823,7 +823,7 @@ Valid Values:
 
 - `auto-backup` \- The DB instance's automated backup.
 
-Type: Array of [TagSpecification](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_TagSpecification.html) objects
+Type: Array of [TagSpecification](api-tagspecification.md) objects
 
 Required: No
 
@@ -873,11 +873,11 @@ This data type is used as a response element in the operations `CreateDBInstance
 `RestoreDBInstanceFromDBSnapshot`, `RestoreDBInstanceFromS3`, `RestoreDBInstanceToPointInTime`,
 `StartDBInstance`, and `StopDBInstance`.
 
-Type: [DBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBInstance.html) object
+Type: [DBInstance](api-dbinstance.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **CertificateNotFound**
 
@@ -1122,27 +1122,27 @@ https://rds.us-east-1.amazonaws.com/
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/rds-2014-10-31/CreateDBInstanceReadReplica)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/rds-2014-10-31/createdbinstancereadreplica.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/rds-2014-10-31/CreateDBInstanceReadReplica)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/rds-2014-10-31/createdbinstancereadreplica.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/CreateDBInstanceReadReplica)
+- [AWS SDK for C++](../../../goto/sdkforcpp/rds-2014-10-31/createdbinstancereadreplica.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/rds-2014-10-31/CreateDBInstanceReadReplica)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/rds-2014-10-31/createdbinstancereadreplica.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/CreateDBInstanceReadReplica)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/rds-2014-10-31/createdbinstancereadreplica.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/rds-2014-10-31/CreateDBInstanceReadReplica)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/rds-2014-10-31/createdbinstancereadreplica.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/rds-2014-10-31/CreateDBInstanceReadReplica)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/rds-2014-10-31/createdbinstancereadreplica.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/rds-2014-10-31/CreateDBInstanceReadReplica)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/rds-2014-10-31/createdbinstancereadreplica.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/CreateDBInstanceReadReplica)
+- [AWS SDK for Python](../../../../services/goto/boto3/rds-2014-10-31/createdbinstancereadreplica.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/CreateDBInstanceReadReplica)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/createdbinstancereadreplica.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateDBInstance
 

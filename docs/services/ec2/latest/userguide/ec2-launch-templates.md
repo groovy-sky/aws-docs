@@ -21,7 +21,7 @@ instance. The third version uses different values for some of the parameters. Ve
 set as the default version. If you launched an instance from this launch template, the
 launch parameters from version 2 would be used if no other version were specified.
 
-![Launch template with three versions.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/launch-template-diagram.png)
+![Launch template with three versions.](../../../images/awsec2/latest/userguide/images/launch-template-diagram-png.md)
 
 ###### Contents
 

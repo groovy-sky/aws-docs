@@ -7,17 +7,17 @@ Menu
 
 Validates a schema against a hash of input.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Validator.html\#toc)
+### Table of Contents  [header link](class-aws-api-validator-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Validator.html\#toc-methods)
+#### Methods  [header link](class-aws-api-validator-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Validator.html#method___construct)
-: mixed [validate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Validator.html#method_validate)
+[\_\_construct()](class-aws-api-validator-method-construct.md)
+: mixed [validate()](class-aws-api-validator-method-validate.md)
 : mixed Validates the given input against the schema.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Validator.html\#methods)
+### Methods  [header link](class-aws-api-validator-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Validator.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-api-validator-method-construct.md)
 
 `
     public
@@ -34,7 +34,7 @@ Accepts the following keys: "required", "min",
 "max", and "pattern". If a key is not
 provided, the constraint will assume false.
 
-#### validate()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Validator.html\#method_validate)
+#### validate()  [header link](class-aws-api-validator-method-validate.md)
 
 Validates the given input against the schema.
 
@@ -59,7 +59,7 @@ $input
 
 Input to validate
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Validator.html\#method_validate\#tags)
+##### Tags  [header link](class-aws-api-validator-method-validate-tags.md)
 
 throwsInvalidArgumentException
 
@@ -72,9 +72,9 @@ if the input is invalid.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Validator.html#toc-methods)
+  - [Methods](class-aws-api-validator-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Validator.html#method___construct)
-  - [validate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Validator.html#method_validate)
+  - [\_\_construct()](class-aws-api-validator-method-construct.md)
+  - [validate()](class-aws-api-validator-method-validate.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Validator.html#top)
+[Back To Top](class-aws-api-validator-top.md)

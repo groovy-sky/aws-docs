@@ -13,7 +13,7 @@ Describes a previously submitted calculation execution.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/athena/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -82,7 +82,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Contains result information. This field is populated only if the calculation is
 completed.
 
-Type: [CalculationResult](https://docs.aws.amazon.com/athena/latest/APIReference/API_CalculationResult.html) object
+Type: [CalculationResult](api-calculationresult.md) object
 
 **[SessionId](#API_GetCalculationExecution_ResponseSyntax)**
 
@@ -97,13 +97,13 @@ Length Constraints: Minimum length of 1. Maximum length of 256.
 Contains information about the data processing unit (DPU) execution time and progress.
 This field is populated only when statistics are available.
 
-Type: [CalculationStatistics](https://docs.aws.amazon.com/athena/latest/APIReference/API_CalculationStatistics.html) object
+Type: [CalculationStatistics](api-calculationstatistics.md) object
 
 **[Status](#API_GetCalculationExecution_ResponseSyntax)**
 
 Contains information about the status of the calculation.
 
-Type: [CalculationStatus](https://docs.aws.amazon.com/athena/latest/APIReference/API_CalculationStatus.html) object
+Type: [CalculationStatus](api-calculationstatus.md) object
 
 **[WorkingDirectory](#API_GetCalculationExecution_ResponseSyntax)**
 
@@ -117,7 +117,7 @@ Pattern: `^(https|s3|S3)://([^/]+)/?(.*)$`
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/athena/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **InternalServerException**
 
@@ -152,27 +152,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/athena-2017-05-18/GetCalculationExecution)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/athena-2017-05-18/getcalculationexecution.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/athena-2017-05-18/GetCalculationExecution)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/athena-2017-05-18/getcalculationexecution.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/GetCalculationExecution)
+- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/getcalculationexecution.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/athena-2017-05-18/GetCalculationExecution)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/athena-2017-05-18/getcalculationexecution.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/GetCalculationExecution)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/getcalculationexecution.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/athena-2017-05-18/GetCalculationExecution)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/athena-2017-05-18/getcalculationexecution.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/athena-2017-05-18/GetCalculationExecution)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/athena-2017-05-18/getcalculationexecution.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/athena-2017-05-18/GetCalculationExecution)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/athena-2017-05-18/getcalculationexecution.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/athena-2017-05-18/GetCalculationExecution)
+- [AWS SDK for Python](../../../../services/goto/boto3/athena-2017-05-18/getcalculationexecution.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/GetCalculationExecution)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/getcalculationexecution.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ExportNotebook
 

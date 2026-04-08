@@ -9,21 +9,21 @@ Encapsulates the documentation strings for a given service-version and
 provides methods for extracting the desired parts related to a service,
 operation, error, or shape (i.e., parameter).
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html\#toc)
+### Table of Contents  [header link](class-aws-api-docmodel-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html\#toc-methods)
+#### Methods  [header link](class-aws-api-docmodel-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html#method___construct)
-: mixed [getErrorDocs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html#method_getErrorDocs)
-: null\|string Retrieves documentation about an error.[getOperationDocs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html#method_getOperationDocs)
-: null\|string Retrieves documentation about an operation.[getServiceDocs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html#method_getServiceDocs)
-: null\|string Retrieves documentation about the service.[getShapeDocs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html#method_getShapeDocs)
-: null\|string Retrieves documentation about a shape, specific to the context.[toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html#method_toArray)
+[\_\_construct()](class-aws-api-docmodel-method-construct.md)
+: mixed [getErrorDocs()](class-aws-api-docmodel-method-geterrordocs.md)
+: null\|string Retrieves documentation about an error.[getOperationDocs()](class-aws-api-docmodel-method-getoperationdocs.md)
+: null\|string Retrieves documentation about an operation.[getServiceDocs()](class-aws-api-docmodel-method-getservicedocs.md)
+: null\|string Retrieves documentation about the service.[getShapeDocs()](class-aws-api-docmodel-method-getshapedocs.md)
+: null\|string Retrieves documentation about a shape, specific to the context.[toArray()](class-aws-api-docmodel-method-toarray.md)
 : array<string\|int, mixed> Convert the doc model to an array.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html\#methods)
+### Methods  [header link](class-aws-api-docmodel-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-api-docmodel-method-construct.md)
 
 `
     public
@@ -34,11 +34,11 @@ operation, error, or shape (i.e., parameter).
 $docs
 : array<string\|int, mixed>
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html\#method___construct\#tags)
+##### Tags  [header link](class-aws-api-docmodel-method-construct-tags.md)
 
 throwsRuntimeException
 
-#### getErrorDocs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html\#method_getErrorDocs)
+#### getErrorDocs()  [header link](class-aws-api-docmodel-method-geterrordocs.md)
 
 Retrieves documentation about an error.
 
@@ -57,7 +57,7 @@ Name of the error
 
 null\|string
 
-#### getOperationDocs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html\#method_getOperationDocs)
+#### getOperationDocs()  [header link](class-aws-api-docmodel-method-getoperationdocs.md)
 
 Retrieves documentation about an operation.
 
@@ -76,7 +76,7 @@ Name of the operation
 
 null\|string
 
-#### getServiceDocs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html\#method_getServiceDocs)
+#### getServiceDocs()  [header link](class-aws-api-docmodel-method-getservicedocs.md)
 
 Retrieves documentation about the service.
 
@@ -88,7 +88,7 @@ Retrieves documentation about the service.
 
 null\|string
 
-#### getShapeDocs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html\#method_getShapeDocs)
+#### getShapeDocs()  [header link](class-aws-api-docmodel-method-getshapedocs.md)
 
 Retrieves documentation about a shape, specific to the context.
 
@@ -117,7 +117,7 @@ Name used by the context to reference the shape.
 
 null\|string
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html\#method_toArray)
+#### toArray()  [header link](class-aws-api-docmodel-method-toarray.md)
 
 Convert the doc model to an array.
 
@@ -135,13 +135,13 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html#toc-methods)
+  - [Methods](class-aws-api-docmodel-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html#method___construct)
-  - [getErrorDocs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html#method_getErrorDocs)
-  - [getOperationDocs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html#method_getOperationDocs)
-  - [getServiceDocs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html#method_getServiceDocs)
-  - [getShapeDocs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html#method_getShapeDocs)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html#method_toArray)
+  - [\_\_construct()](class-aws-api-docmodel-method-construct.md)
+  - [getErrorDocs()](class-aws-api-docmodel-method-geterrordocs.md)
+  - [getOperationDocs()](class-aws-api-docmodel-method-getoperationdocs.md)
+  - [getServiceDocs()](class-aws-api-docmodel-method-getservicedocs.md)
+  - [getShapeDocs()](class-aws-api-docmodel-method-getshapedocs.md)
+  - [toArray()](class-aws-api-docmodel-method-toarray.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.DocModel.html#top)
+[Back To Top](class-aws-api-docmodel-top.md)

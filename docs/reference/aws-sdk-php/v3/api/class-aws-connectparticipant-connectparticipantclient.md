@@ -17,23 +17,23 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-09-07**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectparticipant-2018-09-07.html)
+- [**2018-09-07**](api-connectparticipant-2018-09-07.md)
 
-  - [CancelParticipantAuthentication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectparticipant-2018-09-07.html#cancelparticipantauthentication)
-  - [CompleteAttachmentUpload](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectparticipant-2018-09-07.html#completeattachmentupload)
-  - [CreateParticipantConnection](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectparticipant-2018-09-07.html#createparticipantconnection)
-  - [DescribeView](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectparticipant-2018-09-07.html#describeview)
-  - [DisconnectParticipant](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectparticipant-2018-09-07.html#disconnectparticipant)
-  - [GetAttachment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectparticipant-2018-09-07.html#getattachment)
-  - [GetAuthenticationUrl](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectparticipant-2018-09-07.html#getauthenticationurl)
-  - [GetTranscript](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectparticipant-2018-09-07.html#gettranscript)
-  - [SendEvent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectparticipant-2018-09-07.html#sendevent)
-  - [SendMessage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectparticipant-2018-09-07.html#sendmessage)
-  - [StartAttachmentUpload](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectparticipant-2018-09-07.html#startattachmentupload)
+  - [CancelParticipantAuthentication](api-connectparticipant-2018-09-07-cancelparticipantauthentication.md)
+  - [CompleteAttachmentUpload](api-connectparticipant-2018-09-07-completeattachmentupload.md)
+  - [CreateParticipantConnection](api-connectparticipant-2018-09-07-createparticipantconnection.md)
+  - [DescribeView](api-connectparticipant-2018-09-07-describeview.md)
+  - [DisconnectParticipant](api-connectparticipant-2018-09-07-disconnectparticipant.md)
+  - [GetAttachment](api-connectparticipant-2018-09-07-getattachment.md)
+  - [GetAuthenticationUrl](api-connectparticipant-2018-09-07-getauthenticationurl.md)
+  - [GetTranscript](api-connectparticipant-2018-09-07-gettranscript.md)
+  - [SendEvent](api-connectparticipant-2018-09-07-sendevent.md)
+  - [SendMessage](api-connectparticipant-2018-09-07-sendmessage.md)
+  - [StartAttachmentUpload](api-connectparticipant-2018-09-07-startattachmentupload.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectParticipant.ConnectParticipantClient.html\#toc)
+### Table of Contents  [header link](class-aws-connectparticipant-connectparticipantclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectParticipant.ConnectParticipantClient.html\#toc-methods)
+#### Methods  [header link](class-aws-connectparticipant-connectparticipantclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -64,7 +64,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectParticipant.ConnectParticipantClient.html\#methods)
+### Methods  [header link](class-aws-connectparticipant-connectparticipantclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -531,7 +531,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectParticipant.ConnectParticipantClient.html#toc-methods)
+  - [Methods](class-aws-connectparticipant-connectparticipantclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -558,4 +558,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectParticipant.ConnectParticipantClient.html#top)
+[Back To Top](class-aws-connectparticipant-connectparticipantclient-top.md)

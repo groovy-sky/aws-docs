@@ -4,15 +4,15 @@ Menu
 
 ## Proton
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.proton.html\#toc)
+### Table of Contents  [header link](namespace-aws-proton-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.proton.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-proton-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.proton.exception.html)
+[Exception](namespace-aws-proton-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.proton.html\#toc-classes)
+#### Classes  [header link](namespace-aws-proton-toc-classes.md)
 
-[ProtonClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Proton.ProtonClient.html)This client is used to interact with the **AWS Proton** service.
+[ProtonClient](class-aws-proton-protonclient.md)This client is used to interact with the **AWS Proton** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.proton.html#toc-classes)
+  - [Classes](namespace-aws-proton-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.proton.html#top)
+[Back To Top](namespace-aws-proton-top.md)

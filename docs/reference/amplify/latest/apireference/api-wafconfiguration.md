@@ -4,7 +4,7 @@ Describes the Firewall configuration for a hosted Amplify application.
 Firewall support enables you to protect your web applications with a direct integration
 with AWS WAF. For more information about using AWS WAF protections
 for an Amplify application, see [Firewall support for hosted\
-sites](https://docs.aws.amazon.com/amplify/latest/userguide/WAF-integration.html) in the _Amplify User Guide_.
+sites](../../../../services/amplify/latest/userguide/waf-integration.md) in the _Amplify User Guide_.
 
 ## Contents
 
@@ -44,13 +44,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/amplify-2017-07-25/WafConfiguration)
+- [AWS SDK for C++](../../../goto/sdkforcpp/amplify-2017-07-25/wafconfiguration.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/amplify-2017-07-25/WafConfiguration)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/amplify-2017-07-25/wafconfiguration.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/amplify-2017-07-25/WafConfiguration)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/amplify-2017-07-25/wafconfiguration.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 SubDomainSetting
 

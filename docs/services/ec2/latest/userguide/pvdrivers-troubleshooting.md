@@ -177,7 +177,7 @@ failed to resolve the problem.
 12. For each key, double-click **UpperFilters**, enter a
      value of XENFILT, and then choose **OK**.
 
-    ![Registry key for affected volume.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/troubleshooting-server2012R2-regedit.png)
+    ![Registry key for affected volume.](../../../images/awsec2/latest/userguide/images/troubleshooting-server2012r2-regedit-png.md)
 
 13. Locate the following key:
 
@@ -315,7 +315,7 @@ instance.
 05. Right-click **Citrix PV Ethernet Adapter #0** and select
      **Properties**.
 
-    ![Local area connection properties.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/citrix-local-area-conn.png)
+    ![Local area connection properties.](../../../images/awsec2/latest/userguide/images/citrix-local-area-conn-png.md)
 
 06. In the **Local Area Connection Properties** dialog box,
      choose **Configure** to open the **Citrix PV**

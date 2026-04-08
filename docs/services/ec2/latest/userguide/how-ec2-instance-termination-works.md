@@ -9,7 +9,7 @@ data stored in the instance RAM is erased. Any Elastic IP addresses associated w
 instance are detached. For Amazon EBS root volumes and data volumes, the outcome depends on
 the **Delete on termination** setting of each volume.
 
-![The IP addresses, RAM, instance store volumes, and EBS root volume are lost when an instance is terminated.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/terminate-instance.png)
+![The IP addresses, RAM, instance store volumes, and EBS root volume are lost when an instance is terminated.](../../../images/awsec2/latest/userguide/images/terminate-instance-png.md)
 
 ## Considerations
 

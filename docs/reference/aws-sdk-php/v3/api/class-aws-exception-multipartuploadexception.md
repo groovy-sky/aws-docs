@@ -5,25 +5,25 @@ Menu
 
 ## MultipartUploadException     extends RuntimeException   in package    - [Aws](package-aws.md)       implements  [MonitoringEventsInterface](class-aws-monitoringeventsinterface.md)  Uses  [HasMonitoringEventsTrait](class-aws-hasmonitoringeventstrait.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.MultipartUploadException.html\#toc)
+### Table of Contents  [header link](class-aws-exception-multipartuploadexception-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.MultipartUploadException.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-exception-multipartuploadexception-toc-interfaces.md)
 
 [MonitoringEventsInterface](class-aws-monitoringeventsinterface.md)Interface for adding and retrieving client-side monitoring events
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.MultipartUploadException.html\#toc-methods)
+#### Methods  [header link](class-aws-exception-multipartuploadexception-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.MultipartUploadException.html#method___construct)
+[\_\_construct()](class-aws-exception-multipartuploadexception-method-construct.md)
 : mixed [appendMonitoringEvent()](class-aws-hasmonitoringeventstrait.md#method_appendMonitoringEvent)
 : mixed Append a client-side monitoring event to this object's event list[getMonitoringEvents()](class-aws-hasmonitoringeventstrait.md#method_getMonitoringEvents)
 : array<string\|int, mixed> Get client-side monitoring events attached to this object. Each event is
-represented as an associative array within the returned array.[getState()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.MultipartUploadException.html#method_getState)
-: [UploadState](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html)Get the state of the transfer[prependMonitoringEvent()](class-aws-hasmonitoringeventstrait.md#method_prependMonitoringEvent)
+represented as an associative array within the returned array.[getState()](class-aws-exception-multipartuploadexception-method-getstate.md)
+: [UploadState](class-aws-multipart-uploadstate.md)Get the state of the transfer[prependMonitoringEvent()](class-aws-hasmonitoringeventstrait.md#method_prependMonitoringEvent)
 : mixed Prepend a client-side monitoring event to this object's event list
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.MultipartUploadException.html\#methods)
+### Methods  [header link](class-aws-exception-multipartuploadexception-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.MultipartUploadException.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-exception-multipartuploadexception-method-construct.md)
 
 `
     public
@@ -32,7 +32,7 @@ represented as an associative array within the returned array.[getState()](https
 ##### Parameters
 
 $state
-: [UploadState](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html)
+: [UploadState](class-aws-multipart-uploadstate.md)
 
 Upload state at time of the exception.
 
@@ -68,7 +68,7 @@ represented as an associative array within the returned array.
 
 array<string\|int, mixed>
 
-#### getState()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.MultipartUploadException.html\#method_getState)
+#### getState()  [header link](class-aws-exception-multipartuploadexception-method-getstate.md)
 
 Get the state of the transfer
 
@@ -78,7 +78,7 @@ Get the state of the transfer
 
 ##### Return values
 
-[UploadState](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html)
+[UploadState](class-aws-multipart-uploadstate.md)
 
 #### prependMonitoringEvent()  [header link](class-aws-hasmonitoringeventstrait.md\#method_prependMonitoringEvent)
 
@@ -99,12 +99,12 @@ $event
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.MultipartUploadException.html#toc-methods)
+  - [Methods](class-aws-exception-multipartuploadexception-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.MultipartUploadException.html#method___construct)
+  - [\_\_construct()](class-aws-exception-multipartuploadexception-method-construct.md)
   - [appendMonitoringEvent()](class-aws-hasmonitoringeventstrait.md#method_appendMonitoringEvent)
   - [getMonitoringEvents()](class-aws-hasmonitoringeventstrait.md#method_getMonitoringEvents)
-  - [getState()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.MultipartUploadException.html#method_getState)
+  - [getState()](class-aws-exception-multipartuploadexception-method-getstate.md)
   - [prependMonitoringEvent()](class-aws-hasmonitoringeventstrait.md#method_prependMonitoringEvent)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.MultipartUploadException.html#top)
+[Back To Top](class-aws-exception-multipartuploadexception-top.md)

@@ -10,7 +10,7 @@ column structure and data types. To return a `ResultSet` object, use [GetQueryRe
 The metadata that describes the column structure and data types of a table of query
 results.
 
-Type: [ResultSetMetadata](https://docs.aws.amazon.com/athena/latest/APIReference/API_ResultSetMetadata.html) object
+Type: [ResultSetMetadata](api-resultsetmetadata.md) object
 
 Required: No
 
@@ -18,7 +18,7 @@ Required: No
 
 The rows in the table.
 
-Type: Array of [Row](https://docs.aws.amazon.com/athena/latest/APIReference/API_Row.html) objects
+Type: Array of [Row](api-row.md) objects
 
 Required: No
 
@@ -26,13 +26,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/ResultSet)
+- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/resultset.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/ResultSet)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/resultset.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/ResultSet)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/resultset.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ResultReuseInformation
 

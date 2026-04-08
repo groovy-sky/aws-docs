@@ -4,15 +4,15 @@ Menu
 
 ## KeyspacesStreams
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.keyspacesstreams.html\#toc)
+### Table of Contents  [header link](namespace-aws-keyspacesstreams-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.keyspacesstreams.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-keyspacesstreams-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.keyspacesstreams.exception.html)
+[Exception](namespace-aws-keyspacesstreams-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.keyspacesstreams.html\#toc-classes)
+#### Classes  [header link](namespace-aws-keyspacesstreams-toc-classes.md)
 
-[KeyspacesStreamsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KeyspacesStreams.KeyspacesStreamsClient.html)This client is used to interact with the **Amazon Keyspaces Streams** service.
+[KeyspacesStreamsClient](class-aws-keyspacesstreams-keyspacesstreamsclient.md)This client is used to interact with the **Amazon Keyspaces Streams** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.keyspacesstreams.html#toc-classes)
+  - [Classes](namespace-aws-keyspacesstreams-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.keyspacesstreams.html#top)
+[Back To Top](namespace-aws-keyspacesstreams-top.md)

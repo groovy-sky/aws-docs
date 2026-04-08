@@ -1,7 +1,7 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Promise](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.promise.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Promise](namespace-guzzlehttp-promise.md)
 
 ## Coroutine        in package    - [Aws](package-aws.md)       implements  [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
@@ -39,38 +39,38 @@ $promise->then(function ($v) { echo $v; });
 
 ```
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html\#tags)
+##### Tags  [header link](class-guzzlehttp-promise-coroutine-tags.md)
 
 see[https://github.com/petkaantonov/bluebird/blob/master/API.md#generators](https://github.com/petkaantonov/bluebird/blob/master/API.md)
 
 inspiration
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-promise-coroutine-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html\#toc-interfaces)
+#### Interfaces  [header link](class-guzzlehttp-promise-coroutine-toc-interfaces.md)
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)A promise represents the eventual result of an asynchronous operation.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-promise-coroutine-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html#method___construct)
-: mixed [cancel()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html#method_cancel)
-: void Cancels the promise if possible.[getState()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html#method_getState)
-: string Get the state of the promise ("pending", "rejected", or "fulfilled").[of()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html#method_of)
-: self Create a new coroutine.[otherwise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html#method_otherwise)
+[\_\_construct()](class-guzzlehttp-promise-coroutine-method-construct.md)
+: mixed [cancel()](class-guzzlehttp-promise-coroutine-method-cancel.md)
+: void Cancels the promise if possible.[getState()](class-guzzlehttp-promise-coroutine-method-getstate.md)
+: string Get the state of the promise ("pending", "rejected", or "fulfilled").[of()](class-guzzlehttp-promise-coroutine-method-of.md)
+: self Create a new coroutine.[otherwise()](class-guzzlehttp-promise-coroutine-method-otherwise.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Appends a rejection handler callback to the promise, and returns a new
 promise resolving to the return value of the callback if it is called,
 or to its original fulfillment value if the promise is instead
-fulfilled.[reject()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html#method_reject)
-: void Reject the promise with the given reason.[resolve()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html#method_resolve)
-: void Resolve the promise with the given value.[then()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html#method_then)
+fulfilled.[reject()](class-guzzlehttp-promise-coroutine-method-reject.md)
+: void Reject the promise with the given reason.[resolve()](class-guzzlehttp-promise-coroutine-method-resolve.md)
+: void Resolve the promise with the given value.[then()](class-guzzlehttp-promise-coroutine-method-then.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Appends fulfillment and rejection handlers to the promise, and returns
-a new promise resolving to the return value of the called handler.[wait()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html#method_wait)
+a new promise resolving to the return value of the called handler.[wait()](class-guzzlehttp-promise-coroutine-method-wait.md)
 : mixed Waits until the promise completes if possible.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html\#methods)
+### Methods  [header link](class-guzzlehttp-promise-coroutine-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html\#method___construct)
+#### \_\_construct()  [header link](class-guzzlehttp-promise-coroutine-method-construct.md)
 
 `
     public
@@ -81,7 +81,7 @@ a new promise resolving to the return value of the called handler.[wait()](https
 $generatorFn
 : callable
 
-#### cancel()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html\#method_cancel)
+#### cancel()  [header link](class-guzzlehttp-promise-coroutine-method-cancel.md)
 
 Cancels the promise if possible.
 
@@ -89,7 +89,7 @@ Cancels the promise if possible.
     public
                     cancel() : void`
 
-#### getState()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html\#method_getState)
+#### getState()  [header link](class-guzzlehttp-promise-coroutine-method-getstate.md)
 
 Get the state of the promise ("pending", "rejected", or "fulfilled").
 
@@ -104,7 +104,7 @@ PromiseInterface: PENDING, FULFILLED, and REJECTED.
 
 string
 
-#### of()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html\#method_of)
+#### of()  [header link](class-guzzlehttp-promise-coroutine-method-of.md)
 
 Create a new coroutine.
 
@@ -121,7 +121,7 @@ $generatorFn
 
 self
 
-#### otherwise()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html\#method_otherwise)
+#### otherwise()  [header link](class-guzzlehttp-promise-coroutine-method-otherwise.md)
 
 Appends a rejection handler callback to the promise, and returns a new
 promise resolving to the return value of the callback if it is called,
@@ -143,7 +143,7 @@ Invoked when the promise is rejected.
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### reject()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html\#method_reject)
+#### reject()  [header link](class-guzzlehttp-promise-coroutine-method-reject.md)
 
 Reject the promise with the given reason.
 
@@ -156,7 +156,7 @@ Reject the promise with the given reason.
 $reason
 : mixed
 
-#### resolve()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html\#method_resolve)
+#### resolve()  [header link](class-guzzlehttp-promise-coroutine-method-resolve.md)
 
 Resolve the promise with the given value.
 
@@ -169,7 +169,7 @@ Resolve the promise with the given value.
 $value
 : mixed
 
-#### then()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html\#method_then)
+#### then()  [header link](class-guzzlehttp-promise-coroutine-method-then.md)
 
 Appends fulfillment and rejection handlers to the promise, and returns
 a new promise resolving to the return value of the called handler.
@@ -196,7 +196,7 @@ Invoked when the promise is rejected.
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### wait()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html\#method_wait)
+#### wait()  [header link](class-guzzlehttp-promise-coroutine-method-wait.md)
 
 Waits until the promise completes if possible.
 
@@ -221,16 +221,16 @@ $unwrap
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html#toc-methods)
+  - [Methods](class-guzzlehttp-promise-coroutine-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html#method___construct)
-  - [cancel()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html#method_cancel)
-  - [getState()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html#method_getState)
-  - [of()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html#method_of)
-  - [otherwise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html#method_otherwise)
-  - [reject()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html#method_reject)
-  - [resolve()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html#method_resolve)
-  - [then()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html#method_then)
-  - [wait()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html#method_wait)
+  - [\_\_construct()](class-guzzlehttp-promise-coroutine-method-construct.md)
+  - [cancel()](class-guzzlehttp-promise-coroutine-method-cancel.md)
+  - [getState()](class-guzzlehttp-promise-coroutine-method-getstate.md)
+  - [of()](class-guzzlehttp-promise-coroutine-method-of.md)
+  - [otherwise()](class-guzzlehttp-promise-coroutine-method-otherwise.md)
+  - [reject()](class-guzzlehttp-promise-coroutine-method-reject.md)
+  - [resolve()](class-guzzlehttp-promise-coroutine-method-resolve.md)
+  - [then()](class-guzzlehttp-promise-coroutine-method-then.md)
+  - [wait()](class-guzzlehttp-promise-coroutine-method-wait.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Coroutine.html#top)
+[Back To Top](class-guzzlehttp-promise-coroutine-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## SupportApp
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.supportapp.html\#toc)
+### Table of Contents  [header link](namespace-aws-supportapp-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.supportapp.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-supportapp-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.supportapp.exception.html)
+[Exception](namespace-aws-supportapp-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.supportapp.html\#toc-classes)
+#### Classes  [header link](namespace-aws-supportapp-toc-classes.md)
 
-[SupportAppClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SupportApp.SupportAppClient.html)This client is used to interact with the **AWS Support App** service.
+[SupportAppClient](class-aws-supportapp-supportappclient.md)This client is used to interact with the **AWS Support App** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.supportapp.html#toc-classes)
+  - [Classes](namespace-aws-supportapp-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.supportapp.html#top)
+[Back To Top](namespace-aws-supportapp-top.md)

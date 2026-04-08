@@ -3,7 +3,7 @@
 Details on the network bindings between a container and its host container instance.
 After a task reaches the `RUNNING` status, manual and automatic host and
 container port assignments are visible in the `networkBindings` section of
-[DescribeTasks](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeTasks.html) API
+[DescribeTasks](api-describetasks.md) API
 responses.
 
 ## Contents
@@ -77,7 +77,7 @@ For information about how to turn off the docker-proxy in the Docker daemon
 config file, see [Docker daemon](../../../../services/amazonecs/latest/developerguide/bootstrap-container-instance.md#bootstrap_docker_daemon) in the _Amazon ECS Developer_
 _Guide_.
 
-You can call [`DescribeTasks`](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeTasks.html) to view the `hostPortRange` which
+You can call [`DescribeTasks`](api-describetasks.md) to view the `hostPortRange` which
 are the host ports that are bound to the container ports.
 
 Type: String
@@ -115,13 +115,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/NetworkBinding)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/networkbinding.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/NetworkBinding)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/networkbinding.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/NetworkBinding)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/networkbinding.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 NetworkBandwidthGbpsRequest
 

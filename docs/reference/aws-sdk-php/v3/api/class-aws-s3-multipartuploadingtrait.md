@@ -5,17 +5,17 @@ Menu
 
 ## MultipartUploadingTrait
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploadingTrait.html\#toc)
+### Table of Contents  [header link](class-aws-s3-multipartuploadingtrait-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploadingTrait.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-multipartuploadingtrait-toc-methods.md)
 
-[getStateFromService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploadingTrait.html#method_getStateFromService)
+[getStateFromService()](class-aws-s3-multipartuploadingtrait-method-getstatefromservice.md)
 : [UploadState](class-aws-multipart-uploadstate.md)Creates an UploadState object for a multipart upload by querying the
 service for the specified upload's information.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploadingTrait.html\#methods)
+### Methods  [header link](class-aws-s3-multipartuploadingtrait-methods.md)
 
-#### getStateFromService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploadingTrait.html\#method_getStateFromService)
+#### getStateFromService()  [header link](class-aws-s3-multipartuploadingtrait-method-getstatefromservice.md)
 
 Creates an UploadState object for a multipart upload by querying the
 service for the specified upload's information.
@@ -56,8 +56,8 @@ Upload ID for the multipart upload.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploadingTrait.html#toc-methods)
+  - [Methods](class-aws-s3-multipartuploadingtrait-toc-methods.md)
 - Methods
-  - [getStateFromService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploadingTrait.html#method_getStateFromService)
+  - [getStateFromService()](class-aws-s3-multipartuploadingtrait-method-getstatefromservice.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploadingTrait.html#top)
+[Back To Top](class-aws-s3-multipartuploadingtrait-top.md)

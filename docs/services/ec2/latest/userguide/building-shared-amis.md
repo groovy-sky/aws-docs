@@ -23,7 +23,7 @@ carefully and take time to consider where you might expose sensitive data.
 - [Remove sensitive data](#public-amis-protect-yourself)
 
 If you are building AMIs for AWS Marketplace, see [Best\
-practices for building AMIs](https://docs.aws.amazon.com/marketplace/latest/userguide/best-practices-for-building-your-amis.html) in the _AWS Marketplace Seller Guide_ for guidelines, policies, and best practices.
+practices for building AMIs](../../../marketplace/latest/userguide/best-practices-for-building-your-amis.md) in the _AWS Marketplace Seller Guide_ for guidelines, policies, and best practices.
 
 ## Disable password-based remote logins for the root user
 

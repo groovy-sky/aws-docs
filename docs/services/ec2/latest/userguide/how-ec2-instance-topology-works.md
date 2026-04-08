@@ -20,7 +20,7 @@ EC2 topology. The network nodes are identified as **NN1**
 Instances connect to a node in the bottom layer, identified by **iii** in the following diagram. More than one instance can connect to the
 same node.
 
-![Graphic representation of the instance topology.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/instance-topology.png)
+![Graphic representation of the instance topology.](../../../images/awsec2/latest/userguide/images/instance-topology-png.md)
 
 In this example:
 

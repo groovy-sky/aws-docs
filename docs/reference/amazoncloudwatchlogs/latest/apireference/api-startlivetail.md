@@ -10,9 +10,9 @@ events and the client receives them.
 
 The following objects are sent over the stream:
 
-- A single [LiveTailSessionStart](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_LiveTailSessionStart.html) object is sent at the start of the session.
+- A single [LiveTailSessionStart](api-livetailsessionstart.md) object is sent at the start of the session.
 
-- Every second, a [LiveTailSessionUpdate](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_LiveTailSessionUpdate.html) object is sent. Each of these objects contains an array
+- Every second, a [LiveTailSessionUpdate](api-livetailsessionupdate.md) object is sent. Each of these objects contains an array
 of the actual log events.
 
 If no new log events were ingested in the past second, the
@@ -26,17 +26,17 @@ per second, the log events are sampled down to 500 log events to be included in 
 If your client consumes the log events slower than the server produces them, CloudWatch Logs buffers up to 10 `LiveTailSessionUpdate` events or 5000 log
 events, after which it starts dropping the oldest events.
 
-- A [SessionStreamingException](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_StartLiveTailResponseStream.html#CWL-Type-StartLiveTailResponseStream-SessionStreamingException) object is returned if an unknown error occurs on the
+- A [SessionStreamingException](api-startlivetailresponsestream-cwl-type-startlivetailresponsestream-sessionstreamingexception.md) object is returned if an unknown error occurs on the
 server side.
 
-- A [SessionTimeoutException](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_StartLiveTailResponseStream.html#CWL-Type-StartLiveTailResponseStream-SessionTimeoutException) object is returned when the session times out, after it
+- A [SessionTimeoutException](api-startlivetailresponsestream-cwl-type-startlivetailresponsestream-sessiontimeoutexception.md) object is returned when the session times out, after it
 has been kept open for three hours.
 
 ###### Note
 
 The `StartLiveTail` API routes requests using SDK host prefix injection. SDK versions released before April 1, 2026 route to
 `streaming-logs.Region.amazonaws.com`, which does not support VPC endpoints. SDK versions released on or after April 1, 2026 route to
-`stream-logs.Region.amazonaws.com`, which supports VPC endpoints. To set up a VPC endpoint for this API, see [Creating a VPC endpoint for CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/cloudwatch-logs-and-interface-VPC.html#create-VPC-endpoint-for-CloudWatchLogs).
+`stream-logs.Region.amazonaws.com`, which supports VPC endpoints. To set up a VPC endpoint for this API, see [Creating a VPC endpoint for CloudWatch Logs](../../../../services/amazoncloudwatch/latest/logs/cloudwatch-logs-and-interface-vpc-create-vpc-endpoint-for-cloudwatchlogs.md).
 
 ###### Important
 
@@ -45,7 +45,7 @@ the client that is receiving the stream. The session also ends if the establishe
 between the client and the server breaks.
 
 For examples of using an SDK to start a Live Tail session, see [Start\
-a Live Tail session using an AWS SDK](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/example_cloudwatch-logs_StartLiveTail_section.html).
+a Live Tail session using an AWS SDK](../../../../services/amazoncloudwatch/latest/logs/example-cloudwatch-logs-startlivetail-section.md).
 
 ## Request Syntax
 
@@ -75,7 +75,7 @@ stream.
 Regular expression filter patterns are supported.
 
 For more information about filter pattern syntax, see [Filter and Pattern\
-Syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/FilterAndPatternSyntax.html).
+Syntax](../../../../services/amazoncloudwatch/latest/logs/filterandpatternsyntax.md).
 
 Type: String
 
@@ -200,7 +200,7 @@ The following data is returned in JSON format by the service.
 An object that includes the stream returned by your request. It can include both log
 events and exceptions.
 
-Type: [StartLiveTailResponseStream](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_StartLiveTailResponseStream.html) object
+Type: [StartLiveTailResponseStream](api-startlivetailresponsestream.md) object
 
 ## Errors
 
@@ -240,27 +240,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/logs-2014-03-28/StartLiveTail)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/logs-2014-03-28/startlivetail.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/logs-2014-03-28/StartLiveTail)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/logs-2014-03-28/startlivetail.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/StartLiveTail)
+- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/startlivetail.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/logs-2014-03-28/StartLiveTail)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/logs-2014-03-28/startlivetail.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/StartLiveTail)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/startlivetail.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/logs-2014-03-28/StartLiveTail)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/logs-2014-03-28/startlivetail.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/logs-2014-03-28/StartLiveTail)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/logs-2014-03-28/startlivetail.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/logs-2014-03-28/StartLiveTail)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/logs-2014-03-28/startlivetail.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/logs-2014-03-28/StartLiveTail)
+- [AWS SDK for Python](../../../../services/goto/boto3/logs-2014-03-28/startlivetail.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/logs-2014-03-28/StartLiveTail)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/startlivetail.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 PutTransformer
 

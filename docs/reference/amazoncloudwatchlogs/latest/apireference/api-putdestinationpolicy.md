@@ -2,7 +2,7 @@
 
 Creates or updates an access policy associated with an existing destination. An access
 policy is an [IAM\
-policy document](https://docs.aws.amazon.com/IAM/latest/UserGuide/policies_overview.html) that is used to authorize claims to register a subscription filter
+policy document](../../../../services/iam/latest/userguide/policies-overview.md) that is used to authorize claims to register a subscription filter
 against a given destination.
 
 ## Request Syntax
@@ -54,7 +54,7 @@ filters in the accounts that send logs to this destination. If you do not, the s
 filters might stop working. By specifying `true` for `forceUpdate`, you
 are affirming that you have already updated the subscription filters. For more information,
 see [Updating an\
-existing cross-account subscription](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Cross-Account-Log_Subscription-Update.html)
+existing cross-account subscription](../../../../services/amazoncloudwatch/latest/logs/cross-account-log-subscription-update.md)
 
 If you omit this parameter, the default of `false` is used.
 
@@ -130,27 +130,27 @@ Date: <Date>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/logs-2014-03-28/PutDestinationPolicy)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/logs-2014-03-28/putdestinationpolicy.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/logs-2014-03-28/PutDestinationPolicy)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/logs-2014-03-28/putdestinationpolicy.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/PutDestinationPolicy)
+- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/putdestinationpolicy.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/logs-2014-03-28/PutDestinationPolicy)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/logs-2014-03-28/putdestinationpolicy.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/PutDestinationPolicy)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/putdestinationpolicy.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/logs-2014-03-28/PutDestinationPolicy)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/logs-2014-03-28/putdestinationpolicy.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/logs-2014-03-28/PutDestinationPolicy)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/logs-2014-03-28/putdestinationpolicy.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/logs-2014-03-28/PutDestinationPolicy)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/logs-2014-03-28/putdestinationpolicy.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/logs-2014-03-28/PutDestinationPolicy)
+- [AWS SDK for Python](../../../../services/goto/boto3/logs-2014-03-28/putdestinationpolicy.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/logs-2014-03-28/PutDestinationPolicy)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/putdestinationpolicy.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 PutDestination
 

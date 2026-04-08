@@ -29,7 +29,7 @@ You can configure a single delivery source to send logs to multiple destinations
 creating multiple deliveries. You can also create multiple deliveries to configure multiple
 delivery sources to send logs to the same delivery destination.
 
-To update an existing delivery configuration, use [UpdateDeliveryConfiguration](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_UpdateDeliveryConfiguration.html).
+To update an existing delivery configuration, use [UpdateDeliveryConfiguration](api-updatedeliveryconfiguration.md).
 
 ## Request Syntax
 
@@ -105,7 +105,7 @@ Required: No
 This structure contains parameters that are valid only when the delivery's delivery
 destination is an S3 bucket.
 
-Type: [S3DeliveryConfiguration](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_S3DeliveryConfiguration.html) object
+Type: [S3DeliveryConfiguration](api-s3deliveryconfiguration.md) object
 
 Required: No
 
@@ -113,7 +113,7 @@ Required: No
 
 An optional list of key-value pairs to associate with the resource.
 
-For more information about tagging, see [Tagging AWS resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html)
+For more information about tagging, see [Tagging AWS resources](../../../../general/general/latest/gr/aws-tagging.md)
 
 Type: String to string map
 
@@ -163,7 +163,7 @@ The following data is returned in JSON format by the service.
 
 A structure that contains information about the delivery that you just created.
 
-Type: [Delivery](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_Delivery.html) object
+Type: [Delivery](api-delivery.md) object
 
 ## Errors
 
@@ -215,27 +215,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/logs-2014-03-28/CreateDelivery)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/logs-2014-03-28/createdelivery.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/logs-2014-03-28/CreateDelivery)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/logs-2014-03-28/createdelivery.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/CreateDelivery)
+- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/createdelivery.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/logs-2014-03-28/CreateDelivery)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/logs-2014-03-28/createdelivery.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/CreateDelivery)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/createdelivery.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/logs-2014-03-28/CreateDelivery)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/logs-2014-03-28/createdelivery.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/logs-2014-03-28/CreateDelivery)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/logs-2014-03-28/createdelivery.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/logs-2014-03-28/CreateDelivery)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/logs-2014-03-28/createdelivery.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/logs-2014-03-28/CreateDelivery)
+- [AWS SDK for Python](../../../../services/goto/boto3/logs-2014-03-28/createdelivery.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/logs-2014-03-28/CreateDelivery)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/createdelivery.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CancelImportTask
 

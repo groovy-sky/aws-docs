@@ -9,7 +9,7 @@ SNS message.
 Metric alarms returns to their actual state quickly, often within seconds. Because
 the metric alarm state change happens quickly, it is typically only visible in the
 alarm's **History** tab in the Amazon CloudWatch console or
-through [DescribeAlarmHistory](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_DescribeAlarmHistory.html).
+through [DescribeAlarmHistory](api-describealarmhistory.md).
 
 If you use `SetAlarmState` on a composite alarm, the composite alarm is
 not guaranteed to return to its actual state. It returns to its actual state only once
@@ -68,7 +68,7 @@ Required: Yes
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **InvalidFormat**
 
@@ -118,27 +118,27 @@ can be performed correctly according to your Auto Scaling policies.
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/monitoring-2010-08-01/SetAlarmState)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/monitoring-2010-08-01/setalarmstate.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/monitoring-2010-08-01/SetAlarmState)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/monitoring-2010-08-01/setalarmstate.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/SetAlarmState)
+- [AWS SDK for C++](../../../goto/sdkforcpp/monitoring-2010-08-01/setalarmstate.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/monitoring-2010-08-01/SetAlarmState)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/monitoring-2010-08-01/setalarmstate.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/SetAlarmState)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/monitoring-2010-08-01/setalarmstate.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/monitoring-2010-08-01/SetAlarmState)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/monitoring-2010-08-01/setalarmstate.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/monitoring-2010-08-01/SetAlarmState)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/monitoring-2010-08-01/setalarmstate.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/monitoring-2010-08-01/SetAlarmState)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/monitoring-2010-08-01/setalarmstate.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/SetAlarmState)
+- [AWS SDK for Python](../../../../services/goto/boto3/monitoring-2010-08-01/setalarmstate.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/monitoring-2010-08-01/SetAlarmState)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/monitoring-2010-08-01/setalarmstate.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 PutMetricStream
 

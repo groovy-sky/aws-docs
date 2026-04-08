@@ -4,15 +4,15 @@ Menu
 
 ## Deadline
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.deadline.html\#toc)
+### Table of Contents  [header link](namespace-aws-deadline-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.deadline.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-deadline-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.deadline.exception.html)
+[Exception](namespace-aws-deadline-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.deadline.html\#toc-classes)
+#### Classes  [header link](namespace-aws-deadline-toc-classes.md)
 
-[DeadlineClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Deadline.DeadlineClient.html)This client is used to interact with the **AWSDeadlineCloud** service.
+[DeadlineClient](class-aws-deadline-deadlineclient.md)This client is used to interact with the **AWSDeadlineCloud** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.deadline.html#toc-classes)
+  - [Classes](namespace-aws-deadline-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.deadline.html#top)
+[Back To Top](namespace-aws-deadline-top.md)

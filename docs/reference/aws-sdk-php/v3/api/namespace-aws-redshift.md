@@ -4,15 +4,15 @@ Menu
 
 ## Redshift
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.redshift.html\#toc)
+### Table of Contents  [header link](namespace-aws-redshift-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.redshift.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-redshift-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.redshift.exception.html)
+[Exception](namespace-aws-redshift-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.redshift.html\#toc-classes)
+#### Classes  [header link](namespace-aws-redshift-toc-classes.md)
 
-[RedshiftClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Redshift.RedshiftClient.html)This client is used to interact with the **Amazon Redshift** service.
+[RedshiftClient](class-aws-redshift-redshiftclient.md)This client is used to interact with the **Amazon Redshift** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.redshift.html#toc-classes)
+  - [Classes](namespace-aws-redshift-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.redshift.html#top)
+[Back To Top](namespace-aws-redshift-top.md)

@@ -1,7 +1,7 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Promise](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.promise.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Promise](namespace-guzzlehttp-promise.md)
 
 ## TaskQueue        in package    - [Aws](package-aws.md)       implements  [TaskQueueInterface](class-guzzlehttp-promise-taskqueueinterface.md)
 
@@ -16,30 +16,30 @@ GuzzleHttp\Promise\Utils::queue()->run();
 
 ```
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueue.html\#tags)
+##### Tags  [header link](class-guzzlehttp-promise-taskqueue-tags.md)
 
 final
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueue.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-promise-taskqueue-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueue.html\#toc-interfaces)
+#### Interfaces  [header link](class-guzzlehttp-promise-taskqueue-toc-interfaces.md)
 
 [TaskQueueInterface](class-guzzlehttp-promise-taskqueueinterface.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueue.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-promise-taskqueue-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueue.html#method___construct)
-: mixed [add()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueue.html#method_add)
+[\_\_construct()](class-guzzlehttp-promise-taskqueue-method-construct.md)
+: mixed [add()](class-guzzlehttp-promise-taskqueue-method-add.md)
 : void Adds a task to the queue that will be executed the next time run is
-called.[disableShutdown()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueue.html#method_disableShutdown)
+called.[disableShutdown()](class-guzzlehttp-promise-taskqueue-method-disableshutdown.md)
 : void The task queue will be run and exhausted by default when the process
-exits IFF the exit is not the result of a PHP E\_ERROR error.[isEmpty()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueue.html#method_isEmpty)
-: bool Returns true if the queue is empty.[run()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueue.html#method_run)
+exits IFF the exit is not the result of a PHP E\_ERROR error.[isEmpty()](class-guzzlehttp-promise-taskqueue-method-isempty.md)
+: bool Returns true if the queue is empty.[run()](class-guzzlehttp-promise-taskqueue-method-run.md)
 : void Execute all of the pending task in the queue.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueue.html\#methods)
+### Methods  [header link](class-guzzlehttp-promise-taskqueue-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueue.html\#method___construct)
+#### \_\_construct()  [header link](class-guzzlehttp-promise-taskqueue-method-construct.md)
 
 `
     public
@@ -51,7 +51,7 @@ $withShutdown
 : bool
 = true
 
-#### add()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueue.html\#method_add)
+#### add()  [header link](class-guzzlehttp-promise-taskqueue-method-add.md)
 
 Adds a task to the queue that will be executed the next time run is
 called.
@@ -65,7 +65,7 @@ called.
 $task
 : callable
 
-#### disableShutdown()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueue.html\#method_disableShutdown)
+#### disableShutdown()  [header link](class-guzzlehttp-promise-taskqueue-method-disableshutdown.md)
 
 The task queue will be run and exhausted by default when the process
 exits IFF the exit is not the result of a PHP E\_ERROR error.
@@ -81,7 +81,7 @@ or manually using the run() method) or wait on each outstanding promise.
 
 Note: This shutdown will occur before any destructors are triggered.
 
-#### isEmpty()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueue.html\#method_isEmpty)
+#### isEmpty()  [header link](class-guzzlehttp-promise-taskqueue-method-isempty.md)
 
 Returns true if the queue is empty.
 
@@ -93,7 +93,7 @@ Returns true if the queue is empty.
 
 bool
 
-#### run()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueue.html\#method_run)
+#### run()  [header link](class-guzzlehttp-promise-taskqueue-method-run.md)
 
 Execute all of the pending task in the queue.
 
@@ -108,12 +108,12 @@ Execute all of the pending task in the queue.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueue.html#toc-methods)
+  - [Methods](class-guzzlehttp-promise-taskqueue-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueue.html#method___construct)
-  - [add()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueue.html#method_add)
-  - [disableShutdown()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueue.html#method_disableShutdown)
-  - [isEmpty()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueue.html#method_isEmpty)
-  - [run()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueue.html#method_run)
+  - [\_\_construct()](class-guzzlehttp-promise-taskqueue-method-construct.md)
+  - [add()](class-guzzlehttp-promise-taskqueue-method-add.md)
+  - [disableShutdown()](class-guzzlehttp-promise-taskqueue-method-disableshutdown.md)
+  - [isEmpty()](class-guzzlehttp-promise-taskqueue-method-isempty.md)
+  - [run()](class-guzzlehttp-promise-taskqueue-method-run.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.TaskQueue.html#top)
+[Back To Top](class-guzzlehttp-promise-taskqueue-top.md)

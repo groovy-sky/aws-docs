@@ -9,7 +9,7 @@ Therefore, if you do not receive the original mail, you can request that the mai
 resent within 72 hours of requesting the ACM certificate. If more than 72 hours have
 elapsed since your original request or since your last attempt to resend validation
 mail, you must request a new certificate. For more information about setting up your
-contact email addresses, see [Configure Email for your Domain](https://docs.aws.amazon.com/acm/latest/userguide/setup-email.html).
+contact email addresses, see [Configure Email for your Domain](../../../../services/acm/latest/userguide/setup-email.md).
 
 ## Request Syntax
 
@@ -167,27 +167,27 @@ Date: Tue, 22 Dec 2015 17:07:18 GMT
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/acm-2015-12-08/ResendValidationEmail)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/acm-2015-12-08/resendvalidationemail.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/acm-2015-12-08/ResendValidationEmail)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/acm-2015-12-08/resendvalidationemail.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/acm-2015-12-08/ResendValidationEmail)
+- [AWS SDK for C++](../../../goto/sdkforcpp/acm-2015-12-08/resendvalidationemail.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/acm-2015-12-08/ResendValidationEmail)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/acm-2015-12-08/resendvalidationemail.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/acm-2015-12-08/ResendValidationEmail)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/acm-2015-12-08/resendvalidationemail.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/acm-2015-12-08/ResendValidationEmail)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/acm-2015-12-08/resendvalidationemail.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/acm-2015-12-08/ResendValidationEmail)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/acm-2015-12-08/resendvalidationemail.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/acm-2015-12-08/ResendValidationEmail)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/acm-2015-12-08/resendvalidationemail.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/acm-2015-12-08/ResendValidationEmail)
+- [AWS SDK for Python](../../../../services/goto/boto3/acm-2015-12-08/resendvalidationemail.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/acm-2015-12-08/ResendValidationEmail)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/acm-2015-12-08/resendvalidationemail.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 RequestCertificate
 

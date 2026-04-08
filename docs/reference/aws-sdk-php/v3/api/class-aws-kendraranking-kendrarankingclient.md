@@ -17,21 +17,21 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2022-10-19**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kendra-ranking-2022-10-19.html)
+- [**2022-10-19**](api-kendra-ranking-2022-10-19.md)
 
-  - [CreateRescoreExecutionPlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kendra-ranking-2022-10-19.html#createrescoreexecutionplan)
-  - [DeleteRescoreExecutionPlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kendra-ranking-2022-10-19.html#deleterescoreexecutionplan)
-  - [DescribeRescoreExecutionPlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kendra-ranking-2022-10-19.html#describerescoreexecutionplan)
-  - [ListRescoreExecutionPlans](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kendra-ranking-2022-10-19.html#listrescoreexecutionplans)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kendra-ranking-2022-10-19.html#listtagsforresource)
-  - [Rescore](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kendra-ranking-2022-10-19.html#rescore)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kendra-ranking-2022-10-19.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kendra-ranking-2022-10-19.html#untagresource)
-  - [UpdateRescoreExecutionPlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kendra-ranking-2022-10-19.html#updaterescoreexecutionplan)
+  - [CreateRescoreExecutionPlan](api-kendra-ranking-2022-10-19-createrescoreexecutionplan.md)
+  - [DeleteRescoreExecutionPlan](api-kendra-ranking-2022-10-19-deleterescoreexecutionplan.md)
+  - [DescribeRescoreExecutionPlan](api-kendra-ranking-2022-10-19-describerescoreexecutionplan.md)
+  - [ListRescoreExecutionPlans](api-kendra-ranking-2022-10-19-listrescoreexecutionplans.md)
+  - [ListTagsForResource](api-kendra-ranking-2022-10-19-listtagsforresource.md)
+  - [Rescore](api-kendra-ranking-2022-10-19-rescore.md)
+  - [TagResource](api-kendra-ranking-2022-10-19-tagresource.md)
+  - [UntagResource](api-kendra-ranking-2022-10-19-untagresource.md)
+  - [UpdateRescoreExecutionPlan](api-kendra-ranking-2022-10-19-updaterescoreexecutionplan.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KendraRanking.KendraRankingClient.html\#toc)
+### Table of Contents  [header link](class-aws-kendraranking-kendrarankingclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KendraRanking.KendraRankingClient.html\#toc-methods)
+#### Methods  [header link](class-aws-kendraranking-kendrarankingclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -62,7 +62,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KendraRanking.KendraRankingClient.html\#methods)
+### Methods  [header link](class-aws-kendraranking-kendrarankingclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -529,7 +529,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KendraRanking.KendraRankingClient.html#toc-methods)
+  - [Methods](class-aws-kendraranking-kendrarankingclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -556,4 +556,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KendraRanking.KendraRankingClient.html#top)
+[Back To Top](class-aws-kendraranking-kendrarankingclient-top.md)

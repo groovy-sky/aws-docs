@@ -6,7 +6,7 @@ optional value, both of which you define. For example, you can use tags to categ
 Athena resources by purpose, owner, or environment. Use a consistent set
 of tag keys to make it easier to search and filter the resources in your account. For
 best practices, see [Tagging\
-Best Practices](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/tagging-best-practices.html). Tag keys can be from 1 to 128 UTF-8 Unicode characters, and
+Best Practices](../../../../services/whitepapers/latest/tagging-best-practices/tagging-best-practices.md). Tag keys can be from 1 to 128 UTF-8 Unicode characters, and
 tag values can be from 0 to 256 UTF-8 Unicode characters. Tags can use letters and
 numbers representable in UTF-8, and the following characters: + - = . \_ : / @. Tag keys
 and values are case-sensitive. Tag keys must be unique per resource. If you specify more
@@ -42,13 +42,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/Tag)
+- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/tag.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/Tag)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/tag.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/Tag)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/tag.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 TableMetadata
 

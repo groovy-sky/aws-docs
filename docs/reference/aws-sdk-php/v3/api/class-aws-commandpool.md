@@ -2,30 +2,30 @@ Menu
 
 - [Aws](namespace-aws.md)
 
-## CommandPool        in package    - [Aws](package-aws.md)       implements  [PromisorInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromisorInterface.html)
+## CommandPool        in package    - [Aws](package-aws.md)       implements  [PromisorInterface](class-guzzlehttp-promise-promisorinterface.md)
 
 Sends and iterator of commands concurrently using a capped pool size.
 
 The pool will read command objects from an iterator until it is cancelled or
 until the iterator is consumed.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandPool.html\#toc)
+### Table of Contents  [header link](class-aws-commandpool-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandPool.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-commandpool-toc-interfaces.md)
 
-[PromisorInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromisorInterface.html)Interface used with classes that return a promise.
+[PromisorInterface](class-guzzlehttp-promise-promisorinterface.md)Interface used with classes that return a promise.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandPool.html\#toc-methods)
+#### Methods  [header link](class-aws-commandpool-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandPool.html#method___construct)
-: mixed The CommandPool constructor accepts a hash of configuration options:[batch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandPool.html#method_batch)
+[\_\_construct()](class-aws-commandpool-method-construct.md)
+: mixed The CommandPool constructor accepts a hash of configuration options:[batch()](class-aws-commandpool-method-batch.md)
 : array<string\|int, mixed> Executes a pool synchronously and aggregates the results of the pool
-into an indexed array in the same order as the passed in array.[promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandPool.html#method_promise)
+into an indexed array in the same order as the passed in array.[promise()](class-aws-commandpool-method-promise.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Returns a promise.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandPool.html\#methods)
+### Methods  [header link](class-aws-commandpool-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandPool.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-commandpool-method-construct.md)
 
 The CommandPool constructor accepts a hash of configuration options:
 
@@ -70,7 +70,7 @@ $config
 
 Associative array of options.
 
-#### batch()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandPool.html\#method_batch)
+#### batch()  [header link](class-aws-commandpool-method-batch.md)
 
 Executes a pool synchronously and aggregates the results of the pool
 into an indexed array in the same order as the passed in array.
@@ -97,7 +97,7 @@ $config
 
 Configuration options.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandPool.html\#method_batch\#tags)
+##### Tags  [header link](class-aws-commandpool-method-batch-tags.md)
 
 seeCommandPool::\_\_construct
 
@@ -107,7 +107,7 @@ for available configuration options.
 
 array<string\|int, mixed>
 
-#### promise()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandPool.html\#method_promise)
+#### promise()  [header link](class-aws-commandpool-method-promise.md)
 
 Returns a promise.
 
@@ -125,10 +125,10 @@ Returns a promise.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandPool.html#toc-methods)
+  - [Methods](class-aws-commandpool-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandPool.html#method___construct)
-  - [batch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandPool.html#method_batch)
-  - [promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandPool.html#method_promise)
+  - [\_\_construct()](class-aws-commandpool-method-construct.md)
+  - [batch()](class-aws-commandpool-method-batch.md)
+  - [promise()](class-aws-commandpool-method-promise.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandPool.html#top)
+[Back To Top](class-aws-commandpool-top.md)

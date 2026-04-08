@@ -17,33 +17,33 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-04-19**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dax-2017-04-19.html)
+- [**2017-04-19**](api-dax-2017-04-19.md)
 
-  - [CreateCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dax-2017-04-19.html#createcluster)
-  - [CreateParameterGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dax-2017-04-19.html#createparametergroup)
-  - [CreateSubnetGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dax-2017-04-19.html#createsubnetgroup)
-  - [DecreaseReplicationFactor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dax-2017-04-19.html#decreasereplicationfactor)
-  - [DeleteCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dax-2017-04-19.html#deletecluster)
-  - [DeleteParameterGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dax-2017-04-19.html#deleteparametergroup)
-  - [DeleteSubnetGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dax-2017-04-19.html#deletesubnetgroup)
-  - [DescribeClusters](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dax-2017-04-19.html#describeclusters)
-  - [DescribeDefaultParameters](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dax-2017-04-19.html#describedefaultparameters)
-  - [DescribeEvents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dax-2017-04-19.html#describeevents)
-  - [DescribeParameterGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dax-2017-04-19.html#describeparametergroups)
-  - [DescribeParameters](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dax-2017-04-19.html#describeparameters)
-  - [DescribeSubnetGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dax-2017-04-19.html#describesubnetgroups)
-  - [IncreaseReplicationFactor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dax-2017-04-19.html#increasereplicationfactor)
-  - [ListTags](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dax-2017-04-19.html#listtags)
-  - [RebootNode](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dax-2017-04-19.html#rebootnode)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dax-2017-04-19.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dax-2017-04-19.html#untagresource)
-  - [UpdateCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dax-2017-04-19.html#updatecluster)
-  - [UpdateParameterGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dax-2017-04-19.html#updateparametergroup)
-  - [UpdateSubnetGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-dax-2017-04-19.html#updatesubnetgroup)
+  - [CreateCluster](api-dax-2017-04-19-createcluster.md)
+  - [CreateParameterGroup](api-dax-2017-04-19-createparametergroup.md)
+  - [CreateSubnetGroup](api-dax-2017-04-19-createsubnetgroup.md)
+  - [DecreaseReplicationFactor](api-dax-2017-04-19-decreasereplicationfactor.md)
+  - [DeleteCluster](api-dax-2017-04-19-deletecluster.md)
+  - [DeleteParameterGroup](api-dax-2017-04-19-deleteparametergroup.md)
+  - [DeleteSubnetGroup](api-dax-2017-04-19-deletesubnetgroup.md)
+  - [DescribeClusters](api-dax-2017-04-19-describeclusters.md)
+  - [DescribeDefaultParameters](api-dax-2017-04-19-describedefaultparameters.md)
+  - [DescribeEvents](api-dax-2017-04-19-describeevents.md)
+  - [DescribeParameterGroups](api-dax-2017-04-19-describeparametergroups.md)
+  - [DescribeParameters](api-dax-2017-04-19-describeparameters.md)
+  - [DescribeSubnetGroups](api-dax-2017-04-19-describesubnetgroups.md)
+  - [IncreaseReplicationFactor](api-dax-2017-04-19-increasereplicationfactor.md)
+  - [ListTags](api-dax-2017-04-19-listtags.md)
+  - [RebootNode](api-dax-2017-04-19-rebootnode.md)
+  - [TagResource](api-dax-2017-04-19-tagresource.md)
+  - [UntagResource](api-dax-2017-04-19-untagresource.md)
+  - [UpdateCluster](api-dax-2017-04-19-updatecluster.md)
+  - [UpdateParameterGroup](api-dax-2017-04-19-updateparametergroup.md)
+  - [UpdateSubnetGroup](api-dax-2017-04-19-updatesubnetgroup.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DAX.DAXClient.html\#toc)
+### Table of Contents  [header link](class-aws-dax-daxclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DAX.DAXClient.html\#toc-methods)
+#### Methods  [header link](class-aws-dax-daxclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -74,7 +74,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DAX.DAXClient.html\#methods)
+### Methods  [header link](class-aws-dax-daxclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -541,7 +541,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DAX.DAXClient.html#toc-methods)
+  - [Methods](class-aws-dax-daxclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -568,4 +568,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DAX.DAXClient.html#top)
+[Back To Top](class-aws-dax-daxclient-top.md)

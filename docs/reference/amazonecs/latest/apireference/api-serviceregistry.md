@@ -54,7 +54,7 @@ Required: No
 **registryArn**
 
 The Amazon Resource Name (ARN) of the service registry. The currently supported
-service registry is AWS Cloud Map. For more information, see [CreateService](https://docs.aws.amazon.com/cloud-map/latest/api/API_CreateService.html).
+service registry is AWS Cloud Map. For more information, see [CreateService](../../../../services/cloud-map/latest/api/api-createservice.md).
 
 Type: String
 
@@ -64,13 +64,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/ServiceRegistry)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/serviceregistry.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/ServiceRegistry)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/serviceregistry.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/ServiceRegistry)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/serviceregistry.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ServiceManagedEBSVolumeConfiguration
 

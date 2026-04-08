@@ -17,21 +17,21 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-01-26**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resourcegroupstaggingapi-2017-01-26.html)
+- [**2017-01-26**](api-resourcegroupstaggingapi-2017-01-26.md)
 
-  - [DescribeReportCreation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resourcegroupstaggingapi-2017-01-26.html#describereportcreation)
-  - [GetComplianceSummary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resourcegroupstaggingapi-2017-01-26.html#getcompliancesummary)
-  - [GetResources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resourcegroupstaggingapi-2017-01-26.html#getresources)
-  - [GetTagKeys](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resourcegroupstaggingapi-2017-01-26.html#gettagkeys)
-  - [GetTagValues](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resourcegroupstaggingapi-2017-01-26.html#gettagvalues)
-  - [ListRequiredTags](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resourcegroupstaggingapi-2017-01-26.html#listrequiredtags)
-  - [StartReportCreation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resourcegroupstaggingapi-2017-01-26.html#startreportcreation)
-  - [TagResources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resourcegroupstaggingapi-2017-01-26.html#tagresources)
-  - [UntagResources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resourcegroupstaggingapi-2017-01-26.html#untagresources)
+  - [DescribeReportCreation](api-resourcegroupstaggingapi-2017-01-26-describereportcreation.md)
+  - [GetComplianceSummary](api-resourcegroupstaggingapi-2017-01-26-getcompliancesummary.md)
+  - [GetResources](api-resourcegroupstaggingapi-2017-01-26-getresources.md)
+  - [GetTagKeys](api-resourcegroupstaggingapi-2017-01-26-gettagkeys.md)
+  - [GetTagValues](api-resourcegroupstaggingapi-2017-01-26-gettagvalues.md)
+  - [ListRequiredTags](api-resourcegroupstaggingapi-2017-01-26-listrequiredtags.md)
+  - [StartReportCreation](api-resourcegroupstaggingapi-2017-01-26-startreportcreation.md)
+  - [TagResources](api-resourcegroupstaggingapi-2017-01-26-tagresources.md)
+  - [UntagResources](api-resourcegroupstaggingapi-2017-01-26-untagresources.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResourceGroupsTaggingAPI.ResourceGroupsTaggingAPIClient.html\#toc)
+### Table of Contents  [header link](class-aws-resourcegroupstaggingapi-resourcegroupstaggingapiclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResourceGroupsTaggingAPI.ResourceGroupsTaggingAPIClient.html\#toc-methods)
+#### Methods  [header link](class-aws-resourcegroupstaggingapi-resourcegroupstaggingapiclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -62,7 +62,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResourceGroupsTaggingAPI.ResourceGroupsTaggingAPIClient.html\#methods)
+### Methods  [header link](class-aws-resourcegroupstaggingapi-resourcegroupstaggingapiclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -529,7 +529,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResourceGroupsTaggingAPI.ResourceGroupsTaggingAPIClient.html#toc-methods)
+  - [Methods](class-aws-resourcegroupstaggingapi-resourcegroupstaggingapiclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -556,4 +556,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResourceGroupsTaggingAPI.ResourceGroupsTaggingAPIClient.html#top)
+[Back To Top](class-aws-resourcegroupstaggingapi-resourcegroupstaggingapiclient-top.md)

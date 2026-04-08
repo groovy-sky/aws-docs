@@ -22,7 +22,7 @@ names available for that service. For example, some of the attribute names avail
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -107,11 +107,11 @@ Type: String
 
 The service metadata for the service or services in the response.
 
-Type: Array of [Service](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_Service.html) objects
+Type: Array of [Service](api-pricing-service.md) objects
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **ExpiredNextTokenException**
 
@@ -209,27 +209,27 @@ Date: <Date>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/pricing-2017-10-15/DescribeServices)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/pricing-2017-10-15/describeservices.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/pricing-2017-10-15/DescribeServices)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/pricing-2017-10-15/describeservices.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/pricing-2017-10-15/DescribeServices)
+- [AWS SDK for C++](../../../goto/sdkforcpp/pricing-2017-10-15/describeservices.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/pricing-2017-10-15/DescribeServices)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/pricing-2017-10-15/describeservices.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/pricing-2017-10-15/DescribeServices)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/pricing-2017-10-15/describeservices.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/pricing-2017-10-15/DescribeServices)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/pricing-2017-10-15/describeservices.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/pricing-2017-10-15/DescribeServices)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/pricing-2017-10-15/describeservices.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/pricing-2017-10-15/DescribeServices)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/pricing-2017-10-15/describeservices.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/pricing-2017-10-15/DescribeServices)
+- [AWS SDK for Python](../../../../services/goto/boto3/pricing-2017-10-15/describeservices.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/pricing-2017-10-15/DescribeServices)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/pricing-2017-10-15/describeservices.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AWS Price List
 

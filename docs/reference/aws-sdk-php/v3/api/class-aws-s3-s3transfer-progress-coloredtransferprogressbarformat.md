@@ -2,8 +2,8 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
-- [Progress](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.progress.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
+- [Progress](namespace-aws-s3-s3transfer-progress.md)
 
 ## ColoredTransferProgressBarFormat     extends [AbstractProgressBarFormat](class-aws-s3-s3transfer-progress-abstractprogressbarformat.md)   in package    - [Aws](package-aws.md)
 
@@ -11,32 +11,32 @@ FinalYes
 
 Defines a progress bar format.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html\#toc-constants)
+#### Constants  [header link](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-toc-constants.md)
 
-[BLACK\_COLOR\_CODE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html#constant_BLACK_COLOR_CODE)
-= '\[30m' [BLUE\_COLOR\_CODE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html#constant_BLUE_COLOR_CODE)
-= '\[34m' [FORMAT\_PARAMETERS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html#constant_FORMAT_PARAMETERS)
-= \['progress\_bar', 'percent', 'transferred', 'to\_be\_transferred', 'unit', 'color\_code', 'message', 'object\_name'\] [FORMAT\_TEMPLATE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html#constant_FORMAT_TEMPLATE)
-= "\|object\_name\|:\\n" . "\\x1b\|color\_code\|\[\|progress\_bar\|\] \|percent\|% " . "\|transferred\|/\|to\_be\_transferred\| \|unit\| \|message\|\\x1b\[0m" [GREEN\_COLOR\_CODE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html#constant_GREEN_COLOR_CODE)
-= '\[32m' [RED\_COLOR\_CODE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html#constant_RED_COLOR_CODE)
+[BLACK\_COLOR\_CODE](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-constant-black-color-code.md)
+= '\[30m' [BLUE\_COLOR\_CODE](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-constant-blue-color-code.md)
+= '\[34m' [FORMAT\_PARAMETERS](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-constant-format-parameters.md)
+= \['progress\_bar', 'percent', 'transferred', 'to\_be\_transferred', 'unit', 'color\_code', 'message', 'object\_name'\] [FORMAT\_TEMPLATE](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-constant-format-template.md)
+= "\|object\_name\|:\\n" . "\\x1b\|color\_code\|\[\|progress\_bar\|\] \|percent\|% " . "\|transferred\|/\|to\_be\_transferred\| \|unit\| \|message\|\\x1b\[0m" [GREEN\_COLOR\_CODE](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-constant-green-color-code.md)
+= '\[32m' [RED\_COLOR\_CODE](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-constant-red-color-code.md)
 = '\[31m'
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-toc-methods.md)
 
 [\_\_construct()](class-aws-s3-s3transfer-progress-abstractprogressbarformat.md#method___construct)
 : mixed [format()](class-aws-s3-s3transfer-progress-abstractprogressbarformat.md#method_format)
 : string [getArgs()](class-aws-s3-s3transfer-progress-abstractprogressbarformat.md#method_getArgs)
-: array<string\|int, mixed> [getFormatParameters()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html#method_getFormatParameters)
-: array<string\|int, mixed> [getFormatTemplate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html#method_getFormatTemplate)
+: array<string\|int, mixed> [getFormatParameters()](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-method-getformatparameters.md)
+: array<string\|int, mixed> [getFormatTemplate()](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-method-getformattemplate.md)
 : string [setArg()](class-aws-s3-s3transfer-progress-abstractprogressbarformat.md#method_setArg)
 : void [setArgs()](class-aws-s3-s3transfer-progress-abstractprogressbarformat.md#method_setArgs)
 : void To set multiple arguments at once.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html\#constants)
+### Constants  [header link](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-constants.md)
 
-#### BLACK\_COLOR\_CODE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html\#constant_BLACK_COLOR_CODE)
+#### BLACK\_COLOR\_CODE  [header link](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-constant-black-color-code.md)
 
 `
     public
@@ -45,7 +45,7 @@ Defines a progress bar format.
     = '[30m'
 `
 
-#### BLUE\_COLOR\_CODE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html\#constant_BLUE_COLOR_CODE)
+#### BLUE\_COLOR\_CODE  [header link](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-constant-blue-color-code.md)
 
 `
     public
@@ -54,7 +54,7 @@ Defines a progress bar format.
     = '[34m'
 `
 
-#### FORMAT\_PARAMETERS  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html\#constant_FORMAT_PARAMETERS)
+#### FORMAT\_PARAMETERS  [header link](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-constant-format-parameters.md)
 
 `
     public
@@ -63,7 +63,7 @@ Defines a progress bar format.
     = ['progress_bar', 'percent', 'transferred', 'to_be_transferred', 'unit', 'color_code', 'message', 'object_name']
 `
 
-#### FORMAT\_TEMPLATE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html\#constant_FORMAT_TEMPLATE)
+#### FORMAT\_TEMPLATE  [header link](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-constant-format-template.md)
 
 `
     public
@@ -72,7 +72,7 @@ Defines a progress bar format.
     = "|object_name|:\n" . "\x1b|color_code|[|progress_bar|] |percent|% " . "|transferred|/|to_be_transferred| |unit| |message|\x1b[0m"
 `
 
-#### GREEN\_COLOR\_CODE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html\#constant_GREEN_COLOR_CODE)
+#### GREEN\_COLOR\_CODE  [header link](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-constant-green-color-code.md)
 
 `
     public
@@ -81,7 +81,7 @@ Defines a progress bar format.
     = '[32m'
 `
 
-#### RED\_COLOR\_CODE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html\#constant_RED_COLOR_CODE)
+#### RED\_COLOR\_CODE  [header link](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-constant-red-color-code.md)
 
 `
     public
@@ -90,7 +90,7 @@ Defines a progress bar format.
     = '[31m'
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-methods.md)
 
 #### \_\_construct()  [header link](class-aws-s3-s3transfer-progress-abstractprogressbarformat.md\#method___construct)
 
@@ -124,13 +124,13 @@ string
 
 array<string\|int, mixed>
 
-#### getFormatParameters()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html\#method_getFormatParameters)
+#### getFormatParameters()  [header link](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-method-getformatparameters.md)
 
 `
     public
                     getFormatParameters() : array<string|int, mixed>`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html\#method_getFormatParameters\#tags)
+##### Tags  [header link](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-method-getformatparameters-tags.md)
 
 inheritDoc
 
@@ -138,13 +138,13 @@ inheritDoc
 
 array<string\|int, mixed>
 
-#### getFormatTemplate()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html\#method_getFormatTemplate)
+#### getFormatTemplate()  [header link](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-method-getformattemplate.md)
 
 `
     public
                     getFormatTemplate() : string`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html\#method_getFormatTemplate\#tags)
+##### Tags  [header link](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-method-getformattemplate-tags.md)
 
 inheritDoc
 
@@ -187,22 +187,22 @@ $args
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html#toc-methods)
+  - [Constants](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-toc-constants.md)
+  - [Methods](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-toc-methods.md)
 - Constants
-  - [BLACK\_COLOR\_CODE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html#constant_BLACK_COLOR_CODE)
-  - [BLUE\_COLOR\_CODE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html#constant_BLUE_COLOR_CODE)
-  - [FORMAT\_PARAMETERS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html#constant_FORMAT_PARAMETERS)
-  - [FORMAT\_TEMPLATE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html#constant_FORMAT_TEMPLATE)
-  - [GREEN\_COLOR\_CODE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html#constant_GREEN_COLOR_CODE)
-  - [RED\_COLOR\_CODE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html#constant_RED_COLOR_CODE)
+  - [BLACK\_COLOR\_CODE](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-constant-black-color-code.md)
+  - [BLUE\_COLOR\_CODE](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-constant-blue-color-code.md)
+  - [FORMAT\_PARAMETERS](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-constant-format-parameters.md)
+  - [FORMAT\_TEMPLATE](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-constant-format-template.md)
+  - [GREEN\_COLOR\_CODE](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-constant-green-color-code.md)
+  - [RED\_COLOR\_CODE](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-constant-red-color-code.md)
 - Methods
   - [\_\_construct()](class-aws-s3-s3transfer-progress-abstractprogressbarformat.md#method___construct)
   - [format()](class-aws-s3-s3transfer-progress-abstractprogressbarformat.md#method_format)
   - [getArgs()](class-aws-s3-s3transfer-progress-abstractprogressbarformat.md#method_getArgs)
-  - [getFormatParameters()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html#method_getFormatParameters)
-  - [getFormatTemplate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html#method_getFormatTemplate)
+  - [getFormatParameters()](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-method-getformatparameters.md)
+  - [getFormatTemplate()](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-method-getformattemplate.md)
   - [setArg()](class-aws-s3-s3transfer-progress-abstractprogressbarformat.md#method_setArg)
   - [setArgs()](class-aws-s3-s3transfer-progress-abstractprogressbarformat.md#method_setArgs)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.ColoredTransferProgressBarFormat.html#top)
+[Back To Top](class-aws-s3-s3transfer-progress-coloredtransferprogressbarformat-top.md)

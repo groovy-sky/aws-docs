@@ -55,7 +55,7 @@ Required: No
 
 The features configuration for the hosted zone, including accelerated recovery settings and status information.
 
-Type: [HostedZoneFeatures](https://docs.aws.amazon.com/Route53/latest/APIReference/API_HostedZoneFeatures.html) object
+Type: [HostedZoneFeatures](api-hostedzonefeatures.md) object
 
 Required: No
 
@@ -65,7 +65,7 @@ If the hosted zone was created by another service, the service that created the 
 zone. When a hosted zone is created by another service, you can't edit or delete it
 using Route 53.
 
-Type: [LinkedService](https://docs.aws.amazon.com/Route53/latest/APIReference/API_LinkedService.html) object
+Type: [LinkedService](api-linkedservice.md) object
 
 Required: No
 
@@ -81,13 +81,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53-2013-04-01/HostedZone)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53-2013-04-01/hostedzone.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53-2013-04-01/HostedZone)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53-2013-04-01/hostedzone.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53-2013-04-01/HostedZone)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53-2013-04-01/hostedzone.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 HealthCheckObservation
 

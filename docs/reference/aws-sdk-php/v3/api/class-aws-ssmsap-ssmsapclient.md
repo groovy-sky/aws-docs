@@ -17,39 +17,39 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-05-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html)
+- [**2018-05-10**](api-ssm-sap-2018-05-10.md)
 
-  - [DeleteResourcePermission](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#deleteresourcepermission)
-  - [DeregisterApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#deregisterapplication)
-  - [GetApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#getapplication)
-  - [GetComponent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#getcomponent)
-  - [GetConfigurationCheckOperation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#getconfigurationcheckoperation)
-  - [GetDatabase](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#getdatabase)
-  - [GetOperation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#getoperation)
-  - [GetResourcePermission](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#getresourcepermission)
-  - [ListApplications](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#listapplications)
-  - [ListComponents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#listcomponents)
-  - [ListConfigurationCheckDefinitions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#listconfigurationcheckdefinitions)
-  - [ListConfigurationCheckOperations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#listconfigurationcheckoperations)
-  - [ListDatabases](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#listdatabases)
-  - [ListOperationEvents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#listoperationevents)
-  - [ListOperations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#listoperations)
-  - [ListSubCheckResults](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#listsubcheckresults)
-  - [ListSubCheckRuleResults](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#listsubcheckruleresults)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#listtagsforresource)
-  - [PutResourcePermission](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#putresourcepermission)
-  - [RegisterApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#registerapplication)
-  - [StartApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#startapplication)
-  - [StartApplicationRefresh](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#startapplicationrefresh)
-  - [StartConfigurationChecks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#startconfigurationchecks)
-  - [StopApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#stopapplication)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#untagresource)
-  - [UpdateApplicationSettings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ssm-sap-2018-05-10.html#updateapplicationsettings)
+  - [DeleteResourcePermission](api-ssm-sap-2018-05-10-deleteresourcepermission.md)
+  - [DeregisterApplication](api-ssm-sap-2018-05-10-deregisterapplication.md)
+  - [GetApplication](api-ssm-sap-2018-05-10-getapplication.md)
+  - [GetComponent](api-ssm-sap-2018-05-10-getcomponent.md)
+  - [GetConfigurationCheckOperation](api-ssm-sap-2018-05-10-getconfigurationcheckoperation.md)
+  - [GetDatabase](api-ssm-sap-2018-05-10-getdatabase.md)
+  - [GetOperation](api-ssm-sap-2018-05-10-getoperation.md)
+  - [GetResourcePermission](api-ssm-sap-2018-05-10-getresourcepermission.md)
+  - [ListApplications](api-ssm-sap-2018-05-10-listapplications.md)
+  - [ListComponents](api-ssm-sap-2018-05-10-listcomponents.md)
+  - [ListConfigurationCheckDefinitions](api-ssm-sap-2018-05-10-listconfigurationcheckdefinitions.md)
+  - [ListConfigurationCheckOperations](api-ssm-sap-2018-05-10-listconfigurationcheckoperations.md)
+  - [ListDatabases](api-ssm-sap-2018-05-10-listdatabases.md)
+  - [ListOperationEvents](api-ssm-sap-2018-05-10-listoperationevents.md)
+  - [ListOperations](api-ssm-sap-2018-05-10-listoperations.md)
+  - [ListSubCheckResults](api-ssm-sap-2018-05-10-listsubcheckresults.md)
+  - [ListSubCheckRuleResults](api-ssm-sap-2018-05-10-listsubcheckruleresults.md)
+  - [ListTagsForResource](api-ssm-sap-2018-05-10-listtagsforresource.md)
+  - [PutResourcePermission](api-ssm-sap-2018-05-10-putresourcepermission.md)
+  - [RegisterApplication](api-ssm-sap-2018-05-10-registerapplication.md)
+  - [StartApplication](api-ssm-sap-2018-05-10-startapplication.md)
+  - [StartApplicationRefresh](api-ssm-sap-2018-05-10-startapplicationrefresh.md)
+  - [StartConfigurationChecks](api-ssm-sap-2018-05-10-startconfigurationchecks.md)
+  - [StopApplication](api-ssm-sap-2018-05-10-stopapplication.md)
+  - [TagResource](api-ssm-sap-2018-05-10-tagresource.md)
+  - [UntagResource](api-ssm-sap-2018-05-10-untagresource.md)
+  - [UpdateApplicationSettings](api-ssm-sap-2018-05-10-updateapplicationsettings.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SsmSap.SsmSapClient.html\#toc)
+### Table of Contents  [header link](class-aws-ssmsap-ssmsapclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SsmSap.SsmSapClient.html\#toc-methods)
+#### Methods  [header link](class-aws-ssmsap-ssmsapclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -80,7 +80,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SsmSap.SsmSapClient.html\#methods)
+### Methods  [header link](class-aws-ssmsap-ssmsapclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -547,7 +547,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SsmSap.SsmSapClient.html#toc-methods)
+  - [Methods](class-aws-ssmsap-ssmsapclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -574,4 +574,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SsmSap.SsmSapClient.html#top)
+[Back To Top](class-aws-ssmsap-ssmsapclient-top.md)

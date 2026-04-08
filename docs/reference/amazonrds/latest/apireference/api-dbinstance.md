@@ -75,7 +75,7 @@ Required: No
 The additional storage volumes associated with the DB instance. RDS supports
 additional storage volumes for RDS for Oracle and RDS for SQL Server.
 
-Type: Array of [AdditionalStorageVolumeOutput](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_AdditionalStorageVolumeOutput.html) objects
+Type: Array of [AdditionalStorageVolumeOutput](api-additionalstoragevolumeoutput.md) objects
 
 Required: No
 
@@ -91,7 +91,7 @@ Required: No
 
 The AWS Identity and Access Management (IAM) roles associated with the DB instance.
 
-Type: Array of [DBInstanceRole](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBInstanceRole.html) objects
+Type: Array of [DBInstanceRole](api-dbinstancerole.md) objects
 
 Required: No
 
@@ -175,7 +175,7 @@ Required: No
 
 The details of the DB instance's server certificate.
 
-Type: [CertificateDetails](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CertificateDetails.html) object
+Type: [CertificateDetails](api-certificatedetails.md) object
 
 Required: No
 
@@ -211,7 +211,7 @@ private cloud (VPC) on your local network.
 For more information about RDS on Outposts, see [Working with Amazon RDS on AWS Outposts](../../../../services/amazonrds/latest/userguide/rds-on-outposts.md)
 in the _Amazon RDS User Guide_.
 
-For more information about CoIPs, see [Customer-owned IP addresses](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html#ip-addressing)
+For more information about CoIPs, see [Customer-owned IP addresses](../../../../services/outposts/latest/userguide/routing-ip-addressing.md)
 in the _AWS Outposts User Guide_.
 
 Type: Boolean
@@ -266,7 +266,7 @@ Required: No
 
 The list of replicated automated backups associated with the DB instance.
 
-Type: Array of [DBInstanceAutomatedBackupsReplication](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBInstanceAutomatedBackupsReplication.html) objects
+Type: Array of [DBInstanceAutomatedBackupsReplication](api-dbinstanceautomatedbackupsreplication.md) objects
 
 Required: No
 
@@ -299,7 +299,7 @@ Required: No
 The current state of this database.
 
 For information about DB instance statuses, see
-[Viewing DB instance status](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/accessing-monitoring.html#Overview.DBInstance.Status)
+[Viewing DB instance status](../../../../services/amazonrds/latest/userguide/accessing-monitoring-overview-dbinstance-status.md)
 in the _Amazon RDS User Guide._
 
 Type: String
@@ -329,7 +329,7 @@ Required: No
 
 The list of DB parameter groups applied to this DB instance.
 
-Type: Array of [DBParameterGroupStatus](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBParameterGroupStatus.html) objects
+Type: Array of [DBParameterGroupStatus](api-dbparametergroupstatus.md) objects
 
 Required: No
 
@@ -338,7 +338,7 @@ Required: No
 A list of DB security group elements containing
 `DBSecurityGroup.Name` and `DBSecurityGroup.Status` subelements.
 
-Type: Array of [DBSecurityGroupMembership](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBSecurityGroupMembership.html) objects
+Type: Array of [DBSecurityGroupMembership](api-dbsecuritygroupmembership.md) objects
 
 Required: No
 
@@ -346,7 +346,7 @@ Required: No
 
 Information about the subnet group associated with the DB instance, including the name, description, and subnets in the subnet group.
 
-Type: [DBSubnetGroup](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBSubnetGroup.html) object
+Type: [DBSubnetGroup](api-dbsubnetgroup.md) object
 
 Required: No
 
@@ -382,7 +382,7 @@ Required: No
 
 The Active Directory Domain membership records associated with the DB instance.
 
-Type: Array of [DomainMembership](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DomainMembership.html) objects
+Type: Array of [DomainMembership](api-domainmembership.md) objects
 
 Required: No
 
@@ -405,7 +405,7 @@ The connection endpoint for the DB instance.
 
 The endpoint might not be shown for instances with the status of `creating`.
 
-Type: [Endpoint](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Endpoint.html) object
+Type: [Endpoint](api-endpoint.md) object
 
 Required: No
 
@@ -448,9 +448,9 @@ Required: No
 Indicates whether mapping of AWS Identity and Access Management (IAM) accounts to database accounts is enabled for the DB instance.
 
 For a list of engine versions that support IAM database authentication, see
-[IAM database authentication](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.IamDatabaseAuthentication.html)
+[IAM database authentication](../../../../services/amazonrds/latest/userguide/concepts-rds-fea-regions-db-eng-feature-iamdatabaseauthentication.md)
 in the _Amazon RDS User Guide_ and [IAM \
-database authentication in Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.Aurora_Fea_Regions_DB-eng.Feature.IAMdbauth.html) in the _Amazon Aurora User Guide_.
+database authentication in Aurora](../../../../services/amazonrds/latest/aurorauserguide/concepts-aurora-fea-regions-db-eng-feature-iamdbauth.md) in the _Amazon Aurora User Guide_.
 
 Type: Boolean
 
@@ -515,7 +515,7 @@ Required: No
 
 The listener connection endpoint for SQL Server Always On.
 
-Type: [Endpoint](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Endpoint.html) object
+Type: [Endpoint](api-endpoint.md) object
 
 Required: No
 
@@ -534,7 +534,7 @@ The secret managed by RDS in AWS Secrets Manager for the master user password.
 For more information, see [Password management with AWS Secrets Manager](../../../../services/amazonrds/latest/userguide/rds-secrets-manager.md)
 in the _Amazon RDS User Guide._
 
-Type: [MasterUserSecret](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_MasterUserSecret.html) object
+Type: [MasterUserSecret](api-masterusersecret.md) object
 
 Required: No
 
@@ -611,7 +611,7 @@ Required: No
 
 The list of option group memberships for this DB instance.
 
-Type: Array of [OptionGroupMembership](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_OptionGroupMembership.html) objects
+Type: Array of [OptionGroupMembership](api-optiongroupmembership.md) objects
 
 Required: No
 
@@ -619,7 +619,7 @@ Required: No
 
 Information about pending changes to the DB instance. This information is returned only when there are pending changes. Specific changes are identified by subelements.
 
-Type: [PendingModifiedValues](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_PendingModifiedValues.html) object
+Type: [PendingModifiedValues](api-pendingmodifiedvalues.md) object
 
 Required: No
 
@@ -805,7 +805,7 @@ Required: No
 The status of a read replica. If the DB instance isn't a read replica, the value is
 blank.
 
-Type: Array of [DBInstanceStatusInfo](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBInstanceStatusInfo.html) objects
+Type: Array of [DBInstanceStatusInfo](api-dbinstancestatusinfo.md) objects
 
 Required: No
 
@@ -868,7 +868,7 @@ For more information, see
 [Tagging Amazon RDS resources](../../../../services/amazonrds/latest/userguide/user-tagging.md) in the _Amazon RDS User Guide_ or
 [Tagging Amazon Aurora and Amazon RDS resources](../../../../services/amazonrds/latest/aurorauserguide/user-tagging.md) in the _Amazon Aurora User Guide_.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Required: No
 
@@ -912,7 +912,7 @@ Required: No
 
 The list of Amazon EC2 VPC security groups that the DB instance belongs to.
 
-Type: Array of [VpcSecurityGroupMembership](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_VpcSecurityGroupMembership.html) objects
+Type: Array of [VpcSecurityGroupMembership](api-vpcsecuritygroupmembership.md) objects
 
 Required: No
 
@@ -920,13 +920,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/DBInstance)
+- [AWS SDK for C++](../../../goto/sdkforcpp/rds-2014-10-31/dbinstance.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/DBInstance)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/rds-2014-10-31/dbinstance.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/DBInstance)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/dbinstance.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DBEngineVersion
 

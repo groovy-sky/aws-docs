@@ -17,19 +17,19 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-01-06**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cur-2017-01-06.html)
+- [**2017-01-06**](api-cur-2017-01-06.md)
 
-  - [DeleteReportDefinition](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cur-2017-01-06.html#deletereportdefinition)
-  - [DescribeReportDefinitions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cur-2017-01-06.html#describereportdefinitions)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cur-2017-01-06.html#listtagsforresource)
-  - [ModifyReportDefinition](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cur-2017-01-06.html#modifyreportdefinition)
-  - [PutReportDefinition](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cur-2017-01-06.html#putreportdefinition)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cur-2017-01-06.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cur-2017-01-06.html#untagresource)
+  - [DeleteReportDefinition](api-cur-2017-01-06-deletereportdefinition.md)
+  - [DescribeReportDefinitions](api-cur-2017-01-06-describereportdefinitions.md)
+  - [ListTagsForResource](api-cur-2017-01-06-listtagsforresource.md)
+  - [ModifyReportDefinition](api-cur-2017-01-06-modifyreportdefinition.md)
+  - [PutReportDefinition](api-cur-2017-01-06-putreportdefinition.md)
+  - [TagResource](api-cur-2017-01-06-tagresource.md)
+  - [UntagResource](api-cur-2017-01-06-untagresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CostandUsageReportService.CostandUsageReportServiceClient.html\#toc)
+### Table of Contents  [header link](class-aws-costandusagereportservice-costandusagereportserviceclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CostandUsageReportService.CostandUsageReportServiceClient.html\#toc-methods)
+#### Methods  [header link](class-aws-costandusagereportservice-costandusagereportserviceclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -60,7 +60,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CostandUsageReportService.CostandUsageReportServiceClient.html\#methods)
+### Methods  [header link](class-aws-costandusagereportservice-costandusagereportserviceclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -527,7 +527,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CostandUsageReportService.CostandUsageReportServiceClient.html#toc-methods)
+  - [Methods](class-aws-costandusagereportservice-costandusagereportserviceclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -554,4 +554,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CostandUsageReportService.CostandUsageReportServiceClient.html#top)
+[Back To Top](class-aws-costandusagereportservice-costandusagereportserviceclient-top.md)

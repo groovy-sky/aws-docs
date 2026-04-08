@@ -4,15 +4,15 @@ Menu
 
 ## CloudFormation
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudformation.html\#toc)
+### Table of Contents  [header link](namespace-aws-cloudformation-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudformation.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-cloudformation-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudformation.exception.html)
+[Exception](namespace-aws-cloudformation-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudformation.html\#toc-classes)
+#### Classes  [header link](namespace-aws-cloudformation-toc-classes.md)
 
-[CloudFormationClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFormation.CloudFormationClient.html)This client is used to interact with the **AWS CloudFormation** service.
+[CloudFormationClient](class-aws-cloudformation-cloudformationclient.md)This client is used to interact with the **AWS CloudFormation** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudformation.html#toc-classes)
+  - [Classes](namespace-aws-cloudformation-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudformation.html#top)
+[Back To Top](namespace-aws-cloudformation-top.md)

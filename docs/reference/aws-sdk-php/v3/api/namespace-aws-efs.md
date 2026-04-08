@@ -4,15 +4,15 @@ Menu
 
 ## Efs
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.efs.html\#toc)
+### Table of Contents  [header link](namespace-aws-efs-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.efs.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-efs-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.efs.exception.html)
+[Exception](namespace-aws-efs-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.efs.html\#toc-classes)
+#### Classes  [header link](namespace-aws-efs-toc-classes.md)
 
-[EfsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Efs.EfsClient.html)This client is used to interact with \*\*Amazon EFS\*\*.
+[EfsClient](class-aws-efs-efsclient.md)This client is used to interact with \*\*Amazon EFS\*\*.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.efs.html#toc-classes)
+  - [Classes](namespace-aws-efs-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.efs.html#top)
+[Back To Top](namespace-aws-efs-top.md)

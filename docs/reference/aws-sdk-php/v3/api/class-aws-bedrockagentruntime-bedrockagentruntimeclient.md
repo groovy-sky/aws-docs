@@ -17,43 +17,43 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2023-07-26**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html)
+- [**2023-07-26**](api-bedrock-agent-runtime-2023-07-26.md)
 
-  - [CreateInvocation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#createinvocation)
-  - [CreateSession](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#createsession)
-  - [DeleteAgentMemory](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#deleteagentmemory)
-  - [DeleteSession](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#deletesession)
-  - [EndSession](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#endsession)
-  - [GenerateQuery](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#generatequery)
-  - [GetAgentMemory](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#getagentmemory)
-  - [GetExecutionFlowSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#getexecutionflowsnapshot)
-  - [GetFlowExecution](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#getflowexecution)
-  - [GetInvocationStep](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#getinvocationstep)
-  - [GetSession](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#getsession)
-  - [InvokeAgent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#invokeagent)
-  - [InvokeFlow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#invokeflow)
-  - [InvokeInlineAgent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#invokeinlineagent)
-  - [ListFlowExecutionEvents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#listflowexecutionevents)
-  - [ListFlowExecutions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#listflowexecutions)
-  - [ListInvocationSteps](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#listinvocationsteps)
-  - [ListInvocations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#listinvocations)
-  - [ListSessions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#listsessions)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#listtagsforresource)
-  - [OptimizePrompt](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#optimizeprompt)
-  - [PutInvocationStep](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#putinvocationstep)
-  - [Rerank](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#rerank)
-  - [Retrieve](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#retrieve)
-  - [RetrieveAndGenerate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#retrieveandgenerate)
-  - [RetrieveAndGenerateStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#retrieveandgeneratestream)
-  - [StartFlowExecution](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#startflowexecution)
-  - [StopFlowExecution](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#stopflowexecution)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#untagresource)
-  - [UpdateSession](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-agent-runtime-2023-07-26.html#updatesession)
+  - [CreateInvocation](api-bedrock-agent-runtime-2023-07-26-createinvocation.md)
+  - [CreateSession](api-bedrock-agent-runtime-2023-07-26-createsession.md)
+  - [DeleteAgentMemory](api-bedrock-agent-runtime-2023-07-26-deleteagentmemory.md)
+  - [DeleteSession](api-bedrock-agent-runtime-2023-07-26-deletesession.md)
+  - [EndSession](api-bedrock-agent-runtime-2023-07-26-endsession.md)
+  - [GenerateQuery](api-bedrock-agent-runtime-2023-07-26-generatequery.md)
+  - [GetAgentMemory](api-bedrock-agent-runtime-2023-07-26-getagentmemory.md)
+  - [GetExecutionFlowSnapshot](api-bedrock-agent-runtime-2023-07-26-getexecutionflowsnapshot.md)
+  - [GetFlowExecution](api-bedrock-agent-runtime-2023-07-26-getflowexecution.md)
+  - [GetInvocationStep](api-bedrock-agent-runtime-2023-07-26-getinvocationstep.md)
+  - [GetSession](api-bedrock-agent-runtime-2023-07-26-getsession.md)
+  - [InvokeAgent](api-bedrock-agent-runtime-2023-07-26-invokeagent.md)
+  - [InvokeFlow](api-bedrock-agent-runtime-2023-07-26-invokeflow.md)
+  - [InvokeInlineAgent](api-bedrock-agent-runtime-2023-07-26-invokeinlineagent.md)
+  - [ListFlowExecutionEvents](api-bedrock-agent-runtime-2023-07-26-listflowexecutionevents.md)
+  - [ListFlowExecutions](api-bedrock-agent-runtime-2023-07-26-listflowexecutions.md)
+  - [ListInvocationSteps](api-bedrock-agent-runtime-2023-07-26-listinvocationsteps.md)
+  - [ListInvocations](api-bedrock-agent-runtime-2023-07-26-listinvocations.md)
+  - [ListSessions](api-bedrock-agent-runtime-2023-07-26-listsessions.md)
+  - [ListTagsForResource](api-bedrock-agent-runtime-2023-07-26-listtagsforresource.md)
+  - [OptimizePrompt](api-bedrock-agent-runtime-2023-07-26-optimizeprompt.md)
+  - [PutInvocationStep](api-bedrock-agent-runtime-2023-07-26-putinvocationstep.md)
+  - [Rerank](api-bedrock-agent-runtime-2023-07-26-rerank.md)
+  - [Retrieve](api-bedrock-agent-runtime-2023-07-26-retrieve.md)
+  - [RetrieveAndGenerate](api-bedrock-agent-runtime-2023-07-26-retrieveandgenerate.md)
+  - [RetrieveAndGenerateStream](api-bedrock-agent-runtime-2023-07-26-retrieveandgeneratestream.md)
+  - [StartFlowExecution](api-bedrock-agent-runtime-2023-07-26-startflowexecution.md)
+  - [StopFlowExecution](api-bedrock-agent-runtime-2023-07-26-stopflowexecution.md)
+  - [TagResource](api-bedrock-agent-runtime-2023-07-26-tagresource.md)
+  - [UntagResource](api-bedrock-agent-runtime-2023-07-26-untagresource.md)
+  - [UpdateSession](api-bedrock-agent-runtime-2023-07-26-updatesession.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockAgentRuntime.BedrockAgentRuntimeClient.html\#toc)
+### Table of Contents  [header link](class-aws-bedrockagentruntime-bedrockagentruntimeclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockAgentRuntime.BedrockAgentRuntimeClient.html\#toc-methods)
+#### Methods  [header link](class-aws-bedrockagentruntime-bedrockagentruntimeclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -84,7 +84,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockAgentRuntime.BedrockAgentRuntimeClient.html\#methods)
+### Methods  [header link](class-aws-bedrockagentruntime-bedrockagentruntimeclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -551,7 +551,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockAgentRuntime.BedrockAgentRuntimeClient.html#toc-methods)
+  - [Methods](class-aws-bedrockagentruntime-bedrockagentruntimeclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -578,4 +578,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockAgentRuntime.BedrockAgentRuntimeClient.html#top)
+[Back To Top](class-aws-bedrockagentruntime-bedrockagentruntimeclient-top.md)

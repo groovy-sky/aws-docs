@@ -17,23 +17,23 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2022-09-15**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-trustedadvisor-2022-09-15.html)
+- [**2022-09-15**](api-trustedadvisor-2022-09-15.md)
 
-  - [BatchUpdateRecommendationResourceExclusion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-trustedadvisor-2022-09-15.html#batchupdaterecommendationresourceexclusion)
-  - [GetOrganizationRecommendation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-trustedadvisor-2022-09-15.html#getorganizationrecommendation)
-  - [GetRecommendation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-trustedadvisor-2022-09-15.html#getrecommendation)
-  - [ListChecks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-trustedadvisor-2022-09-15.html#listchecks)
-  - [ListOrganizationRecommendationAccounts](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-trustedadvisor-2022-09-15.html#listorganizationrecommendationaccounts)
-  - [ListOrganizationRecommendationResources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-trustedadvisor-2022-09-15.html#listorganizationrecommendationresources)
-  - [ListOrganizationRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-trustedadvisor-2022-09-15.html#listorganizationrecommendations)
-  - [ListRecommendationResources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-trustedadvisor-2022-09-15.html#listrecommendationresources)
-  - [ListRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-trustedadvisor-2022-09-15.html#listrecommendations)
-  - [UpdateOrganizationRecommendationLifecycle](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-trustedadvisor-2022-09-15.html#updateorganizationrecommendationlifecycle)
-  - [UpdateRecommendationLifecycle](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-trustedadvisor-2022-09-15.html#updaterecommendationlifecycle)
+  - [BatchUpdateRecommendationResourceExclusion](api-trustedadvisor-2022-09-15-batchupdaterecommendationresourceexclusion.md)
+  - [GetOrganizationRecommendation](api-trustedadvisor-2022-09-15-getorganizationrecommendation.md)
+  - [GetRecommendation](api-trustedadvisor-2022-09-15-getrecommendation.md)
+  - [ListChecks](api-trustedadvisor-2022-09-15-listchecks.md)
+  - [ListOrganizationRecommendationAccounts](api-trustedadvisor-2022-09-15-listorganizationrecommendationaccounts.md)
+  - [ListOrganizationRecommendationResources](api-trustedadvisor-2022-09-15-listorganizationrecommendationresources.md)
+  - [ListOrganizationRecommendations](api-trustedadvisor-2022-09-15-listorganizationrecommendations.md)
+  - [ListRecommendationResources](api-trustedadvisor-2022-09-15-listrecommendationresources.md)
+  - [ListRecommendations](api-trustedadvisor-2022-09-15-listrecommendations.md)
+  - [UpdateOrganizationRecommendationLifecycle](api-trustedadvisor-2022-09-15-updateorganizationrecommendationlifecycle.md)
+  - [UpdateRecommendationLifecycle](api-trustedadvisor-2022-09-15-updaterecommendationlifecycle.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TrustedAdvisor.TrustedAdvisorClient.html\#toc)
+### Table of Contents  [header link](class-aws-trustedadvisor-trustedadvisorclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TrustedAdvisor.TrustedAdvisorClient.html\#toc-methods)
+#### Methods  [header link](class-aws-trustedadvisor-trustedadvisorclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -64,7 +64,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TrustedAdvisor.TrustedAdvisorClient.html\#methods)
+### Methods  [header link](class-aws-trustedadvisor-trustedadvisorclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -531,7 +531,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TrustedAdvisor.TrustedAdvisorClient.html#toc-methods)
+  - [Methods](class-aws-trustedadvisor-trustedadvisorclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -558,4 +558,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TrustedAdvisor.TrustedAdvisorClient.html#top)
+[Back To Top](class-aws-trustedadvisor-trustedadvisorclient-top.md)

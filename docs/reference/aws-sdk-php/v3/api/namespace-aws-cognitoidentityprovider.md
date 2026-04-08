@@ -4,15 +4,15 @@ Menu
 
 ## CognitoIdentityProvider
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cognitoidentityprovider.html\#toc)
+### Table of Contents  [header link](namespace-aws-cognitoidentityprovider-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cognitoidentityprovider.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-cognitoidentityprovider-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cognitoidentityprovider.exception.html)
+[Exception](namespace-aws-cognitoidentityprovider-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cognitoidentityprovider.html\#toc-classes)
+#### Classes  [header link](namespace-aws-cognitoidentityprovider-toc-classes.md)
 
-[CognitoIdentityProviderClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentityProvider.CognitoIdentityProviderClient.html)This client is used to interact with the **Amazon Cognito Identity Provider** service.
+[CognitoIdentityProviderClient](class-aws-cognitoidentityprovider-cognitoidentityproviderclient.md)This client is used to interact with the **Amazon Cognito Identity Provider** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cognitoidentityprovider.html#toc-classes)
+  - [Classes](namespace-aws-cognitoidentityprovider-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cognitoidentityprovider.html#top)
+[Back To Top](namespace-aws-cognitoidentityprovider-top.md)

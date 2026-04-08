@@ -3,40 +3,40 @@ Menu
 - [Aws](namespace-aws.md)
 - [Token](namespace-aws-token.md)
 
-## BedrockTokenProvider     extends [TokenProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html)   in package    - [Aws](package-aws.md)
+## BedrockTokenProvider     extends [TokenProvider](class-aws-token-tokenprovider.md)   in package    - [Aws](package-aws.md)
 
 Token provider for Bedrock that sources bearer tokens from environment variables.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html\#toc)
+### Table of Contents  [header link](class-aws-token-bedrocktokenprovider-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html\#toc-constants)
+#### Constants  [header link](class-aws-token-bedrocktokenprovider-toc-constants.md)
 
-[BEARER\_AUTH](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html#constant_BEARER_AUTH)
-= 'smithy.api#httpBearerAuth' [ENV\_PROFILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#constant_ENV_PROFILE)
-= 'AWS\_PROFILE' [TOKEN\_ENV\_KEY](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html#constant_TOKEN_ENV_KEY)
+[BEARER\_AUTH](class-aws-token-bedrocktokenprovider-constant-bearer-auth.md)
+= 'smithy.api#httpBearerAuth' [ENV\_PROFILE](class-aws-token-tokenprovider-constant-env-profile.md)
+= 'AWS\_PROFILE' [TOKEN\_ENV\_KEY](class-aws-token-bedrocktokenprovider-constant-token-env-key.md)
 = 'bearer\_token\_bedrock'
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html\#toc-methods)
+#### Methods  [header link](class-aws-token-bedrocktokenprovider-toc-methods.md)
 
-[cache()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#method_cache)
+[cache()](class-aws-token-tokenprovider-method-cache.md)
 : callable Wraps a token provider and saves provided token in an
 instance of Aws\\CacheInterface. Forwards calls when no token found
-in cache and updates cache with the results.[chain()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#method_chain)
+in cache and updates cache with the results.[chain()](class-aws-token-tokenprovider-method-chain.md)
 : callable Creates an aggregate token provider that invokes the provided
 variadic providers one after the other until a provider returns
-a token.[createIfAvailable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html#method_createIfAvailable)
-: callable\|null Create a Bedrock token provider if the service is 'bedrock' and a token is available.[defaultProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html#method_defaultProvider)
+a token.[createIfAvailable()](class-aws-token-bedrocktokenprovider-method-createifavailable.md)
+: callable\|null Create a Bedrock token provider if the service is 'bedrock' and a token is available.[defaultProvider()](class-aws-token-bedrocktokenprovider-method-defaultprovider.md)
 : callable Create a default Bedrock token provider that checks for a bearer token
-in the AWS\_BEARER\_TOKEN\_BEDROCK environment variable.[env()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html#method_env)
-: callable Token provider that creates a token from an environment variable.[fromToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#method_fromToken)
-: callable Create a token provider function from a static token.[fromTokenValue()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html#method_fromTokenValue)
-: callable Create a token provider from a raw token value string.[memoize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#method_memoize)
-: callable Wraps a token provider and caches a previously provided token.[sso()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#method_sso)
-: [SsoTokenProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html)Token provider that creates a token from cached sso credentials
+in the AWS\_BEARER\_TOKEN\_BEDROCK environment variable.[env()](class-aws-token-bedrocktokenprovider-method-env.md)
+: callable Token provider that creates a token from an environment variable.[fromToken()](class-aws-token-tokenprovider-method-fromtoken.md)
+: callable Create a token provider function from a static token.[fromTokenValue()](class-aws-token-bedrocktokenprovider-method-fromtokenvalue.md)
+: callable Create a token provider from a raw token value string.[memoize()](class-aws-token-tokenprovider-method-memoize.md)
+: callable Wraps a token provider and caches a previously provided token.[sso()](class-aws-token-tokenprovider-method-sso.md)
+: [SsoTokenProvider](class-aws-token-ssotokenprovider.md)Token provider that creates a token from cached sso credentials
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html\#constants)
+### Constants  [header link](class-aws-token-bedrocktokenprovider-constants.md)
 
-#### BEARER\_AUTH  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html\#constant_BEARER_AUTH)
+#### BEARER\_AUTH  [header link](class-aws-token-bedrocktokenprovider-constant-bearer-auth.md)
 
 `
     public
@@ -45,7 +45,7 @@ in the AWS\_BEARER\_TOKEN\_BEDROCK environment variable.[env()](https://docs.aws
     = 'smithy.api#httpBearerAuth'
 `
 
-#### ENV\_PROFILE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html\#constant_ENV_PROFILE)
+#### ENV\_PROFILE  [header link](class-aws-token-tokenprovider-constant-env-profile.md)
 
 `
     public
@@ -54,7 +54,7 @@ in the AWS\_BEARER\_TOKEN\_BEDROCK environment variable.[env()](https://docs.aws
     = 'AWS_PROFILE'
 `
 
-#### TOKEN\_ENV\_KEY  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html\#constant_TOKEN_ENV_KEY)
+#### TOKEN\_ENV\_KEY  [header link](class-aws-token-bedrocktokenprovider-constant-token-env-key.md)
 
 `
     public
@@ -65,9 +65,9 @@ in the AWS\_BEARER\_TOKEN\_BEDROCK environment variable.[env()](https://docs.aws
 
 used to resolve the AWS\_BEARER\_TOKEN\_BEDROCK env var
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html\#methods)
+### Methods  [header link](class-aws-token-bedrocktokenprovider-methods.md)
 
-#### cache()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html\#method_cache)
+#### cache()  [header link](class-aws-token-tokenprovider-method-cache.md)
 
 Wraps a token provider and saves provided token in an
 instance of Aws\\CacheInterface. Forwards calls when no token found
@@ -99,7 +99,7 @@ $cacheKey
 
 callable
 
-#### chain()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html\#method_chain)
+#### chain()  [header link](class-aws-token-tokenprovider-method-chain.md)
 
 Creates an aggregate token provider that invokes the provided
 variadic providers one after the other until a provider returns
@@ -113,7 +113,7 @@ a token.
 
 callable
 
-#### createIfAvailable()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html\#method_createIfAvailable)
+#### createIfAvailable()  [header link](class-aws-token-bedrocktokenprovider-method-createifavailable.md)
 
 Create a Bedrock token provider if the service is 'bedrock' and a token is available.
 
@@ -137,7 +137,7 @@ callable\|null
 
 Returns a token provider if conditions are met, null otherwise
 
-#### defaultProvider()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html\#method_defaultProvider)
+#### defaultProvider()  [header link](class-aws-token-bedrocktokenprovider-method-defaultprovider.md)
 
 Create a default Bedrock token provider that checks for a bearer token
 in the AWS\_BEARER\_TOKEN\_BEDROCK environment variable.
@@ -161,7 +161,7 @@ Optional array of token provider options.
 
 callable
 
-#### env()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html\#method_env)
+#### env()  [header link](class-aws-token-bedrocktokenprovider-method-env.md)
 
 Token provider that creates a token from an environment variable.
 
@@ -181,7 +181,7 @@ to an environment variable name by ConfigurationResolver
 
 callable
 
-#### fromToken()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html\#method_fromToken)
+#### fromToken()  [header link](class-aws-token-tokenprovider-method-fromtoken.md)
 
 Create a token provider function from a static token.
 
@@ -198,7 +198,7 @@ $token
 
 callable
 
-#### fromTokenValue()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html\#method_fromTokenValue)
+#### fromTokenValue()  [header link](class-aws-token-bedrocktokenprovider-method-fromtokenvalue.md)
 
 Create a token provider from a raw token value string.
 
@@ -216,14 +216,14 @@ $tokenValue
 The bearer token value
 
 $source
-: [TokenSource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenSource.html) \|null
+: [TokenSource](class-aws-token-tokensource.md) \|null
 = null
 
 ##### Return values
 
 callable
 
-#### memoize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html\#method_memoize)
+#### memoize()  [header link](class-aws-token-tokenprovider-method-memoize.md)
 
 Wraps a token provider and caches a previously provided token.
 
@@ -244,7 +244,7 @@ Token provider function to wrap.
 
 callable
 
-#### sso()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html\#method_sso)
+#### sso()  [header link](class-aws-token-tokenprovider-method-sso.md)
 
 Token provider that creates a token from cached sso credentials
 
@@ -270,15 +270,15 @@ $config
 
 configuration options
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html\#method_sso\#tags)
+##### Tags  [header link](class-aws-token-tokenprovider-method-sso-tags.md)
 
-see[SsoTokenProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html)
+see[SsoTokenProvider](class-aws-token-ssotokenprovider.md)
 
 for $config details.
 
 ##### Return values
 
-[SsoTokenProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html)
+[SsoTokenProvider](class-aws-token-ssotokenprovider.md)
 <\-\- modeled\_exceptions -->
 
 ×
@@ -286,21 +286,21 @@ for $config details.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html#toc-methods)
+  - [Constants](class-aws-token-bedrocktokenprovider-toc-constants.md)
+  - [Methods](class-aws-token-bedrocktokenprovider-toc-methods.md)
 - Constants
-  - [BEARER\_AUTH](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html#constant_BEARER_AUTH)
-  - [ENV\_PROFILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#constant_ENV_PROFILE)
-  - [TOKEN\_ENV\_KEY](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html#constant_TOKEN_ENV_KEY)
+  - [BEARER\_AUTH](class-aws-token-bedrocktokenprovider-constant-bearer-auth.md)
+  - [ENV\_PROFILE](class-aws-token-tokenprovider-constant-env-profile.md)
+  - [TOKEN\_ENV\_KEY](class-aws-token-bedrocktokenprovider-constant-token-env-key.md)
 - Methods
-  - [cache()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#method_cache)
-  - [chain()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#method_chain)
-  - [createIfAvailable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html#method_createIfAvailable)
-  - [defaultProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html#method_defaultProvider)
-  - [env()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html#method_env)
-  - [fromToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#method_fromToken)
-  - [fromTokenValue()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html#method_fromTokenValue)
-  - [memoize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#method_memoize)
-  - [sso()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html#method_sso)
+  - [cache()](class-aws-token-tokenprovider-method-cache.md)
+  - [chain()](class-aws-token-tokenprovider-method-chain.md)
+  - [createIfAvailable()](class-aws-token-bedrocktokenprovider-method-createifavailable.md)
+  - [defaultProvider()](class-aws-token-bedrocktokenprovider-method-defaultprovider.md)
+  - [env()](class-aws-token-bedrocktokenprovider-method-env.md)
+  - [fromToken()](class-aws-token-tokenprovider-method-fromtoken.md)
+  - [fromTokenValue()](class-aws-token-bedrocktokenprovider-method-fromtokenvalue.md)
+  - [memoize()](class-aws-token-tokenprovider-method-memoize.md)
+  - [sso()](class-aws-token-tokenprovider-method-sso.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html#top)
+[Back To Top](class-aws-token-bedrocktokenprovider-top.md)

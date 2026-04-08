@@ -5,22 +5,22 @@ Menu
 
 ## CalculatesChecksumTrait
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.CalculatesChecksumTrait.html\#toc)
+### Table of Contents  [header link](class-aws-s3-calculateschecksumtrait-toc.md)
 
-#### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.CalculatesChecksumTrait.html\#toc-properties)
+#### Properties  [header link](class-aws-s3-calculateschecksumtrait-toc-properties.md)
 
-[$supportedAlgorithms](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.CalculatesChecksumTrait.html#property_supportedAlgorithms)
+[$supportedAlgorithms](class-aws-s3-calculateschecksumtrait-property-supportedalgorithms.md)
 : array<string\|int, mixed>
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.CalculatesChecksumTrait.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-calculateschecksumtrait-toc-methods.md)
 
-[filterChecksum()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.CalculatesChecksumTrait.html#method_filterChecksum)
-: string\|null Returns the first checksum available, if available.[getEncodedValue()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.CalculatesChecksumTrait.html#method_getEncodedValue)
+[filterChecksum()](class-aws-s3-calculateschecksumtrait-method-filterchecksum.md)
+: string\|null Returns the first checksum available, if available.[getEncodedValue()](class-aws-s3-calculateschecksumtrait-method-getencodedvalue.md)
 : string
 
-### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.CalculatesChecksumTrait.html\#properties)
+### Properties  [header link](class-aws-s3-calculateschecksumtrait-properties.md)
 
-#### $supportedAlgorithms  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.CalculatesChecksumTrait.html\#property_supportedAlgorithms)
+#### $supportedAlgorithms  [header link](class-aws-s3-calculateschecksumtrait-property-supportedalgorithms.md)
 
 `
     public
@@ -28,9 +28,9 @@ Menu
     $supportedAlgorithms
      = ['crc32c' => true, 'crc32' => true, 'sha256' => true, 'sha1' => true]`
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.CalculatesChecksumTrait.html\#methods)
+### Methods  [header link](class-aws-s3-calculateschecksumtrait-methods.md)
 
-#### filterChecksum()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.CalculatesChecksumTrait.html\#method_filterChecksum)
+#### filterChecksum()  [header link](class-aws-s3-calculateschecksumtrait-method-filterchecksum.md)
 
 Returns the first checksum available, if available.
 
@@ -47,7 +47,7 @@ $parameters
 
 string\|null
 
-#### getEncodedValue()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.CalculatesChecksumTrait.html\#method_getEncodedValue)
+#### getEncodedValue()  [header link](class-aws-s3-calculateschecksumtrait-method-getencodedvalue.md)
 
 `
     public
@@ -75,12 +75,12 @@ string
 **On this page**
 
 - Table Of Contents
-  - [Properties](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.CalculatesChecksumTrait.html#toc-properties)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.CalculatesChecksumTrait.html#toc-methods)
+  - [Properties](class-aws-s3-calculateschecksumtrait-toc-properties.md)
+  - [Methods](class-aws-s3-calculateschecksumtrait-toc-methods.md)
 - Properties
-  - [$supportedAlgorithms](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.CalculatesChecksumTrait.html#property_supportedAlgorithms)
+  - [$supportedAlgorithms](class-aws-s3-calculateschecksumtrait-property-supportedalgorithms.md)
 - Methods
-  - [filterChecksum()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.CalculatesChecksumTrait.html#method_filterChecksum)
-  - [getEncodedValue()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.CalculatesChecksumTrait.html#method_getEncodedValue)
+  - [filterChecksum()](class-aws-s3-calculateschecksumtrait-method-filterchecksum.md)
+  - [getEncodedValue()](class-aws-s3-calculateschecksumtrait-method-getencodedvalue.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.CalculatesChecksumTrait.html#top)
+[Back To Top](class-aws-s3-calculateschecksumtrait-top.md)

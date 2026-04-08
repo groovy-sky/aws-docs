@@ -4,15 +4,15 @@ Menu
 
 ## PcaConnectorScep
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pcaconnectorscep.html\#toc)
+### Table of Contents  [header link](namespace-aws-pcaconnectorscep-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pcaconnectorscep.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-pcaconnectorscep-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pcaconnectorscep.exception.html)
+[Exception](namespace-aws-pcaconnectorscep-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pcaconnectorscep.html\#toc-classes)
+#### Classes  [header link](namespace-aws-pcaconnectorscep-toc-classes.md)
 
-[PcaConnectorScepClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PcaConnectorScep.PcaConnectorScepClient.html)This client is used to interact with the **Private CA Connector for SCEP** service.
+[PcaConnectorScepClient](class-aws-pcaconnectorscep-pcaconnectorscepclient.md)This client is used to interact with the **Private CA Connector for SCEP** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pcaconnectorscep.html#toc-classes)
+  - [Classes](namespace-aws-pcaconnectorscep-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pcaconnectorscep.html#top)
+[Back To Top](namespace-aws-pcaconnectorscep-top.md)

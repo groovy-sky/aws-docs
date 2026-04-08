@@ -76,7 +76,7 @@ public class AWSCertificateManagerSample {
 }
 ```
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Use AWS Certificate Manager with the SDK for Java
 

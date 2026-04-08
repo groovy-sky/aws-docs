@@ -17,41 +17,41 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2025-04-04**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html)
+- [**2025-04-04**](api-partnercentral-account-2025-04-04.md)
 
-  - [AcceptConnectionInvitation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#acceptconnectioninvitation)
-  - [AssociateAwsTrainingCertificationEmailDomain](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#associateawstrainingcertificationemaildomain)
-  - [CancelConnection](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#cancelconnection)
-  - [CancelConnectionInvitation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#cancelconnectioninvitation)
-  - [CancelProfileUpdateTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#cancelprofileupdatetask)
-  - [CreateConnectionInvitation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#createconnectioninvitation)
-  - [CreatePartner](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#createpartner)
-  - [DisassociateAwsTrainingCertificationEmailDomain](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#disassociateawstrainingcertificationemaildomain)
-  - [GetAllianceLeadContact](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#getallianceleadcontact)
-  - [GetConnection](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#getconnection)
-  - [GetConnectionInvitation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#getconnectioninvitation)
-  - [GetConnectionPreferences](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#getconnectionpreferences)
-  - [GetPartner](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#getpartner)
-  - [GetProfileUpdateTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#getprofileupdatetask)
-  - [GetProfileVisibility](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#getprofilevisibility)
-  - [GetVerification](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#getverification)
-  - [ListConnectionInvitations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#listconnectioninvitations)
-  - [ListConnections](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#listconnections)
-  - [ListPartners](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#listpartners)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#listtagsforresource)
-  - [PutAllianceLeadContact](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#putallianceleadcontact)
-  - [PutProfileVisibility](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#putprofilevisibility)
-  - [RejectConnectionInvitation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#rejectconnectioninvitation)
-  - [SendEmailVerificationCode](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#sendemailverificationcode)
-  - [StartProfileUpdateTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#startprofileupdatetask)
-  - [StartVerification](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#startverification)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#untagresource)
-  - [UpdateConnectionPreferences](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-partnercentral-account-2025-04-04.html#updateconnectionpreferences)
+  - [AcceptConnectionInvitation](api-partnercentral-account-2025-04-04-acceptconnectioninvitation.md)
+  - [AssociateAwsTrainingCertificationEmailDomain](api-partnercentral-account-2025-04-04-associateawstrainingcertificationemaildomain.md)
+  - [CancelConnection](api-partnercentral-account-2025-04-04-cancelconnection.md)
+  - [CancelConnectionInvitation](api-partnercentral-account-2025-04-04-cancelconnectioninvitation.md)
+  - [CancelProfileUpdateTask](api-partnercentral-account-2025-04-04-cancelprofileupdatetask.md)
+  - [CreateConnectionInvitation](api-partnercentral-account-2025-04-04-createconnectioninvitation.md)
+  - [CreatePartner](api-partnercentral-account-2025-04-04-createpartner.md)
+  - [DisassociateAwsTrainingCertificationEmailDomain](api-partnercentral-account-2025-04-04-disassociateawstrainingcertificationemaildomain.md)
+  - [GetAllianceLeadContact](api-partnercentral-account-2025-04-04-getallianceleadcontact.md)
+  - [GetConnection](api-partnercentral-account-2025-04-04-getconnection.md)
+  - [GetConnectionInvitation](api-partnercentral-account-2025-04-04-getconnectioninvitation.md)
+  - [GetConnectionPreferences](api-partnercentral-account-2025-04-04-getconnectionpreferences.md)
+  - [GetPartner](api-partnercentral-account-2025-04-04-getpartner.md)
+  - [GetProfileUpdateTask](api-partnercentral-account-2025-04-04-getprofileupdatetask.md)
+  - [GetProfileVisibility](api-partnercentral-account-2025-04-04-getprofilevisibility.md)
+  - [GetVerification](api-partnercentral-account-2025-04-04-getverification.md)
+  - [ListConnectionInvitations](api-partnercentral-account-2025-04-04-listconnectioninvitations.md)
+  - [ListConnections](api-partnercentral-account-2025-04-04-listconnections.md)
+  - [ListPartners](api-partnercentral-account-2025-04-04-listpartners.md)
+  - [ListTagsForResource](api-partnercentral-account-2025-04-04-listtagsforresource.md)
+  - [PutAllianceLeadContact](api-partnercentral-account-2025-04-04-putallianceleadcontact.md)
+  - [PutProfileVisibility](api-partnercentral-account-2025-04-04-putprofilevisibility.md)
+  - [RejectConnectionInvitation](api-partnercentral-account-2025-04-04-rejectconnectioninvitation.md)
+  - [SendEmailVerificationCode](api-partnercentral-account-2025-04-04-sendemailverificationcode.md)
+  - [StartProfileUpdateTask](api-partnercentral-account-2025-04-04-startprofileupdatetask.md)
+  - [StartVerification](api-partnercentral-account-2025-04-04-startverification.md)
+  - [TagResource](api-partnercentral-account-2025-04-04-tagresource.md)
+  - [UntagResource](api-partnercentral-account-2025-04-04-untagresource.md)
+  - [UpdateConnectionPreferences](api-partnercentral-account-2025-04-04-updateconnectionpreferences.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralAccount.PartnerCentralAccountClient.html\#toc)
+### Table of Contents  [header link](class-aws-partnercentralaccount-partnercentralaccountclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralAccount.PartnerCentralAccountClient.html\#toc-methods)
+#### Methods  [header link](class-aws-partnercentralaccount-partnercentralaccountclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -82,7 +82,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralAccount.PartnerCentralAccountClient.html\#methods)
+### Methods  [header link](class-aws-partnercentralaccount-partnercentralaccountclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -549,7 +549,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralAccount.PartnerCentralAccountClient.html#toc-methods)
+  - [Methods](class-aws-partnercentralaccount-partnercentralaccountclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -576,4 +576,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralAccount.PartnerCentralAccountClient.html#top)
+[Back To Top](class-aws-partnercentralaccount-partnercentralaccountclient-top.md)

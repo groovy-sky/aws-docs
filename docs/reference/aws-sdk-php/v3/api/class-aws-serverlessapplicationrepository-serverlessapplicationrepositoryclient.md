@@ -17,26 +17,26 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-09-08**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-serverlessrepo-2017-09-08.html)
+- [**2017-09-08**](api-serverlessrepo-2017-09-08.md)
 
-  - [CreateApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-serverlessrepo-2017-09-08.html#createapplication)
-  - [CreateApplicationVersion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-serverlessrepo-2017-09-08.html#createapplicationversion)
-  - [CreateCloudFormationChangeSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-serverlessrepo-2017-09-08.html#createcloudformationchangeset)
-  - [CreateCloudFormationTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-serverlessrepo-2017-09-08.html#createcloudformationtemplate)
-  - [DeleteApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-serverlessrepo-2017-09-08.html#deleteapplication)
-  - [GetApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-serverlessrepo-2017-09-08.html#getapplication)
-  - [GetApplicationPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-serverlessrepo-2017-09-08.html#getapplicationpolicy)
-  - [GetCloudFormationTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-serverlessrepo-2017-09-08.html#getcloudformationtemplate)
-  - [ListApplicationDependencies](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-serverlessrepo-2017-09-08.html#listapplicationdependencies)
-  - [ListApplicationVersions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-serverlessrepo-2017-09-08.html#listapplicationversions)
-  - [ListApplications](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-serverlessrepo-2017-09-08.html#listapplications)
-  - [PutApplicationPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-serverlessrepo-2017-09-08.html#putapplicationpolicy)
-  - [UnshareApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-serverlessrepo-2017-09-08.html#unshareapplication)
-  - [UpdateApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-serverlessrepo-2017-09-08.html#updateapplication)
+  - [CreateApplication](api-serverlessrepo-2017-09-08-createapplication.md)
+  - [CreateApplicationVersion](api-serverlessrepo-2017-09-08-createapplicationversion.md)
+  - [CreateCloudFormationChangeSet](api-serverlessrepo-2017-09-08-createcloudformationchangeset.md)
+  - [CreateCloudFormationTemplate](api-serverlessrepo-2017-09-08-createcloudformationtemplate.md)
+  - [DeleteApplication](api-serverlessrepo-2017-09-08-deleteapplication.md)
+  - [GetApplication](api-serverlessrepo-2017-09-08-getapplication.md)
+  - [GetApplicationPolicy](api-serverlessrepo-2017-09-08-getapplicationpolicy.md)
+  - [GetCloudFormationTemplate](api-serverlessrepo-2017-09-08-getcloudformationtemplate.md)
+  - [ListApplicationDependencies](api-serverlessrepo-2017-09-08-listapplicationdependencies.md)
+  - [ListApplicationVersions](api-serverlessrepo-2017-09-08-listapplicationversions.md)
+  - [ListApplications](api-serverlessrepo-2017-09-08-listapplications.md)
+  - [PutApplicationPolicy](api-serverlessrepo-2017-09-08-putapplicationpolicy.md)
+  - [UnshareApplication](api-serverlessrepo-2017-09-08-unshareapplication.md)
+  - [UpdateApplication](api-serverlessrepo-2017-09-08-updateapplication.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServerlessApplicationRepository.ServerlessApplicationRepositoryClient.html\#toc)
+### Table of Contents  [header link](class-aws-serverlessapplicationrepository-serverlessapplicationrepositoryclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServerlessApplicationRepository.ServerlessApplicationRepositoryClient.html\#toc-methods)
+#### Methods  [header link](class-aws-serverlessapplicationrepository-serverlessapplicationrepositoryclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -67,7 +67,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServerlessApplicationRepository.ServerlessApplicationRepositoryClient.html\#methods)
+### Methods  [header link](class-aws-serverlessapplicationrepository-serverlessapplicationrepositoryclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -534,7 +534,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServerlessApplicationRepository.ServerlessApplicationRepositoryClient.html#toc-methods)
+  - [Methods](class-aws-serverlessapplicationrepository-serverlessapplicationrepositoryclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -561,4 +561,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServerlessApplicationRepository.ServerlessApplicationRepositoryClient.html#top)
+[Back To Top](class-aws-serverlessapplicationrepository-serverlessapplicationrepositoryclient-top.md)

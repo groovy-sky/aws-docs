@@ -17,31 +17,31 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2025-07-15**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3vectors-2025-07-15.html)
+- [**2025-07-15**](api-s3vectors-2025-07-15.md)
 
-  - [CreateIndex](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3vectors-2025-07-15.html#createindex)
-  - [CreateVectorBucket](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3vectors-2025-07-15.html#createvectorbucket)
-  - [DeleteIndex](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3vectors-2025-07-15.html#deleteindex)
-  - [DeleteVectorBucket](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3vectors-2025-07-15.html#deletevectorbucket)
-  - [DeleteVectorBucketPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3vectors-2025-07-15.html#deletevectorbucketpolicy)
-  - [DeleteVectors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3vectors-2025-07-15.html#deletevectors)
-  - [GetIndex](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3vectors-2025-07-15.html#getindex)
-  - [GetVectorBucket](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3vectors-2025-07-15.html#getvectorbucket)
-  - [GetVectorBucketPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3vectors-2025-07-15.html#getvectorbucketpolicy)
-  - [GetVectors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3vectors-2025-07-15.html#getvectors)
-  - [ListIndexes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3vectors-2025-07-15.html#listindexes)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3vectors-2025-07-15.html#listtagsforresource)
-  - [ListVectorBuckets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3vectors-2025-07-15.html#listvectorbuckets)
-  - [ListVectors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3vectors-2025-07-15.html#listvectors)
-  - [PutVectorBucketPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3vectors-2025-07-15.html#putvectorbucketpolicy)
-  - [PutVectors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3vectors-2025-07-15.html#putvectors)
-  - [QueryVectors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3vectors-2025-07-15.html#queryvectors)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3vectors-2025-07-15.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3vectors-2025-07-15.html#untagresource)
+  - [CreateIndex](api-s3vectors-2025-07-15-createindex.md)
+  - [CreateVectorBucket](api-s3vectors-2025-07-15-createvectorbucket.md)
+  - [DeleteIndex](api-s3vectors-2025-07-15-deleteindex.md)
+  - [DeleteVectorBucket](api-s3vectors-2025-07-15-deletevectorbucket.md)
+  - [DeleteVectorBucketPolicy](api-s3vectors-2025-07-15-deletevectorbucketpolicy.md)
+  - [DeleteVectors](api-s3vectors-2025-07-15-deletevectors.md)
+  - [GetIndex](api-s3vectors-2025-07-15-getindex.md)
+  - [GetVectorBucket](api-s3vectors-2025-07-15-getvectorbucket.md)
+  - [GetVectorBucketPolicy](api-s3vectors-2025-07-15-getvectorbucketpolicy.md)
+  - [GetVectors](api-s3vectors-2025-07-15-getvectors.md)
+  - [ListIndexes](api-s3vectors-2025-07-15-listindexes.md)
+  - [ListTagsForResource](api-s3vectors-2025-07-15-listtagsforresource.md)
+  - [ListVectorBuckets](api-s3vectors-2025-07-15-listvectorbuckets.md)
+  - [ListVectors](api-s3vectors-2025-07-15-listvectors.md)
+  - [PutVectorBucketPolicy](api-s3vectors-2025-07-15-putvectorbucketpolicy.md)
+  - [PutVectors](api-s3vectors-2025-07-15-putvectors.md)
+  - [QueryVectors](api-s3vectors-2025-07-15-queryvectors.md)
+  - [TagResource](api-s3vectors-2025-07-15-tagresource.md)
+  - [UntagResource](api-s3vectors-2025-07-15-untagresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3Vectors.S3VectorsClient.html\#toc)
+### Table of Contents  [header link](class-aws-s3vectors-s3vectorsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3Vectors.S3VectorsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-s3vectors-s3vectorsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -72,7 +72,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3Vectors.S3VectorsClient.html\#methods)
+### Methods  [header link](class-aws-s3vectors-s3vectorsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -539,7 +539,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3Vectors.S3VectorsClient.html#toc-methods)
+  - [Methods](class-aws-s3vectors-s3vectorsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -566,4 +566,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3Vectors.S3VectorsClient.html#top)
+[Back To Top](class-aws-s3vectors-s3vectorsclient-top.md)

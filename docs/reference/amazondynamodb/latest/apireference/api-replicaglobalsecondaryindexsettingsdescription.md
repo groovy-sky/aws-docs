@@ -44,7 +44,7 @@ Required: No
 Auto scaling settings for a global secondary index replica's read capacity
 units.
 
-Type: [AutoScalingSettingsDescription](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_AutoScalingSettingsDescription.html) object
+Type: [AutoScalingSettingsDescription](api-autoscalingsettingsdescription.md) object
 
 Required: No
 
@@ -64,7 +64,7 @@ Required: No
 Auto scaling settings for a global secondary index replica's write capacity
 units.
 
-Type: [AutoScalingSettingsDescription](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_AutoScalingSettingsDescription.html) object
+Type: [AutoScalingSettingsDescription](api-autoscalingsettingsdescription.md) object
 
 Required: No
 
@@ -83,13 +83,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/ReplicaGlobalSecondaryIndexSettingsDescription)
+- [AWS SDK for C++](../../../goto/sdkforcpp/dynamodb-2012-08-10/replicaglobalsecondaryindexsettingsdescription.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/ReplicaGlobalSecondaryIndexSettingsDescription)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/dynamodb-2012-08-10/replicaglobalsecondaryindexsettingsdescription.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/ReplicaGlobalSecondaryIndexSettingsDescription)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/replicaglobalsecondaryindexsettingsdescription.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ReplicaGlobalSecondaryIndexDescription
 

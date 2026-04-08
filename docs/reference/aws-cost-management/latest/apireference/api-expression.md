@@ -20,7 +20,7 @@ filter that acts on Cost Categories.
 acts on Cost Allocation Tags.
 
 - Specify the `Dimensions` field to define a filter
-that acts on the [`DimensionValues`](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_DimensionValues.html).
+that acts on the [`DimensionValues`](api-dimensionvalues.md).
 
 - For each filter type, you can set the dimension name and values for
 the filters that you plan to use.
@@ -100,7 +100,7 @@ supported. AND and OR aren't supported. Dimensions are limited to
 
 Return results that match both `Dimension` objects.
 
-Type: Array of [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Expression.html) objects
+Type: Array of [Expression](api-expression.md) objects
 
 Required: No
 
@@ -108,7 +108,7 @@ Required: No
 
 The filter that's based on `CostCategory` values.
 
-Type: [CostCategoryValues](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_CostCategoryValues.html) object
+Type: [CostCategoryValues](api-costcategoryvalues.md) object
 
 Required: No
 
@@ -116,7 +116,7 @@ Required: No
 
 The specific `Dimension` to use for `Expression`.
 
-Type: [DimensionValues](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_DimensionValues.html) object
+Type: [DimensionValues](api-dimensionvalues.md) object
 
 Required: No
 
@@ -124,7 +124,7 @@ Required: No
 
 Return results that don't match a `Dimension` object.
 
-Type: [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Expression.html) object
+Type: [Expression](api-expression.md) object
 
 Required: No
 
@@ -132,7 +132,7 @@ Required: No
 
 Return results that match either `Dimension` object.
 
-Type: Array of [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Expression.html) objects
+Type: Array of [Expression](api-expression.md) objects
 
 Required: No
 
@@ -140,7 +140,7 @@ Required: No
 
 The specific `Tag` to use for `Expression`.
 
-Type: [TagValues](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_TagValues.html) object
+Type: [TagValues](api-tagvalues.md) object
 
 Required: No
 
@@ -148,13 +148,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ce-2017-10-25/Expression)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ce-2017-10-25/expression.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ce-2017-10-25/Expression)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ce-2017-10-25/expression.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ce-2017-10-25/Expression)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ce-2017-10-25/expression.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ESInstanceDetails
 

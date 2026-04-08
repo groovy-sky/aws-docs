@@ -19,7 +19,7 @@ set, including detailed information about the last _completed_ drift
 operation performed on the StackSet. (Information about drift operations that are in
 progress isn't included.)
 
-- Use [ListStackInstances](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackInstances.html) to return a list of stack instances belonging
+- Use [ListStackInstances](api-liststackinstances.md) to return a list of stack instances belonging
 to the StackSet, including the drift status and last drift time checked of each
 instance.
 
@@ -29,7 +29,7 @@ specific stack instance, including its drift status and last drift time checked.
 You can only run a single drift detection operation on a given StackSet at one
 time.
 
-To stop a drift detection StackSet operation, use [StopStackSetOperation](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_StopStackSetOperation.html).
+To stop a drift detection StackSet operation, use [StopStackSetOperation](api-stopstacksetoperation.md).
 
 ## Request Parameters
 
@@ -77,7 +77,7 @@ The user-specified preferences for how CloudFormation performs a StackSet operat
 
 For more information about maximum concurrent accounts and failure tolerance, see [StackSet operation options](../../../../services/cloudformation/latest/userguide/stacksets-concepts.md#stackset-ops-options).
 
-Type: [StackSetOperationPreferences](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_StackSetOperationPreferences.html) object
+Type: [StackSetOperationPreferences](api-stacksetoperationpreferences.md) object
 
 Required: No
 
@@ -171,27 +171,27 @@ https://cloudformation.us-east-1.amazonaws.com/
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/DetectStackSetDrift)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/cloudformation-2010-05-15/detectstacksetdrift.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/DetectStackSetDrift)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/cloudformation-2010-05-15/detectstacksetdrift.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/DetectStackSetDrift)
+- [AWS SDK for C++](../../../goto/sdkforcpp/cloudformation-2010-05-15/detectstacksetdrift.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/DetectStackSetDrift)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/cloudformation-2010-05-15/detectstacksetdrift.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/DetectStackSetDrift)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudformation-2010-05-15/detectstacksetdrift.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/DetectStackSetDrift)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/cloudformation-2010-05-15/detectstacksetdrift.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/DetectStackSetDrift)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/cloudformation-2010-05-15/detectstacksetdrift.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/DetectStackSetDrift)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/cloudformation-2010-05-15/detectstacksetdrift.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/DetectStackSetDrift)
+- [AWS SDK for Python](../../../../services/goto/boto3/cloudformation-2010-05-15/detectstacksetdrift.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/DetectStackSetDrift)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/detectstacksetdrift.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DetectStackResourceDrift
 

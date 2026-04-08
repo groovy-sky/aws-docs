@@ -626,7 +626,7 @@ A widget of type `text` can have one or two parameters in the `properties` secti
 and the `transparent` field is optional.
 
 For more information about the style of markdown supported in CloudWatch text widgets, see
-[Using Markdown in the Console](https://docs.aws.amazon.com/general/latest/gr/aws-markdown.html).
+[Using Markdown in the Console](../../../../general/general/latest/gr/aws-markdown.md).
 
 **markdown**
 
@@ -1134,7 +1134,7 @@ In a search expression using double-quotes for an exact match, each double-quote
 
 For more information about Metrics Insights query syntax,
 see
-[Metrics Insights query components and syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch-metrics-insights-querylanguage.html).
+[Metrics Insights query components and syntax](../../../../services/amazoncloudwatch/latest/monitoring/cloudwatch-metrics-insights-querylanguage.md).
 
 For more information about math expressions or search expressions, see
 [Using Metric Math](../../../../services/amazoncloudwatch/latest/monitoring/using-metric-math.md) or [Using Search Expressions in Graphs](../../../../services/amazoncloudwatch/latest/monitoring/using-search-expressions.md) in the Amazon CloudWatch User Guide.
@@ -1759,10 +1759,10 @@ For example, the following JSON creates a table displaying the minimum and maxim
 A widget of type
 `explorer` represents a metrics explorer widget. For more information,
 see [Use Metrics Explorer to Monitor Resources by Their \
-Tags and Properties](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Metrics-Explorer.html)
+Tags and Properties](../../../../services/amazoncloudwatch/latest/monitoring/cloudwatch-metrics-explorer.md)
 
 You can also add metrics explorer widgets to a dashboard using CloudFormation. For
-more information, see [AWS::CloudWatch::Dashboard](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-dashboard.html).
+more information, see [AWS::CloudWatch::Dashboard](../../../../services/cloudformation/latest/userguide/aws-resource-cloudwatch-dashboard.md).
 
 This widget type can have the following fields within the widget `properties`:
 
@@ -2270,7 +2270,7 @@ currently in ALARM or INSUFFICIENT\_DATA state:
 }
 ```
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Tag
 

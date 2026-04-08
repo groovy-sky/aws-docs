@@ -56,7 +56,7 @@ Required: No
 
 The configuration for test traffic routing rules used during blue/green deployments with Amazon ECS Service Connect. This allows you to route a portion of traffic to the new service revision of your service for testing before shifting all production traffic.
 
-Type: [ServiceConnectTestTrafficRules](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ServiceConnectTestTrafficRules.html) object
+Type: [ServiceConnectTestTrafficRules](api-serviceconnecttesttrafficrules.md) object
 
 Required: No
 
@@ -64,13 +64,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/ServiceConnectClientAlias)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/serviceconnectclientalias.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/ServiceConnectClientAlias)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/serviceconnectclientalias.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/ServiceConnectClientAlias)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/serviceconnectclientalias.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ServiceConnectAccessLogConfiguration
 

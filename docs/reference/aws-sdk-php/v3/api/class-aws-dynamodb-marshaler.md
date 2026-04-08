@@ -7,30 +7,30 @@ Menu
 
 Marshals and unmarshals JSON documents and PHP arrays into DynamoDB items.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html\#toc)
+### Table of Contents  [header link](class-aws-dynamodb-marshaler-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html\#toc-methods)
+#### Methods  [header link](class-aws-dynamodb-marshaler-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html#method___construct)
-: mixed Instantiates a DynamoDB Marshaler.[binary()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html#method_binary)
-: [BinaryValue](class-aws-dynamodb-binaryvalue.md)Creates a special object to represent a DynamoDB binary (B) value.[marshalItem()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html#method_marshalItem)
-: array<string\|int, mixed> Marshal a native PHP array of data to a DynamoDB item.[marshalJson()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html#method_marshalJson)
-: array<string\|int, mixed> Marshal a JSON document from a string to a DynamoDB item.[marshalValue()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html#method_marshalValue)
-: array<string\|int, mixed> Marshal a native PHP value into a DynamoDB attribute value.[number()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html#method_number)
-: [NumberValue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.NumberValue.html)Creates a special object to represent a DynamoDB number (N) value.[set()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html#method_set)
-: [SetValue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SetValue.html)Creates a special object to represent a DynamoDB set (SS/NS/BS) value.[unmarshalItem()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html#method_unmarshalItem)
+[\_\_construct()](class-aws-dynamodb-marshaler-method-construct.md)
+: mixed Instantiates a DynamoDB Marshaler.[binary()](class-aws-dynamodb-marshaler-method-binary.md)
+: [BinaryValue](class-aws-dynamodb-binaryvalue.md)Creates a special object to represent a DynamoDB binary (B) value.[marshalItem()](class-aws-dynamodb-marshaler-method-marshalitem.md)
+: array<string\|int, mixed> Marshal a native PHP array of data to a DynamoDB item.[marshalJson()](class-aws-dynamodb-marshaler-method-marshaljson.md)
+: array<string\|int, mixed> Marshal a JSON document from a string to a DynamoDB item.[marshalValue()](class-aws-dynamodb-marshaler-method-marshalvalue.md)
+: array<string\|int, mixed> Marshal a native PHP value into a DynamoDB attribute value.[number()](class-aws-dynamodb-marshaler-method-number.md)
+: [NumberValue](class-aws-dynamodb-numbervalue.md)Creates a special object to represent a DynamoDB number (N) value.[set()](class-aws-dynamodb-marshaler-method-set.md)
+: [SetValue](class-aws-dynamodb-setvalue.md)Creates a special object to represent a DynamoDB set (SS/NS/BS) value.[unmarshalItem()](class-aws-dynamodb-marshaler-method-unmarshalitem.md)
 : array<string\|int, mixed>\|stdClassUnmarshal an item from a DynamoDB operation result into a native PHP
 array. If you set $mapAsObject to true, then a stdClass value will be
-returned instead.[unmarshalJson()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html#method_unmarshalJson)
+returned instead.[unmarshalJson()](class-aws-dynamodb-marshaler-method-unmarshaljson.md)
 : string Unmarshal a document (item) from a DynamoDB operation result into a JSON
-document string.[unmarshalValue()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html#method_unmarshalValue)
+document string.[unmarshalValue()](class-aws-dynamodb-marshaler-method-unmarshalvalue.md)
 : mixed Unmarshal a value from a DynamoDB operation result into a native PHP
 value. Will return a scalar, array, or (if you set $mapAsObject to true)
 stdClass value.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html\#methods)
+### Methods  [header link](class-aws-dynamodb-marshaler-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-dynamodb-marshaler-method-construct.md)
 
 Instantiates a DynamoDB Marshaler.
 
@@ -55,7 +55,7 @@ $options
 
 Marshaler options
 
-#### binary()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html\#method_binary)
+#### binary()  [header link](class-aws-dynamodb-marshaler-method-binary.md)
 
 Creates a special object to represent a DynamoDB binary (B) value.
 
@@ -72,7 +72,7 @@ $value
 
 A binary value compatible with Guzzle streams.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html\#method_binary\#tags)
+##### Tags  [header link](class-aws-dynamodb-marshaler-method-binary-tags.md)
 
 seeStream::factory
 
@@ -80,7 +80,7 @@ seeStream::factory
 
 [BinaryValue](class-aws-dynamodb-binaryvalue.md)
 
-#### marshalItem()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html\#method_marshalItem)
+#### marshalItem()  [header link](class-aws-dynamodb-marshaler-method-marshalitem.md)
 
 Marshal a native PHP array of data to a DynamoDB item.
 
@@ -105,7 +105,7 @@ array<string\|int, mixed>
 
 Item formatted for DynamoDB.
 
-#### marshalJson()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html\#method_marshalJson)
+#### marshalJson()  [header link](class-aws-dynamodb-marshaler-method-marshaljson.md)
 
 Marshal a JSON document from a string to a DynamoDB item.
 
@@ -123,7 +123,7 @@ $json
 
 A valid JSON document.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html\#method_marshalJson\#tags)
+##### Tags  [header link](class-aws-dynamodb-marshaler-method-marshaljson-tags.md)
 
 throwsInvalidArgumentException
 
@@ -136,7 +136,7 @@ array<string\|int, mixed>
 
 Item formatted for DynamoDB.
 
-#### marshalValue()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html\#method_marshalValue)
+#### marshalValue()  [header link](class-aws-dynamodb-marshaler-method-marshalvalue.md)
 
 Marshal a native PHP value into a DynamoDB attribute value.
 
@@ -154,7 +154,7 @@ $value
 
 A scalar, array, or `stdClass` value.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html\#method_marshalValue\#tags)
+##### Tags  [header link](class-aws-dynamodb-marshaler-method-marshalvalue-tags.md)
 
 throwsUnexpectedValueException
 
@@ -167,7 +167,7 @@ array<string\|int, mixed>
 
 Attribute formatted for DynamoDB.
 
-#### number()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html\#method_number)
+#### number()  [header link](class-aws-dynamodb-marshaler-method-number.md)
 
 Creates a special object to represent a DynamoDB number (N) value.
 
@@ -186,9 +186,9 @@ A number value.
 
 ##### Return values
 
-[NumberValue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.NumberValue.html)
+[NumberValue](class-aws-dynamodb-numbervalue.md)
 
-#### set()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html\#method_set)
+#### set()  [header link](class-aws-dynamodb-marshaler-method-set.md)
 
 Creates a special object to represent a DynamoDB set (SS/NS/BS) value.
 
@@ -207,9 +207,9 @@ The values of the set.
 
 ##### Return values
 
-[SetValue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SetValue.html)
+[SetValue](class-aws-dynamodb-setvalue.md)
 
-#### unmarshalItem()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html\#method_unmarshalItem)
+#### unmarshalItem()  [header link](class-aws-dynamodb-marshaler-method-unmarshalitem.md)
 
 Unmarshal an item from a DynamoDB operation result into a native PHP
 array. If you set $mapAsObject to true, then a stdClass value will be
@@ -236,7 +236,7 @@ Whether maps should be represented as stdClass.
 
 array<string\|int, mixed>\|stdClass
 
-#### unmarshalJson()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html\#method_unmarshalJson)
+#### unmarshalJson()  [header link](class-aws-dynamodb-marshaler-method-unmarshaljson.md)
 
 Unmarshal a document (item) from a DynamoDB operation result into a JSON
 document string.
@@ -262,7 +262,7 @@ Flags to use with `json_encode()`.
 
 string
 
-#### unmarshalValue()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html\#method_unmarshalValue)
+#### unmarshalValue()  [header link](class-aws-dynamodb-marshaler-method-unmarshalvalue.md)
 
 Unmarshal a value from a DynamoDB operation result into a native PHP
 value. Will return a scalar, array, or (if you set $mapAsObject to true)
@@ -285,7 +285,7 @@ $mapAsObject
 
 Whether maps should be represented as stdClass.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html\#method_unmarshalValue\#tags)
+##### Tags  [header link](class-aws-dynamodb-marshaler-method-unmarshalvalue-tags.md)
 
 throwsUnexpectedValueException
 <\-\- modeled\_exceptions -->
@@ -295,17 +295,17 @@ throwsUnexpectedValueException
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html#toc-methods)
+  - [Methods](class-aws-dynamodb-marshaler-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html#method___construct)
-  - [binary()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html#method_binary)
-  - [marshalItem()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html#method_marshalItem)
-  - [marshalJson()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html#method_marshalJson)
-  - [marshalValue()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html#method_marshalValue)
-  - [number()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html#method_number)
-  - [set()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html#method_set)
-  - [unmarshalItem()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html#method_unmarshalItem)
-  - [unmarshalJson()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html#method_unmarshalJson)
-  - [unmarshalValue()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html#method_unmarshalValue)
+  - [\_\_construct()](class-aws-dynamodb-marshaler-method-construct.md)
+  - [binary()](class-aws-dynamodb-marshaler-method-binary.md)
+  - [marshalItem()](class-aws-dynamodb-marshaler-method-marshalitem.md)
+  - [marshalJson()](class-aws-dynamodb-marshaler-method-marshaljson.md)
+  - [marshalValue()](class-aws-dynamodb-marshaler-method-marshalvalue.md)
+  - [number()](class-aws-dynamodb-marshaler-method-number.md)
+  - [set()](class-aws-dynamodb-marshaler-method-set.md)
+  - [unmarshalItem()](class-aws-dynamodb-marshaler-method-unmarshalitem.md)
+  - [unmarshalJson()](class-aws-dynamodb-marshaler-method-unmarshaljson.md)
+  - [unmarshalValue()](class-aws-dynamodb-marshaler-method-unmarshalvalue.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html#top)
+[Back To Top](class-aws-dynamodb-marshaler-top.md)

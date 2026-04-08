@@ -4,15 +4,15 @@ Menu
 
 ## EKSAuth
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.eksauth.html\#toc)
+### Table of Contents  [header link](namespace-aws-eksauth-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.eksauth.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-eksauth-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.eksauth.exception.html)
+[Exception](namespace-aws-eksauth-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.eksauth.html\#toc-classes)
+#### Classes  [header link](namespace-aws-eksauth-toc-classes.md)
 
-[EKSAuthClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EKSAuth.EKSAuthClient.html)This client is used to interact with the **Amazon EKS Auth** service.
+[EKSAuthClient](class-aws-eksauth-eksauthclient.md)This client is used to interact with the **Amazon EKS Auth** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.eksauth.html#toc-classes)
+  - [Classes](namespace-aws-eksauth-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.eksauth.html#top)
+[Back To Top](namespace-aws-eksauth-top.md)

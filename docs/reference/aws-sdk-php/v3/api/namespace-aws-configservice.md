@@ -4,15 +4,15 @@ Menu
 
 ## ConfigService
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.configservice.html\#toc)
+### Table of Contents  [header link](namespace-aws-configservice-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.configservice.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-configservice-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.configservice.exception.html)
+[Exception](namespace-aws-configservice-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.configservice.html\#toc-classes)
+#### Classes  [header link](namespace-aws-configservice-toc-classes.md)
 
-[ConfigServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConfigService.ConfigServiceClient.html)This client is used to interact with AWS Config.
+[ConfigServiceClient](class-aws-configservice-configserviceclient.md)This client is used to interact with AWS Config.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.configservice.html#toc-classes)
+  - [Classes](namespace-aws-configservice-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.configservice.html#top)
+[Back To Top](namespace-aws-configservice-top.md)

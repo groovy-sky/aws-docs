@@ -91,7 +91,7 @@ The following data is returned in JSON format by the service.
 
 The list of import batches that match the request filters.
 
-Type: Array of [ImportBatch](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ImportBatch.html) objects
+Type: Array of [ImportBatch](api-importbatch.md) objects
 
 **[importId](#API_DescribeImportTaskBatches_ResponseSyntax)**
 
@@ -203,27 +203,27 @@ HTTP/1.1 200 OK
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/logs-2014-03-28/DescribeImportTaskBatches)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/logs-2014-03-28/describeimporttaskbatches.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/logs-2014-03-28/DescribeImportTaskBatches)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/logs-2014-03-28/describeimporttaskbatches.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/DescribeImportTaskBatches)
+- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/describeimporttaskbatches.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/logs-2014-03-28/DescribeImportTaskBatches)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/logs-2014-03-28/describeimporttaskbatches.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/DescribeImportTaskBatches)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/describeimporttaskbatches.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/logs-2014-03-28/DescribeImportTaskBatches)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/logs-2014-03-28/describeimporttaskbatches.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/logs-2014-03-28/DescribeImportTaskBatches)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/logs-2014-03-28/describeimporttaskbatches.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/logs-2014-03-28/DescribeImportTaskBatches)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/logs-2014-03-28/describeimporttaskbatches.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/logs-2014-03-28/DescribeImportTaskBatches)
+- [AWS SDK for Python](../../../../services/goto/boto3/logs-2014-03-28/describeimporttaskbatches.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/logs-2014-03-28/DescribeImportTaskBatches)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/describeimporttaskbatches.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DescribeFieldIndexes
 

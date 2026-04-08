@@ -4,15 +4,15 @@ Menu
 
 ## IoTFleetWise
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotfleetwise.html\#toc)
+### Table of Contents  [header link](namespace-aws-iotfleetwise-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotfleetwise.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-iotfleetwise-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotfleetwise.exception.html)
+[Exception](namespace-aws-iotfleetwise-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotfleetwise.html\#toc-classes)
+#### Classes  [header link](namespace-aws-iotfleetwise-toc-classes.md)
 
-[IoTFleetWiseClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTFleetWise.IoTFleetWiseClient.html)This client is used to interact with the **AWS IoT FleetWise** service.
+[IoTFleetWiseClient](class-aws-iotfleetwise-iotfleetwiseclient.md)This client is used to interact with the **AWS IoT FleetWise** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotfleetwise.html#toc-classes)
+  - [Classes](namespace-aws-iotfleetwise-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotfleetwise.html#top)
+[Back To Top](namespace-aws-iotfleetwise-top.md)

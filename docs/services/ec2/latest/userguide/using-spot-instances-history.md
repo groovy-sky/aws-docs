@@ -37,7 +37,7 @@ history.
 
 The following screenshot shows a price comparison for different instance types.
 
-![The Spot Instance pricing history tool in the Amazon EC2 console.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/spot-instance-pricing-history.png)
+![The Spot Instance pricing history tool in the Amazon EC2 console.](../../../images/awsec2/latest/userguide/images/spot-instance-pricing-history-png.md)
 
 5. Hover (move your pointer) over the graph to display the prices at specific times in the
     selected date range. The prices are displayed in the information blocks above

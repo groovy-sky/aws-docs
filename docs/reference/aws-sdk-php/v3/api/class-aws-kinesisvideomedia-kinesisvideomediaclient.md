@@ -17,13 +17,13 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-09-30**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-video-media-2017-09-30.html)
+- [**2017-09-30**](api-kinesis-video-media-2017-09-30.md)
 
-  - [GetMedia](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-video-media-2017-09-30.html#getmedia)
+  - [GetMedia](api-kinesis-video-media-2017-09-30-getmedia.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideoMedia.KinesisVideoMediaClient.html\#toc)
+### Table of Contents  [header link](class-aws-kinesisvideomedia-kinesisvideomediaclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideoMedia.KinesisVideoMediaClient.html\#toc-methods)
+#### Methods  [header link](class-aws-kinesisvideomedia-kinesisvideomediaclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -54,7 +54,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideoMedia.KinesisVideoMediaClient.html\#methods)
+### Methods  [header link](class-aws-kinesisvideomedia-kinesisvideomediaclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -521,7 +521,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideoMedia.KinesisVideoMediaClient.html#toc-methods)
+  - [Methods](class-aws-kinesisvideomedia-kinesisvideomediaclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -548,4 +548,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideoMedia.KinesisVideoMediaClient.html#top)
+[Back To Top](class-aws-kinesisvideomedia-kinesisvideomediaclient-top.md)

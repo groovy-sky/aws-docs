@@ -17,44 +17,44 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2019-12-02**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html)
+- [**2019-12-02**](api-route53-recovery-readiness-2019-12-02.md)
 
-  - [CreateCell](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#createcell)
-  - [CreateCrossAccountAuthorization](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#createcrossaccountauthorization)
-  - [CreateReadinessCheck](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#createreadinesscheck)
-  - [CreateRecoveryGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#createrecoverygroup)
-  - [CreateResourceSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#createresourceset)
-  - [DeleteCell](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#deletecell)
-  - [DeleteCrossAccountAuthorization](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#deletecrossaccountauthorization)
-  - [DeleteReadinessCheck](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#deletereadinesscheck)
-  - [DeleteRecoveryGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#deleterecoverygroup)
-  - [DeleteResourceSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#deleteresourceset)
-  - [GetArchitectureRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#getarchitecturerecommendations)
-  - [GetCell](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#getcell)
-  - [GetCellReadinessSummary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#getcellreadinesssummary)
-  - [GetReadinessCheck](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#getreadinesscheck)
-  - [GetReadinessCheckResourceStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#getreadinesscheckresourcestatus)
-  - [GetReadinessCheckStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#getreadinesscheckstatus)
-  - [GetRecoveryGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#getrecoverygroup)
-  - [GetRecoveryGroupReadinessSummary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#getrecoverygroupreadinesssummary)
-  - [GetResourceSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#getresourceset)
-  - [ListCells](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#listcells)
-  - [ListCrossAccountAuthorizations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#listcrossaccountauthorizations)
-  - [ListReadinessChecks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#listreadinesschecks)
-  - [ListRecoveryGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#listrecoverygroups)
-  - [ListResourceSets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#listresourcesets)
-  - [ListRules](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#listrules)
-  - [ListTagsForResources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#listtagsforresources)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#untagresource)
-  - [UpdateCell](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#updatecell)
-  - [UpdateReadinessCheck](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#updatereadinesscheck)
-  - [UpdateRecoveryGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#updaterecoverygroup)
-  - [UpdateResourceSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-readiness-2019-12-02.html#updateresourceset)
+  - [CreateCell](api-route53-recovery-readiness-2019-12-02-createcell.md)
+  - [CreateCrossAccountAuthorization](api-route53-recovery-readiness-2019-12-02-createcrossaccountauthorization.md)
+  - [CreateReadinessCheck](api-route53-recovery-readiness-2019-12-02-createreadinesscheck.md)
+  - [CreateRecoveryGroup](api-route53-recovery-readiness-2019-12-02-createrecoverygroup.md)
+  - [CreateResourceSet](api-route53-recovery-readiness-2019-12-02-createresourceset.md)
+  - [DeleteCell](api-route53-recovery-readiness-2019-12-02-deletecell.md)
+  - [DeleteCrossAccountAuthorization](api-route53-recovery-readiness-2019-12-02-deletecrossaccountauthorization.md)
+  - [DeleteReadinessCheck](api-route53-recovery-readiness-2019-12-02-deletereadinesscheck.md)
+  - [DeleteRecoveryGroup](api-route53-recovery-readiness-2019-12-02-deleterecoverygroup.md)
+  - [DeleteResourceSet](api-route53-recovery-readiness-2019-12-02-deleteresourceset.md)
+  - [GetArchitectureRecommendations](api-route53-recovery-readiness-2019-12-02-getarchitecturerecommendations.md)
+  - [GetCell](api-route53-recovery-readiness-2019-12-02-getcell.md)
+  - [GetCellReadinessSummary](api-route53-recovery-readiness-2019-12-02-getcellreadinesssummary.md)
+  - [GetReadinessCheck](api-route53-recovery-readiness-2019-12-02-getreadinesscheck.md)
+  - [GetReadinessCheckResourceStatus](api-route53-recovery-readiness-2019-12-02-getreadinesscheckresourcestatus.md)
+  - [GetReadinessCheckStatus](api-route53-recovery-readiness-2019-12-02-getreadinesscheckstatus.md)
+  - [GetRecoveryGroup](api-route53-recovery-readiness-2019-12-02-getrecoverygroup.md)
+  - [GetRecoveryGroupReadinessSummary](api-route53-recovery-readiness-2019-12-02-getrecoverygroupreadinesssummary.md)
+  - [GetResourceSet](api-route53-recovery-readiness-2019-12-02-getresourceset.md)
+  - [ListCells](api-route53-recovery-readiness-2019-12-02-listcells.md)
+  - [ListCrossAccountAuthorizations](api-route53-recovery-readiness-2019-12-02-listcrossaccountauthorizations.md)
+  - [ListReadinessChecks](api-route53-recovery-readiness-2019-12-02-listreadinesschecks.md)
+  - [ListRecoveryGroups](api-route53-recovery-readiness-2019-12-02-listrecoverygroups.md)
+  - [ListResourceSets](api-route53-recovery-readiness-2019-12-02-listresourcesets.md)
+  - [ListRules](api-route53-recovery-readiness-2019-12-02-listrules.md)
+  - [ListTagsForResources](api-route53-recovery-readiness-2019-12-02-listtagsforresources.md)
+  - [TagResource](api-route53-recovery-readiness-2019-12-02-tagresource.md)
+  - [UntagResource](api-route53-recovery-readiness-2019-12-02-untagresource.md)
+  - [UpdateCell](api-route53-recovery-readiness-2019-12-02-updatecell.md)
+  - [UpdateReadinessCheck](api-route53-recovery-readiness-2019-12-02-updatereadinesscheck.md)
+  - [UpdateRecoveryGroup](api-route53-recovery-readiness-2019-12-02-updaterecoverygroup.md)
+  - [UpdateResourceSet](api-route53-recovery-readiness-2019-12-02-updateresourceset.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryReadiness.Route53RecoveryReadinessClient.html\#toc)
+### Table of Contents  [header link](class-aws-route53recoveryreadiness-route53recoveryreadinessclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryReadiness.Route53RecoveryReadinessClient.html\#toc-methods)
+#### Methods  [header link](class-aws-route53recoveryreadiness-route53recoveryreadinessclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -85,7 +85,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryReadiness.Route53RecoveryReadinessClient.html\#methods)
+### Methods  [header link](class-aws-route53recoveryreadiness-route53recoveryreadinessclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -552,7 +552,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryReadiness.Route53RecoveryReadinessClient.html#toc-methods)
+  - [Methods](class-aws-route53recoveryreadiness-route53recoveryreadinessclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -579,4 +579,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryReadiness.Route53RecoveryReadinessClient.html#top)
+[Back To Top](class-aws-route53recoveryreadiness-route53recoveryreadinessclient-top.md)

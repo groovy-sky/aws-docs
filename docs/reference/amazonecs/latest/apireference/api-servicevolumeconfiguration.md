@@ -22,7 +22,7 @@ your behalf. These settings are used to create each Amazon EBS volume, with one 
 created for each task in the service. The Amazon EBS volumes are visible in your account
 in the Amazon EC2 console once they are created.
 
-Type: [ServiceManagedEBSVolumeConfiguration](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ServiceManagedEBSVolumeConfiguration.html) object
+Type: [ServiceManagedEBSVolumeConfiguration](api-servicemanagedebsvolumeconfiguration.md) object
 
 Required: No
 
@@ -30,13 +30,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/ServiceVolumeConfiguration)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/servicevolumeconfiguration.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/ServiceVolumeConfiguration)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/servicevolumeconfiguration.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/ServiceVolumeConfiguration)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/servicevolumeconfiguration.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ServiceRevisionSummary
 

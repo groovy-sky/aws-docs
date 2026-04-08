@@ -3,7 +3,7 @@
 Associates a Resolver rule with a VPC. When you associate a rule with a VPC, Resolver forwards all DNS queries
 for the domain name that is specified in the rule and that originate in the VPC. The queries are forwarded to the
 IP addresses for the DNS resolvers that are specified in the rule. For more information about rules, see
-[CreateResolverRule](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_CreateResolverRule.html).
+[CreateResolverRule](api-route53resolver-createresolverrule.md).
 
 ## Request Syntax
 
@@ -18,7 +18,7 @@ IP addresses for the DNS resolvers that are specified in the rule. For more info
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/Route53/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -39,7 +39,7 @@ Required: No
 **[ResolverRuleId](#API_route53resolver_AssociateResolverRule_RequestSyntax)**
 
 The ID of the Resolver rule that you want to associate with the VPC. To list the existing Resolver rules, use
-[ListResolverRules](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListResolverRules.html).
+[ListResolverRules](api-route53resolver-listresolverrules.md).
 
 Type: String
 
@@ -83,7 +83,7 @@ The following data is returned in JSON format by the service.
 
 Information about the `AssociateResolverRule` request, including the status of the request.
 
-Type: [ResolverRuleAssociation](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ResolverRuleAssociation.html) object
+Type: [ResolverRuleAssociation](api-route53resolver-resolverruleassociation.md) object
 
 ## Errors
 
@@ -213,27 +213,27 @@ Connection: keep-alive
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/route53resolver-2018-04-01/AssociateResolverRule)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53resolver-2018-04-01/associateresolverrule.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/route53resolver-2018-04-01/AssociateResolverRule)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53resolver-2018-04-01/associateresolverrule.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53resolver-2018-04-01/AssociateResolverRule)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53resolver-2018-04-01/associateresolverrule.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/route53resolver-2018-04-01/AssociateResolverRule)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53resolver-2018-04-01/associateresolverrule.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53resolver-2018-04-01/AssociateResolverRule)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53resolver-2018-04-01/associateresolverrule.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/route53resolver-2018-04-01/AssociateResolverRule)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53resolver-2018-04-01/associateresolverrule.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/route53resolver-2018-04-01/AssociateResolverRule)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53resolver-2018-04-01/associateresolverrule.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/route53resolver-2018-04-01/AssociateResolverRule)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53resolver-2018-04-01/associateresolverrule.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/route53resolver-2018-04-01/AssociateResolverRule)
+- [AWS SDK for Python](../../../../services/goto/boto3/route53resolver-2018-04-01/associateresolverrule.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53resolver-2018-04-01/AssociateResolverRule)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53resolver-2018-04-01/associateresolverrule.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AssociateResolverQueryLogConfig
 

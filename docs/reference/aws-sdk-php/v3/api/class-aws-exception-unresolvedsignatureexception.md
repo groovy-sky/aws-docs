@@ -5,13 +5,13 @@ Menu
 
 ## UnresolvedSignatureException     extends RuntimeException   in package    - [Aws](package-aws.md)       implements  [MonitoringEventsInterface](class-aws-monitoringeventsinterface.md)  Uses  [HasMonitoringEventsTrait](class-aws-hasmonitoringeventstrait.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.UnresolvedSignatureException.html\#toc)
+### Table of Contents  [header link](class-aws-exception-unresolvedsignatureexception-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.UnresolvedSignatureException.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-exception-unresolvedsignatureexception-toc-interfaces.md)
 
 [MonitoringEventsInterface](class-aws-monitoringeventsinterface.md)Interface for adding and retrieving client-side monitoring events
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.UnresolvedSignatureException.html\#toc-methods)
+#### Methods  [header link](class-aws-exception-unresolvedsignatureexception-toc-methods.md)
 
 [appendMonitoringEvent()](class-aws-hasmonitoringeventstrait.md#method_appendMonitoringEvent)
 : mixed Append a client-side monitoring event to this object's event list[getMonitoringEvents()](class-aws-hasmonitoringeventstrait.md#method_getMonitoringEvents)
@@ -19,7 +19,7 @@ Menu
 represented as an associative array within the returned array.[prependMonitoringEvent()](class-aws-hasmonitoringeventstrait.md#method_prependMonitoringEvent)
 : mixed Prepend a client-side monitoring event to this object's event list
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.UnresolvedSignatureException.html\#methods)
+### Methods  [header link](class-aws-exception-unresolvedsignatureexception-methods.md)
 
 #### appendMonitoringEvent()  [header link](class-aws-hasmonitoringeventstrait.md\#method_appendMonitoringEvent)
 
@@ -66,10 +66,10 @@ $event
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.UnresolvedSignatureException.html#toc-methods)
+  - [Methods](class-aws-exception-unresolvedsignatureexception-toc-methods.md)
 - Methods
   - [appendMonitoringEvent()](class-aws-hasmonitoringeventstrait.md#method_appendMonitoringEvent)
   - [getMonitoringEvents()](class-aws-hasmonitoringeventstrait.md#method_getMonitoringEvents)
   - [prependMonitoringEvent()](class-aws-hasmonitoringeventstrait.md#method_prependMonitoringEvent)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.UnresolvedSignatureException.html#top)
+[Back To Top](class-aws-exception-unresolvedsignatureexception-top.md)

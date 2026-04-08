@@ -4,29 +4,29 @@ Menu
 
 ## Crypto
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.crypto.html\#toc)
+### Table of Contents  [header link](namespace-aws-crypto-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.crypto.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-crypto-namespaces.md)
 
-[Cipher](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.crypto.cipher.html)
+[Cipher](namespace-aws-crypto-cipher.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.crypto.html\#toc-interfaces)
+#### Interfaces  [header link](namespace-aws-crypto-toc-interfaces.md)
 
-[AesStreamInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AesStreamInterface.html)Describes a data stream.[AesStreamInterfaceV2](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AesStreamInterfaceV2.html)Describes a data stream.[MaterialsProviderInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderInterface.html)[MaterialsProviderInterfaceV2](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderInterfaceV2.html)[MaterialsProviderInterfaceV3](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderInterfaceV3.html)[MetadataStrategyInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MetadataStrategyInterface.html)
+[AesStreamInterface](class-aws-crypto-aesstreaminterface.md)Describes a data stream.[AesStreamInterfaceV2](class-aws-crypto-aesstreaminterfacev2.md)Describes a data stream.[MaterialsProviderInterface](class-aws-crypto-materialsproviderinterface.md)[MaterialsProviderInterfaceV2](class-aws-crypto-materialsproviderinterfacev2.md)[MaterialsProviderInterfaceV3](class-aws-crypto-materialsproviderinterfacev3.md)[MetadataStrategyInterface](class-aws-crypto-metadatastrategyinterface.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.crypto.html\#toc-classes)
+#### Classes  [header link](namespace-aws-crypto-toc-classes.md)
 
-[AlgorithmConstants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmConstants.html)[KmsMaterialsProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProvider.html)Uses KMS to supply materials for encrypting and decrypting data.[KmsMaterialsProviderV2](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV2.html)Uses KMS to supply materials for encrypting and decrypting data. This
-V2 implementation should be used with the V2 encryption clients (i.e.[KmsMaterialsProviderV3](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.KmsMaterialsProviderV3.html)Uses KMS to supply materials for encrypting and decrypting data. This
-V2 implementation should be used with the V2 encryption clients (i.e.[MaterialsProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProvider.html)[MaterialsProviderV2](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV2.html)[MaterialsProviderV3](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV3.html)
+[AlgorithmConstants](class-aws-crypto-algorithmconstants.md)[KmsMaterialsProvider](class-aws-crypto-kmsmaterialsprovider.md)Uses KMS to supply materials for encrypting and decrypting data.[KmsMaterialsProviderV2](class-aws-crypto-kmsmaterialsproviderv2.md)Uses KMS to supply materials for encrypting and decrypting data. This
+V2 implementation should be used with the V2 encryption clients (i.e.[KmsMaterialsProviderV3](class-aws-crypto-kmsmaterialsproviderv3.md)Uses KMS to supply materials for encrypting and decrypting data. This
+V2 implementation should be used with the V2 encryption clients (i.e.[MaterialsProvider](class-aws-crypto-materialsprovider.md)[MaterialsProviderV2](class-aws-crypto-materialsproviderv2.md)[MaterialsProviderV3](class-aws-crypto-materialsproviderv3.md)
 
-#### Traits  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.crypto.html\#toc-traits)
+#### Traits  [header link](namespace-aws-crypto-toc-traits.md)
 
-[DecryptionTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.DecryptionTrait.html)[DecryptionTraitV2](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.DecryptionTraitV2.html)[DecryptionTraitV3](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.DecryptionTraitV3.html)[EncryptionTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.EncryptionTrait.html)[EncryptionTraitV2](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.EncryptionTraitV2.html)[EncryptionTraitV3](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.EncryptionTraitV3.html)
+[DecryptionTrait](class-aws-crypto-decryptiontrait.md)[DecryptionTraitV2](class-aws-crypto-decryptiontraitv2.md)[DecryptionTraitV3](class-aws-crypto-decryptiontraitv3.md)[EncryptionTrait](class-aws-crypto-encryptiontrait.md)[EncryptionTraitV2](class-aws-crypto-encryptiontraitv2.md)[EncryptionTraitV3](class-aws-crypto-encryptiontraitv3.md)
 
-#### Enums  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.crypto.html\#toc-enums)
+#### Enums  [header link](namespace-aws-crypto-toc-enums.md)
 
-[AlgorithmSuite](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.AlgorithmSuite.html)
+[AlgorithmSuite](class-aws-crypto-algorithmsuite.md)
 
 ```
 
@@ -37,9 +37,9 @@ V2 implementation should be used with the V2 encryption clients (i.e.[MaterialsP
 **On this page**
 
 - Table Of Contents
-  - [Interfaces](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.crypto.html#toc-interfaces)
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.crypto.html#toc-classes)
-  - [Traits](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.crypto.html#toc-traits)
-  - [Enums](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.crypto.html#toc-enums)
+  - [Interfaces](namespace-aws-crypto-toc-interfaces.md)
+  - [Classes](namespace-aws-crypto-toc-classes.md)
+  - [Traits](namespace-aws-crypto-toc-traits.md)
+  - [Enums](namespace-aws-crypto-toc-enums.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.crypto.html#top)
+[Back To Top](namespace-aws-crypto-top.md)

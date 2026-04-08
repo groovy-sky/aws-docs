@@ -17,20 +17,20 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2015-05-28**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-data.iot-2015-05-28.html)
+- [**2015-05-28**](api-data-iot-2015-05-28.md)
 
-  - [DeleteConnection](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-data.iot-2015-05-28.html#deleteconnection)
-  - [DeleteThingShadow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-data.iot-2015-05-28.html#deletethingshadow)
-  - [GetRetainedMessage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-data.iot-2015-05-28.html#getretainedmessage)
-  - [GetThingShadow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-data.iot-2015-05-28.html#getthingshadow)
-  - [ListNamedShadowsForThing](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-data.iot-2015-05-28.html#listnamedshadowsforthing)
-  - [ListRetainedMessages](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-data.iot-2015-05-28.html#listretainedmessages)
-  - [Publish](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-data.iot-2015-05-28.html#publish)
-  - [UpdateThingShadow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-data.iot-2015-05-28.html#updatethingshadow)
+  - [DeleteConnection](api-data-iot-2015-05-28-deleteconnection.md)
+  - [DeleteThingShadow](api-data-iot-2015-05-28-deletethingshadow.md)
+  - [GetRetainedMessage](api-data-iot-2015-05-28-getretainedmessage.md)
+  - [GetThingShadow](api-data-iot-2015-05-28-getthingshadow.md)
+  - [ListNamedShadowsForThing](api-data-iot-2015-05-28-listnamedshadowsforthing.md)
+  - [ListRetainedMessages](api-data-iot-2015-05-28-listretainedmessages.md)
+  - [Publish](api-data-iot-2015-05-28-publish.md)
+  - [UpdateThingShadow](api-data-iot-2015-05-28-updatethingshadow.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IotDataPlane.IotDataPlaneClient.html\#toc)
+### Table of Contents  [header link](class-aws-iotdataplane-iotdataplaneclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IotDataPlane.IotDataPlaneClient.html\#toc-methods)
+#### Methods  [header link](class-aws-iotdataplane-iotdataplaneclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -61,7 +61,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IotDataPlane.IotDataPlaneClient.html\#methods)
+### Methods  [header link](class-aws-iotdataplane-iotdataplaneclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -528,7 +528,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IotDataPlane.IotDataPlaneClient.html#toc-methods)
+  - [Methods](class-aws-iotdataplane-iotdataplaneclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -555,4 +555,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IotDataPlane.IotDataPlaneClient.html#top)
+[Back To Top](class-aws-iotdataplane-iotdataplaneclient-top.md)

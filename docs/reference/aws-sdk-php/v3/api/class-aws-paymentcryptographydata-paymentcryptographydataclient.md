@@ -17,26 +17,26 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2022-02-03**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-data-2022-02-03.html)
+- [**2022-02-03**](api-payment-cryptography-data-2022-02-03.md)
 
-  - [DecryptData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-data-2022-02-03.html#decryptdata)
-  - [EncryptData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-data-2022-02-03.html#encryptdata)
-  - [GenerateAs2805KekValidation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-data-2022-02-03.html#generateas2805kekvalidation)
-  - [GenerateCardValidationData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-data-2022-02-03.html#generatecardvalidationdata)
-  - [GenerateMac](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-data-2022-02-03.html#generatemac)
-  - [GenerateMacEmvPinChange](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-data-2022-02-03.html#generatemacemvpinchange)
-  - [GeneratePinData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-data-2022-02-03.html#generatepindata)
-  - [ReEncryptData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-data-2022-02-03.html#reencryptdata)
-  - [TranslateKeyMaterial](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-data-2022-02-03.html#translatekeymaterial)
-  - [TranslatePinData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-data-2022-02-03.html#translatepindata)
-  - [VerifyAuthRequestCryptogram](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-data-2022-02-03.html#verifyauthrequestcryptogram)
-  - [VerifyCardValidationData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-data-2022-02-03.html#verifycardvalidationdata)
-  - [VerifyMac](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-data-2022-02-03.html#verifymac)
-  - [VerifyPinData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-payment-cryptography-data-2022-02-03.html#verifypindata)
+  - [DecryptData](api-payment-cryptography-data-2022-02-03-decryptdata.md)
+  - [EncryptData](api-payment-cryptography-data-2022-02-03-encryptdata.md)
+  - [GenerateAs2805KekValidation](api-payment-cryptography-data-2022-02-03-generateas2805kekvalidation.md)
+  - [GenerateCardValidationData](api-payment-cryptography-data-2022-02-03-generatecardvalidationdata.md)
+  - [GenerateMac](api-payment-cryptography-data-2022-02-03-generatemac.md)
+  - [GenerateMacEmvPinChange](api-payment-cryptography-data-2022-02-03-generatemacemvpinchange.md)
+  - [GeneratePinData](api-payment-cryptography-data-2022-02-03-generatepindata.md)
+  - [ReEncryptData](api-payment-cryptography-data-2022-02-03-reencryptdata.md)
+  - [TranslateKeyMaterial](api-payment-cryptography-data-2022-02-03-translatekeymaterial.md)
+  - [TranslatePinData](api-payment-cryptography-data-2022-02-03-translatepindata.md)
+  - [VerifyAuthRequestCryptogram](api-payment-cryptography-data-2022-02-03-verifyauthrequestcryptogram.md)
+  - [VerifyCardValidationData](api-payment-cryptography-data-2022-02-03-verifycardvalidationdata.md)
+  - [VerifyMac](api-payment-cryptography-data-2022-02-03-verifymac.md)
+  - [VerifyPinData](api-payment-cryptography-data-2022-02-03-verifypindata.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PaymentCryptographyData.PaymentCryptographyDataClient.html\#toc)
+### Table of Contents  [header link](class-aws-paymentcryptographydata-paymentcryptographydataclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PaymentCryptographyData.PaymentCryptographyDataClient.html\#toc-methods)
+#### Methods  [header link](class-aws-paymentcryptographydata-paymentcryptographydataclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -67,7 +67,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PaymentCryptographyData.PaymentCryptographyDataClient.html\#methods)
+### Methods  [header link](class-aws-paymentcryptographydata-paymentcryptographydataclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -534,7 +534,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PaymentCryptographyData.PaymentCryptographyDataClient.html#toc-methods)
+  - [Methods](class-aws-paymentcryptographydata-paymentcryptographydataclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -561,4 +561,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PaymentCryptographyData.PaymentCryptographyDataClient.html#top)
+[Back To Top](class-aws-paymentcryptographydata-paymentcryptographydataclient-top.md)

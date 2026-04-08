@@ -17,31 +17,31 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2023-01-27**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-influxdb-2023-01-27.html)
+- [**2023-01-27**](api-timestream-influxdb-2023-01-27.md)
 
-  - [CreateDbCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-influxdb-2023-01-27.html#createdbcluster)
-  - [CreateDbInstance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-influxdb-2023-01-27.html#createdbinstance)
-  - [CreateDbParameterGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-influxdb-2023-01-27.html#createdbparametergroup)
-  - [DeleteDbCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-influxdb-2023-01-27.html#deletedbcluster)
-  - [DeleteDbInstance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-influxdb-2023-01-27.html#deletedbinstance)
-  - [GetDbCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-influxdb-2023-01-27.html#getdbcluster)
-  - [GetDbInstance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-influxdb-2023-01-27.html#getdbinstance)
-  - [GetDbParameterGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-influxdb-2023-01-27.html#getdbparametergroup)
-  - [ListDbClusters](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-influxdb-2023-01-27.html#listdbclusters)
-  - [ListDbInstances](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-influxdb-2023-01-27.html#listdbinstances)
-  - [ListDbInstancesForCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-influxdb-2023-01-27.html#listdbinstancesforcluster)
-  - [ListDbParameterGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-influxdb-2023-01-27.html#listdbparametergroups)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-influxdb-2023-01-27.html#listtagsforresource)
-  - [RebootDbCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-influxdb-2023-01-27.html#rebootdbcluster)
-  - [RebootDbInstance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-influxdb-2023-01-27.html#rebootdbinstance)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-influxdb-2023-01-27.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-influxdb-2023-01-27.html#untagresource)
-  - [UpdateDbCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-influxdb-2023-01-27.html#updatedbcluster)
-  - [UpdateDbInstance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-timestream-influxdb-2023-01-27.html#updatedbinstance)
+  - [CreateDbCluster](api-timestream-influxdb-2023-01-27-createdbcluster.md)
+  - [CreateDbInstance](api-timestream-influxdb-2023-01-27-createdbinstance.md)
+  - [CreateDbParameterGroup](api-timestream-influxdb-2023-01-27-createdbparametergroup.md)
+  - [DeleteDbCluster](api-timestream-influxdb-2023-01-27-deletedbcluster.md)
+  - [DeleteDbInstance](api-timestream-influxdb-2023-01-27-deletedbinstance.md)
+  - [GetDbCluster](api-timestream-influxdb-2023-01-27-getdbcluster.md)
+  - [GetDbInstance](api-timestream-influxdb-2023-01-27-getdbinstance.md)
+  - [GetDbParameterGroup](api-timestream-influxdb-2023-01-27-getdbparametergroup.md)
+  - [ListDbClusters](api-timestream-influxdb-2023-01-27-listdbclusters.md)
+  - [ListDbInstances](api-timestream-influxdb-2023-01-27-listdbinstances.md)
+  - [ListDbInstancesForCluster](api-timestream-influxdb-2023-01-27-listdbinstancesforcluster.md)
+  - [ListDbParameterGroups](api-timestream-influxdb-2023-01-27-listdbparametergroups.md)
+  - [ListTagsForResource](api-timestream-influxdb-2023-01-27-listtagsforresource.md)
+  - [RebootDbCluster](api-timestream-influxdb-2023-01-27-rebootdbcluster.md)
+  - [RebootDbInstance](api-timestream-influxdb-2023-01-27-rebootdbinstance.md)
+  - [TagResource](api-timestream-influxdb-2023-01-27-tagresource.md)
+  - [UntagResource](api-timestream-influxdb-2023-01-27-untagresource.md)
+  - [UpdateDbCluster](api-timestream-influxdb-2023-01-27-updatedbcluster.md)
+  - [UpdateDbInstance](api-timestream-influxdb-2023-01-27-updatedbinstance.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TimestreamInfluxDB.TimestreamInfluxDBClient.html\#toc)
+### Table of Contents  [header link](class-aws-timestreaminfluxdb-timestreaminfluxdbclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TimestreamInfluxDB.TimestreamInfluxDBClient.html\#toc-methods)
+#### Methods  [header link](class-aws-timestreaminfluxdb-timestreaminfluxdbclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -72,7 +72,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TimestreamInfluxDB.TimestreamInfluxDBClient.html\#methods)
+### Methods  [header link](class-aws-timestreaminfluxdb-timestreaminfluxdbclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -539,7 +539,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TimestreamInfluxDB.TimestreamInfluxDBClient.html#toc-methods)
+  - [Methods](class-aws-timestreaminfluxdb-timestreaminfluxdbclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -566,4 +566,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TimestreamInfluxDB.TimestreamInfluxDBClient.html#top)
+[Back To Top](class-aws-timestreaminfluxdb-timestreaminfluxdbclient-top.md)

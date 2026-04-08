@@ -17,24 +17,24 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2023-11-26**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-data-exports-2023-11-26.html)
+- [**2023-11-26**](api-bcm-data-exports-2023-11-26.md)
 
-  - [CreateExport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-data-exports-2023-11-26.html#createexport)
-  - [DeleteExport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-data-exports-2023-11-26.html#deleteexport)
-  - [GetExecution](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-data-exports-2023-11-26.html#getexecution)
-  - [GetExport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-data-exports-2023-11-26.html#getexport)
-  - [GetTable](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-data-exports-2023-11-26.html#gettable)
-  - [ListExecutions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-data-exports-2023-11-26.html#listexecutions)
-  - [ListExports](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-data-exports-2023-11-26.html#listexports)
-  - [ListTables](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-data-exports-2023-11-26.html#listtables)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-data-exports-2023-11-26.html#listtagsforresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-data-exports-2023-11-26.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-data-exports-2023-11-26.html#untagresource)
-  - [UpdateExport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bcm-data-exports-2023-11-26.html#updateexport)
+  - [CreateExport](api-bcm-data-exports-2023-11-26-createexport.md)
+  - [DeleteExport](api-bcm-data-exports-2023-11-26-deleteexport.md)
+  - [GetExecution](api-bcm-data-exports-2023-11-26-getexecution.md)
+  - [GetExport](api-bcm-data-exports-2023-11-26-getexport.md)
+  - [GetTable](api-bcm-data-exports-2023-11-26-gettable.md)
+  - [ListExecutions](api-bcm-data-exports-2023-11-26-listexecutions.md)
+  - [ListExports](api-bcm-data-exports-2023-11-26-listexports.md)
+  - [ListTables](api-bcm-data-exports-2023-11-26-listtables.md)
+  - [ListTagsForResource](api-bcm-data-exports-2023-11-26-listtagsforresource.md)
+  - [TagResource](api-bcm-data-exports-2023-11-26-tagresource.md)
+  - [UntagResource](api-bcm-data-exports-2023-11-26-untagresource.md)
+  - [UpdateExport](api-bcm-data-exports-2023-11-26-updateexport.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BCMDataExports.BCMDataExportsClient.html\#toc)
+### Table of Contents  [header link](class-aws-bcmdataexports-bcmdataexportsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BCMDataExports.BCMDataExportsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-bcmdataexports-bcmdataexportsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -65,7 +65,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BCMDataExports.BCMDataExportsClient.html\#methods)
+### Methods  [header link](class-aws-bcmdataexports-bcmdataexportsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -532,7 +532,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BCMDataExports.BCMDataExportsClient.html#toc-methods)
+  - [Methods](class-aws-bcmdataexports-bcmdataexportsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -559,4 +559,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BCMDataExports.BCMDataExportsClient.html#top)
+[Back To Top](class-aws-bcmdataexports-bcmdataexportsclient-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## SimSpaceWeaver
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.simspaceweaver.html\#toc)
+### Table of Contents  [header link](namespace-aws-simspaceweaver-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.simspaceweaver.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-simspaceweaver-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.simspaceweaver.exception.html)
+[Exception](namespace-aws-simspaceweaver-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.simspaceweaver.html\#toc-classes)
+#### Classes  [header link](namespace-aws-simspaceweaver-toc-classes.md)
 
-[SimSpaceWeaverClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SimSpaceWeaver.SimSpaceWeaverClient.html)This client is used to interact with the **AWS SimSpace Weaver** service.
+[SimSpaceWeaverClient](class-aws-simspaceweaver-simspaceweaverclient.md)This client is used to interact with the **AWS SimSpace Weaver** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.simspaceweaver.html#toc-classes)
+  - [Classes](namespace-aws-simspaceweaver-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.simspaceweaver.html#top)
+[Back To Top](namespace-aws-simspaceweaver-top.md)

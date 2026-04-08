@@ -53,46 +53,46 @@ using a php://temp stream buffer
 - For "unlink" only: Any option that can be passed to the DeleteObject
 operation
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#toc)
+### Table of Contents  [header link](class-aws-s3-streamwrapper-toc.md)
 
-#### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#toc-properties)
+#### Properties  [header link](class-aws-s3-streamwrapper-toc-properties.md)
 
-[$context](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#property_context)
+[$context](class-aws-s3-streamwrapper-property-context.md)
 : resource\|null
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-streamwrapper-toc-methods.md)
 
-[dir\_closedir()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_dir_closedir)
-: bool Close the directory listing handles[dir\_opendir()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_dir_opendir)
-: bool Support for opendir().[dir\_readdir()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_dir_readdir)
-: string This method is called in response to readdir()[dir\_rewinddir()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_dir_rewinddir)
-: bool This method is called in response to rewinddir()[mkdir()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_mkdir)
-: bool Support for mkdir().[register()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_register)
-: mixed Register the 's3://' stream wrapper[rename()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_rename)
+[dir\_closedir()](class-aws-s3-streamwrapper-method-dir-closedir.md)
+: bool Close the directory listing handles[dir\_opendir()](class-aws-s3-streamwrapper-method-dir-opendir.md)
+: bool Support for opendir().[dir\_readdir()](class-aws-s3-streamwrapper-method-dir-readdir.md)
+: string This method is called in response to readdir()[dir\_rewinddir()](class-aws-s3-streamwrapper-method-dir-rewinddir.md)
+: bool This method is called in response to rewinddir()[mkdir()](class-aws-s3-streamwrapper-method-mkdir.md)
+: bool Support for mkdir().[register()](class-aws-s3-streamwrapper-method-register.md)
+: mixed Register the 's3://' stream wrapper[rename()](class-aws-s3-streamwrapper-method-rename.md)
 : bool Called in response to rename() to rename a file or directory. Currently
-only supports renaming objects.[rmdir()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_rmdir)
-: mixed [stream\_cast()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_cast)
-: mixed [stream\_close()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_close)
-: mixed [stream\_eof()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_eof)
-: mixed [stream\_flush()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_flush)
-: mixed [stream\_lock()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_lock)
-: mixed [stream\_metadata()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_metadata)
-: mixed [stream\_open()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_open)
-: mixed [stream\_read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_read)
-: mixed [stream\_seek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_seek)
-: mixed [stream\_set\_option()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_set_option)
-: mixed [stream\_stat()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_stat)
-: mixed [stream\_tell()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_tell)
-: mixed [stream\_truncate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_truncate)
-: mixed [stream\_write()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_write)
-: mixed [unlink()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_unlink)
-: mixed [url\_stat()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_url_stat)
+only supports renaming objects.[rmdir()](class-aws-s3-streamwrapper-method-rmdir.md)
+: mixed [stream\_cast()](class-aws-s3-streamwrapper-method-stream-cast.md)
+: mixed [stream\_close()](class-aws-s3-streamwrapper-method-stream-close.md)
+: mixed [stream\_eof()](class-aws-s3-streamwrapper-method-stream-eof.md)
+: mixed [stream\_flush()](class-aws-s3-streamwrapper-method-stream-flush.md)
+: mixed [stream\_lock()](class-aws-s3-streamwrapper-method-stream-lock.md)
+: mixed [stream\_metadata()](class-aws-s3-streamwrapper-method-stream-metadata.md)
+: mixed [stream\_open()](class-aws-s3-streamwrapper-method-stream-open.md)
+: mixed [stream\_read()](class-aws-s3-streamwrapper-method-stream-read.md)
+: mixed [stream\_seek()](class-aws-s3-streamwrapper-method-stream-seek.md)
+: mixed [stream\_set\_option()](class-aws-s3-streamwrapper-method-stream-set-option.md)
+: mixed [stream\_stat()](class-aws-s3-streamwrapper-method-stream-stat.md)
+: mixed [stream\_tell()](class-aws-s3-streamwrapper-method-stream-tell.md)
+: mixed [stream\_truncate()](class-aws-s3-streamwrapper-method-stream-truncate.md)
+: mixed [stream\_write()](class-aws-s3-streamwrapper-method-stream-write.md)
+: mixed [unlink()](class-aws-s3-streamwrapper-method-unlink.md)
+: mixed [url\_stat()](class-aws-s3-streamwrapper-method-url-stat.md)
 : mixed Provides information for is\_dir, is\_file, filesize, etc. Works on
 buckets, keys, and prefixes.
 
-### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#properties)
+### Properties  [header link](class-aws-s3-streamwrapper-properties.md)
 
-#### $context  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#property_context)
+#### $context  [header link](class-aws-s3-streamwrapper-property-context.md)
 
 `
     public
@@ -102,9 +102,9 @@ buckets, keys, and prefixes.
 
 Stream context (this is set by PHP)
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#methods)
+### Methods  [header link](class-aws-s3-streamwrapper-methods.md)
 
-#### dir\_closedir()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_dir_closedir)
+#### dir\_closedir()  [header link](class-aws-s3-streamwrapper-method-dir-closedir.md)
 
 Close the directory listing handles
 
@@ -119,7 +119,7 @@ bool
 
 true on success
 
-#### dir\_opendir()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_dir_opendir)
+#### dir\_opendir()  [header link](class-aws-s3-streamwrapper-method-dir-opendir.md)
 
 Support for opendir().
 
@@ -145,7 +145,7 @@ $options
 
 Unused option variable
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_dir_opendir\#tags)
+##### Tags  [header link](class-aws-s3-streamwrapper-method-dir-opendir-tags.md)
 
 see[http://www.php.net/manual/en/function.opendir.php](http://www.php.net/manual/en/function.opendir.php)
 
@@ -156,7 +156,7 @@ bool
 
 true on success
 
-#### dir\_readdir()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_dir_readdir)
+#### dir\_readdir()  [header link](class-aws-s3-streamwrapper-method-dir-readdir.md)
 
 This method is called in response to readdir()
 
@@ -164,7 +164,7 @@ This method is called in response to readdir()
     public
                     dir_readdir() : string`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_dir_readdir\#tags)
+##### Tags  [header link](class-aws-s3-streamwrapper-method-dir-readdir-tags.md)
 
 link[http://www.php.net/manual/en/function.readdir.php](http://www.php.net/manual/en/function.readdir.php)
 
@@ -176,7 +176,7 @@ string
 Should return a string representing the next filename, or
 false if there is no next file.
 
-#### dir\_rewinddir()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_dir_rewinddir)
+#### dir\_rewinddir()  [header link](class-aws-s3-streamwrapper-method-dir-rewinddir.md)
 
 This method is called in response to rewinddir()
 
@@ -191,7 +191,7 @@ bool
 
 true on success
 
-#### mkdir()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_mkdir)
+#### mkdir()  [header link](class-aws-s3-streamwrapper-method-mkdir.md)
 
 Support for mkdir().
 
@@ -220,7 +220,7 @@ $options
 A bitwise mask of values, such as
 STREAM\_MKDIR\_RECURSIVE.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_mkdir\#tags)
+##### Tags  [header link](class-aws-s3-streamwrapper-method-mkdir-tags.md)
 
 link[http://www.php.net/manual/en/streamwrapper.mkdir.php](http://www.php.net/manual/en/streamwrapper.mkdir.php)
 
@@ -228,7 +228,7 @@ link[http://www.php.net/manual/en/streamwrapper.mkdir.php](http://www.php.net/ma
 
 bool
 
-#### register()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_register)
+#### register()  [header link](class-aws-s3-streamwrapper-method-register.md)
 
 Register the 's3://' stream wrapper
 
@@ -259,7 +259,7 @@ $v2Existence
 : mixed
 = false
 
-#### rename()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_rename)
+#### rename()  [header link](class-aws-s3-streamwrapper-method-rename.md)
 
 Called in response to rename() to rename a file or directory. Currently
 only supports renaming objects.
@@ -280,7 +280,7 @@ $path\_to
 
 the new path to the file
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_rename\#tags)
+##### Tags  [header link](class-aws-s3-streamwrapper-method-rename-tags.md)
 
 link[http://www.php.net/manual/en/function.rename.php](http://www.php.net/manual/en/function.rename.php)
 
@@ -291,7 +291,7 @@ bool
 
 true if file was successfully renamed
 
-#### rmdir()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_rmdir)
+#### rmdir()  [header link](class-aws-s3-streamwrapper-method-rmdir.md)
 
 `
     public
@@ -303,7 +303,7 @@ $path
 : mixed$options
 : mixed
 
-#### stream\_cast()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_stream_cast)
+#### stream\_cast()  [header link](class-aws-s3-streamwrapper-method-stream-cast.md)
 
 `
     public
@@ -314,25 +314,25 @@ $path
 $cast\_as
 : mixed
 
-#### stream\_close()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_stream_close)
+#### stream\_close()  [header link](class-aws-s3-streamwrapper-method-stream-close.md)
 
 `
     public
                     stream_close() : mixed`
 
-#### stream\_eof()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_stream_eof)
+#### stream\_eof()  [header link](class-aws-s3-streamwrapper-method-stream-eof.md)
 
 `
     public
                     stream_eof() : mixed`
 
-#### stream\_flush()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_stream_flush)
+#### stream\_flush()  [header link](class-aws-s3-streamwrapper-method-stream-flush.md)
 
 `
     public
                     stream_flush() : mixed`
 
-#### stream\_lock()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_stream_lock)
+#### stream\_lock()  [header link](class-aws-s3-streamwrapper-method-stream-lock.md)
 
 `
     public
@@ -343,7 +343,7 @@ $cast\_as
 $operation
 : mixed
 
-#### stream\_metadata()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_stream_metadata)
+#### stream\_metadata()  [header link](class-aws-s3-streamwrapper-method-stream-metadata.md)
 
 `
     public
@@ -356,7 +356,7 @@ $path
 : mixed$value
 : mixed
 
-#### stream\_open()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_stream_open)
+#### stream\_open()  [header link](class-aws-s3-streamwrapper-method-stream-open.md)
 
 `
     public
@@ -370,7 +370,7 @@ $path
 : mixed$opened\_path
 : mixed
 
-#### stream\_read()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_stream_read)
+#### stream\_read()  [header link](class-aws-s3-streamwrapper-method-stream-read.md)
 
 `
     public
@@ -381,7 +381,7 @@ $path
 $count
 : mixed
 
-#### stream\_seek()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_stream_seek)
+#### stream\_seek()  [header link](class-aws-s3-streamwrapper-method-stream-seek.md)
 
 `
     public
@@ -394,7 +394,7 @@ $offset
 : mixed
 = SEEK\_SET
 
-#### stream\_set\_option()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_stream_set_option)
+#### stream\_set\_option()  [header link](class-aws-s3-streamwrapper-method-stream-set-option.md)
 
 `
     public
@@ -407,19 +407,19 @@ $option
 : mixed$arg2
 : mixed
 
-#### stream\_stat()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_stream_stat)
+#### stream\_stat()  [header link](class-aws-s3-streamwrapper-method-stream-stat.md)
 
 `
     public
                     stream_stat() : mixed`
 
-#### stream\_tell()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_stream_tell)
+#### stream\_tell()  [header link](class-aws-s3-streamwrapper-method-stream-tell.md)
 
 `
     public
                     stream_tell() : mixed`
 
-#### stream\_truncate()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_stream_truncate)
+#### stream\_truncate()  [header link](class-aws-s3-streamwrapper-method-stream-truncate.md)
 
 `
     public
@@ -430,7 +430,7 @@ $option
 $new\_size
 : mixed
 
-#### stream\_write()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_stream_write)
+#### stream\_write()  [header link](class-aws-s3-streamwrapper-method-stream-write.md)
 
 `
     public
@@ -441,7 +441,7 @@ $new\_size
 $data
 : mixed
 
-#### unlink()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_unlink)
+#### unlink()  [header link](class-aws-s3-streamwrapper-method-unlink.md)
 
 `
     public
@@ -452,7 +452,7 @@ $data
 $path
 : mixed
 
-#### url\_stat()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_url_stat)
+#### url\_stat()  [header link](class-aws-s3-streamwrapper-method-url-stat.md)
 
 Provides information for is\_dir, is\_file, filesize, etc. Works on
 buckets, keys, and prefixes.
@@ -467,7 +467,7 @@ $path
 : mixed$flags
 : mixed
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html\#method_url_stat\#tags)
+##### Tags  [header link](class-aws-s3-streamwrapper-method-url-stat-tags.md)
 
 link[http://www.php.net/manual/en/streamwrapper.url-stat.php](http://www.php.net/manual/en/streamwrapper.url-stat.php)
 <\-\- modeled\_exceptions -->
@@ -477,34 +477,34 @@ link[http://www.php.net/manual/en/streamwrapper.url-stat.php](http://www.php.net
 **On this page**
 
 - Table Of Contents
-  - [Properties](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#toc-properties)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#toc-methods)
+  - [Properties](class-aws-s3-streamwrapper-toc-properties.md)
+  - [Methods](class-aws-s3-streamwrapper-toc-methods.md)
 - Properties
-  - [$context](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#property_context)
+  - [$context](class-aws-s3-streamwrapper-property-context.md)
 - Methods
-  - [dir\_closedir()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_dir_closedir)
-  - [dir\_opendir()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_dir_opendir)
-  - [dir\_readdir()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_dir_readdir)
-  - [dir\_rewinddir()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_dir_rewinddir)
-  - [mkdir()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_mkdir)
-  - [register()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_register)
-  - [rename()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_rename)
-  - [rmdir()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_rmdir)
-  - [stream\_cast()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_cast)
-  - [stream\_close()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_close)
-  - [stream\_eof()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_eof)
-  - [stream\_flush()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_flush)
-  - [stream\_lock()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_lock)
-  - [stream\_metadata()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_metadata)
-  - [stream\_open()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_open)
-  - [stream\_read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_read)
-  - [stream\_seek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_seek)
-  - [stream\_set\_option()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_set_option)
-  - [stream\_stat()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_stat)
-  - [stream\_tell()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_tell)
-  - [stream\_truncate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_truncate)
-  - [stream\_write()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_stream_write)
-  - [unlink()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_unlink)
-  - [url\_stat()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#method_url_stat)
+  - [dir\_closedir()](class-aws-s3-streamwrapper-method-dir-closedir.md)
+  - [dir\_opendir()](class-aws-s3-streamwrapper-method-dir-opendir.md)
+  - [dir\_readdir()](class-aws-s3-streamwrapper-method-dir-readdir.md)
+  - [dir\_rewinddir()](class-aws-s3-streamwrapper-method-dir-rewinddir.md)
+  - [mkdir()](class-aws-s3-streamwrapper-method-mkdir.md)
+  - [register()](class-aws-s3-streamwrapper-method-register.md)
+  - [rename()](class-aws-s3-streamwrapper-method-rename.md)
+  - [rmdir()](class-aws-s3-streamwrapper-method-rmdir.md)
+  - [stream\_cast()](class-aws-s3-streamwrapper-method-stream-cast.md)
+  - [stream\_close()](class-aws-s3-streamwrapper-method-stream-close.md)
+  - [stream\_eof()](class-aws-s3-streamwrapper-method-stream-eof.md)
+  - [stream\_flush()](class-aws-s3-streamwrapper-method-stream-flush.md)
+  - [stream\_lock()](class-aws-s3-streamwrapper-method-stream-lock.md)
+  - [stream\_metadata()](class-aws-s3-streamwrapper-method-stream-metadata.md)
+  - [stream\_open()](class-aws-s3-streamwrapper-method-stream-open.md)
+  - [stream\_read()](class-aws-s3-streamwrapper-method-stream-read.md)
+  - [stream\_seek()](class-aws-s3-streamwrapper-method-stream-seek.md)
+  - [stream\_set\_option()](class-aws-s3-streamwrapper-method-stream-set-option.md)
+  - [stream\_stat()](class-aws-s3-streamwrapper-method-stream-stat.md)
+  - [stream\_tell()](class-aws-s3-streamwrapper-method-stream-tell.md)
+  - [stream\_truncate()](class-aws-s3-streamwrapper-method-stream-truncate.md)
+  - [stream\_write()](class-aws-s3-streamwrapper-method-stream-write.md)
+  - [unlink()](class-aws-s3-streamwrapper-method-unlink.md)
+  - [url\_stat()](class-aws-s3-streamwrapper-method-url-stat.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html#top)
+[Back To Top](class-aws-s3-streamwrapper-top.md)

@@ -28,7 +28,7 @@ Each name and port mapping must be unique within the namespace.
 For each `ServiceConnectService`, you must provide at least one
 `clientAlias` with one `port`.
 
-Type: Array of [ServiceConnectClientAlias](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ServiceConnectClientAlias.html) objects
+Type: Array of [ServiceConnectClientAlias](api-serviceconnectclientalias.md) objects
 
 Required: No
 
@@ -71,7 +71,7 @@ Required: No
 A reference to an object that represents the configured timeouts for Service
 Connect.
 
-Type: [TimeoutConfiguration](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_TimeoutConfiguration.html) object
+Type: [TimeoutConfiguration](api-timeoutconfiguration.md) object
 
 Required: No
 
@@ -80,7 +80,7 @@ Required: No
 A reference to an object that represents a Transport Layer Security (TLS)
 configuration.
 
-Type: [ServiceConnectTlsConfiguration](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ServiceConnectTlsConfiguration.html) object
+Type: [ServiceConnectTlsConfiguration](api-serviceconnecttlsconfiguration.md) object
 
 Required: No
 
@@ -88,13 +88,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/ServiceConnectService)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/serviceconnectservice.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/ServiceConnectService)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/serviceconnectservice.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/ServiceConnectService)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/serviceconnectservice.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ServiceConnectConfiguration
 

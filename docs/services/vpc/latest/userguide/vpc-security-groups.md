@@ -17,7 +17,7 @@ contains a rule that allows ICMP traffic to the instance from your network, then
 could ping the instance from your computer. If the security group does not contain a
 rule that allows SSH traffic, then you could not connect to your instance using SSH.
 
-![VPC with 2 subnets, 2 security groups, servers in subnets associated with different security groups](https://docs.aws.amazon.com/images/vpc/latest/userguide/images/security-group-overview.png)
+![VPC with 2 subnets, 2 security groups, servers in subnets associated with different security groups](../../../images/vpc/latest/userguide/images/security-group-overview-png.md)
 
 ###### Contents
 
@@ -135,7 +135,7 @@ with the instances in subnet B using SSH.
 
 - Both security groups use the default outbound rule, which allows all traffic.
 
-![A VPC with two security groups and servers in two subnets. The servers in subnet A are associated with security group 1. The servers in subnet B are associated with security group 2.](https://docs.aws.amazon.com/images/vpc/latest/userguide/images/security-group-details.png)
+![A VPC with two security groups and servers in two subnets. The servers in subnet A are associated with security group 1. The servers in subnet B are associated with security group 2.](../../../images/vpc/latest/userguide/images/security-group-details-png.md)
 
 [Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 

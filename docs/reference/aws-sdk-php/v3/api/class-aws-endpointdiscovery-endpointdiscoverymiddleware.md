@@ -5,18 +5,18 @@ Menu
 
 ## EndpointDiscoveryMiddleware        in package    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointDiscoveryMiddleware.html\#toc)
+### Table of Contents  [header link](class-aws-endpointdiscovery-endpointdiscoverymiddleware-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointDiscoveryMiddleware.html\#toc-methods)
+#### Methods  [header link](class-aws-endpointdiscovery-endpointdiscoverymiddleware-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointDiscoveryMiddleware.html#method___construct)
-: mixed [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointDiscoveryMiddleware.html#method___invoke)
-: mixed [wrap()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointDiscoveryMiddleware.html#method_wrap)
+[\_\_construct()](class-aws-endpointdiscovery-endpointdiscoverymiddleware-method-construct.md)
+: mixed [\_\_invoke()](class-aws-endpointdiscovery-endpointdiscoverymiddleware-method-invoke.md)
+: mixed [wrap()](class-aws-endpointdiscovery-endpointdiscoverymiddleware-method-wrap.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointDiscoveryMiddleware.html\#methods)
+### Methods  [header link](class-aws-endpointdiscovery-endpointdiscoverymiddleware-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointDiscoveryMiddleware.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-endpointdiscovery-endpointdiscoverymiddleware-method-construct.md)
 
 `
     public
@@ -30,7 +30,7 @@ $handler
 : array<string\|int, mixed>$config
 : mixed
 
-#### \_\_invoke()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointDiscoveryMiddleware.html\#method___invoke)
+#### \_\_invoke()  [header link](class-aws-endpointdiscovery-endpointdiscoverymiddleware-method-invoke.md)
 
 `
     public
@@ -42,7 +42,7 @@ $cmd
 : [CommandInterface](class-aws-commandinterface.md)$request
 : [RequestInterface](class-psr-http-message-requestinterface.md)
 
-#### wrap()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointDiscoveryMiddleware.html\#method_wrap)
+#### wrap()  [header link](class-aws-endpointdiscovery-endpointdiscoverymiddleware-method-wrap.md)
 
 `
     public
@@ -61,10 +61,10 @@ $client
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointDiscoveryMiddleware.html#toc-methods)
+  - [Methods](class-aws-endpointdiscovery-endpointdiscoverymiddleware-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointDiscoveryMiddleware.html#method___construct)
-  - [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointDiscoveryMiddleware.html#method___invoke)
-  - [wrap()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointDiscoveryMiddleware.html#method_wrap)
+  - [\_\_construct()](class-aws-endpointdiscovery-endpointdiscoverymiddleware-method-construct.md)
+  - [\_\_invoke()](class-aws-endpointdiscovery-endpointdiscoverymiddleware-method-invoke.md)
+  - [wrap()](class-aws-endpointdiscovery-endpointdiscoverymiddleware-method-wrap.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointDiscovery.EndpointDiscoveryMiddleware.html#top)
+[Back To Top](class-aws-endpointdiscovery-endpointdiscoverymiddleware-top.md)

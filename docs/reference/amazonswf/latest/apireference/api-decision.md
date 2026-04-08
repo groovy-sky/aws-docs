@@ -25,7 +25,7 @@ beyond the marker event.
 - `RequestCancelActivityTask` – Attempts to cancel a previously scheduled activity task. If the activity task
 was scheduled but has not been assigned to a worker, then it is canceled. If the activity task was already
 assigned to a worker, then the worker is informed that cancellation has been requested in the response to
-[RecordActivityTaskHeartbeat](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_RecordActivityTaskHeartbeat.html).
+[RecordActivityTaskHeartbeat](api-recordactivitytaskheartbeat.md).
 
 - `RequestCancelExternalWorkflowExecution` – Requests that a request be made to cancel the specified external
 workflow execution and records a `RequestCancelExternalWorkflowExecutionInitiated` event in the
@@ -49,7 +49,7 @@ If you grant permission to use `RespondDecisionTaskCompleted`, you can use IAM p
 permissions for the list of decisions returned by this action as if they were members of the API. Treating
 decisions as a pseudo API maintains a uniform conceptual model and helps keep policies readable. For details and
 example IAM policies, see [Using IAM to Manage Access to Amazon SWF\
-Workflows](https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html) in the _Amazon SWF Developer Guide_.
+Workflows](../../../../services/amazonswf/latest/developerguide/swf-dev-iam.md) in the _Amazon SWF Developer Guide_.
 
 **Decision Failure**
 
@@ -63,7 +63,7 @@ Decisions can fail for several reasons
 
 One of the following events might be added to the history to indicate an error. The event attribute's
 `cause` parameter indicates the cause. If `cause` is set to `OPERATION_NOT_PERMITTED`, the decision failed
-because it lacked sufficient permissions. For details and example IAM policies, see [Using IAM to Manage Access to Amazon SWF Workflows](https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html)
+because it lacked sufficient permissions. For details and example IAM policies, see [Using IAM to Manage Access to Amazon SWF Workflows](../../../../services/amazonswf/latest/developerguide/swf-dev-iam.md)
 in the _Amazon SWF Developer Guide_.
 
 - `ScheduleActivityTaskFailed` – A `ScheduleActivityTask` decision failed. This could happen if the
@@ -124,7 +124,7 @@ a decision task: `CompleteWorkflowExecution`, `FailWorkflowExecution`,
 is returned if a workflow closing decision is specified and a signal or activity event had been added to the
 history while the decision task was being performed by the decider. Unlike the above situations which are logic
 issues, this fault is always possible because of race conditions in a distributed system. The right action here is
-to call [RespondDecisionTaskCompleted](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_RespondDecisionTaskCompleted.html) without any decisions. This would result in another decision task
+to call [RespondDecisionTaskCompleted](api-responddecisiontaskcompleted.md) without any decisions. This would result in another decision task
 with these new events included in the history. The decider should handle the new events and may decide to close
 the workflow execution.
 
@@ -196,7 +196,7 @@ Required: Yes
 
 Provides the details of the `CancelTimer` decision. It isn't set for other decision types.
 
-Type: [CancelTimerDecisionAttributes](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_CancelTimerDecisionAttributes.html) object
+Type: [CancelTimerDecisionAttributes](api-canceltimerdecisionattributes.md) object
 
 Required: No
 
@@ -204,7 +204,7 @@ Required: No
 
 Provides the details of the `CancelWorkflowExecution` decision. It isn't set for other decision types.
 
-Type: [CancelWorkflowExecutionDecisionAttributes](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_CancelWorkflowExecutionDecisionAttributes.html) object
+Type: [CancelWorkflowExecutionDecisionAttributes](api-cancelworkflowexecutiondecisionattributes.md) object
 
 Required: No
 
@@ -212,7 +212,7 @@ Required: No
 
 Provides the details of the `CompleteWorkflowExecution` decision. It isn't set for other decision types.
 
-Type: [CompleteWorkflowExecutionDecisionAttributes](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_CompleteWorkflowExecutionDecisionAttributes.html) object
+Type: [CompleteWorkflowExecutionDecisionAttributes](api-completeworkflowexecutiondecisionattributes.md) object
 
 Required: No
 
@@ -220,7 +220,7 @@ Required: No
 
 Provides the details of the `ContinueAsNewWorkflowExecution` decision. It isn't set for other decision types.
 
-Type: [ContinueAsNewWorkflowExecutionDecisionAttributes](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_ContinueAsNewWorkflowExecutionDecisionAttributes.html) object
+Type: [ContinueAsNewWorkflowExecutionDecisionAttributes](api-continueasnewworkflowexecutiondecisionattributes.md) object
 
 Required: No
 
@@ -228,7 +228,7 @@ Required: No
 
 Provides the details of the `FailWorkflowExecution` decision. It isn't set for other decision types.
 
-Type: [FailWorkflowExecutionDecisionAttributes](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_FailWorkflowExecutionDecisionAttributes.html) object
+Type: [FailWorkflowExecutionDecisionAttributes](api-failworkflowexecutiondecisionattributes.md) object
 
 Required: No
 
@@ -236,7 +236,7 @@ Required: No
 
 Provides the details of the `RecordMarker` decision. It isn't set for other decision types.
 
-Type: [RecordMarkerDecisionAttributes](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_RecordMarkerDecisionAttributes.html) object
+Type: [RecordMarkerDecisionAttributes](api-recordmarkerdecisionattributes.md) object
 
 Required: No
 
@@ -244,7 +244,7 @@ Required: No
 
 Provides the details of the `RequestCancelActivityTask` decision. It isn't set for other decision types.
 
-Type: [RequestCancelActivityTaskDecisionAttributes](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_RequestCancelActivityTaskDecisionAttributes.html) object
+Type: [RequestCancelActivityTaskDecisionAttributes](api-requestcancelactivitytaskdecisionattributes.md) object
 
 Required: No
 
@@ -253,7 +253,7 @@ Required: No
 Provides the details of the `RequestCancelExternalWorkflowExecution` decision.
 It isn't set for other decision types.
 
-Type: [RequestCancelExternalWorkflowExecutionDecisionAttributes](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_RequestCancelExternalWorkflowExecutionDecisionAttributes.html) object
+Type: [RequestCancelExternalWorkflowExecutionDecisionAttributes](api-requestcancelexternalworkflowexecutiondecisionattributes.md) object
 
 Required: No
 
@@ -261,7 +261,7 @@ Required: No
 
 Provides the details of the `ScheduleActivityTask` decision. It isn't set for other decision types.
 
-Type: [ScheduleActivityTaskDecisionAttributes](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_ScheduleActivityTaskDecisionAttributes.html) object
+Type: [ScheduleActivityTaskDecisionAttributes](api-scheduleactivitytaskdecisionattributes.md) object
 
 Required: No
 
@@ -270,7 +270,7 @@ Required: No
 Provides the details of the `ScheduleLambdaFunction` decision. It isn't set
 for other decision types.
 
-Type: [ScheduleLambdaFunctionDecisionAttributes](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_ScheduleLambdaFunctionDecisionAttributes.html) object
+Type: [ScheduleLambdaFunctionDecisionAttributes](api-schedulelambdafunctiondecisionattributes.md) object
 
 Required: No
 
@@ -278,7 +278,7 @@ Required: No
 
 Provides the details of the `SignalExternalWorkflowExecution` decision. It isn't set for other decision types.
 
-Type: [SignalExternalWorkflowExecutionDecisionAttributes](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_SignalExternalWorkflowExecutionDecisionAttributes.html) object
+Type: [SignalExternalWorkflowExecutionDecisionAttributes](api-signalexternalworkflowexecutiondecisionattributes.md) object
 
 Required: No
 
@@ -286,7 +286,7 @@ Required: No
 
 Provides the details of the `StartChildWorkflowExecution` decision. It isn't set for other decision types.
 
-Type: [StartChildWorkflowExecutionDecisionAttributes](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_StartChildWorkflowExecutionDecisionAttributes.html) object
+Type: [StartChildWorkflowExecutionDecisionAttributes](api-startchildworkflowexecutiondecisionattributes.md) object
 
 Required: No
 
@@ -294,7 +294,7 @@ Required: No
 
 Provides the details of the `StartTimer` decision. It isn't set for other decision types.
 
-Type: [StartTimerDecisionAttributes](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_StartTimerDecisionAttributes.html) object
+Type: [StartTimerDecisionAttributes](api-starttimerdecisionattributes.md) object
 
 Required: No
 
@@ -302,13 +302,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/swf-2012-01-25/Decision)
+- [AWS SDK for C++](../../../goto/sdkforcpp/swf-2012-01-25/decision.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/swf-2012-01-25/Decision)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/swf-2012-01-25/decision.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/swf-2012-01-25/Decision)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/swf-2012-01-25/decision.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ContinueAsNewWorkflowExecutionFailedEventAttributes
 

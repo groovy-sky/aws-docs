@@ -8,63 +8,63 @@ You can use AWS Amplify for end-to-end fullstack development of web and mobile a
 
 SDK documentationCode examples
 
-[AWS SDK for C++](https://docs.aws.amazon.com/sdk-for-cpp)
+[AWS SDK for C++](../../../sdk-for-cpp.md)
 
 [AWS SDK for C++ code examples](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp)
 
-[AWS CLI](https://docs.aws.amazon.com/cli)
+[AWS CLI](../../../../services/cli/index.md)
 
-[AWS CLI code examples](https://docs.aws.amazon.com/code-library/latest/ug/cli_2_code_examples.html)
+[AWS CLI code examples](../../../../services/code-library/latest/ug/cli-2-code-examples.md)
 
-[AWS SDK for Go](https://docs.aws.amazon.com/sdk-for-go)
+[AWS SDK for Go](../../../sdk-for-go.md)
 
 [AWS SDK for Go code examples](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2)
 
-[AWS SDK for Java](https://docs.aws.amazon.com/sdk-for-java)
+[AWS SDK for Java](../../../sdk-for-java.md)
 
 [AWS SDK for Java code examples](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2)
 
-[AWS SDK for JavaScript](https://docs.aws.amazon.com/sdk-for-javascript)
+[AWS SDK for JavaScript](../../../sdk-for-javascript.md)
 
 [AWS SDK for JavaScript code examples](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3)
 
-[AWS SDK for Kotlin](https://docs.aws.amazon.com/sdk-for-kotlin)
+[AWS SDK for Kotlin](../../../sdk-for-kotlin.md)
 
 [AWS SDK for Kotlin code examples](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin)
 
-[AWS SDK for .NET](https://docs.aws.amazon.com/sdk-for-net)
+[AWS SDK for .NET](../../../sdk-for-net.md)
 
 [AWS SDK for .NET code examples](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3)
 
-[AWS SDK for PHP](https://docs.aws.amazon.com/sdk-for-php)
+[AWS SDK for PHP](../../../sdk-for-php.md)
 
 [AWS SDK for PHP code examples](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php)
 
-[AWS Tools for PowerShell](https://docs.aws.amazon.com/powershell)
+[AWS Tools for PowerShell](../../../../services/powershell/index.md)
 
-[Tools for PowerShell code examples](https://docs.aws.amazon.com/code-library/latest/ug/powershell_4_code_examples.html)
+[Tools for PowerShell code examples](../../../../services/code-library/latest/ug/powershell-4-code-examples.md)
 
-[AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/pythonsdk)
+[AWS SDK for Python (Boto3)](../../../pythonsdk.md)
 
 [AWS SDK for Python (Boto3) code examples](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python)
 
-[AWS SDK for Ruby](https://docs.aws.amazon.com/sdk-for-ruby)
+[AWS SDK for Ruby](../../../sdk-for-ruby.md)
 
 [AWS SDK for Ruby code examples](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby)
 
-[AWS SDK for Rust](https://docs.aws.amazon.com/sdk-for-rust)
+[AWS SDK for Rust](../../../sdk-for-rust.md)
 
 [AWS SDK for Rust code examples](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1)
 
-[AWS SDK for SAP ABAP](https://docs.aws.amazon.com/sdk-for-sapabap)
+[AWS SDK for SAP ABAP](../../../sdk-for-sapabap.md)
 
 [AWS SDK for SAP ABAP code examples](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap)
 
-[AWS SDK for Swift](https://docs.aws.amazon.com/sdk-for-swift)
+[AWS SDK for Swift](../../../sdk-for-swift.md)
 
 [AWS SDK for Swift code examples](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift)
 
-For specific examples, see [Code examples for Amazon S3 using AWS SDKs](https://docs.aws.amazon.com/AmazonS3/latest/API/service_code_examples.html).
+For specific examples, see [Code examples for Amazon S3 using AWS SDKs](../../../../services/s3/latest/api/service-code-examples.md).
 
 ## SDK Programming interfaces
 
@@ -74,11 +74,11 @@ For example, when you perform a multipart upload by using the low-level API oper
 you use an operation to initiate the upload, another operation to upload parts, and a final
 operation to complete the upload. A high-level multipart upload API operation lets you to do
 all of the operations required for upload in a single API call. For examples, see [Uploading an\
-object using multipart upload](https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpu-upload-object.html) in the _Amazon S3 User Guide_.
+object using multipart upload](../../../../services/s3/latest/userguide/mpu-upload-object.md) in the _Amazon S3 User Guide_.
 
 Low-level API operations allow greater control over the upload. We recommend that you use the low-level API operations if you need to pause and resume uploads, vary part sizes during the upload, or begin uploads when you don't know the size of the data in advance.
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Using the AWS CLI
 

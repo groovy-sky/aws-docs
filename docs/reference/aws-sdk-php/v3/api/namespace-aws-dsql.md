@@ -4,15 +4,15 @@ Menu
 
 ## DSQL
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dsql.html\#toc)
+### Table of Contents  [header link](namespace-aws-dsql-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dsql.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-dsql-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dsql.exception.html)
+[Exception](namespace-aws-dsql-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dsql.html\#toc-classes)
+#### Classes  [header link](namespace-aws-dsql-toc-classes.md)
 
-[AuthTokenGenerator](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DSQL.AuthTokenGenerator.html)Generates auth tokens to connect to DSQL database clusters.[DSQLClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DSQL.DSQLClient.html)This client is used to interact with the **Amazon Aurora DSQL** service.
+[AuthTokenGenerator](class-aws-dsql-authtokengenerator.md)Generates auth tokens to connect to DSQL database clusters.[DSQLClient](class-aws-dsql-dsqlclient.md)This client is used to interact with the **Amazon Aurora DSQL** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dsql.html#toc-classes)
+  - [Classes](namespace-aws-dsql-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dsql.html#top)
+[Back To Top](namespace-aws-dsql-top.md)

@@ -4,22 +4,22 @@ Menu
 
 ## Credentials
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.credentials.html\#toc)
+### Table of Contents  [header link](namespace-aws-credentials-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.credentials.html\#toc-interfaces)
+#### Interfaces  [header link](namespace-aws-credentials-toc-interfaces.md)
 
-[CredentialsInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialsInterface.html)Provides access to the AWS credentials used for accessing AWS services: AWS
+[CredentialsInterface](class-aws-credentials-credentialsinterface.md)Provides access to the AWS credentials used for accessing AWS services: AWS
 access key ID, secret access key, and security token. These credentials are
 used to securely sign requests to AWS services.
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.credentials.html\#toc-classes)
+#### Classes  [header link](namespace-aws-credentials-toc-classes.md)
 
-[AssumeRoleCredentialProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleCredentialProvider.html)Credential provider that provides credentials via assuming a role
-More Information, see: http://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sts-2011-06-15.html#assumerole[AssumeRoleWithWebIdentityCredentialProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleWithWebIdentityCredentialProvider.html)Credential provider that provides credentials via assuming a role with a web identity
-More Information, see: https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sts-2011-06-15.html#assumerolewithwebidentity[CredentialProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html)Credential providers are functions that accept no arguments and return a
+[AssumeRoleCredentialProvider](class-aws-credentials-assumerolecredentialprovider.md)Credential provider that provides credentials via assuming a role
+More Information, see: http://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sts-2011-06-15.html#assumerole[AssumeRoleWithWebIdentityCredentialProvider](class-aws-credentials-assumerolewithwebidentitycredentialprovider.md)Credential provider that provides credentials via assuming a role with a web identity
+More Information, see: https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sts-2011-06-15.html#assumerolewithwebidentity[CredentialProvider](class-aws-credentials-credentialprovider.md)Credential providers are functions that accept no arguments and return a
 promise that is fulfilled with an {@see \\Aws\\Credentials\\CredentialsInterface}
-or rejected with an {@see \\Aws\\Exception\\CredentialsException}.[Credentials](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html)Basic implementation of the AWS Credentials interface that allows callers to
-pass in the AWS Access Key and AWS Secret Access Key in the constructor.[CredentialsUtils](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialsUtils.html)[EcsCredentialProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html)Credential provider that fetches container credentials with GET request.[InstanceProfileProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html)Credential provider that provides credentials from the EC2 metadata service.[LoginCredentialProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.LoginCredentialProvider.html)Credential provider for login using console credentials
+or rejected with an {@see \\Aws\\Exception\\CredentialsException}.[Credentials](class-aws-credentials-credentials.md)Basic implementation of the AWS Credentials interface that allows callers to
+pass in the AWS Access Key and AWS Secret Access Key in the constructor.[CredentialsUtils](class-aws-credentials-credentialsutils.md)[EcsCredentialProvider](class-aws-credentials-ecscredentialprovider.md)Credential provider that fetches container credentials with GET request.[InstanceProfileProvider](class-aws-credentials-instanceprofileprovider.md)Credential provider that provides credentials from the EC2 metadata service.[LoginCredentialProvider](class-aws-credentials-logincredentialprovider.md)Credential provider for login using console credentials
 
 ```
 
@@ -30,7 +30,7 @@ pass in the AWS Access Key and AWS Secret Access Key in the constructor.[Credent
 **On this page**
 
 - Table Of Contents
-  - [Interfaces](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.credentials.html#toc-interfaces)
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.credentials.html#toc-classes)
+  - [Interfaces](namespace-aws-credentials-toc-interfaces.md)
+  - [Classes](namespace-aws-credentials-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.credentials.html#top)
+[Back To Top](namespace-aws-credentials-top.md)

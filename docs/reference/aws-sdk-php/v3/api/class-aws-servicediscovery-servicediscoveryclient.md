@@ -17,42 +17,42 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-03-14**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html)
+- [**2017-03-14**](api-servicediscovery-2017-03-14.md)
 
-  - [CreateHttpNamespace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#createhttpnamespace)
-  - [CreatePrivateDnsNamespace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#createprivatednsnamespace)
-  - [CreatePublicDnsNamespace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#createpublicdnsnamespace)
-  - [CreateService](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#createservice)
-  - [DeleteNamespace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#deletenamespace)
-  - [DeleteService](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#deleteservice)
-  - [DeleteServiceAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#deleteserviceattributes)
-  - [DeregisterInstance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#deregisterinstance)
-  - [DiscoverInstances](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#discoverinstances)
-  - [DiscoverInstancesRevision](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#discoverinstancesrevision)
-  - [GetInstance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#getinstance)
-  - [GetInstancesHealthStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#getinstanceshealthstatus)
-  - [GetNamespace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#getnamespace)
-  - [GetOperation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#getoperation)
-  - [GetService](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#getservice)
-  - [GetServiceAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#getserviceattributes)
-  - [ListInstances](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#listinstances)
-  - [ListNamespaces](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#listnamespaces)
-  - [ListOperations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#listoperations)
-  - [ListServices](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#listservices)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#listtagsforresource)
-  - [RegisterInstance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#registerinstance)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#untagresource)
-  - [UpdateHttpNamespace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#updatehttpnamespace)
-  - [UpdateInstanceCustomHealthStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#updateinstancecustomhealthstatus)
-  - [UpdatePrivateDnsNamespace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#updateprivatednsnamespace)
-  - [UpdatePublicDnsNamespace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#updatepublicdnsnamespace)
-  - [UpdateService](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#updateservice)
-  - [UpdateServiceAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-servicediscovery-2017-03-14.html#updateserviceattributes)
+  - [CreateHttpNamespace](api-servicediscovery-2017-03-14-createhttpnamespace.md)
+  - [CreatePrivateDnsNamespace](api-servicediscovery-2017-03-14-createprivatednsnamespace.md)
+  - [CreatePublicDnsNamespace](api-servicediscovery-2017-03-14-createpublicdnsnamespace.md)
+  - [CreateService](api-servicediscovery-2017-03-14-createservice.md)
+  - [DeleteNamespace](api-servicediscovery-2017-03-14-deletenamespace.md)
+  - [DeleteService](api-servicediscovery-2017-03-14-deleteservice.md)
+  - [DeleteServiceAttributes](api-servicediscovery-2017-03-14-deleteserviceattributes.md)
+  - [DeregisterInstance](api-servicediscovery-2017-03-14-deregisterinstance.md)
+  - [DiscoverInstances](api-servicediscovery-2017-03-14-discoverinstances.md)
+  - [DiscoverInstancesRevision](api-servicediscovery-2017-03-14-discoverinstancesrevision.md)
+  - [GetInstance](api-servicediscovery-2017-03-14-getinstance.md)
+  - [GetInstancesHealthStatus](api-servicediscovery-2017-03-14-getinstanceshealthstatus.md)
+  - [GetNamespace](api-servicediscovery-2017-03-14-getnamespace.md)
+  - [GetOperation](api-servicediscovery-2017-03-14-getoperation.md)
+  - [GetService](api-servicediscovery-2017-03-14-getservice.md)
+  - [GetServiceAttributes](api-servicediscovery-2017-03-14-getserviceattributes.md)
+  - [ListInstances](api-servicediscovery-2017-03-14-listinstances.md)
+  - [ListNamespaces](api-servicediscovery-2017-03-14-listnamespaces.md)
+  - [ListOperations](api-servicediscovery-2017-03-14-listoperations.md)
+  - [ListServices](api-servicediscovery-2017-03-14-listservices.md)
+  - [ListTagsForResource](api-servicediscovery-2017-03-14-listtagsforresource.md)
+  - [RegisterInstance](api-servicediscovery-2017-03-14-registerinstance.md)
+  - [TagResource](api-servicediscovery-2017-03-14-tagresource.md)
+  - [UntagResource](api-servicediscovery-2017-03-14-untagresource.md)
+  - [UpdateHttpNamespace](api-servicediscovery-2017-03-14-updatehttpnamespace.md)
+  - [UpdateInstanceCustomHealthStatus](api-servicediscovery-2017-03-14-updateinstancecustomhealthstatus.md)
+  - [UpdatePrivateDnsNamespace](api-servicediscovery-2017-03-14-updateprivatednsnamespace.md)
+  - [UpdatePublicDnsNamespace](api-servicediscovery-2017-03-14-updatepublicdnsnamespace.md)
+  - [UpdateService](api-servicediscovery-2017-03-14-updateservice.md)
+  - [UpdateServiceAttributes](api-servicediscovery-2017-03-14-updateserviceattributes.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServiceDiscovery.ServiceDiscoveryClient.html\#toc)
+### Table of Contents  [header link](class-aws-servicediscovery-servicediscoveryclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServiceDiscovery.ServiceDiscoveryClient.html\#toc-methods)
+#### Methods  [header link](class-aws-servicediscovery-servicediscoveryclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -83,7 +83,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServiceDiscovery.ServiceDiscoveryClient.html\#methods)
+### Methods  [header link](class-aws-servicediscovery-servicediscoveryclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -550,7 +550,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServiceDiscovery.ServiceDiscoveryClient.html#toc-methods)
+  - [Methods](class-aws-servicediscovery-servicediscoveryclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -577,4 +577,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServiceDiscovery.ServiceDiscoveryClient.html#top)
+[Back To Top](class-aws-servicediscovery-servicediscoveryclient-top.md)

@@ -17,35 +17,35 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2020-10-30**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html)
+- [**2020-10-30**](api-ecr-public-2020-10-30.md)
 
-  - [BatchCheckLayerAvailability](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#batchchecklayeravailability)
-  - [BatchDeleteImage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#batchdeleteimage)
-  - [CompleteLayerUpload](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#completelayerupload)
-  - [CreateRepository](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#createrepository)
-  - [DeleteRepository](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#deleterepository)
-  - [DeleteRepositoryPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#deleterepositorypolicy)
-  - [DescribeImageTags](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#describeimagetags)
-  - [DescribeImages](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#describeimages)
-  - [DescribeRegistries](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#describeregistries)
-  - [DescribeRepositories](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#describerepositories)
-  - [GetAuthorizationToken](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#getauthorizationtoken)
-  - [GetRegistryCatalogData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#getregistrycatalogdata)
-  - [GetRepositoryCatalogData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#getrepositorycatalogdata)
-  - [GetRepositoryPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#getrepositorypolicy)
-  - [InitiateLayerUpload](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#initiatelayerupload)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#listtagsforresource)
-  - [PutImage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#putimage)
-  - [PutRegistryCatalogData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#putregistrycatalogdata)
-  - [PutRepositoryCatalogData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#putrepositorycatalogdata)
-  - [SetRepositoryPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#setrepositorypolicy)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#untagresource)
-  - [UploadLayerPart](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ecr-public-2020-10-30.html#uploadlayerpart)
+  - [BatchCheckLayerAvailability](api-ecr-public-2020-10-30-batchchecklayeravailability.md)
+  - [BatchDeleteImage](api-ecr-public-2020-10-30-batchdeleteimage.md)
+  - [CompleteLayerUpload](api-ecr-public-2020-10-30-completelayerupload.md)
+  - [CreateRepository](api-ecr-public-2020-10-30-createrepository.md)
+  - [DeleteRepository](api-ecr-public-2020-10-30-deleterepository.md)
+  - [DeleteRepositoryPolicy](api-ecr-public-2020-10-30-deleterepositorypolicy.md)
+  - [DescribeImageTags](api-ecr-public-2020-10-30-describeimagetags.md)
+  - [DescribeImages](api-ecr-public-2020-10-30-describeimages.md)
+  - [DescribeRegistries](api-ecr-public-2020-10-30-describeregistries.md)
+  - [DescribeRepositories](api-ecr-public-2020-10-30-describerepositories.md)
+  - [GetAuthorizationToken](api-ecr-public-2020-10-30-getauthorizationtoken.md)
+  - [GetRegistryCatalogData](api-ecr-public-2020-10-30-getregistrycatalogdata.md)
+  - [GetRepositoryCatalogData](api-ecr-public-2020-10-30-getrepositorycatalogdata.md)
+  - [GetRepositoryPolicy](api-ecr-public-2020-10-30-getrepositorypolicy.md)
+  - [InitiateLayerUpload](api-ecr-public-2020-10-30-initiatelayerupload.md)
+  - [ListTagsForResource](api-ecr-public-2020-10-30-listtagsforresource.md)
+  - [PutImage](api-ecr-public-2020-10-30-putimage.md)
+  - [PutRegistryCatalogData](api-ecr-public-2020-10-30-putregistrycatalogdata.md)
+  - [PutRepositoryCatalogData](api-ecr-public-2020-10-30-putrepositorycatalogdata.md)
+  - [SetRepositoryPolicy](api-ecr-public-2020-10-30-setrepositorypolicy.md)
+  - [TagResource](api-ecr-public-2020-10-30-tagresource.md)
+  - [UntagResource](api-ecr-public-2020-10-30-untagresource.md)
+  - [UploadLayerPart](api-ecr-public-2020-10-30-uploadlayerpart.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ECRPublic.ECRPublicClient.html\#toc)
+### Table of Contents  [header link](class-aws-ecrpublic-ecrpublicclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ECRPublic.ECRPublicClient.html\#toc-methods)
+#### Methods  [header link](class-aws-ecrpublic-ecrpublicclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -76,7 +76,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ECRPublic.ECRPublicClient.html\#methods)
+### Methods  [header link](class-aws-ecrpublic-ecrpublicclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -543,7 +543,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ECRPublic.ECRPublicClient.html#toc-methods)
+  - [Methods](class-aws-ecrpublic-ecrpublicclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -570,4 +570,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ECRPublic.ECRPublicClient.html#top)
+[Back To Top](class-aws-ecrpublic-ecrpublicclient-top.md)

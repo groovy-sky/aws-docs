@@ -4,15 +4,15 @@ Menu
 
 ## WorkDocs
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workdocs.html\#toc)
+### Table of Contents  [header link](namespace-aws-workdocs-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workdocs.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-workdocs-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workdocs.exception.html)
+[Exception](namespace-aws-workdocs-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workdocs.html\#toc-classes)
+#### Classes  [header link](namespace-aws-workdocs-toc-classes.md)
 
-[WorkDocsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkDocs.WorkDocsClient.html)This client is used to interact with the **Amazon WorkDocs** service.
+[WorkDocsClient](class-aws-workdocs-workdocsclient.md)This client is used to interact with the **Amazon WorkDocs** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workdocs.html#toc-classes)
+  - [Classes](namespace-aws-workdocs-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workdocs.html#top)
+[Back To Top](namespace-aws-workdocs-top.md)

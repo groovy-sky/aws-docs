@@ -17,35 +17,35 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2020-07-29**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html)
+- [**2020-07-29**](api-appintegrations-2020-07-29.md)
 
-  - [CreateApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#createapplication)
-  - [CreateDataIntegration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#createdataintegration)
-  - [CreateDataIntegrationAssociation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#createdataintegrationassociation)
-  - [CreateEventIntegration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#createeventintegration)
-  - [DeleteApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#deleteapplication)
-  - [DeleteDataIntegration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#deletedataintegration)
-  - [DeleteEventIntegration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#deleteeventintegration)
-  - [GetApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#getapplication)
-  - [GetDataIntegration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#getdataintegration)
-  - [GetEventIntegration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#geteventintegration)
-  - [ListApplicationAssociations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#listapplicationassociations)
-  - [ListApplications](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#listapplications)
-  - [ListDataIntegrationAssociations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#listdataintegrationassociations)
-  - [ListDataIntegrations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#listdataintegrations)
-  - [ListEventIntegrationAssociations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#listeventintegrationassociations)
-  - [ListEventIntegrations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#listeventintegrations)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#listtagsforresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#untagresource)
-  - [UpdateApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#updateapplication)
-  - [UpdateDataIntegration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#updatedataintegration)
-  - [UpdateDataIntegrationAssociation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#updatedataintegrationassociation)
-  - [UpdateEventIntegration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-appintegrations-2020-07-29.html#updateeventintegration)
+  - [CreateApplication](api-appintegrations-2020-07-29-createapplication.md)
+  - [CreateDataIntegration](api-appintegrations-2020-07-29-createdataintegration.md)
+  - [CreateDataIntegrationAssociation](api-appintegrations-2020-07-29-createdataintegrationassociation.md)
+  - [CreateEventIntegration](api-appintegrations-2020-07-29-createeventintegration.md)
+  - [DeleteApplication](api-appintegrations-2020-07-29-deleteapplication.md)
+  - [DeleteDataIntegration](api-appintegrations-2020-07-29-deletedataintegration.md)
+  - [DeleteEventIntegration](api-appintegrations-2020-07-29-deleteeventintegration.md)
+  - [GetApplication](api-appintegrations-2020-07-29-getapplication.md)
+  - [GetDataIntegration](api-appintegrations-2020-07-29-getdataintegration.md)
+  - [GetEventIntegration](api-appintegrations-2020-07-29-geteventintegration.md)
+  - [ListApplicationAssociations](api-appintegrations-2020-07-29-listapplicationassociations.md)
+  - [ListApplications](api-appintegrations-2020-07-29-listapplications.md)
+  - [ListDataIntegrationAssociations](api-appintegrations-2020-07-29-listdataintegrationassociations.md)
+  - [ListDataIntegrations](api-appintegrations-2020-07-29-listdataintegrations.md)
+  - [ListEventIntegrationAssociations](api-appintegrations-2020-07-29-listeventintegrationassociations.md)
+  - [ListEventIntegrations](api-appintegrations-2020-07-29-listeventintegrations.md)
+  - [ListTagsForResource](api-appintegrations-2020-07-29-listtagsforresource.md)
+  - [TagResource](api-appintegrations-2020-07-29-tagresource.md)
+  - [UntagResource](api-appintegrations-2020-07-29-untagresource.md)
+  - [UpdateApplication](api-appintegrations-2020-07-29-updateapplication.md)
+  - [UpdateDataIntegration](api-appintegrations-2020-07-29-updatedataintegration.md)
+  - [UpdateDataIntegrationAssociation](api-appintegrations-2020-07-29-updatedataintegrationassociation.md)
+  - [UpdateEventIntegration](api-appintegrations-2020-07-29-updateeventintegration.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppIntegrationsService.AppIntegrationsServiceClient.html\#toc)
+### Table of Contents  [header link](class-aws-appintegrationsservice-appintegrationsserviceclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppIntegrationsService.AppIntegrationsServiceClient.html\#toc-methods)
+#### Methods  [header link](class-aws-appintegrationsservice-appintegrationsserviceclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -76,7 +76,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppIntegrationsService.AppIntegrationsServiceClient.html\#methods)
+### Methods  [header link](class-aws-appintegrationsservice-appintegrationsserviceclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -543,7 +543,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppIntegrationsService.AppIntegrationsServiceClient.html#toc-methods)
+  - [Methods](class-aws-appintegrationsservice-appintegrationsserviceclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -570,4 +570,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppIntegrationsService.AppIntegrationsServiceClient.html#top)
+[Back To Top](class-aws-appintegrationsservice-appintegrationsserviceclient-top.md)

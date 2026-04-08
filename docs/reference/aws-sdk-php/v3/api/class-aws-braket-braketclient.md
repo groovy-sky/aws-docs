@@ -17,29 +17,29 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2019-09-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-braket-2019-09-01.html)
+- [**2019-09-01**](api-braket-2019-09-01.md)
 
-  - [CancelJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-braket-2019-09-01.html#canceljob)
-  - [CancelQuantumTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-braket-2019-09-01.html#cancelquantumtask)
-  - [CreateJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-braket-2019-09-01.html#createjob)
-  - [CreateQuantumTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-braket-2019-09-01.html#createquantumtask)
-  - [CreateSpendingLimit](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-braket-2019-09-01.html#createspendinglimit)
-  - [DeleteSpendingLimit](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-braket-2019-09-01.html#deletespendinglimit)
-  - [GetDevice](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-braket-2019-09-01.html#getdevice)
-  - [GetJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-braket-2019-09-01.html#getjob)
-  - [GetQuantumTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-braket-2019-09-01.html#getquantumtask)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-braket-2019-09-01.html#listtagsforresource)
-  - [SearchDevices](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-braket-2019-09-01.html#searchdevices)
-  - [SearchJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-braket-2019-09-01.html#searchjobs)
-  - [SearchQuantumTasks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-braket-2019-09-01.html#searchquantumtasks)
-  - [SearchSpendingLimits](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-braket-2019-09-01.html#searchspendinglimits)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-braket-2019-09-01.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-braket-2019-09-01.html#untagresource)
-  - [UpdateSpendingLimit](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-braket-2019-09-01.html#updatespendinglimit)
+  - [CancelJob](api-braket-2019-09-01-canceljob.md)
+  - [CancelQuantumTask](api-braket-2019-09-01-cancelquantumtask.md)
+  - [CreateJob](api-braket-2019-09-01-createjob.md)
+  - [CreateQuantumTask](api-braket-2019-09-01-createquantumtask.md)
+  - [CreateSpendingLimit](api-braket-2019-09-01-createspendinglimit.md)
+  - [DeleteSpendingLimit](api-braket-2019-09-01-deletespendinglimit.md)
+  - [GetDevice](api-braket-2019-09-01-getdevice.md)
+  - [GetJob](api-braket-2019-09-01-getjob.md)
+  - [GetQuantumTask](api-braket-2019-09-01-getquantumtask.md)
+  - [ListTagsForResource](api-braket-2019-09-01-listtagsforresource.md)
+  - [SearchDevices](api-braket-2019-09-01-searchdevices.md)
+  - [SearchJobs](api-braket-2019-09-01-searchjobs.md)
+  - [SearchQuantumTasks](api-braket-2019-09-01-searchquantumtasks.md)
+  - [SearchSpendingLimits](api-braket-2019-09-01-searchspendinglimits.md)
+  - [TagResource](api-braket-2019-09-01-tagresource.md)
+  - [UntagResource](api-braket-2019-09-01-untagresource.md)
+  - [UpdateSpendingLimit](api-braket-2019-09-01-updatespendinglimit.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Braket.BraketClient.html\#toc)
+### Table of Contents  [header link](class-aws-braket-braketclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Braket.BraketClient.html\#toc-methods)
+#### Methods  [header link](class-aws-braket-braketclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -70,7 +70,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Braket.BraketClient.html\#methods)
+### Methods  [header link](class-aws-braket-braketclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -537,7 +537,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Braket.BraketClient.html#toc-methods)
+  - [Methods](class-aws-braket-braketclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -564,4 +564,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Braket.BraketClient.html#top)
+[Back To Top](class-aws-braket-braketclient-top.md)

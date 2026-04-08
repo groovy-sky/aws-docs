@@ -4,29 +4,29 @@ Menu
 
 ## S3
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.html\#toc)
+### Table of Contents  [header link](namespace-aws-s3-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-s3-namespaces.md)
 
-[Crypto](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.crypto.html)[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.exception.html)[Parser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.parser.html)[RegionalEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.regionalendpoint.html)[S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)[UseArnRegion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.usearnregion.html)
+[Crypto](namespace-aws-s3-crypto.md)[Exception](namespace-aws-s3-exception.md)[Parser](namespace-aws-s3-parser.md)[RegionalEndpoint](namespace-aws-s3-regionalendpoint.md)[S3Transfer](namespace-aws-s3-s3transfer.md)[UseArnRegion](namespace-aws-s3-usearnregion.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.html\#toc-interfaces)
+#### Interfaces  [header link](namespace-aws-s3-toc-interfaces.md)
 
-[S3ClientInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html)\*\*Amazon Simple Storage Service\*\* client.
+[S3ClientInterface](class-aws-s3-s3clientinterface.md)\*\*Amazon Simple Storage Service\*\* client.
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.html\#toc-classes)
+#### Classes  [header link](namespace-aws-s3-toc-classes.md)
 
-[BatchDelete](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html)Efficiently deletes many objects from a single Amazon S3 bucket using an
+[BatchDelete](class-aws-s3-batchdelete.md)Efficiently deletes many objects from a single Amazon S3 bucket using an
 iterator that yields keys. Deletes are made using the DeleteObjects API
-operation.[MultipartCopy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartCopy.html)[MultipartUploader](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploader.html)Encapsulates the execution of a multipart upload to S3 or Glacier.[ObjectCopier](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectCopier.html)Copies objects from one S3 location to another, utilizing a multipart copy
-when appropriate.[ObjectUploader](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectUploader.html)Uploads an object to S3, using a PutObject command or a multipart upload as
-appropriate.[PostObject](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObject.html)[PostObjectV4](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObjectV4.html)Encapsulates the logic for getting the data for an S3 object POST upload form[S3Client](class-aws-s3-s3client.md)Client used to interact with \*\*Amazon Simple Storage Service (Amazon S3)\*\*.[S3MultiRegionClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html)\*\*Amazon Simple Storage Service\*\* multi-region client.[S3UriParser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3UriParser.html)Extracts a region, bucket, key, and and if a URI is in path-style[StreamWrapper](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.StreamWrapper.html)Amazon S3 stream wrapper to use "s3://<bucket>/<key>" files with PHP
-streams, supporting "r", "w", "a", "x".[Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Transfer.html)Transfers files from the local filesystem to S3 or from S3 to the local
+operation.[MultipartCopy](class-aws-s3-multipartcopy.md)[MultipartUploader](class-aws-s3-multipartuploader.md)Encapsulates the execution of a multipart upload to S3 or Glacier.[ObjectCopier](class-aws-s3-objectcopier.md)Copies objects from one S3 location to another, utilizing a multipart copy
+when appropriate.[ObjectUploader](class-aws-s3-objectuploader.md)Uploads an object to S3, using a PutObject command or a multipart upload as
+appropriate.[PostObject](class-aws-s3-postobject.md)[PostObjectV4](class-aws-s3-postobjectv4.md)Encapsulates the logic for getting the data for an S3 object POST upload form[S3Client](class-aws-s3-s3client.md)Client used to interact with \*\*Amazon Simple Storage Service (Amazon S3)\*\*.[S3MultiRegionClient](class-aws-s3-s3multiregionclient.md)\*\*Amazon Simple Storage Service\*\* multi-region client.[S3UriParser](class-aws-s3-s3uriparser.md)Extracts a region, bucket, key, and and if a URI is in path-style[StreamWrapper](class-aws-s3-streamwrapper.md)Amazon S3 stream wrapper to use "s3://<bucket>/<key>" files with PHP
+streams, supporting "r", "w", "a", "x".[Transfer](class-aws-s3-transfer.md)Transfers files from the local filesystem to S3 or from S3 to the local
 filesystem.
 
-#### Traits  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.html\#toc-traits)
+#### Traits  [header link](namespace-aws-s3-toc-traits.md)
 
-[CalculatesChecksumTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.CalculatesChecksumTrait.html)[MultipartUploadingTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.MultipartUploadingTrait.html)[S3ClientTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html)A trait providing S3-specific functionality. This is meant to be used in
+[CalculatesChecksumTrait](class-aws-s3-calculateschecksumtrait.md)[MultipartUploadingTrait](class-aws-s3-multipartuploadingtrait.md)[S3ClientTrait](class-aws-s3-s3clienttrait.md)A trait providing S3-specific functionality. This is meant to be used in
 classes implementing \\Aws\\S3\\S3ClientInterface
 
 ```
@@ -38,8 +38,8 @@ classes implementing \\Aws\\S3\\S3ClientInterface
 **On this page**
 
 - Table Of Contents
-  - [Interfaces](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.html#toc-interfaces)
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.html#toc-classes)
-  - [Traits](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.html#toc-traits)
+  - [Interfaces](namespace-aws-s3-toc-interfaces.md)
+  - [Classes](namespace-aws-s3-toc-classes.md)
+  - [Traits](namespace-aws-s3-toc-traits.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.html#top)
+[Back To Top](namespace-aws-s3-top.md)

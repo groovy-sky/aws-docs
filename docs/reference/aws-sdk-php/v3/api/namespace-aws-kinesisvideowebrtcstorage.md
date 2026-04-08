@@ -4,15 +4,15 @@ Menu
 
 ## KinesisVideoWebRTCStorage
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisvideowebrtcstorage.html\#toc)
+### Table of Contents  [header link](namespace-aws-kinesisvideowebrtcstorage-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisvideowebrtcstorage.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-kinesisvideowebrtcstorage-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisvideowebrtcstorage.exception.html)
+[Exception](namespace-aws-kinesisvideowebrtcstorage-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisvideowebrtcstorage.html\#toc-classes)
+#### Classes  [header link](namespace-aws-kinesisvideowebrtcstorage-toc-classes.md)
 
-[KinesisVideoWebRTCStorageClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideoWebRTCStorage.KinesisVideoWebRTCStorageClient.html)This client is used to interact with the **Amazon Kinesis Video WebRTC Storage** service.
+[KinesisVideoWebRTCStorageClient](class-aws-kinesisvideowebrtcstorage-kinesisvideowebrtcstorageclient.md)This client is used to interact with the **Amazon Kinesis Video WebRTC Storage** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisvideowebrtcstorage.html#toc-classes)
+  - [Classes](namespace-aws-kinesisvideowebrtcstorage-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kinesisvideowebrtcstorage.html#top)
+[Back To Top](namespace-aws-kinesisvideowebrtcstorage-top.md)

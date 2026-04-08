@@ -4,15 +4,15 @@ Menu
 
 ## MigrationHubOrchestrator
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.migrationhuborchestrator.html\#toc)
+### Table of Contents  [header link](namespace-aws-migrationhuborchestrator-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.migrationhuborchestrator.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-migrationhuborchestrator-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.migrationhuborchestrator.exception.html)
+[Exception](namespace-aws-migrationhuborchestrator-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.migrationhuborchestrator.html\#toc-classes)
+#### Classes  [header link](namespace-aws-migrationhuborchestrator-toc-classes.md)
 
-[MigrationHubOrchestratorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubOrchestrator.MigrationHubOrchestratorClient.html)This client is used to interact with the **AWS Migration Hub Orchestrator** service.
+[MigrationHubOrchestratorClient](class-aws-migrationhuborchestrator-migrationhuborchestratorclient.md)This client is used to interact with the **AWS Migration Hub Orchestrator** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.migrationhuborchestrator.html#toc-classes)
+  - [Classes](namespace-aws-migrationhuborchestrator-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.migrationhuborchestrator.html#top)
+[Back To Top](namespace-aws-migrationhuborchestrator-top.md)

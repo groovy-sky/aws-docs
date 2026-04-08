@@ -15,8 +15,8 @@ If you are restoring from a shared manual DB snapshot, the `DBSnapshotIdentifier
 must be the ARN of the shared DB snapshot.
 
 To restore from a DB snapshot with an unsupported engine version, you must first upgrade the
-engine version of the snapshot. For more information about upgrading a RDS for MySQL DB snapshot engine version, see [Upgrading a MySQL DB snapshot engine version](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql-upgrade-snapshot.html).
-For more information about upgrading a RDS for PostgreSQL DB snapshot engine version, [Upgrading a PostgreSQL DB snapshot engine version](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBSnapshot.PostgreSQL.html).
+engine version of the snapshot. For more information about upgrading a RDS for MySQL DB snapshot engine version, see [Upgrading a MySQL DB snapshot engine version](../../../../services/amazonrds/latest/userguide/mysql-upgrade-snapshot.md).
+For more information about upgrading a RDS for PostgreSQL DB snapshot engine version, [Upgrading a PostgreSQL DB snapshot engine version](../../../../services/amazonrds/latest/userguide/user-upgradedbsnapshot-postgresql.md).
 
 ###### Note
 
@@ -24,7 +24,7 @@ This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora, us
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 **DBInstanceIdentifier**
 
@@ -51,7 +51,7 @@ to three additional storage volumes using the names `rdsdbdata2`,
 `rdsdbdata3`, and `rdsdbdata4`. Additional storage volumes are
 supported for RDS for Oracle and RDS for SQL Server DB instances only.
 
-Type: Array of [AdditionalStorageVolume](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_AdditionalStorageVolume.html) objects
+Type: Array of [AdditionalStorageVolume](api-additionalstoragevolume.md) objects
 
 Required: No
 
@@ -78,7 +78,7 @@ during the maintenance window.
 
 If you restore an RDS Custom DB instance, you must disable this parameter.
 
-For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Upgrading.html#USER_UpgradeDBInstance.Upgrading.AutoMinorVersionUpgrades).
+For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](../../../../services/amazonrds/latest/userguide/user-upgradedbinstance-upgrading-user-upgradedbinstance-upgrading-autominorversionupgrades.md).
 
 Type: Boolean
 
@@ -160,7 +160,7 @@ In most cases, tags aren't copied by default. However, when you restore a DB ins
 specify new tags. If yes, the new tags are added to the restored DB instance. If there are no new tags, RDS looks for the tags from
 the source DB instance for the DB snapshot, and then adds those tags to the restored DB instance.
 
-For more information, see [Copying tags to DB instance snapshots](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Tagging.html#USER_Tagging.CopyTags) in the _Amazon RDS User Guide_.
+For more information, see [Copying tags to DB instance snapshots](../../../../services/amazonrds/latest/userguide/user-tagging-user-tagging-copytags.md) in the _Amazon RDS User Guide_.
 
 Type: Boolean
 
@@ -305,7 +305,7 @@ Required: No
 Specifies whether to enable deletion protection for the DB instance.
 The database can't be deleted when deletion protection is enabled. By default,
 deletion protection isn't enabled. For more information, see
-[Deleting a DB Instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DeleteInstance.html).
+[Deleting a DB Instance](../../../../services/amazonrds/latest/userguide/user-deleteinstance.md).
 
 Type: Boolean
 
@@ -317,7 +317,7 @@ The Active Directory directory ID to restore the DB instance in.
 The domain/ must be created prior to this operation. Currently, you can create only Db2, MySQL, Microsoft SQL
 Server, Oracle, and PostgreSQL DB instances in an Active Directory Domain.
 
-For more information, see [Kerberos Authentication](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/kerberos-authentication.html) in the _Amazon RDS User Guide_.
+For more information, see [Kerberos Authentication](../../../../services/amazonrds/latest/userguide/kerberos-authentication.md) in the _Amazon RDS User Guide_.
 
 This setting doesn't apply to RDS Custom.
 
@@ -397,7 +397,7 @@ Required: No
 
 The list of logs for the restored DB instance to export to CloudWatch Logs. The values
 in the list depend on the DB engine. For more information, see
-[Publishing Database Logs to Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.html#USER_LogAccess.Procedural.UploadtoCloudWatch) in the _Amazon RDS User Guide_.
+[Publishing Database Logs to Amazon CloudWatch Logs](../../../../services/amazonrds/latest/userguide/user-logaccess-user-logaccess-procedural-uploadtocloudwatch.md) in the _Amazon RDS User Guide_.
 
 This setting doesn't apply to RDS Custom.
 
@@ -419,7 +419,7 @@ This setting doesn't apply to RDS Custom.
 For more information about RDS on Outposts, see [Working with Amazon RDS on AWS Outposts](../../../../services/amazonrds/latest/userguide/rds-on-outposts.md)
 in the _Amazon RDS User Guide_.
 
-For more information about CoIPs, see [Customer-owned IP addresses](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html#ip-addressing)
+For more information about CoIPs, see [Customer-owned IP addresses](../../../../services/outposts/latest/userguide/routing-ip-addressing.md)
 in the _AWS Outposts User Guide_.
 
 Type: Boolean
@@ -432,7 +432,7 @@ Specifies whether to enable mapping of AWS Identity and Access
 Management (IAM) accounts to database accounts. By default, mapping is disabled.
 
 For more information about IAM database authentication, see
-[IAM Database Authentication for MySQL and PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html) in the _Amazon RDS User Guide._
+[IAM Database Authentication for MySQL and PostgreSQL](../../../../services/amazonrds/latest/userguide/usingwithrds-iamdbauth.md) in the _Amazon RDS User Guide._
 
 This setting doesn't apply to RDS Custom.
 
@@ -493,7 +493,7 @@ At the end of standard support, you can avoid charges for Extended Support by se
 RDS automatically upgrades your restored DB instance to a higher engine version, if the major engine version is past its end of standard support date.
 
 You can use this setting to enroll your DB instance into Amazon RDS Extended Support. With RDS Extended Support,
-you can run the selected major engine version on your DB instance past the end of standard support for that engine version. For more information, see [Amazon RDS Extended Support with Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html) in the _Amazon RDS User Guide_.
+you can run the selected major engine version on your DB instance past the end of standard support for that engine version. For more information, see [Amazon RDS Extended Support with Amazon RDS](../../../../services/amazonrds/latest/userguide/extended-support.md) in the _Amazon RDS User Guide_.
 
 This setting applies only to RDS for MySQL and RDS for PostgreSQL. For Amazon Aurora DB instances, the life cycle type is managed by the DB cluster.
 
@@ -514,7 +514,7 @@ The conversion takes additional time, though your DB instance is available for c
 
 The provisioned IOPS value must follow the requirements for your database engine.
 For more information, see
-[Amazon RDS Provisioned IOPS storage](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Storage.html#USER_PIOPS)
+[Amazon RDS Provisioned IOPS storage](../../../../services/amazonrds/latest/userguide/chap-storage-user-piops.md)
 in the _Amazon RDS User Guide._
 
 Constraints: Must be an integer greater than 1000.
@@ -533,7 +533,7 @@ License models for RDS for Db2 require additional configuration. The bring your
 own license (BYOL) model requires a custom parameter group and an AWS License
 Manager self-managed license. The Db2 license through AWS Marketplace model
 requires an AWS Marketplace subscription. For more information, see [Amazon\
-RDS for Db2 licensing options](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-licensing.html) in the _Amazon RDS User_
+RDS for Db2 licensing options](../../../../services/amazonrds/latest/userguide/db2-licensing.md) in the _Amazon RDS User_
 _Guide_.
 
 This setting doesn't apply to Amazon Aurora or RDS Custom DB instances.
@@ -563,7 +563,7 @@ Required: No
 Specifies whether to manage the master user password with AWS Secrets Manager in the
 restored DB instance.
 
-For more information, see [Password management with AWS Secrets Manager](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-secrets-manager.html)
+For more information, see [Password management with AWS Secrets Manager](../../../../services/amazonrds/latest/userguide/rds-secrets-manager.md)
 in the _Amazon RDS User Guide_.
 
 Constraints:
@@ -623,7 +623,7 @@ The network type is determined by the `DBSubnetGroup` specified for the DB insta
 A `DBSubnetGroup` can support only the IPv4 protocol or the IPv4 and the IPv6
 protocols ( `DUAL`).
 
-For more information, see [Working with a DB instance in a VPC](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.WorkingWithRDSInstanceinaVPC.html) in the
+For more information, see [Working with a DB instance in a VPC](../../../../services/amazonrds/latest/userguide/user-vpc-workingwithrdsinstanceinavpc.md) in the
 _Amazon RDS User Guide._
 
 Type: String
@@ -662,7 +662,7 @@ if automated backups are enabled,
 as determined by the `BackupRetentionPeriod` parameter.
 Changing this parameter doesn't result in an outage and the change is asynchronously applied as soon as possible.
 The default is a 30-minute window selected at random from an
-8-hour block of time for each AWS Region. For more information, see [Backup window](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html#USER_WorkingWithAutomatedBackups.BackupWindow) in the _Amazon RDS User Guide_.
+8-hour block of time for each AWS Region. For more information, see [Backup window](../../../../services/amazonrds/latest/userguide/user-workingwithautomatedbackups-user-workingwithautomatedbackups-backupwindow.md) in the _Amazon RDS User Guide_.
 
 This setting doesn't apply to Amazon Aurora DB instances. The daily time range for creating automated backups is managed by
 the DB cluster. For more information, see `ModifyDBCluster`.
@@ -687,7 +687,7 @@ The number of CPU cores and the number of threads per core for the DB instance c
 
 This setting doesn't apply to RDS Custom.
 
-Type: Array of [ProcessorFeature](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ProcessorFeature.html) objects
+Type: Array of [ProcessorFeature](api-processorfeature.md) objects
 
 Required: No
 
@@ -702,7 +702,7 @@ by the security group it uses. That public access is not permitted if the securi
 
 When the DB instance isn't publicly accessible, it is an internal DB instance with a DNS name that resolves to a private IP address.
 
-For more information, see [CreateDBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html).
+For more information, see [CreateDBInstance](api-createdbinstance.md).
 
 Type: Boolean
 
@@ -739,10 +739,10 @@ Required: No
 A list of tags.
 
 For more information, see
-[Tagging Amazon RDS resources](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Tagging.html) in the _Amazon RDS User Guide_ or
-[Tagging Amazon Aurora and Amazon RDS resources](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Tagging.html) in the _Amazon Aurora User Guide_.
+[Tagging Amazon RDS resources](../../../../services/amazonrds/latest/userguide/user-tagging.md) in the _Amazon RDS User Guide_ or
+[Tagging Amazon Aurora and Amazon RDS resources](../../../../services/amazonrds/latest/aurorauserguide/user-tagging.md) in the _Amazon Aurora User Guide_.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Required: No
 
@@ -754,7 +754,7 @@ Valid Values:
 
 - `auto-backup` \- The DB instance's automated backup.
 
-Type: Array of [TagSpecification](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_TagSpecification.html) objects
+Type: Array of [TagSpecification](api-tagspecification.md) objects
 
 Required: No
 
@@ -813,11 +813,11 @@ This data type is used as a response element in the operations `CreateDBInstance
 `RestoreDBInstanceFromDBSnapshot`, `RestoreDBInstanceFromS3`, `RestoreDBInstanceToPointInTime`,
 `StartDBInstance`, and `StopDBInstance`.
 
-Type: [DBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBInstance.html) object
+Type: [DBInstance](api-dbinstance.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **AuthorizationNotFound**
 
@@ -1063,27 +1063,27 @@ https://rds.us-east-1.amazonaws.com/
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/rds-2014-10-31/RestoreDBInstanceFromDBSnapshot)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/rds-2014-10-31/restoredbinstancefromdbsnapshot.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/rds-2014-10-31/RestoreDBInstanceFromDBSnapshot)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/rds-2014-10-31/restoredbinstancefromdbsnapshot.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/RestoreDBInstanceFromDBSnapshot)
+- [AWS SDK for C++](../../../goto/sdkforcpp/rds-2014-10-31/restoredbinstancefromdbsnapshot.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/rds-2014-10-31/RestoreDBInstanceFromDBSnapshot)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/rds-2014-10-31/restoredbinstancefromdbsnapshot.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/RestoreDBInstanceFromDBSnapshot)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/rds-2014-10-31/restoredbinstancefromdbsnapshot.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/rds-2014-10-31/RestoreDBInstanceFromDBSnapshot)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/rds-2014-10-31/restoredbinstancefromdbsnapshot.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/rds-2014-10-31/RestoreDBInstanceFromDBSnapshot)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/rds-2014-10-31/restoredbinstancefromdbsnapshot.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/rds-2014-10-31/RestoreDBInstanceFromDBSnapshot)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/rds-2014-10-31/restoredbinstancefromdbsnapshot.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/RestoreDBInstanceFromDBSnapshot)
+- [AWS SDK for Python](../../../../services/goto/boto3/rds-2014-10-31/restoredbinstancefromdbsnapshot.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/RestoreDBInstanceFromDBSnapshot)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/restoredbinstancefromdbsnapshot.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 RestoreDBClusterToPointInTime
 

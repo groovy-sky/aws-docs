@@ -4,15 +4,15 @@ Menu
 
 ## Firehose
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.firehose.html\#toc)
+### Table of Contents  [header link](namespace-aws-firehose-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.firehose.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-firehose-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.firehose.exception.html)
+[Exception](namespace-aws-firehose-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.firehose.html\#toc-classes)
+#### Classes  [header link](namespace-aws-firehose-toc-classes.md)
 
-[FirehoseClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Firehose.FirehoseClient.html)This client is used to interact with the **Amazon Kinesis Firehose** service.
+[FirehoseClient](class-aws-firehose-firehoseclient.md)This client is used to interact with the **Amazon Kinesis Firehose** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.firehose.html#toc-classes)
+  - [Classes](namespace-aws-firehose-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.firehose.html#top)
+[Back To Top](namespace-aws-firehose-top.md)

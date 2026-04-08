@@ -127,7 +127,7 @@ simple primary key, you only need to provide a value for the partition key. For 
 composite primary key, you must provide values for both the partition key and the sort
 key.
 
-Type: String to [AttributeValue](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_AttributeValue.html) object map
+Type: String to [AttributeValue](api-attributevalue.md) object map
 
 Key Length Constraints: Maximum length of 65535.
 
@@ -147,7 +147,7 @@ Required: Yes
 **[ConditionalOperator](#API_DeleteItem_RequestSyntax)**
 
 This is a legacy parameter. Use `ConditionExpression` instead. For more
-information, see [ConditionalOperator](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LegacyConditionalParameters.ConditionalOperator.html) in the _Amazon DynamoDB Developer_
+information, see [ConditionalOperator](../../../../services/dynamodb/latest/developerguide/legacyconditionalparameters-conditionaloperator.md) in the _Amazon DynamoDB Developer_
 _Guide_.
 
 Type: String
@@ -174,7 +174,7 @@ These function names are case-sensitive.
 
 - Logical operators: `AND | OR | NOT`
 
-For more information about condition expressions, see [Condition Expressions](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.SpecifyingConditions.html) in the _Amazon DynamoDB Developer_
+For more information about condition expressions, see [Condition Expressions](../../../../services/dynamodb/latest/developerguide/expressions-specifyingconditions.md) in the _Amazon DynamoDB Developer_
 _Guide_.
 
 Type: String
@@ -184,10 +184,10 @@ Required: No
 **[Expected](#API_DeleteItem_RequestSyntax)**
 
 This is a legacy parameter. Use `ConditionExpression` instead. For more
-information, see [Expected](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LegacyConditionalParameters.Expected.html) in the _Amazon DynamoDB Developer_
+information, see [Expected](../../../../services/dynamodb/latest/developerguide/legacyconditionalparameters-expected.md) in the _Amazon DynamoDB Developer_
 _Guide_.
 
-Type: String to [ExpectedAttributeValue](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ExpectedAttributeValue.html) object map
+Type: String to [ExpectedAttributeValue](api-expectedattributevalue.md) object map
 
 Key Length Constraints: Maximum length of 65535.
 
@@ -213,7 +213,7 @@ an attribute name. For example, consider the following attribute name:
 - `Percentile`
 
 The name of this attribute conflicts with a reserved word, so it cannot be used
-directly in an expression. (For the complete list of reserved words, see [Reserved Words](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ReservedWords.html) in the _Amazon DynamoDB Developer_
+directly in an expression. (For the complete list of reserved words, see [Reserved Words](../../../../services/dynamodb/latest/developerguide/reservedwords.md) in the _Amazon DynamoDB Developer_
 _Guide_). To work around this, you could specify the following for
 `ExpressionAttributeNames`:
 
@@ -229,7 +229,7 @@ Tokens that begin with the **:** character are
 _expression attribute values_, which are placeholders for the
 actual value at runtime.
 
-For more information on expression attribute names, see [Specifying Item Attributes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.AccessingItemAttributes.html) in the _Amazon DynamoDB Developer_
+For more information on expression attribute names, see [Specifying Item Attributes](../../../../services/dynamodb/latest/developerguide/expressions-accessingitemattributes.md) in the _Amazon DynamoDB Developer_
 _Guide_.
 
 Type: String to string map
@@ -258,10 +258,10 @@ You could then use these values in an expression, such as this:
 
 `ProductStatus IN (:avail, :back, :disc)`
 
-For more information on expression attribute values, see [Condition Expressions](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.SpecifyingConditions.html) in the _Amazon DynamoDB Developer_
+For more information on expression attribute values, see [Condition Expressions](../../../../services/dynamodb/latest/developerguide/expressions-specifyingconditions.md) in the _Amazon DynamoDB Developer_
 _Guide_.
 
-Type: String to [AttributeValue](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_AttributeValue.html) object map
+Type: String to [AttributeValue](api-attributevalue.md) object map
 
 Required: No
 
@@ -432,7 +432,7 @@ as it appeared before the `DeleteItem` operation. This map appears in the
 response only if `ReturnValues` was specified as `ALL_OLD` in the
 request.
 
-Type: String to [AttributeValue](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_AttributeValue.html) object map
+Type: String to [AttributeValue](api-attributevalue.md) object map
 
 Key Length Constraints: Maximum length of 65535.
 
@@ -445,7 +445,7 @@ only returned if the `ReturnConsumedCapacity` parameter was specified. For
 more information, see [Provisioned capacity mode](../../../../services/dynamodb/latest/developerguide/provisioned-capacity-mode.md) in the _Amazon DynamoDB Developer_
 _Guide_.
 
-Type: [ConsumedCapacity](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ConsumedCapacity.html) object
+Type: [ConsumedCapacity](api-consumedcapacity.md) object
 
 **[ItemCollectionMetrics](#API_DeleteItem_ResponseSyntax)**
 
@@ -470,7 +470,7 @@ secondary index is approaching its size limit.
 The estimate is subject to change over time; therefore, do not rely on the
 precision or accuracy of the estimate.
 
-Type: [ItemCollectionMetrics](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ItemCollectionMetrics.html) object
+Type: [ItemCollectionMetrics](api-itemcollectionmetrics.md) object
 
 ## Errors
 
@@ -515,7 +515,7 @@ HTTP Status Code: 400
 **ProvisionedThroughputExceededException**
 
 The request was denied due to request throttling. For detailed information about
-why the request was throttled and the ARN of the impacted resource, find the [ThrottlingReason](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ThrottlingReason.html) field in the returned exception. The AWS
+why the request was throttled and the ARN of the impacted resource, find the [ThrottlingReason](api-throttlingreason.md) field in the returned exception. The AWS
 SDKs for DynamoDB automatically retry requests that receive this exception.
 Your request is eventually successful, unless your retry queue is too large to finish.
 Reduce the frequency of requests and use exponential backoff. For more information, go
@@ -527,7 +527,7 @@ You exceeded your maximum allowed provisioned throughput.
 
 **ThrottlingReasons**
 
-A list of [ThrottlingReason](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ThrottlingReason.html) that
+A list of [ThrottlingReason](api-throttlingreason.md) that
 provide detailed diagnostic information about why the request was throttled.
 
 HTTP Status Code: 400
@@ -543,12 +543,12 @@ HTTP Status Code: 400
 
 Throughput exceeds the current throughput quota for your account. For detailed
 information about why the request was throttled and the ARN of the impacted resource,
-find the [ThrottlingReason](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ThrottlingReason.html) field in the returned exception. Contact [Support](https://aws.amazon.com/support) to request a quota
+find the [ThrottlingReason](api-throttlingreason.md) field in the returned exception. Contact [Support](https://aws.amazon.com/support) to request a quota
 increase.
 
 **ThrottlingReasons**
 
-A list of [ThrottlingReason](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ThrottlingReason.html) that
+A list of [ThrottlingReason](api-throttlingreason.md) that
 provide detailed diagnostic information about why the request was throttled.
 
 HTTP Status Code: 400
@@ -567,11 +567,11 @@ HTTP Status Code: 400
 **ThrottlingException**
 
 The request was denied due to request throttling. For detailed information about why
-the request was throttled and the ARN of the impacted resource, find the [ThrottlingReason](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ThrottlingReason.html) field in the returned exception.
+the request was throttled and the ARN of the impacted resource, find the [ThrottlingReason](api-throttlingreason.md) field in the returned exception.
 
 **throttlingReasons**
 
-A list of [ThrottlingReason](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ThrottlingReason.html) that
+A list of [ThrottlingReason](api-throttlingreason.md) that
 provide detailed diagnostic information about why the request was throttled.
 
 HTTP Status Code: 400
@@ -659,27 +659,27 @@ Date: <Date>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/dynamodb-2012-08-10/DeleteItem)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/dynamodb-2012-08-10/deleteitem.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/DeleteItem)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/dynamodb-2012-08-10/deleteitem.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/DeleteItem)
+- [AWS SDK for C++](../../../goto/sdkforcpp/dynamodb-2012-08-10/deleteitem.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/dynamodb-2012-08-10/DeleteItem)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/dynamodb-2012-08-10/deleteitem.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/DeleteItem)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/dynamodb-2012-08-10/deleteitem.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/dynamodb-2012-08-10/DeleteItem)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/dynamodb-2012-08-10/deleteitem.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/dynamodb-2012-08-10/DeleteItem)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/dynamodb-2012-08-10/deleteitem.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/DeleteItem)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/dynamodb-2012-08-10/deleteitem.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/DeleteItem)
+- [AWS SDK for Python](../../../../services/goto/boto3/dynamodb-2012-08-10/deleteitem.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/DeleteItem)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/deleteitem.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DeleteBackup
 

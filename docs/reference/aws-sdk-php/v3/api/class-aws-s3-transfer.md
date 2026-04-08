@@ -11,27 +11,27 @@ filesystem.
 This class does not support copying from the local filesystem to somewhere
 else on the local filesystem or from one S3 bucket to another.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Transfer.html\#toc)
+### Table of Contents  [header link](class-aws-s3-transfer-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Transfer.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-s3-transfer-toc-interfaces.md)
 
 [PromisorInterface](class-guzzlehttp-promise-promisorinterface.md)Interface used with classes that return a promise.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Transfer.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-transfer-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Transfer.html#method___construct)
+[\_\_construct()](class-aws-s3-transfer-method-construct.md)
 : mixed When providing the $source argument, you may provide a string referencing
 the path to a directory on disk to upload, an s3 scheme URI that contains
 the bucket and key (e.g., "s3://bucket/key"), or an \\Iterator object
 that yields strings containing filenames that are the path to a file on
 disk or an s3 scheme URI. The bucket portion of the s3 URI may be an S3
-access point ARN. The "/key" portion of an s3 URI is optional.[promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Transfer.html#method_promise)
-: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Transfers the files.[transfer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Transfer.html#method_transfer)
+access point ARN. The "/key" portion of an s3 URI is optional.[promise()](class-aws-s3-transfer-method-promise.md)
+: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Transfers the files.[transfer()](class-aws-s3-transfer-method-transfer.md)
 : mixed Transfers the files synchronously.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Transfer.html\#methods)
+### Methods  [header link](class-aws-s3-transfer-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Transfer.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-transfer-method-construct.md)
 
 When providing the $source argument, you may provide a string referencing
 the path to a directory on disk to upload, an s3 scheme URI that contains
@@ -98,7 +98,7 @@ $options
 
 Hash of options.
 
-#### promise()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Transfer.html\#method_promise)
+#### promise()  [header link](class-aws-s3-transfer-method-promise.md)
 
 Transfers the files.
 
@@ -110,7 +110,7 @@ Transfers the files.
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### transfer()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Transfer.html\#method_transfer)
+#### transfer()  [header link](class-aws-s3-transfer-method-transfer.md)
 
 Transfers the files synchronously.
 
@@ -125,10 +125,10 @@ Transfers the files synchronously.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Transfer.html#toc-methods)
+  - [Methods](class-aws-s3-transfer-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Transfer.html#method___construct)
-  - [promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Transfer.html#method_promise)
-  - [transfer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Transfer.html#method_transfer)
+  - [\_\_construct()](class-aws-s3-transfer-method-construct.md)
+  - [promise()](class-aws-s3-transfer-method-promise.md)
+  - [transfer()](class-aws-s3-transfer-method-transfer.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Transfer.html#top)
+[Back To Top](class-aws-s3-transfer-top.md)

@@ -2,46 +2,46 @@ Menu
 
 - [Aws](namespace-aws.md)
 
-## Command        in package    - [Aws](package-aws.md)       implements  [CommandInterface](class-aws-commandinterface.md)  Uses  [HasDataTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html)
+## Command        in package    - [Aws](package-aws.md)       implements  [CommandInterface](class-aws-commandinterface.md)  Uses  [HasDataTrait](class-aws-hasdatatrait.md)
 
 AWS command object.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html\#toc)
+### Table of Contents  [header link](class-aws-command-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-command-toc-interfaces.md)
 
 [CommandInterface](class-aws-commandinterface.md)A command object encapsulates the input parameters used to control the
 creation of a HTTP request and processing of a HTTP response.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html\#toc-methods)
+#### Methods  [header link](class-aws-command-toc-methods.md)
 
-[\_\_clone()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html#method___clone)
-: mixed [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html#method___construct)
-: mixed Accepts an associative array of command options, including:[count()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_count)
-: int [get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html#method_get)
-: mixed [getAuthSchemes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html#method_getAuthSchemes)
+[\_\_clone()](class-aws-command-method-clone.md)
+: mixed [\_\_construct()](class-aws-command-method-construct.md)
+: mixed Accepts an associative array of command options, including:[count()](class-aws-hasdatatrait-method-count.md)
+: int [get()](class-aws-command-method-get.md)
+: mixed [getAuthSchemes()](class-aws-command-method-getauthschemes.md)
 : mixed Get auth schemes added to command as required
-for endpoint resolution[getHandlerList()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html#method_getHandlerList)
-: [HandlerList](class-aws-handlerlist.md)Get the handler list used to transfer the command.[getIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_getIterator)
-: Traversable[getName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html#method_getName)
-: string Get the name of the command[hasParam()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html#method_hasParam)
-: bool Check if the command has a parameter by name.[offsetExists()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetExists)
-: bool [offsetGet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetGet)
+for endpoint resolution[getHandlerList()](class-aws-command-method-gethandlerlist.md)
+: [HandlerList](class-aws-handlerlist.md)Get the handler list used to transfer the command.[getIterator()](class-aws-hasdatatrait-method-getiterator.md)
+: Traversable[getName()](class-aws-command-method-getname.md)
+: string Get the name of the command[hasParam()](class-aws-command-method-hasparam.md)
+: bool Check if the command has a parameter by name.[offsetExists()](class-aws-hasdatatrait-method-offsetexists.md)
+: bool [offsetGet()](class-aws-hasdatatrait-method-offsetget.md)
 : mixed\|null This method returns a reference to the variable to allow for indirect
-array modification (e.g., $foo\['bar'\]\['baz'\] = 'qux').[offsetSet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetSet)
-: void [offsetUnset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetUnset)
-: void [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_toArray)
+array modification (e.g., $foo\['bar'\]\['baz'\] = 'qux').[offsetSet()](class-aws-hasdatatrait-method-offsetset.md)
+: void [offsetUnset()](class-aws-hasdatatrait-method-offsetunset.md)
+: void [toArray()](class-aws-hasdatatrait-method-toarray.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html\#methods)
+### Methods  [header link](class-aws-command-methods.md)
 
-#### \_\_clone()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html\#method___clone)
+#### \_\_clone()  [header link](class-aws-command-method-clone.md)
 
 `
     public
                     __clone() : mixed`
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-command-method-construct.md)
 
 Accepts an associative array of command options, including:
 
@@ -74,7 +74,7 @@ $metricsBuilder
 : MetricsBuilder\|null
 = null
 
-#### count()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_count)
+#### count()  [header link](class-aws-hasdatatrait-method-count.md)
 
 `
     public
@@ -84,7 +84,7 @@ $metricsBuilder
 
 int
 
-#### get()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html\#method_get)
+#### get()  [header link](class-aws-command-method-get.md)
 
 `
     public
@@ -95,11 +95,11 @@ int
 $name
 : mixed
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html\#method_get\#tags)
+##### Tags  [header link](class-aws-command-method-get-tags.md)
 
 deprecated
 
-#### getAuthSchemes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html\#method_getAuthSchemes)
+#### getAuthSchemes()  [header link](class-aws-command-method-getauthschemes.md)
 
 Get auth schemes added to command as required
 for endpoint resolution
@@ -108,7 +108,7 @@ for endpoint resolution
     public
                     getAuthSchemes() : mixed`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html\#method_getAuthSchemes\#tags)
+##### Tags  [header link](class-aws-command-method-getauthschemes-tags.md)
 
 returns
 
@@ -120,7 +120,7 @@ In favor of using the @context property bag.
 Auth schemes are now accessible via the `signature_version` key
 in a Command's context, if applicable.
 
-#### getHandlerList()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html\#method_getHandlerList)
+#### getHandlerList()  [header link](class-aws-command-method-gethandlerlist.md)
 
 Get the handler list used to transfer the command.
 
@@ -132,7 +132,7 @@ Get the handler list used to transfer the command.
 
 [HandlerList](class-aws-handlerlist.md)
 
-#### getIterator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_getIterator)
+#### getIterator()  [header link](class-aws-hasdatatrait-method-getiterator.md)
 
 `
     public
@@ -142,7 +142,7 @@ Get the handler list used to transfer the command.
 
 Traversable
 
-#### getName()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html\#method_getName)
+#### getName()  [header link](class-aws-command-method-getname.md)
 
 Get the name of the command
 
@@ -154,7 +154,7 @@ Get the name of the command
 
 string
 
-#### hasParam()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html\#method_hasParam)
+#### hasParam()  [header link](class-aws-command-method-hasparam.md)
 
 Check if the command has a parameter by name.
 
@@ -173,7 +173,7 @@ Name of the parameter to check
 
 bool
 
-#### offsetExists()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_offsetExists)
+#### offsetExists()  [header link](class-aws-hasdatatrait-method-offsetexists.md)
 
 `
     public
@@ -188,7 +188,7 @@ $offset
 
 bool
 
-#### offsetGet()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_offsetGet)
+#### offsetGet()  [header link](class-aws-hasdatatrait-method-offsetget.md)
 
 This method returns a reference to the variable to allow for indirect
 array modification (e.g., $foo\['bar'\]\['baz'\] = 'qux').
@@ -206,7 +206,7 @@ $offset
 
 mixed\|null
 
-#### offsetSet()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_offsetSet)
+#### offsetSet()  [header link](class-aws-hasdatatrait-method-offsetset.md)
 
 `
     public
@@ -218,7 +218,7 @@ $offset
 : mixed$value
 : mixed
 
-#### offsetUnset()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_offsetUnset)
+#### offsetUnset()  [header link](class-aws-hasdatatrait-method-offsetunset.md)
 
 `
     public
@@ -229,7 +229,7 @@ $offset
 $offset
 : mixed
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html\#method_toArray)
+#### toArray()  [header link](class-aws-hasdatatrait-method-toarray.md)
 
 `
     public
@@ -242,21 +242,21 @@ $offset
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html#toc-methods)
+  - [Methods](class-aws-command-toc-methods.md)
 - Methods
-  - [\_\_clone()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html#method___clone)
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html#method___construct)
-  - [count()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_count)
-  - [get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html#method_get)
-  - [getAuthSchemes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html#method_getAuthSchemes)
-  - [getHandlerList()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html#method_getHandlerList)
-  - [getIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_getIterator)
-  - [getName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html#method_getName)
-  - [hasParam()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html#method_hasParam)
-  - [offsetExists()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetExists)
-  - [offsetGet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetGet)
-  - [offsetSet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetSet)
-  - [offsetUnset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_offsetUnset)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HasDataTrait.html#method_toArray)
+  - [\_\_clone()](class-aws-command-method-clone.md)
+  - [\_\_construct()](class-aws-command-method-construct.md)
+  - [count()](class-aws-hasdatatrait-method-count.md)
+  - [get()](class-aws-command-method-get.md)
+  - [getAuthSchemes()](class-aws-command-method-getauthschemes.md)
+  - [getHandlerList()](class-aws-command-method-gethandlerlist.md)
+  - [getIterator()](class-aws-hasdatatrait-method-getiterator.md)
+  - [getName()](class-aws-command-method-getname.md)
+  - [hasParam()](class-aws-command-method-hasparam.md)
+  - [offsetExists()](class-aws-hasdatatrait-method-offsetexists.md)
+  - [offsetGet()](class-aws-hasdatatrait-method-offsetget.md)
+  - [offsetSet()](class-aws-hasdatatrait-method-offsetset.md)
+  - [offsetUnset()](class-aws-hasdatatrait-method-offsetunset.md)
+  - [toArray()](class-aws-hasdatatrait-method-toarray.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Command.html#top)
+[Back To Top](class-aws-command-top.md)

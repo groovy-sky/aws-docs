@@ -17,10 +17,10 @@ _destination_ in the same account of the actual delivery destination. The
 delivery destination that you create is a logical object that represents the actual
 delivery destination.
 
-- If you are delivering logs cross-account, you must use [PutDeliveryDestinationPolicy](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliveryDestinationPolicy.html) in the destination account to assign an IAM policy to the destination. This policy allows delivery to that destination.
+- If you are delivering logs cross-account, you must use [PutDeliveryDestinationPolicy](api-putdeliverydestinationpolicy.md) in the destination account to assign an IAM policy to the destination. This policy allows delivery to that destination.
 
 - Use `CreateDelivery` to create a _delivery_ by pairing
-exactly one delivery source and one delivery destination. For more information, see [CreateDelivery](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateDelivery.html).
+exactly one delivery source and one delivery destination. For more information, see [CreateDelivery](api-createdelivery.md).
 
 You can configure a single delivery source to send logs to multiple destinations by
 creating multiple deliveries. You can also create multiple deliveries to configure multiple
@@ -71,7 +71,7 @@ X-Ray trace delivery destinations. `deliveryDestinationType` is
 needed for X-Ray trace delivery destinations but not required for other logs
 delivery destinations.
 
-Type: [DeliveryDestinationConfiguration](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DeliveryDestinationConfiguration.html) object
+Type: [DeliveryDestinationConfiguration](api-deliverydestinationconfiguration.md) object
 
 Required: No
 
@@ -125,7 +125,7 @@ Required: No
 
 An optional list of key-value pairs to associate with the resource.
 
-For more information about tagging, see [Tagging AWS resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html)
+For more information about tagging, see [Tagging AWS resources](../../../../general/general/latest/gr/aws-tagging.md)
 
 Type: String to string map
 
@@ -172,7 +172,7 @@ The following data is returned in JSON format by the service.
 A structure containing information about the delivery destination that you just created or
 updated.
 
-Type: [DeliveryDestination](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DeliveryDestination.html) object
+Type: [DeliveryDestination](api-deliverydestination.md) object
 
 ## Errors
 
@@ -218,27 +218,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/logs-2014-03-28/PutDeliveryDestination)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/logs-2014-03-28/putdeliverydestination.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/logs-2014-03-28/PutDeliveryDestination)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/logs-2014-03-28/putdeliverydestination.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/PutDeliveryDestination)
+- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/putdeliverydestination.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/logs-2014-03-28/PutDeliveryDestination)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/logs-2014-03-28/putdeliverydestination.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/PutDeliveryDestination)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/putdeliverydestination.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/logs-2014-03-28/PutDeliveryDestination)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/logs-2014-03-28/putdeliverydestination.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/logs-2014-03-28/PutDeliveryDestination)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/logs-2014-03-28/putdeliverydestination.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/logs-2014-03-28/PutDeliveryDestination)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/logs-2014-03-28/putdeliverydestination.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/logs-2014-03-28/PutDeliveryDestination)
+- [AWS SDK for Python](../../../../services/goto/boto3/logs-2014-03-28/putdeliverydestination.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/logs-2014-03-28/PutDeliveryDestination)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/putdeliverydestination.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 PutDataProtectionPolicy
 

@@ -1,23 +1,23 @@
 Menu
 
 - [Aws](namespace-aws.md)
-- [Rds](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.rds.html)
+- [Rds](namespace-aws-rds.md)
 
 ## AuthTokenGenerator        in package    - [Aws](package-aws.md)
 
 Generates RDS auth tokens for use with IAM authentication.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Rds.AuthTokenGenerator.html\#toc)
+### Table of Contents  [header link](class-aws-rds-authtokengenerator-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Rds.AuthTokenGenerator.html\#toc-methods)
+#### Methods  [header link](class-aws-rds-authtokengenerator-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Rds.AuthTokenGenerator.html#method___construct)
-: mixed The constructor takes an instance of Credentials or a CredentialProvider[createToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Rds.AuthTokenGenerator.html#method_createToken)
+[\_\_construct()](class-aws-rds-authtokengenerator-method-construct.md)
+: mixed The constructor takes an instance of Credentials or a CredentialProvider[createToken()](class-aws-rds-authtokengenerator-method-createtoken.md)
 : string Create the token for database login
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Rds.AuthTokenGenerator.html\#methods)
+### Methods  [header link](class-aws-rds-authtokengenerator-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Rds.AuthTokenGenerator.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-rds-authtokengenerator-method-construct.md)
 
 The constructor takes an instance of Credentials or a CredentialProvider
 
@@ -28,9 +28,9 @@ The constructor takes an instance of Credentials or a CredentialProvider
 ##### Parameters
 
 $creds
-: callable\| [Credentials](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.Credentials.html)
+: callable\| [Credentials](class-aws-credentials-credentials.md)
 
-#### createToken()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Rds.AuthTokenGenerator.html\#method_createToken)
+#### createToken()  [header link](class-aws-rds-authtokengenerator-method-createtoken.md)
 
 Create the token for database login
 
@@ -76,9 +76,9 @@ Token generated
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Rds.AuthTokenGenerator.html#toc-methods)
+  - [Methods](class-aws-rds-authtokengenerator-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Rds.AuthTokenGenerator.html#method___construct)
-  - [createToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Rds.AuthTokenGenerator.html#method_createToken)
+  - [\_\_construct()](class-aws-rds-authtokengenerator-method-construct.md)
+  - [createToken()](class-aws-rds-authtokengenerator-method-createtoken.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Rds.AuthTokenGenerator.html#top)
+[Back To Top](class-aws-rds-authtokengenerator-top.md)

@@ -117,9 +117,9 @@ Required: No
 Information about whether a stack's actual configuration differs, or has
 _drifted_, from its expected configuration, as defined in the stack template
 and any values specified as template parameters. For more information, see [Detect\
-unmanaged configuration changes to stacks and resources with drift detection](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html).
+unmanaged configuration changes to stacks and resources with drift detection](../../../../services/cloudformation/latest/userguide/using-cfn-stack-drift.md).
 
-Type: [StackDriftInformation](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_StackDriftInformation.html) object
+Type: [StackDriftInformation](api-stackdriftinformation.md) object
 
 Required: No
 
@@ -140,7 +140,7 @@ Required: No
 
 Information about the most recent operations performed on this stack.
 
-Type: Array of [OperationEntry](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_OperationEntry.html) objects
+Type: Array of [OperationEntry](api-operationentry.md) objects
 
 Required: No
 
@@ -167,7 +167,7 @@ Required: No
 
 A list of output structures.
 
-Type: Array of [Output](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_Output.html) objects
+Type: Array of [Output](api-output.md) objects
 
 Required: No
 
@@ -175,7 +175,7 @@ Required: No
 
 A list of `Parameter` structures.
 
-Type: Array of [Parameter](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_Parameter.html) objects
+Type: Array of [Parameter](api-parameter.md) objects
 
 Required: No
 
@@ -219,7 +219,7 @@ Required: No
 The rollback triggers for CloudFormation to monitor during stack creation and updating
 operations, and for the specified monitoring period afterwards.
 
-Type: [RollbackConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_RollbackConfiguration.html) object
+Type: [RollbackConfiguration](api-rollbackconfiguration.md) object
 
 Required: No
 
@@ -255,7 +255,7 @@ Required: No
 
 A list of `Tag` s that specify information about the stack.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Array Members: Maximum number of 50 items.
 
@@ -275,13 +275,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/Stack)
+- [AWS SDK for C++](../../../goto/sdkforcpp/cloudformation-2010-05-15/stack.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/Stack)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudformation-2010-05-15/stack.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/Stack)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/stack.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ScannedResourceIdentifier
 

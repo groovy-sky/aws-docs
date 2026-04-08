@@ -7,18 +7,18 @@ Menu
 
 Represents an exception that was supplied via an EventStream.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.EventStreamDataException.html\#toc)
+### Table of Contents  [header link](class-aws-exception-eventstreamdataexception-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.EventStreamDataException.html\#toc-methods)
+#### Methods  [header link](class-aws-exception-eventstreamdataexception-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.EventStreamDataException.html#method___construct)
-: mixed [getAwsErrorCode()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.EventStreamDataException.html#method_getAwsErrorCode)
-: string\|null Get the AWS error code.[getAwsErrorMessage()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.EventStreamDataException.html#method_getAwsErrorMessage)
+[\_\_construct()](class-aws-exception-eventstreamdataexception-method-construct.md)
+: mixed [getAwsErrorCode()](class-aws-exception-eventstreamdataexception-method-getawserrorcode.md)
+: string\|null Get the AWS error code.[getAwsErrorMessage()](class-aws-exception-eventstreamdataexception-method-getawserrormessage.md)
 : string\|null Get the concise error message if any.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.EventStreamDataException.html\#methods)
+### Methods  [header link](class-aws-exception-eventstreamdataexception-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.EventStreamDataException.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-exception-eventstreamdataexception-method-construct.md)
 
 `
     public
@@ -30,7 +30,7 @@ $code
 : mixed$message
 : mixed
 
-#### getAwsErrorCode()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.EventStreamDataException.html\#method_getAwsErrorCode)
+#### getAwsErrorCode()  [header link](class-aws-exception-eventstreamdataexception-method-getawserrorcode.md)
 
 Get the AWS error code.
 
@@ -45,7 +45,7 @@ string\|null
 
 Returns null if no response was received
 
-#### getAwsErrorMessage()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.EventStreamDataException.html\#method_getAwsErrorMessage)
+#### getAwsErrorMessage()  [header link](class-aws-exception-eventstreamdataexception-method-getawserrormessage.md)
 
 Get the concise error message if any.
 
@@ -63,10 +63,10 @@ string\|null
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.EventStreamDataException.html#toc-methods)
+  - [Methods](class-aws-exception-eventstreamdataexception-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.EventStreamDataException.html#method___construct)
-  - [getAwsErrorCode()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.EventStreamDataException.html#method_getAwsErrorCode)
-  - [getAwsErrorMessage()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.EventStreamDataException.html#method_getAwsErrorMessage)
+  - [\_\_construct()](class-aws-exception-eventstreamdataexception-method-construct.md)
+  - [getAwsErrorCode()](class-aws-exception-eventstreamdataexception-method-getawserrorcode.md)
+  - [getAwsErrorMessage()](class-aws-exception-eventstreamdataexception-method-getawserrormessage.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.EventStreamDataException.html#top)
+[Back To Top](class-aws-exception-eventstreamdataexception-top.md)

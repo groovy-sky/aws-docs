@@ -2,7 +2,7 @@
 
 Adds a new schema to your GraphQL API.
 
-This operation is asynchronous. Use [GetSchemaCreationStatus](https://docs.aws.amazon.com/appsync/latest/APIReference/API_GetSchemaCreationStatus.html) to
+This operation is asynchronous. Use [GetSchemaCreationStatus](api-getschemacreationstatus.md) to
 determine when it has completed.
 
 ## Request Syntax
@@ -68,7 +68,7 @@ Valid Values: `PROCESSING | ACTIVE | DELETING | FAILED | SUCCESS | NOT_APPLICABL
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/appsync/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **BadRequestException**
 
@@ -117,27 +117,27 @@ HTTP Status Code: 401
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appsync-2017-07-25/StartSchemaCreation)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/appsync-2017-07-25/startschemacreation.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appsync-2017-07-25/StartSchemaCreation)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appsync-2017-07-25/startschemacreation.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appsync-2017-07-25/StartSchemaCreation)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appsync-2017-07-25/startschemacreation.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appsync-2017-07-25/StartSchemaCreation)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/appsync-2017-07-25/startschemacreation.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appsync-2017-07-25/StartSchemaCreation)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appsync-2017-07-25/startschemacreation.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appsync-2017-07-25/StartSchemaCreation)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appsync-2017-07-25/startschemacreation.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appsync-2017-07-25/StartSchemaCreation)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appsync-2017-07-25/startschemacreation.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appsync-2017-07-25/StartSchemaCreation)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appsync-2017-07-25/startschemacreation.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/appsync-2017-07-25/StartSchemaCreation)
+- [AWS SDK for Python](../../../../services/goto/boto3/appsync-2017-07-25/startschemacreation.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appsync-2017-07-25/StartSchemaCreation)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appsync-2017-07-25/startschemacreation.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 StartDataSourceIntrospection
 

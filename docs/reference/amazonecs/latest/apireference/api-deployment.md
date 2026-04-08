@@ -50,7 +50,7 @@ Required: No
 
 The Fargate ephemeral storage settings for the deployment.
 
-Type: [DeploymentEphemeralStorage](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeploymentEphemeralStorage.html) object
+Type: [DeploymentEphemeralStorage](api-deploymentephemeralstorage.md) object
 
 Required: No
 
@@ -65,7 +65,7 @@ Required: No
 **launchType**
 
 The launch type the tasks in the service are using. For more information, see [Amazon\
-ECS Launch Types](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_types.html) in the _Amazon Elastic Container Service Developer_
+ECS Launch Types](../../../../services/amazonecs/latest/developerguide/launch-types.md) in the _Amazon Elastic Container Service Developer_
 _Guide_.
 
 Type: String
@@ -109,7 +109,7 @@ Required: No
 
 The platform version that your tasks in the service run on. A platform version is only
 specified for tasks using the Fargate launch type. If one isn't specified, the
-`LATEST` platform version is used. For more information, see [AWS Fargate Platform Versions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html) in the _Amazon Elastic_
+`LATEST` platform version is used. For more information, see [AWS Fargate Platform Versions](../../../../services/amazonecs/latest/developerguide/platform-versions.md) in the _Amazon Elastic_
 _Container Service Developer Guide_.
 
 Type: String
@@ -179,7 +179,7 @@ Required: No
 The list of Service Connect resources that are associated with this deployment. Each
 list entry maps a discovery name to a AWS Cloud Map service name.
 
-Type: Array of [ServiceConnectServiceResource](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ServiceConnectServiceResource.html) objects
+Type: Array of [ServiceConnectServiceResource](api-serviceconnectserviceresource.md) objects
 
 Required: No
 
@@ -243,13 +243,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/Deployment)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/deployment.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/Deployment)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/deployment.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/Deployment)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/deployment.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DaemonVolume
 

@@ -16,9 +16,9 @@ It's strongly recommended that you use dynamic references to restrict sensitive
 configuration definitions, such as third-party credentials. For more information, see [Specify values stored in other services using dynamic references](../../../../services/cloudformation/latest/userguide/dynamic-references.md) in the
 _AWS CloudFormation User Guide_.
 
-For more information about setting the configuration data for resource types, see [Defining the account-level configuration of an extension](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-model.html#resource-type-howto-configuration) in the
+For more information about setting the configuration data for resource types, see [Defining the account-level configuration of an extension](../../../../services/cloudformation-cli/latest/userguide/resource-type-model-resource-type-howto-configuration.md) in the
 _AWS CloudFormation Command Line Interface (CLI) User Guide_. For more information about setting the configuration
-data for Hooks, see the [CloudFormation Hooks User Guide](https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguide/what-is-cloudformation-hooks.html).
+data for Hooks, see the [CloudFormation Hooks User Guide](../../../../services/cloudformation-cli/latest/hooks-userguide/what-is-cloudformation-hooks.md).
 
 ## Request Parameters
 
@@ -71,8 +71,8 @@ Required: No
 
 The Amazon Resource Name (ARN) for the extension in this account and Region.
 
-For public extensions, this will be the ARN assigned when you call the [ActivateType](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ActivateType.html) API operation in this account and Region. For private extensions, this
-will be the ARN assigned when you call the [RegisterType](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_RegisterType.html) API
+For public extensions, this will be the ARN assigned when you call the [ActivateType](api-activatetype.md) API operation in this account and Region. For private extensions, this
+will be the ARN assigned when you call the [RegisterType](api-registertype.md) API
 operation in this account and Region.
 
 Do not include the extension versions suffix at the end of the ARN. You can set the
@@ -143,27 +143,27 @@ HTTP Status Code: 404
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/SetTypeConfiguration)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/cloudformation-2010-05-15/settypeconfiguration.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/SetTypeConfiguration)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/cloudformation-2010-05-15/settypeconfiguration.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/SetTypeConfiguration)
+- [AWS SDK for C++](../../../goto/sdkforcpp/cloudformation-2010-05-15/settypeconfiguration.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/SetTypeConfiguration)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/cloudformation-2010-05-15/settypeconfiguration.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/SetTypeConfiguration)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudformation-2010-05-15/settypeconfiguration.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/SetTypeConfiguration)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/cloudformation-2010-05-15/settypeconfiguration.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/SetTypeConfiguration)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/cloudformation-2010-05-15/settypeconfiguration.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/SetTypeConfiguration)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/cloudformation-2010-05-15/settypeconfiguration.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/SetTypeConfiguration)
+- [AWS SDK for Python](../../../../services/goto/boto3/cloudformation-2010-05-15/settypeconfiguration.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/SetTypeConfiguration)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/settypeconfiguration.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 SetStackPolicy
 

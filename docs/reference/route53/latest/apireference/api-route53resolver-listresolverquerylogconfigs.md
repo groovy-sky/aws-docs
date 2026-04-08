@@ -36,7 +36,7 @@ An optional specification to return a subset of query logging configurations.
 If you submit a second or subsequent `ListResolverQueryLogConfigs` request and specify the `NextToken` parameter,
 you must use the same values for `Filters`, if any, as in the previous request.
 
-Type: Array of [Filter](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_Filter.html) objects
+Type: Array of [Filter](api-route53resolver-filter.md) objects
 
 Required: No
 
@@ -174,7 +174,7 @@ Type: String
 A list that contains one `ResolverQueryLogConfig` element for each query logging configuration that matches the
 values that you specified for `Filter`.
 
-Type: Array of [ResolverQueryLogConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ResolverQueryLogConfig.html) objects
+Type: Array of [ResolverQueryLogConfig](api-route53resolver-resolverquerylogconfig.md) objects
 
 **[TotalCount](#API_route53resolver_ListResolverQueryLogConfigs_ResponseSyntax)**
 
@@ -313,27 +313,27 @@ Connection: keep-alive
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/route53resolver-2018-04-01/ListResolverQueryLogConfigs)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53resolver-2018-04-01/listresolverquerylogconfigs.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/route53resolver-2018-04-01/ListResolverQueryLogConfigs)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53resolver-2018-04-01/listresolverquerylogconfigs.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53resolver-2018-04-01/ListResolverQueryLogConfigs)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53resolver-2018-04-01/listresolverquerylogconfigs.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/route53resolver-2018-04-01/ListResolverQueryLogConfigs)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53resolver-2018-04-01/listresolverquerylogconfigs.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53resolver-2018-04-01/ListResolverQueryLogConfigs)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53resolver-2018-04-01/listresolverquerylogconfigs.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/route53resolver-2018-04-01/ListResolverQueryLogConfigs)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53resolver-2018-04-01/listresolverquerylogconfigs.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/route53resolver-2018-04-01/ListResolverQueryLogConfigs)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53resolver-2018-04-01/listresolverquerylogconfigs.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/route53resolver-2018-04-01/ListResolverQueryLogConfigs)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53resolver-2018-04-01/listresolverquerylogconfigs.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/route53resolver-2018-04-01/ListResolverQueryLogConfigs)
+- [AWS SDK for Python](../../../../services/goto/boto3/route53resolver-2018-04-01/listresolverquerylogconfigs.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53resolver-2018-04-01/ListResolverQueryLogConfigs)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53resolver-2018-04-01/listresolverquerylogconfigs.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ListResolverQueryLogConfigAssociations
 

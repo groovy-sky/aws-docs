@@ -17,26 +17,26 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2016-08-04**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-health-2016-08-04.html)
+- [**2016-08-04**](api-health-2016-08-04.md)
 
-  - [DescribeAffectedAccountsForOrganization](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-health-2016-08-04.html#describeaffectedaccountsfororganization)
-  - [DescribeAffectedEntities](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-health-2016-08-04.html#describeaffectedentities)
-  - [DescribeAffectedEntitiesForOrganization](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-health-2016-08-04.html#describeaffectedentitiesfororganization)
-  - [DescribeEntityAggregates](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-health-2016-08-04.html#describeentityaggregates)
-  - [DescribeEntityAggregatesForOrganization](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-health-2016-08-04.html#describeentityaggregatesfororganization)
-  - [DescribeEventAggregates](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-health-2016-08-04.html#describeeventaggregates)
-  - [DescribeEventDetails](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-health-2016-08-04.html#describeeventdetails)
-  - [DescribeEventDetailsForOrganization](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-health-2016-08-04.html#describeeventdetailsfororganization)
-  - [DescribeEventTypes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-health-2016-08-04.html#describeeventtypes)
-  - [DescribeEvents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-health-2016-08-04.html#describeevents)
-  - [DescribeEventsForOrganization](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-health-2016-08-04.html#describeeventsfororganization)
-  - [DescribeHealthServiceStatusForOrganization](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-health-2016-08-04.html#describehealthservicestatusfororganization)
-  - [DisableHealthServiceAccessForOrganization](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-health-2016-08-04.html#disablehealthserviceaccessfororganization)
-  - [EnableHealthServiceAccessForOrganization](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-health-2016-08-04.html#enablehealthserviceaccessfororganization)
+  - [DescribeAffectedAccountsForOrganization](api-health-2016-08-04-describeaffectedaccountsfororganization.md)
+  - [DescribeAffectedEntities](api-health-2016-08-04-describeaffectedentities.md)
+  - [DescribeAffectedEntitiesForOrganization](api-health-2016-08-04-describeaffectedentitiesfororganization.md)
+  - [DescribeEntityAggregates](api-health-2016-08-04-describeentityaggregates.md)
+  - [DescribeEntityAggregatesForOrganization](api-health-2016-08-04-describeentityaggregatesfororganization.md)
+  - [DescribeEventAggregates](api-health-2016-08-04-describeeventaggregates.md)
+  - [DescribeEventDetails](api-health-2016-08-04-describeeventdetails.md)
+  - [DescribeEventDetailsForOrganization](api-health-2016-08-04-describeeventdetailsfororganization.md)
+  - [DescribeEventTypes](api-health-2016-08-04-describeeventtypes.md)
+  - [DescribeEvents](api-health-2016-08-04-describeevents.md)
+  - [DescribeEventsForOrganization](api-health-2016-08-04-describeeventsfororganization.md)
+  - [DescribeHealthServiceStatusForOrganization](api-health-2016-08-04-describehealthservicestatusfororganization.md)
+  - [DisableHealthServiceAccessForOrganization](api-health-2016-08-04-disablehealthserviceaccessfororganization.md)
+  - [EnableHealthServiceAccessForOrganization](api-health-2016-08-04-enablehealthserviceaccessfororganization.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Health.HealthClient.html\#toc)
+### Table of Contents  [header link](class-aws-health-healthclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Health.HealthClient.html\#toc-methods)
+#### Methods  [header link](class-aws-health-healthclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -67,7 +67,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Health.HealthClient.html\#methods)
+### Methods  [header link](class-aws-health-healthclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -534,7 +534,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Health.HealthClient.html#toc-methods)
+  - [Methods](class-aws-health-healthclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -561,4 +561,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Health.HealthClient.html#top)
+[Back To Top](class-aws-health-healthclient-top.md)

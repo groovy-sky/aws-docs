@@ -4,15 +4,15 @@ Menu
 
 ## BackupGateway
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.backupgateway.html\#toc)
+### Table of Contents  [header link](namespace-aws-backupgateway-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.backupgateway.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-backupgateway-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.backupgateway.exception.html)
+[Exception](namespace-aws-backupgateway-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.backupgateway.html\#toc-classes)
+#### Classes  [header link](namespace-aws-backupgateway-toc-classes.md)
 
-[BackupGatewayClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BackupGateway.BackupGatewayClient.html)This client is used to interact with the **AWS Backup Gateway** service.
+[BackupGatewayClient](class-aws-backupgateway-backupgatewayclient.md)This client is used to interact with the **AWS Backup Gateway** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.backupgateway.html#toc-classes)
+  - [Classes](namespace-aws-backupgateway-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.backupgateway.html#top)
+[Back To Top](namespace-aws-backupgateway-top.md)

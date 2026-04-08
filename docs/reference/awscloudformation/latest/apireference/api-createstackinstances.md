@@ -69,7 +69,7 @@ instances in the specified AWS Regions.
 You can specify `Accounts` or `DeploymentTargets`, but not
 both.
 
-Type: [DeploymentTargets](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DeploymentTargets.html) object
+Type: [DeploymentTargets](api-deploymenttargets.md) object
 
 Required: No
 
@@ -97,7 +97,7 @@ Required: No
 
 Preferences for how CloudFormation performs this StackSet operation.
 
-Type: [StackSetOperationPreferences](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_StackSetOperationPreferences.html) object
+Type: [StackSetOperationPreferences](api-stacksetoperationpreferences.md) object
 
 Required: No
 
@@ -127,7 +127,7 @@ During StackSet updates, any parameter values overridden for a stack instance ar
 updated, but retain their overridden value.
 
 You can only override the parameter _values_ that are specified in the
-StackSet; to add or delete a parameter itself, use [UpdateStackSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_UpdateStackSet.html)
+StackSet; to add or delete a parameter itself, use [UpdateStackSet](api-updatestackset.md)
 to update the StackSet template.
 
 Type: Array of [Parameter](api-parameter.md) objects
@@ -257,27 +257,27 @@ https://cloudformation.us-east-1.amazonaws.com/
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/CreateStackInstances)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/cloudformation-2010-05-15/createstackinstances.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/CreateStackInstances)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/cloudformation-2010-05-15/createstackinstances.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/CreateStackInstances)
+- [AWS SDK for C++](../../../goto/sdkforcpp/cloudformation-2010-05-15/createstackinstances.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/CreateStackInstances)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/cloudformation-2010-05-15/createstackinstances.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/CreateStackInstances)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudformation-2010-05-15/createstackinstances.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/CreateStackInstances)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/cloudformation-2010-05-15/createstackinstances.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/CreateStackInstances)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/cloudformation-2010-05-15/createstackinstances.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/CreateStackInstances)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/cloudformation-2010-05-15/createstackinstances.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/CreateStackInstances)
+- [AWS SDK for Python](../../../../services/goto/boto3/cloudformation-2010-05-15/createstackinstances.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/CreateStackInstances)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/createstackinstances.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateStack
 

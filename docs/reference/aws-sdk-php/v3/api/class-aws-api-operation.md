@@ -7,20 +7,20 @@ Menu
 
 Represents an API operation.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html\#toc)
+### Table of Contents  [header link](class-aws-api-operation-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html\#toc-methods)
+#### Methods  [header link](class-aws-api-operation-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html#method___construct)
-: mixed [getContextParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html#method_getContextParams)
+[\_\_construct()](class-aws-api-operation-method-construct.md)
+: mixed [getContextParams()](class-aws-api-operation-method-getcontextparams.md)
 : array<string\|int, mixed> Gets definition of modeled dynamic values used
-for endpoint resolution[getErrors()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html#method_getErrors)
-: array<string\|int, [StructureShape](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html) \> Get an array of operation error shapes.[getHttp()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html#method_getHttp)
-: array<string\|int, mixed> Returns an associative array of the HTTP attribute of the operation:[getInput()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html#method_getInput)
-: [StructureShape](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html)Get the input shape of the operation.[getOperationContextParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html#method_getOperationContextParams)
+for endpoint resolution[getErrors()](class-aws-api-operation-method-geterrors.md)
+: array<string\|int, [StructureShape](class-aws-api-structureshape.md) \> Get an array of operation error shapes.[getHttp()](class-aws-api-operation-method-gethttp.md)
+: array<string\|int, mixed> Returns an associative array of the HTTP attribute of the operation:[getInput()](class-aws-api-operation-method-getinput.md)
+: [StructureShape](class-aws-api-structureshape.md)Get the input shape of the operation.[getOperationContextParams()](class-aws-api-operation-method-getoperationcontextparams.md)
 : array<string\|int, mixed> Gets definition of modeled dynamic values used
-for endpoint resolution[getOutput()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html#method_getOutput)
-: [StructureShape](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html)Get the output shape of the operation.[getStaticContextParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html#method_getStaticContextParams)
+for endpoint resolution[getOutput()](class-aws-api-operation-method-getoutput.md)
+: [StructureShape](class-aws-api-structureshape.md)Get the output shape of the operation.[getStaticContextParams()](class-aws-api-operation-method-getstaticcontextparams.md)
 : array<string\|int, mixed> Gets static modeled static values used for
 endpoint resolution.[offsetExists()](class-aws-api-abstractmodel.md#method_offsetExists)
 : bool [offsetGet()](class-aws-api-abstractmodel.md#method_offsetGet)
@@ -29,9 +29,9 @@ endpoint resolution.[offsetExists()](class-aws-api-abstractmodel.md#method_offse
 : void [toArray()](class-aws-api-abstractmodel.md#method_toArray)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html\#methods)
+### Methods  [header link](class-aws-api-operation-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-api-operation-method-construct.md)
 
 `
     public
@@ -45,11 +45,11 @@ $definition
 Service description
 
 $shapeMap
-: [ShapeMap](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html)
+: [ShapeMap](class-aws-api-shapemap.md)
 
 Shapemap used for creating shapes
 
-#### getContextParams()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html\#method_getContextParams)
+#### getContextParams()  [header link](class-aws-api-operation-method-getcontextparams.md)
 
 Gets definition of modeled dynamic values used
 for endpoint resolution
@@ -62,7 +62,7 @@ for endpoint resolution
 
 array<string\|int, mixed>
 
-#### getErrors()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html\#method_getErrors)
+#### getErrors()  [header link](class-aws-api-operation-method-geterrors.md)
 
 Get an array of operation error shapes.
 
@@ -72,9 +72,9 @@ Get an array of operation error shapes.
 
 ##### Return values
 
-array<string\|int, [StructureShape](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html) >
+array<string\|int, [StructureShape](class-aws-api-structureshape.md) >
 
-#### getHttp()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html\#method_getHttp)
+#### getHttp()  [header link](class-aws-api-operation-method-gethttp.md)
 
 Returns an associative array of the HTTP attribute of the operation:
 
@@ -89,7 +89,7 @@ Returns an associative array of the HTTP attribute of the operation:
 
 array<string\|int, mixed>
 
-#### getInput()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html\#method_getInput)
+#### getInput()  [header link](class-aws-api-operation-method-getinput.md)
 
 Get the input shape of the operation.
 
@@ -99,9 +99,9 @@ Get the input shape of the operation.
 
 ##### Return values
 
-[StructureShape](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html)
+[StructureShape](class-aws-api-structureshape.md)
 
-#### getOperationContextParams()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html\#method_getOperationContextParams)
+#### getOperationContextParams()  [header link](class-aws-api-operation-method-getoperationcontextparams.md)
 
 Gets definition of modeled dynamic values used
 for endpoint resolution
@@ -114,7 +114,7 @@ for endpoint resolution
 
 array<string\|int, mixed>
 
-#### getOutput()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html\#method_getOutput)
+#### getOutput()  [header link](class-aws-api-operation-method-getoutput.md)
 
 Get the output shape of the operation.
 
@@ -124,9 +124,9 @@ Get the output shape of the operation.
 
 ##### Return values
 
-[StructureShape](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.StructureShape.html)
+[StructureShape](class-aws-api-structureshape.md)
 
-#### getStaticContextParams()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html\#method_getStaticContextParams)
+#### getStaticContextParams()  [header link](class-aws-api-operation-method-getstaticcontextparams.md)
 
 Gets static modeled static values used for
 endpoint resolution.
@@ -205,20 +205,20 @@ $offset
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html#toc-methods)
+  - [Methods](class-aws-api-operation-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html#method___construct)
-  - [getContextParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html#method_getContextParams)
-  - [getErrors()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html#method_getErrors)
-  - [getHttp()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html#method_getHttp)
-  - [getInput()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html#method_getInput)
-  - [getOperationContextParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html#method_getOperationContextParams)
-  - [getOutput()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html#method_getOutput)
-  - [getStaticContextParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html#method_getStaticContextParams)
+  - [\_\_construct()](class-aws-api-operation-method-construct.md)
+  - [getContextParams()](class-aws-api-operation-method-getcontextparams.md)
+  - [getErrors()](class-aws-api-operation-method-geterrors.md)
+  - [getHttp()](class-aws-api-operation-method-gethttp.md)
+  - [getInput()](class-aws-api-operation-method-getinput.md)
+  - [getOperationContextParams()](class-aws-api-operation-method-getoperationcontextparams.md)
+  - [getOutput()](class-aws-api-operation-method-getoutput.md)
+  - [getStaticContextParams()](class-aws-api-operation-method-getstaticcontextparams.md)
   - [offsetExists()](class-aws-api-abstractmodel.md#method_offsetExists)
   - [offsetGet()](class-aws-api-abstractmodel.md#method_offsetGet)
   - [offsetSet()](class-aws-api-abstractmodel.md#method_offsetSet)
   - [offsetUnset()](class-aws-api-abstractmodel.md#method_offsetUnset)
   - [toArray()](class-aws-api-abstractmodel.md#method_toArray)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Operation.html#top)
+[Back To Top](class-aws-api-operation-top.md)

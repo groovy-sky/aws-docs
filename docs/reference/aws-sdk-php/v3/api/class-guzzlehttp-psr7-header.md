@@ -1,29 +1,29 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Psr7](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.psr7.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Psr7](namespace-guzzlehttp-psr7.md)
 
 ## Header        in package    - [Aws](package-aws.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Header.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-psr7-header-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Header.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-psr7-header-toc-methods.md)
 
-[normalize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Header.html#method_normalize)
+[normalize()](class-guzzlehttp-psr7-header-method-normalize.md)
 : array<string\|int, mixed> Converts an array of header values that may contain comma separated
-headers into an array of headers with no comma separated values.[parse()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Header.html#method_parse)
+headers into an array of headers with no comma separated values.[parse()](class-guzzlehttp-psr7-header-method-parse.md)
 : array<string\|int, mixed> Parse an array of header values containing ";" separated data into an
 array of associative arrays representing the header key value pair data
 of the header. When a parameter does not contain a value, but just
-contains a key, this function will inject a key with a '' string value.[splitList()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Header.html#method_splitList)
+contains a key, this function will inject a key with a '' string value.[splitList()](class-guzzlehttp-psr7-header-method-splitlist.md)
 : array<string\|int, string> Splits a HTTP header defined to contain a comma-separated list into
 each individual value. Empty values will be removed.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Header.html\#methods)
+### Methods  [header link](class-guzzlehttp-psr7-header-methods.md)
 
-#### normalize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Header.html\#method_normalize)
+#### normalize()  [header link](class-guzzlehttp-psr7-header-method-normalize.md)
 
 Converts an array of header values that may contain comma separated
 headers into an array of headers with no comma separated values.
@@ -39,7 +39,7 @@ $header
 
 Header to normalize.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Header.html\#method_normalize\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-header-method-normalize-tags.md)
 
 deprecated
 
@@ -49,7 +49,7 @@ Use self::splitList() instead.
 
 array<string\|int, mixed>
 
-#### parse()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Header.html\#method_parse)
+#### parse()  [header link](class-guzzlehttp-psr7-header-method-parse.md)
 
 Parse an array of header values containing ";" separated data into an
 array of associative arrays representing the header key value pair data
@@ -71,7 +71,7 @@ Header to parse into components.
 
 array<string\|int, mixed>
 
-#### splitList()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Header.html\#method_splitList)
+#### splitList()  [header link](class-guzzlehttp-psr7-header-method-splitlist.md)
 
 Splits a HTTP header defined to contain a comma-separated list into
 each individual value. Empty values will be removed.
@@ -102,10 +102,10 @@ array<string\|int, string>
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Header.html#toc-methods)
+  - [Methods](class-guzzlehttp-psr7-header-toc-methods.md)
 - Methods
-  - [normalize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Header.html#method_normalize)
-  - [parse()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Header.html#method_parse)
-  - [splitList()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Header.html#method_splitList)
+  - [normalize()](class-guzzlehttp-psr7-header-method-normalize.md)
+  - [parse()](class-guzzlehttp-psr7-header-method-parse.md)
+  - [splitList()](class-guzzlehttp-psr7-header-method-splitlist.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Header.html#top)
+[Back To Top](class-guzzlehttp-psr7-header-top.md)

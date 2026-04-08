@@ -1,8 +1,8 @@
 Menu
 
-- [Psr](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.html)
-- [Http](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.html)
-- [Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.client.html)
+- [Psr](namespace-psr.md)
+- [Http](namespace-psr-http.md)
+- [Client](namespace-psr-http-client.md)
 
 ## RequestExceptionInterface    extends  [ClientExceptionInterface](class-psr-http-client-clientexceptioninterface.md)   in    - [Aws](package-aws.md)
 
@@ -13,16 +13,16 @@ Examples:
 - Request is invalid (e.g. method is missing)
 - Runtime request errors (e.g. the body stream is not seekable)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.RequestExceptionInterface.html\#toc)
+### Table of Contents  [header link](class-psr-http-client-requestexceptioninterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.RequestExceptionInterface.html\#toc-methods)
+#### Methods  [header link](class-psr-http-client-requestexceptioninterface-toc-methods.md)
 
-[getRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.RequestExceptionInterface.html#method_getRequest)
+[getRequest()](class-psr-http-client-requestexceptioninterface-method-getrequest.md)
 : [RequestInterface](class-psr-http-message-requestinterface.md)Returns the request.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.RequestExceptionInterface.html\#methods)
+### Methods  [header link](class-psr-http-client-requestexceptioninterface-methods.md)
 
-#### getRequest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.RequestExceptionInterface.html\#method_getRequest)
+#### getRequest()  [header link](class-psr-http-client-requestexceptioninterface-method-getrequest.md)
 
 Returns the request.
 
@@ -42,9 +42,9 @@ The request object MAY be a different object from the one passed to ClientInterf
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.RequestExceptionInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.RequestExceptionInterface.html#toc-methods)
+  - [Constants](class-psr-http-client-requestexceptioninterface-toc-constants.md)
+  - [Methods](class-psr-http-client-requestexceptioninterface-toc-methods.md)
 - Methods
-  - [getRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.RequestExceptionInterface.html#method_getRequest)
+  - [getRequest()](class-psr-http-client-requestexceptioninterface-method-getrequest.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Client.RequestExceptionInterface.html#top)
+[Back To Top](class-psr-http-client-requestexceptioninterface-top.md)

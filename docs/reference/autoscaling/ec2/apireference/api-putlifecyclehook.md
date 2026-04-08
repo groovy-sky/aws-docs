@@ -25,10 +25,10 @@ group:
 **used when the instances launch or terminate.**
 
 5. If you need more time, record the lifecycle action heartbeat to keep the
-    instance in a wait state using the [RecordLifecycleActionHeartbeat](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_RecordLifecycleActionHeartbeat.html) API call.
+    instance in a wait state using the [RecordLifecycleActionHeartbeat](api-recordlifecycleactionheartbeat.md) API call.
 
 6. If you finish before the timeout period ends, send a callback by using the
-    [CompleteLifecycleAction](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_CompleteLifecycleAction.html) API call.
+    [CompleteLifecycleAction](api-completelifecycleaction.md) API call.
 
 For more information, see [Amazon EC2 Auto Scaling lifecycle\
 hooks](../../../../services/autoscaling/ec2/userguide/lifecycle-hooks.md) in the _Amazon EC2 Auto Scaling User Guide_.
@@ -37,12 +37,12 @@ If you exceed your maximum limit of lifecycle hooks, which by default is 50 per 
 group, the call fails.
 
 You can view the lifecycle hooks for an Auto Scaling group using the
-[DescribeLifecycleHooks](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DescribeLifecycleHooks.html) API call. If you are no longer using a lifecycle
-hook, you can delete it by calling the [DeleteLifecycleHook](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DeleteLifecycleHook.html) API.
+[DescribeLifecycleHooks](api-describelifecyclehooks.md) API call. If you are no longer using a lifecycle
+hook, you can delete it by calling the [DeleteLifecycleHook](api-deletelifecyclehook.md) API.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 **AutoScalingGroupName**
 
@@ -160,13 +160,13 @@ Required: No
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **LimitExceeded**
 
 You have already reached a limit for your Amazon EC2 Auto Scaling resources
 (for example, Auto Scaling groups, launch configurations, or lifecycle hooks). For more
-information, see [DescribeAccountLimits](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DescribeAccountLimits.html).
+information, see [DescribeAccountLimits](api-describeaccountlimits.md).
 
 **message**
 
@@ -205,27 +205,27 @@ https://autoscaling.amazonaws.com/?Action=PutLifecycleHook
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/autoscaling-2011-01-01/PutLifecycleHook)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/autoscaling-2011-01-01/putlifecyclehook.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/autoscaling-2011-01-01/PutLifecycleHook)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/autoscaling-2011-01-01/putlifecyclehook.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/autoscaling-2011-01-01/PutLifecycleHook)
+- [AWS SDK for C++](../../../goto/sdkforcpp/autoscaling-2011-01-01/putlifecyclehook.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/autoscaling-2011-01-01/PutLifecycleHook)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/autoscaling-2011-01-01/putlifecyclehook.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/autoscaling-2011-01-01/PutLifecycleHook)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/autoscaling-2011-01-01/putlifecyclehook.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/autoscaling-2011-01-01/PutLifecycleHook)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/autoscaling-2011-01-01/putlifecyclehook.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/autoscaling-2011-01-01/PutLifecycleHook)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/autoscaling-2011-01-01/putlifecyclehook.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/autoscaling-2011-01-01/PutLifecycleHook)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/autoscaling-2011-01-01/putlifecyclehook.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/autoscaling-2011-01-01/PutLifecycleHook)
+- [AWS SDK for Python](../../../../services/goto/boto3/autoscaling-2011-01-01/putlifecyclehook.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/autoscaling-2011-01-01/PutLifecycleHook)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/autoscaling-2011-01-01/putlifecyclehook.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 LaunchInstances
 

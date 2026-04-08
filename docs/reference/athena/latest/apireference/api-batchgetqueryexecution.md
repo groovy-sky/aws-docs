@@ -3,8 +3,8 @@
 Returns the details of a single query execution or a list of up to 50 query
 executions, which you provide as an array of query execution ID strings. Requires you to
 have access to the workgroup in which the queries ran. To get a list of query execution
-IDs, use [ListQueryExecutions:WorkGroup](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListQueryExecutions.html#athena-ListQueryExecutions-request-WorkGroup). Query executions differ
-from named (saved) queries. Use [BatchGetNamedQueryInput](https://docs.aws.amazon.com/athena/latest/APIReference/API_BatchGetNamedQueryInput.html) to get details
+IDs, use [ListQueryExecutions:WorkGroup](api-listqueryexecutions-athena-listqueryexecutions-request-workgroup.md). Query executions differ
+from named (saved) queries. Use [BatchGetNamedQueryInput](api-batchgetnamedqueryinput.md) to get details
 about named queries.
 
 ## Request Syntax
@@ -139,7 +139,7 @@ Type: Array of [QueryExecution](api-queryexecution.md) objects
 
 Information about the query executions that failed to run.
 
-Type: Array of [UnprocessedQueryExecutionId](https://docs.aws.amazon.com/athena/latest/APIReference/API_UnprocessedQueryExecutionId.html) objects
+Type: Array of [UnprocessedQueryExecutionId](api-unprocessedqueryexecutionid.md) objects
 
 ## Errors
 
@@ -168,27 +168,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/athena-2017-05-18/BatchGetQueryExecution)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/athena-2017-05-18/batchgetqueryexecution.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/athena-2017-05-18/BatchGetQueryExecution)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/athena-2017-05-18/batchgetqueryexecution.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/BatchGetQueryExecution)
+- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/batchgetqueryexecution.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/athena-2017-05-18/BatchGetQueryExecution)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/athena-2017-05-18/batchgetqueryexecution.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/BatchGetQueryExecution)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/batchgetqueryexecution.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/athena-2017-05-18/BatchGetQueryExecution)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/athena-2017-05-18/batchgetqueryexecution.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/athena-2017-05-18/BatchGetQueryExecution)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/athena-2017-05-18/batchgetqueryexecution.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/athena-2017-05-18/BatchGetQueryExecution)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/athena-2017-05-18/batchgetqueryexecution.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/athena-2017-05-18/BatchGetQueryExecution)
+- [AWS SDK for Python](../../../../services/goto/boto3/athena-2017-05-18/batchgetqueryexecution.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/BatchGetQueryExecution)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/batchgetqueryexecution.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 BatchGetPreparedStatement
 

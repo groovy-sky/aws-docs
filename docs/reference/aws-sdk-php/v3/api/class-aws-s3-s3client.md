@@ -1,9 +1,9 @@
 Menu
 
-- [Aws](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.html)
-- [S3](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.html)
+- [Aws](namespace-aws.md)
+- [S3](namespace-aws-s3.md)
 
-## S3Client     extends [AwsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html)   in package    - [Aws](https://docs.aws.amazon.com/aws-sdk-php/v3/api/package-Aws.html)       implements  [S3ClientInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html)  Uses  [S3ClientTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html)
+## S3Client     extends [AwsClient](class-aws-awsclient.md)   in package    - [Aws](package-aws.md)       implements  [S3ClientInterface](class-aws-s3-s3clientinterface.md)  Uses  [S3ClientTrait](class-aws-s3-s3clienttrait.md)
 
 Client used to interact with **Amazon Simple Storage Service (Amazon S3)**.
 
@@ -137,94 +137,94 @@ specific API operation can be done using magic methods (e.g.,
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for PHP with Amazon Simple Storage Service.
 
-- [See examples on AWS Docs](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/php_s3_code_examples.html)
+- [See examples on AWS Docs](../../../sdk-for-php/v3/developer-guide/php-s3-code-examples.md)
 
 ### Legacy Code Examples With Guidance
 
-The following examples demonstrate how to use this service with the AWS SDK for PHP. These code examples are available in the [AWS SDK for PHP Developer Guide](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-examples.html).
+The following examples demonstrate how to use this service with the AWS SDK for PHP. These code examples are available in the [AWS SDK for PHP Developer Guide](../../../sdk-for-php/v3/developer-guide/s3-examples.md).
 
-- [Creating and using Amazon S3 buckets](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-examples-creating-buckets.html)
-- [Managing Amazon S3 bucket access permissions](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-examples-access-permissions.html)
-- [Configuring Amazon S3 buckets](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-examples-configuring-a-bucket.html)
-- [Amazon S3 multipart uploads](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-multipart-upload.html)
-- [Amazon S3 pre-signed URL](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-presigned-url.html)
-- [Creating S3 pre-signed POSTs](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-presigned-post.html)
-- [Using an Amazon S3 bucket as a static web host](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-examples-static-web-host.html)
-- [Working with Amazon S3 bucket policies](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-examples-bucket-policies.html)
-- [Using S3 access point ARNs](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-examples-access-point-arn.html)
-- [Use Multi-Region Access Points](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-multi-region-access-points.html)
+- [Creating and using Amazon S3 buckets](../../../sdk-for-php/v3/developer-guide/s3-examples-creating-buckets.md)
+- [Managing Amazon S3 bucket access permissions](../../../sdk-for-php/v3/developer-guide/s3-examples-access-permissions.md)
+- [Configuring Amazon S3 buckets](../../../sdk-for-php/v3/developer-guide/s3-examples-configuring-a-bucket.md)
+- [Amazon S3 multipart uploads](../../../sdk-for-php/v3/developer-guide/s3-multipart-upload.md)
+- [Amazon S3 pre-signed URL](../../../sdk-for-php/v3/developer-guide/s3-presigned-url.md)
+- [Creating S3 pre-signed POSTs](../../../sdk-for-php/v3/developer-guide/s3-presigned-post.md)
+- [Using an Amazon S3 bucket as a static web host](../../../sdk-for-php/v3/developer-guide/s3-examples-static-web-host.md)
+- [Working with Amazon S3 bucket policies](../../../sdk-for-php/v3/developer-guide/s3-examples-bucket-policies.md)
+- [Using S3 access point ARNs](../../../sdk-for-php/v3/developer-guide/s3-examples-access-point-arn.md)
+- [Use Multi-Region Access Points](../../../sdk-for-php/v3/developer-guide/s3-multi-region-access-points.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3client-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-s3-s3client-toc-interfaces.md)
 
-[S3ClientInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html)\*\*Amazon Simple Storage Service\*\* client.
+[S3ClientInterface](class-aws-s3-s3clientinterface.md)\*\*Amazon Simple Storage Service\*\* client.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3client-toc-methods.md)
 
-[\_\_call()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method___call)
-: mixed [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method___construct)
-: mixed The client constructor accepts the following options:[\_\_sleep()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method___sleep)
-: mixed [\_apply\_request\_checksum\_calculation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method__apply_request_checksum_calculation)
-: void [\_apply\_response\_checksum\_validation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method__apply_response_checksum_validation)
-: void [\_apply\_use\_arn\_region()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method__apply_use_arn_region)
-: mixed [\_default\_disable\_express\_session\_auth()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method__default_disable_express_session_auth)
-: mixed [\_default\_request\_checksum\_calculation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method__default_request_checksum_calculation)
-: string [\_default\_response\_checksum\_validation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method__default_response_checksum_validation)
-: string [\_default\_s3\_express\_identity\_provider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method__default_s3_express_identity_provider)
-: mixed [copy()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_copy)
-: mixed [copyAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_copyAsync)
-: mixed [createPresignedRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method_createPresignedRequest)
-: [RequestInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.RequestInterface.html)Create a pre-signed URL for the given S3 command object.[deleteMatchingObjects()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_deleteMatchingObjects)
-: mixed [deleteMatchingObjectsAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_deleteMatchingObjectsAsync)
-: mixed [determineBucketRegion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_determineBucketRegion)
-: mixed [determineBucketRegionAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_determineBucketRegionAsync)
-: [PromiseInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html)[doesBucketExist()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_doesBucketExist)
-: mixed [doesBucketExistV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_doesBucketExistV2)
-: mixed [doesObjectExist()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_doesObjectExist)
-: mixed [doesObjectExistV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_doesObjectExistV2)
-: mixed [downloadBucket()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_downloadBucket)
-: mixed [downloadBucketAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_downloadBucketAsync)
-: mixed [encodeKey()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method_encodeKey)
-: string Raw URL encode a key and allow for '/' characters[execute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_execute)
-: mixed [executeAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_executeAsync)
-: mixed [factory()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_factory)
-: static [getApi()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getApi)
-: [Service](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html)[getArguments()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method_getArguments)
-: array<string\|int, mixed> Get an array of client constructor arguments used by the client.[getClientBuiltIns()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getClientBuiltIns)
+[\_\_call()](class-aws-awsclienttrait-method-call.md)
+: mixed [\_\_construct()](class-aws-s3-s3client-method-construct.md)
+: mixed The client constructor accepts the following options:[\_\_sleep()](class-aws-awsclient-method-sleep.md)
+: mixed [\_apply\_request\_checksum\_calculation()](class-aws-s3-s3client-method-apply-request-checksum-calculation.md)
+: void [\_apply\_response\_checksum\_validation()](class-aws-s3-s3client-method-apply-response-checksum-validation.md)
+: void [\_apply\_use\_arn\_region()](class-aws-s3-s3client-method-apply-use-arn-region.md)
+: mixed [\_default\_disable\_express\_session\_auth()](class-aws-s3-s3client-method-default-disable-express-session-auth.md)
+: mixed [\_default\_request\_checksum\_calculation()](class-aws-s3-s3client-method-default-request-checksum-calculation.md)
+: string [\_default\_response\_checksum\_validation()](class-aws-s3-s3client-method-default-response-checksum-validation.md)
+: string [\_default\_s3\_express\_identity\_provider()](class-aws-s3-s3client-method-default-s3-express-identity-provider.md)
+: mixed [copy()](class-aws-s3-s3clienttrait-method-copy.md)
+: mixed [copyAsync()](class-aws-s3-s3clienttrait-method-copyasync.md)
+: mixed [createPresignedRequest()](class-aws-s3-s3client-method-createpresignedrequest.md)
+: [RequestInterface](class-psr-http-message-requestinterface.md)Create a pre-signed URL for the given S3 command object.[deleteMatchingObjects()](class-aws-s3-s3clienttrait-method-deletematchingobjects.md)
+: mixed [deleteMatchingObjectsAsync()](class-aws-s3-s3clienttrait-method-deletematchingobjectsasync.md)
+: mixed [determineBucketRegion()](class-aws-s3-s3clienttrait-method-determinebucketregion.md)
+: mixed [determineBucketRegionAsync()](class-aws-s3-s3clienttrait-method-determinebucketregionasync.md)
+: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)[doesBucketExist()](class-aws-s3-s3clienttrait-method-doesbucketexist.md)
+: mixed [doesBucketExistV2()](class-aws-s3-s3clienttrait-method-doesbucketexistv2.md)
+: mixed [doesObjectExist()](class-aws-s3-s3clienttrait-method-doesobjectexist.md)
+: mixed [doesObjectExistV2()](class-aws-s3-s3clienttrait-method-doesobjectexistv2.md)
+: mixed [downloadBucket()](class-aws-s3-s3clienttrait-method-downloadbucket.md)
+: mixed [downloadBucketAsync()](class-aws-s3-s3clienttrait-method-downloadbucketasync.md)
+: mixed [encodeKey()](class-aws-s3-s3client-method-encodekey.md)
+: string Raw URL encode a key and allow for '/' characters[execute()](class-aws-awsclienttrait-method-execute.md)
+: mixed [executeAsync()](class-aws-awsclienttrait-method-executeasync.md)
+: mixed [factory()](class-aws-awsclient-method-factory.md)
+: static [getApi()](class-aws-awsclienttrait-method-getapi.md)
+: [Service](class-aws-api-service.md)[getArguments()](class-aws-s3-s3client-method-getarguments.md)
+: array<string\|int, mixed> Get an array of client constructor arguments used by the client.[getClientBuiltIns()](class-aws-awsclient-method-getclientbuiltins.md)
 : array<string\|int, mixed> Provides the set of built-in keys and values
-used for endpoint resolution[getClientContextParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getClientContextParams)
+used for endpoint resolution[getClientContextParams()](class-aws-awsclient-method-getclientcontextparams.md)
 : array<string\|int, mixed> Provides the set of service context parameter
-key-value pairs used for endpoint resolution.[getCommand()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getCommand)
-: [CommandInterface](class-aws-commandinterface.md)[getConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getConfig)
-: mixed\|null Get a client configuration value.[getCredentials()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getCredentials)
-: [PromiseInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html)Returns a promise that is fulfilled with an
-{@see \\Aws\\Credentials\\CredentialsInterface} object.[getEndpoint()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getEndpoint)
-: [UriInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html)Gets the default endpoint, or base URL, used by the client.[getEndpointProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getEndpointProvider)
-: mixed [getEndpointProviderArgs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getEndpointProviderArgs)
-: array<string\|int, mixed> Retrieves arguments to be used in endpoint resolution.[getHandlerList()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getHandlerList)
-: [HandlerList](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html)Get the handler list used to transfer commands.[getIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getIterator)
-: mixed [getObjectUrl()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method_getObjectUrl)
-: string Returns the URL to an object identified by its bucket and key.[getPaginator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getPaginator)
-: mixed [getRegion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getRegion)
-: string Get the region to which the client is configured to send requests.[getSignatureProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getSignatureProvider)
-: callable Get the signature\_provider function of the client.[getToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getToken)
-: mixed [getWaiter()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getWaiter)
-: mixed [isBucketDnsCompatible()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method_isBucketDnsCompatible)
+key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclienttrait-method-getcommand.md)
+: [CommandInterface](class-aws-commandinterface.md)[getConfig()](class-aws-awsclient-method-getconfig.md)
+: mixed\|null Get a client configuration value.[getCredentials()](class-aws-awsclient-method-getcredentials.md)
+: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Returns a promise that is fulfilled with an
+{@see \\Aws\\Credentials\\CredentialsInterface} object.[getEndpoint()](class-aws-awsclient-method-getendpoint.md)
+: [UriInterface](class-psr-http-message-uriinterface.md)Gets the default endpoint, or base URL, used by the client.[getEndpointProvider()](class-aws-awsclient-method-getendpointprovider.md)
+: mixed [getEndpointProviderArgs()](class-aws-awsclient-method-getendpointproviderargs.md)
+: array<string\|int, mixed> Retrieves arguments to be used in endpoint resolution.[getHandlerList()](class-aws-awsclient-method-gethandlerlist.md)
+: [HandlerList](class-aws-handlerlist.md)Get the handler list used to transfer commands.[getIterator()](class-aws-awsclienttrait-method-getiterator.md)
+: mixed [getObjectUrl()](class-aws-s3-s3client-method-getobjecturl.md)
+: string Returns the URL to an object identified by its bucket and key.[getPaginator()](class-aws-awsclienttrait-method-getpaginator.md)
+: mixed [getRegion()](class-aws-awsclient-method-getregion.md)
+: string Get the region to which the client is configured to send requests.[getSignatureProvider()](class-aws-awsclient-method-getsignatureprovider.md)
+: callable Get the signature\_provider function of the client.[getToken()](class-aws-awsclient-method-gettoken.md)
+: mixed [getWaiter()](class-aws-awsclienttrait-method-getwaiter.md)
+: mixed [isBucketDnsCompatible()](class-aws-s3-s3client-method-isbucketdnscompatible.md)
 : bool Determine if a string is a valid name for a DNS compatible Amazon S3
-bucket.[isDirectoryBucket()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method_isDirectoryBucket)
-: bool Determines whether a bucket is a directory bucket.[registerStreamWrapper()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_registerStreamWrapper)
-: mixed [registerStreamWrapperV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_registerStreamWrapperV2)
-: mixed [upload()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_upload)
-: mixed [uploadAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_uploadAsync)
-: mixed [uploadDirectory()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_uploadDirectory)
-: mixed [uploadDirectoryAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_uploadDirectoryAsync)
-: mixed [waitUntil()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_waitUntil)
+bucket.[isDirectoryBucket()](class-aws-s3-s3client-method-isdirectorybucket.md)
+: bool Determines whether a bucket is a directory bucket.[registerStreamWrapper()](class-aws-s3-s3clienttrait-method-registerstreamwrapper.md)
+: mixed [registerStreamWrapperV2()](class-aws-s3-s3clienttrait-method-registerstreamwrapperv2.md)
+: mixed [upload()](class-aws-s3-s3clienttrait-method-upload.md)
+: mixed [uploadAsync()](class-aws-s3-s3clienttrait-method-uploadasync.md)
+: mixed [uploadDirectory()](class-aws-s3-s3clienttrait-method-uploaddirectory.md)
+: mixed [uploadDirectoryAsync()](class-aws-s3-s3clienttrait-method-uploaddirectoryasync.md)
+: mixed [waitUntil()](class-aws-awsclienttrait-method-waituntil.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html\#methods)
+### Methods  [header link](class-aws-s3-s3client-methods.md)
 
-#### \_\_call()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method___call)
+#### \_\_call()  [header link](class-aws-awsclienttrait-method-call.md)
 
 `
     public
@@ -236,7 +236,7 @@ $name
 : mixed$args
 : array<string\|int, mixed>
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3client-method-construct.md)
 
 The client constructor accepts the following options:
 
@@ -299,13 +299,13 @@ you cannot use it together with an accelerate or dualstack endpoint.
 $args
 : array<string\|int, mixed>
 
-#### \_\_sleep()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method___sleep)
+#### \_\_sleep()  [header link](class-aws-awsclient-method-sleep.md)
 
 `
     public
                     __sleep() : mixed`
 
-#### \_apply\_request\_checksum\_calculation()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html\#method__apply_request_checksum_calculation)
+#### \_apply\_request\_checksum\_calculation()  [header link](class-aws-s3-s3client-method-apply-request-checksum-calculation.md)
 
 `
     public
@@ -317,7 +317,7 @@ $value
 : string$args
 : array<string\|int, mixed>
 
-#### \_apply\_response\_checksum\_validation()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html\#method__apply_response_checksum_validation)
+#### \_apply\_response\_checksum\_validation()  [header link](class-aws-s3-s3client-method-apply-response-checksum-validation.md)
 
 `
     public
@@ -329,7 +329,7 @@ $value
 : mixed$args
 : array<string\|int, mixed>
 
-#### \_apply\_use\_arn\_region()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html\#method__apply_use_arn_region)
+#### \_apply\_use\_arn\_region()  [header link](class-aws-s3-s3client-method-apply-use-arn-region.md)
 
 `
     public
@@ -340,9 +340,9 @@ $value
 $value
 : mixed$args
 : array<string\|int, mixed>$list
-: [HandlerList](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html)
+: [HandlerList](class-aws-handlerlist.md)
 
-#### \_default\_disable\_express\_session\_auth()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html\#method__default_disable_express_session_auth)
+#### \_default\_disable\_express\_session\_auth()  [header link](class-aws-s3-s3client-method-default-disable-express-session-auth.md)
 
 `
     public
@@ -353,7 +353,7 @@ $value
 $args
 : array<string\|int, mixed>
 
-#### \_default\_request\_checksum\_calculation()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html\#method__default_request_checksum_calculation)
+#### \_default\_request\_checksum\_calculation()  [header link](class-aws-s3-s3client-method-default-request-checksum-calculation.md)
 
 `
     public
@@ -368,7 +368,7 @@ $args
 
 string
 
-#### \_default\_response\_checksum\_validation()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html\#method__default_response_checksum_validation)
+#### \_default\_response\_checksum\_validation()  [header link](class-aws-s3-s3client-method-default-response-checksum-validation.md)
 
 `
     public
@@ -383,7 +383,7 @@ $args
 
 string
 
-#### \_default\_s3\_express\_identity\_provider()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html\#method__default_s3_express_identity_provider)
+#### \_default\_s3\_express\_identity\_provider()  [header link](class-aws-s3-s3client-method-default-s3-express-identity-provider.md)
 
 `
     public
@@ -394,7 +394,7 @@ string
 $args
 : array<string\|int, mixed>
 
-#### copy()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_copy)
+#### copy()  [header link](class-aws-s3-s3clienttrait-method-copy.md)
 
 `
     public
@@ -412,11 +412,11 @@ $fromB
 : array<string\|int, mixed>
 = \[\]
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_copy\#tags)
+##### Tags  [header link](class-aws-s3-s3clienttrait-method-copy-tags.md)
 
-see[S3ClientInterface::copy()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_copy)
+see[S3ClientInterface::copy()](class-aws-s3-s3clientinterface-method-copy.md)
 
-#### copyAsync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_copyAsync)
+#### copyAsync()  [header link](class-aws-s3-s3clienttrait-method-copyasync.md)
 
 `
     public
@@ -434,11 +434,11 @@ $fromB
 : array<string\|int, mixed>
 = \[\]
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_copyAsync\#tags)
+##### Tags  [header link](class-aws-s3-s3clienttrait-method-copyasync-tags.md)
 
-see[S3ClientInterface::copyAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_copyAsync)
+see[S3ClientInterface::copyAsync()](class-aws-s3-s3clientinterface-method-copyasync.md)
 
-#### createPresignedRequest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html\#method_createPresignedRequest)
+#### createPresignedRequest()  [header link](class-aws-s3-s3client-method-createpresignedrequest.md)
 
 Create a pre-signed URL for the given S3 command object.
 
@@ -469,9 +469,9 @@ $options
 
 ##### Return values
 
-[RequestInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.RequestInterface.html)
+[RequestInterface](class-psr-http-message-requestinterface.md)
 
-#### deleteMatchingObjects()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_deleteMatchingObjects)
+#### deleteMatchingObjects()  [header link](class-aws-s3-s3clienttrait-method-deletematchingobjects.md)
 
 `
     public
@@ -488,11 +488,11 @@ $bucket
 : array<string\|int, mixed>
 = \[\]
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_deleteMatchingObjects\#tags)
+##### Tags  [header link](class-aws-s3-s3clienttrait-method-deletematchingobjects-tags.md)
 
-see[S3ClientInterface::deleteMatchingObjects()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_deleteMatchingObjects)
+see[S3ClientInterface::deleteMatchingObjects()](class-aws-s3-s3clientinterface-method-deletematchingobjects.md)
 
-#### deleteMatchingObjectsAsync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_deleteMatchingObjectsAsync)
+#### deleteMatchingObjectsAsync()  [header link](class-aws-s3-s3clienttrait-method-deletematchingobjectsasync.md)
 
 `
     public
@@ -509,11 +509,11 @@ $bucket
 : array<string\|int, mixed>
 = \[\]
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_deleteMatchingObjectsAsync\#tags)
+##### Tags  [header link](class-aws-s3-s3clienttrait-method-deletematchingobjectsasync-tags.md)
 
-see[S3ClientInterface::deleteMatchingObjectsAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_deleteMatchingObjectsAsync)
+see[S3ClientInterface::deleteMatchingObjectsAsync()](class-aws-s3-s3clientinterface-method-deletematchingobjectsasync.md)
 
-#### determineBucketRegion()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_determineBucketRegion)
+#### determineBucketRegion()  [header link](class-aws-s3-s3clienttrait-method-determinebucketregion.md)
 
 `
     public
@@ -524,11 +524,11 @@ see[S3ClientInterface::deleteMatchingObjectsAsync()](https://docs.aws.amazon.com
 $bucketName
 : mixed
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_determineBucketRegion\#tags)
+##### Tags  [header link](class-aws-s3-s3clienttrait-method-determinebucketregion-tags.md)
 
-see[S3ClientInterface::determineBucketRegion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_determineBucketRegion)
+see[S3ClientInterface::determineBucketRegion()](class-aws-s3-s3clientinterface-method-determinebucketregion.md)
 
-#### determineBucketRegionAsync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_determineBucketRegionAsync)
+#### determineBucketRegionAsync()  [header link](class-aws-s3-s3clienttrait-method-determinebucketregionasync.md)
 
 `
     public
@@ -539,15 +539,15 @@ see[S3ClientInterface::determineBucketRegion()](https://docs.aws.amazon.com/aws-
 $bucketName
 : string
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_determineBucketRegionAsync\#tags)
+##### Tags  [header link](class-aws-s3-s3clienttrait-method-determinebucketregionasync-tags.md)
 
-see[S3ClientInterface::determineBucketRegionAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_determineBucketRegionAsync)
+see[S3ClientInterface::determineBucketRegionAsync()](class-aws-s3-s3clientinterface-method-determinebucketregionasync.md)
 
 ##### Return values
 
-[PromiseInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html)
+[PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### doesBucketExist()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_doesBucketExist)
+#### doesBucketExist()  [header link](class-aws-s3-s3clienttrait-method-doesbucketexist.md)
 
 `
     public
@@ -558,11 +558,11 @@ see[S3ClientInterface::determineBucketRegionAsync()](https://docs.aws.amazon.com
 $bucket
 : mixed
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_doesBucketExist\#tags)
+##### Tags  [header link](class-aws-s3-s3clienttrait-method-doesbucketexist-tags.md)
 
-see[S3ClientInterface::doesBucketExist()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_doesBucketExist)
+see[S3ClientInterface::doesBucketExist()](class-aws-s3-s3clientinterface-method-doesbucketexist.md)
 
-#### doesBucketExistV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_doesBucketExistV2)
+#### doesBucketExistV2()  [header link](class-aws-s3-s3clienttrait-method-doesbucketexistv2.md)
 
 `
     public
@@ -575,11 +575,11 @@ $bucket
 : mixed
 = false
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_doesBucketExistV2\#tags)
+##### Tags  [header link](class-aws-s3-s3clienttrait-method-doesbucketexistv2-tags.md)
 
-see[S3ClientInterface::doesBucketExistV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_doesBucketExistV2)
+see[S3ClientInterface::doesBucketExistV2()](class-aws-s3-s3clientinterface-method-doesbucketexistv2.md)
 
-#### doesObjectExist()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_doesObjectExist)
+#### doesObjectExist()  [header link](class-aws-s3-s3clienttrait-method-doesobjectexist.md)
 
 `
     public
@@ -593,11 +593,11 @@ $bucket
 : array<string\|int, mixed>
 = \[\]
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_doesObjectExist\#tags)
+##### Tags  [header link](class-aws-s3-s3clienttrait-method-doesobjectexist-tags.md)
 
-see[S3ClientInterface::doesObjectExist()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_doesObjectExist)
+see[S3ClientInterface::doesObjectExist()](class-aws-s3-s3clientinterface-method-doesobjectexist.md)
 
-#### doesObjectExistV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_doesObjectExistV2)
+#### doesObjectExistV2()  [header link](class-aws-s3-s3clienttrait-method-doesobjectexistv2.md)
 
 `
     public
@@ -613,11 +613,11 @@ $bucket
 : array<string\|int, mixed>
 = \[\]
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_doesObjectExistV2\#tags)
+##### Tags  [header link](class-aws-s3-s3clienttrait-method-doesobjectexistv2-tags.md)
 
-see[S3ClientInterface::doesObjectExistV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_doesObjectExistV2)
+see[S3ClientInterface::doesObjectExistV2()](class-aws-s3-s3clientinterface-method-doesobjectexistv2.md)
 
-#### downloadBucket()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_downloadBucket)
+#### downloadBucket()  [header link](class-aws-s3-s3clienttrait-method-downloadbucket.md)
 
 `
     public
@@ -633,11 +633,11 @@ $directory
 : array<string\|int, mixed>
 = \[\]
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_downloadBucket\#tags)
+##### Tags  [header link](class-aws-s3-s3clienttrait-method-downloadbucket-tags.md)
 
-see[S3ClientInterface::downloadBucket()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_downloadBucket)
+see[S3ClientInterface::downloadBucket()](class-aws-s3-s3clientinterface-method-downloadbucket.md)
 
-#### downloadBucketAsync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_downloadBucketAsync)
+#### downloadBucketAsync()  [header link](class-aws-s3-s3clienttrait-method-downloadbucketasync.md)
 
 `
     public
@@ -653,11 +653,11 @@ $directory
 : array<string\|int, mixed>
 = \[\]
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_downloadBucketAsync\#tags)
+##### Tags  [header link](class-aws-s3-s3clienttrait-method-downloadbucketasync-tags.md)
 
-see[S3ClientInterface::downloadBucketAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_downloadBucketAsync)
+see[S3ClientInterface::downloadBucketAsync()](class-aws-s3-s3clientinterface-method-downloadbucketasync.md)
 
-#### encodeKey()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html\#method_encodeKey)
+#### encodeKey()  [header link](class-aws-s3-s3client-method-encodekey.md)
 
 Raw URL encode a key and allow for '/' characters
 
@@ -679,7 +679,7 @@ string
 
 Returns the encoded key
 
-#### execute()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method_execute)
+#### execute()  [header link](class-aws-awsclienttrait-method-execute.md)
 
 `
     public
@@ -690,7 +690,7 @@ Returns the encoded key
 $command
 : [CommandInterface](class-aws-commandinterface.md)
 
-#### executeAsync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method_executeAsync)
+#### executeAsync()  [header link](class-aws-awsclienttrait-method-executeasync.md)
 
 `
     public
@@ -701,7 +701,7 @@ $command
 $command
 : [CommandInterface](class-aws-commandinterface.md)
 
-#### factory()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_factory)
+#### factory()  [header link](class-aws-awsclient-method-factory.md)
 
 `
     public
@@ -713,7 +713,7 @@ $config
 : array<string\|int, mixed>
 = \[\]
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_factory\#tags)
+##### Tags  [header link](class-aws-awsclient-method-factory-tags.md)
 
 deprecated
 
@@ -721,7 +721,7 @@ deprecated
 
 static
 
-#### getApi()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method_getApi)
+#### getApi()  [header link](class-aws-awsclienttrait-method-getapi.md)
 
 `
     public
@@ -729,9 +729,9 @@ static
 
 ##### Return values
 
-[Service](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Service.html)
+[Service](class-aws-api-service.md)
 
-#### getArguments()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html\#method_getArguments)
+#### getArguments()  [header link](class-aws-s3-s3client-method-getarguments.md)
 
 Get an array of client constructor arguments used by the client.
 
@@ -743,7 +743,7 @@ Get an array of client constructor arguments used by the client.
 
 array<string\|int, mixed>
 
-#### getClientBuiltIns()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getClientBuiltIns)
+#### getClientBuiltIns()  [header link](class-aws-awsclient-method-getclientbuiltins.md)
 
 Provides the set of built-in keys and values
 used for endpoint resolution
@@ -756,7 +756,7 @@ used for endpoint resolution
 
 array<string\|int, mixed>
 
-#### getClientContextParams()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getClientContextParams)
+#### getClientContextParams()  [header link](class-aws-awsclient-method-getclientcontextparams.md)
 
 Provides the set of service context parameter
 key-value pairs used for endpoint resolution.
@@ -769,7 +769,7 @@ key-value pairs used for endpoint resolution.
 
 array<string\|int, mixed>
 
-#### getCommand()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method_getCommand)
+#### getCommand()  [header link](class-aws-awsclienttrait-method-getcommand.md)
 
 `
     public
@@ -786,7 +786,7 @@ $name
 
 [CommandInterface](class-aws-commandinterface.md)
 
-#### getConfig()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getConfig)
+#### getConfig()  [header link](class-aws-awsclient-method-getconfig.md)
 
 Get a client configuration value.
 
@@ -807,7 +807,7 @@ all options.
 
 mixed\|null
 
-#### getCredentials()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getCredentials)
+#### getCredentials()  [header link](class-aws-awsclient-method-getcredentials.md)
 
 Returns a promise that is fulfilled with an
 {@see \\Aws\\Credentials\\CredentialsInterface} object.
@@ -821,9 +821,9 @@ on the returned promise.
 
 ##### Return values
 
-[PromiseInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html)
+[PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### getEndpoint()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getEndpoint)
+#### getEndpoint()  [header link](class-aws-awsclient-method-getendpoint.md)
 
 Gets the default endpoint, or base URL, used by the client.
 
@@ -833,15 +833,15 @@ Gets the default endpoint, or base URL, used by the client.
 
 ##### Return values
 
-[UriInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.UriInterface.html)
+[UriInterface](class-psr-http-message-uriinterface.md)
 
-#### getEndpointProvider()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getEndpointProvider)
+#### getEndpointProvider()  [header link](class-aws-awsclient-method-getendpointprovider.md)
 
 `
     public
                     getEndpointProvider() : mixed`
 
-#### getEndpointProviderArgs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getEndpointProviderArgs)
+#### getEndpointProviderArgs()  [header link](class-aws-awsclient-method-getendpointproviderargs.md)
 
 Retrieves arguments to be used in endpoint resolution.
 
@@ -853,7 +853,7 @@ Retrieves arguments to be used in endpoint resolution.
 
 array<string\|int, mixed>
 
-#### getHandlerList()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getHandlerList)
+#### getHandlerList()  [header link](class-aws-awsclient-method-gethandlerlist.md)
 
 Get the handler list used to transfer commands.
 
@@ -866,9 +866,9 @@ handler used to send HTTP requests.
 
 ##### Return values
 
-[HandlerList](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html)
+[HandlerList](class-aws-handlerlist.md)
 
-#### getIterator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method_getIterator)
+#### getIterator()  [header link](class-aws-awsclienttrait-method-getiterator.md)
 
 `
     public
@@ -881,7 +881,7 @@ $name
 : array<string\|int, mixed>
 = \[\]
 
-#### getObjectUrl()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html\#method_getObjectUrl)
+#### getObjectUrl()  [header link](class-aws-s3-s3client-method-getobjecturl.md)
 
 Returns the URL to an object identified by its bucket and key.
 
@@ -913,7 +913,7 @@ string
 
 The URL to the object
 
-#### getPaginator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method_getPaginator)
+#### getPaginator()  [header link](class-aws-awsclienttrait-method-getpaginator.md)
 
 `
     public
@@ -926,7 +926,7 @@ $name
 : array<string\|int, mixed>
 = \[\]
 
-#### getRegion()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getRegion)
+#### getRegion()  [header link](class-aws-awsclient-method-getregion.md)
 
 Get the region to which the client is configured to send requests.
 
@@ -938,7 +938,7 @@ Get the region to which the client is configured to send requests.
 
 string
 
-#### getSignatureProvider()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getSignatureProvider)
+#### getSignatureProvider()  [header link](class-aws-awsclient-method-getsignatureprovider.md)
 
 Get the signature\_provider function of the client.
 
@@ -950,13 +950,13 @@ Get the signature\_provider function of the client.
 
 callable
 
-#### getToken()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html\#method_getToken)
+#### getToken()  [header link](class-aws-awsclient-method-gettoken.md)
 
 `
     public
                     getToken() : mixed`
 
-#### getWaiter()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method_getWaiter)
+#### getWaiter()  [header link](class-aws-awsclienttrait-method-getwaiter.md)
 
 `
     public
@@ -969,7 +969,7 @@ $name
 : array<string\|int, mixed>
 = \[\]
 
-#### isBucketDnsCompatible()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html\#method_isBucketDnsCompatible)
+#### isBucketDnsCompatible()  [header link](class-aws-s3-s3client-method-isbucketdnscompatible.md)
 
 Determine if a string is a valid name for a DNS compatible Amazon S3
 bucket.
@@ -992,7 +992,7 @@ Bucket name to check.
 
 bool
 
-#### isDirectoryBucket()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html\#method_isDirectoryBucket)
+#### isDirectoryBucket()  [header link](class-aws-s3-s3client-method-isdirectorybucket.md)
 
 Determines whether a bucket is a directory bucket.
 
@@ -1011,27 +1011,27 @@ $bucket
 
 bool
 
-#### registerStreamWrapper()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_registerStreamWrapper)
+#### registerStreamWrapper()  [header link](class-aws-s3-s3clienttrait-method-registerstreamwrapper.md)
 
 `
     public
                     registerStreamWrapper() : mixed`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_registerStreamWrapper\#tags)
+##### Tags  [header link](class-aws-s3-s3clienttrait-method-registerstreamwrapper-tags.md)
 
-see[S3ClientInterface::registerStreamWrapper()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_registerStreamWrapper)
+see[S3ClientInterface::registerStreamWrapper()](class-aws-s3-s3clientinterface-method-registerstreamwrapper.md)
 
-#### registerStreamWrapperV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_registerStreamWrapperV2)
+#### registerStreamWrapperV2()  [header link](class-aws-s3-s3clienttrait-method-registerstreamwrapperv2.md)
 
 `
     public
                     registerStreamWrapperV2() : mixed`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_registerStreamWrapperV2\#tags)
+##### Tags  [header link](class-aws-s3-s3clienttrait-method-registerstreamwrapperv2-tags.md)
 
-see[S3ClientInterface::registerStreamWrapperV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_registerStreamWrapperV2)
+see[S3ClientInterface::registerStreamWrapperV2()](class-aws-s3-s3clientinterface-method-registerstreamwrapperv2.md)
 
-#### upload()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_upload)
+#### upload()  [header link](class-aws-s3-s3clienttrait-method-upload.md)
 
 `
     public
@@ -1048,11 +1048,11 @@ $bucket
 : array<string\|int, mixed>
 = \[\]
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_upload\#tags)
+##### Tags  [header link](class-aws-s3-s3clienttrait-method-upload-tags.md)
 
-see[S3ClientInterface::upload()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_upload)
+see[S3ClientInterface::upload()](class-aws-s3-s3clientinterface-method-upload.md)
 
-#### uploadAsync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_uploadAsync)
+#### uploadAsync()  [header link](class-aws-s3-s3clienttrait-method-uploadasync.md)
 
 `
     public
@@ -1069,11 +1069,11 @@ $bucket
 : array<string\|int, mixed>
 = \[\]
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_uploadAsync\#tags)
+##### Tags  [header link](class-aws-s3-s3clienttrait-method-uploadasync-tags.md)
 
-see[S3ClientInterface::uploadAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_uploadAsync)
+see[S3ClientInterface::uploadAsync()](class-aws-s3-s3clientinterface-method-uploadasync.md)
 
-#### uploadDirectory()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_uploadDirectory)
+#### uploadDirectory()  [header link](class-aws-s3-s3clienttrait-method-uploaddirectory.md)
 
 `
     public
@@ -1089,11 +1089,11 @@ $directory
 : array<string\|int, mixed>
 = \[\]
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_uploadDirectory\#tags)
+##### Tags  [header link](class-aws-s3-s3clienttrait-method-uploaddirectory-tags.md)
 
-see[S3ClientInterface::uploadDirectory()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_uploadDirectory)
+see[S3ClientInterface::uploadDirectory()](class-aws-s3-s3clientinterface-method-uploaddirectory.md)
 
-#### uploadDirectoryAsync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_uploadDirectoryAsync)
+#### uploadDirectoryAsync()  [header link](class-aws-s3-s3clienttrait-method-uploaddirectoryasync.md)
 
 `
     public
@@ -1109,11 +1109,11 @@ $directory
 : array<string\|int, mixed>
 = \[\]
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html\#method_uploadDirectoryAsync\#tags)
+##### Tags  [header link](class-aws-s3-s3clienttrait-method-uploaddirectoryasync-tags.md)
 
-see[S3ClientInterface::uploadDirectoryAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_uploadDirectoryAsync)
+see[S3ClientInterface::uploadDirectoryAsync()](class-aws-s3-s3clientinterface-method-uploaddirectoryasync.md)
 
-#### waitUntil()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html\#method_waitUntil)
+#### waitUntil()  [header link](class-aws-awsclienttrait-method-waituntil.md)
 
 `
     public
@@ -1132,61 +1132,61 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#toc-methods)
+  - [Methods](class-aws-s3-s3client-toc-methods.md)
 - Methods
-  - [\_\_call()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method___call)
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method___construct)
-  - [\_\_sleep()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method___sleep)
-  - [\_apply\_request\_checksum\_calculation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method__apply_request_checksum_calculation)
-  - [\_apply\_response\_checksum\_validation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method__apply_response_checksum_validation)
-  - [\_apply\_use\_arn\_region()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method__apply_use_arn_region)
-  - [\_default\_disable\_express\_session\_auth()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method__default_disable_express_session_auth)
-  - [\_default\_request\_checksum\_calculation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method__default_request_checksum_calculation)
-  - [\_default\_response\_checksum\_validation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method__default_response_checksum_validation)
-  - [\_default\_s3\_express\_identity\_provider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method__default_s3_express_identity_provider)
-  - [copy()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_copy)
-  - [copyAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_copyAsync)
-  - [createPresignedRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method_createPresignedRequest)
-  - [deleteMatchingObjects()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_deleteMatchingObjects)
-  - [deleteMatchingObjectsAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_deleteMatchingObjectsAsync)
-  - [determineBucketRegion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_determineBucketRegion)
-  - [determineBucketRegionAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_determineBucketRegionAsync)
-  - [doesBucketExist()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_doesBucketExist)
-  - [doesBucketExistV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_doesBucketExistV2)
-  - [doesObjectExist()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_doesObjectExist)
-  - [doesObjectExistV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_doesObjectExistV2)
-  - [downloadBucket()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_downloadBucket)
-  - [downloadBucketAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_downloadBucketAsync)
-  - [encodeKey()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method_encodeKey)
-  - [execute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_execute)
-  - [executeAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_executeAsync)
-  - [factory()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_factory)
-  - [getApi()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getApi)
-  - [getArguments()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method_getArguments)
-  - [getClientBuiltIns()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getClientBuiltIns)
-  - [getClientContextParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getClientContextParams)
-  - [getCommand()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getCommand)
-  - [getConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getConfig)
-  - [getCredentials()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getCredentials)
-  - [getEndpoint()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getEndpoint)
-  - [getEndpointProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getEndpointProvider)
-  - [getEndpointProviderArgs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getEndpointProviderArgs)
-  - [getHandlerList()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getHandlerList)
-  - [getIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getIterator)
-  - [getObjectUrl()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method_getObjectUrl)
-  - [getPaginator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getPaginator)
-  - [getRegion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getRegion)
-  - [getSignatureProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getSignatureProvider)
-  - [getToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClient.html#method_getToken)
-  - [getWaiter()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_getWaiter)
-  - [isBucketDnsCompatible()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method_isBucketDnsCompatible)
-  - [isDirectoryBucket()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#method_isDirectoryBucket)
-  - [registerStreamWrapper()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_registerStreamWrapper)
-  - [registerStreamWrapperV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_registerStreamWrapperV2)
-  - [upload()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_upload)
-  - [uploadAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_uploadAsync)
-  - [uploadDirectory()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_uploadDirectory)
-  - [uploadDirectoryAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientTrait.html#method_uploadDirectoryAsync)
-  - [waitUntil()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientTrait.html#method_waitUntil)
+  - [\_\_call()](class-aws-awsclienttrait-method-call.md)
+  - [\_\_construct()](class-aws-s3-s3client-method-construct.md)
+  - [\_\_sleep()](class-aws-awsclient-method-sleep.md)
+  - [\_apply\_request\_checksum\_calculation()](class-aws-s3-s3client-method-apply-request-checksum-calculation.md)
+  - [\_apply\_response\_checksum\_validation()](class-aws-s3-s3client-method-apply-response-checksum-validation.md)
+  - [\_apply\_use\_arn\_region()](class-aws-s3-s3client-method-apply-use-arn-region.md)
+  - [\_default\_disable\_express\_session\_auth()](class-aws-s3-s3client-method-default-disable-express-session-auth.md)
+  - [\_default\_request\_checksum\_calculation()](class-aws-s3-s3client-method-default-request-checksum-calculation.md)
+  - [\_default\_response\_checksum\_validation()](class-aws-s3-s3client-method-default-response-checksum-validation.md)
+  - [\_default\_s3\_express\_identity\_provider()](class-aws-s3-s3client-method-default-s3-express-identity-provider.md)
+  - [copy()](class-aws-s3-s3clienttrait-method-copy.md)
+  - [copyAsync()](class-aws-s3-s3clienttrait-method-copyasync.md)
+  - [createPresignedRequest()](class-aws-s3-s3client-method-createpresignedrequest.md)
+  - [deleteMatchingObjects()](class-aws-s3-s3clienttrait-method-deletematchingobjects.md)
+  - [deleteMatchingObjectsAsync()](class-aws-s3-s3clienttrait-method-deletematchingobjectsasync.md)
+  - [determineBucketRegion()](class-aws-s3-s3clienttrait-method-determinebucketregion.md)
+  - [determineBucketRegionAsync()](class-aws-s3-s3clienttrait-method-determinebucketregionasync.md)
+  - [doesBucketExist()](class-aws-s3-s3clienttrait-method-doesbucketexist.md)
+  - [doesBucketExistV2()](class-aws-s3-s3clienttrait-method-doesbucketexistv2.md)
+  - [doesObjectExist()](class-aws-s3-s3clienttrait-method-doesobjectexist.md)
+  - [doesObjectExistV2()](class-aws-s3-s3clienttrait-method-doesobjectexistv2.md)
+  - [downloadBucket()](class-aws-s3-s3clienttrait-method-downloadbucket.md)
+  - [downloadBucketAsync()](class-aws-s3-s3clienttrait-method-downloadbucketasync.md)
+  - [encodeKey()](class-aws-s3-s3client-method-encodekey.md)
+  - [execute()](class-aws-awsclienttrait-method-execute.md)
+  - [executeAsync()](class-aws-awsclienttrait-method-executeasync.md)
+  - [factory()](class-aws-awsclient-method-factory.md)
+  - [getApi()](class-aws-awsclienttrait-method-getapi.md)
+  - [getArguments()](class-aws-s3-s3client-method-getarguments.md)
+  - [getClientBuiltIns()](class-aws-awsclient-method-getclientbuiltins.md)
+  - [getClientContextParams()](class-aws-awsclient-method-getclientcontextparams.md)
+  - [getCommand()](class-aws-awsclienttrait-method-getcommand.md)
+  - [getConfig()](class-aws-awsclient-method-getconfig.md)
+  - [getCredentials()](class-aws-awsclient-method-getcredentials.md)
+  - [getEndpoint()](class-aws-awsclient-method-getendpoint.md)
+  - [getEndpointProvider()](class-aws-awsclient-method-getendpointprovider.md)
+  - [getEndpointProviderArgs()](class-aws-awsclient-method-getendpointproviderargs.md)
+  - [getHandlerList()](class-aws-awsclient-method-gethandlerlist.md)
+  - [getIterator()](class-aws-awsclienttrait-method-getiterator.md)
+  - [getObjectUrl()](class-aws-s3-s3client-method-getobjecturl.md)
+  - [getPaginator()](class-aws-awsclienttrait-method-getpaginator.md)
+  - [getRegion()](class-aws-awsclient-method-getregion.md)
+  - [getSignatureProvider()](class-aws-awsclient-method-getsignatureprovider.md)
+  - [getToken()](class-aws-awsclient-method-gettoken.md)
+  - [getWaiter()](class-aws-awsclienttrait-method-getwaiter.md)
+  - [isBucketDnsCompatible()](class-aws-s3-s3client-method-isbucketdnscompatible.md)
+  - [isDirectoryBucket()](class-aws-s3-s3client-method-isdirectorybucket.md)
+  - [registerStreamWrapper()](class-aws-s3-s3clienttrait-method-registerstreamwrapper.md)
+  - [registerStreamWrapperV2()](class-aws-s3-s3clienttrait-method-registerstreamwrapperv2.md)
+  - [upload()](class-aws-s3-s3clienttrait-method-upload.md)
+  - [uploadAsync()](class-aws-s3-s3clienttrait-method-uploadasync.md)
+  - [uploadDirectory()](class-aws-s3-s3clienttrait-method-uploaddirectory.md)
+  - [uploadDirectoryAsync()](class-aws-s3-s3clienttrait-method-uploaddirectoryasync.md)
+  - [waitUntil()](class-aws-awsclienttrait-method-waituntil.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Client.html#top)
+[Back To Top](class-aws-s3-s3client-top.md)

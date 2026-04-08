@@ -17,24 +17,24 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2021-06-30**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-scheduler-2021-06-30.html)
+- [**2021-06-30**](api-scheduler-2021-06-30.md)
 
-  - [CreateSchedule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-scheduler-2021-06-30.html#createschedule)
-  - [CreateScheduleGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-scheduler-2021-06-30.html#createschedulegroup)
-  - [DeleteSchedule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-scheduler-2021-06-30.html#deleteschedule)
-  - [DeleteScheduleGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-scheduler-2021-06-30.html#deleteschedulegroup)
-  - [GetSchedule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-scheduler-2021-06-30.html#getschedule)
-  - [GetScheduleGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-scheduler-2021-06-30.html#getschedulegroup)
-  - [ListScheduleGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-scheduler-2021-06-30.html#listschedulegroups)
-  - [ListSchedules](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-scheduler-2021-06-30.html#listschedules)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-scheduler-2021-06-30.html#listtagsforresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-scheduler-2021-06-30.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-scheduler-2021-06-30.html#untagresource)
-  - [UpdateSchedule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-scheduler-2021-06-30.html#updateschedule)
+  - [CreateSchedule](api-scheduler-2021-06-30-createschedule.md)
+  - [CreateScheduleGroup](api-scheduler-2021-06-30-createschedulegroup.md)
+  - [DeleteSchedule](api-scheduler-2021-06-30-deleteschedule.md)
+  - [DeleteScheduleGroup](api-scheduler-2021-06-30-deleteschedulegroup.md)
+  - [GetSchedule](api-scheduler-2021-06-30-getschedule.md)
+  - [GetScheduleGroup](api-scheduler-2021-06-30-getschedulegroup.md)
+  - [ListScheduleGroups](api-scheduler-2021-06-30-listschedulegroups.md)
+  - [ListSchedules](api-scheduler-2021-06-30-listschedules.md)
+  - [ListTagsForResource](api-scheduler-2021-06-30-listtagsforresource.md)
+  - [TagResource](api-scheduler-2021-06-30-tagresource.md)
+  - [UntagResource](api-scheduler-2021-06-30-untagresource.md)
+  - [UpdateSchedule](api-scheduler-2021-06-30-updateschedule.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Scheduler.SchedulerClient.html\#toc)
+### Table of Contents  [header link](class-aws-scheduler-schedulerclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Scheduler.SchedulerClient.html\#toc-methods)
+#### Methods  [header link](class-aws-scheduler-schedulerclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -65,7 +65,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Scheduler.SchedulerClient.html\#methods)
+### Methods  [header link](class-aws-scheduler-schedulerclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -532,7 +532,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Scheduler.SchedulerClient.html#toc-methods)
+  - [Methods](class-aws-scheduler-schedulerclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -559,4 +559,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Scheduler.SchedulerClient.html#top)
+[Back To Top](class-aws-scheduler-schedulerclient-top.md)

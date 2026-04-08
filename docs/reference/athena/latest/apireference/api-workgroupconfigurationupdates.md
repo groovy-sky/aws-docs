@@ -107,7 +107,7 @@ Required: No
 
 Updates configuration information for managed query results in the workgroup.
 
-Type: [ManagedQueryResultsConfigurationUpdates](https://docs.aws.amazon.com/athena/latest/APIReference/API_ManagedQueryResultsConfigurationUpdates.html) object
+Type: [ManagedQueryResultsConfigurationUpdates](api-managedqueryresultsconfigurationupdates.md) object
 
 Required: No
 
@@ -158,7 +158,7 @@ Required: No
 If set to `true`, allows members assigned to a workgroup to specify Amazon S3 Requester Pays buckets in queries. If set to `false`, workgroup
 members cannot query data from Requester Pays buckets, and queries that retrieve data
 from Requester Pays buckets cause an error. The default is `false`. For more
-information about Requester Pays buckets, see [Requester Pays Buckets](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html)
+information about Requester Pays buckets, see [Requester Pays Buckets](../../../../services/s3/latest/dev/requesterpaysbuckets.md)
 in the _Amazon Simple Storage Service Developer Guide_.
 
 Type: Boolean
@@ -171,7 +171,7 @@ The result configuration information about the queries in this workgroup that wi
 updated. Includes the updated results location and an updated option for encrypting
 query results.
 
-Type: [ResultConfigurationUpdates](https://docs.aws.amazon.com/athena/latest/APIReference/API_ResultConfigurationUpdates.html) object
+Type: [ResultConfigurationUpdates](api-resultconfigurationupdates.md) object
 
 Required: No
 
@@ -179,13 +179,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/WorkGroupConfigurationUpdates)
+- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/workgroupconfigurationupdates.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/WorkGroupConfigurationUpdates)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/workgroupconfigurationupdates.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/WorkGroupConfigurationUpdates)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/workgroupconfigurationupdates.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 WorkGroupConfiguration
 

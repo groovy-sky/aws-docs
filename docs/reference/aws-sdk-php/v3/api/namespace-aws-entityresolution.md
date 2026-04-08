@@ -4,15 +4,15 @@ Menu
 
 ## EntityResolution
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.entityresolution.html\#toc)
+### Table of Contents  [header link](namespace-aws-entityresolution-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.entityresolution.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-entityresolution-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.entityresolution.exception.html)
+[Exception](namespace-aws-entityresolution-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.entityresolution.html\#toc-classes)
+#### Classes  [header link](namespace-aws-entityresolution-toc-classes.md)
 
-[EntityResolutionClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EntityResolution.EntityResolutionClient.html)This client is used to interact with the **AWS EntityResolution** service.
+[EntityResolutionClient](class-aws-entityresolution-entityresolutionclient.md)This client is used to interact with the **AWS EntityResolution** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.entityresolution.html#toc-classes)
+  - [Classes](namespace-aws-entityresolution-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.entityresolution.html#top)
+[Back To Top](namespace-aws-entityresolution-top.md)

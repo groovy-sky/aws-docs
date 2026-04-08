@@ -17,24 +17,24 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-10-23**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-data-2018-10-23.html)
+- [**2018-10-23**](api-iotevents-data-2018-10-23.md)
 
-  - [BatchAcknowledgeAlarm](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-data-2018-10-23.html#batchacknowledgealarm)
-  - [BatchDeleteDetector](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-data-2018-10-23.html#batchdeletedetector)
-  - [BatchDisableAlarm](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-data-2018-10-23.html#batchdisablealarm)
-  - [BatchEnableAlarm](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-data-2018-10-23.html#batchenablealarm)
-  - [BatchPutMessage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-data-2018-10-23.html#batchputmessage)
-  - [BatchResetAlarm](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-data-2018-10-23.html#batchresetalarm)
-  - [BatchSnoozeAlarm](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-data-2018-10-23.html#batchsnoozealarm)
-  - [BatchUpdateDetector](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-data-2018-10-23.html#batchupdatedetector)
-  - [DescribeAlarm](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-data-2018-10-23.html#describealarm)
-  - [DescribeDetector](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-data-2018-10-23.html#describedetector)
-  - [ListAlarms](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-data-2018-10-23.html#listalarms)
-  - [ListDetectors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-data-2018-10-23.html#listdetectors)
+  - [BatchAcknowledgeAlarm](api-iotevents-data-2018-10-23-batchacknowledgealarm.md)
+  - [BatchDeleteDetector](api-iotevents-data-2018-10-23-batchdeletedetector.md)
+  - [BatchDisableAlarm](api-iotevents-data-2018-10-23-batchdisablealarm.md)
+  - [BatchEnableAlarm](api-iotevents-data-2018-10-23-batchenablealarm.md)
+  - [BatchPutMessage](api-iotevents-data-2018-10-23-batchputmessage.md)
+  - [BatchResetAlarm](api-iotevents-data-2018-10-23-batchresetalarm.md)
+  - [BatchSnoozeAlarm](api-iotevents-data-2018-10-23-batchsnoozealarm.md)
+  - [BatchUpdateDetector](api-iotevents-data-2018-10-23-batchupdatedetector.md)
+  - [DescribeAlarm](api-iotevents-data-2018-10-23-describealarm.md)
+  - [DescribeDetector](api-iotevents-data-2018-10-23-describedetector.md)
+  - [ListAlarms](api-iotevents-data-2018-10-23-listalarms.md)
+  - [ListDetectors](api-iotevents-data-2018-10-23-listdetectors.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTEventsData.IoTEventsDataClient.html\#toc)
+### Table of Contents  [header link](class-aws-ioteventsdata-ioteventsdataclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTEventsData.IoTEventsDataClient.html\#toc-methods)
+#### Methods  [header link](class-aws-ioteventsdata-ioteventsdataclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -65,7 +65,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTEventsData.IoTEventsDataClient.html\#methods)
+### Methods  [header link](class-aws-ioteventsdata-ioteventsdataclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -532,7 +532,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTEventsData.IoTEventsDataClient.html#toc-methods)
+  - [Methods](class-aws-ioteventsdata-ioteventsdataclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -559,4 +559,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTEventsData.IoTEventsDataClient.html#top)
+[Back To Top](class-aws-ioteventsdata-ioteventsdataclient-top.md)

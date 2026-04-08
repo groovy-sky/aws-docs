@@ -1,28 +1,28 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Psr7](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.psr7.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Psr7](namespace-guzzlehttp-psr7.md)
 
 ## Message        in package    - [Aws](package-aws.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-psr7-message-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-psr7-message-toc-methods.md)
 
-[bodySummary()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html#method_bodySummary)
-: string\|null Get a short summary of the message body.[parseMessage()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html#method_parseMessage)
-: array<string\|int, mixed> Parses an HTTP message into an associative array.[parseRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html#method_parseRequest)
-: [RequestInterface](class-psr-http-message-requestinterface.md)Parses a request message string into a request object.[parseRequestUri()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html#method_parseRequestUri)
-: string Constructs a URI for an HTTP request message.[parseResponse()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html#method_parseResponse)
-: [ResponseInterface](class-psr-http-message-responseinterface.md)Parses a response message string into a response object.[rewindBody()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html#method_rewindBody)
-: void Attempts to rewind a message body and throws an exception on failure.[toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html#method_toString)
+[bodySummary()](class-guzzlehttp-psr7-message-method-bodysummary.md)
+: string\|null Get a short summary of the message body.[parseMessage()](class-guzzlehttp-psr7-message-method-parsemessage.md)
+: array<string\|int, mixed> Parses an HTTP message into an associative array.[parseRequest()](class-guzzlehttp-psr7-message-method-parserequest.md)
+: [RequestInterface](class-psr-http-message-requestinterface.md)Parses a request message string into a request object.[parseRequestUri()](class-guzzlehttp-psr7-message-method-parserequesturi.md)
+: string Constructs a URI for an HTTP request message.[parseResponse()](class-guzzlehttp-psr7-message-method-parseresponse.md)
+: [ResponseInterface](class-psr-http-message-responseinterface.md)Parses a response message string into a response object.[rewindBody()](class-guzzlehttp-psr7-message-method-rewindbody.md)
+: void Attempts to rewind a message body and throws an exception on failure.[toString()](class-guzzlehttp-psr7-message-method-tostring.md)
 : string Returns the string representation of an HTTP message.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html\#methods)
+### Methods  [header link](class-guzzlehttp-psr7-message-methods.md)
 
-#### bodySummary()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html\#method_bodySummary)
+#### bodySummary()  [header link](class-guzzlehttp-psr7-message-method-bodysummary.md)
 
 Get a short summary of the message body.
 
@@ -49,7 +49,7 @@ The maximum allowed size of the summary
 
 string\|null
 
-#### parseMessage()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html\#method_parseMessage)
+#### parseMessage()  [header link](class-guzzlehttp-psr7-message-method-parsemessage.md)
 
 Parses an HTTP message into an associative array.
 
@@ -72,7 +72,7 @@ HTTP request or response to parse.
 
 array<string\|int, mixed>
 
-#### parseRequest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html\#method_parseRequest)
+#### parseRequest()  [header link](class-guzzlehttp-psr7-message-method-parserequest.md)
 
 Parses a request message string into a request object.
 
@@ -91,7 +91,7 @@ Request message string.
 
 [RequestInterface](class-psr-http-message-requestinterface.md)
 
-#### parseRequestUri()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html\#method_parseRequestUri)
+#### parseRequestUri()  [header link](class-guzzlehttp-psr7-message-method-parserequesturi.md)
 
 Constructs a URI for an HTTP request message.
 
@@ -115,7 +115,7 @@ Array of headers (each value an array).
 
 string
 
-#### parseResponse()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html\#method_parseResponse)
+#### parseResponse()  [header link](class-guzzlehttp-psr7-message-method-parseresponse.md)
 
 Parses a response message string into a response object.
 
@@ -134,7 +134,7 @@ Response message string.
 
 [ResponseInterface](class-psr-http-message-responseinterface.md)
 
-#### rewindBody()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html\#method_rewindBody)
+#### rewindBody()  [header link](class-guzzlehttp-psr7-message-method-rewindbody.md)
 
 Attempts to rewind a message body and throws an exception on failure.
 
@@ -152,11 +152,11 @@ $message
 
 Message to rewind
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html\#method_rewindBody\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-message-method-rewindbody-tags.md)
 
 throwsRuntimeException
 
-#### toString()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html\#method_toString)
+#### toString()  [header link](class-guzzlehttp-psr7-message-method-tostring.md)
 
 Returns the string representation of an HTTP message.
 
@@ -181,14 +181,14 @@ string
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html#toc-methods)
+  - [Methods](class-guzzlehttp-psr7-message-toc-methods.md)
 - Methods
-  - [bodySummary()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html#method_bodySummary)
-  - [parseMessage()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html#method_parseMessage)
-  - [parseRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html#method_parseRequest)
-  - [parseRequestUri()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html#method_parseRequestUri)
-  - [parseResponse()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html#method_parseResponse)
-  - [rewindBody()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html#method_rewindBody)
-  - [toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html#method_toString)
+  - [bodySummary()](class-guzzlehttp-psr7-message-method-bodysummary.md)
+  - [parseMessage()](class-guzzlehttp-psr7-message-method-parsemessage.md)
+  - [parseRequest()](class-guzzlehttp-psr7-message-method-parserequest.md)
+  - [parseRequestUri()](class-guzzlehttp-psr7-message-method-parserequesturi.md)
+  - [parseResponse()](class-guzzlehttp-psr7-message-method-parseresponse.md)
+  - [rewindBody()](class-guzzlehttp-psr7-message-method-rewindbody.md)
+  - [toString()](class-guzzlehttp-psr7-message-method-tostring.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Message.html#top)
+[Back To Top](class-guzzlehttp-psr7-message-top.md)

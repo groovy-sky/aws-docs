@@ -8,7 +8,7 @@ Defines the connector-specific configuration and credentials for the connector p
 
 The connector-specific properties of the profile configuration.
 
-Type: [ConnectorProfileProperties](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ConnectorProfileProperties.html) object
+Type: [ConnectorProfileProperties](api-connectorprofileproperties.md) object
 
 Required: Yes
 
@@ -16,7 +16,7 @@ Required: Yes
 
 The connector-specific credentials required by each connector.
 
-Type: [ConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ConnectorProfileCredentials.html) object
+Type: [ConnectorProfileCredentials](api-connectorprofilecredentials.md) object
 
 Required: No
 
@@ -24,13 +24,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/ConnectorProfileConfig)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/connectorprofileconfig.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/ConnectorProfileConfig)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/connectorprofileconfig.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/ConnectorProfileConfig)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/connectorprofileconfig.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ConnectorProfile
 

@@ -3,7 +3,7 @@
 Describes the cache configuration for an Amplify app.
 
 For more information about how Amplify applies an optimal cache
-configuration for your app based on the type of content that is being served, see [Managing cache configuration](https://docs.aws.amazon.com/amplify/latest/userguide/managing-cache-configuration) in the _Amplify User_
+configuration for your app based on the type of content that is being served, see [Managing cache configuration](../../../../services/amplify/latest/userguide/managing-cache-configuration.md) in the _Amplify User_
 _guide_.
 
 ## Contents
@@ -30,13 +30,13 @@ Required: Yes
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/amplify-2017-07-25/CacheConfig)
+- [AWS SDK for C++](../../../goto/sdkforcpp/amplify-2017-07-25/cacheconfig.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/amplify-2017-07-25/CacheConfig)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/amplify-2017-07-25/cacheconfig.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/amplify-2017-07-25/CacheConfig)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/amplify-2017-07-25/cacheconfig.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Branch
 

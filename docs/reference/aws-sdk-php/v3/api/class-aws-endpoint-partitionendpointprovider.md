@@ -5,23 +5,23 @@ Menu
 
 ## PartitionEndpointProvider        in package    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html\#toc)
+### Table of Contents  [header link](class-aws-endpoint-partitionendpointprovider-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html\#toc-methods)
+#### Methods  [header link](class-aws-endpoint-partitionendpointprovider-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html#method___construct)
-: mixed The 'options' parameter accepts the following arguments:[\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html#method___invoke)
-: mixed [defaultProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html#method_defaultProvider)
-: [PartitionEndpointProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html)Creates and returns the default SDK partition provider.[getPartition()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html#method_getPartition)
+[\_\_construct()](class-aws-endpoint-partitionendpointprovider-method-construct.md)
+: mixed The 'options' parameter accepts the following arguments:[\_\_invoke()](class-aws-endpoint-partitionendpointprovider-method-invoke.md)
+: mixed [defaultProvider()](class-aws-endpoint-partitionendpointprovider-method-defaultprovider.md)
+: [PartitionEndpointProvider](class-aws-endpoint-partitionendpointprovider.md)Creates and returns the default SDK partition provider.[getPartition()](class-aws-endpoint-partitionendpointprovider-method-getpartition.md)
 : [Partition](class-aws-endpoint-partition.md)Returns the partition containing the provided region or the default
-partition if no match is found.[getPartitionByName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html#method_getPartitionByName)
+partition if no match is found.[getPartitionByName()](class-aws-endpoint-partitionendpointprovider-method-getpartitionbyname.md)
 : [Partition](class-aws-endpoint-partition.md) \|null Returns the partition with the provided name or null if no partition with
-the provided name can be found.[mergePrefixData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html#method_mergePrefixData)
+the provided name can be found.[mergePrefixData()](class-aws-endpoint-partitionendpointprovider-method-mergeprefixdata.md)
 : array<string\|int, mixed> Copy endpoint data for other prefixes used by a given service
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html\#methods)
+### Methods  [header link](class-aws-endpoint-partitionendpointprovider-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-endpoint-partitionendpointprovider-method-construct.md)
 
 The 'options' parameter accepts the following arguments:
 
@@ -45,7 +45,7 @@ $partitions
 : array<string\|int, mixed>
 = \[\]
 
-#### \_\_invoke()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html\#method___invoke)
+#### \_\_invoke()  [header link](class-aws-endpoint-partitionendpointprovider-method-invoke.md)
 
 `
     public
@@ -57,7 +57,7 @@ $args
 : array<string\|int, mixed>
 = \[\]
 
-#### defaultProvider()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html\#method_defaultProvider)
+#### defaultProvider()  [header link](class-aws-endpoint-partitionendpointprovider-method-defaultprovider.md)
 
 Creates and returns the default SDK partition provider.
 
@@ -73,9 +73,9 @@ $options
 
 ##### Return values
 
-[PartitionEndpointProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html)
+[PartitionEndpointProvider](class-aws-endpoint-partitionendpointprovider.md)
 
-#### getPartition()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html\#method_getPartition)
+#### getPartition()  [header link](class-aws-endpoint-partitionendpointprovider-method-getpartition.md)
 
 Returns the partition containing the provided region or the default
 partition if no match is found.
@@ -94,7 +94,7 @@ $region
 
 [Partition](class-aws-endpoint-partition.md)
 
-#### getPartitionByName()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html\#method_getPartitionByName)
+#### getPartitionByName()  [header link](class-aws-endpoint-partitionendpointprovider-method-getpartitionbyname.md)
 
 Returns the partition with the provided name or null if no partition with
 the provided name can be found.
@@ -112,7 +112,7 @@ $name
 
 [Partition](class-aws-endpoint-partition.md) \|null
 
-#### mergePrefixData()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html\#method_mergePrefixData)
+#### mergePrefixData()  [header link](class-aws-endpoint-partitionendpointprovider-method-mergeprefixdata.md)
 
 Copy endpoint data for other prefixes used by a given service
 
@@ -136,13 +136,13 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html#toc-methods)
+  - [Methods](class-aws-endpoint-partitionendpointprovider-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html#method___construct)
-  - [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html#method___invoke)
-  - [defaultProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html#method_defaultProvider)
-  - [getPartition()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html#method_getPartition)
-  - [getPartitionByName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html#method_getPartitionByName)
-  - [mergePrefixData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html#method_mergePrefixData)
+  - [\_\_construct()](class-aws-endpoint-partitionendpointprovider-method-construct.md)
+  - [\_\_invoke()](class-aws-endpoint-partitionendpointprovider-method-invoke.md)
+  - [defaultProvider()](class-aws-endpoint-partitionendpointprovider-method-defaultprovider.md)
+  - [getPartition()](class-aws-endpoint-partitionendpointprovider-method-getpartition.md)
+  - [getPartitionByName()](class-aws-endpoint-partitionendpointprovider-method-getpartitionbyname.md)
+  - [mergePrefixData()](class-aws-endpoint-partitionendpointprovider-method-mergeprefixdata.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PartitionEndpointProvider.html#top)
+[Back To Top](class-aws-endpoint-partitionendpointprovider-top.md)

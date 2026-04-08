@@ -143,7 +143,7 @@ Required: No
 **EvaluationState**
 
 If the value of this field is `PARTIAL_DATA`, it indicates that not all the available data was able to be retrieved due to quota limitations. For more information, see [Create\
-alarms on Metrics Insights queries](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Create_Metrics_Insights_Alarm.html).
+alarms on Metrics Insights queries](../../../../services/amazoncloudwatch/latest/monitoring/create-metrics-insights-alarm.md).
 
 If the value of this field is `EVALUATION_ERROR`, it indicates configuration errors in alarm setup that require review and correction. Refer to StateReason field of the alarm for more details.
 
@@ -319,7 +319,7 @@ Required: No
 
 Sets how this alarm is to handle missing data points. The valid values are
 `breaching`, `notBreaching`, `ignore`, and
-`missing`. For more information, see [Configuring how CloudWatch alarms treat missing data](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html#alarms-and-missing-data).
+`missing`. For more information, see [Configuring how CloudWatch alarms treat missing data](../../../../services/amazoncloudwatch/latest/monitoring/alarmthatsendsemail-alarms-and-missing-data.md).
 
 If this parameter is omitted, the default behavior of `missing` is
 used.
@@ -348,13 +348,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/MetricAlarm)
+- [AWS SDK for C++](../../../goto/sdkforcpp/monitoring-2010-08-01/metricalarm.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/MetricAlarm)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/monitoring-2010-08-01/metricalarm.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/monitoring-2010-08-01/MetricAlarm)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/monitoring-2010-08-01/metricalarm.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Metric
 

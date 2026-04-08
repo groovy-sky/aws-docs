@@ -4,15 +4,15 @@ Menu
 
 ## GroundStation
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.groundstation.html\#toc)
+### Table of Contents  [header link](namespace-aws-groundstation-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.groundstation.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-groundstation-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.groundstation.exception.html)
+[Exception](namespace-aws-groundstation-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.groundstation.html\#toc-classes)
+#### Classes  [header link](namespace-aws-groundstation-toc-classes.md)
 
-[GroundStationClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GroundStation.GroundStationClient.html)This client is used to interact with the **AWS Ground Station** service.
+[GroundStationClient](class-aws-groundstation-groundstationclient.md)This client is used to interact with the **AWS Ground Station** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.groundstation.html#toc-classes)
+  - [Classes](namespace-aws-groundstation-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.groundstation.html#top)
+[Back To Top](namespace-aws-groundstation-top.md)

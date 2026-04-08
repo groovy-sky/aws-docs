@@ -2,27 +2,27 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
 
 ## DirectoryUploader        in package    - [Aws](package-aws.md)       implements  [PromisorInterface](class-guzzlehttp-promise-promisorinterface.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryUploader.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-directoryuploader-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryUploader.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-s3-s3transfer-directoryuploader-toc-interfaces.md)
 
 [PromisorInterface](class-guzzlehttp-promise-promisorinterface.md)Interface used with classes that return a promise.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryUploader.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-directoryuploader-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryUploader.html#method___construct)
-: mixed [promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryUploader.html#method_promise)
+[\_\_construct()](class-aws-s3-s3transfer-directoryuploader-method-construct.md)
+: mixed [promise()](class-aws-s3-s3transfer-directoryuploader-method-promise.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Returns a promise.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryUploader.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-directoryuploader-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryUploader.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3transfer-directoryuploader-method-construct.md)
 
 `
     public
@@ -39,9 +39,9 @@ A closure that receives
 (S3ClientInterface, UploadRequest) and returns PromiseInterface
 
 $uploadDirectoryRequest
-: [UploadDirectoryRequest](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html)
+: [UploadDirectoryRequest](class-aws-s3-s3transfer-models-uploaddirectoryrequest.md)
 
-#### promise()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryUploader.html\#method_promise)
+#### promise()  [header link](class-aws-s3-s3transfer-directoryuploader-method-promise.md)
 
 Returns a promise.
 
@@ -49,7 +49,7 @@ Returns a promise.
     public
                     promise() : PromiseInterface`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryUploader.html\#method_promise\#tags)
+##### Tags  [header link](class-aws-s3-s3transfer-directoryuploader-method-promise-tags.md)
 
 throwsThrowable
 
@@ -63,9 +63,9 @@ throwsThrowable
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryUploader.html#toc-methods)
+  - [Methods](class-aws-s3-s3transfer-directoryuploader-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryUploader.html#method___construct)
-  - [promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryUploader.html#method_promise)
+  - [\_\_construct()](class-aws-s3-s3transfer-directoryuploader-method-construct.md)
+  - [promise()](class-aws-s3-s3transfer-directoryuploader-method-promise.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.DirectoryUploader.html#top)
+[Back To Top](class-aws-s3-s3transfer-directoryuploader-top.md)

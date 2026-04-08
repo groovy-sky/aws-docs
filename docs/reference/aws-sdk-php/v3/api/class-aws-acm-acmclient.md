@@ -17,29 +17,29 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2015-12-08**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-2015-12-08.html)
+- [**2015-12-08**](api-acm-2015-12-08.md)
 
-  - [AddTagsToCertificate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-2015-12-08.html#addtagstocertificate)
-  - [DeleteCertificate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-2015-12-08.html#deletecertificate)
-  - [DescribeCertificate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-2015-12-08.html#describecertificate)
-  - [ExportCertificate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-2015-12-08.html#exportcertificate)
-  - [GetAccountConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-2015-12-08.html#getaccountconfiguration)
-  - [GetCertificate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-2015-12-08.html#getcertificate)
-  - [ImportCertificate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-2015-12-08.html#importcertificate)
-  - [ListCertificates](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-2015-12-08.html#listcertificates)
-  - [ListTagsForCertificate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-2015-12-08.html#listtagsforcertificate)
-  - [PutAccountConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-2015-12-08.html#putaccountconfiguration)
-  - [RemoveTagsFromCertificate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-2015-12-08.html#removetagsfromcertificate)
-  - [RenewCertificate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-2015-12-08.html#renewcertificate)
-  - [RequestCertificate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-2015-12-08.html#requestcertificate)
-  - [ResendValidationEmail](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-2015-12-08.html#resendvalidationemail)
-  - [RevokeCertificate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-2015-12-08.html#revokecertificate)
-  - [SearchCertificates](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-2015-12-08.html#searchcertificates)
-  - [UpdateCertificateOptions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-acm-2015-12-08.html#updatecertificateoptions)
+  - [AddTagsToCertificate](api-acm-2015-12-08-addtagstocertificate.md)
+  - [DeleteCertificate](api-acm-2015-12-08-deletecertificate.md)
+  - [DescribeCertificate](api-acm-2015-12-08-describecertificate.md)
+  - [ExportCertificate](api-acm-2015-12-08-exportcertificate.md)
+  - [GetAccountConfiguration](api-acm-2015-12-08-getaccountconfiguration.md)
+  - [GetCertificate](api-acm-2015-12-08-getcertificate.md)
+  - [ImportCertificate](api-acm-2015-12-08-importcertificate.md)
+  - [ListCertificates](api-acm-2015-12-08-listcertificates.md)
+  - [ListTagsForCertificate](api-acm-2015-12-08-listtagsforcertificate.md)
+  - [PutAccountConfiguration](api-acm-2015-12-08-putaccountconfiguration.md)
+  - [RemoveTagsFromCertificate](api-acm-2015-12-08-removetagsfromcertificate.md)
+  - [RenewCertificate](api-acm-2015-12-08-renewcertificate.md)
+  - [RequestCertificate](api-acm-2015-12-08-requestcertificate.md)
+  - [ResendValidationEmail](api-acm-2015-12-08-resendvalidationemail.md)
+  - [RevokeCertificate](api-acm-2015-12-08-revokecertificate.md)
+  - [SearchCertificates](api-acm-2015-12-08-searchcertificates.md)
+  - [UpdateCertificateOptions](api-acm-2015-12-08-updatecertificateoptions.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Acm.AcmClient.html\#toc)
+### Table of Contents  [header link](class-aws-acm-acmclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Acm.AcmClient.html\#toc-methods)
+#### Methods  [header link](class-aws-acm-acmclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -70,7 +70,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Acm.AcmClient.html\#methods)
+### Methods  [header link](class-aws-acm-acmclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -537,7 +537,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Acm.AcmClient.html#toc-methods)
+  - [Methods](class-aws-acm-acmclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -564,4 +564,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Acm.AcmClient.html#top)
+[Back To Top](class-aws-acm-acmclient-top.md)

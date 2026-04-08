@@ -4,15 +4,15 @@ Menu
 
 ## Pinpoint
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pinpoint.html\#toc)
+### Table of Contents  [header link](namespace-aws-pinpoint-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pinpoint.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-pinpoint-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pinpoint.exception.html)
+[Exception](namespace-aws-pinpoint-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pinpoint.html\#toc-classes)
+#### Classes  [header link](namespace-aws-pinpoint-toc-classes.md)
 
-[PinpointClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Pinpoint.PinpointClient.html)This client is used to interact with the **Amazon Pinpoint** service.
+[PinpointClient](class-aws-pinpoint-pinpointclient.md)This client is used to interact with the **Amazon Pinpoint** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pinpoint.html#toc-classes)
+  - [Classes](namespace-aws-pinpoint-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pinpoint.html#top)
+[Back To Top](namespace-aws-pinpoint-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## MediaPackage
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mediapackage.html\#toc)
+### Table of Contents  [header link](namespace-aws-mediapackage-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mediapackage.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-mediapackage-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mediapackage.exception.html)
+[Exception](namespace-aws-mediapackage-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mediapackage.html\#toc-classes)
+#### Classes  [header link](namespace-aws-mediapackage-toc-classes.md)
 
-[MediaPackageClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackage.MediaPackageClient.html)This client is used to interact with the **AWS Elemental MediaPackage** service.
+[MediaPackageClient](class-aws-mediapackage-mediapackageclient.md)This client is used to interact with the **AWS Elemental MediaPackage** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mediapackage.html#toc-classes)
+  - [Classes](namespace-aws-mediapackage-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mediapackage.html#top)
+[Back To Top](namespace-aws-mediapackage-top.md)

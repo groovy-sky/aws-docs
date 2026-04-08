@@ -22,21 +22,21 @@ called a stack. You create, update, and delete a collection of resources by crea
 updating, and deleting stacks. All the resources in a stack are defined by the stack's
 template.
 
-[CancelUpdateStack](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CancelUpdateStack.html) \| [ContinueUpdateRollback](api-continueupdaterollback.md) \| [CreateStack](api-createstack.md) \| [DeleteStack](api-deletestack.md) \| [DescribeStacks](api-describestacks.md) \| [ListStacks](api-liststacks.md) \| [RollbackStack](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_RollbackStack.html) \| [UpdateStack](api-updatestack.md)
+[CancelUpdateStack](api-cancelupdatestack.md) \| [ContinueUpdateRollback](api-continueupdaterollback.md) \| [CreateStack](api-createstack.md) \| [DeleteStack](api-deletestack.md) \| [DescribeStacks](api-describestacks.md) \| [ListStacks](api-liststacks.md) \| [RollbackStack](api-rollbackstack.md) \| [UpdateStack](api-updatestack.md)
 
-Stack events: [DescribeStackEvents](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeStackEvents.html)
+Stack events: [DescribeStackEvents](api-describestackevents.md)
 
-Stack resources: [DescribeStackResource](api-describestackresource.md) \| [DescribeStackResources](api-describestackresources.md) \| [ListStackResources](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackResources.html)
+Stack resources: [DescribeStackResource](api-describestackresource.md) \| [DescribeStackResources](api-describestackresources.md) \| [ListStackResources](api-liststackresources.md)
 
-Stack drift: [DescribeStackDriftDetectionStatus](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeStackDriftDetectionStatus.html) \| [DescribeStackResourceDrifts](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeStackResourceDrifts.html) \| [DetectStackDrift](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DetectStackDrift.html) \| [DetectStackResourceDrift](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DetectStackResourceDrift.html)
+Stack drift: [DescribeStackDriftDetectionStatus](api-describestackdriftdetectionstatus.md) \| [DescribeStackResourceDrifts](api-describestackresourcedrifts.md) \| [DetectStackDrift](api-detectstackdrift.md) \| [DetectStackResourceDrift](api-detectstackresourcedrift.md)
 
-Stack operations: [ListExports](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListExports.html) \| [ListImports](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListImports.html) \|
-[SignalResource](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SignalResource.html) \| [UpdateTerminationProtection](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_UpdateTerminationProtection.html)
+Stack operations: [ListExports](api-listexports.md) \| [ListImports](api-listimports.md) \|
+[SignalResource](api-signalresource.md) \| [UpdateTerminationProtection](api-updateterminationprotection.md)
 
-Stack policies: [GetStackPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_GetStackPolicy.html) \| [SetStackPolicy](api-setstackpolicy.md)
+Stack policies: [GetStackPolicy](api-getstackpolicy.md) \| [SetStackPolicy](api-setstackpolicy.md)
 
-Templates: [GetTemplate](api-gettemplate.md) \| [GetTemplateSummary](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_GetTemplateSummary.html) \|
-[ValidateTemplate](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ValidateTemplate.html)
+Templates: [GetTemplate](api-gettemplate.md) \| [GetTemplateSummary](api-gettemplatesummary.md) \|
+[ValidateTemplate](api-validatetemplate.md)
 
 **Change set actions**
 
@@ -46,7 +46,7 @@ set, which is summary of your proposed changes. Change sets allow you to see how
 changes might impact your running resources, especially for critical resources, before
 implementing them.
 
-[CreateChangeSet](api-createchangeset.md) \| [DeleteChangeSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DeleteChangeSet.html) \| [DescribeChangeSet](api-describechangeset.md) \| [DescribeChangeSetHooks](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeChangeSetHooks.html) \| [ExecuteChangeSet](api-executechangeset.md) \| [ListChangeSets](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListChangeSets.html)
+[CreateChangeSet](api-createchangeset.md) \| [DeleteChangeSet](api-deletechangeset.md) \| [DescribeChangeSet](api-describechangeset.md) \| [DescribeChangeSetHooks](api-describechangesethooks.md) \| [ExecuteChangeSet](api-executechangeset.md) \| [ListChangeSets](api-listchangesets.md)
 
 **StackSets actions**
 
@@ -58,12 +58,12 @@ of the specified accounts and AWS Regions by using the supplied CloudFormation t
 and parameters. Stack sets let you manage a common set of AWS resources in a selection
 of accounts and AWS Regions in a single operation.
 
-[CreateStackSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStackSet.html) \| [DeleteStackSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DeleteStackSet.html) \| [DescribeStackSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeStackSet.html) \| [ListStackSets](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackSets.html) \| [UpdateStackSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_UpdateStackSet.html)
+[CreateStackSet](api-createstackset.md) \| [DeleteStackSet](api-deletestackset.md) \| [DescribeStackSet](api-describestackset.md) \| [ListStackSets](api-liststacksets.md) \| [UpdateStackSet](api-updatestackset.md)
 
-Stack instances: [CreateStackInstances](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStackInstances.html) \| [DeleteStackInstances](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DeleteStackInstances.html) \| [DescribeStackInstance](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeStackInstance.html) \| [ListStackInstances](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackInstances.html)
+Stack instances: [CreateStackInstances](api-createstackinstances.md) \| [DeleteStackInstances](api-deletestackinstances.md) \| [DescribeStackInstance](api-describestackinstance.md) \| [ListStackInstances](api-liststackinstances.md)
 
-StackSet operations: [DescribeStackSetOperation](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeStackSetOperation.html) \| [ListStackSetOperations](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackSetOperations.html) \| [ListStackSetOperationResults](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackSetOperationResults.html) \|
-[StopStackSetOperation](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_StopStackSetOperation.html)
+StackSet operations: [DescribeStackSetOperation](api-describestacksetoperation.md) \| [ListStackSetOperations](api-liststacksetoperations.md) \| [ListStackSetOperationResults](api-liststacksetoperationresults.md) \|
+[StopStackSetOperation](api-stopstacksetoperation.md)
 
 **IaC Generator actions**
 
@@ -73,12 +73,12 @@ generate CloudFormation templates from them.
 For more information, see [Generating templates from\
 existing resources](../../../../services/cloudformation/latest/userguide/generate-iac.md) in the _AWS CloudFormation User Guide_.
 
-Generated templates: [CreateGeneratedTemplate](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateGeneratedTemplate.html) \| [DeleteGeneratedTemplate](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DeleteGeneratedTemplate.html) \| [DescribeGeneratedTemplate](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeGeneratedTemplate.html) \|
-[GetGeneratedTemplate](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_GetGeneratedTemplate.html) \| [ListGeneratedTemplates](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListGeneratedTemplates.html) \|
-[UpdateGeneratedTemplate](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_UpdateGeneratedTemplate.html)
+Generated templates: [CreateGeneratedTemplate](api-creategeneratedtemplate.md) \| [DeleteGeneratedTemplate](api-deletegeneratedtemplate.md) \| [DescribeGeneratedTemplate](api-describegeneratedtemplate.md) \|
+[GetGeneratedTemplate](api-getgeneratedtemplate.md) \| [ListGeneratedTemplates](api-listgeneratedtemplates.md) \|
+[UpdateGeneratedTemplate](api-updategeneratedtemplate.md)
 
-Resource scanning: [DescribeResourceScan](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeResourceScan.html) \| [ListResourceScans](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListResourceScans.html) \| [ListResourceScanRelatedResources](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListResourceScanRelatedResources.html) \|
-[ListResourceScanResources](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListResourceScanResources.html) \| [StartResourceScan](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_StartResourceScan.html)
+Resource scanning: [DescribeResourceScan](api-describeresourcescan.md) \| [ListResourceScans](api-listresourcescans.md) \| [ListResourceScanRelatedResources](api-listresourcescanrelatedresources.md) \|
+[ListResourceScanResources](api-listresourcescanresources.md) \| [StartResourceScan](api-startresourcescan.md)
 
 **Stack refactoring actions**
 
@@ -88,8 +88,8 @@ reorganize your stack architecture.
 For more information, see [Refactoring\
 stacks](../../../../services/cloudformation/latest/userguide/stack-refactoring.md) in the _AWS CloudFormation User Guide_.
 
-[CreateStackRefactor](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStackRefactor.html) \| [DescribeStackRefactor](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeStackRefactor.html) \|
-[ExecuteStackRefactor](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ExecuteStackRefactor.html) \| [ListStackRefactors](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackRefactors.html) \| [ListStackRefactorActions](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackRefactorActions.html)
+[CreateStackRefactor](api-createstackrefactor.md) \| [DescribeStackRefactor](api-describestackrefactor.md) \|
+[ExecuteStackRefactor](api-executestackrefactor.md) \| [ListStackRefactors](api-liststackrefactors.md) \| [ListStackRefactorActions](api-liststackrefactoractions.md)
 
 **CloudFormation registry actions**
 
@@ -100,20 +100,20 @@ Hooks, resource types, and modules.
 For more information, see [Managing extensions with the\
 CloudFormation registry](../../../../services/cloudformation/latest/userguide/registry.md) in the _AWS CloudFormation User Guide_.
 
-Discover and activate: [ActivateType](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ActivateType.html) \| [DeactivateType](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DeactivateType.html) \| [DescribeType](api-describetype.md) \| [ListTypes](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListTypes.html)
+Discover and activate: [ActivateType](api-activatetype.md) \| [DeactivateType](api-deactivatetype.md) \| [DescribeType](api-describetype.md) \| [ListTypes](api-listtypes.md)
 
-Configure: [BatchDescribeTypeConfigurations](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_BatchDescribeTypeConfigurations.html) \| [SetTypeConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetTypeConfiguration.html)
+Configure: [BatchDescribeTypeConfigurations](api-batchdescribetypeconfigurations.md) \| [SetTypeConfiguration](api-settypeconfiguration.md)
 
-Manage versions: [ListTypeVersions](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListTypeVersions.html) \| [SetTypeDefaultVersion](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetTypeDefaultVersion.html)
+Manage versions: [ListTypeVersions](api-listtypeversions.md) \| [SetTypeDefaultVersion](api-settypedefaultversion.md)
 
-Monitor results: [GetHookResult](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_GetHookResult.html) \| [ListHookResults](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListHookResults.html)
+Monitor results: [GetHookResult](api-gethookresult.md) \| [ListHookResults](api-listhookresults.md)
 
-Register privately: [DescribeTypeRegistration](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeTypeRegistration.html) \| [DeregisterType](api-deregistertype.md) \| [ListTypeRegistrations](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListTypeRegistrations.html) \| [RegisterType](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_RegisterType.html)
+Register privately: [DescribeTypeRegistration](api-describetyperegistration.md) \| [DeregisterType](api-deregistertype.md) \| [ListTypeRegistrations](api-listtyperegistrations.md) \| [RegisterType](api-registertype.md)
 
-Publish: [DescribePublisher](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribePublisher.html) \| [PublishType](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_PublishType.html) \| [RegisterPublisher](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_RegisterPublisher.html) \| [TestType](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_TestType.html)
+Publish: [DescribePublisher](api-describepublisher.md) \| [PublishType](api-publishtype.md) \| [RegisterPublisher](api-registerpublisher.md) \| [TestType](api-testtype.md)
 
 This document was last published on April 5, 2026.
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Actions

@@ -117,7 +117,7 @@ Required: No
 
 The virtual gateway specification to apply.
 
-Type: [VirtualGatewaySpec](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewaySpec.html) object
+Type: [VirtualGatewaySpec](api-virtualgatewayspec.md) object
 
 Required: Yes
 
@@ -128,7 +128,7 @@ categorization and organization. Each tag consists of a key and an optional valu
 which you define. Tag keys can have a maximum character length of 128 characters, and tag values can have
 a maximum length of 256 characters.
 
-Type: Array of [TagRef](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_TagRef.html) objects
+Type: Array of [TagRef](api-tagref.md) objects
 
 Array Members: Minimum number of 0 items. Maximum number of 50 items.
 
@@ -239,19 +239,19 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 
 An object that represents metadata for a resource.
 
-Type: [ResourceMetadata](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ResourceMetadata.html) object
+Type: [ResourceMetadata](api-resourcemetadata.md) object
 
 **[spec](#API_CreateVirtualGateway_ResponseSyntax)**
 
 The specifications of the virtual gateway.
 
-Type: [VirtualGatewaySpec](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewaySpec.html) object
+Type: [VirtualGatewaySpec](api-virtualgatewayspec.md) object
 
 **[status](#API_CreateVirtualGateway_ResponseSyntax)**
 
 The current status of the virtual gateway.
 
-Type: [VirtualGatewayStatus](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayStatus.html) object
+Type: [VirtualGatewayStatus](api-virtualgatewaystatus.md) object
 
 **[virtualGatewayName](#API_CreateVirtualGateway_ResponseSyntax)**
 
@@ -292,7 +292,7 @@ HTTP Status Code: 500
 **LimitExceededException**
 
 You have exceeded a service limit for your account. For more information, see [Service\
-Limits](https://docs.aws.amazon.com/app-mesh/latest/userguide/service-quotas.html) in the _AWS App Mesh User Guide_.
+Limits](../../../../services/app-mesh/latest/userguide/service-quotas.md) in the _AWS App Mesh User Guide_.
 
 HTTP Status Code: 400
 
@@ -321,7 +321,7 @@ HTTP Status Code: 429
 In the following example or examples, the Authorization header contents
 ( `AUTHPARAMS`) must be replaced with an AWS Signature Version 4
 signature. For more information about creating these signatures, see [Signature\
-Version 4 Signing Process](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) in the _AWS General_
+Version 4 Signing Process](../../../../general/general/latest/gr/signature-version-4.md) in the _AWS General_
 _Reference_.
 
 You need to learn how to sign HTTP requests only if you intend to manually
@@ -409,27 +409,27 @@ Connection: keep-alive
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appmesh-2019-01-25/CreateVirtualGateway)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/appmesh-2019-01-25/createvirtualgateway.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appmesh-2019-01-25/CreateVirtualGateway)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appmesh-2019-01-25/createvirtualgateway.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appmesh-2019-01-25/CreateVirtualGateway)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appmesh-2019-01-25/createvirtualgateway.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appmesh-2019-01-25/CreateVirtualGateway)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/appmesh-2019-01-25/createvirtualgateway.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appmesh-2019-01-25/CreateVirtualGateway)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appmesh-2019-01-25/createvirtualgateway.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appmesh-2019-01-25/CreateVirtualGateway)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appmesh-2019-01-25/createvirtualgateway.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appmesh-2019-01-25/CreateVirtualGateway)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appmesh-2019-01-25/createvirtualgateway.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appmesh-2019-01-25/CreateVirtualGateway)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appmesh-2019-01-25/createvirtualgateway.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/appmesh-2019-01-25/CreateVirtualGateway)
+- [AWS SDK for Python](../../../../services/goto/boto3/appmesh-2019-01-25/createvirtualgateway.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appmesh-2019-01-25/CreateVirtualGateway)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appmesh-2019-01-25/createvirtualgateway.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateRoute
 

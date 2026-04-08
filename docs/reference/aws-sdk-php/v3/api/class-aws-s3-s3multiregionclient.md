@@ -7,23 +7,23 @@ Menu
 
 **Amazon Simple Storage Service** multi-region client.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3multiregionclient-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-s3-s3multiregionclient-toc-interfaces.md)
 
 [S3ClientInterface](class-aws-s3-s3clientinterface.md)\*\*Amazon Simple Storage Service\*\* client.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3multiregionclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
-: mixed [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html#method___construct)
+: mixed [\_\_construct()](class-aws-s3-s3multiregionclient-method-construct.md)
 : mixed The multi-region client constructor accepts the following options:[copy()](class-aws-s3-s3clienttrait.md#method_copy)
 : mixed [copyAsync()](class-aws-s3-s3clienttrait.md#method_copyAsync)
-: mixed [createPresignedRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html#method_createPresignedRequest)
+: mixed [createPresignedRequest()](class-aws-s3-s3multiregionclient-method-createpresignedrequest.md)
 : [RequestInterface](class-psr-http-message-requestinterface.md)Create a pre-signed URL for the given S3 command object.[deleteMatchingObjects()](class-aws-s3-s3clienttrait.md#method_deleteMatchingObjects)
 : mixed [deleteMatchingObjectsAsync()](class-aws-s3-s3clienttrait.md#method_deleteMatchingObjectsAsync)
 : mixed [determineBucketRegion()](class-aws-s3-s3clienttrait.md#method_determineBucketRegion)
-: mixed [determineBucketRegionAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html#method_determineBucketRegionAsync)
+: mixed [determineBucketRegionAsync()](class-aws-s3-s3multiregionclient-method-determinebucketregionasync.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Returns a promise fulfilled with the region in which a given bucket is
 located.[doesBucketExist()](class-aws-s3-s3clienttrait.md#method_doesBucketExist)
 : mixed [doesBucketExistV2()](class-aws-s3-s3clienttrait.md#method_doesBucketExistV2)
@@ -34,7 +34,7 @@ located.[doesBucketExist()](class-aws-s3-s3clienttrait.md#method_doesBucketExist
 : mixed [execute()](class-aws-awsclienttrait.md#method_execute)
 : mixed [executeAsync()](class-aws-awsclienttrait.md#method_executeAsync)
 : mixed [getApi()](class-aws-awsclienttrait.md#method_getApi)
-: [Service](class-aws-api-service.md)[getArguments()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html#method_getArguments)
+: [Service](class-aws-api-service.md)[getArguments()](class-aws-s3-s3multiregionclient-method-getarguments.md)
 : mixed [getCommand()](class-aws-awsclienttrait.md#method_getCommand)
 : [CommandInterface](class-aws-commandinterface.md)[getConfig()](class-aws-multiregionclient.md#method_getConfig)
 : mixed\|null Get a client configuration value.[getCredentials()](class-aws-multiregionclient.md#method_getCredentials)
@@ -42,7 +42,7 @@ located.[doesBucketExist()](class-aws-s3-s3clienttrait.md#method_doesBucketExist
 {@see \\Aws\\Credentials\\CredentialsInterface} object.[getEndpoint()](class-aws-multiregionclient.md#method_getEndpoint)
 : [UriInterface](class-psr-http-message-uriinterface.md)Gets the default endpoint, or base URL, used by the client.[getHandlerList()](class-aws-multiregionclient.md#method_getHandlerList)
 : [HandlerList](class-aws-handlerlist.md)Get the handler list used to transfer commands.[getIterator()](class-aws-awsclienttrait.md#method_getIterator)
-: mixed [getObjectUrl()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html#method_getObjectUrl)
+: mixed [getObjectUrl()](class-aws-s3-s3multiregionclient-method-getobjecturl.md)
 : string Returns the URL to an object identified by its bucket and key.[getPaginator()](class-aws-awsclienttrait.md#method_getPaginator)
 : mixed [getRegion()](class-aws-multiregionclient.md#method_getRegion)
 : string Get the region to which the client is configured to send requests by
@@ -57,7 +57,7 @@ default.[getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html\#methods)
+### Methods  [header link](class-aws-s3-s3multiregionclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -71,7 +71,7 @@ $name
 : mixed$args
 : array<string\|int, mixed>
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3multiregionclient-method-construct.md)
 
 The multi-region client constructor accepts the following options:
 
@@ -139,7 +139,7 @@ $fromB
 
 see[S3ClientInterface::copyAsync()](class-aws-s3-s3clientinterface.md#method_copyAsync)
 
-#### createPresignedRequest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html\#method_createPresignedRequest)
+#### createPresignedRequest()  [header link](class-aws-s3-s3multiregionclient-method-createpresignedrequest.md)
 
 Create a pre-signed URL for the given S3 command object.
 
@@ -229,7 +229,7 @@ $bucketName
 
 see[S3ClientInterface::determineBucketRegion()](class-aws-s3-s3clientinterface.md#method_determineBucketRegion)
 
-#### determineBucketRegionAsync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html\#method_determineBucketRegionAsync)
+#### determineBucketRegionAsync()  [header link](class-aws-s3-s3multiregionclient-method-determinebucketregionasync.md)
 
 Returns a promise fulfilled with the region in which a given bucket is
 located.
@@ -389,7 +389,7 @@ $command
 
 [Service](class-aws-api-service.md)
 
-#### getArguments()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html\#method_getArguments)
+#### getArguments()  [header link](class-aws-s3-s3multiregionclient-method-getarguments.md)
 
 `
     public
@@ -489,7 +489,7 @@ $name
 : array<string\|int, mixed>
 = \[\]
 
-#### getObjectUrl()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html\#method_getObjectUrl)
+#### getObjectUrl()  [header link](class-aws-s3-s3multiregionclient-method-getobjecturl.md)
 
 Returns the URL to an object identified by its bucket and key.
 
@@ -692,17 +692,17 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html#toc-methods)
+  - [Methods](class-aws-s3-s3multiregionclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html#method___construct)
+  - [\_\_construct()](class-aws-s3-s3multiregionclient-method-construct.md)
   - [copy()](class-aws-s3-s3clienttrait.md#method_copy)
   - [copyAsync()](class-aws-s3-s3clienttrait.md#method_copyAsync)
-  - [createPresignedRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html#method_createPresignedRequest)
+  - [createPresignedRequest()](class-aws-s3-s3multiregionclient-method-createpresignedrequest.md)
   - [deleteMatchingObjects()](class-aws-s3-s3clienttrait.md#method_deleteMatchingObjects)
   - [deleteMatchingObjectsAsync()](class-aws-s3-s3clienttrait.md#method_deleteMatchingObjectsAsync)
   - [determineBucketRegion()](class-aws-s3-s3clienttrait.md#method_determineBucketRegion)
-  - [determineBucketRegionAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html#method_determineBucketRegionAsync)
+  - [determineBucketRegionAsync()](class-aws-s3-s3multiregionclient-method-determinebucketregionasync.md)
   - [doesBucketExist()](class-aws-s3-s3clienttrait.md#method_doesBucketExist)
   - [doesBucketExistV2()](class-aws-s3-s3clienttrait.md#method_doesBucketExistV2)
   - [doesObjectExist()](class-aws-s3-s3clienttrait.md#method_doesObjectExist)
@@ -712,14 +712,14 @@ $name
   - [execute()](class-aws-awsclienttrait.md#method_execute)
   - [executeAsync()](class-aws-awsclienttrait.md#method_executeAsync)
   - [getApi()](class-aws-awsclienttrait.md#method_getApi)
-  - [getArguments()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html#method_getArguments)
+  - [getArguments()](class-aws-s3-s3multiregionclient-method-getarguments.md)
   - [getCommand()](class-aws-awsclienttrait.md#method_getCommand)
   - [getConfig()](class-aws-multiregionclient.md#method_getConfig)
   - [getCredentials()](class-aws-multiregionclient.md#method_getCredentials)
   - [getEndpoint()](class-aws-multiregionclient.md#method_getEndpoint)
   - [getHandlerList()](class-aws-multiregionclient.md#method_getHandlerList)
   - [getIterator()](class-aws-awsclienttrait.md#method_getIterator)
-  - [getObjectUrl()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html#method_getObjectUrl)
+  - [getObjectUrl()](class-aws-s3-s3multiregionclient-method-getobjecturl.md)
   - [getPaginator()](class-aws-awsclienttrait.md#method_getPaginator)
   - [getRegion()](class-aws-multiregionclient.md#method_getRegion)
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
@@ -732,4 +732,4 @@ $name
   - [useCustomHandler()](class-aws-multiregionclient.md#method_useCustomHandler)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html#top)
+[Back To Top](class-aws-s3-s3multiregionclient-top.md)

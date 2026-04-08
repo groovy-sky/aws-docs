@@ -7,29 +7,29 @@ Menu
 Represents a history container that is required when using the history
 middleware.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html\#toc)
+### Table of Contents  [header link](class-aws-history-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-history-toc-interfaces.md)
 
 CountableIteratorAggregate
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html\#toc-methods)
+#### Methods  [header link](class-aws-history-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html#method___construct)
-: mixed [clear()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html#method_clear)
-: mixed Flush the history[count()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html#method_count)
-: int [finish()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html#method_finish)
-: mixed Finish adding an entry to the history container.[getIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html#method_getIterator)
-: mixed [getLastCommand()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html#method_getLastCommand)
-: [CommandInterface](class-aws-commandinterface.md)Get the last finished command seen by the history container.[getLastRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html#method_getLastRequest)
-: [RequestInterface](class-psr-http-message-requestinterface.md)Get the last finished request seen by the history container.[getLastReturn()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html#method_getLastReturn)
-: [ResultInterface](class-aws-resultinterface.md) \| [AwsException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html)Get the last received result or exception.[start()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html#method_start)
-: string Initiate an entry being added to the history.[toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html#method_toArray)
+[\_\_construct()](class-aws-history-method-construct.md)
+: mixed [clear()](class-aws-history-method-clear.md)
+: mixed Flush the history[count()](class-aws-history-method-count.md)
+: int [finish()](class-aws-history-method-finish.md)
+: mixed Finish adding an entry to the history container.[getIterator()](class-aws-history-method-getiterator.md)
+: mixed [getLastCommand()](class-aws-history-method-getlastcommand.md)
+: [CommandInterface](class-aws-commandinterface.md)Get the last finished command seen by the history container.[getLastRequest()](class-aws-history-method-getlastrequest.md)
+: [RequestInterface](class-psr-http-message-requestinterface.md)Get the last finished request seen by the history container.[getLastReturn()](class-aws-history-method-getlastreturn.md)
+: [ResultInterface](class-aws-resultinterface.md) \| [AwsException](class-aws-exception-awsexception.md)Get the last received result or exception.[start()](class-aws-history-method-start.md)
+: string Initiate an entry being added to the history.[toArray()](class-aws-history-method-toarray.md)
 : array<string\|int, mixed> Converts the history to an array.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html\#methods)
+### Methods  [header link](class-aws-history-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-history-method-construct.md)
 
 `
     public
@@ -43,7 +43,7 @@ $maxEntries
 
 Maximum number of entries to store.
 
-#### clear()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html\#method_clear)
+#### clear()  [header link](class-aws-history-method-clear.md)
 
 Flush the history
 
@@ -51,7 +51,7 @@ Flush the history
     public
                     clear() : mixed`
 
-#### count()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html\#method_count)
+#### count()  [header link](class-aws-history-method-count.md)
 
 `
     public
@@ -61,7 +61,7 @@ Flush the history
 
 int
 
-#### finish()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html\#method_finish)
+#### finish()  [header link](class-aws-history-method-finish.md)
 
 Finish adding an entry to the history container.
 
@@ -81,13 +81,13 @@ $result
 
 The result (an exception or AwsResult).
 
-#### getIterator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html\#method_getIterator)
+#### getIterator()  [header link](class-aws-history-method-getiterator.md)
 
 `
     public
                     getIterator() : mixed`
 
-#### getLastCommand()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html\#method_getLastCommand)
+#### getLastCommand()  [header link](class-aws-history-method-getlastcommand.md)
 
 Get the last finished command seen by the history container.
 
@@ -95,7 +95,7 @@ Get the last finished command seen by the history container.
     public
                     getLastCommand() : CommandInterface`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html\#method_getLastCommand\#tags)
+##### Tags  [header link](class-aws-history-method-getlastcommand-tags.md)
 
 throwsLogicException
 
@@ -105,7 +105,7 @@ if no commands have been seen.
 
 [CommandInterface](class-aws-commandinterface.md)
 
-#### getLastRequest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html\#method_getLastRequest)
+#### getLastRequest()  [header link](class-aws-history-method-getlastrequest.md)
 
 Get the last finished request seen by the history container.
 
@@ -113,7 +113,7 @@ Get the last finished request seen by the history container.
     public
                     getLastRequest() : RequestInterface`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html\#method_getLastRequest\#tags)
+##### Tags  [header link](class-aws-history-method-getlastrequest-tags.md)
 
 throwsLogicException
 
@@ -123,7 +123,7 @@ if no requests have been seen.
 
 [RequestInterface](class-psr-http-message-requestinterface.md)
 
-#### getLastReturn()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html\#method_getLastReturn)
+#### getLastReturn()  [header link](class-aws-history-method-getlastreturn.md)
 
 Get the last received result or exception.
 
@@ -131,7 +131,7 @@ Get the last received result or exception.
     public
                     getLastReturn() : ResultInterface|AwsException`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html\#method_getLastReturn\#tags)
+##### Tags  [header link](class-aws-history-method-getlastreturn-tags.md)
 
 throwsLogicException
 
@@ -139,9 +139,9 @@ if no return values have been received.
 
 ##### Return values
 
-[ResultInterface](class-aws-resultinterface.md) \| [AwsException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.AwsException.html)
+[ResultInterface](class-aws-resultinterface.md) \| [AwsException](class-aws-exception-awsexception.md)
 
-#### start()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html\#method_start)
+#### start()  [header link](class-aws-history-method-start.md)
 
 Initiate an entry being added to the history.
 
@@ -168,7 +168,7 @@ string
 
 Returns the ticket used to finish the entry.
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html\#method_toArray)
+#### toArray()  [header link](class-aws-history-method-toarray.md)
 
 Converts the history to an array.
 
@@ -186,17 +186,17 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html#toc-methods)
+  - [Methods](class-aws-history-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html#method___construct)
-  - [clear()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html#method_clear)
-  - [count()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html#method_count)
-  - [finish()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html#method_finish)
-  - [getIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html#method_getIterator)
-  - [getLastCommand()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html#method_getLastCommand)
-  - [getLastRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html#method_getLastRequest)
-  - [getLastReturn()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html#method_getLastReturn)
-  - [start()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html#method_start)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html#method_toArray)
+  - [\_\_construct()](class-aws-history-method-construct.md)
+  - [clear()](class-aws-history-method-clear.md)
+  - [count()](class-aws-history-method-count.md)
+  - [finish()](class-aws-history-method-finish.md)
+  - [getIterator()](class-aws-history-method-getiterator.md)
+  - [getLastCommand()](class-aws-history-method-getlastcommand.md)
+  - [getLastRequest()](class-aws-history-method-getlastrequest.md)
+  - [getLastReturn()](class-aws-history-method-getlastreturn.md)
+  - [start()](class-aws-history-method-start.md)
+  - [toArray()](class-aws-history-method-toarray.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.History.html#top)
+[Back To Top](class-aws-history-top.md)

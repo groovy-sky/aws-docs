@@ -17,25 +17,25 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2022-07-26**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-instances-2022-07-26.html)
+- [**2022-07-26**](api-workspaces-instances-2022-07-26.md)
 
-  - [AssociateVolume](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-instances-2022-07-26.html#associatevolume)
-  - [CreateVolume](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-instances-2022-07-26.html#createvolume)
-  - [CreateWorkspaceInstance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-instances-2022-07-26.html#createworkspaceinstance)
-  - [DeleteVolume](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-instances-2022-07-26.html#deletevolume)
-  - [DeleteWorkspaceInstance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-instances-2022-07-26.html#deleteworkspaceinstance)
-  - [DisassociateVolume](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-instances-2022-07-26.html#disassociatevolume)
-  - [GetWorkspaceInstance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-instances-2022-07-26.html#getworkspaceinstance)
-  - [ListInstanceTypes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-instances-2022-07-26.html#listinstancetypes)
-  - [ListRegions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-instances-2022-07-26.html#listregions)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-instances-2022-07-26.html#listtagsforresource)
-  - [ListWorkspaceInstances](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-instances-2022-07-26.html#listworkspaceinstances)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-instances-2022-07-26.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-instances-2022-07-26.html#untagresource)
+  - [AssociateVolume](api-workspaces-instances-2022-07-26-associatevolume.md)
+  - [CreateVolume](api-workspaces-instances-2022-07-26-createvolume.md)
+  - [CreateWorkspaceInstance](api-workspaces-instances-2022-07-26-createworkspaceinstance.md)
+  - [DeleteVolume](api-workspaces-instances-2022-07-26-deletevolume.md)
+  - [DeleteWorkspaceInstance](api-workspaces-instances-2022-07-26-deleteworkspaceinstance.md)
+  - [DisassociateVolume](api-workspaces-instances-2022-07-26-disassociatevolume.md)
+  - [GetWorkspaceInstance](api-workspaces-instances-2022-07-26-getworkspaceinstance.md)
+  - [ListInstanceTypes](api-workspaces-instances-2022-07-26-listinstancetypes.md)
+  - [ListRegions](api-workspaces-instances-2022-07-26-listregions.md)
+  - [ListTagsForResource](api-workspaces-instances-2022-07-26-listtagsforresource.md)
+  - [ListWorkspaceInstances](api-workspaces-instances-2022-07-26-listworkspaceinstances.md)
+  - [TagResource](api-workspaces-instances-2022-07-26-tagresource.md)
+  - [UntagResource](api-workspaces-instances-2022-07-26-untagresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkspacesInstances.WorkspacesInstancesClient.html\#toc)
+### Table of Contents  [header link](class-aws-workspacesinstances-workspacesinstancesclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkspacesInstances.WorkspacesInstancesClient.html\#toc-methods)
+#### Methods  [header link](class-aws-workspacesinstances-workspacesinstancesclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -66,7 +66,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkspacesInstances.WorkspacesInstancesClient.html\#methods)
+### Methods  [header link](class-aws-workspacesinstances-workspacesinstancesclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -533,7 +533,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkspacesInstances.WorkspacesInstancesClient.html#toc-methods)
+  - [Methods](class-aws-workspacesinstances-workspacesinstancesclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -560,4 +560,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkspacesInstances.WorkspacesInstancesClient.html#top)
+[Back To Top](class-aws-workspacesinstances-workspacesinstancesclient-top.md)

@@ -30,7 +30,7 @@ Required: No
 
 The configuration classifications that can be specified for the engine.
 
-Type: Array of [Classification](https://docs.aws.amazon.com/athena/latest/APIReference/API_Classification.html) objects
+Type: Array of [Classification](api-classification.md) objects
 
 Required: No
 
@@ -87,13 +87,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/EngineConfiguration)
+- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/engineconfiguration.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/EngineConfiguration)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/engineconfiguration.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/EngineConfiguration)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/engineconfiguration.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 EncryptionConfiguration
 

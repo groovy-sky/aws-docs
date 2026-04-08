@@ -35,7 +35,7 @@ can return a Amazon Glacier response to the operation.
 
 For example, the `AmazonGlacierClient` class provides the
 `CreateVault` method to create a vault. This method maps to the
-underlying Create Vault REST operation (see [Create Vault (PUT vault)](https://docs.aws.amazon.com/amazonglacier/latest/dev/api-vault-put.html)). To use this method, you must create instances of
+underlying Create Vault REST operation (see [Create Vault (PUT vault)](../../../../services/amazonglacier/latest/dev/api-vault-put.md)). To use this method, you must create instances of
 the `CreateVaultRequest` and `CreateVaultResponse` classes to
 provide request information and receive a Amazon Glacier response as shown in the
 following C# code snippet:
@@ -111,7 +111,7 @@ General Process of Creating .NET Code Examples (Using Visual Studio)
 1
 
 Create a credentials profile for your AWS credentials as described in the Amazon SDK for .NET topic
-[Configuring AWS credentials](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/creds-assign.html).
+[Configuring AWS credentials](../../../sdk-for-net/v4/developer-guide/creds-assign.md).
 
 2
 
@@ -153,7 +153,7 @@ var manager = new ArchiveTransferManager(Amazon.RegionEndpoint.USWest2);
 
 For a current list of supported AWS Regions and endpoints, see [Accessing Amazon Glacier](../../../../services/amazonglacier/latest/dev/amazon-glacier-accessing.md).
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Using the AWS SDK for Java
 

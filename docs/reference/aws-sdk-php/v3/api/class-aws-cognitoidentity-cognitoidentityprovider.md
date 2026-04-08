@@ -5,18 +5,18 @@ Menu
 
 ## CognitoIdentityProvider        in package    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentity.CognitoIdentityProvider.html\#toc)
+### Table of Contents  [header link](class-aws-cognitoidentity-cognitoidentityprovider-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentity.CognitoIdentityProvider.html\#toc-methods)
+#### Methods  [header link](class-aws-cognitoidentity-cognitoidentityprovider-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentity.CognitoIdentityProvider.html#method___construct)
-: mixed [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentity.CognitoIdentityProvider.html#method___invoke)
-: mixed [updateLogin()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentity.CognitoIdentityProvider.html#method_updateLogin)
+[\_\_construct()](class-aws-cognitoidentity-cognitoidentityprovider-method-construct.md)
+: mixed [\_\_invoke()](class-aws-cognitoidentity-cognitoidentityprovider-method-invoke.md)
+: mixed [updateLogin()](class-aws-cognitoidentity-cognitoidentityprovider-method-updatelogin.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentity.CognitoIdentityProvider.html\#methods)
+### Methods  [header link](class-aws-cognitoidentity-cognitoidentityprovider-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentity.CognitoIdentityProvider.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-cognitoidentity-cognitoidentityprovider-method-construct.md)
 
 `
     public
@@ -32,13 +32,13 @@ $poolId
 : mixed
 = null
 
-#### \_\_invoke()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentity.CognitoIdentityProvider.html\#method___invoke)
+#### \_\_invoke()  [header link](class-aws-cognitoidentity-cognitoidentityprovider-method-invoke.md)
 
 `
     public
                     __invoke() : mixed`
 
-#### updateLogin()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentity.CognitoIdentityProvider.html\#method_updateLogin)
+#### updateLogin()  [header link](class-aws-cognitoidentity-cognitoidentityprovider-method-updatelogin.md)
 
 `
     public
@@ -56,10 +56,10 @@ $key
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentity.CognitoIdentityProvider.html#toc-methods)
+  - [Methods](class-aws-cognitoidentity-cognitoidentityprovider-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentity.CognitoIdentityProvider.html#method___construct)
-  - [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentity.CognitoIdentityProvider.html#method___invoke)
-  - [updateLogin()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentity.CognitoIdentityProvider.html#method_updateLogin)
+  - [\_\_construct()](class-aws-cognitoidentity-cognitoidentityprovider-method-construct.md)
+  - [\_\_invoke()](class-aws-cognitoidentity-cognitoidentityprovider-method-invoke.md)
+  - [updateLogin()](class-aws-cognitoidentity-cognitoidentityprovider-method-updatelogin.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentity.CognitoIdentityProvider.html#top)
+[Back To Top](class-aws-cognitoidentity-cognitoidentityprovider-top.md)

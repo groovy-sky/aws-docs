@@ -17,32 +17,32 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2015-08-14**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisanalytics-2015-08-14.html)
+- [**2015-08-14**](api-kinesisanalytics-2015-08-14.md)
 
-  - [AddApplicationCloudWatchLoggingOption](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisanalytics-2015-08-14.html#addapplicationcloudwatchloggingoption)
-  - [AddApplicationInput](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisanalytics-2015-08-14.html#addapplicationinput)
-  - [AddApplicationInputProcessingConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisanalytics-2015-08-14.html#addapplicationinputprocessingconfiguration)
-  - [AddApplicationOutput](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisanalytics-2015-08-14.html#addapplicationoutput)
-  - [AddApplicationReferenceDataSource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisanalytics-2015-08-14.html#addapplicationreferencedatasource)
-  - [CreateApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisanalytics-2015-08-14.html#createapplication)
-  - [DeleteApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisanalytics-2015-08-14.html#deleteapplication)
-  - [DeleteApplicationCloudWatchLoggingOption](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisanalytics-2015-08-14.html#deleteapplicationcloudwatchloggingoption)
-  - [DeleteApplicationInputProcessingConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisanalytics-2015-08-14.html#deleteapplicationinputprocessingconfiguration)
-  - [DeleteApplicationOutput](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisanalytics-2015-08-14.html#deleteapplicationoutput)
-  - [DeleteApplicationReferenceDataSource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisanalytics-2015-08-14.html#deleteapplicationreferencedatasource)
-  - [DescribeApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisanalytics-2015-08-14.html#describeapplication)
-  - [DiscoverInputSchema](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisanalytics-2015-08-14.html#discoverinputschema)
-  - [ListApplications](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisanalytics-2015-08-14.html#listapplications)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisanalytics-2015-08-14.html#listtagsforresource)
-  - [StartApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisanalytics-2015-08-14.html#startapplication)
-  - [StopApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisanalytics-2015-08-14.html#stopapplication)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisanalytics-2015-08-14.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisanalytics-2015-08-14.html#untagresource)
-  - [UpdateApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisanalytics-2015-08-14.html#updateapplication)
+  - [AddApplicationCloudWatchLoggingOption](api-kinesisanalytics-2015-08-14-addapplicationcloudwatchloggingoption.md)
+  - [AddApplicationInput](api-kinesisanalytics-2015-08-14-addapplicationinput.md)
+  - [AddApplicationInputProcessingConfiguration](api-kinesisanalytics-2015-08-14-addapplicationinputprocessingconfiguration.md)
+  - [AddApplicationOutput](api-kinesisanalytics-2015-08-14-addapplicationoutput.md)
+  - [AddApplicationReferenceDataSource](api-kinesisanalytics-2015-08-14-addapplicationreferencedatasource.md)
+  - [CreateApplication](api-kinesisanalytics-2015-08-14-createapplication.md)
+  - [DeleteApplication](api-kinesisanalytics-2015-08-14-deleteapplication.md)
+  - [DeleteApplicationCloudWatchLoggingOption](api-kinesisanalytics-2015-08-14-deleteapplicationcloudwatchloggingoption.md)
+  - [DeleteApplicationInputProcessingConfiguration](api-kinesisanalytics-2015-08-14-deleteapplicationinputprocessingconfiguration.md)
+  - [DeleteApplicationOutput](api-kinesisanalytics-2015-08-14-deleteapplicationoutput.md)
+  - [DeleteApplicationReferenceDataSource](api-kinesisanalytics-2015-08-14-deleteapplicationreferencedatasource.md)
+  - [DescribeApplication](api-kinesisanalytics-2015-08-14-describeapplication.md)
+  - [DiscoverInputSchema](api-kinesisanalytics-2015-08-14-discoverinputschema.md)
+  - [ListApplications](api-kinesisanalytics-2015-08-14-listapplications.md)
+  - [ListTagsForResource](api-kinesisanalytics-2015-08-14-listtagsforresource.md)
+  - [StartApplication](api-kinesisanalytics-2015-08-14-startapplication.md)
+  - [StopApplication](api-kinesisanalytics-2015-08-14-stopapplication.md)
+  - [TagResource](api-kinesisanalytics-2015-08-14-tagresource.md)
+  - [UntagResource](api-kinesisanalytics-2015-08-14-untagresource.md)
+  - [UpdateApplication](api-kinesisanalytics-2015-08-14-updateapplication.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisAnalytics.KinesisAnalyticsClient.html\#toc)
+### Table of Contents  [header link](class-aws-kinesisanalytics-kinesisanalyticsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisAnalytics.KinesisAnalyticsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-kinesisanalytics-kinesisanalyticsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -73,7 +73,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisAnalytics.KinesisAnalyticsClient.html\#methods)
+### Methods  [header link](class-aws-kinesisanalytics-kinesisanalyticsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -540,7 +540,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisAnalytics.KinesisAnalyticsClient.html#toc-methods)
+  - [Methods](class-aws-kinesisanalytics-kinesisanalyticsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -567,4 +567,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisAnalytics.KinesisAnalyticsClient.html#top)
+[Back To Top](class-aws-kinesisanalytics-kinesisanalyticsclient-top.md)

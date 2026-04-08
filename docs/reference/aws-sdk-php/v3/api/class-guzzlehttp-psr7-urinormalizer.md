@@ -1,7 +1,7 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Psr7](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.psr7.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Psr7](namespace-guzzlehttp-psr7.md)
 
 ## UriNormalizer        in package    - [Aws](package-aws.md)
 
@@ -9,7 +9,7 @@ FinalYes
 
 Provides methods to normalize and compare URIs.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-urinormalizer-tags.md)
 
 author
 
@@ -17,30 +17,30 @@ Tobias Schultze
 
 see[https://datatracker.ietf.org/doc/html/rfc3986#section-6](https://datatracker.ietf.org/doc/html/rfc3986)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-psr7-urinormalizer-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html\#toc-constants)
+#### Constants  [header link](class-guzzlehttp-psr7-urinormalizer-toc-constants.md)
 
-[CAPITALIZE\_PERCENT\_ENCODING](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#constant_CAPITALIZE_PERCENT_ENCODING)
-= 1 All letters within a percent-encoding triplet (e.g., "%3A") are case-insensitive, and should be capitalized.[CONVERT\_EMPTY\_PATH](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#constant_CONVERT_EMPTY_PATH)
-= 4 Converts the empty path to "/" for http and https URIs.[DECODE\_UNRESERVED\_CHARACTERS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#constant_DECODE_UNRESERVED_CHARACTERS)
-= 2 Decodes percent-encoded octets of unreserved characters.[PRESERVING\_NORMALIZATIONS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#constant_PRESERVING_NORMALIZATIONS)
-= self::CAPITALIZE\_PERCENT\_ENCODING \| self::DECODE\_UNRESERVED\_CHARACTERS \| self::CONVERT\_EMPTY\_PATH \| self::REMOVE\_DEFAULT\_HOST \| self::REMOVE\_DEFAULT\_PORT \| self::REMOVE\_DOT\_SEGMENTS Default normalizations which only include the ones that preserve semantics.[REMOVE\_DEFAULT\_HOST](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#constant_REMOVE_DEFAULT_HOST)
-= 8 Removes the default host of the given URI scheme from the URI.[REMOVE\_DEFAULT\_PORT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#constant_REMOVE_DEFAULT_PORT)
-= 16 Removes the default port of the given URI scheme from the URI.[REMOVE\_DOT\_SEGMENTS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#constant_REMOVE_DOT_SEGMENTS)
-= 32 Removes unnecessary dot-segments.[REMOVE\_DUPLICATE\_SLASHES](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#constant_REMOVE_DUPLICATE_SLASHES)
-= 64 Paths which include two or more adjacent slashes are converted to one.[SORT\_QUERY\_PARAMETERS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#constant_SORT_QUERY_PARAMETERS)
+[CAPITALIZE\_PERCENT\_ENCODING](class-guzzlehttp-psr7-urinormalizer-constant-capitalize-percent-encoding.md)
+= 1 All letters within a percent-encoding triplet (e.g., "%3A") are case-insensitive, and should be capitalized.[CONVERT\_EMPTY\_PATH](class-guzzlehttp-psr7-urinormalizer-constant-convert-empty-path.md)
+= 4 Converts the empty path to "/" for http and https URIs.[DECODE\_UNRESERVED\_CHARACTERS](class-guzzlehttp-psr7-urinormalizer-constant-decode-unreserved-characters.md)
+= 2 Decodes percent-encoded octets of unreserved characters.[PRESERVING\_NORMALIZATIONS](class-guzzlehttp-psr7-urinormalizer-constant-preserving-normalizations.md)
+= self::CAPITALIZE\_PERCENT\_ENCODING \| self::DECODE\_UNRESERVED\_CHARACTERS \| self::CONVERT\_EMPTY\_PATH \| self::REMOVE\_DEFAULT\_HOST \| self::REMOVE\_DEFAULT\_PORT \| self::REMOVE\_DOT\_SEGMENTS Default normalizations which only include the ones that preserve semantics.[REMOVE\_DEFAULT\_HOST](class-guzzlehttp-psr7-urinormalizer-constant-remove-default-host.md)
+= 8 Removes the default host of the given URI scheme from the URI.[REMOVE\_DEFAULT\_PORT](class-guzzlehttp-psr7-urinormalizer-constant-remove-default-port.md)
+= 16 Removes the default port of the given URI scheme from the URI.[REMOVE\_DOT\_SEGMENTS](class-guzzlehttp-psr7-urinormalizer-constant-remove-dot-segments.md)
+= 32 Removes unnecessary dot-segments.[REMOVE\_DUPLICATE\_SLASHES](class-guzzlehttp-psr7-urinormalizer-constant-remove-duplicate-slashes.md)
+= 64 Paths which include two or more adjacent slashes are converted to one.[SORT\_QUERY\_PARAMETERS](class-guzzlehttp-psr7-urinormalizer-constant-sort-query-parameters.md)
 = 128 Sort query parameters with their values in alphabetical order.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-psr7-urinormalizer-toc-methods.md)
 
-[isEquivalent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#method_isEquivalent)
-: bool Whether two URIs can be considered equivalent.[normalize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#method_normalize)
+[isEquivalent()](class-guzzlehttp-psr7-urinormalizer-method-isequivalent.md)
+: bool Whether two URIs can be considered equivalent.[normalize()](class-guzzlehttp-psr7-urinormalizer-method-normalize.md)
 : [UriInterface](class-psr-http-message-uriinterface.md)Returns a normalized URI.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html\#constants)
+### Constants  [header link](class-guzzlehttp-psr7-urinormalizer-constants.md)
 
-#### CAPITALIZE\_PERCENT\_ENCODING  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html\#constant_CAPITALIZE_PERCENT_ENCODING)
+#### CAPITALIZE\_PERCENT\_ENCODING  [header link](class-guzzlehttp-psr7-urinormalizer-constant-capitalize-percent-encoding.md)
 
 All letters within a percent-encoding triplet (e.g., "%3A") are case-insensitive, and should be capitalized.
 
@@ -53,7 +53,7 @@ All letters within a percent-encoding triplet (e.g., "%3A") are case-insensitive
 
 Example: http://example.org/a%c2%b1b → http://example.org/a%C2%B1b
 
-#### CONVERT\_EMPTY\_PATH  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html\#constant_CONVERT_EMPTY_PATH)
+#### CONVERT\_EMPTY\_PATH  [header link](class-guzzlehttp-psr7-urinormalizer-constant-convert-empty-path.md)
 
 Converts the empty path to "/" for http and https URIs.
 
@@ -66,7 +66,7 @@ Converts the empty path to "/" for http and https URIs.
 
 Example: http://example.org → http://example.org/
 
-#### DECODE\_UNRESERVED\_CHARACTERS  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html\#constant_DECODE_UNRESERVED_CHARACTERS)
+#### DECODE\_UNRESERVED\_CHARACTERS  [header link](class-guzzlehttp-psr7-urinormalizer-constant-decode-unreserved-characters.md)
 
 Decodes percent-encoded octets of unreserved characters.
 
@@ -83,7 +83,7 @@ when found in a URI, should be decoded to their corresponding unreserved charact
 
 Example: http://example.org/%7Eusern%61me/ → http://example.org/~username/
 
-#### PRESERVING\_NORMALIZATIONS  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html\#constant_PRESERVING_NORMALIZATIONS)
+#### PRESERVING\_NORMALIZATIONS  [header link](class-guzzlehttp-psr7-urinormalizer-constant-preserving-normalizations.md)
 
 Default normalizations which only include the ones that preserve semantics.
 
@@ -94,7 +94,7 @@ Default normalizations which only include the ones that preserve semantics.
     = self::CAPITALIZE_PERCENT_ENCODING | self::DECODE_UNRESERVED_CHARACTERS | self::CONVERT_EMPTY_PATH | self::REMOVE_DEFAULT_HOST | self::REMOVE_DEFAULT_PORT | self::REMOVE_DOT_SEGMENTS
 `
 
-#### REMOVE\_DEFAULT\_HOST  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html\#constant_REMOVE_DEFAULT_HOST)
+#### REMOVE\_DEFAULT\_HOST  [header link](class-guzzlehttp-psr7-urinormalizer-constant-remove-default-host.md)
 
 Removes the default host of the given URI scheme from the URI.
 
@@ -113,7 +113,7 @@ second format in the Uri class. See `GuzzleHttp\Psr7\Uri::composeComponents`.
 
 Example: file://localhost/myfile → file:///myfile
 
-#### REMOVE\_DEFAULT\_PORT  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html\#constant_REMOVE_DEFAULT_PORT)
+#### REMOVE\_DEFAULT\_PORT  [header link](class-guzzlehttp-psr7-urinormalizer-constant-remove-default-port.md)
 
 Removes the default port of the given URI scheme from the URI.
 
@@ -126,7 +126,7 @@ Removes the default port of the given URI scheme from the URI.
 
 Example: http://example.org:80/ → http://example.org/
 
-#### REMOVE\_DOT\_SEGMENTS  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html\#constant_REMOVE_DOT_SEGMENTS)
+#### REMOVE\_DOT\_SEGMENTS  [header link](class-guzzlehttp-psr7-urinormalizer-constant-remove-dot-segments.md)
 
 Removes unnecessary dot-segments.
 
@@ -142,7 +142,7 @@ change the semantics of the URI reference.
 
 Example: http://example.org/../a/b/../c/./d.html → http://example.org/a/c/d.html
 
-#### REMOVE\_DUPLICATE\_SLASHES  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html\#constant_REMOVE_DUPLICATE_SLASHES)
+#### REMOVE\_DUPLICATE\_SLASHES  [header link](class-guzzlehttp-psr7-urinormalizer-constant-remove-duplicate-slashes.md)
 
 Paths which include two or more adjacent slashes are converted to one.
 
@@ -159,7 +159,7 @@ may change the semantics. Encoded slashes (%2F) are not removed.
 
 Example: http://example.org//foo///bar.html → http://example.org/foo/bar.html
 
-#### SORT\_QUERY\_PARAMETERS  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html\#constant_SORT_QUERY_PARAMETERS)
+#### SORT\_QUERY\_PARAMETERS  [header link](class-guzzlehttp-psr7-urinormalizer-constant-sort-query-parameters.md)
 
 Sort query parameters with their values in alphabetical order.
 
@@ -178,9 +178,9 @@ Example: ?lang=en&article=fred → ?article=fred&lang=en
 Note: The sorting is neither locale nor Unicode aware (the URI query does not get decoded at all) as the
 purpose is to be able to compare URIs in a reproducible way, not to have the params sorted perfectly.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html\#methods)
+### Methods  [header link](class-guzzlehttp-psr7-urinormalizer-methods.md)
 
-#### isEquivalent()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html\#method_isEquivalent)
+#### isEquivalent()  [header link](class-guzzlehttp-psr7-urinormalizer-method-isequivalent.md)
 
 Whether two URIs can be considered equivalent.
 
@@ -211,7 +211,7 @@ $normalizations
 
 A bitmask of normalizations to apply, see constants
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html\#method_isEquivalent\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-urinormalizer-method-isequivalent-tags.md)
 
 see[https://datatracker.ietf.org/doc/html/rfc3986#section-6.1](https://datatracker.ietf.org/doc/html/rfc3986)
 
@@ -219,7 +219,7 @@ see[https://datatracker.ietf.org/doc/html/rfc3986#section-6.1](https://datatrack
 
 bool
 
-#### normalize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html\#method_normalize)
+#### normalize()  [header link](class-guzzlehttp-psr7-urinormalizer-method-normalize.md)
 
 Returns a normalized URI.
 
@@ -248,7 +248,7 @@ $flags
 
 A bitmask of normalizations to apply, see constants
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html\#method_normalize\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-urinormalizer-method-normalize-tags.md)
 
 see[https://datatracker.ietf.org/doc/html/rfc3986#section-6.2](https://datatracker.ietf.org/doc/html/rfc3986)
 
@@ -262,20 +262,20 @@ see[https://datatracker.ietf.org/doc/html/rfc3986#section-6.2](https://datatrack
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#toc-methods)
+  - [Constants](class-guzzlehttp-psr7-urinormalizer-toc-constants.md)
+  - [Methods](class-guzzlehttp-psr7-urinormalizer-toc-methods.md)
 - Constants
-  - [CAPITALIZE\_PERCENT\_ENCODING](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#constant_CAPITALIZE_PERCENT_ENCODING)
-  - [CONVERT\_EMPTY\_PATH](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#constant_CONVERT_EMPTY_PATH)
-  - [DECODE\_UNRESERVED\_CHARACTERS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#constant_DECODE_UNRESERVED_CHARACTERS)
-  - [PRESERVING\_NORMALIZATIONS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#constant_PRESERVING_NORMALIZATIONS)
-  - [REMOVE\_DEFAULT\_HOST](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#constant_REMOVE_DEFAULT_HOST)
-  - [REMOVE\_DEFAULT\_PORT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#constant_REMOVE_DEFAULT_PORT)
-  - [REMOVE\_DOT\_SEGMENTS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#constant_REMOVE_DOT_SEGMENTS)
-  - [REMOVE\_DUPLICATE\_SLASHES](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#constant_REMOVE_DUPLICATE_SLASHES)
-  - [SORT\_QUERY\_PARAMETERS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#constant_SORT_QUERY_PARAMETERS)
+  - [CAPITALIZE\_PERCENT\_ENCODING](class-guzzlehttp-psr7-urinormalizer-constant-capitalize-percent-encoding.md)
+  - [CONVERT\_EMPTY\_PATH](class-guzzlehttp-psr7-urinormalizer-constant-convert-empty-path.md)
+  - [DECODE\_UNRESERVED\_CHARACTERS](class-guzzlehttp-psr7-urinormalizer-constant-decode-unreserved-characters.md)
+  - [PRESERVING\_NORMALIZATIONS](class-guzzlehttp-psr7-urinormalizer-constant-preserving-normalizations.md)
+  - [REMOVE\_DEFAULT\_HOST](class-guzzlehttp-psr7-urinormalizer-constant-remove-default-host.md)
+  - [REMOVE\_DEFAULT\_PORT](class-guzzlehttp-psr7-urinormalizer-constant-remove-default-port.md)
+  - [REMOVE\_DOT\_SEGMENTS](class-guzzlehttp-psr7-urinormalizer-constant-remove-dot-segments.md)
+  - [REMOVE\_DUPLICATE\_SLASHES](class-guzzlehttp-psr7-urinormalizer-constant-remove-duplicate-slashes.md)
+  - [SORT\_QUERY\_PARAMETERS](class-guzzlehttp-psr7-urinormalizer-constant-sort-query-parameters.md)
 - Methods
-  - [isEquivalent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#method_isEquivalent)
-  - [normalize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#method_normalize)
+  - [isEquivalent()](class-guzzlehttp-psr7-urinormalizer-method-isequivalent.md)
+  - [normalize()](class-guzzlehttp-psr7-urinormalizer-method-normalize.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriNormalizer.html#top)
+[Back To Top](class-guzzlehttp-psr7-urinormalizer-top.md)

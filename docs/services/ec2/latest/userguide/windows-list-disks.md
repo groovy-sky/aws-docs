@@ -44,7 +44,7 @@ The following is an example that shows the disks that are available if you
     launch an `m3.medium` instance with an instance store volume
     (Disk 2) and an additional EBS volume (Disk 1).
 
-![Disk Management with a root volume, one instance store volume, and one EBS volume.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/disk_management.png)
+![Disk Management with a root volume, one instance store volume, and one EBS volume.](../../../images/awsec2/latest/userguide/images/disk-management-png.md)
 
 4. Right-click the gray pane labeled Disk 1, and then select
     **Properties**. Note the value of
@@ -52,7 +52,7 @@ The following is an example that shows the disks that are available if you
     9, LUN 0. According to the table for EBS volumes, the device name for this
     location is `xvdj`.
 
-![The location of an EBS volume.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/disk_1_location.png)
+![The location of an EBS volume.](../../../images/awsec2/latest/userguide/images/disk-1-location-png.md)
 
 PowerShell
 

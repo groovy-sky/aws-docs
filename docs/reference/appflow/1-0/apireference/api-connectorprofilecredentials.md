@@ -8,7 +8,7 @@ The connector-specific credentials required by a connector.
 
 The connector-specific credentials required when using Amplitude.
 
-Type: [AmplitudeConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_AmplitudeConnectorProfileCredentials.html) object
+Type: [AmplitudeConnectorProfileCredentials](api-amplitudeconnectorprofilecredentials.md) object
 
 Required: No
 
@@ -17,7 +17,7 @@ Required: No
 The connector-specific profile credentials that are required when using the custom
 connector.
 
-Type: [CustomConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_CustomConnectorProfileCredentials.html) object
+Type: [CustomConnectorProfileCredentials](api-customconnectorprofilecredentials.md) object
 
 Required: No
 
@@ -25,7 +25,7 @@ Required: No
 
 The connector-specific credentials required when using Datadog.
 
-Type: [DatadogConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DatadogConnectorProfileCredentials.html) object
+Type: [DatadogConnectorProfileCredentials](api-datadogconnectorprofilecredentials.md) object
 
 Required: No
 
@@ -33,7 +33,7 @@ Required: No
 
 The connector-specific credentials required when using Dynatrace.
 
-Type: [DynatraceConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DynatraceConnectorProfileCredentials.html) object
+Type: [DynatraceConnectorProfileCredentials](api-dynatraceconnectorprofilecredentials.md) object
 
 Required: No
 
@@ -41,7 +41,7 @@ Required: No
 
 The connector-specific credentials required when using Google Analytics.
 
-Type: [GoogleAnalyticsConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_GoogleAnalyticsConnectorProfileCredentials.html) object
+Type: [GoogleAnalyticsConnectorProfileCredentials](api-googleanalyticsconnectorprofilecredentials.md) object
 
 Required: No
 
@@ -49,7 +49,7 @@ Required: No
 
 The connector-specific credentials required when using Amazon Honeycode.
 
-Type: [HoneycodeConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_HoneycodeConnectorProfileCredentials.html) object
+Type: [HoneycodeConnectorProfileCredentials](api-honeycodeconnectorprofilecredentials.md) object
 
 Required: No
 
@@ -57,7 +57,7 @@ Required: No
 
 The connector-specific credentials required when using Infor Nexus.
 
-Type: [InforNexusConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_InforNexusConnectorProfileCredentials.html) object
+Type: [InforNexusConnectorProfileCredentials](api-infornexusconnectorprofilecredentials.md) object
 
 Required: No
 
@@ -65,7 +65,7 @@ Required: No
 
 The connector-specific credentials required when using Marketo.
 
-Type: [MarketoConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_MarketoConnectorProfileCredentials.html) object
+Type: [MarketoConnectorProfileCredentials](api-marketoconnectorprofilecredentials.md) object
 
 Required: No
 
@@ -73,7 +73,7 @@ Required: No
 
 The connector-specific credentials required when using Salesforce Pardot.
 
-Type: [PardotConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_PardotConnectorProfileCredentials.html) object
+Type: [PardotConnectorProfileCredentials](api-pardotconnectorprofilecredentials.md) object
 
 Required: No
 
@@ -81,7 +81,7 @@ Required: No
 
 The connector-specific credentials required when using Amazon Redshift.
 
-Type: [RedshiftConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_RedshiftConnectorProfileCredentials.html) object
+Type: [RedshiftConnectorProfileCredentials](api-redshiftconnectorprofilecredentials.md) object
 
 Required: No
 
@@ -89,7 +89,7 @@ Required: No
 
 The connector-specific credentials required when using Salesforce.
 
-Type: [SalesforceConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SalesforceConnectorProfileCredentials.html) object
+Type: [SalesforceConnectorProfileCredentials](api-salesforceconnectorprofilecredentials.md) object
 
 Required: No
 
@@ -97,7 +97,7 @@ Required: No
 
 The connector-specific profile credentials required when using SAPOData.
 
-Type: [SAPODataConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SAPODataConnectorProfileCredentials.html) object
+Type: [SAPODataConnectorProfileCredentials](api-sapodataconnectorprofilecredentials.md) object
 
 Required: No
 
@@ -105,7 +105,7 @@ Required: No
 
 The connector-specific credentials required when using ServiceNow.
 
-Type: [ServiceNowConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ServiceNowConnectorProfileCredentials.html) object
+Type: [ServiceNowConnectorProfileCredentials](api-servicenowconnectorprofilecredentials.md) object
 
 Required: No
 
@@ -113,7 +113,7 @@ Required: No
 
 The connector-specific credentials required when using Singular.
 
-Type: [SingularConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SingularConnectorProfileCredentials.html) object
+Type: [SingularConnectorProfileCredentials](api-singularconnectorprofilecredentials.md) object
 
 Required: No
 
@@ -121,7 +121,7 @@ Required: No
 
 The connector-specific credentials required when using Slack.
 
-Type: [SlackConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SlackConnectorProfileCredentials.html) object
+Type: [SlackConnectorProfileCredentials](api-slackconnectorprofilecredentials.md) object
 
 Required: No
 
@@ -129,7 +129,7 @@ Required: No
 
 The connector-specific credentials required when using Snowflake.
 
-Type: [SnowflakeConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SnowflakeConnectorProfileCredentials.html) object
+Type: [SnowflakeConnectorProfileCredentials](api-snowflakeconnectorprofilecredentials.md) object
 
 Required: No
 
@@ -137,7 +137,7 @@ Required: No
 
 The connector-specific credentials required when using Trend Micro.
 
-Type: [TrendmicroConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_TrendmicroConnectorProfileCredentials.html) object
+Type: [TrendmicroConnectorProfileCredentials](api-trendmicroconnectorprofilecredentials.md) object
 
 Required: No
 
@@ -145,7 +145,7 @@ Required: No
 
 The connector-specific credentials required when using Veeva.
 
-Type: [VeevaConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_VeevaConnectorProfileCredentials.html) object
+Type: [VeevaConnectorProfileCredentials](api-veevaconnectorprofilecredentials.md) object
 
 Required: No
 
@@ -153,7 +153,7 @@ Required: No
 
 The connector-specific credentials required when using Zendesk.
 
-Type: [ZendeskConnectorProfileCredentials](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ZendeskConnectorProfileCredentials.html) object
+Type: [ZendeskConnectorProfileCredentials](api-zendeskconnectorprofilecredentials.md) object
 
 Required: No
 
@@ -161,13 +161,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/ConnectorProfileCredentials)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/connectorprofilecredentials.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/ConnectorProfileCredentials)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/connectorprofilecredentials.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/ConnectorProfileCredentials)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/connectorprofilecredentials.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ConnectorProfileConfig
 

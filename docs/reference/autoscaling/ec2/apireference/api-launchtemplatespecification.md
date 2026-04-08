@@ -2,7 +2,7 @@
 
 Describes the launch template and the version of the launch template that Amazon EC2 Auto Scaling
 uses to launch Amazon EC2 instances. For more information about launch templates, see [Launch\
-templates](https://docs.aws.amazon.com/autoscaling/ec2/userguide/launch-templates.html) in the _Amazon EC2 Auto Scaling User Guide_.
+templates](../../../../services/autoscaling/ec2/userguide/launch-templates.md) in the _Amazon EC2 Auto Scaling User Guide_.
 
 ## Contents
 
@@ -59,13 +59,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/autoscaling-2011-01-01/LaunchTemplateSpecification)
+- [AWS SDK for C++](../../../goto/sdkforcpp/autoscaling-2011-01-01/launchtemplatespecification.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/autoscaling-2011-01-01/LaunchTemplateSpecification)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/autoscaling-2011-01-01/launchtemplatespecification.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/autoscaling-2011-01-01/LaunchTemplateSpecification)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/autoscaling-2011-01-01/launchtemplatespecification.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 LaunchTemplateOverrides
 

@@ -24,7 +24,7 @@ Required: No
 
 Represents a target tracking scaling policy configuration.
 
-Type: [AutoScalingTargetTrackingScalingPolicyConfigurationDescription](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_AutoScalingTargetTrackingScalingPolicyConfigurationDescription.html) object
+Type: [AutoScalingTargetTrackingScalingPolicyConfigurationDescription](api-autoscalingtargettrackingscalingpolicyconfigurationdescription.md) object
 
 Required: No
 
@@ -32,13 +32,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/AutoScalingPolicyDescription)
+- [AWS SDK for C++](../../../goto/sdkforcpp/dynamodb-2012-08-10/autoscalingpolicydescription.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/AutoScalingPolicyDescription)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/dynamodb-2012-08-10/autoscalingpolicydescription.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/AutoScalingPolicyDescription)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/autoscalingpolicydescription.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AttributeValueUpdate
 

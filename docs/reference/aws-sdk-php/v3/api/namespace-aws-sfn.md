@@ -4,15 +4,15 @@ Menu
 
 ## Sfn
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sfn.html\#toc)
+### Table of Contents  [header link](namespace-aws-sfn-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sfn.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-sfn-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sfn.exception.html)
+[Exception](namespace-aws-sfn-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sfn.html\#toc-classes)
+#### Classes  [header link](namespace-aws-sfn-toc-classes.md)
 
-[SfnClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sfn.SfnClient.html)This client is used to interact with the **AWS Step Functions** service.
+[SfnClient](class-aws-sfn-sfnclient.md)This client is used to interact with the **AWS Step Functions** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sfn.html#toc-classes)
+  - [Classes](namespace-aws-sfn-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sfn.html#top)
+[Back To Top](namespace-aws-sfn-top.md)

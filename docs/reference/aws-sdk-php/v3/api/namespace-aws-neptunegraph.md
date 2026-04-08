@@ -4,15 +4,15 @@ Menu
 
 ## NeptuneGraph
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.neptunegraph.html\#toc)
+### Table of Contents  [header link](namespace-aws-neptunegraph-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.neptunegraph.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-neptunegraph-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.neptunegraph.exception.html)
+[Exception](namespace-aws-neptunegraph-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.neptunegraph.html\#toc-classes)
+#### Classes  [header link](namespace-aws-neptunegraph-toc-classes.md)
 
-[NeptuneGraphClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NeptuneGraph.NeptuneGraphClient.html)This client is used to interact with the **Amazon Neptune Graph** service.
+[NeptuneGraphClient](class-aws-neptunegraph-neptunegraphclient.md)This client is used to interact with the **Amazon Neptune Graph** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.neptunegraph.html#toc-classes)
+  - [Classes](namespace-aws-neptunegraph-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.neptunegraph.html#top)
+[Back To Top](namespace-aws-neptunegraph-top.md)

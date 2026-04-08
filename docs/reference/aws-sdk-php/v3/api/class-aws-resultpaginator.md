@@ -6,28 +6,28 @@ Menu
 
 Iterator that yields each page of results of a pageable operation.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html\#toc)
+### Table of Contents  [header link](class-aws-resultpaginator-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-resultpaginator-toc-interfaces.md)
 
 Iterator
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html\#toc-methods)
+#### Methods  [header link](class-aws-resultpaginator-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html#method___construct)
-: mixed [current()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html#method_current)
-: [Result](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html)[each()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html#method_each)
-: [Promise](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Promise.html)Runs a paginator asynchronously and uses a callback to handle results.[key()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html#method_key)
-: mixed [next()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html#method_next)
-: void [rewind()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html#method_rewind)
-: void [search()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html#method_search)
+[\_\_construct()](class-aws-resultpaginator-method-construct.md)
+: mixed [current()](class-aws-resultpaginator-method-current.md)
+: [Result](class-aws-result.md)[each()](class-aws-resultpaginator-method-each.md)
+: [Promise](class-guzzlehttp-promise-promise.md)Runs a paginator asynchronously and uses a callback to handle results.[key()](class-aws-resultpaginator-method-key.md)
+: mixed [next()](class-aws-resultpaginator-method-next.md)
+: void [rewind()](class-aws-resultpaginator-method-rewind.md)
+: void [search()](class-aws-resultpaginator-method-search.md)
 : IteratorReturns an iterator that iterates over the values of applying a JMESPath
-search to each result yielded by the iterator as a flat sequence.[valid()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html#method_valid)
+search to each result yielded by the iterator as a flat sequence.[valid()](class-aws-resultpaginator-method-valid.md)
 : bool
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html\#methods)
+### Methods  [header link](class-aws-resultpaginator-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-resultpaginator-method-construct.md)
 
 `
     public
@@ -41,7 +41,7 @@ $client
 : array<string\|int, mixed>$config
 : array<string\|int, mixed>
 
-#### current()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html\#method_current)
+#### current()  [header link](class-aws-resultpaginator-method-current.md)
 
 `
     public
@@ -49,9 +49,9 @@ $client
 
 ##### Return values
 
-[Result](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Result.html)
+[Result](class-aws-result.md)
 
-#### each()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html\#method_each)
+#### each()  [header link](class-aws-resultpaginator-method-each.md)
 
 Runs a paginator asynchronously and uses a callback to handle results.
 
@@ -80,27 +80,27 @@ will be merged into the coroutine.
 
 ##### Return values
 
-[Promise](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Promise.html)
+[Promise](class-guzzlehttp-promise-promise.md)
 
-#### key()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html\#method_key)
+#### key()  [header link](class-aws-resultpaginator-method-key.md)
 
 `
     public
                     key() : mixed`
 
-#### next()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html\#method_next)
+#### next()  [header link](class-aws-resultpaginator-method-next.md)
 
 `
     public
                     next() : void`
 
-#### rewind()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html\#method_rewind)
+#### rewind()  [header link](class-aws-resultpaginator-method-rewind.md)
 
 `
     public
                     rewind() : void`
 
-#### search()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html\#method_search)
+#### search()  [header link](class-aws-resultpaginator-method-search.md)
 
 Returns an iterator that iterates over the values of applying a JMESPath
 search to each result yielded by the iterator as a flat sequence.
@@ -120,7 +120,7 @@ JMESPath expression to apply to each result.
 
 Iterator
 
-#### valid()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html\#method_valid)
+#### valid()  [header link](class-aws-resultpaginator-method-valid.md)
 
 `
     public
@@ -136,15 +136,15 @@ bool
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html#toc-methods)
+  - [Methods](class-aws-resultpaginator-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html#method___construct)
-  - [current()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html#method_current)
-  - [each()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html#method_each)
-  - [key()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html#method_key)
-  - [next()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html#method_next)
-  - [rewind()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html#method_rewind)
-  - [search()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html#method_search)
-  - [valid()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html#method_valid)
+  - [\_\_construct()](class-aws-resultpaginator-method-construct.md)
+  - [current()](class-aws-resultpaginator-method-current.md)
+  - [each()](class-aws-resultpaginator-method-each.md)
+  - [key()](class-aws-resultpaginator-method-key.md)
+  - [next()](class-aws-resultpaginator-method-next.md)
+  - [rewind()](class-aws-resultpaginator-method-rewind.md)
+  - [search()](class-aws-resultpaginator-method-search.md)
+  - [valid()](class-aws-resultpaginator-method-valid.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultPaginator.html#top)
+[Back To Top](class-aws-resultpaginator-top.md)

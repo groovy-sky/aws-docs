@@ -4,15 +4,15 @@ Menu
 
 ## IoTWireless
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotwireless.html\#toc)
+### Table of Contents  [header link](namespace-aws-iotwireless-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotwireless.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-iotwireless-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotwireless.exception.html)
+[Exception](namespace-aws-iotwireless-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotwireless.html\#toc-classes)
+#### Classes  [header link](namespace-aws-iotwireless-toc-classes.md)
 
-[IoTWirelessClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTWireless.IoTWirelessClient.html)This client is used to interact with the **AWS IoT Wireless** service.
+[IoTWirelessClient](class-aws-iotwireless-iotwirelessclient.md)This client is used to interact with the **AWS IoT Wireless** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotwireless.html#toc-classes)
+  - [Classes](namespace-aws-iotwireless-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotwireless.html#top)
+[Back To Top](namespace-aws-iotwireless-top.md)

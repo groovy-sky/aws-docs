@@ -17,33 +17,33 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2022-07-26**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-region-switch-2022-07-26.html)
+- [**2022-07-26**](api-arc-region-switch-2022-07-26.md)
 
-  - [ApprovePlanExecutionStep](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-region-switch-2022-07-26.html#approveplanexecutionstep)
-  - [CancelPlanExecution](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-region-switch-2022-07-26.html#cancelplanexecution)
-  - [CreatePlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-region-switch-2022-07-26.html#createplan)
-  - [DeletePlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-region-switch-2022-07-26.html#deleteplan)
-  - [GetPlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-region-switch-2022-07-26.html#getplan)
-  - [GetPlanEvaluationStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-region-switch-2022-07-26.html#getplanevaluationstatus)
-  - [GetPlanExecution](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-region-switch-2022-07-26.html#getplanexecution)
-  - [GetPlanInRegion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-region-switch-2022-07-26.html#getplaninregion)
-  - [ListPlanExecutionEvents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-region-switch-2022-07-26.html#listplanexecutionevents)
-  - [ListPlanExecutions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-region-switch-2022-07-26.html#listplanexecutions)
-  - [ListPlans](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-region-switch-2022-07-26.html#listplans)
-  - [ListPlansInRegion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-region-switch-2022-07-26.html#listplansinregion)
-  - [ListRoute53HealthChecks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-region-switch-2022-07-26.html#listroute53healthchecks)
-  - [ListRoute53HealthChecksInRegion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-region-switch-2022-07-26.html#listroute53healthchecksinregion)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-region-switch-2022-07-26.html#listtagsforresource)
-  - [StartPlanExecution](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-region-switch-2022-07-26.html#startplanexecution)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-region-switch-2022-07-26.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-region-switch-2022-07-26.html#untagresource)
-  - [UpdatePlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-region-switch-2022-07-26.html#updateplan)
-  - [UpdatePlanExecution](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-region-switch-2022-07-26.html#updateplanexecution)
-  - [UpdatePlanExecutionStep](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-region-switch-2022-07-26.html#updateplanexecutionstep)
+  - [ApprovePlanExecutionStep](api-arc-region-switch-2022-07-26-approveplanexecutionstep.md)
+  - [CancelPlanExecution](api-arc-region-switch-2022-07-26-cancelplanexecution.md)
+  - [CreatePlan](api-arc-region-switch-2022-07-26-createplan.md)
+  - [DeletePlan](api-arc-region-switch-2022-07-26-deleteplan.md)
+  - [GetPlan](api-arc-region-switch-2022-07-26-getplan.md)
+  - [GetPlanEvaluationStatus](api-arc-region-switch-2022-07-26-getplanevaluationstatus.md)
+  - [GetPlanExecution](api-arc-region-switch-2022-07-26-getplanexecution.md)
+  - [GetPlanInRegion](api-arc-region-switch-2022-07-26-getplaninregion.md)
+  - [ListPlanExecutionEvents](api-arc-region-switch-2022-07-26-listplanexecutionevents.md)
+  - [ListPlanExecutions](api-arc-region-switch-2022-07-26-listplanexecutions.md)
+  - [ListPlans](api-arc-region-switch-2022-07-26-listplans.md)
+  - [ListPlansInRegion](api-arc-region-switch-2022-07-26-listplansinregion.md)
+  - [ListRoute53HealthChecks](api-arc-region-switch-2022-07-26-listroute53healthchecks.md)
+  - [ListRoute53HealthChecksInRegion](api-arc-region-switch-2022-07-26-listroute53healthchecksinregion.md)
+  - [ListTagsForResource](api-arc-region-switch-2022-07-26-listtagsforresource.md)
+  - [StartPlanExecution](api-arc-region-switch-2022-07-26-startplanexecution.md)
+  - [TagResource](api-arc-region-switch-2022-07-26-tagresource.md)
+  - [UntagResource](api-arc-region-switch-2022-07-26-untagresource.md)
+  - [UpdatePlan](api-arc-region-switch-2022-07-26-updateplan.md)
+  - [UpdatePlanExecution](api-arc-region-switch-2022-07-26-updateplanexecution.md)
+  - [UpdatePlanExecutionStep](api-arc-region-switch-2022-07-26-updateplanexecutionstep.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ARCRegionSwitch.ARCRegionSwitchClient.html\#toc)
+### Table of Contents  [header link](class-aws-arcregionswitch-arcregionswitchclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ARCRegionSwitch.ARCRegionSwitchClient.html\#toc-methods)
+#### Methods  [header link](class-aws-arcregionswitch-arcregionswitchclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -74,7 +74,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ARCRegionSwitch.ARCRegionSwitchClient.html\#methods)
+### Methods  [header link](class-aws-arcregionswitch-arcregionswitchclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -541,7 +541,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ARCRegionSwitch.ARCRegionSwitchClient.html#toc-methods)
+  - [Methods](class-aws-arcregionswitch-arcregionswitchclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -568,4 +568,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ARCRegionSwitch.ARCRegionSwitchClient.html#top)
+[Back To Top](class-aws-arcregionswitch-arcregionswitchclient-top.md)

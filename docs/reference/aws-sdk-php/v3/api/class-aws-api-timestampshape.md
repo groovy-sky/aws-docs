@@ -7,13 +7,13 @@ Menu
 
 Represents a timestamp shape.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.TimestampShape.html\#toc)
+### Table of Contents  [header link](class-aws-api-timestampshape-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.TimestampShape.html\#toc-methods)
+#### Methods  [header link](class-aws-api-timestampshape-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.TimestampShape.html#method___construct)
+[\_\_construct()](class-aws-api-timestampshape-method-construct.md)
 : mixed [create()](class-aws-api-shape.md#method_create)
-: mixed Get a concrete shape for the given definition.[format()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.TimestampShape.html#method_format)
+: mixed Get a concrete shape for the given definition.[format()](class-aws-api-timestampshape-method-format.md)
 : int\|string Formats a timestamp value for a service.[getContextParam()](class-aws-api-shape.md#method_getContextParam)
 : mixed Get a context param definition.[getName()](class-aws-api-shape.md#method_getName)
 : string Get the name of the shape[getType()](class-aws-api-shape.md#method_getType)
@@ -24,9 +24,9 @@ Represents a timestamp shape.
 : void [toArray()](class-aws-api-abstractmodel.md#method_toArray)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.TimestampShape.html\#methods)
+### Methods  [header link](class-aws-api-timestampshape-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.TimestampShape.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-api-timestampshape-method-construct.md)
 
 `
     public
@@ -58,7 +58,7 @@ throwsRuntimeException
 
 if the type is invalid
 
-#### format()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.TimestampShape.html\#method_format)
+#### format()  [header link](class-aws-api-timestampshape-method-format.md)
 
 Formats a timestamp value for a service.
 
@@ -78,7 +78,7 @@ $format
 
 Format used to serialize the value
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.TimestampShape.html\#method_format\#tags)
+##### Tags  [header link](class-aws-api-timestampshape-method-format-tags.md)
 
 throwsUnexpectedValueException
 
@@ -190,11 +190,11 @@ $offset
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.TimestampShape.html#toc-methods)
+  - [Methods](class-aws-api-timestampshape-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.TimestampShape.html#method___construct)
+  - [\_\_construct()](class-aws-api-timestampshape-method-construct.md)
   - [create()](class-aws-api-shape.md#method_create)
-  - [format()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.TimestampShape.html#method_format)
+  - [format()](class-aws-api-timestampshape-method-format.md)
   - [getContextParam()](class-aws-api-shape.md#method_getContextParam)
   - [getName()](class-aws-api-shape.md#method_getName)
   - [getType()](class-aws-api-shape.md#method_getType)
@@ -204,4 +204,4 @@ $offset
   - [offsetUnset()](class-aws-api-abstractmodel.md#method_offsetUnset)
   - [toArray()](class-aws-api-abstractmodel.md#method_toArray)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.TimestampShape.html#top)
+[Back To Top](class-aws-api-timestampshape-top.md)

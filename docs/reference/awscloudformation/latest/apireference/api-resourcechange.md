@@ -54,7 +54,7 @@ Required: No
 For the `Modify` action, a list of `ResourceChangeDetail` structures
 that describes the changes that CloudFormation will make to the resource.
 
-Type: Array of [ResourceChangeDetail](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ResourceChangeDetail.html) objects
+Type: Array of [ResourceChangeDetail](api-resourcechangedetail.md) objects
 
 Required: No
 
@@ -142,7 +142,7 @@ Required: No
 
 List of resource attributes for which drift was ignored.
 
-Type: Array of [ResourceDriftIgnoredAttribute](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ResourceDriftIgnoredAttribute.html) objects
+Type: Array of [ResourceDriftIgnoredAttribute](api-resourcedriftignoredattribute.md) objects
 
 Required: No
 
@@ -196,13 +196,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/ResourceChange)
+- [AWS SDK for C++](../../../goto/sdkforcpp/cloudformation-2010-05-15/resourcechange.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/ResourceChange)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudformation-2010-05-15/resourcechange.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/ResourceChange)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/resourcechange.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 RequiredActivatedType
 

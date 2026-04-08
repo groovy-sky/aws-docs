@@ -15,7 +15,7 @@ interrupts a Spot Instance or if you stop a Spot Instance. If the request is per
 opened again after your Spot Instance is interrupted. If the request is persistent and you stop
 your Spot Instance, the request only opens after you start your Spot Instance.
 
-![How Spot Instance requests work.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/spot_lifecycle.png)
+![How Spot Instance requests work.](../../../images/awsec2/latest/userguide/images/spot-lifecycle-png.md)
 
 ###### Contents
 

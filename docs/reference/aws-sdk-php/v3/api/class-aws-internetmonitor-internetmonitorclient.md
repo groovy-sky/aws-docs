@@ -17,28 +17,28 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2021-06-03**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-internetmonitor-2021-06-03.html)
+- [**2021-06-03**](api-internetmonitor-2021-06-03.md)
 
-  - [CreateMonitor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-internetmonitor-2021-06-03.html#createmonitor)
-  - [DeleteMonitor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-internetmonitor-2021-06-03.html#deletemonitor)
-  - [GetHealthEvent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-internetmonitor-2021-06-03.html#gethealthevent)
-  - [GetInternetEvent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-internetmonitor-2021-06-03.html#getinternetevent)
-  - [GetMonitor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-internetmonitor-2021-06-03.html#getmonitor)
-  - [GetQueryResults](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-internetmonitor-2021-06-03.html#getqueryresults)
-  - [GetQueryStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-internetmonitor-2021-06-03.html#getquerystatus)
-  - [ListHealthEvents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-internetmonitor-2021-06-03.html#listhealthevents)
-  - [ListInternetEvents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-internetmonitor-2021-06-03.html#listinternetevents)
-  - [ListMonitors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-internetmonitor-2021-06-03.html#listmonitors)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-internetmonitor-2021-06-03.html#listtagsforresource)
-  - [StartQuery](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-internetmonitor-2021-06-03.html#startquery)
-  - [StopQuery](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-internetmonitor-2021-06-03.html#stopquery)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-internetmonitor-2021-06-03.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-internetmonitor-2021-06-03.html#untagresource)
-  - [UpdateMonitor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-internetmonitor-2021-06-03.html#updatemonitor)
+  - [CreateMonitor](api-internetmonitor-2021-06-03-createmonitor.md)
+  - [DeleteMonitor](api-internetmonitor-2021-06-03-deletemonitor.md)
+  - [GetHealthEvent](api-internetmonitor-2021-06-03-gethealthevent.md)
+  - [GetInternetEvent](api-internetmonitor-2021-06-03-getinternetevent.md)
+  - [GetMonitor](api-internetmonitor-2021-06-03-getmonitor.md)
+  - [GetQueryResults](api-internetmonitor-2021-06-03-getqueryresults.md)
+  - [GetQueryStatus](api-internetmonitor-2021-06-03-getquerystatus.md)
+  - [ListHealthEvents](api-internetmonitor-2021-06-03-listhealthevents.md)
+  - [ListInternetEvents](api-internetmonitor-2021-06-03-listinternetevents.md)
+  - [ListMonitors](api-internetmonitor-2021-06-03-listmonitors.md)
+  - [ListTagsForResource](api-internetmonitor-2021-06-03-listtagsforresource.md)
+  - [StartQuery](api-internetmonitor-2021-06-03-startquery.md)
+  - [StopQuery](api-internetmonitor-2021-06-03-stopquery.md)
+  - [TagResource](api-internetmonitor-2021-06-03-tagresource.md)
+  - [UntagResource](api-internetmonitor-2021-06-03-untagresource.md)
+  - [UpdateMonitor](api-internetmonitor-2021-06-03-updatemonitor.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.InternetMonitor.InternetMonitorClient.html\#toc)
+### Table of Contents  [header link](class-aws-internetmonitor-internetmonitorclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.InternetMonitor.InternetMonitorClient.html\#toc-methods)
+#### Methods  [header link](class-aws-internetmonitor-internetmonitorclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -69,7 +69,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.InternetMonitor.InternetMonitorClient.html\#methods)
+### Methods  [header link](class-aws-internetmonitor-internetmonitorclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -536,7 +536,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.InternetMonitor.InternetMonitorClient.html#toc-methods)
+  - [Methods](class-aws-internetmonitor-internetmonitorclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -563,4 +563,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.InternetMonitor.InternetMonitorClient.html#top)
+[Back To Top](class-aws-internetmonitor-internetmonitorclient-top.md)

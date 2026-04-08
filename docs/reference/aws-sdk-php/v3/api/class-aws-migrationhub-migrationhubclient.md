@@ -17,33 +17,33 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-05-31**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mgh-2017-05-31.html)
+- [**2017-05-31**](api-mgh-2017-05-31.md)
 
-  - [AssociateCreatedArtifact](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mgh-2017-05-31.html#associatecreatedartifact)
-  - [AssociateDiscoveredResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mgh-2017-05-31.html#associatediscoveredresource)
-  - [AssociateSourceResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mgh-2017-05-31.html#associatesourceresource)
-  - [CreateProgressUpdateStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mgh-2017-05-31.html#createprogressupdatestream)
-  - [DeleteProgressUpdateStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mgh-2017-05-31.html#deleteprogressupdatestream)
-  - [DescribeApplicationState](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mgh-2017-05-31.html#describeapplicationstate)
-  - [DescribeMigrationTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mgh-2017-05-31.html#describemigrationtask)
-  - [DisassociateCreatedArtifact](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mgh-2017-05-31.html#disassociatecreatedartifact)
-  - [DisassociateDiscoveredResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mgh-2017-05-31.html#disassociatediscoveredresource)
-  - [DisassociateSourceResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mgh-2017-05-31.html#disassociatesourceresource)
-  - [ImportMigrationTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mgh-2017-05-31.html#importmigrationtask)
-  - [ListApplicationStates](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mgh-2017-05-31.html#listapplicationstates)
-  - [ListCreatedArtifacts](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mgh-2017-05-31.html#listcreatedartifacts)
-  - [ListDiscoveredResources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mgh-2017-05-31.html#listdiscoveredresources)
-  - [ListMigrationTaskUpdates](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mgh-2017-05-31.html#listmigrationtaskupdates)
-  - [ListMigrationTasks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mgh-2017-05-31.html#listmigrationtasks)
-  - [ListProgressUpdateStreams](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mgh-2017-05-31.html#listprogressupdatestreams)
-  - [ListSourceResources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mgh-2017-05-31.html#listsourceresources)
-  - [NotifyApplicationState](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mgh-2017-05-31.html#notifyapplicationstate)
-  - [NotifyMigrationTaskState](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mgh-2017-05-31.html#notifymigrationtaskstate)
-  - [PutResourceAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mgh-2017-05-31.html#putresourceattributes)
+  - [AssociateCreatedArtifact](api-mgh-2017-05-31-associatecreatedartifact.md)
+  - [AssociateDiscoveredResource](api-mgh-2017-05-31-associatediscoveredresource.md)
+  - [AssociateSourceResource](api-mgh-2017-05-31-associatesourceresource.md)
+  - [CreateProgressUpdateStream](api-mgh-2017-05-31-createprogressupdatestream.md)
+  - [DeleteProgressUpdateStream](api-mgh-2017-05-31-deleteprogressupdatestream.md)
+  - [DescribeApplicationState](api-mgh-2017-05-31-describeapplicationstate.md)
+  - [DescribeMigrationTask](api-mgh-2017-05-31-describemigrationtask.md)
+  - [DisassociateCreatedArtifact](api-mgh-2017-05-31-disassociatecreatedartifact.md)
+  - [DisassociateDiscoveredResource](api-mgh-2017-05-31-disassociatediscoveredresource.md)
+  - [DisassociateSourceResource](api-mgh-2017-05-31-disassociatesourceresource.md)
+  - [ImportMigrationTask](api-mgh-2017-05-31-importmigrationtask.md)
+  - [ListApplicationStates](api-mgh-2017-05-31-listapplicationstates.md)
+  - [ListCreatedArtifacts](api-mgh-2017-05-31-listcreatedartifacts.md)
+  - [ListDiscoveredResources](api-mgh-2017-05-31-listdiscoveredresources.md)
+  - [ListMigrationTaskUpdates](api-mgh-2017-05-31-listmigrationtaskupdates.md)
+  - [ListMigrationTasks](api-mgh-2017-05-31-listmigrationtasks.md)
+  - [ListProgressUpdateStreams](api-mgh-2017-05-31-listprogressupdatestreams.md)
+  - [ListSourceResources](api-mgh-2017-05-31-listsourceresources.md)
+  - [NotifyApplicationState](api-mgh-2017-05-31-notifyapplicationstate.md)
+  - [NotifyMigrationTaskState](api-mgh-2017-05-31-notifymigrationtaskstate.md)
+  - [PutResourceAttributes](api-mgh-2017-05-31-putresourceattributes.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHub.MigrationHubClient.html\#toc)
+### Table of Contents  [header link](class-aws-migrationhub-migrationhubclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHub.MigrationHubClient.html\#toc-methods)
+#### Methods  [header link](class-aws-migrationhub-migrationhubclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -74,7 +74,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHub.MigrationHubClient.html\#methods)
+### Methods  [header link](class-aws-migrationhub-migrationhubclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -541,7 +541,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHub.MigrationHubClient.html#toc-methods)
+  - [Methods](class-aws-migrationhub-migrationhubclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -568,4 +568,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHub.MigrationHubClient.html#top)
+[Back To Top](class-aws-migrationhub-migrationhubclient-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## DocDB
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.docdb.html\#toc)
+### Table of Contents  [header link](namespace-aws-docdb-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.docdb.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-docdb-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.docdb.exception.html)
+[Exception](namespace-aws-docdb-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.docdb.html\#toc-classes)
+#### Classes  [header link](namespace-aws-docdb-toc-classes.md)
 
-[DocDBClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DocDB.DocDBClient.html)This client is used to interact with the **Amazon DocumentDB with MongoDB compatibility** service.
+[DocDBClient](class-aws-docdb-docdbclient.md)This client is used to interact with the **Amazon DocumentDB with MongoDB compatibility** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.docdb.html#toc-classes)
+  - [Classes](namespace-aws-docdb-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.docdb.html#top)
+[Back To Top](namespace-aws-docdb-top.md)

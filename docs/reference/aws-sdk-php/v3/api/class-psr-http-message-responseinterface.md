@@ -1,8 +1,8 @@
 Menu
 
-- [Psr](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.html)
-- [Http](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.html)
-- [Message](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.message.html)
+- [Psr](namespace-psr.md)
+- [Http](namespace-psr-http.md)
+- [Message](namespace-psr-http-message.md)
 
 ## ResponseInterface    extends  [MessageInterface](class-psr-http-message-messageinterface.md)   in    - [Aws](package-aws.md)
 
@@ -20,27 +20,27 @@ Responses are considered immutable; all methods that might change state MUST
 be implemented such that they retain the internal state of the current
 message and return an instance that contains the changed state.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html\#toc)
+### Table of Contents  [header link](class-psr-http-message-responseinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html\#toc-methods)
+#### Methods  [header link](class-psr-http-message-responseinterface-toc-methods.md)
 
 [getBody()](class-psr-http-message-messageinterface.md#method_getBody)
-: [StreamInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html)Gets the body of the message.[getHeader()](class-psr-http-message-messageinterface.md#method_getHeader)
+: [StreamInterface](class-psr-http-message-streaminterface.md)Gets the body of the message.[getHeader()](class-psr-http-message-messageinterface.md#method_getHeader)
 : array<string\|int, string> Retrieves a message header value by the given case-insensitive name.[getHeaderLine()](class-psr-http-message-messageinterface.md#method_getHeaderLine)
 : string Retrieves a comma-separated string of the values for a single header.[getHeaders()](class-psr-http-message-messageinterface.md#method_getHeaders)
 : array<string\|int, array<string\|int, string>> Retrieves all message header values.[getProtocolVersion()](class-psr-http-message-messageinterface.md#method_getProtocolVersion)
-: string Retrieves the HTTP protocol version as a string.[getReasonPhrase()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html#method_getReasonPhrase)
-: string Gets the response reason phrase associated with the status code.[getStatusCode()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html#method_getStatusCode)
+: string Retrieves the HTTP protocol version as a string.[getReasonPhrase()](class-psr-http-message-responseinterface-method-getreasonphrase.md)
+: string Gets the response reason phrase associated with the status code.[getStatusCode()](class-psr-http-message-responseinterface-method-getstatuscode.md)
 : int Gets the response status code.[hasHeader()](class-psr-http-message-messageinterface.md#method_hasHeader)
 : bool Checks if a header exists by the given case-insensitive name.[withAddedHeader()](class-psr-http-message-messageinterface.md#method_withAddedHeader)
 : static Return an instance with the specified header appended with the given value.[withBody()](class-psr-http-message-messageinterface.md#method_withBody)
 : static Return an instance with the specified message body.[withHeader()](class-psr-http-message-messageinterface.md#method_withHeader)
 : static Return an instance with the provided value replacing the specified header.[withoutHeader()](class-psr-http-message-messageinterface.md#method_withoutHeader)
 : static Return an instance without the specified header.[withProtocolVersion()](class-psr-http-message-messageinterface.md#method_withProtocolVersion)
-: static Return an instance with the specified HTTP protocol version.[withStatus()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html#method_withStatus)
+: static Return an instance with the specified HTTP protocol version.[withStatus()](class-psr-http-message-responseinterface-method-withstatus.md)
 : static Return an instance with the specified status code and, optionally, reason phrase.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html\#methods)
+### Methods  [header link](class-psr-http-message-responseinterface-methods.md)
 
 #### getBody()  [header link](class-psr-http-message-messageinterface.md\#method_getBody)
 
@@ -52,7 +52,7 @@ Gets the body of the message.
 
 ##### Return values
 
-[StreamInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html)
+[StreamInterface](class-psr-http-message-streaminterface.md)
 —
 
 Returns the body as a stream.
@@ -177,7 +177,7 @@ string
 
 HTTP protocol version.
 
-#### getReasonPhrase()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html\#method_getReasonPhrase)
+#### getReasonPhrase()  [header link](class-psr-http-message-responseinterface-method-getreasonphrase.md)
 
 Gets the response reason phrase associated with the status code.
 
@@ -191,7 +191,7 @@ choose to return the default RFC 7231 recommended reason phrase (or those
 listed in the IANA HTTP Status Code Registry) for the response's
 status code.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html\#method_getReasonPhrase\#tags)
+##### Tags  [header link](class-psr-http-message-responseinterface-method-getreasonphrase-tags.md)
 
 link[http://tools.ietf.org/html/rfc7231#section-6](http://tools.ietf.org/html/rfc7231)link[http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml](http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml)
 
@@ -202,7 +202,7 @@ string
 
 Reason phrase; must return an empty string if none present.
 
-#### getStatusCode()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html\#method_getStatusCode)
+#### getStatusCode()  [header link](class-psr-http-message-responseinterface-method-getstatuscode.md)
 
 Gets the response status code.
 
@@ -299,7 +299,7 @@ new body stream.
 ##### Parameters
 
 $body
-: [StreamInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html)
+: [StreamInterface](class-psr-http-message-streaminterface.md)
 
 Body.
 
@@ -401,7 +401,7 @@ HTTP protocol version
 
 static
 
-#### withStatus()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html\#method_withStatus)
+#### withStatus()  [header link](class-psr-http-message-responseinterface-method-withstatus.md)
 
 Return an instance with the specified status code and, optionally, reason phrase.
 
@@ -432,7 +432,7 @@ The reason phrase to use with the
 provided status code; if none is provided, implementations MAY
 use the defaults as suggested in the HTTP specification.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html\#method_withStatus\#tags)
+##### Tags  [header link](class-psr-http-message-responseinterface-method-withstatus-tags.md)
 
 link[http://tools.ietf.org/html/rfc7231#section-6](http://tools.ietf.org/html/rfc7231)link[http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml](http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml)throwsInvalidArgumentException
 
@@ -448,22 +448,22 @@ static
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html#toc-methods)
+  - [Constants](class-psr-http-message-responseinterface-toc-constants.md)
+  - [Methods](class-psr-http-message-responseinterface-toc-methods.md)
 - Methods
   - [getBody()](class-psr-http-message-messageinterface.md#method_getBody)
   - [getHeader()](class-psr-http-message-messageinterface.md#method_getHeader)
   - [getHeaderLine()](class-psr-http-message-messageinterface.md#method_getHeaderLine)
   - [getHeaders()](class-psr-http-message-messageinterface.md#method_getHeaders)
   - [getProtocolVersion()](class-psr-http-message-messageinterface.md#method_getProtocolVersion)
-  - [getReasonPhrase()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html#method_getReasonPhrase)
-  - [getStatusCode()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html#method_getStatusCode)
+  - [getReasonPhrase()](class-psr-http-message-responseinterface-method-getreasonphrase.md)
+  - [getStatusCode()](class-psr-http-message-responseinterface-method-getstatuscode.md)
   - [hasHeader()](class-psr-http-message-messageinterface.md#method_hasHeader)
   - [withAddedHeader()](class-psr-http-message-messageinterface.md#method_withAddedHeader)
   - [withBody()](class-psr-http-message-messageinterface.md#method_withBody)
   - [withHeader()](class-psr-http-message-messageinterface.md#method_withHeader)
   - [withoutHeader()](class-psr-http-message-messageinterface.md#method_withoutHeader)
   - [withProtocolVersion()](class-psr-http-message-messageinterface.md#method_withProtocolVersion)
-  - [withStatus()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html#method_withStatus)
+  - [withStatus()](class-psr-http-message-responseinterface-method-withstatus.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.ResponseInterface.html#top)
+[Back To Top](class-psr-http-message-responseinterface-top.md)

@@ -1,22 +1,22 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Promise](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.promise.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Promise](namespace-guzzlehttp-promise.md)
 
 ## PromisorInterface     in    - [Aws](package-aws.md)
 
 Interface used with classes that return a promise.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromisorInterface.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-promise-promisorinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromisorInterface.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-promise-promisorinterface-toc-methods.md)
 
-[promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromisorInterface.html#method_promise)
+[promise()](class-guzzlehttp-promise-promisorinterface-method-promise.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Returns a promise.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromisorInterface.html\#methods)
+### Methods  [header link](class-guzzlehttp-promise-promisorinterface-methods.md)
 
-#### promise()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromisorInterface.html\#method_promise)
+#### promise()  [header link](class-guzzlehttp-promise-promisorinterface-method-promise.md)
 
 Returns a promise.
 
@@ -34,9 +34,9 @@ Returns a promise.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromisorInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromisorInterface.html#toc-methods)
+  - [Constants](class-guzzlehttp-promise-promisorinterface-toc-constants.md)
+  - [Methods](class-guzzlehttp-promise-promisorinterface-toc-methods.md)
 - Methods
-  - [promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromisorInterface.html#method_promise)
+  - [promise()](class-guzzlehttp-promise-promisorinterface-method-promise.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromisorInterface.html#top)
+[Back To Top](class-guzzlehttp-promise-promisorinterface-top.md)

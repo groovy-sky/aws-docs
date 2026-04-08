@@ -17,17 +17,17 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2023-09-30**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-runtime-2023-09-30.html)
+- [**2023-09-30**](api-bedrock-runtime-2023-09-30.md)
 
-  - [ApplyGuardrail](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-runtime-2023-09-30.html#applyguardrail)
-  - [Converse](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-runtime-2023-09-30.html#converse)
-  - [ConverseStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-runtime-2023-09-30.html#conversestream)
-  - [CountTokens](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-runtime-2023-09-30.html#counttokens)
-  - [GetAsyncInvoke](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-runtime-2023-09-30.html#getasyncinvoke)
-  - [InvokeModel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-runtime-2023-09-30.html#invokemodel)
-  - [InvokeModelWithResponseStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-runtime-2023-09-30.html#invokemodelwithresponsestream)
-  - [ListAsyncInvokes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-runtime-2023-09-30.html#listasyncinvokes)
-  - [StartAsyncInvoke](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-bedrock-runtime-2023-09-30.html#startasyncinvoke)
+  - [ApplyGuardrail](api-bedrock-runtime-2023-09-30-applyguardrail.md)
+  - [Converse](api-bedrock-runtime-2023-09-30-converse.md)
+  - [ConverseStream](api-bedrock-runtime-2023-09-30-conversestream.md)
+  - [CountTokens](api-bedrock-runtime-2023-09-30-counttokens.md)
+  - [GetAsyncInvoke](api-bedrock-runtime-2023-09-30-getasyncinvoke.md)
+  - [InvokeModel](api-bedrock-runtime-2023-09-30-invokemodel.md)
+  - [InvokeModelWithResponseStream](api-bedrock-runtime-2023-09-30-invokemodelwithresponsestream.md)
+  - [ListAsyncInvokes](api-bedrock-runtime-2023-09-30-listasyncinvokes.md)
+  - [StartAsyncInvoke](api-bedrock-runtime-2023-09-30-startasyncinvoke.md)
 
 ## Examples
 
@@ -35,11 +35,11 @@ specific API operation can be done using magic methods (e.g.,
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for PHP with Amazon Bedrock Runtime.
 
-- [See examples on AWS Docs](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/php_bedrock-runtime_code_examples.html)
+- [See examples on AWS Docs](../../../sdk-for-php/v3/developer-guide/php-bedrock-runtime-code-examples.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockRuntime.BedrockRuntimeClient.html\#toc)
+### Table of Contents  [header link](class-aws-bedrockruntime-bedrockruntimeclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockRuntime.BedrockRuntimeClient.html\#toc-methods)
+#### Methods  [header link](class-aws-bedrockruntime-bedrockruntimeclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -70,7 +70,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockRuntime.BedrockRuntimeClient.html\#methods)
+### Methods  [header link](class-aws-bedrockruntime-bedrockruntimeclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -537,7 +537,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockRuntime.BedrockRuntimeClient.html#toc-methods)
+  - [Methods](class-aws-bedrockruntime-bedrockruntimeclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -564,4 +564,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockRuntime.BedrockRuntimeClient.html#top)
+[Back To Top](class-aws-bedrockruntime-bedrockruntimeclient-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## S3Control
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3control.html\#toc)
+### Table of Contents  [header link](namespace-aws-s3control-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3control.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-s3control-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3control.exception.html)
+[Exception](namespace-aws-s3control-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3control.html\#toc-classes)
+#### Classes  [header link](namespace-aws-s3control-toc-classes.md)
 
-[S3ControlClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3Control.S3ControlClient.html)This client is used to interact with the **AWS S3 Control** service.
+[S3ControlClient](class-aws-s3control-s3controlclient.md)This client is used to interact with the **AWS S3 Control** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3control.html#toc-classes)
+  - [Classes](namespace-aws-s3control-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3control.html#top)
+[Back To Top](namespace-aws-s3control-top.md)

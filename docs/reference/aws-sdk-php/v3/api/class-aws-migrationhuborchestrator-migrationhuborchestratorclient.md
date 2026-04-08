@@ -17,43 +17,43 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2021-08-28**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html)
+- [**2021-08-28**](api-migrationhuborchestrator-2021-08-28.md)
 
-  - [CreateTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#createtemplate)
-  - [CreateWorkflow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#createworkflow)
-  - [CreateWorkflowStep](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#createworkflowstep)
-  - [CreateWorkflowStepGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#createworkflowstepgroup)
-  - [DeleteTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#deletetemplate)
-  - [DeleteWorkflow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#deleteworkflow)
-  - [DeleteWorkflowStep](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#deleteworkflowstep)
-  - [DeleteWorkflowStepGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#deleteworkflowstepgroup)
-  - [GetTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#gettemplate)
-  - [GetTemplateStep](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#gettemplatestep)
-  - [GetTemplateStepGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#gettemplatestepgroup)
-  - [GetWorkflow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#getworkflow)
-  - [GetWorkflowStep](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#getworkflowstep)
-  - [GetWorkflowStepGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#getworkflowstepgroup)
-  - [ListPlugins](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#listplugins)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#listtagsforresource)
-  - [ListTemplateStepGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#listtemplatestepgroups)
-  - [ListTemplateSteps](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#listtemplatesteps)
-  - [ListTemplates](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#listtemplates)
-  - [ListWorkflowStepGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#listworkflowstepgroups)
-  - [ListWorkflowSteps](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#listworkflowsteps)
-  - [ListWorkflows](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#listworkflows)
-  - [RetryWorkflowStep](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#retryworkflowstep)
-  - [StartWorkflow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#startworkflow)
-  - [StopWorkflow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#stopworkflow)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#untagresource)
-  - [UpdateTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#updatetemplate)
-  - [UpdateWorkflow](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#updateworkflow)
-  - [UpdateWorkflowStep](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#updateworkflowstep)
-  - [UpdateWorkflowStepGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhuborchestrator-2021-08-28.html#updateworkflowstepgroup)
+  - [CreateTemplate](api-migrationhuborchestrator-2021-08-28-createtemplate.md)
+  - [CreateWorkflow](api-migrationhuborchestrator-2021-08-28-createworkflow.md)
+  - [CreateWorkflowStep](api-migrationhuborchestrator-2021-08-28-createworkflowstep.md)
+  - [CreateWorkflowStepGroup](api-migrationhuborchestrator-2021-08-28-createworkflowstepgroup.md)
+  - [DeleteTemplate](api-migrationhuborchestrator-2021-08-28-deletetemplate.md)
+  - [DeleteWorkflow](api-migrationhuborchestrator-2021-08-28-deleteworkflow.md)
+  - [DeleteWorkflowStep](api-migrationhuborchestrator-2021-08-28-deleteworkflowstep.md)
+  - [DeleteWorkflowStepGroup](api-migrationhuborchestrator-2021-08-28-deleteworkflowstepgroup.md)
+  - [GetTemplate](api-migrationhuborchestrator-2021-08-28-gettemplate.md)
+  - [GetTemplateStep](api-migrationhuborchestrator-2021-08-28-gettemplatestep.md)
+  - [GetTemplateStepGroup](api-migrationhuborchestrator-2021-08-28-gettemplatestepgroup.md)
+  - [GetWorkflow](api-migrationhuborchestrator-2021-08-28-getworkflow.md)
+  - [GetWorkflowStep](api-migrationhuborchestrator-2021-08-28-getworkflowstep.md)
+  - [GetWorkflowStepGroup](api-migrationhuborchestrator-2021-08-28-getworkflowstepgroup.md)
+  - [ListPlugins](api-migrationhuborchestrator-2021-08-28-listplugins.md)
+  - [ListTagsForResource](api-migrationhuborchestrator-2021-08-28-listtagsforresource.md)
+  - [ListTemplateStepGroups](api-migrationhuborchestrator-2021-08-28-listtemplatestepgroups.md)
+  - [ListTemplateSteps](api-migrationhuborchestrator-2021-08-28-listtemplatesteps.md)
+  - [ListTemplates](api-migrationhuborchestrator-2021-08-28-listtemplates.md)
+  - [ListWorkflowStepGroups](api-migrationhuborchestrator-2021-08-28-listworkflowstepgroups.md)
+  - [ListWorkflowSteps](api-migrationhuborchestrator-2021-08-28-listworkflowsteps.md)
+  - [ListWorkflows](api-migrationhuborchestrator-2021-08-28-listworkflows.md)
+  - [RetryWorkflowStep](api-migrationhuborchestrator-2021-08-28-retryworkflowstep.md)
+  - [StartWorkflow](api-migrationhuborchestrator-2021-08-28-startworkflow.md)
+  - [StopWorkflow](api-migrationhuborchestrator-2021-08-28-stopworkflow.md)
+  - [TagResource](api-migrationhuborchestrator-2021-08-28-tagresource.md)
+  - [UntagResource](api-migrationhuborchestrator-2021-08-28-untagresource.md)
+  - [UpdateTemplate](api-migrationhuborchestrator-2021-08-28-updatetemplate.md)
+  - [UpdateWorkflow](api-migrationhuborchestrator-2021-08-28-updateworkflow.md)
+  - [UpdateWorkflowStep](api-migrationhuborchestrator-2021-08-28-updateworkflowstep.md)
+  - [UpdateWorkflowStepGroup](api-migrationhuborchestrator-2021-08-28-updateworkflowstepgroup.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubOrchestrator.MigrationHubOrchestratorClient.html\#toc)
+### Table of Contents  [header link](class-aws-migrationhuborchestrator-migrationhuborchestratorclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubOrchestrator.MigrationHubOrchestratorClient.html\#toc-methods)
+#### Methods  [header link](class-aws-migrationhuborchestrator-migrationhuborchestratorclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -84,7 +84,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubOrchestrator.MigrationHubOrchestratorClient.html\#methods)
+### Methods  [header link](class-aws-migrationhuborchestrator-migrationhuborchestratorclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -551,7 +551,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubOrchestrator.MigrationHubOrchestratorClient.html#toc-methods)
+  - [Methods](class-aws-migrationhuborchestrator-migrationhuborchestratorclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -578,4 +578,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubOrchestrator.MigrationHubOrchestratorClient.html#top)
+[Back To Top](class-aws-migrationhuborchestrator-migrationhuborchestratorclient-top.md)

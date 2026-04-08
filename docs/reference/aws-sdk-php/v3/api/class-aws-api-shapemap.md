@@ -7,26 +7,26 @@ Menu
 
 Builds shape based on shape references.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html\#toc)
+### Table of Contents  [header link](class-aws-api-shapemap-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-api-shapemap-toc-interfaces.md)
 
 ArrayAccess
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html\#toc-methods)
+#### Methods  [header link](class-aws-api-shapemap-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html#method___construct)
-: mixed [getShapeNames()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html#method_getShapeNames)
-: array<string\|int, mixed> Get an array of shape names.[offsetExists()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html#method_offsetExists)
-: bool [offsetGet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html#method_offsetGet)
-: mixed [offsetSet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html#method_offsetSet)
-: void [offsetUnset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html#method_offsetUnset)
-: void [resolve()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html#method_resolve)
+[\_\_construct()](class-aws-api-shapemap-method-construct.md)
+: mixed [getShapeNames()](class-aws-api-shapemap-method-getshapenames.md)
+: array<string\|int, mixed> Get an array of shape names.[offsetExists()](class-aws-api-shapemap-method-offsetexists.md)
+: bool [offsetGet()](class-aws-api-shapemap-method-offsetget.md)
+: mixed [offsetSet()](class-aws-api-shapemap-method-offsetset.md)
+: void [offsetUnset()](class-aws-api-shapemap-method-offsetunset.md)
+: void [resolve()](class-aws-api-shapemap-method-resolve.md)
 : [Shape](class-aws-api-shape.md)Resolve a shape reference
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html\#methods)
+### Methods  [header link](class-aws-api-shapemap-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-api-shapemap-method-construct.md)
 
 `
     public
@@ -39,7 +39,7 @@ $shapeModels
 
 Associative array of shape definitions.
 
-#### getShapeNames()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html\#method_getShapeNames)
+#### getShapeNames()  [header link](class-aws-api-shapemap-method-getshapenames.md)
 
 Get an array of shape names.
 
@@ -51,7 +51,7 @@ Get an array of shape names.
 
 array<string\|int, mixed>
 
-#### offsetExists()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html\#method_offsetExists)
+#### offsetExists()  [header link](class-aws-api-shapemap-method-offsetexists.md)
 
 `
     public
@@ -66,7 +66,7 @@ $offset
 
 bool
 
-#### offsetGet()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html\#method_offsetGet)
+#### offsetGet()  [header link](class-aws-api-shapemap-method-offsetget.md)
 
 `
     public
@@ -77,7 +77,7 @@ bool
 $offset
 : mixed
 
-#### offsetSet()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html\#method_offsetSet)
+#### offsetSet()  [header link](class-aws-api-shapemap-method-offsetset.md)
 
 `
     public
@@ -89,11 +89,11 @@ $offset
 : mixed$value
 : mixed
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html\#method_offsetSet\#tags)
+##### Tags  [header link](class-aws-api-shapemap-method-offsetset-tags.md)
 
 throwsBadMethodCallException
 
-#### offsetUnset()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html\#method_offsetUnset)
+#### offsetUnset()  [header link](class-aws-api-shapemap-method-offsetunset.md)
 
 `
     public
@@ -104,11 +104,11 @@ throwsBadMethodCallException
 $offset
 : mixed
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html\#method_offsetUnset\#tags)
+##### Tags  [header link](class-aws-api-shapemap-method-offsetunset-tags.md)
 
 throwsBadMethodCallException
 
-#### resolve()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html\#method_resolve)
+#### resolve()  [header link](class-aws-api-shapemap-method-resolve.md)
 
 Resolve a shape reference
 
@@ -123,7 +123,7 @@ $shapeRef
 
 Shape reference shape
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html\#method_resolve\#tags)
+##### Tags  [header link](class-aws-api-shapemap-method-resolve-tags.md)
 
 throwsInvalidArgumentException
 
@@ -137,14 +137,14 @@ throwsInvalidArgumentException
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html#toc-methods)
+  - [Methods](class-aws-api-shapemap-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html#method___construct)
-  - [getShapeNames()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html#method_getShapeNames)
-  - [offsetExists()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html#method_offsetExists)
-  - [offsetGet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html#method_offsetGet)
-  - [offsetSet()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html#method_offsetSet)
-  - [offsetUnset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html#method_offsetUnset)
-  - [resolve()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html#method_resolve)
+  - [\_\_construct()](class-aws-api-shapemap-method-construct.md)
+  - [getShapeNames()](class-aws-api-shapemap-method-getshapenames.md)
+  - [offsetExists()](class-aws-api-shapemap-method-offsetexists.md)
+  - [offsetGet()](class-aws-api-shapemap-method-offsetget.md)
+  - [offsetSet()](class-aws-api-shapemap-method-offsetset.md)
+  - [offsetUnset()](class-aws-api-shapemap-method-offsetunset.md)
+  - [resolve()](class-aws-api-shapemap-method-resolve.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html#top)
+[Back To Top](class-aws-api-shapemap-top.md)

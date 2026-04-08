@@ -19,7 +19,7 @@ volume is `ephemeral0`. With an instance type that supports four instance
 store volumes, the virtual device names of the four volumes are as follows: `ephemeral0`,
 `ephemeral1`, `ephemeral2` and `ephemeral3`.
 
-![Amazon EC2 instance storage](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/instance_storage.png)
+![Amazon EC2 instance storage](../../../images/awsec2/latest/userguide/images/instance-storage-png.md)
 
 ###### Instance store pricing
 

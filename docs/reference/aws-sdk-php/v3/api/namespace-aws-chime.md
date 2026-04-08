@@ -4,15 +4,15 @@ Menu
 
 ## Chime
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chime.html\#toc)
+### Table of Contents  [header link](namespace-aws-chime-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chime.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-chime-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chime.exception.html)
+[Exception](namespace-aws-chime-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chime.html\#toc-classes)
+#### Classes  [header link](namespace-aws-chime-toc-classes.md)
 
-[ChimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Chime.ChimeClient.html)This client is used to interact with the **Amazon Chime** service.
+[ChimeClient](class-aws-chime-chimeclient.md)This client is used to interact with the **Amazon Chime** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chime.html#toc-classes)
+  - [Classes](namespace-aws-chime-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.chime.html#top)
+[Back To Top](namespace-aws-chime-top.md)

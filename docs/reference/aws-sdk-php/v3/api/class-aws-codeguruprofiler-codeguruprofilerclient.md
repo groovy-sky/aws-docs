@@ -17,35 +17,35 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2019-07-18**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html)
+- [**2019-07-18**](api-codeguruprofiler-2019-07-18.md)
 
-  - [AddNotificationChannels](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#addnotificationchannels)
-  - [BatchGetFrameMetricData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#batchgetframemetricdata)
-  - [ConfigureAgent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#configureagent)
-  - [CreateProfilingGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#createprofilinggroup)
-  - [DeleteProfilingGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#deleteprofilinggroup)
-  - [DescribeProfilingGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#describeprofilinggroup)
-  - [GetFindingsReportAccountSummary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#getfindingsreportaccountsummary)
-  - [GetNotificationConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#getnotificationconfiguration)
-  - [GetPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#getpolicy)
-  - [GetProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#getprofile)
-  - [GetRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#getrecommendations)
-  - [ListFindingsReports](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#listfindingsreports)
-  - [ListProfileTimes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#listprofiletimes)
-  - [ListProfilingGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#listprofilinggroups)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#listtagsforresource)
-  - [PostAgentProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#postagentprofile)
-  - [PutPermission](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#putpermission)
-  - [RemoveNotificationChannel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#removenotificationchannel)
-  - [RemovePermission](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#removepermission)
-  - [SubmitFeedback](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#submitfeedback)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#untagresource)
-  - [UpdateProfilingGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-codeguruprofiler-2019-07-18.html#updateprofilinggroup)
+  - [AddNotificationChannels](api-codeguruprofiler-2019-07-18-addnotificationchannels.md)
+  - [BatchGetFrameMetricData](api-codeguruprofiler-2019-07-18-batchgetframemetricdata.md)
+  - [ConfigureAgent](api-codeguruprofiler-2019-07-18-configureagent.md)
+  - [CreateProfilingGroup](api-codeguruprofiler-2019-07-18-createprofilinggroup.md)
+  - [DeleteProfilingGroup](api-codeguruprofiler-2019-07-18-deleteprofilinggroup.md)
+  - [DescribeProfilingGroup](api-codeguruprofiler-2019-07-18-describeprofilinggroup.md)
+  - [GetFindingsReportAccountSummary](api-codeguruprofiler-2019-07-18-getfindingsreportaccountsummary.md)
+  - [GetNotificationConfiguration](api-codeguruprofiler-2019-07-18-getnotificationconfiguration.md)
+  - [GetPolicy](api-codeguruprofiler-2019-07-18-getpolicy.md)
+  - [GetProfile](api-codeguruprofiler-2019-07-18-getprofile.md)
+  - [GetRecommendations](api-codeguruprofiler-2019-07-18-getrecommendations.md)
+  - [ListFindingsReports](api-codeguruprofiler-2019-07-18-listfindingsreports.md)
+  - [ListProfileTimes](api-codeguruprofiler-2019-07-18-listprofiletimes.md)
+  - [ListProfilingGroups](api-codeguruprofiler-2019-07-18-listprofilinggroups.md)
+  - [ListTagsForResource](api-codeguruprofiler-2019-07-18-listtagsforresource.md)
+  - [PostAgentProfile](api-codeguruprofiler-2019-07-18-postagentprofile.md)
+  - [PutPermission](api-codeguruprofiler-2019-07-18-putpermission.md)
+  - [RemoveNotificationChannel](api-codeguruprofiler-2019-07-18-removenotificationchannel.md)
+  - [RemovePermission](api-codeguruprofiler-2019-07-18-removepermission.md)
+  - [SubmitFeedback](api-codeguruprofiler-2019-07-18-submitfeedback.md)
+  - [TagResource](api-codeguruprofiler-2019-07-18-tagresource.md)
+  - [UntagResource](api-codeguruprofiler-2019-07-18-untagresource.md)
+  - [UpdateProfilingGroup](api-codeguruprofiler-2019-07-18-updateprofilinggroup.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruProfiler.CodeGuruProfilerClient.html\#toc)
+### Table of Contents  [header link](class-aws-codeguruprofiler-codeguruprofilerclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruProfiler.CodeGuruProfilerClient.html\#toc-methods)
+#### Methods  [header link](class-aws-codeguruprofiler-codeguruprofilerclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -76,7 +76,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruProfiler.CodeGuruProfilerClient.html\#methods)
+### Methods  [header link](class-aws-codeguruprofiler-codeguruprofilerclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -543,7 +543,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruProfiler.CodeGuruProfilerClient.html#toc-methods)
+  - [Methods](class-aws-codeguruprofiler-codeguruprofilerclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -570,4 +570,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruProfiler.CodeGuruProfilerClient.html#top)
+[Back To Top](class-aws-codeguruprofiler-codeguruprofilerclient-top.md)

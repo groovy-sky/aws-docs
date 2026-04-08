@@ -35,7 +35,7 @@ running EC2 instance: Start with an existing AMI, launch an instance, customize 
 create a new AMI from it, and finally launch an instance of your new AMI. The
 numbers in the diagram match the numbers in the description that follows.
 
-![Workflow for creating an AMI from an instance](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/running-instance.png)
+![Workflow for creating an AMI from an instance](../../../images/awsec2/latest/userguide/images/running-instance-png.md)
 
 **1 – AMI #1: Start with an existing**
 **AMI**

@@ -8,19 +8,19 @@ Menu
 The session connection provides the underlying logic for interacting with
 Amazon DynamoDB and performs all of the reading and writing operations.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionInterface.html\#toc)
+### Table of Contents  [header link](class-aws-dynamodb-sessionconnectioninterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-dynamodb-sessionconnectioninterface-toc-methods.md)
 
-[delete()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionInterface.html#method_delete)
-: bool Deletes session record from DynamoDB[deleteExpired()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionInterface.html#method_deleteExpired)
-: bool Performs garbage collection on the sessions stored in the DynamoDB[read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionInterface.html#method_read)
-: array<string\|int, mixed> Reads session data from DynamoDB[write()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionInterface.html#method_write)
+[delete()](class-aws-dynamodb-sessionconnectioninterface-method-delete.md)
+: bool Deletes session record from DynamoDB[deleteExpired()](class-aws-dynamodb-sessionconnectioninterface-method-deleteexpired.md)
+: bool Performs garbage collection on the sessions stored in the DynamoDB[read()](class-aws-dynamodb-sessionconnectioninterface-method-read.md)
+: array<string\|int, mixed> Reads session data from DynamoDB[write()](class-aws-dynamodb-sessionconnectioninterface-method-write.md)
 : bool Writes session data to DynamoDB
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionInterface.html\#methods)
+### Methods  [header link](class-aws-dynamodb-sessionconnectioninterface-methods.md)
 
-#### delete()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionInterface.html\#method_delete)
+#### delete()  [header link](class-aws-dynamodb-sessionconnectioninterface-method-delete.md)
 
 Deletes session record from DynamoDB
 
@@ -39,7 +39,7 @@ Session ID
 
 bool
 
-#### deleteExpired()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionInterface.html\#method_deleteExpired)
+#### deleteExpired()  [header link](class-aws-dynamodb-sessionconnectioninterface-method-deleteexpired.md)
 
 Performs garbage collection on the sessions stored in the DynamoDB
 
@@ -51,7 +51,7 @@ Performs garbage collection on the sessions stored in the DynamoDB
 
 bool
 
-#### read()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionInterface.html\#method_read)
+#### read()  [header link](class-aws-dynamodb-sessionconnectioninterface-method-read.md)
 
 Reads session data from DynamoDB
 
@@ -70,7 +70,7 @@ Session ID
 
 array<string\|int, mixed>
 
-#### write()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionInterface.html\#method_write)
+#### write()  [header link](class-aws-dynamodb-sessionconnectioninterface-method-write.md)
 
 Writes session data to DynamoDB
 
@@ -105,12 +105,12 @@ bool
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionInterface.html#toc-methods)
+  - [Constants](class-aws-dynamodb-sessionconnectioninterface-toc-constants.md)
+  - [Methods](class-aws-dynamodb-sessionconnectioninterface-toc-methods.md)
 - Methods
-  - [delete()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionInterface.html#method_delete)
-  - [deleteExpired()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionInterface.html#method_deleteExpired)
-  - [read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionInterface.html#method_read)
-  - [write()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionInterface.html#method_write)
+  - [delete()](class-aws-dynamodb-sessionconnectioninterface-method-delete.md)
+  - [deleteExpired()](class-aws-dynamodb-sessionconnectioninterface-method-deleteexpired.md)
+  - [read()](class-aws-dynamodb-sessionconnectioninterface-method-read.md)
+  - [write()](class-aws-dynamodb-sessionconnectioninterface-method-write.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionInterface.html#top)
+[Back To Top](class-aws-dynamodb-sessionconnectioninterface-top.md)

@@ -1,6 +1,6 @@
 # KmsGrantConfiguration
 
-A proposed grant configuration for a KMS key. For more information, see [CreateGrant](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html).
+A proposed grant configuration for a KMS key. For more information, see [CreateGrant](../../../kms/latest/apireference/api-creategrant.md).
 
 ## Contents
 
@@ -35,9 +35,9 @@ Required: Yes
 **constraints**
 
 Use this structure to propose allowing [cryptographic\
-operations](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#cryptographic-operations) in the grant only when the operation request includes the specified
+operations](../../../../services/kms/latest/developerguide/concepts-cryptographic-operations.md) in the grant only when the operation request includes the specified
 [encryption\
-context](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#encrypt_context).
+context](../../../../services/kms/latest/developerguide/concepts-encrypt-context.md).
 
 Type: [KmsGrantConstraints](api-kmsgrantconstraints.md) object
 
@@ -45,7 +45,7 @@ Required: No
 
 **retiringPrincipal**
 
-The principal that is given permission to retire the grant by using [RetireGrant](https://docs.aws.amazon.com/kms/latest/APIReference/API_RetireGrant.html) operation.
+The principal that is given permission to retire the grant by using [RetireGrant](../../../kms/latest/apireference/api-retiregrant.md) operation.
 
 Type: String
 
@@ -55,13 +55,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/accessanalyzer-2019-11-01/KmsGrantConfiguration)
+- [AWS SDK for C++](../../../goto/sdkforcpp/accessanalyzer-2019-11-01/kmsgrantconfiguration.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/accessanalyzer-2019-11-01/KmsGrantConfiguration)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/accessanalyzer-2019-11-01/kmsgrantconfiguration.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/accessanalyzer-2019-11-01/KmsGrantConfiguration)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/accessanalyzer-2019-11-01/kmsgrantconfiguration.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 JobError
 

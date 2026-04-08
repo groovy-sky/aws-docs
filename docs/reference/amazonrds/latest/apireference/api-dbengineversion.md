@@ -21,7 +21,7 @@ Required: No
 JSON string that lists the installation files and parameters that RDS Custom uses to create a custom engine version (CEV).
 RDS Custom applies the patches in the order in which they're listed in the manifest. You can set the Oracle home, Oracle base,
 and UNIX/Linux user and group using the installation parameters. For more information,
-see [JSON fields in the CEV manifest](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-cev.preparing.html#custom-cev.preparing.manifest.fields) in the _Amazon RDS User Guide_.
+see [JSON fields in the CEV manifest](../../../../services/amazonrds/latest/userguide/custom-cev-preparing-custom-cev-preparing-manifest-fields.md) in the _Amazon RDS User Guide_.
 
 Type: String
 
@@ -102,7 +102,7 @@ The default character set for new instances of this engine version,
 if the `CharacterSetName` parameter of the CreateDBInstance API
 isn't specified.
 
-Type: [CharacterSet](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CharacterSet.html) object
+Type: [CharacterSet](api-characterset.md) object
 
 Required: No
 
@@ -142,7 +142,7 @@ Required: No
 
 The EC2 image
 
-Type: [CustomDBEngineVersionAMI](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CustomDBEngineVersionAMI.html) object
+Type: [CustomDBEngineVersionAMI](api-customdbengineversionami.md) object
 
 Required: No
 
@@ -170,7 +170,7 @@ You can test the values of this attribute when deciding which Aurora version to 
 DB cluster. You can also retrieve the version of an existing DB cluster and check whether that version
 supports certain Aurora Serverless v2 features before you attempt to use those features.
 
-Type: [ServerlessV2FeaturesSupport](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ServerlessV2FeaturesSupport.html) object
+Type: [ServerlessV2FeaturesSupport](api-serverlessv2featuressupport.md) object
 
 Required: No
 
@@ -199,7 +199,7 @@ Required: No
 
 A list of the character sets supported by this engine for the `CharacterSetName` parameter of the `CreateDBInstance` operation.
 
-Type: Array of [CharacterSet](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CharacterSet.html) objects
+Type: Array of [CharacterSet](api-characterset.md) objects
 
 Required: No
 
@@ -237,7 +237,7 @@ Required: No
 
 A list of the character sets supported by the Oracle DB engine for the `NcharCharacterSetName` parameter of the `CreateDBInstance` operation.
 
-Type: Array of [CharacterSet](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CharacterSet.html) objects
+Type: Array of [CharacterSet](api-characterset.md) objects
 
 Required: No
 
@@ -246,7 +246,7 @@ Required: No
 A list of the time zones supported by this engine for the
 `Timezone` parameter of the `CreateDBInstance` action.
 
-Type: Array of [Timezone](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Timezone.html) objects
+Type: Array of [Timezone](api-timezone.md) objects
 
 Required: No
 
@@ -335,7 +335,7 @@ For more information, see
 [Tagging Amazon RDS resources](../../../../services/amazonrds/latest/userguide/user-tagging.md) in the _Amazon RDS User Guide_ or
 [Tagging Amazon Aurora and Amazon RDS resources](../../../../services/amazonrds/latest/aurorauserguide/user-tagging.md) in the _Amazon Aurora User Guide_.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Required: No
 
@@ -343,7 +343,7 @@ Required: No
 
 A list of engine versions that this database engine version can be upgraded to.
 
-Type: Array of [UpgradeTarget](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_UpgradeTarget.html) objects
+Type: Array of [UpgradeTarget](api-upgradetarget.md) objects
 
 Required: No
 
@@ -351,13 +351,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/DBEngineVersion)
+- [AWS SDK for C++](../../../goto/sdkforcpp/rds-2014-10-31/dbengineversion.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/DBEngineVersion)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/rds-2014-10-31/dbengineversion.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/DBEngineVersion)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/dbengineversion.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DBClusterStatusInfo
 

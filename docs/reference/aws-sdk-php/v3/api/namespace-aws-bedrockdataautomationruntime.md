@@ -4,15 +4,15 @@ Menu
 
 ## BedrockDataAutomationRuntime
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockdataautomationruntime.html\#toc)
+### Table of Contents  [header link](namespace-aws-bedrockdataautomationruntime-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockdataautomationruntime.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-bedrockdataautomationruntime-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockdataautomationruntime.exception.html)
+[Exception](namespace-aws-bedrockdataautomationruntime-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockdataautomationruntime.html\#toc-classes)
+#### Classes  [header link](namespace-aws-bedrockdataautomationruntime-toc-classes.md)
 
-[BedrockDataAutomationRuntimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockDataAutomationRuntime.BedrockDataAutomationRuntimeClient.html)This client is used to interact with the **Runtime for Amazon Bedrock Data Automation** service.
+[BedrockDataAutomationRuntimeClient](class-aws-bedrockdataautomationruntime-bedrockdataautomationruntimeclient.md)This client is used to interact with the **Runtime for Amazon Bedrock Data Automation** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockdataautomationruntime.html#toc-classes)
+  - [Classes](namespace-aws-bedrockdataautomationruntime-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockdataautomationruntime.html#top)
+[Back To Top](namespace-aws-bedrockdataautomationruntime-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## DAX
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dax.html\#toc)
+### Table of Contents  [header link](namespace-aws-dax-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dax.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-dax-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dax.exception.html)
+[Exception](namespace-aws-dax-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dax.html\#toc-classes)
+#### Classes  [header link](namespace-aws-dax-toc-classes.md)
 
-[DAXClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DAX.DAXClient.html)This client is used to interact with the **Amazon DynamoDB Accelerator (DAX)** service.
+[DAXClient](class-aws-dax-daxclient.md)This client is used to interact with the **Amazon DynamoDB Accelerator (DAX)** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dax.html#toc-classes)
+  - [Classes](namespace-aws-dax-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dax.html#top)
+[Back To Top](namespace-aws-dax-top.md)

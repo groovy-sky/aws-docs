@@ -17,37 +17,37 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-06-27**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html)
+- [**2018-06-27**](api-textract-2018-06-27.md)
 
-  - [AnalyzeDocument](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#analyzedocument)
-  - [AnalyzeExpense](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#analyzeexpense)
-  - [AnalyzeID](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#analyzeid)
-  - [CreateAdapter](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#createadapter)
-  - [CreateAdapterVersion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#createadapterversion)
-  - [DeleteAdapter](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#deleteadapter)
-  - [DeleteAdapterVersion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#deleteadapterversion)
-  - [DetectDocumentText](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#detectdocumenttext)
-  - [GetAdapter](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#getadapter)
-  - [GetAdapterVersion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#getadapterversion)
-  - [GetDocumentAnalysis](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#getdocumentanalysis)
-  - [GetDocumentTextDetection](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#getdocumenttextdetection)
-  - [GetExpenseAnalysis](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#getexpenseanalysis)
-  - [GetLendingAnalysis](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#getlendinganalysis)
-  - [GetLendingAnalysisSummary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#getlendinganalysissummary)
-  - [ListAdapterVersions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#listadapterversions)
-  - [ListAdapters](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#listadapters)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#listtagsforresource)
-  - [StartDocumentAnalysis](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#startdocumentanalysis)
-  - [StartDocumentTextDetection](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#startdocumenttextdetection)
-  - [StartExpenseAnalysis](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#startexpenseanalysis)
-  - [StartLendingAnalysis](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#startlendinganalysis)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#untagresource)
-  - [UpdateAdapter](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-textract-2018-06-27.html#updateadapter)
+  - [AnalyzeDocument](api-textract-2018-06-27-analyzedocument.md)
+  - [AnalyzeExpense](api-textract-2018-06-27-analyzeexpense.md)
+  - [AnalyzeID](api-textract-2018-06-27-analyzeid.md)
+  - [CreateAdapter](api-textract-2018-06-27-createadapter.md)
+  - [CreateAdapterVersion](api-textract-2018-06-27-createadapterversion.md)
+  - [DeleteAdapter](api-textract-2018-06-27-deleteadapter.md)
+  - [DeleteAdapterVersion](api-textract-2018-06-27-deleteadapterversion.md)
+  - [DetectDocumentText](api-textract-2018-06-27-detectdocumenttext.md)
+  - [GetAdapter](api-textract-2018-06-27-getadapter.md)
+  - [GetAdapterVersion](api-textract-2018-06-27-getadapterversion.md)
+  - [GetDocumentAnalysis](api-textract-2018-06-27-getdocumentanalysis.md)
+  - [GetDocumentTextDetection](api-textract-2018-06-27-getdocumenttextdetection.md)
+  - [GetExpenseAnalysis](api-textract-2018-06-27-getexpenseanalysis.md)
+  - [GetLendingAnalysis](api-textract-2018-06-27-getlendinganalysis.md)
+  - [GetLendingAnalysisSummary](api-textract-2018-06-27-getlendinganalysissummary.md)
+  - [ListAdapterVersions](api-textract-2018-06-27-listadapterversions.md)
+  - [ListAdapters](api-textract-2018-06-27-listadapters.md)
+  - [ListTagsForResource](api-textract-2018-06-27-listtagsforresource.md)
+  - [StartDocumentAnalysis](api-textract-2018-06-27-startdocumentanalysis.md)
+  - [StartDocumentTextDetection](api-textract-2018-06-27-startdocumenttextdetection.md)
+  - [StartExpenseAnalysis](api-textract-2018-06-27-startexpenseanalysis.md)
+  - [StartLendingAnalysis](api-textract-2018-06-27-startlendinganalysis.md)
+  - [TagResource](api-textract-2018-06-27-tagresource.md)
+  - [UntagResource](api-textract-2018-06-27-untagresource.md)
+  - [UpdateAdapter](api-textract-2018-06-27-updateadapter.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Textract.TextractClient.html\#toc)
+### Table of Contents  [header link](class-aws-textract-textractclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Textract.TextractClient.html\#toc-methods)
+#### Methods  [header link](class-aws-textract-textractclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -78,7 +78,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Textract.TextractClient.html\#methods)
+### Methods  [header link](class-aws-textract-textractclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -545,7 +545,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Textract.TextractClient.html#toc-methods)
+  - [Methods](class-aws-textract-textractclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -572,4 +572,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Textract.TextractClient.html#top)
+[Back To Top](class-aws-textract-textractclient-top.md)

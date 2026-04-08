@@ -4,15 +4,15 @@ Menu
 
 ## AppSync
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appsync.html\#toc)
+### Table of Contents  [header link](namespace-aws-appsync-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appsync.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-appsync-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appsync.exception.html)
+[Exception](namespace-aws-appsync-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appsync.html\#toc-classes)
+#### Classes  [header link](namespace-aws-appsync-toc-classes.md)
 
-[AppSyncClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppSync.AppSyncClient.html)This client is used to interact with the **AWS AppSync** service.
+[AppSyncClient](class-aws-appsync-appsyncclient.md)This client is used to interact with the **AWS AppSync** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appsync.html#toc-classes)
+  - [Classes](namespace-aws-appsync-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.appsync.html#top)
+[Back To Top](namespace-aws-appsync-top.md)

@@ -17,20 +17,20 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2022-07-26**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cost-optimization-hub-2022-07-26.html)
+- [**2022-07-26**](api-cost-optimization-hub-2022-07-26.md)
 
-  - [GetPreferences](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cost-optimization-hub-2022-07-26.html#getpreferences)
-  - [GetRecommendation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cost-optimization-hub-2022-07-26.html#getrecommendation)
-  - [ListEfficiencyMetrics](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cost-optimization-hub-2022-07-26.html#listefficiencymetrics)
-  - [ListEnrollmentStatuses](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cost-optimization-hub-2022-07-26.html#listenrollmentstatuses)
-  - [ListRecommendationSummaries](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cost-optimization-hub-2022-07-26.html#listrecommendationsummaries)
-  - [ListRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cost-optimization-hub-2022-07-26.html#listrecommendations)
-  - [UpdateEnrollmentStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cost-optimization-hub-2022-07-26.html#updateenrollmentstatus)
-  - [UpdatePreferences](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cost-optimization-hub-2022-07-26.html#updatepreferences)
+  - [GetPreferences](api-cost-optimization-hub-2022-07-26-getpreferences.md)
+  - [GetRecommendation](api-cost-optimization-hub-2022-07-26-getrecommendation.md)
+  - [ListEfficiencyMetrics](api-cost-optimization-hub-2022-07-26-listefficiencymetrics.md)
+  - [ListEnrollmentStatuses](api-cost-optimization-hub-2022-07-26-listenrollmentstatuses.md)
+  - [ListRecommendationSummaries](api-cost-optimization-hub-2022-07-26-listrecommendationsummaries.md)
+  - [ListRecommendations](api-cost-optimization-hub-2022-07-26-listrecommendations.md)
+  - [UpdateEnrollmentStatus](api-cost-optimization-hub-2022-07-26-updateenrollmentstatus.md)
+  - [UpdatePreferences](api-cost-optimization-hub-2022-07-26-updatepreferences.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CostOptimizationHub.CostOptimizationHubClient.html\#toc)
+### Table of Contents  [header link](class-aws-costoptimizationhub-costoptimizationhubclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CostOptimizationHub.CostOptimizationHubClient.html\#toc-methods)
+#### Methods  [header link](class-aws-costoptimizationhub-costoptimizationhubclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -61,7 +61,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CostOptimizationHub.CostOptimizationHubClient.html\#methods)
+### Methods  [header link](class-aws-costoptimizationhub-costoptimizationhubclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -528,7 +528,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CostOptimizationHub.CostOptimizationHubClient.html#toc-methods)
+  - [Methods](class-aws-costoptimizationhub-costoptimizationhubclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -555,4 +555,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CostOptimizationHub.CostOptimizationHubClient.html#top)
+[Back To Top](class-aws-costoptimizationhub-costoptimizationhubclient-top.md)

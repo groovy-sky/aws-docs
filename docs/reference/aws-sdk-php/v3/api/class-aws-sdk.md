@@ -6,867 +6,867 @@ Menu
 
 Builds AWS clients based on configuration settings.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#toc)
+### Table of Contents  [header link](class-aws-sdk-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#toc-constants)
+#### Constants  [header link](class-aws-sdk-toc-constants.md)
 
-[VERSION](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#constant_VERSION)
+[VERSION](class-aws-sdk-constant-version.md)
 = '3.376.4'
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#toc-methods)
+#### Methods  [header link](class-aws-sdk-toc-methods.md)
 
-[\_\_call()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method___call)
-: mixed [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method___construct)
+[\_\_call()](class-aws-sdk-method-call.md)
+: mixed [\_\_construct()](class-aws-sdk-method-construct.md)
 : mixed Constructs a new SDK object with an associative array of default
-client settings.[copy()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_copy)
+client settings.[copy()](class-aws-sdk-method-copy.md)
 : self Clone existing SDK instance with ability to pass an associative array
-of extra client settings.[createAccessAnalyzer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAccessAnalyzer)
-: [AccessAnalyzerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AccessAnalyzer.AccessAnalyzerClient.html)[createAccount()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAccount)
-: [AccountClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Account.AccountClient.html)[createAcm()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAcm)
-: [AcmClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Acm.AcmClient.html)[createACMPCA()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createACMPCA)
-: [ACMPCAClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ACMPCA.ACMPCAClient.html)[createAIOps()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAIOps)
-: [AIOpsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AIOps.AIOpsClient.html)[createAmplify()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAmplify)
-: [AmplifyClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Amplify.AmplifyClient.html)[createAmplifyBackend()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAmplifyBackend)
-: [AmplifyBackendClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AmplifyBackend.AmplifyBackendClient.html)[createAmplifyUIBuilder()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAmplifyUIBuilder)
-: [AmplifyUIBuilderClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AmplifyUIBuilder.AmplifyUIBuilderClient.html)[createApiGateway()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createApiGateway)
-: [ApiGatewayClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApiGateway.ApiGatewayClient.html)[createApiGatewayManagementApi()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createApiGatewayManagementApi)
-: [ApiGatewayManagementApiClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApiGatewayManagementApi.ApiGatewayManagementApiClient.html)[createApiGatewayV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createApiGatewayV2)
-: [ApiGatewayV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApiGatewayV2.ApiGatewayV2Client.html)[createAppConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAppConfig)
-: [AppConfigClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppConfig.AppConfigClient.html)[createAppConfigData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAppConfigData)
-: [AppConfigDataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppConfigData.AppConfigDataClient.html)[createAppFabric()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAppFabric)
-: [AppFabricClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppFabric.AppFabricClient.html)[createAppflow()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAppflow)
-: [AppflowClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Appflow.AppflowClient.html)[createAppIntegrationsService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAppIntegrationsService)
-: [AppIntegrationsServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppIntegrationsService.AppIntegrationsServiceClient.html)[createApplicationAutoScaling()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createApplicationAutoScaling)
-: [ApplicationAutoScalingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationAutoScaling.ApplicationAutoScalingClient.html)[createApplicationCostProfiler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createApplicationCostProfiler)
-: [ApplicationCostProfilerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationCostProfiler.ApplicationCostProfilerClient.html)[createApplicationDiscoveryService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createApplicationDiscoveryService)
-: [ApplicationDiscoveryServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationDiscoveryService.ApplicationDiscoveryServiceClient.html)[createApplicationInsights()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createApplicationInsights)
-: [ApplicationInsightsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationInsights.ApplicationInsightsClient.html)[createApplicationSignals()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createApplicationSignals)
-: [ApplicationSignalsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationSignals.ApplicationSignalsClient.html)[createAppMesh()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAppMesh)
-: [AppMeshClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppMesh.AppMeshClient.html)[createAppRegistry()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAppRegistry)
-: [AppRegistryClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppRegistry.AppRegistryClient.html)[createAppRunner()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAppRunner)
-: [AppRunnerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppRunner.AppRunnerClient.html)[createAppstream()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAppstream)
-: [AppstreamClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Appstream.AppstreamClient.html)[createAppSync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAppSync)
-: [AppSyncClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppSync.AppSyncClient.html)[createARCRegionSwitch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createARCRegionSwitch)
-: [ARCRegionSwitchClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ARCRegionSwitch.ARCRegionSwitchClient.html)[createARCZonalShift()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createARCZonalShift)
-: [ARCZonalShiftClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ARCZonalShift.ARCZonalShiftClient.html)[createArtifact()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createArtifact)
-: [ArtifactClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Artifact.ArtifactClient.html)[createAthena()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAthena)
-: [AthenaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Athena.AthenaClient.html)[createAuditManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAuditManager)
-: [AuditManagerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AuditManager.AuditManagerClient.html)[createAugmentedAIRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAugmentedAIRuntime)
-: [AugmentedAIRuntimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AugmentedAIRuntime.AugmentedAIRuntimeClient.html)[createAutoScaling()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAutoScaling)
-: [AutoScalingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AutoScaling.AutoScalingClient.html)[createAutoScalingPlans()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAutoScalingPlans)
-: [AutoScalingPlansClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AutoScalingPlans.AutoScalingPlansClient.html)[createB2bi()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createB2bi)
-: [B2biClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.B2bi.B2biClient.html)[createBackup()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBackup)
-: [BackupClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Backup.BackupClient.html)[createBackupGateway()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBackupGateway)
-: [BackupGatewayClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BackupGateway.BackupGatewayClient.html)[createBackupSearch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBackupSearch)
-: [BackupSearchClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BackupSearch.BackupSearchClient.html)[createBatch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBatch)
-: [BatchClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Batch.BatchClient.html)[createBCMDashboards()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBCMDashboards)
-: [BCMDashboardsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BCMDashboards.BCMDashboardsClient.html)[createBCMDataExports()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBCMDataExports)
-: [BCMDataExportsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BCMDataExports.BCMDataExportsClient.html)[createBCMPricingCalculator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBCMPricingCalculator)
-: [BCMPricingCalculatorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BCMPricingCalculator.BCMPricingCalculatorClient.html)[createBCMRecommendedActions()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBCMRecommendedActions)
-: [BCMRecommendedActionsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BCMRecommendedActions.BCMRecommendedActionsClient.html)[createBedrock()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBedrock)
-: [BedrockClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Bedrock.BedrockClient.html)[createBedrockAgent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBedrockAgent)
-: [BedrockAgentClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockAgent.BedrockAgentClient.html)[createBedrockAgentCore()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBedrockAgentCore)
-: [BedrockAgentCoreClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockAgentCore.BedrockAgentCoreClient.html)[createBedrockAgentCoreControl()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBedrockAgentCoreControl)
-: [BedrockAgentCoreControlClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockAgentCoreControl.BedrockAgentCoreControlClient.html)[createBedrockAgentRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBedrockAgentRuntime)
-: [BedrockAgentRuntimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockAgentRuntime.BedrockAgentRuntimeClient.html)[createBedrockDataAutomation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBedrockDataAutomation)
-: [BedrockDataAutomationClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockDataAutomation.BedrockDataAutomationClient.html)[createBedrockDataAutomationRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBedrockDataAutomationRuntime)
-: [BedrockDataAutomationRuntimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockDataAutomationRuntime.BedrockDataAutomationRuntimeClient.html)[createBedrockRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBedrockRuntime)
-: [BedrockRuntimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockRuntime.BedrockRuntimeClient.html)[createBilling()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBilling)
-: [BillingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Billing.BillingClient.html)[createBillingConductor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBillingConductor)
-: [BillingConductorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BillingConductor.BillingConductorClient.html)[createBraket()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBraket)
-: [BraketClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Braket.BraketClient.html)[createBudgets()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBudgets)
-: [BudgetsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Budgets.BudgetsClient.html)[createChatbot()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createChatbot)
-: [ChatbotClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Chatbot.ChatbotClient.html)[createChime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createChime)
-: [ChimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Chime.ChimeClient.html)[createChimeSDKIdentity()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createChimeSDKIdentity)
-: [ChimeSDKIdentityClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKIdentity.ChimeSDKIdentityClient.html)[createChimeSDKMediaPipelines()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createChimeSDKMediaPipelines)
-: [ChimeSDKMediaPipelinesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKMediaPipelines.ChimeSDKMediaPipelinesClient.html)[createChimeSDKMeetings()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createChimeSDKMeetings)
-: [ChimeSDKMeetingsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKMeetings.ChimeSDKMeetingsClient.html)[createChimeSDKMessaging()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createChimeSDKMessaging)
-: [ChimeSDKMessagingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKMessaging.ChimeSDKMessagingClient.html)[createChimeSDKVoice()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createChimeSDKVoice)
-: [ChimeSDKVoiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKVoice.ChimeSDKVoiceClient.html)[createCleanRooms()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCleanRooms)
-: [CleanRoomsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CleanRooms.CleanRoomsClient.html)[createCleanRoomsML()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCleanRoomsML)
-: [CleanRoomsMLClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CleanRoomsML.CleanRoomsMLClient.html)[createClient()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createClient)
-: [AwsClientInterface](class-aws-awsclientinterface.md)Get a client by name using an array of constructor options.[createCloud9()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloud9)
-: [Cloud9Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Cloud9.Cloud9Client.html)[createCloudControlApi()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudControlApi)
-: [CloudControlApiClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudControlApi.CloudControlApiClient.html)[createCloudDirectory()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudDirectory)
-: [CloudDirectoryClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudDirectory.CloudDirectoryClient.html)[createCloudFormation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudFormation)
-: [CloudFormationClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFormation.CloudFormationClient.html)[createCloudFront()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudFront)
-: [CloudFrontClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.CloudFrontClient.html)[createCloudFrontKeyValueStore()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudFrontKeyValueStore)
-: [CloudFrontKeyValueStoreClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFrontKeyValueStore.CloudFrontKeyValueStoreClient.html)[createCloudHsm()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudHsm)
-: [CloudHsmClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudHsm.CloudHsmClient.html)[createCloudHSMV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudHSMV2)
-: [CloudHSMV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudHSMV2.CloudHSMV2Client.html)[createCloudSearch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudSearch)
-: [CloudSearchClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearch.CloudSearchClient.html)[createCloudSearchDomain()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudSearchDomain)
-: [CloudSearchDomainClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearchDomain.CloudSearchDomainClient.html)[createCloudTrail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudTrail)
-: [CloudTrailClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.CloudTrailClient.html)[createCloudTrailData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudTrailData)
-: [CloudTrailDataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrailData.CloudTrailDataClient.html)[createCloudWatch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudWatch)
-: [CloudWatchClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudWatch.CloudWatchClient.html)[createCloudWatchEvents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudWatchEvents)
-: [CloudWatchEventsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudWatchEvents.CloudWatchEventsClient.html)[createCloudWatchLogs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudWatchLogs)
-: [CloudWatchLogsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudWatchLogs.CloudWatchLogsClient.html)[createCloudWatchRUM()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudWatchRUM)
-: [CloudWatchRUMClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudWatchRUM.CloudWatchRUMClient.html)[createCodeArtifact()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodeArtifact)
-: [CodeArtifactClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeArtifact.CodeArtifactClient.html)[createCodeBuild()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodeBuild)
-: [CodeBuildClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeBuild.CodeBuildClient.html)[createCodeCatalyst()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodeCatalyst)
-: [CodeCatalystClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeCatalyst.CodeCatalystClient.html)[createCodeCommit()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodeCommit)
-: [CodeCommitClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeCommit.CodeCommitClient.html)[createCodeConnections()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodeConnections)
-: [CodeConnectionsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeConnections.CodeConnectionsClient.html)[createCodeDeploy()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodeDeploy)
-: [CodeDeployClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeDeploy.CodeDeployClient.html)[createCodeGuruProfiler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodeGuruProfiler)
-: [CodeGuruProfilerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruProfiler.CodeGuruProfilerClient.html)[createCodeGuruReviewer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodeGuruReviewer)
-: [CodeGuruReviewerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruReviewer.CodeGuruReviewerClient.html)[createCodeGuruSecurity()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodeGuruSecurity)
-: [CodeGuruSecurityClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruSecurity.CodeGuruSecurityClient.html)[createCodePipeline()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodePipeline)
-: [CodePipelineClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodePipeline.CodePipelineClient.html)[createCodeStarconnections()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodeStarconnections)
-: [CodeStarconnectionsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeStarconnections.CodeStarconnectionsClient.html)[createCodeStarNotifications()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodeStarNotifications)
-: [CodeStarNotificationsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeStarNotifications.CodeStarNotificationsClient.html)[createCognitoIdentity()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCognitoIdentity)
-: [CognitoIdentityClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentity.CognitoIdentityClient.html)[createCognitoIdentityProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCognitoIdentityProvider)
-: [CognitoIdentityProviderClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentityProvider.CognitoIdentityProviderClient.html)[createCognitoSync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCognitoSync)
-: [CognitoSyncClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoSync.CognitoSyncClient.html)[createComprehend()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createComprehend)
-: [ComprehendClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Comprehend.ComprehendClient.html)[createComprehendMedical()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createComprehendMedical)
-: [ComprehendMedicalClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComprehendMedical.ComprehendMedicalClient.html)[createComputeOptimizer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createComputeOptimizer)
-: [ComputeOptimizerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComputeOptimizer.ComputeOptimizerClient.html)[createComputeOptimizerAutomation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createComputeOptimizerAutomation)
-: [ComputeOptimizerAutomationClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComputeOptimizerAutomation.ComputeOptimizerAutomationClient.html)[createConfigService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createConfigService)
-: [ConfigServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConfigService.ConfigServiceClient.html)[createConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createConnect)
-: [ConnectClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Connect.ConnectClient.html)[createConnectCampaignService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createConnectCampaignService)
-: [ConnectCampaignServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectCampaignService.ConnectCampaignServiceClient.html)[createConnectCampaignsV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createConnectCampaignsV2)
-: [ConnectCampaignsV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectCampaignsV2.ConnectCampaignsV2Client.html)[createConnectCases()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createConnectCases)
-: [ConnectCasesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectCases.ConnectCasesClient.html)[createConnectContactLens()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createConnectContactLens)
-: [ConnectContactLensClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectContactLens.ConnectContactLensClient.html)[createConnectHealth()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createConnectHealth)
-: [ConnectHealthClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectHealth.ConnectHealthClient.html)[createConnectParticipant()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createConnectParticipant)
-: [ConnectParticipantClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectParticipant.ConnectParticipantClient.html)[createConnectWisdomService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createConnectWisdomService)
-: [ConnectWisdomServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectWisdomService.ConnectWisdomServiceClient.html)[createControlCatalog()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createControlCatalog)
-: [ControlCatalogClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ControlCatalog.ControlCatalogClient.html)[createControlTower()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createControlTower)
-: [ControlTowerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ControlTower.ControlTowerClient.html)[createCostandUsageReportService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCostandUsageReportService)
-: [CostandUsageReportServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CostandUsageReportService.CostandUsageReportServiceClient.html)[createCostExplorer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCostExplorer)
-: [CostExplorerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CostExplorer.CostExplorerClient.html)[createCostOptimizationHub()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCostOptimizationHub)
-: [CostOptimizationHubClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CostOptimizationHub.CostOptimizationHubClient.html)[createCustomerProfiles()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCustomerProfiles)
-: [CustomerProfilesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CustomerProfiles.CustomerProfilesClient.html)[createDatabaseMigrationService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDatabaseMigrationService)
-: [DatabaseMigrationServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DatabaseMigrationService.DatabaseMigrationServiceClient.html)[createDataExchange()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDataExchange)
-: [DataExchangeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DataExchange.DataExchangeClient.html)[createDataPipeline()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDataPipeline)
-: [DataPipelineClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DataPipeline.DataPipelineClient.html)[createDataSync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDataSync)
-: [DataSyncClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DataSync.DataSyncClient.html)[createDataZone()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDataZone)
-: [DataZoneClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DataZone.DataZoneClient.html)[createDAX()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDAX)
-: [DAXClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DAX.DAXClient.html)[createDeadline()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDeadline)
-: [DeadlineClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Deadline.DeadlineClient.html)[createDetective()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDetective)
-: [DetectiveClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Detective.DetectiveClient.html)[createDeviceFarm()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDeviceFarm)
-: [DeviceFarmClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DeviceFarm.DeviceFarmClient.html)[createDevOpsAgent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDevOpsAgent)
-: [DevOpsAgentClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DevOpsAgent.DevOpsAgentClient.html)[createDevOpsGuru()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDevOpsGuru)
-: [DevOpsGuruClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DevOpsGuru.DevOpsGuruClient.html)[createDirectConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDirectConnect)
-: [DirectConnectClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DirectConnect.DirectConnectClient.html)[createDirectoryService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDirectoryService)
-: [DirectoryServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DirectoryService.DirectoryServiceClient.html)[createDirectoryServiceData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDirectoryServiceData)
-: [DirectoryServiceDataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DirectoryServiceData.DirectoryServiceDataClient.html)[createDLM()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDLM)
-: [DLMClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DLM.DLMClient.html)[createDocDB()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDocDB)
-: [DocDBClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DocDB.DocDBClient.html)[createDocDBElastic()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDocDBElastic)
-: [DocDBElasticClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DocDBElastic.DocDBElasticClient.html)[createdrs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createdrs)
-: [drsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.drs.drsClient.html)[createDSQL()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDSQL)
-: [DSQLClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DSQL.DSQLClient.html)[createDynamoDb()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDynamoDb)
-: [DynamoDbClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.DynamoDbClient.html)[createDynamoDbStreams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDynamoDbStreams)
-: [DynamoDbStreamsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDbStreams.DynamoDbStreamsClient.html)[createEBS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEBS)
-: [EBSClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EBS.EBSClient.html)[createEc2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEc2)
-: [Ec2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ec2.Ec2Client.html)[createEC2InstanceConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEC2InstanceConnect)
-: [EC2InstanceConnectClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EC2InstanceConnect.EC2InstanceConnectClient.html)[createEcr()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEcr)
-: [EcrClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ecr.EcrClient.html)[createECRPublic()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createECRPublic)
-: [ECRPublicClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ECRPublic.ECRPublicClient.html)[createEcs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEcs)
-: [EcsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ecs.EcsClient.html)[createEfs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEfs)
-: [EfsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Efs.EfsClient.html)[createEKS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEKS)
-: [EKSClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EKS.EKSClient.html)[createEKSAuth()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEKSAuth)
-: [EKSAuthClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EKSAuth.EKSAuthClient.html)[createElastiCache()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createElastiCache)
-: [ElastiCacheClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElastiCache.ElastiCacheClient.html)[createElasticBeanstalk()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createElasticBeanstalk)
-: [ElasticBeanstalkClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElasticBeanstalk.ElasticBeanstalkClient.html)[createElasticLoadBalancing()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createElasticLoadBalancing)
-: [ElasticLoadBalancingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElasticLoadBalancing.ElasticLoadBalancingClient.html)[createElasticLoadBalancingV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createElasticLoadBalancingV2)
-: [ElasticLoadBalancingV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElasticLoadBalancingV2.ElasticLoadBalancingV2Client.html)[createElasticsearchService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createElasticsearchService)
-: [ElasticsearchServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElasticsearchService.ElasticsearchServiceClient.html)[createElementalInference()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createElementalInference)
-: [ElementalInferenceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElementalInference.ElementalInferenceClient.html)[createEmr()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEmr)
-: [EmrClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Emr.EmrClient.html)[createEMRContainers()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEMRContainers)
-: [EMRContainersClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EMRContainers.EMRContainersClient.html)[createEMRServerless()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEMRServerless)
-: [EMRServerlessClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EMRServerless.EMRServerlessClient.html)[createEntityResolution()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEntityResolution)
-: [EntityResolutionClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EntityResolution.EntityResolutionClient.html)[createEventBridge()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEventBridge)
-: [EventBridgeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EventBridge.EventBridgeClient.html)[createEvs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEvs)
-: [EvsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Evs.EvsClient.html)[createfinspace()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createfinspace)
-: [finspaceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.finspace.finspaceClient.html)[createFinSpaceData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createFinSpaceData)
-: [FinSpaceDataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FinSpaceData.FinSpaceDataClient.html)[createFirehose()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createFirehose)
-: [FirehoseClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Firehose.FirehoseClient.html)[createFIS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createFIS)
-: [FISClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FIS.FISClient.html)[createFMS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createFMS)
-: [FMSClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FMS.FMSClient.html)[createForecastQueryService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createForecastQueryService)
-: [ForecastQueryServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ForecastQueryService.ForecastQueryServiceClient.html)[createForecastService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createForecastService)
-: [ForecastServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ForecastService.ForecastServiceClient.html)[createFraudDetector()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createFraudDetector)
-: [FraudDetectorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FraudDetector.FraudDetectorClient.html)[createFreeTier()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createFreeTier)
-: [FreeTierClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FreeTier.FreeTierClient.html)[createFSx()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createFSx)
-: [FSxClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FSx.FSxClient.html)[createGameLift()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGameLift)
-: [GameLiftClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GameLift.GameLiftClient.html)[createGameLiftStreams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGameLiftStreams)
-: [GameLiftStreamsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GameLiftStreams.GameLiftStreamsClient.html)[createGeoMaps()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGeoMaps)
-: [GeoMapsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GeoMaps.GeoMapsClient.html)[createGeoPlaces()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGeoPlaces)
-: [GeoPlacesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GeoPlaces.GeoPlacesClient.html)[createGeoRoutes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGeoRoutes)
-: [GeoRoutesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GeoRoutes.GeoRoutesClient.html)[createGlacier()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGlacier)
-: [GlacierClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.GlacierClient.html)[createGlobalAccelerator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGlobalAccelerator)
-: [GlobalAcceleratorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GlobalAccelerator.GlobalAcceleratorClient.html)[createGlue()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGlue)
-: [GlueClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glue.GlueClient.html)[createGlueDataBrew()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGlueDataBrew)
-: [GlueDataBrewClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GlueDataBrew.GlueDataBrewClient.html)[createGreengrass()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGreengrass)
-: [GreengrassClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Greengrass.GreengrassClient.html)[createGreengrassV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGreengrassV2)
-: [GreengrassV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GreengrassV2.GreengrassV2Client.html)[createGroundStation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGroundStation)
-: [GroundStationClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GroundStation.GroundStationClient.html)[createGuardDuty()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGuardDuty)
-: [GuardDutyClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GuardDuty.GuardDutyClient.html)[createHealth()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createHealth)
-: [HealthClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Health.HealthClient.html)[createHealthLake()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createHealthLake)
-: [HealthLakeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HealthLake.HealthLakeClient.html)[createIam()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIam)
-: [IamClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Iam.IamClient.html)[createIdentityStore()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIdentityStore)
-: [IdentityStoreClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IdentityStore.IdentityStoreClient.html)[createimagebuilder()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createimagebuilder)
-: [imagebuilderClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.imagebuilder.imagebuilderClient.html)[createImportExport()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createImportExport)
-: [ImportExportClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ImportExport.ImportExportClient.html)[createInspector()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createInspector)
-: [InspectorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Inspector.InspectorClient.html)[createInspector2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createInspector2)
-: [Inspector2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Inspector2.Inspector2Client.html)[createInspectorScan()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createInspectorScan)
-: [InspectorScanClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.InspectorScan.InspectorScanClient.html)[createInternetMonitor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createInternetMonitor)
-: [InternetMonitorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.InternetMonitor.InternetMonitorClient.html)[createInvoicing()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createInvoicing)
-: [InvoicingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Invoicing.InvoicingClient.html)[createIot()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIot)
-: [IotClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Iot.IotClient.html)[createIotDataPlane()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIotDataPlane)
-: [IotDataPlaneClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IotDataPlane.IotDataPlaneClient.html)[createIoTDeviceAdvisor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIoTDeviceAdvisor)
-: [IoTDeviceAdvisorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTDeviceAdvisor.IoTDeviceAdvisorClient.html)[createIoTEvents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIoTEvents)
-: [IoTEventsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTEvents.IoTEventsClient.html)[createIoTEventsData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIoTEventsData)
-: [IoTEventsDataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTEventsData.IoTEventsDataClient.html)[createIoTFleetWise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIoTFleetWise)
-: [IoTFleetWiseClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTFleetWise.IoTFleetWiseClient.html)[createIoTJobsDataPlane()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIoTJobsDataPlane)
-: [IoTJobsDataPlaneClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTJobsDataPlane.IoTJobsDataPlaneClient.html)[createIoTManagedIntegrations()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIoTManagedIntegrations)
-: [IoTManagedIntegrationsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTManagedIntegrations.IoTManagedIntegrationsClient.html)[createIoTSecureTunneling()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIoTSecureTunneling)
-: [IoTSecureTunnelingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTSecureTunneling.IoTSecureTunnelingClient.html)[createIoTSiteWise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIoTSiteWise)
-: [IoTSiteWiseClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTSiteWise.IoTSiteWiseClient.html)[createIoTThingsGraph()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIoTThingsGraph)
-: [IoTThingsGraphClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTThingsGraph.IoTThingsGraphClient.html)[createIoTTwinMaker()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIoTTwinMaker)
-: [IoTTwinMakerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTTwinMaker.IoTTwinMakerClient.html)[createIoTWireless()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIoTWireless)
-: [IoTWirelessClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTWireless.IoTWirelessClient.html)[createIVS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIVS)
-: [IVSClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IVS.IVSClient.html)[createivschat()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createivschat)
-: [ivschatClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ivschat.ivschatClient.html)[createIVSRealTime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIVSRealTime)
-: [IVSRealTimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IVSRealTime.IVSRealTimeClient.html)[createKafka()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKafka)
-: [KafkaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Kafka.KafkaClient.html)[createKafkaConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKafkaConnect)
-: [KafkaConnectClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KafkaConnect.KafkaConnectClient.html)[createkendra()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createkendra)
-: [kendraClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.kendra.kendraClient.html)[createKendraRanking()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKendraRanking)
-: [KendraRankingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KendraRanking.KendraRankingClient.html)[createKeyspaces()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKeyspaces)
-: [KeyspacesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Keyspaces.KeyspacesClient.html)[createKeyspacesStreams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKeyspacesStreams)
-: [KeyspacesStreamsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KeyspacesStreams.KeyspacesStreamsClient.html)[createKinesis()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKinesis)
-: [KinesisClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Kinesis.KinesisClient.html)[createKinesisAnalytics()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKinesisAnalytics)
-: [KinesisAnalyticsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisAnalytics.KinesisAnalyticsClient.html)[createKinesisAnalyticsV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKinesisAnalyticsV2)
-: [KinesisAnalyticsV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisAnalyticsV2.KinesisAnalyticsV2Client.html)[createKinesisVideo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKinesisVideo)
-: [KinesisVideoClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideo.KinesisVideoClient.html)[createKinesisVideoArchivedMedia()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKinesisVideoArchivedMedia)
-: [KinesisVideoArchivedMediaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideoArchivedMedia.KinesisVideoArchivedMediaClient.html)[createKinesisVideoMedia()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKinesisVideoMedia)
-: [KinesisVideoMediaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideoMedia.KinesisVideoMediaClient.html)[createKinesisVideoSignalingChannels()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKinesisVideoSignalingChannels)
-: [KinesisVideoSignalingChannelsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideoSignalingChannels.KinesisVideoSignalingChannelsClient.html)[createKinesisVideoWebRTCStorage()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKinesisVideoWebRTCStorage)
-: [KinesisVideoWebRTCStorageClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideoWebRTCStorage.KinesisVideoWebRTCStorageClient.html)[createKms()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKms)
-: [KmsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Kms.KmsClient.html)[createLakeFormation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLakeFormation)
-: [LakeFormationClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LakeFormation.LakeFormationClient.html)[createLambda()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLambda)
-: [LambdaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Lambda.LambdaClient.html)[createLaunchWizard()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLaunchWizard)
-: [LaunchWizardClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LaunchWizard.LaunchWizardClient.html)[createLexModelBuildingService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLexModelBuildingService)
-: [LexModelBuildingServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LexModelBuildingService.LexModelBuildingServiceClient.html)[createLexModelsV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLexModelsV2)
-: [LexModelsV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LexModelsV2.LexModelsV2Client.html)[createLexRuntimeService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLexRuntimeService)
-: [LexRuntimeServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LexRuntimeService.LexRuntimeServiceClient.html)[createLexRuntimeV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLexRuntimeV2)
-: [LexRuntimeV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LexRuntimeV2.LexRuntimeV2Client.html)[createLicenseManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLicenseManager)
-: [LicenseManagerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LicenseManager.LicenseManagerClient.html)[createLicenseManagerLinuxSubscriptions()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLicenseManagerLinuxSubscriptions)
-: [LicenseManagerLinuxSubscriptionsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LicenseManagerLinuxSubscriptions.LicenseManagerLinuxSubscriptionsClient.html)[createLicenseManagerUserSubscriptions()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLicenseManagerUserSubscriptions)
-: [LicenseManagerUserSubscriptionsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LicenseManagerUserSubscriptions.LicenseManagerUserSubscriptionsClient.html)[createLightsail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLightsail)
-: [LightsailClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Lightsail.LightsailClient.html)[createLocationService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLocationService)
-: [LocationServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LocationService.LocationServiceClient.html)[createLookoutEquipment()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLookoutEquipment)
-: [LookoutEquipmentClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LookoutEquipment.LookoutEquipmentClient.html)[createMachineLearning()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMachineLearning)
-: [MachineLearningClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MachineLearning.MachineLearningClient.html)[createMacie2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMacie2)
-: [Macie2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Macie2.Macie2Client.html)[createMailManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMailManager)
-: [MailManagerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MailManager.MailManagerClient.html)[createMainframeModernization()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMainframeModernization)
-: [MainframeModernizationClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MainframeModernization.MainframeModernizationClient.html)[createManagedBlockchain()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createManagedBlockchain)
-: [ManagedBlockchainClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedBlockchain.ManagedBlockchainClient.html)[createManagedBlockchainQuery()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createManagedBlockchainQuery)
-: [ManagedBlockchainQueryClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedBlockchainQuery.ManagedBlockchainQueryClient.html)[createManagedGrafana()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createManagedGrafana)
-: [ManagedGrafanaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedGrafana.ManagedGrafanaClient.html)[createMarketplaceAgreement()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMarketplaceAgreement)
-: [MarketplaceAgreementClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceAgreement.MarketplaceAgreementClient.html)[createMarketplaceCatalog()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMarketplaceCatalog)
-: [MarketplaceCatalogClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceCatalog.MarketplaceCatalogClient.html)[createMarketplaceCommerceAnalytics()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMarketplaceCommerceAnalytics)
-: [MarketplaceCommerceAnalyticsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceCommerceAnalytics.MarketplaceCommerceAnalyticsClient.html)[createMarketplaceDeployment()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMarketplaceDeployment)
-: [MarketplaceDeploymentClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceDeployment.MarketplaceDeploymentClient.html)[createMarketplaceEntitlementService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMarketplaceEntitlementService)
-: [MarketplaceEntitlementServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceEntitlementService.MarketplaceEntitlementServiceClient.html)[createMarketplaceMetering()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMarketplaceMetering)
-: [MarketplaceMeteringClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceMetering.MarketplaceMeteringClient.html)[createMarketplaceReporting()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMarketplaceReporting)
-: [MarketplaceReportingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceReporting.MarketplaceReportingClient.html)[createMediaConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMediaConnect)
-: [MediaConnectClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaConnect.MediaConnectClient.html)[createMediaConvert()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMediaConvert)
-: [MediaConvertClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaConvert.MediaConvertClient.html)[createMediaLive()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMediaLive)
-: [MediaLiveClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaLive.MediaLiveClient.html)[createMediaPackage()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMediaPackage)
-: [MediaPackageClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackage.MediaPackageClient.html)[createMediaPackageV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMediaPackageV2)
-: [MediaPackageV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackageV2.MediaPackageV2Client.html)[createMediaPackageVod()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMediaPackageVod)
-: [MediaPackageVodClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackageVod.MediaPackageVodClient.html)[createMediaStore()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMediaStore)
-: [MediaStoreClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaStore.MediaStoreClient.html)[createMediaStoreData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMediaStoreData)
-: [MediaStoreDataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaStoreData.MediaStoreDataClient.html)[createMediaTailor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMediaTailor)
-: [MediaTailorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaTailor.MediaTailorClient.html)[createMedicalImaging()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMedicalImaging)
-: [MedicalImagingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MedicalImaging.MedicalImagingClient.html)[createMemoryDB()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMemoryDB)
-: [MemoryDBClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MemoryDB.MemoryDBClient.html)[createmgn()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createmgn)
-: [mgnClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.mgn.mgnClient.html)[createMigrationHub()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMigrationHub)
-: [MigrationHubClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHub.MigrationHubClient.html)[createMigrationHubConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMigrationHubConfig)
-: [MigrationHubConfigClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubConfig.MigrationHubConfigClient.html)[createMigrationHubOrchestrator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMigrationHubOrchestrator)
-: [MigrationHubOrchestratorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubOrchestrator.MigrationHubOrchestratorClient.html)[createMigrationHubRefactorSpaces()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMigrationHubRefactorSpaces)
-: [MigrationHubRefactorSpacesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubRefactorSpaces.MigrationHubRefactorSpacesClient.html)[createMigrationHubStrategyRecommendations()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMigrationHubStrategyRecommendations)
-: [MigrationHubStrategyRecommendationsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubStrategyRecommendations.MigrationHubStrategyRecommendationsClient.html)[createMPA()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMPA)
-: [MPAClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MPA.MPAClient.html)[createMQ()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMQ)
-: [MQClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MQ.MQClient.html)[createMTurk()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMTurk)
-: [MTurkClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MTurk.MTurkClient.html)[createMultiRegionAccessAnalyzer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAccessAnalyzer)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAccount()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAccount)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAcm()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAcm)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionACMPCA()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionACMPCA)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAIOps()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAIOps)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAmplify()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAmplify)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAmplifyBackend()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAmplifyBackend)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAmplifyUIBuilder()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAmplifyUIBuilder)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionApiGateway()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionApiGateway)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionApiGatewayManagementApi()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionApiGatewayManagementApi)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionApiGatewayV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionApiGatewayV2)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAppConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAppConfig)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAppConfigData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAppConfigData)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAppFabric()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAppFabric)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAppflow()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAppflow)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAppIntegrationsService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAppIntegrationsService)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionApplicationAutoScaling()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionApplicationAutoScaling)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionApplicationCostProfiler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionApplicationCostProfiler)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionApplicationDiscoveryService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionApplicationDiscoveryService)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionApplicationInsights()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionApplicationInsights)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionApplicationSignals()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionApplicationSignals)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAppMesh()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAppMesh)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAppRegistry()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAppRegistry)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAppRunner()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAppRunner)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAppstream()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAppstream)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAppSync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAppSync)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionARCRegionSwitch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionARCRegionSwitch)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionARCZonalShift()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionARCZonalShift)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionArtifact()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionArtifact)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAthena()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAthena)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAuditManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAuditManager)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAugmentedAIRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAugmentedAIRuntime)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAutoScaling()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAutoScaling)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAutoScalingPlans()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAutoScalingPlans)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionB2bi()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionB2bi)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBackup()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBackup)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBackupGateway()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBackupGateway)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBackupSearch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBackupSearch)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBatch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBatch)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBCMDashboards()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBCMDashboards)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBCMDataExports()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBCMDataExports)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBCMPricingCalculator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBCMPricingCalculator)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBCMRecommendedActions()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBCMRecommendedActions)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBedrock()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBedrock)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBedrockAgent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBedrockAgent)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBedrockAgentCore()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBedrockAgentCore)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBedrockAgentCoreControl()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBedrockAgentCoreControl)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBedrockAgentRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBedrockAgentRuntime)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBedrockDataAutomation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBedrockDataAutomation)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBedrockDataAutomationRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBedrockDataAutomationRuntime)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBedrockRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBedrockRuntime)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBilling()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBilling)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBillingConductor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBillingConductor)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBraket()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBraket)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBudgets()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBudgets)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionChatbot()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionChatbot)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionChime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionChime)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionChimeSDKIdentity()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionChimeSDKIdentity)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionChimeSDKMediaPipelines()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionChimeSDKMediaPipelines)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionChimeSDKMeetings()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionChimeSDKMeetings)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionChimeSDKMessaging()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionChimeSDKMessaging)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionChimeSDKVoice()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionChimeSDKVoice)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCleanRooms()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCleanRooms)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCleanRoomsML()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCleanRoomsML)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionClient()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionClient)
-: mixed [createMultiRegionCloud9()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloud9)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudControlApi()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudControlApi)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudDirectory()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudDirectory)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudFormation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudFormation)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudFront()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudFront)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudFrontKeyValueStore()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudFrontKeyValueStore)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudHsm()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudHsm)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudHSMV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudHSMV2)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudSearch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudSearch)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudSearchDomain()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudSearchDomain)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudTrail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudTrail)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudTrailData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudTrailData)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudWatch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudWatch)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudWatchEvents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudWatchEvents)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudWatchLogs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudWatchLogs)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudWatchRUM()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudWatchRUM)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodeArtifact()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodeArtifact)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodeBuild()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodeBuild)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodeCatalyst()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodeCatalyst)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodeCommit()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodeCommit)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodeConnections()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodeConnections)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodeDeploy()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodeDeploy)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodeGuruProfiler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodeGuruProfiler)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodeGuruReviewer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodeGuruReviewer)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodeGuruSecurity()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodeGuruSecurity)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodePipeline()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodePipeline)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodeStarconnections()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodeStarconnections)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodeStarNotifications()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodeStarNotifications)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCognitoIdentity()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCognitoIdentity)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCognitoIdentityProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCognitoIdentityProvider)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCognitoSync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCognitoSync)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionComprehend()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionComprehend)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionComprehendMedical()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionComprehendMedical)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionComputeOptimizer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionComputeOptimizer)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionComputeOptimizerAutomation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionComputeOptimizerAutomation)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionConfigService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionConfigService)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionConnect)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionConnectCampaignService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionConnectCampaignService)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionConnectCampaignsV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionConnectCampaignsV2)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionConnectCases()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionConnectCases)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionConnectContactLens()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionConnectContactLens)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionConnectHealth()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionConnectHealth)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionConnectParticipant()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionConnectParticipant)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionConnectWisdomService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionConnectWisdomService)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionControlCatalog()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionControlCatalog)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionControlTower()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionControlTower)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCostandUsageReportService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCostandUsageReportService)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCostExplorer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCostExplorer)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCostOptimizationHub()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCostOptimizationHub)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCustomerProfiles()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCustomerProfiles)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDatabaseMigrationService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDatabaseMigrationService)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDataExchange()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDataExchange)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDataPipeline()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDataPipeline)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDataSync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDataSync)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDataZone()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDataZone)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDAX()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDAX)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDeadline()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDeadline)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDetective()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDetective)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDeviceFarm()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDeviceFarm)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDevOpsAgent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDevOpsAgent)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDevOpsGuru()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDevOpsGuru)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDirectConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDirectConnect)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDirectoryService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDirectoryService)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDirectoryServiceData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDirectoryServiceData)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDLM()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDLM)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDocDB()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDocDB)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDocDBElastic()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDocDBElastic)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegiondrs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegiondrs)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDSQL()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDSQL)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDynamoDb()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDynamoDb)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDynamoDbStreams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDynamoDbStreams)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEBS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEBS)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEc2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEc2)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEC2InstanceConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEC2InstanceConnect)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEcr()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEcr)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionECRPublic()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionECRPublic)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEcs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEcs)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEfs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEfs)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEKS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEKS)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEKSAuth()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEKSAuth)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionElastiCache()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionElastiCache)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionElasticBeanstalk()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionElasticBeanstalk)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionElasticLoadBalancing()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionElasticLoadBalancing)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionElasticLoadBalancingV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionElasticLoadBalancingV2)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionElasticsearchService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionElasticsearchService)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionElementalInference()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionElementalInference)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEmr()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEmr)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEMRContainers()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEMRContainers)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEMRServerless()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEMRServerless)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEntityResolution()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEntityResolution)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEventBridge()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEventBridge)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEvs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEvs)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionfinspace()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionfinspace)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionFinSpaceData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionFinSpaceData)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionFirehose()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionFirehose)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionFIS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionFIS)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionFMS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionFMS)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionForecastQueryService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionForecastQueryService)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionForecastService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionForecastService)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionFraudDetector()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionFraudDetector)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionFreeTier()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionFreeTier)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionFSx()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionFSx)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGameLift()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGameLift)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGameLiftStreams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGameLiftStreams)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGeoMaps()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGeoMaps)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGeoPlaces()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGeoPlaces)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGeoRoutes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGeoRoutes)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGlacier()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGlacier)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGlobalAccelerator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGlobalAccelerator)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGlue()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGlue)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGlueDataBrew()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGlueDataBrew)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGreengrass()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGreengrass)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGreengrassV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGreengrassV2)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGroundStation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGroundStation)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGuardDuty()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGuardDuty)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionHealth()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionHealth)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionHealthLake()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionHealthLake)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIam()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIam)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIdentityStore()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIdentityStore)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionimagebuilder()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionimagebuilder)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionImportExport()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionImportExport)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionInspector()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionInspector)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionInspector2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionInspector2)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionInspectorScan()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionInspectorScan)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionInternetMonitor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionInternetMonitor)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionInvoicing()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionInvoicing)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIot()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIot)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIotDataPlane()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIotDataPlane)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIoTDeviceAdvisor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIoTDeviceAdvisor)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIoTEvents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIoTEvents)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIoTEventsData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIoTEventsData)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIoTFleetWise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIoTFleetWise)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIoTJobsDataPlane()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIoTJobsDataPlane)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIoTManagedIntegrations()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIoTManagedIntegrations)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIoTSecureTunneling()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIoTSecureTunneling)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIoTSiteWise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIoTSiteWise)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIoTThingsGraph()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIoTThingsGraph)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIoTTwinMaker()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIoTTwinMaker)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIoTWireless()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIoTWireless)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIVS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIVS)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionivschat()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionivschat)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIVSRealTime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIVSRealTime)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKafka()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKafka)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKafkaConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKafkaConnect)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionkendra()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionkendra)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKendraRanking()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKendraRanking)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKeyspaces()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKeyspaces)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKeyspacesStreams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKeyspacesStreams)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKinesis()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKinesis)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKinesisAnalytics()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKinesisAnalytics)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKinesisAnalyticsV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKinesisAnalyticsV2)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKinesisVideo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKinesisVideo)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKinesisVideoArchivedMedia()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKinesisVideoArchivedMedia)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKinesisVideoMedia()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKinesisVideoMedia)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKinesisVideoSignalingChannels()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKinesisVideoSignalingChannels)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKinesisVideoWebRTCStorage()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKinesisVideoWebRTCStorage)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKms()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKms)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLakeFormation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLakeFormation)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLambda()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLambda)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLaunchWizard()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLaunchWizard)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLexModelBuildingService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLexModelBuildingService)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLexModelsV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLexModelsV2)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLexRuntimeService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLexRuntimeService)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLexRuntimeV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLexRuntimeV2)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLicenseManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLicenseManager)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLicenseManagerLinuxSubscriptions()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLicenseManagerLinuxSubscriptions)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLicenseManagerUserSubscriptions()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLicenseManagerUserSubscriptions)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLightsail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLightsail)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLocationService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLocationService)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLookoutEquipment()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLookoutEquipment)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMachineLearning()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMachineLearning)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMacie2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMacie2)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMailManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMailManager)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMainframeModernization()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMainframeModernization)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionManagedBlockchain()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionManagedBlockchain)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionManagedBlockchainQuery()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionManagedBlockchainQuery)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionManagedGrafana()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionManagedGrafana)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMarketplaceAgreement()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMarketplaceAgreement)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMarketplaceCatalog()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMarketplaceCatalog)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMarketplaceCommerceAnalytics()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMarketplaceCommerceAnalytics)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMarketplaceDeployment()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMarketplaceDeployment)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMarketplaceEntitlementService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMarketplaceEntitlementService)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMarketplaceMetering()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMarketplaceMetering)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMarketplaceReporting()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMarketplaceReporting)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMediaConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMediaConnect)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMediaConvert()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMediaConvert)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMediaLive()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMediaLive)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMediaPackage()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMediaPackage)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMediaPackageV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMediaPackageV2)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMediaPackageVod()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMediaPackageVod)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMediaStore()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMediaStore)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMediaStoreData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMediaStoreData)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMediaTailor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMediaTailor)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMedicalImaging()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMedicalImaging)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMemoryDB()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMemoryDB)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionmgn()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionmgn)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMigrationHub()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMigrationHub)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMigrationHubConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMigrationHubConfig)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMigrationHubOrchestrator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMigrationHubOrchestrator)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMigrationHubRefactorSpaces()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMigrationHubRefactorSpaces)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMigrationHubStrategyRecommendations()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMigrationHubStrategyRecommendations)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMPA()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMPA)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMQ()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMQ)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMTurk()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMTurk)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMWAA()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMWAA)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMWAAServerless()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMWAAServerless)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionNeptune()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionNeptune)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionNeptunedata()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionNeptunedata)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionNeptuneGraph()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionNeptuneGraph)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionNetworkFirewall()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionNetworkFirewall)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionNetworkFlowMonitor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionNetworkFlowMonitor)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionNetworkManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionNetworkManager)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionNetworkMonitor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionNetworkMonitor)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionNotifications()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionNotifications)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionNotificationsContacts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionNotificationsContacts)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionNovaAct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionNovaAct)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionOAM()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionOAM)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionObservabilityAdmin()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionObservabilityAdmin)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionOdb()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionOdb)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionOmics()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionOmics)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionOpenSearchServerless()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionOpenSearchServerless)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionOpenSearchService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionOpenSearchService)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionOrganizations()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionOrganizations)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionOSIS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionOSIS)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionOutposts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionOutposts)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPanorama()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPanorama)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPartnerCentralAccount()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPartnerCentralAccount)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPartnerCentralBenefits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPartnerCentralBenefits)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPartnerCentralChannel()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPartnerCentralChannel)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPartnerCentralSelling()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPartnerCentralSelling)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPaymentCryptography()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPaymentCryptography)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPaymentCryptographyData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPaymentCryptographyData)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPcaConnectorAd()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPcaConnectorAd)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPcaConnectorScep()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPcaConnectorScep)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPCS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPCS)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPersonalize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPersonalize)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPersonalizeEvents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPersonalizeEvents)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPersonalizeRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPersonalizeRuntime)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPI()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPI)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPinpoint()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPinpoint)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPinpointEmail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPinpointEmail)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPinpointSMSVoice()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPinpointSMSVoice)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPinpointSMSVoiceV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPinpointSMSVoiceV2)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPipes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPipes)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPolly()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPolly)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPricing()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPricing)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPrometheusService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPrometheusService)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionProton()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionProton)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionQApps()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionQApps)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionQBusiness()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionQBusiness)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionQConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionQConnect)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionQuickSight()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionQuickSight)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRAM()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRAM)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRds()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRds)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRDSDataService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRDSDataService)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRecycleBin()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRecycleBin)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRedshift()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRedshift)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRedshiftDataAPIService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRedshiftDataAPIService)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRedshiftServerless()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRedshiftServerless)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRekognition()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRekognition)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRepostspace()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRepostspace)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionResilienceHub()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionResilienceHub)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionResourceExplorer2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionResourceExplorer2)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionResourceGroups()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionResourceGroups)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionResourceGroupsTaggingAPI()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionResourceGroupsTaggingAPI)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRolesAnywhere()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRolesAnywhere)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRoute53()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRoute53)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRoute53Domains()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRoute53Domains)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRoute53GlobalResolver()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRoute53GlobalResolver)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRoute53Profiles()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRoute53Profiles)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRoute53RecoveryCluster()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRoute53RecoveryCluster)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRoute53RecoveryControlConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRoute53RecoveryControlConfig)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRoute53RecoveryReadiness()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRoute53RecoveryReadiness)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRoute53Resolver()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRoute53Resolver)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRTBFabric()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRTBFabric)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionS3()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionS3)
-: [S3MultiRegionClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html)[createMultiRegionS3Control()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionS3Control)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionS3Outposts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionS3Outposts)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionS3Tables()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionS3Tables)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionS3Vectors()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionS3Vectors)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSageMaker()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSageMaker)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSagemakerEdgeManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSagemakerEdgeManager)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSageMakerFeatureStoreRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSageMakerFeatureStoreRuntime)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSageMakerGeospatial()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSageMakerGeospatial)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSageMakerMetrics()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSageMakerMetrics)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSageMakerRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSageMakerRuntime)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSavingsPlans()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSavingsPlans)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionScheduler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionScheduler)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSchemas()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSchemas)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSecretsManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSecretsManager)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSecurityAgent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSecurityAgent)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSecurityHub()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSecurityHub)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSecurityIR()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSecurityIR)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSecurityLake()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSecurityLake)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionServerlessApplicationRepository()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionServerlessApplicationRepository)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionServiceCatalog()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionServiceCatalog)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionServiceDiscovery()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionServiceDiscovery)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionServiceQuotas()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionServiceQuotas)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSes)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSesV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSesV2)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSfn()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSfn)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionShield()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionShield)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionsigner()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionsigner)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSignerData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSignerData)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSignin()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSignin)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSimpleDBv2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSimpleDBv2)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSimSpaceWeaver()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSimSpaceWeaver)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSnowBall()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSnowBall)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSnowDeviceManagement()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSnowDeviceManagement)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSns()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSns)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSocialMessaging()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSocialMessaging)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSqs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSqs)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSsm()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSsm)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSSMContacts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSSMContacts)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSSMGuiConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSSMGuiConnect)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSSMIncidents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSSMIncidents)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSSMQuickSetup()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSSMQuickSetup)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSsmSap()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSsmSap)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSSO()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSSO)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSSOAdmin()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSSOAdmin)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSSOOIDC()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSSOOIDC)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionStorageGateway()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionStorageGateway)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSts)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSupplyChain()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSupplyChain)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSupport()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSupport)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSupportApp()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSupportApp)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSustainability()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSustainability)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSwf()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSwf)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSynthetics()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSynthetics)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionTaxSettings()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionTaxSettings)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionTextract()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionTextract)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionTimestreamInfluxDB()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionTimestreamInfluxDB)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionTimestreamQuery()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionTimestreamQuery)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionTimestreamWrite()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionTimestreamWrite)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionTnb()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionTnb)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionTranscribeService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionTranscribeService)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionTransfer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionTransfer)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionTranslate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionTranslate)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionTrustedAdvisor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionTrustedAdvisor)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionUxc()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionUxc)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionVerifiedPermissions()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionVerifiedPermissions)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionVoiceID()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionVoiceID)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionVPCLattice()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionVPCLattice)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWaf()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWaf)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWafRegional()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWafRegional)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWAFV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWAFV2)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWellArchitected()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWellArchitected)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWickr()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWickr)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWorkDocs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWorkDocs)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWorkMail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWorkMail)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWorkMailMessageFlow()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWorkMailMessageFlow)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWorkSpaces()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWorkSpaces)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWorkspacesInstances()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWorkspacesInstances)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWorkSpacesThinClient()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWorkSpacesThinClient)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWorkSpacesWeb()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWorkSpacesWeb)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionXRay()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionXRay)
-: [MultiRegionClient](class-aws-multiregionclient.md)[createMWAA()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMWAA)
-: [MWAAClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MWAA.MWAAClient.html)[createMWAAServerless()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMWAAServerless)
-: [MWAAServerlessClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MWAAServerless.MWAAServerlessClient.html)[createNeptune()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createNeptune)
-: [NeptuneClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Neptune.NeptuneClient.html)[createNeptunedata()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createNeptunedata)
-: [NeptunedataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Neptunedata.NeptunedataClient.html)[createNeptuneGraph()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createNeptuneGraph)
-: [NeptuneGraphClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NeptuneGraph.NeptuneGraphClient.html)[createNetworkFirewall()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createNetworkFirewall)
-: [NetworkFirewallClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkFirewall.NetworkFirewallClient.html)[createNetworkFlowMonitor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createNetworkFlowMonitor)
-: [NetworkFlowMonitorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkFlowMonitor.NetworkFlowMonitorClient.html)[createNetworkManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createNetworkManager)
-: [NetworkManagerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkManager.NetworkManagerClient.html)[createNetworkMonitor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createNetworkMonitor)
-: [NetworkMonitorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkMonitor.NetworkMonitorClient.html)[createNotifications()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createNotifications)
-: [NotificationsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Notifications.NotificationsClient.html)[createNotificationsContacts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createNotificationsContacts)
-: [NotificationsContactsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NotificationsContacts.NotificationsContactsClient.html)[createNovaAct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createNovaAct)
-: [NovaActClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NovaAct.NovaActClient.html)[createOAM()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createOAM)
-: [OAMClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.OAM.OAMClient.html)[createObservabilityAdmin()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createObservabilityAdmin)
-: [ObservabilityAdminClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ObservabilityAdmin.ObservabilityAdminClient.html)[createOdb()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createOdb)
-: [OdbClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Odb.OdbClient.html)[createOmics()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createOmics)
-: [OmicsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Omics.OmicsClient.html)[createOpenSearchServerless()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createOpenSearchServerless)
-: [OpenSearchServerlessClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.OpenSearchServerless.OpenSearchServerlessClient.html)[createOpenSearchService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createOpenSearchService)
-: [OpenSearchServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.OpenSearchService.OpenSearchServiceClient.html)[createOrganizations()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createOrganizations)
-: [OrganizationsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Organizations.OrganizationsClient.html)[createOSIS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createOSIS)
-: [OSISClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.OSIS.OSISClient.html)[createOutposts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createOutposts)
-: [OutpostsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Outposts.OutpostsClient.html)[createPanorama()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPanorama)
-: [PanoramaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Panorama.PanoramaClient.html)[createPartnerCentralAccount()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPartnerCentralAccount)
-: [PartnerCentralAccountClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralAccount.PartnerCentralAccountClient.html)[createPartnerCentralBenefits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPartnerCentralBenefits)
-: [PartnerCentralBenefitsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralBenefits.PartnerCentralBenefitsClient.html)[createPartnerCentralChannel()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPartnerCentralChannel)
-: [PartnerCentralChannelClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralChannel.PartnerCentralChannelClient.html)[createPartnerCentralSelling()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPartnerCentralSelling)
-: [PartnerCentralSellingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralSelling.PartnerCentralSellingClient.html)[createPaymentCryptography()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPaymentCryptography)
-: [PaymentCryptographyClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PaymentCryptography.PaymentCryptographyClient.html)[createPaymentCryptographyData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPaymentCryptographyData)
-: [PaymentCryptographyDataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PaymentCryptographyData.PaymentCryptographyDataClient.html)[createPcaConnectorAd()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPcaConnectorAd)
-: [PcaConnectorAdClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PcaConnectorAd.PcaConnectorAdClient.html)[createPcaConnectorScep()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPcaConnectorScep)
-: [PcaConnectorScepClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PcaConnectorScep.PcaConnectorScepClient.html)[createPCS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPCS)
-: [PCSClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PCS.PCSClient.html)[createPersonalize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPersonalize)
-: [PersonalizeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Personalize.PersonalizeClient.html)[createPersonalizeEvents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPersonalizeEvents)
-: [PersonalizeEventsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PersonalizeEvents.PersonalizeEventsClient.html)[createPersonalizeRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPersonalizeRuntime)
-: [PersonalizeRuntimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PersonalizeRuntime.PersonalizeRuntimeClient.html)[createPI()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPI)
-: [PIClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PI.PIClient.html)[createPinpoint()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPinpoint)
-: [PinpointClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Pinpoint.PinpointClient.html)[createPinpointEmail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPinpointEmail)
-: [PinpointEmailClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PinpointEmail.PinpointEmailClient.html)[createPinpointSMSVoice()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPinpointSMSVoice)
-: [PinpointSMSVoiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PinpointSMSVoice.PinpointSMSVoiceClient.html)[createPinpointSMSVoiceV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPinpointSMSVoiceV2)
-: [PinpointSMSVoiceV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PinpointSMSVoiceV2.PinpointSMSVoiceV2Client.html)[createPipes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPipes)
-: [PipesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Pipes.PipesClient.html)[createPolly()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPolly)
-: [PollyClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Polly.PollyClient.html)[createPricing()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPricing)
-: [PricingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Pricing.PricingClient.html)[createPrometheusService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPrometheusService)
-: [PrometheusServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PrometheusService.PrometheusServiceClient.html)[createProton()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createProton)
-: [ProtonClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Proton.ProtonClient.html)[createQApps()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createQApps)
-: [QAppsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.QApps.QAppsClient.html)[createQBusiness()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createQBusiness)
-: [QBusinessClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.QBusiness.QBusinessClient.html)[createQConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createQConnect)
-: [QConnectClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.QConnect.QConnectClient.html)[createQuickSight()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createQuickSight)
-: [QuickSightClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.QuickSight.QuickSightClient.html)[createRAM()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRAM)
-: [RAMClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RAM.RAMClient.html)[createRds()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRds)
-: [RdsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Rds.RdsClient.html)[createRDSDataService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRDSDataService)
-: [RDSDataServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RDSDataService.RDSDataServiceClient.html)[createRecycleBin()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRecycleBin)
-: [RecycleBinClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RecycleBin.RecycleBinClient.html)[createRedshift()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRedshift)
-: [RedshiftClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Redshift.RedshiftClient.html)[createRedshiftDataAPIService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRedshiftDataAPIService)
-: [RedshiftDataAPIServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RedshiftDataAPIService.RedshiftDataAPIServiceClient.html)[createRedshiftServerless()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRedshiftServerless)
-: [RedshiftServerlessClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RedshiftServerless.RedshiftServerlessClient.html)[createRekognition()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRekognition)
-: [RekognitionClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Rekognition.RekognitionClient.html)[createRepostspace()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRepostspace)
-: [RepostspaceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Repostspace.RepostspaceClient.html)[createResilienceHub()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createResilienceHub)
-: [ResilienceHubClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResilienceHub.ResilienceHubClient.html)[createResourceExplorer2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createResourceExplorer2)
-: [ResourceExplorer2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResourceExplorer2.ResourceExplorer2Client.html)[createResourceGroups()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createResourceGroups)
-: [ResourceGroupsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResourceGroups.ResourceGroupsClient.html)[createResourceGroupsTaggingAPI()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createResourceGroupsTaggingAPI)
-: [ResourceGroupsTaggingAPIClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResourceGroupsTaggingAPI.ResourceGroupsTaggingAPIClient.html)[createRolesAnywhere()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRolesAnywhere)
-: [RolesAnywhereClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RolesAnywhere.RolesAnywhereClient.html)[createRoute53()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRoute53)
-: [Route53Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53.Route53Client.html)[createRoute53Domains()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRoute53Domains)
-: [Route53DomainsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53Domains.Route53DomainsClient.html)[createRoute53GlobalResolver()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRoute53GlobalResolver)
-: [Route53GlobalResolverClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53GlobalResolver.Route53GlobalResolverClient.html)[createRoute53Profiles()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRoute53Profiles)
-: [Route53ProfilesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53Profiles.Route53ProfilesClient.html)[createRoute53RecoveryCluster()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRoute53RecoveryCluster)
-: [Route53RecoveryClusterClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryCluster.Route53RecoveryClusterClient.html)[createRoute53RecoveryControlConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRoute53RecoveryControlConfig)
-: [Route53RecoveryControlConfigClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryControlConfig.Route53RecoveryControlConfigClient.html)[createRoute53RecoveryReadiness()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRoute53RecoveryReadiness)
-: [Route53RecoveryReadinessClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryReadiness.Route53RecoveryReadinessClient.html)[createRoute53Resolver()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRoute53Resolver)
-: [Route53ResolverClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53Resolver.Route53ResolverClient.html)[createRTBFabric()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRTBFabric)
-: [RTBFabricClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RTBFabric.RTBFabricClient.html)[createS3()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createS3)
-: [S3Client](class-aws-s3-s3client.md)[createS3Control()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createS3Control)
-: [S3ControlClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3Control.S3ControlClient.html)[createS3Outposts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createS3Outposts)
-: [S3OutpostsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3Outposts.S3OutpostsClient.html)[createS3Tables()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createS3Tables)
-: [S3TablesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3Tables.S3TablesClient.html)[createS3Vectors()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createS3Vectors)
-: [S3VectorsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3Vectors.S3VectorsClient.html)[createSageMaker()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSageMaker)
-: [SageMakerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMaker.SageMakerClient.html)[createSagemakerEdgeManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSagemakerEdgeManager)
-: [SagemakerEdgeManagerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SagemakerEdgeManager.SagemakerEdgeManagerClient.html)[createSageMakerFeatureStoreRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSageMakerFeatureStoreRuntime)
-: [SageMakerFeatureStoreRuntimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMakerFeatureStoreRuntime.SageMakerFeatureStoreRuntimeClient.html)[createSageMakerGeospatial()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSageMakerGeospatial)
-: [SageMakerGeospatialClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMakerGeospatial.SageMakerGeospatialClient.html)[createSageMakerMetrics()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSageMakerMetrics)
-: [SageMakerMetricsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMakerMetrics.SageMakerMetricsClient.html)[createSageMakerRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSageMakerRuntime)
-: [SageMakerRuntimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMakerRuntime.SageMakerRuntimeClient.html)[createSavingsPlans()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSavingsPlans)
-: [SavingsPlansClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SavingsPlans.SavingsPlansClient.html)[createScheduler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createScheduler)
-: [SchedulerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Scheduler.SchedulerClient.html)[createSchemas()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSchemas)
-: [SchemasClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Schemas.SchemasClient.html)[createSecretsManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSecretsManager)
-: [SecretsManagerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecretsManager.SecretsManagerClient.html)[createSecurityAgent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSecurityAgent)
-: [SecurityAgentClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecurityAgent.SecurityAgentClient.html)[createSecurityHub()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSecurityHub)
-: [SecurityHubClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecurityHub.SecurityHubClient.html)[createSecurityIR()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSecurityIR)
-: [SecurityIRClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecurityIR.SecurityIRClient.html)[createSecurityLake()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSecurityLake)
-: [SecurityLakeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecurityLake.SecurityLakeClient.html)[createServerlessApplicationRepository()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createServerlessApplicationRepository)
-: [ServerlessApplicationRepositoryClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServerlessApplicationRepository.ServerlessApplicationRepositoryClient.html)[createServiceCatalog()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createServiceCatalog)
-: [ServiceCatalogClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServiceCatalog.ServiceCatalogClient.html)[createServiceDiscovery()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createServiceDiscovery)
-: [ServiceDiscoveryClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServiceDiscovery.ServiceDiscoveryClient.html)[createServiceQuotas()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createServiceQuotas)
-: [ServiceQuotasClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServiceQuotas.ServiceQuotasClient.html)[createSes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSes)
-: [SesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ses.SesClient.html)[createSesV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSesV2)
-: [SesV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SesV2.SesV2Client.html)[createSfn()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSfn)
-: [SfnClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sfn.SfnClient.html)[createShield()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createShield)
-: [ShieldClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Shield.ShieldClient.html)[createsigner()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createsigner)
-: [signerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.signer.signerClient.html)[createSignerData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSignerData)
-: [SignerDataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SignerData.SignerDataClient.html)[createSignin()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSignin)
-: [SigninClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signin.SigninClient.html)[createSimpleDBv2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSimpleDBv2)
-: [SimpleDBv2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SimpleDBv2.SimpleDBv2Client.html)[createSimSpaceWeaver()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSimSpaceWeaver)
-: [SimSpaceWeaverClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SimSpaceWeaver.SimSpaceWeaverClient.html)[createSnowBall()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSnowBall)
-: [SnowBallClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SnowBall.SnowBallClient.html)[createSnowDeviceManagement()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSnowDeviceManagement)
-: [SnowDeviceManagementClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SnowDeviceManagement.SnowDeviceManagementClient.html)[createSns()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSns)
-: [SnsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.SnsClient.html)[createSocialMessaging()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSocialMessaging)
-: [SocialMessagingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SocialMessaging.SocialMessagingClient.html)[createSqs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSqs)
-: [SqsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sqs.SqsClient.html)[createSsm()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSsm)
-: [SsmClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ssm.SsmClient.html)[createSSMContacts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSSMContacts)
-: [SSMContactsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMContacts.SSMContactsClient.html)[createSSMGuiConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSSMGuiConnect)
-: [SSMGuiConnectClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMGuiConnect.SSMGuiConnectClient.html)[createSSMIncidents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSSMIncidents)
-: [SSMIncidentsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMIncidents.SSMIncidentsClient.html)[createSSMQuickSetup()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSSMQuickSetup)
-: [SSMQuickSetupClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMQuickSetup.SSMQuickSetupClient.html)[createSsmSap()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSsmSap)
-: [SsmSapClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SsmSap.SsmSapClient.html)[createSSO()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSSO)
-: [SSOClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSO.SSOClient.html)[createSSOAdmin()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSSOAdmin)
-: [SSOAdminClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSOAdmin.SSOAdminClient.html)[createSSOOIDC()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSSOOIDC)
-: [SSOOIDCClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSOOIDC.SSOOIDCClient.html)[createStorageGateway()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createStorageGateway)
-: [StorageGatewayClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.StorageGateway.StorageGatewayClient.html)[createSts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSts)
-: [StsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.StsClient.html)[createSupplyChain()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSupplyChain)
-: [SupplyChainClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SupplyChain.SupplyChainClient.html)[createSupport()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSupport)
-: [SupportClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Support.SupportClient.html)[createSupportApp()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSupportApp)
-: [SupportAppClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SupportApp.SupportAppClient.html)[createSustainability()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSustainability)
-: [SustainabilityClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sustainability.SustainabilityClient.html)[createSwf()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSwf)
-: [SwfClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Swf.SwfClient.html)[createSynthetics()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSynthetics)
-: [SyntheticsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Synthetics.SyntheticsClient.html)[createTaxSettings()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createTaxSettings)
-: [TaxSettingsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TaxSettings.TaxSettingsClient.html)[createTextract()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createTextract)
-: [TextractClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Textract.TextractClient.html)[createTimestreamInfluxDB()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createTimestreamInfluxDB)
-: [TimestreamInfluxDBClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TimestreamInfluxDB.TimestreamInfluxDBClient.html)[createTimestreamQuery()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createTimestreamQuery)
-: [TimestreamQueryClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TimestreamQuery.TimestreamQueryClient.html)[createTimestreamWrite()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createTimestreamWrite)
-: [TimestreamWriteClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TimestreamWrite.TimestreamWriteClient.html)[createTnb()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createTnb)
-: [TnbClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Tnb.TnbClient.html)[createTranscribeService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createTranscribeService)
-: [TranscribeServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TranscribeService.TranscribeServiceClient.html)[createTransfer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createTransfer)
-: [TransferClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Transfer.TransferClient.html)[createTranslate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createTranslate)
-: [TranslateClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Translate.TranslateClient.html)[createTrustedAdvisor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createTrustedAdvisor)
-: [TrustedAdvisorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TrustedAdvisor.TrustedAdvisorClient.html)[createUxc()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createUxc)
-: [UxcClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Uxc.UxcClient.html)[createVerifiedPermissions()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createVerifiedPermissions)
-: [VerifiedPermissionsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.VerifiedPermissions.VerifiedPermissionsClient.html)[createVoiceID()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createVoiceID)
-: [VoiceIDClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.VoiceID.VoiceIDClient.html)[createVPCLattice()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createVPCLattice)
-: [VPCLatticeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.VPCLattice.VPCLatticeClient.html)[createWaf()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWaf)
-: [WafClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Waf.WafClient.html)[createWafRegional()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWafRegional)
-: [WafRegionalClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WafRegional.WafRegionalClient.html)[createWAFV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWAFV2)
-: [WAFV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WAFV2.WAFV2Client.html)[createWellArchitected()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWellArchitected)
-: [WellArchitectedClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WellArchitected.WellArchitectedClient.html)[createWickr()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWickr)
-: [WickrClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Wickr.WickrClient.html)[createWorkDocs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWorkDocs)
-: [WorkDocsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkDocs.WorkDocsClient.html)[createWorkMail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWorkMail)
-: [WorkMailClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkMail.WorkMailClient.html)[createWorkMailMessageFlow()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWorkMailMessageFlow)
-: [WorkMailMessageFlowClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkMailMessageFlow.WorkMailMessageFlowClient.html)[createWorkSpaces()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWorkSpaces)
-: [WorkSpacesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkSpaces.WorkSpacesClient.html)[createWorkspacesInstances()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWorkspacesInstances)
-: [WorkspacesInstancesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkspacesInstances.WorkspacesInstancesClient.html)[createWorkSpacesThinClient()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWorkSpacesThinClient)
-: [WorkSpacesThinClientClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkSpacesThinClient.WorkSpacesThinClientClient.html)[createWorkSpacesWeb()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWorkSpacesWeb)
-: [WorkSpacesWebClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkSpacesWeb.WorkSpacesWebClient.html)[createXRay()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createXRay)
-: [XRayClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.XRay.XRayClient.html)
+of extra client settings.[createAccessAnalyzer()](class-aws-sdk-method-createaccessanalyzer.md)
+: [AccessAnalyzerClient](class-aws-accessanalyzer-accessanalyzerclient.md)[createAccount()](class-aws-sdk-method-createaccount.md)
+: [AccountClient](class-aws-account-accountclient.md)[createAcm()](class-aws-sdk-method-createacm.md)
+: [AcmClient](class-aws-acm-acmclient.md)[createACMPCA()](class-aws-sdk-method-createacmpca.md)
+: [ACMPCAClient](class-aws-acmpca-acmpcaclient.md)[createAIOps()](class-aws-sdk-method-createaiops.md)
+: [AIOpsClient](class-aws-aiops-aiopsclient.md)[createAmplify()](class-aws-sdk-method-createamplify.md)
+: [AmplifyClient](class-aws-amplify-amplifyclient.md)[createAmplifyBackend()](class-aws-sdk-method-createamplifybackend.md)
+: [AmplifyBackendClient](class-aws-amplifybackend-amplifybackendclient.md)[createAmplifyUIBuilder()](class-aws-sdk-method-createamplifyuibuilder.md)
+: [AmplifyUIBuilderClient](class-aws-amplifyuibuilder-amplifyuibuilderclient.md)[createApiGateway()](class-aws-sdk-method-createapigateway.md)
+: [ApiGatewayClient](class-aws-apigateway-apigatewayclient.md)[createApiGatewayManagementApi()](class-aws-sdk-method-createapigatewaymanagementapi.md)
+: [ApiGatewayManagementApiClient](class-aws-apigatewaymanagementapi-apigatewaymanagementapiclient.md)[createApiGatewayV2()](class-aws-sdk-method-createapigatewayv2.md)
+: [ApiGatewayV2Client](class-aws-apigatewayv2-apigatewayv2client.md)[createAppConfig()](class-aws-sdk-method-createappconfig.md)
+: [AppConfigClient](class-aws-appconfig-appconfigclient.md)[createAppConfigData()](class-aws-sdk-method-createappconfigdata.md)
+: [AppConfigDataClient](class-aws-appconfigdata-appconfigdataclient.md)[createAppFabric()](class-aws-sdk-method-createappfabric.md)
+: [AppFabricClient](class-aws-appfabric-appfabricclient.md)[createAppflow()](class-aws-sdk-method-createappflow.md)
+: [AppflowClient](class-aws-appflow-appflowclient.md)[createAppIntegrationsService()](class-aws-sdk-method-createappintegrationsservice.md)
+: [AppIntegrationsServiceClient](class-aws-appintegrationsservice-appintegrationsserviceclient.md)[createApplicationAutoScaling()](class-aws-sdk-method-createapplicationautoscaling.md)
+: [ApplicationAutoScalingClient](class-aws-applicationautoscaling-applicationautoscalingclient.md)[createApplicationCostProfiler()](class-aws-sdk-method-createapplicationcostprofiler.md)
+: [ApplicationCostProfilerClient](class-aws-applicationcostprofiler-applicationcostprofilerclient.md)[createApplicationDiscoveryService()](class-aws-sdk-method-createapplicationdiscoveryservice.md)
+: [ApplicationDiscoveryServiceClient](class-aws-applicationdiscoveryservice-applicationdiscoveryserviceclient.md)[createApplicationInsights()](class-aws-sdk-method-createapplicationinsights.md)
+: [ApplicationInsightsClient](class-aws-applicationinsights-applicationinsightsclient.md)[createApplicationSignals()](class-aws-sdk-method-createapplicationsignals.md)
+: [ApplicationSignalsClient](class-aws-applicationsignals-applicationsignalsclient.md)[createAppMesh()](class-aws-sdk-method-createappmesh.md)
+: [AppMeshClient](class-aws-appmesh-appmeshclient.md)[createAppRegistry()](class-aws-sdk-method-createappregistry.md)
+: [AppRegistryClient](class-aws-appregistry-appregistryclient.md)[createAppRunner()](class-aws-sdk-method-createapprunner.md)
+: [AppRunnerClient](class-aws-apprunner-apprunnerclient.md)[createAppstream()](class-aws-sdk-method-createappstream.md)
+: [AppstreamClient](class-aws-appstream-appstreamclient.md)[createAppSync()](class-aws-sdk-method-createappsync.md)
+: [AppSyncClient](class-aws-appsync-appsyncclient.md)[createARCRegionSwitch()](class-aws-sdk-method-createarcregionswitch.md)
+: [ARCRegionSwitchClient](class-aws-arcregionswitch-arcregionswitchclient.md)[createARCZonalShift()](class-aws-sdk-method-createarczonalshift.md)
+: [ARCZonalShiftClient](class-aws-arczonalshift-arczonalshiftclient.md)[createArtifact()](class-aws-sdk-method-createartifact.md)
+: [ArtifactClient](class-aws-artifact-artifactclient.md)[createAthena()](class-aws-sdk-method-createathena.md)
+: [AthenaClient](class-aws-athena-athenaclient.md)[createAuditManager()](class-aws-sdk-method-createauditmanager.md)
+: [AuditManagerClient](class-aws-auditmanager-auditmanagerclient.md)[createAugmentedAIRuntime()](class-aws-sdk-method-createaugmentedairuntime.md)
+: [AugmentedAIRuntimeClient](class-aws-augmentedairuntime-augmentedairuntimeclient.md)[createAutoScaling()](class-aws-sdk-method-createautoscaling.md)
+: [AutoScalingClient](class-aws-autoscaling-autoscalingclient.md)[createAutoScalingPlans()](class-aws-sdk-method-createautoscalingplans.md)
+: [AutoScalingPlansClient](class-aws-autoscalingplans-autoscalingplansclient.md)[createB2bi()](class-aws-sdk-method-createb2bi.md)
+: [B2biClient](class-aws-b2bi-b2biclient.md)[createBackup()](class-aws-sdk-method-createbackup.md)
+: [BackupClient](class-aws-backup-backupclient.md)[createBackupGateway()](class-aws-sdk-method-createbackupgateway.md)
+: [BackupGatewayClient](class-aws-backupgateway-backupgatewayclient.md)[createBackupSearch()](class-aws-sdk-method-createbackupsearch.md)
+: [BackupSearchClient](class-aws-backupsearch-backupsearchclient.md)[createBatch()](class-aws-sdk-method-createbatch.md)
+: [BatchClient](class-aws-batch-batchclient.md)[createBCMDashboards()](class-aws-sdk-method-createbcmdashboards.md)
+: [BCMDashboardsClient](class-aws-bcmdashboards-bcmdashboardsclient.md)[createBCMDataExports()](class-aws-sdk-method-createbcmdataexports.md)
+: [BCMDataExportsClient](class-aws-bcmdataexports-bcmdataexportsclient.md)[createBCMPricingCalculator()](class-aws-sdk-method-createbcmpricingcalculator.md)
+: [BCMPricingCalculatorClient](class-aws-bcmpricingcalculator-bcmpricingcalculatorclient.md)[createBCMRecommendedActions()](class-aws-sdk-method-createbcmrecommendedactions.md)
+: [BCMRecommendedActionsClient](class-aws-bcmrecommendedactions-bcmrecommendedactionsclient.md)[createBedrock()](class-aws-sdk-method-createbedrock.md)
+: [BedrockClient](class-aws-bedrock-bedrockclient.md)[createBedrockAgent()](class-aws-sdk-method-createbedrockagent.md)
+: [BedrockAgentClient](class-aws-bedrockagent-bedrockagentclient.md)[createBedrockAgentCore()](class-aws-sdk-method-createbedrockagentcore.md)
+: [BedrockAgentCoreClient](class-aws-bedrockagentcore-bedrockagentcoreclient.md)[createBedrockAgentCoreControl()](class-aws-sdk-method-createbedrockagentcorecontrol.md)
+: [BedrockAgentCoreControlClient](class-aws-bedrockagentcorecontrol-bedrockagentcorecontrolclient.md)[createBedrockAgentRuntime()](class-aws-sdk-method-createbedrockagentruntime.md)
+: [BedrockAgentRuntimeClient](class-aws-bedrockagentruntime-bedrockagentruntimeclient.md)[createBedrockDataAutomation()](class-aws-sdk-method-createbedrockdataautomation.md)
+: [BedrockDataAutomationClient](class-aws-bedrockdataautomation-bedrockdataautomationclient.md)[createBedrockDataAutomationRuntime()](class-aws-sdk-method-createbedrockdataautomationruntime.md)
+: [BedrockDataAutomationRuntimeClient](class-aws-bedrockdataautomationruntime-bedrockdataautomationruntimeclient.md)[createBedrockRuntime()](class-aws-sdk-method-createbedrockruntime.md)
+: [BedrockRuntimeClient](class-aws-bedrockruntime-bedrockruntimeclient.md)[createBilling()](class-aws-sdk-method-createbilling.md)
+: [BillingClient](class-aws-billing-billingclient.md)[createBillingConductor()](class-aws-sdk-method-createbillingconductor.md)
+: [BillingConductorClient](class-aws-billingconductor-billingconductorclient.md)[createBraket()](class-aws-sdk-method-createbraket.md)
+: [BraketClient](class-aws-braket-braketclient.md)[createBudgets()](class-aws-sdk-method-createbudgets.md)
+: [BudgetsClient](class-aws-budgets-budgetsclient.md)[createChatbot()](class-aws-sdk-method-createchatbot.md)
+: [ChatbotClient](class-aws-chatbot-chatbotclient.md)[createChime()](class-aws-sdk-method-createchime.md)
+: [ChimeClient](class-aws-chime-chimeclient.md)[createChimeSDKIdentity()](class-aws-sdk-method-createchimesdkidentity.md)
+: [ChimeSDKIdentityClient](class-aws-chimesdkidentity-chimesdkidentityclient.md)[createChimeSDKMediaPipelines()](class-aws-sdk-method-createchimesdkmediapipelines.md)
+: [ChimeSDKMediaPipelinesClient](class-aws-chimesdkmediapipelines-chimesdkmediapipelinesclient.md)[createChimeSDKMeetings()](class-aws-sdk-method-createchimesdkmeetings.md)
+: [ChimeSDKMeetingsClient](class-aws-chimesdkmeetings-chimesdkmeetingsclient.md)[createChimeSDKMessaging()](class-aws-sdk-method-createchimesdkmessaging.md)
+: [ChimeSDKMessagingClient](class-aws-chimesdkmessaging-chimesdkmessagingclient.md)[createChimeSDKVoice()](class-aws-sdk-method-createchimesdkvoice.md)
+: [ChimeSDKVoiceClient](class-aws-chimesdkvoice-chimesdkvoiceclient.md)[createCleanRooms()](class-aws-sdk-method-createcleanrooms.md)
+: [CleanRoomsClient](class-aws-cleanrooms-cleanroomsclient.md)[createCleanRoomsML()](class-aws-sdk-method-createcleanroomsml.md)
+: [CleanRoomsMLClient](class-aws-cleanroomsml-cleanroomsmlclient.md)[createClient()](class-aws-sdk-method-createclient.md)
+: [AwsClientInterface](class-aws-awsclientinterface.md)Get a client by name using an array of constructor options.[createCloud9()](class-aws-sdk-method-createcloud9.md)
+: [Cloud9Client](class-aws-cloud9-cloud9client.md)[createCloudControlApi()](class-aws-sdk-method-createcloudcontrolapi.md)
+: [CloudControlApiClient](class-aws-cloudcontrolapi-cloudcontrolapiclient.md)[createCloudDirectory()](class-aws-sdk-method-createclouddirectory.md)
+: [CloudDirectoryClient](class-aws-clouddirectory-clouddirectoryclient.md)[createCloudFormation()](class-aws-sdk-method-createcloudformation.md)
+: [CloudFormationClient](class-aws-cloudformation-cloudformationclient.md)[createCloudFront()](class-aws-sdk-method-createcloudfront.md)
+: [CloudFrontClient](class-aws-cloudfront-cloudfrontclient.md)[createCloudFrontKeyValueStore()](class-aws-sdk-method-createcloudfrontkeyvaluestore.md)
+: [CloudFrontKeyValueStoreClient](class-aws-cloudfrontkeyvaluestore-cloudfrontkeyvaluestoreclient.md)[createCloudHsm()](class-aws-sdk-method-createcloudhsm.md)
+: [CloudHsmClient](class-aws-cloudhsm-cloudhsmclient.md)[createCloudHSMV2()](class-aws-sdk-method-createcloudhsmv2.md)
+: [CloudHSMV2Client](class-aws-cloudhsmv2-cloudhsmv2client.md)[createCloudSearch()](class-aws-sdk-method-createcloudsearch.md)
+: [CloudSearchClient](class-aws-cloudsearch-cloudsearchclient.md)[createCloudSearchDomain()](class-aws-sdk-method-createcloudsearchdomain.md)
+: [CloudSearchDomainClient](class-aws-cloudsearchdomain-cloudsearchdomainclient.md)[createCloudTrail()](class-aws-sdk-method-createcloudtrail.md)
+: [CloudTrailClient](class-aws-cloudtrail-cloudtrailclient.md)[createCloudTrailData()](class-aws-sdk-method-createcloudtraildata.md)
+: [CloudTrailDataClient](class-aws-cloudtraildata-cloudtraildataclient.md)[createCloudWatch()](class-aws-sdk-method-createcloudwatch.md)
+: [CloudWatchClient](class-aws-cloudwatch-cloudwatchclient.md)[createCloudWatchEvents()](class-aws-sdk-method-createcloudwatchevents.md)
+: [CloudWatchEventsClient](class-aws-cloudwatchevents-cloudwatcheventsclient.md)[createCloudWatchLogs()](class-aws-sdk-method-createcloudwatchlogs.md)
+: [CloudWatchLogsClient](class-aws-cloudwatchlogs-cloudwatchlogsclient.md)[createCloudWatchRUM()](class-aws-sdk-method-createcloudwatchrum.md)
+: [CloudWatchRUMClient](class-aws-cloudwatchrum-cloudwatchrumclient.md)[createCodeArtifact()](class-aws-sdk-method-createcodeartifact.md)
+: [CodeArtifactClient](class-aws-codeartifact-codeartifactclient.md)[createCodeBuild()](class-aws-sdk-method-createcodebuild.md)
+: [CodeBuildClient](class-aws-codebuild-codebuildclient.md)[createCodeCatalyst()](class-aws-sdk-method-createcodecatalyst.md)
+: [CodeCatalystClient](class-aws-codecatalyst-codecatalystclient.md)[createCodeCommit()](class-aws-sdk-method-createcodecommit.md)
+: [CodeCommitClient](class-aws-codecommit-codecommitclient.md)[createCodeConnections()](class-aws-sdk-method-createcodeconnections.md)
+: [CodeConnectionsClient](class-aws-codeconnections-codeconnectionsclient.md)[createCodeDeploy()](class-aws-sdk-method-createcodedeploy.md)
+: [CodeDeployClient](class-aws-codedeploy-codedeployclient.md)[createCodeGuruProfiler()](class-aws-sdk-method-createcodeguruprofiler.md)
+: [CodeGuruProfilerClient](class-aws-codeguruprofiler-codeguruprofilerclient.md)[createCodeGuruReviewer()](class-aws-sdk-method-createcodegurureviewer.md)
+: [CodeGuruReviewerClient](class-aws-codegurureviewer-codegurureviewerclient.md)[createCodeGuruSecurity()](class-aws-sdk-method-createcodegurusecurity.md)
+: [CodeGuruSecurityClient](class-aws-codegurusecurity-codegurusecurityclient.md)[createCodePipeline()](class-aws-sdk-method-createcodepipeline.md)
+: [CodePipelineClient](class-aws-codepipeline-codepipelineclient.md)[createCodeStarconnections()](class-aws-sdk-method-createcodestarconnections.md)
+: [CodeStarconnectionsClient](class-aws-codestarconnections-codestarconnectionsclient.md)[createCodeStarNotifications()](class-aws-sdk-method-createcodestarnotifications.md)
+: [CodeStarNotificationsClient](class-aws-codestarnotifications-codestarnotificationsclient.md)[createCognitoIdentity()](class-aws-sdk-method-createcognitoidentity.md)
+: [CognitoIdentityClient](class-aws-cognitoidentity-cognitoidentityclient.md)[createCognitoIdentityProvider()](class-aws-sdk-method-createcognitoidentityprovider.md)
+: [CognitoIdentityProviderClient](class-aws-cognitoidentityprovider-cognitoidentityproviderclient.md)[createCognitoSync()](class-aws-sdk-method-createcognitosync.md)
+: [CognitoSyncClient](class-aws-cognitosync-cognitosyncclient.md)[createComprehend()](class-aws-sdk-method-createcomprehend.md)
+: [ComprehendClient](class-aws-comprehend-comprehendclient.md)[createComprehendMedical()](class-aws-sdk-method-createcomprehendmedical.md)
+: [ComprehendMedicalClient](class-aws-comprehendmedical-comprehendmedicalclient.md)[createComputeOptimizer()](class-aws-sdk-method-createcomputeoptimizer.md)
+: [ComputeOptimizerClient](class-aws-computeoptimizer-computeoptimizerclient.md)[createComputeOptimizerAutomation()](class-aws-sdk-method-createcomputeoptimizerautomation.md)
+: [ComputeOptimizerAutomationClient](class-aws-computeoptimizerautomation-computeoptimizerautomationclient.md)[createConfigService()](class-aws-sdk-method-createconfigservice.md)
+: [ConfigServiceClient](class-aws-configservice-configserviceclient.md)[createConnect()](class-aws-sdk-method-createconnect.md)
+: [ConnectClient](class-aws-connect-connectclient.md)[createConnectCampaignService()](class-aws-sdk-method-createconnectcampaignservice.md)
+: [ConnectCampaignServiceClient](class-aws-connectcampaignservice-connectcampaignserviceclient.md)[createConnectCampaignsV2()](class-aws-sdk-method-createconnectcampaignsv2.md)
+: [ConnectCampaignsV2Client](class-aws-connectcampaignsv2-connectcampaignsv2client.md)[createConnectCases()](class-aws-sdk-method-createconnectcases.md)
+: [ConnectCasesClient](class-aws-connectcases-connectcasesclient.md)[createConnectContactLens()](class-aws-sdk-method-createconnectcontactlens.md)
+: [ConnectContactLensClient](class-aws-connectcontactlens-connectcontactlensclient.md)[createConnectHealth()](class-aws-sdk-method-createconnecthealth.md)
+: [ConnectHealthClient](class-aws-connecthealth-connecthealthclient.md)[createConnectParticipant()](class-aws-sdk-method-createconnectparticipant.md)
+: [ConnectParticipantClient](class-aws-connectparticipant-connectparticipantclient.md)[createConnectWisdomService()](class-aws-sdk-method-createconnectwisdomservice.md)
+: [ConnectWisdomServiceClient](class-aws-connectwisdomservice-connectwisdomserviceclient.md)[createControlCatalog()](class-aws-sdk-method-createcontrolcatalog.md)
+: [ControlCatalogClient](class-aws-controlcatalog-controlcatalogclient.md)[createControlTower()](class-aws-sdk-method-createcontroltower.md)
+: [ControlTowerClient](class-aws-controltower-controltowerclient.md)[createCostandUsageReportService()](class-aws-sdk-method-createcostandusagereportservice.md)
+: [CostandUsageReportServiceClient](class-aws-costandusagereportservice-costandusagereportserviceclient.md)[createCostExplorer()](class-aws-sdk-method-createcostexplorer.md)
+: [CostExplorerClient](class-aws-costexplorer-costexplorerclient.md)[createCostOptimizationHub()](class-aws-sdk-method-createcostoptimizationhub.md)
+: [CostOptimizationHubClient](class-aws-costoptimizationhub-costoptimizationhubclient.md)[createCustomerProfiles()](class-aws-sdk-method-createcustomerprofiles.md)
+: [CustomerProfilesClient](class-aws-customerprofiles-customerprofilesclient.md)[createDatabaseMigrationService()](class-aws-sdk-method-createdatabasemigrationservice.md)
+: [DatabaseMigrationServiceClient](class-aws-databasemigrationservice-databasemigrationserviceclient.md)[createDataExchange()](class-aws-sdk-method-createdataexchange.md)
+: [DataExchangeClient](class-aws-dataexchange-dataexchangeclient.md)[createDataPipeline()](class-aws-sdk-method-createdatapipeline.md)
+: [DataPipelineClient](class-aws-datapipeline-datapipelineclient.md)[createDataSync()](class-aws-sdk-method-createdatasync.md)
+: [DataSyncClient](class-aws-datasync-datasyncclient.md)[createDataZone()](class-aws-sdk-method-createdatazone.md)
+: [DataZoneClient](class-aws-datazone-datazoneclient.md)[createDAX()](class-aws-sdk-method-createdax.md)
+: [DAXClient](class-aws-dax-daxclient.md)[createDeadline()](class-aws-sdk-method-createdeadline.md)
+: [DeadlineClient](class-aws-deadline-deadlineclient.md)[createDetective()](class-aws-sdk-method-createdetective.md)
+: [DetectiveClient](class-aws-detective-detectiveclient.md)[createDeviceFarm()](class-aws-sdk-method-createdevicefarm.md)
+: [DeviceFarmClient](class-aws-devicefarm-devicefarmclient.md)[createDevOpsAgent()](class-aws-sdk-method-createdevopsagent.md)
+: [DevOpsAgentClient](class-aws-devopsagent-devopsagentclient.md)[createDevOpsGuru()](class-aws-sdk-method-createdevopsguru.md)
+: [DevOpsGuruClient](class-aws-devopsguru-devopsguruclient.md)[createDirectConnect()](class-aws-sdk-method-createdirectconnect.md)
+: [DirectConnectClient](class-aws-directconnect-directconnectclient.md)[createDirectoryService()](class-aws-sdk-method-createdirectoryservice.md)
+: [DirectoryServiceClient](class-aws-directoryservice-directoryserviceclient.md)[createDirectoryServiceData()](class-aws-sdk-method-createdirectoryservicedata.md)
+: [DirectoryServiceDataClient](class-aws-directoryservicedata-directoryservicedataclient.md)[createDLM()](class-aws-sdk-method-createdlm.md)
+: [DLMClient](class-aws-dlm-dlmclient.md)[createDocDB()](class-aws-sdk-method-createdocdb.md)
+: [DocDBClient](class-aws-docdb-docdbclient.md)[createDocDBElastic()](class-aws-sdk-method-createdocdbelastic.md)
+: [DocDBElasticClient](class-aws-docdbelastic-docdbelasticclient.md)[createdrs()](class-aws-sdk-method-createdrs.md)
+: [drsClient](class-aws-drs-drsclient.md)[createDSQL()](class-aws-sdk-method-createdsql.md)
+: [DSQLClient](class-aws-dsql-dsqlclient.md)[createDynamoDb()](class-aws-sdk-method-createdynamodb.md)
+: [DynamoDbClient](class-aws-dynamodb-dynamodbclient.md)[createDynamoDbStreams()](class-aws-sdk-method-createdynamodbstreams.md)
+: [DynamoDbStreamsClient](class-aws-dynamodbstreams-dynamodbstreamsclient.md)[createEBS()](class-aws-sdk-method-createebs.md)
+: [EBSClient](class-aws-ebs-ebsclient.md)[createEc2()](class-aws-sdk-method-createec2.md)
+: [Ec2Client](class-aws-ec2-ec2client.md)[createEC2InstanceConnect()](class-aws-sdk-method-createec2instanceconnect.md)
+: [EC2InstanceConnectClient](class-aws-ec2instanceconnect-ec2instanceconnectclient.md)[createEcr()](class-aws-sdk-method-createecr.md)
+: [EcrClient](class-aws-ecr-ecrclient.md)[createECRPublic()](class-aws-sdk-method-createecrpublic.md)
+: [ECRPublicClient](class-aws-ecrpublic-ecrpublicclient.md)[createEcs()](class-aws-sdk-method-createecs.md)
+: [EcsClient](class-aws-ecs-ecsclient.md)[createEfs()](class-aws-sdk-method-createefs.md)
+: [EfsClient](class-aws-efs-efsclient.md)[createEKS()](class-aws-sdk-method-createeks.md)
+: [EKSClient](class-aws-eks-eksclient.md)[createEKSAuth()](class-aws-sdk-method-createeksauth.md)
+: [EKSAuthClient](class-aws-eksauth-eksauthclient.md)[createElastiCache()](class-aws-sdk-method-createelasticache.md)
+: [ElastiCacheClient](class-aws-elasticache-elasticacheclient.md)[createElasticBeanstalk()](class-aws-sdk-method-createelasticbeanstalk.md)
+: [ElasticBeanstalkClient](class-aws-elasticbeanstalk-elasticbeanstalkclient.md)[createElasticLoadBalancing()](class-aws-sdk-method-createelasticloadbalancing.md)
+: [ElasticLoadBalancingClient](class-aws-elasticloadbalancing-elasticloadbalancingclient.md)[createElasticLoadBalancingV2()](class-aws-sdk-method-createelasticloadbalancingv2.md)
+: [ElasticLoadBalancingV2Client](class-aws-elasticloadbalancingv2-elasticloadbalancingv2client.md)[createElasticsearchService()](class-aws-sdk-method-createelasticsearchservice.md)
+: [ElasticsearchServiceClient](class-aws-elasticsearchservice-elasticsearchserviceclient.md)[createElementalInference()](class-aws-sdk-method-createelementalinference.md)
+: [ElementalInferenceClient](class-aws-elementalinference-elementalinferenceclient.md)[createEmr()](class-aws-sdk-method-createemr.md)
+: [EmrClient](class-aws-emr-emrclient.md)[createEMRContainers()](class-aws-sdk-method-createemrcontainers.md)
+: [EMRContainersClient](class-aws-emrcontainers-emrcontainersclient.md)[createEMRServerless()](class-aws-sdk-method-createemrserverless.md)
+: [EMRServerlessClient](class-aws-emrserverless-emrserverlessclient.md)[createEntityResolution()](class-aws-sdk-method-createentityresolution.md)
+: [EntityResolutionClient](class-aws-entityresolution-entityresolutionclient.md)[createEventBridge()](class-aws-sdk-method-createeventbridge.md)
+: [EventBridgeClient](class-aws-eventbridge-eventbridgeclient.md)[createEvs()](class-aws-sdk-method-createevs.md)
+: [EvsClient](class-aws-evs-evsclient.md)[createfinspace()](class-aws-sdk-method-createfinspace.md)
+: [finspaceClient](class-aws-finspace-finspaceclient.md)[createFinSpaceData()](class-aws-sdk-method-createfinspacedata.md)
+: [FinSpaceDataClient](class-aws-finspacedata-finspacedataclient.md)[createFirehose()](class-aws-sdk-method-createfirehose.md)
+: [FirehoseClient](class-aws-firehose-firehoseclient.md)[createFIS()](class-aws-sdk-method-createfis.md)
+: [FISClient](class-aws-fis-fisclient.md)[createFMS()](class-aws-sdk-method-createfms.md)
+: [FMSClient](class-aws-fms-fmsclient.md)[createForecastQueryService()](class-aws-sdk-method-createforecastqueryservice.md)
+: [ForecastQueryServiceClient](class-aws-forecastqueryservice-forecastqueryserviceclient.md)[createForecastService()](class-aws-sdk-method-createforecastservice.md)
+: [ForecastServiceClient](class-aws-forecastservice-forecastserviceclient.md)[createFraudDetector()](class-aws-sdk-method-createfrauddetector.md)
+: [FraudDetectorClient](class-aws-frauddetector-frauddetectorclient.md)[createFreeTier()](class-aws-sdk-method-createfreetier.md)
+: [FreeTierClient](class-aws-freetier-freetierclient.md)[createFSx()](class-aws-sdk-method-createfsx.md)
+: [FSxClient](class-aws-fsx-fsxclient.md)[createGameLift()](class-aws-sdk-method-creategamelift.md)
+: [GameLiftClient](class-aws-gamelift-gameliftclient.md)[createGameLiftStreams()](class-aws-sdk-method-creategameliftstreams.md)
+: [GameLiftStreamsClient](class-aws-gameliftstreams-gameliftstreamsclient.md)[createGeoMaps()](class-aws-sdk-method-creategeomaps.md)
+: [GeoMapsClient](class-aws-geomaps-geomapsclient.md)[createGeoPlaces()](class-aws-sdk-method-creategeoplaces.md)
+: [GeoPlacesClient](class-aws-geoplaces-geoplacesclient.md)[createGeoRoutes()](class-aws-sdk-method-creategeoroutes.md)
+: [GeoRoutesClient](class-aws-georoutes-georoutesclient.md)[createGlacier()](class-aws-sdk-method-createglacier.md)
+: [GlacierClient](class-aws-glacier-glacierclient.md)[createGlobalAccelerator()](class-aws-sdk-method-createglobalaccelerator.md)
+: [GlobalAcceleratorClient](class-aws-globalaccelerator-globalacceleratorclient.md)[createGlue()](class-aws-sdk-method-createglue.md)
+: [GlueClient](class-aws-glue-glueclient.md)[createGlueDataBrew()](class-aws-sdk-method-creategluedatabrew.md)
+: [GlueDataBrewClient](class-aws-gluedatabrew-gluedatabrewclient.md)[createGreengrass()](class-aws-sdk-method-creategreengrass.md)
+: [GreengrassClient](class-aws-greengrass-greengrassclient.md)[createGreengrassV2()](class-aws-sdk-method-creategreengrassv2.md)
+: [GreengrassV2Client](class-aws-greengrassv2-greengrassv2client.md)[createGroundStation()](class-aws-sdk-method-creategroundstation.md)
+: [GroundStationClient](class-aws-groundstation-groundstationclient.md)[createGuardDuty()](class-aws-sdk-method-createguardduty.md)
+: [GuardDutyClient](class-aws-guardduty-guarddutyclient.md)[createHealth()](class-aws-sdk-method-createhealth.md)
+: [HealthClient](class-aws-health-healthclient.md)[createHealthLake()](class-aws-sdk-method-createhealthlake.md)
+: [HealthLakeClient](class-aws-healthlake-healthlakeclient.md)[createIam()](class-aws-sdk-method-createiam.md)
+: [IamClient](class-aws-iam-iamclient.md)[createIdentityStore()](class-aws-sdk-method-createidentitystore.md)
+: [IdentityStoreClient](class-aws-identitystore-identitystoreclient.md)[createimagebuilder()](class-aws-sdk-method-createimagebuilder.md)
+: [imagebuilderClient](class-aws-imagebuilder-imagebuilderclient.md)[createImportExport()](class-aws-sdk-method-createimportexport.md)
+: [ImportExportClient](class-aws-importexport-importexportclient.md)[createInspector()](class-aws-sdk-method-createinspector.md)
+: [InspectorClient](class-aws-inspector-inspectorclient.md)[createInspector2()](class-aws-sdk-method-createinspector2.md)
+: [Inspector2Client](class-aws-inspector2-inspector2client.md)[createInspectorScan()](class-aws-sdk-method-createinspectorscan.md)
+: [InspectorScanClient](class-aws-inspectorscan-inspectorscanclient.md)[createInternetMonitor()](class-aws-sdk-method-createinternetmonitor.md)
+: [InternetMonitorClient](class-aws-internetmonitor-internetmonitorclient.md)[createInvoicing()](class-aws-sdk-method-createinvoicing.md)
+: [InvoicingClient](class-aws-invoicing-invoicingclient.md)[createIot()](class-aws-sdk-method-createiot.md)
+: [IotClient](class-aws-iot-iotclient.md)[createIotDataPlane()](class-aws-sdk-method-createiotdataplane.md)
+: [IotDataPlaneClient](class-aws-iotdataplane-iotdataplaneclient.md)[createIoTDeviceAdvisor()](class-aws-sdk-method-createiotdeviceadvisor.md)
+: [IoTDeviceAdvisorClient](class-aws-iotdeviceadvisor-iotdeviceadvisorclient.md)[createIoTEvents()](class-aws-sdk-method-createiotevents.md)
+: [IoTEventsClient](class-aws-iotevents-ioteventsclient.md)[createIoTEventsData()](class-aws-sdk-method-createioteventsdata.md)
+: [IoTEventsDataClient](class-aws-ioteventsdata-ioteventsdataclient.md)[createIoTFleetWise()](class-aws-sdk-method-createiotfleetwise.md)
+: [IoTFleetWiseClient](class-aws-iotfleetwise-iotfleetwiseclient.md)[createIoTJobsDataPlane()](class-aws-sdk-method-createiotjobsdataplane.md)
+: [IoTJobsDataPlaneClient](class-aws-iotjobsdataplane-iotjobsdataplaneclient.md)[createIoTManagedIntegrations()](class-aws-sdk-method-createiotmanagedintegrations.md)
+: [IoTManagedIntegrationsClient](class-aws-iotmanagedintegrations-iotmanagedintegrationsclient.md)[createIoTSecureTunneling()](class-aws-sdk-method-createiotsecuretunneling.md)
+: [IoTSecureTunnelingClient](class-aws-iotsecuretunneling-iotsecuretunnelingclient.md)[createIoTSiteWise()](class-aws-sdk-method-createiotsitewise.md)
+: [IoTSiteWiseClient](class-aws-iotsitewise-iotsitewiseclient.md)[createIoTThingsGraph()](class-aws-sdk-method-createiotthingsgraph.md)
+: [IoTThingsGraphClient](class-aws-iotthingsgraph-iotthingsgraphclient.md)[createIoTTwinMaker()](class-aws-sdk-method-createiottwinmaker.md)
+: [IoTTwinMakerClient](class-aws-iottwinmaker-iottwinmakerclient.md)[createIoTWireless()](class-aws-sdk-method-createiotwireless.md)
+: [IoTWirelessClient](class-aws-iotwireless-iotwirelessclient.md)[createIVS()](class-aws-sdk-method-createivs.md)
+: [IVSClient](class-aws-ivs-ivsclient.md)[createivschat()](class-aws-sdk-method-createivschat.md)
+: [ivschatClient](class-aws-ivschat-ivschatclient.md)[createIVSRealTime()](class-aws-sdk-method-createivsrealtime.md)
+: [IVSRealTimeClient](class-aws-ivsrealtime-ivsrealtimeclient.md)[createKafka()](class-aws-sdk-method-createkafka.md)
+: [KafkaClient](class-aws-kafka-kafkaclient.md)[createKafkaConnect()](class-aws-sdk-method-createkafkaconnect.md)
+: [KafkaConnectClient](class-aws-kafkaconnect-kafkaconnectclient.md)[createkendra()](class-aws-sdk-method-createkendra.md)
+: [kendraClient](class-aws-kendra-kendraclient.md)[createKendraRanking()](class-aws-sdk-method-createkendraranking.md)
+: [KendraRankingClient](class-aws-kendraranking-kendrarankingclient.md)[createKeyspaces()](class-aws-sdk-method-createkeyspaces.md)
+: [KeyspacesClient](class-aws-keyspaces-keyspacesclient.md)[createKeyspacesStreams()](class-aws-sdk-method-createkeyspacesstreams.md)
+: [KeyspacesStreamsClient](class-aws-keyspacesstreams-keyspacesstreamsclient.md)[createKinesis()](class-aws-sdk-method-createkinesis.md)
+: [KinesisClient](class-aws-kinesis-kinesisclient.md)[createKinesisAnalytics()](class-aws-sdk-method-createkinesisanalytics.md)
+: [KinesisAnalyticsClient](class-aws-kinesisanalytics-kinesisanalyticsclient.md)[createKinesisAnalyticsV2()](class-aws-sdk-method-createkinesisanalyticsv2.md)
+: [KinesisAnalyticsV2Client](class-aws-kinesisanalyticsv2-kinesisanalyticsv2client.md)[createKinesisVideo()](class-aws-sdk-method-createkinesisvideo.md)
+: [KinesisVideoClient](class-aws-kinesisvideo-kinesisvideoclient.md)[createKinesisVideoArchivedMedia()](class-aws-sdk-method-createkinesisvideoarchivedmedia.md)
+: [KinesisVideoArchivedMediaClient](class-aws-kinesisvideoarchivedmedia-kinesisvideoarchivedmediaclient.md)[createKinesisVideoMedia()](class-aws-sdk-method-createkinesisvideomedia.md)
+: [KinesisVideoMediaClient](class-aws-kinesisvideomedia-kinesisvideomediaclient.md)[createKinesisVideoSignalingChannels()](class-aws-sdk-method-createkinesisvideosignalingchannels.md)
+: [KinesisVideoSignalingChannelsClient](class-aws-kinesisvideosignalingchannels-kinesisvideosignalingchannelsclient.md)[createKinesisVideoWebRTCStorage()](class-aws-sdk-method-createkinesisvideowebrtcstorage.md)
+: [KinesisVideoWebRTCStorageClient](class-aws-kinesisvideowebrtcstorage-kinesisvideowebrtcstorageclient.md)[createKms()](class-aws-sdk-method-createkms.md)
+: [KmsClient](class-aws-kms-kmsclient.md)[createLakeFormation()](class-aws-sdk-method-createlakeformation.md)
+: [LakeFormationClient](class-aws-lakeformation-lakeformationclient.md)[createLambda()](class-aws-sdk-method-createlambda.md)
+: [LambdaClient](class-aws-lambda-lambdaclient.md)[createLaunchWizard()](class-aws-sdk-method-createlaunchwizard.md)
+: [LaunchWizardClient](class-aws-launchwizard-launchwizardclient.md)[createLexModelBuildingService()](class-aws-sdk-method-createlexmodelbuildingservice.md)
+: [LexModelBuildingServiceClient](class-aws-lexmodelbuildingservice-lexmodelbuildingserviceclient.md)[createLexModelsV2()](class-aws-sdk-method-createlexmodelsv2.md)
+: [LexModelsV2Client](class-aws-lexmodelsv2-lexmodelsv2client.md)[createLexRuntimeService()](class-aws-sdk-method-createlexruntimeservice.md)
+: [LexRuntimeServiceClient](class-aws-lexruntimeservice-lexruntimeserviceclient.md)[createLexRuntimeV2()](class-aws-sdk-method-createlexruntimev2.md)
+: [LexRuntimeV2Client](class-aws-lexruntimev2-lexruntimev2client.md)[createLicenseManager()](class-aws-sdk-method-createlicensemanager.md)
+: [LicenseManagerClient](class-aws-licensemanager-licensemanagerclient.md)[createLicenseManagerLinuxSubscriptions()](class-aws-sdk-method-createlicensemanagerlinuxsubscriptions.md)
+: [LicenseManagerLinuxSubscriptionsClient](class-aws-licensemanagerlinuxsubscriptions-licensemanagerlinuxsubscriptionsclient.md)[createLicenseManagerUserSubscriptions()](class-aws-sdk-method-createlicensemanagerusersubscriptions.md)
+: [LicenseManagerUserSubscriptionsClient](class-aws-licensemanagerusersubscriptions-licensemanagerusersubscriptionsclient.md)[createLightsail()](class-aws-sdk-method-createlightsail.md)
+: [LightsailClient](class-aws-lightsail-lightsailclient.md)[createLocationService()](class-aws-sdk-method-createlocationservice.md)
+: [LocationServiceClient](class-aws-locationservice-locationserviceclient.md)[createLookoutEquipment()](class-aws-sdk-method-createlookoutequipment.md)
+: [LookoutEquipmentClient](class-aws-lookoutequipment-lookoutequipmentclient.md)[createMachineLearning()](class-aws-sdk-method-createmachinelearning.md)
+: [MachineLearningClient](class-aws-machinelearning-machinelearningclient.md)[createMacie2()](class-aws-sdk-method-createmacie2.md)
+: [Macie2Client](class-aws-macie2-macie2client.md)[createMailManager()](class-aws-sdk-method-createmailmanager.md)
+: [MailManagerClient](class-aws-mailmanager-mailmanagerclient.md)[createMainframeModernization()](class-aws-sdk-method-createmainframemodernization.md)
+: [MainframeModernizationClient](class-aws-mainframemodernization-mainframemodernizationclient.md)[createManagedBlockchain()](class-aws-sdk-method-createmanagedblockchain.md)
+: [ManagedBlockchainClient](class-aws-managedblockchain-managedblockchainclient.md)[createManagedBlockchainQuery()](class-aws-sdk-method-createmanagedblockchainquery.md)
+: [ManagedBlockchainQueryClient](class-aws-managedblockchainquery-managedblockchainqueryclient.md)[createManagedGrafana()](class-aws-sdk-method-createmanagedgrafana.md)
+: [ManagedGrafanaClient](class-aws-managedgrafana-managedgrafanaclient.md)[createMarketplaceAgreement()](class-aws-sdk-method-createmarketplaceagreement.md)
+: [MarketplaceAgreementClient](class-aws-marketplaceagreement-marketplaceagreementclient.md)[createMarketplaceCatalog()](class-aws-sdk-method-createmarketplacecatalog.md)
+: [MarketplaceCatalogClient](class-aws-marketplacecatalog-marketplacecatalogclient.md)[createMarketplaceCommerceAnalytics()](class-aws-sdk-method-createmarketplacecommerceanalytics.md)
+: [MarketplaceCommerceAnalyticsClient](class-aws-marketplacecommerceanalytics-marketplacecommerceanalyticsclient.md)[createMarketplaceDeployment()](class-aws-sdk-method-createmarketplacedeployment.md)
+: [MarketplaceDeploymentClient](class-aws-marketplacedeployment-marketplacedeploymentclient.md)[createMarketplaceEntitlementService()](class-aws-sdk-method-createmarketplaceentitlementservice.md)
+: [MarketplaceEntitlementServiceClient](class-aws-marketplaceentitlementservice-marketplaceentitlementserviceclient.md)[createMarketplaceMetering()](class-aws-sdk-method-createmarketplacemetering.md)
+: [MarketplaceMeteringClient](class-aws-marketplacemetering-marketplacemeteringclient.md)[createMarketplaceReporting()](class-aws-sdk-method-createmarketplacereporting.md)
+: [MarketplaceReportingClient](class-aws-marketplacereporting-marketplacereportingclient.md)[createMediaConnect()](class-aws-sdk-method-createmediaconnect.md)
+: [MediaConnectClient](class-aws-mediaconnect-mediaconnectclient.md)[createMediaConvert()](class-aws-sdk-method-createmediaconvert.md)
+: [MediaConvertClient](class-aws-mediaconvert-mediaconvertclient.md)[createMediaLive()](class-aws-sdk-method-createmedialive.md)
+: [MediaLiveClient](class-aws-medialive-medialiveclient.md)[createMediaPackage()](class-aws-sdk-method-createmediapackage.md)
+: [MediaPackageClient](class-aws-mediapackage-mediapackageclient.md)[createMediaPackageV2()](class-aws-sdk-method-createmediapackagev2.md)
+: [MediaPackageV2Client](class-aws-mediapackagev2-mediapackagev2client.md)[createMediaPackageVod()](class-aws-sdk-method-createmediapackagevod.md)
+: [MediaPackageVodClient](class-aws-mediapackagevod-mediapackagevodclient.md)[createMediaStore()](class-aws-sdk-method-createmediastore.md)
+: [MediaStoreClient](class-aws-mediastore-mediastoreclient.md)[createMediaStoreData()](class-aws-sdk-method-createmediastoredata.md)
+: [MediaStoreDataClient](class-aws-mediastoredata-mediastoredataclient.md)[createMediaTailor()](class-aws-sdk-method-createmediatailor.md)
+: [MediaTailorClient](class-aws-mediatailor-mediatailorclient.md)[createMedicalImaging()](class-aws-sdk-method-createmedicalimaging.md)
+: [MedicalImagingClient](class-aws-medicalimaging-medicalimagingclient.md)[createMemoryDB()](class-aws-sdk-method-creatememorydb.md)
+: [MemoryDBClient](class-aws-memorydb-memorydbclient.md)[createmgn()](class-aws-sdk-method-createmgn.md)
+: [mgnClient](class-aws-mgn-mgnclient.md)[createMigrationHub()](class-aws-sdk-method-createmigrationhub.md)
+: [MigrationHubClient](class-aws-migrationhub-migrationhubclient.md)[createMigrationHubConfig()](class-aws-sdk-method-createmigrationhubconfig.md)
+: [MigrationHubConfigClient](class-aws-migrationhubconfig-migrationhubconfigclient.md)[createMigrationHubOrchestrator()](class-aws-sdk-method-createmigrationhuborchestrator.md)
+: [MigrationHubOrchestratorClient](class-aws-migrationhuborchestrator-migrationhuborchestratorclient.md)[createMigrationHubRefactorSpaces()](class-aws-sdk-method-createmigrationhubrefactorspaces.md)
+: [MigrationHubRefactorSpacesClient](class-aws-migrationhubrefactorspaces-migrationhubrefactorspacesclient.md)[createMigrationHubStrategyRecommendations()](class-aws-sdk-method-createmigrationhubstrategyrecommendations.md)
+: [MigrationHubStrategyRecommendationsClient](class-aws-migrationhubstrategyrecommendations-migrationhubstrategyrecommendationsclient.md)[createMPA()](class-aws-sdk-method-creatempa.md)
+: [MPAClient](class-aws-mpa-mpaclient.md)[createMQ()](class-aws-sdk-method-createmq.md)
+: [MQClient](class-aws-mq-mqclient.md)[createMTurk()](class-aws-sdk-method-createmturk.md)
+: [MTurkClient](class-aws-mturk-mturkclient.md)[createMultiRegionAccessAnalyzer()](class-aws-sdk-method-createmultiregionaccessanalyzer.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAccount()](class-aws-sdk-method-createmultiregionaccount.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAcm()](class-aws-sdk-method-createmultiregionacm.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionACMPCA()](class-aws-sdk-method-createmultiregionacmpca.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAIOps()](class-aws-sdk-method-createmultiregionaiops.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAmplify()](class-aws-sdk-method-createmultiregionamplify.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAmplifyBackend()](class-aws-sdk-method-createmultiregionamplifybackend.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAmplifyUIBuilder()](class-aws-sdk-method-createmultiregionamplifyuibuilder.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionApiGateway()](class-aws-sdk-method-createmultiregionapigateway.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionApiGatewayManagementApi()](class-aws-sdk-method-createmultiregionapigatewaymanagementapi.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionApiGatewayV2()](class-aws-sdk-method-createmultiregionapigatewayv2.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAppConfig()](class-aws-sdk-method-createmultiregionappconfig.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAppConfigData()](class-aws-sdk-method-createmultiregionappconfigdata.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAppFabric()](class-aws-sdk-method-createmultiregionappfabric.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAppflow()](class-aws-sdk-method-createmultiregionappflow.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAppIntegrationsService()](class-aws-sdk-method-createmultiregionappintegrationsservice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionApplicationAutoScaling()](class-aws-sdk-method-createmultiregionapplicationautoscaling.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionApplicationCostProfiler()](class-aws-sdk-method-createmultiregionapplicationcostprofiler.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionApplicationDiscoveryService()](class-aws-sdk-method-createmultiregionapplicationdiscoveryservice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionApplicationInsights()](class-aws-sdk-method-createmultiregionapplicationinsights.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionApplicationSignals()](class-aws-sdk-method-createmultiregionapplicationsignals.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAppMesh()](class-aws-sdk-method-createmultiregionappmesh.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAppRegistry()](class-aws-sdk-method-createmultiregionappregistry.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAppRunner()](class-aws-sdk-method-createmultiregionapprunner.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAppstream()](class-aws-sdk-method-createmultiregionappstream.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAppSync()](class-aws-sdk-method-createmultiregionappsync.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionARCRegionSwitch()](class-aws-sdk-method-createmultiregionarcregionswitch.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionARCZonalShift()](class-aws-sdk-method-createmultiregionarczonalshift.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionArtifact()](class-aws-sdk-method-createmultiregionartifact.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAthena()](class-aws-sdk-method-createmultiregionathena.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAuditManager()](class-aws-sdk-method-createmultiregionauditmanager.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAugmentedAIRuntime()](class-aws-sdk-method-createmultiregionaugmentedairuntime.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAutoScaling()](class-aws-sdk-method-createmultiregionautoscaling.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionAutoScalingPlans()](class-aws-sdk-method-createmultiregionautoscalingplans.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionB2bi()](class-aws-sdk-method-createmultiregionb2bi.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBackup()](class-aws-sdk-method-createmultiregionbackup.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBackupGateway()](class-aws-sdk-method-createmultiregionbackupgateway.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBackupSearch()](class-aws-sdk-method-createmultiregionbackupsearch.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBatch()](class-aws-sdk-method-createmultiregionbatch.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBCMDashboards()](class-aws-sdk-method-createmultiregionbcmdashboards.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBCMDataExports()](class-aws-sdk-method-createmultiregionbcmdataexports.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBCMPricingCalculator()](class-aws-sdk-method-createmultiregionbcmpricingcalculator.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBCMRecommendedActions()](class-aws-sdk-method-createmultiregionbcmrecommendedactions.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBedrock()](class-aws-sdk-method-createmultiregionbedrock.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBedrockAgent()](class-aws-sdk-method-createmultiregionbedrockagent.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBedrockAgentCore()](class-aws-sdk-method-createmultiregionbedrockagentcore.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBedrockAgentCoreControl()](class-aws-sdk-method-createmultiregionbedrockagentcorecontrol.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBedrockAgentRuntime()](class-aws-sdk-method-createmultiregionbedrockagentruntime.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBedrockDataAutomation()](class-aws-sdk-method-createmultiregionbedrockdataautomation.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBedrockDataAutomationRuntime()](class-aws-sdk-method-createmultiregionbedrockdataautomationruntime.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBedrockRuntime()](class-aws-sdk-method-createmultiregionbedrockruntime.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBilling()](class-aws-sdk-method-createmultiregionbilling.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBillingConductor()](class-aws-sdk-method-createmultiregionbillingconductor.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBraket()](class-aws-sdk-method-createmultiregionbraket.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionBudgets()](class-aws-sdk-method-createmultiregionbudgets.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionChatbot()](class-aws-sdk-method-createmultiregionchatbot.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionChime()](class-aws-sdk-method-createmultiregionchime.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionChimeSDKIdentity()](class-aws-sdk-method-createmultiregionchimesdkidentity.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionChimeSDKMediaPipelines()](class-aws-sdk-method-createmultiregionchimesdkmediapipelines.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionChimeSDKMeetings()](class-aws-sdk-method-createmultiregionchimesdkmeetings.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionChimeSDKMessaging()](class-aws-sdk-method-createmultiregionchimesdkmessaging.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionChimeSDKVoice()](class-aws-sdk-method-createmultiregionchimesdkvoice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCleanRooms()](class-aws-sdk-method-createmultiregioncleanrooms.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCleanRoomsML()](class-aws-sdk-method-createmultiregioncleanroomsml.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionClient()](class-aws-sdk-method-createmultiregionclient.md)
+: mixed [createMultiRegionCloud9()](class-aws-sdk-method-createmultiregioncloud9.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudControlApi()](class-aws-sdk-method-createmultiregioncloudcontrolapi.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudDirectory()](class-aws-sdk-method-createmultiregionclouddirectory.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudFormation()](class-aws-sdk-method-createmultiregioncloudformation.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudFront()](class-aws-sdk-method-createmultiregioncloudfront.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudFrontKeyValueStore()](class-aws-sdk-method-createmultiregioncloudfrontkeyvaluestore.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudHsm()](class-aws-sdk-method-createmultiregioncloudhsm.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudHSMV2()](class-aws-sdk-method-createmultiregioncloudhsmv2.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudSearch()](class-aws-sdk-method-createmultiregioncloudsearch.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudSearchDomain()](class-aws-sdk-method-createmultiregioncloudsearchdomain.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudTrail()](class-aws-sdk-method-createmultiregioncloudtrail.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudTrailData()](class-aws-sdk-method-createmultiregioncloudtraildata.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudWatch()](class-aws-sdk-method-createmultiregioncloudwatch.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudWatchEvents()](class-aws-sdk-method-createmultiregioncloudwatchevents.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudWatchLogs()](class-aws-sdk-method-createmultiregioncloudwatchlogs.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCloudWatchRUM()](class-aws-sdk-method-createmultiregioncloudwatchrum.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodeArtifact()](class-aws-sdk-method-createmultiregioncodeartifact.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodeBuild()](class-aws-sdk-method-createmultiregioncodebuild.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodeCatalyst()](class-aws-sdk-method-createmultiregioncodecatalyst.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodeCommit()](class-aws-sdk-method-createmultiregioncodecommit.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodeConnections()](class-aws-sdk-method-createmultiregioncodeconnections.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodeDeploy()](class-aws-sdk-method-createmultiregioncodedeploy.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodeGuruProfiler()](class-aws-sdk-method-createmultiregioncodeguruprofiler.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodeGuruReviewer()](class-aws-sdk-method-createmultiregioncodegurureviewer.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodeGuruSecurity()](class-aws-sdk-method-createmultiregioncodegurusecurity.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodePipeline()](class-aws-sdk-method-createmultiregioncodepipeline.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodeStarconnections()](class-aws-sdk-method-createmultiregioncodestarconnections.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCodeStarNotifications()](class-aws-sdk-method-createmultiregioncodestarnotifications.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCognitoIdentity()](class-aws-sdk-method-createmultiregioncognitoidentity.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCognitoIdentityProvider()](class-aws-sdk-method-createmultiregioncognitoidentityprovider.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCognitoSync()](class-aws-sdk-method-createmultiregioncognitosync.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionComprehend()](class-aws-sdk-method-createmultiregioncomprehend.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionComprehendMedical()](class-aws-sdk-method-createmultiregioncomprehendmedical.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionComputeOptimizer()](class-aws-sdk-method-createmultiregioncomputeoptimizer.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionComputeOptimizerAutomation()](class-aws-sdk-method-createmultiregioncomputeoptimizerautomation.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionConfigService()](class-aws-sdk-method-createmultiregionconfigservice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionConnect()](class-aws-sdk-method-createmultiregionconnect.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionConnectCampaignService()](class-aws-sdk-method-createmultiregionconnectcampaignservice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionConnectCampaignsV2()](class-aws-sdk-method-createmultiregionconnectcampaignsv2.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionConnectCases()](class-aws-sdk-method-createmultiregionconnectcases.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionConnectContactLens()](class-aws-sdk-method-createmultiregionconnectcontactlens.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionConnectHealth()](class-aws-sdk-method-createmultiregionconnecthealth.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionConnectParticipant()](class-aws-sdk-method-createmultiregionconnectparticipant.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionConnectWisdomService()](class-aws-sdk-method-createmultiregionconnectwisdomservice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionControlCatalog()](class-aws-sdk-method-createmultiregioncontrolcatalog.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionControlTower()](class-aws-sdk-method-createmultiregioncontroltower.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCostandUsageReportService()](class-aws-sdk-method-createmultiregioncostandusagereportservice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCostExplorer()](class-aws-sdk-method-createmultiregioncostexplorer.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCostOptimizationHub()](class-aws-sdk-method-createmultiregioncostoptimizationhub.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionCustomerProfiles()](class-aws-sdk-method-createmultiregioncustomerprofiles.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDatabaseMigrationService()](class-aws-sdk-method-createmultiregiondatabasemigrationservice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDataExchange()](class-aws-sdk-method-createmultiregiondataexchange.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDataPipeline()](class-aws-sdk-method-createmultiregiondatapipeline.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDataSync()](class-aws-sdk-method-createmultiregiondatasync.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDataZone()](class-aws-sdk-method-createmultiregiondatazone.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDAX()](class-aws-sdk-method-createmultiregiondax.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDeadline()](class-aws-sdk-method-createmultiregiondeadline.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDetective()](class-aws-sdk-method-createmultiregiondetective.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDeviceFarm()](class-aws-sdk-method-createmultiregiondevicefarm.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDevOpsAgent()](class-aws-sdk-method-createmultiregiondevopsagent.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDevOpsGuru()](class-aws-sdk-method-createmultiregiondevopsguru.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDirectConnect()](class-aws-sdk-method-createmultiregiondirectconnect.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDirectoryService()](class-aws-sdk-method-createmultiregiondirectoryservice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDirectoryServiceData()](class-aws-sdk-method-createmultiregiondirectoryservicedata.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDLM()](class-aws-sdk-method-createmultiregiondlm.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDocDB()](class-aws-sdk-method-createmultiregiondocdb.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDocDBElastic()](class-aws-sdk-method-createmultiregiondocdbelastic.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegiondrs()](class-aws-sdk-method-createmultiregiondrs.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDSQL()](class-aws-sdk-method-createmultiregiondsql.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDynamoDb()](class-aws-sdk-method-createmultiregiondynamodb.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionDynamoDbStreams()](class-aws-sdk-method-createmultiregiondynamodbstreams.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEBS()](class-aws-sdk-method-createmultiregionebs.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEc2()](class-aws-sdk-method-createmultiregionec2.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEC2InstanceConnect()](class-aws-sdk-method-createmultiregionec2instanceconnect.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEcr()](class-aws-sdk-method-createmultiregionecr.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionECRPublic()](class-aws-sdk-method-createmultiregionecrpublic.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEcs()](class-aws-sdk-method-createmultiregionecs.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEfs()](class-aws-sdk-method-createmultiregionefs.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEKS()](class-aws-sdk-method-createmultiregioneks.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEKSAuth()](class-aws-sdk-method-createmultiregioneksauth.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionElastiCache()](class-aws-sdk-method-createmultiregionelasticache.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionElasticBeanstalk()](class-aws-sdk-method-createmultiregionelasticbeanstalk.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionElasticLoadBalancing()](class-aws-sdk-method-createmultiregionelasticloadbalancing.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionElasticLoadBalancingV2()](class-aws-sdk-method-createmultiregionelasticloadbalancingv2.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionElasticsearchService()](class-aws-sdk-method-createmultiregionelasticsearchservice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionElementalInference()](class-aws-sdk-method-createmultiregionelementalinference.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEmr()](class-aws-sdk-method-createmultiregionemr.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEMRContainers()](class-aws-sdk-method-createmultiregionemrcontainers.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEMRServerless()](class-aws-sdk-method-createmultiregionemrserverless.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEntityResolution()](class-aws-sdk-method-createmultiregionentityresolution.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEventBridge()](class-aws-sdk-method-createmultiregioneventbridge.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionEvs()](class-aws-sdk-method-createmultiregionevs.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionfinspace()](class-aws-sdk-method-createmultiregionfinspace.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionFinSpaceData()](class-aws-sdk-method-createmultiregionfinspacedata.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionFirehose()](class-aws-sdk-method-createmultiregionfirehose.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionFIS()](class-aws-sdk-method-createmultiregionfis.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionFMS()](class-aws-sdk-method-createmultiregionfms.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionForecastQueryService()](class-aws-sdk-method-createmultiregionforecastqueryservice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionForecastService()](class-aws-sdk-method-createmultiregionforecastservice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionFraudDetector()](class-aws-sdk-method-createmultiregionfrauddetector.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionFreeTier()](class-aws-sdk-method-createmultiregionfreetier.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionFSx()](class-aws-sdk-method-createmultiregionfsx.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGameLift()](class-aws-sdk-method-createmultiregiongamelift.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGameLiftStreams()](class-aws-sdk-method-createmultiregiongameliftstreams.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGeoMaps()](class-aws-sdk-method-createmultiregiongeomaps.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGeoPlaces()](class-aws-sdk-method-createmultiregiongeoplaces.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGeoRoutes()](class-aws-sdk-method-createmultiregiongeoroutes.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGlacier()](class-aws-sdk-method-createmultiregionglacier.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGlobalAccelerator()](class-aws-sdk-method-createmultiregionglobalaccelerator.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGlue()](class-aws-sdk-method-createmultiregionglue.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGlueDataBrew()](class-aws-sdk-method-createmultiregiongluedatabrew.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGreengrass()](class-aws-sdk-method-createmultiregiongreengrass.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGreengrassV2()](class-aws-sdk-method-createmultiregiongreengrassv2.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGroundStation()](class-aws-sdk-method-createmultiregiongroundstation.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionGuardDuty()](class-aws-sdk-method-createmultiregionguardduty.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionHealth()](class-aws-sdk-method-createmultiregionhealth.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionHealthLake()](class-aws-sdk-method-createmultiregionhealthlake.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIam()](class-aws-sdk-method-createmultiregioniam.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIdentityStore()](class-aws-sdk-method-createmultiregionidentitystore.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionimagebuilder()](class-aws-sdk-method-createmultiregionimagebuilder.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionImportExport()](class-aws-sdk-method-createmultiregionimportexport.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionInspector()](class-aws-sdk-method-createmultiregioninspector.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionInspector2()](class-aws-sdk-method-createmultiregioninspector2.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionInspectorScan()](class-aws-sdk-method-createmultiregioninspectorscan.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionInternetMonitor()](class-aws-sdk-method-createmultiregioninternetmonitor.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionInvoicing()](class-aws-sdk-method-createmultiregioninvoicing.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIot()](class-aws-sdk-method-createmultiregioniot.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIotDataPlane()](class-aws-sdk-method-createmultiregioniotdataplane.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIoTDeviceAdvisor()](class-aws-sdk-method-createmultiregioniotdeviceadvisor.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIoTEvents()](class-aws-sdk-method-createmultiregioniotevents.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIoTEventsData()](class-aws-sdk-method-createmultiregionioteventsdata.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIoTFleetWise()](class-aws-sdk-method-createmultiregioniotfleetwise.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIoTJobsDataPlane()](class-aws-sdk-method-createmultiregioniotjobsdataplane.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIoTManagedIntegrations()](class-aws-sdk-method-createmultiregioniotmanagedintegrations.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIoTSecureTunneling()](class-aws-sdk-method-createmultiregioniotsecuretunneling.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIoTSiteWise()](class-aws-sdk-method-createmultiregioniotsitewise.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIoTThingsGraph()](class-aws-sdk-method-createmultiregioniotthingsgraph.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIoTTwinMaker()](class-aws-sdk-method-createmultiregioniottwinmaker.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIoTWireless()](class-aws-sdk-method-createmultiregioniotwireless.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIVS()](class-aws-sdk-method-createmultiregionivs.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionivschat()](class-aws-sdk-method-createmultiregionivschat.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionIVSRealTime()](class-aws-sdk-method-createmultiregionivsrealtime.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKafka()](class-aws-sdk-method-createmultiregionkafka.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKafkaConnect()](class-aws-sdk-method-createmultiregionkafkaconnect.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionkendra()](class-aws-sdk-method-createmultiregionkendra.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKendraRanking()](class-aws-sdk-method-createmultiregionkendraranking.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKeyspaces()](class-aws-sdk-method-createmultiregionkeyspaces.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKeyspacesStreams()](class-aws-sdk-method-createmultiregionkeyspacesstreams.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKinesis()](class-aws-sdk-method-createmultiregionkinesis.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKinesisAnalytics()](class-aws-sdk-method-createmultiregionkinesisanalytics.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKinesisAnalyticsV2()](class-aws-sdk-method-createmultiregionkinesisanalyticsv2.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKinesisVideo()](class-aws-sdk-method-createmultiregionkinesisvideo.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKinesisVideoArchivedMedia()](class-aws-sdk-method-createmultiregionkinesisvideoarchivedmedia.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKinesisVideoMedia()](class-aws-sdk-method-createmultiregionkinesisvideomedia.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKinesisVideoSignalingChannels()](class-aws-sdk-method-createmultiregionkinesisvideosignalingchannels.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKinesisVideoWebRTCStorage()](class-aws-sdk-method-createmultiregionkinesisvideowebrtcstorage.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionKms()](class-aws-sdk-method-createmultiregionkms.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLakeFormation()](class-aws-sdk-method-createmultiregionlakeformation.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLambda()](class-aws-sdk-method-createmultiregionlambda.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLaunchWizard()](class-aws-sdk-method-createmultiregionlaunchwizard.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLexModelBuildingService()](class-aws-sdk-method-createmultiregionlexmodelbuildingservice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLexModelsV2()](class-aws-sdk-method-createmultiregionlexmodelsv2.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLexRuntimeService()](class-aws-sdk-method-createmultiregionlexruntimeservice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLexRuntimeV2()](class-aws-sdk-method-createmultiregionlexruntimev2.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLicenseManager()](class-aws-sdk-method-createmultiregionlicensemanager.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLicenseManagerLinuxSubscriptions()](class-aws-sdk-method-createmultiregionlicensemanagerlinuxsubscriptions.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLicenseManagerUserSubscriptions()](class-aws-sdk-method-createmultiregionlicensemanagerusersubscriptions.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLightsail()](class-aws-sdk-method-createmultiregionlightsail.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLocationService()](class-aws-sdk-method-createmultiregionlocationservice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionLookoutEquipment()](class-aws-sdk-method-createmultiregionlookoutequipment.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMachineLearning()](class-aws-sdk-method-createmultiregionmachinelearning.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMacie2()](class-aws-sdk-method-createmultiregionmacie2.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMailManager()](class-aws-sdk-method-createmultiregionmailmanager.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMainframeModernization()](class-aws-sdk-method-createmultiregionmainframemodernization.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionManagedBlockchain()](class-aws-sdk-method-createmultiregionmanagedblockchain.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionManagedBlockchainQuery()](class-aws-sdk-method-createmultiregionmanagedblockchainquery.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionManagedGrafana()](class-aws-sdk-method-createmultiregionmanagedgrafana.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMarketplaceAgreement()](class-aws-sdk-method-createmultiregionmarketplaceagreement.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMarketplaceCatalog()](class-aws-sdk-method-createmultiregionmarketplacecatalog.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMarketplaceCommerceAnalytics()](class-aws-sdk-method-createmultiregionmarketplacecommerceanalytics.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMarketplaceDeployment()](class-aws-sdk-method-createmultiregionmarketplacedeployment.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMarketplaceEntitlementService()](class-aws-sdk-method-createmultiregionmarketplaceentitlementservice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMarketplaceMetering()](class-aws-sdk-method-createmultiregionmarketplacemetering.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMarketplaceReporting()](class-aws-sdk-method-createmultiregionmarketplacereporting.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMediaConnect()](class-aws-sdk-method-createmultiregionmediaconnect.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMediaConvert()](class-aws-sdk-method-createmultiregionmediaconvert.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMediaLive()](class-aws-sdk-method-createmultiregionmedialive.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMediaPackage()](class-aws-sdk-method-createmultiregionmediapackage.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMediaPackageV2()](class-aws-sdk-method-createmultiregionmediapackagev2.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMediaPackageVod()](class-aws-sdk-method-createmultiregionmediapackagevod.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMediaStore()](class-aws-sdk-method-createmultiregionmediastore.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMediaStoreData()](class-aws-sdk-method-createmultiregionmediastoredata.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMediaTailor()](class-aws-sdk-method-createmultiregionmediatailor.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMedicalImaging()](class-aws-sdk-method-createmultiregionmedicalimaging.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMemoryDB()](class-aws-sdk-method-createmultiregionmemorydb.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionmgn()](class-aws-sdk-method-createmultiregionmgn.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMigrationHub()](class-aws-sdk-method-createmultiregionmigrationhub.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMigrationHubConfig()](class-aws-sdk-method-createmultiregionmigrationhubconfig.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMigrationHubOrchestrator()](class-aws-sdk-method-createmultiregionmigrationhuborchestrator.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMigrationHubRefactorSpaces()](class-aws-sdk-method-createmultiregionmigrationhubrefactorspaces.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMigrationHubStrategyRecommendations()](class-aws-sdk-method-createmultiregionmigrationhubstrategyrecommendations.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMPA()](class-aws-sdk-method-createmultiregionmpa.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMQ()](class-aws-sdk-method-createmultiregionmq.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMTurk()](class-aws-sdk-method-createmultiregionmturk.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMWAA()](class-aws-sdk-method-createmultiregionmwaa.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionMWAAServerless()](class-aws-sdk-method-createmultiregionmwaaserverless.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionNeptune()](class-aws-sdk-method-createmultiregionneptune.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionNeptunedata()](class-aws-sdk-method-createmultiregionneptunedata.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionNeptuneGraph()](class-aws-sdk-method-createmultiregionneptunegraph.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionNetworkFirewall()](class-aws-sdk-method-createmultiregionnetworkfirewall.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionNetworkFlowMonitor()](class-aws-sdk-method-createmultiregionnetworkflowmonitor.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionNetworkManager()](class-aws-sdk-method-createmultiregionnetworkmanager.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionNetworkMonitor()](class-aws-sdk-method-createmultiregionnetworkmonitor.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionNotifications()](class-aws-sdk-method-createmultiregionnotifications.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionNotificationsContacts()](class-aws-sdk-method-createmultiregionnotificationscontacts.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionNovaAct()](class-aws-sdk-method-createmultiregionnovaact.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionOAM()](class-aws-sdk-method-createmultiregionoam.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionObservabilityAdmin()](class-aws-sdk-method-createmultiregionobservabilityadmin.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionOdb()](class-aws-sdk-method-createmultiregionodb.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionOmics()](class-aws-sdk-method-createmultiregionomics.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionOpenSearchServerless()](class-aws-sdk-method-createmultiregionopensearchserverless.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionOpenSearchService()](class-aws-sdk-method-createmultiregionopensearchservice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionOrganizations()](class-aws-sdk-method-createmultiregionorganizations.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionOSIS()](class-aws-sdk-method-createmultiregionosis.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionOutposts()](class-aws-sdk-method-createmultiregionoutposts.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPanorama()](class-aws-sdk-method-createmultiregionpanorama.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPartnerCentralAccount()](class-aws-sdk-method-createmultiregionpartnercentralaccount.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPartnerCentralBenefits()](class-aws-sdk-method-createmultiregionpartnercentralbenefits.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPartnerCentralChannel()](class-aws-sdk-method-createmultiregionpartnercentralchannel.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPartnerCentralSelling()](class-aws-sdk-method-createmultiregionpartnercentralselling.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPaymentCryptography()](class-aws-sdk-method-createmultiregionpaymentcryptography.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPaymentCryptographyData()](class-aws-sdk-method-createmultiregionpaymentcryptographydata.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPcaConnectorAd()](class-aws-sdk-method-createmultiregionpcaconnectorad.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPcaConnectorScep()](class-aws-sdk-method-createmultiregionpcaconnectorscep.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPCS()](class-aws-sdk-method-createmultiregionpcs.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPersonalize()](class-aws-sdk-method-createmultiregionpersonalize.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPersonalizeEvents()](class-aws-sdk-method-createmultiregionpersonalizeevents.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPersonalizeRuntime()](class-aws-sdk-method-createmultiregionpersonalizeruntime.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPI()](class-aws-sdk-method-createmultiregionpi.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPinpoint()](class-aws-sdk-method-createmultiregionpinpoint.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPinpointEmail()](class-aws-sdk-method-createmultiregionpinpointemail.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPinpointSMSVoice()](class-aws-sdk-method-createmultiregionpinpointsmsvoice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPinpointSMSVoiceV2()](class-aws-sdk-method-createmultiregionpinpointsmsvoicev2.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPipes()](class-aws-sdk-method-createmultiregionpipes.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPolly()](class-aws-sdk-method-createmultiregionpolly.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPricing()](class-aws-sdk-method-createmultiregionpricing.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionPrometheusService()](class-aws-sdk-method-createmultiregionprometheusservice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionProton()](class-aws-sdk-method-createmultiregionproton.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionQApps()](class-aws-sdk-method-createmultiregionqapps.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionQBusiness()](class-aws-sdk-method-createmultiregionqbusiness.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionQConnect()](class-aws-sdk-method-createmultiregionqconnect.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionQuickSight()](class-aws-sdk-method-createmultiregionquicksight.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRAM()](class-aws-sdk-method-createmultiregionram.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRds()](class-aws-sdk-method-createmultiregionrds.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRDSDataService()](class-aws-sdk-method-createmultiregionrdsdataservice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRecycleBin()](class-aws-sdk-method-createmultiregionrecyclebin.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRedshift()](class-aws-sdk-method-createmultiregionredshift.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRedshiftDataAPIService()](class-aws-sdk-method-createmultiregionredshiftdataapiservice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRedshiftServerless()](class-aws-sdk-method-createmultiregionredshiftserverless.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRekognition()](class-aws-sdk-method-createmultiregionrekognition.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRepostspace()](class-aws-sdk-method-createmultiregionrepostspace.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionResilienceHub()](class-aws-sdk-method-createmultiregionresiliencehub.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionResourceExplorer2()](class-aws-sdk-method-createmultiregionresourceexplorer2.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionResourceGroups()](class-aws-sdk-method-createmultiregionresourcegroups.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionResourceGroupsTaggingAPI()](class-aws-sdk-method-createmultiregionresourcegroupstaggingapi.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRolesAnywhere()](class-aws-sdk-method-createmultiregionrolesanywhere.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRoute53()](class-aws-sdk-method-createmultiregionroute53.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRoute53Domains()](class-aws-sdk-method-createmultiregionroute53domains.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRoute53GlobalResolver()](class-aws-sdk-method-createmultiregionroute53globalresolver.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRoute53Profiles()](class-aws-sdk-method-createmultiregionroute53profiles.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRoute53RecoveryCluster()](class-aws-sdk-method-createmultiregionroute53recoverycluster.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRoute53RecoveryControlConfig()](class-aws-sdk-method-createmultiregionroute53recoverycontrolconfig.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRoute53RecoveryReadiness()](class-aws-sdk-method-createmultiregionroute53recoveryreadiness.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRoute53Resolver()](class-aws-sdk-method-createmultiregionroute53resolver.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionRTBFabric()](class-aws-sdk-method-createmultiregionrtbfabric.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionS3()](class-aws-sdk-method-createmultiregions3.md)
+: [S3MultiRegionClient](class-aws-s3-s3multiregionclient.md)[createMultiRegionS3Control()](class-aws-sdk-method-createmultiregions3control.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionS3Outposts()](class-aws-sdk-method-createmultiregions3outposts.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionS3Tables()](class-aws-sdk-method-createmultiregions3tables.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionS3Vectors()](class-aws-sdk-method-createmultiregions3vectors.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSageMaker()](class-aws-sdk-method-createmultiregionsagemaker.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSagemakerEdgeManager()](class-aws-sdk-method-createmultiregionsagemakeredgemanager.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSageMakerFeatureStoreRuntime()](class-aws-sdk-method-createmultiregionsagemakerfeaturestoreruntime.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSageMakerGeospatial()](class-aws-sdk-method-createmultiregionsagemakergeospatial.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSageMakerMetrics()](class-aws-sdk-method-createmultiregionsagemakermetrics.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSageMakerRuntime()](class-aws-sdk-method-createmultiregionsagemakerruntime.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSavingsPlans()](class-aws-sdk-method-createmultiregionsavingsplans.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionScheduler()](class-aws-sdk-method-createmultiregionscheduler.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSchemas()](class-aws-sdk-method-createmultiregionschemas.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSecretsManager()](class-aws-sdk-method-createmultiregionsecretsmanager.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSecurityAgent()](class-aws-sdk-method-createmultiregionsecurityagent.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSecurityHub()](class-aws-sdk-method-createmultiregionsecurityhub.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSecurityIR()](class-aws-sdk-method-createmultiregionsecurityir.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSecurityLake()](class-aws-sdk-method-createmultiregionsecuritylake.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionServerlessApplicationRepository()](class-aws-sdk-method-createmultiregionserverlessapplicationrepository.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionServiceCatalog()](class-aws-sdk-method-createmultiregionservicecatalog.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionServiceDiscovery()](class-aws-sdk-method-createmultiregionservicediscovery.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionServiceQuotas()](class-aws-sdk-method-createmultiregionservicequotas.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSes()](class-aws-sdk-method-createmultiregionses.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSesV2()](class-aws-sdk-method-createmultiregionsesv2.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSfn()](class-aws-sdk-method-createmultiregionsfn.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionShield()](class-aws-sdk-method-createmultiregionshield.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionsigner()](class-aws-sdk-method-createmultiregionsigner.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSignerData()](class-aws-sdk-method-createmultiregionsignerdata.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSignin()](class-aws-sdk-method-createmultiregionsignin.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSimpleDBv2()](class-aws-sdk-method-createmultiregionsimpledbv2.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSimSpaceWeaver()](class-aws-sdk-method-createmultiregionsimspaceweaver.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSnowBall()](class-aws-sdk-method-createmultiregionsnowball.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSnowDeviceManagement()](class-aws-sdk-method-createmultiregionsnowdevicemanagement.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSns()](class-aws-sdk-method-createmultiregionsns.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSocialMessaging()](class-aws-sdk-method-createmultiregionsocialmessaging.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSqs()](class-aws-sdk-method-createmultiregionsqs.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSsm()](class-aws-sdk-method-createmultiregionssm.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSSMContacts()](class-aws-sdk-method-createmultiregionssmcontacts.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSSMGuiConnect()](class-aws-sdk-method-createmultiregionssmguiconnect.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSSMIncidents()](class-aws-sdk-method-createmultiregionssmincidents.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSSMQuickSetup()](class-aws-sdk-method-createmultiregionssmquicksetup.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSsmSap()](class-aws-sdk-method-createmultiregionssmsap.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSSO()](class-aws-sdk-method-createmultiregionsso.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSSOAdmin()](class-aws-sdk-method-createmultiregionssoadmin.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSSOOIDC()](class-aws-sdk-method-createmultiregionssooidc.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionStorageGateway()](class-aws-sdk-method-createmultiregionstoragegateway.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSts()](class-aws-sdk-method-createmultiregionsts.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSupplyChain()](class-aws-sdk-method-createmultiregionsupplychain.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSupport()](class-aws-sdk-method-createmultiregionsupport.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSupportApp()](class-aws-sdk-method-createmultiregionsupportapp.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSustainability()](class-aws-sdk-method-createmultiregionsustainability.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSwf()](class-aws-sdk-method-createmultiregionswf.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionSynthetics()](class-aws-sdk-method-createmultiregionsynthetics.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionTaxSettings()](class-aws-sdk-method-createmultiregiontaxsettings.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionTextract()](class-aws-sdk-method-createmultiregiontextract.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionTimestreamInfluxDB()](class-aws-sdk-method-createmultiregiontimestreaminfluxdb.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionTimestreamQuery()](class-aws-sdk-method-createmultiregiontimestreamquery.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionTimestreamWrite()](class-aws-sdk-method-createmultiregiontimestreamwrite.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionTnb()](class-aws-sdk-method-createmultiregiontnb.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionTranscribeService()](class-aws-sdk-method-createmultiregiontranscribeservice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionTransfer()](class-aws-sdk-method-createmultiregiontransfer.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionTranslate()](class-aws-sdk-method-createmultiregiontranslate.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionTrustedAdvisor()](class-aws-sdk-method-createmultiregiontrustedadvisor.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionUxc()](class-aws-sdk-method-createmultiregionuxc.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionVerifiedPermissions()](class-aws-sdk-method-createmultiregionverifiedpermissions.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionVoiceID()](class-aws-sdk-method-createmultiregionvoiceid.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionVPCLattice()](class-aws-sdk-method-createmultiregionvpclattice.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWaf()](class-aws-sdk-method-createmultiregionwaf.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWafRegional()](class-aws-sdk-method-createmultiregionwafregional.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWAFV2()](class-aws-sdk-method-createmultiregionwafv2.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWellArchitected()](class-aws-sdk-method-createmultiregionwellarchitected.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWickr()](class-aws-sdk-method-createmultiregionwickr.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWorkDocs()](class-aws-sdk-method-createmultiregionworkdocs.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWorkMail()](class-aws-sdk-method-createmultiregionworkmail.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWorkMailMessageFlow()](class-aws-sdk-method-createmultiregionworkmailmessageflow.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWorkSpaces()](class-aws-sdk-method-createmultiregionworkspaces.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWorkspacesInstances()](class-aws-sdk-method-createmultiregionworkspacesinstances.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWorkSpacesThinClient()](class-aws-sdk-method-createmultiregionworkspacesthinclient.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionWorkSpacesWeb()](class-aws-sdk-method-createmultiregionworkspacesweb.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMultiRegionXRay()](class-aws-sdk-method-createmultiregionxray.md)
+: [MultiRegionClient](class-aws-multiregionclient.md)[createMWAA()](class-aws-sdk-method-createmwaa.md)
+: [MWAAClient](class-aws-mwaa-mwaaclient.md)[createMWAAServerless()](class-aws-sdk-method-createmwaaserverless.md)
+: [MWAAServerlessClient](class-aws-mwaaserverless-mwaaserverlessclient.md)[createNeptune()](class-aws-sdk-method-createneptune.md)
+: [NeptuneClient](class-aws-neptune-neptuneclient.md)[createNeptunedata()](class-aws-sdk-method-createneptunedata.md)
+: [NeptunedataClient](class-aws-neptunedata-neptunedataclient.md)[createNeptuneGraph()](class-aws-sdk-method-createneptunegraph.md)
+: [NeptuneGraphClient](class-aws-neptunegraph-neptunegraphclient.md)[createNetworkFirewall()](class-aws-sdk-method-createnetworkfirewall.md)
+: [NetworkFirewallClient](class-aws-networkfirewall-networkfirewallclient.md)[createNetworkFlowMonitor()](class-aws-sdk-method-createnetworkflowmonitor.md)
+: [NetworkFlowMonitorClient](class-aws-networkflowmonitor-networkflowmonitorclient.md)[createNetworkManager()](class-aws-sdk-method-createnetworkmanager.md)
+: [NetworkManagerClient](class-aws-networkmanager-networkmanagerclient.md)[createNetworkMonitor()](class-aws-sdk-method-createnetworkmonitor.md)
+: [NetworkMonitorClient](class-aws-networkmonitor-networkmonitorclient.md)[createNotifications()](class-aws-sdk-method-createnotifications.md)
+: [NotificationsClient](class-aws-notifications-notificationsclient.md)[createNotificationsContacts()](class-aws-sdk-method-createnotificationscontacts.md)
+: [NotificationsContactsClient](class-aws-notificationscontacts-notificationscontactsclient.md)[createNovaAct()](class-aws-sdk-method-createnovaact.md)
+: [NovaActClient](class-aws-novaact-novaactclient.md)[createOAM()](class-aws-sdk-method-createoam.md)
+: [OAMClient](class-aws-oam-oamclient.md)[createObservabilityAdmin()](class-aws-sdk-method-createobservabilityadmin.md)
+: [ObservabilityAdminClient](class-aws-observabilityadmin-observabilityadminclient.md)[createOdb()](class-aws-sdk-method-createodb.md)
+: [OdbClient](class-aws-odb-odbclient.md)[createOmics()](class-aws-sdk-method-createomics.md)
+: [OmicsClient](class-aws-omics-omicsclient.md)[createOpenSearchServerless()](class-aws-sdk-method-createopensearchserverless.md)
+: [OpenSearchServerlessClient](class-aws-opensearchserverless-opensearchserverlessclient.md)[createOpenSearchService()](class-aws-sdk-method-createopensearchservice.md)
+: [OpenSearchServiceClient](class-aws-opensearchservice-opensearchserviceclient.md)[createOrganizations()](class-aws-sdk-method-createorganizations.md)
+: [OrganizationsClient](class-aws-organizations-organizationsclient.md)[createOSIS()](class-aws-sdk-method-createosis.md)
+: [OSISClient](class-aws-osis-osisclient.md)[createOutposts()](class-aws-sdk-method-createoutposts.md)
+: [OutpostsClient](class-aws-outposts-outpostsclient.md)[createPanorama()](class-aws-sdk-method-createpanorama.md)
+: [PanoramaClient](class-aws-panorama-panoramaclient.md)[createPartnerCentralAccount()](class-aws-sdk-method-createpartnercentralaccount.md)
+: [PartnerCentralAccountClient](class-aws-partnercentralaccount-partnercentralaccountclient.md)[createPartnerCentralBenefits()](class-aws-sdk-method-createpartnercentralbenefits.md)
+: [PartnerCentralBenefitsClient](class-aws-partnercentralbenefits-partnercentralbenefitsclient.md)[createPartnerCentralChannel()](class-aws-sdk-method-createpartnercentralchannel.md)
+: [PartnerCentralChannelClient](class-aws-partnercentralchannel-partnercentralchannelclient.md)[createPartnerCentralSelling()](class-aws-sdk-method-createpartnercentralselling.md)
+: [PartnerCentralSellingClient](class-aws-partnercentralselling-partnercentralsellingclient.md)[createPaymentCryptography()](class-aws-sdk-method-createpaymentcryptography.md)
+: [PaymentCryptographyClient](class-aws-paymentcryptography-paymentcryptographyclient.md)[createPaymentCryptographyData()](class-aws-sdk-method-createpaymentcryptographydata.md)
+: [PaymentCryptographyDataClient](class-aws-paymentcryptographydata-paymentcryptographydataclient.md)[createPcaConnectorAd()](class-aws-sdk-method-createpcaconnectorad.md)
+: [PcaConnectorAdClient](class-aws-pcaconnectorad-pcaconnectoradclient.md)[createPcaConnectorScep()](class-aws-sdk-method-createpcaconnectorscep.md)
+: [PcaConnectorScepClient](class-aws-pcaconnectorscep-pcaconnectorscepclient.md)[createPCS()](class-aws-sdk-method-createpcs.md)
+: [PCSClient](class-aws-pcs-pcsclient.md)[createPersonalize()](class-aws-sdk-method-createpersonalize.md)
+: [PersonalizeClient](class-aws-personalize-personalizeclient.md)[createPersonalizeEvents()](class-aws-sdk-method-createpersonalizeevents.md)
+: [PersonalizeEventsClient](class-aws-personalizeevents-personalizeeventsclient.md)[createPersonalizeRuntime()](class-aws-sdk-method-createpersonalizeruntime.md)
+: [PersonalizeRuntimeClient](class-aws-personalizeruntime-personalizeruntimeclient.md)[createPI()](class-aws-sdk-method-createpi.md)
+: [PIClient](class-aws-pi-piclient.md)[createPinpoint()](class-aws-sdk-method-createpinpoint.md)
+: [PinpointClient](class-aws-pinpoint-pinpointclient.md)[createPinpointEmail()](class-aws-sdk-method-createpinpointemail.md)
+: [PinpointEmailClient](class-aws-pinpointemail-pinpointemailclient.md)[createPinpointSMSVoice()](class-aws-sdk-method-createpinpointsmsvoice.md)
+: [PinpointSMSVoiceClient](class-aws-pinpointsmsvoice-pinpointsmsvoiceclient.md)[createPinpointSMSVoiceV2()](class-aws-sdk-method-createpinpointsmsvoicev2.md)
+: [PinpointSMSVoiceV2Client](class-aws-pinpointsmsvoicev2-pinpointsmsvoicev2client.md)[createPipes()](class-aws-sdk-method-createpipes.md)
+: [PipesClient](class-aws-pipes-pipesclient.md)[createPolly()](class-aws-sdk-method-createpolly.md)
+: [PollyClient](class-aws-polly-pollyclient.md)[createPricing()](class-aws-sdk-method-createpricing.md)
+: [PricingClient](class-aws-pricing-pricingclient.md)[createPrometheusService()](class-aws-sdk-method-createprometheusservice.md)
+: [PrometheusServiceClient](class-aws-prometheusservice-prometheusserviceclient.md)[createProton()](class-aws-sdk-method-createproton.md)
+: [ProtonClient](class-aws-proton-protonclient.md)[createQApps()](class-aws-sdk-method-createqapps.md)
+: [QAppsClient](class-aws-qapps-qappsclient.md)[createQBusiness()](class-aws-sdk-method-createqbusiness.md)
+: [QBusinessClient](class-aws-qbusiness-qbusinessclient.md)[createQConnect()](class-aws-sdk-method-createqconnect.md)
+: [QConnectClient](class-aws-qconnect-qconnectclient.md)[createQuickSight()](class-aws-sdk-method-createquicksight.md)
+: [QuickSightClient](class-aws-quicksight-quicksightclient.md)[createRAM()](class-aws-sdk-method-createram.md)
+: [RAMClient](class-aws-ram-ramclient.md)[createRds()](class-aws-sdk-method-createrds.md)
+: [RdsClient](class-aws-rds-rdsclient.md)[createRDSDataService()](class-aws-sdk-method-createrdsdataservice.md)
+: [RDSDataServiceClient](class-aws-rdsdataservice-rdsdataserviceclient.md)[createRecycleBin()](class-aws-sdk-method-createrecyclebin.md)
+: [RecycleBinClient](class-aws-recyclebin-recyclebinclient.md)[createRedshift()](class-aws-sdk-method-createredshift.md)
+: [RedshiftClient](class-aws-redshift-redshiftclient.md)[createRedshiftDataAPIService()](class-aws-sdk-method-createredshiftdataapiservice.md)
+: [RedshiftDataAPIServiceClient](class-aws-redshiftdataapiservice-redshiftdataapiserviceclient.md)[createRedshiftServerless()](class-aws-sdk-method-createredshiftserverless.md)
+: [RedshiftServerlessClient](class-aws-redshiftserverless-redshiftserverlessclient.md)[createRekognition()](class-aws-sdk-method-createrekognition.md)
+: [RekognitionClient](class-aws-rekognition-rekognitionclient.md)[createRepostspace()](class-aws-sdk-method-createrepostspace.md)
+: [RepostspaceClient](class-aws-repostspace-repostspaceclient.md)[createResilienceHub()](class-aws-sdk-method-createresiliencehub.md)
+: [ResilienceHubClient](class-aws-resiliencehub-resiliencehubclient.md)[createResourceExplorer2()](class-aws-sdk-method-createresourceexplorer2.md)
+: [ResourceExplorer2Client](class-aws-resourceexplorer2-resourceexplorer2client.md)[createResourceGroups()](class-aws-sdk-method-createresourcegroups.md)
+: [ResourceGroupsClient](class-aws-resourcegroups-resourcegroupsclient.md)[createResourceGroupsTaggingAPI()](class-aws-sdk-method-createresourcegroupstaggingapi.md)
+: [ResourceGroupsTaggingAPIClient](class-aws-resourcegroupstaggingapi-resourcegroupstaggingapiclient.md)[createRolesAnywhere()](class-aws-sdk-method-createrolesanywhere.md)
+: [RolesAnywhereClient](class-aws-rolesanywhere-rolesanywhereclient.md)[createRoute53()](class-aws-sdk-method-createroute53.md)
+: [Route53Client](class-aws-route53-route53client.md)[createRoute53Domains()](class-aws-sdk-method-createroute53domains.md)
+: [Route53DomainsClient](class-aws-route53domains-route53domainsclient.md)[createRoute53GlobalResolver()](class-aws-sdk-method-createroute53globalresolver.md)
+: [Route53GlobalResolverClient](class-aws-route53globalresolver-route53globalresolverclient.md)[createRoute53Profiles()](class-aws-sdk-method-createroute53profiles.md)
+: [Route53ProfilesClient](class-aws-route53profiles-route53profilesclient.md)[createRoute53RecoveryCluster()](class-aws-sdk-method-createroute53recoverycluster.md)
+: [Route53RecoveryClusterClient](class-aws-route53recoverycluster-route53recoveryclusterclient.md)[createRoute53RecoveryControlConfig()](class-aws-sdk-method-createroute53recoverycontrolconfig.md)
+: [Route53RecoveryControlConfigClient](class-aws-route53recoverycontrolconfig-route53recoverycontrolconfigclient.md)[createRoute53RecoveryReadiness()](class-aws-sdk-method-createroute53recoveryreadiness.md)
+: [Route53RecoveryReadinessClient](class-aws-route53recoveryreadiness-route53recoveryreadinessclient.md)[createRoute53Resolver()](class-aws-sdk-method-createroute53resolver.md)
+: [Route53ResolverClient](class-aws-route53resolver-route53resolverclient.md)[createRTBFabric()](class-aws-sdk-method-creatertbfabric.md)
+: [RTBFabricClient](class-aws-rtbfabric-rtbfabricclient.md)[createS3()](class-aws-sdk-method-creates3.md)
+: [S3Client](class-aws-s3-s3client.md)[createS3Control()](class-aws-sdk-method-creates3control.md)
+: [S3ControlClient](class-aws-s3control-s3controlclient.md)[createS3Outposts()](class-aws-sdk-method-creates3outposts.md)
+: [S3OutpostsClient](class-aws-s3outposts-s3outpostsclient.md)[createS3Tables()](class-aws-sdk-method-creates3tables.md)
+: [S3TablesClient](class-aws-s3tables-s3tablesclient.md)[createS3Vectors()](class-aws-sdk-method-creates3vectors.md)
+: [S3VectorsClient](class-aws-s3vectors-s3vectorsclient.md)[createSageMaker()](class-aws-sdk-method-createsagemaker.md)
+: [SageMakerClient](class-aws-sagemaker-sagemakerclient.md)[createSagemakerEdgeManager()](class-aws-sdk-method-createsagemakeredgemanager.md)
+: [SagemakerEdgeManagerClient](class-aws-sagemakeredgemanager-sagemakeredgemanagerclient.md)[createSageMakerFeatureStoreRuntime()](class-aws-sdk-method-createsagemakerfeaturestoreruntime.md)
+: [SageMakerFeatureStoreRuntimeClient](class-aws-sagemakerfeaturestoreruntime-sagemakerfeaturestoreruntimeclient.md)[createSageMakerGeospatial()](class-aws-sdk-method-createsagemakergeospatial.md)
+: [SageMakerGeospatialClient](class-aws-sagemakergeospatial-sagemakergeospatialclient.md)[createSageMakerMetrics()](class-aws-sdk-method-createsagemakermetrics.md)
+: [SageMakerMetricsClient](class-aws-sagemakermetrics-sagemakermetricsclient.md)[createSageMakerRuntime()](class-aws-sdk-method-createsagemakerruntime.md)
+: [SageMakerRuntimeClient](class-aws-sagemakerruntime-sagemakerruntimeclient.md)[createSavingsPlans()](class-aws-sdk-method-createsavingsplans.md)
+: [SavingsPlansClient](class-aws-savingsplans-savingsplansclient.md)[createScheduler()](class-aws-sdk-method-createscheduler.md)
+: [SchedulerClient](class-aws-scheduler-schedulerclient.md)[createSchemas()](class-aws-sdk-method-createschemas.md)
+: [SchemasClient](class-aws-schemas-schemasclient.md)[createSecretsManager()](class-aws-sdk-method-createsecretsmanager.md)
+: [SecretsManagerClient](class-aws-secretsmanager-secretsmanagerclient.md)[createSecurityAgent()](class-aws-sdk-method-createsecurityagent.md)
+: [SecurityAgentClient](class-aws-securityagent-securityagentclient.md)[createSecurityHub()](class-aws-sdk-method-createsecurityhub.md)
+: [SecurityHubClient](class-aws-securityhub-securityhubclient.md)[createSecurityIR()](class-aws-sdk-method-createsecurityir.md)
+: [SecurityIRClient](class-aws-securityir-securityirclient.md)[createSecurityLake()](class-aws-sdk-method-createsecuritylake.md)
+: [SecurityLakeClient](class-aws-securitylake-securitylakeclient.md)[createServerlessApplicationRepository()](class-aws-sdk-method-createserverlessapplicationrepository.md)
+: [ServerlessApplicationRepositoryClient](class-aws-serverlessapplicationrepository-serverlessapplicationrepositoryclient.md)[createServiceCatalog()](class-aws-sdk-method-createservicecatalog.md)
+: [ServiceCatalogClient](class-aws-servicecatalog-servicecatalogclient.md)[createServiceDiscovery()](class-aws-sdk-method-createservicediscovery.md)
+: [ServiceDiscoveryClient](class-aws-servicediscovery-servicediscoveryclient.md)[createServiceQuotas()](class-aws-sdk-method-createservicequotas.md)
+: [ServiceQuotasClient](class-aws-servicequotas-servicequotasclient.md)[createSes()](class-aws-sdk-method-createses.md)
+: [SesClient](class-aws-ses-sesclient.md)[createSesV2()](class-aws-sdk-method-createsesv2.md)
+: [SesV2Client](class-aws-sesv2-sesv2client.md)[createSfn()](class-aws-sdk-method-createsfn.md)
+: [SfnClient](class-aws-sfn-sfnclient.md)[createShield()](class-aws-sdk-method-createshield.md)
+: [ShieldClient](class-aws-shield-shieldclient.md)[createsigner()](class-aws-sdk-method-createsigner.md)
+: [signerClient](class-aws-signer-signerclient.md)[createSignerData()](class-aws-sdk-method-createsignerdata.md)
+: [SignerDataClient](class-aws-signerdata-signerdataclient.md)[createSignin()](class-aws-sdk-method-createsignin.md)
+: [SigninClient](class-aws-signin-signinclient.md)[createSimpleDBv2()](class-aws-sdk-method-createsimpledbv2.md)
+: [SimpleDBv2Client](class-aws-simpledbv2-simpledbv2client.md)[createSimSpaceWeaver()](class-aws-sdk-method-createsimspaceweaver.md)
+: [SimSpaceWeaverClient](class-aws-simspaceweaver-simspaceweaverclient.md)[createSnowBall()](class-aws-sdk-method-createsnowball.md)
+: [SnowBallClient](class-aws-snowball-snowballclient.md)[createSnowDeviceManagement()](class-aws-sdk-method-createsnowdevicemanagement.md)
+: [SnowDeviceManagementClient](class-aws-snowdevicemanagement-snowdevicemanagementclient.md)[createSns()](class-aws-sdk-method-createsns.md)
+: [SnsClient](class-aws-sns-snsclient.md)[createSocialMessaging()](class-aws-sdk-method-createsocialmessaging.md)
+: [SocialMessagingClient](class-aws-socialmessaging-socialmessagingclient.md)[createSqs()](class-aws-sdk-method-createsqs.md)
+: [SqsClient](class-aws-sqs-sqsclient.md)[createSsm()](class-aws-sdk-method-createssm.md)
+: [SsmClient](class-aws-ssm-ssmclient.md)[createSSMContacts()](class-aws-sdk-method-createssmcontacts.md)
+: [SSMContactsClient](class-aws-ssmcontacts-ssmcontactsclient.md)[createSSMGuiConnect()](class-aws-sdk-method-createssmguiconnect.md)
+: [SSMGuiConnectClient](class-aws-ssmguiconnect-ssmguiconnectclient.md)[createSSMIncidents()](class-aws-sdk-method-createssmincidents.md)
+: [SSMIncidentsClient](class-aws-ssmincidents-ssmincidentsclient.md)[createSSMQuickSetup()](class-aws-sdk-method-createssmquicksetup.md)
+: [SSMQuickSetupClient](class-aws-ssmquicksetup-ssmquicksetupclient.md)[createSsmSap()](class-aws-sdk-method-createssmsap.md)
+: [SsmSapClient](class-aws-ssmsap-ssmsapclient.md)[createSSO()](class-aws-sdk-method-createsso.md)
+: [SSOClient](class-aws-sso-ssoclient.md)[createSSOAdmin()](class-aws-sdk-method-createssoadmin.md)
+: [SSOAdminClient](class-aws-ssoadmin-ssoadminclient.md)[createSSOOIDC()](class-aws-sdk-method-createssooidc.md)
+: [SSOOIDCClient](class-aws-ssooidc-ssooidcclient.md)[createStorageGateway()](class-aws-sdk-method-createstoragegateway.md)
+: [StorageGatewayClient](class-aws-storagegateway-storagegatewayclient.md)[createSts()](class-aws-sdk-method-creatests.md)
+: [StsClient](class-aws-sts-stsclient.md)[createSupplyChain()](class-aws-sdk-method-createsupplychain.md)
+: [SupplyChainClient](class-aws-supplychain-supplychainclient.md)[createSupport()](class-aws-sdk-method-createsupport.md)
+: [SupportClient](class-aws-support-supportclient.md)[createSupportApp()](class-aws-sdk-method-createsupportapp.md)
+: [SupportAppClient](class-aws-supportapp-supportappclient.md)[createSustainability()](class-aws-sdk-method-createsustainability.md)
+: [SustainabilityClient](class-aws-sustainability-sustainabilityclient.md)[createSwf()](class-aws-sdk-method-createswf.md)
+: [SwfClient](class-aws-swf-swfclient.md)[createSynthetics()](class-aws-sdk-method-createsynthetics.md)
+: [SyntheticsClient](class-aws-synthetics-syntheticsclient.md)[createTaxSettings()](class-aws-sdk-method-createtaxsettings.md)
+: [TaxSettingsClient](class-aws-taxsettings-taxsettingsclient.md)[createTextract()](class-aws-sdk-method-createtextract.md)
+: [TextractClient](class-aws-textract-textractclient.md)[createTimestreamInfluxDB()](class-aws-sdk-method-createtimestreaminfluxdb.md)
+: [TimestreamInfluxDBClient](class-aws-timestreaminfluxdb-timestreaminfluxdbclient.md)[createTimestreamQuery()](class-aws-sdk-method-createtimestreamquery.md)
+: [TimestreamQueryClient](class-aws-timestreamquery-timestreamqueryclient.md)[createTimestreamWrite()](class-aws-sdk-method-createtimestreamwrite.md)
+: [TimestreamWriteClient](class-aws-timestreamwrite-timestreamwriteclient.md)[createTnb()](class-aws-sdk-method-createtnb.md)
+: [TnbClient](class-aws-tnb-tnbclient.md)[createTranscribeService()](class-aws-sdk-method-createtranscribeservice.md)
+: [TranscribeServiceClient](class-aws-transcribeservice-transcribeserviceclient.md)[createTransfer()](class-aws-sdk-method-createtransfer.md)
+: [TransferClient](class-aws-transfer-transferclient.md)[createTranslate()](class-aws-sdk-method-createtranslate.md)
+: [TranslateClient](class-aws-translate-translateclient.md)[createTrustedAdvisor()](class-aws-sdk-method-createtrustedadvisor.md)
+: [TrustedAdvisorClient](class-aws-trustedadvisor-trustedadvisorclient.md)[createUxc()](class-aws-sdk-method-createuxc.md)
+: [UxcClient](class-aws-uxc-uxcclient.md)[createVerifiedPermissions()](class-aws-sdk-method-createverifiedpermissions.md)
+: [VerifiedPermissionsClient](class-aws-verifiedpermissions-verifiedpermissionsclient.md)[createVoiceID()](class-aws-sdk-method-createvoiceid.md)
+: [VoiceIDClient](class-aws-voiceid-voiceidclient.md)[createVPCLattice()](class-aws-sdk-method-createvpclattice.md)
+: [VPCLatticeClient](class-aws-vpclattice-vpclatticeclient.md)[createWaf()](class-aws-sdk-method-createwaf.md)
+: [WafClient](class-aws-waf-wafclient.md)[createWafRegional()](class-aws-sdk-method-createwafregional.md)
+: [WafRegionalClient](class-aws-wafregional-wafregionalclient.md)[createWAFV2()](class-aws-sdk-method-createwafv2.md)
+: [WAFV2Client](class-aws-wafv2-wafv2client.md)[createWellArchitected()](class-aws-sdk-method-createwellarchitected.md)
+: [WellArchitectedClient](class-aws-wellarchitected-wellarchitectedclient.md)[createWickr()](class-aws-sdk-method-createwickr.md)
+: [WickrClient](class-aws-wickr-wickrclient.md)[createWorkDocs()](class-aws-sdk-method-createworkdocs.md)
+: [WorkDocsClient](class-aws-workdocs-workdocsclient.md)[createWorkMail()](class-aws-sdk-method-createworkmail.md)
+: [WorkMailClient](class-aws-workmail-workmailclient.md)[createWorkMailMessageFlow()](class-aws-sdk-method-createworkmailmessageflow.md)
+: [WorkMailMessageFlowClient](class-aws-workmailmessageflow-workmailmessageflowclient.md)[createWorkSpaces()](class-aws-sdk-method-createworkspaces.md)
+: [WorkSpacesClient](class-aws-workspaces-workspacesclient.md)[createWorkspacesInstances()](class-aws-sdk-method-createworkspacesinstances.md)
+: [WorkspacesInstancesClient](class-aws-workspacesinstances-workspacesinstancesclient.md)[createWorkSpacesThinClient()](class-aws-sdk-method-createworkspacesthinclient.md)
+: [WorkSpacesThinClientClient](class-aws-workspacesthinclient-workspacesthinclientclient.md)[createWorkSpacesWeb()](class-aws-sdk-method-createworkspacesweb.md)
+: [WorkSpacesWebClient](class-aws-workspacesweb-workspaceswebclient.md)[createXRay()](class-aws-sdk-method-createxray.md)
+: [XRayClient](class-aws-xray-xrayclient.md)
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#constants)
+### Constants  [header link](class-aws-sdk-constants.md)
 
-#### VERSION  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#constant_VERSION)
+#### VERSION  [header link](class-aws-sdk-constant-version.md)
 
 `
     public
@@ -875,9 +875,9 @@ of extra client settings.[createAccessAnalyzer()](https://docs.aws.amazon.com/aw
     = '3.376.4'
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#methods)
+### Methods  [header link](class-aws-sdk-methods.md)
 
-#### \_\_call()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method___call)
+#### \_\_call()  [header link](class-aws-sdk-method-call.md)
 
 `
     public
@@ -889,7 +889,7 @@ $name
 : mixed$args
 : array<string\|int, mixed>
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-sdk-method-construct.md)
 
 Constructs a new SDK object with an associative array of default
 client settings.
@@ -904,13 +904,13 @@ $args
 : array<string\|int, mixed>
 = \[\]
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method___construct\#tags)
+##### Tags  [header link](class-aws-sdk-method-construct-tags.md)
 
 throwsInvalidArgumentExceptionseeAwsClient::\_\_construct
 
 for a list of available options.
 
-#### copy()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_copy)
+#### copy()  [header link](class-aws-sdk-method-copy.md)
 
 Clone existing SDK instance with ability to pass an associative array
 of extra client settings.
@@ -929,7 +929,7 @@ $args
 
 self
 
-#### createAccessAnalyzer()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createAccessAnalyzer)
+#### createAccessAnalyzer()  [header link](class-aws-sdk-method-createaccessanalyzer.md)
 
 `
     public
@@ -942,9 +942,9 @@ $args = \[\]
 
 ##### Return values
 
-[AccessAnalyzerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AccessAnalyzer.AccessAnalyzerClient.html)
+[AccessAnalyzerClient](class-aws-accessanalyzer-accessanalyzerclient.md)
 
-#### createAccount()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createAccount)
+#### createAccount()  [header link](class-aws-sdk-method-createaccount.md)
 
 `
     public
@@ -957,9 +957,9 @@ $args = \[\]
 
 ##### Return values
 
-[AccountClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Account.AccountClient.html)
+[AccountClient](class-aws-account-accountclient.md)
 
-#### createAcm()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createAcm)
+#### createAcm()  [header link](class-aws-sdk-method-createacm.md)
 
 `
     public
@@ -972,9 +972,9 @@ $args = \[\]
 
 ##### Return values
 
-[AcmClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Acm.AcmClient.html)
+[AcmClient](class-aws-acm-acmclient.md)
 
-#### createACMPCA()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createACMPCA)
+#### createACMPCA()  [header link](class-aws-sdk-method-createacmpca.md)
 
 `
     public
@@ -987,9 +987,9 @@ $args = \[\]
 
 ##### Return values
 
-[ACMPCAClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ACMPCA.ACMPCAClient.html)
+[ACMPCAClient](class-aws-acmpca-acmpcaclient.md)
 
-#### createAIOps()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createAIOps)
+#### createAIOps()  [header link](class-aws-sdk-method-createaiops.md)
 
 `
     public
@@ -1002,9 +1002,9 @@ $args = \[\]
 
 ##### Return values
 
-[AIOpsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AIOps.AIOpsClient.html)
+[AIOpsClient](class-aws-aiops-aiopsclient.md)
 
-#### createAmplify()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createAmplify)
+#### createAmplify()  [header link](class-aws-sdk-method-createamplify.md)
 
 `
     public
@@ -1017,9 +1017,9 @@ $args = \[\]
 
 ##### Return values
 
-[AmplifyClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Amplify.AmplifyClient.html)
+[AmplifyClient](class-aws-amplify-amplifyclient.md)
 
-#### createAmplifyBackend()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createAmplifyBackend)
+#### createAmplifyBackend()  [header link](class-aws-sdk-method-createamplifybackend.md)
 
 `
     public
@@ -1032,9 +1032,9 @@ $args = \[\]
 
 ##### Return values
 
-[AmplifyBackendClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AmplifyBackend.AmplifyBackendClient.html)
+[AmplifyBackendClient](class-aws-amplifybackend-amplifybackendclient.md)
 
-#### createAmplifyUIBuilder()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createAmplifyUIBuilder)
+#### createAmplifyUIBuilder()  [header link](class-aws-sdk-method-createamplifyuibuilder.md)
 
 `
     public
@@ -1047,9 +1047,9 @@ $args = \[\]
 
 ##### Return values
 
-[AmplifyUIBuilderClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AmplifyUIBuilder.AmplifyUIBuilderClient.html)
+[AmplifyUIBuilderClient](class-aws-amplifyuibuilder-amplifyuibuilderclient.md)
 
-#### createApiGateway()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createApiGateway)
+#### createApiGateway()  [header link](class-aws-sdk-method-createapigateway.md)
 
 `
     public
@@ -1062,9 +1062,9 @@ $args = \[\]
 
 ##### Return values
 
-[ApiGatewayClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApiGateway.ApiGatewayClient.html)
+[ApiGatewayClient](class-aws-apigateway-apigatewayclient.md)
 
-#### createApiGatewayManagementApi()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createApiGatewayManagementApi)
+#### createApiGatewayManagementApi()  [header link](class-aws-sdk-method-createapigatewaymanagementapi.md)
 
 `
     public
@@ -1077,9 +1077,9 @@ $args = \[\]
 
 ##### Return values
 
-[ApiGatewayManagementApiClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApiGatewayManagementApi.ApiGatewayManagementApiClient.html)
+[ApiGatewayManagementApiClient](class-aws-apigatewaymanagementapi-apigatewaymanagementapiclient.md)
 
-#### createApiGatewayV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createApiGatewayV2)
+#### createApiGatewayV2()  [header link](class-aws-sdk-method-createapigatewayv2.md)
 
 `
     public
@@ -1092,9 +1092,9 @@ $args = \[\]
 
 ##### Return values
 
-[ApiGatewayV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApiGatewayV2.ApiGatewayV2Client.html)
+[ApiGatewayV2Client](class-aws-apigatewayv2-apigatewayv2client.md)
 
-#### createAppConfig()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createAppConfig)
+#### createAppConfig()  [header link](class-aws-sdk-method-createappconfig.md)
 
 `
     public
@@ -1107,9 +1107,9 @@ $args = \[\]
 
 ##### Return values
 
-[AppConfigClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppConfig.AppConfigClient.html)
+[AppConfigClient](class-aws-appconfig-appconfigclient.md)
 
-#### createAppConfigData()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createAppConfigData)
+#### createAppConfigData()  [header link](class-aws-sdk-method-createappconfigdata.md)
 
 `
     public
@@ -1122,9 +1122,9 @@ $args = \[\]
 
 ##### Return values
 
-[AppConfigDataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppConfigData.AppConfigDataClient.html)
+[AppConfigDataClient](class-aws-appconfigdata-appconfigdataclient.md)
 
-#### createAppFabric()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createAppFabric)
+#### createAppFabric()  [header link](class-aws-sdk-method-createappfabric.md)
 
 `
     public
@@ -1137,9 +1137,9 @@ $args = \[\]
 
 ##### Return values
 
-[AppFabricClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppFabric.AppFabricClient.html)
+[AppFabricClient](class-aws-appfabric-appfabricclient.md)
 
-#### createAppflow()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createAppflow)
+#### createAppflow()  [header link](class-aws-sdk-method-createappflow.md)
 
 `
     public
@@ -1152,9 +1152,9 @@ $args = \[\]
 
 ##### Return values
 
-[AppflowClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Appflow.AppflowClient.html)
+[AppflowClient](class-aws-appflow-appflowclient.md)
 
-#### createAppIntegrationsService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createAppIntegrationsService)
+#### createAppIntegrationsService()  [header link](class-aws-sdk-method-createappintegrationsservice.md)
 
 `
     public
@@ -1167,9 +1167,9 @@ $args = \[\]
 
 ##### Return values
 
-[AppIntegrationsServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppIntegrationsService.AppIntegrationsServiceClient.html)
+[AppIntegrationsServiceClient](class-aws-appintegrationsservice-appintegrationsserviceclient.md)
 
-#### createApplicationAutoScaling()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createApplicationAutoScaling)
+#### createApplicationAutoScaling()  [header link](class-aws-sdk-method-createapplicationautoscaling.md)
 
 `
     public
@@ -1182,9 +1182,9 @@ $args = \[\]
 
 ##### Return values
 
-[ApplicationAutoScalingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationAutoScaling.ApplicationAutoScalingClient.html)
+[ApplicationAutoScalingClient](class-aws-applicationautoscaling-applicationautoscalingclient.md)
 
-#### createApplicationCostProfiler()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createApplicationCostProfiler)
+#### createApplicationCostProfiler()  [header link](class-aws-sdk-method-createapplicationcostprofiler.md)
 
 `
     public
@@ -1197,9 +1197,9 @@ $args = \[\]
 
 ##### Return values
 
-[ApplicationCostProfilerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationCostProfiler.ApplicationCostProfilerClient.html)
+[ApplicationCostProfilerClient](class-aws-applicationcostprofiler-applicationcostprofilerclient.md)
 
-#### createApplicationDiscoveryService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createApplicationDiscoveryService)
+#### createApplicationDiscoveryService()  [header link](class-aws-sdk-method-createapplicationdiscoveryservice.md)
 
 `
     public
@@ -1212,9 +1212,9 @@ $args = \[\]
 
 ##### Return values
 
-[ApplicationDiscoveryServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationDiscoveryService.ApplicationDiscoveryServiceClient.html)
+[ApplicationDiscoveryServiceClient](class-aws-applicationdiscoveryservice-applicationdiscoveryserviceclient.md)
 
-#### createApplicationInsights()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createApplicationInsights)
+#### createApplicationInsights()  [header link](class-aws-sdk-method-createapplicationinsights.md)
 
 `
     public
@@ -1227,9 +1227,9 @@ $args = \[\]
 
 ##### Return values
 
-[ApplicationInsightsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationInsights.ApplicationInsightsClient.html)
+[ApplicationInsightsClient](class-aws-applicationinsights-applicationinsightsclient.md)
 
-#### createApplicationSignals()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createApplicationSignals)
+#### createApplicationSignals()  [header link](class-aws-sdk-method-createapplicationsignals.md)
 
 `
     public
@@ -1242,9 +1242,9 @@ $args = \[\]
 
 ##### Return values
 
-[ApplicationSignalsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationSignals.ApplicationSignalsClient.html)
+[ApplicationSignalsClient](class-aws-applicationsignals-applicationsignalsclient.md)
 
-#### createAppMesh()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createAppMesh)
+#### createAppMesh()  [header link](class-aws-sdk-method-createappmesh.md)
 
 `
     public
@@ -1257,9 +1257,9 @@ $args = \[\]
 
 ##### Return values
 
-[AppMeshClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppMesh.AppMeshClient.html)
+[AppMeshClient](class-aws-appmesh-appmeshclient.md)
 
-#### createAppRegistry()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createAppRegistry)
+#### createAppRegistry()  [header link](class-aws-sdk-method-createappregistry.md)
 
 `
     public
@@ -1272,9 +1272,9 @@ $args = \[\]
 
 ##### Return values
 
-[AppRegistryClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppRegistry.AppRegistryClient.html)
+[AppRegistryClient](class-aws-appregistry-appregistryclient.md)
 
-#### createAppRunner()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createAppRunner)
+#### createAppRunner()  [header link](class-aws-sdk-method-createapprunner.md)
 
 `
     public
@@ -1287,9 +1287,9 @@ $args = \[\]
 
 ##### Return values
 
-[AppRunnerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppRunner.AppRunnerClient.html)
+[AppRunnerClient](class-aws-apprunner-apprunnerclient.md)
 
-#### createAppstream()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createAppstream)
+#### createAppstream()  [header link](class-aws-sdk-method-createappstream.md)
 
 `
     public
@@ -1302,9 +1302,9 @@ $args = \[\]
 
 ##### Return values
 
-[AppstreamClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Appstream.AppstreamClient.html)
+[AppstreamClient](class-aws-appstream-appstreamclient.md)
 
-#### createAppSync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createAppSync)
+#### createAppSync()  [header link](class-aws-sdk-method-createappsync.md)
 
 `
     public
@@ -1317,9 +1317,9 @@ $args = \[\]
 
 ##### Return values
 
-[AppSyncClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AppSync.AppSyncClient.html)
+[AppSyncClient](class-aws-appsync-appsyncclient.md)
 
-#### createARCRegionSwitch()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createARCRegionSwitch)
+#### createARCRegionSwitch()  [header link](class-aws-sdk-method-createarcregionswitch.md)
 
 `
     public
@@ -1332,9 +1332,9 @@ $args = \[\]
 
 ##### Return values
 
-[ARCRegionSwitchClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ARCRegionSwitch.ARCRegionSwitchClient.html)
+[ARCRegionSwitchClient](class-aws-arcregionswitch-arcregionswitchclient.md)
 
-#### createARCZonalShift()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createARCZonalShift)
+#### createARCZonalShift()  [header link](class-aws-sdk-method-createarczonalshift.md)
 
 `
     public
@@ -1347,9 +1347,9 @@ $args = \[\]
 
 ##### Return values
 
-[ARCZonalShiftClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ARCZonalShift.ARCZonalShiftClient.html)
+[ARCZonalShiftClient](class-aws-arczonalshift-arczonalshiftclient.md)
 
-#### createArtifact()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createArtifact)
+#### createArtifact()  [header link](class-aws-sdk-method-createartifact.md)
 
 `
     public
@@ -1362,9 +1362,9 @@ $args = \[\]
 
 ##### Return values
 
-[ArtifactClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Artifact.ArtifactClient.html)
+[ArtifactClient](class-aws-artifact-artifactclient.md)
 
-#### createAthena()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createAthena)
+#### createAthena()  [header link](class-aws-sdk-method-createathena.md)
 
 `
     public
@@ -1377,9 +1377,9 @@ $args = \[\]
 
 ##### Return values
 
-[AthenaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Athena.AthenaClient.html)
+[AthenaClient](class-aws-athena-athenaclient.md)
 
-#### createAuditManager()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createAuditManager)
+#### createAuditManager()  [header link](class-aws-sdk-method-createauditmanager.md)
 
 `
     public
@@ -1392,9 +1392,9 @@ $args = \[\]
 
 ##### Return values
 
-[AuditManagerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AuditManager.AuditManagerClient.html)
+[AuditManagerClient](class-aws-auditmanager-auditmanagerclient.md)
 
-#### createAugmentedAIRuntime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createAugmentedAIRuntime)
+#### createAugmentedAIRuntime()  [header link](class-aws-sdk-method-createaugmentedairuntime.md)
 
 `
     public
@@ -1407,9 +1407,9 @@ $args = \[\]
 
 ##### Return values
 
-[AugmentedAIRuntimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AugmentedAIRuntime.AugmentedAIRuntimeClient.html)
+[AugmentedAIRuntimeClient](class-aws-augmentedairuntime-augmentedairuntimeclient.md)
 
-#### createAutoScaling()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createAutoScaling)
+#### createAutoScaling()  [header link](class-aws-sdk-method-createautoscaling.md)
 
 `
     public
@@ -1422,9 +1422,9 @@ $args = \[\]
 
 ##### Return values
 
-[AutoScalingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AutoScaling.AutoScalingClient.html)
+[AutoScalingClient](class-aws-autoscaling-autoscalingclient.md)
 
-#### createAutoScalingPlans()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createAutoScalingPlans)
+#### createAutoScalingPlans()  [header link](class-aws-sdk-method-createautoscalingplans.md)
 
 `
     public
@@ -1437,9 +1437,9 @@ $args = \[\]
 
 ##### Return values
 
-[AutoScalingPlansClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AutoScalingPlans.AutoScalingPlansClient.html)
+[AutoScalingPlansClient](class-aws-autoscalingplans-autoscalingplansclient.md)
 
-#### createB2bi()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createB2bi)
+#### createB2bi()  [header link](class-aws-sdk-method-createb2bi.md)
 
 `
     public
@@ -1452,9 +1452,9 @@ $args = \[\]
 
 ##### Return values
 
-[B2biClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.B2bi.B2biClient.html)
+[B2biClient](class-aws-b2bi-b2biclient.md)
 
-#### createBackup()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createBackup)
+#### createBackup()  [header link](class-aws-sdk-method-createbackup.md)
 
 `
     public
@@ -1467,9 +1467,9 @@ $args = \[\]
 
 ##### Return values
 
-[BackupClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Backup.BackupClient.html)
+[BackupClient](class-aws-backup-backupclient.md)
 
-#### createBackupGateway()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createBackupGateway)
+#### createBackupGateway()  [header link](class-aws-sdk-method-createbackupgateway.md)
 
 `
     public
@@ -1482,9 +1482,9 @@ $args = \[\]
 
 ##### Return values
 
-[BackupGatewayClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BackupGateway.BackupGatewayClient.html)
+[BackupGatewayClient](class-aws-backupgateway-backupgatewayclient.md)
 
-#### createBackupSearch()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createBackupSearch)
+#### createBackupSearch()  [header link](class-aws-sdk-method-createbackupsearch.md)
 
 `
     public
@@ -1497,9 +1497,9 @@ $args = \[\]
 
 ##### Return values
 
-[BackupSearchClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BackupSearch.BackupSearchClient.html)
+[BackupSearchClient](class-aws-backupsearch-backupsearchclient.md)
 
-#### createBatch()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createBatch)
+#### createBatch()  [header link](class-aws-sdk-method-createbatch.md)
 
 `
     public
@@ -1512,9 +1512,9 @@ $args = \[\]
 
 ##### Return values
 
-[BatchClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Batch.BatchClient.html)
+[BatchClient](class-aws-batch-batchclient.md)
 
-#### createBCMDashboards()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createBCMDashboards)
+#### createBCMDashboards()  [header link](class-aws-sdk-method-createbcmdashboards.md)
 
 `
     public
@@ -1527,9 +1527,9 @@ $args = \[\]
 
 ##### Return values
 
-[BCMDashboardsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BCMDashboards.BCMDashboardsClient.html)
+[BCMDashboardsClient](class-aws-bcmdashboards-bcmdashboardsclient.md)
 
-#### createBCMDataExports()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createBCMDataExports)
+#### createBCMDataExports()  [header link](class-aws-sdk-method-createbcmdataexports.md)
 
 `
     public
@@ -1542,9 +1542,9 @@ $args = \[\]
 
 ##### Return values
 
-[BCMDataExportsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BCMDataExports.BCMDataExportsClient.html)
+[BCMDataExportsClient](class-aws-bcmdataexports-bcmdataexportsclient.md)
 
-#### createBCMPricingCalculator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createBCMPricingCalculator)
+#### createBCMPricingCalculator()  [header link](class-aws-sdk-method-createbcmpricingcalculator.md)
 
 `
     public
@@ -1557,9 +1557,9 @@ $args = \[\]
 
 ##### Return values
 
-[BCMPricingCalculatorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BCMPricingCalculator.BCMPricingCalculatorClient.html)
+[BCMPricingCalculatorClient](class-aws-bcmpricingcalculator-bcmpricingcalculatorclient.md)
 
-#### createBCMRecommendedActions()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createBCMRecommendedActions)
+#### createBCMRecommendedActions()  [header link](class-aws-sdk-method-createbcmrecommendedactions.md)
 
 `
     public
@@ -1572,9 +1572,9 @@ $args = \[\]
 
 ##### Return values
 
-[BCMRecommendedActionsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BCMRecommendedActions.BCMRecommendedActionsClient.html)
+[BCMRecommendedActionsClient](class-aws-bcmrecommendedactions-bcmrecommendedactionsclient.md)
 
-#### createBedrock()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createBedrock)
+#### createBedrock()  [header link](class-aws-sdk-method-createbedrock.md)
 
 `
     public
@@ -1587,9 +1587,9 @@ $args = \[\]
 
 ##### Return values
 
-[BedrockClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Bedrock.BedrockClient.html)
+[BedrockClient](class-aws-bedrock-bedrockclient.md)
 
-#### createBedrockAgent()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createBedrockAgent)
+#### createBedrockAgent()  [header link](class-aws-sdk-method-createbedrockagent.md)
 
 `
     public
@@ -1602,9 +1602,9 @@ $args = \[\]
 
 ##### Return values
 
-[BedrockAgentClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockAgent.BedrockAgentClient.html)
+[BedrockAgentClient](class-aws-bedrockagent-bedrockagentclient.md)
 
-#### createBedrockAgentCore()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createBedrockAgentCore)
+#### createBedrockAgentCore()  [header link](class-aws-sdk-method-createbedrockagentcore.md)
 
 `
     public
@@ -1617,9 +1617,9 @@ $args = \[\]
 
 ##### Return values
 
-[BedrockAgentCoreClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockAgentCore.BedrockAgentCoreClient.html)
+[BedrockAgentCoreClient](class-aws-bedrockagentcore-bedrockagentcoreclient.md)
 
-#### createBedrockAgentCoreControl()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createBedrockAgentCoreControl)
+#### createBedrockAgentCoreControl()  [header link](class-aws-sdk-method-createbedrockagentcorecontrol.md)
 
 `
     public
@@ -1632,9 +1632,9 @@ $args = \[\]
 
 ##### Return values
 
-[BedrockAgentCoreControlClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockAgentCoreControl.BedrockAgentCoreControlClient.html)
+[BedrockAgentCoreControlClient](class-aws-bedrockagentcorecontrol-bedrockagentcorecontrolclient.md)
 
-#### createBedrockAgentRuntime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createBedrockAgentRuntime)
+#### createBedrockAgentRuntime()  [header link](class-aws-sdk-method-createbedrockagentruntime.md)
 
 `
     public
@@ -1647,9 +1647,9 @@ $args = \[\]
 
 ##### Return values
 
-[BedrockAgentRuntimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockAgentRuntime.BedrockAgentRuntimeClient.html)
+[BedrockAgentRuntimeClient](class-aws-bedrockagentruntime-bedrockagentruntimeclient.md)
 
-#### createBedrockDataAutomation()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createBedrockDataAutomation)
+#### createBedrockDataAutomation()  [header link](class-aws-sdk-method-createbedrockdataautomation.md)
 
 `
     public
@@ -1662,9 +1662,9 @@ $args = \[\]
 
 ##### Return values
 
-[BedrockDataAutomationClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockDataAutomation.BedrockDataAutomationClient.html)
+[BedrockDataAutomationClient](class-aws-bedrockdataautomation-bedrockdataautomationclient.md)
 
-#### createBedrockDataAutomationRuntime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createBedrockDataAutomationRuntime)
+#### createBedrockDataAutomationRuntime()  [header link](class-aws-sdk-method-createbedrockdataautomationruntime.md)
 
 `
     public
@@ -1677,9 +1677,9 @@ $args = \[\]
 
 ##### Return values
 
-[BedrockDataAutomationRuntimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockDataAutomationRuntime.BedrockDataAutomationRuntimeClient.html)
+[BedrockDataAutomationRuntimeClient](class-aws-bedrockdataautomationruntime-bedrockdataautomationruntimeclient.md)
 
-#### createBedrockRuntime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createBedrockRuntime)
+#### createBedrockRuntime()  [header link](class-aws-sdk-method-createbedrockruntime.md)
 
 `
     public
@@ -1692,9 +1692,9 @@ $args = \[\]
 
 ##### Return values
 
-[BedrockRuntimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockRuntime.BedrockRuntimeClient.html)
+[BedrockRuntimeClient](class-aws-bedrockruntime-bedrockruntimeclient.md)
 
-#### createBilling()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createBilling)
+#### createBilling()  [header link](class-aws-sdk-method-createbilling.md)
 
 `
     public
@@ -1707,9 +1707,9 @@ $args = \[\]
 
 ##### Return values
 
-[BillingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Billing.BillingClient.html)
+[BillingClient](class-aws-billing-billingclient.md)
 
-#### createBillingConductor()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createBillingConductor)
+#### createBillingConductor()  [header link](class-aws-sdk-method-createbillingconductor.md)
 
 `
     public
@@ -1722,9 +1722,9 @@ $args = \[\]
 
 ##### Return values
 
-[BillingConductorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BillingConductor.BillingConductorClient.html)
+[BillingConductorClient](class-aws-billingconductor-billingconductorclient.md)
 
-#### createBraket()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createBraket)
+#### createBraket()  [header link](class-aws-sdk-method-createbraket.md)
 
 `
     public
@@ -1737,9 +1737,9 @@ $args = \[\]
 
 ##### Return values
 
-[BraketClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Braket.BraketClient.html)
+[BraketClient](class-aws-braket-braketclient.md)
 
-#### createBudgets()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createBudgets)
+#### createBudgets()  [header link](class-aws-sdk-method-createbudgets.md)
 
 `
     public
@@ -1752,9 +1752,9 @@ $args = \[\]
 
 ##### Return values
 
-[BudgetsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Budgets.BudgetsClient.html)
+[BudgetsClient](class-aws-budgets-budgetsclient.md)
 
-#### createChatbot()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createChatbot)
+#### createChatbot()  [header link](class-aws-sdk-method-createchatbot.md)
 
 `
     public
@@ -1767,9 +1767,9 @@ $args = \[\]
 
 ##### Return values
 
-[ChatbotClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Chatbot.ChatbotClient.html)
+[ChatbotClient](class-aws-chatbot-chatbotclient.md)
 
-#### createChime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createChime)
+#### createChime()  [header link](class-aws-sdk-method-createchime.md)
 
 `
     public
@@ -1782,9 +1782,9 @@ $args = \[\]
 
 ##### Return values
 
-[ChimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Chime.ChimeClient.html)
+[ChimeClient](class-aws-chime-chimeclient.md)
 
-#### createChimeSDKIdentity()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createChimeSDKIdentity)
+#### createChimeSDKIdentity()  [header link](class-aws-sdk-method-createchimesdkidentity.md)
 
 `
     public
@@ -1797,9 +1797,9 @@ $args = \[\]
 
 ##### Return values
 
-[ChimeSDKIdentityClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKIdentity.ChimeSDKIdentityClient.html)
+[ChimeSDKIdentityClient](class-aws-chimesdkidentity-chimesdkidentityclient.md)
 
-#### createChimeSDKMediaPipelines()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createChimeSDKMediaPipelines)
+#### createChimeSDKMediaPipelines()  [header link](class-aws-sdk-method-createchimesdkmediapipelines.md)
 
 `
     public
@@ -1812,9 +1812,9 @@ $args = \[\]
 
 ##### Return values
 
-[ChimeSDKMediaPipelinesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKMediaPipelines.ChimeSDKMediaPipelinesClient.html)
+[ChimeSDKMediaPipelinesClient](class-aws-chimesdkmediapipelines-chimesdkmediapipelinesclient.md)
 
-#### createChimeSDKMeetings()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createChimeSDKMeetings)
+#### createChimeSDKMeetings()  [header link](class-aws-sdk-method-createchimesdkmeetings.md)
 
 `
     public
@@ -1827,9 +1827,9 @@ $args = \[\]
 
 ##### Return values
 
-[ChimeSDKMeetingsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKMeetings.ChimeSDKMeetingsClient.html)
+[ChimeSDKMeetingsClient](class-aws-chimesdkmeetings-chimesdkmeetingsclient.md)
 
-#### createChimeSDKMessaging()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createChimeSDKMessaging)
+#### createChimeSDKMessaging()  [header link](class-aws-sdk-method-createchimesdkmessaging.md)
 
 `
     public
@@ -1842,9 +1842,9 @@ $args = \[\]
 
 ##### Return values
 
-[ChimeSDKMessagingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKMessaging.ChimeSDKMessagingClient.html)
+[ChimeSDKMessagingClient](class-aws-chimesdkmessaging-chimesdkmessagingclient.md)
 
-#### createChimeSDKVoice()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createChimeSDKVoice)
+#### createChimeSDKVoice()  [header link](class-aws-sdk-method-createchimesdkvoice.md)
 
 `
     public
@@ -1857,9 +1857,9 @@ $args = \[\]
 
 ##### Return values
 
-[ChimeSDKVoiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKVoice.ChimeSDKVoiceClient.html)
+[ChimeSDKVoiceClient](class-aws-chimesdkvoice-chimesdkvoiceclient.md)
 
-#### createCleanRooms()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCleanRooms)
+#### createCleanRooms()  [header link](class-aws-sdk-method-createcleanrooms.md)
 
 `
     public
@@ -1872,9 +1872,9 @@ $args = \[\]
 
 ##### Return values
 
-[CleanRoomsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CleanRooms.CleanRoomsClient.html)
+[CleanRoomsClient](class-aws-cleanrooms-cleanroomsclient.md)
 
-#### createCleanRoomsML()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCleanRoomsML)
+#### createCleanRoomsML()  [header link](class-aws-sdk-method-createcleanroomsml.md)
 
 `
     public
@@ -1887,9 +1887,9 @@ $args = \[\]
 
 ##### Return values
 
-[CleanRoomsMLClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CleanRoomsML.CleanRoomsMLClient.html)
+[CleanRoomsMLClient](class-aws-cleanroomsml-cleanroomsmlclient.md)
 
-#### createClient()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createClient)
+#### createClient()  [header link](class-aws-sdk-method-createclient.md)
 
 Get a client by name using an array of constructor options.
 
@@ -1910,7 +1910,7 @@ $args
 
 Arguments to configure the client.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createClient\#tags)
+##### Tags  [header link](class-aws-sdk-method-createclient-tags.md)
 
 throwsInvalidArgumentException
 
@@ -1925,7 +1925,7 @@ for a list of available options for args.
 
 [AwsClientInterface](class-aws-awsclientinterface.md)
 
-#### createCloud9()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCloud9)
+#### createCloud9()  [header link](class-aws-sdk-method-createcloud9.md)
 
 `
     public
@@ -1938,9 +1938,9 @@ $args = \[\]
 
 ##### Return values
 
-[Cloud9Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Cloud9.Cloud9Client.html)
+[Cloud9Client](class-aws-cloud9-cloud9client.md)
 
-#### createCloudControlApi()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCloudControlApi)
+#### createCloudControlApi()  [header link](class-aws-sdk-method-createcloudcontrolapi.md)
 
 `
     public
@@ -1953,9 +1953,9 @@ $args = \[\]
 
 ##### Return values
 
-[CloudControlApiClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudControlApi.CloudControlApiClient.html)
+[CloudControlApiClient](class-aws-cloudcontrolapi-cloudcontrolapiclient.md)
 
-#### createCloudDirectory()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCloudDirectory)
+#### createCloudDirectory()  [header link](class-aws-sdk-method-createclouddirectory.md)
 
 `
     public
@@ -1968,9 +1968,9 @@ $args = \[\]
 
 ##### Return values
 
-[CloudDirectoryClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudDirectory.CloudDirectoryClient.html)
+[CloudDirectoryClient](class-aws-clouddirectory-clouddirectoryclient.md)
 
-#### createCloudFormation()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCloudFormation)
+#### createCloudFormation()  [header link](class-aws-sdk-method-createcloudformation.md)
 
 `
     public
@@ -1983,9 +1983,9 @@ $args = \[\]
 
 ##### Return values
 
-[CloudFormationClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFormation.CloudFormationClient.html)
+[CloudFormationClient](class-aws-cloudformation-cloudformationclient.md)
 
-#### createCloudFront()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCloudFront)
+#### createCloudFront()  [header link](class-aws-sdk-method-createcloudfront.md)
 
 `
     public
@@ -1998,9 +1998,9 @@ $args = \[\]
 
 ##### Return values
 
-[CloudFrontClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.CloudFrontClient.html)
+[CloudFrontClient](class-aws-cloudfront-cloudfrontclient.md)
 
-#### createCloudFrontKeyValueStore()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCloudFrontKeyValueStore)
+#### createCloudFrontKeyValueStore()  [header link](class-aws-sdk-method-createcloudfrontkeyvaluestore.md)
 
 `
     public
@@ -2013,9 +2013,9 @@ $args = \[\]
 
 ##### Return values
 
-[CloudFrontKeyValueStoreClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFrontKeyValueStore.CloudFrontKeyValueStoreClient.html)
+[CloudFrontKeyValueStoreClient](class-aws-cloudfrontkeyvaluestore-cloudfrontkeyvaluestoreclient.md)
 
-#### createCloudHsm()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCloudHsm)
+#### createCloudHsm()  [header link](class-aws-sdk-method-createcloudhsm.md)
 
 `
     public
@@ -2028,9 +2028,9 @@ $args = \[\]
 
 ##### Return values
 
-[CloudHsmClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudHsm.CloudHsmClient.html)
+[CloudHsmClient](class-aws-cloudhsm-cloudhsmclient.md)
 
-#### createCloudHSMV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCloudHSMV2)
+#### createCloudHSMV2()  [header link](class-aws-sdk-method-createcloudhsmv2.md)
 
 `
     public
@@ -2043,9 +2043,9 @@ $args = \[\]
 
 ##### Return values
 
-[CloudHSMV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudHSMV2.CloudHSMV2Client.html)
+[CloudHSMV2Client](class-aws-cloudhsmv2-cloudhsmv2client.md)
 
-#### createCloudSearch()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCloudSearch)
+#### createCloudSearch()  [header link](class-aws-sdk-method-createcloudsearch.md)
 
 `
     public
@@ -2058,9 +2058,9 @@ $args = \[\]
 
 ##### Return values
 
-[CloudSearchClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearch.CloudSearchClient.html)
+[CloudSearchClient](class-aws-cloudsearch-cloudsearchclient.md)
 
-#### createCloudSearchDomain()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCloudSearchDomain)
+#### createCloudSearchDomain()  [header link](class-aws-sdk-method-createcloudsearchdomain.md)
 
 `
     public
@@ -2073,9 +2073,9 @@ $args = \[\]
 
 ##### Return values
 
-[CloudSearchDomainClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearchDomain.CloudSearchDomainClient.html)
+[CloudSearchDomainClient](class-aws-cloudsearchdomain-cloudsearchdomainclient.md)
 
-#### createCloudTrail()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCloudTrail)
+#### createCloudTrail()  [header link](class-aws-sdk-method-createcloudtrail.md)
 
 `
     public
@@ -2088,9 +2088,9 @@ $args = \[\]
 
 ##### Return values
 
-[CloudTrailClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.CloudTrailClient.html)
+[CloudTrailClient](class-aws-cloudtrail-cloudtrailclient.md)
 
-#### createCloudTrailData()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCloudTrailData)
+#### createCloudTrailData()  [header link](class-aws-sdk-method-createcloudtraildata.md)
 
 `
     public
@@ -2103,9 +2103,9 @@ $args = \[\]
 
 ##### Return values
 
-[CloudTrailDataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrailData.CloudTrailDataClient.html)
+[CloudTrailDataClient](class-aws-cloudtraildata-cloudtraildataclient.md)
 
-#### createCloudWatch()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCloudWatch)
+#### createCloudWatch()  [header link](class-aws-sdk-method-createcloudwatch.md)
 
 `
     public
@@ -2118,9 +2118,9 @@ $args = \[\]
 
 ##### Return values
 
-[CloudWatchClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudWatch.CloudWatchClient.html)
+[CloudWatchClient](class-aws-cloudwatch-cloudwatchclient.md)
 
-#### createCloudWatchEvents()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCloudWatchEvents)
+#### createCloudWatchEvents()  [header link](class-aws-sdk-method-createcloudwatchevents.md)
 
 `
     public
@@ -2133,9 +2133,9 @@ $args = \[\]
 
 ##### Return values
 
-[CloudWatchEventsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudWatchEvents.CloudWatchEventsClient.html)
+[CloudWatchEventsClient](class-aws-cloudwatchevents-cloudwatcheventsclient.md)
 
-#### createCloudWatchLogs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCloudWatchLogs)
+#### createCloudWatchLogs()  [header link](class-aws-sdk-method-createcloudwatchlogs.md)
 
 `
     public
@@ -2148,9 +2148,9 @@ $args = \[\]
 
 ##### Return values
 
-[CloudWatchLogsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudWatchLogs.CloudWatchLogsClient.html)
+[CloudWatchLogsClient](class-aws-cloudwatchlogs-cloudwatchlogsclient.md)
 
-#### createCloudWatchRUM()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCloudWatchRUM)
+#### createCloudWatchRUM()  [header link](class-aws-sdk-method-createcloudwatchrum.md)
 
 `
     public
@@ -2163,9 +2163,9 @@ $args = \[\]
 
 ##### Return values
 
-[CloudWatchRUMClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudWatchRUM.CloudWatchRUMClient.html)
+[CloudWatchRUMClient](class-aws-cloudwatchrum-cloudwatchrumclient.md)
 
-#### createCodeArtifact()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCodeArtifact)
+#### createCodeArtifact()  [header link](class-aws-sdk-method-createcodeartifact.md)
 
 `
     public
@@ -2178,9 +2178,9 @@ $args = \[\]
 
 ##### Return values
 
-[CodeArtifactClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeArtifact.CodeArtifactClient.html)
+[CodeArtifactClient](class-aws-codeartifact-codeartifactclient.md)
 
-#### createCodeBuild()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCodeBuild)
+#### createCodeBuild()  [header link](class-aws-sdk-method-createcodebuild.md)
 
 `
     public
@@ -2193,9 +2193,9 @@ $args = \[\]
 
 ##### Return values
 
-[CodeBuildClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeBuild.CodeBuildClient.html)
+[CodeBuildClient](class-aws-codebuild-codebuildclient.md)
 
-#### createCodeCatalyst()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCodeCatalyst)
+#### createCodeCatalyst()  [header link](class-aws-sdk-method-createcodecatalyst.md)
 
 `
     public
@@ -2208,9 +2208,9 @@ $args = \[\]
 
 ##### Return values
 
-[CodeCatalystClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeCatalyst.CodeCatalystClient.html)
+[CodeCatalystClient](class-aws-codecatalyst-codecatalystclient.md)
 
-#### createCodeCommit()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCodeCommit)
+#### createCodeCommit()  [header link](class-aws-sdk-method-createcodecommit.md)
 
 `
     public
@@ -2223,9 +2223,9 @@ $args = \[\]
 
 ##### Return values
 
-[CodeCommitClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeCommit.CodeCommitClient.html)
+[CodeCommitClient](class-aws-codecommit-codecommitclient.md)
 
-#### createCodeConnections()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCodeConnections)
+#### createCodeConnections()  [header link](class-aws-sdk-method-createcodeconnections.md)
 
 `
     public
@@ -2238,9 +2238,9 @@ $args = \[\]
 
 ##### Return values
 
-[CodeConnectionsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeConnections.CodeConnectionsClient.html)
+[CodeConnectionsClient](class-aws-codeconnections-codeconnectionsclient.md)
 
-#### createCodeDeploy()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCodeDeploy)
+#### createCodeDeploy()  [header link](class-aws-sdk-method-createcodedeploy.md)
 
 `
     public
@@ -2253,9 +2253,9 @@ $args = \[\]
 
 ##### Return values
 
-[CodeDeployClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeDeploy.CodeDeployClient.html)
+[CodeDeployClient](class-aws-codedeploy-codedeployclient.md)
 
-#### createCodeGuruProfiler()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCodeGuruProfiler)
+#### createCodeGuruProfiler()  [header link](class-aws-sdk-method-createcodeguruprofiler.md)
 
 `
     public
@@ -2268,9 +2268,9 @@ $args = \[\]
 
 ##### Return values
 
-[CodeGuruProfilerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruProfiler.CodeGuruProfilerClient.html)
+[CodeGuruProfilerClient](class-aws-codeguruprofiler-codeguruprofilerclient.md)
 
-#### createCodeGuruReviewer()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCodeGuruReviewer)
+#### createCodeGuruReviewer()  [header link](class-aws-sdk-method-createcodegurureviewer.md)
 
 `
     public
@@ -2283,9 +2283,9 @@ $args = \[\]
 
 ##### Return values
 
-[CodeGuruReviewerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruReviewer.CodeGuruReviewerClient.html)
+[CodeGuruReviewerClient](class-aws-codegurureviewer-codegurureviewerclient.md)
 
-#### createCodeGuruSecurity()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCodeGuruSecurity)
+#### createCodeGuruSecurity()  [header link](class-aws-sdk-method-createcodegurusecurity.md)
 
 `
     public
@@ -2298,9 +2298,9 @@ $args = \[\]
 
 ##### Return values
 
-[CodeGuruSecurityClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeGuruSecurity.CodeGuruSecurityClient.html)
+[CodeGuruSecurityClient](class-aws-codegurusecurity-codegurusecurityclient.md)
 
-#### createCodePipeline()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCodePipeline)
+#### createCodePipeline()  [header link](class-aws-sdk-method-createcodepipeline.md)
 
 `
     public
@@ -2313,9 +2313,9 @@ $args = \[\]
 
 ##### Return values
 
-[CodePipelineClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodePipeline.CodePipelineClient.html)
+[CodePipelineClient](class-aws-codepipeline-codepipelineclient.md)
 
-#### createCodeStarconnections()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCodeStarconnections)
+#### createCodeStarconnections()  [header link](class-aws-sdk-method-createcodestarconnections.md)
 
 `
     public
@@ -2328,9 +2328,9 @@ $args = \[\]
 
 ##### Return values
 
-[CodeStarconnectionsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeStarconnections.CodeStarconnectionsClient.html)
+[CodeStarconnectionsClient](class-aws-codestarconnections-codestarconnectionsclient.md)
 
-#### createCodeStarNotifications()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCodeStarNotifications)
+#### createCodeStarNotifications()  [header link](class-aws-sdk-method-createcodestarnotifications.md)
 
 `
     public
@@ -2343,9 +2343,9 @@ $args = \[\]
 
 ##### Return values
 
-[CodeStarNotificationsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CodeStarNotifications.CodeStarNotificationsClient.html)
+[CodeStarNotificationsClient](class-aws-codestarnotifications-codestarnotificationsclient.md)
 
-#### createCognitoIdentity()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCognitoIdentity)
+#### createCognitoIdentity()  [header link](class-aws-sdk-method-createcognitoidentity.md)
 
 `
     public
@@ -2358,9 +2358,9 @@ $args = \[\]
 
 ##### Return values
 
-[CognitoIdentityClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentity.CognitoIdentityClient.html)
+[CognitoIdentityClient](class-aws-cognitoidentity-cognitoidentityclient.md)
 
-#### createCognitoIdentityProvider()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCognitoIdentityProvider)
+#### createCognitoIdentityProvider()  [header link](class-aws-sdk-method-createcognitoidentityprovider.md)
 
 `
     public
@@ -2373,9 +2373,9 @@ $args = \[\]
 
 ##### Return values
 
-[CognitoIdentityProviderClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoIdentityProvider.CognitoIdentityProviderClient.html)
+[CognitoIdentityProviderClient](class-aws-cognitoidentityprovider-cognitoidentityproviderclient.md)
 
-#### createCognitoSync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCognitoSync)
+#### createCognitoSync()  [header link](class-aws-sdk-method-createcognitosync.md)
 
 `
     public
@@ -2388,9 +2388,9 @@ $args = \[\]
 
 ##### Return values
 
-[CognitoSyncClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CognitoSync.CognitoSyncClient.html)
+[CognitoSyncClient](class-aws-cognitosync-cognitosyncclient.md)
 
-#### createComprehend()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createComprehend)
+#### createComprehend()  [header link](class-aws-sdk-method-createcomprehend.md)
 
 `
     public
@@ -2403,9 +2403,9 @@ $args = \[\]
 
 ##### Return values
 
-[ComprehendClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Comprehend.ComprehendClient.html)
+[ComprehendClient](class-aws-comprehend-comprehendclient.md)
 
-#### createComprehendMedical()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createComprehendMedical)
+#### createComprehendMedical()  [header link](class-aws-sdk-method-createcomprehendmedical.md)
 
 `
     public
@@ -2418,9 +2418,9 @@ $args = \[\]
 
 ##### Return values
 
-[ComprehendMedicalClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComprehendMedical.ComprehendMedicalClient.html)
+[ComprehendMedicalClient](class-aws-comprehendmedical-comprehendmedicalclient.md)
 
-#### createComputeOptimizer()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createComputeOptimizer)
+#### createComputeOptimizer()  [header link](class-aws-sdk-method-createcomputeoptimizer.md)
 
 `
     public
@@ -2433,9 +2433,9 @@ $args = \[\]
 
 ##### Return values
 
-[ComputeOptimizerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComputeOptimizer.ComputeOptimizerClient.html)
+[ComputeOptimizerClient](class-aws-computeoptimizer-computeoptimizerclient.md)
 
-#### createComputeOptimizerAutomation()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createComputeOptimizerAutomation)
+#### createComputeOptimizerAutomation()  [header link](class-aws-sdk-method-createcomputeoptimizerautomation.md)
 
 `
     public
@@ -2448,9 +2448,9 @@ $args = \[\]
 
 ##### Return values
 
-[ComputeOptimizerAutomationClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ComputeOptimizerAutomation.ComputeOptimizerAutomationClient.html)
+[ComputeOptimizerAutomationClient](class-aws-computeoptimizerautomation-computeoptimizerautomationclient.md)
 
-#### createConfigService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createConfigService)
+#### createConfigService()  [header link](class-aws-sdk-method-createconfigservice.md)
 
 `
     public
@@ -2463,9 +2463,9 @@ $args = \[\]
 
 ##### Return values
 
-[ConfigServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConfigService.ConfigServiceClient.html)
+[ConfigServiceClient](class-aws-configservice-configserviceclient.md)
 
-#### createConnect()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createConnect)
+#### createConnect()  [header link](class-aws-sdk-method-createconnect.md)
 
 `
     public
@@ -2478,9 +2478,9 @@ $args = \[\]
 
 ##### Return values
 
-[ConnectClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Connect.ConnectClient.html)
+[ConnectClient](class-aws-connect-connectclient.md)
 
-#### createConnectCampaignService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createConnectCampaignService)
+#### createConnectCampaignService()  [header link](class-aws-sdk-method-createconnectcampaignservice.md)
 
 `
     public
@@ -2493,9 +2493,9 @@ $args = \[\]
 
 ##### Return values
 
-[ConnectCampaignServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectCampaignService.ConnectCampaignServiceClient.html)
+[ConnectCampaignServiceClient](class-aws-connectcampaignservice-connectcampaignserviceclient.md)
 
-#### createConnectCampaignsV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createConnectCampaignsV2)
+#### createConnectCampaignsV2()  [header link](class-aws-sdk-method-createconnectcampaignsv2.md)
 
 `
     public
@@ -2508,9 +2508,9 @@ $args = \[\]
 
 ##### Return values
 
-[ConnectCampaignsV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectCampaignsV2.ConnectCampaignsV2Client.html)
+[ConnectCampaignsV2Client](class-aws-connectcampaignsv2-connectcampaignsv2client.md)
 
-#### createConnectCases()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createConnectCases)
+#### createConnectCases()  [header link](class-aws-sdk-method-createconnectcases.md)
 
 `
     public
@@ -2523,9 +2523,9 @@ $args = \[\]
 
 ##### Return values
 
-[ConnectCasesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectCases.ConnectCasesClient.html)
+[ConnectCasesClient](class-aws-connectcases-connectcasesclient.md)
 
-#### createConnectContactLens()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createConnectContactLens)
+#### createConnectContactLens()  [header link](class-aws-sdk-method-createconnectcontactlens.md)
 
 `
     public
@@ -2538,9 +2538,9 @@ $args = \[\]
 
 ##### Return values
 
-[ConnectContactLensClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectContactLens.ConnectContactLensClient.html)
+[ConnectContactLensClient](class-aws-connectcontactlens-connectcontactlensclient.md)
 
-#### createConnectHealth()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createConnectHealth)
+#### createConnectHealth()  [header link](class-aws-sdk-method-createconnecthealth.md)
 
 `
     public
@@ -2553,9 +2553,9 @@ $args = \[\]
 
 ##### Return values
 
-[ConnectHealthClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectHealth.ConnectHealthClient.html)
+[ConnectHealthClient](class-aws-connecthealth-connecthealthclient.md)
 
-#### createConnectParticipant()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createConnectParticipant)
+#### createConnectParticipant()  [header link](class-aws-sdk-method-createconnectparticipant.md)
 
 `
     public
@@ -2568,9 +2568,9 @@ $args = \[\]
 
 ##### Return values
 
-[ConnectParticipantClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectParticipant.ConnectParticipantClient.html)
+[ConnectParticipantClient](class-aws-connectparticipant-connectparticipantclient.md)
 
-#### createConnectWisdomService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createConnectWisdomService)
+#### createConnectWisdomService()  [header link](class-aws-sdk-method-createconnectwisdomservice.md)
 
 `
     public
@@ -2583,9 +2583,9 @@ $args = \[\]
 
 ##### Return values
 
-[ConnectWisdomServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectWisdomService.ConnectWisdomServiceClient.html)
+[ConnectWisdomServiceClient](class-aws-connectwisdomservice-connectwisdomserviceclient.md)
 
-#### createControlCatalog()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createControlCatalog)
+#### createControlCatalog()  [header link](class-aws-sdk-method-createcontrolcatalog.md)
 
 `
     public
@@ -2598,9 +2598,9 @@ $args = \[\]
 
 ##### Return values
 
-[ControlCatalogClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ControlCatalog.ControlCatalogClient.html)
+[ControlCatalogClient](class-aws-controlcatalog-controlcatalogclient.md)
 
-#### createControlTower()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createControlTower)
+#### createControlTower()  [header link](class-aws-sdk-method-createcontroltower.md)
 
 `
     public
@@ -2613,9 +2613,9 @@ $args = \[\]
 
 ##### Return values
 
-[ControlTowerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ControlTower.ControlTowerClient.html)
+[ControlTowerClient](class-aws-controltower-controltowerclient.md)
 
-#### createCostandUsageReportService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCostandUsageReportService)
+#### createCostandUsageReportService()  [header link](class-aws-sdk-method-createcostandusagereportservice.md)
 
 `
     public
@@ -2628,9 +2628,9 @@ $args = \[\]
 
 ##### Return values
 
-[CostandUsageReportServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CostandUsageReportService.CostandUsageReportServiceClient.html)
+[CostandUsageReportServiceClient](class-aws-costandusagereportservice-costandusagereportserviceclient.md)
 
-#### createCostExplorer()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCostExplorer)
+#### createCostExplorer()  [header link](class-aws-sdk-method-createcostexplorer.md)
 
 `
     public
@@ -2643,9 +2643,9 @@ $args = \[\]
 
 ##### Return values
 
-[CostExplorerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CostExplorer.CostExplorerClient.html)
+[CostExplorerClient](class-aws-costexplorer-costexplorerclient.md)
 
-#### createCostOptimizationHub()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCostOptimizationHub)
+#### createCostOptimizationHub()  [header link](class-aws-sdk-method-createcostoptimizationhub.md)
 
 `
     public
@@ -2658,9 +2658,9 @@ $args = \[\]
 
 ##### Return values
 
-[CostOptimizationHubClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CostOptimizationHub.CostOptimizationHubClient.html)
+[CostOptimizationHubClient](class-aws-costoptimizationhub-costoptimizationhubclient.md)
 
-#### createCustomerProfiles()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createCustomerProfiles)
+#### createCustomerProfiles()  [header link](class-aws-sdk-method-createcustomerprofiles.md)
 
 `
     public
@@ -2673,9 +2673,9 @@ $args = \[\]
 
 ##### Return values
 
-[CustomerProfilesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CustomerProfiles.CustomerProfilesClient.html)
+[CustomerProfilesClient](class-aws-customerprofiles-customerprofilesclient.md)
 
-#### createDatabaseMigrationService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createDatabaseMigrationService)
+#### createDatabaseMigrationService()  [header link](class-aws-sdk-method-createdatabasemigrationservice.md)
 
 `
     public
@@ -2688,9 +2688,9 @@ $args = \[\]
 
 ##### Return values
 
-[DatabaseMigrationServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DatabaseMigrationService.DatabaseMigrationServiceClient.html)
+[DatabaseMigrationServiceClient](class-aws-databasemigrationservice-databasemigrationserviceclient.md)
 
-#### createDataExchange()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createDataExchange)
+#### createDataExchange()  [header link](class-aws-sdk-method-createdataexchange.md)
 
 `
     public
@@ -2703,9 +2703,9 @@ $args = \[\]
 
 ##### Return values
 
-[DataExchangeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DataExchange.DataExchangeClient.html)
+[DataExchangeClient](class-aws-dataexchange-dataexchangeclient.md)
 
-#### createDataPipeline()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createDataPipeline)
+#### createDataPipeline()  [header link](class-aws-sdk-method-createdatapipeline.md)
 
 `
     public
@@ -2718,9 +2718,9 @@ $args = \[\]
 
 ##### Return values
 
-[DataPipelineClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DataPipeline.DataPipelineClient.html)
+[DataPipelineClient](class-aws-datapipeline-datapipelineclient.md)
 
-#### createDataSync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createDataSync)
+#### createDataSync()  [header link](class-aws-sdk-method-createdatasync.md)
 
 `
     public
@@ -2733,9 +2733,9 @@ $args = \[\]
 
 ##### Return values
 
-[DataSyncClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DataSync.DataSyncClient.html)
+[DataSyncClient](class-aws-datasync-datasyncclient.md)
 
-#### createDataZone()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createDataZone)
+#### createDataZone()  [header link](class-aws-sdk-method-createdatazone.md)
 
 `
     public
@@ -2748,9 +2748,9 @@ $args = \[\]
 
 ##### Return values
 
-[DataZoneClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DataZone.DataZoneClient.html)
+[DataZoneClient](class-aws-datazone-datazoneclient.md)
 
-#### createDAX()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createDAX)
+#### createDAX()  [header link](class-aws-sdk-method-createdax.md)
 
 `
     public
@@ -2763,9 +2763,9 @@ $args = \[\]
 
 ##### Return values
 
-[DAXClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DAX.DAXClient.html)
+[DAXClient](class-aws-dax-daxclient.md)
 
-#### createDeadline()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createDeadline)
+#### createDeadline()  [header link](class-aws-sdk-method-createdeadline.md)
 
 `
     public
@@ -2778,9 +2778,9 @@ $args = \[\]
 
 ##### Return values
 
-[DeadlineClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Deadline.DeadlineClient.html)
+[DeadlineClient](class-aws-deadline-deadlineclient.md)
 
-#### createDetective()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createDetective)
+#### createDetective()  [header link](class-aws-sdk-method-createdetective.md)
 
 `
     public
@@ -2793,9 +2793,9 @@ $args = \[\]
 
 ##### Return values
 
-[DetectiveClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Detective.DetectiveClient.html)
+[DetectiveClient](class-aws-detective-detectiveclient.md)
 
-#### createDeviceFarm()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createDeviceFarm)
+#### createDeviceFarm()  [header link](class-aws-sdk-method-createdevicefarm.md)
 
 `
     public
@@ -2808,9 +2808,9 @@ $args = \[\]
 
 ##### Return values
 
-[DeviceFarmClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DeviceFarm.DeviceFarmClient.html)
+[DeviceFarmClient](class-aws-devicefarm-devicefarmclient.md)
 
-#### createDevOpsAgent()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createDevOpsAgent)
+#### createDevOpsAgent()  [header link](class-aws-sdk-method-createdevopsagent.md)
 
 `
     public
@@ -2823,9 +2823,9 @@ $args = \[\]
 
 ##### Return values
 
-[DevOpsAgentClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DevOpsAgent.DevOpsAgentClient.html)
+[DevOpsAgentClient](class-aws-devopsagent-devopsagentclient.md)
 
-#### createDevOpsGuru()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createDevOpsGuru)
+#### createDevOpsGuru()  [header link](class-aws-sdk-method-createdevopsguru.md)
 
 `
     public
@@ -2838,9 +2838,9 @@ $args = \[\]
 
 ##### Return values
 
-[DevOpsGuruClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DevOpsGuru.DevOpsGuruClient.html)
+[DevOpsGuruClient](class-aws-devopsguru-devopsguruclient.md)
 
-#### createDirectConnect()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createDirectConnect)
+#### createDirectConnect()  [header link](class-aws-sdk-method-createdirectconnect.md)
 
 `
     public
@@ -2853,9 +2853,9 @@ $args = \[\]
 
 ##### Return values
 
-[DirectConnectClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DirectConnect.DirectConnectClient.html)
+[DirectConnectClient](class-aws-directconnect-directconnectclient.md)
 
-#### createDirectoryService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createDirectoryService)
+#### createDirectoryService()  [header link](class-aws-sdk-method-createdirectoryservice.md)
 
 `
     public
@@ -2868,9 +2868,9 @@ $args = \[\]
 
 ##### Return values
 
-[DirectoryServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DirectoryService.DirectoryServiceClient.html)
+[DirectoryServiceClient](class-aws-directoryservice-directoryserviceclient.md)
 
-#### createDirectoryServiceData()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createDirectoryServiceData)
+#### createDirectoryServiceData()  [header link](class-aws-sdk-method-createdirectoryservicedata.md)
 
 `
     public
@@ -2883,9 +2883,9 @@ $args = \[\]
 
 ##### Return values
 
-[DirectoryServiceDataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DirectoryServiceData.DirectoryServiceDataClient.html)
+[DirectoryServiceDataClient](class-aws-directoryservicedata-directoryservicedataclient.md)
 
-#### createDLM()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createDLM)
+#### createDLM()  [header link](class-aws-sdk-method-createdlm.md)
 
 `
     public
@@ -2898,9 +2898,9 @@ $args = \[\]
 
 ##### Return values
 
-[DLMClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DLM.DLMClient.html)
+[DLMClient](class-aws-dlm-dlmclient.md)
 
-#### createDocDB()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createDocDB)
+#### createDocDB()  [header link](class-aws-sdk-method-createdocdb.md)
 
 `
     public
@@ -2913,9 +2913,9 @@ $args = \[\]
 
 ##### Return values
 
-[DocDBClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DocDB.DocDBClient.html)
+[DocDBClient](class-aws-docdb-docdbclient.md)
 
-#### createDocDBElastic()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createDocDBElastic)
+#### createDocDBElastic()  [header link](class-aws-sdk-method-createdocdbelastic.md)
 
 `
     public
@@ -2928,9 +2928,9 @@ $args = \[\]
 
 ##### Return values
 
-[DocDBElasticClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DocDBElastic.DocDBElasticClient.html)
+[DocDBElasticClient](class-aws-docdbelastic-docdbelasticclient.md)
 
-#### createdrs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createdrs)
+#### createdrs()  [header link](class-aws-sdk-method-createdrs.md)
 
 `
     public
@@ -2943,9 +2943,9 @@ $args = \[\]
 
 ##### Return values
 
-[drsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.drs.drsClient.html)
+[drsClient](class-aws-drs-drsclient.md)
 
-#### createDSQL()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createDSQL)
+#### createDSQL()  [header link](class-aws-sdk-method-createdsql.md)
 
 `
     public
@@ -2958,9 +2958,9 @@ $args = \[\]
 
 ##### Return values
 
-[DSQLClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DSQL.DSQLClient.html)
+[DSQLClient](class-aws-dsql-dsqlclient.md)
 
-#### createDynamoDb()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createDynamoDb)
+#### createDynamoDb()  [header link](class-aws-sdk-method-createdynamodb.md)
 
 `
     public
@@ -2973,9 +2973,9 @@ $args = \[\]
 
 ##### Return values
 
-[DynamoDbClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.DynamoDbClient.html)
+[DynamoDbClient](class-aws-dynamodb-dynamodbclient.md)
 
-#### createDynamoDbStreams()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createDynamoDbStreams)
+#### createDynamoDbStreams()  [header link](class-aws-sdk-method-createdynamodbstreams.md)
 
 `
     public
@@ -2988,9 +2988,9 @@ $args = \[\]
 
 ##### Return values
 
-[DynamoDbStreamsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDbStreams.DynamoDbStreamsClient.html)
+[DynamoDbStreamsClient](class-aws-dynamodbstreams-dynamodbstreamsclient.md)
 
-#### createEBS()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createEBS)
+#### createEBS()  [header link](class-aws-sdk-method-createebs.md)
 
 `
     public
@@ -3003,9 +3003,9 @@ $args = \[\]
 
 ##### Return values
 
-[EBSClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EBS.EBSClient.html)
+[EBSClient](class-aws-ebs-ebsclient.md)
 
-#### createEc2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createEc2)
+#### createEc2()  [header link](class-aws-sdk-method-createec2.md)
 
 `
     public
@@ -3018,9 +3018,9 @@ $args = \[\]
 
 ##### Return values
 
-[Ec2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ec2.Ec2Client.html)
+[Ec2Client](class-aws-ec2-ec2client.md)
 
-#### createEC2InstanceConnect()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createEC2InstanceConnect)
+#### createEC2InstanceConnect()  [header link](class-aws-sdk-method-createec2instanceconnect.md)
 
 `
     public
@@ -3033,9 +3033,9 @@ $args = \[\]
 
 ##### Return values
 
-[EC2InstanceConnectClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EC2InstanceConnect.EC2InstanceConnectClient.html)
+[EC2InstanceConnectClient](class-aws-ec2instanceconnect-ec2instanceconnectclient.md)
 
-#### createEcr()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createEcr)
+#### createEcr()  [header link](class-aws-sdk-method-createecr.md)
 
 `
     public
@@ -3048,9 +3048,9 @@ $args = \[\]
 
 ##### Return values
 
-[EcrClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ecr.EcrClient.html)
+[EcrClient](class-aws-ecr-ecrclient.md)
 
-#### createECRPublic()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createECRPublic)
+#### createECRPublic()  [header link](class-aws-sdk-method-createecrpublic.md)
 
 `
     public
@@ -3063,9 +3063,9 @@ $args = \[\]
 
 ##### Return values
 
-[ECRPublicClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ECRPublic.ECRPublicClient.html)
+[ECRPublicClient](class-aws-ecrpublic-ecrpublicclient.md)
 
-#### createEcs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createEcs)
+#### createEcs()  [header link](class-aws-sdk-method-createecs.md)
 
 `
     public
@@ -3078,9 +3078,9 @@ $args = \[\]
 
 ##### Return values
 
-[EcsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ecs.EcsClient.html)
+[EcsClient](class-aws-ecs-ecsclient.md)
 
-#### createEfs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createEfs)
+#### createEfs()  [header link](class-aws-sdk-method-createefs.md)
 
 `
     public
@@ -3093,9 +3093,9 @@ $args = \[\]
 
 ##### Return values
 
-[EfsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Efs.EfsClient.html)
+[EfsClient](class-aws-efs-efsclient.md)
 
-#### createEKS()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createEKS)
+#### createEKS()  [header link](class-aws-sdk-method-createeks.md)
 
 `
     public
@@ -3108,9 +3108,9 @@ $args = \[\]
 
 ##### Return values
 
-[EKSClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EKS.EKSClient.html)
+[EKSClient](class-aws-eks-eksclient.md)
 
-#### createEKSAuth()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createEKSAuth)
+#### createEKSAuth()  [header link](class-aws-sdk-method-createeksauth.md)
 
 `
     public
@@ -3123,9 +3123,9 @@ $args = \[\]
 
 ##### Return values
 
-[EKSAuthClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EKSAuth.EKSAuthClient.html)
+[EKSAuthClient](class-aws-eksauth-eksauthclient.md)
 
-#### createElastiCache()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createElastiCache)
+#### createElastiCache()  [header link](class-aws-sdk-method-createelasticache.md)
 
 `
     public
@@ -3138,9 +3138,9 @@ $args = \[\]
 
 ##### Return values
 
-[ElastiCacheClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElastiCache.ElastiCacheClient.html)
+[ElastiCacheClient](class-aws-elasticache-elasticacheclient.md)
 
-#### createElasticBeanstalk()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createElasticBeanstalk)
+#### createElasticBeanstalk()  [header link](class-aws-sdk-method-createelasticbeanstalk.md)
 
 `
     public
@@ -3153,9 +3153,9 @@ $args = \[\]
 
 ##### Return values
 
-[ElasticBeanstalkClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElasticBeanstalk.ElasticBeanstalkClient.html)
+[ElasticBeanstalkClient](class-aws-elasticbeanstalk-elasticbeanstalkclient.md)
 
-#### createElasticLoadBalancing()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createElasticLoadBalancing)
+#### createElasticLoadBalancing()  [header link](class-aws-sdk-method-createelasticloadbalancing.md)
 
 `
     public
@@ -3168,9 +3168,9 @@ $args = \[\]
 
 ##### Return values
 
-[ElasticLoadBalancingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElasticLoadBalancing.ElasticLoadBalancingClient.html)
+[ElasticLoadBalancingClient](class-aws-elasticloadbalancing-elasticloadbalancingclient.md)
 
-#### createElasticLoadBalancingV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createElasticLoadBalancingV2)
+#### createElasticLoadBalancingV2()  [header link](class-aws-sdk-method-createelasticloadbalancingv2.md)
 
 `
     public
@@ -3183,9 +3183,9 @@ $args = \[\]
 
 ##### Return values
 
-[ElasticLoadBalancingV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElasticLoadBalancingV2.ElasticLoadBalancingV2Client.html)
+[ElasticLoadBalancingV2Client](class-aws-elasticloadbalancingv2-elasticloadbalancingv2client.md)
 
-#### createElasticsearchService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createElasticsearchService)
+#### createElasticsearchService()  [header link](class-aws-sdk-method-createelasticsearchservice.md)
 
 `
     public
@@ -3198,9 +3198,9 @@ $args = \[\]
 
 ##### Return values
 
-[ElasticsearchServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElasticsearchService.ElasticsearchServiceClient.html)
+[ElasticsearchServiceClient](class-aws-elasticsearchservice-elasticsearchserviceclient.md)
 
-#### createElementalInference()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createElementalInference)
+#### createElementalInference()  [header link](class-aws-sdk-method-createelementalinference.md)
 
 `
     public
@@ -3213,9 +3213,9 @@ $args = \[\]
 
 ##### Return values
 
-[ElementalInferenceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElementalInference.ElementalInferenceClient.html)
+[ElementalInferenceClient](class-aws-elementalinference-elementalinferenceclient.md)
 
-#### createEmr()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createEmr)
+#### createEmr()  [header link](class-aws-sdk-method-createemr.md)
 
 `
     public
@@ -3228,9 +3228,9 @@ $args = \[\]
 
 ##### Return values
 
-[EmrClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Emr.EmrClient.html)
+[EmrClient](class-aws-emr-emrclient.md)
 
-#### createEMRContainers()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createEMRContainers)
+#### createEMRContainers()  [header link](class-aws-sdk-method-createemrcontainers.md)
 
 `
     public
@@ -3243,9 +3243,9 @@ $args = \[\]
 
 ##### Return values
 
-[EMRContainersClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EMRContainers.EMRContainersClient.html)
+[EMRContainersClient](class-aws-emrcontainers-emrcontainersclient.md)
 
-#### createEMRServerless()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createEMRServerless)
+#### createEMRServerless()  [header link](class-aws-sdk-method-createemrserverless.md)
 
 `
     public
@@ -3258,9 +3258,9 @@ $args = \[\]
 
 ##### Return values
 
-[EMRServerlessClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EMRServerless.EMRServerlessClient.html)
+[EMRServerlessClient](class-aws-emrserverless-emrserverlessclient.md)
 
-#### createEntityResolution()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createEntityResolution)
+#### createEntityResolution()  [header link](class-aws-sdk-method-createentityresolution.md)
 
 `
     public
@@ -3273,9 +3273,9 @@ $args = \[\]
 
 ##### Return values
 
-[EntityResolutionClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EntityResolution.EntityResolutionClient.html)
+[EntityResolutionClient](class-aws-entityresolution-entityresolutionclient.md)
 
-#### createEventBridge()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createEventBridge)
+#### createEventBridge()  [header link](class-aws-sdk-method-createeventbridge.md)
 
 `
     public
@@ -3288,9 +3288,9 @@ $args = \[\]
 
 ##### Return values
 
-[EventBridgeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EventBridge.EventBridgeClient.html)
+[EventBridgeClient](class-aws-eventbridge-eventbridgeclient.md)
 
-#### createEvs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createEvs)
+#### createEvs()  [header link](class-aws-sdk-method-createevs.md)
 
 `
     public
@@ -3303,9 +3303,9 @@ $args = \[\]
 
 ##### Return values
 
-[EvsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Evs.EvsClient.html)
+[EvsClient](class-aws-evs-evsclient.md)
 
-#### createfinspace()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createfinspace)
+#### createfinspace()  [header link](class-aws-sdk-method-createfinspace.md)
 
 `
     public
@@ -3318,9 +3318,9 @@ $args = \[\]
 
 ##### Return values
 
-[finspaceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.finspace.finspaceClient.html)
+[finspaceClient](class-aws-finspace-finspaceclient.md)
 
-#### createFinSpaceData()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createFinSpaceData)
+#### createFinSpaceData()  [header link](class-aws-sdk-method-createfinspacedata.md)
 
 `
     public
@@ -3333,9 +3333,9 @@ $args = \[\]
 
 ##### Return values
 
-[FinSpaceDataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FinSpaceData.FinSpaceDataClient.html)
+[FinSpaceDataClient](class-aws-finspacedata-finspacedataclient.md)
 
-#### createFirehose()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createFirehose)
+#### createFirehose()  [header link](class-aws-sdk-method-createfirehose.md)
 
 `
     public
@@ -3348,9 +3348,9 @@ $args = \[\]
 
 ##### Return values
 
-[FirehoseClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Firehose.FirehoseClient.html)
+[FirehoseClient](class-aws-firehose-firehoseclient.md)
 
-#### createFIS()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createFIS)
+#### createFIS()  [header link](class-aws-sdk-method-createfis.md)
 
 `
     public
@@ -3363,9 +3363,9 @@ $args = \[\]
 
 ##### Return values
 
-[FISClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FIS.FISClient.html)
+[FISClient](class-aws-fis-fisclient.md)
 
-#### createFMS()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createFMS)
+#### createFMS()  [header link](class-aws-sdk-method-createfms.md)
 
 `
     public
@@ -3378,9 +3378,9 @@ $args = \[\]
 
 ##### Return values
 
-[FMSClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FMS.FMSClient.html)
+[FMSClient](class-aws-fms-fmsclient.md)
 
-#### createForecastQueryService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createForecastQueryService)
+#### createForecastQueryService()  [header link](class-aws-sdk-method-createforecastqueryservice.md)
 
 `
     public
@@ -3393,9 +3393,9 @@ $args = \[\]
 
 ##### Return values
 
-[ForecastQueryServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ForecastQueryService.ForecastQueryServiceClient.html)
+[ForecastQueryServiceClient](class-aws-forecastqueryservice-forecastqueryserviceclient.md)
 
-#### createForecastService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createForecastService)
+#### createForecastService()  [header link](class-aws-sdk-method-createforecastservice.md)
 
 `
     public
@@ -3408,9 +3408,9 @@ $args = \[\]
 
 ##### Return values
 
-[ForecastServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ForecastService.ForecastServiceClient.html)
+[ForecastServiceClient](class-aws-forecastservice-forecastserviceclient.md)
 
-#### createFraudDetector()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createFraudDetector)
+#### createFraudDetector()  [header link](class-aws-sdk-method-createfrauddetector.md)
 
 `
     public
@@ -3423,9 +3423,9 @@ $args = \[\]
 
 ##### Return values
 
-[FraudDetectorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FraudDetector.FraudDetectorClient.html)
+[FraudDetectorClient](class-aws-frauddetector-frauddetectorclient.md)
 
-#### createFreeTier()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createFreeTier)
+#### createFreeTier()  [header link](class-aws-sdk-method-createfreetier.md)
 
 `
     public
@@ -3438,9 +3438,9 @@ $args = \[\]
 
 ##### Return values
 
-[FreeTierClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FreeTier.FreeTierClient.html)
+[FreeTierClient](class-aws-freetier-freetierclient.md)
 
-#### createFSx()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createFSx)
+#### createFSx()  [header link](class-aws-sdk-method-createfsx.md)
 
 `
     public
@@ -3453,9 +3453,9 @@ $args = \[\]
 
 ##### Return values
 
-[FSxClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FSx.FSxClient.html)
+[FSxClient](class-aws-fsx-fsxclient.md)
 
-#### createGameLift()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createGameLift)
+#### createGameLift()  [header link](class-aws-sdk-method-creategamelift.md)
 
 `
     public
@@ -3468,9 +3468,9 @@ $args = \[\]
 
 ##### Return values
 
-[GameLiftClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GameLift.GameLiftClient.html)
+[GameLiftClient](class-aws-gamelift-gameliftclient.md)
 
-#### createGameLiftStreams()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createGameLiftStreams)
+#### createGameLiftStreams()  [header link](class-aws-sdk-method-creategameliftstreams.md)
 
 `
     public
@@ -3483,9 +3483,9 @@ $args = \[\]
 
 ##### Return values
 
-[GameLiftStreamsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GameLiftStreams.GameLiftStreamsClient.html)
+[GameLiftStreamsClient](class-aws-gameliftstreams-gameliftstreamsclient.md)
 
-#### createGeoMaps()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createGeoMaps)
+#### createGeoMaps()  [header link](class-aws-sdk-method-creategeomaps.md)
 
 `
     public
@@ -3498,9 +3498,9 @@ $args = \[\]
 
 ##### Return values
 
-[GeoMapsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GeoMaps.GeoMapsClient.html)
+[GeoMapsClient](class-aws-geomaps-geomapsclient.md)
 
-#### createGeoPlaces()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createGeoPlaces)
+#### createGeoPlaces()  [header link](class-aws-sdk-method-creategeoplaces.md)
 
 `
     public
@@ -3513,9 +3513,9 @@ $args = \[\]
 
 ##### Return values
 
-[GeoPlacesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GeoPlaces.GeoPlacesClient.html)
+[GeoPlacesClient](class-aws-geoplaces-geoplacesclient.md)
 
-#### createGeoRoutes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createGeoRoutes)
+#### createGeoRoutes()  [header link](class-aws-sdk-method-creategeoroutes.md)
 
 `
     public
@@ -3528,9 +3528,9 @@ $args = \[\]
 
 ##### Return values
 
-[GeoRoutesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GeoRoutes.GeoRoutesClient.html)
+[GeoRoutesClient](class-aws-georoutes-georoutesclient.md)
 
-#### createGlacier()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createGlacier)
+#### createGlacier()  [header link](class-aws-sdk-method-createglacier.md)
 
 `
     public
@@ -3543,9 +3543,9 @@ $args = \[\]
 
 ##### Return values
 
-[GlacierClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glacier.GlacierClient.html)
+[GlacierClient](class-aws-glacier-glacierclient.md)
 
-#### createGlobalAccelerator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createGlobalAccelerator)
+#### createGlobalAccelerator()  [header link](class-aws-sdk-method-createglobalaccelerator.md)
 
 `
     public
@@ -3558,9 +3558,9 @@ $args = \[\]
 
 ##### Return values
 
-[GlobalAcceleratorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GlobalAccelerator.GlobalAcceleratorClient.html)
+[GlobalAcceleratorClient](class-aws-globalaccelerator-globalacceleratorclient.md)
 
-#### createGlue()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createGlue)
+#### createGlue()  [header link](class-aws-sdk-method-createglue.md)
 
 `
     public
@@ -3573,9 +3573,9 @@ $args = \[\]
 
 ##### Return values
 
-[GlueClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glue.GlueClient.html)
+[GlueClient](class-aws-glue-glueclient.md)
 
-#### createGlueDataBrew()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createGlueDataBrew)
+#### createGlueDataBrew()  [header link](class-aws-sdk-method-creategluedatabrew.md)
 
 `
     public
@@ -3588,9 +3588,9 @@ $args = \[\]
 
 ##### Return values
 
-[GlueDataBrewClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GlueDataBrew.GlueDataBrewClient.html)
+[GlueDataBrewClient](class-aws-gluedatabrew-gluedatabrewclient.md)
 
-#### createGreengrass()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createGreengrass)
+#### createGreengrass()  [header link](class-aws-sdk-method-creategreengrass.md)
 
 `
     public
@@ -3603,9 +3603,9 @@ $args = \[\]
 
 ##### Return values
 
-[GreengrassClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Greengrass.GreengrassClient.html)
+[GreengrassClient](class-aws-greengrass-greengrassclient.md)
 
-#### createGreengrassV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createGreengrassV2)
+#### createGreengrassV2()  [header link](class-aws-sdk-method-creategreengrassv2.md)
 
 `
     public
@@ -3618,9 +3618,9 @@ $args = \[\]
 
 ##### Return values
 
-[GreengrassV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GreengrassV2.GreengrassV2Client.html)
+[GreengrassV2Client](class-aws-greengrassv2-greengrassv2client.md)
 
-#### createGroundStation()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createGroundStation)
+#### createGroundStation()  [header link](class-aws-sdk-method-creategroundstation.md)
 
 `
     public
@@ -3633,9 +3633,9 @@ $args = \[\]
 
 ##### Return values
 
-[GroundStationClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GroundStation.GroundStationClient.html)
+[GroundStationClient](class-aws-groundstation-groundstationclient.md)
 
-#### createGuardDuty()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createGuardDuty)
+#### createGuardDuty()  [header link](class-aws-sdk-method-createguardduty.md)
 
 `
     public
@@ -3648,9 +3648,9 @@ $args = \[\]
 
 ##### Return values
 
-[GuardDutyClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GuardDuty.GuardDutyClient.html)
+[GuardDutyClient](class-aws-guardduty-guarddutyclient.md)
 
-#### createHealth()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createHealth)
+#### createHealth()  [header link](class-aws-sdk-method-createhealth.md)
 
 `
     public
@@ -3663,9 +3663,9 @@ $args = \[\]
 
 ##### Return values
 
-[HealthClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Health.HealthClient.html)
+[HealthClient](class-aws-health-healthclient.md)
 
-#### createHealthLake()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createHealthLake)
+#### createHealthLake()  [header link](class-aws-sdk-method-createhealthlake.md)
 
 `
     public
@@ -3678,9 +3678,9 @@ $args = \[\]
 
 ##### Return values
 
-[HealthLakeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HealthLake.HealthLakeClient.html)
+[HealthLakeClient](class-aws-healthlake-healthlakeclient.md)
 
-#### createIam()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createIam)
+#### createIam()  [header link](class-aws-sdk-method-createiam.md)
 
 `
     public
@@ -3693,9 +3693,9 @@ $args = \[\]
 
 ##### Return values
 
-[IamClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Iam.IamClient.html)
+[IamClient](class-aws-iam-iamclient.md)
 
-#### createIdentityStore()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createIdentityStore)
+#### createIdentityStore()  [header link](class-aws-sdk-method-createidentitystore.md)
 
 `
     public
@@ -3708,9 +3708,9 @@ $args = \[\]
 
 ##### Return values
 
-[IdentityStoreClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IdentityStore.IdentityStoreClient.html)
+[IdentityStoreClient](class-aws-identitystore-identitystoreclient.md)
 
-#### createimagebuilder()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createimagebuilder)
+#### createimagebuilder()  [header link](class-aws-sdk-method-createimagebuilder.md)
 
 `
     public
@@ -3723,9 +3723,9 @@ $args = \[\]
 
 ##### Return values
 
-[imagebuilderClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.imagebuilder.imagebuilderClient.html)
+[imagebuilderClient](class-aws-imagebuilder-imagebuilderclient.md)
 
-#### createImportExport()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createImportExport)
+#### createImportExport()  [header link](class-aws-sdk-method-createimportexport.md)
 
 `
     public
@@ -3738,9 +3738,9 @@ $args = \[\]
 
 ##### Return values
 
-[ImportExportClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ImportExport.ImportExportClient.html)
+[ImportExportClient](class-aws-importexport-importexportclient.md)
 
-#### createInspector()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createInspector)
+#### createInspector()  [header link](class-aws-sdk-method-createinspector.md)
 
 `
     public
@@ -3753,9 +3753,9 @@ $args = \[\]
 
 ##### Return values
 
-[InspectorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Inspector.InspectorClient.html)
+[InspectorClient](class-aws-inspector-inspectorclient.md)
 
-#### createInspector2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createInspector2)
+#### createInspector2()  [header link](class-aws-sdk-method-createinspector2.md)
 
 `
     public
@@ -3768,9 +3768,9 @@ $args = \[\]
 
 ##### Return values
 
-[Inspector2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Inspector2.Inspector2Client.html)
+[Inspector2Client](class-aws-inspector2-inspector2client.md)
 
-#### createInspectorScan()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createInspectorScan)
+#### createInspectorScan()  [header link](class-aws-sdk-method-createinspectorscan.md)
 
 `
     public
@@ -3783,9 +3783,9 @@ $args = \[\]
 
 ##### Return values
 
-[InspectorScanClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.InspectorScan.InspectorScanClient.html)
+[InspectorScanClient](class-aws-inspectorscan-inspectorscanclient.md)
 
-#### createInternetMonitor()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createInternetMonitor)
+#### createInternetMonitor()  [header link](class-aws-sdk-method-createinternetmonitor.md)
 
 `
     public
@@ -3798,9 +3798,9 @@ $args = \[\]
 
 ##### Return values
 
-[InternetMonitorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.InternetMonitor.InternetMonitorClient.html)
+[InternetMonitorClient](class-aws-internetmonitor-internetmonitorclient.md)
 
-#### createInvoicing()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createInvoicing)
+#### createInvoicing()  [header link](class-aws-sdk-method-createinvoicing.md)
 
 `
     public
@@ -3813,9 +3813,9 @@ $args = \[\]
 
 ##### Return values
 
-[InvoicingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Invoicing.InvoicingClient.html)
+[InvoicingClient](class-aws-invoicing-invoicingclient.md)
 
-#### createIot()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createIot)
+#### createIot()  [header link](class-aws-sdk-method-createiot.md)
 
 `
     public
@@ -3828,9 +3828,9 @@ $args = \[\]
 
 ##### Return values
 
-[IotClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Iot.IotClient.html)
+[IotClient](class-aws-iot-iotclient.md)
 
-#### createIotDataPlane()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createIotDataPlane)
+#### createIotDataPlane()  [header link](class-aws-sdk-method-createiotdataplane.md)
 
 `
     public
@@ -3843,9 +3843,9 @@ $args = \[\]
 
 ##### Return values
 
-[IotDataPlaneClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IotDataPlane.IotDataPlaneClient.html)
+[IotDataPlaneClient](class-aws-iotdataplane-iotdataplaneclient.md)
 
-#### createIoTDeviceAdvisor()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createIoTDeviceAdvisor)
+#### createIoTDeviceAdvisor()  [header link](class-aws-sdk-method-createiotdeviceadvisor.md)
 
 `
     public
@@ -3858,9 +3858,9 @@ $args = \[\]
 
 ##### Return values
 
-[IoTDeviceAdvisorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTDeviceAdvisor.IoTDeviceAdvisorClient.html)
+[IoTDeviceAdvisorClient](class-aws-iotdeviceadvisor-iotdeviceadvisorclient.md)
 
-#### createIoTEvents()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createIoTEvents)
+#### createIoTEvents()  [header link](class-aws-sdk-method-createiotevents.md)
 
 `
     public
@@ -3873,9 +3873,9 @@ $args = \[\]
 
 ##### Return values
 
-[IoTEventsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTEvents.IoTEventsClient.html)
+[IoTEventsClient](class-aws-iotevents-ioteventsclient.md)
 
-#### createIoTEventsData()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createIoTEventsData)
+#### createIoTEventsData()  [header link](class-aws-sdk-method-createioteventsdata.md)
 
 `
     public
@@ -3888,9 +3888,9 @@ $args = \[\]
 
 ##### Return values
 
-[IoTEventsDataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTEventsData.IoTEventsDataClient.html)
+[IoTEventsDataClient](class-aws-ioteventsdata-ioteventsdataclient.md)
 
-#### createIoTFleetWise()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createIoTFleetWise)
+#### createIoTFleetWise()  [header link](class-aws-sdk-method-createiotfleetwise.md)
 
 `
     public
@@ -3903,9 +3903,9 @@ $args = \[\]
 
 ##### Return values
 
-[IoTFleetWiseClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTFleetWise.IoTFleetWiseClient.html)
+[IoTFleetWiseClient](class-aws-iotfleetwise-iotfleetwiseclient.md)
 
-#### createIoTJobsDataPlane()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createIoTJobsDataPlane)
+#### createIoTJobsDataPlane()  [header link](class-aws-sdk-method-createiotjobsdataplane.md)
 
 `
     public
@@ -3918,9 +3918,9 @@ $args = \[\]
 
 ##### Return values
 
-[IoTJobsDataPlaneClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTJobsDataPlane.IoTJobsDataPlaneClient.html)
+[IoTJobsDataPlaneClient](class-aws-iotjobsdataplane-iotjobsdataplaneclient.md)
 
-#### createIoTManagedIntegrations()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createIoTManagedIntegrations)
+#### createIoTManagedIntegrations()  [header link](class-aws-sdk-method-createiotmanagedintegrations.md)
 
 `
     public
@@ -3933,9 +3933,9 @@ $args = \[\]
 
 ##### Return values
 
-[IoTManagedIntegrationsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTManagedIntegrations.IoTManagedIntegrationsClient.html)
+[IoTManagedIntegrationsClient](class-aws-iotmanagedintegrations-iotmanagedintegrationsclient.md)
 
-#### createIoTSecureTunneling()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createIoTSecureTunneling)
+#### createIoTSecureTunneling()  [header link](class-aws-sdk-method-createiotsecuretunneling.md)
 
 `
     public
@@ -3948,9 +3948,9 @@ $args = \[\]
 
 ##### Return values
 
-[IoTSecureTunnelingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTSecureTunneling.IoTSecureTunnelingClient.html)
+[IoTSecureTunnelingClient](class-aws-iotsecuretunneling-iotsecuretunnelingclient.md)
 
-#### createIoTSiteWise()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createIoTSiteWise)
+#### createIoTSiteWise()  [header link](class-aws-sdk-method-createiotsitewise.md)
 
 `
     public
@@ -3963,9 +3963,9 @@ $args = \[\]
 
 ##### Return values
 
-[IoTSiteWiseClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTSiteWise.IoTSiteWiseClient.html)
+[IoTSiteWiseClient](class-aws-iotsitewise-iotsitewiseclient.md)
 
-#### createIoTThingsGraph()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createIoTThingsGraph)
+#### createIoTThingsGraph()  [header link](class-aws-sdk-method-createiotthingsgraph.md)
 
 `
     public
@@ -3978,9 +3978,9 @@ $args = \[\]
 
 ##### Return values
 
-[IoTThingsGraphClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTThingsGraph.IoTThingsGraphClient.html)
+[IoTThingsGraphClient](class-aws-iotthingsgraph-iotthingsgraphclient.md)
 
-#### createIoTTwinMaker()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createIoTTwinMaker)
+#### createIoTTwinMaker()  [header link](class-aws-sdk-method-createiottwinmaker.md)
 
 `
     public
@@ -3993,9 +3993,9 @@ $args = \[\]
 
 ##### Return values
 
-[IoTTwinMakerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTTwinMaker.IoTTwinMakerClient.html)
+[IoTTwinMakerClient](class-aws-iottwinmaker-iottwinmakerclient.md)
 
-#### createIoTWireless()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createIoTWireless)
+#### createIoTWireless()  [header link](class-aws-sdk-method-createiotwireless.md)
 
 `
     public
@@ -4008,9 +4008,9 @@ $args = \[\]
 
 ##### Return values
 
-[IoTWirelessClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTWireless.IoTWirelessClient.html)
+[IoTWirelessClient](class-aws-iotwireless-iotwirelessclient.md)
 
-#### createIVS()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createIVS)
+#### createIVS()  [header link](class-aws-sdk-method-createivs.md)
 
 `
     public
@@ -4023,9 +4023,9 @@ $args = \[\]
 
 ##### Return values
 
-[IVSClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IVS.IVSClient.html)
+[IVSClient](class-aws-ivs-ivsclient.md)
 
-#### createivschat()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createivschat)
+#### createivschat()  [header link](class-aws-sdk-method-createivschat.md)
 
 `
     public
@@ -4038,9 +4038,9 @@ $args = \[\]
 
 ##### Return values
 
-[ivschatClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ivschat.ivschatClient.html)
+[ivschatClient](class-aws-ivschat-ivschatclient.md)
 
-#### createIVSRealTime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createIVSRealTime)
+#### createIVSRealTime()  [header link](class-aws-sdk-method-createivsrealtime.md)
 
 `
     public
@@ -4053,9 +4053,9 @@ $args = \[\]
 
 ##### Return values
 
-[IVSRealTimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IVSRealTime.IVSRealTimeClient.html)
+[IVSRealTimeClient](class-aws-ivsrealtime-ivsrealtimeclient.md)
 
-#### createKafka()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createKafka)
+#### createKafka()  [header link](class-aws-sdk-method-createkafka.md)
 
 `
     public
@@ -4068,9 +4068,9 @@ $args = \[\]
 
 ##### Return values
 
-[KafkaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Kafka.KafkaClient.html)
+[KafkaClient](class-aws-kafka-kafkaclient.md)
 
-#### createKafkaConnect()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createKafkaConnect)
+#### createKafkaConnect()  [header link](class-aws-sdk-method-createkafkaconnect.md)
 
 `
     public
@@ -4083,9 +4083,9 @@ $args = \[\]
 
 ##### Return values
 
-[KafkaConnectClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KafkaConnect.KafkaConnectClient.html)
+[KafkaConnectClient](class-aws-kafkaconnect-kafkaconnectclient.md)
 
-#### createkendra()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createkendra)
+#### createkendra()  [header link](class-aws-sdk-method-createkendra.md)
 
 `
     public
@@ -4098,9 +4098,9 @@ $args = \[\]
 
 ##### Return values
 
-[kendraClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.kendra.kendraClient.html)
+[kendraClient](class-aws-kendra-kendraclient.md)
 
-#### createKendraRanking()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createKendraRanking)
+#### createKendraRanking()  [header link](class-aws-sdk-method-createkendraranking.md)
 
 `
     public
@@ -4113,9 +4113,9 @@ $args = \[\]
 
 ##### Return values
 
-[KendraRankingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KendraRanking.KendraRankingClient.html)
+[KendraRankingClient](class-aws-kendraranking-kendrarankingclient.md)
 
-#### createKeyspaces()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createKeyspaces)
+#### createKeyspaces()  [header link](class-aws-sdk-method-createkeyspaces.md)
 
 `
     public
@@ -4128,9 +4128,9 @@ $args = \[\]
 
 ##### Return values
 
-[KeyspacesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Keyspaces.KeyspacesClient.html)
+[KeyspacesClient](class-aws-keyspaces-keyspacesclient.md)
 
-#### createKeyspacesStreams()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createKeyspacesStreams)
+#### createKeyspacesStreams()  [header link](class-aws-sdk-method-createkeyspacesstreams.md)
 
 `
     public
@@ -4143,9 +4143,9 @@ $args = \[\]
 
 ##### Return values
 
-[KeyspacesStreamsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KeyspacesStreams.KeyspacesStreamsClient.html)
+[KeyspacesStreamsClient](class-aws-keyspacesstreams-keyspacesstreamsclient.md)
 
-#### createKinesis()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createKinesis)
+#### createKinesis()  [header link](class-aws-sdk-method-createkinesis.md)
 
 `
     public
@@ -4158,9 +4158,9 @@ $args = \[\]
 
 ##### Return values
 
-[KinesisClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Kinesis.KinesisClient.html)
+[KinesisClient](class-aws-kinesis-kinesisclient.md)
 
-#### createKinesisAnalytics()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createKinesisAnalytics)
+#### createKinesisAnalytics()  [header link](class-aws-sdk-method-createkinesisanalytics.md)
 
 `
     public
@@ -4173,9 +4173,9 @@ $args = \[\]
 
 ##### Return values
 
-[KinesisAnalyticsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisAnalytics.KinesisAnalyticsClient.html)
+[KinesisAnalyticsClient](class-aws-kinesisanalytics-kinesisanalyticsclient.md)
 
-#### createKinesisAnalyticsV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createKinesisAnalyticsV2)
+#### createKinesisAnalyticsV2()  [header link](class-aws-sdk-method-createkinesisanalyticsv2.md)
 
 `
     public
@@ -4188,9 +4188,9 @@ $args = \[\]
 
 ##### Return values
 
-[KinesisAnalyticsV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisAnalyticsV2.KinesisAnalyticsV2Client.html)
+[KinesisAnalyticsV2Client](class-aws-kinesisanalyticsv2-kinesisanalyticsv2client.md)
 
-#### createKinesisVideo()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createKinesisVideo)
+#### createKinesisVideo()  [header link](class-aws-sdk-method-createkinesisvideo.md)
 
 `
     public
@@ -4203,9 +4203,9 @@ $args = \[\]
 
 ##### Return values
 
-[KinesisVideoClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideo.KinesisVideoClient.html)
+[KinesisVideoClient](class-aws-kinesisvideo-kinesisvideoclient.md)
 
-#### createKinesisVideoArchivedMedia()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createKinesisVideoArchivedMedia)
+#### createKinesisVideoArchivedMedia()  [header link](class-aws-sdk-method-createkinesisvideoarchivedmedia.md)
 
 `
     public
@@ -4218,9 +4218,9 @@ $args = \[\]
 
 ##### Return values
 
-[KinesisVideoArchivedMediaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideoArchivedMedia.KinesisVideoArchivedMediaClient.html)
+[KinesisVideoArchivedMediaClient](class-aws-kinesisvideoarchivedmedia-kinesisvideoarchivedmediaclient.md)
 
-#### createKinesisVideoMedia()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createKinesisVideoMedia)
+#### createKinesisVideoMedia()  [header link](class-aws-sdk-method-createkinesisvideomedia.md)
 
 `
     public
@@ -4233,9 +4233,9 @@ $args = \[\]
 
 ##### Return values
 
-[KinesisVideoMediaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideoMedia.KinesisVideoMediaClient.html)
+[KinesisVideoMediaClient](class-aws-kinesisvideomedia-kinesisvideomediaclient.md)
 
-#### createKinesisVideoSignalingChannels()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createKinesisVideoSignalingChannels)
+#### createKinesisVideoSignalingChannels()  [header link](class-aws-sdk-method-createkinesisvideosignalingchannels.md)
 
 `
     public
@@ -4248,9 +4248,9 @@ $args = \[\]
 
 ##### Return values
 
-[KinesisVideoSignalingChannelsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideoSignalingChannels.KinesisVideoSignalingChannelsClient.html)
+[KinesisVideoSignalingChannelsClient](class-aws-kinesisvideosignalingchannels-kinesisvideosignalingchannelsclient.md)
 
-#### createKinesisVideoWebRTCStorage()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createKinesisVideoWebRTCStorage)
+#### createKinesisVideoWebRTCStorage()  [header link](class-aws-sdk-method-createkinesisvideowebrtcstorage.md)
 
 `
     public
@@ -4263,9 +4263,9 @@ $args = \[\]
 
 ##### Return values
 
-[KinesisVideoWebRTCStorageClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideoWebRTCStorage.KinesisVideoWebRTCStorageClient.html)
+[KinesisVideoWebRTCStorageClient](class-aws-kinesisvideowebrtcstorage-kinesisvideowebrtcstorageclient.md)
 
-#### createKms()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createKms)
+#### createKms()  [header link](class-aws-sdk-method-createkms.md)
 
 `
     public
@@ -4278,9 +4278,9 @@ $args = \[\]
 
 ##### Return values
 
-[KmsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Kms.KmsClient.html)
+[KmsClient](class-aws-kms-kmsclient.md)
 
-#### createLakeFormation()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createLakeFormation)
+#### createLakeFormation()  [header link](class-aws-sdk-method-createlakeformation.md)
 
 `
     public
@@ -4293,9 +4293,9 @@ $args = \[\]
 
 ##### Return values
 
-[LakeFormationClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LakeFormation.LakeFormationClient.html)
+[LakeFormationClient](class-aws-lakeformation-lakeformationclient.md)
 
-#### createLambda()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createLambda)
+#### createLambda()  [header link](class-aws-sdk-method-createlambda.md)
 
 `
     public
@@ -4308,9 +4308,9 @@ $args = \[\]
 
 ##### Return values
 
-[LambdaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Lambda.LambdaClient.html)
+[LambdaClient](class-aws-lambda-lambdaclient.md)
 
-#### createLaunchWizard()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createLaunchWizard)
+#### createLaunchWizard()  [header link](class-aws-sdk-method-createlaunchwizard.md)
 
 `
     public
@@ -4323,9 +4323,9 @@ $args = \[\]
 
 ##### Return values
 
-[LaunchWizardClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LaunchWizard.LaunchWizardClient.html)
+[LaunchWizardClient](class-aws-launchwizard-launchwizardclient.md)
 
-#### createLexModelBuildingService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createLexModelBuildingService)
+#### createLexModelBuildingService()  [header link](class-aws-sdk-method-createlexmodelbuildingservice.md)
 
 `
     public
@@ -4338,9 +4338,9 @@ $args = \[\]
 
 ##### Return values
 
-[LexModelBuildingServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LexModelBuildingService.LexModelBuildingServiceClient.html)
+[LexModelBuildingServiceClient](class-aws-lexmodelbuildingservice-lexmodelbuildingserviceclient.md)
 
-#### createLexModelsV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createLexModelsV2)
+#### createLexModelsV2()  [header link](class-aws-sdk-method-createlexmodelsv2.md)
 
 `
     public
@@ -4353,9 +4353,9 @@ $args = \[\]
 
 ##### Return values
 
-[LexModelsV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LexModelsV2.LexModelsV2Client.html)
+[LexModelsV2Client](class-aws-lexmodelsv2-lexmodelsv2client.md)
 
-#### createLexRuntimeService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createLexRuntimeService)
+#### createLexRuntimeService()  [header link](class-aws-sdk-method-createlexruntimeservice.md)
 
 `
     public
@@ -4368,9 +4368,9 @@ $args = \[\]
 
 ##### Return values
 
-[LexRuntimeServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LexRuntimeService.LexRuntimeServiceClient.html)
+[LexRuntimeServiceClient](class-aws-lexruntimeservice-lexruntimeserviceclient.md)
 
-#### createLexRuntimeV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createLexRuntimeV2)
+#### createLexRuntimeV2()  [header link](class-aws-sdk-method-createlexruntimev2.md)
 
 `
     public
@@ -4383,9 +4383,9 @@ $args = \[\]
 
 ##### Return values
 
-[LexRuntimeV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LexRuntimeV2.LexRuntimeV2Client.html)
+[LexRuntimeV2Client](class-aws-lexruntimev2-lexruntimev2client.md)
 
-#### createLicenseManager()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createLicenseManager)
+#### createLicenseManager()  [header link](class-aws-sdk-method-createlicensemanager.md)
 
 `
     public
@@ -4398,9 +4398,9 @@ $args = \[\]
 
 ##### Return values
 
-[LicenseManagerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LicenseManager.LicenseManagerClient.html)
+[LicenseManagerClient](class-aws-licensemanager-licensemanagerclient.md)
 
-#### createLicenseManagerLinuxSubscriptions()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createLicenseManagerLinuxSubscriptions)
+#### createLicenseManagerLinuxSubscriptions()  [header link](class-aws-sdk-method-createlicensemanagerlinuxsubscriptions.md)
 
 `
     public
@@ -4413,9 +4413,9 @@ $args = \[\]
 
 ##### Return values
 
-[LicenseManagerLinuxSubscriptionsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LicenseManagerLinuxSubscriptions.LicenseManagerLinuxSubscriptionsClient.html)
+[LicenseManagerLinuxSubscriptionsClient](class-aws-licensemanagerlinuxsubscriptions-licensemanagerlinuxsubscriptionsclient.md)
 
-#### createLicenseManagerUserSubscriptions()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createLicenseManagerUserSubscriptions)
+#### createLicenseManagerUserSubscriptions()  [header link](class-aws-sdk-method-createlicensemanagerusersubscriptions.md)
 
 `
     public
@@ -4428,9 +4428,9 @@ $args = \[\]
 
 ##### Return values
 
-[LicenseManagerUserSubscriptionsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LicenseManagerUserSubscriptions.LicenseManagerUserSubscriptionsClient.html)
+[LicenseManagerUserSubscriptionsClient](class-aws-licensemanagerusersubscriptions-licensemanagerusersubscriptionsclient.md)
 
-#### createLightsail()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createLightsail)
+#### createLightsail()  [header link](class-aws-sdk-method-createlightsail.md)
 
 `
     public
@@ -4443,9 +4443,9 @@ $args = \[\]
 
 ##### Return values
 
-[LightsailClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Lightsail.LightsailClient.html)
+[LightsailClient](class-aws-lightsail-lightsailclient.md)
 
-#### createLocationService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createLocationService)
+#### createLocationService()  [header link](class-aws-sdk-method-createlocationservice.md)
 
 `
     public
@@ -4458,9 +4458,9 @@ $args = \[\]
 
 ##### Return values
 
-[LocationServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LocationService.LocationServiceClient.html)
+[LocationServiceClient](class-aws-locationservice-locationserviceclient.md)
 
-#### createLookoutEquipment()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createLookoutEquipment)
+#### createLookoutEquipment()  [header link](class-aws-sdk-method-createlookoutequipment.md)
 
 `
     public
@@ -4473,9 +4473,9 @@ $args = \[\]
 
 ##### Return values
 
-[LookoutEquipmentClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LookoutEquipment.LookoutEquipmentClient.html)
+[LookoutEquipmentClient](class-aws-lookoutequipment-lookoutequipmentclient.md)
 
-#### createMachineLearning()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMachineLearning)
+#### createMachineLearning()  [header link](class-aws-sdk-method-createmachinelearning.md)
 
 `
     public
@@ -4488,9 +4488,9 @@ $args = \[\]
 
 ##### Return values
 
-[MachineLearningClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MachineLearning.MachineLearningClient.html)
+[MachineLearningClient](class-aws-machinelearning-machinelearningclient.md)
 
-#### createMacie2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMacie2)
+#### createMacie2()  [header link](class-aws-sdk-method-createmacie2.md)
 
 `
     public
@@ -4503,9 +4503,9 @@ $args = \[\]
 
 ##### Return values
 
-[Macie2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Macie2.Macie2Client.html)
+[Macie2Client](class-aws-macie2-macie2client.md)
 
-#### createMailManager()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMailManager)
+#### createMailManager()  [header link](class-aws-sdk-method-createmailmanager.md)
 
 `
     public
@@ -4518,9 +4518,9 @@ $args = \[\]
 
 ##### Return values
 
-[MailManagerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MailManager.MailManagerClient.html)
+[MailManagerClient](class-aws-mailmanager-mailmanagerclient.md)
 
-#### createMainframeModernization()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMainframeModernization)
+#### createMainframeModernization()  [header link](class-aws-sdk-method-createmainframemodernization.md)
 
 `
     public
@@ -4533,9 +4533,9 @@ $args = \[\]
 
 ##### Return values
 
-[MainframeModernizationClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MainframeModernization.MainframeModernizationClient.html)
+[MainframeModernizationClient](class-aws-mainframemodernization-mainframemodernizationclient.md)
 
-#### createManagedBlockchain()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createManagedBlockchain)
+#### createManagedBlockchain()  [header link](class-aws-sdk-method-createmanagedblockchain.md)
 
 `
     public
@@ -4548,9 +4548,9 @@ $args = \[\]
 
 ##### Return values
 
-[ManagedBlockchainClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedBlockchain.ManagedBlockchainClient.html)
+[ManagedBlockchainClient](class-aws-managedblockchain-managedblockchainclient.md)
 
-#### createManagedBlockchainQuery()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createManagedBlockchainQuery)
+#### createManagedBlockchainQuery()  [header link](class-aws-sdk-method-createmanagedblockchainquery.md)
 
 `
     public
@@ -4563,9 +4563,9 @@ $args = \[\]
 
 ##### Return values
 
-[ManagedBlockchainQueryClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedBlockchainQuery.ManagedBlockchainQueryClient.html)
+[ManagedBlockchainQueryClient](class-aws-managedblockchainquery-managedblockchainqueryclient.md)
 
-#### createManagedGrafana()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createManagedGrafana)
+#### createManagedGrafana()  [header link](class-aws-sdk-method-createmanagedgrafana.md)
 
 `
     public
@@ -4578,9 +4578,9 @@ $args = \[\]
 
 ##### Return values
 
-[ManagedGrafanaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedGrafana.ManagedGrafanaClient.html)
+[ManagedGrafanaClient](class-aws-managedgrafana-managedgrafanaclient.md)
 
-#### createMarketplaceAgreement()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMarketplaceAgreement)
+#### createMarketplaceAgreement()  [header link](class-aws-sdk-method-createmarketplaceagreement.md)
 
 `
     public
@@ -4593,9 +4593,9 @@ $args = \[\]
 
 ##### Return values
 
-[MarketplaceAgreementClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceAgreement.MarketplaceAgreementClient.html)
+[MarketplaceAgreementClient](class-aws-marketplaceagreement-marketplaceagreementclient.md)
 
-#### createMarketplaceCatalog()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMarketplaceCatalog)
+#### createMarketplaceCatalog()  [header link](class-aws-sdk-method-createmarketplacecatalog.md)
 
 `
     public
@@ -4608,9 +4608,9 @@ $args = \[\]
 
 ##### Return values
 
-[MarketplaceCatalogClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceCatalog.MarketplaceCatalogClient.html)
+[MarketplaceCatalogClient](class-aws-marketplacecatalog-marketplacecatalogclient.md)
 
-#### createMarketplaceCommerceAnalytics()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMarketplaceCommerceAnalytics)
+#### createMarketplaceCommerceAnalytics()  [header link](class-aws-sdk-method-createmarketplacecommerceanalytics.md)
 
 `
     public
@@ -4623,9 +4623,9 @@ $args = \[\]
 
 ##### Return values
 
-[MarketplaceCommerceAnalyticsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceCommerceAnalytics.MarketplaceCommerceAnalyticsClient.html)
+[MarketplaceCommerceAnalyticsClient](class-aws-marketplacecommerceanalytics-marketplacecommerceanalyticsclient.md)
 
-#### createMarketplaceDeployment()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMarketplaceDeployment)
+#### createMarketplaceDeployment()  [header link](class-aws-sdk-method-createmarketplacedeployment.md)
 
 `
     public
@@ -4638,9 +4638,9 @@ $args = \[\]
 
 ##### Return values
 
-[MarketplaceDeploymentClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceDeployment.MarketplaceDeploymentClient.html)
+[MarketplaceDeploymentClient](class-aws-marketplacedeployment-marketplacedeploymentclient.md)
 
-#### createMarketplaceEntitlementService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMarketplaceEntitlementService)
+#### createMarketplaceEntitlementService()  [header link](class-aws-sdk-method-createmarketplaceentitlementservice.md)
 
 `
     public
@@ -4653,9 +4653,9 @@ $args = \[\]
 
 ##### Return values
 
-[MarketplaceEntitlementServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceEntitlementService.MarketplaceEntitlementServiceClient.html)
+[MarketplaceEntitlementServiceClient](class-aws-marketplaceentitlementservice-marketplaceentitlementserviceclient.md)
 
-#### createMarketplaceMetering()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMarketplaceMetering)
+#### createMarketplaceMetering()  [header link](class-aws-sdk-method-createmarketplacemetering.md)
 
 `
     public
@@ -4668,9 +4668,9 @@ $args = \[\]
 
 ##### Return values
 
-[MarketplaceMeteringClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceMetering.MarketplaceMeteringClient.html)
+[MarketplaceMeteringClient](class-aws-marketplacemetering-marketplacemeteringclient.md)
 
-#### createMarketplaceReporting()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMarketplaceReporting)
+#### createMarketplaceReporting()  [header link](class-aws-sdk-method-createmarketplacereporting.md)
 
 `
     public
@@ -4683,9 +4683,9 @@ $args = \[\]
 
 ##### Return values
 
-[MarketplaceReportingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceReporting.MarketplaceReportingClient.html)
+[MarketplaceReportingClient](class-aws-marketplacereporting-marketplacereportingclient.md)
 
-#### createMediaConnect()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMediaConnect)
+#### createMediaConnect()  [header link](class-aws-sdk-method-createmediaconnect.md)
 
 `
     public
@@ -4698,9 +4698,9 @@ $args = \[\]
 
 ##### Return values
 
-[MediaConnectClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaConnect.MediaConnectClient.html)
+[MediaConnectClient](class-aws-mediaconnect-mediaconnectclient.md)
 
-#### createMediaConvert()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMediaConvert)
+#### createMediaConvert()  [header link](class-aws-sdk-method-createmediaconvert.md)
 
 `
     public
@@ -4713,9 +4713,9 @@ $args = \[\]
 
 ##### Return values
 
-[MediaConvertClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaConvert.MediaConvertClient.html)
+[MediaConvertClient](class-aws-mediaconvert-mediaconvertclient.md)
 
-#### createMediaLive()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMediaLive)
+#### createMediaLive()  [header link](class-aws-sdk-method-createmedialive.md)
 
 `
     public
@@ -4728,9 +4728,9 @@ $args = \[\]
 
 ##### Return values
 
-[MediaLiveClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaLive.MediaLiveClient.html)
+[MediaLiveClient](class-aws-medialive-medialiveclient.md)
 
-#### createMediaPackage()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMediaPackage)
+#### createMediaPackage()  [header link](class-aws-sdk-method-createmediapackage.md)
 
 `
     public
@@ -4743,9 +4743,9 @@ $args = \[\]
 
 ##### Return values
 
-[MediaPackageClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackage.MediaPackageClient.html)
+[MediaPackageClient](class-aws-mediapackage-mediapackageclient.md)
 
-#### createMediaPackageV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMediaPackageV2)
+#### createMediaPackageV2()  [header link](class-aws-sdk-method-createmediapackagev2.md)
 
 `
     public
@@ -4758,9 +4758,9 @@ $args = \[\]
 
 ##### Return values
 
-[MediaPackageV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackageV2.MediaPackageV2Client.html)
+[MediaPackageV2Client](class-aws-mediapackagev2-mediapackagev2client.md)
 
-#### createMediaPackageVod()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMediaPackageVod)
+#### createMediaPackageVod()  [header link](class-aws-sdk-method-createmediapackagevod.md)
 
 `
     public
@@ -4773,9 +4773,9 @@ $args = \[\]
 
 ##### Return values
 
-[MediaPackageVodClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaPackageVod.MediaPackageVodClient.html)
+[MediaPackageVodClient](class-aws-mediapackagevod-mediapackagevodclient.md)
 
-#### createMediaStore()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMediaStore)
+#### createMediaStore()  [header link](class-aws-sdk-method-createmediastore.md)
 
 `
     public
@@ -4788,9 +4788,9 @@ $args = \[\]
 
 ##### Return values
 
-[MediaStoreClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaStore.MediaStoreClient.html)
+[MediaStoreClient](class-aws-mediastore-mediastoreclient.md)
 
-#### createMediaStoreData()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMediaStoreData)
+#### createMediaStoreData()  [header link](class-aws-sdk-method-createmediastoredata.md)
 
 `
     public
@@ -4803,9 +4803,9 @@ $args = \[\]
 
 ##### Return values
 
-[MediaStoreDataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaStoreData.MediaStoreDataClient.html)
+[MediaStoreDataClient](class-aws-mediastoredata-mediastoredataclient.md)
 
-#### createMediaTailor()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMediaTailor)
+#### createMediaTailor()  [header link](class-aws-sdk-method-createmediatailor.md)
 
 `
     public
@@ -4818,9 +4818,9 @@ $args = \[\]
 
 ##### Return values
 
-[MediaTailorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaTailor.MediaTailorClient.html)
+[MediaTailorClient](class-aws-mediatailor-mediatailorclient.md)
 
-#### createMedicalImaging()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMedicalImaging)
+#### createMedicalImaging()  [header link](class-aws-sdk-method-createmedicalimaging.md)
 
 `
     public
@@ -4833,9 +4833,9 @@ $args = \[\]
 
 ##### Return values
 
-[MedicalImagingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MedicalImaging.MedicalImagingClient.html)
+[MedicalImagingClient](class-aws-medicalimaging-medicalimagingclient.md)
 
-#### createMemoryDB()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMemoryDB)
+#### createMemoryDB()  [header link](class-aws-sdk-method-creatememorydb.md)
 
 `
     public
@@ -4848,9 +4848,9 @@ $args = \[\]
 
 ##### Return values
 
-[MemoryDBClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MemoryDB.MemoryDBClient.html)
+[MemoryDBClient](class-aws-memorydb-memorydbclient.md)
 
-#### createmgn()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createmgn)
+#### createmgn()  [header link](class-aws-sdk-method-createmgn.md)
 
 `
     public
@@ -4863,9 +4863,9 @@ $args = \[\]
 
 ##### Return values
 
-[mgnClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.mgn.mgnClient.html)
+[mgnClient](class-aws-mgn-mgnclient.md)
 
-#### createMigrationHub()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMigrationHub)
+#### createMigrationHub()  [header link](class-aws-sdk-method-createmigrationhub.md)
 
 `
     public
@@ -4878,9 +4878,9 @@ $args = \[\]
 
 ##### Return values
 
-[MigrationHubClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHub.MigrationHubClient.html)
+[MigrationHubClient](class-aws-migrationhub-migrationhubclient.md)
 
-#### createMigrationHubConfig()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMigrationHubConfig)
+#### createMigrationHubConfig()  [header link](class-aws-sdk-method-createmigrationhubconfig.md)
 
 `
     public
@@ -4893,9 +4893,9 @@ $args = \[\]
 
 ##### Return values
 
-[MigrationHubConfigClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubConfig.MigrationHubConfigClient.html)
+[MigrationHubConfigClient](class-aws-migrationhubconfig-migrationhubconfigclient.md)
 
-#### createMigrationHubOrchestrator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMigrationHubOrchestrator)
+#### createMigrationHubOrchestrator()  [header link](class-aws-sdk-method-createmigrationhuborchestrator.md)
 
 `
     public
@@ -4908,9 +4908,9 @@ $args = \[\]
 
 ##### Return values
 
-[MigrationHubOrchestratorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubOrchestrator.MigrationHubOrchestratorClient.html)
+[MigrationHubOrchestratorClient](class-aws-migrationhuborchestrator-migrationhuborchestratorclient.md)
 
-#### createMigrationHubRefactorSpaces()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMigrationHubRefactorSpaces)
+#### createMigrationHubRefactorSpaces()  [header link](class-aws-sdk-method-createmigrationhubrefactorspaces.md)
 
 `
     public
@@ -4923,9 +4923,9 @@ $args = \[\]
 
 ##### Return values
 
-[MigrationHubRefactorSpacesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubRefactorSpaces.MigrationHubRefactorSpacesClient.html)
+[MigrationHubRefactorSpacesClient](class-aws-migrationhubrefactorspaces-migrationhubrefactorspacesclient.md)
 
-#### createMigrationHubStrategyRecommendations()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMigrationHubStrategyRecommendations)
+#### createMigrationHubStrategyRecommendations()  [header link](class-aws-sdk-method-createmigrationhubstrategyrecommendations.md)
 
 `
     public
@@ -4938,9 +4938,9 @@ $args = \[\]
 
 ##### Return values
 
-[MigrationHubStrategyRecommendationsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubStrategyRecommendations.MigrationHubStrategyRecommendationsClient.html)
+[MigrationHubStrategyRecommendationsClient](class-aws-migrationhubstrategyrecommendations-migrationhubstrategyrecommendationsclient.md)
 
-#### createMPA()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMPA)
+#### createMPA()  [header link](class-aws-sdk-method-creatempa.md)
 
 `
     public
@@ -4953,9 +4953,9 @@ $args = \[\]
 
 ##### Return values
 
-[MPAClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MPA.MPAClient.html)
+[MPAClient](class-aws-mpa-mpaclient.md)
 
-#### createMQ()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMQ)
+#### createMQ()  [header link](class-aws-sdk-method-createmq.md)
 
 `
     public
@@ -4968,9 +4968,9 @@ $args = \[\]
 
 ##### Return values
 
-[MQClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MQ.MQClient.html)
+[MQClient](class-aws-mq-mqclient.md)
 
-#### createMTurk()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMTurk)
+#### createMTurk()  [header link](class-aws-sdk-method-createmturk.md)
 
 `
     public
@@ -4983,9 +4983,9 @@ $args = \[\]
 
 ##### Return values
 
-[MTurkClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MTurk.MTurkClient.html)
+[MTurkClient](class-aws-mturk-mturkclient.md)
 
-#### createMultiRegionAccessAnalyzer()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionAccessAnalyzer)
+#### createMultiRegionAccessAnalyzer()  [header link](class-aws-sdk-method-createmultiregionaccessanalyzer.md)
 
 `
     public
@@ -5000,7 +5000,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionAccount()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionAccount)
+#### createMultiRegionAccount()  [header link](class-aws-sdk-method-createmultiregionaccount.md)
 
 `
     public
@@ -5015,7 +5015,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionAcm()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionAcm)
+#### createMultiRegionAcm()  [header link](class-aws-sdk-method-createmultiregionacm.md)
 
 `
     public
@@ -5030,7 +5030,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionACMPCA()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionACMPCA)
+#### createMultiRegionACMPCA()  [header link](class-aws-sdk-method-createmultiregionacmpca.md)
 
 `
     public
@@ -5045,7 +5045,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionAIOps()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionAIOps)
+#### createMultiRegionAIOps()  [header link](class-aws-sdk-method-createmultiregionaiops.md)
 
 `
     public
@@ -5060,7 +5060,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionAmplify()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionAmplify)
+#### createMultiRegionAmplify()  [header link](class-aws-sdk-method-createmultiregionamplify.md)
 
 `
     public
@@ -5075,7 +5075,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionAmplifyBackend()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionAmplifyBackend)
+#### createMultiRegionAmplifyBackend()  [header link](class-aws-sdk-method-createmultiregionamplifybackend.md)
 
 `
     public
@@ -5090,7 +5090,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionAmplifyUIBuilder()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionAmplifyUIBuilder)
+#### createMultiRegionAmplifyUIBuilder()  [header link](class-aws-sdk-method-createmultiregionamplifyuibuilder.md)
 
 `
     public
@@ -5105,7 +5105,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionApiGateway()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionApiGateway)
+#### createMultiRegionApiGateway()  [header link](class-aws-sdk-method-createmultiregionapigateway.md)
 
 `
     public
@@ -5120,7 +5120,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionApiGatewayManagementApi()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionApiGatewayManagementApi)
+#### createMultiRegionApiGatewayManagementApi()  [header link](class-aws-sdk-method-createmultiregionapigatewaymanagementapi.md)
 
 `
     public
@@ -5135,7 +5135,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionApiGatewayV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionApiGatewayV2)
+#### createMultiRegionApiGatewayV2()  [header link](class-aws-sdk-method-createmultiregionapigatewayv2.md)
 
 `
     public
@@ -5150,7 +5150,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionAppConfig()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionAppConfig)
+#### createMultiRegionAppConfig()  [header link](class-aws-sdk-method-createmultiregionappconfig.md)
 
 `
     public
@@ -5165,7 +5165,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionAppConfigData()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionAppConfigData)
+#### createMultiRegionAppConfigData()  [header link](class-aws-sdk-method-createmultiregionappconfigdata.md)
 
 `
     public
@@ -5180,7 +5180,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionAppFabric()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionAppFabric)
+#### createMultiRegionAppFabric()  [header link](class-aws-sdk-method-createmultiregionappfabric.md)
 
 `
     public
@@ -5195,7 +5195,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionAppflow()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionAppflow)
+#### createMultiRegionAppflow()  [header link](class-aws-sdk-method-createmultiregionappflow.md)
 
 `
     public
@@ -5210,7 +5210,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionAppIntegrationsService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionAppIntegrationsService)
+#### createMultiRegionAppIntegrationsService()  [header link](class-aws-sdk-method-createmultiregionappintegrationsservice.md)
 
 `
     public
@@ -5225,7 +5225,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionApplicationAutoScaling()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionApplicationAutoScaling)
+#### createMultiRegionApplicationAutoScaling()  [header link](class-aws-sdk-method-createmultiregionapplicationautoscaling.md)
 
 `
     public
@@ -5240,7 +5240,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionApplicationCostProfiler()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionApplicationCostProfiler)
+#### createMultiRegionApplicationCostProfiler()  [header link](class-aws-sdk-method-createmultiregionapplicationcostprofiler.md)
 
 `
     public
@@ -5255,7 +5255,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionApplicationDiscoveryService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionApplicationDiscoveryService)
+#### createMultiRegionApplicationDiscoveryService()  [header link](class-aws-sdk-method-createmultiregionapplicationdiscoveryservice.md)
 
 `
     public
@@ -5270,7 +5270,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionApplicationInsights()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionApplicationInsights)
+#### createMultiRegionApplicationInsights()  [header link](class-aws-sdk-method-createmultiregionapplicationinsights.md)
 
 `
     public
@@ -5285,7 +5285,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionApplicationSignals()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionApplicationSignals)
+#### createMultiRegionApplicationSignals()  [header link](class-aws-sdk-method-createmultiregionapplicationsignals.md)
 
 `
     public
@@ -5300,7 +5300,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionAppMesh()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionAppMesh)
+#### createMultiRegionAppMesh()  [header link](class-aws-sdk-method-createmultiregionappmesh.md)
 
 `
     public
@@ -5315,7 +5315,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionAppRegistry()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionAppRegistry)
+#### createMultiRegionAppRegistry()  [header link](class-aws-sdk-method-createmultiregionappregistry.md)
 
 `
     public
@@ -5330,7 +5330,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionAppRunner()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionAppRunner)
+#### createMultiRegionAppRunner()  [header link](class-aws-sdk-method-createmultiregionapprunner.md)
 
 `
     public
@@ -5345,7 +5345,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionAppstream()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionAppstream)
+#### createMultiRegionAppstream()  [header link](class-aws-sdk-method-createmultiregionappstream.md)
 
 `
     public
@@ -5360,7 +5360,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionAppSync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionAppSync)
+#### createMultiRegionAppSync()  [header link](class-aws-sdk-method-createmultiregionappsync.md)
 
 `
     public
@@ -5375,7 +5375,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionARCRegionSwitch()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionARCRegionSwitch)
+#### createMultiRegionARCRegionSwitch()  [header link](class-aws-sdk-method-createmultiregionarcregionswitch.md)
 
 `
     public
@@ -5390,7 +5390,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionARCZonalShift()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionARCZonalShift)
+#### createMultiRegionARCZonalShift()  [header link](class-aws-sdk-method-createmultiregionarczonalshift.md)
 
 `
     public
@@ -5405,7 +5405,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionArtifact()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionArtifact)
+#### createMultiRegionArtifact()  [header link](class-aws-sdk-method-createmultiregionartifact.md)
 
 `
     public
@@ -5420,7 +5420,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionAthena()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionAthena)
+#### createMultiRegionAthena()  [header link](class-aws-sdk-method-createmultiregionathena.md)
 
 `
     public
@@ -5435,7 +5435,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionAuditManager()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionAuditManager)
+#### createMultiRegionAuditManager()  [header link](class-aws-sdk-method-createmultiregionauditmanager.md)
 
 `
     public
@@ -5450,7 +5450,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionAugmentedAIRuntime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionAugmentedAIRuntime)
+#### createMultiRegionAugmentedAIRuntime()  [header link](class-aws-sdk-method-createmultiregionaugmentedairuntime.md)
 
 `
     public
@@ -5465,7 +5465,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionAutoScaling()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionAutoScaling)
+#### createMultiRegionAutoScaling()  [header link](class-aws-sdk-method-createmultiregionautoscaling.md)
 
 `
     public
@@ -5480,7 +5480,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionAutoScalingPlans()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionAutoScalingPlans)
+#### createMultiRegionAutoScalingPlans()  [header link](class-aws-sdk-method-createmultiregionautoscalingplans.md)
 
 `
     public
@@ -5495,7 +5495,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionB2bi()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionB2bi)
+#### createMultiRegionB2bi()  [header link](class-aws-sdk-method-createmultiregionb2bi.md)
 
 `
     public
@@ -5510,7 +5510,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionBackup()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionBackup)
+#### createMultiRegionBackup()  [header link](class-aws-sdk-method-createmultiregionbackup.md)
 
 `
     public
@@ -5525,7 +5525,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionBackupGateway()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionBackupGateway)
+#### createMultiRegionBackupGateway()  [header link](class-aws-sdk-method-createmultiregionbackupgateway.md)
 
 `
     public
@@ -5540,7 +5540,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionBackupSearch()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionBackupSearch)
+#### createMultiRegionBackupSearch()  [header link](class-aws-sdk-method-createmultiregionbackupsearch.md)
 
 `
     public
@@ -5555,7 +5555,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionBatch()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionBatch)
+#### createMultiRegionBatch()  [header link](class-aws-sdk-method-createmultiregionbatch.md)
 
 `
     public
@@ -5570,7 +5570,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionBCMDashboards()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionBCMDashboards)
+#### createMultiRegionBCMDashboards()  [header link](class-aws-sdk-method-createmultiregionbcmdashboards.md)
 
 `
     public
@@ -5585,7 +5585,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionBCMDataExports()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionBCMDataExports)
+#### createMultiRegionBCMDataExports()  [header link](class-aws-sdk-method-createmultiregionbcmdataexports.md)
 
 `
     public
@@ -5600,7 +5600,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionBCMPricingCalculator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionBCMPricingCalculator)
+#### createMultiRegionBCMPricingCalculator()  [header link](class-aws-sdk-method-createmultiregionbcmpricingcalculator.md)
 
 `
     public
@@ -5615,7 +5615,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionBCMRecommendedActions()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionBCMRecommendedActions)
+#### createMultiRegionBCMRecommendedActions()  [header link](class-aws-sdk-method-createmultiregionbcmrecommendedactions.md)
 
 `
     public
@@ -5630,7 +5630,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionBedrock()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionBedrock)
+#### createMultiRegionBedrock()  [header link](class-aws-sdk-method-createmultiregionbedrock.md)
 
 `
     public
@@ -5645,7 +5645,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionBedrockAgent()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionBedrockAgent)
+#### createMultiRegionBedrockAgent()  [header link](class-aws-sdk-method-createmultiregionbedrockagent.md)
 
 `
     public
@@ -5660,7 +5660,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionBedrockAgentCore()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionBedrockAgentCore)
+#### createMultiRegionBedrockAgentCore()  [header link](class-aws-sdk-method-createmultiregionbedrockagentcore.md)
 
 `
     public
@@ -5675,7 +5675,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionBedrockAgentCoreControl()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionBedrockAgentCoreControl)
+#### createMultiRegionBedrockAgentCoreControl()  [header link](class-aws-sdk-method-createmultiregionbedrockagentcorecontrol.md)
 
 `
     public
@@ -5690,7 +5690,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionBedrockAgentRuntime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionBedrockAgentRuntime)
+#### createMultiRegionBedrockAgentRuntime()  [header link](class-aws-sdk-method-createmultiregionbedrockagentruntime.md)
 
 `
     public
@@ -5705,7 +5705,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionBedrockDataAutomation()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionBedrockDataAutomation)
+#### createMultiRegionBedrockDataAutomation()  [header link](class-aws-sdk-method-createmultiregionbedrockdataautomation.md)
 
 `
     public
@@ -5720,7 +5720,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionBedrockDataAutomationRuntime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionBedrockDataAutomationRuntime)
+#### createMultiRegionBedrockDataAutomationRuntime()  [header link](class-aws-sdk-method-createmultiregionbedrockdataautomationruntime.md)
 
 `
     public
@@ -5735,7 +5735,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionBedrockRuntime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionBedrockRuntime)
+#### createMultiRegionBedrockRuntime()  [header link](class-aws-sdk-method-createmultiregionbedrockruntime.md)
 
 `
     public
@@ -5750,7 +5750,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionBilling()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionBilling)
+#### createMultiRegionBilling()  [header link](class-aws-sdk-method-createmultiregionbilling.md)
 
 `
     public
@@ -5765,7 +5765,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionBillingConductor()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionBillingConductor)
+#### createMultiRegionBillingConductor()  [header link](class-aws-sdk-method-createmultiregionbillingconductor.md)
 
 `
     public
@@ -5780,7 +5780,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionBraket()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionBraket)
+#### createMultiRegionBraket()  [header link](class-aws-sdk-method-createmultiregionbraket.md)
 
 `
     public
@@ -5795,7 +5795,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionBudgets()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionBudgets)
+#### createMultiRegionBudgets()  [header link](class-aws-sdk-method-createmultiregionbudgets.md)
 
 `
     public
@@ -5810,7 +5810,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionChatbot()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionChatbot)
+#### createMultiRegionChatbot()  [header link](class-aws-sdk-method-createmultiregionchatbot.md)
 
 `
     public
@@ -5825,7 +5825,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionChime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionChime)
+#### createMultiRegionChime()  [header link](class-aws-sdk-method-createmultiregionchime.md)
 
 `
     public
@@ -5840,7 +5840,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionChimeSDKIdentity()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionChimeSDKIdentity)
+#### createMultiRegionChimeSDKIdentity()  [header link](class-aws-sdk-method-createmultiregionchimesdkidentity.md)
 
 `
     public
@@ -5855,7 +5855,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionChimeSDKMediaPipelines()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionChimeSDKMediaPipelines)
+#### createMultiRegionChimeSDKMediaPipelines()  [header link](class-aws-sdk-method-createmultiregionchimesdkmediapipelines.md)
 
 `
     public
@@ -5870,7 +5870,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionChimeSDKMeetings()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionChimeSDKMeetings)
+#### createMultiRegionChimeSDKMeetings()  [header link](class-aws-sdk-method-createmultiregionchimesdkmeetings.md)
 
 `
     public
@@ -5885,7 +5885,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionChimeSDKMessaging()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionChimeSDKMessaging)
+#### createMultiRegionChimeSDKMessaging()  [header link](class-aws-sdk-method-createmultiregionchimesdkmessaging.md)
 
 `
     public
@@ -5900,7 +5900,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionChimeSDKVoice()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionChimeSDKVoice)
+#### createMultiRegionChimeSDKVoice()  [header link](class-aws-sdk-method-createmultiregionchimesdkvoice.md)
 
 `
     public
@@ -5915,7 +5915,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCleanRooms()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCleanRooms)
+#### createMultiRegionCleanRooms()  [header link](class-aws-sdk-method-createmultiregioncleanrooms.md)
 
 `
     public
@@ -5930,7 +5930,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCleanRoomsML()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCleanRoomsML)
+#### createMultiRegionCleanRoomsML()  [header link](class-aws-sdk-method-createmultiregioncleanroomsml.md)
 
 `
     public
@@ -5945,7 +5945,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionClient()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionClient)
+#### createMultiRegionClient()  [header link](class-aws-sdk-method-createmultiregionclient.md)
 
 `
     public
@@ -5958,7 +5958,7 @@ $name
 : array<string\|int, mixed>
 = \[\]
 
-#### createMultiRegionCloud9()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCloud9)
+#### createMultiRegionCloud9()  [header link](class-aws-sdk-method-createmultiregioncloud9.md)
 
 `
     public
@@ -5973,7 +5973,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCloudControlApi()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCloudControlApi)
+#### createMultiRegionCloudControlApi()  [header link](class-aws-sdk-method-createmultiregioncloudcontrolapi.md)
 
 `
     public
@@ -5988,7 +5988,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCloudDirectory()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCloudDirectory)
+#### createMultiRegionCloudDirectory()  [header link](class-aws-sdk-method-createmultiregionclouddirectory.md)
 
 `
     public
@@ -6003,7 +6003,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCloudFormation()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCloudFormation)
+#### createMultiRegionCloudFormation()  [header link](class-aws-sdk-method-createmultiregioncloudformation.md)
 
 `
     public
@@ -6018,7 +6018,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCloudFront()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCloudFront)
+#### createMultiRegionCloudFront()  [header link](class-aws-sdk-method-createmultiregioncloudfront.md)
 
 `
     public
@@ -6033,7 +6033,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCloudFrontKeyValueStore()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCloudFrontKeyValueStore)
+#### createMultiRegionCloudFrontKeyValueStore()  [header link](class-aws-sdk-method-createmultiregioncloudfrontkeyvaluestore.md)
 
 `
     public
@@ -6048,7 +6048,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCloudHsm()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCloudHsm)
+#### createMultiRegionCloudHsm()  [header link](class-aws-sdk-method-createmultiregioncloudhsm.md)
 
 `
     public
@@ -6063,7 +6063,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCloudHSMV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCloudHSMV2)
+#### createMultiRegionCloudHSMV2()  [header link](class-aws-sdk-method-createmultiregioncloudhsmv2.md)
 
 `
     public
@@ -6078,7 +6078,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCloudSearch()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCloudSearch)
+#### createMultiRegionCloudSearch()  [header link](class-aws-sdk-method-createmultiregioncloudsearch.md)
 
 `
     public
@@ -6093,7 +6093,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCloudSearchDomain()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCloudSearchDomain)
+#### createMultiRegionCloudSearchDomain()  [header link](class-aws-sdk-method-createmultiregioncloudsearchdomain.md)
 
 `
     public
@@ -6108,7 +6108,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCloudTrail()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCloudTrail)
+#### createMultiRegionCloudTrail()  [header link](class-aws-sdk-method-createmultiregioncloudtrail.md)
 
 `
     public
@@ -6123,7 +6123,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCloudTrailData()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCloudTrailData)
+#### createMultiRegionCloudTrailData()  [header link](class-aws-sdk-method-createmultiregioncloudtraildata.md)
 
 `
     public
@@ -6138,7 +6138,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCloudWatch()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCloudWatch)
+#### createMultiRegionCloudWatch()  [header link](class-aws-sdk-method-createmultiregioncloudwatch.md)
 
 `
     public
@@ -6153,7 +6153,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCloudWatchEvents()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCloudWatchEvents)
+#### createMultiRegionCloudWatchEvents()  [header link](class-aws-sdk-method-createmultiregioncloudwatchevents.md)
 
 `
     public
@@ -6168,7 +6168,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCloudWatchLogs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCloudWatchLogs)
+#### createMultiRegionCloudWatchLogs()  [header link](class-aws-sdk-method-createmultiregioncloudwatchlogs.md)
 
 `
     public
@@ -6183,7 +6183,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCloudWatchRUM()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCloudWatchRUM)
+#### createMultiRegionCloudWatchRUM()  [header link](class-aws-sdk-method-createmultiregioncloudwatchrum.md)
 
 `
     public
@@ -6198,7 +6198,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCodeArtifact()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCodeArtifact)
+#### createMultiRegionCodeArtifact()  [header link](class-aws-sdk-method-createmultiregioncodeartifact.md)
 
 `
     public
@@ -6213,7 +6213,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCodeBuild()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCodeBuild)
+#### createMultiRegionCodeBuild()  [header link](class-aws-sdk-method-createmultiregioncodebuild.md)
 
 `
     public
@@ -6228,7 +6228,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCodeCatalyst()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCodeCatalyst)
+#### createMultiRegionCodeCatalyst()  [header link](class-aws-sdk-method-createmultiregioncodecatalyst.md)
 
 `
     public
@@ -6243,7 +6243,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCodeCommit()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCodeCommit)
+#### createMultiRegionCodeCommit()  [header link](class-aws-sdk-method-createmultiregioncodecommit.md)
 
 `
     public
@@ -6258,7 +6258,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCodeConnections()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCodeConnections)
+#### createMultiRegionCodeConnections()  [header link](class-aws-sdk-method-createmultiregioncodeconnections.md)
 
 `
     public
@@ -6273,7 +6273,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCodeDeploy()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCodeDeploy)
+#### createMultiRegionCodeDeploy()  [header link](class-aws-sdk-method-createmultiregioncodedeploy.md)
 
 `
     public
@@ -6288,7 +6288,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCodeGuruProfiler()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCodeGuruProfiler)
+#### createMultiRegionCodeGuruProfiler()  [header link](class-aws-sdk-method-createmultiregioncodeguruprofiler.md)
 
 `
     public
@@ -6303,7 +6303,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCodeGuruReviewer()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCodeGuruReviewer)
+#### createMultiRegionCodeGuruReviewer()  [header link](class-aws-sdk-method-createmultiregioncodegurureviewer.md)
 
 `
     public
@@ -6318,7 +6318,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCodeGuruSecurity()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCodeGuruSecurity)
+#### createMultiRegionCodeGuruSecurity()  [header link](class-aws-sdk-method-createmultiregioncodegurusecurity.md)
 
 `
     public
@@ -6333,7 +6333,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCodePipeline()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCodePipeline)
+#### createMultiRegionCodePipeline()  [header link](class-aws-sdk-method-createmultiregioncodepipeline.md)
 
 `
     public
@@ -6348,7 +6348,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCodeStarconnections()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCodeStarconnections)
+#### createMultiRegionCodeStarconnections()  [header link](class-aws-sdk-method-createmultiregioncodestarconnections.md)
 
 `
     public
@@ -6363,7 +6363,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCodeStarNotifications()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCodeStarNotifications)
+#### createMultiRegionCodeStarNotifications()  [header link](class-aws-sdk-method-createmultiregioncodestarnotifications.md)
 
 `
     public
@@ -6378,7 +6378,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCognitoIdentity()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCognitoIdentity)
+#### createMultiRegionCognitoIdentity()  [header link](class-aws-sdk-method-createmultiregioncognitoidentity.md)
 
 `
     public
@@ -6393,7 +6393,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCognitoIdentityProvider()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCognitoIdentityProvider)
+#### createMultiRegionCognitoIdentityProvider()  [header link](class-aws-sdk-method-createmultiregioncognitoidentityprovider.md)
 
 `
     public
@@ -6408,7 +6408,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCognitoSync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCognitoSync)
+#### createMultiRegionCognitoSync()  [header link](class-aws-sdk-method-createmultiregioncognitosync.md)
 
 `
     public
@@ -6423,7 +6423,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionComprehend()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionComprehend)
+#### createMultiRegionComprehend()  [header link](class-aws-sdk-method-createmultiregioncomprehend.md)
 
 `
     public
@@ -6438,7 +6438,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionComprehendMedical()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionComprehendMedical)
+#### createMultiRegionComprehendMedical()  [header link](class-aws-sdk-method-createmultiregioncomprehendmedical.md)
 
 `
     public
@@ -6453,7 +6453,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionComputeOptimizer()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionComputeOptimizer)
+#### createMultiRegionComputeOptimizer()  [header link](class-aws-sdk-method-createmultiregioncomputeoptimizer.md)
 
 `
     public
@@ -6468,7 +6468,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionComputeOptimizerAutomation()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionComputeOptimizerAutomation)
+#### createMultiRegionComputeOptimizerAutomation()  [header link](class-aws-sdk-method-createmultiregioncomputeoptimizerautomation.md)
 
 `
     public
@@ -6483,7 +6483,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionConfigService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionConfigService)
+#### createMultiRegionConfigService()  [header link](class-aws-sdk-method-createmultiregionconfigservice.md)
 
 `
     public
@@ -6498,7 +6498,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionConnect()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionConnect)
+#### createMultiRegionConnect()  [header link](class-aws-sdk-method-createmultiregionconnect.md)
 
 `
     public
@@ -6513,7 +6513,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionConnectCampaignService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionConnectCampaignService)
+#### createMultiRegionConnectCampaignService()  [header link](class-aws-sdk-method-createmultiregionconnectcampaignservice.md)
 
 `
     public
@@ -6528,7 +6528,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionConnectCampaignsV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionConnectCampaignsV2)
+#### createMultiRegionConnectCampaignsV2()  [header link](class-aws-sdk-method-createmultiregionconnectcampaignsv2.md)
 
 `
     public
@@ -6543,7 +6543,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionConnectCases()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionConnectCases)
+#### createMultiRegionConnectCases()  [header link](class-aws-sdk-method-createmultiregionconnectcases.md)
 
 `
     public
@@ -6558,7 +6558,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionConnectContactLens()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionConnectContactLens)
+#### createMultiRegionConnectContactLens()  [header link](class-aws-sdk-method-createmultiregionconnectcontactlens.md)
 
 `
     public
@@ -6573,7 +6573,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionConnectHealth()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionConnectHealth)
+#### createMultiRegionConnectHealth()  [header link](class-aws-sdk-method-createmultiregionconnecthealth.md)
 
 `
     public
@@ -6588,7 +6588,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionConnectParticipant()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionConnectParticipant)
+#### createMultiRegionConnectParticipant()  [header link](class-aws-sdk-method-createmultiregionconnectparticipant.md)
 
 `
     public
@@ -6603,7 +6603,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionConnectWisdomService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionConnectWisdomService)
+#### createMultiRegionConnectWisdomService()  [header link](class-aws-sdk-method-createmultiregionconnectwisdomservice.md)
 
 `
     public
@@ -6618,7 +6618,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionControlCatalog()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionControlCatalog)
+#### createMultiRegionControlCatalog()  [header link](class-aws-sdk-method-createmultiregioncontrolcatalog.md)
 
 `
     public
@@ -6633,7 +6633,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionControlTower()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionControlTower)
+#### createMultiRegionControlTower()  [header link](class-aws-sdk-method-createmultiregioncontroltower.md)
 
 `
     public
@@ -6648,7 +6648,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCostandUsageReportService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCostandUsageReportService)
+#### createMultiRegionCostandUsageReportService()  [header link](class-aws-sdk-method-createmultiregioncostandusagereportservice.md)
 
 `
     public
@@ -6663,7 +6663,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCostExplorer()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCostExplorer)
+#### createMultiRegionCostExplorer()  [header link](class-aws-sdk-method-createmultiregioncostexplorer.md)
 
 `
     public
@@ -6678,7 +6678,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCostOptimizationHub()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCostOptimizationHub)
+#### createMultiRegionCostOptimizationHub()  [header link](class-aws-sdk-method-createmultiregioncostoptimizationhub.md)
 
 `
     public
@@ -6693,7 +6693,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionCustomerProfiles()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionCustomerProfiles)
+#### createMultiRegionCustomerProfiles()  [header link](class-aws-sdk-method-createmultiregioncustomerprofiles.md)
 
 `
     public
@@ -6708,7 +6708,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionDatabaseMigrationService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionDatabaseMigrationService)
+#### createMultiRegionDatabaseMigrationService()  [header link](class-aws-sdk-method-createmultiregiondatabasemigrationservice.md)
 
 `
     public
@@ -6723,7 +6723,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionDataExchange()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionDataExchange)
+#### createMultiRegionDataExchange()  [header link](class-aws-sdk-method-createmultiregiondataexchange.md)
 
 `
     public
@@ -6738,7 +6738,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionDataPipeline()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionDataPipeline)
+#### createMultiRegionDataPipeline()  [header link](class-aws-sdk-method-createmultiregiondatapipeline.md)
 
 `
     public
@@ -6753,7 +6753,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionDataSync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionDataSync)
+#### createMultiRegionDataSync()  [header link](class-aws-sdk-method-createmultiregiondatasync.md)
 
 `
     public
@@ -6768,7 +6768,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionDataZone()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionDataZone)
+#### createMultiRegionDataZone()  [header link](class-aws-sdk-method-createmultiregiondatazone.md)
 
 `
     public
@@ -6783,7 +6783,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionDAX()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionDAX)
+#### createMultiRegionDAX()  [header link](class-aws-sdk-method-createmultiregiondax.md)
 
 `
     public
@@ -6798,7 +6798,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionDeadline()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionDeadline)
+#### createMultiRegionDeadline()  [header link](class-aws-sdk-method-createmultiregiondeadline.md)
 
 `
     public
@@ -6813,7 +6813,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionDetective()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionDetective)
+#### createMultiRegionDetective()  [header link](class-aws-sdk-method-createmultiregiondetective.md)
 
 `
     public
@@ -6828,7 +6828,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionDeviceFarm()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionDeviceFarm)
+#### createMultiRegionDeviceFarm()  [header link](class-aws-sdk-method-createmultiregiondevicefarm.md)
 
 `
     public
@@ -6843,7 +6843,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionDevOpsAgent()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionDevOpsAgent)
+#### createMultiRegionDevOpsAgent()  [header link](class-aws-sdk-method-createmultiregiondevopsagent.md)
 
 `
     public
@@ -6858,7 +6858,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionDevOpsGuru()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionDevOpsGuru)
+#### createMultiRegionDevOpsGuru()  [header link](class-aws-sdk-method-createmultiregiondevopsguru.md)
 
 `
     public
@@ -6873,7 +6873,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionDirectConnect()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionDirectConnect)
+#### createMultiRegionDirectConnect()  [header link](class-aws-sdk-method-createmultiregiondirectconnect.md)
 
 `
     public
@@ -6888,7 +6888,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionDirectoryService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionDirectoryService)
+#### createMultiRegionDirectoryService()  [header link](class-aws-sdk-method-createmultiregiondirectoryservice.md)
 
 `
     public
@@ -6903,7 +6903,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionDirectoryServiceData()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionDirectoryServiceData)
+#### createMultiRegionDirectoryServiceData()  [header link](class-aws-sdk-method-createmultiregiondirectoryservicedata.md)
 
 `
     public
@@ -6918,7 +6918,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionDLM()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionDLM)
+#### createMultiRegionDLM()  [header link](class-aws-sdk-method-createmultiregiondlm.md)
 
 `
     public
@@ -6933,7 +6933,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionDocDB()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionDocDB)
+#### createMultiRegionDocDB()  [header link](class-aws-sdk-method-createmultiregiondocdb.md)
 
 `
     public
@@ -6948,7 +6948,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionDocDBElastic()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionDocDBElastic)
+#### createMultiRegionDocDBElastic()  [header link](class-aws-sdk-method-createmultiregiondocdbelastic.md)
 
 `
     public
@@ -6963,7 +6963,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegiondrs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegiondrs)
+#### createMultiRegiondrs()  [header link](class-aws-sdk-method-createmultiregiondrs.md)
 
 `
     public
@@ -6978,7 +6978,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionDSQL()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionDSQL)
+#### createMultiRegionDSQL()  [header link](class-aws-sdk-method-createmultiregiondsql.md)
 
 `
     public
@@ -6993,7 +6993,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionDynamoDb()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionDynamoDb)
+#### createMultiRegionDynamoDb()  [header link](class-aws-sdk-method-createmultiregiondynamodb.md)
 
 `
     public
@@ -7008,7 +7008,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionDynamoDbStreams()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionDynamoDbStreams)
+#### createMultiRegionDynamoDbStreams()  [header link](class-aws-sdk-method-createmultiregiondynamodbstreams.md)
 
 `
     public
@@ -7023,7 +7023,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionEBS()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionEBS)
+#### createMultiRegionEBS()  [header link](class-aws-sdk-method-createmultiregionebs.md)
 
 `
     public
@@ -7038,7 +7038,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionEc2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionEc2)
+#### createMultiRegionEc2()  [header link](class-aws-sdk-method-createmultiregionec2.md)
 
 `
     public
@@ -7053,7 +7053,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionEC2InstanceConnect()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionEC2InstanceConnect)
+#### createMultiRegionEC2InstanceConnect()  [header link](class-aws-sdk-method-createmultiregionec2instanceconnect.md)
 
 `
     public
@@ -7068,7 +7068,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionEcr()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionEcr)
+#### createMultiRegionEcr()  [header link](class-aws-sdk-method-createmultiregionecr.md)
 
 `
     public
@@ -7083,7 +7083,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionECRPublic()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionECRPublic)
+#### createMultiRegionECRPublic()  [header link](class-aws-sdk-method-createmultiregionecrpublic.md)
 
 `
     public
@@ -7098,7 +7098,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionEcs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionEcs)
+#### createMultiRegionEcs()  [header link](class-aws-sdk-method-createmultiregionecs.md)
 
 `
     public
@@ -7113,7 +7113,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionEfs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionEfs)
+#### createMultiRegionEfs()  [header link](class-aws-sdk-method-createmultiregionefs.md)
 
 `
     public
@@ -7128,7 +7128,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionEKS()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionEKS)
+#### createMultiRegionEKS()  [header link](class-aws-sdk-method-createmultiregioneks.md)
 
 `
     public
@@ -7143,7 +7143,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionEKSAuth()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionEKSAuth)
+#### createMultiRegionEKSAuth()  [header link](class-aws-sdk-method-createmultiregioneksauth.md)
 
 `
     public
@@ -7158,7 +7158,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionElastiCache()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionElastiCache)
+#### createMultiRegionElastiCache()  [header link](class-aws-sdk-method-createmultiregionelasticache.md)
 
 `
     public
@@ -7173,7 +7173,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionElasticBeanstalk()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionElasticBeanstalk)
+#### createMultiRegionElasticBeanstalk()  [header link](class-aws-sdk-method-createmultiregionelasticbeanstalk.md)
 
 `
     public
@@ -7188,7 +7188,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionElasticLoadBalancing()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionElasticLoadBalancing)
+#### createMultiRegionElasticLoadBalancing()  [header link](class-aws-sdk-method-createmultiregionelasticloadbalancing.md)
 
 `
     public
@@ -7203,7 +7203,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionElasticLoadBalancingV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionElasticLoadBalancingV2)
+#### createMultiRegionElasticLoadBalancingV2()  [header link](class-aws-sdk-method-createmultiregionelasticloadbalancingv2.md)
 
 `
     public
@@ -7218,7 +7218,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionElasticsearchService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionElasticsearchService)
+#### createMultiRegionElasticsearchService()  [header link](class-aws-sdk-method-createmultiregionelasticsearchservice.md)
 
 `
     public
@@ -7233,7 +7233,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionElementalInference()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionElementalInference)
+#### createMultiRegionElementalInference()  [header link](class-aws-sdk-method-createmultiregionelementalinference.md)
 
 `
     public
@@ -7248,7 +7248,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionEmr()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionEmr)
+#### createMultiRegionEmr()  [header link](class-aws-sdk-method-createmultiregionemr.md)
 
 `
     public
@@ -7263,7 +7263,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionEMRContainers()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionEMRContainers)
+#### createMultiRegionEMRContainers()  [header link](class-aws-sdk-method-createmultiregionemrcontainers.md)
 
 `
     public
@@ -7278,7 +7278,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionEMRServerless()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionEMRServerless)
+#### createMultiRegionEMRServerless()  [header link](class-aws-sdk-method-createmultiregionemrserverless.md)
 
 `
     public
@@ -7293,7 +7293,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionEntityResolution()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionEntityResolution)
+#### createMultiRegionEntityResolution()  [header link](class-aws-sdk-method-createmultiregionentityresolution.md)
 
 `
     public
@@ -7308,7 +7308,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionEventBridge()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionEventBridge)
+#### createMultiRegionEventBridge()  [header link](class-aws-sdk-method-createmultiregioneventbridge.md)
 
 `
     public
@@ -7323,7 +7323,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionEvs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionEvs)
+#### createMultiRegionEvs()  [header link](class-aws-sdk-method-createmultiregionevs.md)
 
 `
     public
@@ -7338,7 +7338,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionfinspace()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionfinspace)
+#### createMultiRegionfinspace()  [header link](class-aws-sdk-method-createmultiregionfinspace.md)
 
 `
     public
@@ -7353,7 +7353,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionFinSpaceData()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionFinSpaceData)
+#### createMultiRegionFinSpaceData()  [header link](class-aws-sdk-method-createmultiregionfinspacedata.md)
 
 `
     public
@@ -7368,7 +7368,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionFirehose()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionFirehose)
+#### createMultiRegionFirehose()  [header link](class-aws-sdk-method-createmultiregionfirehose.md)
 
 `
     public
@@ -7383,7 +7383,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionFIS()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionFIS)
+#### createMultiRegionFIS()  [header link](class-aws-sdk-method-createmultiregionfis.md)
 
 `
     public
@@ -7398,7 +7398,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionFMS()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionFMS)
+#### createMultiRegionFMS()  [header link](class-aws-sdk-method-createmultiregionfms.md)
 
 `
     public
@@ -7413,7 +7413,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionForecastQueryService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionForecastQueryService)
+#### createMultiRegionForecastQueryService()  [header link](class-aws-sdk-method-createmultiregionforecastqueryservice.md)
 
 `
     public
@@ -7428,7 +7428,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionForecastService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionForecastService)
+#### createMultiRegionForecastService()  [header link](class-aws-sdk-method-createmultiregionforecastservice.md)
 
 `
     public
@@ -7443,7 +7443,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionFraudDetector()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionFraudDetector)
+#### createMultiRegionFraudDetector()  [header link](class-aws-sdk-method-createmultiregionfrauddetector.md)
 
 `
     public
@@ -7458,7 +7458,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionFreeTier()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionFreeTier)
+#### createMultiRegionFreeTier()  [header link](class-aws-sdk-method-createmultiregionfreetier.md)
 
 `
     public
@@ -7473,7 +7473,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionFSx()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionFSx)
+#### createMultiRegionFSx()  [header link](class-aws-sdk-method-createmultiregionfsx.md)
 
 `
     public
@@ -7488,7 +7488,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionGameLift()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionGameLift)
+#### createMultiRegionGameLift()  [header link](class-aws-sdk-method-createmultiregiongamelift.md)
 
 `
     public
@@ -7503,7 +7503,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionGameLiftStreams()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionGameLiftStreams)
+#### createMultiRegionGameLiftStreams()  [header link](class-aws-sdk-method-createmultiregiongameliftstreams.md)
 
 `
     public
@@ -7518,7 +7518,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionGeoMaps()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionGeoMaps)
+#### createMultiRegionGeoMaps()  [header link](class-aws-sdk-method-createmultiregiongeomaps.md)
 
 `
     public
@@ -7533,7 +7533,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionGeoPlaces()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionGeoPlaces)
+#### createMultiRegionGeoPlaces()  [header link](class-aws-sdk-method-createmultiregiongeoplaces.md)
 
 `
     public
@@ -7548,7 +7548,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionGeoRoutes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionGeoRoutes)
+#### createMultiRegionGeoRoutes()  [header link](class-aws-sdk-method-createmultiregiongeoroutes.md)
 
 `
     public
@@ -7563,7 +7563,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionGlacier()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionGlacier)
+#### createMultiRegionGlacier()  [header link](class-aws-sdk-method-createmultiregionglacier.md)
 
 `
     public
@@ -7578,7 +7578,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionGlobalAccelerator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionGlobalAccelerator)
+#### createMultiRegionGlobalAccelerator()  [header link](class-aws-sdk-method-createmultiregionglobalaccelerator.md)
 
 `
     public
@@ -7593,7 +7593,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionGlue()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionGlue)
+#### createMultiRegionGlue()  [header link](class-aws-sdk-method-createmultiregionglue.md)
 
 `
     public
@@ -7608,7 +7608,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionGlueDataBrew()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionGlueDataBrew)
+#### createMultiRegionGlueDataBrew()  [header link](class-aws-sdk-method-createmultiregiongluedatabrew.md)
 
 `
     public
@@ -7623,7 +7623,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionGreengrass()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionGreengrass)
+#### createMultiRegionGreengrass()  [header link](class-aws-sdk-method-createmultiregiongreengrass.md)
 
 `
     public
@@ -7638,7 +7638,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionGreengrassV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionGreengrassV2)
+#### createMultiRegionGreengrassV2()  [header link](class-aws-sdk-method-createmultiregiongreengrassv2.md)
 
 `
     public
@@ -7653,7 +7653,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionGroundStation()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionGroundStation)
+#### createMultiRegionGroundStation()  [header link](class-aws-sdk-method-createmultiregiongroundstation.md)
 
 `
     public
@@ -7668,7 +7668,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionGuardDuty()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionGuardDuty)
+#### createMultiRegionGuardDuty()  [header link](class-aws-sdk-method-createmultiregionguardduty.md)
 
 `
     public
@@ -7683,7 +7683,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionHealth()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionHealth)
+#### createMultiRegionHealth()  [header link](class-aws-sdk-method-createmultiregionhealth.md)
 
 `
     public
@@ -7698,7 +7698,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionHealthLake()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionHealthLake)
+#### createMultiRegionHealthLake()  [header link](class-aws-sdk-method-createmultiregionhealthlake.md)
 
 `
     public
@@ -7713,7 +7713,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionIam()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionIam)
+#### createMultiRegionIam()  [header link](class-aws-sdk-method-createmultiregioniam.md)
 
 `
     public
@@ -7728,7 +7728,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionIdentityStore()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionIdentityStore)
+#### createMultiRegionIdentityStore()  [header link](class-aws-sdk-method-createmultiregionidentitystore.md)
 
 `
     public
@@ -7743,7 +7743,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionimagebuilder()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionimagebuilder)
+#### createMultiRegionimagebuilder()  [header link](class-aws-sdk-method-createmultiregionimagebuilder.md)
 
 `
     public
@@ -7758,7 +7758,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionImportExport()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionImportExport)
+#### createMultiRegionImportExport()  [header link](class-aws-sdk-method-createmultiregionimportexport.md)
 
 `
     public
@@ -7773,7 +7773,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionInspector()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionInspector)
+#### createMultiRegionInspector()  [header link](class-aws-sdk-method-createmultiregioninspector.md)
 
 `
     public
@@ -7788,7 +7788,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionInspector2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionInspector2)
+#### createMultiRegionInspector2()  [header link](class-aws-sdk-method-createmultiregioninspector2.md)
 
 `
     public
@@ -7803,7 +7803,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionInspectorScan()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionInspectorScan)
+#### createMultiRegionInspectorScan()  [header link](class-aws-sdk-method-createmultiregioninspectorscan.md)
 
 `
     public
@@ -7818,7 +7818,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionInternetMonitor()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionInternetMonitor)
+#### createMultiRegionInternetMonitor()  [header link](class-aws-sdk-method-createmultiregioninternetmonitor.md)
 
 `
     public
@@ -7833,7 +7833,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionInvoicing()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionInvoicing)
+#### createMultiRegionInvoicing()  [header link](class-aws-sdk-method-createmultiregioninvoicing.md)
 
 `
     public
@@ -7848,7 +7848,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionIot()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionIot)
+#### createMultiRegionIot()  [header link](class-aws-sdk-method-createmultiregioniot.md)
 
 `
     public
@@ -7863,7 +7863,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionIotDataPlane()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionIotDataPlane)
+#### createMultiRegionIotDataPlane()  [header link](class-aws-sdk-method-createmultiregioniotdataplane.md)
 
 `
     public
@@ -7878,7 +7878,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionIoTDeviceAdvisor()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionIoTDeviceAdvisor)
+#### createMultiRegionIoTDeviceAdvisor()  [header link](class-aws-sdk-method-createmultiregioniotdeviceadvisor.md)
 
 `
     public
@@ -7893,7 +7893,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionIoTEvents()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionIoTEvents)
+#### createMultiRegionIoTEvents()  [header link](class-aws-sdk-method-createmultiregioniotevents.md)
 
 `
     public
@@ -7908,7 +7908,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionIoTEventsData()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionIoTEventsData)
+#### createMultiRegionIoTEventsData()  [header link](class-aws-sdk-method-createmultiregionioteventsdata.md)
 
 `
     public
@@ -7923,7 +7923,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionIoTFleetWise()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionIoTFleetWise)
+#### createMultiRegionIoTFleetWise()  [header link](class-aws-sdk-method-createmultiregioniotfleetwise.md)
 
 `
     public
@@ -7938,7 +7938,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionIoTJobsDataPlane()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionIoTJobsDataPlane)
+#### createMultiRegionIoTJobsDataPlane()  [header link](class-aws-sdk-method-createmultiregioniotjobsdataplane.md)
 
 `
     public
@@ -7953,7 +7953,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionIoTManagedIntegrations()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionIoTManagedIntegrations)
+#### createMultiRegionIoTManagedIntegrations()  [header link](class-aws-sdk-method-createmultiregioniotmanagedintegrations.md)
 
 `
     public
@@ -7968,7 +7968,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionIoTSecureTunneling()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionIoTSecureTunneling)
+#### createMultiRegionIoTSecureTunneling()  [header link](class-aws-sdk-method-createmultiregioniotsecuretunneling.md)
 
 `
     public
@@ -7983,7 +7983,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionIoTSiteWise()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionIoTSiteWise)
+#### createMultiRegionIoTSiteWise()  [header link](class-aws-sdk-method-createmultiregioniotsitewise.md)
 
 `
     public
@@ -7998,7 +7998,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionIoTThingsGraph()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionIoTThingsGraph)
+#### createMultiRegionIoTThingsGraph()  [header link](class-aws-sdk-method-createmultiregioniotthingsgraph.md)
 
 `
     public
@@ -8013,7 +8013,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionIoTTwinMaker()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionIoTTwinMaker)
+#### createMultiRegionIoTTwinMaker()  [header link](class-aws-sdk-method-createmultiregioniottwinmaker.md)
 
 `
     public
@@ -8028,7 +8028,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionIoTWireless()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionIoTWireless)
+#### createMultiRegionIoTWireless()  [header link](class-aws-sdk-method-createmultiregioniotwireless.md)
 
 `
     public
@@ -8043,7 +8043,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionIVS()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionIVS)
+#### createMultiRegionIVS()  [header link](class-aws-sdk-method-createmultiregionivs.md)
 
 `
     public
@@ -8058,7 +8058,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionivschat()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionivschat)
+#### createMultiRegionivschat()  [header link](class-aws-sdk-method-createmultiregionivschat.md)
 
 `
     public
@@ -8073,7 +8073,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionIVSRealTime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionIVSRealTime)
+#### createMultiRegionIVSRealTime()  [header link](class-aws-sdk-method-createmultiregionivsrealtime.md)
 
 `
     public
@@ -8088,7 +8088,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionKafka()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionKafka)
+#### createMultiRegionKafka()  [header link](class-aws-sdk-method-createmultiregionkafka.md)
 
 `
     public
@@ -8103,7 +8103,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionKafkaConnect()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionKafkaConnect)
+#### createMultiRegionKafkaConnect()  [header link](class-aws-sdk-method-createmultiregionkafkaconnect.md)
 
 `
     public
@@ -8118,7 +8118,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionkendra()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionkendra)
+#### createMultiRegionkendra()  [header link](class-aws-sdk-method-createmultiregionkendra.md)
 
 `
     public
@@ -8133,7 +8133,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionKendraRanking()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionKendraRanking)
+#### createMultiRegionKendraRanking()  [header link](class-aws-sdk-method-createmultiregionkendraranking.md)
 
 `
     public
@@ -8148,7 +8148,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionKeyspaces()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionKeyspaces)
+#### createMultiRegionKeyspaces()  [header link](class-aws-sdk-method-createmultiregionkeyspaces.md)
 
 `
     public
@@ -8163,7 +8163,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionKeyspacesStreams()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionKeyspacesStreams)
+#### createMultiRegionKeyspacesStreams()  [header link](class-aws-sdk-method-createmultiregionkeyspacesstreams.md)
 
 `
     public
@@ -8178,7 +8178,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionKinesis()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionKinesis)
+#### createMultiRegionKinesis()  [header link](class-aws-sdk-method-createmultiregionkinesis.md)
 
 `
     public
@@ -8193,7 +8193,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionKinesisAnalytics()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionKinesisAnalytics)
+#### createMultiRegionKinesisAnalytics()  [header link](class-aws-sdk-method-createmultiregionkinesisanalytics.md)
 
 `
     public
@@ -8208,7 +8208,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionKinesisAnalyticsV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionKinesisAnalyticsV2)
+#### createMultiRegionKinesisAnalyticsV2()  [header link](class-aws-sdk-method-createmultiregionkinesisanalyticsv2.md)
 
 `
     public
@@ -8223,7 +8223,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionKinesisVideo()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionKinesisVideo)
+#### createMultiRegionKinesisVideo()  [header link](class-aws-sdk-method-createmultiregionkinesisvideo.md)
 
 `
     public
@@ -8238,7 +8238,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionKinesisVideoArchivedMedia()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionKinesisVideoArchivedMedia)
+#### createMultiRegionKinesisVideoArchivedMedia()  [header link](class-aws-sdk-method-createmultiregionkinesisvideoarchivedmedia.md)
 
 `
     public
@@ -8253,7 +8253,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionKinesisVideoMedia()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionKinesisVideoMedia)
+#### createMultiRegionKinesisVideoMedia()  [header link](class-aws-sdk-method-createmultiregionkinesisvideomedia.md)
 
 `
     public
@@ -8268,7 +8268,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionKinesisVideoSignalingChannels()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionKinesisVideoSignalingChannels)
+#### createMultiRegionKinesisVideoSignalingChannels()  [header link](class-aws-sdk-method-createmultiregionkinesisvideosignalingchannels.md)
 
 `
     public
@@ -8283,7 +8283,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionKinesisVideoWebRTCStorage()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionKinesisVideoWebRTCStorage)
+#### createMultiRegionKinesisVideoWebRTCStorage()  [header link](class-aws-sdk-method-createmultiregionkinesisvideowebrtcstorage.md)
 
 `
     public
@@ -8298,7 +8298,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionKms()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionKms)
+#### createMultiRegionKms()  [header link](class-aws-sdk-method-createmultiregionkms.md)
 
 `
     public
@@ -8313,7 +8313,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionLakeFormation()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionLakeFormation)
+#### createMultiRegionLakeFormation()  [header link](class-aws-sdk-method-createmultiregionlakeformation.md)
 
 `
     public
@@ -8328,7 +8328,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionLambda()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionLambda)
+#### createMultiRegionLambda()  [header link](class-aws-sdk-method-createmultiregionlambda.md)
 
 `
     public
@@ -8343,7 +8343,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionLaunchWizard()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionLaunchWizard)
+#### createMultiRegionLaunchWizard()  [header link](class-aws-sdk-method-createmultiregionlaunchwizard.md)
 
 `
     public
@@ -8358,7 +8358,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionLexModelBuildingService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionLexModelBuildingService)
+#### createMultiRegionLexModelBuildingService()  [header link](class-aws-sdk-method-createmultiregionlexmodelbuildingservice.md)
 
 `
     public
@@ -8373,7 +8373,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionLexModelsV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionLexModelsV2)
+#### createMultiRegionLexModelsV2()  [header link](class-aws-sdk-method-createmultiregionlexmodelsv2.md)
 
 `
     public
@@ -8388,7 +8388,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionLexRuntimeService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionLexRuntimeService)
+#### createMultiRegionLexRuntimeService()  [header link](class-aws-sdk-method-createmultiregionlexruntimeservice.md)
 
 `
     public
@@ -8403,7 +8403,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionLexRuntimeV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionLexRuntimeV2)
+#### createMultiRegionLexRuntimeV2()  [header link](class-aws-sdk-method-createmultiregionlexruntimev2.md)
 
 `
     public
@@ -8418,7 +8418,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionLicenseManager()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionLicenseManager)
+#### createMultiRegionLicenseManager()  [header link](class-aws-sdk-method-createmultiregionlicensemanager.md)
 
 `
     public
@@ -8433,7 +8433,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionLicenseManagerLinuxSubscriptions()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionLicenseManagerLinuxSubscriptions)
+#### createMultiRegionLicenseManagerLinuxSubscriptions()  [header link](class-aws-sdk-method-createmultiregionlicensemanagerlinuxsubscriptions.md)
 
 `
     public
@@ -8448,7 +8448,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionLicenseManagerUserSubscriptions()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionLicenseManagerUserSubscriptions)
+#### createMultiRegionLicenseManagerUserSubscriptions()  [header link](class-aws-sdk-method-createmultiregionlicensemanagerusersubscriptions.md)
 
 `
     public
@@ -8463,7 +8463,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionLightsail()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionLightsail)
+#### createMultiRegionLightsail()  [header link](class-aws-sdk-method-createmultiregionlightsail.md)
 
 `
     public
@@ -8478,7 +8478,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionLocationService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionLocationService)
+#### createMultiRegionLocationService()  [header link](class-aws-sdk-method-createmultiregionlocationservice.md)
 
 `
     public
@@ -8493,7 +8493,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionLookoutEquipment()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionLookoutEquipment)
+#### createMultiRegionLookoutEquipment()  [header link](class-aws-sdk-method-createmultiregionlookoutequipment.md)
 
 `
     public
@@ -8508,7 +8508,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMachineLearning()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMachineLearning)
+#### createMultiRegionMachineLearning()  [header link](class-aws-sdk-method-createmultiregionmachinelearning.md)
 
 `
     public
@@ -8523,7 +8523,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMacie2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMacie2)
+#### createMultiRegionMacie2()  [header link](class-aws-sdk-method-createmultiregionmacie2.md)
 
 `
     public
@@ -8538,7 +8538,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMailManager()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMailManager)
+#### createMultiRegionMailManager()  [header link](class-aws-sdk-method-createmultiregionmailmanager.md)
 
 `
     public
@@ -8553,7 +8553,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMainframeModernization()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMainframeModernization)
+#### createMultiRegionMainframeModernization()  [header link](class-aws-sdk-method-createmultiregionmainframemodernization.md)
 
 `
     public
@@ -8568,7 +8568,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionManagedBlockchain()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionManagedBlockchain)
+#### createMultiRegionManagedBlockchain()  [header link](class-aws-sdk-method-createmultiregionmanagedblockchain.md)
 
 `
     public
@@ -8583,7 +8583,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionManagedBlockchainQuery()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionManagedBlockchainQuery)
+#### createMultiRegionManagedBlockchainQuery()  [header link](class-aws-sdk-method-createmultiregionmanagedblockchainquery.md)
 
 `
     public
@@ -8598,7 +8598,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionManagedGrafana()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionManagedGrafana)
+#### createMultiRegionManagedGrafana()  [header link](class-aws-sdk-method-createmultiregionmanagedgrafana.md)
 
 `
     public
@@ -8613,7 +8613,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMarketplaceAgreement()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMarketplaceAgreement)
+#### createMultiRegionMarketplaceAgreement()  [header link](class-aws-sdk-method-createmultiregionmarketplaceagreement.md)
 
 `
     public
@@ -8628,7 +8628,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMarketplaceCatalog()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMarketplaceCatalog)
+#### createMultiRegionMarketplaceCatalog()  [header link](class-aws-sdk-method-createmultiregionmarketplacecatalog.md)
 
 `
     public
@@ -8643,7 +8643,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMarketplaceCommerceAnalytics()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMarketplaceCommerceAnalytics)
+#### createMultiRegionMarketplaceCommerceAnalytics()  [header link](class-aws-sdk-method-createmultiregionmarketplacecommerceanalytics.md)
 
 `
     public
@@ -8658,7 +8658,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMarketplaceDeployment()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMarketplaceDeployment)
+#### createMultiRegionMarketplaceDeployment()  [header link](class-aws-sdk-method-createmultiregionmarketplacedeployment.md)
 
 `
     public
@@ -8673,7 +8673,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMarketplaceEntitlementService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMarketplaceEntitlementService)
+#### createMultiRegionMarketplaceEntitlementService()  [header link](class-aws-sdk-method-createmultiregionmarketplaceentitlementservice.md)
 
 `
     public
@@ -8688,7 +8688,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMarketplaceMetering()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMarketplaceMetering)
+#### createMultiRegionMarketplaceMetering()  [header link](class-aws-sdk-method-createmultiregionmarketplacemetering.md)
 
 `
     public
@@ -8703,7 +8703,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMarketplaceReporting()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMarketplaceReporting)
+#### createMultiRegionMarketplaceReporting()  [header link](class-aws-sdk-method-createmultiregionmarketplacereporting.md)
 
 `
     public
@@ -8718,7 +8718,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMediaConnect()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMediaConnect)
+#### createMultiRegionMediaConnect()  [header link](class-aws-sdk-method-createmultiregionmediaconnect.md)
 
 `
     public
@@ -8733,7 +8733,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMediaConvert()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMediaConvert)
+#### createMultiRegionMediaConvert()  [header link](class-aws-sdk-method-createmultiregionmediaconvert.md)
 
 `
     public
@@ -8748,7 +8748,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMediaLive()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMediaLive)
+#### createMultiRegionMediaLive()  [header link](class-aws-sdk-method-createmultiregionmedialive.md)
 
 `
     public
@@ -8763,7 +8763,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMediaPackage()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMediaPackage)
+#### createMultiRegionMediaPackage()  [header link](class-aws-sdk-method-createmultiregionmediapackage.md)
 
 `
     public
@@ -8778,7 +8778,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMediaPackageV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMediaPackageV2)
+#### createMultiRegionMediaPackageV2()  [header link](class-aws-sdk-method-createmultiregionmediapackagev2.md)
 
 `
     public
@@ -8793,7 +8793,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMediaPackageVod()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMediaPackageVod)
+#### createMultiRegionMediaPackageVod()  [header link](class-aws-sdk-method-createmultiregionmediapackagevod.md)
 
 `
     public
@@ -8808,7 +8808,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMediaStore()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMediaStore)
+#### createMultiRegionMediaStore()  [header link](class-aws-sdk-method-createmultiregionmediastore.md)
 
 `
     public
@@ -8823,7 +8823,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMediaStoreData()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMediaStoreData)
+#### createMultiRegionMediaStoreData()  [header link](class-aws-sdk-method-createmultiregionmediastoredata.md)
 
 `
     public
@@ -8838,7 +8838,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMediaTailor()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMediaTailor)
+#### createMultiRegionMediaTailor()  [header link](class-aws-sdk-method-createmultiregionmediatailor.md)
 
 `
     public
@@ -8853,7 +8853,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMedicalImaging()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMedicalImaging)
+#### createMultiRegionMedicalImaging()  [header link](class-aws-sdk-method-createmultiregionmedicalimaging.md)
 
 `
     public
@@ -8868,7 +8868,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMemoryDB()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMemoryDB)
+#### createMultiRegionMemoryDB()  [header link](class-aws-sdk-method-createmultiregionmemorydb.md)
 
 `
     public
@@ -8883,7 +8883,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionmgn()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionmgn)
+#### createMultiRegionmgn()  [header link](class-aws-sdk-method-createmultiregionmgn.md)
 
 `
     public
@@ -8898,7 +8898,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMigrationHub()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMigrationHub)
+#### createMultiRegionMigrationHub()  [header link](class-aws-sdk-method-createmultiregionmigrationhub.md)
 
 `
     public
@@ -8913,7 +8913,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMigrationHubConfig()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMigrationHubConfig)
+#### createMultiRegionMigrationHubConfig()  [header link](class-aws-sdk-method-createmultiregionmigrationhubconfig.md)
 
 `
     public
@@ -8928,7 +8928,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMigrationHubOrchestrator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMigrationHubOrchestrator)
+#### createMultiRegionMigrationHubOrchestrator()  [header link](class-aws-sdk-method-createmultiregionmigrationhuborchestrator.md)
 
 `
     public
@@ -8943,7 +8943,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMigrationHubRefactorSpaces()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMigrationHubRefactorSpaces)
+#### createMultiRegionMigrationHubRefactorSpaces()  [header link](class-aws-sdk-method-createmultiregionmigrationhubrefactorspaces.md)
 
 `
     public
@@ -8958,7 +8958,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMigrationHubStrategyRecommendations()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMigrationHubStrategyRecommendations)
+#### createMultiRegionMigrationHubStrategyRecommendations()  [header link](class-aws-sdk-method-createmultiregionmigrationhubstrategyrecommendations.md)
 
 `
     public
@@ -8973,7 +8973,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMPA()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMPA)
+#### createMultiRegionMPA()  [header link](class-aws-sdk-method-createmultiregionmpa.md)
 
 `
     public
@@ -8988,7 +8988,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMQ()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMQ)
+#### createMultiRegionMQ()  [header link](class-aws-sdk-method-createmultiregionmq.md)
 
 `
     public
@@ -9003,7 +9003,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMTurk()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMTurk)
+#### createMultiRegionMTurk()  [header link](class-aws-sdk-method-createmultiregionmturk.md)
 
 `
     public
@@ -9018,7 +9018,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMWAA()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMWAA)
+#### createMultiRegionMWAA()  [header link](class-aws-sdk-method-createmultiregionmwaa.md)
 
 `
     public
@@ -9033,7 +9033,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionMWAAServerless()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionMWAAServerless)
+#### createMultiRegionMWAAServerless()  [header link](class-aws-sdk-method-createmultiregionmwaaserverless.md)
 
 `
     public
@@ -9048,7 +9048,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionNeptune()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionNeptune)
+#### createMultiRegionNeptune()  [header link](class-aws-sdk-method-createmultiregionneptune.md)
 
 `
     public
@@ -9063,7 +9063,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionNeptunedata()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionNeptunedata)
+#### createMultiRegionNeptunedata()  [header link](class-aws-sdk-method-createmultiregionneptunedata.md)
 
 `
     public
@@ -9078,7 +9078,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionNeptuneGraph()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionNeptuneGraph)
+#### createMultiRegionNeptuneGraph()  [header link](class-aws-sdk-method-createmultiregionneptunegraph.md)
 
 `
     public
@@ -9093,7 +9093,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionNetworkFirewall()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionNetworkFirewall)
+#### createMultiRegionNetworkFirewall()  [header link](class-aws-sdk-method-createmultiregionnetworkfirewall.md)
 
 `
     public
@@ -9108,7 +9108,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionNetworkFlowMonitor()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionNetworkFlowMonitor)
+#### createMultiRegionNetworkFlowMonitor()  [header link](class-aws-sdk-method-createmultiregionnetworkflowmonitor.md)
 
 `
     public
@@ -9123,7 +9123,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionNetworkManager()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionNetworkManager)
+#### createMultiRegionNetworkManager()  [header link](class-aws-sdk-method-createmultiregionnetworkmanager.md)
 
 `
     public
@@ -9138,7 +9138,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionNetworkMonitor()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionNetworkMonitor)
+#### createMultiRegionNetworkMonitor()  [header link](class-aws-sdk-method-createmultiregionnetworkmonitor.md)
 
 `
     public
@@ -9153,7 +9153,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionNotifications()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionNotifications)
+#### createMultiRegionNotifications()  [header link](class-aws-sdk-method-createmultiregionnotifications.md)
 
 `
     public
@@ -9168,7 +9168,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionNotificationsContacts()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionNotificationsContacts)
+#### createMultiRegionNotificationsContacts()  [header link](class-aws-sdk-method-createmultiregionnotificationscontacts.md)
 
 `
     public
@@ -9183,7 +9183,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionNovaAct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionNovaAct)
+#### createMultiRegionNovaAct()  [header link](class-aws-sdk-method-createmultiregionnovaact.md)
 
 `
     public
@@ -9198,7 +9198,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionOAM()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionOAM)
+#### createMultiRegionOAM()  [header link](class-aws-sdk-method-createmultiregionoam.md)
 
 `
     public
@@ -9213,7 +9213,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionObservabilityAdmin()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionObservabilityAdmin)
+#### createMultiRegionObservabilityAdmin()  [header link](class-aws-sdk-method-createmultiregionobservabilityadmin.md)
 
 `
     public
@@ -9228,7 +9228,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionOdb()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionOdb)
+#### createMultiRegionOdb()  [header link](class-aws-sdk-method-createmultiregionodb.md)
 
 `
     public
@@ -9243,7 +9243,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionOmics()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionOmics)
+#### createMultiRegionOmics()  [header link](class-aws-sdk-method-createmultiregionomics.md)
 
 `
     public
@@ -9258,7 +9258,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionOpenSearchServerless()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionOpenSearchServerless)
+#### createMultiRegionOpenSearchServerless()  [header link](class-aws-sdk-method-createmultiregionopensearchserverless.md)
 
 `
     public
@@ -9273,7 +9273,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionOpenSearchService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionOpenSearchService)
+#### createMultiRegionOpenSearchService()  [header link](class-aws-sdk-method-createmultiregionopensearchservice.md)
 
 `
     public
@@ -9288,7 +9288,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionOrganizations()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionOrganizations)
+#### createMultiRegionOrganizations()  [header link](class-aws-sdk-method-createmultiregionorganizations.md)
 
 `
     public
@@ -9303,7 +9303,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionOSIS()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionOSIS)
+#### createMultiRegionOSIS()  [header link](class-aws-sdk-method-createmultiregionosis.md)
 
 `
     public
@@ -9318,7 +9318,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionOutposts()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionOutposts)
+#### createMultiRegionOutposts()  [header link](class-aws-sdk-method-createmultiregionoutposts.md)
 
 `
     public
@@ -9333,7 +9333,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionPanorama()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionPanorama)
+#### createMultiRegionPanorama()  [header link](class-aws-sdk-method-createmultiregionpanorama.md)
 
 `
     public
@@ -9348,7 +9348,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionPartnerCentralAccount()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionPartnerCentralAccount)
+#### createMultiRegionPartnerCentralAccount()  [header link](class-aws-sdk-method-createmultiregionpartnercentralaccount.md)
 
 `
     public
@@ -9363,7 +9363,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionPartnerCentralBenefits()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionPartnerCentralBenefits)
+#### createMultiRegionPartnerCentralBenefits()  [header link](class-aws-sdk-method-createmultiregionpartnercentralbenefits.md)
 
 `
     public
@@ -9378,7 +9378,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionPartnerCentralChannel()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionPartnerCentralChannel)
+#### createMultiRegionPartnerCentralChannel()  [header link](class-aws-sdk-method-createmultiregionpartnercentralchannel.md)
 
 `
     public
@@ -9393,7 +9393,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionPartnerCentralSelling()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionPartnerCentralSelling)
+#### createMultiRegionPartnerCentralSelling()  [header link](class-aws-sdk-method-createmultiregionpartnercentralselling.md)
 
 `
     public
@@ -9408,7 +9408,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionPaymentCryptography()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionPaymentCryptography)
+#### createMultiRegionPaymentCryptography()  [header link](class-aws-sdk-method-createmultiregionpaymentcryptography.md)
 
 `
     public
@@ -9423,7 +9423,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionPaymentCryptographyData()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionPaymentCryptographyData)
+#### createMultiRegionPaymentCryptographyData()  [header link](class-aws-sdk-method-createmultiregionpaymentcryptographydata.md)
 
 `
     public
@@ -9438,7 +9438,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionPcaConnectorAd()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionPcaConnectorAd)
+#### createMultiRegionPcaConnectorAd()  [header link](class-aws-sdk-method-createmultiregionpcaconnectorad.md)
 
 `
     public
@@ -9453,7 +9453,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionPcaConnectorScep()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionPcaConnectorScep)
+#### createMultiRegionPcaConnectorScep()  [header link](class-aws-sdk-method-createmultiregionpcaconnectorscep.md)
 
 `
     public
@@ -9468,7 +9468,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionPCS()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionPCS)
+#### createMultiRegionPCS()  [header link](class-aws-sdk-method-createmultiregionpcs.md)
 
 `
     public
@@ -9483,7 +9483,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionPersonalize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionPersonalize)
+#### createMultiRegionPersonalize()  [header link](class-aws-sdk-method-createmultiregionpersonalize.md)
 
 `
     public
@@ -9498,7 +9498,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionPersonalizeEvents()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionPersonalizeEvents)
+#### createMultiRegionPersonalizeEvents()  [header link](class-aws-sdk-method-createmultiregionpersonalizeevents.md)
 
 `
     public
@@ -9513,7 +9513,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionPersonalizeRuntime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionPersonalizeRuntime)
+#### createMultiRegionPersonalizeRuntime()  [header link](class-aws-sdk-method-createmultiregionpersonalizeruntime.md)
 
 `
     public
@@ -9528,7 +9528,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionPI()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionPI)
+#### createMultiRegionPI()  [header link](class-aws-sdk-method-createmultiregionpi.md)
 
 `
     public
@@ -9543,7 +9543,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionPinpoint()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionPinpoint)
+#### createMultiRegionPinpoint()  [header link](class-aws-sdk-method-createmultiregionpinpoint.md)
 
 `
     public
@@ -9558,7 +9558,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionPinpointEmail()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionPinpointEmail)
+#### createMultiRegionPinpointEmail()  [header link](class-aws-sdk-method-createmultiregionpinpointemail.md)
 
 `
     public
@@ -9573,7 +9573,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionPinpointSMSVoice()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionPinpointSMSVoice)
+#### createMultiRegionPinpointSMSVoice()  [header link](class-aws-sdk-method-createmultiregionpinpointsmsvoice.md)
 
 `
     public
@@ -9588,7 +9588,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionPinpointSMSVoiceV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionPinpointSMSVoiceV2)
+#### createMultiRegionPinpointSMSVoiceV2()  [header link](class-aws-sdk-method-createmultiregionpinpointsmsvoicev2.md)
 
 `
     public
@@ -9603,7 +9603,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionPipes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionPipes)
+#### createMultiRegionPipes()  [header link](class-aws-sdk-method-createmultiregionpipes.md)
 
 `
     public
@@ -9618,7 +9618,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionPolly()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionPolly)
+#### createMultiRegionPolly()  [header link](class-aws-sdk-method-createmultiregionpolly.md)
 
 `
     public
@@ -9633,7 +9633,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionPricing()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionPricing)
+#### createMultiRegionPricing()  [header link](class-aws-sdk-method-createmultiregionpricing.md)
 
 `
     public
@@ -9648,7 +9648,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionPrometheusService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionPrometheusService)
+#### createMultiRegionPrometheusService()  [header link](class-aws-sdk-method-createmultiregionprometheusservice.md)
 
 `
     public
@@ -9663,7 +9663,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionProton()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionProton)
+#### createMultiRegionProton()  [header link](class-aws-sdk-method-createmultiregionproton.md)
 
 `
     public
@@ -9678,7 +9678,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionQApps()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionQApps)
+#### createMultiRegionQApps()  [header link](class-aws-sdk-method-createmultiregionqapps.md)
 
 `
     public
@@ -9693,7 +9693,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionQBusiness()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionQBusiness)
+#### createMultiRegionQBusiness()  [header link](class-aws-sdk-method-createmultiregionqbusiness.md)
 
 `
     public
@@ -9708,7 +9708,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionQConnect()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionQConnect)
+#### createMultiRegionQConnect()  [header link](class-aws-sdk-method-createmultiregionqconnect.md)
 
 `
     public
@@ -9723,7 +9723,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionQuickSight()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionQuickSight)
+#### createMultiRegionQuickSight()  [header link](class-aws-sdk-method-createmultiregionquicksight.md)
 
 `
     public
@@ -9738,7 +9738,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionRAM()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionRAM)
+#### createMultiRegionRAM()  [header link](class-aws-sdk-method-createmultiregionram.md)
 
 `
     public
@@ -9753,7 +9753,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionRds()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionRds)
+#### createMultiRegionRds()  [header link](class-aws-sdk-method-createmultiregionrds.md)
 
 `
     public
@@ -9768,7 +9768,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionRDSDataService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionRDSDataService)
+#### createMultiRegionRDSDataService()  [header link](class-aws-sdk-method-createmultiregionrdsdataservice.md)
 
 `
     public
@@ -9783,7 +9783,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionRecycleBin()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionRecycleBin)
+#### createMultiRegionRecycleBin()  [header link](class-aws-sdk-method-createmultiregionrecyclebin.md)
 
 `
     public
@@ -9798,7 +9798,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionRedshift()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionRedshift)
+#### createMultiRegionRedshift()  [header link](class-aws-sdk-method-createmultiregionredshift.md)
 
 `
     public
@@ -9813,7 +9813,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionRedshiftDataAPIService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionRedshiftDataAPIService)
+#### createMultiRegionRedshiftDataAPIService()  [header link](class-aws-sdk-method-createmultiregionredshiftdataapiservice.md)
 
 `
     public
@@ -9828,7 +9828,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionRedshiftServerless()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionRedshiftServerless)
+#### createMultiRegionRedshiftServerless()  [header link](class-aws-sdk-method-createmultiregionredshiftserverless.md)
 
 `
     public
@@ -9843,7 +9843,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionRekognition()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionRekognition)
+#### createMultiRegionRekognition()  [header link](class-aws-sdk-method-createmultiregionrekognition.md)
 
 `
     public
@@ -9858,7 +9858,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionRepostspace()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionRepostspace)
+#### createMultiRegionRepostspace()  [header link](class-aws-sdk-method-createmultiregionrepostspace.md)
 
 `
     public
@@ -9873,7 +9873,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionResilienceHub()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionResilienceHub)
+#### createMultiRegionResilienceHub()  [header link](class-aws-sdk-method-createmultiregionresiliencehub.md)
 
 `
     public
@@ -9888,7 +9888,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionResourceExplorer2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionResourceExplorer2)
+#### createMultiRegionResourceExplorer2()  [header link](class-aws-sdk-method-createmultiregionresourceexplorer2.md)
 
 `
     public
@@ -9903,7 +9903,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionResourceGroups()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionResourceGroups)
+#### createMultiRegionResourceGroups()  [header link](class-aws-sdk-method-createmultiregionresourcegroups.md)
 
 `
     public
@@ -9918,7 +9918,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionResourceGroupsTaggingAPI()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionResourceGroupsTaggingAPI)
+#### createMultiRegionResourceGroupsTaggingAPI()  [header link](class-aws-sdk-method-createmultiregionresourcegroupstaggingapi.md)
 
 `
     public
@@ -9933,7 +9933,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionRolesAnywhere()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionRolesAnywhere)
+#### createMultiRegionRolesAnywhere()  [header link](class-aws-sdk-method-createmultiregionrolesanywhere.md)
 
 `
     public
@@ -9948,7 +9948,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionRoute53()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionRoute53)
+#### createMultiRegionRoute53()  [header link](class-aws-sdk-method-createmultiregionroute53.md)
 
 `
     public
@@ -9963,7 +9963,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionRoute53Domains()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionRoute53Domains)
+#### createMultiRegionRoute53Domains()  [header link](class-aws-sdk-method-createmultiregionroute53domains.md)
 
 `
     public
@@ -9978,7 +9978,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionRoute53GlobalResolver()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionRoute53GlobalResolver)
+#### createMultiRegionRoute53GlobalResolver()  [header link](class-aws-sdk-method-createmultiregionroute53globalresolver.md)
 
 `
     public
@@ -9993,7 +9993,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionRoute53Profiles()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionRoute53Profiles)
+#### createMultiRegionRoute53Profiles()  [header link](class-aws-sdk-method-createmultiregionroute53profiles.md)
 
 `
     public
@@ -10008,7 +10008,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionRoute53RecoveryCluster()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionRoute53RecoveryCluster)
+#### createMultiRegionRoute53RecoveryCluster()  [header link](class-aws-sdk-method-createmultiregionroute53recoverycluster.md)
 
 `
     public
@@ -10023,7 +10023,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionRoute53RecoveryControlConfig()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionRoute53RecoveryControlConfig)
+#### createMultiRegionRoute53RecoveryControlConfig()  [header link](class-aws-sdk-method-createmultiregionroute53recoverycontrolconfig.md)
 
 `
     public
@@ -10038,7 +10038,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionRoute53RecoveryReadiness()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionRoute53RecoveryReadiness)
+#### createMultiRegionRoute53RecoveryReadiness()  [header link](class-aws-sdk-method-createmultiregionroute53recoveryreadiness.md)
 
 `
     public
@@ -10053,7 +10053,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionRoute53Resolver()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionRoute53Resolver)
+#### createMultiRegionRoute53Resolver()  [header link](class-aws-sdk-method-createmultiregionroute53resolver.md)
 
 `
     public
@@ -10068,7 +10068,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionRTBFabric()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionRTBFabric)
+#### createMultiRegionRTBFabric()  [header link](class-aws-sdk-method-createmultiregionrtbfabric.md)
 
 `
     public
@@ -10083,7 +10083,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionS3()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionS3)
+#### createMultiRegionS3()  [header link](class-aws-sdk-method-createmultiregions3.md)
 
 `
     public
@@ -10096,9 +10096,9 @@ $args = \[\]
 
 ##### Return values
 
-[S3MultiRegionClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3MultiRegionClient.html)
+[S3MultiRegionClient](class-aws-s3-s3multiregionclient.md)
 
-#### createMultiRegionS3Control()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionS3Control)
+#### createMultiRegionS3Control()  [header link](class-aws-sdk-method-createmultiregions3control.md)
 
 `
     public
@@ -10113,7 +10113,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionS3Outposts()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionS3Outposts)
+#### createMultiRegionS3Outposts()  [header link](class-aws-sdk-method-createmultiregions3outposts.md)
 
 `
     public
@@ -10128,7 +10128,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionS3Tables()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionS3Tables)
+#### createMultiRegionS3Tables()  [header link](class-aws-sdk-method-createmultiregions3tables.md)
 
 `
     public
@@ -10143,7 +10143,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionS3Vectors()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionS3Vectors)
+#### createMultiRegionS3Vectors()  [header link](class-aws-sdk-method-createmultiregions3vectors.md)
 
 `
     public
@@ -10158,7 +10158,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSageMaker()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSageMaker)
+#### createMultiRegionSageMaker()  [header link](class-aws-sdk-method-createmultiregionsagemaker.md)
 
 `
     public
@@ -10173,7 +10173,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSagemakerEdgeManager()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSagemakerEdgeManager)
+#### createMultiRegionSagemakerEdgeManager()  [header link](class-aws-sdk-method-createmultiregionsagemakeredgemanager.md)
 
 `
     public
@@ -10188,7 +10188,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSageMakerFeatureStoreRuntime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSageMakerFeatureStoreRuntime)
+#### createMultiRegionSageMakerFeatureStoreRuntime()  [header link](class-aws-sdk-method-createmultiregionsagemakerfeaturestoreruntime.md)
 
 `
     public
@@ -10203,7 +10203,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSageMakerGeospatial()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSageMakerGeospatial)
+#### createMultiRegionSageMakerGeospatial()  [header link](class-aws-sdk-method-createmultiregionsagemakergeospatial.md)
 
 `
     public
@@ -10218,7 +10218,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSageMakerMetrics()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSageMakerMetrics)
+#### createMultiRegionSageMakerMetrics()  [header link](class-aws-sdk-method-createmultiregionsagemakermetrics.md)
 
 `
     public
@@ -10233,7 +10233,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSageMakerRuntime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSageMakerRuntime)
+#### createMultiRegionSageMakerRuntime()  [header link](class-aws-sdk-method-createmultiregionsagemakerruntime.md)
 
 `
     public
@@ -10248,7 +10248,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSavingsPlans()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSavingsPlans)
+#### createMultiRegionSavingsPlans()  [header link](class-aws-sdk-method-createmultiregionsavingsplans.md)
 
 `
     public
@@ -10263,7 +10263,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionScheduler()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionScheduler)
+#### createMultiRegionScheduler()  [header link](class-aws-sdk-method-createmultiregionscheduler.md)
 
 `
     public
@@ -10278,7 +10278,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSchemas()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSchemas)
+#### createMultiRegionSchemas()  [header link](class-aws-sdk-method-createmultiregionschemas.md)
 
 `
     public
@@ -10293,7 +10293,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSecretsManager()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSecretsManager)
+#### createMultiRegionSecretsManager()  [header link](class-aws-sdk-method-createmultiregionsecretsmanager.md)
 
 `
     public
@@ -10308,7 +10308,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSecurityAgent()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSecurityAgent)
+#### createMultiRegionSecurityAgent()  [header link](class-aws-sdk-method-createmultiregionsecurityagent.md)
 
 `
     public
@@ -10323,7 +10323,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSecurityHub()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSecurityHub)
+#### createMultiRegionSecurityHub()  [header link](class-aws-sdk-method-createmultiregionsecurityhub.md)
 
 `
     public
@@ -10338,7 +10338,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSecurityIR()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSecurityIR)
+#### createMultiRegionSecurityIR()  [header link](class-aws-sdk-method-createmultiregionsecurityir.md)
 
 `
     public
@@ -10353,7 +10353,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSecurityLake()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSecurityLake)
+#### createMultiRegionSecurityLake()  [header link](class-aws-sdk-method-createmultiregionsecuritylake.md)
 
 `
     public
@@ -10368,7 +10368,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionServerlessApplicationRepository()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionServerlessApplicationRepository)
+#### createMultiRegionServerlessApplicationRepository()  [header link](class-aws-sdk-method-createmultiregionserverlessapplicationrepository.md)
 
 `
     public
@@ -10383,7 +10383,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionServiceCatalog()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionServiceCatalog)
+#### createMultiRegionServiceCatalog()  [header link](class-aws-sdk-method-createmultiregionservicecatalog.md)
 
 `
     public
@@ -10398,7 +10398,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionServiceDiscovery()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionServiceDiscovery)
+#### createMultiRegionServiceDiscovery()  [header link](class-aws-sdk-method-createmultiregionservicediscovery.md)
 
 `
     public
@@ -10413,7 +10413,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionServiceQuotas()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionServiceQuotas)
+#### createMultiRegionServiceQuotas()  [header link](class-aws-sdk-method-createmultiregionservicequotas.md)
 
 `
     public
@@ -10428,7 +10428,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSes)
+#### createMultiRegionSes()  [header link](class-aws-sdk-method-createmultiregionses.md)
 
 `
     public
@@ -10443,7 +10443,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSesV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSesV2)
+#### createMultiRegionSesV2()  [header link](class-aws-sdk-method-createmultiregionsesv2.md)
 
 `
     public
@@ -10458,7 +10458,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSfn()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSfn)
+#### createMultiRegionSfn()  [header link](class-aws-sdk-method-createmultiregionsfn.md)
 
 `
     public
@@ -10473,7 +10473,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionShield()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionShield)
+#### createMultiRegionShield()  [header link](class-aws-sdk-method-createmultiregionshield.md)
 
 `
     public
@@ -10488,7 +10488,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionsigner()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionsigner)
+#### createMultiRegionsigner()  [header link](class-aws-sdk-method-createmultiregionsigner.md)
 
 `
     public
@@ -10503,7 +10503,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSignerData()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSignerData)
+#### createMultiRegionSignerData()  [header link](class-aws-sdk-method-createmultiregionsignerdata.md)
 
 `
     public
@@ -10518,7 +10518,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSignin()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSignin)
+#### createMultiRegionSignin()  [header link](class-aws-sdk-method-createmultiregionsignin.md)
 
 `
     public
@@ -10533,7 +10533,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSimpleDBv2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSimpleDBv2)
+#### createMultiRegionSimpleDBv2()  [header link](class-aws-sdk-method-createmultiregionsimpledbv2.md)
 
 `
     public
@@ -10548,7 +10548,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSimSpaceWeaver()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSimSpaceWeaver)
+#### createMultiRegionSimSpaceWeaver()  [header link](class-aws-sdk-method-createmultiregionsimspaceweaver.md)
 
 `
     public
@@ -10563,7 +10563,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSnowBall()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSnowBall)
+#### createMultiRegionSnowBall()  [header link](class-aws-sdk-method-createmultiregionsnowball.md)
 
 `
     public
@@ -10578,7 +10578,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSnowDeviceManagement()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSnowDeviceManagement)
+#### createMultiRegionSnowDeviceManagement()  [header link](class-aws-sdk-method-createmultiregionsnowdevicemanagement.md)
 
 `
     public
@@ -10593,7 +10593,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSns()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSns)
+#### createMultiRegionSns()  [header link](class-aws-sdk-method-createmultiregionsns.md)
 
 `
     public
@@ -10608,7 +10608,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSocialMessaging()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSocialMessaging)
+#### createMultiRegionSocialMessaging()  [header link](class-aws-sdk-method-createmultiregionsocialmessaging.md)
 
 `
     public
@@ -10623,7 +10623,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSqs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSqs)
+#### createMultiRegionSqs()  [header link](class-aws-sdk-method-createmultiregionsqs.md)
 
 `
     public
@@ -10638,7 +10638,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSsm()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSsm)
+#### createMultiRegionSsm()  [header link](class-aws-sdk-method-createmultiregionssm.md)
 
 `
     public
@@ -10653,7 +10653,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSSMContacts()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSSMContacts)
+#### createMultiRegionSSMContacts()  [header link](class-aws-sdk-method-createmultiregionssmcontacts.md)
 
 `
     public
@@ -10668,7 +10668,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSSMGuiConnect()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSSMGuiConnect)
+#### createMultiRegionSSMGuiConnect()  [header link](class-aws-sdk-method-createmultiregionssmguiconnect.md)
 
 `
     public
@@ -10683,7 +10683,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSSMIncidents()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSSMIncidents)
+#### createMultiRegionSSMIncidents()  [header link](class-aws-sdk-method-createmultiregionssmincidents.md)
 
 `
     public
@@ -10698,7 +10698,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSSMQuickSetup()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSSMQuickSetup)
+#### createMultiRegionSSMQuickSetup()  [header link](class-aws-sdk-method-createmultiregionssmquicksetup.md)
 
 `
     public
@@ -10713,7 +10713,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSsmSap()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSsmSap)
+#### createMultiRegionSsmSap()  [header link](class-aws-sdk-method-createmultiregionssmsap.md)
 
 `
     public
@@ -10728,7 +10728,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSSO()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSSO)
+#### createMultiRegionSSO()  [header link](class-aws-sdk-method-createmultiregionsso.md)
 
 `
     public
@@ -10743,7 +10743,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSSOAdmin()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSSOAdmin)
+#### createMultiRegionSSOAdmin()  [header link](class-aws-sdk-method-createmultiregionssoadmin.md)
 
 `
     public
@@ -10758,7 +10758,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSSOOIDC()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSSOOIDC)
+#### createMultiRegionSSOOIDC()  [header link](class-aws-sdk-method-createmultiregionssooidc.md)
 
 `
     public
@@ -10773,7 +10773,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionStorageGateway()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionStorageGateway)
+#### createMultiRegionStorageGateway()  [header link](class-aws-sdk-method-createmultiregionstoragegateway.md)
 
 `
     public
@@ -10788,7 +10788,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSts()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSts)
+#### createMultiRegionSts()  [header link](class-aws-sdk-method-createmultiregionsts.md)
 
 `
     public
@@ -10803,7 +10803,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSupplyChain()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSupplyChain)
+#### createMultiRegionSupplyChain()  [header link](class-aws-sdk-method-createmultiregionsupplychain.md)
 
 `
     public
@@ -10818,7 +10818,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSupport()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSupport)
+#### createMultiRegionSupport()  [header link](class-aws-sdk-method-createmultiregionsupport.md)
 
 `
     public
@@ -10833,7 +10833,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSupportApp()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSupportApp)
+#### createMultiRegionSupportApp()  [header link](class-aws-sdk-method-createmultiregionsupportapp.md)
 
 `
     public
@@ -10848,7 +10848,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSustainability()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSustainability)
+#### createMultiRegionSustainability()  [header link](class-aws-sdk-method-createmultiregionsustainability.md)
 
 `
     public
@@ -10863,7 +10863,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSwf()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSwf)
+#### createMultiRegionSwf()  [header link](class-aws-sdk-method-createmultiregionswf.md)
 
 `
     public
@@ -10878,7 +10878,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionSynthetics()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionSynthetics)
+#### createMultiRegionSynthetics()  [header link](class-aws-sdk-method-createmultiregionsynthetics.md)
 
 `
     public
@@ -10893,7 +10893,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionTaxSettings()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionTaxSettings)
+#### createMultiRegionTaxSettings()  [header link](class-aws-sdk-method-createmultiregiontaxsettings.md)
 
 `
     public
@@ -10908,7 +10908,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionTextract()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionTextract)
+#### createMultiRegionTextract()  [header link](class-aws-sdk-method-createmultiregiontextract.md)
 
 `
     public
@@ -10923,7 +10923,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionTimestreamInfluxDB()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionTimestreamInfluxDB)
+#### createMultiRegionTimestreamInfluxDB()  [header link](class-aws-sdk-method-createmultiregiontimestreaminfluxdb.md)
 
 `
     public
@@ -10938,7 +10938,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionTimestreamQuery()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionTimestreamQuery)
+#### createMultiRegionTimestreamQuery()  [header link](class-aws-sdk-method-createmultiregiontimestreamquery.md)
 
 `
     public
@@ -10953,7 +10953,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionTimestreamWrite()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionTimestreamWrite)
+#### createMultiRegionTimestreamWrite()  [header link](class-aws-sdk-method-createmultiregiontimestreamwrite.md)
 
 `
     public
@@ -10968,7 +10968,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionTnb()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionTnb)
+#### createMultiRegionTnb()  [header link](class-aws-sdk-method-createmultiregiontnb.md)
 
 `
     public
@@ -10983,7 +10983,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionTranscribeService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionTranscribeService)
+#### createMultiRegionTranscribeService()  [header link](class-aws-sdk-method-createmultiregiontranscribeservice.md)
 
 `
     public
@@ -10998,7 +10998,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionTransfer()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionTransfer)
+#### createMultiRegionTransfer()  [header link](class-aws-sdk-method-createmultiregiontransfer.md)
 
 `
     public
@@ -11013,7 +11013,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionTranslate()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionTranslate)
+#### createMultiRegionTranslate()  [header link](class-aws-sdk-method-createmultiregiontranslate.md)
 
 `
     public
@@ -11028,7 +11028,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionTrustedAdvisor()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionTrustedAdvisor)
+#### createMultiRegionTrustedAdvisor()  [header link](class-aws-sdk-method-createmultiregiontrustedadvisor.md)
 
 `
     public
@@ -11043,7 +11043,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionUxc()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionUxc)
+#### createMultiRegionUxc()  [header link](class-aws-sdk-method-createmultiregionuxc.md)
 
 `
     public
@@ -11058,7 +11058,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionVerifiedPermissions()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionVerifiedPermissions)
+#### createMultiRegionVerifiedPermissions()  [header link](class-aws-sdk-method-createmultiregionverifiedpermissions.md)
 
 `
     public
@@ -11073,7 +11073,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionVoiceID()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionVoiceID)
+#### createMultiRegionVoiceID()  [header link](class-aws-sdk-method-createmultiregionvoiceid.md)
 
 `
     public
@@ -11088,7 +11088,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionVPCLattice()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionVPCLattice)
+#### createMultiRegionVPCLattice()  [header link](class-aws-sdk-method-createmultiregionvpclattice.md)
 
 `
     public
@@ -11103,7 +11103,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionWaf()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionWaf)
+#### createMultiRegionWaf()  [header link](class-aws-sdk-method-createmultiregionwaf.md)
 
 `
     public
@@ -11118,7 +11118,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionWafRegional()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionWafRegional)
+#### createMultiRegionWafRegional()  [header link](class-aws-sdk-method-createmultiregionwafregional.md)
 
 `
     public
@@ -11133,7 +11133,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionWAFV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionWAFV2)
+#### createMultiRegionWAFV2()  [header link](class-aws-sdk-method-createmultiregionwafv2.md)
 
 `
     public
@@ -11148,7 +11148,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionWellArchitected()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionWellArchitected)
+#### createMultiRegionWellArchitected()  [header link](class-aws-sdk-method-createmultiregionwellarchitected.md)
 
 `
     public
@@ -11163,7 +11163,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionWickr()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionWickr)
+#### createMultiRegionWickr()  [header link](class-aws-sdk-method-createmultiregionwickr.md)
 
 `
     public
@@ -11178,7 +11178,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionWorkDocs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionWorkDocs)
+#### createMultiRegionWorkDocs()  [header link](class-aws-sdk-method-createmultiregionworkdocs.md)
 
 `
     public
@@ -11193,7 +11193,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionWorkMail()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionWorkMail)
+#### createMultiRegionWorkMail()  [header link](class-aws-sdk-method-createmultiregionworkmail.md)
 
 `
     public
@@ -11208,7 +11208,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionWorkMailMessageFlow()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionWorkMailMessageFlow)
+#### createMultiRegionWorkMailMessageFlow()  [header link](class-aws-sdk-method-createmultiregionworkmailmessageflow.md)
 
 `
     public
@@ -11223,7 +11223,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionWorkSpaces()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionWorkSpaces)
+#### createMultiRegionWorkSpaces()  [header link](class-aws-sdk-method-createmultiregionworkspaces.md)
 
 `
     public
@@ -11238,7 +11238,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionWorkspacesInstances()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionWorkspacesInstances)
+#### createMultiRegionWorkspacesInstances()  [header link](class-aws-sdk-method-createmultiregionworkspacesinstances.md)
 
 `
     public
@@ -11253,7 +11253,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionWorkSpacesThinClient()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionWorkSpacesThinClient)
+#### createMultiRegionWorkSpacesThinClient()  [header link](class-aws-sdk-method-createmultiregionworkspacesthinclient.md)
 
 `
     public
@@ -11268,7 +11268,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionWorkSpacesWeb()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionWorkSpacesWeb)
+#### createMultiRegionWorkSpacesWeb()  [header link](class-aws-sdk-method-createmultiregionworkspacesweb.md)
 
 `
     public
@@ -11283,7 +11283,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMultiRegionXRay()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMultiRegionXRay)
+#### createMultiRegionXRay()  [header link](class-aws-sdk-method-createmultiregionxray.md)
 
 `
     public
@@ -11298,7 +11298,7 @@ $args = \[\]
 
 [MultiRegionClient](class-aws-multiregionclient.md)
 
-#### createMWAA()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMWAA)
+#### createMWAA()  [header link](class-aws-sdk-method-createmwaa.md)
 
 `
     public
@@ -11311,9 +11311,9 @@ $args = \[\]
 
 ##### Return values
 
-[MWAAClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MWAA.MWAAClient.html)
+[MWAAClient](class-aws-mwaa-mwaaclient.md)
 
-#### createMWAAServerless()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createMWAAServerless)
+#### createMWAAServerless()  [header link](class-aws-sdk-method-createmwaaserverless.md)
 
 `
     public
@@ -11326,9 +11326,9 @@ $args = \[\]
 
 ##### Return values
 
-[MWAAServerlessClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MWAAServerless.MWAAServerlessClient.html)
+[MWAAServerlessClient](class-aws-mwaaserverless-mwaaserverlessclient.md)
 
-#### createNeptune()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createNeptune)
+#### createNeptune()  [header link](class-aws-sdk-method-createneptune.md)
 
 `
     public
@@ -11341,9 +11341,9 @@ $args = \[\]
 
 ##### Return values
 
-[NeptuneClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Neptune.NeptuneClient.html)
+[NeptuneClient](class-aws-neptune-neptuneclient.md)
 
-#### createNeptunedata()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createNeptunedata)
+#### createNeptunedata()  [header link](class-aws-sdk-method-createneptunedata.md)
 
 `
     public
@@ -11356,9 +11356,9 @@ $args = \[\]
 
 ##### Return values
 
-[NeptunedataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Neptunedata.NeptunedataClient.html)
+[NeptunedataClient](class-aws-neptunedata-neptunedataclient.md)
 
-#### createNeptuneGraph()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createNeptuneGraph)
+#### createNeptuneGraph()  [header link](class-aws-sdk-method-createneptunegraph.md)
 
 `
     public
@@ -11371,9 +11371,9 @@ $args = \[\]
 
 ##### Return values
 
-[NeptuneGraphClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NeptuneGraph.NeptuneGraphClient.html)
+[NeptuneGraphClient](class-aws-neptunegraph-neptunegraphclient.md)
 
-#### createNetworkFirewall()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createNetworkFirewall)
+#### createNetworkFirewall()  [header link](class-aws-sdk-method-createnetworkfirewall.md)
 
 `
     public
@@ -11386,9 +11386,9 @@ $args = \[\]
 
 ##### Return values
 
-[NetworkFirewallClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkFirewall.NetworkFirewallClient.html)
+[NetworkFirewallClient](class-aws-networkfirewall-networkfirewallclient.md)
 
-#### createNetworkFlowMonitor()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createNetworkFlowMonitor)
+#### createNetworkFlowMonitor()  [header link](class-aws-sdk-method-createnetworkflowmonitor.md)
 
 `
     public
@@ -11401,9 +11401,9 @@ $args = \[\]
 
 ##### Return values
 
-[NetworkFlowMonitorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkFlowMonitor.NetworkFlowMonitorClient.html)
+[NetworkFlowMonitorClient](class-aws-networkflowmonitor-networkflowmonitorclient.md)
 
-#### createNetworkManager()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createNetworkManager)
+#### createNetworkManager()  [header link](class-aws-sdk-method-createnetworkmanager.md)
 
 `
     public
@@ -11416,9 +11416,9 @@ $args = \[\]
 
 ##### Return values
 
-[NetworkManagerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkManager.NetworkManagerClient.html)
+[NetworkManagerClient](class-aws-networkmanager-networkmanagerclient.md)
 
-#### createNetworkMonitor()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createNetworkMonitor)
+#### createNetworkMonitor()  [header link](class-aws-sdk-method-createnetworkmonitor.md)
 
 `
     public
@@ -11431,9 +11431,9 @@ $args = \[\]
 
 ##### Return values
 
-[NetworkMonitorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkMonitor.NetworkMonitorClient.html)
+[NetworkMonitorClient](class-aws-networkmonitor-networkmonitorclient.md)
 
-#### createNotifications()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createNotifications)
+#### createNotifications()  [header link](class-aws-sdk-method-createnotifications.md)
 
 `
     public
@@ -11446,9 +11446,9 @@ $args = \[\]
 
 ##### Return values
 
-[NotificationsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Notifications.NotificationsClient.html)
+[NotificationsClient](class-aws-notifications-notificationsclient.md)
 
-#### createNotificationsContacts()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createNotificationsContacts)
+#### createNotificationsContacts()  [header link](class-aws-sdk-method-createnotificationscontacts.md)
 
 `
     public
@@ -11461,9 +11461,9 @@ $args = \[\]
 
 ##### Return values
 
-[NotificationsContactsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NotificationsContacts.NotificationsContactsClient.html)
+[NotificationsContactsClient](class-aws-notificationscontacts-notificationscontactsclient.md)
 
-#### createNovaAct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createNovaAct)
+#### createNovaAct()  [header link](class-aws-sdk-method-createnovaact.md)
 
 `
     public
@@ -11476,9 +11476,9 @@ $args = \[\]
 
 ##### Return values
 
-[NovaActClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NovaAct.NovaActClient.html)
+[NovaActClient](class-aws-novaact-novaactclient.md)
 
-#### createOAM()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createOAM)
+#### createOAM()  [header link](class-aws-sdk-method-createoam.md)
 
 `
     public
@@ -11491,9 +11491,9 @@ $args = \[\]
 
 ##### Return values
 
-[OAMClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.OAM.OAMClient.html)
+[OAMClient](class-aws-oam-oamclient.md)
 
-#### createObservabilityAdmin()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createObservabilityAdmin)
+#### createObservabilityAdmin()  [header link](class-aws-sdk-method-createobservabilityadmin.md)
 
 `
     public
@@ -11506,9 +11506,9 @@ $args = \[\]
 
 ##### Return values
 
-[ObservabilityAdminClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ObservabilityAdmin.ObservabilityAdminClient.html)
+[ObservabilityAdminClient](class-aws-observabilityadmin-observabilityadminclient.md)
 
-#### createOdb()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createOdb)
+#### createOdb()  [header link](class-aws-sdk-method-createodb.md)
 
 `
     public
@@ -11521,9 +11521,9 @@ $args = \[\]
 
 ##### Return values
 
-[OdbClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Odb.OdbClient.html)
+[OdbClient](class-aws-odb-odbclient.md)
 
-#### createOmics()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createOmics)
+#### createOmics()  [header link](class-aws-sdk-method-createomics.md)
 
 `
     public
@@ -11536,9 +11536,9 @@ $args = \[\]
 
 ##### Return values
 
-[OmicsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Omics.OmicsClient.html)
+[OmicsClient](class-aws-omics-omicsclient.md)
 
-#### createOpenSearchServerless()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createOpenSearchServerless)
+#### createOpenSearchServerless()  [header link](class-aws-sdk-method-createopensearchserverless.md)
 
 `
     public
@@ -11551,9 +11551,9 @@ $args = \[\]
 
 ##### Return values
 
-[OpenSearchServerlessClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.OpenSearchServerless.OpenSearchServerlessClient.html)
+[OpenSearchServerlessClient](class-aws-opensearchserverless-opensearchserverlessclient.md)
 
-#### createOpenSearchService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createOpenSearchService)
+#### createOpenSearchService()  [header link](class-aws-sdk-method-createopensearchservice.md)
 
 `
     public
@@ -11566,9 +11566,9 @@ $args = \[\]
 
 ##### Return values
 
-[OpenSearchServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.OpenSearchService.OpenSearchServiceClient.html)
+[OpenSearchServiceClient](class-aws-opensearchservice-opensearchserviceclient.md)
 
-#### createOrganizations()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createOrganizations)
+#### createOrganizations()  [header link](class-aws-sdk-method-createorganizations.md)
 
 `
     public
@@ -11581,9 +11581,9 @@ $args = \[\]
 
 ##### Return values
 
-[OrganizationsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Organizations.OrganizationsClient.html)
+[OrganizationsClient](class-aws-organizations-organizationsclient.md)
 
-#### createOSIS()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createOSIS)
+#### createOSIS()  [header link](class-aws-sdk-method-createosis.md)
 
 `
     public
@@ -11596,9 +11596,9 @@ $args = \[\]
 
 ##### Return values
 
-[OSISClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.OSIS.OSISClient.html)
+[OSISClient](class-aws-osis-osisclient.md)
 
-#### createOutposts()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createOutposts)
+#### createOutposts()  [header link](class-aws-sdk-method-createoutposts.md)
 
 `
     public
@@ -11611,9 +11611,9 @@ $args = \[\]
 
 ##### Return values
 
-[OutpostsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Outposts.OutpostsClient.html)
+[OutpostsClient](class-aws-outposts-outpostsclient.md)
 
-#### createPanorama()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createPanorama)
+#### createPanorama()  [header link](class-aws-sdk-method-createpanorama.md)
 
 `
     public
@@ -11626,9 +11626,9 @@ $args = \[\]
 
 ##### Return values
 
-[PanoramaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Panorama.PanoramaClient.html)
+[PanoramaClient](class-aws-panorama-panoramaclient.md)
 
-#### createPartnerCentralAccount()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createPartnerCentralAccount)
+#### createPartnerCentralAccount()  [header link](class-aws-sdk-method-createpartnercentralaccount.md)
 
 `
     public
@@ -11641,9 +11641,9 @@ $args = \[\]
 
 ##### Return values
 
-[PartnerCentralAccountClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralAccount.PartnerCentralAccountClient.html)
+[PartnerCentralAccountClient](class-aws-partnercentralaccount-partnercentralaccountclient.md)
 
-#### createPartnerCentralBenefits()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createPartnerCentralBenefits)
+#### createPartnerCentralBenefits()  [header link](class-aws-sdk-method-createpartnercentralbenefits.md)
 
 `
     public
@@ -11656,9 +11656,9 @@ $args = \[\]
 
 ##### Return values
 
-[PartnerCentralBenefitsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralBenefits.PartnerCentralBenefitsClient.html)
+[PartnerCentralBenefitsClient](class-aws-partnercentralbenefits-partnercentralbenefitsclient.md)
 
-#### createPartnerCentralChannel()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createPartnerCentralChannel)
+#### createPartnerCentralChannel()  [header link](class-aws-sdk-method-createpartnercentralchannel.md)
 
 `
     public
@@ -11671,9 +11671,9 @@ $args = \[\]
 
 ##### Return values
 
-[PartnerCentralChannelClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralChannel.PartnerCentralChannelClient.html)
+[PartnerCentralChannelClient](class-aws-partnercentralchannel-partnercentralchannelclient.md)
 
-#### createPartnerCentralSelling()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createPartnerCentralSelling)
+#### createPartnerCentralSelling()  [header link](class-aws-sdk-method-createpartnercentralselling.md)
 
 `
     public
@@ -11686,9 +11686,9 @@ $args = \[\]
 
 ##### Return values
 
-[PartnerCentralSellingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralSelling.PartnerCentralSellingClient.html)
+[PartnerCentralSellingClient](class-aws-partnercentralselling-partnercentralsellingclient.md)
 
-#### createPaymentCryptography()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createPaymentCryptography)
+#### createPaymentCryptography()  [header link](class-aws-sdk-method-createpaymentcryptography.md)
 
 `
     public
@@ -11701,9 +11701,9 @@ $args = \[\]
 
 ##### Return values
 
-[PaymentCryptographyClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PaymentCryptography.PaymentCryptographyClient.html)
+[PaymentCryptographyClient](class-aws-paymentcryptography-paymentcryptographyclient.md)
 
-#### createPaymentCryptographyData()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createPaymentCryptographyData)
+#### createPaymentCryptographyData()  [header link](class-aws-sdk-method-createpaymentcryptographydata.md)
 
 `
     public
@@ -11716,9 +11716,9 @@ $args = \[\]
 
 ##### Return values
 
-[PaymentCryptographyDataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PaymentCryptographyData.PaymentCryptographyDataClient.html)
+[PaymentCryptographyDataClient](class-aws-paymentcryptographydata-paymentcryptographydataclient.md)
 
-#### createPcaConnectorAd()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createPcaConnectorAd)
+#### createPcaConnectorAd()  [header link](class-aws-sdk-method-createpcaconnectorad.md)
 
 `
     public
@@ -11731,9 +11731,9 @@ $args = \[\]
 
 ##### Return values
 
-[PcaConnectorAdClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PcaConnectorAd.PcaConnectorAdClient.html)
+[PcaConnectorAdClient](class-aws-pcaconnectorad-pcaconnectoradclient.md)
 
-#### createPcaConnectorScep()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createPcaConnectorScep)
+#### createPcaConnectorScep()  [header link](class-aws-sdk-method-createpcaconnectorscep.md)
 
 `
     public
@@ -11746,9 +11746,9 @@ $args = \[\]
 
 ##### Return values
 
-[PcaConnectorScepClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PcaConnectorScep.PcaConnectorScepClient.html)
+[PcaConnectorScepClient](class-aws-pcaconnectorscep-pcaconnectorscepclient.md)
 
-#### createPCS()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createPCS)
+#### createPCS()  [header link](class-aws-sdk-method-createpcs.md)
 
 `
     public
@@ -11761,9 +11761,9 @@ $args = \[\]
 
 ##### Return values
 
-[PCSClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PCS.PCSClient.html)
+[PCSClient](class-aws-pcs-pcsclient.md)
 
-#### createPersonalize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createPersonalize)
+#### createPersonalize()  [header link](class-aws-sdk-method-createpersonalize.md)
 
 `
     public
@@ -11776,9 +11776,9 @@ $args = \[\]
 
 ##### Return values
 
-[PersonalizeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Personalize.PersonalizeClient.html)
+[PersonalizeClient](class-aws-personalize-personalizeclient.md)
 
-#### createPersonalizeEvents()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createPersonalizeEvents)
+#### createPersonalizeEvents()  [header link](class-aws-sdk-method-createpersonalizeevents.md)
 
 `
     public
@@ -11791,9 +11791,9 @@ $args = \[\]
 
 ##### Return values
 
-[PersonalizeEventsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PersonalizeEvents.PersonalizeEventsClient.html)
+[PersonalizeEventsClient](class-aws-personalizeevents-personalizeeventsclient.md)
 
-#### createPersonalizeRuntime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createPersonalizeRuntime)
+#### createPersonalizeRuntime()  [header link](class-aws-sdk-method-createpersonalizeruntime.md)
 
 `
     public
@@ -11806,9 +11806,9 @@ $args = \[\]
 
 ##### Return values
 
-[PersonalizeRuntimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PersonalizeRuntime.PersonalizeRuntimeClient.html)
+[PersonalizeRuntimeClient](class-aws-personalizeruntime-personalizeruntimeclient.md)
 
-#### createPI()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createPI)
+#### createPI()  [header link](class-aws-sdk-method-createpi.md)
 
 `
     public
@@ -11821,9 +11821,9 @@ $args = \[\]
 
 ##### Return values
 
-[PIClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PI.PIClient.html)
+[PIClient](class-aws-pi-piclient.md)
 
-#### createPinpoint()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createPinpoint)
+#### createPinpoint()  [header link](class-aws-sdk-method-createpinpoint.md)
 
 `
     public
@@ -11836,9 +11836,9 @@ $args = \[\]
 
 ##### Return values
 
-[PinpointClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Pinpoint.PinpointClient.html)
+[PinpointClient](class-aws-pinpoint-pinpointclient.md)
 
-#### createPinpointEmail()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createPinpointEmail)
+#### createPinpointEmail()  [header link](class-aws-sdk-method-createpinpointemail.md)
 
 `
     public
@@ -11851,9 +11851,9 @@ $args = \[\]
 
 ##### Return values
 
-[PinpointEmailClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PinpointEmail.PinpointEmailClient.html)
+[PinpointEmailClient](class-aws-pinpointemail-pinpointemailclient.md)
 
-#### createPinpointSMSVoice()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createPinpointSMSVoice)
+#### createPinpointSMSVoice()  [header link](class-aws-sdk-method-createpinpointsmsvoice.md)
 
 `
     public
@@ -11866,9 +11866,9 @@ $args = \[\]
 
 ##### Return values
 
-[PinpointSMSVoiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PinpointSMSVoice.PinpointSMSVoiceClient.html)
+[PinpointSMSVoiceClient](class-aws-pinpointsmsvoice-pinpointsmsvoiceclient.md)
 
-#### createPinpointSMSVoiceV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createPinpointSMSVoiceV2)
+#### createPinpointSMSVoiceV2()  [header link](class-aws-sdk-method-createpinpointsmsvoicev2.md)
 
 `
     public
@@ -11881,9 +11881,9 @@ $args = \[\]
 
 ##### Return values
 
-[PinpointSMSVoiceV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PinpointSMSVoiceV2.PinpointSMSVoiceV2Client.html)
+[PinpointSMSVoiceV2Client](class-aws-pinpointsmsvoicev2-pinpointsmsvoicev2client.md)
 
-#### createPipes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createPipes)
+#### createPipes()  [header link](class-aws-sdk-method-createpipes.md)
 
 `
     public
@@ -11896,9 +11896,9 @@ $args = \[\]
 
 ##### Return values
 
-[PipesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Pipes.PipesClient.html)
+[PipesClient](class-aws-pipes-pipesclient.md)
 
-#### createPolly()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createPolly)
+#### createPolly()  [header link](class-aws-sdk-method-createpolly.md)
 
 `
     public
@@ -11911,9 +11911,9 @@ $args = \[\]
 
 ##### Return values
 
-[PollyClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Polly.PollyClient.html)
+[PollyClient](class-aws-polly-pollyclient.md)
 
-#### createPricing()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createPricing)
+#### createPricing()  [header link](class-aws-sdk-method-createpricing.md)
 
 `
     public
@@ -11926,9 +11926,9 @@ $args = \[\]
 
 ##### Return values
 
-[PricingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Pricing.PricingClient.html)
+[PricingClient](class-aws-pricing-pricingclient.md)
 
-#### createPrometheusService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createPrometheusService)
+#### createPrometheusService()  [header link](class-aws-sdk-method-createprometheusservice.md)
 
 `
     public
@@ -11941,9 +11941,9 @@ $args = \[\]
 
 ##### Return values
 
-[PrometheusServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PrometheusService.PrometheusServiceClient.html)
+[PrometheusServiceClient](class-aws-prometheusservice-prometheusserviceclient.md)
 
-#### createProton()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createProton)
+#### createProton()  [header link](class-aws-sdk-method-createproton.md)
 
 `
     public
@@ -11956,9 +11956,9 @@ $args = \[\]
 
 ##### Return values
 
-[ProtonClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Proton.ProtonClient.html)
+[ProtonClient](class-aws-proton-protonclient.md)
 
-#### createQApps()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createQApps)
+#### createQApps()  [header link](class-aws-sdk-method-createqapps.md)
 
 `
     public
@@ -11971,9 +11971,9 @@ $args = \[\]
 
 ##### Return values
 
-[QAppsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.QApps.QAppsClient.html)
+[QAppsClient](class-aws-qapps-qappsclient.md)
 
-#### createQBusiness()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createQBusiness)
+#### createQBusiness()  [header link](class-aws-sdk-method-createqbusiness.md)
 
 `
     public
@@ -11986,9 +11986,9 @@ $args = \[\]
 
 ##### Return values
 
-[QBusinessClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.QBusiness.QBusinessClient.html)
+[QBusinessClient](class-aws-qbusiness-qbusinessclient.md)
 
-#### createQConnect()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createQConnect)
+#### createQConnect()  [header link](class-aws-sdk-method-createqconnect.md)
 
 `
     public
@@ -12001,9 +12001,9 @@ $args = \[\]
 
 ##### Return values
 
-[QConnectClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.QConnect.QConnectClient.html)
+[QConnectClient](class-aws-qconnect-qconnectclient.md)
 
-#### createQuickSight()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createQuickSight)
+#### createQuickSight()  [header link](class-aws-sdk-method-createquicksight.md)
 
 `
     public
@@ -12016,9 +12016,9 @@ $args = \[\]
 
 ##### Return values
 
-[QuickSightClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.QuickSight.QuickSightClient.html)
+[QuickSightClient](class-aws-quicksight-quicksightclient.md)
 
-#### createRAM()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createRAM)
+#### createRAM()  [header link](class-aws-sdk-method-createram.md)
 
 `
     public
@@ -12031,9 +12031,9 @@ $args = \[\]
 
 ##### Return values
 
-[RAMClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RAM.RAMClient.html)
+[RAMClient](class-aws-ram-ramclient.md)
 
-#### createRds()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createRds)
+#### createRds()  [header link](class-aws-sdk-method-createrds.md)
 
 `
     public
@@ -12046,9 +12046,9 @@ $args = \[\]
 
 ##### Return values
 
-[RdsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Rds.RdsClient.html)
+[RdsClient](class-aws-rds-rdsclient.md)
 
-#### createRDSDataService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createRDSDataService)
+#### createRDSDataService()  [header link](class-aws-sdk-method-createrdsdataservice.md)
 
 `
     public
@@ -12061,9 +12061,9 @@ $args = \[\]
 
 ##### Return values
 
-[RDSDataServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RDSDataService.RDSDataServiceClient.html)
+[RDSDataServiceClient](class-aws-rdsdataservice-rdsdataserviceclient.md)
 
-#### createRecycleBin()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createRecycleBin)
+#### createRecycleBin()  [header link](class-aws-sdk-method-createrecyclebin.md)
 
 `
     public
@@ -12076,9 +12076,9 @@ $args = \[\]
 
 ##### Return values
 
-[RecycleBinClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RecycleBin.RecycleBinClient.html)
+[RecycleBinClient](class-aws-recyclebin-recyclebinclient.md)
 
-#### createRedshift()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createRedshift)
+#### createRedshift()  [header link](class-aws-sdk-method-createredshift.md)
 
 `
     public
@@ -12091,9 +12091,9 @@ $args = \[\]
 
 ##### Return values
 
-[RedshiftClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Redshift.RedshiftClient.html)
+[RedshiftClient](class-aws-redshift-redshiftclient.md)
 
-#### createRedshiftDataAPIService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createRedshiftDataAPIService)
+#### createRedshiftDataAPIService()  [header link](class-aws-sdk-method-createredshiftdataapiservice.md)
 
 `
     public
@@ -12106,9 +12106,9 @@ $args = \[\]
 
 ##### Return values
 
-[RedshiftDataAPIServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RedshiftDataAPIService.RedshiftDataAPIServiceClient.html)
+[RedshiftDataAPIServiceClient](class-aws-redshiftdataapiservice-redshiftdataapiserviceclient.md)
 
-#### createRedshiftServerless()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createRedshiftServerless)
+#### createRedshiftServerless()  [header link](class-aws-sdk-method-createredshiftserverless.md)
 
 `
     public
@@ -12121,9 +12121,9 @@ $args = \[\]
 
 ##### Return values
 
-[RedshiftServerlessClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RedshiftServerless.RedshiftServerlessClient.html)
+[RedshiftServerlessClient](class-aws-redshiftserverless-redshiftserverlessclient.md)
 
-#### createRekognition()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createRekognition)
+#### createRekognition()  [header link](class-aws-sdk-method-createrekognition.md)
 
 `
     public
@@ -12136,9 +12136,9 @@ $args = \[\]
 
 ##### Return values
 
-[RekognitionClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Rekognition.RekognitionClient.html)
+[RekognitionClient](class-aws-rekognition-rekognitionclient.md)
 
-#### createRepostspace()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createRepostspace)
+#### createRepostspace()  [header link](class-aws-sdk-method-createrepostspace.md)
 
 `
     public
@@ -12151,9 +12151,9 @@ $args = \[\]
 
 ##### Return values
 
-[RepostspaceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Repostspace.RepostspaceClient.html)
+[RepostspaceClient](class-aws-repostspace-repostspaceclient.md)
 
-#### createResilienceHub()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createResilienceHub)
+#### createResilienceHub()  [header link](class-aws-sdk-method-createresiliencehub.md)
 
 `
     public
@@ -12166,9 +12166,9 @@ $args = \[\]
 
 ##### Return values
 
-[ResilienceHubClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResilienceHub.ResilienceHubClient.html)
+[ResilienceHubClient](class-aws-resiliencehub-resiliencehubclient.md)
 
-#### createResourceExplorer2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createResourceExplorer2)
+#### createResourceExplorer2()  [header link](class-aws-sdk-method-createresourceexplorer2.md)
 
 `
     public
@@ -12181,9 +12181,9 @@ $args = \[\]
 
 ##### Return values
 
-[ResourceExplorer2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResourceExplorer2.ResourceExplorer2Client.html)
+[ResourceExplorer2Client](class-aws-resourceexplorer2-resourceexplorer2client.md)
 
-#### createResourceGroups()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createResourceGroups)
+#### createResourceGroups()  [header link](class-aws-sdk-method-createresourcegroups.md)
 
 `
     public
@@ -12196,9 +12196,9 @@ $args = \[\]
 
 ##### Return values
 
-[ResourceGroupsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResourceGroups.ResourceGroupsClient.html)
+[ResourceGroupsClient](class-aws-resourcegroups-resourcegroupsclient.md)
 
-#### createResourceGroupsTaggingAPI()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createResourceGroupsTaggingAPI)
+#### createResourceGroupsTaggingAPI()  [header link](class-aws-sdk-method-createresourcegroupstaggingapi.md)
 
 `
     public
@@ -12211,9 +12211,9 @@ $args = \[\]
 
 ##### Return values
 
-[ResourceGroupsTaggingAPIClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResourceGroupsTaggingAPI.ResourceGroupsTaggingAPIClient.html)
+[ResourceGroupsTaggingAPIClient](class-aws-resourcegroupstaggingapi-resourcegroupstaggingapiclient.md)
 
-#### createRolesAnywhere()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createRolesAnywhere)
+#### createRolesAnywhere()  [header link](class-aws-sdk-method-createrolesanywhere.md)
 
 `
     public
@@ -12226,9 +12226,9 @@ $args = \[\]
 
 ##### Return values
 
-[RolesAnywhereClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RolesAnywhere.RolesAnywhereClient.html)
+[RolesAnywhereClient](class-aws-rolesanywhere-rolesanywhereclient.md)
 
-#### createRoute53()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createRoute53)
+#### createRoute53()  [header link](class-aws-sdk-method-createroute53.md)
 
 `
     public
@@ -12241,9 +12241,9 @@ $args = \[\]
 
 ##### Return values
 
-[Route53Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53.Route53Client.html)
+[Route53Client](class-aws-route53-route53client.md)
 
-#### createRoute53Domains()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createRoute53Domains)
+#### createRoute53Domains()  [header link](class-aws-sdk-method-createroute53domains.md)
 
 `
     public
@@ -12256,9 +12256,9 @@ $args = \[\]
 
 ##### Return values
 
-[Route53DomainsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53Domains.Route53DomainsClient.html)
+[Route53DomainsClient](class-aws-route53domains-route53domainsclient.md)
 
-#### createRoute53GlobalResolver()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createRoute53GlobalResolver)
+#### createRoute53GlobalResolver()  [header link](class-aws-sdk-method-createroute53globalresolver.md)
 
 `
     public
@@ -12271,9 +12271,9 @@ $args = \[\]
 
 ##### Return values
 
-[Route53GlobalResolverClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53GlobalResolver.Route53GlobalResolverClient.html)
+[Route53GlobalResolverClient](class-aws-route53globalresolver-route53globalresolverclient.md)
 
-#### createRoute53Profiles()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createRoute53Profiles)
+#### createRoute53Profiles()  [header link](class-aws-sdk-method-createroute53profiles.md)
 
 `
     public
@@ -12286,9 +12286,9 @@ $args = \[\]
 
 ##### Return values
 
-[Route53ProfilesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53Profiles.Route53ProfilesClient.html)
+[Route53ProfilesClient](class-aws-route53profiles-route53profilesclient.md)
 
-#### createRoute53RecoveryCluster()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createRoute53RecoveryCluster)
+#### createRoute53RecoveryCluster()  [header link](class-aws-sdk-method-createroute53recoverycluster.md)
 
 `
     public
@@ -12301,9 +12301,9 @@ $args = \[\]
 
 ##### Return values
 
-[Route53RecoveryClusterClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryCluster.Route53RecoveryClusterClient.html)
+[Route53RecoveryClusterClient](class-aws-route53recoverycluster-route53recoveryclusterclient.md)
 
-#### createRoute53RecoveryControlConfig()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createRoute53RecoveryControlConfig)
+#### createRoute53RecoveryControlConfig()  [header link](class-aws-sdk-method-createroute53recoverycontrolconfig.md)
 
 `
     public
@@ -12316,9 +12316,9 @@ $args = \[\]
 
 ##### Return values
 
-[Route53RecoveryControlConfigClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryControlConfig.Route53RecoveryControlConfigClient.html)
+[Route53RecoveryControlConfigClient](class-aws-route53recoverycontrolconfig-route53recoverycontrolconfigclient.md)
 
-#### createRoute53RecoveryReadiness()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createRoute53RecoveryReadiness)
+#### createRoute53RecoveryReadiness()  [header link](class-aws-sdk-method-createroute53recoveryreadiness.md)
 
 `
     public
@@ -12331,9 +12331,9 @@ $args = \[\]
 
 ##### Return values
 
-[Route53RecoveryReadinessClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryReadiness.Route53RecoveryReadinessClient.html)
+[Route53RecoveryReadinessClient](class-aws-route53recoveryreadiness-route53recoveryreadinessclient.md)
 
-#### createRoute53Resolver()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createRoute53Resolver)
+#### createRoute53Resolver()  [header link](class-aws-sdk-method-createroute53resolver.md)
 
 `
     public
@@ -12346,9 +12346,9 @@ $args = \[\]
 
 ##### Return values
 
-[Route53ResolverClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53Resolver.Route53ResolverClient.html)
+[Route53ResolverClient](class-aws-route53resolver-route53resolverclient.md)
 
-#### createRTBFabric()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createRTBFabric)
+#### createRTBFabric()  [header link](class-aws-sdk-method-creatertbfabric.md)
 
 `
     public
@@ -12361,9 +12361,9 @@ $args = \[\]
 
 ##### Return values
 
-[RTBFabricClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RTBFabric.RTBFabricClient.html)
+[RTBFabricClient](class-aws-rtbfabric-rtbfabricclient.md)
 
-#### createS3()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createS3)
+#### createS3()  [header link](class-aws-sdk-method-creates3.md)
 
 `
     public
@@ -12378,7 +12378,7 @@ $args = \[\]
 
 [S3Client](class-aws-s3-s3client.md)
 
-#### createS3Control()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createS3Control)
+#### createS3Control()  [header link](class-aws-sdk-method-creates3control.md)
 
 `
     public
@@ -12391,9 +12391,9 @@ $args = \[\]
 
 ##### Return values
 
-[S3ControlClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3Control.S3ControlClient.html)
+[S3ControlClient](class-aws-s3control-s3controlclient.md)
 
-#### createS3Outposts()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createS3Outposts)
+#### createS3Outposts()  [header link](class-aws-sdk-method-creates3outposts.md)
 
 `
     public
@@ -12406,9 +12406,9 @@ $args = \[\]
 
 ##### Return values
 
-[S3OutpostsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3Outposts.S3OutpostsClient.html)
+[S3OutpostsClient](class-aws-s3outposts-s3outpostsclient.md)
 
-#### createS3Tables()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createS3Tables)
+#### createS3Tables()  [header link](class-aws-sdk-method-creates3tables.md)
 
 `
     public
@@ -12421,9 +12421,9 @@ $args = \[\]
 
 ##### Return values
 
-[S3TablesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3Tables.S3TablesClient.html)
+[S3TablesClient](class-aws-s3tables-s3tablesclient.md)
 
-#### createS3Vectors()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createS3Vectors)
+#### createS3Vectors()  [header link](class-aws-sdk-method-creates3vectors.md)
 
 `
     public
@@ -12436,9 +12436,9 @@ $args = \[\]
 
 ##### Return values
 
-[S3VectorsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3Vectors.S3VectorsClient.html)
+[S3VectorsClient](class-aws-s3vectors-s3vectorsclient.md)
 
-#### createSageMaker()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSageMaker)
+#### createSageMaker()  [header link](class-aws-sdk-method-createsagemaker.md)
 
 `
     public
@@ -12451,9 +12451,9 @@ $args = \[\]
 
 ##### Return values
 
-[SageMakerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMaker.SageMakerClient.html)
+[SageMakerClient](class-aws-sagemaker-sagemakerclient.md)
 
-#### createSagemakerEdgeManager()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSagemakerEdgeManager)
+#### createSagemakerEdgeManager()  [header link](class-aws-sdk-method-createsagemakeredgemanager.md)
 
 `
     public
@@ -12466,9 +12466,9 @@ $args = \[\]
 
 ##### Return values
 
-[SagemakerEdgeManagerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SagemakerEdgeManager.SagemakerEdgeManagerClient.html)
+[SagemakerEdgeManagerClient](class-aws-sagemakeredgemanager-sagemakeredgemanagerclient.md)
 
-#### createSageMakerFeatureStoreRuntime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSageMakerFeatureStoreRuntime)
+#### createSageMakerFeatureStoreRuntime()  [header link](class-aws-sdk-method-createsagemakerfeaturestoreruntime.md)
 
 `
     public
@@ -12481,9 +12481,9 @@ $args = \[\]
 
 ##### Return values
 
-[SageMakerFeatureStoreRuntimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMakerFeatureStoreRuntime.SageMakerFeatureStoreRuntimeClient.html)
+[SageMakerFeatureStoreRuntimeClient](class-aws-sagemakerfeaturestoreruntime-sagemakerfeaturestoreruntimeclient.md)
 
-#### createSageMakerGeospatial()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSageMakerGeospatial)
+#### createSageMakerGeospatial()  [header link](class-aws-sdk-method-createsagemakergeospatial.md)
 
 `
     public
@@ -12496,9 +12496,9 @@ $args = \[\]
 
 ##### Return values
 
-[SageMakerGeospatialClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMakerGeospatial.SageMakerGeospatialClient.html)
+[SageMakerGeospatialClient](class-aws-sagemakergeospatial-sagemakergeospatialclient.md)
 
-#### createSageMakerMetrics()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSageMakerMetrics)
+#### createSageMakerMetrics()  [header link](class-aws-sdk-method-createsagemakermetrics.md)
 
 `
     public
@@ -12511,9 +12511,9 @@ $args = \[\]
 
 ##### Return values
 
-[SageMakerMetricsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMakerMetrics.SageMakerMetricsClient.html)
+[SageMakerMetricsClient](class-aws-sagemakermetrics-sagemakermetricsclient.md)
 
-#### createSageMakerRuntime()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSageMakerRuntime)
+#### createSageMakerRuntime()  [header link](class-aws-sdk-method-createsagemakerruntime.md)
 
 `
     public
@@ -12526,9 +12526,9 @@ $args = \[\]
 
 ##### Return values
 
-[SageMakerRuntimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMakerRuntime.SageMakerRuntimeClient.html)
+[SageMakerRuntimeClient](class-aws-sagemakerruntime-sagemakerruntimeclient.md)
 
-#### createSavingsPlans()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSavingsPlans)
+#### createSavingsPlans()  [header link](class-aws-sdk-method-createsavingsplans.md)
 
 `
     public
@@ -12541,9 +12541,9 @@ $args = \[\]
 
 ##### Return values
 
-[SavingsPlansClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SavingsPlans.SavingsPlansClient.html)
+[SavingsPlansClient](class-aws-savingsplans-savingsplansclient.md)
 
-#### createScheduler()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createScheduler)
+#### createScheduler()  [header link](class-aws-sdk-method-createscheduler.md)
 
 `
     public
@@ -12556,9 +12556,9 @@ $args = \[\]
 
 ##### Return values
 
-[SchedulerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Scheduler.SchedulerClient.html)
+[SchedulerClient](class-aws-scheduler-schedulerclient.md)
 
-#### createSchemas()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSchemas)
+#### createSchemas()  [header link](class-aws-sdk-method-createschemas.md)
 
 `
     public
@@ -12571,9 +12571,9 @@ $args = \[\]
 
 ##### Return values
 
-[SchemasClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Schemas.SchemasClient.html)
+[SchemasClient](class-aws-schemas-schemasclient.md)
 
-#### createSecretsManager()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSecretsManager)
+#### createSecretsManager()  [header link](class-aws-sdk-method-createsecretsmanager.md)
 
 `
     public
@@ -12586,9 +12586,9 @@ $args = \[\]
 
 ##### Return values
 
-[SecretsManagerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecretsManager.SecretsManagerClient.html)
+[SecretsManagerClient](class-aws-secretsmanager-secretsmanagerclient.md)
 
-#### createSecurityAgent()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSecurityAgent)
+#### createSecurityAgent()  [header link](class-aws-sdk-method-createsecurityagent.md)
 
 `
     public
@@ -12601,9 +12601,9 @@ $args = \[\]
 
 ##### Return values
 
-[SecurityAgentClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecurityAgent.SecurityAgentClient.html)
+[SecurityAgentClient](class-aws-securityagent-securityagentclient.md)
 
-#### createSecurityHub()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSecurityHub)
+#### createSecurityHub()  [header link](class-aws-sdk-method-createsecurityhub.md)
 
 `
     public
@@ -12616,9 +12616,9 @@ $args = \[\]
 
 ##### Return values
 
-[SecurityHubClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecurityHub.SecurityHubClient.html)
+[SecurityHubClient](class-aws-securityhub-securityhubclient.md)
 
-#### createSecurityIR()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSecurityIR)
+#### createSecurityIR()  [header link](class-aws-sdk-method-createsecurityir.md)
 
 `
     public
@@ -12631,9 +12631,9 @@ $args = \[\]
 
 ##### Return values
 
-[SecurityIRClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecurityIR.SecurityIRClient.html)
+[SecurityIRClient](class-aws-securityir-securityirclient.md)
 
-#### createSecurityLake()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSecurityLake)
+#### createSecurityLake()  [header link](class-aws-sdk-method-createsecuritylake.md)
 
 `
     public
@@ -12646,9 +12646,9 @@ $args = \[\]
 
 ##### Return values
 
-[SecurityLakeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecurityLake.SecurityLakeClient.html)
+[SecurityLakeClient](class-aws-securitylake-securitylakeclient.md)
 
-#### createServerlessApplicationRepository()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createServerlessApplicationRepository)
+#### createServerlessApplicationRepository()  [header link](class-aws-sdk-method-createserverlessapplicationrepository.md)
 
 `
     public
@@ -12661,9 +12661,9 @@ $args = \[\]
 
 ##### Return values
 
-[ServerlessApplicationRepositoryClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServerlessApplicationRepository.ServerlessApplicationRepositoryClient.html)
+[ServerlessApplicationRepositoryClient](class-aws-serverlessapplicationrepository-serverlessapplicationrepositoryclient.md)
 
-#### createServiceCatalog()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createServiceCatalog)
+#### createServiceCatalog()  [header link](class-aws-sdk-method-createservicecatalog.md)
 
 `
     public
@@ -12676,9 +12676,9 @@ $args = \[\]
 
 ##### Return values
 
-[ServiceCatalogClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServiceCatalog.ServiceCatalogClient.html)
+[ServiceCatalogClient](class-aws-servicecatalog-servicecatalogclient.md)
 
-#### createServiceDiscovery()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createServiceDiscovery)
+#### createServiceDiscovery()  [header link](class-aws-sdk-method-createservicediscovery.md)
 
 `
     public
@@ -12691,9 +12691,9 @@ $args = \[\]
 
 ##### Return values
 
-[ServiceDiscoveryClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServiceDiscovery.ServiceDiscoveryClient.html)
+[ServiceDiscoveryClient](class-aws-servicediscovery-servicediscoveryclient.md)
 
-#### createServiceQuotas()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createServiceQuotas)
+#### createServiceQuotas()  [header link](class-aws-sdk-method-createservicequotas.md)
 
 `
     public
@@ -12706,9 +12706,9 @@ $args = \[\]
 
 ##### Return values
 
-[ServiceQuotasClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServiceQuotas.ServiceQuotasClient.html)
+[ServiceQuotasClient](class-aws-servicequotas-servicequotasclient.md)
 
-#### createSes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSes)
+#### createSes()  [header link](class-aws-sdk-method-createses.md)
 
 `
     public
@@ -12721,9 +12721,9 @@ $args = \[\]
 
 ##### Return values
 
-[SesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ses.SesClient.html)
+[SesClient](class-aws-ses-sesclient.md)
 
-#### createSesV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSesV2)
+#### createSesV2()  [header link](class-aws-sdk-method-createsesv2.md)
 
 `
     public
@@ -12736,9 +12736,9 @@ $args = \[\]
 
 ##### Return values
 
-[SesV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SesV2.SesV2Client.html)
+[SesV2Client](class-aws-sesv2-sesv2client.md)
 
-#### createSfn()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSfn)
+#### createSfn()  [header link](class-aws-sdk-method-createsfn.md)
 
 `
     public
@@ -12751,9 +12751,9 @@ $args = \[\]
 
 ##### Return values
 
-[SfnClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sfn.SfnClient.html)
+[SfnClient](class-aws-sfn-sfnclient.md)
 
-#### createShield()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createShield)
+#### createShield()  [header link](class-aws-sdk-method-createshield.md)
 
 `
     public
@@ -12766,9 +12766,9 @@ $args = \[\]
 
 ##### Return values
 
-[ShieldClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Shield.ShieldClient.html)
+[ShieldClient](class-aws-shield-shieldclient.md)
 
-#### createsigner()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createsigner)
+#### createsigner()  [header link](class-aws-sdk-method-createsigner.md)
 
 `
     public
@@ -12781,9 +12781,9 @@ $args = \[\]
 
 ##### Return values
 
-[signerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.signer.signerClient.html)
+[signerClient](class-aws-signer-signerclient.md)
 
-#### createSignerData()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSignerData)
+#### createSignerData()  [header link](class-aws-sdk-method-createsignerdata.md)
 
 `
     public
@@ -12796,9 +12796,9 @@ $args = \[\]
 
 ##### Return values
 
-[SignerDataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SignerData.SignerDataClient.html)
+[SignerDataClient](class-aws-signerdata-signerdataclient.md)
 
-#### createSignin()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSignin)
+#### createSignin()  [header link](class-aws-sdk-method-createsignin.md)
 
 `
     public
@@ -12811,9 +12811,9 @@ $args = \[\]
 
 ##### Return values
 
-[SigninClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Signin.SigninClient.html)
+[SigninClient](class-aws-signin-signinclient.md)
 
-#### createSimpleDBv2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSimpleDBv2)
+#### createSimpleDBv2()  [header link](class-aws-sdk-method-createsimpledbv2.md)
 
 `
     public
@@ -12826,9 +12826,9 @@ $args = \[\]
 
 ##### Return values
 
-[SimpleDBv2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SimpleDBv2.SimpleDBv2Client.html)
+[SimpleDBv2Client](class-aws-simpledbv2-simpledbv2client.md)
 
-#### createSimSpaceWeaver()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSimSpaceWeaver)
+#### createSimSpaceWeaver()  [header link](class-aws-sdk-method-createsimspaceweaver.md)
 
 `
     public
@@ -12841,9 +12841,9 @@ $args = \[\]
 
 ##### Return values
 
-[SimSpaceWeaverClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SimSpaceWeaver.SimSpaceWeaverClient.html)
+[SimSpaceWeaverClient](class-aws-simspaceweaver-simspaceweaverclient.md)
 
-#### createSnowBall()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSnowBall)
+#### createSnowBall()  [header link](class-aws-sdk-method-createsnowball.md)
 
 `
     public
@@ -12856,9 +12856,9 @@ $args = \[\]
 
 ##### Return values
 
-[SnowBallClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SnowBall.SnowBallClient.html)
+[SnowBallClient](class-aws-snowball-snowballclient.md)
 
-#### createSnowDeviceManagement()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSnowDeviceManagement)
+#### createSnowDeviceManagement()  [header link](class-aws-sdk-method-createsnowdevicemanagement.md)
 
 `
     public
@@ -12871,9 +12871,9 @@ $args = \[\]
 
 ##### Return values
 
-[SnowDeviceManagementClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SnowDeviceManagement.SnowDeviceManagementClient.html)
+[SnowDeviceManagementClient](class-aws-snowdevicemanagement-snowdevicemanagementclient.md)
 
-#### createSns()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSns)
+#### createSns()  [header link](class-aws-sdk-method-createsns.md)
 
 `
     public
@@ -12886,9 +12886,9 @@ $args = \[\]
 
 ##### Return values
 
-[SnsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sns.SnsClient.html)
+[SnsClient](class-aws-sns-snsclient.md)
 
-#### createSocialMessaging()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSocialMessaging)
+#### createSocialMessaging()  [header link](class-aws-sdk-method-createsocialmessaging.md)
 
 `
     public
@@ -12901,9 +12901,9 @@ $args = \[\]
 
 ##### Return values
 
-[SocialMessagingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SocialMessaging.SocialMessagingClient.html)
+[SocialMessagingClient](class-aws-socialmessaging-socialmessagingclient.md)
 
-#### createSqs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSqs)
+#### createSqs()  [header link](class-aws-sdk-method-createsqs.md)
 
 `
     public
@@ -12916,9 +12916,9 @@ $args = \[\]
 
 ##### Return values
 
-[SqsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sqs.SqsClient.html)
+[SqsClient](class-aws-sqs-sqsclient.md)
 
-#### createSsm()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSsm)
+#### createSsm()  [header link](class-aws-sdk-method-createssm.md)
 
 `
     public
@@ -12931,9 +12931,9 @@ $args = \[\]
 
 ##### Return values
 
-[SsmClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ssm.SsmClient.html)
+[SsmClient](class-aws-ssm-ssmclient.md)
 
-#### createSSMContacts()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSSMContacts)
+#### createSSMContacts()  [header link](class-aws-sdk-method-createssmcontacts.md)
 
 `
     public
@@ -12946,9 +12946,9 @@ $args = \[\]
 
 ##### Return values
 
-[SSMContactsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMContacts.SSMContactsClient.html)
+[SSMContactsClient](class-aws-ssmcontacts-ssmcontactsclient.md)
 
-#### createSSMGuiConnect()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSSMGuiConnect)
+#### createSSMGuiConnect()  [header link](class-aws-sdk-method-createssmguiconnect.md)
 
 `
     public
@@ -12961,9 +12961,9 @@ $args = \[\]
 
 ##### Return values
 
-[SSMGuiConnectClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMGuiConnect.SSMGuiConnectClient.html)
+[SSMGuiConnectClient](class-aws-ssmguiconnect-ssmguiconnectclient.md)
 
-#### createSSMIncidents()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSSMIncidents)
+#### createSSMIncidents()  [header link](class-aws-sdk-method-createssmincidents.md)
 
 `
     public
@@ -12976,9 +12976,9 @@ $args = \[\]
 
 ##### Return values
 
-[SSMIncidentsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMIncidents.SSMIncidentsClient.html)
+[SSMIncidentsClient](class-aws-ssmincidents-ssmincidentsclient.md)
 
-#### createSSMQuickSetup()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSSMQuickSetup)
+#### createSSMQuickSetup()  [header link](class-aws-sdk-method-createssmquicksetup.md)
 
 `
     public
@@ -12991,9 +12991,9 @@ $args = \[\]
 
 ##### Return values
 
-[SSMQuickSetupClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMQuickSetup.SSMQuickSetupClient.html)
+[SSMQuickSetupClient](class-aws-ssmquicksetup-ssmquicksetupclient.md)
 
-#### createSsmSap()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSsmSap)
+#### createSsmSap()  [header link](class-aws-sdk-method-createssmsap.md)
 
 `
     public
@@ -13006,9 +13006,9 @@ $args = \[\]
 
 ##### Return values
 
-[SsmSapClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SsmSap.SsmSapClient.html)
+[SsmSapClient](class-aws-ssmsap-ssmsapclient.md)
 
-#### createSSO()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSSO)
+#### createSSO()  [header link](class-aws-sdk-method-createsso.md)
 
 `
     public
@@ -13021,9 +13021,9 @@ $args = \[\]
 
 ##### Return values
 
-[SSOClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSO.SSOClient.html)
+[SSOClient](class-aws-sso-ssoclient.md)
 
-#### createSSOAdmin()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSSOAdmin)
+#### createSSOAdmin()  [header link](class-aws-sdk-method-createssoadmin.md)
 
 `
     public
@@ -13036,9 +13036,9 @@ $args = \[\]
 
 ##### Return values
 
-[SSOAdminClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSOAdmin.SSOAdminClient.html)
+[SSOAdminClient](class-aws-ssoadmin-ssoadminclient.md)
 
-#### createSSOOIDC()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSSOOIDC)
+#### createSSOOIDC()  [header link](class-aws-sdk-method-createssooidc.md)
 
 `
     public
@@ -13051,9 +13051,9 @@ $args = \[\]
 
 ##### Return values
 
-[SSOOIDCClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSOOIDC.SSOOIDCClient.html)
+[SSOOIDCClient](class-aws-ssooidc-ssooidcclient.md)
 
-#### createStorageGateway()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createStorageGateway)
+#### createStorageGateway()  [header link](class-aws-sdk-method-createstoragegateway.md)
 
 `
     public
@@ -13066,9 +13066,9 @@ $args = \[\]
 
 ##### Return values
 
-[StorageGatewayClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.StorageGateway.StorageGatewayClient.html)
+[StorageGatewayClient](class-aws-storagegateway-storagegatewayclient.md)
 
-#### createSts()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSts)
+#### createSts()  [header link](class-aws-sdk-method-creatests.md)
 
 `
     public
@@ -13081,9 +13081,9 @@ $args = \[\]
 
 ##### Return values
 
-[StsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.StsClient.html)
+[StsClient](class-aws-sts-stsclient.md)
 
-#### createSupplyChain()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSupplyChain)
+#### createSupplyChain()  [header link](class-aws-sdk-method-createsupplychain.md)
 
 `
     public
@@ -13096,9 +13096,9 @@ $args = \[\]
 
 ##### Return values
 
-[SupplyChainClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SupplyChain.SupplyChainClient.html)
+[SupplyChainClient](class-aws-supplychain-supplychainclient.md)
 
-#### createSupport()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSupport)
+#### createSupport()  [header link](class-aws-sdk-method-createsupport.md)
 
 `
     public
@@ -13111,9 +13111,9 @@ $args = \[\]
 
 ##### Return values
 
-[SupportClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Support.SupportClient.html)
+[SupportClient](class-aws-support-supportclient.md)
 
-#### createSupportApp()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSupportApp)
+#### createSupportApp()  [header link](class-aws-sdk-method-createsupportapp.md)
 
 `
     public
@@ -13126,9 +13126,9 @@ $args = \[\]
 
 ##### Return values
 
-[SupportAppClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SupportApp.SupportAppClient.html)
+[SupportAppClient](class-aws-supportapp-supportappclient.md)
 
-#### createSustainability()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSustainability)
+#### createSustainability()  [header link](class-aws-sdk-method-createsustainability.md)
 
 `
     public
@@ -13141,9 +13141,9 @@ $args = \[\]
 
 ##### Return values
 
-[SustainabilityClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sustainability.SustainabilityClient.html)
+[SustainabilityClient](class-aws-sustainability-sustainabilityclient.md)
 
-#### createSwf()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSwf)
+#### createSwf()  [header link](class-aws-sdk-method-createswf.md)
 
 `
     public
@@ -13156,9 +13156,9 @@ $args = \[\]
 
 ##### Return values
 
-[SwfClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Swf.SwfClient.html)
+[SwfClient](class-aws-swf-swfclient.md)
 
-#### createSynthetics()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createSynthetics)
+#### createSynthetics()  [header link](class-aws-sdk-method-createsynthetics.md)
 
 `
     public
@@ -13171,9 +13171,9 @@ $args = \[\]
 
 ##### Return values
 
-[SyntheticsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Synthetics.SyntheticsClient.html)
+[SyntheticsClient](class-aws-synthetics-syntheticsclient.md)
 
-#### createTaxSettings()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createTaxSettings)
+#### createTaxSettings()  [header link](class-aws-sdk-method-createtaxsettings.md)
 
 `
     public
@@ -13186,9 +13186,9 @@ $args = \[\]
 
 ##### Return values
 
-[TaxSettingsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TaxSettings.TaxSettingsClient.html)
+[TaxSettingsClient](class-aws-taxsettings-taxsettingsclient.md)
 
-#### createTextract()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createTextract)
+#### createTextract()  [header link](class-aws-sdk-method-createtextract.md)
 
 `
     public
@@ -13201,9 +13201,9 @@ $args = \[\]
 
 ##### Return values
 
-[TextractClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Textract.TextractClient.html)
+[TextractClient](class-aws-textract-textractclient.md)
 
-#### createTimestreamInfluxDB()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createTimestreamInfluxDB)
+#### createTimestreamInfluxDB()  [header link](class-aws-sdk-method-createtimestreaminfluxdb.md)
 
 `
     public
@@ -13216,9 +13216,9 @@ $args = \[\]
 
 ##### Return values
 
-[TimestreamInfluxDBClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TimestreamInfluxDB.TimestreamInfluxDBClient.html)
+[TimestreamInfluxDBClient](class-aws-timestreaminfluxdb-timestreaminfluxdbclient.md)
 
-#### createTimestreamQuery()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createTimestreamQuery)
+#### createTimestreamQuery()  [header link](class-aws-sdk-method-createtimestreamquery.md)
 
 `
     public
@@ -13231,9 +13231,9 @@ $args = \[\]
 
 ##### Return values
 
-[TimestreamQueryClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TimestreamQuery.TimestreamQueryClient.html)
+[TimestreamQueryClient](class-aws-timestreamquery-timestreamqueryclient.md)
 
-#### createTimestreamWrite()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createTimestreamWrite)
+#### createTimestreamWrite()  [header link](class-aws-sdk-method-createtimestreamwrite.md)
 
 `
     public
@@ -13246,9 +13246,9 @@ $args = \[\]
 
 ##### Return values
 
-[TimestreamWriteClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TimestreamWrite.TimestreamWriteClient.html)
+[TimestreamWriteClient](class-aws-timestreamwrite-timestreamwriteclient.md)
 
-#### createTnb()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createTnb)
+#### createTnb()  [header link](class-aws-sdk-method-createtnb.md)
 
 `
     public
@@ -13261,9 +13261,9 @@ $args = \[\]
 
 ##### Return values
 
-[TnbClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Tnb.TnbClient.html)
+[TnbClient](class-aws-tnb-tnbclient.md)
 
-#### createTranscribeService()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createTranscribeService)
+#### createTranscribeService()  [header link](class-aws-sdk-method-createtranscribeservice.md)
 
 `
     public
@@ -13276,9 +13276,9 @@ $args = \[\]
 
 ##### Return values
 
-[TranscribeServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TranscribeService.TranscribeServiceClient.html)
+[TranscribeServiceClient](class-aws-transcribeservice-transcribeserviceclient.md)
 
-#### createTransfer()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createTransfer)
+#### createTransfer()  [header link](class-aws-sdk-method-createtransfer.md)
 
 `
     public
@@ -13291,9 +13291,9 @@ $args = \[\]
 
 ##### Return values
 
-[TransferClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Transfer.TransferClient.html)
+[TransferClient](class-aws-transfer-transferclient.md)
 
-#### createTranslate()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createTranslate)
+#### createTranslate()  [header link](class-aws-sdk-method-createtranslate.md)
 
 `
     public
@@ -13306,9 +13306,9 @@ $args = \[\]
 
 ##### Return values
 
-[TranslateClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Translate.TranslateClient.html)
+[TranslateClient](class-aws-translate-translateclient.md)
 
-#### createTrustedAdvisor()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createTrustedAdvisor)
+#### createTrustedAdvisor()  [header link](class-aws-sdk-method-createtrustedadvisor.md)
 
 `
     public
@@ -13321,9 +13321,9 @@ $args = \[\]
 
 ##### Return values
 
-[TrustedAdvisorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TrustedAdvisor.TrustedAdvisorClient.html)
+[TrustedAdvisorClient](class-aws-trustedadvisor-trustedadvisorclient.md)
 
-#### createUxc()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createUxc)
+#### createUxc()  [header link](class-aws-sdk-method-createuxc.md)
 
 `
     public
@@ -13336,9 +13336,9 @@ $args = \[\]
 
 ##### Return values
 
-[UxcClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Uxc.UxcClient.html)
+[UxcClient](class-aws-uxc-uxcclient.md)
 
-#### createVerifiedPermissions()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createVerifiedPermissions)
+#### createVerifiedPermissions()  [header link](class-aws-sdk-method-createverifiedpermissions.md)
 
 `
     public
@@ -13351,9 +13351,9 @@ $args = \[\]
 
 ##### Return values
 
-[VerifiedPermissionsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.VerifiedPermissions.VerifiedPermissionsClient.html)
+[VerifiedPermissionsClient](class-aws-verifiedpermissions-verifiedpermissionsclient.md)
 
-#### createVoiceID()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createVoiceID)
+#### createVoiceID()  [header link](class-aws-sdk-method-createvoiceid.md)
 
 `
     public
@@ -13366,9 +13366,9 @@ $args = \[\]
 
 ##### Return values
 
-[VoiceIDClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.VoiceID.VoiceIDClient.html)
+[VoiceIDClient](class-aws-voiceid-voiceidclient.md)
 
-#### createVPCLattice()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createVPCLattice)
+#### createVPCLattice()  [header link](class-aws-sdk-method-createvpclattice.md)
 
 `
     public
@@ -13381,9 +13381,9 @@ $args = \[\]
 
 ##### Return values
 
-[VPCLatticeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.VPCLattice.VPCLatticeClient.html)
+[VPCLatticeClient](class-aws-vpclattice-vpclatticeclient.md)
 
-#### createWaf()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createWaf)
+#### createWaf()  [header link](class-aws-sdk-method-createwaf.md)
 
 `
     public
@@ -13396,9 +13396,9 @@ $args = \[\]
 
 ##### Return values
 
-[WafClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Waf.WafClient.html)
+[WafClient](class-aws-waf-wafclient.md)
 
-#### createWafRegional()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createWafRegional)
+#### createWafRegional()  [header link](class-aws-sdk-method-createwafregional.md)
 
 `
     public
@@ -13411,9 +13411,9 @@ $args = \[\]
 
 ##### Return values
 
-[WafRegionalClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WafRegional.WafRegionalClient.html)
+[WafRegionalClient](class-aws-wafregional-wafregionalclient.md)
 
-#### createWAFV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createWAFV2)
+#### createWAFV2()  [header link](class-aws-sdk-method-createwafv2.md)
 
 `
     public
@@ -13426,9 +13426,9 @@ $args = \[\]
 
 ##### Return values
 
-[WAFV2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WAFV2.WAFV2Client.html)
+[WAFV2Client](class-aws-wafv2-wafv2client.md)
 
-#### createWellArchitected()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createWellArchitected)
+#### createWellArchitected()  [header link](class-aws-sdk-method-createwellarchitected.md)
 
 `
     public
@@ -13441,9 +13441,9 @@ $args = \[\]
 
 ##### Return values
 
-[WellArchitectedClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WellArchitected.WellArchitectedClient.html)
+[WellArchitectedClient](class-aws-wellarchitected-wellarchitectedclient.md)
 
-#### createWickr()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createWickr)
+#### createWickr()  [header link](class-aws-sdk-method-createwickr.md)
 
 `
     public
@@ -13456,9 +13456,9 @@ $args = \[\]
 
 ##### Return values
 
-[WickrClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Wickr.WickrClient.html)
+[WickrClient](class-aws-wickr-wickrclient.md)
 
-#### createWorkDocs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createWorkDocs)
+#### createWorkDocs()  [header link](class-aws-sdk-method-createworkdocs.md)
 
 `
     public
@@ -13471,9 +13471,9 @@ $args = \[\]
 
 ##### Return values
 
-[WorkDocsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkDocs.WorkDocsClient.html)
+[WorkDocsClient](class-aws-workdocs-workdocsclient.md)
 
-#### createWorkMail()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createWorkMail)
+#### createWorkMail()  [header link](class-aws-sdk-method-createworkmail.md)
 
 `
     public
@@ -13486,9 +13486,9 @@ $args = \[\]
 
 ##### Return values
 
-[WorkMailClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkMail.WorkMailClient.html)
+[WorkMailClient](class-aws-workmail-workmailclient.md)
 
-#### createWorkMailMessageFlow()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createWorkMailMessageFlow)
+#### createWorkMailMessageFlow()  [header link](class-aws-sdk-method-createworkmailmessageflow.md)
 
 `
     public
@@ -13501,9 +13501,9 @@ $args = \[\]
 
 ##### Return values
 
-[WorkMailMessageFlowClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkMailMessageFlow.WorkMailMessageFlowClient.html)
+[WorkMailMessageFlowClient](class-aws-workmailmessageflow-workmailmessageflowclient.md)
 
-#### createWorkSpaces()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createWorkSpaces)
+#### createWorkSpaces()  [header link](class-aws-sdk-method-createworkspaces.md)
 
 `
     public
@@ -13516,9 +13516,9 @@ $args = \[\]
 
 ##### Return values
 
-[WorkSpacesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkSpaces.WorkSpacesClient.html)
+[WorkSpacesClient](class-aws-workspaces-workspacesclient.md)
 
-#### createWorkspacesInstances()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createWorkspacesInstances)
+#### createWorkspacesInstances()  [header link](class-aws-sdk-method-createworkspacesinstances.md)
 
 `
     public
@@ -13531,9 +13531,9 @@ $args = \[\]
 
 ##### Return values
 
-[WorkspacesInstancesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkspacesInstances.WorkspacesInstancesClient.html)
+[WorkspacesInstancesClient](class-aws-workspacesinstances-workspacesinstancesclient.md)
 
-#### createWorkSpacesThinClient()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createWorkSpacesThinClient)
+#### createWorkSpacesThinClient()  [header link](class-aws-sdk-method-createworkspacesthinclient.md)
 
 `
     public
@@ -13546,9 +13546,9 @@ $args = \[\]
 
 ##### Return values
 
-[WorkSpacesThinClientClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkSpacesThinClient.WorkSpacesThinClientClient.html)
+[WorkSpacesThinClientClient](class-aws-workspacesthinclient-workspacesthinclientclient.md)
 
-#### createWorkSpacesWeb()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createWorkSpacesWeb)
+#### createWorkSpacesWeb()  [header link](class-aws-sdk-method-createworkspacesweb.md)
 
 `
     public
@@ -13561,9 +13561,9 @@ $args = \[\]
 
 ##### Return values
 
-[WorkSpacesWebClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkSpacesWeb.WorkSpacesWebClient.html)
+[WorkSpacesWebClient](class-aws-workspacesweb-workspaceswebclient.md)
 
-#### createXRay()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html\#method_createXRay)
+#### createXRay()  [header link](class-aws-sdk-method-createxray.md)
 
 `
     public
@@ -13576,7 +13576,7 @@ $args = \[\]
 
 ##### Return values
 
-[XRayClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.XRay.XRayClient.html)
+[XRayClient](class-aws-xray-xrayclient.md)
 <\-\- modeled\_exceptions -->
 
 ×
@@ -13584,855 +13584,855 @@ $args = \[\]
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#toc-methods)
+  - [Constants](class-aws-sdk-toc-constants.md)
+  - [Methods](class-aws-sdk-toc-methods.md)
 - Constants
-  - [VERSION](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#constant_VERSION)
+  - [VERSION](class-aws-sdk-constant-version.md)
 - Methods
-  - [\_\_call()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method___call)
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method___construct)
-  - [copy()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_copy)
-  - [createAccessAnalyzer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAccessAnalyzer)
-  - [createAccount()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAccount)
-  - [createAcm()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAcm)
-  - [createACMPCA()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createACMPCA)
-  - [createAIOps()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAIOps)
-  - [createAmplify()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAmplify)
-  - [createAmplifyBackend()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAmplifyBackend)
-  - [createAmplifyUIBuilder()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAmplifyUIBuilder)
-  - [createApiGateway()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createApiGateway)
-  - [createApiGatewayManagementApi()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createApiGatewayManagementApi)
-  - [createApiGatewayV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createApiGatewayV2)
-  - [createAppConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAppConfig)
-  - [createAppConfigData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAppConfigData)
-  - [createAppFabric()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAppFabric)
-  - [createAppflow()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAppflow)
-  - [createAppIntegrationsService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAppIntegrationsService)
-  - [createApplicationAutoScaling()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createApplicationAutoScaling)
-  - [createApplicationCostProfiler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createApplicationCostProfiler)
-  - [createApplicationDiscoveryService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createApplicationDiscoveryService)
-  - [createApplicationInsights()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createApplicationInsights)
-  - [createApplicationSignals()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createApplicationSignals)
-  - [createAppMesh()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAppMesh)
-  - [createAppRegistry()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAppRegistry)
-  - [createAppRunner()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAppRunner)
-  - [createAppstream()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAppstream)
-  - [createAppSync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAppSync)
-  - [createARCRegionSwitch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createARCRegionSwitch)
-  - [createARCZonalShift()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createARCZonalShift)
-  - [createArtifact()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createArtifact)
-  - [createAthena()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAthena)
-  - [createAuditManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAuditManager)
-  - [createAugmentedAIRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAugmentedAIRuntime)
-  - [createAutoScaling()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAutoScaling)
-  - [createAutoScalingPlans()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createAutoScalingPlans)
-  - [createB2bi()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createB2bi)
-  - [createBackup()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBackup)
-  - [createBackupGateway()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBackupGateway)
-  - [createBackupSearch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBackupSearch)
-  - [createBatch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBatch)
-  - [createBCMDashboards()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBCMDashboards)
-  - [createBCMDataExports()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBCMDataExports)
-  - [createBCMPricingCalculator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBCMPricingCalculator)
-  - [createBCMRecommendedActions()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBCMRecommendedActions)
-  - [createBedrock()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBedrock)
-  - [createBedrockAgent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBedrockAgent)
-  - [createBedrockAgentCore()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBedrockAgentCore)
-  - [createBedrockAgentCoreControl()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBedrockAgentCoreControl)
-  - [createBedrockAgentRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBedrockAgentRuntime)
-  - [createBedrockDataAutomation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBedrockDataAutomation)
-  - [createBedrockDataAutomationRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBedrockDataAutomationRuntime)
-  - [createBedrockRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBedrockRuntime)
-  - [createBilling()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBilling)
-  - [createBillingConductor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBillingConductor)
-  - [createBraket()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBraket)
-  - [createBudgets()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createBudgets)
-  - [createChatbot()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createChatbot)
-  - [createChime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createChime)
-  - [createChimeSDKIdentity()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createChimeSDKIdentity)
-  - [createChimeSDKMediaPipelines()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createChimeSDKMediaPipelines)
-  - [createChimeSDKMeetings()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createChimeSDKMeetings)
-  - [createChimeSDKMessaging()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createChimeSDKMessaging)
-  - [createChimeSDKVoice()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createChimeSDKVoice)
-  - [createCleanRooms()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCleanRooms)
-  - [createCleanRoomsML()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCleanRoomsML)
-  - [createClient()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createClient)
-  - [createCloud9()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloud9)
-  - [createCloudControlApi()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudControlApi)
-  - [createCloudDirectory()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudDirectory)
-  - [createCloudFormation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudFormation)
-  - [createCloudFront()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudFront)
-  - [createCloudFrontKeyValueStore()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudFrontKeyValueStore)
-  - [createCloudHsm()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudHsm)
-  - [createCloudHSMV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudHSMV2)
-  - [createCloudSearch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudSearch)
-  - [createCloudSearchDomain()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudSearchDomain)
-  - [createCloudTrail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudTrail)
-  - [createCloudTrailData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudTrailData)
-  - [createCloudWatch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudWatch)
-  - [createCloudWatchEvents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudWatchEvents)
-  - [createCloudWatchLogs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudWatchLogs)
-  - [createCloudWatchRUM()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCloudWatchRUM)
-  - [createCodeArtifact()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodeArtifact)
-  - [createCodeBuild()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodeBuild)
-  - [createCodeCatalyst()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodeCatalyst)
-  - [createCodeCommit()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodeCommit)
-  - [createCodeConnections()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodeConnections)
-  - [createCodeDeploy()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodeDeploy)
-  - [createCodeGuruProfiler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodeGuruProfiler)
-  - [createCodeGuruReviewer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodeGuruReviewer)
-  - [createCodeGuruSecurity()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodeGuruSecurity)
-  - [createCodePipeline()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodePipeline)
-  - [createCodeStarconnections()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodeStarconnections)
-  - [createCodeStarNotifications()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCodeStarNotifications)
-  - [createCognitoIdentity()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCognitoIdentity)
-  - [createCognitoIdentityProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCognitoIdentityProvider)
-  - [createCognitoSync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCognitoSync)
-  - [createComprehend()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createComprehend)
-  - [createComprehendMedical()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createComprehendMedical)
-  - [createComputeOptimizer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createComputeOptimizer)
-  - [createComputeOptimizerAutomation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createComputeOptimizerAutomation)
-  - [createConfigService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createConfigService)
-  - [createConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createConnect)
-  - [createConnectCampaignService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createConnectCampaignService)
-  - [createConnectCampaignsV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createConnectCampaignsV2)
-  - [createConnectCases()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createConnectCases)
-  - [createConnectContactLens()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createConnectContactLens)
-  - [createConnectHealth()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createConnectHealth)
-  - [createConnectParticipant()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createConnectParticipant)
-  - [createConnectWisdomService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createConnectWisdomService)
-  - [createControlCatalog()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createControlCatalog)
-  - [createControlTower()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createControlTower)
-  - [createCostandUsageReportService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCostandUsageReportService)
-  - [createCostExplorer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCostExplorer)
-  - [createCostOptimizationHub()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCostOptimizationHub)
-  - [createCustomerProfiles()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createCustomerProfiles)
-  - [createDatabaseMigrationService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDatabaseMigrationService)
-  - [createDataExchange()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDataExchange)
-  - [createDataPipeline()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDataPipeline)
-  - [createDataSync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDataSync)
-  - [createDataZone()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDataZone)
-  - [createDAX()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDAX)
-  - [createDeadline()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDeadline)
-  - [createDetective()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDetective)
-  - [createDeviceFarm()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDeviceFarm)
-  - [createDevOpsAgent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDevOpsAgent)
-  - [createDevOpsGuru()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDevOpsGuru)
-  - [createDirectConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDirectConnect)
-  - [createDirectoryService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDirectoryService)
-  - [createDirectoryServiceData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDirectoryServiceData)
-  - [createDLM()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDLM)
-  - [createDocDB()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDocDB)
-  - [createDocDBElastic()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDocDBElastic)
-  - [createdrs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createdrs)
-  - [createDSQL()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDSQL)
-  - [createDynamoDb()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDynamoDb)
-  - [createDynamoDbStreams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createDynamoDbStreams)
-  - [createEBS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEBS)
-  - [createEc2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEc2)
-  - [createEC2InstanceConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEC2InstanceConnect)
-  - [createEcr()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEcr)
-  - [createECRPublic()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createECRPublic)
-  - [createEcs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEcs)
-  - [createEfs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEfs)
-  - [createEKS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEKS)
-  - [createEKSAuth()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEKSAuth)
-  - [createElastiCache()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createElastiCache)
-  - [createElasticBeanstalk()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createElasticBeanstalk)
-  - [createElasticLoadBalancing()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createElasticLoadBalancing)
-  - [createElasticLoadBalancingV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createElasticLoadBalancingV2)
-  - [createElasticsearchService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createElasticsearchService)
-  - [createElementalInference()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createElementalInference)
-  - [createEmr()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEmr)
-  - [createEMRContainers()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEMRContainers)
-  - [createEMRServerless()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEMRServerless)
-  - [createEntityResolution()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEntityResolution)
-  - [createEventBridge()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEventBridge)
-  - [createEvs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createEvs)
-  - [createfinspace()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createfinspace)
-  - [createFinSpaceData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createFinSpaceData)
-  - [createFirehose()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createFirehose)
-  - [createFIS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createFIS)
-  - [createFMS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createFMS)
-  - [createForecastQueryService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createForecastQueryService)
-  - [createForecastService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createForecastService)
-  - [createFraudDetector()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createFraudDetector)
-  - [createFreeTier()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createFreeTier)
-  - [createFSx()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createFSx)
-  - [createGameLift()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGameLift)
-  - [createGameLiftStreams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGameLiftStreams)
-  - [createGeoMaps()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGeoMaps)
-  - [createGeoPlaces()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGeoPlaces)
-  - [createGeoRoutes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGeoRoutes)
-  - [createGlacier()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGlacier)
-  - [createGlobalAccelerator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGlobalAccelerator)
-  - [createGlue()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGlue)
-  - [createGlueDataBrew()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGlueDataBrew)
-  - [createGreengrass()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGreengrass)
-  - [createGreengrassV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGreengrassV2)
-  - [createGroundStation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGroundStation)
-  - [createGuardDuty()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createGuardDuty)
-  - [createHealth()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createHealth)
-  - [createHealthLake()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createHealthLake)
-  - [createIam()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIam)
-  - [createIdentityStore()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIdentityStore)
-  - [createimagebuilder()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createimagebuilder)
-  - [createImportExport()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createImportExport)
-  - [createInspector()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createInspector)
-  - [createInspector2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createInspector2)
-  - [createInspectorScan()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createInspectorScan)
-  - [createInternetMonitor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createInternetMonitor)
-  - [createInvoicing()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createInvoicing)
-  - [createIot()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIot)
-  - [createIotDataPlane()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIotDataPlane)
-  - [createIoTDeviceAdvisor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIoTDeviceAdvisor)
-  - [createIoTEvents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIoTEvents)
-  - [createIoTEventsData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIoTEventsData)
-  - [createIoTFleetWise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIoTFleetWise)
-  - [createIoTJobsDataPlane()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIoTJobsDataPlane)
-  - [createIoTManagedIntegrations()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIoTManagedIntegrations)
-  - [createIoTSecureTunneling()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIoTSecureTunneling)
-  - [createIoTSiteWise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIoTSiteWise)
-  - [createIoTThingsGraph()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIoTThingsGraph)
-  - [createIoTTwinMaker()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIoTTwinMaker)
-  - [createIoTWireless()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIoTWireless)
-  - [createIVS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIVS)
-  - [createivschat()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createivschat)
-  - [createIVSRealTime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createIVSRealTime)
-  - [createKafka()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKafka)
-  - [createKafkaConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKafkaConnect)
-  - [createkendra()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createkendra)
-  - [createKendraRanking()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKendraRanking)
-  - [createKeyspaces()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKeyspaces)
-  - [createKeyspacesStreams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKeyspacesStreams)
-  - [createKinesis()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKinesis)
-  - [createKinesisAnalytics()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKinesisAnalytics)
-  - [createKinesisAnalyticsV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKinesisAnalyticsV2)
-  - [createKinesisVideo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKinesisVideo)
-  - [createKinesisVideoArchivedMedia()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKinesisVideoArchivedMedia)
-  - [createKinesisVideoMedia()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKinesisVideoMedia)
-  - [createKinesisVideoSignalingChannels()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKinesisVideoSignalingChannels)
-  - [createKinesisVideoWebRTCStorage()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKinesisVideoWebRTCStorage)
-  - [createKms()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createKms)
-  - [createLakeFormation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLakeFormation)
-  - [createLambda()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLambda)
-  - [createLaunchWizard()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLaunchWizard)
-  - [createLexModelBuildingService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLexModelBuildingService)
-  - [createLexModelsV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLexModelsV2)
-  - [createLexRuntimeService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLexRuntimeService)
-  - [createLexRuntimeV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLexRuntimeV2)
-  - [createLicenseManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLicenseManager)
-  - [createLicenseManagerLinuxSubscriptions()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLicenseManagerLinuxSubscriptions)
-  - [createLicenseManagerUserSubscriptions()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLicenseManagerUserSubscriptions)
-  - [createLightsail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLightsail)
-  - [createLocationService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLocationService)
-  - [createLookoutEquipment()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createLookoutEquipment)
-  - [createMachineLearning()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMachineLearning)
-  - [createMacie2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMacie2)
-  - [createMailManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMailManager)
-  - [createMainframeModernization()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMainframeModernization)
-  - [createManagedBlockchain()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createManagedBlockchain)
-  - [createManagedBlockchainQuery()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createManagedBlockchainQuery)
-  - [createManagedGrafana()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createManagedGrafana)
-  - [createMarketplaceAgreement()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMarketplaceAgreement)
-  - [createMarketplaceCatalog()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMarketplaceCatalog)
-  - [createMarketplaceCommerceAnalytics()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMarketplaceCommerceAnalytics)
-  - [createMarketplaceDeployment()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMarketplaceDeployment)
-  - [createMarketplaceEntitlementService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMarketplaceEntitlementService)
-  - [createMarketplaceMetering()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMarketplaceMetering)
-  - [createMarketplaceReporting()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMarketplaceReporting)
-  - [createMediaConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMediaConnect)
-  - [createMediaConvert()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMediaConvert)
-  - [createMediaLive()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMediaLive)
-  - [createMediaPackage()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMediaPackage)
-  - [createMediaPackageV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMediaPackageV2)
-  - [createMediaPackageVod()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMediaPackageVod)
-  - [createMediaStore()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMediaStore)
-  - [createMediaStoreData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMediaStoreData)
-  - [createMediaTailor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMediaTailor)
-  - [createMedicalImaging()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMedicalImaging)
-  - [createMemoryDB()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMemoryDB)
-  - [createmgn()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createmgn)
-  - [createMigrationHub()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMigrationHub)
-  - [createMigrationHubConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMigrationHubConfig)
-  - [createMigrationHubOrchestrator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMigrationHubOrchestrator)
-  - [createMigrationHubRefactorSpaces()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMigrationHubRefactorSpaces)
-  - [createMigrationHubStrategyRecommendations()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMigrationHubStrategyRecommendations)
-  - [createMPA()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMPA)
-  - [createMQ()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMQ)
-  - [createMTurk()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMTurk)
-  - [createMultiRegionAccessAnalyzer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAccessAnalyzer)
-  - [createMultiRegionAccount()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAccount)
-  - [createMultiRegionAcm()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAcm)
-  - [createMultiRegionACMPCA()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionACMPCA)
-  - [createMultiRegionAIOps()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAIOps)
-  - [createMultiRegionAmplify()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAmplify)
-  - [createMultiRegionAmplifyBackend()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAmplifyBackend)
-  - [createMultiRegionAmplifyUIBuilder()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAmplifyUIBuilder)
-  - [createMultiRegionApiGateway()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionApiGateway)
-  - [createMultiRegionApiGatewayManagementApi()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionApiGatewayManagementApi)
-  - [createMultiRegionApiGatewayV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionApiGatewayV2)
-  - [createMultiRegionAppConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAppConfig)
-  - [createMultiRegionAppConfigData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAppConfigData)
-  - [createMultiRegionAppFabric()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAppFabric)
-  - [createMultiRegionAppflow()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAppflow)
-  - [createMultiRegionAppIntegrationsService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAppIntegrationsService)
-  - [createMultiRegionApplicationAutoScaling()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionApplicationAutoScaling)
-  - [createMultiRegionApplicationCostProfiler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionApplicationCostProfiler)
-  - [createMultiRegionApplicationDiscoveryService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionApplicationDiscoveryService)
-  - [createMultiRegionApplicationInsights()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionApplicationInsights)
-  - [createMultiRegionApplicationSignals()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionApplicationSignals)
-  - [createMultiRegionAppMesh()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAppMesh)
-  - [createMultiRegionAppRegistry()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAppRegistry)
-  - [createMultiRegionAppRunner()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAppRunner)
-  - [createMultiRegionAppstream()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAppstream)
-  - [createMultiRegionAppSync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAppSync)
-  - [createMultiRegionARCRegionSwitch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionARCRegionSwitch)
-  - [createMultiRegionARCZonalShift()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionARCZonalShift)
-  - [createMultiRegionArtifact()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionArtifact)
-  - [createMultiRegionAthena()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAthena)
-  - [createMultiRegionAuditManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAuditManager)
-  - [createMultiRegionAugmentedAIRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAugmentedAIRuntime)
-  - [createMultiRegionAutoScaling()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAutoScaling)
-  - [createMultiRegionAutoScalingPlans()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionAutoScalingPlans)
-  - [createMultiRegionB2bi()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionB2bi)
-  - [createMultiRegionBackup()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBackup)
-  - [createMultiRegionBackupGateway()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBackupGateway)
-  - [createMultiRegionBackupSearch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBackupSearch)
-  - [createMultiRegionBatch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBatch)
-  - [createMultiRegionBCMDashboards()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBCMDashboards)
-  - [createMultiRegionBCMDataExports()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBCMDataExports)
-  - [createMultiRegionBCMPricingCalculator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBCMPricingCalculator)
-  - [createMultiRegionBCMRecommendedActions()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBCMRecommendedActions)
-  - [createMultiRegionBedrock()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBedrock)
-  - [createMultiRegionBedrockAgent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBedrockAgent)
-  - [createMultiRegionBedrockAgentCore()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBedrockAgentCore)
-  - [createMultiRegionBedrockAgentCoreControl()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBedrockAgentCoreControl)
-  - [createMultiRegionBedrockAgentRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBedrockAgentRuntime)
-  - [createMultiRegionBedrockDataAutomation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBedrockDataAutomation)
-  - [createMultiRegionBedrockDataAutomationRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBedrockDataAutomationRuntime)
-  - [createMultiRegionBedrockRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBedrockRuntime)
-  - [createMultiRegionBilling()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBilling)
-  - [createMultiRegionBillingConductor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBillingConductor)
-  - [createMultiRegionBraket()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBraket)
-  - [createMultiRegionBudgets()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionBudgets)
-  - [createMultiRegionChatbot()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionChatbot)
-  - [createMultiRegionChime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionChime)
-  - [createMultiRegionChimeSDKIdentity()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionChimeSDKIdentity)
-  - [createMultiRegionChimeSDKMediaPipelines()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionChimeSDKMediaPipelines)
-  - [createMultiRegionChimeSDKMeetings()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionChimeSDKMeetings)
-  - [createMultiRegionChimeSDKMessaging()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionChimeSDKMessaging)
-  - [createMultiRegionChimeSDKVoice()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionChimeSDKVoice)
-  - [createMultiRegionCleanRooms()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCleanRooms)
-  - [createMultiRegionCleanRoomsML()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCleanRoomsML)
-  - [createMultiRegionClient()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionClient)
-  - [createMultiRegionCloud9()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloud9)
-  - [createMultiRegionCloudControlApi()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudControlApi)
-  - [createMultiRegionCloudDirectory()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudDirectory)
-  - [createMultiRegionCloudFormation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudFormation)
-  - [createMultiRegionCloudFront()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudFront)
-  - [createMultiRegionCloudFrontKeyValueStore()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudFrontKeyValueStore)
-  - [createMultiRegionCloudHsm()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudHsm)
-  - [createMultiRegionCloudHSMV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudHSMV2)
-  - [createMultiRegionCloudSearch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudSearch)
-  - [createMultiRegionCloudSearchDomain()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudSearchDomain)
-  - [createMultiRegionCloudTrail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudTrail)
-  - [createMultiRegionCloudTrailData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudTrailData)
-  - [createMultiRegionCloudWatch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudWatch)
-  - [createMultiRegionCloudWatchEvents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudWatchEvents)
-  - [createMultiRegionCloudWatchLogs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudWatchLogs)
-  - [createMultiRegionCloudWatchRUM()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCloudWatchRUM)
-  - [createMultiRegionCodeArtifact()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodeArtifact)
-  - [createMultiRegionCodeBuild()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodeBuild)
-  - [createMultiRegionCodeCatalyst()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodeCatalyst)
-  - [createMultiRegionCodeCommit()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodeCommit)
-  - [createMultiRegionCodeConnections()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodeConnections)
-  - [createMultiRegionCodeDeploy()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodeDeploy)
-  - [createMultiRegionCodeGuruProfiler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodeGuruProfiler)
-  - [createMultiRegionCodeGuruReviewer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodeGuruReviewer)
-  - [createMultiRegionCodeGuruSecurity()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodeGuruSecurity)
-  - [createMultiRegionCodePipeline()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodePipeline)
-  - [createMultiRegionCodeStarconnections()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodeStarconnections)
-  - [createMultiRegionCodeStarNotifications()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCodeStarNotifications)
-  - [createMultiRegionCognitoIdentity()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCognitoIdentity)
-  - [createMultiRegionCognitoIdentityProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCognitoIdentityProvider)
-  - [createMultiRegionCognitoSync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCognitoSync)
-  - [createMultiRegionComprehend()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionComprehend)
-  - [createMultiRegionComprehendMedical()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionComprehendMedical)
-  - [createMultiRegionComputeOptimizer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionComputeOptimizer)
-  - [createMultiRegionComputeOptimizerAutomation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionComputeOptimizerAutomation)
-  - [createMultiRegionConfigService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionConfigService)
-  - [createMultiRegionConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionConnect)
-  - [createMultiRegionConnectCampaignService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionConnectCampaignService)
-  - [createMultiRegionConnectCampaignsV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionConnectCampaignsV2)
-  - [createMultiRegionConnectCases()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionConnectCases)
-  - [createMultiRegionConnectContactLens()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionConnectContactLens)
-  - [createMultiRegionConnectHealth()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionConnectHealth)
-  - [createMultiRegionConnectParticipant()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionConnectParticipant)
-  - [createMultiRegionConnectWisdomService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionConnectWisdomService)
-  - [createMultiRegionControlCatalog()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionControlCatalog)
-  - [createMultiRegionControlTower()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionControlTower)
-  - [createMultiRegionCostandUsageReportService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCostandUsageReportService)
-  - [createMultiRegionCostExplorer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCostExplorer)
-  - [createMultiRegionCostOptimizationHub()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCostOptimizationHub)
-  - [createMultiRegionCustomerProfiles()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionCustomerProfiles)
-  - [createMultiRegionDatabaseMigrationService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDatabaseMigrationService)
-  - [createMultiRegionDataExchange()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDataExchange)
-  - [createMultiRegionDataPipeline()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDataPipeline)
-  - [createMultiRegionDataSync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDataSync)
-  - [createMultiRegionDataZone()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDataZone)
-  - [createMultiRegionDAX()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDAX)
-  - [createMultiRegionDeadline()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDeadline)
-  - [createMultiRegionDetective()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDetective)
-  - [createMultiRegionDeviceFarm()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDeviceFarm)
-  - [createMultiRegionDevOpsAgent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDevOpsAgent)
-  - [createMultiRegionDevOpsGuru()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDevOpsGuru)
-  - [createMultiRegionDirectConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDirectConnect)
-  - [createMultiRegionDirectoryService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDirectoryService)
-  - [createMultiRegionDirectoryServiceData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDirectoryServiceData)
-  - [createMultiRegionDLM()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDLM)
-  - [createMultiRegionDocDB()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDocDB)
-  - [createMultiRegionDocDBElastic()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDocDBElastic)
-  - [createMultiRegiondrs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegiondrs)
-  - [createMultiRegionDSQL()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDSQL)
-  - [createMultiRegionDynamoDb()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDynamoDb)
-  - [createMultiRegionDynamoDbStreams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionDynamoDbStreams)
-  - [createMultiRegionEBS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEBS)
-  - [createMultiRegionEc2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEc2)
-  - [createMultiRegionEC2InstanceConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEC2InstanceConnect)
-  - [createMultiRegionEcr()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEcr)
-  - [createMultiRegionECRPublic()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionECRPublic)
-  - [createMultiRegionEcs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEcs)
-  - [createMultiRegionEfs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEfs)
-  - [createMultiRegionEKS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEKS)
-  - [createMultiRegionEKSAuth()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEKSAuth)
-  - [createMultiRegionElastiCache()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionElastiCache)
-  - [createMultiRegionElasticBeanstalk()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionElasticBeanstalk)
-  - [createMultiRegionElasticLoadBalancing()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionElasticLoadBalancing)
-  - [createMultiRegionElasticLoadBalancingV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionElasticLoadBalancingV2)
-  - [createMultiRegionElasticsearchService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionElasticsearchService)
-  - [createMultiRegionElementalInference()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionElementalInference)
-  - [createMultiRegionEmr()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEmr)
-  - [createMultiRegionEMRContainers()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEMRContainers)
-  - [createMultiRegionEMRServerless()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEMRServerless)
-  - [createMultiRegionEntityResolution()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEntityResolution)
-  - [createMultiRegionEventBridge()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEventBridge)
-  - [createMultiRegionEvs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionEvs)
-  - [createMultiRegionfinspace()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionfinspace)
-  - [createMultiRegionFinSpaceData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionFinSpaceData)
-  - [createMultiRegionFirehose()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionFirehose)
-  - [createMultiRegionFIS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionFIS)
-  - [createMultiRegionFMS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionFMS)
-  - [createMultiRegionForecastQueryService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionForecastQueryService)
-  - [createMultiRegionForecastService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionForecastService)
-  - [createMultiRegionFraudDetector()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionFraudDetector)
-  - [createMultiRegionFreeTier()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionFreeTier)
-  - [createMultiRegionFSx()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionFSx)
-  - [createMultiRegionGameLift()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGameLift)
-  - [createMultiRegionGameLiftStreams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGameLiftStreams)
-  - [createMultiRegionGeoMaps()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGeoMaps)
-  - [createMultiRegionGeoPlaces()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGeoPlaces)
-  - [createMultiRegionGeoRoutes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGeoRoutes)
-  - [createMultiRegionGlacier()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGlacier)
-  - [createMultiRegionGlobalAccelerator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGlobalAccelerator)
-  - [createMultiRegionGlue()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGlue)
-  - [createMultiRegionGlueDataBrew()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGlueDataBrew)
-  - [createMultiRegionGreengrass()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGreengrass)
-  - [createMultiRegionGreengrassV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGreengrassV2)
-  - [createMultiRegionGroundStation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGroundStation)
-  - [createMultiRegionGuardDuty()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionGuardDuty)
-  - [createMultiRegionHealth()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionHealth)
-  - [createMultiRegionHealthLake()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionHealthLake)
-  - [createMultiRegionIam()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIam)
-  - [createMultiRegionIdentityStore()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIdentityStore)
-  - [createMultiRegionimagebuilder()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionimagebuilder)
-  - [createMultiRegionImportExport()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionImportExport)
-  - [createMultiRegionInspector()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionInspector)
-  - [createMultiRegionInspector2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionInspector2)
-  - [createMultiRegionInspectorScan()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionInspectorScan)
-  - [createMultiRegionInternetMonitor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionInternetMonitor)
-  - [createMultiRegionInvoicing()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionInvoicing)
-  - [createMultiRegionIot()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIot)
-  - [createMultiRegionIotDataPlane()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIotDataPlane)
-  - [createMultiRegionIoTDeviceAdvisor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIoTDeviceAdvisor)
-  - [createMultiRegionIoTEvents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIoTEvents)
-  - [createMultiRegionIoTEventsData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIoTEventsData)
-  - [createMultiRegionIoTFleetWise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIoTFleetWise)
-  - [createMultiRegionIoTJobsDataPlane()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIoTJobsDataPlane)
-  - [createMultiRegionIoTManagedIntegrations()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIoTManagedIntegrations)
-  - [createMultiRegionIoTSecureTunneling()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIoTSecureTunneling)
-  - [createMultiRegionIoTSiteWise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIoTSiteWise)
-  - [createMultiRegionIoTThingsGraph()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIoTThingsGraph)
-  - [createMultiRegionIoTTwinMaker()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIoTTwinMaker)
-  - [createMultiRegionIoTWireless()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIoTWireless)
-  - [createMultiRegionIVS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIVS)
-  - [createMultiRegionivschat()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionivschat)
-  - [createMultiRegionIVSRealTime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionIVSRealTime)
-  - [createMultiRegionKafka()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKafka)
-  - [createMultiRegionKafkaConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKafkaConnect)
-  - [createMultiRegionkendra()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionkendra)
-  - [createMultiRegionKendraRanking()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKendraRanking)
-  - [createMultiRegionKeyspaces()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKeyspaces)
-  - [createMultiRegionKeyspacesStreams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKeyspacesStreams)
-  - [createMultiRegionKinesis()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKinesis)
-  - [createMultiRegionKinesisAnalytics()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKinesisAnalytics)
-  - [createMultiRegionKinesisAnalyticsV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKinesisAnalyticsV2)
-  - [createMultiRegionKinesisVideo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKinesisVideo)
-  - [createMultiRegionKinesisVideoArchivedMedia()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKinesisVideoArchivedMedia)
-  - [createMultiRegionKinesisVideoMedia()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKinesisVideoMedia)
-  - [createMultiRegionKinesisVideoSignalingChannels()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKinesisVideoSignalingChannels)
-  - [createMultiRegionKinesisVideoWebRTCStorage()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKinesisVideoWebRTCStorage)
-  - [createMultiRegionKms()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionKms)
-  - [createMultiRegionLakeFormation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLakeFormation)
-  - [createMultiRegionLambda()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLambda)
-  - [createMultiRegionLaunchWizard()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLaunchWizard)
-  - [createMultiRegionLexModelBuildingService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLexModelBuildingService)
-  - [createMultiRegionLexModelsV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLexModelsV2)
-  - [createMultiRegionLexRuntimeService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLexRuntimeService)
-  - [createMultiRegionLexRuntimeV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLexRuntimeV2)
-  - [createMultiRegionLicenseManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLicenseManager)
-  - [createMultiRegionLicenseManagerLinuxSubscriptions()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLicenseManagerLinuxSubscriptions)
-  - [createMultiRegionLicenseManagerUserSubscriptions()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLicenseManagerUserSubscriptions)
-  - [createMultiRegionLightsail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLightsail)
-  - [createMultiRegionLocationService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLocationService)
-  - [createMultiRegionLookoutEquipment()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionLookoutEquipment)
-  - [createMultiRegionMachineLearning()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMachineLearning)
-  - [createMultiRegionMacie2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMacie2)
-  - [createMultiRegionMailManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMailManager)
-  - [createMultiRegionMainframeModernization()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMainframeModernization)
-  - [createMultiRegionManagedBlockchain()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionManagedBlockchain)
-  - [createMultiRegionManagedBlockchainQuery()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionManagedBlockchainQuery)
-  - [createMultiRegionManagedGrafana()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionManagedGrafana)
-  - [createMultiRegionMarketplaceAgreement()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMarketplaceAgreement)
-  - [createMultiRegionMarketplaceCatalog()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMarketplaceCatalog)
-  - [createMultiRegionMarketplaceCommerceAnalytics()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMarketplaceCommerceAnalytics)
-  - [createMultiRegionMarketplaceDeployment()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMarketplaceDeployment)
-  - [createMultiRegionMarketplaceEntitlementService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMarketplaceEntitlementService)
-  - [createMultiRegionMarketplaceMetering()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMarketplaceMetering)
-  - [createMultiRegionMarketplaceReporting()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMarketplaceReporting)
-  - [createMultiRegionMediaConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMediaConnect)
-  - [createMultiRegionMediaConvert()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMediaConvert)
-  - [createMultiRegionMediaLive()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMediaLive)
-  - [createMultiRegionMediaPackage()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMediaPackage)
-  - [createMultiRegionMediaPackageV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMediaPackageV2)
-  - [createMultiRegionMediaPackageVod()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMediaPackageVod)
-  - [createMultiRegionMediaStore()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMediaStore)
-  - [createMultiRegionMediaStoreData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMediaStoreData)
-  - [createMultiRegionMediaTailor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMediaTailor)
-  - [createMultiRegionMedicalImaging()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMedicalImaging)
-  - [createMultiRegionMemoryDB()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMemoryDB)
-  - [createMultiRegionmgn()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionmgn)
-  - [createMultiRegionMigrationHub()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMigrationHub)
-  - [createMultiRegionMigrationHubConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMigrationHubConfig)
-  - [createMultiRegionMigrationHubOrchestrator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMigrationHubOrchestrator)
-  - [createMultiRegionMigrationHubRefactorSpaces()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMigrationHubRefactorSpaces)
-  - [createMultiRegionMigrationHubStrategyRecommendations()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMigrationHubStrategyRecommendations)
-  - [createMultiRegionMPA()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMPA)
-  - [createMultiRegionMQ()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMQ)
-  - [createMultiRegionMTurk()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMTurk)
-  - [createMultiRegionMWAA()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMWAA)
-  - [createMultiRegionMWAAServerless()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionMWAAServerless)
-  - [createMultiRegionNeptune()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionNeptune)
-  - [createMultiRegionNeptunedata()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionNeptunedata)
-  - [createMultiRegionNeptuneGraph()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionNeptuneGraph)
-  - [createMultiRegionNetworkFirewall()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionNetworkFirewall)
-  - [createMultiRegionNetworkFlowMonitor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionNetworkFlowMonitor)
-  - [createMultiRegionNetworkManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionNetworkManager)
-  - [createMultiRegionNetworkMonitor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionNetworkMonitor)
-  - [createMultiRegionNotifications()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionNotifications)
-  - [createMultiRegionNotificationsContacts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionNotificationsContacts)
-  - [createMultiRegionNovaAct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionNovaAct)
-  - [createMultiRegionOAM()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionOAM)
-  - [createMultiRegionObservabilityAdmin()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionObservabilityAdmin)
-  - [createMultiRegionOdb()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionOdb)
-  - [createMultiRegionOmics()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionOmics)
-  - [createMultiRegionOpenSearchServerless()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionOpenSearchServerless)
-  - [createMultiRegionOpenSearchService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionOpenSearchService)
-  - [createMultiRegionOrganizations()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionOrganizations)
-  - [createMultiRegionOSIS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionOSIS)
-  - [createMultiRegionOutposts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionOutposts)
-  - [createMultiRegionPanorama()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPanorama)
-  - [createMultiRegionPartnerCentralAccount()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPartnerCentralAccount)
-  - [createMultiRegionPartnerCentralBenefits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPartnerCentralBenefits)
-  - [createMultiRegionPartnerCentralChannel()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPartnerCentralChannel)
-  - [createMultiRegionPartnerCentralSelling()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPartnerCentralSelling)
-  - [createMultiRegionPaymentCryptography()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPaymentCryptography)
-  - [createMultiRegionPaymentCryptographyData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPaymentCryptographyData)
-  - [createMultiRegionPcaConnectorAd()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPcaConnectorAd)
-  - [createMultiRegionPcaConnectorScep()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPcaConnectorScep)
-  - [createMultiRegionPCS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPCS)
-  - [createMultiRegionPersonalize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPersonalize)
-  - [createMultiRegionPersonalizeEvents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPersonalizeEvents)
-  - [createMultiRegionPersonalizeRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPersonalizeRuntime)
-  - [createMultiRegionPI()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPI)
-  - [createMultiRegionPinpoint()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPinpoint)
-  - [createMultiRegionPinpointEmail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPinpointEmail)
-  - [createMultiRegionPinpointSMSVoice()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPinpointSMSVoice)
-  - [createMultiRegionPinpointSMSVoiceV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPinpointSMSVoiceV2)
-  - [createMultiRegionPipes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPipes)
-  - [createMultiRegionPolly()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPolly)
-  - [createMultiRegionPricing()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPricing)
-  - [createMultiRegionPrometheusService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionPrometheusService)
-  - [createMultiRegionProton()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionProton)
-  - [createMultiRegionQApps()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionQApps)
-  - [createMultiRegionQBusiness()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionQBusiness)
-  - [createMultiRegionQConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionQConnect)
-  - [createMultiRegionQuickSight()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionQuickSight)
-  - [createMultiRegionRAM()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRAM)
-  - [createMultiRegionRds()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRds)
-  - [createMultiRegionRDSDataService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRDSDataService)
-  - [createMultiRegionRecycleBin()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRecycleBin)
-  - [createMultiRegionRedshift()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRedshift)
-  - [createMultiRegionRedshiftDataAPIService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRedshiftDataAPIService)
-  - [createMultiRegionRedshiftServerless()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRedshiftServerless)
-  - [createMultiRegionRekognition()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRekognition)
-  - [createMultiRegionRepostspace()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRepostspace)
-  - [createMultiRegionResilienceHub()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionResilienceHub)
-  - [createMultiRegionResourceExplorer2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionResourceExplorer2)
-  - [createMultiRegionResourceGroups()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionResourceGroups)
-  - [createMultiRegionResourceGroupsTaggingAPI()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionResourceGroupsTaggingAPI)
-  - [createMultiRegionRolesAnywhere()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRolesAnywhere)
-  - [createMultiRegionRoute53()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRoute53)
-  - [createMultiRegionRoute53Domains()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRoute53Domains)
-  - [createMultiRegionRoute53GlobalResolver()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRoute53GlobalResolver)
-  - [createMultiRegionRoute53Profiles()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRoute53Profiles)
-  - [createMultiRegionRoute53RecoveryCluster()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRoute53RecoveryCluster)
-  - [createMultiRegionRoute53RecoveryControlConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRoute53RecoveryControlConfig)
-  - [createMultiRegionRoute53RecoveryReadiness()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRoute53RecoveryReadiness)
-  - [createMultiRegionRoute53Resolver()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRoute53Resolver)
-  - [createMultiRegionRTBFabric()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionRTBFabric)
-  - [createMultiRegionS3()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionS3)
-  - [createMultiRegionS3Control()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionS3Control)
-  - [createMultiRegionS3Outposts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionS3Outposts)
-  - [createMultiRegionS3Tables()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionS3Tables)
-  - [createMultiRegionS3Vectors()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionS3Vectors)
-  - [createMultiRegionSageMaker()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSageMaker)
-  - [createMultiRegionSagemakerEdgeManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSagemakerEdgeManager)
-  - [createMultiRegionSageMakerFeatureStoreRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSageMakerFeatureStoreRuntime)
-  - [createMultiRegionSageMakerGeospatial()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSageMakerGeospatial)
-  - [createMultiRegionSageMakerMetrics()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSageMakerMetrics)
-  - [createMultiRegionSageMakerRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSageMakerRuntime)
-  - [createMultiRegionSavingsPlans()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSavingsPlans)
-  - [createMultiRegionScheduler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionScheduler)
-  - [createMultiRegionSchemas()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSchemas)
-  - [createMultiRegionSecretsManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSecretsManager)
-  - [createMultiRegionSecurityAgent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSecurityAgent)
-  - [createMultiRegionSecurityHub()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSecurityHub)
-  - [createMultiRegionSecurityIR()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSecurityIR)
-  - [createMultiRegionSecurityLake()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSecurityLake)
-  - [createMultiRegionServerlessApplicationRepository()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionServerlessApplicationRepository)
-  - [createMultiRegionServiceCatalog()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionServiceCatalog)
-  - [createMultiRegionServiceDiscovery()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionServiceDiscovery)
-  - [createMultiRegionServiceQuotas()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionServiceQuotas)
-  - [createMultiRegionSes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSes)
-  - [createMultiRegionSesV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSesV2)
-  - [createMultiRegionSfn()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSfn)
-  - [createMultiRegionShield()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionShield)
-  - [createMultiRegionsigner()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionsigner)
-  - [createMultiRegionSignerData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSignerData)
-  - [createMultiRegionSignin()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSignin)
-  - [createMultiRegionSimpleDBv2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSimpleDBv2)
-  - [createMultiRegionSimSpaceWeaver()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSimSpaceWeaver)
-  - [createMultiRegionSnowBall()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSnowBall)
-  - [createMultiRegionSnowDeviceManagement()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSnowDeviceManagement)
-  - [createMultiRegionSns()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSns)
-  - [createMultiRegionSocialMessaging()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSocialMessaging)
-  - [createMultiRegionSqs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSqs)
-  - [createMultiRegionSsm()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSsm)
-  - [createMultiRegionSSMContacts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSSMContacts)
-  - [createMultiRegionSSMGuiConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSSMGuiConnect)
-  - [createMultiRegionSSMIncidents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSSMIncidents)
-  - [createMultiRegionSSMQuickSetup()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSSMQuickSetup)
-  - [createMultiRegionSsmSap()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSsmSap)
-  - [createMultiRegionSSO()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSSO)
-  - [createMultiRegionSSOAdmin()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSSOAdmin)
-  - [createMultiRegionSSOOIDC()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSSOOIDC)
-  - [createMultiRegionStorageGateway()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionStorageGateway)
-  - [createMultiRegionSts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSts)
-  - [createMultiRegionSupplyChain()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSupplyChain)
-  - [createMultiRegionSupport()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSupport)
-  - [createMultiRegionSupportApp()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSupportApp)
-  - [createMultiRegionSustainability()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSustainability)
-  - [createMultiRegionSwf()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSwf)
-  - [createMultiRegionSynthetics()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionSynthetics)
-  - [createMultiRegionTaxSettings()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionTaxSettings)
-  - [createMultiRegionTextract()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionTextract)
-  - [createMultiRegionTimestreamInfluxDB()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionTimestreamInfluxDB)
-  - [createMultiRegionTimestreamQuery()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionTimestreamQuery)
-  - [createMultiRegionTimestreamWrite()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionTimestreamWrite)
-  - [createMultiRegionTnb()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionTnb)
-  - [createMultiRegionTranscribeService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionTranscribeService)
-  - [createMultiRegionTransfer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionTransfer)
-  - [createMultiRegionTranslate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionTranslate)
-  - [createMultiRegionTrustedAdvisor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionTrustedAdvisor)
-  - [createMultiRegionUxc()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionUxc)
-  - [createMultiRegionVerifiedPermissions()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionVerifiedPermissions)
-  - [createMultiRegionVoiceID()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionVoiceID)
-  - [createMultiRegionVPCLattice()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionVPCLattice)
-  - [createMultiRegionWaf()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWaf)
-  - [createMultiRegionWafRegional()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWafRegional)
-  - [createMultiRegionWAFV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWAFV2)
-  - [createMultiRegionWellArchitected()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWellArchitected)
-  - [createMultiRegionWickr()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWickr)
-  - [createMultiRegionWorkDocs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWorkDocs)
-  - [createMultiRegionWorkMail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWorkMail)
-  - [createMultiRegionWorkMailMessageFlow()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWorkMailMessageFlow)
-  - [createMultiRegionWorkSpaces()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWorkSpaces)
-  - [createMultiRegionWorkspacesInstances()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWorkspacesInstances)
-  - [createMultiRegionWorkSpacesThinClient()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWorkSpacesThinClient)
-  - [createMultiRegionWorkSpacesWeb()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionWorkSpacesWeb)
-  - [createMultiRegionXRay()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMultiRegionXRay)
-  - [createMWAA()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMWAA)
-  - [createMWAAServerless()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createMWAAServerless)
-  - [createNeptune()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createNeptune)
-  - [createNeptunedata()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createNeptunedata)
-  - [createNeptuneGraph()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createNeptuneGraph)
-  - [createNetworkFirewall()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createNetworkFirewall)
-  - [createNetworkFlowMonitor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createNetworkFlowMonitor)
-  - [createNetworkManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createNetworkManager)
-  - [createNetworkMonitor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createNetworkMonitor)
-  - [createNotifications()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createNotifications)
-  - [createNotificationsContacts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createNotificationsContacts)
-  - [createNovaAct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createNovaAct)
-  - [createOAM()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createOAM)
-  - [createObservabilityAdmin()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createObservabilityAdmin)
-  - [createOdb()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createOdb)
-  - [createOmics()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createOmics)
-  - [createOpenSearchServerless()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createOpenSearchServerless)
-  - [createOpenSearchService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createOpenSearchService)
-  - [createOrganizations()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createOrganizations)
-  - [createOSIS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createOSIS)
-  - [createOutposts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createOutposts)
-  - [createPanorama()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPanorama)
-  - [createPartnerCentralAccount()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPartnerCentralAccount)
-  - [createPartnerCentralBenefits()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPartnerCentralBenefits)
-  - [createPartnerCentralChannel()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPartnerCentralChannel)
-  - [createPartnerCentralSelling()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPartnerCentralSelling)
-  - [createPaymentCryptography()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPaymentCryptography)
-  - [createPaymentCryptographyData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPaymentCryptographyData)
-  - [createPcaConnectorAd()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPcaConnectorAd)
-  - [createPcaConnectorScep()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPcaConnectorScep)
-  - [createPCS()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPCS)
-  - [createPersonalize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPersonalize)
-  - [createPersonalizeEvents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPersonalizeEvents)
-  - [createPersonalizeRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPersonalizeRuntime)
-  - [createPI()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPI)
-  - [createPinpoint()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPinpoint)
-  - [createPinpointEmail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPinpointEmail)
-  - [createPinpointSMSVoice()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPinpointSMSVoice)
-  - [createPinpointSMSVoiceV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPinpointSMSVoiceV2)
-  - [createPipes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPipes)
-  - [createPolly()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPolly)
-  - [createPricing()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPricing)
-  - [createPrometheusService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createPrometheusService)
-  - [createProton()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createProton)
-  - [createQApps()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createQApps)
-  - [createQBusiness()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createQBusiness)
-  - [createQConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createQConnect)
-  - [createQuickSight()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createQuickSight)
-  - [createRAM()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRAM)
-  - [createRds()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRds)
-  - [createRDSDataService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRDSDataService)
-  - [createRecycleBin()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRecycleBin)
-  - [createRedshift()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRedshift)
-  - [createRedshiftDataAPIService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRedshiftDataAPIService)
-  - [createRedshiftServerless()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRedshiftServerless)
-  - [createRekognition()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRekognition)
-  - [createRepostspace()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRepostspace)
-  - [createResilienceHub()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createResilienceHub)
-  - [createResourceExplorer2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createResourceExplorer2)
-  - [createResourceGroups()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createResourceGroups)
-  - [createResourceGroupsTaggingAPI()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createResourceGroupsTaggingAPI)
-  - [createRolesAnywhere()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRolesAnywhere)
-  - [createRoute53()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRoute53)
-  - [createRoute53Domains()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRoute53Domains)
-  - [createRoute53GlobalResolver()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRoute53GlobalResolver)
-  - [createRoute53Profiles()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRoute53Profiles)
-  - [createRoute53RecoveryCluster()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRoute53RecoveryCluster)
-  - [createRoute53RecoveryControlConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRoute53RecoveryControlConfig)
-  - [createRoute53RecoveryReadiness()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRoute53RecoveryReadiness)
-  - [createRoute53Resolver()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRoute53Resolver)
-  - [createRTBFabric()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createRTBFabric)
-  - [createS3()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createS3)
-  - [createS3Control()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createS3Control)
-  - [createS3Outposts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createS3Outposts)
-  - [createS3Tables()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createS3Tables)
-  - [createS3Vectors()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createS3Vectors)
-  - [createSageMaker()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSageMaker)
-  - [createSagemakerEdgeManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSagemakerEdgeManager)
-  - [createSageMakerFeatureStoreRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSageMakerFeatureStoreRuntime)
-  - [createSageMakerGeospatial()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSageMakerGeospatial)
-  - [createSageMakerMetrics()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSageMakerMetrics)
-  - [createSageMakerRuntime()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSageMakerRuntime)
-  - [createSavingsPlans()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSavingsPlans)
-  - [createScheduler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createScheduler)
-  - [createSchemas()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSchemas)
-  - [createSecretsManager()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSecretsManager)
-  - [createSecurityAgent()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSecurityAgent)
-  - [createSecurityHub()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSecurityHub)
-  - [createSecurityIR()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSecurityIR)
-  - [createSecurityLake()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSecurityLake)
-  - [createServerlessApplicationRepository()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createServerlessApplicationRepository)
-  - [createServiceCatalog()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createServiceCatalog)
-  - [createServiceDiscovery()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createServiceDiscovery)
-  - [createServiceQuotas()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createServiceQuotas)
-  - [createSes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSes)
-  - [createSesV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSesV2)
-  - [createSfn()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSfn)
-  - [createShield()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createShield)
-  - [createsigner()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createsigner)
-  - [createSignerData()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSignerData)
-  - [createSignin()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSignin)
-  - [createSimpleDBv2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSimpleDBv2)
-  - [createSimSpaceWeaver()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSimSpaceWeaver)
-  - [createSnowBall()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSnowBall)
-  - [createSnowDeviceManagement()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSnowDeviceManagement)
-  - [createSns()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSns)
-  - [createSocialMessaging()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSocialMessaging)
-  - [createSqs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSqs)
-  - [createSsm()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSsm)
-  - [createSSMContacts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSSMContacts)
-  - [createSSMGuiConnect()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSSMGuiConnect)
-  - [createSSMIncidents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSSMIncidents)
-  - [createSSMQuickSetup()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSSMQuickSetup)
-  - [createSsmSap()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSsmSap)
-  - [createSSO()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSSO)
-  - [createSSOAdmin()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSSOAdmin)
-  - [createSSOOIDC()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSSOOIDC)
-  - [createStorageGateway()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createStorageGateway)
-  - [createSts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSts)
-  - [createSupplyChain()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSupplyChain)
-  - [createSupport()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSupport)
-  - [createSupportApp()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSupportApp)
-  - [createSustainability()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSustainability)
-  - [createSwf()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSwf)
-  - [createSynthetics()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createSynthetics)
-  - [createTaxSettings()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createTaxSettings)
-  - [createTextract()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createTextract)
-  - [createTimestreamInfluxDB()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createTimestreamInfluxDB)
-  - [createTimestreamQuery()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createTimestreamQuery)
-  - [createTimestreamWrite()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createTimestreamWrite)
-  - [createTnb()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createTnb)
-  - [createTranscribeService()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createTranscribeService)
-  - [createTransfer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createTransfer)
-  - [createTranslate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createTranslate)
-  - [createTrustedAdvisor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createTrustedAdvisor)
-  - [createUxc()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createUxc)
-  - [createVerifiedPermissions()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createVerifiedPermissions)
-  - [createVoiceID()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createVoiceID)
-  - [createVPCLattice()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createVPCLattice)
-  - [createWaf()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWaf)
-  - [createWafRegional()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWafRegional)
-  - [createWAFV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWAFV2)
-  - [createWellArchitected()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWellArchitected)
-  - [createWickr()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWickr)
-  - [createWorkDocs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWorkDocs)
-  - [createWorkMail()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWorkMail)
-  - [createWorkMailMessageFlow()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWorkMailMessageFlow)
-  - [createWorkSpaces()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWorkSpaces)
-  - [createWorkspacesInstances()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWorkspacesInstances)
-  - [createWorkSpacesThinClient()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWorkSpacesThinClient)
-  - [createWorkSpacesWeb()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createWorkSpacesWeb)
-  - [createXRay()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#method_createXRay)
+  - [\_\_call()](class-aws-sdk-method-call.md)
+  - [\_\_construct()](class-aws-sdk-method-construct.md)
+  - [copy()](class-aws-sdk-method-copy.md)
+  - [createAccessAnalyzer()](class-aws-sdk-method-createaccessanalyzer.md)
+  - [createAccount()](class-aws-sdk-method-createaccount.md)
+  - [createAcm()](class-aws-sdk-method-createacm.md)
+  - [createACMPCA()](class-aws-sdk-method-createacmpca.md)
+  - [createAIOps()](class-aws-sdk-method-createaiops.md)
+  - [createAmplify()](class-aws-sdk-method-createamplify.md)
+  - [createAmplifyBackend()](class-aws-sdk-method-createamplifybackend.md)
+  - [createAmplifyUIBuilder()](class-aws-sdk-method-createamplifyuibuilder.md)
+  - [createApiGateway()](class-aws-sdk-method-createapigateway.md)
+  - [createApiGatewayManagementApi()](class-aws-sdk-method-createapigatewaymanagementapi.md)
+  - [createApiGatewayV2()](class-aws-sdk-method-createapigatewayv2.md)
+  - [createAppConfig()](class-aws-sdk-method-createappconfig.md)
+  - [createAppConfigData()](class-aws-sdk-method-createappconfigdata.md)
+  - [createAppFabric()](class-aws-sdk-method-createappfabric.md)
+  - [createAppflow()](class-aws-sdk-method-createappflow.md)
+  - [createAppIntegrationsService()](class-aws-sdk-method-createappintegrationsservice.md)
+  - [createApplicationAutoScaling()](class-aws-sdk-method-createapplicationautoscaling.md)
+  - [createApplicationCostProfiler()](class-aws-sdk-method-createapplicationcostprofiler.md)
+  - [createApplicationDiscoveryService()](class-aws-sdk-method-createapplicationdiscoveryservice.md)
+  - [createApplicationInsights()](class-aws-sdk-method-createapplicationinsights.md)
+  - [createApplicationSignals()](class-aws-sdk-method-createapplicationsignals.md)
+  - [createAppMesh()](class-aws-sdk-method-createappmesh.md)
+  - [createAppRegistry()](class-aws-sdk-method-createappregistry.md)
+  - [createAppRunner()](class-aws-sdk-method-createapprunner.md)
+  - [createAppstream()](class-aws-sdk-method-createappstream.md)
+  - [createAppSync()](class-aws-sdk-method-createappsync.md)
+  - [createARCRegionSwitch()](class-aws-sdk-method-createarcregionswitch.md)
+  - [createARCZonalShift()](class-aws-sdk-method-createarczonalshift.md)
+  - [createArtifact()](class-aws-sdk-method-createartifact.md)
+  - [createAthena()](class-aws-sdk-method-createathena.md)
+  - [createAuditManager()](class-aws-sdk-method-createauditmanager.md)
+  - [createAugmentedAIRuntime()](class-aws-sdk-method-createaugmentedairuntime.md)
+  - [createAutoScaling()](class-aws-sdk-method-createautoscaling.md)
+  - [createAutoScalingPlans()](class-aws-sdk-method-createautoscalingplans.md)
+  - [createB2bi()](class-aws-sdk-method-createb2bi.md)
+  - [createBackup()](class-aws-sdk-method-createbackup.md)
+  - [createBackupGateway()](class-aws-sdk-method-createbackupgateway.md)
+  - [createBackupSearch()](class-aws-sdk-method-createbackupsearch.md)
+  - [createBatch()](class-aws-sdk-method-createbatch.md)
+  - [createBCMDashboards()](class-aws-sdk-method-createbcmdashboards.md)
+  - [createBCMDataExports()](class-aws-sdk-method-createbcmdataexports.md)
+  - [createBCMPricingCalculator()](class-aws-sdk-method-createbcmpricingcalculator.md)
+  - [createBCMRecommendedActions()](class-aws-sdk-method-createbcmrecommendedactions.md)
+  - [createBedrock()](class-aws-sdk-method-createbedrock.md)
+  - [createBedrockAgent()](class-aws-sdk-method-createbedrockagent.md)
+  - [createBedrockAgentCore()](class-aws-sdk-method-createbedrockagentcore.md)
+  - [createBedrockAgentCoreControl()](class-aws-sdk-method-createbedrockagentcorecontrol.md)
+  - [createBedrockAgentRuntime()](class-aws-sdk-method-createbedrockagentruntime.md)
+  - [createBedrockDataAutomation()](class-aws-sdk-method-createbedrockdataautomation.md)
+  - [createBedrockDataAutomationRuntime()](class-aws-sdk-method-createbedrockdataautomationruntime.md)
+  - [createBedrockRuntime()](class-aws-sdk-method-createbedrockruntime.md)
+  - [createBilling()](class-aws-sdk-method-createbilling.md)
+  - [createBillingConductor()](class-aws-sdk-method-createbillingconductor.md)
+  - [createBraket()](class-aws-sdk-method-createbraket.md)
+  - [createBudgets()](class-aws-sdk-method-createbudgets.md)
+  - [createChatbot()](class-aws-sdk-method-createchatbot.md)
+  - [createChime()](class-aws-sdk-method-createchime.md)
+  - [createChimeSDKIdentity()](class-aws-sdk-method-createchimesdkidentity.md)
+  - [createChimeSDKMediaPipelines()](class-aws-sdk-method-createchimesdkmediapipelines.md)
+  - [createChimeSDKMeetings()](class-aws-sdk-method-createchimesdkmeetings.md)
+  - [createChimeSDKMessaging()](class-aws-sdk-method-createchimesdkmessaging.md)
+  - [createChimeSDKVoice()](class-aws-sdk-method-createchimesdkvoice.md)
+  - [createCleanRooms()](class-aws-sdk-method-createcleanrooms.md)
+  - [createCleanRoomsML()](class-aws-sdk-method-createcleanroomsml.md)
+  - [createClient()](class-aws-sdk-method-createclient.md)
+  - [createCloud9()](class-aws-sdk-method-createcloud9.md)
+  - [createCloudControlApi()](class-aws-sdk-method-createcloudcontrolapi.md)
+  - [createCloudDirectory()](class-aws-sdk-method-createclouddirectory.md)
+  - [createCloudFormation()](class-aws-sdk-method-createcloudformation.md)
+  - [createCloudFront()](class-aws-sdk-method-createcloudfront.md)
+  - [createCloudFrontKeyValueStore()](class-aws-sdk-method-createcloudfrontkeyvaluestore.md)
+  - [createCloudHsm()](class-aws-sdk-method-createcloudhsm.md)
+  - [createCloudHSMV2()](class-aws-sdk-method-createcloudhsmv2.md)
+  - [createCloudSearch()](class-aws-sdk-method-createcloudsearch.md)
+  - [createCloudSearchDomain()](class-aws-sdk-method-createcloudsearchdomain.md)
+  - [createCloudTrail()](class-aws-sdk-method-createcloudtrail.md)
+  - [createCloudTrailData()](class-aws-sdk-method-createcloudtraildata.md)
+  - [createCloudWatch()](class-aws-sdk-method-createcloudwatch.md)
+  - [createCloudWatchEvents()](class-aws-sdk-method-createcloudwatchevents.md)
+  - [createCloudWatchLogs()](class-aws-sdk-method-createcloudwatchlogs.md)
+  - [createCloudWatchRUM()](class-aws-sdk-method-createcloudwatchrum.md)
+  - [createCodeArtifact()](class-aws-sdk-method-createcodeartifact.md)
+  - [createCodeBuild()](class-aws-sdk-method-createcodebuild.md)
+  - [createCodeCatalyst()](class-aws-sdk-method-createcodecatalyst.md)
+  - [createCodeCommit()](class-aws-sdk-method-createcodecommit.md)
+  - [createCodeConnections()](class-aws-sdk-method-createcodeconnections.md)
+  - [createCodeDeploy()](class-aws-sdk-method-createcodedeploy.md)
+  - [createCodeGuruProfiler()](class-aws-sdk-method-createcodeguruprofiler.md)
+  - [createCodeGuruReviewer()](class-aws-sdk-method-createcodegurureviewer.md)
+  - [createCodeGuruSecurity()](class-aws-sdk-method-createcodegurusecurity.md)
+  - [createCodePipeline()](class-aws-sdk-method-createcodepipeline.md)
+  - [createCodeStarconnections()](class-aws-sdk-method-createcodestarconnections.md)
+  - [createCodeStarNotifications()](class-aws-sdk-method-createcodestarnotifications.md)
+  - [createCognitoIdentity()](class-aws-sdk-method-createcognitoidentity.md)
+  - [createCognitoIdentityProvider()](class-aws-sdk-method-createcognitoidentityprovider.md)
+  - [createCognitoSync()](class-aws-sdk-method-createcognitosync.md)
+  - [createComprehend()](class-aws-sdk-method-createcomprehend.md)
+  - [createComprehendMedical()](class-aws-sdk-method-createcomprehendmedical.md)
+  - [createComputeOptimizer()](class-aws-sdk-method-createcomputeoptimizer.md)
+  - [createComputeOptimizerAutomation()](class-aws-sdk-method-createcomputeoptimizerautomation.md)
+  - [createConfigService()](class-aws-sdk-method-createconfigservice.md)
+  - [createConnect()](class-aws-sdk-method-createconnect.md)
+  - [createConnectCampaignService()](class-aws-sdk-method-createconnectcampaignservice.md)
+  - [createConnectCampaignsV2()](class-aws-sdk-method-createconnectcampaignsv2.md)
+  - [createConnectCases()](class-aws-sdk-method-createconnectcases.md)
+  - [createConnectContactLens()](class-aws-sdk-method-createconnectcontactlens.md)
+  - [createConnectHealth()](class-aws-sdk-method-createconnecthealth.md)
+  - [createConnectParticipant()](class-aws-sdk-method-createconnectparticipant.md)
+  - [createConnectWisdomService()](class-aws-sdk-method-createconnectwisdomservice.md)
+  - [createControlCatalog()](class-aws-sdk-method-createcontrolcatalog.md)
+  - [createControlTower()](class-aws-sdk-method-createcontroltower.md)
+  - [createCostandUsageReportService()](class-aws-sdk-method-createcostandusagereportservice.md)
+  - [createCostExplorer()](class-aws-sdk-method-createcostexplorer.md)
+  - [createCostOptimizationHub()](class-aws-sdk-method-createcostoptimizationhub.md)
+  - [createCustomerProfiles()](class-aws-sdk-method-createcustomerprofiles.md)
+  - [createDatabaseMigrationService()](class-aws-sdk-method-createdatabasemigrationservice.md)
+  - [createDataExchange()](class-aws-sdk-method-createdataexchange.md)
+  - [createDataPipeline()](class-aws-sdk-method-createdatapipeline.md)
+  - [createDataSync()](class-aws-sdk-method-createdatasync.md)
+  - [createDataZone()](class-aws-sdk-method-createdatazone.md)
+  - [createDAX()](class-aws-sdk-method-createdax.md)
+  - [createDeadline()](class-aws-sdk-method-createdeadline.md)
+  - [createDetective()](class-aws-sdk-method-createdetective.md)
+  - [createDeviceFarm()](class-aws-sdk-method-createdevicefarm.md)
+  - [createDevOpsAgent()](class-aws-sdk-method-createdevopsagent.md)
+  - [createDevOpsGuru()](class-aws-sdk-method-createdevopsguru.md)
+  - [createDirectConnect()](class-aws-sdk-method-createdirectconnect.md)
+  - [createDirectoryService()](class-aws-sdk-method-createdirectoryservice.md)
+  - [createDirectoryServiceData()](class-aws-sdk-method-createdirectoryservicedata.md)
+  - [createDLM()](class-aws-sdk-method-createdlm.md)
+  - [createDocDB()](class-aws-sdk-method-createdocdb.md)
+  - [createDocDBElastic()](class-aws-sdk-method-createdocdbelastic.md)
+  - [createdrs()](class-aws-sdk-method-createdrs.md)
+  - [createDSQL()](class-aws-sdk-method-createdsql.md)
+  - [createDynamoDb()](class-aws-sdk-method-createdynamodb.md)
+  - [createDynamoDbStreams()](class-aws-sdk-method-createdynamodbstreams.md)
+  - [createEBS()](class-aws-sdk-method-createebs.md)
+  - [createEc2()](class-aws-sdk-method-createec2.md)
+  - [createEC2InstanceConnect()](class-aws-sdk-method-createec2instanceconnect.md)
+  - [createEcr()](class-aws-sdk-method-createecr.md)
+  - [createECRPublic()](class-aws-sdk-method-createecrpublic.md)
+  - [createEcs()](class-aws-sdk-method-createecs.md)
+  - [createEfs()](class-aws-sdk-method-createefs.md)
+  - [createEKS()](class-aws-sdk-method-createeks.md)
+  - [createEKSAuth()](class-aws-sdk-method-createeksauth.md)
+  - [createElastiCache()](class-aws-sdk-method-createelasticache.md)
+  - [createElasticBeanstalk()](class-aws-sdk-method-createelasticbeanstalk.md)
+  - [createElasticLoadBalancing()](class-aws-sdk-method-createelasticloadbalancing.md)
+  - [createElasticLoadBalancingV2()](class-aws-sdk-method-createelasticloadbalancingv2.md)
+  - [createElasticsearchService()](class-aws-sdk-method-createelasticsearchservice.md)
+  - [createElementalInference()](class-aws-sdk-method-createelementalinference.md)
+  - [createEmr()](class-aws-sdk-method-createemr.md)
+  - [createEMRContainers()](class-aws-sdk-method-createemrcontainers.md)
+  - [createEMRServerless()](class-aws-sdk-method-createemrserverless.md)
+  - [createEntityResolution()](class-aws-sdk-method-createentityresolution.md)
+  - [createEventBridge()](class-aws-sdk-method-createeventbridge.md)
+  - [createEvs()](class-aws-sdk-method-createevs.md)
+  - [createfinspace()](class-aws-sdk-method-createfinspace.md)
+  - [createFinSpaceData()](class-aws-sdk-method-createfinspacedata.md)
+  - [createFirehose()](class-aws-sdk-method-createfirehose.md)
+  - [createFIS()](class-aws-sdk-method-createfis.md)
+  - [createFMS()](class-aws-sdk-method-createfms.md)
+  - [createForecastQueryService()](class-aws-sdk-method-createforecastqueryservice.md)
+  - [createForecastService()](class-aws-sdk-method-createforecastservice.md)
+  - [createFraudDetector()](class-aws-sdk-method-createfrauddetector.md)
+  - [createFreeTier()](class-aws-sdk-method-createfreetier.md)
+  - [createFSx()](class-aws-sdk-method-createfsx.md)
+  - [createGameLift()](class-aws-sdk-method-creategamelift.md)
+  - [createGameLiftStreams()](class-aws-sdk-method-creategameliftstreams.md)
+  - [createGeoMaps()](class-aws-sdk-method-creategeomaps.md)
+  - [createGeoPlaces()](class-aws-sdk-method-creategeoplaces.md)
+  - [createGeoRoutes()](class-aws-sdk-method-creategeoroutes.md)
+  - [createGlacier()](class-aws-sdk-method-createglacier.md)
+  - [createGlobalAccelerator()](class-aws-sdk-method-createglobalaccelerator.md)
+  - [createGlue()](class-aws-sdk-method-createglue.md)
+  - [createGlueDataBrew()](class-aws-sdk-method-creategluedatabrew.md)
+  - [createGreengrass()](class-aws-sdk-method-creategreengrass.md)
+  - [createGreengrassV2()](class-aws-sdk-method-creategreengrassv2.md)
+  - [createGroundStation()](class-aws-sdk-method-creategroundstation.md)
+  - [createGuardDuty()](class-aws-sdk-method-createguardduty.md)
+  - [createHealth()](class-aws-sdk-method-createhealth.md)
+  - [createHealthLake()](class-aws-sdk-method-createhealthlake.md)
+  - [createIam()](class-aws-sdk-method-createiam.md)
+  - [createIdentityStore()](class-aws-sdk-method-createidentitystore.md)
+  - [createimagebuilder()](class-aws-sdk-method-createimagebuilder.md)
+  - [createImportExport()](class-aws-sdk-method-createimportexport.md)
+  - [createInspector()](class-aws-sdk-method-createinspector.md)
+  - [createInspector2()](class-aws-sdk-method-createinspector2.md)
+  - [createInspectorScan()](class-aws-sdk-method-createinspectorscan.md)
+  - [createInternetMonitor()](class-aws-sdk-method-createinternetmonitor.md)
+  - [createInvoicing()](class-aws-sdk-method-createinvoicing.md)
+  - [createIot()](class-aws-sdk-method-createiot.md)
+  - [createIotDataPlane()](class-aws-sdk-method-createiotdataplane.md)
+  - [createIoTDeviceAdvisor()](class-aws-sdk-method-createiotdeviceadvisor.md)
+  - [createIoTEvents()](class-aws-sdk-method-createiotevents.md)
+  - [createIoTEventsData()](class-aws-sdk-method-createioteventsdata.md)
+  - [createIoTFleetWise()](class-aws-sdk-method-createiotfleetwise.md)
+  - [createIoTJobsDataPlane()](class-aws-sdk-method-createiotjobsdataplane.md)
+  - [createIoTManagedIntegrations()](class-aws-sdk-method-createiotmanagedintegrations.md)
+  - [createIoTSecureTunneling()](class-aws-sdk-method-createiotsecuretunneling.md)
+  - [createIoTSiteWise()](class-aws-sdk-method-createiotsitewise.md)
+  - [createIoTThingsGraph()](class-aws-sdk-method-createiotthingsgraph.md)
+  - [createIoTTwinMaker()](class-aws-sdk-method-createiottwinmaker.md)
+  - [createIoTWireless()](class-aws-sdk-method-createiotwireless.md)
+  - [createIVS()](class-aws-sdk-method-createivs.md)
+  - [createivschat()](class-aws-sdk-method-createivschat.md)
+  - [createIVSRealTime()](class-aws-sdk-method-createivsrealtime.md)
+  - [createKafka()](class-aws-sdk-method-createkafka.md)
+  - [createKafkaConnect()](class-aws-sdk-method-createkafkaconnect.md)
+  - [createkendra()](class-aws-sdk-method-createkendra.md)
+  - [createKendraRanking()](class-aws-sdk-method-createkendraranking.md)
+  - [createKeyspaces()](class-aws-sdk-method-createkeyspaces.md)
+  - [createKeyspacesStreams()](class-aws-sdk-method-createkeyspacesstreams.md)
+  - [createKinesis()](class-aws-sdk-method-createkinesis.md)
+  - [createKinesisAnalytics()](class-aws-sdk-method-createkinesisanalytics.md)
+  - [createKinesisAnalyticsV2()](class-aws-sdk-method-createkinesisanalyticsv2.md)
+  - [createKinesisVideo()](class-aws-sdk-method-createkinesisvideo.md)
+  - [createKinesisVideoArchivedMedia()](class-aws-sdk-method-createkinesisvideoarchivedmedia.md)
+  - [createKinesisVideoMedia()](class-aws-sdk-method-createkinesisvideomedia.md)
+  - [createKinesisVideoSignalingChannels()](class-aws-sdk-method-createkinesisvideosignalingchannels.md)
+  - [createKinesisVideoWebRTCStorage()](class-aws-sdk-method-createkinesisvideowebrtcstorage.md)
+  - [createKms()](class-aws-sdk-method-createkms.md)
+  - [createLakeFormation()](class-aws-sdk-method-createlakeformation.md)
+  - [createLambda()](class-aws-sdk-method-createlambda.md)
+  - [createLaunchWizard()](class-aws-sdk-method-createlaunchwizard.md)
+  - [createLexModelBuildingService()](class-aws-sdk-method-createlexmodelbuildingservice.md)
+  - [createLexModelsV2()](class-aws-sdk-method-createlexmodelsv2.md)
+  - [createLexRuntimeService()](class-aws-sdk-method-createlexruntimeservice.md)
+  - [createLexRuntimeV2()](class-aws-sdk-method-createlexruntimev2.md)
+  - [createLicenseManager()](class-aws-sdk-method-createlicensemanager.md)
+  - [createLicenseManagerLinuxSubscriptions()](class-aws-sdk-method-createlicensemanagerlinuxsubscriptions.md)
+  - [createLicenseManagerUserSubscriptions()](class-aws-sdk-method-createlicensemanagerusersubscriptions.md)
+  - [createLightsail()](class-aws-sdk-method-createlightsail.md)
+  - [createLocationService()](class-aws-sdk-method-createlocationservice.md)
+  - [createLookoutEquipment()](class-aws-sdk-method-createlookoutequipment.md)
+  - [createMachineLearning()](class-aws-sdk-method-createmachinelearning.md)
+  - [createMacie2()](class-aws-sdk-method-createmacie2.md)
+  - [createMailManager()](class-aws-sdk-method-createmailmanager.md)
+  - [createMainframeModernization()](class-aws-sdk-method-createmainframemodernization.md)
+  - [createManagedBlockchain()](class-aws-sdk-method-createmanagedblockchain.md)
+  - [createManagedBlockchainQuery()](class-aws-sdk-method-createmanagedblockchainquery.md)
+  - [createManagedGrafana()](class-aws-sdk-method-createmanagedgrafana.md)
+  - [createMarketplaceAgreement()](class-aws-sdk-method-createmarketplaceagreement.md)
+  - [createMarketplaceCatalog()](class-aws-sdk-method-createmarketplacecatalog.md)
+  - [createMarketplaceCommerceAnalytics()](class-aws-sdk-method-createmarketplacecommerceanalytics.md)
+  - [createMarketplaceDeployment()](class-aws-sdk-method-createmarketplacedeployment.md)
+  - [createMarketplaceEntitlementService()](class-aws-sdk-method-createmarketplaceentitlementservice.md)
+  - [createMarketplaceMetering()](class-aws-sdk-method-createmarketplacemetering.md)
+  - [createMarketplaceReporting()](class-aws-sdk-method-createmarketplacereporting.md)
+  - [createMediaConnect()](class-aws-sdk-method-createmediaconnect.md)
+  - [createMediaConvert()](class-aws-sdk-method-createmediaconvert.md)
+  - [createMediaLive()](class-aws-sdk-method-createmedialive.md)
+  - [createMediaPackage()](class-aws-sdk-method-createmediapackage.md)
+  - [createMediaPackageV2()](class-aws-sdk-method-createmediapackagev2.md)
+  - [createMediaPackageVod()](class-aws-sdk-method-createmediapackagevod.md)
+  - [createMediaStore()](class-aws-sdk-method-createmediastore.md)
+  - [createMediaStoreData()](class-aws-sdk-method-createmediastoredata.md)
+  - [createMediaTailor()](class-aws-sdk-method-createmediatailor.md)
+  - [createMedicalImaging()](class-aws-sdk-method-createmedicalimaging.md)
+  - [createMemoryDB()](class-aws-sdk-method-creatememorydb.md)
+  - [createmgn()](class-aws-sdk-method-createmgn.md)
+  - [createMigrationHub()](class-aws-sdk-method-createmigrationhub.md)
+  - [createMigrationHubConfig()](class-aws-sdk-method-createmigrationhubconfig.md)
+  - [createMigrationHubOrchestrator()](class-aws-sdk-method-createmigrationhuborchestrator.md)
+  - [createMigrationHubRefactorSpaces()](class-aws-sdk-method-createmigrationhubrefactorspaces.md)
+  - [createMigrationHubStrategyRecommendations()](class-aws-sdk-method-createmigrationhubstrategyrecommendations.md)
+  - [createMPA()](class-aws-sdk-method-creatempa.md)
+  - [createMQ()](class-aws-sdk-method-createmq.md)
+  - [createMTurk()](class-aws-sdk-method-createmturk.md)
+  - [createMultiRegionAccessAnalyzer()](class-aws-sdk-method-createmultiregionaccessanalyzer.md)
+  - [createMultiRegionAccount()](class-aws-sdk-method-createmultiregionaccount.md)
+  - [createMultiRegionAcm()](class-aws-sdk-method-createmultiregionacm.md)
+  - [createMultiRegionACMPCA()](class-aws-sdk-method-createmultiregionacmpca.md)
+  - [createMultiRegionAIOps()](class-aws-sdk-method-createmultiregionaiops.md)
+  - [createMultiRegionAmplify()](class-aws-sdk-method-createmultiregionamplify.md)
+  - [createMultiRegionAmplifyBackend()](class-aws-sdk-method-createmultiregionamplifybackend.md)
+  - [createMultiRegionAmplifyUIBuilder()](class-aws-sdk-method-createmultiregionamplifyuibuilder.md)
+  - [createMultiRegionApiGateway()](class-aws-sdk-method-createmultiregionapigateway.md)
+  - [createMultiRegionApiGatewayManagementApi()](class-aws-sdk-method-createmultiregionapigatewaymanagementapi.md)
+  - [createMultiRegionApiGatewayV2()](class-aws-sdk-method-createmultiregionapigatewayv2.md)
+  - [createMultiRegionAppConfig()](class-aws-sdk-method-createmultiregionappconfig.md)
+  - [createMultiRegionAppConfigData()](class-aws-sdk-method-createmultiregionappconfigdata.md)
+  - [createMultiRegionAppFabric()](class-aws-sdk-method-createmultiregionappfabric.md)
+  - [createMultiRegionAppflow()](class-aws-sdk-method-createmultiregionappflow.md)
+  - [createMultiRegionAppIntegrationsService()](class-aws-sdk-method-createmultiregionappintegrationsservice.md)
+  - [createMultiRegionApplicationAutoScaling()](class-aws-sdk-method-createmultiregionapplicationautoscaling.md)
+  - [createMultiRegionApplicationCostProfiler()](class-aws-sdk-method-createmultiregionapplicationcostprofiler.md)
+  - [createMultiRegionApplicationDiscoveryService()](class-aws-sdk-method-createmultiregionapplicationdiscoveryservice.md)
+  - [createMultiRegionApplicationInsights()](class-aws-sdk-method-createmultiregionapplicationinsights.md)
+  - [createMultiRegionApplicationSignals()](class-aws-sdk-method-createmultiregionapplicationsignals.md)
+  - [createMultiRegionAppMesh()](class-aws-sdk-method-createmultiregionappmesh.md)
+  - [createMultiRegionAppRegistry()](class-aws-sdk-method-createmultiregionappregistry.md)
+  - [createMultiRegionAppRunner()](class-aws-sdk-method-createmultiregionapprunner.md)
+  - [createMultiRegionAppstream()](class-aws-sdk-method-createmultiregionappstream.md)
+  - [createMultiRegionAppSync()](class-aws-sdk-method-createmultiregionappsync.md)
+  - [createMultiRegionARCRegionSwitch()](class-aws-sdk-method-createmultiregionarcregionswitch.md)
+  - [createMultiRegionARCZonalShift()](class-aws-sdk-method-createmultiregionarczonalshift.md)
+  - [createMultiRegionArtifact()](class-aws-sdk-method-createmultiregionartifact.md)
+  - [createMultiRegionAthena()](class-aws-sdk-method-createmultiregionathena.md)
+  - [createMultiRegionAuditManager()](class-aws-sdk-method-createmultiregionauditmanager.md)
+  - [createMultiRegionAugmentedAIRuntime()](class-aws-sdk-method-createmultiregionaugmentedairuntime.md)
+  - [createMultiRegionAutoScaling()](class-aws-sdk-method-createmultiregionautoscaling.md)
+  - [createMultiRegionAutoScalingPlans()](class-aws-sdk-method-createmultiregionautoscalingplans.md)
+  - [createMultiRegionB2bi()](class-aws-sdk-method-createmultiregionb2bi.md)
+  - [createMultiRegionBackup()](class-aws-sdk-method-createmultiregionbackup.md)
+  - [createMultiRegionBackupGateway()](class-aws-sdk-method-createmultiregionbackupgateway.md)
+  - [createMultiRegionBackupSearch()](class-aws-sdk-method-createmultiregionbackupsearch.md)
+  - [createMultiRegionBatch()](class-aws-sdk-method-createmultiregionbatch.md)
+  - [createMultiRegionBCMDashboards()](class-aws-sdk-method-createmultiregionbcmdashboards.md)
+  - [createMultiRegionBCMDataExports()](class-aws-sdk-method-createmultiregionbcmdataexports.md)
+  - [createMultiRegionBCMPricingCalculator()](class-aws-sdk-method-createmultiregionbcmpricingcalculator.md)
+  - [createMultiRegionBCMRecommendedActions()](class-aws-sdk-method-createmultiregionbcmrecommendedactions.md)
+  - [createMultiRegionBedrock()](class-aws-sdk-method-createmultiregionbedrock.md)
+  - [createMultiRegionBedrockAgent()](class-aws-sdk-method-createmultiregionbedrockagent.md)
+  - [createMultiRegionBedrockAgentCore()](class-aws-sdk-method-createmultiregionbedrockagentcore.md)
+  - [createMultiRegionBedrockAgentCoreControl()](class-aws-sdk-method-createmultiregionbedrockagentcorecontrol.md)
+  - [createMultiRegionBedrockAgentRuntime()](class-aws-sdk-method-createmultiregionbedrockagentruntime.md)
+  - [createMultiRegionBedrockDataAutomation()](class-aws-sdk-method-createmultiregionbedrockdataautomation.md)
+  - [createMultiRegionBedrockDataAutomationRuntime()](class-aws-sdk-method-createmultiregionbedrockdataautomationruntime.md)
+  - [createMultiRegionBedrockRuntime()](class-aws-sdk-method-createmultiregionbedrockruntime.md)
+  - [createMultiRegionBilling()](class-aws-sdk-method-createmultiregionbilling.md)
+  - [createMultiRegionBillingConductor()](class-aws-sdk-method-createmultiregionbillingconductor.md)
+  - [createMultiRegionBraket()](class-aws-sdk-method-createmultiregionbraket.md)
+  - [createMultiRegionBudgets()](class-aws-sdk-method-createmultiregionbudgets.md)
+  - [createMultiRegionChatbot()](class-aws-sdk-method-createmultiregionchatbot.md)
+  - [createMultiRegionChime()](class-aws-sdk-method-createmultiregionchime.md)
+  - [createMultiRegionChimeSDKIdentity()](class-aws-sdk-method-createmultiregionchimesdkidentity.md)
+  - [createMultiRegionChimeSDKMediaPipelines()](class-aws-sdk-method-createmultiregionchimesdkmediapipelines.md)
+  - [createMultiRegionChimeSDKMeetings()](class-aws-sdk-method-createmultiregionchimesdkmeetings.md)
+  - [createMultiRegionChimeSDKMessaging()](class-aws-sdk-method-createmultiregionchimesdkmessaging.md)
+  - [createMultiRegionChimeSDKVoice()](class-aws-sdk-method-createmultiregionchimesdkvoice.md)
+  - [createMultiRegionCleanRooms()](class-aws-sdk-method-createmultiregioncleanrooms.md)
+  - [createMultiRegionCleanRoomsML()](class-aws-sdk-method-createmultiregioncleanroomsml.md)
+  - [createMultiRegionClient()](class-aws-sdk-method-createmultiregionclient.md)
+  - [createMultiRegionCloud9()](class-aws-sdk-method-createmultiregioncloud9.md)
+  - [createMultiRegionCloudControlApi()](class-aws-sdk-method-createmultiregioncloudcontrolapi.md)
+  - [createMultiRegionCloudDirectory()](class-aws-sdk-method-createmultiregionclouddirectory.md)
+  - [createMultiRegionCloudFormation()](class-aws-sdk-method-createmultiregioncloudformation.md)
+  - [createMultiRegionCloudFront()](class-aws-sdk-method-createmultiregioncloudfront.md)
+  - [createMultiRegionCloudFrontKeyValueStore()](class-aws-sdk-method-createmultiregioncloudfrontkeyvaluestore.md)
+  - [createMultiRegionCloudHsm()](class-aws-sdk-method-createmultiregioncloudhsm.md)
+  - [createMultiRegionCloudHSMV2()](class-aws-sdk-method-createmultiregioncloudhsmv2.md)
+  - [createMultiRegionCloudSearch()](class-aws-sdk-method-createmultiregioncloudsearch.md)
+  - [createMultiRegionCloudSearchDomain()](class-aws-sdk-method-createmultiregioncloudsearchdomain.md)
+  - [createMultiRegionCloudTrail()](class-aws-sdk-method-createmultiregioncloudtrail.md)
+  - [createMultiRegionCloudTrailData()](class-aws-sdk-method-createmultiregioncloudtraildata.md)
+  - [createMultiRegionCloudWatch()](class-aws-sdk-method-createmultiregioncloudwatch.md)
+  - [createMultiRegionCloudWatchEvents()](class-aws-sdk-method-createmultiregioncloudwatchevents.md)
+  - [createMultiRegionCloudWatchLogs()](class-aws-sdk-method-createmultiregioncloudwatchlogs.md)
+  - [createMultiRegionCloudWatchRUM()](class-aws-sdk-method-createmultiregioncloudwatchrum.md)
+  - [createMultiRegionCodeArtifact()](class-aws-sdk-method-createmultiregioncodeartifact.md)
+  - [createMultiRegionCodeBuild()](class-aws-sdk-method-createmultiregioncodebuild.md)
+  - [createMultiRegionCodeCatalyst()](class-aws-sdk-method-createmultiregioncodecatalyst.md)
+  - [createMultiRegionCodeCommit()](class-aws-sdk-method-createmultiregioncodecommit.md)
+  - [createMultiRegionCodeConnections()](class-aws-sdk-method-createmultiregioncodeconnections.md)
+  - [createMultiRegionCodeDeploy()](class-aws-sdk-method-createmultiregioncodedeploy.md)
+  - [createMultiRegionCodeGuruProfiler()](class-aws-sdk-method-createmultiregioncodeguruprofiler.md)
+  - [createMultiRegionCodeGuruReviewer()](class-aws-sdk-method-createmultiregioncodegurureviewer.md)
+  - [createMultiRegionCodeGuruSecurity()](class-aws-sdk-method-createmultiregioncodegurusecurity.md)
+  - [createMultiRegionCodePipeline()](class-aws-sdk-method-createmultiregioncodepipeline.md)
+  - [createMultiRegionCodeStarconnections()](class-aws-sdk-method-createmultiregioncodestarconnections.md)
+  - [createMultiRegionCodeStarNotifications()](class-aws-sdk-method-createmultiregioncodestarnotifications.md)
+  - [createMultiRegionCognitoIdentity()](class-aws-sdk-method-createmultiregioncognitoidentity.md)
+  - [createMultiRegionCognitoIdentityProvider()](class-aws-sdk-method-createmultiregioncognitoidentityprovider.md)
+  - [createMultiRegionCognitoSync()](class-aws-sdk-method-createmultiregioncognitosync.md)
+  - [createMultiRegionComprehend()](class-aws-sdk-method-createmultiregioncomprehend.md)
+  - [createMultiRegionComprehendMedical()](class-aws-sdk-method-createmultiregioncomprehendmedical.md)
+  - [createMultiRegionComputeOptimizer()](class-aws-sdk-method-createmultiregioncomputeoptimizer.md)
+  - [createMultiRegionComputeOptimizerAutomation()](class-aws-sdk-method-createmultiregioncomputeoptimizerautomation.md)
+  - [createMultiRegionConfigService()](class-aws-sdk-method-createmultiregionconfigservice.md)
+  - [createMultiRegionConnect()](class-aws-sdk-method-createmultiregionconnect.md)
+  - [createMultiRegionConnectCampaignService()](class-aws-sdk-method-createmultiregionconnectcampaignservice.md)
+  - [createMultiRegionConnectCampaignsV2()](class-aws-sdk-method-createmultiregionconnectcampaignsv2.md)
+  - [createMultiRegionConnectCases()](class-aws-sdk-method-createmultiregionconnectcases.md)
+  - [createMultiRegionConnectContactLens()](class-aws-sdk-method-createmultiregionconnectcontactlens.md)
+  - [createMultiRegionConnectHealth()](class-aws-sdk-method-createmultiregionconnecthealth.md)
+  - [createMultiRegionConnectParticipant()](class-aws-sdk-method-createmultiregionconnectparticipant.md)
+  - [createMultiRegionConnectWisdomService()](class-aws-sdk-method-createmultiregionconnectwisdomservice.md)
+  - [createMultiRegionControlCatalog()](class-aws-sdk-method-createmultiregioncontrolcatalog.md)
+  - [createMultiRegionControlTower()](class-aws-sdk-method-createmultiregioncontroltower.md)
+  - [createMultiRegionCostandUsageReportService()](class-aws-sdk-method-createmultiregioncostandusagereportservice.md)
+  - [createMultiRegionCostExplorer()](class-aws-sdk-method-createmultiregioncostexplorer.md)
+  - [createMultiRegionCostOptimizationHub()](class-aws-sdk-method-createmultiregioncostoptimizationhub.md)
+  - [createMultiRegionCustomerProfiles()](class-aws-sdk-method-createmultiregioncustomerprofiles.md)
+  - [createMultiRegionDatabaseMigrationService()](class-aws-sdk-method-createmultiregiondatabasemigrationservice.md)
+  - [createMultiRegionDataExchange()](class-aws-sdk-method-createmultiregiondataexchange.md)
+  - [createMultiRegionDataPipeline()](class-aws-sdk-method-createmultiregiondatapipeline.md)
+  - [createMultiRegionDataSync()](class-aws-sdk-method-createmultiregiondatasync.md)
+  - [createMultiRegionDataZone()](class-aws-sdk-method-createmultiregiondatazone.md)
+  - [createMultiRegionDAX()](class-aws-sdk-method-createmultiregiondax.md)
+  - [createMultiRegionDeadline()](class-aws-sdk-method-createmultiregiondeadline.md)
+  - [createMultiRegionDetective()](class-aws-sdk-method-createmultiregiondetective.md)
+  - [createMultiRegionDeviceFarm()](class-aws-sdk-method-createmultiregiondevicefarm.md)
+  - [createMultiRegionDevOpsAgent()](class-aws-sdk-method-createmultiregiondevopsagent.md)
+  - [createMultiRegionDevOpsGuru()](class-aws-sdk-method-createmultiregiondevopsguru.md)
+  - [createMultiRegionDirectConnect()](class-aws-sdk-method-createmultiregiondirectconnect.md)
+  - [createMultiRegionDirectoryService()](class-aws-sdk-method-createmultiregiondirectoryservice.md)
+  - [createMultiRegionDirectoryServiceData()](class-aws-sdk-method-createmultiregiondirectoryservicedata.md)
+  - [createMultiRegionDLM()](class-aws-sdk-method-createmultiregiondlm.md)
+  - [createMultiRegionDocDB()](class-aws-sdk-method-createmultiregiondocdb.md)
+  - [createMultiRegionDocDBElastic()](class-aws-sdk-method-createmultiregiondocdbelastic.md)
+  - [createMultiRegiondrs()](class-aws-sdk-method-createmultiregiondrs.md)
+  - [createMultiRegionDSQL()](class-aws-sdk-method-createmultiregiondsql.md)
+  - [createMultiRegionDynamoDb()](class-aws-sdk-method-createmultiregiondynamodb.md)
+  - [createMultiRegionDynamoDbStreams()](class-aws-sdk-method-createmultiregiondynamodbstreams.md)
+  - [createMultiRegionEBS()](class-aws-sdk-method-createmultiregionebs.md)
+  - [createMultiRegionEc2()](class-aws-sdk-method-createmultiregionec2.md)
+  - [createMultiRegionEC2InstanceConnect()](class-aws-sdk-method-createmultiregionec2instanceconnect.md)
+  - [createMultiRegionEcr()](class-aws-sdk-method-createmultiregionecr.md)
+  - [createMultiRegionECRPublic()](class-aws-sdk-method-createmultiregionecrpublic.md)
+  - [createMultiRegionEcs()](class-aws-sdk-method-createmultiregionecs.md)
+  - [createMultiRegionEfs()](class-aws-sdk-method-createmultiregionefs.md)
+  - [createMultiRegionEKS()](class-aws-sdk-method-createmultiregioneks.md)
+  - [createMultiRegionEKSAuth()](class-aws-sdk-method-createmultiregioneksauth.md)
+  - [createMultiRegionElastiCache()](class-aws-sdk-method-createmultiregionelasticache.md)
+  - [createMultiRegionElasticBeanstalk()](class-aws-sdk-method-createmultiregionelasticbeanstalk.md)
+  - [createMultiRegionElasticLoadBalancing()](class-aws-sdk-method-createmultiregionelasticloadbalancing.md)
+  - [createMultiRegionElasticLoadBalancingV2()](class-aws-sdk-method-createmultiregionelasticloadbalancingv2.md)
+  - [createMultiRegionElasticsearchService()](class-aws-sdk-method-createmultiregionelasticsearchservice.md)
+  - [createMultiRegionElementalInference()](class-aws-sdk-method-createmultiregionelementalinference.md)
+  - [createMultiRegionEmr()](class-aws-sdk-method-createmultiregionemr.md)
+  - [createMultiRegionEMRContainers()](class-aws-sdk-method-createmultiregionemrcontainers.md)
+  - [createMultiRegionEMRServerless()](class-aws-sdk-method-createmultiregionemrserverless.md)
+  - [createMultiRegionEntityResolution()](class-aws-sdk-method-createmultiregionentityresolution.md)
+  - [createMultiRegionEventBridge()](class-aws-sdk-method-createmultiregioneventbridge.md)
+  - [createMultiRegionEvs()](class-aws-sdk-method-createmultiregionevs.md)
+  - [createMultiRegionfinspace()](class-aws-sdk-method-createmultiregionfinspace.md)
+  - [createMultiRegionFinSpaceData()](class-aws-sdk-method-createmultiregionfinspacedata.md)
+  - [createMultiRegionFirehose()](class-aws-sdk-method-createmultiregionfirehose.md)
+  - [createMultiRegionFIS()](class-aws-sdk-method-createmultiregionfis.md)
+  - [createMultiRegionFMS()](class-aws-sdk-method-createmultiregionfms.md)
+  - [createMultiRegionForecastQueryService()](class-aws-sdk-method-createmultiregionforecastqueryservice.md)
+  - [createMultiRegionForecastService()](class-aws-sdk-method-createmultiregionforecastservice.md)
+  - [createMultiRegionFraudDetector()](class-aws-sdk-method-createmultiregionfrauddetector.md)
+  - [createMultiRegionFreeTier()](class-aws-sdk-method-createmultiregionfreetier.md)
+  - [createMultiRegionFSx()](class-aws-sdk-method-createmultiregionfsx.md)
+  - [createMultiRegionGameLift()](class-aws-sdk-method-createmultiregiongamelift.md)
+  - [createMultiRegionGameLiftStreams()](class-aws-sdk-method-createmultiregiongameliftstreams.md)
+  - [createMultiRegionGeoMaps()](class-aws-sdk-method-createmultiregiongeomaps.md)
+  - [createMultiRegionGeoPlaces()](class-aws-sdk-method-createmultiregiongeoplaces.md)
+  - [createMultiRegionGeoRoutes()](class-aws-sdk-method-createmultiregiongeoroutes.md)
+  - [createMultiRegionGlacier()](class-aws-sdk-method-createmultiregionglacier.md)
+  - [createMultiRegionGlobalAccelerator()](class-aws-sdk-method-createmultiregionglobalaccelerator.md)
+  - [createMultiRegionGlue()](class-aws-sdk-method-createmultiregionglue.md)
+  - [createMultiRegionGlueDataBrew()](class-aws-sdk-method-createmultiregiongluedatabrew.md)
+  - [createMultiRegionGreengrass()](class-aws-sdk-method-createmultiregiongreengrass.md)
+  - [createMultiRegionGreengrassV2()](class-aws-sdk-method-createmultiregiongreengrassv2.md)
+  - [createMultiRegionGroundStation()](class-aws-sdk-method-createmultiregiongroundstation.md)
+  - [createMultiRegionGuardDuty()](class-aws-sdk-method-createmultiregionguardduty.md)
+  - [createMultiRegionHealth()](class-aws-sdk-method-createmultiregionhealth.md)
+  - [createMultiRegionHealthLake()](class-aws-sdk-method-createmultiregionhealthlake.md)
+  - [createMultiRegionIam()](class-aws-sdk-method-createmultiregioniam.md)
+  - [createMultiRegionIdentityStore()](class-aws-sdk-method-createmultiregionidentitystore.md)
+  - [createMultiRegionimagebuilder()](class-aws-sdk-method-createmultiregionimagebuilder.md)
+  - [createMultiRegionImportExport()](class-aws-sdk-method-createmultiregionimportexport.md)
+  - [createMultiRegionInspector()](class-aws-sdk-method-createmultiregioninspector.md)
+  - [createMultiRegionInspector2()](class-aws-sdk-method-createmultiregioninspector2.md)
+  - [createMultiRegionInspectorScan()](class-aws-sdk-method-createmultiregioninspectorscan.md)
+  - [createMultiRegionInternetMonitor()](class-aws-sdk-method-createmultiregioninternetmonitor.md)
+  - [createMultiRegionInvoicing()](class-aws-sdk-method-createmultiregioninvoicing.md)
+  - [createMultiRegionIot()](class-aws-sdk-method-createmultiregioniot.md)
+  - [createMultiRegionIotDataPlane()](class-aws-sdk-method-createmultiregioniotdataplane.md)
+  - [createMultiRegionIoTDeviceAdvisor()](class-aws-sdk-method-createmultiregioniotdeviceadvisor.md)
+  - [createMultiRegionIoTEvents()](class-aws-sdk-method-createmultiregioniotevents.md)
+  - [createMultiRegionIoTEventsData()](class-aws-sdk-method-createmultiregionioteventsdata.md)
+  - [createMultiRegionIoTFleetWise()](class-aws-sdk-method-createmultiregioniotfleetwise.md)
+  - [createMultiRegionIoTJobsDataPlane()](class-aws-sdk-method-createmultiregioniotjobsdataplane.md)
+  - [createMultiRegionIoTManagedIntegrations()](class-aws-sdk-method-createmultiregioniotmanagedintegrations.md)
+  - [createMultiRegionIoTSecureTunneling()](class-aws-sdk-method-createmultiregioniotsecuretunneling.md)
+  - [createMultiRegionIoTSiteWise()](class-aws-sdk-method-createmultiregioniotsitewise.md)
+  - [createMultiRegionIoTThingsGraph()](class-aws-sdk-method-createmultiregioniotthingsgraph.md)
+  - [createMultiRegionIoTTwinMaker()](class-aws-sdk-method-createmultiregioniottwinmaker.md)
+  - [createMultiRegionIoTWireless()](class-aws-sdk-method-createmultiregioniotwireless.md)
+  - [createMultiRegionIVS()](class-aws-sdk-method-createmultiregionivs.md)
+  - [createMultiRegionivschat()](class-aws-sdk-method-createmultiregionivschat.md)
+  - [createMultiRegionIVSRealTime()](class-aws-sdk-method-createmultiregionivsrealtime.md)
+  - [createMultiRegionKafka()](class-aws-sdk-method-createmultiregionkafka.md)
+  - [createMultiRegionKafkaConnect()](class-aws-sdk-method-createmultiregionkafkaconnect.md)
+  - [createMultiRegionkendra()](class-aws-sdk-method-createmultiregionkendra.md)
+  - [createMultiRegionKendraRanking()](class-aws-sdk-method-createmultiregionkendraranking.md)
+  - [createMultiRegionKeyspaces()](class-aws-sdk-method-createmultiregionkeyspaces.md)
+  - [createMultiRegionKeyspacesStreams()](class-aws-sdk-method-createmultiregionkeyspacesstreams.md)
+  - [createMultiRegionKinesis()](class-aws-sdk-method-createmultiregionkinesis.md)
+  - [createMultiRegionKinesisAnalytics()](class-aws-sdk-method-createmultiregionkinesisanalytics.md)
+  - [createMultiRegionKinesisAnalyticsV2()](class-aws-sdk-method-createmultiregionkinesisanalyticsv2.md)
+  - [createMultiRegionKinesisVideo()](class-aws-sdk-method-createmultiregionkinesisvideo.md)
+  - [createMultiRegionKinesisVideoArchivedMedia()](class-aws-sdk-method-createmultiregionkinesisvideoarchivedmedia.md)
+  - [createMultiRegionKinesisVideoMedia()](class-aws-sdk-method-createmultiregionkinesisvideomedia.md)
+  - [createMultiRegionKinesisVideoSignalingChannels()](class-aws-sdk-method-createmultiregionkinesisvideosignalingchannels.md)
+  - [createMultiRegionKinesisVideoWebRTCStorage()](class-aws-sdk-method-createmultiregionkinesisvideowebrtcstorage.md)
+  - [createMultiRegionKms()](class-aws-sdk-method-createmultiregionkms.md)
+  - [createMultiRegionLakeFormation()](class-aws-sdk-method-createmultiregionlakeformation.md)
+  - [createMultiRegionLambda()](class-aws-sdk-method-createmultiregionlambda.md)
+  - [createMultiRegionLaunchWizard()](class-aws-sdk-method-createmultiregionlaunchwizard.md)
+  - [createMultiRegionLexModelBuildingService()](class-aws-sdk-method-createmultiregionlexmodelbuildingservice.md)
+  - [createMultiRegionLexModelsV2()](class-aws-sdk-method-createmultiregionlexmodelsv2.md)
+  - [createMultiRegionLexRuntimeService()](class-aws-sdk-method-createmultiregionlexruntimeservice.md)
+  - [createMultiRegionLexRuntimeV2()](class-aws-sdk-method-createmultiregionlexruntimev2.md)
+  - [createMultiRegionLicenseManager()](class-aws-sdk-method-createmultiregionlicensemanager.md)
+  - [createMultiRegionLicenseManagerLinuxSubscriptions()](class-aws-sdk-method-createmultiregionlicensemanagerlinuxsubscriptions.md)
+  - [createMultiRegionLicenseManagerUserSubscriptions()](class-aws-sdk-method-createmultiregionlicensemanagerusersubscriptions.md)
+  - [createMultiRegionLightsail()](class-aws-sdk-method-createmultiregionlightsail.md)
+  - [createMultiRegionLocationService()](class-aws-sdk-method-createmultiregionlocationservice.md)
+  - [createMultiRegionLookoutEquipment()](class-aws-sdk-method-createmultiregionlookoutequipment.md)
+  - [createMultiRegionMachineLearning()](class-aws-sdk-method-createmultiregionmachinelearning.md)
+  - [createMultiRegionMacie2()](class-aws-sdk-method-createmultiregionmacie2.md)
+  - [createMultiRegionMailManager()](class-aws-sdk-method-createmultiregionmailmanager.md)
+  - [createMultiRegionMainframeModernization()](class-aws-sdk-method-createmultiregionmainframemodernization.md)
+  - [createMultiRegionManagedBlockchain()](class-aws-sdk-method-createmultiregionmanagedblockchain.md)
+  - [createMultiRegionManagedBlockchainQuery()](class-aws-sdk-method-createmultiregionmanagedblockchainquery.md)
+  - [createMultiRegionManagedGrafana()](class-aws-sdk-method-createmultiregionmanagedgrafana.md)
+  - [createMultiRegionMarketplaceAgreement()](class-aws-sdk-method-createmultiregionmarketplaceagreement.md)
+  - [createMultiRegionMarketplaceCatalog()](class-aws-sdk-method-createmultiregionmarketplacecatalog.md)
+  - [createMultiRegionMarketplaceCommerceAnalytics()](class-aws-sdk-method-createmultiregionmarketplacecommerceanalytics.md)
+  - [createMultiRegionMarketplaceDeployment()](class-aws-sdk-method-createmultiregionmarketplacedeployment.md)
+  - [createMultiRegionMarketplaceEntitlementService()](class-aws-sdk-method-createmultiregionmarketplaceentitlementservice.md)
+  - [createMultiRegionMarketplaceMetering()](class-aws-sdk-method-createmultiregionmarketplacemetering.md)
+  - [createMultiRegionMarketplaceReporting()](class-aws-sdk-method-createmultiregionmarketplacereporting.md)
+  - [createMultiRegionMediaConnect()](class-aws-sdk-method-createmultiregionmediaconnect.md)
+  - [createMultiRegionMediaConvert()](class-aws-sdk-method-createmultiregionmediaconvert.md)
+  - [createMultiRegionMediaLive()](class-aws-sdk-method-createmultiregionmedialive.md)
+  - [createMultiRegionMediaPackage()](class-aws-sdk-method-createmultiregionmediapackage.md)
+  - [createMultiRegionMediaPackageV2()](class-aws-sdk-method-createmultiregionmediapackagev2.md)
+  - [createMultiRegionMediaPackageVod()](class-aws-sdk-method-createmultiregionmediapackagevod.md)
+  - [createMultiRegionMediaStore()](class-aws-sdk-method-createmultiregionmediastore.md)
+  - [createMultiRegionMediaStoreData()](class-aws-sdk-method-createmultiregionmediastoredata.md)
+  - [createMultiRegionMediaTailor()](class-aws-sdk-method-createmultiregionmediatailor.md)
+  - [createMultiRegionMedicalImaging()](class-aws-sdk-method-createmultiregionmedicalimaging.md)
+  - [createMultiRegionMemoryDB()](class-aws-sdk-method-createmultiregionmemorydb.md)
+  - [createMultiRegionmgn()](class-aws-sdk-method-createmultiregionmgn.md)
+  - [createMultiRegionMigrationHub()](class-aws-sdk-method-createmultiregionmigrationhub.md)
+  - [createMultiRegionMigrationHubConfig()](class-aws-sdk-method-createmultiregionmigrationhubconfig.md)
+  - [createMultiRegionMigrationHubOrchestrator()](class-aws-sdk-method-createmultiregionmigrationhuborchestrator.md)
+  - [createMultiRegionMigrationHubRefactorSpaces()](class-aws-sdk-method-createmultiregionmigrationhubrefactorspaces.md)
+  - [createMultiRegionMigrationHubStrategyRecommendations()](class-aws-sdk-method-createmultiregionmigrationhubstrategyrecommendations.md)
+  - [createMultiRegionMPA()](class-aws-sdk-method-createmultiregionmpa.md)
+  - [createMultiRegionMQ()](class-aws-sdk-method-createmultiregionmq.md)
+  - [createMultiRegionMTurk()](class-aws-sdk-method-createmultiregionmturk.md)
+  - [createMultiRegionMWAA()](class-aws-sdk-method-createmultiregionmwaa.md)
+  - [createMultiRegionMWAAServerless()](class-aws-sdk-method-createmultiregionmwaaserverless.md)
+  - [createMultiRegionNeptune()](class-aws-sdk-method-createmultiregionneptune.md)
+  - [createMultiRegionNeptunedata()](class-aws-sdk-method-createmultiregionneptunedata.md)
+  - [createMultiRegionNeptuneGraph()](class-aws-sdk-method-createmultiregionneptunegraph.md)
+  - [createMultiRegionNetworkFirewall()](class-aws-sdk-method-createmultiregionnetworkfirewall.md)
+  - [createMultiRegionNetworkFlowMonitor()](class-aws-sdk-method-createmultiregionnetworkflowmonitor.md)
+  - [createMultiRegionNetworkManager()](class-aws-sdk-method-createmultiregionnetworkmanager.md)
+  - [createMultiRegionNetworkMonitor()](class-aws-sdk-method-createmultiregionnetworkmonitor.md)
+  - [createMultiRegionNotifications()](class-aws-sdk-method-createmultiregionnotifications.md)
+  - [createMultiRegionNotificationsContacts()](class-aws-sdk-method-createmultiregionnotificationscontacts.md)
+  - [createMultiRegionNovaAct()](class-aws-sdk-method-createmultiregionnovaact.md)
+  - [createMultiRegionOAM()](class-aws-sdk-method-createmultiregionoam.md)
+  - [createMultiRegionObservabilityAdmin()](class-aws-sdk-method-createmultiregionobservabilityadmin.md)
+  - [createMultiRegionOdb()](class-aws-sdk-method-createmultiregionodb.md)
+  - [createMultiRegionOmics()](class-aws-sdk-method-createmultiregionomics.md)
+  - [createMultiRegionOpenSearchServerless()](class-aws-sdk-method-createmultiregionopensearchserverless.md)
+  - [createMultiRegionOpenSearchService()](class-aws-sdk-method-createmultiregionopensearchservice.md)
+  - [createMultiRegionOrganizations()](class-aws-sdk-method-createmultiregionorganizations.md)
+  - [createMultiRegionOSIS()](class-aws-sdk-method-createmultiregionosis.md)
+  - [createMultiRegionOutposts()](class-aws-sdk-method-createmultiregionoutposts.md)
+  - [createMultiRegionPanorama()](class-aws-sdk-method-createmultiregionpanorama.md)
+  - [createMultiRegionPartnerCentralAccount()](class-aws-sdk-method-createmultiregionpartnercentralaccount.md)
+  - [createMultiRegionPartnerCentralBenefits()](class-aws-sdk-method-createmultiregionpartnercentralbenefits.md)
+  - [createMultiRegionPartnerCentralChannel()](class-aws-sdk-method-createmultiregionpartnercentralchannel.md)
+  - [createMultiRegionPartnerCentralSelling()](class-aws-sdk-method-createmultiregionpartnercentralselling.md)
+  - [createMultiRegionPaymentCryptography()](class-aws-sdk-method-createmultiregionpaymentcryptography.md)
+  - [createMultiRegionPaymentCryptographyData()](class-aws-sdk-method-createmultiregionpaymentcryptographydata.md)
+  - [createMultiRegionPcaConnectorAd()](class-aws-sdk-method-createmultiregionpcaconnectorad.md)
+  - [createMultiRegionPcaConnectorScep()](class-aws-sdk-method-createmultiregionpcaconnectorscep.md)
+  - [createMultiRegionPCS()](class-aws-sdk-method-createmultiregionpcs.md)
+  - [createMultiRegionPersonalize()](class-aws-sdk-method-createmultiregionpersonalize.md)
+  - [createMultiRegionPersonalizeEvents()](class-aws-sdk-method-createmultiregionpersonalizeevents.md)
+  - [createMultiRegionPersonalizeRuntime()](class-aws-sdk-method-createmultiregionpersonalizeruntime.md)
+  - [createMultiRegionPI()](class-aws-sdk-method-createmultiregionpi.md)
+  - [createMultiRegionPinpoint()](class-aws-sdk-method-createmultiregionpinpoint.md)
+  - [createMultiRegionPinpointEmail()](class-aws-sdk-method-createmultiregionpinpointemail.md)
+  - [createMultiRegionPinpointSMSVoice()](class-aws-sdk-method-createmultiregionpinpointsmsvoice.md)
+  - [createMultiRegionPinpointSMSVoiceV2()](class-aws-sdk-method-createmultiregionpinpointsmsvoicev2.md)
+  - [createMultiRegionPipes()](class-aws-sdk-method-createmultiregionpipes.md)
+  - [createMultiRegionPolly()](class-aws-sdk-method-createmultiregionpolly.md)
+  - [createMultiRegionPricing()](class-aws-sdk-method-createmultiregionpricing.md)
+  - [createMultiRegionPrometheusService()](class-aws-sdk-method-createmultiregionprometheusservice.md)
+  - [createMultiRegionProton()](class-aws-sdk-method-createmultiregionproton.md)
+  - [createMultiRegionQApps()](class-aws-sdk-method-createmultiregionqapps.md)
+  - [createMultiRegionQBusiness()](class-aws-sdk-method-createmultiregionqbusiness.md)
+  - [createMultiRegionQConnect()](class-aws-sdk-method-createmultiregionqconnect.md)
+  - [createMultiRegionQuickSight()](class-aws-sdk-method-createmultiregionquicksight.md)
+  - [createMultiRegionRAM()](class-aws-sdk-method-createmultiregionram.md)
+  - [createMultiRegionRds()](class-aws-sdk-method-createmultiregionrds.md)
+  - [createMultiRegionRDSDataService()](class-aws-sdk-method-createmultiregionrdsdataservice.md)
+  - [createMultiRegionRecycleBin()](class-aws-sdk-method-createmultiregionrecyclebin.md)
+  - [createMultiRegionRedshift()](class-aws-sdk-method-createmultiregionredshift.md)
+  - [createMultiRegionRedshiftDataAPIService()](class-aws-sdk-method-createmultiregionredshiftdataapiservice.md)
+  - [createMultiRegionRedshiftServerless()](class-aws-sdk-method-createmultiregionredshiftserverless.md)
+  - [createMultiRegionRekognition()](class-aws-sdk-method-createmultiregionrekognition.md)
+  - [createMultiRegionRepostspace()](class-aws-sdk-method-createmultiregionrepostspace.md)
+  - [createMultiRegionResilienceHub()](class-aws-sdk-method-createmultiregionresiliencehub.md)
+  - [createMultiRegionResourceExplorer2()](class-aws-sdk-method-createmultiregionresourceexplorer2.md)
+  - [createMultiRegionResourceGroups()](class-aws-sdk-method-createmultiregionresourcegroups.md)
+  - [createMultiRegionResourceGroupsTaggingAPI()](class-aws-sdk-method-createmultiregionresourcegroupstaggingapi.md)
+  - [createMultiRegionRolesAnywhere()](class-aws-sdk-method-createmultiregionrolesanywhere.md)
+  - [createMultiRegionRoute53()](class-aws-sdk-method-createmultiregionroute53.md)
+  - [createMultiRegionRoute53Domains()](class-aws-sdk-method-createmultiregionroute53domains.md)
+  - [createMultiRegionRoute53GlobalResolver()](class-aws-sdk-method-createmultiregionroute53globalresolver.md)
+  - [createMultiRegionRoute53Profiles()](class-aws-sdk-method-createmultiregionroute53profiles.md)
+  - [createMultiRegionRoute53RecoveryCluster()](class-aws-sdk-method-createmultiregionroute53recoverycluster.md)
+  - [createMultiRegionRoute53RecoveryControlConfig()](class-aws-sdk-method-createmultiregionroute53recoverycontrolconfig.md)
+  - [createMultiRegionRoute53RecoveryReadiness()](class-aws-sdk-method-createmultiregionroute53recoveryreadiness.md)
+  - [createMultiRegionRoute53Resolver()](class-aws-sdk-method-createmultiregionroute53resolver.md)
+  - [createMultiRegionRTBFabric()](class-aws-sdk-method-createmultiregionrtbfabric.md)
+  - [createMultiRegionS3()](class-aws-sdk-method-createmultiregions3.md)
+  - [createMultiRegionS3Control()](class-aws-sdk-method-createmultiregions3control.md)
+  - [createMultiRegionS3Outposts()](class-aws-sdk-method-createmultiregions3outposts.md)
+  - [createMultiRegionS3Tables()](class-aws-sdk-method-createmultiregions3tables.md)
+  - [createMultiRegionS3Vectors()](class-aws-sdk-method-createmultiregions3vectors.md)
+  - [createMultiRegionSageMaker()](class-aws-sdk-method-createmultiregionsagemaker.md)
+  - [createMultiRegionSagemakerEdgeManager()](class-aws-sdk-method-createmultiregionsagemakeredgemanager.md)
+  - [createMultiRegionSageMakerFeatureStoreRuntime()](class-aws-sdk-method-createmultiregionsagemakerfeaturestoreruntime.md)
+  - [createMultiRegionSageMakerGeospatial()](class-aws-sdk-method-createmultiregionsagemakergeospatial.md)
+  - [createMultiRegionSageMakerMetrics()](class-aws-sdk-method-createmultiregionsagemakermetrics.md)
+  - [createMultiRegionSageMakerRuntime()](class-aws-sdk-method-createmultiregionsagemakerruntime.md)
+  - [createMultiRegionSavingsPlans()](class-aws-sdk-method-createmultiregionsavingsplans.md)
+  - [createMultiRegionScheduler()](class-aws-sdk-method-createmultiregionscheduler.md)
+  - [createMultiRegionSchemas()](class-aws-sdk-method-createmultiregionschemas.md)
+  - [createMultiRegionSecretsManager()](class-aws-sdk-method-createmultiregionsecretsmanager.md)
+  - [createMultiRegionSecurityAgent()](class-aws-sdk-method-createmultiregionsecurityagent.md)
+  - [createMultiRegionSecurityHub()](class-aws-sdk-method-createmultiregionsecurityhub.md)
+  - [createMultiRegionSecurityIR()](class-aws-sdk-method-createmultiregionsecurityir.md)
+  - [createMultiRegionSecurityLake()](class-aws-sdk-method-createmultiregionsecuritylake.md)
+  - [createMultiRegionServerlessApplicationRepository()](class-aws-sdk-method-createmultiregionserverlessapplicationrepository.md)
+  - [createMultiRegionServiceCatalog()](class-aws-sdk-method-createmultiregionservicecatalog.md)
+  - [createMultiRegionServiceDiscovery()](class-aws-sdk-method-createmultiregionservicediscovery.md)
+  - [createMultiRegionServiceQuotas()](class-aws-sdk-method-createmultiregionservicequotas.md)
+  - [createMultiRegionSes()](class-aws-sdk-method-createmultiregionses.md)
+  - [createMultiRegionSesV2()](class-aws-sdk-method-createmultiregionsesv2.md)
+  - [createMultiRegionSfn()](class-aws-sdk-method-createmultiregionsfn.md)
+  - [createMultiRegionShield()](class-aws-sdk-method-createmultiregionshield.md)
+  - [createMultiRegionsigner()](class-aws-sdk-method-createmultiregionsigner.md)
+  - [createMultiRegionSignerData()](class-aws-sdk-method-createmultiregionsignerdata.md)
+  - [createMultiRegionSignin()](class-aws-sdk-method-createmultiregionsignin.md)
+  - [createMultiRegionSimpleDBv2()](class-aws-sdk-method-createmultiregionsimpledbv2.md)
+  - [createMultiRegionSimSpaceWeaver()](class-aws-sdk-method-createmultiregionsimspaceweaver.md)
+  - [createMultiRegionSnowBall()](class-aws-sdk-method-createmultiregionsnowball.md)
+  - [createMultiRegionSnowDeviceManagement()](class-aws-sdk-method-createmultiregionsnowdevicemanagement.md)
+  - [createMultiRegionSns()](class-aws-sdk-method-createmultiregionsns.md)
+  - [createMultiRegionSocialMessaging()](class-aws-sdk-method-createmultiregionsocialmessaging.md)
+  - [createMultiRegionSqs()](class-aws-sdk-method-createmultiregionsqs.md)
+  - [createMultiRegionSsm()](class-aws-sdk-method-createmultiregionssm.md)
+  - [createMultiRegionSSMContacts()](class-aws-sdk-method-createmultiregionssmcontacts.md)
+  - [createMultiRegionSSMGuiConnect()](class-aws-sdk-method-createmultiregionssmguiconnect.md)
+  - [createMultiRegionSSMIncidents()](class-aws-sdk-method-createmultiregionssmincidents.md)
+  - [createMultiRegionSSMQuickSetup()](class-aws-sdk-method-createmultiregionssmquicksetup.md)
+  - [createMultiRegionSsmSap()](class-aws-sdk-method-createmultiregionssmsap.md)
+  - [createMultiRegionSSO()](class-aws-sdk-method-createmultiregionsso.md)
+  - [createMultiRegionSSOAdmin()](class-aws-sdk-method-createmultiregionssoadmin.md)
+  - [createMultiRegionSSOOIDC()](class-aws-sdk-method-createmultiregionssooidc.md)
+  - [createMultiRegionStorageGateway()](class-aws-sdk-method-createmultiregionstoragegateway.md)
+  - [createMultiRegionSts()](class-aws-sdk-method-createmultiregionsts.md)
+  - [createMultiRegionSupplyChain()](class-aws-sdk-method-createmultiregionsupplychain.md)
+  - [createMultiRegionSupport()](class-aws-sdk-method-createmultiregionsupport.md)
+  - [createMultiRegionSupportApp()](class-aws-sdk-method-createmultiregionsupportapp.md)
+  - [createMultiRegionSustainability()](class-aws-sdk-method-createmultiregionsustainability.md)
+  - [createMultiRegionSwf()](class-aws-sdk-method-createmultiregionswf.md)
+  - [createMultiRegionSynthetics()](class-aws-sdk-method-createmultiregionsynthetics.md)
+  - [createMultiRegionTaxSettings()](class-aws-sdk-method-createmultiregiontaxsettings.md)
+  - [createMultiRegionTextract()](class-aws-sdk-method-createmultiregiontextract.md)
+  - [createMultiRegionTimestreamInfluxDB()](class-aws-sdk-method-createmultiregiontimestreaminfluxdb.md)
+  - [createMultiRegionTimestreamQuery()](class-aws-sdk-method-createmultiregiontimestreamquery.md)
+  - [createMultiRegionTimestreamWrite()](class-aws-sdk-method-createmultiregiontimestreamwrite.md)
+  - [createMultiRegionTnb()](class-aws-sdk-method-createmultiregiontnb.md)
+  - [createMultiRegionTranscribeService()](class-aws-sdk-method-createmultiregiontranscribeservice.md)
+  - [createMultiRegionTransfer()](class-aws-sdk-method-createmultiregiontransfer.md)
+  - [createMultiRegionTranslate()](class-aws-sdk-method-createmultiregiontranslate.md)
+  - [createMultiRegionTrustedAdvisor()](class-aws-sdk-method-createmultiregiontrustedadvisor.md)
+  - [createMultiRegionUxc()](class-aws-sdk-method-createmultiregionuxc.md)
+  - [createMultiRegionVerifiedPermissions()](class-aws-sdk-method-createmultiregionverifiedpermissions.md)
+  - [createMultiRegionVoiceID()](class-aws-sdk-method-createmultiregionvoiceid.md)
+  - [createMultiRegionVPCLattice()](class-aws-sdk-method-createmultiregionvpclattice.md)
+  - [createMultiRegionWaf()](class-aws-sdk-method-createmultiregionwaf.md)
+  - [createMultiRegionWafRegional()](class-aws-sdk-method-createmultiregionwafregional.md)
+  - [createMultiRegionWAFV2()](class-aws-sdk-method-createmultiregionwafv2.md)
+  - [createMultiRegionWellArchitected()](class-aws-sdk-method-createmultiregionwellarchitected.md)
+  - [createMultiRegionWickr()](class-aws-sdk-method-createmultiregionwickr.md)
+  - [createMultiRegionWorkDocs()](class-aws-sdk-method-createmultiregionworkdocs.md)
+  - [createMultiRegionWorkMail()](class-aws-sdk-method-createmultiregionworkmail.md)
+  - [createMultiRegionWorkMailMessageFlow()](class-aws-sdk-method-createmultiregionworkmailmessageflow.md)
+  - [createMultiRegionWorkSpaces()](class-aws-sdk-method-createmultiregionworkspaces.md)
+  - [createMultiRegionWorkspacesInstances()](class-aws-sdk-method-createmultiregionworkspacesinstances.md)
+  - [createMultiRegionWorkSpacesThinClient()](class-aws-sdk-method-createmultiregionworkspacesthinclient.md)
+  - [createMultiRegionWorkSpacesWeb()](class-aws-sdk-method-createmultiregionworkspacesweb.md)
+  - [createMultiRegionXRay()](class-aws-sdk-method-createmultiregionxray.md)
+  - [createMWAA()](class-aws-sdk-method-createmwaa.md)
+  - [createMWAAServerless()](class-aws-sdk-method-createmwaaserverless.md)
+  - [createNeptune()](class-aws-sdk-method-createneptune.md)
+  - [createNeptunedata()](class-aws-sdk-method-createneptunedata.md)
+  - [createNeptuneGraph()](class-aws-sdk-method-createneptunegraph.md)
+  - [createNetworkFirewall()](class-aws-sdk-method-createnetworkfirewall.md)
+  - [createNetworkFlowMonitor()](class-aws-sdk-method-createnetworkflowmonitor.md)
+  - [createNetworkManager()](class-aws-sdk-method-createnetworkmanager.md)
+  - [createNetworkMonitor()](class-aws-sdk-method-createnetworkmonitor.md)
+  - [createNotifications()](class-aws-sdk-method-createnotifications.md)
+  - [createNotificationsContacts()](class-aws-sdk-method-createnotificationscontacts.md)
+  - [createNovaAct()](class-aws-sdk-method-createnovaact.md)
+  - [createOAM()](class-aws-sdk-method-createoam.md)
+  - [createObservabilityAdmin()](class-aws-sdk-method-createobservabilityadmin.md)
+  - [createOdb()](class-aws-sdk-method-createodb.md)
+  - [createOmics()](class-aws-sdk-method-createomics.md)
+  - [createOpenSearchServerless()](class-aws-sdk-method-createopensearchserverless.md)
+  - [createOpenSearchService()](class-aws-sdk-method-createopensearchservice.md)
+  - [createOrganizations()](class-aws-sdk-method-createorganizations.md)
+  - [createOSIS()](class-aws-sdk-method-createosis.md)
+  - [createOutposts()](class-aws-sdk-method-createoutposts.md)
+  - [createPanorama()](class-aws-sdk-method-createpanorama.md)
+  - [createPartnerCentralAccount()](class-aws-sdk-method-createpartnercentralaccount.md)
+  - [createPartnerCentralBenefits()](class-aws-sdk-method-createpartnercentralbenefits.md)
+  - [createPartnerCentralChannel()](class-aws-sdk-method-createpartnercentralchannel.md)
+  - [createPartnerCentralSelling()](class-aws-sdk-method-createpartnercentralselling.md)
+  - [createPaymentCryptography()](class-aws-sdk-method-createpaymentcryptography.md)
+  - [createPaymentCryptographyData()](class-aws-sdk-method-createpaymentcryptographydata.md)
+  - [createPcaConnectorAd()](class-aws-sdk-method-createpcaconnectorad.md)
+  - [createPcaConnectorScep()](class-aws-sdk-method-createpcaconnectorscep.md)
+  - [createPCS()](class-aws-sdk-method-createpcs.md)
+  - [createPersonalize()](class-aws-sdk-method-createpersonalize.md)
+  - [createPersonalizeEvents()](class-aws-sdk-method-createpersonalizeevents.md)
+  - [createPersonalizeRuntime()](class-aws-sdk-method-createpersonalizeruntime.md)
+  - [createPI()](class-aws-sdk-method-createpi.md)
+  - [createPinpoint()](class-aws-sdk-method-createpinpoint.md)
+  - [createPinpointEmail()](class-aws-sdk-method-createpinpointemail.md)
+  - [createPinpointSMSVoice()](class-aws-sdk-method-createpinpointsmsvoice.md)
+  - [createPinpointSMSVoiceV2()](class-aws-sdk-method-createpinpointsmsvoicev2.md)
+  - [createPipes()](class-aws-sdk-method-createpipes.md)
+  - [createPolly()](class-aws-sdk-method-createpolly.md)
+  - [createPricing()](class-aws-sdk-method-createpricing.md)
+  - [createPrometheusService()](class-aws-sdk-method-createprometheusservice.md)
+  - [createProton()](class-aws-sdk-method-createproton.md)
+  - [createQApps()](class-aws-sdk-method-createqapps.md)
+  - [createQBusiness()](class-aws-sdk-method-createqbusiness.md)
+  - [createQConnect()](class-aws-sdk-method-createqconnect.md)
+  - [createQuickSight()](class-aws-sdk-method-createquicksight.md)
+  - [createRAM()](class-aws-sdk-method-createram.md)
+  - [createRds()](class-aws-sdk-method-createrds.md)
+  - [createRDSDataService()](class-aws-sdk-method-createrdsdataservice.md)
+  - [createRecycleBin()](class-aws-sdk-method-createrecyclebin.md)
+  - [createRedshift()](class-aws-sdk-method-createredshift.md)
+  - [createRedshiftDataAPIService()](class-aws-sdk-method-createredshiftdataapiservice.md)
+  - [createRedshiftServerless()](class-aws-sdk-method-createredshiftserverless.md)
+  - [createRekognition()](class-aws-sdk-method-createrekognition.md)
+  - [createRepostspace()](class-aws-sdk-method-createrepostspace.md)
+  - [createResilienceHub()](class-aws-sdk-method-createresiliencehub.md)
+  - [createResourceExplorer2()](class-aws-sdk-method-createresourceexplorer2.md)
+  - [createResourceGroups()](class-aws-sdk-method-createresourcegroups.md)
+  - [createResourceGroupsTaggingAPI()](class-aws-sdk-method-createresourcegroupstaggingapi.md)
+  - [createRolesAnywhere()](class-aws-sdk-method-createrolesanywhere.md)
+  - [createRoute53()](class-aws-sdk-method-createroute53.md)
+  - [createRoute53Domains()](class-aws-sdk-method-createroute53domains.md)
+  - [createRoute53GlobalResolver()](class-aws-sdk-method-createroute53globalresolver.md)
+  - [createRoute53Profiles()](class-aws-sdk-method-createroute53profiles.md)
+  - [createRoute53RecoveryCluster()](class-aws-sdk-method-createroute53recoverycluster.md)
+  - [createRoute53RecoveryControlConfig()](class-aws-sdk-method-createroute53recoverycontrolconfig.md)
+  - [createRoute53RecoveryReadiness()](class-aws-sdk-method-createroute53recoveryreadiness.md)
+  - [createRoute53Resolver()](class-aws-sdk-method-createroute53resolver.md)
+  - [createRTBFabric()](class-aws-sdk-method-creatertbfabric.md)
+  - [createS3()](class-aws-sdk-method-creates3.md)
+  - [createS3Control()](class-aws-sdk-method-creates3control.md)
+  - [createS3Outposts()](class-aws-sdk-method-creates3outposts.md)
+  - [createS3Tables()](class-aws-sdk-method-creates3tables.md)
+  - [createS3Vectors()](class-aws-sdk-method-creates3vectors.md)
+  - [createSageMaker()](class-aws-sdk-method-createsagemaker.md)
+  - [createSagemakerEdgeManager()](class-aws-sdk-method-createsagemakeredgemanager.md)
+  - [createSageMakerFeatureStoreRuntime()](class-aws-sdk-method-createsagemakerfeaturestoreruntime.md)
+  - [createSageMakerGeospatial()](class-aws-sdk-method-createsagemakergeospatial.md)
+  - [createSageMakerMetrics()](class-aws-sdk-method-createsagemakermetrics.md)
+  - [createSageMakerRuntime()](class-aws-sdk-method-createsagemakerruntime.md)
+  - [createSavingsPlans()](class-aws-sdk-method-createsavingsplans.md)
+  - [createScheduler()](class-aws-sdk-method-createscheduler.md)
+  - [createSchemas()](class-aws-sdk-method-createschemas.md)
+  - [createSecretsManager()](class-aws-sdk-method-createsecretsmanager.md)
+  - [createSecurityAgent()](class-aws-sdk-method-createsecurityagent.md)
+  - [createSecurityHub()](class-aws-sdk-method-createsecurityhub.md)
+  - [createSecurityIR()](class-aws-sdk-method-createsecurityir.md)
+  - [createSecurityLake()](class-aws-sdk-method-createsecuritylake.md)
+  - [createServerlessApplicationRepository()](class-aws-sdk-method-createserverlessapplicationrepository.md)
+  - [createServiceCatalog()](class-aws-sdk-method-createservicecatalog.md)
+  - [createServiceDiscovery()](class-aws-sdk-method-createservicediscovery.md)
+  - [createServiceQuotas()](class-aws-sdk-method-createservicequotas.md)
+  - [createSes()](class-aws-sdk-method-createses.md)
+  - [createSesV2()](class-aws-sdk-method-createsesv2.md)
+  - [createSfn()](class-aws-sdk-method-createsfn.md)
+  - [createShield()](class-aws-sdk-method-createshield.md)
+  - [createsigner()](class-aws-sdk-method-createsigner.md)
+  - [createSignerData()](class-aws-sdk-method-createsignerdata.md)
+  - [createSignin()](class-aws-sdk-method-createsignin.md)
+  - [createSimpleDBv2()](class-aws-sdk-method-createsimpledbv2.md)
+  - [createSimSpaceWeaver()](class-aws-sdk-method-createsimspaceweaver.md)
+  - [createSnowBall()](class-aws-sdk-method-createsnowball.md)
+  - [createSnowDeviceManagement()](class-aws-sdk-method-createsnowdevicemanagement.md)
+  - [createSns()](class-aws-sdk-method-createsns.md)
+  - [createSocialMessaging()](class-aws-sdk-method-createsocialmessaging.md)
+  - [createSqs()](class-aws-sdk-method-createsqs.md)
+  - [createSsm()](class-aws-sdk-method-createssm.md)
+  - [createSSMContacts()](class-aws-sdk-method-createssmcontacts.md)
+  - [createSSMGuiConnect()](class-aws-sdk-method-createssmguiconnect.md)
+  - [createSSMIncidents()](class-aws-sdk-method-createssmincidents.md)
+  - [createSSMQuickSetup()](class-aws-sdk-method-createssmquicksetup.md)
+  - [createSsmSap()](class-aws-sdk-method-createssmsap.md)
+  - [createSSO()](class-aws-sdk-method-createsso.md)
+  - [createSSOAdmin()](class-aws-sdk-method-createssoadmin.md)
+  - [createSSOOIDC()](class-aws-sdk-method-createssooidc.md)
+  - [createStorageGateway()](class-aws-sdk-method-createstoragegateway.md)
+  - [createSts()](class-aws-sdk-method-creatests.md)
+  - [createSupplyChain()](class-aws-sdk-method-createsupplychain.md)
+  - [createSupport()](class-aws-sdk-method-createsupport.md)
+  - [createSupportApp()](class-aws-sdk-method-createsupportapp.md)
+  - [createSustainability()](class-aws-sdk-method-createsustainability.md)
+  - [createSwf()](class-aws-sdk-method-createswf.md)
+  - [createSynthetics()](class-aws-sdk-method-createsynthetics.md)
+  - [createTaxSettings()](class-aws-sdk-method-createtaxsettings.md)
+  - [createTextract()](class-aws-sdk-method-createtextract.md)
+  - [createTimestreamInfluxDB()](class-aws-sdk-method-createtimestreaminfluxdb.md)
+  - [createTimestreamQuery()](class-aws-sdk-method-createtimestreamquery.md)
+  - [createTimestreamWrite()](class-aws-sdk-method-createtimestreamwrite.md)
+  - [createTnb()](class-aws-sdk-method-createtnb.md)
+  - [createTranscribeService()](class-aws-sdk-method-createtranscribeservice.md)
+  - [createTransfer()](class-aws-sdk-method-createtransfer.md)
+  - [createTranslate()](class-aws-sdk-method-createtranslate.md)
+  - [createTrustedAdvisor()](class-aws-sdk-method-createtrustedadvisor.md)
+  - [createUxc()](class-aws-sdk-method-createuxc.md)
+  - [createVerifiedPermissions()](class-aws-sdk-method-createverifiedpermissions.md)
+  - [createVoiceID()](class-aws-sdk-method-createvoiceid.md)
+  - [createVPCLattice()](class-aws-sdk-method-createvpclattice.md)
+  - [createWaf()](class-aws-sdk-method-createwaf.md)
+  - [createWafRegional()](class-aws-sdk-method-createwafregional.md)
+  - [createWAFV2()](class-aws-sdk-method-createwafv2.md)
+  - [createWellArchitected()](class-aws-sdk-method-createwellarchitected.md)
+  - [createWickr()](class-aws-sdk-method-createwickr.md)
+  - [createWorkDocs()](class-aws-sdk-method-createworkdocs.md)
+  - [createWorkMail()](class-aws-sdk-method-createworkmail.md)
+  - [createWorkMailMessageFlow()](class-aws-sdk-method-createworkmailmessageflow.md)
+  - [createWorkSpaces()](class-aws-sdk-method-createworkspaces.md)
+  - [createWorkspacesInstances()](class-aws-sdk-method-createworkspacesinstances.md)
+  - [createWorkSpacesThinClient()](class-aws-sdk-method-createworkspacesthinclient.md)
+  - [createWorkSpacesWeb()](class-aws-sdk-method-createworkspacesweb.md)
+  - [createXRay()](class-aws-sdk-method-createxray.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sdk.html#top)
+[Back To Top](class-aws-sdk-top.md)

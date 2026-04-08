@@ -11,13 +11,13 @@ making requests to the low-level API directly from your application, we recommen
 you use one of the AWS Software Development Kits (SDKs) for your
 programming language. The AWS SDKs take care of request authentication,
 serialization, and connection management. For more information, see [Overview of AWS SDK\
-Support for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.SDKOverview.html) in the Amazon DynamoDB Developer
+Support for DynamoDB](../developerguide/programming-sdkoverview.md) in the Amazon DynamoDB Developer
 Guide.
 
 At the end of each API action description there are links to the equivalent CLI command
 and programming-specific language method. Similarly, at the end of each API datatype
 description, there are links to the equivalent programming-specific language type.
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Actions

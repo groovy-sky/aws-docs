@@ -65,7 +65,7 @@ Console
     associated with your Amazon EC2 instances and volumes, organized by
     Region.
 
-![Scheduled events](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/dashboard-scheduled-events.png)
+![Scheduled events](../../../images/awsec2/latest/userguide/images/dashboard-scheduled-events-png.md)
 
 3. If you have an instance with a scheduled event listed, select its link below the
     Region name to go to the **Events** page.

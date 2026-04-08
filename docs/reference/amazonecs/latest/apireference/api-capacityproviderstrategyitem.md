@@ -1,17 +1,17 @@
 # CapacityProviderStrategyItem
 
 The details of a capacity provider strategy. A capacity provider strategy can be set
-when using the [RunTask](api-runtask.md) or [CreateCluster](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateCluster.html) APIs or as the default capacity provider strategy for a
+when using the [RunTask](api-runtask.md) or [CreateCluster](api-createcluster.md) APIs or as the default capacity provider strategy for a
 cluster with the `CreateCluster` API.
 
 Only capacity providers that are already associated with a cluster and have an
 `ACTIVE` or `UPDATING` status can be used in a capacity
-provider strategy. The [PutClusterCapacityProviders](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_PutClusterCapacityProviders.html) API is used to associate a capacity provider
+provider strategy. The [PutClusterCapacityProviders](api-putclustercapacityproviders.md) API is used to associate a capacity provider
 with a cluster.
 
 If specifying a capacity provider that uses an Auto Scaling group, the capacity
 provider must already be created. New Auto Scaling group capacity providers can be
-created with the [CreateClusterCapacityProvider](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateClusterCapacityProvider.html) API operation.
+created with the [CreateClusterCapacityProvider](api-createclustercapacityprovider.md) API operation.
 
 To use a AWS Fargate capacity provider, specify either the `FARGATE` or
 `FARGATE_SPOT` capacity providers. The AWS Fargate capacity providers
@@ -115,13 +115,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/CapacityProviderStrategyItem)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/capacityproviderstrategyitem.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/CapacityProviderStrategyItem)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/capacityproviderstrategyitem.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/CapacityProviderStrategyItem)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/capacityproviderstrategyitem.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CapacityProvider
 

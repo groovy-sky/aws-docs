@@ -4,15 +4,15 @@ Menu
 
 ## ConnectWisdomService
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectwisdomservice.html\#toc)
+### Table of Contents  [header link](namespace-aws-connectwisdomservice-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectwisdomservice.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-connectwisdomservice-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectwisdomservice.exception.html)
+[Exception](namespace-aws-connectwisdomservice-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectwisdomservice.html\#toc-classes)
+#### Classes  [header link](namespace-aws-connectwisdomservice-toc-classes.md)
 
-[ConnectWisdomServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectWisdomService.ConnectWisdomServiceClient.html)This client is used to interact with the **Amazon Connect Wisdom Service** service.
+[ConnectWisdomServiceClient](class-aws-connectwisdomservice-connectwisdomserviceclient.md)This client is used to interact with the **Amazon Connect Wisdom Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectwisdomservice.html#toc-classes)
+  - [Classes](namespace-aws-connectwisdomservice-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectwisdomservice.html#top)
+[Back To Top](namespace-aws-connectwisdomservice-top.md)

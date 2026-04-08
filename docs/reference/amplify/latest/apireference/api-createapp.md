@@ -100,7 +100,7 @@ Required: No
 
 The automated branch creation configuration for an Amplify app.
 
-Type: [AutoBranchCreationConfig](https://docs.aws.amazon.com/amplify/latest/APIReference/API_AutoBranchCreationConfig.html) object
+Type: [AutoBranchCreationConfig](api-autobranchcreationconfig.md) object
 
 Required: No
 
@@ -146,7 +146,7 @@ Required: No
 
 The cache configuration for the Amplify app.
 
-Type: [CacheConfig](https://docs.aws.amazon.com/amplify/latest/APIReference/API_CacheConfig.html) object
+Type: [CacheConfig](api-cacheconfig.md) object
 
 Required: No
 
@@ -182,7 +182,7 @@ Required: No
 
 The custom rewrite and redirect rules for an Amplify app.
 
-Type: Array of [CustomRule](https://docs.aws.amazon.com/amplify/latest/APIReference/API_CustomRule.html) objects
+Type: Array of [CustomRule](api-customrule.md) objects
 
 Required: No
 
@@ -238,7 +238,7 @@ The environment variables map for an Amplify app.
 
 For a list of the environment variables that are accessible to Amplify by default, see
 [Amplify\
-Environment variables](https://docs.aws.amazon.com/amplify/latest/userguide/amplify-console-environment-variables.html) in the _Amplify Hosting User_
+Environment variables](../../../../services/amplify/latest/userguide/amplify-console-environment-variables.md) in the _Amplify Hosting User_
 _Guide_.
 
 Type: String to string map
@@ -269,7 +269,7 @@ Required: No
 
 Describes the configuration details that apply to the jobs for an Amplify app.
 
-Type: [JobConfig](https://docs.aws.amazon.com/amplify/latest/APIReference/API_JobConfig.html) object
+Type: [JobConfig](api-jobconfig.md) object
 
 Required: No
 
@@ -321,7 +321,7 @@ support only, set the platform type to `WEB_DYNAMIC`.
 If you are deploying an SSG only app with Next.js version 14 or later, you must set
 the platform type to `WEB_COMPUTE` and set the artifacts
 `baseDirectory` to `.next` in the application's build
-settings. For an example of the build specification settings, see [Amplify build settings for a Next.js 14 SSG application](https://docs.aws.amazon.com/amplify/latest/userguide/deploy-nextjs-app.html#build-setting-detection-ssg-14) in the
+settings. For an example of the build specification settings, see [Amplify build settings for a Next.js 14 SSG application](../../../../services/amplify/latest/userguide/deploy-nextjs-app-build-setting-detection-ssg-14.md) in the
 _Amplify Hosting User Guide_.
 
 Type: String
@@ -450,11 +450,11 @@ The following data is returned in JSON format by the service.
 Represents the different branches of a repository for building, deploying, and hosting
 an Amplify app.
 
-Type: [App](https://docs.aws.amazon.com/amplify/latest/APIReference/API_App.html) object
+Type: [App](api-app.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/amplify/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **BadRequestException**
 
@@ -490,27 +490,27 @@ HTTP Status Code: 401
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/amplify-2017-07-25/CreateApp)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/amplify-2017-07-25/createapp.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/amplify-2017-07-25/CreateApp)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/amplify-2017-07-25/createapp.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/amplify-2017-07-25/CreateApp)
+- [AWS SDK for C++](../../../goto/sdkforcpp/amplify-2017-07-25/createapp.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/amplify-2017-07-25/CreateApp)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/amplify-2017-07-25/createapp.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/amplify-2017-07-25/CreateApp)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/amplify-2017-07-25/createapp.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/amplify-2017-07-25/CreateApp)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/amplify-2017-07-25/createapp.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/amplify-2017-07-25/CreateApp)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/amplify-2017-07-25/createapp.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/amplify-2017-07-25/CreateApp)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/amplify-2017-07-25/createapp.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/amplify-2017-07-25/CreateApp)
+- [AWS SDK for Python](../../../../services/goto/boto3/amplify-2017-07-25/createapp.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/amplify-2017-07-25/CreateApp)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/amplify-2017-07-25/createapp.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Actions
 

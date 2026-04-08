@@ -6,18 +6,18 @@ Menu
 
 Interface that allows implementing various incremental hashes.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HashInterface.html\#toc)
+### Table of Contents  [header link](class-aws-hashinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HashInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-hashinterface-toc-methods.md)
 
-[complete()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HashInterface.html#method_complete)
-: string Finalizes the incremental hash and returns the resulting digest.[reset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HashInterface.html#method_reset)
-: mixed Removes all data from the hash, effectively starting a new hash.[update()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HashInterface.html#method_update)
+[complete()](class-aws-hashinterface-method-complete.md)
+: string Finalizes the incremental hash and returns the resulting digest.[reset()](class-aws-hashinterface-method-reset.md)
+: mixed Removes all data from the hash, effectively starting a new hash.[update()](class-aws-hashinterface-method-update.md)
 : mixed Adds data to the hash.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HashInterface.html\#methods)
+### Methods  [header link](class-aws-hashinterface-methods.md)
 
-#### complete()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HashInterface.html\#method_complete)
+#### complete()  [header link](class-aws-hashinterface-method-complete.md)
 
 Finalizes the incremental hash and returns the resulting digest.
 
@@ -29,7 +29,7 @@ Finalizes the incremental hash and returns the resulting digest.
 
 string
 
-#### reset()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HashInterface.html\#method_reset)
+#### reset()  [header link](class-aws-hashinterface-method-reset.md)
 
 Removes all data from the hash, effectively starting a new hash.
 
@@ -37,7 +37,7 @@ Removes all data from the hash, effectively starting a new hash.
     public
                     reset() : mixed`
 
-#### update()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HashInterface.html\#method_update)
+#### update()  [header link](class-aws-hashinterface-method-update.md)
 
 Adds data to the hash.
 
@@ -59,11 +59,11 @@ Data to add to the hash
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HashInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HashInterface.html#toc-methods)
+  - [Constants](class-aws-hashinterface-toc-constants.md)
+  - [Methods](class-aws-hashinterface-toc-methods.md)
 - Methods
-  - [complete()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HashInterface.html#method_complete)
-  - [reset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HashInterface.html#method_reset)
-  - [update()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HashInterface.html#method_update)
+  - [complete()](class-aws-hashinterface-method-complete.md)
+  - [reset()](class-aws-hashinterface-method-reset.md)
+  - [update()](class-aws-hashinterface-method-update.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HashInterface.html#top)
+[Back To Top](class-aws-hashinterface-top.md)

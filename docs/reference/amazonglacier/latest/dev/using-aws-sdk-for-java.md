@@ -35,7 +35,7 @@ object in which the method can return the Amazon Glacier response to the operati
 
 For example, the `AmazonGlacierClient` class provides the
 `createVault` method to create a vault. This method maps to the
-underlying Create Vault REST operation (see [Create Vault (PUT vault)](https://docs.aws.amazon.com/amazonglacier/latest/dev/api-vault-put.html)). To use this method, you must create instances of
+underlying Create Vault REST operation (see [Create Vault (PUT vault)](../../../../services/amazonglacier/latest/dev/api-vault-put.md)). To use this method, you must create instances of
 the `CreateVaultResult` object that receives the Amazon Glacier response as shown in
 the following Java code snippet:
 
@@ -110,7 +110,7 @@ General Process of Creating Java Code Examples
 1
 
 Create a default credentials profile for your AWS credentials as described in the AWS SDK for Java topic
-[Providing AWS Credentials in the Amazon SDK for Java](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/credentials.html).
+[Providing AWS Credentials in the Amazon SDK for Java](../../../sdk-for-java/v1/developer-guide/credentials.md).
 
 2
 
@@ -165,7 +165,7 @@ ArchiveTransferManager atm = new ArchiveTransferManager(glacierClient, sqsClient
 
 For a list of supported AWS Regions and endpoints, see [Accessing Amazon Glacier](../../../../services/amazonglacier/latest/dev/amazon-glacier-accessing.md).
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Working with AWS SDKs
 

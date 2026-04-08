@@ -2,12 +2,12 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [Api](namespace-aws-api.md)
-- [Cbor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.api.cbor.html)
-- [Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.api.cbor.exception.html)
+- [Cbor](namespace-aws-api-cbor.md)
+- [Exception](namespace-aws-api-cbor-exception.md)
 
 ## CborException     extends RuntimeException   in package    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Cbor.Exception.CborException.html\#toc)
+### Table of Contents  [header link](class-aws-api-cbor-exception-cborexception-toc.md)
 
 ×
 
@@ -15,4 +15,4 @@ Menu
 
 - Table Of Contents
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Cbor.Exception.CborException.html#top)
+[Back To Top](class-aws-api-cbor-exception-cborexception-top.md)

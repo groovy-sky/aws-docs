@@ -17,37 +17,37 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2020-11-02**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html)
+- [**2020-11-02**](api-route53-recovery-control-config-2020-11-02.md)
 
-  - [CreateCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#createcluster)
-  - [CreateControlPanel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#createcontrolpanel)
-  - [CreateRoutingControl](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#createroutingcontrol)
-  - [CreateSafetyRule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#createsafetyrule)
-  - [DeleteCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#deletecluster)
-  - [DeleteControlPanel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#deletecontrolpanel)
-  - [DeleteRoutingControl](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#deleteroutingcontrol)
-  - [DeleteSafetyRule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#deletesafetyrule)
-  - [DescribeCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#describecluster)
-  - [DescribeControlPanel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#describecontrolpanel)
-  - [DescribeRoutingControl](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#describeroutingcontrol)
-  - [DescribeSafetyRule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#describesafetyrule)
-  - [GetResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#getresourcepolicy)
-  - [ListAssociatedRoute53HealthChecks](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#listassociatedroute53healthchecks)
-  - [ListClusters](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#listclusters)
-  - [ListControlPanels](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#listcontrolpanels)
-  - [ListRoutingControls](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#listroutingcontrols)
-  - [ListSafetyRules](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#listsafetyrules)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#listtagsforresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#untagresource)
-  - [UpdateCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#updatecluster)
-  - [UpdateControlPanel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#updatecontrolpanel)
-  - [UpdateRoutingControl](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#updateroutingcontrol)
-  - [UpdateSafetyRule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-route53-recovery-control-config-2020-11-02.html#updatesafetyrule)
+  - [CreateCluster](api-route53-recovery-control-config-2020-11-02-createcluster.md)
+  - [CreateControlPanel](api-route53-recovery-control-config-2020-11-02-createcontrolpanel.md)
+  - [CreateRoutingControl](api-route53-recovery-control-config-2020-11-02-createroutingcontrol.md)
+  - [CreateSafetyRule](api-route53-recovery-control-config-2020-11-02-createsafetyrule.md)
+  - [DeleteCluster](api-route53-recovery-control-config-2020-11-02-deletecluster.md)
+  - [DeleteControlPanel](api-route53-recovery-control-config-2020-11-02-deletecontrolpanel.md)
+  - [DeleteRoutingControl](api-route53-recovery-control-config-2020-11-02-deleteroutingcontrol.md)
+  - [DeleteSafetyRule](api-route53-recovery-control-config-2020-11-02-deletesafetyrule.md)
+  - [DescribeCluster](api-route53-recovery-control-config-2020-11-02-describecluster.md)
+  - [DescribeControlPanel](api-route53-recovery-control-config-2020-11-02-describecontrolpanel.md)
+  - [DescribeRoutingControl](api-route53-recovery-control-config-2020-11-02-describeroutingcontrol.md)
+  - [DescribeSafetyRule](api-route53-recovery-control-config-2020-11-02-describesafetyrule.md)
+  - [GetResourcePolicy](api-route53-recovery-control-config-2020-11-02-getresourcepolicy.md)
+  - [ListAssociatedRoute53HealthChecks](api-route53-recovery-control-config-2020-11-02-listassociatedroute53healthchecks.md)
+  - [ListClusters](api-route53-recovery-control-config-2020-11-02-listclusters.md)
+  - [ListControlPanels](api-route53-recovery-control-config-2020-11-02-listcontrolpanels.md)
+  - [ListRoutingControls](api-route53-recovery-control-config-2020-11-02-listroutingcontrols.md)
+  - [ListSafetyRules](api-route53-recovery-control-config-2020-11-02-listsafetyrules.md)
+  - [ListTagsForResource](api-route53-recovery-control-config-2020-11-02-listtagsforresource.md)
+  - [TagResource](api-route53-recovery-control-config-2020-11-02-tagresource.md)
+  - [UntagResource](api-route53-recovery-control-config-2020-11-02-untagresource.md)
+  - [UpdateCluster](api-route53-recovery-control-config-2020-11-02-updatecluster.md)
+  - [UpdateControlPanel](api-route53-recovery-control-config-2020-11-02-updatecontrolpanel.md)
+  - [UpdateRoutingControl](api-route53-recovery-control-config-2020-11-02-updateroutingcontrol.md)
+  - [UpdateSafetyRule](api-route53-recovery-control-config-2020-11-02-updatesafetyrule.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryControlConfig.Route53RecoveryControlConfigClient.html\#toc)
+### Table of Contents  [header link](class-aws-route53recoverycontrolconfig-route53recoverycontrolconfigclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryControlConfig.Route53RecoveryControlConfigClient.html\#toc-methods)
+#### Methods  [header link](class-aws-route53recoverycontrolconfig-route53recoverycontrolconfigclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -78,7 +78,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryControlConfig.Route53RecoveryControlConfigClient.html\#methods)
+### Methods  [header link](class-aws-route53recoverycontrolconfig-route53recoverycontrolconfigclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -545,7 +545,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryControlConfig.Route53RecoveryControlConfigClient.html#toc-methods)
+  - [Methods](class-aws-route53recoverycontrolconfig-route53recoverycontrolconfigclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -572,4 +572,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryControlConfig.Route53RecoveryControlConfigClient.html#top)
+[Back To Top](class-aws-route53recoverycontrolconfig-route53recoverycontrolconfigclient-top.md)

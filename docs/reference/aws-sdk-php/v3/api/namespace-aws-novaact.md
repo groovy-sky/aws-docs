@@ -4,15 +4,15 @@ Menu
 
 ## NovaAct
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.novaact.html\#toc)
+### Table of Contents  [header link](namespace-aws-novaact-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.novaact.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-novaact-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.novaact.exception.html)
+[Exception](namespace-aws-novaact-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.novaact.html\#toc-classes)
+#### Classes  [header link](namespace-aws-novaact-toc-classes.md)
 
-[NovaActClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NovaAct.NovaActClient.html)This client is used to interact with the **Nova Act Service** service.
+[NovaActClient](class-aws-novaact-novaactclient.md)This client is used to interact with the **Nova Act Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.novaact.html#toc-classes)
+  - [Classes](namespace-aws-novaact-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.novaact.html#top)
+[Back To Top](namespace-aws-novaact-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## EBS
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ebs.html\#toc)
+### Table of Contents  [header link](namespace-aws-ebs-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ebs.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-ebs-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ebs.exception.html)
+[Exception](namespace-aws-ebs-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ebs.html\#toc-classes)
+#### Classes  [header link](namespace-aws-ebs-toc-classes.md)
 
-[EBSClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EBS.EBSClient.html)This client is used to interact with the **Amazon Elastic Block Store** service.
+[EBSClient](class-aws-ebs-ebsclient.md)This client is used to interact with the **Amazon Elastic Block Store** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ebs.html#toc-classes)
+  - [Classes](namespace-aws-ebs-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ebs.html#top)
+[Back To Top](namespace-aws-ebs-top.md)

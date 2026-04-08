@@ -68,7 +68,7 @@ create, delete, or update, such as weighted, alias, or failover. The XML element
 your request must appear in the order listed in the syntax.
 
 For syntax examples that show the elements for each kind of resource record
-set, such as basic, weighted, and alias, see the [Examples](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ChangeResourceRecordSets.html#API_ChangeResourceRecordSets_Examples) section of `ChangeResourceRecordSets`.
+set, such as basic, weighted, and alias, see the [Examples](api-changeresourcerecordsets-api-changeresourcerecordsets-examples.md) section of `ChangeResourceRecordSets`.
 
 Don't refer to the syntax in the "Syntax" section, which includes all of the
 elements for every kind of resource record set that you can create, delete, or update by
@@ -81,12 +81,12 @@ changes to all of the Route 53 authoritative DNS servers managing the hosted zon
 your changes are propagating, `GetChange` returns a status of
 `PENDING`. When propagation is complete, `GetChange` returns a
 status of `INSYNC`. Changes generally propagate to all Route 53 name servers
-managing the hosted zone within 60 seconds. For more information, see [GetChange](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetChange.html).
+managing the hosted zone within 60 seconds. For more information, see [GetChange](api-getchange.md).
 
 **Limits on ChangeResourceRecordSets Requests**
 
 For information about the limits on a `ChangeResourceRecordSets` request,
-see [Limits](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/DNSLimitations.html) in the _Amazon Route 53 Developer Guide_.
+see [Limits](../../../../services/route53/latest/developerguide/dnslimitations.md) in the _Amazon Route 53 Developer Guide_.
 
 ## Request Syntax
 
@@ -174,7 +174,7 @@ Required: Yes
 A complex type that contains an optional comment and the `Changes`
 element.
 
-Type: [ChangeBatch](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ChangeBatch.html) object
+Type: [ChangeBatch](api-changebatch.md) object
 
 Required: Yes
 
@@ -211,14 +211,14 @@ Required: Yes
 A complex type that contains information about changes made to your hosted
 zone.
 
-This element contains an ID that you use when performing a [GetChange](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetChange.html) action to get
+This element contains an ID that you use when performing a [GetChange](api-getchange.md) action to get
 detailed information about the change.
 
-Type: [ChangeInfo](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ChangeInfo.html) object
+Type: [ChangeInfo](api-changeinfo.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/Route53/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **InvalidChangeBatch**
 
@@ -338,7 +338,7 @@ in the _Amazon Route 53 Developer Guide_:
 - [Creating Route\
 53 Health Checks and Configuring DNS Failover](../../../../services/route53/latest/developerguide/dns-failover.md)
 
-- [Configuring Failover in a Private Hosted Zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-private-hosted-zones.html)
+- [Configuring Failover in a Private Hosted Zone](../../../../services/route53/latest/developerguide/dns-failover-private-hosted-zones.md)
 
 ```nohighlight
 
@@ -379,7 +379,7 @@ _53 Developer Guide_:
 - [Creating Route\
 53 Health Checks and Configuring DNS Failover](../../../../services/route53/latest/developerguide/dns-failover.md)
 
-- [Configuring Failover in a Private Hosted Zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-private-hosted-zones.html)
+- [Configuring Failover in a Private Hosted Zone](../../../../services/route53/latest/developerguide/dns-failover-private-hosted-zones.md)
 
 - [Choosing Between Alias and Non-Alias Resource Record\
 Sets](../../../../services/route53/latest/developerguide/resource-record-sets-choosing-alias-non-alias.md)
@@ -1023,27 +1023,27 @@ POST /2013-04-01/hostedzone/Route 53 hosted zone ID/rrset HTTP/1.1
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/route53-2013-04-01/ChangeResourceRecordSets)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53-2013-04-01/changeresourcerecordsets.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/route53-2013-04-01/ChangeResourceRecordSets)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53-2013-04-01/changeresourcerecordsets.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53-2013-04-01/ChangeResourceRecordSets)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53-2013-04-01/changeresourcerecordsets.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/route53-2013-04-01/ChangeResourceRecordSets)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53-2013-04-01/changeresourcerecordsets.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53-2013-04-01/ChangeResourceRecordSets)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53-2013-04-01/changeresourcerecordsets.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/route53-2013-04-01/ChangeResourceRecordSets)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53-2013-04-01/changeresourcerecordsets.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/route53-2013-04-01/ChangeResourceRecordSets)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53-2013-04-01/changeresourcerecordsets.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/route53-2013-04-01/ChangeResourceRecordSets)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53-2013-04-01/changeresourcerecordsets.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/route53-2013-04-01/ChangeResourceRecordSets)
+- [AWS SDK for Python](../../../../services/goto/boto3/route53-2013-04-01/changeresourcerecordsets.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53-2013-04-01/ChangeResourceRecordSets)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53-2013-04-01/changeresourcerecordsets.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ChangeCidrCollection
 

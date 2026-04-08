@@ -4,11 +4,11 @@ Menu
 
 ## Handler
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.handler.html\#toc)
+### Table of Contents  [header link](namespace-aws-handler-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.handler.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-handler-namespaces.md)
 
-[Guzzle](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.handler.guzzle.html)[GuzzleV6](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.handler.guzzlev6.html)
+[Guzzle](namespace-aws-handler-guzzle.md)[GuzzleV6](namespace-aws-handler-guzzlev6.md)
 
 ```
 
@@ -20,4 +20,4 @@ Menu
 
 - Table Of Contents
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.handler.html#top)
+[Back To Top](namespace-aws-handler-top.md)

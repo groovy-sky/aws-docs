@@ -8,7 +8,7 @@ and updates, is the responsibility of the third-party vendor who developed the
 extension. If you have any issues or questions related to third-party extensions, please
 contact the relevant third-party vendor for support.
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Prerequisites
 

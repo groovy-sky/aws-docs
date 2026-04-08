@@ -2,8 +2,8 @@
 
 Starts a configuration session used to retrieve a deployed configuration. For more
 information about this API action and to view example AWS CLI commands that show how to use
-it with the [GetLatestConfiguration](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_appconfigdata_GetLatestConfiguration.html) API action, see [Retrieving feature flags and\
-configuration data in AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/retrieving-feature-flags.html) in the
+it with the [GetLatestConfiguration](api-appconfigdata-getlatestconfiguration.md) API action, see [Retrieving feature flags and\
+configuration data in AWS AppConfig](../../../../services/appconfig/latest/userguide/retrieving-feature-flags.md) in the
 _AWS AppConfig User Guide_.
 
 ## Request Syntax
@@ -62,7 +62,7 @@ Required: Yes
 **[RequiredMinimumPollIntervalInSeconds](#API_appconfigdata_StartConfigurationSession_RequestSyntax)**
 
 (Optional) Sets a constraint on a session. If you specify a value of, for example, 60
-seconds, then the client that established the session can't call [GetLatestConfiguration](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_appconfigdata_GetLatestConfiguration.html) more frequently than every 60 seconds.
+seconds, then the client that established the session can't call [GetLatestConfiguration](api-appconfigdata-getlatestconfiguration.md) more frequently than every 60 seconds.
 
 Type: Integer
 
@@ -114,7 +114,7 @@ Pattern: `\S{1,8192}`
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **BadRequestException**
 
@@ -192,27 +192,27 @@ Content-Length: 141
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appconfigdata-2021-11-11/StartConfigurationSession)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/appconfigdata-2021-11-11/startconfigurationsession.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appconfigdata-2021-11-11/StartConfigurationSession)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appconfigdata-2021-11-11/startconfigurationsession.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appconfigdata-2021-11-11/StartConfigurationSession)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appconfigdata-2021-11-11/startconfigurationsession.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appconfigdata-2021-11-11/StartConfigurationSession)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/appconfigdata-2021-11-11/startconfigurationsession.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appconfigdata-2021-11-11/StartConfigurationSession)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appconfigdata-2021-11-11/startconfigurationsession.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appconfigdata-2021-11-11/StartConfigurationSession)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appconfigdata-2021-11-11/startconfigurationsession.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appconfigdata-2021-11-11/StartConfigurationSession)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appconfigdata-2021-11-11/startconfigurationsession.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appconfigdata-2021-11-11/StartConfigurationSession)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appconfigdata-2021-11-11/startconfigurationsession.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/appconfigdata-2021-11-11/StartConfigurationSession)
+- [AWS SDK for Python](../../../../services/goto/boto3/appconfigdata-2021-11-11/startconfigurationsession.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appconfigdata-2021-11-11/StartConfigurationSession)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appconfigdata-2021-11-11/startconfigurationsession.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GetLatestConfiguration
 

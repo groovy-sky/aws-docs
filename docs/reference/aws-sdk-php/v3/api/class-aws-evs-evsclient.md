@@ -17,26 +17,26 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2023-07-27**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-evs-2023-07-27.html)
+- [**2023-07-27**](api-evs-2023-07-27.md)
 
-  - [AssociateEipToVlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-evs-2023-07-27.html#associateeiptovlan)
-  - [CreateEnvironment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-evs-2023-07-27.html#createenvironment)
-  - [CreateEnvironmentHost](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-evs-2023-07-27.html#createenvironmenthost)
-  - [DeleteEnvironment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-evs-2023-07-27.html#deleteenvironment)
-  - [DeleteEnvironmentHost](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-evs-2023-07-27.html#deleteenvironmenthost)
-  - [DisassociateEipFromVlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-evs-2023-07-27.html#disassociateeipfromvlan)
-  - [GetEnvironment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-evs-2023-07-27.html#getenvironment)
-  - [GetVersions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-evs-2023-07-27.html#getversions)
-  - [ListEnvironmentHosts](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-evs-2023-07-27.html#listenvironmenthosts)
-  - [ListEnvironmentVlans](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-evs-2023-07-27.html#listenvironmentvlans)
-  - [ListEnvironments](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-evs-2023-07-27.html#listenvironments)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-evs-2023-07-27.html#listtagsforresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-evs-2023-07-27.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-evs-2023-07-27.html#untagresource)
+  - [AssociateEipToVlan](api-evs-2023-07-27-associateeiptovlan.md)
+  - [CreateEnvironment](api-evs-2023-07-27-createenvironment.md)
+  - [CreateEnvironmentHost](api-evs-2023-07-27-createenvironmenthost.md)
+  - [DeleteEnvironment](api-evs-2023-07-27-deleteenvironment.md)
+  - [DeleteEnvironmentHost](api-evs-2023-07-27-deleteenvironmenthost.md)
+  - [DisassociateEipFromVlan](api-evs-2023-07-27-disassociateeipfromvlan.md)
+  - [GetEnvironment](api-evs-2023-07-27-getenvironment.md)
+  - [GetVersions](api-evs-2023-07-27-getversions.md)
+  - [ListEnvironmentHosts](api-evs-2023-07-27-listenvironmenthosts.md)
+  - [ListEnvironmentVlans](api-evs-2023-07-27-listenvironmentvlans.md)
+  - [ListEnvironments](api-evs-2023-07-27-listenvironments.md)
+  - [ListTagsForResource](api-evs-2023-07-27-listtagsforresource.md)
+  - [TagResource](api-evs-2023-07-27-tagresource.md)
+  - [UntagResource](api-evs-2023-07-27-untagresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Evs.EvsClient.html\#toc)
+### Table of Contents  [header link](class-aws-evs-evsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Evs.EvsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-evs-evsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -67,7 +67,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Evs.EvsClient.html\#methods)
+### Methods  [header link](class-aws-evs-evsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -534,7 +534,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Evs.EvsClient.html#toc-methods)
+  - [Methods](class-aws-evs-evsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -561,4 +561,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Evs.EvsClient.html#top)
+[Back To Top](class-aws-evs-evsclient-top.md)

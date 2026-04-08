@@ -4,15 +4,15 @@ Menu
 
 ## LexModelBuildingService
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lexmodelbuildingservice.html\#toc)
+### Table of Contents  [header link](namespace-aws-lexmodelbuildingservice-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lexmodelbuildingservice.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-lexmodelbuildingservice-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lexmodelbuildingservice.exception.html)
+[Exception](namespace-aws-lexmodelbuildingservice-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lexmodelbuildingservice.html\#toc-classes)
+#### Classes  [header link](namespace-aws-lexmodelbuildingservice-toc-classes.md)
 
-[LexModelBuildingServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LexModelBuildingService.LexModelBuildingServiceClient.html)This client is used to interact with the **Amazon Lex Model Building Service** service.
+[LexModelBuildingServiceClient](class-aws-lexmodelbuildingservice-lexmodelbuildingserviceclient.md)This client is used to interact with the **Amazon Lex Model Building Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lexmodelbuildingservice.html#toc-classes)
+  - [Classes](namespace-aws-lexmodelbuildingservice-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lexmodelbuildingservice.html#top)
+[Back To Top](namespace-aws-lexmodelbuildingservice-top.md)

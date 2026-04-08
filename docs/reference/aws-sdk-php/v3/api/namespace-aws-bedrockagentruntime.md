@@ -4,15 +4,15 @@ Menu
 
 ## BedrockAgentRuntime
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockagentruntime.html\#toc)
+### Table of Contents  [header link](namespace-aws-bedrockagentruntime-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockagentruntime.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-bedrockagentruntime-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockagentruntime.exception.html)
+[Exception](namespace-aws-bedrockagentruntime-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockagentruntime.html\#toc-classes)
+#### Classes  [header link](namespace-aws-bedrockagentruntime-toc-classes.md)
 
-[BedrockAgentRuntimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockAgentRuntime.BedrockAgentRuntimeClient.html)This client is used to interact with the **Agents for Amazon Bedrock Runtime** service.
+[BedrockAgentRuntimeClient](class-aws-bedrockagentruntime-bedrockagentruntimeclient.md)This client is used to interact with the **Agents for Amazon Bedrock Runtime** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockagentruntime.html#toc-classes)
+  - [Classes](namespace-aws-bedrockagentruntime-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockagentruntime.html#top)
+[Back To Top](namespace-aws-bedrockagentruntime-top.md)

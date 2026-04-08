@@ -1,25 +1,25 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Promise](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.promise.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Promise](namespace-guzzlehttp-promise.md)
 
 ## Create        in package    - [Aws](package-aws.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Create.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-promise-create-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Create.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-promise-create-toc-methods.md)
 
-[exceptionFor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Create.html#method_exceptionFor)
-: ThrowableCreate an exception for a rejected promise value.[iterFor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Create.html#method_iterFor)
-: IteratorReturns an iterator for the given value.[promiseFor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Create.html#method_promiseFor)
-: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Creates a promise for a value if the value is not a promise.[rejectionFor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Create.html#method_rejectionFor)
+[exceptionFor()](class-guzzlehttp-promise-create-method-exceptionfor.md)
+: ThrowableCreate an exception for a rejected promise value.[iterFor()](class-guzzlehttp-promise-create-method-iterfor.md)
+: IteratorReturns an iterator for the given value.[promiseFor()](class-guzzlehttp-promise-create-method-promisefor.md)
+: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Creates a promise for a value if the value is not a promise.[rejectionFor()](class-guzzlehttp-promise-create-method-rejectionfor.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Creates a rejected promise for a reason if the reason is not a promise.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Create.html\#methods)
+### Methods  [header link](class-guzzlehttp-promise-create-methods.md)
 
-#### exceptionFor()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Create.html\#method_exceptionFor)
+#### exceptionFor()  [header link](class-guzzlehttp-promise-create-method-exceptionfor.md)
 
 Create an exception for a rejected promise value.
 
@@ -36,7 +36,7 @@ $reason
 
 Throwable
 
-#### iterFor()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Create.html\#method_iterFor)
+#### iterFor()  [header link](class-guzzlehttp-promise-create-method-iterfor.md)
 
 Returns an iterator for the given value.
 
@@ -53,7 +53,7 @@ $value
 
 Iterator
 
-#### promiseFor()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Create.html\#method_promiseFor)
+#### promiseFor()  [header link](class-guzzlehttp-promise-create-method-promisefor.md)
 
 Creates a promise for a value if the value is not a promise.
 
@@ -72,7 +72,7 @@ Promise or value.
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### rejectionFor()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Create.html\#method_rejectionFor)
+#### rejectionFor()  [header link](class-guzzlehttp-promise-create-method-rejectionfor.md)
 
 Creates a rejected promise for a reason if the reason is not a promise.
 
@@ -99,11 +99,11 @@ Promise or reason.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Create.html#toc-methods)
+  - [Methods](class-guzzlehttp-promise-create-toc-methods.md)
 - Methods
-  - [exceptionFor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Create.html#method_exceptionFor)
-  - [iterFor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Create.html#method_iterFor)
-  - [promiseFor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Create.html#method_promiseFor)
-  - [rejectionFor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Create.html#method_rejectionFor)
+  - [exceptionFor()](class-guzzlehttp-promise-create-method-exceptionfor.md)
+  - [iterFor()](class-guzzlehttp-promise-create-method-iterfor.md)
+  - [promiseFor()](class-guzzlehttp-promise-create-method-promisefor.md)
+  - [rejectionFor()](class-guzzlehttp-promise-create-method-rejectionfor.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Create.html#top)
+[Back To Top](class-guzzlehttp-promise-create-top.md)

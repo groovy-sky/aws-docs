@@ -4,15 +4,15 @@ Menu
 
 ## IoTSecureTunneling
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotsecuretunneling.html\#toc)
+### Table of Contents  [header link](namespace-aws-iotsecuretunneling-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotsecuretunneling.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-iotsecuretunneling-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotsecuretunneling.exception.html)
+[Exception](namespace-aws-iotsecuretunneling-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotsecuretunneling.html\#toc-classes)
+#### Classes  [header link](namespace-aws-iotsecuretunneling-toc-classes.md)
 
-[IoTSecureTunnelingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTSecureTunneling.IoTSecureTunnelingClient.html)This client is used to interact with the **AWS IoT Secure Tunneling** service.
+[IoTSecureTunnelingClient](class-aws-iotsecuretunneling-iotsecuretunnelingclient.md)This client is used to interact with the **AWS IoT Secure Tunneling** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotsecuretunneling.html#toc-classes)
+  - [Classes](namespace-aws-iotsecuretunneling-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotsecuretunneling.html#top)
+[Back To Top](namespace-aws-iotsecuretunneling-top.md)

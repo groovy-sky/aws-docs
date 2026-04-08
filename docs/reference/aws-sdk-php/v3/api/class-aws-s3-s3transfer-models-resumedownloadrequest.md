@@ -2,27 +2,27 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
-- [Models](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.models.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
+- [Models](namespace-aws-s3-s3transfer-models.md)
 
 ## ResumeDownloadRequest        in package    - [Aws](package-aws.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeDownloadRequest.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-models-resumedownloadrequest-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeDownloadRequest.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-models-resumedownloadrequest-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeDownloadRequest.html#method___construct)
-: mixed [getDownloadHandlerClass()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeDownloadRequest.html#method_getDownloadHandlerClass)
-: string [getListeners()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeDownloadRequest.html#method_getListeners)
-: array<string\|int, mixed> [getProgressTracker()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeDownloadRequest.html#method_getProgressTracker)
-: [AbstractTransferListener](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractTransferListener.html) \|null [getResumableDownload()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeDownloadRequest.html#method_getResumableDownload)
+[\_\_construct()](class-aws-s3-s3transfer-models-resumedownloadrequest-method-construct.md)
+: mixed [getDownloadHandlerClass()](class-aws-s3-s3transfer-models-resumedownloadrequest-method-getdownloadhandlerclass.md)
+: string [getListeners()](class-aws-s3-s3transfer-models-resumedownloadrequest-method-getlisteners.md)
+: array<string\|int, mixed> [getProgressTracker()](class-aws-s3-s3transfer-models-resumedownloadrequest-method-getprogresstracker.md)
+: [AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md) \|null [getResumableDownload()](class-aws-s3-s3transfer-models-resumedownloadrequest-method-getresumabledownload.md)
 : string\| [ResumableDownload](class-aws-s3-s3transfer-models-resumabledownload.md)
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeDownloadRequest.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-models-resumedownloadrequest-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeDownloadRequest.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3transfer-models-resumedownloadrequest-method-construct.md)
 
 `
     public
@@ -36,10 +36,10 @@ $resumableDownload
 = FileDownloadHandler::class$listeners
 : array<string\|int, mixed>
 = \[\]$progressTracker
-: [AbstractTransferListener](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractTransferListener.html) \|null
+: [AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md) \|null
 = null
 
-#### getDownloadHandlerClass()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeDownloadRequest.html\#method_getDownloadHandlerClass)
+#### getDownloadHandlerClass()  [header link](class-aws-s3-s3transfer-models-resumedownloadrequest-method-getdownloadhandlerclass.md)
 
 `
     public
@@ -49,7 +49,7 @@ $resumableDownload
 
 string
 
-#### getListeners()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeDownloadRequest.html\#method_getListeners)
+#### getListeners()  [header link](class-aws-s3-s3transfer-models-resumedownloadrequest-method-getlisteners.md)
 
 `
     public
@@ -59,7 +59,7 @@ string
 
 array<string\|int, mixed>
 
-#### getProgressTracker()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeDownloadRequest.html\#method_getProgressTracker)
+#### getProgressTracker()  [header link](class-aws-s3-s3transfer-models-resumedownloadrequest-method-getprogresstracker.md)
 
 `
     public
@@ -67,9 +67,9 @@ array<string\|int, mixed>
 
 ##### Return values
 
-[AbstractTransferListener](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractTransferListener.html) \|null
+[AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md) \|null
 
-#### getResumableDownload()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeDownloadRequest.html\#method_getResumableDownload)
+#### getResumableDownload()  [header link](class-aws-s3-s3transfer-models-resumedownloadrequest-method-getresumabledownload.md)
 
 `
     public
@@ -85,12 +85,12 @@ string\| [ResumableDownload](class-aws-s3-s3transfer-models-resumabledownload.md
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeDownloadRequest.html#toc-methods)
+  - [Methods](class-aws-s3-s3transfer-models-resumedownloadrequest-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeDownloadRequest.html#method___construct)
-  - [getDownloadHandlerClass()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeDownloadRequest.html#method_getDownloadHandlerClass)
-  - [getListeners()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeDownloadRequest.html#method_getListeners)
-  - [getProgressTracker()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeDownloadRequest.html#method_getProgressTracker)
-  - [getResumableDownload()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeDownloadRequest.html#method_getResumableDownload)
+  - [\_\_construct()](class-aws-s3-s3transfer-models-resumedownloadrequest-method-construct.md)
+  - [getDownloadHandlerClass()](class-aws-s3-s3transfer-models-resumedownloadrequest-method-getdownloadhandlerclass.md)
+  - [getListeners()](class-aws-s3-s3transfer-models-resumedownloadrequest-method-getlisteners.md)
+  - [getProgressTracker()](class-aws-s3-s3transfer-models-resumedownloadrequest-method-getprogresstracker.md)
+  - [getResumableDownload()](class-aws-s3-s3transfer-models-resumedownloadrequest-method-getresumabledownload.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumeDownloadRequest.html#top)
+[Back To Top](class-aws-s3-s3transfer-models-resumedownloadrequest-top.md)

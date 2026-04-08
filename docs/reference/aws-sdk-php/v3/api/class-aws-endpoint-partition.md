@@ -9,22 +9,22 @@ FinalYes
 
 Default implementation of an AWS partition.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html\#toc)
+### Table of Contents  [header link](class-aws-endpoint-partition-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-endpoint-partition-toc-interfaces.md)
 
 ArrayAccess[PartitionInterface](class-aws-endpoint-partitioninterface.md)Represents a section of the AWS cloud.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html\#toc-methods)
+#### Methods  [header link](class-aws-endpoint-partition-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html#method___construct)
-: mixed The partition constructor accepts the following options:[\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html#method___invoke)
+[\_\_construct()](class-aws-endpoint-partition-method-construct.md)
+: mixed The partition constructor accepts the following options:[\_\_invoke()](class-aws-endpoint-partition-method-invoke.md)
 : array<string\|int, mixed> A partition must be invokable as an endpoint provider.[count()](class-aws-hasdatatrait.md#method_count)
-: int [getAvailableEndpoints()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html#method_getAvailableEndpoints)
+: int [getAvailableEndpoints()](class-aws-endpoint-partition-method-getavailableendpoints.md)
 : array<string\|int, string> Return the endpoints supported by a given service.[getIterator()](class-aws-hasdatatrait.md#method_getIterator)
-: Traversable[getName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html#method_getName)
+: Traversable[getName()](class-aws-endpoint-partition-method-getname.md)
 : string Returns the partition's short name, e.g., 'aws,' 'aws-cn,' or
-'aws-us-gov.'[isRegionMatch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html#method_isRegionMatch)
+'aws-us-gov.'[isRegionMatch()](class-aws-endpoint-partition-method-isregionmatch.md)
 : bool Determine if this partition contains the provided region. Include the
 name of the service to inspect non-regional endpoints[offsetExists()](class-aws-hasdatatrait.md#method_offsetExists)
 : bool [offsetGet()](class-aws-hasdatatrait.md#method_offsetGet)
@@ -34,9 +34,9 @@ array modification (e.g., $foo\['bar'\]\['baz'\] = 'qux').[offsetSet()](class-aw
 : void [toArray()](class-aws-hasdatatrait.md#method_toArray)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html\#methods)
+### Methods  [header link](class-aws-endpoint-partition-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-endpoint-partition-method-construct.md)
 
 The partition constructor accepts the following options:
 
@@ -66,13 +66,13 @@ supersede any values specified in `defaults`.
 $definition
 : array<string\|int, mixed>
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html\#method___construct\#tags)
+##### Tags  [header link](class-aws-endpoint-partition-method-construct-tags.md)
 
 throwsInvalidArgumentException
 
 if any required options are missing
 
-#### \_\_invoke()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html\#method___invoke)
+#### \_\_invoke()  [header link](class-aws-endpoint-partition-method-invoke.md)
 
 A partition must be invokable as an endpoint provider.
 
@@ -100,7 +100,7 @@ array<string\|int, mixed>
 
 int
 
-#### getAvailableEndpoints()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html\#method_getAvailableEndpoints)
+#### getAvailableEndpoints()  [header link](class-aws-endpoint-partition-method-getavailableendpoints.md)
 
 Return the endpoints supported by a given service.
 
@@ -141,7 +141,7 @@ array<string\|int, string>
 
 Traversable
 
-#### getName()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html\#method_getName)
+#### getName()  [header link](class-aws-endpoint-partition-method-getname.md)
 
 Returns the partition's short name, e.g., 'aws,' 'aws-cn,' or
 'aws-us-gov.'
@@ -154,7 +154,7 @@ Returns the partition's short name, e.g., 'aws,' 'aws-cn,' or
 
 string
 
-#### isRegionMatch()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html\#method_isRegionMatch)
+#### isRegionMatch()  [header link](class-aws-endpoint-partition-method-isregionmatch.md)
 
 Determine if this partition contains the provided region. Include the
 name of the service to inspect non-regional endpoints
@@ -242,19 +242,19 @@ $offset
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html#toc-methods)
+  - [Methods](class-aws-endpoint-partition-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html#method___construct)
-  - [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html#method___invoke)
+  - [\_\_construct()](class-aws-endpoint-partition-method-construct.md)
+  - [\_\_invoke()](class-aws-endpoint-partition-method-invoke.md)
   - [count()](class-aws-hasdatatrait.md#method_count)
-  - [getAvailableEndpoints()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html#method_getAvailableEndpoints)
+  - [getAvailableEndpoints()](class-aws-endpoint-partition-method-getavailableendpoints.md)
   - [getIterator()](class-aws-hasdatatrait.md#method_getIterator)
-  - [getName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html#method_getName)
-  - [isRegionMatch()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html#method_isRegionMatch)
+  - [getName()](class-aws-endpoint-partition-method-getname.md)
+  - [isRegionMatch()](class-aws-endpoint-partition-method-isregionmatch.md)
   - [offsetExists()](class-aws-hasdatatrait.md#method_offsetExists)
   - [offsetGet()](class-aws-hasdatatrait.md#method_offsetGet)
   - [offsetSet()](class-aws-hasdatatrait.md#method_offsetSet)
   - [offsetUnset()](class-aws-hasdatatrait.md#method_offsetUnset)
   - [toArray()](class-aws-hasdatatrait.md#method_toArray)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.Partition.html#top)
+[Back To Top](class-aws-endpoint-partition-top.md)

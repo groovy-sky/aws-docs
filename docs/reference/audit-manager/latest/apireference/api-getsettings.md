@@ -82,7 +82,7 @@ The following data is returned in JSON format by the service.
 
 The settings object that holds all supported Audit Manager settings.
 
-Type: [Settings](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Settings.html) object
+Type: [Settings](api-settings.md) object
 
 ## Errors
 
@@ -147,7 +147,7 @@ the `attribute` parameter is set to
 This response returns your current data retention preferences. In this case,
 `deleteResources` has a value of `DEFAULT`. This indicates
 that your Audit Manager data is subject to default data retention policies. For
-more information about data retention, see [Data Protection](https://docs.aws.amazon.com/audit-manager/latest/userguide/data-protection.html)
+more information about data retention, see [Data Protection](../../../../services/audit-manager/latest/userguide/data-protection.md)
 in the _AWS Audit Manager User Guide._
 
 #### Sample Response
@@ -210,27 +210,27 @@ for each audit owner's role.
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/auditmanager-2017-07-25/GetSettings)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/auditmanager-2017-07-25/getsettings.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/auditmanager-2017-07-25/GetSettings)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/auditmanager-2017-07-25/getsettings.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/auditmanager-2017-07-25/GetSettings)
+- [AWS SDK for C++](../../../goto/sdkforcpp/auditmanager-2017-07-25/getsettings.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/auditmanager-2017-07-25/GetSettings)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/auditmanager-2017-07-25/getsettings.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/auditmanager-2017-07-25/GetSettings)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/auditmanager-2017-07-25/getsettings.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/auditmanager-2017-07-25/GetSettings)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/auditmanager-2017-07-25/getsettings.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/auditmanager-2017-07-25/GetSettings)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/auditmanager-2017-07-25/getsettings.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/auditmanager-2017-07-25/GetSettings)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/auditmanager-2017-07-25/getsettings.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/auditmanager-2017-07-25/GetSettings)
+- [AWS SDK for Python](../../../../services/goto/boto3/auditmanager-2017-07-25/getsettings.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/auditmanager-2017-07-25/GetSettings)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/auditmanager-2017-07-25/getsettings.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GetServicesInScope
 

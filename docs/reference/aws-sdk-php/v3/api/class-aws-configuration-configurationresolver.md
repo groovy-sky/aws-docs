@@ -5,26 +5,26 @@ Menu
 
 ## ConfigurationResolver        in package    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html\#toc)
+### Table of Contents  [header link](class-aws-configuration-configurationresolver-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html\#toc-constants)
+#### Constants  [header link](class-aws-configuration-configurationresolver-toc-constants.md)
 
-[ENV\_CONFIG\_FILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html#constant_ENV_CONFIG_FILE)
-= 'AWS\_CONFIG\_FILE' [ENV\_PROFILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html#constant_ENV_PROFILE)
+[ENV\_CONFIG\_FILE](class-aws-configuration-configurationresolver-constant-env-config-file.md)
+= 'AWS\_CONFIG\_FILE' [ENV\_PROFILE](class-aws-configuration-configurationresolver-constant-env-profile.md)
 = 'AWS\_PROFILE'
 
-#### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html\#toc-properties)
+#### Properties  [header link](class-aws-configuration-configurationresolver-toc-properties.md)
 
-[$envPrefix](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html#property_envPrefix)
+[$envPrefix](class-aws-configuration-configurationresolver-property-envprefix.md)
 : mixed
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html\#toc-methods)
+#### Methods  [header link](class-aws-configuration-configurationresolver-toc-methods.md)
 
-[env()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html#method_env)
-: null Resolves config values from environment variables.[ini()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html#method_ini)
+[env()](class-aws-configuration-configurationresolver-method-env.md)
+: null Resolves config values from environment variables.[ini()](class-aws-configuration-configurationresolver-method-ini.md)
 : null Gets config values from a config file whose location
 is specified by an environment variable 'AWS\_CONFIG\_FILE', defaulting to
-~/.aws/config if not specified[resolve()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html#method_resolve)
+~/.aws/config if not specified[resolve()](class-aws-configuration-configurationresolver-method-resolve.md)
 : mixed Generic configuration resolver that first checks for environment
 variables, then checks for a specified profile in the environment-defined
 config file location (env variable is 'AWS\_CONFIG\_FILE', file location
@@ -32,9 +32,9 @@ defaults to ~/.aws/config), then checks for the "default" profile in the
 environment-defined config file location, and failing those uses a default
 fallback value.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html\#constants)
+### Constants  [header link](class-aws-configuration-configurationresolver-constants.md)
 
-#### ENV\_CONFIG\_FILE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html\#constant_ENV_CONFIG_FILE)
+#### ENV\_CONFIG\_FILE  [header link](class-aws-configuration-configurationresolver-constant-env-config-file.md)
 
 `
     public
@@ -43,7 +43,7 @@ fallback value.
     = 'AWS_CONFIG_FILE'
 `
 
-#### ENV\_PROFILE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html\#constant_ENV_PROFILE)
+#### ENV\_PROFILE  [header link](class-aws-configuration-configurationresolver-constant-env-profile.md)
 
 `
     public
@@ -52,9 +52,9 @@ fallback value.
     = 'AWS_PROFILE'
 `
 
-### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html\#properties)
+### Properties  [header link](class-aws-configuration-configurationresolver-properties.md)
 
-#### $envPrefix  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html\#property_envPrefix)
+#### $envPrefix  [header link](class-aws-configuration-configurationresolver-property-envprefix.md)
 
 `
     public
@@ -62,9 +62,9 @@ fallback value.
     $envPrefix
      = 'AWS_'`
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html\#methods)
+### Methods  [header link](class-aws-configuration-configurationresolver-methods.md)
 
-#### env()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html\#method_env)
+#### env()  [header link](class-aws-configuration-configurationresolver-method-env.md)
 
 Resolves config values from environment variables.
 
@@ -93,7 +93,7 @@ null
 
 \| mixed
 
-#### ini()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html\#method_ini)
+#### ini()  [header link](class-aws-configuration-configurationresolver-method-ini.md)
 
 Gets config values from a config file whose location
 is specified by an environment variable 'AWS\_CONFIG\_FILE', defaulting to
@@ -141,7 +141,7 @@ null
 
 \| mixed
 
-#### resolve()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html\#method_resolve)
+#### resolve()  [header link](class-aws-configuration-configurationresolver-method-resolve.md)
 
 Generic configuration resolver that first checks for environment
 variables, then checks for a specified profile in the environment-defined
@@ -181,17 +181,17 @@ additional configuration options.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html#toc-constants)
-  - [Properties](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html#toc-properties)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html#toc-methods)
+  - [Constants](class-aws-configuration-configurationresolver-toc-constants.md)
+  - [Properties](class-aws-configuration-configurationresolver-toc-properties.md)
+  - [Methods](class-aws-configuration-configurationresolver-toc-methods.md)
 - Constants
-  - [ENV\_CONFIG\_FILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html#constant_ENV_CONFIG_FILE)
-  - [ENV\_PROFILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html#constant_ENV_PROFILE)
+  - [ENV\_CONFIG\_FILE](class-aws-configuration-configurationresolver-constant-env-config-file.md)
+  - [ENV\_PROFILE](class-aws-configuration-configurationresolver-constant-env-profile.md)
 - Properties
-  - [$envPrefix](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html#property_envPrefix)
+  - [$envPrefix](class-aws-configuration-configurationresolver-property-envprefix.md)
 - Methods
-  - [env()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html#method_env)
-  - [ini()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html#method_ini)
-  - [resolve()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html#method_resolve)
+  - [env()](class-aws-configuration-configurationresolver-method-env.md)
+  - [ini()](class-aws-configuration-configurationresolver-method-ini.md)
+  - [resolve()](class-aws-configuration-configurationresolver-method-resolve.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html#top)
+[Back To Top](class-aws-configuration-configurationresolver-top.md)

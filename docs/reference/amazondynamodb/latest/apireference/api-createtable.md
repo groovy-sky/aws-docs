@@ -135,7 +135,7 @@ Required: Yes
 
 An array of attributes that describe the key schema for the table and indexes.
 
-Type: Array of [AttributeDefinition](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_AttributeDefinition.html) objects
+Type: Array of [AttributeDefinition](api-attributedefinition.md) objects
 
 Required: No
 
@@ -209,7 +209,7 @@ attributes.
 - `ProvisionedThroughput` \- The provisioned throughput settings for the
 global secondary index, consisting of read and write capacity units.
 
-Type: Array of [GlobalSecondaryIndex](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GlobalSecondaryIndex.html) objects
+Type: Array of [GlobalSecondaryIndex](api-globalsecondaryindex.md) objects
 
 Required: No
 
@@ -241,7 +241,7 @@ Required: No
 Specifies the attributes that make up the primary key for a table or an index. The
 attributes in `KeySchema` must also be defined in the
 `AttributeDefinitions` array. For more information, see [Data\
-Model](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DataModel.html) in the _Amazon DynamoDB Developer Guide_.
+Model](../../../../services/dynamodb/latest/developerguide/datamodel.md) in the _Amazon DynamoDB Developer Guide_.
 
 Each `KeySchemaElement` in the array is composed of:
 
@@ -273,10 +273,10 @@ elements, in this order: The first element must have a `KeyType` of
 `HASH`, and the second element must have a `KeyType` of
 `RANGE`.
 
-For more information, see [Working with Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.html#WorkingWithTables.primary.key) in the _Amazon DynamoDB Developer_
+For more information, see [Working with Tables](../../../../services/dynamodb/latest/developerguide/workingwithtables-workingwithtables-primary-key.md) in the _Amazon DynamoDB Developer_
 _Guide_.
 
-Type: Array of [KeySchemaElement](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_KeySchemaElement.html) objects
+Type: Array of [KeySchemaElement](api-keyschemaelement.md) objects
 
 Array Members: Minimum number of 1 item.
 
@@ -325,7 +325,7 @@ specify the ProjectionType of `ALL` to project all attributes
 from the source table, even if the table has more than 100
 attributes.
 
-Type: Array of [LocalSecondaryIndex](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_LocalSecondaryIndex.html) objects
+Type: Array of [LocalSecondaryIndex](api-localsecondaryindex.md) objects
 
 Required: No
 
@@ -335,7 +335,7 @@ Sets the maximum number of read and write units for the specified table in on-de
 capacity mode. If you use this parameter, you must specify
 `MaxReadRequestUnits`, `MaxWriteRequestUnits`, or both.
 
-Type: [OnDemandThroughput](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_OnDemandThroughput.html) object
+Type: [OnDemandThroughput](api-ondemandthroughput.md) object
 
 Required: No
 
@@ -349,10 +349,10 @@ If you set BillingMode as `PAY_PER_REQUEST`, you cannot specify this
 property.
 
 For current minimum and maximum provisioned throughput values, see [Service,\
-Account, and Table Quotas](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Limits.html) in the _Amazon DynamoDB Developer_
+Account, and Table Quotas](../../../../services/dynamodb/latest/developerguide/limits.md) in the _Amazon DynamoDB Developer_
 _Guide_.
 
-Type: [ProvisionedThroughput](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ProvisionedThroughput.html) object
+Type: [ProvisionedThroughput](api-provisionedthroughput.md) object
 
 Required: No
 
@@ -367,7 +367,7 @@ is _strongly consistent_.
 The maximum size supported for a resource-based policy document is 20 KB. DynamoDB counts whitespaces when calculating the size of a policy against this
 limit. For a full list of all considerations that apply for resource-based policies, see
 [Resource-based\
-policy considerations](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/rbac-considerations.html).
+policy considerations](../../../../services/dynamodb/latest/developerguide/rbac-considerations.md).
 
 ###### Note
 
@@ -384,7 +384,7 @@ Required: No
 
 Represents the settings used to enable server-side encryption.
 
-Type: [SSESpecification](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_SSESpecification.html) object
+Type: [SSESpecification](api-ssespecification.md) object
 
 Required: No
 
@@ -411,7 +411,7 @@ modified, is written to the stream.
 - `NEW_AND_OLD_IMAGES` \- Both the new and the old item images
 of the item are written to the stream.
 
-Type: [StreamSpecification](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_StreamSpecification.html) object
+Type: [StreamSpecification](api-streamspecification.md) object
 
 Required: No
 
@@ -429,9 +429,9 @@ Required: No
 **[Tags](#API_CreateTable_RequestSyntax)**
 
 A list of key-value pairs to label the table. For more information, see [Tagging\
-for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tagging.html).
+for DynamoDB](../../../../services/dynamodb/latest/developerguide/tagging.md).
 
-Type: Array of [Tag](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Required: No
 
@@ -440,7 +440,7 @@ Required: No
 Represents the warm throughput (in read units per second and write units per second)
 for creating a table.
 
-Type: [WarmThroughput](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_WarmThroughput.html) object
+Type: [WarmThroughput](api-warmthroughput.md) object
 
 Required: No
 
@@ -637,7 +637,7 @@ The following data is returned in JSON format by the service.
 
 Represents the properties of the table.
 
-Type: [TableDescription](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TableDescription.html) object
+Type: [TableDescription](api-tabledescription.md) object
 
 ## Errors
 
@@ -853,27 +853,27 @@ Date: <Date>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/dynamodb-2012-08-10/CreateTable)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/dynamodb-2012-08-10/createtable.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/CreateTable)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/dynamodb-2012-08-10/createtable.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/CreateTable)
+- [AWS SDK for C++](../../../goto/sdkforcpp/dynamodb-2012-08-10/createtable.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/dynamodb-2012-08-10/CreateTable)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/dynamodb-2012-08-10/createtable.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/CreateTable)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/dynamodb-2012-08-10/createtable.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/dynamodb-2012-08-10/CreateTable)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/dynamodb-2012-08-10/createtable.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/dynamodb-2012-08-10/CreateTable)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/dynamodb-2012-08-10/createtable.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/CreateTable)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/dynamodb-2012-08-10/createtable.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/CreateTable)
+- [AWS SDK for Python](../../../../services/goto/boto3/dynamodb-2012-08-10/createtable.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/CreateTable)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/createtable.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateGlobalTable
 

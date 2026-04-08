@@ -2,30 +2,30 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [EndpointV2](namespace-aws-endpointv2.md)
-- [Ruleset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.endpointv2.ruleset.html)
+- [Ruleset](namespace-aws-endpointv2-ruleset.md)
 
 ## RulesetParameter        in package    - [Aws](package-aws.md)
 
 Houses properties of an individual parameter definition.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html\#toc)
+### Table of Contents  [header link](class-aws-endpointv2-ruleset-rulesetparameter-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html\#toc-methods)
+#### Methods  [header link](class-aws-endpointv2-ruleset-rulesetparameter-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html#method___construct)
-: mixed [getBuiltIn()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html#method_getBuiltIn)
-: mixed [getDefault()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html#method_getDefault)
-: mixed [getDeprecated()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html#method_getDeprecated)
-: bool [getDocumentation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html#method_getDocumentation)
-: string [getName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html#method_getName)
-: mixed [getRequired()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html#method_getRequired)
-: bool [getType()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html#method_getType)
-: mixed [validateInputParam()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html#method_validateInputParam)
+[\_\_construct()](class-aws-endpointv2-ruleset-rulesetparameter-method-construct.md)
+: mixed [getBuiltIn()](class-aws-endpointv2-ruleset-rulesetparameter-method-getbuiltin.md)
+: mixed [getDefault()](class-aws-endpointv2-ruleset-rulesetparameter-method-getdefault.md)
+: mixed [getDeprecated()](class-aws-endpointv2-ruleset-rulesetparameter-method-getdeprecated.md)
+: bool [getDocumentation()](class-aws-endpointv2-ruleset-rulesetparameter-method-getdocumentation.md)
+: string [getName()](class-aws-endpointv2-ruleset-rulesetparameter-method-getname.md)
+: mixed [getRequired()](class-aws-endpointv2-ruleset-rulesetparameter-method-getrequired.md)
+: bool [getType()](class-aws-endpointv2-ruleset-rulesetparameter-method-gettype.md)
+: mixed [validateInputParam()](class-aws-endpointv2-ruleset-rulesetparameter-method-validateinputparam.md)
 : void Validates that an input parameter matches the type provided in its definition.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html\#methods)
+### Methods  [header link](class-aws-endpointv2-ruleset-rulesetparameter-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-endpointv2-ruleset-rulesetparameter-method-construct.md)
 
 `
     public
@@ -37,19 +37,19 @@ $name
 : mixed$definition
 : array<string\|int, mixed>
 
-#### getBuiltIn()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html\#method_getBuiltIn)
+#### getBuiltIn()  [header link](class-aws-endpointv2-ruleset-rulesetparameter-method-getbuiltin.md)
 
 `
     public
                     getBuiltIn() : mixed`
 
-#### getDefault()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html\#method_getDefault)
+#### getDefault()  [header link](class-aws-endpointv2-ruleset-rulesetparameter-method-getdefault.md)
 
 `
     public
                     getDefault() : mixed`
 
-#### getDeprecated()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html\#method_getDeprecated)
+#### getDeprecated()  [header link](class-aws-endpointv2-ruleset-rulesetparameter-method-getdeprecated.md)
 
 `
     public
@@ -59,7 +59,7 @@ $name
 
 bool
 
-#### getDocumentation()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html\#method_getDocumentation)
+#### getDocumentation()  [header link](class-aws-endpointv2-ruleset-rulesetparameter-method-getdocumentation.md)
 
 `
     public
@@ -69,13 +69,13 @@ bool
 
 string
 
-#### getName()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html\#method_getName)
+#### getName()  [header link](class-aws-endpointv2-ruleset-rulesetparameter-method-getname.md)
 
 `
     public
                     getName() : mixed`
 
-#### getRequired()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html\#method_getRequired)
+#### getRequired()  [header link](class-aws-endpointv2-ruleset-rulesetparameter-method-getrequired.md)
 
 `
     public
@@ -85,13 +85,13 @@ string
 
 bool
 
-#### getType()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html\#method_getType)
+#### getType()  [header link](class-aws-endpointv2-ruleset-rulesetparameter-method-gettype.md)
 
 `
     public
                     getType() : mixed`
 
-#### validateInputParam()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html\#method_validateInputParam)
+#### validateInputParam()  [header link](class-aws-endpointv2-ruleset-rulesetparameter-method-validateinputparam.md)
 
 Validates that an input parameter matches the type provided in its definition.
 
@@ -104,7 +104,7 @@ Validates that an input parameter matches the type provided in its definition.
 $inputParam
 : mixed
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html\#method_validateInputParam\#tags)
+##### Tags  [header link](class-aws-endpointv2-ruleset-rulesetparameter-method-validateinputparam-tags.md)
 
 throwsInvalidArgumentException
 <\-\- modeled\_exceptions -->
@@ -114,16 +114,16 @@ throwsInvalidArgumentException
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html#toc-methods)
+  - [Methods](class-aws-endpointv2-ruleset-rulesetparameter-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html#method___construct)
-  - [getBuiltIn()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html#method_getBuiltIn)
-  - [getDefault()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html#method_getDefault)
-  - [getDeprecated()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html#method_getDeprecated)
-  - [getDocumentation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html#method_getDocumentation)
-  - [getName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html#method_getName)
-  - [getRequired()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html#method_getRequired)
-  - [getType()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html#method_getType)
-  - [validateInputParam()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html#method_validateInputParam)
+  - [\_\_construct()](class-aws-endpointv2-ruleset-rulesetparameter-method-construct.md)
+  - [getBuiltIn()](class-aws-endpointv2-ruleset-rulesetparameter-method-getbuiltin.md)
+  - [getDefault()](class-aws-endpointv2-ruleset-rulesetparameter-method-getdefault.md)
+  - [getDeprecated()](class-aws-endpointv2-ruleset-rulesetparameter-method-getdeprecated.md)
+  - [getDocumentation()](class-aws-endpointv2-ruleset-rulesetparameter-method-getdocumentation.md)
+  - [getName()](class-aws-endpointv2-ruleset-rulesetparameter-method-getname.md)
+  - [getRequired()](class-aws-endpointv2-ruleset-rulesetparameter-method-getrequired.md)
+  - [getType()](class-aws-endpointv2-ruleset-rulesetparameter-method-gettype.md)
+  - [validateInputParam()](class-aws-endpointv2-ruleset-rulesetparameter-method-validateinputparam.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetParameter.html#top)
+[Back To Top](class-aws-endpointv2-ruleset-rulesetparameter-top.md)

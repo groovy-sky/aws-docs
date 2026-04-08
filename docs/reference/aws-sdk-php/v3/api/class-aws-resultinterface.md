@@ -6,21 +6,21 @@ Menu
 
 Represents an AWS result object that is returned from executing an operation.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html\#toc)
+### Table of Contents  [header link](class-aws-resultinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-resultinterface-toc-methods.md)
 
-[\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html#method___toString)
-: string Provides debug information about the result object[get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html#method_get)
-: mixed\|null Get a specific key value from the result model.[hasKey()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html#method_hasKey)
-: bool Check if the model contains a key by name[search()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html#method_search)
+[\_\_toString()](class-aws-resultinterface-method-tostring.md)
+: string Provides debug information about the result object[get()](class-aws-resultinterface-method-get.md)
+: mixed\|null Get a specific key value from the result model.[hasKey()](class-aws-resultinterface-method-haskey.md)
+: bool Check if the model contains a key by name[search()](class-aws-resultinterface-method-search.md)
 : mixed Returns the result of executing a JMESPath expression on the contents
-of the Result model.[toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html#method_toArray)
+of the Result model.[toArray()](class-aws-resultinterface-method-toarray.md)
 : array<string\|int, mixed> Convert the result to an array.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html\#methods)
+### Methods  [header link](class-aws-resultinterface-methods.md)
 
-#### \_\_toString()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html\#method___toString)
+#### \_\_toString()  [header link](class-aws-resultinterface-method-tostring.md)
 
 Provides debug information about the result object
 
@@ -32,7 +32,7 @@ Provides debug information about the result object
 
 string
 
-#### get()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html\#method_get)
+#### get()  [header link](class-aws-resultinterface-method-get.md)
 
 Get a specific key value from the result model.
 
@@ -54,7 +54,7 @@ mixed\|null
 
 Value of the key or NULL if not found.
 
-#### hasKey()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html\#method_hasKey)
+#### hasKey()  [header link](class-aws-resultinterface-method-haskey.md)
 
 Check if the model contains a key by name
 
@@ -73,7 +73,7 @@ Name of the key to retrieve
 
 bool
 
-#### search()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html\#method_search)
+#### search()  [header link](class-aws-resultinterface-method-search.md)
 
 Returns the result of executing a JMESPath expression on the contents
 of the Result model.
@@ -92,7 +92,7 @@ $expression
 
 JMESPath expression to execute
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html\#method_search\#tags)
+##### Tags  [header link](class-aws-resultinterface-method-search-tags.md)
 
 link[JMESPath documentation](http://jmespath.readthedocs.org/en/latest)
 
@@ -103,7 +103,7 @@ mixed
 
 Returns the result of the JMESPath expression.
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html\#method_toArray)
+#### toArray()  [header link](class-aws-resultinterface-method-toarray.md)
 
 Convert the result to an array.
 
@@ -121,13 +121,13 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html#toc-methods)
+  - [Constants](class-aws-resultinterface-toc-constants.md)
+  - [Methods](class-aws-resultinterface-toc-methods.md)
 - Methods
-  - [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html#method___toString)
-  - [get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html#method_get)
-  - [hasKey()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html#method_hasKey)
-  - [search()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html#method_search)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html#method_toArray)
+  - [\_\_toString()](class-aws-resultinterface-method-tostring.md)
+  - [get()](class-aws-resultinterface-method-get.md)
+  - [hasKey()](class-aws-resultinterface-method-haskey.md)
+  - [search()](class-aws-resultinterface-method-search.md)
+  - [toArray()](class-aws-resultinterface-method-toarray.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResultInterface.html#top)
+[Back To Top](class-aws-resultinterface-top.md)

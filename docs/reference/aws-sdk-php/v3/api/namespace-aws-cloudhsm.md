@@ -4,15 +4,15 @@ Menu
 
 ## CloudHsm
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudhsm.html\#toc)
+### Table of Contents  [header link](namespace-aws-cloudhsm-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudhsm.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-cloudhsm-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudhsm.exception.html)
+[Exception](namespace-aws-cloudhsm-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudhsm.html\#toc-classes)
+#### Classes  [header link](namespace-aws-cloudhsm-toc-classes.md)
 
-[CloudHsmClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudHsm.CloudHsmClient.html)This client is used to interact with \*\*AWS CloudHSM\*\*.
+[CloudHsmClient](class-aws-cloudhsm-cloudhsmclient.md)This client is used to interact with \*\*AWS CloudHSM\*\*.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudhsm.html#toc-classes)
+  - [Classes](namespace-aws-cloudhsm-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudhsm.html#top)
+[Back To Top](namespace-aws-cloudhsm-top.md)

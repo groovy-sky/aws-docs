@@ -7,17 +7,17 @@ Menu
 
 Provides access to an AWS token used for accessing AWS services
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.RefreshableTokenProviderInterface.html\#toc)
+### Table of Contents  [header link](class-aws-token-refreshabletokenproviderinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.RefreshableTokenProviderInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-token-refreshabletokenproviderinterface-toc-methods.md)
 
-[refresh()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.RefreshableTokenProviderInterface.html#method_refresh)
-: [Token](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html)Attempts to refresh this token object[shouldAttemptRefresh()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.RefreshableTokenProviderInterface.html#method_shouldAttemptRefresh)
+[refresh()](class-aws-token-refreshabletokenproviderinterface-method-refresh.md)
+: [Token](class-aws-token-token.md)Attempts to refresh this token object[shouldAttemptRefresh()](class-aws-token-refreshabletokenproviderinterface-method-shouldattemptrefresh.md)
 : bool Check if a refresh should be attempted
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.RefreshableTokenProviderInterface.html\#methods)
+### Methods  [header link](class-aws-token-refreshabletokenproviderinterface-methods.md)
 
-#### refresh()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.RefreshableTokenProviderInterface.html\#method_refresh)
+#### refresh()  [header link](class-aws-token-refreshabletokenproviderinterface-method-refresh.md)
 
 Attempts to refresh this token object
 
@@ -27,12 +27,12 @@ Attempts to refresh this token object
 
 ##### Return values
 
-[Token](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html)
+[Token](class-aws-token-token.md)
 —
 
 \| Exception
 
-#### shouldAttemptRefresh()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.RefreshableTokenProviderInterface.html\#method_shouldAttemptRefresh)
+#### shouldAttemptRefresh()  [header link](class-aws-token-refreshabletokenproviderinterface-method-shouldattemptrefresh.md)
 
 Check if a refresh should be attempted
 
@@ -50,10 +50,10 @@ bool
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.RefreshableTokenProviderInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.RefreshableTokenProviderInterface.html#toc-methods)
+  - [Constants](class-aws-token-refreshabletokenproviderinterface-toc-constants.md)
+  - [Methods](class-aws-token-refreshabletokenproviderinterface-toc-methods.md)
 - Methods
-  - [refresh()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.RefreshableTokenProviderInterface.html#method_refresh)
-  - [shouldAttemptRefresh()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.RefreshableTokenProviderInterface.html#method_shouldAttemptRefresh)
+  - [refresh()](class-aws-token-refreshabletokenproviderinterface-method-refresh.md)
+  - [shouldAttemptRefresh()](class-aws-token-refreshabletokenproviderinterface-method-shouldattemptrefresh.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.RefreshableTokenProviderInterface.html#top)
+[Back To Top](class-aws-token-refreshabletokenproviderinterface-top.md)

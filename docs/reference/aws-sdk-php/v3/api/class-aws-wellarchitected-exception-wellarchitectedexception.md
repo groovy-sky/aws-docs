@@ -2,15 +2,15 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [WellArchitected](namespace-aws-wellarchitected.md)
-- [Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wellarchitected.exception.html)
+- [Exception](namespace-aws-wellarchitected-exception.md)
 
 ## WellArchitectedException     extends [AwsException](class-aws-exception-awsexception.md)   in package    - [Aws](package-aws.md)
 
 Represents an error interacting with the **AWS Well-Architected Tool** service.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WellArchitected.Exception.WellArchitectedException.html\#toc)
+### Table of Contents  [header link](class-aws-wellarchitected-exception-wellarchitectedexception-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WellArchitected.Exception.WellArchitectedException.html\#toc-methods)
+#### Methods  [header link](class-aws-wellarchitected-exception-wellarchitectedexception-toc-methods.md)
 
 [\_\_construct()](class-aws-exception-awsexception.md#method___construct)
 : mixed [\_\_toString()](class-aws-exception-awsexception.md#method___toString)
@@ -50,7 +50,7 @@ array modification (e.g., $foo\['bar'\]\['baz'\] = 'qux').[offsetSet()](class-aw
 : mixed Replace the transfer information associated with an exception.[toArray()](class-aws-hasdatatrait.md#method_toArray)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WellArchitected.Exception.WellArchitectedException.html\#methods)
+### Methods  [header link](class-aws-wellarchitected-exception-wellarchitectedexception-methods.md)
 
 #### \_\_construct()  [header link](class-aws-exception-awsexception.md\#method___construct)
 
@@ -446,7 +446,7 @@ $info
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WellArchitected.Exception.WellArchitectedException.html#toc-methods)
+  - [Methods](class-aws-wellarchitected-exception-wellarchitectedexception-toc-methods.md)
 - Methods
   - [\_\_construct()](class-aws-exception-awsexception.md#method___construct)
   - [\_\_toString()](class-aws-exception-awsexception.md#method___toString)
@@ -479,4 +479,4 @@ $info
   - [setTransferInfo()](class-aws-exception-awsexception.md#method_setTransferInfo)
   - [toArray()](class-aws-hasdatatrait.md#method_toArray)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WellArchitected.Exception.WellArchitectedException.html#top)
+[Back To Top](class-aws-wellarchitected-exception-wellarchitectedexception-top.md)

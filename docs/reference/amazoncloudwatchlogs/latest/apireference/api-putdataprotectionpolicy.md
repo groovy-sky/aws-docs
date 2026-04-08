@@ -65,7 +65,7 @@ This policy must include two JSON blocks:
 `Operation` property with an `Audit` action. The
 `DataIdentifer` array lists the types of sensitive data that you want to
 mask. For more information about the available options, see [Types of data that\
-you can mask](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/mask-sensitive-log-data-types.html).
+you can mask](../../../../services/amazoncloudwatch/latest/logs/mask-sensitive-log-data-types.md).
 
 The `Operation` property with an `Audit` action is required to
 find the sensitive data terms. This `Audit` action must contain a
@@ -345,27 +345,27 @@ fields in these log groups, `RequestId` and
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/logs-2014-03-28/PutDataProtectionPolicy)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/logs-2014-03-28/putdataprotectionpolicy.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/logs-2014-03-28/PutDataProtectionPolicy)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/logs-2014-03-28/putdataprotectionpolicy.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/PutDataProtectionPolicy)
+- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/putdataprotectionpolicy.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/logs-2014-03-28/PutDataProtectionPolicy)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/logs-2014-03-28/putdataprotectionpolicy.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/PutDataProtectionPolicy)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/putdataprotectionpolicy.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/logs-2014-03-28/PutDataProtectionPolicy)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/logs-2014-03-28/putdataprotectionpolicy.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/logs-2014-03-28/PutDataProtectionPolicy)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/logs-2014-03-28/putdataprotectionpolicy.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/logs-2014-03-28/PutDataProtectionPolicy)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/logs-2014-03-28/putdataprotectionpolicy.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/logs-2014-03-28/PutDataProtectionPolicy)
+- [AWS SDK for Python](../../../../services/goto/boto3/logs-2014-03-28/putdataprotectionpolicy.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/logs-2014-03-28/PutDataProtectionPolicy)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/putdataprotectionpolicy.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 PutBearerTokenAuthentication
 

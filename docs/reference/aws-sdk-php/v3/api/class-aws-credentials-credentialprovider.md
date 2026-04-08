@@ -38,37 +38,37 @@ $promise = $composed();
 $creds = $promise->wait();
 `
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#toc)
+### Table of Contents  [header link](class-aws-credentials-credentialprovider-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#toc-constants)
+#### Constants  [header link](class-aws-credentials-credentialprovider-toc-constants.md)
 
-[ENV\_ACCOUNT\_ID](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_ENV_ACCOUNT_ID)
-= 'AWS\_ACCOUNT\_ID' [ENV\_ARN](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_ENV_ARN)
-= 'AWS\_ROLE\_ARN' [ENV\_CONFIG\_FILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_ENV_CONFIG_FILE)
-= 'AWS\_CONFIG\_FILE' [ENV\_KEY](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_ENV_KEY)
-= 'AWS\_ACCESS\_KEY\_ID' [ENV\_PROFILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_ENV_PROFILE)
-= 'AWS\_PROFILE' [ENV\_REGION](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_ENV_REGION)
-= 'AWS\_REGION' [ENV\_ROLE\_SESSION\_NAME](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_ENV_ROLE_SESSION_NAME)
-= 'AWS\_ROLE\_SESSION\_NAME' [ENV\_SECRET](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_ENV_SECRET)
-= 'AWS\_SECRET\_ACCESS\_KEY' [ENV\_SESSION](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_ENV_SESSION)
-= 'AWS\_SESSION\_TOKEN' [ENV\_SHARED\_CREDENTIALS\_FILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_ENV_SHARED_CREDENTIALS_FILE)
-= 'AWS\_SHARED\_CREDENTIALS\_FILE' [ENV\_TOKEN\_FILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_ENV_TOKEN_FILE)
-= 'AWS\_WEB\_IDENTITY\_TOKEN\_FILE' [FALLBACK\_REGION](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_FALLBACK_REGION)
-= 'us-east-1' [REFRESH\_WINDOW](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_REFRESH_WINDOW)
+[ENV\_ACCOUNT\_ID](class-aws-credentials-credentialprovider-constant-env-account-id.md)
+= 'AWS\_ACCOUNT\_ID' [ENV\_ARN](class-aws-credentials-credentialprovider-constant-env-arn.md)
+= 'AWS\_ROLE\_ARN' [ENV\_CONFIG\_FILE](class-aws-credentials-credentialprovider-constant-env-config-file.md)
+= 'AWS\_CONFIG\_FILE' [ENV\_KEY](class-aws-credentials-credentialprovider-constant-env-key.md)
+= 'AWS\_ACCESS\_KEY\_ID' [ENV\_PROFILE](class-aws-credentials-credentialprovider-constant-env-profile.md)
+= 'AWS\_PROFILE' [ENV\_REGION](class-aws-credentials-credentialprovider-constant-env-region.md)
+= 'AWS\_REGION' [ENV\_ROLE\_SESSION\_NAME](class-aws-credentials-credentialprovider-constant-env-role-session-name.md)
+= 'AWS\_ROLE\_SESSION\_NAME' [ENV\_SECRET](class-aws-credentials-credentialprovider-constant-env-secret.md)
+= 'AWS\_SECRET\_ACCESS\_KEY' [ENV\_SESSION](class-aws-credentials-credentialprovider-constant-env-session.md)
+= 'AWS\_SESSION\_TOKEN' [ENV\_SHARED\_CREDENTIALS\_FILE](class-aws-credentials-credentialprovider-constant-env-shared-credentials-file.md)
+= 'AWS\_SHARED\_CREDENTIALS\_FILE' [ENV\_TOKEN\_FILE](class-aws-credentials-credentialprovider-constant-env-token-file.md)
+= 'AWS\_WEB\_IDENTITY\_TOKEN\_FILE' [FALLBACK\_REGION](class-aws-credentials-credentialprovider-constant-fallback-region.md)
+= 'us-east-1' [REFRESH\_WINDOW](class-aws-credentials-credentialprovider-constant-refresh-window.md)
 = 60
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#toc-methods)
+#### Methods  [header link](class-aws-credentials-credentialprovider-toc-methods.md)
 
-[assumeRole()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_assumeRole)
-: callable Credential provider that creates credentials using assume role[assumeRoleWithWebIdentityCredentialProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_assumeRoleWithWebIdentityCredentialProvider)
+[assumeRole()](class-aws-credentials-credentialprovider-method-assumerole.md)
+: callable Credential provider that creates credentials using assume role[assumeRoleWithWebIdentityCredentialProvider()](class-aws-credentials-credentialprovider-method-assumerolewithwebidentitycredentialprovider.md)
 : callable Credential provider that creates credentials by assuming role from a
-Web Identity Token[cache()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_cache)
+Web Identity Token[cache()](class-aws-credentials-credentialprovider-method-cache.md)
 : callable Wraps a credential provider and saves provided credentials in an
 instance of Aws\\CacheInterface. Forwards calls when no credentials found
-in cache and updates cache with the results.[chain()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_chain)
+in cache and updates cache with the results.[chain()](class-aws-credentials-credentialprovider-method-chain.md)
 : callable Creates an aggregate credentials provider that invokes the provided
 variadic providers one after the other until a provider returns
-credentials.[defaultProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_defaultProvider)
+credentials.[defaultProvider()](class-aws-credentials-credentialprovider-method-defaultprovider.md)
 : callable Create a default credential provider that
 first checks for environment variables,
 then checks for assumed role via web identity,
@@ -79,37 +79,37 @@ then for credential\_process in the "default profile" profile in ~/.aws/config,
 then checks for "profile default" profile in ~/.aws/config (which is
 the default profile of AWS CLI),
 then tries to make a GET Request to fetch credentials if ECS environment variable is presented,
-finally checks for EC2 instance profile credentials.[ecsCredentials()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_ecsCredentials)
-: [EcsCredentialProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html)Credential provider that creates credentials using
+finally checks for EC2 instance profile credentials.[ecsCredentials()](class-aws-credentials-credentialprovider-method-ecscredentials.md)
+: [EcsCredentialProvider](class-aws-credentials-ecscredentialprovider.md)Credential provider that creates credentials using
 ecs credentials by a GET request, whose uri is specified
-by environment variable[env()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_env)
+by environment variable[env()](class-aws-credentials-credentialprovider-method-env.md)
 : callable Provider that creates credentials from environment variables
-AWS\_ACCESS\_KEY\_ID, AWS\_SECRET\_ACCESS\_KEY, and AWS\_SESSION\_TOKEN.[fromCredentials()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_fromCredentials)
-: callable Create a credential provider function from a set of static credentials.[getConfigFileName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_getConfigFileName)
+AWS\_ACCESS\_KEY\_ID, AWS\_SECRET\_ACCESS\_KEY, and AWS\_SESSION\_TOKEN.[fromCredentials()](class-aws-credentials-credentialprovider-method-fromcredentials.md)
+: callable Create a credential provider function from a set of static credentials.[getConfigFileName()](class-aws-credentials-credentialprovider-method-getconfigfilename.md)
 : string Locates shared configuration file by first checking for AWS\_CONFIG,
 then falling back to the default location. Returns the path of the
-resolved configuration file.[getCredentialsFileName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_getCredentialsFileName)
+resolved configuration file.[getCredentialsFileName()](class-aws-credentials-credentialprovider-method-getcredentialsfilename.md)
 : string Locates credentials file by first checking for AWS\_SHARED\_CREDENTIALS\_FILE,
 then falling back to the default location. Returns the path of the
-resolved credentials file.[getCredentialsFromSource()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_getCredentialsFromSource)
-: mixed [getHomeDir()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_getHomeDir)
-: null\|string Gets the environment's HOME directory if available.[ini()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_ini)
+resolved credentials file.[getCredentialsFromSource()](class-aws-credentials-credentialprovider-method-getcredentialsfromsource.md)
+: mixed [getHomeDir()](class-aws-credentials-credentialprovider-method-gethomedir.md)
+: null\|string Gets the environment's HOME directory if available.[ini()](class-aws-credentials-credentialprovider-method-ini.md)
 : callable Credentials provider that creates credentials using an ini file stored
 in the current user's home directory. A source can be provided
-in this file for assuming a role using the credential\_source config option.[instanceProfile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_instanceProfile)
-: [InstanceProfileProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html)Credential provider that creates credentials using instance profile
-credentials.[loadProfiles()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_loadProfiles)
-: mixed Gets profiles from specified $filename, or default ini files.[login()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_login)
-: callable Login credential provider for AWS local development using console credentials[memoize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_memoize)
-: callable Wraps a credential provider and caches previously provided credentials.[process()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_process)
+in this file for assuming a role using the credential\_source config option.[instanceProfile()](class-aws-credentials-credentialprovider-method-instanceprofile.md)
+: [InstanceProfileProvider](class-aws-credentials-instanceprofileprovider.md)Credential provider that creates credentials using instance profile
+credentials.[loadProfiles()](class-aws-credentials-credentialprovider-method-loadprofiles.md)
+: mixed Gets profiles from specified $filename, or default ini files.[login()](class-aws-credentials-credentialprovider-method-login.md)
+: callable Login credential provider for AWS local development using console credentials[memoize()](class-aws-credentials-credentialprovider-method-memoize.md)
+: callable Wraps a credential provider and caches previously provided credentials.[process()](class-aws-credentials-credentialprovider-method-process.md)
 : callable Credentials provider that creates credentials using a process configured in
-ini file stored in the current user's home directory.[shouldUseEcs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_shouldUseEcs)
-: bool [sso()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_sso)
+ini file stored in the current user's home directory.[shouldUseEcs()](class-aws-credentials-credentialprovider-method-shoulduseecs.md)
+: bool [sso()](class-aws-credentials-credentialprovider-method-sso.md)
 : callable Credential provider that retrieves cached SSO credentials from the CLI
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#constants)
+### Constants  [header link](class-aws-credentials-credentialprovider-constants.md)
 
-#### ENV\_ACCOUNT\_ID  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#constant_ENV_ACCOUNT_ID)
+#### ENV\_ACCOUNT\_ID  [header link](class-aws-credentials-credentialprovider-constant-env-account-id.md)
 
 `
     public
@@ -118,7 +118,7 @@ ini file stored in the current user's home directory.[shouldUseEcs()](https://do
     = 'AWS_ACCOUNT_ID'
 `
 
-#### ENV\_ARN  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#constant_ENV_ARN)
+#### ENV\_ARN  [header link](class-aws-credentials-credentialprovider-constant-env-arn.md)
 
 `
     public
@@ -127,7 +127,7 @@ ini file stored in the current user's home directory.[shouldUseEcs()](https://do
     = 'AWS_ROLE_ARN'
 `
 
-#### ENV\_CONFIG\_FILE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#constant_ENV_CONFIG_FILE)
+#### ENV\_CONFIG\_FILE  [header link](class-aws-credentials-credentialprovider-constant-env-config-file.md)
 
 `
     public
@@ -136,7 +136,7 @@ ini file stored in the current user's home directory.[shouldUseEcs()](https://do
     = 'AWS_CONFIG_FILE'
 `
 
-#### ENV\_KEY  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#constant_ENV_KEY)
+#### ENV\_KEY  [header link](class-aws-credentials-credentialprovider-constant-env-key.md)
 
 `
     public
@@ -145,7 +145,7 @@ ini file stored in the current user's home directory.[shouldUseEcs()](https://do
     = 'AWS_ACCESS_KEY_ID'
 `
 
-#### ENV\_PROFILE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#constant_ENV_PROFILE)
+#### ENV\_PROFILE  [header link](class-aws-credentials-credentialprovider-constant-env-profile.md)
 
 `
     public
@@ -154,7 +154,7 @@ ini file stored in the current user's home directory.[shouldUseEcs()](https://do
     = 'AWS_PROFILE'
 `
 
-#### ENV\_REGION  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#constant_ENV_REGION)
+#### ENV\_REGION  [header link](class-aws-credentials-credentialprovider-constant-env-region.md)
 
 `
     public
@@ -163,7 +163,7 @@ ini file stored in the current user's home directory.[shouldUseEcs()](https://do
     = 'AWS_REGION'
 `
 
-#### ENV\_ROLE\_SESSION\_NAME  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#constant_ENV_ROLE_SESSION_NAME)
+#### ENV\_ROLE\_SESSION\_NAME  [header link](class-aws-credentials-credentialprovider-constant-env-role-session-name.md)
 
 `
     public
@@ -172,7 +172,7 @@ ini file stored in the current user's home directory.[shouldUseEcs()](https://do
     = 'AWS_ROLE_SESSION_NAME'
 `
 
-#### ENV\_SECRET  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#constant_ENV_SECRET)
+#### ENV\_SECRET  [header link](class-aws-credentials-credentialprovider-constant-env-secret.md)
 
 `
     public
@@ -181,7 +181,7 @@ ini file stored in the current user's home directory.[shouldUseEcs()](https://do
     = 'AWS_SECRET_ACCESS_KEY'
 `
 
-#### ENV\_SESSION  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#constant_ENV_SESSION)
+#### ENV\_SESSION  [header link](class-aws-credentials-credentialprovider-constant-env-session.md)
 
 `
     public
@@ -190,7 +190,7 @@ ini file stored in the current user's home directory.[shouldUseEcs()](https://do
     = 'AWS_SESSION_TOKEN'
 `
 
-#### ENV\_SHARED\_CREDENTIALS\_FILE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#constant_ENV_SHARED_CREDENTIALS_FILE)
+#### ENV\_SHARED\_CREDENTIALS\_FILE  [header link](class-aws-credentials-credentialprovider-constant-env-shared-credentials-file.md)
 
 `
     public
@@ -199,7 +199,7 @@ ini file stored in the current user's home directory.[shouldUseEcs()](https://do
     = 'AWS_SHARED_CREDENTIALS_FILE'
 `
 
-#### ENV\_TOKEN\_FILE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#constant_ENV_TOKEN_FILE)
+#### ENV\_TOKEN\_FILE  [header link](class-aws-credentials-credentialprovider-constant-env-token-file.md)
 
 `
     public
@@ -208,7 +208,7 @@ ini file stored in the current user's home directory.[shouldUseEcs()](https://do
     = 'AWS_WEB_IDENTITY_TOKEN_FILE'
 `
 
-#### FALLBACK\_REGION  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#constant_FALLBACK_REGION)
+#### FALLBACK\_REGION  [header link](class-aws-credentials-credentialprovider-constant-fallback-region.md)
 
 `
     public
@@ -217,7 +217,7 @@ ini file stored in the current user's home directory.[shouldUseEcs()](https://do
     = 'us-east-1'
 `
 
-#### REFRESH\_WINDOW  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#constant_REFRESH_WINDOW)
+#### REFRESH\_WINDOW  [header link](class-aws-credentials-credentialprovider-constant-refresh-window.md)
 
 `
     public
@@ -226,9 +226,9 @@ ini file stored in the current user's home directory.[shouldUseEcs()](https://do
     = 60
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#methods)
+### Methods  [header link](class-aws-credentials-credentialprovider-methods.md)
 
-#### assumeRole()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_assumeRole)
+#### assumeRole()  [header link](class-aws-credentials-credentialprovider-method-assumerole.md)
 
 Credential provider that creates credentials using assume role
 
@@ -244,7 +244,7 @@ $config
 
 Array of configuration data
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_assumeRole\#tags)
+##### Tags  [header link](class-aws-credentials-credentialprovider-method-assumerole-tags.md)
 
 see[AssumeRoleCredentialProvider](class-aws-credentials-assumerolecredentialprovider.md)
 
@@ -254,7 +254,7 @@ for $config details.
 
 callable
 
-#### assumeRoleWithWebIdentityCredentialProvider()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_assumeRoleWithWebIdentityCredentialProvider)
+#### assumeRoleWithWebIdentityCredentialProvider()  [header link](class-aws-credentials-credentialprovider-method-assumerolewithwebidentitycredentialprovider.md)
 
 Credential provider that creates credentials by assuming role from a
 Web Identity Token
@@ -271,7 +271,7 @@ $config
 
 Array of configuration data
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_assumeRoleWithWebIdentityCredentialProvider\#tags)
+##### Tags  [header link](class-aws-credentials-credentialprovider-method-assumerolewithwebidentitycredentialprovider-tags.md)
 
 see[AssumeRoleWithWebIdentityCredentialProvider](class-aws-credentials-assumerolewithwebidentitycredentialprovider.md)
 
@@ -282,7 +282,7 @@ $config details.
 
 callable
 
-#### cache()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_cache)
+#### cache()  [header link](class-aws-credentials-credentialprovider-method-cache.md)
 
 Wraps a credential provider and saves provided credentials in an
 instance of Aws\\CacheInterface. Forwards calls when no credentials found
@@ -314,7 +314,7 @@ $cacheKey
 
 callable
 
-#### chain()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_chain)
+#### chain()  [header link](class-aws-credentials-credentialprovider-method-chain.md)
 
 Creates an aggregate credentials provider that invokes the provided
 variadic providers one after the other until a provider returns
@@ -328,7 +328,7 @@ credentials.
 
 callable
 
-#### defaultProvider()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_defaultProvider)
+#### defaultProvider()  [header link](class-aws-credentials-credentialprovider-method-defaultprovider.md)
 
 Create a default credential provider that
 first checks for environment variables,
@@ -362,7 +362,7 @@ provider options.
 
 callable
 
-#### ecsCredentials()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_ecsCredentials)
+#### ecsCredentials()  [header link](class-aws-credentials-credentialprovider-method-ecscredentials.md)
 
 Credential provider that creates credentials using
 ecs credentials by a GET request, whose uri is specified
@@ -380,17 +380,17 @@ $config
 
 Array of configuration data.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_ecsCredentials\#tags)
+##### Tags  [header link](class-aws-credentials-credentialprovider-method-ecscredentials-tags.md)
 
-see[EcsCredentialProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html)
+see[EcsCredentialProvider](class-aws-credentials-ecscredentialprovider.md)
 
 for $config details.
 
 ##### Return values
 
-[EcsCredentialProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.EcsCredentialProvider.html)
+[EcsCredentialProvider](class-aws-credentials-ecscredentialprovider.md)
 
-#### env()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_env)
+#### env()  [header link](class-aws-credentials-credentialprovider-method-env.md)
 
 Provider that creates credentials from environment variables
 AWS\_ACCESS\_KEY\_ID, AWS\_SECRET\_ACCESS\_KEY, and AWS\_SESSION\_TOKEN.
@@ -403,7 +403,7 @@ AWS\_ACCESS\_KEY\_ID, AWS\_SECRET\_ACCESS\_KEY, and AWS\_SESSION\_TOKEN.
 
 callable
 
-#### fromCredentials()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_fromCredentials)
+#### fromCredentials()  [header link](class-aws-credentials-credentialprovider-method-fromcredentials.md)
 
 Create a credential provider function from a set of static credentials.
 
@@ -420,7 +420,7 @@ $creds
 
 callable
 
-#### getConfigFileName()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_getConfigFileName)
+#### getConfigFileName()  [header link](class-aws-credentials-credentialprovider-method-getconfigfilename.md)
 
 Locates shared configuration file by first checking for AWS\_CONFIG,
 then falling back to the default location. Returns the path of the
@@ -434,7 +434,7 @@ resolved configuration file.
 
 string
 
-#### getCredentialsFileName()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_getCredentialsFileName)
+#### getCredentialsFileName()  [header link](class-aws-credentials-credentialprovider-method-getcredentialsfilename.md)
 
 Locates credentials file by first checking for AWS\_SHARED\_CREDENTIALS\_FILE,
 then falling back to the default location. Returns the path of the
@@ -453,7 +453,7 @@ $filename
 
 string
 
-#### getCredentialsFromSource()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_getCredentialsFromSource)
+#### getCredentialsFromSource()  [header link](class-aws-credentials-credentialprovider-method-getcredentialsfromsource.md)
 
 `
     public
@@ -469,7 +469,7 @@ $profileName
 : mixed
 = \[\]
 
-#### getHomeDir()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_getHomeDir)
+#### getHomeDir()  [header link](class-aws-credentials-credentialprovider-method-gethomedir.md)
 
 Gets the environment's HOME directory if available.
 
@@ -481,7 +481,7 @@ Gets the environment's HOME directory if available.
 
 null\|string
 
-#### ini()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_ini)
+#### ini()  [header link](class-aws-credentials-credentialprovider-method-ini.md)
 
 Credentials provider that creates credentials using an ini file stored
 in the current user's home directory. A source can be provided
@@ -523,7 +523,7 @@ stsClient: StsClient used to assume role specified in profile
 
 callable
 
-#### instanceProfile()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_instanceProfile)
+#### instanceProfile()  [header link](class-aws-credentials-credentialprovider-method-instanceprofile.md)
 
 Credential provider that creates credentials using instance profile
 credentials.
@@ -540,17 +540,17 @@ $config
 
 Array of configuration data.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_instanceProfile\#tags)
+##### Tags  [header link](class-aws-credentials-credentialprovider-method-instanceprofile-tags.md)
 
-see[InstanceProfileProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html)
+see[InstanceProfileProvider](class-aws-credentials-instanceprofileprovider.md)
 
 for $config details.
 
 ##### Return values
 
-[InstanceProfileProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.InstanceProfileProvider.html)
+[InstanceProfileProvider](class-aws-credentials-instanceprofileprovider.md)
 
-#### loadProfiles()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_loadProfiles)
+#### loadProfiles()  [header link](class-aws-credentials-credentialprovider-method-loadprofiles.md)
 
 Gets profiles from specified $filename, or default ini files.
 
@@ -563,7 +563,7 @@ Gets profiles from specified $filename, or default ini files.
 $filename
 : mixed
 
-#### login()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_login)
+#### login()  [header link](class-aws-credentials-credentialprovider-method-login.md)
 
 Login credential provider for AWS local development using console credentials
 
@@ -592,7 +592,7 @@ then the profile specified for `login`
 
 callable
 
-#### memoize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_memoize)
+#### memoize()  [header link](class-aws-credentials-credentialprovider-method-memoize.md)
 
 Wraps a credential provider and caches previously provided credentials.
 
@@ -613,7 +613,7 @@ Credentials provider function to wrap.
 
 callable
 
-#### process()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_process)
+#### process()  [header link](class-aws-credentials-credentialprovider-method-process.md)
 
 Credentials provider that creates credentials using a process configured in
 ini file stored in the current user's home directory.
@@ -642,7 +642,7 @@ than looking in the home directory.
 
 callable
 
-#### shouldUseEcs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_shouldUseEcs)
+#### shouldUseEcs()  [header link](class-aws-credentials-credentialprovider-method-shoulduseecs.md)
 
 `
     public
@@ -652,7 +652,7 @@ callable
 
 bool
 
-#### sso()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html\#method_sso)
+#### sso()  [header link](class-aws-credentials-credentialprovider-method-sso.md)
 
 Credential provider that retrieves cached SSO credentials from the CLI
 
@@ -680,42 +680,42 @@ callable
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#toc-methods)
+  - [Constants](class-aws-credentials-credentialprovider-toc-constants.md)
+  - [Methods](class-aws-credentials-credentialprovider-toc-methods.md)
 - Constants
-  - [ENV\_ACCOUNT\_ID](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_ENV_ACCOUNT_ID)
-  - [ENV\_ARN](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_ENV_ARN)
-  - [ENV\_CONFIG\_FILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_ENV_CONFIG_FILE)
-  - [ENV\_KEY](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_ENV_KEY)
-  - [ENV\_PROFILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_ENV_PROFILE)
-  - [ENV\_REGION](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_ENV_REGION)
-  - [ENV\_ROLE\_SESSION\_NAME](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_ENV_ROLE_SESSION_NAME)
-  - [ENV\_SECRET](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_ENV_SECRET)
-  - [ENV\_SESSION](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_ENV_SESSION)
-  - [ENV\_SHARED\_CREDENTIALS\_FILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_ENV_SHARED_CREDENTIALS_FILE)
-  - [ENV\_TOKEN\_FILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_ENV_TOKEN_FILE)
-  - [FALLBACK\_REGION](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_FALLBACK_REGION)
-  - [REFRESH\_WINDOW](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#constant_REFRESH_WINDOW)
+  - [ENV\_ACCOUNT\_ID](class-aws-credentials-credentialprovider-constant-env-account-id.md)
+  - [ENV\_ARN](class-aws-credentials-credentialprovider-constant-env-arn.md)
+  - [ENV\_CONFIG\_FILE](class-aws-credentials-credentialprovider-constant-env-config-file.md)
+  - [ENV\_KEY](class-aws-credentials-credentialprovider-constant-env-key.md)
+  - [ENV\_PROFILE](class-aws-credentials-credentialprovider-constant-env-profile.md)
+  - [ENV\_REGION](class-aws-credentials-credentialprovider-constant-env-region.md)
+  - [ENV\_ROLE\_SESSION\_NAME](class-aws-credentials-credentialprovider-constant-env-role-session-name.md)
+  - [ENV\_SECRET](class-aws-credentials-credentialprovider-constant-env-secret.md)
+  - [ENV\_SESSION](class-aws-credentials-credentialprovider-constant-env-session.md)
+  - [ENV\_SHARED\_CREDENTIALS\_FILE](class-aws-credentials-credentialprovider-constant-env-shared-credentials-file.md)
+  - [ENV\_TOKEN\_FILE](class-aws-credentials-credentialprovider-constant-env-token-file.md)
+  - [FALLBACK\_REGION](class-aws-credentials-credentialprovider-constant-fallback-region.md)
+  - [REFRESH\_WINDOW](class-aws-credentials-credentialprovider-constant-refresh-window.md)
 - Methods
-  - [assumeRole()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_assumeRole)
-  - [assumeRoleWithWebIdentityCredentialProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_assumeRoleWithWebIdentityCredentialProvider)
-  - [cache()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_cache)
-  - [chain()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_chain)
-  - [defaultProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_defaultProvider)
-  - [ecsCredentials()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_ecsCredentials)
-  - [env()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_env)
-  - [fromCredentials()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_fromCredentials)
-  - [getConfigFileName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_getConfigFileName)
-  - [getCredentialsFileName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_getCredentialsFileName)
-  - [getCredentialsFromSource()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_getCredentialsFromSource)
-  - [getHomeDir()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_getHomeDir)
-  - [ini()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_ini)
-  - [instanceProfile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_instanceProfile)
-  - [loadProfiles()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_loadProfiles)
-  - [login()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_login)
-  - [memoize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_memoize)
-  - [process()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_process)
-  - [shouldUseEcs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_shouldUseEcs)
-  - [sso()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#method_sso)
+  - [assumeRole()](class-aws-credentials-credentialprovider-method-assumerole.md)
+  - [assumeRoleWithWebIdentityCredentialProvider()](class-aws-credentials-credentialprovider-method-assumerolewithwebidentitycredentialprovider.md)
+  - [cache()](class-aws-credentials-credentialprovider-method-cache.md)
+  - [chain()](class-aws-credentials-credentialprovider-method-chain.md)
+  - [defaultProvider()](class-aws-credentials-credentialprovider-method-defaultprovider.md)
+  - [ecsCredentials()](class-aws-credentials-credentialprovider-method-ecscredentials.md)
+  - [env()](class-aws-credentials-credentialprovider-method-env.md)
+  - [fromCredentials()](class-aws-credentials-credentialprovider-method-fromcredentials.md)
+  - [getConfigFileName()](class-aws-credentials-credentialprovider-method-getconfigfilename.md)
+  - [getCredentialsFileName()](class-aws-credentials-credentialprovider-method-getcredentialsfilename.md)
+  - [getCredentialsFromSource()](class-aws-credentials-credentialprovider-method-getcredentialsfromsource.md)
+  - [getHomeDir()](class-aws-credentials-credentialprovider-method-gethomedir.md)
+  - [ini()](class-aws-credentials-credentialprovider-method-ini.md)
+  - [instanceProfile()](class-aws-credentials-credentialprovider-method-instanceprofile.md)
+  - [loadProfiles()](class-aws-credentials-credentialprovider-method-loadprofiles.md)
+  - [login()](class-aws-credentials-credentialprovider-method-login.md)
+  - [memoize()](class-aws-credentials-credentialprovider-method-memoize.md)
+  - [process()](class-aws-credentials-credentialprovider-method-process.md)
+  - [shouldUseEcs()](class-aws-credentials-credentialprovider-method-shoulduseecs.md)
+  - [sso()](class-aws-credentials-credentialprovider-method-sso.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialProvider.html#top)
+[Back To Top](class-aws-credentials-credentialprovider-top.md)

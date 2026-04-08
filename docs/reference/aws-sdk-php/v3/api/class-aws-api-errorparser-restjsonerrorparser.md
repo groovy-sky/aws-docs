@@ -2,23 +2,23 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [Api](namespace-aws-api.md)
-- [ErrorParser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.api.errorparser.html)
+- [ErrorParser](namespace-aws-api-errorparser.md)
 
-## RestJsonErrorParser     extends [AbstractErrorParser](class-aws-api-errorparser-abstracterrorparser.md)   in package    - [Aws](package-aws.md)       Uses  [JsonParserTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.JsonParserTrait.html)
+## RestJsonErrorParser     extends [AbstractErrorParser](class-aws-api-errorparser-abstracterrorparser.md)   in package    - [Aws](package-aws.md)       Uses  [JsonParserTrait](class-aws-api-errorparser-jsonparsertrait.md)
 
 Parses JSON-REST errors.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.RestJsonErrorParser.html\#toc)
+### Table of Contents  [header link](class-aws-api-errorparser-restjsonerrorparser-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.RestJsonErrorParser.html\#toc-methods)
+#### Methods  [header link](class-aws-api-errorparser-restjsonerrorparser-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.RestJsonErrorParser.html#method___construct)
-: mixed [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.RestJsonErrorParser.html#method___invoke)
+[\_\_construct()](class-aws-api-errorparser-restjsonerrorparser-method-construct.md)
+: mixed [\_\_invoke()](class-aws-api-errorparser-restjsonerrorparser-method-invoke.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.RestJsonErrorParser.html\#methods)
+### Methods  [header link](class-aws-api-errorparser-restjsonerrorparser-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.RestJsonErrorParser.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-api-errorparser-restjsonerrorparser-method-construct.md)
 
 `
     public
@@ -32,7 +32,7 @@ $api
 : JsonParser\|null
 = null
 
-#### \_\_invoke()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.RestJsonErrorParser.html\#method___invoke)
+#### \_\_invoke()  [header link](class-aws-api-errorparser-restjsonerrorparser-method-invoke.md)
 
 `
     public
@@ -51,9 +51,9 @@ $response
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.RestJsonErrorParser.html#toc-methods)
+  - [Methods](class-aws-api-errorparser-restjsonerrorparser-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.RestJsonErrorParser.html#method___construct)
-  - [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.RestJsonErrorParser.html#method___invoke)
+  - [\_\_construct()](class-aws-api-errorparser-restjsonerrorparser-method-construct.md)
+  - [\_\_invoke()](class-aws-api-errorparser-restjsonerrorparser-method-invoke.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.RestJsonErrorParser.html#top)
+[Back To Top](class-aws-api-errorparser-restjsonerrorparser-top.md)

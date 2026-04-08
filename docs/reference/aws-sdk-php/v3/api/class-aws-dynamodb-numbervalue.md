@@ -7,22 +7,22 @@ Menu
 
 Special object to represent a DynamoDB Number (N) value.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.NumberValue.html\#toc)
+### Table of Contents  [header link](class-aws-dynamodb-numbervalue-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.NumberValue.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-dynamodb-numbervalue-toc-interfaces.md)
 
 JsonSerializable
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.NumberValue.html\#toc-methods)
+#### Methods  [header link](class-aws-dynamodb-numbervalue-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.NumberValue.html#method___construct)
-: mixed [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.NumberValue.html#method___toString)
-: mixed [jsonSerialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.NumberValue.html#method_jsonSerialize)
+[\_\_construct()](class-aws-dynamodb-numbervalue-method-construct.md)
+: mixed [\_\_toString()](class-aws-dynamodb-numbervalue-method-tostring.md)
+: mixed [jsonSerialize()](class-aws-dynamodb-numbervalue-method-jsonserialize.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.NumberValue.html\#methods)
+### Methods  [header link](class-aws-dynamodb-numbervalue-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.NumberValue.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-dynamodb-numbervalue-method-construct.md)
 
 `
     public
@@ -35,13 +35,13 @@ $value
 
 A number value.
 
-#### \_\_toString()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.NumberValue.html\#method___toString)
+#### \_\_toString()  [header link](class-aws-dynamodb-numbervalue-method-tostring.md)
 
 `
     public
                     __toString() : mixed`
 
-#### jsonSerialize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.NumberValue.html\#method_jsonSerialize)
+#### jsonSerialize()  [header link](class-aws-dynamodb-numbervalue-method-jsonserialize.md)
 
 `
     public
@@ -54,10 +54,10 @@ A number value.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.NumberValue.html#toc-methods)
+  - [Methods](class-aws-dynamodb-numbervalue-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.NumberValue.html#method___construct)
-  - [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.NumberValue.html#method___toString)
-  - [jsonSerialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.NumberValue.html#method_jsonSerialize)
+  - [\_\_construct()](class-aws-dynamodb-numbervalue-method-construct.md)
+  - [\_\_toString()](class-aws-dynamodb-numbervalue-method-tostring.md)
+  - [jsonSerialize()](class-aws-dynamodb-numbervalue-method-jsonserialize.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.NumberValue.html#top)
+[Back To Top](class-aws-dynamodb-numbervalue-top.md)

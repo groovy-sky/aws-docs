@@ -17,42 +17,42 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2021-04-20**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html)
+- [**2021-04-20**](api-chime-sdk-identity-2021-04-20.md)
 
-  - [CreateAppInstance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#createappinstance)
-  - [CreateAppInstanceAdmin](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#createappinstanceadmin)
-  - [CreateAppInstanceBot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#createappinstancebot)
-  - [CreateAppInstanceUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#createappinstanceuser)
-  - [DeleteAppInstance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#deleteappinstance)
-  - [DeleteAppInstanceAdmin](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#deleteappinstanceadmin)
-  - [DeleteAppInstanceBot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#deleteappinstancebot)
-  - [DeleteAppInstanceUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#deleteappinstanceuser)
-  - [DeregisterAppInstanceUserEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#deregisterappinstanceuserendpoint)
-  - [DescribeAppInstance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#describeappinstance)
-  - [DescribeAppInstanceAdmin](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#describeappinstanceadmin)
-  - [DescribeAppInstanceBot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#describeappinstancebot)
-  - [DescribeAppInstanceUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#describeappinstanceuser)
-  - [DescribeAppInstanceUserEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#describeappinstanceuserendpoint)
-  - [GetAppInstanceRetentionSettings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#getappinstanceretentionsettings)
-  - [ListAppInstanceAdmins](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#listappinstanceadmins)
-  - [ListAppInstanceBots](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#listappinstancebots)
-  - [ListAppInstanceUserEndpoints](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#listappinstanceuserendpoints)
-  - [ListAppInstanceUsers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#listappinstanceusers)
-  - [ListAppInstances](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#listappinstances)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#listtagsforresource)
-  - [PutAppInstanceRetentionSettings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#putappinstanceretentionsettings)
-  - [PutAppInstanceUserExpirationSettings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#putappinstanceuserexpirationsettings)
-  - [RegisterAppInstanceUserEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#registerappinstanceuserendpoint)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#untagresource)
-  - [UpdateAppInstance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#updateappinstance)
-  - [UpdateAppInstanceBot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#updateappinstancebot)
-  - [UpdateAppInstanceUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#updateappinstanceuser)
-  - [UpdateAppInstanceUserEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-identity-2021-04-20.html#updateappinstanceuserendpoint)
+  - [CreateAppInstance](api-chime-sdk-identity-2021-04-20-createappinstance.md)
+  - [CreateAppInstanceAdmin](api-chime-sdk-identity-2021-04-20-createappinstanceadmin.md)
+  - [CreateAppInstanceBot](api-chime-sdk-identity-2021-04-20-createappinstancebot.md)
+  - [CreateAppInstanceUser](api-chime-sdk-identity-2021-04-20-createappinstanceuser.md)
+  - [DeleteAppInstance](api-chime-sdk-identity-2021-04-20-deleteappinstance.md)
+  - [DeleteAppInstanceAdmin](api-chime-sdk-identity-2021-04-20-deleteappinstanceadmin.md)
+  - [DeleteAppInstanceBot](api-chime-sdk-identity-2021-04-20-deleteappinstancebot.md)
+  - [DeleteAppInstanceUser](api-chime-sdk-identity-2021-04-20-deleteappinstanceuser.md)
+  - [DeregisterAppInstanceUserEndpoint](api-chime-sdk-identity-2021-04-20-deregisterappinstanceuserendpoint.md)
+  - [DescribeAppInstance](api-chime-sdk-identity-2021-04-20-describeappinstance.md)
+  - [DescribeAppInstanceAdmin](api-chime-sdk-identity-2021-04-20-describeappinstanceadmin.md)
+  - [DescribeAppInstanceBot](api-chime-sdk-identity-2021-04-20-describeappinstancebot.md)
+  - [DescribeAppInstanceUser](api-chime-sdk-identity-2021-04-20-describeappinstanceuser.md)
+  - [DescribeAppInstanceUserEndpoint](api-chime-sdk-identity-2021-04-20-describeappinstanceuserendpoint.md)
+  - [GetAppInstanceRetentionSettings](api-chime-sdk-identity-2021-04-20-getappinstanceretentionsettings.md)
+  - [ListAppInstanceAdmins](api-chime-sdk-identity-2021-04-20-listappinstanceadmins.md)
+  - [ListAppInstanceBots](api-chime-sdk-identity-2021-04-20-listappinstancebots.md)
+  - [ListAppInstanceUserEndpoints](api-chime-sdk-identity-2021-04-20-listappinstanceuserendpoints.md)
+  - [ListAppInstanceUsers](api-chime-sdk-identity-2021-04-20-listappinstanceusers.md)
+  - [ListAppInstances](api-chime-sdk-identity-2021-04-20-listappinstances.md)
+  - [ListTagsForResource](api-chime-sdk-identity-2021-04-20-listtagsforresource.md)
+  - [PutAppInstanceRetentionSettings](api-chime-sdk-identity-2021-04-20-putappinstanceretentionsettings.md)
+  - [PutAppInstanceUserExpirationSettings](api-chime-sdk-identity-2021-04-20-putappinstanceuserexpirationsettings.md)
+  - [RegisterAppInstanceUserEndpoint](api-chime-sdk-identity-2021-04-20-registerappinstanceuserendpoint.md)
+  - [TagResource](api-chime-sdk-identity-2021-04-20-tagresource.md)
+  - [UntagResource](api-chime-sdk-identity-2021-04-20-untagresource.md)
+  - [UpdateAppInstance](api-chime-sdk-identity-2021-04-20-updateappinstance.md)
+  - [UpdateAppInstanceBot](api-chime-sdk-identity-2021-04-20-updateappinstancebot.md)
+  - [UpdateAppInstanceUser](api-chime-sdk-identity-2021-04-20-updateappinstanceuser.md)
+  - [UpdateAppInstanceUserEndpoint](api-chime-sdk-identity-2021-04-20-updateappinstanceuserendpoint.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKIdentity.ChimeSDKIdentityClient.html\#toc)
+### Table of Contents  [header link](class-aws-chimesdkidentity-chimesdkidentityclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKIdentity.ChimeSDKIdentityClient.html\#toc-methods)
+#### Methods  [header link](class-aws-chimesdkidentity-chimesdkidentityclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -83,7 +83,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKIdentity.ChimeSDKIdentityClient.html\#methods)
+### Methods  [header link](class-aws-chimesdkidentity-chimesdkidentityclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -550,7 +550,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKIdentity.ChimeSDKIdentityClient.html#toc-methods)
+  - [Methods](class-aws-chimesdkidentity-chimesdkidentityclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -577,4 +577,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKIdentity.ChimeSDKIdentityClient.html#top)
+[Back To Top](class-aws-chimesdkidentity-chimesdkidentityclient-top.md)

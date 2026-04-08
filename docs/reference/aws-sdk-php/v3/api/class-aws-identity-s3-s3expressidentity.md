@@ -2,16 +2,16 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [Identity](namespace-aws-identity.md)
-- [S3](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.identity.s3.html)
+- [S3](namespace-aws-identity-s3.md)
 
 ## S3ExpressIdentity     extends [Credentials](class-aws-credentials-credentials.md)   in package    - [Aws](package-aws.md)
 
 Basic implementation of the AWS Credentials interface that allows callers to
 pass in the AWS Access Key and AWS Secret Access Key in the constructor.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Identity.S3.S3ExpressIdentity.html\#toc)
+### Table of Contents  [header link](class-aws-identity-s3-s3expressidentity-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Identity.S3.S3ExpressIdentity.html\#toc-methods)
+#### Methods  [header link](class-aws-identity-s3-s3expressidentity-toc-methods.md)
 
 [\_\_construct()](class-aws-credentials-credentials.md#method___construct)
 : mixed Constructs a new BasicAWSCredentials object, with the specified AWS
@@ -30,7 +30,7 @@ access key and AWS secret key[\_\_serialize()](class-aws-credentials-credentials
 : array<string\|int, mixed> Converts the credentials to an associative array.[unserialize()](class-aws-credentials-credentials.md#method_unserialize)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Identity.S3.S3ExpressIdentity.html\#methods)
+### Methods  [header link](class-aws-identity-s3-s3expressidentity-methods.md)
 
 #### \_\_construct()  [header link](class-aws-credentials-credentials.md\#method___construct)
 
@@ -206,7 +206,7 @@ $serialized
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Identity.S3.S3ExpressIdentity.html#toc-methods)
+  - [Methods](class-aws-identity-s3-s3expressidentity-toc-methods.md)
 - Methods
   - [\_\_construct()](class-aws-credentials-credentials.md#method___construct)
   - [\_\_serialize()](class-aws-credentials-credentials.md#method___serialize)
@@ -223,4 +223,4 @@ $serialized
   - [toArray()](class-aws-credentials-credentials.md#method_toArray)
   - [unserialize()](class-aws-credentials-credentials.md#method_unserialize)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Identity.S3.S3ExpressIdentity.html#top)
+[Back To Top](class-aws-identity-s3-s3expressidentity-top.md)

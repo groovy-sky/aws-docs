@@ -7,19 +7,19 @@ Menu
 
 Provides access to an AWS token used for accessing AWS services
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenInterface.html\#toc)
+### Table of Contents  [header link](class-aws-token-tokeninterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-token-tokeninterface-toc-methods.md)
 
-[getExpiration()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenInterface.html#method_getExpiration)
-: int\|null Get the UNIX timestamp in which the token will expire[getToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenInterface.html#method_getToken)
-: string Returns the token this token object.[isExpired()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenInterface.html#method_isExpired)
-: bool Check if the token are expired[toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenInterface.html#method_toArray)
+[getExpiration()](class-aws-token-tokeninterface-method-getexpiration.md)
+: int\|null Get the UNIX timestamp in which the token will expire[getToken()](class-aws-token-tokeninterface-method-gettoken.md)
+: string Returns the token this token object.[isExpired()](class-aws-token-tokeninterface-method-isexpired.md)
+: bool Check if the token are expired[toArray()](class-aws-token-tokeninterface-method-toarray.md)
 : array<string\|int, mixed> Converts the token to an associative array.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenInterface.html\#methods)
+### Methods  [header link](class-aws-token-tokeninterface-methods.md)
 
-#### getExpiration()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenInterface.html\#method_getExpiration)
+#### getExpiration()  [header link](class-aws-token-tokeninterface-method-getexpiration.md)
 
 Get the UNIX timestamp in which the token will expire
 
@@ -31,7 +31,7 @@ Get the UNIX timestamp in which the token will expire
 
 int\|null
 
-#### getToken()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenInterface.html\#method_getToken)
+#### getToken()  [header link](class-aws-token-tokeninterface-method-gettoken.md)
 
 Returns the token this token object.
 
@@ -43,7 +43,7 @@ Returns the token this token object.
 
 string
 
-#### isExpired()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenInterface.html\#method_isExpired)
+#### isExpired()  [header link](class-aws-token-tokeninterface-method-isexpired.md)
 
 Check if the token are expired
 
@@ -55,7 +55,7 @@ Check if the token are expired
 
 bool
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenInterface.html\#method_toArray)
+#### toArray()  [header link](class-aws-token-tokeninterface-method-toarray.md)
 
 Converts the token to an associative array.
 
@@ -73,12 +73,12 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenInterface.html#toc-methods)
+  - [Constants](class-aws-token-tokeninterface-toc-constants.md)
+  - [Methods](class-aws-token-tokeninterface-toc-methods.md)
 - Methods
-  - [getExpiration()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenInterface.html#method_getExpiration)
-  - [getToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenInterface.html#method_getToken)
-  - [isExpired()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenInterface.html#method_isExpired)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenInterface.html#method_toArray)
+  - [getExpiration()](class-aws-token-tokeninterface-method-getexpiration.md)
+  - [getToken()](class-aws-token-tokeninterface-method-gettoken.md)
+  - [isExpired()](class-aws-token-tokeninterface-method-isexpired.md)
+  - [toArray()](class-aws-token-tokeninterface-method-toarray.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenInterface.html#top)
+[Back To Top](class-aws-token-tokeninterface-top.md)

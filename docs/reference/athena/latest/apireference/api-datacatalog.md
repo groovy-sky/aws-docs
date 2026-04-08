@@ -42,7 +42,7 @@ Required: Yes
 The type of connection for a `FEDERATED` data catalog (for example,
 `REDSHIFT`, `MYSQL`, or `SQLSERVER`). For
 information about individual connectors, see [Available data source\
-connectors](https://docs.aws.amazon.com/athena/latest/ug/connectors-available.html).
+connectors](../../../../services/athena/latest/ug/connectors-available.md).
 
 Type: String
 
@@ -188,13 +188,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/DataCatalog)
+- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/datacatalog.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/DataCatalog)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/datacatalog.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/DataCatalog)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/datacatalog.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Database
 

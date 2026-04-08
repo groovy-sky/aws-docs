@@ -2,13 +2,13 @@
 
 The following actions are supported by AWS AppConfig:
 
-- [CreateApplication](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_CreateApplication.html)
+- [CreateApplication](api-createapplication.md)
 
-- [CreateConfigurationProfile](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_CreateConfigurationProfile.html)
+- [CreateConfigurationProfile](api-createconfigurationprofile.md)
 
 - [CreateDeploymentStrategy](api-createdeploymentstrategy.md)
 
-- [CreateEnvironment](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_CreateEnvironment.html)
+- [CreateEnvironment](api-createenvironment.md)
 
 - [CreateExtension](api-createextension.md)
 
@@ -16,81 +16,81 @@ The following actions are supported by AWS AppConfig:
 
 - [CreateHostedConfigurationVersion](api-createhostedconfigurationversion.md)
 
-- [DeleteApplication](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_DeleteApplication.html)
+- [DeleteApplication](api-deleteapplication.md)
 
-- [DeleteConfigurationProfile](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_DeleteConfigurationProfile.html)
+- [DeleteConfigurationProfile](api-deleteconfigurationprofile.md)
 
-- [DeleteDeploymentStrategy](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_DeleteDeploymentStrategy.html)
+- [DeleteDeploymentStrategy](api-deletedeploymentstrategy.md)
 
-- [DeleteEnvironment](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_DeleteEnvironment.html)
+- [DeleteEnvironment](api-deleteenvironment.md)
 
-- [DeleteExtension](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_DeleteExtension.html)
+- [DeleteExtension](api-deleteextension.md)
 
-- [DeleteExtensionAssociation](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_DeleteExtensionAssociation.html)
+- [DeleteExtensionAssociation](api-deleteextensionassociation.md)
 
-- [DeleteHostedConfigurationVersion](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_DeleteHostedConfigurationVersion.html)
+- [DeleteHostedConfigurationVersion](api-deletehostedconfigurationversion.md)
 
-- [GetAccountSettings](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_GetAccountSettings.html)
+- [GetAccountSettings](api-getaccountsettings.md)
 
-- [GetApplication](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_GetApplication.html)
+- [GetApplication](api-getapplication.md)
 
-- [GetConfiguration](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_GetConfiguration.html)
+- [GetConfiguration](api-getconfiguration.md)
 
-- [GetConfigurationProfile](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_GetConfigurationProfile.html)
+- [GetConfigurationProfile](api-getconfigurationprofile.md)
 
-- [GetDeployment](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_GetDeployment.html)
+- [GetDeployment](api-getdeployment.md)
 
-- [GetDeploymentStrategy](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_GetDeploymentStrategy.html)
+- [GetDeploymentStrategy](api-getdeploymentstrategy.md)
 
-- [GetEnvironment](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_GetEnvironment.html)
+- [GetEnvironment](api-getenvironment.md)
 
-- [GetExtension](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_GetExtension.html)
+- [GetExtension](api-getextension.md)
 
-- [GetExtensionAssociation](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_GetExtensionAssociation.html)
+- [GetExtensionAssociation](api-getextensionassociation.md)
 
-- [GetHostedConfigurationVersion](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_GetHostedConfigurationVersion.html)
+- [GetHostedConfigurationVersion](api-gethostedconfigurationversion.md)
 
-- [ListApplications](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_ListApplications.html)
+- [ListApplications](api-listapplications.md)
 
-- [ListConfigurationProfiles](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_ListConfigurationProfiles.html)
+- [ListConfigurationProfiles](api-listconfigurationprofiles.md)
 
-- [ListDeployments](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_ListDeployments.html)
+- [ListDeployments](api-listdeployments.md)
 
-- [ListDeploymentStrategies](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_ListDeploymentStrategies.html)
+- [ListDeploymentStrategies](api-listdeploymentstrategies.md)
 
-- [ListEnvironments](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_ListEnvironments.html)
+- [ListEnvironments](api-listenvironments.md)
 
-- [ListExtensionAssociations](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_ListExtensionAssociations.html)
+- [ListExtensionAssociations](api-listextensionassociations.md)
 
-- [ListExtensions](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_ListExtensions.html)
+- [ListExtensions](api-listextensions.md)
 
-- [ListHostedConfigurationVersions](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_ListHostedConfigurationVersions.html)
+- [ListHostedConfigurationVersions](api-listhostedconfigurationversions.md)
 
-- [ListTagsForResource](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_ListTagsForResource.html)
+- [ListTagsForResource](api-listtagsforresource.md)
 
 - [StartDeployment](api-startdeployment.md)
 
 - [StopDeployment](api-stopdeployment.md)
 
-- [TagResource](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_TagResource.html)
+- [TagResource](api-tagresource.md)
 
-- [UntagResource](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_UntagResource.html)
+- [UntagResource](api-untagresource.md)
 
-- [UpdateAccountSettings](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_UpdateAccountSettings.html)
+- [UpdateAccountSettings](api-updateaccountsettings.md)
 
-- [UpdateApplication](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_UpdateApplication.html)
+- [UpdateApplication](api-updateapplication.md)
 
-- [UpdateConfigurationProfile](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_UpdateConfigurationProfile.html)
+- [UpdateConfigurationProfile](api-updateconfigurationprofile.md)
 
-- [UpdateDeploymentStrategy](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_UpdateDeploymentStrategy.html)
+- [UpdateDeploymentStrategy](api-updatedeploymentstrategy.md)
 
-- [UpdateEnvironment](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_UpdateEnvironment.html)
+- [UpdateEnvironment](api-updateenvironment.md)
 
-- [UpdateExtension](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_UpdateExtension.html)
+- [UpdateExtension](api-updateextension.md)
 
-- [UpdateExtensionAssociation](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_UpdateExtensionAssociation.html)
+- [UpdateExtensionAssociation](api-updateextensionassociation.md)
 
-- [ValidateConfiguration](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_ValidateConfiguration.html)
+- [ValidateConfiguration](api-validateconfiguration.md)
 
 The following actions are supported by AWS AppConfig Data:
 
@@ -98,7 +98,7 @@ The following actions are supported by AWS AppConfig Data:
 
 - [StartConfigurationSession](api-appconfigdata-startconfigurationsession.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Welcome
 

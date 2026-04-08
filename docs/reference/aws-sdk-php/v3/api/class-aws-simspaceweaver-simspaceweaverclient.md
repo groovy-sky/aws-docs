@@ -17,28 +17,28 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2022-10-28**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-simspaceweaver-2022-10-28.html)
+- [**2022-10-28**](api-simspaceweaver-2022-10-28.md)
 
-  - [CreateSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-simspaceweaver-2022-10-28.html#createsnapshot)
-  - [DeleteApp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-simspaceweaver-2022-10-28.html#deleteapp)
-  - [DeleteSimulation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-simspaceweaver-2022-10-28.html#deletesimulation)
-  - [DescribeApp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-simspaceweaver-2022-10-28.html#describeapp)
-  - [DescribeSimulation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-simspaceweaver-2022-10-28.html#describesimulation)
-  - [ListApps](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-simspaceweaver-2022-10-28.html#listapps)
-  - [ListSimulations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-simspaceweaver-2022-10-28.html#listsimulations)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-simspaceweaver-2022-10-28.html#listtagsforresource)
-  - [StartApp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-simspaceweaver-2022-10-28.html#startapp)
-  - [StartClock](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-simspaceweaver-2022-10-28.html#startclock)
-  - [StartSimulation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-simspaceweaver-2022-10-28.html#startsimulation)
-  - [StopApp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-simspaceweaver-2022-10-28.html#stopapp)
-  - [StopClock](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-simspaceweaver-2022-10-28.html#stopclock)
-  - [StopSimulation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-simspaceweaver-2022-10-28.html#stopsimulation)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-simspaceweaver-2022-10-28.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-simspaceweaver-2022-10-28.html#untagresource)
+  - [CreateSnapshot](api-simspaceweaver-2022-10-28-createsnapshot.md)
+  - [DeleteApp](api-simspaceweaver-2022-10-28-deleteapp.md)
+  - [DeleteSimulation](api-simspaceweaver-2022-10-28-deletesimulation.md)
+  - [DescribeApp](api-simspaceweaver-2022-10-28-describeapp.md)
+  - [DescribeSimulation](api-simspaceweaver-2022-10-28-describesimulation.md)
+  - [ListApps](api-simspaceweaver-2022-10-28-listapps.md)
+  - [ListSimulations](api-simspaceweaver-2022-10-28-listsimulations.md)
+  - [ListTagsForResource](api-simspaceweaver-2022-10-28-listtagsforresource.md)
+  - [StartApp](api-simspaceweaver-2022-10-28-startapp.md)
+  - [StartClock](api-simspaceweaver-2022-10-28-startclock.md)
+  - [StartSimulation](api-simspaceweaver-2022-10-28-startsimulation.md)
+  - [StopApp](api-simspaceweaver-2022-10-28-stopapp.md)
+  - [StopClock](api-simspaceweaver-2022-10-28-stopclock.md)
+  - [StopSimulation](api-simspaceweaver-2022-10-28-stopsimulation.md)
+  - [TagResource](api-simspaceweaver-2022-10-28-tagresource.md)
+  - [UntagResource](api-simspaceweaver-2022-10-28-untagresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SimSpaceWeaver.SimSpaceWeaverClient.html\#toc)
+### Table of Contents  [header link](class-aws-simspaceweaver-simspaceweaverclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SimSpaceWeaver.SimSpaceWeaverClient.html\#toc-methods)
+#### Methods  [header link](class-aws-simspaceweaver-simspaceweaverclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -69,7 +69,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SimSpaceWeaver.SimSpaceWeaverClient.html\#methods)
+### Methods  [header link](class-aws-simspaceweaver-simspaceweaverclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -536,7 +536,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SimSpaceWeaver.SimSpaceWeaverClient.html#toc-methods)
+  - [Methods](class-aws-simspaceweaver-simspaceweaverclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -563,4 +563,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SimSpaceWeaver.SimSpaceWeaverClient.html#top)
+[Back To Top](class-aws-simspaceweaver-simspaceweaverclient-top.md)

@@ -17,42 +17,42 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2022-06-23**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html)
+- [**2022-06-23**](api-b2bi-2022-06-23.md)
 
-  - [CreateCapability](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#createcapability)
-  - [CreatePartnership](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#createpartnership)
-  - [CreateProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#createprofile)
-  - [CreateStarterMappingTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#createstartermappingtemplate)
-  - [CreateTransformer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#createtransformer)
-  - [DeleteCapability](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#deletecapability)
-  - [DeletePartnership](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#deletepartnership)
-  - [DeleteProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#deleteprofile)
-  - [DeleteTransformer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#deletetransformer)
-  - [GenerateMapping](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#generatemapping)
-  - [GetCapability](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#getcapability)
-  - [GetPartnership](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#getpartnership)
-  - [GetProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#getprofile)
-  - [GetTransformer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#gettransformer)
-  - [GetTransformerJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#gettransformerjob)
-  - [ListCapabilities](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#listcapabilities)
-  - [ListPartnerships](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#listpartnerships)
-  - [ListProfiles](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#listprofiles)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#listtagsforresource)
-  - [ListTransformers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#listtransformers)
-  - [StartTransformerJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#starttransformerjob)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#tagresource)
-  - [TestConversion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#testconversion)
-  - [TestMapping](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#testmapping)
-  - [TestParsing](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#testparsing)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#untagresource)
-  - [UpdateCapability](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#updatecapability)
-  - [UpdatePartnership](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#updatepartnership)
-  - [UpdateProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#updateprofile)
-  - [UpdateTransformer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-b2bi-2022-06-23.html#updatetransformer)
+  - [CreateCapability](api-b2bi-2022-06-23-createcapability.md)
+  - [CreatePartnership](api-b2bi-2022-06-23-createpartnership.md)
+  - [CreateProfile](api-b2bi-2022-06-23-createprofile.md)
+  - [CreateStarterMappingTemplate](api-b2bi-2022-06-23-createstartermappingtemplate.md)
+  - [CreateTransformer](api-b2bi-2022-06-23-createtransformer.md)
+  - [DeleteCapability](api-b2bi-2022-06-23-deletecapability.md)
+  - [DeletePartnership](api-b2bi-2022-06-23-deletepartnership.md)
+  - [DeleteProfile](api-b2bi-2022-06-23-deleteprofile.md)
+  - [DeleteTransformer](api-b2bi-2022-06-23-deletetransformer.md)
+  - [GenerateMapping](api-b2bi-2022-06-23-generatemapping.md)
+  - [GetCapability](api-b2bi-2022-06-23-getcapability.md)
+  - [GetPartnership](api-b2bi-2022-06-23-getpartnership.md)
+  - [GetProfile](api-b2bi-2022-06-23-getprofile.md)
+  - [GetTransformer](api-b2bi-2022-06-23-gettransformer.md)
+  - [GetTransformerJob](api-b2bi-2022-06-23-gettransformerjob.md)
+  - [ListCapabilities](api-b2bi-2022-06-23-listcapabilities.md)
+  - [ListPartnerships](api-b2bi-2022-06-23-listpartnerships.md)
+  - [ListProfiles](api-b2bi-2022-06-23-listprofiles.md)
+  - [ListTagsForResource](api-b2bi-2022-06-23-listtagsforresource.md)
+  - [ListTransformers](api-b2bi-2022-06-23-listtransformers.md)
+  - [StartTransformerJob](api-b2bi-2022-06-23-starttransformerjob.md)
+  - [TagResource](api-b2bi-2022-06-23-tagresource.md)
+  - [TestConversion](api-b2bi-2022-06-23-testconversion.md)
+  - [TestMapping](api-b2bi-2022-06-23-testmapping.md)
+  - [TestParsing](api-b2bi-2022-06-23-testparsing.md)
+  - [UntagResource](api-b2bi-2022-06-23-untagresource.md)
+  - [UpdateCapability](api-b2bi-2022-06-23-updatecapability.md)
+  - [UpdatePartnership](api-b2bi-2022-06-23-updatepartnership.md)
+  - [UpdateProfile](api-b2bi-2022-06-23-updateprofile.md)
+  - [UpdateTransformer](api-b2bi-2022-06-23-updatetransformer.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.B2bi.B2biClient.html\#toc)
+### Table of Contents  [header link](class-aws-b2bi-b2biclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.B2bi.B2biClient.html\#toc-methods)
+#### Methods  [header link](class-aws-b2bi-b2biclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -83,7 +83,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.B2bi.B2biClient.html\#methods)
+### Methods  [header link](class-aws-b2bi-b2biclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -550,7 +550,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.B2bi.B2biClient.html#toc-methods)
+  - [Methods](class-aws-b2bi-b2biclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -577,4 +577,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.B2bi.B2biClient.html#top)
+[Back To Top](class-aws-b2bi-b2biclient-top.md)

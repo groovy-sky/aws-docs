@@ -4,15 +4,15 @@ Menu
 
 ## Glue
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.glue.html\#toc)
+### Table of Contents  [header link](namespace-aws-glue-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.glue.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-glue-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.glue.exception.html)
+[Exception](namespace-aws-glue-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.glue.html\#toc-classes)
+#### Classes  [header link](namespace-aws-glue-toc-classes.md)
 
-[GlueClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Glue.GlueClient.html)This client is used to interact with the **AWS Glue** service.
+[GlueClient](class-aws-glue-glueclient.md)This client is used to interact with the **AWS Glue** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.glue.html#toc-classes)
+  - [Classes](namespace-aws-glue-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.glue.html#top)
+[Back To Top](namespace-aws-glue-top.md)

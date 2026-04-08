@@ -32,7 +32,7 @@ Set this to `CUSTOM` for a customer managed monitor. Customer managed
 monitors let you select specific dimension values that get monitored in aggregate.
 
 For more information about monitor types, see [Monitor\
-types](https://docs.aws.amazon.com/cost-management/latest/userguide/getting-started-ad.html#monitor-type-def) in the _Billing and Cost Management User Guide_.
+types](../../../../services/cost-management/latest/userguide/getting-started-ad-monitor-type-def.md) in the _Billing and Cost Management User Guide_.
 
 Type: String
 
@@ -115,7 +115,7 @@ Required: No
 
 **MonitorSpecification**
 
-An [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Expression.html)
+An [Expression](api-expression.md)
 object used to control what costs the monitor analyzes for anomalies.
 
 For AWS managed monitors:
@@ -143,7 +143,7 @@ For customer managed monitors:
                           "your cost category key", "Values": [ "your cost category value" ] } }
                           `
 
-Type: [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Expression.html) object
+Type: [Expression](api-expression.md) object
 
 Required: No
 
@@ -151,13 +151,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ce-2017-10-25/AnomalyMonitor)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ce-2017-10-25/anomalymonitor.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ce-2017-10-25/AnomalyMonitor)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ce-2017-10-25/anomalymonitor.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ce-2017-10-25/AnomalyMonitor)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ce-2017-10-25/anomalymonitor.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AnomalyDateInterval
 

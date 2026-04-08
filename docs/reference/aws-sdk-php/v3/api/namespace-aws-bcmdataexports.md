@@ -4,15 +4,15 @@ Menu
 
 ## BCMDataExports
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bcmdataexports.html\#toc)
+### Table of Contents  [header link](namespace-aws-bcmdataexports-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bcmdataexports.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-bcmdataexports-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bcmdataexports.exception.html)
+[Exception](namespace-aws-bcmdataexports-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bcmdataexports.html\#toc-classes)
+#### Classes  [header link](namespace-aws-bcmdataexports-toc-classes.md)
 
-[BCMDataExportsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BCMDataExports.BCMDataExportsClient.html)This client is used to interact with the **AWS Billing and Cost Management Data Exports** service.
+[BCMDataExportsClient](class-aws-bcmdataexports-bcmdataexportsclient.md)This client is used to interact with the **AWS Billing and Cost Management Data Exports** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bcmdataexports.html#toc-classes)
+  - [Classes](namespace-aws-bcmdataexports-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bcmdataexports.html#top)
+[Back To Top](namespace-aws-bcmdataexports-top.md)

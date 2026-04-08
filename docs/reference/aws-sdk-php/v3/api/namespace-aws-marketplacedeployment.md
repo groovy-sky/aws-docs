@@ -4,15 +4,15 @@ Menu
 
 ## MarketplaceDeployment
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.marketplacedeployment.html\#toc)
+### Table of Contents  [header link](namespace-aws-marketplacedeployment-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.marketplacedeployment.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-marketplacedeployment-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.marketplacedeployment.exception.html)
+[Exception](namespace-aws-marketplacedeployment-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.marketplacedeployment.html\#toc-classes)
+#### Classes  [header link](namespace-aws-marketplacedeployment-toc-classes.md)
 
-[MarketplaceDeploymentClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceDeployment.MarketplaceDeploymentClient.html)This client is used to interact with the **AWS Marketplace Deployment Service** service.
+[MarketplaceDeploymentClient](class-aws-marketplacedeployment-marketplacedeploymentclient.md)This client is used to interact with the **AWS Marketplace Deployment Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.marketplacedeployment.html#toc-classes)
+  - [Classes](namespace-aws-marketplacedeployment-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.marketplacedeployment.html#top)
+[Back To Top](namespace-aws-marketplacedeployment-top.md)

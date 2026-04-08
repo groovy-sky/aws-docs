@@ -17,30 +17,30 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-04-28**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsmv2-2017-04-28.html)
+- [**2017-04-28**](api-cloudhsmv2-2017-04-28.md)
 
-  - [CopyBackupToRegion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsmv2-2017-04-28.html#copybackuptoregion)
-  - [CreateCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsmv2-2017-04-28.html#createcluster)
-  - [CreateHsm](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsmv2-2017-04-28.html#createhsm)
-  - [DeleteBackup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsmv2-2017-04-28.html#deletebackup)
-  - [DeleteCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsmv2-2017-04-28.html#deletecluster)
-  - [DeleteHsm](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsmv2-2017-04-28.html#deletehsm)
-  - [DeleteResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsmv2-2017-04-28.html#deleteresourcepolicy)
-  - [DescribeBackups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsmv2-2017-04-28.html#describebackups)
-  - [DescribeClusters](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsmv2-2017-04-28.html#describeclusters)
-  - [GetResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsmv2-2017-04-28.html#getresourcepolicy)
-  - [InitializeCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsmv2-2017-04-28.html#initializecluster)
-  - [ListTags](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsmv2-2017-04-28.html#listtags)
-  - [ModifyBackupAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsmv2-2017-04-28.html#modifybackupattributes)
-  - [ModifyCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsmv2-2017-04-28.html#modifycluster)
-  - [PutResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsmv2-2017-04-28.html#putresourcepolicy)
-  - [RestoreBackup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsmv2-2017-04-28.html#restorebackup)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsmv2-2017-04-28.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cloudhsmv2-2017-04-28.html#untagresource)
+  - [CopyBackupToRegion](api-cloudhsmv2-2017-04-28-copybackuptoregion.md)
+  - [CreateCluster](api-cloudhsmv2-2017-04-28-createcluster.md)
+  - [CreateHsm](api-cloudhsmv2-2017-04-28-createhsm.md)
+  - [DeleteBackup](api-cloudhsmv2-2017-04-28-deletebackup.md)
+  - [DeleteCluster](api-cloudhsmv2-2017-04-28-deletecluster.md)
+  - [DeleteHsm](api-cloudhsmv2-2017-04-28-deletehsm.md)
+  - [DeleteResourcePolicy](api-cloudhsmv2-2017-04-28-deleteresourcepolicy.md)
+  - [DescribeBackups](api-cloudhsmv2-2017-04-28-describebackups.md)
+  - [DescribeClusters](api-cloudhsmv2-2017-04-28-describeclusters.md)
+  - [GetResourcePolicy](api-cloudhsmv2-2017-04-28-getresourcepolicy.md)
+  - [InitializeCluster](api-cloudhsmv2-2017-04-28-initializecluster.md)
+  - [ListTags](api-cloudhsmv2-2017-04-28-listtags.md)
+  - [ModifyBackupAttributes](api-cloudhsmv2-2017-04-28-modifybackupattributes.md)
+  - [ModifyCluster](api-cloudhsmv2-2017-04-28-modifycluster.md)
+  - [PutResourcePolicy](api-cloudhsmv2-2017-04-28-putresourcepolicy.md)
+  - [RestoreBackup](api-cloudhsmv2-2017-04-28-restorebackup.md)
+  - [TagResource](api-cloudhsmv2-2017-04-28-tagresource.md)
+  - [UntagResource](api-cloudhsmv2-2017-04-28-untagresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudHSMV2.CloudHSMV2Client.html\#toc)
+### Table of Contents  [header link](class-aws-cloudhsmv2-cloudhsmv2client-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudHSMV2.CloudHSMV2Client.html\#toc-methods)
+#### Methods  [header link](class-aws-cloudhsmv2-cloudhsmv2client-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -71,7 +71,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudHSMV2.CloudHSMV2Client.html\#methods)
+### Methods  [header link](class-aws-cloudhsmv2-cloudhsmv2client-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -538,7 +538,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudHSMV2.CloudHSMV2Client.html#toc-methods)
+  - [Methods](class-aws-cloudhsmv2-cloudhsmv2client-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -565,4 +565,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudHSMV2.CloudHSMV2Client.html#top)
+[Back To Top](class-aws-cloudhsmv2-cloudhsmv2client-top.md)

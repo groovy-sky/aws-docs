@@ -1,9 +1,9 @@
 # RejectDomainTransferFromAnotherAwsAccount
 
 Rejects the transfer of a domain from another AWS account to the
-current AWS account. You initiate a transfer betweenAWS accounts using [TransferDomainToAnotherAwsAccount](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_TransferDomainToAnotherAwsAccount.html).
+current AWS account. You initiate a transfer betweenAWS accounts using [TransferDomainToAnotherAwsAccount](api-domains-transferdomaintoanotherawsaccount.md).
 
-Use either [ListOperations](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_ListOperations.html) or [GetOperationDetail](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_GetOperationDetail.html) to determine whether the operation succeeded. [GetOperationDetail](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_GetOperationDetail.html) provides additional information, for example,
+Use either [ListOperations](api-domains-listoperations.md) or [GetOperationDetail](api-domains-getoperationdetail.md) to determine whether the operation succeeded. [GetOperationDetail](api-domains-getoperationdetail.md) provides additional information, for example,
 `Domain Transfer from Aws Account 111122223333 has been cancelled`.
 
 ## Request Syntax
@@ -24,7 +24,7 @@ The request accepts the following data in JSON format.
 **[DomainName](#API_domains_RejectDomainTransferFromAnotherAwsAccount_RequestSyntax)**
 
 The name of the domain that was specified when another AWS account
-submitted a [TransferDomainToAnotherAwsAccount](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_TransferDomainToAnotherAwsAccount.html) request.
+submitted a [TransferDomainToAnotherAwsAccount](api-domains-transferdomaintoanotherawsaccount.md) request.
 
 Type: String
 
@@ -140,27 +140,27 @@ Content-Length:[number of characters in the JSON string]
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/route53domains-2014-05-15/RejectDomainTransferFromAnotherAwsAccount)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53domains-2014-05-15/rejectdomaintransferfromanotherawsaccount.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/route53domains-2014-05-15/RejectDomainTransferFromAnotherAwsAccount)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53domains-2014-05-15/rejectdomaintransferfromanotherawsaccount.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53domains-2014-05-15/RejectDomainTransferFromAnotherAwsAccount)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53domains-2014-05-15/rejectdomaintransferfromanotherawsaccount.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/route53domains-2014-05-15/RejectDomainTransferFromAnotherAwsAccount)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53domains-2014-05-15/rejectdomaintransferfromanotherawsaccount.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53domains-2014-05-15/RejectDomainTransferFromAnotherAwsAccount)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53domains-2014-05-15/rejectdomaintransferfromanotherawsaccount.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/route53domains-2014-05-15/RejectDomainTransferFromAnotherAwsAccount)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53domains-2014-05-15/rejectdomaintransferfromanotherawsaccount.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/route53domains-2014-05-15/RejectDomainTransferFromAnotherAwsAccount)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53domains-2014-05-15/rejectdomaintransferfromanotherawsaccount.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/route53domains-2014-05-15/RejectDomainTransferFromAnotherAwsAccount)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53domains-2014-05-15/rejectdomaintransferfromanotherawsaccount.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/route53domains-2014-05-15/RejectDomainTransferFromAnotherAwsAccount)
+- [AWS SDK for Python](../../../../services/goto/boto3/route53domains-2014-05-15/rejectdomaintransferfromanotherawsaccount.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53domains-2014-05-15/RejectDomainTransferFromAnotherAwsAccount)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53domains-2014-05-15/rejectdomaintransferfromanotherawsaccount.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 RegisterDomain
 

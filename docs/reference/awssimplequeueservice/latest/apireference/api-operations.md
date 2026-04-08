@@ -2,13 +2,13 @@
 
 The following actions are supported:
 
-- [AddPermission](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_AddPermission.html)
+- [AddPermission](api-addpermission.md)
 
-- [CancelMessageMoveTask](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CancelMessageMoveTask.html)
+- [CancelMessageMoveTask](api-cancelmessagemovetask.md)
 
 - [ChangeMessageVisibility](api-changemessagevisibility.md)
 
-- [ChangeMessageVisibilityBatch](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ChangeMessageVisibilityBatch.html)
+- [ChangeMessageVisibilityBatch](api-changemessagevisibilitybatch.md)
 
 - [CreateQueue](api-createqueue.md)
 
@@ -16,25 +16,25 @@ The following actions are supported:
 
 - [DeleteMessageBatch](api-deletemessagebatch.md)
 
-- [DeleteQueue](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_DeleteQueue.html)
+- [DeleteQueue](api-deletequeue.md)
 
 - [GetQueueAttributes](api-getqueueattributes.md)
 
-- [GetQueueUrl](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueUrl.html)
+- [GetQueueUrl](api-getqueueurl.md)
 
-- [ListDeadLetterSourceQueues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ListDeadLetterSourceQueues.html)
+- [ListDeadLetterSourceQueues](api-listdeadlettersourcequeues.md)
 
-- [ListMessageMoveTasks](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ListMessageMoveTasks.html)
+- [ListMessageMoveTasks](api-listmessagemovetasks.md)
 
-- [ListQueues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ListQueues.html)
+- [ListQueues](api-listqueues.md)
 
-- [ListQueueTags](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_ListQueueTags.html)
+- [ListQueueTags](api-listqueuetags.md)
 
-- [PurgeQueue](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_PurgeQueue.html)
+- [PurgeQueue](api-purgequeue.md)
 
 - [ReceiveMessage](api-receivemessage.md)
 
-- [RemovePermission](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_RemovePermission.html)
+- [RemovePermission](api-removepermission.md)
 
 - [SendMessage](api-sendmessage.md)
 
@@ -42,13 +42,13 @@ The following actions are supported:
 
 - [SetQueueAttributes](api-setqueueattributes.md)
 
-- [StartMessageMoveTask](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_StartMessageMoveTask.html)
+- [StartMessageMoveTask](api-startmessagemovetask.md)
 
-- [TagQueue](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_TagQueue.html)
+- [TagQueue](api-tagqueue.md)
 
-- [UntagQueue](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_UntagQueue.html)
+- [UntagQueue](api-untagqueue.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Welcome
 

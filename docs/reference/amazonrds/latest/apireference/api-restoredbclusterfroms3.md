@@ -215,7 +215,7 @@ Specify the Active Directory directory ID to restore the DB cluster in.
 The domain must be created prior to this operation.
 
 For Amazon Aurora DB clusters, Amazon RDS can use Kerberos Authentication to authenticate users that connect to the DB cluster.
-For more information, see [Kerberos Authentication](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/kerberos-authentication.html)
+For more information, see [Kerberos Authentication](../../../../services/amazonrds/latest/aurorauserguide/kerberos-authentication.md)
 in the _Amazon Aurora User Guide_.
 
 Type: String
@@ -481,7 +481,7 @@ Contains the scaling configuration of an Aurora Serverless v2 DB cluster.
 For more information, see [Using Amazon Aurora Serverless v2](../../../../services/amazonrds/latest/aurorauserguide/aurora-serverless-v2.md) in the
 _Amazon Aurora User Guide_.
 
-Type: [ServerlessV2ScalingConfiguration](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ServerlessV2ScalingConfiguration.html) object
+Type: [ServerlessV2ScalingConfiguration](api-serverlessv2scalingconfiguration.md) object
 
 Required: No
 
@@ -564,7 +564,7 @@ For more information on Amazon Aurora DB clusters, see
 For more information on Multi-AZ DB clusters, see
 [Multi-AZ deployments with two readable standby DB instances](../../../../services/amazonrds/latest/userguide/multi-az-db-clusters-concepts.md) in the _Amazon RDS User Guide._
 
-Type: [DBCluster](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBCluster.html) object
+Type: [DBCluster](api-dbcluster.md) object
 
 ## Errors
 
@@ -750,27 +750,27 @@ https://rds.us-east-1.amazonaws.com/
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/rds-2014-10-31/RestoreDBClusterFromS3)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/rds-2014-10-31/restoredbclusterfroms3.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/rds-2014-10-31/RestoreDBClusterFromS3)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/rds-2014-10-31/restoredbclusterfroms3.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/RestoreDBClusterFromS3)
+- [AWS SDK for C++](../../../goto/sdkforcpp/rds-2014-10-31/restoredbclusterfroms3.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/rds-2014-10-31/RestoreDBClusterFromS3)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/rds-2014-10-31/restoredbclusterfroms3.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/RestoreDBClusterFromS3)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/rds-2014-10-31/restoredbclusterfroms3.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/rds-2014-10-31/RestoreDBClusterFromS3)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/rds-2014-10-31/restoredbclusterfroms3.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/rds-2014-10-31/RestoreDBClusterFromS3)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/rds-2014-10-31/restoredbclusterfroms3.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/rds-2014-10-31/RestoreDBClusterFromS3)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/rds-2014-10-31/restoredbclusterfroms3.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/RestoreDBClusterFromS3)
+- [AWS SDK for Python](../../../../services/goto/boto3/rds-2014-10-31/restoredbclusterfroms3.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/RestoreDBClusterFromS3)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/restoredbclusterfroms3.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ResetDBParameterGroup
 

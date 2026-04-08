@@ -4,15 +4,15 @@ Menu
 
 ## GeoMaps
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.geomaps.html\#toc)
+### Table of Contents  [header link](namespace-aws-geomaps-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.geomaps.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-geomaps-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.geomaps.exception.html)
+[Exception](namespace-aws-geomaps-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.geomaps.html\#toc-classes)
+#### Classes  [header link](namespace-aws-geomaps-toc-classes.md)
 
-[GeoMapsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GeoMaps.GeoMapsClient.html)This client is used to interact with the **Amazon Location Service Maps V2** service.
+[GeoMapsClient](class-aws-geomaps-geomapsclient.md)This client is used to interact with the **Amazon Location Service Maps V2** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.geomaps.html#toc-classes)
+  - [Classes](namespace-aws-geomaps-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.geomaps.html#top)
+[Back To Top](namespace-aws-geomaps-top.md)

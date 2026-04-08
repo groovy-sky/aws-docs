@@ -101,21 +101,21 @@ Public and private hosted zones
 
 - [CreateHostedZone](api-createhostedzone.md)
 
-- [DeleteHostedZone](https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteHostedZone.html)
+- [DeleteHostedZone](api-deletehostedzone.md)
 
 - [GetHostedZone](api-gethostedzone.md)
 
-- [GetHostedZoneCount](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetHostedZoneCount.html)
+- [GetHostedZoneCount](api-gethostedzonecount.md)
 
 - [ListHostedZones](api-listhostedzones.md)
 
-- [ListHostedZonesByName](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListHostedZonesByName.html)
+- [ListHostedZonesByName](api-listhostedzonesbyname.md)
 
-- [UpdateHostedZoneComment](https://docs.aws.amazon.com/Route53/latest/APIReference/API_UpdateHostedZoneComment.html)
+- [UpdateHostedZoneComment](api-updatehostedzonecomment.md)
 
 Public hosted zones
 
-- [TestDNSAnswer](https://docs.aws.amazon.com/Route53/latest/APIReference/API_TestDNSAnswer.html)
+- [TestDNSAnswer](api-testdnsanswer.md)
 
 Private hosted zones
 
@@ -129,7 +129,7 @@ Private hosted zones
 
 - [ListHostedZonesByVPC](api-listhostedzonesbyvpc.md)
 
-- [ListVPCAssociationAuthorizations](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListVPCAssociationAuthorizations.html)
+- [ListVPCAssociationAuthorizations](api-listvpcassociationauthorizations.md)
 
 Resource record sets
 
@@ -137,406 +137,406 @@ Resource record sets
 
 - [GetChange](api-getchange.md)
 
-- [ListResourceRecordSets](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListResourceRecordSets.html)
+- [ListResourceRecordSets](api-listresourcerecordsets.md)
 
-- [GetGeoLocation](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetGeoLocation.html)
+- [GetGeoLocation](api-getgeolocation.md)
 
-- [ListGeoLocations](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListGeoLocations.html)
+- [ListGeoLocations](api-listgeolocations.md)
 
 Public DNS query logs
 
-- [CreateQueryLoggingConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateQueryLoggingConfig.html)
+- [CreateQueryLoggingConfig](api-createqueryloggingconfig.md)
 
-- [DeleteQueryLoggingConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteQueryLoggingConfig.html)
+- [DeleteQueryLoggingConfig](api-deletequeryloggingconfig.md)
 
-- [GetQueryLoggingConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetQueryLoggingConfig.html)
+- [GetQueryLoggingConfig](api-getqueryloggingconfig.md)
 
-- [ListQueryLoggingConfigs](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListQueryLoggingConfigs.html)
+- [ListQueryLoggingConfigs](api-listqueryloggingconfigs.md)
 
 Reusable delegation sets
 
 - [CreateReusableDelegationSet](api-createreusabledelegationset.md)
 
-- [DeleteReusableDelegationSet](https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteReusableDelegationSet.html)
+- [DeleteReusableDelegationSet](api-deletereusabledelegationset.md)
 
-- [GetReusableDelegationSet](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetReusableDelegationSet.html)
+- [GetReusableDelegationSet](api-getreusabledelegationset.md)
 
-- [ListReusableDelegationSets](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListReusableDelegationSets.html)
+- [ListReusableDelegationSets](api-listreusabledelegationsets.md)
 
 **DNS—Traffic flow**
 
 Traffic policies
 
-- [CreateTrafficPolicy](https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateTrafficPolicy.html)
+- [CreateTrafficPolicy](api-createtrafficpolicy.md)
 
-- [CreateTrafficPolicyVersion](https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateTrafficPolicyVersion.html)
+- [CreateTrafficPolicyVersion](api-createtrafficpolicyversion.md)
 
-- [DeleteTrafficPolicy](https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteTrafficPolicy.html)
+- [DeleteTrafficPolicy](api-deletetrafficpolicy.md)
 
-- [GetTrafficPolicy](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetTrafficPolicy.html)
+- [GetTrafficPolicy](api-gettrafficpolicy.md)
 
-- [ListTrafficPolicies](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListTrafficPolicies.html)
+- [ListTrafficPolicies](api-listtrafficpolicies.md)
 
-- [ListTrafficPolicyVersions](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListTrafficPolicyVersions.html)
+- [ListTrafficPolicyVersions](api-listtrafficpolicyversions.md)
 
-- [UpdateTrafficPolicyComment](https://docs.aws.amazon.com/Route53/latest/APIReference/API_UpdateTrafficPolicyComment.html)
+- [UpdateTrafficPolicyComment](api-updatetrafficpolicycomment.md)
 
 Traffic policy instances
 
-- [CreateTrafficPolicyInstance](https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateTrafficPolicyInstance.html)
+- [CreateTrafficPolicyInstance](api-createtrafficpolicyinstance.md)
 
-- [DeleteTrafficPolicyInstance](https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteTrafficPolicyInstance.html)
+- [DeleteTrafficPolicyInstance](api-deletetrafficpolicyinstance.md)
 
-- [GetTrafficPolicyInstance](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetTrafficPolicyInstance.html)
+- [GetTrafficPolicyInstance](api-gettrafficpolicyinstance.md)
 
-- [GetTrafficPolicyInstanceCount](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetTrafficPolicyInstanceCount.html)
+- [GetTrafficPolicyInstanceCount](api-gettrafficpolicyinstancecount.md)
 
-- [ListTrafficPolicyInstances](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListTrafficPolicyInstances.html)
+- [ListTrafficPolicyInstances](api-listtrafficpolicyinstances.md)
 
-- [ListTrafficPolicyInstancesByHostedZone](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListTrafficPolicyInstancesByHostedZone.html)
+- [ListTrafficPolicyInstancesByHostedZone](api-listtrafficpolicyinstancesbyhostedzone.md)
 
-- [ListTrafficPolicyInstancesByPolicy](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListTrafficPolicyInstancesByPolicy.html)
+- [ListTrafficPolicyInstancesByPolicy](api-listtrafficpolicyinstancesbypolicy.md)
 
-- [UpdateTrafficPolicyInstance](https://docs.aws.amazon.com/Route53/latest/APIReference/API_UpdateTrafficPolicyInstance.html)
+- [UpdateTrafficPolicyInstance](api-updatetrafficpolicyinstance.md)
 
 **Domain registration**
 
 Register, renew, and transfer domains
 
-- [RegisterDomain](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_RegisterDomain.html)
+- [RegisterDomain](api-domains-registerdomain.md)
 
-- [RenewDomain](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_RenewDomain.html)
+- [RenewDomain](api-domains-renewdomain.md)
 
-- [ResendContactReachabilityEmail](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_ResendContactReachabilityEmail.html)
+- [ResendContactReachabilityEmail](api-domains-resendcontactreachabilityemail.md)
 
-- [RetrieveDomainAuthCode](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_RetrieveDomainAuthCode.html)
+- [RetrieveDomainAuthCode](api-domains-retrievedomainauthcode.md)
 
-- [TransferDomain](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_TransferDomain.html)
+- [TransferDomain](api-domains-transferdomain.md)
 
-- [DeleteDomain](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_DeleteDomain.html)
+- [DeleteDomain](api-domains-deletedomain.md)
 
-- [PushDomain](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_PushDomain.html)
+- [PushDomain](api-domains-pushdomain.md)
 
-- [ResendOperationAuthorization](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_ResendOperationAuthorization.html)
+- [ResendOperationAuthorization](api-domains-resendoperationauthorization.md)
 
 Transfer domains between AWS accounts
 
-- [AcceptDomainTransferFromAnotherAwsAccount](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_AcceptDomainTransferFromAnotherAwsAccount.html)
+- [AcceptDomainTransferFromAnotherAwsAccount](api-domains-acceptdomaintransferfromanotherawsaccount.md)
 
-- [CancelDomainTransferToAnotherAwsAccount](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_CancelDomainTransferToAnotherAwsAccount.html)
+- [CancelDomainTransferToAnotherAwsAccount](api-domains-canceldomaintransfertoanotherawsaccount.md)
 
-- [RejectDomainTransferFromAnotherAwsAccount](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_RejectDomainTransferFromAnotherAwsAccount.html)
+- [RejectDomainTransferFromAnotherAwsAccount](api-domains-rejectdomaintransferfromanotherawsaccount.md)
 
-- [TransferDomainToAnotherAwsAccount](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_TransferDomainToAnotherAwsAccount.html)
+- [TransferDomainToAnotherAwsAccount](api-domains-transferdomaintoanotherawsaccount.md)
 
 Get domain information
 
-- [CheckDomainAvailability](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_CheckDomainAvailability.html)
+- [CheckDomainAvailability](api-domains-checkdomainavailability.md)
 
-- [CheckDomainTransferability](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_CheckDomainTransferability.html)
+- [CheckDomainTransferability](api-domains-checkdomaintransferability.md)
 
-- [GetContactReachabilityStatus](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_GetContactReachabilityStatus.html)
+- [GetContactReachabilityStatus](api-domains-getcontactreachabilitystatus.md)
 
 - [GetDomainDetail](api-domains-getdomaindetail.md)
 
-- [GetDomainSuggestions](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_GetDomainSuggestions.html)
+- [GetDomainSuggestions](api-domains-getdomainsuggestions.md)
 
-- [GetOperationDetail](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_GetOperationDetail.html)
+- [GetOperationDetail](api-domains-getoperationdetail.md)
 
-- [ListDomains](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_ListDomains.html)
+- [ListDomains](api-domains-listdomains.md)
 
-- [ListOperations](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_ListOperations.html)
+- [ListOperations](api-domains-listoperations.md)
 
-- [ListPrices](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_ListPrices.html)
+- [ListPrices](api-domains-listprices.md)
 
-- [ViewBilling](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_ViewBilling.html)
+- [ViewBilling](api-domains-viewbilling.md)
 
 Change domain settings
 
-- [DisableDomainAutoRenew](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_DisableDomainAutoRenew.html)
+- [DisableDomainAutoRenew](api-domains-disabledomainautorenew.md)
 
-- [DisableDomainTransferLock](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_DisableDomainTransferLock.html)
+- [DisableDomainTransferLock](api-domains-disabledomaintransferlock.md)
 
-- [EnableDomainAutoRenew](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_EnableDomainAutoRenew.html)
+- [EnableDomainAutoRenew](api-domains-enabledomainautorenew.md)
 
-- [EnableDomainTransferLock](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_EnableDomainTransferLock.html)
+- [EnableDomainTransferLock](api-domains-enabledomaintransferlock.md)
 
-- [UpdateDomainContact](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_UpdateDomainContact.html)
+- [UpdateDomainContact](api-domains-updatedomaincontact.md)
 
-- [UpdateDomainContactPrivacy](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_UpdateDomainContactPrivacy.html)
+- [UpdateDomainContactPrivacy](api-domains-updatedomaincontactprivacy.md)
 
-- [UpdateDomainNameservers](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_UpdateDomainNameservers.html)
+- [UpdateDomainNameservers](api-domains-updatedomainnameservers.md)
 
 **DNS—DNSSEC**
 
 DNSSEC signing
 
-- [ActivateKeySigningKey](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ActivateKeySigningKey.html)
+- [ActivateKeySigningKey](api-activatekeysigningkey.md)
 
-- [CreateKeySigningKey](https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateKeySigningKey.html)
+- [CreateKeySigningKey](api-createkeysigningkey.md)
 
-- [DeactivateKeySigningKey](https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeactivateKeySigningKey.html)
+- [DeactivateKeySigningKey](api-deactivatekeysigningkey.md)
 
-- [GetDNSSEC](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetDNSSEC.html)
+- [GetDNSSEC](api-getdnssec.md)
 
-- [AssociateDelegationSignerToDomain](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_AssociateDelegationSignerToDomain.html)
+- [AssociateDelegationSignerToDomain](api-domains-associatedelegationsignertodomain.md)
 
-- [DisassociateDelegationSignerFromDomain](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_DisassociateDelegationSignerFromDomain.html)
+- [DisassociateDelegationSignerFromDomain](api-domains-disassociatedelegationsignerfromdomain.md)
 
 DNSSEC validation
 
-- [GetResolverDnssecConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetResolverDnssecConfig.html)
+- [GetResolverDnssecConfig](api-route53resolver-getresolverdnssecconfig.md)
 
-- [ListResolverDnssecConfigs](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListResolverDnssecConfigs.html)
+- [ListResolverDnssecConfigs](api-route53resolver-listresolverdnssecconfigs.md)
 
-- [UpdateResolverDnssecConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_UpdateResolverDnssecConfig.html)
+- [UpdateResolverDnssecConfig](api-route53resolver-updateresolverdnssecconfig.md)
 
 **DNS—IP-based routing**
 
-- [ChangeCidrCollection](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ChangeCidrCollection.html)
+- [ChangeCidrCollection](api-changecidrcollection.md)
 
-- [CreateCidrCollection](https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateCidrCollection.html)
+- [CreateCidrCollection](api-createcidrcollection.md)
 
-- [DeleteCidrCollection](https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteCidrCollection.html)
+- [DeleteCidrCollection](api-deletecidrcollection.md)
 
-- [ListCidrBlocks](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListCidrBlocks.html)
+- [ListCidrBlocks](api-listcidrblocks.md)
 
-- [ListCidrCollections](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListCidrCollections.html)
+- [ListCidrCollections](api-listcidrcollections.md)
 
-- [ListCidrLocations](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListCidrLocations.html)
+- [ListCidrLocations](api-listcidrlocations.md)
 
 **Health checking**
 
 Health checks
 
-- [CreateHealthCheck](https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateHealthCheck.html)
+- [CreateHealthCheck](api-createhealthcheck.md)
 
-- [DeleteHealthCheck](https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteHealthCheck.html)
+- [DeleteHealthCheck](api-deletehealthcheck.md)
 
-- [GetHealthCheck](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetHealthCheck.html)
+- [GetHealthCheck](api-gethealthcheck.md)
 
-- [GetHealthCheckCount](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetHealthCheckCount.html)
+- [GetHealthCheckCount](api-gethealthcheckcount.md)
 
-- [GetHealthCheckLastFailureReason](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetHealthCheckLastFailureReason.html)
+- [GetHealthCheckLastFailureReason](api-gethealthchecklastfailurereason.md)
 
-- [GetHealthCheckStatus](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetHealthCheckStatus.html)
+- [GetHealthCheckStatus](api-gethealthcheckstatus.md)
 
-- [ListHealthChecks](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListHealthChecks.html)
+- [ListHealthChecks](api-listhealthchecks.md)
 
-- [UpdateHealthCheck](https://docs.aws.amazon.com/Route53/latest/APIReference/API_UpdateHealthCheck.html)
+- [UpdateHealthCheck](api-updatehealthcheck.md)
 
 Health checker IP ranges
 
-- [GetCheckerIpRanges](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetCheckerIpRanges.html)
+- [GetCheckerIpRanges](api-getcheckeripranges.md)
 
 **Limits (quotas) for**
 **accounts, hosted zones, and reusable delegation sets**
 
-- [GetAccountLimit](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetAccountLimit.html)
+- [GetAccountLimit](api-getaccountlimit.md)
 
-- [GetHostedZoneLimit](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetHostedZoneLimit.html)
+- [GetHostedZoneLimit](api-gethostedzonelimit.md)
 
-- [GetReusableDelegationSetLimit](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetReusableDelegationSetLimit.html)
+- [GetReusableDelegationSetLimit](api-getreusabledelegationsetlimit.md)
 
 **Route 53 profiles**
 
 Route 53 profiles
 
-- [CreateProfile](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53profiles_CreateProfile.html)
+- [CreateProfile](api-route53profiles-createprofile.md)
 
-- [DeleteProfile](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53profiles_DeleteProfile.html)
+- [DeleteProfile](api-route53profiles-deleteprofile.md)
 
-- [GetProfile](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53profiles_GetProfile.html)
+- [GetProfile](api-route53profiles-getprofile.md)
 
-- [ListProfiles](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53profiles_ListProfiles.html)
+- [ListProfiles](api-route53profiles-listprofiles.md)
 
 Profile VPC associations
 
-- [AssociateProfile](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53profiles_AssociateProfile.html)
+- [AssociateProfile](api-route53profiles-associateprofile.md)
 
-- [DisassociateProfile](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53profiles_DisassociateProfile.html)
+- [DisassociateProfile](api-route53profiles-disassociateprofile.md)
 
-- [GetProfileAssociation](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53profiles_GetProfileAssociation.html)
+- [GetProfileAssociation](api-route53profiles-getprofileassociation.md)
 
-- [ListProfileAssociations](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53profiles_ListProfileAssociations.html)
+- [ListProfileAssociations](api-route53profiles-listprofileassociations.md)
 
 Profile resource associations
 
-- [AssociateResourceToProfile](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53profiles_AssociateResourceToProfile.html)
+- [AssociateResourceToProfile](api-route53profiles-associateresourcetoprofile.md)
 
-- [DisassociateResourceFromProfile](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53profiles_DisassociateResourceFromProfile.html)
+- [DisassociateResourceFromProfile](api-route53profiles-disassociateresourcefromprofile.md)
 
-- [GetProfileResourceAssociation](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53profiles_GetProfileResourceAssociation.html)
+- [GetProfileResourceAssociation](api-route53profiles-getprofileresourceassociation.md)
 
 - [ListProfileResourceAssociations](api-route53profiles-listprofileresourceassociations.md)
 
-- [UpdateProfileResourceAssociation](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53profiles_UpdateProfileResourceAssociation.html)
+- [UpdateProfileResourceAssociation](api-route53profiles-updateprofileresourceassociation.md)
 
 **Route 53 Resolver**
 
 Route 53 Resolver endpoints
 
-- [AssociateResolverEndpointIpAddress](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_AssociateResolverEndpointIpAddress.html)
+- [AssociateResolverEndpointIpAddress](api-route53resolver-associateresolverendpointipaddress.md)
 
 - [CreateResolverEndpoint](api-route53resolver-createresolverendpoint.md)
 
-- [DeleteResolverEndpoint](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_DeleteResolverEndpoint.html)
+- [DeleteResolverEndpoint](api-route53resolver-deleteresolverendpoint.md)
 
-- [DisassociateResolverEndpointIpAddress](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_DisassociateResolverEndpointIpAddress.html)
+- [DisassociateResolverEndpointIpAddress](api-route53resolver-disassociateresolverendpointipaddress.md)
 
-- [GetResolverEndpoint](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetResolverEndpoint.html)
+- [GetResolverEndpoint](api-route53resolver-getresolverendpoint.md)
 
-- [ListResolverEndpointIpAddresses](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListResolverEndpointIpAddresses.html)
+- [ListResolverEndpointIpAddresses](api-route53resolver-listresolverendpointipaddresses.md)
 
-- [ListResolverEndpoints](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListResolverEndpoints.html)
+- [ListResolverEndpoints](api-route53resolver-listresolverendpoints.md)
 
-- [UpdateResolverEndpoint](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_UpdateResolverEndpoint.html)
+- [UpdateResolverEndpoint](api-route53resolver-updateresolverendpoint.md)
 
 DNS query logs
 
-- [AssociateResolverQueryLogConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_AssociateResolverQueryLogConfig.html)
+- [AssociateResolverQueryLogConfig](api-route53resolver-associateresolverquerylogconfig.md)
 
-- [CreateResolverQueryLogConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_CreateResolverQueryLogConfig.html)
+- [CreateResolverQueryLogConfig](api-route53resolver-createresolverquerylogconfig.md)
 
-- [DeleteResolverQueryLogConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_DeleteResolverQueryLogConfig.html)
+- [DeleteResolverQueryLogConfig](api-route53resolver-deleteresolverquerylogconfig.md)
 
-- [DisassociateResolverQueryLogConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_DisassociateResolverQueryLogConfig.html)
+- [DisassociateResolverQueryLogConfig](api-route53resolver-disassociateresolverquerylogconfig.md)
 
-- [GetResolverQueryLogConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetResolverQueryLogConfig.html)
+- [GetResolverQueryLogConfig](api-route53resolver-getresolverquerylogconfig.md)
 
-- [GetResolverQueryLogConfigAssociation](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetResolverQueryLogConfigAssociation.html)
+- [GetResolverQueryLogConfigAssociation](api-route53resolver-getresolverquerylogconfigassociation.md)
 
-- [GetResolverQueryLogConfigPolicy](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetResolverQueryLogConfigPolicy.html)
+- [GetResolverQueryLogConfigPolicy](api-route53resolver-getresolverquerylogconfigpolicy.md)
 
-- [ListResolverQueryLogConfigAssociations](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListResolverQueryLogConfigAssociations.html)
+- [ListResolverQueryLogConfigAssociations](api-route53resolver-listresolverquerylogconfigassociations.md)
 
-- [ListResolverQueryLogConfigs](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListResolverQueryLogConfigs.html)
+- [ListResolverQueryLogConfigs](api-route53resolver-listresolverquerylogconfigs.md)
 
-- [PutResolverQueryLogConfigPolicy](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_PutResolverQueryLogConfigPolicy.html)
+- [PutResolverQueryLogConfigPolicy](api-route53resolver-putresolverquerylogconfigpolicy.md)
 
 Route 53 Resolver rules
 
 - [AssociateResolverRule](api-route53resolver-associateresolverrule.md)
 
-- [CreateResolverRule](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_CreateResolverRule.html)
+- [CreateResolverRule](api-route53resolver-createresolverrule.md)
 
-- [DeleteResolverRule](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_DeleteResolverRule.html)
+- [DeleteResolverRule](api-route53resolver-deleteresolverrule.md)
 
-- [DisassociateResolverRule](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_DisassociateResolverRule.html)
+- [DisassociateResolverRule](api-route53resolver-disassociateresolverrule.md)
 
-- [GetResolverRule](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetResolverRule.html)
+- [GetResolverRule](api-route53resolver-getresolverrule.md)
 
-- [GetResolverRuleAssociation](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetResolverRuleAssociation.html)
+- [GetResolverRuleAssociation](api-route53resolver-getresolverruleassociation.md)
 
-- [GetResolverRulePolicy](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetResolverRulePolicy.html)
+- [GetResolverRulePolicy](api-route53resolver-getresolverrulepolicy.md)
 
-- [ListResolverRuleAssociations](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListResolverRuleAssociations.html)
+- [ListResolverRuleAssociations](api-route53resolver-listresolverruleassociations.md)
 
-- [ListResolverRules](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListResolverRules.html)
+- [ListResolverRules](api-route53resolver-listresolverrules.md)
 
 - [PutResolverRulePolicy](api-route53resolver-putresolverrulepolicy.md)
 
-- [UpdateResolverRule](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_UpdateResolverRule.html)
+- [UpdateResolverRule](api-route53resolver-updateresolverrule.md)
 
 Route 53 Resolver DNS Firewall
 
-- [AssociateFirewallRuleGroup](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_AssociateFirewallRuleGroup.html)
+- [AssociateFirewallRuleGroup](api-route53resolver-associatefirewallrulegroup.md)
 
-- [CreateFirewallDomainList](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_CreateFirewallDomainList.html)
+- [CreateFirewallDomainList](api-route53resolver-createfirewalldomainlist.md)
 
-- [CreateFirewallRule](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_CreateFirewallRule.html)
+- [CreateFirewallRule](api-route53resolver-createfirewallrule.md)
 
-- [CreateFirewallRuleGroup](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_CreateFirewallRuleGroup.html)
+- [CreateFirewallRuleGroup](api-route53resolver-createfirewallrulegroup.md)
 
-- [DeleteFirewallDomainList](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_DeleteFirewallDomainList.html)
+- [DeleteFirewallDomainList](api-route53resolver-deletefirewalldomainlist.md)
 
-- [DeleteFirewallRule](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_DeleteFirewallRule.html)
+- [DeleteFirewallRule](api-route53resolver-deletefirewallrule.md)
 
-- [DeleteFirewallRuleGroup](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_DeleteFirewallRuleGroup.html)
+- [DeleteFirewallRuleGroup](api-route53resolver-deletefirewallrulegroup.md)
 
-- [DisassociateFirewallRuleGroup](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_DisassociateFirewallRuleGroup.html)
+- [DisassociateFirewallRuleGroup](api-route53resolver-disassociatefirewallrulegroup.md)
 
-- [GetFirewallConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetFirewallConfig.html)
+- [GetFirewallConfig](api-route53resolver-getfirewallconfig.md)
 
-- [GetFirewallDomainList](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetFirewallDomainList.html)
+- [GetFirewallDomainList](api-route53resolver-getfirewalldomainlist.md)
 
-- [GetFirewallRuleGroup](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetFirewallRuleGroup.html)
+- [GetFirewallRuleGroup](api-route53resolver-getfirewallrulegroup.md)
 
-- [GetFirewallRuleGroupAssociation](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetFirewallRuleGroupAssociation.html)
+- [GetFirewallRuleGroupAssociation](api-route53resolver-getfirewallrulegroupassociation.md)
 
-- [GetFirewallRuleGroupPolicy](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetFirewallRuleGroupPolicy.html)
+- [GetFirewallRuleGroupPolicy](api-route53resolver-getfirewallrulegrouppolicy.md)
 
-- [ImportFirewallDomains](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ImportFirewallDomains.html)
+- [ImportFirewallDomains](api-route53resolver-importfirewalldomains.md)
 
-- [ListFirewallConfigs](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListFirewallConfigs.html)
+- [ListFirewallConfigs](api-route53resolver-listfirewallconfigs.md)
 
-- [ListFirewallDomainLists](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListFirewallDomainLists.html)
+- [ListFirewallDomainLists](api-route53resolver-listfirewalldomainlists.md)
 
-- [ListFirewallDomains](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListFirewallDomains.html)
+- [ListFirewallDomains](api-route53resolver-listfirewalldomains.md)
 
-- [ListFirewallRuleGroupAssociations](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListFirewallRuleGroupAssociations.html)
+- [ListFirewallRuleGroupAssociations](api-route53resolver-listfirewallrulegroupassociations.md)
 
-- [ListFirewallRuleGroups](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListFirewallRuleGroups.html)
+- [ListFirewallRuleGroups](api-route53resolver-listfirewallrulegroups.md)
 
-- [ListFirewallRules](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListFirewallRules.html)
+- [ListFirewallRules](api-route53resolver-listfirewallrules.md)
 
-- [PutFirewallRuleGroupPolicy](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_PutFirewallRuleGroupPolicy.html)
+- [PutFirewallRuleGroupPolicy](api-route53resolver-putfirewallrulegrouppolicy.md)
 
-- [UpdateFirewallConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_UpdateFirewallConfig.html)
+- [UpdateFirewallConfig](api-route53resolver-updatefirewallconfig.md)
 
-- [UpdateFirewallDomains](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_UpdateFirewallDomains.html)
+- [UpdateFirewallDomains](api-route53resolver-updatefirewalldomains.md)
 
-- [UpdateFirewallRule](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_UpdateFirewallRule.html)
+- [UpdateFirewallRule](api-route53resolver-updatefirewallrule.md)
 
-- [UpdateFirewallRuleGroupAssociation](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_UpdateFirewallRuleGroupAssociation.html)
+- [UpdateFirewallRuleGroupAssociation](api-route53resolver-updatefirewallrulegroupassociation.md)
 
 Route 53 Resolver on Outposts
 
-- [CreateOutpostResolver](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_CreateOutpostResolver.html)
+- [CreateOutpostResolver](api-route53resolver-createoutpostresolver.md)
 
-- [DeleteOutpostResolver](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_DeleteOutpostResolver.html)
+- [DeleteOutpostResolver](api-route53resolver-deleteoutpostresolver.md)
 
-- [GetOutpostResolver](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetOutpostResolver.html)
+- [GetOutpostResolver](api-route53resolver-getoutpostresolver.md)
 
-- [ListOutpostResolvers](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListOutpostResolvers.html)
+- [ListOutpostResolvers](api-route53resolver-listoutpostresolvers.md)
 
-- [UpdateOutpostResolver](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_UpdateOutpostResolver.html)
+- [UpdateOutpostResolver](api-route53resolver-updateoutpostresolver.md)
 
 Route 53 Resolver configuration
 
-- [GetResolverConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetResolverConfig.html)
+- [GetResolverConfig](api-route53resolver-getresolverconfig.md)
 
-- [ListResolverConfigs](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListResolverConfigs.html)
+- [ListResolverConfigs](api-route53resolver-listresolverconfigs.md)
 
-- [UpdateResolverConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_UpdateResolverConfig.html)
+- [UpdateResolverConfig](api-route53resolver-updateresolverconfig.md)
 
 **Tags**
 
 Tags for hosted zones and health checks
 
-- [ChangeTagsForResource](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ChangeTagsForResource.html)
+- [ChangeTagsForResource](api-changetagsforresource.md)
 
-- [ListTagsForResource](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListTagsForResource.html)
+- [ListTagsForResource](api-listtagsforresource.md)
 
-- [ListTagsForResources](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListTagsForResources.html)
+- [ListTagsForResources](api-listtagsforresources.md)
 
 Tags for domains
 
-- [DeleteTagsForDomain](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_DeleteTagsForDomain.html)
+- [DeleteTagsForDomain](api-domains-deletetagsfordomain.md)
 
-- [ListTagsForDomain](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_ListTagsForDomain.html)
+- [ListTagsForDomain](api-domains-listtagsfordomain.md)
 
-- [UpdateTagsForDomain](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_UpdateTagsForDomain.html)
+- [UpdateTagsForDomain](api-domains-updatetagsfordomain.md)
 
 Tags for Route 53 Resolver
 
-- [ListTagsForResource](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListTagsForResource.html)
+- [ListTagsForResource](api-route53resolver-listtagsforresource.md)
 
-- [TagResource](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_TagResource.html)
+- [TagResource](api-route53resolver-tagresource.md)
 
-- [UntagResource](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_UntagResource.html)
+- [UntagResource](api-route53resolver-untagresource.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Welcome
 

@@ -4,15 +4,15 @@ Menu
 
 ## Batch
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.batch.html\#toc)
+### Table of Contents  [header link](namespace-aws-batch-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.batch.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-batch-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.batch.exception.html)
+[Exception](namespace-aws-batch-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.batch.html\#toc-classes)
+#### Classes  [header link](namespace-aws-batch-toc-classes.md)
 
-[BatchClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Batch.BatchClient.html)This client is used to interact with the **AWS Batch** service.
+[BatchClient](class-aws-batch-batchclient.md)This client is used to interact with the **AWS Batch** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.batch.html#toc-classes)
+  - [Classes](namespace-aws-batch-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.batch.html#top)
+[Back To Top](namespace-aws-batch-top.md)

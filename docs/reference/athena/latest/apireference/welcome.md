@@ -15,6 +15,6 @@ Amazon Athena with JDBC](../../../../services/athena/latest/ug/connect-with-jdbc
 
 This document was last published on April 5, 2026.
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Actions

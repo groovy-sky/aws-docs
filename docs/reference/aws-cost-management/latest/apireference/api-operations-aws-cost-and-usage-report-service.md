@@ -2,21 +2,21 @@
 
 The following actions are supported by AWS Cost and Usage Report:
 
-- [DeleteReportDefinition](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_cur_DeleteReportDefinition.html)
+- [DeleteReportDefinition](api-cur-deletereportdefinition.md)
 
-- [DescribeReportDefinitions](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_cur_DescribeReportDefinitions.html)
+- [DescribeReportDefinitions](api-cur-describereportdefinitions.md)
 
-- [ListTagsForResource](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_cur_ListTagsForResource.html)
+- [ListTagsForResource](api-cur-listtagsforresource.md)
 
-- [ModifyReportDefinition](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_cur_ModifyReportDefinition.html)
+- [ModifyReportDefinition](api-cur-modifyreportdefinition.md)
 
-- [PutReportDefinition](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_cur_PutReportDefinition.html)
+- [PutReportDefinition](api-cur-putreportdefinition.md)
 
-- [TagResource](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_cur_TagResource.html)
+- [TagResource](api-cur-tagresource.md)
 
-- [UntagResource](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_cur_UntagResource.html)
+- [UntagResource](api-cur-untagresource.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 UpdatePreferences
 

@@ -4,25 +4,25 @@ Menu
 
 ## Retry
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.retry.html\#toc)
+### Table of Contents  [header link](namespace-aws-retry-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.retry.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-retry-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.retry.exception.html)
+[Exception](namespace-aws-retry-exception.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.retry.html\#toc-interfaces)
+#### Interfaces  [header link](namespace-aws-retry-toc-interfaces.md)
 
-[ConfigurationInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationInterface.html)Provides access to retry configuration
+[ConfigurationInterface](class-aws-retry-configurationinterface.md)Provides access to retry configuration
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.retry.html\#toc-classes)
+#### Classes  [header link](namespace-aws-retry-toc-classes.md)
 
-[Configuration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.Configuration.html)[ConfigurationProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html)A configuration provider is a function that returns a promise that is
+[Configuration](class-aws-retry-configuration.md)[ConfigurationProvider](class-aws-retry-configurationprovider.md)A configuration provider is a function that returns a promise that is
 fulfilled with a {@see \\Aws\\Retry\\ConfigurationInterface}
 or rejected with an {@see \\Aws\\Retry\\Exception\\ConfigurationException}.
 
-#### Traits  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.retry.html\#toc-traits)
+#### Traits  [header link](namespace-aws-retry-toc-traits.md)
 
-[RetryHelperTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.RetryHelperTrait.html)
+[RetryHelperTrait](class-aws-retry-retryhelpertrait.md)
 
 ```
 
@@ -33,8 +33,8 @@ or rejected with an {@see \\Aws\\Retry\\Exception\\ConfigurationException}.
 **On this page**
 
 - Table Of Contents
-  - [Interfaces](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.retry.html#toc-interfaces)
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.retry.html#toc-classes)
-  - [Traits](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.retry.html#toc-traits)
+  - [Interfaces](namespace-aws-retry-toc-interfaces.md)
+  - [Classes](namespace-aws-retry-toc-classes.md)
+  - [Traits](namespace-aws-retry-toc-traits.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.retry.html#top)
+[Back To Top](namespace-aws-retry-top.md)

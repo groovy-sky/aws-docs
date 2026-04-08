@@ -4,15 +4,15 @@ Menu
 
 ## PcaConnectorAd
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pcaconnectorad.html\#toc)
+### Table of Contents  [header link](namespace-aws-pcaconnectorad-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pcaconnectorad.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-pcaconnectorad-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pcaconnectorad.exception.html)
+[Exception](namespace-aws-pcaconnectorad-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pcaconnectorad.html\#toc-classes)
+#### Classes  [header link](namespace-aws-pcaconnectorad-toc-classes.md)
 
-[PcaConnectorAdClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PcaConnectorAd.PcaConnectorAdClient.html)This client is used to interact with the **PcaConnectorAd** service.
+[PcaConnectorAdClient](class-aws-pcaconnectorad-pcaconnectoradclient.md)This client is used to interact with the **PcaConnectorAd** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pcaconnectorad.html#toc-classes)
+  - [Classes](namespace-aws-pcaconnectorad-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pcaconnectorad.html#top)
+[Back To Top](namespace-aws-pcaconnectorad-top.md)

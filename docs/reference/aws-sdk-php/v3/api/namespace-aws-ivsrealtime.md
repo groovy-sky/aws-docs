@@ -4,15 +4,15 @@ Menu
 
 ## IVSRealTime
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ivsrealtime.html\#toc)
+### Table of Contents  [header link](namespace-aws-ivsrealtime-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ivsrealtime.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-ivsrealtime-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ivsrealtime.exception.html)
+[Exception](namespace-aws-ivsrealtime-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ivsrealtime.html\#toc-classes)
+#### Classes  [header link](namespace-aws-ivsrealtime-toc-classes.md)
 
-[IVSRealTimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IVSRealTime.IVSRealTimeClient.html)This client is used to interact with the **Amazon Interactive Video Service RealTime** service.
+[IVSRealTimeClient](class-aws-ivsrealtime-ivsrealtimeclient.md)This client is used to interact with the **Amazon Interactive Video Service RealTime** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ivsrealtime.html#toc-classes)
+  - [Classes](namespace-aws-ivsrealtime-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ivsrealtime.html#top)
+[Back To Top](namespace-aws-ivsrealtime-top.md)

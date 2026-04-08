@@ -285,7 +285,7 @@ Note that the following screenshot of the **Edit PC**
     window is from Microsoft Remote Desktop on a Mac. If you are using a Windows
     client, the window might be different.
 
-![The RDP client with the example "localhost:5555" in the PC name field.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ec2-instance-connect-endpoint-rdp.png)
+![The RDP client with the example "localhost:5555" in the PC name field.](../../../images/awsec2/latest/userguide/images/ec2-instance-connect-endpoint-rdp-png.md)
 
 6. In the RDP client, right-click the PC (that you just configured) and
     choose **Connect** to connect to your instance.

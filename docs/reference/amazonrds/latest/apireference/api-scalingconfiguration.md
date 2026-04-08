@@ -87,7 +87,7 @@ The action to take when the timeout is reached, either `ForceApplyCapacityChange
 If you specify `ForceApplyCapacityChange`, connections that
 prevent Aurora Serverless v1 from finding a scaling point might be dropped.
 
-For more information, see [Autoscaling for Aurora Serverless v1](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.how-it-works.html#aurora-serverless.how-it-works.auto-scaling) in the _Amazon Aurora User Guide_.
+For more information, see [Autoscaling for Aurora Serverless v1](../../../../services/amazonrds/latest/aurorauserguide/aurora-serverless-how-it-works-aurora-serverless-how-it-works-auto-scaling.md) in the _Amazon Aurora User Guide_.
 
 Type: String
 
@@ -97,13 +97,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/ScalingConfiguration)
+- [AWS SDK for C++](../../../goto/sdkforcpp/rds-2014-10-31/scalingconfiguration.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/ScalingConfiguration)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/rds-2014-10-31/scalingconfiguration.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/ScalingConfiguration)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/scalingconfiguration.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ScalarReferenceDetails
 

@@ -14,7 +14,7 @@ and configuration.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/athena/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -118,12 +118,12 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 
 Contains engine configuration information like DPU usage.
 
-Type: [EngineConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_EngineConfiguration.html) object
+Type: [EngineConfiguration](api-engineconfiguration.md) object
 
 **[EngineVersion](#API_GetSession_ResponseSyntax)**
 
 The engine version used by the session (for example, `PySpark engine version
-                3`). You can get a list of engine versions by calling [ListEngineVersions](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListEngineVersions.html).
+                3`). You can get a list of engine versions by calling [ListEngineVersions](api-listengineversions.md).
 
 Type: String
 
@@ -134,7 +134,7 @@ Length Constraints: Minimum length of 1. Maximum length of 128.
 Contains the configuration settings for managed log persistence, delivering logs to Amazon S3 buckets,
 Amazon CloudWatch log groups etc.
 
-Type: [MonitoringConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_MonitoringConfiguration.html) object
+Type: [MonitoringConfiguration](api-monitoringconfiguration.md) object
 
 **[NotebookVersion](#API_GetSession_ResponseSyntax)**
 
@@ -148,7 +148,7 @@ Length Constraints: Minimum length of 1. Maximum length of 128.
 
 Contains the workgroup configuration information used by the session.
 
-Type: [SessionConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_SessionConfiguration.html) object
+Type: [SessionConfiguration](api-sessionconfiguration.md) object
 
 **[SessionId](#API_GetSession_ResponseSyntax)**
 
@@ -162,13 +162,13 @@ Length Constraints: Minimum length of 1. Maximum length of 256.
 
 Contains the DPU execution time.
 
-Type: [SessionStatistics](https://docs.aws.amazon.com/athena/latest/APIReference/API_SessionStatistics.html) object
+Type: [SessionStatistics](api-sessionstatistics.md) object
 
 **[Status](#API_GetSession_ResponseSyntax)**
 
 Contains information about the status of the session.
 
-Type: [SessionStatus](https://docs.aws.amazon.com/athena/latest/APIReference/API_SessionStatus.html) object
+Type: [SessionStatus](api-sessionstatus.md) object
 
 **[WorkGroup](#API_GetSession_ResponseSyntax)**
 
@@ -180,7 +180,7 @@ Pattern: `[a-zA-Z0-9._-]{1,128}`
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/athena/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **InternalServerException**
 
@@ -215,27 +215,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/athena-2017-05-18/GetSession)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/athena-2017-05-18/getsession.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/athena-2017-05-18/GetSession)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/athena-2017-05-18/getsession.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/GetSession)
+- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/getsession.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/athena-2017-05-18/GetSession)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/athena-2017-05-18/getsession.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/GetSession)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/getsession.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/athena-2017-05-18/GetSession)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/athena-2017-05-18/getsession.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/athena-2017-05-18/GetSession)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/athena-2017-05-18/getsession.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/athena-2017-05-18/GetSession)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/athena-2017-05-18/getsession.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/athena-2017-05-18/GetSession)
+- [AWS SDK for Python](../../../../services/goto/boto3/athena-2017-05-18/getsession.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/GetSession)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/getsession.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GetResourceDashboard
 

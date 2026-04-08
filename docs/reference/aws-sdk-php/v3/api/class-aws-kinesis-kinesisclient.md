@@ -17,46 +17,46 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2013-12-02**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html)
+- [**2013-12-02**](api-kinesis-2013-12-02.md)
 
-  - [AddTagsToStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#addtagstostream)
-  - [CreateStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#createstream)
-  - [DecreaseStreamRetentionPeriod](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#decreasestreamretentionperiod)
-  - [DeleteResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#deleteresourcepolicy)
-  - [DeleteStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#deletestream)
-  - [DeregisterStreamConsumer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#deregisterstreamconsumer)
-  - [DescribeAccountSettings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#describeaccountsettings)
-  - [DescribeLimits](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#describelimits)
-  - [DescribeStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#describestream)
-  - [DescribeStreamConsumer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#describestreamconsumer)
-  - [DescribeStreamSummary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#describestreamsummary)
-  - [DisableEnhancedMonitoring](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#disableenhancedmonitoring)
-  - [EnableEnhancedMonitoring](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#enableenhancedmonitoring)
-  - [GetRecords](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#getrecords)
-  - [GetResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#getresourcepolicy)
-  - [GetShardIterator](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#getsharditerator)
-  - [IncreaseStreamRetentionPeriod](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#increasestreamretentionperiod)
-  - [ListShards](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#listshards)
-  - [ListStreamConsumers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#liststreamconsumers)
-  - [ListStreams](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#liststreams)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#listtagsforresource)
-  - [ListTagsForStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#listtagsforstream)
-  - [MergeShards](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#mergeshards)
-  - [PutRecord](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#putrecord)
-  - [PutRecords](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#putrecords)
-  - [PutResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#putresourcepolicy)
-  - [RegisterStreamConsumer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#registerstreamconsumer)
-  - [RemoveTagsFromStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#removetagsfromstream)
-  - [SplitShard](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#splitshard)
-  - [StartStreamEncryption](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#startstreamencryption)
-  - [StopStreamEncryption](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#stopstreamencryption)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#untagresource)
-  - [UpdateAccountSettings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#updateaccountsettings)
-  - [UpdateMaxRecordSize](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#updatemaxrecordsize)
-  - [UpdateShardCount](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#updateshardcount)
-  - [UpdateStreamMode](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#updatestreammode)
-  - [UpdateStreamWarmThroughput](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesis-2013-12-02.html#updatestreamwarmthroughput)
+  - [AddTagsToStream](api-kinesis-2013-12-02-addtagstostream.md)
+  - [CreateStream](api-kinesis-2013-12-02-createstream.md)
+  - [DecreaseStreamRetentionPeriod](api-kinesis-2013-12-02-decreasestreamretentionperiod.md)
+  - [DeleteResourcePolicy](api-kinesis-2013-12-02-deleteresourcepolicy.md)
+  - [DeleteStream](api-kinesis-2013-12-02-deletestream.md)
+  - [DeregisterStreamConsumer](api-kinesis-2013-12-02-deregisterstreamconsumer.md)
+  - [DescribeAccountSettings](api-kinesis-2013-12-02-describeaccountsettings.md)
+  - [DescribeLimits](api-kinesis-2013-12-02-describelimits.md)
+  - [DescribeStream](api-kinesis-2013-12-02-describestream.md)
+  - [DescribeStreamConsumer](api-kinesis-2013-12-02-describestreamconsumer.md)
+  - [DescribeStreamSummary](api-kinesis-2013-12-02-describestreamsummary.md)
+  - [DisableEnhancedMonitoring](api-kinesis-2013-12-02-disableenhancedmonitoring.md)
+  - [EnableEnhancedMonitoring](api-kinesis-2013-12-02-enableenhancedmonitoring.md)
+  - [GetRecords](api-kinesis-2013-12-02-getrecords.md)
+  - [GetResourcePolicy](api-kinesis-2013-12-02-getresourcepolicy.md)
+  - [GetShardIterator](api-kinesis-2013-12-02-getsharditerator.md)
+  - [IncreaseStreamRetentionPeriod](api-kinesis-2013-12-02-increasestreamretentionperiod.md)
+  - [ListShards](api-kinesis-2013-12-02-listshards.md)
+  - [ListStreamConsumers](api-kinesis-2013-12-02-liststreamconsumers.md)
+  - [ListStreams](api-kinesis-2013-12-02-liststreams.md)
+  - [ListTagsForResource](api-kinesis-2013-12-02-listtagsforresource.md)
+  - [ListTagsForStream](api-kinesis-2013-12-02-listtagsforstream.md)
+  - [MergeShards](api-kinesis-2013-12-02-mergeshards.md)
+  - [PutRecord](api-kinesis-2013-12-02-putrecord.md)
+  - [PutRecords](api-kinesis-2013-12-02-putrecords.md)
+  - [PutResourcePolicy](api-kinesis-2013-12-02-putresourcepolicy.md)
+  - [RegisterStreamConsumer](api-kinesis-2013-12-02-registerstreamconsumer.md)
+  - [RemoveTagsFromStream](api-kinesis-2013-12-02-removetagsfromstream.md)
+  - [SplitShard](api-kinesis-2013-12-02-splitshard.md)
+  - [StartStreamEncryption](api-kinesis-2013-12-02-startstreamencryption.md)
+  - [StopStreamEncryption](api-kinesis-2013-12-02-stopstreamencryption.md)
+  - [TagResource](api-kinesis-2013-12-02-tagresource.md)
+  - [UntagResource](api-kinesis-2013-12-02-untagresource.md)
+  - [UpdateAccountSettings](api-kinesis-2013-12-02-updateaccountsettings.md)
+  - [UpdateMaxRecordSize](api-kinesis-2013-12-02-updatemaxrecordsize.md)
+  - [UpdateShardCount](api-kinesis-2013-12-02-updateshardcount.md)
+  - [UpdateStreamMode](api-kinesis-2013-12-02-updatestreammode.md)
+  - [UpdateStreamWarmThroughput](api-kinesis-2013-12-02-updatestreamwarmthroughput.md)
 
 ## Examples
 
@@ -64,19 +64,19 @@ specific API operation can be done using magic methods (e.g.,
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for PHP with Amazon Kinesis.
 
-- [See examples on AWS Docs](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/php_kinesis_code_examples.html)
+- [See examples on AWS Docs](../../../sdk-for-php/v3/developer-guide/php-kinesis-code-examples.md)
 
 ### Legacy Code Examples With Guidance
 
-The following examples demonstrate how to use this service with the AWS SDK for PHP. These code examples are available in the [AWS SDK for PHP Developer Guide](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/kinesis-examples.html).
+The following examples demonstrate how to use this service with the AWS SDK for PHP. These code examples are available in the [AWS SDK for PHP Developer Guide](../../../sdk-for-php/v3/developer-guide/kinesis-examples.md).
 
-- [Kinesis data streams](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/kinesis-example-data-stream.html)
-- [Kinesis shards](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/kinesis-example-shard.html)
-- [Kinesis Data Firehose delivery streams](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/kinesis-firehose-example-delivery-stream.html)
+- [Kinesis data streams](../../../sdk-for-php/v3/developer-guide/kinesis-example-data-stream.md)
+- [Kinesis shards](../../../sdk-for-php/v3/developer-guide/kinesis-example-shard.md)
+- [Kinesis Data Firehose delivery streams](../../../sdk-for-php/v3/developer-guide/kinesis-firehose-example-delivery-stream.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Kinesis.KinesisClient.html\#toc)
+### Table of Contents  [header link](class-aws-kinesis-kinesisclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Kinesis.KinesisClient.html\#toc-methods)
+#### Methods  [header link](class-aws-kinesis-kinesisclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -107,7 +107,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Kinesis.KinesisClient.html\#methods)
+### Methods  [header link](class-aws-kinesis-kinesisclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -574,7 +574,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Kinesis.KinesisClient.html#toc-methods)
+  - [Methods](class-aws-kinesis-kinesisclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -601,4 +601,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Kinesis.KinesisClient.html#top)
+[Back To Top](class-aws-kinesis-kinesisclient-top.md)

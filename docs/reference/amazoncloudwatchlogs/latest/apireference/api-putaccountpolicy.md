@@ -68,7 +68,7 @@ be signed on with the `logs:PutDataProtectionPolicy` and
 `logs:PutAccountPolicy` permissions.
 
 The `PutAccountPolicy` operation applies to all log groups in the account. You
-can use [PutDataProtectionPolicy](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDataProtectionPolicy.html) to create a data protection policy that applies to just one
+can use [PutDataProtectionPolicy](api-putdataprotectionpolicy.md) to create a data protection policy that applies to just one
 log group. If a log group has its own data protection policy and the account also has an
 account-level data protection policy, then the two policies are cumulative. Any sensitive term
 specified in either policy is masked.
@@ -92,7 +92,7 @@ same-account delivery.
 - A Lambda function in the same account as the subscription policy, for
 same-account delivery.
 
-- A logical destination in a different account created with [PutDestination](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDestination.html), for cross-account delivery. Kinesis Data Streams and Firehose are supported as logical destinations.
+- A logical destination in a different account created with [PutDestination](api-putdestination.md), for cross-account delivery. Kinesis Data Streams and Firehose are supported as logical destinations.
 
 Each account can have one account-level subscription filter policy per Region. If you are
 updating an existing filter, you must specify the correct name in `PolicyName`. To
@@ -116,7 +116,7 @@ Region.
 
 A transformer for a log group is a series of processors, where each processor applies one
 type of transformation to the log events ingested into this log group. For more information
-about the available processors to use in a transformer, see [Processors that you can use](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation.html#CloudWatch-Logs-Transformation-Processors).
+about the available processors to use in a transformer, see [Processors that you can use](../../../../services/amazoncloudwatch/latest/logs/cloudwatch-logs-transformation-cloudwatch-logs-transformation-processors.md).
 
 Having log events in standardized format enables visibility across your applications for
 your log analysis, reporting, and alarming needs. CloudWatch Logs provides transformation
@@ -134,7 +134,7 @@ use the same or overlapping log group name prefixes. For example, if you have on
 filtered to log groups that start with `my-log`, you can't have another transformer
 policy filtered to `my-logpprod` or `my-logging`.
 
-You can also set up a transformer at the log-group level. For more information, see [PutTransformer](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutTransformer.html). If there is both a log-group level transformer created with
+You can also set up a transformer at the log-group level. For more information, see [PutTransformer](api-puttransformer.md). If there is both a log-group level transformer created with
 `PutTransformer` and an account-level transformer that could apply to the same
 log group, the log group uses only the log-group level transformer. It ignores the
 account-level transformer.
@@ -149,7 +149,7 @@ field. Good fields to index are fields that you often need to query for and fiel
 that match only a small fraction of the total log events. Common examples of indexes include
 request ID, session ID, user IDs, or instance IDs. For more information, see [Create field indexes to improve query performance and reduce costs](../../../../services/amazoncloudwatch/latest/logs/cloudwatchlogs-field-indexing.md)
 
-To find the fields that are in your log group events, use the [GetLogGroupFields](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_GetLogGroupFields.html) operation. To find the fields for a data source use the [GetLogFields](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_GetLogFields.html) operation.
+To find the fields that are in your log group events, use the [GetLogGroupFields](api-getloggroupfields.md) operation. To find the fields for a data source use the [GetLogFields](api-getlogfields.md) operation.
 
 For example, suppose you have created a field index for `requestId`. Then, any
 CloudWatch Logs Insights query on that log group that includes `requestId =
@@ -257,9 +257,9 @@ source name and type combinations as identified in the following list:
 
 Default field indexes are in addition to any custom field indexes you define within your
 policy. Default field indexes are not counted towards your [field index\
-quota](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogs-Field-Indexing-Syntax).
+quota](../../../../services/amazoncloudwatch/latest/logs/cloudwatchlogs-field-indexing-syntax.md).
 
-If you want to create a field index policy for a single log group, you can use [PutIndexPolicy](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutIndexPolicy.html) instead of `PutAccountPolicy`. If you do so, that log
+If you want to create a field index policy for a single log group, you can use [PutIndexPolicy](api-putindexpolicy.md) instead of `PutAccountPolicy`. If you do so, that log
 group will use that log-group level policy and any account-level policies that match at the
 data source level; any account-level policy that matches at the log group level (for example,
 no selection criteria or log group name prefix selection criteria) will be ignored.
@@ -354,7 +354,7 @@ A data protection policy must include two JSON blocks:
 `Operation` property with an `Audit` action. The
 `DataIdentifer` array lists the types of sensitive data that you want to
 mask. For more information about the available options, see [Types of data that\
-you can mask](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/mask-sensitive-log-data-types.html).
+you can mask](../../../../services/amazoncloudwatch/latest/logs/mask-sensitive-log-data-types.md).
 
 The `Operation` property with an `Audit` action is required to
 find the sensitive data terms. This `Audit` action must contain a
@@ -403,7 +403,7 @@ for same-account delivery.
 - A Lambda function in the same account as the subscription policy, for
 same-account delivery.
 
-- A logical destination in a different account created with [PutDestination](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDestination.html), for cross-account delivery. Kinesis Data Streams and Firehose are supported as logical destinations.
+- A logical destination in a different account created with [PutDestination](api-putdestination.md), for cross-account delivery. Kinesis Data Streams and Firehose are supported as logical destinations.
 
 - **RoleArn** The ARN of an IAM role that grants CloudWatch
 Logs permissions to deliver ingested log events to the destination stream. You don't need
@@ -421,7 +421,7 @@ when the destination is an Kinesis Data Streams data stream.
 **Transformer policy**
 
 A transformer policy must include one JSON block with the array of processors and their
-configurations. For more information about available processors, see [Processors that you can use](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation.html#CloudWatch-Logs-Transformation-Processors).
+configurations. For more information about available processors, see [Processors that you can use](../../../../services/amazoncloudwatch/latest/logs/cloudwatch-logs-transformation-cloudwatch-logs-transformation-processors.md).
 
 **Field index policy**
 
@@ -513,7 +513,7 @@ determined by using its UTF-8 bytes.
 Using the `selectionCriteria` parameter with
 `SUBSCRIPTION_FILTER_POLICY` is useful to help prevent infinite loops. For more
 information, see [Log recursion\
-prevention](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Subscriptions-recursion-prevention.html).
+prevention](../../../../services/amazoncloudwatch/latest/logs/subscriptions-recursion-prevention.md).
 
 Type: String
 
@@ -546,7 +546,7 @@ The following data is returned in JSON format by the service.
 
 The account policy that you created.
 
-Type: [AccountPolicy](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_AccountPolicy.html) object
+Type: [AccountPolicy](api-accountpolicy.md) object
 
 ## Errors
 
@@ -798,27 +798,27 @@ X-Amz-Target: Logs_20140328.PutAccountPolicy
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/logs-2014-03-28/PutAccountPolicy)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/logs-2014-03-28/putaccountpolicy.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/logs-2014-03-28/PutAccountPolicy)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/logs-2014-03-28/putaccountpolicy.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/PutAccountPolicy)
+- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/putaccountpolicy.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/logs-2014-03-28/PutAccountPolicy)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/logs-2014-03-28/putaccountpolicy.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/PutAccountPolicy)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/putaccountpolicy.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/logs-2014-03-28/PutAccountPolicy)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/logs-2014-03-28/putaccountpolicy.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/logs-2014-03-28/PutAccountPolicy)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/logs-2014-03-28/putaccountpolicy.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/logs-2014-03-28/PutAccountPolicy)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/logs-2014-03-28/putaccountpolicy.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/logs-2014-03-28/PutAccountPolicy)
+- [AWS SDK for Python](../../../../services/goto/boto3/logs-2014-03-28/putaccountpolicy.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/logs-2014-03-28/PutAccountPolicy)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/putaccountpolicy.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ListTagsLogGroup
 

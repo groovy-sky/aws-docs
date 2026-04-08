@@ -30,7 +30,7 @@ The request accepts the following data in JSON format.
 The list of `CostAllocationTagStatusEntry` objects that are used to update cost
 allocation tags status for this request.
 
-Type: Array of [CostAllocationTagStatusEntry](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_CostAllocationTagStatusEntry.html) objects
+Type: Array of [CostAllocationTagStatusEntry](api-costallocationtagstatusentry.md) objects
 
 Array Members: Minimum number of 1 item. Maximum number of 20 items.
 
@@ -63,7 +63,7 @@ A list of `UpdateCostAllocationTagsStatusError` objects with error details
 about each cost allocation tag that can't be updated. If there's no failure, an empty array
 returns.
 
-Type: Array of [UpdateCostAllocationTagsStatusError](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_UpdateCostAllocationTagsStatusError.html) objects
+Type: Array of [UpdateCostAllocationTagsStatusError](api-updatecostallocationtagsstatuserror.md) objects
 
 Array Members: Minimum number of 0 items. Maximum number of 20 items.
 
@@ -154,27 +154,27 @@ This example illustrates one usage of UpdateCostAllocationTagsStatus.
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ce-2017-10-25/UpdateCostAllocationTagsStatus)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ce-2017-10-25/updatecostallocationtagsstatus.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ce-2017-10-25/UpdateCostAllocationTagsStatus)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ce-2017-10-25/updatecostallocationtagsstatus.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ce-2017-10-25/UpdateCostAllocationTagsStatus)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ce-2017-10-25/updatecostallocationtagsstatus.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ce-2017-10-25/UpdateCostAllocationTagsStatus)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ce-2017-10-25/updatecostallocationtagsstatus.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ce-2017-10-25/UpdateCostAllocationTagsStatus)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ce-2017-10-25/updatecostallocationtagsstatus.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ce-2017-10-25/UpdateCostAllocationTagsStatus)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ce-2017-10-25/updatecostallocationtagsstatus.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ce-2017-10-25/UpdateCostAllocationTagsStatus)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ce-2017-10-25/updatecostallocationtagsstatus.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ce-2017-10-25/UpdateCostAllocationTagsStatus)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ce-2017-10-25/updatecostallocationtagsstatus.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ce-2017-10-25/UpdateCostAllocationTagsStatus)
+- [AWS SDK for Python](../../../../services/goto/boto3/ce-2017-10-25/updatecostallocationtagsstatus.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ce-2017-10-25/UpdateCostAllocationTagsStatus)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ce-2017-10-25/updatecostallocationtagsstatus.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 UpdateAnomalySubscription
 

@@ -17,21 +17,21 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2023-05-04**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-query-2023-05-04.html)
+- [**2023-05-04**](api-managedblockchain-query-2023-05-04.md)
 
-  - [BatchGetTokenBalance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-query-2023-05-04.html#batchgettokenbalance)
-  - [GetAssetContract](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-query-2023-05-04.html#getassetcontract)
-  - [GetTokenBalance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-query-2023-05-04.html#gettokenbalance)
-  - [GetTransaction](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-query-2023-05-04.html#gettransaction)
-  - [ListAssetContracts](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-query-2023-05-04.html#listassetcontracts)
-  - [ListFilteredTransactionEvents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-query-2023-05-04.html#listfilteredtransactionevents)
-  - [ListTokenBalances](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-query-2023-05-04.html#listtokenbalances)
-  - [ListTransactionEvents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-query-2023-05-04.html#listtransactionevents)
-  - [ListTransactions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-managedblockchain-query-2023-05-04.html#listtransactions)
+  - [BatchGetTokenBalance](api-managedblockchain-query-2023-05-04-batchgettokenbalance.md)
+  - [GetAssetContract](api-managedblockchain-query-2023-05-04-getassetcontract.md)
+  - [GetTokenBalance](api-managedblockchain-query-2023-05-04-gettokenbalance.md)
+  - [GetTransaction](api-managedblockchain-query-2023-05-04-gettransaction.md)
+  - [ListAssetContracts](api-managedblockchain-query-2023-05-04-listassetcontracts.md)
+  - [ListFilteredTransactionEvents](api-managedblockchain-query-2023-05-04-listfilteredtransactionevents.md)
+  - [ListTokenBalances](api-managedblockchain-query-2023-05-04-listtokenbalances.md)
+  - [ListTransactionEvents](api-managedblockchain-query-2023-05-04-listtransactionevents.md)
+  - [ListTransactions](api-managedblockchain-query-2023-05-04-listtransactions.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedBlockchainQuery.ManagedBlockchainQueryClient.html\#toc)
+### Table of Contents  [header link](class-aws-managedblockchainquery-managedblockchainqueryclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedBlockchainQuery.ManagedBlockchainQueryClient.html\#toc-methods)
+#### Methods  [header link](class-aws-managedblockchainquery-managedblockchainqueryclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -62,7 +62,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedBlockchainQuery.ManagedBlockchainQueryClient.html\#methods)
+### Methods  [header link](class-aws-managedblockchainquery-managedblockchainqueryclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -529,7 +529,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedBlockchainQuery.ManagedBlockchainQueryClient.html#toc-methods)
+  - [Methods](class-aws-managedblockchainquery-managedblockchainqueryclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -556,4 +556,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedBlockchainQuery.ManagedBlockchainQueryClient.html#top)
+[Back To Top](class-aws-managedblockchainquery-managedblockchainqueryclient-top.md)

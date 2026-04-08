@@ -4,7 +4,7 @@ Many general purpose workloads are on average not busy, and do not require a hig
 sustained CPU performance. The following graph illustrates the CPU utilization for many common
 workloads that customers run in the AWS Cloud today.
 
-![Many common workloads look like this: the average CPU utilization is at or below the baseline, with some spikes above the baseline.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/CPU-common-workloads.png)
+![Many common workloads look like this: the average CPU utilization is at or below the baseline, with some spikes above the baseline.](../../../images/awsec2/latest/userguide/images/cpu-common-workloads-png.md)
 
 These low-to-moderate CPU utilization workloads lead to wastage of CPU cycles and, as a
 result, you pay for more than you use. To overcome this, you can leverage the low-cost

@@ -4,15 +4,15 @@ Menu
 
 ## Route53GlobalResolver
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53globalresolver.html\#toc)
+### Table of Contents  [header link](namespace-aws-route53globalresolver-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53globalresolver.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-route53globalresolver-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53globalresolver.exception.html)
+[Exception](namespace-aws-route53globalresolver-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53globalresolver.html\#toc-classes)
+#### Classes  [header link](namespace-aws-route53globalresolver-toc-classes.md)
 
-[Route53GlobalResolverClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53GlobalResolver.Route53GlobalResolverClient.html)This client is used to interact with the **Amazon Route 53 Global Resolver** service.
+[Route53GlobalResolverClient](class-aws-route53globalresolver-route53globalresolverclient.md)This client is used to interact with the **Amazon Route 53 Global Resolver** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53globalresolver.html#toc-classes)
+  - [Classes](namespace-aws-route53globalresolver-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53globalresolver.html#top)
+[Back To Top](namespace-aws-route53globalresolver-top.md)

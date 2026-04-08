@@ -41,7 +41,7 @@ Required: No
 
 From the creation time, the time after which the API key expires. The date is
 represented as seconds since the epoch, rounded down to the nearest hour. The default value
-for this parameter is 7 days from creation time. For more information, see [ApiKey](https://docs.aws.amazon.com/appsync/latest/APIReference/API_ApiKey.html).
+for this parameter is 7 days from creation time. For more information, see [ApiKey](api-apikey.md).
 
 Type: Long
 
@@ -74,11 +74,11 @@ The following data is returned in JSON format by the service.
 
 The API key.
 
-Type: [ApiKey](https://docs.aws.amazon.com/appsync/latest/APIReference/API_ApiKey.html) object
+Type: [ApiKey](api-apikey.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/appsync/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **ApiKeyLimitExceededException**
 
@@ -145,27 +145,27 @@ HTTP Status Code: 401
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appsync-2017-07-25/CreateApiKey)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/appsync-2017-07-25/createapikey.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appsync-2017-07-25/CreateApiKey)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appsync-2017-07-25/createapikey.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appsync-2017-07-25/CreateApiKey)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appsync-2017-07-25/createapikey.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appsync-2017-07-25/CreateApiKey)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/appsync-2017-07-25/createapikey.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appsync-2017-07-25/CreateApiKey)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appsync-2017-07-25/createapikey.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appsync-2017-07-25/CreateApiKey)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appsync-2017-07-25/createapikey.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appsync-2017-07-25/CreateApiKey)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appsync-2017-07-25/createapikey.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appsync-2017-07-25/CreateApiKey)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appsync-2017-07-25/createapikey.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/appsync-2017-07-25/CreateApiKey)
+- [AWS SDK for Python](../../../../services/goto/boto3/appsync-2017-07-25/createapikey.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appsync-2017-07-25/CreateApiKey)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appsync-2017-07-25/createapikey.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateApiCache
 

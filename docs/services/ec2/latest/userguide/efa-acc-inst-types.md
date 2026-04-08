@@ -332,7 +332,7 @@ P6e-GB200 instances can be configured with up to 17 network cards. The following
 shows the physical network interface card (NIC) layout for P6e-GB200 instances, along with
 the mapping of network card indexes (NCIs).
 
-![Physical network interface card (NIC) and network card index (NCI) mapping for P6e-GB200 instances.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/p6e.png)
+![Physical network interface card (NIC) and network card index (NCI) mapping for P6e-GB200 instances.](../../../images/awsec2/latest/userguide/images/p6e-png.md)
 
 The primary NCI (index 0) supports up to 100 Gbps of ENA bandwidth. NCIs with the following
 indexes support EFA-only network interfaces and 400 Gbps EFA bandwidth: \[1, 3, 5, 7, 9, 11,
@@ -410,7 +410,7 @@ Gbps of bandwidth. The secondary network cards support up to 400 Gbps EFA and up
 220 Gbps of ENA bandwidth. Since EFA and ENA traffic share the same underlying resources,
 bandwidth used by one will reduce the bandwidth that is available to the other.
 
-![Physical network interface card (NIC) and network card index (NCI) mapping for P6-B300 instances.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/p6-b300.png)
+![Physical network interface card (NIC) and network card index (NCI) mapping for P6-B300 instances.](../../../images/awsec2/latest/userguide/images/p6-b300-png.md)
 
 ###### Use case 1: Save IP addresses
 

@@ -2,15 +2,15 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [ManagedBlockchainQuery](namespace-aws-managedblockchainquery.md)
-- [Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.managedblockchainquery.exception.html)
+- [Exception](namespace-aws-managedblockchainquery-exception.md)
 
 ## ManagedBlockchainQueryException     extends [AwsException](class-aws-exception-awsexception.md)   in package    - [Aws](package-aws.md)
 
 Represents an error interacting with the **Amazon Managed Blockchain Query** service.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedBlockchainQuery.Exception.ManagedBlockchainQueryException.html\#toc)
+### Table of Contents  [header link](class-aws-managedblockchainquery-exception-managedblockchainqueryexception-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedBlockchainQuery.Exception.ManagedBlockchainQueryException.html\#toc-methods)
+#### Methods  [header link](class-aws-managedblockchainquery-exception-managedblockchainqueryexception-toc-methods.md)
 
 [\_\_construct()](class-aws-exception-awsexception.md#method___construct)
 : mixed [\_\_toString()](class-aws-exception-awsexception.md#method___toString)
@@ -50,7 +50,7 @@ array modification (e.g., $foo\['bar'\]\['baz'\] = 'qux').[offsetSet()](class-aw
 : mixed Replace the transfer information associated with an exception.[toArray()](class-aws-hasdatatrait.md#method_toArray)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedBlockchainQuery.Exception.ManagedBlockchainQueryException.html\#methods)
+### Methods  [header link](class-aws-managedblockchainquery-exception-managedblockchainqueryexception-methods.md)
 
 #### \_\_construct()  [header link](class-aws-exception-awsexception.md\#method___construct)
 
@@ -446,7 +446,7 @@ $info
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedBlockchainQuery.Exception.ManagedBlockchainQueryException.html#toc-methods)
+  - [Methods](class-aws-managedblockchainquery-exception-managedblockchainqueryexception-toc-methods.md)
 - Methods
   - [\_\_construct()](class-aws-exception-awsexception.md#method___construct)
   - [\_\_toString()](class-aws-exception-awsexception.md#method___toString)
@@ -479,4 +479,4 @@ $info
   - [setTransferInfo()](class-aws-exception-awsexception.md#method_setTransferInfo)
   - [toArray()](class-aws-hasdatatrait.md#method_toArray)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedBlockchainQuery.Exception.ManagedBlockchainQueryException.html#top)
+[Back To Top](class-aws-managedblockchainquery-exception-managedblockchainqueryexception-top.md)

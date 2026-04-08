@@ -57,7 +57,7 @@ canceled and the `m4.large` instance runs normally outside of the
 reserved capacity. For that hour, it is charged at the On-Demand rate of the
 `m4.large` instance type.
 
-![Capacity Reservation billing example](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/cr-billing-example.png)
+![Capacity Reservation billing example](../../../images/awsec2/latest/userguide/images/cr-billing-example-png.md)
 
 ## Billing discounts
 

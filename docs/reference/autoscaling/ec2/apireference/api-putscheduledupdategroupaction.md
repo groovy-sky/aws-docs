@@ -6,16 +6,16 @@ For more information, see [Scheduled scaling](../../../../services/autoscaling/e
 _Amazon EC2 Auto Scaling User Guide_.
 
 You can view the scheduled actions for an Auto Scaling group using the
-[DescribeScheduledActions](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DescribeScheduledActions.html)
+[DescribeScheduledActions](api-describescheduledactions.md)
 API call. If you are no longer using a scheduled action, you can delete it by calling the
-[DeleteScheduledAction](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DeleteScheduledAction.html) API.
+[DeleteScheduledAction](api-deletescheduledaction.md) API.
 
 If you try to schedule your action in the past, Amazon EC2 Auto Scaling returns an error
 message.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 **AutoScalingGroupName**
 
@@ -142,7 +142,7 @@ Required: No
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **AlreadyExists**
 
@@ -156,7 +156,7 @@ HTTP Status Code: 400
 
 You have already reached a limit for your Amazon EC2 Auto Scaling resources
 (for example, Auto Scaling groups, launch configurations, or lifecycle hooks). For more
-information, see [DescribeAccountLimits](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DescribeAccountLimits.html).
+information, see [DescribeAccountLimits](api-describeaccountlimits.md).
 
 **message**
 
@@ -211,27 +211,27 @@ https://autoscaling.amazonaws.com/?Action="PutScheduledUpdateGroupAction
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/autoscaling-2011-01-01/PutScheduledUpdateGroupAction)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/autoscaling-2011-01-01/putscheduledupdategroupaction.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/autoscaling-2011-01-01/PutScheduledUpdateGroupAction)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/autoscaling-2011-01-01/putscheduledupdategroupaction.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/autoscaling-2011-01-01/PutScheduledUpdateGroupAction)
+- [AWS SDK for C++](../../../goto/sdkforcpp/autoscaling-2011-01-01/putscheduledupdategroupaction.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/autoscaling-2011-01-01/PutScheduledUpdateGroupAction)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/autoscaling-2011-01-01/putscheduledupdategroupaction.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/autoscaling-2011-01-01/PutScheduledUpdateGroupAction)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/autoscaling-2011-01-01/putscheduledupdategroupaction.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/autoscaling-2011-01-01/PutScheduledUpdateGroupAction)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/autoscaling-2011-01-01/putscheduledupdategroupaction.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/autoscaling-2011-01-01/PutScheduledUpdateGroupAction)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/autoscaling-2011-01-01/putscheduledupdategroupaction.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/autoscaling-2011-01-01/PutScheduledUpdateGroupAction)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/autoscaling-2011-01-01/putscheduledupdategroupaction.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/autoscaling-2011-01-01/PutScheduledUpdateGroupAction)
+- [AWS SDK for Python](../../../../services/goto/boto3/autoscaling-2011-01-01/putscheduledupdategroupaction.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/autoscaling-2011-01-01/PutScheduledUpdateGroupAction)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/autoscaling-2011-01-01/putscheduledupdategroupaction.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 PutScalingPolicy
 

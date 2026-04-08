@@ -17,54 +17,54 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-08-29**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html)
+- [**2017-08-29**](api-mediaconvert-2017-08-29.md)
 
-  - [AssociateCertificate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#associatecertificate)
-  - [CancelJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#canceljob)
-  - [CreateJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#createjob)
-  - [CreateJobTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#createjobtemplate)
-  - [CreatePreset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#createpreset)
-  - [CreateQueue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#createqueue)
-  - [CreateResourceShare](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#createresourceshare)
-  - [DeleteJobTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#deletejobtemplate)
-  - [DeletePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#deletepolicy)
-  - [DeletePreset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#deletepreset)
-  - [DeleteQueue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#deletequeue)
-  - [DescribeEndpoints](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#describeendpoints)
-  - [DisassociateCertificate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#disassociatecertificate)
-  - [GetJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#getjob)
-  - [GetJobTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#getjobtemplate)
-  - [GetJobsQueryResults](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#getjobsqueryresults)
-  - [GetPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#getpolicy)
-  - [GetPreset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#getpreset)
-  - [GetQueue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#getqueue)
-  - [ListJobTemplates](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#listjobtemplates)
-  - [ListJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#listjobs)
-  - [ListPresets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#listpresets)
-  - [ListQueues](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#listqueues)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#listtagsforresource)
-  - [ListVersions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#listversions)
-  - [Probe](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#probe)
-  - [PutPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#putpolicy)
-  - [SearchJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#searchjobs)
-  - [StartJobsQuery](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#startjobsquery)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#untagresource)
-  - [UpdateJobTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#updatejobtemplate)
-  - [UpdatePreset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#updatepreset)
-  - [UpdateQueue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mediaconvert-2017-08-29.html#updatequeue)
+  - [AssociateCertificate](api-mediaconvert-2017-08-29-associatecertificate.md)
+  - [CancelJob](api-mediaconvert-2017-08-29-canceljob.md)
+  - [CreateJob](api-mediaconvert-2017-08-29-createjob.md)
+  - [CreateJobTemplate](api-mediaconvert-2017-08-29-createjobtemplate.md)
+  - [CreatePreset](api-mediaconvert-2017-08-29-createpreset.md)
+  - [CreateQueue](api-mediaconvert-2017-08-29-createqueue.md)
+  - [CreateResourceShare](api-mediaconvert-2017-08-29-createresourceshare.md)
+  - [DeleteJobTemplate](api-mediaconvert-2017-08-29-deletejobtemplate.md)
+  - [DeletePolicy](api-mediaconvert-2017-08-29-deletepolicy.md)
+  - [DeletePreset](api-mediaconvert-2017-08-29-deletepreset.md)
+  - [DeleteQueue](api-mediaconvert-2017-08-29-deletequeue.md)
+  - [DescribeEndpoints](api-mediaconvert-2017-08-29-describeendpoints.md)
+  - [DisassociateCertificate](api-mediaconvert-2017-08-29-disassociatecertificate.md)
+  - [GetJob](api-mediaconvert-2017-08-29-getjob.md)
+  - [GetJobTemplate](api-mediaconvert-2017-08-29-getjobtemplate.md)
+  - [GetJobsQueryResults](api-mediaconvert-2017-08-29-getjobsqueryresults.md)
+  - [GetPolicy](api-mediaconvert-2017-08-29-getpolicy.md)
+  - [GetPreset](api-mediaconvert-2017-08-29-getpreset.md)
+  - [GetQueue](api-mediaconvert-2017-08-29-getqueue.md)
+  - [ListJobTemplates](api-mediaconvert-2017-08-29-listjobtemplates.md)
+  - [ListJobs](api-mediaconvert-2017-08-29-listjobs.md)
+  - [ListPresets](api-mediaconvert-2017-08-29-listpresets.md)
+  - [ListQueues](api-mediaconvert-2017-08-29-listqueues.md)
+  - [ListTagsForResource](api-mediaconvert-2017-08-29-listtagsforresource.md)
+  - [ListVersions](api-mediaconvert-2017-08-29-listversions.md)
+  - [Probe](api-mediaconvert-2017-08-29-probe.md)
+  - [PutPolicy](api-mediaconvert-2017-08-29-putpolicy.md)
+  - [SearchJobs](api-mediaconvert-2017-08-29-searchjobs.md)
+  - [StartJobsQuery](api-mediaconvert-2017-08-29-startjobsquery.md)
+  - [TagResource](api-mediaconvert-2017-08-29-tagresource.md)
+  - [UntagResource](api-mediaconvert-2017-08-29-untagresource.md)
+  - [UpdateJobTemplate](api-mediaconvert-2017-08-29-updatejobtemplate.md)
+  - [UpdatePreset](api-mediaconvert-2017-08-29-updatepreset.md)
+  - [UpdateQueue](api-mediaconvert-2017-08-29-updatequeue.md)
 
 ## Examples
 
 ### Legacy Code Examples With Guidance
 
-The following examples demonstrate how to use this service with the AWS SDK for PHP. These code examples are available in the [AWS SDK for PHP Developer Guide](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/emc-examples.html).
+The following examples demonstrate how to use this service with the AWS SDK for PHP. These code examples are available in the [AWS SDK for PHP Developer Guide](../../../sdk-for-php/v3/developer-guide/emc-examples.md).
 
-- [Create and manage transcoding jobs in AWS Elemental MediaConvert](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/emc-examples.html)
+- [Create and manage transcoding jobs in AWS Elemental MediaConvert](../../../sdk-for-php/v3/developer-guide/emc-examples.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaConvert.MediaConvertClient.html\#toc)
+### Table of Contents  [header link](class-aws-mediaconvert-mediaconvertclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaConvert.MediaConvertClient.html\#toc-methods)
+#### Methods  [header link](class-aws-mediaconvert-mediaconvertclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -95,7 +95,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaConvert.MediaConvertClient.html\#methods)
+### Methods  [header link](class-aws-mediaconvert-mediaconvertclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -562,7 +562,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaConvert.MediaConvertClient.html#toc-methods)
+  - [Methods](class-aws-mediaconvert-mediaconvertclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -589,4 +589,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaConvert.MediaConvertClient.html#top)
+[Back To Top](class-aws-mediaconvert-mediaconvertclient-top.md)

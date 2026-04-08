@@ -4,28 +4,28 @@ Menu
 
 ## Token
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.token.html\#toc)
+### Table of Contents  [header link](namespace-aws-token-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.token.html\#toc-interfaces)
+#### Interfaces  [header link](namespace-aws-token-toc-interfaces.md)
 
-[RefreshableTokenProviderInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.RefreshableTokenProviderInterface.html)Provides access to an AWS token used for accessing AWS services[TokenAuthorization](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenAuthorization.html)Interface used to provide interchangeable strategies for adding authorization
-to requests using the various AWS signature protocols.[TokenInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenInterface.html)Provides access to an AWS token used for accessing AWS services
+[RefreshableTokenProviderInterface](class-aws-token-refreshabletokenproviderinterface.md)Provides access to an AWS token used for accessing AWS services[TokenAuthorization](class-aws-token-tokenauthorization.md)Interface used to provide interchangeable strategies for adding authorization
+to requests using the various AWS signature protocols.[TokenInterface](class-aws-token-tokeninterface.md)Provides access to an AWS token used for accessing AWS services
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.token.html\#toc-classes)
+#### Classes  [header link](namespace-aws-token-toc-classes.md)
 
-[BearerTokenAuthorization](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BearerTokenAuthorization.html)Interface used to provide interchangeable strategies for adding authorization
-to requests using the various AWS signature protocols.[BedrockTokenProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.BedrockTokenProvider.html)Token provider for Bedrock that sources bearer tokens from environment variables.[SsoToken](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoToken.html)Token that comes from the SSO provider[SsoTokenProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.SsoTokenProvider.html)Token that comes from the SSO provider[Token](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.Token.html)Basic implementation of the AWS Token interface that allows callers to
-pass in an AWS token in the constructor.[TokenProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenProvider.html)Token providers are functions that accept no arguments and return a
+[BearerTokenAuthorization](class-aws-token-bearertokenauthorization.md)Interface used to provide interchangeable strategies for adding authorization
+to requests using the various AWS signature protocols.[BedrockTokenProvider](class-aws-token-bedrocktokenprovider.md)Token provider for Bedrock that sources bearer tokens from environment variables.[SsoToken](class-aws-token-ssotoken.md)Token that comes from the SSO provider[SsoTokenProvider](class-aws-token-ssotokenprovider.md)Token that comes from the SSO provider[Token](class-aws-token-token.md)Basic implementation of the AWS Token interface that allows callers to
+pass in an AWS token in the constructor.[TokenProvider](class-aws-token-tokenprovider.md)Token providers are functions that accept no arguments and return a
 promise that is fulfilled with an {@see \\Aws\\Token\\TokenInterface}
 or rejected with an {@see \\Aws\\Exception\\TokenException}.
 
-#### Traits  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.token.html\#toc-traits)
+#### Traits  [header link](namespace-aws-token-toc-traits.md)
 
-[ParsesIniTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.ParsesIniTrait.html)
+[ParsesIniTrait](class-aws-token-parsesinitrait.md)
 
-#### Enums  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.token.html\#toc-enums)
+#### Enums  [header link](namespace-aws-token-toc-enums.md)
 
-[TokenSource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Token.TokenSource.html)
+[TokenSource](class-aws-token-tokensource.md)
 
 ```
 
@@ -36,9 +36,9 @@ or rejected with an {@see \\Aws\\Exception\\TokenException}.
 **On this page**
 
 - Table Of Contents
-  - [Interfaces](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.token.html#toc-interfaces)
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.token.html#toc-classes)
-  - [Traits](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.token.html#toc-traits)
-  - [Enums](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.token.html#toc-enums)
+  - [Interfaces](namespace-aws-token-toc-interfaces.md)
+  - [Classes](namespace-aws-token-toc-classes.md)
+  - [Traits](namespace-aws-token-toc-traits.md)
+  - [Enums](namespace-aws-token-toc-enums.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.token.html#top)
+[Back To Top](namespace-aws-token-top.md)

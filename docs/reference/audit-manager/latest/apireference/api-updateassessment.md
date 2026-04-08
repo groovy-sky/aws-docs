@@ -5,7 +5,7 @@
 AWS Audit Manager will no longer be open to new
 customers starting April 30, 2026. If you would like to use Audit Manager, sign up prior to that date. Existing customers can
 continue to use the service as normal. For more information, see
-[AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
+[AWS Audit Manager availability change](../../../../services/audit-manager/latest/userguide/audit-manager-availability-change.md).
 
 Edits an Audit Manager assessment.
 
@@ -92,7 +92,7 @@ Required: No
 
 The assessment report storage destination for the assessment that's being updated.
 
-Type: [AssessmentReportsDestination](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_AssessmentReportsDestination.html) object
+Type: [AssessmentReportsDestination](api-assessmentreportsdestination.md) object
 
 Required: No
 
@@ -100,7 +100,7 @@ Required: No
 
 The list of roles for the assessment.
 
-Type: Array of [Role](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Role.html) objects
+Type: Array of [Role](api-role.md) objects
 
 Required: No
 
@@ -108,7 +108,7 @@ Required: No
 
 The scope of the assessment.
 
-Type: [Scope](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Scope.html) object
+Type: [Scope](api-scope.md) object
 
 Required: Yes
 
@@ -252,11 +252,11 @@ The following data is returned in JSON format by the service.
 The response object for the `UpdateAssessment` API. This is the name of the
 updated assessment.
 
-Type: [Assessment](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Assessment.html) object
+Type: [Assessment](api-assessment.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/audit-manager/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **AccessDeniedException**
 
@@ -289,9 +289,9 @@ HTTP Status Code: 404
 **ServiceQuotaExceededException**
 
 You've reached your account quota for this resource type. To perform the requested
-action, delete some existing resources or [request a quota increase](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html) from
+action, delete some existing resources or [request a quota increase](../../../../general/general/latest/gr/aws-service-limits.md) from
 the Service Quotas console. For a list of Audit Manager service quotas, see [Quotas and\
-restrictions for AWS Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/userguide/service-quotas.html).
+restrictions for AWS Audit Manager](../../../../services/audit-manager/latest/userguide/service-quotas.md).
 
 HTTP Status Code: 402
 
@@ -319,27 +319,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/auditmanager-2017-07-25/UpdateAssessment)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/auditmanager-2017-07-25/updateassessment.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/auditmanager-2017-07-25/UpdateAssessment)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/auditmanager-2017-07-25/updateassessment.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/auditmanager-2017-07-25/UpdateAssessment)
+- [AWS SDK for C++](../../../goto/sdkforcpp/auditmanager-2017-07-25/updateassessment.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/auditmanager-2017-07-25/UpdateAssessment)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/auditmanager-2017-07-25/updateassessment.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/auditmanager-2017-07-25/UpdateAssessment)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/auditmanager-2017-07-25/updateassessment.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/auditmanager-2017-07-25/UpdateAssessment)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/auditmanager-2017-07-25/updateassessment.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/auditmanager-2017-07-25/UpdateAssessment)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/auditmanager-2017-07-25/updateassessment.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/auditmanager-2017-07-25/UpdateAssessment)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/auditmanager-2017-07-25/updateassessment.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/auditmanager-2017-07-25/UpdateAssessment)
+- [AWS SDK for Python](../../../../services/goto/boto3/auditmanager-2017-07-25/updateassessment.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/auditmanager-2017-07-25/UpdateAssessment)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/auditmanager-2017-07-25/updateassessment.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 UntagResource
 

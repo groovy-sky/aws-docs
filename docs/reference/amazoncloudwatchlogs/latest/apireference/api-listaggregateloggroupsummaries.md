@@ -61,7 +61,7 @@ Required: No
 Filters the results by data source characteristics to include only log groups associated
 with the specified data sources.
 
-Type: Array of [DataSourceFilter](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DataSourceFilter.html) objects
+Type: Array of [DataSourceFilter](api-datasourcefilter.md) objects
 
 Array Members: Minimum number of 1 item. Maximum number of 5 items.
 
@@ -183,7 +183,7 @@ The following data is returned in JSON format by the service.
 The list of aggregate log group summaries grouped by the specified data source
 characteristics.
 
-Type: Array of [AggregateLogGroupSummary](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_AggregateLogGroupSummary.html) objects
+Type: Array of [AggregateLogGroupSummary](api-aggregateloggroupsummary.md) objects
 
 **[nextToken](#API_ListAggregateLogGroupSummaries_ResponseSyntax)**
 
@@ -220,27 +220,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/logs-2014-03-28/ListAggregateLogGroupSummaries)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/logs-2014-03-28/listaggregateloggroupsummaries.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/logs-2014-03-28/ListAggregateLogGroupSummaries)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/logs-2014-03-28/listaggregateloggroupsummaries.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/ListAggregateLogGroupSummaries)
+- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/listaggregateloggroupsummaries.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/logs-2014-03-28/ListAggregateLogGroupSummaries)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/logs-2014-03-28/listaggregateloggroupsummaries.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/ListAggregateLogGroupSummaries)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/listaggregateloggroupsummaries.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/logs-2014-03-28/ListAggregateLogGroupSummaries)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/logs-2014-03-28/listaggregateloggroupsummaries.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/logs-2014-03-28/ListAggregateLogGroupSummaries)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/logs-2014-03-28/listaggregateloggroupsummaries.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/logs-2014-03-28/ListAggregateLogGroupSummaries)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/logs-2014-03-28/listaggregateloggroupsummaries.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/logs-2014-03-28/ListAggregateLogGroupSummaries)
+- [AWS SDK for Python](../../../../services/goto/boto3/logs-2014-03-28/listaggregateloggroupsummaries.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/logs-2014-03-28/ListAggregateLogGroupSummaries)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/listaggregateloggroupsummaries.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GetTransformer
 

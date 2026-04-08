@@ -4,15 +4,15 @@ Menu
 
 ## ServiceDiscovery
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.servicediscovery.html\#toc)
+### Table of Contents  [header link](namespace-aws-servicediscovery-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.servicediscovery.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-servicediscovery-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.servicediscovery.exception.html)
+[Exception](namespace-aws-servicediscovery-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.servicediscovery.html\#toc-classes)
+#### Classes  [header link](namespace-aws-servicediscovery-toc-classes.md)
 
-[ServiceDiscoveryClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServiceDiscovery.ServiceDiscoveryClient.html)This client is used to interact with the **Amazon Route 53 Auto Naming** service.
+[ServiceDiscoveryClient](class-aws-servicediscovery-servicediscoveryclient.md)This client is used to interact with the **Amazon Route 53 Auto Naming** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.servicediscovery.html#toc-classes)
+  - [Classes](namespace-aws-servicediscovery-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.servicediscovery.html#top)
+[Back To Top](namespace-aws-servicediscovery-top.md)

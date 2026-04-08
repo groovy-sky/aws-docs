@@ -21,7 +21,7 @@ Required: No
 
 The control sets that are associated with the framework.
 
-Type: Array of [AssessmentControlSet](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_AssessmentControlSet.html) objects
+Type: Array of [AssessmentControlSet](api-assessmentcontrolset.md) objects
 
 Required: No
 
@@ -41,7 +41,7 @@ Required: No
 
 The metadata of a framework, such as the name, ID, or description.
 
-Type: [FrameworkMetadata](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_FrameworkMetadata.html) object
+Type: [FrameworkMetadata](api-frameworkmetadata.md) object
 
 Required: No
 
@@ -49,13 +49,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/auditmanager-2017-07-25/AssessmentFramework)
+- [AWS SDK for C++](../../../goto/sdkforcpp/auditmanager-2017-07-25/assessmentframework.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/auditmanager-2017-07-25/AssessmentFramework)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/auditmanager-2017-07-25/assessmentframework.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/auditmanager-2017-07-25/AssessmentFramework)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/auditmanager-2017-07-25/assessmentframework.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AssessmentEvidenceFolder
 

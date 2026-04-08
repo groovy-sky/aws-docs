@@ -2,7 +2,7 @@
 
 Renews an [eligible ACM certificate](../../../../services/acm/latest/userguide/managed-renewal.md). In order to renew your AWS Private CA certificates
 with ACM, you must first [grant the ACM service\
-principal permission to do so](https://docs.aws.amazon.com/privateca/latest/userguide/assign-permissions.html#PcaPermissions). For more information, see [Testing\
+principal permission to do so](../../../../services/privateca/latest/userguide/assign-permissions-pcapermissions.md). For more information, see [Testing\
 Managed Renewal](../../../../services/acm/latest/userguide/managed-renewal.md) in the ACM User Guide.
 
 ## Request Syntax
@@ -31,7 +31,7 @@ the form:
 
 `arn:aws:acm:region:123456789012:certificate/12345678-1234-1234-1234-123456789012`
 
-For more information about ARNs, see [Amazon Resource Names (ARNs)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html).
+For more information about ARNs, see [Amazon Resource Names (ARNs)](../../../../general/general/latest/gr/aws-arns-and-namespaces.md).
 
 Type: String
 
@@ -112,27 +112,27 @@ Date: Thu, 24 Jan 2019 17:15:05 GMT
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/acm-2015-12-08/RenewCertificate)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/acm-2015-12-08/renewcertificate.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/acm-2015-12-08/RenewCertificate)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/acm-2015-12-08/renewcertificate.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/acm-2015-12-08/RenewCertificate)
+- [AWS SDK for C++](../../../goto/sdkforcpp/acm-2015-12-08/renewcertificate.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/acm-2015-12-08/RenewCertificate)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/acm-2015-12-08/renewcertificate.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/acm-2015-12-08/RenewCertificate)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/acm-2015-12-08/renewcertificate.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/acm-2015-12-08/RenewCertificate)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/acm-2015-12-08/renewcertificate.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/acm-2015-12-08/RenewCertificate)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/acm-2015-12-08/renewcertificate.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/acm-2015-12-08/RenewCertificate)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/acm-2015-12-08/renewcertificate.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/acm-2015-12-08/RenewCertificate)
+- [AWS SDK for Python](../../../../services/goto/boto3/acm-2015-12-08/renewcertificate.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/acm-2015-12-08/RenewCertificate)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/acm-2015-12-08/renewcertificate.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 RemoveTagsFromCertificate
 

@@ -112,7 +112,7 @@ The `results` value is an array of arrays. Each log event is one object in the
 top-level array. Each of these log event objects is an array of
 `field`/ `value` pairs.
 
-Type: Array of arrays of [ResultField](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ResultField.html) objects
+Type: Array of arrays of [ResultField](api-resultfield.md) objects
 
 **[statistics](#API_GetQueryResults_ResponseSyntax)**
 
@@ -120,7 +120,7 @@ Includes the number of log events scanned by the query, the number of log events
 matched the query criteria, and the total number of bytes in the scanned log events. These
 values reflect the full raw results of the query.
 
-Type: [QueryStatistics](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_QueryStatistics.html) object
+Type: [QueryStatistics](api-querystatistics.md) object
 
 **[status](#API_GetQueryResults_ResponseSyntax)**
 
@@ -252,27 +252,27 @@ Date: <Date>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/logs-2014-03-28/GetQueryResults)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/logs-2014-03-28/getqueryresults.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/logs-2014-03-28/GetQueryResults)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/logs-2014-03-28/getqueryresults.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/GetQueryResults)
+- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/getqueryresults.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/logs-2014-03-28/GetQueryResults)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/logs-2014-03-28/getqueryresults.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/GetQueryResults)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/getqueryresults.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/logs-2014-03-28/GetQueryResults)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/logs-2014-03-28/getqueryresults.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/logs-2014-03-28/GetQueryResults)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/logs-2014-03-28/getqueryresults.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/logs-2014-03-28/GetQueryResults)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/logs-2014-03-28/getqueryresults.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/logs-2014-03-28/GetQueryResults)
+- [AWS SDK for Python](../../../../services/goto/boto3/logs-2014-03-28/getqueryresults.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/logs-2014-03-28/GetQueryResults)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/getqueryresults.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GetLookupTable
 

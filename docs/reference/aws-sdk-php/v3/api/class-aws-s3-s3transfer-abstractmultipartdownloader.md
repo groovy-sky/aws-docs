@@ -2,44 +2,44 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
 
 ## AbstractMultipartDownloader        in package    - [Aws](package-aws.md)       implements  [PromisorInterface](class-guzzlehttp-promise-promisorinterface.md)
 
 AbstractYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-abstractmultipartdownloader-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-s3-s3transfer-abstractmultipartdownloader-toc-interfaces.md)
 
 [PromisorInterface](class-guzzlehttp-promise-promisorinterface.md)Interface used with classes that return a promise.
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html\#toc-constants)
+#### Constants  [header link](class-aws-s3-s3transfer-abstractmultipartdownloader-toc-constants.md)
 
-[GET\_OBJECT\_COMMAND](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#constant_GET_OBJECT_COMMAND)
-= "GetObject" [PART\_GET\_MULTIPART\_DOWNLOADER](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#constant_PART_GET_MULTIPART_DOWNLOADER)
-= "part" [RANGED\_GET\_MULTIPART\_DOWNLOADER](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#constant_RANGED_GET_MULTIPART_DOWNLOADER)
+[GET\_OBJECT\_COMMAND](class-aws-s3-s3transfer-abstractmultipartdownloader-constant-get-object-command.md)
+= "GetObject" [PART\_GET\_MULTIPART\_DOWNLOADER](class-aws-s3-s3transfer-abstractmultipartdownloader-constant-part-get-multipart-downloader.md)
+= "part" [RANGED\_GET\_MULTIPART\_DOWNLOADER](class-aws-s3-s3transfer-abstractmultipartdownloader-constant-ranged-get-multipart-downloader.md)
 = "ranged"
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-abstractmultipartdownloader-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#method___construct)
-: mixed [chooseDownloaderClass()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#method_chooseDownloaderClass)
-: string [computeObjectSizeFromContentRange()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#method_computeObjectSizeFromContentRange)
-: int Calculates the object size from content range.[download()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#method_download)
-: [DownloadResult](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadResult.html)[getConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#method_getConfig)
-: array<string\|int, mixed> [getCurrentPartNo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#method_getCurrentPartNo)
-: int [getCurrentSnapshot()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#method_getCurrentSnapshot)
-: [TransferProgressSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html)[getObjectPartsCount()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#method_getObjectPartsCount)
-: int [getObjectSizeInBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#method_getObjectSizeInBytes)
-: int [getRangeTo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#method_getRangeTo)
-: int [promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#method_promise)
+[\_\_construct()](class-aws-s3-s3transfer-abstractmultipartdownloader-method-construct.md)
+: mixed [chooseDownloaderClass()](class-aws-s3-s3transfer-abstractmultipartdownloader-method-choosedownloaderclass.md)
+: string [computeObjectSizeFromContentRange()](class-aws-s3-s3transfer-abstractmultipartdownloader-method-computeobjectsizefromcontentrange.md)
+: int Calculates the object size from content range.[download()](class-aws-s3-s3transfer-abstractmultipartdownloader-method-download.md)
+: [DownloadResult](class-aws-s3-s3transfer-models-downloadresult.md)[getConfig()](class-aws-s3-s3transfer-abstractmultipartdownloader-method-getconfig.md)
+: array<string\|int, mixed> [getCurrentPartNo()](class-aws-s3-s3transfer-abstractmultipartdownloader-method-getcurrentpartno.md)
+: int [getCurrentSnapshot()](class-aws-s3-s3transfer-abstractmultipartdownloader-method-getcurrentsnapshot.md)
+: [TransferProgressSnapshot](class-aws-s3-s3transfer-progress-transferprogresssnapshot.md)[getObjectPartsCount()](class-aws-s3-s3transfer-abstractmultipartdownloader-method-getobjectpartscount.md)
+: int [getObjectSizeInBytes()](class-aws-s3-s3transfer-abstractmultipartdownloader-method-getobjectsizeinbytes.md)
+: int [getRangeTo()](class-aws-s3-s3transfer-abstractmultipartdownloader-method-getrangeto.md)
+: int [promise()](class-aws-s3-s3transfer-abstractmultipartdownloader-method-promise.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Returns that resolves a multipart download operation,
 or to a rejection in case of any failures.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html\#constants)
+### Constants  [header link](class-aws-s3-s3transfer-abstractmultipartdownloader-constants.md)
 
-#### GET\_OBJECT\_COMMAND  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html\#constant_GET_OBJECT_COMMAND)
+#### GET\_OBJECT\_COMMAND  [header link](class-aws-s3-s3transfer-abstractmultipartdownloader-constant-get-object-command.md)
 
 `
     public
@@ -48,7 +48,7 @@ or to a rejection in case of any failures.
     = "GetObject"
 `
 
-#### PART\_GET\_MULTIPART\_DOWNLOADER  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html\#constant_PART_GET_MULTIPART_DOWNLOADER)
+#### PART\_GET\_MULTIPART\_DOWNLOADER  [header link](class-aws-s3-s3transfer-abstractmultipartdownloader-constant-part-get-multipart-downloader.md)
 
 `
     public
@@ -57,7 +57,7 @@ or to a rejection in case of any failures.
     = "part"
 `
 
-#### RANGED\_GET\_MULTIPART\_DOWNLOADER  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html\#constant_RANGED_GET_MULTIPART_DOWNLOADER)
+#### RANGED\_GET\_MULTIPART\_DOWNLOADER  [header link](class-aws-s3-s3transfer-abstractmultipartdownloader-constant-ranged-get-multipart-downloader.md)
 
 `
     public
@@ -66,9 +66,9 @@ or to a rejection in case of any failures.
     = "ranged"
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-abstractmultipartdownloader-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3transfer-abstractmultipartdownloader-method-construct.md)
 
 `
     public
@@ -81,7 +81,7 @@ $s3Client
 : array<string\|int, mixed>$config
 : array<string\|int, mixed>
 = \[\]$downloadHandler
-: [AbstractDownloadHandler](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.AbstractDownloadHandler.html) \|null
+: [AbstractDownloadHandler](class-aws-s3-s3transfer-utils-abstractdownloadhandler.md) \|null
 = null$partsCompleted
 : array<string\|int, mixed>
 = \[\]$objectPartsCount
@@ -91,14 +91,14 @@ $s3Client
 = 0$eTag
 : string\|null
 = null$currentSnapshot
-: [TransferProgressSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html) \|null
+: [TransferProgressSnapshot](class-aws-s3-s3transfer-progress-transferprogresssnapshot.md) \|null
 = null$listenerNotifier
-: [TransferListenerNotifier](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferListenerNotifier.html) \|null
+: [TransferListenerNotifier](class-aws-s3-s3transfer-progress-transferlistenernotifier.md) \|null
 = null$resumableDownload
-: [ResumableDownload](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableDownload.html) \|null
+: [ResumableDownload](class-aws-s3-s3transfer-models-resumabledownload.md) \|null
 = null
 
-#### chooseDownloaderClass()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html\#method_chooseDownloaderClass)
+#### chooseDownloaderClass()  [header link](class-aws-s3-s3transfer-abstractmultipartdownloader-method-choosedownloaderclass.md)
 
 `
     public
@@ -113,7 +113,7 @@ $multipartDownloadType
 
 string
 
-#### computeObjectSizeFromContentRange()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html\#method_computeObjectSizeFromContentRange)
+#### computeObjectSizeFromContentRange()  [header link](class-aws-s3-s3transfer-abstractmultipartdownloader-method-computeobjectsizefromcontentrange.md)
 
 Calculates the object size from content range.
 
@@ -130,7 +130,7 @@ $contentRange
 
 int
 
-#### download()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html\#method_download)
+#### download()  [header link](class-aws-s3-s3transfer-abstractmultipartdownloader-method-download.md)
 
 `
     public
@@ -138,9 +138,9 @@ int
 
 ##### Return values
 
-[DownloadResult](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.DownloadResult.html)
+[DownloadResult](class-aws-s3-s3transfer-models-downloadresult.md)
 
-#### getConfig()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html\#method_getConfig)
+#### getConfig()  [header link](class-aws-s3-s3transfer-abstractmultipartdownloader-method-getconfig.md)
 
 `
     public
@@ -150,7 +150,7 @@ int
 
 array<string\|int, mixed>
 
-#### getCurrentPartNo()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html\#method_getCurrentPartNo)
+#### getCurrentPartNo()  [header link](class-aws-s3-s3transfer-abstractmultipartdownloader-method-getcurrentpartno.md)
 
 `
     public
@@ -160,7 +160,7 @@ array<string\|int, mixed>
 
 int
 
-#### getCurrentSnapshot()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html\#method_getCurrentSnapshot)
+#### getCurrentSnapshot()  [header link](class-aws-s3-s3transfer-abstractmultipartdownloader-method-getcurrentsnapshot.md)
 
 `
     public
@@ -168,9 +168,9 @@ int
 
 ##### Return values
 
-[TransferProgressSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html)
+[TransferProgressSnapshot](class-aws-s3-s3transfer-progress-transferprogresssnapshot.md)
 
-#### getObjectPartsCount()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html\#method_getObjectPartsCount)
+#### getObjectPartsCount()  [header link](class-aws-s3-s3transfer-abstractmultipartdownloader-method-getobjectpartscount.md)
 
 `
     public
@@ -180,7 +180,7 @@ int
 
 int
 
-#### getObjectSizeInBytes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html\#method_getObjectSizeInBytes)
+#### getObjectSizeInBytes()  [header link](class-aws-s3-s3transfer-abstractmultipartdownloader-method-getobjectsizeinbytes.md)
 
 `
     public
@@ -190,7 +190,7 @@ int
 
 int
 
-#### getRangeTo()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html\#method_getRangeTo)
+#### getRangeTo()  [header link](class-aws-s3-s3transfer-abstractmultipartdownloader-method-getrangeto.md)
 
 `
     public
@@ -205,7 +205,7 @@ $range
 
 int
 
-#### promise()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html\#method_promise)
+#### promise()  [header link](class-aws-s3-s3transfer-abstractmultipartdownloader-method-promise.md)
 
 Returns that resolves a multipart download operation,
 or to a rejection in case of any failures.
@@ -224,23 +224,23 @@ or to a rejection in case of any failures.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#toc-methods)
+  - [Constants](class-aws-s3-s3transfer-abstractmultipartdownloader-toc-constants.md)
+  - [Methods](class-aws-s3-s3transfer-abstractmultipartdownloader-toc-methods.md)
 - Constants
-  - [GET\_OBJECT\_COMMAND](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#constant_GET_OBJECT_COMMAND)
-  - [PART\_GET\_MULTIPART\_DOWNLOADER](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#constant_PART_GET_MULTIPART_DOWNLOADER)
-  - [RANGED\_GET\_MULTIPART\_DOWNLOADER](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#constant_RANGED_GET_MULTIPART_DOWNLOADER)
+  - [GET\_OBJECT\_COMMAND](class-aws-s3-s3transfer-abstractmultipartdownloader-constant-get-object-command.md)
+  - [PART\_GET\_MULTIPART\_DOWNLOADER](class-aws-s3-s3transfer-abstractmultipartdownloader-constant-part-get-multipart-downloader.md)
+  - [RANGED\_GET\_MULTIPART\_DOWNLOADER](class-aws-s3-s3transfer-abstractmultipartdownloader-constant-ranged-get-multipart-downloader.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#method___construct)
-  - [chooseDownloaderClass()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#method_chooseDownloaderClass)
-  - [computeObjectSizeFromContentRange()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#method_computeObjectSizeFromContentRange)
-  - [download()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#method_download)
-  - [getConfig()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#method_getConfig)
-  - [getCurrentPartNo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#method_getCurrentPartNo)
-  - [getCurrentSnapshot()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#method_getCurrentSnapshot)
-  - [getObjectPartsCount()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#method_getObjectPartsCount)
-  - [getObjectSizeInBytes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#method_getObjectSizeInBytes)
-  - [getRangeTo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#method_getRangeTo)
-  - [promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#method_promise)
+  - [\_\_construct()](class-aws-s3-s3transfer-abstractmultipartdownloader-method-construct.md)
+  - [chooseDownloaderClass()](class-aws-s3-s3transfer-abstractmultipartdownloader-method-choosedownloaderclass.md)
+  - [computeObjectSizeFromContentRange()](class-aws-s3-s3transfer-abstractmultipartdownloader-method-computeobjectsizefromcontentrange.md)
+  - [download()](class-aws-s3-s3transfer-abstractmultipartdownloader-method-download.md)
+  - [getConfig()](class-aws-s3-s3transfer-abstractmultipartdownloader-method-getconfig.md)
+  - [getCurrentPartNo()](class-aws-s3-s3transfer-abstractmultipartdownloader-method-getcurrentpartno.md)
+  - [getCurrentSnapshot()](class-aws-s3-s3transfer-abstractmultipartdownloader-method-getcurrentsnapshot.md)
+  - [getObjectPartsCount()](class-aws-s3-s3transfer-abstractmultipartdownloader-method-getobjectpartscount.md)
+  - [getObjectSizeInBytes()](class-aws-s3-s3transfer-abstractmultipartdownloader-method-getobjectsizeinbytes.md)
+  - [getRangeTo()](class-aws-s3-s3transfer-abstractmultipartdownloader-method-getrangeto.md)
+  - [promise()](class-aws-s3-s3transfer-abstractmultipartdownloader-method-promise.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartDownloader.html#top)
+[Back To Top](class-aws-s3-s3transfer-abstractmultipartdownloader-top.md)

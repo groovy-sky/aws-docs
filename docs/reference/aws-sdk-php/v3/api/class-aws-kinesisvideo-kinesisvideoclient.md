@@ -17,44 +17,44 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-09-30**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html)
+- [**2017-09-30**](api-kinesisvideo-2017-09-30.md)
 
-  - [CreateSignalingChannel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#createsignalingchannel)
-  - [CreateStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#createstream)
-  - [DeleteEdgeConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#deleteedgeconfiguration)
-  - [DeleteSignalingChannel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#deletesignalingchannel)
-  - [DeleteStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#deletestream)
-  - [DescribeEdgeConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#describeedgeconfiguration)
-  - [DescribeImageGenerationConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#describeimagegenerationconfiguration)
-  - [DescribeMappedResourceConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#describemappedresourceconfiguration)
-  - [DescribeMediaStorageConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#describemediastorageconfiguration)
-  - [DescribeNotificationConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#describenotificationconfiguration)
-  - [DescribeSignalingChannel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#describesignalingchannel)
-  - [DescribeStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#describestream)
-  - [DescribeStreamStorageConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#describestreamstorageconfiguration)
-  - [GetDataEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#getdataendpoint)
-  - [GetSignalingChannelEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#getsignalingchannelendpoint)
-  - [ListEdgeAgentConfigurations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#listedgeagentconfigurations)
-  - [ListSignalingChannels](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#listsignalingchannels)
-  - [ListStreams](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#liststreams)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#listtagsforresource)
-  - [ListTagsForStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#listtagsforstream)
-  - [StartEdgeConfigurationUpdate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#startedgeconfigurationupdate)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#tagresource)
-  - [TagStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#tagstream)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#untagresource)
-  - [UntagStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#untagstream)
-  - [UpdateDataRetention](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#updatedataretention)
-  - [UpdateImageGenerationConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#updateimagegenerationconfiguration)
-  - [UpdateMediaStorageConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#updatemediastorageconfiguration)
-  - [UpdateNotificationConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#updatenotificationconfiguration)
-  - [UpdateSignalingChannel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#updatesignalingchannel)
-  - [UpdateStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#updatestream)
-  - [UpdateStreamStorageConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kinesisvideo-2017-09-30.html#updatestreamstorageconfiguration)
+  - [CreateSignalingChannel](api-kinesisvideo-2017-09-30-createsignalingchannel.md)
+  - [CreateStream](api-kinesisvideo-2017-09-30-createstream.md)
+  - [DeleteEdgeConfiguration](api-kinesisvideo-2017-09-30-deleteedgeconfiguration.md)
+  - [DeleteSignalingChannel](api-kinesisvideo-2017-09-30-deletesignalingchannel.md)
+  - [DeleteStream](api-kinesisvideo-2017-09-30-deletestream.md)
+  - [DescribeEdgeConfiguration](api-kinesisvideo-2017-09-30-describeedgeconfiguration.md)
+  - [DescribeImageGenerationConfiguration](api-kinesisvideo-2017-09-30-describeimagegenerationconfiguration.md)
+  - [DescribeMappedResourceConfiguration](api-kinesisvideo-2017-09-30-describemappedresourceconfiguration.md)
+  - [DescribeMediaStorageConfiguration](api-kinesisvideo-2017-09-30-describemediastorageconfiguration.md)
+  - [DescribeNotificationConfiguration](api-kinesisvideo-2017-09-30-describenotificationconfiguration.md)
+  - [DescribeSignalingChannel](api-kinesisvideo-2017-09-30-describesignalingchannel.md)
+  - [DescribeStream](api-kinesisvideo-2017-09-30-describestream.md)
+  - [DescribeStreamStorageConfiguration](api-kinesisvideo-2017-09-30-describestreamstorageconfiguration.md)
+  - [GetDataEndpoint](api-kinesisvideo-2017-09-30-getdataendpoint.md)
+  - [GetSignalingChannelEndpoint](api-kinesisvideo-2017-09-30-getsignalingchannelendpoint.md)
+  - [ListEdgeAgentConfigurations](api-kinesisvideo-2017-09-30-listedgeagentconfigurations.md)
+  - [ListSignalingChannels](api-kinesisvideo-2017-09-30-listsignalingchannels.md)
+  - [ListStreams](api-kinesisvideo-2017-09-30-liststreams.md)
+  - [ListTagsForResource](api-kinesisvideo-2017-09-30-listtagsforresource.md)
+  - [ListTagsForStream](api-kinesisvideo-2017-09-30-listtagsforstream.md)
+  - [StartEdgeConfigurationUpdate](api-kinesisvideo-2017-09-30-startedgeconfigurationupdate.md)
+  - [TagResource](api-kinesisvideo-2017-09-30-tagresource.md)
+  - [TagStream](api-kinesisvideo-2017-09-30-tagstream.md)
+  - [UntagResource](api-kinesisvideo-2017-09-30-untagresource.md)
+  - [UntagStream](api-kinesisvideo-2017-09-30-untagstream.md)
+  - [UpdateDataRetention](api-kinesisvideo-2017-09-30-updatedataretention.md)
+  - [UpdateImageGenerationConfiguration](api-kinesisvideo-2017-09-30-updateimagegenerationconfiguration.md)
+  - [UpdateMediaStorageConfiguration](api-kinesisvideo-2017-09-30-updatemediastorageconfiguration.md)
+  - [UpdateNotificationConfiguration](api-kinesisvideo-2017-09-30-updatenotificationconfiguration.md)
+  - [UpdateSignalingChannel](api-kinesisvideo-2017-09-30-updatesignalingchannel.md)
+  - [UpdateStream](api-kinesisvideo-2017-09-30-updatestream.md)
+  - [UpdateStreamStorageConfiguration](api-kinesisvideo-2017-09-30-updatestreamstorageconfiguration.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideo.KinesisVideoClient.html\#toc)
+### Table of Contents  [header link](class-aws-kinesisvideo-kinesisvideoclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideo.KinesisVideoClient.html\#toc-methods)
+#### Methods  [header link](class-aws-kinesisvideo-kinesisvideoclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -85,7 +85,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideo.KinesisVideoClient.html\#methods)
+### Methods  [header link](class-aws-kinesisvideo-kinesisvideoclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -552,7 +552,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideo.KinesisVideoClient.html#toc-methods)
+  - [Methods](class-aws-kinesisvideo-kinesisvideoclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -579,4 +579,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KinesisVideo.KinesisVideoClient.html#top)
+[Back To Top](class-aws-kinesisvideo-kinesisvideoclient-top.md)

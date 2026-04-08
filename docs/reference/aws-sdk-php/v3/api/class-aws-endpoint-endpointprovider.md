@@ -51,19 +51,19 @@ $res = $c($config); // $b handles this.
 
 ```
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.EndpointProvider.html\#toc)
+### Table of Contents  [header link](class-aws-endpoint-endpointprovider-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.EndpointProvider.html\#toc-methods)
+#### Methods  [header link](class-aws-endpoint-endpointprovider-toc-methods.md)
 
-[defaultProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.EndpointProvider.html#method_defaultProvider)
-: callable Creates and returns the default SDK endpoint provider.[patterns()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.EndpointProvider.html#method_patterns)
+[defaultProvider()](class-aws-endpoint-endpointprovider-method-defaultprovider.md)
+: callable Creates and returns the default SDK endpoint provider.[patterns()](class-aws-endpoint-endpointprovider-method-patterns.md)
 : callable Creates and returns an endpoint provider that uses patterns from an
-array.[resolve()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.EndpointProvider.html#method_resolve)
+array.[resolve()](class-aws-endpoint-endpointprovider-method-resolve.md)
 : array<string\|int, mixed> Resolves and endpoint provider and ensures a non-null return value.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.EndpointProvider.html\#methods)
+### Methods  [header link](class-aws-endpoint-endpointprovider-methods.md)
 
-#### defaultProvider()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.EndpointProvider.html\#method_defaultProvider)
+#### defaultProvider()  [header link](class-aws-endpoint-endpointprovider-method-defaultprovider.md)
 
 Creates and returns the default SDK endpoint provider.
 
@@ -71,7 +71,7 @@ Creates and returns the default SDK endpoint provider.
     public
             static        defaultProvider() : callable`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.EndpointProvider.html\#method_defaultProvider\#tags)
+##### Tags  [header link](class-aws-endpoint-endpointprovider-method-defaultprovider-tags.md)
 
 deprecated
 
@@ -81,7 +81,7 @@ Use an instance of \\Aws\\Endpoint\\Partition instead.
 
 callable
 
-#### patterns()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.EndpointProvider.html\#method_patterns)
+#### patterns()  [header link](class-aws-endpoint-endpointprovider-method-patterns.md)
 
 Creates and returns an endpoint provider that uses patterns from an
 array.
@@ -101,7 +101,7 @@ Endpoint patterns
 
 callable
 
-#### resolve()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.EndpointProvider.html\#method_resolve)
+#### resolve()  [header link](class-aws-endpoint-endpointprovider-method-resolve.md)
 
 Resolves and endpoint provider and ensures a non-null return value.
 
@@ -122,9 +122,9 @@ $args
 
 Endpoint arguments to pass to the provider.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.EndpointProvider.html\#method_resolve\#tags)
+##### Tags  [header link](class-aws-endpoint-endpointprovider-method-resolve-tags.md)
 
-throws[UnresolvedEndpointException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.UnresolvedEndpointException.html)
+throws[UnresolvedEndpointException](class-aws-exception-unresolvedendpointexception.md)
 
 ##### Return values
 
@@ -136,10 +136,10 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.EndpointProvider.html#toc-methods)
+  - [Methods](class-aws-endpoint-endpointprovider-toc-methods.md)
 - Methods
-  - [defaultProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.EndpointProvider.html#method_defaultProvider)
-  - [patterns()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.EndpointProvider.html#method_patterns)
-  - [resolve()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.EndpointProvider.html#method_resolve)
+  - [defaultProvider()](class-aws-endpoint-endpointprovider-method-defaultprovider.md)
+  - [patterns()](class-aws-endpoint-endpointprovider-method-patterns.md)
+  - [resolve()](class-aws-endpoint-endpointprovider-method-resolve.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.EndpointProvider.html#top)
+[Back To Top](class-aws-endpoint-endpointprovider-top.md)

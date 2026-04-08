@@ -2,15 +2,15 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [Lambda](namespace-aws-lambda.md)
-- [Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.lambda.exception.html)
+- [Exception](namespace-aws-lambda-exception.md)
 
 ## LambdaException     extends [AwsException](class-aws-exception-awsexception.md)   in package    - [Aws](package-aws.md)
 
 Represents an error interacting with AWS Lambda
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Lambda.Exception.LambdaException.html\#toc)
+### Table of Contents  [header link](class-aws-lambda-exception-lambdaexception-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Lambda.Exception.LambdaException.html\#toc-methods)
+#### Methods  [header link](class-aws-lambda-exception-lambdaexception-toc-methods.md)
 
 [\_\_construct()](class-aws-exception-awsexception.md#method___construct)
 : mixed [\_\_toString()](class-aws-exception-awsexception.md#method___toString)
@@ -50,7 +50,7 @@ array modification (e.g., $foo\['bar'\]\['baz'\] = 'qux').[offsetSet()](class-aw
 : mixed Replace the transfer information associated with an exception.[toArray()](class-aws-hasdatatrait.md#method_toArray)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Lambda.Exception.LambdaException.html\#methods)
+### Methods  [header link](class-aws-lambda-exception-lambdaexception-methods.md)
 
 #### \_\_construct()  [header link](class-aws-exception-awsexception.md\#method___construct)
 
@@ -446,7 +446,7 @@ $info
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Lambda.Exception.LambdaException.html#toc-methods)
+  - [Methods](class-aws-lambda-exception-lambdaexception-toc-methods.md)
 - Methods
   - [\_\_construct()](class-aws-exception-awsexception.md#method___construct)
   - [\_\_toString()](class-aws-exception-awsexception.md#method___toString)
@@ -479,4 +479,4 @@ $info
   - [setTransferInfo()](class-aws-exception-awsexception.md#method_setTransferInfo)
   - [toArray()](class-aws-hasdatatrait.md#method_toArray)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Lambda.Exception.LambdaException.html#top)
+[Back To Top](class-aws-lambda-exception-lambdaexception-top.md)

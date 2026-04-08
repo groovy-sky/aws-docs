@@ -7,7 +7,7 @@ When creating resource record sets for a private hosted zone, note the
 following:
 
 - For information about creating failover resource record sets in a private
-hosted zone, see [Configuring Failover in a Private Hosted Zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-private-hosted-zones.html).
+hosted zone, see [Configuring Failover in a Private Hosted Zone](../../../../services/route53/latest/developerguide/dns-failover-private-hosted-zones.md).
 
 ## Contents
 
@@ -19,7 +19,7 @@ depends on where you want to route queries:
 Amazon API Gateway custom regional APIs and edge-optimized APIs
 
 Specify the applicable domain name for your API. You can get the
-applicable value using the AWS CLI command [get-domain-names](https://docs.aws.amazon.com/cli/latest/reference/apigateway/get-domain-names.html):
+applicable value using the AWS CLI command [get-domain-names](../../../../services/cli/latest/reference/apigateway/get-domain-names.md):
 
 - For regional APIs, specify the value of
 `regionalDomainName`.
@@ -40,7 +40,7 @@ Enter the API endpoint for the interface endpoint, such as
 `vpce-123456789abcdef01-example-us-east-1a.elasticloadbalancing.us-east-1.vpce.amazonaws.com`.
 For edge-optimized APIs, this is the domain name for the corresponding
 CloudFront distribution. You can get the value of `DnsName` using
-the AWS CLI command [describe-vpc-endpoints](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-vpc-endpoints.html).
+the AWS CLI command [describe-vpc-endpoints](../../../../services/cli/latest/reference/ec2/describe-vpc-endpoints.md).
 
 CloudFront distribution
 
@@ -52,7 +52,7 @@ matches the name of the resource record set. For example, if the name of the
 resource record set is _acme.example.com_, your
 CloudFront distribution must include _acme.example.com_
 as one of the alternate domain names. For more information, see [Using Alternate\
-Domain Names (CNAMEs)](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/CNAMEs.html) in the _Amazon CloudFront_
+Domain Names (CNAMEs)](../../../../services/amazoncloudfront/latest/developerguide/cnames.md) in the _Amazon CloudFront_
 _Developer Guide_.
 
 You can't create a resource record set in a private hosted zone to route
@@ -92,17 +92,17 @@ the following methods to get the value of the CNAME attribute:
 
 - _AWS Management Console_: For information about
 how to get the value by using the console, see [Using Custom\
-Domains with AWS Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/customdomains.html) in the
+Domains with AWS Elastic Beanstalk](../../../../services/elasticbeanstalk/latest/dg/customdomains.md) in the
 _AWS Elastic Beanstalk Developer_
 _Guide_.
 
 - _Elastic Beanstalk API_: Use the
 `DescribeEnvironments` action to get the value of the
-`CNAME` attribute. For more information, see [DescribeEnvironments](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_DescribeEnvironments.html) in the _AWS Elastic Beanstalk API Reference_.
+`CNAME` attribute. For more information, see [DescribeEnvironments](../../../../services/elasticbeanstalk/latest/api/api-describeenvironments.md) in the _AWS Elastic Beanstalk API Reference_.
 
 - _AWS CLI_: Use the
 `describe-environments` command to get the value of
-the `CNAME` attribute. For more information, see [describe-environments](https://docs.aws.amazon.com/cli/latest/reference/elasticbeanstalk/describe-environments.html) in the _AWS CLI Command Reference_.
+the `CNAME` attribute. For more information, see [describe-environments](../../../../services/cli/latest/reference/elasticbeanstalk/describe-environments.md) in the _AWS CLI Command Reference_.
 
 ELB load balancer
 
@@ -124,35 +124,35 @@ value that applies to the record type, A or AAAA.
 `DNSName`. For more information, see the applicable
 guide:
 
-- Classic Load Balancers: [DescribeLoadBalancers](https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_DescribeLoadBalancers.html)
+- Classic Load Balancers: [DescribeLoadBalancers](../../../elasticloadbalancing/2012-06-01/apireference/api-describeloadbalancers.md)
 
-- Application and Network Load Balancers: [DescribeLoadBalancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeLoadBalancers.html)
+- Application and Network Load Balancers: [DescribeLoadBalancers](../../../elasticloadbalancing/latest/apireference/api-describeloadbalancers.md)
 
 - **AWS CLI**: Use
 `describe-load-balancers` to get the value of
 `DNSName`. For more information, see the applicable
 guide:
 
-- Classic Load Balancers: [describe-load-balancers](https://docs.aws.amazon.com/cli/latest/reference/elb/describe-load-balancers.html)
+- Classic Load Balancers: [describe-load-balancers](../../../../services/cli/latest/reference/elb/describe-load-balancers.md)
 
-- Application and Network Load Balancers: [describe-load-balancers](https://docs.aws.amazon.com/cli/latest/reference/elbv2/describe-load-balancers.html)
+- Application and Network Load Balancers: [describe-load-balancers](../../../../services/cli/latest/reference/elbv2/describe-load-balancers.md)
 
 AWS Global Accelerator accelerator
 
 Specify the DNS name for your accelerator:
 
 - **Global Accelerator API:** To get
-the DNS name, use [DescribeAccelerator](https://docs.aws.amazon.com/global-accelerator/latest/api/API_DescribeAccelerator.html).
+the DNS name, use [DescribeAccelerator](../../../../services/global-accelerator/latest/api/api-describeaccelerator.md).
 
 - **AWS CLI:** To get the
-DNS name, use [describe-accelerator](https://docs.aws.amazon.com/cli/latest/reference/globalaccelerator/describe-accelerator.html).
+DNS name, use [describe-accelerator](../../../../services/cli/latest/reference/globalaccelerator/describe-accelerator.md).
 
 Amazon S3 bucket that is configured as a static website
 
 Specify the domain name of the Amazon S3 website endpoint that you created
 the bucket in, for example, `s3-website.us-east-2.amazonaws.com`.
 For more information about valid values, see the table [Amazon S3\
-Website Endpoints](https://docs.aws.amazon.com/general/latest/gr/s3.html#s3_website_region_endpoints) in the _Amazon Web Services General_
+Website Endpoints](../../../../general/general/latest/gr/s3-s3-website-region-endpoints.md) in the _Amazon Web Services General_
 _Reference_. For more information about using S3 buckets for
 websites, see [Getting Started\
 with Amazon Route 53](../../../../services/route53/latest/developerguide/getting-started.md) in the _Amazon Route 53 Developer_
@@ -278,7 +278,7 @@ If the AWS resource that you specify in
 `DNSName` is a record or a group of records (for example, a
 group of weighted records) but is not another alias record, we recommend
 that you associate a health check with all of the records in the alias
-target. For more information, see [What Happens When You Omit Health Checks?](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-complex-configs.html#dns-failover-complex-configs-hc-omitting) in the
+target. For more information, see [What Happens When You Omit Health Checks?](../../../../services/route53/latest/developerguide/dns-failover-complex-configs-dns-failover-complex-configs-hc-omitting.md) in the
 _Amazon Route 53 Developer Guide_.
 
 ###### Note
@@ -307,7 +307,7 @@ you want to route traffic:
 Amazon API Gateway custom regional APIs and edge-optimized APIs
 
 Specify the hosted zone ID for your API. You can get the applicable value
-using the AWS CLI command [get-domain-names](https://docs.aws.amazon.com/cli/latest/reference/apigateway/get-domain-names.html):
+using the AWS CLI command [get-domain-names](../../../../services/cli/latest/reference/apigateway/get-domain-names.md):
 
 - For regional APIs, specify the value of
 `regionalHostedZoneId`.
@@ -319,7 +319,7 @@ Amazon Virtual Private Cloud interface VPC endpoint
 
 Specify the hosted zone ID for your interface endpoint. You can get the
 value of `HostedZoneId` using the AWS CLI command
-[describe-vpc-endpoints](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-vpc-endpoints.html).
+[describe-vpc-endpoints](../../../../services/cli/latest/reference/ec2/describe-vpc-endpoints.md).
 
 CloudFront distribution
 
@@ -335,7 +335,7 @@ Elastic Beanstalk environment
 Specify the hosted zone ID for the region that you created the environment in. The
 environment must have a regionalized subdomain. For a list of regions and
 the corresponding hosted zone IDs, see [AWS Elastic Beanstalk\
-endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/elasticbeanstalk.html) in the _Amazon Web Services_
+endpoints and quotas](../../../../general/general/latest/gr/elasticbeanstalk.md) in the _Amazon Web Services_
 _General Reference_.
 
 ELB load balancer
@@ -343,7 +343,7 @@ ELB load balancer
 Specify the value of the hosted zone ID for the load balancer. Use the
 following methods to get the hosted zone ID:
 
-- [Elastic Load Balancing endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/elb.html) topic in
+- [Elastic Load Balancing endpoints and quotas](../../../../general/general/latest/gr/elb.md) topic in
 the _Amazon Web Services General Reference_: Use
 the value that corresponds with the region that you created your
 load balancer in. Note that there are separate columns for
@@ -360,20 +360,20 @@ balancer, and get the value of the **Hosted**
 `DescribeLoadBalancers` to get the applicable value.
 For more information, see the applicable guide:
 
-- Classic Load Balancers: Use [DescribeLoadBalancers](https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_DescribeLoadBalancers.html) to get the value of
+- Classic Load Balancers: Use [DescribeLoadBalancers](../../../elasticloadbalancing/2012-06-01/apireference/api-describeloadbalancers.md) to get the value of
 `CanonicalHostedZoneNameId`.
 
-- Application and Network Load Balancers: Use [DescribeLoadBalancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeLoadBalancers.html) to get the value of
+- Application and Network Load Balancers: Use [DescribeLoadBalancers](../../../elasticloadbalancing/latest/apireference/api-describeloadbalancers.md) to get the value of
 `CanonicalHostedZoneId`.
 
 - **AWS CLI**: Use
 `describe-load-balancers` to get the applicable
 value. For more information, see the applicable guide:
 
-- Classic Load Balancers: Use [describe-load-balancers](https://docs.aws.amazon.com/cli/latest/reference/elb/describe-load-balancers.html) to get the value of
+- Classic Load Balancers: Use [describe-load-balancers](../../../../services/cli/latest/reference/elb/describe-load-balancers.md) to get the value of
 `CanonicalHostedZoneNameId`.
 
-- Application and Network Load Balancers: Use [describe-load-balancers](https://docs.aws.amazon.com/cli/latest/reference/elbv2/describe-load-balancers.html) to get the value of
+- Application and Network Load Balancers: Use [describe-load-balancers](../../../../services/cli/latest/reference/elbv2/describe-load-balancers.md) to get the value of
 `CanonicalHostedZoneId`.
 
 AWS Global Accelerator accelerator
@@ -384,7 +384,7 @@ An Amazon S3 bucket configured as a static website
 
 Specify the hosted zone ID for the region that you created the bucket in.
 For more information about valid values, see the table [Amazon S3\
-Website Endpoints](https://docs.aws.amazon.com/general/latest/gr/s3.html#s3_website_region_endpoints) in the _Amazon Web Services General_
+Website Endpoints](../../../../general/general/latest/gr/s3-s3-website-region-endpoints.md) in the _Amazon Web Services General_
 _Reference_.
 
 Another Route 53 resource record set in your hosted zone
@@ -403,13 +403,13 @@ Required: Yes
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53-2013-04-01/AliasTarget)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53-2013-04-01/aliastarget.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53-2013-04-01/AliasTarget)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53-2013-04-01/aliastarget.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53-2013-04-01/AliasTarget)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53-2013-04-01/aliastarget.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AlarmIdentifier
 

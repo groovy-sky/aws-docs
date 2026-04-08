@@ -4,15 +4,15 @@ Menu
 
 ## DataZone
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.datazone.html\#toc)
+### Table of Contents  [header link](namespace-aws-datazone-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.datazone.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-datazone-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.datazone.exception.html)
+[Exception](namespace-aws-datazone-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.datazone.html\#toc-classes)
+#### Classes  [header link](namespace-aws-datazone-toc-classes.md)
 
-[DataZoneClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DataZone.DataZoneClient.html)This client is used to interact with the **Amazon DataZone** service.
+[DataZoneClient](class-aws-datazone-datazoneclient.md)This client is used to interact with the **Amazon DataZone** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.datazone.html#toc-classes)
+  - [Classes](namespace-aws-datazone-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.datazone.html#top)
+[Back To Top](namespace-aws-datazone-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## SageMaker
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemaker.html\#toc)
+### Table of Contents  [header link](namespace-aws-sagemaker-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemaker.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-sagemaker-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemaker.exception.html)
+[Exception](namespace-aws-sagemaker-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemaker.html\#toc-classes)
+#### Classes  [header link](namespace-aws-sagemaker-toc-classes.md)
 
-[SageMakerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMaker.SageMakerClient.html)This client is used to interact with the **Amazon SageMaker Service** service.
+[SageMakerClient](class-aws-sagemaker-sagemakerclient.md)This client is used to interact with the **Amazon SageMaker Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemaker.html#toc-classes)
+  - [Classes](namespace-aws-sagemaker-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemaker.html#top)
+[Back To Top](namespace-aws-sagemaker-top.md)

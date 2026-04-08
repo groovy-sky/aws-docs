@@ -135,7 +135,7 @@ The following data is returned in JSON format by the service.
 An array of structures. Each structure contains the details of one of the
 retrieved canary runs.
 
-Type: Array of [CanaryRun](https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API_CanaryRun.html) objects
+Type: Array of [CanaryRun](api-canaryrun.md) objects
 
 **[NextToken](#API_GetCanaryRuns_ResponseSyntax)**
 
@@ -150,7 +150,7 @@ Length Constraints: Minimum length of 4. Maximum length of 252.
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **InternalServerException**
 
@@ -174,27 +174,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/synthetics-2017-10-11/GetCanaryRuns)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/synthetics-2017-10-11/getcanaryruns.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/synthetics-2017-10-11/GetCanaryRuns)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/synthetics-2017-10-11/getcanaryruns.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/synthetics-2017-10-11/GetCanaryRuns)
+- [AWS SDK for C++](../../../goto/sdkforcpp/synthetics-2017-10-11/getcanaryruns.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/synthetics-2017-10-11/GetCanaryRuns)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/synthetics-2017-10-11/getcanaryruns.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/synthetics-2017-10-11/GetCanaryRuns)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/synthetics-2017-10-11/getcanaryruns.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/synthetics-2017-10-11/GetCanaryRuns)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/synthetics-2017-10-11/getcanaryruns.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/synthetics-2017-10-11/GetCanaryRuns)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/synthetics-2017-10-11/getcanaryruns.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/synthetics-2017-10-11/GetCanaryRuns)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/synthetics-2017-10-11/getcanaryruns.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/synthetics-2017-10-11/GetCanaryRuns)
+- [AWS SDK for Python](../../../../services/goto/boto3/synthetics-2017-10-11/getcanaryruns.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/synthetics-2017-10-11/GetCanaryRuns)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/synthetics-2017-10-11/getcanaryruns.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GetCanary
 

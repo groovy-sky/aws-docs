@@ -4,15 +4,15 @@ Menu
 
 ## ApplicationSignals
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationsignals.html\#toc)
+### Table of Contents  [header link](namespace-aws-applicationsignals-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationsignals.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-applicationsignals-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationsignals.exception.html)
+[Exception](namespace-aws-applicationsignals-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationsignals.html\#toc-classes)
+#### Classes  [header link](namespace-aws-applicationsignals-toc-classes.md)
 
-[ApplicationSignalsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationSignals.ApplicationSignalsClient.html)This client is used to interact with the **Amazon CloudWatch Application Signals** service.
+[ApplicationSignalsClient](class-aws-applicationsignals-applicationsignalsclient.md)This client is used to interact with the **Amazon CloudWatch Application Signals** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationsignals.html#toc-classes)
+  - [Classes](namespace-aws-applicationsignals-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationsignals.html#top)
+[Back To Top](namespace-aws-applicationsignals-top.md)

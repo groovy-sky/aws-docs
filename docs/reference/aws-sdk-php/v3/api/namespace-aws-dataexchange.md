@@ -4,15 +4,15 @@ Menu
 
 ## DataExchange
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dataexchange.html\#toc)
+### Table of Contents  [header link](namespace-aws-dataexchange-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dataexchange.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-dataexchange-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dataexchange.exception.html)
+[Exception](namespace-aws-dataexchange-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dataexchange.html\#toc-classes)
+#### Classes  [header link](namespace-aws-dataexchange-toc-classes.md)
 
-[DataExchangeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DataExchange.DataExchangeClient.html)This client is used to interact with the **AWS Data Exchange** service.
+[DataExchangeClient](class-aws-dataexchange-dataexchangeclient.md)This client is used to interact with the **AWS Data Exchange** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dataexchange.html#toc-classes)
+  - [Classes](namespace-aws-dataexchange-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dataexchange.html#top)
+[Back To Top](namespace-aws-dataexchange-top.md)

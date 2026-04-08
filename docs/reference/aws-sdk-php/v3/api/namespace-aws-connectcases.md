@@ -4,15 +4,15 @@ Menu
 
 ## ConnectCases
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectcases.html\#toc)
+### Table of Contents  [header link](namespace-aws-connectcases-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectcases.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-connectcases-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectcases.exception.html)
+[Exception](namespace-aws-connectcases-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectcases.html\#toc-classes)
+#### Classes  [header link](namespace-aws-connectcases-toc-classes.md)
 
-[ConnectCasesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectCases.ConnectCasesClient.html)This client is used to interact with the **Amazon Connect Cases** service.
+[ConnectCasesClient](class-aws-connectcases-connectcasesclient.md)This client is used to interact with the **Amazon Connect Cases** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectcases.html#toc-classes)
+  - [Classes](namespace-aws-connectcases-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectcases.html#top)
+[Back To Top](namespace-aws-connectcases-top.md)

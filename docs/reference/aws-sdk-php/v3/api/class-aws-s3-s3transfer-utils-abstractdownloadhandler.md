@@ -2,27 +2,27 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
-- [Utils](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.utils.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
+- [Utils](namespace-aws-s3-s3transfer-utils.md)
 
 ## AbstractDownloadHandler     extends [AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md)   in package    - [Aws](package-aws.md)
 
 AbstractYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.AbstractDownloadHandler.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-utils-abstractdownloadhandler-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.AbstractDownloadHandler.html\#toc-constants)
+#### Constants  [header link](class-aws-s3-s3transfer-utils-abstractdownloadhandler-toc-constants.md)
 
 [PROGRESS\_SNAPSHOT\_KEY](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#constant_PROGRESS_SNAPSHOT_KEY)
 = 'progress\_snapshot' [REASON\_KEY](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#constant_REASON_KEY)
 = 'reason' [REQUEST\_ARGS\_KEY](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#constant_REQUEST_ARGS_KEY)
 = 'request\_args'
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.AbstractDownloadHandler.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-utils-abstractdownloadhandler-toc-methods.md)
 
 [bytesTransferred()](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#method_bytesTransferred)
-: bool [getHandlerResult()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.AbstractDownloadHandler.html#method_getHandlerResult)
-: mixed Returns the handler result.[isConcurrencySupported()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.AbstractDownloadHandler.html#method_isConcurrencySupported)
+: bool [getHandlerResult()](class-aws-s3-s3transfer-utils-abstractdownloadhandler-method-gethandlerresult.md)
+: mixed Returns the handler result.[isConcurrencySupported()](class-aws-s3-s3transfer-utils-abstractdownloadhandler-method-isconcurrencysupported.md)
 : bool To control whether the download handler supports
 concurrency.[priority()](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#method_priority)
 : int To provide an order on which listener is notified first.[transferComplete()](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#method_transferComplete)
@@ -30,7 +30,7 @@ concurrency.[priority()](class-aws-s3-s3transfer-progress-abstracttransferlisten
 : void [transferInitiated()](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#method_transferInitiated)
 : void
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.AbstractDownloadHandler.html\#constants)
+### Constants  [header link](class-aws-s3-s3transfer-utils-abstractdownloadhandler-constants.md)
 
 #### PROGRESS\_SNAPSHOT\_KEY  [header link](class-aws-s3-s3transfer-progress-abstracttransferlistener.md\#constant_PROGRESS_SNAPSHOT_KEY)
 
@@ -59,7 +59,7 @@ concurrency.[priority()](class-aws-s3-s3transfer-progress-abstracttransferlisten
     = 'request_args'
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.AbstractDownloadHandler.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-utils-abstractdownloadhandler-methods.md)
 
 #### bytesTransferred()  [header link](class-aws-s3-s3transfer-progress-abstracttransferlistener.md\#method_bytesTransferred)
 
@@ -83,7 +83,7 @@ bool
 
 true to notify successful handling otherwise false.
 
-#### getHandlerResult()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.AbstractDownloadHandler.html\#method_getHandlerResult)
+#### getHandlerResult()  [header link](class-aws-s3-s3transfer-utils-abstractdownloadhandler-method-gethandlerresult.md)
 
 Returns the handler result.
 
@@ -95,7 +95,7 @@ Returns the handler result.
 - For StreamDownloadHandler it may return an instance of StreamInterface
 containing the content of the object.
 
-#### isConcurrencySupported()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.AbstractDownloadHandler.html\#method_isConcurrencySupported)
+#### isConcurrencySupported()  [header link](class-aws-s3-s3transfer-utils-abstractdownloadhandler-method-isconcurrencysupported.md)
 
 To control whether the download handler supports
 concurrency.
@@ -175,19 +175,19 @@ as part of the request initialization.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.AbstractDownloadHandler.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.AbstractDownloadHandler.html#toc-methods)
+  - [Constants](class-aws-s3-s3transfer-utils-abstractdownloadhandler-toc-constants.md)
+  - [Methods](class-aws-s3-s3transfer-utils-abstractdownloadhandler-toc-methods.md)
 - Constants
   - [PROGRESS\_SNAPSHOT\_KEY](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#constant_PROGRESS_SNAPSHOT_KEY)
   - [REASON\_KEY](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#constant_REASON_KEY)
   - [REQUEST\_ARGS\_KEY](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#constant_REQUEST_ARGS_KEY)
 - Methods
   - [bytesTransferred()](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#method_bytesTransferred)
-  - [getHandlerResult()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.AbstractDownloadHandler.html#method_getHandlerResult)
-  - [isConcurrencySupported()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.AbstractDownloadHandler.html#method_isConcurrencySupported)
+  - [getHandlerResult()](class-aws-s3-s3transfer-utils-abstractdownloadhandler-method-gethandlerresult.md)
+  - [isConcurrencySupported()](class-aws-s3-s3transfer-utils-abstractdownloadhandler-method-isconcurrencysupported.md)
   - [priority()](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#method_priority)
   - [transferComplete()](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#method_transferComplete)
   - [transferFail()](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#method_transferFail)
   - [transferInitiated()](class-aws-s3-s3transfer-progress-abstracttransferlistener.md#method_transferInitiated)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.AbstractDownloadHandler.html#top)
+[Back To Top](class-aws-s3-s3transfer-utils-abstractdownloadhandler-top.md)

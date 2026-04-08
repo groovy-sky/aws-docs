@@ -38,30 +38,30 @@ $promise = $composed();
 $config = $promise->wait();
 `
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html\#toc)
+### Table of Contents  [header link](class-aws-retry-configurationprovider-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-retry-configurationprovider-toc-interfaces.md)
 
 [ConfigurationProviderInterface](class-aws-configurationproviderinterface.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html\#toc-constants)
+#### Constants  [header link](class-aws-retry-configurationprovider-toc-constants.md)
 
-[DEFAULT\_MAX\_ATTEMPTS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#constant_DEFAULT_MAX_ATTEMPTS)
-= 3 [DEFAULT\_MODE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#constant_DEFAULT_MODE)
+[DEFAULT\_MAX\_ATTEMPTS](class-aws-retry-configurationprovider-constant-default-max-attempts.md)
+= 3 [DEFAULT\_MODE](class-aws-retry-configurationprovider-constant-default-mode.md)
 = 'legacy' [ENV\_CONFIG\_FILE](class-aws-abstractconfigurationprovider.md#constant_ENV_CONFIG_FILE)
-= 'AWS\_CONFIG\_FILE' [ENV\_MAX\_ATTEMPTS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#constant_ENV_MAX_ATTEMPTS)
-= 'AWS\_MAX\_ATTEMPTS' [ENV\_MODE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#constant_ENV_MODE)
-= 'AWS\_RETRY\_MODE' [ENV\_PROFILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#constant_ENV_PROFILE)
-= 'AWS\_PROFILE' [INI\_MAX\_ATTEMPTS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#constant_INI_MAX_ATTEMPTS)
-= 'max\_attempts' [INI\_MODE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#constant_INI_MODE)
+= 'AWS\_CONFIG\_FILE' [ENV\_MAX\_ATTEMPTS](class-aws-retry-configurationprovider-constant-env-max-attempts.md)
+= 'AWS\_MAX\_ATTEMPTS' [ENV\_MODE](class-aws-retry-configurationprovider-constant-env-mode.md)
+= 'AWS\_RETRY\_MODE' [ENV\_PROFILE](class-aws-retry-configurationprovider-constant-env-profile.md)
+= 'AWS\_PROFILE' [INI\_MAX\_ATTEMPTS](class-aws-retry-configurationprovider-constant-ini-max-attempts.md)
+= 'max\_attempts' [INI\_MODE](class-aws-retry-configurationprovider-constant-ini-mode.md)
 = 'retry\_mode'
 
-#### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html\#toc-properties)
+#### Properties  [header link](class-aws-retry-configurationprovider-toc-properties.md)
 
-[$cacheKey](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#property_cacheKey)
+[$cacheKey](class-aws-retry-configurationprovider-property-cachekey.md)
 : mixed
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html\#toc-methods)
+#### Methods  [header link](class-aws-retry-configurationprovider-toc-methods.md)
 
 [cache()](class-aws-abstractconfigurationprovider.md#method_cache)
 : callable Wraps a config provider and saves provided configuration in an
@@ -69,25 +69,25 @@ instance of Aws\\CacheInterface. Forwards calls when no config found
 in cache and updates cache with the results.[chain()](class-aws-abstractconfigurationprovider.md#method_chain)
 : callable Creates an aggregate configuration provider that invokes the provided
 variadic providers one after the other until a provider returns
-configuration.[defaultProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#method_defaultProvider)
+configuration.[defaultProvider()](class-aws-retry-configurationprovider-method-defaultprovider.md)
 : callable Create a default config provider that first checks for environment
 variables, then checks for a specified profile in the environment-defined
 config file location (env variable is 'AWS\_CONFIG\_FILE', file location
 defaults to ~/.aws/config), then checks for the "default" profile in the
 environment-defined config file location, and failing those uses a default
-fallback set of configuration options.[env()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#method_env)
-: callable Provider that creates config from environment variables.[fallback()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#method_fallback)
-: callable Fallback config options when other sources are not set.[ini()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#method_ini)
+fallback set of configuration options.[env()](class-aws-retry-configurationprovider-method-env.md)
+: callable Provider that creates config from environment variables.[fallback()](class-aws-retry-configurationprovider-method-fallback.md)
+: callable Fallback config options when other sources are not set.[ini()](class-aws-retry-configurationprovider-method-ini.md)
 : callable Config provider that creates config using a config file whose location
 is specified by an environment variable 'AWS\_CONFIG\_FILE', defaulting to
 ~/.aws/config if not specified[memoize()](class-aws-abstractconfigurationprovider.md#method_memoize)
-: callable Wraps a config provider and caches previously provided configuration.[unwrap()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#method_unwrap)
+: callable Wraps a config provider and caches previously provided configuration.[unwrap()](class-aws-retry-configurationprovider-method-unwrap.md)
 : [ConfigurationInterface](class-aws-retry-configurationinterface.md)Unwraps a configuration object in whatever valid form it is in,
 always returning a ConfigurationInterface object.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html\#constants)
+### Constants  [header link](class-aws-retry-configurationprovider-constants.md)
 
-#### DEFAULT\_MAX\_ATTEMPTS  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html\#constant_DEFAULT_MAX_ATTEMPTS)
+#### DEFAULT\_MAX\_ATTEMPTS  [header link](class-aws-retry-configurationprovider-constant-default-max-attempts.md)
 
 `
     public
@@ -96,7 +96,7 @@ always returning a ConfigurationInterface object.
     = 3
 `
 
-#### DEFAULT\_MODE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html\#constant_DEFAULT_MODE)
+#### DEFAULT\_MODE  [header link](class-aws-retry-configurationprovider-constant-default-mode.md)
 
 `
     public
@@ -114,7 +114,7 @@ always returning a ConfigurationInterface object.
     = 'AWS_CONFIG_FILE'
 `
 
-#### ENV\_MAX\_ATTEMPTS  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html\#constant_ENV_MAX_ATTEMPTS)
+#### ENV\_MAX\_ATTEMPTS  [header link](class-aws-retry-configurationprovider-constant-env-max-attempts.md)
 
 `
     public
@@ -123,7 +123,7 @@ always returning a ConfigurationInterface object.
     = 'AWS_MAX_ATTEMPTS'
 `
 
-#### ENV\_MODE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html\#constant_ENV_MODE)
+#### ENV\_MODE  [header link](class-aws-retry-configurationprovider-constant-env-mode.md)
 
 `
     public
@@ -132,7 +132,7 @@ always returning a ConfigurationInterface object.
     = 'AWS_RETRY_MODE'
 `
 
-#### ENV\_PROFILE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html\#constant_ENV_PROFILE)
+#### ENV\_PROFILE  [header link](class-aws-retry-configurationprovider-constant-env-profile.md)
 
 `
     public
@@ -141,7 +141,7 @@ always returning a ConfigurationInterface object.
     = 'AWS_PROFILE'
 `
 
-#### INI\_MAX\_ATTEMPTS  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html\#constant_INI_MAX_ATTEMPTS)
+#### INI\_MAX\_ATTEMPTS  [header link](class-aws-retry-configurationprovider-constant-ini-max-attempts.md)
 
 `
     public
@@ -150,7 +150,7 @@ always returning a ConfigurationInterface object.
     = 'max_attempts'
 `
 
-#### INI\_MODE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html\#constant_INI_MODE)
+#### INI\_MODE  [header link](class-aws-retry-configurationprovider-constant-ini-mode.md)
 
 `
     public
@@ -159,9 +159,9 @@ always returning a ConfigurationInterface object.
     = 'retry_mode'
 `
 
-### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html\#properties)
+### Properties  [header link](class-aws-retry-configurationprovider-properties.md)
 
-#### $cacheKey  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html\#property_cacheKey)
+#### $cacheKey  [header link](class-aws-retry-configurationprovider-property-cachekey.md)
 
 `
     public
@@ -169,7 +169,7 @@ always returning a ConfigurationInterface object.
     $cacheKey
      = 'aws_retries_config'`
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html\#methods)
+### Methods  [header link](class-aws-retry-configurationprovider-methods.md)
 
 #### cache()  [header link](class-aws-abstractconfigurationprovider.md\#method_cache)
 
@@ -217,7 +217,7 @@ configuration.
 
 callable
 
-#### defaultProvider()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html\#method_defaultProvider)
+#### defaultProvider()  [header link](class-aws-retry-configurationprovider-method-defaultprovider.md)
 
 Create a default config provider that first checks for environment
 variables, then checks for a specified profile in the environment-defined
@@ -243,7 +243,7 @@ $config
 
 callable
 
-#### env()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html\#method_env)
+#### env()  [header link](class-aws-retry-configurationprovider-method-env.md)
 
 Provider that creates config from environment variables.
 
@@ -255,7 +255,7 @@ Provider that creates config from environment variables.
 
 callable
 
-#### fallback()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html\#method_fallback)
+#### fallback()  [header link](class-aws-retry-configurationprovider-method-fallback.md)
 
 Fallback config options when other sources are not set.
 
@@ -267,7 +267,7 @@ Fallback config options when other sources are not set.
 
 callable
 
-#### ini()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html\#method_ini)
+#### ini()  [header link](class-aws-retry-configurationprovider-method-ini.md)
 
 Config provider that creates config using a config file whose location
 is specified by an environment variable 'AWS\_CONFIG\_FILE', defaulting to
@@ -316,7 +316,7 @@ Config provider function to wrap.
 
 callable
 
-#### unwrap()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html\#method_unwrap)
+#### unwrap()  [header link](class-aws-retry-configurationprovider-method-unwrap.md)
 
 Unwraps a configuration object in whatever valid form it is in,
 always returning a ConfigurationInterface object.
@@ -330,7 +330,7 @@ always returning a ConfigurationInterface object.
 $config
 : mixed
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html\#method_unwrap\#tags)
+##### Tags  [header link](class-aws-retry-configurationprovider-method-unwrap-tags.md)
 
 throwsInvalidArgumentException
 
@@ -344,28 +344,28 @@ throwsInvalidArgumentException
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#toc-constants)
-  - [Properties](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#toc-properties)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#toc-methods)
+  - [Constants](class-aws-retry-configurationprovider-toc-constants.md)
+  - [Properties](class-aws-retry-configurationprovider-toc-properties.md)
+  - [Methods](class-aws-retry-configurationprovider-toc-methods.md)
 - Constants
-  - [DEFAULT\_MAX\_ATTEMPTS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#constant_DEFAULT_MAX_ATTEMPTS)
-  - [DEFAULT\_MODE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#constant_DEFAULT_MODE)
+  - [DEFAULT\_MAX\_ATTEMPTS](class-aws-retry-configurationprovider-constant-default-max-attempts.md)
+  - [DEFAULT\_MODE](class-aws-retry-configurationprovider-constant-default-mode.md)
   - [ENV\_CONFIG\_FILE](class-aws-abstractconfigurationprovider.md#constant_ENV_CONFIG_FILE)
-  - [ENV\_MAX\_ATTEMPTS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#constant_ENV_MAX_ATTEMPTS)
-  - [ENV\_MODE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#constant_ENV_MODE)
-  - [ENV\_PROFILE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#constant_ENV_PROFILE)
-  - [INI\_MAX\_ATTEMPTS](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#constant_INI_MAX_ATTEMPTS)
-  - [INI\_MODE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#constant_INI_MODE)
+  - [ENV\_MAX\_ATTEMPTS](class-aws-retry-configurationprovider-constant-env-max-attempts.md)
+  - [ENV\_MODE](class-aws-retry-configurationprovider-constant-env-mode.md)
+  - [ENV\_PROFILE](class-aws-retry-configurationprovider-constant-env-profile.md)
+  - [INI\_MAX\_ATTEMPTS](class-aws-retry-configurationprovider-constant-ini-max-attempts.md)
+  - [INI\_MODE](class-aws-retry-configurationprovider-constant-ini-mode.md)
 - Properties
-  - [$cacheKey](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#property_cacheKey)
+  - [$cacheKey](class-aws-retry-configurationprovider-property-cachekey.md)
 - Methods
   - [cache()](class-aws-abstractconfigurationprovider.md#method_cache)
   - [chain()](class-aws-abstractconfigurationprovider.md#method_chain)
-  - [defaultProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#method_defaultProvider)
-  - [env()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#method_env)
-  - [fallback()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#method_fallback)
-  - [ini()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#method_ini)
+  - [defaultProvider()](class-aws-retry-configurationprovider-method-defaultprovider.md)
+  - [env()](class-aws-retry-configurationprovider-method-env.md)
+  - [fallback()](class-aws-retry-configurationprovider-method-fallback.md)
+  - [ini()](class-aws-retry-configurationprovider-method-ini.md)
   - [memoize()](class-aws-abstractconfigurationprovider.md#method_memoize)
-  - [unwrap()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#method_unwrap)
+  - [unwrap()](class-aws-retry-configurationprovider-method-unwrap.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationProvider.html#top)
+[Back To Top](class-aws-retry-configurationprovider-top.md)

@@ -64,9 +64,9 @@ For information about the errors that are common to all actions, see [Common cli
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/RejectTransitGatewayMulticastDomainAssociations)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/rejecttransitgatewaymulticastdomainassociations.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/RejectTransitGatewayMulticastDomainAssociations)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/rejecttransitgatewaymulticastdomainassociations.md)
 
 - [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/rejecttransitgatewaymulticastdomainassociations.md)
 
@@ -80,7 +80,7 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/rejecttransitgatewaymulticastdomainassociations.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/RejectTransitGatewayMulticastDomainAssociations)
+- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/rejecttransitgatewaymulticastdomainassociations.md)
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/rejecttransitgatewaymulticastdomainassociations.md)
 

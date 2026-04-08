@@ -7,19 +7,19 @@ Menu
 
 This client is used to search and upload documents to an **Amazon CloudSearch** Domain.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearchDomain.CloudSearchDomainClient.html\#toc)
+### Table of Contents  [header link](class-aws-cloudsearchdomain-cloudsearchdomainclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearchDomain.CloudSearchDomainClient.html\#toc-methods)
+#### Methods  [header link](class-aws-cloudsearchdomain-cloudsearchdomainclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
-: mixed [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearchDomain.CloudSearchDomainClient.html#method___construct)
+: mixed [\_\_construct()](class-aws-cloudsearchdomain-cloudsearchdomainclient-method-construct.md)
 : mixed The client constructor accepts the following options:[\_\_sleep()](class-aws-awsclient.md#method___sleep)
-: mixed [convertGetToPost()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearchDomain.CloudSearchDomainClient.html#method_convertGetToPost)
+: mixed [convertGetToPost()](class-aws-cloudsearchdomain-cloudsearchdomainclient-method-convertgettopost.md)
 : [RequestInterface](class-psr-http-message-requestinterface.md)Converts default GET request to a POST request[execute()](class-aws-awsclienttrait.md#method_execute)
 : mixed [executeAsync()](class-aws-awsclienttrait.md#method_executeAsync)
 : mixed [factory()](class-aws-awsclient.md#method_factory)
 : static [getApi()](class-aws-awsclienttrait.md#method_getApi)
-: [Service](class-aws-api-service.md)[getArguments()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearchDomain.CloudSearchDomainClient.html#method_getArguments)
+: [Service](class-aws-api-service.md)[getArguments()](class-aws-cloudsearchdomain-cloudsearchdomainclient-method-getarguments.md)
 : array<string\|int, mixed> Get an array of client constructor arguments used by the client.[getClientBuiltIns()](class-aws-awsclient.md#method_getClientBuiltIns)
 : array<string\|int, mixed> Provides the set of built-in keys and values
 used for endpoint resolution[getClientContextParams()](class-aws-awsclient.md#method_getClientContextParams)
@@ -41,7 +41,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearchDomain.CloudSearchDomainClient.html\#methods)
+### Methods  [header link](class-aws-cloudsearchdomain-cloudsearchdomainclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -55,7 +55,7 @@ $name
 : mixed$args
 : array<string\|int, mixed>
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearchDomain.CloudSearchDomainClient.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-cloudsearchdomain-cloudsearchdomainclient-method-construct.md)
 
 The client constructor accepts the following options:
 
@@ -224,7 +224,7 @@ Client configuration arguments.
     public
                     __sleep() : mixed`
 
-#### convertGetToPost()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearchDomain.CloudSearchDomainClient.html\#method_convertGetToPost)
+#### convertGetToPost()  [header link](class-aws-cloudsearchdomain-cloudsearchdomainclient-method-convertgettopost.md)
 
 Converts default GET request to a POST request
 
@@ -300,7 +300,7 @@ static
 
 [Service](class-aws-api-service.md)
 
-#### getArguments()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearchDomain.CloudSearchDomainClient.html\#method_getArguments)
+#### getArguments()  [header link](class-aws-cloudsearchdomain-cloudsearchdomainclient-method-getarguments.md)
 
 Get an array of client constructor arguments used by the client.
 
@@ -525,17 +525,17 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearchDomain.CloudSearchDomainClient.html#toc-methods)
+  - [Methods](class-aws-cloudsearchdomain-cloudsearchdomainclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearchDomain.CloudSearchDomainClient.html#method___construct)
+  - [\_\_construct()](class-aws-cloudsearchdomain-cloudsearchdomainclient-method-construct.md)
   - [\_\_sleep()](class-aws-awsclient.md#method___sleep)
-  - [convertGetToPost()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearchDomain.CloudSearchDomainClient.html#method_convertGetToPost)
+  - [convertGetToPost()](class-aws-cloudsearchdomain-cloudsearchdomainclient-method-convertgettopost.md)
   - [execute()](class-aws-awsclienttrait.md#method_execute)
   - [executeAsync()](class-aws-awsclienttrait.md#method_executeAsync)
   - [factory()](class-aws-awsclient.md#method_factory)
   - [getApi()](class-aws-awsclienttrait.md#method_getApi)
-  - [getArguments()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearchDomain.CloudSearchDomainClient.html#method_getArguments)
+  - [getArguments()](class-aws-cloudsearchdomain-cloudsearchdomainclient-method-getarguments.md)
   - [getClientBuiltIns()](class-aws-awsclient.md#method_getClientBuiltIns)
   - [getClientContextParams()](class-aws-awsclient.md#method_getClientContextParams)
   - [getCommand()](class-aws-awsclienttrait.md#method_getCommand)
@@ -553,4 +553,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearchDomain.CloudSearchDomainClient.html#top)
+[Back To Top](class-aws-cloudsearchdomain-cloudsearchdomainclient-top.md)

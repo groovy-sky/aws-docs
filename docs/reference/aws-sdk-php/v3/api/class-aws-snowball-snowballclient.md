@@ -17,39 +17,39 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2016-06-30**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html)
+- [**2016-06-30**](api-snowball-2016-06-30.md)
 
-  - [CancelCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#cancelcluster)
-  - [CancelJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#canceljob)
-  - [CreateAddress](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#createaddress)
-  - [CreateCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#createcluster)
-  - [CreateJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#createjob)
-  - [CreateLongTermPricing](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#createlongtermpricing)
-  - [CreateReturnShippingLabel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#createreturnshippinglabel)
-  - [DescribeAddress](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#describeaddress)
-  - [DescribeAddresses](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#describeaddresses)
-  - [DescribeCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#describecluster)
-  - [DescribeJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#describejob)
-  - [DescribeReturnShippingLabel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#describereturnshippinglabel)
-  - [GetJobManifest](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#getjobmanifest)
-  - [GetJobUnlockCode](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#getjobunlockcode)
-  - [GetSnowballUsage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#getsnowballusage)
-  - [GetSoftwareUpdates](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#getsoftwareupdates)
-  - [ListClusterJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#listclusterjobs)
-  - [ListClusters](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#listclusters)
-  - [ListCompatibleImages](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#listcompatibleimages)
-  - [ListJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#listjobs)
-  - [ListLongTermPricing](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#listlongtermpricing)
-  - [ListPickupLocations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#listpickuplocations)
-  - [ListServiceVersions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#listserviceversions)
-  - [UpdateCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#updatecluster)
-  - [UpdateJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#updatejob)
-  - [UpdateJobShipmentState](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#updatejobshipmentstate)
-  - [UpdateLongTermPricing](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-snowball-2016-06-30.html#updatelongtermpricing)
+  - [CancelCluster](api-snowball-2016-06-30-cancelcluster.md)
+  - [CancelJob](api-snowball-2016-06-30-canceljob.md)
+  - [CreateAddress](api-snowball-2016-06-30-createaddress.md)
+  - [CreateCluster](api-snowball-2016-06-30-createcluster.md)
+  - [CreateJob](api-snowball-2016-06-30-createjob.md)
+  - [CreateLongTermPricing](api-snowball-2016-06-30-createlongtermpricing.md)
+  - [CreateReturnShippingLabel](api-snowball-2016-06-30-createreturnshippinglabel.md)
+  - [DescribeAddress](api-snowball-2016-06-30-describeaddress.md)
+  - [DescribeAddresses](api-snowball-2016-06-30-describeaddresses.md)
+  - [DescribeCluster](api-snowball-2016-06-30-describecluster.md)
+  - [DescribeJob](api-snowball-2016-06-30-describejob.md)
+  - [DescribeReturnShippingLabel](api-snowball-2016-06-30-describereturnshippinglabel.md)
+  - [GetJobManifest](api-snowball-2016-06-30-getjobmanifest.md)
+  - [GetJobUnlockCode](api-snowball-2016-06-30-getjobunlockcode.md)
+  - [GetSnowballUsage](api-snowball-2016-06-30-getsnowballusage.md)
+  - [GetSoftwareUpdates](api-snowball-2016-06-30-getsoftwareupdates.md)
+  - [ListClusterJobs](api-snowball-2016-06-30-listclusterjobs.md)
+  - [ListClusters](api-snowball-2016-06-30-listclusters.md)
+  - [ListCompatibleImages](api-snowball-2016-06-30-listcompatibleimages.md)
+  - [ListJobs](api-snowball-2016-06-30-listjobs.md)
+  - [ListLongTermPricing](api-snowball-2016-06-30-listlongtermpricing.md)
+  - [ListPickupLocations](api-snowball-2016-06-30-listpickuplocations.md)
+  - [ListServiceVersions](api-snowball-2016-06-30-listserviceversions.md)
+  - [UpdateCluster](api-snowball-2016-06-30-updatecluster.md)
+  - [UpdateJob](api-snowball-2016-06-30-updatejob.md)
+  - [UpdateJobShipmentState](api-snowball-2016-06-30-updatejobshipmentstate.md)
+  - [UpdateLongTermPricing](api-snowball-2016-06-30-updatelongtermpricing.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SnowBall.SnowBallClient.html\#toc)
+### Table of Contents  [header link](class-aws-snowball-snowballclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SnowBall.SnowBallClient.html\#toc-methods)
+#### Methods  [header link](class-aws-snowball-snowballclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -80,7 +80,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SnowBall.SnowBallClient.html\#methods)
+### Methods  [header link](class-aws-snowball-snowballclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -547,7 +547,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SnowBall.SnowBallClient.html#toc-methods)
+  - [Methods](class-aws-snowball-snowballclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -574,4 +574,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SnowBall.SnowBallClient.html#top)
+[Back To Top](class-aws-snowball-snowballclient-top.md)

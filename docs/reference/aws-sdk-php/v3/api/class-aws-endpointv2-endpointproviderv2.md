@@ -9,19 +9,19 @@ Given a service's Ruleset and client-provided input parameters, provides
 either an object reflecting the properties of a resolved endpoint,
 or throws an error.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.EndpointProviderV2.html\#toc)
+### Table of Contents  [header link](class-aws-endpointv2-endpointproviderv2-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.EndpointProviderV2.html\#toc-methods)
+#### Methods  [header link](class-aws-endpointv2-endpointproviderv2-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.EndpointProviderV2.html#method___construct)
-: mixed [getRuleset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.EndpointProviderV2.html#method_getRuleset)
-: [Ruleset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html)[resolveEndpoint()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.EndpointProviderV2.html#method_resolveEndpoint)
-: [RulesetEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetEndpoint.html)Given a Ruleset and input parameters, determines the correct endpoint
+[\_\_construct()](class-aws-endpointv2-endpointproviderv2-method-construct.md)
+: mixed [getRuleset()](class-aws-endpointv2-endpointproviderv2-method-getruleset.md)
+: [Ruleset](class-aws-endpointv2-ruleset-ruleset.md)[resolveEndpoint()](class-aws-endpointv2-endpointproviderv2-method-resolveendpoint.md)
+: [RulesetEndpoint](class-aws-endpointv2-ruleset-rulesetendpoint.md)Given a Ruleset and input parameters, determines the correct endpoint
 or an error to be thrown for a given request.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.EndpointProviderV2.html\#methods)
+### Methods  [header link](class-aws-endpointv2-endpointproviderv2-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.EndpointProviderV2.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-endpointv2-endpointproviderv2-method-construct.md)
 
 `
     public
@@ -33,7 +33,7 @@ $ruleset
 : array<string\|int, mixed>$partitions
 : array<string\|int, mixed>
 
-#### getRuleset()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.EndpointProviderV2.html\#method_getRuleset)
+#### getRuleset()  [header link](class-aws-endpointv2-endpointproviderv2-method-getruleset.md)
 
 `
     public
@@ -41,9 +41,9 @@ $ruleset
 
 ##### Return values
 
-[Ruleset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.Ruleset.html)
+[Ruleset](class-aws-endpointv2-ruleset-ruleset.md)
 
-#### resolveEndpoint()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.EndpointProviderV2.html\#method_resolveEndpoint)
+#### resolveEndpoint()  [header link](class-aws-endpointv2-endpointproviderv2-method-resolveendpoint.md)
 
 Given a Ruleset and input parameters, determines the correct endpoint
 or an error to be thrown for a given request.
@@ -57,13 +57,13 @@ or an error to be thrown for a given request.
 $inputParameters
 : array<string\|int, mixed>
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.EndpointProviderV2.html\#method_resolveEndpoint\#tags)
+##### Tags  [header link](class-aws-endpointv2-endpointproviderv2-method-resolveendpoint-tags.md)
 
-throws[UnresolvedEndpointException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.UnresolvedEndpointException.html)
+throws[UnresolvedEndpointException](class-aws-exception-unresolvedendpointexception.md)
 
 ##### Return values
 
-[RulesetEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.Ruleset.RulesetEndpoint.html)
+[RulesetEndpoint](class-aws-endpointv2-ruleset-rulesetendpoint.md)
 <\-\- modeled\_exceptions -->
 
 ×
@@ -71,10 +71,10 @@ throws[UnresolvedEndpointException](https://docs.aws.amazon.com/aws-sdk-php/v3/a
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.EndpointProviderV2.html#toc-methods)
+  - [Methods](class-aws-endpointv2-endpointproviderv2-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.EndpointProviderV2.html#method___construct)
-  - [getRuleset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.EndpointProviderV2.html#method_getRuleset)
-  - [resolveEndpoint()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.EndpointProviderV2.html#method_resolveEndpoint)
+  - [\_\_construct()](class-aws-endpointv2-endpointproviderv2-method-construct.md)
+  - [getRuleset()](class-aws-endpointv2-endpointproviderv2-method-getruleset.md)
+  - [resolveEndpoint()](class-aws-endpointv2-endpointproviderv2-method-resolveendpoint.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EndpointV2.EndpointProviderV2.html#top)
+[Back To Top](class-aws-endpointv2-endpointproviderv2-top.md)

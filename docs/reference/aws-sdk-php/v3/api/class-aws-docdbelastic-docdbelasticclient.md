@@ -17,31 +17,31 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2022-11-28**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-docdb-elastic-2022-11-28.html)
+- [**2022-11-28**](api-docdb-elastic-2022-11-28.md)
 
-  - [ApplyPendingMaintenanceAction](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-docdb-elastic-2022-11-28.html#applypendingmaintenanceaction)
-  - [CopyClusterSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-docdb-elastic-2022-11-28.html#copyclustersnapshot)
-  - [CreateCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-docdb-elastic-2022-11-28.html#createcluster)
-  - [CreateClusterSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-docdb-elastic-2022-11-28.html#createclustersnapshot)
-  - [DeleteCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-docdb-elastic-2022-11-28.html#deletecluster)
-  - [DeleteClusterSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-docdb-elastic-2022-11-28.html#deleteclustersnapshot)
-  - [GetCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-docdb-elastic-2022-11-28.html#getcluster)
-  - [GetClusterSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-docdb-elastic-2022-11-28.html#getclustersnapshot)
-  - [GetPendingMaintenanceAction](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-docdb-elastic-2022-11-28.html#getpendingmaintenanceaction)
-  - [ListClusterSnapshots](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-docdb-elastic-2022-11-28.html#listclustersnapshots)
-  - [ListClusters](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-docdb-elastic-2022-11-28.html#listclusters)
-  - [ListPendingMaintenanceActions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-docdb-elastic-2022-11-28.html#listpendingmaintenanceactions)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-docdb-elastic-2022-11-28.html#listtagsforresource)
-  - [RestoreClusterFromSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-docdb-elastic-2022-11-28.html#restoreclusterfromsnapshot)
-  - [StartCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-docdb-elastic-2022-11-28.html#startcluster)
-  - [StopCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-docdb-elastic-2022-11-28.html#stopcluster)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-docdb-elastic-2022-11-28.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-docdb-elastic-2022-11-28.html#untagresource)
-  - [UpdateCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-docdb-elastic-2022-11-28.html#updatecluster)
+  - [ApplyPendingMaintenanceAction](api-docdb-elastic-2022-11-28-applypendingmaintenanceaction.md)
+  - [CopyClusterSnapshot](api-docdb-elastic-2022-11-28-copyclustersnapshot.md)
+  - [CreateCluster](api-docdb-elastic-2022-11-28-createcluster.md)
+  - [CreateClusterSnapshot](api-docdb-elastic-2022-11-28-createclustersnapshot.md)
+  - [DeleteCluster](api-docdb-elastic-2022-11-28-deletecluster.md)
+  - [DeleteClusterSnapshot](api-docdb-elastic-2022-11-28-deleteclustersnapshot.md)
+  - [GetCluster](api-docdb-elastic-2022-11-28-getcluster.md)
+  - [GetClusterSnapshot](api-docdb-elastic-2022-11-28-getclustersnapshot.md)
+  - [GetPendingMaintenanceAction](api-docdb-elastic-2022-11-28-getpendingmaintenanceaction.md)
+  - [ListClusterSnapshots](api-docdb-elastic-2022-11-28-listclustersnapshots.md)
+  - [ListClusters](api-docdb-elastic-2022-11-28-listclusters.md)
+  - [ListPendingMaintenanceActions](api-docdb-elastic-2022-11-28-listpendingmaintenanceactions.md)
+  - [ListTagsForResource](api-docdb-elastic-2022-11-28-listtagsforresource.md)
+  - [RestoreClusterFromSnapshot](api-docdb-elastic-2022-11-28-restoreclusterfromsnapshot.md)
+  - [StartCluster](api-docdb-elastic-2022-11-28-startcluster.md)
+  - [StopCluster](api-docdb-elastic-2022-11-28-stopcluster.md)
+  - [TagResource](api-docdb-elastic-2022-11-28-tagresource.md)
+  - [UntagResource](api-docdb-elastic-2022-11-28-untagresource.md)
+  - [UpdateCluster](api-docdb-elastic-2022-11-28-updatecluster.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DocDBElastic.DocDBElasticClient.html\#toc)
+### Table of Contents  [header link](class-aws-docdbelastic-docdbelasticclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DocDBElastic.DocDBElasticClient.html\#toc-methods)
+#### Methods  [header link](class-aws-docdbelastic-docdbelasticclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -72,7 +72,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DocDBElastic.DocDBElasticClient.html\#methods)
+### Methods  [header link](class-aws-docdbelastic-docdbelasticclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -539,7 +539,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DocDBElastic.DocDBElasticClient.html#toc-methods)
+  - [Methods](class-aws-docdbelastic-docdbelasticclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -566,4 +566,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DocDBElastic.DocDBElasticClient.html#top)
+[Back To Top](class-aws-docdbelastic-docdbelasticclient-top.md)

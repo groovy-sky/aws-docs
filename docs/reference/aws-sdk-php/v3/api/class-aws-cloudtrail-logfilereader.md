@@ -13,17 +13,17 @@ Amazon S3. The log files are gzipped and contain structured data in JSON
 format. This class will automatically ungzip and decode the data, and return
 the data as an array of log records
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileReader.html\#toc)
+### Table of Contents  [header link](class-aws-cloudtrail-logfilereader-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileReader.html\#toc-methods)
+#### Methods  [header link](class-aws-cloudtrail-logfilereader-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileReader.html#method___construct)
-: mixed [read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileReader.html#method_read)
+[\_\_construct()](class-aws-cloudtrail-logfilereader-method-construct.md)
+: mixed [read()](class-aws-cloudtrail-logfilereader-method-read.md)
 : array<string\|int, mixed> Downloads, unzips, and reads a CloudTrail log file from Amazon S3
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileReader.html\#methods)
+### Methods  [header link](class-aws-cloudtrail-logfilereader-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileReader.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-cloudtrail-logfilereader-method-construct.md)
 
 `
     public
@@ -36,7 +36,7 @@ $s3Client
 
 S3 client used to retrieve objects
 
-#### read()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileReader.html\#method_read)
+#### read()  [header link](class-aws-cloudtrail-logfilereader-method-read.md)
 
 Downloads, unzips, and reads a CloudTrail log file from Amazon S3
 
@@ -66,9 +66,9 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileReader.html#toc-methods)
+  - [Methods](class-aws-cloudtrail-logfilereader-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileReader.html#method___construct)
-  - [read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileReader.html#method_read)
+  - [\_\_construct()](class-aws-cloudtrail-logfilereader-method-construct.md)
+  - [read()](class-aws-cloudtrail-logfilereader-method-read.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrail.LogFileReader.html#top)
+[Back To Top](class-aws-cloudtrail-logfilereader-top.md)

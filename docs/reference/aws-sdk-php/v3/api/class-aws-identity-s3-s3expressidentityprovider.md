@@ -2,21 +2,21 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [Identity](namespace-aws-identity.md)
-- [S3](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.identity.s3.html)
+- [S3](namespace-aws-identity-s3.md)
 
 ## S3ExpressIdentityProvider        in package    - [Aws](package-aws.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Identity.S3.S3ExpressIdentityProvider.html\#toc)
+### Table of Contents  [header link](class-aws-identity-s3-s3expressidentityprovider-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Identity.S3.S3ExpressIdentityProvider.html\#toc-methods)
+#### Methods  [header link](class-aws-identity-s3-s3expressidentityprovider-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Identity.S3.S3ExpressIdentityProvider.html#method___construct)
-: mixed [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Identity.S3.S3ExpressIdentityProvider.html#method___invoke)
+[\_\_construct()](class-aws-identity-s3-s3expressidentityprovider-method-construct.md)
+: mixed [\_\_invoke()](class-aws-identity-s3-s3expressidentityprovider-method-invoke.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Identity.S3.S3ExpressIdentityProvider.html\#methods)
+### Methods  [header link](class-aws-identity-s3-s3expressidentityprovider-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Identity.S3.S3ExpressIdentityProvider.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-identity-s3-s3expressidentityprovider-method-construct.md)
 
 `
     public
@@ -29,7 +29,7 @@ $clientRegion
 : array<string\|int, mixed>
 = \[\]
 
-#### \_\_invoke()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Identity.S3.S3ExpressIdentityProvider.html\#method___invoke)
+#### \_\_invoke()  [header link](class-aws-identity-s3-s3expressidentityprovider-method-invoke.md)
 
 `
     public
@@ -46,9 +46,9 @@ $command
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Identity.S3.S3ExpressIdentityProvider.html#toc-methods)
+  - [Methods](class-aws-identity-s3-s3expressidentityprovider-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Identity.S3.S3ExpressIdentityProvider.html#method___construct)
-  - [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Identity.S3.S3ExpressIdentityProvider.html#method___invoke)
+  - [\_\_construct()](class-aws-identity-s3-s3expressidentityprovider-method-construct.md)
+  - [\_\_invoke()](class-aws-identity-s3-s3expressidentityprovider-method-invoke.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Identity.S3.S3ExpressIdentityProvider.html#top)
+[Back To Top](class-aws-identity-s3-s3expressidentityprovider-top.md)

@@ -13,7 +13,7 @@ For more information about creating a DB instance in an Aurora DB cluster, see
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 **DBInstanceClass**
 
@@ -115,7 +115,7 @@ to three additional storage volumes using the names `rdsdbdata2`,
 `rdsdbdata3`, and `rdsdbdata4`. Additional storage volumes are
 supported for RDS for Oracle and RDS for SQL Server DB instances only.
 
-Type: Array of [AdditionalStorageVolume](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_AdditionalStorageVolume.html) objects
+Type: Array of [AdditionalStorageVolume](api-additionalstoragevolume.md) objects
 
 Required: No
 
@@ -218,7 +218,7 @@ By default, minor engine upgrades are applied automatically.
 If you create an RDS Custom DB instance, you must set `AutoMinorVersionUpgrade` to
 `false`.
 
-For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Upgrading.html#USER_UpgradeDBInstance.Upgrading.AutoMinorVersionUpgrades).
+For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](../../../../services/amazonrds/latest/userguide/user-upgradedbinstance-upgrading-user-upgradedbinstance-upgrading-autominorversionupgrades.md).
 
 Type: Boolean
 
@@ -434,7 +434,7 @@ Not applicable. Must be null.
 The name of the database to create when the DB instance is created. If
 this parameter isn't specified, no database is created in the DB instance.
 In some cases, we recommend that you don't add a database name. For more
-information, see [Additional considerations](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-db-instance-prereqs.html#db2-prereqs-additional-considerations) in the _Amazon RDS User_
+information, see [Additional considerations](../../../../services/amazonrds/latest/userguide/db2-db-instance-prereqs-db2-prereqs-additional-considerations.md) in the _Amazon RDS User_
 _Guide_.
 
 Constraints:
@@ -585,7 +585,7 @@ Required: No
 The Active Directory directory ID to create the DB instance in. Currently, you can create only Db2, MySQL, Microsoft SQL
 Server, Oracle, and PostgreSQL DB instances in an Active Directory Domain.
 
-For more information, see [Kerberos Authentication](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/kerberos-authentication.html) in the _Amazon RDS User Guide_.
+For more information, see [Kerberos Authentication](../../../../services/amazonrds/latest/userguide/kerberos-authentication.md) in the _Amazon RDS User Guide_.
 
 This setting doesn't apply to the following DB instances:
 
@@ -707,7 +707,7 @@ private cloud (VPC) on your local network.
 For more information about RDS on Outposts, see [Working with Amazon RDS on AWS Outposts](../../../../services/amazonrds/latest/userguide/rds-on-outposts.md)
 in the _Amazon RDS User Guide_.
 
-For more information about CoIPs, see [Customer-owned IP addresses](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html#ip-addressing)
+For more information about CoIPs, see [Customer-owned IP addresses](../../../../services/outposts/latest/userguide/routing-ip-addressing.md)
 in the _AWS Outposts User Guide_.
 
 Type: Boolean
@@ -783,11 +783,11 @@ Amazon RDS. Not every database engine is available for every AWS Region.
 
 A custom engine version (CEV) that you have previously created. This setting is required for RDS Custom for Oracle. The CEV
 name has the following format: 19. _customized\_string_. A valid CEV name is
-`19.my_cev1`. For more information, see [Creating an RDS Custom for Oracle DB instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-creating.html#custom-creating.create) in the _Amazon RDS User Guide_.
+`19.my_cev1`. For more information, see [Creating an RDS Custom for Oracle DB instance](../../../../services/amazonrds/latest/userguide/custom-creating-custom-creating-create.md) in the _Amazon RDS User Guide_.
 
 **Amazon RDS Custom for SQL Server**
 
-See [RDS Custom for SQL Server general requirements](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-reqs-limits-MS.html)
+See [RDS Custom for SQL Server general requirements](../../../../services/amazonrds/latest/userguide/custom-reqs-limits-ms.md)
 in the _Amazon RDS User Guide_.
 
 **RDS for Db2**
@@ -812,7 +812,7 @@ _Amazon RDS User Guide_.
 
 **RDS for Oracle**
 
-For information, see [Oracle Database Engine release notes](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Oracle.PatchComposition.html) in the
+For information, see [Oracle Database Engine release notes](../../../../services/amazonrds/latest/userguide/appendix-oracle-patchcomposition.md) in the
 _Amazon RDS User Guide_.
 
 **RDS for PostgreSQL**
@@ -1262,7 +1262,7 @@ The number of CPU cores and the number of threads per core for the DB instance c
 
 This setting doesn't apply to Amazon Aurora or RDS Custom DB instances.
 
-Type: Array of [ProcessorFeature](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ProcessorFeature.html) objects
+Type: Array of [ProcessorFeature](api-processorfeature.md) objects
 
 Required: No
 
@@ -1348,7 +1348,7 @@ Required: No
 
 Tags to assign to the DB instance.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Required: No
 
@@ -1360,7 +1360,7 @@ Valid Values:
 
 - `auto-backup` \- The DB instance's automated backup.
 
-Type: Array of [TagSpecification](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_TagSpecification.html) objects
+Type: Array of [TagSpecification](api-tagspecification.md) objects
 
 Required: No
 
@@ -1387,7 +1387,7 @@ Required: No
 **Timezone**
 
 The time zone of the DB instance.
-The time zone parameter is currently supported only by [RDS for Db2](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-time-zone) and
+The time zone parameter is currently supported only by [RDS for Db2](../../../../services/amazonrds/latest/userguide/db2-time-zone.md) and
 [RDS for SQL Server](../../../../services/amazonrds/latest/userguide/chap-sqlserver.md#SQLServer.Concepts.General.TimeZone).
 
 Type: String
@@ -1421,11 +1421,11 @@ This data type is used as a response element in the operations `CreateDBInstance
 `RestoreDBInstanceFromDBSnapshot`, `RestoreDBInstanceFromS3`, `RestoreDBInstanceToPointInTime`,
 `StartDBInstance`, and `StopDBInstance`.
 
-Type: [DBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBInstance.html) object
+Type: [DBInstance](api-dbinstance.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **AuthorizationNotFound**
 
@@ -1665,27 +1665,27 @@ https://rds.us-east-1.amazonaws.com/
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/rds-2014-10-31/CreateDBInstance)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/rds-2014-10-31/createdbinstance.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/rds-2014-10-31/CreateDBInstance)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/rds-2014-10-31/createdbinstance.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/CreateDBInstance)
+- [AWS SDK for C++](../../../goto/sdkforcpp/rds-2014-10-31/createdbinstance.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/rds-2014-10-31/CreateDBInstance)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/rds-2014-10-31/createdbinstance.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/CreateDBInstance)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/rds-2014-10-31/createdbinstance.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/rds-2014-10-31/CreateDBInstance)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/rds-2014-10-31/createdbinstance.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/rds-2014-10-31/CreateDBInstance)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/rds-2014-10-31/createdbinstance.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/rds-2014-10-31/CreateDBInstance)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/rds-2014-10-31/createdbinstance.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/CreateDBInstance)
+- [AWS SDK for Python](../../../../services/goto/boto3/rds-2014-10-31/createdbinstance.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/CreateDBInstance)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/createdbinstance.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateDBClusterSnapshot
 

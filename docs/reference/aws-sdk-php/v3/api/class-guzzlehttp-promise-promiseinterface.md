@@ -1,7 +1,7 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Promise](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.promise.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Promise](namespace-guzzlehttp-promise.md)
 
 ## PromiseInterface     in    - [Aws](package-aws.md)
 
@@ -11,37 +11,37 @@ The primary way of interacting with a promise is through its then method,
 which registers callbacks to receive either a promise’s eventual value or
 the reason why the promise cannot be fulfilled.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html\#tags)
+##### Tags  [header link](class-guzzlehttp-promise-promiseinterface-tags.md)
 
 see[https://promisesaplus.com/](https://promisesaplus.com/)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-promise-promiseinterface-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html\#toc-constants)
+#### Constants  [header link](class-guzzlehttp-promise-promiseinterface-toc-constants.md)
 
-[FULFILLED](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#constant_FULFILLED)
-= 'fulfilled' [PENDING](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#constant_PENDING)
-= 'pending' [REJECTED](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#constant_REJECTED)
+[FULFILLED](class-guzzlehttp-promise-promiseinterface-constant-fulfilled.md)
+= 'fulfilled' [PENDING](class-guzzlehttp-promise-promiseinterface-constant-pending.md)
+= 'pending' [REJECTED](class-guzzlehttp-promise-promiseinterface-constant-rejected.md)
 = 'rejected'
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-promise-promiseinterface-toc-methods.md)
 
-[cancel()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#method_cancel)
-: void Cancels the promise if possible.[getState()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#method_getState)
-: string Get the state of the promise ("pending", "rejected", or "fulfilled").[otherwise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#method_otherwise)
-: [PromiseInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html)Appends a rejection handler callback to the promise, and returns a new
+[cancel()](class-guzzlehttp-promise-promiseinterface-method-cancel.md)
+: void Cancels the promise if possible.[getState()](class-guzzlehttp-promise-promiseinterface-method-getstate.md)
+: string Get the state of the promise ("pending", "rejected", or "fulfilled").[otherwise()](class-guzzlehttp-promise-promiseinterface-method-otherwise.md)
+: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Appends a rejection handler callback to the promise, and returns a new
 promise resolving to the return value of the callback if it is called,
 or to its original fulfillment value if the promise is instead
-fulfilled.[reject()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#method_reject)
-: void Reject the promise with the given reason.[resolve()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#method_resolve)
-: void Resolve the promise with the given value.[then()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#method_then)
-: [PromiseInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html)Appends fulfillment and rejection handlers to the promise, and returns
-a new promise resolving to the return value of the called handler.[wait()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#method_wait)
+fulfilled.[reject()](class-guzzlehttp-promise-promiseinterface-method-reject.md)
+: void Reject the promise with the given reason.[resolve()](class-guzzlehttp-promise-promiseinterface-method-resolve.md)
+: void Resolve the promise with the given value.[then()](class-guzzlehttp-promise-promiseinterface-method-then.md)
+: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Appends fulfillment and rejection handlers to the promise, and returns
+a new promise resolving to the return value of the called handler.[wait()](class-guzzlehttp-promise-promiseinterface-method-wait.md)
 : mixed Waits until the promise completes if possible.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html\#constants)
+### Constants  [header link](class-guzzlehttp-promise-promiseinterface-constants.md)
 
-#### FULFILLED  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html\#constant_FULFILLED)
+#### FULFILLED  [header link](class-guzzlehttp-promise-promiseinterface-constant-fulfilled.md)
 
 `
     public
@@ -50,7 +50,7 @@ a new promise resolving to the return value of the called handler.[wait()](https
     = 'fulfilled'
 `
 
-#### PENDING  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html\#constant_PENDING)
+#### PENDING  [header link](class-guzzlehttp-promise-promiseinterface-constant-pending.md)
 
 `
     public
@@ -59,7 +59,7 @@ a new promise resolving to the return value of the called handler.[wait()](https
     = 'pending'
 `
 
-#### REJECTED  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html\#constant_REJECTED)
+#### REJECTED  [header link](class-guzzlehttp-promise-promiseinterface-constant-rejected.md)
 
 `
     public
@@ -68,9 +68,9 @@ a new promise resolving to the return value of the called handler.[wait()](https
     = 'rejected'
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html\#methods)
+### Methods  [header link](class-guzzlehttp-promise-promiseinterface-methods.md)
 
-#### cancel()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html\#method_cancel)
+#### cancel()  [header link](class-guzzlehttp-promise-promiseinterface-method-cancel.md)
 
 Cancels the promise if possible.
 
@@ -78,11 +78,11 @@ Cancels the promise if possible.
     public
                     cancel() : void`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html\#method_cancel\#tags)
+##### Tags  [header link](class-guzzlehttp-promise-promiseinterface-method-cancel-tags.md)
 
 see[https://github.com/promises-aplus/cancellation-spec/issues/7](https://github.com/promises-aplus/cancellation-spec/issues/7)
 
-#### getState()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html\#method_getState)
+#### getState()  [header link](class-guzzlehttp-promise-promiseinterface-method-getstate.md)
 
 Get the state of the promise ("pending", "rejected", or "fulfilled").
 
@@ -97,7 +97,7 @@ PromiseInterface: PENDING, FULFILLED, and REJECTED.
 
 string
 
-#### otherwise()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html\#method_otherwise)
+#### otherwise()  [header link](class-guzzlehttp-promise-promiseinterface-method-otherwise.md)
 
 Appends a rejection handler callback to the promise, and returns a new
 promise resolving to the return value of the callback if it is called,
@@ -117,9 +117,9 @@ Invoked when the promise is rejected.
 
 ##### Return values
 
-[PromiseInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html)
+[PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### reject()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html\#method_reject)
+#### reject()  [header link](class-guzzlehttp-promise-promiseinterface-method-reject.md)
 
 Reject the promise with the given reason.
 
@@ -132,13 +132,13 @@ Reject the promise with the given reason.
 $reason
 : mixed
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html\#method_reject\#tags)
+##### Tags  [header link](class-guzzlehttp-promise-promiseinterface-method-reject-tags.md)
 
 throwsRuntimeException
 
 if the promise is already resolved.
 
-#### resolve()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html\#method_resolve)
+#### resolve()  [header link](class-guzzlehttp-promise-promiseinterface-method-resolve.md)
 
 Resolve the promise with the given value.
 
@@ -151,13 +151,13 @@ Resolve the promise with the given value.
 $value
 : mixed
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html\#method_resolve\#tags)
+##### Tags  [header link](class-guzzlehttp-promise-promiseinterface-method-resolve-tags.md)
 
 throwsRuntimeException
 
 if the promise is already resolved.
 
-#### then()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html\#method_then)
+#### then()  [header link](class-guzzlehttp-promise-promiseinterface-method-then.md)
 
 Appends fulfillment and rejection handlers to the promise, and returns
 a new promise resolving to the return value of the called handler.
@@ -182,9 +182,9 @@ Invoked when the promise is rejected.
 
 ##### Return values
 
-[PromiseInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html)
+[PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### wait()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html\#method_wait)
+#### wait()  [header link](class-guzzlehttp-promise-promiseinterface-method-wait.md)
 
 Waits until the promise completes if possible.
 
@@ -203,7 +203,7 @@ $unwrap
 : bool
 = true
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html\#method_wait\#tags)
+##### Tags  [header link](class-guzzlehttp-promise-promiseinterface-method-wait-tags.md)
 
 throwsLogicException
 
@@ -217,19 +217,19 @@ promise does not settle after waiting.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#toc-methods)
+  - [Constants](class-guzzlehttp-promise-promiseinterface-toc-constants.md)
+  - [Methods](class-guzzlehttp-promise-promiseinterface-toc-methods.md)
 - Methods
-  - [cancel()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#method_cancel)
-  - [getState()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#method_getState)
-  - [otherwise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#method_otherwise)
-  - [reject()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#method_reject)
-  - [resolve()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#method_resolve)
-  - [then()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#method_then)
-  - [wait()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#method_wait)
+  - [cancel()](class-guzzlehttp-promise-promiseinterface-method-cancel.md)
+  - [getState()](class-guzzlehttp-promise-promiseinterface-method-getstate.md)
+  - [otherwise()](class-guzzlehttp-promise-promiseinterface-method-otherwise.md)
+  - [reject()](class-guzzlehttp-promise-promiseinterface-method-reject.md)
+  - [resolve()](class-guzzlehttp-promise-promiseinterface-method-resolve.md)
+  - [then()](class-guzzlehttp-promise-promiseinterface-method-then.md)
+  - [wait()](class-guzzlehttp-promise-promiseinterface-method-wait.md)
 - Constants
-  - [FULFILLED](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#constant_FULFILLED)
-  - [PENDING](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#constant_PENDING)
-  - [REJECTED](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#constant_REJECTED)
+  - [FULFILLED](class-guzzlehttp-promise-promiseinterface-constant-fulfilled.md)
+  - [PENDING](class-guzzlehttp-promise-promiseinterface-constant-pending.md)
+  - [REJECTED](class-guzzlehttp-promise-promiseinterface-constant-rejected.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.PromiseInterface.html#top)
+[Back To Top](class-guzzlehttp-promise-promiseinterface-top.md)

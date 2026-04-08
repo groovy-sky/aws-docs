@@ -17,26 +17,26 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2020-09-18**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotdeviceadvisor-2020-09-18.html)
+- [**2020-09-18**](api-iotdeviceadvisor-2020-09-18.md)
 
-  - [CreateSuiteDefinition](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotdeviceadvisor-2020-09-18.html#createsuitedefinition)
-  - [DeleteSuiteDefinition](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotdeviceadvisor-2020-09-18.html#deletesuitedefinition)
-  - [GetDeviceAdvisorEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotdeviceadvisor-2020-09-18.html#getdeviceadvisorendpoint)
-  - [GetSuiteDefinition](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotdeviceadvisor-2020-09-18.html#getsuitedefinition)
-  - [GetSuiteRun](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotdeviceadvisor-2020-09-18.html#getsuiterun)
-  - [GetSuiteRunReport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotdeviceadvisor-2020-09-18.html#getsuiterunreport)
-  - [ListSuiteDefinitions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotdeviceadvisor-2020-09-18.html#listsuitedefinitions)
-  - [ListSuiteRuns](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotdeviceadvisor-2020-09-18.html#listsuiteruns)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotdeviceadvisor-2020-09-18.html#listtagsforresource)
-  - [StartSuiteRun](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotdeviceadvisor-2020-09-18.html#startsuiterun)
-  - [StopSuiteRun](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotdeviceadvisor-2020-09-18.html#stopsuiterun)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotdeviceadvisor-2020-09-18.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotdeviceadvisor-2020-09-18.html#untagresource)
-  - [UpdateSuiteDefinition](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotdeviceadvisor-2020-09-18.html#updatesuitedefinition)
+  - [CreateSuiteDefinition](api-iotdeviceadvisor-2020-09-18-createsuitedefinition.md)
+  - [DeleteSuiteDefinition](api-iotdeviceadvisor-2020-09-18-deletesuitedefinition.md)
+  - [GetDeviceAdvisorEndpoint](api-iotdeviceadvisor-2020-09-18-getdeviceadvisorendpoint.md)
+  - [GetSuiteDefinition](api-iotdeviceadvisor-2020-09-18-getsuitedefinition.md)
+  - [GetSuiteRun](api-iotdeviceadvisor-2020-09-18-getsuiterun.md)
+  - [GetSuiteRunReport](api-iotdeviceadvisor-2020-09-18-getsuiterunreport.md)
+  - [ListSuiteDefinitions](api-iotdeviceadvisor-2020-09-18-listsuitedefinitions.md)
+  - [ListSuiteRuns](api-iotdeviceadvisor-2020-09-18-listsuiteruns.md)
+  - [ListTagsForResource](api-iotdeviceadvisor-2020-09-18-listtagsforresource.md)
+  - [StartSuiteRun](api-iotdeviceadvisor-2020-09-18-startsuiterun.md)
+  - [StopSuiteRun](api-iotdeviceadvisor-2020-09-18-stopsuiterun.md)
+  - [TagResource](api-iotdeviceadvisor-2020-09-18-tagresource.md)
+  - [UntagResource](api-iotdeviceadvisor-2020-09-18-untagresource.md)
+  - [UpdateSuiteDefinition](api-iotdeviceadvisor-2020-09-18-updatesuitedefinition.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTDeviceAdvisor.IoTDeviceAdvisorClient.html\#toc)
+### Table of Contents  [header link](class-aws-iotdeviceadvisor-iotdeviceadvisorclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTDeviceAdvisor.IoTDeviceAdvisorClient.html\#toc-methods)
+#### Methods  [header link](class-aws-iotdeviceadvisor-iotdeviceadvisorclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -67,7 +67,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTDeviceAdvisor.IoTDeviceAdvisorClient.html\#methods)
+### Methods  [header link](class-aws-iotdeviceadvisor-iotdeviceadvisorclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -534,7 +534,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTDeviceAdvisor.IoTDeviceAdvisorClient.html#toc-methods)
+  - [Methods](class-aws-iotdeviceadvisor-iotdeviceadvisorclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -561,4 +561,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTDeviceAdvisor.IoTDeviceAdvisorClient.html#top)
+[Back To Top](class-aws-iotdeviceadvisor-iotdeviceadvisorclient-top.md)

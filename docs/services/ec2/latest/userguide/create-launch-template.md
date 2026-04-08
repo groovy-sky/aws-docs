@@ -500,7 +500,7 @@ _template remains unchanged._ When an instance is launched using this
 launch template, the AMI ID resolves to the new
 `ami-00112233445566778`.
 
-![Using Systems Manager parameters in the Parameter Store to update a launch template.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/launch-template-ami-alias.png)
+![Using Systems Manager parameters in the Parameter Store to update a launch template.](../../../images/awsec2/latest/userguide/images/launch-template-ami-alias-png.md)
 
 ### Systems Manager parameter format for AMI IDs
 

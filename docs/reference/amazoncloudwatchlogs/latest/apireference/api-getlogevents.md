@@ -33,7 +33,7 @@ include both.
 ###### Note
 
 If you are using [log\
-transformation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation.html), the `GetLogEvents` operation returns only the original
+transformation](../../../../services/amazoncloudwatch/latest/logs/cloudwatch-logs-transformation.md), the `GetLogEvents` operation returns only the original
 versions of log events, before they were transformed. To view the transformed versions, you
 must use a [CloudWatch Logs\
 query.](../../../../services/amazoncloudwatch/latest/logs/analyzinglogdata.md)
@@ -207,7 +207,7 @@ The following data is returned in JSON format by the service.
 
 The events.
 
-Type: Array of [OutputLogEvent](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_OutputLogEvent.html) objects
+Type: Array of [OutputLogEvent](api-outputlogevent.md) objects
 
 **[nextBackwardToken](#API_GetLogEvents_ResponseSyntax)**
 
@@ -353,27 +353,27 @@ The following example lists all events for the specified log stream.
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/logs-2014-03-28/GetLogEvents)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/logs-2014-03-28/getlogevents.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/logs-2014-03-28/GetLogEvents)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/logs-2014-03-28/getlogevents.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/GetLogEvents)
+- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/getlogevents.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/logs-2014-03-28/GetLogEvents)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/logs-2014-03-28/getlogevents.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/GetLogEvents)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/getlogevents.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/logs-2014-03-28/GetLogEvents)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/logs-2014-03-28/getlogevents.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/logs-2014-03-28/GetLogEvents)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/logs-2014-03-28/getlogevents.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/logs-2014-03-28/GetLogEvents)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/logs-2014-03-28/getlogevents.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/logs-2014-03-28/GetLogEvents)
+- [AWS SDK for Python](../../../../services/goto/boto3/logs-2014-03-28/getlogevents.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/logs-2014-03-28/GetLogEvents)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/getlogevents.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GetLogAnomalyDetector
 

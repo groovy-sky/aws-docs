@@ -74,7 +74,7 @@ codes.
 
 If your account is not authorized to specify billing product codes, you can publish AMIs
 that include billable software and list them on the AWS Marketplace. You must first register as a seller
-on the AWS Marketplace. For more information, see [Getting started as an AWS Marketplace seller](https://docs.aws.amazon.com/marketplace/latest/userguide/user-guide-for-sellers.html) and [AMI-based products in AWS Marketplace](https://docs.aws.amazon.com/marketplace/latest/userguide/ami-products.html) in the _AWS Marketplace Seller Guide_.
+on the AWS Marketplace. For more information, see [Getting started as an AWS Marketplace seller](../../../../services/marketplace/latest/userguide/user-guide-for-sellers.md) and [AMI-based products in AWS Marketplace](../../../../services/marketplace/latest/userguide/ami-products.md) in the _AWS Marketplace Seller Guide_.
 
 Type: Array of strings
 
@@ -381,9 +381,9 @@ https://ec2.amazonaws.com/?Action=RegisterImage
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/RegisterImage)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/registerimage.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/RegisterImage)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/registerimage.md)
 
 - [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/registerimage.md)
 
@@ -397,7 +397,7 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/registerimage.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/RegisterImage)
+- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/registerimage.md)
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/registerimage.md)
 

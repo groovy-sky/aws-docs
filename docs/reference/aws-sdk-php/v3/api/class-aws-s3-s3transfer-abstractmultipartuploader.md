@@ -2,7 +2,7 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
 
 ## AbstractMultipartUploader        in package    - [Aws](package-aws.md)       implements  [PromisorInterface](class-guzzlehttp-promise-promisorinterface.md)
 
@@ -10,31 +10,31 @@ AbstractYes
 
 Abstract base class for multipart operations
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-abstractmultipartuploader-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-s3-s3transfer-abstractmultipartuploader-toc-interfaces.md)
 
 [PromisorInterface](class-guzzlehttp-promise-promisorinterface.md)Interface used with classes that return a promise.
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html\#toc-constants)
+#### Constants  [header link](class-aws-s3-s3transfer-abstractmultipartuploader-toc-constants.md)
 
-[PART\_MAX\_NUM](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html#constant_PART_MAX_NUM)
-= 10000 [PART\_MAX\_SIZE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html#constant_PART_MAX_SIZE)
-= 5 \* 1024 \* 1024 \* 1024 [PART\_MIN\_SIZE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html#constant_PART_MIN_SIZE)
+[PART\_MAX\_NUM](class-aws-s3-s3transfer-abstractmultipartuploader-constant-part-max-num.md)
+= 10000 [PART\_MAX\_SIZE](class-aws-s3-s3transfer-abstractmultipartuploader-constant-part-max-size.md)
+= 5 \* 1024 \* 1024 \* 1024 [PART\_MIN\_SIZE](class-aws-s3-s3transfer-abstractmultipartuploader-constant-part-min-size.md)
 = 5 \* 1024 \* 1024
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-abstractmultipartuploader-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html#method___construct)
-: mixed [getCurrentSnapshot()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html#method_getCurrentSnapshot)
-: [TransferProgressSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html) \|null Get the current progress snapshot.[getPartsCompleted()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html#method_getPartsCompleted)
-: array<string\|int, mixed> [getUploadId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html#method_getUploadId)
-: string\|null [promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html#method_promise)
+[\_\_construct()](class-aws-s3-s3transfer-abstractmultipartuploader-method-construct.md)
+: mixed [getCurrentSnapshot()](class-aws-s3-s3transfer-abstractmultipartuploader-method-getcurrentsnapshot.md)
+: [TransferProgressSnapshot](class-aws-s3-s3transfer-progress-transferprogresssnapshot.md) \|null Get the current progress snapshot.[getPartsCompleted()](class-aws-s3-s3transfer-abstractmultipartuploader-method-getpartscompleted.md)
+: array<string\|int, mixed> [getUploadId()](class-aws-s3-s3transfer-abstractmultipartuploader-method-getuploadid.md)
+: string\|null [promise()](class-aws-s3-s3transfer-abstractmultipartuploader-method-promise.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Returns a promise.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html\#constants)
+### Constants  [header link](class-aws-s3-s3transfer-abstractmultipartuploader-constants.md)
 
-#### PART\_MAX\_NUM  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html\#constant_PART_MAX_NUM)
+#### PART\_MAX\_NUM  [header link](class-aws-s3-s3transfer-abstractmultipartuploader-constant-part-max-num.md)
 
 `
     public
@@ -43,7 +43,7 @@ Abstract base class for multipart operations
     = 10000
 `
 
-#### PART\_MAX\_SIZE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html\#constant_PART_MAX_SIZE)
+#### PART\_MAX\_SIZE  [header link](class-aws-s3-s3transfer-abstractmultipartuploader-constant-part-max-size.md)
 
 `
     public
@@ -52,7 +52,7 @@ Abstract base class for multipart operations
     = 5 * 1024 * 1024 * 1024
 `
 
-#### PART\_MIN\_SIZE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html\#constant_PART_MIN_SIZE)
+#### PART\_MIN\_SIZE  [header link](class-aws-s3-s3transfer-abstractmultipartuploader-constant-part-min-size.md)
 
 `
     public
@@ -61,9 +61,9 @@ Abstract base class for multipart operations
     = 5 * 1024 * 1024
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-abstractmultipartuploader-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3transfer-abstractmultipartuploader-method-construct.md)
 
 `
     public
@@ -85,12 +85,12 @@ $uploadId
 = null$partsCompleted
 : array<string\|int, mixed>
 = \[\]$currentSnapshot
-: [TransferProgressSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html) \|null
+: [TransferProgressSnapshot](class-aws-s3-s3transfer-progress-transferprogresssnapshot.md) \|null
 = null$listenerNotifier
-: [TransferListenerNotifier](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferListenerNotifier.html) \|null
+: [TransferListenerNotifier](class-aws-s3-s3transfer-progress-transferlistenernotifier.md) \|null
 = null
 
-#### getCurrentSnapshot()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html\#method_getCurrentSnapshot)
+#### getCurrentSnapshot()  [header link](class-aws-s3-s3transfer-abstractmultipartuploader-method-getcurrentsnapshot.md)
 
 Get the current progress snapshot.
 
@@ -100,9 +100,9 @@ Get the current progress snapshot.
 
 ##### Return values
 
-[TransferProgressSnapshot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.TransferProgressSnapshot.html) \|null
+[TransferProgressSnapshot](class-aws-s3-s3transfer-progress-transferprogresssnapshot.md) \|null
 
-#### getPartsCompleted()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html\#method_getPartsCompleted)
+#### getPartsCompleted()  [header link](class-aws-s3-s3transfer-abstractmultipartuploader-method-getpartscompleted.md)
 
 `
     public
@@ -112,7 +112,7 @@ Get the current progress snapshot.
 
 array<string\|int, mixed>
 
-#### getUploadId()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html\#method_getUploadId)
+#### getUploadId()  [header link](class-aws-s3-s3transfer-abstractmultipartuploader-method-getuploadid.md)
 
 `
     public
@@ -122,7 +122,7 @@ array<string\|int, mixed>
 
 string\|null
 
-#### promise()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html\#method_promise)
+#### promise()  [header link](class-aws-s3-s3transfer-abstractmultipartuploader-method-promise.md)
 
 Returns a promise.
 
@@ -140,17 +140,17 @@ Returns a promise.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html#toc-methods)
+  - [Constants](class-aws-s3-s3transfer-abstractmultipartuploader-toc-constants.md)
+  - [Methods](class-aws-s3-s3transfer-abstractmultipartuploader-toc-methods.md)
 - Constants
-  - [PART\_MAX\_NUM](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html#constant_PART_MAX_NUM)
-  - [PART\_MAX\_SIZE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html#constant_PART_MAX_SIZE)
-  - [PART\_MIN\_SIZE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html#constant_PART_MIN_SIZE)
+  - [PART\_MAX\_NUM](class-aws-s3-s3transfer-abstractmultipartuploader-constant-part-max-num.md)
+  - [PART\_MAX\_SIZE](class-aws-s3-s3transfer-abstractmultipartuploader-constant-part-max-size.md)
+  - [PART\_MIN\_SIZE](class-aws-s3-s3transfer-abstractmultipartuploader-constant-part-min-size.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html#method___construct)
-  - [getCurrentSnapshot()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html#method_getCurrentSnapshot)
-  - [getPartsCompleted()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html#method_getPartsCompleted)
-  - [getUploadId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html#method_getUploadId)
-  - [promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html#method_promise)
+  - [\_\_construct()](class-aws-s3-s3transfer-abstractmultipartuploader-method-construct.md)
+  - [getCurrentSnapshot()](class-aws-s3-s3transfer-abstractmultipartuploader-method-getcurrentsnapshot.md)
+  - [getPartsCompleted()](class-aws-s3-s3transfer-abstractmultipartuploader-method-getpartscompleted.md)
+  - [getUploadId()](class-aws-s3-s3transfer-abstractmultipartuploader-method-getuploadid.md)
+  - [promise()](class-aws-s3-s3transfer-abstractmultipartuploader-method-promise.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.AbstractMultipartUploader.html#top)
+[Back To Top](class-aws-s3-s3transfer-abstractmultipartuploader-top.md)

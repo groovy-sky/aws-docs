@@ -17,44 +17,44 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2022-07-28**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html)
+- [**2022-07-28**](api-resource-explorer-2-2022-07-28.md)
 
-  - [AssociateDefaultView](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#associatedefaultview)
-  - [BatchGetView](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#batchgetview)
-  - [CreateIndex](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#createindex)
-  - [CreateResourceExplorerSetup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#createresourceexplorersetup)
-  - [CreateView](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#createview)
-  - [DeleteIndex](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#deleteindex)
-  - [DeleteResourceExplorerSetup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#deleteresourceexplorersetup)
-  - [DeleteView](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#deleteview)
-  - [DisassociateDefaultView](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#disassociatedefaultview)
-  - [GetAccountLevelServiceConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#getaccountlevelserviceconfiguration)
-  - [GetDefaultView](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#getdefaultview)
-  - [GetIndex](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#getindex)
-  - [GetManagedView](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#getmanagedview)
-  - [GetResourceExplorerSetup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#getresourceexplorersetup)
-  - [GetServiceIndex](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#getserviceindex)
-  - [GetServiceView](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#getserviceview)
-  - [GetView](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#getview)
-  - [ListIndexes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#listindexes)
-  - [ListIndexesForMembers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#listindexesformembers)
-  - [ListManagedViews](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#listmanagedviews)
-  - [ListResources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#listresources)
-  - [ListServiceIndexes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#listserviceindexes)
-  - [ListServiceViews](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#listserviceviews)
-  - [ListStreamingAccessForServices](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#liststreamingaccessforservices)
-  - [ListSupportedResourceTypes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#listsupportedresourcetypes)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#listtagsforresource)
-  - [ListViews](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#listviews)
-  - [Search](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#search)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#untagresource)
-  - [UpdateIndexType](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#updateindextype)
-  - [UpdateView](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-resource-explorer-2-2022-07-28.html#updateview)
+  - [AssociateDefaultView](api-resource-explorer-2-2022-07-28-associatedefaultview.md)
+  - [BatchGetView](api-resource-explorer-2-2022-07-28-batchgetview.md)
+  - [CreateIndex](api-resource-explorer-2-2022-07-28-createindex.md)
+  - [CreateResourceExplorerSetup](api-resource-explorer-2-2022-07-28-createresourceexplorersetup.md)
+  - [CreateView](api-resource-explorer-2-2022-07-28-createview.md)
+  - [DeleteIndex](api-resource-explorer-2-2022-07-28-deleteindex.md)
+  - [DeleteResourceExplorerSetup](api-resource-explorer-2-2022-07-28-deleteresourceexplorersetup.md)
+  - [DeleteView](api-resource-explorer-2-2022-07-28-deleteview.md)
+  - [DisassociateDefaultView](api-resource-explorer-2-2022-07-28-disassociatedefaultview.md)
+  - [GetAccountLevelServiceConfiguration](api-resource-explorer-2-2022-07-28-getaccountlevelserviceconfiguration.md)
+  - [GetDefaultView](api-resource-explorer-2-2022-07-28-getdefaultview.md)
+  - [GetIndex](api-resource-explorer-2-2022-07-28-getindex.md)
+  - [GetManagedView](api-resource-explorer-2-2022-07-28-getmanagedview.md)
+  - [GetResourceExplorerSetup](api-resource-explorer-2-2022-07-28-getresourceexplorersetup.md)
+  - [GetServiceIndex](api-resource-explorer-2-2022-07-28-getserviceindex.md)
+  - [GetServiceView](api-resource-explorer-2-2022-07-28-getserviceview.md)
+  - [GetView](api-resource-explorer-2-2022-07-28-getview.md)
+  - [ListIndexes](api-resource-explorer-2-2022-07-28-listindexes.md)
+  - [ListIndexesForMembers](api-resource-explorer-2-2022-07-28-listindexesformembers.md)
+  - [ListManagedViews](api-resource-explorer-2-2022-07-28-listmanagedviews.md)
+  - [ListResources](api-resource-explorer-2-2022-07-28-listresources.md)
+  - [ListServiceIndexes](api-resource-explorer-2-2022-07-28-listserviceindexes.md)
+  - [ListServiceViews](api-resource-explorer-2-2022-07-28-listserviceviews.md)
+  - [ListStreamingAccessForServices](api-resource-explorer-2-2022-07-28-liststreamingaccessforservices.md)
+  - [ListSupportedResourceTypes](api-resource-explorer-2-2022-07-28-listsupportedresourcetypes.md)
+  - [ListTagsForResource](api-resource-explorer-2-2022-07-28-listtagsforresource.md)
+  - [ListViews](api-resource-explorer-2-2022-07-28-listviews.md)
+  - [Search](api-resource-explorer-2-2022-07-28-search.md)
+  - [TagResource](api-resource-explorer-2-2022-07-28-tagresource.md)
+  - [UntagResource](api-resource-explorer-2-2022-07-28-untagresource.md)
+  - [UpdateIndexType](api-resource-explorer-2-2022-07-28-updateindextype.md)
+  - [UpdateView](api-resource-explorer-2-2022-07-28-updateview.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResourceExplorer2.ResourceExplorer2Client.html\#toc)
+### Table of Contents  [header link](class-aws-resourceexplorer2-resourceexplorer2client-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResourceExplorer2.ResourceExplorer2Client.html\#toc-methods)
+#### Methods  [header link](class-aws-resourceexplorer2-resourceexplorer2client-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -85,7 +85,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResourceExplorer2.ResourceExplorer2Client.html\#methods)
+### Methods  [header link](class-aws-resourceexplorer2-resourceexplorer2client-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -552,7 +552,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResourceExplorer2.ResourceExplorer2Client.html#toc-methods)
+  - [Methods](class-aws-resourceexplorer2-resourceexplorer2client-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -579,4 +579,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResourceExplorer2.ResourceExplorer2Client.html#top)
+[Back To Top](class-aws-resourceexplorer2-resourceexplorer2client-top.md)

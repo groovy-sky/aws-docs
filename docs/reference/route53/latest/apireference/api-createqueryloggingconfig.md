@@ -83,7 +83,7 @@ configuration. For example,
 `aws:SourceAccount:111111111111`.
 
 For more information, see [The confused\
-deputy problem](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html) in the _AWS_
+deputy problem](../../../../services/iam/latest/userguide/confused-deputy.md) in the _AWS_
 _IAM User Guide_.
 
 ###### Note
@@ -182,7 +182,7 @@ send query logs to. This is the format of the ARN:
 
 arn:aws:logs: _region_: _account-id_:log-group: _log\_group\_name_
 
-To get the ARN for a log group, you can use the CloudWatch console, the [DescribeLogGroups](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DescribeLogGroups.html) API action, the [describe-log-groups](https://docs.aws.amazon.com/cli/latest/reference/logs/describe-log-groups.html)
+To get the ARN for a log group, you can use the CloudWatch console, the [DescribeLogGroups](../../../amazoncloudwatchlogs/latest/apireference/api-describeloggroups.md) API action, the [describe-log-groups](../../../../services/cli/latest/reference/logs/describe-log-groups.md)
 command, or the applicable command in one of the AWS SDKs.
 
 Type: String
@@ -242,7 +242,7 @@ A complex type that contains the ID for a query logging configuration, the ID of
 hosted zone that you want to log queries for, and the ARN for the log group that you
 want Amazon Route 53 to send query logs to.
 
-Type: [QueryLoggingConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_QueryLoggingConfig.html) object
+Type: [QueryLoggingConfig](api-queryloggingconfig.md) object
 
 ## Errors
 
@@ -349,27 +349,27 @@ HTTP/1.1 200 OK
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/route53-2013-04-01/CreateQueryLoggingConfig)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53-2013-04-01/createqueryloggingconfig.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/route53-2013-04-01/CreateQueryLoggingConfig)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53-2013-04-01/createqueryloggingconfig.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53-2013-04-01/CreateQueryLoggingConfig)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53-2013-04-01/createqueryloggingconfig.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/route53-2013-04-01/CreateQueryLoggingConfig)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53-2013-04-01/createqueryloggingconfig.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53-2013-04-01/CreateQueryLoggingConfig)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53-2013-04-01/createqueryloggingconfig.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/route53-2013-04-01/CreateQueryLoggingConfig)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53-2013-04-01/createqueryloggingconfig.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/route53-2013-04-01/CreateQueryLoggingConfig)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53-2013-04-01/createqueryloggingconfig.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/route53-2013-04-01/CreateQueryLoggingConfig)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53-2013-04-01/createqueryloggingconfig.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/route53-2013-04-01/CreateQueryLoggingConfig)
+- [AWS SDK for Python](../../../../services/goto/boto3/route53-2013-04-01/createqueryloggingconfig.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53-2013-04-01/CreateQueryLoggingConfig)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53-2013-04-01/createqueryloggingconfig.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateKeySigningKey
 

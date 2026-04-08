@@ -8,7 +8,7 @@ The overrides that are associated with a task.
 
 One or more container overrides that are sent to a task.
 
-Type: Array of [ContainerOverride](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerOverride.html) objects
+Type: Array of [ContainerOverride](api-containeroverride.md) objects
 
 Required: No
 
@@ -33,7 +33,7 @@ following platform versions:
 
 - Windows platform version `1.0.0` or later.
 
-Type: [EphemeralStorage](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_EphemeralStorage.html) object
+Type: [EphemeralStorage](api-ephemeralstorage.md) object
 
 Required: No
 
@@ -52,7 +52,7 @@ Required: No
 
 The Elastic Inference accelerator override for the task.
 
-Type: Array of [InferenceAcceleratorOverride](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_InferenceAcceleratorOverride.html) objects
+Type: Array of [InferenceAcceleratorOverride](api-inferenceacceleratoroverride.md) objects
 
 Required: No
 
@@ -79,13 +79,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/TaskOverride)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/taskoverride.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/TaskOverride)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/taskoverride.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/TaskOverride)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/taskoverride.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 TaskManagedEBSVolumeTerminationPolicy
 

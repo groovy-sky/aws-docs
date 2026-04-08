@@ -17,22 +17,22 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2021-08-20**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-support-app-2021-08-20.html)
+- [**2021-08-20**](api-support-app-2021-08-20.md)
 
-  - [CreateSlackChannelConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-support-app-2021-08-20.html#createslackchannelconfiguration)
-  - [DeleteAccountAlias](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-support-app-2021-08-20.html#deleteaccountalias)
-  - [DeleteSlackChannelConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-support-app-2021-08-20.html#deleteslackchannelconfiguration)
-  - [DeleteSlackWorkspaceConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-support-app-2021-08-20.html#deleteslackworkspaceconfiguration)
-  - [GetAccountAlias](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-support-app-2021-08-20.html#getaccountalias)
-  - [ListSlackChannelConfigurations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-support-app-2021-08-20.html#listslackchannelconfigurations)
-  - [ListSlackWorkspaceConfigurations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-support-app-2021-08-20.html#listslackworkspaceconfigurations)
-  - [PutAccountAlias](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-support-app-2021-08-20.html#putaccountalias)
-  - [RegisterSlackWorkspaceForOrganization](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-support-app-2021-08-20.html#registerslackworkspacefororganization)
-  - [UpdateSlackChannelConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-support-app-2021-08-20.html#updateslackchannelconfiguration)
+  - [CreateSlackChannelConfiguration](api-support-app-2021-08-20-createslackchannelconfiguration.md)
+  - [DeleteAccountAlias](api-support-app-2021-08-20-deleteaccountalias.md)
+  - [DeleteSlackChannelConfiguration](api-support-app-2021-08-20-deleteslackchannelconfiguration.md)
+  - [DeleteSlackWorkspaceConfiguration](api-support-app-2021-08-20-deleteslackworkspaceconfiguration.md)
+  - [GetAccountAlias](api-support-app-2021-08-20-getaccountalias.md)
+  - [ListSlackChannelConfigurations](api-support-app-2021-08-20-listslackchannelconfigurations.md)
+  - [ListSlackWorkspaceConfigurations](api-support-app-2021-08-20-listslackworkspaceconfigurations.md)
+  - [PutAccountAlias](api-support-app-2021-08-20-putaccountalias.md)
+  - [RegisterSlackWorkspaceForOrganization](api-support-app-2021-08-20-registerslackworkspacefororganization.md)
+  - [UpdateSlackChannelConfiguration](api-support-app-2021-08-20-updateslackchannelconfiguration.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SupportApp.SupportAppClient.html\#toc)
+### Table of Contents  [header link](class-aws-supportapp-supportappclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SupportApp.SupportAppClient.html\#toc-methods)
+#### Methods  [header link](class-aws-supportapp-supportappclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -63,7 +63,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SupportApp.SupportAppClient.html\#methods)
+### Methods  [header link](class-aws-supportapp-supportappclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -530,7 +530,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SupportApp.SupportAppClient.html#toc-methods)
+  - [Methods](class-aws-supportapp-supportappclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -557,4 +557,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SupportApp.SupportAppClient.html#top)
+[Back To Top](class-aws-supportapp-supportappclient-top.md)

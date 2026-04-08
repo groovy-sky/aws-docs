@@ -7,17 +7,17 @@ Menu
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialsUtils.html\#toc)
+### Table of Contents  [header link](class-aws-credentials-credentialsutils-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialsUtils.html\#toc-methods)
+#### Methods  [header link](class-aws-credentials-credentialsutils-toc-methods.md)
 
-[isLoopBackAddress()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialsUtils.html#method_isLoopBackAddress)
+[isLoopBackAddress()](class-aws-credentials-credentialsutils-method-isloopbackaddress.md)
 : bool Determines whether a given host
 is a loopback address.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialsUtils.html\#methods)
+### Methods  [header link](class-aws-credentials-credentialsutils-methods.md)
 
-#### isLoopBackAddress()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialsUtils.html\#method_isLoopBackAddress)
+#### isLoopBackAddress()  [header link](class-aws-credentials-credentialsutils-method-isloopbackaddress.md)
 
 Determines whether a given host
 is a loopback address.
@@ -41,8 +41,8 @@ bool
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialsUtils.html#toc-methods)
+  - [Methods](class-aws-credentials-credentialsutils-toc-methods.md)
 - Methods
-  - [isLoopBackAddress()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialsUtils.html#method_isLoopBackAddress)
+  - [isLoopBackAddress()](class-aws-credentials-credentialsutils-method-isloopbackaddress.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.CredentialsUtils.html#top)
+[Back To Top](class-aws-credentials-credentialsutils-top.md)

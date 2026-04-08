@@ -4,15 +4,15 @@ Menu
 
 ## SecurityHub
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securityhub.html\#toc)
+### Table of Contents  [header link](namespace-aws-securityhub-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securityhub.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-securityhub-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securityhub.exception.html)
+[Exception](namespace-aws-securityhub-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securityhub.html\#toc-classes)
+#### Classes  [header link](namespace-aws-securityhub-toc-classes.md)
 
-[SecurityHubClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecurityHub.SecurityHubClient.html)This client is used to interact with the **AWS SecurityHub** service.
+[SecurityHubClient](class-aws-securityhub-securityhubclient.md)This client is used to interact with the **AWS SecurityHub** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securityhub.html#toc-classes)
+  - [Classes](namespace-aws-securityhub-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securityhub.html#top)
+[Back To Top](namespace-aws-securityhub-top.md)

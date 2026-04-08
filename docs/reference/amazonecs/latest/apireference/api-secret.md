@@ -30,8 +30,8 @@ the AWS Secrets Manager secret or the full ARN of the parameter in the SSM Param
 Store.
 
 For information about the require AWS Identity and Access Management permissions,
-see [Required IAM permissions for Amazon ECS secrets](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specifying-sensitive-data-secrets.html#secrets-iam) (for Secrets Manager) or
-[Required IAM permissions for Amazon ECS secrets](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specifying-sensitive-data-parameters.html) (for Systems Manager
+see [Required IAM permissions for Amazon ECS secrets](../../../../services/amazonecs/latest/developerguide/specifying-sensitive-data-secrets-secrets-iam.md) (for Secrets Manager) or
+[Required IAM permissions for Amazon ECS secrets](../../../../services/amazonecs/latest/developerguide/specifying-sensitive-data-parameters.md) (for Systems Manager
 Parameter store) in the _Amazon Elastic Container Service Developer_
 _Guide_.
 
@@ -49,13 +49,13 @@ Required: Yes
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/Secret)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/secret.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/Secret)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/secret.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/Secret)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/secret.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Scale
 

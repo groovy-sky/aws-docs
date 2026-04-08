@@ -4,15 +4,15 @@ Menu
 
 ## BedrockAgent
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockagent.html\#toc)
+### Table of Contents  [header link](namespace-aws-bedrockagent-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockagent.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-bedrockagent-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockagent.exception.html)
+[Exception](namespace-aws-bedrockagent-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockagent.html\#toc-classes)
+#### Classes  [header link](namespace-aws-bedrockagent-toc-classes.md)
 
-[BedrockAgentClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.BedrockAgent.BedrockAgentClient.html)This client is used to interact with the **Agents for Amazon Bedrock** service.
+[BedrockAgentClient](class-aws-bedrockagent-bedrockagentclient.md)This client is used to interact with the **Agents for Amazon Bedrock** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockagent.html#toc-classes)
+  - [Classes](namespace-aws-bedrockagent-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.bedrockagent.html#top)
+[Back To Top](namespace-aws-bedrockagent-top.md)

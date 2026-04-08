@@ -4,15 +4,15 @@ Menu
 
 ## MarketplaceEntitlementService
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.marketplaceentitlementservice.html\#toc)
+### Table of Contents  [header link](namespace-aws-marketplaceentitlementservice-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.marketplaceentitlementservice.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-marketplaceentitlementservice-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.marketplaceentitlementservice.exception.html)
+[Exception](namespace-aws-marketplaceentitlementservice-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.marketplaceentitlementservice.html\#toc-classes)
+#### Classes  [header link](namespace-aws-marketplaceentitlementservice-toc-classes.md)
 
-[MarketplaceEntitlementServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MarketplaceEntitlementService.MarketplaceEntitlementServiceClient.html)This client is used to interact with the **AWS Marketplace Entitlement Service** service.
+[MarketplaceEntitlementServiceClient](class-aws-marketplaceentitlementservice-marketplaceentitlementserviceclient.md)This client is used to interact with the **AWS Marketplace Entitlement Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.marketplaceentitlementservice.html#toc-classes)
+  - [Classes](namespace-aws-marketplaceentitlementservice-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.marketplaceentitlementservice.html#top)
+[Back To Top](namespace-aws-marketplaceentitlementservice-top.md)

@@ -27,7 +27,7 @@ CloudFormation template used to create the dashboard.
 The detailed information about the dashboard in JSON format, including the widgets
 to include and their location on the dashboard. This parameter is required.
 
-For more information about the syntax, see [Dashboard Body Structure and Syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CloudWatch-Dashboard-Body-Structure.html).
+For more information about the syntax, see [Dashboard Body Structure and Syntax](cloudwatch-dashboard-body-structure.md).
 
 Type: String
 
@@ -60,11 +60,11 @@ render.
 If this result includes error messages, the input was not valid and the operation
 failed.
 
-Type: Array of [DashboardValidationMessage](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_DashboardValidationMessage.html) objects
+Type: Array of [DashboardValidationMessage](api-dashboardvalidationmessage.md) objects
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **ConflictException**
 
@@ -384,27 +384,27 @@ metric math widget.
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/monitoring-2010-08-01/PutDashboard)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/monitoring-2010-08-01/putdashboard.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/monitoring-2010-08-01/PutDashboard)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/monitoring-2010-08-01/putdashboard.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/PutDashboard)
+- [AWS SDK for C++](../../../goto/sdkforcpp/monitoring-2010-08-01/putdashboard.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/monitoring-2010-08-01/PutDashboard)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/monitoring-2010-08-01/putdashboard.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/PutDashboard)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/monitoring-2010-08-01/putdashboard.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/monitoring-2010-08-01/PutDashboard)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/monitoring-2010-08-01/putdashboard.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/monitoring-2010-08-01/PutDashboard)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/monitoring-2010-08-01/putdashboard.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/monitoring-2010-08-01/PutDashboard)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/monitoring-2010-08-01/putdashboard.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/PutDashboard)
+- [AWS SDK for Python](../../../../services/goto/boto3/monitoring-2010-08-01/putdashboard.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/monitoring-2010-08-01/PutDashboard)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/monitoring-2010-08-01/putdashboard.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 PutCompositeAlarm
 

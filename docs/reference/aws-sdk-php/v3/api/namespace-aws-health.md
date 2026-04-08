@@ -4,15 +4,15 @@ Menu
 
 ## Health
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.health.html\#toc)
+### Table of Contents  [header link](namespace-aws-health-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.health.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-health-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.health.exception.html)
+[Exception](namespace-aws-health-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.health.html\#toc-classes)
+#### Classes  [header link](namespace-aws-health-toc-classes.md)
 
-[HealthClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Health.HealthClient.html)This client is used to interact with the **AWS Health APIs and Notifications** service.
+[HealthClient](class-aws-health-healthclient.md)This client is used to interact with the **AWS Health APIs and Notifications** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.health.html#toc-classes)
+  - [Classes](namespace-aws-health-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.health.html#top)
+[Back To Top](namespace-aws-health-top.md)

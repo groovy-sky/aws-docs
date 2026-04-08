@@ -8,7 +8,7 @@ instead.
 
 Adds or updates the specified tags for the specified log group.
 
-To list the tags for a log group, use [ListTagsForResource](api-listtagsforresource.md). To remove tags, use [UntagResource](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_UntagResource.html).
+To list the tags for a log group, use [ListTagsForResource](api-listtagsforresource.md). To remove tags, use [UntagResource](api-untagresource.md).
 
 For more information about tags, see [Tag Log Groups in Amazon CloudWatch Logs](../../../../services/amazoncloudwatch/latest/logs/working-with-log-groups-and-streams.md#log-group-tagging) in the _Amazon CloudWatch Logs_
 _User Guide_.
@@ -17,7 +17,7 @@ CloudWatch Logs doesn't support IAM policies that prevent users from assigning s
 tags to log groups using the `aws:Resource/key-name
       ` or
 `aws:TagKeys` condition keys. For more information about using tags to control
-access, see [Controlling access to Amazon Web Services resources using tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html).
+access, see [Controlling access to Amazon Web Services resources using tags](../../../../services/iam/latest/userguide/access-tags.md).
 
 ## Request Syntax
 
@@ -132,27 +132,27 @@ Date: <Date>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/logs-2014-03-28/TagLogGroup)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/logs-2014-03-28/tagloggroup.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/logs-2014-03-28/TagLogGroup)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/logs-2014-03-28/tagloggroup.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/TagLogGroup)
+- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/tagloggroup.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/logs-2014-03-28/TagLogGroup)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/logs-2014-03-28/tagloggroup.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/TagLogGroup)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/tagloggroup.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/logs-2014-03-28/TagLogGroup)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/logs-2014-03-28/tagloggroup.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/logs-2014-03-28/TagLogGroup)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/logs-2014-03-28/tagloggroup.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/logs-2014-03-28/TagLogGroup)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/logs-2014-03-28/tagloggroup.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/logs-2014-03-28/TagLogGroup)
+- [AWS SDK for Python](../../../../services/goto/boto3/logs-2014-03-28/tagloggroup.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/logs-2014-03-28/TagLogGroup)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/tagloggroup.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 StopQuery
 

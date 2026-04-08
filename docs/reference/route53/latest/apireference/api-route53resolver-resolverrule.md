@@ -2,12 +2,12 @@
 
 For queries that originate in your VPC, detailed information about a Resolver rule, which specifies how to route DNS queries
 out of the VPC. The `ResolverRule` parameter appears in the response to a
-[CreateResolverRule](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_CreateResolverRule.html),
-[DeleteResolverRule](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_DeleteResolverRule.html),
-[GetResolverRule](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetResolverRule.html),
-[ListResolverRules](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListResolverRules.html),
+[CreateResolverRule](api-route53resolver-createresolverrule.md),
+[DeleteResolverRule](api-route53resolver-deleteresolverrule.md),
+[GetResolverRule](api-route53resolver-getresolverrule.md),
+[ListResolverRules](api-route53resolver-listresolverrules.md),
 or
-[UpdateResolverRule](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_UpdateResolverRule.html) request.
+[UpdateResolverRule](api-route53resolver-updateresolverrule.md) request.
 
 ## Contents
 
@@ -176,7 +176,7 @@ Required: No
 An array that contains the IP addresses and ports that an outbound endpoint forwards DNS queries to. Typically,
 these are the IP addresses of DNS resolvers on your network.
 
-Type: Array of [TargetAddress](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_TargetAddress.html) objects
+Type: Array of [TargetAddress](api-route53resolver-targetaddress.md) objects
 
 Array Members: Minimum number of 1 item.
 
@@ -186,13 +186,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53resolver-2018-04-01/ResolverRule)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53resolver-2018-04-01/resolverrule.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53resolver-2018-04-01/ResolverRule)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53resolver-2018-04-01/resolverrule.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53resolver-2018-04-01/ResolverRule)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53resolver-2018-04-01/resolverrule.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ResolverQueryLogConfigAssociation
 

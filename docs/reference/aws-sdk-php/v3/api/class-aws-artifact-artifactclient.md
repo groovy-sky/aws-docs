@@ -17,20 +17,20 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-05-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-artifact-2018-05-10.html)
+- [**2018-05-10**](api-artifact-2018-05-10.md)
 
-  - [GetAccountSettings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-artifact-2018-05-10.html#getaccountsettings)
-  - [GetReport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-artifact-2018-05-10.html#getreport)
-  - [GetReportMetadata](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-artifact-2018-05-10.html#getreportmetadata)
-  - [GetTermForReport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-artifact-2018-05-10.html#gettermforreport)
-  - [ListCustomerAgreements](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-artifact-2018-05-10.html#listcustomeragreements)
-  - [ListReportVersions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-artifact-2018-05-10.html#listreportversions)
-  - [ListReports](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-artifact-2018-05-10.html#listreports)
-  - [PutAccountSettings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-artifact-2018-05-10.html#putaccountsettings)
+  - [GetAccountSettings](api-artifact-2018-05-10-getaccountsettings.md)
+  - [GetReport](api-artifact-2018-05-10-getreport.md)
+  - [GetReportMetadata](api-artifact-2018-05-10-getreportmetadata.md)
+  - [GetTermForReport](api-artifact-2018-05-10-gettermforreport.md)
+  - [ListCustomerAgreements](api-artifact-2018-05-10-listcustomeragreements.md)
+  - [ListReportVersions](api-artifact-2018-05-10-listreportversions.md)
+  - [ListReports](api-artifact-2018-05-10-listreports.md)
+  - [PutAccountSettings](api-artifact-2018-05-10-putaccountsettings.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Artifact.ArtifactClient.html\#toc)
+### Table of Contents  [header link](class-aws-artifact-artifactclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Artifact.ArtifactClient.html\#toc-methods)
+#### Methods  [header link](class-aws-artifact-artifactclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -61,7 +61,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Artifact.ArtifactClient.html\#methods)
+### Methods  [header link](class-aws-artifact-artifactclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -528,7 +528,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Artifact.ArtifactClient.html#toc-methods)
+  - [Methods](class-aws-artifact-artifactclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -555,4 +555,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Artifact.ArtifactClient.html#top)
+[Back To Top](class-aws-artifact-artifactclient-top.md)

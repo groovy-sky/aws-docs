@@ -4,15 +4,15 @@ Menu
 
 ## RTBFabric
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.rtbfabric.html\#toc)
+### Table of Contents  [header link](namespace-aws-rtbfabric-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.rtbfabric.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-rtbfabric-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.rtbfabric.exception.html)
+[Exception](namespace-aws-rtbfabric-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.rtbfabric.html\#toc-classes)
+#### Classes  [header link](namespace-aws-rtbfabric-toc-classes.md)
 
-[RTBFabricClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RTBFabric.RTBFabricClient.html)This client is used to interact with the **RTBFabric** service.
+[RTBFabricClient](class-aws-rtbfabric-rtbfabricclient.md)This client is used to interact with the **RTBFabric** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.rtbfabric.html#toc-classes)
+  - [Classes](namespace-aws-rtbfabric-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.rtbfabric.html#top)
+[Back To Top](namespace-aws-rtbfabric-top.md)

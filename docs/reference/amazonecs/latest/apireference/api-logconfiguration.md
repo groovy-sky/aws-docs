@@ -61,7 +61,7 @@ _Service Developer Guide_.
 
 For more information about using the `awsfirelens` log driver, see [Send\
 Amazon ECS logs to an AWS service or AWS\
-Partner](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using_firelens.html).
+Partner](../../../../services/amazonecs/latest/developerguide/using-firelens.md).
 
 ###### Note
 
@@ -297,7 +297,7 @@ The secrets to pass to the log configuration. For more information, see [Specify
 sensitive data](../../../../services/amazonecs/latest/developerguide/specifying-sensitive-data.md) in the _Amazon Elastic Container Service Developer_
 _Guide_.
 
-Type: Array of [Secret](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Secret.html) objects
+Type: Array of [Secret](api-secret.md) objects
 
 Required: No
 
@@ -305,13 +305,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/LogConfiguration)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/logconfiguration.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/LogConfiguration)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/logconfiguration.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/LogConfiguration)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/logconfiguration.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 LoadBalancer
 

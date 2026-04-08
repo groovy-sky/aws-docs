@@ -37,6 +37,7 @@ jobs:
           go build -v -o dist/aws-docs ./cmd/aws-docs
 
       - name: Commit binary back to repository
+        if: github.event_name == 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -46,7 +47,8 @@ jobs:
             exit 0
           fi
           git commit -m "chore(ci): update aws-docs binary"
-          git push
+          git pull --rebase origin main
+          git push origin HEAD:main
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4

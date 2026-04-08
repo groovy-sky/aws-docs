@@ -55,7 +55,7 @@ Marketplace](https://aws.amazon.com/marketplace/partners/management-tour).
 At the end of each month, you receive an email with the amount your credit card has been
 charged for using any paid or supported AMIs during the month. This bill is separate
 from your regular Amazon EC2 bill. For more information, see [Paying for\
-products](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-paying-for-products.html) in the _AWS Marketplace Buyer Guide_.
+products](../../../marketplace/latest/buyerguide/buyer-paying-for-products.md) in the _AWS Marketplace Buyer Guide_.
 
 [Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 

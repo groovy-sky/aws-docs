@@ -17,28 +17,28 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2025-08-22**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-nova-act-2025-08-22.html)
+- [**2025-08-22**](api-nova-act-2025-08-22.md)
 
-  - [CreateAct](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-nova-act-2025-08-22.html#createact)
-  - [CreateSession](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-nova-act-2025-08-22.html#createsession)
-  - [CreateWorkflowDefinition](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-nova-act-2025-08-22.html#createworkflowdefinition)
-  - [CreateWorkflowRun](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-nova-act-2025-08-22.html#createworkflowrun)
-  - [DeleteWorkflowDefinition](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-nova-act-2025-08-22.html#deleteworkflowdefinition)
-  - [DeleteWorkflowRun](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-nova-act-2025-08-22.html#deleteworkflowrun)
-  - [GetWorkflowDefinition](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-nova-act-2025-08-22.html#getworkflowdefinition)
-  - [GetWorkflowRun](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-nova-act-2025-08-22.html#getworkflowrun)
-  - [InvokeActStep](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-nova-act-2025-08-22.html#invokeactstep)
-  - [ListActs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-nova-act-2025-08-22.html#listacts)
-  - [ListModels](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-nova-act-2025-08-22.html#listmodels)
-  - [ListSessions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-nova-act-2025-08-22.html#listsessions)
-  - [ListWorkflowDefinitions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-nova-act-2025-08-22.html#listworkflowdefinitions)
-  - [ListWorkflowRuns](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-nova-act-2025-08-22.html#listworkflowruns)
-  - [UpdateAct](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-nova-act-2025-08-22.html#updateact)
-  - [UpdateWorkflowRun](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-nova-act-2025-08-22.html#updateworkflowrun)
+  - [CreateAct](api-nova-act-2025-08-22-createact.md)
+  - [CreateSession](api-nova-act-2025-08-22-createsession.md)
+  - [CreateWorkflowDefinition](api-nova-act-2025-08-22-createworkflowdefinition.md)
+  - [CreateWorkflowRun](api-nova-act-2025-08-22-createworkflowrun.md)
+  - [DeleteWorkflowDefinition](api-nova-act-2025-08-22-deleteworkflowdefinition.md)
+  - [DeleteWorkflowRun](api-nova-act-2025-08-22-deleteworkflowrun.md)
+  - [GetWorkflowDefinition](api-nova-act-2025-08-22-getworkflowdefinition.md)
+  - [GetWorkflowRun](api-nova-act-2025-08-22-getworkflowrun.md)
+  - [InvokeActStep](api-nova-act-2025-08-22-invokeactstep.md)
+  - [ListActs](api-nova-act-2025-08-22-listacts.md)
+  - [ListModels](api-nova-act-2025-08-22-listmodels.md)
+  - [ListSessions](api-nova-act-2025-08-22-listsessions.md)
+  - [ListWorkflowDefinitions](api-nova-act-2025-08-22-listworkflowdefinitions.md)
+  - [ListWorkflowRuns](api-nova-act-2025-08-22-listworkflowruns.md)
+  - [UpdateAct](api-nova-act-2025-08-22-updateact.md)
+  - [UpdateWorkflowRun](api-nova-act-2025-08-22-updateworkflowrun.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NovaAct.NovaActClient.html\#toc)
+### Table of Contents  [header link](class-aws-novaact-novaactclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NovaAct.NovaActClient.html\#toc-methods)
+#### Methods  [header link](class-aws-novaact-novaactclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -69,7 +69,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NovaAct.NovaActClient.html\#methods)
+### Methods  [header link](class-aws-novaact-novaactclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -536,7 +536,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NovaAct.NovaActClient.html#toc-methods)
+  - [Methods](class-aws-novaact-novaactclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -563,4 +563,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NovaAct.NovaActClient.html#top)
+[Back To Top](class-aws-novaact-novaactclient-top.md)

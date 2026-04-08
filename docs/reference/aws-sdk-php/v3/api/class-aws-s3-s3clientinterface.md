@@ -7,32 +7,32 @@ Menu
 
 **Amazon Simple Storage Service** client.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3clientinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3clientinterface-toc-methods.md)
 
 [\_\_call()](class-aws-awsclientinterface.md#method___call)
-: [ResultInterface](class-aws-resultinterface.md)Creates and executes a command for an operation by name.[copy()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_copy)
-: [ResultInterface](class-aws-resultinterface.md)Copy an object of any size to a different location.[copyAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_copyAsync)
-: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Copy an object of any size to a different location asynchronously.[createPresignedRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_createPresignedRequest)
-: [RequestInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.RequestInterface.html)Create a pre-signed URL for the given S3 command object.[deleteMatchingObjects()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_deleteMatchingObjects)
+: [ResultInterface](class-aws-resultinterface.md)Creates and executes a command for an operation by name.[copy()](class-aws-s3-s3clientinterface-method-copy.md)
+: [ResultInterface](class-aws-resultinterface.md)Copy an object of any size to a different location.[copyAsync()](class-aws-s3-s3clientinterface-method-copyasync.md)
+: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Copy an object of any size to a different location asynchronously.[createPresignedRequest()](class-aws-s3-s3clientinterface-method-createpresignedrequest.md)
+: [RequestInterface](class-psr-http-message-requestinterface.md)Create a pre-signed URL for the given S3 command object.[deleteMatchingObjects()](class-aws-s3-s3clientinterface-method-deletematchingobjects.md)
 : mixed Deletes objects from Amazon S3 that match the result of a ListObjects
 operation. For example, this allows you to do things like delete all
-objects that match a specific key prefix.[deleteMatchingObjectsAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_deleteMatchingObjectsAsync)
+objects that match a specific key prefix.[deleteMatchingObjectsAsync()](class-aws-s3-s3clientinterface-method-deletematchingobjectsasync.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Deletes objects from Amazon S3 that match the result of a ListObjects
 operation. For example, this allows you to do things like delete all
-objects that match a specific key prefix.[determineBucketRegion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_determineBucketRegion)
-: string Returns the region in which a given bucket is located.[determineBucketRegionAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_determineBucketRegionAsync)
+objects that match a specific key prefix.[determineBucketRegion()](class-aws-s3-s3clientinterface-method-determinebucketregion.md)
+: string Returns the region in which a given bucket is located.[determineBucketRegionAsync()](class-aws-s3-s3clientinterface-method-determinebucketregionasync.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Returns a promise fulfilled with the region in which a given bucket is
-located.[doesBucketExist()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_doesBucketExist)
-: bool [doesBucketExistV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_doesBucketExistV2)
+located.[doesBucketExist()](class-aws-s3-s3clientinterface-method-doesbucketexist.md)
+: bool [doesBucketExistV2()](class-aws-s3-s3clientinterface-method-doesbucketexistv2.md)
 : bool Determines whether or not a bucket exists by name. This method uses S3's
 HeadBucket operation and requires the relevant bucket permissions in the
-default case to prevent errors.[doesObjectExist()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_doesObjectExist)
-: bool [doesObjectExistV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_doesObjectExistV2)
+default case to prevent errors.[doesObjectExist()](class-aws-s3-s3clientinterface-method-doesobjectexist.md)
+: bool [doesObjectExistV2()](class-aws-s3-s3clientinterface-method-doesobjectexistv2.md)
 : bool Determines whether or not an object exists by name. This method uses S3's HeadObject
-operation and requires the relevant bucket and object permissions to prevent errors.[downloadBucket()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_downloadBucket)
-: mixed Downloads a bucket to the local filesystem[downloadBucketAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_downloadBucketAsync)
+operation and requires the relevant bucket and object permissions to prevent errors.[downloadBucket()](class-aws-s3-s3clientinterface-method-downloadbucket.md)
+: mixed Downloads a bucket to the local filesystem[downloadBucketAsync()](class-aws-s3-s3clientinterface-method-downloadbucketasync.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Downloads a bucket to the local filesystem[execute()](class-aws-awsclientinterface.md#method_execute)
 : [ResultInterface](class-aws-resultinterface.md)Execute a single command.[executeAsync()](class-aws-awsclientinterface.md#method_executeAsync)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Execute a command asynchronously.[getApi()](class-aws-awsclientinterface.md#method_getApi)
@@ -43,20 +43,20 @@ operation and requires the relevant bucket and object permissions to prevent err
 {@see \\Aws\\Credentials\\CredentialsInterface} object.[getEndpoint()](class-aws-awsclientinterface.md#method_getEndpoint)
 : [UriInterface](class-psr-http-message-uriinterface.md)Gets the default endpoint, or base URL, used by the client.[getHandlerList()](class-aws-awsclientinterface.md#method_getHandlerList)
 : [HandlerList](class-aws-handlerlist.md)Get the handler list used to transfer commands.[getIterator()](class-aws-awsclientinterface.md#method_getIterator)
-: IteratorGet a resource iterator for the specified operation.[getObjectUrl()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_getObjectUrl)
+: IteratorGet a resource iterator for the specified operation.[getObjectUrl()](class-aws-s3-s3clientinterface-method-getobjecturl.md)
 : string Returns the URL to an object identified by its bucket and key.[getPaginator()](class-aws-awsclientinterface.md#method_getPaginator)
 : [ResultPaginator](class-aws-resultpaginator.md)Get a result paginator for the specified operation.[getRegion()](class-aws-awsclientinterface.md#method_getRegion)
 : string Get the region to which the client is configured to send requests.[getWaiter()](class-aws-awsclientinterface.md#method_getWaiter)
-: [Waiter](class-aws-waiter.md)Get a waiter that waits until a resource is in a particular state.[registerStreamWrapper()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_registerStreamWrapper)
-: mixed Register the Amazon S3 stream wrapper with this client instance.[registerStreamWrapperV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_registerStreamWrapperV2)
-: mixed Registers the Amazon S3 stream wrapper with this client instance.[upload()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_upload)
-: [ResultInterface](class-aws-resultinterface.md)Upload a file, stream, or string to a bucket.[uploadAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_uploadAsync)
-: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Upload a file, stream, or string to a bucket asynchronously.[uploadDirectory()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_uploadDirectory)
-: mixed Recursively uploads all files in a given directory to a given bucket.[uploadDirectoryAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_uploadDirectoryAsync)
+: [Waiter](class-aws-waiter.md)Get a waiter that waits until a resource is in a particular state.[registerStreamWrapper()](class-aws-s3-s3clientinterface-method-registerstreamwrapper.md)
+: mixed Register the Amazon S3 stream wrapper with this client instance.[registerStreamWrapperV2()](class-aws-s3-s3clientinterface-method-registerstreamwrapperv2.md)
+: mixed Registers the Amazon S3 stream wrapper with this client instance.[upload()](class-aws-s3-s3clientinterface-method-upload.md)
+: [ResultInterface](class-aws-resultinterface.md)Upload a file, stream, or string to a bucket.[uploadAsync()](class-aws-s3-s3clientinterface-method-uploadasync.md)
+: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Upload a file, stream, or string to a bucket asynchronously.[uploadDirectory()](class-aws-s3-s3clientinterface-method-uploaddirectory.md)
+: mixed Recursively uploads all files in a given directory to a given bucket.[uploadDirectoryAsync()](class-aws-s3-s3clientinterface-method-uploaddirectoryasync.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Recursively uploads all files in a given directory to a given bucket.[waitUntil()](class-aws-awsclientinterface.md#method_waitUntil)
 : void Wait until a resource is in a particular state.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#methods)
+### Methods  [header link](class-aws-s3-s3clientinterface-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclientinterface.md\#method___call)
 
@@ -89,7 +89,7 @@ throwsException
 
 [ResultInterface](class-aws-resultinterface.md)
 
-#### copy()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_copy)
+#### copy()  [header link](class-aws-s3-s3clientinterface-method-copy.md)
 
 Copy an object of any size to a different location.
 
@@ -147,7 +147,7 @@ $options
 
 Options used to configure the upload process.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_copy\#tags)
+##### Tags  [header link](class-aws-s3-s3clientinterface-method-copy-tags.md)
 
 seeMultipartCopy
 
@@ -160,7 +160,7 @@ for more info about multipart uploads.
 
 Returns the result of the copy.
 
-#### copyAsync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_copyAsync)
+#### copyAsync()  [header link](class-aws-s3-s3clientinterface-method-copyasync.md)
 
 Copy an object of any size to a different location asynchronously.
 
@@ -202,7 +202,7 @@ $options
 
 Options used to configure the upload process.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_copyAsync\#tags)
+##### Tags  [header link](class-aws-s3-s3clientinterface-method-copyasync-tags.md)
 
 seeself::copy
 
@@ -216,7 +216,7 @@ for more info about the parameters above.
 Returns a promise that will be fulfilled
 with the result of the copy.
 
-#### createPresignedRequest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_createPresignedRequest)
+#### createPresignedRequest()  [header link](class-aws-s3-s3clientinterface-method-createpresignedrequest.md)
 
 Create a pre-signed URL for the given S3 command object.
 
@@ -247,9 +247,9 @@ $options
 
 ##### Return values
 
-[RequestInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.RequestInterface.html)
+[RequestInterface](class-psr-http-message-requestinterface.md)
 
-#### deleteMatchingObjects()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_deleteMatchingObjects)
+#### deleteMatchingObjects()  [header link](class-aws-s3-s3clientinterface-method-deletematchingobjects.md)
 
 Deletes objects from Amazon S3 that match the result of a ListObjects
 operation. For example, this allows you to do things like delete all
@@ -284,13 +284,13 @@ $options
 
 Aws\\S3\\BatchDelete options array.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_deleteMatchingObjects\#tags)
+##### Tags  [header link](class-aws-s3-s3clientinterface-method-deletematchingobjects-tags.md)
 
 seeS3Client::listObjectsthrowsRuntimeException
 
 if no prefix and no regex is given
 
-#### deleteMatchingObjectsAsync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_deleteMatchingObjectsAsync)
+#### deleteMatchingObjectsAsync()  [header link](class-aws-s3-s3clientinterface-method-deletematchingobjectsasync.md)
 
 Deletes objects from Amazon S3 that match the result of a ListObjects
 operation. For example, this allows you to do things like delete all
@@ -325,7 +325,7 @@ $options
 
 Aws\\S3\\BatchDelete options array.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_deleteMatchingObjectsAsync\#tags)
+##### Tags  [header link](class-aws-s3-s3clientinterface-method-deletematchingobjectsasync-tags.md)
 
 seeS3Client::listObjects
 
@@ -337,7 +337,7 @@ seeS3Client::listObjects
 A promise that is settled when matching
 objects are deleted.
 
-#### determineBucketRegion()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_determineBucketRegion)
+#### determineBucketRegion()  [header link](class-aws-s3-s3clientinterface-method-determinebucketregion.md)
 
 Returns the region in which a given bucket is located.
 
@@ -354,7 +354,7 @@ $bucketName
 
 string
 
-#### determineBucketRegionAsync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_determineBucketRegionAsync)
+#### determineBucketRegionAsync()  [header link](class-aws-s3-s3clientinterface-method-determinebucketregionasync.md)
 
 Returns a promise fulfilled with the region in which a given bucket is
 located.
@@ -372,7 +372,7 @@ $bucketName
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### doesBucketExist()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_doesBucketExist)
+#### doesBucketExist()  [header link](class-aws-s3-s3clientinterface-method-doesbucketexist.md)
 
 `
     public
@@ -385,7 +385,7 @@ $bucket
 
 The name of the bucket
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_doesBucketExist\#tags)
+##### Tags  [header link](class-aws-s3-s3clientinterface-method-doesbucketexist-tags.md)
 
 deprecated
 
@@ -397,7 +397,7 @@ Determines whether or not a bucket exists by name.
 
 bool
 
-#### doesBucketExistV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_doesBucketExistV2)
+#### doesBucketExistV2()  [header link](class-aws-s3-s3clientinterface-method-doesbucketexistv2.md)
 
 Determines whether or not a bucket exists by name. This method uses S3's
 HeadBucket operation and requires the relevant bucket permissions in the
@@ -422,7 +422,7 @@ invalid bucket-level permissions. Credentials MUST be valid
 to avoid inaccuracies. Using the default value of false will
 cause an exception to be thrown instead.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_doesBucketExistV2\#tags)
+##### Tags  [header link](class-aws-s3-s3clientinterface-method-doesbucketexistv2-tags.md)
 
 throws[S3Exception](class-aws-s3-exception-s3exception.md) \|Exception
 
@@ -432,7 +432,7 @@ if there is an unhandled exception
 
 bool
 
-#### doesObjectExist()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_doesObjectExist)
+#### doesObjectExist()  [header link](class-aws-s3-s3clientinterface-method-doesobjectexist.md)
 
 `
     public
@@ -457,7 +457,7 @@ $options
 Additional options available in the HeadObject
 operation (e.g., VersionId).
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_doesObjectExist\#tags)
+##### Tags  [header link](class-aws-s3-s3clientinterface-method-doesobjectexist-tags.md)
 
 deprecated
 
@@ -469,7 +469,7 @@ Determines whether or not an object exists by name.
 
 bool
 
-#### doesObjectExistV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_doesObjectExistV2)
+#### doesObjectExistV2()  [header link](class-aws-s3-s3clientinterface-method-doesobjectexistv2.md)
 
 Determines whether or not an object exists by name. This method uses S3's HeadObject
 operation and requires the relevant bucket and object permissions to prevent errors.
@@ -506,7 +506,7 @@ $options
 Additional options available in the HeadObject
 operation (e.g., VersionId).
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_doesObjectExistV2\#tags)
+##### Tags  [header link](class-aws-s3-s3clientinterface-method-doesobjectexistv2-tags.md)
 
 throws[S3Exception](class-aws-s3-exception-s3exception.md) \|Exception
 
@@ -516,7 +516,7 @@ if there is an unhandled exception
 
 bool
 
-#### downloadBucket()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_downloadBucket)
+#### downloadBucket()  [header link](class-aws-s3-s3clientinterface-method-downloadbucket.md)
 
 Downloads a bucket to the local filesystem
 
@@ -548,7 +548,7 @@ $options
 
 Options available in Aws\\S3\\Transfer::\_\_construct
 
-#### downloadBucketAsync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_downloadBucketAsync)
+#### downloadBucketAsync()  [header link](class-aws-s3-s3clientinterface-method-downloadbucketasync.md)
 
 Downloads a bucket to the local filesystem
 
@@ -776,7 +776,7 @@ if the iterator config is invalid.
 
 Iterator
 
-#### getObjectUrl()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_getObjectUrl)
+#### getObjectUrl()  [header link](class-aws-s3-s3clientinterface-method-getobjecturl.md)
 
 Returns the URL to an object identified by its bucket and key.
 
@@ -891,7 +891,7 @@ if the waiter is invalid.
 
 [Waiter](class-aws-waiter.md)
 
-#### registerStreamWrapper()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_registerStreamWrapper)
+#### registerStreamWrapper()  [header link](class-aws-s3-s3clientinterface-method-registerstreamwrapper.md)
 
 Register the Amazon S3 stream wrapper with this client instance.
 
@@ -899,7 +899,7 @@ Register the Amazon S3 stream wrapper with this client instance.
     public
                     registerStreamWrapper() : mixed`
 
-#### registerStreamWrapperV2()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_registerStreamWrapperV2)
+#### registerStreamWrapperV2()  [header link](class-aws-s3-s3clientinterface-method-registerstreamwrapperv2.md)
 
 Registers the Amazon S3 stream wrapper with this client instance.
 
@@ -910,7 +910,7 @@ Registers the Amazon S3 stream wrapper with this client instance.
 This version uses doesObjectExistV2 and doesBucketExistV2 to check
 resource existence.
 
-#### upload()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_upload)
+#### upload()  [header link](class-aws-s3-s3clientinterface-method-upload.md)
 
 Upload a file, stream, or string to a bucket.
 
@@ -967,7 +967,7 @@ $options
 
 Options used to configure the upload process.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_upload\#tags)
+##### Tags  [header link](class-aws-s3-s3clientinterface-method-upload-tags.md)
 
 seeMultipartUploader
 
@@ -980,7 +980,7 @@ for more info about multipart uploads.
 
 Returns the result of the upload.
 
-#### uploadAsync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_uploadAsync)
+#### uploadAsync()  [header link](class-aws-s3-s3clientinterface-method-uploadasync.md)
 
 Upload a file, stream, or string to a bucket asynchronously.
 
@@ -1019,7 +1019,7 @@ $options
 
 Options used to configure the upload process.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_uploadAsync\#tags)
+##### Tags  [header link](class-aws-s3-s3clientinterface-method-uploadasync-tags.md)
 
 seeself::upload
 
@@ -1031,7 +1031,7 @@ seeself::upload
 Returns a promise that will be fulfilled
 with the result of the upload.
 
-#### uploadDirectory()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_uploadDirectory)
+#### uploadDirectory()  [header link](class-aws-s3-s3clientinterface-method-uploaddirectory.md)
 
 Recursively uploads all files in a given directory to a given bucket.
 
@@ -1063,13 +1063,13 @@ $options
 
 Options available in Aws\\S3\\Transfer::\_\_construct
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_uploadDirectory\#tags)
+##### Tags  [header link](class-aws-s3-s3clientinterface-method-uploaddirectory-tags.md)
 
 seeTransfer
 
 for more options and customization
 
-#### uploadDirectoryAsync()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_uploadDirectoryAsync)
+#### uploadDirectoryAsync()  [header link](class-aws-s3-s3clientinterface-method-uploaddirectoryasync.md)
 
 Recursively uploads all files in a given directory to a given bucket.
 
@@ -1101,7 +1101,7 @@ $options
 
 Options available in Aws\\S3\\Transfer::\_\_construct
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html\#method_uploadDirectoryAsync\#tags)
+##### Tags  [header link](class-aws-s3-s3clientinterface-method-uploaddirectoryasync-tags.md)
 
 seeTransfer
 
@@ -1153,23 +1153,23 @@ if the waiter is invalid.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#toc-methods)
+  - [Constants](class-aws-s3-s3clientinterface-toc-constants.md)
+  - [Methods](class-aws-s3-s3clientinterface-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclientinterface.md#method___call)
-  - [copy()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_copy)
-  - [copyAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_copyAsync)
-  - [createPresignedRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_createPresignedRequest)
-  - [deleteMatchingObjects()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_deleteMatchingObjects)
-  - [deleteMatchingObjectsAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_deleteMatchingObjectsAsync)
-  - [determineBucketRegion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_determineBucketRegion)
-  - [determineBucketRegionAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_determineBucketRegionAsync)
-  - [doesBucketExist()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_doesBucketExist)
-  - [doesBucketExistV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_doesBucketExistV2)
-  - [doesObjectExist()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_doesObjectExist)
-  - [doesObjectExistV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_doesObjectExistV2)
-  - [downloadBucket()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_downloadBucket)
-  - [downloadBucketAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_downloadBucketAsync)
+  - [copy()](class-aws-s3-s3clientinterface-method-copy.md)
+  - [copyAsync()](class-aws-s3-s3clientinterface-method-copyasync.md)
+  - [createPresignedRequest()](class-aws-s3-s3clientinterface-method-createpresignedrequest.md)
+  - [deleteMatchingObjects()](class-aws-s3-s3clientinterface-method-deletematchingobjects.md)
+  - [deleteMatchingObjectsAsync()](class-aws-s3-s3clientinterface-method-deletematchingobjectsasync.md)
+  - [determineBucketRegion()](class-aws-s3-s3clientinterface-method-determinebucketregion.md)
+  - [determineBucketRegionAsync()](class-aws-s3-s3clientinterface-method-determinebucketregionasync.md)
+  - [doesBucketExist()](class-aws-s3-s3clientinterface-method-doesbucketexist.md)
+  - [doesBucketExistV2()](class-aws-s3-s3clientinterface-method-doesbucketexistv2.md)
+  - [doesObjectExist()](class-aws-s3-s3clientinterface-method-doesobjectexist.md)
+  - [doesObjectExistV2()](class-aws-s3-s3clientinterface-method-doesobjectexistv2.md)
+  - [downloadBucket()](class-aws-s3-s3clientinterface-method-downloadbucket.md)
+  - [downloadBucketAsync()](class-aws-s3-s3clientinterface-method-downloadbucketasync.md)
   - [execute()](class-aws-awsclientinterface.md#method_execute)
   - [executeAsync()](class-aws-awsclientinterface.md#method_executeAsync)
   - [getApi()](class-aws-awsclientinterface.md#method_getApi)
@@ -1179,16 +1179,16 @@ if the waiter is invalid.
   - [getEndpoint()](class-aws-awsclientinterface.md#method_getEndpoint)
   - [getHandlerList()](class-aws-awsclientinterface.md#method_getHandlerList)
   - [getIterator()](class-aws-awsclientinterface.md#method_getIterator)
-  - [getObjectUrl()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_getObjectUrl)
+  - [getObjectUrl()](class-aws-s3-s3clientinterface-method-getobjecturl.md)
   - [getPaginator()](class-aws-awsclientinterface.md#method_getPaginator)
   - [getRegion()](class-aws-awsclientinterface.md#method_getRegion)
   - [getWaiter()](class-aws-awsclientinterface.md#method_getWaiter)
-  - [registerStreamWrapper()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_registerStreamWrapper)
-  - [registerStreamWrapperV2()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_registerStreamWrapperV2)
-  - [upload()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_upload)
-  - [uploadAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_uploadAsync)
-  - [uploadDirectory()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_uploadDirectory)
-  - [uploadDirectoryAsync()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#method_uploadDirectoryAsync)
+  - [registerStreamWrapper()](class-aws-s3-s3clientinterface-method-registerstreamwrapper.md)
+  - [registerStreamWrapperV2()](class-aws-s3-s3clientinterface-method-registerstreamwrapperv2.md)
+  - [upload()](class-aws-s3-s3clientinterface-method-upload.md)
+  - [uploadAsync()](class-aws-s3-s3clientinterface-method-uploadasync.md)
+  - [uploadDirectory()](class-aws-s3-s3clientinterface-method-uploaddirectory.md)
+  - [uploadDirectoryAsync()](class-aws-s3-s3clientinterface-method-uploaddirectoryasync.md)
   - [waitUntil()](class-aws-awsclientinterface.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3ClientInterface.html#top)
+[Back To Top](class-aws-s3-s3clientinterface-top.md)

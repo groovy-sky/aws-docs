@@ -4,15 +4,15 @@ Menu
 
 ## ApplicationCostProfiler
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationcostprofiler.html\#toc)
+### Table of Contents  [header link](namespace-aws-applicationcostprofiler-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationcostprofiler.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-applicationcostprofiler-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationcostprofiler.exception.html)
+[Exception](namespace-aws-applicationcostprofiler-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationcostprofiler.html\#toc-classes)
+#### Classes  [header link](namespace-aws-applicationcostprofiler-toc-classes.md)
 
-[ApplicationCostProfilerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationCostProfiler.ApplicationCostProfilerClient.html)This client is used to interact with the **AWS Application Cost Profiler** service.
+[ApplicationCostProfilerClient](class-aws-applicationcostprofiler-applicationcostprofilerclient.md)This client is used to interact with the **AWS Application Cost Profiler** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationcostprofiler.html#toc-classes)
+  - [Classes](namespace-aws-applicationcostprofiler-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationcostprofiler.html#top)
+[Back To Top](namespace-aws-applicationcostprofiler-top.md)

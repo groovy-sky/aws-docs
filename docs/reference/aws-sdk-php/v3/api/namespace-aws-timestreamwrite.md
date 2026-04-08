@@ -4,15 +4,15 @@ Menu
 
 ## TimestreamWrite
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.timestreamwrite.html\#toc)
+### Table of Contents  [header link](namespace-aws-timestreamwrite-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.timestreamwrite.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-timestreamwrite-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.timestreamwrite.exception.html)
+[Exception](namespace-aws-timestreamwrite-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.timestreamwrite.html\#toc-classes)
+#### Classes  [header link](namespace-aws-timestreamwrite-toc-classes.md)
 
-[TimestreamWriteClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TimestreamWrite.TimestreamWriteClient.html)This client is used to interact with the **Amazon Timestream Write** service.
+[TimestreamWriteClient](class-aws-timestreamwrite-timestreamwriteclient.md)This client is used to interact with the **Amazon Timestream Write** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.timestreamwrite.html#toc-classes)
+  - [Classes](namespace-aws-timestreamwrite-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.timestreamwrite.html#top)
+[Back To Top](namespace-aws-timestreamwrite-top.md)

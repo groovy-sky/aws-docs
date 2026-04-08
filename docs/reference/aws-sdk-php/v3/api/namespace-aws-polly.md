@@ -4,15 +4,15 @@ Menu
 
 ## Polly
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.polly.html\#toc)
+### Table of Contents  [header link](namespace-aws-polly-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.polly.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-polly-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.polly.exception.html)
+[Exception](namespace-aws-polly-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.polly.html\#toc-classes)
+#### Classes  [header link](namespace-aws-polly-toc-classes.md)
 
-[PollyClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Polly.PollyClient.html)This client is used to interact with the **Amazon Polly** service.
+[PollyClient](class-aws-polly-pollyclient.md)This client is used to interact with the **Amazon Polly** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.polly.html#toc-classes)
+  - [Classes](namespace-aws-polly-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.polly.html#top)
+[Back To Top](namespace-aws-polly-top.md)

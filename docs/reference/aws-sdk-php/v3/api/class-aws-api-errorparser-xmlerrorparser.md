@@ -2,23 +2,23 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [Api](namespace-aws-api.md)
-- [ErrorParser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.api.errorparser.html)
+- [ErrorParser](namespace-aws-api-errorparser.md)
 
-## XmlErrorParser     extends [AbstractErrorParser](class-aws-api-errorparser-abstracterrorparser.md)   in package    - [Aws](package-aws.md)       Uses  [PayloadParserTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.PayloadParserTrait.html)
+## XmlErrorParser     extends [AbstractErrorParser](class-aws-api-errorparser-abstracterrorparser.md)   in package    - [Aws](package-aws.md)       Uses  [PayloadParserTrait](class-aws-api-parser-payloadparsertrait.md)
 
 Parses XML errors.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.XmlErrorParser.html\#toc)
+### Table of Contents  [header link](class-aws-api-errorparser-xmlerrorparser-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.XmlErrorParser.html\#toc-methods)
+#### Methods  [header link](class-aws-api-errorparser-xmlerrorparser-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.XmlErrorParser.html#method___construct)
-: mixed [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.XmlErrorParser.html#method___invoke)
+[\_\_construct()](class-aws-api-errorparser-xmlerrorparser-method-construct.md)
+: mixed [\_\_invoke()](class-aws-api-errorparser-xmlerrorparser-method-invoke.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.XmlErrorParser.html\#methods)
+### Methods  [header link](class-aws-api-errorparser-xmlerrorparser-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.XmlErrorParser.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-api-errorparser-xmlerrorparser-method-construct.md)
 
 `
     public
@@ -32,7 +32,7 @@ $api
 : XmlParser\|null
 = null
 
-#### \_\_invoke()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.XmlErrorParser.html\#method___invoke)
+#### \_\_invoke()  [header link](class-aws-api-errorparser-xmlerrorparser-method-invoke.md)
 
 `
     public
@@ -51,9 +51,9 @@ $response
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.XmlErrorParser.html#toc-methods)
+  - [Methods](class-aws-api-errorparser-xmlerrorparser-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.XmlErrorParser.html#method___construct)
-  - [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.XmlErrorParser.html#method___invoke)
+  - [\_\_construct()](class-aws-api-errorparser-xmlerrorparser-method-construct.md)
+  - [\_\_invoke()](class-aws-api-errorparser-xmlerrorparser-method-invoke.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ErrorParser.XmlErrorParser.html#top)
+[Back To Top](class-aws-api-errorparser-xmlerrorparser-top.md)

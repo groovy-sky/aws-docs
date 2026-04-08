@@ -1,7 +1,7 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Psr7](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.psr7.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Psr7](namespace-guzzlehttp-psr7.md)
 
 ## ServerRequest     extends [Request](class-guzzlehttp-psr7-request.md)   in package    - [Aws](package-aws.md)       implements  [ServerRequestInterface](class-psr-http-message-serverrequestinterface.md)
 
@@ -18,58 +18,58 @@ Requests are considered immutable; all methods that might change state are
 implemented such that they retain the internal state of the current
 message and return a new instance that contains the changed state.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-psr7-serverrequest-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html\#toc-interfaces)
+#### Interfaces  [header link](class-guzzlehttp-psr7-serverrequest-toc-interfaces.md)
 
 [ServerRequestInterface](class-psr-http-message-serverrequestinterface.md)Representation of an incoming, server-side HTTP request.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-psr7-serverrequest-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method___construct)
-: mixed [fromGlobals()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_fromGlobals)
+[\_\_construct()](class-guzzlehttp-psr7-serverrequest-method-construct.md)
+: mixed [fromGlobals()](class-guzzlehttp-psr7-serverrequest-method-fromglobals.md)
 : [ServerRequestInterface](class-psr-http-message-serverrequestinterface.md)Return a ServerRequest populated with superglobals:
 $\_GET
 $\_POST
 $\_COOKIE
 $\_FILES
-$\_SERVER[getAttribute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_getAttribute)
-: mixed Retrieve a single derived request attribute.[getAttributes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_getAttributes)
-: array<string\|int, mixed> Retrieve attributes derived from the request.[getBody()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_getBody)
-: [StreamInterface](class-psr-http-message-streaminterface.md)[getCookieParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_getCookieParams)
-: array<string\|int, mixed> Retrieve cookies.[getHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_getHeader)
-: array<string\|int, mixed> [getHeaderLine()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_getHeaderLine)
-: string [getHeaders()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_getHeaders)
+$\_SERVER[getAttribute()](class-guzzlehttp-psr7-serverrequest-method-getattribute.md)
+: mixed Retrieve a single derived request attribute.[getAttributes()](class-guzzlehttp-psr7-serverrequest-method-getattributes.md)
+: array<string\|int, mixed> Retrieve attributes derived from the request.[getBody()](class-guzzlehttp-psr7-messagetrait-method-getbody.md)
+: [StreamInterface](class-psr-http-message-streaminterface.md)[getCookieParams()](class-guzzlehttp-psr7-serverrequest-method-getcookieparams.md)
+: array<string\|int, mixed> Retrieve cookies.[getHeader()](class-guzzlehttp-psr7-messagetrait-method-getheader.md)
+: array<string\|int, mixed> [getHeaderLine()](class-guzzlehttp-psr7-messagetrait-method-getheaderline.md)
+: string [getHeaders()](class-guzzlehttp-psr7-messagetrait-method-getheaders.md)
 : array<string\|int, mixed> [getMethod()](class-guzzlehttp-psr7-request.md#method_getMethod)
-: string Retrieves the HTTP method of the request.[getParsedBody()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_getParsedBody)
-: array<string\|int, mixed>\|object\|null Retrieve any parameters provided in the request body.[getProtocolVersion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_getProtocolVersion)
-: string [getQueryParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_getQueryParams)
+: string Retrieves the HTTP method of the request.[getParsedBody()](class-guzzlehttp-psr7-serverrequest-method-getparsedbody.md)
+: array<string\|int, mixed>\|object\|null Retrieve any parameters provided in the request body.[getProtocolVersion()](class-guzzlehttp-psr7-messagetrait-method-getprotocolversion.md)
+: string [getQueryParams()](class-guzzlehttp-psr7-serverrequest-method-getqueryparams.md)
 : array<string\|int, mixed> Retrieve query string arguments.[getRequestTarget()](class-guzzlehttp-psr7-request.md#method_getRequestTarget)
-: string Retrieves the message's request target.[getServerParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_getServerParams)
-: array<string\|int, mixed> Retrieve server parameters.[getUploadedFiles()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_getUploadedFiles)
+: string Retrieves the message's request target.[getServerParams()](class-guzzlehttp-psr7-serverrequest-method-getserverparams.md)
+: array<string\|int, mixed> Retrieve server parameters.[getUploadedFiles()](class-guzzlehttp-psr7-serverrequest-method-getuploadedfiles.md)
 : array<string\|int, mixed> Retrieve normalized file upload data.[getUri()](class-guzzlehttp-psr7-request.md#method_getUri)
-: [UriInterface](class-psr-http-message-uriinterface.md)Retrieves the URI instance.[getUriFromGlobals()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_getUriFromGlobals)
-: [UriInterface](class-psr-http-message-uriinterface.md)Get a Uri populated with values from $\_SERVER.[hasHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_hasHeader)
-: bool [normalizeFiles()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_normalizeFiles)
-: array<string\|int, mixed> Return an UploadedFile instance array.[withAddedHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_withAddedHeader)
-: static [withAttribute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_withAttribute)
-: static Return an instance with the specified derived request attribute.[withBody()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_withBody)
-: static [withCookieParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_withCookieParams)
-: static Return an instance with the specified cookies.[withHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_withHeader)
+: [UriInterface](class-psr-http-message-uriinterface.md)Retrieves the URI instance.[getUriFromGlobals()](class-guzzlehttp-psr7-serverrequest-method-geturifromglobals.md)
+: [UriInterface](class-psr-http-message-uriinterface.md)Get a Uri populated with values from $\_SERVER.[hasHeader()](class-guzzlehttp-psr7-messagetrait-method-hasheader.md)
+: bool [normalizeFiles()](class-guzzlehttp-psr7-serverrequest-method-normalizefiles.md)
+: array<string\|int, mixed> Return an UploadedFile instance array.[withAddedHeader()](class-guzzlehttp-psr7-messagetrait-method-withaddedheader.md)
+: static [withAttribute()](class-guzzlehttp-psr7-serverrequest-method-withattribute.md)
+: static Return an instance with the specified derived request attribute.[withBody()](class-guzzlehttp-psr7-messagetrait-method-withbody.md)
+: static [withCookieParams()](class-guzzlehttp-psr7-serverrequest-method-withcookieparams.md)
+: static Return an instance with the specified cookies.[withHeader()](class-guzzlehttp-psr7-messagetrait-method-withheader.md)
 : static [withMethod()](class-guzzlehttp-psr7-request.md#method_withMethod)
-: static Return an instance with the provided HTTP method.[withoutAttribute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_withoutAttribute)
-: static Return an instance that removes the specified derived request attribute.[withoutHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_withoutHeader)
-: static [withParsedBody()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_withParsedBody)
-: static Return an instance with the specified body parameters.[withProtocolVersion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_withProtocolVersion)
-: static [withQueryParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_withQueryParams)
+: static Return an instance with the provided HTTP method.[withoutAttribute()](class-guzzlehttp-psr7-serverrequest-method-withoutattribute.md)
+: static Return an instance that removes the specified derived request attribute.[withoutHeader()](class-guzzlehttp-psr7-messagetrait-method-withoutheader.md)
+: static [withParsedBody()](class-guzzlehttp-psr7-serverrequest-method-withparsedbody.md)
+: static Return an instance with the specified body parameters.[withProtocolVersion()](class-guzzlehttp-psr7-messagetrait-method-withprotocolversion.md)
+: static [withQueryParams()](class-guzzlehttp-psr7-serverrequest-method-withqueryparams.md)
 : static Return an instance with the specified query string arguments.[withRequestTarget()](class-guzzlehttp-psr7-request.md#method_withRequestTarget)
-: static Return an instance with the specific request-target.[withUploadedFiles()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_withUploadedFiles)
+: static Return an instance with the specific request-target.[withUploadedFiles()](class-guzzlehttp-psr7-serverrequest-method-withuploadedfiles.md)
 : static Create a new instance with the specified uploaded files.[withUri()](class-guzzlehttp-psr7-request.md#method_withUri)
 : static Returns an instance with the provided URI.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html\#methods)
+### Methods  [header link](class-guzzlehttp-psr7-serverrequest-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html\#method___construct)
+#### \_\_construct()  [header link](class-guzzlehttp-psr7-serverrequest-method-construct.md)
 
 `
     public
@@ -111,7 +111,7 @@ $serverParams
 
 Typically the $\_SERVER superglobal
 
-#### fromGlobals()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html\#method_fromGlobals)
+#### fromGlobals()  [header link](class-guzzlehttp-psr7-serverrequest-method-fromglobals.md)
 
 Return a ServerRequest populated with superglobals:
 $\_GET
@@ -128,7 +128,7 @@ $\_SERVER
 
 [ServerRequestInterface](class-psr-http-message-serverrequestinterface.md)
 
-#### getAttribute()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html\#method_getAttribute)
+#### getAttribute()  [header link](class-guzzlehttp-psr7-serverrequest-method-getattribute.md)
 
 Retrieve a single derived request attribute.
 
@@ -145,7 +145,7 @@ $attribute
 
 Default value to return if the attribute does not exist.
 
-#### getAttributes()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html\#method_getAttributes)
+#### getAttributes()  [header link](class-guzzlehttp-psr7-serverrequest-method-getattributes.md)
 
 Retrieve attributes derived from the request.
 
@@ -166,7 +166,7 @@ array<string\|int, mixed>
 
 Attributes derived from the request.
 
-#### getBody()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#method_getBody)
+#### getBody()  [header link](class-guzzlehttp-psr7-messagetrait-method-getbody.md)
 
 `
     public
@@ -176,7 +176,7 @@ Attributes derived from the request.
 
 [StreamInterface](class-psr-http-message-streaminterface.md)
 
-#### getCookieParams()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html\#method_getCookieParams)
+#### getCookieParams()  [header link](class-guzzlehttp-psr7-serverrequest-method-getcookieparams.md)
 
 Retrieve cookies.
 
@@ -193,7 +193,7 @@ superglobal.
 
 array<string\|int, mixed>
 
-#### getHeader()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#method_getHeader)
+#### getHeader()  [header link](class-guzzlehttp-psr7-messagetrait-method-getheader.md)
 
 `
     public
@@ -208,7 +208,7 @@ $header
 
 array<string\|int, mixed>
 
-#### getHeaderLine()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#method_getHeaderLine)
+#### getHeaderLine()  [header link](class-guzzlehttp-psr7-messagetrait-method-getheaderline.md)
 
 `
     public
@@ -223,7 +223,7 @@ $header
 
 string
 
-#### getHeaders()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#method_getHeaders)
+#### getHeaders()  [header link](class-guzzlehttp-psr7-messagetrait-method-getheaders.md)
 
 `
     public
@@ -248,7 +248,7 @@ string
 
 Returns the request method.
 
-#### getParsedBody()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html\#method_getParsedBody)
+#### getParsedBody()  [header link](class-guzzlehttp-psr7-serverrequest-method-getparsedbody.md)
 
 Retrieve any parameters provided in the request body.
 
@@ -260,7 +260,7 @@ Retrieve any parameters provided in the request body.
 
 array<string\|int, mixed>\|object\|null
 
-#### getProtocolVersion()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#method_getProtocolVersion)
+#### getProtocolVersion()  [header link](class-guzzlehttp-psr7-messagetrait-method-getprotocolversion.md)
 
 `
     public
@@ -270,7 +270,7 @@ array<string\|int, mixed>\|object\|null
 
 string
 
-#### getQueryParams()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html\#method_getQueryParams)
+#### getQueryParams()  [header link](class-guzzlehttp-psr7-serverrequest-method-getqueryparams.md)
 
 Retrieve query string arguments.
 
@@ -312,7 +312,7 @@ provided, this method MUST return the string "/".
 
 string
 
-#### getServerParams()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html\#method_getServerParams)
+#### getServerParams()  [header link](class-guzzlehttp-psr7-serverrequest-method-getserverparams.md)
 
 Retrieve server parameters.
 
@@ -328,7 +328,7 @@ REQUIRED to originate from $\_SERVER.
 
 array<string\|int, mixed>
 
-#### getUploadedFiles()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html\#method_getUploadedFiles)
+#### getUploadedFiles()  [header link](class-guzzlehttp-psr7-serverrequest-method-getuploadedfiles.md)
 
 Retrieve normalized file upload data.
 
@@ -368,7 +368,7 @@ This method MUST return a UriInterface instance.
 Returns a UriInterface instance
 representing the URI of the request.
 
-#### getUriFromGlobals()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html\#method_getUriFromGlobals)
+#### getUriFromGlobals()  [header link](class-guzzlehttp-psr7-serverrequest-method-geturifromglobals.md)
 
 Get a Uri populated with values from $\_SERVER.
 
@@ -380,7 +380,7 @@ Get a Uri populated with values from $\_SERVER.
 
 [UriInterface](class-psr-http-message-uriinterface.md)
 
-#### hasHeader()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#method_hasHeader)
+#### hasHeader()  [header link](class-guzzlehttp-psr7-messagetrait-method-hasheader.md)
 
 `
     public
@@ -395,7 +395,7 @@ $header
 
 bool
 
-#### normalizeFiles()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html\#method_normalizeFiles)
+#### normalizeFiles()  [header link](class-guzzlehttp-psr7-serverrequest-method-normalizefiles.md)
 
 Return an UploadedFile instance array.
 
@@ -410,7 +410,7 @@ $files
 
 An array which respect $\_FILES structure
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html\#method_normalizeFiles\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-serverrequest-method-normalizefiles-tags.md)
 
 throwsInvalidArgumentException
 
@@ -420,7 +420,7 @@ for unrecognized values
 
 array<string\|int, mixed>
 
-#### withAddedHeader()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#method_withAddedHeader)
+#### withAddedHeader()  [header link](class-guzzlehttp-psr7-messagetrait-method-withaddedheader.md)
 
 `
     public
@@ -436,7 +436,7 @@ $header
 
 static
 
-#### withAttribute()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html\#method_withAttribute)
+#### withAttribute()  [header link](class-guzzlehttp-psr7-serverrequest-method-withattribute.md)
 
 Return an instance with the specified derived request attribute.
 
@@ -463,7 +463,7 @@ The value of the attribute.
 
 static
 
-#### withBody()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#method_withBody)
+#### withBody()  [header link](class-guzzlehttp-psr7-messagetrait-method-withbody.md)
 
 `
     public
@@ -478,7 +478,7 @@ $body
 
 static
 
-#### withCookieParams()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html\#method_withCookieParams)
+#### withCookieParams()  [header link](class-guzzlehttp-psr7-serverrequest-method-withcookieparams.md)
 
 Return an instance with the specified cookies.
 
@@ -508,7 +508,7 @@ Array of key/value pairs representing cookies.
 
 static
 
-#### withHeader()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#method_withHeader)
+#### withHeader()  [header link](class-guzzlehttp-psr7-messagetrait-method-withheader.md)
 
 `
     public
@@ -551,7 +551,7 @@ Case-sensitive method.
 
 static
 
-#### withoutAttribute()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html\#method_withoutAttribute)
+#### withoutAttribute()  [header link](class-guzzlehttp-psr7-serverrequest-method-withoutattribute.md)
 
 Return an instance that removes the specified derived request attribute.
 
@@ -575,7 +575,7 @@ $attribute
 
 static
 
-#### withoutHeader()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#method_withoutHeader)
+#### withoutHeader()  [header link](class-guzzlehttp-psr7-messagetrait-method-withoutheader.md)
 
 `
     public
@@ -590,7 +590,7 @@ $header
 
 static
 
-#### withParsedBody()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html\#method_withParsedBody)
+#### withParsedBody()  [header link](class-guzzlehttp-psr7-serverrequest-method-withparsedbody.md)
 
 Return an instance with the specified body parameters.
 
@@ -629,7 +629,7 @@ typically be in an array or object.
 
 static
 
-#### withProtocolVersion()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#method_withProtocolVersion)
+#### withProtocolVersion()  [header link](class-guzzlehttp-psr7-messagetrait-method-withprotocolversion.md)
 
 `
     public
@@ -644,7 +644,7 @@ $version
 
 static
 
-#### withQueryParams()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html\#method_withQueryParams)
+#### withQueryParams()  [header link](class-guzzlehttp-psr7-serverrequest-method-withqueryparams.md)
 
 Return an instance with the specified query string arguments.
 
@@ -705,7 +705,7 @@ $requestTarget
 
 static
 
-#### withUploadedFiles()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html\#method_withUploadedFiles)
+#### withUploadedFiles()  [header link](class-guzzlehttp-psr7-serverrequest-method-withuploadedfiles.md)
 
 Create a new instance with the specified uploaded files.
 
@@ -781,41 +781,41 @@ static
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#toc-methods)
+  - [Methods](class-guzzlehttp-psr7-serverrequest-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method___construct)
-  - [fromGlobals()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_fromGlobals)
-  - [getAttribute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_getAttribute)
-  - [getAttributes()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_getAttributes)
-  - [getBody()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_getBody)
-  - [getCookieParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_getCookieParams)
-  - [getHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_getHeader)
-  - [getHeaderLine()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_getHeaderLine)
-  - [getHeaders()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_getHeaders)
+  - [\_\_construct()](class-guzzlehttp-psr7-serverrequest-method-construct.md)
+  - [fromGlobals()](class-guzzlehttp-psr7-serverrequest-method-fromglobals.md)
+  - [getAttribute()](class-guzzlehttp-psr7-serverrequest-method-getattribute.md)
+  - [getAttributes()](class-guzzlehttp-psr7-serverrequest-method-getattributes.md)
+  - [getBody()](class-guzzlehttp-psr7-messagetrait-method-getbody.md)
+  - [getCookieParams()](class-guzzlehttp-psr7-serverrequest-method-getcookieparams.md)
+  - [getHeader()](class-guzzlehttp-psr7-messagetrait-method-getheader.md)
+  - [getHeaderLine()](class-guzzlehttp-psr7-messagetrait-method-getheaderline.md)
+  - [getHeaders()](class-guzzlehttp-psr7-messagetrait-method-getheaders.md)
   - [getMethod()](class-guzzlehttp-psr7-request.md#method_getMethod)
-  - [getParsedBody()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_getParsedBody)
-  - [getProtocolVersion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_getProtocolVersion)
-  - [getQueryParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_getQueryParams)
+  - [getParsedBody()](class-guzzlehttp-psr7-serverrequest-method-getparsedbody.md)
+  - [getProtocolVersion()](class-guzzlehttp-psr7-messagetrait-method-getprotocolversion.md)
+  - [getQueryParams()](class-guzzlehttp-psr7-serverrequest-method-getqueryparams.md)
   - [getRequestTarget()](class-guzzlehttp-psr7-request.md#method_getRequestTarget)
-  - [getServerParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_getServerParams)
-  - [getUploadedFiles()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_getUploadedFiles)
+  - [getServerParams()](class-guzzlehttp-psr7-serverrequest-method-getserverparams.md)
+  - [getUploadedFiles()](class-guzzlehttp-psr7-serverrequest-method-getuploadedfiles.md)
   - [getUri()](class-guzzlehttp-psr7-request.md#method_getUri)
-  - [getUriFromGlobals()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_getUriFromGlobals)
-  - [hasHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_hasHeader)
-  - [normalizeFiles()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_normalizeFiles)
-  - [withAddedHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_withAddedHeader)
-  - [withAttribute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_withAttribute)
-  - [withBody()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_withBody)
-  - [withCookieParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_withCookieParams)
-  - [withHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_withHeader)
+  - [getUriFromGlobals()](class-guzzlehttp-psr7-serverrequest-method-geturifromglobals.md)
+  - [hasHeader()](class-guzzlehttp-psr7-messagetrait-method-hasheader.md)
+  - [normalizeFiles()](class-guzzlehttp-psr7-serverrequest-method-normalizefiles.md)
+  - [withAddedHeader()](class-guzzlehttp-psr7-messagetrait-method-withaddedheader.md)
+  - [withAttribute()](class-guzzlehttp-psr7-serverrequest-method-withattribute.md)
+  - [withBody()](class-guzzlehttp-psr7-messagetrait-method-withbody.md)
+  - [withCookieParams()](class-guzzlehttp-psr7-serverrequest-method-withcookieparams.md)
+  - [withHeader()](class-guzzlehttp-psr7-messagetrait-method-withheader.md)
   - [withMethod()](class-guzzlehttp-psr7-request.md#method_withMethod)
-  - [withoutAttribute()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_withoutAttribute)
-  - [withoutHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_withoutHeader)
-  - [withParsedBody()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_withParsedBody)
-  - [withProtocolVersion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_withProtocolVersion)
-  - [withQueryParams()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_withQueryParams)
+  - [withoutAttribute()](class-guzzlehttp-psr7-serverrequest-method-withoutattribute.md)
+  - [withoutHeader()](class-guzzlehttp-psr7-messagetrait-method-withoutheader.md)
+  - [withParsedBody()](class-guzzlehttp-psr7-serverrequest-method-withparsedbody.md)
+  - [withProtocolVersion()](class-guzzlehttp-psr7-messagetrait-method-withprotocolversion.md)
+  - [withQueryParams()](class-guzzlehttp-psr7-serverrequest-method-withqueryparams.md)
   - [withRequestTarget()](class-guzzlehttp-psr7-request.md#method_withRequestTarget)
-  - [withUploadedFiles()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#method_withUploadedFiles)
+  - [withUploadedFiles()](class-guzzlehttp-psr7-serverrequest-method-withuploadedfiles.md)
   - [withUri()](class-guzzlehttp-psr7-request.md#method_withUri)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.ServerRequest.html#top)
+[Back To Top](class-guzzlehttp-psr7-serverrequest-top.md)

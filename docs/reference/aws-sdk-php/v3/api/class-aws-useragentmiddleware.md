@@ -10,29 +10,29 @@ This middleware must be appended into step where all the
 metrics to be gathered are already resolved. As of now it should be
 after the signing step.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html\#toc)
+### Table of Contents  [header link](class-aws-useragentmiddleware-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html\#toc-constants)
+#### Constants  [header link](class-aws-useragentmiddleware-toc-constants.md)
 
-[AGENT\_VERSION](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html#constant_AGENT_VERSION)
+[AGENT\_VERSION](class-aws-useragentmiddleware-constant-agent-version.md)
 = 2.1
 
-#### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html\#toc-properties)
+#### Properties  [header link](class-aws-useragentmiddleware-toc-properties.md)
 
-[$userAgentFnList](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html#property_userAgentFnList)
+[$userAgentFnList](class-aws-useragentmiddleware-property-useragentfnlist.md)
 : mixed
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html\#toc-methods)
+#### Methods  [header link](class-aws-useragentmiddleware-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html#method___construct)
-: mixed [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html#method___invoke)
+[\_\_construct()](class-aws-useragentmiddleware-method-construct.md)
+: mixed [\_\_invoke()](class-aws-useragentmiddleware-method-invoke.md)
 : mixed When invoked, its injects the user agent header into the
-request headers.[wrap()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html#method_wrap)
+request headers.[wrap()](class-aws-useragentmiddleware-method-wrap.md)
 : ClosureReturns a middleware wrapper function.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html\#constants)
+### Constants  [header link](class-aws-useragentmiddleware-constants.md)
 
-#### AGENT\_VERSION  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html\#constant_AGENT_VERSION)
+#### AGENT\_VERSION  [header link](class-aws-useragentmiddleware-constant-agent-version.md)
 
 `
     public
@@ -41,9 +41,9 @@ request headers.[wrap()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aw
     = 2.1
 `
 
-### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html\#properties)
+### Properties  [header link](class-aws-useragentmiddleware-properties.md)
 
-#### $userAgentFnList  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html\#property_userAgentFnList)
+#### $userAgentFnList  [header link](class-aws-useragentmiddleware-property-useragentfnlist.md)
 
 `
     public
@@ -51,9 +51,9 @@ request headers.[wrap()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aw
     $userAgentFnList
      = ['getSdkVersion', 'getUserAgentVersion', 'getHhvmVersion', 'getOsName', 'getLangVersion', 'getExecEnv', 'getEndpointDiscovery', 'getAppId', 'getMetrics']`
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html\#methods)
+### Methods  [header link](class-aws-useragentmiddleware-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-useragentmiddleware-method-construct.md)
 
 `
     public
@@ -66,7 +66,7 @@ $nextHandler
 : array<string\|int, mixed>
 = \[\]
 
-#### \_\_invoke()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html\#method___invoke)
+#### \_\_invoke()  [header link](class-aws-useragentmiddleware-method-invoke.md)
 
 When invoked, its injects the user agent header into the
 request headers.
@@ -81,7 +81,7 @@ $command
 : [CommandInterface](class-aws-commandinterface.md)$request
 : [RequestInterface](class-psr-http-message-requestinterface.md)
 
-#### wrap()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html\#method_wrap)
+#### wrap()  [header link](class-aws-useragentmiddleware-method-wrap.md)
 
 Returns a middleware wrapper function.
 
@@ -104,16 +104,16 @@ Closure
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html#toc-constants)
-  - [Properties](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html#toc-properties)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html#toc-methods)
+  - [Constants](class-aws-useragentmiddleware-toc-constants.md)
+  - [Properties](class-aws-useragentmiddleware-toc-properties.md)
+  - [Methods](class-aws-useragentmiddleware-toc-methods.md)
 - Constants
-  - [AGENT\_VERSION](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html#constant_AGENT_VERSION)
+  - [AGENT\_VERSION](class-aws-useragentmiddleware-constant-agent-version.md)
 - Properties
-  - [$userAgentFnList](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html#property_userAgentFnList)
+  - [$userAgentFnList](class-aws-useragentmiddleware-property-useragentfnlist.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html#method___construct)
-  - [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html#method___invoke)
-  - [wrap()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html#method_wrap)
+  - [\_\_construct()](class-aws-useragentmiddleware-method-construct.md)
+  - [\_\_invoke()](class-aws-useragentmiddleware-method-invoke.md)
+  - [wrap()](class-aws-useragentmiddleware-method-wrap.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.UserAgentMiddleware.html#top)
+[Back To Top](class-aws-useragentmiddleware-top.md)

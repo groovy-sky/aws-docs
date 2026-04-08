@@ -4,15 +4,15 @@ Menu
 
 ## GlueDataBrew
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.gluedatabrew.html\#toc)
+### Table of Contents  [header link](namespace-aws-gluedatabrew-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.gluedatabrew.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-gluedatabrew-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.gluedatabrew.exception.html)
+[Exception](namespace-aws-gluedatabrew-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.gluedatabrew.html\#toc-classes)
+#### Classes  [header link](namespace-aws-gluedatabrew-toc-classes.md)
 
-[GlueDataBrewClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GlueDataBrew.GlueDataBrewClient.html)This client is used to interact with the **AWS Glue DataBrew** service.
+[GlueDataBrewClient](class-aws-gluedatabrew-gluedatabrewclient.md)This client is used to interact with the **AWS Glue DataBrew** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.gluedatabrew.html#toc-classes)
+  - [Classes](namespace-aws-gluedatabrew-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.gluedatabrew.html#top)
+[Back To Top](namespace-aws-gluedatabrew-top.md)

@@ -394,7 +394,7 @@ Pattern: `[\w!@#\-.?,\s]*`
 The configuration that controls how Amazon AppFlow transfers data to the destination
 connector.
 
-Type: Array of [DestinationFlowConfig](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DestinationFlowConfig.html) objects
+Type: Array of [DestinationFlowConfig](api-destinationflowconfig.md) objects
 
 **[flowArn](#API_DescribeFlow_ResponseSyntax)**
 
@@ -452,13 +452,13 @@ Pattern: `arn:aws:kms:.*:[0-9]+:.*`
 
 Describes the details of the most recent flow run.
 
-Type: [ExecutionDetails](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ExecutionDetails.html) object
+Type: [ExecutionDetails](api-executiondetails.md) object
 
 **[lastRunMetadataCatalogDetails](#API_DescribeFlow_ResponseSyntax)**
 
 Describes the metadata catalog, metadata table, and data partitions that Amazon AppFlow used for the associated flow run.
 
-Type: Array of [MetadataCatalogDetail](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_MetadataCatalogDetail.html) objects
+Type: Array of [MetadataCatalogDetail](api-metadatacatalogdetail.md) objects
 
 **[lastUpdatedAt](#API_DescribeFlow_ResponseSyntax)**
 
@@ -482,7 +482,7 @@ Specifies the configuration that Amazon AppFlow uses when it catalogs the data t
 transferred by the associated flow. When Amazon AppFlow catalogs the data from a flow, it
 stores metadata in a data catalog.
 
-Type: [MetadataCatalogConfig](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_MetadataCatalogConfig.html) object
+Type: [MetadataCatalogConfig](api-metadatacatalogconfig.md) object
 
 **[schemaVersion](#API_DescribeFlow_ResponseSyntax)**
 
@@ -503,7 +503,7 @@ Type: Long
 The configuration that controls how Amazon AppFlow retrieves data from the source
 connector.
 
-Type: [SourceFlowConfig](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SourceFlowConfig.html) object
+Type: [SourceFlowConfig](api-sourceflowconfig.md) object
 
 **[tags](#API_DescribeFlow_ResponseSyntax)**
 
@@ -526,17 +526,17 @@ Value Pattern: `[\s\w+-=\.:/@]*`
 A list of tasks that Amazon AppFlow performs while transferring the data in the flow
 run.
 
-Type: Array of [Task](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_Task.html) objects
+Type: Array of [Task](api-task.md) objects
 
 **[triggerConfig](#API_DescribeFlow_ResponseSyntax)**
 
 The trigger settings that determine how and when the flow runs.
 
-Type: [TriggerConfig](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_TriggerConfig.html) object
+Type: [TriggerConfig](api-triggerconfig.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/appflow/1.0/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **InternalServerException**
 
@@ -684,27 +684,27 @@ API.
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appflow-2020-08-23/DescribeFlow)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/appflow-2020-08-23/describeflow.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appflow-2020-08-23/DescribeFlow)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appflow-2020-08-23/describeflow.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/DescribeFlow)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/describeflow.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appflow-2020-08-23/DescribeFlow)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/appflow-2020-08-23/describeflow.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/DescribeFlow)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/describeflow.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appflow-2020-08-23/DescribeFlow)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appflow-2020-08-23/describeflow.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appflow-2020-08-23/DescribeFlow)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appflow-2020-08-23/describeflow.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appflow-2020-08-23/DescribeFlow)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appflow-2020-08-23/describeflow.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/appflow-2020-08-23/DescribeFlow)
+- [AWS SDK for Python](../../../../services/goto/boto3/appflow-2020-08-23/describeflow.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/DescribeFlow)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/describeflow.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DescribeConnectors
 

@@ -2,27 +2,27 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [Sts](namespace-aws-sts.md)
-- [RegionalEndpoints](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sts.regionalendpoints.html)
+- [RegionalEndpoints](namespace-aws-sts-regionalendpoints.md)
 
 ## Configuration        in package    - [Aws](package-aws.md)       implements  [ConfigurationInterface](class-aws-sts-regionalendpoints-configurationinterface.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.Configuration.html\#toc)
+### Table of Contents  [header link](class-aws-sts-regionalendpoints-configuration-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.Configuration.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-sts-regionalendpoints-configuration-toc-interfaces.md)
 
 [ConfigurationInterface](class-aws-sts-regionalendpoints-configurationinterface.md)Provides access to STS regional endpoints configuration options: endpoints\_type
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.Configuration.html\#toc-methods)
+#### Methods  [header link](class-aws-sts-regionalendpoints-configuration-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.Configuration.html#method___construct)
-: mixed [getEndpointsType()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.Configuration.html#method_getEndpointsType)
-: string Returns the endpoints type[isFallback()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.Configuration.html#method_isFallback)
-: mixed [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.Configuration.html#method_toArray)
+[\_\_construct()](class-aws-sts-regionalendpoints-configuration-method-construct.md)
+: mixed [getEndpointsType()](class-aws-sts-regionalendpoints-configuration-method-getendpointstype.md)
+: string Returns the endpoints type[isFallback()](class-aws-sts-regionalendpoints-configuration-method-isfallback.md)
+: mixed [toArray()](class-aws-sts-regionalendpoints-configuration-method-toarray.md)
 : array<string\|int, mixed> Returns the configuration as an associative array
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.Configuration.html\#methods)
+### Methods  [header link](class-aws-sts-regionalendpoints-configuration-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.Configuration.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-sts-regionalendpoints-configuration-method-construct.md)
 
 `
     public
@@ -35,7 +35,7 @@ $endpointsType
 : mixed
 = false
 
-#### getEndpointsType()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.Configuration.html\#method_getEndpointsType)
+#### getEndpointsType()  [header link](class-aws-sts-regionalendpoints-configuration-method-getendpointstype.md)
 
 Returns the endpoints type
 
@@ -47,13 +47,13 @@ Returns the endpoints type
 
 string
 
-#### isFallback()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.Configuration.html\#method_isFallback)
+#### isFallback()  [header link](class-aws-sts-regionalendpoints-configuration-method-isfallback.md)
 
 `
     public
                     isFallback() : mixed`
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.Configuration.html\#method_toArray)
+#### toArray()  [header link](class-aws-sts-regionalendpoints-configuration-method-toarray.md)
 
 Returns the configuration as an associative array
 
@@ -71,11 +71,11 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.Configuration.html#toc-methods)
+  - [Methods](class-aws-sts-regionalendpoints-configuration-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.Configuration.html#method___construct)
-  - [getEndpointsType()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.Configuration.html#method_getEndpointsType)
-  - [isFallback()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.Configuration.html#method_isFallback)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.Configuration.html#method_toArray)
+  - [\_\_construct()](class-aws-sts-regionalendpoints-configuration-method-construct.md)
+  - [getEndpointsType()](class-aws-sts-regionalendpoints-configuration-method-getendpointstype.md)
+  - [isFallback()](class-aws-sts-regionalendpoints-configuration-method-isfallback.md)
+  - [toArray()](class-aws-sts-regionalendpoints-configuration-method-toarray.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.RegionalEndpoints.Configuration.html#top)
+[Back To Top](class-aws-sts-regionalendpoints-configuration-top.md)

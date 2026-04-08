@@ -4,15 +4,15 @@ Menu
 
 ## SecurityIR
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securityir.html\#toc)
+### Table of Contents  [header link](namespace-aws-securityir-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securityir.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-securityir-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securityir.exception.html)
+[Exception](namespace-aws-securityir-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securityir.html\#toc-classes)
+#### Classes  [header link](namespace-aws-securityir-toc-classes.md)
 
-[SecurityIRClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecurityIR.SecurityIRClient.html)This client is used to interact with the **Security Incident Response** service.
+[SecurityIRClient](class-aws-securityir-securityirclient.md)This client is used to interact with the **Security Incident Response** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securityir.html#toc-classes)
+  - [Classes](namespace-aws-securityir-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.securityir.html#top)
+[Back To Top](namespace-aws-securityir-top.md)

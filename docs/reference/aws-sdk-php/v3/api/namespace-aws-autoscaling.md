@@ -4,15 +4,15 @@ Menu
 
 ## AutoScaling
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.autoscaling.html\#toc)
+### Table of Contents  [header link](namespace-aws-autoscaling-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.autoscaling.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-autoscaling-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.autoscaling.exception.html)
+[Exception](namespace-aws-autoscaling-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.autoscaling.html\#toc-classes)
+#### Classes  [header link](namespace-aws-autoscaling-toc-classes.md)
 
-[AutoScalingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AutoScaling.AutoScalingClient.html)This client is used to interact with the **AWS Auto Scaling** service.
+[AutoScalingClient](class-aws-autoscaling-autoscalingclient.md)This client is used to interact with the **AWS Auto Scaling** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.autoscaling.html#toc-classes)
+  - [Classes](namespace-aws-autoscaling-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.autoscaling.html#top)
+[Back To Top](namespace-aws-autoscaling-top.md)

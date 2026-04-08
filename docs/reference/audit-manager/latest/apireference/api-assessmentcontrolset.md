@@ -8,7 +8,7 @@ Represents a set of controls in an Audit Manager assessment.
 
 The list of controls that's contained with the control set.
 
-Type: Array of [AssessmentControl](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_AssessmentControl.html) objects
+Type: Array of [AssessmentControl](api-assessmentcontrol.md) objects
 
 Required: No
 
@@ -84,13 +84,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/auditmanager-2017-07-25/AssessmentControlSet)
+- [AWS SDK for C++](../../../goto/sdkforcpp/auditmanager-2017-07-25/assessmentcontrolset.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/auditmanager-2017-07-25/AssessmentControlSet)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/auditmanager-2017-07-25/assessmentcontrolset.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/auditmanager-2017-07-25/AssessmentControlSet)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/auditmanager-2017-07-25/assessmentcontrolset.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 AssessmentControl
 

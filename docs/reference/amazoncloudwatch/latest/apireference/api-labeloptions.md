@@ -7,7 +7,7 @@ display the correct time for your time zone.
 The `Timezone` value affects a label only if you have a time-based dynamic
 expression in the label. For more information about dynamic expressions in labels, see
 [Using Dynamic\
-Labels](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/graph-dynamic-labels.html).
+Labels](../../../../services/amazoncloudwatch/latest/monitoring/graph-dynamic-labels.md).
 
 ## Contents
 
@@ -27,13 +27,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/LabelOptions)
+- [AWS SDK for C++](../../../goto/sdkforcpp/monitoring-2010-08-01/labeloptions.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/LabelOptions)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/monitoring-2010-08-01/labeloptions.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/monitoring-2010-08-01/LabelOptions)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/monitoring-2010-08-01/labeloptions.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 InsightRuleMetricDatapoint
 

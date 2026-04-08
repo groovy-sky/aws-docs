@@ -16,7 +16,7 @@ Required: No
 
 The list of comments that's attached to the control.
 
-Type: Array of [ControlComment](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_ControlComment.html) objects
+Type: Array of [ControlComment](api-controlcomment.md) objects
 
 Required: No
 
@@ -102,13 +102,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/auditmanager-2017-07-25/AssessmentControl)
+- [AWS SDK for C++](../../../goto/sdkforcpp/auditmanager-2017-07-25/assessmentcontrol.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/auditmanager-2017-07-25/AssessmentControl)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/auditmanager-2017-07-25/assessmentcontrol.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/auditmanager-2017-07-25/AssessmentControl)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/auditmanager-2017-07-25/assessmentcontrol.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Assessment
 

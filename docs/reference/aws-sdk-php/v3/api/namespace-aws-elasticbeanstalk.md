@@ -4,15 +4,15 @@ Menu
 
 ## ElasticBeanstalk
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticbeanstalk.html\#toc)
+### Table of Contents  [header link](namespace-aws-elasticbeanstalk-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticbeanstalk.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-elasticbeanstalk-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticbeanstalk.exception.html)
+[Exception](namespace-aws-elasticbeanstalk-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticbeanstalk.html\#toc-classes)
+#### Classes  [header link](namespace-aws-elasticbeanstalk-toc-classes.md)
 
-[ElasticBeanstalkClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElasticBeanstalk.ElasticBeanstalkClient.html)This client is used to interact with the **AWS Elastic Beanstalk** service.
+[ElasticBeanstalkClient](class-aws-elasticbeanstalk-elasticbeanstalkclient.md)This client is used to interact with the **AWS Elastic Beanstalk** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticbeanstalk.html#toc-classes)
+  - [Classes](namespace-aws-elasticbeanstalk-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.elasticbeanstalk.html#top)
+[Back To Top](namespace-aws-elasticbeanstalk-top.md)

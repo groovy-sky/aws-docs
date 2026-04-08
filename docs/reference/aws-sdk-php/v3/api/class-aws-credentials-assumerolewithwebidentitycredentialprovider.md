@@ -8,23 +8,23 @@ Menu
 Credential provider that provides credentials via assuming a role with a web identity
 More Information, see: https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sts-2011-06-15.html#assumerolewithwebidentity
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleWithWebIdentityCredentialProvider.html\#toc)
+### Table of Contents  [header link](class-aws-credentials-assumerolewithwebidentitycredentialprovider-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleWithWebIdentityCredentialProvider.html\#toc-constants)
+#### Constants  [header link](class-aws-credentials-assumerolewithwebidentitycredentialprovider-toc-constants.md)
 
-[ENV\_RETRIES](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleWithWebIdentityCredentialProvider.html#constant_ENV_RETRIES)
-= 'AWS\_METADATA\_SERVICE\_NUM\_ATTEMPTS' [ERROR\_MSG](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleWithWebIdentityCredentialProvider.html#constant_ERROR_MSG)
+[ENV\_RETRIES](class-aws-credentials-assumerolewithwebidentitycredentialprovider-constant-env-retries.md)
+= 'AWS\_METADATA\_SERVICE\_NUM\_ATTEMPTS' [ERROR\_MSG](class-aws-credentials-assumerolewithwebidentitycredentialprovider-constant-error-msg.md)
 = "Missing required 'AssumeRoleWithWebIdentityCredentialProvider' configuration option: "
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleWithWebIdentityCredentialProvider.html\#toc-methods)
+#### Methods  [header link](class-aws-credentials-assumerolewithwebidentitycredentialprovider-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleWithWebIdentityCredentialProvider.html#method___construct)
-: mixed The constructor attempts to load config from environment variables.[\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleWithWebIdentityCredentialProvider.html#method___invoke)
+[\_\_construct()](class-aws-credentials-assumerolewithwebidentitycredentialprovider-method-construct.md)
+: mixed The constructor attempts to load config from environment variables.[\_\_invoke()](class-aws-credentials-assumerolewithwebidentitycredentialprovider-method-invoke.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Loads assume role with web identity credentials.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleWithWebIdentityCredentialProvider.html\#constants)
+### Constants  [header link](class-aws-credentials-assumerolewithwebidentitycredentialprovider-constants.md)
 
-#### ENV\_RETRIES  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleWithWebIdentityCredentialProvider.html\#constant_ENV_RETRIES)
+#### ENV\_RETRIES  [header link](class-aws-credentials-assumerolewithwebidentitycredentialprovider-constant-env-retries.md)
 
 `
     public
@@ -33,7 +33,7 @@ More Information, see: https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sts-20
     = 'AWS_METADATA_SERVICE_NUM_ATTEMPTS'
 `
 
-#### ERROR\_MSG  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleWithWebIdentityCredentialProvider.html\#constant_ERROR_MSG)
+#### ERROR\_MSG  [header link](class-aws-credentials-assumerolewithwebidentitycredentialprovider-constant-error-msg.md)
 
 `
     public
@@ -42,9 +42,9 @@ More Information, see: https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sts-20
     = "Missing required 'AssumeRoleWithWebIdentityCredentialProvider' configuration option: "
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleWithWebIdentityCredentialProvider.html\#methods)
+### Methods  [header link](class-aws-credentials-assumerolewithwebidentitycredentialprovider-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleWithWebIdentityCredentialProvider.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-credentials-assumerolewithwebidentitycredentialprovider-method-construct.md)
 
 The constructor attempts to load config from environment variables.
 
@@ -68,11 +68,11 @@ $config
 
 Configuration options
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleWithWebIdentityCredentialProvider.html\#method___construct\#tags)
+##### Tags  [header link](class-aws-credentials-assumerolewithwebidentitycredentialprovider-method-construct-tags.md)
 
 throwsInvalidArgumentException
 
-#### \_\_invoke()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleWithWebIdentityCredentialProvider.html\#method___invoke)
+#### \_\_invoke()  [header link](class-aws-credentials-assumerolewithwebidentitycredentialprovider-method-invoke.md)
 
 Loads assume role with web identity credentials.
 
@@ -90,13 +90,13 @@ Loads assume role with web identity credentials.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleWithWebIdentityCredentialProvider.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleWithWebIdentityCredentialProvider.html#toc-methods)
+  - [Constants](class-aws-credentials-assumerolewithwebidentitycredentialprovider-toc-constants.md)
+  - [Methods](class-aws-credentials-assumerolewithwebidentitycredentialprovider-toc-methods.md)
 - Constants
-  - [ENV\_RETRIES](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleWithWebIdentityCredentialProvider.html#constant_ENV_RETRIES)
-  - [ERROR\_MSG](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleWithWebIdentityCredentialProvider.html#constant_ERROR_MSG)
+  - [ENV\_RETRIES](class-aws-credentials-assumerolewithwebidentitycredentialprovider-constant-env-retries.md)
+  - [ERROR\_MSG](class-aws-credentials-assumerolewithwebidentitycredentialprovider-constant-error-msg.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleWithWebIdentityCredentialProvider.html#method___construct)
-  - [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleWithWebIdentityCredentialProvider.html#method___invoke)
+  - [\_\_construct()](class-aws-credentials-assumerolewithwebidentitycredentialprovider-method-construct.md)
+  - [\_\_invoke()](class-aws-credentials-assumerolewithwebidentitycredentialprovider-method-invoke.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Credentials.AssumeRoleWithWebIdentityCredentialProvider.html#top)
+[Back To Top](class-aws-credentials-assumerolewithwebidentitycredentialprovider-top.md)

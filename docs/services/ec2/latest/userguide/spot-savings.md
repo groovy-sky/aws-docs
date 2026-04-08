@@ -8,7 +8,7 @@ information from the last hour or the last three days.
 The following screenshot from the **Savings** section shows the Spot usage
 and savings information for a Spot Fleet.
 
-![The Savings section on the Spot Fleet details page.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/spot-savings.png)
+![The Savings section on the Spot Fleet details page.](../../../images/awsec2/latest/userguide/images/spot-savings-png.md)
 
 You can view the following usage and savings information:
 

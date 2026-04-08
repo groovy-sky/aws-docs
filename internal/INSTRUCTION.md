@@ -96,6 +96,8 @@ Current redirect handling:
 ## Conversion and Linking
 
 - `Converter` rewrites in-domain documentation links to local relative markdown links.
+- Link rewriting is host-based for `docs.aws.amazon.com` and is not gated by include/exclude crawl filters, so markdown stays repository-local even when crawl filters skip those URLs.
+- Non-document asset href values (for example image and binary file extensions) stay absolute.
 - Conversion uses `html-to-markdown` then normalizes whitespace for deterministic output.
 - Content hash is SHA-256 of normalized markdown.
 

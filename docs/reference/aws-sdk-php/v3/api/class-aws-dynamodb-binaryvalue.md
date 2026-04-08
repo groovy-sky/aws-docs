@@ -7,22 +7,22 @@ Menu
 
 Special object to represent a DynamoDB binary (B) value.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.BinaryValue.html\#toc)
+### Table of Contents  [header link](class-aws-dynamodb-binaryvalue-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.BinaryValue.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-dynamodb-binaryvalue-toc-interfaces.md)
 
 JsonSerializable
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.BinaryValue.html\#toc-methods)
+#### Methods  [header link](class-aws-dynamodb-binaryvalue-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.BinaryValue.html#method___construct)
-: mixed [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.BinaryValue.html#method___toString)
-: mixed [jsonSerialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.BinaryValue.html#method_jsonSerialize)
+[\_\_construct()](class-aws-dynamodb-binaryvalue-method-construct.md)
+: mixed [\_\_toString()](class-aws-dynamodb-binaryvalue-method-tostring.md)
+: mixed [jsonSerialize()](class-aws-dynamodb-binaryvalue-method-jsonserialize.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.BinaryValue.html\#methods)
+### Methods  [header link](class-aws-dynamodb-binaryvalue-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.BinaryValue.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-dynamodb-binaryvalue-method-construct.md)
 
 `
     public
@@ -35,17 +35,17 @@ $value
 
 A binary value compatible with Guzzle streams.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.BinaryValue.html\#method___construct\#tags)
+##### Tags  [header link](class-aws-dynamodb-binaryvalue-method-construct-tags.md)
 
 seeStream::factory
 
-#### \_\_toString()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.BinaryValue.html\#method___toString)
+#### \_\_toString()  [header link](class-aws-dynamodb-binaryvalue-method-tostring.md)
 
 `
     public
                     __toString() : mixed`
 
-#### jsonSerialize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.BinaryValue.html\#method_jsonSerialize)
+#### jsonSerialize()  [header link](class-aws-dynamodb-binaryvalue-method-jsonserialize.md)
 
 `
     public
@@ -58,10 +58,10 @@ seeStream::factory
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.BinaryValue.html#toc-methods)
+  - [Methods](class-aws-dynamodb-binaryvalue-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.BinaryValue.html#method___construct)
-  - [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.BinaryValue.html#method___toString)
-  - [jsonSerialize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.BinaryValue.html#method_jsonSerialize)
+  - [\_\_construct()](class-aws-dynamodb-binaryvalue-method-construct.md)
+  - [\_\_toString()](class-aws-dynamodb-binaryvalue-method-tostring.md)
+  - [jsonSerialize()](class-aws-dynamodb-binaryvalue-method-jsonserialize.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.BinaryValue.html#top)
+[Back To Top](class-aws-dynamodb-binaryvalue-top.md)

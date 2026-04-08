@@ -1,32 +1,32 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Psr7](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.psr7.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Psr7](namespace-guzzlehttp-psr7.md)
 
 ## MessageTrait
 
 Trait implementing functionality common to requests and responses.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-psr7-messagetrait-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-psr7-messagetrait-toc-methods.md)
 
-[getBody()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_getBody)
-: [StreamInterface](class-psr-http-message-streaminterface.md)[getHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_getHeader)
-: array<string\|int, mixed> [getHeaderLine()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_getHeaderLine)
-: string [getHeaders()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_getHeaders)
-: array<string\|int, mixed> [getProtocolVersion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_getProtocolVersion)
-: string [hasHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_hasHeader)
-: bool [withAddedHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_withAddedHeader)
-: static [withBody()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_withBody)
-: static [withHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_withHeader)
-: static [withoutHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_withoutHeader)
-: static [withProtocolVersion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_withProtocolVersion)
+[getBody()](class-guzzlehttp-psr7-messagetrait-method-getbody.md)
+: [StreamInterface](class-psr-http-message-streaminterface.md)[getHeader()](class-guzzlehttp-psr7-messagetrait-method-getheader.md)
+: array<string\|int, mixed> [getHeaderLine()](class-guzzlehttp-psr7-messagetrait-method-getheaderline.md)
+: string [getHeaders()](class-guzzlehttp-psr7-messagetrait-method-getheaders.md)
+: array<string\|int, mixed> [getProtocolVersion()](class-guzzlehttp-psr7-messagetrait-method-getprotocolversion.md)
+: string [hasHeader()](class-guzzlehttp-psr7-messagetrait-method-hasheader.md)
+: bool [withAddedHeader()](class-guzzlehttp-psr7-messagetrait-method-withaddedheader.md)
+: static [withBody()](class-guzzlehttp-psr7-messagetrait-method-withbody.md)
+: static [withHeader()](class-guzzlehttp-psr7-messagetrait-method-withheader.md)
+: static [withoutHeader()](class-guzzlehttp-psr7-messagetrait-method-withoutheader.md)
+: static [withProtocolVersion()](class-guzzlehttp-psr7-messagetrait-method-withprotocolversion.md)
 : static
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#methods)
+### Methods  [header link](class-guzzlehttp-psr7-messagetrait-methods.md)
 
-#### getBody()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#method_getBody)
+#### getBody()  [header link](class-guzzlehttp-psr7-messagetrait-method-getbody.md)
 
 `
     public
@@ -36,7 +36,7 @@ Trait implementing functionality common to requests and responses.
 
 [StreamInterface](class-psr-http-message-streaminterface.md)
 
-#### getHeader()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#method_getHeader)
+#### getHeader()  [header link](class-guzzlehttp-psr7-messagetrait-method-getheader.md)
 
 `
     public
@@ -51,7 +51,7 @@ $header
 
 array<string\|int, mixed>
 
-#### getHeaderLine()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#method_getHeaderLine)
+#### getHeaderLine()  [header link](class-guzzlehttp-psr7-messagetrait-method-getheaderline.md)
 
 `
     public
@@ -66,7 +66,7 @@ $header
 
 string
 
-#### getHeaders()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#method_getHeaders)
+#### getHeaders()  [header link](class-guzzlehttp-psr7-messagetrait-method-getheaders.md)
 
 `
     public
@@ -76,7 +76,7 @@ string
 
 array<string\|int, mixed>
 
-#### getProtocolVersion()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#method_getProtocolVersion)
+#### getProtocolVersion()  [header link](class-guzzlehttp-psr7-messagetrait-method-getprotocolversion.md)
 
 `
     public
@@ -86,7 +86,7 @@ array<string\|int, mixed>
 
 string
 
-#### hasHeader()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#method_hasHeader)
+#### hasHeader()  [header link](class-guzzlehttp-psr7-messagetrait-method-hasheader.md)
 
 `
     public
@@ -101,7 +101,7 @@ $header
 
 bool
 
-#### withAddedHeader()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#method_withAddedHeader)
+#### withAddedHeader()  [header link](class-guzzlehttp-psr7-messagetrait-method-withaddedheader.md)
 
 `
     public
@@ -117,7 +117,7 @@ $header
 
 static
 
-#### withBody()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#method_withBody)
+#### withBody()  [header link](class-guzzlehttp-psr7-messagetrait-method-withbody.md)
 
 `
     public
@@ -132,7 +132,7 @@ $body
 
 static
 
-#### withHeader()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#method_withHeader)
+#### withHeader()  [header link](class-guzzlehttp-psr7-messagetrait-method-withheader.md)
 
 `
     public
@@ -148,7 +148,7 @@ $header
 
 static
 
-#### withoutHeader()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#method_withoutHeader)
+#### withoutHeader()  [header link](class-guzzlehttp-psr7-messagetrait-method-withoutheader.md)
 
 `
     public
@@ -163,7 +163,7 @@ $header
 
 static
 
-#### withProtocolVersion()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html\#method_withProtocolVersion)
+#### withProtocolVersion()  [header link](class-guzzlehttp-psr7-messagetrait-method-withprotocolversion.md)
 
 `
     public
@@ -184,18 +184,18 @@ static
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#toc-methods)
+  - [Methods](class-guzzlehttp-psr7-messagetrait-toc-methods.md)
 - Methods
-  - [getBody()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_getBody)
-  - [getHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_getHeader)
-  - [getHeaderLine()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_getHeaderLine)
-  - [getHeaders()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_getHeaders)
-  - [getProtocolVersion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_getProtocolVersion)
-  - [hasHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_hasHeader)
-  - [withAddedHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_withAddedHeader)
-  - [withBody()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_withBody)
-  - [withHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_withHeader)
-  - [withoutHeader()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_withoutHeader)
-  - [withProtocolVersion()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#method_withProtocolVersion)
+  - [getBody()](class-guzzlehttp-psr7-messagetrait-method-getbody.md)
+  - [getHeader()](class-guzzlehttp-psr7-messagetrait-method-getheader.md)
+  - [getHeaderLine()](class-guzzlehttp-psr7-messagetrait-method-getheaderline.md)
+  - [getHeaders()](class-guzzlehttp-psr7-messagetrait-method-getheaders.md)
+  - [getProtocolVersion()](class-guzzlehttp-psr7-messagetrait-method-getprotocolversion.md)
+  - [hasHeader()](class-guzzlehttp-psr7-messagetrait-method-hasheader.md)
+  - [withAddedHeader()](class-guzzlehttp-psr7-messagetrait-method-withaddedheader.md)
+  - [withBody()](class-guzzlehttp-psr7-messagetrait-method-withbody.md)
+  - [withHeader()](class-guzzlehttp-psr7-messagetrait-method-withheader.md)
+  - [withoutHeader()](class-guzzlehttp-psr7-messagetrait-method-withoutheader.md)
+  - [withProtocolVersion()](class-guzzlehttp-psr7-messagetrait-method-withprotocolversion.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.MessageTrait.html#top)
+[Back To Top](class-guzzlehttp-psr7-messagetrait-top.md)

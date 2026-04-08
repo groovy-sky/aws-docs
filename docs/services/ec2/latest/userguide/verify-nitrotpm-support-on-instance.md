@@ -46,7 +46,7 @@ The **TPM Management on Local Computer** window opens.
 3. Check the **TPM Manufacturer Information** field. It contains the
     manufacturer's name and the version of the NitroTPM on the instance.
 
-![The TPM Management on Local Computer window and the TPM Manufacturer Information field showing the version of the NitroTPM on the instance.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/tpm-1.png)
+![The TPM Management on Local Computer window and the TPM Manufacturer Information field showing the version of the NitroTPM on the instance.](../../../images/awsec2/latest/userguide/images/tpm-1-png.md)
 
 [Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 

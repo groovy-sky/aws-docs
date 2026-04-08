@@ -4,15 +4,15 @@ Menu
 
 ## CloudTrailData
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudtraildata.html\#toc)
+### Table of Contents  [header link](namespace-aws-cloudtraildata-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudtraildata.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-cloudtraildata-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudtraildata.exception.html)
+[Exception](namespace-aws-cloudtraildata-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudtraildata.html\#toc-classes)
+#### Classes  [header link](namespace-aws-cloudtraildata-toc-classes.md)
 
-[CloudTrailDataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudTrailData.CloudTrailDataClient.html)This client is used to interact with the **AWS CloudTrail Data Service** service.
+[CloudTrailDataClient](class-aws-cloudtraildata-cloudtraildataclient.md)This client is used to interact with the **AWS CloudTrail Data Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudtraildata.html#toc-classes)
+  - [Classes](namespace-aws-cloudtraildata-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudtraildata.html#top)
+[Back To Top](namespace-aws-cloudtraildata-top.md)

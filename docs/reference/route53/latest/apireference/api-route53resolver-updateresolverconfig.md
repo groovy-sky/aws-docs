@@ -23,12 +23,12 @@ The request accepts the following data in JSON format.
 
 Indicates whether or not the Resolver will create autodefined rules for reverse DNS
 lookups. This is enabled by default. Disabling this option will also affect EC2-Classic
-instances using ClassicLink. For more information, see [ClassicLink](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/vpc-classiclink.html) in the
+instances using ClassicLink. For more information, see [ClassicLink](../../../../services/ec2/latest/userguide/vpc-classiclink.md) in the
 _Amazon EC2 guide_.
 
 ###### Important
 
-We are retiring EC2-Classic on August 15, 2022. We recommend that you migrate from EC2-Classic to a VPC. For more information, see [Migrate from EC2-Classic to a VPC](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/vpc-migrate.html) in the
+We are retiring EC2-Classic on August 15, 2022. We recommend that you migrate from EC2-Classic to a VPC. For more information, see [Migrate from EC2-Classic to a VPC](../../../../services/ec2/latest/userguide/vpc-migrate.md) in the
 _Amazon EC2 guide_ and the blog [EC2-Classic Networking is Retiring – Here’s How to Prepare](http://aws.amazon.com/blogs/aws/ec2-classic-is-retiring-heres-how-to-prepare).
 
 ###### Note
@@ -75,7 +75,7 @@ The following data is returned in JSON format by the service.
 
 An array that contains settings for the specified Resolver configuration.
 
-Type: [ResolverConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ResolverConfig.html) object
+Type: [ResolverConfig](api-route53resolver-resolverconfig.md) object
 
 ## Errors
 
@@ -159,27 +159,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/route53resolver-2018-04-01/UpdateResolverConfig)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53resolver-2018-04-01/updateresolverconfig.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/route53resolver-2018-04-01/UpdateResolverConfig)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53resolver-2018-04-01/updateresolverconfig.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53resolver-2018-04-01/UpdateResolverConfig)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53resolver-2018-04-01/updateresolverconfig.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/route53resolver-2018-04-01/UpdateResolverConfig)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53resolver-2018-04-01/updateresolverconfig.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53resolver-2018-04-01/UpdateResolverConfig)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53resolver-2018-04-01/updateresolverconfig.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/route53resolver-2018-04-01/UpdateResolverConfig)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53resolver-2018-04-01/updateresolverconfig.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/route53resolver-2018-04-01/UpdateResolverConfig)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53resolver-2018-04-01/updateresolverconfig.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/route53resolver-2018-04-01/UpdateResolverConfig)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53resolver-2018-04-01/updateresolverconfig.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/route53resolver-2018-04-01/UpdateResolverConfig)
+- [AWS SDK for Python](../../../../services/goto/boto3/route53resolver-2018-04-01/updateresolverconfig.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53resolver-2018-04-01/UpdateResolverConfig)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53resolver-2018-04-01/updateresolverconfig.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 UpdateOutpostResolver
 

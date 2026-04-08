@@ -17,27 +17,27 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2022-10-30**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-zonal-shift-2022-10-30.html)
+- [**2022-10-30**](api-arc-zonal-shift-2022-10-30.md)
 
-  - [CancelPracticeRun](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-zonal-shift-2022-10-30.html#cancelpracticerun)
-  - [CancelZonalShift](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-zonal-shift-2022-10-30.html#cancelzonalshift)
-  - [CreatePracticeRunConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-zonal-shift-2022-10-30.html#createpracticerunconfiguration)
-  - [DeletePracticeRunConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-zonal-shift-2022-10-30.html#deletepracticerunconfiguration)
-  - [GetAutoshiftObserverNotificationStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-zonal-shift-2022-10-30.html#getautoshiftobservernotificationstatus)
-  - [GetManagedResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-zonal-shift-2022-10-30.html#getmanagedresource)
-  - [ListAutoshifts](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-zonal-shift-2022-10-30.html#listautoshifts)
-  - [ListManagedResources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-zonal-shift-2022-10-30.html#listmanagedresources)
-  - [ListZonalShifts](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-zonal-shift-2022-10-30.html#listzonalshifts)
-  - [StartPracticeRun](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-zonal-shift-2022-10-30.html#startpracticerun)
-  - [StartZonalShift](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-zonal-shift-2022-10-30.html#startzonalshift)
-  - [UpdateAutoshiftObserverNotificationStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-zonal-shift-2022-10-30.html#updateautoshiftobservernotificationstatus)
-  - [UpdatePracticeRunConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-zonal-shift-2022-10-30.html#updatepracticerunconfiguration)
-  - [UpdateZonalAutoshiftConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-zonal-shift-2022-10-30.html#updatezonalautoshiftconfiguration)
-  - [UpdateZonalShift](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-arc-zonal-shift-2022-10-30.html#updatezonalshift)
+  - [CancelPracticeRun](api-arc-zonal-shift-2022-10-30-cancelpracticerun.md)
+  - [CancelZonalShift](api-arc-zonal-shift-2022-10-30-cancelzonalshift.md)
+  - [CreatePracticeRunConfiguration](api-arc-zonal-shift-2022-10-30-createpracticerunconfiguration.md)
+  - [DeletePracticeRunConfiguration](api-arc-zonal-shift-2022-10-30-deletepracticerunconfiguration.md)
+  - [GetAutoshiftObserverNotificationStatus](api-arc-zonal-shift-2022-10-30-getautoshiftobservernotificationstatus.md)
+  - [GetManagedResource](api-arc-zonal-shift-2022-10-30-getmanagedresource.md)
+  - [ListAutoshifts](api-arc-zonal-shift-2022-10-30-listautoshifts.md)
+  - [ListManagedResources](api-arc-zonal-shift-2022-10-30-listmanagedresources.md)
+  - [ListZonalShifts](api-arc-zonal-shift-2022-10-30-listzonalshifts.md)
+  - [StartPracticeRun](api-arc-zonal-shift-2022-10-30-startpracticerun.md)
+  - [StartZonalShift](api-arc-zonal-shift-2022-10-30-startzonalshift.md)
+  - [UpdateAutoshiftObserverNotificationStatus](api-arc-zonal-shift-2022-10-30-updateautoshiftobservernotificationstatus.md)
+  - [UpdatePracticeRunConfiguration](api-arc-zonal-shift-2022-10-30-updatepracticerunconfiguration.md)
+  - [UpdateZonalAutoshiftConfiguration](api-arc-zonal-shift-2022-10-30-updatezonalautoshiftconfiguration.md)
+  - [UpdateZonalShift](api-arc-zonal-shift-2022-10-30-updatezonalshift.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ARCZonalShift.ARCZonalShiftClient.html\#toc)
+### Table of Contents  [header link](class-aws-arczonalshift-arczonalshiftclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ARCZonalShift.ARCZonalShiftClient.html\#toc-methods)
+#### Methods  [header link](class-aws-arczonalshift-arczonalshiftclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -68,7 +68,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ARCZonalShift.ARCZonalShiftClient.html\#methods)
+### Methods  [header link](class-aws-arczonalshift-arczonalshiftclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -535,7 +535,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ARCZonalShift.ARCZonalShiftClient.html#toc-methods)
+  - [Methods](class-aws-arczonalshift-arczonalshiftclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -562,4 +562,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ARCZonalShift.ARCZonalShiftClient.html#top)
+[Back To Top](class-aws-arczonalshift-arczonalshiftclient-top.md)

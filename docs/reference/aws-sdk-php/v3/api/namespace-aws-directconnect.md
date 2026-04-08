@@ -4,15 +4,15 @@ Menu
 
 ## DirectConnect
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.directconnect.html\#toc)
+### Table of Contents  [header link](namespace-aws-directconnect-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.directconnect.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-directconnect-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.directconnect.exception.html)
+[Exception](namespace-aws-directconnect-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.directconnect.html\#toc-classes)
+#### Classes  [header link](namespace-aws-directconnect-toc-classes.md)
 
-[DirectConnectClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DirectConnect.DirectConnectClient.html)This client is used to interact with the **AWS Direct Connect** service.
+[DirectConnectClient](class-aws-directconnect-directconnectclient.md)This client is used to interact with the **AWS Direct Connect** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.directconnect.html#toc-classes)
+  - [Classes](namespace-aws-directconnect-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.directconnect.html#top)
+[Back To Top](namespace-aws-directconnect-top.md)

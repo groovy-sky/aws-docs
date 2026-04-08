@@ -4,11 +4,11 @@ Menu
 
 ## Http
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.html\#toc)
+### Table of Contents  [header link](namespace-psr-http-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.html\#namespaces)
+#### Namespaces  [header link](namespace-psr-http-namespaces.md)
 
-[Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.client.html)[Message](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.message.html)
+[Client](namespace-psr-http-client.md)[Message](namespace-psr-http-message.md)
 
 ```
 
@@ -20,4 +20,4 @@ Menu
 
 - Table Of Contents
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Psr.http.html#top)
+[Back To Top](namespace-psr-http-top.md)

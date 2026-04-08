@@ -17,28 +17,28 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-05-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-taxsettings-2018-05-10.html)
+- [**2018-05-10**](api-taxsettings-2018-05-10.md)
 
-  - [BatchDeleteTaxRegistration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-taxsettings-2018-05-10.html#batchdeletetaxregistration)
-  - [BatchGetTaxExemptions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-taxsettings-2018-05-10.html#batchgettaxexemptions)
-  - [BatchPutTaxRegistration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-taxsettings-2018-05-10.html#batchputtaxregistration)
-  - [DeleteSupplementalTaxRegistration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-taxsettings-2018-05-10.html#deletesupplementaltaxregistration)
-  - [DeleteTaxRegistration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-taxsettings-2018-05-10.html#deletetaxregistration)
-  - [GetTaxExemptionTypes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-taxsettings-2018-05-10.html#gettaxexemptiontypes)
-  - [GetTaxInheritance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-taxsettings-2018-05-10.html#gettaxinheritance)
-  - [GetTaxRegistration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-taxsettings-2018-05-10.html#gettaxregistration)
-  - [GetTaxRegistrationDocument](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-taxsettings-2018-05-10.html#gettaxregistrationdocument)
-  - [ListSupplementalTaxRegistrations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-taxsettings-2018-05-10.html#listsupplementaltaxregistrations)
-  - [ListTaxExemptions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-taxsettings-2018-05-10.html#listtaxexemptions)
-  - [ListTaxRegistrations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-taxsettings-2018-05-10.html#listtaxregistrations)
-  - [PutSupplementalTaxRegistration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-taxsettings-2018-05-10.html#putsupplementaltaxregistration)
-  - [PutTaxExemption](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-taxsettings-2018-05-10.html#puttaxexemption)
-  - [PutTaxInheritance](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-taxsettings-2018-05-10.html#puttaxinheritance)
-  - [PutTaxRegistration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-taxsettings-2018-05-10.html#puttaxregistration)
+  - [BatchDeleteTaxRegistration](api-taxsettings-2018-05-10-batchdeletetaxregistration.md)
+  - [BatchGetTaxExemptions](api-taxsettings-2018-05-10-batchgettaxexemptions.md)
+  - [BatchPutTaxRegistration](api-taxsettings-2018-05-10-batchputtaxregistration.md)
+  - [DeleteSupplementalTaxRegistration](api-taxsettings-2018-05-10-deletesupplementaltaxregistration.md)
+  - [DeleteTaxRegistration](api-taxsettings-2018-05-10-deletetaxregistration.md)
+  - [GetTaxExemptionTypes](api-taxsettings-2018-05-10-gettaxexemptiontypes.md)
+  - [GetTaxInheritance](api-taxsettings-2018-05-10-gettaxinheritance.md)
+  - [GetTaxRegistration](api-taxsettings-2018-05-10-gettaxregistration.md)
+  - [GetTaxRegistrationDocument](api-taxsettings-2018-05-10-gettaxregistrationdocument.md)
+  - [ListSupplementalTaxRegistrations](api-taxsettings-2018-05-10-listsupplementaltaxregistrations.md)
+  - [ListTaxExemptions](api-taxsettings-2018-05-10-listtaxexemptions.md)
+  - [ListTaxRegistrations](api-taxsettings-2018-05-10-listtaxregistrations.md)
+  - [PutSupplementalTaxRegistration](api-taxsettings-2018-05-10-putsupplementaltaxregistration.md)
+  - [PutTaxExemption](api-taxsettings-2018-05-10-puttaxexemption.md)
+  - [PutTaxInheritance](api-taxsettings-2018-05-10-puttaxinheritance.md)
+  - [PutTaxRegistration](api-taxsettings-2018-05-10-puttaxregistration.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TaxSettings.TaxSettingsClient.html\#toc)
+### Table of Contents  [header link](class-aws-taxsettings-taxsettingsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TaxSettings.TaxSettingsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-taxsettings-taxsettingsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -69,7 +69,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TaxSettings.TaxSettingsClient.html\#methods)
+### Methods  [header link](class-aws-taxsettings-taxsettingsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -536,7 +536,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TaxSettings.TaxSettingsClient.html#toc-methods)
+  - [Methods](class-aws-taxsettings-taxsettingsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -563,4 +563,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TaxSettings.TaxSettingsClient.html#top)
+[Back To Top](class-aws-taxsettings-taxsettingsclient-top.md)

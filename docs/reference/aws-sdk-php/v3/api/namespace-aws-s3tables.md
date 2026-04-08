@@ -4,15 +4,15 @@ Menu
 
 ## S3Tables
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3tables.html\#toc)
+### Table of Contents  [header link](namespace-aws-s3tables-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3tables.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-s3tables-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3tables.exception.html)
+[Exception](namespace-aws-s3tables-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3tables.html\#toc-classes)
+#### Classes  [header link](namespace-aws-s3tables-toc-classes.md)
 
-[S3TablesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3Tables.S3TablesClient.html)This client is used to interact with the **Amazon S3 Tables** service.
+[S3TablesClient](class-aws-s3tables-s3tablesclient.md)This client is used to interact with the **Amazon S3 Tables** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3tables.html#toc-classes)
+  - [Classes](namespace-aws-s3tables-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3tables.html#top)
+[Back To Top](namespace-aws-s3tables-top.md)

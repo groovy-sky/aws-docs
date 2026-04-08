@@ -17,31 +17,31 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-08-25**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-signer-2017-08-25.html)
+- [**2017-08-25**](api-signer-2017-08-25.md)
 
-  - [AddProfilePermission](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-signer-2017-08-25.html#addprofilepermission)
-  - [CancelSigningProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-signer-2017-08-25.html#cancelsigningprofile)
-  - [DescribeSigningJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-signer-2017-08-25.html#describesigningjob)
-  - [GetRevocationStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-signer-2017-08-25.html#getrevocationstatus)
-  - [GetSigningPlatform](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-signer-2017-08-25.html#getsigningplatform)
-  - [GetSigningProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-signer-2017-08-25.html#getsigningprofile)
-  - [ListProfilePermissions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-signer-2017-08-25.html#listprofilepermissions)
-  - [ListSigningJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-signer-2017-08-25.html#listsigningjobs)
-  - [ListSigningPlatforms](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-signer-2017-08-25.html#listsigningplatforms)
-  - [ListSigningProfiles](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-signer-2017-08-25.html#listsigningprofiles)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-signer-2017-08-25.html#listtagsforresource)
-  - [PutSigningProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-signer-2017-08-25.html#putsigningprofile)
-  - [RemoveProfilePermission](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-signer-2017-08-25.html#removeprofilepermission)
-  - [RevokeSignature](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-signer-2017-08-25.html#revokesignature)
-  - [RevokeSigningProfile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-signer-2017-08-25.html#revokesigningprofile)
-  - [SignPayload](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-signer-2017-08-25.html#signpayload)
-  - [StartSigningJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-signer-2017-08-25.html#startsigningjob)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-signer-2017-08-25.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-signer-2017-08-25.html#untagresource)
+  - [AddProfilePermission](api-signer-2017-08-25-addprofilepermission.md)
+  - [CancelSigningProfile](api-signer-2017-08-25-cancelsigningprofile.md)
+  - [DescribeSigningJob](api-signer-2017-08-25-describesigningjob.md)
+  - [GetRevocationStatus](api-signer-2017-08-25-getrevocationstatus.md)
+  - [GetSigningPlatform](api-signer-2017-08-25-getsigningplatform.md)
+  - [GetSigningProfile](api-signer-2017-08-25-getsigningprofile.md)
+  - [ListProfilePermissions](api-signer-2017-08-25-listprofilepermissions.md)
+  - [ListSigningJobs](api-signer-2017-08-25-listsigningjobs.md)
+  - [ListSigningPlatforms](api-signer-2017-08-25-listsigningplatforms.md)
+  - [ListSigningProfiles](api-signer-2017-08-25-listsigningprofiles.md)
+  - [ListTagsForResource](api-signer-2017-08-25-listtagsforresource.md)
+  - [PutSigningProfile](api-signer-2017-08-25-putsigningprofile.md)
+  - [RemoveProfilePermission](api-signer-2017-08-25-removeprofilepermission.md)
+  - [RevokeSignature](api-signer-2017-08-25-revokesignature.md)
+  - [RevokeSigningProfile](api-signer-2017-08-25-revokesigningprofile.md)
+  - [SignPayload](api-signer-2017-08-25-signpayload.md)
+  - [StartSigningJob](api-signer-2017-08-25-startsigningjob.md)
+  - [TagResource](api-signer-2017-08-25-tagresource.md)
+  - [UntagResource](api-signer-2017-08-25-untagresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.signer.signerClient.html\#toc)
+### Table of Contents  [header link](class-aws-signer-signerclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.signer.signerClient.html\#toc-methods)
+#### Methods  [header link](class-aws-signer-signerclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -72,7 +72,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.signer.signerClient.html\#methods)
+### Methods  [header link](class-aws-signer-signerclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -539,7 +539,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.signer.signerClient.html#toc-methods)
+  - [Methods](class-aws-signer-signerclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -566,4 +566,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.signer.signerClient.html#top)
+[Back To Top](class-aws-signer-signerclient-top.md)

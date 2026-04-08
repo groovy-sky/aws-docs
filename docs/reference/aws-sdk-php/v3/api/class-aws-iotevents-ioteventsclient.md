@@ -17,38 +17,38 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-07-27**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html)
+- [**2018-07-27**](api-iotevents-2018-07-27.md)
 
-  - [CreateAlarmModel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#createalarmmodel)
-  - [CreateDetectorModel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#createdetectormodel)
-  - [CreateInput](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#createinput)
-  - [DeleteAlarmModel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#deletealarmmodel)
-  - [DeleteDetectorModel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#deletedetectormodel)
-  - [DeleteInput](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#deleteinput)
-  - [DescribeAlarmModel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#describealarmmodel)
-  - [DescribeDetectorModel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#describedetectormodel)
-  - [DescribeDetectorModelAnalysis](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#describedetectormodelanalysis)
-  - [DescribeInput](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#describeinput)
-  - [DescribeLoggingOptions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#describeloggingoptions)
-  - [GetDetectorModelAnalysisResults](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#getdetectormodelanalysisresults)
-  - [ListAlarmModelVersions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#listalarmmodelversions)
-  - [ListAlarmModels](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#listalarmmodels)
-  - [ListDetectorModelVersions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#listdetectormodelversions)
-  - [ListDetectorModels](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#listdetectormodels)
-  - [ListInputRoutings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#listinputroutings)
-  - [ListInputs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#listinputs)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#listtagsforresource)
-  - [PutLoggingOptions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#putloggingoptions)
-  - [StartDetectorModelAnalysis](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#startdetectormodelanalysis)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#untagresource)
-  - [UpdateAlarmModel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#updatealarmmodel)
-  - [UpdateDetectorModel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#updatedetectormodel)
-  - [UpdateInput](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-iotevents-2018-07-27.html#updateinput)
+  - [CreateAlarmModel](api-iotevents-2018-07-27-createalarmmodel.md)
+  - [CreateDetectorModel](api-iotevents-2018-07-27-createdetectormodel.md)
+  - [CreateInput](api-iotevents-2018-07-27-createinput.md)
+  - [DeleteAlarmModel](api-iotevents-2018-07-27-deletealarmmodel.md)
+  - [DeleteDetectorModel](api-iotevents-2018-07-27-deletedetectormodel.md)
+  - [DeleteInput](api-iotevents-2018-07-27-deleteinput.md)
+  - [DescribeAlarmModel](api-iotevents-2018-07-27-describealarmmodel.md)
+  - [DescribeDetectorModel](api-iotevents-2018-07-27-describedetectormodel.md)
+  - [DescribeDetectorModelAnalysis](api-iotevents-2018-07-27-describedetectormodelanalysis.md)
+  - [DescribeInput](api-iotevents-2018-07-27-describeinput.md)
+  - [DescribeLoggingOptions](api-iotevents-2018-07-27-describeloggingoptions.md)
+  - [GetDetectorModelAnalysisResults](api-iotevents-2018-07-27-getdetectormodelanalysisresults.md)
+  - [ListAlarmModelVersions](api-iotevents-2018-07-27-listalarmmodelversions.md)
+  - [ListAlarmModels](api-iotevents-2018-07-27-listalarmmodels.md)
+  - [ListDetectorModelVersions](api-iotevents-2018-07-27-listdetectormodelversions.md)
+  - [ListDetectorModels](api-iotevents-2018-07-27-listdetectormodels.md)
+  - [ListInputRoutings](api-iotevents-2018-07-27-listinputroutings.md)
+  - [ListInputs](api-iotevents-2018-07-27-listinputs.md)
+  - [ListTagsForResource](api-iotevents-2018-07-27-listtagsforresource.md)
+  - [PutLoggingOptions](api-iotevents-2018-07-27-putloggingoptions.md)
+  - [StartDetectorModelAnalysis](api-iotevents-2018-07-27-startdetectormodelanalysis.md)
+  - [TagResource](api-iotevents-2018-07-27-tagresource.md)
+  - [UntagResource](api-iotevents-2018-07-27-untagresource.md)
+  - [UpdateAlarmModel](api-iotevents-2018-07-27-updatealarmmodel.md)
+  - [UpdateDetectorModel](api-iotevents-2018-07-27-updatedetectormodel.md)
+  - [UpdateInput](api-iotevents-2018-07-27-updateinput.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTEvents.IoTEventsClient.html\#toc)
+### Table of Contents  [header link](class-aws-iotevents-ioteventsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTEvents.IoTEventsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-iotevents-ioteventsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -79,7 +79,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTEvents.IoTEventsClient.html\#methods)
+### Methods  [header link](class-aws-iotevents-ioteventsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -546,7 +546,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTEvents.IoTEventsClient.html#toc-methods)
+  - [Methods](class-aws-iotevents-ioteventsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -573,4 +573,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTEvents.IoTEventsClient.html#top)
+[Back To Top](class-aws-iotevents-ioteventsclient-top.md)

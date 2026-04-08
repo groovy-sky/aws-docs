@@ -17,28 +17,28 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2023-08-22**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-thin-client-2023-08-22.html)
+- [**2023-08-22**](api-workspaces-thin-client-2023-08-22.md)
 
-  - [CreateEnvironment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-thin-client-2023-08-22.html#createenvironment)
-  - [DeleteDevice](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-thin-client-2023-08-22.html#deletedevice)
-  - [DeleteEnvironment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-thin-client-2023-08-22.html#deleteenvironment)
-  - [DeregisterDevice](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-thin-client-2023-08-22.html#deregisterdevice)
-  - [GetDevice](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-thin-client-2023-08-22.html#getdevice)
-  - [GetEnvironment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-thin-client-2023-08-22.html#getenvironment)
-  - [GetSoftwareSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-thin-client-2023-08-22.html#getsoftwareset)
-  - [ListDevices](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-thin-client-2023-08-22.html#listdevices)
-  - [ListEnvironments](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-thin-client-2023-08-22.html#listenvironments)
-  - [ListSoftwareSets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-thin-client-2023-08-22.html#listsoftwaresets)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-thin-client-2023-08-22.html#listtagsforresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-thin-client-2023-08-22.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-thin-client-2023-08-22.html#untagresource)
-  - [UpdateDevice](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-thin-client-2023-08-22.html#updatedevice)
-  - [UpdateEnvironment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-thin-client-2023-08-22.html#updateenvironment)
-  - [UpdateSoftwareSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-workspaces-thin-client-2023-08-22.html#updatesoftwareset)
+  - [CreateEnvironment](api-workspaces-thin-client-2023-08-22-createenvironment.md)
+  - [DeleteDevice](api-workspaces-thin-client-2023-08-22-deletedevice.md)
+  - [DeleteEnvironment](api-workspaces-thin-client-2023-08-22-deleteenvironment.md)
+  - [DeregisterDevice](api-workspaces-thin-client-2023-08-22-deregisterdevice.md)
+  - [GetDevice](api-workspaces-thin-client-2023-08-22-getdevice.md)
+  - [GetEnvironment](api-workspaces-thin-client-2023-08-22-getenvironment.md)
+  - [GetSoftwareSet](api-workspaces-thin-client-2023-08-22-getsoftwareset.md)
+  - [ListDevices](api-workspaces-thin-client-2023-08-22-listdevices.md)
+  - [ListEnvironments](api-workspaces-thin-client-2023-08-22-listenvironments.md)
+  - [ListSoftwareSets](api-workspaces-thin-client-2023-08-22-listsoftwaresets.md)
+  - [ListTagsForResource](api-workspaces-thin-client-2023-08-22-listtagsforresource.md)
+  - [TagResource](api-workspaces-thin-client-2023-08-22-tagresource.md)
+  - [UntagResource](api-workspaces-thin-client-2023-08-22-untagresource.md)
+  - [UpdateDevice](api-workspaces-thin-client-2023-08-22-updatedevice.md)
+  - [UpdateEnvironment](api-workspaces-thin-client-2023-08-22-updateenvironment.md)
+  - [UpdateSoftwareSet](api-workspaces-thin-client-2023-08-22-updatesoftwareset.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkSpacesThinClient.WorkSpacesThinClientClient.html\#toc)
+### Table of Contents  [header link](class-aws-workspacesthinclient-workspacesthinclientclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkSpacesThinClient.WorkSpacesThinClientClient.html\#toc-methods)
+#### Methods  [header link](class-aws-workspacesthinclient-workspacesthinclientclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -69,7 +69,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkSpacesThinClient.WorkSpacesThinClientClient.html\#methods)
+### Methods  [header link](class-aws-workspacesthinclient-workspacesthinclientclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -536,7 +536,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkSpacesThinClient.WorkSpacesThinClientClient.html#toc-methods)
+  - [Methods](class-aws-workspacesthinclient-workspacesthinclientclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -563,4 +563,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkSpacesThinClient.WorkSpacesThinClientClient.html#top)
+[Back To Top](class-aws-workspacesthinclient-workspacesthinclientclient-top.md)

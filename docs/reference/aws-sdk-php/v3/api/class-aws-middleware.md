@@ -6,35 +6,35 @@ Menu
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html\#toc)
+### Table of Contents  [header link](class-aws-middleware-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html\#toc-methods)
+#### Methods  [header link](class-aws-middleware-toc-methods.md)
 
-[contentType()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_contentType)
-: callable Middleware wrapper function that adds a Content-Type header to requests.[history()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_history)
-: callable Tracks command and request history using a history container.[invocationId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_invocationId)
+[contentType()](class-aws-middleware-method-contenttype.md)
+: callable Middleware wrapper function that adds a Content-Type header to requests.[history()](class-aws-middleware-method-history.md)
+: callable Tracks command and request history using a history container.[invocationId()](class-aws-middleware-method-invocationid.md)
 : callable Middleware wrapper function that adds an invocation id header to
-requests, which is only applied after the build step.[mapCommand()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_mapCommand)
+requests, which is only applied after the build step.[mapCommand()](class-aws-middleware-method-mapcommand.md)
 : callable Creates a middleware that applies a map function to commands as they
-pass through the middleware.[mapRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_mapRequest)
+pass through the middleware.[mapRequest()](class-aws-middleware-method-maprequest.md)
 : callable Creates a middleware that applies a map function to requests as they
-pass through the middleware.[mapResult()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_mapResult)
-: callable Creates a middleware that applies a map function to results.[recursionDetection()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_recursionDetection)
+pass through the middleware.[mapResult()](class-aws-middleware-method-mapresult.md)
+: callable Creates a middleware that applies a map function to results.[recursionDetection()](class-aws-middleware-method-recursiondetection.md)
 : callable Middleware wrapper function that adds a trace id header to requests
-from clients instantiated in supported Lambda runtime environments.[requestBuilder()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_requestBuilder)
-: callable Builds an HTTP request for a command.[retry()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_retry)
+from clients instantiated in supported Lambda runtime environments.[requestBuilder()](class-aws-middleware-method-requestbuilder.md)
+: callable Builds an HTTP request for a command.[retry()](class-aws-middleware-method-retry.md)
 : callable Middleware wrapper function that retries requests based on the boolean
-result of invoking the provided "decider" function.[signer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_signer)
-: callable Creates a middleware that signs requests for a command.[sourceFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_sourceFile)
+result of invoking the provided "decider" function.[signer()](class-aws-middleware-method-signer.md)
+: callable Creates a middleware that signs requests for a command.[sourceFile()](class-aws-middleware-method-sourcefile.md)
 : callable Middleware used to allow a command parameter (e.g., "SourceFile") to
-be used to specify the source of data for an upload operation.[tap()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_tap)
-: callable Creates a middleware that invokes a callback at a given step.[timer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_timer)
-: mixed [validation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_validation)
+be used to specify the source of data for an upload operation.[tap()](class-aws-middleware-method-tap.md)
+: callable Creates a middleware that invokes a callback at a given step.[timer()](class-aws-middleware-method-timer.md)
+: mixed [validation()](class-aws-middleware-method-validation.md)
 : callable Adds a middleware that uses client-side validation.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html\#methods)
+### Methods  [header link](class-aws-middleware-methods.md)
 
-#### contentType()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html\#method_contentType)
+#### contentType()  [header link](class-aws-middleware-method-contenttype.md)
 
 Middleware wrapper function that adds a Content-Type header to requests.
 
@@ -57,7 +57,7 @@ Operations that Content-Type should be added to.
 
 callable
 
-#### history()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html\#method_history)
+#### history()  [header link](class-aws-middleware-method-history.md)
 
 Tracks command and request history using a history container.
 
@@ -78,7 +78,7 @@ History container to store entries.
 
 callable
 
-#### invocationId()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html\#method_invocationId)
+#### invocationId()  [header link](class-aws-middleware-method-invocationid.md)
 
 Middleware wrapper function that adds an invocation id header to
 requests, which is only applied after the build step.
@@ -94,7 +94,7 @@ retries as part of a complete request lifecycle.
 
 callable
 
-#### mapCommand()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html\#method_mapCommand)
+#### mapCommand()  [header link](class-aws-middleware-method-mapcommand.md)
 
 Creates a middleware that applies a map function to commands as they
 pass through the middleware.
@@ -115,7 +115,7 @@ command.
 
 callable
 
-#### mapRequest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html\#method_mapRequest)
+#### mapRequest()  [header link](class-aws-middleware-method-maprequest.md)
 
 Creates a middleware that applies a map function to requests as they
 pass through the middleware.
@@ -136,7 +136,7 @@ returns a RequestInterface.
 
 callable
 
-#### mapResult()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html\#method_mapResult)
+#### mapResult()  [header link](class-aws-middleware-method-mapresult.md)
 
 Creates a middleware that applies a map function to results.
 
@@ -156,7 +156,7 @@ returns an Aws\\ResultInterface.
 
 callable
 
-#### recursionDetection()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html\#method_recursionDetection)
+#### recursionDetection()  [header link](class-aws-middleware-method-recursiondetection.md)
 
 Middleware wrapper function that adds a trace id header to requests
 from clients instantiated in supported Lambda runtime environments.
@@ -172,7 +172,7 @@ from being recursively invoked due to misconfigured resources.
 
 callable
 
-#### requestBuilder()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html\#method_requestBuilder)
+#### requestBuilder()  [header link](class-aws-middleware-method-requestbuilder.md)
 
 Builds an HTTP request for a command.
 
@@ -192,7 +192,7 @@ command.
 
 callable
 
-#### retry()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html\#method_retry)
+#### retry()  [header link](class-aws-middleware-method-retry.md)
 
 Middleware wrapper function that retries requests based on the boolean
 result of invoking the provided "decider" function.
@@ -232,7 +232,7 @@ associated delay.
 
 callable
 
-#### signer()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html\#method_signer)
+#### signer()  [header link](class-aws-middleware-method-signer.md)
 
 Creates a middleware that signs requests for a command.
 
@@ -266,7 +266,7 @@ $tokenProvider
 
 callable
 
-#### sourceFile()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html\#method_sourceFile)
+#### sourceFile()  [header link](class-aws-middleware-method-sourcefile.md)
 
 Middleware used to allow a command parameter (e.g., "SourceFile") to
 be used to specify the source of data for an upload operation.
@@ -288,7 +288,7 @@ $api
 
 callable
 
-#### tap()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html\#method_tap)
+#### tap()  [header link](class-aws-middleware-method-tap.md)
 
 Creates a middleware that invokes a callback at a given step.
 
@@ -312,13 +312,13 @@ Tap function
 
 callable
 
-#### timer()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html\#method_timer)
+#### timer()  [header link](class-aws-middleware-method-timer.md)
 
 `
     public
             static        timer() : mixed`
 
-#### validation()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html\#method_validation)
+#### validation()  [header link](class-aws-middleware-method-validation.md)
 
 Adds a middleware that uses client-side validation.
 
@@ -334,7 +334,7 @@ $api
 API being accessed.
 
 $validator
-: [Validator](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Validator.html) \|null
+: [Validator](class-aws-api-validator.md) \|null
 = null
 
 ##### Return values
@@ -347,21 +347,21 @@ callable
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#toc-methods)
+  - [Methods](class-aws-middleware-toc-methods.md)
 - Methods
-  - [contentType()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_contentType)
-  - [history()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_history)
-  - [invocationId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_invocationId)
-  - [mapCommand()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_mapCommand)
-  - [mapRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_mapRequest)
-  - [mapResult()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_mapResult)
-  - [recursionDetection()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_recursionDetection)
-  - [requestBuilder()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_requestBuilder)
-  - [retry()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_retry)
-  - [signer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_signer)
-  - [sourceFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_sourceFile)
-  - [tap()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_tap)
-  - [timer()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_timer)
-  - [validation()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#method_validation)
+  - [contentType()](class-aws-middleware-method-contenttype.md)
+  - [history()](class-aws-middleware-method-history.md)
+  - [invocationId()](class-aws-middleware-method-invocationid.md)
+  - [mapCommand()](class-aws-middleware-method-mapcommand.md)
+  - [mapRequest()](class-aws-middleware-method-maprequest.md)
+  - [mapResult()](class-aws-middleware-method-mapresult.md)
+  - [recursionDetection()](class-aws-middleware-method-recursiondetection.md)
+  - [requestBuilder()](class-aws-middleware-method-requestbuilder.md)
+  - [retry()](class-aws-middleware-method-retry.md)
+  - [signer()](class-aws-middleware-method-signer.md)
+  - [sourceFile()](class-aws-middleware-method-sourcefile.md)
+  - [tap()](class-aws-middleware-method-tap.md)
+  - [timer()](class-aws-middleware-method-timer.md)
+  - [validation()](class-aws-middleware-method-validation.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Middleware.html#top)
+[Back To Top](class-aws-middleware-top.md)

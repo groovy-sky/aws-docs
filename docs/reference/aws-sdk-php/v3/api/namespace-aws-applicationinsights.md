@@ -4,15 +4,15 @@ Menu
 
 ## ApplicationInsights
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationinsights.html\#toc)
+### Table of Contents  [header link](namespace-aws-applicationinsights-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationinsights.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-applicationinsights-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationinsights.exception.html)
+[Exception](namespace-aws-applicationinsights-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationinsights.html\#toc-classes)
+#### Classes  [header link](namespace-aws-applicationinsights-toc-classes.md)
 
-[ApplicationInsightsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ApplicationInsights.ApplicationInsightsClient.html)This client is used to interact with the **Amazon CloudWatch Application Insights** service.
+[ApplicationInsightsClient](class-aws-applicationinsights-applicationinsightsclient.md)This client is used to interact with the **Amazon CloudWatch Application Insights** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationinsights.html#toc-classes)
+  - [Classes](namespace-aws-applicationinsights-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.applicationinsights.html#top)
+[Back To Top](namespace-aws-applicationinsights-top.md)

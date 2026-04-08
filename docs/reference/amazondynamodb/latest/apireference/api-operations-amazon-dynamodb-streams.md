@@ -2,15 +2,15 @@
 
 The following actions are supported by Amazon DynamoDB Streams:
 
-- [DescribeStream](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_DescribeStream.html)
+- [DescribeStream](api-streams-describestream.md)
 
-- [GetRecords](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_GetRecords.html)
+- [GetRecords](api-streams-getrecords.md)
 
-- [GetShardIterator](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_GetShardIterator.html)
+- [GetShardIterator](api-streams-getsharditerator.md)
 
-- [ListStreams](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_ListStreams.html)
+- [ListStreams](api-streams-liststreams.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 UpdateSubnetGroup
 

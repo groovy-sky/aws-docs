@@ -1,6 +1,6 @@
 # Expression
 
-See [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_Expression.html). Billing view only supports `LINKED_ACCOUNT`, `Tags`, and `CostCategories`.
+See [Expression](api-billing-expression.md). Billing view only supports `LINKED_ACCOUNT`, `Tags`, and `CostCategories`.
 
 ## Contents
 
@@ -8,7 +8,7 @@ See [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIRefer
 
 The filter that's based on `CostCategory` values.
 
-Type: [CostCategoryValues](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_CostCategoryValues.html) object
+Type: [CostCategoryValues](api-billing-costcategoryvalues.md) object
 
 Required: No
 
@@ -16,7 +16,7 @@ Required: No
 
 The specific `Dimension` to use for `Expression`.
 
-Type: [DimensionValues](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_DimensionValues.html) object
+Type: [DimensionValues](api-billing-dimensionvalues.md) object
 
 Required: No
 
@@ -24,7 +24,7 @@ Required: No
 
 The specific `Tag` to use for `Expression`.
 
-Type: [TagValues](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_TagValues.html) object
+Type: [TagValues](api-billing-tagvalues.md) object
 
 Required: No
 
@@ -32,7 +32,7 @@ Required: No
 
 Specifies a time range filter for the billing view data.
 
-Type: [TimeRange](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_TimeRange.html) object
+Type: [TimeRange](api-billing-timerange.md) object
 
 Required: No
 
@@ -40,13 +40,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/billing-2023-09-07/Expression)
+- [AWS SDK for C++](../../../goto/sdkforcpp/billing-2023-09-07/expression.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/billing-2023-09-07/Expression)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/billing-2023-09-07/expression.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/billing-2023-09-07/Expression)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/billing-2023-09-07/expression.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DimensionValues
 

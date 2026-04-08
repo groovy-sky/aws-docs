@@ -4,15 +4,15 @@ Menu
 
 ## SocialMessaging
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.socialmessaging.html\#toc)
+### Table of Contents  [header link](namespace-aws-socialmessaging-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.socialmessaging.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-socialmessaging-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.socialmessaging.exception.html)
+[Exception](namespace-aws-socialmessaging-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.socialmessaging.html\#toc-classes)
+#### Classes  [header link](namespace-aws-socialmessaging-toc-classes.md)
 
-[SocialMessagingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SocialMessaging.SocialMessagingClient.html)This client is used to interact with the **AWS End User Messaging Social** service.
+[SocialMessagingClient](class-aws-socialmessaging-socialmessagingclient.md)This client is used to interact with the **AWS End User Messaging Social** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.socialmessaging.html#toc-classes)
+  - [Classes](namespace-aws-socialmessaging-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.socialmessaging.html#top)
+[Back To Top](namespace-aws-socialmessaging-top.md)

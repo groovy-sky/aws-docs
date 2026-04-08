@@ -3,7 +3,7 @@
 Creates or updates an alarm and associates it with the specified metric, metric
 math expression, anomaly detection model, Metrics Insights query, or PromQL query. For more
 information about using a Metrics Insights query for an alarm, see [Create\
-alarms on Metrics Insights queries](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Create_Metrics_Insights_Alarm.html).
+alarms on Metrics Insights queries](../../../../services/amazoncloudwatch/latest/monitoring/create-metrics-insights-alarm.md).
 
 Alarms based on anomaly detection models cannot have Auto Scaling actions.
 
@@ -28,7 +28,7 @@ The first time you create an alarm in the AWS Management Console, the AWS CLI, o
 service-linked role for you. The service-linked roles are called
 `AWSServiceRoleForCloudWatchEvents` and
 `AWSServiceRoleForCloudWatchAlarms_ActionSSM`. For more information, see
-[AWS service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role).
+[AWS service-linked role](../../../../services/iam/latest/userguide/id-roles-terms-and-concepts-iam-term-service-linked-role.md).
 
 Each `PutMetricAlarm` action has a maximum uncompressed payload of 120
 KB.
@@ -172,7 +172,7 @@ Required: No
 
 The number of data points that must be breaching to trigger the alarm. This is used
 only if you are setting an "M out of N" alarm. In that case, this value is the M. For
-more information, see [Evaluating an Alarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html#alarm-evaluation) in the _Amazon CloudWatch User_
+more information, see [Evaluating an Alarm](../../../../services/amazoncloudwatch/latest/monitoring/alarmthatsendsemail-alarm-evaluation.md) in the _Amazon CloudWatch User_
 _Guide_.
 
 Type: Integer
@@ -197,7 +197,7 @@ Used only for alarms based on percentiles. If you specify `ignore`, the
 alarm state does not change during periods with too few data points to be statistically
 significant. If you specify `evaluate` or omit this parameter, the alarm is
 always evaluated and possibly changes state no matter how many data points are
-available. For more information, see [Percentile-Based CloudWatch Alarms and Low Data Samples](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html#percentiles-with-low-samples).
+available. For more information, see [Percentile-Based CloudWatch Alarms and Low Data Samples](../../../../services/amazoncloudwatch/latest/monitoring/alarmthatsendsemail-percentiles-with-low-samples.md).
 
 Valid Values: `evaluate | ignore`
 
@@ -225,7 +225,7 @@ are defined within this structure.
 For an example of how to use this parameter, see the **PromQL**
 **alarm** example on this page.
 
-Type: [EvaluationCriteria](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_EvaluationCriteria.html) object
+Type: [EvaluationCriteria](api-evaluationcriteria.md) object
 
 **Note:** This object is a Union. Only one member of this object can be specified or returned.
 
@@ -396,7 +396,7 @@ math expression.
 
 One item in the `Metrics` array is the expression that the alarm watches.
 You designate this expression by setting `ReturnData` to true for this object
-in the array. For more information, see [MetricDataQuery](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricDataQuery.html).
+in the array. For more information, see [MetricDataQuery](api-metricdataquery.md).
 
 If you use the `Metrics` parameter, you cannot include the
 `Namespace`, `MetricName`, `Dimensions`,
@@ -405,7 +405,7 @@ or `ExtendedStatistic` parameters of `PutMetricAlarm`
 in the same operation. Instead, you retrieve the metrics you are using in your
 math expression as part of the `Metrics` array.
 
-Type: Array of [MetricDataQuery](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricDataQuery.html) objects
+Type: Array of [MetricDataQuery](api-metricdataquery.md) objects
 
 Required: No
 
@@ -540,13 +540,13 @@ scope user permissions by granting a user permission to access or change only re
 with certain tag values.
 
 If you are using this operation to update an existing alarm, any tags you specify in
-this parameter are ignored. To change the tags of an existing alarm, use [TagResource](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_TagResource.html) or [UntagResource](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_UntagResource.html).
+this parameter are ignored. To change the tags of an existing alarm, use [TagResource](api-tagresource.md) or [UntagResource](api-untagresource.md).
 
 To use this field to set tags for an alarm when you create it, you must be signed on
 with both the `cloudwatch:PutMetricAlarm` and
 `cloudwatch:TagResource` permissions.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Required: No
 
@@ -581,7 +581,7 @@ Required: No
 
 Sets how this alarm is to handle missing data points. If
 `TreatMissingData` is omitted, the default behavior of
-`missing` is used. For more information, see [Configuring How CloudWatch Alarms Treats Missing Data](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html#alarms-and-missing-data).
+`missing` is used. For more information, see [Configuring How CloudWatch Alarms Treats Missing Data](../../../../services/amazoncloudwatch/latest/monitoring/alarmthatsendsemail-alarms-and-missing-data.md).
 
 Valid Values: `breaching | notBreaching | ignore | missing`
 
@@ -632,7 +632,7 @@ Required: No
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **LimitExceeded**
 
@@ -878,27 +878,27 @@ are no longer breaching for 120 seconds (recovery period).
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/monitoring-2010-08-01/PutMetricAlarm)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/monitoring-2010-08-01/putmetricalarm.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/monitoring-2010-08-01/PutMetricAlarm)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/monitoring-2010-08-01/putmetricalarm.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/PutMetricAlarm)
+- [AWS SDK for C++](../../../goto/sdkforcpp/monitoring-2010-08-01/putmetricalarm.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/monitoring-2010-08-01/PutMetricAlarm)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/monitoring-2010-08-01/putmetricalarm.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/PutMetricAlarm)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/monitoring-2010-08-01/putmetricalarm.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/monitoring-2010-08-01/PutMetricAlarm)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/monitoring-2010-08-01/putmetricalarm.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/monitoring-2010-08-01/PutMetricAlarm)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/monitoring-2010-08-01/putmetricalarm.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/monitoring-2010-08-01/PutMetricAlarm)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/monitoring-2010-08-01/putmetricalarm.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/PutMetricAlarm)
+- [AWS SDK for Python](../../../../services/goto/boto3/monitoring-2010-08-01/putmetricalarm.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/monitoring-2010-08-01/PutMetricAlarm)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/monitoring-2010-08-01/putmetricalarm.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 PutManagedInsightRules
 

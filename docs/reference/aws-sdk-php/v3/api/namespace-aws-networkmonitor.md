@@ -4,15 +4,15 @@ Menu
 
 ## NetworkMonitor
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkmonitor.html\#toc)
+### Table of Contents  [header link](namespace-aws-networkmonitor-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkmonitor.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-networkmonitor-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkmonitor.exception.html)
+[Exception](namespace-aws-networkmonitor-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkmonitor.html\#toc-classes)
+#### Classes  [header link](namespace-aws-networkmonitor-toc-classes.md)
 
-[NetworkMonitorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkMonitor.NetworkMonitorClient.html)This client is used to interact with the **Amazon CloudWatch Network Monitor** service.
+[NetworkMonitorClient](class-aws-networkmonitor-networkmonitorclient.md)This client is used to interact with the **Amazon CloudWatch Network Monitor** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkmonitor.html#toc-classes)
+  - [Classes](namespace-aws-networkmonitor-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkmonitor.html#top)
+[Back To Top](namespace-aws-networkmonitor-top.md)

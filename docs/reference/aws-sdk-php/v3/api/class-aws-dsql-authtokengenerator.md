@@ -7,18 +7,18 @@ Menu
 
 Generates auth tokens to connect to DSQL database clusters.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DSQL.AuthTokenGenerator.html\#toc)
+### Table of Contents  [header link](class-aws-dsql-authtokengenerator-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DSQL.AuthTokenGenerator.html\#toc-methods)
+#### Methods  [header link](class-aws-dsql-authtokengenerator-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DSQL.AuthTokenGenerator.html#method___construct)
-: mixed The constructor takes an instance of Credentials or a CredentialProvider[generateDbConnectAdminAuthToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DSQL.AuthTokenGenerator.html#method_generateDbConnectAdminAuthToken)
-: string [generateDbConnectAuthToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DSQL.AuthTokenGenerator.html#method_generateDbConnectAuthToken)
+[\_\_construct()](class-aws-dsql-authtokengenerator-method-construct.md)
+: mixed The constructor takes an instance of Credentials or a CredentialProvider[generateDbConnectAdminAuthToken()](class-aws-dsql-authtokengenerator-method-generatedbconnectadminauthtoken.md)
+: string [generateDbConnectAuthToken()](class-aws-dsql-authtokengenerator-method-generatedbconnectauthtoken.md)
 : string
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DSQL.AuthTokenGenerator.html\#methods)
+### Methods  [header link](class-aws-dsql-authtokengenerator-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DSQL.AuthTokenGenerator.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-dsql-authtokengenerator-method-construct.md)
 
 The constructor takes an instance of Credentials or a CredentialProvider
 
@@ -31,7 +31,7 @@ The constructor takes an instance of Credentials or a CredentialProvider
 $creds
 : [Credentials](class-aws-credentials-credentials.md) \|callable
 
-#### generateDbConnectAdminAuthToken()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DSQL.AuthTokenGenerator.html\#method_generateDbConnectAdminAuthToken)
+#### generateDbConnectAdminAuthToken()  [header link](class-aws-dsql-authtokengenerator-method-generatedbconnectadminauthtoken.md)
 
 `
     public
@@ -49,7 +49,7 @@ $endpoint
 
 string
 
-#### generateDbConnectAuthToken()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DSQL.AuthTokenGenerator.html\#method_generateDbConnectAuthToken)
+#### generateDbConnectAuthToken()  [header link](class-aws-dsql-authtokengenerator-method-generatedbconnectauthtoken.md)
 
 `
     public
@@ -73,10 +73,10 @@ string
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DSQL.AuthTokenGenerator.html#toc-methods)
+  - [Methods](class-aws-dsql-authtokengenerator-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DSQL.AuthTokenGenerator.html#method___construct)
-  - [generateDbConnectAdminAuthToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DSQL.AuthTokenGenerator.html#method_generateDbConnectAdminAuthToken)
-  - [generateDbConnectAuthToken()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DSQL.AuthTokenGenerator.html#method_generateDbConnectAuthToken)
+  - [\_\_construct()](class-aws-dsql-authtokengenerator-method-construct.md)
+  - [generateDbConnectAdminAuthToken()](class-aws-dsql-authtokengenerator-method-generatedbconnectadminauthtoken.md)
+  - [generateDbConnectAuthToken()](class-aws-dsql-authtokengenerator-method-generatedbconnectauthtoken.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DSQL.AuthTokenGenerator.html#top)
+[Back To Top](class-aws-dsql-authtokengenerator-top.md)

@@ -17,34 +17,34 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2022-01-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html)
+- [**2022-01-01**](api-osis-2022-01-01.md)
 
-  - [CreatePipeline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html#createpipeline)
-  - [CreatePipelineEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html#createpipelineendpoint)
-  - [DeletePipeline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html#deletepipeline)
-  - [DeletePipelineEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html#deletepipelineendpoint)
-  - [DeleteResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html#deleteresourcepolicy)
-  - [GetPipeline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html#getpipeline)
-  - [GetPipelineBlueprint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html#getpipelineblueprint)
-  - [GetPipelineChangeProgress](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html#getpipelinechangeprogress)
-  - [GetResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html#getresourcepolicy)
-  - [ListPipelineBlueprints](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html#listpipelineblueprints)
-  - [ListPipelineEndpointConnections](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html#listpipelineendpointconnections)
-  - [ListPipelineEndpoints](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html#listpipelineendpoints)
-  - [ListPipelines](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html#listpipelines)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html#listtagsforresource)
-  - [PutResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html#putresourcepolicy)
-  - [RevokePipelineEndpointConnections](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html#revokepipelineendpointconnections)
-  - [StartPipeline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html#startpipeline)
-  - [StopPipeline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html#stoppipeline)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html#untagresource)
-  - [UpdatePipeline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html#updatepipeline)
-  - [ValidatePipeline](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-osis-2022-01-01.html#validatepipeline)
+  - [CreatePipeline](api-osis-2022-01-01-createpipeline.md)
+  - [CreatePipelineEndpoint](api-osis-2022-01-01-createpipelineendpoint.md)
+  - [DeletePipeline](api-osis-2022-01-01-deletepipeline.md)
+  - [DeletePipelineEndpoint](api-osis-2022-01-01-deletepipelineendpoint.md)
+  - [DeleteResourcePolicy](api-osis-2022-01-01-deleteresourcepolicy.md)
+  - [GetPipeline](api-osis-2022-01-01-getpipeline.md)
+  - [GetPipelineBlueprint](api-osis-2022-01-01-getpipelineblueprint.md)
+  - [GetPipelineChangeProgress](api-osis-2022-01-01-getpipelinechangeprogress.md)
+  - [GetResourcePolicy](api-osis-2022-01-01-getresourcepolicy.md)
+  - [ListPipelineBlueprints](api-osis-2022-01-01-listpipelineblueprints.md)
+  - [ListPipelineEndpointConnections](api-osis-2022-01-01-listpipelineendpointconnections.md)
+  - [ListPipelineEndpoints](api-osis-2022-01-01-listpipelineendpoints.md)
+  - [ListPipelines](api-osis-2022-01-01-listpipelines.md)
+  - [ListTagsForResource](api-osis-2022-01-01-listtagsforresource.md)
+  - [PutResourcePolicy](api-osis-2022-01-01-putresourcepolicy.md)
+  - [RevokePipelineEndpointConnections](api-osis-2022-01-01-revokepipelineendpointconnections.md)
+  - [StartPipeline](api-osis-2022-01-01-startpipeline.md)
+  - [StopPipeline](api-osis-2022-01-01-stoppipeline.md)
+  - [TagResource](api-osis-2022-01-01-tagresource.md)
+  - [UntagResource](api-osis-2022-01-01-untagresource.md)
+  - [UpdatePipeline](api-osis-2022-01-01-updatepipeline.md)
+  - [ValidatePipeline](api-osis-2022-01-01-validatepipeline.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.OSIS.OSISClient.html\#toc)
+### Table of Contents  [header link](class-aws-osis-osisclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.OSIS.OSISClient.html\#toc-methods)
+#### Methods  [header link](class-aws-osis-osisclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -75,7 +75,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.OSIS.OSISClient.html\#methods)
+### Methods  [header link](class-aws-osis-osisclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -542,7 +542,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.OSIS.OSISClient.html#toc-methods)
+  - [Methods](class-aws-osis-osisclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -569,4 +569,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.OSIS.OSISClient.html#top)
+[Back To Top](class-aws-osis-osisclient-top.md)

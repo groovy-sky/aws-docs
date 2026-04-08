@@ -4,15 +4,15 @@ Menu
 
 ## CostOptimizationHub
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.costoptimizationhub.html\#toc)
+### Table of Contents  [header link](namespace-aws-costoptimizationhub-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.costoptimizationhub.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-costoptimizationhub-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.costoptimizationhub.exception.html)
+[Exception](namespace-aws-costoptimizationhub-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.costoptimizationhub.html\#toc-classes)
+#### Classes  [header link](namespace-aws-costoptimizationhub-toc-classes.md)
 
-[CostOptimizationHubClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CostOptimizationHub.CostOptimizationHubClient.html)This client is used to interact with the **Cost Optimization Hub** service.
+[CostOptimizationHubClient](class-aws-costoptimizationhub-costoptimizationhubclient.md)This client is used to interact with the **Cost Optimization Hub** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.costoptimizationhub.html#toc-classes)
+  - [Classes](namespace-aws-costoptimizationhub-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.costoptimizationhub.html#top)
+[Back To Top](namespace-aws-costoptimizationhub-top.md)

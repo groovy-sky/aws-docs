@@ -4,15 +4,15 @@ Menu
 
 ## AccessAnalyzer
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.accessanalyzer.html\#toc)
+### Table of Contents  [header link](namespace-aws-accessanalyzer-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.accessanalyzer.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-accessanalyzer-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.accessanalyzer.exception.html)
+[Exception](namespace-aws-accessanalyzer-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.accessanalyzer.html\#toc-classes)
+#### Classes  [header link](namespace-aws-accessanalyzer-toc-classes.md)
 
-[AccessAnalyzerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AccessAnalyzer.AccessAnalyzerClient.html)This client is used to interact with the **Access Analyzer** service.
+[AccessAnalyzerClient](class-aws-accessanalyzer-accessanalyzerclient.md)This client is used to interact with the **Access Analyzer** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.accessanalyzer.html#toc-classes)
+  - [Classes](namespace-aws-accessanalyzer-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.accessanalyzer.html#top)
+[Back To Top](namespace-aws-accessanalyzer-top.md)

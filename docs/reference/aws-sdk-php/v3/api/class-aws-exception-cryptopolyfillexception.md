@@ -7,7 +7,7 @@ Menu
 
 Class CryptoPolyfillException
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.CryptoPolyfillException.html\#toc)
+### Table of Contents  [header link](class-aws-exception-cryptopolyfillexception-toc.md)
 
 ×
 
@@ -15,4 +15,4 @@ Class CryptoPolyfillException
 
 - Table Of Contents
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.CryptoPolyfillException.html#top)
+[Back To Top](class-aws-exception-cryptopolyfillexception-top.md)

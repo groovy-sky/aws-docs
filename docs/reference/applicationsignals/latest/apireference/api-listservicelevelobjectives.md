@@ -72,7 +72,7 @@ The request accepts the following data in JSON format.
 
 Identifies the dependency using the `DependencyKeyAttributes` and `DependencyOperationName`.
 
-Type: [DependencyConfig](https://docs.aws.amazon.com/applicationsignals/latest/APIReference/API_DependencyConfig.html) object
+Type: [DependencyConfig](api-dependencyconfig.md) object
 
 Required: No
 
@@ -113,7 +113,7 @@ Required: No
 
 Identifies the metric source to filter SLOs by.
 
-Type: [MetricSource](https://docs.aws.amazon.com/applicationsignals/latest/APIReference/API_MetricSource.html) object
+Type: [MetricSource](api-metricsource.md) object
 
 Required: No
 
@@ -197,11 +197,11 @@ Type: String
 
 An array of structures, where each structure contains information about one SLO.
 
-Type: Array of [ServiceLevelObjectiveSummary](https://docs.aws.amazon.com/applicationsignals/latest/APIReference/API_ServiceLevelObjectiveSummary.html) objects
+Type: Array of [ServiceLevelObjectiveSummary](api-servicelevelobjectivesummary.md) objects
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/applicationsignals/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **ThrottlingException**
 
@@ -219,27 +219,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/application-signals-2024-04-15/ListServiceLevelObjectives)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/application-signals-2024-04-15/listservicelevelobjectives.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/application-signals-2024-04-15/ListServiceLevelObjectives)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/application-signals-2024-04-15/listservicelevelobjectives.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/application-signals-2024-04-15/ListServiceLevelObjectives)
+- [AWS SDK for C++](../../../goto/sdkforcpp/application-signals-2024-04-15/listservicelevelobjectives.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/application-signals-2024-04-15/ListServiceLevelObjectives)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/application-signals-2024-04-15/listservicelevelobjectives.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/application-signals-2024-04-15/ListServiceLevelObjectives)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/application-signals-2024-04-15/listservicelevelobjectives.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/application-signals-2024-04-15/ListServiceLevelObjectives)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/application-signals-2024-04-15/listservicelevelobjectives.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/application-signals-2024-04-15/ListServiceLevelObjectives)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/application-signals-2024-04-15/listservicelevelobjectives.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/application-signals-2024-04-15/ListServiceLevelObjectives)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/application-signals-2024-04-15/listservicelevelobjectives.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/application-signals-2024-04-15/ListServiceLevelObjectives)
+- [AWS SDK for Python](../../../../services/goto/boto3/application-signals-2024-04-15/listservicelevelobjectives.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/application-signals-2024-04-15/ListServiceLevelObjectives)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/application-signals-2024-04-15/listservicelevelobjectives.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ListServiceLevelObjectiveExclusionWindows
 

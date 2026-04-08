@@ -4,11 +4,11 @@ Menu
 
 ## Multipart
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.multipart.html\#toc)
+### Table of Contents  [header link](namespace-aws-multipart-toc.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.multipart.html\#toc-classes)
+#### Classes  [header link](namespace-aws-multipart-toc-classes.md)
 
-[AbstractUploader](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.AbstractUploader.html)[UploadState](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Multipart.UploadState.html)Representation of the multipart upload.
+[AbstractUploader](class-aws-multipart-abstractuploader.md)[UploadState](class-aws-multipart-uploadstate.md)Representation of the multipart upload.
 
 ```
 
@@ -19,6 +19,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.multipart.html#toc-classes)
+  - [Classes](namespace-aws-multipart-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.multipart.html#top)
+[Back To Top](namespace-aws-multipart-top.md)

@@ -4,11 +4,11 @@ Menu
 
 ## Cbor
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cbor.html\#toc)
+### Table of Contents  [header link](namespace-aws-cbor-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cbor.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-cbor-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cbor.exception.html)
+[Exception](namespace-aws-cbor-exception.md)
 
 ```
 
@@ -20,4 +20,4 @@ Menu
 
 - Table Of Contents
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cbor.html#top)
+[Back To Top](namespace-aws-cbor-top.md)

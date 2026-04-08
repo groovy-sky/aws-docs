@@ -17,34 +17,34 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2021-01-30**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html)
+- [**2021-01-30**](api-connectcampaigns-2021-01-30.md)
 
-  - [CreateCampaign](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html#createcampaign)
-  - [DeleteCampaign](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html#deletecampaign)
-  - [DeleteConnectInstanceConfig](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html#deleteconnectinstanceconfig)
-  - [DeleteInstanceOnboardingJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html#deleteinstanceonboardingjob)
-  - [DescribeCampaign](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html#describecampaign)
-  - [GetCampaignState](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html#getcampaignstate)
-  - [GetCampaignStateBatch](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html#getcampaignstatebatch)
-  - [GetConnectInstanceConfig](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html#getconnectinstanceconfig)
-  - [GetInstanceOnboardingJobStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html#getinstanceonboardingjobstatus)
-  - [ListCampaigns](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html#listcampaigns)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html#listtagsforresource)
-  - [PauseCampaign](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html#pausecampaign)
-  - [PutDialRequestBatch](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html#putdialrequestbatch)
-  - [ResumeCampaign](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html#resumecampaign)
-  - [StartCampaign](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html#startcampaign)
-  - [StartInstanceOnboardingJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html#startinstanceonboardingjob)
-  - [StopCampaign](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html#stopcampaign)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html#untagresource)
-  - [UpdateCampaignDialerConfig](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html#updatecampaigndialerconfig)
-  - [UpdateCampaignName](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html#updatecampaignname)
-  - [UpdateCampaignOutboundCallConfig](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connectcampaigns-2021-01-30.html#updatecampaignoutboundcallconfig)
+  - [CreateCampaign](api-connectcampaigns-2021-01-30-createcampaign.md)
+  - [DeleteCampaign](api-connectcampaigns-2021-01-30-deletecampaign.md)
+  - [DeleteConnectInstanceConfig](api-connectcampaigns-2021-01-30-deleteconnectinstanceconfig.md)
+  - [DeleteInstanceOnboardingJob](api-connectcampaigns-2021-01-30-deleteinstanceonboardingjob.md)
+  - [DescribeCampaign](api-connectcampaigns-2021-01-30-describecampaign.md)
+  - [GetCampaignState](api-connectcampaigns-2021-01-30-getcampaignstate.md)
+  - [GetCampaignStateBatch](api-connectcampaigns-2021-01-30-getcampaignstatebatch.md)
+  - [GetConnectInstanceConfig](api-connectcampaigns-2021-01-30-getconnectinstanceconfig.md)
+  - [GetInstanceOnboardingJobStatus](api-connectcampaigns-2021-01-30-getinstanceonboardingjobstatus.md)
+  - [ListCampaigns](api-connectcampaigns-2021-01-30-listcampaigns.md)
+  - [ListTagsForResource](api-connectcampaigns-2021-01-30-listtagsforresource.md)
+  - [PauseCampaign](api-connectcampaigns-2021-01-30-pausecampaign.md)
+  - [PutDialRequestBatch](api-connectcampaigns-2021-01-30-putdialrequestbatch.md)
+  - [ResumeCampaign](api-connectcampaigns-2021-01-30-resumecampaign.md)
+  - [StartCampaign](api-connectcampaigns-2021-01-30-startcampaign.md)
+  - [StartInstanceOnboardingJob](api-connectcampaigns-2021-01-30-startinstanceonboardingjob.md)
+  - [StopCampaign](api-connectcampaigns-2021-01-30-stopcampaign.md)
+  - [TagResource](api-connectcampaigns-2021-01-30-tagresource.md)
+  - [UntagResource](api-connectcampaigns-2021-01-30-untagresource.md)
+  - [UpdateCampaignDialerConfig](api-connectcampaigns-2021-01-30-updatecampaigndialerconfig.md)
+  - [UpdateCampaignName](api-connectcampaigns-2021-01-30-updatecampaignname.md)
+  - [UpdateCampaignOutboundCallConfig](api-connectcampaigns-2021-01-30-updatecampaignoutboundcallconfig.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectCampaignService.ConnectCampaignServiceClient.html\#toc)
+### Table of Contents  [header link](class-aws-connectcampaignservice-connectcampaignserviceclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectCampaignService.ConnectCampaignServiceClient.html\#toc-methods)
+#### Methods  [header link](class-aws-connectcampaignservice-connectcampaignserviceclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -75,7 +75,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectCampaignService.ConnectCampaignServiceClient.html\#methods)
+### Methods  [header link](class-aws-connectcampaignservice-connectcampaignserviceclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -542,7 +542,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectCampaignService.ConnectCampaignServiceClient.html#toc-methods)
+  - [Methods](class-aws-connectcampaignservice-connectcampaignserviceclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -569,4 +569,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectCampaignService.ConnectCampaignServiceClient.html#top)
+[Back To Top](class-aws-connectcampaignservice-connectcampaignserviceclient-top.md)

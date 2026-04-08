@@ -66,7 +66,7 @@ Required: No
 
 This field can contain either a Metrics Insights query, or a metric math expression to
 be performed on the returned data. For more information about Metrics Insights queries,
-see [Metrics Insights query components and syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch-metrics-insights-querylanguage) in the _Amazon_
+see [Metrics Insights query components and syntax](../../../../services/amazoncloudwatch/latest/monitoring/cloudwatch-metrics-insights-querylanguage.md) in the _Amazon_
 _CloudWatch User Guide_.
 
 A math expression can use the `Id` of the other metrics or queries to refer
@@ -93,7 +93,7 @@ omitted, CloudWatch generates a default.
 
 You can put dynamic expressions into a label, so that it is more descriptive. For more
 information, see [Using Dynamic\
-Labels](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/graph-dynamic-labels.html).
+Labels](../../../../services/amazoncloudwatch/latest/monitoring/graph-dynamic-labels.md).
 
 Type: String
 
@@ -108,7 +108,7 @@ expression on returned data.
 Within one MetricDataQuery object, you must specify either `Expression` or
 `MetricStat` but not both.
 
-Type: [MetricStat](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricStat.html) object
+Type: [MetricStat](api-metricstat.md) object
 
 Required: No
 
@@ -148,13 +148,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/MetricDataQuery)
+- [AWS SDK for C++](../../../goto/sdkforcpp/monitoring-2010-08-01/metricdataquery.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/MetricDataQuery)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/monitoring-2010-08-01/metricdataquery.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/monitoring-2010-08-01/MetricDataQuery)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/monitoring-2010-08-01/metricdataquery.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 MetricCharacteristics
 

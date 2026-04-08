@@ -17,14 +17,14 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-08-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rds-data-2018-08-01.html)
+- [**2018-08-01**](api-rds-data-2018-08-01.md)
 
-  - [BatchExecuteStatement](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rds-data-2018-08-01.html#batchexecutestatement)
-  - [BeginTransaction](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rds-data-2018-08-01.html#begintransaction)
-  - [CommitTransaction](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rds-data-2018-08-01.html#committransaction)
-  - [ExecuteSql](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rds-data-2018-08-01.html#executesql)
-  - [ExecuteStatement](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rds-data-2018-08-01.html#executestatement)
-  - [RollbackTransaction](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rds-data-2018-08-01.html#rollbacktransaction)
+  - [BatchExecuteStatement](api-rds-data-2018-08-01-batchexecutestatement.md)
+  - [BeginTransaction](api-rds-data-2018-08-01-begintransaction.md)
+  - [CommitTransaction](api-rds-data-2018-08-01-committransaction.md)
+  - [ExecuteSql](api-rds-data-2018-08-01-executesql.md)
+  - [ExecuteStatement](api-rds-data-2018-08-01-executestatement.md)
+  - [RollbackTransaction](api-rds-data-2018-08-01-rollbacktransaction.md)
 
 ## Examples
 
@@ -32,11 +32,11 @@ specific API operation can be done using magic methods (e.g.,
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for PHP with AWS RDS DataService.
 
-- [See examples on AWS Docs](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/php_aurora_code_examples.html)
+- [See examples on AWS Docs](../../../sdk-for-php/v3/developer-guide/php-aurora-code-examples.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RDSDataService.RDSDataServiceClient.html\#toc)
+### Table of Contents  [header link](class-aws-rdsdataservice-rdsdataserviceclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RDSDataService.RDSDataServiceClient.html\#toc-methods)
+#### Methods  [header link](class-aws-rdsdataservice-rdsdataserviceclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -67,7 +67,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RDSDataService.RDSDataServiceClient.html\#methods)
+### Methods  [header link](class-aws-rdsdataservice-rdsdataserviceclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -534,7 +534,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RDSDataService.RDSDataServiceClient.html#toc-methods)
+  - [Methods](class-aws-rdsdataservice-rdsdataserviceclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -561,4 +561,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.RDSDataService.RDSDataServiceClient.html#top)
+[Back To Top](class-aws-rdsdataservice-rdsdataserviceclient-top.md)

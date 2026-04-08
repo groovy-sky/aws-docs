@@ -1,49 +1,49 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Psr7](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.psr7.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Psr7](namespace-guzzlehttp-psr7.md)
 
-## LimitStream        in package    - [Aws](package-aws.md)       implements  [StreamInterface](class-psr-http-message-streaminterface.md)  Uses  [StreamDecoratorTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html)
+## LimitStream        in package    - [Aws](package-aws.md)       implements  [StreamInterface](class-psr-http-message-streaminterface.md)  Uses  [StreamDecoratorTrait](class-guzzlehttp-psr7-streamdecoratortrait.md)
 
 FinalYes
 
 Decorator used to return only a subset of a stream.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-psr7-limitstream-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html\#toc-interfaces)
+#### Interfaces  [header link](class-guzzlehttp-psr7-limitstream-toc-interfaces.md)
 
 [StreamInterface](class-psr-http-message-streaminterface.md)Describes a data stream.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-psr7-limitstream-toc-methods.md)
 
-[\_\_call()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method___call)
-: mixed Allow decorators to implement custom methods[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html#method___construct)
-: mixed [\_\_get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method___get)
+[\_\_call()](class-guzzlehttp-psr7-streamdecoratortrait-method-call.md)
+: mixed Allow decorators to implement custom methods[\_\_construct()](class-guzzlehttp-psr7-limitstream-method-construct.md)
+: mixed [\_\_get()](class-guzzlehttp-psr7-streamdecoratortrait-method-get.md)
 : [StreamInterface](class-psr-http-message-streaminterface.md)Magic method used to create a new stream if streams are not added in
-the constructor of a decorator (e.g., LazyOpenStream).[\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method___toString)
-: string [close()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_close)
-: void [detach()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_detach)
-: mixed [eof()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html#method_eof)
-: bool Returns true if the stream is at the end of the stream.[getContents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_getContents)
-: string [getMetadata()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_getMetadata)
-: mixed [getSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html#method_getSize)
-: int\|null Returns the size of the limited subset of data[isReadable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_isReadable)
-: bool [isSeekable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_isSeekable)
-: bool [isWritable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_isWritable)
-: bool [read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html#method_read)
-: string Read data from the stream.[rewind()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_rewind)
-: void [seek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html#method_seek)
-: void Allow for a bounded seek on the read limited stream[setLimit()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html#method_setLimit)
+the constructor of a decorator (e.g., LazyOpenStream).[\_\_toString()](class-guzzlehttp-psr7-streamdecoratortrait-method-tostring.md)
+: string [close()](class-guzzlehttp-psr7-streamdecoratortrait-method-close.md)
+: void [detach()](class-guzzlehttp-psr7-streamdecoratortrait-method-detach.md)
+: mixed [eof()](class-guzzlehttp-psr7-limitstream-method-eof.md)
+: bool Returns true if the stream is at the end of the stream.[getContents()](class-guzzlehttp-psr7-streamdecoratortrait-method-getcontents.md)
+: string [getMetadata()](class-guzzlehttp-psr7-streamdecoratortrait-method-getmetadata.md)
+: mixed [getSize()](class-guzzlehttp-psr7-limitstream-method-getsize.md)
+: int\|null Returns the size of the limited subset of data[isReadable()](class-guzzlehttp-psr7-streamdecoratortrait-method-isreadable.md)
+: bool [isSeekable()](class-guzzlehttp-psr7-streamdecoratortrait-method-isseekable.md)
+: bool [isWritable()](class-guzzlehttp-psr7-streamdecoratortrait-method-iswritable.md)
+: bool [read()](class-guzzlehttp-psr7-limitstream-method-read.md)
+: string Read data from the stream.[rewind()](class-guzzlehttp-psr7-streamdecoratortrait-method-rewind.md)
+: void [seek()](class-guzzlehttp-psr7-limitstream-method-seek.md)
+: void Allow for a bounded seek on the read limited stream[setLimit()](class-guzzlehttp-psr7-limitstream-method-setlimit.md)
 : void Set the limit of bytes that the decorator allows to be read from the
-stream.[setOffset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html#method_setOffset)
-: void Set the offset to start limiting from[tell()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html#method_tell)
-: int Give a relative tell()[write()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_write)
+stream.[setOffset()](class-guzzlehttp-psr7-limitstream-method-setoffset.md)
+: void Set the offset to start limiting from[tell()](class-guzzlehttp-psr7-limitstream-method-tell.md)
+: int Give a relative tell()[write()](class-guzzlehttp-psr7-streamdecoratortrait-method-write.md)
 : int
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html\#methods)
+### Methods  [header link](class-guzzlehttp-psr7-limitstream-methods.md)
 
-#### \_\_call()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method___call)
+#### \_\_call()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-call.md)
 
 Allow decorators to implement custom methods
 
@@ -57,7 +57,7 @@ $method
 : string$args
 : array<string\|int, mixed>
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html\#method___construct)
+#### \_\_construct()  [header link](class-guzzlehttp-psr7-limitstream-method-construct.md)
 
 `
     public
@@ -84,7 +84,7 @@ $offset
 Position to seek to before reading (only
 works on seekable streams).
 
-#### \_\_get()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method___get)
+#### \_\_get()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-get.md)
 
 Magic method used to create a new stream if streams are not added in
 the constructor of a decorator (e.g., LazyOpenStream).
@@ -102,7 +102,7 @@ $name
 
 [StreamInterface](class-psr-http-message-streaminterface.md)
 
-#### \_\_toString()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method___toString)
+#### \_\_toString()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-tostring.md)
 
 `
     public
@@ -112,19 +112,19 @@ $name
 
 string
 
-#### close()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_close)
+#### close()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-close.md)
 
 `
     public
                     close() : void`
 
-#### detach()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_detach)
+#### detach()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-detach.md)
 
 `
     public
                     detach() : mixed`
 
-#### eof()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html\#method_eof)
+#### eof()  [header link](class-guzzlehttp-psr7-limitstream-method-eof.md)
 
 Returns true if the stream is at the end of the stream.
 
@@ -136,7 +136,7 @@ Returns true if the stream is at the end of the stream.
 
 bool
 
-#### getContents()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_getContents)
+#### getContents()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-getcontents.md)
 
 `
     public
@@ -146,7 +146,7 @@ bool
 
 string
 
-#### getMetadata()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_getMetadata)
+#### getMetadata()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-getmetadata.md)
 
 `
     public
@@ -158,7 +158,7 @@ $key
 : mixed
 = null
 
-#### getSize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html\#method_getSize)
+#### getSize()  [header link](class-guzzlehttp-psr7-limitstream-method-getsize.md)
 
 Returns the size of the limited subset of data
 
@@ -173,7 +173,7 @@ int\|null
 
 Returns the size in bytes if known, or null if unknown.
 
-#### isReadable()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_isReadable)
+#### isReadable()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-isreadable.md)
 
 `
     public
@@ -183,7 +183,7 @@ Returns the size in bytes if known, or null if unknown.
 
 bool
 
-#### isSeekable()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_isSeekable)
+#### isSeekable()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-isseekable.md)
 
 `
     public
@@ -193,7 +193,7 @@ bool
 
 bool
 
-#### isWritable()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_isWritable)
+#### isWritable()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-iswritable.md)
 
 `
     public
@@ -203,7 +203,7 @@ bool
 
 bool
 
-#### read()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html\#method_read)
+#### read()  [header link](class-guzzlehttp-psr7-limitstream-method-read.md)
 
 Read data from the stream.
 
@@ -228,13 +228,13 @@ string
 Returns the data read from the stream, or an empty string
 if no bytes are available.
 
-#### rewind()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_rewind)
+#### rewind()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-rewind.md)
 
 `
     public
                     rewind() : void`
 
-#### seek()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html\#method_seek)
+#### seek()  [header link](class-guzzlehttp-psr7-limitstream-method-seek.md)
 
 Allow for a bounded seek on the read limited stream
 
@@ -259,7 +259,7 @@ PHP $whence values for `fseek()`. SEEK\_SET: Set position equal to
 offset bytes SEEK\_CUR: Set position to current location plus offset
 SEEK\_END: Set position to end-of-stream plus offset.
 
-#### setLimit()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html\#method_setLimit)
+#### setLimit()  [header link](class-guzzlehttp-psr7-limitstream-method-setlimit.md)
 
 Set the limit of bytes that the decorator allows to be read from the
 stream.
@@ -276,7 +276,7 @@ $limit
 Number of bytes to allow to be read from the stream.
 Use -1 for no limit.
 
-#### setOffset()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html\#method_setOffset)
+#### setOffset()  [header link](class-guzzlehttp-psr7-limitstream-method-setoffset.md)
 
 Set the offset to start limiting from
 
@@ -291,13 +291,13 @@ $offset
 
 Offset to seek to and begin byte limiting from
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html\#method_setOffset\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-limitstream-method-setoffset-tags.md)
 
 throwsRuntimeException
 
 if the stream cannot be seeked.
 
-#### tell()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html\#method_tell)
+#### tell()  [header link](class-guzzlehttp-psr7-limitstream-method-tell.md)
 
 Give a relative tell()
 
@@ -312,7 +312,7 @@ int
 
 Position of the file pointer
 
-#### write()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html\#method_write)
+#### write()  [header link](class-guzzlehttp-psr7-streamdecoratortrait-method-write.md)
 
 `
     public
@@ -333,27 +333,27 @@ int
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html#toc-methods)
+  - [Methods](class-guzzlehttp-psr7-limitstream-toc-methods.md)
 - Methods
-  - [\_\_call()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method___call)
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html#method___construct)
-  - [\_\_get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method___get)
-  - [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method___toString)
-  - [close()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_close)
-  - [detach()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_detach)
-  - [eof()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html#method_eof)
-  - [getContents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_getContents)
-  - [getMetadata()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_getMetadata)
-  - [getSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html#method_getSize)
-  - [isReadable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_isReadable)
-  - [isSeekable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_isSeekable)
-  - [isWritable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_isWritable)
-  - [read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html#method_read)
-  - [rewind()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_rewind)
-  - [seek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html#method_seek)
-  - [setLimit()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html#method_setLimit)
-  - [setOffset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html#method_setOffset)
-  - [tell()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html#method_tell)
-  - [write()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.StreamDecoratorTrait.html#method_write)
+  - [\_\_call()](class-guzzlehttp-psr7-streamdecoratortrait-method-call.md)
+  - [\_\_construct()](class-guzzlehttp-psr7-limitstream-method-construct.md)
+  - [\_\_get()](class-guzzlehttp-psr7-streamdecoratortrait-method-get.md)
+  - [\_\_toString()](class-guzzlehttp-psr7-streamdecoratortrait-method-tostring.md)
+  - [close()](class-guzzlehttp-psr7-streamdecoratortrait-method-close.md)
+  - [detach()](class-guzzlehttp-psr7-streamdecoratortrait-method-detach.md)
+  - [eof()](class-guzzlehttp-psr7-limitstream-method-eof.md)
+  - [getContents()](class-guzzlehttp-psr7-streamdecoratortrait-method-getcontents.md)
+  - [getMetadata()](class-guzzlehttp-psr7-streamdecoratortrait-method-getmetadata.md)
+  - [getSize()](class-guzzlehttp-psr7-limitstream-method-getsize.md)
+  - [isReadable()](class-guzzlehttp-psr7-streamdecoratortrait-method-isreadable.md)
+  - [isSeekable()](class-guzzlehttp-psr7-streamdecoratortrait-method-isseekable.md)
+  - [isWritable()](class-guzzlehttp-psr7-streamdecoratortrait-method-iswritable.md)
+  - [read()](class-guzzlehttp-psr7-limitstream-method-read.md)
+  - [rewind()](class-guzzlehttp-psr7-streamdecoratortrait-method-rewind.md)
+  - [seek()](class-guzzlehttp-psr7-limitstream-method-seek.md)
+  - [setLimit()](class-guzzlehttp-psr7-limitstream-method-setlimit.md)
+  - [setOffset()](class-guzzlehttp-psr7-limitstream-method-setoffset.md)
+  - [tell()](class-guzzlehttp-psr7-limitstream-method-tell.md)
+  - [write()](class-guzzlehttp-psr7-streamdecoratortrait-method-write.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.LimitStream.html#top)
+[Back To Top](class-guzzlehttp-psr7-limitstream-top.md)

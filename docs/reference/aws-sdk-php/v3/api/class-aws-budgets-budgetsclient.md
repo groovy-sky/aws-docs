@@ -17,38 +17,38 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2016-10-20**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html)
+- [**2016-10-20**](api-budgets-2016-10-20.md)
 
-  - [CreateBudget](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#createbudget)
-  - [CreateBudgetAction](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#createbudgetaction)
-  - [CreateNotification](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#createnotification)
-  - [CreateSubscriber](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#createsubscriber)
-  - [DeleteBudget](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#deletebudget)
-  - [DeleteBudgetAction](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#deletebudgetaction)
-  - [DeleteNotification](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#deletenotification)
-  - [DeleteSubscriber](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#deletesubscriber)
-  - [DescribeBudget](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#describebudget)
-  - [DescribeBudgetAction](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#describebudgetaction)
-  - [DescribeBudgetActionHistories](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#describebudgetactionhistories)
-  - [DescribeBudgetActionsForAccount](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#describebudgetactionsforaccount)
-  - [DescribeBudgetActionsForBudget](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#describebudgetactionsforbudget)
-  - [DescribeBudgetNotificationsForAccount](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#describebudgetnotificationsforaccount)
-  - [DescribeBudgetPerformanceHistory](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#describebudgetperformancehistory)
-  - [DescribeBudgets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#describebudgets)
-  - [DescribeNotificationsForBudget](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#describenotificationsforbudget)
-  - [DescribeSubscribersForNotification](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#describesubscribersfornotification)
-  - [ExecuteBudgetAction](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#executebudgetaction)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#listtagsforresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#untagresource)
-  - [UpdateBudget](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#updatebudget)
-  - [UpdateBudgetAction](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#updatebudgetaction)
-  - [UpdateNotification](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#updatenotification)
-  - [UpdateSubscriber](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-budgets-2016-10-20.html#updatesubscriber)
+  - [CreateBudget](api-budgets-2016-10-20-createbudget.md)
+  - [CreateBudgetAction](api-budgets-2016-10-20-createbudgetaction.md)
+  - [CreateNotification](api-budgets-2016-10-20-createnotification.md)
+  - [CreateSubscriber](api-budgets-2016-10-20-createsubscriber.md)
+  - [DeleteBudget](api-budgets-2016-10-20-deletebudget.md)
+  - [DeleteBudgetAction](api-budgets-2016-10-20-deletebudgetaction.md)
+  - [DeleteNotification](api-budgets-2016-10-20-deletenotification.md)
+  - [DeleteSubscriber](api-budgets-2016-10-20-deletesubscriber.md)
+  - [DescribeBudget](api-budgets-2016-10-20-describebudget.md)
+  - [DescribeBudgetAction](api-budgets-2016-10-20-describebudgetaction.md)
+  - [DescribeBudgetActionHistories](api-budgets-2016-10-20-describebudgetactionhistories.md)
+  - [DescribeBudgetActionsForAccount](api-budgets-2016-10-20-describebudgetactionsforaccount.md)
+  - [DescribeBudgetActionsForBudget](api-budgets-2016-10-20-describebudgetactionsforbudget.md)
+  - [DescribeBudgetNotificationsForAccount](api-budgets-2016-10-20-describebudgetnotificationsforaccount.md)
+  - [DescribeBudgetPerformanceHistory](api-budgets-2016-10-20-describebudgetperformancehistory.md)
+  - [DescribeBudgets](api-budgets-2016-10-20-describebudgets.md)
+  - [DescribeNotificationsForBudget](api-budgets-2016-10-20-describenotificationsforbudget.md)
+  - [DescribeSubscribersForNotification](api-budgets-2016-10-20-describesubscribersfornotification.md)
+  - [ExecuteBudgetAction](api-budgets-2016-10-20-executebudgetaction.md)
+  - [ListTagsForResource](api-budgets-2016-10-20-listtagsforresource.md)
+  - [TagResource](api-budgets-2016-10-20-tagresource.md)
+  - [UntagResource](api-budgets-2016-10-20-untagresource.md)
+  - [UpdateBudget](api-budgets-2016-10-20-updatebudget.md)
+  - [UpdateBudgetAction](api-budgets-2016-10-20-updatebudgetaction.md)
+  - [UpdateNotification](api-budgets-2016-10-20-updatenotification.md)
+  - [UpdateSubscriber](api-budgets-2016-10-20-updatesubscriber.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Budgets.BudgetsClient.html\#toc)
+### Table of Contents  [header link](class-aws-budgets-budgetsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Budgets.BudgetsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-budgets-budgetsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -79,7 +79,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Budgets.BudgetsClient.html\#methods)
+### Methods  [header link](class-aws-budgets-budgetsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -546,7 +546,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Budgets.BudgetsClient.html#toc-methods)
+  - [Methods](class-aws-budgets-budgetsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -573,4 +573,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Budgets.BudgetsClient.html#top)
+[Back To Top](class-aws-budgets-budgetsclient-top.md)

@@ -7,17 +7,17 @@ Menu
 
 Provides endpoints based on an endpoint pattern configuration array.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PatternEndpointProvider.html\#toc)
+### Table of Contents  [header link](class-aws-endpoint-patternendpointprovider-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PatternEndpointProvider.html\#toc-methods)
+#### Methods  [header link](class-aws-endpoint-patternendpointprovider-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PatternEndpointProvider.html#method___construct)
-: mixed [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PatternEndpointProvider.html#method___invoke)
+[\_\_construct()](class-aws-endpoint-patternendpointprovider-method-construct.md)
+: mixed [\_\_invoke()](class-aws-endpoint-patternendpointprovider-method-invoke.md)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PatternEndpointProvider.html\#methods)
+### Methods  [header link](class-aws-endpoint-patternendpointprovider-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PatternEndpointProvider.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-endpoint-patternendpointprovider-method-construct.md)
 
 `
     public
@@ -31,7 +31,7 @@ $patterns
 Hash of endpoint patterns mapping to endpoint
 configurations.
 
-#### \_\_invoke()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PatternEndpointProvider.html\#method___invoke)
+#### \_\_invoke()  [header link](class-aws-endpoint-patternendpointprovider-method-invoke.md)
 
 `
     public
@@ -49,9 +49,9 @@ $args
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PatternEndpointProvider.html#toc-methods)
+  - [Methods](class-aws-endpoint-patternendpointprovider-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PatternEndpointProvider.html#method___construct)
-  - [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PatternEndpointProvider.html#method___invoke)
+  - [\_\_construct()](class-aws-endpoint-patternendpointprovider-method-construct.md)
+  - [\_\_invoke()](class-aws-endpoint-patternendpointprovider-method-invoke.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Endpoint.PatternEndpointProvider.html#top)
+[Back To Top](class-aws-endpoint-patternendpointprovider-top.md)

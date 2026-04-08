@@ -2,9 +2,9 @@
 
 Runs the SQL query statements contained in the `Query`. Requires you to
 have access to the workgroup in which the query ran. Running queries against an external
-catalog requires [GetDataCatalog](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetDataCatalog.html) permission to the catalog. For code
+catalog requires [GetDataCatalog](api-getdatacatalog.md) permission to the catalog. For code
 samples using the AWS SDK for Java, see [Examples and\
-Code Samples](https://docs.aws.amazon.com/athena/latest/ug/code-samples.html) in the _Amazon Athena User_
+Code Samples](../../../../services/athena/latest/ug/code-samples.md) in the _Amazon Athena User_
 _Guide_.
 
 ## Request Syntax
@@ -117,7 +117,7 @@ Required: No
 
 The database within which the query executes.
 
-Type: [QueryExecutionContext](https://docs.aws.amazon.com/athena/latest/APIReference/API_QueryExecutionContext.html) object
+Type: [QueryExecutionContext](api-queryexecutioncontext.md) object
 
 Required: No
 
@@ -146,7 +146,7 @@ Required: No
 
 Specifies the query result reuse behavior for the query.
 
-Type: [ResultReuseConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_ResultReuseConfiguration.html) object
+Type: [ResultReuseConfiguration](api-resultreuseconfiguration.md) object
 
 Required: No
 
@@ -223,27 +223,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/athena-2017-05-18/StartQueryExecution)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/athena-2017-05-18/startqueryexecution.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/athena-2017-05-18/StartQueryExecution)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/athena-2017-05-18/startqueryexecution.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/StartQueryExecution)
+- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/startqueryexecution.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/athena-2017-05-18/StartQueryExecution)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/athena-2017-05-18/startqueryexecution.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/StartQueryExecution)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/startqueryexecution.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/athena-2017-05-18/StartQueryExecution)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/athena-2017-05-18/startqueryexecution.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/athena-2017-05-18/StartQueryExecution)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/athena-2017-05-18/startqueryexecution.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/athena-2017-05-18/StartQueryExecution)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/athena-2017-05-18/startqueryexecution.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/athena-2017-05-18/StartQueryExecution)
+- [AWS SDK for Python](../../../../services/goto/boto3/athena-2017-05-18/startqueryexecution.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/StartQueryExecution)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/startqueryexecution.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 StartCalculationExecution
 

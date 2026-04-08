@@ -35,7 +35,7 @@ The owner of a private hosted zone that the specified VPC is associated with. Th
 owner can be either an AWS account or an AWS
 service.
 
-Type: [HostedZoneOwner](https://docs.aws.amazon.com/Route53/latest/APIReference/API_HostedZoneOwner.html) object
+Type: [HostedZoneOwner](api-hostedzoneowner.md) object
 
 Required: Yes
 
@@ -43,13 +43,13 @@ Required: Yes
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53-2013-04-01/HostedZoneSummary)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53-2013-04-01/hostedzonesummary.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53-2013-04-01/HostedZoneSummary)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53-2013-04-01/hostedzonesummary.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53-2013-04-01/HostedZoneSummary)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53-2013-04-01/hostedzonesummary.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 HostedZoneOwner
 

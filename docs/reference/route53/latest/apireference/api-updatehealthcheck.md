@@ -71,7 +71,7 @@ A complex type that identifies the CloudWatch alarm that you want Amazon Route 5
 health checkers to use to determine whether the specified health check is
 healthy.
 
-Type: [AlarmIdentifier](https://docs.aws.amazon.com/Route53/latest/APIReference/API_AlarmIdentifier.html) object
+Type: [AlarmIdentifier](api-alarmidentifier.md) object
 
 Required: No
 
@@ -107,7 +107,7 @@ After you disable a health check, Route 53 considers the status of the health ch
 always be healthy. If you configured DNS failover, Route 53 continues to route traffic
 to the corresponding resources. Additionally, in disabled state, you can also invert the
 status of the health check to route traffic differently. For more information, see
-[Inverted](https://docs.aws.amazon.com/Route53/latest/APIReference/API_UpdateHealthCheck.html#Route53-UpdateHealthCheck-request-Inverted).
+[Inverted](api-updatehealthcheck-route53-updatehealthcheck-request-inverted.md).
 
 Charges for a health check still apply when the health check is disabled. For more
 information, see [Amazon Route 53\
@@ -357,7 +357,7 @@ Addresses (EIP)](../../../../services/ec2/latest/userguide/elastic-ip-addresses-
 _Instances_
 
 - Windows: [Elastic IP\
-Addresses (EIP)](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/elastic-ip-addresses-eip.html) in the _Amazon EC2 User Guide for Windows_
+Addresses (EIP)](../../../../services/ec2/latest/windowsguide/elastic-ip-addresses-eip.md) in the _Amazon EC2 User Guide for Windows_
 _Instances_
 
 ###### Note
@@ -366,7 +366,7 @@ If a health check already has a value for `IPAddress`, you can change
 the value. However, you can't update an existing health check to add or remove the
 value of `IPAddress`.
 
-For more information, see [FullyQualifiedDomainName](https://docs.aws.amazon.com/Route53/latest/APIReference/API_UpdateHealthCheck.html#Route53-UpdateHealthCheck-request-FullyQualifiedDomainName).
+For more information, see [FullyQualifiedDomainName](api-updatehealthcheck-route53-updatehealthcheck-request-fullyqualifieddomainname.md).
 
 Constraints: Route 53 can't check the health of endpoints for which the IP address is
 in local, private, non-routable, or multicast ranges. For more information about IP
@@ -427,13 +427,13 @@ A complex type that contains one `ResettableElementName` element for each
 element that you want to reset to the default value. Valid values for
 `ResettableElementName` include the following:
 
-- `ChildHealthChecks`: Amazon Route 53 resets [ChildHealthChecks](https://docs.aws.amazon.com/Route53/latest/APIReference/API_HealthCheckConfig.html#Route53-Type-HealthCheckConfig-ChildHealthChecks) to null.
+- `ChildHealthChecks`: Amazon Route 53 resets [ChildHealthChecks](api-healthcheckconfig-route53-type-healthcheckconfig-childhealthchecks.md) to null.
 
-- `FullyQualifiedDomainName`: Route 53 resets [FullyQualifiedDomainName](https://docs.aws.amazon.com/Route53/latest/APIReference/API_UpdateHealthCheck.html#Route53-UpdateHealthCheck-request-FullyQualifiedDomainName). to null.
+- `FullyQualifiedDomainName`: Route 53 resets [FullyQualifiedDomainName](api-updatehealthcheck-route53-updatehealthcheck-request-fullyqualifieddomainname.md). to null.
 
-- `Regions`: Route 53 resets the [Regions](https://docs.aws.amazon.com/Route53/latest/APIReference/API_HealthCheckConfig.html#Route53-Type-HealthCheckConfig-Regions) list to the default set of regions.
+- `Regions`: Route 53 resets the [Regions](api-healthcheckconfig-route53-type-healthcheckconfig-regions.md) list to the default set of regions.
 
-- `ResourcePath`: Route 53 resets [ResourcePath](https://docs.aws.amazon.com/Route53/latest/APIReference/API_HealthCheckConfig.html#Route53-Type-HealthCheckConfig-ResourcePath) to null.
+- `ResourcePath`: Route 53 resets [ResourcePath](api-healthcheckconfig-route53-type-healthcheckconfig-resourcepath.md) to null.
 
 Type: Array of strings
 
@@ -553,7 +553,7 @@ Required: Yes
 A complex type that contains the response to an `UpdateHealthCheck`
 request.
 
-Type: [HealthCheck](https://docs.aws.amazon.com/Route53/latest/APIReference/API_HealthCheck.html) object
+Type: [HealthCheck](api-healthcheck.md) object
 
 ## Errors
 
@@ -749,27 +749,27 @@ HTTP/1.1 201 Created
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/route53-2013-04-01/UpdateHealthCheck)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53-2013-04-01/updatehealthcheck.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/route53-2013-04-01/UpdateHealthCheck)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53-2013-04-01/updatehealthcheck.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53-2013-04-01/UpdateHealthCheck)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53-2013-04-01/updatehealthcheck.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/route53-2013-04-01/UpdateHealthCheck)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53-2013-04-01/updatehealthcheck.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53-2013-04-01/UpdateHealthCheck)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53-2013-04-01/updatehealthcheck.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/route53-2013-04-01/UpdateHealthCheck)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53-2013-04-01/updatehealthcheck.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/route53-2013-04-01/UpdateHealthCheck)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53-2013-04-01/updatehealthcheck.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/route53-2013-04-01/UpdateHealthCheck)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53-2013-04-01/updatehealthcheck.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/route53-2013-04-01/UpdateHealthCheck)
+- [AWS SDK for Python](../../../../services/goto/boto3/route53-2013-04-01/updatehealthcheck.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53-2013-04-01/UpdateHealthCheck)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53-2013-04-01/updatehealthcheck.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 TestDNSAnswer
 

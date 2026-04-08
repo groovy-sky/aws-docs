@@ -49,7 +49,7 @@ Creates a stack to start streaming applications to users. A stack consists of an
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/appstream2/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -57,7 +57,7 @@ The request accepts the following data in JSON format.
 
 The list of interface VPC endpoint (interface endpoint) objects. Users of the stack can connect to WorkSpaces Applications only through the specified endpoints.
 
-Type: Array of [AccessEndpoint](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_AccessEndpoint.html) objects
+Type: Array of [AccessEndpoint](api-accessendpoint.md) objects
 
 Array Members: Minimum number of 1 item. Maximum number of 4 items.
 
@@ -67,7 +67,7 @@ Required: No
 
 The persistent application settings for users of a stack. When these settings are enabled, changes that users make to applications and Windows settings are automatically saved after each session and applied to the next session.
 
-Type: [ApplicationSettings](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_ApplicationSettings.html) object
+Type: [ApplicationSettings](api-applicationsettings.md) object
 
 Required: No
 
@@ -139,7 +139,7 @@ Required: No
 
 The storage connectors to enable.
 
-Type: Array of [StorageConnector](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_StorageConnector.html) objects
+Type: Array of [StorageConnector](api-storageconnector.md) objects
 
 Required: No
 
@@ -147,7 +147,7 @@ Required: No
 
 The streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client.
 
-Type: [StreamingExperienceSettings](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_StreamingExperienceSettings.html) object
+Type: [StreamingExperienceSettings](api-streamingexperiencesettings.md) object
 
 Required: No
 
@@ -161,7 +161,7 @@ Generally allowed characters are: letters, numbers, and spaces representable in 
 
 \_ . : / = + \ - @
 
-For more information about tags, see [Tagging Your Resources](https://docs.aws.amazon.com/appstream2/latest/developerguide/tagging-basic.html) in the _Amazon WorkSpaces Applications Administration Guide_.
+For more information about tags, see [Tagging Your Resources](../../../../services/appstream2/latest/developerguide/tagging-basic.md) in the _Amazon WorkSpaces Applications Administration Guide_.
 
 Type: String to string map
 
@@ -181,7 +181,7 @@ Required: No
 
 The actions that are enabled or disabled for users during their streaming sessions. By default, these actions are enabled.
 
-Type: Array of [UserSetting](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_UserSetting.html) objects
+Type: Array of [UserSetting](api-usersetting.md) objects
 
 Array Members: Minimum number of 1 item.
 
@@ -250,11 +250,11 @@ The following data is returned in JSON format by the service.
 
 Information about the stack.
 
-Type: [Stack](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Stack.html) object
+Type: [Stack](api-stack.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/appstream2/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **ConcurrentModificationException**
 
@@ -340,27 +340,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appstream-2016-12-01/CreateStack)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/appstream-2016-12-01/createstack.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appstream-2016-12-01/CreateStack)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appstream-2016-12-01/createstack.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appstream-2016-12-01/CreateStack)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appstream-2016-12-01/createstack.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appstream-2016-12-01/CreateStack)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/appstream-2016-12-01/createstack.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appstream-2016-12-01/CreateStack)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appstream-2016-12-01/createstack.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appstream-2016-12-01/CreateStack)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appstream-2016-12-01/createstack.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appstream-2016-12-01/CreateStack)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appstream-2016-12-01/createstack.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appstream-2016-12-01/CreateStack)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appstream-2016-12-01/createstack.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/appstream-2016-12-01/CreateStack)
+- [AWS SDK for Python](../../../../services/goto/boto3/appstream-2016-12-01/createstack.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appstream-2016-12-01/CreateStack)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appstream-2016-12-01/createstack.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateImportedImage
 

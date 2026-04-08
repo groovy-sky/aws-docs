@@ -12,22 +12,22 @@ requests. The batch attempts to send the requests with the fewest requests
 to DynamoDB as possible and also re-queues any unprocessed items to ensure
 that all items are sent.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.WriteRequestBatch.html\#toc)
+### Table of Contents  [header link](class-aws-dynamodb-writerequestbatch-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.WriteRequestBatch.html\#toc-methods)
+#### Methods  [header link](class-aws-dynamodb-writerequestbatch-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.WriteRequestBatch.html#method___construct)
+[\_\_construct()](class-aws-dynamodb-writerequestbatch-method-construct.md)
 : mixed Creates a WriteRequestBatch object that is capable of efficiently sending
-DynamoDB BatchWriteItem requests from queued up Put and Delete requests.[delete()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.WriteRequestBatch.html#method_delete)
-: $this Adds a delete item request to the batch.[flush()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.WriteRequestBatch.html#method_flush)
+DynamoDB BatchWriteItem requests from queued up Put and Delete requests.[delete()](class-aws-dynamodb-writerequestbatch-method-delete.md)
+: $this Adds a delete item request to the batch.[flush()](class-aws-dynamodb-writerequestbatch-method-flush.md)
 : $this Flushes the batch by combining all the queued put and delete requests
 into BatchWriteItem commands and executing them. Unprocessed items are
-automatically re-queued.[put()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.WriteRequestBatch.html#method_put)
+automatically re-queued.[put()](class-aws-dynamodb-writerequestbatch-method-put.md)
 : $this Adds a put item request to the batch.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.WriteRequestBatch.html\#methods)
+### Methods  [header link](class-aws-dynamodb-writerequestbatch-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.WriteRequestBatch.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-dynamodb-writerequestbatch-method-construct.md)
 
 Creates a WriteRequestBatch object that is capable of efficiently sending
 DynamoDB BatchWriteItem requests from queued up Put and Delete requests.
@@ -70,13 +70,13 @@ It should accept an \\Aws\\CommandInterface object as its argument.
 BatchWriteItem operation, otherwise errors are ignored. It should
 accept an \\Aws\\Exception\\AwsException as its argument.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.WriteRequestBatch.html\#method___construct\#tags)
+##### Tags  [header link](class-aws-dynamodb-writerequestbatch-method-construct-tags.md)
 
 throwsInvalidArgumentException
 
 if the batch size is not between 2 and 25.
 
-#### delete()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.WriteRequestBatch.html\#method_delete)
+#### delete()  [header link](class-aws-dynamodb-writerequestbatch-method-delete.md)
 
 Adds a delete item request to the batch.
 
@@ -107,7 +107,7 @@ config of the WriteRequestBatch.
 
 $this
 
-#### flush()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.WriteRequestBatch.html\#method_flush)
+#### flush()  [header link](class-aws-dynamodb-writerequestbatch-method-flush.md)
 
 Flushes the batch by combining all the queued put and delete requests
 into BatchWriteItem commands and executing them. Unprocessed items are
@@ -131,7 +131,7 @@ unprocessed items are all eventually sent.
 
 $this
 
-#### put()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.WriteRequestBatch.html\#method_put)
+#### put()  [header link](class-aws-dynamodb-writerequestbatch-method-put.md)
 
 Adds a put item request to the batch.
 
@@ -169,11 +169,11 @@ $this
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.WriteRequestBatch.html#toc-methods)
+  - [Methods](class-aws-dynamodb-writerequestbatch-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.WriteRequestBatch.html#method___construct)
-  - [delete()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.WriteRequestBatch.html#method_delete)
-  - [flush()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.WriteRequestBatch.html#method_flush)
-  - [put()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.WriteRequestBatch.html#method_put)
+  - [\_\_construct()](class-aws-dynamodb-writerequestbatch-method-construct.md)
+  - [delete()](class-aws-dynamodb-writerequestbatch-method-delete.md)
+  - [flush()](class-aws-dynamodb-writerequestbatch-method-flush.md)
+  - [put()](class-aws-dynamodb-writerequestbatch-method-put.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.WriteRequestBatch.html#top)
+[Back To Top](class-aws-dynamodb-writerequestbatch-top.md)

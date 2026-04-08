@@ -17,30 +17,30 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2021-09-14**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kafkaconnect-2021-09-14.html)
+- [**2021-09-14**](api-kafkaconnect-2021-09-14.md)
 
-  - [CreateConnector](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kafkaconnect-2021-09-14.html#createconnector)
-  - [CreateCustomPlugin](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kafkaconnect-2021-09-14.html#createcustomplugin)
-  - [CreateWorkerConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kafkaconnect-2021-09-14.html#createworkerconfiguration)
-  - [DeleteConnector](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kafkaconnect-2021-09-14.html#deleteconnector)
-  - [DeleteCustomPlugin](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kafkaconnect-2021-09-14.html#deletecustomplugin)
-  - [DeleteWorkerConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kafkaconnect-2021-09-14.html#deleteworkerconfiguration)
-  - [DescribeConnector](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kafkaconnect-2021-09-14.html#describeconnector)
-  - [DescribeConnectorOperation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kafkaconnect-2021-09-14.html#describeconnectoroperation)
-  - [DescribeCustomPlugin](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kafkaconnect-2021-09-14.html#describecustomplugin)
-  - [DescribeWorkerConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kafkaconnect-2021-09-14.html#describeworkerconfiguration)
-  - [ListConnectorOperations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kafkaconnect-2021-09-14.html#listconnectoroperations)
-  - [ListConnectors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kafkaconnect-2021-09-14.html#listconnectors)
-  - [ListCustomPlugins](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kafkaconnect-2021-09-14.html#listcustomplugins)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kafkaconnect-2021-09-14.html#listtagsforresource)
-  - [ListWorkerConfigurations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kafkaconnect-2021-09-14.html#listworkerconfigurations)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kafkaconnect-2021-09-14.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kafkaconnect-2021-09-14.html#untagresource)
-  - [UpdateConnector](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-kafkaconnect-2021-09-14.html#updateconnector)
+  - [CreateConnector](api-kafkaconnect-2021-09-14-createconnector.md)
+  - [CreateCustomPlugin](api-kafkaconnect-2021-09-14-createcustomplugin.md)
+  - [CreateWorkerConfiguration](api-kafkaconnect-2021-09-14-createworkerconfiguration.md)
+  - [DeleteConnector](api-kafkaconnect-2021-09-14-deleteconnector.md)
+  - [DeleteCustomPlugin](api-kafkaconnect-2021-09-14-deletecustomplugin.md)
+  - [DeleteWorkerConfiguration](api-kafkaconnect-2021-09-14-deleteworkerconfiguration.md)
+  - [DescribeConnector](api-kafkaconnect-2021-09-14-describeconnector.md)
+  - [DescribeConnectorOperation](api-kafkaconnect-2021-09-14-describeconnectoroperation.md)
+  - [DescribeCustomPlugin](api-kafkaconnect-2021-09-14-describecustomplugin.md)
+  - [DescribeWorkerConfiguration](api-kafkaconnect-2021-09-14-describeworkerconfiguration.md)
+  - [ListConnectorOperations](api-kafkaconnect-2021-09-14-listconnectoroperations.md)
+  - [ListConnectors](api-kafkaconnect-2021-09-14-listconnectors.md)
+  - [ListCustomPlugins](api-kafkaconnect-2021-09-14-listcustomplugins.md)
+  - [ListTagsForResource](api-kafkaconnect-2021-09-14-listtagsforresource.md)
+  - [ListWorkerConfigurations](api-kafkaconnect-2021-09-14-listworkerconfigurations.md)
+  - [TagResource](api-kafkaconnect-2021-09-14-tagresource.md)
+  - [UntagResource](api-kafkaconnect-2021-09-14-untagresource.md)
+  - [UpdateConnector](api-kafkaconnect-2021-09-14-updateconnector.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KafkaConnect.KafkaConnectClient.html\#toc)
+### Table of Contents  [header link](class-aws-kafkaconnect-kafkaconnectclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KafkaConnect.KafkaConnectClient.html\#toc-methods)
+#### Methods  [header link](class-aws-kafkaconnect-kafkaconnectclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -71,7 +71,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KafkaConnect.KafkaConnectClient.html\#methods)
+### Methods  [header link](class-aws-kafkaconnect-kafkaconnectclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -538,7 +538,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KafkaConnect.KafkaConnectClient.html#toc-methods)
+  - [Methods](class-aws-kafkaconnect-kafkaconnectclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -565,4 +565,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KafkaConnect.KafkaConnectClient.html#top)
+[Back To Top](class-aws-kafkaconnect-kafkaconnectclient-top.md)

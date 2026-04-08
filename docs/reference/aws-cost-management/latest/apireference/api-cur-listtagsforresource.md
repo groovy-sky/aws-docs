@@ -53,7 +53,7 @@ The following data is returned in JSON format by the service.
 
 The tags assigned to the report definition resource.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_cur_Tag.html) objects
+Type: Array of [Tag](api-cur-tag.md) objects
 
 Array Members: Minimum number of 0 items. Maximum number of 200 items.
 
@@ -120,27 +120,27 @@ X-Amz-Target: AWSOrigamiServiceGateway.ListTagsForResource
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cur-2017-01-06/ListTagsForResource)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/cur-2017-01-06/listtagsforresource.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cur-2017-01-06/ListTagsForResource)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/cur-2017-01-06/listtagsforresource.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cur-2017-01-06/ListTagsForResource)
+- [AWS SDK for C++](../../../goto/sdkforcpp/cur-2017-01-06/listtagsforresource.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cur-2017-01-06/ListTagsForResource)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/cur-2017-01-06/listtagsforresource.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cur-2017-01-06/ListTagsForResource)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cur-2017-01-06/listtagsforresource.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cur-2017-01-06/ListTagsForResource)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/cur-2017-01-06/listtagsforresource.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cur-2017-01-06/ListTagsForResource)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/cur-2017-01-06/listtagsforresource.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cur-2017-01-06/ListTagsForResource)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/cur-2017-01-06/listtagsforresource.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cur-2017-01-06/ListTagsForResource)
+- [AWS SDK for Python](../../../../services/goto/boto3/cur-2017-01-06/listtagsforresource.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cur-2017-01-06/ListTagsForResource)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cur-2017-01-06/listtagsforresource.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DescribeReportDefinitions
 

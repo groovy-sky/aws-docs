@@ -1,7 +1,7 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Psr7](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.psr7.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Psr7](namespace-guzzlehttp-psr7.md)
 
 ## UriResolver        in package    - [Aws](package-aws.md)
 
@@ -9,7 +9,7 @@ FinalYes
 
 Resolves a URI reference in the context of a base URI and the opposite way.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriResolver.html\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-uriresolver-tags.md)
 
 author
 
@@ -17,18 +17,18 @@ Tobias Schultze
 
 see[https://datatracker.ietf.org/doc/html/rfc3986#section-5](https://datatracker.ietf.org/doc/html/rfc3986)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriResolver.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-psr7-uriresolver-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriResolver.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-psr7-uriresolver-toc-methods.md)
 
-[relativize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriResolver.html#method_relativize)
-: [UriInterface](class-psr-http-message-uriinterface.md)Returns the target URI as a relative reference from the base URI.[removeDotSegments()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriResolver.html#method_removeDotSegments)
-: string Removes dot segments from a path and returns the new path.[resolve()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriResolver.html#method_resolve)
+[relativize()](class-guzzlehttp-psr7-uriresolver-method-relativize.md)
+: [UriInterface](class-psr-http-message-uriinterface.md)Returns the target URI as a relative reference from the base URI.[removeDotSegments()](class-guzzlehttp-psr7-uriresolver-method-removedotsegments.md)
+: string Removes dot segments from a path and returns the new path.[resolve()](class-guzzlehttp-psr7-uriresolver-method-resolve.md)
 : [UriInterface](class-psr-http-message-uriinterface.md)Converts the relative URI into a new URI that is resolved against the base URI.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriResolver.html\#methods)
+### Methods  [header link](class-guzzlehttp-psr7-uriresolver-methods.md)
 
-#### relativize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriResolver.html\#method_relativize)
+#### relativize()  [header link](class-guzzlehttp-psr7-uriresolver-method-relativize.md)
 
 Returns the target URI as a relative reference from the base URI.
 
@@ -64,7 +64,7 @@ $base
 
 [UriInterface](class-psr-http-message-uriinterface.md)
 
-#### removeDotSegments()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriResolver.html\#method_removeDotSegments)
+#### removeDotSegments()  [header link](class-guzzlehttp-psr7-uriresolver-method-removedotsegments.md)
 
 Removes dot segments from a path and returns the new path.
 
@@ -77,7 +77,7 @@ Removes dot segments from a path and returns the new path.
 $path
 : string
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriResolver.html\#method_removeDotSegments\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-uriresolver-method-removedotsegments-tags.md)
 
 see[https://datatracker.ietf.org/doc/html/rfc3986#section-5.2.4](https://datatracker.ietf.org/doc/html/rfc3986)
 
@@ -85,7 +85,7 @@ see[https://datatracker.ietf.org/doc/html/rfc3986#section-5.2.4](https://datatra
 
 string
 
-#### resolve()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriResolver.html\#method_resolve)
+#### resolve()  [header link](class-guzzlehttp-psr7-uriresolver-method-resolve.md)
 
 Converts the relative URI into a new URI that is resolved against the base URI.
 
@@ -99,7 +99,7 @@ $base
 : [UriInterface](class-psr-http-message-uriinterface.md)$rel
 : [UriInterface](class-psr-http-message-uriinterface.md)
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriResolver.html\#method_resolve\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-uriresolver-method-resolve-tags.md)
 
 see[https://datatracker.ietf.org/doc/html/rfc3986#section-5.2](https://datatracker.ietf.org/doc/html/rfc3986)
 
@@ -113,10 +113,10 @@ see[https://datatracker.ietf.org/doc/html/rfc3986#section-5.2](https://datatrack
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriResolver.html#toc-methods)
+  - [Methods](class-guzzlehttp-psr7-uriresolver-toc-methods.md)
 - Methods
-  - [relativize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriResolver.html#method_relativize)
-  - [removeDotSegments()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriResolver.html#method_removeDotSegments)
-  - [resolve()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriResolver.html#method_resolve)
+  - [relativize()](class-guzzlehttp-psr7-uriresolver-method-relativize.md)
+  - [removeDotSegments()](class-guzzlehttp-psr7-uriresolver-method-removedotsegments.md)
+  - [resolve()](class-guzzlehttp-psr7-uriresolver-method-resolve.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriResolver.html#top)
+[Back To Top](class-guzzlehttp-psr7-uriresolver-top.md)

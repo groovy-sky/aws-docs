@@ -16,7 +16,7 @@ _Guide_.
 If you include a Metrics Insights query, each `GetMetricData` operation can
 include only one query. But the same `GetMetricData` operation can also
 retrieve other metrics. Metrics Insights queries can query only the most recent three
-hours of metric data. For more information about Metrics Insights, see [Query your metrics with CloudWatch Metrics Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/query_with_cloudwatch-metrics-insights.html).
+hours of metric data. For more information about Metrics Insights, see [Query your metrics with CloudWatch Metrics Insights](../../../../services/amazoncloudwatch/latest/monitoring/query-with-cloudwatch-metrics-insights.md).
 
 Calls to the `GetMetricData` API have a different pricing structure than
 calls to `GetMetricStatistics`. For more information about pricing, see
@@ -90,7 +90,7 @@ This structure includes the `Timezone` parameter, which you can use to
 specify your time zone so that the labels of returned data display the correct time for
 your time zone.
 
-Type: [LabelOptions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_LabelOptions.html) object
+Type: [LabelOptions](api-labeloptions.md) object
 
 Required: No
 
@@ -110,7 +110,7 @@ include as many as 500 `MetricDataQuery` structures. Each of these structures
 can specify either a metric to retrieve, a Metrics Insights query, or a math expression
 to perform on retrieved data.
 
-Type: Array of [MetricDataQuery](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricDataQuery.html) objects
+Type: Array of [MetricDataQuery](api-metricdataquery.md) objects
 
 Required: Yes
 
@@ -190,14 +190,14 @@ A message appears here only if it is related to the global `GetMetricData`
 operation. Any message about a specific metric returned by the operation appears in the
 `MetricDataResult` object returned for that metric.
 
-Type: Array of [MessageData](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MessageData.html) objects
+Type: Array of [MessageData](api-messagedata.md) objects
 
 **MetricDataResults**
 
 The metrics that are returned, including the metric name, namespace, and
 dimensions.
 
-Type: Array of [MetricDataResult](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricDataResult.html) objects
+Type: Array of [MetricDataResult](api-metricdataresult.md) objects
 
 **NextToken**
 
@@ -207,7 +207,7 @@ Type: String
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **InvalidNextToken**
 
@@ -854,27 +854,27 @@ contain those words. Then an error rate is calculated using the
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/monitoring-2010-08-01/GetMetricData)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/monitoring-2010-08-01/getmetricdata.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/monitoring-2010-08-01/GetMetricData)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/monitoring-2010-08-01/getmetricdata.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/GetMetricData)
+- [AWS SDK for C++](../../../goto/sdkforcpp/monitoring-2010-08-01/getmetricdata.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/monitoring-2010-08-01/GetMetricData)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/monitoring-2010-08-01/getmetricdata.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/GetMetricData)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/monitoring-2010-08-01/getmetricdata.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/monitoring-2010-08-01/GetMetricData)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/monitoring-2010-08-01/getmetricdata.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/monitoring-2010-08-01/GetMetricData)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/monitoring-2010-08-01/getmetricdata.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/monitoring-2010-08-01/GetMetricData)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/monitoring-2010-08-01/getmetricdata.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/GetMetricData)
+- [AWS SDK for Python](../../../../services/goto/boto3/monitoring-2010-08-01/getmetricdata.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/monitoring-2010-08-01/GetMetricData)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/monitoring-2010-08-01/getmetricdata.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GetInsightRuleReport
 

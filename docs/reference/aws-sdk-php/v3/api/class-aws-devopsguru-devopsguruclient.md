@@ -17,43 +17,43 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2020-12-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html)
+- [**2020-12-01**](api-devops-guru-2020-12-01.md)
 
-  - [AddNotificationChannel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#addnotificationchannel)
-  - [DeleteInsight](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#deleteinsight)
-  - [DescribeAccountHealth](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#describeaccounthealth)
-  - [DescribeAccountOverview](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#describeaccountoverview)
-  - [DescribeAnomaly](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#describeanomaly)
-  - [DescribeEventSourcesConfig](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#describeeventsourcesconfig)
-  - [DescribeFeedback](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#describefeedback)
-  - [DescribeInsight](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#describeinsight)
-  - [DescribeOrganizationHealth](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#describeorganizationhealth)
-  - [DescribeOrganizationOverview](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#describeorganizationoverview)
-  - [DescribeOrganizationResourceCollectionHealth](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#describeorganizationresourcecollectionhealth)
-  - [DescribeResourceCollectionHealth](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#describeresourcecollectionhealth)
-  - [DescribeServiceIntegration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#describeserviceintegration)
-  - [GetCostEstimation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#getcostestimation)
-  - [GetResourceCollection](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#getresourcecollection)
-  - [ListAnomaliesForInsight](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#listanomaliesforinsight)
-  - [ListAnomalousLogGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#listanomalousloggroups)
-  - [ListEvents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#listevents)
-  - [ListInsights](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#listinsights)
-  - [ListMonitoredResources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#listmonitoredresources)
-  - [ListNotificationChannels](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#listnotificationchannels)
-  - [ListOrganizationInsights](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#listorganizationinsights)
-  - [ListRecommendations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#listrecommendations)
-  - [PutFeedback](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#putfeedback)
-  - [RemoveNotificationChannel](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#removenotificationchannel)
-  - [SearchInsights](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#searchinsights)
-  - [SearchOrganizationInsights](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#searchorganizationinsights)
-  - [StartCostEstimation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#startcostestimation)
-  - [UpdateEventSourcesConfig](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#updateeventsourcesconfig)
-  - [UpdateResourceCollection](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#updateresourcecollection)
-  - [UpdateServiceIntegration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-devops-guru-2020-12-01.html#updateserviceintegration)
+  - [AddNotificationChannel](api-devops-guru-2020-12-01-addnotificationchannel.md)
+  - [DeleteInsight](api-devops-guru-2020-12-01-deleteinsight.md)
+  - [DescribeAccountHealth](api-devops-guru-2020-12-01-describeaccounthealth.md)
+  - [DescribeAccountOverview](api-devops-guru-2020-12-01-describeaccountoverview.md)
+  - [DescribeAnomaly](api-devops-guru-2020-12-01-describeanomaly.md)
+  - [DescribeEventSourcesConfig](api-devops-guru-2020-12-01-describeeventsourcesconfig.md)
+  - [DescribeFeedback](api-devops-guru-2020-12-01-describefeedback.md)
+  - [DescribeInsight](api-devops-guru-2020-12-01-describeinsight.md)
+  - [DescribeOrganizationHealth](api-devops-guru-2020-12-01-describeorganizationhealth.md)
+  - [DescribeOrganizationOverview](api-devops-guru-2020-12-01-describeorganizationoverview.md)
+  - [DescribeOrganizationResourceCollectionHealth](api-devops-guru-2020-12-01-describeorganizationresourcecollectionhealth.md)
+  - [DescribeResourceCollectionHealth](api-devops-guru-2020-12-01-describeresourcecollectionhealth.md)
+  - [DescribeServiceIntegration](api-devops-guru-2020-12-01-describeserviceintegration.md)
+  - [GetCostEstimation](api-devops-guru-2020-12-01-getcostestimation.md)
+  - [GetResourceCollection](api-devops-guru-2020-12-01-getresourcecollection.md)
+  - [ListAnomaliesForInsight](api-devops-guru-2020-12-01-listanomaliesforinsight.md)
+  - [ListAnomalousLogGroups](api-devops-guru-2020-12-01-listanomalousloggroups.md)
+  - [ListEvents](api-devops-guru-2020-12-01-listevents.md)
+  - [ListInsights](api-devops-guru-2020-12-01-listinsights.md)
+  - [ListMonitoredResources](api-devops-guru-2020-12-01-listmonitoredresources.md)
+  - [ListNotificationChannels](api-devops-guru-2020-12-01-listnotificationchannels.md)
+  - [ListOrganizationInsights](api-devops-guru-2020-12-01-listorganizationinsights.md)
+  - [ListRecommendations](api-devops-guru-2020-12-01-listrecommendations.md)
+  - [PutFeedback](api-devops-guru-2020-12-01-putfeedback.md)
+  - [RemoveNotificationChannel](api-devops-guru-2020-12-01-removenotificationchannel.md)
+  - [SearchInsights](api-devops-guru-2020-12-01-searchinsights.md)
+  - [SearchOrganizationInsights](api-devops-guru-2020-12-01-searchorganizationinsights.md)
+  - [StartCostEstimation](api-devops-guru-2020-12-01-startcostestimation.md)
+  - [UpdateEventSourcesConfig](api-devops-guru-2020-12-01-updateeventsourcesconfig.md)
+  - [UpdateResourceCollection](api-devops-guru-2020-12-01-updateresourcecollection.md)
+  - [UpdateServiceIntegration](api-devops-guru-2020-12-01-updateserviceintegration.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DevOpsGuru.DevOpsGuruClient.html\#toc)
+### Table of Contents  [header link](class-aws-devopsguru-devopsguruclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DevOpsGuru.DevOpsGuruClient.html\#toc-methods)
+#### Methods  [header link](class-aws-devopsguru-devopsguruclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -84,7 +84,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DevOpsGuru.DevOpsGuruClient.html\#methods)
+### Methods  [header link](class-aws-devopsguru-devopsguruclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -551,7 +551,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DevOpsGuru.DevOpsGuruClient.html#toc-methods)
+  - [Methods](class-aws-devopsguru-devopsguruclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -578,4 +578,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DevOpsGuru.DevOpsGuruClient.html#top)
+[Back To Top](class-aws-devopsguru-devopsguruclient-top.md)

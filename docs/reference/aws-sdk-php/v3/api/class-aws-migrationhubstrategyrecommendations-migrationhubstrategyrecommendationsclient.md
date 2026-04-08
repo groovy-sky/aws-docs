@@ -17,34 +17,34 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2020-02-19**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html)
+- [**2020-02-19**](api-migrationhubstrategy-2020-02-19.md)
 
-  - [GetApplicationComponentDetails](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html#getapplicationcomponentdetails)
-  - [GetApplicationComponentStrategies](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html#getapplicationcomponentstrategies)
-  - [GetAssessment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html#getassessment)
-  - [GetImportFileTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html#getimportfiletask)
-  - [GetLatestAssessmentId](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html#getlatestassessmentid)
-  - [GetPortfolioPreferences](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html#getportfoliopreferences)
-  - [GetPortfolioSummary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html#getportfoliosummary)
-  - [GetRecommendationReportDetails](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html#getrecommendationreportdetails)
-  - [GetServerDetails](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html#getserverdetails)
-  - [GetServerStrategies](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html#getserverstrategies)
-  - [ListAnalyzableServers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html#listanalyzableservers)
-  - [ListApplicationComponents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html#listapplicationcomponents)
-  - [ListCollectors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html#listcollectors)
-  - [ListImportFileTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html#listimportfiletask)
-  - [ListServers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html#listservers)
-  - [PutPortfolioPreferences](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html#putportfoliopreferences)
-  - [StartAssessment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html#startassessment)
-  - [StartImportFileTask](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html#startimportfiletask)
-  - [StartRecommendationReportGeneration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html#startrecommendationreportgeneration)
-  - [StopAssessment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html#stopassessment)
-  - [UpdateApplicationComponentConfig](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html#updateapplicationcomponentconfig)
-  - [UpdateServerConfig](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-migrationhubstrategy-2020-02-19.html#updateserverconfig)
+  - [GetApplicationComponentDetails](api-migrationhubstrategy-2020-02-19-getapplicationcomponentdetails.md)
+  - [GetApplicationComponentStrategies](api-migrationhubstrategy-2020-02-19-getapplicationcomponentstrategies.md)
+  - [GetAssessment](api-migrationhubstrategy-2020-02-19-getassessment.md)
+  - [GetImportFileTask](api-migrationhubstrategy-2020-02-19-getimportfiletask.md)
+  - [GetLatestAssessmentId](api-migrationhubstrategy-2020-02-19-getlatestassessmentid.md)
+  - [GetPortfolioPreferences](api-migrationhubstrategy-2020-02-19-getportfoliopreferences.md)
+  - [GetPortfolioSummary](api-migrationhubstrategy-2020-02-19-getportfoliosummary.md)
+  - [GetRecommendationReportDetails](api-migrationhubstrategy-2020-02-19-getrecommendationreportdetails.md)
+  - [GetServerDetails](api-migrationhubstrategy-2020-02-19-getserverdetails.md)
+  - [GetServerStrategies](api-migrationhubstrategy-2020-02-19-getserverstrategies.md)
+  - [ListAnalyzableServers](api-migrationhubstrategy-2020-02-19-listanalyzableservers.md)
+  - [ListApplicationComponents](api-migrationhubstrategy-2020-02-19-listapplicationcomponents.md)
+  - [ListCollectors](api-migrationhubstrategy-2020-02-19-listcollectors.md)
+  - [ListImportFileTask](api-migrationhubstrategy-2020-02-19-listimportfiletask.md)
+  - [ListServers](api-migrationhubstrategy-2020-02-19-listservers.md)
+  - [PutPortfolioPreferences](api-migrationhubstrategy-2020-02-19-putportfoliopreferences.md)
+  - [StartAssessment](api-migrationhubstrategy-2020-02-19-startassessment.md)
+  - [StartImportFileTask](api-migrationhubstrategy-2020-02-19-startimportfiletask.md)
+  - [StartRecommendationReportGeneration](api-migrationhubstrategy-2020-02-19-startrecommendationreportgeneration.md)
+  - [StopAssessment](api-migrationhubstrategy-2020-02-19-stopassessment.md)
+  - [UpdateApplicationComponentConfig](api-migrationhubstrategy-2020-02-19-updateapplicationcomponentconfig.md)
+  - [UpdateServerConfig](api-migrationhubstrategy-2020-02-19-updateserverconfig.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubStrategyRecommendations.MigrationHubStrategyRecommendationsClient.html\#toc)
+### Table of Contents  [header link](class-aws-migrationhubstrategyrecommendations-migrationhubstrategyrecommendationsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubStrategyRecommendations.MigrationHubStrategyRecommendationsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-migrationhubstrategyrecommendations-migrationhubstrategyrecommendationsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -75,7 +75,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubStrategyRecommendations.MigrationHubStrategyRecommendationsClient.html\#methods)
+### Methods  [header link](class-aws-migrationhubstrategyrecommendations-migrationhubstrategyrecommendationsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -542,7 +542,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubStrategyRecommendations.MigrationHubStrategyRecommendationsClient.html#toc-methods)
+  - [Methods](class-aws-migrationhubstrategyrecommendations-migrationhubstrategyrecommendationsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -569,4 +569,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MigrationHubStrategyRecommendations.MigrationHubStrategyRecommendationsClient.html#top)
+[Back To Top](class-aws-migrationhubstrategyrecommendations-migrationhubstrategyrecommendationsclient-top.md)

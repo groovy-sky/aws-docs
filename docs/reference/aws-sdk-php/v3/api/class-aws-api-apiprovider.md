@@ -42,22 +42,22 @@ $data = $c('api', 'invalid', '2014-12-15');     // Neither handles this.
 
 ```
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html\#toc)
+### Table of Contents  [header link](class-aws-api-apiprovider-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html\#toc-methods)
+#### Methods  [header link](class-aws-api-apiprovider-toc-methods.md)
 
-[\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html#method___invoke)
-: array<string\|int, mixed>\|null Execute the provider.[defaultProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html#method_defaultProvider)
-: self Default SDK API provider.[filesystem()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html#method_filesystem)
-: self Loads API data from the specified directory.[getVersions()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html#method_getVersions)
-: array<string\|int, mixed> Retrieves a list of valid versions for the specified service.[manifest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html#method_manifest)
+[\_\_invoke()](class-aws-api-apiprovider-method-invoke.md)
+: array<string\|int, mixed>\|null Execute the provider.[defaultProvider()](class-aws-api-apiprovider-method-defaultprovider.md)
+: self Default SDK API provider.[filesystem()](class-aws-api-apiprovider-method-filesystem.md)
+: self Loads API data from the specified directory.[getVersions()](class-aws-api-apiprovider-method-getversions.md)
+: array<string\|int, mixed> Retrieves a list of valid versions for the specified service.[manifest()](class-aws-api-apiprovider-method-manifest.md)
 : self Loads API data after resolving the version to the latest, compatible,
-available version based on the provided manifest data.[resolve()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html#method_resolve)
+available version based on the provided manifest data.[resolve()](class-aws-api-apiprovider-method-resolve.md)
 : array<string\|int, mixed> Resolves an API provider and ensures a non-null return value.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html\#methods)
+### Methods  [header link](class-aws-api-apiprovider-methods.md)
 
-#### \_\_invoke()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html\#method___invoke)
+#### \_\_invoke()  [header link](class-aws-api-apiprovider-method-invoke.md)
 
 Execute the provider.
 
@@ -86,7 +86,7 @@ API version.
 
 array<string\|int, mixed>\|null
 
-#### defaultProvider()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html\#method_defaultProvider)
+#### defaultProvider()  [header link](class-aws-api-apiprovider-method-defaultprovider.md)
 
 Default SDK API provider.
 
@@ -100,7 +100,7 @@ This provider loads pre-built manifest data from the `data` directory.
 
 self
 
-#### filesystem()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html\#method_filesystem)
+#### filesystem()  [header link](class-aws-api-apiprovider-method-filesystem.md)
 
 Loads API data from the specified directory.
 
@@ -118,7 +118,7 @@ $dir
 
 Directory containing service models.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html\#method_filesystem\#tags)
+##### Tags  [header link](class-aws-api-apiprovider-method-filesystem-tags.md)
 
 throwsInvalidArgumentException
 
@@ -128,7 +128,7 @@ if the provided `$dir` is invalid.
 
 self
 
-#### getVersions()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html\#method_getVersions)
+#### getVersions()  [header link](class-aws-api-apiprovider-method-getversions.md)
 
 Retrieves a list of valid versions for the specified service.
 
@@ -147,7 +147,7 @@ Service name
 
 array<string\|int, mixed>
 
-#### manifest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html\#method_manifest)
+#### manifest()  [header link](class-aws-api-apiprovider-method-manifest.md)
 
 Loads API data after resolving the version to the latest, compatible,
 available version based on the provided manifest data.
@@ -189,7 +189,7 @@ The API version manifest data.
 
 self
 
-#### resolve()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html\#method_resolve)
+#### resolve()  [header link](class-aws-api-apiprovider-method-resolve.md)
 
 Resolves an API provider and ensures a non-null return value.
 
@@ -219,9 +219,9 @@ $version
 
 API version.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html\#method_resolve\#tags)
+##### Tags  [header link](class-aws-api-apiprovider-method-resolve-tags.md)
 
-throws[UnresolvedApiException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.UnresolvedApiException.html)
+throws[UnresolvedApiException](class-aws-exception-unresolvedapiexception.md)
 
 ##### Return values
 
@@ -233,13 +233,13 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html#toc-methods)
+  - [Methods](class-aws-api-apiprovider-toc-methods.md)
 - Methods
-  - [\_\_invoke()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html#method___invoke)
-  - [defaultProvider()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html#method_defaultProvider)
-  - [filesystem()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html#method_filesystem)
-  - [getVersions()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html#method_getVersions)
-  - [manifest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html#method_manifest)
-  - [resolve()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html#method_resolve)
+  - [\_\_invoke()](class-aws-api-apiprovider-method-invoke.md)
+  - [defaultProvider()](class-aws-api-apiprovider-method-defaultprovider.md)
+  - [filesystem()](class-aws-api-apiprovider-method-filesystem.md)
+  - [getVersions()](class-aws-api-apiprovider-method-getversions.md)
+  - [manifest()](class-aws-api-apiprovider-method-manifest.md)
+  - [resolve()](class-aws-api-apiprovider-method-resolve.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ApiProvider.html#top)
+[Back To Top](class-aws-api-apiprovider-top.md)

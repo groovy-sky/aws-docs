@@ -4,7 +4,7 @@ Creates a stack as specified in the template. After the call completes successfu
 stack creation starts. You can check the status of the stack through the [DescribeStacks](api-describestacks.md) operation.
 
 For more information about creating a stack and monitoring stack progress, see [Managing AWS\
-resources as a single unit with CloudFormation stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html) in the
+resources as a single unit with CloudFormation stacks](../../../../services/cloudformation/latest/userguide/stacks.md) in the
 _AWS CloudFormation User Guide_.
 
 ## Request Parameters
@@ -36,21 +36,21 @@ specify `CAPABILITY_NAMED_IAM`.
 If your stack template contains these resources, we recommend that you review all
 permissions associated with them and edit their permissions if necessary.
 
-- [AWS::IAM::AccessKey](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-accesskey.html)
+- [AWS::IAM::AccessKey](../../../../services/cloudformation/latest/templatereference/aws-resource-iam-accesskey.md)
 
-- [AWS::IAM::Group](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-group.html)
+- [AWS::IAM::Group](../../../../services/cloudformation/latest/templatereference/aws-resource-iam-group.md)
 
-- [AWS::IAM::InstanceProfile](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-instanceprofile.html)
+- [AWS::IAM::InstanceProfile](../../../../services/cloudformation/latest/templatereference/aws-resource-iam-instanceprofile.md)
 
-- [AWS::IAM::ManagedPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-managedpolicy.html)
+- [AWS::IAM::ManagedPolicy](../../../../services/cloudformation/latest/templatereference/aws-resource-iam-managedpolicy.md)
 
-- [AWS::IAM::Policy](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-policy.html)
+- [AWS::IAM::Policy](../../../../services/cloudformation/latest/templatereference/aws-resource-iam-policy.md)
 
-- [AWS::IAM::Role](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-role.html)
+- [AWS::IAM::Role](../../../../services/cloudformation/latest/templatereference/aws-resource-iam-role.md)
 
-- [AWS::IAM::User](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-user.html)
+- [AWS::IAM::User](../../../../services/cloudformation/latest/templatereference/aws-resource-iam-user.md)
 
-- [AWS::IAM::UserToGroupAddition](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-usertogroupaddition.html)
+- [AWS::IAM::UserToGroupAddition](../../../../services/cloudformation/latest/templatereference/aws-resource-iam-usertogroupaddition.md)
 
 For more information, see [Acknowledging IAM resources in CloudFormation templates](../../../../services/cloudformation/latest/userguide/control-access-with-iam.md#using-iam-capabilities).
 
@@ -63,8 +63,8 @@ from the processed template, so that they can review the changes resulting from 
 before actually creating the stack. If your stack template contains one or more macros,
 and you choose to create a stack directly from the processed template, without first
 reviewing the resulting changes in a change set, you must acknowledge this capability.
-This includes the [AWS::Include](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-aws-include.html)
-and [AWS::Serverless](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-aws-serverless.html) transforms, which are macros hosted by CloudFormation.
+This includes the [AWS::Include](../../../../services/cloudformation/latest/userguide/transform-aws-include.md)
+and [AWS::Serverless](../../../../services/cloudformation/latest/userguide/transform-aws-serverless.md) transforms, which are macros hosted by CloudFormation.
 
 If you want to create a stack from a stack template that contains macros
 _and_ nested stacks, you must create the stack directly from the
@@ -80,7 +80,7 @@ templates. Be aware that the Lambda function owner can update the function opera
 without CloudFormation being notified.
 
 For more information, see [Perform custom processing\
-on CloudFormation templates with template macros](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-macros.html).
+on CloudFormation templates with template macros](../../../../services/cloudformation/latest/userguide/template-macros.md).
 
 ###### Note
 
@@ -184,10 +184,10 @@ Required: No
 **Parameters.member.N**
 
 A list of `Parameter` structures that specify input parameters for the stack.
-For more information, see the [Parameter](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_Parameter.html) data
+For more information, see the [Parameter](api-parameter.md) data
 type.
 
-Type: Array of [Parameter](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_Parameter.html) objects
+Type: Array of [Parameter](api-parameter.md) objects
 
 Required: No
 
@@ -248,7 +248,7 @@ Required: No
 The rollback triggers for CloudFormation to monitor during stack creation and updating
 operations, and for the specified monitoring period afterwards.
 
-Type: [RollbackConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_RollbackConfiguration.html) object
+Type: [RollbackConfiguration](api-rollbackconfiguration.md) object
 
 Required: No
 
@@ -268,7 +268,7 @@ Required: Yes
 
 **StackPolicyBody**
 
-Structure that contains the stack policy body. For more information, see [Prevent updates to stack resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/protect-stack-resources.html) in the _AWS CloudFormation User Guide_.
+Structure that contains the stack policy body. For more information, see [Prevent updates to stack resources](../../../../services/cloudformation/latest/userguide/protect-stack-resources.md) in the _AWS CloudFormation User Guide_.
 You can specify either the `StackPolicyBody` or the `StackPolicyURL`
 parameter, but not both.
 
@@ -299,7 +299,7 @@ Required: No
 Key-value pairs to associate with this stack. CloudFormation also propagates these tags to the
 resources created in the stack. A maximum number of 50 tags can be specified.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Array Members: Maximum number of 50 items.
 
@@ -437,27 +437,27 @@ https://cloudformation.us-east-1.amazonaws.com/
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/CreateStack)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/cloudformation-2010-05-15/createstack.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/CreateStack)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/cloudformation-2010-05-15/createstack.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/CreateStack)
+- [AWS SDK for C++](../../../goto/sdkforcpp/cloudformation-2010-05-15/createstack.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/CreateStack)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/cloudformation-2010-05-15/createstack.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/CreateStack)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudformation-2010-05-15/createstack.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/CreateStack)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/cloudformation-2010-05-15/createstack.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/CreateStack)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/cloudformation-2010-05-15/createstack.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/CreateStack)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/cloudformation-2010-05-15/createstack.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/CreateStack)
+- [AWS SDK for Python](../../../../services/goto/boto3/cloudformation-2010-05-15/createstack.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/CreateStack)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/createstack.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateGeneratedTemplate
 

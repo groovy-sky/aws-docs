@@ -4,15 +4,15 @@ Menu
 
 ## WorkMailMessageFlow
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workmailmessageflow.html\#toc)
+### Table of Contents  [header link](namespace-aws-workmailmessageflow-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workmailmessageflow.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-workmailmessageflow-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workmailmessageflow.exception.html)
+[Exception](namespace-aws-workmailmessageflow-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workmailmessageflow.html\#toc-classes)
+#### Classes  [header link](namespace-aws-workmailmessageflow-toc-classes.md)
 
-[WorkMailMessageFlowClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkMailMessageFlow.WorkMailMessageFlowClient.html)This client is used to interact with the **Amazon WorkMail Message Flow** service.
+[WorkMailMessageFlowClient](class-aws-workmailmessageflow-workmailmessageflowclient.md)This client is used to interact with the **Amazon WorkMail Message Flow** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workmailmessageflow.html#toc-classes)
+  - [Classes](namespace-aws-workmailmessageflow-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workmailmessageflow.html#top)
+[Back To Top](namespace-aws-workmailmessageflow-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## SSMContacts
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmcontacts.html\#toc)
+### Table of Contents  [header link](namespace-aws-ssmcontacts-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmcontacts.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-ssmcontacts-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmcontacts.exception.html)
+[Exception](namespace-aws-ssmcontacts-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmcontacts.html\#toc-classes)
+#### Classes  [header link](namespace-aws-ssmcontacts-toc-classes.md)
 
-[SSMContactsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SSMContacts.SSMContactsClient.html)This client is used to interact with the **AWS Systems Manager Incident Manager Contacts** service.
+[SSMContactsClient](class-aws-ssmcontacts-ssmcontactsclient.md)This client is used to interact with the **AWS Systems Manager Incident Manager Contacts** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmcontacts.html#toc-classes)
+  - [Classes](namespace-aws-ssmcontacts-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ssmcontacts.html#top)
+[Back To Top](namespace-aws-ssmcontacts-top.md)

@@ -17,36 +17,36 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-05-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html)
+- [**2018-05-10**](api-gameliftstreams-2018-05-10.md)
 
-  - [AddStreamGroupLocations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#addstreamgrouplocations)
-  - [AssociateApplications](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#associateapplications)
-  - [CreateApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#createapplication)
-  - [CreateStreamGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#createstreamgroup)
-  - [CreateStreamSessionConnection](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#createstreamsessionconnection)
-  - [DeleteApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#deleteapplication)
-  - [DeleteStreamGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#deletestreamgroup)
-  - [DisassociateApplications](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#disassociateapplications)
-  - [ExportStreamSessionFiles](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#exportstreamsessionfiles)
-  - [GetApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#getapplication)
-  - [GetStreamGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#getstreamgroup)
-  - [GetStreamSession](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#getstreamsession)
-  - [ListApplications](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#listapplications)
-  - [ListStreamGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#liststreamgroups)
-  - [ListStreamSessions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#liststreamsessions)
-  - [ListStreamSessionsByAccount](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#liststreamsessionsbyaccount)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#listtagsforresource)
-  - [RemoveStreamGroupLocations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#removestreamgrouplocations)
-  - [StartStreamSession](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#startstreamsession)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#tagresource)
-  - [TerminateStreamSession](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#terminatestreamsession)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#untagresource)
-  - [UpdateApplication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#updateapplication)
-  - [UpdateStreamGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-gameliftstreams-2018-05-10.html#updatestreamgroup)
+  - [AddStreamGroupLocations](api-gameliftstreams-2018-05-10-addstreamgrouplocations.md)
+  - [AssociateApplications](api-gameliftstreams-2018-05-10-associateapplications.md)
+  - [CreateApplication](api-gameliftstreams-2018-05-10-createapplication.md)
+  - [CreateStreamGroup](api-gameliftstreams-2018-05-10-createstreamgroup.md)
+  - [CreateStreamSessionConnection](api-gameliftstreams-2018-05-10-createstreamsessionconnection.md)
+  - [DeleteApplication](api-gameliftstreams-2018-05-10-deleteapplication.md)
+  - [DeleteStreamGroup](api-gameliftstreams-2018-05-10-deletestreamgroup.md)
+  - [DisassociateApplications](api-gameliftstreams-2018-05-10-disassociateapplications.md)
+  - [ExportStreamSessionFiles](api-gameliftstreams-2018-05-10-exportstreamsessionfiles.md)
+  - [GetApplication](api-gameliftstreams-2018-05-10-getapplication.md)
+  - [GetStreamGroup](api-gameliftstreams-2018-05-10-getstreamgroup.md)
+  - [GetStreamSession](api-gameliftstreams-2018-05-10-getstreamsession.md)
+  - [ListApplications](api-gameliftstreams-2018-05-10-listapplications.md)
+  - [ListStreamGroups](api-gameliftstreams-2018-05-10-liststreamgroups.md)
+  - [ListStreamSessions](api-gameliftstreams-2018-05-10-liststreamsessions.md)
+  - [ListStreamSessionsByAccount](api-gameliftstreams-2018-05-10-liststreamsessionsbyaccount.md)
+  - [ListTagsForResource](api-gameliftstreams-2018-05-10-listtagsforresource.md)
+  - [RemoveStreamGroupLocations](api-gameliftstreams-2018-05-10-removestreamgrouplocations.md)
+  - [StartStreamSession](api-gameliftstreams-2018-05-10-startstreamsession.md)
+  - [TagResource](api-gameliftstreams-2018-05-10-tagresource.md)
+  - [TerminateStreamSession](api-gameliftstreams-2018-05-10-terminatestreamsession.md)
+  - [UntagResource](api-gameliftstreams-2018-05-10-untagresource.md)
+  - [UpdateApplication](api-gameliftstreams-2018-05-10-updateapplication.md)
+  - [UpdateStreamGroup](api-gameliftstreams-2018-05-10-updatestreamgroup.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GameLiftStreams.GameLiftStreamsClient.html\#toc)
+### Table of Contents  [header link](class-aws-gameliftstreams-gameliftstreamsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GameLiftStreams.GameLiftStreamsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-gameliftstreams-gameliftstreamsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -77,7 +77,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GameLiftStreams.GameLiftStreamsClient.html\#methods)
+### Methods  [header link](class-aws-gameliftstreams-gameliftstreamsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -544,7 +544,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GameLiftStreams.GameLiftStreamsClient.html#toc-methods)
+  - [Methods](class-aws-gameliftstreams-gameliftstreamsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -571,4 +571,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GameLiftStreams.GameLiftStreamsClient.html#top)
+[Back To Top](class-aws-gameliftstreams-gameliftstreamsclient-top.md)

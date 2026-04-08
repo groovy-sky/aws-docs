@@ -17,36 +17,36 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-05-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html)
+- [**2018-05-10**](api-security-ir-2018-05-10.md)
 
-  - [BatchGetMemberAccountDetails](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#batchgetmemberaccountdetails)
-  - [CancelMembership](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#cancelmembership)
-  - [CloseCase](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#closecase)
-  - [CreateCase](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#createcase)
-  - [CreateCaseComment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#createcasecomment)
-  - [CreateMembership](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#createmembership)
-  - [GetCase](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#getcase)
-  - [GetCaseAttachmentDownloadUrl](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#getcaseattachmentdownloadurl)
-  - [GetCaseAttachmentUploadUrl](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#getcaseattachmentuploadurl)
-  - [GetMembership](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#getmembership)
-  - [ListCaseEdits](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#listcaseedits)
-  - [ListCases](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#listcases)
-  - [ListComments](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#listcomments)
-  - [ListInvestigations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#listinvestigations)
-  - [ListMemberships](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#listmemberships)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#listtagsforresource)
-  - [SendFeedback](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#sendfeedback)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#untagresource)
-  - [UpdateCase](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#updatecase)
-  - [UpdateCaseComment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#updatecasecomment)
-  - [UpdateCaseStatus](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#updatecasestatus)
-  - [UpdateMembership](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#updatemembership)
-  - [UpdateResolverType](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-security-ir-2018-05-10.html#updateresolvertype)
+  - [BatchGetMemberAccountDetails](api-security-ir-2018-05-10-batchgetmemberaccountdetails.md)
+  - [CancelMembership](api-security-ir-2018-05-10-cancelmembership.md)
+  - [CloseCase](api-security-ir-2018-05-10-closecase.md)
+  - [CreateCase](api-security-ir-2018-05-10-createcase.md)
+  - [CreateCaseComment](api-security-ir-2018-05-10-createcasecomment.md)
+  - [CreateMembership](api-security-ir-2018-05-10-createmembership.md)
+  - [GetCase](api-security-ir-2018-05-10-getcase.md)
+  - [GetCaseAttachmentDownloadUrl](api-security-ir-2018-05-10-getcaseattachmentdownloadurl.md)
+  - [GetCaseAttachmentUploadUrl](api-security-ir-2018-05-10-getcaseattachmentuploadurl.md)
+  - [GetMembership](api-security-ir-2018-05-10-getmembership.md)
+  - [ListCaseEdits](api-security-ir-2018-05-10-listcaseedits.md)
+  - [ListCases](api-security-ir-2018-05-10-listcases.md)
+  - [ListComments](api-security-ir-2018-05-10-listcomments.md)
+  - [ListInvestigations](api-security-ir-2018-05-10-listinvestigations.md)
+  - [ListMemberships](api-security-ir-2018-05-10-listmemberships.md)
+  - [ListTagsForResource](api-security-ir-2018-05-10-listtagsforresource.md)
+  - [SendFeedback](api-security-ir-2018-05-10-sendfeedback.md)
+  - [TagResource](api-security-ir-2018-05-10-tagresource.md)
+  - [UntagResource](api-security-ir-2018-05-10-untagresource.md)
+  - [UpdateCase](api-security-ir-2018-05-10-updatecase.md)
+  - [UpdateCaseComment](api-security-ir-2018-05-10-updatecasecomment.md)
+  - [UpdateCaseStatus](api-security-ir-2018-05-10-updatecasestatus.md)
+  - [UpdateMembership](api-security-ir-2018-05-10-updatemembership.md)
+  - [UpdateResolverType](api-security-ir-2018-05-10-updateresolvertype.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecurityIR.SecurityIRClient.html\#toc)
+### Table of Contents  [header link](class-aws-securityir-securityirclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecurityIR.SecurityIRClient.html\#toc-methods)
+#### Methods  [header link](class-aws-securityir-securityirclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -77,7 +77,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecurityIR.SecurityIRClient.html\#methods)
+### Methods  [header link](class-aws-securityir-securityirclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -544,7 +544,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecurityIR.SecurityIRClient.html#toc-methods)
+  - [Methods](class-aws-securityir-securityirclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -571,4 +571,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SecurityIR.SecurityIRClient.html#top)
+[Back To Top](class-aws-securityir-securityirclient-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## Ecr
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ecr.html\#toc)
+### Table of Contents  [header link](namespace-aws-ecr-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ecr.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-ecr-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ecr.exception.html)
+[Exception](namespace-aws-ecr-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ecr.html\#toc-classes)
+#### Classes  [header link](namespace-aws-ecr-toc-classes.md)
 
-[EcrClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ecr.EcrClient.html)This client is used to interact with the **Amazon EC2 Container Registry** service.
+[EcrClient](class-aws-ecr-ecrclient.md)This client is used to interact with the **Amazon EC2 Container Registry** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ecr.html#toc-classes)
+  - [Classes](namespace-aws-ecr-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ecr.html#top)
+[Back To Top](namespace-aws-ecr-top.md)

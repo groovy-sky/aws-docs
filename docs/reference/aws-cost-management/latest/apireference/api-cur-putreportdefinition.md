@@ -45,7 +45,7 @@ The request accepts the following data in JSON format.
 Represents the output of the PutReportDefinition operation. The content consists of the detailed
 metadata and data file information.
 
-Type: [ReportDefinition](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_cur_ReportDefinition.html) object
+Type: [ReportDefinition](api-cur-reportdefinition.md) object
 
 Required: Yes
 
@@ -53,7 +53,7 @@ Required: Yes
 
 The tags to be assigned to the report definition resource.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_cur_Tag.html) objects
+Type: Array of [Tag](api-cur-tag.md) objects
 
 Array Members: Minimum number of 0 items. Maximum number of 200 items.
 
@@ -165,27 +165,27 @@ X-Amz-Target: AWSOrigamiServiceGateway.PutReportDefinition
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cur-2017-01-06/PutReportDefinition)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/cur-2017-01-06/putreportdefinition.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cur-2017-01-06/PutReportDefinition)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/cur-2017-01-06/putreportdefinition.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cur-2017-01-06/PutReportDefinition)
+- [AWS SDK for C++](../../../goto/sdkforcpp/cur-2017-01-06/putreportdefinition.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cur-2017-01-06/PutReportDefinition)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/cur-2017-01-06/putreportdefinition.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cur-2017-01-06/PutReportDefinition)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cur-2017-01-06/putreportdefinition.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cur-2017-01-06/PutReportDefinition)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/cur-2017-01-06/putreportdefinition.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cur-2017-01-06/PutReportDefinition)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/cur-2017-01-06/putreportdefinition.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cur-2017-01-06/PutReportDefinition)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/cur-2017-01-06/putreportdefinition.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cur-2017-01-06/PutReportDefinition)
+- [AWS SDK for Python](../../../../services/goto/boto3/cur-2017-01-06/putreportdefinition.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cur-2017-01-06/PutReportDefinition)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cur-2017-01-06/putreportdefinition.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ModifyReportDefinition
 

@@ -5,19 +5,19 @@ scale an Auto Scaling group based on configurable metrics. If no policies are de
 dynamic scaling and predictive scaling features are not used.
 
 For more information about using dynamic scaling, see [Target tracking\
-scaling policies](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-target-tracking.html) and [Step and simple scaling\
+scaling policies](../../../../services/autoscaling/ec2/userguide/as-scaling-target-tracking.md) and [Step and simple scaling\
 policies](../../../../services/autoscaling/ec2/userguide/as-scaling-simple-step.md) in the _Amazon EC2 Auto Scaling User Guide_.
 
 For more information about using predictive scaling, see [Predictive\
 scaling for Amazon EC2 Auto Scaling](../../../../services/autoscaling/ec2/userguide/ec2-auto-scaling-predictive-scaling.md) in the _Amazon EC2 Auto Scaling User Guide_.
 
 You can view the scaling policies for an Auto Scaling group using the
-[DescribePolicies](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DescribePolicies.html) API call. If you are no longer using a scaling policy,
-you can delete it by calling the [DeletePolicy](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DeletePolicy.html) API.
+[DescribePolicies](api-describepolicies.md) API call. If you are no longer using a scaling policy,
+you can delete it by calling the [DeletePolicy](api-deletepolicy.md) API.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 **AdjustmentType**
 
@@ -67,7 +67,7 @@ Required: No
 
 Indicates whether the scaling policy is enabled or disabled. The default is enabled.
 For more information, see [Disable a\
-scaling policy for an Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-enable-disable-scaling-policy.html) in the
+scaling policy for an Auto Scaling group](../../../../services/autoscaling/ec2/userguide/as-enable-disable-scaling-policy.md) in the
 _Amazon EC2 Auto Scaling User Guide_.
 
 Type: Boolean
@@ -190,7 +190,7 @@ Balancer request count.
 
 Required if the policy type is `PredictiveScaling`.
 
-Type: [PredictiveScalingConfiguration](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_PredictiveScalingConfiguration.html) object
+Type: [PredictiveScalingConfiguration](api-predictivescalingconfiguration.md) object
 
 Required: No
 
@@ -215,7 +215,7 @@ breach.
 Required if the policy type is `StepScaling`. (Not used with any other
 policy type.)
 
-Type: Array of [StepAdjustment](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_StepAdjustment.html) objects
+Type: Array of [StepAdjustment](api-stepadjustment.md) objects
 
 Required: No
 
@@ -240,7 +240,7 @@ the `ResourceLabel` property with the
 
 Required if the policy type is `TargetTrackingScaling`.
 
-Type: [TargetTrackingConfiguration](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_TargetTrackingConfiguration.html) object
+Type: [TargetTrackingConfiguration](api-targettrackingconfiguration.md) object
 
 Required: No
 
@@ -252,7 +252,7 @@ The following elements are returned by the service.
 
 The CloudWatch alarms created for the target tracking scaling policy.
 
-Type: Array of [Alarm](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Alarm.html) objects
+Type: Array of [Alarm](api-alarm.md) objects
 
 **PolicyARN**
 
@@ -266,13 +266,13 @@ Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **LimitExceeded**
 
 You have already reached a limit for your Amazon EC2 Auto Scaling resources
 (for example, Auto Scaling groups, launch configurations, or lifecycle hooks). For more
-information, see [DescribeAccountLimits](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DescribeAccountLimits.html).
+information, see [DescribeAccountLimits](api-describeaccountlimits.md).
 
 **message**
 
@@ -342,27 +342,27 @@ https://autoscaling.amazonaws.com/?Action=PutScalingPolicy
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/autoscaling-2011-01-01/PutScalingPolicy)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/autoscaling-2011-01-01/putscalingpolicy.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/autoscaling-2011-01-01/PutScalingPolicy)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/autoscaling-2011-01-01/putscalingpolicy.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/autoscaling-2011-01-01/PutScalingPolicy)
+- [AWS SDK for C++](../../../goto/sdkforcpp/autoscaling-2011-01-01/putscalingpolicy.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/autoscaling-2011-01-01/PutScalingPolicy)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/autoscaling-2011-01-01/putscalingpolicy.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/autoscaling-2011-01-01/PutScalingPolicy)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/autoscaling-2011-01-01/putscalingpolicy.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/autoscaling-2011-01-01/PutScalingPolicy)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/autoscaling-2011-01-01/putscalingpolicy.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/autoscaling-2011-01-01/PutScalingPolicy)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/autoscaling-2011-01-01/putscalingpolicy.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/autoscaling-2011-01-01/PutScalingPolicy)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/autoscaling-2011-01-01/putscalingpolicy.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/autoscaling-2011-01-01/PutScalingPolicy)
+- [AWS SDK for Python](../../../../services/goto/boto3/autoscaling-2011-01-01/putscalingpolicy.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/autoscaling-2011-01-01/PutScalingPolicy)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/autoscaling-2011-01-01/putscalingpolicy.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 PutNotificationConfiguration
 

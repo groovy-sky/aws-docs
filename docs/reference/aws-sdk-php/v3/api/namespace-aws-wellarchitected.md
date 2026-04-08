@@ -4,15 +4,15 @@ Menu
 
 ## WellArchitected
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wellarchitected.html\#toc)
+### Table of Contents  [header link](namespace-aws-wellarchitected-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wellarchitected.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-wellarchitected-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wellarchitected.exception.html)
+[Exception](namespace-aws-wellarchitected-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wellarchitected.html\#toc-classes)
+#### Classes  [header link](namespace-aws-wellarchitected-toc-classes.md)
 
-[WellArchitectedClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WellArchitected.WellArchitectedClient.html)This client is used to interact with the **AWS Well-Architected Tool** service.
+[WellArchitectedClient](class-aws-wellarchitected-wellarchitectedclient.md)This client is used to interact with the **AWS Well-Architected Tool** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wellarchitected.html#toc-classes)
+  - [Classes](namespace-aws-wellarchitected-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.wellarchitected.html#top)
+[Back To Top](namespace-aws-wellarchitected-top.md)

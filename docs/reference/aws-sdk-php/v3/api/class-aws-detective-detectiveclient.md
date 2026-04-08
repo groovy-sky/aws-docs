@@ -17,41 +17,41 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-10-26**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html)
+- [**2018-10-26**](api-detective-2018-10-26.md)
 
-  - [AcceptInvitation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#acceptinvitation)
-  - [BatchGetGraphMemberDatasources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#batchgetgraphmemberdatasources)
-  - [BatchGetMembershipDatasources](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#batchgetmembershipdatasources)
-  - [CreateGraph](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#creategraph)
-  - [CreateMembers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#createmembers)
-  - [DeleteGraph](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#deletegraph)
-  - [DeleteMembers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#deletemembers)
-  - [DescribeOrganizationConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#describeorganizationconfiguration)
-  - [DisableOrganizationAdminAccount](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#disableorganizationadminaccount)
-  - [DisassociateMembership](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#disassociatemembership)
-  - [EnableOrganizationAdminAccount](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#enableorganizationadminaccount)
-  - [GetInvestigation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#getinvestigation)
-  - [GetMembers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#getmembers)
-  - [ListDatasourcePackages](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#listdatasourcepackages)
-  - [ListGraphs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#listgraphs)
-  - [ListIndicators](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#listindicators)
-  - [ListInvestigations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#listinvestigations)
-  - [ListInvitations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#listinvitations)
-  - [ListMembers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#listmembers)
-  - [ListOrganizationAdminAccounts](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#listorganizationadminaccounts)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#listtagsforresource)
-  - [RejectInvitation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#rejectinvitation)
-  - [StartInvestigation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#startinvestigation)
-  - [StartMonitoringMember](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#startmonitoringmember)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#untagresource)
-  - [UpdateDatasourcePackages](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#updatedatasourcepackages)
-  - [UpdateInvestigationState](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#updateinvestigationstate)
-  - [UpdateOrganizationConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-detective-2018-10-26.html#updateorganizationconfiguration)
+  - [AcceptInvitation](api-detective-2018-10-26-acceptinvitation.md)
+  - [BatchGetGraphMemberDatasources](api-detective-2018-10-26-batchgetgraphmemberdatasources.md)
+  - [BatchGetMembershipDatasources](api-detective-2018-10-26-batchgetmembershipdatasources.md)
+  - [CreateGraph](api-detective-2018-10-26-creategraph.md)
+  - [CreateMembers](api-detective-2018-10-26-createmembers.md)
+  - [DeleteGraph](api-detective-2018-10-26-deletegraph.md)
+  - [DeleteMembers](api-detective-2018-10-26-deletemembers.md)
+  - [DescribeOrganizationConfiguration](api-detective-2018-10-26-describeorganizationconfiguration.md)
+  - [DisableOrganizationAdminAccount](api-detective-2018-10-26-disableorganizationadminaccount.md)
+  - [DisassociateMembership](api-detective-2018-10-26-disassociatemembership.md)
+  - [EnableOrganizationAdminAccount](api-detective-2018-10-26-enableorganizationadminaccount.md)
+  - [GetInvestigation](api-detective-2018-10-26-getinvestigation.md)
+  - [GetMembers](api-detective-2018-10-26-getmembers.md)
+  - [ListDatasourcePackages](api-detective-2018-10-26-listdatasourcepackages.md)
+  - [ListGraphs](api-detective-2018-10-26-listgraphs.md)
+  - [ListIndicators](api-detective-2018-10-26-listindicators.md)
+  - [ListInvestigations](api-detective-2018-10-26-listinvestigations.md)
+  - [ListInvitations](api-detective-2018-10-26-listinvitations.md)
+  - [ListMembers](api-detective-2018-10-26-listmembers.md)
+  - [ListOrganizationAdminAccounts](api-detective-2018-10-26-listorganizationadminaccounts.md)
+  - [ListTagsForResource](api-detective-2018-10-26-listtagsforresource.md)
+  - [RejectInvitation](api-detective-2018-10-26-rejectinvitation.md)
+  - [StartInvestigation](api-detective-2018-10-26-startinvestigation.md)
+  - [StartMonitoringMember](api-detective-2018-10-26-startmonitoringmember.md)
+  - [TagResource](api-detective-2018-10-26-tagresource.md)
+  - [UntagResource](api-detective-2018-10-26-untagresource.md)
+  - [UpdateDatasourcePackages](api-detective-2018-10-26-updatedatasourcepackages.md)
+  - [UpdateInvestigationState](api-detective-2018-10-26-updateinvestigationstate.md)
+  - [UpdateOrganizationConfiguration](api-detective-2018-10-26-updateorganizationconfiguration.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Detective.DetectiveClient.html\#toc)
+### Table of Contents  [header link](class-aws-detective-detectiveclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Detective.DetectiveClient.html\#toc-methods)
+#### Methods  [header link](class-aws-detective-detectiveclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -82,7 +82,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Detective.DetectiveClient.html\#methods)
+### Methods  [header link](class-aws-detective-detectiveclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -549,7 +549,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Detective.DetectiveClient.html#toc-methods)
+  - [Methods](class-aws-detective-detectiveclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -576,4 +576,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Detective.DetectiveClient.html#top)
+[Back To Top](class-aws-detective-detectiveclient-top.md)

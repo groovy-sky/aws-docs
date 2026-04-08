@@ -17,16 +17,16 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2024-09-09**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspacesstreams-2024-09-09.html)
+- [**2024-09-09**](api-keyspacesstreams-2024-09-09.md)
 
-  - [GetRecords](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspacesstreams-2024-09-09.html#getrecords)
-  - [GetShardIterator](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspacesstreams-2024-09-09.html#getsharditerator)
-  - [GetStream](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspacesstreams-2024-09-09.html#getstream)
-  - [ListStreams](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-keyspacesstreams-2024-09-09.html#liststreams)
+  - [GetRecords](api-keyspacesstreams-2024-09-09-getrecords.md)
+  - [GetShardIterator](api-keyspacesstreams-2024-09-09-getsharditerator.md)
+  - [GetStream](api-keyspacesstreams-2024-09-09-getstream.md)
+  - [ListStreams](api-keyspacesstreams-2024-09-09-liststreams.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KeyspacesStreams.KeyspacesStreamsClient.html\#toc)
+### Table of Contents  [header link](class-aws-keyspacesstreams-keyspacesstreamsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KeyspacesStreams.KeyspacesStreamsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-keyspacesstreams-keyspacesstreamsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -57,7 +57,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KeyspacesStreams.KeyspacesStreamsClient.html\#methods)
+### Methods  [header link](class-aws-keyspacesstreams-keyspacesstreamsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -524,7 +524,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KeyspacesStreams.KeyspacesStreamsClient.html#toc-methods)
+  - [Methods](class-aws-keyspacesstreams-keyspacesstreamsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -551,4 +551,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.KeyspacesStreams.KeyspacesStreamsClient.html#top)
+[Back To Top](class-aws-keyspacesstreams-keyspacesstreamsclient-top.md)

@@ -72,9 +72,9 @@ A SQL statement that represents an evidence finder query.
 Provide this parameter when you want to generate an assessment report from the results
 of an evidence finder search query. When you use this parameter, Audit Manager
 generates a one-time report using only the evidence from the query output. This report does
-not include any assessment evidence that was manually [added to a report using the console](https://docs.aws.amazon.com/audit-manager/latest/userguide/generate-assessment-report.html#generate-assessment-report-include-evidence), or [associated with a report using the API](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_BatchAssociateAssessmentReportEvidence.html).
+not include any assessment evidence that was manually [added to a report using the console](../../../../services/audit-manager/latest/userguide/generate-assessment-report-generate-assessment-report-include-evidence.md), or [associated with a report using the API](api-batchassociateassessmentreportevidence.md).
 
-To use this parameter, the [enablementStatus](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_EvidenceFinderEnablement.html#auditmanager-Type-EvidenceFinderEnablement-enablementStatus) of evidence finder must be `ENABLED`.
+To use this parameter, the [enablementStatus](api-evidencefinderenablement-auditmanager-type-evidencefinderenablement-enablementstatus.md) of evidence finder must be `ENABLED`.
 
 For examples and help resolving `queryStatement` validation exceptions, see
 [Troubleshooting evidence finder issues](../../../../services/audit-manager/latest/userguide/evidence-finder-issues.md#querystatement-exceptions) in the
@@ -120,7 +120,7 @@ The following data is returned in JSON format by the service.
 
 The new assessment report that the `CreateAssessmentReport` API returned.
 
-Type: [AssessmentReport](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_AssessmentReport.html) object
+Type: [AssessmentReport](api-assessmentreport.md) object
 
 ## Errors
 
@@ -172,27 +172,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/auditmanager-2017-07-25/CreateAssessmentReport)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/auditmanager-2017-07-25/createassessmentreport.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/auditmanager-2017-07-25/CreateAssessmentReport)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/auditmanager-2017-07-25/createassessmentreport.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/auditmanager-2017-07-25/CreateAssessmentReport)
+- [AWS SDK for C++](../../../goto/sdkforcpp/auditmanager-2017-07-25/createassessmentreport.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/auditmanager-2017-07-25/CreateAssessmentReport)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/auditmanager-2017-07-25/createassessmentreport.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/auditmanager-2017-07-25/CreateAssessmentReport)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/auditmanager-2017-07-25/createassessmentreport.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/auditmanager-2017-07-25/CreateAssessmentReport)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/auditmanager-2017-07-25/createassessmentreport.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/auditmanager-2017-07-25/CreateAssessmentReport)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/auditmanager-2017-07-25/createassessmentreport.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/auditmanager-2017-07-25/CreateAssessmentReport)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/auditmanager-2017-07-25/createassessmentreport.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/auditmanager-2017-07-25/CreateAssessmentReport)
+- [AWS SDK for Python](../../../../services/goto/boto3/auditmanager-2017-07-25/createassessmentreport.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/auditmanager-2017-07-25/CreateAssessmentReport)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/auditmanager-2017-07-25/createassessmentreport.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateAssessmentFramework
 

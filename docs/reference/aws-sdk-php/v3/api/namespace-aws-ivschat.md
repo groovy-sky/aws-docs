@@ -4,15 +4,15 @@ Menu
 
 ## ivschat
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ivschat.html\#toc)
+### Table of Contents  [header link](namespace-aws-ivschat-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ivschat.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-ivschat-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ivschat.exception.html)
+[Exception](namespace-aws-ivschat-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ivschat.html\#toc-classes)
+#### Classes  [header link](namespace-aws-ivschat-toc-classes.md)
 
-[ivschatClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ivschat.ivschatClient.html)This client is used to interact with the **Amazon Interactive Video Service Chat** service.
+[ivschatClient](class-aws-ivschat-ivschatclient.md)This client is used to interact with the **Amazon Interactive Video Service Chat** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ivschat.html#toc-classes)
+  - [Classes](namespace-aws-ivschat-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ivschat.html#top)
+[Back To Top](namespace-aws-ivschat-top.md)

@@ -2,41 +2,41 @@
 
 The following actions are supported:
 
-- [ActivateOrganizationsAccess](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ActivateOrganizationsAccess.html)
+- [ActivateOrganizationsAccess](api-activateorganizationsaccess.md)
 
-- [ActivateType](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ActivateType.html)
+- [ActivateType](api-activatetype.md)
 
-- [BatchDescribeTypeConfigurations](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_BatchDescribeTypeConfigurations.html)
+- [BatchDescribeTypeConfigurations](api-batchdescribetypeconfigurations.md)
 
-- [CancelUpdateStack](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CancelUpdateStack.html)
+- [CancelUpdateStack](api-cancelupdatestack.md)
 
 - [ContinueUpdateRollback](api-continueupdaterollback.md)
 
 - [CreateChangeSet](api-createchangeset.md)
 
-- [CreateGeneratedTemplate](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateGeneratedTemplate.html)
+- [CreateGeneratedTemplate](api-creategeneratedtemplate.md)
 
 - [CreateStack](api-createstack.md)
 
-- [CreateStackInstances](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStackInstances.html)
+- [CreateStackInstances](api-createstackinstances.md)
 
-- [CreateStackRefactor](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStackRefactor.html)
+- [CreateStackRefactor](api-createstackrefactor.md)
 
-- [CreateStackSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateStackSet.html)
+- [CreateStackSet](api-createstackset.md)
 
-- [DeactivateOrganizationsAccess](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DeactivateOrganizationsAccess.html)
+- [DeactivateOrganizationsAccess](api-deactivateorganizationsaccess.md)
 
-- [DeactivateType](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DeactivateType.html)
+- [DeactivateType](api-deactivatetype.md)
 
-- [DeleteChangeSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DeleteChangeSet.html)
+- [DeleteChangeSet](api-deletechangeset.md)
 
-- [DeleteGeneratedTemplate](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DeleteGeneratedTemplate.html)
+- [DeleteGeneratedTemplate](api-deletegeneratedtemplate.md)
 
 - [DeleteStack](api-deletestack.md)
 
-- [DeleteStackInstances](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DeleteStackInstances.html)
+- [DeleteStackInstances](api-deletestackinstances.md)
 
-- [DeleteStackSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DeleteStackSet.html)
+- [DeleteStackSet](api-deletestackset.md)
 
 - [DeregisterType](api-deregistertype.md)
 
@@ -44,145 +44,145 @@ The following actions are supported:
 
 - [DescribeChangeSet](api-describechangeset.md)
 
-- [DescribeChangeSetHooks](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeChangeSetHooks.html)
+- [DescribeChangeSetHooks](api-describechangesethooks.md)
 
-- [DescribeEvents](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeEvents.html)
+- [DescribeEvents](api-describeevents.md)
 
-- [DescribeGeneratedTemplate](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeGeneratedTemplate.html)
+- [DescribeGeneratedTemplate](api-describegeneratedtemplate.md)
 
-- [DescribeOrganizationsAccess](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeOrganizationsAccess.html)
+- [DescribeOrganizationsAccess](api-describeorganizationsaccess.md)
 
-- [DescribePublisher](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribePublisher.html)
+- [DescribePublisher](api-describepublisher.md)
 
-- [DescribeResourceScan](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeResourceScan.html)
+- [DescribeResourceScan](api-describeresourcescan.md)
 
-- [DescribeStackDriftDetectionStatus](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeStackDriftDetectionStatus.html)
+- [DescribeStackDriftDetectionStatus](api-describestackdriftdetectionstatus.md)
 
-- [DescribeStackEvents](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeStackEvents.html)
+- [DescribeStackEvents](api-describestackevents.md)
 
-- [DescribeStackInstance](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeStackInstance.html)
+- [DescribeStackInstance](api-describestackinstance.md)
 
-- [DescribeStackRefactor](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeStackRefactor.html)
+- [DescribeStackRefactor](api-describestackrefactor.md)
 
 - [DescribeStackResource](api-describestackresource.md)
 
-- [DescribeStackResourceDrifts](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeStackResourceDrifts.html)
+- [DescribeStackResourceDrifts](api-describestackresourcedrifts.md)
 
 - [DescribeStackResources](api-describestackresources.md)
 
 - [DescribeStacks](api-describestacks.md)
 
-- [DescribeStackSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeStackSet.html)
+- [DescribeStackSet](api-describestackset.md)
 
-- [DescribeStackSetOperation](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeStackSetOperation.html)
+- [DescribeStackSetOperation](api-describestacksetoperation.md)
 
 - [DescribeType](api-describetype.md)
 
-- [DescribeTypeRegistration](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeTypeRegistration.html)
+- [DescribeTypeRegistration](api-describetyperegistration.md)
 
-- [DetectStackDrift](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DetectStackDrift.html)
+- [DetectStackDrift](api-detectstackdrift.md)
 
-- [DetectStackResourceDrift](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DetectStackResourceDrift.html)
+- [DetectStackResourceDrift](api-detectstackresourcedrift.md)
 
-- [DetectStackSetDrift](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DetectStackSetDrift.html)
+- [DetectStackSetDrift](api-detectstacksetdrift.md)
 
-- [EstimateTemplateCost](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_EstimateTemplateCost.html)
+- [EstimateTemplateCost](api-estimatetemplatecost.md)
 
 - [ExecuteChangeSet](api-executechangeset.md)
 
-- [ExecuteStackRefactor](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ExecuteStackRefactor.html)
+- [ExecuteStackRefactor](api-executestackrefactor.md)
 
-- [GetGeneratedTemplate](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_GetGeneratedTemplate.html)
+- [GetGeneratedTemplate](api-getgeneratedtemplate.md)
 
-- [GetHookResult](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_GetHookResult.html)
+- [GetHookResult](api-gethookresult.md)
 
-- [GetStackPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_GetStackPolicy.html)
+- [GetStackPolicy](api-getstackpolicy.md)
 
 - [GetTemplate](api-gettemplate.md)
 
-- [GetTemplateSummary](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_GetTemplateSummary.html)
+- [GetTemplateSummary](api-gettemplatesummary.md)
 
-- [ImportStacksToStackSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ImportStacksToStackSet.html)
+- [ImportStacksToStackSet](api-importstackstostackset.md)
 
-- [ListChangeSets](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListChangeSets.html)
+- [ListChangeSets](api-listchangesets.md)
 
-- [ListExports](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListExports.html)
+- [ListExports](api-listexports.md)
 
-- [ListGeneratedTemplates](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListGeneratedTemplates.html)
+- [ListGeneratedTemplates](api-listgeneratedtemplates.md)
 
-- [ListHookResults](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListHookResults.html)
+- [ListHookResults](api-listhookresults.md)
 
-- [ListImports](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListImports.html)
+- [ListImports](api-listimports.md)
 
-- [ListResourceScanRelatedResources](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListResourceScanRelatedResources.html)
+- [ListResourceScanRelatedResources](api-listresourcescanrelatedresources.md)
 
-- [ListResourceScanResources](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListResourceScanResources.html)
+- [ListResourceScanResources](api-listresourcescanresources.md)
 
-- [ListResourceScans](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListResourceScans.html)
+- [ListResourceScans](api-listresourcescans.md)
 
-- [ListStackInstanceResourceDrifts](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackInstanceResourceDrifts.html)
+- [ListStackInstanceResourceDrifts](api-liststackinstanceresourcedrifts.md)
 
-- [ListStackInstances](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackInstances.html)
+- [ListStackInstances](api-liststackinstances.md)
 
-- [ListStackRefactorActions](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackRefactorActions.html)
+- [ListStackRefactorActions](api-liststackrefactoractions.md)
 
-- [ListStackRefactors](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackRefactors.html)
+- [ListStackRefactors](api-liststackrefactors.md)
 
-- [ListStackResources](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackResources.html)
+- [ListStackResources](api-liststackresources.md)
 
 - [ListStacks](api-liststacks.md)
 
-- [ListStackSetAutoDeploymentTargets](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackSetAutoDeploymentTargets.html)
+- [ListStackSetAutoDeploymentTargets](api-liststacksetautodeploymenttargets.md)
 
-- [ListStackSetOperationResults](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackSetOperationResults.html)
+- [ListStackSetOperationResults](api-liststacksetoperationresults.md)
 
-- [ListStackSetOperations](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackSetOperations.html)
+- [ListStackSetOperations](api-liststacksetoperations.md)
 
-- [ListStackSets](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackSets.html)
+- [ListStackSets](api-liststacksets.md)
 
-- [ListTypeRegistrations](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListTypeRegistrations.html)
+- [ListTypeRegistrations](api-listtyperegistrations.md)
 
-- [ListTypes](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListTypes.html)
+- [ListTypes](api-listtypes.md)
 
-- [ListTypeVersions](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListTypeVersions.html)
+- [ListTypeVersions](api-listtypeversions.md)
 
-- [PublishType](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_PublishType.html)
+- [PublishType](api-publishtype.md)
 
-- [RecordHandlerProgress](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_RecordHandlerProgress.html)
+- [RecordHandlerProgress](api-recordhandlerprogress.md)
 
-- [RegisterPublisher](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_RegisterPublisher.html)
+- [RegisterPublisher](api-registerpublisher.md)
 
-- [RegisterType](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_RegisterType.html)
+- [RegisterType](api-registertype.md)
 
-- [RollbackStack](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_RollbackStack.html)
+- [RollbackStack](api-rollbackstack.md)
 
 - [SetStackPolicy](api-setstackpolicy.md)
 
-- [SetTypeConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetTypeConfiguration.html)
+- [SetTypeConfiguration](api-settypeconfiguration.md)
 
-- [SetTypeDefaultVersion](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetTypeDefaultVersion.html)
+- [SetTypeDefaultVersion](api-settypedefaultversion.md)
 
-- [SignalResource](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SignalResource.html)
+- [SignalResource](api-signalresource.md)
 
-- [StartResourceScan](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_StartResourceScan.html)
+- [StartResourceScan](api-startresourcescan.md)
 
-- [StopStackSetOperation](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_StopStackSetOperation.html)
+- [StopStackSetOperation](api-stopstacksetoperation.md)
 
-- [TestType](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_TestType.html)
+- [TestType](api-testtype.md)
 
-- [UpdateGeneratedTemplate](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_UpdateGeneratedTemplate.html)
+- [UpdateGeneratedTemplate](api-updategeneratedtemplate.md)
 
 - [UpdateStack](api-updatestack.md)
 
-- [UpdateStackInstances](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_UpdateStackInstances.html)
+- [UpdateStackInstances](api-updatestackinstances.md)
 
-- [UpdateStackSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_UpdateStackSet.html)
+- [UpdateStackSet](api-updatestackset.md)
 
-- [UpdateTerminationProtection](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_UpdateTerminationProtection.html)
+- [UpdateTerminationProtection](api-updateterminationprotection.md)
 
-- [ValidateTemplate](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ValidateTemplate.html)
+- [ValidateTemplate](api-validatetemplate.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Welcome
 

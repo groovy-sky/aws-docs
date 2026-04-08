@@ -4,15 +4,15 @@ Menu
 
 ## SignerData
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.signerdata.html\#toc)
+### Table of Contents  [header link](namespace-aws-signerdata-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.signerdata.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-signerdata-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.signerdata.exception.html)
+[Exception](namespace-aws-signerdata-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.signerdata.html\#toc-classes)
+#### Classes  [header link](namespace-aws-signerdata-toc-classes.md)
 
-[SignerDataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SignerData.SignerDataClient.html)This client is used to interact with the **AWS Signer Data Plane** service.
+[SignerDataClient](class-aws-signerdata-signerdataclient.md)This client is used to interact with the **AWS Signer Data Plane** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.signerdata.html#toc-classes)
+  - [Classes](namespace-aws-signerdata-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.signerdata.html#top)
+[Back To Top](namespace-aws-signerdata-top.md)

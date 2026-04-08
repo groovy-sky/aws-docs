@@ -14,7 +14,7 @@ update](../../../../services/amazonecs/latest/developerguide/deployment-type-ecs
 _Guide_.
 
 For more information about API failure reasons, see [API failure\
-reasons](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/api_failures_messages.html) in the _Amazon Elastic Container Service Developer_
+reasons](../../../../services/amazonecs/latest/developerguide/api-failures-messages.md) in the _Amazon Elastic Container Service Developer_
 _Guide_.
 
 ## Contents
@@ -41,13 +41,13 @@ Required: Yes
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/DeploymentCircuitBreaker)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/deploymentcircuitbreaker.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/DeploymentCircuitBreaker)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/deploymentcircuitbreaker.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/DeploymentCircuitBreaker)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/deploymentcircuitbreaker.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DeploymentAlarms
 

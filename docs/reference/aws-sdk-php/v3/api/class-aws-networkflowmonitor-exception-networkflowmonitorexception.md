@@ -2,15 +2,15 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [NetworkFlowMonitor](namespace-aws-networkflowmonitor.md)
-- [Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkflowmonitor.exception.html)
+- [Exception](namespace-aws-networkflowmonitor-exception.md)
 
 ## NetworkFlowMonitorException     extends [AwsException](class-aws-exception-awsexception.md)   in package    - [Aws](package-aws.md)
 
 Represents an error interacting with the **Network Flow Monitor** service.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkFlowMonitor.Exception.NetworkFlowMonitorException.html\#toc)
+### Table of Contents  [header link](class-aws-networkflowmonitor-exception-networkflowmonitorexception-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkFlowMonitor.Exception.NetworkFlowMonitorException.html\#toc-methods)
+#### Methods  [header link](class-aws-networkflowmonitor-exception-networkflowmonitorexception-toc-methods.md)
 
 [\_\_construct()](class-aws-exception-awsexception.md#method___construct)
 : mixed [\_\_toString()](class-aws-exception-awsexception.md#method___toString)
@@ -50,7 +50,7 @@ array modification (e.g., $foo\['bar'\]\['baz'\] = 'qux').[offsetSet()](class-aw
 : mixed Replace the transfer information associated with an exception.[toArray()](class-aws-hasdatatrait.md#method_toArray)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkFlowMonitor.Exception.NetworkFlowMonitorException.html\#methods)
+### Methods  [header link](class-aws-networkflowmonitor-exception-networkflowmonitorexception-methods.md)
 
 #### \_\_construct()  [header link](class-aws-exception-awsexception.md\#method___construct)
 
@@ -446,7 +446,7 @@ $info
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkFlowMonitor.Exception.NetworkFlowMonitorException.html#toc-methods)
+  - [Methods](class-aws-networkflowmonitor-exception-networkflowmonitorexception-toc-methods.md)
 - Methods
   - [\_\_construct()](class-aws-exception-awsexception.md#method___construct)
   - [\_\_toString()](class-aws-exception-awsexception.md#method___toString)
@@ -479,4 +479,4 @@ $info
   - [setTransferInfo()](class-aws-exception-awsexception.md#method_setTransferInfo)
   - [toArray()](class-aws-hasdatatrait.md#method_toArray)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkFlowMonitor.Exception.NetworkFlowMonitorException.html#top)
+[Back To Top](class-aws-networkflowmonitor-exception-networkflowmonitorexception-top.md)

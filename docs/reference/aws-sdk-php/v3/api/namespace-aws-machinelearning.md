@@ -4,15 +4,15 @@ Menu
 
 ## MachineLearning
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.machinelearning.html\#toc)
+### Table of Contents  [header link](namespace-aws-machinelearning-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.machinelearning.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-machinelearning-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.machinelearning.exception.html)
+[Exception](namespace-aws-machinelearning-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.machinelearning.html\#toc-classes)
+#### Classes  [header link](namespace-aws-machinelearning-toc-classes.md)
 
-[MachineLearningClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MachineLearning.MachineLearningClient.html)Amazon Machine Learning client.
+[MachineLearningClient](class-aws-machinelearning-machinelearningclient.md)Amazon Machine Learning client.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.machinelearning.html#toc-classes)
+  - [Classes](namespace-aws-machinelearning-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.machinelearning.html#top)
+[Back To Top](namespace-aws-machinelearning-top.md)

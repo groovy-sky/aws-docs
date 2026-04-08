@@ -17,25 +17,25 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-02-27**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pi-2018-02-27.html)
+- [**2018-02-27**](api-pi-2018-02-27.md)
 
-  - [CreatePerformanceAnalysisReport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pi-2018-02-27.html#createperformanceanalysisreport)
-  - [DeletePerformanceAnalysisReport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pi-2018-02-27.html#deleteperformanceanalysisreport)
-  - [DescribeDimensionKeys](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pi-2018-02-27.html#describedimensionkeys)
-  - [GetDimensionKeyDetails](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pi-2018-02-27.html#getdimensionkeydetails)
-  - [GetPerformanceAnalysisReport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pi-2018-02-27.html#getperformanceanalysisreport)
-  - [GetResourceMetadata](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pi-2018-02-27.html#getresourcemetadata)
-  - [GetResourceMetrics](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pi-2018-02-27.html#getresourcemetrics)
-  - [ListAvailableResourceDimensions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pi-2018-02-27.html#listavailableresourcedimensions)
-  - [ListAvailableResourceMetrics](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pi-2018-02-27.html#listavailableresourcemetrics)
-  - [ListPerformanceAnalysisReports](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pi-2018-02-27.html#listperformanceanalysisreports)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pi-2018-02-27.html#listtagsforresource)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pi-2018-02-27.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-pi-2018-02-27.html#untagresource)
+  - [CreatePerformanceAnalysisReport](api-pi-2018-02-27-createperformanceanalysisreport.md)
+  - [DeletePerformanceAnalysisReport](api-pi-2018-02-27-deleteperformanceanalysisreport.md)
+  - [DescribeDimensionKeys](api-pi-2018-02-27-describedimensionkeys.md)
+  - [GetDimensionKeyDetails](api-pi-2018-02-27-getdimensionkeydetails.md)
+  - [GetPerformanceAnalysisReport](api-pi-2018-02-27-getperformanceanalysisreport.md)
+  - [GetResourceMetadata](api-pi-2018-02-27-getresourcemetadata.md)
+  - [GetResourceMetrics](api-pi-2018-02-27-getresourcemetrics.md)
+  - [ListAvailableResourceDimensions](api-pi-2018-02-27-listavailableresourcedimensions.md)
+  - [ListAvailableResourceMetrics](api-pi-2018-02-27-listavailableresourcemetrics.md)
+  - [ListPerformanceAnalysisReports](api-pi-2018-02-27-listperformanceanalysisreports.md)
+  - [ListTagsForResource](api-pi-2018-02-27-listtagsforresource.md)
+  - [TagResource](api-pi-2018-02-27-tagresource.md)
+  - [UntagResource](api-pi-2018-02-27-untagresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PI.PIClient.html\#toc)
+### Table of Contents  [header link](class-aws-pi-piclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PI.PIClient.html\#toc-methods)
+#### Methods  [header link](class-aws-pi-piclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -66,7 +66,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PI.PIClient.html\#methods)
+### Methods  [header link](class-aws-pi-piclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -533,7 +533,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PI.PIClient.html#toc-methods)
+  - [Methods](class-aws-pi-piclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -560,4 +560,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PI.PIClient.html#top)
+[Back To Top](class-aws-pi-piclient-top.md)

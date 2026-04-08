@@ -2,27 +2,27 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [Api](namespace-aws-api.md)
-- [Parser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.api.parser.html)
+- [Parser](namespace-aws-api-parser.md)
 
 ## NonSeekableStreamDecodingEventStreamIterator     extends DecodingEventStreamIterator   in package    - [Aws](package-aws.md)
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.NonSeekableStreamDecodingEventStreamIterator.html\#tags)
+##### Tags  [header link](class-aws-api-parser-nonseekablestreamdecodingeventstreamiterator-tags.md)
 
 inheritDoc
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.NonSeekableStreamDecodingEventStreamIterator.html\#toc)
+### Table of Contents  [header link](class-aws-api-parser-nonseekablestreamdecodingeventstreamiterator-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.NonSeekableStreamDecodingEventStreamIterator.html\#toc-methods)
+#### Methods  [header link](class-aws-api-parser-nonseekablestreamdecodingeventstreamiterator-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.NonSeekableStreamDecodingEventStreamIterator.html#method___construct)
-: mixed NonSeekableStreamDecodingEventStreamIterator constructor.[next()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.NonSeekableStreamDecodingEventStreamIterator.html#method_next)
-: mixed [rewind()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.NonSeekableStreamDecodingEventStreamIterator.html#method_rewind)
-: mixed [valid()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.NonSeekableStreamDecodingEventStreamIterator.html#method_valid)
+[\_\_construct()](class-aws-api-parser-nonseekablestreamdecodingeventstreamiterator-method-construct.md)
+: mixed NonSeekableStreamDecodingEventStreamIterator constructor.[next()](class-aws-api-parser-nonseekablestreamdecodingeventstreamiterator-method-next.md)
+: mixed [rewind()](class-aws-api-parser-nonseekablestreamdecodingeventstreamiterator-method-rewind.md)
+: mixed [valid()](class-aws-api-parser-nonseekablestreamdecodingeventstreamiterator-method-valid.md)
 : bool
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.NonSeekableStreamDecodingEventStreamIterator.html\#methods)
+### Methods  [header link](class-aws-api-parser-nonseekablestreamdecodingeventstreamiterator-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.NonSeekableStreamDecodingEventStreamIterator.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-api-parser-nonseekablestreamdecodingeventstreamiterator-method-construct.md)
 
 NonSeekableStreamDecodingEventStreamIterator constructor.
 
@@ -35,19 +35,19 @@ NonSeekableStreamDecodingEventStreamIterator constructor.
 $stream
 : [StreamInterface](class-psr-http-message-streaminterface.md)
 
-#### next()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.NonSeekableStreamDecodingEventStreamIterator.html\#method_next)
+#### next()  [header link](class-aws-api-parser-nonseekablestreamdecodingeventstreamiterator-method-next.md)
 
 `
     public
                     next() : mixed`
 
-#### rewind()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.NonSeekableStreamDecodingEventStreamIterator.html\#method_rewind)
+#### rewind()  [header link](class-aws-api-parser-nonseekablestreamdecodingeventstreamiterator-method-rewind.md)
 
 `
     public
                     rewind() : mixed`
 
-#### valid()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.NonSeekableStreamDecodingEventStreamIterator.html\#method_valid)
+#### valid()  [header link](class-aws-api-parser-nonseekablestreamdecodingeventstreamiterator-method-valid.md)
 
 `
     public
@@ -63,11 +63,11 @@ bool
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.NonSeekableStreamDecodingEventStreamIterator.html#toc-methods)
+  - [Methods](class-aws-api-parser-nonseekablestreamdecodingeventstreamiterator-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.NonSeekableStreamDecodingEventStreamIterator.html#method___construct)
-  - [next()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.NonSeekableStreamDecodingEventStreamIterator.html#method_next)
-  - [rewind()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.NonSeekableStreamDecodingEventStreamIterator.html#method_rewind)
-  - [valid()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.NonSeekableStreamDecodingEventStreamIterator.html#method_valid)
+  - [\_\_construct()](class-aws-api-parser-nonseekablestreamdecodingeventstreamiterator-method-construct.md)
+  - [next()](class-aws-api-parser-nonseekablestreamdecodingeventstreamiterator-method-next.md)
+  - [rewind()](class-aws-api-parser-nonseekablestreamdecodingeventstreamiterator-method-rewind.md)
+  - [valid()](class-aws-api-parser-nonseekablestreamdecodingeventstreamiterator-method-valid.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Parser.NonSeekableStreamDecodingEventStreamIterator.html#top)
+[Back To Top](class-aws-api-parser-nonseekablestreamdecodingeventstreamiterator-top.md)

@@ -17,38 +17,38 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2019-06-24**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html)
+- [**2019-06-24**](api-service-quotas-2019-06-24.md)
 
-  - [AssociateServiceQuotaTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#associateservicequotatemplate)
-  - [CreateSupportCase](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#createsupportcase)
-  - [DeleteServiceQuotaIncreaseRequestFromTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#deleteservicequotaincreaserequestfromtemplate)
-  - [DisassociateServiceQuotaTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#disassociateservicequotatemplate)
-  - [GetAWSDefaultServiceQuota](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#getawsdefaultservicequota)
-  - [GetAssociationForServiceQuotaTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#getassociationforservicequotatemplate)
-  - [GetAutoManagementConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#getautomanagementconfiguration)
-  - [GetQuotaUtilizationReport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#getquotautilizationreport)
-  - [GetRequestedServiceQuotaChange](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#getrequestedservicequotachange)
-  - [GetServiceQuota](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#getservicequota)
-  - [GetServiceQuotaIncreaseRequestFromTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#getservicequotaincreaserequestfromtemplate)
-  - [ListAWSDefaultServiceQuotas](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#listawsdefaultservicequotas)
-  - [ListRequestedServiceQuotaChangeHistory](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#listrequestedservicequotachangehistory)
-  - [ListRequestedServiceQuotaChangeHistoryByQuota](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#listrequestedservicequotachangehistorybyquota)
-  - [ListServiceQuotaIncreaseRequestsInTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#listservicequotaincreaserequestsintemplate)
-  - [ListServiceQuotas](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#listservicequotas)
-  - [ListServices](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#listservices)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#listtagsforresource)
-  - [PutServiceQuotaIncreaseRequestIntoTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#putservicequotaincreaserequestintotemplate)
-  - [RequestServiceQuotaIncrease](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#requestservicequotaincrease)
-  - [StartAutoManagement](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#startautomanagement)
-  - [StartQuotaUtilizationReport](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#startquotautilizationreport)
-  - [StopAutoManagement](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#stopautomanagement)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#untagresource)
-  - [UpdateAutoManagement](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-service-quotas-2019-06-24.html#updateautomanagement)
+  - [AssociateServiceQuotaTemplate](api-service-quotas-2019-06-24-associateservicequotatemplate.md)
+  - [CreateSupportCase](api-service-quotas-2019-06-24-createsupportcase.md)
+  - [DeleteServiceQuotaIncreaseRequestFromTemplate](api-service-quotas-2019-06-24-deleteservicequotaincreaserequestfromtemplate.md)
+  - [DisassociateServiceQuotaTemplate](api-service-quotas-2019-06-24-disassociateservicequotatemplate.md)
+  - [GetAWSDefaultServiceQuota](api-service-quotas-2019-06-24-getawsdefaultservicequota.md)
+  - [GetAssociationForServiceQuotaTemplate](api-service-quotas-2019-06-24-getassociationforservicequotatemplate.md)
+  - [GetAutoManagementConfiguration](api-service-quotas-2019-06-24-getautomanagementconfiguration.md)
+  - [GetQuotaUtilizationReport](api-service-quotas-2019-06-24-getquotautilizationreport.md)
+  - [GetRequestedServiceQuotaChange](api-service-quotas-2019-06-24-getrequestedservicequotachange.md)
+  - [GetServiceQuota](api-service-quotas-2019-06-24-getservicequota.md)
+  - [GetServiceQuotaIncreaseRequestFromTemplate](api-service-quotas-2019-06-24-getservicequotaincreaserequestfromtemplate.md)
+  - [ListAWSDefaultServiceQuotas](api-service-quotas-2019-06-24-listawsdefaultservicequotas.md)
+  - [ListRequestedServiceQuotaChangeHistory](api-service-quotas-2019-06-24-listrequestedservicequotachangehistory.md)
+  - [ListRequestedServiceQuotaChangeHistoryByQuota](api-service-quotas-2019-06-24-listrequestedservicequotachangehistorybyquota.md)
+  - [ListServiceQuotaIncreaseRequestsInTemplate](api-service-quotas-2019-06-24-listservicequotaincreaserequestsintemplate.md)
+  - [ListServiceQuotas](api-service-quotas-2019-06-24-listservicequotas.md)
+  - [ListServices](api-service-quotas-2019-06-24-listservices.md)
+  - [ListTagsForResource](api-service-quotas-2019-06-24-listtagsforresource.md)
+  - [PutServiceQuotaIncreaseRequestIntoTemplate](api-service-quotas-2019-06-24-putservicequotaincreaserequestintotemplate.md)
+  - [RequestServiceQuotaIncrease](api-service-quotas-2019-06-24-requestservicequotaincrease.md)
+  - [StartAutoManagement](api-service-quotas-2019-06-24-startautomanagement.md)
+  - [StartQuotaUtilizationReport](api-service-quotas-2019-06-24-startquotautilizationreport.md)
+  - [StopAutoManagement](api-service-quotas-2019-06-24-stopautomanagement.md)
+  - [TagResource](api-service-quotas-2019-06-24-tagresource.md)
+  - [UntagResource](api-service-quotas-2019-06-24-untagresource.md)
+  - [UpdateAutoManagement](api-service-quotas-2019-06-24-updateautomanagement.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServiceQuotas.ServiceQuotasClient.html\#toc)
+### Table of Contents  [header link](class-aws-servicequotas-servicequotasclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServiceQuotas.ServiceQuotasClient.html\#toc-methods)
+#### Methods  [header link](class-aws-servicequotas-servicequotasclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -79,7 +79,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServiceQuotas.ServiceQuotasClient.html\#methods)
+### Methods  [header link](class-aws-servicequotas-servicequotasclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -546,7 +546,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServiceQuotas.ServiceQuotasClient.html#toc-methods)
+  - [Methods](class-aws-servicequotas-servicequotasclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -573,4 +573,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ServiceQuotas.ServiceQuotasClient.html#top)
+[Back To Top](class-aws-servicequotas-servicequotasclient-top.md)

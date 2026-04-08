@@ -17,28 +17,28 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2021-07-15**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-meetings-2021-07-15.html)
+- [**2021-07-15**](api-chime-sdk-meetings-2021-07-15.md)
 
-  - [BatchCreateAttendee](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-meetings-2021-07-15.html#batchcreateattendee)
-  - [BatchUpdateAttendeeCapabilitiesExcept](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-meetings-2021-07-15.html#batchupdateattendeecapabilitiesexcept)
-  - [CreateAttendee](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-meetings-2021-07-15.html#createattendee)
-  - [CreateMeeting](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-meetings-2021-07-15.html#createmeeting)
-  - [CreateMeetingWithAttendees](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-meetings-2021-07-15.html#createmeetingwithattendees)
-  - [DeleteAttendee](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-meetings-2021-07-15.html#deleteattendee)
-  - [DeleteMeeting](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-meetings-2021-07-15.html#deletemeeting)
-  - [GetAttendee](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-meetings-2021-07-15.html#getattendee)
-  - [GetMeeting](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-meetings-2021-07-15.html#getmeeting)
-  - [ListAttendees](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-meetings-2021-07-15.html#listattendees)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-meetings-2021-07-15.html#listtagsforresource)
-  - [StartMeetingTranscription](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-meetings-2021-07-15.html#startmeetingtranscription)
-  - [StopMeetingTranscription](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-meetings-2021-07-15.html#stopmeetingtranscription)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-meetings-2021-07-15.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-meetings-2021-07-15.html#untagresource)
-  - [UpdateAttendeeCapabilities](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-chime-sdk-meetings-2021-07-15.html#updateattendeecapabilities)
+  - [BatchCreateAttendee](api-chime-sdk-meetings-2021-07-15-batchcreateattendee.md)
+  - [BatchUpdateAttendeeCapabilitiesExcept](api-chime-sdk-meetings-2021-07-15-batchupdateattendeecapabilitiesexcept.md)
+  - [CreateAttendee](api-chime-sdk-meetings-2021-07-15-createattendee.md)
+  - [CreateMeeting](api-chime-sdk-meetings-2021-07-15-createmeeting.md)
+  - [CreateMeetingWithAttendees](api-chime-sdk-meetings-2021-07-15-createmeetingwithattendees.md)
+  - [DeleteAttendee](api-chime-sdk-meetings-2021-07-15-deleteattendee.md)
+  - [DeleteMeeting](api-chime-sdk-meetings-2021-07-15-deletemeeting.md)
+  - [GetAttendee](api-chime-sdk-meetings-2021-07-15-getattendee.md)
+  - [GetMeeting](api-chime-sdk-meetings-2021-07-15-getmeeting.md)
+  - [ListAttendees](api-chime-sdk-meetings-2021-07-15-listattendees.md)
+  - [ListTagsForResource](api-chime-sdk-meetings-2021-07-15-listtagsforresource.md)
+  - [StartMeetingTranscription](api-chime-sdk-meetings-2021-07-15-startmeetingtranscription.md)
+  - [StopMeetingTranscription](api-chime-sdk-meetings-2021-07-15-stopmeetingtranscription.md)
+  - [TagResource](api-chime-sdk-meetings-2021-07-15-tagresource.md)
+  - [UntagResource](api-chime-sdk-meetings-2021-07-15-untagresource.md)
+  - [UpdateAttendeeCapabilities](api-chime-sdk-meetings-2021-07-15-updateattendeecapabilities.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKMeetings.ChimeSDKMeetingsClient.html\#toc)
+### Table of Contents  [header link](class-aws-chimesdkmeetings-chimesdkmeetingsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKMeetings.ChimeSDKMeetingsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-chimesdkmeetings-chimesdkmeetingsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -69,7 +69,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKMeetings.ChimeSDKMeetingsClient.html\#methods)
+### Methods  [header link](class-aws-chimesdkmeetings-chimesdkmeetingsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -536,7 +536,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKMeetings.ChimeSDKMeetingsClient.html#toc-methods)
+  - [Methods](class-aws-chimesdkmeetings-chimesdkmeetingsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -563,4 +563,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ChimeSDKMeetings.ChimeSDKMeetingsClient.html#top)
+[Back To Top](class-aws-chimesdkmeetings-chimesdkmeetingsclient-top.md)

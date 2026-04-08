@@ -7,12 +7,12 @@ Menu
 
 Amazon Machine Learning client.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MachineLearning.MachineLearningClient.html\#toc)
+### Table of Contents  [header link](class-aws-machinelearning-machinelearningclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MachineLearning.MachineLearningClient.html\#toc-methods)
+#### Methods  [header link](class-aws-machinelearning-machinelearningclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
-: mixed [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MachineLearning.MachineLearningClient.html#method___construct)
+: mixed [\_\_construct()](class-aws-machinelearning-machinelearningclient-method-construct.md)
 : mixed The client constructor accepts the following options:[\_\_sleep()](class-aws-awsclient.md#method___sleep)
 : mixed [execute()](class-aws-awsclienttrait.md#method_execute)
 : mixed [executeAsync()](class-aws-awsclienttrait.md#method_executeAsync)
@@ -40,7 +40,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MachineLearning.MachineLearningClient.html\#methods)
+### Methods  [header link](class-aws-machinelearning-machinelearningclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -54,7 +54,7 @@ $name
 : mixed$args
 : array<string\|int, mixed>
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MachineLearning.MachineLearningClient.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-machinelearning-machinelearningclient-method-construct.md)
 
 The client constructor accepts the following options:
 
@@ -498,10 +498,10 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MachineLearning.MachineLearningClient.html#toc-methods)
+  - [Methods](class-aws-machinelearning-machinelearningclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MachineLearning.MachineLearningClient.html#method___construct)
+  - [\_\_construct()](class-aws-machinelearning-machinelearningclient-method-construct.md)
   - [\_\_sleep()](class-aws-awsclient.md#method___sleep)
   - [execute()](class-aws-awsclienttrait.md#method_execute)
   - [executeAsync()](class-aws-awsclienttrait.md#method_executeAsync)
@@ -525,4 +525,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MachineLearning.MachineLearningClient.html#top)
+[Back To Top](class-aws-machinelearning-machinelearningclient-top.md)

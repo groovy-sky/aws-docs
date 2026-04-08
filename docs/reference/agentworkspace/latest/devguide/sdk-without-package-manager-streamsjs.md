@@ -106,7 +106,7 @@ connect.core.initCCP(ccpContainer, {
 4. The `AppManagerPlugin` is only required if hosting Connect
     first-party apps
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Building the script file
 

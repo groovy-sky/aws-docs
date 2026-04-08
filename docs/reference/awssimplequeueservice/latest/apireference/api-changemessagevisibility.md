@@ -59,7 +59,7 @@ received.
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -100,7 +100,7 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Errors](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Errors](commonerrors.md).
 
 **InvalidAddress**
 
@@ -156,7 +156,7 @@ HTTP Status Code: 400
 
 The following example queries request changes the visibility timeout for a message
 to 60 seconds. The structure of `AUTHPARAMS` depends on the signature of the API request.
-For more information, see [Examples of Signed Signature Version 4 Requests](https://docs.aws.amazon.com/general/latest/gr/sigv4-signed-request-examples.html) in the _AWS General Reference_.
+For more information, see [Examples of Signed Signature Version 4 Requests](../../../../general/general/latest/gr/sigv4-signed-request-examples.md) in the _AWS General Reference_.
 
 ### Example
 
@@ -231,27 +231,27 @@ HTTP/1.1 200 OK
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/sqs-2012-11-05/ChangeMessageVisibility)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/sqs-2012-11-05/changemessagevisibility.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/sqs-2012-11-05/ChangeMessageVisibility)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/sqs-2012-11-05/changemessagevisibility.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/sqs-2012-11-05/ChangeMessageVisibility)
+- [AWS SDK for C++](../../../goto/sdkforcpp/sqs-2012-11-05/changemessagevisibility.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/sqs-2012-11-05/ChangeMessageVisibility)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/sqs-2012-11-05/changemessagevisibility.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sqs-2012-11-05/ChangeMessageVisibility)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/sqs-2012-11-05/changemessagevisibility.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/sqs-2012-11-05/ChangeMessageVisibility)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/sqs-2012-11-05/changemessagevisibility.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/sqs-2012-11-05/ChangeMessageVisibility)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/sqs-2012-11-05/changemessagevisibility.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/sqs-2012-11-05/ChangeMessageVisibility)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/sqs-2012-11-05/changemessagevisibility.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/sqs-2012-11-05/ChangeMessageVisibility)
+- [AWS SDK for Python](../../../../services/goto/boto3/sqs-2012-11-05/changemessagevisibility.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sqs-2012-11-05/ChangeMessageVisibility)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/sqs-2012-11-05/changemessagevisibility.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CancelMessageMoveTask
 

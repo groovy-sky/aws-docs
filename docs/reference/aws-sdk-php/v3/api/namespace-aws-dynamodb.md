@@ -4,24 +4,24 @@ Menu
 
 ## DynamoDb
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dynamodb.html\#toc)
+### Table of Contents  [header link](namespace-aws-dynamodb-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dynamodb.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-dynamodb-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dynamodb.exception.html)
+[Exception](namespace-aws-dynamodb-exception.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dynamodb.html\#toc-interfaces)
+#### Interfaces  [header link](namespace-aws-dynamodb-toc-interfaces.md)
 
-[SessionConnectionInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionInterface.html)The session connection provides the underlying logic for interacting with
+[SessionConnectionInterface](class-aws-dynamodb-sessionconnectioninterface.md)The session connection provides the underlying logic for interacting with
 Amazon DynamoDB and performs all of the reading and writing operations.
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dynamodb.html\#toc-classes)
+#### Classes  [header link](namespace-aws-dynamodb-toc-classes.md)
 
-[BinaryValue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.BinaryValue.html)Special object to represent a DynamoDB binary (B) value.[DynamoDbClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.DynamoDbClient.html)This client is used to interact with the **Amazon DynamoDB** service.[LockingSessionConnection](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.LockingSessionConnection.html)This client is used to interact with the **Amazon DynamoDB** service.[Marshaler](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.Marshaler.html)This client is used to interact with the **Amazon DynamoDB** service.[NumberValue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.NumberValue.html)This client is used to interact with the **Amazon DynamoDB** service.[SessionHandler](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionHandler.html)This client is used to interact with the **Amazon DynamoDB** service.[SetValue](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SetValue.html)This client is used to interact with the **Amazon DynamoDB** service.[StandardSessionConnection](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.StandardSessionConnection.html)This client is used to interact with the **Amazon DynamoDB** service.[WriteRequestBatch](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.WriteRequestBatch.html)This client is used to interact with the **Amazon DynamoDB** service.
+[BinaryValue](class-aws-dynamodb-binaryvalue.md)Special object to represent a DynamoDB binary (B) value.[DynamoDbClient](class-aws-dynamodb-dynamodbclient.md)This client is used to interact with the **Amazon DynamoDB** service.[LockingSessionConnection](class-aws-dynamodb-lockingsessionconnection.md)This client is used to interact with the **Amazon DynamoDB** service.[Marshaler](class-aws-dynamodb-marshaler.md)This client is used to interact with the **Amazon DynamoDB** service.[NumberValue](class-aws-dynamodb-numbervalue.md)This client is used to interact with the **Amazon DynamoDB** service.[SessionHandler](class-aws-dynamodb-sessionhandler.md)This client is used to interact with the **Amazon DynamoDB** service.[SetValue](class-aws-dynamodb-setvalue.md)This client is used to interact with the **Amazon DynamoDB** service.[StandardSessionConnection](class-aws-dynamodb-standardsessionconnection.md)This client is used to interact with the **Amazon DynamoDB** service.[WriteRequestBatch](class-aws-dynamodb-writerequestbatch.md)This client is used to interact with the **Amazon DynamoDB** service.
 
-#### Traits  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dynamodb.html\#toc-traits)
+#### Traits  [header link](namespace-aws-dynamodb-toc-traits.md)
 
-[SessionConnectionConfigTrait](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.DynamoDb.SessionConnectionConfigTrait.html)
+[SessionConnectionConfigTrait](class-aws-dynamodb-sessionconnectionconfigtrait.md)
 
 ```
 
@@ -32,8 +32,8 @@ Amazon DynamoDB and performs all of the reading and writing operations.
 **On this page**
 
 - Table Of Contents
-  - [Interfaces](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dynamodb.html#toc-interfaces)
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dynamodb.html#toc-classes)
-  - [Traits](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dynamodb.html#toc-traits)
+  - [Interfaces](namespace-aws-dynamodb-toc-interfaces.md)
+  - [Classes](namespace-aws-dynamodb-toc-classes.md)
+  - [Traits](namespace-aws-dynamodb-toc-traits.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.dynamodb.html#top)
+[Back To Top](namespace-aws-dynamodb-top.md)

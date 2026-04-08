@@ -4,13 +4,13 @@ Menu
 
 ## Promise
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.promise.html\#toc)
+### Table of Contents  [header link](namespace-guzzlehttp-promise-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.promise.html\#toc-interfaces)
+#### Interfaces  [header link](namespace-guzzlehttp-promise-toc-interfaces.md)
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)A promise represents the eventual result of an asynchronous operation.[PromisorInterface](class-guzzlehttp-promise-promisorinterface.md)Interface used with classes that return a promise.[TaskQueueInterface](class-guzzlehttp-promise-taskqueueinterface.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.promise.html\#toc-classes)
+#### Classes  [header link](namespace-guzzlehttp-promise-toc-classes.md)
 
 [AggregateException](class-guzzlehttp-promise-aggregateexception.md)Exception thrown when too many errors occur in the some() or any() methods.[CancellationException](class-guzzlehttp-promise-cancellationexception.md)Exception that is set as the reason for a promise that has been cancelled.[Coroutine](class-guzzlehttp-promise-coroutine.md)Creates a promise that is resolved using a generator that yields values or
 promises (somewhat similar to C#'s async keyword).[Create](class-guzzlehttp-promise-create.md)[Each](class-guzzlehttp-promise-each.md)[EachPromise](class-guzzlehttp-promise-eachpromise.md)Represents a promise that iterates over many promises and invokes
@@ -25,7 +25,7 @@ side-effect functions in the process.[FulfilledPromise](class-guzzlehttp-promise
 **On this page**
 
 - Table Of Contents
-  - [Interfaces](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.promise.html#toc-interfaces)
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.promise.html#toc-classes)
+  - [Interfaces](namespace-guzzlehttp-promise-toc-interfaces.md)
+  - [Classes](namespace-guzzlehttp-promise-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.promise.html#top)
+[Back To Top](namespace-guzzlehttp-promise-top.md)

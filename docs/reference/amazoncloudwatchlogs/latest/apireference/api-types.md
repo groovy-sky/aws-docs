@@ -10,33 +10,33 @@ The following data types are supported:
 
 - [AccountPolicy](api-accountpolicy.md)
 
-- [AddKeyEntry](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_AddKeyEntry.html)
+- [AddKeyEntry](api-addkeyentry.md)
 
-- [AddKeys](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_AddKeys.html)
+- [AddKeys](api-addkeys.md)
 
-- [AggregateLogGroupSummary](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_AggregateLogGroupSummary.html)
+- [AggregateLogGroupSummary](api-aggregateloggroupsummary.md)
 
 - [Anomaly](api-anomaly.md)
 
-- [AnomalyDetector](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_AnomalyDetector.html)
+- [AnomalyDetector](api-anomalydetector.md)
 
-- [ConfigurationTemplate](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ConfigurationTemplate.html)
+- [ConfigurationTemplate](api-configurationtemplate.md)
 
-- [ConfigurationTemplateDeliveryConfigValues](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ConfigurationTemplateDeliveryConfigValues.html)
+- [ConfigurationTemplateDeliveryConfigValues](api-configurationtemplatedeliveryconfigvalues.md)
 
-- [CopyValue](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CopyValue.html)
+- [CopyValue](api-copyvalue.md)
 
-- [CopyValueEntry](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CopyValueEntry.html)
+- [CopyValueEntry](api-copyvalueentry.md)
 
-- [CSV](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CSV.html)
+- [CSV](api-csv.md)
 
-- [DataSource](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DataSource.html)
+- [DataSource](api-datasource.md)
 
-- [DataSourceFilter](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DataSourceFilter.html)
+- [DataSourceFilter](api-datasourcefilter.md)
 
-- [DateTimeConverter](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DateTimeConverter.html)
+- [DateTimeConverter](api-datetimeconverter.md)
 
-- [DeleteKeys](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DeleteKeys.html)
+- [DeleteKeys](api-deletekeys.md)
 
 - [Delivery](api-delivery.md)
 
@@ -46,47 +46,47 @@ The following data types are supported:
 
 - [DeliverySource](api-deliverysource.md)
 
-- [Destination](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_Destination.html)
+- [Destination](api-destination.md)
 
-- [DestinationConfiguration](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DestinationConfiguration.html)
+- [DestinationConfiguration](api-destinationconfiguration.md)
 
 - [Entity](api-entity.md)
 
-- [ExportTask](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ExportTask.html)
+- [ExportTask](api-exporttask.md)
 
-- [ExportTaskExecutionInfo](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ExportTaskExecutionInfo.html)
+- [ExportTaskExecutionInfo](api-exporttaskexecutioninfo.md)
 
-- [ExportTaskStatus](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ExportTaskStatus.html)
+- [ExportTaskStatus](api-exporttaskstatus.md)
 
 - [FieldIndex](api-fieldindex.md)
 
-- [FieldsData](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_FieldsData.html)
+- [FieldsData](api-fieldsdata.md)
 
 - [FilteredLogEvent](api-filteredlogevent.md)
 
-- [GetLogObjectResponseStream](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_GetLogObjectResponseStream.html)
+- [GetLogObjectResponseStream](api-getlogobjectresponsestream.md)
 
-- [Grok](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_Grok.html)
+- [Grok](api-grok.md)
 
-- [GroupingIdentifier](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_GroupingIdentifier.html)
+- [GroupingIdentifier](api-groupingidentifier.md)
 
-- [Import](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_Import.html)
+- [Import](api-import.md)
 
-- [ImportBatch](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ImportBatch.html)
+- [ImportBatch](api-importbatch.md)
 
-- [ImportFilter](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ImportFilter.html)
+- [ImportFilter](api-importfilter.md)
 
-- [ImportStatistics](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ImportStatistics.html)
+- [ImportStatistics](api-importstatistics.md)
 
-- [IndexPolicy](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_IndexPolicy.html)
+- [IndexPolicy](api-indexpolicy.md)
 
 - [InputLogEvent](api-inputlogevent.md)
 
-- [IntegrationDetails](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_IntegrationDetails.html)
+- [IntegrationDetails](api-integrationdetails.md)
 
-- [IntegrationSummary](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_IntegrationSummary.html)
+- [IntegrationSummary](api-integrationsummary.md)
 
-- [ListToMap](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ListToMap.html)
+- [ListToMap](api-listtomap.md)
 
 - [LiveTailSessionLogEvent](api-livetailsessionlogevent.md)
 
@@ -98,145 +98,145 @@ The following data types are supported:
 
 - [LogEvent](api-logevent.md)
 
-- [LogFieldsListItem](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_LogFieldsListItem.html)
+- [LogFieldsListItem](api-logfieldslistitem.md)
 
-- [LogFieldType](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_LogFieldType.html)
+- [LogFieldType](api-logfieldtype.md)
 
-- [LogGroup](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_LogGroup.html)
+- [LogGroup](api-loggroup.md)
 
-- [LogGroupField](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_LogGroupField.html)
+- [LogGroupField](api-loggroupfield.md)
 
-- [LogGroupSummary](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_LogGroupSummary.html)
+- [LogGroupSummary](api-loggroupsummary.md)
 
-- [LogStream](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_LogStream.html)
+- [LogStream](api-logstream.md)
 
-- [LookupTable](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_LookupTable.html)
+- [LookupTable](api-lookuptable.md)
 
-- [LowerCaseString](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_LowerCaseString.html)
+- [LowerCaseString](api-lowercasestring.md)
 
-- [MetricFilter](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_MetricFilter.html)
+- [MetricFilter](api-metricfilter.md)
 
-- [MetricFilterMatchRecord](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_MetricFilterMatchRecord.html)
+- [MetricFilterMatchRecord](api-metricfiltermatchrecord.md)
 
-- [MetricTransformation](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_MetricTransformation.html)
+- [MetricTransformation](api-metrictransformation.md)
 
-- [MoveKeyEntry](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_MoveKeyEntry.html)
+- [MoveKeyEntry](api-movekeyentry.md)
 
-- [MoveKeys](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_MoveKeys.html)
+- [MoveKeys](api-movekeys.md)
 
-- [OpenSearchApplication](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_OpenSearchApplication.html)
+- [OpenSearchApplication](api-opensearchapplication.md)
 
-- [OpenSearchCollection](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_OpenSearchCollection.html)
+- [OpenSearchCollection](api-opensearchcollection.md)
 
-- [OpenSearchDataAccessPolicy](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_OpenSearchDataAccessPolicy.html)
+- [OpenSearchDataAccessPolicy](api-opensearchdataaccesspolicy.md)
 
-- [OpenSearchDataSource](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_OpenSearchDataSource.html)
+- [OpenSearchDataSource](api-opensearchdatasource.md)
 
-- [OpenSearchEncryptionPolicy](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_OpenSearchEncryptionPolicy.html)
+- [OpenSearchEncryptionPolicy](api-opensearchencryptionpolicy.md)
 
-- [OpenSearchIntegrationDetails](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_OpenSearchIntegrationDetails.html)
+- [OpenSearchIntegrationDetails](api-opensearchintegrationdetails.md)
 
-- [OpenSearchLifecyclePolicy](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_OpenSearchLifecyclePolicy.html)
+- [OpenSearchLifecyclePolicy](api-opensearchlifecyclepolicy.md)
 
-- [OpenSearchNetworkPolicy](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_OpenSearchNetworkPolicy.html)
+- [OpenSearchNetworkPolicy](api-opensearchnetworkpolicy.md)
 
-- [OpenSearchResourceConfig](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_OpenSearchResourceConfig.html)
+- [OpenSearchResourceConfig](api-opensearchresourceconfig.md)
 
-- [OpenSearchResourceStatus](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_OpenSearchResourceStatus.html)
+- [OpenSearchResourceStatus](api-opensearchresourcestatus.md)
 
-- [OpenSearchWorkspace](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_OpenSearchWorkspace.html)
+- [OpenSearchWorkspace](api-opensearchworkspace.md)
 
 - [OutputLogEvent](api-outputlogevent.md)
 
-- [ParseCloudfront](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ParseCloudfront.html)
+- [ParseCloudfront](api-parsecloudfront.md)
 
-- [ParseJSON](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ParseJSON.html)
+- [ParseJSON](api-parsejson.md)
 
-- [ParseKeyValue](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ParseKeyValue.html)
+- [ParseKeyValue](api-parsekeyvalue.md)
 
-- [ParsePostgres](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ParsePostgres.html)
+- [ParsePostgres](api-parsepostgres.md)
 
-- [ParseRoute53](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ParseRoute53.html)
+- [ParseRoute53](api-parseroute53.md)
 
-- [ParseToOCSF](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ParseToOCSF.html)
+- [ParseToOCSF](api-parsetoocsf.md)
 
-- [ParseVPC](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ParseVPC.html)
+- [ParseVPC](api-parsevpc.md)
 
-- [ParseWAF](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ParseWAF.html)
+- [ParseWAF](api-parsewaf.md)
 
 - [PatternToken](api-patterntoken.md)
 
 - [Policy](api-policy.md)
 
-- [Processor](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_Processor.html)
+- [Processor](api-processor.md)
 
 - [QueryCompileError](api-querycompileerror.md)
 
-- [QueryCompileErrorLocation](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_QueryCompileErrorLocation.html)
+- [QueryCompileErrorLocation](api-querycompileerrorlocation.md)
 
-- [QueryDefinition](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_QueryDefinition.html)
+- [QueryDefinition](api-querydefinition.md)
 
-- [QueryInfo](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_QueryInfo.html)
+- [QueryInfo](api-queryinfo.md)
 
-- [QueryParameter](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_QueryParameter.html)
+- [QueryParameter](api-queryparameter.md)
 
-- [QueryStatistics](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_QueryStatistics.html)
+- [QueryStatistics](api-querystatistics.md)
 
-- [RecordField](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_RecordField.html)
+- [RecordField](api-recordfield.md)
 
 - [RejectedEntityInfo](api-rejectedentityinfo.md)
 
 - [RejectedLogEventsInfo](api-rejectedlogeventsinfo.md)
 
-- [RenameKeyEntry](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_RenameKeyEntry.html)
+- [RenameKeyEntry](api-renamekeyentry.md)
 
-- [RenameKeys](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_RenameKeys.html)
+- [RenameKeys](api-renamekeys.md)
 
-- [ResourceConfig](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ResourceConfig.html)
+- [ResourceConfig](api-resourceconfig.md)
 
-- [ResourcePolicy](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ResourcePolicy.html)
+- [ResourcePolicy](api-resourcepolicy.md)
 
-- [ResultField](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ResultField.html)
+- [ResultField](api-resultfield.md)
 
-- [S3Configuration](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_S3Configuration.html)
+- [S3Configuration](api-s3configuration.md)
 
 - [S3DeliveryConfiguration](api-s3deliveryconfiguration.md)
 
-- [S3TableIntegrationSource](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_S3TableIntegrationSource.html)
+- [S3TableIntegrationSource](api-s3tableintegrationsource.md)
 
-- [ScheduledQueryDestination](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ScheduledQueryDestination.html)
+- [ScheduledQueryDestination](api-scheduledquerydestination.md)
 
-- [ScheduledQuerySummary](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ScheduledQuerySummary.html)
+- [ScheduledQuerySummary](api-scheduledquerysummary.md)
 
 - [SearchedLogStream](api-searchedlogstream.md)
 
-- [SplitString](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_SplitString.html)
+- [SplitString](api-splitstring.md)
 
-- [SplitStringEntry](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_SplitStringEntry.html)
+- [SplitStringEntry](api-splitstringentry.md)
 
 - [StartLiveTailResponseStream](api-startlivetailresponsestream.md)
 
-- [SubscriptionFilter](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_SubscriptionFilter.html)
+- [SubscriptionFilter](api-subscriptionfilter.md)
 
-- [SubstituteString](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_SubstituteString.html)
+- [SubstituteString](api-substitutestring.md)
 
-- [SubstituteStringEntry](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_SubstituteStringEntry.html)
+- [SubstituteStringEntry](api-substitutestringentry.md)
 
-- [SuppressionPeriod](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_SuppressionPeriod.html)
+- [SuppressionPeriod](api-suppressionperiod.md)
 
-- [TransformedLogRecord](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_TransformedLogRecord.html)
+- [TransformedLogRecord](api-transformedlogrecord.md)
 
-- [TriggerHistoryRecord](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_TriggerHistoryRecord.html)
+- [TriggerHistoryRecord](api-triggerhistoryrecord.md)
 
-- [TrimString](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_TrimString.html)
+- [TrimString](api-trimstring.md)
 
-- [TypeConverter](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_TypeConverter.html)
+- [TypeConverter](api-typeconverter.md)
 
-- [TypeConverterEntry](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_TypeConverterEntry.html)
+- [TypeConverterEntry](api-typeconverterentry.md)
 
-- [UpperCaseString](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_UpperCaseString.html)
+- [UpperCaseString](api-uppercasestring.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 UpdateScheduledQuery
 

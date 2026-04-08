@@ -8,27 +8,27 @@ Menu
 Uploads an object to S3, using a PutObject command or a multipart upload as
 appropriate.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectUploader.html\#toc)
+### Table of Contents  [header link](class-aws-s3-objectuploader-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectUploader.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-s3-objectuploader-toc-interfaces.md)
 
 [PromisorInterface](class-guzzlehttp-promise-promisorinterface.md)Interface used with classes that return a promise.
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectUploader.html\#toc-constants)
+#### Constants  [header link](class-aws-s3-objectuploader-toc-constants.md)
 
-[DEFAULT\_MULTIPART\_THRESHOLD](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectUploader.html#constant_DEFAULT_MULTIPART_THRESHOLD)
+[DEFAULT\_MULTIPART\_THRESHOLD](class-aws-s3-objectuploader-constant-default-multipart-threshold.md)
 = 16777216
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectUploader.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-objectuploader-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectUploader.html#method___construct)
-: mixed [promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectUploader.html#method_promise)
-: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Returns a promise.[upload()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectUploader.html#method_upload)
+[\_\_construct()](class-aws-s3-objectuploader-method-construct.md)
+: mixed [promise()](class-aws-s3-objectuploader-method-promise.md)
+: [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Returns a promise.[upload()](class-aws-s3-objectuploader-method-upload.md)
 : mixed
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectUploader.html\#constants)
+### Constants  [header link](class-aws-s3-objectuploader-constants.md)
 
-#### DEFAULT\_MULTIPART\_THRESHOLD  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectUploader.html\#constant_DEFAULT_MULTIPART_THRESHOLD)
+#### DEFAULT\_MULTIPART\_THRESHOLD  [header link](class-aws-s3-objectuploader-constant-default-multipart-threshold.md)
 
 `
     public
@@ -37,9 +37,9 @@ appropriate.
     = 16777216
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectUploader.html\#methods)
+### Methods  [header link](class-aws-s3-objectuploader-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectUploader.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-objectuploader-method-construct.md)
 
 `
     public
@@ -88,7 +88,7 @@ copy process. Options passed in
 through 'params' are added to
 the sub command(s).
 
-#### promise()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectUploader.html\#method_promise)
+#### promise()  [header link](class-aws-s3-objectuploader-method-promise.md)
 
 Returns a promise.
 
@@ -100,7 +100,7 @@ Returns a promise.
 
 [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)
 
-#### upload()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectUploader.html\#method_upload)
+#### upload()  [header link](class-aws-s3-objectuploader-method-upload.md)
 
 `
     public
@@ -113,13 +113,13 @@ Returns a promise.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectUploader.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectUploader.html#toc-methods)
+  - [Constants](class-aws-s3-objectuploader-toc-constants.md)
+  - [Methods](class-aws-s3-objectuploader-toc-methods.md)
 - Constants
-  - [DEFAULT\_MULTIPART\_THRESHOLD](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectUploader.html#constant_DEFAULT_MULTIPART_THRESHOLD)
+  - [DEFAULT\_MULTIPART\_THRESHOLD](class-aws-s3-objectuploader-constant-default-multipart-threshold.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectUploader.html#method___construct)
-  - [promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectUploader.html#method_promise)
-  - [upload()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectUploader.html#method_upload)
+  - [\_\_construct()](class-aws-s3-objectuploader-method-construct.md)
+  - [promise()](class-aws-s3-objectuploader-method-promise.md)
+  - [upload()](class-aws-s3-objectuploader-method-upload.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.ObjectUploader.html#top)
+[Back To Top](class-aws-s3-objectuploader-top.md)

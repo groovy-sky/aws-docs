@@ -4,11 +4,11 @@ Menu
 
 ## Script
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.script.html\#toc)
+### Table of Contents  [header link](namespace-aws-script-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.script.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-script-namespaces.md)
 
-[Composer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.script.composer.html)
+[Composer](namespace-aws-script-composer.md)
 
 ```
 
@@ -20,4 +20,4 @@ Menu
 
 - Table Of Contents
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.script.html#top)
+[Back To Top](namespace-aws-script-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## Route53RecoveryReadiness
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53recoveryreadiness.html\#toc)
+### Table of Contents  [header link](namespace-aws-route53recoveryreadiness-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53recoveryreadiness.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-route53recoveryreadiness-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53recoveryreadiness.exception.html)
+[Exception](namespace-aws-route53recoveryreadiness-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53recoveryreadiness.html\#toc-classes)
+#### Classes  [header link](namespace-aws-route53recoveryreadiness-toc-classes.md)
 
-[Route53RecoveryReadinessClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53RecoveryReadiness.Route53RecoveryReadinessClient.html)This client is used to interact with the **AWS Route53 Recovery Readiness** service.
+[Route53RecoveryReadinessClient](class-aws-route53recoveryreadiness-route53recoveryreadinessclient.md)This client is used to interact with the **AWS Route53 Recovery Readiness** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53recoveryreadiness.html#toc-classes)
+  - [Classes](namespace-aws-route53recoveryreadiness-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53recoveryreadiness.html#top)
+[Back To Top](namespace-aws-route53recoveryreadiness-top.md)

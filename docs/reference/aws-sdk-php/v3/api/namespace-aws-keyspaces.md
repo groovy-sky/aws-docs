@@ -4,15 +4,15 @@ Menu
 
 ## Keyspaces
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.keyspaces.html\#toc)
+### Table of Contents  [header link](namespace-aws-keyspaces-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.keyspaces.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-keyspaces-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.keyspaces.exception.html)
+[Exception](namespace-aws-keyspaces-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.keyspaces.html\#toc-classes)
+#### Classes  [header link](namespace-aws-keyspaces-toc-classes.md)
 
-[KeyspacesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Keyspaces.KeyspacesClient.html)This client is used to interact with the **Amazon Keyspaces** service.
+[KeyspacesClient](class-aws-keyspaces-keyspacesclient.md)This client is used to interact with the **Amazon Keyspaces** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.keyspaces.html#toc-classes)
+  - [Classes](namespace-aws-keyspaces-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.keyspaces.html#top)
+[Back To Top](namespace-aws-keyspaces-top.md)

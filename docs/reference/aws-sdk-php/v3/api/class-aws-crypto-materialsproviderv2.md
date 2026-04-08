@@ -7,25 +7,25 @@ Menu
 
 AbstractYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV2.html\#toc)
+### Table of Contents  [header link](class-aws-crypto-materialsproviderv2-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV2.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-crypto-materialsproviderv2-toc-interfaces.md)
 
 [MaterialsProviderInterfaceV2](class-aws-crypto-materialsproviderinterfacev2.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV2.html\#toc-methods)
+#### Methods  [header link](class-aws-crypto-materialsproviderv2-toc-methods.md)
 
-[decryptCek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV2.html#method_decryptCek)
+[decryptCek()](class-aws-crypto-materialsproviderv2-method-decryptcek.md)
 : string Takes an encrypted content encryption key (CEK) and material description
-for use decrypting the key according to the Provider's specifications.[generateCek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV2.html#method_generateCek)
-: array<string\|int, mixed> [generateIv()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV2.html#method_generateIv)
-: string [getWrapAlgorithmName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV2.html#method_getWrapAlgorithmName)
-: string Returns the wrap algorithm name for this Provider.[isSupportedKeySize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV2.html#method_isSupportedKeySize)
+for use decrypting the key according to the Provider's specifications.[generateCek()](class-aws-crypto-materialsproviderv2-method-generatecek.md)
+: array<string\|int, mixed> [generateIv()](class-aws-crypto-materialsproviderv2-method-generateiv.md)
+: string [getWrapAlgorithmName()](class-aws-crypto-materialsproviderv2-method-getwrapalgorithmname.md)
+: string Returns the wrap algorithm name for this Provider.[isSupportedKeySize()](class-aws-crypto-materialsproviderv2-method-issupportedkeysize.md)
 : bool Returns if the requested size is supported by AES.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV2.html\#methods)
+### Methods  [header link](class-aws-crypto-materialsproviderv2-methods.md)
 
-#### decryptCek()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV2.html\#method_decryptCek)
+#### decryptCek()  [header link](class-aws-crypto-materialsproviderv2-method-decryptcek.md)
 
 Takes an encrypted content encryption key (CEK) and material description
 for use decrypting the key according to the Provider's specifications.
@@ -57,7 +57,7 @@ Options for use in decrypting the CEK.
 
 string
 
-#### generateCek()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV2.html\#method_generateCek)
+#### generateCek()  [header link](class-aws-crypto-materialsproviderv2-method-generatecek.md)
 
 `
     public
@@ -85,7 +85,7 @@ Additional options to be used in CEK generation
 
 array<string\|int, mixed>
 
-#### generateIv()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV2.html\#method_generateIv)
+#### generateIv()  [header link](class-aws-crypto-materialsproviderv2-method-generateiv.md)
 
 `
     public
@@ -103,7 +103,7 @@ an initialization vector.
 
 string
 
-#### getWrapAlgorithmName()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV2.html\#method_getWrapAlgorithmName)
+#### getWrapAlgorithmName()  [header link](class-aws-crypto-materialsproviderv2-method-getwrapalgorithmname.md)
 
 Returns the wrap algorithm name for this Provider.
 
@@ -115,7 +115,7 @@ Returns the wrap algorithm name for this Provider.
 
 string
 
-#### isSupportedKeySize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV2.html\#method_isSupportedKeySize)
+#### isSupportedKeySize()  [header link](class-aws-crypto-materialsproviderv2-method-issupportedkeysize.md)
 
 Returns if the requested size is supported by AES.
 
@@ -140,12 +140,12 @@ bool
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV2.html#toc-methods)
+  - [Methods](class-aws-crypto-materialsproviderv2-toc-methods.md)
 - Methods
-  - [decryptCek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV2.html#method_decryptCek)
-  - [generateCek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV2.html#method_generateCek)
-  - [generateIv()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV2.html#method_generateIv)
-  - [getWrapAlgorithmName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV2.html#method_getWrapAlgorithmName)
-  - [isSupportedKeySize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV2.html#method_isSupportedKeySize)
+  - [decryptCek()](class-aws-crypto-materialsproviderv2-method-decryptcek.md)
+  - [generateCek()](class-aws-crypto-materialsproviderv2-method-generatecek.md)
+  - [generateIv()](class-aws-crypto-materialsproviderv2-method-generateiv.md)
+  - [getWrapAlgorithmName()](class-aws-crypto-materialsproviderv2-method-getwrapalgorithmname.md)
+  - [isSupportedKeySize()](class-aws-crypto-materialsproviderv2-method-issupportedkeysize.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.MaterialsProviderV2.html#top)
+[Back To Top](class-aws-crypto-materialsproviderv2-top.md)

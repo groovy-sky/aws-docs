@@ -4,15 +4,15 @@ Menu
 
 ## ECRPublic
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ecrpublic.html\#toc)
+### Table of Contents  [header link](namespace-aws-ecrpublic-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ecrpublic.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-ecrpublic-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ecrpublic.exception.html)
+[Exception](namespace-aws-ecrpublic-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ecrpublic.html\#toc-classes)
+#### Classes  [header link](namespace-aws-ecrpublic-toc-classes.md)
 
-[ECRPublicClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ECRPublic.ECRPublicClient.html)This client is used to interact with the **Amazon Elastic Container Registry Public** service.
+[ECRPublicClient](class-aws-ecrpublic-ecrpublicclient.md)This client is used to interact with the **Amazon Elastic Container Registry Public** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ecrpublic.html#toc-classes)
+  - [Classes](namespace-aws-ecrpublic-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ecrpublic.html#top)
+[Back To Top](namespace-aws-ecrpublic-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## QConnect
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.qconnect.html\#toc)
+### Table of Contents  [header link](namespace-aws-qconnect-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.qconnect.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-qconnect-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.qconnect.exception.html)
+[Exception](namespace-aws-qconnect-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.qconnect.html\#toc-classes)
+#### Classes  [header link](namespace-aws-qconnect-toc-classes.md)
 
-[QConnectClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.QConnect.QConnectClient.html)This client is used to interact with the **Amazon Q Connect** service.
+[QConnectClient](class-aws-qconnect-qconnectclient.md)This client is used to interact with the **Amazon Q Connect** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.qconnect.html#toc-classes)
+  - [Classes](namespace-aws-qconnect-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.qconnect.html#top)
+[Back To Top](namespace-aws-qconnect-top.md)

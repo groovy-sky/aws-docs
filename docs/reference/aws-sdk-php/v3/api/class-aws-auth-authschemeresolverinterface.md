@@ -7,16 +7,16 @@ Menu
 
 An AuthSchemeResolver object determines which auth scheme will be used for request signing.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolverInterface.html\#toc)
+### Table of Contents  [header link](class-aws-auth-authschemeresolverinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolverInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-auth-authschemeresolverinterface-toc-methods.md)
 
-[selectAuthScheme()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolverInterface.html#method_selectAuthScheme)
+[selectAuthScheme()](class-aws-auth-authschemeresolverinterface-method-selectauthscheme.md)
 : string\|null Selects an auth scheme for request signing.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolverInterface.html\#methods)
+### Methods  [header link](class-aws-auth-authschemeresolverinterface-methods.md)
 
-#### selectAuthScheme()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolverInterface.html\#method_selectAuthScheme)
+#### selectAuthScheme()  [header link](class-aws-auth-authschemeresolverinterface-method-selectauthscheme.md)
 
 Selects an auth scheme for request signing.
 
@@ -44,9 +44,9 @@ string\|null
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolverInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolverInterface.html#toc-methods)
+  - [Constants](class-aws-auth-authschemeresolverinterface-toc-constants.md)
+  - [Methods](class-aws-auth-authschemeresolverinterface-toc-methods.md)
 - Methods
-  - [selectAuthScheme()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolverInterface.html#method_selectAuthScheme)
+  - [selectAuthScheme()](class-aws-auth-authschemeresolverinterface-method-selectauthscheme.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolverInterface.html#top)
+[Back To Top](class-aws-auth-authschemeresolverinterface-top.md)

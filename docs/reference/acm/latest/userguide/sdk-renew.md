@@ -5,7 +5,7 @@ by a private certificate authority (CA) and exported with the [ExportCertificate
 this time, only exported private certificates can be renewed with this function. In
 order to renew your AWS Private CA certificates with ACM, you must first grant the ACM
 service principal permissions to do so. For more information, see [Assigning Certificate\
-Renewal Permissions to ACM](https://docs.aws.amazon.com/privateca/latest/userguide/assign-permissions.html#PcaPermissions).
+Renewal Permissions to ACM](../../../../services/privateca/latest/userguide/assign-permissions-pcapermissions.md).
 
 ```java
 
@@ -83,7 +83,7 @@ public class RenewCertificate {
 }
 ```
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ListCertificates
 

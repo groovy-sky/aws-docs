@@ -4,15 +4,15 @@ Menu
 
 ## OpenSearchService
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.opensearchservice.html\#toc)
+### Table of Contents  [header link](namespace-aws-opensearchservice-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.opensearchservice.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-opensearchservice-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.opensearchservice.exception.html)
+[Exception](namespace-aws-opensearchservice-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.opensearchservice.html\#toc-classes)
+#### Classes  [header link](namespace-aws-opensearchservice-toc-classes.md)
 
-[OpenSearchServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.OpenSearchService.OpenSearchServiceClient.html)This client is used to interact with the **Amazon OpenSearch Service** service.
+[OpenSearchServiceClient](class-aws-opensearchservice-opensearchserviceclient.md)This client is used to interact with the **Amazon OpenSearch Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.opensearchservice.html#toc-classes)
+  - [Classes](namespace-aws-opensearchservice-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.opensearchservice.html#top)
+[Back To Top](namespace-aws-opensearchservice-top.md)

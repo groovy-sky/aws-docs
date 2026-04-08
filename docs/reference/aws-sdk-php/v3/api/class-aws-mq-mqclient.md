@@ -17,36 +17,36 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2017-11-27**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html)
+- [**2017-11-27**](api-mq-2017-11-27.md)
 
-  - [CreateBroker](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#createbroker)
-  - [CreateConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#createconfiguration)
-  - [CreateTags](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#createtags)
-  - [CreateUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#createuser)
-  - [DeleteBroker](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#deletebroker)
-  - [DeleteConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#deleteconfiguration)
-  - [DeleteTags](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#deletetags)
-  - [DeleteUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#deleteuser)
-  - [DescribeBroker](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#describebroker)
-  - [DescribeBrokerEngineTypes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#describebrokerenginetypes)
-  - [DescribeBrokerInstanceOptions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#describebrokerinstanceoptions)
-  - [DescribeConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#describeconfiguration)
-  - [DescribeConfigurationRevision](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#describeconfigurationrevision)
-  - [DescribeUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#describeuser)
-  - [ListBrokers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#listbrokers)
-  - [ListConfigurationRevisions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#listconfigurationrevisions)
-  - [ListConfigurations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#listconfigurations)
-  - [ListTags](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#listtags)
-  - [ListUsers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#listusers)
-  - [Promote](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#promote)
-  - [RebootBroker](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#rebootbroker)
-  - [UpdateBroker](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#updatebroker)
-  - [UpdateConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#updateconfiguration)
-  - [UpdateUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-mq-2017-11-27.html#updateuser)
+  - [CreateBroker](api-mq-2017-11-27-createbroker.md)
+  - [CreateConfiguration](api-mq-2017-11-27-createconfiguration.md)
+  - [CreateTags](api-mq-2017-11-27-createtags.md)
+  - [CreateUser](api-mq-2017-11-27-createuser.md)
+  - [DeleteBroker](api-mq-2017-11-27-deletebroker.md)
+  - [DeleteConfiguration](api-mq-2017-11-27-deleteconfiguration.md)
+  - [DeleteTags](api-mq-2017-11-27-deletetags.md)
+  - [DeleteUser](api-mq-2017-11-27-deleteuser.md)
+  - [DescribeBroker](api-mq-2017-11-27-describebroker.md)
+  - [DescribeBrokerEngineTypes](api-mq-2017-11-27-describebrokerenginetypes.md)
+  - [DescribeBrokerInstanceOptions](api-mq-2017-11-27-describebrokerinstanceoptions.md)
+  - [DescribeConfiguration](api-mq-2017-11-27-describeconfiguration.md)
+  - [DescribeConfigurationRevision](api-mq-2017-11-27-describeconfigurationrevision.md)
+  - [DescribeUser](api-mq-2017-11-27-describeuser.md)
+  - [ListBrokers](api-mq-2017-11-27-listbrokers.md)
+  - [ListConfigurationRevisions](api-mq-2017-11-27-listconfigurationrevisions.md)
+  - [ListConfigurations](api-mq-2017-11-27-listconfigurations.md)
+  - [ListTags](api-mq-2017-11-27-listtags.md)
+  - [ListUsers](api-mq-2017-11-27-listusers.md)
+  - [Promote](api-mq-2017-11-27-promote.md)
+  - [RebootBroker](api-mq-2017-11-27-rebootbroker.md)
+  - [UpdateBroker](api-mq-2017-11-27-updatebroker.md)
+  - [UpdateConfiguration](api-mq-2017-11-27-updateconfiguration.md)
+  - [UpdateUser](api-mq-2017-11-27-updateuser.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MQ.MQClient.html\#toc)
+### Table of Contents  [header link](class-aws-mq-mqclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MQ.MQClient.html\#toc-methods)
+#### Methods  [header link](class-aws-mq-mqclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -77,7 +77,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MQ.MQClient.html\#methods)
+### Methods  [header link](class-aws-mq-mqclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -544,7 +544,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MQ.MQClient.html#toc-methods)
+  - [Methods](class-aws-mq-mqclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -571,4 +571,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MQ.MQClient.html#top)
+[Back To Top](class-aws-mq-mqclient-top.md)

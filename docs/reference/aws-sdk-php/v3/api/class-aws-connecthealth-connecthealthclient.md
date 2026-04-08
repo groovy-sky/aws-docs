@@ -17,27 +17,27 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2025-01-29**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connecthealth-2025-01-29.html)
+- [**2025-01-29**](api-connecthealth-2025-01-29.md)
 
-  - [ActivateSubscription](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connecthealth-2025-01-29.html#activatesubscription)
-  - [CreateDomain](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connecthealth-2025-01-29.html#createdomain)
-  - [CreateSubscription](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connecthealth-2025-01-29.html#createsubscription)
-  - [DeactivateSubscription](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connecthealth-2025-01-29.html#deactivatesubscription)
-  - [DeleteDomain](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connecthealth-2025-01-29.html#deletedomain)
-  - [GetDomain](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connecthealth-2025-01-29.html#getdomain)
-  - [GetMedicalScribeListeningSession](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connecthealth-2025-01-29.html#getmedicalscribelisteningsession)
-  - [GetPatientInsightsJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connecthealth-2025-01-29.html#getpatientinsightsjob)
-  - [GetSubscription](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connecthealth-2025-01-29.html#getsubscription)
-  - [ListDomains](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connecthealth-2025-01-29.html#listdomains)
-  - [ListSubscriptions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connecthealth-2025-01-29.html#listsubscriptions)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connecthealth-2025-01-29.html#listtagsforresource)
-  - [StartPatientInsightsJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connecthealth-2025-01-29.html#startpatientinsightsjob)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connecthealth-2025-01-29.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-connecthealth-2025-01-29.html#untagresource)
+  - [ActivateSubscription](api-connecthealth-2025-01-29-activatesubscription.md)
+  - [CreateDomain](api-connecthealth-2025-01-29-createdomain.md)
+  - [CreateSubscription](api-connecthealth-2025-01-29-createsubscription.md)
+  - [DeactivateSubscription](api-connecthealth-2025-01-29-deactivatesubscription.md)
+  - [DeleteDomain](api-connecthealth-2025-01-29-deletedomain.md)
+  - [GetDomain](api-connecthealth-2025-01-29-getdomain.md)
+  - [GetMedicalScribeListeningSession](api-connecthealth-2025-01-29-getmedicalscribelisteningsession.md)
+  - [GetPatientInsightsJob](api-connecthealth-2025-01-29-getpatientinsightsjob.md)
+  - [GetSubscription](api-connecthealth-2025-01-29-getsubscription.md)
+  - [ListDomains](api-connecthealth-2025-01-29-listdomains.md)
+  - [ListSubscriptions](api-connecthealth-2025-01-29-listsubscriptions.md)
+  - [ListTagsForResource](api-connecthealth-2025-01-29-listtagsforresource.md)
+  - [StartPatientInsightsJob](api-connecthealth-2025-01-29-startpatientinsightsjob.md)
+  - [TagResource](api-connecthealth-2025-01-29-tagresource.md)
+  - [UntagResource](api-connecthealth-2025-01-29-untagresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectHealth.ConnectHealthClient.html\#toc)
+### Table of Contents  [header link](class-aws-connecthealth-connecthealthclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectHealth.ConnectHealthClient.html\#toc-methods)
+#### Methods  [header link](class-aws-connecthealth-connecthealthclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -68,7 +68,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectHealth.ConnectHealthClient.html\#methods)
+### Methods  [header link](class-aws-connecthealth-connecthealthclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -535,7 +535,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectHealth.ConnectHealthClient.html#toc-methods)
+  - [Methods](class-aws-connecthealth-connecthealthclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -562,4 +562,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectHealth.ConnectHealthClient.html#top)
+[Back To Top](class-aws-connecthealth-connecthealthclient-top.md)

@@ -7,13 +7,13 @@ AWS SDKs, Amazon S3 console, AWS Command Line Interface (AWS CLI), and Amazon S3
 
 To get started using the S3 console, follow these steps:
 
-- [Creating directory buckets in an Availability Zone](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-create.html)
+- [Creating directory buckets in an Availability Zone](../../../../services/s3/latest/userguide/directory-bucket-create.md)
 
-- [Emptying a directory bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-empty.html)
+- [Emptying a directory bucket](../../../../services/s3/latest/userguide/directory-bucket-empty.md)
 
-- [Deleting a directory bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-delete.html)
+- [Deleting a directory bucket](../../../../services/s3/latest/userguide/directory-bucket-delete.md)
 
-For a full tutorial, see [Tutorial: Getting started with S3 Express One Zone](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-getting-started.html).
+For a full tutorial, see [Tutorial: Getting started with S3 Express One Zone](../../../../services/s3/latest/userguide/s3-express-getting-started.md).
 
 ## AWS SDKs
 
@@ -43,7 +43,7 @@ When you're working with S3 Express One Zone, we recommend using the latest vers
 AWS SDKs. The supported AWS SDKs for S3 Express One Zone handle session establishment,
 refreshment, and termination on your behalf. This means that you can immediately
 start using API operations after you download and install the AWS SDKs and
-configure the necessary IAM permissions. For more information, see [Authorizing Regional endpoint API operations with IAM](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-security-iam.html).
+configure the necessary IAM permissions. For more information, see [Authorizing Regional endpoint API operations with IAM](../../../../services/s3/latest/userguide/s3-express-security-iam.md).
 
 For information about the AWS SDKs, including how to download and install them,
 see [Tools to Build on\
@@ -51,11 +51,11 @@ AWS](https://aws.amazon.com/developer/tools).
 
 For AWS SDK examples, see the following:
 
-- [Creating directory buckets in an Availability Zone](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-create.html)
+- [Creating directory buckets in an Availability Zone](../../../../services/s3/latest/userguide/directory-bucket-create.md)
 
-- [Emptying a directory bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-empty.html)
+- [Emptying a directory bucket](../../../../services/s3/latest/userguide/directory-bucket-empty.md)
 
-- [Deleting a directory bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-delete.html)
+- [Deleting a directory bucket](../../../../services/s3/latest/userguide/directory-bucket-delete.md)
 
 ## AWS Command Line Interface (AWS CLI)
 
@@ -63,22 +63,22 @@ You can use the AWS Command Line Interface (AWS CLI) to create directory buckets
 Regional and Zonal endpoint API operations for S3 Express One Zone.
 
 To get started with the AWS CLI, see [Get started with the\
-AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) in the _AWS CLI Command Reference_.
+AWS CLI](../../../../services/cli/latest/userguide/cli-chap-getting-started.md) in the _AWS CLI Command Reference_.
 
 ###### Note
 
-To use directory buckets with the [high-level `aws s3` commands](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html), update your AWS CLI to the latest version. For more information about how to install and configure the AWS CLI,
-see [Install or update the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) in the _AWS CLI Command Reference_.
+To use directory buckets with the [high-level `aws s3` commands](../../../../services/cli/latest/userguide/cli-services-s3-commands.md), update your AWS CLI to the latest version. For more information about how to install and configure the AWS CLI,
+see [Install or update the latest version of the AWS CLI](../../../../services/cli/latest/userguide/getting-started-install.md) in the _AWS CLI Command Reference_.
 
 For AWS CLI examples, see the following:
 
-- [Creating directory buckets in an Availability Zone](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-create.html)
+- [Creating directory buckets in an Availability Zone](../../../../services/s3/latest/userguide/directory-bucket-create.md)
 
-- [Emptying a directory bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-empty.html)
+- [Emptying a directory bucket](../../../../services/s3/latest/userguide/directory-bucket-empty.md)
 
-- [Deleting a directory bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-delete.html)
+- [Deleting a directory bucket](../../../../services/s3/latest/userguide/directory-bucket-delete.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Regional and Zonal endpoints for directory buckets
 

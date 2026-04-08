@@ -9,7 +9,7 @@ system dialog to enable or disable settings.
 **Programs**, and then click **EC2ConfigService**
 **Settings**.
 
-![EC2Config service properties shown in the General tab.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/EC2ConfigProperties_General.png)
+![EC2Config service properties shown in the General tab.](../../../images/awsec2/latest/userguide/images/ec2configproperties-general-png.md)
 
 3. On the **General** tab of the **EC2 Service Properties**
     system dialog, you can enable or disable the following settings.
@@ -51,7 +51,7 @@ Use this setting to display system information on the desktop
 background. The following is an example of the information displayed
 on the desktop background.
 
-![Wallpaper Information displayed on the desktop background.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/EC2ConfigProperties_Wallpaper.png)
+![Wallpaper Information displayed on the desktop background.](../../../images/awsec2/latest/userguide/images/ec2configproperties-wallpaper-png.md)
 
 The information displayed on the desktop background is controlled
 by the settings file
@@ -64,7 +64,7 @@ Use this setting to allow EC2 to signal the operating system to perform hibernat
 4. Click the **Storage** tab. You can enable or disable the
     following settings.
 
-![Storage tab within EC2 Service Properties.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/EC2ConfigProperties_Storage.png)
+![Storage tab within EC2 Service Properties.](../../../images/awsec2/latest/userguide/images/ec2configproperties-storage-png.md)
 
 **Root Volume**
 
@@ -96,7 +96,7 @@ letters that avoid conflicts with drive letters that are likely to
 be in use, such as drive letters in the middle of the
 alphabet.
 
-![DriveLetterSetting dialog box.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/EC2ConfigProperties_driver_letter_mapping.png)
+![DriveLetterSetting dialog box.](../../../images/awsec2/latest/userguide/images/ec2configproperties-driver-letter-mapping-png.md)
 
 After you specify a drive letter mapping and attach a volume with
 same label as one of the volume names that you specified, EC2Config

@@ -21,7 +21,7 @@ Regions](../../../global-infrastructure/latest/regions/aws-regions.md).
 2. From the navigation bar, choose the **Regions** selector and
     then choose the Region.
 
-![View your Regions](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/EC2_select_region.png)
+![View your Regions](../../../images/awsec2/latest/userguide/images/ec2-select-region-png.md)
 
 3. The Regions selector includes all resources that are available for use in your
     AWS account. Choose the underlined text near the bottom of the list to view

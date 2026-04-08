@@ -76,7 +76,7 @@ Required: No
 
 The list of the service revisions.
 
-Type: Array of [ServiceCurrentRevisionSummary](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ServiceCurrentRevisionSummary.html) objects
+Type: Array of [ServiceCurrentRevisionSummary](api-servicecurrentrevisionsummary.md) objects
 
 Required: No
 
@@ -101,7 +101,7 @@ Required: No
 
 The current state of deployments for the service.
 
-Type: Array of [Deployment](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Deployment.html) objects
+Type: Array of [Deployment](api-deployment.md) objects
 
 Required: No
 
@@ -140,7 +140,7 @@ Required: No
 The event stream for your service. A maximum of 100 of the latest events are
 displayed.
 
-Type: Array of [ServiceEvent](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ServiceEvent.html) objects
+Type: Array of [ServiceEvent](api-serviceevent.md) objects
 
 Required: No
 
@@ -229,7 +229,7 @@ Required: No
 The platform version to run your service on. A platform version is only specified for
 tasks that are hosted on AWS Fargate. If one isn't specified, the `LATEST` platform
 version is used. For more information, see [AWS Fargate\
-Platform Versions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html) in the _Amazon Elastic Container Service_
+Platform Versions](../../../../services/amazonecs/latest/developerguide/platform-versions.md) in the _Amazon Elastic Container Service_
 _Developer Guide_.
 
 Type: String
@@ -397,7 +397,7 @@ Information about a set of Amazon ECS tasks in either an AWS CodeDeploy or an
 the desired number of tasks, how many tasks are running, and whether the task set serves
 production traffic.
 
-Type: Array of [TaskSet](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_TaskSet.html) objects
+Type: Array of [TaskSet](api-taskset.md) objects
 
 Required: No
 
@@ -405,13 +405,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/Service)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/service.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/Service)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/service.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/Service)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/service.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Secret
 

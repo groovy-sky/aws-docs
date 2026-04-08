@@ -1,34 +1,34 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Psr7](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.psr7.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Psr7](namespace-guzzlehttp-psr7.md)
 
 ## Utils        in package    - [Aws](package-aws.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-psr7-utils-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-psr7-utils-toc-methods.md)
 
-[caselessRemove()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#method_caselessRemove)
-: array<string\|int, mixed> Remove the items given by the keys, case insensitively from the data.[copyToStream()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#method_copyToStream)
+[caselessRemove()](class-guzzlehttp-psr7-utils-method-caselessremove.md)
+: array<string\|int, mixed> Remove the items given by the keys, case insensitively from the data.[copyToStream()](class-guzzlehttp-psr7-utils-method-copytostream.md)
 : void Copy the contents of a stream into another stream until the given number
-of bytes have been read.[copyToString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#method_copyToString)
+of bytes have been read.[copyToString()](class-guzzlehttp-psr7-utils-method-copytostring.md)
 : string Copy the contents of a stream into a string until the given number of
-bytes have been read.[hash()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#method_hash)
-: string Calculate a hash of a stream.[modifyRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#method_modifyRequest)
-: [RequestInterface](class-psr-http-message-requestinterface.md)Clone and modify a request with the given changes.[readLine()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#method_readLine)
-: string Read a line from the stream up to the maximum allowed buffer length.[redactUserInfo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#method_redactUserInfo)
-: [UriInterface](class-psr-http-message-uriinterface.md)Redact the password in the user info part of a URI.[streamFor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#method_streamFor)
-: [StreamInterface](class-psr-http-message-streaminterface.md)Create a new stream based on the input type.[tryFopen()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#method_tryFopen)
-: resource Safely opens a PHP stream resource using a filename.[tryGetContents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#method_tryGetContents)
-: string Safely gets the contents of a given stream.[uriFor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#method_uriFor)
+bytes have been read.[hash()](class-guzzlehttp-psr7-utils-method-hash.md)
+: string Calculate a hash of a stream.[modifyRequest()](class-guzzlehttp-psr7-utils-method-modifyrequest.md)
+: [RequestInterface](class-psr-http-message-requestinterface.md)Clone and modify a request with the given changes.[readLine()](class-guzzlehttp-psr7-utils-method-readline.md)
+: string Read a line from the stream up to the maximum allowed buffer length.[redactUserInfo()](class-guzzlehttp-psr7-utils-method-redactuserinfo.md)
+: [UriInterface](class-psr-http-message-uriinterface.md)Redact the password in the user info part of a URI.[streamFor()](class-guzzlehttp-psr7-utils-method-streamfor.md)
+: [StreamInterface](class-psr-http-message-streaminterface.md)Create a new stream based on the input type.[tryFopen()](class-guzzlehttp-psr7-utils-method-tryfopen.md)
+: resource Safely opens a PHP stream resource using a filename.[tryGetContents()](class-guzzlehttp-psr7-utils-method-trygetcontents.md)
+: string Safely gets the contents of a given stream.[uriFor()](class-guzzlehttp-psr7-utils-method-urifor.md)
 : [UriInterface](class-psr-http-message-uriinterface.md)Returns a UriInterface for the given value.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html\#methods)
+### Methods  [header link](class-guzzlehttp-psr7-utils-methods.md)
 
-#### caselessRemove()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html\#method_caselessRemove)
+#### caselessRemove()  [header link](class-guzzlehttp-psr7-utils-method-caselessremove.md)
 
 Remove the items given by the keys, case insensitively from the data.
 
@@ -46,7 +46,7 @@ $keys
 
 array<string\|int, mixed>
 
-#### copyToStream()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html\#method_copyToStream)
+#### copyToStream()  [header link](class-guzzlehttp-psr7-utils-method-copytostream.md)
 
 Copy the contents of a stream into another stream until the given number
 of bytes have been read.
@@ -74,13 +74,13 @@ $maxLen
 Maximum number of bytes to read. Pass -1
 to read the entire stream.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html\#method_copyToStream\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-utils-method-copytostream-tags.md)
 
 throwsRuntimeException
 
 on error.
 
-#### copyToString()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html\#method_copyToString)
+#### copyToString()  [header link](class-guzzlehttp-psr7-utils-method-copytostring.md)
 
 Copy the contents of a stream into a string until the given number of
 bytes have been read.
@@ -103,7 +103,7 @@ $maxLen
 Maximum number of bytes to read. Pass -1
 to read the entire stream.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html\#method_copyToString\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-utils-method-copytostring-tags.md)
 
 throwsRuntimeException
 
@@ -113,7 +113,7 @@ on error.
 
 string
 
-#### hash()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html\#method_hash)
+#### hash()  [header link](class-guzzlehttp-psr7-utils-method-hash.md)
 
 Calculate a hash of a stream.
 
@@ -142,7 +142,7 @@ $rawOutput
 
 Whether or not to use raw output
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html\#method_hash\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-utils-method-hash-tags.md)
 
 throwsRuntimeException
 
@@ -152,7 +152,7 @@ on error.
 
 string
 
-#### modifyRequest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html\#method_modifyRequest)
+#### modifyRequest()  [header link](class-guzzlehttp-psr7-utils-method-modifyrequest.md)
 
 Clone and modify a request with the given changes.
 
@@ -189,7 +189,7 @@ Changes to apply.
 
 [RequestInterface](class-psr-http-message-requestinterface.md)
 
-#### readLine()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html\#method_readLine)
+#### readLine()  [header link](class-guzzlehttp-psr7-utils-method-readline.md)
 
 Read a line from the stream up to the maximum allowed buffer length.
 
@@ -214,7 +214,7 @@ Maximum buffer length
 
 string
 
-#### redactUserInfo()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html\#method_redactUserInfo)
+#### redactUserInfo()  [header link](class-guzzlehttp-psr7-utils-method-redactuserinfo.md)
 
 Redact the password in the user info part of a URI.
 
@@ -231,7 +231,7 @@ $uri
 
 [UriInterface](class-psr-http-message-uriinterface.md)
 
-#### streamFor()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html\#method_streamFor)
+#### streamFor()  [header link](class-guzzlehttp-psr7-utils-method-streamfor.md)
 
 Create a new stream based on the input type.
 
@@ -281,7 +281,7 @@ $options
 
 Additional options
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html\#method_streamFor\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-utils-method-streamfor-tags.md)
 
 throwsInvalidArgumentException
 
@@ -291,7 +291,7 @@ if the $resource arg is not valid.
 
 [StreamInterface](class-psr-http-message-streaminterface.md)
 
-#### tryFopen()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html\#method_tryFopen)
+#### tryFopen()  [header link](class-guzzlehttp-psr7-utils-method-tryfopen.md)
 
 Safely opens a PHP stream resource using a filename.
 
@@ -314,7 +314,7 @@ $mode
 
 Mode used to open the file
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html\#method_tryFopen\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-utils-method-tryfopen-tags.md)
 
 throwsRuntimeException
 
@@ -324,7 +324,7 @@ if the file cannot be opened
 
 resource
 
-#### tryGetContents()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html\#method_tryGetContents)
+#### tryGetContents()  [header link](class-guzzlehttp-psr7-utils-method-trygetcontents.md)
 
 Safely gets the contents of a given stream.
 
@@ -341,7 +341,7 @@ exception instead.
 $stream
 : resource
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html\#method_tryGetContents\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-utils-method-trygetcontents-tags.md)
 
 throwsRuntimeException
 
@@ -351,7 +351,7 @@ if the stream cannot be read
 
 string
 
-#### uriFor()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html\#method_uriFor)
+#### uriFor()  [header link](class-guzzlehttp-psr7-utils-method-urifor.md)
 
 Returns a UriInterface for the given value.
 
@@ -368,7 +368,7 @@ UriInterface, it is returned as-is.
 $uri
 : string\| [UriInterface](class-psr-http-message-uriinterface.md)
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html\#method_uriFor\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-utils-method-urifor-tags.md)
 
 throwsInvalidArgumentException
 
@@ -382,18 +382,18 @@ throwsInvalidArgumentException
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#toc-methods)
+  - [Methods](class-guzzlehttp-psr7-utils-toc-methods.md)
 - Methods
-  - [caselessRemove()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#method_caselessRemove)
-  - [copyToStream()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#method_copyToStream)
-  - [copyToString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#method_copyToString)
-  - [hash()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#method_hash)
-  - [modifyRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#method_modifyRequest)
-  - [readLine()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#method_readLine)
-  - [redactUserInfo()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#method_redactUserInfo)
-  - [streamFor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#method_streamFor)
-  - [tryFopen()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#method_tryFopen)
-  - [tryGetContents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#method_tryGetContents)
-  - [uriFor()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#method_uriFor)
+  - [caselessRemove()](class-guzzlehttp-psr7-utils-method-caselessremove.md)
+  - [copyToStream()](class-guzzlehttp-psr7-utils-method-copytostream.md)
+  - [copyToString()](class-guzzlehttp-psr7-utils-method-copytostring.md)
+  - [hash()](class-guzzlehttp-psr7-utils-method-hash.md)
+  - [modifyRequest()](class-guzzlehttp-psr7-utils-method-modifyrequest.md)
+  - [readLine()](class-guzzlehttp-psr7-utils-method-readline.md)
+  - [redactUserInfo()](class-guzzlehttp-psr7-utils-method-redactuserinfo.md)
+  - [streamFor()](class-guzzlehttp-psr7-utils-method-streamfor.md)
+  - [tryFopen()](class-guzzlehttp-psr7-utils-method-tryfopen.md)
+  - [tryGetContents()](class-guzzlehttp-psr7-utils-method-trygetcontents.md)
+  - [uriFor()](class-guzzlehttp-psr7-utils-method-urifor.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.Utils.html#top)
+[Back To Top](class-guzzlehttp-psr7-utils-top.md)

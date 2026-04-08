@@ -4,15 +4,15 @@ Menu
 
 ## ConnectContactLens
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectcontactlens.html\#toc)
+### Table of Contents  [header link](namespace-aws-connectcontactlens-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectcontactlens.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-connectcontactlens-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectcontactlens.exception.html)
+[Exception](namespace-aws-connectcontactlens-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectcontactlens.html\#toc-classes)
+#### Classes  [header link](namespace-aws-connectcontactlens-toc-classes.md)
 
-[ConnectContactLensClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectContactLens.ConnectContactLensClient.html)This client is used to interact with the **Amazon Connect Contact Lens** service.
+[ConnectContactLensClient](class-aws-connectcontactlens-connectcontactlensclient.md)This client is used to interact with the **Amazon Connect Contact Lens** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectcontactlens.html#toc-classes)
+  - [Classes](namespace-aws-connectcontactlens-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connectcontactlens.html#top)
+[Back To Top](namespace-aws-connectcontactlens-top.md)

@@ -17,41 +17,41 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2021-09-27**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html)
+- [**2021-09-27**](api-voice-id-2021-09-27.md)
 
-  - [AssociateFraudster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#associatefraudster)
-  - [CreateDomain](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#createdomain)
-  - [CreateWatchlist](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#createwatchlist)
-  - [DeleteDomain](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#deletedomain)
-  - [DeleteFraudster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#deletefraudster)
-  - [DeleteSpeaker](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#deletespeaker)
-  - [DeleteWatchlist](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#deletewatchlist)
-  - [DescribeDomain](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#describedomain)
-  - [DescribeFraudster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#describefraudster)
-  - [DescribeFraudsterRegistrationJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#describefraudsterregistrationjob)
-  - [DescribeSpeaker](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#describespeaker)
-  - [DescribeSpeakerEnrollmentJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#describespeakerenrollmentjob)
-  - [DescribeWatchlist](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#describewatchlist)
-  - [DisassociateFraudster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#disassociatefraudster)
-  - [EvaluateSession](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#evaluatesession)
-  - [ListDomains](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#listdomains)
-  - [ListFraudsterRegistrationJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#listfraudsterregistrationjobs)
-  - [ListFraudsters](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#listfraudsters)
-  - [ListSpeakerEnrollmentJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#listspeakerenrollmentjobs)
-  - [ListSpeakers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#listspeakers)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#listtagsforresource)
-  - [ListWatchlists](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#listwatchlists)
-  - [OptOutSpeaker](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#optoutspeaker)
-  - [StartFraudsterRegistrationJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#startfraudsterregistrationjob)
-  - [StartSpeakerEnrollmentJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#startspeakerenrollmentjob)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#untagresource)
-  - [UpdateDomain](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#updatedomain)
-  - [UpdateWatchlist](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-voice-id-2021-09-27.html#updatewatchlist)
+  - [AssociateFraudster](api-voice-id-2021-09-27-associatefraudster.md)
+  - [CreateDomain](api-voice-id-2021-09-27-createdomain.md)
+  - [CreateWatchlist](api-voice-id-2021-09-27-createwatchlist.md)
+  - [DeleteDomain](api-voice-id-2021-09-27-deletedomain.md)
+  - [DeleteFraudster](api-voice-id-2021-09-27-deletefraudster.md)
+  - [DeleteSpeaker](api-voice-id-2021-09-27-deletespeaker.md)
+  - [DeleteWatchlist](api-voice-id-2021-09-27-deletewatchlist.md)
+  - [DescribeDomain](api-voice-id-2021-09-27-describedomain.md)
+  - [DescribeFraudster](api-voice-id-2021-09-27-describefraudster.md)
+  - [DescribeFraudsterRegistrationJob](api-voice-id-2021-09-27-describefraudsterregistrationjob.md)
+  - [DescribeSpeaker](api-voice-id-2021-09-27-describespeaker.md)
+  - [DescribeSpeakerEnrollmentJob](api-voice-id-2021-09-27-describespeakerenrollmentjob.md)
+  - [DescribeWatchlist](api-voice-id-2021-09-27-describewatchlist.md)
+  - [DisassociateFraudster](api-voice-id-2021-09-27-disassociatefraudster.md)
+  - [EvaluateSession](api-voice-id-2021-09-27-evaluatesession.md)
+  - [ListDomains](api-voice-id-2021-09-27-listdomains.md)
+  - [ListFraudsterRegistrationJobs](api-voice-id-2021-09-27-listfraudsterregistrationjobs.md)
+  - [ListFraudsters](api-voice-id-2021-09-27-listfraudsters.md)
+  - [ListSpeakerEnrollmentJobs](api-voice-id-2021-09-27-listspeakerenrollmentjobs.md)
+  - [ListSpeakers](api-voice-id-2021-09-27-listspeakers.md)
+  - [ListTagsForResource](api-voice-id-2021-09-27-listtagsforresource.md)
+  - [ListWatchlists](api-voice-id-2021-09-27-listwatchlists.md)
+  - [OptOutSpeaker](api-voice-id-2021-09-27-optoutspeaker.md)
+  - [StartFraudsterRegistrationJob](api-voice-id-2021-09-27-startfraudsterregistrationjob.md)
+  - [StartSpeakerEnrollmentJob](api-voice-id-2021-09-27-startspeakerenrollmentjob.md)
+  - [TagResource](api-voice-id-2021-09-27-tagresource.md)
+  - [UntagResource](api-voice-id-2021-09-27-untagresource.md)
+  - [UpdateDomain](api-voice-id-2021-09-27-updatedomain.md)
+  - [UpdateWatchlist](api-voice-id-2021-09-27-updatewatchlist.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.VoiceID.VoiceIDClient.html\#toc)
+### Table of Contents  [header link](class-aws-voiceid-voiceidclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.VoiceID.VoiceIDClient.html\#toc-methods)
+#### Methods  [header link](class-aws-voiceid-voiceidclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -82,7 +82,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.VoiceID.VoiceIDClient.html\#methods)
+### Methods  [header link](class-aws-voiceid-voiceidclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -549,7 +549,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.VoiceID.VoiceIDClient.html#toc-methods)
+  - [Methods](class-aws-voiceid-voiceidclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -576,4 +576,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.VoiceID.VoiceIDClient.html#top)
+[Back To Top](class-aws-voiceid-voiceidclient-top.md)

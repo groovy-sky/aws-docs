@@ -17,17 +17,17 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2023-09-07**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-freetier-2023-09-07.html)
+- [**2023-09-07**](api-freetier-2023-09-07.md)
 
-  - [GetAccountActivity](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-freetier-2023-09-07.html#getaccountactivity)
-  - [GetAccountPlanState](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-freetier-2023-09-07.html#getaccountplanstate)
-  - [GetFreeTierUsage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-freetier-2023-09-07.html#getfreetierusage)
-  - [ListAccountActivities](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-freetier-2023-09-07.html#listaccountactivities)
-  - [UpgradeAccountPlan](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-freetier-2023-09-07.html#upgradeaccountplan)
+  - [GetAccountActivity](api-freetier-2023-09-07-getaccountactivity.md)
+  - [GetAccountPlanState](api-freetier-2023-09-07-getaccountplanstate.md)
+  - [GetFreeTierUsage](api-freetier-2023-09-07-getfreetierusage.md)
+  - [ListAccountActivities](api-freetier-2023-09-07-listaccountactivities.md)
+  - [UpgradeAccountPlan](api-freetier-2023-09-07-upgradeaccountplan.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FreeTier.FreeTierClient.html\#toc)
+### Table of Contents  [header link](class-aws-freetier-freetierclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FreeTier.FreeTierClient.html\#toc-methods)
+#### Methods  [header link](class-aws-freetier-freetierclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -58,7 +58,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FreeTier.FreeTierClient.html\#methods)
+### Methods  [header link](class-aws-freetier-freetierclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -525,7 +525,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FreeTier.FreeTierClient.html#toc-methods)
+  - [Methods](class-aws-freetier-freetierclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -552,4 +552,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FreeTier.FreeTierClient.html#top)
+[Back To Top](class-aws-freetier-freetierclient-top.md)

@@ -11,7 +11,7 @@ parameter in a container definition, they take precedence over the variables con
 within an environment file. If multiple environment files are specified that contain the
 same variable, they're processed from the top down. We recommend that you use unique
 variable names. For more information, see [Use a file to pass\
-environment variables to a container](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/use-environment-file.html) in the _Amazon Elastic_
+environment variables to a container](../../../../services/amazonecs/latest/developerguide/use-environment-file.md) in the _Amazon Elastic_
 _Container Service Developer Guide_.
 
 Environment variable files are objects in Amazon S3 and all Amazon S3 security
@@ -57,13 +57,13 @@ Required: Yes
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/EnvironmentFile)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/environmentfile.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/EnvironmentFile)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/environmentfile.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/EnvironmentFile)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/environmentfile.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 EFSVolumeConfiguration
 

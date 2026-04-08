@@ -20,7 +20,7 @@ Required: Yes
 
 The Amazon Resource Name (ARN) of IAM role that grants Amazon Redshift
 read-only access to Amazon S3. For more information, and for the polices that you
-attach to this role, see [Allow Amazon Redshift to access your Amazon AppFlow data in Amazon S3](https://docs.aws.amazon.com/appflow/latest/userguide/security_iam_service-role-policies.html#redshift-access-s3).
+attach to this role, see [Allow Amazon Redshift to access your Amazon AppFlow data in Amazon S3](../../../../services/appflow/latest/userguide/security-iam-service-role-policies-redshift-access-s3.md).
 
 Type: String
 
@@ -58,7 +58,7 @@ Required: No
 
 The Amazon Resource Name (ARN) of an IAM role that permits Amazon AppFlow to access your Amazon Redshift database through the Data API. For more
 information, and for the polices that you attach to this role, see [Allow Amazon AppFlow to access Amazon Redshift databases with the Data\
-API](https://docs.aws.amazon.com/appflow/latest/userguide/security_iam_service-role-policies.html#access-redshift).
+API](../../../../services/appflow/latest/userguide/security-iam-service-role-policies-access-redshift.md).
 
 Type: String
 
@@ -117,13 +117,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/RedshiftConnectorProfileProperties)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appflow-2020-08-23/redshiftconnectorprofileproperties.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/RedshiftConnectorProfileProperties)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appflow-2020-08-23/redshiftconnectorprofileproperties.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/RedshiftConnectorProfileProperties)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/redshiftconnectorprofileproperties.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 RedshiftConnectorProfileCredentials
 

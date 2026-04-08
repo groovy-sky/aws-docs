@@ -6,23 +6,23 @@ Menu
 
 Incremental hashing using PHP's hash functions.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PhpHash.html\#toc)
+### Table of Contents  [header link](class-aws-phphash-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PhpHash.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-phphash-toc-interfaces.md)
 
 [HashInterface](class-aws-hashinterface.md)Interface that allows implementing various incremental hashes.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PhpHash.html\#toc-methods)
+#### Methods  [header link](class-aws-phphash-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PhpHash.html#method___construct)
-: mixed [complete()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PhpHash.html#method_complete)
-: string Finalizes the incremental hash and returns the resulting digest.[reset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PhpHash.html#method_reset)
-: mixed Removes all data from the hash, effectively starting a new hash.[update()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PhpHash.html#method_update)
+[\_\_construct()](class-aws-phphash-method-construct.md)
+: mixed [complete()](class-aws-phphash-method-complete.md)
+: string Finalizes the incremental hash and returns the resulting digest.[reset()](class-aws-phphash-method-reset.md)
+: mixed Removes all data from the hash, effectively starting a new hash.[update()](class-aws-phphash-method-update.md)
 : mixed Adds data to the hash.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PhpHash.html\#methods)
+### Methods  [header link](class-aws-phphash-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PhpHash.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-phphash-method-construct.md)
 
 `
     public
@@ -45,7 +45,7 @@ Associative array of hashing options:
 - key: Secret key used with the hashing algorithm.
 - base64: Set to true to base64 encode the value when complete.
 
-#### complete()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PhpHash.html\#method_complete)
+#### complete()  [header link](class-aws-phphash-method-complete.md)
 
 Finalizes the incremental hash and returns the resulting digest.
 
@@ -57,7 +57,7 @@ Finalizes the incremental hash and returns the resulting digest.
 
 string
 
-#### reset()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PhpHash.html\#method_reset)
+#### reset()  [header link](class-aws-phphash-method-reset.md)
 
 Removes all data from the hash, effectively starting a new hash.
 
@@ -65,7 +65,7 @@ Removes all data from the hash, effectively starting a new hash.
     public
                     reset() : mixed`
 
-#### update()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PhpHash.html\#method_update)
+#### update()  [header link](class-aws-phphash-method-update.md)
 
 Adds data to the hash.
 
@@ -87,11 +87,11 @@ Data to add to the hash
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PhpHash.html#toc-methods)
+  - [Methods](class-aws-phphash-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PhpHash.html#method___construct)
-  - [complete()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PhpHash.html#method_complete)
-  - [reset()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PhpHash.html#method_reset)
-  - [update()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PhpHash.html#method_update)
+  - [\_\_construct()](class-aws-phphash-method-construct.md)
+  - [complete()](class-aws-phphash-method-complete.md)
+  - [reset()](class-aws-phphash-method-reset.md)
+  - [update()](class-aws-phphash-method-update.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PhpHash.html#top)
+[Back To Top](class-aws-phphash-top.md)

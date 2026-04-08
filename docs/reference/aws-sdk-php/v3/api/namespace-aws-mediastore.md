@@ -4,15 +4,15 @@ Menu
 
 ## MediaStore
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mediastore.html\#toc)
+### Table of Contents  [header link](namespace-aws-mediastore-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mediastore.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-mediastore-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mediastore.exception.html)
+[Exception](namespace-aws-mediastore-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mediastore.html\#toc-classes)
+#### Classes  [header link](namespace-aws-mediastore-toc-classes.md)
 
-[MediaStoreClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MediaStore.MediaStoreClient.html)This client is used to interact with the **AWS Elemental MediaStore** service.
+[MediaStoreClient](class-aws-mediastore-mediastoreclient.md)This client is used to interact with the **AWS Elemental MediaStore** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mediastore.html#toc-classes)
+  - [Classes](namespace-aws-mediastore-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mediastore.html#top)
+[Back To Top](namespace-aws-mediastore-top.md)

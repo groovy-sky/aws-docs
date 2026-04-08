@@ -4,15 +4,15 @@ Menu
 
 ## drs
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.drs.html\#toc)
+### Table of Contents  [header link](namespace-aws-drs-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.drs.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-drs-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.drs.exception.html)
+[Exception](namespace-aws-drs-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.drs.html\#toc-classes)
+#### Classes  [header link](namespace-aws-drs-toc-classes.md)
 
-[drsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.drs.drsClient.html)This client is used to interact with the **Elastic Disaster Recovery Service** service.
+[drsClient](class-aws-drs-drsclient.md)This client is used to interact with the **Elastic Disaster Recovery Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.drs.html#toc-classes)
+  - [Classes](namespace-aws-drs-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.drs.html#top)
+[Back To Top](namespace-aws-drs-top.md)

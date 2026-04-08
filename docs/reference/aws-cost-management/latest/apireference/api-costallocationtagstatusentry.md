@@ -30,13 +30,13 @@ Required: Yes
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ce-2017-10-25/CostAllocationTagStatusEntry)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ce-2017-10-25/costallocationtagstatusentry.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ce-2017-10-25/CostAllocationTagStatusEntry)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ce-2017-10-25/costallocationtagstatusentry.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ce-2017-10-25/CostAllocationTagStatusEntry)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ce-2017-10-25/costallocationtagstatusentry.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CostAllocationTagBackfillRequest
 

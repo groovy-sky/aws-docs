@@ -1,7 +1,7 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Psr7](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.psr7.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Psr7](namespace-guzzlehttp-psr7.md)
 
 ## PumpStream        in package    - [Aws](package-aws.md)       implements  [StreamInterface](class-psr-http-message-streaminterface.md)
 
@@ -16,35 +16,35 @@ returned by the provided callable is buffered internally until drained using
 the read() function of the PumpStream. The provided callable MUST return
 false when there is no more data to read.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-psr7-pumpstream-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html\#toc-interfaces)
+#### Interfaces  [header link](class-guzzlehttp-psr7-pumpstream-toc-interfaces.md)
 
 [StreamInterface](class-psr-http-message-streaminterface.md)Describes a data stream.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-psr7-pumpstream-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method___construct)
-: mixed [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method___toString)
-: string Reads all data from the stream into a string, from the beginning to end.[close()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_close)
-: void Closes the stream and any underlying resources.[detach()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_detach)
-: resource\|null Separates any underlying resources from the stream.[eof()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_eof)
-: bool Returns true if the stream is at the end of the stream.[getContents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_getContents)
-: string Returns the remaining contents in a string[getMetadata()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_getMetadata)
-: mixed Get stream metadata as an associative array or retrieve a specific key.[getSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_getSize)
-: int\|null Get the size of the stream if known.[isReadable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_isReadable)
-: bool Returns whether or not the stream is readable.[isSeekable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_isSeekable)
-: bool Returns whether or not the stream is seekable.[isWritable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_isWritable)
-: bool Returns whether or not the stream is writable.[read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_read)
-: string Read data from the stream.[rewind()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_rewind)
-: void Seek to the beginning of the stream.[seek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_seek)
-: void Seek to a position in the stream.[tell()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_tell)
-: int Returns the current position of the file read/write pointer[write()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_write)
+[\_\_construct()](class-guzzlehttp-psr7-pumpstream-method-construct.md)
+: mixed [\_\_toString()](class-guzzlehttp-psr7-pumpstream-method-tostring.md)
+: string Reads all data from the stream into a string, from the beginning to end.[close()](class-guzzlehttp-psr7-pumpstream-method-close.md)
+: void Closes the stream and any underlying resources.[detach()](class-guzzlehttp-psr7-pumpstream-method-detach.md)
+: resource\|null Separates any underlying resources from the stream.[eof()](class-guzzlehttp-psr7-pumpstream-method-eof.md)
+: bool Returns true if the stream is at the end of the stream.[getContents()](class-guzzlehttp-psr7-pumpstream-method-getcontents.md)
+: string Returns the remaining contents in a string[getMetadata()](class-guzzlehttp-psr7-pumpstream-method-getmetadata.md)
+: mixed Get stream metadata as an associative array or retrieve a specific key.[getSize()](class-guzzlehttp-psr7-pumpstream-method-getsize.md)
+: int\|null Get the size of the stream if known.[isReadable()](class-guzzlehttp-psr7-pumpstream-method-isreadable.md)
+: bool Returns whether or not the stream is readable.[isSeekable()](class-guzzlehttp-psr7-pumpstream-method-isseekable.md)
+: bool Returns whether or not the stream is seekable.[isWritable()](class-guzzlehttp-psr7-pumpstream-method-iswritable.md)
+: bool Returns whether or not the stream is writable.[read()](class-guzzlehttp-psr7-pumpstream-method-read.md)
+: string Read data from the stream.[rewind()](class-guzzlehttp-psr7-pumpstream-method-rewind.md)
+: void Seek to the beginning of the stream.[seek()](class-guzzlehttp-psr7-pumpstream-method-seek.md)
+: void Seek to a position in the stream.[tell()](class-guzzlehttp-psr7-pumpstream-method-tell.md)
+: int Returns the current position of the file read/write pointer[write()](class-guzzlehttp-psr7-pumpstream-method-write.md)
 : int Write data to the stream.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html\#methods)
+### Methods  [header link](class-guzzlehttp-psr7-pumpstream-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html\#method___construct)
+#### \_\_construct()  [header link](class-guzzlehttp-psr7-pumpstream-method-construct.md)
 
 `
     public
@@ -62,7 +62,7 @@ Stream options:
 - metadata: Hash of metadata to use with stream.
 - size: Size of the stream, if known.
 
-#### \_\_toString()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html\#method___toString)
+#### \_\_toString()  [header link](class-guzzlehttp-psr7-pumpstream-method-tostring.md)
 
 Reads all data from the stream into a string, from the beginning to end.
 
@@ -82,7 +82,7 @@ string casting operations.
 
 string
 
-#### close()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html\#method_close)
+#### close()  [header link](class-guzzlehttp-psr7-pumpstream-method-close.md)
 
 Closes the stream and any underlying resources.
 
@@ -90,7 +90,7 @@ Closes the stream and any underlying resources.
     public
                     close() : void`
 
-#### detach()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html\#method_detach)
+#### detach()  [header link](class-guzzlehttp-psr7-pumpstream-method-detach.md)
 
 Separates any underlying resources from the stream.
 
@@ -107,7 +107,7 @@ resource\|null
 
 Underlying PHP stream, if any
 
-#### eof()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html\#method_eof)
+#### eof()  [header link](class-guzzlehttp-psr7-pumpstream-method-eof.md)
 
 Returns true if the stream is at the end of the stream.
 
@@ -119,7 +119,7 @@ Returns true if the stream is at the end of the stream.
 
 bool
 
-#### getContents()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html\#method_getContents)
+#### getContents()  [header link](class-guzzlehttp-psr7-pumpstream-method-getcontents.md)
 
 Returns the remaining contents in a string
 
@@ -131,7 +131,7 @@ Returns the remaining contents in a string
 
 string
 
-#### getMetadata()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html\#method_getMetadata)
+#### getMetadata()  [header link](class-guzzlehttp-psr7-pumpstream-method-getmetadata.md)
 
 Get stream metadata as an associative array or retrieve a specific key.
 
@@ -147,7 +147,7 @@ $key
 
 Specific metadata to retrieve.
 
-#### getSize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html\#method_getSize)
+#### getSize()  [header link](class-guzzlehttp-psr7-pumpstream-method-getsize.md)
 
 Get the size of the stream if known.
 
@@ -162,7 +162,7 @@ int\|null
 
 Returns the size in bytes if known, or null if unknown.
 
-#### isReadable()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html\#method_isReadable)
+#### isReadable()  [header link](class-guzzlehttp-psr7-pumpstream-method-isreadable.md)
 
 Returns whether or not the stream is readable.
 
@@ -174,7 +174,7 @@ Returns whether or not the stream is readable.
 
 bool
 
-#### isSeekable()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html\#method_isSeekable)
+#### isSeekable()  [header link](class-guzzlehttp-psr7-pumpstream-method-isseekable.md)
 
 Returns whether or not the stream is seekable.
 
@@ -186,7 +186,7 @@ Returns whether or not the stream is seekable.
 
 bool
 
-#### isWritable()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html\#method_isWritable)
+#### isWritable()  [header link](class-guzzlehttp-psr7-pumpstream-method-iswritable.md)
 
 Returns whether or not the stream is writable.
 
@@ -198,7 +198,7 @@ Returns whether or not the stream is writable.
 
 bool
 
-#### read()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html\#method_read)
+#### read()  [header link](class-guzzlehttp-psr7-pumpstream-method-read.md)
 
 Read data from the stream.
 
@@ -223,7 +223,7 @@ string
 Returns the data read from the stream, or an empty string
 if no bytes are available.
 
-#### rewind()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html\#method_rewind)
+#### rewind()  [header link](class-guzzlehttp-psr7-pumpstream-method-rewind.md)
 
 Seek to the beginning of the stream.
 
@@ -234,7 +234,7 @@ Seek to the beginning of the stream.
 If the stream is not seekable, this method will raise an exception;
 otherwise, it will perform a seek(0).
 
-#### seek()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html\#method_seek)
+#### seek()  [header link](class-guzzlehttp-psr7-pumpstream-method-seek.md)
 
 Seek to a position in the stream.
 
@@ -259,7 +259,7 @@ PHP $whence values for `fseek()`. SEEK\_SET: Set position equal to
 offset bytes SEEK\_CUR: Set position to current location plus offset
 SEEK\_END: Set position to end-of-stream plus offset.
 
-#### tell()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html\#method_tell)
+#### tell()  [header link](class-guzzlehttp-psr7-pumpstream-method-tell.md)
 
 Returns the current position of the file read/write pointer
 
@@ -274,7 +274,7 @@ int
 
 Position of the file pointer
 
-#### write()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html\#method_write)
+#### write()  [header link](class-guzzlehttp-psr7-pumpstream-method-write.md)
 
 Write data to the stream.
 
@@ -303,23 +303,23 @@ Returns the number of bytes written to the stream.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#toc-methods)
+  - [Methods](class-guzzlehttp-psr7-pumpstream-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method___construct)
-  - [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method___toString)
-  - [close()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_close)
-  - [detach()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_detach)
-  - [eof()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_eof)
-  - [getContents()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_getContents)
-  - [getMetadata()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_getMetadata)
-  - [getSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_getSize)
-  - [isReadable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_isReadable)
-  - [isSeekable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_isSeekable)
-  - [isWritable()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_isWritable)
-  - [read()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_read)
-  - [rewind()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_rewind)
-  - [seek()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_seek)
-  - [tell()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_tell)
-  - [write()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#method_write)
+  - [\_\_construct()](class-guzzlehttp-psr7-pumpstream-method-construct.md)
+  - [\_\_toString()](class-guzzlehttp-psr7-pumpstream-method-tostring.md)
+  - [close()](class-guzzlehttp-psr7-pumpstream-method-close.md)
+  - [detach()](class-guzzlehttp-psr7-pumpstream-method-detach.md)
+  - [eof()](class-guzzlehttp-psr7-pumpstream-method-eof.md)
+  - [getContents()](class-guzzlehttp-psr7-pumpstream-method-getcontents.md)
+  - [getMetadata()](class-guzzlehttp-psr7-pumpstream-method-getmetadata.md)
+  - [getSize()](class-guzzlehttp-psr7-pumpstream-method-getsize.md)
+  - [isReadable()](class-guzzlehttp-psr7-pumpstream-method-isreadable.md)
+  - [isSeekable()](class-guzzlehttp-psr7-pumpstream-method-isseekable.md)
+  - [isWritable()](class-guzzlehttp-psr7-pumpstream-method-iswritable.md)
+  - [read()](class-guzzlehttp-psr7-pumpstream-method-read.md)
+  - [rewind()](class-guzzlehttp-psr7-pumpstream-method-rewind.md)
+  - [seek()](class-guzzlehttp-psr7-pumpstream-method-seek.md)
+  - [tell()](class-guzzlehttp-psr7-pumpstream-method-tell.md)
+  - [write()](class-guzzlehttp-psr7-pumpstream-method-write.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.PumpStream.html#top)
+[Back To Top](class-guzzlehttp-psr7-pumpstream-top.md)

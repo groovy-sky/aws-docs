@@ -35,7 +35,7 @@ Required: No
 
 Specifies the KMS key that is used to encrypt the user's data stores in Athena. This setting does not apply to Athena SQL workgroups.
 
-Type: [CustomerContentEncryptionConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_CustomerContentEncryptionConfiguration.html) object
+Type: [CustomerContentEncryptionConfiguration](api-customercontentencryptionconfiguration.md) object
 
 Required: No
 
@@ -108,7 +108,7 @@ Required: No
 
 Specifies whether the workgroup is IAM Identity Center supported.
 
-Type: [IdentityCenterConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_IdentityCenterConfiguration.html) object
+Type: [IdentityCenterConfiguration](api-identitycenterconfiguration.md) object
 
 Required: No
 
@@ -118,7 +118,7 @@ The configuration for storing results in Athena owned storage, which includes wh
 this feature is enabled; whether encryption configuration, if any, is used for
 encrypting query results.
 
-Type: [ManagedQueryResultsConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_ManagedQueryResultsConfiguration.html) object
+Type: [ManagedQueryResultsConfiguration](api-managedqueryresultsconfiguration.md) object
 
 Required: No
 
@@ -144,7 +144,7 @@ Required: No
 Specifies whether Amazon S3 access grants are enabled for query
 results.
 
-Type: [QueryResultsS3AccessGrantsConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_QueryResultsS3AccessGrantsConfiguration.html) object
+Type: [QueryResultsS3AccessGrantsConfiguration](api-queryresultss3accessgrantsconfiguration.md) object
 
 Required: No
 
@@ -155,7 +155,7 @@ Amazon S3 Requester Pays buckets in queries. If set to `false`,
 workgroup members cannot query data from Requester Pays buckets, and queries that
 retrieve data from Requester Pays buckets cause an error. The default is
 `false`. For more information about Requester Pays buckets, see [Requester\
-Pays Buckets](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) in the _Amazon Simple Storage Service Developer_
+Pays Buckets](../../../../services/s3/latest/dev/requesterpaysbuckets.md) in the _Amazon Simple Storage Service Developer_
 _Guide_.
 
 Type: Boolean
@@ -168,9 +168,9 @@ The configuration for the workgroup, which includes the location in Amazon S3
 where query and calculation results are stored and the encryption option, if any, used
 for query and calculation results. To run the query, you must specify the query results
 location using one of the ways: either in the workgroup using this setting, or for
-individual queries (client-side), using [ResultConfiguration:OutputLocation](https://docs.aws.amazon.com/athena/latest/APIReference/API_ResultConfiguration.html#athena-Type-ResultConfiguration-OutputLocation). If none of them is set, Athena issues an error that no output location is provided.
+individual queries (client-side), using [ResultConfiguration:OutputLocation](api-resultconfiguration-athena-type-resultconfiguration-outputlocation.md). If none of them is set, Athena issues an error that no output location is provided.
 
-Type: [ResultConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_ResultConfiguration.html) object
+Type: [ResultConfiguration](api-resultconfiguration.md) object
 
 Required: No
 
@@ -178,13 +178,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/WorkGroupConfiguration)
+- [AWS SDK for C++](../../../goto/sdkforcpp/athena-2017-05-18/workgroupconfiguration.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/WorkGroupConfiguration)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/athena-2017-05-18/workgroupconfiguration.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/WorkGroupConfiguration)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/workgroupconfiguration.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 WorkGroup
 

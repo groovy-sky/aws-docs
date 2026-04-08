@@ -89,7 +89,7 @@ Required: No
 
 Amazon DynamoDB settings.
 
-Type: [DynamodbDataSourceConfig](https://docs.aws.amazon.com/appsync/latest/APIReference/API_DynamodbDataSourceConfig.html) object
+Type: [DynamodbDataSourceConfig](api-dynamodbdatasourceconfig.md) object
 
 Required: No
 
@@ -100,7 +100,7 @@ Amazon OpenSearch Service settings.
 As of September 2021, Amazon Elasticsearch service is Amazon OpenSearch Service. This
 configuration is deprecated. For new data sources, use [CreateDataSource:openSearchServiceConfig](#appsync-CreateDataSource-request-openSearchServiceConfig) to create an OpenSearch data source.
 
-Type: [ElasticsearchDataSourceConfig](https://docs.aws.amazon.com/appsync/latest/APIReference/API_ElasticsearchDataSourceConfig.html) object
+Type: [ElasticsearchDataSourceConfig](api-elasticsearchdatasourceconfig.md) object
 
 Required: No
 
@@ -108,7 +108,7 @@ Required: No
 
 Amazon EventBridge settings.
 
-Type: [EventBridgeDataSourceConfig](https://docs.aws.amazon.com/appsync/latest/APIReference/API_EventBridgeDataSourceConfig.html) object
+Type: [EventBridgeDataSourceConfig](api-eventbridgedatasourceconfig.md) object
 
 Required: No
 
@@ -116,7 +116,7 @@ Required: No
 
 HTTP endpoint settings.
 
-Type: [HttpDataSourceConfig](https://docs.aws.amazon.com/appsync/latest/APIReference/API_HttpDataSourceConfig.html) object
+Type: [HttpDataSourceConfig](api-httpdatasourceconfig.md) object
 
 Required: No
 
@@ -124,7 +124,7 @@ Required: No
 
 AWS Lambda settings.
 
-Type: [LambdaDataSourceConfig](https://docs.aws.amazon.com/appsync/latest/APIReference/API_LambdaDataSourceConfig.html) object
+Type: [LambdaDataSourceConfig](api-lambdadatasourceconfig.md) object
 
 Required: No
 
@@ -161,7 +161,7 @@ Required: Yes
 
 Amazon OpenSearch Service settings.
 
-Type: [OpenSearchServiceDataSourceConfig](https://docs.aws.amazon.com/appsync/latest/APIReference/API_OpenSearchServiceDataSourceConfig.html) object
+Type: [OpenSearchServiceDataSourceConfig](api-opensearchservicedatasourceconfig.md) object
 
 Required: No
 
@@ -169,7 +169,7 @@ Required: No
 
 Relational database settings.
 
-Type: [RelationalDatabaseDataSourceConfig](https://docs.aws.amazon.com/appsync/latest/APIReference/API_RelationalDatabaseDataSourceConfig.html) object
+Type: [RelationalDatabaseDataSourceConfig](api-relationaldatabasedatasourceconfig.md) object
 
 Required: No
 
@@ -266,11 +266,11 @@ The following data is returned in JSON format by the service.
 
 The `DataSource` object.
 
-Type: [DataSource](https://docs.aws.amazon.com/appsync/latest/APIReference/API_DataSource.html) object
+Type: [DataSource](api-datasource.md) object
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/appsync/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **BadRequestException**
 
@@ -319,27 +319,27 @@ HTTP Status Code: 401
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appsync-2017-07-25/CreateDataSource)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/appsync-2017-07-25/createdatasource.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appsync-2017-07-25/CreateDataSource)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appsync-2017-07-25/createdatasource.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appsync-2017-07-25/CreateDataSource)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appsync-2017-07-25/createdatasource.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appsync-2017-07-25/CreateDataSource)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/appsync-2017-07-25/createdatasource.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appsync-2017-07-25/CreateDataSource)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appsync-2017-07-25/createdatasource.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appsync-2017-07-25/CreateDataSource)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appsync-2017-07-25/createdatasource.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appsync-2017-07-25/CreateDataSource)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appsync-2017-07-25/createdatasource.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appsync-2017-07-25/CreateDataSource)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appsync-2017-07-25/createdatasource.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/appsync-2017-07-25/CreateDataSource)
+- [AWS SDK for Python](../../../../services/goto/boto3/appsync-2017-07-25/createdatasource.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appsync-2017-07-25/CreateDataSource)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appsync-2017-07-25/createdatasource.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CreateChannelNamespace
 

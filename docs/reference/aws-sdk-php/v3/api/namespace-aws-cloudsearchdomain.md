@@ -4,15 +4,15 @@ Menu
 
 ## CloudSearchDomain
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudsearchdomain.html\#toc)
+### Table of Contents  [header link](namespace-aws-cloudsearchdomain-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudsearchdomain.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-cloudsearchdomain-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudsearchdomain.exception.html)
+[Exception](namespace-aws-cloudsearchdomain-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudsearchdomain.html\#toc-classes)
+#### Classes  [header link](namespace-aws-cloudsearchdomain-toc-classes.md)
 
-[CloudSearchDomainClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudSearchDomain.CloudSearchDomainClient.html)This client is used to search and upload documents to an \*\*Amazon CloudSearch\*\* Domain.
+[CloudSearchDomainClient](class-aws-cloudsearchdomain-cloudsearchdomainclient.md)This client is used to search and upload documents to an \*\*Amazon CloudSearch\*\* Domain.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudsearchdomain.html#toc-classes)
+  - [Classes](namespace-aws-cloudsearchdomain-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudsearchdomain.html#top)
+[Back To Top](namespace-aws-cloudsearchdomain-top.md)

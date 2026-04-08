@@ -17,17 +17,17 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-03-22**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-personalize-events-2018-03-22.html)
+- [**2018-03-22**](api-personalize-events-2018-03-22.md)
 
-  - [PutActionInteractions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-personalize-events-2018-03-22.html#putactioninteractions)
-  - [PutActions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-personalize-events-2018-03-22.html#putactions)
-  - [PutEvents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-personalize-events-2018-03-22.html#putevents)
-  - [PutItems](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-personalize-events-2018-03-22.html#putitems)
-  - [PutUsers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-personalize-events-2018-03-22.html#putusers)
+  - [PutActionInteractions](api-personalize-events-2018-03-22-putactioninteractions.md)
+  - [PutActions](api-personalize-events-2018-03-22-putactions.md)
+  - [PutEvents](api-personalize-events-2018-03-22-putevents.md)
+  - [PutItems](api-personalize-events-2018-03-22-putitems.md)
+  - [PutUsers](api-personalize-events-2018-03-22-putusers.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PersonalizeEvents.PersonalizeEventsClient.html\#toc)
+### Table of Contents  [header link](class-aws-personalizeevents-personalizeeventsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PersonalizeEvents.PersonalizeEventsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-personalizeevents-personalizeeventsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -58,7 +58,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PersonalizeEvents.PersonalizeEventsClient.html\#methods)
+### Methods  [header link](class-aws-personalizeevents-personalizeeventsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -525,7 +525,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PersonalizeEvents.PersonalizeEventsClient.html#toc-methods)
+  - [Methods](class-aws-personalizeevents-personalizeeventsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -552,4 +552,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PersonalizeEvents.PersonalizeEventsClient.html#top)
+[Back To Top](class-aws-personalizeevents-personalizeeventsclient-top.md)

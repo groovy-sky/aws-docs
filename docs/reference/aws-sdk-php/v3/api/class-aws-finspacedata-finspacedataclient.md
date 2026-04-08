@@ -17,43 +17,43 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2020-07-13**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html)
+- [**2020-07-13**](api-finspace-data-2020-07-13.md)
 
-  - [AssociateUserToPermissionGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#associateusertopermissiongroup)
-  - [CreateChangeset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#createchangeset)
-  - [CreateDataView](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#createdataview)
-  - [CreateDataset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#createdataset)
-  - [CreatePermissionGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#createpermissiongroup)
-  - [CreateUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#createuser)
-  - [DeleteDataset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#deletedataset)
-  - [DeletePermissionGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#deletepermissiongroup)
-  - [DisableUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#disableuser)
-  - [DisassociateUserFromPermissionGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#disassociateuserfrompermissiongroup)
-  - [EnableUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#enableuser)
-  - [GetChangeset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#getchangeset)
-  - [GetDataView](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#getdataview)
-  - [GetDataset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#getdataset)
-  - [GetExternalDataViewAccessDetails](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#getexternaldataviewaccessdetails)
-  - [GetPermissionGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#getpermissiongroup)
-  - [GetProgrammaticAccessCredentials](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#getprogrammaticaccesscredentials)
-  - [GetUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#getuser)
-  - [GetWorkingLocation](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#getworkinglocation)
-  - [ListChangesets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#listchangesets)
-  - [ListDataViews](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#listdataviews)
-  - [ListDatasets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#listdatasets)
-  - [ListPermissionGroups](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#listpermissiongroups)
-  - [ListPermissionGroupsByUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#listpermissiongroupsbyuser)
-  - [ListUsers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#listusers)
-  - [ListUsersByPermissionGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#listusersbypermissiongroup)
-  - [ResetUserPassword](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#resetuserpassword)
-  - [UpdateChangeset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#updatechangeset)
-  - [UpdateDataset](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#updatedataset)
-  - [UpdatePermissionGroup](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#updatepermissiongroup)
-  - [UpdateUser](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-finspace-data-2020-07-13.html#updateuser)
+  - [AssociateUserToPermissionGroup](api-finspace-data-2020-07-13-associateusertopermissiongroup.md)
+  - [CreateChangeset](api-finspace-data-2020-07-13-createchangeset.md)
+  - [CreateDataView](api-finspace-data-2020-07-13-createdataview.md)
+  - [CreateDataset](api-finspace-data-2020-07-13-createdataset.md)
+  - [CreatePermissionGroup](api-finspace-data-2020-07-13-createpermissiongroup.md)
+  - [CreateUser](api-finspace-data-2020-07-13-createuser.md)
+  - [DeleteDataset](api-finspace-data-2020-07-13-deletedataset.md)
+  - [DeletePermissionGroup](api-finspace-data-2020-07-13-deletepermissiongroup.md)
+  - [DisableUser](api-finspace-data-2020-07-13-disableuser.md)
+  - [DisassociateUserFromPermissionGroup](api-finspace-data-2020-07-13-disassociateuserfrompermissiongroup.md)
+  - [EnableUser](api-finspace-data-2020-07-13-enableuser.md)
+  - [GetChangeset](api-finspace-data-2020-07-13-getchangeset.md)
+  - [GetDataView](api-finspace-data-2020-07-13-getdataview.md)
+  - [GetDataset](api-finspace-data-2020-07-13-getdataset.md)
+  - [GetExternalDataViewAccessDetails](api-finspace-data-2020-07-13-getexternaldataviewaccessdetails.md)
+  - [GetPermissionGroup](api-finspace-data-2020-07-13-getpermissiongroup.md)
+  - [GetProgrammaticAccessCredentials](api-finspace-data-2020-07-13-getprogrammaticaccesscredentials.md)
+  - [GetUser](api-finspace-data-2020-07-13-getuser.md)
+  - [GetWorkingLocation](api-finspace-data-2020-07-13-getworkinglocation.md)
+  - [ListChangesets](api-finspace-data-2020-07-13-listchangesets.md)
+  - [ListDataViews](api-finspace-data-2020-07-13-listdataviews.md)
+  - [ListDatasets](api-finspace-data-2020-07-13-listdatasets.md)
+  - [ListPermissionGroups](api-finspace-data-2020-07-13-listpermissiongroups.md)
+  - [ListPermissionGroupsByUser](api-finspace-data-2020-07-13-listpermissiongroupsbyuser.md)
+  - [ListUsers](api-finspace-data-2020-07-13-listusers.md)
+  - [ListUsersByPermissionGroup](api-finspace-data-2020-07-13-listusersbypermissiongroup.md)
+  - [ResetUserPassword](api-finspace-data-2020-07-13-resetuserpassword.md)
+  - [UpdateChangeset](api-finspace-data-2020-07-13-updatechangeset.md)
+  - [UpdateDataset](api-finspace-data-2020-07-13-updatedataset.md)
+  - [UpdatePermissionGroup](api-finspace-data-2020-07-13-updatepermissiongroup.md)
+  - [UpdateUser](api-finspace-data-2020-07-13-updateuser.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FinSpaceData.FinSpaceDataClient.html\#toc)
+### Table of Contents  [header link](class-aws-finspacedata-finspacedataclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FinSpaceData.FinSpaceDataClient.html\#toc-methods)
+#### Methods  [header link](class-aws-finspacedata-finspacedataclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -84,7 +84,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FinSpaceData.FinSpaceDataClient.html\#methods)
+### Methods  [header link](class-aws-finspacedata-finspacedataclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -551,7 +551,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FinSpaceData.FinSpaceDataClient.html#toc-methods)
+  - [Methods](class-aws-finspacedata-finspacedataclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -578,4 +578,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FinSpaceData.FinSpaceDataClient.html#top)
+[Back To Top](class-aws-finspacedata-finspacedataclient-top.md)

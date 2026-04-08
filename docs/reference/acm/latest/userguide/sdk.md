@@ -1,7 +1,7 @@
 # Use AWS Certificate Manager with the SDK for Java
 
 You can use the AWS Certificate Manager API to interact with the service programmatically by sending
-HTTP requests. For more information, see the [AWS Certificate Manager API Reference](https://docs.aws.amazon.com/acm/latest/APIReference).
+HTTP requests. For more information, see the [AWS Certificate Manager API Reference](../apireference.md).
 
 In addition to the web API (or HTTP API), you can use the AWS SDKs and command line
 tools to interact with ACM and other services. For more information, see [Tools for Amazon Web Services](https://aws.amazon.com/tools).
@@ -11,31 +11,31 @@ operations in the AWS Certificate Manager API.
 
 ###### Topics
 
-- [Adding tags to a certificate](https://docs.aws.amazon.com/acm/latest/userguide/sdk-addtag.html)
+- [Adding tags to a certificate](sdk-addtag.md)
 
-- [Deleting a certificate](https://docs.aws.amazon.com/acm/latest/userguide/sdk-delete.html)
+- [Deleting a certificate](sdk-delete.md)
 
-- [Describing a certificate](https://docs.aws.amazon.com/acm/latest/userguide/sdk-describe.html)
+- [Describing a certificate](sdk-describe.md)
 
-- [Exporting a certificate](https://docs.aws.amazon.com/acm/latest/userguide/sdk-export.html)
+- [Exporting a certificate](sdk-export.md)
 
-- [Retrieve a certificate and certificate chain](https://docs.aws.amazon.com/acm/latest/userguide/sdk-get.html)
+- [Retrieve a certificate and certificate chain](sdk-get.md)
 
-- [Importing a certificate](https://docs.aws.amazon.com/acm/latest/userguide/sdk-import.html)
+- [Importing a certificate](sdk-import.md)
 
-- [Listing certificates](https://docs.aws.amazon.com/acm/latest/userguide/sdk-list.html)
+- [Listing certificates](sdk-list.md)
 
-- [Renewing a certificate](https://docs.aws.amazon.com/acm/latest/userguide/sdk-renew.html)
+- [Renewing a certificate](sdk-renew.md)
 
-- [Listing certificate tags](https://docs.aws.amazon.com/acm/latest/userguide/sdk-listtag.html)
+- [Listing certificate tags](sdk-listtag.md)
 
-- [Removing tags from a certificate](https://docs.aws.amazon.com/acm/latest/userguide/sdk-tagremove.html)
+- [Removing tags from a certificate](sdk-tagremove.md)
 
-- [Requesting a certificate](https://docs.aws.amazon.com/acm/latest/userguide/sdk-request.html)
+- [Requesting a certificate](sdk-request.md)
 
-- [Resending validation email](https://docs.aws.amazon.com/acm/latest/userguide/sdk-validate.html)
+- [Resending validation email](sdk-validate.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CloudWatch metrics
 

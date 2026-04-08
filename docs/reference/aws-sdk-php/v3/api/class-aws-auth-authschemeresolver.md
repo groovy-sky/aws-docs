@@ -9,29 +9,29 @@ Houses logic for selecting an auth scheme modeled in a service's \`auth\` trait.
 
 The `auth` trait can be modeled either in a service's metadata, or at the operation level.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolver.html\#toc)
+### Table of Contents  [header link](class-aws-auth-authschemeresolver-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolver.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-auth-authschemeresolver-toc-interfaces.md)
 
 [AuthSchemeResolverInterface](class-aws-auth-authschemeresolverinterface.md)An AuthSchemeResolver object determines which auth scheme will be used for request signing.
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolver.html\#toc-constants)
+#### Constants  [header link](class-aws-auth-authschemeresolver-toc-constants.md)
 
-[UNSIGNED\_BODY](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolver.html#constant_UNSIGNED_BODY)
+[UNSIGNED\_BODY](class-aws-auth-authschemeresolver-constant-unsigned-body.md)
 = '-unsigned-body'
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolver.html\#toc-methods)
+#### Methods  [header link](class-aws-auth-authschemeresolver-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolver.html#method___construct)
-: mixed [selectAuthScheme()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolver.html#method_selectAuthScheme)
+[\_\_construct()](class-aws-auth-authschemeresolver-method-construct.md)
+: mixed [selectAuthScheme()](class-aws-auth-authschemeresolver-method-selectauthscheme.md)
 : string Accepts a priority-ordered list of auth schemes and an Identity
 and selects the first compatible auth schemes, returning a normalized
 signature version. For example, based on the default auth scheme mapping,
 if \`aws.auth#sigv4\` is selected, \`v4\` will be returned.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolver.html\#constants)
+### Constants  [header link](class-aws-auth-authschemeresolver-constants.md)
 
-#### UNSIGNED\_BODY  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolver.html\#constant_UNSIGNED_BODY)
+#### UNSIGNED\_BODY  [header link](class-aws-auth-authschemeresolver-constant-unsigned-body.md)
 
 `
     public
@@ -40,9 +40,9 @@ if \`aws.auth#sigv4\` is selected, \`v4\` will be returned.
     = '-unsigned-body'
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolver.html\#methods)
+### Methods  [header link](class-aws-auth-authschemeresolver-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolver.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-auth-authschemeresolver-method-construct.md)
 
 `
     public
@@ -57,7 +57,7 @@ $credentialProvider
 : array<string\|int, mixed>
 = \[\]
 
-#### selectAuthScheme()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolver.html\#method_selectAuthScheme)
+#### selectAuthScheme()  [header link](class-aws-auth-authschemeresolver-method-selectauthscheme.md)
 
 Accepts a priority-ordered list of auth schemes and an Identity
 and selects the first compatible auth schemes, returning a normalized
@@ -75,9 +75,9 @@ $authSchemes
 : array<string\|int, mixed>
 = \[\]
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolver.html\#method_selectAuthScheme\#tags)
+##### Tags  [header link](class-aws-auth-authschemeresolver-method-selectauthscheme-tags.md)
 
-throws[UnresolvedAuthSchemeException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.Exception.UnresolvedAuthSchemeException.html)
+throws[UnresolvedAuthSchemeException](class-aws-auth-exception-unresolvedauthschemeexception.md)
 
 ##### Return values
 
@@ -89,12 +89,12 @@ string
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolver.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolver.html#toc-methods)
+  - [Constants](class-aws-auth-authschemeresolver-toc-constants.md)
+  - [Methods](class-aws-auth-authschemeresolver-toc-methods.md)
 - Constants
-  - [UNSIGNED\_BODY](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolver.html#constant_UNSIGNED_BODY)
+  - [UNSIGNED\_BODY](class-aws-auth-authschemeresolver-constant-unsigned-body.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolver.html#method___construct)
-  - [selectAuthScheme()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolver.html#method_selectAuthScheme)
+  - [\_\_construct()](class-aws-auth-authschemeresolver-method-construct.md)
+  - [selectAuthScheme()](class-aws-auth-authschemeresolver-method-selectauthscheme.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Auth.AuthSchemeResolver.html#top)
+[Back To Top](class-aws-auth-authschemeresolver-top.md)

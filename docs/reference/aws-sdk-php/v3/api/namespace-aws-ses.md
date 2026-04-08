@@ -4,15 +4,15 @@ Menu
 
 ## Ses
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ses.html\#toc)
+### Table of Contents  [header link](namespace-aws-ses-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ses.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-ses-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ses.exception.html)
+[Exception](namespace-aws-ses-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ses.html\#toc-classes)
+#### Classes  [header link](namespace-aws-ses-toc-classes.md)
 
-[SesClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ses.SesClient.html)This client is used to interact with the **Amazon Simple Email Service (Amazon SES)**.
+[SesClient](class-aws-ses-sesclient.md)This client is used to interact with the **Amazon Simple Email Service (Amazon SES)**.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ses.html#toc-classes)
+  - [Classes](namespace-aws-ses-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.ses.html#top)
+[Back To Top](namespace-aws-ses-top.md)

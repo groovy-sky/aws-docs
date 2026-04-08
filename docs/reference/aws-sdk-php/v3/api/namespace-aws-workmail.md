@@ -4,15 +4,15 @@ Menu
 
 ## WorkMail
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workmail.html\#toc)
+### Table of Contents  [header link](namespace-aws-workmail-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workmail.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-workmail-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workmail.exception.html)
+[Exception](namespace-aws-workmail-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workmail.html\#toc-classes)
+#### Classes  [header link](namespace-aws-workmail-toc-classes.md)
 
-[WorkMailClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.WorkMail.WorkMailClient.html)This client is used to interact with the **Amazon WorkMail** service.
+[WorkMailClient](class-aws-workmail-workmailclient.md)This client is used to interact with the **Amazon WorkMail** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workmail.html#toc-classes)
+  - [Classes](namespace-aws-workmail-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.workmail.html#top)
+[Back To Top](namespace-aws-workmail-top.md)

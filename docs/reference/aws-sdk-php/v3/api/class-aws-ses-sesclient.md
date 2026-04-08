@@ -17,79 +17,79 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2010-12-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html)
+- [**2010-12-01**](api-email-2010-12-01.md)
 
-  - [CloneReceiptRuleSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#clonereceiptruleset)
-  - [CreateConfigurationSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#createconfigurationset)
-  - [CreateConfigurationSetEventDestination](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#createconfigurationseteventdestination)
-  - [CreateConfigurationSetTrackingOptions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#createconfigurationsettrackingoptions)
-  - [CreateCustomVerificationEmailTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#createcustomverificationemailtemplate)
-  - [CreateReceiptFilter](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#createreceiptfilter)
-  - [CreateReceiptRule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#createreceiptrule)
-  - [CreateReceiptRuleSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#createreceiptruleset)
-  - [CreateTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#createtemplate)
-  - [DeleteConfigurationSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#deleteconfigurationset)
-  - [DeleteConfigurationSetEventDestination](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#deleteconfigurationseteventdestination)
-  - [DeleteConfigurationSetTrackingOptions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#deleteconfigurationsettrackingoptions)
-  - [DeleteCustomVerificationEmailTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#deletecustomverificationemailtemplate)
-  - [DeleteIdentity](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#deleteidentity)
-  - [DeleteIdentityPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#deleteidentitypolicy)
-  - [DeleteReceiptFilter](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#deletereceiptfilter)
-  - [DeleteReceiptRule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#deletereceiptrule)
-  - [DeleteReceiptRuleSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#deletereceiptruleset)
-  - [DeleteTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#deletetemplate)
-  - [DeleteVerifiedEmailAddress](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#deleteverifiedemailaddress)
-  - [DescribeActiveReceiptRuleSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#describeactivereceiptruleset)
-  - [DescribeConfigurationSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#describeconfigurationset)
-  - [DescribeReceiptRule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#describereceiptrule)
-  - [DescribeReceiptRuleSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#describereceiptruleset)
-  - [GetAccountSendingEnabled](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#getaccountsendingenabled)
-  - [GetCustomVerificationEmailTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#getcustomverificationemailtemplate)
-  - [GetIdentityDkimAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#getidentitydkimattributes)
-  - [GetIdentityMailFromDomainAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#getidentitymailfromdomainattributes)
-  - [GetIdentityNotificationAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#getidentitynotificationattributes)
-  - [GetIdentityPolicies](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#getidentitypolicies)
-  - [GetIdentityVerificationAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#getidentityverificationattributes)
-  - [GetSendQuota](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#getsendquota)
-  - [GetSendStatistics](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#getsendstatistics)
-  - [GetTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#gettemplate)
-  - [ListConfigurationSets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#listconfigurationsets)
-  - [ListCustomVerificationEmailTemplates](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#listcustomverificationemailtemplates)
-  - [ListIdentities](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#listidentities)
-  - [ListIdentityPolicies](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#listidentitypolicies)
-  - [ListReceiptFilters](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#listreceiptfilters)
-  - [ListReceiptRuleSets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#listreceiptrulesets)
-  - [ListTemplates](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#listtemplates)
-  - [ListVerifiedEmailAddresses](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#listverifiedemailaddresses)
-  - [PutConfigurationSetDeliveryOptions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#putconfigurationsetdeliveryoptions)
-  - [PutIdentityPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#putidentitypolicy)
-  - [ReorderReceiptRuleSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#reorderreceiptruleset)
-  - [SendBounce](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#sendbounce)
-  - [SendBulkTemplatedEmail](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#sendbulktemplatedemail)
-  - [SendCustomVerificationEmail](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#sendcustomverificationemail)
-  - [SendEmail](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#sendemail)
-  - [SendRawEmail](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#sendrawemail)
-  - [SendTemplatedEmail](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#sendtemplatedemail)
-  - [SetActiveReceiptRuleSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#setactivereceiptruleset)
-  - [SetIdentityDkimEnabled](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#setidentitydkimenabled)
-  - [SetIdentityFeedbackForwardingEnabled](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#setidentityfeedbackforwardingenabled)
-  - [SetIdentityHeadersInNotificationsEnabled](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#setidentityheadersinnotificationsenabled)
-  - [SetIdentityMailFromDomain](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#setidentitymailfromdomain)
-  - [SetIdentityNotificationTopic](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#setidentitynotificationtopic)
-  - [SetReceiptRulePosition](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#setreceiptruleposition)
-  - [TestRenderTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#testrendertemplate)
-  - [UpdateAccountSendingEnabled](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#updateaccountsendingenabled)
-  - [UpdateConfigurationSetEventDestination](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#updateconfigurationseteventdestination)
-  - [UpdateConfigurationSetReputationMetricsEnabled](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#updateconfigurationsetreputationmetricsenabled)
-  - [UpdateConfigurationSetSendingEnabled](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#updateconfigurationsetsendingenabled)
-  - [UpdateConfigurationSetTrackingOptions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#updateconfigurationsettrackingoptions)
-  - [UpdateCustomVerificationEmailTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#updatecustomverificationemailtemplate)
-  - [UpdateReceiptRule](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#updatereceiptrule)
-  - [UpdateTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#updatetemplate)
-  - [VerifyDomainDkim](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#verifydomaindkim)
-  - [VerifyDomainIdentity](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#verifydomainidentity)
-  - [VerifyEmailAddress](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#verifyemailaddress)
-  - [VerifyEmailIdentity](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-email-2010-12-01.html#verifyemailidentity)
+  - [CloneReceiptRuleSet](api-email-2010-12-01-clonereceiptruleset.md)
+  - [CreateConfigurationSet](api-email-2010-12-01-createconfigurationset.md)
+  - [CreateConfigurationSetEventDestination](api-email-2010-12-01-createconfigurationseteventdestination.md)
+  - [CreateConfigurationSetTrackingOptions](api-email-2010-12-01-createconfigurationsettrackingoptions.md)
+  - [CreateCustomVerificationEmailTemplate](api-email-2010-12-01-createcustomverificationemailtemplate.md)
+  - [CreateReceiptFilter](api-email-2010-12-01-createreceiptfilter.md)
+  - [CreateReceiptRule](api-email-2010-12-01-createreceiptrule.md)
+  - [CreateReceiptRuleSet](api-email-2010-12-01-createreceiptruleset.md)
+  - [CreateTemplate](api-email-2010-12-01-createtemplate.md)
+  - [DeleteConfigurationSet](api-email-2010-12-01-deleteconfigurationset.md)
+  - [DeleteConfigurationSetEventDestination](api-email-2010-12-01-deleteconfigurationseteventdestination.md)
+  - [DeleteConfigurationSetTrackingOptions](api-email-2010-12-01-deleteconfigurationsettrackingoptions.md)
+  - [DeleteCustomVerificationEmailTemplate](api-email-2010-12-01-deletecustomverificationemailtemplate.md)
+  - [DeleteIdentity](api-email-2010-12-01-deleteidentity.md)
+  - [DeleteIdentityPolicy](api-email-2010-12-01-deleteidentitypolicy.md)
+  - [DeleteReceiptFilter](api-email-2010-12-01-deletereceiptfilter.md)
+  - [DeleteReceiptRule](api-email-2010-12-01-deletereceiptrule.md)
+  - [DeleteReceiptRuleSet](api-email-2010-12-01-deletereceiptruleset.md)
+  - [DeleteTemplate](api-email-2010-12-01-deletetemplate.md)
+  - [DeleteVerifiedEmailAddress](api-email-2010-12-01-deleteverifiedemailaddress.md)
+  - [DescribeActiveReceiptRuleSet](api-email-2010-12-01-describeactivereceiptruleset.md)
+  - [DescribeConfigurationSet](api-email-2010-12-01-describeconfigurationset.md)
+  - [DescribeReceiptRule](api-email-2010-12-01-describereceiptrule.md)
+  - [DescribeReceiptRuleSet](api-email-2010-12-01-describereceiptruleset.md)
+  - [GetAccountSendingEnabled](api-email-2010-12-01-getaccountsendingenabled.md)
+  - [GetCustomVerificationEmailTemplate](api-email-2010-12-01-getcustomverificationemailtemplate.md)
+  - [GetIdentityDkimAttributes](api-email-2010-12-01-getidentitydkimattributes.md)
+  - [GetIdentityMailFromDomainAttributes](api-email-2010-12-01-getidentitymailfromdomainattributes.md)
+  - [GetIdentityNotificationAttributes](api-email-2010-12-01-getidentitynotificationattributes.md)
+  - [GetIdentityPolicies](api-email-2010-12-01-getidentitypolicies.md)
+  - [GetIdentityVerificationAttributes](api-email-2010-12-01-getidentityverificationattributes.md)
+  - [GetSendQuota](api-email-2010-12-01-getsendquota.md)
+  - [GetSendStatistics](api-email-2010-12-01-getsendstatistics.md)
+  - [GetTemplate](api-email-2010-12-01-gettemplate.md)
+  - [ListConfigurationSets](api-email-2010-12-01-listconfigurationsets.md)
+  - [ListCustomVerificationEmailTemplates](api-email-2010-12-01-listcustomverificationemailtemplates.md)
+  - [ListIdentities](api-email-2010-12-01-listidentities.md)
+  - [ListIdentityPolicies](api-email-2010-12-01-listidentitypolicies.md)
+  - [ListReceiptFilters](api-email-2010-12-01-listreceiptfilters.md)
+  - [ListReceiptRuleSets](api-email-2010-12-01-listreceiptrulesets.md)
+  - [ListTemplates](api-email-2010-12-01-listtemplates.md)
+  - [ListVerifiedEmailAddresses](api-email-2010-12-01-listverifiedemailaddresses.md)
+  - [PutConfigurationSetDeliveryOptions](api-email-2010-12-01-putconfigurationsetdeliveryoptions.md)
+  - [PutIdentityPolicy](api-email-2010-12-01-putidentitypolicy.md)
+  - [ReorderReceiptRuleSet](api-email-2010-12-01-reorderreceiptruleset.md)
+  - [SendBounce](api-email-2010-12-01-sendbounce.md)
+  - [SendBulkTemplatedEmail](api-email-2010-12-01-sendbulktemplatedemail.md)
+  - [SendCustomVerificationEmail](api-email-2010-12-01-sendcustomverificationemail.md)
+  - [SendEmail](api-email-2010-12-01-sendemail.md)
+  - [SendRawEmail](api-email-2010-12-01-sendrawemail.md)
+  - [SendTemplatedEmail](api-email-2010-12-01-sendtemplatedemail.md)
+  - [SetActiveReceiptRuleSet](api-email-2010-12-01-setactivereceiptruleset.md)
+  - [SetIdentityDkimEnabled](api-email-2010-12-01-setidentitydkimenabled.md)
+  - [SetIdentityFeedbackForwardingEnabled](api-email-2010-12-01-setidentityfeedbackforwardingenabled.md)
+  - [SetIdentityHeadersInNotificationsEnabled](api-email-2010-12-01-setidentityheadersinnotificationsenabled.md)
+  - [SetIdentityMailFromDomain](api-email-2010-12-01-setidentitymailfromdomain.md)
+  - [SetIdentityNotificationTopic](api-email-2010-12-01-setidentitynotificationtopic.md)
+  - [SetReceiptRulePosition](api-email-2010-12-01-setreceiptruleposition.md)
+  - [TestRenderTemplate](api-email-2010-12-01-testrendertemplate.md)
+  - [UpdateAccountSendingEnabled](api-email-2010-12-01-updateaccountsendingenabled.md)
+  - [UpdateConfigurationSetEventDestination](api-email-2010-12-01-updateconfigurationseteventdestination.md)
+  - [UpdateConfigurationSetReputationMetricsEnabled](api-email-2010-12-01-updateconfigurationsetreputationmetricsenabled.md)
+  - [UpdateConfigurationSetSendingEnabled](api-email-2010-12-01-updateconfigurationsetsendingenabled.md)
+  - [UpdateConfigurationSetTrackingOptions](api-email-2010-12-01-updateconfigurationsettrackingoptions.md)
+  - [UpdateCustomVerificationEmailTemplate](api-email-2010-12-01-updatecustomverificationemailtemplate.md)
+  - [UpdateReceiptRule](api-email-2010-12-01-updatereceiptrule.md)
+  - [UpdateTemplate](api-email-2010-12-01-updatetemplate.md)
+  - [VerifyDomainDkim](api-email-2010-12-01-verifydomaindkim.md)
+  - [VerifyDomainIdentity](api-email-2010-12-01-verifydomainidentity.md)
+  - [VerifyEmailAddress](api-email-2010-12-01-verifyemailaddress.md)
+  - [VerifyEmailIdentity](api-email-2010-12-01-verifyemailidentity.md)
 
 ## Examples
 
@@ -97,22 +97,22 @@ specific API operation can be done using magic methods (e.g.,
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for PHP with Amazon Simple Email Service.
 
-- [See examples on AWS Docs](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/php_ses_code_examples.html)
+- [See examples on AWS Docs](../../../sdk-for-php/v3/developer-guide/php-ses-code-examples.md)
 
 ### Legacy Code Examples With Guidance
 
-The following examples demonstrate how to use this service with the AWS SDK for PHP. These code examples are available in the [AWS SDK for PHP Developer Guide](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/ses-examples.html).
+The following examples demonstrate how to use this service with the AWS SDK for PHP. These code examples are available in the [AWS SDK for PHP Developer Guide](../../../sdk-for-php/v3/developer-guide/ses-examples.md).
 
-- [Verifying email addresses](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/ses-verify.html)
-- [Working with email templates](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/ses-template.html)
-- [Managing email filters](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/ses-filters.html)
-- [Using email rules](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/ses-rules.html)
-- [Monitor your sending activity](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/ses-send-email.html)
-- [Authorizing senders](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/ses-sender-policy.html)
+- [Verifying email addresses](../../../sdk-for-php/v3/developer-guide/ses-verify.md)
+- [Working with email templates](../../../sdk-for-php/v3/developer-guide/ses-template.md)
+- [Managing email filters](../../../sdk-for-php/v3/developer-guide/ses-filters.md)
+- [Using email rules](../../../sdk-for-php/v3/developer-guide/ses-rules.md)
+- [Monitor your sending activity](../../../sdk-for-php/v3/developer-guide/ses-send-email.md)
+- [Authorizing senders](../../../sdk-for-php/v3/developer-guide/ses-sender-policy.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ses.SesClient.html\#toc)
+### Table of Contents  [header link](class-aws-ses-sesclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ses.SesClient.html\#toc-methods)
+#### Methods  [header link](class-aws-ses-sesclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -120,8 +120,8 @@ The following examples demonstrate how to use this service with the AWS SDK for 
 : mixed [execute()](class-aws-awsclienttrait.md#method_execute)
 : mixed [executeAsync()](class-aws-awsclienttrait.md#method_executeAsync)
 : mixed [factory()](class-aws-awsclient.md#method_factory)
-: static [generateSmtpPassword()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ses.SesClient.html#method_generateSmtpPassword)
-: string [generateSmtpPasswordV4()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ses.SesClient.html#method_generateSmtpPasswordV4)
+: static [generateSmtpPassword()](class-aws-ses-sesclient-method-generatesmtppassword.md)
+: string [generateSmtpPasswordV4()](class-aws-ses-sesclient-method-generatesmtppasswordv4.md)
 : string Create an SMTP password for a given IAM user's credentials.[getApi()](class-aws-awsclienttrait.md#method_getApi)
 : [Service](class-aws-api-service.md)[getArguments()](class-aws-awsclient.md#method_getArguments)
 : array<string\|int, mixed> Get an array of client constructor arguments used by the client.[getClientBuiltIns()](class-aws-awsclient.md#method_getClientBuiltIns)
@@ -145,7 +145,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ses.SesClient.html\#methods)
+### Methods  [header link](class-aws-ses-sesclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -377,7 +377,7 @@ deprecated
 
 static
 
-#### generateSmtpPassword()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ses.SesClient.html\#method_generateSmtpPassword)
+#### generateSmtpPassword()  [header link](class-aws-ses-sesclient-method-generatesmtppassword.md)
 
 `
     public
@@ -388,7 +388,7 @@ static
 $creds
 : [CredentialsInterface](class-aws-credentials-credentialsinterface.md)
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ses.SesClient.html\#method_generateSmtpPassword\#tags)
+##### Tags  [header link](class-aws-ses-sesclient-method-generatesmtppassword-tags.md)
 
 deprecated
 
@@ -398,13 +398,13 @@ Create an SMTP password for a given IAM user's credentials.
 
 The SMTP username is the Access Key ID for the provided credentials.
 
-link[http://docs.aws.amazon.com/ses/latest/DeveloperGuide/smtp-credentials.html#smtp-credentials-convert](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/smtp-credentials.html#smtp-credentials-convert)
+link[http://docs.aws.amazon.com/ses/latest/DeveloperGuide/smtp-credentials.html#smtp-credentials-convert](../../../../services/ses/latest/developerguide/smtp-credentials-smtp-credentials-convert.md)
 
 ##### Return values
 
 string
 
-#### generateSmtpPasswordV4()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ses.SesClient.html\#method_generateSmtpPasswordV4)
+#### generateSmtpPasswordV4()  [header link](class-aws-ses-sesclient-method-generatesmtppasswordv4.md)
 
 Create an SMTP password for a given IAM user's credentials.
 
@@ -423,9 +423,9 @@ $creds
 : [CredentialsInterface](class-aws-credentials-credentialsinterface.md)$region
 : string
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ses.SesClient.html\#method_generateSmtpPasswordV4\#tags)
+##### Tags  [header link](class-aws-ses-sesclient-method-generatesmtppasswordv4-tags.md)
 
-link[https://docs.aws.amazon.com/ses/latest/DeveloperGuide/smtp-credentials.html#smtp-credentials-convert](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/smtp-credentials.html#smtp-credentials-convert)
+link[https://docs.aws.amazon.com/ses/latest/DeveloperGuide/smtp-credentials.html#smtp-credentials-convert](../../../../services/ses/latest/developerguide/smtp-credentials-smtp-credentials-convert.md)
 
 ##### Return values
 
@@ -666,7 +666,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ses.SesClient.html#toc-methods)
+  - [Methods](class-aws-ses-sesclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -674,8 +674,8 @@ $name
   - [execute()](class-aws-awsclienttrait.md#method_execute)
   - [executeAsync()](class-aws-awsclienttrait.md#method_executeAsync)
   - [factory()](class-aws-awsclient.md#method_factory)
-  - [generateSmtpPassword()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ses.SesClient.html#method_generateSmtpPassword)
-  - [generateSmtpPasswordV4()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ses.SesClient.html#method_generateSmtpPasswordV4)
+  - [generateSmtpPassword()](class-aws-ses-sesclient-method-generatesmtppassword.md)
+  - [generateSmtpPasswordV4()](class-aws-ses-sesclient-method-generatesmtppasswordv4.md)
   - [getApi()](class-aws-awsclienttrait.md#method_getApi)
   - [getArguments()](class-aws-awsclient.md#method_getArguments)
   - [getClientBuiltIns()](class-aws-awsclient.md#method_getClientBuiltIns)
@@ -695,4 +695,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ses.SesClient.html#top)
+[Back To Top](class-aws-ses-sesclient-top.md)

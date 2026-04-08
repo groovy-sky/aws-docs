@@ -96,7 +96,7 @@ The preceding sample creates output similar to the following.
 {CertificateArn: arn:aws:acm:region:account:certificate/12345678-1234-1234-1234-123456789012}
 ```
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 RemoveTagsFromCertificate
 

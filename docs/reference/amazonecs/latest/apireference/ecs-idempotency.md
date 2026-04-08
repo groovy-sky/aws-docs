@@ -125,7 +125,7 @@ To make an AWS CLI command idempotent, add the `--client-token` option.
 
 ###### Example: create-service
 
-The following [create-service](https://docs.aws.amazon.com/cli/latest/reference/ecs/create-service.html#examples) command uses idempotency as it includes a client
+The following [create-service](../../../../services/cli/latest/reference/ecs/create-service-examples.md) command uses idempotency as it includes a client
 token.
 
 ```nohighlight
@@ -143,7 +143,7 @@ aws ecs create-service \
 
 ###### Example: create-task-set
 
-The following [create-task-set](https://docs.aws.amazon.com/cli/latest/reference/ecs/create-task-set.html#examples) command uses idempotency as it includes a client
+The following [create-task-set](../../../../services/cli/latest/reference/ecs/create-task-set-examples.md) command uses idempotency as it includes a client
 token.
 
 ```nohighlight
@@ -158,7 +158,7 @@ aws ecs create-task-set \
 
 ###### Example: run-task
 
-The following [run-task](https://docs.aws.amazon.com/cli/latest/reference/ecs/run-task.html#examples)
+The following [run-task](../../../../services/cli/latest/reference/ecs/run-task-examples.md)
 command uses idempotency as it includes a client token.
 
 ```sh
@@ -288,7 +288,7 @@ The original request completed successfully. Any subsequent retries return
 successfully.
 
 400-series response codes
-( [client errors](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/errors-overview.html#CommonErrors))
+( [client errors](errors-overview-commonerrors.md))
 
 Do not retry
 
@@ -307,7 +307,7 @@ changing states, retrying the request could possibly
 succeed.
 
 500-series response codes
-( [server errors](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/errors-overview.html#api-error-codes-table-server))
+( [server errors](errors-overview-api-error-codes-table-server.md))
 
 Retry
 
@@ -315,7 +315,7 @@ The error is caused by an AWS server-side issue and is generally
 transient. Repeat the request with an appropriate back-off
 strategy.
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 API request throttling
 

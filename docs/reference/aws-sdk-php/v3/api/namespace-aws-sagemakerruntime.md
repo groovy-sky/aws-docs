@@ -4,15 +4,15 @@ Menu
 
 ## SageMakerRuntime
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakerruntime.html\#toc)
+### Table of Contents  [header link](namespace-aws-sagemakerruntime-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakerruntime.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-sagemakerruntime-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakerruntime.exception.html)
+[Exception](namespace-aws-sagemakerruntime-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakerruntime.html\#toc-classes)
+#### Classes  [header link](namespace-aws-sagemakerruntime-toc-classes.md)
 
-[SageMakerRuntimeClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMakerRuntime.SageMakerRuntimeClient.html)This client is used to interact with the **Amazon SageMaker Runtime** service.
+[SageMakerRuntimeClient](class-aws-sagemakerruntime-sagemakerruntimeclient.md)This client is used to interact with the **Amazon SageMaker Runtime** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakerruntime.html#toc-classes)
+  - [Classes](namespace-aws-sagemakerruntime-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sagemakerruntime.html#top)
+[Back To Top](namespace-aws-sagemakerruntime-top.md)

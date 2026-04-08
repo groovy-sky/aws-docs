@@ -4,15 +4,15 @@ Menu
 
 ## ResourceGroups
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.resourcegroups.html\#toc)
+### Table of Contents  [header link](namespace-aws-resourcegroups-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.resourcegroups.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-resourcegroups-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.resourcegroups.exception.html)
+[Exception](namespace-aws-resourcegroups-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.resourcegroups.html\#toc-classes)
+#### Classes  [header link](namespace-aws-resourcegroups-toc-classes.md)
 
-[ResourceGroupsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ResourceGroups.ResourceGroupsClient.html)This client is used to interact with the **AWS Resource Groups** service.
+[ResourceGroupsClient](class-aws-resourcegroups-resourcegroupsclient.md)This client is used to interact with the **AWS Resource Groups** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.resourcegroups.html#toc-classes)
+  - [Classes](namespace-aws-resourcegroups-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.resourcegroups.html#top)
+[Back To Top](namespace-aws-resourcegroups-top.md)

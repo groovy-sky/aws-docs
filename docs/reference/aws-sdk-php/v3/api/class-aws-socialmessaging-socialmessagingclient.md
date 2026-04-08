@@ -17,33 +17,33 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2024-01-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-socialmessaging-2024-01-01.html)
+- [**2024-01-01**](api-socialmessaging-2024-01-01.md)
 
-  - [AssociateWhatsAppBusinessAccount](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-socialmessaging-2024-01-01.html#associatewhatsappbusinessaccount)
-  - [CreateWhatsAppMessageTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-socialmessaging-2024-01-01.html#createwhatsappmessagetemplate)
-  - [CreateWhatsAppMessageTemplateFromLibrary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-socialmessaging-2024-01-01.html#createwhatsappmessagetemplatefromlibrary)
-  - [CreateWhatsAppMessageTemplateMedia](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-socialmessaging-2024-01-01.html#createwhatsappmessagetemplatemedia)
-  - [DeleteWhatsAppMessageMedia](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-socialmessaging-2024-01-01.html#deletewhatsappmessagemedia)
-  - [DeleteWhatsAppMessageTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-socialmessaging-2024-01-01.html#deletewhatsappmessagetemplate)
-  - [DisassociateWhatsAppBusinessAccount](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-socialmessaging-2024-01-01.html#disassociatewhatsappbusinessaccount)
-  - [GetLinkedWhatsAppBusinessAccount](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-socialmessaging-2024-01-01.html#getlinkedwhatsappbusinessaccount)
-  - [GetLinkedWhatsAppBusinessAccountPhoneNumber](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-socialmessaging-2024-01-01.html#getlinkedwhatsappbusinessaccountphonenumber)
-  - [GetWhatsAppMessageMedia](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-socialmessaging-2024-01-01.html#getwhatsappmessagemedia)
-  - [GetWhatsAppMessageTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-socialmessaging-2024-01-01.html#getwhatsappmessagetemplate)
-  - [ListLinkedWhatsAppBusinessAccounts](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-socialmessaging-2024-01-01.html#listlinkedwhatsappbusinessaccounts)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-socialmessaging-2024-01-01.html#listtagsforresource)
-  - [ListWhatsAppMessageTemplates](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-socialmessaging-2024-01-01.html#listwhatsappmessagetemplates)
-  - [ListWhatsAppTemplateLibrary](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-socialmessaging-2024-01-01.html#listwhatsapptemplatelibrary)
-  - [PostWhatsAppMessageMedia](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-socialmessaging-2024-01-01.html#postwhatsappmessagemedia)
-  - [PutWhatsAppBusinessAccountEventDestinations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-socialmessaging-2024-01-01.html#putwhatsappbusinessaccounteventdestinations)
-  - [SendWhatsAppMessage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-socialmessaging-2024-01-01.html#sendwhatsappmessage)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-socialmessaging-2024-01-01.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-socialmessaging-2024-01-01.html#untagresource)
-  - [UpdateWhatsAppMessageTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-socialmessaging-2024-01-01.html#updatewhatsappmessagetemplate)
+  - [AssociateWhatsAppBusinessAccount](api-socialmessaging-2024-01-01-associatewhatsappbusinessaccount.md)
+  - [CreateWhatsAppMessageTemplate](api-socialmessaging-2024-01-01-createwhatsappmessagetemplate.md)
+  - [CreateWhatsAppMessageTemplateFromLibrary](api-socialmessaging-2024-01-01-createwhatsappmessagetemplatefromlibrary.md)
+  - [CreateWhatsAppMessageTemplateMedia](api-socialmessaging-2024-01-01-createwhatsappmessagetemplatemedia.md)
+  - [DeleteWhatsAppMessageMedia](api-socialmessaging-2024-01-01-deletewhatsappmessagemedia.md)
+  - [DeleteWhatsAppMessageTemplate](api-socialmessaging-2024-01-01-deletewhatsappmessagetemplate.md)
+  - [DisassociateWhatsAppBusinessAccount](api-socialmessaging-2024-01-01-disassociatewhatsappbusinessaccount.md)
+  - [GetLinkedWhatsAppBusinessAccount](api-socialmessaging-2024-01-01-getlinkedwhatsappbusinessaccount.md)
+  - [GetLinkedWhatsAppBusinessAccountPhoneNumber](api-socialmessaging-2024-01-01-getlinkedwhatsappbusinessaccountphonenumber.md)
+  - [GetWhatsAppMessageMedia](api-socialmessaging-2024-01-01-getwhatsappmessagemedia.md)
+  - [GetWhatsAppMessageTemplate](api-socialmessaging-2024-01-01-getwhatsappmessagetemplate.md)
+  - [ListLinkedWhatsAppBusinessAccounts](api-socialmessaging-2024-01-01-listlinkedwhatsappbusinessaccounts.md)
+  - [ListTagsForResource](api-socialmessaging-2024-01-01-listtagsforresource.md)
+  - [ListWhatsAppMessageTemplates](api-socialmessaging-2024-01-01-listwhatsappmessagetemplates.md)
+  - [ListWhatsAppTemplateLibrary](api-socialmessaging-2024-01-01-listwhatsapptemplatelibrary.md)
+  - [PostWhatsAppMessageMedia](api-socialmessaging-2024-01-01-postwhatsappmessagemedia.md)
+  - [PutWhatsAppBusinessAccountEventDestinations](api-socialmessaging-2024-01-01-putwhatsappbusinessaccounteventdestinations.md)
+  - [SendWhatsAppMessage](api-socialmessaging-2024-01-01-sendwhatsappmessage.md)
+  - [TagResource](api-socialmessaging-2024-01-01-tagresource.md)
+  - [UntagResource](api-socialmessaging-2024-01-01-untagresource.md)
+  - [UpdateWhatsAppMessageTemplate](api-socialmessaging-2024-01-01-updatewhatsappmessagetemplate.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SocialMessaging.SocialMessagingClient.html\#toc)
+### Table of Contents  [header link](class-aws-socialmessaging-socialmessagingclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SocialMessaging.SocialMessagingClient.html\#toc-methods)
+#### Methods  [header link](class-aws-socialmessaging-socialmessagingclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -74,7 +74,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SocialMessaging.SocialMessagingClient.html\#methods)
+### Methods  [header link](class-aws-socialmessaging-socialmessagingclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -541,7 +541,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SocialMessaging.SocialMessagingClient.html#toc-methods)
+  - [Methods](class-aws-socialmessaging-socialmessagingclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -568,4 +568,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SocialMessaging.SocialMessagingClient.html#top)
+[Back To Top](class-aws-socialmessaging-socialmessagingclient-top.md)

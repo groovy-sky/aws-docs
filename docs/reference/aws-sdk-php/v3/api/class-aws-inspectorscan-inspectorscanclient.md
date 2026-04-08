@@ -17,13 +17,13 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2023-08-08**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-inspector-scan-2023-08-08.html)
+- [**2023-08-08**](api-inspector-scan-2023-08-08.md)
 
-  - [ScanSbom](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-inspector-scan-2023-08-08.html#scansbom)
+  - [ScanSbom](api-inspector-scan-2023-08-08-scansbom.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.InspectorScan.InspectorScanClient.html\#toc)
+### Table of Contents  [header link](class-aws-inspectorscan-inspectorscanclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.InspectorScan.InspectorScanClient.html\#toc-methods)
+#### Methods  [header link](class-aws-inspectorscan-inspectorscanclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -54,7 +54,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.InspectorScan.InspectorScanClient.html\#methods)
+### Methods  [header link](class-aws-inspectorscan-inspectorscanclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -521,7 +521,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.InspectorScan.InspectorScanClient.html#toc-methods)
+  - [Methods](class-aws-inspectorscan-inspectorscanclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -548,4 +548,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.InspectorScan.InspectorScanClient.html#top)
+[Back To Top](class-aws-inspectorscan-inspectorscanclient-top.md)

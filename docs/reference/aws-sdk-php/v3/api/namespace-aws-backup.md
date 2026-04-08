@@ -4,15 +4,15 @@ Menu
 
 ## Backup
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.backup.html\#toc)
+### Table of Contents  [header link](namespace-aws-backup-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.backup.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-backup-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.backup.exception.html)
+[Exception](namespace-aws-backup-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.backup.html\#toc-classes)
+#### Classes  [header link](namespace-aws-backup-toc-classes.md)
 
-[BackupClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Backup.BackupClient.html)This client is used to interact with the **AWS Backup** service.
+[BackupClient](class-aws-backup-backupclient.md)This client is used to interact with the **AWS Backup** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.backup.html#toc-classes)
+  - [Classes](namespace-aws-backup-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.backup.html#top)
+[Back To Top](namespace-aws-backup-top.md)

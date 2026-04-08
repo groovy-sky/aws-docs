@@ -32,29 +32,29 @@ passed the command that is about to be executed. This can be useful
 for logging, adding custom request headers, etc.
 - batch\_size: The size of each delete batch. Defaults to 1000.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html\#tags)
+##### Tags  [header link](class-aws-s3-batchdelete-tags.md)
 
-link[http://docs.aws.amazon.com/AmazonS3/latest/API/multiobjectdeleteapi.html](https://docs.aws.amazon.com/AmazonS3/latest/API/multiobjectdeleteapi.html)
+link[http://docs.aws.amazon.com/AmazonS3/latest/API/multiobjectdeleteapi.html](../../../../services/s3/latest/api/multiobjectdeleteapi.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html\#toc)
+### Table of Contents  [header link](class-aws-s3-batchdelete-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-s3-batchdelete-toc-interfaces.md)
 
 [PromisorInterface](class-guzzlehttp-promise-promisorinterface.md)Interface used with classes that return a promise.
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-batchdelete-toc-methods.md)
 
-[delete()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html#method_delete)
-: mixed Synchronously deletes all of the objects.[fromIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html#method_fromIterator)
-: [BatchDelete](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html)Creates a BatchDelete object from an iterator that yields results.[fromListObjects()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html#method_fromListObjects)
-: [BatchDelete](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html)Creates a BatchDelete object from all of the paginated results of a
+[delete()](class-aws-s3-batchdelete-method-delete.md)
+: mixed Synchronously deletes all of the objects.[fromIterator()](class-aws-s3-batchdelete-method-fromiterator.md)
+: [BatchDelete](class-aws-s3-batchdelete.md)Creates a BatchDelete object from an iterator that yields results.[fromListObjects()](class-aws-s3-batchdelete-method-fromlistobjects.md)
+: [BatchDelete](class-aws-s3-batchdelete.md)Creates a BatchDelete object from all of the paginated results of a
 ListObjects operation. Each result that is returned by the ListObjects
-operation will be deleted.[promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html#method_promise)
+operation will be deleted.[promise()](class-aws-s3-batchdelete-method-promise.md)
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Returns a promise.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html\#methods)
+### Methods  [header link](class-aws-s3-batchdelete-methods.md)
 
-#### delete()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html\#method_delete)
+#### delete()  [header link](class-aws-s3-batchdelete-method-delete.md)
 
 Synchronously deletes all of the objects.
 
@@ -62,13 +62,13 @@ Synchronously deletes all of the objects.
     public
                     delete() : mixed`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html\#method_delete\#tags)
+##### Tags  [header link](class-aws-s3-batchdelete-method-delete-tags.md)
 
-throws[DeleteMultipleObjectsException](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.Exception.DeleteMultipleObjectsException.html)
+throws[DeleteMultipleObjectsException](class-aws-s3-exception-deletemultipleobjectsexception.md)
 
 on error.
 
-#### fromIterator()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html\#method_fromIterator)
+#### fromIterator()  [header link](class-aws-s3-batchdelete-method-fromiterator.md)
 
 Creates a BatchDelete object from an iterator that yields results.
 
@@ -101,9 +101,9 @@ BatchDelete options
 
 ##### Return values
 
-[BatchDelete](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html)
+[BatchDelete](class-aws-s3-batchdelete.md)
 
-#### fromListObjects()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html\#method_fromListObjects)
+#### fromListObjects()  [header link](class-aws-s3-batchdelete-method-fromlistobjects.md)
 
 Creates a BatchDelete object from all of the paginated results of a
 ListObjects operation. Each result that is returned by the ListObjects
@@ -133,9 +133,9 @@ BatchDelete options.
 
 ##### Return values
 
-[BatchDelete](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html)
+[BatchDelete](class-aws-s3-batchdelete.md)
 
-#### promise()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html\#method_promise)
+#### promise()  [header link](class-aws-s3-batchdelete-method-promise.md)
 
 Returns a promise.
 
@@ -153,11 +153,11 @@ Returns a promise.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html#toc-methods)
+  - [Methods](class-aws-s3-batchdelete-toc-methods.md)
 - Methods
-  - [delete()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html#method_delete)
-  - [fromIterator()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html#method_fromIterator)
-  - [fromListObjects()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html#method_fromListObjects)
-  - [promise()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html#method_promise)
+  - [delete()](class-aws-s3-batchdelete-method-delete.md)
+  - [fromIterator()](class-aws-s3-batchdelete-method-fromiterator.md)
+  - [fromListObjects()](class-aws-s3-batchdelete-method-fromlistobjects.md)
+  - [promise()](class-aws-s3-batchdelete-method-promise.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.BatchDelete.html#top)
+[Back To Top](class-aws-s3-batchdelete-top.md)

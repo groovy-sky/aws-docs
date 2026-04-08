@@ -4,15 +4,15 @@ Menu
 
 ## IoTJobsDataPlane
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotjobsdataplane.html\#toc)
+### Table of Contents  [header link](namespace-aws-iotjobsdataplane-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotjobsdataplane.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-iotjobsdataplane-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotjobsdataplane.exception.html)
+[Exception](namespace-aws-iotjobsdataplane-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotjobsdataplane.html\#toc-classes)
+#### Classes  [header link](namespace-aws-iotjobsdataplane-toc-classes.md)
 
-[IoTJobsDataPlaneClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTJobsDataPlane.IoTJobsDataPlaneClient.html)This client is used to interact with the **AWS IoT Jobs Data Plane** service.
+[IoTJobsDataPlaneClient](class-aws-iotjobsdataplane-iotjobsdataplaneclient.md)This client is used to interact with the **AWS IoT Jobs Data Plane** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotjobsdataplane.html#toc-classes)
+  - [Classes](namespace-aws-iotjobsdataplane-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotjobsdataplane.html#top)
+[Back To Top](namespace-aws-iotjobsdataplane-top.md)

@@ -4,15 +4,15 @@ Menu
 
 ## PartnerCentralBenefits
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.partnercentralbenefits.html\#toc)
+### Table of Contents  [header link](namespace-aws-partnercentralbenefits-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.partnercentralbenefits.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-partnercentralbenefits-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.partnercentralbenefits.exception.html)
+[Exception](namespace-aws-partnercentralbenefits-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.partnercentralbenefits.html\#toc-classes)
+#### Classes  [header link](namespace-aws-partnercentralbenefits-toc-classes.md)
 
-[PartnerCentralBenefitsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PartnerCentralBenefits.PartnerCentralBenefitsClient.html)This client is used to interact with the **Partner Central Benefits API** service.
+[PartnerCentralBenefitsClient](class-aws-partnercentralbenefits-partnercentralbenefitsclient.md)This client is used to interact with the **Partner Central Benefits API** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.partnercentralbenefits.html#toc-classes)
+  - [Classes](namespace-aws-partnercentralbenefits-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.partnercentralbenefits.html#top)
+[Back To Top](namespace-aws-partnercentralbenefits-top.md)

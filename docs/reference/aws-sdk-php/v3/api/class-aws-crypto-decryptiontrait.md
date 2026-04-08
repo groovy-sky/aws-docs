@@ -5,7 +5,7 @@ Menu
 
 ## DecryptionTrait
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.DecryptionTrait.html\#toc)
+### Table of Contents  [header link](class-aws-crypto-decryptiontrait-toc.md)
 
 ×
 
@@ -13,4 +13,4 @@ Menu
 
 - Table Of Contents
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Crypto.DecryptionTrait.html#top)
+[Back To Top](class-aws-crypto-decryptiontrait-top.md)

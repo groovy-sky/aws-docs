@@ -7,19 +7,19 @@ Menu
 
 Provides access to retry configuration
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationInterface.html\#toc)
+### Table of Contents  [header link](class-aws-retry-configurationinterface-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationInterface.html\#toc-methods)
+#### Methods  [header link](class-aws-retry-configurationinterface-toc-methods.md)
 
-[getMaxAttempts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationInterface.html#method_getMaxAttempts)
-: string Returns the maximum number of attempts that will be used for a request[getMode()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationInterface.html#method_getMode)
+[getMaxAttempts()](class-aws-retry-configurationinterface-method-getmaxattempts.md)
+: string Returns the maximum number of attempts that will be used for a request[getMode()](class-aws-retry-configurationinterface-method-getmode.md)
 : string Returns the retry mode. Available modes include 'legacy', 'standard', and
-'adapative'.[toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationInterface.html#method_toArray)
+'adapative'.[toArray()](class-aws-retry-configurationinterface-method-toarray.md)
 : array<string\|int, mixed> Returns the configuration as an associative array
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationInterface.html\#methods)
+### Methods  [header link](class-aws-retry-configurationinterface-methods.md)
 
-#### getMaxAttempts()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationInterface.html\#method_getMaxAttempts)
+#### getMaxAttempts()  [header link](class-aws-retry-configurationinterface-method-getmaxattempts.md)
 
 Returns the maximum number of attempts that will be used for a request
 
@@ -31,7 +31,7 @@ Returns the maximum number of attempts that will be used for a request
 
 string
 
-#### getMode()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationInterface.html\#method_getMode)
+#### getMode()  [header link](class-aws-retry-configurationinterface-method-getmode.md)
 
 Returns the retry mode. Available modes include 'legacy', 'standard', and
 'adapative'.
@@ -44,7 +44,7 @@ Returns the retry mode. Available modes include 'legacy', 'standard', and
 
 string
 
-#### toArray()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationInterface.html\#method_toArray)
+#### toArray()  [header link](class-aws-retry-configurationinterface-method-toarray.md)
 
 Returns the configuration as an associative array
 
@@ -62,11 +62,11 @@ array<string\|int, mixed>
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationInterface.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationInterface.html#toc-methods)
+  - [Constants](class-aws-retry-configurationinterface-toc-constants.md)
+  - [Methods](class-aws-retry-configurationinterface-toc-methods.md)
 - Methods
-  - [getMaxAttempts()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationInterface.html#method_getMaxAttempts)
-  - [getMode()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationInterface.html#method_getMode)
-  - [toArray()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationInterface.html#method_toArray)
+  - [getMaxAttempts()](class-aws-retry-configurationinterface-method-getmaxattempts.md)
+  - [getMode()](class-aws-retry-configurationinterface-method-getmode.md)
+  - [toArray()](class-aws-retry-configurationinterface-method-toarray.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Retry.ConfigurationInterface.html#top)
+[Back To Top](class-aws-retry-configurationinterface-top.md)

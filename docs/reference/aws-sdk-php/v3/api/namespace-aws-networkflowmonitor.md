@@ -4,15 +4,15 @@ Menu
 
 ## NetworkFlowMonitor
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkflowmonitor.html\#toc)
+### Table of Contents  [header link](namespace-aws-networkflowmonitor-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkflowmonitor.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-networkflowmonitor-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkflowmonitor.exception.html)
+[Exception](namespace-aws-networkflowmonitor-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkflowmonitor.html\#toc-classes)
+#### Classes  [header link](namespace-aws-networkflowmonitor-toc-classes.md)
 
-[NetworkFlowMonitorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.NetworkFlowMonitor.NetworkFlowMonitorClient.html)This client is used to interact with the **Network Flow Monitor** service.
+[NetworkFlowMonitorClient](class-aws-networkflowmonitor-networkflowmonitorclient.md)This client is used to interact with the **Network Flow Monitor** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkflowmonitor.html#toc-classes)
+  - [Classes](namespace-aws-networkflowmonitor-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.networkflowmonitor.html#top)
+[Back To Top](namespace-aws-networkflowmonitor-top.md)

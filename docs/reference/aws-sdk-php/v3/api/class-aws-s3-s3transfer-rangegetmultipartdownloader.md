@@ -2,22 +2,22 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
 
 ## RangeGetMultipartDownloader     extends [AbstractMultipartDownloader](class-aws-s3-s3transfer-abstractmultipartdownloader.md)   in package    - [Aws](package-aws.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.RangeGetMultipartDownloader.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-rangegetmultipartdownloader-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.RangeGetMultipartDownloader.html\#toc-constants)
+#### Constants  [header link](class-aws-s3-s3transfer-rangegetmultipartdownloader-toc-constants.md)
 
 [GET\_OBJECT\_COMMAND](class-aws-s3-s3transfer-abstractmultipartdownloader.md#constant_GET_OBJECT_COMMAND)
 = "GetObject" [PART\_GET\_MULTIPART\_DOWNLOADER](class-aws-s3-s3transfer-abstractmultipartdownloader.md#constant_PART_GET_MULTIPART_DOWNLOADER)
 = "part" [RANGED\_GET\_MULTIPART\_DOWNLOADER](class-aws-s3-s3transfer-abstractmultipartdownloader.md#constant_RANGED_GET_MULTIPART_DOWNLOADER)
 = "ranged"
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.RangeGetMultipartDownloader.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-rangegetmultipartdownloader-toc-methods.md)
 
 [\_\_construct()](class-aws-s3-s3transfer-abstractmultipartdownloader.md#method___construct)
 : mixed [chooseDownloaderClass()](class-aws-s3-s3transfer-abstractmultipartdownloader.md#method_chooseDownloaderClass)
@@ -33,7 +33,7 @@ FinalYes
 : [PromiseInterface](class-guzzlehttp-promise-promiseinterface.md)Returns that resolves a multipart download operation,
 or to a rejection in case of any failures.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.RangeGetMultipartDownloader.html\#constants)
+### Constants  [header link](class-aws-s3-s3transfer-rangegetmultipartdownloader-constants.md)
 
 #### GET\_OBJECT\_COMMAND  [header link](class-aws-s3-s3transfer-abstractmultipartdownloader.md\#constant_GET_OBJECT_COMMAND)
 
@@ -62,7 +62,7 @@ or to a rejection in case of any failures.
     = "ranged"
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.RangeGetMultipartDownloader.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-rangegetmultipartdownloader-methods.md)
 
 #### \_\_construct()  [header link](class-aws-s3-s3transfer-abstractmultipartdownloader.md\#method___construct)
 
@@ -77,7 +77,7 @@ $s3Client
 : array<string\|int, mixed>$config
 : array<string\|int, mixed>
 = \[\]$downloadHandler
-: [AbstractDownloadHandler](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Utils.AbstractDownloadHandler.html) \|null
+: [AbstractDownloadHandler](class-aws-s3-s3transfer-utils-abstractdownloadhandler.md) \|null
 = null$partsCompleted
 : array<string\|int, mixed>
 = \[\]$objectPartsCount
@@ -220,8 +220,8 @@ or to a rejection in case of any failures.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.RangeGetMultipartDownloader.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.RangeGetMultipartDownloader.html#toc-methods)
+  - [Constants](class-aws-s3-s3transfer-rangegetmultipartdownloader-toc-constants.md)
+  - [Methods](class-aws-s3-s3transfer-rangegetmultipartdownloader-toc-methods.md)
 - Constants
   - [GET\_OBJECT\_COMMAND](class-aws-s3-s3transfer-abstractmultipartdownloader.md#constant_GET_OBJECT_COMMAND)
   - [PART\_GET\_MULTIPART\_DOWNLOADER](class-aws-s3-s3transfer-abstractmultipartdownloader.md#constant_PART_GET_MULTIPART_DOWNLOADER)
@@ -239,4 +239,4 @@ or to a rejection in case of any failures.
   - [getRangeTo()](class-aws-s3-s3transfer-abstractmultipartdownloader.md#method_getRangeTo)
   - [promise()](class-aws-s3-s3transfer-abstractmultipartdownloader.md#method_promise)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.RangeGetMultipartDownloader.html#top)
+[Back To Top](class-aws-s3-s3transfer-rangegetmultipartdownloader-top.md)

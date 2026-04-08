@@ -14,14 +14,14 @@ Amazon Elastic Inference (EI) is no longer available to customers.
 
 You can allow Amazon ECS to place tasks for you, or you can customize how Amazon ECS
 places tasks using placement constraints and placement strategies. For more information,
-see [Scheduling Tasks](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/scheduling_tasks.html) in the _Amazon Elastic_
+see [Scheduling Tasks](../../../../services/amazonecs/latest/developerguide/scheduling-tasks.md) in the _Amazon Elastic_
 _Container Service Developer Guide_.
 
 Alternatively, you can use `StartTask` to use your own scheduler or place
 tasks manually on specific container instances.
 
 You can attach Amazon EBS volumes to Amazon ECS tasks by configuring the volume when
-creating or updating a service. For more information, see [Amazon EBS volumes](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ebs-volumes.html#ebs-volume-types) in the _Amazon Elastic_
+creating or updating a service. For more information, see [Amazon EBS volumes](../../../../services/amazonecs/latest/developerguide/ebs-volumes-ebs-volume-types.md) in the _Amazon Elastic_
 _Container Service Developer Guide_.
 
 The Amazon ECS API follows an eventual consistency model. This is because of the
@@ -61,7 +61,7 @@ If you get a `ClientException` error, the `RunTask` could not be
 processed because you use managed scaling and there is a capacity error because the
 quota of tasks in the `PROVISIONING` per cluster has been reached. For
 information about the service quotas, see [Amazon ECS service\
-quotas](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-quotas.html).
+quotas](../../../../services/amazonecs/latest/developerguide/service-quotas.md).
 
 ## Request Syntax
 
@@ -191,7 +191,7 @@ quotas](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-quot
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -215,7 +215,7 @@ When you use cluster auto scaling, you must specify
 
 A capacity provider strategy can contain a maximum of 20 capacity providers.
 
-Type: Array of [CapacityProviderStrategyItem](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CapacityProviderStrategyItem.html) objects
+Type: Array of [CapacityProviderStrategyItem](api-capacityproviderstrategyitem.md) objects
 
 Required: No
 
@@ -223,7 +223,7 @@ Required: No
 
 An identifier that you provide to ensure the idempotency of the request. It must be
 unique and is case sensitive. Up to 64 characters are allowed. The valid characters are
-characters in the range of 33-126, inclusive. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/ECS_Idempotency.html).
+characters in the range of 33-126, inclusive. For more information, see [Ensuring idempotency](ecs-idempotency.md).
 
 Type: String
 
@@ -286,7 +286,7 @@ Required: No
 **[launchType](#API_RunTask_RequestSyntax)**
 
 The infrastructure to run your standalone task on. For more information, see [Amazon\
-ECS launch types](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_types.html) in the _Amazon Elastic Container Service Developer_
+ECS launch types](../../../../services/amazonecs/latest/developerguide/launch-types.md) in the _Amazon Elastic Container Service Developer_
 _Guide_.
 
 ###### Note
@@ -301,7 +301,7 @@ infrastructure.
 ###### Note
 
 Fargate Spot infrastructure is available for use but a capacity provider strategy
-must be used. For more information, see [AWS Fargate capacity providers](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-capacity-providers.html) in
+must be used. For more information, see [AWS Fargate capacity providers](../../../../services/amazonecs/latest/developerguide/fargate-capacity-providers.md) in
 the _Amazon ECS Developer Guide_.
 
 The `EC2` launch type runs your tasks on Amazon EC2 instances registered to
@@ -328,10 +328,10 @@ Required: No
 The network configuration for the task. This parameter is required for task
 definitions that use the `awsvpc` network mode to receive their own elastic
 network interface, and it isn't supported for other network modes. For more information,
-see [Task networking](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-networking.html)
+see [Task networking](../../../../services/amazonecs/latest/developerguide/task-networking.md)
 in the _Amazon Elastic Container Service Developer Guide_.
 
-Type: [NetworkConfiguration](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_NetworkConfiguration.html) object
+Type: [NetworkConfiguration](api-networkconfiguration.md) object
 
 Required: No
 
@@ -347,7 +347,7 @@ add new environment variables to it with an `environment` override.
 A total of 8192 characters are allowed for overrides. This limit includes the JSON
 formatting characters of the override structure.
 
-Type: [TaskOverride](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_TaskOverride.html) object
+Type: [TaskOverride](api-taskoverride.md) object
 
 Required: No
 
@@ -357,7 +357,7 @@ An array of placement constraint objects to use for the task. You can specify up
 constraints for each task (including constraints in the task definition and those
 specified at runtime).
 
-Type: Array of [PlacementConstraint](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_PlacementConstraint.html) objects
+Type: Array of [PlacementConstraint](api-placementconstraint.md) objects
 
 Required: No
 
@@ -366,7 +366,7 @@ Required: No
 The placement strategy objects to use for the task. You can specify a maximum of 5
 strategy rules for each task.
 
-Type: Array of [PlacementStrategy](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_PlacementStrategy.html) objects
+Type: Array of [PlacementStrategy](api-placementstrategy.md) objects
 
 Required: No
 
@@ -375,7 +375,7 @@ Required: No
 The platform version the task uses. A platform version is only specified for tasks
 hosted on Fargate. If one isn't specified, the `LATEST` platform version is
 used. For more information, see [AWS Fargate\
-platform versions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html) in the _Amazon Elastic Container Service_
+platform versions](../../../../services/amazonecs/latest/developerguide/platform-versions.md) in the _Amazon Elastic Container Service_
 _Developer Guide_.
 
 Type: String
@@ -386,7 +386,7 @@ Required: No
 
 Specifies whether to propagate the tags from the task definition to the task. If no
 value is specified, the tags aren't propagated. Tags can only be propagated to the task
-during task creation. To add tags to a task after task creation, use the [TagResource](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_TagResource.html) API action.
+during task creation. To add tags to a task after task creation, use the [TagResource](api-tagresource.md) API action.
 
 ###### Note
 
@@ -413,7 +413,7 @@ Required: No
 An optional tag specified when a task is started. For example, if you automatically
 trigger a task to run a batch process job, you could apply a unique identifier for that
 job to your task with the `startedBy` parameter. You can then identify which
-tasks belong to that job by filtering the results of a [ListTasks](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListTasks.html) call with
+tasks belong to that job by filtering the results of a [ListTasks](api-listtasks.md) call with
 the `startedBy` value. Up to 128 letters (uppercase and lowercase), numbers,
 hyphens (-), forward slash (/), and underscores (\_) are allowed.
 
@@ -453,7 +453,7 @@ AWS use. You cannot edit or delete tag keys or values with
 this prefix. Tags with this prefix do not count against your tags per resource
 limit.
 
-Type: Array of [Tag](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Tag.html) objects
+Type: Array of [Tag](api-tag.md) objects
 
 Array Members: Minimum number of 0 items. Maximum number of 50 items.
 
@@ -479,7 +479,7 @@ To specify all revisions, use the wildcard (\*) in the ARN. For example, to spec
 revisions, use
 `arn:aws:ecs:us-east-1:111122223333:task-definition/TaskFamilyName:*`.
 
-For more information, see [Policy Resources for Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-resources) in the Amazon Elastic Container Service
+For more information, see [Policy Resources for Amazon ECS](../../../../services/amazonecs/latest/developerguide/security-iam-service-with-iam-security-iam-service-with-iam-id-based-policies-resources.md) in the Amazon Elastic Container Service
 Developer Guide.
 
 Type: String
@@ -489,10 +489,10 @@ Required: Yes
 **[volumeConfigurations](#API_RunTask_RequestSyntax)**
 
 The details of the volume that was `configuredAtLaunch`. You can configure
-the size, volumeType, IOPS, throughput, snapshot and encryption in [TaskManagedEBSVolumeConfiguration](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_TaskManagedEBSVolumeConfiguration.html). The `name` of the volume must
+the size, volumeType, IOPS, throughput, snapshot and encryption in [TaskManagedEBSVolumeConfiguration](api-taskmanagedebsvolumeconfiguration.md). The `name` of the volume must
 match the `name` from the task definition.
 
-Type: Array of [TaskVolumeConfiguration](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_TaskVolumeConfiguration.html) objects
+Type: Array of [TaskVolumeConfiguration](api-taskvolumeconfiguration.md) objects
 
 Required: No
 
@@ -679,22 +679,22 @@ The following data is returned in JSON format by the service.
 
 Any failures associated with the call.
 
-For information about how to address failures, see [Service event messages](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-event-messages.html#service-event-messages-list) and [API failure\
-reasons](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/api_failures_messages.html) in the _Amazon Elastic Container Service Developer_
+For information about how to address failures, see [Service event messages](../../../../services/amazonecs/latest/developerguide/service-event-messages-service-event-messages-list.md) and [API failure\
+reasons](../../../../services/amazonecs/latest/developerguide/api-failures-messages.md) in the _Amazon Elastic Container Service Developer_
 _Guide_.
 
-Type: Array of [Failure](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Failure.html) objects
+Type: Array of [Failure](api-failure.md) objects
 
 **[tasks](#API_RunTask_ResponseSyntax)**
 
 A full description of the tasks that were run. The tasks that were successfully placed
 on your cluster are described here.
 
-Type: Array of [Task](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Task.html) objects
+Type: Array of [Task](api-task.md) objects
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Error Types](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
 
 **AccessDeniedException**
 
@@ -730,7 +730,7 @@ HTTP Status Code: 400
 
 **ClusterNotFoundException**
 
-The specified cluster wasn't found. You can view your available clusters with [ListClusters](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListClusters.html). Amazon ECS clusters are Region specific.
+The specified cluster wasn't found. You can view your available clusters with [ListClusters](api-listclusters.md). Amazon ECS clusters are Region specific.
 
 **message**
 
@@ -760,7 +760,7 @@ The specified parameter isn't valid. Review the available parameters for the API
 request.
 
 For more information about service event errors, see [Amazon ECS\
-service event messages](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-event-messages-list.html).
+service event messages](../../../../services/amazonecs/latest/developerguide/service-event-messages-list.md).
 
 **message**
 
@@ -814,7 +814,7 @@ HTTP Status Code: 400
 In the following example or examples, the Authorization header contents
 ( `AUTHPARAMS`) must be replaced with an AWS Signature
 Version 4 signature. For more information, see [Signature\
-Version 4 Signing Process](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) in the _AWS_
+Version 4 Signing Process](../../../../general/general/latest/gr/signature-version-4.md) in the _AWS_
 _General Reference_.
 
 You only need to learn how to sign HTTP requests if you intend to create them
@@ -906,27 +906,27 @@ x-amzn-RequestId: 123a4b56-7c89-01d2-3ef4-example5678f
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ecs-2014-11-13/RunTask)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ecs-2014-11-13/runtask.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ecs-2014-11-13/RunTask)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ecs-2014-11-13/runtask.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/RunTask)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/runtask.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ecs-2014-11-13/RunTask)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ecs-2014-11-13/runtask.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/RunTask)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/runtask.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ecs-2014-11-13/RunTask)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ecs-2014-11-13/runtask.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ecs-2014-11-13/RunTask)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ecs-2014-11-13/runtask.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ecs-2014-11-13/RunTask)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ecs-2014-11-13/runtask.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ecs-2014-11-13/RunTask)
+- [AWS SDK for Python](../../../../services/goto/boto3/ecs-2014-11-13/runtask.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/RunTask)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/runtask.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 RegisterTaskDefinition
 

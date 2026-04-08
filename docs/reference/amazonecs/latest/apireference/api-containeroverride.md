@@ -7,7 +7,7 @@ parameter must be included.
 
 You can use Secrets Manager or AWS Systems Manager Parameter Store to store the
 sensitive data. For more information, see [Retrieve secrets through\
-environment variables](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/secrets-envvar.html) in the Amazon ECS Developer Guide.
+environment variables](../../../../services/amazonecs/latest/developerguide/secrets-envvar.md) in the Amazon ECS Developer Guide.
 
 ## Contents
 
@@ -36,7 +36,7 @@ variables, which are added to the container at launch, or you can override the e
 environment variables from the Docker image or the task definition. You must also
 specify a container name.
 
-Type: Array of [KeyValuePair](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_KeyValuePair.html) objects
+Type: Array of [KeyValuePair](api-keyvaluepair.md) objects
 
 Required: No
 
@@ -45,7 +45,7 @@ Required: No
 A list of files containing the environment variables to pass to a container, instead
 of the value from the container definition.
 
-Type: Array of [EnvironmentFile](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_EnvironmentFile.html) objects
+Type: Array of [EnvironmentFile](api-environmentfile.md) objects
 
 Required: No
 
@@ -82,7 +82,7 @@ Required: No
 The type and amount of a resource to assign to a container, instead of the default
 value from the task definition. The only supported resource is a GPU.
 
-Type: Array of [ResourceRequirement](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ResourceRequirement.html) objects
+Type: Array of [ResourceRequirement](api-resourcerequirement.md) objects
 
 Required: No
 
@@ -90,13 +90,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/ContainerOverride)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/containeroverride.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/ContainerOverride)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/containeroverride.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/ContainerOverride)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/containeroverride.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ContainerInstanceHealthStatus
 

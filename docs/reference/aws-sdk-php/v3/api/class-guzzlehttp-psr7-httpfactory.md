@@ -1,7 +1,7 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Psr7](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.psr7.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Psr7](namespace-guzzlehttp-psr7.md)
 
 ## HttpFactory        in package    - [Aws](package-aws.md)       implements  RequestFactoryInterface, ResponseFactoryInterface, ServerRequestFactoryInterface, StreamFactoryInterface, UploadedFileFactoryInterface, UriFactoryInterface
 
@@ -12,27 +12,27 @@ Implements all of the PSR-17 interfaces.
 Note: in consuming code it is recommended to require the implemented interfaces
 and inject the instance of this class multiple times.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-psr7-httpfactory-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html\#toc-interfaces)
+#### Interfaces  [header link](class-guzzlehttp-psr7-httpfactory-toc-interfaces.md)
 
 RequestFactoryInterfaceResponseFactoryInterfaceServerRequestFactoryInterfaceStreamFactoryInterfaceUploadedFileFactoryInterfaceUriFactoryInterface
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-psr7-httpfactory-toc-methods.md)
 
-[createRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html#method_createRequest)
-: [RequestInterface](class-psr-http-message-requestinterface.md)[createResponse()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html#method_createResponse)
-: [ResponseInterface](class-psr-http-message-responseinterface.md)[createServerRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html#method_createServerRequest)
-: [ServerRequestInterface](class-psr-http-message-serverrequestinterface.md)[createStream()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html#method_createStream)
-: [StreamInterface](class-psr-http-message-streaminterface.md)[createStreamFromFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html#method_createStreamFromFile)
-: [StreamInterface](class-psr-http-message-streaminterface.md)[createStreamFromResource()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html#method_createStreamFromResource)
-: [StreamInterface](class-psr-http-message-streaminterface.md)[createUploadedFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html#method_createUploadedFile)
-: [UploadedFileInterface](class-psr-http-message-uploadedfileinterface.md)[createUri()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html#method_createUri)
+[createRequest()](class-guzzlehttp-psr7-httpfactory-method-createrequest.md)
+: [RequestInterface](class-psr-http-message-requestinterface.md)[createResponse()](class-guzzlehttp-psr7-httpfactory-method-createresponse.md)
+: [ResponseInterface](class-psr-http-message-responseinterface.md)[createServerRequest()](class-guzzlehttp-psr7-httpfactory-method-createserverrequest.md)
+: [ServerRequestInterface](class-psr-http-message-serverrequestinterface.md)[createStream()](class-guzzlehttp-psr7-httpfactory-method-createstream.md)
+: [StreamInterface](class-psr-http-message-streaminterface.md)[createStreamFromFile()](class-guzzlehttp-psr7-httpfactory-method-createstreamfromfile.md)
+: [StreamInterface](class-psr-http-message-streaminterface.md)[createStreamFromResource()](class-guzzlehttp-psr7-httpfactory-method-createstreamfromresource.md)
+: [StreamInterface](class-psr-http-message-streaminterface.md)[createUploadedFile()](class-guzzlehttp-psr7-httpfactory-method-createuploadedfile.md)
+: [UploadedFileInterface](class-psr-http-message-uploadedfileinterface.md)[createUri()](class-guzzlehttp-psr7-httpfactory-method-createuri.md)
 : [UriInterface](class-psr-http-message-uriinterface.md)
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html\#methods)
+### Methods  [header link](class-guzzlehttp-psr7-httpfactory-methods.md)
 
-#### createRequest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html\#method_createRequest)
+#### createRequest()  [header link](class-guzzlehttp-psr7-httpfactory-method-createrequest.md)
 
 `
     public
@@ -48,7 +48,7 @@ $method
 
 [RequestInterface](class-psr-http-message-requestinterface.md)
 
-#### createResponse()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html\#method_createResponse)
+#### createResponse()  [header link](class-guzzlehttp-psr7-httpfactory-method-createresponse.md)
 
 `
     public
@@ -66,7 +66,7 @@ $code
 
 [ResponseInterface](class-psr-http-message-responseinterface.md)
 
-#### createServerRequest()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html\#method_createServerRequest)
+#### createServerRequest()  [header link](class-guzzlehttp-psr7-httpfactory-method-createserverrequest.md)
 
 `
     public
@@ -84,7 +84,7 @@ $method
 
 [ServerRequestInterface](class-psr-http-message-serverrequestinterface.md)
 
-#### createStream()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html\#method_createStream)
+#### createStream()  [header link](class-guzzlehttp-psr7-httpfactory-method-createstream.md)
 
 `
     public
@@ -100,7 +100,7 @@ $content
 
 [StreamInterface](class-psr-http-message-streaminterface.md)
 
-#### createStreamFromFile()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html\#method_createStreamFromFile)
+#### createStreamFromFile()  [header link](class-guzzlehttp-psr7-httpfactory-method-createstreamfromfile.md)
 
 `
     public
@@ -117,7 +117,7 @@ $file
 
 [StreamInterface](class-psr-http-message-streaminterface.md)
 
-#### createStreamFromResource()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html\#method_createStreamFromResource)
+#### createStreamFromResource()  [header link](class-guzzlehttp-psr7-httpfactory-method-createstreamfromresource.md)
 
 `
     public
@@ -132,7 +132,7 @@ $resource
 
 [StreamInterface](class-psr-http-message-streaminterface.md)
 
-#### createUploadedFile()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html\#method_createUploadedFile)
+#### createUploadedFile()  [header link](class-guzzlehttp-psr7-httpfactory-method-createuploadedfile.md)
 
 `
     public
@@ -155,7 +155,7 @@ $stream
 
 [UploadedFileInterface](class-psr-http-message-uploadedfileinterface.md)
 
-#### createUri()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html\#method_createUri)
+#### createUri()  [header link](class-guzzlehttp-psr7-httpfactory-method-createuri.md)
 
 `
     public
@@ -177,15 +177,15 @@ $uri
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html#toc-methods)
+  - [Methods](class-guzzlehttp-psr7-httpfactory-toc-methods.md)
 - Methods
-  - [createRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html#method_createRequest)
-  - [createResponse()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html#method_createResponse)
-  - [createServerRequest()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html#method_createServerRequest)
-  - [createStream()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html#method_createStream)
-  - [createStreamFromFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html#method_createStreamFromFile)
-  - [createStreamFromResource()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html#method_createStreamFromResource)
-  - [createUploadedFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html#method_createUploadedFile)
-  - [createUri()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html#method_createUri)
+  - [createRequest()](class-guzzlehttp-psr7-httpfactory-method-createrequest.md)
+  - [createResponse()](class-guzzlehttp-psr7-httpfactory-method-createresponse.md)
+  - [createServerRequest()](class-guzzlehttp-psr7-httpfactory-method-createserverrequest.md)
+  - [createStream()](class-guzzlehttp-psr7-httpfactory-method-createstream.md)
+  - [createStreamFromFile()](class-guzzlehttp-psr7-httpfactory-method-createstreamfromfile.md)
+  - [createStreamFromResource()](class-guzzlehttp-psr7-httpfactory-method-createstreamfromresource.md)
+  - [createUploadedFile()](class-guzzlehttp-psr7-httpfactory-method-createuploadedfile.md)
+  - [createUri()](class-guzzlehttp-psr7-httpfactory-method-createuri.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.HttpFactory.html#top)
+[Back To Top](class-guzzlehttp-psr7-httpfactory-top.md)

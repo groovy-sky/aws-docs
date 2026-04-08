@@ -17,41 +17,41 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2012-06-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html)
+- [**2012-06-01**](api-elasticloadbalancing-2012-06-01.md)
 
-  - [AddTags](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#addtags)
-  - [ApplySecurityGroupsToLoadBalancer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#applysecuritygroupstoloadbalancer)
-  - [AttachLoadBalancerToSubnets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#attachloadbalancertosubnets)
-  - [ConfigureHealthCheck](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#configurehealthcheck)
-  - [CreateAppCookieStickinessPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#createappcookiestickinesspolicy)
-  - [CreateLBCookieStickinessPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#createlbcookiestickinesspolicy)
-  - [CreateLoadBalancer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#createloadbalancer)
-  - [CreateLoadBalancerListeners](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#createloadbalancerlisteners)
-  - [CreateLoadBalancerPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#createloadbalancerpolicy)
-  - [DeleteLoadBalancer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#deleteloadbalancer)
-  - [DeleteLoadBalancerListeners](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#deleteloadbalancerlisteners)
-  - [DeleteLoadBalancerPolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#deleteloadbalancerpolicy)
-  - [DeregisterInstancesFromLoadBalancer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#deregisterinstancesfromloadbalancer)
-  - [DescribeAccountLimits](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#describeaccountlimits)
-  - [DescribeInstanceHealth](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#describeinstancehealth)
-  - [DescribeLoadBalancerAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#describeloadbalancerattributes)
-  - [DescribeLoadBalancerPolicies](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#describeloadbalancerpolicies)
-  - [DescribeLoadBalancerPolicyTypes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#describeloadbalancerpolicytypes)
-  - [DescribeLoadBalancers](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#describeloadbalancers)
-  - [DescribeTags](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#describetags)
-  - [DetachLoadBalancerFromSubnets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#detachloadbalancerfromsubnets)
-  - [DisableAvailabilityZonesForLoadBalancer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#disableavailabilityzonesforloadbalancer)
-  - [EnableAvailabilityZonesForLoadBalancer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#enableavailabilityzonesforloadbalancer)
-  - [ModifyLoadBalancerAttributes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#modifyloadbalancerattributes)
-  - [RegisterInstancesWithLoadBalancer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#registerinstanceswithloadbalancer)
-  - [RemoveTags](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#removetags)
-  - [SetLoadBalancerListenerSSLCertificate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#setloadbalancerlistenersslcertificate)
-  - [SetLoadBalancerPoliciesForBackendServer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#setloadbalancerpoliciesforbackendserver)
-  - [SetLoadBalancerPoliciesOfListener](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-elasticloadbalancing-2012-06-01.html#setloadbalancerpoliciesoflistener)
+  - [AddTags](api-elasticloadbalancing-2012-06-01-addtags.md)
+  - [ApplySecurityGroupsToLoadBalancer](api-elasticloadbalancing-2012-06-01-applysecuritygroupstoloadbalancer.md)
+  - [AttachLoadBalancerToSubnets](api-elasticloadbalancing-2012-06-01-attachloadbalancertosubnets.md)
+  - [ConfigureHealthCheck](api-elasticloadbalancing-2012-06-01-configurehealthcheck.md)
+  - [CreateAppCookieStickinessPolicy](api-elasticloadbalancing-2012-06-01-createappcookiestickinesspolicy.md)
+  - [CreateLBCookieStickinessPolicy](api-elasticloadbalancing-2012-06-01-createlbcookiestickinesspolicy.md)
+  - [CreateLoadBalancer](api-elasticloadbalancing-2012-06-01-createloadbalancer.md)
+  - [CreateLoadBalancerListeners](api-elasticloadbalancing-2012-06-01-createloadbalancerlisteners.md)
+  - [CreateLoadBalancerPolicy](api-elasticloadbalancing-2012-06-01-createloadbalancerpolicy.md)
+  - [DeleteLoadBalancer](api-elasticloadbalancing-2012-06-01-deleteloadbalancer.md)
+  - [DeleteLoadBalancerListeners](api-elasticloadbalancing-2012-06-01-deleteloadbalancerlisteners.md)
+  - [DeleteLoadBalancerPolicy](api-elasticloadbalancing-2012-06-01-deleteloadbalancerpolicy.md)
+  - [DeregisterInstancesFromLoadBalancer](api-elasticloadbalancing-2012-06-01-deregisterinstancesfromloadbalancer.md)
+  - [DescribeAccountLimits](api-elasticloadbalancing-2012-06-01-describeaccountlimits.md)
+  - [DescribeInstanceHealth](api-elasticloadbalancing-2012-06-01-describeinstancehealth.md)
+  - [DescribeLoadBalancerAttributes](api-elasticloadbalancing-2012-06-01-describeloadbalancerattributes.md)
+  - [DescribeLoadBalancerPolicies](api-elasticloadbalancing-2012-06-01-describeloadbalancerpolicies.md)
+  - [DescribeLoadBalancerPolicyTypes](api-elasticloadbalancing-2012-06-01-describeloadbalancerpolicytypes.md)
+  - [DescribeLoadBalancers](api-elasticloadbalancing-2012-06-01-describeloadbalancers.md)
+  - [DescribeTags](api-elasticloadbalancing-2012-06-01-describetags.md)
+  - [DetachLoadBalancerFromSubnets](api-elasticloadbalancing-2012-06-01-detachloadbalancerfromsubnets.md)
+  - [DisableAvailabilityZonesForLoadBalancer](api-elasticloadbalancing-2012-06-01-disableavailabilityzonesforloadbalancer.md)
+  - [EnableAvailabilityZonesForLoadBalancer](api-elasticloadbalancing-2012-06-01-enableavailabilityzonesforloadbalancer.md)
+  - [ModifyLoadBalancerAttributes](api-elasticloadbalancing-2012-06-01-modifyloadbalancerattributes.md)
+  - [RegisterInstancesWithLoadBalancer](api-elasticloadbalancing-2012-06-01-registerinstanceswithloadbalancer.md)
+  - [RemoveTags](api-elasticloadbalancing-2012-06-01-removetags.md)
+  - [SetLoadBalancerListenerSSLCertificate](api-elasticloadbalancing-2012-06-01-setloadbalancerlistenersslcertificate.md)
+  - [SetLoadBalancerPoliciesForBackendServer](api-elasticloadbalancing-2012-06-01-setloadbalancerpoliciesforbackendserver.md)
+  - [SetLoadBalancerPoliciesOfListener](api-elasticloadbalancing-2012-06-01-setloadbalancerpoliciesoflistener.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElasticLoadBalancing.ElasticLoadBalancingClient.html\#toc)
+### Table of Contents  [header link](class-aws-elasticloadbalancing-elasticloadbalancingclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElasticLoadBalancing.ElasticLoadBalancingClient.html\#toc-methods)
+#### Methods  [header link](class-aws-elasticloadbalancing-elasticloadbalancingclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -82,7 +82,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElasticLoadBalancing.ElasticLoadBalancingClient.html\#methods)
+### Methods  [header link](class-aws-elasticloadbalancing-elasticloadbalancingclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -549,7 +549,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElasticLoadBalancing.ElasticLoadBalancingClient.html#toc-methods)
+  - [Methods](class-aws-elasticloadbalancing-elasticloadbalancingclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -576,4 +576,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ElasticLoadBalancing.ElasticLoadBalancingClient.html#top)
+[Back To Top](class-aws-elasticloadbalancing-elasticloadbalancingclient-top.md)

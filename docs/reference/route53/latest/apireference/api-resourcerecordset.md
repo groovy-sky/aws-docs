@@ -149,7 +149,7 @@ resource record set to a CIDR location.
 A `LocationName` with an asterisk “\*” can be used to create a default CIDR
 record. `CollectionId` is still required for default record.
 
-Type: [CidrRoutingConfig](https://docs.aws.amazon.com/Route53/latest/APIReference/API_CidrRoutingConfig.html) object
+Type: [CidrRoutingConfig](api-cidrroutingconfig.md) object
 
 Required: No
 
@@ -244,7 +244,7 @@ You can't create non-geolocation resource record sets that have the same values 
 the `Name` and `Type` elements as geolocation resource record
 sets.
 
-Type: [GeoLocation](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GeoLocation.html) object
+Type: [GeoLocation](api-geolocation.md) object
 
 Required: No
 
@@ -254,7 +254,7 @@ _GeoproximityLocation resource record sets only:_ A complex type that lets you c
 Route 53 responds to DNS queries based on the geographic origin of the
 query and your resources.
 
-Type: [GeoProximityLocation](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GeoProximityLocation.html) object
+Type: [GeoProximityLocation](api-geoproximitylocation.md) object
 
 Required: No
 
@@ -472,7 +472,7 @@ Information about the resource records to act upon.
 If you're creating an alias resource record set, omit
 `ResourceRecords`.
 
-Type: Array of [ResourceRecord](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ResourceRecord.html) objects
+Type: Array of [ResourceRecord](api-resourcerecord.md) objects
 
 Array Members: Minimum number of 1 item.
 
@@ -578,7 +578,7 @@ routed to all resources with equal probability.
 The effect of setting `Weight` to `0` is different when
 you associate health checks with weighted resource record sets. For more
 information, see [Options for Configuring Route 53 Active-Active and Active-Passive\
-Failover](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-configuring-options.html) in the _Amazon Route 53 Developer_
+Failover](../../../../services/route53/latest/developerguide/dns-failover-configuring-options.md) in the _Amazon Route 53 Developer_
 _Guide_.
 
 Type: Long
@@ -591,13 +591,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53-2013-04-01/ResourceRecordSet)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53-2013-04-01/resourcerecordset.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53-2013-04-01/ResourceRecordSet)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53-2013-04-01/resourcerecordset.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53-2013-04-01/ResourceRecordSet)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53-2013-04-01/resourcerecordset.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ResourceRecord
 

@@ -17,23 +17,23 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-05-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-linux-subscriptions-2018-05-10.html)
+- [**2018-05-10**](api-license-manager-linux-subscriptions-2018-05-10.md)
 
-  - [DeregisterSubscriptionProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-linux-subscriptions-2018-05-10.html#deregistersubscriptionprovider)
-  - [GetRegisteredSubscriptionProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-linux-subscriptions-2018-05-10.html#getregisteredsubscriptionprovider)
-  - [GetServiceSettings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-linux-subscriptions-2018-05-10.html#getservicesettings)
-  - [ListLinuxSubscriptionInstances](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-linux-subscriptions-2018-05-10.html#listlinuxsubscriptioninstances)
-  - [ListLinuxSubscriptions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-linux-subscriptions-2018-05-10.html#listlinuxsubscriptions)
-  - [ListRegisteredSubscriptionProviders](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-linux-subscriptions-2018-05-10.html#listregisteredsubscriptionproviders)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-linux-subscriptions-2018-05-10.html#listtagsforresource)
-  - [RegisterSubscriptionProvider](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-linux-subscriptions-2018-05-10.html#registersubscriptionprovider)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-linux-subscriptions-2018-05-10.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-linux-subscriptions-2018-05-10.html#untagresource)
-  - [UpdateServiceSettings](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-license-manager-linux-subscriptions-2018-05-10.html#updateservicesettings)
+  - [DeregisterSubscriptionProvider](api-license-manager-linux-subscriptions-2018-05-10-deregistersubscriptionprovider.md)
+  - [GetRegisteredSubscriptionProvider](api-license-manager-linux-subscriptions-2018-05-10-getregisteredsubscriptionprovider.md)
+  - [GetServiceSettings](api-license-manager-linux-subscriptions-2018-05-10-getservicesettings.md)
+  - [ListLinuxSubscriptionInstances](api-license-manager-linux-subscriptions-2018-05-10-listlinuxsubscriptioninstances.md)
+  - [ListLinuxSubscriptions](api-license-manager-linux-subscriptions-2018-05-10-listlinuxsubscriptions.md)
+  - [ListRegisteredSubscriptionProviders](api-license-manager-linux-subscriptions-2018-05-10-listregisteredsubscriptionproviders.md)
+  - [ListTagsForResource](api-license-manager-linux-subscriptions-2018-05-10-listtagsforresource.md)
+  - [RegisterSubscriptionProvider](api-license-manager-linux-subscriptions-2018-05-10-registersubscriptionprovider.md)
+  - [TagResource](api-license-manager-linux-subscriptions-2018-05-10-tagresource.md)
+  - [UntagResource](api-license-manager-linux-subscriptions-2018-05-10-untagresource.md)
+  - [UpdateServiceSettings](api-license-manager-linux-subscriptions-2018-05-10-updateservicesettings.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LicenseManagerLinuxSubscriptions.LicenseManagerLinuxSubscriptionsClient.html\#toc)
+### Table of Contents  [header link](class-aws-licensemanagerlinuxsubscriptions-licensemanagerlinuxsubscriptionsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LicenseManagerLinuxSubscriptions.LicenseManagerLinuxSubscriptionsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-licensemanagerlinuxsubscriptions-licensemanagerlinuxsubscriptionsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -64,7 +64,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LicenseManagerLinuxSubscriptions.LicenseManagerLinuxSubscriptionsClient.html\#methods)
+### Methods  [header link](class-aws-licensemanagerlinuxsubscriptions-licensemanagerlinuxsubscriptionsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -531,7 +531,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LicenseManagerLinuxSubscriptions.LicenseManagerLinuxSubscriptionsClient.html#toc-methods)
+  - [Methods](class-aws-licensemanagerlinuxsubscriptions-licensemanagerlinuxsubscriptionsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -558,4 +558,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LicenseManagerLinuxSubscriptions.LicenseManagerLinuxSubscriptionsClient.html#top)
+[Back To Top](class-aws-licensemanagerlinuxsubscriptions-licensemanagerlinuxsubscriptionsclient-top.md)

@@ -13,24 +13,24 @@ least recently used are at the beginning. When a value is added to the
 cache, if the number of cached items exceeds the allowed number, the first
 N number of items are removed from the array.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LruArrayCache.html\#toc)
+### Table of Contents  [header link](class-aws-lruarraycache-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LruArrayCache.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-lruarraycache-toc-interfaces.md)
 
 [CacheInterface](class-aws-cacheinterface.md)Represents a simple cache interface.Countable
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LruArrayCache.html\#toc-methods)
+#### Methods  [header link](class-aws-lruarraycache-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LruArrayCache.html#method___construct)
-: mixed [count()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LruArrayCache.html#method_count)
-: int [get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LruArrayCache.html#method_get)
-: mixed\|null Get a cache item by key.[remove()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LruArrayCache.html#method_remove)
-: mixed Remove a cache key.[set()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LruArrayCache.html#method_set)
+[\_\_construct()](class-aws-lruarraycache-method-construct.md)
+: mixed [count()](class-aws-lruarraycache-method-count.md)
+: int [get()](class-aws-lruarraycache-method-get.md)
+: mixed\|null Get a cache item by key.[remove()](class-aws-lruarraycache-method-remove.md)
+: mixed Remove a cache key.[set()](class-aws-lruarraycache-method-set.md)
 : mixed Set a cache key value.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LruArrayCache.html\#methods)
+### Methods  [header link](class-aws-lruarraycache-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LruArrayCache.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-lruarraycache-method-construct.md)
 
 `
     public
@@ -44,7 +44,7 @@ $maxItems
 
 Maximum number of allowed cache items.
 
-#### count()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LruArrayCache.html\#method_count)
+#### count()  [header link](class-aws-lruarraycache-method-count.md)
 
 `
     public
@@ -54,7 +54,7 @@ Maximum number of allowed cache items.
 
 int
 
-#### get()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LruArrayCache.html\#method_get)
+#### get()  [header link](class-aws-lruarraycache-method-get.md)
 
 Get a cache item by key.
 
@@ -76,7 +76,7 @@ mixed\|null
 
 Returns the value or null if not found.
 
-#### remove()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LruArrayCache.html\#method_remove)
+#### remove()  [header link](class-aws-lruarraycache-method-remove.md)
 
 Remove a cache key.
 
@@ -91,7 +91,7 @@ $key
 
 Key to remove.
 
-#### set()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LruArrayCache.html\#method_set)
+#### set()  [header link](class-aws-lruarraycache-method-set.md)
 
 Set a cache key value.
 
@@ -125,12 +125,12 @@ to 0 to allow an unlimited lifetime.
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LruArrayCache.html#toc-methods)
+  - [Methods](class-aws-lruarraycache-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LruArrayCache.html#method___construct)
-  - [count()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LruArrayCache.html#method_count)
-  - [get()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LruArrayCache.html#method_get)
-  - [remove()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LruArrayCache.html#method_remove)
-  - [set()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LruArrayCache.html#method_set)
+  - [\_\_construct()](class-aws-lruarraycache-method-construct.md)
+  - [count()](class-aws-lruarraycache-method-count.md)
+  - [get()](class-aws-lruarraycache-method-get.md)
+  - [remove()](class-aws-lruarraycache-method-remove.md)
+  - [set()](class-aws-lruarraycache-method-set.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.LruArrayCache.html#top)
+[Back To Top](class-aws-lruarraycache-top.md)

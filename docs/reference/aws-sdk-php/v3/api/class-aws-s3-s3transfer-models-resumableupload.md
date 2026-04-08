@@ -2,43 +2,43 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
-- [Models](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.models.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
+- [Models](namespace-aws-s3-s3transfer-models.md)
 
 ## ResumableUpload     extends [AbstractResumableTransfer](class-aws-s3-s3transfer-models-abstractresumabletransfer.md)   in package    - [Aws](package-aws.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-models-resumableupload-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-models-resumableupload-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#method___construct)
+[\_\_construct()](class-aws-s3-s3transfer-models-resumableupload-method-construct.md)
 : mixed [deleteResumeFile()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_deleteResumeFile)
-: void [fromFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#method_fromFile)
-: self Load a resumable state from a file.[fromJson()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#method_fromJson)
+: void [fromFile()](class-aws-s3-s3transfer-models-resumableupload-method-fromfile.md)
+: self Load a resumable state from a file.[fromJson()](class-aws-s3-s3transfer-models-resumableupload-method-fromjson.md)
 : self Deserialize a resumable state from JSON format.[getBucket()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getBucket)
 : string [getConfig()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getConfig)
 : array<string\|int, mixed> [getCurrentSnapshot()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getCurrentSnapshot)
 : array<string\|int, mixed> [getKey()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getKey)
-: string [getObjectSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#method_getObjectSize)
-: int [getPartsCompleted()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#method_getPartsCompleted)
-: array<string\|int, mixed> [getPartSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#method_getPartSize)
+: string [getObjectSize()](class-aws-s3-s3transfer-models-resumableupload-method-getobjectsize.md)
+: int [getPartsCompleted()](class-aws-s3-s3transfer-models-resumableupload-method-getpartscompleted.md)
+: array<string\|int, mixed> [getPartSize()](class-aws-s3-s3transfer-models-resumableupload-method-getpartsize.md)
 : int [getRequestArgs()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getRequestArgs)
 : array<string\|int, mixed> [getResumeFilePath()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getResumeFilePath)
-: string [getSource()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#method_getSource)
-: string [getUploadId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#method_getUploadId)
-: string [isFullObjectChecksum()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#method_isFullObjectChecksum)
+: string [getSource()](class-aws-s3-s3transfer-models-resumableupload-method-getsource.md)
+: string [getUploadId()](class-aws-s3-s3transfer-models-resumableupload-method-getuploadid.md)
+: string [isFullObjectChecksum()](class-aws-s3-s3transfer-models-resumableupload-method-isfullobjectchecksum.md)
 : bool [isResumeFile()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_isResumeFile)
-: bool Check if a file path is a valid resume file.[markPartCompleted()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#method_markPartCompleted)
+: bool Check if a file path is a valid resume file.[markPartCompleted()](class-aws-s3-s3transfer-models-resumableupload-method-markpartcompleted.md)
 : void Mark a part as completed.[toFile()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_toFile)
-: void Save the resumable state to a file.[toJson()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#method_toJson)
+: void Save the resumable state to a file.[toJson()](class-aws-s3-s3transfer-models-resumableupload-method-tojson.md)
 : string Serialize the resumable state to JSON format.[updateCurrentSnapshot()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_updateCurrentSnapshot)
 : void Update the current snapshot.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-models-resumableupload-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3transfer-models-resumableupload-method-construct.md)
 
 `
     public
@@ -70,7 +70,7 @@ $filePath
 : string\|null
 = null
 
-#### fromFile()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html\#method_fromFile)
+#### fromFile()  [header link](class-aws-s3-s3transfer-models-resumableupload-method-fromfile.md)
 
 Load a resumable state from a file.
 
@@ -87,7 +87,7 @@ $filePath
 
 self
 
-#### fromJson()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html\#method_fromJson)
+#### fromJson()  [header link](class-aws-s3-s3transfer-models-resumableupload-method-fromjson.md)
 
 Deserialize a resumable state from JSON format.
 
@@ -144,7 +144,7 @@ array<string\|int, mixed>
 
 string
 
-#### getObjectSize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html\#method_getObjectSize)
+#### getObjectSize()  [header link](class-aws-s3-s3transfer-models-resumableupload-method-getobjectsize.md)
 
 `
     public
@@ -154,7 +154,7 @@ string
 
 int
 
-#### getPartsCompleted()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html\#method_getPartsCompleted)
+#### getPartsCompleted()  [header link](class-aws-s3-s3transfer-models-resumableupload-method-getpartscompleted.md)
 
 `
     public
@@ -164,7 +164,7 @@ int
 
 array<string\|int, mixed>
 
-#### getPartSize()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html\#method_getPartSize)
+#### getPartSize()  [header link](class-aws-s3-s3transfer-models-resumableupload-method-getpartsize.md)
 
 `
     public
@@ -194,7 +194,7 @@ array<string\|int, mixed>
 
 string
 
-#### getSource()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html\#method_getSource)
+#### getSource()  [header link](class-aws-s3-s3transfer-models-resumableupload-method-getsource.md)
 
 `
     public
@@ -204,7 +204,7 @@ string
 
 string
 
-#### getUploadId()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html\#method_getUploadId)
+#### getUploadId()  [header link](class-aws-s3-s3transfer-models-resumableupload-method-getuploadid.md)
 
 `
     public
@@ -214,7 +214,7 @@ string
 
 string
 
-#### isFullObjectChecksum()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html\#method_isFullObjectChecksum)
+#### isFullObjectChecksum()  [header link](class-aws-s3-s3transfer-models-resumableupload-method-isfullobjectchecksum.md)
 
 `
     public
@@ -241,7 +241,7 @@ $filePath
 
 bool
 
-#### markPartCompleted()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html\#method_markPartCompleted)
+#### markPartCompleted()  [header link](class-aws-s3-s3transfer-models-resumableupload-method-markpartcompleted.md)
 
 Mark a part as completed.
 
@@ -278,7 +278,7 @@ $filePath
 
 Path where the resume file should be saved
 
-#### toJson()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html\#method_toJson)
+#### toJson()  [header link](class-aws-s3-s3transfer-models-resumableupload-method-tojson.md)
 
 Serialize the resumable state to JSON format.
 
@@ -312,28 +312,28 @@ The new snapshot data
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#toc-methods)
+  - [Methods](class-aws-s3-s3transfer-models-resumableupload-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#method___construct)
+  - [\_\_construct()](class-aws-s3-s3transfer-models-resumableupload-method-construct.md)
   - [deleteResumeFile()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_deleteResumeFile)
-  - [fromFile()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#method_fromFile)
-  - [fromJson()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#method_fromJson)
+  - [fromFile()](class-aws-s3-s3transfer-models-resumableupload-method-fromfile.md)
+  - [fromJson()](class-aws-s3-s3transfer-models-resumableupload-method-fromjson.md)
   - [getBucket()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getBucket)
   - [getConfig()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getConfig)
   - [getCurrentSnapshot()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getCurrentSnapshot)
   - [getKey()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getKey)
-  - [getObjectSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#method_getObjectSize)
-  - [getPartsCompleted()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#method_getPartsCompleted)
-  - [getPartSize()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#method_getPartSize)
+  - [getObjectSize()](class-aws-s3-s3transfer-models-resumableupload-method-getobjectsize.md)
+  - [getPartsCompleted()](class-aws-s3-s3transfer-models-resumableupload-method-getpartscompleted.md)
+  - [getPartSize()](class-aws-s3-s3transfer-models-resumableupload-method-getpartsize.md)
   - [getRequestArgs()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getRequestArgs)
   - [getResumeFilePath()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_getResumeFilePath)
-  - [getSource()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#method_getSource)
-  - [getUploadId()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#method_getUploadId)
-  - [isFullObjectChecksum()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#method_isFullObjectChecksum)
+  - [getSource()](class-aws-s3-s3transfer-models-resumableupload-method-getsource.md)
+  - [getUploadId()](class-aws-s3-s3transfer-models-resumableupload-method-getuploadid.md)
+  - [isFullObjectChecksum()](class-aws-s3-s3transfer-models-resumableupload-method-isfullobjectchecksum.md)
   - [isResumeFile()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_isResumeFile)
-  - [markPartCompleted()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#method_markPartCompleted)
+  - [markPartCompleted()](class-aws-s3-s3transfer-models-resumableupload-method-markpartcompleted.md)
   - [toFile()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_toFile)
-  - [toJson()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#method_toJson)
+  - [toJson()](class-aws-s3-s3transfer-models-resumableupload-method-tojson.md)
   - [updateCurrentSnapshot()](class-aws-s3-s3transfer-models-abstractresumabletransfer.md#method_updateCurrentSnapshot)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.ResumableUpload.html#top)
+[Back To Top](class-aws-s3-s3transfer-models-resumableupload-top.md)

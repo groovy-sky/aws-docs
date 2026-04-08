@@ -4,15 +4,15 @@ Menu
 
 ## TranscribeService
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.transcribeservice.html\#toc)
+### Table of Contents  [header link](namespace-aws-transcribeservice-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.transcribeservice.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-transcribeservice-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.transcribeservice.exception.html)
+[Exception](namespace-aws-transcribeservice-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.transcribeservice.html\#toc-classes)
+#### Classes  [header link](namespace-aws-transcribeservice-toc-classes.md)
 
-[TranscribeServiceClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.TranscribeService.TranscribeServiceClient.html)This client is used to interact with the **Amazon Transcribe Service** service.
+[TranscribeServiceClient](class-aws-transcribeservice-transcribeserviceclient.md)This client is used to interact with the **Amazon Transcribe Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.transcribeservice.html#toc-classes)
+  - [Classes](namespace-aws-transcribeservice-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.transcribeservice.html#top)
+[Back To Top](namespace-aws-transcribeservice-top.md)

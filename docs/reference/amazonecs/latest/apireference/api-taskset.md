@@ -79,7 +79,7 @@ Required: No
 **launchType**
 
 The launch type the tasks in the task set are using. For more information, see [Amazon\
-ECS launch types](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_types.html) in the _Amazon Elastic Container Service Developer_
+ECS launch types](../../../../services/amazonecs/latest/developerguide/launch-types.md) in the _Amazon Elastic Container Service Developer_
 _Guide_.
 
 Type: String
@@ -132,7 +132,7 @@ Required: No
 The AWS Fargate platform version where the tasks in the task set are running. A
 platform version is only specified for tasks run on AWS Fargate. For more
 information, see [AWS Fargate\
-platform versions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html) in the _Amazon Elastic Container Service_
+platform versions](../../../../services/amazonecs/latest/developerguide/platform-versions.md) in the _Amazon Elastic Container Service_
 _Developer Guide_.
 
 Type: String
@@ -154,7 +154,7 @@ Required: No
 A floating-point percentage of your desired number of tasks to place and keep running
 in the task set.
 
-Type: [Scale](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Scale.html) object
+Type: [Scale](api-scale.md) object
 
 Required: No
 
@@ -306,13 +306,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/TaskSet)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecs-2014-11-13/taskset.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/TaskSet)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecs-2014-11-13/taskset.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/TaskSet)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecs-2014-11-13/taskset.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 TaskOverride
 

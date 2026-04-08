@@ -30,7 +30,7 @@ internet gateway attached to the VPC, and there's a route in the main route tabl
 sends all traffic (0.0.0.0/0) to the internet gateway. You can modify the configuration
 of your default VPCs as needed. For example, you can add subnets and route tables.
 
-![We create a default VPC in each Region, with a default subnet in each Availability Zone.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/default-vpc.png)
+![We create a default VPC in each Region, with a default subnet in each Availability Zone.](../../../images/awsec2/latest/userguide/images/default-vpc-png.md)
 
 ## Nondefault VPCs
 

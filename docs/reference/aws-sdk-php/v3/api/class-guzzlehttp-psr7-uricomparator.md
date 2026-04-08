@@ -1,7 +1,7 @@
 Menu
 
-- [GuzzleHttp](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.html)
-- [Psr7](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Guzzlehttp.psr7.html)
+- [GuzzleHttp](namespace-guzzlehttp.md)
+- [Psr7](namespace-guzzlehttp-psr7.md)
 
 ## UriComparator        in package    - [Aws](package-aws.md)
 
@@ -9,23 +9,23 @@ FinalYes
 
 Provides methods to determine if a modified URL should be considered cross-origin.
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriComparator.html\#tags)
+##### Tags  [header link](class-guzzlehttp-psr7-uricomparator-tags.md)
 
 author
 
 Graham Campbell
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriComparator.html\#toc)
+### Table of Contents  [header link](class-guzzlehttp-psr7-uricomparator-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriComparator.html\#toc-methods)
+#### Methods  [header link](class-guzzlehttp-psr7-uricomparator-toc-methods.md)
 
-[isCrossOrigin()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriComparator.html#method_isCrossOrigin)
+[isCrossOrigin()](class-guzzlehttp-psr7-uricomparator-method-iscrossorigin.md)
 : bool Determines if a modified URL should be considered cross-origin with
 respect to an original URL.
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriComparator.html\#methods)
+### Methods  [header link](class-guzzlehttp-psr7-uricomparator-methods.md)
 
-#### isCrossOrigin()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriComparator.html\#method_isCrossOrigin)
+#### isCrossOrigin()  [header link](class-guzzlehttp-psr7-uricomparator-method-iscrossorigin.md)
 
 Determines if a modified URL should be considered cross-origin with
 respect to an original URL.
@@ -50,8 +50,8 @@ bool
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriComparator.html#toc-methods)
+  - [Methods](class-guzzlehttp-psr7-uricomparator-toc-methods.md)
 - Methods
-  - [isCrossOrigin()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriComparator.html#method_isCrossOrigin)
+  - [isCrossOrigin()](class-guzzlehttp-psr7-uricomparator-method-iscrossorigin.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Psr7.UriComparator.html#top)
+[Back To Top](class-guzzlehttp-psr7-uricomparator-top.md)

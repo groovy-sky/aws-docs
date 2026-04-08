@@ -17,32 +17,32 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2018-05-10**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rum-2018-05-10.html)
+- [**2018-05-10**](api-rum-2018-05-10.md)
 
-  - [BatchCreateRumMetricDefinitions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rum-2018-05-10.html#batchcreaterummetricdefinitions)
-  - [BatchDeleteRumMetricDefinitions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rum-2018-05-10.html#batchdeleterummetricdefinitions)
-  - [BatchGetRumMetricDefinitions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rum-2018-05-10.html#batchgetrummetricdefinitions)
-  - [CreateAppMonitor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rum-2018-05-10.html#createappmonitor)
-  - [DeleteAppMonitor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rum-2018-05-10.html#deleteappmonitor)
-  - [DeleteResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rum-2018-05-10.html#deleteresourcepolicy)
-  - [DeleteRumMetricsDestination](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rum-2018-05-10.html#deleterummetricsdestination)
-  - [GetAppMonitor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rum-2018-05-10.html#getappmonitor)
-  - [GetAppMonitorData](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rum-2018-05-10.html#getappmonitordata)
-  - [GetResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rum-2018-05-10.html#getresourcepolicy)
-  - [ListAppMonitors](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rum-2018-05-10.html#listappmonitors)
-  - [ListRumMetricsDestinations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rum-2018-05-10.html#listrummetricsdestinations)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rum-2018-05-10.html#listtagsforresource)
-  - [PutResourcePolicy](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rum-2018-05-10.html#putresourcepolicy)
-  - [PutRumEvents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rum-2018-05-10.html#putrumevents)
-  - [PutRumMetricsDestination](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rum-2018-05-10.html#putrummetricsdestination)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rum-2018-05-10.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rum-2018-05-10.html#untagresource)
-  - [UpdateAppMonitor](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rum-2018-05-10.html#updateappmonitor)
-  - [UpdateRumMetricDefinition](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-rum-2018-05-10.html#updaterummetricdefinition)
+  - [BatchCreateRumMetricDefinitions](api-rum-2018-05-10-batchcreaterummetricdefinitions.md)
+  - [BatchDeleteRumMetricDefinitions](api-rum-2018-05-10-batchdeleterummetricdefinitions.md)
+  - [BatchGetRumMetricDefinitions](api-rum-2018-05-10-batchgetrummetricdefinitions.md)
+  - [CreateAppMonitor](api-rum-2018-05-10-createappmonitor.md)
+  - [DeleteAppMonitor](api-rum-2018-05-10-deleteappmonitor.md)
+  - [DeleteResourcePolicy](api-rum-2018-05-10-deleteresourcepolicy.md)
+  - [DeleteRumMetricsDestination](api-rum-2018-05-10-deleterummetricsdestination.md)
+  - [GetAppMonitor](api-rum-2018-05-10-getappmonitor.md)
+  - [GetAppMonitorData](api-rum-2018-05-10-getappmonitordata.md)
+  - [GetResourcePolicy](api-rum-2018-05-10-getresourcepolicy.md)
+  - [ListAppMonitors](api-rum-2018-05-10-listappmonitors.md)
+  - [ListRumMetricsDestinations](api-rum-2018-05-10-listrummetricsdestinations.md)
+  - [ListTagsForResource](api-rum-2018-05-10-listtagsforresource.md)
+  - [PutResourcePolicy](api-rum-2018-05-10-putresourcepolicy.md)
+  - [PutRumEvents](api-rum-2018-05-10-putrumevents.md)
+  - [PutRumMetricsDestination](api-rum-2018-05-10-putrummetricsdestination.md)
+  - [TagResource](api-rum-2018-05-10-tagresource.md)
+  - [UntagResource](api-rum-2018-05-10-untagresource.md)
+  - [UpdateAppMonitor](api-rum-2018-05-10-updateappmonitor.md)
+  - [UpdateRumMetricDefinition](api-rum-2018-05-10-updaterummetricdefinition.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudWatchRUM.CloudWatchRUMClient.html\#toc)
+### Table of Contents  [header link](class-aws-cloudwatchrum-cloudwatchrumclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudWatchRUM.CloudWatchRUMClient.html\#toc-methods)
+#### Methods  [header link](class-aws-cloudwatchrum-cloudwatchrumclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -73,7 +73,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudWatchRUM.CloudWatchRUMClient.html\#methods)
+### Methods  [header link](class-aws-cloudwatchrum-cloudwatchrumclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -540,7 +540,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudWatchRUM.CloudWatchRUMClient.html#toc-methods)
+  - [Methods](class-aws-cloudwatchrum-cloudwatchrumclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -567,4 +567,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudWatchRUM.CloudWatchRUMClient.html#top)
+[Back To Top](class-aws-cloudwatchrum-cloudwatchrumclient-top.md)

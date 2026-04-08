@@ -2,39 +2,39 @@
 
 The following actions are supported by Tax Settings:
 
-- [BatchDeleteTaxRegistration](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_taxSettings_BatchDeleteTaxRegistration.html)
+- [BatchDeleteTaxRegistration](api-taxsettings-batchdeletetaxregistration.md)
 
-- [BatchGetTaxExemptions](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_taxSettings_BatchGetTaxExemptions.html)
+- [BatchGetTaxExemptions](api-taxsettings-batchgettaxexemptions.md)
 
-- [BatchPutTaxRegistration](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_taxSettings_BatchPutTaxRegistration.html)
+- [BatchPutTaxRegistration](api-taxsettings-batchputtaxregistration.md)
 
-- [DeleteSupplementalTaxRegistration](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_taxSettings_DeleteSupplementalTaxRegistration.html)
+- [DeleteSupplementalTaxRegistration](api-taxsettings-deletesupplementaltaxregistration.md)
 
-- [DeleteTaxRegistration](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_taxSettings_DeleteTaxRegistration.html)
+- [DeleteTaxRegistration](api-taxsettings-deletetaxregistration.md)
 
-- [GetTaxExemptionTypes](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_taxSettings_GetTaxExemptionTypes.html)
+- [GetTaxExemptionTypes](api-taxsettings-gettaxexemptiontypes.md)
 
-- [GetTaxInheritance](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_taxSettings_GetTaxInheritance.html)
+- [GetTaxInheritance](api-taxsettings-gettaxinheritance.md)
 
-- [GetTaxRegistration](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_taxSettings_GetTaxRegistration.html)
+- [GetTaxRegistration](api-taxsettings-gettaxregistration.md)
 
-- [GetTaxRegistrationDocument](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_taxSettings_GetTaxRegistrationDocument.html)
+- [GetTaxRegistrationDocument](api-taxsettings-gettaxregistrationdocument.md)
 
-- [ListSupplementalTaxRegistrations](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_taxSettings_ListSupplementalTaxRegistrations.html)
+- [ListSupplementalTaxRegistrations](api-taxsettings-listsupplementaltaxregistrations.md)
 
-- [ListTaxExemptions](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_taxSettings_ListTaxExemptions.html)
+- [ListTaxExemptions](api-taxsettings-listtaxexemptions.md)
 
-- [ListTaxRegistrations](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_taxSettings_ListTaxRegistrations.html)
+- [ListTaxRegistrations](api-taxsettings-listtaxregistrations.md)
 
-- [PutSupplementalTaxRegistration](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_taxSettings_PutSupplementalTaxRegistration.html)
+- [PutSupplementalTaxRegistration](api-taxsettings-putsupplementaltaxregistration.md)
 
-- [PutTaxExemption](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_taxSettings_PutTaxExemption.html)
+- [PutTaxExemption](api-taxsettings-puttaxexemption.md)
 
-- [PutTaxInheritance](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_taxSettings_PutTaxInheritance.html)
+- [PutTaxInheritance](api-taxsettings-puttaxinheritance.md)
 
-- [PutTaxRegistration](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_taxSettings_PutTaxRegistration.html)
+- [PutTaxRegistration](api-taxsettings-puttaxregistration.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 ListPriceLists
 

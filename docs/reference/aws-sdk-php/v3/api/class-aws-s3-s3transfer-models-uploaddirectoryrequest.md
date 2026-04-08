@@ -2,44 +2,44 @@ Menu
 
 - [Aws](namespace-aws.md)
 - [S3](namespace-aws-s3.md)
-- [S3Transfer](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.html)
-- [Models](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.s3.s3transfer.models.html)
+- [S3Transfer](namespace-aws-s3-s3transfer.md)
+- [Models](namespace-aws-s3-s3transfer-models.md)
 
 ## UploadDirectoryRequest     extends [AbstractTransferRequest](class-aws-s3-s3transfer-models-abstracttransferrequest.md)   in package    - [Aws](package-aws.md)
 
 FinalYes
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html\#toc)
+### Table of Contents  [header link](class-aws-s3-s3transfer-models-uploaddirectoryrequest-toc.md)
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html\#toc-constants)
+#### Constants  [header link](class-aws-s3-s3transfer-models-uploaddirectoryrequest-toc-constants.md)
 
-[DEFAULT\_MAX\_CONCURRENCY](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html#constant_DEFAULT_MAX_CONCURRENCY)
+[DEFAULT\_MAX\_CONCURRENCY](class-aws-s3-s3transfer-models-uploaddirectoryrequest-constant-default-max-concurrency.md)
 = 100
 
-#### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html\#toc-properties)
+#### Properties  [header link](class-aws-s3-s3transfer-models-uploaddirectoryrequest-toc-properties.md)
 
-[$configKeys](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html#property_configKeys)
+[$configKeys](class-aws-s3-s3transfer-models-uploaddirectoryrequest-property-configkeys.md)
 : array<string\|int, mixed>
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html\#toc-methods)
+#### Methods  [header link](class-aws-s3-s3transfer-models-uploaddirectoryrequest-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html#method___construct)
+[\_\_construct()](class-aws-s3-s3transfer-models-uploaddirectoryrequest-method-construct.md)
 : mixed [getConfig()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getConfig)
 : array<string\|int, mixed> [getListeners()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getListeners)
 : array<string\|int, mixed> Get current listeners.[getProgressTracker()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getProgressTracker)
-: [AbstractTransferListener](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractTransferListener.html) \|null Get the progress tracker.[getSingleObjectListeners()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getSingleObjectListeners)
-: array<string\|int, mixed> Get listeners that should receive single-object events.[getSourceDirectory()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html#method_getSourceDirectory)
-: string [getTargetBucket()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html#method_getTargetBucket)
-: string [getUploadRequestArgs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html#method_getUploadRequestArgs)
+: [AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md) \|null Get the progress tracker.[getSingleObjectListeners()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getSingleObjectListeners)
+: array<string\|int, mixed> Get listeners that should receive single-object events.[getSourceDirectory()](class-aws-s3-s3transfer-models-uploaddirectoryrequest-method-getsourcedirectory.md)
+: string [getTargetBucket()](class-aws-s3-s3transfer-models-uploaddirectoryrequest-method-gettargetbucket.md)
+: string [getUploadRequestArgs()](class-aws-s3-s3transfer-models-uploaddirectoryrequest-method-getuploadrequestargs.md)
 : array<string\|int, mixed> [updateConfigWithDefaults()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_updateConfigWithDefaults)
 : void [validateConfig()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_validateConfig)
 : void For validating config. By default, it provides an empty
-implementation.[validateSourceDirectory()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html#method_validateSourceDirectory)
+implementation.[validateSourceDirectory()](class-aws-s3-s3transfer-models-uploaddirectoryrequest-method-validatesourcedirectory.md)
 : void Helper method to validate source directory
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html\#constants)
+### Constants  [header link](class-aws-s3-s3transfer-models-uploaddirectoryrequest-constants.md)
 
-#### DEFAULT\_MAX\_CONCURRENCY  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html\#constant_DEFAULT_MAX_CONCURRENCY)
+#### DEFAULT\_MAX\_CONCURRENCY  [header link](class-aws-s3-s3transfer-models-uploaddirectoryrequest-constant-default-max-concurrency.md)
 
 `
     public
@@ -48,9 +48,9 @@ implementation.[validateSourceDirectory()](https://docs.aws.amazon.com/aws-sdk-p
     = 100
 `
 
-### Properties  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html\#properties)
+### Properties  [header link](class-aws-s3-s3transfer-models-uploaddirectoryrequest-properties.md)
 
-#### $configKeys  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html\#property_configKeys)
+#### $configKeys  [header link](class-aws-s3-s3transfer-models-uploaddirectoryrequest-property-configkeys.md)
 
 `
     public
@@ -58,9 +58,9 @@ implementation.[validateSourceDirectory()](https://docs.aws.amazon.com/aws-sdk-p
     $configKeys
      = ['follow_symbolic_links' => 'bool', 'recursive' => 'bool', 's3_prefix' => 'string', 'filter' => 'callable', 's3_delimiter' => 'string', 'upload_object_request_modifier' => 'callable', 'failure_policy' => 'callable', 'max_concurrency' => 'int', 'max_depth' => 'int', 'track_progress' => 'bool']`
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html\#methods)
+### Methods  [header link](class-aws-s3-s3transfer-models-uploaddirectoryrequest-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-s3-s3transfer-models-uploaddirectoryrequest-method-construct.md)
 
 `
     public
@@ -114,7 +114,7 @@ $listeners
 Directory-level listeners that receive directory snapshots.
 
 $progressTracker
-: [AbstractTransferListener](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractTransferListener.html) \|null
+: [AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md) \|null
 = null
 
 Directory-level progress tracker.
@@ -157,7 +157,7 @@ Get the progress tracker.
 
 ##### Return values
 
-[AbstractTransferListener](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Progress.AbstractTransferListener.html) \|null
+[AbstractTransferListener](class-aws-s3-s3transfer-progress-abstracttransferlistener.md) \|null
 
 #### getSingleObjectListeners()  [header link](class-aws-s3-s3transfer-models-abstracttransferrequest.md\#method_getSingleObjectListeners)
 
@@ -171,7 +171,7 @@ Get listeners that should receive single-object events.
 
 array<string\|int, mixed>
 
-#### getSourceDirectory()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html\#method_getSourceDirectory)
+#### getSourceDirectory()  [header link](class-aws-s3-s3transfer-models-uploaddirectoryrequest-method-getsourcedirectory.md)
 
 `
     public
@@ -181,7 +181,7 @@ array<string\|int, mixed>
 
 string
 
-#### getTargetBucket()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html\#method_getTargetBucket)
+#### getTargetBucket()  [header link](class-aws-s3-s3transfer-models-uploaddirectoryrequest-method-gettargetbucket.md)
 
 `
     public
@@ -191,7 +191,7 @@ string
 
 string
 
-#### getUploadRequestArgs()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html\#method_getUploadRequestArgs)
+#### getUploadRequestArgs()  [header link](class-aws-s3-s3transfer-models-uploaddirectoryrequest-method-getuploadrequestargs.md)
 
 `
     public
@@ -221,7 +221,7 @@ implementation.
     public
                     validateConfig() : void`
 
-#### validateSourceDirectory()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html\#method_validateSourceDirectory)
+#### validateSourceDirectory()  [header link](class-aws-s3-s3transfer-models-uploaddirectoryrequest-method-validatesourcedirectory.md)
 
 Helper method to validate source directory
 
@@ -236,24 +236,24 @@ Helper method to validate source directory
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html#toc-constants)
-  - [Properties](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html#toc-properties)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html#toc-methods)
+  - [Constants](class-aws-s3-s3transfer-models-uploaddirectoryrequest-toc-constants.md)
+  - [Properties](class-aws-s3-s3transfer-models-uploaddirectoryrequest-toc-properties.md)
+  - [Methods](class-aws-s3-s3transfer-models-uploaddirectoryrequest-toc-methods.md)
 - Constants
-  - [DEFAULT\_MAX\_CONCURRENCY](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html#constant_DEFAULT_MAX_CONCURRENCY)
+  - [DEFAULT\_MAX\_CONCURRENCY](class-aws-s3-s3transfer-models-uploaddirectoryrequest-constant-default-max-concurrency.md)
 - Properties
-  - [$configKeys](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html#property_configKeys)
+  - [$configKeys](class-aws-s3-s3transfer-models-uploaddirectoryrequest-property-configkeys.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html#method___construct)
+  - [\_\_construct()](class-aws-s3-s3transfer-models-uploaddirectoryrequest-method-construct.md)
   - [getConfig()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getConfig)
   - [getListeners()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getListeners)
   - [getProgressTracker()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getProgressTracker)
   - [getSingleObjectListeners()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_getSingleObjectListeners)
-  - [getSourceDirectory()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html#method_getSourceDirectory)
-  - [getTargetBucket()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html#method_getTargetBucket)
-  - [getUploadRequestArgs()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html#method_getUploadRequestArgs)
+  - [getSourceDirectory()](class-aws-s3-s3transfer-models-uploaddirectoryrequest-method-getsourcedirectory.md)
+  - [getTargetBucket()](class-aws-s3-s3transfer-models-uploaddirectoryrequest-method-gettargetbucket.md)
+  - [getUploadRequestArgs()](class-aws-s3-s3transfer-models-uploaddirectoryrequest-method-getuploadrequestargs.md)
   - [updateConfigWithDefaults()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_updateConfigWithDefaults)
   - [validateConfig()](class-aws-s3-s3transfer-models-abstracttransferrequest.md#method_validateConfig)
-  - [validateSourceDirectory()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html#method_validateSourceDirectory)
+  - [validateSourceDirectory()](class-aws-s3-s3transfer-models-uploaddirectoryrequest-method-validatesourcedirectory.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.S3Transfer.Models.UploadDirectoryRequest.html#top)
+[Back To Top](class-aws-s3-s3transfer-models-uploaddirectoryrequest-top.md)

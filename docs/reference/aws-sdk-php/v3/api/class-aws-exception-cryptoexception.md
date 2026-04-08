@@ -8,7 +8,7 @@ Menu
 This class represents exceptions related to logic surrounding client-side
 encryption usage.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.CryptoException.html\#toc)
+### Table of Contents  [header link](class-aws-exception-cryptoexception-toc.md)
 
 ×
 
@@ -16,4 +16,4 @@ encryption usage.
 
 - Table Of Contents
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Exception.CryptoException.html#top)
+[Back To Top](class-aws-exception-cryptoexception-top.md)

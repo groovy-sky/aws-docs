@@ -3,20 +3,20 @@ Menu
 - [Aws](namespace-aws.md)
 - [Api](namespace-aws-api.md)
 
-## ListShape     extends [Shape](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Shape.html)   in package    - [Aws](package-aws.md)
+## ListShape     extends [Shape](class-aws-api-shape.md)   in package    - [Aws](package-aws.md)
 
 Represents a list shape.
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ListShape.html\#toc)
+### Table of Contents  [header link](class-aws-api-listshape-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ListShape.html\#toc-methods)
+#### Methods  [header link](class-aws-api-listshape-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ListShape.html#method___construct)
-: mixed [create()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Shape.html#method_create)
-: mixed Get a concrete shape for the given definition.[getContextParam()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Shape.html#method_getContextParam)
-: mixed Get a context param definition.[getMember()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ListShape.html#method_getMember)
-: [Shape](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Shape.html)[getName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Shape.html#method_getName)
-: string Get the name of the shape[getType()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Shape.html#method_getType)
+[\_\_construct()](class-aws-api-listshape-method-construct.md)
+: mixed [create()](class-aws-api-shape-method-create.md)
+: mixed Get a concrete shape for the given definition.[getContextParam()](class-aws-api-shape-method-getcontextparam.md)
+: mixed Get a context param definition.[getMember()](class-aws-api-listshape-method-getmember.md)
+: [Shape](class-aws-api-shape.md)[getName()](class-aws-api-shape-method-getname.md)
+: string Get the name of the shape[getType()](class-aws-api-shape-method-gettype.md)
 : string Get the type of the shape[offsetExists()](class-aws-api-abstractmodel.md#method_offsetExists)
 : bool [offsetGet()](class-aws-api-abstractmodel.md#method_offsetGet)
 : mixed\|null [offsetSet()](class-aws-api-abstractmodel.md#method_offsetSet)
@@ -24,9 +24,9 @@ Represents a list shape.
 : void [toArray()](class-aws-api-abstractmodel.md#method_toArray)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ListShape.html\#methods)
+### Methods  [header link](class-aws-api-listshape-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ListShape.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-api-listshape-method-construct.md)
 
 `
     public
@@ -36,9 +36,9 @@ Represents a list shape.
 
 $definition
 : array<string\|int, mixed>$shapeMap
-: [ShapeMap](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html)
+: [ShapeMap](class-aws-api-shapemap.md)
 
-#### create()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Shape.html\#method_create)
+#### create()  [header link](class-aws-api-shape-method-create.md)
 
 Get a concrete shape for the given definition.
 
@@ -50,15 +50,15 @@ Get a concrete shape for the given definition.
 
 $definition
 : array<string\|int, mixed>$shapeMap
-: [ShapeMap](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ShapeMap.html)
+: [ShapeMap](class-aws-api-shapemap.md)
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Shape.html\#method_create\#tags)
+##### Tags  [header link](class-aws-api-shape-method-create-tags.md)
 
 throwsRuntimeException
 
 if the type is invalid
 
-#### getContextParam()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Shape.html\#method_getContextParam)
+#### getContextParam()  [header link](class-aws-api-shape-method-getcontextparam.md)
 
 Get a context param definition.
 
@@ -66,13 +66,13 @@ Get a context param definition.
     public
                     getContextParam() : mixed`
 
-#### getMember()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ListShape.html\#method_getMember)
+#### getMember()  [header link](class-aws-api-listshape-method-getmember.md)
 
 `
     public
                     getMember() : Shape`
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ListShape.html\#method_getMember\#tags)
+##### Tags  [header link](class-aws-api-listshape-method-getmember-tags.md)
 
 throwsRuntimeException
 
@@ -80,9 +80,9 @@ if no member is specified
 
 ##### Return values
 
-[Shape](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Shape.html)
+[Shape](class-aws-api-shape.md)
 
-#### getName()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Shape.html\#method_getName)
+#### getName()  [header link](class-aws-api-shape-method-getname.md)
 
 Get the name of the shape
 
@@ -94,7 +94,7 @@ Get the name of the shape
 
 string
 
-#### getType()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Shape.html\#method_getType)
+#### getType()  [header link](class-aws-api-shape-method-gettype.md)
 
 Get the type of the shape
 
@@ -172,18 +172,18 @@ $offset
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ListShape.html#toc-methods)
+  - [Methods](class-aws-api-listshape-toc-methods.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ListShape.html#method___construct)
-  - [create()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Shape.html#method_create)
-  - [getContextParam()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Shape.html#method_getContextParam)
-  - [getMember()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ListShape.html#method_getMember)
-  - [getName()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Shape.html#method_getName)
-  - [getType()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.Shape.html#method_getType)
+  - [\_\_construct()](class-aws-api-listshape-method-construct.md)
+  - [create()](class-aws-api-shape-method-create.md)
+  - [getContextParam()](class-aws-api-shape-method-getcontextparam.md)
+  - [getMember()](class-aws-api-listshape-method-getmember.md)
+  - [getName()](class-aws-api-shape-method-getname.md)
+  - [getType()](class-aws-api-shape-method-gettype.md)
   - [offsetExists()](class-aws-api-abstractmodel.md#method_offsetExists)
   - [offsetGet()](class-aws-api-abstractmodel.md#method_offsetGet)
   - [offsetSet()](class-aws-api-abstractmodel.md#method_offsetSet)
   - [offsetUnset()](class-aws-api-abstractmodel.md#method_offsetUnset)
   - [toArray()](class-aws-api-abstractmodel.md#method_toArray)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Api.ListShape.html#top)
+[Back To Top](class-aws-api-listshape-top.md)

@@ -17,30 +17,30 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2023-07-19**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-medical-imaging-2023-07-19.html)
+- [**2023-07-19**](api-medical-imaging-2023-07-19.md)
 
-  - [CopyImageSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-medical-imaging-2023-07-19.html#copyimageset)
-  - [CreateDatastore](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-medical-imaging-2023-07-19.html#createdatastore)
-  - [DeleteDatastore](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-medical-imaging-2023-07-19.html#deletedatastore)
-  - [DeleteImageSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-medical-imaging-2023-07-19.html#deleteimageset)
-  - [GetDICOMImportJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-medical-imaging-2023-07-19.html#getdicomimportjob)
-  - [GetDatastore](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-medical-imaging-2023-07-19.html#getdatastore)
-  - [GetImageFrame](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-medical-imaging-2023-07-19.html#getimageframe)
-  - [GetImageSet](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-medical-imaging-2023-07-19.html#getimageset)
-  - [GetImageSetMetadata](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-medical-imaging-2023-07-19.html#getimagesetmetadata)
-  - [ListDICOMImportJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-medical-imaging-2023-07-19.html#listdicomimportjobs)
-  - [ListDatastores](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-medical-imaging-2023-07-19.html#listdatastores)
-  - [ListImageSetVersions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-medical-imaging-2023-07-19.html#listimagesetversions)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-medical-imaging-2023-07-19.html#listtagsforresource)
-  - [SearchImageSets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-medical-imaging-2023-07-19.html#searchimagesets)
-  - [StartDICOMImportJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-medical-imaging-2023-07-19.html#startdicomimportjob)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-medical-imaging-2023-07-19.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-medical-imaging-2023-07-19.html#untagresource)
-  - [UpdateImageSetMetadata](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-medical-imaging-2023-07-19.html#updateimagesetmetadata)
+  - [CopyImageSet](api-medical-imaging-2023-07-19-copyimageset.md)
+  - [CreateDatastore](api-medical-imaging-2023-07-19-createdatastore.md)
+  - [DeleteDatastore](api-medical-imaging-2023-07-19-deletedatastore.md)
+  - [DeleteImageSet](api-medical-imaging-2023-07-19-deleteimageset.md)
+  - [GetDICOMImportJob](api-medical-imaging-2023-07-19-getdicomimportjob.md)
+  - [GetDatastore](api-medical-imaging-2023-07-19-getdatastore.md)
+  - [GetImageFrame](api-medical-imaging-2023-07-19-getimageframe.md)
+  - [GetImageSet](api-medical-imaging-2023-07-19-getimageset.md)
+  - [GetImageSetMetadata](api-medical-imaging-2023-07-19-getimagesetmetadata.md)
+  - [ListDICOMImportJobs](api-medical-imaging-2023-07-19-listdicomimportjobs.md)
+  - [ListDatastores](api-medical-imaging-2023-07-19-listdatastores.md)
+  - [ListImageSetVersions](api-medical-imaging-2023-07-19-listimagesetversions.md)
+  - [ListTagsForResource](api-medical-imaging-2023-07-19-listtagsforresource.md)
+  - [SearchImageSets](api-medical-imaging-2023-07-19-searchimagesets.md)
+  - [StartDICOMImportJob](api-medical-imaging-2023-07-19-startdicomimportjob.md)
+  - [TagResource](api-medical-imaging-2023-07-19-tagresource.md)
+  - [UntagResource](api-medical-imaging-2023-07-19-untagresource.md)
+  - [UpdateImageSetMetadata](api-medical-imaging-2023-07-19-updateimagesetmetadata.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MedicalImaging.MedicalImagingClient.html\#toc)
+### Table of Contents  [header link](class-aws-medicalimaging-medicalimagingclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MedicalImaging.MedicalImagingClient.html\#toc-methods)
+#### Methods  [header link](class-aws-medicalimaging-medicalimagingclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -71,7 +71,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MedicalImaging.MedicalImagingClient.html\#methods)
+### Methods  [header link](class-aws-medicalimaging-medicalimagingclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -538,7 +538,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MedicalImaging.MedicalImagingClient.html#toc-methods)
+  - [Methods](class-aws-medicalimaging-medicalimagingclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -565,4 +565,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MedicalImaging.MedicalImagingClient.html#top)
+[Back To Top](class-aws-medicalimaging-medicalimagingclient-top.md)

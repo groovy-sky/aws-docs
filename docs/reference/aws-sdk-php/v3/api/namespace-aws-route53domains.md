@@ -4,15 +4,15 @@ Menu
 
 ## Route53Domains
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53domains.html\#toc)
+### Table of Contents  [header link](namespace-aws-route53domains-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53domains.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-route53domains-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53domains.exception.html)
+[Exception](namespace-aws-route53domains-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53domains.html\#toc-classes)
+#### Classes  [header link](namespace-aws-route53domains-toc-classes.md)
 
-[Route53DomainsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Route53Domains.Route53DomainsClient.html)This client is used to interact with the **Amazon Route 53 Domains** service.
+[Route53DomainsClient](class-aws-route53domains-route53domainsclient.md)This client is used to interact with the **Amazon Route 53 Domains** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53domains.html#toc-classes)
+  - [Classes](namespace-aws-route53domains-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.route53domains.html#top)
+[Back To Top](namespace-aws-route53domains-top.md)

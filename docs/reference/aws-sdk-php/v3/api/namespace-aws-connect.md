@@ -4,15 +4,15 @@ Menu
 
 ## Connect
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connect.html\#toc)
+### Table of Contents  [header link](namespace-aws-connect-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connect.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-connect-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connect.exception.html)
+[Exception](namespace-aws-connect-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connect.html\#toc-classes)
+#### Classes  [header link](namespace-aws-connect-toc-classes.md)
 
-[ConnectClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Connect.ConnectClient.html)This client is used to interact with the **Amazon Connect Service** service.
+[ConnectClient](class-aws-connect-connectclient.md)This client is used to interact with the **Amazon Connect Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connect.html#toc-classes)
+  - [Classes](namespace-aws-connect-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connect.html#top)
+[Back To Top](namespace-aws-connect-top.md)

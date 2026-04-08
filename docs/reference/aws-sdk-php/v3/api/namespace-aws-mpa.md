@@ -4,15 +4,15 @@ Menu
 
 ## MPA
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mpa.html\#toc)
+### Table of Contents  [header link](namespace-aws-mpa-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mpa.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-mpa-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mpa.exception.html)
+[Exception](namespace-aws-mpa-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mpa.html\#toc-classes)
+#### Classes  [header link](namespace-aws-mpa-toc-classes.md)
 
-[MPAClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.MPA.MPAClient.html)This client is used to interact with the **AWS Multi-party Approval** service.
+[MPAClient](class-aws-mpa-mpaclient.md)This client is used to interact with the **AWS Multi-party Approval** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mpa.html#toc-classes)
+  - [Classes](namespace-aws-mpa-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.mpa.html#top)
+[Back To Top](namespace-aws-mpa-top.md)

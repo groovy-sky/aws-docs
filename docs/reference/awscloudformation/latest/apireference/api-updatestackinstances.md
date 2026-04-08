@@ -11,9 +11,9 @@ During StackSet updates, any parameters overridden for a stack instance aren't u
 but retain their overridden value.
 
 You can only update the parameter _values_ that are specified in the
-StackSet. To add or delete a parameter itself, use [UpdateStackSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_UpdateStackSet.html)
+StackSet. To add or delete a parameter itself, use [UpdateStackSet](api-updatestackset.md)
 to update the StackSet template. If you add a parameter to a template, before you can override
-the parameter value specified in the StackSet you must first use [UpdateStackSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_UpdateStackSet.html)
+the parameter value specified in the StackSet you must first use [UpdateStackSet](api-updatestackset.md)
 to update all stack instances with the updated template and parameter value specified in the
 StackSet. Once a stack instance has been updated with the new parameter, you can then override
 the parameter value using `UpdateStackInstances`.
@@ -86,7 +86,7 @@ overridden values.
 You can specify `Accounts` or `DeploymentTargets`, but not
 both.
 
-Type: [DeploymentTargets](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DeploymentTargets.html) object
+Type: [DeploymentTargets](api-deploymenttargets.md) object
 
 Required: No
 
@@ -111,7 +111,7 @@ Required: No
 
 Preferences for how CloudFormation performs this StackSet operation.
 
-Type: [StackSetOperationPreferences](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_StackSetOperationPreferences.html) object
+Type: [StackSetOperationPreferences](api-stacksetoperationpreferences.md) object
 
 Required: No
 
@@ -143,7 +143,7 @@ updated, but retain their overridden value.
 You can only override the parameter _values_ that are specified in the
 StackSet. To add or delete a parameter itself, use `UpdateStackSet` to update the
 StackSet template. If you add a parameter to a template, before you can override the parameter
-value specified in the StackSet you must first use [UpdateStackSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_UpdateStackSet.html)
+value specified in the StackSet you must first use [UpdateStackSet](api-updatestackset.md)
 to update all stack instances with the updated template and parameter value specified in the
 StackSet. Once a stack instance has been updated with the new parameter, you can then override
 the parameter value using `UpdateStackInstances`.
@@ -233,27 +233,27 @@ HTTP Status Code: 409
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/UpdateStackInstances)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/cloudformation-2010-05-15/updatestackinstances.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/UpdateStackInstances)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/cloudformation-2010-05-15/updatestackinstances.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/UpdateStackInstances)
+- [AWS SDK for C++](../../../goto/sdkforcpp/cloudformation-2010-05-15/updatestackinstances.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/UpdateStackInstances)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/cloudformation-2010-05-15/updatestackinstances.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/UpdateStackInstances)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudformation-2010-05-15/updatestackinstances.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/UpdateStackInstances)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/cloudformation-2010-05-15/updatestackinstances.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/UpdateStackInstances)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/cloudformation-2010-05-15/updatestackinstances.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/UpdateStackInstances)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/cloudformation-2010-05-15/updatestackinstances.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/UpdateStackInstances)
+- [AWS SDK for Python](../../../../services/goto/boto3/cloudformation-2010-05-15/updatestackinstances.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/UpdateStackInstances)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/updatestackinstances.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 UpdateStack
 

@@ -80,7 +80,7 @@ A list of the AWS Identity and Access Management (IAM) roles that are associated
 IAM roles that are associated with a DB cluster grant permission for the DB cluster to access other Amazon Web Services
 on your behalf.
 
-Type: Array of [DBClusterRole](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBClusterRole.html) objects
+Type: Array of [DBClusterRole](api-dbclusterrole.md) objects
 
 Required: No
 
@@ -166,7 +166,7 @@ instance](../../../../services/amazonrds/latest/userguide/usingwithrds-ssl.md) i
 [Using SSL/TLS to encrypt a connection to a DB cluster](../../../../services/amazonrds/latest/aurorauserguide/usingwithrds-ssl.md) in the _Amazon Aurora_
 _User Guide_.
 
-Type: [CertificateDetails](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CertificateDetails.html) object
+Type: [CertificateDetails](api-certificatedetails.md) object
 
 Required: No
 
@@ -286,7 +286,7 @@ Required: No
 
 The list of DB instances that make up the DB cluster.
 
-Type: Array of [DBClusterMember](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBClusterMember.html) objects
+Type: Array of [DBClusterMember](api-dbclustermember.md) objects
 
 Required: No
 
@@ -294,7 +294,7 @@ Required: No
 
 The list of option group memberships for this DB cluster.
 
-Type: Array of [DBClusterOptionGroupStatus](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBClusterOptionGroupStatus.html) objects
+Type: Array of [DBClusterOptionGroupStatus](api-dbclusteroptiongroupstatus.md) objects
 
 Required: No
 
@@ -344,7 +344,7 @@ Required: No
 
 The Active Directory Domain membership records associated with the DB cluster.
 
-Type: Array of [DomainMembership](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DomainMembership.html) objects
+Type: Array of [DomainMembership](api-domainmembership.md) objects
 
 Required: No
 
@@ -527,7 +527,7 @@ Required: No
 
 The details for Aurora Limitless Database.
 
-Type: [LimitlessDatabase](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_LimitlessDatabase.html) object
+Type: [LimitlessDatabase](api-limitlessdatabase.md) object
 
 Required: No
 
@@ -558,7 +558,7 @@ For more information, see [Password management with AWS Secrets Manager](../../.
 in the _Amazon RDS User Guide_ and [Password management with AWS Secrets Manager](../../../../services/amazonrds/latest/aurorauserguide/rds-secrets-manager.md)
 in the _Amazon Aurora User Guide._
 
-Type: [MasterUserSecret](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_MasterUserSecret.html) object
+Type: [MasterUserSecret](api-masterusersecret.md) object
 
 Required: No
 
@@ -613,7 +613,7 @@ Required: No
 
 Information about pending changes to the DB cluster. This information is returned only when there are pending changes. Specific changes are identified by subelements.
 
-Type: [ClusterPendingModifiedValues](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ClusterPendingModifiedValues.html) object
+Type: [ClusterPendingModifiedValues](api-clusterpendingmodifiedvalues.md) object
 
 Required: No
 
@@ -762,7 +762,7 @@ The scaling configuration for an Aurora DB cluster in `serverless` DB engine mod
 For more information, see [Using Amazon Aurora Serverless v1](../../../../services/amazonrds/latest/aurorauserguide/aurora-serverless.md) in the
 _Amazon Aurora User Guide_.
 
-Type: [ScalingConfigurationInfo](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ScalingConfigurationInfo.html) object
+Type: [ScalingConfigurationInfo](api-scalingconfigurationinfo.md) object
 
 Required: No
 
@@ -781,7 +781,7 @@ The scaling configuration for an Aurora Serverless v2 DB cluster.
 For more information, see [Using Amazon Aurora Serverless v2](../../../../services/amazonrds/latest/aurorauserguide/aurora-serverless-v2.md) in the
 _Amazon Aurora User Guide_.
 
-Type: [ServerlessV2ScalingConfigurationInfo](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ServerlessV2ScalingConfigurationInfo.html) object
+Type: [ServerlessV2ScalingConfigurationInfo](api-serverlessv2scalingconfigurationinfo.md) object
 
 Required: No
 
@@ -797,7 +797,7 @@ Required: No
 
 Reserved for future use.
 
-Type: Array of [DBClusterStatusInfo](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBClusterStatusInfo.html) objects
+Type: Array of [DBClusterStatusInfo](api-dbclusterstatusinfo.md) objects
 
 Required: No
 
@@ -875,7 +875,7 @@ Required: No
 
 The list of VPC security groups that the DB cluster belongs to.
 
-Type: Array of [VpcSecurityGroupMembership](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_VpcSecurityGroupMembership.html) objects
+Type: Array of [VpcSecurityGroupMembership](api-vpcsecuritygroupmembership.md) objects
 
 Required: No
 
@@ -883,13 +883,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/DBCluster)
+- [AWS SDK for C++](../../../goto/sdkforcpp/rds-2014-10-31/dbcluster.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/DBCluster)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/rds-2014-10-31/dbcluster.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/DBCluster)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/dbcluster.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 CustomDBEngineVersionAMI
 

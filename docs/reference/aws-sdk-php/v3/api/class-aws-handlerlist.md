@@ -31,52 +31,52 @@ Middleware can be registered with a name to allow you to easily add a
 middleware before or after another middleware by name. This also allows you
 to remove a middleware by name (in addition to removing by instance).
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#toc)
+### Table of Contents  [header link](class-aws-handlerlist-toc.md)
 
-#### Interfaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#toc-interfaces)
+#### Interfaces  [header link](class-aws-handlerlist-toc-interfaces.md)
 
 Countable
 
-#### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#toc-constants)
+#### Constants  [header link](class-aws-handlerlist-toc-constants.md)
 
-[ATTEMPT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#constant_ATTEMPT)
-= 'attempt' [BUILD](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#constant_BUILD)
-= 'build' [INIT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#constant_INIT)
-= 'init' [SIGN](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#constant_SIGN)
-= 'sign' [VALIDATE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#constant_VALIDATE)
+[ATTEMPT](class-aws-handlerlist-constant-attempt.md)
+= 'attempt' [BUILD](class-aws-handlerlist-constant-build.md)
+= 'build' [INIT](class-aws-handlerlist-constant-init.md)
+= 'init' [SIGN](class-aws-handlerlist-constant-sign.md)
+= 'sign' [VALIDATE](class-aws-handlerlist-constant-validate.md)
 = 'validate'
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#toc-methods)
+#### Methods  [header link](class-aws-handlerlist-toc-methods.md)
 
-[\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method___construct)
-: mixed [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method___toString)
-: string Dumps a string representation of the list.[after()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_after)
-: mixed Add a middleware after the given middleware by name.[appendAttempt()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_appendAttempt)
-: mixed Append a middleware to the attempt step.[appendBuild()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_appendBuild)
-: mixed Append a middleware to the build step.[appendInit()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_appendInit)
-: mixed Append a middleware to the init step.[appendSign()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_appendSign)
-: mixed Append a middleware to the sign step.[appendValidate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_appendValidate)
-: mixed Append a middleware to the validate step.[before()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_before)
-: mixed Add a middleware before the given middleware by name.[count()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_count)
-: int [hasHandler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_hasHandler)
-: bool Returns true if the builder has a handler.[hasMiddleware()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_hasMiddleware)
+[\_\_construct()](class-aws-handlerlist-method-construct.md)
+: mixed [\_\_toString()](class-aws-handlerlist-method-tostring.md)
+: string Dumps a string representation of the list.[after()](class-aws-handlerlist-method-after.md)
+: mixed Add a middleware after the given middleware by name.[appendAttempt()](class-aws-handlerlist-method-appendattempt.md)
+: mixed Append a middleware to the attempt step.[appendBuild()](class-aws-handlerlist-method-appendbuild.md)
+: mixed Append a middleware to the build step.[appendInit()](class-aws-handlerlist-method-appendinit.md)
+: mixed Append a middleware to the init step.[appendSign()](class-aws-handlerlist-method-appendsign.md)
+: mixed Append a middleware to the sign step.[appendValidate()](class-aws-handlerlist-method-appendvalidate.md)
+: mixed Append a middleware to the validate step.[before()](class-aws-handlerlist-method-before.md)
+: mixed Add a middleware before the given middleware by name.[count()](class-aws-handlerlist-method-count.md)
+: int [hasHandler()](class-aws-handlerlist-method-hashandler.md)
+: bool Returns true if the builder has a handler.[hasMiddleware()](class-aws-handlerlist-method-hasmiddleware.md)
 : bool Checks if a middleware exists. The middleware
 should have been added with a name in order to
-use this method.[interpose()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_interpose)
+use this method.[interpose()](class-aws-handlerlist-method-interpose.md)
 : mixed Interpose a function between each middleware (e.g., allowing for a trace
-through the middleware layers).[prependAttempt()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_prependAttempt)
-: mixed Prepend a middleware to the attempt step.[prependBuild()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_prependBuild)
-: mixed Prepend a middleware to the build step.[prependInit()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_prependInit)
-: mixed Prepend a middleware to the init step.[prependSign()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_prependSign)
-: mixed Prepend a middleware to the sign step.[prependValidate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_prependValidate)
-: mixed Prepend a middleware to the validate step.[remove()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_remove)
-: mixed Remove a middleware by name or by instance from the list.[resolve()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_resolve)
-: callable Compose the middleware and handler into a single callable function.[setHandler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_setHandler)
+through the middleware layers).[prependAttempt()](class-aws-handlerlist-method-prependattempt.md)
+: mixed Prepend a middleware to the attempt step.[prependBuild()](class-aws-handlerlist-method-prependbuild.md)
+: mixed Prepend a middleware to the build step.[prependInit()](class-aws-handlerlist-method-prependinit.md)
+: mixed Prepend a middleware to the init step.[prependSign()](class-aws-handlerlist-method-prependsign.md)
+: mixed Prepend a middleware to the sign step.[prependValidate()](class-aws-handlerlist-method-prependvalidate.md)
+: mixed Prepend a middleware to the validate step.[remove()](class-aws-handlerlist-method-remove.md)
+: mixed Remove a middleware by name or by instance from the list.[resolve()](class-aws-handlerlist-method-resolve.md)
+: callable Compose the middleware and handler into a single callable function.[setHandler()](class-aws-handlerlist-method-sethandler.md)
 : mixed Set the HTTP handler that actually returns a response.
 
-### Constants  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#constants)
+### Constants  [header link](class-aws-handlerlist-constants.md)
 
-#### ATTEMPT  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#constant_ATTEMPT)
+#### ATTEMPT  [header link](class-aws-handlerlist-constant-attempt.md)
 
 `
     public
@@ -85,7 +85,7 @@ through the middleware layers).[prependAttempt()](https://docs.aws.amazon.com/aw
     = 'attempt'
 `
 
-#### BUILD  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#constant_BUILD)
+#### BUILD  [header link](class-aws-handlerlist-constant-build.md)
 
 `
     public
@@ -94,7 +94,7 @@ through the middleware layers).[prependAttempt()](https://docs.aws.amazon.com/aw
     = 'build'
 `
 
-#### INIT  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#constant_INIT)
+#### INIT  [header link](class-aws-handlerlist-constant-init.md)
 
 `
     public
@@ -103,7 +103,7 @@ through the middleware layers).[prependAttempt()](https://docs.aws.amazon.com/aw
     = 'init'
 `
 
-#### SIGN  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#constant_SIGN)
+#### SIGN  [header link](class-aws-handlerlist-constant-sign.md)
 
 `
     public
@@ -112,7 +112,7 @@ through the middleware layers).[prependAttempt()](https://docs.aws.amazon.com/aw
     = 'sign'
 `
 
-#### VALIDATE  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#constant_VALIDATE)
+#### VALIDATE  [header link](class-aws-handlerlist-constant-validate.md)
 
 `
     public
@@ -121,9 +121,9 @@ through the middleware layers).[prependAttempt()](https://docs.aws.amazon.com/aw
     = 'validate'
 `
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#methods)
+### Methods  [header link](class-aws-handlerlist-methods.md)
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-handlerlist-method-construct.md)
 
 `
     public
@@ -137,7 +137,7 @@ $handler
 
 HTTP handler.
 
-#### \_\_toString()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#method___toString)
+#### \_\_toString()  [header link](class-aws-handlerlist-method-tostring.md)
 
 Dumps a string representation of the list.
 
@@ -149,7 +149,7 @@ Dumps a string representation of the list.
 
 string
 
-#### after()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#method_after)
+#### after()  [header link](class-aws-handlerlist-method-after.md)
 
 Add a middleware after the given middleware by name.
 
@@ -174,7 +174,7 @@ $middleware
 
 Middleware to add.
 
-#### appendAttempt()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#method_appendAttempt)
+#### appendAttempt()  [header link](class-aws-handlerlist-method-appendattempt.md)
 
 Append a middleware to the attempt step.
 
@@ -195,7 +195,7 @@ $name
 
 Name of the middleware.
 
-#### appendBuild()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#method_appendBuild)
+#### appendBuild()  [header link](class-aws-handlerlist-method-appendbuild.md)
 
 Append a middleware to the build step.
 
@@ -216,7 +216,7 @@ $name
 
 Name of the middleware.
 
-#### appendInit()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#method_appendInit)
+#### appendInit()  [header link](class-aws-handlerlist-method-appendinit.md)
 
 Append a middleware to the init step.
 
@@ -237,7 +237,7 @@ $name
 
 Name of the middleware.
 
-#### appendSign()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#method_appendSign)
+#### appendSign()  [header link](class-aws-handlerlist-method-appendsign.md)
 
 Append a middleware to the sign step.
 
@@ -258,7 +258,7 @@ $name
 
 Name of the middleware.
 
-#### appendValidate()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#method_appendValidate)
+#### appendValidate()  [header link](class-aws-handlerlist-method-appendvalidate.md)
 
 Append a middleware to the validate step.
 
@@ -279,7 +279,7 @@ $name
 
 Name of the middleware.
 
-#### before()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#method_before)
+#### before()  [header link](class-aws-handlerlist-method-before.md)
 
 Add a middleware before the given middleware by name.
 
@@ -304,7 +304,7 @@ $middleware
 
 Middleware to add.
 
-#### count()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#method_count)
+#### count()  [header link](class-aws-handlerlist-method-count.md)
 
 `
     public
@@ -314,7 +314,7 @@ Middleware to add.
 
 int
 
-#### hasHandler()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#method_hasHandler)
+#### hasHandler()  [header link](class-aws-handlerlist-method-hashandler.md)
 
 Returns true if the builder has a handler.
 
@@ -326,7 +326,7 @@ Returns true if the builder has a handler.
 
 bool
 
-#### hasMiddleware()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#method_hasMiddleware)
+#### hasMiddleware()  [header link](class-aws-handlerlist-method-hasmiddleware.md)
 
 Checks if a middleware exists. The middleware
 should have been added with a name in order to
@@ -345,7 +345,7 @@ $name
 
 bool
 
-#### interpose()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#method_interpose)
+#### interpose()  [header link](class-aws-handlerlist-method-interpose.md)
 
 Interpose a function between each middleware (e.g., allowing for a trace
 through the middleware layers).
@@ -370,7 +370,7 @@ $fn
 
 Pass null to remove any previously set function
 
-#### prependAttempt()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#method_prependAttempt)
+#### prependAttempt()  [header link](class-aws-handlerlist-method-prependattempt.md)
 
 Prepend a middleware to the attempt step.
 
@@ -391,7 +391,7 @@ $name
 
 Name of the middleware.
 
-#### prependBuild()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#method_prependBuild)
+#### prependBuild()  [header link](class-aws-handlerlist-method-prependbuild.md)
 
 Prepend a middleware to the build step.
 
@@ -412,7 +412,7 @@ $name
 
 Name of the middleware.
 
-#### prependInit()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#method_prependInit)
+#### prependInit()  [header link](class-aws-handlerlist-method-prependinit.md)
 
 Prepend a middleware to the init step.
 
@@ -433,7 +433,7 @@ $name
 
 Name of the middleware.
 
-#### prependSign()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#method_prependSign)
+#### prependSign()  [header link](class-aws-handlerlist-method-prependsign.md)
 
 Prepend a middleware to the sign step.
 
@@ -454,7 +454,7 @@ $name
 
 Name of the middleware.
 
-#### prependValidate()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#method_prependValidate)
+#### prependValidate()  [header link](class-aws-handlerlist-method-prependvalidate.md)
 
 Prepend a middleware to the validate step.
 
@@ -475,7 +475,7 @@ $name
 
 Name of the middleware.
 
-#### remove()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#method_remove)
+#### remove()  [header link](class-aws-handlerlist-method-remove.md)
 
 Remove a middleware by name or by instance from the list.
 
@@ -490,7 +490,7 @@ $nameOrInstance
 
 Middleware to remove.
 
-#### resolve()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#method_resolve)
+#### resolve()  [header link](class-aws-handlerlist-method-resolve.md)
 
 Compose the middleware and handler into a single callable function.
 
@@ -502,7 +502,7 @@ Compose the middleware and handler into a single callable function.
 
 callable
 
-#### setHandler()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html\#method_setHandler)
+#### setHandler()  [header link](class-aws-handlerlist-method-sethandler.md)
 
 Set the HTTP handler that actually returns a response.
 
@@ -525,35 +525,35 @@ options and returns a Promise.
 **On this page**
 
 - Table Of Contents
-  - [Constants](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#toc-constants)
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#toc-methods)
+  - [Constants](class-aws-handlerlist-toc-constants.md)
+  - [Methods](class-aws-handlerlist-toc-methods.md)
 - Constants
-  - [ATTEMPT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#constant_ATTEMPT)
-  - [BUILD](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#constant_BUILD)
-  - [INIT](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#constant_INIT)
-  - [SIGN](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#constant_SIGN)
-  - [VALIDATE](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#constant_VALIDATE)
+  - [ATTEMPT](class-aws-handlerlist-constant-attempt.md)
+  - [BUILD](class-aws-handlerlist-constant-build.md)
+  - [INIT](class-aws-handlerlist-constant-init.md)
+  - [SIGN](class-aws-handlerlist-constant-sign.md)
+  - [VALIDATE](class-aws-handlerlist-constant-validate.md)
 - Methods
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method___construct)
-  - [\_\_toString()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method___toString)
-  - [after()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_after)
-  - [appendAttempt()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_appendAttempt)
-  - [appendBuild()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_appendBuild)
-  - [appendInit()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_appendInit)
-  - [appendSign()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_appendSign)
-  - [appendValidate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_appendValidate)
-  - [before()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_before)
-  - [count()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_count)
-  - [hasHandler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_hasHandler)
-  - [hasMiddleware()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_hasMiddleware)
-  - [interpose()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_interpose)
-  - [prependAttempt()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_prependAttempt)
-  - [prependBuild()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_prependBuild)
-  - [prependInit()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_prependInit)
-  - [prependSign()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_prependSign)
-  - [prependValidate()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_prependValidate)
-  - [remove()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_remove)
-  - [resolve()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_resolve)
-  - [setHandler()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#method_setHandler)
+  - [\_\_construct()](class-aws-handlerlist-method-construct.md)
+  - [\_\_toString()](class-aws-handlerlist-method-tostring.md)
+  - [after()](class-aws-handlerlist-method-after.md)
+  - [appendAttempt()](class-aws-handlerlist-method-appendattempt.md)
+  - [appendBuild()](class-aws-handlerlist-method-appendbuild.md)
+  - [appendInit()](class-aws-handlerlist-method-appendinit.md)
+  - [appendSign()](class-aws-handlerlist-method-appendsign.md)
+  - [appendValidate()](class-aws-handlerlist-method-appendvalidate.md)
+  - [before()](class-aws-handlerlist-method-before.md)
+  - [count()](class-aws-handlerlist-method-count.md)
+  - [hasHandler()](class-aws-handlerlist-method-hashandler.md)
+  - [hasMiddleware()](class-aws-handlerlist-method-hasmiddleware.md)
+  - [interpose()](class-aws-handlerlist-method-interpose.md)
+  - [prependAttempt()](class-aws-handlerlist-method-prependattempt.md)
+  - [prependBuild()](class-aws-handlerlist-method-prependbuild.md)
+  - [prependInit()](class-aws-handlerlist-method-prependinit.md)
+  - [prependSign()](class-aws-handlerlist-method-prependsign.md)
+  - [prependValidate()](class-aws-handlerlist-method-prependvalidate.md)
+  - [remove()](class-aws-handlerlist-method-remove.md)
+  - [resolve()](class-aws-handlerlist-method-resolve.md)
+  - [setHandler()](class-aws-handlerlist-method-sethandler.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.HandlerList.html#top)
+[Back To Top](class-aws-handlerlist-top.md)

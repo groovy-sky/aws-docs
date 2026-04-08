@@ -69,7 +69,7 @@ reliable transport functionality that allows EFA interface to provide better app
 performance for HPC and ML applications on Amazon EC2. While the ENA device offers traditional
 IP networking.
 
-![Contrasting a traditional HPC software stack with one that uses an EFA.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/efa_stack.png)
+![Contrasting a traditional HPC software stack with one that uses an EFA.](../../../images/awsec2/latest/userguide/images/efa-stack-png.md)
 
 Traditionally, AI/ML applications use NCCL and NIXL (for disaggregated inference).
 HPC applications use the Message Passing Interface (MPI) to interface with the system's network

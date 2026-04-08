@@ -45,7 +45,7 @@ resources, use the command line interface or the API actions.
 2. Amazon EC2 resources are specific to an AWS Region. From the navigation bar,
     choose a Region from the **Regions** selector.
 
-![View your Regions](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/EC2_select_region.png)
+![View your Regions](../../../images/awsec2/latest/userguide/images/ec2-select-region-png.md)
 
 3. In the navigation pane, choose the option that corresponds to the resource type. For
     example, to list all your instances, choose **Instances**.
@@ -71,7 +71,7 @@ resources, use the command line interface or the API actions.
     and then choose **Apply**. Note that not all screens
     support editing the selected filter.
 
-![Edit a filter.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/filter-edit.png)
+![Edit a filter.](../../../images/awsec2/latest/userguide/images/filter-edit-png.md)
 
 7. When you are finished, remove the filter.
 
@@ -235,7 +235,7 @@ A list of possible operators for the selected attribute appears.
     **terminated**.
 
 To filter instances based on an instance state attribute, you can also use the search
-icons ( ![Search icon.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/search.png) ) in the **Instance**
+icons ( ![Search icon.](../../../images/awsec2/latest/userguide/images/search-png.md) ) in the **Instance**
 **state** column. The search icon with a plus sign (
 **+** ) displays all the instances that
 _match_ that attribute. The

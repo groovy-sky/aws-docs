@@ -8,7 +8,7 @@ The information for a change request.
 
 Information about the changes to make to the record sets.
 
-Type: Array of [Change](https://docs.aws.amazon.com/Route53/latest/APIReference/API_Change.html) objects
+Type: Array of [Change](api-change.md) objects
 
 Array Members: Minimum number of 1 item.
 
@@ -29,13 +29,13 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/route53-2013-04-01/ChangeBatch)
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53-2013-04-01/changebatch.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53-2013-04-01/ChangeBatch)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53-2013-04-01/changebatch.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53-2013-04-01/ChangeBatch)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53-2013-04-01/changebatch.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Change
 

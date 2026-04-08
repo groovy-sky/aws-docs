@@ -4,11 +4,11 @@ Menu
 
 ## Configuration
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.configuration.html\#toc)
+### Table of Contents  [header link](namespace-aws-configuration-toc.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.configuration.html\#toc-classes)
+#### Classes  [header link](namespace-aws-configuration-toc-classes.md)
 
-[ConfigurationResolver](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Configuration.ConfigurationResolver.html)
+[ConfigurationResolver](class-aws-configuration-configurationresolver.md)
 
 ```
 
@@ -19,6 +19,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.configuration.html#toc-classes)
+  - [Classes](namespace-aws-configuration-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.configuration.html#top)
+[Back To Top](namespace-aws-configuration-top.md)

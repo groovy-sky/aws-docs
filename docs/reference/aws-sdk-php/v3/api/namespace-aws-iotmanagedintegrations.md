@@ -4,15 +4,15 @@ Menu
 
 ## IoTManagedIntegrations
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotmanagedintegrations.html\#toc)
+### Table of Contents  [header link](namespace-aws-iotmanagedintegrations-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotmanagedintegrations.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-iotmanagedintegrations-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotmanagedintegrations.exception.html)
+[Exception](namespace-aws-iotmanagedintegrations-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotmanagedintegrations.html\#toc-classes)
+#### Classes  [header link](namespace-aws-iotmanagedintegrations-toc-classes.md)
 
-[IoTManagedIntegrationsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IoTManagedIntegrations.IoTManagedIntegrationsClient.html)This client is used to interact with the **Managed integrations for AWS IoT Device Management** service.
+[IoTManagedIntegrationsClient](class-aws-iotmanagedintegrations-iotmanagedintegrationsclient.md)This client is used to interact with the **Managed integrations for AWS IoT Device Management** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotmanagedintegrations.html#toc-classes)
+  - [Classes](namespace-aws-iotmanagedintegrations-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iotmanagedintegrations.html#top)
+[Back To Top](namespace-aws-iotmanagedintegrations-top.md)

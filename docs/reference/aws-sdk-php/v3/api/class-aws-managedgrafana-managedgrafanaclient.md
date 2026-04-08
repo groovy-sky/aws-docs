@@ -17,37 +17,37 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2020-08-18**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html)
+- [**2020-08-18**](api-grafana-2020-08-18.md)
 
-  - [AssociateLicense](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#associatelicense)
-  - [CreateWorkspace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#createworkspace)
-  - [CreateWorkspaceApiKey](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#createworkspaceapikey)
-  - [CreateWorkspaceServiceAccount](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#createworkspaceserviceaccount)
-  - [CreateWorkspaceServiceAccountToken](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#createworkspaceserviceaccounttoken)
-  - [DeleteWorkspace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#deleteworkspace)
-  - [DeleteWorkspaceApiKey](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#deleteworkspaceapikey)
-  - [DeleteWorkspaceServiceAccount](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#deleteworkspaceserviceaccount)
-  - [DeleteWorkspaceServiceAccountToken](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#deleteworkspaceserviceaccounttoken)
-  - [DescribeWorkspace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#describeworkspace)
-  - [DescribeWorkspaceAuthentication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#describeworkspaceauthentication)
-  - [DescribeWorkspaceConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#describeworkspaceconfiguration)
-  - [DisassociateLicense](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#disassociatelicense)
-  - [ListPermissions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#listpermissions)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#listtagsforresource)
-  - [ListVersions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#listversions)
-  - [ListWorkspaceServiceAccountTokens](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#listworkspaceserviceaccounttokens)
-  - [ListWorkspaceServiceAccounts](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#listworkspaceserviceaccounts)
-  - [ListWorkspaces](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#listworkspaces)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#untagresource)
-  - [UpdatePermissions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#updatepermissions)
-  - [UpdateWorkspace](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#updateworkspace)
-  - [UpdateWorkspaceAuthentication](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#updateworkspaceauthentication)
-  - [UpdateWorkspaceConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-grafana-2020-08-18.html#updateworkspaceconfiguration)
+  - [AssociateLicense](api-grafana-2020-08-18-associatelicense.md)
+  - [CreateWorkspace](api-grafana-2020-08-18-createworkspace.md)
+  - [CreateWorkspaceApiKey](api-grafana-2020-08-18-createworkspaceapikey.md)
+  - [CreateWorkspaceServiceAccount](api-grafana-2020-08-18-createworkspaceserviceaccount.md)
+  - [CreateWorkspaceServiceAccountToken](api-grafana-2020-08-18-createworkspaceserviceaccounttoken.md)
+  - [DeleteWorkspace](api-grafana-2020-08-18-deleteworkspace.md)
+  - [DeleteWorkspaceApiKey](api-grafana-2020-08-18-deleteworkspaceapikey.md)
+  - [DeleteWorkspaceServiceAccount](api-grafana-2020-08-18-deleteworkspaceserviceaccount.md)
+  - [DeleteWorkspaceServiceAccountToken](api-grafana-2020-08-18-deleteworkspaceserviceaccounttoken.md)
+  - [DescribeWorkspace](api-grafana-2020-08-18-describeworkspace.md)
+  - [DescribeWorkspaceAuthentication](api-grafana-2020-08-18-describeworkspaceauthentication.md)
+  - [DescribeWorkspaceConfiguration](api-grafana-2020-08-18-describeworkspaceconfiguration.md)
+  - [DisassociateLicense](api-grafana-2020-08-18-disassociatelicense.md)
+  - [ListPermissions](api-grafana-2020-08-18-listpermissions.md)
+  - [ListTagsForResource](api-grafana-2020-08-18-listtagsforresource.md)
+  - [ListVersions](api-grafana-2020-08-18-listversions.md)
+  - [ListWorkspaceServiceAccountTokens](api-grafana-2020-08-18-listworkspaceserviceaccounttokens.md)
+  - [ListWorkspaceServiceAccounts](api-grafana-2020-08-18-listworkspaceserviceaccounts.md)
+  - [ListWorkspaces](api-grafana-2020-08-18-listworkspaces.md)
+  - [TagResource](api-grafana-2020-08-18-tagresource.md)
+  - [UntagResource](api-grafana-2020-08-18-untagresource.md)
+  - [UpdatePermissions](api-grafana-2020-08-18-updatepermissions.md)
+  - [UpdateWorkspace](api-grafana-2020-08-18-updateworkspace.md)
+  - [UpdateWorkspaceAuthentication](api-grafana-2020-08-18-updateworkspaceauthentication.md)
+  - [UpdateWorkspaceConfiguration](api-grafana-2020-08-18-updateworkspaceconfiguration.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedGrafana.ManagedGrafanaClient.html\#toc)
+### Table of Contents  [header link](class-aws-managedgrafana-managedgrafanaclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedGrafana.ManagedGrafanaClient.html\#toc-methods)
+#### Methods  [header link](class-aws-managedgrafana-managedgrafanaclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -78,7 +78,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedGrafana.ManagedGrafanaClient.html\#methods)
+### Methods  [header link](class-aws-managedgrafana-managedgrafanaclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -545,7 +545,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedGrafana.ManagedGrafanaClient.html#toc-methods)
+  - [Methods](class-aws-managedgrafana-managedgrafanaclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -572,4 +572,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ManagedGrafana.ManagedGrafanaClient.html#top)
+[Back To Top](class-aws-managedgrafana-managedgrafanaclient-top.md)

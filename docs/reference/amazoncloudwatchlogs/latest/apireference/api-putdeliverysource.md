@@ -12,12 +12,12 @@ object that represents the resource that is actually sending the logs.
 
 - Use `PutDeliveryDestination` to create a _delivery_
 _destination_, which is a logical object that represents the actual delivery
-destination. For more information, see [PutDeliveryDestination](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliveryDestination.html).
+destination. For more information, see [PutDeliveryDestination](api-putdeliverydestination.md).
 
-- If you are delivering logs cross-account, you must use [PutDeliveryDestinationPolicy](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliveryDestinationPolicy.html) in the destination account to assign an IAM policy to the destination. This policy allows delivery to that destination.
+- If you are delivering logs cross-account, you must use [PutDeliveryDestinationPolicy](api-putdeliverydestinationpolicy.md) in the destination account to assign an IAM policy to the destination. This policy allows delivery to that destination.
 
 - Use `CreateDelivery` to create a _delivery_ by pairing
-exactly one delivery source and one delivery destination. For more information, see [CreateDelivery](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateDelivery.html).
+exactly one delivery source and one delivery destination. For more information, see [CreateDelivery](api-createdelivery.md).
 
 You can configure a single delivery source to send logs to multiple destinations by
 creating multiple deliveries. You can also create multiple deliveries to configure multiple
@@ -167,7 +167,7 @@ Required: Yes
 
 An optional list of key-value pairs to associate with the resource.
 
-For more information about tagging, see [Tagging AWS resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html)
+For more information about tagging, see [Tagging AWS resources](../../../../general/general/latest/gr/aws-tagging.md)
 
 Type: String to string map
 
@@ -212,7 +212,7 @@ The following data is returned in JSON format by the service.
 A structure containing information about the delivery source that was just created or
 updated.
 
-Type: [DeliverySource](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DeliverySource.html) object
+Type: [DeliverySource](api-deliverysource.md) object
 
 ## Errors
 
@@ -258,27 +258,27 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/logs-2014-03-28/PutDeliverySource)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/logs-2014-03-28/putdeliverysource.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/logs-2014-03-28/PutDeliverySource)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/logs-2014-03-28/putdeliverysource.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/PutDeliverySource)
+- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/putdeliverysource.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/logs-2014-03-28/PutDeliverySource)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/logs-2014-03-28/putdeliverysource.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/PutDeliverySource)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/putdeliverysource.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/logs-2014-03-28/PutDeliverySource)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/logs-2014-03-28/putdeliverysource.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/logs-2014-03-28/PutDeliverySource)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/logs-2014-03-28/putdeliverysource.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/logs-2014-03-28/PutDeliverySource)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/logs-2014-03-28/putdeliverysource.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/logs-2014-03-28/PutDeliverySource)
+- [AWS SDK for Python](../../../../services/goto/boto3/logs-2014-03-28/putdeliverysource.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/logs-2014-03-28/PutDeliverySource)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/putdeliverysource.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 PutDeliveryDestinationPolicy
 

@@ -60,7 +60,7 @@ Required: No
 
 The default S3 destination bucket for storing evidence finder exports.
 
-Type: [DefaultExportDestination](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_DefaultExportDestination.html) object
+Type: [DefaultExportDestination](api-defaultexportdestination.md) object
 
 Required: No
 
@@ -77,7 +77,7 @@ Required: No
 The deregistration policy for your Audit Manager data. You can
 use this attribute to determine how your data is handled when you deregister Audit Manager.
 
-Type: [DeregistrationPolicy](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_DeregistrationPolicy.html) object
+Type: [DeregistrationPolicy](api-deregistrationpolicy.md) object
 
 Required: No
 
@@ -90,7 +90,7 @@ enable or disable evidence finder.
 
 When you use this attribute to disable evidence finder, Audit Manager deletes the
 event data store that’s used to query your evidence data. As a result, you can’t
-re-enable evidence finder and use the feature again. Your only alternative is to [deregister](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_DeregisterAccount.html) and then [re-register](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_RegisterAccount.html)
+re-enable evidence finder and use the feature again. Your only alternative is to [deregister](api-deregisteraccount.md) and then [re-register](api-registeraccount.md)
 Audit Manager.
 
 Type: Boolean
@@ -171,7 +171,7 @@ The following data is returned in JSON format by the service.
 
 The current list of settings.
 
-Type: [Settings](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Settings.html) object
+Type: [Settings](api-settings.md) object
 
 ## Errors
 
@@ -256,27 +256,27 @@ hasn’t started yet.
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/auditmanager-2017-07-25/UpdateSettings)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/auditmanager-2017-07-25/updatesettings.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/auditmanager-2017-07-25/UpdateSettings)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/auditmanager-2017-07-25/updatesettings.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/auditmanager-2017-07-25/UpdateSettings)
+- [AWS SDK for C++](../../../goto/sdkforcpp/auditmanager-2017-07-25/updatesettings.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/auditmanager-2017-07-25/UpdateSettings)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/auditmanager-2017-07-25/updatesettings.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/auditmanager-2017-07-25/UpdateSettings)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/auditmanager-2017-07-25/updatesettings.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/auditmanager-2017-07-25/UpdateSettings)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/auditmanager-2017-07-25/updatesettings.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/auditmanager-2017-07-25/UpdateSettings)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/auditmanager-2017-07-25/updatesettings.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/auditmanager-2017-07-25/UpdateSettings)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/auditmanager-2017-07-25/updatesettings.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/auditmanager-2017-07-25/UpdateSettings)
+- [AWS SDK for Python](../../../../services/goto/boto3/auditmanager-2017-07-25/updatesettings.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/auditmanager-2017-07-25/UpdateSettings)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/auditmanager-2017-07-25/updatesettings.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 UpdateControl
 

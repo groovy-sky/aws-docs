@@ -5,7 +5,7 @@ to its termination.
 
 The following illustration represents the transitions between instance states.
 
-![The instance lifecycle.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/instance_lifecycle.png)
+![The instance lifecycle.](../../../images/awsec2/latest/userguide/images/instance-lifecycle-png.md)
 
 You can receive notifications when your instances change states. For more information, see
 [State change events for Amazon EC2 instances](monitoring-instance-state-changes.md).

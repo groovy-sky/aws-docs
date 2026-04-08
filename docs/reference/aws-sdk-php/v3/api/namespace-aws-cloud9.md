@@ -4,15 +4,15 @@ Menu
 
 ## Cloud9
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloud9.html\#toc)
+### Table of Contents  [header link](namespace-aws-cloud9-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloud9.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-cloud9-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloud9.exception.html)
+[Exception](namespace-aws-cloud9-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloud9.html\#toc-classes)
+#### Classes  [header link](namespace-aws-cloud9-toc-classes.md)
 
-[Cloud9Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Cloud9.Cloud9Client.html)This client is used to interact with the **AWS Cloud9** service.
+[Cloud9Client](class-aws-cloud9-cloud9client.md)This client is used to interact with the **AWS Cloud9** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloud9.html#toc-classes)
+  - [Classes](namespace-aws-cloud9-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloud9.html#top)
+[Back To Top](namespace-aws-cloud9-top.md)

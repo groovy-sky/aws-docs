@@ -17,38 +17,38 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2020-12-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html)
+- [**2020-12-01**](api-fis-2020-12-01.md)
 
-  - [CreateExperimentTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#createexperimenttemplate)
-  - [CreateTargetAccountConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#createtargetaccountconfiguration)
-  - [DeleteExperimentTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#deleteexperimenttemplate)
-  - [DeleteTargetAccountConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#deletetargetaccountconfiguration)
-  - [GetAction](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#getaction)
-  - [GetExperiment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#getexperiment)
-  - [GetExperimentTargetAccountConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#getexperimenttargetaccountconfiguration)
-  - [GetExperimentTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#getexperimenttemplate)
-  - [GetSafetyLever](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#getsafetylever)
-  - [GetTargetAccountConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#gettargetaccountconfiguration)
-  - [GetTargetResourceType](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#gettargetresourcetype)
-  - [ListActions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#listactions)
-  - [ListExperimentResolvedTargets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#listexperimentresolvedtargets)
-  - [ListExperimentTargetAccountConfigurations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#listexperimenttargetaccountconfigurations)
-  - [ListExperimentTemplates](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#listexperimenttemplates)
-  - [ListExperiments](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#listexperiments)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#listtagsforresource)
-  - [ListTargetAccountConfigurations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#listtargetaccountconfigurations)
-  - [ListTargetResourceTypes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#listtargetresourcetypes)
-  - [StartExperiment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#startexperiment)
-  - [StopExperiment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#stopexperiment)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#untagresource)
-  - [UpdateExperimentTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#updateexperimenttemplate)
-  - [UpdateSafetyLeverState](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#updatesafetyleverstate)
-  - [UpdateTargetAccountConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-fis-2020-12-01.html#updatetargetaccountconfiguration)
+  - [CreateExperimentTemplate](api-fis-2020-12-01-createexperimenttemplate.md)
+  - [CreateTargetAccountConfiguration](api-fis-2020-12-01-createtargetaccountconfiguration.md)
+  - [DeleteExperimentTemplate](api-fis-2020-12-01-deleteexperimenttemplate.md)
+  - [DeleteTargetAccountConfiguration](api-fis-2020-12-01-deletetargetaccountconfiguration.md)
+  - [GetAction](api-fis-2020-12-01-getaction.md)
+  - [GetExperiment](api-fis-2020-12-01-getexperiment.md)
+  - [GetExperimentTargetAccountConfiguration](api-fis-2020-12-01-getexperimenttargetaccountconfiguration.md)
+  - [GetExperimentTemplate](api-fis-2020-12-01-getexperimenttemplate.md)
+  - [GetSafetyLever](api-fis-2020-12-01-getsafetylever.md)
+  - [GetTargetAccountConfiguration](api-fis-2020-12-01-gettargetaccountconfiguration.md)
+  - [GetTargetResourceType](api-fis-2020-12-01-gettargetresourcetype.md)
+  - [ListActions](api-fis-2020-12-01-listactions.md)
+  - [ListExperimentResolvedTargets](api-fis-2020-12-01-listexperimentresolvedtargets.md)
+  - [ListExperimentTargetAccountConfigurations](api-fis-2020-12-01-listexperimenttargetaccountconfigurations.md)
+  - [ListExperimentTemplates](api-fis-2020-12-01-listexperimenttemplates.md)
+  - [ListExperiments](api-fis-2020-12-01-listexperiments.md)
+  - [ListTagsForResource](api-fis-2020-12-01-listtagsforresource.md)
+  - [ListTargetAccountConfigurations](api-fis-2020-12-01-listtargetaccountconfigurations.md)
+  - [ListTargetResourceTypes](api-fis-2020-12-01-listtargetresourcetypes.md)
+  - [StartExperiment](api-fis-2020-12-01-startexperiment.md)
+  - [StopExperiment](api-fis-2020-12-01-stopexperiment.md)
+  - [TagResource](api-fis-2020-12-01-tagresource.md)
+  - [UntagResource](api-fis-2020-12-01-untagresource.md)
+  - [UpdateExperimentTemplate](api-fis-2020-12-01-updateexperimenttemplate.md)
+  - [UpdateSafetyLeverState](api-fis-2020-12-01-updatesafetyleverstate.md)
+  - [UpdateTargetAccountConfiguration](api-fis-2020-12-01-updatetargetaccountconfiguration.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FIS.FISClient.html\#toc)
+### Table of Contents  [header link](class-aws-fis-fisclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FIS.FISClient.html\#toc-methods)
+#### Methods  [header link](class-aws-fis-fisclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -79,7 +79,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FIS.FISClient.html\#methods)
+### Methods  [header link](class-aws-fis-fisclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -546,7 +546,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FIS.FISClient.html#toc-methods)
+  - [Methods](class-aws-fis-fisclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -573,4 +573,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.FIS.FISClient.html#top)
+[Back To Top](class-aws-fis-fisclient-top.md)

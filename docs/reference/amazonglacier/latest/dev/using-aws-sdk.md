@@ -18,16 +18,16 @@ objects that you can use to easily construct requests and process responses.
 
 - [AWS SDK Libraries for Java and .NET](#java-.net-sdk-libraries)
 
-- [Using Amazon Glacier with an AWS SDK](https://docs.aws.amazon.com/amazonglacier/latest/dev/sdk-general-information-section.html)
+- [Using Amazon Glacier with an AWS SDK](sdk-general-information-section.md)
 
-- [Using the AWS SDK for Java with Amazon Glacier](https://docs.aws.amazon.com/amazonglacier/latest/dev/using-aws-sdk-for-java.html)
+- [Using the AWS SDK for Java with Amazon Glacier](using-aws-sdk-for-java.md)
 
-- [Using the AWS SDK for .NET with Amazon Glacier](https://docs.aws.amazon.com/amazonglacier/latest/dev/using-aws-sdk-for-dot-net.html)
+- [Using the AWS SDK for .NET with Amazon Glacier](using-aws-sdk-for-dot-net.md)
 
 The AWS Command Line Interface (AWS CLI) is a unified tool to manage your AWS services, including
 Amazon Glacier. For information about downloading the AWS CLI, see [AWS Command Line Interface](https://aws.amazon.com/cli). For a list of the Amazon Glacier CLI commands,
 see the [AWS CLI Command\
-Reference](https://docs.aws.amazon.com/cli/latest/reference/glacier/index.html).
+Reference](../../../../services/cli/latest/reference/glacier/index.md).
 
 ## AWS SDK Libraries for Java and .NET
 
@@ -38,15 +38,15 @@ AWS SDK for .NET throughout this developer guide.
 
 ### What Is the Low-Level API?
 
-The low-level wrapper libraries map closely the underlying REST API ( [API Reference for Amazon Glacier](https://docs.aws.amazon.com/amazonglacier/latest/dev/amazon-glacier-api.html)) supported by
+The low-level wrapper libraries map closely the underlying REST API ( [API Reference for Amazon Glacier](../../../../services/amazonglacier/latest/dev/amazon-glacier-api.md)) supported by
 Amazon Glacier. For each Amazon Glacier REST operations, the low-level API provides a
 corresponding method, a request object for you to provide request information and a
 response object for you to process Amazon Glacier response. The low-level wrapper
 libraries are the most complete implementation of the underlying Amazon Glacier
 operations.
 
-For information about these SDK libraries, see [Using the AWS SDK for Java with Amazon Glacier](https://docs.aws.amazon.com/amazonglacier/latest/dev/using-aws-sdk-for-java.html) and
-[Using the AWS SDK for .NET with Amazon Glacier](https://docs.aws.amazon.com/amazonglacier/latest/dev/using-aws-sdk-for-dot-net.html).
+For information about these SDK libraries, see [Using the AWS SDK for Java with Amazon Glacier](using-aws-sdk-for-java.md) and
+[Using the AWS SDK for .NET with Amazon Glacier](using-aws-sdk-for-dot-net.md).
 
 ### What Is the High-Level API?
 
@@ -68,8 +68,8 @@ topic. The high-level API provides a method to download an archive that
 takes care of all these steps. You only specify an archive ID and a folder path
 where you want to save the downloaded data.
 
-For information about these SDK libraries, see [Using the AWS SDK for Java with Amazon Glacier](https://docs.aws.amazon.com/amazonglacier/latest/dev/using-aws-sdk-for-java.html) and
-[Using the AWS SDK for .NET with Amazon Glacier](https://docs.aws.amazon.com/amazonglacier/latest/dev/using-aws-sdk-for-dot-net.html).
+For information about these SDK libraries, see [Using the AWS SDK for Java with Amazon Glacier](using-aws-sdk-for-java.md) and
+[Using the AWS SDK for .NET with Amazon Glacier](using-aws-sdk-for-dot-net.md).
 
 ### When to Use the High-Level and Low-Level API
 
@@ -83,7 +83,7 @@ or use the multipart upload API. The API also has built-in retry logic in case a
 fails. However, your application might need granular control over these decisions, in
 which case you can use the low-level API.
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 Deleting an Archive Using the AWS CLI
 

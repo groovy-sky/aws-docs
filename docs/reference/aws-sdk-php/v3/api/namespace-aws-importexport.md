@@ -4,15 +4,15 @@ Menu
 
 ## ImportExport
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.importexport.html\#toc)
+### Table of Contents  [header link](namespace-aws-importexport-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.importexport.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-importexport-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.importexport.exception.html)
+[Exception](namespace-aws-importexport-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.importexport.html\#toc-classes)
+#### Classes  [header link](namespace-aws-importexport-toc-classes.md)
 
-[ImportExportClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ImportExport.ImportExportClient.html)This client is used to interact with the **AWS Import/Export** service.
+[ImportExportClient](class-aws-importexport-importexportclient.md)This client is used to interact with the **AWS Import/Export** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.importexport.html#toc-classes)
+  - [Classes](namespace-aws-importexport-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.importexport.html#top)
+[Back To Top](namespace-aws-importexport-top.md)

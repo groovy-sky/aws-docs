@@ -4,15 +4,15 @@ Menu
 
 ## Sqs
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sqs.html\#toc)
+### Table of Contents  [header link](namespace-aws-sqs-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sqs.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-sqs-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sqs.exception.html)
+[Exception](namespace-aws-sqs-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sqs.html\#toc-classes)
+#### Classes  [header link](namespace-aws-sqs-toc-classes.md)
 
-[SqsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sqs.SqsClient.html)Client used to interact with \*\*Amazon Simple Queue Service (Amazon SQS)\*\*.
+[SqsClient](class-aws-sqs-sqsclient.md)Client used to interact with \*\*Amazon Simple Queue Service (Amazon SQS)\*\*.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sqs.html#toc-classes)
+  - [Classes](namespace-aws-sqs-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.sqs.html#top)
+[Back To Top](namespace-aws-sqs-top.md)

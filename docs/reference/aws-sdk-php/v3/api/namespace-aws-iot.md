@@ -4,15 +4,15 @@ Menu
 
 ## Iot
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iot.html\#toc)
+### Table of Contents  [header link](namespace-aws-iot-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iot.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-iot-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iot.exception.html)
+[Exception](namespace-aws-iot-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iot.html\#toc-classes)
+#### Classes  [header link](namespace-aws-iot-toc-classes.md)
 
-[IotClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Iot.IotClient.html)This client is used to interact with the **AWS IoT** service.
+[IotClient](class-aws-iot-iotclient.md)This client is used to interact with the **AWS IoT** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iot.html#toc-classes)
+  - [Classes](namespace-aws-iot-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.iot.html#top)
+[Back To Top](namespace-aws-iot-top.md)

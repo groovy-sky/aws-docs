@@ -4,15 +4,15 @@ Menu
 
 ## GuardDuty
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.guardduty.html\#toc)
+### Table of Contents  [header link](namespace-aws-guardduty-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.guardduty.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-guardduty-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.guardduty.exception.html)
+[Exception](namespace-aws-guardduty-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.guardduty.html\#toc-classes)
+#### Classes  [header link](namespace-aws-guardduty-toc-classes.md)
 
-[GuardDutyClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GuardDuty.GuardDutyClient.html)This client is used to interact with the **Amazon GuardDuty** service.
+[GuardDutyClient](class-aws-guardduty-guarddutyclient.md)This client is used to interact with the **Amazon GuardDuty** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.guardduty.html#toc-classes)
+  - [Classes](namespace-aws-guardduty-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.guardduty.html#top)
+[Back To Top](namespace-aws-guardduty-top.md)

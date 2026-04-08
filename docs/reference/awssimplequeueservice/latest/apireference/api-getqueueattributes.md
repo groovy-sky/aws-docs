@@ -4,7 +4,7 @@ Gets attributes for the specified queue.
 
 ###### Note
 
-To determine whether a queue is [FIFO](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues.html), you can check whether `QueueName` ends with the `.fifo` suffix.
+To determine whether a queue is [FIFO](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/fifo-queues.md), you can check whether `QueueName` ends with the `.fifo` suffix.
 
 ## Request Syntax
 
@@ -18,7 +18,7 @@ To determine whether a queue is [FIFO](https://docs.aws.amazon.com/AWSSimpleQueu
 
 ## Request Parameters
 
-For information about the parameters that are common to all actions, see [Common Parameters](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/CommonParameters.html).
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
 
 The request accepts the following data in JSON format.
 
@@ -147,15 +147,15 @@ queue is using SSE-SQS encryption using SQS owned encryption keys. Only one
 server-side encryption option is supported per queue (for example, [SSE-KMS](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/sqs-configure-sse-existing-queue.md) or [SSE-SQS](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/sqs-configure-sqs-sse-queue.md)).
 
 The following attributes apply only to [FIFO (first-in-first-out)\
-queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues.html):
+queues](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/fifo-queues.md):
 
 - `FifoQueue` – Returns information about whether the queue is
-FIFO. For more information, see [FIFO queue logic](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues-understanding-logic.html) in the _Amazon SQS Developer_
+FIFO. For more information, see [FIFO queue logic](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/fifo-queues-understanding-logic.md) in the _Amazon SQS Developer_
 _Guide_.
 
 ###### Note
 
-To determine whether a queue is [FIFO](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues.html), you can check whether `QueueName` ends with the `.fifo` suffix.
+To determine whether a queue is [FIFO](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/fifo-queues.md), you can check whether `QueueName` ends with the `.fifo` suffix.
 
 - `ContentBasedDeduplication` – Returns whether content-based
 deduplication is enabled for the queue. For more information, see [Exactly-once processing](../../../../services/awssimplequeueservice/latest/sqsdeveloperguide/fifo-queues-exactly-once-processing.md) in the _Amazon SQS Developer_
@@ -228,7 +228,7 @@ Valid Keys: `All | Policy | VisibilityTimeout | MaximumMessageSize | MessageRete
 
 ## Errors
 
-For information about the errors that are common to all actions, see [Common Errors](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/CommonErrors.html).
+For information about the errors that are common to all actions, see [Common Errors](commonerrors.md).
 
 **InvalidAddress**
 
@@ -278,7 +278,7 @@ HTTP Status Code: 400
 
 The following example query request gets all the attribute values for the
 specified queue. The structure of `AUTHPARAMS` depends on the signature of the API request.
-For more information, see [Examples of Signed Signature Version 4 Requests](https://docs.aws.amazon.com/general/latest/gr/sigv4-signed-request-examples.html) in the _AWS General Reference_.
+For more information, see [Examples of Signed Signature Version 4 Requests](../../../../general/general/latest/gr/sigv4-signed-request-examples.md) in the _AWS General Reference_.
 
 ### Example
 
@@ -419,7 +419,7 @@ HTTP/1.1 200 OK
 
 The following example query request gets three attribute values for the
 specified queue. The structure of `AUTHPARAMS` depends on the signature of the API request.
-For more information, see [Examples of Signed Signature Version 4 Requests](https://docs.aws.amazon.com/general/latest/gr/sigv4-signed-request-examples.html) in the _AWS General Reference_.
+For more information, see [Examples of Signed Signature Version 4 Requests](../../../../general/general/latest/gr/sigv4-signed-request-examples.md) in the _AWS General Reference_.
 
 **Using AWS JSON protocol**
 **(Default)**
@@ -513,27 +513,27 @@ HTTP/1.1 200 OK
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/sqs-2012-11-05/GetQueueAttributes)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/sqs-2012-11-05/getqueueattributes.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/sqs-2012-11-05/GetQueueAttributes)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/sqs-2012-11-05/getqueueattributes.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/sqs-2012-11-05/GetQueueAttributes)
+- [AWS SDK for C++](../../../goto/sdkforcpp/sqs-2012-11-05/getqueueattributes.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/sqs-2012-11-05/GetQueueAttributes)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/sqs-2012-11-05/getqueueattributes.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sqs-2012-11-05/GetQueueAttributes)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/sqs-2012-11-05/getqueueattributes.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/sqs-2012-11-05/GetQueueAttributes)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/sqs-2012-11-05/getqueueattributes.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/sqs-2012-11-05/GetQueueAttributes)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/sqs-2012-11-05/getqueueattributes.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/sqs-2012-11-05/GetQueueAttributes)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/sqs-2012-11-05/getqueueattributes.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/sqs-2012-11-05/GetQueueAttributes)
+- [AWS SDK for Python](../../../../services/goto/boto3/sqs-2012-11-05/getqueueattributes.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sqs-2012-11-05/GetQueueAttributes)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/sqs-2012-11-05/getqueueattributes.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DeleteQueue
 

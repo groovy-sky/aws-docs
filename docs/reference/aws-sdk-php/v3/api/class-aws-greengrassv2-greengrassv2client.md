@@ -17,41 +17,41 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2020-11-30**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html)
+- [**2020-11-30**](api-greengrassv2-2020-11-30.md)
 
-  - [AssociateServiceRoleToAccount](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#associateserviceroletoaccount)
-  - [BatchAssociateClientDeviceWithCoreDevice](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#batchassociateclientdevicewithcoredevice)
-  - [BatchDisassociateClientDeviceFromCoreDevice](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#batchdisassociateclientdevicefromcoredevice)
-  - [CancelDeployment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#canceldeployment)
-  - [CreateComponentVersion](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#createcomponentversion)
-  - [CreateDeployment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#createdeployment)
-  - [DeleteComponent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#deletecomponent)
-  - [DeleteCoreDevice](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#deletecoredevice)
-  - [DeleteDeployment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#deletedeployment)
-  - [DescribeComponent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#describecomponent)
-  - [DisassociateServiceRoleFromAccount](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#disassociateservicerolefromaccount)
-  - [GetComponent](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#getcomponent)
-  - [GetComponentVersionArtifact](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#getcomponentversionartifact)
-  - [GetConnectivityInfo](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#getconnectivityinfo)
-  - [GetCoreDevice](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#getcoredevice)
-  - [GetDeployment](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#getdeployment)
-  - [GetServiceRoleForAccount](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#getserviceroleforaccount)
-  - [ListClientDevicesAssociatedWithCoreDevice](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#listclientdevicesassociatedwithcoredevice)
-  - [ListComponentVersions](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#listcomponentversions)
-  - [ListComponents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#listcomponents)
-  - [ListCoreDevices](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#listcoredevices)
-  - [ListDeployments](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#listdeployments)
-  - [ListEffectiveDeployments](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#listeffectivedeployments)
-  - [ListInstalledComponents](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#listinstalledcomponents)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#listtagsforresource)
-  - [ResolveComponentCandidates](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#resolvecomponentcandidates)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#untagresource)
-  - [UpdateConnectivityInfo](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-greengrassv2-2020-11-30.html#updateconnectivityinfo)
+  - [AssociateServiceRoleToAccount](api-greengrassv2-2020-11-30-associateserviceroletoaccount.md)
+  - [BatchAssociateClientDeviceWithCoreDevice](api-greengrassv2-2020-11-30-batchassociateclientdevicewithcoredevice.md)
+  - [BatchDisassociateClientDeviceFromCoreDevice](api-greengrassv2-2020-11-30-batchdisassociateclientdevicefromcoredevice.md)
+  - [CancelDeployment](api-greengrassv2-2020-11-30-canceldeployment.md)
+  - [CreateComponentVersion](api-greengrassv2-2020-11-30-createcomponentversion.md)
+  - [CreateDeployment](api-greengrassv2-2020-11-30-createdeployment.md)
+  - [DeleteComponent](api-greengrassv2-2020-11-30-deletecomponent.md)
+  - [DeleteCoreDevice](api-greengrassv2-2020-11-30-deletecoredevice.md)
+  - [DeleteDeployment](api-greengrassv2-2020-11-30-deletedeployment.md)
+  - [DescribeComponent](api-greengrassv2-2020-11-30-describecomponent.md)
+  - [DisassociateServiceRoleFromAccount](api-greengrassv2-2020-11-30-disassociateservicerolefromaccount.md)
+  - [GetComponent](api-greengrassv2-2020-11-30-getcomponent.md)
+  - [GetComponentVersionArtifact](api-greengrassv2-2020-11-30-getcomponentversionartifact.md)
+  - [GetConnectivityInfo](api-greengrassv2-2020-11-30-getconnectivityinfo.md)
+  - [GetCoreDevice](api-greengrassv2-2020-11-30-getcoredevice.md)
+  - [GetDeployment](api-greengrassv2-2020-11-30-getdeployment.md)
+  - [GetServiceRoleForAccount](api-greengrassv2-2020-11-30-getserviceroleforaccount.md)
+  - [ListClientDevicesAssociatedWithCoreDevice](api-greengrassv2-2020-11-30-listclientdevicesassociatedwithcoredevice.md)
+  - [ListComponentVersions](api-greengrassv2-2020-11-30-listcomponentversions.md)
+  - [ListComponents](api-greengrassv2-2020-11-30-listcomponents.md)
+  - [ListCoreDevices](api-greengrassv2-2020-11-30-listcoredevices.md)
+  - [ListDeployments](api-greengrassv2-2020-11-30-listdeployments.md)
+  - [ListEffectiveDeployments](api-greengrassv2-2020-11-30-listeffectivedeployments.md)
+  - [ListInstalledComponents](api-greengrassv2-2020-11-30-listinstalledcomponents.md)
+  - [ListTagsForResource](api-greengrassv2-2020-11-30-listtagsforresource.md)
+  - [ResolveComponentCandidates](api-greengrassv2-2020-11-30-resolvecomponentcandidates.md)
+  - [TagResource](api-greengrassv2-2020-11-30-tagresource.md)
+  - [UntagResource](api-greengrassv2-2020-11-30-untagresource.md)
+  - [UpdateConnectivityInfo](api-greengrassv2-2020-11-30-updateconnectivityinfo.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GreengrassV2.GreengrassV2Client.html\#toc)
+### Table of Contents  [header link](class-aws-greengrassv2-greengrassv2client-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GreengrassV2.GreengrassV2Client.html\#toc-methods)
+#### Methods  [header link](class-aws-greengrassv2-greengrassv2client-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -82,7 +82,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GreengrassV2.GreengrassV2Client.html\#methods)
+### Methods  [header link](class-aws-greengrassv2-greengrassv2client-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -549,7 +549,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GreengrassV2.GreengrassV2Client.html#toc-methods)
+  - [Methods](class-aws-greengrassv2-greengrassv2client-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -576,4 +576,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.GreengrassV2.GreengrassV2Client.html#top)
+[Back To Top](class-aws-greengrassv2-greengrassv2client-top.md)

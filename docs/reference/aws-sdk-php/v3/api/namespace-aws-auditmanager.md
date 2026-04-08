@@ -4,15 +4,15 @@ Menu
 
 ## AuditManager
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.auditmanager.html\#toc)
+### Table of Contents  [header link](namespace-aws-auditmanager-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.auditmanager.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-auditmanager-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.auditmanager.exception.html)
+[Exception](namespace-aws-auditmanager-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.auditmanager.html\#toc-classes)
+#### Classes  [header link](namespace-aws-auditmanager-toc-classes.md)
 
-[AuditManagerClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AuditManager.AuditManagerClient.html)This client is used to interact with the **AWS Audit Manager** service.
+[AuditManagerClient](class-aws-auditmanager-auditmanagerclient.md)This client is used to interact with the **AWS Audit Manager** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.auditmanager.html#toc-classes)
+  - [Classes](namespace-aws-auditmanager-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.auditmanager.html#top)
+[Back To Top](namespace-aws-auditmanager-top.md)

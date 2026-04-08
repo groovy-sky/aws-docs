@@ -4,15 +4,15 @@ Menu
 
 ## PaymentCryptographyData
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.paymentcryptographydata.html\#toc)
+### Table of Contents  [header link](namespace-aws-paymentcryptographydata-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.paymentcryptographydata.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-paymentcryptographydata-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.paymentcryptographydata.exception.html)
+[Exception](namespace-aws-paymentcryptographydata-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.paymentcryptographydata.html\#toc-classes)
+#### Classes  [header link](namespace-aws-paymentcryptographydata-toc-classes.md)
 
-[PaymentCryptographyDataClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.PaymentCryptographyData.PaymentCryptographyDataClient.html)This client is used to interact with the **Payment Cryptography Data Plane** service.
+[PaymentCryptographyDataClient](class-aws-paymentcryptographydata-paymentcryptographydataclient.md)This client is used to interact with the **Payment Cryptography Data Plane** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.paymentcryptographydata.html#toc-classes)
+  - [Classes](namespace-aws-paymentcryptographydata-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.paymentcryptographydata.html#top)
+[Back To Top](namespace-aws-paymentcryptographydata-top.md)

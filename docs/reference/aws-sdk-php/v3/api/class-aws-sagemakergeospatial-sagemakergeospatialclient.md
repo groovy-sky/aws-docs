@@ -17,31 +17,31 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2020-05-27**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-geospatial-2020-05-27.html)
+- [**2020-05-27**](api-sagemaker-geospatial-2020-05-27.md)
 
-  - [DeleteEarthObservationJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-geospatial-2020-05-27.html#deleteearthobservationjob)
-  - [DeleteVectorEnrichmentJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-geospatial-2020-05-27.html#deletevectorenrichmentjob)
-  - [ExportEarthObservationJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-geospatial-2020-05-27.html#exportearthobservationjob)
-  - [ExportVectorEnrichmentJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-geospatial-2020-05-27.html#exportvectorenrichmentjob)
-  - [GetEarthObservationJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-geospatial-2020-05-27.html#getearthobservationjob)
-  - [GetRasterDataCollection](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-geospatial-2020-05-27.html#getrasterdatacollection)
-  - [GetTile](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-geospatial-2020-05-27.html#gettile)
-  - [GetVectorEnrichmentJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-geospatial-2020-05-27.html#getvectorenrichmentjob)
-  - [ListEarthObservationJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-geospatial-2020-05-27.html#listearthobservationjobs)
-  - [ListRasterDataCollections](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-geospatial-2020-05-27.html#listrasterdatacollections)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-geospatial-2020-05-27.html#listtagsforresource)
-  - [ListVectorEnrichmentJobs](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-geospatial-2020-05-27.html#listvectorenrichmentjobs)
-  - [SearchRasterDataCollection](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-geospatial-2020-05-27.html#searchrasterdatacollection)
-  - [StartEarthObservationJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-geospatial-2020-05-27.html#startearthobservationjob)
-  - [StartVectorEnrichmentJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-geospatial-2020-05-27.html#startvectorenrichmentjob)
-  - [StopEarthObservationJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-geospatial-2020-05-27.html#stopearthobservationjob)
-  - [StopVectorEnrichmentJob](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-geospatial-2020-05-27.html#stopvectorenrichmentjob)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-geospatial-2020-05-27.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sagemaker-geospatial-2020-05-27.html#untagresource)
+  - [DeleteEarthObservationJob](api-sagemaker-geospatial-2020-05-27-deleteearthobservationjob.md)
+  - [DeleteVectorEnrichmentJob](api-sagemaker-geospatial-2020-05-27-deletevectorenrichmentjob.md)
+  - [ExportEarthObservationJob](api-sagemaker-geospatial-2020-05-27-exportearthobservationjob.md)
+  - [ExportVectorEnrichmentJob](api-sagemaker-geospatial-2020-05-27-exportvectorenrichmentjob.md)
+  - [GetEarthObservationJob](api-sagemaker-geospatial-2020-05-27-getearthobservationjob.md)
+  - [GetRasterDataCollection](api-sagemaker-geospatial-2020-05-27-getrasterdatacollection.md)
+  - [GetTile](api-sagemaker-geospatial-2020-05-27-gettile.md)
+  - [GetVectorEnrichmentJob](api-sagemaker-geospatial-2020-05-27-getvectorenrichmentjob.md)
+  - [ListEarthObservationJobs](api-sagemaker-geospatial-2020-05-27-listearthobservationjobs.md)
+  - [ListRasterDataCollections](api-sagemaker-geospatial-2020-05-27-listrasterdatacollections.md)
+  - [ListTagsForResource](api-sagemaker-geospatial-2020-05-27-listtagsforresource.md)
+  - [ListVectorEnrichmentJobs](api-sagemaker-geospatial-2020-05-27-listvectorenrichmentjobs.md)
+  - [SearchRasterDataCollection](api-sagemaker-geospatial-2020-05-27-searchrasterdatacollection.md)
+  - [StartEarthObservationJob](api-sagemaker-geospatial-2020-05-27-startearthobservationjob.md)
+  - [StartVectorEnrichmentJob](api-sagemaker-geospatial-2020-05-27-startvectorenrichmentjob.md)
+  - [StopEarthObservationJob](api-sagemaker-geospatial-2020-05-27-stopearthobservationjob.md)
+  - [StopVectorEnrichmentJob](api-sagemaker-geospatial-2020-05-27-stopvectorenrichmentjob.md)
+  - [TagResource](api-sagemaker-geospatial-2020-05-27-tagresource.md)
+  - [UntagResource](api-sagemaker-geospatial-2020-05-27-untagresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMakerGeospatial.SageMakerGeospatialClient.html\#toc)
+### Table of Contents  [header link](class-aws-sagemakergeospatial-sagemakergeospatialclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMakerGeospatial.SageMakerGeospatialClient.html\#toc-methods)
+#### Methods  [header link](class-aws-sagemakergeospatial-sagemakergeospatialclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -72,7 +72,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMakerGeospatial.SageMakerGeospatialClient.html\#methods)
+### Methods  [header link](class-aws-sagemakergeospatial-sagemakergeospatialclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -539,7 +539,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMakerGeospatial.SageMakerGeospatialClient.html#toc-methods)
+  - [Methods](class-aws-sagemakergeospatial-sagemakergeospatialclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -566,4 +566,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.SageMakerGeospatial.SageMakerGeospatialClient.html#top)
+[Back To Top](class-aws-sagemakergeospatial-sagemakergeospatialclient-top.md)

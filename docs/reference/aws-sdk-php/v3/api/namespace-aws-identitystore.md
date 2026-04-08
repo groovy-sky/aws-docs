@@ -4,15 +4,15 @@ Menu
 
 ## IdentityStore
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.identitystore.html\#toc)
+### Table of Contents  [header link](namespace-aws-identitystore-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.identitystore.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-identitystore-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.identitystore.exception.html)
+[Exception](namespace-aws-identitystore-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.identitystore.html\#toc-classes)
+#### Classes  [header link](namespace-aws-identitystore-toc-classes.md)
 
-[IdentityStoreClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.IdentityStore.IdentityStoreClient.html)This client is used to interact with the **AWS SSO Identity Store** service.
+[IdentityStoreClient](class-aws-identitystore-identitystoreclient.md)This client is used to interact with the **AWS SSO Identity Store** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.identitystore.html#toc-classes)
+  - [Classes](namespace-aws-identitystore-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.identitystore.html#top)
+[Back To Top](namespace-aws-identitystore-top.md)

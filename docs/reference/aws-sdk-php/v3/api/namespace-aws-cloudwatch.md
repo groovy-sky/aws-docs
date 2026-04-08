@@ -4,15 +4,15 @@ Menu
 
 ## CloudWatch
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudwatch.html\#toc)
+### Table of Contents  [header link](namespace-aws-cloudwatch-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudwatch.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-cloudwatch-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudwatch.exception.html)
+[Exception](namespace-aws-cloudwatch-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudwatch.html\#toc-classes)
+#### Classes  [header link](namespace-aws-cloudwatch-toc-classes.md)
 
-[CloudWatchClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudWatch.CloudWatchClient.html)This client is used to interact with the **Amazon CloudWatch** service.
+[CloudWatchClient](class-aws-cloudwatch-cloudwatchclient.md)This client is used to interact with the **Amazon CloudWatch** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudwatch.html#toc-classes)
+  - [Classes](namespace-aws-cloudwatch-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.cloudwatch.html#top)
+[Back To Top](namespace-aws-cloudwatch-top.md)

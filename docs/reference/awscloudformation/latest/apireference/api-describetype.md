@@ -8,7 +8,7 @@ about that specific extension version. Otherwise, it returns information about t
 extension version.
 
 For more information, see [Edit configuration\
-data for extensions in your account](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/registry-set-configuration.html) in the
+data for extensions in your account](../../../../services/cloudformation/latest/userguide/registry-set-configuration.md) in the
 _AWS CloudFormation User Guide_.
 
 ## Request Parameters
@@ -119,7 +119,7 @@ Pattern: `arn:aws[A-Za-z0-9-]{0,64}:cloudformation:[A-Za-z0-9-]{1,64}:([0-9]{12}
 
 Whether CloudFormation automatically updates the extension in this account and Region when a
 new _minor_ version is published by the extension publisher. Major versions
-released by the publisher must be manually updated. For more information, see [Automatically use new versions of extensions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/registry-public.html#registry-public-enable-auto) in the
+released by the publisher must be manually updated. For more information, see [Automatically use new versions of extensions](../../../../services/cloudformation/latest/userguide/registry-public-registry-public-enable-auto.md) in the
 _AWS CloudFormation User Guide_.
 
 Type: Boolean
@@ -129,7 +129,7 @@ Type: Boolean
 A JSON string that represent the current configuration data for the extension in this
 account and Region.
 
-To set the configuration data for an extension, use [SetTypeConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetTypeConfiguration.html).
+To set the configuration data for an extension, use [SetTypeConfiguration](api-settypeconfiguration.md).
 
 Type: String
 
@@ -144,9 +144,9 @@ extension version isn't specified.
 
 This applies only to private extensions you have registered in your account. For public
 extensions, both those provided by AWS and published by third parties, CloudFormation returns
-`null`. For more information, see [RegisterType](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_RegisterType.html).
+`null`. For more information, see [RegisterType](api-registertype.md).
 
-To set the default version of an extension, use [SetTypeDefaultVersion](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetTypeDefaultVersion.html).
+To set the default version of an extension, use [SetTypeDefaultVersion](api-settypedefaultversion.md).
 
 Type: String
 
@@ -192,10 +192,10 @@ Length Constraints: Maximum length of 4096.
 
 The Amazon Resource Name (ARN) of the IAM execution role used to register the extension.
 This applies only to private extensions you have registered in your account. For more
-information, see [RegisterType](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_RegisterType.html).
+information, see [RegisterType](api-registertype.md).
 
 If the registered extension calls any AWS APIs, you must create an _[IAM execution\_
-_role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)_ that includes the necessary permissions to call those AWS APIs,
+_role](../../../../services/iam/latest/userguide/id-roles.md)_ that includes the necessary permissions to call those AWS APIs,
 and provision that execution role in your account. CloudFormation then assumes that execution role
 to provide your extension with the appropriate credentials.
 
@@ -229,10 +229,10 @@ Type: Boolean
 When the specified extension version was registered. This applies only to:
 
 - Private extensions you have registered in your account. For more information, see
-[RegisterType](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_RegisterType.html).
+[RegisterType](api-registertype.md).
 
 - Public extensions you have activated in your account with auto-update specified. For
-more information, see [ActivateType](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ActivateType.html).
+more information, see [ActivateType](api-activatetype.md).
 
 Type: Timestamp
 
@@ -255,9 +255,9 @@ Pattern: `^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(.*)$`
 Contains logging configuration information for private extensions. This applies only to
 private extensions you have registered in your account. For public extensions, both those
 provided by AWS and published by third parties, CloudFormation returns `null`. For
-more information, see [RegisterType](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_RegisterType.html).
+more information, see [RegisterType](api-registertype.md).
 
-Type: [LoggingConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_LoggingConfig.html) object
+Type: [LoggingConfig](api-loggingconfig.md) object
 
 **OriginalTypeArn**
 
@@ -277,7 +277,7 @@ of the public extension.
 
 If you specified a `TypeNameAlias` when enabling the extension in this account
 and Region, CloudFormation treats that alias as the extension's type name within the account and
-Region, not the type name of the public extension. For more information, see [Use aliases to refer to extensions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/registry-public.html#registry-public-enable-alias) in the
+Region, not the type name of the public extension. For more information, see [Use aliases to refer to extensions](../../../../services/cloudformation/latest/userguide/registry-public-registry-public-enable-alias.md) in the
 _AWS CloudFormation User Guide_.
 
 Type: String
@@ -345,14 +345,14 @@ Pattern: `[0-9a-zA-Z]{12,40}`
 For extensions that are modules, the public third-party extensions that must be activated
 in your account in order for the module itself to be activated.
 
-Type: Array of [RequiredActivatedType](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_RequiredActivatedType.html) objects
+Type: Array of [RequiredActivatedType](api-requiredactivatedtype.md) objects
 
 **Schema**
 
 The schema that defines the extension.
 
 For more information, see [Resource type\
-schema](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-schema.html) in the _AWS CloudFormation Command Line Interface (CLI) User Guide_ and the [CloudFormation Hooks User Guide](https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguide/what-is-cloudformation-hooks.html).
+schema](../../../../services/cloudformation-cli/latest/userguide/resource-type-schema.md) in the _AWS CloudFormation Command Line Interface (CLI) User Guide_ and the [CloudFormation Hooks User Guide](../../../../services/cloudformation-cli/latest/hooks-userguide/what-is-cloudformation-hooks.md).
 
 Type: String
 
@@ -386,7 +386,7 @@ Valid Values: `RESOURCE | MODULE | HOOK`
 The name of the extension.
 
 If the extension is a public third-party type you have activated with a type name alias,
-CloudFormation returns the type name alias. For more information, see [ActivateType](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ActivateType.html).
+CloudFormation returns the type name alias. For more information, see [ActivateType](api-activatetype.md).
 
 Type: String
 
@@ -406,7 +406,7 @@ information for public extensions, whether they are activated in your account.
 
 An extension must have a test status of `PASSED` before it can be
 published. For more information, see [Publishing\
-extensions to make them available for public use](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-publish.html) in the
+extensions to make them available for public use](../../../../services/cloudformation-cli/latest/userguide/resource-type-publish.md) in the
 _AWS CloudFormation Command Line Interface (CLI) User Guide_.
 
 - `FAILED`: The extension has failed one or more contract tests.
@@ -526,27 +526,27 @@ https://cloudformation.us-east-1.amazonaws.com/
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/DescribeType)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/cloudformation-2010-05-15/describetype.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/DescribeType)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/cloudformation-2010-05-15/describetype.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/DescribeType)
+- [AWS SDK for C++](../../../goto/sdkforcpp/cloudformation-2010-05-15/describetype.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/DescribeType)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/cloudformation-2010-05-15/describetype.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/DescribeType)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudformation-2010-05-15/describetype.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/DescribeType)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/cloudformation-2010-05-15/describetype.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/DescribeType)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/cloudformation-2010-05-15/describetype.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/DescribeType)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/cloudformation-2010-05-15/describetype.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/DescribeType)
+- [AWS SDK for Python](../../../../services/goto/boto3/cloudformation-2010-05-15/describetype.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/DescribeType)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/describetype.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 DescribeStackSetOperation
 

@@ -49,7 +49,7 @@ hundreds of GB/s of throughput, and up to millions of IOPS.
 
 The following figure shows the relationship between these storage options and your instance.
 
-![Storage options for Amazon EC2](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/architecture_storage.png)
+![Storage options for Amazon EC2](../../../images/awsec2/latest/userguide/images/architecture-storage-png.md)
 
 ## AWS Storage pricing
 

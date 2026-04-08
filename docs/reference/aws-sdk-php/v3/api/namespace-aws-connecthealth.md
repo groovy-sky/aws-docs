@@ -4,15 +4,15 @@ Menu
 
 ## ConnectHealth
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connecthealth.html\#toc)
+### Table of Contents  [header link](namespace-aws-connecthealth-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connecthealth.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-connecthealth-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connecthealth.exception.html)
+[Exception](namespace-aws-connecthealth-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connecthealth.html\#toc-classes)
+#### Classes  [header link](namespace-aws-connecthealth-toc-classes.md)
 
-[ConnectHealthClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.ConnectHealth.ConnectHealthClient.html)This client is used to interact with the **Connect Health** service.
+[ConnectHealthClient](class-aws-connecthealth-connecthealthclient.md)This client is used to interact with the **Connect Health** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connecthealth.html#toc-classes)
+  - [Classes](namespace-aws-connecthealth-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.connecthealth.html#top)
+[Back To Top](namespace-aws-connecthealth-top.md)

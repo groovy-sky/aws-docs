@@ -20,7 +20,7 @@ to subscribe to products in the AWS Marketplace:
 
 - AWS Marketplace website: You can launch preconfigured software
 quickly with the 1-Click deployment feature. For more information, see
-[AMI-based products in AWS Marketplace](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-server-products.html).
+[AMI-based products in AWS Marketplace](../../../marketplace/latest/buyerguide/buyer-server-products.md).
 
 - Amazon EC2 launch wizard: You can search for an AMI and
 launch an instance directly from the wizard. For more information, see

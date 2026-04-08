@@ -92,7 +92,7 @@ each Standard Reserved Instance you sell in the Reserved Instance Marketplace. T
 price the seller is charging for the Standard Reserved Instance.
 
 - When you register as a seller, the bank you specify must have a US
-address. For more information, see [Additional seller requirements for paid products](https://docs.aws.amazon.com/marketplace/latest/userguide/user-guide-for-sellers.html) in the
+address. For more information, see [Additional seller requirements for paid products](../../../marketplace/latest/userguide/user-guide-for-sellers.md) in the
 _AWS Marketplace Seller Guide_.
 
 - Amazon Web Services India Private Limited (AWS India) customers can't register as
@@ -134,7 +134,7 @@ the Reserved Instance Marketplace.
 
 AWS must have your bank information in order to disburse funds collected when
 you sell your Reserved Instance. The bank you specify must have a US address. For more
-information, see [Additional seller requirements for paid products](https://docs.aws.amazon.com/marketplace/latest/userguide/user-guide-for-sellers.html) in the _AWS Marketplace Seller Guide_.
+information, see [Additional seller requirements for paid products](../../../marketplace/latest/userguide/user-guide-for-sellers.md) in the _AWS Marketplace Seller Guide_.
 
 ###### To register a default bank account for disbursements
 

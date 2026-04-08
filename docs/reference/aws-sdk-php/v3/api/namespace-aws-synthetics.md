@@ -4,15 +4,15 @@ Menu
 
 ## Synthetics
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.synthetics.html\#toc)
+### Table of Contents  [header link](namespace-aws-synthetics-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.synthetics.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-synthetics-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.synthetics.exception.html)
+[Exception](namespace-aws-synthetics-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.synthetics.html\#toc-classes)
+#### Classes  [header link](namespace-aws-synthetics-toc-classes.md)
 
-[SyntheticsClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Synthetics.SyntheticsClient.html)This client is used to interact with the **Synthetics** service.
+[SyntheticsClient](class-aws-synthetics-syntheticsclient.md)This client is used to interact with the **Synthetics** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.synthetics.html#toc-classes)
+  - [Classes](namespace-aws-synthetics-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.synthetics.html#top)
+[Back To Top](namespace-aws-synthetics-top.md)

@@ -17,28 +17,28 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2011-06-15**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sts-2011-06-15.html)
+- [**2011-06-15**](api-sts-2011-06-15.md)
 
-  - [AssumeRole](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sts-2011-06-15.html#assumerole)
-  - [AssumeRoleWithSAML](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sts-2011-06-15.html#assumerolewithsaml)
-  - [AssumeRoleWithWebIdentity](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sts-2011-06-15.html#assumerolewithwebidentity)
-  - [AssumeRoot](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sts-2011-06-15.html#assumeroot)
-  - [DecodeAuthorizationMessage](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sts-2011-06-15.html#decodeauthorizationmessage)
-  - [GetAccessKeyInfo](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sts-2011-06-15.html#getaccesskeyinfo)
-  - [GetCallerIdentity](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sts-2011-06-15.html#getcalleridentity)
-  - [GetDelegatedAccessToken](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sts-2011-06-15.html#getdelegatedaccesstoken)
-  - [GetFederationToken](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sts-2011-06-15.html#getfederationtoken)
-  - [GetSessionToken](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sts-2011-06-15.html#getsessiontoken)
-  - [GetWebIdentityToken](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-sts-2011-06-15.html#getwebidentitytoken)
+  - [AssumeRole](api-sts-2011-06-15-assumerole.md)
+  - [AssumeRoleWithSAML](api-sts-2011-06-15-assumerolewithsaml.md)
+  - [AssumeRoleWithWebIdentity](api-sts-2011-06-15-assumerolewithwebidentity.md)
+  - [AssumeRoot](api-sts-2011-06-15-assumeroot.md)
+  - [DecodeAuthorizationMessage](api-sts-2011-06-15-decodeauthorizationmessage.md)
+  - [GetAccessKeyInfo](api-sts-2011-06-15-getaccesskeyinfo.md)
+  - [GetCallerIdentity](api-sts-2011-06-15-getcalleridentity.md)
+  - [GetDelegatedAccessToken](api-sts-2011-06-15-getdelegatedaccesstoken.md)
+  - [GetFederationToken](api-sts-2011-06-15-getfederationtoken.md)
+  - [GetSessionToken](api-sts-2011-06-15-getsessiontoken.md)
+  - [GetWebIdentityToken](api-sts-2011-06-15-getwebidentitytoken.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.StsClient.html\#toc)
+### Table of Contents  [header link](class-aws-sts-stsclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.StsClient.html\#toc-methods)
+#### Methods  [header link](class-aws-sts-stsclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
-: mixed [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.StsClient.html#method___construct)
+: mixed [\_\_construct()](class-aws-sts-stsclient-method-construct.md)
 : mixed The client constructor accepts the following options:[\_\_sleep()](class-aws-awsclient.md#method___sleep)
-: mixed [createCredentials()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.StsClient.html#method_createCredentials)
+: mixed [createCredentials()](class-aws-sts-stsclient-method-createcredentials.md)
 : [Credentials](class-aws-credentials-credentials.md)Creates credentials from the result of an STS operations[execute()](class-aws-awsclienttrait.md#method_execute)
 : mixed [executeAsync()](class-aws-awsclienttrait.md#method_executeAsync)
 : mixed [factory()](class-aws-awsclient.md#method_factory)
@@ -65,7 +65,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.StsClient.html\#methods)
+### Methods  [header link](class-aws-sts-stsclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -79,7 +79,7 @@ $name
 : mixed$args
 : array<string\|int, mixed>
 
-#### \_\_construct()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.StsClient.html\#method___construct)
+#### \_\_construct()  [header link](class-aws-sts-stsclient-method-construct.md)
 
 The client constructor accepts the following options:
 
@@ -112,7 +112,7 @@ $args
     public
                     __sleep() : mixed`
 
-#### createCredentials()  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.StsClient.html\#method_createCredentials)
+#### createCredentials()  [header link](class-aws-sts-stsclient-method-createcredentials.md)
 
 Creates credentials from the result of an STS operations
 
@@ -131,7 +131,7 @@ $source
 : mixed
 = null
 
-##### Tags  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.StsClient.html\#method_createCredentials\#tags)
+##### Tags  [header link](class-aws-sts-stsclient-method-createcredentials-tags.md)
 
 throwsInvalidArgumentException
 
@@ -418,12 +418,12 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.StsClient.html#toc-methods)
+  - [Methods](class-aws-sts-stsclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
-  - [\_\_construct()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.StsClient.html#method___construct)
+  - [\_\_construct()](class-aws-sts-stsclient-method-construct.md)
   - [\_\_sleep()](class-aws-awsclient.md#method___sleep)
-  - [createCredentials()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.StsClient.html#method_createCredentials)
+  - [createCredentials()](class-aws-sts-stsclient-method-createcredentials.md)
   - [execute()](class-aws-awsclienttrait.md#method_execute)
   - [executeAsync()](class-aws-awsclienttrait.md#method_executeAsync)
   - [factory()](class-aws-awsclient.md#method_factory)
@@ -446,4 +446,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Sts.StsClient.html#top)
+[Back To Top](class-aws-sts-stsclient-top.md)

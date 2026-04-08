@@ -161,7 +161,7 @@ Pattern: `^[a-zA-Z\.]+`
 
 A list of methods for validating the configuration.
 
-Type: Array of [Validator](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Validator.html) objects
+Type: Array of [Validator](api-validator.md) objects
 
 Array Members: Minimum number of 0 items. Maximum number of 2 items.
 
@@ -227,27 +227,27 @@ Authorization: AWS4-HMAC-SHA256 Credential=AKIAIOSFODNN7EXAMPLE/20210917/us-east
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appconfig-2019-10-09/GetConfigurationProfile)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/appconfig-2019-10-09/getconfigurationprofile.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appconfig-2019-10-09/GetConfigurationProfile)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appconfig-2019-10-09/getconfigurationprofile.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/appconfig-2019-10-09/GetConfigurationProfile)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appconfig-2019-10-09/getconfigurationprofile.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appconfig-2019-10-09/GetConfigurationProfile)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/appconfig-2019-10-09/getconfigurationprofile.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appconfig-2019-10-09/GetConfigurationProfile)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appconfig-2019-10-09/getconfigurationprofile.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appconfig-2019-10-09/GetConfigurationProfile)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appconfig-2019-10-09/getconfigurationprofile.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appconfig-2019-10-09/GetConfigurationProfile)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appconfig-2019-10-09/getconfigurationprofile.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appconfig-2019-10-09/GetConfigurationProfile)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appconfig-2019-10-09/getconfigurationprofile.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/appconfig-2019-10-09/GetConfigurationProfile)
+- [AWS SDK for Python](../../../../services/goto/boto3/appconfig-2019-10-09/getconfigurationprofile.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appconfig-2019-10-09/GetConfigurationProfile)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appconfig-2019-10-09/getconfigurationprofile.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GetConfiguration
 

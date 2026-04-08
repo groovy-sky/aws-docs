@@ -4,15 +4,15 @@ Menu
 
 ## Rekognition
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.rekognition.html\#toc)
+### Table of Contents  [header link](namespace-aws-rekognition-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.rekognition.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-rekognition-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.rekognition.exception.html)
+[Exception](namespace-aws-rekognition-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.rekognition.html\#toc-classes)
+#### Classes  [header link](namespace-aws-rekognition-toc-classes.md)
 
-[RekognitionClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Rekognition.RekognitionClient.html)This client is used to interact with the **Amazon Rekognition** service.
+[RekognitionClient](class-aws-rekognition-rekognitionclient.md)This client is used to interact with the **Amazon Rekognition** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.rekognition.html#toc-classes)
+  - [Classes](namespace-aws-rekognition-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.rekognition.html#top)
+[Back To Top](namespace-aws-rekognition-top.md)

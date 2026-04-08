@@ -90,7 +90,7 @@ Required: No
 
 Specifies options for the `GetTemplateSummary` API action.
 
-Type: [TemplateSummaryConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_TemplateSummaryConfig.html) object
+Type: [TemplateSummaryConfig](api-templatesummaryconfig.md) object
 
 Required: No
 
@@ -160,7 +160,7 @@ Type: String
 A list of parameter declarations that describe various properties for each
 parameter.
 
-Type: Array of [ParameterDeclaration](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ParameterDeclaration.html) objects
+Type: Array of [ParameterDeclaration](api-parameterdeclaration.md) objects
 
 **ResourceIdentifierSummaries.member.N**
 
@@ -169,7 +169,7 @@ operation and the properties you can provide during the import to identify the t
 resources. For example, `BucketName` is a possible identifier property for an
 `AWS::S3::Bucket` resource.
 
-Type: Array of [ResourceIdentifierSummary](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ResourceIdentifierSummary.html) objects
+Type: Array of [ResourceIdentifierSummary](api-resourceidentifiersummary.md) objects
 
 **ResourceTypes.member.N**
 
@@ -192,7 +192,7 @@ Type: String
 
 An object that contains any warnings returned.
 
-Type: [Warnings](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_Warnings.html) object
+Type: [Warnings](api-warnings.md) object
 
 ## Errors
 
@@ -252,27 +252,27 @@ https://cloudformation.us-east-1.amazonaws.com/
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudformation-2010-05-15/GetTemplateSummary)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/cloudformation-2010-05-15/gettemplatesummary.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudformation-2010-05-15/GetTemplateSummary)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/cloudformation-2010-05-15/gettemplatesummary.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/GetTemplateSummary)
+- [AWS SDK for C++](../../../goto/sdkforcpp/cloudformation-2010-05-15/gettemplatesummary.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudformation-2010-05-15/GetTemplateSummary)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/cloudformation-2010-05-15/gettemplatesummary.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/GetTemplateSummary)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudformation-2010-05-15/gettemplatesummary.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudformation-2010-05-15/GetTemplateSummary)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/cloudformation-2010-05-15/gettemplatesummary.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudformation-2010-05-15/GetTemplateSummary)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/cloudformation-2010-05-15/gettemplatesummary.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudformation-2010-05-15/GetTemplateSummary)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/cloudformation-2010-05-15/gettemplatesummary.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudformation-2010-05-15/GetTemplateSummary)
+- [AWS SDK for Python](../../../../services/goto/boto3/cloudformation-2010-05-15/gettemplatesummary.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/GetTemplateSummary)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/gettemplatesummary.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 GetTemplate
 

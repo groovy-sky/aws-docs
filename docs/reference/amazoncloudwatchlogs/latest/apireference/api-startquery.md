@@ -8,7 +8,7 @@ For more information, see [CloudWatch Logs Insights Query\
 Syntax](../../../../services/amazoncloudwatch/latest/logs/cwl-querysyntax.md).
 
 After you run a query using `StartQuery`, the query results are stored by
-CloudWatch Logs. You can use [GetQueryResults](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_GetQueryResults.html) to retrieve the results of a query, using the `queryId`
+CloudWatch Logs. You can use [GetQueryResults](api-getqueryresults.md) to retrieve the results of a query, using the `queryId`
 that `StartQuery` returns.
 
 Interactive queries started with `StartQuery` share concurrency limits with
@@ -29,10 +29,10 @@ log groups for the query. The `SOURCE` command can select log groups based on
 log group name prefix, account ID, and log class, or select data sources using
 dataSource syntax in LogsQL, PPL, and SQL.
 
-For more information about the `SOURCE` command, see [SOURCE](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax-Source.html).
+For more information about the `SOURCE` command, see [SOURCE](../../../../services/amazoncloudwatch/latest/logs/cwl-querysyntax-source.md).
 
 If you have associated a AWS KMS key with the query results in this
-account, then [StartQuery](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_StartQuery.html) uses
+account, then [StartQuery](api-startquery.md) uses
 that key to encrypt the results when it stores them. If no key is associated with query
 results, the query results are encrypted with the default CloudWatch Logs encryption
 method.
@@ -164,7 +164,7 @@ Required: No
 Specify the query language to use for this query. The options are Logs Insights QL,
 OpenSearch PPL, and OpenSearch SQL. For more information about the query languages that
 CloudWatch Logs supports, see [Supported query\
-languages](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_AnalyzeLogData_Languages.html).
+languages](../../../../services/amazoncloudwatch/latest/logs/cwl-analyzelogdata-languages.md).
 
 Type: String
 
@@ -237,7 +237,7 @@ HTTP Status Code: 400
 **MalformedQueryException**
 
 The query string is not valid. Details about this error are displayed in a
-`QueryCompileError` object. For more information, see [QueryCompileError](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_QueryCompileError.html).
+`QueryCompileError` object. For more information, see [QueryCompileError](api-querycompileerror.md).
 
 For more information about valid query syntax, see [CloudWatch Logs Insights Query\
 Syntax](../../../../services/amazoncloudwatch/latest/logs/cwl-querysyntax.md).
@@ -372,27 +372,27 @@ X-Amz-Target: Logs_20140328.StartQuery
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/logs-2014-03-28/StartQuery)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/logs-2014-03-28/startquery.md)
 
-- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/logs-2014-03-28/StartQuery)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/logs-2014-03-28/startquery.md)
 
-- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/StartQuery)
+- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/startquery.md)
 
-- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/logs-2014-03-28/StartQuery)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/logs-2014-03-28/startquery.md)
 
-- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/StartQuery)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/startquery.md)
 
-- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/logs-2014-03-28/StartQuery)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/logs-2014-03-28/startquery.md)
 
-- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/logs-2014-03-28/StartQuery)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/logs-2014-03-28/startquery.md)
 
-- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/logs-2014-03-28/StartQuery)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/logs-2014-03-28/startquery.md)
 
-- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/logs-2014-03-28/StartQuery)
+- [AWS SDK for Python](../../../../services/goto/boto3/logs-2014-03-28/startquery.md)
 
-- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/logs-2014-03-28/StartQuery)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/startquery.md)
 
-[Document Conventions](https://docs.aws.amazon.com/general/latest/gr/docconventions.html)
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
 
 StartLiveTail
 

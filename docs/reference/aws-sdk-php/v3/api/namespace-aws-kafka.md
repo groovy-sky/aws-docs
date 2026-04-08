@@ -4,15 +4,15 @@ Menu
 
 ## Kafka
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kafka.html\#toc)
+### Table of Contents  [header link](namespace-aws-kafka-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kafka.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-kafka-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kafka.exception.html)
+[Exception](namespace-aws-kafka-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kafka.html\#toc-classes)
+#### Classes  [header link](namespace-aws-kafka-toc-classes.md)
 
-[KafkaClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Kafka.KafkaClient.html)This client is used to interact with the **Managed Streaming for Kafka** service.
+[KafkaClient](class-aws-kafka-kafkaclient.md)This client is used to interact with the **Managed Streaming for Kafka** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kafka.html#toc-classes)
+  - [Classes](namespace-aws-kafka-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.kafka.html#top)
+[Back To Top](namespace-aws-kafka-top.md)

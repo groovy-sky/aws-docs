@@ -4,15 +4,15 @@ Menu
 
 ## Inspector
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.inspector.html\#toc)
+### Table of Contents  [header link](namespace-aws-inspector-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.inspector.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-inspector-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.inspector.exception.html)
+[Exception](namespace-aws-inspector-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.inspector.html\#toc-classes)
+#### Classes  [header link](namespace-aws-inspector-toc-classes.md)
 
-[InspectorClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Inspector.InspectorClient.html)This client is used to interact with the **Amazon Inspector** service.
+[InspectorClient](class-aws-inspector-inspectorclient.md)This client is used to interact with the **Amazon Inspector** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.inspector.html#toc-classes)
+  - [Classes](namespace-aws-inspector-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.inspector.html#top)
+[Back To Top](namespace-aws-inspector-top.md)

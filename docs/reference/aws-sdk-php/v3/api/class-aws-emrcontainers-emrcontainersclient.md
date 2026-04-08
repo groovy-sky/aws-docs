@@ -17,35 +17,35 @@ specific API operation can be done using magic methods (e.g.,
 `$client->commandName(/** parameters */)`, or using the
 `$client->getCommand` method of the client.
 
-- [**2020-10-01**](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html)
+- [**2020-10-01**](api-emr-containers-2020-10-01.md)
 
-  - [CancelJobRun](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#canceljobrun)
-  - [CreateJobTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#createjobtemplate)
-  - [CreateManagedEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#createmanagedendpoint)
-  - [CreateSecurityConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#createsecurityconfiguration)
-  - [CreateVirtualCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#createvirtualcluster)
-  - [DeleteJobTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#deletejobtemplate)
-  - [DeleteManagedEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#deletemanagedendpoint)
-  - [DeleteVirtualCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#deletevirtualcluster)
-  - [DescribeJobRun](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#describejobrun)
-  - [DescribeJobTemplate](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#describejobtemplate)
-  - [DescribeManagedEndpoint](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#describemanagedendpoint)
-  - [DescribeSecurityConfiguration](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#describesecurityconfiguration)
-  - [DescribeVirtualCluster](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#describevirtualcluster)
-  - [GetManagedEndpointSessionCredentials](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#getmanagedendpointsessioncredentials)
-  - [ListJobRuns](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#listjobruns)
-  - [ListJobTemplates](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#listjobtemplates)
-  - [ListManagedEndpoints](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#listmanagedendpoints)
-  - [ListSecurityConfigurations](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#listsecurityconfigurations)
-  - [ListTagsForResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#listtagsforresource)
-  - [ListVirtualClusters](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#listvirtualclusters)
-  - [StartJobRun](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#startjobrun)
-  - [TagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#tagresource)
-  - [UntagResource](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-emr-containers-2020-10-01.html#untagresource)
+  - [CancelJobRun](api-emr-containers-2020-10-01-canceljobrun.md)
+  - [CreateJobTemplate](api-emr-containers-2020-10-01-createjobtemplate.md)
+  - [CreateManagedEndpoint](api-emr-containers-2020-10-01-createmanagedendpoint.md)
+  - [CreateSecurityConfiguration](api-emr-containers-2020-10-01-createsecurityconfiguration.md)
+  - [CreateVirtualCluster](api-emr-containers-2020-10-01-createvirtualcluster.md)
+  - [DeleteJobTemplate](api-emr-containers-2020-10-01-deletejobtemplate.md)
+  - [DeleteManagedEndpoint](api-emr-containers-2020-10-01-deletemanagedendpoint.md)
+  - [DeleteVirtualCluster](api-emr-containers-2020-10-01-deletevirtualcluster.md)
+  - [DescribeJobRun](api-emr-containers-2020-10-01-describejobrun.md)
+  - [DescribeJobTemplate](api-emr-containers-2020-10-01-describejobtemplate.md)
+  - [DescribeManagedEndpoint](api-emr-containers-2020-10-01-describemanagedendpoint.md)
+  - [DescribeSecurityConfiguration](api-emr-containers-2020-10-01-describesecurityconfiguration.md)
+  - [DescribeVirtualCluster](api-emr-containers-2020-10-01-describevirtualcluster.md)
+  - [GetManagedEndpointSessionCredentials](api-emr-containers-2020-10-01-getmanagedendpointsessioncredentials.md)
+  - [ListJobRuns](api-emr-containers-2020-10-01-listjobruns.md)
+  - [ListJobTemplates](api-emr-containers-2020-10-01-listjobtemplates.md)
+  - [ListManagedEndpoints](api-emr-containers-2020-10-01-listmanagedendpoints.md)
+  - [ListSecurityConfigurations](api-emr-containers-2020-10-01-listsecurityconfigurations.md)
+  - [ListTagsForResource](api-emr-containers-2020-10-01-listtagsforresource.md)
+  - [ListVirtualClusters](api-emr-containers-2020-10-01-listvirtualclusters.md)
+  - [StartJobRun](api-emr-containers-2020-10-01-startjobrun.md)
+  - [TagResource](api-emr-containers-2020-10-01-tagresource.md)
+  - [UntagResource](api-emr-containers-2020-10-01-untagresource.md)
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EMRContainers.EMRContainersClient.html\#toc)
+### Table of Contents  [header link](class-aws-emrcontainers-emrcontainersclient-toc.md)
 
-#### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EMRContainers.EMRContainersClient.html\#toc-methods)
+#### Methods  [header link](class-aws-emrcontainers-emrcontainersclient-toc-methods.md)
 
 [\_\_call()](class-aws-awsclienttrait.md#method___call)
 : mixed [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -76,7 +76,7 @@ key-value pairs used for endpoint resolution.[getCommand()](class-aws-awsclientt
 : mixed [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 : mixed
 
-### Methods  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EMRContainers.EMRContainersClient.html\#methods)
+### Methods  [header link](class-aws-emrcontainers-emrcontainersclient-methods.md)
 
 #### \_\_call()  [header link](class-aws-awsclienttrait.md\#method___call)
 
@@ -543,7 +543,7 @@ $name
 **On this page**
 
 - Table Of Contents
-  - [Methods](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EMRContainers.EMRContainersClient.html#toc-methods)
+  - [Methods](class-aws-emrcontainers-emrcontainersclient-toc-methods.md)
 - Methods
   - [\_\_call()](class-aws-awsclienttrait.md#method___call)
   - [\_\_construct()](class-aws-awsclient.md#method___construct)
@@ -570,4 +570,4 @@ $name
   - [getWaiter()](class-aws-awsclienttrait.md#method_getWaiter)
   - [waitUntil()](class-aws-awsclienttrait.md#method_waitUntil)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.EMRContainers.EMRContainersClient.html#top)
+[Back To Top](class-aws-emrcontainers-emrcontainersclient-top.md)

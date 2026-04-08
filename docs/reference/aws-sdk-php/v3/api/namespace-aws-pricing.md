@@ -4,15 +4,15 @@ Menu
 
 ## Pricing
 
-### Table of Contents  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pricing.html\#toc)
+### Table of Contents  [header link](namespace-aws-pricing-toc.md)
 
-#### Namespaces  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pricing.html\#namespaces)
+#### Namespaces  [header link](namespace-aws-pricing-namespaces.md)
 
-[Exception](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pricing.exception.html)
+[Exception](namespace-aws-pricing-exception.md)
 
-#### Classes  [header link](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pricing.html\#toc-classes)
+#### Classes  [header link](namespace-aws-pricing-toc-classes.md)
 
-[PricingClient](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Pricing.PricingClient.html)This client is used to interact with the **AWS Price List Service** service.
+[PricingClient](class-aws-pricing-pricingclient.md)This client is used to interact with the **AWS Price List Service** service.
 
 ```
 
@@ -23,6 +23,6 @@ Menu
 **On this page**
 
 - Table Of Contents
-  - [Classes](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pricing.html#toc-classes)
+  - [Classes](namespace-aws-pricing-toc-classes.md)
 
-[Back To Top](https://docs.aws.amazon.com/aws-sdk-php/v3/api/namespace-Aws.pricing.html#top)
+[Back To Top](namespace-aws-pricing-top.md)

@@ -44,7 +44,7 @@ Key Infrastructure (RPKI) of your RIR.
 
 A ROA is not required for non-publicly advertisable IPv6 address space.
 
-![The 3-step onboarding process for BYOIP.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/byoip-preonboarding.png)
+![The 3-step onboarding process for BYOIP.](../../../images/awsec2/latest/userguide/images/byoip-preonboarding-png.md)
 
 To bring on multiple non-contiguous address ranges, you must repeat this process with
 each address range. However, the preparation and RIR configuration steps don't need to
