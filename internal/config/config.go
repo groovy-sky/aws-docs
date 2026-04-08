@@ -25,6 +25,9 @@ type Config struct {
 	Burst                 int      `json:"burst"`
 	MaxRetries            int      `json:"max_retries"`
 	RequestTimeoutSeconds int      `json:"request_timeout_seconds"`
+	MinRequestDelayMS     int      `json:"min_request_delay_ms"`
+	MaxRequestDelayMS     int      `json:"max_request_delay_ms"`
+	DetailedLogging       bool     `json:"-"`
 	MaxSections           int      `json:"max_sections"`
 	Selectors             []string `json:"selectors"`
 	ExcludeSelectors      []string `json:"exclude_selectors"`
@@ -59,6 +62,8 @@ func Default() Config {
 		Burst:                 1,
 		MaxRetries:            3,
 		RequestTimeoutSeconds: 20,
+		MinRequestDelayMS:     250,
+		MaxRequestDelayMS:     900,
 		MaxSections:           25,
 		Selectors: []string{
 			"#main-content",
@@ -159,6 +164,9 @@ func (c *Config) normalize() {
 	if c.Concurrency < 1 {
 		c.Concurrency = 1
 	}
+	if c.Concurrency > 4 {
+		c.Concurrency = 4
+	}
 	if c.RequestsPerSecond <= 0 {
 		c.RequestsPerSecond = 1.0
 	}
@@ -170,6 +178,12 @@ func (c *Config) normalize() {
 	}
 	if c.RequestTimeoutSeconds < 1 {
 		c.RequestTimeoutSeconds = 20
+	}
+	if c.MinRequestDelayMS < 0 {
+		c.MinRequestDelayMS = 0
+	}
+	if c.MaxRequestDelayMS < c.MinRequestDelayMS {
+		c.MaxRequestDelayMS = c.MinRequestDelayMS
 	}
 	if c.MaxSections < 0 {
 		c.MaxSections = 0

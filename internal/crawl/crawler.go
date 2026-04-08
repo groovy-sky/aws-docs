@@ -82,12 +82,14 @@ func (c *Crawler) Run(ctx context.Context, options RunOptions) error {
 	for len(queue) > 0 {
 		current := queue[0]
 		queue = queue[1:]
+		c.logf("crawl dequeue: url=%s remaining=%d", current, len(queue))
 		discovered, err := c.processURL(ctx, current)
 		if err != nil {
 			log.Printf("skip %s: %v", current, err)
 			continue
 		}
 		processedCount++
+		c.logf("crawl processed: url=%s discovered=%d", current, len(discovered))
 
 		if options.Mode == "refresh-url" {
 			continue
@@ -95,9 +97,11 @@ func (c *Crawler) Run(ctx context.Context, options RunOptions) error {
 
 		for _, link := range discovered {
 			if _, exists := seen[link]; exists {
+				c.logf("crawl skip-seen: url=%s", link)
 				continue
 			}
 			if !IsAllowedURL(link, c.config) || !c.allowedByRobots(link) {
+				c.logf("crawl skip-filtered: url=%s", link)
 				continue
 			}
 			if len(allowedSections) > 0 {
@@ -107,6 +111,7 @@ func (c *Crawler) Run(ctx context.Context, options RunOptions) error {
 			}
 			seen[link] = struct{}{}
 			queue = append(queue, link)
+			c.logf("crawl enqueue: url=%s queue-size=%d", link, len(queue))
 		}
 	}
 
@@ -212,6 +217,14 @@ func (c *Crawler) seedQueue(ctx context.Context, options RunOptions) ([]string, 
 		}
 	}
 
+	for _, seed := range c.discoverRobotsDerivedSeeds(ctx) {
+		if _, exists := seen[seed]; exists {
+			continue
+		}
+		seen[seed] = struct{}{}
+		queue = append(queue, seed)
+	}
+
 	if (options.Mode == "incremental" || options.Mode == "partial") && options.MaxSections > 0 {
 		if uniqueSectionsCount(queue) < options.MaxSections {
 			for _, seed := range c.config.Seeds {
@@ -264,12 +277,46 @@ func uniqueSectionsCount(urls []string) int {
 }
 
 func (c *Crawler) discoverAndPersistSeeds(ctx context.Context) ([]string, error) {
+	seeds := c.discoverRobotsDerivedSeeds(ctx)
+	seen := map[string]struct{}{}
+	for _, seed := range seeds {
+		seen[seed] = struct{}{}
+	}
+
+	addSeed := func(rawURL string) {
+		normalized, err := canonicalizeSeedURL(rawURL, c.config)
+		if err != nil || !IsAllowedURL(normalized, c.config) {
+			return
+		}
+		if _, exists := seen[normalized]; exists {
+			return
+		}
+		seen[normalized] = struct{}{}
+		seeds = append(seeds, normalized)
+	}
+
+	if len(seeds) == 0 {
+		for _, seed := range c.config.Seeds {
+			addSeed(seed)
+		}
+	}
+
+	seeds = c.filterReachableSeeds(ctx, seeds)
+
+	if err := c.store.PutSeeds(seeds); err != nil {
+		return nil, err
+	}
+	log.Printf("stored %d robots-derived seeds in metadata db", len(seeds))
+	return seeds, nil
+}
+
+func (c *Crawler) discoverRobotsDerivedSeeds(ctx context.Context) []string {
 	seeds := make([]string, 0)
 	seen := map[string]struct{}{}
 
 	addSeed := func(rawURL string) {
 		normalized, err := canonicalizeSeedURL(rawURL, c.config)
-		if err != nil || !IsAllowedURL(normalized, c.config) {
+		if err != nil || !IsAllowedURL(normalized, c.config) || !c.allowedByRobots(normalized) {
 			return
 		}
 		if _, exists := seen[normalized]; exists {
@@ -307,29 +354,26 @@ func (c *Crawler) discoverAndPersistSeeds(ctx context.Context) ([]string, error)
 		}
 	}
 
-	if len(seeds) == 0 {
-		for _, seed := range c.config.Seeds {
-			addSeed(seed)
-		}
-	}
-
-	seeds = c.filterReachableSeeds(ctx, seeds)
-
-	if err := c.store.PutSeeds(seeds); err != nil {
-		return nil, err
-	}
-	log.Printf("stored %d robots-derived seeds in metadata db", len(seeds))
-	return seeds, nil
+	return seeds
 }
 
 func (c *Crawler) processURL(ctx context.Context, pageURL string) ([]string, error) {
 	if !c.allowedByRobots(pageURL) {
+		c.logf("crawl blocked-by-robots: url=%s", pageURL)
 		return nil, fmt.Errorf("blocked by robots.txt")
 	}
+	c.logf("crawl process-start: url=%s", pageURL)
 
 	result, err := c.fetcher.Fetch(ctx, pageURL)
 	if err != nil {
+		if result.PotentialBotChallenge {
+			log.Printf("potential bot challenge: url=%s reason=%s", pageURL, result.BotChallengeReason)
+		}
 		return nil, err
+	}
+	if !c.allowedByRobots(result.FinalURL) {
+		c.logf("crawl final-url-blocked-by-robots: source=%s final=%s", pageURL, result.FinalURL)
+		return nil, fmt.Errorf("final URL blocked by robots.txt")
 	}
 
 	extracted, err := c.extractor.Extract(result.FinalURL, result.Body)
@@ -341,8 +385,10 @@ func (c *Crawler) processURL(ctx context.Context, pageURL string) ([]string, err
 		if err != nil {
 			return nil, fmt.Errorf("resolve redirect target %q: %w", extracted.RedirectURL, err)
 		}
+		c.logf("crawl meta-refresh: source=%s target=%s", result.FinalURL, resolved)
 		return []string{resolved}, nil
 	}
+	c.logf("crawl extracted: url=%s title=%q links=%d", result.FinalURL, extracted.Title, len(extracted.Links))
 
 	canonicalURL, err := NormalizeURL(extracted.CanonicalURL, c.config)
 	if err != nil {
@@ -357,6 +403,7 @@ func (c *Crawler) processURL(ctx context.Context, pageURL string) ([]string, err
 	if err := c.writer.Write(repoPath, markdownDocument.Markdown); err != nil {
 		return nil, fmt.Errorf("write %s: %w", repoPath, err)
 	}
+	c.logf("crawl wrote: canonical-url=%s path=%s markdown-bytes=%d", canonicalURL, repoPath, len(markdownDocument.Markdown))
 
 	discovered := make([]string, 0, len(extracted.Links))
 	for _, link := range extracted.Links {
@@ -370,6 +417,13 @@ func (c *Crawler) processURL(ctx context.Context, pageURL string) ([]string, err
 	}
 
 	return discovered, nil
+}
+
+func (c *Crawler) logf(format string, args ...any) {
+	if !c.config.DetailedLogging {
+		return
+	}
+	log.Printf(format, args...)
 }
 
 func (c *Crawler) allowedByRobots(rawURL string) bool {
@@ -473,13 +527,15 @@ func selectSectionsForRun(queue []string, limit int, cursor int) (map[string]str
 
 func (c *Crawler) filterReachableSeeds(ctx context.Context, seeds []string) []string {
 	filtered := make([]string, 0, len(seeds))
+	seen := make(map[string]struct{}, len(seeds))
 	for _, seed := range seeds {
 		request, err := http.NewRequestWithContext(ctx, http.MethodGet, seed, nil)
 		if err != nil {
 			continue
 		}
 		request.Header.Set("User-Agent", c.config.UserAgent)
-		request.Header.Set("Accept", "text/html,application/xhtml+xml")
+		request.Header.Set("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8")
+		request.Header.Set("Accept-Language", "en-US,en;q=0.9")
 
 		response, err := c.fetcher.HTTPClient().Do(request)
 		if err != nil {
@@ -488,9 +544,24 @@ func (c *Crawler) filterReachableSeeds(ctx context.Context, seeds []string) []st
 		_, _ = io.Copy(io.Discard, response.Body)
 		_ = response.Body.Close()
 
-		if response.StatusCode >= http.StatusOK && response.StatusCode < http.StatusBadRequest {
-			filtered = append(filtered, seed)
+		if response.StatusCode < http.StatusOK || response.StatusCode >= http.StatusBadRequest {
+			continue
 		}
+
+		finalURL, err := NormalizeURL(response.Request.URL.String(), c.config)
+		if err != nil {
+			continue
+		}
+		if !IsAllowedURL(finalURL, c.config) || !c.allowedByRobots(finalURL) {
+			c.logf("seed pruned: seed=%s final-url=%s", seed, finalURL)
+			continue
+		}
+		if _, exists := seen[finalURL]; exists {
+			continue
+		}
+
+		seen[finalURL] = struct{}{}
+		filtered = append(filtered, finalURL)
 	}
 	return filtered
 }

@@ -1,6 +1,7 @@
 package crawl
 
 import (
+	"net/url"
 	"testing"
 
 	"github.com/groovy-sky/aws-docs/internal/config"
@@ -72,5 +73,52 @@ func TestExtractorCollectsLinksFromExcludedTOC(t *testing.T) {
 	}
 	if document.Links[1] != "ebs-encryption-requirements.html" {
 		t.Fatalf("second link = %q, want %q", document.Links[1], "ebs-encryption-requirements.html")
+	}
+}
+
+func TestExtractorExtractsLandingPageXMLListCardLinks(t *testing.T) {
+	extractor := NewExtractor(config.Default())
+	landingXML := `<main-landing-page>
+	<title>Welcome to AWS Documentation</title>
+	<abstract>Find user guides and references.</abstract>
+	<sections>
+		<section>
+			<cards>
+				<list-card>
+					<list-card-items>
+						<list-card-item href="/vpc/?icmpid=docs_homepage_networking">
+							<title>Amazon VPC</title>
+						</list-card-item>
+					</list-card-items>
+				</list-card>
+				<simple-card>
+					<footer>
+						<footer-item href="/cli/latest/userguide/cli-chap-welcome.html">AWS CLI User Guide</footer-item>
+					</footer>
+				</simple-card>
+			</cards>
+		</section>
+	</sections>
+</main-landing-page>`
+	body := []byte(`<!DOCTYPE html>
+<html>
+	<head><title>Welcome to AWS Documentation</title></head>
+	<body>
+		<input id="landing-page-xml" value="` + url.QueryEscape(landingXML) + `" />
+	</body>
+</html>`)
+
+	document, err := extractor.Extract("https://docs.aws.amazon.com/", body)
+	if err != nil {
+		t.Fatalf("Extract returned error: %v", err)
+	}
+	if len(document.Links) != 2 {
+		t.Fatalf("Links length = %d, want 2", len(document.Links))
+	}
+	if document.Links[0] != "/vpc/?icmpid=docs_homepage_networking" {
+		t.Fatalf("first link = %q, want %q", document.Links[0], "/vpc/?icmpid=docs_homepage_networking")
+	}
+	if document.Links[1] != "/cli/latest/userguide/cli-chap-welcome.html" {
+		t.Fatalf("second link = %q, want %q", document.Links[1], "/cli/latest/userguide/cli-chap-welcome.html")
 	}
 }

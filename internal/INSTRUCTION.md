@@ -21,6 +21,7 @@ This document stores the current runtime logic of the crawler so future work can
 - Mode behavior:
 	- `partial` is normalized to `incremental`.
 	- `refresh-url` requires a single URL.
+	- `detailed-logging` enables verbose fetch and crawl progress logs without changing crawl decisions.
 - `app.Run` constructs and wires these components in order:
 	- `config.Load`
 	- `store.Open`
@@ -46,13 +47,30 @@ URL processing (`processURL`) sequence:
 
 1. Validate robots rule.
 2. Fetch page via `Fetcher.Fetch` (rate-limited with retry).
-3. Extract content via `Extractor.Extract`.
-4. If extractor returns `RedirectURL` (meta refresh wrapper pages), resolve target and enqueue it instead of writing markdown.
-5. Normalize canonical URL.
-6. Convert cleaned HTML to markdown using `Converter.Convert`.
-7. Map canonical URL to repository path via `Mapper.RepoPath`.
-8. Write markdown file.
-9. Resolve extracted links and return discovered allowed URLs.
+3. If fetch detects a likely anti-bot challenge page, crawler logs it and skips the URL when retries are exhausted.
+4. Validate robots rule again for the resolved final URL after HTTP redirects.
+5. Extract content via `Extractor.Extract`.
+6. If extractor returns `RedirectURL` (meta refresh wrapper pages), resolve target and enqueue it instead of writing markdown.
+7. Normalize canonical URL.
+8. Convert cleaned HTML to markdown using `Converter.Convert`.
+9. Map canonical URL to repository path via `Mapper.RepoPath`.
+10. Write markdown file.
+11. Resolve extracted links and return discovered allowed URLs.
+
+Fetcher behavior:
+
+- Uses a persistent `http.Client` session with a cookie jar.
+- Sends browser-like request headers (`User-Agent`, `Accept`, `Accept-Language`, `Upgrade-Insecure-Requests`) on initial requests and redirect hops.
+- Follows redirects with a max depth of 10 and records the resolved final URL.
+- Applies rate-limiter gating plus randomized per-request jitter delay (`min_request_delay_ms` to `max_request_delay_ms`).
+- Retries transient failures using exponential backoff, including statuses `403`, `429`, `503`, and all `5xx` responses.
+- Detects likely anti-bot challenge HTML responses (captcha/human-verification markers) and treats them as retryable failures.
+- When `detailed-logging` is enabled, logs request starts, responses, redirects, retries, and terminal fetch failures.
+
+Crawler logging behavior:
+
+- Standard logs remain run summaries, skip lines, and challenge notices.
+- `detailed-logging` adds queue dequeue/enqueue events, robots rejections, meta refresh targets, extraction summaries, and markdown write targets.
 
 ## Extraction Rules
 
@@ -67,6 +85,7 @@ Link discovery behavior:
 
 - Extractor collects crawl links from the selected main-content tree before applying excluded selectors.
 - This preserves subsection URLs that may exist only in filtered TOC containers (for example `.awsdocs-toc`) while still removing those blocks from written markdown.
+- For AWS landing-page XML payloads, extractor now harvests all `href` attributes from the decoded payload, not only legacy `simple-card` and side-nav link structures. This keeps homepage-style `list-card-item`, `footer-item`, and similar landing links crawlable.
 
 Current redirect handling:
 
@@ -92,6 +111,8 @@ Current redirect handling:
 - Metadata DB currently stores only seed URLs in BoltDB bucket `seeds`.
 - On open, legacy buckets `pages` and `links` are removed.
 - `seedQueue` prioritizes stored seeds, canonicalizes, deduplicates, and prunes unreachable seeds.
+- Reachability pruning follows HTTP redirects first and keeps only the final normalized URL when it is still allowed by include/exclude filters and `robots.txt`; redirected seeds that land in excluded paths are removed before section selection.
+- Queue seed construction merges both sources: site/stored seeds and robots-derived seeds (robots structure roots plus sitemap-derived section roots), with deduplication and allowlist filtering applied before section selection.
 - In `incremental` and `partial` mode, when requested `max_sections` exceeds the section count represented by stored seeds, queue building backfills from configured seeds to reach the requested section window when possible.
 - If no stored seeds exist, crawler discovers from robots-derived structure and sitemaps, then persists.
 - In `full` mode, sitemap URLs are added to queue for broader coverage.
@@ -101,5 +122,6 @@ Current redirect handling:
 
 - If service landing pages list links but child markdown files are missing, inspect redirect-wrapper handling first.
 - For crawl coverage issues, inspect `IsAllowedURL`, include/exclude path patterns, and section capping behavior.
+- For repeated transient fetch failures, inspect retry settings (`max_retries`) and request jitter settings (`min_request_delay_ms`, `max_request_delay_ms`).
 - For wrong output location, inspect `Mapper.RepoPath` and `mapServiceCode` mappings.
 - For root service listing issues, inspect `internal/write/services_index.go` link selection behavior.

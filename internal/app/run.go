@@ -14,10 +14,11 @@ import (
 )
 
 type Options struct {
-	ConfigPath  string
-	Mode        string
-	URL         string
-	MaxSections int
+	ConfigPath      string
+	Mode            string
+	URL             string
+	MaxSections     int
+	DetailedLogging bool
 }
 
 func Run(ctx context.Context, options Options) (runErr error) {
@@ -55,6 +56,7 @@ func Run(ctx context.Context, options Options) (runErr error) {
 	if err != nil {
 		return err
 	}
+	cfg.DetailedLogging = options.DetailedLogging
 	outputDir = cfg.OutputDir
 	metadataPath := resolvePath(workingDir, cfg.MetadataDB)
 	if options.MaxSections > 0 {

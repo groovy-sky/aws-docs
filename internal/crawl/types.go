@@ -1,14 +1,16 @@
 package crawl
 
 type FetchResult struct {
-	FinalURL      string
-	StatusCode    int
-	ContentType   string
-	Body          []byte
-	ETag          string
-	LastModified  string
-	NotModified   bool
-	RequestFailed error
+	FinalURL              string
+	StatusCode            int
+	ContentType           string
+	Body                  []byte
+	ETag                  string
+	LastModified          string
+	NotModified           bool
+	PotentialBotChallenge bool
+	BotChallengeReason    string
+	RequestFailed         error
 }
 
 type ExtractedDocument struct {

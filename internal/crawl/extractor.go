@@ -192,87 +192,69 @@ func extractLandingPageDocument(document *goquery.Document, rawURL string) (Extr
 		return ExtractedDocument{}, false
 	}
 
-	parsed := landingPage{}
-	if err := xml.Unmarshal([]byte(decoded), &parsed); err != nil {
-		return ExtractedDocument{}, false
-	}
-
-	title := strings.TrimSpace(parsed.Title)
-	if title == "" {
-		title = strings.TrimSpace(document.Find("title").First().Text())
-	}
-
+	titleFallback := strings.TrimSpace(document.Find("title").First().Text())
 	canonicalURL := rawURL
 	if href, exists := document.Find("link[rel='canonical']").Attr("href"); exists && strings.TrimSpace(href) != "" {
 		canonicalURL = strings.TrimSpace(href)
 	}
 
-	var builder strings.Builder
-	if title != "" {
-		builder.WriteString("<h1>")
-		builder.WriteString(html.EscapeString(title))
-		builder.WriteString("</h1>\n")
+	return extractLandingPageFromDecodedXML(canonicalURL, decoded, titleFallback)
+}
+
+func extractLandingPageFromDecodedXML(canonicalURL string, decoded string, titleFallback string) (ExtractedDocument, bool) {
+	parsed := landingPage{}
+	_ = xml.Unmarshal([]byte(decoded), &parsed)
+
+	title := strings.TrimSpace(parsed.Title)
+	if title == "" {
+		title = strings.TrimSpace(titleFallback)
+	}
+	if title == "" {
+		if m := landingTitlePattern.FindStringSubmatch(decoded); len(m) > 1 {
+			title = strings.TrimSpace(html.UnescapeString(m[1]))
+		}
 	}
 
 	abstract := strings.TrimSpace(parsed.Abstract)
-	if abstract != "" {
-		builder.WriteString("<p>")
-		builder.WriteString(html.EscapeString(abstract))
-		builder.WriteString("</p>\n")
+	if abstract == "" {
+		if m := landingAbstractPattern.FindStringSubmatch(decoded); len(m) > 1 {
+			abstract = strings.TrimSpace(html.UnescapeString(m[1]))
+		}
 	}
 
 	links := make([]string, 0)
+	seen := map[string]struct{}{}
+	addLink := func(rawHref string) {
+		href := strings.TrimSpace(html.UnescapeString(rawHref))
+		if href == "" {
+			return
+		}
+		if _, exists := seen[href]; exists {
+			return
+		}
+		seen[href] = struct{}{}
+		links = append(links, href)
+	}
 
-	guideLinks := make([]string, 0)
 	for _, section := range parsed.Sections.Section {
 		for _, card := range section.Cards.SimpleCard {
-			href := strings.TrimSpace(card.Href)
-			if href != "" {
-				guideLinks = append(guideLinks, href)
-				links = append(links, href)
-			}
+			addLink(card.Href)
 		}
-	}
-	if len(guideLinks) > 0 {
-		builder.WriteString("<h2>Guides</h2>\n<ul>\n")
-		for _, href := range guideLinks {
-			builder.WriteString("<li><a href=\"")
-			builder.WriteString(html.EscapeString(href))
-			builder.WriteString("\">")
-			builder.WriteString(html.EscapeString(href))
-			builder.WriteString("</a></li>\n")
-		}
-		builder.WriteString("</ul>\n")
 	}
 
 	for _, section := range parsed.SideNav.Sections {
-		sectionTitle := strings.TrimSpace(section.Title)
-		if sectionTitle == "" || len(section.Links.SimpleLink) == 0 {
-			continue
-		}
-		builder.WriteString("<h2>")
-		builder.WriteString(html.EscapeString(sectionTitle))
-		builder.WriteString("</h2>\n<ul>\n")
 		for _, link := range section.Links.SimpleLink {
-			href := strings.TrimSpace(link.Href)
-			if href == "" {
-				continue
-			}
-			text := strings.TrimSpace(link.Text)
-			if text == "" {
-				text = href
-			}
-			builder.WriteString("<li><a href=\"")
-			builder.WriteString(html.EscapeString(href))
-			builder.WriteString("\">")
-			builder.WriteString(html.EscapeString(text))
-			builder.WriteString("</a></li>\n")
-			links = append(links, href)
+			addLink(link.Href)
 		}
-		builder.WriteString("</ul>\n")
 	}
 
-	htmlValue := strings.TrimSpace(builder.String())
+	for _, match := range landingHrefPattern.FindAllStringSubmatch(decoded, -1) {
+		if len(match) > 1 {
+			addLink(match[1])
+		}
+	}
+
+	htmlValue := buildLandingHTML(title, abstract, links)
 	if htmlValue == "" {
 		return ExtractedDocument{}, false
 	}
@@ -296,72 +278,7 @@ func extractLandingPageFromRawHTML(rawURL string, htmlBody string) (ExtractedDoc
 		return ExtractedDocument{}, false
 	}
 
-	parsed := landingPage{}
-	if err := xml.Unmarshal([]byte(decoded), &parsed); err == nil {
-		title := strings.TrimSpace(parsed.Title)
-		abstract := strings.TrimSpace(parsed.Abstract)
-
-		links := make([]string, 0)
-		for _, section := range parsed.Sections.Section {
-			for _, card := range section.Cards.SimpleCard {
-				href := strings.TrimSpace(card.Href)
-				if href != "" {
-					links = append(links, href)
-				}
-			}
-		}
-		for _, section := range parsed.SideNav.Sections {
-			for _, link := range section.Links.SimpleLink {
-				href := strings.TrimSpace(link.Href)
-				if href != "" {
-					links = append(links, href)
-				}
-			}
-		}
-
-		htmlValue := buildLandingHTML(title, abstract, links)
-		if strings.TrimSpace(htmlValue) != "" {
-			return ExtractedDocument{
-				CanonicalURL: rawURL,
-				Title:        title,
-				HTML:         htmlValue,
-				Links:        links,
-			}, true
-		}
-	}
-
-	title := ""
-	if m := landingTitlePattern.FindStringSubmatch(decoded); len(m) > 1 {
-		title = strings.TrimSpace(html.UnescapeString(m[1]))
-	}
-	abstract := ""
-	if m := landingAbstractPattern.FindStringSubmatch(decoded); len(m) > 1 {
-		abstract = strings.TrimSpace(html.UnescapeString(m[1]))
-	}
-
-	linkMatches := landingHrefPattern.FindAllStringSubmatch(decoded, -1)
-	links := make([]string, 0, len(linkMatches))
-	for _, m := range linkMatches {
-		if len(m) < 2 {
-			continue
-		}
-		href := strings.TrimSpace(html.UnescapeString(m[1]))
-		if href != "" {
-			links = append(links, href)
-		}
-	}
-
-	htmlValue := buildLandingHTML(title, abstract, links)
-	if strings.TrimSpace(htmlValue) == "" {
-		return ExtractedDocument{}, false
-	}
-
-	return ExtractedDocument{
-		CanonicalURL: rawURL,
-		Title:        title,
-		HTML:         htmlValue,
-		Links:        links,
-	}, true
+	return extractLandingPageFromDecodedXML(rawURL, decoded, "")
 }
 
 func buildLandingHTML(title string, abstract string, links []string) string {

@@ -21,6 +21,8 @@
   "burst": 1,
   "max_retries": 3,
   "request_timeout_seconds": 20,
+  "min_request_delay_ms": 250,
+  "max_request_delay_ms": 900,
   "max_sections": 25,
   "selectors": [
     "#main-content",
