@@ -68,3 +68,28 @@ func TestRewriteHrefKeepsImageLinkAbsolute(t *testing.T) {
 		t.Fatalf("rewriteHref = %q, want original image URL %q", rewritten, href)
 	}
 }
+
+func TestRewriteHrefKeepsOriginalImageURLWithQueryAndFragment(t *testing.T) {
+	converter := NewConverter(config.Default(), NewMapper("docs"), nil)
+
+	source := "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+	href := "http://docs.aws.amazon.com/images/vpc/diagram.png?utm_source=mail#zoom"
+
+	rewritten := converter.rewriteHref(source, href)
+	if rewritten != href {
+		t.Fatalf("rewriteHref = %q, want unchanged original image URL %q", rewritten, href)
+	}
+}
+
+func TestRewriteAssetURLResolvesRelativeImageToAbsoluteWithoutDroppingParts(t *testing.T) {
+	converter := NewConverter(config.Default(), NewMapper("docs"), nil)
+
+	source := "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+	src := "../images/security-group-overview.png?ref=sidebar#full"
+
+	rewritten := converter.rewriteAssetURL(source, src)
+	want := "https://docs.aws.amazon.com/vpc/latest/images/security-group-overview.png?ref=sidebar#full"
+	if rewritten != want {
+		t.Fatalf("rewriteAssetURL = %q, want %q", rewritten, want)
+	}
+}

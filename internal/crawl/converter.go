@@ -81,6 +81,14 @@ func (c *Converter) rewriteHref(sourceURL string, href string) string {
 		return href
 	}
 
+	resolvedOriginal, err := resolveAbsoluteURL(sourceURL, href)
+	if err != nil {
+		return href
+	}
+	if parsedResolvedOriginal, err := url.Parse(resolvedOriginal); err == nil && isImagePath(parsedResolvedOriginal.Path) {
+		return resolvedOriginal
+	}
+
 	resolved, err := ResolveURL(sourceURL, href, c.config)
 	if err != nil {
 		return href
@@ -118,15 +126,38 @@ func isLikelyDocumentHref(pathValue string) bool {
 	return true
 }
 
+func isImagePath(pathValue string) bool {
+	lower := strings.ToLower(pathValue)
+	imageSuffixes := []string{".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".ico"}
+	for _, suffix := range imageSuffixes {
+		if strings.HasSuffix(lower, suffix) {
+			return true
+		}
+	}
+	return false
+}
+
 func (c *Converter) rewriteAssetURL(sourceURL string, value string) string {
 	if value == "" {
 		return value
 	}
-	resolved, err := ResolveURL(sourceURL, value, c.config)
+	resolved, err := resolveAbsoluteURL(sourceURL, value)
 	if err != nil {
 		return value
 	}
 	return resolved
+}
+
+func resolveAbsoluteURL(baseURL string, value string) (string, error) {
+	base, err := url.Parse(baseURL)
+	if err != nil {
+		return "", err
+	}
+	reference, err := url.Parse(strings.TrimSpace(value))
+	if err != nil {
+		return "", err
+	}
+	return base.ResolveReference(reference).String(), nil
 }
 
 func normalizeMarkdown(value string) string {
