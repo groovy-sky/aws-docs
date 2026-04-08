@@ -26,3 +26,17 @@ virtual network that you've defined.
 - [/vpc-lattice/latest/ug/](../vpc-lattice/latest/ug.md)
 - [/vpc-lattice/latest/APIReference/](../../reference/vpc-lattice/latest/apireference.md)
 - [/cli/latest/reference/vpc-lattice/](../cli/latest/reference/vpc-lattice.md)
+- [/AWSEC2/latest/APIReference/ec2-api.pdf#OperationList-query-vpc](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/ec2-api.pdf)
+- [/AWSEC2/latest/APIReference/ec2-api.pdf#operation-list-ipam](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/ec2-api.pdf)
+- [/AWSEC2/latest/APIReference/ec2-api.pdf#operation-list-privatelink](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/ec2-api.pdf)
+- [/AWSEC2/latest/APIReference/ec2-api.pdf#operation-list-tgw](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/ec2-api.pdf)
+- [/AWSEC2/latest/APIReference/ec2-api.pdf#OperationList-query-networkmanager](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/ec2-api.pdf)
+- [http://docs.aws.amazon.com/general/latest/gr/glos-chap.html](../../general/latest/gr/glos-chap.md)
+- [https://aws.amazon.com/documentation/gettingstarted/](https://aws.amazon.com/documentation/gettingstarted)
+- [https://aws.amazon.com/tools/](https://aws.amazon.com/tools)
+- [http://docs.aws.amazon.com/general/latest/gr/Welcome.html](../../general/latest/gr/welcome.md)
+- [https://aws.amazon.com/training/](https://aws.amazon.com/training)
+- [https://aws.amazon.com/solutions/case-studies/](https://aws.amazon.com/solutions/case-studies)
+- [https://aws.amazon.com/whitepapers/](https://aws.amazon.com/whitepapers)
+
+All content copied from https://docs.aws.amazon.com/.
