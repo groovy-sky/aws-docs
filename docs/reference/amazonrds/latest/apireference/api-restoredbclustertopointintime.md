@@ -855,7 +855,7 @@ https://rds.us-west-2.amazonaws.com/
     &SourceDBClusterIdentifier=sample-cluster
     &Version=2014-10-31
     &X-Amz-Algorithm=AWS4-HMAC-SHA256
-    &X-Amz-Credential=AKIADQKE4SARGYLE/20230213/us-west-2/rds/aws4_request
+    &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20230213/us-west-2/rds/aws4_request
     &X-Amz-Date=20230213T224930Z
     &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
     &X-Amz-Signature=e3b88945052247e82eaeaca6e269e7f6e18a36147b45c3b077bc600472e70de6
@@ -927,7 +927,7 @@ https://rds.us-west-2.amazonaws.com/
     &PubliclyAccessible=true
     &Version=2014-10-31
     &X-Amz-Algorithm=AWS4-HMAC-SHA256
-    &X-Amz-Credential=AKIADQKE4SARGYLE/20221026/us-west-2/rds/aws4_request
+    &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20221026/us-west-2/rds/aws4_request
     &X-Amz-Date=20221027T000601Z
     &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
     &X-Amz-Signature=e3b88945052247e82eaeaca6e269e7f6e18a36147b45c3b077bc600472e70de6
@@ -1040,8 +1040,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/restoredbclustertopointintime.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 RestoreDBClusterFromSnapshot
 
 RestoreDBInstanceFromDBSnapshot
+
+All content copied from https://docs.aws.amazon.com/.

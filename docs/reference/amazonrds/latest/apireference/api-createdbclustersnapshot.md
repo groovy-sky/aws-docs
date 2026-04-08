@@ -119,7 +119,7 @@ https://rds.us-east-1.amazonaws.com/
     &SignatureVersion=4
     &Version=2014-10-31
     &X-Amz-Algorithm=AWS4-HMAC-SHA256
-    &X-Amz-Credential=AKIADQKE4SARGYLE/20150318/us-east-1/rds/aws4_request
+    &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20150318/us-east-1/rds/aws4_request
     &X-Amz-Date=20150318T205321Z
     &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
     &X-Amz-Signature=9573ced573a41cdec8e2ef1d9b5235a141f97ae30b4469fc9b0f16149399c4bf
@@ -179,8 +179,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/createdbclustersnapshot.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreateDBClusterParameterGroup
 
 CreateDBInstance
+
+All content copied from https://docs.aws.amazon.com/.

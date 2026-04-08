@@ -127,7 +127,7 @@ https://rds.us-west-2.amazonaws.com/
     &SignatureVersion=4
     &Version=2014-10-31
     &X-Amz-Algorithm=AWS4-HMAC-SHA256
-    &X-Amz-Credential=AKIADQKE4SARGYLE/20161228/us-west-2/rds/aws4_request
+    &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20161228/us-west-2/rds/aws4_request
     &X-Amz-Date=20210628T220515Z
     &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
     &X-Amz-Signature=eb44f1ce3dab4e1dbf113d8d2a265d88d17ece1999ffd36be85714ed36cbdbe3
@@ -190,8 +190,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/modifydbsnapshot.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ModifyDBShardGroup
 
 ModifyDBSnapshotAttribute
+
+All content copied from https://docs.aws.amazon.com/.

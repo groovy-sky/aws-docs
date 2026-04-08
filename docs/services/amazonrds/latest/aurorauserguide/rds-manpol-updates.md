@@ -1,0 +1,200 @@
+# Amazon RDS updates to AWS managed policies
+
+View details about updates to AWS managed policies for Amazon RDS since this service began tracking these changes. For automatic
+alerts about changes to this page, subscribe to the RSS feed on the Amazon RDS [Document \
+history](../userguide/whatsnew.md) page.
+
+ChangeDescriptionDate[AWS managed policy: AmazonRDSPreviewServiceRolePolicy](rds-security-iam-awsmanpol.md#rds-security-iam-awsmanpol-AmazonRDSPreviewServiceRolePolicy) – Update to
+existing policy
+
+Amazon RDS removed `sns:Publish` permission from the
+`AmazonRDSPreviewServiceRolePolicy` of the
+`AWSServiceRoleForRDSPreview` service-linked role. For more information, see [AWS managed policy: AmazonRDSPreviewServiceRolePolicy](rds-security-iam-awsmanpol.md#rds-security-iam-awsmanpol-AmazonRDSPreviewServiceRolePolicy).
+
+August 7, 2024[AWS managed policy: AmazonRDSBetaServiceRolePolicy](rds-security-iam-awsmanpol.md#rds-security-iam-awsmanpol-AmazonRDSBetaServiceRolePolicy) – Update to
+existing policy
+
+Amazon RDS removed `sns:Publish` permission from the
+`AmazonRDSBetaServiceRolePolicy` of the
+`AWSServiceRoleForRDSBeta` service-linked role. For more information, see [AWS managed policy: AmazonRDSBetaServiceRolePolicy](rds-security-iam-awsmanpol.md#rds-security-iam-awsmanpol-AmazonRDSBetaServiceRolePolicy).
+
+August 7, 2024[AWS managed policy: AmazonRDSServiceRolePolicy](rds-security-iam-awsmanpol.md#rds-security-iam-awsmanpol-AmazonRDSServiceRolePolicy) – Update to
+existing policy
+
+Amazon RDS removed `sns:Publish` permission from the
+`AmazonRDSServiceRolePolicy` of the
+` AWSServiceRoleForRDS` service-linked role. For more information, see [AWS managed policy: AmazonRDSServiceRolePolicy](rds-security-iam-awsmanpol.md#rds-security-iam-awsmanpol-AmazonRDSServiceRolePolicy).
+
+July 2, 2024[AWS managed policies for Amazon RDS](rds-security-iam-awsmanpol.md) – Update to existing
+policy
+
+Amazon RDS added a new permission to the
+`AmazonRDSCustomServiceRolePolicy` of the
+`AWSServiceRoleForRDSCustom` service-linked role to allow
+RDS Custom for SQL Server to modify the underlying database host instance type. RDS also
+added the `ec2:DescribeInstanceTypes` permission to get
+instance type information for database host. For more information, see
+[AWS managed policies for Amazon RDS](rds-security-iam-awsmanpol.md).
+
+April 8, 2024
+
+[AWS managed policies for Amazon RDS](rds-security-iam-awsmanpol.md) – New
+policy
+
+Amazon RDS added a new managed policy named
+`AmazonRDSCustomInstanceProfileRolePolicy`
+to allow RDS Custom to perform automation actions and database management tasks
+through an EC2 instance profile. For more information, see [AWS managed policies for Amazon RDS](rds-security-iam-awsmanpol.md).February 27, 2024
+
+[Service-linked role permissions for Amazon Aurora](usingwithrds-iam-servicelinkedroles.md#service-linked-role-permissions) –
+Update to an existing policy
+
+Amazon RDS added new statement IDs to the `AmazonRDSServiceRolePolicy` of the
+`AWSServiceRoleForRDS` service-linked role.
+
+For more information,
+see [Service-linked role permissions for Amazon Aurora](usingwithrds-iam-servicelinkedroles.md#service-linked-role-permissions).
+
+January 19, 2024
+
+[AWS managed policies for Amazon RDS](rds-security-iam-awsmanpol.md) – Update to existing policies
+
+The `AmazonRDSPerformanceInsightsReadOnly` and
+`AmazonRDSPerformanceInsightsFullAccess` managed policies
+now includes `Sid` (statement ID) as an identifier in the
+policy statement.
+
+For more information,
+see [AWS managed policy: AmazonRDSPerformanceInsightsReadOnly](rds-security-iam-awsmanpol.md#rds-security-iam-awsmanpol-AmazonRDSPerformanceInsightsReadOnly) and
+[AWS managed policy: AmazonRDSPerformanceInsightsFullAccess](rds-security-iam-awsmanpol.md#rds-security-iam-awsmanpol-AmazonRDSPerformanceInsightsFullAccess)
+
+October 23, 2023
+
+[AWS managed policies for Amazon RDS](rds-security-iam-awsmanpol.md) – Update to existing policy
+
+Amazon RDS added new permissions to `AmazonRDSFullAccess`
+managed policy. The permissions allow you to generate, view, and delete the performance analysis report for a
+time period.
+
+For more information about configuring access policies for Performance Insights, see [Configuring access policies for Performance Insights](user-perfinsights-access-control.md)
+
+August 17, 2023
+
+[AWS managed policies for Amazon RDS](rds-security-iam-awsmanpol.md) – New policy and
+update to existing policy
+
+Amazon RDS added new permissions to `AmazonRDSPerformanceInsightsReadOnly` managed policy and a new managed policy named
+`AmazonRDSPerformanceInsightsFullAccess`. These
+permissions allow you to analyse the Performance Insights for a time period, view the
+analysis results along with the recommendations, and delete the
+reports.
+
+For more information about configuring access policies for Performance Insights, see [Configuring access policies for Performance Insights](user-perfinsights-access-control.md)
+
+August 16, 2023
+
+[AWS managed policies for Amazon RDS](rds-security-iam-awsmanpol.md) – Update to an
+existing policy
+
+Amazon RDS added a new Amazon CloudWatch namespace `ListMetrics` to `AmazonRDSFullAccess` and `AmazonRDSReadOnlyAccess`.
+
+This namespace is required for Amazon RDS to list specific resource usage metrics.
+
+For more information, see [Overview of managing access permissions to your CloudWatch resources](../../../amazoncloudwatch/latest/monitoring/iam-access-control-overview-cw.md) in the _Amazon CloudWatch User Guide_.
+
+April 4, 2023
+
+[Service-linked role permissions for Amazon Aurora](usingwithrds-iam-servicelinkedroles.md#service-linked-role-permissions) –
+Update to an existing policy
+
+Amazon RDS added new permissions to the
+`AmazonRDSServiceRolePolicy` of the
+`AWSServiceRoleForRDS` service-linked role for
+integration with AWS Secrets Manager. RDS requires integration with Secrets Manager for
+managing master user passwords in Secrets Manager. The secret uses a reserved
+naming convention and restricts customer updates.
+
+For more information, see [Password management with Amazon Aurora and AWS Secrets Manager](rds-secrets-manager.md).
+
+December 22, 2022
+
+[AWS managed policies for Amazon RDS](rds-security-iam-awsmanpol.md) – Update to existing policies
+
+Amazon RDS added a new permission to the `AmazonRDSFullAccess`
+and `AmazonRDSReadOnlyAccess` managed policies to allow you
+to turn on Amazon DevOps Guru in the RDS console. This permission is required to check whether DevOps Guru is turned on.
+
+For more information, see [Configuring IAM access policies for DevOps Guru for RDS](devops-guru-for-rds.md#devops-guru-for-rds.configuring.access).
+
+December 19, 2022
+
+[Service-linked role permissions for Amazon Aurora](usingwithrds-iam-servicelinkedroles.md#service-linked-role-permissions) –
+Update to an existing policy
+
+Amazon RDS added a new Amazon CloudWatch namespace to `AmazonRDSPreviewServiceRolePolicy` for `PutMetricData`.
+
+This namespace is required for Amazon RDS to publish resource usage metrics.
+
+For more information, see [Using condition keys to limit access to CloudWatch namespaces](../../../amazoncloudwatch/latest/monitoring/iam-cw-condition-keys-namespace.md) in the _Amazon CloudWatch User Guide_.
+
+June 7, 2022
+
+[Service-linked role permissions for Amazon Aurora](usingwithrds-iam-servicelinkedroles.md#service-linked-role-permissions) –
+Update to an existing policy
+
+Amazon RDS added a new Amazon CloudWatch namespace to `AmazonRDSBetaServiceRolePolicy` for `PutMetricData`.
+
+This namespace is required for Amazon RDS to publish resource usage metrics.
+
+For more information, see [Using condition keys to limit access to CloudWatch namespaces](../../../amazoncloudwatch/latest/monitoring/iam-cw-condition-keys-namespace.md) in the _Amazon CloudWatch User Guide_.
+
+June 7, 2022
+
+[Service-linked role permissions for Amazon Aurora](usingwithrds-iam-servicelinkedroles.md#service-linked-role-permissions) –
+Update to an existing policy
+
+Amazon RDS added a new Amazon CloudWatch namespace to `AWSServiceRoleForRDS` for `PutMetricData`.
+
+This namespace is required for Amazon RDS to publish resource usage metrics.
+
+For more information, see [Using condition keys to limit access to CloudWatch namespaces](../../../amazoncloudwatch/latest/monitoring/iam-cw-condition-keys-namespace.md) in the _Amazon CloudWatch User Guide_.
+
+April 22, 2022
+
+[AWS managed policies for Amazon RDS](rds-security-iam-awsmanpol.md) – New
+policy
+
+Amazon RDS added a new managed policy named
+`AmazonRDSPerformanceInsightsReadOnly` to allow Amazon RDS to
+call AWS services on behalf of your DB instances.
+
+For more information about configuring access policies for Performance Insights, see
+[Configuring access policies for Performance Insights](user-perfinsights-access-control.md)
+
+March 10, 2022
+
+[Service-linked role permissions for Amazon Aurora](usingwithrds-iam-servicelinkedroles.md#service-linked-role-permissions) –
+Update to an existing policy
+
+Amazon RDS added new Amazon CloudWatch namespaces to `AWSServiceRoleForRDS` for `PutMetricData`.
+
+These namespaces are required for Amazon DocumentDB (with MongoDB compatibility) and Amazon Neptune to publish CloudWatch metrics.
+
+For more information, see [Using condition keys to limit access to CloudWatch\
+namespaces](../../../amazoncloudwatch/latest/monitoring/iam-cw-condition-keys-namespace.md) in the _Amazon CloudWatch User Guide_.
+
+March 4, 2022
+
+Amazon RDS started tracking changes
+
+Amazon RDS started tracking changes for its AWS managed policies.
+
+October 26, 2021
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+AWS managed policies
+
+Cross-service confused deputy prevention
+
+All content copied from https://docs.aws.amazon.com/.

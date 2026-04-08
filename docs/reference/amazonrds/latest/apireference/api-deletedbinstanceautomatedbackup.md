@@ -70,7 +70,7 @@ This example illustrates one usage of DeleteDBInstanceAutomatedBackup.
  &SignatureVersion=4
  &Version=2014-10-31
  &X-Amz-Algorithm=AWS4-HMAC-SHA256
- &X-Amz-Credential=AKIADQKE4SARGYLE/20140420/us-east-1/rds/aws4_request
+ &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20140420/us-east-1/rds/aws4_request
  &X-Amz-Date=20180912T200207Z
  &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
 
@@ -137,8 +137,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/deletedbinstanceautomatedbackup.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DeleteDBInstance
 
 DeleteDBParameterGroup
+
+All content copied from https://docs.aws.amazon.com/.

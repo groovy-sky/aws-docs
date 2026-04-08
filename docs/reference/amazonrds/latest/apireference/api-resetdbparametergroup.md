@@ -113,7 +113,7 @@ https://rds.us-east-1.amazonaws.com/
    &SignatureVersion=4
    &Version=2014-10-31
    &X-Amz-Algorithm=AWS4-HMAC-SHA256
-   &X-Amz-Credential=AKIADQKE4SARGYLE/20140428/us-east-1/rds/aws4_request
+   &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20140428/us-east-1/rds/aws4_request
    &X-Amz-Date=20140428T225714Z
    &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
    &X-Amz-Signature=709d1418c91c5ef4129d4665e5c2820002a9665699acf4204683c778f03c3573
@@ -152,7 +152,7 @@ https://rds.us-east-1.amazonaws.com/
    &SignatureVersion=4
    &Version=2014-10-31
    &X-Amz-Algorithm=AWS4-HMAC-SHA256
-   &X-Amz-Credential=AKIADQKE4SARGYLE/20140428/us-east-1/rds/aws4_request
+   &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20140428/us-east-1/rds/aws4_request
    &X-Amz-Date=20140428T230509Z
    &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
    &X-Amz-Signature=d343dd7fcc3789d30295b5e3fc67262f28af15d71fcaf978921f0e8846b2d1e6
@@ -198,8 +198,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/resetdbparametergroup.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ResetDBClusterParameterGroup
 
 RestoreDBClusterFromS3
+
+All content copied from https://docs.aws.amazon.com/.

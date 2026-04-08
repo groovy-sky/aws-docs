@@ -206,7 +206,7 @@ https://rds.us-east-1.amazonaws.com/
    &SubscriptionName=myawsuser-secgrp
    &Version=2014-10-31
    &X-Amz-Algorithm=AWS4-HMAC-SHA256
-   &X-Amz-Credential=AKIADQKE4SARGYLE/20140425/us-east-1/rds/aws4_request
+   &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20140425/us-east-1/rds/aws4_request
    &X-Amz-Date=20140425T214325Z
    &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
    &X-Amz-Signature=7045960f6ab15609571fb05278004256e186b7633ab2a3ae46826d7713e0b461
@@ -261,7 +261,7 @@ https://rds.us-east-1.amazonaws.com/
    &SubscriptionName=myawsuser-inst
    &Version=2014-10-31
    &X-Amz-Algorithm=AWS4-HMAC-SHA256
-   &X-Amz-Credential=AKIADQKE4SARGYLE/20140429/us-east-1/rds/aws4_request
+   &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20140429/us-east-1/rds/aws4_request
    &X-Amz-Date=20140429T184410Z
    &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
    &X-Amz-Signature=1e1879f20ef3aec07135d69cc192426bf1cc5c42fc9d1acc7726bcd93155fb71
@@ -320,8 +320,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/createeventsubscription.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreateDBSubnetGroup
 
 CreateGlobalCluster
+
+All content copied from https://docs.aws.amazon.com/.

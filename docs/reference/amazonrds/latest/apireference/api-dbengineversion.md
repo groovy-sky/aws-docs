@@ -21,7 +21,7 @@ Required: No
 JSON string that lists the installation files and parameters that RDS Custom uses to create a custom engine version (CEV).
 RDS Custom applies the patches in the order in which they're listed in the manifest. You can set the Oracle home, Oracle base,
 and UNIX/Linux user and group using the installation parameters. For more information,
-see [JSON fields in the CEV manifest](../../../../services/amazonrds/latest/userguide/custom-cev-preparing-custom-cev-preparing-manifest-fields.md) in the _Amazon RDS User Guide_.
+see [JSON fields in the CEV manifest](../../../../services/amazonrds/latest/userguide/custom-cev-preparing.md#custom-cev.preparing.manifest.fields) in the _Amazon RDS User Guide_.
 
 Type: String
 
@@ -357,8 +357,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/dbengineversion.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DBClusterStatusInfo
 
 DBInstance
+
+All content copied from https://docs.aws.amazon.com/.

@@ -181,7 +181,7 @@ https://rds.us-east-1.amazonaws.com/
    &SkipFinalSnapshot=true
    &Version=2014-10-31
    &X-Amz-Algorithm=AWS4-HMAC-SHA256
-   &X-Amz-Credential=AKIADQKE4SARGYLE/20131109/us-east-1/rds/aws4_request
+   &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20131109/us-east-1/rds/aws4_request
    &X-Amz-Date=20131109T001924Z
    &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
    &X-Amz-Signature=70e774e243c0fbb7ffe84029637005bf543e9e321cdf432c0b272be5687d32d8
@@ -271,8 +271,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/deletedbinstance.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DeleteDBClusterSnapshot
 
 DeleteDBInstanceAutomatedBackup
+
+All content copied from https://docs.aws.amazon.com/.

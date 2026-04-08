@@ -1,0 +1,78 @@
+# Tuning with wait events for Aurora PostgreSQL
+
+Wait events are an important tuning tool for Aurora PostgreSQL. When you can find out why
+sessions are waiting for resources and what they are doing, you're better able to
+reduce bottlenecks. You can use the information in this section to find possible causes and
+corrective actions. Before delving into this section, we strongly recommend that you
+understand basic Aurora concepts, especially the following topics:
+
+- [Amazon Aurora storage](aurora-overview-storagereliability.md)
+
+- [Managing performance and scaling for Aurora DB clusters](aurora-managing-performance.md)
+
+###### Important
+
+The wait events in this section are specific to Aurora PostgreSQL. Use the information in
+this section to tune Amazon Aurora only, not RDS for PostgreSQL.
+
+Some wait events in this section have no analogs in the open source versions of these
+database engines. Other wait events have the same names as events in open source
+engines, but behave differently. For example, Amazon Aurora storage works differently from
+open source storage, so storage-related wait events indicate different resource
+conditions.
+
+###### Topics
+
+- [Essential concepts for Aurora PostgreSQL tuning](aurorapostgresql-tuning-concepts.md)
+
+- [Aurora PostgreSQL wait events](aurorapostgresql-tuning-concepts-summary.md)
+
+- [Client:ClientRead](apg-waits-clientread.md)
+
+- [Client:ClientWrite](apg-waits-clientwrite.md)
+
+- [CPU](apg-waits-cpu.md)
+
+- [IO:BufFileRead and IO:BufFileWrite](apg-waits-iobuffile.md)
+
+- [IO:DataFileRead](apg-waits-iodatafileread.md)
+
+- [IO:XactSync](apg-waits-xactsync.md)
+
+- [IPC:DamRecordTxAck](apg-waits-ipcdamrecordtxac.md)
+
+- [IPC:parallel wait events](apg-ipc-parallel.md)
+
+- [IPC:ProcArrayGroupUpdate](apg-rpg-ipcprocarraygroup.md)
+
+- [Lock:advisory](apg-waits-lockadvisory.md)
+
+- [Lock:extend](apg-waits-lockextend.md)
+
+- [Lock:Relation](apg-waits-lockrelation.md)
+
+- [Lock:transactionid](apg-waits-locktransactionid.md)
+
+- [Lock:tuple](apg-waits-locktuple.md)
+
+- [LWLock:buffer\_content (BufferContent)](apg-waits-lockbuffercontent.md)
+
+- [LWLock:buffer\_mapping](apg-waits-lwl-buffer-mapping.md)
+
+- [LWLock:BufferIO (IPC:BufferIO)](apg-waits-lwlockbufferio.md)
+
+- [LWLock:lock\_manager](apg-waits-lw-lock-manager.md)
+
+- [LWLock:MultiXact](apg-waits-lwlockmultixact.md)
+
+- [LWLock:pg\_stat\_statements](apg-rpg-lwlockpgstat.md)
+
+- [Timeout:PgSleep](apg-waits-timeoutpgsleep.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Viewing temporary file usage with Performance Insights
+
+Essential concepts for Aurora PostgreSQL tuning
+
+All content copied from https://docs.aws.amazon.com/.

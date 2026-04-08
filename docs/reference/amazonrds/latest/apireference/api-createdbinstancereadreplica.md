@@ -67,7 +67,7 @@ This setting doesn't apply to RDS Custom DB instances.
 
 Default: Inherits the value from the source DB instance.
 
-For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](../../../../services/amazonrds/latest/userguide/user-upgradedbinstance-upgrading-user-upgradedbinstance-upgrading-autominorversionupgrades.md).
+For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](../../../../services/amazonrds/latest/userguide/user-upgradedbinstance-upgrading.md#USER_UpgradeDBInstance.Upgrading.AutoMinorVersionUpgrades).
 
 Type: Boolean
 
@@ -359,7 +359,7 @@ private cloud (VPC) on your local network.
 For more information about RDS on Outposts, see [Working with Amazon RDS on AWS Outposts](../../../../services/amazonrds/latest/userguide/rds-on-outposts.md)
 in the _Amazon RDS User Guide_.
 
-For more information about CoIPs, see [Customer-owned IP addresses](../../../../services/outposts/latest/userguide/routing-ip-addressing.md)
+For more information about CoIPs, see [Customer-owned IP addresses](../../../../services/outposts/latest/userguide/routing.md#ip-addressing)
 in the _AWS Outposts User Guide_.
 
 Type: Boolean
@@ -463,7 +463,7 @@ Required: No
 The ARN for the IAM role that permits RDS to send enhanced monitoring metrics to Amazon CloudWatch Logs. For
 example, `arn:aws:iam:123456789012:role/emaccess`. For information on creating a monitoring role,
 go to [To \
-create an IAM role for Amazon RDS Enhanced Monitoring](../../../../services/amazonrds/latest/userguide/user-monitoring-user-monitoring-os-iamrole.md) in the _Amazon RDS User Guide_.
+create an IAM role for Amazon RDS Enhanced Monitoring](../../../../services/amazonrds/latest/userguide/user-monitoring.md#USER_Monitoring.OS.IAMRole) in the _Amazon RDS User Guide_.
 
 If `MonitoringInterval` is set to a value other than 0, then you must
 supply a `MonitoringRoleArn` value.
@@ -628,7 +628,7 @@ following example:
 
 To learn how to generate a Signature Version 4 signed request, see
 [Authenticating Requests: Using Query Parameters (AWS Signature Version 4)](../../../../services/s3/latest/api/sigv4-query-string-auth.md) and
-[Signature Version 4 Signing Process](../../../../general/general/latest/gr/signature-version-4.md).
+[Signature Version 4 Signing Process](../../../../general/latest/gr/signature-version-4.md).
 
 ###### Note
 
@@ -757,10 +757,10 @@ instance.
 - Can't be specified if the `SourceDBClusterIdentifier` parameter is
 also specified.
 
-- For the limitations of Oracle read replicas, see [Version and licensing considerations for RDS for Oracle replicas](../../../../services/amazonrds/latest/userguide/oracle-read-replicas-limitations-oracle-read-replicas-limitations-versions-and-licenses.md) in the
+- For the limitations of Oracle read replicas, see [Version and licensing considerations for RDS for Oracle replicas](../../../../services/amazonrds/latest/userguide/oracle-read-replicas-limitations.md#oracle-read-replicas.limitations.versions-and-licenses) in the
 _Amazon RDS User Guide_.
 
-- For the limitations of SQL Server read replicas, see [Read replica limitations with SQL Server](../../../../services/amazonrds/latest/userguide/sqlserver-readreplicas-sqlserver-readreplicas-limitations.md) in the _Amazon RDS User Guide_.
+- For the limitations of SQL Server read replicas, see [Read replica limitations with SQL Server](../../../../services/amazonrds/latest/userguide/sqlserver-readreplicas.md#SQLServer.ReadReplicas.Limitations) in the _Amazon RDS User Guide_.
 
 - The specified DB instance must have automatic backups enabled, that is, its backup
 retention period must be greater than 0.
@@ -769,7 +769,7 @@ retention period must be greater than 0.
 instance identifier.
 
 - If the source DB instance is in a different AWS Region from the read
-replica, specify a valid DB instance ARN. For more information, see [Constructing an ARN for Amazon RDS](../../../../services/amazonrds/latest/userguide/user-tagging-arn-user-tagging-arn-constructing.md) in the _Amazon RDS User_
+replica, specify a valid DB instance ARN. For more information, see [Constructing an ARN for Amazon RDS](../../../../services/amazonrds/latest/userguide/user-tagging-arn.md#USER_Tagging.ARN.Constructing) in the _Amazon RDS User_
 _Guide_. This doesn't apply to SQL Server or RDS Custom, which
 don't support cross-Region replicas.
 
@@ -1058,7 +1058,7 @@ https://rds.us-east-1.amazonaws.com/
    &SourceDBInstanceIdentifier=mysqldb
    &Version=2014-10-31
    &X-Amz-Algorithm=AWS4-HMAC-SHA256
-   &X-Amz-Credential=AKIADQKE4SARGYLE/20140425/us-east-1/rds/aws4_request
+   &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20140425/us-east-1/rds/aws4_request
    &X-Amz-Date=20140425T170525Z
    &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
    &X-Amz-Signature=a5bc7bb9648272e9967c76fc582b308d3ee37d6c4f7a4eb62c2d885ec595c373
@@ -1142,8 +1142,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/createdbinstancereadreplica.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreateDBInstance
 
 CreateDBParameterGroup
+
+All content copied from https://docs.aws.amazon.com/.

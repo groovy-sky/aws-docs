@@ -131,7 +131,7 @@ https://rds.us-west-2.amazonaws.com/
    &SignatureVersion=4
    &Version=2014-10-31
    &X-Amz-Algorithm=AWS4-HMAC-SHA256
-   &X-Amz-Credential=AKIADQKE4SARGYLE/20140421/us-west-2/rds/aws4_request
+   &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20140421/us-west-2/rds/aws4_request
    &X-Amz-Date=20140421T194732Z
    &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
    &X-Amz-Signature=4772d17a4c43bcd209ff42a0778dd23e73f8434253effd7ac53b89ade3dad45f
@@ -190,8 +190,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/describedbmajorengineversions.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeDBLogFiles
 
 DescribeDBParameterGroups
+
+All content copied from https://docs.aws.amazon.com/.

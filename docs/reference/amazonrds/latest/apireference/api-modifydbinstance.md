@@ -115,7 +115,7 @@ doesn't cause an outage.
 
 For an RDS Custom DB instance, don't enable this setting. Otherwise, the operation returns an error.
 
-For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](../../../../services/amazonrds/latest/userguide/user-upgradedbinstance-upgrading-user-upgradedbinstance-upgrading-autominorversionupgrades.md).
+For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](../../../../services/amazonrds/latest/userguide/user-upgradedbinstance-upgrading.md#USER_UpgradeDBInstance.Upgrading.AutoMinorVersionUpgrades).
 
 Type: Boolean
 
@@ -227,9 +227,9 @@ The following values are valid for each DB engine:
 
 - RDS for PostgreSQL - `postgresql | upgrade | iam-db-auth-error`
 
-For more information about exporting CloudWatch Logs for Amazon RDS, see [Publishing Database Logs to Amazon CloudWatch Logs](../../../../services/amazonrds/latest/userguide/user-logaccess-user-logaccess-procedural-uploadtocloudwatch.md) in the _Amazon RDS User Guide_.
+For more information about exporting CloudWatch Logs for Amazon RDS, see [Publishing Database Logs to Amazon CloudWatch Logs](../../../../services/amazonrds/latest/userguide/user-logaccess.md#USER_LogAccess.Procedural.UploadtoCloudWatch) in the _Amazon RDS User Guide_.
 
-For more information about exporting CloudWatch Logs for Amazon Aurora, see [Publishing Database Logs to Amazon CloudWatch Logs](../../../../services/amazonrds/latest/aurorauserguide/user-logaccess-user-logaccess-procedural-uploadtocloudwatch.md) in the _Amazon Aurora User Guide_.
+For more information about exporting CloudWatch Logs for Amazon Aurora, see [Publishing Database Logs to Amazon CloudWatch Logs](../../../../services/amazonrds/latest/aurorauserguide/user-logaccess.md#USER_LogAccess.Procedural.UploadtoCloudWatch) in the _Amazon Aurora User Guide_.
 
 Type: [CloudwatchLogsExportConfiguration](api-cloudwatchlogsexportconfiguration.md) object
 
@@ -267,7 +267,7 @@ The new compute and memory capacity of the DB instance, for example `db.m4.large
 AWS Regions, or for all database engines. For the full list of DB instance classes, and availability for your engine, see [DB Instance Class](../../../../services/amazonrds/latest/userguide/concepts-dbinstanceclass.md) in the
 _Amazon RDS User Guide_ or
 [Aurora\
-DB instance classes](../../../../services/amazonrds/latest/aurorauserguide/concepts-dbinstanceclass.md) in the _Amazon Aurora User Guide_. For RDS Custom, see [DB instance class support for RDS Custom for Oracle](../../../../services/amazonrds/latest/userguide/custom-reqs-limits-custom-reqs-limits-instances.md) and [DB instance class support for RDS Custom for SQL Server](../../../../services/amazonrds/latest/userguide/custom-reqs-limits-ms-custom-reqs-limits-instancesms.md).
+DB instance classes](../../../../services/amazonrds/latest/aurorauserguide/concepts-dbinstanceclass.md) in the _Amazon Aurora User Guide_. For RDS Custom, see [DB instance class support for RDS Custom for Oracle](../../../../services/amazonrds/latest/userguide/custom-reqs-limits.md#custom-reqs-limits.instances) and [DB instance class support for RDS Custom for SQL Server](../../../../services/amazonrds/latest/userguide/custom-reqs-limits-ms.md#custom-reqs-limits.instancesMS).
 
 If you modify the DB instance class, an outage occurs during the change. The change is
 applied during the next maintenance window, unless you specify
@@ -370,7 +370,7 @@ You can use this parameter to move your DB instance to a different VPC.
 
 If your DB instance isn't in a VPC, you can also use this parameter to move your DB instance into a VPC.
 For more information, see
-[Working with a DB instance in a VPC](../../../../services/amazonrds/latest/userguide/user-vpc-workingwithrdsinstanceinavpc-user-vpc-non-vpc2vpc.md)
+[Working with a DB instance in a VPC](../../../../services/amazonrds/latest/userguide/user-vpc-workingwithrdsinstanceinavpc.md#USER_VPC.Non-VPC2VPC)
 in the _Amazon RDS User Guide_.
 
 Changing the subnet group causes an outage during the change.
@@ -508,7 +508,7 @@ private cloud (VPC) on your local network.
 For more information about RDS on Outposts, see [Working with Amazon RDS on AWS Outposts](../../../../services/amazonrds/latest/userguide/rds-on-outposts.md)
 in the _Amazon RDS User Guide_.
 
-For more information about CoIPs, see [Customer-owned IP addresses](../../../../services/outposts/latest/userguide/routing-ip-addressing.md)
+For more information about CoIPs, see [Customer-owned IP addresses](../../../../services/outposts/latest/userguide/routing.md#ip-addressing)
 in the _AWS Outposts User Guide_.
 
 Type: Boolean
@@ -810,7 +810,7 @@ Required: No
 The upper limit in gibibytes (GiB) to which Amazon RDS can automatically scale the storage of the DB instance.
 
 For more information about this setting, including limitations that apply to it, see
-[Managing capacity automatically with Amazon RDS storage autoscaling](../../../../services/amazonrds/latest/userguide/user-piops-storagetypes-user-piops-autoscaling.md)
+[Managing capacity automatically with Amazon RDS storage autoscaling](../../../../services/amazonrds/latest/userguide/user-piops-storagetypes.md#USER_PIOPS.Autoscaling)
 in the _Amazon RDS User Guide_.
 
 This setting doesn't apply to RDS Custom DB instances.
@@ -842,7 +842,7 @@ Required: No
 The ARN for the IAM role that permits RDS to send enhanced monitoring metrics to Amazon CloudWatch Logs. For
 example, `arn:aws:iam:123456789012:role/emaccess`. For information on creating a monitoring role,
 see [To \
-create an IAM role for Amazon RDS Enhanced Monitoring](../../../../services/amazonrds/latest/userguide/user-monitoring-user-monitoring-os-iamrole.md) in the _Amazon RDS User Guide._
+create an IAM role for Amazon RDS Enhanced Monitoring](../../../../services/amazonrds/latest/userguide/user-monitoring.md#USER_Monitoring.OS.IAMRole) in the _Amazon RDS User Guide._
 
 If `MonitoringInterval` is set to a value other than `0`, supply a `MonitoringRoleArn`
 value.
@@ -993,7 +993,7 @@ if automated backups are enabled,
 as determined by the `BackupRetentionPeriod` parameter.
 Changing this parameter doesn't result in an outage and the change is asynchronously applied as soon as possible.
 The default is a 30-minute window selected at random from an
-8-hour block of time for each AWS Region. For more information, see [Backup window](../../../../services/amazonrds/latest/userguide/user-workingwithautomatedbackups-user-workingwithautomatedbackups-backupwindow.md) in the _Amazon RDS User Guide_.
+8-hour block of time for each AWS Region. For more information, see [Backup window](../../../../services/amazonrds/latest/userguide/user-workingwithautomatedbackups.md#USER_WorkingWithAutomatedBackups.BackupWindow) in the _Amazon RDS User Guide_.
 
 This setting doesn't apply to Amazon Aurora DB instances. The daily time range for creating automated backups is managed by
 the DB cluster. For more information, see `ModifyDBCluster`.
@@ -1023,7 +1023,7 @@ of the DB instance. If you change this window to the current time, there must be
 minutes between the current time and end of the window to ensure pending changes are
 applied.
 
-For more information, see [Amazon RDS Maintenance Window](../../../../services/amazonrds/latest/userguide/user-upgradedbinstance-maintenance-concepts-dbmaintenance.md) in the _Amazon RDS User Guide._
+For more information, see [Amazon RDS Maintenance Window](../../../../services/amazonrds/latest/userguide/user-upgradedbinstance-maintenance.md#Concepts.DBMaintenance) in the _Amazon RDS User Guide._
 
 Default: Uses existing setting
 
@@ -1057,7 +1057,7 @@ Required: No
 
 The order of priority in which an Aurora Replica is promoted to the primary instance
 after a failure of the existing primary instance. For more information,
-see [Fault Tolerance for an Aurora DB Cluster](../../../../services/amazonrds/latest/aurorauserguide/concepts-aurorahighavailability-aurora-managing-faulttolerance.md) in the _Amazon Aurora User Guide_.
+see [Fault Tolerance for an Aurora DB Cluster](../../../../services/amazonrds/latest/aurorauserguide/concepts-aurorahighavailability.md#Aurora.Managing.FaultTolerance) in the _Amazon Aurora User Guide_.
 
 This setting doesn't apply to RDS Custom DB instances.
 
@@ -1457,7 +1457,7 @@ https://rds.us-east-1.amazonaws.com/
    &SignatureVersion=4
    &Version=2014-10-31
    &X-Amz-Algorithm=AWS4-HMAC-SHA256
-   &X-Amz-Credential=AKIADQKE4SARGYLE/20140425/us-east-1/rds/aws4_request
+   &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20140425/us-east-1/rds/aws4_request
    &X-Amz-Date=20140425T192732Z
    &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
    &X-Amz-Signature=1dc9dd716f4855e9bdf188c70f1cf9f6251b070b68b81103b59ec70c3e7854b3
@@ -1550,8 +1550,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/modifydbinstance.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ModifyDBClusterSnapshotAttribute
 
 ModifyDBParameterGroup
+
+All content copied from https://docs.aws.amazon.com/.

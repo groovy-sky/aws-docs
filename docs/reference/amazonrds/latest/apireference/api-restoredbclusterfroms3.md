@@ -698,7 +698,7 @@ https://rds.us-east-1.amazonaws.com/
     &SnapshotIdentifier=sample-snapshot
     &Version=2014-10-31
     &X-Amz-Algorithm=AWS4-HMAC-SHA256
-    &X-Amz-Credential=AKIADQKE4SARGYLE/20230223/us-east-1/rds/aws4_request
+    &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20230223/us-east-1/rds/aws4_request
     &X-Amz-Date=20230223T165638Z
     &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
     &X-Amz-Signature=c59effef9b7b96f6a8dfed7873611df555364594f7f9acf9cd14d353114771fd
@@ -770,8 +770,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/restoredbclusterfroms3.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ResetDBParameterGroup
 
 RestoreDBClusterFromSnapshot
+
+All content copied from https://docs.aws.amazon.com/.

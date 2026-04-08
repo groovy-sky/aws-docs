@@ -375,7 +375,7 @@ This setting doesn't apply to RDS Custom.
 For more information about RDS on Outposts, see [Working with Amazon RDS on AWS Outposts](../../../../services/amazonrds/latest/userguide/rds-on-outposts.md)
 in the _Amazon RDS User Guide_.
 
-For more information about CoIPs, see [Customer-owned IP addresses](../../../../services/outposts/latest/userguide/routing-ip-addressing.md)
+For more information about CoIPs, see [Customer-owned IP addresses](../../../../services/outposts/latest/userguide/routing.md#ip-addressing)
 in the _AWS Outposts User Guide_.
 
 Type: Boolean
@@ -1047,7 +1047,7 @@ https://rds.us-east-1.amazonaws.com/
    &UseLatestRestorableTime=true
    &Version=2014-10-31
    &X-Amz-Algorithm=AWS4-HMAC-SHA256
-   &X-Amz-Credential=AKIADQKE4SARGYLE/20140428/us-east-1/rds/aws4_request
+   &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20140428/us-east-1/rds/aws4_request
    &X-Amz-Date=20140428T233051Z
    &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
    &X-Amz-Signature=087a8eb41cb1ab0fc9ec1575f23e73757ffc6a1e42d7d2b30b9cc0be988cff97
@@ -1130,8 +1130,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/restoredbinstancetopointintime.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 RestoreDBInstanceFromS3
 
 RevokeDBSecurityGroupIngress
+
+All content copied from https://docs.aws.amazon.com/.

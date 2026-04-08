@@ -218,7 +218,7 @@ By default, minor engine upgrades are applied automatically.
 If you create an RDS Custom DB instance, you must set `AutoMinorVersionUpgrade` to
 `false`.
 
-For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](../../../../services/amazonrds/latest/userguide/user-upgradedbinstance-upgrading-user-upgradedbinstance-upgrading-autominorversionupgrades.md).
+For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](../../../../services/amazonrds/latest/userguide/user-upgradedbinstance-upgrading.md#USER_UpgradeDBInstance.Upgrading.AutoMinorVersionUpgrades).
 
 Type: Boolean
 
@@ -434,7 +434,7 @@ Not applicable. Must be null.
 The name of the database to create when the DB instance is created. If
 this parameter isn't specified, no database is created in the DB instance.
 In some cases, we recommend that you don't add a database name. For more
-information, see [Additional considerations](../../../../services/amazonrds/latest/userguide/db2-db-instance-prereqs-db2-prereqs-additional-considerations.md) in the _Amazon RDS User_
+information, see [Additional considerations](../../../../services/amazonrds/latest/userguide/db2-db-instance-prereqs.md#db2-prereqs-additional-considerations) in the _Amazon RDS User_
 _Guide_.
 
 Constraints:
@@ -707,7 +707,7 @@ private cloud (VPC) on your local network.
 For more information about RDS on Outposts, see [Working with Amazon RDS on AWS Outposts](../../../../services/amazonrds/latest/userguide/rds-on-outposts.md)
 in the _Amazon RDS User Guide_.
 
-For more information about CoIPs, see [Customer-owned IP addresses](../../../../services/outposts/latest/userguide/routing-ip-addressing.md)
+For more information about CoIPs, see [Customer-owned IP addresses](../../../../services/outposts/latest/userguide/routing.md#ip-addressing)
 in the _AWS Outposts User Guide_.
 
 Type: Boolean
@@ -783,7 +783,7 @@ Amazon RDS. Not every database engine is available for every AWS Region.
 
 A custom engine version (CEV) that you have previously created. This setting is required for RDS Custom for Oracle. The CEV
 name has the following format: 19. _customized\_string_. A valid CEV name is
-`19.my_cev1`. For more information, see [Creating an RDS Custom for Oracle DB instance](../../../../services/amazonrds/latest/userguide/custom-creating-custom-creating-create.md) in the _Amazon RDS User Guide_.
+`19.my_cev1`. For more information, see [Creating an RDS Custom for Oracle DB instance](../../../../services/amazonrds/latest/userguide/custom-creating.md#custom-creating.create) in the _Amazon RDS User Guide_.
 
 **Amazon RDS Custom for SQL Server**
 
@@ -1600,7 +1600,7 @@ https://rds.us-east-1.amazonaws.com/
    &SignatureVersion=4
    &Version=2014-10-31
    &X-Amz-Algorithm=AWS4-HMAC-SHA256
-   &X-Amz-Credential=AKIADQKE4SARGYLE/20140424/us-east-1/rds/aws4_request
+   &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20140424/us-east-1/rds/aws4_request
    &X-Amz-Date=20140424T194844Z
    &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
    &X-Amz-Signature=bee4aabc750bf7dad0cd9e22b952bd6089d91e2a16592c2293e532eeaab8bc77
@@ -1685,8 +1685,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/createdbinstance.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreateDBClusterSnapshot
 
 CreateDBInstanceReadReplica
+
+All content copied from https://docs.aws.amazon.com/.

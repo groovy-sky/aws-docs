@@ -65,7 +65,7 @@ https://rds.us-west-2.amazonaws.com/
     &SignatureVersion=4
     &Version=2014-10-31
     &X-Amz-Algorithm=AWS4-HMAC-SHA256
-    &X-Amz-Credential=AKIADQKE4SARGYLE/20151027/us-east-1/rds/aws4_request
+    &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20151027/us-east-1/rds/aws4_request
     &X-Amz-Date=20151027T210706Z
     &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
     &X-Amz-Signature=27413f450dfac3d68b2197453e52109bacd3863f9df1a02d6e40022165bb2e09
@@ -121,8 +121,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/describedbsnapshotattributes.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeDBShardGroups
 
 DescribeDBSnapshots
+
+All content copied from https://docs.aws.amazon.com/.

@@ -14,7 +14,7 @@ For information about the parameters that are common to all actions, see [Common
 
 The Amazon RDS resource that the tags are removed from. This value is an Amazon Resource Name (ARN). For information about
 creating an ARN,
-see [Constructing an ARN for Amazon RDS](../../../../services/amazonrds/latest/userguide/user-tagging-arn-user-tagging-arn-constructing.md) in the _Amazon RDS User Guide._
+see [Constructing an ARN for Amazon RDS](../../../../services/amazonrds/latest/userguide/user-tagging-arn.md#USER_Tagging.ARN.Constructing) in the _Amazon RDS User Guide._
 
 Type: String
 
@@ -135,7 +135,7 @@ https://rds.us-west-2.amazonaws.com/
     &TagKeys.member.2=Owner
     &Version=2014-10-31
     &X-Amz-Algorithm=AWS4-HMAC-SHA256
-    &X-Amz-Credential=AKIADQKE4SARGYLE/20160913/us-west-2/rds/aws4_request
+    &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20160913/us-west-2/rds/aws4_request
     &X-Amz-Date=20160913T174918Z
     &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
     &X-Amz-Signature=4c72f307a75444461bd9b9ccb7de361fec75b8adad66a52824226320d0a33ca8
@@ -176,8 +176,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/removetagsfromresource.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 RemoveSourceIdentifierFromSubscription
 
 ResetDBClusterParameterGroup
+
+All content copied from https://docs.aws.amazon.com/.

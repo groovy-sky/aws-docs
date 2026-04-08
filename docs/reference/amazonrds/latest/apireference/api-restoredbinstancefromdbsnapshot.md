@@ -78,7 +78,7 @@ during the maintenance window.
 
 If you restore an RDS Custom DB instance, you must disable this parameter.
 
-For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](../../../../services/amazonrds/latest/userguide/user-upgradedbinstance-upgrading-user-upgradedbinstance-upgrading-autominorversionupgrades.md).
+For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](../../../../services/amazonrds/latest/userguide/user-upgradedbinstance-upgrading.md#USER_UpgradeDBInstance.Upgrading.AutoMinorVersionUpgrades).
 
 Type: Boolean
 
@@ -160,7 +160,7 @@ In most cases, tags aren't copied by default. However, when you restore a DB ins
 specify new tags. If yes, the new tags are added to the restored DB instance. If there are no new tags, RDS looks for the tags from
 the source DB instance for the DB snapshot, and then adds those tags to the restored DB instance.
 
-For more information, see [Copying tags to DB instance snapshots](../../../../services/amazonrds/latest/userguide/user-tagging-user-tagging-copytags.md) in the _Amazon RDS User Guide_.
+For more information, see [Copying tags to DB instance snapshots](../../../../services/amazonrds/latest/userguide/user-tagging.md#USER_Tagging.CopyTags) in the _Amazon RDS User Guide_.
 
 Type: Boolean
 
@@ -397,7 +397,7 @@ Required: No
 
 The list of logs for the restored DB instance to export to CloudWatch Logs. The values
 in the list depend on the DB engine. For more information, see
-[Publishing Database Logs to Amazon CloudWatch Logs](../../../../services/amazonrds/latest/userguide/user-logaccess-user-logaccess-procedural-uploadtocloudwatch.md) in the _Amazon RDS User Guide_.
+[Publishing Database Logs to Amazon CloudWatch Logs](../../../../services/amazonrds/latest/userguide/user-logaccess.md#USER_LogAccess.Procedural.UploadtoCloudWatch) in the _Amazon RDS User Guide_.
 
 This setting doesn't apply to RDS Custom.
 
@@ -419,7 +419,7 @@ This setting doesn't apply to RDS Custom.
 For more information about RDS on Outposts, see [Working with Amazon RDS on AWS Outposts](../../../../services/amazonrds/latest/userguide/rds-on-outposts.md)
 in the _Amazon RDS User Guide_.
 
-For more information about CoIPs, see [Customer-owned IP addresses](../../../../services/outposts/latest/userguide/routing-ip-addressing.md)
+For more information about CoIPs, see [Customer-owned IP addresses](../../../../services/outposts/latest/userguide/routing.md#ip-addressing)
 in the _AWS Outposts User Guide_.
 
 Type: Boolean
@@ -514,7 +514,7 @@ The conversion takes additional time, though your DB instance is available for c
 
 The provisioned IOPS value must follow the requirements for your database engine.
 For more information, see
-[Amazon RDS Provisioned IOPS storage](../../../../services/amazonrds/latest/userguide/chap-storage-user-piops.md)
+[Amazon RDS Provisioned IOPS storage](../../../../services/amazonrds/latest/userguide/chap-storage.md#USER_PIOPS)
 in the _Amazon RDS User Guide._
 
 Constraints: Must be an integer greater than 1000.
@@ -662,7 +662,7 @@ if automated backups are enabled,
 as determined by the `BackupRetentionPeriod` parameter.
 Changing this parameter doesn't result in an outage and the change is asynchronously applied as soon as possible.
 The default is a 30-minute window selected at random from an
-8-hour block of time for each AWS Region. For more information, see [Backup window](../../../../services/amazonrds/latest/userguide/user-workingwithautomatedbackups-user-workingwithautomatedbackups-backupwindow.md) in the _Amazon RDS User Guide_.
+8-hour block of time for each AWS Region. For more information, see [Backup window](../../../../services/amazonrds/latest/userguide/user-workingwithautomatedbackups.md#USER_WorkingWithAutomatedBackups.BackupWindow) in the _Amazon RDS User Guide_.
 
 This setting doesn't apply to Amazon Aurora DB instances. The daily time range for creating automated backups is managed by
 the DB cluster. For more information, see `ModifyDBCluster`.
@@ -1000,7 +1000,7 @@ https://rds.us-east-1.amazonaws.com/
    &SignatureVersion=4
    &Version=2014-10-31
    &X-Amz-Algorithm=AWS4-HMAC-SHA256
-   &X-Amz-Credential=AKIADQKE4SARGYLE/20140428/us-east-1/rds/aws4_request
+   &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20140428/us-east-1/rds/aws4_request
    &X-Amz-Date=20140428T232655Z
    &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
    &X-Amz-Signature=78ac761e8c8f54a8c0727f4e67ad0a766fbb0024510b9aa34ea6d1f7df52fe92
@@ -1083,8 +1083,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/restoredbinstancefromdbsnapshot.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 RestoreDBClusterToPointInTime
 
 RestoreDBInstanceFromS3
+
+All content copied from https://docs.aws.amazon.com/.

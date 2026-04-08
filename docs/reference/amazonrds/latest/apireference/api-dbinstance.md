@@ -211,7 +211,7 @@ private cloud (VPC) on your local network.
 For more information about RDS on Outposts, see [Working with Amazon RDS on AWS Outposts](../../../../services/amazonrds/latest/userguide/rds-on-outposts.md)
 in the _Amazon RDS User Guide_.
 
-For more information about CoIPs, see [Customer-owned IP addresses](../../../../services/outposts/latest/userguide/routing-ip-addressing.md)
+For more information about CoIPs, see [Customer-owned IP addresses](../../../../services/outposts/latest/userguide/routing.md#ip-addressing)
 in the _AWS Outposts User Guide_.
 
 Type: Boolean
@@ -299,7 +299,7 @@ Required: No
 The current state of this database.
 
 For information about DB instance statuses, see
-[Viewing DB instance status](../../../../services/amazonrds/latest/userguide/accessing-monitoring-overview-dbinstance-status.md)
+[Viewing DB instance status](../../../../services/amazonrds/latest/userguide/accessing-monitoring.md#Overview.DBInstance.Status)
 in the _Amazon RDS User Guide._
 
 Type: String
@@ -926,8 +926,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/dbinstance.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DBEngineVersion
 
 DBInstanceAutomatedBackup
+
+All content copied from https://docs.aws.amazon.com/.

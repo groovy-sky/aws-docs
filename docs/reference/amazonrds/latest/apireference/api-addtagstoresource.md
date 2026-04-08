@@ -14,7 +14,7 @@ For information about the parameters that are common to all actions, see [Common
 
 The Amazon RDS resource that the tags are added to. This value is an Amazon Resource Name (ARN). For information about
 creating an ARN,
-see [Constructing an RDS Amazon Resource Name (ARN)](../../../../services/amazonrds/latest/userguide/user-tagging-arn-user-tagging-arn-constructing.md).
+see [Constructing an RDS Amazon Resource Name (ARN)](../../../../services/amazonrds/latest/userguide/user-tagging-arn.md#USER_Tagging.ARN.Constructing).
 
 Type: String
 
@@ -137,7 +137,7 @@ https://rds.us-west-2.amazonaws.com/
     &Tags.member.2.Value=Admin123
     &Version=2014-10-31
     &X-Amz-Algorithm=AWS4-HMAC-SHA256
-    &X-Amz-Credential=AKIADQKE4SARGYLE/20160913/us-west-2/rds/aws4_request
+    &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20160913/us-west-2/rds/aws4_request
     &X-Amz-Date=20160913T173915Z
     &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
     &X-Amz-Signature=90a257aa949fab364b7db0964a255986922f933f2e55e7b582ce6f9ccca2a4e0
@@ -178,8 +178,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/addtagstoresource.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AddSourceIdentifierToSubscription
 
 ApplyPendingMaintenanceAction
+
+All content copied from https://docs.aws.amazon.com/.

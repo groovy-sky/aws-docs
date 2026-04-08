@@ -1,0 +1,178 @@
+# Working with option groups in RDS Custom for Oracle
+
+###### Note
+
+End of support notice: On March 31, 2027, AWS will end support for Amazon RDS Custom for Oracle. After March 31, 2027, you will no longer be able to access the RDS Custom for Oracle console or RDS Custom for Oracle resources. For more information, see [RDS Custom for Oracle end of support](rds-custom-for-oracle-end-of-support.md).
+
+RDS Custom uses option groups to enable and configure additional features. An
+_option group_ specifies features, called options, that are available
+for an RDS Custom for Oracle DB instance. Options can have settings that specify how the option works. When
+you associate an RDS Custom for Oracle DB instance with an option group, the specified options and option
+settings are enabled for this instance. For general information about option groups in
+Amazon RDS, see [Working with option groups](user-workingwithoptiongroups.md).
+
+###### Topics
+
+- [Overview of option groups in RDS Custom for Oracle](#custom-oracle-option-groups.overview)
+
+- [Oracle time zone](custom-managing-timezone.md)
+
+## Overview of option groups in RDS Custom for Oracle
+
+To enable options for your Oracle database, add them to an option group, and then
+associate the option group with your DB instance. For more information, see [Working with option groups](user-workingwithoptiongroups.md).
+
+###### Topics
+
+- [Summary of RDS Custom for Oracle options](#custom-oracle-option-groups.summary)
+
+- [Basic steps for adding an option to an RDS Custom for Oracle DB instance](#custom-oracle-timezone.overview.steps)
+
+- [Creating an option group for in RDS Custom for Oracle](#custom-oracle-timezone.creating)
+
+- [Associating an option group with an RDS Custom for Oracle DB instance](#custom-oracle-timezone.associating)
+
+### Summary of RDS Custom for Oracle options
+
+RDS Custom for Oracle supports the following options for a DB instance.
+
+OptionOption IDDescription
+
+Oracle time zone
+
+`Timezone`
+
+The time zone used by your RDS Custom for Oracle DB instance.
+
+### Basic steps for adding an option to an RDS Custom for Oracle DB instance
+
+The general procedure for adding an option to your RDS Custom for Oracle DB instance is the
+following:
+
+1. Create a new option group, or copy or modify an existing option
+    group.
+
+2. Add the option to the option group.
+
+3. Associate the option group with your DB instance when you create or modify
+    it.
+
+### Creating an option group for in RDS Custom for Oracle
+
+You can create a new option group that derives its settings from the default
+option group. You then add one or more options to the new option group. Or, if you
+already have an existing option group, you can copy that option group with all of
+its options to a new option group. To learn how to copy an option group, see [Copying an option group](user-workingwithoptiongroups.md#USER_WorkingWithOptionGroups.Copy).
+
+The default option groups for RDS Custom for Oracle are the following:
+
+- `default:custom-oracle-ee`
+
+- `default:custom-oracle-se2`
+
+- `default:custom-oracle-ee-cdb`
+
+- `default:custom-oracle-se2-cdb`
+
+When you create an option group, the settings are derived from the default option
+group. After you have added the `TIME_ZONE` option, you can then
+associate the option group with your DB instance.
+
+One way of creating an option group is by using the AWS Management Console.
+
+###### To create a new option group by using the console
+
+1. Sign in to the AWS Management Console and open the Amazon RDS console at
+    [https://console.aws.amazon.com/rds/](https://console.aws.amazon.com/rds).
+
+2. In the navigation pane, choose **Option**
+**groups**.
+
+3. Choose **Create group**.
+
+4. In the **Create option group** window, do the
+    following:
+1. For **Name**, type a name for the option
+       group that is unique within your AWS account. The name can
+       contain only letters, digits, and hyphens.
+
+2. For **Description**, type a brief
+       description of the option group. The description is used for
+       display purposes.
+
+3. For **Engine**, choose any of the
+       following RDS Custom for Oracle DB engines:
+
+- **custom-oracle-ee**
+
+- **custom-oracle-se2**
+
+- **custom-oracle-ee-cdb**
+
+- **custom-oracle-se2-cdb**
+
+4. For **Major engine version**, choose a
+       major engine version supported by RDS Custom for Oracle. For more
+       information, see [Supported Regions and DB engines for RDS Custom for Oracle](concepts-rds-fea-regions-db-eng-feature-rdscustom.md#Concepts.RDS_Fea_Regions_DB-eng.Feature.RDSCustom.ora).
+5. To continue, choose **Create**. To cancel the
+    operation instead, choose **Cancel**.
+
+To create an option group, use the AWS CLI [`create-option-group`](../../../cli/latest/reference/rds/create-option-group.md) command with the following
+required parameters.
+
+- `--option-group-name`
+
+- `--engine-name`
+
+- `--major-engine-version`
+
+- `--option-group-description`
+
+###### Example
+
+The following example creates an option group named
+`testoptiongroup`, which is associated with the Oracle
+Enterprise Edition DB engine. The description is enclosed in quotation
+marks.
+
+For Linux, macOS, or Unix:
+
+```nohighlight
+
+aws rds create-option-group \
+    --option-group-name testoptiongroup \
+    --engine-name custom-oracle-ee-cdb \
+    --major-engine-version 19 \
+    --option-group-description "Test option group for a Custom Oracle CDB"
+```
+
+For Windows:
+
+```nohighlight
+
+aws rds create-option-group ^
+    --option-group-name testoptiongroup ^
+    --engine-name custom-oracle-ee-cdb ^
+    --major-engine-version 19 ^
+    --option-group-description "Test option group for a Custom Oracle CDB"
+```
+
+To create an option group, call the Amazon RDS API [`CreateOptionGroup`](../../../../reference/amazonrds/latest/apireference/api-createoptiongroup.md) operation.
+
+### Associating an option group with an RDS Custom for Oracle DB instance
+
+You can associate your option group with a new or existing DB instance:
+
+- For a new DB instance, apply the option group when you create the instance. For
+more information, see [Creating an RDS Custom for Oracle DB instance](custom-creating.md#custom-creating.create).
+
+- For an existing DB instance, apply the option group by modifying the instance
+and attaching the new option group. For more information, see [Modifying your RDS Custom for Oracle DB instance](custom-managing-modifying.md).
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Deleting RDS Custom for Oracle automated backups
+
+Oracle time zone
+
+All content copied from https://docs.aws.amazon.com/.

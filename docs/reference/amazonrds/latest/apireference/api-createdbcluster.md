@@ -89,7 +89,7 @@ By default, minor engine upgrades are applied automatically.
 
 Valid for Cluster Type: Aurora DB clusters and Multi-AZ DB cluster.
 
-For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](../../../../services/amazonrds/latest/userguide/user-upgradedbinstance-upgrading-user-upgradedbinstance-upgrading-autominorversionupgrades.md).
+For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](../../../../services/amazonrds/latest/userguide/user-upgradedbinstance-upgrading.md#USER_UpgradeDBInstance.Upgrading.AutoMinorVersionUpgrades).
 
 Type: Boolean
 
@@ -106,7 +106,7 @@ cluster with one writer instance and three reader instances, RDS might distribut
 writer instance to AZ 1, the first reader instance to AZ 2, the second reader instance
 to AZ 3, and the third reader instance to either AZ 1, AZ 2, or AZ 3.
 
-For more information, see [Availability Zones](../../../../services/amazonrds/latest/aurorauserguide/concepts-regionsandavailabilityzones-concepts-regionsandavailabilityzones-availabilityzones.md) and [High availability for Aurora DB instances](../../../../services/amazonrds/latest/aurorauserguide/concepts-aurorahighavailability.md#Concepts.AuroraHighAvailability.Instances) in the _Amazon Aurora_
+For more information, see [Availability Zones](../../../../services/amazonrds/latest/aurorauserguide/concepts-regionsandavailabilityzones.md#Concepts.RegionsAndAvailabilityZones.AvailabilityZones) and [High availability for Aurora DB instances](../../../../services/amazonrds/latest/aurorauserguide/concepts-aurorahighavailability.md#Concepts.AuroraHighAvailability.Instances) in the _Amazon Aurora_
 _User Guide_.
 
 Valid for Cluster Type: Aurora DB clusters only
@@ -341,7 +341,7 @@ The following values are valid for each DB engine:
 
 For more information about exporting CloudWatch Logs for Amazon RDS, see [Publishing Database Logs to Amazon CloudWatch Logs](../../../../services/amazonrds/latest/userguide/user-logaccess.md#USER_LogAccess.Procedural.UploadtoCloudWatch) in the _Amazon RDS User Guide_.
 
-For more information about exporting CloudWatch Logs for Amazon Aurora, see [Publishing Database Logs to Amazon CloudWatch Logs](../../../../services/amazonrds/latest/aurorauserguide/user-logaccess-user-logaccess-procedural-uploadtocloudwatch.md) in the _Amazon Aurora User Guide_.
+For more information about exporting CloudWatch Logs for Amazon Aurora, see [Publishing Database Logs to Amazon CloudWatch Logs](../../../../services/amazonrds/latest/aurorauserguide/user-logaccess.md#USER_LogAccess.Procedural.UploadtoCloudWatch) in the _Amazon Aurora User Guide_.
 
 Type: Array of strings
 
@@ -475,7 +475,7 @@ For information about limitations and requirements for Serverless DB clusters, s
 following sections in the _Amazon Aurora User Guide_:
 
 - [Limitations of Aurora\
-Serverless v1](../../../../services/amazonrds/latest/aurorauserguide/aurora-serverless-aurora-serverless-limitations.md)
+Serverless v1](../../../../services/amazonrds/latest/aurorauserguide/aurora-serverless.md#aurora-serverless.limitations)
 
 - [Requirements\
 for Aurora Serverless v2](../../../../services/amazonrds/latest/aurorauserguide/aurora-serverless-v2-requirements.md)
@@ -823,7 +823,7 @@ Valid for Cluster Type: Aurora DB clusters and Multi-AZ DB clusters
 The default is a 30-minute window selected at random from an
 8-hour block of time for each AWS Region.
 To view the time blocks available, see
-[Backup window](../../../../services/amazonrds/latest/aurorauserguide/aurora-managing-backups-aurora-managing-backups-backupwindow.md) in the _Amazon Aurora User Guide_.
+[Backup window](../../../../services/amazonrds/latest/aurorauserguide/aurora-managing-backups.md#Aurora.Managing.Backups.BackupWindow) in the _Amazon Aurora User Guide_.
 
 Constraints:
 
@@ -848,7 +848,7 @@ Valid for Cluster Type: Aurora DB clusters and Multi-AZ DB clusters
 The default is a 30-minute window selected at random from an
 8-hour block of time for each AWS Region, occurring on a random day of the
 week. To see the time blocks available, see
-[Adjusting the Preferred DB Cluster Maintenance Window](../../../../services/amazonrds/latest/aurorauserguide/user-upgradedbinstance-maintenance-adjustingthemaintenancewindow-aurora.md) in the _Amazon Aurora User Guide_.
+[Adjusting the Preferred DB Cluster Maintenance Window](../../../../services/amazonrds/latest/aurorauserguide/user-upgradedbinstance-maintenance.md#AdjustingTheMaintenanceWindow.Aurora) in the _Amazon Aurora User Guide_.
 
 Constraints:
 
@@ -894,7 +894,7 @@ Example: `arn:aws:rds:us-west-2:123456789012:cluster:aurora-cluster1`.
 
 To learn how to generate a Signature Version 4 signed request, see
 [Authenticating Requests: Using Query Parameters (AWS Signature Version 4)](../../../../services/s3/latest/api/sigv4-query-string-auth.md) and
-[Signature Version 4 Signing Process](../../../../general/general/latest/gr/signature-version-4.md).
+[Signature Version 4 Signing Process](../../../../general/latest/gr/signature-version-4.md).
 
 ###### Note
 
@@ -986,8 +986,8 @@ Required: No
 
 The storage type to associate with the DB cluster.
 
-For information on storage types for Aurora DB clusters, see [Storage configurations for Amazon Aurora DB clusters](../../../../services/amazonrds/latest/aurorauserguide/aurora-overview-storagereliability-aurora-storage-type.md). For information on storage types for Multi-AZ DB
-clusters, see [Settings for creating Multi-AZ DB clusters](../../../../services/amazonrds/latest/userguide/create-multi-az-db-cluster-create-multi-az-db-cluster-settings.md).
+For information on storage types for Aurora DB clusters, see [Storage configurations for Amazon Aurora DB clusters](../../../../services/amazonrds/latest/aurorauserguide/aurora-overview-storagereliability.md#aurora-storage-type). For information on storage types for Multi-AZ DB
+clusters, see [Settings for creating Multi-AZ DB clusters](../../../../services/amazonrds/latest/userguide/create-multi-az-db-cluster.md#create-multi-az-db-cluster-settings).
 
 This setting is required to create a Multi-AZ DB cluster.
 
@@ -1253,7 +1253,7 @@ https://rds.us-east-1.amazonaws.com/
     &SignatureVersion=4
     &Version=2014-10-31
     &X-Amz-Algorithm=AWS4-HMAC-SHA256
-    &X-Amz-Credential=AKIADQKE4SARGYLE/20150927/us-east-1/rds/aws4_request
+    &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20150927/us-east-1/rds/aws4_request
     &X-Amz-Date=20220927T164851Z
     &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
     &X-Amz-Signature=6a8f4bd6a98f649c75ea04a6b3929ecc75ac09739588391cd7250f5280e716db
@@ -1346,7 +1346,7 @@ https://rds.us-west-2.amazonaws.com/
     &SignatureVersion=4
     &Version=2014-10-31
     &X-Amz-Algorithm=AWS4-HMAC-SHA256
-    &X-Amz-Credential=AKIADQKE4SARGYLE/20211026/us-west-2/rds/aws4_request
+    &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20211026/us-west-2/rds/aws4_request
     &X-Amz-Date=20220927T203712Z
     &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
     &X-Amz-Signature=6a8f4bd6a98f649c75ea04a6b3929ecc75ac09739588391cd7250f5280e716db
@@ -1459,7 +1459,7 @@ This example illustrates one usage of CreateDBCluster.
                     &SignatureVersion=4
                     &Version=2014-10-31
                     &X-Amz-Algorithm=AWS4-HMAC-SHA256
-                    &X-Amz-Credential=AKIADQKE4SARGYLE/20150927/us-east-1/rds/aws4_request
+                    &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20150927/us-east-1/rds/aws4_request
                     &X-Amz-Date=20220927T164851Z
                     &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
                     &X-Amz-Signature=6a8f4bd6a98f649c75ea04a6b3929ecc75ac09739588391cd7250f5280e716db
@@ -1557,8 +1557,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/createdbcluster.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreateCustomDBEngineVersion
 
 CreateDBClusterEndpoint
+
+All content copied from https://docs.aws.amazon.com/.

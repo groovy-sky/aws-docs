@@ -95,7 +95,7 @@ By default, minor engine upgrades are applied automatically.
 
 Valid for Cluster Type: Aurora DB clusters and Multi-AZ DB clusters.
 
-For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](../../../../services/amazonrds/latest/userguide/user-upgradedbinstance-upgrading-user-upgradedbinstance-upgrading-autominorversionupgrades.md).
+For more information about automatic minor version upgrades, see [Automatically upgrading the minor engine version](../../../../services/amazonrds/latest/userguide/user-upgradedbinstance-upgrading.md#USER_UpgradeDBInstance.Upgrading.AutoMinorVersionUpgrades).
 
 Type: Boolean
 
@@ -177,7 +177,7 @@ The following values are valid for each DB engine:
 
 For more information about exporting CloudWatch Logs for Amazon RDS, see [Publishing Database Logs to Amazon CloudWatch Logs](../../../../services/amazonrds/latest/userguide/user-logaccess.md#USER_LogAccess.Procedural.UploadtoCloudWatch) in the _Amazon RDS User Guide_.
 
-For more information about exporting CloudWatch Logs for Amazon Aurora, see [Publishing Database Logs to Amazon CloudWatch Logs](../../../../services/amazonrds/latest/aurorauserguide/user-logaccess-user-logaccess-procedural-uploadtocloudwatch.md) in the _Amazon Aurora User Guide_.
+For more information about exporting CloudWatch Logs for Amazon Aurora, see [Publishing Database Logs to Amazon CloudWatch Logs](../../../../services/amazonrds/latest/aurorauserguide/user-logaccess.md#USER_LogAccess.Procedural.UploadtoCloudWatch) in the _Amazon Aurora User Guide_.
 
 Type: [CloudwatchLogsExportConfiguration](api-cloudwatchlogsexportconfiguration.md) object
 
@@ -576,7 +576,7 @@ Required: No
 The Amazon Resource Name (ARN) for the IAM role that permits RDS to send Enhanced Monitoring metrics to Amazon CloudWatch Logs. An
 example is `arn:aws:iam:123456789012:role/emaccess`. For information on creating a monitoring role,
 see [To \
-create an IAM role for Amazon RDS Enhanced Monitoring](../../../../services/amazonrds/latest/userguide/user-monitoring-user-monitoring-os-iamrole.md) in the _Amazon RDS User Guide._
+create an IAM role for Amazon RDS Enhanced Monitoring](../../../../services/amazonrds/latest/userguide/user-monitoring.md#USER_Monitoring.OS.IAMRole) in the _Amazon RDS User Guide._
 
 If `MonitoringInterval` is set to a value other than `0`, supply a `MonitoringRoleArn` value.
 
@@ -697,7 +697,7 @@ using the `BackupRetentionPeriod` parameter.
 The default is a 30-minute window selected at random from an
 8-hour block of time for each AWS Region.
 To view the time blocks available, see
-[Backup window](../../../../services/amazonrds/latest/aurorauserguide/aurora-managing-backups-aurora-managing-backups-backupwindow.md) in the _Amazon Aurora User Guide_.
+[Backup window](../../../../services/amazonrds/latest/aurorauserguide/aurora-managing-backups.md#Aurora.Managing.Backups.BackupWindow) in the _Amazon Aurora User Guide_.
 
 Valid for Cluster Type: Aurora DB clusters and Multi-AZ DB clusters
 
@@ -724,7 +724,7 @@ Valid for Cluster Type: Aurora DB clusters and Multi-AZ DB clusters
 The default is a 30-minute window selected at random from an
 8-hour block of time for each AWS Region, occurring on a random day of the
 week. To see the time blocks available, see
-[Adjusting the Preferred DB Cluster Maintenance Window](../../../../services/amazonrds/latest/aurorauserguide/user-upgradedbinstance-maintenance-adjustingthemaintenancewindow-aurora.md) in the _Amazon Aurora User Guide_.
+[Adjusting the Preferred DB Cluster Maintenance Window](../../../../services/amazonrds/latest/aurorauserguide/user-upgradedbinstance-maintenance.md#AdjustingTheMaintenanceWindow.Aurora) in the _Amazon Aurora User Guide_.
 
 Constraints:
 
@@ -787,8 +787,8 @@ Required: No
 
 The storage type to associate with the DB cluster.
 
-For information on storage types for Aurora DB clusters, see [Storage configurations for Amazon Aurora DB clusters](../../../../services/amazonrds/latest/aurorauserguide/aurora-overview-storagereliability-aurora-storage-type.md). For information on storage types for Multi-AZ DB
-clusters, see [Settings for creating Multi-AZ DB clusters](../../../../services/amazonrds/latest/userguide/create-multi-az-db-cluster-create-multi-az-db-cluster-settings.md).
+For information on storage types for Aurora DB clusters, see [Storage configurations for Amazon Aurora DB clusters](../../../../services/amazonrds/latest/aurorauserguide/aurora-overview-storagereliability.md#aurora-storage-type). For information on storage types for Multi-AZ DB
+clusters, see [Settings for creating Multi-AZ DB clusters](../../../../services/amazonrds/latest/userguide/create-multi-az-db-cluster.md#create-multi-az-db-cluster-settings).
 
 When specified for a Multi-AZ DB cluster, a value for the `Iops` parameter is required.
 
@@ -1001,7 +1001,7 @@ https://rds.us-west-2.amazonaws.com/
     &SignatureVersion=4
     &Version=2014-10-31
     &X-Amz-Algorithm=AWS4-HMAC-SHA256
-    &X-Amz-Credential=AKIADQKE4SARGYLE/20140725/us-west-2/rds/aws4_request
+    &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20140725/us-west-2/rds/aws4_request
     &X-Amz-Date=20140725T161457Z
     &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
     &X-Amz-Signature=d6d1c65c2e94f5800ab411a3f7336625820b103713b6c063430900514e21d784
@@ -1061,7 +1061,7 @@ https://rds.us-west-2.amazonaws.com/
     &SignatureVersion=4
     &Version=2014-10-31
     &X-Amz-Algorithm=AWS4-HMAC-SHA256
-    &X-Amz-Credential=AKIADQKE4SARGYLE/20211026/us-west-2/rds/aws4_request
+    &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20211026/us-west-2/rds/aws4_request
     &X-Amz-Date=20211027T000032Z
     &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
     &X-Amz-Signature=d6d1c65c2e94f5800ab411a3f7336625820b103713b6c063430900514e21d784
@@ -1183,8 +1183,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/modifydbcluster.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ModifyCustomDBEngineVersion
 
 ModifyDBClusterEndpoint
+
+All content copied from https://docs.aws.amazon.com/.

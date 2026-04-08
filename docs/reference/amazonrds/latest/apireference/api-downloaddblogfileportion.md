@@ -131,7 +131,7 @@ https://rds.us-west-2.amazonaws.com/
   &NumberOfLines=50
   &Version=2014-10-31
   &X-Amz-Algorithm=AWS4-HMAC-SHA256
-  &X-Amz-Credential=AKIADQKE4SARGYLE/20140127/us-west-2/rds/aws4_request
+  &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20140127/us-west-2/rds/aws4_request
   &X-Amz-Date=20140127T235259Z
   &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
   &X-Amz-Signature=2171c5a8e91a70202e77de7e81df75787f3bbd6b4ea97f7a426205474fcc446f
@@ -221,8 +221,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/downloaddblogfileportion.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DisableHttpEndpoint
 
 EnableHttpEndpoint
+
+All content copied from https://docs.aws.amazon.com/.

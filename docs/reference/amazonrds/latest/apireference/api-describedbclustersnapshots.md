@@ -198,7 +198,7 @@ https://rds.us-east-1.amazonaws.com/
     &SignatureVersion=4
     &Version=2014-10-31
     &X-Amz-Algorithm=AWS4-HMAC-SHA256
-    &X-Amz-Credential=AKIADQKE4SARGYLE/20230218/us-east-1/rds/aws4_request
+    &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20230218/us-east-1/rds/aws4_request
     &X-Amz-Date=20230218T204210Z
     &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
     &X-Amz-Signature=913f0ec1dfc684ff9c6ef3eab5885258dbb22017c47b1bcd4fed4680e35aef4b
@@ -290,8 +290,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/describedbclustersnapshots.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeDBClusterSnapshotAttributes
 
 DescribeDBEngineVersions
+
+All content copied from https://docs.aws.amazon.com/.

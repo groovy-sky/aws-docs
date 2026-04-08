@@ -14,7 +14,7 @@ For information about the parameters that are common to all actions, see [Common
 
 The Amazon RDS resource with tags to be listed. This value is an Amazon Resource Name (ARN). For information about
 creating an ARN,
-see [Constructing an ARN for Amazon RDS](../../../../services/amazonrds/latest/userguide/user-tagging-arn-user-tagging-arn-constructing.md) in the _Amazon RDS User Guide_.
+see [Constructing an ARN for Amazon RDS](../../../../services/amazonrds/latest/userguide/user-tagging-arn.md#USER_Tagging.ARN.Constructing) in the _Amazon RDS User Guide_.
 
 Type: String
 
@@ -125,7 +125,7 @@ https://rds.us-west-2.amazonaws.com/
     &SignatureVersion=4
     &Version=2014-10-31
     &X-Amz-Algorithm=AWS4-HMAC-SHA256
-    &X-Amz-Credential=AKIADQKE4SARGYLE/20160304/us-west-2/rds/aws4_request
+    &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20160304/us-west-2/rds/aws4_request
     &X-Amz-Date=20160304T205529Z
     &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
     &X-Amz-Signature=ad333e422a92110b6340a28a684f0ed78606cc48b29b25682df0173e04b93b85
@@ -180,8 +180,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/listtagsforresource.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 FailoverGlobalCluster
 
 ModifyActivityStream
+
+All content copied from https://docs.aws.amazon.com/.

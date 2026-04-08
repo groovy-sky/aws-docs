@@ -165,7 +165,7 @@ the following example: `arn:aws:rds:us-west-2:123456789012:snapshot:mysql-instan
 
 To learn how to generate a Signature Version 4 signed request, see
 [Authenticating Requests: Using Query Parameters (AWS Signature Version 4)](../../../../services/s3/latest/api/sigv4-query-string-auth.md) and
-[Signature Version 4 Signing Process](../../../../general/general/latest/gr/signature-version-4.md).
+[Signature Version 4 Signing Process](../../../../general/latest/gr/signature-version-4.md).
 
 ###### Note
 
@@ -298,7 +298,7 @@ https://rds.us-east-1.amazonaws.com/
    &TargetDBSnapshotIdentifier=mysqldb-copy
    &Version=2014-10-31
    &X-Amz-Algorithm=AWS4-HMAC-SHA256
-   &X-Amz-Credential=AKIADQKE4SARGYLE/20140429/us-east-1/rds/aws4_request
+   &X-Amz-Credential=AWS_ACCESS_KEY_ID_REDACTED/20140429/us-east-1/rds/aws4_request
    &X-Amz-Date=20210629T175351Z
    &X-Amz-SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date
    &X-Amz-Signature=9164337efa99caf850e874a1cb7ef62f3cea29d0b448b9e0e7c53b288ddffed2
@@ -361,8 +361,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/copydbsnapshot.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CopyDBParameterGroup
 
 CopyOptionGroup
+
+All content copied from https://docs.aws.amazon.com/.
