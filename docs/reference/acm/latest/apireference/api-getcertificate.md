@@ -32,7 +32,7 @@ String that contains a certificate ARN in the following format:
 
 `arn:aws:acm:region:123456789012:certificate/12345678-1234-1234-1234-123456789012`
 
-For more information about ARNs, see [Amazon Resource Names (ARNs)](../../../../general/general/latest/gr/aws-arns-and-namespaces.md).
+For more information about ARNs, see [Amazon Resource Names (ARNs)](../../../../general/latest/gr/aws-arns-and-namespaces.md).
 
 Type: String
 
@@ -105,6 +105,12 @@ account cannot be found.
 
 HTTP Status Code: 400
 
+**ValidationException**
+
+The supplied input failed to satisfy constraints of an AWS service.
+
+HTTP Status Code: 400
+
 ## Examples
 
 ### Get an ACM Certificate
@@ -121,7 +127,7 @@ X-Amz-Target: CertificateManager.GetCertificate
 X-Amz-Date: 20151221T210018Z
 User-Agent: aws-cli/1.9.7 Python/2.7.3 Linux/3.13.0-71-generic botocore/1.3.7
 Content-Type: application/x-amz-json-1.1
-Authorization: AWS4-HMAC-SHA256 Credential=AKIAI44QH8DHBEXAMPLE/20151221/us-east-1/acm/aws4_request,
+Authorization: AWS4-HMAC-SHA256 Credential=AWS_ACCESS_KEY_ID_REDACTED/20151221/us-east-1/acm/aws4_request,
 SignedHeaders=content-type;host;user-agent;x-amz-date;x-amz-target,
 Signature=b51b4c2d5518473a8552fdab8e313c76254e9ca64e4d8ab69c2ebef83dbd459b
 
@@ -174,8 +180,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/acm-2015-12-08/getcertificate.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 GetAccountConfiguration
 
 ImportCertificate
+
+All content copied from https://docs.aws.amazon.com/.

@@ -54,9 +54,11 @@ Step-by-Step Guides)`@amazon-connect/voice`VoiceClient for voice channel operati
 See the [Amazon\
 Connect SDK repository](https://github.com/amazon-connect/AmazonConnectSDK) for the complete list of available packages.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Install the Amazon Connect
 SDK
 
 Building the script file
+
+All content copied from https://docs.aws.amazon.com/.

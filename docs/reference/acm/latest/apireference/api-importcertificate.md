@@ -52,7 +52,7 @@ algorithm of the signing CA. For example, if the signing CA key type is RSA,
 then the certificate key type must also be RSA.
 
 This operation returns the [Amazon\
-Resource Name (ARN)](../../../../general/general/latest/gr/aws-arns-and-namespaces.md) of the imported certificate.
+Resource Name (ARN)](../../../../general/latest/gr/aws-arns-and-namespaces.md) of the imported certificate.
 
 ## Request Syntax
 
@@ -105,7 +105,7 @@ Required: Yes
 **[CertificateArn](#API_ImportCertificate_RequestSyntax)**
 
 The [Amazon Resource Name\
-(ARN)](../../../../general/general/latest/gr/aws-arns-and-namespaces.md) of an imported certificate to replace. To import a new certificate,
+(ARN)](../../../../general/latest/gr/aws-arns-and-namespaces.md) of an imported certificate to replace. To import a new certificate,
 omit this field.
 
 Type: String
@@ -156,7 +156,7 @@ The following data is returned in JSON format by the service.
 **[CertificateArn](#API_ImportCertificate_ResponseSyntax)**
 
 The [Amazon Resource Name\
-(ARN)](../../../../general/general/latest/gr/aws-arns-and-namespaces.md) of the imported certificate.
+(ARN)](../../../../general/latest/gr/aws-arns-and-namespaces.md) of the imported certificate.
 
 Type: String
 
@@ -167,6 +167,13 @@ Pattern: `arn:[\w+=/,.@-]+:acm:[\w+=/,.@-]*:[0-9]+:[\w+=,.@-]+(/[\w+=,.@-]+)*`
 ## Errors
 
 For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+
+**ConflictException**
+
+You are trying to update a resource or configuration that is already being created or
+updated. Wait for the previous operation to finish and try again.
+
+HTTP Status Code: 400
 
 **InvalidArnException**
 
@@ -210,6 +217,12 @@ HTTP Status Code: 400
 **TooManyTagsException**
 
 The request contains too many tags. Try the request again with fewer tags.
+
+HTTP Status Code: 400
+
+**ValidationException**
+
+The supplied input failed to satisfy constraints of an AWS service.
 
 HTTP Status Code: 400
 
@@ -278,8 +291,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/acm-2015-12-08/importcertificate.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 GetCertificate
 
 ListCertificates
+
+All content copied from https://docs.aws.amazon.com/.

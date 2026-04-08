@@ -48,7 +48,7 @@ applied. This must be of the form:
 
 `arn:aws:acm:region:123456789012:certificate/12345678-1234-1234-1234-123456789012`
 
-For more information about ARNs, see [Amazon Resource Names (ARNs)](../../../../general/general/latest/gr/aws-arns-and-namespaces.md).
+For more information about ARNs, see [Amazon Resource Names (ARNs)](../../../../general/latest/gr/aws-arns-and-namespaces.md).
 
 Type: String
 
@@ -125,6 +125,12 @@ The request contains too many tags. Try the request again with fewer tags.
 
 HTTP Status Code: 400
 
+**ValidationException**
+
+The supplied input failed to satisfy constraints of an AWS service.
+
+HTTP Status Code: 400
+
 ## Examples
 
 ### Add two tags to an ACM certificate
@@ -141,7 +147,7 @@ X-Amz-Target: CertificateManager.AddTagsToCertificate
 X-Amz-Date: 20160414T162438Z
 User-Agent: aws-cli/1.10.20 Python/2.7.3 Linux/3.13.0-83-generic botocore/1.4.11
 Content-Type: application/x-amz-json-1.1
-Authorization: AWS4-HMAC-SHA256 Credential=AKIAI44QH8DHBEXAMPLE/20160414/us-east-1/acm/aws4_request,
+Authorization: AWS4-HMAC-SHA256 Credential=AWS_ACCESS_KEY_ID_REDACTED/20160414/us-east-1/acm/aws4_request,
 SignedHeaders=content-type;host;user-agent;x-amz-date;x-amz-target,
 Signature=370a583d3532f14e0cb34ea51de782e9e5138171184bfede740f5f150251fa2f
 
@@ -195,8 +201,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/acm-2015-12-08/addtagstocertificate.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Actions
 
 DeleteCertificate
+
+All content copied from https://docs.aws.amazon.com/.

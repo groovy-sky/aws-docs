@@ -41,9 +41,11 @@ connection to the workspace. This will happen when your app is correctly calling
 
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Troubleshooting
 
 Events and
 requests
+
+All content copied from https://docs.aws.amazon.com/.

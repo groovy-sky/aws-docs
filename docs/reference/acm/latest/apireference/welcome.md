@@ -14,9 +14,11 @@ programming languages and platforms. For more information, see [Tools for Amazon
 
 You must sign your API requests to ACM using Signature Version 4. When you use the
 AWS SDKs and command line tools, they sign API requests for you. If you do not use these tools,
-you must calculate the signature yourself. For more information, see [Signature Version 4 Signing Process](../../../../general/general/latest/gr/signature-version-4.md) in
+you must calculate the signature yourself. For more information, see [Signature Version 4 Signing Process](../../../../general/latest/gr/signature-version-4.md) in
 the _Amazon Web Services General Reference_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Actions
+
+All content copied from https://docs.aws.amazon.com/.

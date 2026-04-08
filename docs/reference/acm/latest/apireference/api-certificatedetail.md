@@ -13,7 +13,7 @@ In the following list, the required parameters are described first.
 
 The Amazon Resource Name (ARN) of the certificate. For more information about ARNs,
 see [Amazon Resource Names\
-(ARNs)](../../../../general/general/latest/gr/aws-arns-and-namespaces.md) in the _AWS General Reference_.
+(ARNs)](../../../../general/latest/gr/aws-arns-and-namespaces.md) in the _AWS General Reference_.
 
 Type: String
 
@@ -310,8 +310,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/acm-2015-12-08/certificatedetail.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Data Types
+AcmCertificateMetadataFilter
 
-CertificateOptions
+CertificateFilter
+
+All content copied from https://docs.aws.amazon.com/.

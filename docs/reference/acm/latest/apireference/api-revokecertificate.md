@@ -127,6 +127,12 @@ One or more reasons why the request was throttled.
 
 HTTP Status Code: 400
 
+**ValidationException**
+
+The supplied input failed to satisfy constraints of an AWS service.
+
+HTTP Status Code: 400
+
 ## See Also
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
@@ -151,8 +157,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/acm-2015-12-08/revokecertificate.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ResendValidationEmail
 
-UpdateCertificateOptions
+SearchCertificates
+
+All content copied from https://docs.aws.amazon.com/.

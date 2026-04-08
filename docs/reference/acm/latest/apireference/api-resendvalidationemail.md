@@ -123,6 +123,12 @@ account cannot be found.
 
 HTTP Status Code: 400
 
+**ValidationException**
+
+The supplied input failed to satisfy constraints of an AWS service.
+
+HTTP Status Code: 400
+
 ## Examples
 
 ### Resend Validation Email
@@ -187,8 +193,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/acm-2015-12-08/resendvalidationemail.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 RequestCertificate
 
 RevokeCertificate
+
+All content copied from https://docs.aws.amazon.com/.

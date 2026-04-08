@@ -28,9 +28,11 @@ Install the app package from NPM by installing **@amazon-connect/app**.
 If you do not use NPM, refer to [Using\
 Amazon Connect SDK without pacakage manager](sdk-without-package-manager.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create your
 application
 
 Using Connect SDK without package manager
+
+All content copied from https://docs.aws.amazon.com/.

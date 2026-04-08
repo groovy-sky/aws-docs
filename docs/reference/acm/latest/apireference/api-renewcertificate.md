@@ -2,7 +2,7 @@
 
 Renews an [eligible ACM certificate](../../../../services/acm/latest/userguide/managed-renewal.md). In order to renew your AWS Private CA certificates
 with ACM, you must first [grant the ACM service\
-principal permission to do so](../../../../services/privateca/latest/userguide/assign-permissions-pcapermissions.md). For more information, see [Testing\
+principal permission to do so](../../../../services/privateca/latest/userguide/assign-permissions.md#PcaPermissions). For more information, see [Testing\
 Managed Renewal](../../../../services/acm/latest/userguide/managed-renewal.md) in the ACM User Guide.
 
 ## Request Syntax
@@ -31,7 +31,7 @@ the form:
 
 `arn:aws:acm:region:123456789012:certificate/12345678-1234-1234-1234-123456789012`
 
-For more information about ARNs, see [Amazon Resource Names (ARNs)](../../../../general/general/latest/gr/aws-arns-and-namespaces.md).
+For more information about ARNs, see [Amazon Resource Names (ARNs)](../../../../general/latest/gr/aws-arns-and-namespaces.md).
 
 Type: String
 
@@ -70,6 +70,12 @@ account cannot be found.
 
 HTTP Status Code: 400
 
+**ValidationException**
+
+The supplied input failed to satisfy constraints of an AWS service.
+
+HTTP Status Code: 400
+
 ## Examples
 
 ### Renew an ACM Certificate
@@ -86,7 +92,7 @@ X-Amz-Target: CertificateManager.RenewCertificate
 X-Amz-Date: 20190124T171503Z
 User-Agent: aws-cli/1.10.20 Python/2.7.3 Linux/3.13.0-83-generic botocore/1.4.11
 Content-Type: application/x-amz-json-1.1
-Authorization: AWS4-HMAC-SHA256 Credential=AKIAI44QH8DHBEXAMPLE/20160414/us-east-1/acm/aws4_request,
+Authorization: AWS4-HMAC-SHA256 Credential=AWS_ACCESS_KEY_ID_REDACTED/20160414/us-east-1/acm/aws4_request,
 SignedHeaders=content-type;host;user-agent;x-amz-date;x-amz-target,
 Signature=379429306c5e89b9b4be5b35e29c26cc1da38215d8055a5ed0bdda57bcc881cc
 
@@ -132,8 +138,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/acm-2015-12-08/renewcertificate.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 RemoveTagsFromCertificate
 
 RequestCertificate
+
+All content copied from https://docs.aws.amazon.com/.

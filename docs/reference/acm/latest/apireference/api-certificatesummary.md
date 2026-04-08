@@ -14,7 +14,7 @@ Amazon Resource Name (ARN) of the certificate. This is of the form:
 
 `arn:aws:acm:region:123456789012:certificate/12345678-1234-1234-1234-123456789012`
 
-For more information about ARNs, see [Amazon Resource Names (ARNs)](../../../../general/general/latest/gr/aws-arns-and-namespaces.md).
+For more information about ARNs, see [Amazon Resource Names (ARNs)](../../../../general/latest/gr/aws-arns-and-namespaces.md).
 
 Type: String
 
@@ -247,8 +247,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/acm-2015-12-08/certificatesummary.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-CertificateOptions
+CertificateSearchResult
 
-DomainValidation
+CommonNameFilter
+
+All content copied from https://docs.aws.amazon.com/.

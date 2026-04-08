@@ -139,7 +139,7 @@ a particular size, while others allow the use of either RSA and ECDSA keys to en
 that compatibility is not broken. Check the requirements for the AWS service where you
 plan to deploy your certificate. For more information about selecting an algorithm, see
 [Key\
-algorithms](../../../../services/acm/latest/userguide/acm-certificate-characteristics-algorithms-term.md).
+algorithms](../../../../services/acm/latest/userguide/acm-certificate-characteristics.md#algorithms-term).
 
 ###### Note
 
@@ -346,7 +346,7 @@ X-Amz-Target: CertificateManager.RequestCertificate
 X-Amz-Date: 20180326T215401Z
 User-Agent: aws-cli/1.14.28 Python/2.7.9 Windows/8 botocore/1.8.32
 Content-Type: application/x-amz-json-1.1
-Authorization: AWS4-HMAC-SHA256 Credential=AKIAIOSFODNN7EXAMPLE/20151222/us-east-1/acm/aws4_request,
+Authorization: AWS4-HMAC-SHA256 Credential=AWS_ACCESS_KEY_ID_REDACTED/20151222/us-east-1/acm/aws4_request,
 SignedHeaders=content-type;host;user-agent;x-amz-date;x-amz-target,
 Signature=dbba4b1fa1199c011c0b781b94c97b14cbe75fa64dc6424232c903798d2a83b5
 
@@ -446,8 +446,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/acm-2015-12-08/requestcertificate.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 RenewCertificate
 
 ResendValidationEmail
+
+All content copied from https://docs.aws.amazon.com/.

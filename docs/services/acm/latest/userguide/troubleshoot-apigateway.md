@@ -1,0 +1,21 @@
+# API Gateway problems
+
+When you deploy an _edge-optimized_ API endpoint, API Gateway sets up a
+CloudFront distribution for you. The CloudFront distribution is owned by API Gateway, not by your account. The
+distribution is bound to the ACM certificate that you used when deploying your API. To
+remove the binding and allow ACM to delete your certificate, you must remove the API Gateway
+custom domain that is associated with the certificate.
+
+When you deploy a _regional_ API endpoint, API Gateway creates an
+application load balancer (ALB) on your behalf. The load balancer is owned by API Gateway and is
+not visible to you. The ALB is bound to the ACM certificate that you used when deploying
+your API. To remove the binding and allow ACM to delete your certificate, you must remove
+the API Gateway custom domain that is associated with the certificate.
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Certificate pinning
+
+Unexpected failure
+
+All content copied from https://docs.aws.amazon.com/.

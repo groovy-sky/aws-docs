@@ -47,7 +47,7 @@ the form:
 
 `arn:aws:acm:region:123456789012:certificate/12345678-1234-1234-1234-123456789012`
 
-For more information about ARNs, see [Amazon Resource Names (ARNs)](../../../../general/general/latest/gr/aws-arns-and-namespaces.md).
+For more information about ARNs, see [Amazon Resource Names (ARNs)](../../../../general/latest/gr/aws-arns-and-namespaces.md).
 
 Type: String
 
@@ -109,6 +109,12 @@ One or more reasons why the request was throttled.
 
 HTTP Status Code: 400
 
+**ValidationException**
+
+The supplied input failed to satisfy constraints of an AWS service.
+
+HTTP Status Code: 400
+
 ## Examples
 
 ### Delete an ACM certificate
@@ -125,7 +131,7 @@ X-Amz-Target: CertificateManager.DeleteCertificate
 X-Amz-Date: 20151222T164207Z
 User-Agent: aws-cli/1.9.7 Python/2.7.3 Linux/3.13.0-73-generic botocore/1.3.7
 Content-Type: application/x-amz-json-1.1
-Authorization: AWS4-HMAC-SHA256 Credential=AKIAIOSFODNN7EXAMPLE/20151222/us-east-1/acm/aws4_request,
+Authorization: AWS4-HMAC-SHA256 Credential=AWS_ACCESS_KEY_ID_REDACTED/20151222/us-east-1/acm/aws4_request,
 SignedHeaders=content-type;host;user-agent;x-amz-date;x-amz-target,
 Signature=0b29b04bb5f1ebb5fe9e6b1cbcdeda903b4ed2e06f3abe8a092c0ed1193b4dfc
 
@@ -171,8 +177,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/acm-2015-12-08/deletecertificate.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AddTagsToCertificate
 
 DescribeCertificate
+
+All content copied from https://docs.aws.amazon.com/.
