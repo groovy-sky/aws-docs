@@ -23,7 +23,7 @@
   "request_timeout_seconds": 20,
   "min_request_delay_ms": 250,
   "max_request_delay_ms": 900,
-  "max_sections": 25,
+  "max_sections": 0,
   "selectors": [
     "#main-content",
     "main",
@@ -41,5 +41,7 @@
     "aside",
     ".breadcrumbs",
     ".awsdocs-toc"
-  ]
+  ],
+  "include_path_patterns": [],
+  "exclude_path_patterns": []
 }

@@ -56,6 +56,7 @@ Notes:
 - In `partial`/`incremental` mode, `-max-sections` limits how many discovered sections are processed in a run.
 - CLI `-max-sections` overrides config only when value is greater than `0`.
 - To run effectively unbounded in `partial`/`incremental` mode with a config file, set `"max_sections": 0` and do not pass `-max-sections`.
+- Config file values `"include_path_patterns": []` and `"exclude_path_patterns": []` are respected as explicit empty filters (no path includes/excludes).
 
 Mirrored output is written under `docs/`, and crawl state is stored in `metadata/crawl.db`.
 

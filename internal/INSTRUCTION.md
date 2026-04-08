@@ -122,6 +122,7 @@ Current redirect handling:
 
 - If service landing pages list links but child markdown files are missing, inspect redirect-wrapper handling first.
 - For crawl coverage issues, inspect `IsAllowedURL`, include/exclude path patterns, and section capping behavior.
+- Config load behavior: when a config file explicitly sets `include_path_patterns` or `exclude_path_patterns` to empty arrays, those empty filters are preserved (defaults are only injected when fields are omitted).
 - For repeated transient fetch failures, inspect retry settings (`max_retries`) and request jitter settings (`min_request_delay_ms`, `max_request_delay_ms`).
 - For wrong output location, inspect `Mapper.RepoPath` and `mapServiceCode` mappings.
 - For root service listing issues, inspect `internal/write/services_index.go` link selection behavior.

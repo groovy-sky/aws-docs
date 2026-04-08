@@ -124,7 +124,7 @@ func Default() Config {
 func Load(path string) (Config, error) {
 	if strings.TrimSpace(path) == "" {
 		cfg := Default()
-		cfg.normalize()
+		cfg.normalize(false, false)
 		return cfg, nil
 	}
 
@@ -138,11 +138,19 @@ func Load(path string) (Config, error) {
 		return Config{}, fmt.Errorf("parse config: %w", err)
 	}
 
-	cfg.normalize()
+	var raw map[string]json.RawMessage
+	if err := json.Unmarshal(data, &raw); err != nil {
+		return Config{}, fmt.Errorf("parse config fields: %w", err)
+	}
+
+	_, hasIncludePathPatterns := raw["include_path_patterns"]
+	_, hasExcludePathPatterns := raw["exclude_path_patterns"]
+
+	cfg.normalize(hasIncludePathPatterns, hasExcludePathPatterns)
 	return cfg, nil
 }
 
-func (c *Config) normalize() {
+func (c *Config) normalize(hasIncludePathPatterns bool, hasExcludePathPatterns bool) {
 	if c.OutputDir == "" {
 		c.OutputDir = "docs"
 	}
@@ -206,10 +214,10 @@ func (c *Config) normalize() {
 	if len(c.IgnoredQueryParams) == 0 {
 		c.IgnoredQueryParams = slices.Clone(Default().IgnoredQueryParams)
 	}
-	if len(c.IncludePathPatterns) == 0 {
+	if len(c.IncludePathPatterns) == 0 && !hasIncludePathPatterns {
 		c.IncludePathPatterns = slices.Clone(Default().IncludePathPatterns)
 	}
-	if len(c.ExcludePathPatterns) == 0 {
+	if len(c.ExcludePathPatterns) == 0 && !hasExcludePathPatterns {
 		c.ExcludePathPatterns = slices.Clone(Default().ExcludePathPatterns)
 	}
 	for index, value := range c.Seeds {
