@@ -30,6 +30,11 @@ func (m *Mapper) RepoPath(rawURL string) string {
 	switch {
 	case strings.EqualFold(first, "general") || strings.Contains(cleaned, "/general/"):
 		section = "general"
+		// Consume the leading "general" segment so it is not appended again
+		// when building the path (section already contributes "general/").
+		if strings.EqualFold(first, "general") {
+			segments = segments[1:]
+		}
 	case strings.Contains(strings.ToLower(cleaned), "/cli/"):
 		section = filepath.Join("reference", "cli")
 	case strings.Contains(strings.ToLower(cleaned), "sdk") || strings.Contains(strings.ToLower(cleaned), "apireference"):

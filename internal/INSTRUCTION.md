@@ -107,6 +107,7 @@ Current redirect handling:
 - Service bucket uses first path segment with specific overrides (for example `AWSEC2 -> ec2`).
 - Output filenames are slugified and normalized to `.md`.
 - If URL points to a section root ending at `latest/`, mapper writes an `index.md` path under that section.
+- When the first URL segment is literally `general`, it is consumed before path building so the section prefix `docs/general/` is not doubled (bug-fix: previously produced `docs/general/general/...`).
 
 ## Seed and Metadata Behavior
 
