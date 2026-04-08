@@ -121,6 +121,10 @@ Current redirect handling:
 - In `full` mode, sitemap URLs are added to queue for broader coverage.
 - In `incremental` and `partial` mode with `max_sections > 0`, section selection rotates across runs using a persisted cursor in metadata state (`section_cursor`) so each run advances to the next section window instead of always reusing the first sections.
 
+## Seed Persistence After Crawl Run
+
+At the end of every non-`refresh-url` run, `persistDiscoveredSeeds` is called with the full `seen` URL set.  It canonicalizes each URL to its section root via `canonicalizeSeedURL`, then stores any roots not already in the seed DB.  This ensures that sections discovered through link traversal (for example, `/vpc/latest/reachability/` found in a VPC landing page) survive into subsequent incremental runs even if the current run never processes those sections.
+
 ## Practical Maintenance Notes
 
 - If service landing pages list links but child markdown files are missing, inspect redirect-wrapper handling first.

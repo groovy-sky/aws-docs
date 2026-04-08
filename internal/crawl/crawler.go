@@ -117,7 +117,52 @@ func (c *Crawler) Run(ctx context.Context, options RunOptions) error {
 
 	log.Printf("crawl run completed: processed-urls=%d", processedCount)
 
+	if options.Mode != "refresh-url" {
+		c.persistDiscoveredSeeds(seen)
+	}
+
 	return nil
+}
+
+// persistDiscoveredSeeds canonicalizes every URL that was seen during the BFS
+// run to its section root and stores any roots not already in the seed store.
+// This ensures that sections discovered via link traversal (e.g. reachability
+// found in a VPC landing page) survive across runs and are not silently dropped
+// when the current run ends before crawling them.
+func (c *Crawler) persistDiscoveredSeeds(seen map[string]struct{}) {
+	if c.store == nil || len(seen) == 0 {
+		return
+	}
+
+	storedSeeds, err := c.store.GetSeeds()
+	if err != nil {
+		return
+	}
+
+	storedSet := make(map[string]struct{}, len(storedSeeds))
+	for _, s := range storedSeeds {
+		storedSet[s] = struct{}{}
+	}
+
+	var newSeeds []string
+	for rawURL := range seen {
+		canonical, err := canonicalizeSeedURL(rawURL, c.config)
+		if err != nil || canonical == "" {
+			continue
+		}
+		if _, exists := storedSet[canonical]; !exists {
+			storedSet[canonical] = struct{}{}
+			newSeeds = append(newSeeds, canonical)
+		}
+	}
+
+	if len(newSeeds) > 0 {
+		if err := c.store.PutSeeds(append(storedSeeds, newSeeds...)); err != nil {
+			log.Printf("persist discovered seeds: %v", err)
+			return
+		}
+		log.Printf("crawl seeds: persisted %d newly discovered section roots", len(newSeeds))
+	}
 }
 
 func (c *Crawler) seedQueue(ctx context.Context, options RunOptions) ([]string, error) {
