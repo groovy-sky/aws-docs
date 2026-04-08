@@ -45,7 +45,7 @@ jobs:
             echo "No binary changes to commit"
             exit 0
           fi
-          git commit -m "chore(ci): update aws-docs binary [skip ci]"
+          git commit -m "chore(ci): update aws-docs binary"
           git push
 
       - name: Upload artifact

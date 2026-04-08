@@ -6,24 +6,114 @@ data for a range of use cases, such as data lakes, websites, backups, and big da
 from an Amazon EC2 instance or from anywhere over the internet. For more information, see
 [What is Amazon S3?](../../../s3/latest/userguide/welcome.md)
 
-Objects are the fundamental entities stored in Amazon S3. Every object stored in Amazon S3 is contained
-in a bucket. Buckets organize the Amazon S3 namespace at the highest level and identify the account
-responsible for that storage. Amazon S3 buckets are similar to internet domain names. Objects stored
-in the buckets have a unique key value and are retrieved using a URL. For example, if an object
-with a key value `/photos/mygarden.jpg` is stored in the `amzn-s3-demo-bucket1`
-bucket, then it is addressable using the URL `https://amzn-s3-demo-bucket1.s3.amazonaws.com/photos/mygarden.jpg`.
-For more information, see [How Amazon S3 works](../../../s3/latest/userguide/welcome.md#CoreConcepts).
+There are two ways to access Amazon S3 data from your Amazon EC2 instances:
 
-## Usage examples
+- **File access** \- Use [Amazon S3 Files](../../../s3/latest/userguide/s3-files.md) to mount an S3 bucket as a high performance file system on your instance.
 
-Given the benefits of Amazon S3 for storage, you might decide to use this service to store
-files and data sets for use with EC2 instances. There are several ways to move data to
-and from Amazon S3 to your instances. In addition to the examples discussed below, there are
-a variety of tools that people have written that you can use to access your data in Amazon S3
-from your computer or your instance.
+- **Object access** \- Use the [Amazon S3 API](../../../s3/latest/api.md), AWS CLI, AWS SDKs, or tools like wget to copy objects to and from S3.
 
-If you have permission, you can copy a file to or from Amazon S3 and your instance using
-one of the following methods.
+## File access with Amazon S3 Files
+
+Amazon S3 Files is a serverless file system that lets you mount your S3 general purpose bucket as a high performance file system on your compute instance. S3 Files provides access to your S3 objects as files using standard file system operations such as read and write on the local mount path.
+
+###### Prerequisites
+
+Before you set up S3 Files with your EC2 instance, make sure you have the following:
+
+- You must have an S3 file system and at least one mount target in available state. For instructions on creating an S3 file system, see the [Amazon S3 Files User Guide](../../../s3/latest/userguide/s3-files.md).
+
+- An EC2 instance running Linux OS with an instance profile attached to it. Learn more about required permissions to mount the file system.
+
+- Security groups that allow NFS traffic (port 2049) between your instance and the file system’s mount targets. [Learn more about required security groups settings.](../../../s3/latest/userguide/s3-files-prereq-policies.md#s3-files-prereq-security-groups)
+
+###### Mount S3 file system to an EC2 instance
+
+You can either mount an S3 file system at launch or after launch on a running instance.
+
+###### Mount a file system at instance launch using the EC2 console
+
+1. Open the Amazon EC2 console at
+    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+
+2. Choose **Launch instance**.
+
+3. Select a subnet under **Network settings**.
+
+4. Select the default security group to make sure that your EC2 instance can access your S3 file system. You can't access your EC2 instance by Secure Shell (SSH) using this security group. For access by SSH, later you can edit the default security and add a rule to allow SSH or a new security group that allows SSH. You can use the following settings:
+1. **Type:** SSH
+
+2. **Protocol:** TCP
+
+3. **Port Range:** 22
+
+4. **Source:** Anywhere 0.0.0.0/0
+5. Under **Storage**, select **File systems** and choose **S3 Files**.
+
+1. Under the file system drop down, you will see your file systems in the Availability Zone based on the subnet you selected in your Network settings. Choose the S3 file system that you want to mount. If you don’t have any file systems, choose **Create a new file system** to create a new one.
+
+2. Enter a local mount path on your EC2 instance where you want to mount the file system (for example, `/mnt/s3files`).
+
+3. A command will be generated to mount the file system and add it to fstab. You can add this command to User data field in **Advanced details**. Your EC2 instance will then be configured to mount the S3 file system at launch and whenever it's rebooted. You can also run these commands in your EC2 instance after it is launched.
+6. Under **Advanced details**, attach an instance profile to your instance. Your IAM role must have permissions to mount the file system and access S3 bucket. [Learn more about required permissions](../../../s3/latest/userguide/s3-files-prereq-policies.md#s3-files-prereq-iam).
+
+7. Choose **Launch instance**.
+
+8. After the instance launches, the required software utilities will be installed and file system mounted. You can view the file system by navigating to your local mount path.
+
+###### Mount a file system to an Amazon EC2 instance after launch
+
+1. [Connect to your EC2 instance](connect.md) through Secure Shell (SSH) or EC2 Instance Connect on EC2 Console.
+
+2. You mount your S3 file system using a mount helper utility `amazon-efs-utils`. Install the `amazon-efs-utils` package using the following command:
+
+1. If you’re using Amazon Linux, run the following command to install efs-utils from Amazon's repositories:
+
+      ```nohighlight
+
+      sudo yum -y install amazon-efs-utils
+      ```
+
+2. If you are using other [supported Linux distributions](https://github.com/aws/efs-utils?tab=readme-ov-file), you can do the following:
+
+      ```nohighlight
+
+      curl https://amazon-efs-utils.aws.com/efs-utils-installer.sh | sudo sh -s -- --install
+      ```
+
+3. Refer to the [efs-utils GitHub repository](https://github.com/aws/efs-utils?tab=readme-ov-file) for other Linux distributions.
+3. Create a directory for file system mount point using the following command:
+
+```nohighlight
+
+sudo mkdir {path/to/mount}
+```
+
+4. Mount the S3 file system:
+
+```nohighlight
+
+FS="{YOUR_FILE_SYSTEM_ID}"
+sudo mount -t s3files $FS:/ {path/to/mount}
+
+```
+
+5. Confirm the file system is mounted.
+
+```nohighlight
+
+df -h {path/to/mount}
+```
+
+You can now read and write S3 objects as files on your local mount path using standard file system operations. If you have objects in your S3 bucket then you can view them as files using the following commands.
+
+```nohighlight
+
+ls {path/to/mount}
+```
+
+## Object-based access
+
+You can copy files to and from Amazon S3 using the S3 API, AWS CLI, AWS SDKs, or standard HTTP tools. If you have permission, you can copy a file to or from Amazon S3 and your instance using one of the following methods.
 
 wget
 
@@ -107,7 +197,7 @@ aws s3 sync s3://amzn-s3-demo-source-bucket local_directory
 
 Amazon S3 API
 
-If you are a developer, you can use an API to access data in Amazon S3. You can use this
+You can use an API to access data in Amazon S3. You can use this
 API to help develop your application and integrate it with other APIs and SDKs.
 For more information, see [Code examples for Amazon S3 using AWS SDKs](../../../s3/latest/api/service-code-examples.md) in the
 _Amazon Simple Storage Service API Reference_.

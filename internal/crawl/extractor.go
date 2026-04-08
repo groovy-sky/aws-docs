@@ -46,6 +46,7 @@ func (e *Extractor) Extract(rawURL string, body []byte) (ExtractedDocument, erro
 	}
 
 	cleaned := root.Clone()
+	links := extractSelectionLinks(cleaned)
 	for _, selector := range e.config.ExcludeSelectors {
 		if selector == "" {
 			continue
@@ -54,14 +55,6 @@ func (e *Extractor) Extract(rawURL string, body []byte) (ExtractedDocument, erro
 			selection.Remove()
 		})
 	}
-
-	links := make([]string, 0)
-	cleaned.Find("a[href]").Each(func(_ int, selection *goquery.Selection) {
-		href, exists := selection.Attr("href")
-		if exists {
-			links = append(links, strings.TrimSpace(href))
-		}
-	})
 
 	title := strings.TrimSpace(cleaned.Find("h1").First().Text())
 	if title == "" {
@@ -84,6 +77,27 @@ func (e *Extractor) Extract(rawURL string, body []byte) (ExtractedDocument, erro
 		HTML:         htmlValue,
 		Links:        links,
 	}, nil
+}
+
+func extractSelectionLinks(selection *goquery.Selection) []string {
+	links := make([]string, 0)
+	seen := make(map[string]struct{})
+	selection.Find("a[href]").Each(func(_ int, anchor *goquery.Selection) {
+		href, exists := anchor.Attr("href")
+		if !exists {
+			return
+		}
+		href = strings.TrimSpace(href)
+		if href == "" {
+			return
+		}
+		if _, ok := seen[href]; ok {
+			return
+		}
+		seen[href] = struct{}{}
+		links = append(links, href)
+	})
+	return links
 }
 
 func extractDocumentRedirectURL(document *goquery.Document) (string, bool) {

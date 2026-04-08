@@ -63,6 +63,11 @@ URL processing (`processURL`) sequence:
 3. Structured landing-page extraction from parsed DOM.
 4. Generic main-content extraction with configured selectors and fallback scoring.
 
+Link discovery behavior:
+
+- Extractor collects crawl links from the selected main-content tree before applying excluded selectors.
+- This preserves subsection URLs that may exist only in filtered TOC containers (for example `.awsdocs-toc`) while still removing those blocks from written markdown.
+
 Current redirect handling:
 
 - Supports `<meta http-equiv="refresh" content="...;URL=target">` patterns.

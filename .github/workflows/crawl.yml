@@ -1,0 +1,40 @@
+name: Crawl AWS Docs
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: Build crawler
+        run: go build -o aws-docs ./cmd/aws-docs
+
+      - name: Run crawler
+        run: ./aws-docs -mode=incremental -max-sections=2
+
+      - name: Commit crawled docs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/ metadata/
+          if git diff --cached --quiet; then
+            echo "No doc changes to commit"
+            exit 0
+          fi
+          git commit -m "chore(crawl): update docs"
+          git push

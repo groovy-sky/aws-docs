@@ -41,3 +41,36 @@ func TestParseMetaRefreshTarget(t *testing.T) {
 		t.Fatalf("target = %q, want %q", target, "guide.html")
 	}
 }
+
+func TestExtractorCollectsLinksFromExcludedTOC(t *testing.T) {
+	extractor := NewExtractor(config.Default())
+	body := []byte(`<!DOCTYPE html>
+<html>
+  <head><title>EBS encryption</title></head>
+  <body>
+    <main id="main-content">
+      <div class="awsdocs-toc">
+        <a href="how-ebs-encryption-works.html">How EBS encryption works</a>
+        <a href="ebs-encryption-requirements.html">Requirements</a>
+      </div>
+      <h1>EBS encryption</h1>
+      <p>Overview content.</p>
+    </main>
+  </body>
+</html>`)
+
+	document, err := extractor.Extract("https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html", body)
+	if err != nil {
+		t.Fatalf("Extract returned error: %v", err)
+	}
+
+	if len(document.Links) != 2 {
+		t.Fatalf("Links length = %d, want 2", len(document.Links))
+	}
+	if document.Links[0] != "how-ebs-encryption-works.html" {
+		t.Fatalf("first link = %q, want %q", document.Links[0], "how-ebs-encryption-works.html")
+	}
+	if document.Links[1] != "ebs-encryption-requirements.html" {
+		t.Fatalf("second link = %q, want %q", document.Links[1], "ebs-encryption-requirements.html")
+	}
+}
