@@ -1,0 +1,202 @@
+AWS Audit Manager will no longer be open to new customers starting
+April 30, 2026. If you would like to use Audit Manager, sign up prior to that date. Existing customers
+can continue to use the service as normal. For more information, see
+[AWS Audit Manager availability change](audit-manager-availability-change.md).
+
+# Reviewing a framework in AWS Audit Manager
+
+You can review the details of a framework using the Audit Manager console, the Audit Manager API, or the
+AWS Command Line Interface (AWS CLI).
+
+## Prerequisites
+
+Make sure your IAM identity has appropriate permissions to view frameworks in AWS Audit Manager.
+Two suggested policies that grant these permissions are [AWSAuditManagerAdministratorAccess](../../../aws-managed-policy/latest/reference/awsauditmanageradministratoraccess.md) and [Allow users management access to AWS Audit Manager](security-iam-id-based-policy-examples.md#management-access).
+
+## Procedure
+
+Audit Manager console
+
+###### To view framework details on the Audit Manager console
+
+1. Open the AWS Audit Manager console at [https://console.aws.amazon.com/auditmanager/home](https://console.aws.amazon.com/auditmanager/home).
+
+2. In the left navigation pane, choose **Framework library** to
+    see a list of available frameworks.
+
+3. Choose the **Standard frameworks** tab or the **Custom**
+**frameworks** tab to browse the available frameworks.
+
+4. Choose the name of the framework to open it.
+
+5. Review the framework details using the following information as
+    reference.
+
+**Framework details section**
+
+This section provides an overview of the framework. In this section, you can
+review the following information:
+
+NameDescription
+
+**Description**
+
+A description of the framework, if one was provided.
+
+**Framework type**
+
+Specifies whether the framework is a standard framework or a custom
+framework.**Compliance type**
+
+The compliance standard or regulation that the framework supports.
+
+If you're viewing a custom framework, you can also see the following
+details:
+
+NameDescription
+
+**Created by**
+
+The account that created the custom framework.
+
+**Date created**
+
+The date when the custom framework was created.**Last updated**
+
+The date when this framework was last edited.
+
+**Controls tab**
+
+This tab lists the controls in the framework, grouped by control set. On this
+tab, you can review the following information:
+
+NameDescription
+
+**Controls grouped by control set**
+
+Choose the tree view icon to see the controls that belong to each
+control set.
+
+**Type**
+
+Specifies whether the control is a standard control or a custom
+control.**Data sources**
+
+Specifies the data source where Audit Manager collects evidence from for
+that framework control.
+
+**Tags tab**
+
+This tab lists the tags that are associated with the framework. On this tab,
+you can review the following information:
+
+NameDescription
+
+**Key**
+
+The tag key (for example, a compliance standard, regulation, or
+category).
+
+**Value**
+
+The tag value.
+
+AWS CLI
+
+###### To view framework details in the AWS CLI
+
+1. To identify the framework that you want to review, run the [list-assessment-frameworks](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/auditmanager/list-assessment-frameworks.html) command and specify a
+    `--framework-type`. Either, you can retrieve a list of standard
+    frameworks. Or, you can retrieve a list of custom frameworks.
+
+In the following example, replace the `placeholder
+                     text` with either `Custom` or
+    `Standard`.
+
+```nohighlight
+
+    aws auditmanager list-assessment-frameworks --framework-type Custom/Standard
+```
+
+The response returns a list of frameworks. Find the framework that you want to
+    review, and take note of the framework ID and Amazon Resource Name (ARN).
+
+2. To get the framework details, run the [get-assessment-framework](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/auditmanager/get-assessment-framework.html) command and specify the
+    `--framework-id`.
+
+In the following example, replace the `placeholder
+                     text` with your own information.
+
+```nohighlight
+
+aws auditmanager get-assessment-framework --framework-id a1b2c3d4-5678-90ab-cdef-EXAMPLE11111
+```
+
+###### Tip
+
+The framework details are returned in JSON format. To understand this data, see
+[get-assessment-framework Output](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/auditmanager/get-assessment-framework.html) in the _AWS CLI_
+_Command Reference_.
+
+3. To see the tags for a framework, use the [list-tags-for-resource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/auditmanager/list-tags-for-resource.html) command and specify the
+    `--resource-arn` for the framework.
+
+In the following example, replace the `placeholder
+                     text` with your own information:
+
+```nohighlight
+
+aws auditmanager list-tags-for-resource --resource-arn arn:aws:auditmanager:us-east-1:111122223333:assessmentFramework/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111
+```
+
+For more information about tags in Audit Manager, see [Tagging AWS Audit Manager\
+    resources](tagging.md).
+
+Audit Manager API
+
+###### To view framework details using the API
+
+1. To identify the framework that you want to review, use the [ListAssessmentFrameworks](../../../../reference/audit-manager/latest/apireference/api-listassessmentframeworks.md) operation and specify a [frameworkType](../../../../reference/audit-manager/latest/apireference/api-listassessmentframeworks.md#auditmanager-ListAssessmentFrameworks-request-frameworkType). Either, you can return a list of standard frameworks. Or,
+    you can return a list of custom frameworks.
+
+From the response, find the framework that you want to review and note the
+    framework ID and Amazon Resource Name (ARN).
+
+2. To get the framework details, use the [GetAssessmentFramework](../../../../reference/audit-manager/latest/apireference/api-getassessmentframework.md) operation. In the request, specify the [frameworkId](../../../../reference/audit-manager/latest/apireference/api-getassessmentframework.md#auditmanager-GetAssessmentFramework-request-frameworkId) that you got from step 1.
+
+###### Tip
+
+The framework details are returned in JSON format. To understand this data,
+see [GetAssessmentFramework Response Elements](../../../../reference/audit-manager/latest/apireference/api-getassessmentframework.md#API_GetAssessmentFramework_ResponseElements) in the _AWS Audit Manager API Reference_.
+
+3. To see tags for the framework, use the [ListTagsForResource](../../../../reference/audit-manager/latest/apireference/api-listtagsforresource.md) operation. In the request, specify the framework
+    [resourceArn](../../../../reference/audit-manager/latest/apireference/api-listtagsforresource.md#auditmanager-ListTagsForResource-request-resourceArn) that you got from step 1.
+
+For more information about tags in Audit Manager, see [Tagging AWS Audit Manager resources](tagging.md).
+
+For more information about these API operations, choose any of the links in the
+previous procedure to read more in the _AWS Audit Manager API_
+_Reference_. This includes information about how to use these operations and
+parameters in one of the language-specific AWS SDKs.
+
+## Next steps
+
+From the framework details page, you can [create an assessment from\
+the framework](create-assessments.md) or [make an\
+editable copy of the framework](create-custom-frameworks-from-existing.md).
+
+If you're reviewing a custom framework, you can also [edit](edit-custom-frameworks.md), [delete](delete-custom-framework.md), or [share](share-custom-framework.md) the framework.
+
+## Additional resources
+
+- [On my custom framework details page, I’m prompted to recreate my custom framework](framework-issues.md#recreate-framework-post-common-controls)
+
+- [I can’t make a copy of my custom framework](framework-issues.md#cannot-use-custom-framework)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Finding a framework
+
+Creating a custom framework
+
+All content copied from https://docs.aws.amazon.com/.

@@ -11,7 +11,7 @@ AWS services that are in this list.
 ###### Note
 
 For information about why it's no longer possible to specify services in scope manually, see
-[I can't edit the services in scope for my assessment](../../../../services/audit-manager/latest/userguide/evidence-collection-issues-unable-to-edit-services.md) in
+[I can't edit the services in scope for my assessment](../../../../services/audit-manager/latest/userguide/evidence-collection-issues.md#unable-to-edit-services) in
 the _Troubleshooting_ section of the AWS Audit Manager user
 guide.
 
@@ -1059,8 +1059,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/auditmanager-2017-07-25/getservicesinscope.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 GetOrganizationAdminAccount
 
 GetSettings
+
+All content copied from https://docs.aws.amazon.com/.

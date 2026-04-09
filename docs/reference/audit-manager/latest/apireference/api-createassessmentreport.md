@@ -72,9 +72,9 @@ A SQL statement that represents an evidence finder query.
 Provide this parameter when you want to generate an assessment report from the results
 of an evidence finder search query. When you use this parameter, Audit Manager
 generates a one-time report using only the evidence from the query output. This report does
-not include any assessment evidence that was manually [added to a report using the console](../../../../services/audit-manager/latest/userguide/generate-assessment-report-generate-assessment-report-include-evidence.md), or [associated with a report using the API](api-batchassociateassessmentreportevidence.md).
+not include any assessment evidence that was manually [added to a report using the console](../../../../services/audit-manager/latest/userguide/generate-assessment-report.md#generate-assessment-report-include-evidence), or [associated with a report using the API](api-batchassociateassessmentreportevidence.md).
 
-To use this parameter, the [enablementStatus](api-evidencefinderenablement-auditmanager-type-evidencefinderenablement-enablementstatus.md) of evidence finder must be `ENABLED`.
+To use this parameter, the [enablementStatus](api-evidencefinderenablement.md#auditmanager-Type-EvidenceFinderEnablement-enablementStatus) of evidence finder must be `ENABLED`.
 
 For examples and help resolving `queryStatement` validation exceptions, see
 [Troubleshooting evidence finder issues](../../../../services/audit-manager/latest/userguide/evidence-finder-issues.md#querystatement-exceptions) in the
@@ -192,8 +192,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/auditmanager-2017-07-25/createassessmentreport.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreateAssessmentFramework
 
 CreateControl
+
+All content copied from https://docs.aws.amazon.com/.

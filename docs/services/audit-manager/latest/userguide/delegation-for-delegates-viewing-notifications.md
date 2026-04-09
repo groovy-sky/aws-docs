@@ -1,0 +1,64 @@
+AWS Audit Manager will no longer be open to new customers starting
+April 30, 2026. If you would like to use Audit Manager, sign up prior to that date. Existing customers
+can continue to use the service as normal. For more information, see
+[AWS Audit Manager availability change](audit-manager-availability-change.md).
+
+# Viewing your notifications for incoming delegation requests
+
+When an audit owner requests your assistance with reviewing a control set, you receive a
+notification that informs you of the control set that they delegated to you.
+
+## Prerequisites
+
+Make sure your IAM identity has appropriate permissions to view notifications in
+AWS Audit Manager. Two suggested policies that grant these permissions are [Allow users full administrator access to AWS Audit Manager](security-iam-id-based-policy-examples.md#example-2) and [Allow users management access to AWS Audit Manager](security-iam-id-based-policy-examples.md#management-access).
+
+## Procedure
+
+###### To view your notifications
+
+1. Open the AWS Audit Manager console at [https://console.aws.amazon.com/auditmanager/home](https://console.aws.amazon.com/auditmanager/home).
+
+2. Choose **Notifications** in the left navigation pane.
+
+3. On the **Notifications** page, review the list of control sets that
+    have been delegated to you for review. The table includes the following
+    information:
+
+NameDescription
+
+**Date**
+
+The date when the control set was delegated.
+
+**Assessment**
+
+The name of the assessment that's associated with the control set.
+
+**Control set**
+
+The name of the control set.
+
+**Source**
+
+The user or role that delegated the control set to you. **Description**
+
+Instructions that are provided by the audit owner.
+
+###### Tip
+
+You can also subscribe to an SNS topic to receive email alerts when a control set is
+delegated to you for review. For more information, see [Notifications in AWS Audit Manager](notifications.md).
+
+## Next steps
+
+When you're ready to start reviewing the controls that were delegated to you, see
+[Reviewing the delegated control set and its related evidence](delegation-for-delegates-reviewing-control-set-and-evidence.md).
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+For delegates
+
+Reviewing controls and evidence
+
+All content copied from https://docs.aws.amazon.com/.

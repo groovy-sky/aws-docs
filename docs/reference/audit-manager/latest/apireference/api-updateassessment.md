@@ -289,7 +289,7 @@ HTTP Status Code: 404
 **ServiceQuotaExceededException**
 
 You've reached your account quota for this resource type. To perform the requested
-action, delete some existing resources or [request a quota increase](../../../../general/general/latest/gr/aws-service-limits.md) from
+action, delete some existing resources or [request a quota increase](../../../../general/latest/gr/aws-service-limits.md) from
 the Service Quotas console. For a list of Audit Manager service quotas, see [Quotas and\
 restrictions for AWS Audit Manager](../../../../services/audit-manager/latest/userguide/service-quotas.md).
 
@@ -339,8 +339,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/auditmanager-2017-07-25/updateassessment.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 UntagResource
 
 UpdateAssessmentControl
+
+All content copied from https://docs.aws.amazon.com/.

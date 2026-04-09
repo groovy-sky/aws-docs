@@ -1,0 +1,228 @@
+# Aurora DSQL Connector for Ruby pg
+
+The [Aurora DSQL Connector for Ruby](https://github.com/awslabs/aurora-dsql-connectors/tree/main/ruby/pg) is a Ruby connector built on [pg](https://github.com/ged/ruby-pg) that integrates IAM authentication for connecting Ruby applications to Amazon Aurora DSQL clusters.
+
+The connector handles token generation, SSL configuration, and connection pooling so you can focus on your application logic.
+
+## About the connector
+
+Amazon Aurora DSQL requires IAM authentication with time-limited tokens that existing Ruby PostgreSQL drivers do not natively support. The Aurora DSQL Connector for Ruby adds an authentication layer on top of the pg gem that handles IAM token generation, allowing you to connect to Aurora DSQL without changing your existing pg workflows.
+
+### What is Aurora DSQL authentication?
+
+In Aurora DSQL, **authentication** involves:
+
+- **IAM Authentication**: All connections use IAM-based authentication with time-limited tokens
+
+- **Token Generation**: The connector generates authentication tokens using AWS credentials, and these tokens have configurable lifetimes
+
+The Aurora DSQL Connector for Ruby understands these requirements and automatically generates IAM authentication tokens when establishing connections.
+
+### Features
+
+- **Automatic IAM authentication** \- Handles Aurora DSQL token generation and refresh
+
+- **Built on pg** \- Wraps the popular PostgreSQL gem for Ruby
+
+- **Seamless integration** \- Works with existing pg gem workflows
+
+- **Connection pooling** \- Built-in support via the `connection_pool` gem with max\_lifetime enforcement
+
+- **Region auto-detection** \- Extracts AWS region from Aurora DSQL cluster hostname
+
+- **AWS credentials support** \- Supports AWS profiles and custom credentials providers
+
+- **OCC retry** \- Opt-in optimistic concurrency control retry with exponential backoff
+
+## Example application
+
+For a complete example, see the [example application](https://github.com/awslabs/aurora-dsql-connectors/tree/main/ruby/pg/example) on GitHub.
+
+## Quick start guide
+
+### Requirements
+
+- Ruby 3.1 or later
+
+- [Access to an Aurora DSQL cluster](getting-started.md)
+
+- AWS credentials configured (via AWS CLI, environment variables, or IAM roles)
+
+## Installation
+
+Add to your Gemfile:
+
+```ruby
+
+gem "aurora-dsql-ruby-pg"
+```
+
+Or install directly:
+
+```bash
+
+gem install aurora-dsql-ruby-pg
+```
+
+## Usage
+
+### Pool connection
+
+```ruby
+
+require "aurora_dsql_pg"
+
+# Create a connection pool with OCC retry enabled
+pool = AuroraDsql::Pg.create_pool(
+  host: "your-cluster.dsql.us-east-1.on.aws",
+  occ_max_retries: 3
+)
+
+# Read
+pool.with do |conn|
+  result = conn.exec("SELECT 'Hello, DSQL!'")
+  puts result[0]["?column?"]
+end
+
+# Write — you must wrap writes in a transaction
+pool.with do |conn|
+  conn.transaction do
+    conn.exec_params("INSERT INTO users (id, name) VALUES (gen_random_uuid(), $1)", ["Alice"])
+  end
+end
+
+pool.shutdown
+```
+
+### Single connection
+
+For simple scripts or when connection pooling is not needed:
+
+```ruby
+
+conn = AuroraDsql::Pg.connect(host: "your-cluster.dsql.us-east-1.on.aws")
+conn.exec("SELECT 1")
+conn.close
+```
+
+### Advanced usage
+
+**Host configuration**
+
+The connector supports both full cluster endpoints (region auto-detected) and cluster IDs (region required):
+
+```ruby
+
+# Full endpoint (region auto-detected)
+pool = AuroraDsql::Pg.create_pool(
+  host: "your-cluster.dsql.us-east-1.on.aws"
+)
+
+# Cluster ID (region required)
+pool = AuroraDsql::Pg.create_pool(
+  host: "your-cluster-id",
+  region: "us-east-1"
+)
+```
+
+**AWS profiles**
+
+Specify an AWS profile for credentials:
+
+```ruby
+
+pool = AuroraDsql::Pg.create_pool(
+  host: "your-cluster.dsql.us-east-1.on.aws",
+  profile: "production"
+)
+```
+
+**Connection string format**
+
+The connector supports PostgreSQL connection string formats:
+
+```text
+
+postgres://[user@]host[:port]/[database][?param=value&...]
+postgresql://[user@]host[:port]/[database][?param=value&...]
+```
+
+Supported query parameters: `region`, `profile`, `tokenDurationSecs`.
+
+```ruby
+
+# Full endpoint with profile
+pool = AuroraDsql::Pg.create_pool(
+  "postgres://admin@cluster.dsql.us-east-1.on.aws/postgres?profile=dev"
+)
+```
+
+**OCC retry**
+
+Aurora DSQL uses optimistic concurrency control (OCC). When two transactions modify the same data, the first to commit wins and the second receives an OCC error.
+
+OCC retry is opt-in. Set `occ_max_retries` when creating the pool to enable automatic retry with exponential backoff and jitter on `pool.with`:
+
+```ruby
+
+pool = AuroraDsql::Pg.create_pool(
+  host: "your-cluster.dsql.us-east-1.on.aws",
+  occ_max_retries: 3
+)
+
+pool.with do |conn|
+  conn.transaction do
+    conn.exec_params("UPDATE accounts SET balance = balance - $1 WHERE id = $2", [100, from_id])
+    conn.exec_params("UPDATE accounts SET balance = balance + $1 WHERE id = $2", [100, to_id])
+  end
+end
+```
+
+###### Warning
+
+`pool.with` does NOT automatically wrap your block in a transaction. You must call `conn.transaction` yourself for write operations. On OCC conflict the connector re-executes the entire block, so it should contain only database operations and be safe to retry.
+
+To skip retry on individual calls, pass `retry_occ: false`:
+
+```ruby
+
+pool.with(retry_occ: false) do |conn|
+  conn.exec("SELECT 1")
+end
+```
+
+## Configuration options
+
+FieldTypeDefaultDescriptionhostString(required)Cluster endpoint or cluster IDregionString(auto-detected)AWS region; required if host is a cluster IDuserString"admin"Database userdatabaseString"postgres"Database nameportInteger5432Database portprofileStringnilAWS profile name for credentialstoken\_durationInteger900 (15 min)Token validity duration in seconds (max allowed: 1 week, default: 15 min)credentials\_providerAws::CredentialsnilCustom credentials providermax\_lifetimeInteger3300 (55 min)Maximum connection lifetime in secondsapplication\_nameStringnilORM prefix for application\_nameloggerLoggernilLogger for OCC retry warningsocc\_max\_retriesIntegernil (disabled)Max OCC retries on `pool.with`; enables retry when set
+
+`create_pool` also accepts a `pool:` keyword with a hash of options that you pass directly to `ConnectionPool.new`. If you omit `pool:`, the connector defaults to `{size: 5, timeout: 5}`. Keys you provide override only those specific defaults.
+
+```ruby
+
+pool = AuroraDsql::Pg.create_pool(
+  host: "your-cluster.dsql.us-east-1.on.aws",
+  pool: { size: 10, timeout: 10 }
+)
+```
+
+## Authentication
+
+The connector automatically handles Aurora DSQL authentication by generating tokens using AWS credentials. If you do not provide the AWS region, the connector parses it from the hostname.
+
+For more information on authentication in Aurora DSQL, see [Authentication and authorization for Aurora DSQL](authentication-authorization.md).
+
+### Admin vs regular users
+
+- Users named "admin" automatically use admin authentication tokens
+
+- All other users use regular authentication tokens
+
+- The connector generates tokens dynamically for each connection
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Postgres.js connector
+
+.NET connector
+
+All content copied from https://docs.aws.amazon.com/.
