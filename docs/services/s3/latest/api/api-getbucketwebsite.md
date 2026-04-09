@@ -1,0 +1,196 @@
+# GetBucketWebsite
+
+###### Note
+
+This operation is not supported for directory buckets.
+
+Returns the website configuration for a bucket. To host website on Amazon S3, you can configure a bucket
+as website by adding a website configuration. For more information about hosting websites, see [Hosting Websites on Amazon S3](../dev/websitehosting.md).
+
+This GET action requires the `S3:GetBucketWebsite` permission. By default, only the
+bucket owner can read the bucket website configuration. However, bucket owners can allow other users to
+read the website configuration by writing a bucket policy granting them the
+`S3:GetBucketWebsite` permission.
+
+The following operations are related to `GetBucketWebsite`:
+
+- [DeleteBucketWebsite](api-deletebucketwebsite.md)
+
+- [PutBucketWebsite](api-putbucketwebsite.md)
+
+###### Important
+
+You must URL encode any signed header values that contain spaces. For example, if your header value is `my  file.txt`, containing two spaces after `my`, you must URL encode this value to `my%20%20file.txt`.
+
+## Request Syntax
+
+```nohighlight
+
+GET /?website HTTP/1.1
+Host: Bucket.s3.amazonaws.com
+x-amz-expected-bucket-owner: ExpectedBucketOwner
+
+```
+
+## URI Request Parameters
+
+The request uses the following URI parameters.
+
+**[Bucket](#API_GetBucketWebsite_RequestSyntax)**
+
+The bucket name for which to get the website configuration.
+
+Required: Yes
+
+**[x-amz-expected-bucket-owner](#API_GetBucketWebsite_RequestSyntax)**
+
+The account ID of the expected bucket owner. If the account ID that you provide does not match the actual owner of the bucket, the request fails with the HTTP status code `403 Forbidden` (access denied).
+
+## Request Body
+
+The request does not have a request body.
+
+## Response Syntax
+
+```nohighlight
+
+HTTP/1.1 200
+<?xml version="1.0" encoding="UTF-8"?>
+<WebsiteConfiguration>
+   <RedirectAllRequestsTo>
+      <HostName>string</HostName>
+      <Protocol>string</Protocol>
+   </RedirectAllRequestsTo>
+   <IndexDocument>
+      <Suffix>string</Suffix>
+   </IndexDocument>
+   <ErrorDocument>
+      <Key>string</Key>
+   </ErrorDocument>
+   <RoutingRules>
+      <RoutingRule>
+         <Condition>
+            <HttpErrorCodeReturnedEquals>string</HttpErrorCodeReturnedEquals>
+            <KeyPrefixEquals>string</KeyPrefixEquals>
+         </Condition>
+         <Redirect>
+            <HostName>string</HostName>
+            <HttpRedirectCode>string</HttpRedirectCode>
+            <Protocol>string</Protocol>
+            <ReplaceKeyPrefixWith>string</ReplaceKeyPrefixWith>
+            <ReplaceKeyWith>string</ReplaceKeyWith>
+         </Redirect>
+      </RoutingRule>
+   </RoutingRules>
+</WebsiteConfiguration>
+```
+
+## Response Elements
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in XML format by the service.
+
+**[WebsiteConfiguration](#API_GetBucketWebsite_ResponseSyntax)**
+
+Root level tag for the WebsiteConfiguration parameters.
+
+Required: Yes
+
+**[ErrorDocument](#API_GetBucketWebsite_ResponseSyntax)**
+
+The object key name of the website error document to use for 4XX class errors.
+
+Type: [ErrorDocument](api-errordocument.md) data type
+
+**[IndexDocument](#API_GetBucketWebsite_ResponseSyntax)**
+
+The name of the index document for the website (for example `index.html`).
+
+Type: [IndexDocument](api-indexdocument.md) data type
+
+**[RedirectAllRequestsTo](#API_GetBucketWebsite_ResponseSyntax)**
+
+Specifies the redirect behavior of all requests to a website endpoint of an Amazon S3 bucket.
+
+Type: [RedirectAllRequestsTo](api-redirectallrequeststo.md) data type
+
+**[RoutingRules](#API_GetBucketWebsite_ResponseSyntax)**
+
+Rules that define when a redirect is applied and the redirect behavior.
+
+Type: Array of [RoutingRule](api-routingrule.md) data types
+
+## Examples
+
+### Sample Request
+
+This request retrieves website configuration on the specified bucket.
+
+```
+
+            GET ?website HTTP/1.1
+            Host: amzn-s3-demo-bucket.s3.<Region>.amazonaws.com
+            Date: Thu, 27 Jan 2011 00:49:20 GMT
+            Authorization: AWS AWS_ACCESS_KEY_ID_REDACTED:n0Nhek72Ufg/u7Sm5C1dqRLs8XX=
+
+```
+
+### Sample Response
+
+This example illustrates one usage of GetBucketWebsite.
+
+```
+
+         HTTP/1.1 200 OK
+         x-amz-id-2: YgIPIfBiKa2bj0KMgUAdQkf3ShJTOOpXUueF6QKo
+         x-amz-request-id: 3848CD259D811111
+         Date: Thu, 27 Jan 2011 00:49:26 GMT
+         Content-Length: 240
+         Content-Type: application/xml
+         Transfer-Encoding: chunked
+         Server: AmazonS3
+
+         <?xml version="1.0" encoding="UTF-8"?>
+         <WebsiteConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+           <IndexDocument>
+             <Suffix>index.html</Suffix>
+           </IndexDocument>
+          <ErrorDocument>
+            <Key>404.html</Key>
+          </ErrorDocument>
+         </WebsiteConfiguration>
+
+```
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../goto/cli2/s3-2006-03-01/getbucketwebsite.md)
+
+- [AWS SDK for .NET V4](../../../../reference/goto/dotnetsdkv4/s3-2006-03-01/getbucketwebsite.md)
+
+- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3-2006-03-01/getbucketwebsite.md)
+
+- [AWS SDK for Go v2](../../../../reference/goto/sdkforgov2/s3-2006-03-01/getbucketwebsite.md)
+
+- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/getbucketwebsite.md)
+
+- [AWS SDK for JavaScript V3](../../../../reference/goto/sdkforjavascriptv3/s3-2006-03-01/getbucketwebsite.md)
+
+- [AWS SDK for Kotlin](../../../../reference/goto/sdkforkotlin/s3-2006-03-01/getbucketwebsite.md)
+
+- [AWS SDK for PHP V3](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/getbucketwebsite.md)
+
+- [AWS SDK for Python](../../../goto/boto3/s3-2006-03-01/getbucketwebsite.md)
+
+- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/getbucketwebsite.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+GetBucketVersioning
+
+GetObject
+
+All content copied from https://docs.aws.amazon.com/.

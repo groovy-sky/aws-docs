@@ -1,0 +1,330 @@
+# GetStorageLensConfiguration
+
+###### Note
+
+This operation is not supported by directory buckets.
+
+Gets the Amazon S3 Storage Lens configuration. For more information, see [Assessing your storage\
+activity and usage with Amazon S3 Storage Lens](../dev/storage-lens.md) in the
+_Amazon S3 User Guide_. For a complete list of S3 Storage Lens metrics, see [S3 Storage Lens metrics glossary](../userguide/storage-lens-metrics-glossary.md) in the _Amazon S3 User Guide_.
+
+###### Note
+
+To use this action, you must have permission to perform the
+`s3:GetStorageLensConfiguration` action. For more information, see [Setting permissions to use Amazon S3 Storage Lens](../dev/storage-lens-iam-permissions.md) in the
+_Amazon S3 User Guide_.
+
+## Request Syntax
+
+```nohighlight
+
+GET /v20180820/storagelens/storagelensid HTTP/1.1
+Host: s3-control.amazonaws.com
+x-amz-account-id: AccountId
+
+```
+
+## URI Request Parameters
+
+The request uses the following URI parameters.
+
+**[storagelensid](#API_control_GetStorageLensConfiguration_RequestSyntax)**
+
+The ID of the Amazon S3 Storage Lens configuration.
+
+Length Constraints: Minimum length of 1. Maximum length of 64.
+
+Pattern: `[a-zA-Z0-9\-\_\.]+`
+
+Required: Yes
+
+**[x-amz-account-id](#API_control_GetStorageLensConfiguration_RequestSyntax)**
+
+The account ID of the requester.
+
+Length Constraints: Maximum length of 64.
+
+Pattern: `^\d{12}$`
+
+Required: Yes
+
+## Request Body
+
+The request does not have a request body.
+
+## Response Syntax
+
+```nohighlight
+
+HTTP/1.1 200
+<?xml version="1.0" encoding="UTF-8"?>
+<StorageLensConfiguration>
+   <Id>string</Id>
+   <AccountLevel>
+      <ActivityMetrics>
+         <IsEnabled>boolean</IsEnabled>
+      </ActivityMetrics>
+      <AdvancedCostOptimizationMetrics>
+         <IsEnabled>boolean</IsEnabled>
+      </AdvancedCostOptimizationMetrics>
+      <AdvancedDataProtectionMetrics>
+         <IsEnabled>boolean</IsEnabled>
+      </AdvancedDataProtectionMetrics>
+      <AdvancedPerformanceMetrics>
+         <IsEnabled>boolean</IsEnabled>
+      </AdvancedPerformanceMetrics>
+      <BucketLevel>
+         <ActivityMetrics>
+            <IsEnabled>boolean</IsEnabled>
+         </ActivityMetrics>
+         <AdvancedCostOptimizationMetrics>
+            <IsEnabled>boolean</IsEnabled>
+         </AdvancedCostOptimizationMetrics>
+         <AdvancedDataProtectionMetrics>
+            <IsEnabled>boolean</IsEnabled>
+         </AdvancedDataProtectionMetrics>
+         <AdvancedPerformanceMetrics>
+            <IsEnabled>boolean</IsEnabled>
+         </AdvancedPerformanceMetrics>
+         <DetailedStatusCodesMetrics>
+            <IsEnabled>boolean</IsEnabled>
+         </DetailedStatusCodesMetrics>
+         <PrefixLevel>
+            <StorageMetrics>
+               <IsEnabled>boolean</IsEnabled>
+               <SelectionCriteria>
+                  <Delimiter>string</Delimiter>
+                  <MaxDepth>integer</MaxDepth>
+                  <MinStorageBytesPercentage>double</MinStorageBytesPercentage>
+               </SelectionCriteria>
+            </StorageMetrics>
+         </PrefixLevel>
+      </BucketLevel>
+      <DetailedStatusCodesMetrics>
+         <IsEnabled>boolean</IsEnabled>
+      </DetailedStatusCodesMetrics>
+      <StorageLensGroupLevel>
+         <SelectionCriteria>
+            <Exclude>
+               <Arn>string</Arn>
+            </Exclude>
+            <Include>
+               <Arn>string</Arn>
+            </Include>
+         </SelectionCriteria>
+      </StorageLensGroupLevel>
+   </AccountLevel>
+   <Include>
+      <Buckets>
+         <Arn>string</Arn>
+      </Buckets>
+      <Regions>
+         <Region>string</Region>
+      </Regions>
+   </Include>
+   <Exclude>
+      <Buckets>
+         <Arn>string</Arn>
+      </Buckets>
+      <Regions>
+         <Region>string</Region>
+      </Regions>
+   </Exclude>
+   <DataExport>
+      <CloudWatchMetrics>
+         <IsEnabled>boolean</IsEnabled>
+      </CloudWatchMetrics>
+      <S3BucketDestination>
+         <AccountId>string</AccountId>
+         <Arn>string</Arn>
+         <Encryption>
+            <SSE-KMS>
+               <KeyId>string</KeyId>
+            </SSE-KMS>
+            <SSE-S3>
+            </SSE-S3>
+         </Encryption>
+         <Format>string</Format>
+         <OutputSchemaVersion>string</OutputSchemaVersion>
+         <Prefix>string</Prefix>
+      </S3BucketDestination>
+      <StorageLensTableDestination>
+         <Encryption>
+            <SSE-KMS>
+               <KeyId>string</KeyId>
+            </SSE-KMS>
+            <SSE-S3>
+            </SSE-S3>
+         </Encryption>
+         <IsEnabled>boolean</IsEnabled>
+      </StorageLensTableDestination>
+   </DataExport>
+   <ExpandedPrefixesDataExport>
+      <S3BucketDestination>
+         <AccountId>string</AccountId>
+         <Arn>string</Arn>
+         <Encryption>
+            <SSE-KMS>
+               <KeyId>string</KeyId>
+            </SSE-KMS>
+            <SSE-S3>
+            </SSE-S3>
+         </Encryption>
+         <Format>string</Format>
+         <OutputSchemaVersion>string</OutputSchemaVersion>
+         <Prefix>string</Prefix>
+      </S3BucketDestination>
+      <StorageLensTableDestination>
+         <Encryption>
+            <SSE-KMS>
+               <KeyId>string</KeyId>
+            </SSE-KMS>
+            <SSE-S3>
+            </SSE-S3>
+         </Encryption>
+         <IsEnabled>boolean</IsEnabled>
+      </StorageLensTableDestination>
+   </ExpandedPrefixesDataExport>
+   <IsEnabled>boolean</IsEnabled>
+   <AwsOrg>
+      <Arn>string</Arn>
+   </AwsOrg>
+   <StorageLensArn>string</StorageLensArn>
+   <PrefixDelimiter>string</PrefixDelimiter>
+</StorageLensConfiguration>
+```
+
+## Response Elements
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in XML format by the service.
+
+**[StorageLensConfiguration](#API_control_GetStorageLensConfiguration_ResponseSyntax)**
+
+Root level tag for the StorageLensConfiguration parameters.
+
+Required: Yes
+
+**[AccountLevel](#API_control_GetStorageLensConfiguration_ResponseSyntax)**
+
+A container for all the account-level configurations of your S3 Storage Lens
+configuration.
+
+Type: [AccountLevel](api-control-accountlevel.md) data type
+
+**[AwsOrg](#API_control_GetStorageLensConfiguration_ResponseSyntax)**
+
+A container for the AWS organization for this S3 Storage Lens configuration.
+
+Type: [StorageLensAwsOrg](api-control-storagelensawsorg.md) data type
+
+**[DataExport](#API_control_GetStorageLensConfiguration_ResponseSyntax)**
+
+A container to specify the properties of your S3 Storage Lens metrics export including, the
+destination, schema and format.
+
+Type: [StorageLensDataExport](api-control-storagelensdataexport.md) data type
+
+**[Exclude](#API_control_GetStorageLensConfiguration_ResponseSyntax)**
+
+A container for what is excluded in this configuration. This container can only be valid
+if there is no `Include` container submitted, and it's not empty.
+
+Type: [Exclude](api-control-exclude.md) data type
+
+**[ExpandedPrefixesDataExport](#API_control_GetStorageLensConfiguration_ResponseSyntax)**
+
+A container that configures your S3 Storage Lens expanded prefixes metrics report.
+
+Type: [StorageLensExpandedPrefixesDataExport](api-control-storagelensexpandedprefixesdataexport.md) data type
+
+**[Id](#API_control_GetStorageLensConfiguration_ResponseSyntax)**
+
+A container for the Amazon S3 Storage Lens configuration ID.
+
+Type: String
+
+Length Constraints: Minimum length of 1. Maximum length of 64.
+
+Pattern: `[a-zA-Z0-9\-\_\.]+`
+
+**[Include](#API_control_GetStorageLensConfiguration_ResponseSyntax)**
+
+A container for what is included in this configuration. This container can only be valid
+if there is no `Exclude` container submitted, and it's not empty.
+
+Type: [Include](api-control-include.md) data type
+
+**[IsEnabled](#API_control_GetStorageLensConfiguration_ResponseSyntax)**
+
+A container for whether the S3 Storage Lens configuration is enabled.
+
+Type: Boolean
+
+**[PrefixDelimiter](#API_control_GetStorageLensConfiguration_ResponseSyntax)**
+
+A container for all prefix delimiters that are used for object keys in this S3 Storage Lens
+configuration. The prefix delimiters determine how S3 Storage Lens counts prefix depth, by
+separating the hierarchical levels in object keys.
+
+###### Note
+
+- If either a prefix delimiter or existing delimiter is undefined, Amazon S3 uses the
+delimiter that’s defined.
+
+- If both the prefix delimiter and existing delimiter are undefined, S3 uses `/`
+as the default delimiter.
+
+- When custom delimiters are used, both the prefix delimiter and existing
+delimiter must specify the same special character. Otherwise, your request results
+in an error.
+
+Type: String
+
+Length Constraints: Maximum length of 1.
+
+**[StorageLensArn](#API_control_GetStorageLensConfiguration_ResponseSyntax)**
+
+The Amazon Resource Name (ARN) of the S3 Storage Lens configuration. This property is read-only
+and follows the following format: `
+               arn:aws:s3:us-east-1:example-account-id:storage-lens/your-dashboard-name
+                  `
+
+Type: String
+
+Length Constraints: Minimum length of 1. Maximum length of 1024.
+
+Pattern: `arn:[a-z\-]+:s3:[a-z0-9\-]+:\d{12}:storage\-lens\/.*`
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../goto/cli2/s3control-2018-08-20/getstoragelensconfiguration.md)
+
+- [AWS SDK for .NET V4](../../../../reference/goto/dotnetsdkv4/s3control-2018-08-20/getstoragelensconfiguration.md)
+
+- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3control-2018-08-20/getstoragelensconfiguration.md)
+
+- [AWS SDK for Go v2](../../../../reference/goto/sdkforgov2/s3control-2018-08-20/getstoragelensconfiguration.md)
+
+- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3control-2018-08-20/getstoragelensconfiguration.md)
+
+- [AWS SDK for JavaScript V3](../../../../reference/goto/sdkforjavascriptv3/s3control-2018-08-20/getstoragelensconfiguration.md)
+
+- [AWS SDK for Kotlin](../../../../reference/goto/sdkforkotlin/s3control-2018-08-20/getstoragelensconfiguration.md)
+
+- [AWS SDK for PHP V3](../../../../reference/goto/sdkforphpv3/s3control-2018-08-20/getstoragelensconfiguration.md)
+
+- [AWS SDK for Python](../../../goto/boto3/s3control-2018-08-20/getstoragelensconfiguration.md)
+
+- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3control-2018-08-20/getstoragelensconfiguration.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+GetPublicAccessBlock
+
+GetStorageLensConfigurationTagging
+
+All content copied from https://docs.aws.amazon.com/.

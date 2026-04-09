@@ -1,0 +1,103 @@
+# Use `ListObjects` with a CLI
+
+The following code examples show how to use `ListObjects`.
+
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in
+context in the following code example:
+
+- [Create a web page that lists Amazon S3 objects](s3-example-s3-scenario-listobjectsweb-section.md)
+
+CLI
+
+**AWS CLI**
+
+The following example uses the `list-objects` command to display the names of all the objects in the specified bucket:
+
+```nohighlight
+
+aws s3api list-objects --bucket text-content --query 'Contents[].{Key: Key, Size: Size}'
+
+```
+
+The example uses the `--query` argument to filter the output of
+`list-objects` down to the key value and size for each object
+
+For more information about objects, see Working with Amazon S3 Objects in the _Amazon S3 Developer Guide_.
+
+- For API details, see
+[ListObjects](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/list-objects.html)
+in _AWS CLI Command Reference_.
+
+PowerShell
+
+**Tools for PowerShell V4**
+
+**Example 1: This command retrieves the information about all of the items in the bucket "test-files".**
+
+```powershell
+
+Get-S3Object -BucketName amzn-s3-demo-bucket
+
+```
+
+**Example 2: This command retrieves the information about the item "sample.txt" from bucket "test-files".**
+
+```powershell
+
+Get-S3Object -BucketName amzn-s3-demo-bucket -Key sample.txt
+
+```
+
+**Example 3: This command retrieves the information about all items with the prefix "sample" from bucket "test-files".**
+
+```powershell
+
+Get-S3Object -BucketName amzn-s3-demo-bucket -KeyPrefix sample
+
+```
+
+- For API details, see
+[ListObjects](../../../powershell/v4/reference.md)
+in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
+
+**Tools for PowerShell V5**
+
+**Example 1: This command retrieves the information about all of the items in the bucket "test-files".**
+
+```powershell
+
+Get-S3Object -BucketName amzn-s3-demo-bucket
+
+```
+
+**Example 2: This command retrieves the information about the item "sample.txt" from bucket "test-files".**
+
+```powershell
+
+Get-S3Object -BucketName amzn-s3-demo-bucket -Key sample.txt
+
+```
+
+**Example 3: This command retrieves the information about all items with the prefix "sample" from bucket "test-files".**
+
+```powershell
+
+Get-S3Object -BucketName amzn-s3-demo-bucket -KeyPrefix sample
+
+```
+
+- For API details, see
+[ListObjects](../../../powershell/v5/reference.md)
+in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
+
+For a complete list of AWS SDK developer guides and code examples, see
+[Developing with Amazon S3 using the AWS SDKs](../../../../reference/amazons3/latest/api/sdk-general-information-section.md).
+This topic also includes information about getting started and details about previous SDK versions.
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+ListObjectVersions
+
+ListObjectsV2
+
+All content copied from https://docs.aws.amazon.com/.

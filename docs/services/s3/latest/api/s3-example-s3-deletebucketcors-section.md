@@ -1,0 +1,173 @@
+# Use `DeleteBucketCors` with an AWS SDK or CLI
+
+The following code examples show how to use `DeleteBucketCors`.
+
+.NET
+
+**SDK for .NET**
+
+###### Note
+
+There's more on GitHub. Find the complete example and learn how to set up and run in the
+[AWS Code\
+Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3).
+
+```csharp
+
+        /// <summary>
+        /// Deletes a CORS configuration from an Amazon S3 bucket.
+        /// </summary>
+        /// <param name="client">The initialized Amazon S3 client object used
+        /// to delete the CORS configuration from the bucket.</param>
+        private static async Task DeleteCORSConfigurationAsync(AmazonS3Client client)
+        {
+            DeleteCORSConfigurationRequest request = new DeleteCORSConfigurationRequest()
+            {
+                BucketName = BucketName,
+            };
+            await client.DeleteCORSConfigurationAsync(request);
+        }
+
+```
+
+- For API details, see
+[DeleteBucketCors](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/deletebucketcors.md)
+in _AWS SDK for .NET API Reference_.
+
+CLI
+
+**AWS CLI**
+
+The following command deletes a Cross-Origin Resource Sharing configuration from a bucket named `amzn-s3-demo-bucket`:
+
+```nohighlight
+
+aws s3api delete-bucket-cors --bucket amzn-s3-demo-bucket
+
+```
+
+- For API details, see
+[DeleteBucketCors](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-bucket-cors.html)
+in _AWS CLI Command Reference_.
+
+Python
+
+**SDK for Python (Boto3)**
+
+###### Note
+
+There's more on GitHub. Find the complete example and learn how to set up and run in the
+[AWS Code\
+Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics).
+
+```python
+
+class BucketWrapper:
+    """Encapsulates S3 bucket actions."""
+
+    def __init__(self, bucket):
+        """
+        :param bucket: A Boto3 Bucket resource. This is a high-level resource in Boto3
+                       that wraps bucket actions in a class-like structure.
+        """
+        self.bucket = bucket
+        self.name = bucket.name
+
+    def delete_cors(self):
+        """
+        Delete the CORS rules from the bucket.
+
+        :param bucket_name: The name of the bucket to update.
+        """
+        try:
+            self.bucket.Cors().delete()
+            logger.info("Deleted CORS from bucket '%s'.", self.bucket.name)
+        except ClientError:
+            logger.exception("Couldn't delete CORS from bucket '%s'.", self.bucket.name)
+            raise
+
+```
+
+- For API details, see
+[DeleteBucketCors](../../../goto/boto3/s3-2006-03-01/deletebucketcors.md)
+in _AWS SDK for Python (Boto3) API Reference_.
+
+Ruby
+
+**SDK for Ruby**
+
+###### Note
+
+There's more on GitHub. Find the complete example and learn how to set up and run in the
+[AWS Code\
+Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3).
+
+```ruby
+
+require 'aws-sdk-s3'
+
+# Wraps Amazon S3 bucket CORS configuration.
+class BucketCorsWrapper
+  attr_reader :bucket_cors
+
+  # @param bucket_cors [Aws::S3::BucketCors] A bucket CORS object configured with an existing bucket.
+  def initialize(bucket_cors)
+    @bucket_cors = bucket_cors
+  end
+
+  # Deletes the CORS configuration of a bucket.
+  #
+  # @return [Boolean] True if the CORS rules were deleted; otherwise, false.
+  def delete_cors
+    @bucket_cors.delete
+    true
+  rescue Aws::Errors::ServiceError => e
+    puts "Couldn't delete CORS rules for #{@bucket_cors.bucket.name}. Here's why: #{e.message}"
+    false
+  end
+
+end
+
+```
+
+- For API details, see
+[DeleteBucketCors](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/deletebucketcors.md)
+in _AWS SDK for Ruby API Reference_.
+
+SAP ABAP
+
+**SDK for SAP ABAP**
+
+###### Note
+
+There's more on GitHub. Find the complete example and learn how to set up and run in the
+[AWS Code\
+Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3).
+
+```sap-abap
+
+    TRY.
+        lo_s3->deletebucketcors(
+          iv_bucket = iv_bucket_name ).
+        MESSAGE 'Bucket CORS configuration deleted.' TYPE 'I'.
+      CATCH /aws1/cx_s3_nosuchbucket.
+        MESSAGE 'Bucket does not exist.' TYPE 'E'.
+    ENDTRY.
+
+```
+
+- For API details, see
+[DeleteBucketCors](../../../../reference/sdk-for-sap-abap/v1/api/latest/index.md)
+in _AWS SDK for SAP ABAP API reference_.
+
+For a complete list of AWS SDK developer guides and code examples, see
+[Developing with Amazon S3 using the AWS SDKs](../../../../reference/amazons3/latest/api/sdk-general-information-section.md).
+This topic also includes information about getting started and details about previous SDK versions.
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+DeleteBucketAnalyticsConfiguration
+
+DeleteBucketEncryption
+
+All content copied from https://docs.aws.amazon.com/.

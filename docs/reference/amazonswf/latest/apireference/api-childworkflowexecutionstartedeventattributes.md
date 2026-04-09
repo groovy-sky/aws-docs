@@ -1,0 +1,50 @@
+# ChildWorkflowExecutionStartedEventAttributes
+
+Provides the details of the `ChildWorkflowExecutionStarted` event.
+
+## Contents
+
+**initiatedEventId**
+
+The ID of the `StartChildWorkflowExecutionInitiated` event corresponding to the
+`StartChildWorkflowExecution` [Decision](api-decision.md) to start this child workflow execution.
+This information can be useful for diagnosing problems by tracing back the chain of
+events leading up to this event.
+
+Type: Long
+
+Required: Yes
+
+**workflowExecution**
+
+The child workflow execution that was started.
+
+Type: [WorkflowExecution](api-workflowexecution.md) object
+
+Required: Yes
+
+**workflowType**
+
+The type of the child workflow execution.
+
+Type: [WorkflowType](api-workflowtype.md) object
+
+Required: Yes
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/swf-2012-01-25/childworkflowexecutionstartedeventattributes.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/swf-2012-01-25/childworkflowexecutionstartedeventattributes.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/swf-2012-01-25/childworkflowexecutionstartedeventattributes.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+ChildWorkflowExecutionFailedEventAttributes
+
+ChildWorkflowExecutionTerminatedEventAttributes
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,0 +1,161 @@
+# Understanding S3 Storage Lens table schemas
+
+When exporting S3 Storage Lens metrics to S3 tables, the data is organized into three separate
+table schemas: storage metrics, bucket property metrics, and activity metrics.
+
+## Storage metrics table schema
+
+NameTypeDescription`version_number`stringVersion identifier of the schema of the table`configuration_id`stringS3 Storage Lens configuration name`report_time`timestamptzDate the S3 Storage Lens report refers to`aws_account_id`stringAccount id the entry refers to`aws_region`stringRegion`storage_class`stringStorage Class`record_type`stringType of record, `related` to what is the level of aggregation of
+data. Values: `ACCOUNT`, `BUCKET`, `PREFIX`,
+`STORAGE_LENS_GROUP_BUCKET`, `STORAGE_LENS_GROUP_ACCOUNT`.
+`record_value`stringDisambiguator for record types that have more than one record under them. It
+is used to reference the prefix`bucket_name`stringBucket name`object_count`longNumber of objects stored for the current referenced item`storage_bytes`DECIMAL(38,0)Number of bytes stored for the current referenced item`bucket_key_sse_kms_object_count`longNumber of objects encrypted with a customer managed key stored for the current
+referenced item`bucket_key_sse_kms_storage_bytes`DECIMAL(38,0)Number of bytes encrypted with a customer managed key stored for the current
+referenced item`current_version_object_count`longNumber of current version objects stored for the current referenced
+item`current_version_storage_bytes`DECIMAL(38,0)Number of current version bytes stored for the current referenced
+item`delete_marker_object_count`longNumber of delete marker objects stored for the current referenced
+item`delete_marker_storage_bytes`DECIMAL(38,0)Number of delete marker bytes stored for the current referenced item`encrypted_object_count`longNumber of encrypted objects stored for the current referenced item`encrypted_storage_bytes`DECIMAL(38,0)Number of encrypted bytes stored for the current referenced item`incomplete_mpu_object_older_than_7_days_count`longNumber of incomplete multipart upload objects older than 7 days stored for
+the current referenced item`incomplete_mpu_storage_older_than_7_days_bytes`DECIMAL(38,0)Number of incomplete multipart upload bytes stored older than 7 days for the
+current referenced item`incomplete_mpu_object_count`longNumber of incomplete multipart upload objects stored for the current
+referenced item`incomplete_mpu_storage_bytes`DECIMAL(38,0)Number of incomplete multipart upload bytes stored for the current referenced
+item`non_current_version_object_count`longNumber of non-current version objects stored for the current referenced
+item`non_current_version_storage_bytes`DECIMAL(38,0)Number of non-current version bytes stored for the current referenced
+item`object_lock_enabled_object_count`longNumber of objects stored for for objects with lock enabled in the current
+referenced item`object_lock_enabled_storage_bytes`DECIMAL(38,0)Number of bytes stored for objects with lock enabled in the current
+referenced item`replicated_object_count`longNumber of objects replicated for the current referenced item`replicated_storage_bytes`DECIMAL(38,0)Number of bytes replicated for the current referenced item`replicated_object_source_count`longNumber of objects replicated as source stored for the current referenced
+item`replicated_storage_source_bytes`DECIMAL(38,0)Number of bytes replicated as source for the current referenced item`sse_kms_object_count`longNumber of objects encrypted with SSE key stored for the current referenced
+item`sse_kms_storage_bytes`DECIMAL(38,0)Number of bytes encrypted with SSE key stored for the current referenced
+item`object_0kb_count`longNumber of objects with sizes equal to 0KB, including current version,
+noncurrent versions, incomplete multipart uploads, and delete markers`object_0kb_to_128kb_count`longNumber of objects with sizes greater than 0KB and less than equal to 128KB,
+including current version, noncurrent versions, incomplete multipart uploads, and
+delete markers`object_128kb_to_256kb_count`longNumber of objects with sizes greater than 128KB and less than equal to 256KB,
+including current version, noncurrent versions, incomplete multipart uploads, and
+delete markers`object_256kb_to_512kb_count`longNumber of objects with sizes greater than 256KB and less than equal to 512KB,
+including current version, noncurrent versions, incomplete multipart uploads, and
+delete markers`object_512kb_to_1mb_count`longNumber of objects with sizes greater than 512KB and less than equal to 1MB,
+including current version, noncurrent versions, incomplete multipart uploads, and
+delete markers`object_1mb_to_2mb_count`longNumber of objects with sizes greater than 1MB and less than equal to 2MB,
+including current version, noncurrent versions, incomplete multipart uploads, and
+delete markers`object_2mb_to_4mb_count`longNumber of objects with sizes greater than 2MB and less than equal to 4MB,
+including current version, noncurrent versions, incomplete multipart uploads, and
+delete markers`object_4mb_to_8mb_count`longNumber of objects with sizes greater than 4MB and less than equal to 8MB,
+including current version, noncurrent versions, incomplete multipart uploads, and
+delete markers`object_8mb_to_16mb_count`longNumber of objects with sizes greater than 8MB and less than equal to 16MB,
+including current version, noncurrent versions, incomplete multipart uploads, and
+delete markers`object_16mb_to_32mb_count`longNumber of objects with sizes greater than 16MB and less than equal to 32MB,
+including current version, noncurrent versions, incomplete multipart uploads, and
+delete markers`object_32mb_to_64mb_count`longNumber of objects with sizes greater than 32MB and less than equal to 64MB,
+including current version, noncurrent versions, incomplete multipart uploads, and
+delete markers`object_64mb_to_128mb_count`longNumber of objects with sizes greater than 64MB and less than equal to 128MB,
+including current version, noncurrent versions, incomplete multipart uploads, and
+delete markers`object_128mb_to_256mb_count`longNumber of objects sizes greater than 128MB and less than equal to 256MB,
+including current version, noncurrent versions, incomplete multipart uploads, and
+delete markers`object_256mb_to_512mb_count`longNumber of objects sizes greater than 256MB and less than equal to 512MB,
+including current version, noncurrent versions, incomplete multipart uploads, and
+delete markers`object_512mb_to_1gb_count`longNumber of objects sizes greater than 512MB and less than equal to 1GB,
+including current version, noncurrent versions, incomplete multipart uploads, and
+delete markers`object_1gb_to_2gb_count`longNumber of objects sizes greater than 1GB and less than equal to 2GB,
+including current version, noncurrent versions, incomplete multipart uploads, and
+delete markers`object_2gb_to_4gb_count`longNumber of objects sizes greater than 2GB and less than equal to 4GB,
+including current version, noncurrent versions, incomplete multipart uploads, and
+delete markers`object_larger_than_4gb_count`longNumber of objects sizes greater than 4GB, including current version,
+noncurrent versions, incomplete multipart uploads, and delete markers
+
+## Bucket property metrics table schema
+
+NameTypeDescription`version_number`stringVersion identifier of the schema of the table`configuration_id`stringS3 Storage Lens configuration name`report_time`timestamptzDate the S3 Storage Lens report refers to`aws_account_id`stringAccount id the entry refers to`record_type`stringType of record, related to what is the level of aggregation of data. Values:
+`ACCOUNT`, `BUCKET`, `PREFIX`,
+`STORAGE_LENS_GROUP_BUCKET`, `STORAGE_LENS_GROUP_ACCOUNT`.
+`record_value`stringDisambiguator for record types that have more than one record under them. It
+is used to reference the prefix.`aws_region`stringRegion`storage_class`stringStorage Class`bucket_name`stringBucket name`versioning_enabled_bucket_count`longNumber of buckets with versioning enabled for the current referenced
+item`mfa_delete_enabled_bucket_count`longNumber of buckets with MFA delete enabled for the current referenced
+item`sse_kms_enabled_bucket_count`longNumber of buckets with KMS enabled for the current referenced item`object_ownership_bucket_owner_enforced_bucket_count`longNumber of buckets with Object Ownership bucket owner enforced for the current
+referenced item`object_ownership_bucket_owner_preferred_bucket_count`longNumber of buckets with Object Ownership bucket owner preferred for the
+current referenced item`object_ownership_object_writer_bucket_count`longNumber of buckets with Object Ownership object writer for the current
+referenced item`transfer_acceleration_enabled_bucket_count`longNumber of buckets with transfer acceleration enabled for the current
+referenced item`event_notification_enabled_bucket_count`longNumber of buckets with event notification enabled for the current referenced
+item`transition_lifecycle_rule_count`longNumber of transition lifecycle rules for the current referenced item`expiration_lifecycle_rule_count`longNumber of expiration lifecycle rules for the current referenced item`non_current_version_transition_lifecycle_rule_count`longNumber of noncurrent version transition lifecycle rules for the current
+referenced item`non_current_version_expiration_lifecycle_rule_count`longNumber of noncurrent version expiration lifecycle rules for the current
+referenced item`abort_incomplete_multipart_upload_lifecycle_rule_count`longNumber of abort incomplete multipart upload lifecycle rules for the current
+referenced item`expired_object_delete_marker_lifecycle_rule_count`longNumber of expire object delete marker lifecycle rules for the current
+referenced item`same_region_replication_rule_count`longNumber of Same-Region Replication rule count for the current referenced
+item`cross_region_replication_rule_count`longNumber of Cross-Region Replication rule count for the current referenced
+item`same_account_replication_rule_count`longNumber of Same-account replication rule count for the current referenced
+item`cross_account_replication_rule_count`longNumber of Cross-account replication rule count for the current referenced
+item`invalid_destination_replication_rule_count`longNumber of buckets with Invalid destination replication for the current
+referenced item
+
+## Activity metrics table schema
+
+NameTypeDescription`version_number`stringVersion identifier of the schema of the table`configuration_id`stringS3 Storage Lens configuration name`report_time`timestamptzDate the S3 Storage Lens report refers to`aws_account_id`stringAccount id the entry refers to`aws_region`stringRegion`storage_class`stringStorage Class`record_type`stringType of record, related to what is the level of aggregation of data. Values:
+`ACCOUNT`, `BUCKET`, `PREFIX`,
+`STORAGE_LENS_GROUP_BUCKET`, `STORAGE_LENS_GROUP_ACCOUNT`.
+`record_value`stringDisambiguator for record types that have more than one record under them. It
+is used to reference the prefix`bucket_name`stringBucket name`all_request_count`longNumber of \_all\_ requests for the current referenced item`all_sse_kms_encrypted_request_count`longNumber of KMS encrypted requests for the current referenced item`all_unsupported_sig_request_count`longNumber of unsupported sig requests for the current referenced item`all_unsupported_tls_request_count`longNumber of unsupported TLS requests for the current referenced item`bad_request_error_400_count`longNumber of 400 bad request errors for the current referenced item`delete_request_count`longNumber of delete requests for the current referenced item`downloaded_bytes`decimal(0,0)Number of downloaded bytes for the current referenced item`error_4xx_count`longNumber of 4xx errors for the current referenced item`error_5xx_count`longNumber of 5xx errors for the current referenced item`forbidden_error_403_count`longNumber of 403 forbidden errors for the current referenced item`get_request_count`longNumber of get requests for the current referenced item`head_request_count`longNumber of head requests for the current referenced item`internal_server_error_500_count`longNumber of 500 internal server errors for the current referenced item`list_request_count`longNumber of list requests for the current referenced item`not_found_error_404_count`longNumber of 404 not found errors for the current referenced item`ok_status_200_count`longNumber of 200 OK requests for the current referenced item`partial_content_status_206_count`longNumber of 206 partial content requests for the current referenced
+item`post_request_count`longNumber of post requests for the current referenced item`put_request_count`longNumber of put requests for the current referenced item`select_request_count`longNumber of select requests for the current referenced item`select_returned_bytes`decimal(0,0)Number of bytes returned by select requests for the current referenced
+item`select_scanned_bytes`decimal(0,0)Number of bytes scanned by select requests for the current referenced
+item`service_unavailable_error_503_count`longNumber of 503 service unavailable errors for the current referenced
+item`uploaded_bytes`decimal(0,0)Number of uploaded bytes for the current referenced item`average_first_byte_latency`longAverage per-request time between when an S3 bucket receives a complete
+request and when it starts returning the response, measured over the past 24
+hours`average_total_request_latency`longAverage elapsed per-request time between the first byte received and the last
+byte sent to an S3 bucket, measured over the past 24 hours`read_0kb_request_count`longNumber of GetObject requests with data sizes of 0KB, including both range-based
+requests and whole object requests`read_0kb_to_128kb_request_count`longNumber of GetObject requests with data sizes greater than 0KB and up to 128KB,
+including both range-based requests and whole object requests`read_128kb_to_256kb_request_count`longNumber of GetObject requests with data sizes greater than 128KB and up to
+256KB, including both range-based requests and whole object requests`read_256kb_to_512kb_request_count`longNumber of GetObject requests with data sizes greater than 256KB and up to
+512KB, including both range-based requests and whole object requests`read_512kb_to_1mb_request_count`longNumber of GetObject requests with data sizes greater than 512KB and up to 1MB,
+including both range-based requests and whole object requests`read_1mb_to_2mb_request_count`longNumber of GetObject requests with data sizes greater than 1MB and up to 2MB,
+including both range-based requests and whole object requests`read_2mb_to_4mb_request_count`longNumber of GetObject requests with data sizes greater than 2MB and up to 4MB,
+including both range-based requests and whole object requests`read_4mb_to_8mb_request_count`longNumber of GetObject requests with data sizes greater than 4MB and up to 8MB,
+including both range-based requests and whole object requests`read_8mb_to_16mb_request_count`longNumber of GetObject requests with data sizes greater than 8MB and up to 16MB,
+including both range-based requests and whole object requests`read_16mb_to_32mb_request_count`longNumber of GetObject requests with data sizes greater than 16MB and up to 32MB,
+including both range-based requests and whole object requests`read_32mb_to_64mb_request_count`longNumber of GetObject requests with data sizes greater than 32MB and up to 64MB,
+including both range-based requests and whole object requests`read_64mb_to_128mb_request_count`longNumber of GetObject requests with data sizes greater than 64MB and up to
+128MB, including both range-based requests and whole object requests`read_128mb_to_256mb_request_count`longNumber of GetObject requests with data sizes greater than 128MB and up to
+256MB, including both range-based requests and whole object requests`read_256mb_to_512mb_request_count`longNumber of GetObject requests with data sizes greater than 256MB and up to
+512MB, including both range-based requests and whole object requests`read_512mb_to_1gb_request_count`longNumber of GetObject requests with data sizes greater than 512MB and up to 1GB,
+including both range-based requests and whole object requests`read_1gb_to_2gb_request_count`longNumber of GetObject requests with data sizes greater than 1GB and up to 2GB,
+including both range-based requests and whole object requests`read_2gb_to_4gb_request_count`longNumber of GetObject requests with data sizes greater than 2GB and up to 4GB,
+including both range-based requests and whole object requests`read_larger_than_4gb_request_count`longNumber of GetObject requests with data sizes greater than 4GB, including both
+range-based requests and whole object requests`write_0kb_request_count`longNumber of PutObject, UploadPart, and CreateMultipartUpload requests with data
+sizes of 0KB`write_0kb_to_128kb_request_count`longNumber of PutObject, UploadPart, and CreateMultipartUpload requests with data
+sizes greater than 0KB and up to 128KB`write_128kb_to_256kb_request_count`longNumber of PutObject, UploadPart, and CreateMultipartUpload requests with data
+sizes greater than 128KB and up to 256KB`write_256kb_to_512kb_request_count`longNumber of PutObject, UploadPart, and CreateMultipartUpload requests with data
+sizes greater than 256KB and up to 512KB`write_512kb_to_1mb_request_count`longNumber of PutObject, UploadPart, and CreateMultipartUpload requests with data
+sizes greater than 512KB and up to 1MB`write_1mb_to_2mb_request_count`longNumber of PutObject, UploadPart, and CreateMultipartUpload requests with data
+sizes greater than 1MB and up to 2MB`write_2mb_to_4mb_request_count`longNumber of PutObject, UploadPart, and CreateMultipartUpload requests with data
+sizes greater than 2MB and up to 4MB`write_4mb_to_8mb_request_count`longNumber of PutObject, UploadPart, and CreateMultipartUpload requests with data
+sizes greater than 4MB and up to 8MB`write_8mb_to_16mb_request_count`longNumber of PutObject, UploadPart, and CreateMultipartUpload requests with data
+sizes greater than 8MB and up to 16MB`write_16mb_to_32mb_request_count`longNumber of PutObject, UploadPart, and CreateMultipartUpload requests with data
+sizes greater than 16MB and up to 32MB`write_32mb_to_64mb_request_count`longNumber of PutObject, UploadPart, and CreateMultipartUpload requests with data
+sizes greater than 32MB and up to 64MB`write_64mb_to_128mb_request_count`longNumber of PutObject, UploadPart, and CreateMultipartUpload requests with data
+sizes greater than 64MB and up to 128MB`write_128mb_to_256mb_request_count`longNumber of PutObject, UploadPart, and CreateMultipartUpload requests with data
+sizes greater than 128MB and up to 256MB`write_256mb_to_512mb_request_count`longNumber of PutObject, UploadPart, and CreateMultipartUpload requests with data
+sizes greater than 256MB and up to 512MB`write_512mb_to_1gb_request_count`longNumber of PutObject, UploadPart, and CreateMultipartUpload requests with data
+sizes greater than 512MB and up to 1GB`write_1gb_to_2gb_request_count`longNumber of PutObject, UploadPart, and CreateMultipartUpload requests with data
+sizes greater than 1GB and up to 2GB`write_2gb_to_4gb_request_count`longNumber of PutObject, UploadPart, and CreateMultipartUpload requests with data
+sizes greater than 2GB and up to 4GB`write_larger_than_4gb_request_count`longNumber of PutObject, UploadPart, and CreateMultipartUpload requests with data
+sizes greater than 4GB`concurrent_put_503_error_count`longNumber of 503 errors that are generated due to concurrent writes to the same
+object`cross_region_request_count`longNumber of requests that originate from a client in different Region than
+bucket's home Region`cross_region_transferred_bytes`decimal(0,0)Number of bytes that are transferred from calls in different Region than
+bucket's home Region`cross_region_without_replication_request_count`longNumber of requests that originate from a client in different Region than
+bucket's home Region, excluding cross-region replication requests`cross_region_without_replication_transferred_bytes`decimal(0,0)Number of bytes that are transferred from calls in different Region than
+bucket's home Region, excluding cross-region replication bytes`inregion_request_count`longNumber of requests that originate from a client in same Region as bucket's
+home Region`inregion_transferred_bytes`decimal(0,0)Number of bytes that are transferred from calls from same Region as bucket's
+home Region`unique_objects_accessed_daily_count`longNumber of objects that were accessed at least once in last 24 hrs
+
+## Next steps
+
+- Learn about [Permissions for S3 Storage Lens tables](storage-lens-s3-tables-permissions.md)
+
+- Start [Querying S3 Storage Lens data with analytics tools](storage-lens-s3-tables-querying.md)
+
+- Review the [Amazon S3 Storage Lens metrics glossary](storage-lens-metrics-glossary.md)
+for detailed metric definitions
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Table naming conventions
+
+IAM permissions
+
+All content copied from https://docs.aws.amazon.com/.

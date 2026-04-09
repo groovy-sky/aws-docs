@@ -78,8 +78,10 @@ For AWS CLI examples, see the following:
 
 - [Deleting a directory bucket](../../../../services/s3/latest/userguide/directory-bucket-delete.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Regional and Zonal endpoints for directory buckets
 
 Directory bucket API operations
+
+All content copied from https://docs.aws.amazon.com/.

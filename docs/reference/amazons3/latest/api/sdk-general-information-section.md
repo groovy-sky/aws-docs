@@ -78,8 +78,10 @@ object using multipart upload](../../../../services/s3/latest/userguide/mpu-uplo
 
 Low-level API operations allow greater control over the upload. We recommend that you use the low-level API operations if you need to pause and resume uploads, vary part sizes during the upload, or begin uploads when you don't know the size of the data in advance.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Using the AWS CLI
 
 Specifying the Signature Version in request authentication
+
+All content copied from https://docs.aws.amazon.com/.
