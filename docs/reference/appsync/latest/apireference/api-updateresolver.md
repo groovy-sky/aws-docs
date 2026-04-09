@@ -1,15 +1,12 @@
-# CreateResolver
+# UpdateResolver
 
-Creates a `Resolver` object.
-
-A resolver converts incoming requests into a format that a data source can understand,
-and converts the data source's responses into GraphQL.
+Updates a `Resolver` object.
 
 ## Request Syntax
 
 ```nohighlight
 
-POST /v1/apis/apiId/types/typeName/resolvers HTTP/1.1
+POST /v1/apis/apiId/types/typeName/resolvers/fieldName HTTP/1.1
 Content-type: application/json
 
 {
@@ -19,7 +16,6 @@ Content-type: application/json
    },
    "code": "string",
    "dataSourceName": "string",
-   "fieldName": "string",
    "kind": "string",
    "maxBatchSize": number,
    "metricsConfig": "string",
@@ -46,15 +42,25 @@ Content-type: application/json
 
 The request uses the following URI parameters.
 
-**[apiId](#API_CreateResolver_RequestSyntax)**
+**[apiId](#API_UpdateResolver_RequestSyntax)**
 
-The ID for the GraphQL API for which the resolver is being created.
+The API ID.
 
 Required: Yes
 
-**[typeName](#API_CreateResolver_RequestSyntax)**
+**[fieldName](#API_UpdateResolver_RequestSyntax)**
 
-The name of the `Type`.
+The new field name.
+
+Length Constraints: Minimum length of 1. Maximum length of 65536.
+
+Pattern: `[_A-Za-z][_0-9A-Za-z]*`
+
+Required: Yes
+
+**[typeName](#API_UpdateResolver_RequestSyntax)**
+
+The new type name.
 
 Length Constraints: Minimum length of 1. Maximum length of 65536.
 
@@ -66,7 +72,7 @@ Required: Yes
 
 The request accepts the following data in JSON format.
 
-**[cachingConfig](#API_CreateResolver_RequestSyntax)**
+**[cachingConfig](#API_UpdateResolver_RequestSyntax)**
 
 The caching configuration for the resolver.
 
@@ -74,7 +80,7 @@ Type: [CachingConfig](api-cachingconfig.md) object
 
 Required: No
 
-**[code](#API_CreateResolver_RequestSyntax)**
+**[code](#API_UpdateResolver_RequestSyntax)**
 
 The `resolver` code that contains the request and response functions. When
 code is used, the `runtime` is required. The `runtime` value must be
@@ -86,9 +92,9 @@ Length Constraints: Minimum length of 1. Maximum length of 32768.
 
 Required: No
 
-**[dataSourceName](#API_CreateResolver_RequestSyntax)**
+**[dataSourceName](#API_UpdateResolver_RequestSyntax)**
 
-The name of the data source for which the resolver is being created.
+The new data source name.
 
 Type: String
 
@@ -98,19 +104,7 @@ Pattern: `[_A-Za-z][_0-9A-Za-z]*`
 
 Required: No
 
-**[fieldName](#API_CreateResolver_RequestSyntax)**
-
-The name of the field to attach the resolver to.
-
-Type: String
-
-Length Constraints: Minimum length of 1. Maximum length of 65536.
-
-Pattern: `[_A-Za-z][_0-9A-Za-z]*`
-
-Required: Yes
-
-**[kind](#API_CreateResolver_RequestSyntax)**
+**[kind](#API_UpdateResolver_RequestSyntax)**
 
 The resolver type.
 
@@ -129,7 +123,7 @@ Valid Values: `UNIT | PIPELINE`
 
 Required: No
 
-**[maxBatchSize](#API_CreateResolver_RequestSyntax)**
+**[maxBatchSize](#API_UpdateResolver_RequestSyntax)**
 
 The maximum batching size for a resolver.
 
@@ -139,7 +133,7 @@ Valid Range: Minimum value of 0. Maximum value of 2000.
 
 Required: No
 
-**[metricsConfig](#API_CreateResolver_RequestSyntax)**
+**[metricsConfig](#API_UpdateResolver_RequestSyntax)**
 
 Enables or disables enhanced resolver metrics for specified resolvers. Note that
 `metricsConfig` won't be used unless the
@@ -156,7 +150,7 @@ Valid Values: `ENABLED | DISABLED`
 
 Required: No
 
-**[pipelineConfig](#API_CreateResolver_RequestSyntax)**
+**[pipelineConfig](#API_UpdateResolver_RequestSyntax)**
 
 The `PipelineConfig`.
 
@@ -164,9 +158,9 @@ Type: [PipelineConfig](api-pipelineconfig.md) object
 
 Required: No
 
-**[requestMappingTemplate](#API_CreateResolver_RequestSyntax)**
+**[requestMappingTemplate](#API_UpdateResolver_RequestSyntax)**
 
-The mapping template to use for requests.
+The new request mapping template.
 
 A resolver uses a request mapping template to convert a GraphQL expression into a format
 that a data source can understand. Mapping templates are written in Apache Velocity
@@ -184,9 +178,9 @@ Pattern: `^.*$`
 
 Required: No
 
-**[responseMappingTemplate](#API_CreateResolver_RequestSyntax)**
+**[responseMappingTemplate](#API_UpdateResolver_RequestSyntax)**
 
-The mapping template to use for responses from the data source.
+The new response mapping template.
 
 Type: String
 
@@ -196,7 +190,7 @@ Pattern: `^.*$`
 
 Required: No
 
-**[runtime](#API_CreateResolver_RequestSyntax)**
+**[runtime](#API_UpdateResolver_RequestSyntax)**
 
 Describes a runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note
 that if a runtime is specified, code must also be specified.
@@ -205,7 +199,7 @@ Type: [AppSyncRuntime](api-appsyncruntime.md) object
 
 Required: No
 
-**[syncConfig](#API_CreateResolver_RequestSyntax)**
+**[syncConfig](#API_UpdateResolver_RequestSyntax)**
 
 The `SyncConfig` for a resolver attached to a versioned data source.
 
@@ -260,9 +254,9 @@ If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[resolver](#API_CreateResolver_ResponseSyntax)**
+**[resolver](#API_UpdateResolver_ResponseSyntax)**
 
-The `Resolver` object.
+The updated `Resolver` object.
 
 Type: [Resolver](api-resolver.md) object
 
@@ -317,30 +311,30 @@ HTTP Status Code: 401
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/appsync-2017-07-25/createresolver.md)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/appsync-2017-07-25/updateresolver.md)
 
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appsync-2017-07-25/createresolver.md)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appsync-2017-07-25/updateresolver.md)
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/appsync-2017-07-25/createresolver.md)
+- [AWS SDK for C++](../../../goto/sdkforcpp/appsync-2017-07-25/updateresolver.md)
 
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/appsync-2017-07-25/createresolver.md)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/appsync-2017-07-25/updateresolver.md)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appsync-2017-07-25/createresolver.md)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appsync-2017-07-25/updateresolver.md)
 
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appsync-2017-07-25/createresolver.md)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appsync-2017-07-25/updateresolver.md)
 
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appsync-2017-07-25/createresolver.md)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appsync-2017-07-25/updateresolver.md)
 
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appsync-2017-07-25/createresolver.md)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appsync-2017-07-25/updateresolver.md)
 
-- [AWS SDK for Python](../../../../services/goto/boto3/appsync-2017-07-25/createresolver.md)
+- [AWS SDK for Python](../../../../services/goto/boto3/appsync-2017-07-25/updateresolver.md)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appsync-2017-07-25/createresolver.md)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appsync-2017-07-25/updateresolver.md)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-CreateGraphqlApi
+UpdateGraphqlApi
 
-CreateType
+UpdateSourceApiAssociation
 
 All content copied from https://docs.aws.amazon.com/.
