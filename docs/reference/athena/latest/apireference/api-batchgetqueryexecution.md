@@ -3,7 +3,7 @@
 Returns the details of a single query execution or a list of up to 50 query
 executions, which you provide as an array of query execution ID strings. Requires you to
 have access to the workgroup in which the queries ran. To get a list of query execution
-IDs, use [ListQueryExecutions:WorkGroup](api-listqueryexecutions-athena-listqueryexecutions-request-workgroup.md). Query executions differ
+IDs, use [ListQueryExecutions:WorkGroup](api-listqueryexecutions.md#athena-ListQueryExecutions-request-WorkGroup). Query executions differ
 from named (saved) queries. Use [BatchGetNamedQueryInput](api-batchgetnamedqueryinput.md) to get details
 about named queries.
 
@@ -188,8 +188,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/batchgetqueryexecution.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 BatchGetPreparedStatement
 
 CancelCapacityReservation
+
+All content copied from https://docs.aws.amazon.com/.

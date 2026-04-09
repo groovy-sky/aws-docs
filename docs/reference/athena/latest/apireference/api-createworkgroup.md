@@ -114,7 +114,7 @@ results are stored, the encryption configuration, if any, used for encrypting qu
 results, whether the Amazon CloudWatch Metrics are enabled for the workgroup, the
 limit for the amount of bytes scanned (cutoff) per query, if it is specified, and
 whether workgroup's settings (specified with `EnforceWorkGroupConfiguration`)
-in the `WorkGroupConfiguration` override client-side settings. See [WorkGroupConfiguration:EnforceWorkGroupConfiguration](api-workgroupconfiguration-athena-type-workgroupconfiguration-enforceworkgroupconfiguration.md).
+in the `WorkGroupConfiguration` override client-side settings. See [WorkGroupConfiguration:EnforceWorkGroupConfiguration](api-workgroupconfiguration.md#athena-Type-WorkGroupConfiguration-EnforceWorkGroupConfiguration).
 
 Type: [WorkGroupConfiguration](api-workgroupconfiguration.md) object
 
@@ -199,8 +199,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/createworkgroup.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreatePresignedNotebookUrl
 
 DeleteCapacityReservation
+
+All content copied from https://docs.aws.amazon.com/.

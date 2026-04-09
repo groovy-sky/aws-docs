@@ -13,8 +13,10 @@ driver or later with the Amazon Athena API. Earlier version drivers do not
 support the API. For more information and to download the driver, see [Accessing\
 Amazon Athena with JDBC](../../../../services/athena/latest/ug/connect-with-jdbc.md).
 
-This document was last published on April 5, 2026.
+This document was last published on April 9, 2026.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Actions
+
+All content copied from https://docs.aws.amazon.com/.

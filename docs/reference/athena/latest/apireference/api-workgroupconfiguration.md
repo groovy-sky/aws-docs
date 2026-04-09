@@ -168,7 +168,7 @@ The configuration for the workgroup, which includes the location in Amazon S3
 where query and calculation results are stored and the encryption option, if any, used
 for query and calculation results. To run the query, you must specify the query results
 location using one of the ways: either in the workgroup using this setting, or for
-individual queries (client-side), using [ResultConfiguration:OutputLocation](api-resultconfiguration-athena-type-resultconfiguration-outputlocation.md). If none of them is set, Athena issues an error that no output location is provided.
+individual queries (client-side), using [ResultConfiguration:OutputLocation](api-resultconfiguration.md#athena-Type-ResultConfiguration-OutputLocation). If none of them is set, Athena issues an error that no output location is provided.
 
 Type: [ResultConfiguration](api-resultconfiguration.md) object
 
@@ -184,8 +184,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/workgroupconfiguration.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 WorkGroup
 
 WorkGroupConfigurationUpdates
+
+All content copied from https://docs.aws.amazon.com/.

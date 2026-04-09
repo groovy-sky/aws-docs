@@ -5,8 +5,8 @@ an inline code block within the request.
 
 ###### Note
 
-The request syntax requires the [StartCalculationExecution:CodeBlock](#athena-StartCalculationExecution-request-CodeBlock) parameter or the [CalculationConfiguration:CodeBlock](api-calculationconfiguration-athena-type-calculationconfiguration-codeblock.md) parameter, but not both. Because
-[CalculationConfiguration:CodeBlock](api-calculationconfiguration-athena-type-calculationconfiguration-codeblock.md) is deprecated, use the
+The request syntax requires the [StartCalculationExecution:CodeBlock](#athena-StartCalculationExecution-request-CodeBlock) parameter or the [CalculationConfiguration:CodeBlock](api-calculationconfiguration.md#athena-Type-CalculationConfiguration-CodeBlock) parameter, but not both. Because
+[CalculationConfiguration:CodeBlock](api-calculationconfiguration.md#athena-Type-CalculationConfiguration-CodeBlock) is deprecated, use the
 [StartCalculationExecution:CodeBlock](#athena-StartCalculationExecution-request-CodeBlock) parameter
 instead.
 
@@ -65,7 +65,7 @@ Required: No
 **[CodeBlock](#API_StartCalculationExecution_RequestSyntax)**
 
 A string that contains the code of the calculation. Use this parameter instead of
-[CalculationConfiguration:CodeBlock](api-calculationconfiguration-athena-type-calculationconfiguration-codeblock.md), which is deprecated.
+[CalculationConfiguration:CodeBlock](api-calculationconfiguration.md#athena-Type-CalculationConfiguration-CodeBlock), which is deprecated.
 
 Type: String
 
@@ -198,8 +198,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/startcalculationexecution.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 PutCapacityAssignmentConfiguration
 
 StartQueryExecution
+
+All content copied from https://docs.aws.amazon.com/.

@@ -2,7 +2,7 @@
 
 Returns query execution runtime statistics related to a single execution of a query if
 you have access to the workgroup in which the query ran. Statistics from the
-`Timeline` section of the response object are available as soon as [QueryExecutionStatus:State](api-queryexecutionstatus-athena-type-queryexecutionstatus-state.md) is in a SUCCEEDED or FAILED state. The
+`Timeline` section of the response object are available as soon as [QueryExecutionStatus:State](api-queryexecutionstatus.md#athena-Type-QueryExecutionStatus-State) is in a SUCCEEDED or FAILED state. The
 remaining non-timeline statistics in the response (like stage-level input and output row
 count and data size) are updated asynchronously and may not be available immediately
 after a query completes or, in some cases, may not be returned. The non-timeline
@@ -138,8 +138,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/getqueryruntimestatistics.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 GetQueryResults
 
 GetResourceDashboard
+
+All content copied from https://docs.aws.amazon.com/.

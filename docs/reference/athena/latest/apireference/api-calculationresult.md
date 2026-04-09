@@ -63,8 +63,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/athena-2017-05-18/calculationresult.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CalculationConfiguration
 
 CalculationStatistics
+
+All content copied from https://docs.aws.amazon.com/.
