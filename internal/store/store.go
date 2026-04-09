@@ -32,8 +32,6 @@ func Open(path string) (*Store, error) {
 	}
 	store := &Store{db: database}
 	if err := store.db.Update(func(tx *bolt.Tx) error {
-		_ = tx.DeleteBucket([]byte("pages"))
-		_ = tx.DeleteBucket([]byte("links"))
 		if _, err := tx.CreateBucketIfNotExists(seedsBucket); err != nil {
 			return err
 		}

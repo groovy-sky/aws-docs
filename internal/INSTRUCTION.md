@@ -113,8 +113,7 @@ Current redirect handling:
 
 ## Seed and Metadata Behavior
 
-- Metadata DB currently stores only seed URLs in BoltDB bucket `seeds`.
-- On open, legacy buckets `pages` and `links` are removed.
+- Metadata DB stores seed URLs in BoltDB bucket `seeds` and run state in bucket `state`.
 - `seedQueue` prioritizes stored seeds, canonicalizes, deduplicates, and prunes unreachable seeds.
 - Reachability pruning follows HTTP redirects first and keeps only the final normalized URL when it is still allowed by include/exclude filters and `robots.txt`; redirected seeds that land in excluded paths are removed before section selection.
 - Queue seed construction merges both sources: site/stored seeds and robots-derived seeds (robots structure roots plus sitemap-derived section roots), with deduplication and allowlist filtering applied before section selection.
@@ -134,6 +133,5 @@ At the end of every non-`refresh-url` run, `persistDiscoveredSeeds` is called wi
 - Config load behavior: when a config file explicitly sets `include_path_patterns` or `exclude_path_patterns` to empty arrays, those empty filters are preserved (defaults are only injected when fields are omitted).
 - For repeated transient fetch failures, inspect retry settings (`max_retries`) and request jitter settings (`min_request_delay_ms`, `max_request_delay_ms`).
 - For wrong output location, inspect `Mapper.RepoPath` and `mapServiceCode` mappings.
-- For root service listing issues, inspect `internal/write/services_index.go` link selection behavior.
 - For root service listing issues, inspect `internal/write/services_index.go` link selection behavior.
 - `pickServiceLink` selects a representative link for each service: it first checks for `index.md` at the service root or `latest/index.md`, then falls back to walking all markdown files. In the fallback, `welcome.md` files are preferred (shallowest depth first) over the first alphabetical file, since `welcome.md` is the standard AWS API reference entry page.

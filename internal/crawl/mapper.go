@@ -34,8 +34,8 @@ func (m *Mapper) RepoPath(rawURL string) string {
 		return filepath.Join(m.outputDir, "general", "index.md")
 	}
 
-	section := "misc"
-	service := ""
+	var section string
+	var service string
 	first := segments[0]
 	switch {
 	case strings.EqualFold(first, "general") || strings.Contains(cleaned, "/general/"):
@@ -56,10 +56,10 @@ func (m *Mapper) RepoPath(rawURL string) string {
 
 	pathSegments := make([]string, 0, len(segments)+2)
 	pathSegments = append(pathSegments, m.outputDir)
-	pathSegments = append(pathSegments, filepath.SplitList(section)...)
 	if strings.Contains(section, string(filepath.Separator)) {
-		pathSegments = []string{m.outputDir}
 		pathSegments = append(pathSegments, strings.Split(section, string(filepath.Separator))...)
+	} else {
+		pathSegments = append(pathSegments, section)
 	}
 	if service != "" {
 		pathSegments = append(pathSegments, service)
