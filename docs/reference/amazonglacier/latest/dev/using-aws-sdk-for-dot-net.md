@@ -153,8 +153,10 @@ var manager = new ArchiveTransferManager(Amazon.RegionEndpoint.USWest2);
 
 For a current list of supported AWS Regions and endpoints, see [Accessing Amazon Glacier](../../../../services/amazonglacier/latest/dev/amazon-glacier-accessing.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Using the AWS SDK for Java
 
 Code examples
+
+All content copied from https://docs.aws.amazon.com/.

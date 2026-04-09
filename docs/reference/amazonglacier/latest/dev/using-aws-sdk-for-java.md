@@ -165,8 +165,10 @@ ArchiveTransferManager atm = new ArchiveTransferManager(glacierClient, sqsClient
 
 For a list of supported AWS Regions and endpoints, see [Accessing Amazon Glacier](../../../../services/amazonglacier/latest/dev/amazon-glacier-accessing.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Working with AWS SDKs
 
 Using the AWS SDK for .NET
+
+All content copied from https://docs.aws.amazon.com/.

@@ -73,8 +73,10 @@ For examples specific to Amazon Glacier, see [Code examples for Amazon Glacier u
 
 Can't find what you need? Request a code example by using the **Provide feedback** link at the bottom of this page.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Using the AWS SDKs
 
 Using the AWS SDK for Java
+
+All content copied from https://docs.aws.amazon.com/.

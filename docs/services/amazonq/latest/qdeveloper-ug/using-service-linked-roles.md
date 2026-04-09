@@ -1,0 +1,20 @@
+# Using service-linked roles for Amazon Q Developer and User Subscriptions
+
+Amazon Q Developer uses AWS Identity and Access Management (IAM) [service-linked roles](../../../iam/latest/userguide/id-roles-terms-and-concepts.md#iam-term-service-linked-role). A service-linked role is a unique type of IAM role that is
+linked directly to Amazon Q Developer. Service-linked roles are predefined by Amazon Q Developer and
+include all the permissions that the service requires to call other AWS services on your
+behalf.
+
+###### Topics
+
+- [Using service-linked roles for Amazon Q Developer](using-service-linked-roles-qdev.md)
+
+- [Using service-linked-roles for User Subscriptions](using-service-linked-roles-user-subs.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+AWS managed policies for Amazon Q
+
+For Amazon Q Developer
+
+All content copied from https://docs.aws.amazon.com/.

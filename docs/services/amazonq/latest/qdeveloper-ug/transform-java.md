@@ -1,0 +1,66 @@
+# Transforming Java applications with Amazon Q Developer
+
+###### Note
+
+AWS Transform custom now available for Java upgrades. Agentic AI that handles version upgrades, SDK migration, and more, and improves with every execution. [Get started](../../../transform/latest/userguide/custom-get-started.md)
+
+Amazon Q supports the following types of transformations for Java applications:
+
+- Java language and dependency version upgrades
+
+- Embedded SQL conversion for Oracle to PostgreSQL database migration
+
+To get started, see the topic for the type of transformation you'd like to perform.
+
+###### Topics
+
+- [Quotas](#quotas-java-transformation-ide)
+
+- [Upgrading Java versions with Amazon Q Developer](code-transformation.md)
+
+- [Converting embedded SQL in Java applications with Amazon Q Developer](transform-sql.md)
+
+- [Transforming code on the command line with Amazon Q Developer](transform-cli.md)
+
+- [Viewing transformation job history](transformation-job-history.md)
+
+- [Troubleshooting issues with Java transformations](troubleshooting-code-transformation.md)
+
+## Quotas
+
+Java application transformations with Amazon Q in the IDE and command line maintain the
+following quotas:
+
+- **Lines of code per job** – The
+maximum number of code lines that Amazon Q can transform in a given transformation
+job.
+
+- **Lines of code per month** – The
+maximum number of code lines that Amazon Q can transform in a month.
+
+- **Concurrent jobs** – The maximum number of
+transformation jobs you can run at the same time. This quota applies to all
+transformations in the IDE, including [.NET transformations in Visual Studio](transform-dotnet-ide.md).
+
+- **Jobs per month** – The
+maximum number of transformation jobs you can run in one month.
+
+ResourceQuotasLines of code per jobFree tier: 1000 lines of codeLines of code per monthFree tier: 2000 lines of codeConcurrent jobs
+
+1 job per user
+
+25 jobs per AWS account
+
+Jobs per month
+
+Pro tier: 1000 jobs
+
+Free tier: 100 jobs
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Transforming code
+
+Upgrading Java versions
+
+All content copied from https://docs.aws.amazon.com/.

@@ -83,8 +83,10 @@ or use the multipart upload API. The API also has built-in retry logic in case a
 fails. However, your application might need granular control over these decisions, in
 which case you can use the low-level API.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Deleting an Archive Using the AWS CLI
 
 Working with AWS SDKs
+
+All content copied from https://docs.aws.amazon.com/.
