@@ -1,0 +1,98 @@
+# Custom Branding Options for Amazon WorkSpaces Applications
+
+You can customize the appearance of the streaming application catalog page by using
+the following branding options.
+
+###### Note
+
+Custom branding is not available for the user pool sign-in portal or for the email notifications that WorkSpaces Applications sends to user pool users.
+
+Branding elementDescriptionRequirements and recommendationsOrganization logo
+
+Enables you to display an image that is familiar to your users. The image appears in the
+header of the streaming application catalog page, which is displayed
+to users after they sign in to WorkSpaces Applications.
+
+File type: .png, jpg, .jpeg, or .gif
+
+Maximum dimensions: 1000 px x 500 px
+
+Maximum file size: 300 KB
+
+Organization website links
+
+Enables you to display links to helpful resources for your users,
+such as your organization's IT support and product marketing sites.
+The links are displayed in the footer of the streaming application
+catalog page.
+
+Maximum number of links: 3
+
+Format (URL): https://example.com or http://example.com
+
+Maximum length (display name): 100 letters, spaces, and
+numbers
+
+Special characters allowed (display name): @ . / # & +
+$
+
+Color theme
+
+Applied to website links, text, and buttons. These colors are also applied as accents in the
+background for the streaming application catalog page.
+
+Predefined themes from which to choose: 4
+
+For information about each color theme, see [Color Theme Palettes in Amazon WorkSpaces Applications](branding-color-themes.md) later in this topic.
+
+Page title
+
+Displayed at the top of the browser tab during users' application
+streaming sessions.
+
+Maximum length: 200 letters, spaces, and numbers.
+
+Special characters allowed: @ . / # & + $
+
+Favicon
+
+Enables your users to recognize their application streaming site in a browser full of tabs or
+bookmarks. The favicon icon is displayed at the top of the browser
+tab for the application streaming site during users' streaming
+sessions.
+
+File type: .png, .jpg, .jpeg, .gif, or .ico
+
+Maximum dimensions: 128 px x 128 px
+
+Maximum file size: 50 KB
+
+Redirect URLEnables you to specify a URL to which users are redirected when they
+end a streaming session.
+
+Format: https://example.com or http://example.com
+
+This URL is configured in the **Details** page
+for a stack when you create or edit a stack, not in the
+**Branding** page.
+
+Feedback URLEnables you to specify a URL for a **Send Feedback**
+link, so that your users can submit feedback to the organization. If you
+do not specify a URL, the **Send Feedback** link is not
+displayed. Your users can still submit new portal feedback by selecting
+**Provide New Portal Feedback**, which is submitted
+to AWS.
+
+Format: https://example.com or http://example.com
+
+This URL is configured in the **Details** page
+for a stack when you create or edit a stack, not in the
+**Branding** page.
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Add Custom Branding
+
+Adding Custom Branding
+
+All content copied from https://docs.aws.amazon.com/.

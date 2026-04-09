@@ -8,8 +8,10 @@ and updates, is the responsibility of the third-party vendor who developed the
 extension. If you have any issues or questions related to third-party extensions, please
 contact the relevant third-party vendor for support.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Prerequisites
 
 Document History
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,0 +1,32 @@
+AWS App Runner will no longer be open to new customers starting April 30, 2026. If you would like to use
+App Runner, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see
+[AWS App Runner availability\
+change](../dg/apprunner-availability-change.md).
+
+# Release: App Runner adds support for monorepo source-code based services on September 26, 2023
+
+AWS App Runner now supports the deployment and maintenance for monorepo source-code based services.
+
+**Release date:** September 26, 2023
+
+## Changes
+
+AWS App Runner now offers you the option to designate a repository source directory for your services. When you create an App Runner service you can enter the
+application’s source directory along with the repository and branch. This source directory defines where your application’s build and start commands will
+execute. App Runner can now create and support multiple App Runner services from a single repository with different source directories, allowing you to utilize a
+monorepo based architecture.
+
+If your source code management system doesn’t follow a monorepo architecture, you can continue to use the existing default root source directory for
+your deployment strategy. However, if you need more flexibility to designate your source code repository to a source directory other than the top-level
+repository directory, you can also benefit from this feature.
+
+For more information, see [App Runner service based on source code](../dg/service-source-code.md) in the
+_AWS App Runner Developer Guide_.
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Route 53 custom domain 2023-10-04
+
+Auto scaling configuration 2023-09-22
+
+All content copied from https://docs.aws.amazon.com/.

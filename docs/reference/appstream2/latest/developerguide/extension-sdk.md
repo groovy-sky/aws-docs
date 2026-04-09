@@ -29,8 +29,10 @@ Samples Github repository](https://github.com/aws-samples/dcv-extension-sdk-samp
 
 - [Third-party vendor extensions for Amazon WorkSpaces Applications](extension-sdk-isv.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Regional Settings
 
 Prerequisites
+
+All content copied from https://docs.aws.amazon.com/.

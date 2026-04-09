@@ -1,0 +1,29 @@
+AWS App Runner will no longer be open to new customers starting April 30, 2026. If you would like to use
+App Runner, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see
+[AWS App Runner availability\
+change](../dg/apprunner-availability-change.md).
+
+# Release: App Runner adds support for using Amazon ECR images from different regions on September 16, 2022
+
+AWS App Runner now supports using Amazon Elastic Container Registry (Amazon ECR) images from any region without image replication. The Amazon ECR images no
+longer need to be in the same region as your App Runner service.
+
+**Release date:** September 16, 2022
+
+## Changes
+
+With this release, you can use Amazon ECR images from any AWS Region to create or update your App Runner service. For example, you can launch or update your
+App Runner service in the US East (N. Virginia) Region referencing an Amazon ECR image
+that's in the US West (Oregon) Region, without the need to store an Amazon ECR
+image in US East (N. Virginia).
+
+With this new feature, you can avoid additional costs and operational overhead caused by the Amazon ECR image replication that was required before this
+launch.
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Node.js 16 runtime 2022-09-23
+
+Amazon Route 53 alias 2022-08-30
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,0 +1,11 @@
+# USB Devices
+
+USB devices are not supported for browser-based WorkSpaces Applications streaming sessions. To use your USB devices with applications streamed through WorkSpaces Applications, you must use the WorkSpaces Applications client. For more information, see [WorkSpaces Applications Client Application for Windows](client-application-windows-user.md).
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Monitors and Display Resolution
+
+Touchscreen Devices
+
+All content copied from https://docs.aws.amazon.com/.

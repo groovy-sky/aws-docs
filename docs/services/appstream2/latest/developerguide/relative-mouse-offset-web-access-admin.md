@@ -1,0 +1,25 @@
+# Relative Mouse Offset
+
+By default, during users' streaming sessions, WorkSpaces Applications transmits information about
+mouse movements to the streaming instance by using absolute coordinates and
+rendering the mouse movements locally. For graphics-intensive applications, such as
+computer-aided design (CAD)/computer-aided manufacturing (CAM) software or video
+games, mouse performance improves when relative mouse mode is enabled. Relative
+mouse mode uses relative coordinates, which represent how far the mouse moved since
+the last frame, rather than the absolute x-y coordinate values within a window or
+screen. When relative mouse mode is enabled, WorkSpaces Applications renders the mouse movements
+remotely.
+
+Users can enable this feature during their WorkSpaces Applications streaming sessions by doing either of the following:
+
+- Windows: Pressing Ctrl+Shift+F8
+
+- Mac: Pressing Control+Fn+Shift+F8
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Drawing Tablet Support
+
+Configure a Connection Method for Your Users
+
+All content copied from https://docs.aws.amazon.com/.

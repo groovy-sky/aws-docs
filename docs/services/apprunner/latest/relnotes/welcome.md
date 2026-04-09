@@ -1,0 +1,24 @@
+AWS App Runner will no longer be open to new customers starting April 30, 2026. If you would like to use
+App Runner, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see
+[AWS App Runner availability\
+change](../dg/apprunner-availability-change.md).
+
+# About AWS App Runner release notes
+
+The AWS App Runner release notes provide detailed information about App Runner releases—new features, updates, and fixes related to the service, runtimes, and
+console. All new releases and updates are detailed in this guide.
+
+For the list of release notes, see [App Runner release notes](relnotes.md).
+
+## Additional resources
+
+The following related resources
+can help you as you work with this service.
+
+- **[AWS App Runner Developer Guide](../dg.md)** – Concepts, tutorials, and reference materials.
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+App Runner release notes
+
+All content copied from https://docs.aws.amazon.com/.

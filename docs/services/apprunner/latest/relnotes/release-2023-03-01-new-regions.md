@@ -1,0 +1,33 @@
+AWS App Runner will no longer be open to new customers starting April 30, 2026. If you would like to use
+App Runner, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see
+[AWS App Runner availability\
+change](../dg/apprunner-availability-change.md).
+
+# Release: App Runner adds supports for AWS Asia Pacific (Singapore), AWS Asia Pacific (Sydney), and AWS Europe (Frankfurt) Regions on March 01, 2023
+
+AWS App Runner now supports AWS Asia Pacific (Singapore), AWS Asia Pacific (Sydney), and AWS Europe (Frankfurt) Regions.
+
+**Release date:** March 01, 2023
+
+## Changes
+
+AWS App Runner is now available in the following AWS Regions:
+
+- AWS Asia Pacific (Singapore)
+
+- AWS Asia Pacific (Sydney)
+
+- AWS Europe (Frankfurt)
+
+For more information on all the Regions supported by App Runner, see [AWS App Runner endpoints and quotas](../../../../general/latest/gr/apprunner.md) in
+the _AWS General Reference_ guide.
+
+You pay standard AWS App Runner pricing. For more information about pricing, see [AWS App Runner Pricing](https://aws.amazon.com/apprunner/pricing).
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+New vCPU and memory configurations 2023-04-05
+
+AWS WAF web ACL support 2023-02-23
+
+All content copied from https://docs.aws.amazon.com/.

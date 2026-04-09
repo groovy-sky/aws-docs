@@ -1,0 +1,31 @@
+AWS App Runner will no longer be open to new customers starting April 30, 2026. If you would like to use
+App Runner, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see
+[AWS App Runner availability\
+change](../dg/apprunner-availability-change.md).
+
+# Release: App Runner adds new service level metrics for CPU, memory, and concurrency on February 17, 2023
+
+AWS App Runner adds new service level metrics for CPU utilization, memory utilization, and concurrent requests.
+
+**Release date:** February 17, 2023
+
+## Changes
+
+AWS App Runner now provides service level metrics for _CPU_
+_utilization_, _memory utilization_, and the total number of _concurrent requests_ in the App Runner console
+and the Amazon CloudWatch.
+
+Earlier, App Runner only displayed metrics for CPU and memory utilization at the instance level. Now with App Runner support to display these metrics at the
+service level, you can gauge CPU and memory usage related to your service. Use the new service level concurrency metrics in conjunction with CPU and
+memory utilization metrics to derive data to set your auto-scaling configuration for improved service efficiency. Use these metrics to improve performance
+of your service by making better decisions when defining compute configuration ( _CPU and Memory_) and auto-scaling configuration
+( _concurrency_). For more information, see [Viewing App Runner service metrics reported to\
+CloudWatch](../dg/monitor-cw.md) in the _AWS App Runner Developer Guide_.
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Redirect HTTP to HTTPS 2023-02-22
+
+HTTP1.0 support 2023-02-01
+
+All content copied from https://docs.aws.amazon.com/.

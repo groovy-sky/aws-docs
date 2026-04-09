@@ -1,0 +1,39 @@
+AWS App Runner will no longer be open to new customers starting April 30, 2026. If you would like to use
+App Runner, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see
+[AWS App Runner availability\
+change](apprunner-availability-change.md).
+
+# Setting App Runner service options using a configuration file
+
+###### Note
+
+Configuration files are applicable only to [services that are based on source code](service-source-code.md). You can't use
+configuration files with [image-based services](service-source-image.md).
+
+When you create an AWS App Runner service using a source code repository, AWS App Runner requires information about building and starting your service. You can
+provide this information each time you create a service using the App Runner console or API. Alternatively, you can set service options by using a
+_configuration file_. The options that you specify in a file become part of your source repository, and any changes to these options
+are tracked similarly to how changes to the source code are tracked. You can use the App Runner configuration file to specify more options than the API supports.
+You don't need to provide a configuration file if you only need the basic options that the API supports.
+
+The App Runner configuration file is a YAML file that's named `apprunner.yaml` in the [source directory](service-source-code.md#service-source-code.source-directory) of your application’s repository. It provides build and runtime options for your
+service. Values in this file instruct App Runner how to build and start your service, and provide runtime context such as network settings and environment
+variables.
+
+The App Runner configuration file doesn’t include operational settings, such as CPU and memory.
+
+For examples of App Runner configuration files, see [App Runner configuration file examples](config-file-examples.md). For a complete reference guide, see [App Runner configuration file reference](config-file-ref.md).
+
+###### Topics
+
+- [App Runner configuration file examples](config-file-examples.md)
+
+- [App Runner configuration file reference](config-file-ref.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Manage web ACLs
+
+Examples
+
+All content copied from https://docs.aws.amazon.com/.

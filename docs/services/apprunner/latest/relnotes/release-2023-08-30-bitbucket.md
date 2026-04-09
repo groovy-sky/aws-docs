@@ -1,0 +1,30 @@
+AWS App Runner will no longer be open to new customers starting April 30, 2026. If you would like to use
+App Runner, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see
+[AWS App Runner availability\
+change](../dg/apprunner-availability-change.md).
+
+# Release: App Runner adds support for Bitbucket source code repository on August 30, 2023
+
+AWS App Runner now supports building and deploying services from Bitbucket repositories.
+
+**Release date:** August 30, 2023
+
+## Changes
+
+AWS App Runner now supports the capability to deploy your source code from [Bitbucket](https://bitbucket.org/) repositories.
+Bitbucket is a Git-based source code repository hosting service. App Runner now supports two source code repository providers: GitHub and Bitbucket.
+
+App Runner takes care of starting, running, scaling, and load balancing your service. You can use the CI/CD capability of App Runner to track changes
+to your source code in your Bitbucket repo. When App Runner discovers a change, it automatically builds and deploys the new version to your App Runner
+service.
+
+For more information, see [Source code repository providers](../dg/service-source-code.md#service-source-code.providers) in
+the _AWS App Runner Developer Guide_.
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Auto scaling configuration 2023-09-22
+
+Support to rebuild failed services 2023-06-30
+
+All content copied from https://docs.aws.amazon.com/.

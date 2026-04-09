@@ -19,8 +19,10 @@ Supported WorkSpaces Applications streaming instances:
 
 - Managed WorkSpaces Applications image updates released on May 8, 2023 or later
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Extension SDK Developer Guide
 
 Third-party vendor extensions
+
+All content copied from https://docs.aws.amazon.com/.

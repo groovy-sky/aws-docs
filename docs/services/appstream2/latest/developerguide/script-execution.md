@@ -1,0 +1,27 @@
+# App block setup script execution in Amazon WorkSpaces Applications
+
+The following diagrams indicate where in the process the setup script runs.
+The run order is dependent upon whether Application Settings Persistence is
+enabled on the stack associated with the elastic fleet.
+
+###### Note
+
+WorkSpaces Applications uses your VPC details to download the VHD and setup script from the
+Amazon S3 bucket. Your VPC must provide access to the Amazon S3 bucket. For more
+information, see [Using Amazon S3 VPC Endpoints for WorkSpaces Applications Features](managing-network-vpce-iam-policy.md).
+
+Application Settings Persistence is enabled:
+
+![Application Settings Persistence is enabled.](https://docs.aws.amazon.com/images/appstream2/latest/developerguide/images/app-settings-enabled.png)
+
+Application Settings Persistence is disabled:
+
+![Application Settings Persistence is disabled.](https://docs.aws.amazon.com/images/appstream2/latest/developerguide/images/app-settings-disabled.png)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Create the Setup Script for the VHD
+
+Create a Custom App Block
+
+All content copied from https://docs.aws.amazon.com/.

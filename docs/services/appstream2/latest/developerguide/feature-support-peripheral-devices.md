@@ -1,0 +1,30 @@
+# Peripheral Devices
+
+The WorkSpaces Applications client provides the following support for peripheral devices such
+as monitors, webcams, mice, keyboards, and drawing tablets.
+
+###### Note
+
+With certain exceptions, USB redirection is required for the WorkSpaces Applications client to support USB devices. And in most cases, when USB redirection is required for a device, you must qualify the device before it can be used with WorkSpaces Applications streaming sessions. For more information, see [USB Redirection](feature-support-usb-devices-qualified.md#feature-support-USB-devices-USB-redirection).
+
+###### Topics
+
+- [Multiple Monitors](feature-support-multiple-monitors.md)
+
+- [Real-Time Audio-Video](feature-support-real-time-av.md)
+
+- [USB Devices](feature-support-usb-devices-qualified.md)
+
+- [Drawing Tablets](feature-support-drawing-tablets.md)
+
+- [Keyboard Shortcuts](feature-support-keyboard-shortcuts.md)
+
+- [Relative Mouse Offset](feature-support-relative-mouse-offset.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Automatic and On-Demand Diagnostic Log Uploads
+
+Multiple Monitors
+
+All content copied from https://docs.aws.amazon.com/.

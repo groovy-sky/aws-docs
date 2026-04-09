@@ -1,0 +1,29 @@
+AWS App Runner will no longer be open to new customers starting April 30, 2026. If you would like to use
+App Runner, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see
+[AWS App Runner availability\
+change](../dg/apprunner-availability-change.md).
+
+# Release: App Runner adds a Java platform and a Node.js 14 runtime on February 22, 2022
+
+AWS App Runner added a new platform for building and running Java web applications, and a new Node.js runtime.
+
+**Release date:** February 22, 2022
+
+## Changes
+
+AWS App Runner added support for building and running
+Java web applications with the new
+Java platform. The Java platform launched with two runtimes. They are Corretto 11 and Corretto 8. Both runtimes add the
+Maven and Gradle tools to your application's container in addition to the respective Corretto runtime version. For more
+information, see [Using the Java platform](../dg/service-source-code-java.md) in the _AWS App Runner Developer Guide_.
+
+App Runner also added a new runtime, Node.js 14, to the existing Node.js platform. For more information, see [Node.js runtime release\
+information](../dg/service-source-code-nodejs-releases.md) in the _AWS App Runner Developer Guide_.
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+FIPS endpoint 2022-03-04
+
+Custom Amazon VPC 2022-02-08
+
+All content copied from https://docs.aws.amazon.com/.
