@@ -77,8 +77,10 @@ Guide](../../../../services/application-discovery/latest/userguide.md).
 All data is handled according to the [AWS Privacy Policy](https://aws.amazon.com/privacy). You can operate Application Discovery Service offline to
 inspect collected data before it is shared with the service.
 
-This document was last published on April 5, 2026.
+This document was last published on April 9, 2026.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Actions
+
+All content copied from https://docs.aws.amazon.com/.

@@ -73,8 +73,10 @@ Type: string
 
 Required: Conditional
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 UsageMetricBasis
 
 Common Error Types
+
+All content copied from https://docs.aws.amazon.com/.
