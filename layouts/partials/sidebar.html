@@ -1,0 +1,43 @@
+<aside class="sidebar">
+  <nav class="sidebar-nav">
+    {{ $currentPage := . }}
+    {{ $currentSection := .CurrentSection }}
+    
+    {{ range .Site.Sections }}
+      <div class="nav-section">
+        <h3>
+          <a href="{{ .RelPermalink }}" class="{{ if eq . $currentSection }}active{{ end }}">
+            {{ .Title }}
+          </a>
+        </h3>
+        
+        {{ if eq . $currentSection }}
+          <ul>
+            {{ range .Pages }}
+              <li>
+                <a href="{{ .RelPermalink }}" class="{{ if eq . $currentPage }}active{{ end }}">
+                  {{ .Title }}
+                </a>
+              </li>
+            {{ end }}
+            
+            {{ range .Sections }}
+              <li class="subsection">
+                <strong>{{ .Title }}</strong>
+                <ul>
+                  {{ range .Pages }}
+                    <li>
+                      <a href="{{ .RelPermalink }}" class="{{ if eq . $currentPage }}active{{ end }}">
+                        {{ .Title }}
+                      </a>
+                    </li>
+                  {{ end }}
+                </ul>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </div>
+    {{ end }}
+  </nav>
+</aside>

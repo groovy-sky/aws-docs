@@ -1,0 +1,51 @@
+{{ define "main" }}
+<div class="section-page">
+  <header class="section-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}
+      <p class="description">{{ . }}</p>
+    {{ end }}
+  </header>
+  
+  {{ .Content }}
+  
+  {{ if .Pages }}
+    <div class="page-list">
+      {{ range .Pages.GroupByDate "2006" }}
+        {{ if ne .Key "0001" }}
+          <h2 class="year">{{ .Key }}</h2>
+        {{ end }}
+        
+        <ul class="pages">
+          {{ range .Pages }}
+            <li>
+              <a href="{{ .RelPermalink }}">
+                <strong>{{ .Title }}</strong>
+                {{ with .Description }}
+                  <span class="desc">{{ . }}</span>
+                {{ end }}
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </div>
+  {{ end }}
+  
+  {{ if .Sections }}
+    <div class="subsections">
+      <h2>Subsections</h2>
+      <ul class="sections-list">
+        {{ range .Sections }}
+          <li>
+            <a href="{{ .RelPermalink }}">
+              <strong>{{ .Title }}</strong>
+              <span class="count">({{ len .Pages }} pages)</span>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  {{ end }}
+</div>
+{{ end }}

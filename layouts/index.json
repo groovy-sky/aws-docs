@@ -1,0 +1,9 @@
+{{- $pages := where .Site.RegularPages "Type" "in" (slice "reference" "services" "general") -}}
+{{- $data := slice -}}
+{{- range $pages -}}
+  {{- $section := .CurrentSection.Title -}}
+  {{- $content := .Plain | truncate 500 "" -}}
+  {{- $item := dict "title" .Title "url" .RelPermalink "content" $content "section" $section -}}
+  {{- $data = $data | append $item -}}
+{{- end -}}
+{{- $data | jsonify -}}

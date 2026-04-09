@@ -1,0 +1,38 @@
+{{ define "main" }}
+<div class="homepage">
+  <header class="hero">
+    <h1>{{ .Site.Title }}</h1>
+    <p class="tagline">{{ .Site.Params.description }}</p>
+    <div class="search-box">
+      <form action="/aws-docs/search/" method="get">
+        <input type="search" name="q" placeholder="Search documentation..." autofocus>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+  
+  <div class="home-sections">
+    {{ range .Site.Menus.main }}
+      {{ if ne .Name "Search" }}
+        {{ if ne .Name "Home" }}
+          <div class="home-section-card">
+            <h2>
+              <a href="{{ .URL }}">{{ .Name }}</a>
+            </h2>
+            {{ with $.Site.GetPage .URL }}
+              {{ if .Description }}
+                <p>{{ .Description }}</p>
+              {{ else }}
+                <p>Browse {{ lower .Title }} documentation</p>
+              {{ end }}
+              <p class="count">{{ len .Pages }} pages</p>
+            {{ end }}
+          </div>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </div>
+  
+  {{ .Content }}
+</div>
+{{ end }}

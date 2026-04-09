@@ -1,0 +1,75 @@
+baseURL = 'https://groovy-sky.github.io/aws-docs/'
+languageCode = 'en-us'
+title = 'AWS Documentation'
+
+# Use existing docs/ directory as content
+contentDir = 'docs'
+publishDir = 'public'
+
+# Clean URLs
+[permalinks]
+  reference = '/reference/:sections[1:]/:contentbasename/'
+  services = '/services/:sections[1:]/:contentbasename/'
+  general = '/general/:sections[1:]/:contentbasename/'
+
+# Output formats for search
+[outputs]
+  home = ['HTML', 'JSON']
+  section = ['HTML']
+  page = ['HTML']
+
+# Markdown rendering
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allow raw HTML in markdown
+  [markup.highlight]
+    style = 'monokai'
+    lineNos = false
+    codeFences = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+
+# Menu for main navigation
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    name = 'Reference'
+    url = '/reference/'
+    weight = 2
+  [[menu.main]]
+    name = 'Services'
+    url = '/services/'
+    weight = 3
+  [[menu.main]]
+    name = 'General'
+    url = '/general/'
+    weight = 4
+  [[menu.main]]
+    name = 'Search'
+    url = '/search/'
+    weight = 5
+
+[params]
+  description = 'AWS Services Documentation'
+  author = 'AWS Docs Team'
+
+# Performance optimizations
+[caches]
+  [caches.getjson]
+    dir = ":cacheDir/:project"
+    maxAge = "1h"
+  [caches.getcsv]
+    dir = ":cacheDir/:project"
+    maxAge = "1h"
+
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  minifyOutput = true

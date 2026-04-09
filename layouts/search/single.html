@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="search-page">
+  <header class="search-header">
+    <h1>Search Documentation</h1>
+    <div class="search-input-wrapper">
+      <input type="search" id="search-input" placeholder="Search..." autofocus>
+    </div>
+  </header>
+  
+  <div id="search-results">
+    <p class="search-hint">Enter a search term to see results</p>
+  </div>
+</div>
+
+<script src="/aws-docs/js/fuse.min.js"></script>
+<script src="/aws-docs/js/search.js"></script>
+{{ end }}
