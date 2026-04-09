@@ -113,7 +113,7 @@ Required: No
 
 An optional list of key-value pairs to associate with the resource.
 
-For more information about tagging, see [Tagging AWS resources](../../../../general/general/latest/gr/aws-tagging.md)
+For more information about tagging, see [Tagging AWS resources](../../../../general/latest/gr/aws-tagging.md)
 
 Type: String to string map
 
@@ -235,8 +235,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/createdelivery.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CancelImportTask
 
 CreateExportTask
+
+All content copied from https://docs.aws.amazon.com/.

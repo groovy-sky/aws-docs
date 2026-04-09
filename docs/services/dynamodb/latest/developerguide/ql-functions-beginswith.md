@@ -1,0 +1,39 @@
+# Using the BEGINS\_WITH function with PartiQL for DynamoDB
+
+Returns `TRUE` if the attribute specified begins with a particular substring.
+
+## Syntax
+
+```nohighlight
+
+begins_with(path, value )
+```
+
+## Arguments
+
+`path`
+
+(Required) The attribute name or document path to use.
+
+`value`
+
+(Required) The string to search for.
+
+## Return type
+
+`bool`
+
+## Examples
+
+```sql
+
+SELECT * FROM "Orders" WHERE "OrderID"=1 AND begins_with("Address", '7834 24th')
+```
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Exists
+
+Missing
+
+All content copied from https://docs.aws.amazon.com/.

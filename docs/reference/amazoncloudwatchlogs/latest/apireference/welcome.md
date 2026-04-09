@@ -18,7 +18,7 @@ Parameters that all Query actions can use.
 - [Common Error Types](commonerrors.md):
 Client and server errors that all actions can return.
 
-- [Regions and Endpoints](../../../../general/general/latest/gr/rande-cwl-region.md):
+- [Regions and Endpoints](../../../../general/latest/gr/rande.md#cwl_region):
 Supported regions and endpoints for all AWS products.
 
 Alternatively, you can use one of the [AWS SDKs](https://aws.amazon.com/tools) to access CloudWatch Logs
@@ -41,6 +41,8 @@ following AWS developer centers:
 
 - [Windows and .NET Developer Center](http://aws.amazon.com/net)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Actions
+
+All content copied from https://docs.aws.amazon.com/.

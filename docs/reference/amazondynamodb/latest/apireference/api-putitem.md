@@ -154,7 +154,7 @@ Empty String and Binary attribute values are allowed. Attribute values of type S
 and Binary must have a length greater than zero if the attribute is used as a key
 attribute for a table or index.
 
-For more information about primary keys, see [Primary Key](../../../../services/dynamodb/latest/developerguide/howitworks-corecomponents-howitworks-corecomponents-primarykey.md) in the _Amazon DynamoDB Developer_
+For more information about primary keys, see [Primary Key](../../../../services/dynamodb/latest/developerguide/howitworks-corecomponents.md#HowItWorks.CoreComponents.PrimaryKey) in the _Amazon DynamoDB Developer_
 _Guide_.
 
 Each element in the `Item` map is an `AttributeValue`
@@ -708,8 +708,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/putitem.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ListTagsOfResource
 
 PutResourcePolicy
+
+All content copied from https://docs.aws.amazon.com/.

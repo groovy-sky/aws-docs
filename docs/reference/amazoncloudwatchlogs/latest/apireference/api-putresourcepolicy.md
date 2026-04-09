@@ -61,7 +61,7 @@ The following example creates a resource policy enabling the Route 53 service to
 DNS query logs in to the specified log group. Replace `"logArn"` with the ARN of
 your CloudWatch Logs resource, such as a log group or log stream.
 
-CloudWatch Logs also supports [aws:SourceArn](../../../../services/iam/latest/userguide/reference-policies-condition-keys-condition-keys-sourcearn.md) and [aws:SourceAccount](../../../../services/iam/latest/userguide/reference-policies-condition-keys-condition-keys-sourceaccount.md) condition context keys.
+CloudWatch Logs also supports [aws:SourceArn](../../../../services/iam/latest/userguide/reference-policies-condition-keys.md#condition-keys-sourcearn) and [aws:SourceAccount](../../../../services/iam/latest/userguide/reference-policies-condition-keys.md#condition-keys-sourceaccount) condition context keys.
 
 In the example resource policy, you would replace the value of `SourceArn` with
 the resource making the call from Route 53 to CloudWatch Logs. You would also
@@ -193,8 +193,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/putresourcepolicy.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 PutQueryDefinition
 
 PutRetentionPolicy
+
+All content copied from https://docs.aws.amazon.com/.

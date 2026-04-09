@@ -10,8 +10,10 @@ The following actions are supported by Amazon DynamoDB Streams:
 
 - [ListStreams](api-streams-liststreams.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 UpdateSubnetGroup
 
 DescribeStream
+
+All content copied from https://docs.aws.amazon.com/.

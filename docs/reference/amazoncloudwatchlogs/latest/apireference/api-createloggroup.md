@@ -69,7 +69,7 @@ Required: No
 
 The Amazon Resource Name (ARN) of the KMS key to use when encrypting log
 data. For more information, see [Amazon Resource\
-Names](../../../../general/general/latest/gr/aws-arns-and-namespaces-arn-syntax-kms.md).
+Names](../../../../general/latest/gr/aws-arns-and-namespaces.md#arn-syntax-kms).
 
 Type: String
 
@@ -128,7 +128,7 @@ You can grant users access to certain log groups while preventing them from acce
 other log groups. To do so, tag your groups and use IAM policies that refer to
 those tags. To assign tags when you create a log group, you must have either the
 `logs:TagResource` or `logs:TagLogGroup` permission. For more
-information about tagging, see [Tagging AWS resources](../../../../general/general/latest/gr/aws-tagging.md). For
+information about tagging, see [Tagging AWS resources](../../../../general/latest/gr/aws-tagging.md). For
 more information about using tags to control access, see [Controlling access to Amazon Web Services\
 resources using tags](../../../../services/iam/latest/userguide/access-tags.md).
 
@@ -245,8 +245,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/createloggroup.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreateLogAnomalyDetector
 
 CreateLogStream
+
+All content copied from https://docs.aws.amazon.com/.

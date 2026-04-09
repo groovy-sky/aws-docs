@@ -41,7 +41,7 @@ underlying read or write requests can still fail due to throttling on the indivi
 tables. If you delay the batch operation using exponential backoff, the individual
 requests in the batch are much more likely to succeed.
 
-For more information, see [Batch Operations and Error Handling](../../../../services/dynamodb/latest/developerguide/errorhandling-programming-errors-batchoperations.md) in the _Amazon DynamoDB_
+For more information, see [Batch Operations and Error Handling](../../../../services/dynamodb/latest/developerguide/errorhandling.md#Programming.Errors.BatchOperations) in the _Amazon DynamoDB_
 _Developer Guide_.
 
 With `BatchWriteItem`, you can efficiently write or delete large amounts of
@@ -665,8 +665,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/batchwriteitem.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 BatchGetItem
 
 CreateBackup
+
+All content copied from https://docs.aws.amazon.com/.

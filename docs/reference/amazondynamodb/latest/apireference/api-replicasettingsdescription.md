@@ -43,7 +43,7 @@ Required: No
 **ReplicaProvisionedReadCapacityUnits**
 
 The maximum number of strongly consistent reads consumed per second before DynamoDB
-returns a `ThrottlingException`. For more information, see [Specifying Read and Write Requirements](../../../../services/dynamodb/latest/developerguide/workingwithtables-provisionedthroughput.md) in the _Amazon DynamoDB_
+returns a `ThrottlingException`. For more information, see [Specifying Read and Write Requirements](../../../../services/dynamodb/latest/developerguide/workingwithtables.md#ProvisionedThroughput) in the _Amazon DynamoDB_
 _Developer Guide_.
 
 Type: Long
@@ -63,7 +63,7 @@ Required: No
 **ReplicaProvisionedWriteCapacityUnits**
 
 The maximum number of writes consumed per second before DynamoDB returns a
-`ThrottlingException`. For more information, see [Specifying Read and Write Requirements](../../../../services/dynamodb/latest/developerguide/workingwithtables-provisionedthroughput.md) in the _Amazon DynamoDB_
+`ThrottlingException`. For more information, see [Specifying Read and Write Requirements](../../../../services/dynamodb/latest/developerguide/workingwithtables.md#ProvisionedThroughput) in the _Amazon DynamoDB_
 _Developer Guide_.
 
 Type: Long
@@ -108,8 +108,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/replicasettingsdescription.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ReplicaGlobalSecondaryIndexSettingsUpdate
 
 ReplicaSettingsUpdate
+
+All content copied from https://docs.aws.amazon.com/.

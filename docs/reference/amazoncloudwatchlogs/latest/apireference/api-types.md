@@ -236,8 +236,10 @@ The following data types are supported:
 
 - [UpperCaseString](api-uppercasestring.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 UpdateScheduledQuery
 
 AccountPolicy
+
+All content copied from https://docs.aws.amazon.com/.

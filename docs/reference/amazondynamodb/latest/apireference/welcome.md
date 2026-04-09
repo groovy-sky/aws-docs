@@ -18,6 +18,8 @@ At the end of each API action description there are links to the equivalent CLI 
 and programming-specific language method. Similarly, at the end of each API datatype
 description, there are links to the equivalent programming-specific language type.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Actions
+
+All content copied from https://docs.aws.amazon.com/.

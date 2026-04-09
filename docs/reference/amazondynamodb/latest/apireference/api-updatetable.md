@@ -282,7 +282,7 @@ witness. For each witness, you can request one action:
 You can create or delete only one witness per `UpdateTable`
 operation.
 
-For more information, see [Multi-Region strong consistency (MRSC)](../../../../services/dynamodb/latest/developerguide/v2globaltables-howitworks-v2globaltables-howitworks-consistency-modes.md) in the Amazon DynamoDB
+For more information, see [Multi-Region strong consistency (MRSC)](../../../../services/dynamodb/latest/developerguide/v2globaltables-howitworks.md#V2globaltables_HowItWorks.consistency-modes) in the Amazon DynamoDB
 Developer Guide
 
 Type: Array of [GlobalTableWitnessGroupUpdate](api-globaltablewitnessgroupupdate.md) objects
@@ -294,7 +294,7 @@ Required: No
 **[MultiRegionConsistency](#API_UpdateTable_RequestSyntax)**
 
 Specifies the consistency mode for a new global table. This parameter is only valid
-when you create a global table by specifying one or more [Create](api-replicationgroupupdate-ddb-type-replicationgroupupdate-create.md) actions in the [ReplicaUpdates](api-updatetable-ddb-updatetable-request-replicaupdates.md) action list.
+when you create a global table by specifying one or more [Create](api-replicationgroupupdate.md#DDB-Type-ReplicationGroupUpdate-Create) actions in the [ReplicaUpdates](api-updatetable.md#DDB-UpdateTable-request-ReplicaUpdates) action list.
 
 You can specify one of the following consistency modes:
 
@@ -307,7 +307,7 @@ consistency (MRSC).
 
 If you don't specify this field, the global table consistency mode defaults to
 `EVENTUAL`. For more information about global tables consistency modes,
-see [Consistency modes](../../../../services/v2globaltables-howitworks-v2globaltables-howitworks-consistency-modes/index.md) in DynamoDB developer guide.
+see [Consistency modes](../../../../services/v2globaltables-howitworks/index.md#V2globaltables_HowItWorks.consistency-modes) in DynamoDB developer guide.
 
 Type: String
 
@@ -782,8 +782,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/updatetable.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 UpdateKinesisStreamingDestination
 
 UpdateTableReplicaAutoScaling
+
+All content copied from https://docs.aws.amazon.com/.

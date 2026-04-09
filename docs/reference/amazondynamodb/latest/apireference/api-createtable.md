@@ -273,7 +273,7 @@ elements, in this order: The first element must have a `KeyType` of
 `HASH`, and the second element must have a `KeyType` of
 `RANGE`.
 
-For more information, see [Working with Tables](../../../../services/dynamodb/latest/developerguide/workingwithtables-workingwithtables-primary-key.md) in the _Amazon DynamoDB Developer_
+For more information, see [Working with Tables](../../../../services/dynamodb/latest/developerguide/workingwithtables.md#WorkingWithTables.primary.key) in the _Amazon DynamoDB Developer_
 _Guide_.
 
 Type: Array of [KeySchemaElement](api-keyschemaelement.md) objects
@@ -873,8 +873,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/createtable.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreateGlobalTable
 
 DeleteBackup
+
+All content copied from https://docs.aws.amazon.com/.

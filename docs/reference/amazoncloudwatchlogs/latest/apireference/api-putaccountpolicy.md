@@ -116,7 +116,7 @@ Region.
 
 A transformer for a log group is a series of processors, where each processor applies one
 type of transformation to the log events ingested into this log group. For more information
-about the available processors to use in a transformer, see [Processors that you can use](../../../../services/amazoncloudwatch/latest/logs/cloudwatch-logs-transformation-cloudwatch-logs-transformation-processors.md).
+about the available processors to use in a transformer, see [Processors that you can use](../../../../services/amazoncloudwatch/latest/logs/cloudwatch-logs-transformation.md#CloudWatch-Logs-Transformation-Processors).
 
 Having log events in standardized format enables visibility across your applications for
 your log analysis, reporting, and alarming needs. CloudWatch Logs provides transformation
@@ -421,7 +421,7 @@ when the destination is an Kinesis Data Streams data stream.
 **Transformer policy**
 
 A transformer policy must include one JSON block with the array of processors and their
-configurations. For more information about available processors, see [Processors that you can use](../../../../services/amazoncloudwatch/latest/logs/cloudwatch-logs-transformation-cloudwatch-logs-transformation-processors.md).
+configurations. For more information about available processors, see [Processors that you can use](../../../../services/amazoncloudwatch/latest/logs/cloudwatch-logs-transformation.md#CloudWatch-Logs-Transformation-Processors).
 
 **Field index policy**
 
@@ -818,8 +818,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/putaccountpolicy.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ListTagsLogGroup
 
 PutBearerTokenAuthentication
+
+All content copied from https://docs.aws.amazon.com/.

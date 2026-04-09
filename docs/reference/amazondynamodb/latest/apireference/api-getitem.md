@@ -253,7 +253,7 @@ The capacity units consumed by the `GetItem` operation. The data returned
 includes the total provisioned throughput consumed, along with statistics for the table
 and any indexes involved in the operation. `ConsumedCapacity` is only
 returned if the `ReturnConsumedCapacity` parameter was specified. For more
-information, see [Capacity unit consumption for read operations](../../../../services/dynamodb/latest/developerguide/read-write-operations-read-operation-consumption.md) in the _Amazon_
+information, see [Capacity unit consumption for read operations](../../../../services/dynamodb/latest/developerguide/read-write-operations.md#read-operation-consumption) in the _Amazon_
 _DynamoDB Developer Guide_.
 
 Type: [ConsumedCapacity](api-consumedcapacity.md) object
@@ -432,8 +432,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/getitem.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ExportTableToPointInTime
 
 GetResourcePolicy
+
+All content copied from https://docs.aws.amazon.com/.

@@ -209,7 +209,7 @@ _attribute_. The term "range attribute" derives from the way
 DynamoDB stores items with the same partition key physically close together,
 in sorted order by the sort key value.
 
-For more information about primary keys, see [Primary Key](../../../../services/dynamodb/latest/developerguide/datamodel-datamodelprimarykey.md) in the _Amazon DynamoDB Developer_
+For more information about primary keys, see [Primary Key](../../../../services/dynamodb/latest/developerguide/datamodel.md#DataModelPrimaryKey) in the _Amazon DynamoDB Developer_
 _Guide_.
 
 Type: Array of [KeySchemaElement](api-keyschemaelement.md) objects
@@ -316,7 +316,7 @@ multi-Region strong consistency (MRSC).
 
 If you don't specify this field, the global table consistency mode defaults to
 `EVENTUAL`. For more information about global tables consistency modes,
-see [Consistency modes](../../../../services/v2globaltables-howitworks-v2globaltables-howitworks-consistency-modes/index.md) in DynamoDB developer guide.
+see [Consistency modes](../../../../services/v2globaltables-howitworks/index.md#V2globaltables_HowItWorks.consistency-modes) in DynamoDB developer guide.
 
 Type: String
 
@@ -473,8 +473,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/tabledescription.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 TableCreationParameters
 
 TableWarmThroughputDescription
+
+All content copied from https://docs.aws.amazon.com/.

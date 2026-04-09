@@ -71,7 +71,7 @@ The request accepts the following data in JSON format.
 **[kmsKeyId](#API_AssociateKmsKey_RequestSyntax)**
 
 The Amazon Resource Name (ARN) of the KMS key to use when encrypting log
-data. This must be a symmetric KMS key. For more information, see [Amazon Resource Names](../../../../general/general/latest/gr/aws-arns-and-namespaces-arn-syntax-kms.md) and [Using Symmetric and Asymmetric\
+data. This must be a symmetric KMS key. For more information, see [Amazon Resource Names](../../../../general/latest/gr/aws-arns-and-namespaces.md#arn-syntax-kms) and [Using Symmetric and Asymmetric\
 Keys](../../../../services/kms/latest/developerguide/symmetric-asymmetric.md).
 
 Type: String
@@ -255,8 +255,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/associatekmskey.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Actions
 
 AssociateSourceToS3TableIntegration
+
+All content copied from https://docs.aws.amazon.com/.

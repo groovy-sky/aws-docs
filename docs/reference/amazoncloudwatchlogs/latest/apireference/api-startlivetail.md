@@ -26,17 +26,17 @@ per second, the log events are sampled down to 500 log events to be included in 
 If your client consumes the log events slower than the server produces them, CloudWatch Logs buffers up to 10 `LiveTailSessionUpdate` events or 5000 log
 events, after which it starts dropping the oldest events.
 
-- A [SessionStreamingException](api-startlivetailresponsestream-cwl-type-startlivetailresponsestream-sessionstreamingexception.md) object is returned if an unknown error occurs on the
+- A [SessionStreamingException](api-startlivetailresponsestream.md#CWL-Type-StartLiveTailResponseStream-SessionStreamingException) object is returned if an unknown error occurs on the
 server side.
 
-- A [SessionTimeoutException](api-startlivetailresponsestream-cwl-type-startlivetailresponsestream-sessiontimeoutexception.md) object is returned when the session times out, after it
+- A [SessionTimeoutException](api-startlivetailresponsestream.md#CWL-Type-StartLiveTailResponseStream-SessionTimeoutException) object is returned when the session times out, after it
 has been kept open for three hours.
 
 ###### Note
 
 The `StartLiveTail` API routes requests using SDK host prefix injection. SDK versions released before April 1, 2026 route to
 `streaming-logs.Region.amazonaws.com`, which does not support VPC endpoints. SDK versions released on or after April 1, 2026 route to
-`stream-logs.Region.amazonaws.com`, which supports VPC endpoints. To set up a VPC endpoint for this API, see [Creating a VPC endpoint for CloudWatch Logs](../../../../services/amazoncloudwatch/latest/logs/cloudwatch-logs-and-interface-vpc-create-vpc-endpoint-for-cloudwatchlogs.md).
+`stream-logs.Region.amazonaws.com`, which supports VPC endpoints. To set up a VPC endpoint for this API, see [Creating a VPC endpoint for CloudWatch Logs](../../../../services/amazoncloudwatch/latest/logs/cloudwatch-logs-and-interface-vpc.md#create-VPC-endpoint-for-CloudWatchLogs).
 
 ###### Important
 
@@ -260,8 +260,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/startlivetail.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 PutTransformer
 
 StartQuery
+
+All content copied from https://docs.aws.amazon.com/.
