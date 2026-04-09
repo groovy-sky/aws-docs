@@ -104,7 +104,7 @@ For information about the errors that are common to all actions, see [Common Err
 **InsufficientCacheClusterCapacity**
 
 The requested cache node type is not available in the specified Availability Zone. For
-more information, see [InsufficientCacheClusterCapacity](../../../../services/amazonelasticache/latest/dg/errormessages-errormessages-insufficient-cache-cluster-capacity.md) in the ElastiCache User Guide.
+more information, see [InsufficientCacheClusterCapacity](../../../../services/amazonelasticache/latest/dg/errormessages.md#ErrorMessages.INSUFFICIENT_CACHE_CLUSTER_CAPACITY) in the ElastiCache User Guide.
 
 HTTP Status Code: 400
 
@@ -274,8 +274,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/elasticache-2015-02-02/modifyreplicationgroupshardconfiguration.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ModifyReplicationGroup
 
 ModifyServerlessCache
+
+All content copied from https://docs.aws.amazon.com/.

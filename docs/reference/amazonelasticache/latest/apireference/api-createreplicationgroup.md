@@ -24,7 +24,7 @@ group have too small a CIDR range or the subnets are shared and heavily used by 
 clusters. For more information, see [Creating a Subnet\
 Group](../../../../services/amazonelasticache/latest/dg/subnetgroups-creating.md). For versions below 5.0.6, the limit is 250 per cluster.
 
-To request a limit increase, see [Amazon Service Limits](../../../../general/general/latest/gr/aws-service-limits.md) and
+To request a limit increase, see [Amazon Service Limits](../../../../general/latest/gr/aws-service-limits.md) and
 choose the limit type **Nodes per cluster per instance**
 **type**.
 
@@ -790,7 +790,7 @@ HTTP Status Code: 404
 **InsufficientCacheClusterCapacity**
 
 The requested cache node type is not available in the specified Availability Zone. For
-more information, see [InsufficientCacheClusterCapacity](../../../../services/amazonelasticache/latest/dg/errormessages-errormessages-insufficient-cache-cluster-capacity.md) in the ElastiCache User Guide.
+more information, see [InsufficientCacheClusterCapacity](../../../../services/amazonelasticache/latest/dg/errormessages.md#ErrorMessages.INSUFFICIENT_CACHE_CLUSTER_CAPACITY) in the ElastiCache User Guide.
 
 HTTP Status Code: 400
 
@@ -1039,8 +1039,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/elasticache-2015-02-02/createreplicationgroup.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreateGlobalReplicationGroup
 
 CreateServerlessCache
+
+All content copied from https://docs.aws.amazon.com/.

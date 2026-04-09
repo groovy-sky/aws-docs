@@ -1,0 +1,76 @@
+# LogDeliveryConfigurationRequest
+
+Specifies the destination, format and type of the logs.
+
+## Contents
+
+###### Note
+
+In the following list, the required parameters are described first.
+
+**DestinationDetails**
+
+Configuration details of either a CloudWatch Logs destination or Kinesis Data Firehose
+destination.
+
+Type: [DestinationDetails](api-destinationdetails.md) object
+
+Required: No
+
+**DestinationType**
+
+Specify either `cloudwatch-logs` or `kinesis-firehose` as the
+destination type.
+
+Type: String
+
+Valid Values: `cloudwatch-logs | kinesis-firehose`
+
+Required: No
+
+**Enabled**
+
+Specify if log delivery is enabled. Default `true`.
+
+Type: Boolean
+
+Required: No
+
+**LogFormat**
+
+Specifies either JSON or TEXT
+
+Type: String
+
+Valid Values: `text | json`
+
+Required: No
+
+**LogType**
+
+Refers to [slow-log](https://redis.io/commands/slowlog) or
+engine-log..
+
+Type: String
+
+Valid Values: `slow-log | engine-log`
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/elasticache-2015-02-02/logdeliveryconfigurationrequest.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/elasticache-2015-02-02/logdeliveryconfigurationrequest.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/elasticache-2015-02-02/logdeliveryconfigurationrequest.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+LogDeliveryConfiguration
+
+NodeGroup
+
+All content copied from https://docs.aws.amazon.com/.
