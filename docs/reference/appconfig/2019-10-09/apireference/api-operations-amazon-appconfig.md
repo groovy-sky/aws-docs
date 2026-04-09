@@ -92,8 +92,10 @@ The following actions are supported by AWS AppConfig:
 
 - [ValidateConfiguration](api-validateconfiguration.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Actions
 
 CreateApplication
+
+All content copied from https://docs.aws.amazon.com/.

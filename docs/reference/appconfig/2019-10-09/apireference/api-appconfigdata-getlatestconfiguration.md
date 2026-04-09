@@ -182,7 +182,7 @@ Host: appconfigdata.us-west-1.amazonaws.com
 Accept-Encoding: identity
 User-Agent: aws-cli/2.4.15 Python/3.8.8 Windows/10 exe/AMD64 prompt/off command/appconfigdata.get-latest-configuration
 X-Amz-Date: 20220218T190734Z
-Authorization: AWS4-HMAC-SHA256 Credential=AKIAIOSFODNN7EXAMPLE/20220218/us-west-1/appconfig/aws4_request, SignedHeaders=host;x-amz-date, Signature=39c3b3042cd2aEXAMPLE
+Authorization: AWS4-HMAC-SHA256 Credential=AWS_ACCESS_KEY_ID_REDACTED/20220218/us-west-1/appconfig/aws4_request, SignedHeaders=host;x-amz-date, Signature=39c3b3042cd2aEXAMPLE
 
 ```
 
@@ -221,8 +221,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appconfigdata-2021-11-11/getlatestconfiguration.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AWS AppConfig Data
 
 StartConfigurationSession
+
+All content copied from https://docs.aws.amazon.com/.

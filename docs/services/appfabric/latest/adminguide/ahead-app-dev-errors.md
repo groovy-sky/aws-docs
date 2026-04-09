@@ -1,0 +1,209 @@
+# Troubleshoot AppClients in AppFabric for productivity
+
+The AWS AppFabric for productivity feature is in preview and is subject to change.
+
+This section describes common errors and troubleshooting for AppFabric for productivity.
+
+## Unverified application
+
+App developers that use AppFabric for productivity to enrich their app experiences will go through a
+verification process prior to launching their features to end users. All applications start as
+unverified and change to verified only when the verification process is complete. This means that
+the `starterUserEmails` you used when creating an AppClient will see this
+message.
+
+![Warning message for an unverified application in AWS AppFabric, requesting data access.](https://docs.aws.amazon.com/images/appfabric/latest/adminguide/images/fabric-24.png)
+
+## `CreateAppClient` errors
+
+### ServiceQuotaExceededException
+
+If you receive the following exception when creating an AppClient, you've exceeded the
+number of AppClients that can be created per AWS account. The limit is 1. HTTP Status Code:
+402
+
+```nohighlight
+
+ServiceQuotaExceededException / SERVICE_QUOTA_EXCEEDED
+You have exceeded the number of AppClients that can be created per AWS Account. The limit is 1.
+HTTP Status Code: 402
+```
+
+## `GetAppClient` errors
+
+### ResourceNotFoundException
+
+If you receive the following exception when getting details for an AppClient, ensure you’ve
+entered the correct AppClient identifier. This error signifies that the specified AppClient was
+not found.
+
+```nohighlight
+
+ResourceNotFoundException / APP_CLIENT_NOT_FOUND
+The specified AppClient is not found. Ensure you’ve entered the correct AppClient identifier.
+HTTP Status Code: 404
+```
+
+## `DeleteAppClient` errors
+
+### ConflictException
+
+If you receive the following exception when deleting an AppClient, another delete request
+is in progress. Wait until it completes then try again. HTTP Status Code: 409
+
+```nohighlight
+
+ConflictException
+Another delete request is in progress. Wait until it completes then try again.
+HTTP Status Code: 409
+```
+
+### ResourceNotFoundException
+
+If you receive the following exception when deleting an AppClient, ensure you’ve entered
+the correct AppClient identifier. This error signifies that the specified AppClient was not
+found.
+
+```nohighlight
+
+ResourceNotFoundException / APP_CLIENT_NOT_FOUND
+The specified AppClient is not found. Ensure you’ve entered the correct AppClient identifier.
+HTTP Status Code: 404
+```
+
+## `UpdateAppClient` errors
+
+### ResourceNotFoundException
+
+If you receive the following exception when updating an AppClient, ensure you’ve entered
+the correct AppClient identifier. This error signifies that the specified AppClient was not
+found.
+
+```nohighlight
+
+ResourceNotFoundException / APP_CLIENT_NOT_FOUND
+The specified AppClient is not found. Ensure you’ve entered the correct AppClient identifier.
+HTTP Status Code: 404
+```
+
+## `Authorize` errors
+
+### ValidationException
+
+You might receive the following exception if any of the API parameters don’t satisfy the
+constraints defined in the API specifications.
+
+```nohighlight
+
+ValidationException
+HTTP Status Code: 400
+```
+
+**Reason 1: When AppClient ID is not specified**
+
+The `app_client_id` is missing in the request parameters. Create the AppClient
+if it hasn't yet been created or use your existing `app_client_id` and try again. To
+find the AppClient ID, use the [ListAppClient](manage-appclients.md#list_appclients) API
+operation.
+
+**Reason 2: When AppFabric doesn’t have access to the**
+**customer managed key**
+
+```nohighlight
+
+Message: AppFabric couldn't access the customer managed key configured for AppClient.
+```
+
+AppFabric is currently unable to access the customer managed keys, likely due to recent changes in its
+permissions. Verify the specified key exists and ensure AppFabric is granted the appropriate access
+permissions.
+
+**Reason 3: The redirect URL specified is not valid**
+
+```nohighlight
+
+Message: Redirect url invalid
+```
+
+Ensure the redirect URL in your request is correct. It must match one of the redirect URLs
+specified when you created or updated the AppClient. To view the list of allowed redirect URLs,
+use the [GetAppClient](manage-appclients.md#get_appclient_details) API operation.
+
+## `Token` errors
+
+### TokenException
+
+You might receive the following exception for a few reasons.
+
+```nohighlight
+
+TokenException
+HTTP Status Code: 400
+```
+
+**Reason 1: When an email that is not valid is**
+**specified**
+
+```
+
+Message: Invalid Email used
+```
+
+Ensure the email address you’re using matches the one listed for the
+`starterUserEmails` attribute when you created the AppClient. If the emails don’t
+match, change to the matching email address and try again. To view the email used, use the [GetAppClient](manage-appclients.md#get_appclient_details) API operation.
+
+**Reason 2: For grant\_type as refresh\_token when the token is not**
+**specified.**
+
+```
+
+Message: refresh_token must be non-null for Refresh Token Grant-type
+```
+
+The refresh token specified in the request is null or empty. Specify an active
+`refresh_token` received in [Token](getting-started-appdeveloper-productivity.md#authorize_data_access) API
+call response.
+
+### ThrottlingException
+
+You might receive the following exception if the API is being called at rate which is more
+than the allowed quota.
+
+```nohighlight
+
+ThrottlingException
+HTTP Status Code: 429
+```
+
+## `ListActionableInsights`, `ListMeetingInsights`, and `PutFeedback` errors
+
+### ValidationException
+
+You might receive the following exception if any of the API parameters don't satisfy the
+constraint defined on the API specifications.
+
+```nohighlight
+
+ValidationException
+HTTP Status Code: 400
+```
+
+### ThrottlingException
+
+You might receive the following exception if the API is being called at rate which is more
+than the allowed quota.
+
+```nohighlight
+
+ThrottlingException
+HTTP Status Code: 429
+```
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Manage AppClients
+
+Get started for end users
+
+All content copied from https://docs.aws.amazon.com/.
