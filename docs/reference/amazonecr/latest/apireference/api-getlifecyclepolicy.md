@@ -1,15 +1,12 @@
-# PutLifecyclePolicy
+# GetLifecyclePolicy
 
-Creates or updates the lifecycle policy for the specified repository. For more
-information, see [Lifecycle policy\
-template](../../../../services/amazonecr/latest/userguide/lifecyclepolicies.md).
+Retrieves the lifecycle policy for the specified repository.
 
 ## Request Syntax
 
 ```nohighlight
 
 {
-   "lifecyclePolicyText": "string",
    "registryId": "string",
    "repositoryName": "string"
 }
@@ -21,20 +18,10 @@ For information about the parameters that are common to all actions, see [Common
 
 The request accepts the following data in JSON format.
 
-**[lifecyclePolicyText](#API_PutLifecyclePolicy_RequestSyntax)**
+**[registryId](#API_GetLifecyclePolicy_RequestSyntax)**
 
-The JSON repository policy text to apply to the repository.
-
-Type: String
-
-Length Constraints: Minimum length of 100. Maximum length of 30720.
-
-Required: Yes
-
-**[registryId](#API_PutLifecyclePolicy_RequestSyntax)**
-
-The AWS account ID associated with the registry that contains the repository. If you
-do  not specify a registry, the default registry is assumed.
+The AWS account ID associated with the registry that contains the repository.
+If you do not specify a registry, the default registry is assumed.
 
 Type: String
 
@@ -42,9 +29,9 @@ Pattern: `[0-9]{12}`
 
 Required: No
 
-**[repositoryName](#API_PutLifecyclePolicy_RequestSyntax)**
+**[repositoryName](#API_GetLifecyclePolicy_RequestSyntax)**
 
-The name of the repository to receive the policy.
+The name of the repository.
 
 Type: String
 
@@ -59,6 +46,7 @@ Required: Yes
 ```nohighlight
 
 {
+   "lastEvaluatedAt": number,
    "lifecyclePolicyText": "string",
    "registryId": "string",
    "repositoryName": "string"
@@ -71,15 +59,21 @@ If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
-**[lifecyclePolicyText](#API_PutLifecyclePolicy_ResponseSyntax)**
+**[lastEvaluatedAt](#API_GetLifecyclePolicy_ResponseSyntax)**
 
-The JSON repository policy text.
+The time stamp of the last time that the lifecycle policy was run.
+
+Type: Timestamp
+
+**[lifecyclePolicyText](#API_GetLifecyclePolicy_ResponseSyntax)**
+
+The JSON lifecycle policy text.
 
 Type: String
 
 Length Constraints: Minimum length of 100. Maximum length of 30720.
 
-**[registryId](#API_PutLifecyclePolicy_ResponseSyntax)**
+**[registryId](#API_GetLifecyclePolicy_ResponseSyntax)**
 
 The registry ID associated with the request.
 
@@ -87,7 +81,7 @@ Type: String
 
 Pattern: `[0-9]{12}`
 
-**[repositoryName](#API_PutLifecyclePolicy_ResponseSyntax)**
+**[repositoryName](#API_GetLifecyclePolicy_ResponseSyntax)**
 
 The repository name associated with the request.
 
@@ -109,6 +103,13 @@ request.
 **message**
 
 The error message associated with the exception.
+
+HTTP Status Code: 400
+
+**LifecyclePolicyNotFoundException**
+
+The lifecycle policy could not be found, and no policy is set to the
+repository.
 
 HTTP Status Code: 400
 
@@ -155,9 +156,9 @@ yourself.
 
 ### Example
 
-This example creates a lifecycle policy to expire images older than 14 days
-for a repository called `project-a/amazon-ecs-sample` in the default
-registry for an account.
+This example retrieves the lifecycle policy for a repository called
+`project-a/amazon-ecs-sample` in the default registry for an
+account.
 
 #### Sample Request
 
@@ -166,16 +167,15 @@ registry for an account.
 POST / HTTP/1.1
 Host: ecr.us-west-2.amazonaws.com
 Accept-Encoding: identity
-X-Amz-Target: AmazonEC2ContainerRegistry_V20150921.PutLifecyclePolicy
+X-Amz-Target: AmazonEC2ContainerRegistry_V20150921.GetLifecyclePolicy
 Content-Type: application/x-amz-json-1.1
 User-Agent: aws-cli/1.11.144 Python/3.6.1 Darwin/16.6.0 botocore/1.7.2
-X-Amz-Date: 20170901T194217Z
+X-Amz-Date: 20170901T210647Z
 Authorization: AUTHPARAMS
-Content-Length: 535
+Content-Length: 48
 
 {
-   "repositoryName": "project-a/amazon-ecs-sample",
-   "lifecyclePolicyText": "{\n    \"rules\": [\n        {\n            \"rulePriority\": 1,\n            \"description\": \"Expire images older than 14 days\",\n            \"selection\": {\n                \"tagStatus\": \"untagged\",\n                \"countType\": \"sinceImagePushed\",\n                \"countUnit\": \"days\",\n                \"countNumber\": 14\n            },\n            \"action\": {\n                \"type\": \"expire\"\n            }\n        }\n    ]\n}\n"
+   "repositoryName": "project-a/amazon-ecs-sample"
 }
 ```
 
@@ -185,13 +185,14 @@ Content-Length: 535
 
 HTTP/1.1 200 OK
 Server: Server
-Date: Fri, 01 Sep 2017 19:42:18 GMT
+Date: Fri, 01 Sep 2017 21:06:48 GMT
 Content-Type: application/x-amz-json-1.1
-Content-Length: 340
+Content-Length: 372
 Connection: keep-alive
 x-amzn-RequestId: 123a4b56-7c89-01d2-3ef4-example5678f
 
 {
+   "lastEvaluatedAt":1.504295007E9,
    "lifecyclePolicyText":"{\"rules\":[{\"rulePriority\":1,\"description\":\"Expire images older than 14 days\",\"selection\":{\"tagStatus\":\"untagged\",\"countType\":\"sinceImagePushed\",\"countUnit\":\"days\",\"countNumber\":14},\"action\":{\"type\":\"expire\"}}]}",
    "registryId":"012345678910",
    "repositoryName":"project-a/amazon-ecs-sample"
@@ -202,30 +203,30 @@ x-amzn-RequestId: 123a4b56-7c89-01d2-3ef4-example5678f
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/ecr-2015-09-21/putlifecyclepolicy.md)
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ecr-2015-09-21/getlifecyclepolicy.md)
 
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ecr-2015-09-21/putlifecyclepolicy.md)
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ecr-2015-09-21/getlifecyclepolicy.md)
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/ecr-2015-09-21/putlifecyclepolicy.md)
+- [AWS SDK for C++](../../../goto/sdkforcpp/ecr-2015-09-21/getlifecyclepolicy.md)
 
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/ecr-2015-09-21/putlifecyclepolicy.md)
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ecr-2015-09-21/getlifecyclepolicy.md)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecr-2015-09-21/putlifecyclepolicy.md)
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecr-2015-09-21/getlifecyclepolicy.md)
 
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ecr-2015-09-21/putlifecyclepolicy.md)
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ecr-2015-09-21/getlifecyclepolicy.md)
 
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ecr-2015-09-21/putlifecyclepolicy.md)
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ecr-2015-09-21/getlifecyclepolicy.md)
 
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ecr-2015-09-21/putlifecyclepolicy.md)
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ecr-2015-09-21/getlifecyclepolicy.md)
 
-- [AWS SDK for Python](../../../../services/goto/boto3/ecr-2015-09-21/putlifecyclepolicy.md)
+- [AWS SDK for Python](../../../../services/goto/boto3/ecr-2015-09-21/getlifecyclepolicy.md)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecr-2015-09-21/putlifecyclepolicy.md)
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecr-2015-09-21/getlifecyclepolicy.md)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-PutImageTagMutability
+GetDownloadUrlForLayer
 
-PutRegistryPolicy
+GetLifecyclePolicyPreview
 
 All content copied from https://docs.aws.amazon.com/.

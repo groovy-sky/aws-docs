@@ -328,7 +328,7 @@ HTTP Status Code: 400
 In the following example or examples, the Authorization header contents
 ( `AUTHPARAMS`) must be replaced with an AWS Signature Version 4
 signature. For more information about creating these signatures, see [Signature\
-Version 4 Signing Process](../../../../general/general/latest/gr/signature-version-4.md) in the _AWS General_
+Version 4 Signing Process](../../../../general/latest/gr/signature-version-4.md) in the _AWS General_
 _Reference_.
 
 You only need to learn how to sign HTTP requests if you intend to manually
@@ -590,8 +590,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecr-2015-09-21/describeimagescanfindings.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeImages
 
 DescribeImageSigningStatus
+
+All content copied from https://docs.aws.amazon.com/.
