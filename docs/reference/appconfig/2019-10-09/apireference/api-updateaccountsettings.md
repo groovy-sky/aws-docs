@@ -105,7 +105,7 @@ Accept-Encoding: identity
 Content-Type: application/json
 User-Agent: aws-cli/2.17.58 md/awscrt#0.21.2 ua/2.0 os/windows#10 md/arch#amd64 lang/python#3.12.6 md/pyimpl#CPython cfg/retry-mode#standard md/installer#exe md/prompt#off md/command#appconfig.update-account-settings
 X-Amz-Date: 20241001T190010Z
-Authorization: AWS4-HMAC-SHA256 Credential=AKIAIOSFODNN7EXAMPLE/20241001/us-east-1/appconfig/aws4_request, SignedHeaders=content-type;host;x-amz-date, Signature=39c3b3042cd2aEXAMPLE
+Authorization: AWS4-HMAC-SHA256 Credential=AWS_ACCESS_KEY_ID_REDACTED/20241001/us-east-1/appconfig/aws4_request, SignedHeaders=content-type;host;x-amz-date, Signature=39c3b3042cd2aEXAMPLE
 Content-Length: 41
 
 {"DeletionProtection": {"Enabled": true}}
@@ -147,8 +147,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appconfig-2019-10-09/updateaccountsettings.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 UntagResource
 
 UpdateApplication
+
+All content copied from https://docs.aws.amazon.com/.

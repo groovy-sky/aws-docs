@@ -283,7 +283,7 @@ Environments: 20 max per application
 
 To resolve this issue, you can delete one or more resources and try again. Or, you can
 request a quota increase. For more information about quotas and to request an increase, see
-[Service quotas for AWS AppConfig](../../../../general/general/latest/gr/appconfig-limits-appconfig.md) in the Amazon Web Services General Reference.
+[Service quotas for AWS AppConfig](../../../../general/latest/gr/appconfig.md#limits_appconfig) in the Amazon Web Services General Reference.
 
 HTTP Status Code: 402
 
@@ -303,7 +303,7 @@ Accept-Encoding: identity
 Content-Type: application/json
 User-Agent: aws-cli/2.7.19 Python/3.9.11 Windows/10 exe/AMD64 prompt/off command/appconfig.create-extension
 X-Amz-Date: 20220803T202954Z
-Authorization: AWS4-HMAC-SHA256 Credential=AKIAIOSFODNN7EXAMPLE/20220803/us-west-2/appconfig/aws4_request, SignedHeaders=content-type;host;x-amz-date, Signature=39c3b3042cd2aEXAMPLE
+Authorization: AWS4-HMAC-SHA256 Credential=AWS_ACCESS_KEY_ID_REDACTED/20220803/us-west-2/appconfig/aws4_request, SignedHeaders=content-type;host;x-amz-date, Signature=39c3b3042cd2aEXAMPLE
 Content-Length: 304
 
 {
@@ -362,8 +362,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appconfig-2019-10-09/createextension.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreateEnvironment
 
 CreateExtensionAssociation
+
+All content copied from https://docs.aws.amazon.com/.
