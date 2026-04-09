@@ -1,10 +1,91 @@
 package write
 
 import (
+	"os"
+	"path/filepath"
 	"strings"
 	"testing"
 	"time"
 )
+
+func TestPickWelcomeOrFirstPrefersWelcomeMd(t *testing.T) {
+	root := t.TempDir()
+	servicePath := filepath.Join(root, "docs", "reference", "myservice")
+
+	files := []string{
+		filepath.Join(servicePath, "latest", "apireference", "api-zzz.md"),
+		filepath.Join(servicePath, "latest", "apireference", "api-aaa.md"),
+		filepath.Join(servicePath, "latest", "apireference", "welcome.md"),
+	}
+	for _, f := range files {
+		if err := os.MkdirAll(filepath.Dir(f), 0755); err != nil {
+			t.Fatal(err)
+		}
+		if err := os.WriteFile(f, []byte("# content"), 0644); err != nil {
+			t.Fatal(err)
+		}
+	}
+
+	link, found := pickServiceLink(servicePath, root)
+	if !found {
+		t.Fatal("expected a link to be found")
+	}
+	if !strings.HasSuffix(link, "welcome.md") {
+		t.Fatalf("expected welcome.md to be preferred, got %q", link)
+	}
+}
+
+func TestPickWelcomeOrFirstPrefersShallowestWelcomeMd(t *testing.T) {
+	root := t.TempDir()
+	servicePath := filepath.Join(root, "docs", "reference", "myservice")
+
+	files := []string{
+		filepath.Join(servicePath, "latest", "apireference", "nested", "deep", "welcome.md"),
+		filepath.Join(servicePath, "latest", "apireference", "welcome.md"),
+	}
+	for _, f := range files {
+		if err := os.MkdirAll(filepath.Dir(f), 0755); err != nil {
+			t.Fatal(err)
+		}
+		if err := os.WriteFile(f, []byte("# content"), 0644); err != nil {
+			t.Fatal(err)
+		}
+	}
+
+	link, found := pickServiceLink(servicePath, root)
+	if !found {
+		t.Fatal("expected a link to be found")
+	}
+	if !strings.Contains(link, "apireference/welcome.md") {
+		t.Fatalf("expected shallowest welcome.md, got %q", link)
+	}
+}
+
+func TestPickWelcomeOrFirstFallsBackToAlphabeticalWhenNoWelcomeMd(t *testing.T) {
+	root := t.TempDir()
+	servicePath := filepath.Join(root, "docs", "reference", "myservice")
+
+	files := []string{
+		filepath.Join(servicePath, "latest", "apireference", "api-zzz.md"),
+		filepath.Join(servicePath, "latest", "apireference", "api-aaa.md"),
+	}
+	for _, f := range files {
+		if err := os.MkdirAll(filepath.Dir(f), 0755); err != nil {
+			t.Fatal(err)
+		}
+		if err := os.WriteFile(f, []byte("# content"), 0644); err != nil {
+			t.Fatal(err)
+		}
+	}
+
+	link, found := pickServiceLink(servicePath, root)
+	if !found {
+		t.Fatal("expected a link to be found")
+	}
+	if !strings.HasSuffix(link, "api-aaa.md") {
+		t.Fatalf("expected first alphabetical file, got %q", link)
+	}
+}
 
 func TestBuildServicesIndexMarkdownOrdersServicesBeforeLastRun(t *testing.T) {
 	buckets := []docBucket{

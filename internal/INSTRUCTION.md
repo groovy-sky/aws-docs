@@ -134,3 +134,5 @@ At the end of every non-`refresh-url` run, `persistDiscoveredSeeds` is called wi
 - For repeated transient fetch failures, inspect retry settings (`max_retries`) and request jitter settings (`min_request_delay_ms`, `max_request_delay_ms`).
 - For wrong output location, inspect `Mapper.RepoPath` and `mapServiceCode` mappings.
 - For root service listing issues, inspect `internal/write/services_index.go` link selection behavior.
+- For root service listing issues, inspect `internal/write/services_index.go` link selection behavior.
+- `pickServiceLink` selects a representative link for each service: it first checks for `index.md` at the service root or `latest/index.md`, then falls back to walking all markdown files. In the fallback, `welcome.md` files are preferred (shallowest depth first) over the first alphabetical file, since `welcome.md` is the standard AWS API reference entry page.

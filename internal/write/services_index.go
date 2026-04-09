@@ -135,13 +135,39 @@ func pickServiceLink(servicePath string, repoRoot string) (string, bool) {
 	if len(allMarkdown) == 0 {
 		return "", false
 	}
-	sort.Strings(allMarkdown)
+	return pickWelcomeOrFirst(allMarkdown, repoRoot)
+}
 
+// pickWelcomeOrFirst selects the shallowest welcome.md from the given markdown
+// paths when one exists, since welcome.md is the standard AWS API reference entry
+// page. When no welcome.md is present it falls back to the first alphabetical file.
+func pickWelcomeOrFirst(allMarkdown []string, repoRoot string) (string, bool) {
+	var welcomeFiles []string
+	for _, p := range allMarkdown {
+		if strings.EqualFold(filepath.Base(p), "welcome.md") {
+			welcomeFiles = append(welcomeFiles, p)
+		}
+	}
+	if len(welcomeFiles) > 0 {
+		sort.Slice(welcomeFiles, func(i, j int) bool {
+			di := strings.Count(welcomeFiles[i], string(filepath.Separator))
+			dj := strings.Count(welcomeFiles[j], string(filepath.Separator))
+			if di != dj {
+				return di < dj
+			}
+			return welcomeFiles[i] < welcomeFiles[j]
+		})
+		rel, err := filepath.Rel(repoRoot, welcomeFiles[0])
+		if err != nil {
+			return "", false
+		}
+		return slashify(rel), true
+	}
+	sort.Strings(allMarkdown)
 	rel, err := filepath.Rel(repoRoot, allMarkdown[0])
 	if err != nil {
 		return "", false
 	}
-
 	return slashify(rel), true
 }
 

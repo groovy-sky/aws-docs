@@ -1,0 +1,305 @@
+# Choose between REST APIs and HTTP APIs
+
+REST APIs and HTTP APIs are both RESTful API products. REST APIs support more
+features than HTTP APIs, while HTTP APIs are designed with minimal features so that they can be offered
+at a lower price. Choose REST APIs if you need features such as API keys, per-client throttling, request
+validation, AWS WAF integration, or private API endpoints. Choose HTTP APIs if you don't need the features
+included with REST APIs.
+
+The following sections summarize core features that are available in REST APIs and
+HTTP APIs. When necessary, additional links are provided to navigate between the REST API and
+HTTP API sections of the API Gateway Developer Guide.
+
+## Endpoint type
+
+The endpoint type refers to the endpoint that API Gateway creates for your API. For more information, see [API endpoint types for REST APIs in API Gateway](api-gateway-api-endpoint-types.md).
+
+Endpoint typesREST APIHTTP API
+
+[Edge-optimized](api-gateway-api-endpoint-types.md#api-gateway-api-endpoint-types-edge-optimized)
+
+Yes
+
+No
+
+[Regional](api-gateway-api-endpoint-types.md#api-gateway-api-endpoint-types-regional)
+
+Yes
+
+Yes
+
+[Private](api-gateway-api-endpoint-types.md#api-gateway-api-endpoint-types-private)
+
+Yes
+
+No
+
+## Security
+
+API Gateway provides a number of ways to protect your API from certain threats, like malicious actors or spikes in
+traffic. To learn more, see [Protect your REST APIs in API Gateway](rest-api-protect.md) and [Protect your HTTP APIs in API Gateway](http-api-protect.md).
+
+Security featuresREST APIHTTP API
+
+[Mutual TLS authentication](rest-api-mutual-tls.md)
+
+[Yes](rest-api-mutual-tls.md)
+
+[Yes](http-api-mutual-tls.md)
+
+[Certificates for backend authentication](getting-started-client-side-ssl-authentication.md)
+
+Yes
+
+No
+
+[AWS WAF](apigateway-control-access-aws-waf.md)
+
+Yes
+
+No
+
+## Authorization
+
+API Gateway supports multiple mechanisms for controlling and managing access to your API. For more information, see
+[Control and manage access to REST APIs in API Gateway](apigateway-control-access-to-api.md) and [Control and manage access to HTTP APIs in API Gateway](http-api-access-control.md).
+
+Authorization optionsREST APIHTTP API
+
+[IAM](permissions.md)
+
+[Yes](permissions.md)
+
+[Yes](http-api-access-control-iam.md)
+
+[Resource policies](apigateway-resource-policies.md)
+
+Yes
+
+No
+
+[Amazon Cognito](apigateway-integrate-with-cognito.md)
+
+Yes
+
+Yes 1
+
+[Custom authorization with an AWS Lambda function](apigateway-use-lambda-authorizer.md)
+
+[Yes](apigateway-use-lambda-authorizer.md)
+
+[Yes](http-api-lambda-authorizer.md)
+
+[JSON Web Token (JWT)](http-api-jwt-authorizer.md) 2
+
+No
+
+Yes
+
+1 You can use Amazon Cognito with a [JWT authorizer](http-api-jwt-authorizer.md).
+
+2 You can use a [Lambda authorizer](apigateway-use-lambda-authorizer.md) to validate JWTs for REST APIs.
+
+## API management
+
+Choose REST APIs if you need API management capabilities such as API keys and per-client rate limiting.
+For more information, see [Distribute your REST APIs to clients in API Gateway](rest-api-distribute.md), [Custom domain name for public REST APIs in API Gateway](how-to-custom-domains.md), and
+[Custom domain names for HTTP APIs in API Gateway](http-api-custom-domain-names.md).
+
+FeaturesREST APIHTTP API
+
+[Custom domains](how-to-custom-domains.md)
+
+[Yes](how-to-custom-domains.md)
+
+[Yes](http-api-custom-domain-names.md)
+
+[API keys](api-gateway-api-usage-plans.md)
+
+Yes
+
+No
+
+[Per-client rate limiting](api-gateway-request-throttling.md)
+
+Yes
+
+No
+
+[Per-client usage throttling](api-gateway-api-usage-plans.md)
+
+Yes
+
+No
+
+[Developer portal](apigateway-portals.md)
+
+Yes
+
+No
+
+## Development
+
+As you're developing your API Gateway API, you decide on a number of characteristics of your API. These
+characteristics depend on the use case of your API. For more information see [Develop REST APIs in API Gateway](rest-api-develop.md)
+and [Develop HTTP APIs in API Gateway](http-api-develop.md).
+
+FeaturesREST APIHTTP API
+
+[CORS configuration](how-to-cors.md)
+
+[Yes](how-to-cors.md)
+
+[Yes](http-api-cors.md)
+
+[Test invocations](how-to-test-method.md)
+
+Yes
+
+No
+
+[Caching](api-gateway-caching.md)
+
+Yes
+
+No
+
+[User-controlled deployments](how-to-deploy-api.md)
+
+[Yes](how-to-deploy-api.md)
+
+[Yes](http-api-stages.md)
+
+[Automatic deployments](http-api-stages.md)
+
+No
+
+Yes
+
+[Custom gateway responses](api-gateway-gatewayresponse-definition.md)
+
+Yes
+
+No
+
+[Canary release deployments](canary-release.md)
+
+Yes
+
+No
+
+[Request validation](api-gateway-method-request-validation.md)
+
+Yes
+
+No
+
+[Request parameter transformation](rest-api-data-transformations.md)
+
+[Yes](rest-api-data-transformations.md)
+
+[Yes](http-api-parameter-mapping.md)
+
+[Request body transformation](rest-api-data-transformations.md)
+
+Yes
+
+No
+
+## Monitoring
+
+API Gateway supports several options to log API requests and monitor your APIs. For more information, see [Monitor REST APIs in API Gateway](rest-api-monitor.md) and [Monitor HTTP APIs in API Gateway](http-api-monitor.md).
+
+FeatureREST APIHTTP API
+
+[Amazon CloudWatch metrics](monitoring-cloudwatch.md)
+
+[Yes](monitoring-cloudwatch.md)
+
+[Yes](http-api-metrics.md)
+
+[Access logs to CloudWatch Logs](set-up-logging.md)
+
+[Yes](set-up-logging.md)
+
+[Yes](http-api-logging.md)
+
+[Access logs to Amazon Data Firehose](apigateway-logging-to-kinesis.md)
+
+Yes
+
+No
+
+[Execution logs](set-up-logging.md)
+
+Yes
+
+No
+
+[AWS X-Ray tracing](apigateway-xray.md)
+
+Yes
+
+No
+
+## Integrations
+
+Integrations connect your API Gateway API to backend resources. For more information, see [Integrations for REST APIs in API Gateway](how-to-integration-settings.md) and [Create integrations for HTTP APIs in API Gateway](http-api-develop-integrations.md).
+
+FeatureREST APIHTTP API
+
+[Public HTTP endpoints](setup-http-integrations.md)
+
+[Yes](setup-http-integrations.md)
+
+[Yes](http-api-develop-integrations-http.md)
+
+[AWS services](api-gateway-api-integration-types.md)
+
+[Yes](api-gateway-api-integration-types.md)
+
+[Yes](http-api-develop-integrations-aws-services.md)
+
+[AWS Lambda functions](set-up-lambda-integrations.md)
+
+[Yes](set-up-lambda-integrations.md)
+
+[Yes](http-api-develop-integrations-lambda.md)
+
+[Private integrations with Network Load Balancers](set-up-private-integration.md)
+
+[Yes](set-up-private-integration.md)
+
+[Yes](http-api-develop-integrations-private.md)
+
+[Private integrations with Application Load Balancers](http-api-develop-integrations-private.md)
+
+[Yes](set-up-private-integration.md)
+
+Yes
+
+[Private integrations with AWS Cloud Map](http-api-develop-integrations-private.md)
+
+No
+
+Yes
+
+[Mock integrations](how-to-mock-integration.md)
+
+Yes
+
+No
+
+[Response streaming](response-transfer-mode.md)
+
+Yes
+
+No
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+API Gateway concepts
+
+Get started with the REST API console
+
+All content copied from https://docs.aws.amazon.com/.
