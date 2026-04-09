@@ -44,3 +44,25 @@ func TestRepoPathGeneralRootURL(t *testing.T) {
 		t.Fatalf("RepoPath = %q, want %q", got, want)
 	}
 }
+
+func TestRepoPathStripsQueryParameters(t *testing.T) {
+	mapper := NewMapper("docs")
+
+	// Query parameters should be stripped from the path mapping
+	got := mapper.RepoPath("https://docs.aws.amazon.com/ec2/latest/userguide/index.html?icmpid=docs_homepage_featuredsvcs")
+	want := "docs/services/ec2/latest/userguide/index.md"
+	if got != want {
+		t.Fatalf("RepoPath = %q, want %q", got, want)
+	}
+}
+
+func TestRepoPathStripsFragments(t *testing.T) {
+	mapper := NewMapper("docs")
+
+	// Fragments should also be stripped from the path mapping
+	got := mapper.RepoPath("https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html#section")
+	want := "docs/services/vpc/latest/userguide/what-is-amazon-vpc.md"
+	if got != want {
+		t.Fatalf("RepoPath = %q, want %q", got, want)
+	}
+}

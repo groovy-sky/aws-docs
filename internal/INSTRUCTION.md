@@ -104,6 +104,7 @@ Current redirect handling:
 
 ## URL to Path Mapping
 
+- `Mapper.RepoPath` parses URLs to extract only the path component, stripping query parameters and fragments before path mapping to ensure consistent repository paths.
 - Mapping classifies URLs into `docs/services`, `docs/reference`, `docs/reference/cli`, or `docs/general`.
 - Service bucket uses first path segment with specific overrides (for example `AWSEC2 -> ec2`).
 - Output filenames are slugified and normalized to `.md`.

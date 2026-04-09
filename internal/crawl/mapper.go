@@ -1,6 +1,7 @@
 package crawl
 
 import (
+	"net/url"
 	"path/filepath"
 	"regexp"
 	"strings"
@@ -17,8 +18,17 @@ func NewMapper(outputDir string) *Mapper {
 }
 
 func (m *Mapper) RepoPath(rawURL string) string {
-	cleaned := strings.TrimPrefix(rawURL, "https://docs.aws.amazon.com/")
-	cleaned = strings.TrimPrefix(cleaned, "http://docs.aws.amazon.com/")
+	// Parse URL to extract only the path (excluding query parameters and fragments)
+	parsed, err := url.Parse(rawURL)
+	var cleaned string
+	if err != nil {
+		// Fallback to old behavior if parsing fails
+		cleaned = strings.TrimPrefix(rawURL, "https://docs.aws.amazon.com/")
+		cleaned = strings.TrimPrefix(cleaned, "http://docs.aws.amazon.com/")
+	} else {
+		// Use the path component only, ignoring query and fragment
+		cleaned = strings.TrimPrefix(parsed.Path, "/")
+	}
 	segments := strings.Split(cleaned, "/")
 	if len(segments) == 0 || segments[0] == "" {
 		return filepath.Join(m.outputDir, "general", "index.md")
