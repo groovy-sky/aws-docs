@@ -20,7 +20,7 @@ Required: Yes
 
 The Amazon Resource Name (ARN) of IAM role that grants Amazon Redshift
 read-only access to Amazon S3. For more information, and for the polices that you
-attach to this role, see [Allow Amazon Redshift to access your Amazon AppFlow data in Amazon S3](../../../../services/appflow/latest/userguide/security-iam-service-role-policies-redshift-access-s3.md).
+attach to this role, see [Allow Amazon Redshift to access your Amazon AppFlow data in Amazon S3](../../../../services/appflow/latest/userguide/security-iam-service-role-policies.md#redshift-access-s3).
 
 Type: String
 
@@ -58,7 +58,7 @@ Required: No
 
 The Amazon Resource Name (ARN) of an IAM role that permits Amazon AppFlow to access your Amazon Redshift database through the Data API. For more
 information, and for the polices that you attach to this role, see [Allow Amazon AppFlow to access Amazon Redshift databases with the Data\
-API](../../../../services/appflow/latest/userguide/security-iam-service-role-policies-access-redshift.md).
+API](../../../../services/appflow/latest/userguide/security-iam-service-role-policies.md#access-redshift).
 
 Type: String
 
@@ -123,8 +123,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appflow-2020-08-23/redshiftconnectorprofileproperties.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 RedshiftConnectorProfileCredentials
 
 RedshiftDestinationProperties
+
+All content copied from https://docs.aws.amazon.com/.
