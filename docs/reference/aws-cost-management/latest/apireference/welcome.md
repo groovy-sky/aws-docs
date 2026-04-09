@@ -208,7 +208,7 @@ _Guide_.
 
 For more information about AWS Billing and Cost Management endpoints, see
 [AWS Billing and Cost Management\
-endpoints](../../../../general/general/latest/gr/billing.md) in the _Amazon Web Services General Reference_.
+endpoints](../../../../general/latest/gr/billing.md) in the _Amazon Web Services General Reference_.
 
 For more information about AWS Billing and Cost Management quotas, see
 [Quotas and restrictions](../../../../services/awsaccountbilling/latest/aboutv2/billing-limits.md) in the _AWS Billing User_
@@ -230,6 +230,8 @@ Service Endpoint
 
 - https://tax.us-east-1.amazonaws.com
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Actions
+
+All content copied from https://docs.aws.amazon.com/.
