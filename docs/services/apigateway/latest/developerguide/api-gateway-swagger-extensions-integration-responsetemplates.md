@@ -1,0 +1,31 @@
+# x-amazon-apigateway-integration.responseTemplates object
+
+Specifies mapping templates for a response payload of the specified MIME types.
+
+Property nameTypeDescription`MIME type``string`
+
+Specifies a mapping template to transform the integration response body to the method response body
+for a given MIME type. For information about creating a mapping template, see [Mapping template transformations for REST APIs in API Gateway](models-mappings.md). An example of the `MIME type` is
+`application/json`.
+
+## x-amazon-apigateway-integration.responseTemplate example
+
+The following example sets mapping templates for a request payload of the
+`application/json` and `application/xml` MIME types.
+
+```nohighlight
+
+"responseTemplates" : {
+    "application/json" : "#set ($root=$input.path('$')) { \"stage\": \"$root.name\", \"user-id\": \"$root.key\" }",
+    "application/xml" : "#set ($root=$input.path('$')) <stage>$root.name</stage> "
+}
+
+```
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+x-amazon-apigateway-integration.response
+
+x-amazon-apigateway-integration.responseParameters
+
+All content copied from https://docs.aws.amazon.com/.
