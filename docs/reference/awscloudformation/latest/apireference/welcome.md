@@ -112,7 +112,7 @@ Register privately: [DescribeTypeRegistration](api-describetyperegistration.md) 
 
 Publish: [DescribePublisher](api-describepublisher.md) \| [PublishType](api-publishtype.md) \| [RegisterPublisher](api-registerpublisher.md) \| [TestType](api-testtype.md)
 
-This document was last published on April 9, 2026.
+This document was last published on April 10, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

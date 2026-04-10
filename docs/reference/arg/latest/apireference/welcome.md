@@ -31,7 +31,7 @@ results
 
 - Searching AWS resources based on a resource query
 
-This document was last published on April 9, 2026.
+This document was last published on April 10, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
