@@ -1,0 +1,169 @@
+# RegisterOrganizationDelegatedAdmin
+
+Registers an organization’s member account as the CloudTrail [delegated administrator](../../../../services/awscloudtrail/latest/userguide/cloudtrail-delegated-administrator.md).
+
+## Request Syntax
+
+```nohighlight
+
+{
+   "MemberAccountId": "string"
+}
+```
+
+## Request Parameters
+
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+
+The request accepts the following data in JSON format.
+
+**[MemberAccountId](#API_RegisterOrganizationDelegatedAdmin_RequestSyntax)**
+
+An organization member account ID that you want to designate as a delegated
+administrator.
+
+Type: String
+
+Length Constraints: Minimum length of 12. Maximum length of 16.
+
+Pattern: `\d+`
+
+Required: Yes
+
+## Response Elements
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+
+**AccountNotFoundException**
+
+This exception is thrown when the specified account is not found or not part of an
+organization.
+
+HTTP Status Code: 400
+
+**AccountRegisteredException**
+
+This exception is thrown when the account is already registered as the CloudTrail
+delegated administrator.
+
+HTTP Status Code: 400
+
+**CannotDelegateManagementAccountException**
+
+This exception is thrown when the management account of an organization is registered as
+the CloudTrail delegated administrator.
+
+HTTP Status Code: 400
+
+**CloudTrailAccessNotEnabledException**
+
+This exception is thrown when trusted access has not been enabled between AWS CloudTrail and AWS Organizations. For more information, see [How to enable or disable trusted access](../../../../services/organizations/latest/userguide/orgs-integrate-services.md#orgs_how-to-enable-disable-trusted-access) in the _AWS Organizations User Guide_ and [Prepare For Creating a Trail For Your Organization](../../../../services/awscloudtrail/latest/userguide/creating-an-organizational-trail-prepare.md) in the _AWS CloudTrail User Guide_.
+
+HTTP Status Code: 400
+
+**ConflictException**
+
+This exception is thrown when the specified resource is not ready for an operation. This
+can occur when you try to run an operation on a resource before CloudTrail has time
+to fully load the resource, or because another operation is modifying the resource. If this exception occurs, wait a few minutes, and then try the
+operation again.
+
+HTTP Status Code: 400
+
+**DelegatedAdminAccountLimitExceededException**
+
+This exception is thrown when the maximum number of CloudTrail delegated
+administrators is reached.
+
+HTTP Status Code: 400
+
+**InsufficientDependencyServiceAccessPermissionException**
+
+This exception is thrown when the IAM identity that is used to create
+the organization resource lacks one or more required permissions for creating an
+organization resource in a required service.
+
+HTTP Status Code: 400
+
+**InsufficientIAMAccessPermissionException**
+
+The task can't be completed because you are signed in with an account that lacks permissions to view or create a service-linked role. Sign in with an account that has the required permissions and then try again.
+
+HTTP Status Code: 400
+
+**InvalidParameterException**
+
+The request includes a parameter that is not valid.
+
+HTTP Status Code: 400
+
+**NotOrganizationManagementAccountException**
+
+This exception is thrown when the account making the request is not the organization's
+management account.
+
+HTTP Status Code: 400
+
+**OperationNotPermittedException**
+
+This exception is thrown when the requested operation is not permitted.
+
+HTTP Status Code: 400
+
+**OrganizationNotInAllFeaturesModeException**
+
+This exception is thrown when AWS Organizations is not configured to support all
+features. All features must be enabled in Organizations to support creating an
+organization trail or event data store.
+
+HTTP Status Code: 400
+
+**OrganizationsNotInUseException**
+
+This exception is thrown when the request is made from an AWS account
+that is not a member of an organization. To make this request, sign in using the
+credentials of an account that belongs to an organization.
+
+HTTP Status Code: 400
+
+**UnsupportedOperationException**
+
+This exception is thrown when the requested operation is not supported.
+
+HTTP Status Code: 400
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/cloudtrail-2013-11-01/registerorganizationdelegatedadmin.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/cloudtrail-2013-11-01/registerorganizationdelegatedadmin.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/cloudtrail-2013-11-01/registerorganizationdelegatedadmin.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/cloudtrail-2013-11-01/registerorganizationdelegatedadmin.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudtrail-2013-11-01/registerorganizationdelegatedadmin.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/cloudtrail-2013-11-01/registerorganizationdelegatedadmin.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/cloudtrail-2013-11-01/registerorganizationdelegatedadmin.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/cloudtrail-2013-11-01/registerorganizationdelegatedadmin.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/cloudtrail-2013-11-01/registerorganizationdelegatedadmin.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudtrail-2013-11-01/registerorganizationdelegatedadmin.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+PutResourcePolicy
+
+RemoveTags
+
+All content copied from https://docs.aws.amazon.com/.
