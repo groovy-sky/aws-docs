@@ -9,7 +9,7 @@ type.
 - For modules, this includes determining if the module's model meets all necessary
 requirements.
 
-For more information, see [Testing your public extension before publishing](../../../../services/cloudformation-cli/latest/userguide/publish-extension-publish-extension-testing.md) in the
+For more information, see [Testing your public extension before publishing](../../../../services/cloudformation-cli/latest/userguide/publish-extension.md#publish-extension-testing) in the
 _AWS CloudFormation Command Line Interface (CLI) User Guide_.
 
 If you don't specify a version, CloudFormation uses the default version of the extension in
@@ -175,8 +175,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/testtype.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 StopStackSetOperation
 
 UpdateGeneratedTemplate
+
+All content copied from https://docs.aws.amazon.com/.

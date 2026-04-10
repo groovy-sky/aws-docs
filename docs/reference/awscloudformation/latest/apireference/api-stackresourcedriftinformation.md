@@ -49,8 +49,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/stackresourcedriftinformation.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 StackResourceDrift
 
 StackResourceDriftInformationSummary
+
+All content copied from https://docs.aws.amazon.com/.

@@ -16,7 +16,7 @@ It's strongly recommended that you use dynamic references to restrict sensitive
 configuration definitions, such as third-party credentials. For more information, see [Specify values stored in other services using dynamic references](../../../../services/cloudformation/latest/userguide/dynamic-references.md) in the
 _AWS CloudFormation User Guide_.
 
-For more information about setting the configuration data for resource types, see [Defining the account-level configuration of an extension](../../../../services/cloudformation-cli/latest/userguide/resource-type-model-resource-type-howto-configuration.md) in the
+For more information about setting the configuration data for resource types, see [Defining the account-level configuration of an extension](../../../../services/cloudformation-cli/latest/userguide/resource-type-model.md#resource-type-howto-configuration) in the
 _AWS CloudFormation Command Line Interface (CLI) User Guide_. For more information about setting the configuration
 data for Hooks, see the [CloudFormation Hooks User Guide](../../../../services/cloudformation-cli/latest/hooks-userguide/what-is-cloudformation-hooks.md).
 
@@ -163,8 +163,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/settypeconfiguration.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 SetStackPolicy
 
 SetTypeDefaultVersion
+
+All content copied from https://docs.aws.amazon.com/.

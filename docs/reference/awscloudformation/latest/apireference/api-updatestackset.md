@@ -515,8 +515,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/updatestackset.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 UpdateStackInstances
 
 UpdateTerminationProtection
+
+All content copied from https://docs.aws.amazon.com/.

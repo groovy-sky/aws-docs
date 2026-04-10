@@ -1,0 +1,113 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::ECS::DaemonTaskDefinition LinuxParameters
+
+The Linux-specific options that are applied to the container, such as Linux [KernelCapabilities](../../../../reference/amazonecs/latest/apireference/api-kernelcapabilities.md).
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "Capabilities" : KernelCapabilities,
+  "Devices" : [ Device, ... ],
+  "InitProcessEnabled" : Boolean,
+  "Tmpfs" : [ Tmpfs, ... ]
+}
+
+```
+
+### YAML
+
+```yaml
+
+  Capabilities:
+    KernelCapabilities
+  Devices:
+    - Device
+  InitProcessEnabled: Boolean
+  Tmpfs:
+    - Tmpfs
+
+```
+
+## Properties
+
+`Capabilities`
+
+The Linux capabilities for the container that are added to or dropped from the default
+configuration provided by Docker.
+
+###### Note
+
+For tasks that use the Fargate launch type, `capabilities` is supported
+for all platform versions but the `add` parameter is only supported if
+using platform version 1.4.0 or later.
+
+_Required_: No
+
+_Type_: [KernelCapabilities](aws-properties-ecs-daemontaskdefinition-kernelcapabilities.md)
+
+_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+
+`Devices`
+
+Any host devices to expose to the container. This parameter maps to
+`Devices` in the docker container create command and the
+`--device` option to docker run.
+
+###### Note
+
+If you're using tasks that use the Fargate launch type, the `devices`
+parameter isn't supported.
+
+_Required_: No
+
+_Type_: Array of [Device](aws-properties-ecs-daemontaskdefinition-device.md)
+
+_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+
+`InitProcessEnabled`
+
+Run an `init` process inside the container that forwards signals and reaps
+processes. This parameter maps to the `--init` option to docker run. This
+parameter requires version 1.25 of the Docker Remote API or greater on your container
+instance. To check the Docker Remote API version on your container instance, log in to
+your container instance and run the following command: `sudo docker version
+				--format '{{.Server.APIVersion}}'`
+
+_Required_: No
+
+_Type_: Boolean
+
+_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+
+`Tmpfs`
+
+The container path, mount options, and size (in MiB) of the tmpfs mount. This
+parameter maps to the `--tmpfs` option to docker run.
+
+###### Note
+
+If you're using tasks that use the Fargate launch type, the `tmpfs`
+parameter isn't supported.
+
+_Required_: No
+
+_Type_: [Array](aws-properties-ecs-daemontaskdefinition-tmpfs.md) of [Tmpfs](aws-properties-ecs-daemontaskdefinition-tmpfs.md)
+
+_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+KeyValuePair
+
+LogConfiguration
+
+All content copied from https://docs.aws.amazon.com/.

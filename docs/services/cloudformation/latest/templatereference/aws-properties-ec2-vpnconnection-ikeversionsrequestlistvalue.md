@@ -1,0 +1,51 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::EC2::VPNConnection IKEVersionsRequestListValue
+
+The IKE version that is permitted for the VPN tunnel.
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "Value" : String
+}
+
+```
+
+### YAML
+
+```yaml
+
+  Value: String
+
+```
+
+## Properties
+
+`Value`
+
+The IKE version.
+
+_Required_: No
+
+_Type_: String
+
+_Allowed values_: `ikev1 | ikev2`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+CloudwatchLogOptionsSpecification
+
+Phase1DHGroupNumbersRequestListValue
+
+All content copied from https://docs.aws.amazon.com/.

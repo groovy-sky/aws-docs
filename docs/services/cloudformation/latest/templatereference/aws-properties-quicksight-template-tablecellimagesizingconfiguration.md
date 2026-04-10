@@ -1,0 +1,51 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::QuickSight::Template TableCellImageSizingConfiguration
+
+The sizing options for the table image configuration.
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "TableCellImageScalingConfiguration" : String
+}
+
+```
+
+### YAML
+
+```yaml
+
+  TableCellImageScalingConfiguration: String
+
+```
+
+## Properties
+
+`TableCellImageScalingConfiguration`
+
+The cell scaling configuration of the sizing options for the table image configuration.
+
+_Required_: No
+
+_Type_: String
+
+_Allowed values_: `FIT_TO_CELL_HEIGHT | FIT_TO_CELL_WIDTH | DO_NOT_SCALE`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+TableCellConditionalFormatting
+
+TableCellStyle
+
+All content copied from https://docs.aws.amazon.com/.

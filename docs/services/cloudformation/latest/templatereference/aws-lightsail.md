@@ -1,0 +1,45 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# Amazon Lightsail
+
+**Resource types**
+
+- [AWS::Lightsail::Alarm](aws-resource-lightsail-alarm.md)
+
+- [AWS::Lightsail::Bucket](aws-resource-lightsail-bucket.md)
+
+- [AWS::Lightsail::Certificate](aws-resource-lightsail-certificate.md)
+
+- [AWS::Lightsail::Container](aws-resource-lightsail-container.md)
+
+- [AWS::Lightsail::Database](aws-resource-lightsail-database.md)
+
+- [AWS::Lightsail::DatabaseSnapshot](aws-resource-lightsail-databasesnapshot.md)
+
+- [AWS::Lightsail::Disk](aws-resource-lightsail-disk.md)
+
+- [AWS::Lightsail::DiskSnapshot](aws-resource-lightsail-disksnapshot.md)
+
+- [AWS::Lightsail::Distribution](aws-resource-lightsail-distribution.md)
+
+- [AWS::Lightsail::Domain](aws-resource-lightsail-domain.md)
+
+- [AWS::Lightsail::Instance](aws-resource-lightsail-instance.md)
+
+- [AWS::Lightsail::InstanceSnapshot](aws-resource-lightsail-instancesnapshot.md)
+
+- [AWS::Lightsail::LoadBalancer](aws-resource-lightsail-loadbalancer.md)
+
+- [AWS::Lightsail::LoadBalancerTlsCertificate](aws-resource-lightsail-loadbalancertlscertificate.md)
+
+- [AWS::Lightsail::StaticIp](aws-resource-lightsail-staticip.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Previous
+
+AWS::Lightsail::Alarm
+
+All content copied from https://docs.aws.amazon.com/.

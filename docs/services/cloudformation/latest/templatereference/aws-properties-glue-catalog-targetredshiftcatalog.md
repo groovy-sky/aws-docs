@@ -1,0 +1,49 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::Glue::Catalog TargetRedshiftCatalog
+
+A structure that describes a target catalog for resource linking.
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "CatalogArn" : String
+}
+
+```
+
+### YAML
+
+```yaml
+
+  CatalogArn: String
+
+```
+
+## Properties
+
+`CatalogArn`
+
+The Amazon Resource Name (ARN) of the catalog resource.
+
+_Required_: Yes
+
+_Type_: String
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Tag
+
+AWS::Glue::Classifier
+
+All content copied from https://docs.aws.amazon.com/.

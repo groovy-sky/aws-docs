@@ -112,8 +112,10 @@ Register privately: [DescribeTypeRegistration](api-describetyperegistration.md) 
 
 Publish: [DescribePublisher](api-describepublisher.md) \| [PublishType](api-publishtype.md) \| [RegisterPublisher](api-registerpublisher.md) \| [TestType](api-testtype.md)
 
-This document was last published on April 5, 2026.
+This document was last published on April 9, 2026.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Actions
+
+All content copied from https://docs.aws.amazon.com/.

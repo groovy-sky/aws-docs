@@ -23,7 +23,7 @@ name of one of the primary identifiers for the resource. (Primary identifiers ar
 the `primaryIdentifier` list in the resource schema.) The value is the value of that
 primary identifier. For example, for a `AWS::DynamoDB::Table` resource, the primary
 identifiers is `TableName` so the key-value pair could be `"TableName":
-    "MyDDBTable"`. For more information, see [primaryIdentifier](../../../../services/cloudformation-cli/latest/userguide/resource-type-schema-schema-properties-primaryidentifier.md) in the _AWS CloudFormation Command Line Interface (CLI) User Guide_.
+    "MyDDBTable"`. For more information, see [primaryIdentifier](../../../../services/cloudformation-cli/latest/userguide/resource-type-schema.md#schema-properties-primaryidentifier) in the _AWS CloudFormation Command Line Interface (CLI) User Guide_.
 
 Type: String to string map
 
@@ -52,8 +52,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/scannedresource.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ScanFilter
 
 ScannedResourceIdentifier
+
+All content copied from https://docs.aws.amazon.com/.

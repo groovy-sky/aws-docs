@@ -182,8 +182,10 @@ The following actions are supported:
 
 - [ValidateTemplate](api-validatetemplate.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Welcome
 
 ActivateOrganizationsAccess
+
+All content copied from https://docs.aws.amazon.com/.

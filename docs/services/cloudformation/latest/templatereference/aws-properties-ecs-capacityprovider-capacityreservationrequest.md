@@ -1,0 +1,77 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::ECS::CapacityProvider CapacityReservationRequest
+
+The Capacity Reservation configurations to be used when using the `RESERVED`
+capacity option type.
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "ReservationGroupArn" : String,
+  "ReservationPreference" : String
+}
+
+```
+
+### YAML
+
+```yaml
+
+  ReservationGroupArn: String
+  ReservationPreference: String
+
+```
+
+## Properties
+
+`ReservationGroupArn`
+
+The ARN of the Capacity Reservation resource group in which to run the instance.
+
+_Required_: No
+
+_Type_: String
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`ReservationPreference`
+
+The preference on when capacity reservations should be used.
+
+Valid values are:
+
+- `RESERVATIONS_ONLY` \- Exclusively launch instances into capacity reservations that
+match the instance requirements configured for the capacity provider. If none exist, instances will
+fail to provision.
+
+- `RESERVATIONS_FIRST` \- Prefer to launch instances into a capacity reservation if any
+exist that match the instance requirements configured for the capacity provider. If none exist,
+fall back to launching instances On-Demand.
+
+- `RESERVATIONS_EXCLUDED` \- Avoid using capacity reservations and launch exclusively
+On-Demand.
+
+_Required_: No
+
+_Type_: String
+
+_Allowed values_: `RESERVATIONS_ONLY | RESERVATIONS_FIRST | RESERVATIONS_EXCLUDED`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+BaselineEbsBandwidthMbpsRequest
+
+InfrastructureOptimization
+
+All content copied from https://docs.aws.amazon.com/.

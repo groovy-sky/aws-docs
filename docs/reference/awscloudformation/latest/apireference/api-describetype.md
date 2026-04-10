@@ -119,7 +119,7 @@ Pattern: `arn:aws[A-Za-z0-9-]{0,64}:cloudformation:[A-Za-z0-9-]{1,64}:([0-9]{12}
 
 Whether CloudFormation automatically updates the extension in this account and Region when a
 new _minor_ version is published by the extension publisher. Major versions
-released by the publisher must be manually updated. For more information, see [Automatically use new versions of extensions](../../../../services/cloudformation/latest/userguide/registry-public-registry-public-enable-auto.md) in the
+released by the publisher must be manually updated. For more information, see [Automatically use new versions of extensions](../../../../services/cloudformation/latest/userguide/registry-public.md#registry-public-enable-auto) in the
 _AWS CloudFormation User Guide_.
 
 Type: Boolean
@@ -277,7 +277,7 @@ of the public extension.
 
 If you specified a `TypeNameAlias` when enabling the extension in this account
 and Region, CloudFormation treats that alias as the extension's type name within the account and
-Region, not the type name of the public extension. For more information, see [Use aliases to refer to extensions](../../../../services/cloudformation/latest/userguide/registry-public-registry-public-enable-alias.md) in the
+Region, not the type name of the public extension. For more information, see [Use aliases to refer to extensions](../../../../services/cloudformation/latest/userguide/registry-public.md#registry-public-enable-alias) in the
 _AWS CloudFormation User Guide_.
 
 Type: String
@@ -546,8 +546,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/describetype.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeStackSetOperation
 
 DescribeTypeRegistration
+
+All content copied from https://docs.aws.amazon.com/.

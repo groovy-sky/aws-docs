@@ -1,0 +1,198 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::Location::Map MapConfiguration
+
+Specifies the map tile style selected from an available provider.
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "CustomLayers" : [ String, ... ],
+  "PoliticalView" : String,
+  "Style" : String
+}
+
+```
+
+### YAML
+
+```yaml
+
+  CustomLayers:
+    - String
+  PoliticalView: String
+  Style: String
+
+```
+
+## Properties
+
+`CustomLayers`
+
+Specifies the custom layers for the style. Leave unset to not enable any custom layer, or, for styles that support custom layers, you can enable layer(s), such as the `POI` layer for the VectorEsriNavigation style.
+
+###### Note
+
+Currenlty only `VectorEsriNavigation` supports CustomLayers.
+For more information, see [Custom Layers](../../../location/latest/developerguide/map-concepts.md#map-custom-layers).
+
+_Required_: No
+
+_Type_: Array of String
+
+_Minimum_: `1`
+
+_Maximum_: `100 | 10`
+
+_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+
+`PoliticalView`
+
+Specifies the map political view selected from an available data provider.
+
+_Required_: No
+
+_Type_: String
+
+_Pattern_: `^[A-Z]{3}$`
+
+_Minimum_: `3`
+
+_Maximum_: `3`
+
+_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+
+`Style`
+
+Specifies the map style selected from an available data provider.
+
+Valid [Esri map styles](../../../location/previous/developerguide/esri.md):
+
+- `VectorEsriDarkGrayCanvas` – The Esri Dark Gray Canvas map style. A
+vector basemap with a dark gray, neutral background with minimal colors, labels,
+and features that's designed to draw attention to your thematic content.
+
+- `RasterEsriImagery` – The Esri Imagery map style. A raster basemap
+that provides one meter or better satellite and aerial imagery in many parts of
+the world and lower resolution satellite imagery worldwide.
+
+- `VectorEsriLightGrayCanvas` – The Esri Light Gray Canvas map style,
+which provides a detailed vector basemap with a light gray, neutral background
+style with minimal colors, labels, and features that's designed to draw
+attention to your thematic content.
+
+- `VectorEsriTopographic` – The Esri Light map style, which provides
+a detailed vector basemap with a classic Esri map style.
+
+- `VectorEsriStreets` – The Esri Street Map style, which provides a
+detailed vector basemap for the world symbolized with a classic Esri street map
+style. The vector tile layer is similar in content and style to the World Street
+Map raster map.
+
+- `VectorEsriNavigation` – The Esri Navigation map style, which
+provides a detailed basemap for the world symbolized with a custom navigation
+map style that's designed for use during the day in mobile devices.
+
+Valid [HERE Technologies map styles](../../../location/previous/developerguide/here.md):
+
+- `VectorHereContrast` – The HERE Contrast (Berlin) map style is a
+high contrast detailed base map of the world that blends 3D and 2D
+rendering.
+
+###### Note
+
+The `VectorHereContrast` style has been renamed from
+`VectorHereBerlin`. `VectorHereBerlin` has been
+deprecated, but will continue to work in applications that use it.
+
+- `VectorHereExplore` – A default HERE map style containing a
+neutral, global map and its features including roads, buildings, landmarks, and
+water features. It also now includes a fully designed map of Japan.
+
+- `VectorHereExploreTruck` – A global map containing truck
+restrictions and attributes (e.g. width / height / HAZMAT) symbolized with
+highlighted segments and icons on top of HERE Explore to support use cases
+within transport and logistics.
+
+- `RasterHereExploreSatellite` – A global map containing high
+resolution satellite imagery.
+
+- `HybridHereExploreSatellite` – A global map displaying the road
+network, street names, and city labels over satellite imagery. This style will
+automatically retrieve both raster and vector tiles, and your charges will be
+based on total tiles retrieved.
+
+###### Note
+
+Hybrid styles use both vector and raster tiles when rendering the map that
+you see. This means that more tiles are retrieved than when using either
+vector or raster tiles alone. Your charges will include all tiles
+retrieved.
+
+Valid [GrabMaps map styles](../../../location/previous/developerguide/grab.md):
+
+- `VectorGrabStandardLight` – The Grab Standard Light map style
+provides a basemap with detailed land use coloring, area names, roads,
+landmarks, and points of interest covering Southeast Asia.
+
+- `VectorGrabStandardDark` – The Grab Standard Dark map style
+provides a dark variation of the standard basemap covering Southeast
+Asia.
+
+###### Note
+
+Grab provides maps only for countries in Southeast Asia, and is only available in
+the Asia Pacific (Singapore) Region ( `ap-southeast-1`). For more
+information, see [GrabMaps\
+countries and area covered](../../../location/previous/developerguide/grab.md#grab-coverage-area).
+
+Valid [Open Data map\
+styles](../../../location/previous/developerguide/open-data.md):
+
+- `VectorOpenDataStandardLight` – The Open Data Standard Light map
+style provides a detailed basemap for the world suitable for website and mobile
+application use. The map includes highways major roads, minor roads, railways,
+water features, cities, parks, landmarks, building footprints, and
+administrative boundaries.
+
+- `VectorOpenDataStandardDark` – Open Data Standard Dark is a
+dark-themed map style that provides a detailed basemap for the world suitable
+for website and mobile application use. The map includes highways major roads,
+minor roads, railways, water features, cities, parks, landmarks, building
+footprints, and administrative boundaries.
+
+- `VectorOpenDataVisualizationLight` – The Open Data Visualization
+Light map style is a light-themed style with muted colors and fewer features
+that aids in understanding overlaid data.
+
+- `VectorOpenDataVisualizationDark` – The Open Data Visualization
+Dark map style is a dark-themed style with muted colors and fewer features that
+aids in understanding overlaid data.
+
+_Required_: Yes
+
+_Type_: String
+
+_Pattern_: `^[-._\w]+$`
+
+_Minimum_: `1`
+
+_Maximum_: `100`
+
+_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+AWS::Location::Map
+
+Tag
+
+All content copied from https://docs.aws.amazon.com/.

@@ -53,7 +53,7 @@ the extension.
 For CloudFormation to assume the specified execution role, the role must contain a trust
 relationship with the CloudFormation service principal
 ( `resources.cloudformation.amazonaws.com`). For more information about adding
-trust relationships, see [Modifying a role trust policy](../../../../services/iam/latest/userguide/roles-managingrole-editing-console-roles-managingrole-edit-trust-policy.md) in the _AWS Identity and Access Management User_
+trust relationships, see [Modifying a role trust policy](../../../../services/iam/latest/userguide/roles-managingrole-editing-console.md#roles-managingrole_edit-trust-policy) in the _AWS Identity and Access Management User_
 _Guide_.
 
 If your extension calls AWS APIs in any of its handlers, you must create an
@@ -241,8 +241,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/registertype.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 RegisterPublisher
 
 RollbackStack
+
+All content copied from https://docs.aws.amazon.com/.

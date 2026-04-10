@@ -5,7 +5,7 @@ Public extensions are available for use by all CloudFormation users. This publis
 your account in all AWS Regions.
 
 For information about requirements for registering as a public extension publisher, see
-[Prerequisite: Registering your account to publish CloudFormation extensions](../../../../services/cloudformation-cli/latest/userguide/publish-extension-publish-extension-prereqs.md) in the
+[Prerequisite: Registering your account to publish CloudFormation extensions](../../../../services/cloudformation-cli/latest/userguide/publish-extension.md#publish-extension-prereqs) in the
 _AWS CloudFormation Command Line Interface (CLI) User Guide_.
 
 ## Request Parameters
@@ -29,7 +29,7 @@ Required: No
 If you are using a Bitbucket or GitHub account for identity verification, the Amazon
 Resource Name (ARN) for your connection to that account.
 
-For more information, see [Prerequisite: Registering your account to publish CloudFormation extensions](../../../../services/cloudformation-cli/latest/userguide/publish-extension-publish-extension-prereqs.md) in the
+For more information, see [Prerequisite: Registering your account to publish CloudFormation extensions](../../../../services/cloudformation-cli/latest/userguide/publish-extension.md#publish-extension-prereqs) in the
 _AWS CloudFormation Command Line Interface (CLI) User Guide_.
 
 Type: String
@@ -92,8 +92,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/registerpublisher.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 RecordHandlerProgress
 
 RegisterType
+
+All content copied from https://docs.aws.amazon.com/.

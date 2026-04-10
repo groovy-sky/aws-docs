@@ -1,0 +1,47 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS Service Catalog
+
+**Resource types**
+
+- [AWS::ServiceCatalog::AcceptedPortfolioShare](aws-resource-servicecatalog-acceptedportfolioshare.md)
+
+- [AWS::ServiceCatalog::CloudFormationProduct](aws-resource-servicecatalog-cloudformationproduct.md)
+
+- [AWS::ServiceCatalog::CloudFormationProvisionedProduct](aws-resource-servicecatalog-cloudformationprovisionedproduct.md)
+
+- [AWS::ServiceCatalog::LaunchNotificationConstraint](aws-resource-servicecatalog-launchnotificationconstraint.md)
+
+- [AWS::ServiceCatalog::LaunchRoleConstraint](aws-resource-servicecatalog-launchroleconstraint.md)
+
+- [AWS::ServiceCatalog::LaunchTemplateConstraint](aws-resource-servicecatalog-launchtemplateconstraint.md)
+
+- [AWS::ServiceCatalog::Portfolio](aws-resource-servicecatalog-portfolio.md)
+
+- [AWS::ServiceCatalog::PortfolioPrincipalAssociation](aws-resource-servicecatalog-portfolioprincipalassociation.md)
+
+- [AWS::ServiceCatalog::PortfolioProductAssociation](aws-resource-servicecatalog-portfolioproductassociation.md)
+
+- [AWS::ServiceCatalog::PortfolioShare](aws-resource-servicecatalog-portfolioshare.md)
+
+- [AWS::ServiceCatalog::ResourceUpdateConstraint](aws-resource-servicecatalog-resourceupdateconstraint.md)
+
+- [AWS::ServiceCatalog::ServiceAction](aws-resource-servicecatalog-serviceaction.md)
+
+- [AWS::ServiceCatalog::ServiceActionAssociation](aws-resource-servicecatalog-serviceactionassociation.md)
+
+- [AWS::ServiceCatalog::StackSetConstraint](aws-resource-servicecatalog-stacksetconstraint.md)
+
+- [AWS::ServiceCatalog::TagOption](aws-resource-servicecatalog-tagoption.md)
+
+- [AWS::ServiceCatalog::TagOptionAssociation](aws-resource-servicecatalog-tagoptionassociation.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Previous
+
+AWS::ServiceCatalog::AcceptedPortfolioShare
+
+All content copied from https://docs.aws.amazon.com/.

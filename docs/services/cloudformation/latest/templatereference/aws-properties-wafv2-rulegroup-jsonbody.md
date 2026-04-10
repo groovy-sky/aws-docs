@@ -1,0 +1,199 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::WAFv2::RuleGroup JsonBody
+
+Inspect the body of the web request as JSON. The body immediately follows the request
+headers.
+
+This is used to indicate the web request component to inspect, in the [FieldToMatch](../userguide/aws-properties-wafv2-rulegroup-regexpatternsetreferencestatement.md#cfn-wafv2-rulegroup-regexpatternsetreferencestatement-fieldtomatch) specification.
+
+Use the specifications in this object to indicate which parts of the JSON body to
+inspect using the rule's inspection criteria. AWS WAF inspects only the parts of the JSON
+that result from the matches that you indicate.
+
+Example JSON: `"JsonBody": { "MatchPattern": { "All": {} }, "MatchScope": "ALL"
+            }`
+
+For additional information about this request component option, see [JSON body](../../../waf/latest/developerguide/waf-rule-statement-fields-list.md#waf-rule-statement-request-component-json-body)
+in the _AWS WAF Developer Guide_.
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "InvalidFallbackBehavior" : String,
+  "MatchPattern" : JsonMatchPattern,
+  "MatchScope" : String,
+  "OversizeHandling" : String
+}
+
+```
+
+### YAML
+
+```yaml
+
+  InvalidFallbackBehavior: String
+  MatchPattern:
+    JsonMatchPattern
+  MatchScope: String
+  OversizeHandling: String
+
+```
+
+## Properties
+
+`InvalidFallbackBehavior`
+
+What AWS WAF should do if it fails to completely parse the JSON body. The options are
+the following:
+
+- `EVALUATE_AS_STRING` \- Inspect the body as plain text. AWS WAF
+applies the text transformations and inspection criteria that you defined for the
+JSON inspection to the body text string.
+
+- `MATCH` \- Treat the web request as matching the rule statement.
+AWS WAF applies the rule action to the request.
+
+- `NO_MATCH` \- Treat the web request as not matching the rule
+statement.
+
+If you don't provide this setting, AWS WAF parses and evaluates the content only up to the
+first parsing failure that it encounters.
+
+###### Note
+
+AWS WAF parsing doesn't fully validate the input JSON string, so parsing can succeed even for invalid JSON. When
+parsing succeeds, AWS WAF doesn't apply the fallback behavior. For more information,
+see [JSON body](../../../waf/latest/developerguide/waf-rule-statement-fields-list.md#waf-rule-statement-request-component-json-body)
+in the _AWS WAF Developer Guide_.
+
+_Required_: No
+
+_Type_: String
+
+_Allowed values_: `MATCH | NO_MATCH | EVALUATE_AS_STRING`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`MatchPattern`
+
+The patterns to look for in the JSON body. AWS WAF inspects the results of these
+pattern matches against the rule inspection criteria.
+
+_Required_: Yes
+
+_Type_: [JsonMatchPattern](aws-properties-wafv2-rulegroup-jsonmatchpattern.md)
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`MatchScope`
+
+The parts of the JSON to match against using the `MatchPattern`. If you
+specify `ALL`, AWS WAF matches against keys and values.
+
+`All` does not require a match to be found in the keys
+and a match to be found in the values. It requires a match to be found in the keys
+or the values or both. To require a match in the keys and in the values, use a logical `AND` statement
+to combine two match rules, one that inspects the keys and another that inspects the values.
+
+_Required_: Yes
+
+_Type_: String
+
+_Allowed values_: `ALL | KEY | VALUE`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`OversizeHandling`
+
+What AWS WAF should do if the body is larger than AWS WAF can inspect.
+
+AWS WAF does not support inspecting the entire contents of the web request body if the body
+exceeds the limit for the resource type. When a web request body is larger than the limit, the underlying host service
+only forwards the contents that are within the limit to AWS WAF for inspection.
+
+- For Application Load Balancer and AWS AppSync, the limit is fixed at 8 KB (8,192 bytes).
+
+- For CloudFront, API Gateway, Amazon Cognito, App Runner, and Verified Access, the default limit is 16 KB (16,384 bytes), and
+you can increase the limit for each resource type in the web ACL `AssociationConfig`, for additional processing fees.
+
+- For AWS Amplify, use the CloudFront limit.
+
+The options for oversize handling are the following:
+
+- `CONTINUE` \- Inspect the available body contents normally, according to the rule inspection criteria.
+
+- `MATCH` \- Treat the web request as matching the rule statement. AWS WAF
+applies the rule action to the request.
+
+- `NO_MATCH` \- Treat the web request as not matching the rule
+statement.
+
+You can combine the `MATCH` or `NO_MATCH`
+settings for oversize handling with your rule and web ACL action settings, so that you block any request whose body is over the limit.
+
+Default: `CONTINUE`
+
+_Required_: No
+
+_Type_: String
+
+_Allowed values_: `CONTINUE | MATCH | NO_MATCH`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+## Examples
+
+### Set the JSON body specification
+
+The following shows an example JSON body field to match specification.
+
+#### YAML
+
+```yaml
+
+FieldToMatch:
+  JsonBody:
+    MatchPattern:
+      IncludedPaths:
+      - "/dogs/0/name"
+      - "/cats/0/name"
+    MatchScope: ALL
+    InvalidFallbackBehavior: EVALUATE_AS_STRING
+    OversizeHandling: MATCH
+```
+
+#### JSON
+
+```json
+
+"FieldToMatch": {
+  "JsonBody": {
+    "MatchPattern": {
+      "IncludedPaths": [
+        "/dogs/0/name",
+        "/cats/0/name"
+      ]
+    },
+    "MatchScope": "ALL",
+    "InvalidFallbackBehavior": "EVALUATE_AS_STRING",
+    "OversizeHandling": "MATCH"
+  }
+}
+```
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+JA4Fingerprint
+
+JsonMatchPattern
+
+All content copied from https://docs.aws.amazon.com/.

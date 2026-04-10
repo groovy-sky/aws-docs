@@ -1,0 +1,102 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::QuickSight::Analysis ParameterDateTimePickerControl
+
+A control from a date parameter that specifies date and time.
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "DisplayOptions" : DateTimePickerControlDisplayOptions,
+  "ParameterControlId" : String,
+  "SourceParameterName" : String,
+  "Title" : String
+}
+
+```
+
+### YAML
+
+```yaml
+
+  DisplayOptions:
+    DateTimePickerControlDisplayOptions
+  ParameterControlId: String
+  SourceParameterName: String
+  Title: String
+
+```
+
+## Properties
+
+`DisplayOptions`
+
+The display options of a control.
+
+_Required_: No
+
+_Type_: [DateTimePickerControlDisplayOptions](aws-properties-quicksight-analysis-datetimepickercontroldisplayoptions.md)
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`ParameterControlId`
+
+The ID of the `ParameterDateTimePickerControl`.
+
+_Required_: Yes
+
+_Type_: String
+
+_Pattern_: `^[\w\-]+$`
+
+_Minimum_: `1`
+
+_Maximum_: `512`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`SourceParameterName`
+
+The name of the `ParameterDateTimePickerControl`.
+
+_Required_: Yes
+
+_Type_: String
+
+_Pattern_: `^[a-zA-Z0-9]+$`
+
+_Minimum_: `1`
+
+_Maximum_: `2048`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`Title`
+
+The title of the `ParameterDateTimePickerControl`.
+
+_Required_: Yes
+
+_Type_: String
+
+_Minimum_: `1`
+
+_Maximum_: `2048`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+ParameterControl
+
+ParameterDeclaration
+
+All content copied from https://docs.aws.amazon.com/.

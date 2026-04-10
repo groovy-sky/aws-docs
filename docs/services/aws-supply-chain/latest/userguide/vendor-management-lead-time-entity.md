@@ -1,0 +1,215 @@
+# vendor\_lead\_time
+
+**Primary key (PK)**
+
+The table below lists the colum names that are uniquely identified in the data entity.
+
+NameColumnvendor\_lead\_timevendor\_tpartner\_id, product\_id, product\_group\_id, site\_id, region\_id, eff\_start\_date, eff\_end\_date
+
+The table below lists the column names supported by the data entity:
+
+ColumnData typeRequiredDescription
+
+company\_id2
+
+string
+
+No
+
+Company ID.
+
+vendor\_tpartner\_id2
+
+string
+
+Yes
+
+Trading partner ID of the vendor.
+
+product\_id2
+
+string
+
+Yes1
+
+Product ID.
+
+product\_group\_id2
+
+string
+
+Yes1
+
+Used if lead time is set at product-group level.
+
+site\_id2
+
+string
+
+Yes1
+
+Site where this product is being supplied.
+
+region\_id2
+
+string
+
+Yes1
+
+Used if lead time is set at geographical region level. Site
+level values will override this value.
+
+planned\_lead\_time
+
+double
+
+No
+
+Planned lead time from vendor into company's site.
+
+planned\_lead\_time\_dev
+
+double
+
+No
+
+Standard deviation of lead time.
+
+actual\_lead\_time\_mean
+
+double
+
+No
+
+Field to store actual lead time computed from transactional
+data.
+
+actual\_lead\_time\_sd
+
+double
+
+No
+
+Standard deviation of actual lead time.
+
+actual\_p50
+
+double
+
+No
+
+50th percentile of actual lead time.
+
+actual\_p90
+
+double
+
+No
+
+90th percentile of actual lead time.
+
+shipping\_cost
+
+double
+
+No
+
+Inbound shipping cost from vendor to company.
+
+cost\_uom
+
+string
+
+No
+
+Unit of measure of shipping cost.
+
+we\_pay
+
+string
+
+No
+
+Yes or No indicator. Yes if company pays for inbound shipping,
+and No if vendor pays for shipping.
+
+eff\_start\_date
+
+timestamp
+
+Yes1
+
+Date and time from when this record is effective.
+
+eff\_end\_date
+
+timestamp
+
+Yes1
+
+Date and time till when this record is effective.
+
+sap\_eina\_\_infnr
+
+string
+
+No
+
+Record on number of purchases. Predicate key for SAP mapping. Upsert key for EINE.
+
+source\_site\_id 2
+
+string
+
+No
+
+Site from where the inbound shipment is originated.
+
+trans\_mode
+
+string
+
+No
+
+Transportation mode. For example, ship, water, truck, or rail.
+
+sourcestringNoSource of data.
+
+source\_event\_id
+
+string
+
+No
+
+ID of the event created in the source system.
+
+source\_update\_dttm
+
+timestamp
+
+No
+
+Date time stamp of the update made in the source
+system.
+
+1You must enter a value. When you ingest data from SAP
+or EDI, the default values for string and timestamp date type values are
+SCN\_RESERVED\_NO\_VALUE\_PROVIDED for _string_; and for
+_timestamp_, 1900-01-01 00:00:00 for start date, and
+9999-12-31 23:59:59 for end date.
+
+2Foreign key
+
+**Foreign key (FK)**
+
+The table below lists the columns with the associated foreign key.
+
+ColumnCategoryFK/Data entityFK/Columnsite\_idNetworksiteidsource\_site\_idNetworksiteidcompany\_idOrganizationcompanyidregion\_idOrganizationgeographyidvendor\_tpartner\_idOrganizationtrading\_partneridproduct\_group\_idProductproduct\_hierarchyidproduct\_idProductproduct\_idid
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+vendor\_product
+
+vendor\_holiday
+
+All content copied from https://docs.aws.amazon.com/.
