@@ -8,9 +8,9 @@ publishDir = 'public'
 
 # Clean URLs
 [permalinks]
-  reference = '/reference/:sections[1:]/:contentbasename/'
-  services = '/services/:sections[1:]/:contentbasename/'
-  general = '/general/:sections[1:]/:contentbasename/'
+  reference = '/reference/:sections/:contentbasename/'
+  services = '/services/:sections/:contentbasename/'
+  general = '/general/:sections/:contentbasename/'
 
 # Output formats for search
 [outputs]

@@ -26,7 +26,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.125.0
+      HUGO_VERSION: 0.147.0
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -43,6 +43,35 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+
+      - name: Normalize markdown leading dashes for Hugo
+        run: |
+          set -euo pipefail
+
+          fixed=0
+          while IFS= read -r -d '' file; do
+            first_line=""
+            IFS= read -r first_line < "$file" || true
+
+            if [ "$first_line" = "---" ]; then
+              # Keep valid YAML front matter intact (opening and closing delimiters).
+              if awk 'NR > 1 && $0 == "---" { found=1; exit } END { exit(found ? 0 : 1) }' "$file"; then
+                continue
+              fi
+            fi
+
+            if [ "${first_line#- }" != "$first_line" ] || [ "$first_line" = "---" ]; then
+              tmp_file="$(mktemp)"
+              {
+                printf '<!-- hugo-normalized-leading-dash -->\n'
+                cat "$file"
+              } > "$tmp_file"
+              mv "$tmp_file" "$file"
+              fixed=$((fixed + 1))
+            fi
+          done < <(find docs -type f -name '*.md' -print0)
+
+          echo "Normalized $fixed markdown files"
 
       - name: Build with Hugo
         run: |
