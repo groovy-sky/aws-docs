@@ -1,0 +1,22 @@
+# x-amazon-apigateway-endpoint-access-mode
+
+Specifies a the endpoint access mode for a REST API or custom domain name. To learn more about
+endpoint access mode, see [Endpoint access mode](apigateway-security-policies.md#apigateway-security-policies-endpoint-access-mode).
+
+## `x-amazon-apigateway-endpoint-access-mode` example
+
+The following example specifies
+the endpoint access mode to strict.
+
+```nohighlight
+
+"x-amazon-apigateway-endpoint-access-mode": "STRICT"
+```
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+x-amazon-apigateway-documentation
+
+x-amazon-apigateway-endpoint-configuration
+
+All content copied from https://docs.aws.amazon.com/.

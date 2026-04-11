@@ -1,0 +1,57 @@
+# PostgreSQL replication methods for blue/green deployments
+
+Amazon RDS for PostgreSQL primarily uses physical replication for blue/green deployments. However,
+if you request a major version upgrade when you create the blue/green deployment, and your
+source DB instance runs one of the PostgreSQL versions listed in the table below, Amazon RDS uses logical
+replication instead.
+
+The following table outlines when Amazon RDS uses physical versus logical replication for
+PostgreSQL blue/green deployments.
+
+Source PostgreSQL DB instance versionUpgrade action in blue/green deploymentReplication method
+
+- 16.1 and all higher major and minor versions
+
+- 15.4 and higher 15 versions
+
+- 14.9 and higher 14 versions
+
+- 13.12 and higher 13 versions
+
+- 12.16 and higher 12 versions
+
+- 11.21 and higher 11 versions
+
+Major version upgrade
+
+(green instance on higher major engine version than
+blue)
+
+Logical replicationAll supported versionsMinor version upgrade, or no upgrade
+
+(green instance on same major engine
+version as blue)
+
+Physical replication
+
+###### Note
+
+Major version upgrades are not supported for blue/green deployments with source
+RDS for PostgreSQL versions 15.3 and lower, 14.8 and lower, 13.11 and lower, 12.15 and lower, or
+11.20 and lower.
+
+For information about the limitations of blue/green deployments that use physical and
+logical replication, see the following sections:
+
+- [RDS for PostgreSQL limitations for blue/green deployments with physical replication](blue-green-deployments-considerations.md#blue-green-deployments-limitations-postgres-physical)
+
+- [RDS for PostgreSQL limitations for blue/green deployments with logical replication](blue-green-deployments-considerations.md#blue-green-deployments-limitations-postgres-logical)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Best practices
+
+Creating a blue/green
+deployment
+
+All content copied from https://docs.aws.amazon.com/.

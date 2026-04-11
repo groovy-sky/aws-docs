@@ -1,0 +1,153 @@
+# Use `GetObjectTagging` with a CLI
+
+The following code examples show how to use `GetObjectTagging`.
+
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in
+context in the following code example:
+
+- [Get started with tags](s3-example-s3-scenario-tagging-section.md)
+
+CLI
+
+**AWS CLI**
+
+**To retrieve the tags attached to an object**
+
+The following `get-object-tagging` example retrieves the values for the specified key from the specified object.
+
+```nohighlight
+
+aws s3api get-object-tagging \
+    --bucket amzn-s3-demo-bucket \
+    --key doc1.rtf
+
+```
+
+Output:
+
+```nohighlight
+
+{
+    "TagSet": [
+        {
+            "Value": "confidential",
+            "Key": "designation"
+        }
+    ]
+}
+```
+
+The following `get-object-tagging` example tries to retrieve the tag sets of the object `doc2.rtf`, which has no tags.
+
+```nohighlight
+
+aws s3api get-object-tagging \
+    --bucket amzn-s3-demo-bucket \
+    --key doc2.rtf
+
+```
+
+Output:
+
+```nohighlight
+
+{
+    "TagSet": []
+}
+```
+
+The following `get-object-tagging` example retrieves the tag sets of the object `doc3.rtf`, which has multiple tags.
+
+```nohighlight
+
+aws s3api get-object-tagging \
+    --bucket amzn-s3-demo-bucket \
+    --key doc3.rtf
+
+```
+
+Output:
+
+```nohighlight
+
+{
+    "TagSet": [
+        {
+            "Value": "confidential",
+            "Key": "designation"
+        },
+        {
+            "Value": "finance",
+            "Key": "department"
+        },
+        {
+            "Value": "payroll",
+            "Key": "team"
+        }
+    ]
+}
+```
+
+- For API details, see
+[GetObjectTagging](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object-tagging.html)
+in _AWS CLI Command Reference_.
+
+PowerShell
+
+**Tools for PowerShell V4**
+
+**Example 1: The sample returns the tags associated with the object present on the given S3 bucket.**
+
+```powershell
+
+Get-S3ObjectTagSet -Key 'testfile.txt' -BucketName 'amzn-s3-demo-bucket'
+
+```
+
+**Output:**
+
+```nohighlight
+
+Key  Value
+---  -----
+test value
+```
+
+- For API details, see
+[GetObjectTagging](../../../powershell/v4/reference.md)
+in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
+
+**Tools for PowerShell V5**
+
+**Example 1: The sample returns the tags associated with the object present on the given S3 bucket.**
+
+```powershell
+
+Get-S3ObjectTagSet -Key 'testfile.txt' -BucketName 'amzn-s3-demo-bucket'
+
+```
+
+**Output:**
+
+```nohighlight
+
+Key  Value
+---  -----
+test value
+```
+
+- For API details, see
+[GetObjectTagging](../../../powershell/v5/reference.md)
+in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
+
+For a complete list of AWS SDK developer guides and code examples, see
+[Developing with Amazon S3 using the AWS SDKs](../../../../reference/amazons3/latest/api/sdk-general-information-section.md).
+This topic also includes information about getting started and details about previous SDK versions.
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+GetObjectRetention
+
+GetPublicAccessBlock
+
+All content copied from https://docs.aws.amazon.com/.

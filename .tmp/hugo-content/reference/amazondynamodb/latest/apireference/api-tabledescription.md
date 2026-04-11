@@ -1,0 +1,482 @@
+# TableDescription
+
+Represents the properties of a table.
+
+## Contents
+
+###### Note
+
+In the following list, the required parameters are described first.
+
+**ArchivalSummary**
+
+Contains information about the table archive.
+
+Type: [ArchivalSummary](api-archivalsummary.md) object
+
+Required: No
+
+**AttributeDefinitions**
+
+An array of `AttributeDefinition` objects. Each of these objects describes
+one attribute in the table and index key schema.
+
+Each `AttributeDefinition` object in this array is composed of:
+
+- `AttributeName` \- The name of the attribute.
+
+- `AttributeType` \- The data type for the attribute.
+
+Type: Array of [AttributeDefinition](api-attributedefinition.md) objects
+
+Required: No
+
+**BillingModeSummary**
+
+Contains the details for the read/write capacity mode.
+
+Type: [BillingModeSummary](api-billingmodesummary.md) object
+
+Required: No
+
+**CreationDateTime**
+
+The date and time when the table was created, in [UNIX epoch time](http://www.epochconverter.com/) format.
+
+Type: Timestamp
+
+Required: No
+
+**DeletionProtectionEnabled**
+
+Indicates whether deletion protection is enabled (true) or disabled (false) on the
+table.
+
+Type: Boolean
+
+Required: No
+
+**GlobalSecondaryIndexes**
+
+The global secondary indexes, if any, on the table. Each index is scoped to a given
+partition key value. Each element is composed of:
+
+- `Backfilling` \- If true, then the index is currently in the
+backfilling phase. Backfilling occurs only when a new global secondary index is
+added to the table. It is the process by which DynamoDB populates the new index
+with data from the table. (This attribute does not appear for indexes that were
+created during a `CreateTable` operation.)
+
+You can delete an index that is being created during the
+`Backfilling` phase when `IndexStatus` is set to
+CREATING and `Backfilling` is true. You can't delete the index that
+is being created when `IndexStatus` is set to CREATING and
+`Backfilling` is false. (This attribute does not appear for
+indexes that were created during a `CreateTable` operation.)
+
+- `IndexName` \- The name of the global secondary index.
+
+- `IndexSizeBytes` \- The total size of the global secondary index, in
+bytes. DynamoDB updates this value approximately every six hours. Recent changes
+might not be reflected in this value.
+
+- `IndexStatus` \- The current status of the global secondary
+index:
+
+- `CREATING` \- The index is being created.
+
+- `UPDATING` \- The index is being updated.
+
+- `DELETING` \- The index is being deleted.
+
+- `ACTIVE` \- The index is ready for use.
+
+- `ItemCount` \- The number of items in the global secondary index.
+DynamoDB updates this value approximately every six hours. Recent changes might
+not be reflected in this value.
+
+- `KeySchema` \- Specifies the complete index key schema. The attribute
+names in the key schema must be between 1 and 255 characters (inclusive). The
+key schema must begin with the same partition key as the table.
+
+- `Projection` \- Specifies attributes that are copied (projected) from
+the table into the index. These are in addition to the primary key attributes
+and index key attributes, which are automatically projected. Each attribute
+specification is composed of:
+
+- `ProjectionType` \- One of the following:
+
+- `KEYS_ONLY` \- Only the index and primary keys are
+projected into the index.
+
+- `INCLUDE` \- In addition to the attributes described
+in `KEYS_ONLY`, the secondary index will include
+other non-key attributes that you specify.
+
+- `ALL` \- All of the table attributes are projected
+into the index.
+
+- `NonKeyAttributes` \- A list of one or more non-key attribute
+names that are projected into the secondary index. The total count of
+attributes provided in `NonKeyAttributes`, summed across all
+of the secondary indexes, must not exceed 100. If you project the same
+attribute into two different indexes, this counts as two distinct
+attributes when determining the total. This limit only applies when you
+specify the ProjectionType of `INCLUDE`. You still can
+specify the ProjectionType of `ALL` to project all attributes
+from the source table, even if the table has more than 100
+attributes.
+
+- `ProvisionedThroughput` \- The provisioned throughput settings for the
+global secondary index, consisting of read and write capacity units, along with
+data about increases and decreases.
+
+If the table is in the `DELETING` state, no information about indexes will
+be returned.
+
+Type: Array of [GlobalSecondaryIndexDescription](api-globalsecondaryindexdescription.md) objects
+
+Required: No
+
+**GlobalTableSettingsReplicationMode**
+
+Indicates one of the settings synchronization modes for the global table:
+
+- `ENABLED`: Indicates that the settings synchronization mode for the global table
+is enabled.
+
+- `DISABLED`: Indicates that the settings synchronization mode for the global table is
+disabled.
+
+- `ENABLED_WITH_OVERRIDES`: This mode is set by default for a same account global table.
+Indicates that certain global table settings can be overridden.
+
+Type: String
+
+Valid Values: `ENABLED | DISABLED | ENABLED_WITH_OVERRIDES`
+
+Required: No
+
+**GlobalTableVersion**
+
+Represents the version of [global tables](../../../../services/dynamodb/latest/developerguide/globaltables.md)
+in use, if the table is replicated across AWS Regions.
+
+Type: String
+
+Required: No
+
+**GlobalTableWitnesses**
+
+The witness Region and its current status in the MRSC global table. Only one witness
+Region can be configured per MRSC global table.
+
+Type: Array of [GlobalTableWitnessDescription](api-globaltablewitnessdescription.md) objects
+
+Required: No
+
+**ItemCount**
+
+The number of items in the specified table. DynamoDB updates this value approximately
+every six hours. Recent changes might not be reflected in this value.
+
+Type: Long
+
+Required: No
+
+**KeySchema**
+
+The primary key structure for the table. Each `KeySchemaElement` consists
+of:
+
+- `AttributeName` \- The name of the attribute.
+
+- `KeyType` \- The role of the attribute:
+
+- `HASH` \- partition key
+
+- `RANGE` \- sort key
+
+###### Note
+
+The partition key of an item is also known as its _hash_
+_attribute_. The term "hash attribute" derives from DynamoDB's
+usage of an internal hash function to evenly distribute data items across
+partitions, based on their partition key values.
+
+The sort key of an item is also known as its _range_
+_attribute_. The term "range attribute" derives from the way
+DynamoDB stores items with the same partition key physically close together,
+in sorted order by the sort key value.
+
+For more information about primary keys, see [Primary Key](../../../../services/dynamodb/latest/developerguide/datamodel.md#DataModelPrimaryKey) in the _Amazon DynamoDB Developer_
+_Guide_.
+
+Type: Array of [KeySchemaElement](api-keyschemaelement.md) objects
+
+Array Members: Minimum number of 1 item.
+
+Required: No
+
+**LatestStreamArn**
+
+The Amazon Resource Name (ARN) that uniquely identifies the latest stream for this
+table.
+
+Type: String
+
+Length Constraints: Minimum length of 37. Maximum length of 1024.
+
+Required: No
+
+**LatestStreamLabel**
+
+A timestamp, in ISO 8601 format, for this stream.
+
+Note that `LatestStreamLabel` is not a unique identifier for the stream,
+because it is possible that a stream from another table might have the same timestamp.
+However, the combination of the following three elements is guaranteed to be
+unique:
+
+- AWS customer ID
+
+- Table name
+
+- `StreamLabel`
+
+Type: String
+
+Required: No
+
+**LocalSecondaryIndexes**
+
+Represents one or more local secondary indexes on the table. Each index is scoped to a
+given partition key value. Tables with one or more local secondary indexes are subject
+to an item collection size limit, where the amount of data within a given item
+collection cannot exceed 10 GB. Each element is composed of:
+
+- `IndexName` \- The name of the local secondary index.
+
+- `KeySchema` \- Specifies the complete index key schema. The attribute
+names in the key schema must be between 1 and 255 characters (inclusive). The
+key schema must begin with the same partition key as the table.
+
+- `Projection` \- Specifies attributes that are copied (projected) from
+the table into the index. These are in addition to the primary key attributes
+and index key attributes, which are automatically projected. Each attribute
+specification is composed of:
+
+- `ProjectionType` \- One of the following:
+
+- `KEYS_ONLY` \- Only the index and primary keys are
+projected into the index.
+
+- `INCLUDE` \- Only the specified table attributes are
+projected into the index. The list of projected attributes is in
+`NonKeyAttributes`.
+
+- `ALL` \- All of the table attributes are projected
+into the index.
+
+- `NonKeyAttributes` \- A list of one or more non-key attribute
+names that are projected into the secondary index. The total count of
+attributes provided in `NonKeyAttributes`, summed across all
+of the secondary indexes, must not exceed 100. If you project the same
+attribute into two different indexes, this counts as two distinct
+attributes when determining the total. This limit only applies when you
+specify the ProjectionType of `INCLUDE`. You still can
+specify the ProjectionType of `ALL` to project all attributes
+from the source table, even if the table has more than 100
+attributes.
+
+- `IndexSizeBytes` \- Represents the total size of the index, in bytes.
+DynamoDB updates this value approximately every six hours. Recent changes might
+not be reflected in this value.
+
+- `ItemCount` \- Represents the number of items in the index. DynamoDB
+updates this value approximately every six hours. Recent changes might not be
+reflected in this value.
+
+If the table is in the `DELETING` state, no information about indexes will
+be returned.
+
+Type: Array of [LocalSecondaryIndexDescription](api-localsecondaryindexdescription.md) objects
+
+Required: No
+
+**MultiRegionConsistency**
+
+Indicates one of the following consistency modes for a global table:
+
+- `EVENTUAL`: Indicates that the global table is configured for
+multi-Region eventual consistency (MREC).
+
+- `STRONG`: Indicates that the global table is configured for
+multi-Region strong consistency (MRSC).
+
+If you don't specify this field, the global table consistency mode defaults to
+`EVENTUAL`. For more information about global tables consistency modes,
+see [Consistency modes](../../../../services/v2globaltables-howitworks/index.md#V2globaltables_HowItWorks.consistency-modes) in DynamoDB developer guide.
+
+Type: String
+
+Valid Values: `EVENTUAL | STRONG`
+
+Required: No
+
+**OnDemandThroughput**
+
+The maximum number of read and write units for the specified on-demand table. If you
+use this parameter, you must specify `MaxReadRequestUnits`,
+`MaxWriteRequestUnits`, or both.
+
+Type: [OnDemandThroughput](api-ondemandthroughput.md) object
+
+Required: No
+
+**ProvisionedThroughput**
+
+The provisioned throughput settings for the table, consisting of read and write
+capacity units, along with data about increases and decreases.
+
+Type: [ProvisionedThroughputDescription](api-provisionedthroughputdescription.md) object
+
+Required: No
+
+**Replicas**
+
+Represents replicas of the table.
+
+Type: Array of [ReplicaDescription](api-replicadescription.md) objects
+
+Required: No
+
+**RestoreSummary**
+
+Contains details for the restore.
+
+Type: [RestoreSummary](api-restoresummary.md) object
+
+Required: No
+
+**SSEDescription**
+
+The description of the server-side encryption status on the specified table.
+
+Type: [SSEDescription](api-ssedescription.md) object
+
+Required: No
+
+**StreamSpecification**
+
+The current DynamoDB Streams configuration for the table.
+
+Type: [StreamSpecification](api-streamspecification.md) object
+
+Required: No
+
+**TableArn**
+
+The Amazon Resource Name (ARN) that uniquely identifies the table.
+
+Type: String
+
+Required: No
+
+**TableClassSummary**
+
+Contains details of the table class.
+
+Type: [TableClassSummary](api-tableclasssummary.md) object
+
+Required: No
+
+**TableId**
+
+Unique identifier for the table for which the backup was created.
+
+Type: String
+
+Pattern: `[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}`
+
+Required: No
+
+**TableName**
+
+The name of the table.
+
+Type: String
+
+Length Constraints: Minimum length of 3. Maximum length of 255.
+
+Pattern: `[a-zA-Z0-9_.-]+`
+
+Required: No
+
+**TableSizeBytes**
+
+The total size of the specified table, in bytes. DynamoDB updates this value
+approximately every six hours. Recent changes might not be reflected in this
+value.
+
+Type: Long
+
+Required: No
+
+**TableStatus**
+
+The current state of the table:
+
+- `CREATING` \- The table is being created.
+
+- `UPDATING` \- The table/index configuration is being updated. The
+table/index remains available for data operations when
+`UPDATING`.
+
+- `DELETING` \- The table is being deleted.
+
+- `ACTIVE` \- The table is ready for use.
+
+- `INACCESSIBLE_ENCRYPTION_CREDENTIALS` \- The AWS KMS key
+used to encrypt the table in inaccessible. Table operations may fail due to
+failure to use the AWS KMS key. DynamoDB will initiate the
+table archival process when a table's AWS KMS key remains
+inaccessible for more than seven days.
+
+- `ARCHIVING` \- The table is being archived. Operations are not allowed
+until archival is complete.
+
+- `ARCHIVED` \- The table has been archived. See the ArchivalReason for
+more information.
+
+Type: String
+
+Valid Values: `CREATING | UPDATING | DELETING | ACTIVE | INACCESSIBLE_ENCRYPTION_CREDENTIALS | ARCHIVING | ARCHIVED | REPLICATION_NOT_AUTHORIZED`
+
+Required: No
+
+**WarmThroughput**
+
+Describes the warm throughput value of the base table.
+
+Type: [TableWarmThroughputDescription](api-tablewarmthroughputdescription.md) object
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/dynamodb-2012-08-10/tabledescription.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/dynamodb-2012-08-10/tabledescription.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/tabledescription.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+TableCreationParameters
+
+TableWarmThroughputDescription
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,0 +1,97 @@
+# RouteServerEndpoint
+
+Describes a route server endpoint and its properties.
+
+A route server endpoint is an AWS-managed component inside a subnet that facilitates [BGP (Border Gateway Protocol)](https://en.wikipedia.org/wiki/Border_Gateway_Protocol) connections between your route server and your BGP peers.
+
+## Contents
+
+**eniAddress**
+
+The IP address of the Elastic network interface for the endpoint.
+
+Type: String
+
+Required: No
+
+**eniId**
+
+The ID of the Elastic network interface for the endpoint.
+
+Type: String
+
+Required: No
+
+**failureReason**
+
+The reason for any failure in endpoint creation or operation.
+
+Type: String
+
+Required: No
+
+**routeServerEndpointId**
+
+The unique identifier of the route server endpoint.
+
+Type: String
+
+Required: No
+
+**routeServerId**
+
+The ID of the route server associated with this endpoint.
+
+Type: String
+
+Required: No
+
+**state**
+
+The current state of the route server endpoint.
+
+Type: String
+
+Valid Values: `pending | available | deleting | deleted | failing | failed | delete-failed`
+
+Required: No
+
+**subnetId**
+
+The ID of the subnet to place the route server endpoint into.
+
+Type: String
+
+Required: No
+
+**TagSet.N**
+
+Any tags assigned to the route server endpoint.
+
+Type: Array of [Tag](api-tag.md) objects
+
+Required: No
+
+**vpcId**
+
+The ID of the VPC containing the endpoint.
+
+Type: String
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/routeserverendpoint.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/routeserverendpoint.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/routeserverendpoint.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+RouteServerBgpStatus
+
+RouteServerPeer

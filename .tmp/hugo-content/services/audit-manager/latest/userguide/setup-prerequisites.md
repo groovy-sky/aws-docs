@@ -1,0 +1,139 @@
+AWS Audit Manager will no longer be open to new customers starting
+April 30, 2026. If you would like to use Audit Manager, sign up prior to that date. Existing customers
+can continue to use the service as normal. For more information, see
+[AWS Audit Manager availability change](audit-manager-availability-change.md).
+
+# Prerequisites for setting up AWS Audit Manager
+
+Before you can use AWS Audit Manager, you must make sure that you have properly set up your
+AWS account and user permissions.
+
+This page outlines the necessary steps to create an AWS account (if needed),
+configure an administrative user, and grant the permissions required to access and
+enable Audit Manager.
+
+###### Tasks
+
+1. [Sign up for an AWS account](#sign-up-for-aws)
+
+2. [Create a user with administrative access](#create-an-admin)
+
+3. [Add the required permissions to access and enable Audit Manager](#attach-IAM)
+
+###### Important
+
+If you’re already set up with AWS and IAM, you can skip tasks 1 and 2.
+However, you must complete task 3 to ensure that you have the required permissions
+to set up Audit Manager.
+
+## Sign up for an AWS account
+
+If you do not have an AWS account, complete the following steps to create one.
+
+###### To sign up for an AWS account
+
+1. Open [https://portal.aws.amazon.com/billing/signup](https://portal.aws.amazon.com/billing/signup).
+
+2. Follow the online instructions.
+
+Part of the sign-up procedure involves receiving a phone call or text message and entering
+    a verification code on the phone keypad.
+
+When you sign up for an AWS account, an _AWS account root user_ is created. The root user has access to all AWS services
+    and resources in the account. As a security best practice, assign administrative access to a user, and use only the root user to perform [tasks that require root user access](../../../iam/latest/userguide/id-root-user.md#root-user-tasks).
+
+AWS sends you a confirmation email after the sign-up process is
+complete. At any time, you can view your current account activity and manage your account by
+going to [https://aws.amazon.com/](https://aws.amazon.com/) and choosing **My**
+**Account**.
+
+## Create a user with administrative access
+
+After you sign up for an AWS account, secure your AWS account root user, enable AWS IAM Identity Center, and create an administrative user so that you
+don't use the root user for everyday tasks.
+
+###### Secure your AWS account root user
+
+1. Sign in to the [AWS Management Console](https://console.aws.amazon.com/) as the account owner by choosing **Root user** and entering your AWS account email address. On the next page, enter your password.
+
+For help signing in by using root user, see [Signing in as the root user](../../../signin/latest/userguide/console-sign-in-tutorials.md#introduction-to-root-user-sign-in-tutorial) in the _AWS Sign-In User Guide_.
+
+2. Turn on multi-factor authentication (MFA) for your root user.
+
+For instructions, see [Enable a virtual MFA device for your AWS account root user (console)](../../../iam/latest/userguide/enable-virt-mfa-for-root.md) in the _IAM User Guide_.
+
+###### Create a user with administrative access
+
+1. Enable IAM Identity Center.
+
+For instructions, see [Enabling\
+    AWS IAM Identity Center](../../../singlesignon/latest/userguide/get-set-up-for-idc.md) in the
+    _AWS IAM Identity Center User Guide_.
+
+2. In IAM Identity Center, grant administrative access to a user.
+
+For a tutorial about using the IAM Identity Center directory as your identity source, see [Configure user access with the default IAM Identity Center directory](../../../singlesignon/latest/userguide/quick-start-default-idc.md) in the
+    _AWS IAM Identity Center User Guide_.
+
+###### Sign in as the user with administrative access
+
+- To sign in with your IAM Identity Center user, use the sign-in URL that was sent to your email address when you created the IAM Identity Center user.
+
+For help signing in using an IAM Identity Center user, see [Signing in to the AWS access portal](../../../signin/latest/userguide/iam-id-center-sign-in-tutorial.md) in the _AWS Sign-In User Guide_.
+
+###### Assign access to additional users
+
+1. In IAM Identity Center, create a permission set that follows the best practice of applying least-privilege permissions.
+
+For instructions, see [Create a permission set](../../../singlesignon/latest/userguide/get-started-create-a-permission-set.md) in the _AWS IAM Identity Center User Guide_.
+
+2. Assign users to a group, and then assign single sign-on access to the group.
+
+For instructions, see [Add groups](../../../singlesignon/latest/userguide/addgroups.md) in the _AWS IAM Identity Center User Guide_.
+
+## Add the required permissions to access and enable Audit Manager
+
+You must give users the required permissions to enable Audit Manager. For users who need
+full access to Audit Manager, use the [AWSAuditManagerAdministratorAccess](../../../aws-managed-policy/latest/reference/awsauditmanageradministratoraccess.md) managed policy. This is an AWS
+managed policy that’s available in your AWS account, and it’s the recommended
+policy for Audit Manager administrators.
+
+###### Tip
+
+As a security best practice, we recommend that you get started with AWS
+managed policies and then move toward least-privilege permissions. AWS managed
+policies grant permissions for many common use cases. However, keep in mind that
+because AWS managed policies are available for use by all AWS customers,
+they might not grant least-privilege permissions for your specific use cases. As
+a result, we recommend that you reduce permissions further by defining [customer managed policies](../../../iam/latest/userguide/access-policies-managed-vs-inline.md#customer-managed-policies) that are specific to
+your use cases. For more information, see [AWS managed policies](../../../iam/latest/userguide/access-policies-managed-vs-inline.md#aws-managed-policies) in the _AWS Identity and Access Management User Guide._
+
+To provide access, add permissions to your users, groups, or roles:
+
+- Users and groups in AWS IAM Identity Center:
+
+Create a permission set. Follow the instructions in [Create a permission set](../../../singlesignon/latest/userguide/howtocreatepermissionset.md) in the _AWS IAM Identity Center User Guide_.
+
+- Users managed in IAM through an identity provider:
+
+Create a role for identity federation. Follow the instructions in [Create a role for a third-party identity provider (federation)](../../../iam/latest/userguide/id-roles-create-for-idp.md)
+in the _IAM User Guide_.
+
+- IAM users:
+
+- Create a role that your user can assume. Follow the instructions in [Create a role for an IAM user](../../../iam/latest/userguide/id-roles-create-for-user.md) in the _IAM User Guide_.
+
+- (Not recommended) Attach a policy directly to a user or add a user to a user group. Follow the instructions in [Adding permissions to a user (console)](../../../iam/latest/userguide/id-users-change-permissions.md#users_change_permissions-add-console) in the _IAM User Guide_.
+
+## Next steps
+
+Now that you've set up your AWS account and granted the required permissions,
+you're ready to enable Audit Manager. For step-by-step instructions, see [Enabling AWS Audit Manager](setup-audit-manager.md).
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Setting up
+
+Enabling Audit Manager
+
+All content copied from https://docs.aws.amazon.com/.

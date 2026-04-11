@@ -1,0 +1,64 @@
+# CustomDomain
+
+Describes a custom domain that's associated with an AWS App Runner service.
+
+## Contents
+
+**DomainName**
+
+An associated custom domain endpoint. It can be a root domain (for example, `example.com`), a subdomain (for example,
+`login.example.com` or `admin.login.example.com`), or a wildcard (for example, `*.example.com`).
+
+Type: String
+
+Length Constraints: Minimum length of 1. Maximum length of 255.
+
+Pattern: `[A-Za-z0-9*.-]{1,255}`
+
+Required: Yes
+
+**EnableWWWSubdomain**
+
+When `true`, the subdomain `www.DomainName
+                  ` is associated with the App Runner service in addition to the base
+domain.
+
+Type: Boolean
+
+Required: Yes
+
+**Status**
+
+The current state of the domain name association.
+
+Type: String
+
+Valid Values: `CREATING | CREATE_FAILED | ACTIVE | DELETING | DELETE_FAILED | PENDING_CERTIFICATE_DNS_VALIDATION | BINDING_CERTIFICATE`
+
+Required: Yes
+
+**CertificateValidationRecords**
+
+A list of certificate CNAME records that's used for this domain name.
+
+Type: Array of [CertificateValidationRecord](api-certificatevalidationrecord.md) objects
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/apprunner-2020-05-15/customdomain.md)
+
+- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/apprunner-2020-05-15/customdomain.md)
+
+- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/apprunner-2020-05-15/customdomain.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+ConnectionSummary
+
+EgressConfiguration
+
+All content copied from https://docs.aws.amazon.com/.

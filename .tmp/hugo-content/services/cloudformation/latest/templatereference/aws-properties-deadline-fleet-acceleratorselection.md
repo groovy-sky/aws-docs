@@ -1,0 +1,106 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::Deadline::Fleet AcceleratorSelection
+
+Describes a specific GPU accelerator required for an Amazon Elastic Compute Cloud worker host.
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "Name" : String,
+  "Runtime" : String
+}
+
+```
+
+### YAML
+
+```yaml
+
+  Name: String
+  Runtime: String
+
+```
+
+## Properties
+
+`Name`
+
+The name of the chip used by the GPU accelerator.
+
+The available GPU accelerators are:
+
+- `t4` \- NVIDIA T4 Tensor Core GPU (16 GiB memory)
+
+- `a10g` \- NVIDIA A10G Tensor Core GPU (24 GiB memory)
+
+- `l4` \- NVIDIA L4 Tensor Core GPU (24 GiB memory)
+
+- `l40s` \- NVIDIA L40S Tensor Core GPU (48 GiB memory)
+
+_Required_: Yes
+
+_Type_: String
+
+_Allowed values_: `t4 | a10g | l4 | l40s`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`Runtime`
+
+Specifies the runtime driver to use for the GPU accelerator. You must use the same
+runtime for all GPUs in a fleet.
+
+You can choose from the following runtimes:
+
+- `latest` \- Use the latest runtime available for the chip. If you
+specify `latest` and a new version of the runtime is released, the new
+version of the runtime is used.
+
+- `grid:r570` \- [NVIDIA vGPU software 18](https://docs.nvidia.com/vgpu/18.0/index.html)
+
+- `grid:r535` \- [NVIDIA vGPU software 16](https://docs.nvidia.com/vgpu/16.0/index.html)
+
+If you don't specify a runtime, AWS Deadline Cloud uses `latest` as the default. However,
+if you have multiple accelerators and specify `latest` for some and leave others
+blank, AWS Deadline Cloud raises an exception.
+
+###### Important
+
+Not all runtimes are compatible with all accelerator types:
+
+- `t4` and `a10g`: Support all runtimes ( `grid:r570`, `grid:r535`)
+
+- `l4` and `l40s`: Only support `grid:r570` and newer
+
+All accelerators in a fleet must use the same runtime version. You cannot mix different runtime versions within a single fleet.
+
+###### Note
+
+When you specify `latest`, it resolves to `grid:r570` for all currently supported accelerators.
+
+_Required_: No
+
+_Type_: String
+
+_Minimum_: `1`
+
+_Maximum_: `100`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+AcceleratorCountRange
+
+AcceleratorTotalMemoryMiBRange
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,0 +1,171 @@
+# DescribeElasticGpus
+
+###### Note
+
+Amazon Elastic Graphics reached end of life on January 8, 2024.
+
+Describes the Elastic Graphics accelerator associated with your instances.
+
+## Request Parameters
+
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+
+**DryRun**
+
+Checks whether you have the required permissions for the action, without actually making the request,
+and provides an error response. If you have the required permissions, the error response is `DryRunOperation`.
+Otherwise, it is `UnauthorizedOperation`.
+
+Type: Boolean
+
+Required: No
+
+**ElasticGpuId.N**
+
+The Elastic Graphics accelerator IDs.
+
+Type: Array of strings
+
+Required: No
+
+**Filter.N**
+
+The filters.
+
+- `availability-zone` \- The Availability Zone in which the
+Elastic Graphics accelerator resides.
+
+- `elastic-gpu-health` \- The status of the Elastic Graphics accelerator
+( `OK` \| `IMPAIRED`).
+
+- `elastic-gpu-state` \- The state of the Elastic Graphics accelerator
+( `ATTACHED`).
+
+- `elastic-gpu-type` \- The type of Elastic Graphics accelerator; for example,
+`eg1.medium`.
+
+- `instance-id` \- The ID of the instance to which the
+Elastic Graphics accelerator is associated.
+
+Type: Array of [Filter](api-filter.md) objects
+
+Required: No
+
+**MaxResults**
+
+The maximum number of results to return in a single call. To retrieve the remaining
+results, make another call with the returned `NextToken` value. This value
+can be between 5 and 1000.
+
+Type: Integer
+
+Valid Range: Minimum value of 10. Maximum value of 1000.
+
+Required: No
+
+**NextToken**
+
+The token to request the next page of results.
+
+Type: String
+
+Required: No
+
+## Response Elements
+
+The following elements are returned by the service.
+
+**elasticGpuSet**
+
+Information about the Elastic Graphics accelerators.
+
+Type: Array of [ElasticGpus](api-elasticgpus.md) objects
+
+**maxResults**
+
+The total number of items to return. If the total number of items available is more
+than the value specified in max-items then a Next-Token will be provided in the output
+that you can use to resume pagination.
+
+Type: Integer
+
+**nextToken**
+
+The token to use to retrieve the next page of results. This value is
+`null` when there are no more results to return.
+
+Type: String
+
+**requestId**
+
+The ID of the request.
+
+Type: String
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+
+## Examples
+
+### Example
+
+This example describes all of the Elastic Graphics accelerators associated with your
+instances.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=DescribeElasticGpus
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```
+
+<DescribeElasticGpusResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+<requestId>450268ba-0e1d-4401-958e-9a3example</requestId>
+  <elasticGpuSet>
+     <item>
+        <elasticGpuId>egpu-0833fd743e7227123</elasticGpuId>
+        <availabilityZone>us-east-1a</availabilityZone>
+        <elasticGpuType>eg1.small</elasticGpuType>
+        <elasticGpuHealth>OK</elasticGpuHealth>
+        <elasticGpuState>ATTACHED</elasticGpuState>
+        <instanceId>i-1234567890abc1234</instanceId>
+      </item>
+  </elasticGpuSet>
+</DescribeElasticGpusResponse>
+```
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/describeelasticgpus.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/describeelasticgpus.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/describeelasticgpus.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/describeelasticgpus.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/describeelasticgpus.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/describeelasticgpus.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/describeelasticgpus.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/describeelasticgpus.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/describeelasticgpus.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describeelasticgpus.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+DescribeEgressOnlyInternetGateways
+
+DescribeExportImageTasks

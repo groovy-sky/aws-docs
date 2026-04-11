@@ -1,0 +1,186 @@
+# PurchaseHostReservation
+
+Purchase a reservation with configurations that match those of your Dedicated Host.
+You must have active Dedicated Hosts in your account before you purchase a reservation.
+This action results in the specified reservation being purchased and charged to your
+account.
+
+## Request Parameters
+
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+
+**ClientToken**
+
+Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensuring Idempotency](run-instance-idempotency.md).
+
+Type: String
+
+Required: No
+
+**CurrencyCode**
+
+The currency in which the `totalUpfrontPrice`, `LimitPrice`, and
+`totalHourlyPrice` amounts are specified. At this time, the only
+supported currency is `USD`.
+
+Type: String
+
+Valid Values: `USD`
+
+Required: No
+
+**HostIdSet.N**
+
+The IDs of the Dedicated Hosts with which the reservation will be associated.
+
+Type: Array of strings
+
+Required: Yes
+
+**LimitPrice**
+
+The specified limit is checked against the total upfront cost of the reservation
+(calculated as the offering's upfront cost multiplied by the host count). If the total
+upfront cost is greater than the specified price limit, the request fails. This is used
+to ensure that the purchase does not exceed the expected upfront cost of the purchase.
+At this time, the only supported currency is `USD`. For example, to indicate
+a limit price of USD 100, specify 100.00.
+
+Type: String
+
+Required: No
+
+**OfferingId**
+
+The ID of the offering.
+
+Type: String
+
+Required: Yes
+
+**TagSpecification.N**
+
+The tags to apply to the Dedicated Host Reservation during purchase.
+
+Type: Array of [TagSpecification](api-tagspecification.md) objects
+
+Required: No
+
+## Response Elements
+
+The following elements are returned by the service.
+
+**clientToken**
+
+Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensuring Idempotency](run-instance-idempotency.md).
+
+Type: String
+
+**currencyCode**
+
+The currency in which the `totalUpfrontPrice` and
+`totalHourlyPrice` amounts are specified. At this time, the only
+supported currency is `USD`.
+
+Type: String
+
+Valid Values: `USD`
+
+**purchase**
+
+Describes the details of the purchase.
+
+Type: Array of [Purchase](api-purchase.md) objects
+
+**requestId**
+
+The ID of the request.
+
+Type: String
+
+**totalHourlyPrice**
+
+The total hourly price of the reservation calculated per hour.
+
+Type: String
+
+**totalUpfrontPrice**
+
+The total amount charged to your account when you purchase the reservation.
+
+Type: String
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+
+## Examples
+
+### Example
+
+This example uses the same configuration information from [GetHostReservationPurchasePreview](api-gethostreservationpurchasepreview.md) to make the purchase and
+associate the offering with the specified Dedicated Host.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=PurchaseHostReservation
+&OfferingId=hro-0eb3541dght849c2d
+&HostIdSet=h-0fgr9ddb0ecd0a1cd
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```
+
+<PurchaseHostReservationResult xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+    <requestId>d4904fd9-84c3-b40d-gtyk-a9983EXAMPLE</requestId>
+        <purchase>
+            <item>
+                <duration>31536000</duration>
+                <upfrontPrice>7453.000</upfrontPrice>
+                <paymentOption>PartialUpfront</paymentOption>
+                <instanceFamily>m4</instanceFamily>
+                <hourlyPrice>0.850</hourlyPrice>
+                <hostIdSet>
+                    <item>h-0fgr9ddb0ecd0a1cd</item>
+                </hostIdSet>
+            </item>
+       </purchase>
+       <totalHourlyPrice>0.850<totalHourlyPrice>
+       <totalUpfrontPrice>7453.000<totalUpfrontPrice>
+</PurchaseHostReservationResult>
+
+```
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/purchasehostreservation.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/purchasehostreservation.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/purchasehostreservation.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/purchasehostreservation.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/purchasehostreservation.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/purchasehostreservation.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/purchasehostreservation.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/purchasehostreservation.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/purchasehostreservation.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/purchasehostreservation.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+PurchaseCapacityBlockExtension
+
+PurchaseReservedInstancesOffering

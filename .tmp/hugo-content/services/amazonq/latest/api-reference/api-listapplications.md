@@ -1,0 +1,163 @@
+# ListApplications
+
+Lists Amazon Q Business applications.
+
+###### Note
+
+Amazon Q Business applications may securely transmit data for processing across
+AWS Regions within your geography. For more information, see
+[Cross region\
+inference in Amazon Q Business](../qbusiness-ug/cross-region-inference.md).
+
+## Request Syntax
+
+```nohighlight
+
+GET /applications?maxResults=maxResults&nextToken=nextToken HTTP/1.1
+
+```
+
+## URI Request Parameters
+
+The request uses the following URI parameters.
+
+**[maxResults](#API_ListApplications_RequestSyntax)**
+
+The maximum number of Amazon Q Business applications to return.
+
+Valid Range: Minimum value of 1. Maximum value of 100.
+
+**[nextToken](#API_ListApplications_RequestSyntax)**
+
+If the `maxResults` response was incomplete because there is more data to
+retrieve, Amazon Q Business returns a pagination token in the response. You can use this
+pagination token to retrieve the next set of Amazon Q Business applications.
+
+Length Constraints: Minimum length of 1. Maximum length of 800.
+
+## Request Body
+
+The request does not have a request body.
+
+## Response Syntax
+
+```nohighlight
+
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "applications": [
+      {
+         "applicationId": "string",
+         "createdAt": number,
+         "displayName": "string",
+         "identityType": "string",
+         "quickSightConfiguration": {
+            "clientNamespace": "string"
+         },
+         "status": "string",
+         "updatedAt": number
+      }
+   ],
+   "nextToken": "string"
+}
+```
+
+## Response Elements
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+**[applications](#API_ListApplications_ResponseSyntax)**
+
+An array of summary information on the configuration of one or more Amazon Q Business
+applications.
+
+Type: Array of [Application](api-application.md) objects
+
+**[nextToken](#API_ListApplications_ResponseSyntax)**
+
+If the response is truncated, Amazon Q Business returns this token. You can use this token
+in a subsequent request to retrieve the next set of applications.
+
+Type: String
+
+Length Constraints: Minimum length of 1. Maximum length of 800.
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+
+**AccessDeniedException**
+
+You don't have access to perform this action. Make sure you have the required
+permission policies and user accounts and try again.
+
+HTTP Status Code: 403
+
+**InternalServerException**
+
+An issue occurred with the internal server used for your Amazon Q Business service. Wait
+some minutes and try again, or contact [Support](http://aws.amazon.com/contact-us) for help.
+
+HTTP Status Code: 500
+
+**ThrottlingException**
+
+The request was denied due to throttling. Reduce the number of requests and try
+again.
+
+HTTP Status Code: 429
+
+**ValidationException**
+
+The input doesn't meet the constraints set by the Amazon Q Business service. Provide the
+correct input and try again.
+
+**fields**
+
+The input field(s) that failed validation.
+
+**message**
+
+The message describing the `ValidationException`.
+
+**reason**
+
+The reason for the `ValidationException`.
+
+HTTP Status Code: 400
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../goto/cli2/qbusiness-2023-11-27/listapplications.md)
+
+- [AWS SDK for .NET V4](../../../../reference/goto/dotnetsdkv4/qbusiness-2023-11-27/listapplications.md)
+
+- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/qbusiness-2023-11-27/listapplications.md)
+
+- [AWS SDK for Go v2](../../../../reference/goto/sdkforgov2/qbusiness-2023-11-27/listapplications.md)
+
+- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/qbusiness-2023-11-27/listapplications.md)
+
+- [AWS SDK for JavaScript V3](../../../../reference/goto/sdkforjavascriptv3/qbusiness-2023-11-27/listapplications.md)
+
+- [AWS SDK for Kotlin](../../../../reference/goto/sdkforkotlin/qbusiness-2023-11-27/listapplications.md)
+
+- [AWS SDK for PHP V3](../../../../reference/goto/sdkforphpv3/qbusiness-2023-11-27/listapplications.md)
+
+- [AWS SDK for Python](../../../goto/boto3/qbusiness-2023-11-27/listapplications.md)
+
+- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/qbusiness-2023-11-27/listapplications.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+GetWebExperience
+
+ListAttachments
+
+All content copied from https://docs.aws.amazon.com/.

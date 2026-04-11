@@ -1,0 +1,320 @@
+# How Amazon RDS works with IAM
+
+Before you use IAM to manage access to Amazon RDS, you should understand what IAM
+features are available to use with Amazon RDS.
+
+The following table lists IAM features you can use with Amazon RDS:
+
+IAM featureAmazon RDS support
+
+[Identity-based policies](#security_iam_service-with-iam-id-based-policies)
+
+Yes
+
+[Resource-based policies](#security_iam_service-with-iam-resource-based-policies)
+
+No
+
+[Policy actions](#security_iam_service-with-iam-id-based-policies-actions)
+
+Yes
+
+[Policy resources](#security_iam_service-with-iam-id-based-policies-resources)
+
+Yes
+
+[Policy condition keys (service-specific)](#UsingWithRDS.IAM.Conditions)
+
+Yes
+
+[ACLs](#security_iam_service-with-iam-acls)
+
+No
+
+[Attribute-based access control (ABAC) (tags in\
+policies)](#security_iam_service-with-iam-tags)
+
+Yes
+
+[Temporary\
+credentials](#security_iam_service-with-iam-roles-tempcreds)
+
+Yes
+
+[Forward access sessions](#security_iam_service-with-iam-principal-permissions)
+
+Yes
+
+[Service\
+roles](#security_iam_service-with-iam-roles-service)
+
+Yes
+
+[Service-linked roles](#security_iam_service-with-iam-roles-service-linked)
+
+Yes
+
+To get a high-level view of how Amazon RDS and other AWS services work with IAM, see [AWS services that work with IAM](../../../iam/latest/userguide/reference-aws-services-that-work-with-iam.md) in the
+_IAM User Guide_.
+
+###### Topics
+
+- [Amazon RDS identity-based policies](#security_iam_service-with-iam-id-based-policies)
+
+- [Resource-based policies within Amazon RDS](#security_iam_service-with-iam-resource-based-policies)
+
+- [Policy actions for Amazon RDS](#security_iam_service-with-iam-id-based-policies-actions)
+
+- [Policy resources for Amazon RDS](#security_iam_service-with-iam-id-based-policies-resources)
+
+- [Policy condition keys for Amazon RDS](#UsingWithRDS.IAM.Conditions)
+
+- [Access control lists (ACLs) in Amazon RDS](#security_iam_service-with-iam-acls)
+
+- [Attribute-based access control (ABAC) in policies with Amazon RDS tags](#security_iam_service-with-iam-tags)
+
+- [Using temporary credentials with Amazon RDS](#security_iam_service-with-iam-roles-tempcreds)
+
+- [Forward access sessions for Amazon RDS](#security_iam_service-with-iam-principal-permissions)
+
+- [Service roles for Amazon RDS](#security_iam_service-with-iam-roles-service)
+
+- [Service-linked roles for Amazon RDS](#security_iam_service-with-iam-roles-service-linked)
+
+## Amazon RDS identity-based policies
+
+**Supports identity-based policies:** Yes.
+
+Identity-based policies are JSON permissions policy documents that you can attach to an identity, such as an IAM user, group of users, or role. These
+policies control what actions users and roles can perform, on which resources, and under what conditions. To learn how to create an identity-based
+policy, see [Define custom IAM permissions with customer managed policies](../../../iam/latest/userguide/access-policies-create.md) in the
+_IAM User Guide_.
+
+With IAM identity-based policies, you can specify allowed or denied actions and
+resources as well as the conditions under which actions are allowed or denied. To learn about all of the elements that you can use in a
+JSON policy, see [IAM JSON\
+policy elements reference](../../../iam/latest/userguide/reference-policies-elements.md) in the
+_IAM User Guide_.
+
+### Identity-based policy examples for Amazon RDS
+
+To view examples of Amazon RDS identity-based policies,
+see [Identity-based policy examples for Amazon RDS](security-iam-id-based-policy-examples.md).
+
+## Resource-based policies within Amazon RDS
+
+**Supports resource-based policies:** No.
+
+Resource-based policies are JSON policy documents that you attach to a resource. Examples of resource-based policies are
+IAM _role trust policies_ and Amazon S3 _bucket policies_. In services that support resource-based policies, service
+administrators can use them to control access to a specific resource. For the resource where the policy is attached, the policy defines what actions
+a specified principal can perform on that resource and under what conditions. You must [specify a principal](../../../iam/latest/userguide/reference-policies-elements-principal.md) in a resource-based policy. Principals
+can include accounts, users, roles, federated users, or AWS services.
+
+To enable cross-account access, you can specify an entire account or IAM entities
+in another account as the principal in a resource-based policy. For more information, see [Cross account resource access in IAM](../../../iam/latest/userguide/access-policies-cross-account-resource-access.md) in the
+_IAM User Guide_.
+
+## Policy actions for Amazon RDS
+
+**Supports policy actions:** Yes.
+
+Administrators can use AWS JSON policies to specify who has access to what. That is, which **principal** can perform
+**actions** on what **resources**, and under what **conditions**.
+
+The `Action` element of a JSON policy describes the
+actions that you can use to allow or deny access in a policy. Include actions in a policy to grant permissions to perform the associated operation.
+
+Policy actions in Amazon RDS use the following prefix before the action:
+`rds:`. For example, to grant someone permission to describe
+DB instances with the Amazon RDS `DescribeDBInstances` API operation, you include
+the `rds:DescribeDBInstances` action in their policy. Policy statements must
+include either an `Action` or `NotAction` element.
+Amazon RDS defines its own set of actions that describe tasks that you can
+perform with this service.
+
+To specify multiple actions in a single statement, separate them with commas as
+follows.
+
+```nohighlight
+
+"Action": [
+      "rds:action1",
+      "rds:action2"
+```
+
+You can specify multiple actions using wildcards (\*). For example, to specify all
+actions that begin with the word `Describe`, include the following
+action.
+
+```nohighlight
+
+"Action": "rds:Describe*"
+```
+
+To see a list of Amazon RDS actions, see [Actions Defined by Amazon RDS](../../../service-authorization/latest/reference/list-amazonrds.md#amazonrds-actions-as-permissions) in the
+_Service Authorization Reference_.
+
+## Policy resources for Amazon RDS
+
+**Supports policy resources:** Yes.
+
+Administrators can use AWS JSON policies to specify who has access to what. That is, which **principal** can perform
+**actions** on what **resources**, and under what **conditions**.
+
+The `Resource` JSON policy element specifies the object or objects to which the action applies. As a best practice, specify a resource using its [Amazon Resource Name (ARN)](../../../iam/latest/userguide/reference-arns.md). For actions that don't support resource-level permissions, use a wildcard (\*) to indicate that the statement applies to all resources.
+
+```
+
+"Resource": "*"
+```
+
+The DB instance resource has the following Amazon Resource Name (ARN).
+
+```
+
+arn:${Partition}:rds:${Region}:${Account}:{ResourceType}/${Resource}
+```
+
+For more information about the format of ARNs, see [Amazon Resource Names (ARNs) and AWS service namespaces](../../../../general/latest/gr/aws-arns-and-namespaces.md).
+
+For example, to specify the `dbtest` DB instance in your statement, use
+the following ARN.
+
+```
+
+"Resource": "arn:aws:rds:us-west-2:123456789012:db:dbtest"
+```
+
+To specify all DB instances that belong to a specific account, use the wildcard
+(\*).
+
+```
+
+"Resource": "arn:aws:rds:us-east-1:123456789012:db:*"
+```
+
+Some RDS API operations, such as those for creating resources, can't be performed on
+a specific resource. In those cases, use the wildcard (\*).
+
+```
+
+"Resource": "*"
+```
+
+Many Amazon RDS API operations involve multiple resources. For example, `CreateDBInstance` creates a DB instance. You can specify that an
+user must use a specific security group and parameter group when creating a DB instance. To specify multiple resources in a single statement,
+separate the ARNs with commas.
+
+```nohighlight
+
+"Resource": [
+      "resource1",
+      "resource2"
+```
+
+To see a list of Amazon RDS
+resource types and their ARNs, see [Resources Defined by Amazon RDS](../../../service-authorization/latest/reference/list-amazonrds.md#amazonrds-resources-for-iam-policies) in the _Service Authorization Reference_.
+To learn with which actions you can specify the ARN of each resource, see [Actions Defined by Amazon RDS](../../../service-authorization/latest/reference/list-amazonrds.md#amazonrds-actions-as-permissions).
+
+## Policy condition keys for Amazon RDS
+
+**Supports service-specific policy condition keys:** Yes.
+
+Administrators can use AWS JSON policies to specify who has access to what. That is, which **principal** can perform
+**actions** on what **resources**, and under what **conditions**.
+
+The `Condition` element specifies when statements execute based on defined criteria. You can create conditional expressions that use [condition\
+operators](../../../iam/latest/userguide/reference-policies-elements-condition-operators.md), such as equals or less than, to match the condition in the
+policy with values in the request. To see all AWS global
+condition keys, see [AWS global condition context keys](../../../iam/latest/userguide/reference-policies-condition-keys.md) in the
+_IAM User Guide_.
+
+Amazon RDS defines its own set of condition keys and also supports using
+some global condition keys. To see all AWS global condition keys, see [AWS global condition\
+context keys](../../../iam/latest/userguide/reference-policies-condition-keys.md) in the _IAM User Guide_.
+
+All RDS API operations support the `aws:RequestedRegion` condition key.
+
+To see a list of Amazon RDS condition keys, see [Condition Keys for Amazon RDS](../../../service-authorization/latest/reference/list-amazonrds.md#amazonrds-policy-keys)
+in the _Service Authorization Reference_. To learn with which actions and
+resources you can use a condition key, see [Actions Defined by Amazon RDS](../../../service-authorization/latest/reference/list-amazonrds.md#amazonrds-actions-as-permissions).
+
+## Access control lists (ACLs) in Amazon RDS
+
+**Supports access control lists (ACLs):** No
+
+Access control lists (ACLs) control which principals (account members, users, or roles) have permissions to access a resource. ACLs are
+similar to resource-based policies, although they do not use the JSON policy document format.
+
+## Attribute-based access control (ABAC) in policies with Amazon RDS tags
+
+**Supports attribute-based access control (ABAC) tags in policies:** Yes
+
+Attribute-based access control (ABAC) is an authorization strategy that defines permissions
+based on attributes called tags. You can attach tags to IAM entities and AWS resources, then design ABAC policies to allow operations when the principal's tag matches the tag on the resource.
+
+To control access based on tags, you provide tag information in the [condition element](../../../iam/latest/userguide/reference-policies-elements-condition.md) of a policy using the `aws:ResourceTag/key-name`,
+`aws:RequestTag/key-name`, or `aws:TagKeys` condition keys.
+
+If a service supports all three condition keys for every resource type, then the value is **Yes** for the service. If a service supports all three condition keys for only some resource types, then the value is **Partial**.
+
+For more information about ABAC, see [Define permissions with ABAC authorization](../../../iam/latest/userguide/introduction-attribute-based-access-control.md) in the _IAM User Guide_. To view a tutorial with steps for setting up ABAC, see
+[Use attribute-based access control (ABAC)](../../../iam/latest/userguide/tutorial-attribute-based-access-control.md) in the _IAM User Guide_.
+
+For more information about tagging
+Amazon RDS resources, see
+[Specifying conditions: Using custom tags](usingwithrds-iam-specifyingcustomtags.md).
+To view an example identity-based policy for limiting access to a resource based on
+the tags on that resource, see [Grant permission for actions on a resource with a specific tag with two different values](security-iam-id-based-policy-examples-create-and-modify-examples.md#security_iam_id-based-policy-examples-grant-permissions-tags).
+
+## Using temporary credentials with Amazon RDS
+
+**Supports temporary credentials:** Yes.
+
+Temporary credentials provide short-term access to AWS resources and are automatically created when you use federation or switch roles. AWS recommends that you
+dynamically generate temporary credentials instead of using long-term access keys. For
+more information, see [Temporary\
+security credentials in IAM](../../../iam/latest/userguide/id-credentials-temp.md) and [AWS services\
+that work with IAM](../../../iam/latest/userguide/reference-aws-services-that-work-with-iam.md) in the _IAM User Guide_.
+
+## Forward access sessions for Amazon RDS
+
+**Supports forward access sessions:** Yes.
+
+Forward access sessions (FAS) use the permissions of the principal calling an AWS service, combined with the requesting AWS service to make requests to downstream services. For policy details
+when making FAS requests, see [Forward access sessions](../../../iam/latest/userguide/access-forward-access-sessions.md).
+
+## Service roles for Amazon RDS
+
+**Supports service roles:** Yes.
+
+A service role is an [IAM role](../../../iam/latest/userguide/id-roles.md) that a service assumes to perform
+actions on your behalf. An IAM administrator can create, modify, and delete a service role from within IAM. For
+more information, see [Create a role to delegate permissions to an AWS service](../../../iam/latest/userguide/id-roles-create-for-service.md) in the _IAM User Guide_.
+
+###### Warning
+
+Changing the permissions for a service role might break
+Amazon RDS functionality.
+Edit service roles only when Amazon RDS
+provides guidance to do so.
+
+## Service-linked roles for Amazon RDS
+
+**Supports service-linked roles:** Yes.
+
+A service-linked role is a type of service role that is linked to an AWS service. The service can assume the role to perform an action on your behalf.
+Service-linked roles appear in your AWS account and are owned by the service. An IAM administrator can view,
+but not edit the permissions for service-linked roles.
+
+For details about using Amazon RDS service-linked roles,
+see [Using service-linked roles for Amazon RDS](usingwithrds-iam-servicelinkedroles.md).
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Identity and access management
+
+Identity-based policy examples
+
+All content copied from https://docs.aws.amazon.com/.

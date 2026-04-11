@@ -1,0 +1,125 @@
+# ScheduledInstanceAvailability
+
+Describes a schedule that is available for your Scheduled Instances.
+
+## Contents
+
+**availabilityZone**
+
+The Availability Zone.
+
+Type: String
+
+Required: No
+
+**availableInstanceCount**
+
+The number of available instances.
+
+Type: Integer
+
+Required: No
+
+**firstSlotStartTime**
+
+The time period for the first schedule to start.
+
+Type: Timestamp
+
+Required: No
+
+**hourlyPrice**
+
+The hourly price for a single instance.
+
+Type: String
+
+Required: No
+
+**instanceType**
+
+The instance type. You can specify one of the C3, C4, M4, or R3 instance types.
+
+Type: String
+
+Required: No
+
+**maxTermDurationInDays**
+
+The maximum term. The only possible value is 365 days.
+
+Type: Integer
+
+Required: No
+
+**minTermDurationInDays**
+
+The minimum term. The only possible value is 365 days.
+
+Type: Integer
+
+Required: No
+
+**networkPlatform**
+
+The network platform.
+
+Type: String
+
+Required: No
+
+**platform**
+
+The platform ( `Linux/UNIX` or `Windows`).
+
+Type: String
+
+Required: No
+
+**purchaseToken**
+
+The purchase token. This token expires in two hours.
+
+Type: String
+
+Required: No
+
+**recurrence**
+
+The schedule recurrence.
+
+Type: [ScheduledInstanceRecurrence](api-scheduledinstancerecurrence.md) object
+
+Required: No
+
+**slotDurationInHours**
+
+The number of hours in the schedule.
+
+Type: Integer
+
+Required: No
+
+**totalScheduledInstanceHours**
+
+The total number of hours for a single instance for the entire term.
+
+Type: Integer
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/scheduledinstanceavailability.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/scheduledinstanceavailability.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/scheduledinstanceavailability.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+ScheduledInstance
+
+ScheduledInstanceRecurrence

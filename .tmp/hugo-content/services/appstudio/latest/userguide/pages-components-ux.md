@@ -1,0 +1,23 @@
+# Pages and components: Build your app's user interface
+
+###### Topics
+
+- [Managing pages](pages.md)
+
+- [Managing components](adding-editing-deleting-components.md)
+
+- [Configuring role-based visibility of pages](app-level-roles.md)
+
+- [Ordering and organizing pages in the app navigation](pages-order.md)
+
+- [Change colors in your app with app themes](app-theme.md)
+
+- [Components reference](components-reference.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Exporting applications
+
+Managing pages
+
+All content copied from https://docs.aws.amazon.com/.

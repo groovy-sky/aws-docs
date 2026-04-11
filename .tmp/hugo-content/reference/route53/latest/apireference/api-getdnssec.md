@@ -1,0 +1,144 @@
+# GetDNSSEC
+
+Returns information about DNSSEC for a specific hosted zone, including the key-signing
+keys (KSKs) in the hosted zone.
+
+## Request Syntax
+
+```nohighlight
+
+GET /2013-04-01/hostedzone/Id/dnssec HTTP/1.1
+
+```
+
+## URI Request Parameters
+
+The request uses the following URI parameters.
+
+**[Id](#API_GetDNSSEC_RequestSyntax)**
+
+A unique string used to identify a hosted zone.
+
+Length Constraints: Maximum length of 32.
+
+Required: Yes
+
+## Request Body
+
+The request does not have a request body.
+
+## Response Syntax
+
+```nohighlight
+
+HTTP/1.1 200
+<?xml version="1.0" encoding="UTF-8"?>
+<GetDNSSECResponse>
+   <KeySigningKeys>
+      <KeySigningKey>
+         <CreatedDate>timestamp</CreatedDate>
+         <DigestAlgorithmMnemonic>string</DigestAlgorithmMnemonic>
+         <DigestAlgorithmType>integer</DigestAlgorithmType>
+         <DigestValue>string</DigestValue>
+         <DNSKEYRecord>string</DNSKEYRecord>
+         <DSRecord>string</DSRecord>
+         <Flag>integer</Flag>
+         <KeyTag>integer</KeyTag>
+         <KmsArn>string</KmsArn>
+         <LastModifiedDate>timestamp</LastModifiedDate>
+         <Name>string</Name>
+         <PublicKey>string</PublicKey>
+         <SigningAlgorithmMnemonic>string</SigningAlgorithmMnemonic>
+         <SigningAlgorithmType>integer</SigningAlgorithmType>
+         <Status>string</Status>
+         <StatusMessage>string</StatusMessage>
+      </KeySigningKey>
+   </KeySigningKeys>
+   <Status>
+      <ServeSignature>string</ServeSignature>
+      <StatusMessage>string</StatusMessage>
+   </Status>
+</GetDNSSECResponse>
+```
+
+## Response Elements
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in XML format by the service.
+
+**[GetDNSSECResponse](#API_GetDNSSEC_ResponseSyntax)**
+
+Root level tag for the GetDNSSECResponse parameters.
+
+Required: Yes
+
+**[KeySigningKeys](#API_GetDNSSEC_ResponseSyntax)**
+
+The key-signing keys (KSKs) in your account.
+
+Type: Array of [KeySigningKey](api-keysigningkey.md) objects
+
+**[Status](#API_GetDNSSEC_ResponseSyntax)**
+
+A string representing the status of DNSSEC.
+
+Type: [DNSSECStatus](api-dnssecstatus.md) object
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+
+**InvalidArgument**
+
+Parameter name is not valid.
+
+**message**
+
+HTTP Status Code: 400
+
+**InvalidInput**
+
+The input is not valid.
+
+**message**
+
+HTTP Status Code: 400
+
+**NoSuchHostedZone**
+
+No hosted zone exists with the ID that you specified.
+
+**message**
+
+HTTP Status Code: 404
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53-2013-04-01/getdnssec.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53-2013-04-01/getdnssec.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53-2013-04-01/getdnssec.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53-2013-04-01/getdnssec.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53-2013-04-01/getdnssec.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53-2013-04-01/getdnssec.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53-2013-04-01/getdnssec.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53-2013-04-01/getdnssec.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/route53-2013-04-01/getdnssec.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53-2013-04-01/getdnssec.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+GetCheckerIpRanges
+
+GetGeoLocation

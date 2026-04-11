@@ -1,0 +1,51 @@
+# BlockedEncryptionTypes
+
+A bucket-level setting for Amazon S3 general purpose buckets used to prevent the upload of new objects encrypted with the specified server-side encryption type. For example, blocking an encryption type will block `PutObject`, `CopyObject`, `PostObject`, multipart upload, and replication requests to the bucket for objects with the specified encryption type. However, you can continue to read and list any pre-existing objects already encrypted with the specified encryption type. For more information, see [Blocking or unblocking SSE-C for a general purpose bucket](../userguide/blocking-unblocking-s3-c-encryption-gpb.md).
+
+This data type is used with the following actions:
+
+- [PutBucketEncryption](api-putbucketencryption.md)
+
+- [GetBucketEncryption](api-getbucketencryption.md)
+
+- [DeleteBucketEncryption](api-deletebucketencryption.md)
+
+Permissions
+
+You must have the `s3:PutEncryptionConfiguration` permission to block or unblock an encryption type for a bucket.
+
+You must have the `s3:GetEncryptionConfiguration` permission to view a bucket's encryption type.
+
+## Contents
+
+**EncryptionType**
+
+The object encryption type that you want to block or unblock for an Amazon S3 general purpose bucket.
+
+###### Note
+
+Currently, this parameter only supports blocking or unblocking server side encryption with customer-provided keys (SSE-C). For more information about SSE-C, see [Using server-side encryption with customer-provided keys (SSE-C)](../userguide/serversideencryptioncustomerkeys.md).
+
+Type: Array of strings
+
+Valid Values: `NONE | SSE-C`
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3-2006-03-01/blockedencryptiontypes.md)
+
+- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/blockedencryptiontypes.md)
+
+- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/blockedencryptiontypes.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+AnalyticsS3BucketDestination
+
+Bucket
+
+All content copied from https://docs.aws.amazon.com/.

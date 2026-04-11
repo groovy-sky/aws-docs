@@ -1,0 +1,116 @@
+# DeleteInstanceConnectEndpoint
+
+Deletes the specified EC2 Instance Connect Endpoint.
+
+## Request Parameters
+
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+
+**DryRun**
+
+Checks whether you have the required permissions for the action, without actually making the request,
+and provides an error response. If you have the required permissions, the error response is `DryRunOperation`.
+Otherwise, it is `UnauthorizedOperation`.
+
+Type: Boolean
+
+Required: No
+
+**InstanceConnectEndpointId**
+
+The ID of the EC2 Instance Connect Endpoint to delete.
+
+Type: String
+
+Required: Yes
+
+## Response Elements
+
+The following elements are returned by the service.
+
+**instanceConnectEndpoint**
+
+Information about the EC2 Instance Connect Endpoint.
+
+Type: [Ec2InstanceConnectEndpoint](api-ec2instanceconnectendpoint.md) object
+
+**requestId**
+
+The ID of the request.
+
+Type: String
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+
+## Examples
+
+### Example: Delete an EC2 Instance Connect Endpoint
+
+This example deletes the specified EC2 Instance Connect Endpoint.
+
+#### Sample Request
+
+```https
+
+https://ec2.amazonaws.com/?Action=DeleteInstanceConnectEndpoint
+&InstanceConnectEndpointId=eice-0123456789example
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```https
+
+<DeleteInstanceConnectEndpointResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  <requestId>d732c12a-2f0c-49b4-b2a9-f2922e5f5635</requestId>
+  <instanceConnectEndpoint>
+    <availabilityZone>availability-zone</availabilityZone>
+    <availabilityZoneId>availability-zone-id</availabilityZoneId>
+    <createdAt>2023-06-06T20:01:31.000Z</createdAt>
+    <instanceConnectEndpointArn>arn:aws:ec2:region:account-id:instance-connect-endpoint/eice-0123456789example</instanceConnectEndpointArn>
+    <instanceConnectEndpointId>eice-0123456789example</instanceConnectEndpointId>
+    <networkInterfaceIdSet />
+    <ownerId>account-id</ownerId>
+    <preserveClientIp>false</preserveClientIp>
+    <securityGroupIdSet>
+      <item>sg-0123456789example</item>
+    </securityGroupIdSet>
+    <state>delete-in-progress</state>
+    <stateMessage />
+    <subnetId>subnet-0123456789example</subnetId>
+    <vpcId>vpc-0123456789example</vpcId>
+  </instanceConnectEndpoint>
+</DeleteInstanceConnectEndpointResponse>
+```
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/deleteinstanceconnectendpoint.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/deleteinstanceconnectendpoint.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/deleteinstanceconnectendpoint.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/deleteinstanceconnectendpoint.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/deleteinstanceconnectendpoint.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/deleteinstanceconnectendpoint.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/deleteinstanceconnectendpoint.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/deleteinstanceconnectendpoint.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/deleteinstanceconnectendpoint.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deleteinstanceconnectendpoint.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+DeleteImageUsageReport
+
+DeleteInstanceEventWindow

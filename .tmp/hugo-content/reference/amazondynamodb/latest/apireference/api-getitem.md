@@ -1,0 +1,441 @@
+# GetItem
+
+The `GetItem` operation returns a set of attributes for the item with the
+given primary key. If there is no matching item, `GetItem` does not return
+any data and there will be no `Item` element in the response.
+
+`GetItem` provides an eventually consistent read by default. If your
+application requires a strongly consistent read, set `ConsistentRead` to
+`true`. Although a strongly consistent read might take more time than an
+eventually consistent read, it always returns the last updated value.
+
+## Request Syntax
+
+```nohighlight
+
+{
+   "AttributesToGet": [ "string" ],
+   "ConsistentRead": boolean,
+   "ExpressionAttributeNames": {
+      "string" : "string"
+   },
+   "Key": {
+      "string" : {
+         "B": blob,
+         "BOOL": boolean,
+         "BS": [ blob ],
+         "L": [
+            "AttributeValue"
+         ],
+         "M": {
+            "string" : "AttributeValue"
+         },
+         "N": "string",
+         "NS": [ "string" ],
+         "NULL": boolean,
+         "S": "string",
+         "SS": [ "string" ]
+      }
+   },
+   "ProjectionExpression": "string",
+   "ReturnConsumedCapacity": "string",
+   "TableName": "string"
+}
+```
+
+## Request Parameters
+
+The request accepts the following data in JSON format.
+
+###### Note
+
+In the following list, the required parameters are described first.
+
+**[Key](#API_GetItem_RequestSyntax)**
+
+A map of attribute names to `AttributeValue` objects, representing the
+primary key of the item to retrieve.
+
+For the primary key, you must provide all of the attributes. For example, with a
+simple primary key, you only need to provide a value for the partition key. For a
+composite primary key, you must provide values for both the partition key and the sort
+key.
+
+Type: String to [AttributeValue](api-attributevalue.md) object map
+
+Key Length Constraints: Maximum length of 65535.
+
+Required: Yes
+
+**[TableName](#API_GetItem_RequestSyntax)**
+
+The name of the table containing the requested item. You can also provide the
+Amazon Resource Name (ARN) of the table in this parameter.
+
+Type: String
+
+Length Constraints: Minimum length of 1. Maximum length of 1024.
+
+Required: Yes
+
+**[AttributesToGet](#API_GetItem_RequestSyntax)**
+
+This is a legacy parameter. Use `ProjectionExpression` instead. For more
+information, see [AttributesToGet](../../../../services/dynamodb/latest/developerguide/legacyconditionalparameters-attributestoget.md) in the _Amazon DynamoDB Developer_
+_Guide_.
+
+Type: Array of strings
+
+Array Members: Minimum number of 1 item.
+
+Length Constraints: Maximum length of 65535.
+
+Required: No
+
+**[ConsistentRead](#API_GetItem_RequestSyntax)**
+
+Determines the read consistency model: If set to `true`, then the operation
+uses strongly consistent reads; otherwise, the operation uses eventually consistent
+reads.
+
+Type: Boolean
+
+Required: No
+
+**[ExpressionAttributeNames](#API_GetItem_RequestSyntax)**
+
+One or more substitution tokens for attribute names in an expression. The following
+are some use cases for using `ExpressionAttributeNames`:
+
+- To access an attribute whose name conflicts with a DynamoDB reserved
+word.
+
+- To create a placeholder for repeating occurrences of an attribute name in an
+expression.
+
+- To prevent special characters in an attribute name from being misinterpreted
+in an expression.
+
+Use the **#** character in an expression to dereference
+an attribute name. For example, consider the following attribute name:
+
+- `Percentile`
+
+The name of this attribute conflicts with a reserved word, so it cannot be used
+directly in an expression. (For the complete list of reserved words, see [Reserved Words](../../../../services/dynamodb/latest/developerguide/reservedwords.md) in the _Amazon DynamoDB Developer_
+_Guide_). To work around this, you could specify the following for
+`ExpressionAttributeNames`:
+
+- `{"#P":"Percentile"}`
+
+You could then use this substitution in an expression, as in this example:
+
+- `#P = :val`
+
+###### Note
+
+Tokens that begin with the **:** character are
+_expression attribute values_, which are placeholders for the
+actual value at runtime.
+
+For more information on expression attribute names, see [Specifying Item Attributes](../../../../services/dynamodb/latest/developerguide/expressions-accessingitemattributes.md) in the _Amazon DynamoDB Developer_
+_Guide_.
+
+Type: String to string map
+
+Value Length Constraints: Maximum length of 65535.
+
+Required: No
+
+**[ProjectionExpression](#API_GetItem_RequestSyntax)**
+
+A string that identifies one or more attributes to retrieve from the table. These
+attributes can include scalars, sets, or elements of a JSON document. The attributes in
+the expression must be separated by commas.
+
+If no attribute names are specified, then all attributes are returned. If any of the
+requested attributes are not found, they do not appear in the result.
+
+For more information, see [Specifying Item Attributes](../../../../services/dynamodb/latest/developerguide/expressions-accessingitemattributes.md) in the _Amazon DynamoDB Developer_
+_Guide_.
+
+Type: String
+
+Required: No
+
+**[ReturnConsumedCapacity](#API_GetItem_RequestSyntax)**
+
+Determines the level of detail about either provisioned or on-demand throughput
+consumption that is returned in the response:
+
+- `INDEXES` \- The response includes the aggregate
+`ConsumedCapacity` for the operation, together with
+`ConsumedCapacity` for each table and secondary index that was
+accessed.
+
+Note that some operations, such as `GetItem` and
+`BatchGetItem`, do not access any indexes at all. In these cases,
+specifying `INDEXES` will only return `ConsumedCapacity`
+information for table(s).
+
+- `TOTAL` \- The response includes only the aggregate
+`ConsumedCapacity` for the operation.
+
+- `NONE` \- No `ConsumedCapacity` details are included in the
+response.
+
+Type: String
+
+Valid Values: `INDEXES | TOTAL | NONE`
+
+Required: No
+
+## Response Syntax
+
+```nohighlight
+
+{
+   "ConsumedCapacity": {
+      "CapacityUnits": number,
+      "GlobalSecondaryIndexes": {
+         "string" : {
+            "CapacityUnits": number,
+            "ReadCapacityUnits": number,
+            "WriteCapacityUnits": number
+         }
+      },
+      "LocalSecondaryIndexes": {
+         "string" : {
+            "CapacityUnits": number,
+            "ReadCapacityUnits": number,
+            "WriteCapacityUnits": number
+         }
+      },
+      "ReadCapacityUnits": number,
+      "Table": {
+         "CapacityUnits": number,
+         "ReadCapacityUnits": number,
+         "WriteCapacityUnits": number
+      },
+      "TableName": "string",
+      "WriteCapacityUnits": number
+   },
+   "Item": {
+      "string" : {
+         "B": blob,
+         "BOOL": boolean,
+         "BS": [ blob ],
+         "L": [
+            "AttributeValue"
+         ],
+         "M": {
+            "string" : "AttributeValue"
+         },
+         "N": "string",
+         "NS": [ "string" ],
+         "NULL": boolean,
+         "S": "string",
+         "SS": [ "string" ]
+      }
+   }
+}
+```
+
+## Response Elements
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+**[ConsumedCapacity](#API_GetItem_ResponseSyntax)**
+
+The capacity units consumed by the `GetItem` operation. The data returned
+includes the total provisioned throughput consumed, along with statistics for the table
+and any indexes involved in the operation. `ConsumedCapacity` is only
+returned if the `ReturnConsumedCapacity` parameter was specified. For more
+information, see [Capacity unit consumption for read operations](../../../../services/dynamodb/latest/developerguide/read-write-operations.md#read-operation-consumption) in the _Amazon_
+_DynamoDB Developer Guide_.
+
+Type: [ConsumedCapacity](api-consumedcapacity.md) object
+
+**[Item](#API_GetItem_ResponseSyntax)**
+
+A map of attribute names to `AttributeValue` objects, as specified by
+`ProjectionExpression`.
+
+Type: String to [AttributeValue](api-attributevalue.md) object map
+
+Key Length Constraints: Maximum length of 65535.
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+
+**InternalServerError**
+
+An error occurred on the server side.
+
+**message**
+
+The server encountered an internal error trying to fulfill the request.
+
+HTTP Status Code: 500
+
+**ProvisionedThroughputExceededException**
+
+The request was denied due to request throttling. For detailed information about
+why the request was throttled and the ARN of the impacted resource, find the [ThrottlingReason](api-throttlingreason.md) field in the returned exception. The AWS
+SDKs for DynamoDB automatically retry requests that receive this exception.
+Your request is eventually successful, unless your retry queue is too large to finish.
+Reduce the frequency of requests and use exponential backoff. For more information, go
+to [Error Retries and Exponential Backoff](../../../../services/dynamodb/latest/developerguide/programming-errors.md#Programming.Errors.RetryAndBackoff) in the _Amazon DynamoDB Developer Guide_.
+
+**message**
+
+You exceeded your maximum allowed provisioned throughput.
+
+**ThrottlingReasons**
+
+A list of [ThrottlingReason](api-throttlingreason.md) that
+provide detailed diagnostic information about why the request was throttled.
+
+HTTP Status Code: 400
+
+**RequestLimitExceeded**
+
+Throughput exceeds the current throughput quota for your account. For detailed
+information about why the request was throttled and the ARN of the impacted resource,
+find the [ThrottlingReason](api-throttlingreason.md) field in the returned exception. Contact [Support](https://aws.amazon.com/support) to request a quota
+increase.
+
+**ThrottlingReasons**
+
+A list of [ThrottlingReason](api-throttlingreason.md) that
+provide detailed diagnostic information about why the request was throttled.
+
+HTTP Status Code: 400
+
+**ResourceNotFoundException**
+
+The operation tried to access a nonexistent table or index. The resource might not
+be specified correctly, or its status might not be `ACTIVE`.
+
+**message**
+
+The resource which is being requested does not exist.
+
+HTTP Status Code: 400
+
+**ThrottlingException**
+
+The request was denied due to request throttling. For detailed information about why
+the request was throttled and the ARN of the impacted resource, find the [ThrottlingReason](api-throttlingreason.md) field in the returned exception.
+
+**throttlingReasons**
+
+A list of [ThrottlingReason](api-throttlingreason.md) that
+provide detailed diagnostic information about why the request was throttled.
+
+HTTP Status Code: 400
+
+## Examples
+
+### Retrieve Item Attributes
+
+The following example retrieves three attributes from the `Thread`
+table. In the response, the `ConsumedCapacityUnits` value is 1,
+because `ConsistentRead` is set to true. If
+`ConsistentRead` had been set to false (or not specified) for the
+same request, an eventually consistent read would have been used and
+`ConsumedCapacityUnits` would have been 0.5.
+
+#### Sample Request
+
+```
+
+POST / HTTP/1.1
+Host: dynamodb.<region>.<domain>;
+Accept-Encoding: identity
+Content-Length: <PayloadSizeBytes>
+User-Agent: <UserAgentString>
+Content-Type: application/x-amz-json-1.0
+Authorization: AWS4-HMAC-SHA256 Credential=<Credential>, SignedHeaders=<Headers>, Signature=<Signature>
+X-Amz-Date: <Date>
+X-Amz-Target: DynamoDB_20120810.GetItem
+
+{
+    "TableName": "Thread",
+    "Key": {
+        "ForumName": {
+            "S": "Amazon DynamoDB"
+        },
+        "Subject": {
+            "S": "How do I update multiple items?"
+        }
+    },
+    "ProjectionExpression":"LastPostDateTime, Message, Tags",
+    "ConsistentRead": true,
+    "ReturnConsumedCapacity": "TOTAL"
+}
+```
+
+#### Sample Response
+
+```
+
+HTTP/1.1 200 OK
+x-amzn-RequestId: <RequestId>
+x-amz-crc32: <Checksum>
+Content-Type: application/x-amz-json-1.0
+Content-Length: <PayloadSizeBytes>
+Date: <Date>
+ {
+    "ConsumedCapacity": {
+        "CapacityUnits": 1,
+        "TableName": "Thread"
+    },
+    "Item": {
+        "Tags": {
+            "SS": ["Update","Multiple Items","HelpMe"]
+        },
+        "LastPostDateTime": {
+            "S": "201303190436"
+        },
+        "Message": {
+            "S": "I want to update multiple items in a single call. What's the best way to do that?"
+        }
+    }
+}
+```
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/dynamodb-2012-08-10/getitem.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/dynamodb-2012-08-10/getitem.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/dynamodb-2012-08-10/getitem.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/dynamodb-2012-08-10/getitem.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/dynamodb-2012-08-10/getitem.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/dynamodb-2012-08-10/getitem.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/dynamodb-2012-08-10/getitem.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/dynamodb-2012-08-10/getitem.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/dynamodb-2012-08-10/getitem.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/getitem.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+ExportTableToPointInTime
+
+GetResourcePolicy
+
+All content copied from https://docs.aws.amazon.com/.

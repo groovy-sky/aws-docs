@@ -1,0 +1,127 @@
+# DeleteLaunchTemplate
+
+Deletes a launch template. Deleting a launch template deletes all of its
+versions.
+
+## Request Parameters
+
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+
+**DryRun**
+
+Checks whether you have the required permissions for the action, without actually
+making the request, and provides an error response. If you have the required
+permissions, the error response is `DryRunOperation`. Otherwise, it is
+`UnauthorizedOperation`.
+
+Type: Boolean
+
+Required: No
+
+**LaunchTemplateId**
+
+The ID of the launch template.
+
+You must specify either the launch template ID or the launch template name, but not
+both.
+
+Type: String
+
+Required: No
+
+**LaunchTemplateName**
+
+The name of the launch template.
+
+You must specify either the launch template ID or the launch template name, but not
+both.
+
+Type: String
+
+Length Constraints: Minimum length of 3. Maximum length of 128.
+
+Pattern: `[a-zA-Z0-9\(\)\.\-/_]+`
+
+Required: No
+
+## Response Elements
+
+The following elements are returned by the service.
+
+**launchTemplate**
+
+Information about the launch template.
+
+Type: [LaunchTemplate](api-launchtemplate.md) object
+
+**requestId**
+
+The ID of the request.
+
+Type: String
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+
+## Examples
+
+### Example
+
+This example deletes launch template `lt-0a20c965061f64abc`.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=DeleteLaunchTemplate
+&LaunchTemplateId=lt-0a20c965061f64abc
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```
+
+<DeleteLaunchTemplateResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+    <requestId>c12605de-c470-4eaa-a4d0-ab4dexample</requestId>
+    <launchTemplate>
+        <createTime>2017-10-31T11:38:52.000Z</createTime>
+        <createdBy>arn:aws:iam::123456789012:root</createdBy>
+        <defaultVersionNumber>2</defaultVersionNumber>
+        <latestVersionNumber>2</latestVersionNumber>
+        <launchTemplateId>lt-0a20c965061f64abc</launchTemplateId>
+        <launchTemplateName>MyLaunchTemplate</launchTemplateName>
+    </launchTemplate>
+</DeleteLaunchTemplateResponse>
+```
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/deletelaunchtemplate.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/deletelaunchtemplate.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/deletelaunchtemplate.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/deletelaunchtemplate.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/deletelaunchtemplate.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/deletelaunchtemplate.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/deletelaunchtemplate.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/deletelaunchtemplate.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/deletelaunchtemplate.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deletelaunchtemplate.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+DeleteKeyPair
+
+DeleteLaunchTemplateVersions

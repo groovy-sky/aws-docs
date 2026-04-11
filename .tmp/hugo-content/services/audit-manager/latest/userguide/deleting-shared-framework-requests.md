@@ -1,0 +1,47 @@
+AWS Audit Manager will no longer be open to new customers starting
+April 30, 2026. If you would like to use Audit Manager, sign up prior to that date. Existing customers
+can continue to use the service as normal. For more information, see
+[AWS Audit Manager availability change](audit-manager-availability-change.md).
+
+# Deleting share requests in AWS Audit Manager
+
+When you no longer need a share request, you can delete it from your Audit Manager environment.
+This enables you to clean up your workspace and focus on the requests that are relevant to
+your current tasks and priorities.
+
+When you delete a share request, only the request itself is deleted. The shared
+framework itself remains in your framework library.
+
+## Prerequisites
+
+The following procedure assumes that you have previously sent or received a share
+request. You can't delete share requests that have a status of _active_ or _replicating_.
+
+Make sure your IAM identity has appropriate permissions to delete a share request in
+AWS Audit Manager. Two suggested policies that grant these permissions are [AWSAuditManagerAdministratorAccess](../../../aws-managed-policy/latest/reference/awsauditmanageradministratoraccess.md) and [Allow users management access to AWS Audit Manager](security-iam-id-based-policy-examples.md#management-access).
+
+## Procedure
+
+###### To delete a share request
+
+1. From the navigation pane, choose **Share requests**.
+
+2. Choose either the **Sent requests** or the **Received**
+**requests** tab.
+
+3. Select the framework that you no longer want and choose
+    **Delete**.
+
+4. In the pop-up window that appears, choose **Delete**.
+
+## Additional resources
+
+To find solutions to issues that you might encounter, see [Troubleshooting framework issues](framework-issues.md).
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Responding to a share request
+
+Deleting a custom framework
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,0 +1,65 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::Redshift::ClusterSecurityGroup Tag
+
+A tag consisting of a name/value pair for a resource.
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "Key" : String,
+  "Value" : String
+}
+
+```
+
+### YAML
+
+```yaml
+
+  Key: String
+  Value: String
+
+```
+
+## Properties
+
+`Key`
+
+The key, or name, for the resource tag.
+
+_Required_: Yes
+
+_Type_: String
+
+_Maximum_: `2147483647`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`Value`
+
+The value for the resource tag.
+
+_Required_: Yes
+
+_Type_: String
+
+_Maximum_: `2147483647`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+AWS::Redshift::ClusterSecurityGroup
+
+AWS::Redshift::ClusterSecurityGroupIngress
+
+All content copied from https://docs.aws.amazon.com/.

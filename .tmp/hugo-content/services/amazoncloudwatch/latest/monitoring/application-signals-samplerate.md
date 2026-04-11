@@ -1,0 +1,47 @@
+# Trace sampling rate
+
+By default, when you enable Application Signals X-Ray centralized sampling is enabled
+using the default sampling rate settings of `reservoir=1/s` and `fixed_rate=5%`.
+The environment variables for the AWS Distro for OpenTelemetry (ADOT) SDK agent as set as follows.
+
+Environment variableValueNote
+
+`OTEL_TRACES_SAMPLER`
+
+`xray`
+
+`OTEL_TRACES_SAMPLER_ARG`
+
+`endpoint=http://cloudwatch-agent.amazon-cloudwatch:2000`
+
+Endpoint of the CloudWatch agent
+
+For information about changing the sampling configuration, see the following:
+
+- To change X-Ray sampling, see [Configure sampling rules](../../../xray/latest/devguide/aws-xray-interface-console.md#xray-console)
+
+- To change ADOT sampling, see [Configuring the OpenTelemetry Collector for X-Ray remote sampling](https://aws-otel.github.io/docs/getting-started/remote-sampling)
+
+If you want to disable X-Ray centralized sampling and use local sampling instead, set the following values
+for the ADOT SDK Java agent as below. The following example sets the sampling rate at 5%.
+
+Environment variableValue
+
+`OTEL_TRACES_SAMPLER`
+
+`parentbased_traceidratio`
+
+`OTEL_TRACES_SAMPLER_ARG`
+
+`0.05`
+
+For information about more advanced sampling settings, see
+[OTEL\_TRACES\_SAMPLER](https://opentelemetry.io/docs/concepts/sdk-configuration/general-sdk-configuration).
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+(Optional) Configuring Application Signals
+
+Enable trace to log correlation
+
+All content copied from https://docs.aws.amazon.com/.

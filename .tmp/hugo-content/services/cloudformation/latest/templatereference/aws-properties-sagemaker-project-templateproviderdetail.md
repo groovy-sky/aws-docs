@@ -1,0 +1,50 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::SageMaker::Project TemplateProviderDetail
+
+Details about a template provider configuration and associated provisioning information.
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "CfnTemplateProviderDetail" : CfnTemplateProviderDetail
+}
+
+```
+
+### YAML
+
+```yaml
+
+  CfnTemplateProviderDetail:
+    CfnTemplateProviderDetail
+
+```
+
+## Properties
+
+`CfnTemplateProviderDetail`
+
+Details about a CloudFormation template provider configuration and associated provisioning information.
+
+_Required_: No
+
+_Type_: [CfnTemplateProviderDetail](aws-properties-sagemaker-project-cfntemplateproviderdetail.md)
+
+_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Tag
+
+AWS::SageMaker::Space
+
+All content copied from https://docs.aws.amazon.com/.

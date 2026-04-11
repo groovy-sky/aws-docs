@@ -1,0 +1,247 @@
+# CreateVpcEndpointServiceConfiguration
+
+Creates a VPC endpoint service to which service consumers (AWS accounts,
+users, and IAM roles) can connect.
+
+Before you create an endpoint service, you must create one of the following for your service:
+
+- A [Network Load Balancer](../../../../services/elasticloadbalancing/latest/network.md).
+Service consumers connect to your service using an interface endpoint.
+
+- A [Gateway Load Balancer](../../../../services/elasticloadbalancing/latest/gateway.md).
+Service consumers connect to your service using a Gateway Load Balancer endpoint.
+
+If you set the private DNS name, you must prove that you own the private DNS domain
+name.
+
+For more information, see the [AWS PrivateLink \
+Guide](../../../../services/vpc/latest/privatelink.md).
+
+## Request Parameters
+
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+
+**AcceptanceRequired**
+
+Indicates whether requests from service consumers to create an endpoint to your service must
+be accepted manually.
+
+To accept a request manually, use [AcceptVpcEndpointConnections](api-acceptvpcendpointconnections.md).
+To reject a request, use [RejectVpcEndpointConnections](api-rejectvpcendpointconnections.md).
+
+Type: Boolean
+
+Required: No
+
+**ClientToken**
+
+Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+For more information, see [How to ensure\
+idempotency](../../../../services/ec2/latest/devguide/ec2-api-idempotency.md).
+
+Type: String
+
+Required: No
+
+**DryRun**
+
+Checks whether you have the required permissions for the action, without actually making the request,
+and provides an error response. If you have the required permissions, the error response is `DryRunOperation`.
+Otherwise, it is `UnauthorizedOperation`.
+
+Type: Boolean
+
+Required: No
+
+**GatewayLoadBalancerArn.N**
+
+The Amazon Resource Names (ARNs) of the Gateway Load Balancers.
+
+Type: Array of strings
+
+Required: No
+
+**NetworkLoadBalancerArn.N**
+
+The Amazon Resource Names (ARNs) of the Network Load Balancers.
+
+Type: Array of strings
+
+Required: No
+
+**PrivateDnsName**
+
+(Interface endpoint configuration) The private DNS name to assign to the VPC endpoint service.
+
+Type: String
+
+Required: No
+
+**SupportedIpAddressType.N**
+
+The supported IP address types. The possible values are `ipv4` and `ipv6`.
+
+Type: Array of strings
+
+Required: No
+
+**SupportedRegion.N**
+
+The Regions from which service consumers can access the service.
+
+Type: Array of strings
+
+Required: No
+
+**TagSpecification.N**
+
+The tags to associate with the service.
+
+Type: Array of [TagSpecification](api-tagspecification.md) objects
+
+Required: No
+
+## Response Elements
+
+The following elements are returned by the service.
+
+**clientToken**
+
+Unique, case-sensitive identifier that you provide to ensure the idempotency of the
+request.
+
+Type: String
+
+**requestId**
+
+The ID of the request.
+
+Type: String
+
+**serviceConfiguration**
+
+Information about the service configuration.
+
+Type: [ServiceConfiguration](api-serviceconfiguration.md) object
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+
+## Examples
+
+### Example 1
+
+This example creates a VPC endpoint service configuration using the specified
+Network Load Balancer. This example also specifies that requests to connect to
+the service through a VPC endpoint must be accepted or rejected manually.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=CreateVpcEndpointServiceConfiguration
+&NetworkLoadBalancerArn.1=arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/net/my-nlb/e94221227f1ba532
+&AcceptanceRequired=true
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```
+
+<CreateVpcEndpointServiceConfigurationResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+    <requestId>1b2f25d4-9d9f-4256-a8e3-297f7example</requestId>
+    <serviceConfiguration>
+        <serviceState>Available</serviceState>
+        <serviceType>
+            <item>
+                <serviceType>Interface</serviceType>
+            </item>
+        </serviceType>
+        <baseEndpointDnsNameSet>
+            <item>vpce-svc-0552b9c1298c4f123.us-east-1.vpce.amazonaws.com</item>
+        </baseEndpointDnsNameSet>
+        <acceptanceRequired>true</acceptanceRequired>
+        <availabilityZoneSet>
+            <item>us-east-1d</item>
+        </availabilityZoneSet>
+        <serviceId>vpce-svc-0552b9c1298c4f123</serviceId>
+        <serviceName>com.amazonaws.vpce.us-east-1.vpce-svc-0552b9c1298c4f123</serviceName>
+        <networkLoadBalancerArnSet>
+            <item>arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/net/my-nlb/e94221227f1ba532</item>
+        </networkLoadBalancerArnSet>
+    </serviceConfiguration>
+</CreateVpcEndpointServiceConfigurationResponse>
+```
+
+### Example 2
+
+This example creates a VPC endpoint service configuration using the specified Gateway Load Balancer.
+This example also specifies that all requests to connect to the service are accepted automatically.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=CreateVpcEndpointServiceConfiguration
+&GatewayLoadBalancerArn.1=arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/gwy/GWLBService/abc210844e429abc
+&AcceptanceRequired=false
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```
+
+<CreateVpcEndpointServiceConfigurationResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+    <requestId>1b2f25d4-9d9f-4256-a8e3-297f7example</requestId>
+    <serviceConfiguration>
+        <serviceState>Available</serviceState>
+        <serviceType>
+            <item>
+                <serviceType>GatewayLoadBalancer</serviceType>
+            </item>
+        </serviceType>
+        <acceptanceRequired>false</acceptanceRequired>
+        <availabilityZoneSet>
+            <item>us-east-1d</item>
+        </availabilityZoneSet>
+        <serviceId>vpce-svc-123abcc1298abc123</serviceId>
+        <serviceName>com.amazonaws.vpce.us-east-1.vpce-svc-123abcc1298abc123</serviceName>
+        <gatewayLoadBalancerArnSet>
+            <item>arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/gwy/GWLBService/abc210844e429abc</item>
+        </gatewayLoadBalancerArnSet>
+    </serviceConfiguration>
+</CreateVpcEndpointServiceConfigurationResponse>
+```
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/createvpcendpointserviceconfiguration.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/createvpcendpointserviceconfiguration.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createvpcendpointserviceconfiguration.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createvpcendpointserviceconfiguration.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createvpcendpointserviceconfiguration.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createvpcendpointserviceconfiguration.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createvpcendpointserviceconfiguration.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createvpcendpointserviceconfiguration.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/createvpcendpointserviceconfiguration.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createvpcendpointserviceconfiguration.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+CreateVpcEndpointConnectionNotification
+
+CreateVpcPeeringConnection

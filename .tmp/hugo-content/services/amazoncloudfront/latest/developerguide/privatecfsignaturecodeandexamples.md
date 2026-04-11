@@ -1,0 +1,32 @@
+# Code examples for creating a signature for a signed URL
+
+This section includes downloadable application examples that demonstrate how to create
+signatures for signed URLs. Examples are available in Perl, PHP, C#, and Java. You can
+use any of the examples to create signed URLs. The Perl script runs on Linux and macOS
+platforms. The PHP example will work on any server that runs PHP. The C# example uses
+the .NET Framework.
+
+The examples in this section use SHA-1 to hash and sign the policy statement. You can also use SHA-256. To use SHA-256, update the hash algorithm in the signing function (for example, replace `sha1` with `sha256` in OpenSSL calls, or use the equivalent SHA-256 constant in your language's cryptographic library). When you use SHA-256, include the `Hash-Algorithm=SHA256` query parameter in the signed URL.
+
+For example code in JavaScript (Node.js), see [Creating Amazon CloudFront Signed URLs in Node.js](https://aws.amazon.com/blogs/developer/creating-amazon-cloudfront-signed-urls-in-node-js) on the AWS Developer Blog.
+
+For example code in Python, see [Generate a signed URL for Amazon CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html) in the _AWS SDK for Python (Boto3) API Reference_ and [this\
+example code](https://github.com/boto/boto3/blob/develop/boto3/examples/cloudfront.rst) in the Boto3 GitHub repository.
+
+###### Topics
+
+- [Create a URL signature using Perl](createurlperl.md)
+
+- [Create a URL signature using PHP](createurl-php.md)
+
+- [Create a URL signature using C# and the .NET Framework](createsignatureincsharp.md)
+
+- [Create a URL signature using Java](cfprivatedistjavadevelopment.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Linux commands and OpenSSL for base64 encoding and encryption
+
+Create a URL signature using Perl
+
+All content copied from https://docs.aws.amazon.com/.

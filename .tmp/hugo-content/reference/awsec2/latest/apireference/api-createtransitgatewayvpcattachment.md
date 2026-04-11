@@ -1,0 +1,158 @@
+# CreateTransitGatewayVpcAttachment
+
+Attaches the specified VPC to the specified transit gateway.
+
+If you attach a VPC with a CIDR range that overlaps the CIDR range of a VPC that is already attached,
+the new VPC CIDR range is not propagated to the default propagation route table.
+
+To send VPC traffic to an attached transit gateway, add a route to the VPC route table using [CreateRoute](api-createroute.md).
+
+## Request Parameters
+
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+
+**DryRun**
+
+Checks whether you have the required permissions for the action, without actually making the request,
+and provides an error response. If you have the required permissions, the error response is `DryRunOperation`.
+Otherwise, it is `UnauthorizedOperation`.
+
+Type: Boolean
+
+Required: No
+
+**Options**
+
+The VPC attachment options.
+
+Type: [CreateTransitGatewayVpcAttachmentRequestOptions](api-createtransitgatewayvpcattachmentrequestoptions.md) object
+
+Required: No
+
+**SubnetIds.N**
+
+The IDs of one or more subnets. You can specify only one subnet per Availability Zone.
+You must specify at least one subnet, but we recommend that you specify two subnets for better availability.
+The transit gateway uses one IP address from each specified subnet.
+
+Type: Array of strings
+
+Required: Yes
+
+**TagSpecifications.N**
+
+The tags to apply to the VPC attachment.
+
+Type: Array of [TagSpecification](api-tagspecification.md) objects
+
+Required: No
+
+**TransitGatewayId**
+
+The ID of the transit gateway.
+
+Type: String
+
+Required: Yes
+
+**VpcId**
+
+The ID of the VPC.
+
+Type: String
+
+Required: Yes
+
+## Response Elements
+
+The following elements are returned by the service.
+
+**requestId**
+
+The ID of the request.
+
+Type: String
+
+**transitGatewayVpcAttachment**
+
+Information about the VPC attachment.
+
+Type: [TransitGatewayVpcAttachment](api-transitgatewayvpcattachment.md) object
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+
+## Examples
+
+### Example
+
+This example creates a transit gateway VPC attachment for the specified transit
+gateway.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=CreateTransitGatewayVpcAttachment
+&TransitGatewayId=tgw-02f776b1a7EXAMPLE
+&VpcID=vpc-0065acced4EXAMPLE
+&SubnetIds.1=subnet-0187aff814EXAMPLE
+&Options.DnsSupport=enable
+&Options.Ipv6Support=disable
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```
+
+<CreateTransitGatewayVpcAttachmentResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+    <requestId>374ab4fd-5ccd-4d98-93f5-034c80f67d79</requestId>
+    <transitGatewayVpcAttachment>
+        <creationTime>2019-07-17T16:04:27.000Z</creationTime>
+        <options>
+            <dnsSupport>enable</dnsSupport>
+            <ipv6Support>disable</ipv6Support>
+        </options>
+        <state>pending</state>
+        <subnetIds>
+            <item>subnet-0187aff814EXAMPLE</item>
+        </subnetIds>
+        <transitGatewayAttachmentId>tgw-attach-0d2c54bdb3EXAMPLE</transitGatewayAttachmentId>
+        <transitGatewayId>tgw-02f776b1a7EXAMPLE</transitGatewayId>
+        <vpcId>vpc-0065acced4EXAMPLE</vpcId>
+        <vpcOwnerId>111122223333</vpcOwnerId>
+    </transitGatewayVpcAttachment>
+</CreateTransitGatewayVpcAttachmentResponse>
+```
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/createtransitgatewayvpcattachment.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/createtransitgatewayvpcattachment.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createtransitgatewayvpcattachment.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createtransitgatewayvpcattachment.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createtransitgatewayvpcattachment.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createtransitgatewayvpcattachment.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createtransitgatewayvpcattachment.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createtransitgatewayvpcattachment.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/createtransitgatewayvpcattachment.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createtransitgatewayvpcattachment.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+CreateTransitGatewayRouteTableAnnouncement
+
+CreateVerifiedAccessEndpoint

@@ -1,0 +1,252 @@
+# ListHostedZones
+
+Retrieves a list of the public and private hosted zones that are associated with the
+current AWS account. The response includes a `HostedZones`
+child element for each hosted zone.
+
+Amazon Route 53 returns a maximum of 100 items in each response. If you have a lot of
+hosted zones, you can use the `maxitems` parameter to list them in groups of
+up to 100.
+
+## Request Syntax
+
+```nohighlight
+
+GET /2013-04-01/hostedzone?delegationsetid=DelegationSetId&hostedzonetype=HostedZoneType&marker=Marker&maxitems=MaxItems HTTP/1.1
+
+```
+
+## URI Request Parameters
+
+The request uses the following URI parameters.
+
+**[delegationsetid](#API_ListHostedZones_RequestSyntax)**
+
+If you're using reusable delegation sets and you want to list all of the hosted zones
+that are associated with a reusable delegation set, specify the ID of that reusable
+delegation set.
+
+Length Constraints: Maximum length of 32.
+
+**[hostedzonetype](#API_ListHostedZones_RequestSyntax)**
+
+(Optional) Specifies if the hosted zone is private.
+
+Valid Values: `PrivateHostedZone`
+
+**[marker](#API_ListHostedZones_RequestSyntax)**
+
+If the value of `IsTruncated` in the previous response was
+`true`, you have more hosted zones. To get more hosted zones, submit
+another `ListHostedZones` request.
+
+For the value of `marker`, specify the value of `NextMarker`
+from the previous response, which is the ID of the first hosted zone that Amazon Route
+53 will return if you submit another request.
+
+If the value of `IsTruncated` in the previous response was
+`false`, there are no more hosted zones to get.
+
+Length Constraints: Maximum length of 64.
+
+**[maxitems](#API_ListHostedZones_RequestSyntax)**
+
+(Optional) The maximum number of hosted zones that you want Amazon Route 53 to return.
+If you have more than `maxitems` hosted zones, the value of
+`IsTruncated` in the response is `true`, and the value of
+`NextMarker` is the hosted zone ID of the first hosted zone that Route 53
+will return if you submit another request.
+
+## Request Body
+
+The request does not have a request body.
+
+## Response Syntax
+
+```nohighlight
+
+HTTP/1.1 200
+<?xml version="1.0" encoding="UTF-8"?>
+<ListHostedZonesResponse>
+   <HostedZones>
+      <HostedZone>
+         <CallerReference>string</CallerReference>
+         <Config>
+            <Comment>string</Comment>
+            <PrivateZone>boolean</PrivateZone>
+         </Config>
+         <Features>
+            <AcceleratedRecoveryStatus>string</AcceleratedRecoveryStatus>
+            <FailureReasons>
+               <AcceleratedRecovery>string</AcceleratedRecovery>
+            </FailureReasons>
+         </Features>
+         <Id>string</Id>
+         <LinkedService>
+            <Description>string</Description>
+            <ServicePrincipal>string</ServicePrincipal>
+         </LinkedService>
+         <Name>string</Name>
+         <ResourceRecordSetCount>long</ResourceRecordSetCount>
+      </HostedZone>
+   </HostedZones>
+   <IsTruncated>boolean</IsTruncated>
+   <Marker>string</Marker>
+   <MaxItems>string</MaxItems>
+   <NextMarker>string</NextMarker>
+</ListHostedZonesResponse>
+```
+
+## Response Elements
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in XML format by the service.
+
+**[ListHostedZonesResponse](#API_ListHostedZones_ResponseSyntax)**
+
+Root level tag for the ListHostedZonesResponse parameters.
+
+Required: Yes
+
+**[HostedZones](#API_ListHostedZones_ResponseSyntax)**
+
+A complex type that contains general information about the hosted zone.
+
+Type: Array of [HostedZone](api-hostedzone.md) objects
+
+**[IsTruncated](#API_ListHostedZones_ResponseSyntax)**
+
+A flag indicating whether there are more hosted zones to be listed. If the response
+was truncated, you can get more hosted zones by submitting another
+`ListHostedZones` request and specifying the value of
+`NextMarker` in the `marker` parameter.
+
+Type: Boolean
+
+**[Marker](#API_ListHostedZones_ResponseSyntax)**
+
+For the second and subsequent calls to `ListHostedZones`,
+`Marker` is the value that you specified for the `marker`
+parameter in the request that produced the current response.
+
+Type: String
+
+Length Constraints: Maximum length of 64.
+
+**[MaxItems](#API_ListHostedZones_ResponseSyntax)**
+
+The value that you specified for the `maxitems` parameter in the call to
+`ListHostedZones` that produced the current response.
+
+Type: String
+
+**[NextMarker](#API_ListHostedZones_ResponseSyntax)**
+
+If `IsTruncated` is `true`, the value of `NextMarker`
+identifies the first hosted zone in the next group of hosted zones. Submit another
+`ListHostedZones` request, and specify the value of
+`NextMarker` from the response in the `marker`
+parameter.
+
+This element is present only if `IsTruncated` is `true`.
+
+Type: String
+
+Length Constraints: Maximum length of 64.
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+
+**DelegationSetNotReusable**
+
+A reusable delegation set with the specified ID does not exist.
+
+**message**
+
+HTTP Status Code: 400
+
+**InvalidInput**
+
+The input is not valid.
+
+**message**
+
+HTTP Status Code: 400
+
+**NoSuchDelegationSet**
+
+A reusable delegation set with the specified ID does not exist.
+
+**message**
+
+HTTP Status Code: 400
+
+## Examples
+
+### Example Request
+
+This example illustrates one usage of ListHostedZones.
+
+```
+
+GET /2013-04-01/hostedzone?maxitems=1
+```
+
+### Example Response
+
+This example illustrates one usage of ListHostedZones.
+
+```
+
+HTTP/1.1 200 OK
+<?xml version="1.0" encoding="UTF-8"?>
+<ListHostedZonesResponse xmlns="https://route53.amazonaws.com/doc/2013-04-01/">
+   <HostedZones>
+      <HostedZone>
+         <Id>/hostedzone/Z111111QQQQQQQ</Id>
+         <Name>example.com.</Name>
+         <CallerReference>MyUniqueIdentifier1</CallerReference>
+         <Config>
+            <Comment>This is my first hosted zone.</Comment>
+            <PrivateZone>false</PrivateZone>
+         </Config>
+         <ResourceRecordSetCount>42</ResourceRecordSetCount>
+      </HostedZone>
+   </HostedZones>
+   <IsTruncated>true</IsTruncated>
+   <NextMarker>Z222222VVVVVVV</NextMarker>
+   <MaxItems>1</MaxItems>
+</ListHostedZonesResponse>
+```
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53-2013-04-01/listhostedzones.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53-2013-04-01/listhostedzones.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53-2013-04-01/listhostedzones.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53-2013-04-01/listhostedzones.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53-2013-04-01/listhostedzones.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53-2013-04-01/listhostedzones.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53-2013-04-01/listhostedzones.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53-2013-04-01/listhostedzones.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/route53-2013-04-01/listhostedzones.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53-2013-04-01/listhostedzones.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+ListHealthChecks
+
+ListHostedZonesByName

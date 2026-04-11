@@ -1,0 +1,62 @@
+# Deleting RDS Custom for Oracle automated backups
+
+###### Note
+
+End of support notice: On March 31, 2027, AWS will end support for Amazon RDS Custom for Oracle. After March 31, 2027, you will no longer be able to access the RDS Custom for Oracle console or RDS Custom for Oracle resources. For more information, see [RDS Custom for Oracle end of support](rds-custom-for-oracle-end-of-support.md).
+
+You can delete retained automated backups for RDS Custom for Oracle when they are no longer needed. The procedure is the
+same as the procedure for deleting Amazon RDS backups.
+
+###### To delete a retained automated backup
+
+1. Sign in to the AWS Management Console and open the Amazon RDS console at
+    [https://console.aws.amazon.com/rds/](https://console.aws.amazon.com/rds).
+
+2. In the navigation pane, choose **Automated backups**.
+
+3. Choose **Retained**.
+
+4. Choose the retained automated backup that you want to delete.
+
+5. For **Actions**, choose **Delete**.
+
+6. On the confirmation page, enter `delete me` and choose
+    **Delete**.
+
+You can delete a retained automated backup by using the AWS CLI command [delete-db-instance-automated-backup](../../../cli/latest/reference/rds/delete-db-instance-automated-backup.md).
+
+The following option is used to delete a retained automated backup:
+
+- `--dbi-resource-id` – The resource identifier for the source RDS Custom DB instance.
+
+You can find the resource identifier for the source DB instance of a retained automated backup by using the
+AWS CLI command [describe-db-instance-automated-backups](../../../cli/latest/reference/rds/describe-db-instance-automated-backups.md).
+
+The following example deletes the retained automated backup with source DB instance resource identifier
+`custom-db-123ABCEXAMPLE`.
+
+###### Example
+
+For Linux, macOS, or Unix:
+
+```nohighlight
+
+aws rds delete-db-instance-automated-backup \
+    --dbi-resource-id custom-db-123ABCEXAMPLE
+```
+
+For Windows:
+
+```nohighlight
+
+aws rds delete-db-instance-automated-backup ^
+    --dbi-resource-id custom-db-123ABCEXAMPLE
+```
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Deleting an RDS Custom for Oracle snapshot
+
+Working with option groups in RDS Custom for Oracle
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,0 +1,127 @@
+# DescribeVpcEndpointAssociations
+
+Describes the VPC resources, VPC endpoint services, Amazon Lattice services, or service networks
+associated with the VPC endpoint.
+
+## Request Parameters
+
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+
+**DryRun**
+
+Checks whether you have the required permissions for the action, without actually making the request,
+and provides an error response. If you have the required permissions, the error response is `DryRunOperation`.
+Otherwise, it is `UnauthorizedOperation`.
+
+Type: Boolean
+
+Required: No
+
+**Filter.N**
+
+The filters.
+
+- `vpc-endpoint-id` \- The ID of the VPC endpoint.
+
+- `associated-resource-accessibility` \- The association state. When the
+state is `accessible`, it returns `AVAILABLE`. When the state
+is `inaccessible`, it returns `PENDING` or
+`FAILED`.
+
+- `association-id` \- The ID of the VPC endpoint association.
+
+- `associated-resource-id` \- The ID of the associated resource
+configuration.
+
+- `service-network-arn` \- The Amazon Resource Name (ARN) of the
+associated service network. Only VPC endpoints of type service network will be
+returned.
+
+- `resource-configuration-group-arn` \- The Amazon Resource Name (ARN) of
+the resource configuration of type GROUP.
+
+Type: Array of [Filter](api-filter.md) objects
+
+Required: No
+
+**MaxResults**
+
+The maximum page size.
+
+Type: Integer
+
+Valid Range: Minimum value of 1. Maximum value of 100.
+
+Required: No
+
+**NextToken**
+
+The pagination token.
+
+Type: String
+
+Required: No
+
+**VpcEndpointId.N**
+
+The IDs of the VPC endpoints.
+
+Type: Array of strings
+
+Required: No
+
+## Response Elements
+
+The following elements are returned by the service.
+
+**nextToken**
+
+The pagination token.
+
+Type: String
+
+**requestId**
+
+The ID of the request.
+
+Type: String
+
+**vpcEndpointAssociationSet**
+
+Details of the endpoint associations.
+
+Type: Array of [VpcEndpointAssociation](api-vpcendpointassociation.md) objects
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/describevpcendpointassociations.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/describevpcendpointassociations.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/describevpcendpointassociations.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/describevpcendpointassociations.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/describevpcendpointassociations.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/describevpcendpointassociations.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/describevpcendpointassociations.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/describevpcendpointassociations.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/describevpcendpointassociations.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describevpcendpointassociations.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+DescribeVpcEncryptionControls
+
+DescribeVpcEndpointConnectionNotifications

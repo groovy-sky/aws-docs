@@ -1,0 +1,158 @@
+# ModifyIpamPool
+
+Modify the configurations of an IPAM pool.
+
+For more information, see [Modify a pool](../../../../services/vpc/latest/ipam/mod-pool-ipam.md) in the _Amazon VPC IPAM User Guide_.
+
+## Request Parameters
+
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+
+**AddAllocationResourceTag.N**
+
+Add tag allocation rules to a pool. For more information about allocation rules, see [Create a top-level pool](../../../../services/vpc/latest/ipam/create-top-ipam.md) in the _Amazon VPC IPAM User Guide_.
+
+Type: Array of [RequestIpamResourceTag](api-requestipamresourcetag.md) objects
+
+Required: No
+
+**AllocationDefaultNetmaskLength**
+
+The default netmask length for allocations added to this pool. If, for example, the CIDR assigned to this pool is 10.0.0.0/8 and you enter 16 here, new allocations will default to 10.0.0.0/16.
+
+Type: Integer
+
+Valid Range: Minimum value of 0. Maximum value of 128.
+
+Required: No
+
+**AllocationMaxNetmaskLength**
+
+The maximum netmask length possible for CIDR allocations in this IPAM pool to be compliant. Possible
+netmask lengths for IPv4 addresses are 0 - 32. Possible netmask lengths for IPv6 addresses are 0 - 128.The maximum netmask
+length must be greater than the minimum netmask length.
+
+Type: Integer
+
+Valid Range: Minimum value of 0. Maximum value of 128.
+
+Required: No
+
+**AllocationMinNetmaskLength**
+
+The minimum netmask length required for CIDR allocations in this IPAM pool to be compliant. Possible
+netmask lengths for IPv4 addresses are 0 - 32. Possible netmask lengths for IPv6 addresses are 0 - 128. The minimum netmask
+length must be less than the maximum netmask length.
+
+Type: Integer
+
+Valid Range: Minimum value of 0. Maximum value of 128.
+
+Required: No
+
+**AutoImport**
+
+If true, IPAM will continuously look for resources within the CIDR range of this pool
+and automatically import them as allocations into your IPAM. The CIDRs that will be allocated for
+these resources must not already be allocated to other resources in order for the import to succeed. IPAM will import
+a CIDR regardless of its compliance with the pool's allocation rules, so a resource might be imported and subsequently
+marked as noncompliant. If IPAM discovers multiple CIDRs that overlap, IPAM will import the largest CIDR only. If IPAM
+discovers multiple CIDRs with matching CIDRs, IPAM will randomly import one of them only.
+
+A locale must be set on the pool for this feature to work.
+
+Type: Boolean
+
+Required: No
+
+**ClearAllocationDefaultNetmaskLength**
+
+Clear the default netmask length allocation rule for this pool.
+
+Type: Boolean
+
+Required: No
+
+**Description**
+
+The description of the IPAM pool you want to modify.
+
+Type: String
+
+Required: No
+
+**DryRun**
+
+A check for whether you have the required permissions for the action without actually making the request
+and provides an error response. If you have the required permissions, the error response is `DryRunOperation`.
+Otherwise, it is `UnauthorizedOperation`.
+
+Type: Boolean
+
+Required: No
+
+**IpamPoolId**
+
+The ID of the IPAM pool you want to modify.
+
+Type: String
+
+Required: Yes
+
+**RemoveAllocationResourceTag.N**
+
+Remove tag allocation rules from a pool.
+
+Type: Array of [RequestIpamResourceTag](api-requestipamresourcetag.md) objects
+
+Required: No
+
+## Response Elements
+
+The following elements are returned by the service.
+
+**ipamPool**
+
+The results of the modification.
+
+Type: [IpamPool](api-ipampool.md) object
+
+**requestId**
+
+The ID of the request.
+
+Type: String
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/modifyipampool.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/modifyipampool.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/modifyipampool.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/modifyipampool.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/modifyipampool.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/modifyipampool.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/modifyipampool.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/modifyipampool.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/modifyipampool.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifyipampool.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+ModifyIpamPolicyAllocationRules
+
+ModifyIpamPrefixListResolver

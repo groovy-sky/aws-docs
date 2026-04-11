@@ -1,0 +1,81 @@
+AWS App Runner will no longer be open to new customers starting April 30, 2026. If you would like to use
+App Runner, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see
+[AWS App Runner availability\
+change](apprunner-availability-change.md).
+
+# Configuring health checks for your service
+
+AWS App Runner monitors the health of your service by performing health checks. The default health check protocol is TCP. App Runner pings the domain assigned to
+your service. You can alternatively set the health check protocol to HTTP. App Runner sends health check HTTP requests to your web application.
+
+You can configure a few settings related to health checks. The following table describes the health check settings and their default values.
+
+**Setting****Description****Default**
+
+Protocol
+
+The IP protocol that App Runner uses to perform health checks for your service.
+
+If you set the protocol to `TCP`, App Runner pings the default domain assigned to your service at the port that your application is
+listening to.
+
+If you set the protocol to `HTTP`, App Runner sends health check requests to the configured path.
+
+`TCP`
+
+Path
+
+The URL that App Runner sends HTTP health check requests to. Applicable only to HTTP checks.
+
+`/`
+
+Interval
+
+The time interval, in seconds, between health checks.
+
+`5`
+
+Timeout
+
+The time, in seconds, to wait for a health check response before deciding it failed.
+
+`2`
+
+Healthy threshold
+
+The number of consecutive checks that must succeed before App Runner decides that the service is healthy.
+
+`1`
+
+Unhealthy threshold
+
+The number of consecutive checks that must fail before App Runner decides that the service is unhealthy.
+
+`5`
+
+## Configure health checks
+
+Configure health checks for your App Runner service using one of the following methods:
+
+App Runner console
+
+When you create your App Runner service using the App Runner console, or when you update its configuration later, you can configure health check settings.
+For full console procedures, see [Creating an App Runner service](manage-create.md) and [Configuring an App Runner service](manage-configure.md). In both cases, look for the
+**Health check** configuration section on the console page.
+
+![App Runner console configuration page showing health check options](https://docs.aws.amazon.com/images/apprunner/latest/dg/images/console-health-check.png)
+
+App Runner API or AWS CLI
+
+When you call the [CreateService](../api/api-createservice.md) or [UpdateService](../api/api-updateservice.md) API actions, you can use the `HealthCheckConfiguration` parameter to specify health check settings.
+
+For information about the parameter's structure, see [HealthCheckConfiguration](../api/api-healthcheckconfiguration.md)
+in the _AWS App Runner API Reference_.
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Configuration resources
+
+Connections
+
+All content copied from https://docs.aws.amazon.com/.

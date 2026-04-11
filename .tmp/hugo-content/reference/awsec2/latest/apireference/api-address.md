@@ -1,0 +1,159 @@
+# Address
+
+Describes an Elastic IP address, or a carrier IP address.
+
+## Contents
+
+**allocationId**
+
+The ID representing the allocation of the address.
+
+Type: String
+
+Required: No
+
+**associationId**
+
+The ID representing the association of the address with an instance.
+
+Type: String
+
+Required: No
+
+**carrierIp**
+
+The carrier IP address associated. This option is only available for network interfaces
+which reside in a subnet in a Wavelength Zone (for example an EC2 instance).
+
+Type: String
+
+Required: No
+
+**customerOwnedIp**
+
+The customer-owned IP address.
+
+Type: String
+
+Required: No
+
+**customerOwnedIpv4Pool**
+
+The ID of the customer-owned address pool.
+
+Type: String
+
+Required: No
+
+**domain**
+
+The network ( `vpc`).
+
+Type: String
+
+Valid Values: `vpc | standard`
+
+Required: No
+
+**instanceId**
+
+The ID of the instance that the address is associated with (if any).
+
+Type: String
+
+Required: No
+
+**networkBorderGroup**
+
+The name of the unique set of Availability Zones, Local Zones, or Wavelength Zones from
+which AWS advertises IP addresses.
+
+Type: String
+
+Required: No
+
+**networkInterfaceId**
+
+The ID of the network interface.
+
+Type: String
+
+Required: No
+
+**networkInterfaceOwnerId**
+
+The ID of the AWS account that owns the network interface.
+
+Type: String
+
+Required: No
+
+**privateIpAddress**
+
+The private IP address associated with the Elastic IP address.
+
+Type: String
+
+Required: No
+
+**publicIp**
+
+The Elastic IP address.
+
+Type: String
+
+Required: No
+
+**publicIpv4Pool**
+
+The ID of an address pool.
+
+Type: String
+
+Required: No
+
+**serviceManaged**
+
+The service that manages the elastic IP address.
+
+###### Note
+
+The only option supported today is `alb`.
+
+Type: String
+
+Valid Values: `alb | nlb | rnat | rds`
+
+Required: No
+
+**subnetId**
+
+The ID of the subnet where the IP address is allocated.
+
+Type: String
+
+Required: No
+
+**TagSet.N**
+
+Any tags assigned to the Elastic IP address.
+
+Type: Array of [Tag](api-tag.md) objects
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/address.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/address.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/address.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+AddPrefixListEntry
+
+AddressAttribute

@@ -1,0 +1,149 @@
+# FpgaImage
+
+Describes an Amazon FPGA image (AFI).
+
+## Contents
+
+**createTime**
+
+The date and time the AFI was created.
+
+Type: Timestamp
+
+Required: No
+
+**dataRetentionSupport**
+
+Indicates whether data retention support is enabled for the AFI.
+
+Type: Boolean
+
+Required: No
+
+**description**
+
+The description of the AFI.
+
+Type: String
+
+Required: No
+
+**fpgaImageGlobalId**
+
+The global FPGA image identifier (AGFI ID).
+
+Type: String
+
+Required: No
+
+**fpgaImageId**
+
+The FPGA image identifier (AFI ID).
+
+Type: String
+
+Required: No
+
+**InstanceTypes.N**
+
+The instance types supported by the AFI.
+
+Type: Array of strings
+
+Required: No
+
+**name**
+
+The name of the AFI.
+
+Type: String
+
+Required: No
+
+**ownerAlias**
+
+The alias of the AFI owner. Possible values include `self`, `amazon`, and `aws-marketplace`.
+
+Type: String
+
+Required: No
+
+**ownerId**
+
+The ID of the AWS account that owns the AFI.
+
+Type: String
+
+Required: No
+
+**pciId**
+
+Information about the PCI bus.
+
+Type: [PciId](api-pciid.md) object
+
+Required: No
+
+**ProductCodes.N**
+
+The product codes for the AFI.
+
+Type: Array of [ProductCode](api-productcode.md) objects
+
+Required: No
+
+**public**
+
+Indicates whether the AFI is public.
+
+Type: Boolean
+
+Required: No
+
+**shellVersion**
+
+The version of the AWS Shell that was used to create the bitstream.
+
+Type: String
+
+Required: No
+
+**state**
+
+Information about the state of the AFI.
+
+Type: [FpgaImageState](api-fpgaimagestate.md) object
+
+Required: No
+
+**Tags.N**
+
+Any tags assigned to the AFI.
+
+Type: Array of [Tag](api-tag.md) objects
+
+Required: No
+
+**updateTime**
+
+The time of the most recent update to the AFI.
+
+Type: Timestamp
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/fpgaimage.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/fpgaimage.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/fpgaimage.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+FpgaDeviceMemoryInfo
+
+FpgaImageAttribute

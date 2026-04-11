@@ -1,0 +1,176 @@
+# UpdateFindings
+
+Updates the status for the specified findings.
+
+## Request Syntax
+
+```nohighlight
+
+PUT /finding HTTP/1.1
+Content-type: application/json
+
+{
+   "analyzerArn": "string",
+   "clientToken": "string",
+   "ids": [ "string" ],
+   "resourceArn": "string",
+   "status": "string"
+}
+```
+
+## URI Request Parameters
+
+The request does not use any URI parameters.
+
+## Request Body
+
+The request accepts the following data in JSON format.
+
+**[analyzerArn](#API_UpdateFindings_RequestSyntax)**
+
+The [ARN of\
+the analyzer](../../../../services/iam/latest/userguide/access-analyzer-getting-started.md#permission-resources) that generated the findings to update.
+
+Type: String
+
+Pattern: `[^:]*:[^:]*:[^:]*:[^:]*:[^:]*:analyzer/.{1,255}`
+
+Required: Yes
+
+**[clientToken](#API_UpdateFindings_RequestSyntax)**
+
+A client token.
+
+Type: String
+
+Required: No
+
+**[ids](#API_UpdateFindings_RequestSyntax)**
+
+The IDs of the findings to update.
+
+Type: Array of strings
+
+Required: No
+
+**[resourceArn](#API_UpdateFindings_RequestSyntax)**
+
+The ARN of the resource identified in the finding.
+
+Type: String
+
+Pattern: `arn:[^:]*:[^:]*:[^:]*:[^:]*:.*`
+
+Required: No
+
+**[status](#API_UpdateFindings_RequestSyntax)**
+
+The state represents the action to take to update the finding Status. Use
+`ARCHIVE` to change an Active finding to an Archived finding. Use
+`ACTIVE` to change an Archived finding to an Active finding.
+
+Type: String
+
+Valid Values: `ACTIVE | ARCHIVED`
+
+Required: Yes
+
+## Response Syntax
+
+```
+
+HTTP/1.1 200
+
+```
+
+## Response Elements
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+
+**AccessDeniedException**
+
+You do not have sufficient access to perform this action.
+
+HTTP Status Code: 403
+
+**InternalServerException**
+
+Internal server error.
+
+**retryAfterSeconds**
+
+The seconds to wait to retry.
+
+HTTP Status Code: 500
+
+**ResourceNotFoundException**
+
+The specified resource could not be found.
+
+**resourceId**
+
+The ID of the resource.
+
+**resourceType**
+
+The type of the resource.
+
+HTTP Status Code: 404
+
+**ThrottlingException**
+
+Throttling limit exceeded error.
+
+**retryAfterSeconds**
+
+The seconds to wait to retry.
+
+HTTP Status Code: 429
+
+**ValidationException**
+
+Validation exception error.
+
+**fieldList**
+
+A list of fields that didn't validate.
+
+**reason**
+
+The reason for the exception.
+
+HTTP Status Code: 400
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/accessanalyzer-2019-11-01/updatefindings.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/accessanalyzer-2019-11-01/updatefindings.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/accessanalyzer-2019-11-01/updatefindings.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/accessanalyzer-2019-11-01/updatefindings.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/accessanalyzer-2019-11-01/updatefindings.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/accessanalyzer-2019-11-01/updatefindings.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/accessanalyzer-2019-11-01/updatefindings.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/accessanalyzer-2019-11-01/updatefindings.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/accessanalyzer-2019-11-01/updatefindings.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/accessanalyzer-2019-11-01/updatefindings.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+UpdateArchiveRule
+
+ValidatePolicy

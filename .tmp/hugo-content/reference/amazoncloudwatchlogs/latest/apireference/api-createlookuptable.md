@@ -1,0 +1,199 @@
+# CreateLookupTable
+
+Creates a lookup table by uploading CSV data. You can use lookup tables to enrich log
+data in CloudWatch Logs Insights queries with reference data such as user details, application
+names, or error descriptions.
+
+The table name must be unique within your account and Region. The CSV content must include
+a header row with column names, use UTF-8 encoding, and not exceed 10 MB.
+
+## Request Syntax
+
+```nohighlight
+
+{
+   "description": "string",
+   "kmsKeyId": "string",
+   "lookupTableName": "string",
+   "tableBody": "string",
+   "tags": {
+      "string" : "string"
+   }
+}
+```
+
+## Request Parameters
+
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+
+The request accepts the following data in JSON format.
+
+**[description](#API_CreateLookupTable_RequestSyntax)**
+
+A description of the lookup table. The description can be up to 1024 characters
+long.
+
+Type: String
+
+Length Constraints: Minimum length of 0. Maximum length of 1024.
+
+Required: No
+
+**[kmsKeyId](#API_CreateLookupTable_RequestSyntax)**
+
+The ARN of the AWS KMS key to use to encrypt the lookup table data. If you
+don't specify a key, the data is encrypted with an AWS-owned key.
+
+Type: String
+
+Length Constraints: Maximum length of 256.
+
+Required: No
+
+**[lookupTableName](#API_CreateLookupTable_RequestSyntax)**
+
+The name of the lookup table. The name must be unique within your account and Region.
+The name can contain only alphanumeric characters and underscores, and can be up to
+256 characters long.
+
+Type: String
+
+Length Constraints: Minimum length of 1. Maximum length of 256.
+
+Pattern: `^[a-zA-Z0-9_]+$`
+
+Required: Yes
+
+**[tableBody](#API_CreateLookupTable_RequestSyntax)**
+
+The CSV content of the lookup table. The first row must be a header row with column
+names. The content must use UTF-8 encoding and not exceed 10 MB.
+
+Type: String
+
+Length Constraints: Minimum length of 1. Maximum length of 10485760.
+
+Required: Yes
+
+**[tags](#API_CreateLookupTable_RequestSyntax)**
+
+A list of key-value pairs to associate with the lookup table. You can associate as many
+as 50 tags with a lookup table. Tags can help you organize and categorize your
+resources.
+
+Type: String to string map
+
+Map Entries: Maximum number of 50 items.
+
+Key Length Constraints: Minimum length of 1. Maximum length of 128.
+
+Key Pattern: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]+)$`
+
+Value Length Constraints: Maximum length of 256.
+
+Value Pattern: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
+
+Required: No
+
+## Response Syntax
+
+```nohighlight
+
+{
+   "createdAt": number,
+   "lookupTableArn": "string"
+}
+```
+
+## Response Elements
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+**[createdAt](#API_CreateLookupTable_ResponseSyntax)**
+
+The time when the lookup table was created, expressed as the number of milliseconds
+after `Jan 1, 1970 00:00:00 UTC`.
+
+Type: Long
+
+Valid Range: Minimum value of 0.
+
+**[lookupTableArn](#API_CreateLookupTable_ResponseSyntax)**
+
+The ARN of the lookup table that was created.
+
+Type: String
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+
+**AccessDeniedException**
+
+You don't have sufficient permissions to perform this action.
+
+HTTP Status Code: 400
+
+**InvalidParameterException**
+
+A parameter is specified incorrectly.
+
+HTTP Status Code: 400
+
+**LimitExceededException**
+
+You have reached the maximum number of resources that can be created.
+
+HTTP Status Code: 400
+
+**ResourceAlreadyExistsException**
+
+The specified resource already exists.
+
+HTTP Status Code: 400
+
+**ServiceUnavailableException**
+
+The service cannot complete the request.
+
+HTTP Status Code: 500
+
+**ValidationException**
+
+One of the parameters for the request is not valid.
+
+HTTP Status Code: 400
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/logs-2014-03-28/createlookuptable.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/logs-2014-03-28/createlookuptable.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/createlookuptable.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/logs-2014-03-28/createlookuptable.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/createlookuptable.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/logs-2014-03-28/createlookuptable.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/logs-2014-03-28/createlookuptable.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/logs-2014-03-28/createlookuptable.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/logs-2014-03-28/createlookuptable.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/createlookuptable.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+CreateLogStream
+
+CreateScheduledQuery
+
+All content copied from https://docs.aws.amazon.com/.

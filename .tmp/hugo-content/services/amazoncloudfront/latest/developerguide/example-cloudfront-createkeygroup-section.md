@@ -1,0 +1,54 @@
+# Use `CreateKeyGroup` with an AWS SDK
+
+The following code example shows how to use `CreateKeyGroup`.
+
+Java
+
+**SDK for Java 2.x**
+
+###### Note
+
+There's more on GitHub. Find the complete example and learn how to set up and run in the
+[AWS Code\
+Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudfront).
+
+A key group requires at least one public key that is used to verify signed URLs or cookies.
+
+```java
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import software.amazon.awssdk.services.cloudfront.CloudFrontClient;
+
+import java.util.UUID;
+
+public class CreateKeyGroup {
+    private static final Logger logger = LoggerFactory.getLogger(CreateKeyGroup.class);
+
+    public static String createKeyGroup(CloudFrontClient cloudFrontClient, String publicKeyId) {
+        String keyGroupId = cloudFrontClient.createKeyGroup(b -> b.keyGroupConfig(c -> c
+                .items(publicKeyId)
+                .name("JavaKeyGroup" + UUID.randomUUID())))
+                .keyGroup().id();
+        logger.info("KeyGroup created with ID: [{}]", keyGroupId);
+        return keyGroupId;
+    }
+}
+
+```
+
+- For API details, see
+[CreateKeyGroup](../../../../reference/goto/sdkforjavav2/cloudfront-2020-05-31/createkeygroup.md)
+in _AWS SDK for Java 2.x API Reference_.
+
+For a complete list of AWS SDK developer guides and code examples, see
+[Using CloudFront with an AWS SDK](../../../../reference/amazoncloudfront/latest/developerguide/sdk-general-information-section.md).
+This topic also includes information about getting started and details about previous SDK versions.
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+CreateInvalidation
+
+CreatePublicKey
+
+All content copied from https://docs.aws.amazon.com/.

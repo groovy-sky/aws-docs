@@ -1,0 +1,1049 @@
+AWS Audit Manager will no longer be open to new customers starting
+April 30, 2026. If you would like to use Audit Manager, sign up prior to that date. Existing customers
+can continue to use the service as normal. For more information, see
+[AWS Audit Manager availability change](audit-manager-availability-change.md).
+
+# GDPR 2016
+
+AWS Audit Manager provides a prebuilt standard framework that supports the General Data
+Protection Regulation (GDPR) 2016.
+
+This framework contains only manual controls. These manual controls don't collect
+evidence automatically. However, if you want to automate evidence collection for some
+controls under GDPR, you can use the custom control feature in Audit Manager. For more information,
+see [Using this framework](#framework-GDPR).
+
+###### Topics
+
+- [What is the GDPR?](#what-is-GDPR)
+
+- [Using this framework](#framework-GDPR)
+
+- [Next steps](#next-steps-GDPR)
+
+- [Additional resources](#resources-GDPR)
+
+## What is the GDPR?
+
+The GDPR is a European privacy law that became enforceable on May 25, 2018. The GDPR
+replaces the EU Data Protection Directive, also known as [Directive 95/46/EC](http://en.wikipedia.org/wiki/Data_Protection_Directive).
+It's intended to harmonize data protection laws throughout the European Union (EU). It
+does this by applying a single data protection law that's binding throughout each EU
+member state.
+
+The GDPR applies to all organizations that are established in the EU and to
+organizations (no matter whether they were established in the EU) that process the
+personal data of EU data subjects in connection with either the offering of goods or
+services to data subjects in the EU or the monitoring of behavior that takes place within
+the EU. Personal data is any information that relates to an identified or identifiable
+natural person.
+
+You can find the GDPR framework in the framework library page of Audit Manager. For more
+information, see the [General Data\
+Protection Regulation (GDPR) Center](https://aws.amazon.com/compliance/gdpr-center).
+
+## Using this framework
+
+You can use the GDPR 2016 framework in Audit Manager to help you prepare for audits.
+
+The framework details are as follows:
+
+Framework name in AWS Audit ManagerNumber of automated controlsNumber of manual controlsNumber of control setsGeneral Data Protection Regulation (GDPR) 2016037810
+
+This standard framework contains manual controls only.
+
+###### Note
+
+If you want to automate evidence collection for GDPR, you can use Audit Manager to [create\
+your own custom controls](create-controls.md) for GDPR. The following table provides
+recommendations on the AWS data sources that you can map to GDPR requirements in your
+custom controls. Although some of the following data sources are mapped to multiple
+controls, keep in mind that you're charged only once for each resource
+assessment.
+
+The following recommendations use AWS Config and AWS Security Hub CSPM as data sources. To
+successfully collect evidence from these data sources, make sure that you followed the
+instructions to [enable and set up\
+AWS Config and AWS Security Hub CSPM](setup-recommendations.md) in your AWS account. After you've set up both
+services in this way, Audit Manager collects evidence each time an evaluation occurs for the
+specified AWS Config rule or Security Hub CSPM control.
+
+Control nameControl setRecommended control data source mapping
+
+Article 25 Data protection by design and by default.1
+
+Chapter 4 - Controller and Processor
+
+You can [create a custom\
+control](create-controls.md) in AWS Audit Manager that supports this GDPR control.
+
+When
+you [specify the control details](customize-control-from-scratch.md#from-scratch-step-1), enter the following under
+**Testing information**:
+
+- Show all root account events over term
+
+- AWS CloudTrail bucket not public
+
+- Show all policies with an `Allow:*:*` and list all principals
+and services using those policies
+
+When you [set up the control data sources](customize-control-from-scratch.md#from-scratch-step-2), we recommend that you include all of
+the following as data sources:
+
+Choose AWS Config as the data source type, and
+select the following AWS Config managed rules as data source mappings:
+
+- [IAM\_ROOT\_ACCESS\_KEY\_CHECK](../../../config/latest/developerguide/iam-root-access-key-check.md)
+
+- [ROOT\_ACCOUNT\_MFA\_ENABLED](../../../config/latest/developerguide/root-account-mfa-enabled.md)
+
+- [ROOT\_ACCOUNT\_HARDWARE\_MFA\_ENABLED](../../../config/latest/developerguide/root-account-hardware-mfa-enabled.md)
+
+- [VPC\_FLOW\_LOGS\_ENABLED](../../../config/latest/developerguide/vpc-flow-logs-enabled.md)
+
+- [ACCESS\_KEYS\_ROTATED](../../../config/latest/developerguide/access-keys-rotated.md)
+
+- [IAM\_PASSWORD\_POLICY](../../../config/latest/developerguide/iam-password-policy.md)
+
+Choose AWS Security Hub CSPM as the data source type, and select the
+following Security Hub controls as data source mappings:
+
+- 1.1 ( [CloudWatch.1](../../../securityhub/latest/userguide/cloudwatch-controls.md#cloudwatch-1))
+
+- 1.1 ( [IAM.20](../../../securityhub/latest/userguide/iam-controls.md#iam-20))
+
+- 1.10 ( [IAM.16](../../../securityhub/latest/userguide/iam-controls.md#iam-16))
+
+- 1.11 ( [IAM.17](../../../securityhub/latest/userguide/iam-controls.md#iam-17))
+
+- 1.12 ( [IAM.4](../../../securityhub/latest/userguide/iam-controls.md#iam-4))
+
+- 1.13 ( [IAM.9](../../../securityhub/latest/userguide/iam-controls.md#iam-9))
+
+- 1.14 ( [IAM.6](../../../securityhub/latest/userguide/iam-controls.md#iam-6))
+
+- 1.16 ( [IAM.2](../../../securityhub/latest/userguide/iam-controls.md#iam-2))
+
+- 1.2 ( [IAM.5](../../../securityhub/latest/userguide/iam-controls.md#iam-5)
+
+- 1.20 ( [IAM.18](../../../securityhub/latest/userguide/iam-controls.md#iam-18))
+
+- 1.22 ( [IAM.1](../../../securityhub/latest/userguide/iam-controls.md#iam-1)
+
+- 1.3 ( [IAM.8](../../../securityhub/latest/userguide/iam-controls.md#iam-8))
+
+- 1.4 ( [IAM.3](../../../securityhub/latest/userguide/iam-controls.md#iam-3))
+
+- 1.5 ( [IAM.11](../../../securityhub/latest/userguide/iam-controls.md#iam-11))
+
+- 1.6 ( [IAM.12](../../../securityhub/latest/userguide/iam-controls.md#iam-12))
+
+- 1.7 ( [IAM.13](../../../securityhub/latest/userguide/iam-controls.md#iam-13))
+
+- 1.8 ( [IAM.14](../../../securityhub/latest/userguide/iam-controls.md#iam-14))
+
+- 1.9 ( [IAM.15](../../../securityhub/latest/userguide/iam-controls.md#iam-15))
+
+- 2.1 ( [CloudTrail.1](../../../securityhub/latest/userguide/cloudtrail-controls.md#cloudtrail-1))
+
+- 2.2 ( [CloudTrail.4](../../../securityhub/latest/userguide/cloudtrail-controls.md#cloudtrail-4))
+
+- 2.3 ( [CloudTrail.6](../../../securityhub/latest/userguide/cloudtrail-controls.md#cloudtrail-6))
+
+- 2.4 ( [CloudTrail.5](../../../securityhub/latest/userguide/cloudtrail-controls.md#cloudtrail-5))
+
+- 2.5 ( [Config.1](../../../securityhub/latest/userguide/config-controls.md#config-1))
+
+- 2.6 ( [CloudTrail.7](../../../securityhub/latest/userguide/cloudtrail-controls.md#cloudtrail-7))
+
+- 2.7 ( [CloudTrail.2](../../../securityhub/latest/userguide/cloudtrail-controls.md#cloudtrail-2))
+
+- 2.8 ( [KMS.4)](../../../securityhub/latest/userguide/kms-controls.md#kms-4)
+
+- 2.9 ( [EC2.6](../../../securityhub/latest/userguide/ec2-controls.md#ec2-6))
+
+- 3.1 ( [CloudWatch.2](../../../securityhub/latest/userguide/cloudwatch-controls.md#cloudwatch-2))
+
+- 3.10 ( [CloudWatch.10](../../../securityhub/latest/userguide/cloudwatch-controls.md#cloudwatch-10))
+
+- 3.11 ( [CloudWatch.11](../../../securityhub/latest/userguide/cloudwatch-controls.md#cloudwatch-11))
+
+- 3.12 ( [CloudWatch.12](../../../securityhub/latest/userguide/cloudwatch-controls.md#cloudwatch-12))
+
+- 3.13 ( [CloudWatch.13](../../../securityhub/latest/userguide/cloudwatch-controls.md#cloudwatch-13))
+
+- 3.14 ( [CloudWatch.14](../../../securityhub/latest/userguide/cloudwatch-controls.md#cloudwatch-14))
+
+- [Config.1](../../../securityhub/latest/userguide/config-controls.md#config-1)
+
+Article 25 Data protection by design and by default.2
+
+Chapter 4 - Controller and Processor
+
+You can [create a custom\
+control](create-controls.md) in AWS Audit Manager that supports this GDPR control.
+
+When
+you [specify the control details](customize-control-from-scratch.md#from-scratch-step-1), enter the following under
+**Testing information**:
+
+- Show all root account events over term
+
+- AWS CloudTrail bucket not public
+
+- Show all policies with an `Allow:*:*` and list all principals
+and services using those policies
+
+When you [set up the control data sources](customize-control-from-scratch.md#from-scratch-step-2), we recommend that you include all of
+the following as data sources:
+
+Choose AWS Config as the data source type, and
+select the following AWS Config managed rules as data source mappings:
+
+- [IAM\_ROOT\_ACCESS\_KEY\_CHECK](../../../config/latest/developerguide/iam-root-access-key-check.md)
+
+- [ROOT\_ACCOUNT\_MFA\_ENABLED](../../../config/latest/developerguide/root-account-mfa-enabled.md)
+
+- [ROOT\_ACCOUNT\_HARDWARE\_MFA\_ENABLED](../../../config/latest/developerguide/root-account-hardware-mfa-enabled.md)
+
+- [VPC\_FLOW\_LOGS\_ENABLED](../../../config/latest/developerguide/vpc-flow-logs-enabled.md)
+
+- [ACCESS\_KEYS\_ROTATED](../../../config/latest/developerguide/access-keys-rotated.md)
+
+- [IAM\_PASSWORD\_POLICY](../../../config/latest/developerguide/iam-password-policy.md)
+
+Choose AWS Security Hub CSPM as the data source type, and select the
+following Security Hub controls as data source mappings:
+
+- 1.1 ( [CloudWatch.1](../../../securityhub/latest/userguide/cloudwatch-controls.md#cloudwatch-1))
+
+- 1.1 ( [IAM.20](../../../securityhub/latest/userguide/iam-controls.md#iam-20))
+
+- 1.10 ( [IAM.16](../../../securityhub/latest/userguide/iam-controls.md#iam-16))
+
+- 1.11 ( [IAM.17](../../../securityhub/latest/userguide/iam-controls.md#iam-17))
+
+- 1.12 ( [IAM.4](../../../securityhub/latest/userguide/iam-controls.md#iam-4))
+
+- 1.13 ( [IAM.9](../../../securityhub/latest/userguide/iam-controls.md#iam-9))
+
+- 1.14 ( [IAM.6](../../../securityhub/latest/userguide/iam-controls.md#iam-6))
+
+- 1.16 ( [IAM.2](../../../securityhub/latest/userguide/iam-controls.md#iam-2))
+
+- 1.2 ( [IAM.5](../../../securityhub/latest/userguide/iam-controls.md#iam-5)
+
+- 1.20 ( [IAM.18](../../../securityhub/latest/userguide/iam-controls.md#iam-18))
+
+- 1.22 ( [IAM.1](../../../securityhub/latest/userguide/iam-controls.md#iam-1)
+
+- 1.3 ( [IAM.8](../../../securityhub/latest/userguide/iam-controls.md#iam-8))
+
+- 1.4 ( [IAM.3](../../../securityhub/latest/userguide/iam-controls.md#iam-3))
+
+- 1.5 ( [IAM.11](../../../securityhub/latest/userguide/iam-controls.md#iam-11))
+
+- 1.6 ( [IAM.12](../../../securityhub/latest/userguide/iam-controls.md#iam-12))
+
+- 1.7 ( [IAM.13](../../../securityhub/latest/userguide/iam-controls.md#iam-13))
+
+- 1.8 ( [IAM.14](../../../securityhub/latest/userguide/iam-controls.md#iam-14))
+
+- 1.9 ( [IAM.15](../../../securityhub/latest/userguide/iam-controls.md#iam-15))
+
+- 2.1 ( [CloudTrail.1](../../../securityhub/latest/userguide/cloudtrail-controls.md#cloudtrail-1))
+
+- 2.2 ( [CloudTrail.4](../../../securityhub/latest/userguide/cloudtrail-controls.md#cloudtrail-4))
+
+- 2.3 ( [CloudTrail.6](../../../securityhub/latest/userguide/cloudtrail-controls.md#cloudtrail-6))
+
+- 2.4 ( [CloudTrail.5](../../../securityhub/latest/userguide/cloudtrail-controls.md#cloudtrail-5))
+
+- 2.5 ( [Config.1](../../../securityhub/latest/userguide/config-controls.md#config-1))
+
+- 2.6 ( [CloudTrail.7](../../../securityhub/latest/userguide/cloudtrail-controls.md#cloudtrail-7))
+
+- 2.7 ( [CloudTrail.2](../../../securityhub/latest/userguide/cloudtrail-controls.md#cloudtrail-2))
+
+- 2.8 ( [KMS.4)](../../../securityhub/latest/userguide/kms-controls.md#kms-4)
+
+- 2.9 ( [EC2.6](../../../securityhub/latest/userguide/ec2-controls.md#ec2-6))
+
+- 3.1 ( [CloudWatch.2](../../../securityhub/latest/userguide/cloudwatch-controls.md#cloudwatch-2))
+
+- 3.10 ( [CloudWatch.10](../../../securityhub/latest/userguide/cloudwatch-controls.md#cloudwatch-10))
+
+- 3.11 ( [CloudWatch.11](../../../securityhub/latest/userguide/cloudwatch-controls.md#cloudwatch-11))
+
+- 3.12 ( [CloudWatch.12](../../../securityhub/latest/userguide/cloudwatch-controls.md#cloudwatch-12))
+
+- 3.13 ( [CloudWatch.13](../../../securityhub/latest/userguide/cloudwatch-controls.md#cloudwatch-13))
+
+- 3.14 ( [CloudWatch.14](../../../securityhub/latest/userguide/cloudwatch-controls.md#cloudwatch-14))
+
+- [Config.1](../../../securityhub/latest/userguide/config-controls.md#config-1)
+
+Article 25 Data protection by design and by default.3
+
+Chapter 4 - Controller and Processor
+
+You can [create a custom\
+control](create-controls.md) in AWS Audit Manager that supports this GDPR control.
+
+When
+you [specify the control details](customize-control-from-scratch.md#from-scratch-step-1), enter the following under
+**Testing information**:
+
+- Show all root account events over term
+
+- AWS CloudTrail bucket not public
+
+- Show all policies with an `Allow:*:*` and list all principals
+and services using those policies
+
+When you [set up the control data sources](customize-control-from-scratch.md#from-scratch-step-2), we recommend that you include all of
+the following as data sources:
+
+Choose AWS Config as the data source type, and
+select the following AWS Config managed rules as data source mappings:
+
+- [IAM\_ROOT\_ACCESS\_KEY\_CHECK](../../../config/latest/developerguide/iam-root-access-key-check.md)
+
+- [ROOT\_ACCOUNT\_MFA\_ENABLED](../../../config/latest/developerguide/root-account-mfa-enabled.md)
+
+- [ROOT\_ACCOUNT\_HARDWARE\_MFA\_ENABLED](../../../config/latest/developerguide/root-account-hardware-mfa-enabled.md)
+
+- [VPC\_FLOW\_LOGS\_ENABLED](../../../config/latest/developerguide/vpc-flow-logs-enabled.md)
+
+- [ACCESS\_KEYS\_ROTATED](../../../config/latest/developerguide/access-keys-rotated.md)
+
+- [IAM\_PASSWORD\_POLICY](../../../config/latest/developerguide/iam-password-policy.md)
+
+Choose AWS Security Hub CSPM as the data source type, and select the
+following Security Hub controls as data source mappings:
+
+- 1.1 ( [CloudWatch.1](../../../securityhub/latest/userguide/cloudwatch-controls.md#cloudwatch-1))
+
+- 1.1 ( [IAM.20](../../../securityhub/latest/userguide/iam-controls.md#iam-20))
+
+- 1.10 ( [IAM.16](../../../securityhub/latest/userguide/iam-controls.md#iam-16))
+
+- 1.11 ( [IAM.17](../../../securityhub/latest/userguide/iam-controls.md#iam-17))
+
+- 1.12 ( [IAM.4](../../../securityhub/latest/userguide/iam-controls.md#iam-4))
+
+- 1.13 ( [IAM.9](../../../securityhub/latest/userguide/iam-controls.md#iam-9))
+
+- 1.14 ( [IAM.6](../../../securityhub/latest/userguide/iam-controls.md#iam-6))
+
+- 1.16 ( [IAM.2](../../../securityhub/latest/userguide/iam-controls.md#iam-2))
+
+- 1.2 ( [IAM.5](../../../securityhub/latest/userguide/iam-controls.md#iam-5)
+
+- 1.20 ( [IAM.18](../../../securityhub/latest/userguide/iam-controls.md#iam-18))
+
+- 1.22 ( [IAM.1](../../../securityhub/latest/userguide/iam-controls.md#iam-1)
+
+- 1.3 ( [IAM.8](../../../securityhub/latest/userguide/iam-controls.md#iam-8))
+
+- 1.4 ( [IAM.3](../../../securityhub/latest/userguide/iam-controls.md#iam-3))
+
+- 1.5 ( [IAM.11](../../../securityhub/latest/userguide/iam-controls.md#iam-11))
+
+- 1.6 ( [IAM.12](../../../securityhub/latest/userguide/iam-controls.md#iam-12))
+
+- 1.7 ( [IAM.13](../../../securityhub/latest/userguide/iam-controls.md#iam-13))
+
+- 1.8 ( [IAM.14](../../../securityhub/latest/userguide/iam-controls.md#iam-14))
+
+- 1.9 ( [IAM.15](../../../securityhub/latest/userguide/iam-controls.md#iam-15))
+
+- 2.1 ( [CloudTrail.1](../../../securityhub/latest/userguide/cloudtrail-controls.md#cloudtrail-1))
+
+- 2.2 ( [CloudTrail.4](../../../securityhub/latest/userguide/cloudtrail-controls.md#cloudtrail-4))
+
+- 2.3 ( [CloudTrail.6](../../../securityhub/latest/userguide/cloudtrail-controls.md#cloudtrail-6))
+
+- 2.4 ( [CloudTrail.5](../../../securityhub/latest/userguide/cloudtrail-controls.md#cloudtrail-5))
+
+- 2.5 ( [Config.1](../../../securityhub/latest/userguide/config-controls.md#config-1))
+
+- 2.6 ( [CloudTrail.7](../../../securityhub/latest/userguide/cloudtrail-controls.md#cloudtrail-7))
+
+- 2.7 ( [CloudTrail.2](../../../securityhub/latest/userguide/cloudtrail-controls.md#cloudtrail-2))
+
+- 2.8 ( [KMS.4)](../../../securityhub/latest/userguide/kms-controls.md#kms-4)
+
+- 2.9 ( [EC2.6](../../../securityhub/latest/userguide/ec2-controls.md#ec2-6))
+
+- 3.1 ( [CloudWatch.2](../../../securityhub/latest/userguide/cloudwatch-controls.md#cloudwatch-2))
+
+- 3.10 ( [CloudWatch.10](../../../securityhub/latest/userguide/cloudwatch-controls.md#cloudwatch-10))
+
+- 3.11 ( [CloudWatch.11](../../../securityhub/latest/userguide/cloudwatch-controls.md#cloudwatch-11))
+
+- 3.12 ( [CloudWatch.12](../../../securityhub/latest/userguide/cloudwatch-controls.md#cloudwatch-12))
+
+- 3.13 ( [CloudWatch.13](../../../securityhub/latest/userguide/cloudwatch-controls.md#cloudwatch-13))
+
+- 3.14 ( [CloudWatch.14](../../../securityhub/latest/userguide/cloudwatch-controls.md#cloudwatch-14))
+
+- [Config.1](../../../securityhub/latest/userguide/config-controls.md#config-1)
+
+Article 30 Records of processing activities.1
+
+Chapter 4 - Controller and Processor
+
+You can [create a custom\
+control](create-controls.md) in AWS Audit Manager that supports this GDPR control.
+
+When
+you [specify the control details](customize-control-from-scratch.md#from-scratch-step-1), enter the following under
+**Testing information**:
+
+- Show all root account events over term
+
+When you [set up the control data sources](customize-control-from-scratch.md#from-scratch-step-2), we recommend that you include all of
+the following as data sources:
+
+Choose AWS Config as the data source type, and
+select the following AWS Config managed rules as data source mappings:
+
+- [CLOUD\_TRAIL\_ENCRYPTION\_ENABLED](../../../config/latest/developerguide/cloud-trail-encryption-enabled.md)
+
+- [CLOUD\_TRAIL\_LOG\_FILE\_VALIDATION\_ENABLED](../../../config/latest/developerguide/cloud-trail-log-file-validation-enabled.md)
+
+- [VPC\_FLOW\_LOGS\_ENABLED](../../../config/latest/developerguide/vpc-flow-logs-enabled.md)
+
+- [CMK\_BACKING\_KEY\_ROTATION\_ENABLED](../../../config/latest/developerguide/cmk-backing-key-rotation-enabled.md)
+
+- [CLOUD\_TRAIL\_ENABLED](../../../config/latest/developerguide/cloudtrail-enabled.md)
+
+- [ELB\_LOGGING\_ENABLED](../../../config/latest/developerguide/elb-logging-enabled.md)
+
+- [CLOUDTRAIL\_SECURITY\_TRAIL\_ENABLED](../../../config/latest/developerguide/cloudtrail-security-trail-enabled.md)
+
+- [REDSHIFT\_CLUSTER\_CONFIGURATION\_CHECK](../../../config/latest/developerguide/redshift-cluster-configuration-check.md)
+
+- [CLOUD\_TRAIL\_CLOUD\_WATCH\_LOGS\_ENABLED](../../../config/latest/developerguide/cloud-trail-cloud-watch-logs-enabled.md)
+
+Choose AWS Security Hub CSPM as the data source type, and select the
+following Security Hub control as a data source mapping:
+
+- [Config.1](../../../securityhub/latest/userguide/config-controls.md#config-1)
+
+Article 30 Records of processing activities.2
+
+Chapter 4 - Controller and Processor
+
+You can [create a custom\
+control](create-controls.md) in AWS Audit Manager that supports this GDPR control.
+
+When
+you [specify the control details](customize-control-from-scratch.md#from-scratch-step-1), enter the following under
+**Testing information**:
+
+- Show all root account events over term
+
+When you [set up the control data sources](customize-control-from-scratch.md#from-scratch-step-2), we recommend that you include all of
+the following as data sources:
+
+Choose AWS Config as the data source type, and
+select the following AWS Config managed rules as data source mappings:
+
+- [CLOUD\_TRAIL\_ENCRYPTION\_ENABLED](../../../config/latest/developerguide/cloud-trail-encryption-enabled.md)
+
+- [CLOUD\_TRAIL\_LOG\_FILE\_VALIDATION\_ENABLED](../../../config/latest/developerguide/cloud-trail-log-file-validation-enabled.md)
+
+- [VPC\_FLOW\_LOGS\_ENABLED](../../../config/latest/developerguide/vpc-flow-logs-enabled.md)
+
+- [CMK\_BACKING\_KEY\_ROTATION\_ENABLED](../../../config/latest/developerguide/cmk-backing-key-rotation-enabled.md)
+
+- [CLOUD\_TRAIL\_ENABLED](../../../config/latest/developerguide/cloudtrail-enabled.md)
+
+- [ELB\_LOGGING\_ENABLED](../../../config/latest/developerguide/elb-logging-enabled.md)
+
+- [CLOUD\_TRAIL\_CLOUD\_WATCH\_LOGS\_ENABLED](../../../config/latest/developerguide/cloud-trail-cloud-watch-logs-enabled.md)
+
+Choose AWS Security Hub CSPM as the data source type, and select the
+following Security Hub control as a data source mapping:
+
+- [Config.1](../../../securityhub/latest/userguide/config-controls.md#config-1)
+
+Article 30 Records of processing activities.3
+
+Chapter 4 - Controller and Processor
+
+You can [create a custom\
+control](create-controls.md) in AWS Audit Manager that supports this GDPR control.
+
+When
+you [specify the control details](customize-control-from-scratch.md#from-scratch-step-1), enter the following under
+**Testing information**:
+
+- Show all root account events over term
+
+- AWS CloudTrail bucket not public
+
+- Show all policies with an `Allow:*:*` and list all principals
+and services using those policies
+
+When you [set up the control data sources](customize-control-from-scratch.md#from-scratch-step-2), we recommend that you include all of
+the following as data sources:
+
+Choose AWS Config as the data source type, and
+select the following AWS Config managed rules as data source mappings:
+
+- [CLOUD\_TRAIL\_ENCRYPTION\_ENABLED](../../../config/latest/developerguide/cloud-trail-encryption-enabled.md)
+
+- [CLOUD\_TRAIL\_LOG\_FILE\_VALIDATION\_ENABLED](../../../config/latest/developerguide/cloud-trail-log-file-validation-enabled.md)
+
+- [VPC\_FLOW\_LOGS\_ENABLED](../../../config/latest/developerguide/vpc-flow-logs-enabled.md)
+
+- [CMK\_BACKING\_KEY\_ROTATION\_ENABLED](../../../config/latest/developerguide/cmk-backing-key-rotation-enabled.md)
+
+- [CLOUD\_TRAIL\_ENABLED](../../../config/latest/developerguide/cloudtrail-enabled.md)
+
+- [ELB\_LOGGING\_ENABLED](../../../config/latest/developerguide/elb-logging-enabled.md)
+
+- [CLOUD\_TRAIL\_CLOUD\_WATCH\_LOGS\_ENABLED](../../../config/latest/developerguide/cloud-trail-cloud-watch-logs-enabled.md)
+
+Choose AWS Security Hub CSPM as the data source type, and select the
+following Security Hub control as a data source mapping:
+
+- [Config.1](../../../securityhub/latest/userguide/config-controls.md#config-1)
+
+Article 30 Records of processing activities.4
+
+Chapter 4 - Controller and Processor
+
+You can [create a custom\
+control](create-controls.md) in AWS Audit Manager that supports this GDPR control.
+
+When
+you [specify the control details](customize-control-from-scratch.md#from-scratch-step-1), enter the following under
+**Testing information**:
+
+- Show all root account events over term
+
+- AWS CloudTrail bucket not public
+
+- Show all policies with an `Allow:*:*` and list all principals
+and services using those policies
+
+When you [set up the control data sources](customize-control-from-scratch.md#from-scratch-step-2), we recommend that you include all of
+the following as data sources:
+
+Choose AWS Config as the data source type, and
+select the following AWS Config managed rules as data source mappings:
+
+- [CLOUD\_TRAIL\_ENCRYPTION\_ENABLED](../../../config/latest/developerguide/cloud-trail-encryption-enabled.md)
+
+- [CLOUD\_TRAIL\_LOG\_FILE\_VALIDATION\_ENABLED](../../../config/latest/developerguide/cloud-trail-log-file-validation-enabled.md)
+
+- [VPC\_FLOW\_LOGS\_ENABLED](../../../config/latest/developerguide/vpc-flow-logs-enabled.md)
+
+- [CMK\_BACKING\_KEY\_ROTATION\_ENABLED](../../../config/latest/developerguide/cmk-backing-key-rotation-enabled.md)
+
+- [CLOUD\_TRAIL\_ENABLED](../../../config/latest/developerguide/cloudtrail-enabled.md)
+
+- [ELB\_LOGGING\_ENABLED](../../../config/latest/developerguide/elb-logging-enabled.md)
+
+- [CLOUD\_TRAIL\_CLOUD\_WATCH\_LOGS\_ENABLED](../../../config/latest/developerguide/cloud-trail-cloud-watch-logs-enabled.md)
+
+Choose AWS Security Hub CSPM as the data source type, and select the
+following Security Hub control as a data source mapping:
+
+- [Config.1](../../../securityhub/latest/userguide/config-controls.md#config-1)
+
+Article 30 Records of processing activities.5
+
+Chapter 4 - Controller and Processor
+
+You can [create a custom\
+control](create-controls.md) in AWS Audit Manager that supports this GDPR control.
+
+When
+you [specify the control details](customize-control-from-scratch.md#from-scratch-step-1), enter the following under
+**Testing information**:
+
+- Show all root account events over term
+
+When you [set up the control data sources](customize-control-from-scratch.md#from-scratch-step-2), we recommend that you include all of
+the following as data sources:
+
+Choose AWS Config as the data source type, and
+select the following AWS Config managed rules as data source mappings:
+
+- [CLOUD\_TRAIL\_ENCRYPTION\_ENABLED](../../../config/latest/developerguide/cloud-trail-encryption-enabled.md)
+
+- [CLOUD\_TRAIL\_LOG\_FILE\_VALIDATION\_ENABLED](../../../config/latest/developerguide/cloud-trail-log-file-validation-enabled.md)
+
+- [VPC\_FLOW\_LOGS\_ENABLED](../../../config/latest/developerguide/vpc-flow-logs-enabled.md)
+
+- [CMK\_BACKING\_KEY\_ROTATION\_ENABLED](../../../config/latest/developerguide/cmk-backing-key-rotation-enabled.md)
+
+- [CLOUD\_TRAIL\_ENABLED](../../../config/latest/developerguide/cloudtrail-enabled.md)
+
+- [ELB\_LOGGING\_ENABLED](../../../config/latest/developerguide/elb-logging-enabled.md)
+
+- [CLOUD\_TRAIL\_CLOUD\_WATCH\_LOGS\_ENABLED](../../../config/latest/developerguide/cloud-trail-cloud-watch-logs-enabled.md)
+
+Choose AWS Security Hub CSPM as the data source type, and select the
+following Security Hub control as a data source mapping:
+
+- [Config.1](../../../securityhub/latest/userguide/config-controls.md#config-1)
+
+Article 32 Security of processing.1
+
+Chapter 4 - Controller and Processor
+
+You can [create a custom\
+control](create-controls.md) in AWS Audit Manager that supports this GDPR control.
+
+When
+you [specify the control details](customize-control-from-scratch.md#from-scratch-step-1), enter the following under
+**Testing information**:
+
+- Show data at rest encryption for all services
+
+- Show data in transit encryption for all services
+
+- MFA Delete enabled for Amazon S3
+
+- All Amazon Inspector scans
+
+- Show all instances that are not Amazon Inspector enabled
+
+- Show all load balancers that are listening on HTTPS (SSL)
+
+- AWS CloudTrail encrypted at rest
+
+- Amazon CloudWatch alerts for AWS Config displaying all changes and all commented
+settings
+
+- All root activity
+
+When you [set up the control data sources](customize-control-from-scratch.md#from-scratch-step-2), we recommend that you include all of
+the following as data sources:
+
+Choose AWS Config as the data source type, and
+select the following AWS Config managed rules as data source mappings:
+
+- [CLOUD\_TRAIL\_LOG\_FILE\_VALIDATION\_ENABLED](../../../config/latest/developerguide/cloud-trail-log-file-validation-enabled.md)
+
+- [S3\_BUCKET\_SSL\_REQUESTS\_ONLY](../../../config/latest/developerguide/s3-bucket-ssl-requests-only.md)
+
+- [CLOUD\_TRAIL\_ENCRYPTION\_ENABLED](../../../config/latest/developerguide/cloud-trail-encryption-enabled.md)
+
+- [CLOUDWATCH\_LOG\_GROUP\_ENCRYPTED](../../../config/latest/developerguide/cloudwatch-log-group-encrypted.md)
+
+- [EFS\_ENCRYPTED\_CHECK](../../../config/latest/developerguide/efs-encrypted-check.md)
+
+- [ELASTICSEARCH\_ENCRYPTED\_AT\_REST](../../../config/latest/developerguide/elasticsearch-encrypted-at-rest.md)
+
+- [ENCRYPTED\_VOLUMES](../../../config/latest/developerguide/encrypted-volumes.md)
+
+- [RDS\_STORAGE\_ENCRYPTED](../../../config/latest/developerguide/rds-storage-encrypted.md)
+
+- [REDSHIFT\_CLUSTER\_CONFIGURATION\_CHECK](../../../config/latest/developerguide/redshift-cluster-configuration-check.md)
+
+- [S3\_BUCKET\_SERVER\_SIDE\_ENCRYPTION\_ENABLED](../../../config/latest/developerguide/s3-bucket-server-side-encryption-enabled.md)
+
+- [SAGEMAKER\_ENDPOINT\_CONFIGURATION\_KMS\_KEY\_CONFIGURED](../../../config/latest/developerguide/sagemaker-endpoint-configuration-kms-key-configured.md)
+
+- [SAGEMAKER\_NOTEBOOK\_INSTANCE\_KMS\_KEY\_CONFIGURED](../../../config/latest/developerguide/sagemaker-notebook-instance-kms-key-configured.md)
+
+- [SNS\_ENCRYPTED\_KMS](../../../config/latest/developerguide/sns-encrypted-kms.md)
+
+- [EC2\_EBS\_ENCRYPTION\_BY\_DEFAULT](../../../config/latest/developerguide/ec2-ebs-encryption-by-default.md)
+
+- [DYNAMODB\_TABLE\_ENCRYPTED\_KMS](../../../config/latest/developerguide/dynamodb-table-encrypted-kms.md)
+
+- [DYNAMODB\_TABLE\_ENCRYPTION\_ENABLED](../../../config/latest/developerguide/dynamodb-table-encryption-enabled.md)
+
+- [RDS\_SNAPSHOT\_ENCRYPTED](../../../config/latest/developerguide/rds-snapshot-encrypted.md)
+
+- [S3\_DEFAULT\_ENCRYPTION\_KMS](../../../config/latest/developerguide/s3-default-encryption-kms.md)
+
+- [DAX\_ENCRYPTION\_ENABLED](../../../config/latest/developerguide/dax-encryption-enabled.md)
+
+- [EKS\_SECRETS\_ENCRYPTED](../../../config/latest/developerguide/eks-secrets-encrypted.md)
+
+- [RDS\_LOGGING\_ENABLED](../../../config/latest/developerguide/rds-logging-enabled.md)
+
+- [REDSHIFT\_BACKUP\_ENABLED](../../../config/latest/developerguide/redshift-backup-enabled.md)
+
+- [RDS\_IN\_BACKUP\_PLAN](../../../config/latest/developerguide/rds-in-backup-plan.md)
+
+- [WAF\_CLASSIC\_LOGGING\_ENABLED](../../../config/latest/developerguide/waf-classic-logging-enabled.md)
+
+- [WAFV2\_LOGGING\_ENABLED](../../../config/latest/developerguide/wafv2-logging-enabled.md)
+
+- [ALB\_HTTP\_TO\_HTTPS\_REDIRECTION\_CHECK](../../../config/latest/developerguide/alb-http-to-https-redirection-check.md)
+
+- [ELB\_ACM\_CERTIFICATE\_REQUIRED](../../../config/latest/developerguide/elb-acm-certificate-required.md)
+
+- [ELB\_CUSTOM\_SECURITY\_POLICY\_SSL\_CHECK](../../../config/latest/developerguide/elb-custom-security-policy-ssl-check.md)
+
+- [REDSHIFT\_REQUIRE\_TLS\_SSL](../../../config/latest/developerguide/redshift-require-tls-ssl.md)
+
+- [CLOUDFRONT\_VIEWER\_POLICY\_HTTPS](../../../config/latest/developerguide/cloudfront-viewer-policy-https.md)
+
+- [ALB\_HTTP\_DROP\_INVALID\_HEADER\_ENABLED](../../../config/latest/developerguide/alb-http-drop-invalid-header-enabled.md)
+
+- [ELASTICSEARCH\_NODE\_TO\_NODE\_ENCRYPTION\_CHECK](../../../config/latest/developerguide/elasticsearch-node-to-node-encryption-check.md)
+
+- [ELB\_TLS\_HTTPS\_LISTENERS\_ONLY](../../../config/latest/developerguide/elb-tls-https-listeners-only.md)
+
+- [ACM\_CERTIFICATE\_EXPIRATION\_CHECK](../../../config/latest/developerguide/acm-certificate-expiration-check.md)
+
+- [API\_GW\_CACHE\_ENABLED\_AND\_ENCRYPTED](../../../config/latest/developerguide/api-gw-cache-enabled-and-encrypted.md)
+
+Article 32 Security of processing.2
+
+Chapter 4 - Controller and Processor
+
+You can [create a custom\
+control](create-controls.md) in AWS Audit Manager that supports this GDPR control.
+
+When
+you [specify the control details](customize-control-from-scratch.md#from-scratch-step-1), enter the following under
+**Testing information**:
+
+- Show data at rest encryption for all services
+
+- Show data in transit encryption for all services
+
+- MFA Delete enabled for Amazon S3
+
+- All Amazon Inspector scans
+
+- Show all instances that aren't Amazon Inspector enabled
+
+- Show all load balancers that are listening on HTTPS (SSL)
+
+- AWS CloudTrail encrypted at rest
+
+- Amazon CloudWatch alerts for AWS Config displaying all changes and all commented
+settings
+
+- All root activity
+
+When you [set up the control data sources](customize-control-from-scratch.md#from-scratch-step-2), we recommend that you include all of
+the following as data sources:
+
+Choose AWS Config as the data source type, and
+select the following AWS Config managed rules as data source mappings:
+
+- [CLOUD\_TRAIL\_LOG\_FILE\_VALIDATION\_ENABLED](../../../config/latest/developerguide/cloud-trail-log-file-validation-enabled.md)
+
+- [S3\_BUCKET\_SSL\_REQUESTS\_ONLY](../../../config/latest/developerguide/s3-bucket-ssl-requests-only.md)
+
+- [CLOUD\_TRAIL\_ENCRYPTION\_ENABLED](../../../config/latest/developerguide/cloud-trail-encryption-enabled.md)
+
+- [CLOUDWATCH\_LOG\_GROUP\_ENCRYPTED](../../../config/latest/developerguide/cloudwatch-log-group-encrypted.md)
+
+- [EFS\_ENCRYPTED\_CHECK](../../../config/latest/developerguide/efs-encrypted-check.md)
+
+- [ELASTICSEARCH\_ENCRYPTED\_AT\_REST](../../../config/latest/developerguide/elasticsearch-encrypted-at-rest.md)
+
+- [ENCRYPTED\_VOLUMES](../../../config/latest/developerguide/encrypted-volumes.md)
+
+- [RDS\_STORAGE\_ENCRYPTED](../../../config/latest/developerguide/rds-storage-encrypted.md)
+
+- [REDSHIFT\_CLUSTER\_CONFIGURATION\_CHECK](../../../config/latest/developerguide/redshift-cluster-configuration-check.md)
+
+- [S3\_BUCKET\_SERVER\_SIDE\_ENCRYPTION\_ENABLED](../../../config/latest/developerguide/s3-bucket-server-side-encryption-enabled.md)
+
+- [SAGEMAKER\_ENDPOINT\_CONFIGURATION\_KMS\_KEY\_CONFIGURED](../../../config/latest/developerguide/sagemaker-endpoint-configuration-kms-key-configured.md)
+
+- [SAGEMAKER\_NOTEBOOK\_INSTANCE\_KMS\_KEY\_CONFIGURED](../../../config/latest/developerguide/sagemaker-notebook-instance-kms-key-configured.md)
+
+- [SNS\_ENCRYPTED\_KMS](../../../config/latest/developerguide/sns-encrypted-kms.md)
+
+- [EC2\_EBS\_ENCRYPTION\_BY\_DEFAULT](../../../config/latest/developerguide/ec2-ebs-encryption-by-default.md)
+
+- [DYNAMODB\_TABLE\_ENCRYPTED\_KMS](../../../config/latest/developerguide/dynamodb-table-encrypted-kms.md)
+
+- [DYNAMODB\_TABLE\_ENCRYPTION\_ENABLED](../../../config/latest/developerguide/dynamodb-table-encryption-enabled.md)
+
+- [RDS\_SNAPSHOT\_ENCRYPTED](../../../config/latest/developerguide/rds-snapshot-encrypted.md)
+
+- [S3\_DEFAULT\_ENCRYPTION\_KMS](../../../config/latest/developerguide/s3-default-encryption-kms.md)
+
+- [DAX\_ENCRYPTION\_ENABLED](../../../config/latest/developerguide/dax-encryption-enabled.md)
+
+- [EKS\_SECRETS\_ENCRYPTED](../../../config/latest/developerguide/eks-secrets-encrypted.md)
+
+- [RDS\_LOGGING\_ENABLED](../../../config/latest/developerguide/rds-logging-enabled.md)
+
+- [REDSHIFT\_BACKUP\_ENABLED](../../../config/latest/developerguide/redshift-backup-enabled.md)
+
+- [RDS\_IN\_BACKUP\_PLAN](../../../config/latest/developerguide/rds-in-backup-plan.md)
+
+- [WAF\_CLASSIC\_LOGGING\_ENABLED](../../../config/latest/developerguide/waf-classic-logging-enabled.md)
+
+- [WAFV2\_LOGGING\_ENABLED](../../../config/latest/developerguide/wafv2-logging-enabled.md)
+
+- [ALB\_HTTP\_TO\_HTTPS\_REDIRECTION\_CHECK](../../../config/latest/developerguide/alb-http-to-https-redirection-check.md)
+
+- [ELB\_ACM\_CERTIFICATE\_REQUIRED](../../../config/latest/developerguide/elb-acm-certificate-required.md)
+
+- [ELB\_CUSTOM\_SECURITY\_POLICY\_SSL\_CHECK](../../../config/latest/developerguide/elb-custom-security-policy-ssl-check.md)
+
+- [REDSHIFT\_REQUIRE\_TLS\_SSL](../../../config/latest/developerguide/redshift-require-tls-ssl.md)
+
+- [CLOUDFRONT\_VIEWER\_POLICY\_HTTPS](../../../config/latest/developerguide/cloudfront-viewer-policy-https.md)
+
+- [ALB\_HTTP\_DROP\_INVALID\_HEADER\_ENABLED](../../../config/latest/developerguide/alb-http-drop-invalid-header-enabled.md)
+
+- [ELASTICSEARCH\_NODE\_TO\_NODE\_ENCRYPTION\_CHECK](../../../config/latest/developerguide/elasticsearch-node-to-node-encryption-check.md)
+
+- [ELB\_TLS\_HTTPS\_LISTENERS\_ONLY](../../../config/latest/developerguide/elb-tls-https-listeners-only.md)
+
+- [ACM\_CERTIFICATE\_EXPIRATION\_CHECK](../../../config/latest/developerguide/acm-certificate-expiration-check.md)
+
+- [API\_GW\_CACHE\_ENABLED\_AND\_ENCRYPTED](../../../config/latest/developerguide/api-gw-cache-enabled-and-encrypted.md)
+
+Article 32 Security of processing.3
+
+Chapter 4 - Controller and Processor
+
+You can [create a custom\
+control](create-controls.md) in AWS Audit Manager that supports this GDPR control.
+
+When
+you [specify the control details](customize-control-from-scratch.md#from-scratch-step-1), enter the following under
+**Testing information**:
+
+- Show data at rest encryption for all services
+
+- Show data in transit encryption for all services
+
+- MFA Delete enabled for Amazon S3
+
+- All Amazon Inspector scans
+
+- Show all instances that aren't Amazon Inspector enabled
+
+- Show all load balancers that are listening on HTTPS (SSL)
+
+- AWS CloudTrail encrypted at rest
+
+- Amazon CloudWatch alerts for AWS Config displaying all changes and all commented
+settings
+
+- All root activity
+
+When you [set up the control data sources](customize-control-from-scratch.md#from-scratch-step-2), we recommend that you include all of
+the following as data sources:
+
+Choose AWS Config as the data source type, and
+select the following AWS Config managed rules as data source mappings:
+
+- [CLOUD\_TRAIL\_LOG\_FILE\_VALIDATION\_ENABLED](../../../config/latest/developerguide/cloud-trail-log-file-validation-enabled.md)
+
+- [S3\_BUCKET\_SSL\_REQUESTS\_ONLY](../../../config/latest/developerguide/s3-bucket-ssl-requests-only.md)
+
+- [CLOUD\_TRAIL\_ENCRYPTION\_ENABLED](../../../config/latest/developerguide/cloud-trail-encryption-enabled.md)
+
+- [CLOUDWATCH\_LOG\_GROUP\_ENCRYPTED](../../../config/latest/developerguide/cloudwatch-log-group-encrypted.md)
+
+- [EFS\_ENCRYPTED\_CHECK](../../../config/latest/developerguide/efs-encrypted-check.md)
+
+- [ELASTICSEARCH\_ENCRYPTED\_AT\_REST](../../../config/latest/developerguide/elasticsearch-encrypted-at-rest.md)
+
+- [ENCRYPTED\_VOLUMES](../../../config/latest/developerguide/encrypted-volumes.md)
+
+- [RDS\_STORAGE\_ENCRYPTED](../../../config/latest/developerguide/rds-storage-encrypted.md)
+
+- [REDSHIFT\_CLUSTER\_CONFIGURATION\_CHECK](../../../config/latest/developerguide/redshift-cluster-configuration-check.md)
+
+- [S3\_BUCKET\_SERVER\_SIDE\_ENCRYPTION\_ENABLED](../../../config/latest/developerguide/s3-bucket-server-side-encryption-enabled.md)
+
+- [SAGEMAKER\_ENDPOINT\_CONFIGURATION\_KMS\_KEY\_CONFIGURED](../../../config/latest/developerguide/sagemaker-endpoint-configuration-kms-key-configured.md)
+
+- [SAGEMAKER\_NOTEBOOK\_INSTANCE\_KMS\_KEY\_CONFIGURED](../../../config/latest/developerguide/sagemaker-notebook-instance-kms-key-configured.md)
+
+- [SNS\_ENCRYPTED\_KMS](../../../config/latest/developerguide/sns-encrypted-kms.md)
+
+- [EC2\_EBS\_ENCRYPTION\_BY\_DEFAULT](../../../config/latest/developerguide/ec2-ebs-encryption-by-default.md)
+
+- [DYNAMODB\_TABLE\_ENCRYPTED\_KMS](../../../config/latest/developerguide/dynamodb-table-encrypted-kms.md)
+
+- [DYNAMODB\_TABLE\_ENCRYPTION\_ENABLED](../../../config/latest/developerguide/dynamodb-table-encryption-enabled.md)
+
+- [RDS\_SNAPSHOT\_ENCRYPTED](../../../config/latest/developerguide/rds-snapshot-encrypted.md)
+
+- [S3\_DEFAULT\_ENCRYPTION\_KMS](../../../config/latest/developerguide/s3-default-encryption-kms.md)
+
+- [DAX\_ENCRYPTION\_ENABLED](../../../config/latest/developerguide/dax-encryption-enabled.md)
+
+- [EKS\_SECRETS\_ENCRYPTED](../../../config/latest/developerguide/eks-secrets-encrypted.md)
+
+- [RDS\_LOGGING\_ENABLED](../../../config/latest/developerguide/rds-logging-enabled.md)
+
+- [REDSHIFT\_BACKUP\_ENABLED](../../../config/latest/developerguide/redshift-backup-enabled.md)
+
+- [RDS\_IN\_BACKUP\_PLAN](../../../config/latest/developerguide/rds-in-backup-plan.md)
+
+- [WAF\_CLASSIC\_LOGGING\_ENABLED](../../../config/latest/developerguide/waf-classic-logging-enabled.md)
+
+- [WAFV2\_LOGGING\_ENABLED](../../../config/latest/developerguide/wafv2-logging-enabled.md)
+
+- [ALB\_HTTP\_TO\_HTTPS\_REDIRECTION\_CHECK](../../../config/latest/developerguide/alb-http-to-https-redirection-check.md)
+
+- [ELB\_ACM\_CERTIFICATE\_REQUIRED](../../../config/latest/developerguide/elb-acm-certificate-required.md)
+
+- [ELB\_CUSTOM\_SECURITY\_POLICY\_SSL\_CHECK](../../../config/latest/developerguide/elb-custom-security-policy-ssl-check.md)
+
+- [REDSHIFT\_REQUIRE\_TLS\_SSL](../../../config/latest/developerguide/redshift-require-tls-ssl.md)
+
+- [CLOUDFRONT\_VIEWER\_POLICY\_HTTPS](../../../config/latest/developerguide/cloudfront-viewer-policy-https.md)
+
+- [ALB\_HTTP\_DROP\_INVALID\_HEADER\_ENABLED](../../../config/latest/developerguide/alb-http-drop-invalid-header-enabled.md)
+
+- [ELASTICSEARCH\_NODE\_TO\_NODE\_ENCRYPTION\_CHECK](../../../config/latest/developerguide/elasticsearch-node-to-node-encryption-check.md)
+
+- [ELB\_TLS\_HTTPS\_LISTENERS\_ONLY](../../../config/latest/developerguide/elb-tls-https-listeners-only.md)
+
+- [ACM\_CERTIFICATE\_EXPIRATION\_CHECK](../../../config/latest/developerguide/acm-certificate-expiration-check.md)
+
+- [API\_GW\_CACHE\_ENABLED\_AND\_ENCRYPTED](../../../config/latest/developerguide/api-gw-cache-enabled-and-encrypted.md)
+
+Article 32 Security of processing.4
+
+Chapter 4 - Controller and Processor
+
+You can [create a custom\
+control](create-controls.md) in AWS Audit Manager that supports this GDPR control.
+
+When
+you [specify the control details](customize-control-from-scratch.md#from-scratch-step-1), enter the following under
+**Testing information**:
+
+- Show data at rest encryption for all services
+
+- Show data in transit encryption for all services
+
+- MFA Delete enabled for Amazon S3
+
+- All Amazon Inspector scans
+
+- Show all instances that aren't Amazon Inspector enabled
+
+- Show all load balancers that are listening on HTTPS (SSL)
+
+- AWS CloudTrail encrypted at rest
+
+- Amazon CloudWatch alerts for AWS Config displaying all changes and all commented
+settings
+
+- All root activity
+
+When you [set up the control data sources](customize-control-from-scratch.md#from-scratch-step-2), we recommend that you include all of
+the following as data sources:
+
+Choose AWS Config as the data source type, and
+select the following AWS Config managed rules as data source mappings:
+
+- [CLOUD\_TRAIL\_LOG\_FILE\_VALIDATION\_ENABLED](../../../config/latest/developerguide/cloud-trail-log-file-validation-enabled.md)
+
+- [S3\_BUCKET\_SSL\_REQUESTS\_ONLY](../../../config/latest/developerguide/s3-bucket-ssl-requests-only.md)
+
+- [CLOUD\_TRAIL\_ENCRYPTION\_ENABLED](../../../config/latest/developerguide/cloud-trail-encryption-enabled.md)
+
+- [CLOUDWATCH\_LOG\_GROUP\_ENCRYPTED](../../../config/latest/developerguide/cloudwatch-log-group-encrypted.md)
+
+- [EFS\_ENCRYPTED\_CHECK](../../../config/latest/developerguide/efs-encrypted-check.md)
+
+- [ELASTICSEARCH\_ENCRYPTED\_AT\_REST](../../../config/latest/developerguide/elasticsearch-encrypted-at-rest.md)
+
+- [ENCRYPTED\_VOLUMES](../../../config/latest/developerguide/encrypted-volumes.md)
+
+- [RDS\_STORAGE\_ENCRYPTED](../../../config/latest/developerguide/rds-storage-encrypted.md)
+
+- [REDSHIFT\_CLUSTER\_CONFIGURATION\_CHECK](../../../config/latest/developerguide/redshift-cluster-configuration-check.md)
+
+- [S3\_BUCKET\_SERVER\_SIDE\_ENCRYPTION\_ENABLED](../../../config/latest/developerguide/s3-bucket-server-side-encryption-enabled.md)
+
+- [SAGEMAKER\_ENDPOINT\_CONFIGURATION\_KMS\_KEY\_CONFIGURED](../../../config/latest/developerguide/sagemaker-endpoint-configuration-kms-key-configured.md)
+
+- [SAGEMAKER\_NOTEBOOK\_INSTANCE\_KMS\_KEY\_CONFIGURED](../../../config/latest/developerguide/sagemaker-notebook-instance-kms-key-configured.md)
+
+- [SNS\_ENCRYPTED\_KMS](../../../config/latest/developerguide/sns-encrypted-kms.md)
+
+- [EC2\_EBS\_ENCRYPTION\_BY\_DEFAULT](../../../config/latest/developerguide/ec2-ebs-encryption-by-default.md)
+
+- [DYNAMODB\_TABLE\_ENCRYPTED\_KMS](../../../config/latest/developerguide/dynamodb-table-encrypted-kms.md)
+
+- [DYNAMODB\_TABLE\_ENCRYPTION\_ENABLED](../../../config/latest/developerguide/dynamodb-table-encryption-enabled.md)
+
+- [RDS\_SNAPSHOT\_ENCRYPTED](../../../config/latest/developerguide/rds-snapshot-encrypted.md)
+
+- [S3\_DEFAULT\_ENCRYPTION\_KMS](../../../config/latest/developerguide/s3-default-encryption-kms.md)
+
+- [DAX\_ENCRYPTION\_ENABLED](../../../config/latest/developerguide/dax-encryption-enabled.md)
+
+- [EKS\_SECRETS\_ENCRYPTED](../../../config/latest/developerguide/eks-secrets-encrypted.md)
+
+- [RDS\_LOGGING\_ENABLED](../../../config/latest/developerguide/rds-logging-enabled.md)
+
+- [REDSHIFT\_BACKUP\_ENABLED](../../../config/latest/developerguide/redshift-backup-enabled.md)
+
+- [RDS\_IN\_BACKUP\_PLAN](../../../config/latest/developerguide/rds-in-backup-plan.md)
+
+- [WAF\_CLASSIC\_LOGGING\_ENABLED](../../../config/latest/developerguide/waf-classic-logging-enabled.md)
+
+- [WAFV2\_LOGGING\_ENABLED](../../../config/latest/developerguide/wafv2-logging-enabled.md)
+
+- [ALB\_HTTP\_TO\_HTTPS\_REDIRECTION\_CHECK](../../../config/latest/developerguide/alb-http-to-https-redirection-check.md)
+
+- [ELB\_ACM\_CERTIFICATE\_REQUIRED](../../../config/latest/developerguide/elb-acm-certificate-required.md)
+
+- [ELB\_CUSTOM\_SECURITY\_POLICY\_SSL\_CHECK](../../../config/latest/developerguide/elb-custom-security-policy-ssl-check.md)
+
+- [REDSHIFT\_REQUIRE\_TLS\_SSL](../../../config/latest/developerguide/redshift-require-tls-ssl.md)
+
+- [CLOUDFRONT\_VIEWER\_POLICY\_HTTPS](../../../config/latest/developerguide/cloudfront-viewer-policy-https.md)
+
+- [ALB\_HTTP\_DROP\_INVALID\_HEADER\_ENABLED](../../../config/latest/developerguide/alb-http-drop-invalid-header-enabled.md)
+
+- [ELASTICSEARCH\_NODE\_TO\_NODE\_ENCRYPTION\_CHECK](../../../config/latest/developerguide/elasticsearch-node-to-node-encryption-check.md)
+
+- [ELB\_TLS\_HTTPS\_LISTENERS\_ONLY](../../../config/latest/developerguide/elb-tls-https-listeners-only.md)
+
+- [ACM\_CERTIFICATE\_EXPIRATION\_CHECK](../../../config/latest/developerguide/acm-certificate-expiration-check.md)
+
+- [API\_GW\_CACHE\_ENABLED\_AND\_ENCRYPTED](../../../config/latest/developerguide/api-gw-cache-enabled-and-encrypted.md)
+
+After you create your new custom controls for GDPR, you can add them to a custom GDPR
+framework. You can then create an assessment from the custom GDPR framework. This way,
+Audit Manager can collect evidence automatically for the custom controls that you added.
+
+## Next steps
+
+For instructions on how to view detailed information about this framework, including the
+list of standard controls that it contains, see [Reviewing a framework in AWS Audit Manager](review-frameworks.md).
+
+For instructions on how to create an assessment using this framework, see [Creating an assessment in AWS Audit Manager](create-assessments.md).
+
+For instructions on how to customize this framework to support your specific
+requirements, see [Making an editable copy of an existing framework in AWS Audit Manager](create-custom-frameworks-from-existing.md).
+
+## Additional resources
+
+- [General Data Protection\
+Regulation (GDPR) Center](https://aws.amazon.com/compliance/gdpr-center)
+
+- [AWS GDPR blog posts](https://aws.amazon.com/blogs/security/tag/gdpr)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+FedRAMP Security Baseline Controls r4
+
+GLBA
+
+All content copied from https://docs.aws.amazon.com/.

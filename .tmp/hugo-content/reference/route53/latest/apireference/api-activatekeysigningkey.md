@@ -1,0 +1,151 @@
+# ActivateKeySigningKey
+
+Activates a key-signing key (KSK) so that it can be used for signing by DNSSEC. This
+operation changes the KSK status to `ACTIVE`.
+
+## Request Syntax
+
+```nohighlight
+
+POST /2013-04-01/keysigningkey/HostedZoneId/Name/activate HTTP/1.1
+
+```
+
+## URI Request Parameters
+
+The request uses the following URI parameters.
+
+**[HostedZoneId](#API_ActivateKeySigningKey_RequestSyntax)**
+
+A unique string used to identify a hosted zone.
+
+Length Constraints: Maximum length of 32.
+
+Required: Yes
+
+**[Name](#API_ActivateKeySigningKey_RequestSyntax)**
+
+A string used to identify a key-signing key (KSK). `Name` can include
+numbers, letters, and underscores (\_). `Name` must be unique for each
+key-signing key in the same hosted zone.
+
+Length Constraints: Minimum length of 3. Maximum length of 128.
+
+Required: Yes
+
+## Request Body
+
+The request does not have a request body.
+
+## Response Syntax
+
+```nohighlight
+
+HTTP/1.1 200
+<?xml version="1.0" encoding="UTF-8"?>
+<ActivateKeySigningKeyResponse>
+   <ChangeInfo>
+      <Comment>string</Comment>
+      <Id>string</Id>
+      <Status>string</Status>
+      <SubmittedAt>timestamp</SubmittedAt>
+   </ChangeInfo>
+</ActivateKeySigningKeyResponse>
+```
+
+## Response Elements
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in XML format by the service.
+
+**[ActivateKeySigningKeyResponse](#API_ActivateKeySigningKey_ResponseSyntax)**
+
+Root level tag for the ActivateKeySigningKeyResponse parameters.
+
+Required: Yes
+
+**[ChangeInfo](#API_ActivateKeySigningKey_ResponseSyntax)**
+
+A complex type that describes change information about changes made to your hosted
+zone.
+
+Type: [ChangeInfo](api-changeinfo.md) object
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+
+**ConcurrentModification**
+
+Another user submitted a request to create, update, or delete the object at the same
+time that you did. Retry the request.
+
+**message**
+
+HTTP Status Code: 400
+
+**InvalidInput**
+
+The input is not valid.
+
+**message**
+
+HTTP Status Code: 400
+
+**InvalidKeySigningKeyStatus**
+
+The key-signing key (KSK) status isn't valid or another KSK has the status
+`INTERNAL_FAILURE`.
+
+HTTP Status Code: 400
+
+**InvalidKMSArn**
+
+The KeyManagementServiceArn that you specified isn't valid to use with DNSSEC
+signing.
+
+HTTP Status Code: 400
+
+**InvalidSigningStatus**
+
+Your hosted zone status isn't valid for this operation. In the hosted zone, change the
+status to enable `DNSSEC` or disable `DNSSEC`.
+
+HTTP Status Code: 400
+
+**NoSuchKeySigningKey**
+
+The specified key-signing key (KSK) doesn't exist.
+
+HTTP Status Code: 404
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53-2013-04-01/activatekeysigningkey.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53-2013-04-01/activatekeysigningkey.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53-2013-04-01/activatekeysigningkey.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53-2013-04-01/activatekeysigningkey.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53-2013-04-01/activatekeysigningkey.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53-2013-04-01/activatekeysigningkey.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53-2013-04-01/activatekeysigningkey.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53-2013-04-01/activatekeysigningkey.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/route53-2013-04-01/activatekeysigningkey.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53-2013-04-01/activatekeysigningkey.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+Amazon Route 53
+
+AssociateVPCWithHostedZone

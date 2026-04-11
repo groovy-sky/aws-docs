@@ -1,0 +1,84 @@
+# PatternToken
+
+A structure that contains information about one pattern token related to an
+anomaly.
+
+For more information about patterns and tokens, see [CreateLogAnomalyDetector](api-createloganomalydetector.md).
+
+## Contents
+
+**dynamicTokenPosition**
+
+For a dynamic token, this indicates where in the pattern that this token appears, related
+to other dynamic tokens. The dynamic token that appears first has a value of `1`,
+the one that appears second is `2`, and so on.
+
+Type: Integer
+
+Required: No
+
+**enumerations**
+
+Contains the values found for a dynamic token, and the number of times each value was
+found.
+
+Type: String to long map
+
+Key Length Constraints: Minimum length of 1.
+
+Required: No
+
+**inferredTokenName**
+
+A name that CloudWatch Logs assigned to this dynamic token to make the pattern more
+readable. The string part of the `inferredTokenName` gives you a clearer idea of
+the content of this token. The number part of the `inferredTokenName` shows where
+in the pattern this token appears, compared to other dynamic tokens. CloudWatch Logs
+assigns the string part of the name based on analyzing the content of the log events that
+contain it.
+
+For example, an inferred token name of `IPAddress-3` means that the token
+represents an IP address, and this token is the third dynamic token in the pattern.
+
+Type: String
+
+Length Constraints: Minimum length of 1.
+
+Required: No
+
+**isDynamic**
+
+Specifies whether this is a dynamic token.
+
+Type: Boolean
+
+Required: No
+
+**tokenString**
+
+The string represented by this token. If this is a dynamic token, the value will be
+`<*>`
+
+Type: String
+
+Length Constraints: Minimum length of 1.
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/patterntoken.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/patterntoken.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/patterntoken.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+ParseWAF
+
+Policy
+
+All content copied from https://docs.aws.amazon.com/.

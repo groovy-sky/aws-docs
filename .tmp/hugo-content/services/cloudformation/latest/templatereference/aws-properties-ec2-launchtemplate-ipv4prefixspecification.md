@@ -1,0 +1,52 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::EC2::LaunchTemplate Ipv4PrefixSpecification
+
+Specifies an IPv4 prefix for a network interface.
+
+`Ipv4PrefixSpecification` is a property of [AWS::EC2::LaunchTemplate NetworkInterface](../userguide/aws-properties-ec2-launchtemplate-networkinterface.md).
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "Ipv4Prefix" : String
+}
+
+```
+
+### YAML
+
+```yaml
+
+  Ipv4Prefix: String
+
+```
+
+## Properties
+
+`Ipv4Prefix`
+
+The IPv4 prefix. For information, see [Assigning prefixes to network interfaces](../../../ec2/latest/userguide/ec2-prefix-eni.md) in the
+_Amazon EC2 User Guide_.
+
+_Required_: No
+
+_Type_: String
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+InstanceRequirements
+
+Ipv6Add
+
+All content copied from https://docs.aws.amazon.com/.

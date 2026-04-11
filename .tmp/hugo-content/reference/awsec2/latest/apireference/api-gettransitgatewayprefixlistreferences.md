@@ -1,0 +1,163 @@
+# GetTransitGatewayPrefixListReferences
+
+Gets information about the prefix list references in a specified transit gateway route table.
+
+## Request Parameters
+
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+
+**DryRun**
+
+Checks whether you have the required permissions for the action, without actually making the request,
+and provides an error response. If you have the required permissions, the error response is `DryRunOperation`.
+Otherwise, it is `UnauthorizedOperation`.
+
+Type: Boolean
+
+Required: No
+
+**Filter.N**
+
+One or more filters. The possible values are:
+
+- `attachment.resource-id` \- The ID of the resource for the attachment.
+
+- `attachment.resource-type` \- The type of resource for the
+attachment. Valid values are `vpc` \| `vpn` \|
+`direct-connect-gateway` \| `peering`.
+
+- `attachment.transit-gateway-attachment-id` \- The ID of the attachment.
+
+- `is-blackhole` \- Whether traffic matching the route is blocked ( `true` \| `false`).
+
+- `prefix-list-id` \- The ID of the prefix list.
+
+- `prefix-list-owner-id` \- The ID of the owner of the prefix list.
+
+- `state` \- The state of the prefix list reference ( `pending` \| `available` \| `modifying` \| `deleting`).
+
+Type: Array of [Filter](api-filter.md) objects
+
+Required: No
+
+**MaxResults**
+
+The maximum number of results to return with a single call.
+To retrieve the remaining results, make another call with the returned `nextToken` value.
+
+Type: Integer
+
+Valid Range: Minimum value of 5. Maximum value of 1000.
+
+Required: No
+
+**NextToken**
+
+The token for the next page of results.
+
+Type: String
+
+Required: No
+
+**TransitGatewayRouteTableId**
+
+The ID of the transit gateway route table.
+
+Type: String
+
+Required: Yes
+
+## Response Elements
+
+The following elements are returned by the service.
+
+**nextToken**
+
+The token to use to retrieve the next page of results. This value is `null` when there are no more results to return.
+
+Type: String
+
+**requestId**
+
+The ID of the request.
+
+Type: String
+
+**transitGatewayPrefixListReferenceSet**
+
+Information about the prefix list references.
+
+Type: Array of [TransitGatewayPrefixListReference](api-transitgatewayprefixlistreference.md) objects
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+
+## Examples
+
+### Example
+
+This example gets the prefix list references for the specified transit
+gateway route table.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=GetTransitGatewayPrefixListReferences
+&TransitGatewayRouteTableId=tgw-rtb-0f98a0a5d09abcabc
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```
+
+<GetTransitGatewayPrefixListReferencesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+    <requestId>b194523f-807a-4a41-920a-example</requestId>
+    <transitGatewayPrefixListReferenceSet>
+        <item>
+            <blackhole>false</blackhole>
+            <prefixListId>pl-001122334455aabbc</prefixListId>
+            <prefixListOwnerId>123456789012</prefixListOwnerId>
+            <state>available</state>
+            <transitGatewayAttachment>
+                <resourceId>vpn-12312312312312312</resourceId>
+                <resourceType>vpn</resourceType>
+                <transitGatewayAttachmentId>tgw-attach-01234567abcabcabc</transitGatewayAttachmentId>
+            </transitGatewayAttachment>
+            <transitGatewayRouteTableId>tgw-rtb-0f98a0a5d09abcabc</transitGatewayRouteTableId>
+        </item>
+    </transitGatewayPrefixListReferenceSet>
+</GetTransitGatewayPrefixListReferencesResponse>
+```
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/gettransitgatewayprefixlistreferences.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/gettransitgatewayprefixlistreferences.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/gettransitgatewayprefixlistreferences.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/gettransitgatewayprefixlistreferences.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/gettransitgatewayprefixlistreferences.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/gettransitgatewayprefixlistreferences.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/gettransitgatewayprefixlistreferences.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/gettransitgatewayprefixlistreferences.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/gettransitgatewayprefixlistreferences.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/gettransitgatewayprefixlistreferences.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+GetTransitGatewayPolicyTableEntries
+
+GetTransitGatewayRouteTableAssociations

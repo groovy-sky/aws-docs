@@ -1,0 +1,105 @@
+# DeleteVpnConnectionRoute
+
+Deletes the specified static route associated with a VPN connection between an
+existing virtual private gateway and a VPN customer gateway. The static route allows
+traffic to be routed from the virtual private gateway to the VPN customer
+gateway.
+
+## Request Parameters
+
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+
+**DestinationCidrBlock**
+
+The CIDR block associated with the local subnet of the customer network.
+
+Type: String
+
+Required: Yes
+
+**VpnConnectionId**
+
+The ID of the VPN connection.
+
+Type: String
+
+Required: Yes
+
+## Response Elements
+
+The following elements are returned by the service.
+
+**requestId**
+
+The ID of the request.
+
+Type: String
+
+**return**
+
+Is `true` if the request succeeds, and an error otherwise.
+
+Type: Boolean
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+
+## Examples
+
+### Example
+
+This example deletes a static route to the destination CIDR block
+`11.12.0.0/16` associated with the VPN connection with the ID
+`vpn-83ad48ea`. Note that when using the Query API, the "/" is
+denoted as "%2F".
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=DeleteVpnConnectionRoute
+&DestinationCidrBlock=11.12.0.0%2F16
+&VpnConnectionId=vpn-83ad48ea
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```
+
+<DeleteVpnConnectionRouteResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+    <requestId>4f35a1b2-c2c3-4093-b51f-abb9d7311990</requestId>
+    <return>true</return>
+</DeleteVpnConnectionRouteResponse>
+```
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/deletevpnconnectionroute.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/deletevpnconnectionroute.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/deletevpnconnectionroute.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/deletevpnconnectionroute.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/deletevpnconnectionroute.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/deletevpnconnectionroute.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/deletevpnconnectionroute.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/deletevpnconnectionroute.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/deletevpnconnectionroute.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deletevpnconnectionroute.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+DeleteVpnConnection
+
+DeleteVpnGateway

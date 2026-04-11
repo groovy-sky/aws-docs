@@ -1,0 +1,78 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::MediaConnect::RouterInput StandardRouterInputConfiguration
+
+The configuration settings for a standard router input, including the protocol, protocol-specific configuration, network interface, and availability zone.
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "NetworkInterfaceArn" : String,
+  "Protocol" : String,
+  "ProtocolConfiguration" : RouterInputProtocolConfiguration
+}
+
+```
+
+### YAML
+
+```yaml
+
+  NetworkInterfaceArn: String
+  Protocol: String
+  ProtocolConfiguration:
+    RouterInputProtocolConfiguration
+
+```
+
+## Properties
+
+`NetworkInterfaceArn`
+
+The Amazon Resource Name (ARN) of the network interface associated with the standard router input.
+
+_Required_: Yes
+
+_Type_: String
+
+_Pattern_: `^arn:(aws[a-zA-Z-]*):mediaconnect:[a-z0-9-]+:[0-9]{12}:routerNetworkInterface:[a-z0-9]{12}$`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`Protocol`
+
+The protocol used by the standard router input.
+
+_Required_: No
+
+_Type_: String
+
+_Allowed values_: `RTP | RIST | SRT_CALLER | SRT_LISTENER`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`ProtocolConfiguration`
+
+The configuration settings for the protocol used by the standard router input.
+
+_Required_: Yes
+
+_Type_: [RouterInputProtocolConfiguration](aws-properties-mediaconnect-routerinput-routerinputprotocolconfiguration.md)
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+SrtListenerRouterInputConfiguration
+
+Tag
+
+All content copied from https://docs.aws.amazon.com/.

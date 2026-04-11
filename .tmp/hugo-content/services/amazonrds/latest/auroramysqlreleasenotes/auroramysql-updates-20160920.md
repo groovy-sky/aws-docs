@@ -1,0 +1,29 @@
+# Aurora MySQL database engine updates: 2016-09-20 (version 1.7.1) (Deprecated)
+
+**Version:** 1.7.1
+
+## Improvements
+
+- Fixes an issue where an Aurora Replica crashes if the InnoDB full-text
+search cache is full.
+
+- Fixes an issue where the database engine crashes if a worker thread in the
+thread pool waits for itself.
+
+- Fixes an issue where an Aurora Replica crashes if a metadata lock on a
+table causes a deadlock.
+
+- Fixes an issue where the database engine crashes due to a race condition
+between two worker threads in the thread pool.
+
+- Fixes an issue where an unnecessary failover occurs under heavy load if
+the monitoring agent doesn't detect the advancement of write operations to
+the distributed storage subsystem.
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Aurora MySQL updates: 2016-10-18 (version 1.8) (Deprecated)
+
+Aurora MySQL updates: 2016-08-30 (version 1.7.0) (Deprecated)
+
+All content copied from https://docs.aws.amazon.com/.

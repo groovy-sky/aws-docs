@@ -1,0 +1,87 @@
+# Recommendations from Amazon RDS
+
+Amazon RDS provides automated
+recommendations for database resources, such as DB instances, read replicas, and DB parameter groups. These recommendations provide best practice guidance by analyzing DB instance configuration, usage, and performance
+data.
+
+Amazon RDS Performance Insights monitors specific metrics and automatically creates thresholds by analyzing what levels are
+considered potentially problematic for a specified resource. When new metric values cross a
+predefined threshold over a given period of time, Performance Insights generates a proactive
+recommendation. This recommendation helps to prevent future database performance
+impact. For example, the "Idle In Transaction" recommendation is generated for RDS for PostgreSQL instances when the sessions
+connected to the database are not performing active work, but can keep database resources blocked.
+To receive proactive recommendations, you must turn on Performance Insights with a paid tier retention period. For information about turning on
+Performance Insights, see [Turning Performance Insights on and off for Amazon RDS](user-perfinsights-enabling.md). For information about pricing and data
+retention for Performance Insights see [Pricing and data retention for Performance Insights](user-perfinsights-overview-cost.md).
+
+DevOps Guru for RDS monitors certain metrics to detect when the metric's behavior becomes highly
+unusual or anomalous. These anomalies are reported as reactive insights with
+recommendations. For example, DevOps Guru for RDS might recommend you to consider increasing CPU
+capacity or investigate wait events that are contributing to DB load. DevOps Guru for RDS also
+provides threshold based proactive recommendations. For these recommendations, you must turn
+on DevOps Guru for RDS. For information about turning on DevOps Guru for RDS, see [Turning on DevOps Guru and specifying resource coverage](devops-guru-for-rds.md#devops-guru-for-rds.configuring.coverage).
+
+Recommendations will be in any of the following status: active, dismissed, pending, or
+resolved. Resolved recommendations are available for 365 days.
+
+You can view or dismiss the recommendations. You can apply a configuration based active
+recommendation immediately, schedule it in the next maintenance window, or dismiss it. For
+threshold based proactive and machine learning based reactive recommendations, you need to
+review the suggested cause of the issue and then perform the recommended actions to fix the
+issue.
+
+Recommendations are supported in the following AWS Regions:
+
+- US East (Ohio)
+
+- US East (N. Virginia)
+
+- US West (N. California)
+
+- US West (Oregon)
+
+- Asia Pacific (Mumbai)
+
+- Asia Pacific (Seoul)
+
+- Asia Pacific (Singapore)
+
+- Asia Pacific (Sydney)
+
+- Asia Pacific (Tokyo)
+
+- Canada (Central)
+
+- Europe (Frankfurt)
+
+- Europe (Ireland)
+
+- Europe (London)
+
+- Europe (Paris)
+
+- Europe (Stockholm)
+
+- South America (São Paulo)
+
+Learn to view, apply, dismiss, and modify recommendations from Amazon RDS in the following sections.
+
+###### Topics
+
+- [Viewing Amazon RDS recommendations](userrecommendationsview.md)
+
+- [Applying Amazon RDS recommendations](userrecommendationsmanage-applyrecommendation.md)
+
+- [Dismissing Amazon RDS recommendations](userrecommendationsmanage-dismissrecommendation.md)
+
+- [Modifying dismissed Amazon RDS recommendations to active recommendations](userrecommendationsmanage-dismisstoactiverecommendation.md)
+
+- [Recommendations from Amazon RDS reference](userrecommendationsmanage-recommendationreference.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Viewing instance status
+
+Viewing recommendations
+
+All content copied from https://docs.aws.amazon.com/.

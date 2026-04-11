@@ -1,0 +1,240 @@
+# Common parameters for RMAN procedures
+
+You can use procedures in the Amazon RDS package `rdsadmin.rdsadmin_rman_util` to perform tasks with
+RMAN. Several parameters are common to the procedures in the package. The package has the following common
+parameters.
+
+Parameter nameData typeValid valuesDefaultRequiredDescription
+
+`p_directory_name`
+
+varchar2
+
+A valid database directory name.
+
+—
+
+Yes
+
+The name of the directory to contain the backup files.
+
+`p_label`
+
+varchar2
+
+`a-z`, `A-Z`, `0-9`,
+`'_'`, `'-'`, `'.'`
+
+—
+
+No
+
+A unique string that is included in the backup file
+names.
+
+###### Note
+
+The limit is 30 characters.
+
+`p_owner`
+
+varchar2
+
+A valid owner of the directory specified in
+`p_directory_name`.
+
+—
+
+Yes
+
+The owner of the directory to contain the backup files.
+
+`p_tag`
+
+varchar2
+
+`a-z`, `A-Z`, `0-9`, `'_'`,
+`'-'`, `'.'`
+
+NULL
+
+No
+
+A string that can be used to distinguish between backups to indicate the purpose or
+usage of backups, such as daily, weekly, or incremental-level backups.
+
+The limit is 30 characters. The tag is not case-sensitive. Tags are always stored in
+uppercase, regardless of the case used when entering them.
+
+Tags don't need to be unique, so multiple backups can have the same tag.
+
+If you don't specify a tag, then RMAN assigns a default tag automatically using the
+format `TAGYYYYMMDDTHHMMSS`, where
+`YYYY` is the year, `MM` is the
+month, `DD` is the day, `HH` is the
+hour (in 24-hour format), `MM` is the minutes, and
+`SS` is the seconds. The date and time refer to when RMAN
+started the backup.
+
+For example, a backup might receive a tag `TAG20190927T214517` for a backup
+that started on 2019-09-27 at 21:45:17.
+
+The `p_tag` parameter is supported for the following Amazon RDS for Oracle
+DB engine versions:
+
+- Oracle Database 21c (21.0.0)
+
+- Oracle Database 19c (19.0.0), using 19.0.0.0.ru-2021-10.rur-2021-10.r1 or
+higher
+
+`p_compress`
+
+boolean
+
+`TRUE`, `FALSE`
+
+`FALSE`
+
+No
+
+Specify `TRUE` to enable BASIC backup
+compression.
+
+Specify `FALSE` to disable BASIC backup
+compression.
+
+`p_include_archive_logs`
+
+boolean
+
+`TRUE`, `FALSE`
+
+`FALSE`
+
+No
+
+Specify `TRUE` to include archived redo logs in the
+backup.
+
+Specify `FALSE` to exclude archived redo logs from
+the backup.
+
+If you include archived redo logs in the backup, set retention
+to one hour or greater using the
+`rdsadmin.rdsadmin_util.set_configuration`
+procedure. Also, call the
+`rdsadmin.rdsadmin_rman_util.crosscheck_archivelog`
+procedure immediately before running the backup. Otherwise, the
+backup might fail due to missing archived redo log files that
+have been deleted by Amazon RDS management procedures.
+
+`p_include_controlfile`
+
+boolean
+
+`TRUE`, `FALSE`
+
+`FALSE`
+
+No
+
+Specify `TRUE` to include the control file in the
+backup.
+
+Specify `FALSE` to exclude the control file from
+the backup.
+
+`p_optimize`
+
+boolean
+
+`TRUE`, `FALSE`
+
+`TRUE`
+
+No
+
+Specify `TRUE` to enable backup optimization, if
+archived redo logs are included, to reduce backup size.
+
+Specify `FALSE` to disable backup
+optimization.
+
+`p_parallel`
+
+number
+
+A valid integer between `1` and `254`
+for Oracle Database Enterprise Edition (EE)
+
+`1` for other Oracle Database editions
+
+`1`
+
+No
+
+Number of channels.
+
+`p_rman_to_dbms_output`
+
+boolean
+
+`TRUE`, `FALSE`
+
+`FALSE`
+
+No
+
+When `TRUE`, the RMAN output is sent to the
+`DBMS_OUTPUT` package in addition to a file in
+the `BDUMP` directory. In SQL\*Plus, use `SET
+                                        SERVEROUTPUT ON` to see the output.
+
+When `FALSE`, the RMAN output is only sent to a
+file in the `BDUMP` directory.
+
+`p_section_size_mb`
+
+number
+
+A valid integer
+
+`NULL`
+
+No
+
+The section size in megabytes (MB).
+
+Validates in parallel by dividing each file into the specified
+section size.
+
+When `NULL`, the parameter is ignored.
+
+`p_validation_type`
+
+varchar2
+
+`'PHYSICAL'`,
+`'PHYSICAL+LOGICAL'`
+
+`'PHYSICAL'`
+
+No
+
+The level of corruption detection.
+
+Specify `'PHYSICAL'` to check for physical
+corruption. An example of physical corruption is a block with a
+mismatch in the header and footer.
+
+Specify `'PHYSICAL+LOGICAL'` to check for logical
+inconsistencies in addition to physical corruption. An example
+of logical corruption is a corrupt block.
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Prerequisites for RMAN backups
+
+Validating DB instance files
+
+All content copied from https://docs.aws.amazon.com/.

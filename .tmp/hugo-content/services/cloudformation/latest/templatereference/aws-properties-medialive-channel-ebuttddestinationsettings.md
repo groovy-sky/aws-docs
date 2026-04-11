@@ -1,0 +1,122 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::MediaLive::Channel EbuTtDDestinationSettings
+
+Settings for EBU-TT captions in the output.
+
+The parent of this entity is CaptionDestinationSettings.
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "CopyrightHolder" : String,
+  "DefaultFontSize" : Integer,
+  "DefaultLineHeight" : Integer,
+  "FillLineGap" : String,
+  "FontFamily" : String,
+  "StyleControl" : String
+}
+
+```
+
+### YAML
+
+```yaml
+
+  CopyrightHolder: String
+  DefaultFontSize: Integer
+  DefaultLineHeight: Integer
+  FillLineGap: String
+  FontFamily: String
+  StyleControl: String
+
+```
+
+## Properties
+
+`CopyrightHolder`
+
+Applies only if you plan to convert these source captions to EBU-TT-D or TTML in an output. Complete this field if you want to include the name of the copyright holder in the copyright metadata tag in the TTML
+
+_Required_: No
+
+_Type_: String
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`DefaultFontSize`
+
+Property description not available.
+
+_Required_: No
+
+_Type_: Integer
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`DefaultLineHeight`
+
+Property description not available.
+
+_Required_: No
+
+_Type_: Integer
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`FillLineGap`
+
+Specifies how to handle the gap between the lines (in multi-line captions).
+
+\- enabled: Fill with the captions background color (as specified in the input captions).
+\- disabled: Leave the gap unfilled.
+
+_Required_: No
+
+_Type_: String
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`FontFamily`
+
+Specifies the font family to include in the font data attached to the EBU-TT captions. Valid only if styleControl is set to include. If you leave this field empty, the font family is set to "monospaced". (If styleControl is set to exclude, the font family is always set to "monospaced".)
+
+You specify only the font family. All other style information (color, bold, position and so on) is copied from the input captions. The size is always set to 100% to allow the downstream player to choose the size.
+
+\- Enter a list of font families, as a comma-separated list of font names, in order of preference. The name can be a font family (such as “Arial”), or a generic font family (such as “serif”), or “default” (to let the downstream player choose the font).
+\- Leave blank to set the family to “monospace”.
+
+_Required_: No
+
+_Type_: String
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`StyleControl`
+
+Specifies the style information (font color, font position, and so on) to include in the font data that is attached to the EBU-TT captions.
+
+\- include: Take the style information (font color, font position, and so on) from the source captions and include that information in the font data attached to the EBU-TT captions. This option is valid only if the source captions are Embedded or Teletext.
+\- exclude: In the font data attached to the EBU-TT captions, set the font family to "monospaced". Do not include any other style information.
+
+_Required_: No
+
+_Type_: String
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Eac3Settings
+
+EmbeddedSourceSettings
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,0 +1,49 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::EKS::Addon NamespaceConfig
+
+The `NamespaceConfig` property type specifies Property description not available. for an [AWS::EKS::Addon](aws-resource-eks-addon.md).
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "Namespace" : String
+}
+
+```
+
+### YAML
+
+```yaml
+
+  Namespace: String
+
+```
+
+## Properties
+
+`Namespace`
+
+Property description not available.
+
+_Required_: Yes
+
+_Type_: String
+
+_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+AWS::EKS::Addon
+
+PodIdentityAssociation
+
+All content copied from https://docs.aws.amazon.com/.

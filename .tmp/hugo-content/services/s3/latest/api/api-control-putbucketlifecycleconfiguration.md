@@ -1,0 +1,201 @@
+# PutBucketLifecycleConfiguration
+
+###### Note
+
+This action puts a lifecycle configuration to an Amazon S3 on Outposts bucket. To put a
+lifecycle configuration to an S3 bucket, see [PutBucketLifecycleConfiguration](api-putbucketlifecycleconfiguration.md) in the _Amazon S3 API Reference_.
+
+Creates a new lifecycle configuration for the S3 on Outposts bucket or replaces an
+existing lifecycle configuration. Outposts buckets only support lifecycle configurations
+that delete/expire objects after a certain period of time and abort incomplete multipart
+uploads.
+
+All Amazon S3 on Outposts REST API requests for this action require an additional parameter of `x-amz-outpost-id` to be passed with the request. In addition, you must use an S3 on Outposts endpoint hostname prefix instead of `s3-control`. For an example of the request syntax for Amazon S3 on Outposts that uses the S3 on Outposts endpoint hostname prefix and the `x-amz-outpost-id` derived by using the access point ARN, see the [Examples](api-control-putbucketlifecycleconfiguration.md#API_control_PutBucketLifecycleConfiguration_Examples) section.
+
+The following actions are related to
+`PutBucketLifecycleConfiguration`:
+
+- [GetBucketLifecycleConfiguration](api-control-getbucketlifecycleconfiguration.md)
+
+- [DeleteBucketLifecycleConfiguration](api-control-deletebucketlifecycleconfiguration.md)
+
+## Request Syntax
+
+```nohighlight
+
+PUT /v20180820/bucket/name/lifecycleconfiguration HTTP/1.1
+Host: Bucket.s3-control.amazonaws.com
+x-amz-account-id: AccountId
+<?xml version="1.0" encoding="UTF-8"?>
+<LifecycleConfiguration xmlns="http://awss3control.amazonaws.com/doc/2018-08-20/">
+   <Rules>
+      <Rule>
+         <AbortIncompleteMultipartUpload>
+            <DaysAfterInitiation>integer</DaysAfterInitiation>
+         </AbortIncompleteMultipartUpload>
+         <Expiration>
+            <Date>timestamp</Date>
+            <Days>integer</Days>
+            <ExpiredObjectDeleteMarker>boolean</ExpiredObjectDeleteMarker>
+         </Expiration>
+         <Filter>
+            <And>
+               <ObjectSizeGreaterThan>long</ObjectSizeGreaterThan>
+               <ObjectSizeLessThan>long</ObjectSizeLessThan>
+               <Prefix>string</Prefix>
+               <Tags>
+                  <S3Tag>
+                     <Key>string</Key>
+                     <Value>string</Value>
+                  </S3Tag>
+               </Tags>
+            </And>
+            <ObjectSizeGreaterThan>long</ObjectSizeGreaterThan>
+            <ObjectSizeLessThan>long</ObjectSizeLessThan>
+            <Prefix>string</Prefix>
+            <Tag>
+               <Key>string</Key>
+               <Value>string</Value>
+            </Tag>
+         </Filter>
+         <ID>string</ID>
+         <NoncurrentVersionExpiration>
+            <NewerNoncurrentVersions>integer</NewerNoncurrentVersions>
+            <NoncurrentDays>integer</NoncurrentDays>
+         </NoncurrentVersionExpiration>
+         <NoncurrentVersionTransitions>
+            <NoncurrentVersionTransition>
+               <NoncurrentDays>integer</NoncurrentDays>
+               <StorageClass>string</StorageClass>
+            </NoncurrentVersionTransition>
+         </NoncurrentVersionTransitions>
+         <Status>string</Status>
+         <Transitions>
+            <Transition>
+               <Date>timestamp</Date>
+               <Days>integer</Days>
+               <StorageClass>string</StorageClass>
+            </Transition>
+         </Transitions>
+      </Rule>
+   </Rules>
+</LifecycleConfiguration>
+```
+
+## URI Request Parameters
+
+The request uses the following URI parameters.
+
+**[name](#API_control_PutBucketLifecycleConfiguration_RequestSyntax)**
+
+The name of the bucket for which to set the configuration.
+
+Length Constraints: Minimum length of 3. Maximum length of 255.
+
+Required: Yes
+
+**[x-amz-account-id](#API_control_PutBucketLifecycleConfiguration_RequestSyntax)**
+
+The AWS account ID of the Outposts bucket.
+
+Length Constraints: Maximum length of 64.
+
+Pattern: `^\d{12}$`
+
+Required: Yes
+
+## Request Body
+
+The request accepts the following data in XML format.
+
+**[LifecycleConfiguration](#API_control_PutBucketLifecycleConfiguration_RequestSyntax)**
+
+Root level tag for the LifecycleConfiguration parameters.
+
+Required: Yes
+
+**[Rules](#API_control_PutBucketLifecycleConfiguration_RequestSyntax)**
+
+A lifecycle rule for individual objects in an Outposts bucket.
+
+Type: Array of [LifecycleRule](api-control-lifecyclerule.md) data types
+
+Required: No
+
+## Response Syntax
+
+```
+
+HTTP/1.1 200
+
+```
+
+## Response Elements
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
+
+## Examples
+
+### Sample PutBucketLifecycleConfiguration request on an Amazon S3 on Outposts bucket
+
+This request puts a lifecycle configuration on an Outposts bucket named
+`example-outpost-bucket`.
+
+```HTTP
+
+            PUT /v20180820/bucket/example-outpost-bucket/lifecycleconfiguration HTTP/1.1
+            Host:s3-outposts.<Region>.amazonaws.com
+            x-amz-account-id: example-account-id
+            x-amz-outpost-id: op-01ac5d28a6a232904
+            Content-Length: 0
+            Date: Wed, 01 Mar  2006 12:00:00 GMT
+            Content-MD5: q6yJDlIkcBaGGfb3QLY69A==
+            Authorization: authorization string
+            Content-Length: 214
+
+            <LifecycleConfiguration>
+              <Rule>
+                <ID>id2</ID>
+                <Filter>
+                   <Prefix>logs/</Prefix>
+                </Filter>
+                <Status>Enabled</Status>
+                <Expiration>
+                  <Days>365</Days>
+                </Expiration>
+              </Rule>
+            </LifecycleConfiguration>
+
+```
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../goto/cli2/s3control-2018-08-20/putbucketlifecycleconfiguration.md)
+
+- [AWS SDK for .NET V4](../../../../reference/goto/dotnetsdkv4/s3control-2018-08-20/putbucketlifecycleconfiguration.md)
+
+- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3control-2018-08-20/putbucketlifecycleconfiguration.md)
+
+- [AWS SDK for Go v2](../../../../reference/goto/sdkforgov2/s3control-2018-08-20/putbucketlifecycleconfiguration.md)
+
+- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3control-2018-08-20/putbucketlifecycleconfiguration.md)
+
+- [AWS SDK for JavaScript V3](../../../../reference/goto/sdkforjavascriptv3/s3control-2018-08-20/putbucketlifecycleconfiguration.md)
+
+- [AWS SDK for Kotlin](../../../../reference/goto/sdkforkotlin/s3control-2018-08-20/putbucketlifecycleconfiguration.md)
+
+- [AWS SDK for PHP V3](../../../../reference/goto/sdkforphpv3/s3control-2018-08-20/putbucketlifecycleconfiguration.md)
+
+- [AWS SDK for Python](../../../goto/boto3/s3control-2018-08-20/putbucketlifecycleconfiguration.md)
+
+- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3control-2018-08-20/putbucketlifecycleconfiguration.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+PutAccessPointScope
+
+PutBucketPolicy
+
+All content copied from https://docs.aws.amazon.com/.

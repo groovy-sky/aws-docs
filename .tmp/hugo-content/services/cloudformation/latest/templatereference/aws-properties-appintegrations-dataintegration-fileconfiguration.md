@@ -1,0 +1,69 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::AppIntegrations::DataIntegration FileConfiguration
+
+The configuration for what files should be pulled from the source.
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "Filters" : {Key: Value, ...},
+  "Folders" : [ String, ... ]
+}
+
+```
+
+### YAML
+
+```yaml
+
+  Filters:
+    Key: Value
+  Folders:
+    - String
+
+```
+
+## Properties
+
+`Filters`
+
+Restrictions for what files should be pulled from the source.
+
+_Required_: No
+
+_Type_: Object of Array
+
+_Pattern_: `^[A-Za-z]`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`Folders`
+
+Identifiers for the source folders to pull all files from recursively.
+
+_Required_: Yes
+
+_Type_: Array of String
+
+_Minimum_: `1 | 1`
+
+_Maximum_: `200 | 10`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+AWS::AppIntegrations::DataIntegration
+
+ScheduleConfig
+
+All content copied from https://docs.aws.amazon.com/.

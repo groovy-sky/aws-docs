@@ -1,0 +1,104 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::AppFlow::ConnectorProfile SlackConnectorProfileCredentials
+
+The connector-specific profile credentials required when using Slack.
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "AccessToken" : String,
+  "ClientId" : String,
+  "ClientSecret" : String,
+  "ConnectorOAuthRequest" : ConnectorOAuthRequest
+}
+
+```
+
+### YAML
+
+```yaml
+
+  AccessToken: String
+  ClientId: String
+  ClientSecret: String
+  ConnectorOAuthRequest:
+    ConnectorOAuthRequest
+
+```
+
+## Properties
+
+`AccessToken`
+
+The credentials used to access protected Slack resources.
+
+_Required_: No
+
+_Type_: String
+
+_Pattern_: `\S+`
+
+_Maximum_: `4096`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`ClientId`
+
+The identifier for the client.
+
+_Required_: Yes
+
+_Type_: String
+
+_Pattern_: `\S+`
+
+_Maximum_: `512`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`ClientSecret`
+
+The client secret used by the OAuth client to authenticate to the authorization server.
+
+_Required_: Yes
+
+_Type_: String
+
+_Pattern_: `\S+`
+
+_Maximum_: `512`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`ConnectorOAuthRequest`
+
+Used by select connectors for which the OAuth workflow is supported, such as Salesforce,
+Google Analytics, Marketo, Zendesk, and Slack.
+
+_Required_: No
+
+_Type_: [ConnectorOAuthRequest](aws-properties-appflow-connectorprofile-connectoroauthrequest.md)
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+## See also
+
+- [SlackConnectorProfileCredentials](../../../../reference/appflow/1-0/apireference/api-slackconnectorprofilecredentials.md) in the _Amazon AppFlow API_
+_Reference_.
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+SingularConnectorProfileCredentials
+
+SlackConnectorProfileProperties
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,0 +1,67 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::BedrockAgentCore::Evaluator LambdaEvaluatorConfig
+
+The `LambdaEvaluatorConfig` property type specifies Property description not available. for an [AWS::BedrockAgentCore::Evaluator](aws-resource-bedrockagentcore-evaluator.md).
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "LambdaArn" : String,
+  "LambdaTimeoutInSeconds" : Integer
+}
+
+```
+
+### YAML
+
+```yaml
+
+  LambdaArn: String
+  LambdaTimeoutInSeconds: Integer
+
+```
+
+## Properties
+
+`LambdaArn`
+
+Property description not available.
+
+_Required_: Yes
+
+_Type_: String
+
+_Pattern_: `^arn:(aws[a-zA-Z-]*)?:lambda:([a-z]{2}(-gov)?-[a-z]+-\d{1}):(\d{12}):function:([a-zA-Z0-9-_.]+)(:(\$LATEST|[a-zA-Z0-9-_]+))?$`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`LambdaTimeoutInSeconds`
+
+Property description not available.
+
+_Required_: No
+
+_Type_: Integer
+
+_Minimum_: `1`
+
+_Maximum_: `300`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+InferenceConfiguration
+
+LlmAsAJudgeEvaluatorConfig
+
+All content copied from https://docs.aws.amazon.com/.

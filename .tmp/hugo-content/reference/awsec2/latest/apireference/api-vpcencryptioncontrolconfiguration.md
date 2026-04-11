@@ -1,0 +1,113 @@
+# VpcEncryptionControlConfiguration
+
+Describes the configuration settings for VPC Encryption Control.
+
+For more information, see [Enforce VPC encryption in transit](../../../../services/vpc/latest/userguide/vpc-encryption-controls.md) in the _Amazon VPC User Guide_.
+
+## Contents
+
+**Mode**
+
+The encryption mode for the VPC Encryption Control configuration.
+
+Type: String
+
+Valid Values: `monitor | enforce`
+
+Required: Yes
+
+**EgressOnlyInternetGatewayExclusion**
+
+Specifies whether to exclude egress-only internet gateway traffic from encryption enforcement.
+
+Type: String
+
+Valid Values: `enable | disable`
+
+Required: No
+
+**ElasticFileSystemExclusion**
+
+Specifies whether to exclude Elastic File System traffic from encryption enforcement.
+
+Type: String
+
+Valid Values: `enable | disable`
+
+Required: No
+
+**InternetGatewayExclusion**
+
+Specifies whether to exclude internet gateway traffic from encryption enforcement.
+
+Type: String
+
+Valid Values: `enable | disable`
+
+Required: No
+
+**LambdaExclusion**
+
+Specifies whether to exclude Lambda function traffic from encryption enforcement.
+
+Type: String
+
+Valid Values: `enable | disable`
+
+Required: No
+
+**NatGatewayExclusion**
+
+Specifies whether to exclude NAT gateway traffic from encryption enforcement.
+
+Type: String
+
+Valid Values: `enable | disable`
+
+Required: No
+
+**VirtualPrivateGatewayExclusion**
+
+Specifies whether to exclude virtual private gateway traffic from encryption enforcement.
+
+Type: String
+
+Valid Values: `enable | disable`
+
+Required: No
+
+**VpcLatticeExclusion**
+
+Specifies whether to exclude VPC Lattice traffic from encryption enforcement.
+
+Type: String
+
+Valid Values: `enable | disable`
+
+Required: No
+
+**VpcPeeringExclusion**
+
+Specifies whether to exclude VPC peering connection traffic from encryption enforcement.
+
+Type: String
+
+Valid Values: `enable | disable`
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/vpcencryptioncontrolconfiguration.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/vpcencryptioncontrolconfiguration.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/vpcencryptioncontrolconfiguration.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+VpcEncryptionControl
+
+VpcEncryptionControlExclusion

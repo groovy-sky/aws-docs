@@ -1,0 +1,62 @@
+# Change System Environment Variables
+
+Follow these steps to change system environment variables across your fleet
+instances.
+
+###### To change system environment variables on an image builder
+
+This procedure applies only to system environment variables, not user
+environment variables. To change user environment variables that persist across
+your fleet instances, perform the steps in the next procedure.
+
+1. Connect to the image builder on which to change system environment
+    variables and sign in with an account that has local administrator
+    permissions. To do so, do either of the following:
+
+- [Use the\
+WorkSpaces Applications console](managing-image-builders-connect-console.md) (for web connections only)
+
+- [Create a streaming URL](managing-image-builders-connect-streaming-url.md) (for web or WorkSpaces Applications client
+connections)
+
+###### Note
+
+If the image builder that you want to connect to is joined to
+an Active Directory domain and your organization requires smart
+card sign in, you must create a streaming URL and use the WorkSpaces Applications
+client for the connection. For information about smart card sign
+in, see [Smart Cards](feature-support-usb-devices-qualified.md#feature-support-USB-devices-qualified-smart-cards).
+
+2. Choose the Windows **Start** button, open the context
+    (right-click) menu for **Computer**, and then choose
+    **Properties**.
+
+3. In the navigation pane, choose **Advanced system**
+**settings**.
+
+4. In **System variables**, change the environment variables
+    that you want to persist across your fleet instances, and then
+    choose **OK**.
+
+5. On the image builder desktop, open Image Assistant.
+
+6. Follow the necessary steps in Image Assistant to finish creating your
+    image. For more information, see [Tutorial: Create a Custom WorkSpaces Applications Image by Using the WorkSpaces Applications Console](tutorial-image-builder.md).
+
+The changes to the system environment variables persist across your fleet
+    instances and are available to streaming sessions launched from those
+    instances.
+
+###### Note
+
+Setting AWS CLI credentials as system environment variables might
+prevent WorkSpaces Applications from creating the image.
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Persist Environment
+Variables
+
+Change User Environment Variables
+
+All content copied from https://docs.aws.amazon.com/.

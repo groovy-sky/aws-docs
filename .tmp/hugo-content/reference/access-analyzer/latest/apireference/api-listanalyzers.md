@@ -1,0 +1,155 @@
+# ListAnalyzers
+
+Retrieves a list of analyzers.
+
+## Request Syntax
+
+```nohighlight
+
+GET /analyzer?maxResults=maxResults&nextToken=nextToken&type=type HTTP/1.1
+
+```
+
+## URI Request Parameters
+
+The request uses the following URI parameters.
+
+**[maxResults](#API_ListAnalyzers_RequestSyntax)**
+
+The maximum number of results to return in the response.
+
+**[nextToken](#API_ListAnalyzers_RequestSyntax)**
+
+A token used for pagination of results returned.
+
+**[type](#API_ListAnalyzers_RequestSyntax)**
+
+The type of analyzer.
+
+Valid Values: `ACCOUNT | ORGANIZATION | ACCOUNT_UNUSED_ACCESS | ORGANIZATION_UNUSED_ACCESS | ACCOUNT_INTERNAL_ACCESS | ORGANIZATION_INTERNAL_ACCESS`
+
+## Request Body
+
+The request does not have a request body.
+
+## Response Syntax
+
+```nohighlight
+
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "analyzers": [
+      {
+         "arn": "string",
+         "configuration": { ... },
+         "createdAt": "string",
+         "lastResourceAnalyzed": "string",
+         "lastResourceAnalyzedAt": "string",
+         "name": "string",
+         "status": "string",
+         "statusReason": {
+            "code": "string"
+         },
+         "tags": {
+            "string" : "string"
+         },
+         "type": "string"
+      }
+   ],
+   "nextToken": "string"
+}
+```
+
+## Response Elements
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+**[analyzers](#API_ListAnalyzers_ResponseSyntax)**
+
+The analyzers retrieved.
+
+Type: Array of [AnalyzerSummary](api-analyzersummary.md) objects
+
+**[nextToken](#API_ListAnalyzers_ResponseSyntax)**
+
+A token used for pagination of results returned.
+
+Type: String
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+
+**AccessDeniedException**
+
+You do not have sufficient access to perform this action.
+
+HTTP Status Code: 403
+
+**InternalServerException**
+
+Internal server error.
+
+**retryAfterSeconds**
+
+The seconds to wait to retry.
+
+HTTP Status Code: 500
+
+**ThrottlingException**
+
+Throttling limit exceeded error.
+
+**retryAfterSeconds**
+
+The seconds to wait to retry.
+
+HTTP Status Code: 429
+
+**ValidationException**
+
+Validation exception error.
+
+**fieldList**
+
+A list of fields that didn't validate.
+
+**reason**
+
+The reason for the exception.
+
+HTTP Status Code: 400
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/accessanalyzer-2019-11-01/listanalyzers.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/accessanalyzer-2019-11-01/listanalyzers.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/accessanalyzer-2019-11-01/listanalyzers.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/accessanalyzer-2019-11-01/listanalyzers.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/accessanalyzer-2019-11-01/listanalyzers.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/accessanalyzer-2019-11-01/listanalyzers.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/accessanalyzer-2019-11-01/listanalyzers.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/accessanalyzer-2019-11-01/listanalyzers.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/accessanalyzer-2019-11-01/listanalyzers.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/accessanalyzer-2019-11-01/listanalyzers.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+ListAnalyzedResources
+
+ListArchiveRules

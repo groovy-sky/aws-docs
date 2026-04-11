@@ -1,0 +1,209 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::WAFRegional::WebACL
+
+###### Note
+
+This is **AWS WAF Classic** documentation. For
+more information, see [AWS WAF Classic](../../../waf/latest/developerguide/classic-waf-chapter.md) in the developer guide.
+
+**For the latest version of AWS WAF**, use the AWS WAFV2 API and see the [AWS WAF Developer Guide](../../../waf/latest/developerguide/waf-chapter.md). With the latest version, AWS WAF has a single set of endpoints for regional and global use.
+
+Contains the `Rules` that identify the requests that you want to allow, block, or count. In a `WebACL`, you also specify a
+default action ( `ALLOW` or `BLOCK`), and the action for each `Rule` that you add to a
+`WebACL`, for example, block requests from specified IP addresses or block requests from specified referrers.
+If you add more than one `Rule` to a `WebACL`, a request needs to match only one of the specifications
+to be allowed, blocked, or counted.
+
+To identify the requests that you want AWS WAF to filter, you associate the `WebACL` with an API Gateway API or an Application Load Balancer.
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "Type" : "AWS::WAFRegional::WebACL",
+  "Properties" : {
+      "DefaultAction" : Action,
+      "MetricName" : String,
+      "Name" : String,
+      "Rules" : [ Rule, ... ]
+    }
+}
+
+```
+
+### YAML
+
+```yaml
+
+Type: AWS::WAFRegional::WebACL
+Properties:
+  DefaultAction:
+    Action
+  MetricName: String
+  Name: String
+  Rules:
+    - Rule
+
+```
+
+## Properties
+
+`DefaultAction`
+
+The action to perform if none of the `Rules` contained in the `WebACL` match. The action is specified by the
+`WafAction` object.
+
+_Required_: Yes
+
+_Type_: [Action](aws-properties-wafregional-webacl-action.md)
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`MetricName`
+
+A name for the metrics for this `WebACL`. The name can contain only alphanumeric characters (A-Z, a-z, 0-9), with maximum length 128 and minimum length one. It can't contain
+whitespace or metric names reserved for AWS WAF, including "All" and "Default\_Action." You can't change `MetricName` after you create the `WebACL`.
+
+_Required_: Yes
+
+_Type_: String
+
+_Pattern_: `.*\S.*`
+
+_Minimum_: `1`
+
+_Maximum_: `128`
+
+_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+
+`Name`
+
+A friendly name or description of the `WebACL`. You can't change the name of a `WebACL` after you create it.
+
+_Required_: Yes
+
+_Type_: String
+
+_Pattern_: `.*\S.*`
+
+_Minimum_: `1`
+
+_Maximum_: `128`
+
+_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+
+`Rules`
+
+An array that contains the action for each `Rule` in a `WebACL`, the priority of the `Rule`,
+and the ID of the `Rule`.
+
+_Required_: No
+
+_Type_: Array of [Rule](aws-properties-wafregional-webacl-rule.md)
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+## Return values
+
+### Ref
+
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the resource name, such as 1234a1a-a1b1-12a1-abcd-a123b123456.
+
+For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+
+### Fn::GetAtt
+
+## Examples
+
+### Create a Web ACL
+
+The following example defines a web ACL that allows, by default, any web request.
+However, if the request matches any rule, AWS WAF blocks the request. AWS WAF evaluates
+each rule in priority order, starting with the lowest value.
+
+#### JSON
+
+```json
+
+"MyWebACL": {
+  "Type": "AWS::WAFRegional::WebACL",
+  "Properties": {
+    "Name": "WebACL to with three rules",
+    "DefaultAction": {
+      "Type": "ALLOW"
+    },
+    "MetricName" : "MyWebACL",
+    "Rules": [
+      {
+        "Action" : {
+          "Type" : "BLOCK"
+        },
+        "Priority" : 1,
+        "RuleId" : { "Ref" : "MyRule" }
+      },
+      {
+        "Action" : {
+          "Type" : "BLOCK"
+        },
+        "Priority" : 2,
+        "RuleId" : { "Ref" : "BadReferersRule" }
+      },
+      {
+        "Action" : {
+          "Type" : "BLOCK"
+        },
+        "Priority" : 3,
+        "RuleId" : { "Ref" : "SqlInjRule" }
+      }
+    ]
+  }
+}
+```
+
+#### YAML
+
+```yaml
+
+MyWebACL:
+  Type: "AWS::WAFRegional::WebACL"
+  Properties:
+    Name: "WebACL to with three rules"
+    DefaultAction:
+      Type: "ALLOW"
+    MetricName: "MyWebACL"
+    Rules:
+      -
+        Action:
+          Type: "BLOCK"
+        Priority: 1
+        RuleId:
+          Ref: "MyRule"
+      -
+        Action:
+          Type: "BLOCK"
+        Priority: 2
+        RuleId:
+          Ref: "BadReferersRule"
+      -
+        Action:
+          Type: "BLOCK"
+        Priority: 3
+        RuleId:
+          Ref: "SqlInjRule"
+```
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+SqlInjectionMatchTuple
+
+Action
+
+All content copied from https://docs.aws.amazon.com/.

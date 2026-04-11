@@ -1,0 +1,83 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# Amazon SageMaker AI
+
+**Resource types**
+
+- [AWS::SageMaker::App](aws-resource-sagemaker-app.md)
+
+- [AWS::SageMaker::AppImageConfig](aws-resource-sagemaker-appimageconfig.md)
+
+- [AWS::SageMaker::Cluster](aws-resource-sagemaker-cluster.md)
+
+- [AWS::SageMaker::CodeRepository](aws-resource-sagemaker-coderepository.md)
+
+- [AWS::SageMaker::DataQualityJobDefinition](aws-resource-sagemaker-dataqualityjobdefinition.md)
+
+- [AWS::SageMaker::Device](aws-resource-sagemaker-device.md)
+
+- [AWS::SageMaker::DeviceFleet](aws-resource-sagemaker-devicefleet.md)
+
+- [AWS::SageMaker::Domain](aws-resource-sagemaker-domain.md)
+
+- [AWS::SageMaker::Endpoint](aws-resource-sagemaker-endpoint.md)
+
+- [AWS::SageMaker::EndpointConfig](aws-resource-sagemaker-endpointconfig.md)
+
+- [AWS::SageMaker::FeatureGroup](aws-resource-sagemaker-featuregroup.md)
+
+- [AWS::SageMaker::Image](aws-resource-sagemaker-image.md)
+
+- [AWS::SageMaker::ImageVersion](aws-resource-sagemaker-imageversion.md)
+
+- [AWS::SageMaker::InferenceComponent](aws-resource-sagemaker-inferencecomponent.md)
+
+- [AWS::SageMaker::InferenceExperiment](aws-resource-sagemaker-inferenceexperiment.md)
+
+- [AWS::SageMaker::MlflowTrackingServer](aws-resource-sagemaker-mlflowtrackingserver.md)
+
+- [AWS::SageMaker::Model](aws-resource-sagemaker-model.md)
+
+- [AWS::SageMaker::ModelBiasJobDefinition](aws-resource-sagemaker-modelbiasjobdefinition.md)
+
+- [AWS::SageMaker::ModelCard](aws-resource-sagemaker-modelcard.md)
+
+- [AWS::SageMaker::ModelExplainabilityJobDefinition](aws-resource-sagemaker-modelexplainabilityjobdefinition.md)
+
+- [AWS::SageMaker::ModelPackage](aws-resource-sagemaker-modelpackage.md)
+
+- [AWS::SageMaker::ModelPackageGroup](aws-resource-sagemaker-modelpackagegroup.md)
+
+- [AWS::SageMaker::ModelQualityJobDefinition](aws-resource-sagemaker-modelqualityjobdefinition.md)
+
+- [AWS::SageMaker::MonitoringSchedule](aws-resource-sagemaker-monitoringschedule.md)
+
+- [AWS::SageMaker::NotebookInstance](aws-resource-sagemaker-notebookinstance.md)
+
+- [AWS::SageMaker::NotebookInstanceLifecycleConfig](aws-resource-sagemaker-notebookinstancelifecycleconfig.md)
+
+- [AWS::SageMaker::PartnerApp](aws-resource-sagemaker-partnerapp.md)
+
+- [AWS::SageMaker::Pipeline](aws-resource-sagemaker-pipeline.md)
+
+- [AWS::SageMaker::ProcessingJob](aws-resource-sagemaker-processingjob.md)
+
+- [AWS::SageMaker::Project](aws-resource-sagemaker-project.md)
+
+- [AWS::SageMaker::Space](aws-resource-sagemaker-space.md)
+
+- [AWS::SageMaker::StudioLifecycleConfig](aws-resource-sagemaker-studiolifecycleconfig.md)
+
+- [AWS::SageMaker::UserProfile](aws-resource-sagemaker-userprofile.md)
+
+- [AWS::SageMaker::Workteam](aws-resource-sagemaker-workteam.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Previous
+
+AWS::SageMaker::App
+
+All content copied from https://docs.aws.amazon.com/.

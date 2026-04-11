@@ -1,0 +1,103 @@
+# InstanceMetadataOptionsRequest
+
+The metadata options for the instance.
+
+## Contents
+
+**HttpEndpoint**
+
+Enables or disables the HTTP metadata endpoint on your instances.
+
+If you specify a value of `disabled`, you cannot access your instance
+metadata.
+
+Default: `enabled`
+
+Type: String
+
+Valid Values: `disabled | enabled`
+
+Required: No
+
+**HttpProtocolIpv6**
+
+Enables or disables the IPv6 endpoint for the instance metadata service.
+
+Default: `disabled`
+
+Type: String
+
+Valid Values: `disabled | enabled`
+
+Required: No
+
+**HttpPutResponseHopLimit**
+
+The maximum number of hops that the metadata token can travel.
+
+Possible values: Integers from 1 to 64
+
+Type: Integer
+
+Required: No
+
+**HttpTokens**
+
+Indicates whether IMDSv2 is required.
+
+- `optional` \- IMDSv2 is optional, which means that you can use
+either IMDSv2 or IMDSv1.
+
+- `required` \- IMDSv2 is required, which means that IMDSv1 is
+disabled, and you must use IMDSv2.
+
+Default:
+
+- If the value of `ImdsSupport` for the Amazon Machine Image (AMI)
+for your instance is `v2.0` and the account level default is set to
+`no-preference`, the default is `required`.
+
+- If the value of `ImdsSupport` for the Amazon Machine Image (AMI)
+for your instance is `v2.0`, but the account level default is set to
+`V1 or V2`, the default is `optional`.
+
+The default value can also be affected by other combinations of parameters. For more
+information, see [Order of precedence for instance metadata options](../../../../services/ec2/latest/userguide/configuring-instance-metadata-options.md#instance-metadata-options-order-of-precedence) in the
+_Amazon EC2 User Guide_.
+
+Type: String
+
+Valid Values: `optional | required`
+
+Required: No
+
+**InstanceMetadataTags**
+
+Set to `enabled` to allow access to instance tags from the instance
+metadata. Set to `disabled` to turn off access to instance tags from the
+instance metadata. For more information, see [View tags for your EC2\
+instances using instance metadata](../../../../services/ec2/latest/userguide/work-with-tags-in-imds.md).
+
+Default: `disabled`
+
+Type: String
+
+Valid Values: `disabled | enabled`
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/instancemetadataoptionsrequest.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/instancemetadataoptionsrequest.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/instancemetadataoptionsrequest.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+InstanceMetadataDefaultsResponse
+
+InstanceMetadataOptionsResponse

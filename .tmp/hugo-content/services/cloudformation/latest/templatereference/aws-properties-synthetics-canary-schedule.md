@@ -1,0 +1,97 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# AWS::Synthetics::Canary Schedule
+
+This structure specifies how often a canary is to make runs and the date and time
+when it should stop making runs.
+
+## Syntax
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+
+```json
+
+{
+  "DurationInSeconds" : String,
+  "Expression" : String,
+  "RetryConfig" : RetryConfig
+}
+
+```
+
+### YAML
+
+```yaml
+
+  DurationInSeconds: String
+  Expression: String
+  RetryConfig:
+    RetryConfig
+
+```
+
+## Properties
+
+`DurationInSeconds`
+
+How long, in seconds, for the canary to continue making regular runs according to
+the schedule in the `Expression` value. If you specify 0, the canary continues
+making runs until you stop it. If you omit this field, the default of 0 is used.
+
+_Required_: No
+
+_Type_: String
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`Expression`
+
+A `rate` expression or a `cron` expression that defines how often the canary is to run.
+
+For a rate expression, The syntax is
+`rate(number unit)`. _unit_
+can be `minute`, `minutes`, or `hour`.
+
+For example, `rate(1 minute)` runs the canary once a minute, `rate(10 minutes)` runs it once every
+10 minutes, and `rate(1 hour)` runs it once every hour. You can
+specify a frequency between `rate(1 minute)` and `rate(1 hour)`.
+
+Specifying `rate(0 minute)` or `rate(0 hour)` is a special value
+that causes the
+canary to run only once when it is started.
+
+Use `cron(expression)` to specify a cron
+expression. You can't schedule a canary to wait for more than a year before running. For information about the syntax for cron expressions, see
+[Scheduling canary runs using cron](../../../amazoncloudwatch/latest/monitoring/cloudwatch-synthetics-canaries-cron.md).
+
+_Required_: Yes
+
+_Type_: String
+
+_Minimum_: `1`
+
+_Maximum_: `1024`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`RetryConfig`
+
+The canary's retry configuration information.
+
+_Required_: No
+
+_Type_: [RetryConfig](aws-properties-synthetics-canary-retryconfig.md)
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+S3Encryption
+
+Tag
+
+All content copied from https://docs.aws.amazon.com/.

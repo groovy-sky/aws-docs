@@ -1,0 +1,52 @@
+# CapacityReservationOptionsRequest
+
+Describes the strategy for using unused Capacity Reservations for fulfilling On-Demand
+capacity.
+
+###### Note
+
+This strategy can only be used if the EC2 Fleet is of type `instant`.
+
+For more information about Capacity Reservations, see [On-Demand Capacity\
+Reservations](../../../../services/ec2/latest/userguide/ec2-capacity-reservations.md) in the _Amazon EC2 User Guide_. For examples of using
+Capacity Reservations in an EC2 Fleet, see [EC2 Fleet example\
+configurations](../../../../services/ec2/latest/userguide/ec2-fleet-examples.md) in the _Amazon EC2 User Guide_.
+
+## Contents
+
+**UsageStrategy**
+
+Indicates whether to use unused Capacity Reservations for fulfilling On-Demand capacity.
+
+If you specify `use-capacity-reservations-first`, the fleet uses unused
+Capacity Reservations to fulfill On-Demand capacity up to the target On-Demand capacity. If
+multiple instance pools have unused Capacity Reservations, the On-Demand allocation
+strategy ( `lowest-price` or `prioritized`) is applied. If the number
+of unused Capacity Reservations is less than the On-Demand target capacity, the remaining
+On-Demand target capacity is launched according to the On-Demand allocation strategy
+( `lowest-price` or `prioritized`).
+
+If you do not specify a value, the fleet fulfils the On-Demand capacity according to the
+chosen On-Demand allocation strategy.
+
+Type: String
+
+Valid Values: `use-capacity-reservations-first`
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/capacityreservationoptionsrequest.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/capacityreservationoptionsrequest.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/capacityreservationoptionsrequest.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+CapacityReservationOptions
+
+CapacityReservationSpecification

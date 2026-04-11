@@ -1,0 +1,39 @@
+# Amazon ECS tasks
+
+The following example shows a component configuration in JSON format for an
+Amazon ECS task.
+
+```json
+
+{
+    "logs":[
+       {
+          "logGroupName":"/ecs/my-task-definition",
+          "logType":"APPLICATION",
+          "monitor":true
+       }
+    ],
+    "processes" : [
+        {
+            "processName" : "my_process",
+            "alarmMetrics" : [
+                {
+                    "alarmMetricName" : "procstat cpu_usage",
+                    "monitor" : true
+                }, {
+                    "alarmMetricName" : "procstat memory_rss",
+                    "monitor" : true
+                }
+            ]
+        }
+    ]
+ }
+```
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Amazon ECS services
+
+Amazon Elastic File System (Amazon EFS)
+
+All content copied from https://docs.aws.amazon.com/.

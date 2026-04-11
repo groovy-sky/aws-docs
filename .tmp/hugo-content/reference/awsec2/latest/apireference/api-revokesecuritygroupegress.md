@@ -1,0 +1,234 @@
+# RevokeSecurityGroupEgress
+
+Removes the specified outbound (egress) rules from the specified security group.
+
+You can specify rules using either rule IDs or security group rule properties. If you use
+rule properties, the values that you specify (for example, ports) must match the existing rule's
+values exactly. Each rule has a protocol, from and to ports, and destination (CIDR range,
+security group, or prefix list). For the TCP and UDP protocols, you must also specify the
+destination port or range of ports. For the ICMP protocol, you must also specify the ICMP type
+and code. If the security group rule has a description, you do not need to specify the description
+to revoke the rule.
+
+For a default VPC, if the values you specify do not match the existing rule's values, no error is
+returned, and the output describes the security group rules that were not revoked.
+
+AWS recommends that you describe the security group to verify that the rules were removed.
+
+Rule changes are propagated to instances within the security group as quickly as possible. However,
+a small delay might occur.
+
+## Request Parameters
+
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+
+**CidrIp**
+
+Not supported. Use a set of IP permissions to specify the CIDR.
+
+Type: String
+
+Required: No
+
+**DryRun**
+
+Checks whether you have the required permissions for the action, without actually making the request,
+and provides an error response. If you have the required permissions, the error response is `DryRunOperation`.
+Otherwise, it is `UnauthorizedOperation`.
+
+Type: Boolean
+
+Required: No
+
+**FromPort**
+
+Not supported. Use a set of IP permissions to specify the port.
+
+Type: Integer
+
+Required: No
+
+**GroupId**
+
+The ID of the security group.
+
+Type: String
+
+Required: Yes
+
+**IpPermissions.N**
+
+The sets of IP permissions. You can't specify a destination security group and a CIDR IP address range in the same set of permissions.
+
+Type: Array of [IpPermission](api-ippermission.md) objects
+
+Required: No
+
+**IpProtocol**
+
+Not supported. Use a set of IP permissions to specify the protocol name or
+number.
+
+Type: String
+
+Required: No
+
+**SecurityGroupRuleId.N**
+
+The IDs of the security group rules.
+
+Type: Array of strings
+
+Required: No
+
+**SourceSecurityGroupName**
+
+Not supported. Use a set of IP permissions to specify a
+destination security group.
+
+Type: String
+
+Required: No
+
+**SourceSecurityGroupOwnerId**
+
+Not supported. Use a set of IP permissions to specify a destination security
+group.
+
+Type: String
+
+Required: No
+
+**ToPort**
+
+Not supported. Use a set of IP permissions to specify the port.
+
+Type: Integer
+
+Required: No
+
+## Response Elements
+
+The following elements are returned by the service.
+
+**requestId**
+
+The ID of the request.
+
+Type: String
+
+**return**
+
+Returns `true` if the request succeeds; otherwise, returns an error.
+
+Type: Boolean
+
+**revokedSecurityGroupRuleSet**
+
+Details about the revoked security group rules.
+
+Type: Array of [RevokedSecurityGroupRule](api-revokedsecuritygrouprule.md) objects
+
+**unknownIpPermissionSet**
+
+The outbound rules that were unknown to the service. In some cases,
+`unknownIpPermissionSet` might be in a different format from the request
+parameter.
+
+Type: Array of [IpPermission](api-ippermission.md) objects
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+
+## Examples
+
+### Example 1
+
+This example revokes the access that the specified security group has to the
+`205.192.0.0/16` and `205.159.0.0/16` IPv4 address ranges on TCP
+port 80.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=RevokeSecurityGroupEgress
+&GroupId=sg-1a2b3c4d
+&IpPermissions.1.IpProtocol=tcp
+&IpPermissions.1.FromPort=80
+&IpPermissions.1.ToPort=80
+&IpPermissions.1.IpRanges.1.CidrIp=205.192.0.0/16
+&IpPermissions.1.IpRanges.2.CidrIp=205.159.0.0/16
+&AUTHPARAMS
+```
+
+### Example 2
+
+This example revokes the access that the specified security group
+has to the security group with the ID `sg-9a8d7f5c` on TCP port 1433.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=RevokeSecurityGroupEgress
+&GroupId=sg-1a2b3c4d
+&IpPermissions.1.IpProtocol=tcp
+&IpPermissions.1.FromPort=1433
+&IpPermissions.1.ToPort=1433
+&IpPermissions.1.Groups.1.GroupId=sg-9a8d7f5c
+&AUTHPARAMS
+```
+
+### Example 3
+
+This example revokes TCP port 22 access to the `203.0.113.4/32` address
+range for the security group `sg-112233`. The security group rule includes the
+description 'Access to office CT12'. Specifying the description to revoke the rule is
+optional, but if you do specify the description, it must match the existing rule's value
+exactly.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=RevokeSecurityGroupEgress
+&GroupId=sg-112233
+&IpPermissions.1.IpProtocol=tcp
+&IpPermissions.1.FromPort=22
+&IpPermissions.1.ToPort=22
+&IpPermissions.1.IpRanges.1.CidrIp=203.0.113.4/32
+&IpPermissions.1.IpRanges.1.Description=Access to office CT12
+&AUTHPARAMS
+```
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/revokesecuritygroupegress.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/revokesecuritygroupegress.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/revokesecuritygroupegress.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/revokesecuritygroupegress.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/revokesecuritygroupegress.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/revokesecuritygroupegress.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/revokesecuritygroupegress.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/revokesecuritygroupegress.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/revokesecuritygroupegress.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/revokesecuritygroupegress.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+RevokeClientVpnIngress
+
+RevokeSecurityGroupIngress

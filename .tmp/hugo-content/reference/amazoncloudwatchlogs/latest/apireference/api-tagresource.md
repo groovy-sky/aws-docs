@@ -1,0 +1,146 @@
+# TagResource
+
+Assigns one or more tags (key-value pairs) to the specified CloudWatch Logs resource.
+Currently, the only CloudWatch Logs resources that can be tagged are log groups and
+destinations.
+
+Tags can help you organize and categorize your resources. You can also use them to scope
+user permissions by granting a user permission to access or change only resources with certain
+tag values.
+
+Tags don't have any semantic meaning to AWS and are interpreted strictly as
+strings of characters.
+
+You can use the `TagResource` action with a resource that already has tags. If
+you specify a new tag key for the alarm, this tag is appended to the list of tags associated
+with the alarm. If you specify a tag key that is already associated with the alarm, the new
+tag value that you specify replaces the previous value for that tag.
+
+You can associate as many as 50 tags with a CloudWatch Logs resource.
+
+## Request Syntax
+
+```nohighlight
+
+{
+   "resourceArn": "string",
+   "tags": {
+      "string" : "string"
+   }
+}
+```
+
+## Request Parameters
+
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+
+The request accepts the following data in JSON format.
+
+**[resourceArn](#API_TagResource_RequestSyntax)**
+
+The ARN of the resource that you're adding tags to.
+
+The ARN format of a log group is
+`arn:aws:logs:Region:account-id:log-group:log-group-name
+                  `
+
+The ARN format of a destination is
+`arn:aws:logs:Region:account-id:destination:destination-name
+                  `
+
+For more information about ARN format, see [CloudWatch Logs\
+resources and operations](../../../../services/amazoncloudwatch/latest/logs/iam-access-control-overview-cwl.md).
+
+Type: String
+
+Length Constraints: Minimum length of 1. Maximum length of 1011.
+
+Pattern: `[\w+=/:,.@-]*`
+
+Required: Yes
+
+**[tags](#API_TagResource_RequestSyntax)**
+
+The list of key-value pairs to associate with the resource.
+
+Type: String to string map
+
+Map Entries: Maximum number of 50 items.
+
+Key Length Constraints: Minimum length of 1. Maximum length of 128.
+
+Key Pattern: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]+)$`
+
+Value Length Constraints: Maximum length of 256.
+
+Value Pattern: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
+
+Required: Yes
+
+## Response Elements
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+
+**InvalidParameterException**
+
+A parameter is specified incorrectly.
+
+HTTP Status Code: 400
+
+**ResourceNotFoundException**
+
+The specified resource does not exist.
+
+HTTP Status Code: 400
+
+**ServiceUnavailableException**
+
+The service cannot complete the request.
+
+HTTP Status Code: 500
+
+**TooManyTagsException**
+
+A resource can have no more than 50 tags.
+
+**resourceName**
+
+The name of the resource.
+
+HTTP Status Code: 400
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/logs-2014-03-28/tagresource.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/logs-2014-03-28/tagresource.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/tagresource.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/logs-2014-03-28/tagresource.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/tagresource.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/logs-2014-03-28/tagresource.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/logs-2014-03-28/tagresource.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/logs-2014-03-28/tagresource.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/logs-2014-03-28/tagresource.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/tagresource.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+TagLogGroup
+
+TestMetricFilter
+
+All content copied from https://docs.aws.amazon.com/.

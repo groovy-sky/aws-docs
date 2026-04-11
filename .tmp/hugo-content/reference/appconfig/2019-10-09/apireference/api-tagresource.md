@@ -1,0 +1,154 @@
+# TagResource
+
+Assigns metadata to an AWS AppConfig resource. Tags help organize and categorize
+your AWS AppConfig resources. Each tag consists of a key and an optional value, both
+of which you define. You can specify a maximum of 50 tags for a resource.
+
+## Request Syntax
+
+```nohighlight
+
+POST /tags/ResourceArn HTTP/1.1
+Content-type: application/json
+
+{
+   "Tags": {
+      "string" : "string"
+   }
+}
+```
+
+## URI Request Parameters
+
+The request uses the following URI parameters.
+
+**[ResourceArn](#API_TagResource_RequestSyntax)**
+
+The ARN of the resource for which to retrieve tags.
+
+Length Constraints: Minimum length of 20. Maximum length of 2048.
+
+Pattern: `arn:(aws[a-zA-Z-]*)?:[a-z]+:((eusc-)?[a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\d{1})?:(\d{12})?:[a-zA-Z0-9-_/:.]+`
+
+Required: Yes
+
+## Request Body
+
+The request accepts the following data in JSON format.
+
+**[Tags](#API_TagResource_RequestSyntax)**
+
+The key-value string map. The valid character set is \[a-zA-Z+-=.\_:/\]. The tag key can be
+up to 128 characters and must not start with `aws:`. The tag value can be up to
+256 characters.
+
+Type: String to string map
+
+Map Entries: Minimum number of 0 items. Maximum number of 50 items.
+
+Key Length Constraints: Minimum length of 1. Maximum length of 128.
+
+Value Length Constraints: Maximum length of 256.
+
+Required: Yes
+
+## Response Syntax
+
+```
+
+HTTP/1.1 204
+
+```
+
+## Response Elements
+
+If the action is successful, the service sends back an HTTP 204 response with an empty HTTP body.
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+
+**BadRequestException**
+
+The input fails to satisfy the constraints specified by an AWS service.
+
+**Details**
+
+Detailed information about the input that failed to satisfy the constraints specified by
+a call.
+
+HTTP Status Code: 400
+
+**InternalServerException**
+
+There was an internal failure in the AWS AppConfig service.
+
+HTTP Status Code: 500
+
+**ResourceNotFoundException**
+
+The requested resource could not be found.
+
+HTTP Status Code: 404
+
+## Examples
+
+### Example
+
+This example illustrates one usage of TagResource.
+
+#### Sample Request
+
+```
+
+POST /tags/arn%3Aaws%3Aappconfig%3Aus-east-1%3A111122223333%3Aapplication%abc1234 HTTP/1.1
+Host: appconfig.us-east-1.amazonaws.com
+Accept-Encoding: identity
+User-Agent: aws-cli/2.2.4 Python/3.8.8 Linux/5.4.134-73.228.amzn2int.x86_64 exe/x86_64.amzn.2 prompt/off command/appconfig.tag-resource
+X-Amz-Date: 20210920T185502Z
+Authorization: AWS4-HMAC-SHA256 Credential=AWS_ACCESS_KEY_ID_REDACTED/20210920/us-east-1/appconfig/aws4_request, SignedHeaders=host;x-amz-date, Signature=39c3b3042cd2aEXAMPLE
+Content-Length: 25
+
+{
+	"Tags": {"group1": "1"}
+}
+```
+
+#### Sample Response
+
+```
+
+{}
+```
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/appconfig-2019-10-09/tagresource.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/appconfig-2019-10-09/tagresource.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/appconfig-2019-10-09/tagresource.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/appconfig-2019-10-09/tagresource.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/appconfig-2019-10-09/tagresource.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/appconfig-2019-10-09/tagresource.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/appconfig-2019-10-09/tagresource.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/appconfig-2019-10-09/tagresource.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/appconfig-2019-10-09/tagresource.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/appconfig-2019-10-09/tagresource.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+StopDeployment
+
+UntagResource
+
+All content copied from https://docs.aws.amazon.com/.

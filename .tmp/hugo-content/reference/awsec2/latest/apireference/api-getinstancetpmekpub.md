@@ -1,0 +1,120 @@
+# GetInstanceTpmEkPub
+
+Gets the public endorsement key associated with the Nitro Trusted
+Platform Module (NitroTPM) for the specified instance.
+
+## Request Parameters
+
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+
+**DryRun**
+
+Specify this parameter to verify whether the request will succeed, without actually making the
+request. If the request will succeed, the response is `DryRunOperation`. Otherwise,
+the response is `UnauthorizedOperation`.
+
+Type: Boolean
+
+Required: No
+
+**InstanceId**
+
+The ID of the instance for which to get the public endorsement key.
+
+Type: String
+
+Required: Yes
+
+**KeyFormat**
+
+The required public endorsement key format. Specify `der` for a DER-encoded public
+key that is compatible with OpenSSL. Specify `tpmt` for a TPM 2.0 format that is
+compatible with tpm2-tools. The returned key is base64 encoded.
+
+Type: String
+
+Valid Values: `der | tpmt`
+
+Required: Yes
+
+**KeyType**
+
+The required public endorsement key type.
+
+Type: String
+
+Valid Values: `rsa-2048 | ecc-sec-p384`
+
+Required: Yes
+
+## Response Elements
+
+The following elements are returned by the service.
+
+**instanceId**
+
+The ID of the instance.
+
+Type: String
+
+**keyFormat**
+
+The public endorsement key format.
+
+Type: String
+
+Valid Values: `der | tpmt`
+
+**keyType**
+
+The public endorsement key type.
+
+Type: String
+
+Valid Values: `rsa-2048 | ecc-sec-p384`
+
+**keyValue**
+
+The public endorsement key material.
+
+Type: String
+
+**requestId**
+
+The ID of the request.
+
+Type: String
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/getinstancetpmekpub.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/getinstancetpmekpub.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/getinstancetpmekpub.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/getinstancetpmekpub.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/getinstancetpmekpub.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/getinstancetpmekpub.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/getinstancetpmekpub.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/getinstancetpmekpub.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/getinstancetpmekpub.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/getinstancetpmekpub.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+GetInstanceMetadataDefaults
+
+GetInstanceTypesFromInstanceRequirements

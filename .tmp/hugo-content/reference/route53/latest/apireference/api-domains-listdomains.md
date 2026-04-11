@@ -1,0 +1,230 @@
+# ListDomains
+
+This operation returns all the domain names registered with Amazon Route 53 for the
+current AWS account if no filtering conditions are used.
+
+## Request Syntax
+
+```nohighlight
+
+{
+   "FilterConditions": [
+      {
+         "Name": "string",
+         "Operator": "string",
+         "Values": [ "string" ]
+      }
+   ],
+   "Marker": "string",
+   "MaxItems": number,
+   "SortCondition": {
+      "Name": "string",
+      "SortOrder": "string"
+   }
+}
+```
+
+## Request Parameters
+
+For information about the parameters that are common to all actions, see [Common Parameters](commonparameters.md).
+
+The request accepts the following data in JSON format.
+
+**[FilterConditions](#API_domains_ListDomains_RequestSyntax)**
+
+A complex type that contains information about the filters applied during the
+`ListDomains` request. The filter conditions can include domain name and
+domain expiration.
+
+Type: Array of [FilterCondition](api-domains-filtercondition.md) objects
+
+Required: No
+
+**[Marker](#API_domains_ListDomains_RequestSyntax)**
+
+For an initial request for a list of domains, omit this element. If the number of
+domains that are associated with the current AWS account is greater than
+the value that you specified for `MaxItems`, you can use `Marker`
+to return additional domains. Get the value of `NextPageMarker` from the
+previous response, and submit another request that includes the value of
+`NextPageMarker` in the `Marker` element.
+
+Constraints: The marker must match the value specified in the previous request.
+
+Type: String
+
+Length Constraints: Maximum length of 4096.
+
+Required: No
+
+**[MaxItems](#API_domains_ListDomains_RequestSyntax)**
+
+Number of domains to be returned.
+
+Default: 20
+
+Type: Integer
+
+Valid Range: Maximum value of 100.
+
+Required: No
+
+**[SortCondition](#API_domains_ListDomains_RequestSyntax)**
+
+A complex type that contains information about the requested ordering of domains in
+the returned list.
+
+Type: [SortCondition](api-domains-sortcondition.md) object
+
+Required: No
+
+## Response Syntax
+
+```nohighlight
+
+{
+   "Domains": [
+      {
+         "AutoRenew": boolean,
+         "DomainName": "string",
+         "Expiry": number,
+         "TransferLock": boolean
+      }
+   ],
+   "NextPageMarker": "string"
+}
+```
+
+## Response Elements
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+**[Domains](#API_domains_ListDomains_ResponseSyntax)**
+
+A list of domains.
+
+Type: Array of [DomainSummary](api-domains-domainsummary.md) objects
+
+**[NextPageMarker](#API_domains_ListDomains_ResponseSyntax)**
+
+If there are more domains than you specified for `MaxItems` in the request,
+submit another request and include the value of `NextPageMarker` in the value
+of `Marker`.
+
+Type: String
+
+Length Constraints: Maximum length of 4096.
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common Error Types](commonerrors.md).
+
+**InvalidInput**
+
+The requested item is not acceptable. For example, for APIs that accept a domain name,
+the request might specify a domain name that doesn't belong to the account that
+submitted the request. For `AcceptDomainTransferFromAnotherAwsAccount`, the
+password might be invalid.
+
+**message**
+
+The requested item is not acceptable. For example, for an OperationId it might refer
+to the ID of an operation that is already completed. For a domain name, it might not be
+a valid domain name or belong to the requester account.
+
+HTTP Status Code: 400
+
+## Examples
+
+### ListDomains Example
+
+This example illustrates one usage of ListDomains.
+
+#### Sample Request
+
+```
+
+POST / HTTP/1.1
+host:route53domains.us-east-1.amazonaws.com
+x-amz-date:20140711T205230Z
+authorization:AWS4-HMAC-SHA256
+              Credential=AKIAIOSFODNN7EXAMPLE/20140711/us-east-1/route53domains/aws4_request,
+              SignedHeaders=content-length;content-type;host;user-agent;x-amz-date;x-amz-target,
+              Signature=[calculated-signature]
+x-amz-target:Route53Domains_v20140515.ListDomains
+user-agent:aws-sdk-java/1.8.3 Linux/2.6.18-164.el5PAE Java_HotSpot (TM )_Server_VM/24.60-b09/1.7.0_60
+content-type:application/x-amz-json-1.1
+content-length:[number of characters in the JSON string]
+{
+   "Marker":"AxDAClaROQAXasf29GHWAIKPLA=",
+   "MaxItems":20
+}
+```
+
+#### Sample Response
+
+```
+
+HTTP/1.1 200
+Content-Length:[number of characters in the JSON string]
+{
+   "Domains":[
+      {
+         "AutoRenew":false,
+         "DomainName":"example.com",
+         "Expiry":1431203765,
+         "TransferLock":false
+      },
+      {
+         "AutoRenew":false,
+         "DomainName":"example.net",
+         "Expiry":1431539260,
+         "TransferLock":false
+      },
+      {
+         "AutoRenew":false,
+         "DomainName":"example.org",
+         "Expiry":1431240024,
+         "TransferLock":false
+      },
+      {
+         "AutoRenew":false,
+         "DomainName":"example.test",
+         "Expiry":1431539259,
+         "TransferLock":false
+      }
+   ]
+}
+```
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/route53domains-2014-05-15/listdomains.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/route53domains-2014-05-15/listdomains.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/route53domains-2014-05-15/listdomains.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/route53domains-2014-05-15/listdomains.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/route53domains-2014-05-15/listdomains.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/route53domains-2014-05-15/listdomains.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/route53domains-2014-05-15/listdomains.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/route53domains-2014-05-15/listdomains.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/route53domains-2014-05-15/listdomains.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/route53domains-2014-05-15/listdomains.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+GetOperationDetail
+
+ListOperations

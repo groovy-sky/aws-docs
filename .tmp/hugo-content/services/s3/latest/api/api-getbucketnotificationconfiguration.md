@@ -1,0 +1,238 @@
+# GetBucketNotificationConfiguration
+
+###### Note
+
+This operation is not supported for directory buckets.
+
+Returns the notification configuration of a bucket.
+
+If notifications are not enabled on the bucket, the action returns an empty
+`NotificationConfiguration` element.
+
+By default, you must be the bucket owner to read the notification configuration of a bucket.
+However, the bucket owner can use a bucket policy to grant permission to other users to read this
+configuration with the `s3:GetBucketNotification` permission.
+
+When you use this API operation with an access point, provide the alias of the access point in place of the bucket name.
+
+When you use this API operation with an Object Lambda access point, provide the alias of the Object Lambda access point in place of the bucket name.
+If the Object Lambda access point alias in a request is not valid, the error code `InvalidAccessPointAliasError` is returned.
+For more information about `InvalidAccessPointAliasError`, see [List of\
+Error Codes](errorresponses.md#ErrorCodeList).
+
+For more information about setting and reading the notification configuration on a bucket, see
+[Setting Up Notification\
+of Bucket Events](../dev/notificationhowto.md). For more information about bucket policies, see [Using Bucket Policies](../dev/using-iam-policies.md).
+
+The following action is related to `GetBucketNotification`:
+
+- [PutBucketNotification](api-putbucketnotification.md)
+
+###### Important
+
+You must URL encode any signed header values that contain spaces. For example, if your header value is `my  file.txt`, containing two spaces after `my`, you must URL encode this value to `my%20%20file.txt`.
+
+## Request Syntax
+
+```nohighlight
+
+GET /?notification HTTP/1.1
+Host: Bucket.s3.amazonaws.com
+x-amz-expected-bucket-owner: ExpectedBucketOwner
+
+```
+
+## URI Request Parameters
+
+The request uses the following URI parameters.
+
+**[Bucket](#API_GetBucketNotificationConfiguration_RequestSyntax)**
+
+The name of the bucket for which to get the notification configuration.
+
+When you use this API operation with an access point, provide the alias of the access point in place of the bucket name.
+
+When you use this API operation with an Object Lambda access point, provide the alias of the Object Lambda access point in place of the bucket name.
+If the Object Lambda access point alias in a request is not valid, the error code `InvalidAccessPointAliasError` is returned.
+For more information about `InvalidAccessPointAliasError`, see [List of\
+Error Codes](errorresponses.md#ErrorCodeList).
+
+Required: Yes
+
+**[x-amz-expected-bucket-owner](#API_GetBucketNotificationConfiguration_RequestSyntax)**
+
+The account ID of the expected bucket owner. If the account ID that you provide does not match the actual owner of the bucket, the request fails with the HTTP status code `403 Forbidden` (access denied).
+
+## Request Body
+
+The request does not have a request body.
+
+## Response Syntax
+
+```nohighlight
+
+HTTP/1.1 200
+<?xml version="1.0" encoding="UTF-8"?>
+<NotificationConfiguration>
+   <TopicConfiguration>
+      <Event>string</Event>
+      ...
+      <Filter>
+         <S3Key>
+            <FilterRule>
+               <Name>string</Name>
+               <Value>string</Value>
+            </FilterRule>
+            ...
+         </S3Key>
+      </Filter>
+      <Id>string</Id>
+      <Topic>string</Topic>
+   </TopicConfiguration>
+   ...
+   <QueueConfiguration>
+      <Event>string</Event>
+      ...
+      <Filter>
+         <S3Key>
+            <FilterRule>
+               <Name>string</Name>
+               <Value>string</Value>
+            </FilterRule>
+            ...
+         </S3Key>
+      </Filter>
+      <Id>string</Id>
+      <Queue>string</Queue>
+   </QueueConfiguration>
+   ...
+   <CloudFunctionConfiguration>
+      <Event>string</Event>
+      ...
+      <Filter>
+         <S3Key>
+            <FilterRule>
+               <Name>string</Name>
+               <Value>string</Value>
+            </FilterRule>
+            ...
+         </S3Key>
+      </Filter>
+      <Id>string</Id>
+      <CloudFunction>string</CloudFunction>
+   </CloudFunctionConfiguration>
+   ...
+   <EventBridgeConfiguration>
+   </EventBridgeConfiguration>
+</NotificationConfiguration>
+```
+
+## Response Elements
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in XML format by the service.
+
+**[NotificationConfiguration](#API_GetBucketNotificationConfiguration_ResponseSyntax)**
+
+Root level tag for the NotificationConfiguration parameters.
+
+Required: Yes
+
+**[CloudFunctionConfiguration](#API_GetBucketNotificationConfiguration_ResponseSyntax)**
+
+Describes the AWS Lambda functions to invoke and the events for which to invoke them.
+
+Type: Array of [LambdaFunctionConfiguration](api-lambdafunctionconfiguration.md) data types
+
+**[EventBridgeConfiguration](#API_GetBucketNotificationConfiguration_ResponseSyntax)**
+
+Enables delivery of events to Amazon EventBridge.
+
+Type: [EventBridgeConfiguration](api-eventbridgeconfiguration.md) data type
+
+**[QueueConfiguration](#API_GetBucketNotificationConfiguration_ResponseSyntax)**
+
+The Amazon Simple Queue Service queues to publish messages to and the events for which to publish
+messages.
+
+Type: Array of [QueueConfiguration](api-queueconfiguration.md) data types
+
+**[TopicConfiguration](#API_GetBucketNotificationConfiguration_ResponseSyntax)**
+
+The topic to which notifications are sent and the events for which notifications are
+generated.
+
+Type: Array of [TopicConfiguration](api-topicconfiguration.md) data types
+
+## Examples
+
+### Sample Request
+
+This request returns the notification configuration on the bucket
+`amzn-s3-demo-bucket.s3.<Region>.amazonaws.com`.
+
+```
+
+            GET ?notification HTTP/1.1
+            Host: amzn-s3-demo-bucket.s3.<Region>.amazonaws.com
+            Date: Wed, 15 Oct 2014 16:59:03 GMT
+            Authorization: authorization string
+
+```
+
+### Sample Response
+
+This response returns that the notification configuration for the specified bucket.
+
+```
+
+            HTTP/1.1 200 OK
+            x-amz-id-2: YgIPIfBiKa2bj0KMgUAdQkf3ShJTOOpXUueF6QKo
+            x-amz-request-id: 236A8905248E5A02
+            Date: Wed, 15 Oct 2014 16:59:04 GMT
+            Server: AmazonS3
+            <?xml version="1.0" encoding="UTF-8"?>
+
+            <NotificationConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+             <TopicConfiguration>
+               <Id>YjVkM2Y0YmUtNGI3NC00ZjQyLWEwNGItNDIyYWUxY2I0N2M4</Id>
+              <Topic>arn:aws:sns:us-east-1:account-id:s3notificationtopic2</Topic>
+              <Event>s3:ReducedRedundancyLostObject</Event>
+              <Event>s3:ObjectCreated:*</Event>
+             </TopicConfiguration>
+            </NotificationConfiguration>
+
+```
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../goto/cli2/s3-2006-03-01/getbucketnotificationconfiguration.md)
+
+- [AWS SDK for .NET V4](../../../../reference/goto/dotnetsdkv4/s3-2006-03-01/getbucketnotificationconfiguration.md)
+
+- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3-2006-03-01/getbucketnotificationconfiguration.md)
+
+- [AWS SDK for Go v2](../../../../reference/goto/sdkforgov2/s3-2006-03-01/getbucketnotificationconfiguration.md)
+
+- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/getbucketnotificationconfiguration.md)
+
+- [AWS SDK for JavaScript V3](../../../../reference/goto/sdkforjavascriptv3/s3-2006-03-01/getbucketnotificationconfiguration.md)
+
+- [AWS SDK for Kotlin](../../../../reference/goto/sdkforkotlin/s3-2006-03-01/getbucketnotificationconfiguration.md)
+
+- [AWS SDK for PHP V3](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/getbucketnotificationconfiguration.md)
+
+- [AWS SDK for Python](../../../goto/boto3/s3-2006-03-01/getbucketnotificationconfiguration.md)
+
+- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/getbucketnotificationconfiguration.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+GetBucketNotification
+
+GetBucketOwnershipControls
+
+All content copied from https://docs.aws.amazon.com/.

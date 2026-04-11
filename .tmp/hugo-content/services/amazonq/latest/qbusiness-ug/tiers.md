@@ -1,0 +1,268 @@
+# Amazon Q Business subscription tiers and index types
+
+Amazon Q Business offers multiple index types and user subscription tiers. You can
+choose any combination of index types and user subscriptions for your Amazon Q Business application environment.
+
+###### Topics
+
+- [Index types](#index-tiers)
+
+- [User subscription tiers](#user-sub-tiers)
+
+- [Understanding user subscriptions](#managing-sub-tiers)
+
+- [Pricing](#pricing-subs-index)
+
+## Index types
+
+Amazon Q Business offers two types of indexes: starter index and enterprise index. Each index type has different capacity limits measured in index units, which determine the amount of data storage and processing capacity available for your index. For detailed information about index units and capacity, see [Index capacity](concepts-terminology.md#index-units).
+
+The following table outlines the features of both index types.
+
+Starter indexEnterprise index
+
+**Ideal use case**
+
+- Proof-of-concept or developer workloads
+
+**Features**
+
+- Runs in 1 Availability Zone (AZ) – See [Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az) (data centers in AWS
+regions)
+
+- Includes up to 20,000 document capacity or 200 MB of total
+extracted text (whichever is reached first)\*
+
+- Includes up to 100 hours of data source connector usage
+(time that it takes to scan and index new, updated, or
+deleted documents)
+
+**Ideal use case**
+
+- Production workloads
+
+**Features**
+
+- Runs in 3 Availability Zone (AZ) – See [Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az) (data centers in AWS
+regions)
+
+- Includes up to 20,000 document capacity or 200 MB of total
+extracted text (whichever is reached first)\*
+
+- Includes up to 100 hours of data source connector usage
+(time that it takes to scan and index new, updated, or
+deleted documents)
+
+- Includes customer managed key encryption support
+
+\*For reference, 5 pages of text that contain approximately 500 words on each page is
+equivalent to 10 KB of total extracted text.
+
+For detailed pricing information, including examples of charges for index capacity,
+subscribing and unsubscribing users to Amazon Q Business tiers, upgrading and
+downgrading Amazon Q Business tiers, and more, see [Amazon Q Business Pricing](https://aws.amazon.com/q/business/pricing).
+
+## User subscription tiers
+
+Amazon Q Business offers two subscription tiers: the Amazon Q Business Lite Plan and
+the Amazon Q Business Pro Plan. The following table outlines the features of
+Amazon Q Business Pro and Amazon Q Business Lite.
+
+###### Important
+
+Amazon Q Business Pro tier subscriptions in Europe (Ireland)
+(eu-west-1) and Asia Pacific (Sydney) (ap-southeast-2) regions are available with a limited set of features.
+
+###### Important
+
+As of July 1, 2024, Amazon Q Apps only available to Amazon Q Business Pro users. Users with Lite
+subscriptions should upgrade to Amazon Q Business Pro.
+
+###### Topics
+
+- [Amazon Q Business Lite users must upgrade to Amazon Q Business Pro to continue using Q Apps](#lite-user-changes)
+
+Amazon Q Business Lite PlanAmazon Q Business Pro Plan
+
+**Ideal use case**
+
+- Optimized for enterprise-wide deployment to all employees
+(frontline and knowledge workers)
+
+- Allows end users to ask questions and receive
+permissions-aware responses from enterprise data sources
+with citations
+
+- Helps employees quickly get answers for use cases such as
+IT, HR, benefits help desks, and other Q&A chatbot use
+cases at a low cost
+
+**Features**
+
+- **Q&A on knowledge**
+**bases:** Users can ask questions and get
+answers from enterprise knowledge bases with
+citations.
+
+- **Upload file to chat:**
+Users can upload documents into a chat session and interact
+with its contents.
+
+- **Permissions-aware**
+**responses:** Users only get answers from
+content that they have access to.
+
+- **Using web experience with**
+**single-sign on:** Users get access to a web
+experience user interface with support for single sign-on
+(IAM Identity Center).
+
+- **Browser extensions:** Users can access Amazon Q Business through browser extensions for Google Chrome, Mozilla Firefox, and Microsoft Edge.
+
+**Note:** Built-in and custom plugins are not available with the Lite Plan. Users must upgrade to the Pro Plan to access plugin functionality.
+
+**Ideal use case**
+
+- Best suited for knowledge workers and improves
+productivity across a wide range of tasks
+
+- Provides the full suite of Amazon Q Business
+capabilities
+
+- Includes access to [Amazon Q Apps](purpose-built-qapps.md)\\* for creating
+and sharing task automation applications
+
+- Includes access to [integrations](integrations.md) within
+third-party applications including Slack, Microsoft Teams,
+and browser extensions for Google Chrome, Mozilla Firefox,
+and Microsoft Edge
+
+- Includes access to [custom plugins](custom-plugin.md) for actions
+like submitting time off requests and sending meeting
+invites through Amazon Q Business
+
+- Includes Amazon Q integration in Quick Pro for understanding
+data through executive summaries, context-aware Q&A, and
+interactive data stories
+
+**Features**
+
+- **Q&A on LLM knowledge:**
+Users can ask questions and get answers from the general
+knowledge that the LLM has.
+
+- **Q&A on knowledge**
+**bases:** Users can ask questions and get
+answers from enterprise knowledge bases with
+citations.
+
+- **Permissions-aware**
+**responses:** Users only get answers from
+content that they have access to.
+
+- **Using web experience with**
+**single-sign on:** Users get access to a web
+experience user interface with support for single sign-on
+(SSO).
+
+- **Content generation:** Users
+can send queries directly to the foundation model to
+generate content.
+
+- **Upload file to chat:**
+Users can upload documents into a chat session and interact
+with its contents.
+
+- **Amazon Q Apps:** Users can
+build and share their own purpose-built applications to
+automate tasks and improve productivity.
+
+- **Custom plugins:** Enable
+users to execute actions in third-party applications.
+
+- **Built-in plugins:** Access
+to pre-built integrations with third-party applications such as
+Salesforce, Jira, ServiceNow, and others.
+
+- **Amazon Q Business in**
+**Quicksight (Reader Pro):** Users can ask
+questions to explore data in natural language, view and
+interact with dashboards, and create compelling stories from
+insights.
+
+- **Chat orchestration:**
+automatically manage chat requests across configured plugins
+and data sources in your Amazon Q Business
+application.
+
+- **Integrations with third-party**
+**applications:** Users can access Amazon Q Business within third-party applications such as
+Slack and Microsoft Teams,
+and web browsers through browser extensions for
+Google Chrome, Mozilla
+Firefox, and Microsoft Edge.
+
+For detailed pricing information, including examples of charges for index capacity,
+subscribing and unsubscribing users to Amazon Q Business tiers, upgrading and
+downgrading Amazon Q Business tiers, and more, see [Amazon Q Business Pricing](https://aws.amazon.com/q/business/pricing).
+
+### Amazon Q Business Lite users must upgrade to Amazon Q Business Pro to continue using Q Apps
+
+As of July 1, 2024, Amazon Q Apps are available only to
+[Amazon Q Business Pro users](tiers.md#managing-sub-tiers). Amazon Q Business Lite users will no longer be able to
+create, run, or view Q Apps. To access, Q Apps, Lite users must upgrade to Amazon Q Business Pro.
+
+As of August 30, 2024, all Amazon Q Apps created by Lite
+users who did not upgrade their account to Amazon Q Business Pro have been deleted.
+
+## Understanding user subscriptions
+
+User subscriptions are created per Amazon Q Business application or Quick account. Each admin can manage subscriptions for users for their specific
+Amazon Q Business application or Quick account.
+
+For applications using IAM Identity Center, AWS will deduplicate subscriptions across all Amazon Q Business applications and Quick accounts, and charge each user only once for
+their highest subscription level. Note that deduplication will apply only if the Amazon Q Business applications and Quick accounts share the same IAM Identity Center instance.
+
+Users subscribed to Amazon Q Business applications using Identity Federation
+through IAM (IAM Federation), will be charged once per OIDC or SAML IAM Identity
+Provider. For example, if a user is subscribed to five different Amazon Q Business
+applications all associated with the same IAM Identity Provider, that user will be
+charged once. However, if the Amazon Q Business applications are associated with
+five IAM Identity Providers, the user will be charged five times.
+
+In scenarios where a user is subscribed to a mix of applications, the charging
+structure is as follows:
+
+- For applications using IAM Identity Center, users will be charged once across all these
+applications that share the same IAM Identity Center instance.
+
+- For applications using IAM Federation, users will be charged once per IAM
+Identity Provider.
+
+User subscriptions are prorated when created or upgraded based on the number of days
+left in the calendar month. Any cancellations or downgrades are not prorated and apply
+starting in the next calendar month. The charges for user subscription starts only after
+first use by the user. After a user's first use, subscription charges will continue each
+month until the user's subscriptions have been removed.
+
+For a consolidated view of all your user subscriptions see the [Amazon Q subscriptions page](https://console.aws.amazon.com/amazonq/subscriptions).
+Subscriptions can only be viewed centrally and _not_ be created or
+updated from the Amazon Q subscription management console.
+
+## Pricing
+
+You are charged for user subscriptions to application environments and for index capacity. You
+can choose any combination of the following subscription tiers and indices for your
+application environment.
+
+For detailed pricing information, including examples of charges for index capacity,
+subscribing and unsubscribing users to Amazon Q Business tiers, upgrading and
+downgrading Amazon Q Business tiers, and more, see [Amazon Q Business Pricing](https://aws.amazon.com/q/business/pricing).
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Key concepts
+
+Supported document formats
+
+All content copied from https://docs.aws.amazon.com/.

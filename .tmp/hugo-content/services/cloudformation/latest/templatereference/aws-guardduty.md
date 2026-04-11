@@ -1,0 +1,35 @@
+This is the new _CloudFormation Template Reference Guide_.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+[AWS CloudFormation User Guide](../userguide/welcome.md).
+
+# Amazon GuardDuty
+
+**Resource types**
+
+- [AWS::GuardDuty::Detector](aws-resource-guardduty-detector.md)
+
+- [AWS::GuardDuty::Filter](aws-resource-guardduty-filter.md)
+
+- [AWS::GuardDuty::IPSet](aws-resource-guardduty-ipset.md)
+
+- [AWS::GuardDuty::MalwareProtectionPlan](aws-resource-guardduty-malwareprotectionplan.md)
+
+- [AWS::GuardDuty::Master](aws-resource-guardduty-master.md)
+
+- [AWS::GuardDuty::Member](aws-resource-guardduty-member.md)
+
+- [AWS::GuardDuty::PublishingDestination](aws-resource-guardduty-publishingdestination.md)
+
+- [AWS::GuardDuty::ThreatEntitySet](aws-resource-guardduty-threatentityset.md)
+
+- [AWS::GuardDuty::ThreatIntelSet](aws-resource-guardduty-threatintelset.md)
+
+- [AWS::GuardDuty::TrustedEntitySet](aws-resource-guardduty-trustedentityset.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Previous
+
+AWS::GuardDuty::Detector
+
+All content copied from https://docs.aws.amazon.com/.

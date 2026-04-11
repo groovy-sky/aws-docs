@@ -1,0 +1,1173 @@
+# WorkSpaces Applications Agent Release Notes
+
+The Amazon WorkSpaces Applications agent software runs on your streaming instances, enabling end users to
+connect to and start their streaming applications. Starting December 7, 2017, your streaming
+instances can be automatically updated with the latest features, performance improvements,
+and security updates that are available from AWS. Before December 7, 2017, agent updates
+were included with new base image releases.
+
+To use the latest WorkSpaces Applications agent software, you need to rebuild your images by using new base
+images published by AWS on or after December 7, 2017. When you do this, the option to enable
+automatic updates of the agent is selected by default in the Image Assistant. We recommend
+that you leave this option selected so that any new image builder or fleet instance that is
+launched from your image always uses the latest version of the agent. For more information,
+see [Tutorial: Create a Custom WorkSpaces Applications Image by Using the WorkSpaces Applications Console](tutorial-image-builder.md).
+
+The following table describes the latest updates that are available in released versions
+of the WorkSpaces Applications agent for Windows instances.
+
+Amazon WorkSpaces Applications agent versionChanges02-09-2026
+
+- Security patch for multisession S3 storage functionality
+
+02-04-2026
+
+- Enhancements for automatic time zone redirection
+
+- Improves App Switcher functionality with enhanced window management
+
+- 4K resolution support for non-accelerated instance types
+
+- General bug fixes and improvements
+
+12-06-2025
+
+- Adds support for Windows Server 2025
+
+- Support for performance metrics for single session
+
+- Adds additional performance metrics for multi session
+
+- General bug fixes and improvements
+
+10-02-2025
+
+- Support for Microsoft license included
+applications
+
+09-30-2025
+
+- Support for local file redirection on Multi-Session
+fleets
+
+- General bug fixes and improvements
+
+07-15-2025
+
+- Resolves rendering issues that affect certain
+applications and improves window management for a
+seamless user experience
+
+- Expanded support for custom paper sizes in
+printing scenarios to accommodate diverse business
+needs
+
+- Various performance optimizations and reliability
+enhancements across the platform
+
+05-29-2025
+
+- Resolves an issue with quick links access to home
+folder / temporary folder on multi-session
+fleets
+
+- Resolves an issue with certificate validation
+handling for certificate-based authentication on
+multi-session WorkSpaces Applications
+
+- Improves the display resolution quality
+
+- General bug fixes and improvements
+
+03-05-2025
+
+- Resolves an instance launch issue with Windows
+FIPS
+
+- Resolves an issue with Application Settings
+Persistence with private Amazon S3 interface
+endpoint
+
+- General bug fixes and improvements
+
+02-07-2025
+
+- Adds support for multi-session certification-based
+authentication
+
+- Adds performance enhancements for multi-session
+fleets
+
+- Fixes an issue where certain legacy apps that use
+User Account Control (UAC) Virtualization encounter
+permissions issues when using Application Settings
+Persistence
+
+10-31-2024
+
+- Bug fixes and improvements for multi-session
+fleets
+
+10-21-2024
+
+- Resolves an issue with WorkSpaces Applications agent version
+09-18-2024 that caused instance launch failures when
+used with Microsoft Visual C++ Redistributable
+(versions newer than 14.38.33135.0)
+
+09-18-2024
+
+- Regional settings support for multi-session
+fleets. End users can customize time zone, locale,
+and input method for their streaming
+sessions.
+
+- Printer redirection support for multi-session
+fleets. End users can redirect print jobs from their
+streaming application to a printer that is connected
+to their local computer, including any network
+printers that the users have mapped.
+
+- Automatic time zone redirection for application
+and desktop streaming sessions for Windows (single
+session or multi-session). WorkSpaces Applications administrators can
+enable or disable time zone redirection for their
+end users’ streaming sessions. Once enabled, end
+users see the same time zone settings on their local
+devices and WorkSpaces Applications session.
+
+- New default maximum size for user profile VHD is 5
+GB for Always-On and On-Demand fleets
+
+- MSIX Application support for Always-On and
+On-Demand fleet with Desktop View
+
+- General bug fixes and improvements
+
+05-21-2024
+
+- Support for audio in for multi-session
+fleets
+
+- Stability improvement for app view fleets
+
+- Support for active directory trust relationships
+in AD-joined multi-session fleets
+
+- General bug fixes and improvements
+
+04-15-2024
+
+- Improves streaming resiliency when Application Settings
+Persistence is enabled
+
+- Adds support for Seamless mode/Native application mode for
+multi-session fleets
+
+- Improves mouse cursor end user experience in multi-session
+streaming
+
+01-17-2024
+
+- Adds support for audio out on multi-session fleets
+
+- Adds support for session scripts on multi-session
+fleets
+
+- Improves provisioning resilience on multi-session
+fleets
+
+12-07-2023
+
+- Adds support for Windows Server 2022
+
+- Improves streaming performance on Windows Server 2019
+
+- Adds AWS CLI v2 support
+
+- Adds keyboard support to switch between applications
+
+- Solves an issue with certificate-based authentication when
+Windows session is locked
+
+- Note: Windows Server 2012 R2 reached end of support on October
+10th, 2023. For better streaming experience support, upgrade to
+Windows Server 2016, Windows Server 2019, or Windows Server
+2022.
+
+09-06-2023
+
+- Adds support for multi-session fleets
+
+- Improves instance and session provisioning
+
+- Resolves an issue with copy/paste functionality
+
+- Requires the following software components:
+
+- Microsoft .NET Framework Runtime — 4.7.2
+
+05-30-2023
+
+- Improves instance provisioning resilience
+
+05-08-2023
+
+- Resolves an issue with a shutdown warning in fleet instances
+for Windows 2016 and Windows 2012 R2
+
+04-13-2023
+
+- Resolves an issue with the streaming session being stuck in a
+connecting state
+
+03-21-2023
+
+- Resolves an issue with application freezing
+
+- Resolves an issue with physical smartcard authentication
+failure
+
+- Resolves an issue with home folders not working with FIPS
+enabled on Windows
+
+- Improves instance provisioning resilience
+
+- Improves performance with physical smartcard logon time for
+Windows Server 2019
+
+10-13-2022
+
+- Improves performance with agents
+
+- Resolves issue with DCV physical smartcard
+
+06-20-2022
+
+- Adds backwards compatibility for the USB string filter file
+location on old images
+
+- Improves instance provisioning resilience
+
+- Improves session connection reliability
+
+03-14-2022
+
+- Resolves an issue with regional settings not updating
+
+02-21-2022
+
+- Resolves issue with Microsoft OneDrive copying larger
+files
+
+- Improves agent robustness on small instance types
+
+- Works with the following software components. For more
+information, see [WorkSpaces Applications Base Image and Managed Image Update Release Notes](base-image-version-history.md).
+
+- Amazon SSM Agent — 3.0.1295.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56 (Windows
+Server 2012 R2)
+
+- NICE DCV Virtual Display — 1.0.34.0 (Windows
+Server 2016/2019)
+
+- EC2Config service (Windows Server 2012 R2 only)
+— 4.9.4500
+
+12-20-2021
+
+- Resolves an issue with the mouse disappearing when using the
+native client
+
+- Resolves an issue of storage unmount time for session
+termination
+
+- Resolves issues with system crashes on Graphics instances
+running Windows Server 2016
+
+- Added support for Windows Server instances when system
+cryptography group policy is enabled. For more information, see
+[System cryptography](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing).
+
+- Added the ability to toggle file system caching
+
+- Works with the following software components. For more
+information, see [WorkSpaces Applications Base Image and Managed Image Update Release Notes](base-image-version-history.md).
+
+- Amazon SSM Agent — 3.0.1295.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56 (Windows
+Server 2012 R2)
+
+- NICE DCV Virtual Display — 1.0.34.0 (Windows
+Server 2016/2019)
+
+- EC2Config service (Windows Server 2012 R2 only)
+— 4.9.4500
+
+10-19-2021
+
+- Resolves an issue preventing users from streaming when the
+Microsoft Windows printer service is disabled
+
+- Resolves an issue where language pack installation doesn't
+complete successfully
+
+- Resolves an issue with the S3 Home Folder where folders and
+files are being changed to all uppercase
+
+- Works with the following software components. For more
+information, see [WorkSpaces Applications Base Image and Managed Image Update Release Notes](base-image-version-history.md).
+
+- Amazon SSM Agent — 3.0.1295.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56 (Windows
+Server 2012 R2)
+
+- NICE DCV Virtual Display — 1.0.34.0 (Windows
+Server 2016/2019)
+
+- EC2Config service (Windows Server 2012 R2 only)
+— 4.9.4500
+
+08-02-2021
+
+- Updated USB driver to include important fixes
+
+- Resolves an issue where the customer’s local machine’s caps
+lock state becomes out of sync with the caps lock state of the
+remote machine
+
+- Works with the following software components. For more
+information, see [WorkSpaces Applications Base Image and Managed Image Update Release Notes](base-image-version-history.md).
+
+- Amazon SSM Agent — 3.0.1295.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56 (Windows
+Server 2012 R2)
+
+- NICE DCV Virtual Display — 1.0.34.0 (Windows
+Server 2016/2019)
+
+- EC2Config service (Windows Server 2012 R2 only)
+— 4.9.4419.0
+
+07-01-2021
+
+- Incremental agent release for Managed Image Updates. For more
+information, see [Update an Image by Using Managed WorkSpaces Applications Image Updates](keep-image-updated-managed-image-updates.md).
+
+- Includes changes from the 06-25-2021 agent.
+
+06-25-2021
+
+- Resolved various networking issues
+
+- Resolved an issue where local group policies were
+overridden
+
+- Resolved an issue where files were failing to be created if
+they were contained in parent directories that did not exist
+after attempting to fetch from OneDrive and Google cloud
+storage
+
+- Resolved an issue where session scripts failed to run at the
+end of a session
+
+- Added support for webcam redirection in the web client
+
+05-17-2021
+
+- Enables real-time audio-video (AV) feature by default
+
+- Fixes an output of the Image Assistant CLI command to be valid
+JSON
+
+- Fixes an issue causing instance provisioning failures due to
+internal timeouts
+
+- Amazon SSM Agent, Amazon WDDM Hook Driver, and EC2Config
+service versions remain the same as the previous agent version
+release
+
+03-04-2021
+
+- Resolves issues with smart card authentication that cause
+connection failures. The connection failures occur when users
+close and reopen a streaming session multiple times
+
+- Resolves an issue that causes right-click menu items in
+Microsoft Office applications to be unavailable
+
+- Resolves an issue that causes multiple storage connector
+processes for OneDrive and Google Drive to appear in Task
+Manager
+
+- Resolves an issue that prevents files larger than 2 GB from
+being downloaded from Google Drive
+
+- Resolves an intermittent issue that causes provisioning delays
+for WorkSpaces Applications fleet instances that are joined to a Microsoft
+Active Directory domain
+
+- Works with these software components:
+
+- Amazon SSM Agent — 3.0.431.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service (Windows Server 2012 R2 only)
+— 4.9.4279.0
+
+12-17-2020
+
+- Resolves an issue that causes the application settings
+persistence VHD file to not download to the WorkSpaces Applications fleet
+streaming instance
+
+- Resolves an issue that causes local printer redirection to
+stop working during WorkSpaces Applications streaming sessions. This issue might
+occur when Microsoft KB4571694 is installed on the WorkSpaces Applications image
+builder or fleet streaming instance
+
+- Resolves an issue that causes the Image Assistant
+`update-default-profile` command line interface
+(CLI) operation to return an error when attempting to reference
+a local Microsoft Windows user as the source for the default
+user profile
+
+- Resolves an issue that prevents WorkSpaces Applications fleet instances from
+provisioning when the system cryptography is set to use
+FIPS-compliant algorithms
+
+- Resolves an issue that prevents icons from appearing on users'
+local computer taskbar during streaming sessions in native
+application mode
+
+- Adds support for files shared by Microsoft SharePoint to the
+OneDrive for Business persistent storage connector
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.3.1319.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service (Windows Server 2012 R2 only)
+— 4.9.4222.0
+
+01-04-2021
+
+- Adds support for using a smart card for Windows sign in to
+Active Directory-joined streaming instances and in-session
+authentication for streaming applications
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.3.1319.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service (Windows Server 2012 R2 only)
+— 4.9.4222.0
+
+12-17-2020
+
+- Resolves an issue that causes the application settings
+persistence VHD file to not download to the WorkSpaces Applications fleet
+streaming instance
+
+- Resolves an issue that causes local printer redirection to
+stop working during WorkSpaces Applications streaming sessions. This issue might
+occur when Microsoft KB4571694 is installed on the WorkSpaces Applications image
+builder or fleet streaming instance
+
+- Resolves an issue that causes the Image Assistant
+`update-default-profile` command line interface
+(CLI) operation to return an error when attempting to reference
+a local Microsoft Windows user as the source for the default
+user profile
+
+- Resolves an issue that prevents WorkSpaces Applications fleet instances from
+provisioning when the system cryptography is set to use
+FIPS-compliant algorithms
+
+- Resolves an issue that prevents icons from appearing on users'
+local computer taskbar during streaming sessions in native
+application mode
+
+- Adds support for files shared by Microsoft SharePoint to the
+OneDrive for Business persistent storage connector
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.3.1319.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service (Windows Server 2012 R2 only)
+— 4.9.4222.0
+
+10-08-2020
+
+- Resolves an issue that causes users to receive an internal
+error notification when they connect to WorkSpaces Applications streaming
+sessions
+
+- Resolves an issue that causes intermittent copy and paste
+failures during WorkSpaces Applications streaming sessions
+
+- Resolves an issue that causes application icons to not appear
+on the taskbar during WorkSpaces Applications streaming sessions in native
+application mode
+
+- Resolves an issue that causes the application catalog to
+appear empty when users reconnect to WorkSpaces Applications after an idle
+disconnect
+
+- Improves the download speed between WorkSpaces Applications home folders and
+WorkSpaces Applications fleet instances
+
+- Works with these software components:
+
+- Amazon SSM Agent — 3.0.161.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service (Windows Server 2012R2 only) —
+4.9.4222.0
+
+09-01-2020
+
+- Resolves an issue that causes Graphics Design instances to not
+display the correct resolution
+
+- Resolves an issue that causes a white screen when using the
+WorkSpaces Applications client in native application mode to stream Microsoft
+Remote Desktop
+
+- Resolves an issue that causes a streaming application to
+freeze when minimized. This issue occurs when using the WorkSpaces Applications
+client in native application mode
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.3.1319.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service (Windows Server 2012R2 only) —
+4.9.4222.0
+
+07-30-2020
+
+- Adds support for printer redirection to the WorkSpaces Applications client for
+Windows
+
+- Resolves an issue that causes file downloads for files greater
+than 5 GB to stop, and then fail
+
+- Improves clipboard performance when using Microsoft Office
+2016 plug-ins
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.3.1319.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service (Windows Server 2012R2 only) —
+4.9.4222.0
+
+05-27-2020
+
+- Resolves an issue that prevents some applications from being
+resized, moved, or maximized when users stream in native
+application mode using the WorkSpaces Applications client for Windows
+
+- Resolves an intermittent issue with downloading utility
+software. The issue may prevent image builders and fleet
+instances from being provisioned
+
+- Resolves an intermittent issue with certain language settings
+that may prevent image builders and fleet instances from being
+provisioned
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.3.701.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service (Windows Server 2012R2 only) —
+4.9.3519.0
+
+04-20-2020
+
+- Resolves an issue that causes streaming sessions to fail when
+session scripts are run
+
+- Improves performance when IAM roles are used
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.3.701.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service (Windows Server 2012R2 only) —
+4.9.3519.0
+
+02-19-2020
+
+- Adds support for native application mode. For more
+information, see [Native Application Mode](feature-support-native-application-mode.md)
+
+- Adds support for the **Desktop** stream
+view
+
+- Improves interprocess communication between WorkSpaces Applications
+components
+
+- Resolves an issue that caused streaming instances to fail to
+be provisioned
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.3.701.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service (Windows Server 2012R2 only) —
+4.9.3519.0
+
+01-13-2020
+
+- For persistent storage with Google Drive for G Suite,
+_Team Drives_ have been renamed to
+_Shared Drives_
+
+- Resolves an issue that causes slow provisioning for streaming
+instances in Active Directory environments that have many
+users
+
+- Resolves an issue with accessing applications from the
+application switcher when the fleet user is an
+administrator
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.3.701.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service (Windows Server 2012R2 only) —
+4.9.3519.0
+
+11-13-2019
+
+- WorkSpaces Applications assemblies are now signed, including executables and
+installer packages
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.3.701.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.3519.0
+
+10-08-2019
+
+- Modifies the WorkSpaces Applications storage connector to no longer bypass the
+system proxy server
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.3.701.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.3519.0
+
+09-23-2019
+
+- Resolves an issue that occurs when launching applications that
+start child processes
+
+- Resolves an issue with directory traversal
+
+- Resolves an issue that causes the WorkSpaces Applications agent to stop
+functioning, which prevents interaction with applications
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.3.701.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.3519.0
+
+09-03-2019
+
+- Adds support for applying IAM roles to WorkSpaces Applications streaming
+instances. For more information, see [Using an IAM Role to Grant Permissions to Applications and Scripts Running on WorkSpaces Applications Streaming Instances](using-iam-roles-to-grant-permissions-to-applications-scripts-streaming-instances.md)
+
+- Adds support for specifying tags when creating WorkSpaces Applications images
+programmatically with a command line interface
+
+- Modifies the WorkSpaces Applications storage connector to bypass the system
+proxy server when mounting storage
+
+- Resolves an issue that prevented .lnk files from being
+specified in Image Assistant
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.3.612.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.3429
+
+08-08-2019
+
+- Adds support for WorkSpaces Applications file system redirection. For more
+information, see [Enable File System Redirection for Your WorkSpaces Applications Users](enable-file-system-redirection.md)
+
+- Adds support for three new locales: English-United Kingdom
+(en-GB), English-Canada (en-CA), and English-Australia
+(en-AU)
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.3.612.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.3429
+
+07-26-2019
+
+- Adds support for creating and managing WorkSpaces Applications images
+programmatically with a command line interface. For more
+information, see [Create Your Amazon WorkSpaces Applications Image Programmatically by Using the Image Assistant CLI Operations](programmatically-create-image.md).
+
+- Image creation is no longer blocked when automatic Windows
+updates are enabled on an image builder. However, a message
+notifies administrators that automatic Windows updates will be
+disabled on the fleet in this case (that is, automatic Windows
+updates won't be enabled on fleet instances).
+
+- Disables Windows updates when a fleet instance starts
+
+- Users in the Administrators group are no longer disabled when
+an image builder instance starts
+
+- Users in the Administrators group are now disabled rather than
+deleted when an image builder instance starts
+
+- Resolves an issue that prevents the streaming resolution from
+resizing when network connections change
+
+- Resolves a race condition that prevents the streaming
+resolution from resizing when application settings persistence
+is enabled
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.3.612.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.3429
+
+06-19-2019
+
+- Adds support for Windows Server 2016 and Windows Server 2019
+base images
+
+- WorkSpaces Applications session scripts are now terminated after the configured
+timeout is exceeded
+
+- Resolves an issue where streaming instances may not be
+provisioned if the locale is changed
+
+- Includes a change to block image creation when automatic
+Windows updates are enabled on an image builder
+
+- Resolves an issue where streaming instances may take a long
+time to stop if the storage connector mount fails
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.3.612.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.3429
+
+05-07-2019
+
+- Adds support for subscribing to WorkSpaces Applications usage reports. For more
+information, see [WorkSpaces Applications Usage Reports](configure-usage-reports.md).
+
+- Adds support for configuring the amount of time that users can
+be idle (inactive) before they are disconnected from their
+streaming session. For more information, see "Create a Fleet" in
+[Create an Amazon WorkSpaces Applications Fleet and Stack](set-up-stacks-fleets.md).
+
+- Resolves an issue with using Amazon S3 buckets for home folder and
+application settings persistence with an Amazon S3 virtual private
+gateway
+
+- Includes a change to block image creation when automatic
+Windows updates are enabled on an image builder
+
+- Resolves an issue with persistent storage drives (home
+folders, OneDrive, and Google Drive) intermittently disappearing
+from the **My Files** dialog box
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.3.542.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.3289
+
+04-02-2019
+
+- Resolves an issue with session scripts and storage connector
+mounting
+
+- Resolves a minor issue with instance provisioning
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.3.344.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.3067
+
+03-07-2019
+
+- Adds support for gestures on touch-enabled iPads, Android
+tablets, and Windows devices
+
+- Resolves an issue with switching users in an image builder
+instance
+
+- Resolves an intermittent issue with instance
+reservations
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.3.344.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.3067
+
+01-22-2019
+
+- Adds support for using on-instance session scripts to run your
+own custom scripts when specific events occur in users'
+streaming sessions
+
+- Adds support for adding tags to the following WorkSpaces Applications resource
+types during resource creation: image builders, images, fleets,
+and stacks
+
+- Includes a fix removing storage connector log files from the
+application settings persistence Virtual Hard Disk (VHD)
+file
+
+- Prevents image creation when the display language is changed
+from English and the AWS Command Line Interface (AWS CLI)
+version is earlier than 1.16.36. For more information, see
+"Special Considerations for Japanese Language Settings" in [Configure Default Regional Settings for Your WorkSpaces Applications Users](configure-default-regional-settings.md).
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.3.344.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.3067
+
+01-08-2019
+
+- Improves the instance provisioning time for base images dated
+01-08-2019
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.3.344.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.3067
+
+12-19-2018
+
+- Resolves an issue with dynamic applications not being added to
+the application catalog
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.2.619.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.2644
+
+12-17-2018
+
+- The WorkSpaces Applications client now supports a multiple-monitor experience
+for streaming instances that use a Graphics Design instance
+type
+
+- Resolves an issue with the temporary drive being visible on
+fleet instances that use a Graphics Desktop or Memory Optimized
+instance type
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.2.619.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.2644
+
+12-04-2018
+
+- Adds support for using a Japanese keyboard with web clients
+that run on Windows
+
+- Adds support for using the WorkSpaces Applications dynamic application
+framework APIs to build a dynamic app provider
+
+- Resolves an issue with streaming the same session concurrently
+on multiple tabs or browsers
+
+- Includes a fix to make home folders, Google Drive, and
+OneDrive read-only until mounting is completed
+
+- Improves the mount time for home folders that are stored on
+fleet instances connected to an Amazon S3 VPC endpoint
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.2.619.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.2644
+
+11-14-2018
+
+- Adds support for launching streaming sessions using the WorkSpaces Applications
+Windows client
+
+- Resolves an issue with opening applications that use
+environment variables for the fleet user name
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.2.619.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.2644
+
+10-30-2018
+
+- Resolves an issue with mounting home folders that are larger
+than 1 GB when application settings persistence is
+enabled
+
+- Resolves an issue with image creation when IPv6 is
+disabled
+
+- Session information is now provided as environment variables
+within streaming instances
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.2.619.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.2644
+
+10-24-2018
+
+- Includes a fix to display more than 1,000 files in the Amazon S3
+home folders directory
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.2.619.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.2644
+
+10-01-2018
+
+- Improves the performance of application settings
+persistence
+
+- Includes a fix to unhide all drives on a fleet instance,
+except Drive C and Drive D, during user streaming sessions that
+are launched from the instance
+
+- Resolves an issue with accessing minimized application
+subwindows from the application switcher
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.2.619.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.2644
+
+08-29-2018
+
+- Adds support for application settings persistence
+
+- Resolves an issue with copying and pasting large amounts of
+data between applications within an WorkSpaces Applications streaming session
+
+- Resolves an issue with accessing unresponsive applications
+from the application switcher
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.2.619.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.2644
+
+07-26-2018
+
+- Adds support for OneDrive persistent storage
+
+- Resolves an issue with saving Visio files to home folders and
+Google Drive
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.2.619.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.2644
+
+06-19-2018
+
+- Resolves an issue with optimizing images for application
+launch
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.2.619.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.2644
+
+06-06-2018
+
+- Adds support for regional settings and default application and
+Windows settings
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.2.619.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.2644
+
+05-31-2018
+
+- Adds support for Google Drive persistent storage
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.2.392.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.2586
+
+05-21-2018
+
+- Adds support for administrative controls for data
+transfer
+
+- Adds support for the Safari browser on macOS X
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.2.392.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.2586
+
+03-19-2018
+
+- Resolves an issue with minimizing the application window in
+certain environments
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.2.160.0
+
+- Amazon WDDM Hook Driver — 1.0.0.56
+
+- EC2Config service — 4.9.2400.0
+
+01-24-2018
+
+- Resolves an issue with the Alt Graph key not working on
+certain keyboard layouts
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.2.93.0
+
+- Amazon WDDM Hook Driver — 1.0.0.50
+
+- EC2Config service — 4.9.2262.0
+
+12-07-2017
+
+- Resolves issues with using ALT key combinations
+
+- Resolves an issue with file uploads from local computers to
+streaming sessions
+
+- Works with these software components:
+
+- Amazon SSM Agent — 2.2.93.0
+
+- Amazon WDDM Hook Driver — 1.0.0.21
+
+- EC2Config service — 4.9.2218.0
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Create an Image That Uses a Newer Version of the Agent
+
+Tutorial: Create a Custom Image by Using the Console
+
+All content copied from https://docs.aws.amazon.com/.

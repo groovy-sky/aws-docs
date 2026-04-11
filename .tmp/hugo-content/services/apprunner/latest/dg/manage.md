@@ -1,0 +1,38 @@
+AWS App Runner will no longer be open to new customers starting April 30, 2026. If you would like to use
+App Runner, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see
+[AWS App Runner availability\
+change](apprunner-availability-change.md).
+
+# Managing your App Runner service
+
+This chapter describes how to manage your AWS App Runner service. In this chapter, you learn how to manage the life cycle of your service: create, configure,
+and delete a service, deploy new application versions to your service, and control the availability of your web service by pausing and resuming your
+service. You also learn how to manage other aspects of your service, like connections and auto scaling.
+
+###### Topics
+
+- [Creating an App Runner service](manage-create.md)
+
+- [Rebuilding a failed App Runner service](manage-rebuild.md)
+
+- [Deploying a new application version to App Runner](manage-deploy.md)
+
+- [Configuring an App Runner service](manage-configure.md)
+
+- [Managing App Runner connections](manage-connections.md)
+
+- [Managing App Runner automatic scaling](manage-autoscaling.md)
+
+- [Managing custom domain names for an App Runner service](manage-custom-domains.md)
+
+- [Pausing and resuming an App Runner service](manage-pause.md)
+
+- [Deleting an App Runner service](manage-delete.md)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+App Runner console
+
+Creation
+
+All content copied from https://docs.aws.amazon.com/.

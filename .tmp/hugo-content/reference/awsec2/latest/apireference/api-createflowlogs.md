@@ -1,0 +1,328 @@
+# CreateFlowLogs
+
+Creates one or more flow logs to capture information about IP traffic for a specific network interface,
+subnet, or VPC.
+
+Flow log data for a monitored network interface is recorded as flow log records, which are log events
+consisting of fields that describe the traffic flow. For more information, see
+[Flow log records](../../../../services/vpc/latest/userguide/flow-log-records.md)
+in the _Amazon VPC User Guide_.
+
+When publishing to CloudWatch Logs, flow log records are published to a log group, and each network
+interface has a unique log stream in the log group. When publishing to Amazon S3, flow log records for all
+of the monitored network interfaces are published to a single log file object that is stored in the specified
+bucket.
+
+For more information, see [VPC Flow Logs](../../../../services/vpc/latest/userguide/flow-logs.md)
+in the _Amazon VPC User Guide_.
+
+## Request Parameters
+
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+
+**ClientToken**
+
+Unique, case-sensitive identifier that you provide to ensure the idempotency of the
+request. For more information, see [How to ensure\
+idempotency](../../../../services/ec2/latest/devguide/ec2-api-idempotency.md).
+
+Type: String
+
+Required: No
+
+**DeliverCrossAccountRole**
+
+The ARN of the IAM role that allows Amazon EC2 to publish flow logs across accounts.
+
+Type: String
+
+Required: No
+
+**DeliverLogsPermissionArn**
+
+The ARN of the IAM role that allows Amazon EC2 to publish flow logs to the log destination.
+
+This parameter is required if the destination type is `cloud-watch-logs`,
+or if the destination type is `kinesis-data-firehose` and the delivery stream
+and the resources to monitor are in different accounts.
+
+Type: String
+
+Required: No
+
+**DestinationOptions**
+
+The destination options.
+
+Type: [DestinationOptionsRequest](api-destinationoptionsrequest.md) object
+
+Required: No
+
+**DryRun**
+
+Checks whether you have the required permissions for the action, without actually making the request,
+and provides an error response. If you have the required permissions, the error response is `DryRunOperation`.
+Otherwise, it is `UnauthorizedOperation`.
+
+Type: Boolean
+
+Required: No
+
+**LogDestination**
+
+The destination for the flow log data. The meaning of this parameter depends on the destination type.
+
+- If the destination type is `cloud-watch-logs`, specify the ARN of a CloudWatch Logs log group. For example:
+
+arn:aws:logs: _region_: _account\_id_:log-group: _my\_group_
+
+Alternatively, use the `LogGroupName` parameter.
+
+- If the destination type is `s3`, specify the ARN of an S3 bucket. For example:
+
+arn:aws:s3::: _my\_bucket_/ _my\_subfolder_/
+
+The subfolder is optional. Note that you can't use `AWSLogs` as a subfolder name.
+
+- If the destination type is `kinesis-data-firehose`, specify the ARN of a Kinesis Data Firehose delivery stream. For example:
+
+arn:aws:firehose: _region_: _account\_id_:deliverystream: _my\_stream_
+
+Type: String
+
+Required: No
+
+**LogDestinationType**
+
+The type of destination for the flow log data.
+
+Default: `cloud-watch-logs`
+
+Type: String
+
+Valid Values: `cloud-watch-logs | s3 | kinesis-data-firehose`
+
+Required: No
+
+**LogFormat**
+
+The fields to include in the flow log record. List the fields in the order in which
+they should appear. If you omit this parameter, the flow log is created using the
+default format. If you specify this parameter, you must include at least one
+field. For more information about the available fields, see [Flow log records](../../../../services/vpc/latest/userguide/flow-log-records.md)
+in the _Amazon VPC User Guide_ or [Transit Gateway Flow Log\
+records](../../../../services/vpc/latest/tgw/tgw-flow-logs.md#flow-log-records) in the _AWS Transit Gateway Guide_.
+
+Specify the fields using the `${field-id}` format, separated by spaces.
+
+Type: String
+
+Required: No
+
+**LogGroupName**
+
+The name of a new or existing CloudWatch Logs log group where Amazon EC2 publishes your flow logs.
+
+This parameter is valid only if the destination type is `cloud-watch-logs`.
+
+Type: String
+
+Required: No
+
+**MaxAggregationInterval**
+
+The maximum interval of time during which a flow of packets is captured and aggregated into a flow log record.
+The possible values are 60 seconds (1 minute) or 600 seconds (10 minutes).
+This parameter must be 60 seconds for transit gateway resource types.
+
+When a network interface is attached to a [Nitro-based\
+instance](../../../../services/ec2/latest/instancetypes/ec2-nitro-instances.md), the aggregation interval is always 60 seconds or less, regardless
+of the value that you specify.
+
+Default: 600
+
+Type: Integer
+
+Required: No
+
+**ResourceId.N**
+
+The IDs of the resources to monitor. For example, if the resource type is
+`VPC`, specify the IDs of the VPCs.
+
+Constraints: Maximum of 25 for transit gateway resource types. Maximum of 1000 for the
+other resource types.
+
+Type: Array of strings
+
+Required: Yes
+
+**ResourceType**
+
+The type of resource to monitor.
+
+Type: String
+
+Valid Values: `VPC | Subnet | NetworkInterface | TransitGateway | TransitGatewayAttachment | RegionalNatGateway`
+
+Required: Yes
+
+**TagSpecification.N**
+
+The tags to apply to the flow logs.
+
+Type: Array of [TagSpecification](api-tagspecification.md) objects
+
+Required: No
+
+**TrafficType**
+
+The type of traffic to monitor (accepted traffic, rejected traffic, or all traffic).
+This parameter is not supported for transit gateway resource types. It is required for
+the other resource types.
+
+Type: String
+
+Valid Values: `ACCEPT | REJECT | ALL`
+
+Required: No
+
+## Response Elements
+
+The following elements are returned by the service.
+
+**clientToken**
+
+Unique, case-sensitive identifier that you provide to ensure the idempotency of the
+request.
+
+Type: String
+
+**flowLogIdSet**
+
+The IDs of the flow logs.
+
+Type: Array of strings
+
+**requestId**
+
+The ID of the request.
+
+Type: String
+
+**unsuccessful**
+
+Information about the flow logs that could not be created successfully.
+
+Type: Array of [UnsuccessfulItem](api-unsuccessfulitem.md) objects
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+
+## Examples
+
+### Example 1
+
+(CloudWatch Logs) This example creates a flow log that captures all rejected traffic for
+network interface eni-aa22bb33 and publishes the data to an CloudWatch Logs log group
+named `my-flow-logs` in account `123456789101`, using the
+IAM role `publishFlowLogs`.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=CreateFlowLogs
+&ResourceType=NetworkInterface
+&TrafficType=REJECT
+&ResourceId.1=eni-aa22bb33
+&DeliverLogsPermissionArn=arn:aws:iam::123456789101:role/publishFlowLogs
+&LogDestinationType=cloud-watch-logs
+&LogDestination=arn:aws:logs:us-east-1:123456789101:log-group:my-flow-logs
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```
+
+<CreateFlowLogsResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+    <requestId>2d96dae3-504b-4fc4-bf50-266EXAMPLE</requestId>
+    <unsuccessful/>
+    <flowLogIdSet>
+        <item>fl-1a2b3c4d</item>
+    </flowLogIdSet>
+</CreateFlowLogsResponse>
+```
+
+### Example 2
+
+(Amazon S3) This example creates a flow log that captures all traffic for the specified
+network interface and publishes the data to an Amazon S3 bucket named
+amzn-s3-demo-bucket.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=CreateFlowLogs
+&ResourceType=NetworkInterface
+&TrafficType=ALL
+&ResourceId.1=eni-1235b8ca123456789
+&LogDestinationType=s3
+&LogDestination=arn:aws:s3:::amzn-s3-demo-bucket
+&AUTHPARAMS
+```
+
+### Example 3
+
+(Amazon S3) This example creates a flow log with a custom flow log format that
+captures the version, instance ID, network interface ID, type, packet source
+address, packet destination address, protocol, bytes, the start time, the end
+time, and the action of the traffic, in that order. The flow log is published to
+an Amazon S3 bucket named amzn-s3-demo-bucket.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=CreateFlowLogs
+&ResourceType=NetworkInterface
+&TrafficType=ALL
+&ResourceId.1=eni-1235b8ca123456789
+&LogDestinationType=s3
+&LogDestination=arn:aws:s3:::amzn-s3-demo-bucket
+&LogFormat='${version} ${instance-id} ${interface-id} ${type} ${pkt-srcaddr} ${pkt-dstaddr} ${protocol} ${bytes} ${start} ${end} ${action}'
+&AUTHPARAMS
+```
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/createflowlogs.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/createflowlogs.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createflowlogs.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createflowlogs.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createflowlogs.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createflowlogs.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createflowlogs.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createflowlogs.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/createflowlogs.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createflowlogs.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+CreateFleet
+
+CreateFpgaImage

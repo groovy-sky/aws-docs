@@ -1,0 +1,213 @@
+# Use `GetBucketWebsite` with an AWS SDK or CLI
+
+The following code examples show how to use `GetBucketWebsite`.
+
+.NET
+
+**SDK for .NET**
+
+###### Note
+
+There's more on GitHub. Find the complete example and learn how to set up and run in the
+[AWS Code\
+Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3).
+
+```csharp
+
+                // Get the website configuration.
+                GetBucketWebsiteRequest getRequest = new GetBucketWebsiteRequest()
+                {
+                    BucketName = bucketName,
+                };
+                GetBucketWebsiteResponse getResponse = await client.GetBucketWebsiteAsync(getRequest);
+                Console.WriteLine($"Index document: {getResponse.WebsiteConfiguration.IndexDocumentSuffix}");
+                Console.WriteLine($"Error document: {getResponse.WebsiteConfiguration.ErrorDocument}");
+
+```
+
+- For API details, see
+[GetBucketWebsite](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/getbucketwebsite.md)
+in _AWS SDK for .NET API Reference_.
+
+C++
+
+**SDK for C++**
+
+###### Note
+
+There's more on GitHub. Find the complete example and learn how to set up and run in the
+[AWS Code\
+Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3).
+
+```cpp
+
+bool AwsDoc::S3::getWebsiteConfig(const Aws::String &bucketName,
+                                  const Aws::S3::S3ClientConfiguration &clientConfig) {
+    Aws::S3::S3Client s3Client(clientConfig);
+
+    Aws::S3::Model::GetBucketWebsiteRequest request;
+    request.SetBucket(bucketName);
+
+    Aws::S3::Model::GetBucketWebsiteOutcome outcome =
+            s3Client.GetBucketWebsite(request);
+
+    if (!outcome.IsSuccess()) {
+        const Aws::S3::S3Error &err = outcome.GetError();
+
+        std::cerr << "Error: GetBucketWebsite: "
+                  << err.GetMessage() << std::endl;
+    } else {
+        Aws::S3::Model::GetBucketWebsiteResult websiteResult = outcome.GetResult();
+
+        std::cout << "Success: GetBucketWebsite: "
+                  << std::endl << std::endl
+                  << "For bucket '" << bucketName << "':"
+                  << std::endl
+                  << "Index page : "
+                  << websiteResult.GetIndexDocument().GetSuffix()
+                  << std::endl
+                  << "Error page: "
+                  << websiteResult.GetErrorDocument().GetKey()
+                  << std::endl;
+    }
+
+    return outcome.IsSuccess();
+}
+
+```
+
+- For API details, see
+[GetBucketWebsite](../../../../reference/goto/sdkforcpp/s3-2006-03-01/getbucketwebsite.md)
+in _AWS SDK for C++ API Reference_.
+
+CLI
+
+**AWS CLI**
+
+The following command retrieves the static website configuration for a bucket named `amzn-s3-demo-bucket`:
+
+```nohighlight
+
+aws s3api get-bucket-website --bucket amzn-s3-demo-bucket
+
+```
+
+Output:
+
+```nohighlight
+
+{
+    "IndexDocument": {
+        "Suffix": "index.html"
+    },
+    "ErrorDocument": {
+        "Key": "error.html"
+    }
+}
+```
+
+- For API details, see
+[GetBucketWebsite](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-website.html)
+in _AWS CLI Command Reference_.
+
+JavaScript
+
+**SDK for JavaScript (v3)**
+
+###### Note
+
+There's more on GitHub. Find the complete example and learn how to set up and run in the
+[AWS Code\
+Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3).
+
+Get the website configuration.
+
+```javascript
+
+import {
+  GetBucketWebsiteCommand,
+  S3Client,
+  S3ServiceException,
+} from "@aws-sdk/client-s3";
+
+/**
+ * Log the website configuration for a bucket.
+ * @param {{ bucketName }}
+ */
+export const main = async ({ bucketName }) => {
+  const client = new S3Client({});
+
+  try {
+    const response = await client.send(
+      new GetBucketWebsiteCommand({
+        Bucket: bucketName,
+      }),
+    );
+    console.log(
+      `Your bucket is set up to host a website with the following configuration:\n${JSON.stringify(response, null, 2)}`,
+    );
+  } catch (caught) {
+    if (
+      caught instanceof S3ServiceException &&
+      caught.name === "NoSuchWebsiteConfiguration"
+    ) {
+      console.error(
+        `Error from S3 while getting website configuration for ${bucketName}. The bucket isn't configured as a website.`,
+      );
+    } else if (caught instanceof S3ServiceException) {
+      console.error(
+        `Error from S3 while getting website configuration for ${bucketName}.  ${caught.name}: ${caught.message}`,
+      );
+    } else {
+      throw caught;
+    }
+  }
+};
+
+```
+
+- For API details, see
+[GetBucketWebsite](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/getbucketwebsitecommand.md)
+in _AWS SDK for JavaScript API Reference_.
+
+PowerShell
+
+**Tools for PowerShell V4**
+
+**Example 1: This command returns the details of the static website configurations of the given S3 bucket.**
+
+```powershell
+
+Get-S3BucketWebsite -BucketName 'amzn-s3-demo-bucket'
+
+```
+
+- For API details, see
+[GetBucketWebsite](../../../powershell/v4/reference.md)
+in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
+
+**Tools for PowerShell V5**
+
+**Example 1: This command returns the details of the static website configurations of the given S3 bucket.**
+
+```powershell
+
+Get-S3BucketWebsite -BucketName 'amzn-s3-demo-bucket'
+
+```
+
+- For API details, see
+[GetBucketWebsite](../../../powershell/v5/reference.md)
+in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
+
+For a complete list of AWS SDK developer guides and code examples, see
+[Developing with Amazon S3 using the AWS SDKs](../../../../reference/amazons3/latest/api/sdk-general-information-section.md).
+This topic also includes information about getting started and details about previous SDK versions.
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+GetBucketVersioning
+
+GetObject
+
+All content copied from https://docs.aws.amazon.com/.

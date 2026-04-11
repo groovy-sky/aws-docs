@@ -1,0 +1,38 @@
+AWS App Runner will no longer be open to new customers starting April 30, 2026. If you would like to use
+App Runner, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see
+[AWS App Runner availability\
+change](apprunner-availability-change.md).
+
+# The App Runner API
+
+The AWS App Runner application programming interface (API) is a RESTful API for making requests to the App Runner service. You can use the API to create, list,
+describe, update, and delete App Runner resources in your AWS account.
+
+You can call the API directly in your application code, or you can use one of the AWS SDKs.
+
+For complete API reference information, see the [AWS App Runner API Reference](../api.md).
+
+For more information about AWS developer tools, see [Tools to Build on AWS](https://aws.amazon.com/tools).
+
+###### Topics
+
+- [Using the AWS CLI to work with App Runner](#api.cli)
+
+- [Using AWS CloudShell to work with AWS App Runner](api-cshell.md)
+
+## Using the AWS CLI to work with App Runner
+
+For command line scripts, use the [AWS CLI](../../../cli/index.md) to make calls to the App Runner service. For complete AWS CLI reference
+information, see the [apprunner](../../../cli/latest/reference/apprunner.md) in the _AWS CLI Command Reference_.
+
+AWS CloudShell allows you to skip installing the AWS CLI in your development environment, and use it in the AWS Management Console instead. In addition to avoiding
+installation, you also don't need to configure credentials, and you don't need to specify region. Your AWS Management Console session provides this context to the
+AWS CLI. For more information about CloudShell, and for a usage example, see [Using AWS CloudShell to work with AWS App Runner](api-cshell.md).
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+Reference
+
+Using AWS CloudShell
+
+All content copied from https://docs.aws.amazon.com/.

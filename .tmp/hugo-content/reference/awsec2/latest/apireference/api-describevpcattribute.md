@@ -1,0 +1,168 @@
+# DescribeVpcAttribute
+
+Describes the specified attribute of the specified VPC. You can specify only one attribute at a time.
+
+## Request Parameters
+
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+
+**Attribute**
+
+The VPC attribute.
+
+Type: String
+
+Valid Values: `enableDnsSupport | enableDnsHostnames | enableNetworkAddressUsageMetrics`
+
+Required: Yes
+
+**DryRun**
+
+Checks whether you have the required permissions for the action, without actually making the request,
+and provides an error response. If you have the required permissions, the error response is `DryRunOperation`.
+Otherwise, it is `UnauthorizedOperation`.
+
+Type: Boolean
+
+Required: No
+
+**VpcId**
+
+The ID of the VPC.
+
+Type: String
+
+Required: Yes
+
+## Response Elements
+
+The following elements are returned by the service.
+
+**enableDnsHostnames**
+
+Indicates whether the instances launched in the VPC get DNS hostnames.
+If this attribute is `true`, instances in the VPC get DNS hostnames;
+otherwise, they do not.
+
+Type: [AttributeBooleanValue](api-attributebooleanvalue.md) object
+
+**enableDnsSupport**
+
+Indicates whether DNS resolution is enabled for
+the VPC. If this attribute is `true`, the Amazon DNS server
+resolves DNS hostnames for your instances to their corresponding
+IP addresses; otherwise, it does not.
+
+Type: [AttributeBooleanValue](api-attributebooleanvalue.md) object
+
+**enableNetworkAddressUsageMetrics**
+
+Indicates whether Network Address Usage metrics are enabled for your VPC.
+
+Type: [AttributeBooleanValue](api-attributebooleanvalue.md) object
+
+**requestId**
+
+The ID of the request.
+
+Type: String
+
+**vpcId**
+
+The ID of the VPC.
+
+Type: String
+
+## Errors
+
+For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+
+## Examples
+
+### Example 1
+
+This example describes the `enableDnsSupport` attribute of the
+specified VPC. The sample response indicates that DNS resolution is
+supported.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=DescribeVpcAttribute
+&VpcId=vpc-1a2b3c4d
+&Attribute=enableDnsSupport
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```
+
+<DescribeVpcAttributeResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  <requestId>7a62c49f-347e-4fc4-9331-6e8eEXAMPLE</requestId>
+  <vpcId>vpc-1a2b3c4d</vpcId>
+  <enableDnsSupport>
+    <value>true</value>
+  </enableDnsSupport>
+</DescribeVpcAttributeResponse>
+```
+
+### Example 2
+
+This request describes the `enableDnsHostnames` attribute of the
+specified VPC. The sample response indicates that DNS hostnames are
+supported.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=DescribeVpcAttribute
+&VpcId=vpc-1a2b3c4d
+&Attribute=enableDnsHostnames
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```
+
+<DescribeVpcAttributeResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  <requestId>7a62c49f-347e-4fc4-9331-6e8eEXAMPLE</requestId>
+  <vpcId>vpc-1a2b3c4d</vpcId>
+   <enableDnsHostnames>
+    <value>true</value>
+   </enableDnsHostnames>
+</DescribeVpcAttributeResponse>
+```
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/describevpcattribute.md)
+
+- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/describevpcattribute.md)
+
+- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/describevpcattribute.md)
+
+- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/describevpcattribute.md)
+
+- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/describevpcattribute.md)
+
+- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/describevpcattribute.md)
+
+- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/describevpcattribute.md)
+
+- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/describevpcattribute.md)
+
+- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/describevpcattribute.md)
+
+- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describevpcattribute.md)
+
+[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+
+DescribeVolumeStatus
+
+DescribeVpcBlockPublicAccessExclusions
