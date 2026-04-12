@@ -25,7 +25,7 @@ jobs:
         run: go build -o aws-docs ./cmd/aws-docs
 
       - name: Run crawler
-        run: ./aws-docs -mode=incremental -max-sections=2 -detailed-logging
+        run: ./aws-docs -mode=incremental -max-sections=1 -detailed-logging
 
       - name: Commit crawled docs
         run: |
