@@ -25,6 +25,8 @@ more information, see following topics for compatible types of AWS origins.
 
 - [Restrict access with VPC origins](private-content-vpc-origins.md)
 
+- [Restrict access to an Amazon S3 Multi-Region Access Point origin](private-content-restricting-access-to-s3-mrap.md)
+
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create a URL signature using Java

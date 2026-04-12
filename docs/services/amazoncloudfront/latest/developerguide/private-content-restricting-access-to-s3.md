@@ -30,6 +30,10 @@ endpoint](../../../s3/latest/userguide/websiteendpoints.md), you must set it up 
 means you can't use OAC (or OAI). OAC doesn't support origin redirect by
 using Lambda@Edge.
 
+- If you use an Amazon S3 Multi-Region Access Point as your CloudFront origin, see
+[Restrict access to an Amazon S3 Multi-Region Access Point origin](private-content-restricting-access-to-s3-mrap.md). S3
+Multi-Region Access Points require a different OAC configuration.
+
 The following topics describe how to use OAC with an Amazon S3 origin.
 
 **Topics**

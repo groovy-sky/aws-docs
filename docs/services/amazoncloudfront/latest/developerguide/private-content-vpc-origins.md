@@ -247,6 +247,6 @@ Region NameRegionUS East (Ohio)`us-east-2`US East (N. Virginia)`us-east-1 (excep
 
 Restrict access to an Amazon S3 origin
 
-Restrict access to Application Load Balancers
+Restrict access to an Amazon S3 Multi-Region Access Point origin
 
 All content copied from https://docs.aws.amazon.com/.
