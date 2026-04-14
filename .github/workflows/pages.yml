@@ -47,10 +47,40 @@ jobs:
           chmod +x scripts/hugo-build-safe.sh
           scripts/hugo-build-safe.sh "$HUGO_BASEURL"
 
+      - name: Prepare Pages artifact
+        run: |
+          set -euo pipefail
+          rm -rf pages_artifact
+          mkdir -p pages_artifact
+
+          # Copy with dereference to avoid symlinks in the deploy artifact.
+          rsync -a --delete --copy-links public/ pages_artifact/
+
+          symlink_path="$(find pages_artifact -type l -print -quit)"
+          if [ -n "$symlink_path" ]; then
+            echo "::error::Deploy artifact contains a symlink: $symlink_path"
+            exit 1
+          fi
+
+          hardlink_path="$(find pages_artifact -type f -links +1 -print -quit)"
+          if [ -n "$hardlink_path" ]; then
+            echo "::error::Deploy artifact contains a hard link: $hardlink_path"
+            exit 1
+          fi
+
+          size_bytes="$(du -sb pages_artifact | awk '{print $1}')"
+          max_bytes=$((10 * 1024 * 1024 * 1024))
+          echo "Prepared Pages artifact size: ${size_bytes} bytes"
+
+          if [ "$size_bytes" -ge "$max_bytes" ]; then
+            echo "::error::Deploy artifact is too large (${size_bytes} bytes). Limit is ${max_bytes} bytes (10GB)."
+            exit 1
+          fi
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: ./pages_artifact
 
   deploy:
     environment:

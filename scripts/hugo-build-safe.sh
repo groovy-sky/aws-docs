@@ -2,19 +2,10 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
-TMP_ROOT="$(mktemp -d)"
-TMP_CONTENT_DIR="$TMP_ROOT/hugo-content"
 BASE_URL="${1:-https://groovy-sky.github.io/aws-docs/}"
 
-cleanup() {
-  rm -rf "$TMP_ROOT"
-}
-trap cleanup EXIT
-
-mkdir -p "$TMP_CONTENT_DIR"
-
-# Copy docs content to a temporary build directory outside the repo tree.
-cp -a "$ROOT_DIR/docs/." "$TMP_CONTENT_DIR/"
+# We'll modify the docs directly in the workspace instead of duplicating them
+CONTENT_DIR="$ROOT_DIR/docs"
 
 fixed=0
 while IFS= read -r -d '' file; do
@@ -29,16 +20,13 @@ while IFS= read -r -d '' file; do
   fi
 
   if [ "${first_line#- }" != "$first_line" ] || [ "$first_line" = "---" ]; then
-    tmp_file="$(mktemp)"
-    {
-      printf '<!-- hugo-normalized-leading-dash -->\n'
-      cat "$file"
-    } > "$tmp_file"
-    mv "$tmp_file" "$file"
+    # In-place editing: Much faster than mktemp + cat + mv
+    sed -i '1s/^/<!-- hugo-normalized-leading-dash -->\n/' "$file"
     fixed=$((fixed + 1))
   fi
-done < <(find "$TMP_CONTENT_DIR" -type f -name '*.md' -print0)
+done < <(find "$CONTENT_DIR" -type f -name '*.md' -print0)
 
-echo "Normalized $fixed markdown files in temporary content directory"
+echo "Normalized $fixed markdown files in $CONTENT_DIR"
 
-exec hugo --minify --baseURL "$BASE_URL" --contentDir "$TMP_CONTENT_DIR"
+# Build bare minimum: Disable unnecessary page kinds (RSS, sitemap, taxonomies, terms)
+exec hugo --minify --baseURL "$BASE_URL" --contentDir "$CONTENT_DIR" --disableKinds "RSS,sitemap,taxonomy,term"
