@@ -50,7 +50,7 @@ Related error messages include the following.
 
 Jobs in terminal states are automatically deleted after 90 days. To avoid losing job information, consider the following.
 
-1. **Download completion reports before expiration** – For instructions on retrieving and storing job results, see .
+1. **Download completion reports before expiration** – For instructions on retrieving and storing job results, see [Completion reports](batch-ops-job-status.md#batch-ops-completion-report).
 
 2. **Archive job metadata in your own systems** – Store critical job information in your databases or monitoring systems.
 

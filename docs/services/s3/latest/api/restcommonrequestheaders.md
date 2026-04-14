@@ -29,7 +29,7 @@ RFC 1864. This header can be used as a message integrity check to verify
 that the data is the same data that was originally sent. Although it is
 optional, we recommend using the Content-MD5 mechanism as an end-to-end
 integrity check. For more information about REST request authentication,
-go to [REST Authentication](../userguide/restauthentication-r-1821.md) in the _Amazon Simple Storage_
+go to [REST Authentication](../userguide/restauthentication.md) in the _Amazon Simple Storage_
 _Service Developer Guide_.
 
 `Date`

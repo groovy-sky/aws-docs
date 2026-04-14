@@ -48,7 +48,7 @@ To configure client-side encryption, see [Protecting data by using client-side e
 
 To see which percentage of your storage bytes are encrypted, you can use Amazon S3 Storage Lens
 metrics. S3 Storage Lens is a cloud-storage analytics feature that you can use to gain organization-wide
-visibility into object-storage usage and activity. For more information, see [Assessing your storage activity and usage with S3 Storage Lens](storage-lens-icmpid-docs-s3-user-guide-usingencryption.md). For a complete list of metrics, see [S3 Storage Lens metrics glossary](storage-lens-metrics-glossary-icmpid-docs-s3-user-guide-usingencryption.md).
+visibility into object-storage usage and activity. For more information, see [Assessing your storage activity and usage with S3 Storage Lens](storage-lens.md). For a complete list of metrics, see [S3 Storage Lens metrics glossary](storage-lens-metrics-glossary.md).
 
 For more information about server-side encryption, client-side encryption, and encryption in
 transit, review the following topics.

@@ -21,7 +21,7 @@ types, including the count of replication rules with a replication destination t
 valid.
 
 For a complete list of S3 Storage Lens metrics, including which replication metrics are in each
-tier, see the [S3 Storage Lens metrics glossary](storage-lens-metrics-glossary-icmpid-docs-s3-user-guide-replication.md).
+tier, see the [S3 Storage Lens metrics glossary](storage-lens-metrics-glossary.md).
 
 ###### Prerequisites
 
@@ -35,7 +35,7 @@ an [S3 Batch Replication job](s3-batch-replication-batch.md).
 2. (Optional) During your dashboard setup, if you want to see all S3 Storage Lens replication
     metrics, select **Advanced metrics and recommendations** and then select
     **Advanced data protection metrics**. For a complete list of metrics,
-    see the [S3 Storage Lens metrics glossary](storage-lens-metrics-glossary-icmpid-docs-s3-user-guide-replication.md).
+    see the [S3 Storage Lens metrics glossary](storage-lens-metrics-glossary.md).
 
 If you enable advanced metrics and recommendations, you can gain further insights into
     your replication configurations. For example, you can use S3 Storage Lens replication rule count
