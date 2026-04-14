@@ -44,6 +44,6 @@ reference](../../../cloudformation/latest/userguide/aws-rds.md).
 
 Troubleshooting RDS Proxy
 
-Zero-ETL integrations
+Using RDS Proxy with Blue/Green Deployments
 
 All content copied from https://docs.aws.amazon.com/.

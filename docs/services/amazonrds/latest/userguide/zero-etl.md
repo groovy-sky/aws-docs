@@ -285,7 +285,7 @@ Regions, see [Supported Regions and DB engines for Amazon RDS zero-ETL integrati
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Using RDS Proxy with AWS CloudFormation
+Using RDS Proxy with Blue/Green Deployments
 
 Getting started with
 zero-ETL integrations

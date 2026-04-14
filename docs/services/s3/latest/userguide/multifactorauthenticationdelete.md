@@ -27,7 +27,7 @@ code and adding an extra layer of friction and security to the delete action.
 
 To identify buckets that have MFA delete enabled, you can use Amazon S3 Storage Lens metrics.
 S3 Storage Lens is a cloud-storage analytics feature that you can use to gain organization-wide
-visibility into object-storage usage and activity. For more information, see [Assessing your storage activity and usage with S3 Storage Lens](storage-lens-icmpid-docs-s3-user-guide-multifactorauthenticationdelete.md). For a complete list of metrics, see [S3 Storage Lens metrics glossary](storage-lens-metrics-glossary-icmpid-docs-s3-user-guide-multifactorauthenticationdelete.md).
+visibility into object-storage usage and activity. For more information, see [Assessing your storage activity and usage with S3 Storage Lens](storage-lens.md). For a complete list of metrics, see [S3 Storage Lens metrics glossary](storage-lens-metrics-glossary.md).
 
 The bucket owner, the AWS account that created the bucket (root account), and all
 authorized users can enable versioning. However, only the bucket owner (root account)

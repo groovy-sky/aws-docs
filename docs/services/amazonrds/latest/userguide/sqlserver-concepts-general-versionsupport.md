@@ -19,6 +19,8 @@ versions of your SQL Server databases by running the [describe-db-major-engine-v
 Major versionMinor versionRDS API `EngineVersion` and CLI
 `engine-version`SQL Server 2022
 
+16.00.4245.2 (CU24)
+
 16.00.4236.2 (CU23)
 
 16.00.4230.2 (CU22 GDR)
@@ -58,6 +60,8 @@ Major versionMinor versionRDS API `EngineVersion` and CLI
 16.00.4095.4 (CU10)
 
 16.00.4085.2 (CU9)
+
+`16.00.4245.2.v1`
 
 `16.00.4236.2.v1`
 
@@ -100,6 +104,8 @@ Major versionMinor versionRDS API `EngineVersion` and CLI
 `16.00.4085.2.v1`
 
 SQL Server 2019
+
+15.00.4460.4 (CU32 GDR)
 
 15.00.4455.2 (CU32 GDR)
 
@@ -150,6 +156,8 @@ SQL Server 2019
 15.00.4073.23 (CU8)
 
 15.00.4043.16 (CU5)
+
+`15.00.4460.4.v1`
 
 `15.00.4455.2.v1`
 
@@ -203,6 +211,8 @@ SQL Server 2019
 
 SQL Server 2017
 
+14.00.3520.4 (CU31 GDR)
+
 14.00.3515.1 (CU31 GDR)
 
 14.00.3505.1 (CU31 GDR)
@@ -236,6 +246,8 @@ SQL Server 2017
 14.00.3294.2 (CU20)
 
 14.00.3281.6 (CU19)
+
+`14.00.3520.4.v1`
 
 `14.00.3515.1.v1`
 
@@ -273,6 +285,8 @@ SQL Server 2017
 
 SQL Server 2016
 
+13.00.6480.4 (GDR)
+
 13.00.6475.1 (GDR)
 
 13.00.6470.1 (GDR)
@@ -296,6 +310,8 @@ SQL Server 2016
 13.00.6419.1 (SP3 + Hotfix)
 
 13.00.6300.2 (SP3)
+
+`14.00.6480.4.v1`
 
 `14.00.6475.1.v1`
 
@@ -412,6 +428,6 @@ Server 2008R2.
 
 Updating applications for new SSL/TLS certificates
 
-Feature support
+Version policy
 
 All content copied from https://docs.aws.amazon.com/.

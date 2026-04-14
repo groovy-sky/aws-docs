@@ -289,7 +289,7 @@ Billed
 The database engine or operating system version is being
 upgraded.
 
-**upgrade\_failed**
+**upgrade-failed**
 
 Not billed
 

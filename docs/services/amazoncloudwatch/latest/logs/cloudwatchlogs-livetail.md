@@ -22,7 +22,7 @@ For SDK examples, see
 You can also use Live Tail in the AWS Toolkit for Visual Studio Code. To start a Live Tail session from the VS Code Command Palette, see the [Amazon CloudWatch Logs \
 Live Tail section](../../../toolkit-for-vscode/latest/userguide/cloudwatch-livetail.md) of the AWS Toolkit for Visual Studio Code User Guide.
 
-The Live Tail feature is available in all commercial AWS [Regions](../../../glossary/latest/reference/glos-chap-icmpid-docs-homepage-addtlrcs.md#region).
+The Live Tail feature is available in all commercial AWS [Regions](../../../glossary/latest/reference/glos-chap.md#region).
 It is not available in the China Regions or the
 AWS GovCloud (US) Regions.
 

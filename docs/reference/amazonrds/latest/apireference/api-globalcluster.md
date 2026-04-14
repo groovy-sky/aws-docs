@@ -100,7 +100,7 @@ Required: No
 **GlobalClusterResourceId**
 
 The AWS
-[partition](../../../../services/glossary/latest/reference/glos-chap-id-docs-gateway.md#partition)-unique, immutable identifier for the global database cluster. This identifier is found in
+[partition](../../../../services/glossary/latest/reference/glos-chap.md#partition)-unique, immutable identifier for the global database cluster. This identifier is found in
 AWS CloudTrail log entries whenever the AWS KMS key for the DB cluster is accessed.
 
 Type: String

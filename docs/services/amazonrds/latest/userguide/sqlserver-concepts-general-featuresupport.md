@@ -154,7 +154,7 @@ latest minor version of SQL Server 2012. For more information, see [Version mana
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Version support
+Version policy
 
 CDC support
 

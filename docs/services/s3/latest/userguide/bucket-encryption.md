@@ -28,7 +28,7 @@ more information, see [Reducing the cost of SSE-KMS with Amazon S3 Bucket Keys](
 
 To identify buckets that have SSE-KMS enabled for default encryption, you can use
 Amazon S3 Storage Lens metrics. S3 Storage Lens is a cloud-storage analytics feature that you can use to gain organization-wide
-visibility into object-storage usage and activity. For more information, see [Using S3 Storage Lens to protect your data](storage-lens-data-protection-icmpid-docs-s3-user-guide-bucket-encryption.md).
+visibility into object-storage usage and activity. For more information, see [Using S3 Storage Lens to protect your data](storage-lens-data-protection.md).
 
 When you use server-side encryption, Amazon S3 encrypts an object before saving it to disk and
 decrypts it when you download the object. For more information about protecting data using

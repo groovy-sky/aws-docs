@@ -3,23 +3,23 @@
 Amazon RDS supports several versions and editions of Microsoft SQL Server. The following table shows the most recent supported minor version of each major version.
 For the full list of supported versions, editions, and RDS engine versions, see [Microsoft SQL Server versions on Amazon RDS](sqlserver-concepts-general-versionsupport.md).
 
-Major versionService Pack / GDRCumulative UpdateMinor versionKnowledge Base ArticleRelease DateSQL Server 2022Not applicableCU23
+Major versionService Pack / GDRCumulative UpdateMinor versionKnowledge Base ArticleRelease DateSQL Server 2022Not applicableCU24
 
-16.0.4236.2
+16.0.4245.2
 
-[KB5078297](https://learn.microsoft.com/en-us/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate23)January 29, 2026SQL Server 2019GDRCU32 GDR
+[KB5080999](https://learn.microsoft.com/en-us/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate24)March 12, 2026SQL Server 2019GDRCU32 GDR
 
-15.0.4455.2
+15.0.4460.4
 
-[KB5068404](https://support.microsoft.com/en-us/topic/kb5068404-description-of-the-security-update-for-sql-server-2019-cu32-november-11-2025-c203bfbf-036e-46d2-bc10-6c01200dc48a)November 11, 2025SQL Server 2017GDRCU31 GDR
+[KB5077469](https://support.microsoft.com/en-us/topic/kb5077469-description-of-the-security-update-for-sql-server-2019-cu32-march-10-2026-5ec2c609-35cb-483d-aa80-5e66821e5c97)March 10, 2026SQL Server 2017GDRCU31 GDR
 
-14.0.3515.1
+14.0.3520.4
 
-[KB5068402](https://support.microsoft.com/en-us/topic/kb5068402-description-of-the-security-update-for-sql-server-2017-cu31-november-11-2025-1be08efe-ad14-4b95-a0de-ecbbf2703114)November 11, 2025SQL Server 2016SP3 GDRNot applicable
+[KB5077471](https://support.microsoft.com/en-us/topic/kb5077471-description-of-the-security-update-for-sql-server-2017-cu31-march-10-2026-f020d5eb-e356-42e8-a9ba-0ef061430b15)March 10, 2026SQL Server 2016SP3 GDRNot applicable
 
-13.0.6475.1
+13.0.6480.4
 
-[KB5068401](https://support.microsoft.com/en-us/topic/kb5068401-description-of-the-security-update-for-sql-server-2016-sp3-gdr-november-11-2025-59a59fc0-f673-45c2-b8de-492b95c0e423)November 11, 2025
+[KB5077474](https://support.microsoft.com/en-us/topic/kb5077474-description-of-the-security-update-for-sql-server-2016-sp3-gdr-march-10-2026-3f455bec-1221-4962-b068-0b11bf96b66a)March 10, 2026
 
 For information about licensing for SQL Server, see [Licensing Microsoft SQL Server on Amazon RDS](sqlserver-concepts-general-licensing.md). For information about SQL Server
 builds, see this Microsoft support article about
@@ -60,6 +60,8 @@ guide. For more information, see [Setting up your Amazon RDS environment](chap-s
 - [Compliance program support for Microsoft SQL Server DB instances](#SQLServer.Concepts.General.Compliance)
 
 - [Microsoft SQL Server versions on Amazon RDS](sqlserver-concepts-general-versionsupport.md)
+
+- [Amazon RDS for SQL Server version policy](sqlserver-concepts-general-versionpolicy.md)
 
 - [Microsoft SQL Server features on Amazon RDS](sqlserver-concepts-general-featuresupport.md)
 

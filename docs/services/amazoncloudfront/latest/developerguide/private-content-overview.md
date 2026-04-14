@@ -57,7 +57,7 @@ permission to read the files in the S3 bucket.
 
 - Remove permission for anyone else to use Amazon S3 URLs to read the files.
 
-For more information, see [Restrict access to an Amazon S3 origin](private-content-restricting-access-to-s3.md).
+For more information, see [Restrict access to an Amazon S3 origin](private-content-restricting-access-to-s3.md) or [Restrict access to an Amazon S3 Multi-Region Access Point origin](private-content-restricting-access-to-s3-mrap.md).
 
 ## Restrict access to files on custom origins
 

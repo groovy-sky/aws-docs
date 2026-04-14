@@ -45,6 +45,6 @@ reference](../../../cloudformation/latest/userguide/aws-rds.md).
 
 Troubleshooting RDS Proxy
 
-Using RDS Proxy with Aurora global databases
+Using RDS Proxy with Blue/Green Deployments
 
 All content copied from https://docs.aws.amazon.com/.

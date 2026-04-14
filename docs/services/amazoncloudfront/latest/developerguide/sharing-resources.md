@@ -133,7 +133,7 @@ By default, CloudFront applies the [AWSRAMDefaultPermissionCloudFront](#aws-ram-
 ###### Tip
 
 After you create the resource share, you can add additional AWS accounts
-from the AWS RAM console. For more information, see [Update a resource share in AWS RAM](../../../ram/latest/userguide/working-with-sharing-update-icmpid-docs-cf-help-panel.md) in the _AWS RAM_
+from the AWS RAM console. For more information, see [Update a resource share in AWS RAM](../../../ram/latest/userguide/working-with-sharing-update.md) in the _AWS RAM_
 _User Guide_.
 
 ###### To share a VPC origin that you own using the CloudFront console

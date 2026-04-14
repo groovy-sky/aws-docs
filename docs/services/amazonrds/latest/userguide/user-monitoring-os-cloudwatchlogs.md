@@ -8,7 +8,7 @@ resource identifier ( `DbiResourceId`) for the DB instance or DB cluster.
 
 1. Open the CloudWatch console at [https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch).
 
-2. If necessary, choose the AWS Region that your DB instance or Multi-AZ DB cluster is in. For more information, see [Regions and endpoints](../../../../general/latest/gr/index-rande.md) in the
+2. If necessary, choose the AWS Region that your DB instance or Multi-AZ DB cluster is in. For more information, see [Regions and endpoints](../../../../general/latest/gr/index.md) in the
     _Amazon Web Services General Reference_.
 
 3. Choose **Logs** in the navigation pane.

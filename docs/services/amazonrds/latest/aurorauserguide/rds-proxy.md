@@ -55,6 +55,8 @@ code changes. For a list of supported engine versions, see [Supported Regions an
 
 - [Using RDS Proxy with AWS CloudFormation](rds-proxy-cfn.md)
 
+- [Using RDS Proxy with Blue/Green Deployments](rds-proxy-blue-green.md)
+
 - [Using RDS Proxy with Aurora global databases](rds-proxy-gdb.md)
 
 ## Region and version availability

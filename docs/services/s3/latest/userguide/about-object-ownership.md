@@ -61,7 +61,7 @@ policy](ensure-object-ownership.md#ensure-object-ownership-bucket-policy) that a
 
 To see which Object Ownership settings are applied to your buckets, you can use
 Amazon S3 Storage Lens metrics. S3 Storage Lens is a cloud-storage analytics feature that you can use to gain organization-wide
-visibility into object-storage usage and activity. For more information, see [Using S3 Storage Lens to find Object Ownership settings](storage-lens-access-management-icmpid-docs-s3-user-guide-about-object-ownership.md).
+visibility into object-storage usage and activity. For more information, see [Using S3 Storage Lens to find Object Ownership settings](storage-lens-access-management.md).
 
 ###### Note
 

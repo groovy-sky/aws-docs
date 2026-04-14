@@ -18,6 +18,10 @@ Because the green environment is a copy of the topology of the production enviro
 and all of its DB instances are copied in the deployment. The green environment also includes the features used by the DB cluster,
 such as DB cluster snapshots, Performance Insights, Enhanced Monitoring, and Aurora Serverless v2.
 
+Amazon Aurora Blue/Green Deployments support Amazon RDS Proxy and smart drivers. These solutions reduce writer node upgrade downtime during
+switchover by detecting the topology change and redirecting connections to the new production
+environment without waiting for DNS propagation.
+
 ###### Note
 
 Blue/Green Deployments are supported for Aurora MySQL, Aurora PostgreSQL, and Aurora Global Database. For Amazon RDS availability,
@@ -124,7 +128,10 @@ During testing, we recommend that you keep your databases in the green environme
     databases after switchover. To enable write operations for Aurora MySQL, set the
     `read_only` parameter to `0`, then reboot the DB instance. For
     Aurora PostgreSQL, set the `default_transaction_read_only` parameter to
-    `off` at the session level.
+    `off` at the session level. If you need to test your Green environment with
+    Amazon RDS Proxy, you must create a new Amazon RDS Proxy and register the Green cluster with it. This
+    allows you to test the Green environment independently without affecting your production
+    Blue environment traffic. Delete the test proxy once testing is completed.
 
 5. When ready, switch over to transition the staging environment to be the new production
     environment. For instructions, see [Switching a blue/green deployment in Amazon Aurora](blue-green-deployments-switching.md).

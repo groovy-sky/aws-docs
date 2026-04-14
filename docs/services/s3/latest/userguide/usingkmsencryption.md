@@ -174,8 +174,8 @@ To identify requests that specify SSE-KMS, you can use the **All SSE-KMS request
 visibility into object-storage usage and activity. You can also
 use the SSE-KMS enabled bucket count and % SSE-KMS enabled buckets to understand the
 count of buckets that (SSE-KMS) for [default bucket\
-encryption](bucket-encryption.md). For more information, see [Assessing your storage activity and usage with S3 Storage Lens](storage-lens-icmpid-docs-s3-user-guide-usingkmsencryption.md). For a
-complete list of metrics, see [S3 Storage Lens metrics glossary](storage-lens-metrics-glossary-icmpid-docs-s3-user-guide-usingkmsencryption.md).
+encryption](bucket-encryption.md). For more information, see [Assessing your storage activity and usage with S3 Storage Lens](storage-lens.md). For a
+complete list of metrics, see [S3 Storage Lens metrics glossary](storage-lens-metrics-glossary.md).
 
 To audit the usage of your AWS KMS keys for your SSE-KMS encrypted data, you can use
 AWS CloudTrail logs. You can get insight into your [cryptographic operations](../../../kms/latest/developerguide/concepts.md#cryptographic-operations), such as [GenerateDataKey](../../../kms/latest/developerguide/ct-generatedatakey.md) and [Decrypt](../../../kms/latest/developerguide/ct-decrypt.md).

@@ -250,7 +250,7 @@ for Amazon CloudFront](https://aws.amazon.com/blogs/networking-and-content-deliv
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Restrict access with VPC origins
+Restrict access to an Amazon S3 Multi-Region Access Point origin
 
 Geographic restriction
 

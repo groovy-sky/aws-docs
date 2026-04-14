@@ -19,8 +19,8 @@ For more information about S3 Lifecycle, see [Managing the lifecycle of objects]
 
 To see how many current and noncurrent object versions that your buckets have, you can use
 Amazon S3 Storage Lens metrics. S3 Storage Lens is a cloud-storage analytics feature that you can use to gain organization-wide
-visibility into object-storage usage and activity. For more information, see [Using S3 Storage Lens to optimize your storage costs](storage-lens-optimize-storage-icmpid-docs-s3-user-guide-deletingobjectversions.md). For a complete list of
-metrics, see [S3 Storage Lens metrics glossary](storage-lens-metrics-glossary-icmpid-docs-s3-user-guide-replication.md).
+visibility into object-storage usage and activity. For more information, see [Using S3 Storage Lens to optimize your storage costs](storage-lens-optimize-storage.md). For a complete list of
+metrics, see [S3 Storage Lens metrics glossary](storage-lens-metrics-glossary.md).
 
 ###### Note
 
