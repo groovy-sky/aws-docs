@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for creating a new AWS account"
+---
+
 # Prerequisites for creating a new AWS account
 
 To sign up for an AWS account, you'll need to provide the following information:

@@ -1,3 +1,7 @@
+---
+title: "GetAlternateContact"
+---
+
 # GetAlternateContact
 
 Retrieves the specified alternate contact attached to an AWS account.

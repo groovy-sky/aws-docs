@@ -1,3 +1,7 @@
+---
+title: "Activate MFA for your root user"
+---
+
 # Activate MFA for your root user
 
 We strongly recommend that you activate MFA for your root user. MFA dramatically lowers the

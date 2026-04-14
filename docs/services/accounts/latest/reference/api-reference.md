@@ -1,3 +1,7 @@
+---
+title: "API Reference"
+---
+
 # API Reference
 
 The API operations in the Account Management ( `account`) namespace enable you to modify

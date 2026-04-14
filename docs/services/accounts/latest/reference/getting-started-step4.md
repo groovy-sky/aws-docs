@@ -1,3 +1,7 @@
+---
+title: "Create an administrator user"
+---
+
 # Create an administrator user
 
 Because you can't restrict what a root user can do, we strongly recommend that you don't use

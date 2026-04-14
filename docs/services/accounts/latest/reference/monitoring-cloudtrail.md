@@ -1,3 +1,7 @@
+---
+title: "Logging AWS Account Management API calls using AWS CloudTrail"
+---
+
 # Logging AWS Account Management API calls using AWS CloudTrail
 
 The AWS Account Management APIs are integrated with AWS CloudTrail, a service that provides a record of

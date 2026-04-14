@@ -1,3 +1,7 @@
+---
+title: "Update the alternate contacts for your AWS account"
+---
+
 # Update the alternate contacts for your AWS account
 
 Alternate contacts allows AWS to contact up to three alternate contacts associated with

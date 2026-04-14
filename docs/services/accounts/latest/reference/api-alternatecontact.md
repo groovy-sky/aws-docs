@@ -1,3 +1,7 @@
+---
+title: "AlternateContact"
+---
+
 # AlternateContact
 
 A structure that contains the details of an alternate contact associated with an AWS

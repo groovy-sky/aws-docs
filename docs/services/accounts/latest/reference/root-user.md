@@ -1,3 +1,7 @@
+---
+title: "Using the AWS account root user"
+---
+
 # Using the AWS account root user
 
 When you create an AWS account, you begin with one sign-in identity called the AWS account _root user_ that has complete access to all AWS services and resources. We strongly recommend that you don't use the root user for everyday tasks. For tasks that require root user credentials, see [Tasks that require root user credentials](../../../iam/latest/userguide/id-root-user.md#root-user-tasks) in the _IAM User Guide_.

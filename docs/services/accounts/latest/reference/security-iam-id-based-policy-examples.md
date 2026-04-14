@@ -1,3 +1,7 @@
+---
+title: "Identity-based policy examples for AWS Account Management"
+---
+
 # Identity-based policy examples for AWS Account Management
 
 By default, users and roles don't have permission to create or modify Account Management

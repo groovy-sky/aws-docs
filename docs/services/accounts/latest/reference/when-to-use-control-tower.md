@@ -1,3 +1,7 @@
+---
+title: "When to use AWS Control Tower"
+---
+
 # When to use AWS Control Tower
 
 AWS Organizations is the foundational service that enables you to centrally manage and secure your

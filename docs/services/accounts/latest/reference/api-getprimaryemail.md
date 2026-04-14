@@ -1,3 +1,7 @@
+---
+title: "GetPrimaryEmail"
+---
+
 # GetPrimaryEmail
 
 Retrieves the primary email address for the specified

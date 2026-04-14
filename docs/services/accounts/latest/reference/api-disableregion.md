@@ -1,3 +1,7 @@
+---
+title: "DisableRegion"
+---
+
 # DisableRegion
 
 Disables (opts-out) a particular Region for an account.

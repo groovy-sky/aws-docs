@@ -1,3 +1,7 @@
+---
+title: "Accessing your AWS account"
+---
+
 # Accessing your AWS account
 
 You can access your AWS account in any of the following ways:

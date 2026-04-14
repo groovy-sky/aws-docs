@@ -1,3 +1,7 @@
+---
+title: "StartPrimaryEmailUpdate"
+---
+
 # StartPrimaryEmailUpdate
 
 Starts the process to update the primary email address for the

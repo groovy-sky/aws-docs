@@ -1,3 +1,7 @@
+---
+title: "Update the primary contact for your AWS account"
+---
+
 # Update the primary contact for your AWS account
 
 You can update the primary contact information associated with your account, including

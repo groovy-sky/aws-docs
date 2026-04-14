@@ -1,3 +1,7 @@
+---
+title: "ContactInformation"
+---
+
 # ContactInformation
 
 Contains the details of the primary contact information associated with an

@@ -1,3 +1,7 @@
+---
+title: "ListRegions"
+---
+
 # ListRegions
 
 Lists all the Regions for a given account and their respective opt-in statuses.

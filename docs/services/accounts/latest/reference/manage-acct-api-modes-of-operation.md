@@ -1,3 +1,7 @@
+---
+title: "Understanding API modes of operation"
+---
+
 # Understanding API modes of operation
 
 The API operations that work with an AWS account's attributes always work in one of two

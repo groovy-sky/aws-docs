@@ -1,3 +1,7 @@
+---
+title: "Getting started with an AWS account"
+---
+
 # Getting started with an AWS account
 
 If you're new to AWS, the first step is to sign up for an AWS account. When you do so, AWS

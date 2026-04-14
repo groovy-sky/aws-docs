@@ -1,3 +1,7 @@
+---
+title: "When to use AWS Organizations"
+---
+
 # When to use AWS Organizations
 
 AWS Organizations is an AWS service that you can use to manage your AWS accounts as a group.

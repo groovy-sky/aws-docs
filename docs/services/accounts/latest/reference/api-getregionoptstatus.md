@@ -1,3 +1,7 @@
+---
+title: "GetRegionOptStatus"
+---
+
 # GetRegionOptStatus
 
 Retrieves the opt-in status of a particular Region.

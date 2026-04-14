@@ -1,3 +1,7 @@
+---
+title: "DeleteAlternateContact"
+---
+
 # DeleteAlternateContact
 
 Deletes the specified alternate contact from an AWS account.

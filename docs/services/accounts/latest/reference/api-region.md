@@ -1,3 +1,7 @@
+---
+title: "Region"
+---
+
 # Region
 
 This is a structure that expresses the Region for a given account, consisting of a

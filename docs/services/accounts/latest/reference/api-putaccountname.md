@@ -1,3 +1,7 @@
+---
+title: "PutAccountName"
+---
+
 # PutAccountName
 
 Updates the account name of the specified account. To use this API, IAM principals

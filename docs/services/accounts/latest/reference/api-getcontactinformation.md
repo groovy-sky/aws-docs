@@ -1,3 +1,7 @@
+---
+title: "GetContactInformation"
+---
+
 # GetContactInformation
 
 Retrieves the primary contact information of an AWS account.

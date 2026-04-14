@@ -1,3 +1,7 @@
+---
+title: "Enable trusted access for AWS Account Management"
+---
+
 # Enable trusted access for AWS Account Management
 
 Enabling trusted access for AWS Account Management allows the administrator of the management account

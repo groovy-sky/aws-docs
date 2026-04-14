@@ -1,3 +1,7 @@
+---
+title: "What is an AWS account?"
+---
+
 # What is an AWS account?
 
 An AWS account represents a formal business relationship you establish with AWS. You

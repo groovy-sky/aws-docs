@@ -1,3 +1,7 @@
+---
+title: "AcceptPrimaryEmailUpdate"
+---
+
 # AcceptPrimaryEmailUpdate
 
 Accepts the request that originated from [StartPrimaryEmailUpdate](api-startprimaryemailupdate.md) to update the primary email address (also known

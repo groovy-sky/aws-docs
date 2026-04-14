@@ -1,3 +1,7 @@
+---
+title: "EnableRegion"
+---
+
 # EnableRegion
 
 Enables (opts-in) a particular Region for an account.

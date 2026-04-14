@@ -1,3 +1,7 @@
+---
+title: "Restrict access using AWS Organizations service control policies"
+---
+
 # Restrict access using AWS Organizations service control policies
 
 This topic presents examples that show how you can use service control policies (SCPs) in

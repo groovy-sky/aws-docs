@@ -1,3 +1,7 @@
+---
+title: "GetAccountInformation"
+---
+
 # GetAccountInformation
 
 Retrieves information about the specified account including its account name, account

@@ -1,3 +1,7 @@
+---
+title: "PutAlternateContact"
+---
+
 # PutAlternateContact
 
 Modifies the specified alternate contact attached to an AWS account.
