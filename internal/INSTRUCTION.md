@@ -54,8 +54,9 @@ URL processing (`processURL`) sequence:
 7. Normalize canonical URL.
 8. Convert cleaned HTML to markdown using `Converter.Convert`.
 9. Map canonical URL to repository path via `Mapper.RepoPath`.
-10. Write markdown file.
-11. Resolve extracted links and return discovered allowed URLs.
+10. Write markdown file with YAML front matter title (`title: "..."`) followed by converted markdown body.
+11. Upsert a search index entry for the written page (title, permalink, content snippet, section label).
+12. Resolve extracted links and return discovered allowed URLs.
 
 Fetcher behavior:
 
@@ -125,6 +126,14 @@ Current redirect handling:
 ## Seed Persistence After Crawl Run
 
 At the end of every non-`refresh-url` run, `persistDiscoveredSeeds` is called with the full `seen` URL set.  It canonicalizes each URL to its section root via `canonicalizeSeedURL`, then stores any roots not already in the seed DB.  This ensures that sections discovered through link traversal (for example, `/vpc/latest/reachability/` found in a VPC landing page) survive into subsequent incremental runs even if the current run never processes those sections.
+
+## Search Index Behavior
+
+- Crawler maintains a JSON search index at `static/search-index.json`.
+- At run start, crawler loads existing entries when the file exists.
+- Each processed page write updates or inserts an entry keyed by permalink so incremental runs refresh only touched pages.
+- At run end, crawler writes the sorted merged index back to `static/search-index.json`.
+- Hugo no longer generates home JSON output for search; frontend search fetches this crawler-managed static index.
 
 ## Practical Maintenance Notes
 

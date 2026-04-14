@@ -14,7 +14,7 @@ publishDir = 'public'
 
 # Output formats for search
 [outputs]
-  home = ['HTML', 'JSON']
+  home = ['HTML']
   section = ['HTML']
   page = ['HTML']
 

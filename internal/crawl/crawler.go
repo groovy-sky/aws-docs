@@ -2,17 +2,29 @@ package crawl
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
 	"io"
 	"log"
 	"net/http"
 	"net/url"
+	"path/filepath"
+	"sort"
 	"strings"
 
 	"github.com/groovy-sky/aws-docs/internal/config"
 	"github.com/groovy-sky/aws-docs/internal/store"
 	"github.com/groovy-sky/aws-docs/internal/write"
 )
+
+const searchIndexPath = "static/search-index.json"
+
+type searchIndexEntry struct {
+	Title   string `json:"title"`
+	URL     string `json:"url"`
+	Content string `json:"content"`
+	Section string `json:"section"`
+}
 
 type Crawler struct {
 	config    config.Config
@@ -23,6 +35,7 @@ type Crawler struct {
 	mapper    *Mapper
 	writer    *write.FileWriter
 	robots    *Robots
+	search    map[string]searchIndexEntry
 }
 
 func NewCrawler(cfg config.Config, db *store.Store, fetcher *Fetcher, extractor *Extractor, converter *Converter, mapper *Mapper, writer *write.FileWriter, robots *Robots) *Crawler {
@@ -35,10 +48,15 @@ func NewCrawler(cfg config.Config, db *store.Store, fetcher *Fetcher, extractor 
 		mapper:    mapper,
 		writer:    writer,
 		robots:    robots,
+		search:    make(map[string]searchIndexEntry),
 	}
 }
 
 func (c *Crawler) Run(ctx context.Context, options RunOptions) error {
+	if err := c.loadSearchIndex(); err != nil {
+		log.Printf("search index load: %v", err)
+	}
+
 	queue, err := c.seedQueue(ctx, options)
 	if err != nil {
 		return err
@@ -119,6 +137,10 @@ func (c *Crawler) Run(ctx context.Context, options RunOptions) error {
 
 	if options.Mode != "refresh-url" {
 		c.persistDiscoveredSeeds(seen)
+	}
+
+	if err := c.saveSearchIndex(); err != nil {
+		return fmt.Errorf("write search index: %w", err)
 	}
 
 	return nil
@@ -445,9 +467,11 @@ func (c *Crawler) processURL(ctx context.Context, pageURL string) ([]string, err
 	}
 
 	repoPath := c.mapper.RepoPath(canonicalURL)
-	if err := c.writer.Write(repoPath, markdownDocument.Markdown); err != nil {
+	contentWithFrontMatter := addTitleFrontMatter(extracted.Title, markdownDocument.Markdown)
+	if err := c.writer.Write(repoPath, contentWithFrontMatter); err != nil {
 		return nil, fmt.Errorf("write %s: %w", repoPath, err)
 	}
+	c.recordSearchEntry(repoPath, extracted.Title, markdownDocument.Markdown)
 	c.logf("crawl wrote: canonical-url=%s path=%s markdown-bytes=%d", canonicalURL, repoPath, len(markdownDocument.Markdown))
 
 	discovered := make([]string, 0, len(extracted.Links))
@@ -469,6 +493,161 @@ func (c *Crawler) logf(format string, args ...any) {
 		return
 	}
 	log.Printf(format, args...)
+}
+
+func (c *Crawler) loadSearchIndex() error {
+	content, err := c.writer.Read(searchIndexPath)
+	if err != nil {
+		if strings.Contains(strings.ToLower(err.Error()), "no such file") {
+			return nil
+		}
+		return err
+	}
+
+	var entries []searchIndexEntry
+	if err := json.Unmarshal(content, &entries); err != nil {
+		return fmt.Errorf("unmarshal %s: %w", searchIndexPath, err)
+	}
+
+	for _, entry := range entries {
+		if strings.TrimSpace(entry.URL) == "" {
+			continue
+		}
+		c.search[entry.URL] = entry
+	}
+
+	return nil
+}
+
+func (c *Crawler) saveSearchIndex() error {
+	entries := make([]searchIndexEntry, 0, len(c.search))
+	for _, entry := range c.search {
+		entries = append(entries, entry)
+	}
+
+	sort.Slice(entries, func(i, j int) bool {
+		return entries[i].URL < entries[j].URL
+	})
+
+	content, err := json.Marshal(entries)
+	if err != nil {
+		return fmt.Errorf("marshal search index: %w", err)
+	}
+
+	if err := c.writer.Write(searchIndexPath, string(content)); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *Crawler) recordSearchEntry(repoPath string, title string, markdown string) {
+	permalink := repoPathToPermalink(repoPath)
+	if permalink == "" {
+		return
+	}
+
+	cleanTitle := strings.TrimSpace(title)
+	if cleanTitle == "" {
+		cleanTitle = humanizeSlug(filepath.Base(strings.TrimSuffix(repoPath, filepath.Ext(repoPath))))
+	}
+
+	c.search[permalink] = searchIndexEntry{
+		Title:   cleanTitle,
+		URL:     permalink,
+		Content: searchSnippet(markdown),
+		Section: sectionLabelFromRepoPath(repoPath),
+	}
+}
+
+func addTitleFrontMatter(title string, markdown string) string {
+	cleanTitle := strings.TrimSpace(strings.ReplaceAll(strings.ReplaceAll(title, "\r", " "), "\n", " "))
+	if cleanTitle == "" {
+		return markdown
+	}
+
+	var builder strings.Builder
+	builder.WriteString("---\n")
+	builder.WriteString("title: \"")
+	builder.WriteString(escapeYAMLDoubleQuoted(cleanTitle))
+	builder.WriteString("\"\n")
+	builder.WriteString("---\n\n")
+	builder.WriteString(strings.TrimLeft(markdown, "\n"))
+
+	return builder.String()
+}
+
+func escapeYAMLDoubleQuoted(value string) string {
+	value = strings.ReplaceAll(value, "\\", "\\\\")
+	value = strings.ReplaceAll(value, "\"", "\\\"")
+	return value
+}
+
+func repoPathToPermalink(repoPath string) string {
+	pathValue := strings.TrimSpace(filepath.ToSlash(filepath.Clean(repoPath)))
+	if pathValue == "" || !strings.HasSuffix(pathValue, ".md") {
+		return ""
+	}
+
+	pathValue = strings.TrimPrefix(pathValue, "docs/")
+	pathValue = strings.TrimSuffix(pathValue, ".md")
+	if strings.HasSuffix(pathValue, "/index") {
+		pathValue = strings.TrimSuffix(pathValue, "/index")
+	}
+
+	pathValue = strings.Trim(pathValue, "/")
+	if pathValue == "" {
+		return "/"
+	}
+
+	return "/" + pathValue + "/"
+}
+
+func sectionLabelFromRepoPath(repoPath string) string {
+	pathValue := strings.TrimSpace(filepath.ToSlash(filepath.Clean(repoPath)))
+	pathValue = strings.TrimPrefix(pathValue, "docs/")
+	pathValue = strings.TrimSuffix(pathValue, ".md")
+	parts := strings.Split(strings.Trim(pathValue, "/"), "/")
+	if len(parts) == 0 || parts[0] == "" {
+		return "General"
+	}
+
+	if len(parts) == 1 {
+		return humanizeSlug(parts[0])
+	}
+
+	if parts[1] == "index" {
+		return humanizeSlug(parts[0])
+	}
+
+	return humanizeSlug(parts[1])
+}
+
+func humanizeSlug(value string) string {
+	value = strings.TrimSpace(value)
+	if value == "" {
+		return ""
+	}
+
+	value = strings.ReplaceAll(value, "-", " ")
+	words := strings.Fields(value)
+	for i, word := range words {
+		if word == "" {
+			continue
+		}
+		words[i] = strings.ToUpper(word[:1]) + word[1:]
+	}
+
+	return strings.Join(words, " ")
+}
+
+func searchSnippet(markdown string) string {
+	normalized := strings.Join(strings.Fields(markdown), " ")
+	const maxLen = 500
+	if len(normalized) <= maxLen {
+		return normalized
+	}
+	return normalized[:maxLen]
 }
 
 func (c *Crawler) allowedByRobots(rawURL string) bool {

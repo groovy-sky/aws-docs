@@ -10,7 +10,7 @@
   let searchIndex = [];
   
   // Load search index
-  fetch('/aws-docs/index.json')
+  fetch('/aws-docs/search-index.json')
     .then(function(response) { return response.json(); })
     .then(function(data) {
       searchIndex = data;

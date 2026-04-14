@@ -37,3 +37,16 @@ func (w *FileWriter) Write(relativePath string, content string) error {
 	}
 	return nil
 }
+
+func (w *FileWriter) Read(relativePath string) ([]byte, error) {
+	cleanRelative := filepath.Clean(relativePath)
+	fullPath := filepath.Join(w.root, cleanRelative)
+	if !strings.HasPrefix(fullPath, w.root) {
+		return nil, fmt.Errorf("refusing to read outside root: %s", relativePath)
+	}
+	content, err := os.ReadFile(fullPath)
+	if err != nil {
+		return nil, err
+	}
+	return content, nil
+}
