@@ -283,7 +283,7 @@ IAM authorization for the DB cluster is being updated.
 
 The DB cluster engine or operating system version is being upgraded.
 
-**upgrade\_failed**
+**upgrade-failed**
 
 Not billed
 
@@ -596,7 +596,7 @@ Billed
 The database engine or operating system version is being
 upgraded.
 
-**upgrade\_failed**
+**upgrade-failed**
 
 Not billed
 

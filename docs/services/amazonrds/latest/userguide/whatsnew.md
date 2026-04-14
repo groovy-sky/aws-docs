@@ -21,6 +21,13 @@ support](rds-custom-for-oracle-end-of-support.md).
 
 March 31, 2028
 
+RDS for Oracle supports the db.m8i and db.r8i instance classes
+
+You can now use the db.m8i and db.r8i instance classes for RDS for Oracle.
+For more information, see [DB instance classes for Oracle](oracle-concepts-instanceclasses.md).
+
+April 9, 2026
+
 Amazon RDS Extended Support version 5.7.44-RDS.20260212 for RDS for MySQL
 
 The RDS Extended Support version 5.7.44-RDS.20260212 is now available for RDS for MySQL.

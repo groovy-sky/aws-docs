@@ -53,6 +53,8 @@ code changes.
 
 - [Using RDS Proxy with AWS CloudFormation](rds-proxy-cfn.md)
 
+- [Using RDS Proxy with Blue/Green Deployments](rds-proxy-blue-green.md)
+
 ## Region and version availability
 
 Feature availability and support varies across specific versions of each database engine, and across AWS Regions.

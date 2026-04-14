@@ -42,7 +42,7 @@ from the user guide.
 - For more information about how to use the Query API, see
 [Using the Query API](../../../../services/amazonrds/latest/userguide/using-the-query-api.md).
 
-This document was last published on April 8, 2026.
+This document was last published on April 13, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

@@ -81,6 +81,11 @@ and higher, and 13.11 and higherdb.m8g.xlargeNoMariaDB 11.8.3 and higher, 11.4.3
 and higher, and 13.11 and higherdb.m8g.largeNoMariaDB 11.8.3 and higher, 11.4.3 and higher, 10.11.7 and higher, 10.6.13 and higher, 10.5.20 and higher, and 10.4.29 and higherNoMySQL 8.0.32 and higherNoPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
 and higher, and 13.11 and higher
 
+**db.m8i – general-purpose instance classes powered by**
+**Intel Xeon 6 processors**
+
+Instance classDb2MariaDBMicrosoft SQL ServerMySQLOraclePostgreSQLdb.m8i.48xlargeNoNoNoNoBYOL only, Enterprise Edition onlyNodb.m8i.24xlargeNoNoNoNoBYOL only, Enterprise Edition onlyNodb.m8i.16xlargeNoNoNoNoBYOL only, Enterprise Edition onlyNodb.m8i.12xlargeNoNoNoNoBYOL only, Enterprise Edition onlyNodb.m8i.8xlargeNoNoNoNoBYOL only, Enterprise Edition onlyNodb.m8i.4xlargeNoNoNoNoBYOL only, all editionsNodb.m8i.2xlargeNoNoNoNoBYOL only, all editionsNodb.m8i.xlargeNoNoNoNoBYOL only, all editionsNodb.m8i.largeNoNoNoNoBYOL only, all editionsNodb.m8i.metal-96xlNoNoNoNoBYOL only, Enterprise Edition onlyNodb.m8i.metal-48xlNoNoNoNoBYOL only, Enterprise Edition onlyNo
+
 **db.m7i – general-purpose instance classes powered by 4th**
 **generation Intel Xeon Scalable processors**
 
@@ -655,6 +660,11 @@ and higher, and 13.11 and higherdb.r8g.2xlargeNoMariaDB 11.8.3 and higher, 11.4.
 and higher, and 13.11 and higherdb.r8g.xlargeNoMariaDB 11.8.3 and higher, 11.4.3 and higher, 10.11.7 and higher, 10.6.13 and higher, 10.5.20 and higher, and 10.4.29 and higherNoMySQL 8.0.32 and higherNoPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
 and higher, and 13.11 and higherdb.r8g.largeNoMariaDB 11.8.3 and higher, 11.4.3 and higher, 10.11.7 and higher, 10.6.13 and higher, 10.5.20 and higher, and 10.4.29 and higherNoMySQL 8.0.32 and higherNoPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
 and higher, and 13.11 and higher
+
+**db.r8i – memory-optimized instance classes powered by**
+**Intel Xeon 6 processors**
+
+Instance classDb2MariaDBMicrosoft SQL ServerMySQLOraclePostgreSQLdb.r8i.48xlargeNoNoNoNoBYOL only, Enterprise Edition onlyNodb.r8i.24xlargeNoNoNoNoBYOL only, Enterprise Edition onlyNodb.r8i.16xlargeNoNoNoNoBYOL only, Enterprise Edition onlyNodb.r8i.12xlargeNoNoNoNoBYOL only, Enterprise Edition onlyNodb.r8i.8xlargeNoNoNoNoBYOL only, Enterprise Edition onlyNodb.r8i.4xlargeNoNoNoNoBYOL only, all editionsNodb.r8i.2xlargeNoNoNoNoBYOL only, all editionsNodb.r8i.xlargeNoNoNoNoBYOL only, all editionsNodb.r8i.largeNoNoNoNoBYOL only, all editionsNodb.r8i.metal-96xlNoNoNoNoBYOL only, Enterprise Edition onlyNodb.r8i.metal-48xlNoNoNoNoBYOL only, Enterprise Edition onlyNo
 
 **db.r7i – memory-optimized instance classes preconfigured for high memory,**
 **storage, and I/O**

@@ -55,7 +55,7 @@ tasks, see the following topics:
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Using RDS Proxy with AWS CloudFormation
+Using RDS Proxy with Blue/Green Deployments
 
 Zero-ETL integrations
 

@@ -73,6 +73,8 @@ Bring Your Own License (BYOL)
 
 **Standard instance classes**
 
+db.m8i.large–db.m8i.48xlarge, db.m8i.metal-48xl, db.m8i.metal-96xl
+
 db.m7i.large–db.m7i.48xlarge, db.m7i.metal-24xl, db.m7i.metal-48xl
 
 db.m6in.large–db.m6in.32xlarge, db.m6in.metal
@@ -86,6 +88,8 @@ db.m5d.large–db.m5d.24xlarge
 db.m5.large–db.m5.24xlarge
 
 **Memory optimized instance classes**
+
+db.r8i.large–db.r8i.48xlarge, db.r8i.metal-48xl, db.r8i.metal-96xl
 
 db.r7i.large–db.r7i.48xlarge, db.r7i.metal-24xl, db.r7i.metal-48xl
 
@@ -217,6 +221,8 @@ Bring Your Own License (BYOL)
 
 **Standard instance classes**
 
+db.m8i.large–db.m8i.4xlarge
+
 db.m7i.large–db.m7i.4xlarge, db.m7i.metal-24xl, db.m7i.metal-48xl
 
 db.m6in.large–db.m6in.4xlarge, db.m6in.metal
@@ -230,6 +236,8 @@ db.m5d.large–db.m5d.4xlarge
 db.m5.large–db.m5.4xlarge
 
 **Memory optimized instance classes**
+
+db.r8i.large–db.r8i.4xlarge
 
 db.r7i.large–db.r7i.4xlarge, db.r7i.metal-24xl, db.r7i.metal-48xl
 
