@@ -1,3 +1,7 @@
+---
+title: "Amazon Connect Agent Workspace Activity API"
+---
+
 # Amazon Connect Agent Workspace Activity API
 
 The Amazon Connect SDK provides a `SessionExpirationWarningClient` which serves as an

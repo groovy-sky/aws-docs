@@ -1,3 +1,7 @@
+---
+title: "Determine if the Message Template feature is enabled in Amazon Connect Agent Workspace"
+---
+
 # Determine if the Message Template feature is enabled in Amazon Connect Agent Workspace
 
 Returns the MessageTemplateEnabledState object, which indicates if the message

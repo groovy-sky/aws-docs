@@ -1,3 +1,7 @@
+---
+title: "Unsubscribe from voice enhancement mode change events in Amazon Connect Agent Workspace"
+---
+
 # Unsubscribe from voice enhancement mode change events in Amazon Connect Agent Workspace
 
 Unsubscribes a callback function registered for voice enhancements mode changed

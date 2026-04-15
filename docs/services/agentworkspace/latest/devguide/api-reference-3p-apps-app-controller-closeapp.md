@@ -1,3 +1,7 @@
+---
+title: "Close an application in Amazon Connect Agent Workspace"
+---
+
 # Close an application in Amazon Connect Agent Workspace
 
 Closes the application for the given application instance ID in the Amazon Connect agent

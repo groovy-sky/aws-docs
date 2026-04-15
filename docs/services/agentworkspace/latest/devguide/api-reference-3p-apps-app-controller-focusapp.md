@@ -1,3 +1,7 @@
+---
+title: "Focus an application in Amazon Connect Agent Workspace"
+---
+
 # Focus an application in Amazon Connect Agent Workspace
 
 Brings the application into focus in the Amazon Connect agent workspace for the given

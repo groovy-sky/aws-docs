@@ -1,3 +1,7 @@
+---
+title: "Delete an attached file in Amazon Connect Agent Workspace"
+---
+
 # Delete an attached file in Amazon Connect Agent Workspace
 
 Deletes an attached file along with the underlying S3 Object. The attached file is

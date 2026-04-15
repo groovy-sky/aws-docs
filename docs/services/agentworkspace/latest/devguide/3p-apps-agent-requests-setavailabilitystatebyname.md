@@ -1,3 +1,7 @@
+---
+title: "Set the agent state with the given agent state name in Amazon Connect Agent Workspace"
+---
+
 # Set the agent state with the given agent state name in Amazon Connect Agent Workspace
 
 Sets the agent state with the given agent state name. The promise resolves after the

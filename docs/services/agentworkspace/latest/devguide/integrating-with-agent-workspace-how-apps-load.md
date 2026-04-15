@@ -1,3 +1,7 @@
+---
+title: "How applications are loaded in Amazon Connect Agent Workspace"
+---
+
 # How applications are loaded in Amazon Connect Agent Workspace
 
 The agent workspace allows users to handle multiple contacts

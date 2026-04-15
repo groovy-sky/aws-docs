@@ -1,3 +1,7 @@
+---
+title: "Set the agent state with the given agent state ARN in Amazon Connect Agent Workspace"
+---
+
 # Set the agent state with the given agent state ARN in Amazon Connect Agent Workspace
 
 Set the agent state with the given agent state ARN. By default, the promise resolves

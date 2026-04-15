@@ -1,3 +1,7 @@
+---
+title: "Check if contact is in preview mode in Amazon Connect Agent Workspace"
+---
+
 # Check if contact is in preview mode in Amazon Connect Agent Workspace
 
 Returns whether the contact is being previewed. During this time, calling

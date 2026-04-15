@@ -1,3 +1,7 @@
+---
+title: "Determine if the Quick Responses feature is enabled in Amazon Connect Agent Workspace"
+---
+
 # Determine if the Quick Responses feature is enabled in Amazon Connect Agent Workspace
 
 Returns the QuickResponsesEnabledState object, which indicates if the quick

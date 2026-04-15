@@ -1,3 +1,7 @@
+---
+title: "Handle application errors in Amazon Connect Agent Workspace"
+---
+
 # Handle application errors in Amazon Connect Agent Workspace
 
 Applications can communicate errors back to the Amazon Connect agent workspace by either

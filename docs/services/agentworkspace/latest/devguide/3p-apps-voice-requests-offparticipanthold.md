@@ -1,3 +1,7 @@
+---
+title: "Unsubscribe from participant hold events in Amazon Connect Agent Workspace"
+---
+
 # Unsubscribe from participant hold events in Amazon Connect Agent Workspace
 
 Unsubscribes from participant hold events.

@@ -1,3 +1,7 @@
+---
+title: "Confirm that an attached file has been uploaded in Amazon Connect Agent Workspace"
+---
+
 # Confirm that an attached file has been uploaded in Amazon Connect Agent Workspace
 
 Allows you to confirm that the attachment has been uploaded using the pre-signed

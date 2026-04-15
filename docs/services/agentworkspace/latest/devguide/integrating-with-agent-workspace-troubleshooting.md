@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot application setup in Amazon Connect Agent Workspace"
+---
+
 # Troubleshoot application setup in Amazon Connect Agent Workspace
 
 You can use the [Amazon Connect SDK's](https://github.com/amazon-connect/AmazonConnectSDK) `

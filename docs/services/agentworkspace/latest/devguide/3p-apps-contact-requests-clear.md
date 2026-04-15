@@ -1,3 +1,7 @@
+---
+title: "Clears the contact for the given contactId in Amazon Connect Agent Workspace"
+---
+
 # Clears the contact for the given contactId in Amazon Connect Agent Workspace
 
 Clears the contact for the given contactId.

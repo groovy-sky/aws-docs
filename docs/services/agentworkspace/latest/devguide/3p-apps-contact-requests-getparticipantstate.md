@@ -1,3 +1,7 @@
+---
+title: "Get participant state in Amazon Connect Agent Workspace"
+---
+
 # Get participant state in Amazon Connect Agent Workspace
 
 Retrieves the current state of a specific participant.

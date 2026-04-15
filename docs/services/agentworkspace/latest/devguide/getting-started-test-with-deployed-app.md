@@ -1,3 +1,7 @@
+---
+title: "Test a deployed version of your application for Amazon Connect Agent Workspace"
+---
+
 # Test a deployed version of your application for Amazon Connect Agent Workspace
 
 When ready, deploy the app that you created for the Amazon Connect agent workspace to a

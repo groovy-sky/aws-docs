@@ -1,3 +1,7 @@
+---
+title: "Get the voice enhancement mode in Amazon Connect Agent Workspace"
+---
+
 # Get the voice enhancement mode in Amazon Connect Agent Workspace
 
 Gets the voice enhancement mode of the user that's currently logged in to Amazon

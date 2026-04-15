@@ -1,3 +1,7 @@
+---
+title: "Amazon Connect Agent Workspace API reference"
+---
+
 # Amazon Connect Agent Workspace API reference
 
 This Amazon Connect agent workspace API reference enumerates the agent events, agent requests,

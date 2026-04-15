@@ -1,3 +1,7 @@
+---
+title: "Unsubscribe from self resume events in Amazon Connect Agent Workspace"
+---
+
 # Unsubscribe from self resume events in Amazon Connect Agent Workspace
 
 Unsubscribes from self resume events.

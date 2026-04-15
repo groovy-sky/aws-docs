@@ -1,3 +1,7 @@
+---
+title: "Get the extension of the agent in Amazon Connect Agent Workspace"
+---
+
 # Get the extension of the agent in Amazon Connect Agent Workspace
 
 Returns phone number of the agent currently logged in to the Amazon Connect agent workspace. This is

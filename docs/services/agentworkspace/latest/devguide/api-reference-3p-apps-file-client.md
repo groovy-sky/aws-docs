@@ -1,3 +1,7 @@
+---
+title: "Amazon Connect Agent Workspace File API"
+---
+
 # Amazon Connect Agent Workspace File API
 
 The Amazon Connect SDK provides a `FileClient` which serves as an interface that you can use

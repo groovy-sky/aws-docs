@@ -1,3 +1,7 @@
+---
+title: "Send a draft email contact in Amazon Connect Agent Workspace"
+---
+
 # Send a draft email contact in Amazon Connect Agent Workspace
 
 Sends both agent initiated and agent reply draft email contacts. Upon successfully

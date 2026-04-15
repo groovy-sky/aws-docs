@@ -1,3 +1,7 @@
+---
+title: "Get metadata about multiple attached files in Amazon Connect Agent Workspace"
+---
+
 # Get metadata about multiple attached files in Amazon Connect Agent Workspace
 
 Get metadata about multiple attached files on an associated resource while

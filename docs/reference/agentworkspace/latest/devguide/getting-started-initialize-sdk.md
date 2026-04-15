@@ -1,3 +1,7 @@
+---
+title: "Initialize the Amazon Connect SDK in your application for Amazon Connect Agent Workspace"
+---
+
 # Initialize the Amazon Connect SDK in your application for Amazon Connect Agent Workspace
 
 Initializing the [Amazon Connect SDK](https://github.com/amazon-connect/AmazonConnectSDK)

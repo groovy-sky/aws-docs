@@ -1,3 +1,7 @@
+---
+title: "Subscribe to voice enhancement mode change events in Amazon Connect Agent Workspace"
+---
+
 # Subscribe to voice enhancement mode change events in Amazon Connect Agent Workspace
 
 Subscribes a callback function whenever voice enhancements mode is changed in user's

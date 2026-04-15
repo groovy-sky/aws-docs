@@ -1,3 +1,7 @@
+---
+title: "Subscribe to agent enabled channel list changes in Amazon Connect Agent Workspace"
+---
+
 # Subscribe to agent enabled channel list changes in Amazon Connect Agent Workspace
 
 Creates a subscription for EnabledChannelListChanged event. This gets triggered when

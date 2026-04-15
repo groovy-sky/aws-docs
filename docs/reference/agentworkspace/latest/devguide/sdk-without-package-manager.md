@@ -1,3 +1,7 @@
+---
+title: "Using the Amazon Connect SDK without a package manager"
+---
+
 # Using the Amazon Connect SDK without a package manager
 
 This guide is intended for developers building Amazon Connect integrations who do not

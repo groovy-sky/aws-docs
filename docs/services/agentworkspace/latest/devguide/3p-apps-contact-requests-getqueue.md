@@ -1,3 +1,7 @@
+---
+title: "Get the queue of the contact in Amazon Connect Agent Workspace"
+---
+
 # Get the queue of the contact in Amazon Connect Agent Workspace
 
 Returns the queue associated with the contact in the Amazon Connect agent workspace. The `Queue`

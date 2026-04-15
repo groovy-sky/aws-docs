@@ -1,3 +1,7 @@
+---
+title: "Subscribe to incoming contact events in Amazon Connect Agent Workspace"
+---
+
 # Subscribe to incoming contact events in Amazon Connect Agent Workspace
 
 Creates a subscription whenever a new incoming event occurs in the Amazon Connect

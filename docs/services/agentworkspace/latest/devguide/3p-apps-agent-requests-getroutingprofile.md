@@ -1,3 +1,7 @@
+---
+title: "Get the routing profile of the agent in Amazon Connect Agent Workspace"
+---
+
 # Get the routing profile of the agent in Amazon Connect Agent Workspace
 
 Returns the routing profile of the agent currently logged in to the Amazon Connect agent workspace.

@@ -1,3 +1,7 @@
+---
+title: "Get a pre-signed S3 URL to download an approved attached file in Amazon Connect Agent Workspace"
+---
+
 # Get a pre-signed S3 URL to download an approved attached file in Amazon Connect Agent Workspace
 
 Returns a pre-signed URL to download an approved attached file while handling an

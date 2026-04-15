@@ -1,3 +1,7 @@
+---
+title: "Get the current state of the agent in Amazon Connect Agent Workspace"
+---
+
 # Get the current state of the agent in Amazon Connect Agent Workspace
 
 Returns the Amazon Connect agent workspace agent's current `AgentState` object indicating

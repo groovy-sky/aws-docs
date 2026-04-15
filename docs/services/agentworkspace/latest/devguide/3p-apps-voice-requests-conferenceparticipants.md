@@ -1,3 +1,7 @@
+---
+title: "Conference all participants on a contact in Amazon Connect Agent Workspace"
+---
+
 # Conference all participants on a contact in Amazon Connect Agent Workspace
 
 Conferences all participants on a contact together, removing any hold states and

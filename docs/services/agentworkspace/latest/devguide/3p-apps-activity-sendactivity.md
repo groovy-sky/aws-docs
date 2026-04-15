@@ -1,3 +1,7 @@
+---
+title: "Inform Amazon Connect that the agent is active"
+---
+
 # Inform Amazon Connect that the agent is active
 
 Sends a signal to the Amazon Connect indicating that the agent is active and should

@@ -1,3 +1,7 @@
+---
+title: "Get the metadata for an email contact in Amazon Connect Agent Workspace"
+---
+
 # Get the metadata for an email contact in Amazon Connect Agent Workspace
 
 Returns the metadata for an email contact id while handling an active contact. The

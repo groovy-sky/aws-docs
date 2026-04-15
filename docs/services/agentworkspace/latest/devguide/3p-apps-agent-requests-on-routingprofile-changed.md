@@ -1,3 +1,7 @@
+---
+title: "Subscribe to agent routing profile changes in Amazon Connect Agent Workspace"
+---
+
 # Subscribe to agent routing profile changes in Amazon Connect Agent Workspace
 
 Creates a subscription for RoutingProfileChanged event. This gets triggered when an

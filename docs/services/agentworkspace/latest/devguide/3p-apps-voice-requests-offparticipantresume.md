@@ -1,3 +1,7 @@
+---
+title: "Unsubscribe from participant resume events in Amazon Connect Agent Workspace"
+---
+
 # Unsubscribe from participant resume events in Amazon Connect Agent Workspace
 
 Unsubscribes from participant resume events.

@@ -1,3 +1,7 @@
+---
+title: "Retrieve quick responses that match a search query in Amazon Connect Agent Workspace"
+---
+
 # Retrieve quick responses that match a search query in Amazon Connect Agent Workspace
 
 Returns the SearchQuickResponsesResult object, which contains the matching quick

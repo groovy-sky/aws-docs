@@ -1,3 +1,7 @@
+---
+title: "Get the list of Quick Connect endpoints associated with a given queue in Amazon Connect Agent Workspace"
+---
+
 # Get the list of Quick Connect endpoints associated with a given queue in Amazon Connect Agent Workspace
 
 Get the list of Quick Connect endpoints associated with the given queue(s).

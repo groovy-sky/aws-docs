@@ -1,3 +1,7 @@
+---
+title: "Unsubscribe from incoming contact events in Amazon Connect Agent Workspace"
+---
+
 # Unsubscribe from incoming contact events in Amazon Connect Agent Workspace
 
 Unsubscribes the callback function from the contact incoming event in Amazon

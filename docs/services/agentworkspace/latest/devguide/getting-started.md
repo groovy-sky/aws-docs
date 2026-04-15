@@ -1,3 +1,7 @@
+---
+title: "Working with third-party applications in the Amazon Connect Agent Workspace"
+---
+
 # Working with third-party applications in the Amazon Connect Agent Workspace
 
 With Amazon Connect agent workspace, you have the option to use first-party

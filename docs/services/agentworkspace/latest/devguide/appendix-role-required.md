@@ -1,3 +1,7 @@
+---
+title: "IAM role required for creating applications in Amazon Connect Agent Workspace"
+---
+
 # IAM role required for creating applications in Amazon Connect Agent Workspace
 
 On top of the `AmazonConnect_FullAccess` IAM policy, users need the following IAM permissions for creating an app

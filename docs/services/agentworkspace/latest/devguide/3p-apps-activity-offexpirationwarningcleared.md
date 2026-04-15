@@ -1,3 +1,7 @@
+---
+title: "Unsubscribe a callback function from the expiration warning cleared event"
+---
+
 # Unsubscribe a callback function from the expiration warning cleared event
 
 Unsubscribes a callback function from the expiration warning cleared event that is

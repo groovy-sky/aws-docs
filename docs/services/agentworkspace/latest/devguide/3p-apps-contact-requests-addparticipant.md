@@ -1,3 +1,7 @@
+---
+title: "Add another participant to a contact in Amazon Connect Agent Workspace"
+---
+
 # Add another participant to a contact in Amazon Connect Agent Workspace
 
 Add another participant to the contact. Multi-party only works for Voice at this

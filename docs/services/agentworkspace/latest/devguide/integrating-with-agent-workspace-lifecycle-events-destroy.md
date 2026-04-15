@@ -1,3 +1,7 @@
+---
+title: "The destroy event in Amazon Connect Agent Workspace"
+---
+
 # The destroy event in Amazon Connect Agent Workspace
 
 The destroy event in the Amazon Connect agent workspace will trigger the `

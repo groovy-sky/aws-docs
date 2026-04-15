@@ -1,3 +1,7 @@
+---
+title: "Integrate application with Amazon Connect Agent Workspace agent data"
+---
+
 # Integrate application with Amazon Connect Agent Workspace agent data
 
 To integrate your application with agent data from the Amazon Connect agent workspace,

@@ -1,3 +1,7 @@
+---
+title: "Get the duration of the contact state in Amazon Connect Agent Workspace"
+---
+
 # Get the duration of the contact state in Amazon Connect Agent Workspace
 
 Returns the duration of the contact state in milliseconds relative to local time,
