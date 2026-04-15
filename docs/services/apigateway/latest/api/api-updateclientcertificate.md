@@ -1,3 +1,7 @@
+---
+title: "UpdateClientCertificate"
+---
+
 # UpdateClientCertificate
 
 Changes information about an ClientCertificate resource.

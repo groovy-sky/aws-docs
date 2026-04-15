@@ -1,3 +1,7 @@
+---
+title: "Set up a Network Load Balancer for API Gateway private integrations (legacy)"
+---
+
 # Set up a Network Load Balancer for API Gateway private integrations (legacy)
 
 ###### Note

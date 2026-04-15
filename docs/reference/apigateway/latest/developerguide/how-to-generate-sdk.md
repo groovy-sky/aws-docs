@@ -1,3 +1,7 @@
+---
+title: "Generate SDKs for REST APIs in API Gateway"
+---
+
 # Generate SDKs for REST APIs in API Gateway
 
 To call your REST API in a platform- or language-specific way, you must generate the platform- or

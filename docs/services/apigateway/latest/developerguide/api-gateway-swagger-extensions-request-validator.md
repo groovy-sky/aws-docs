@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-request-validator property"
+---
+
 # x-amazon-apigateway-request-validator property
 
 Specifies a request validator, by referencing a

@@ -1,3 +1,7 @@
+---
+title: "Enabling binary support using the API Gateway console"
+---
+
 # Enabling binary support using the API Gateway console
 
 The section explains how to enable binary support using the API Gateway console. As an

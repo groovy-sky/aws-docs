@@ -1,3 +1,7 @@
+---
+title: "Recreate an API mapping using routing rules"
+---
+
 # Recreate an API mapping using routing rules
 
 You can recreate an API mapping using routing rules. To recreate an API mapping, make sure to turn on base

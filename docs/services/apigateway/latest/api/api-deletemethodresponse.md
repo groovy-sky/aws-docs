@@ -1,3 +1,7 @@
+---
+title: "DeleteMethodResponse"
+---
+
 # DeleteMethodResponse
 
 Deletes an existing MethodResponse resource.

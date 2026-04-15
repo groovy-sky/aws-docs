@@ -1,3 +1,7 @@
+---
+title: "CreateAuthorizer"
+---
+
 # CreateAuthorizer
 
 Adds a new Authorizer resource to an existing RestApi resource.

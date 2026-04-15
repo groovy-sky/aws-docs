@@ -1,3 +1,7 @@
+---
+title: "CORS for REST APIs in API Gateway"
+---
+
 # CORS for REST APIs in API Gateway
 
 [Cross-origin resource\

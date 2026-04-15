@@ -1,3 +1,7 @@
+---
+title: "Generate and configure an SSL certificate for backend authentication in API Gateway"
+---
+
 # Generate and configure an SSL certificate for backend authentication in API Gateway
 
 You can use API Gateway to generate an SSL certificate and then use its public key in the

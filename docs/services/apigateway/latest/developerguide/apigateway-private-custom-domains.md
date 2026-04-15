@@ -1,3 +1,7 @@
+---
+title: "Custom domain names for private APIs in API Gateway"
+---
+
 # Custom domain names for private APIs in API Gateway
 
 You can create a custom domain name for your private APIs. Use a

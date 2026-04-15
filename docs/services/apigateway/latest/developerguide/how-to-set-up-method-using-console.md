@@ -1,3 +1,7 @@
+---
+title: "Set up a method using the API Gateway console"
+---
+
 # Set up a method using the API Gateway console
 
 When you create a method using the REST API console, you configure both the integration request and the

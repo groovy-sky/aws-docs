@@ -1,3 +1,7 @@
+---
+title: "Api"
+---
+
 # Api
 
 Represents an API.

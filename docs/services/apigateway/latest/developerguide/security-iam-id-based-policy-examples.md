@@ -1,3 +1,7 @@
+---
+title: "Amazon API Gateway identity-based policy examples"
+---
+
 # Amazon API Gateway identity-based policy examples
 
 By default, IAM users and roles don't have permission to create or modify

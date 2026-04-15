@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Modify the integration request and response for integrations to AWS services"
+---
+
 # Tutorial: Modify the integration request and response for integrations to AWS services
 
 The following tutorial shows how to use mapping template transformations to set up mapping templates to transform integration requests and responses using the

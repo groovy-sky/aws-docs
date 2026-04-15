@@ -1,3 +1,7 @@
+---
+title: "DeleteUsagePlan"
+---
+
 # DeleteUsagePlan
 
 Deletes a usage plan of a given plan Id.

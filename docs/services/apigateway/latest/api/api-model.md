@@ -1,3 +1,7 @@
+---
+title: "Model"
+---
+
 # Model
 
 Represents the data structure of a method's request or response payload.

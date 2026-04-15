@@ -1,3 +1,7 @@
+---
+title: "UpdateBasePathMapping"
+---
+
 # UpdateBasePathMapping
 
 Changes information about the BasePathMapping resource.

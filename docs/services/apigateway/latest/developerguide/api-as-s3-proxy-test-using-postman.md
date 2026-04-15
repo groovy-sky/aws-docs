@@ -1,3 +1,7 @@
+---
+title: "Call the API using a REST API client"
+---
+
 # Call the API using a REST API client
 
 To provide an end-to-end tutorial, we now show how to call the API using [Postman](https://www.postman.com/), which supports the AWS IAM authorization.

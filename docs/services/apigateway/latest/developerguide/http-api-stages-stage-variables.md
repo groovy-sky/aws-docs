@@ -1,3 +1,7 @@
+---
+title: "Use stage variables for HTTP APIs in API Gateway"
+---
+
 # Use stage variables for HTTP APIs in API Gateway
 
 Stage variables are key-value pairs that you can define for a stage of an

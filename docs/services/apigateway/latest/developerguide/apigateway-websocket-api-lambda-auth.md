@@ -1,3 +1,7 @@
+---
+title: "Control access to WebSocket APIs with AWS Lambda REQUEST authorizers"
+---
+
 # Control access to WebSocket APIs with AWS Lambda REQUEST authorizers
 
 A Lambda authorizer function in WebSocket APIs is similar to that for [REST APIs](apigateway-use-lambda-authorizer.md#api-gateway-lambda-authorizer-lambda-function-create),

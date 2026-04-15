@@ -1,3 +1,7 @@
+---
+title: "Variables for data transformations for API Gateway"
+---
+
 # Variables for data transformations for API Gateway
 
 When you create a parameter mapping, you can use context variables as your data source. When you create mapping template transformations,

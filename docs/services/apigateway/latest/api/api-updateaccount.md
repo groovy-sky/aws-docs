@@ -1,3 +1,7 @@
+---
+title: "UpdateAccount"
+---
+
 # UpdateAccount
 
 Changes information about the current Account resource.

@@ -1,3 +1,7 @@
+---
+title: "GetRestApis"
+---
+
 # GetRestApis
 
 Lists the RestApis resources for your collection.

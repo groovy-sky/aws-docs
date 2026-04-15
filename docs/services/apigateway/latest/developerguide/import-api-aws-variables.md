@@ -1,3 +1,7 @@
+---
+title: "AWS variables for OpenAPI import"
+---
+
 # AWS variables for OpenAPI import
 
 You can use the following AWS variables in OpenAPI definitions. API Gateway resolves the variables when the API is imported. To specify a variable,

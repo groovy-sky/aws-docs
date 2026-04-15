@@ -1,3 +1,7 @@
+---
+title: "GetMethodResponse"
+---
+
 # GetMethodResponse
 
 Describes a MethodResponse resource.

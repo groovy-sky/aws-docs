@@ -1,3 +1,7 @@
+---
+title: "Set up a gateway response using the API Gateway REST API"
+---
+
 # Set up a gateway response using the API Gateway REST API
 
 Before customizing a gateway response using the API Gateway REST API, you must have already

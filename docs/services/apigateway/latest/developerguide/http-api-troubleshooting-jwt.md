@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting issues with HTTP API JWT authorizers"
+---
+
 # Troubleshooting issues with HTTP API JWT authorizers
 
 The following provides troubleshooting advice for errors and issues that you might

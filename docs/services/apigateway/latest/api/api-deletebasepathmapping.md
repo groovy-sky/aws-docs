@@ -1,3 +1,7 @@
+---
+title: "DeleteBasePathMapping"
+---
+
 # DeleteBasePathMapping
 
 Deletes the BasePathMapping resource.

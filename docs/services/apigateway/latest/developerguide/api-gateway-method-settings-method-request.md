@@ -1,3 +1,7 @@
+---
+title: "Set up a method request in API Gateway"
+---
+
 # Set up a method request in API Gateway
 
 Setting up a method request involves performing the following tasks, after creating a

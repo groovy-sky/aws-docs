@@ -1,3 +1,7 @@
+---
+title: "Choose a security policy for your custom domain in API Gateway"
+---
+
 # Choose a security policy for your custom domain in API Gateway
 
 A _security policy_ is a predefined combination of minimum TLS version and cipher suites

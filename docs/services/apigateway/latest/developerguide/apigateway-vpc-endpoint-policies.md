@@ -1,3 +1,7 @@
+---
+title: "Use VPC endpoint policies for private APIs in API Gateway"
+---
+
 # Use VPC endpoint policies for private APIs in API Gateway
 
 To improve the security of your private API, you can create a VPC endpoint policy. A VPC endpoint policy is an

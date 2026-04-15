@@ -1,3 +1,7 @@
+---
+title: "DeleteResource"
+---
+
 # DeleteResource
 
 Deletes a Resource resource.

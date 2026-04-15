@@ -1,3 +1,7 @@
+---
+title: "Create an Amazon Cognito user pool for a REST API"
+---
+
 # Create an Amazon Cognito user pool for a REST API
 
 Before integrating your API with a user pool, you must create the user pool in Amazon Cognito. Your user pool

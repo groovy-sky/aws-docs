@@ -1,3 +1,7 @@
+---
+title: "Simple calculator Lambda function"
+---
+
 # Simple calculator Lambda function
 
 As an illustration, we will use a Node.js Lambda function that performs the binary

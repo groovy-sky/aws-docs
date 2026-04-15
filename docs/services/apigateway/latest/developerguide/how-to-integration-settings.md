@@ -1,3 +1,7 @@
+---
+title: "Integrations for REST APIs in API Gateway"
+---
+
 # Integrations for REST APIs in API Gateway
 
 After setting up an API method, you must integrate it with an endpoint in the backend. A

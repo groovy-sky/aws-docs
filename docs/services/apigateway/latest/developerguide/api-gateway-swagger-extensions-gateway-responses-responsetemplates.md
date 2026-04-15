@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-gateway-responses.responseTemplates object"
+---
+
 # x-amazon-apigateway-gateway-responses.responseTemplates object
 
 Defines [GatewayResponse](../api/api-gatewayresponse.md) mapping templates, as a string-to-string map of key-value

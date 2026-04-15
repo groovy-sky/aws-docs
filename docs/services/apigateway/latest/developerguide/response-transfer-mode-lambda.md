@@ -1,3 +1,7 @@
+---
+title: "Set up a Lambda proxy integration with payload response streaming in API Gateway"
+---
+
 # Set up a Lambda proxy integration with payload response streaming in API Gateway
 
 You can stream the response of a Lambda function to improve time to first byte (TTFB) performance and send

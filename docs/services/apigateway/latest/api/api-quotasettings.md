@@ -1,3 +1,7 @@
+---
+title: "QuotaSettings"
+---
+
 # QuotaSettings
 
 Quotas configured for a usage plan.

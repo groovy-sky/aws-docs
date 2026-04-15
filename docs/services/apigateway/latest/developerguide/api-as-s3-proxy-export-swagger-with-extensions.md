@@ -1,3 +1,7 @@
+---
+title: "OpenAPI definitions of the sample API as an Amazon S3 proxy"
+---
+
 # OpenAPI definitions of the sample API as an Amazon S3 proxy
 
 The following OpenAPI definitions describes an API that works as an Amazon S3 proxy. This API contains more Amazon S3

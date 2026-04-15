@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-request-validators.requestValidator object"
+---
+
 # x-amazon-apigateway-request-validators.requestValidator object
 
 Specifies the validation rules of a request validator as part of the

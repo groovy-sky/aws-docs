@@ -1,3 +1,7 @@
+---
+title: "Integration"
+---
+
 # Integration
 
 Represents an API integration.

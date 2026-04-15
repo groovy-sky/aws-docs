@@ -1,3 +1,7 @@
+---
+title: "Authorizers"
+---
+
 # Authorizers
 
 Represents the collection of authorizers for an API.

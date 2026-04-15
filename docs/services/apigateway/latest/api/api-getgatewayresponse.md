@@ -1,3 +1,7 @@
+---
+title: "GetGatewayResponse"
+---
+
 # GetGatewayResponse
 
 Gets a GatewayResponse of a specified response type on the given RestApi.

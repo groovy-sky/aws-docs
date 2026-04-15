@@ -1,3 +1,7 @@
+---
+title: "Configure a method to use API keys with an OpenAPI definition"
+---
+
 # Configure a method to use API keys with an OpenAPI definition
 
 You can use an OpenAPI definition to require API keys on a method.

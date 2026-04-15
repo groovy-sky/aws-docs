@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a REST API using AWS SDKs or the AWS CLI"
+---
+
 # Tutorial: Create a REST API using AWS SDKs or the AWS CLI
 
 Use the following tutorial to create a PetStore API supporting the `GET /pets` and `GET

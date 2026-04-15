@@ -1,3 +1,7 @@
+---
+title: "Control access to WebSocket APIs with IAM authorization"
+---
+
 # Control access to WebSocket APIs with IAM authorization
 
 IAM authorization in WebSocket APIs is similar to that for [REST\

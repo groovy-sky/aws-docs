@@ -1,3 +1,7 @@
+---
+title: "WebSocket selection expressions"
+---
+
 # WebSocket selection expressions
 
 API Gateway uses selection expressions as a way to evaluate request and response context and

@@ -1,3 +1,7 @@
+---
+title: "DeleteDomainName"
+---
+
 # DeleteDomainName
 
 Deletes the DomainName resource.

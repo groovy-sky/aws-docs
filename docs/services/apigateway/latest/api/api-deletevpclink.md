@@ -1,3 +1,7 @@
+---
+title: "DeleteVpcLink"
+---
+
 # DeleteVpcLink
 
 Deletes an existing VpcLink of a specified identifier.

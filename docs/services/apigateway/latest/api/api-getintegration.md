@@ -1,3 +1,7 @@
+---
+title: "GetIntegration"
+---
+
 # GetIntegration
 
 Get the integration settings.

@@ -1,3 +1,7 @@
+---
+title: "Integration subtype reference"
+---
+
 # Integration subtype reference
 
 The following

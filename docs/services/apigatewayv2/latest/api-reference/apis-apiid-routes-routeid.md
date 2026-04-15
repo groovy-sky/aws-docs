@@ -1,3 +1,7 @@
+---
+title: "Route"
+---
+
 # Route
 
 Represents a route for an API.

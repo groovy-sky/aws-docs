@@ -1,3 +1,7 @@
+---
+title: "Set up AWS X-Ray with API Gateway REST APIs"
+---
+
 # Set up AWS X-Ray with API Gateway REST APIs
 
 In this section you can find detailed information on how to set up [AWS X-Ray](../../../xray/latest/devguide/xray-services-apigateway.md) with API Gateway REST APIs.

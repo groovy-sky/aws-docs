@@ -1,3 +1,7 @@
+---
+title: "Generate the JavaScript SDK of a REST API in API Gateway"
+---
+
 # Generate the JavaScript SDK of a REST API in API Gateway
 
 The following procedure shows how to generate the JaveScript SDK of an API in API Gateway.

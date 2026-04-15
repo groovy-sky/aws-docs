@@ -1,3 +1,7 @@
+---
+title: "Monitoring API Gateway API configuration with AWS Config"
+---
+
 # Monitoring API Gateway API configuration with AWS Config
 
 You can use [AWS Config](https://aws.amazon.com/config) to record

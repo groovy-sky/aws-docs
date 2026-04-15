@@ -1,3 +1,7 @@
+---
+title: "Integrations for WebSocket APIs in API Gateway"
+---
+
 # Integrations for WebSocket APIs in API Gateway
 
 After setting up an API route, you must integrate it with an endpoint in the backend. A

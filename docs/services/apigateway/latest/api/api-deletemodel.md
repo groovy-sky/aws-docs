@@ -1,3 +1,7 @@
+---
+title: "DeleteModel"
+---
+
 # DeleteModel
 
 Deletes a model.

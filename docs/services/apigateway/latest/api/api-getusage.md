@@ -1,3 +1,7 @@
+---
+title: "GetUsage"
+---
+
 # GetUsage
 
 Gets the usage data of a usage plan in a specified time interval.

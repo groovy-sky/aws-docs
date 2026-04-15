@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-policy"
+---
+
 # x-amazon-apigateway-policy
 
 Specifies a resource policy for a REST API. To learn more about resource

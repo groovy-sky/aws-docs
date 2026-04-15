@@ -1,3 +1,7 @@
+---
+title: "Control access to HTTP APIs with AWS Lambda authorizers"
+---
+
 # Control access to HTTP APIs with AWS Lambda authorizers
 
 You use a Lambda authorizer to use a Lambda function to control access to your

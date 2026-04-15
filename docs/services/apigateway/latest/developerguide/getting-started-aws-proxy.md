@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a REST API with an AWS integration"
+---
+
 # Tutorial: Create a REST API with an AWS integration
 
 Both the [Tutorial: Create a REST API with a Lambda proxy integration](api-gateway-create-api-as-simple-proxy-for-lambda.md) and [Tutorial: Create a REST API with a Lambda non-proxy integration](getting-started-lambda-non-proxy-integration.md) topics describe how to

@@ -1,3 +1,7 @@
+---
+title: "Monitor WebSocket API execution with CloudWatch metrics"
+---
+
 # Monitor WebSocket API execution with CloudWatch metrics
 
 You can use [Amazon CloudWatch](../../../amazoncloudwatch/latest/monitoring/whatiscloudwatch.md) metrics to

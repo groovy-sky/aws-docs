@@ -1,3 +1,7 @@
+---
+title: "Control access based on an identity’s attributes with Verified Permissions"
+---
+
 # Control access based on an identity’s attributes with Verified Permissions
 
 Use Amazon Verified Permissions to control access to your API Gateway API. When you use API Gateway with Verified Permissions, Verified Permissions creates a Lambda authorizer that uses fine-grained

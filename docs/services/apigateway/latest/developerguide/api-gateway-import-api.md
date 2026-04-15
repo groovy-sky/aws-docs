@@ -1,3 +1,7 @@
+---
+title: "Develop REST APIs using OpenAPI in API Gateway"
+---
+
 # Develop REST APIs using OpenAPI in API Gateway
 
 You can use API Gateway to import a REST API from an external definition file into API Gateway. Currently, API Gateway supports

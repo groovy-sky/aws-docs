@@ -1,3 +1,7 @@
+---
+title: "DeleteIntegrationResponse"
+---
+
 # DeleteIntegrationResponse
 
 Represents a delete integration response.

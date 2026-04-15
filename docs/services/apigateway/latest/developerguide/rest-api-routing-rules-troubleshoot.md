@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting issues with routing rules"
+---
+
 # Troubleshooting issues with routing rules
 
 The following troubleshooting guidance might help resolve issues with your routing rules.

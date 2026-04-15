@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a REST API by importing an example"
+---
+
 # Tutorial: Create a REST API by importing an example
 
 You can use the Amazon API Gateway console to create and test a simple REST API with the HTTP

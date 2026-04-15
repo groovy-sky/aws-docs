@@ -1,3 +1,7 @@
+---
+title: "Content type conversions in API Gateway"
+---
+
 # Content type conversions in API Gateway
 
 The combination of your API's `binaryMediaTypes`, the headers in client

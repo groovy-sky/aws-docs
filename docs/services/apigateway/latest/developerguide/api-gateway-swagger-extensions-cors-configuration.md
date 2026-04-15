@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-cors object"
+---
+
 # x-amazon-apigateway-cors object
 
 Specifies the cross-origin resource sharing (CORS) configuration for an HTTP API. The extension applies to the root-level OpenAPI structure. To learn more, see [Configure CORS for HTTP APIs in API Gateway](http-api-cors.md).

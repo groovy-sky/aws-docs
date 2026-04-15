@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-minimum-compression-size"
+---
+
 # x-amazon-apigateway-minimum-compression-size
 
 Specifies the minimum compression size for a REST API. To enable compression, specify

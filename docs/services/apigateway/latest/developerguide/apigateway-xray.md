@@ -1,3 +1,7 @@
+---
+title: "Trace user requests to REST APIs using X-Ray in API Gateway"
+---
+
 # Trace user requests to REST APIs using X-Ray in API Gateway
 
 You can use [AWS X-Ray](../../../xray/latest/devguide/xray-services-apigateway.md) to

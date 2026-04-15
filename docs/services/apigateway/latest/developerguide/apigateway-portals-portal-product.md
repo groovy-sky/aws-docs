@@ -1,3 +1,7 @@
+---
+title: "Portal products in API Gateway"
+---
+
 # Portal products in API Gateway
 
 A _portal product_ represents a service or functionality that you want to share. Your portal

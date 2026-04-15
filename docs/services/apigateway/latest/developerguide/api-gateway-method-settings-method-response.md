@@ -1,3 +1,7 @@
+---
+title: "Set up a method response in API Gateway"
+---
+
 # Set up a method response in API Gateway
 
 An API method response encapsulates the output of an API method request that the

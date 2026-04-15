@@ -1,3 +1,7 @@
+---
+title: "Set up usage plans for REST APIs in API Gateway"
+---
+
 # Set up usage plans for REST APIs in API Gateway
 
 Before you create a usage plan, make sure that you've set up the your API keys. For

@@ -1,3 +1,7 @@
+---
+title: "UpdateMethod"
+---
+
 # UpdateMethod
 
 Updates an existing Method resource.

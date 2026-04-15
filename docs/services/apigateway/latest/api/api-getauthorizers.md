@@ -1,3 +1,7 @@
+---
+title: "GetAuthorizers"
+---
+
 # GetAuthorizers
 
 Describe an existing Authorizers resource.

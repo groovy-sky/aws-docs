@@ -1,3 +1,7 @@
+---
+title: "PatchOperation"
+---
+
 # PatchOperation
 
 For more information about supported patch operations, see [Patch Operations](patch-operations.md).

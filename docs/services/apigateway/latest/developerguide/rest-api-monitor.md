@@ -1,3 +1,7 @@
+---
+title: "Monitor REST APIs in API Gateway"
+---
+
 # Monitor REST APIs in API Gateway
 
 In this section, you can learn how to monitor your API by using CloudWatch metrics, CloudWatch Logs,

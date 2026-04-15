@@ -1,3 +1,7 @@
+---
+title: "GetResource"
+---
+
 # GetResource
 
 Lists information about a resource.

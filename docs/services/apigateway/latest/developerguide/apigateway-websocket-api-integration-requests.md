@@ -1,3 +1,7 @@
+---
+title: "Set up a WebSocket API integration request in API Gateway"
+---
+
 # Set up a WebSocket API integration request in API Gateway
 
 Setting up an integration request involves the following:

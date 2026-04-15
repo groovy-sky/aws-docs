@@ -1,3 +1,7 @@
+---
+title: "GetVpcLinks"
+---
+
 # GetVpcLinks
 
 Gets the VpcLinks collection under the caller's account in a selected region.

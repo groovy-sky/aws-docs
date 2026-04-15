@@ -1,3 +1,7 @@
+---
+title: "Request validation for WebSocket APIs in API Gateway"
+---
+
 # Request validation for WebSocket APIs in API Gateway
 
 You can configure API Gateway to perform validation on a route request before proceeding with

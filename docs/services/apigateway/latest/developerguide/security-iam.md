@@ -1,3 +1,7 @@
+---
+title: "Identity and access management for Amazon API Gateway"
+---
+
 # Identity and access management for Amazon API Gateway
 
 AWS Identity and Access Management (IAM) is an AWS service that helps an administrator securely control access

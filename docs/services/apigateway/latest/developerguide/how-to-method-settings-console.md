@@ -1,3 +1,7 @@
+---
+title: "Set up an API integration request using the API Gateway console"
+---
+
 # Set up an API integration request using the API Gateway console
 
 An API method setup defines the method and describes its behaviors. To set up a

@@ -1,3 +1,7 @@
+---
+title: "Choose an AWS Lambda integration tutorial"
+---
+
 # Choose an AWS Lambda integration tutorial
 
 To build an API with Lambda integrations, you can use Lambda proxy integration or

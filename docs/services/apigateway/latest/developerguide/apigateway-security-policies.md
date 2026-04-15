@@ -1,3 +1,7 @@
+---
+title: "Security policies for REST APIs in API Gateway"
+---
+
 # Security policies for REST APIs in API Gateway
 
 A _security policy_ is a predefined combination of minimum TLS version and cipher suites

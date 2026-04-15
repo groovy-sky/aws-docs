@@ -1,3 +1,7 @@
+---
+title: "Logging and monitoring in Amazon API Gateway"
+---
+
 # Logging and monitoring in Amazon API Gateway
 
 Monitoring is an important part of maintaining the reliability, availability, and

@@ -1,3 +1,7 @@
+---
+title: "How Amazon API Gateway works with IAM"
+---
+
 # How Amazon API Gateway works with IAM
 
 Before you use IAM to manage access to API Gateway, you should understand what

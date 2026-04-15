@@ -1,3 +1,7 @@
+---
+title: "Share your portal product with a portal owner in API Gateway"
+---
+
 # Share your portal product with a portal owner in API Gateway
 
 As a product owner, you can share your product with a portal owner in another AWS account using AWS RAM. You

@@ -1,3 +1,7 @@
+---
+title: "Data transformations for WebSocket APIs in API Gateway"
+---
+
 # Data transformations for WebSocket APIs in API Gateway
 
 In API Gateway, a WebSocket API's method request can take a payload in a different format from the

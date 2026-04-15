@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-api-key-source property"
+---
+
 # x-amazon-apigateway-api-key-source property
 
 Specify the source to receive an API key to throttle API methods that require a key. This API-level property

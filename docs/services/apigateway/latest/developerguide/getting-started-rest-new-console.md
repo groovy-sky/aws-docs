@@ -1,3 +1,7 @@
+---
+title: "Get started with the REST API console"
+---
+
 # Get started with the REST API console
 
 In this getting started exercise, you create a serverless REST API using the API Gateway REST API console.

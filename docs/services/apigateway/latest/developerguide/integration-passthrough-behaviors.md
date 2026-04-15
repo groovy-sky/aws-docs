@@ -1,3 +1,7 @@
+---
+title: "Method request behavior for payloads without mapping templates for REST APIs in API Gateway"
+---
+
 # Method request behavior for payloads without mapping templates for REST APIs in API Gateway
 
 If your method request has a payload and you don't have a mapping template defined for the

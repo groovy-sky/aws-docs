@@ -1,3 +1,7 @@
+---
+title: "GetIntegrationResponse"
+---
+
 # GetIntegrationResponse
 
 Represents a get integration response.

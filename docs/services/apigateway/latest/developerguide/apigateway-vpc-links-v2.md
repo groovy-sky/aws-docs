@@ -1,3 +1,7 @@
+---
+title: "Set up VPC links V2 in API Gateway"
+---
+
 # Set up VPC links V2 in API Gateway
 
 VPC links enable you to create private integrations that connect your API routes to

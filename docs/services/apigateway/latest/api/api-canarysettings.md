@@ -1,3 +1,7 @@
+---
+title: "CanarySettings"
+---
+
 # CanarySettings
 
 Configuration settings of a canary deployment.

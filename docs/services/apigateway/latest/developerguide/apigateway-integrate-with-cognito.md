@@ -1,3 +1,7 @@
+---
+title: "Control access to REST APIs using Amazon Cognito user pools as an authorizer"
+---
+
 # Control access to REST APIs using Amazon Cognito user pools as an authorizer
 
 As an alternative to using [IAM roles and policies](permissions.md) or

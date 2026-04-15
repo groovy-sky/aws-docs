@@ -1,3 +1,7 @@
+---
+title: "PutRestApi"
+---
+
 # PutRestApi
 
 A feature of the API Gateway control service for updating an existing API with an input of external API definitions.

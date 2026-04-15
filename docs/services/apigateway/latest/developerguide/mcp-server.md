@@ -1,3 +1,7 @@
+---
+title: "Add an API Gateway REST API as a target for Amazon Bedrock AgentCore Gateway"
+---
+
 # Add an API Gateway REST API as a target for Amazon Bedrock AgentCore Gateway
 
 An Amazon Bedrock AgentCore Gateway provides AI agent developers a secure way to expose your API Gateway REST APIs as Model

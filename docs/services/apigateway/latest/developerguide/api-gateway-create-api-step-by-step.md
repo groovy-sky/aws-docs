@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a REST API with an HTTP non-proxy integration"
+---
+
 # Tutorial: Create a REST API with an HTTP non-proxy integration
 
 In this tutorial, you create an API from scratch using the Amazon API Gateway console. You can

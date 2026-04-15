@@ -1,3 +1,7 @@
+---
+title: "Manage connected users and client apps: $connect and $disconnect routes"
+---
+
 # Manage connected users and client apps: `$connect` and `$disconnect` routes
 
 The following section describes how to use the `$connect` and `$disconnect`

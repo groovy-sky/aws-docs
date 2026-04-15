@@ -1,3 +1,7 @@
+---
+title: "GetAccount"
+---
+
 # GetAccount
 
 Gets information about the current Account resource.

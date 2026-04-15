@@ -1,3 +1,7 @@
+---
+title: "Method"
+---
+
 # Method
 
 Represents a client-facing interface by which the client calls the API to access back-end resources. A Method resource is

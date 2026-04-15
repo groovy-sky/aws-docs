@@ -1,3 +1,7 @@
+---
+title: "Throttle requests to your HTTP APIs for better throughput in API Gateway"
+---
+
 # Throttle requests to your HTTP APIs for better throughput in API Gateway
 
 You can configure throttling for your APIs to help protect them from being overwhelmed by too many

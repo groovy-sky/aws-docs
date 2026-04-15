@@ -1,3 +1,7 @@
+---
+title: "Examples using variables for mapping template transformations for API Gateway"
+---
+
 # Examples using variables for mapping template transformations for API Gateway
 
 The following examples show how to use `$context`, `input`, and `util`

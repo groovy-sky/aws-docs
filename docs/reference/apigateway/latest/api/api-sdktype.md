@@ -1,3 +1,7 @@
+---
+title: "SdkType"
+---
+
 # SdkType
 
 A type of SDK that API Gateway can generate.

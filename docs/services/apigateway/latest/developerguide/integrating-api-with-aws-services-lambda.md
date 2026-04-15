@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a calculator REST API with two AWS service integrations and one Lambda non-proxy integration"
+---
+
 # Tutorial: Create a calculator REST API with two AWS service integrations and one Lambda non-proxy integration
 
 The [Tutorial: Create a REST API with a Lambda non-proxy integration](getting-started-lambda-non-proxy-integration.md) uses `Lambda Function` integration exclusively.

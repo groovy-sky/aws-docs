@@ -1,3 +1,7 @@
+---
+title: "Create HTTP proxy integrations for HTTP APIs"
+---
+
 # Create HTTP proxy integrations for HTTP APIs
 
 An HTTP proxy integration enables you to connect an API route to a publicly routable HTTP

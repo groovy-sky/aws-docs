@@ -1,3 +1,7 @@
+---
+title: "Set up a WebSocket API integration response in API Gateway"
+---
+
 # Set up a WebSocket API integration response in API Gateway
 
 The following section provides a brief overview of integration responses for WebSocket API and how to set up

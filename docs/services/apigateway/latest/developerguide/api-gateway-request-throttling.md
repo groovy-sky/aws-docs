@@ -1,3 +1,7 @@
+---
+title: "Throttle requests to your REST APIs for better throughput in API Gateway"
+---
+
 # Throttle requests to your REST APIs for better throughput in API Gateway
 
 You can configure throttling and quotas for your APIs to help protect them from being overwhelmed by too many

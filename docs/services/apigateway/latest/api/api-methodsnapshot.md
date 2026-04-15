@@ -1,3 +1,7 @@
+---
+title: "MethodSnapshot"
+---
+
 # MethodSnapshot
 
 Represents a summary of a Method resource, given a particular date and time.

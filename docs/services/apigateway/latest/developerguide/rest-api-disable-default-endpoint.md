@@ -1,3 +1,7 @@
+---
+title: "Disable the default endpoint for REST APIs"
+---
+
 # Disable the default endpoint for REST APIs
 
 By default, clients can invoke your API by using the `execute-api` endpoint that API Gateway generates for

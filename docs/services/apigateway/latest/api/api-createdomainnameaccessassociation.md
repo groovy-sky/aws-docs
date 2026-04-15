@@ -1,3 +1,7 @@
+---
+title: "CreateDomainNameAccessAssociation"
+---
+
 # CreateDomainNameAccessAssociation
 
 Creates a domain name access association resource between an access association source and a private custom

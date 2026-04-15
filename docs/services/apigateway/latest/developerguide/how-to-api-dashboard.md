@@ -1,3 +1,7 @@
+---
+title: "View CloudWatch metrics with the API dashboard in API Gateway"
+---
+
 # View CloudWatch metrics with the API dashboard in API Gateway
 
 You can use the API dashboard in the API Gateway Console to display the CloudWatch metrics of your deployed API in API Gateway. These are shown as a summary of API activity over time.

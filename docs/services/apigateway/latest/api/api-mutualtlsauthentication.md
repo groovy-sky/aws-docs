@@ -1,3 +1,7 @@
+---
+title: "MutualTlsAuthentication"
+---
+
 # MutualTlsAuthentication
 
 The mutual TLS authentication configuration for a custom domain name. If specified, API Gateway

@@ -1,3 +1,7 @@
+---
+title: "BasePathMapping"
+---
+
 # BasePathMapping
 
 Represents the base path that callers of the API must provide as part of the URL after the domain name.

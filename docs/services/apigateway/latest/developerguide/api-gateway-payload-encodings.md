@@ -1,3 +1,7 @@
+---
+title: "Binary media types for REST APIs in API Gateway"
+---
+
 # Binary media types for REST APIs in API Gateway
 
 In API Gateway, the API request and response have a text or binary payload. A text payload is a

@@ -1,3 +1,7 @@
+---
+title: "Routes"
+---
+
 # Routes
 
 Represents the collection of routes for an API.

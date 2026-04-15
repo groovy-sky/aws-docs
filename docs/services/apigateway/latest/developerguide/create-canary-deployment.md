@@ -1,3 +1,7 @@
+---
+title: "Create a canary release deployment"
+---
+
 # Create a canary release deployment
 
 You create a canary release deployment when deploying the API with [canary\

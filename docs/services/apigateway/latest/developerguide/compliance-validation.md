@@ -1,3 +1,7 @@
+---
+title: "Compliance validation for Amazon API Gateway"
+---
+
 # Compliance validation for Amazon API Gateway
 
 To learn whether an AWS service is within the scope of specific compliance programs, see

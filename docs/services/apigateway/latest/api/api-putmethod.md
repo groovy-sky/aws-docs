@@ -1,3 +1,7 @@
+---
+title: "PutMethod"
+---
+
 # PutMethod
 
 Add a method to an existing Resource resource.

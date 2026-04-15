@@ -1,3 +1,7 @@
+---
+title: "Set up basic request validation in API Gateway"
+---
+
 # Set up basic request validation in API Gateway
 
 This section shows how to set up request validation for API Gateway using the console, AWS CLI, and an OpenAPI definition.

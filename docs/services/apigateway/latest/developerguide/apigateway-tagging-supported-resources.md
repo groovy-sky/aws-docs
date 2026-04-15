@@ -1,3 +1,7 @@
+---
+title: "API Gateway resources that can be tagged"
+---
+
 # API Gateway resources that can be tagged
 
 Tags can be set on the following HTTP API or WebSocket API resources in the

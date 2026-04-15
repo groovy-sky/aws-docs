@@ -1,3 +1,7 @@
+---
+title: "Configure logging for WebSocket APIs in API Gateway"
+---
+
 # Configure logging for WebSocket APIs in API Gateway
 
 You can enable logging to write logs to CloudWatch Logs. There are two types of API logging in CloudWatch: execution logging and access logging. In

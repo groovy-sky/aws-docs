@@ -1,3 +1,7 @@
+---
+title: "DeleteStage"
+---
+
 # DeleteStage
 
 Deletes a Stage resource.

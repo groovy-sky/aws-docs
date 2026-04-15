@@ -1,3 +1,7 @@
+---
+title: "PutIntegrationResponse"
+---
+
 # PutIntegrationResponse
 
 Represents a put integration.

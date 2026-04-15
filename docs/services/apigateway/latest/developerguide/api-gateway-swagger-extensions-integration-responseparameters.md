@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-integration.responseParameters object"
+---
+
 # x-amazon-apigateway-integration.responseParameters object
 
 Specifies mappings from integration method response parameters to method response

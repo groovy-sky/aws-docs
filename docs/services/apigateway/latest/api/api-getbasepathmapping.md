@@ -1,3 +1,7 @@
+---
+title: "GetBasePathMapping"
+---
+
 # GetBasePathMapping
 
 Describe a BasePathMapping resource.

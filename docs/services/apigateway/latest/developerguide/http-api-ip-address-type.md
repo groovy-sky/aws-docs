@@ -1,3 +1,7 @@
+---
+title: "IP address types for HTTP APIs in API Gateway"
+---
+
 # IP address types for HTTP APIs in API Gateway
 
 When you create an API, you specify the type of IP addresses that can invoke your API. You can choose IPv4 to

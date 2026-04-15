@@ -1,3 +1,7 @@
+---
+title: "SdkConfigurationProperty"
+---
+
 # SdkConfigurationProperty
 
 A configuration property of an SDK type.

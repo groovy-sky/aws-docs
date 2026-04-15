@@ -1,3 +1,7 @@
+---
+title: "PutMethodResponse"
+---
+
 # PutMethodResponse
 
 Adds a MethodResponse to an existing Method resource.

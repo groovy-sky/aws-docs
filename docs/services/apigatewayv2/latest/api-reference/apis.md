@@ -1,3 +1,7 @@
+---
+title: "Apis"
+---
+
 # Apis
 
 Represents your APIs as a collection. A collection offers a paginated view of your APIs.

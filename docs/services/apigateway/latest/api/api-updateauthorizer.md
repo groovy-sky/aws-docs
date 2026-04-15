@@ -1,3 +1,7 @@
+---
+title: "UpdateAuthorizer"
+---
+
 # UpdateAuthorizer
 
 Updates an existing Authorizer resource.

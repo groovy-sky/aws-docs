@@ -1,3 +1,7 @@
+---
+title: "UpdateDocumentationPart"
+---
+
 # UpdateDocumentationPart
 
 Updates a documentation part.

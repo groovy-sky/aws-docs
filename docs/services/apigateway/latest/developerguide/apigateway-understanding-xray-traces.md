@@ -1,3 +1,7 @@
+---
+title: "AWS X-Ray traces for Amazon API Gateway APIs"
+---
+
 # AWS X-Ray traces for Amazon API Gateway APIs
 
 This section discusses AWS X-Ray trace segments, subsegments, and other trace fields for

@@ -1,3 +1,7 @@
+---
+title: "DomainName"
+---
+
 # DomainName
 
 Represents a custom domain name as a user-friendly host name of an API (RestApi).

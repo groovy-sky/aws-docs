@@ -1,3 +1,7 @@
+---
+title: "Create private integrations for HTTP APIs in API Gateway"
+---
+
 # Create private integrations for HTTP APIs in API Gateway
 
 Private integrations enable you to create API integrations with private resources in a

@@ -1,3 +1,7 @@
+---
+title: "Publish API documentation using the API Gateway REST API"
+---
+
 # Publish API documentation using the API Gateway REST API
 
 To publish the documentation for an API, create, update, or get a documentation

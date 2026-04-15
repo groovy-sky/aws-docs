@@ -1,3 +1,7 @@
+---
+title: "UpdateRestApi"
+---
+
 # UpdateRestApi
 
 Changes information about the specified API.

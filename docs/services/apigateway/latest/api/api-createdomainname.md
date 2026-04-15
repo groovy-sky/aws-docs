@@ -1,3 +1,7 @@
+---
+title: "CreateDomainName"
+---
+
 # CreateDomainName
 
 Creates a new domain name.

@@ -1,3 +1,7 @@
+---
+title: "GetSdk"
+---
+
 # GetSdk
 
 Generates a client SDK for a RestApi and Stage.

@@ -1,3 +1,7 @@
+---
+title: "DocumentationPartLocation"
+---
+
 # DocumentationPartLocation
 
 Specifies the target API entity to which the documentation applies.

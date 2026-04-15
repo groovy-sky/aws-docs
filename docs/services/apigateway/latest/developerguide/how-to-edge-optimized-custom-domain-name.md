@@ -1,3 +1,7 @@
+---
+title: "Set up an edge-optimized custom domain name in API Gateway"
+---
+
 # Set up an edge-optimized custom domain name in API Gateway
 
 When you create a custom domain name for an edge-optimized API, API Gateway sets up a CloudFront distribution and a DNS

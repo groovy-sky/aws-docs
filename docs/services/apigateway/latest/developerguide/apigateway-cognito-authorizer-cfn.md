@@ -1,3 +1,7 @@
+---
+title: "Create an Amazon Cognito authorizer for a REST API using CloudFormation"
+---
+
 # Create an Amazon Cognito authorizer for a REST API using CloudFormation
 
 You can use CloudFormation to create an Amazon Cognito user pool and an Amazon Cognito authorizer. The example CloudFormation template does the following:

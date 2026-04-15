@@ -1,3 +1,7 @@
+---
+title: "Set the routing mode for your custom domain name"
+---
+
 # Set the routing mode for your custom domain name
 
 You can choose which routing mode API Gateway uses to route traffic to your APIs. For more information, see

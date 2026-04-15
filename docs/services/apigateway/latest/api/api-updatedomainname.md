@@ -1,3 +1,7 @@
+---
+title: "UpdateDomainName"
+---
+
 # UpdateDomainName
 
 Changes information about the DomainName resource.

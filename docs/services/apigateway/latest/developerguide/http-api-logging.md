@@ -1,3 +1,7 @@
+---
+title: "Configure logging for HTTP APIs in API Gateway"
+---
+
 # Configure logging for HTTP APIs in API Gateway
 
 You can turn on logging to write logs to CloudWatch Logs. You can use [logging variables](http-api-logging-variables.md) to customize the

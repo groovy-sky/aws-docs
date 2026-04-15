@@ -1,3 +1,7 @@
+---
+title: "Control access to a REST API with IAM permissions"
+---
+
 # Control access to a REST API with IAM permissions
 
 You control access to your Amazon API Gateway API with [IAM permissions](../../../iam/latest/userguide/access-controlling.md) by controlling

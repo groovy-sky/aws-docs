@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting issues with HTTP APIs in API Gateway"
+---
+
 # Troubleshooting issues with HTTP APIs in API Gateway
 
 The following topics provide troubleshooting advice for errors and issues that you might

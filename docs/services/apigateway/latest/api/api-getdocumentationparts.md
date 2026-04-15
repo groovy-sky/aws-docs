@@ -1,3 +1,7 @@
+---
+title: "GetDocumentationParts"
+---
+
 # GetDocumentationParts
 
 Gets documentation parts.

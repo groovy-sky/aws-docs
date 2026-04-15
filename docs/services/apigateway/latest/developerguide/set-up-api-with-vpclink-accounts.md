@@ -1,3 +1,7 @@
+---
+title: "API Gateway accounts used for private integrations (legacy)"
+---
+
 # API Gateway accounts used for private integrations (legacy)
 
 The following region-specific API Gateway account IDs are automatically added to your VPC endpoint service as

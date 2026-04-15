@@ -1,3 +1,7 @@
+---
+title: "Develop WebSocket APIs in API Gateway"
+---
+
 # Develop WebSocket APIs in API Gateway
 
 This section provides details about API Gateway capabilities that you need

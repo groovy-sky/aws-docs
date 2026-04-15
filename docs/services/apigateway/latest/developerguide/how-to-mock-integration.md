@@ -1,3 +1,7 @@
+---
+title: "Mock integrations for REST APIs in API Gateway"
+---
+
 # Mock integrations for REST APIs in API Gateway
 
 Amazon API Gateway supports mock integrations for API methods. This feature enables API developers

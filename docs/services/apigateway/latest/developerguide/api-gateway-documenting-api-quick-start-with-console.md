@@ -1,3 +1,7 @@
+---
+title: "Document an API using the API Gateway console"
+---
+
 # Document an API using the API Gateway console
 
 In this section, we describe how to create and maintain documentation parts of an API

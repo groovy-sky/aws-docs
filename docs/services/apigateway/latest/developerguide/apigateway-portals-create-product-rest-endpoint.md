@@ -1,3 +1,7 @@
+---
+title: "Create a product REST endpoint in API Gateway"
+---
+
 # Create a product REST endpoint in API Gateway
 
 A product REST endpoint is an access point to your portal product. Each endpoint consists of the path and method

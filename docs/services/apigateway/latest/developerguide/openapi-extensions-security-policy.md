@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-security-policy"
+---
+
 # x-amazon-apigateway-security-policy
 
 Specifies a security policy for a REST API. If you create a security policy that starts with

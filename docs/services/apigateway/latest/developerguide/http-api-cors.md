@@ -1,3 +1,7 @@
+---
+title: "Configure CORS for HTTP APIs in API Gateway"
+---
+
 # Configure CORS for HTTP APIs in API Gateway
 
 [Cross-origin resource sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)

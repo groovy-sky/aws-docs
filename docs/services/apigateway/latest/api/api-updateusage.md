@@ -1,3 +1,7 @@
+---
+title: "UpdateUsage"
+---
+
 # UpdateUsage
 
 Grants a temporary extension to the remaining quota of a usage plan associated with a specified API key.

@@ -1,3 +1,7 @@
+---
+title: "Request validation for REST APIs in API Gateway"
+---
+
 # Request validation for REST APIs in API Gateway
 
 You can configure API Gateway to perform basic validation of an API request before proceeding

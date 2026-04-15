@@ -1,3 +1,7 @@
+---
+title: "Use AWS WAF to protect your REST APIs in API Gateway"
+---
+
 # Use AWS WAF to protect your REST APIs in API Gateway
 
 AWS WAF is a web application firewall that helps protect web applications and APIs from

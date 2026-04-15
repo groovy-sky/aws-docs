@@ -1,3 +1,7 @@
+---
+title: "Document an API using the API Gateway REST API"
+---
+
 # Document an API using the API Gateway REST API
 
 In this section, we describe how to create and maintain documentation parts of an API

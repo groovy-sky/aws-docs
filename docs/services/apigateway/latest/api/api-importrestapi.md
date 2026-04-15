@@ -1,3 +1,7 @@
+---
+title: "ImportRestApi"
+---
+
 # ImportRestApi
 
 A feature of the API Gateway control service for creating a new API from an external API definition file.

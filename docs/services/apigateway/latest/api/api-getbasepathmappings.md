@@ -1,3 +1,7 @@
+---
+title: "GetBasePathMappings"
+---
+
 # GetBasePathMappings
 
 Represents a collection of BasePathMapping resources.

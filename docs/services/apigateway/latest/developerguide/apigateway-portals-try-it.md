@@ -1,3 +1,7 @@
+---
+title: "Enable try it for an API Gateway product REST endpoint in your portal"
+---
+
 # Enable try it for an API Gateway product REST endpoint in your portal
 
 Use try it to let an API consumer invoke your product endpoint from your portal. When an API consumer uses try

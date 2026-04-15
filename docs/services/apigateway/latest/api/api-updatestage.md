@@ -1,3 +1,7 @@
+---
+title: "UpdateStage"
+---
+
 # UpdateStage
 
 Changes information about a Stage resource.

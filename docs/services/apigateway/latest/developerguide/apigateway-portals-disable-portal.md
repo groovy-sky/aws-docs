@@ -1,3 +1,7 @@
+---
+title: "Disable a portal in API Gateway"
+---
+
 # Disable a portal in API Gateway
 
 When you disable a portal, your portal is no longer available on the web. After you disable a portal, you

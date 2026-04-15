@@ -1,3 +1,7 @@
+---
+title: "Choose an HTTP integration tutorial"
+---
+
 # Choose an HTTP integration tutorial
 
 To build an API with HTTP integration, you can use either an HTTP proxy integration or an HTTP custom

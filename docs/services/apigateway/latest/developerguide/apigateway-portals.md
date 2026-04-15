@@ -1,3 +1,7 @@
+---
+title: "API Gateway portals"
+---
+
 # API Gateway portals
 
 You can use an API Gateway portal to share your APIs and API documentation with API consumers in a web page. A portal

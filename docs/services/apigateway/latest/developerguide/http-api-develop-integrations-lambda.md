@@ -1,3 +1,7 @@
+---
+title: "Create AWS Lambda proxy integrations for HTTP APIs in API Gateway"
+---
+
 # Create AWS Lambda proxy integrations for HTTP APIs in API Gateway
 
 A Lambda proxy integration enables you to integrate an API route with a Lambda function. When a client calls your

@@ -1,3 +1,7 @@
+---
+title: "Handle Lambda errors in API Gateway"
+---
+
 # Handle Lambda errors in API Gateway
 
 For Lambda custom integrations, you must map errors returned by Lambda in the integration

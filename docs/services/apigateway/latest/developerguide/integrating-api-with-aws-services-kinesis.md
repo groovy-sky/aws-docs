@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a REST API as an Amazon Kinesis proxy"
+---
+
 # Tutorial: Create a REST API as an Amazon Kinesis proxy
 
 This page describes how to create and configure a REST API with an integration of

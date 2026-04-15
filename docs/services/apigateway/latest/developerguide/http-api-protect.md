@@ -1,3 +1,7 @@
+---
+title: "Protect your HTTP APIs in API Gateway"
+---
+
 # Protect your HTTP APIs in API Gateway
 
 API Gateway provides a number of ways to protect your API from certain threats, like malicious

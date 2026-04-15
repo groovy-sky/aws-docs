@@ -1,3 +1,7 @@
+---
+title: "Authorizer"
+---
+
 # Authorizer
 
 Represents an authorizer. `JWT` authorizers are supported only for HTTP APIs.

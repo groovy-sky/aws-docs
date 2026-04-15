@@ -1,3 +1,7 @@
+---
+title: "Create a private API"
+---
+
 # Create a private API
 
 Before you create a private API, you first create a VPC endpoint for API Gateway. Next you create your private API and attach

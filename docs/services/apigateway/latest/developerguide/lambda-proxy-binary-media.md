@@ -1,3 +1,7 @@
+---
+title: "Return binary media from a Lambda proxy integration in API Gateway"
+---
+
 # Return binary media from a Lambda proxy integration in API Gateway
 
 To return binary media from an [AWS Lambda proxy\

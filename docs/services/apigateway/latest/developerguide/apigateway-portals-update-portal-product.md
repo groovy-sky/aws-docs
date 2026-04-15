@@ -1,3 +1,7 @@
+---
+title: "Update a portal product in API Gateway"
+---
+
 # Update a portal product in API Gateway
 
 When you update a portal product, you can change the name, description, or the display order of how your product

@@ -1,3 +1,7 @@
+---
+title: "Set up an API Gateway API with private integrations using the AWS CLI (legacy)"
+---
+
 # Set up an API Gateway API with private integrations using the AWS CLI (legacy)
 
 ###### Note

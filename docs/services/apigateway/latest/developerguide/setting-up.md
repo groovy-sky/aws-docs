@@ -1,3 +1,7 @@
+---
+title: "Set up to use API Gateway"
+---
+
 # Set up to use API Gateway
 
 Before you use Amazon API Gateway for the first time, complete the following tasks.

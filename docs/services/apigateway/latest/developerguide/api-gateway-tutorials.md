@@ -1,3 +1,7 @@
+---
+title: "Amazon API Gateway tutorials and workshops"
+---
+
 # Amazon API Gateway tutorials and workshops
 
 The following tutorials and workshops provide hands-on exercises to help you learn about API Gateway. To get started,

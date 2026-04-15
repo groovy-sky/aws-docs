@@ -1,3 +1,7 @@
+---
+title: "EndpointConfiguration"
+---
+
 # EndpointConfiguration
 
 The endpoint configuration to indicate the types of endpoints an API (RestApi) or its custom domain name (DomainName) has and the IP address types that can invoke it.

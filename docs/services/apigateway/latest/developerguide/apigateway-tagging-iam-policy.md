@@ -1,3 +1,7 @@
+---
+title: "Using tags to control access to API Gateway REST API resources"
+---
+
 # Using tags to control access to API Gateway REST API resources
 
 Conditions in AWS Identity and Access Management policies are part of the syntax that you use to specify permissions to API Gateway

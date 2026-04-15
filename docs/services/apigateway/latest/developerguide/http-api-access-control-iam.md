@@ -1,3 +1,7 @@
+---
+title: "Control access to HTTP APIs with IAM authorization in API Gateway"
+---
+
 # Control access to HTTP APIs with IAM authorization in API Gateway
 
 You can enable IAM authorization for HTTP API routes. When IAM authorization is

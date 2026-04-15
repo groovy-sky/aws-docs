@@ -1,3 +1,7 @@
+---
+title: "Publish a portal in API Gateway"
+---
+
 # Publish a portal in API Gateway
 
 For API consumers to access your portal, you must publish it. A portal URL can be discovered by anyone

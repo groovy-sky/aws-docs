@@ -1,3 +1,7 @@
+---
+title: "DeleteDocumentationPart"
+---
+
 # DeleteDocumentationPart
 
 Deletes a documentation part

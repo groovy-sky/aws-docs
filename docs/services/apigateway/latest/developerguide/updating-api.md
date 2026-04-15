@@ -1,3 +1,7 @@
+---
+title: "Updates to REST APIs that require redeployment"
+---
+
 # Updates to REST APIs that require redeployment
 
 Maintaining an API amounts to viewing, updating and deleting the existing API setups. You

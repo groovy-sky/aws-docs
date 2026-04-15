@@ -1,3 +1,7 @@
+---
+title: "Import an OpenAPI file to update an existing API definition"
+---
+
 # Import an OpenAPI file to update an existing API definition
 
 You can import API definitions only to update an existing API, without changing its endpoint configuration, as well as stages and stage

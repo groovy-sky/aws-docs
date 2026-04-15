@@ -1,3 +1,7 @@
+---
+title: "Stages for HTTP APIs in API Gateway"
+---
+
 # Stages for HTTP APIs in API Gateway
 
 An API stage is a logical reference to a lifecycle state of your API (for example,

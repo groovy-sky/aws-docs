@@ -1,3 +1,7 @@
+---
+title: "Simple calculator API OpenAPI definition"
+---
+
 # Simple calculator API OpenAPI definition
 
 The following is the OpenAPI definition of the simple calculator API. You can import it

@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a CRUD HTTP API with Lambda and DynamoDB"
+---
+
 # Tutorial: Create a CRUD HTTP API with Lambda and DynamoDB
 
 In this tutorial, you create a serverless API that creates, reads, updates, and deletes items from a DynamoDB

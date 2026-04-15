@@ -1,3 +1,7 @@
+---
+title: "How to use routing rules"
+---
+
 # How to use routing rules
 
 You can create a routing rule using the AWS Management Console, AWS CLI, or any AWS SDK. After you create a rule, you can

@@ -1,3 +1,7 @@
+---
+title: "Get certificates ready in AWS Certificate Manager"
+---
+
 # Get certificates ready in AWS Certificate Manager
 
 Before setting up a custom domain name for an API, you must have an SSL/TLS

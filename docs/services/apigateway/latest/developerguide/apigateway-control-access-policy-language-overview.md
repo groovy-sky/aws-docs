@@ -1,3 +1,7 @@
+---
+title: "Access policy language overview for Amazon API Gateway"
+---
+
 # Access policy language overview for Amazon API Gateway
 
 This page describes the basic elements used in Amazon API Gateway resource policies.

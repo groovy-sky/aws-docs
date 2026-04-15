@@ -1,3 +1,7 @@
+---
+title: "Documentation for REST APIs in API Gateway"
+---
+
 # Documentation for REST APIs in API Gateway
 
 To help customers understand and use your API, you should document the API. To help you

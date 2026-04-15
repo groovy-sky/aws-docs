@@ -1,3 +1,7 @@
+---
+title: "Set up a Regional custom domain name in API Gateway"
+---
+
 # Set up a Regional custom domain name in API Gateway
 
 Use a Regional custom domain name to create a user-friendly API base URL. With a Regional custom domain name,

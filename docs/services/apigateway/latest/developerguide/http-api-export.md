@@ -1,3 +1,7 @@
+---
+title: "Export HTTP APIs from API Gateway"
+---
+
 # Export HTTP APIs from API Gateway
 
 After you've created an HTTP API, you can export an OpenAPI 3.0 definition of your

@@ -1,3 +1,7 @@
+---
+title: "Send traffic to your APIs through your custom domain name in API Gateway"
+---
+
 # Send traffic to your APIs through your custom domain name in API Gateway
 
 When you configure the routing mode for your custom domain name, you set how incoming traffic is directed to

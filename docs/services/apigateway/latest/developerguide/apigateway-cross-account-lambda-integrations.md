@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a REST API with a cross-account Lambda proxy integration"
+---
+
 # Tutorial: Create a REST API with a cross-account Lambda proxy integration
 
 You can now use an AWS Lambda function from a different AWS account as your API

@@ -1,3 +1,7 @@
+---
+title: "Configure AWS X-Ray sampling rules for API Gateway APIs"
+---
+
 # Configure AWS X-Ray sampling rules for API Gateway APIs
 
 You can use AWS X-Ray console or SDK to configure sampling rules for your Amazon API Gateway API.

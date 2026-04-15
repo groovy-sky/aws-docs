@@ -1,3 +1,7 @@
+---
+title: "Share portal products in API Gateway"
+---
+
 # Share portal products in API Gateway
 
 You can share a portal product across AWS accounts using AWS RAM. When you share a portal product, the other

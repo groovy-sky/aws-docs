@@ -1,3 +1,7 @@
+---
+title: "Enable payload compression for an API in API Gateway"
+---
+
 # Enable payload compression for an API in API Gateway
 
 You can enable compression for an API using the API Gateway console, the AWS CLI, or an AWS

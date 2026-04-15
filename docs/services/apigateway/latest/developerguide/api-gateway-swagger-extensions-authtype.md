@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-authtype property"
+---
+
 # x-amazon-apigateway-authtype property
 
 For REST APIs, this extension can be used to define a custom type of a Lambda authorizer. In this

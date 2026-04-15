@@ -1,3 +1,7 @@
+---
+title: "Test CORS for an API Gateway API"
+---
+
 # Test CORS for an API Gateway API
 
 You can test your API's CORS configuration by invoking your API, and checking the CORS

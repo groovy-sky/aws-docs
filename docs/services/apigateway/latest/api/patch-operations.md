@@ -1,3 +1,7 @@
+---
+title: "Patch Operations"
+---
+
 # Patch Operations
 
 This section lists information about the supported patch operations to update resources.

@@ -1,3 +1,7 @@
+---
+title: "Set up a gateway response for a REST API using the API Gateway console"
+---
+
 # Set up a gateway response for a REST API using the API Gateway console
 
 The following example shows how to set up a gateway response for a REST API using the API Gateway console

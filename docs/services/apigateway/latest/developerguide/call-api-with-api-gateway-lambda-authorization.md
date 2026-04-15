@@ -1,3 +1,7 @@
+---
+title: "Call an API with an API Gateway Lambda authorizer"
+---
+
 # Call an API with an API Gateway Lambda authorizer
 
 Having configured the Lambda authorizer (formerly known as the custom authorizer) and deployed the API, you

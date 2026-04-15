@@ -1,3 +1,7 @@
+---
+title: "OpenAPI definitions of sample API integrated with a Lambda function"
+---
+
 # OpenAPI definitions of sample API integrated with a Lambda function
 
 OpenAPI 2.0

@@ -1,3 +1,7 @@
+---
+title: "Set up a stage for a REST API in API Gateway"
+---
+
 # Set up a stage for a REST API in API Gateway
 
 A stage is a named reference to a deployment, which is a snapshot of the API. You use a [Stage](../api/api-stage.md) to manage and optimize a particular deployment. For example, you

@@ -1,3 +1,7 @@
+---
+title: "Update a product REST endpoint in API Gateway"
+---
+
 # Update a product REST endpoint in API Gateway
 
 When you update a product REST endpoint, you can change all the settings of the product endpoint except for the path

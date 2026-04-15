@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-documentation object"
+---
+
 # x-amazon-apigateway-documentation object
 
 Defines the documentation parts to be imported into API Gateway. This object is a JSON

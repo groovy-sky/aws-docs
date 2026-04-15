@@ -1,3 +1,7 @@
+---
+title: "ApiStage"
+---
+
 # ApiStage
 
 API stage name of the associated API stage in a usage plan.

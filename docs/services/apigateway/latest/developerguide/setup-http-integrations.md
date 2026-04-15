@@ -1,3 +1,7 @@
+---
+title: "HTTP integrations for REST APIs in API Gateway"
+---
+
 # HTTP integrations for REST APIs in API Gateway
 
 You can integrate an API method with an HTTP endpoint using the HTTP proxy integration or

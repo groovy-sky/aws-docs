@@ -1,3 +1,7 @@
+---
+title: "Call a REST API integrated with an Amazon Cognito user pool"
+---
+
 # Call a REST API integrated with an Amazon Cognito user pool
 
 To call a method with a user pool authorizer configured, the client must do the

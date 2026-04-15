@@ -1,3 +1,7 @@
+---
+title: "Set up an integration response in API Gateway"
+---
+
 # Set up an integration response in API Gateway
 
 For a non-proxy integration, you must set up at least one integration response, and

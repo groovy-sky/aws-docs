@@ -1,3 +1,7 @@
+---
+title: "UpdateIntegrationResponse"
+---
+
 # UpdateIntegrationResponse
 
 Represents an update integration response.

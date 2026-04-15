@@ -1,3 +1,7 @@
+---
+title: "Map API stages to a custom domain name for HTTP APIs"
+---
+
 # Map API stages to a custom domain name for HTTP APIs
 
 You use API mappings to connect API stages to a custom domain name. After you create a domain name and configure

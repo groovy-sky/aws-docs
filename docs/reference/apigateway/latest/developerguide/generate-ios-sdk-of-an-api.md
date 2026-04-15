@@ -1,3 +1,7 @@
+---
+title: "Generate the iOS SDK of an API in API Gateway"
+---
+
 # Generate the iOS SDK of an API in API Gateway
 
 The following procedure shows how to generate the iOS SDK of an API in API Gateway.

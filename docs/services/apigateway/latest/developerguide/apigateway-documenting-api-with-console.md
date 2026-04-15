@@ -1,3 +1,7 @@
+---
+title: "Publish API documentation using the API Gateway console"
+---
+
 # Publish API documentation using the API Gateway console
 
 The following procedure describes how to publish a documentation version.

@@ -1,3 +1,7 @@
+---
+title: "ImportDocumentationParts"
+---
+
 # ImportDocumentationParts
 
 Imports documentation parts

@@ -1,3 +1,7 @@
+---
+title: "Develop REST APIs in API Gateway"
+---
+
 # Develop REST APIs in API Gateway
 
 In Amazon API Gateway, you build a REST API as a collection of programmable entities known as

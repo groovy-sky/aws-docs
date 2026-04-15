@@ -1,3 +1,7 @@
+---
+title: "Cache settings for REST APIs in API Gateway"
+---
+
 # Cache settings for REST APIs in API Gateway
 
 You can enable API caching in API Gateway to cache your endpoint's responses. With

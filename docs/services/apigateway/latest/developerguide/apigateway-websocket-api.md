@@ -1,3 +1,7 @@
+---
+title: "API Gateway WebSocket APIs"
+---
+
 # API Gateway WebSocket APIs
 
 A WebSocket API in API Gateway is a collection of WebSocket routes that are integrated with

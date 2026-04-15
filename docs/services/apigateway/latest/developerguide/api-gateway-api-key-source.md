@@ -1,3 +1,7 @@
+---
+title: "Choose an API key source in API Gateway"
+---
+
 # Choose an API key source in API Gateway
 
 When you associate a usage plan with an API and enable API keys on API methods, every

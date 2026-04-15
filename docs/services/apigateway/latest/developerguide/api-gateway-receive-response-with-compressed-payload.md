@@ -1,3 +1,7 @@
+---
+title: "Receive an API response with a compressed payload in API Gateway"
+---
+
 # Receive an API response with a compressed payload in API Gateway
 
 When making a request on a compression-enabled API, the client can choose to receive a

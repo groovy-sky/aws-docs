@@ -1,3 +1,7 @@
+---
+title: "Tagging your API Gateway resources"
+---
+
 # Tagging your API Gateway resources
 
 A _tag_ is a metadata label that you assign or that AWS assigns to an

@@ -1,3 +1,7 @@
+---
+title: "DocumentationVersion"
+---
+
 # DocumentationVersion
 
 A snapshot of the documentation of an API.

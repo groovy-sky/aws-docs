@@ -1,3 +1,7 @@
+---
+title: "Enable CORS on a resource using the API Gateway import API"
+---
+
 # Enable CORS on a resource using the API Gateway import API
 
 If you are using the [API Gateway Import API](api-gateway-import-api.md),

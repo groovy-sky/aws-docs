@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-gateway-responses.responseParameters object"
+---
+
 # x-amazon-apigateway-gateway-responses.responseParameters object
 
 Defines a string-to-string map of key-value pairs to generate gateway response parameters from the incoming request parameters or using literal strings. Supported only for REST APIs.

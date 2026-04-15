@@ -1,3 +1,7 @@
+---
+title: "DeleteMethod"
+---
+
 # DeleteMethod
 
 Deletes an existing Method resource.

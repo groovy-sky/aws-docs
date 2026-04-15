@@ -1,3 +1,7 @@
+---
+title: "DomainNameAccessAssociation"
+---
+
 # DomainNameAccessAssociation
 
 Represents a domain name access association between an access association source and a private custom domain name. With a domain name access association, an access association source can invoke a private custom domain name while isolated from the public internet.

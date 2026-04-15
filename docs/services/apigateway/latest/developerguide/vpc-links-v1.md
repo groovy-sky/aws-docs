@@ -1,3 +1,7 @@
+---
+title: "Private integration using VPC links V1 (legacy)"
+---
+
 # Private integration using VPC links V1 (legacy)
 
 ###### Note

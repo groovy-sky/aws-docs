@@ -1,3 +1,7 @@
+---
+title: "Invoke a private API"
+---
+
 # Invoke a private API
 
 You can only invoke a private API from within a VPC using a VPC endpoint. Your private API must have a resource policy that allows

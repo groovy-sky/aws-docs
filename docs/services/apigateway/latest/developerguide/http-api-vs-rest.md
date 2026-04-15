@@ -1,3 +1,7 @@
+---
+title: "Choose between REST APIs and HTTP APIs"
+---
+
 # Choose between REST APIs and HTTP APIs
 
 REST APIs and HTTP APIs are both RESTful API products. REST APIs support more

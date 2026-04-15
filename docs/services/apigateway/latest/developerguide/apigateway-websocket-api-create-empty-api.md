@@ -1,3 +1,7 @@
+---
+title: "Create WebSocket APIs in API Gateway"
+---
+
 # Create WebSocket APIs in API Gateway
 
 You can create a WebSocket API in the API Gateway console, by using the AWS CLI

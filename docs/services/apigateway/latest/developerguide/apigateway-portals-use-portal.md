@@ -1,3 +1,7 @@
+---
+title: "Use an API Gateway portal"
+---
+
 # Use an API Gateway portal
 
 After you publish your portal, it's available on the web. To use your portal, copy the **Portal default**

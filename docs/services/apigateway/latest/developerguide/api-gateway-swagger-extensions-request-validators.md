@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-request-validators object"
+---
+
 # x-amazon-apigateway-request-validators object
 
 Defines the supported request validators for the containing API as a map between a validator name and the associated request validation rules. This extension applies to a REST API.

@@ -1,3 +1,7 @@
+---
+title: "Set up a private integration"
+---
+
 # Set up a private integration
 
 To create a

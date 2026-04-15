@@ -1,3 +1,7 @@
+---
+title: "Control access to a REST API with API Gateway resource policies"
+---
+
 # Control access to a REST API with API Gateway resource policies
 
 Amazon API Gateway _resource policies_ are JSON policy documents that you attach to an API to control

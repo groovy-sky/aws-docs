@@ -1,3 +1,7 @@
+---
+title: "Custom domain name for public REST APIs in API Gateway"
+---
+
 # Custom domain name for public REST APIs in API Gateway
 
 _Custom domain names_ are simpler and more intuitive URLs that you can

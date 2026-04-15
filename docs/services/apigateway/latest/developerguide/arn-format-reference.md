@@ -1,3 +1,7 @@
+---
+title: "API Gateway Amazon Resource Name (ARN) reference"
+---
+
 # API Gateway Amazon Resource Name (ARN) reference
 
 The following tables list the Amazon Resource Names (ARNs) for API Gateway resources. To learn

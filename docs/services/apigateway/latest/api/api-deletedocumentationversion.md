@@ -1,3 +1,7 @@
+---
+title: "DeleteDocumentationVersion"
+---
+
 # DeleteDocumentationVersion
 
 Deletes a documentation version.

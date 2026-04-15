@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a REST API with a Lambda non-proxy integration"
+---
+
 # Tutorial: Create a REST API with a Lambda non-proxy integration
 
 In this walkthrough, we use the API Gateway console to build an API that enables a client to

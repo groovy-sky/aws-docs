@@ -1,3 +1,7 @@
+---
+title: "Infrastructure security in Amazon API Gateway"
+---
+
 # Infrastructure security in Amazon API Gateway
 
 As a managed service, Amazon API Gateway is protected by AWS global network security. For

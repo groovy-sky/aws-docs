@@ -1,3 +1,7 @@
+---
+title: "Turn off a canary release"
+---
+
 # Turn off a canary release
 
 To turn off a canary release deployment is to set the [`canarySettings`](../api/api-stage.md#canarySettings) to null to remove it from the stage.

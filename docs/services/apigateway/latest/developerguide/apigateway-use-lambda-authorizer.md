@@ -1,3 +1,7 @@
+---
+title: "Use API Gateway Lambda authorizers"
+---
+
 # Use API Gateway Lambda authorizers
 
 Use a _Lambda authorizer_ (formerly known as a _custom authorizer_) to

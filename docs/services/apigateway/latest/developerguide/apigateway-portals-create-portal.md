@@ -1,3 +1,7 @@
+---
+title: "Create a portal in API Gateway"
+---
+
 # Create a portal in API Gateway
 
 A portal is a collection of products. You control the authorization, branding, and publication of your portal.

@@ -1,3 +1,7 @@
+---
+title: "Generate the Ruby SDK of an API in API Gateway"
+---
+
 # Generate the Ruby SDK of an API in API Gateway
 
 The following procedure shows how to generate the Ruby SDK of an API in API Gateway.

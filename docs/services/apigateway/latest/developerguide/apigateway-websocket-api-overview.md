@@ -1,3 +1,7 @@
+---
+title: "Overview of WebSocket APIs in API Gateway"
+---
+
 # Overview of WebSocket APIs in API Gateway
 
 In API Gateway you can create a WebSocket API as a stateful frontend for an AWS service (such

@@ -1,3 +1,7 @@
+---
+title: "Monitor WebSocket APIs in API Gateway"
+---
+
 # Monitor WebSocket APIs in API Gateway
 
 You can use CloudWatch metrics and CloudWatch Logs to monitor WebSocket APIs. By combining logs and

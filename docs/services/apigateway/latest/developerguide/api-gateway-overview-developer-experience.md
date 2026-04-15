@@ -1,3 +1,7 @@
+---
+title: "API Gateway use cases"
+---
+
 # API Gateway use cases
 
 The following use cases section presents an overview of the different types of API Gateway APIs and the

@@ -1,3 +1,7 @@
+---
+title: "GetVpcLink"
+---
+
 # GetVpcLink
 
 Gets a specified VPC link under the caller's account in a region.

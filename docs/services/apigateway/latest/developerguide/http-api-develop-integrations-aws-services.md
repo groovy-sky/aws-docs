@@ -1,3 +1,7 @@
+---
+title: "Create AWS service integrations for HTTP APIs in API Gateway"
+---
+
 # Create AWS service integrations for HTTP APIs in API Gateway
 
 You can integrate your HTTP API with AWS services by using _first-class_

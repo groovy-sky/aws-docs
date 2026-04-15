@@ -1,3 +1,7 @@
+---
+title: "UpdateResource"
+---
+
 # UpdateResource
 
 Changes information about a Resource resource.

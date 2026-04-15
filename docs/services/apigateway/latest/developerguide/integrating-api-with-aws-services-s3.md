@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a REST API as an Amazon S3 proxy"
+---
+
 # Tutorial: Create a REST API as an Amazon S3 proxy
 
 As an example to showcase using a REST API in API Gateway to proxy Amazon S3, this section describes how to create and

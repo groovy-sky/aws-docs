@@ -1,3 +1,7 @@
+---
+title: "Set up a proxy resource with Lambda proxy integration with an OpenAPI definition"
+---
+
 # Set up a proxy resource with Lambda proxy integration with an OpenAPI definition
 
 To set up a proxy resource with the Lambda proxy integration type, create an API

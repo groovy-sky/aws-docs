@@ -1,3 +1,7 @@
+---
+title: "DocumentationPart"
+---
+
 # DocumentationPart
 
 A documentation part for a targeted API entity.

@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting issues with HTTP API Lambda integrations"
+---
+
 # Troubleshooting issues with HTTP API Lambda integrations
 
 The following provides troubleshooting advice for errors and issues that you might

@@ -1,3 +1,7 @@
+---
+title: "DeleteRestApi"
+---
+
 # DeleteRestApi
 
 Deletes the specified API.

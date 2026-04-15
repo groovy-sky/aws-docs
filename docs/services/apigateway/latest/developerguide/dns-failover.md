@@ -1,3 +1,7 @@
+---
+title: "Configure custom health checks for DNS failover for an API Gateway API"
+---
+
 # Configure custom health checks for DNS failover for an API Gateway API
 
 You can use Amazon Route 53 health checks to control DNS failover from an API Gateway API in a primary AWS Region to one

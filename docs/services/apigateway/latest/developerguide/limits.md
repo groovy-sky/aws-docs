@@ -1,3 +1,7 @@
+---
+title: "Amazon API Gateway quotas"
+---
+
 # Amazon API Gateway quotas
 
 The following quotas apply for all Amazon API Gateway API types.

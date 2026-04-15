@@ -1,3 +1,7 @@
+---
+title: "GetStages"
+---
+
 # GetStages
 
 Gets information about one or more Stage resources.

@@ -1,3 +1,7 @@
+---
+title: "Control access to API documentation in API Gateway"
+---
+
 # Control access to API documentation in API Gateway
 
 If you have a dedicated documentation team to write and edit your API documentation,

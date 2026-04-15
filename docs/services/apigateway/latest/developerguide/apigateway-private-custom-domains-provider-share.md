@@ -1,3 +1,7 @@
+---
+title: "API provider: Share your private custom domain name using AWS RAM"
+---
+
 # API provider: Share your private custom domain name using AWS RAM
 
 You can provide API consumers in other AWS accounts access to your private custom domain name. In this

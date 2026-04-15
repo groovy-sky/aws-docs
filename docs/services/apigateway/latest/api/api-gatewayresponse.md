@@ -1,3 +1,7 @@
+---
+title: "GatewayResponse"
+---
+
 # GatewayResponse
 
 A gateway response of a given response type and status code, with optional response parameters and mapping templates.

@@ -1,3 +1,7 @@
+---
+title: "Import API documentation"
+---
+
 # Import API documentation
 
 As with importing API entity definitions, you can import documentation parts from an

@@ -1,3 +1,7 @@
+---
+title: "GetUsagePlanKey"
+---
+
 # GetUsagePlanKey
 
 Gets a usage plan key of a given key identifier.

@@ -1,3 +1,7 @@
+---
+title: "Create routes for WebSocket APIs in API Gateway"
+---
+
 # Create routes for WebSocket APIs in API Gateway
 
 In your WebSocket API, incoming JSON messages are directed to backend integrations based

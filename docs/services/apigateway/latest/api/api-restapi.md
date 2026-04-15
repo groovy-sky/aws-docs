@@ -1,3 +1,7 @@
+---
+title: "RestApi"
+---
+
 # RestApi
 
 Represents a REST API.

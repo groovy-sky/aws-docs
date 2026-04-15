@@ -1,3 +1,7 @@
+---
+title: "View API Gateway metrics in the CloudWatch console"
+---
+
 # View API Gateway metrics in the CloudWatch console
 
 Metrics are grouped first by the service namespace, and then by the various dimension combinations within each

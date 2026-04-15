@@ -1,3 +1,7 @@
+---
+title: "Update a canary release"
+---
+
 # Update a canary release
 
 After a canary release is deployed, you may want to adjust the percentage of the

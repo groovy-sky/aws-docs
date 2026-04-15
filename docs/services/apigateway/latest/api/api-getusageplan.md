@@ -1,3 +1,7 @@
+---
+title: "GetUsagePlan"
+---
+
 # GetUsagePlan
 
 Gets a usage plan of a given plan identifier.

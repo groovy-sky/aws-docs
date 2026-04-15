@@ -1,3 +1,7 @@
+---
+title: "Gateway response types for API Gateway"
+---
+
 # Gateway response types for API Gateway
 
 API Gateway exposes the following gateway responses for customization by API developers.

@@ -1,3 +1,7 @@
+---
+title: "Set up a $connect route that requires a WebSocket subprotocol"
+---
+
 # Set up a `$connect` route that requires a WebSocket subprotocol
 
 Clients can use the `Sec-WebSocket-Protocol` field to request a [WebSocket subprotocol](https://datatracker.ietf.org/doc/html/rfc6455) during

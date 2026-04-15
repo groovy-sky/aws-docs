@@ -1,3 +1,7 @@
+---
+title: "GetClientCertificates"
+---
+
 # GetClientCertificates
 
 Gets a collection of ClientCertificate resources.

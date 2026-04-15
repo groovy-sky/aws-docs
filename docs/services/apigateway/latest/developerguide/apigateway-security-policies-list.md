@@ -1,3 +1,7 @@
+---
+title: "Supported security policies"
+---
+
 # Supported security policies
 
 The following tables describe the [security policies](apigateway-security-policies.md) that

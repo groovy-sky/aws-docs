@@ -1,3 +1,7 @@
+---
+title: "Security policy for WebSocket APIs in API Gateway"
+---
+
 # Security policy for WebSocket APIs in API Gateway
 
 API Gateway enforces a security policy of `TLS_1_2` for all WebSocket API endpoints.

@@ -1,3 +1,7 @@
+---
+title: "Integrate a REST API with an Amazon Cognito user pool"
+---
+
 # Integrate a REST API with an Amazon Cognito user pool
 
 After creating an Amazon Cognito user pool, in API Gateway, you must then create a

@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-endpoint-access-mode"
+---
+
 # x-amazon-apigateway-endpoint-access-mode
 
 Specifies a the endpoint access mode for a REST API or custom domain name. To learn more about

@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a WebSocket chat app with a WebSocket API, Lambda and DynamoDB"
+---
+
 # Tutorial: Create a WebSocket chat app with a WebSocket API, Lambda and DynamoDB
 
 In this tutorial, you'll create a serverless chat application with a WebSocket API. With a WebSocket API,

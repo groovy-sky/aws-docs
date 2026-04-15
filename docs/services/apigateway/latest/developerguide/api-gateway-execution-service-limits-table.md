@@ -1,3 +1,7 @@
+---
+title: "Quotas for configuring and running a REST API in API Gateway"
+---
+
 # Quotas for configuring and running a REST API in API Gateway
 
 The following quotas apply to configuring and running a REST API in Amazon API Gateway. If the quota is per-API, it can

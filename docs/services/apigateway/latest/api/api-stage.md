@@ -1,3 +1,7 @@
+---
+title: "Stage"
+---
+
 # Stage
 
 Represents a unique identifier for a version of a deployed RestApi that is callable by users.

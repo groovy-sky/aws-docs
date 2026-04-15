@@ -1,3 +1,7 @@
+---
+title: "Binary media types for WebSocket APIs in API Gateway"
+---
+
 # Binary media types for WebSocket APIs in API Gateway
 
 API Gateway WebSocket APIs don't currently support binary frames in incoming message

@@ -1,3 +1,7 @@
+---
+title: "GetSdkTypes"
+---
+
 # GetSdkTypes
 
 Gets SDK types

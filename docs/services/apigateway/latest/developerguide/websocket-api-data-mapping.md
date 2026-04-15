@@ -1,3 +1,7 @@
+---
+title: "Set up data mapping for WebSocket APIs in API Gateway"
+---
+
 # Set up data mapping for WebSocket APIs in API Gateway
 
 _Data mapping_ enables you to map data from a [route request](api-gateway-basic-concept.md#apigateway-definition-route-request) to a backend

@@ -1,3 +1,7 @@
+---
+title: "Distribute your REST APIs to clients in API Gateway"
+---
+
 # Distribute your REST APIs to clients in API Gateway
 
 This section provides details about distributing your API Gateway APIs to your customers.

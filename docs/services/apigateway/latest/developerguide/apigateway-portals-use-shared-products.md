@@ -1,3 +1,7 @@
+---
+title: "Add a shared portal product to your portal in API Gateway"
+---
+
 # Add a shared portal product to your portal in API Gateway
 
 As a portal owner, you can use portal products shared with you by other accounts in your portal.

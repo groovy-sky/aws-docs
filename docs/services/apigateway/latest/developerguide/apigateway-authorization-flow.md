@@ -1,3 +1,7 @@
+---
+title: "How API Gateway resource policies affect authorization workflow"
+---
+
 # How API Gateway resource policies affect authorization workflow
 
 When API Gateway evaluates the resource policy attached to your API, the result is affected by

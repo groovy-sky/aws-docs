@@ -1,3 +1,7 @@
+---
+title: "Get started with API Gateway"
+---
+
 # Get started with API Gateway
 
 In this getting started exercise, you create a serverless API. Serverless APIs let you focus on your

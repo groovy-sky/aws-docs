@@ -1,3 +1,7 @@
+---
+title: "Output from an API Gateway Lambda authorizer"
+---
+
 # Output from an API Gateway Lambda authorizer
 
 A Lambda authorizer function's output is a dictionary-like object, which must include the principal identifier

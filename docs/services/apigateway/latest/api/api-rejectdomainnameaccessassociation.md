@@ -1,3 +1,7 @@
+---
+title: "RejectDomainNameAccessAssociation"
+---
+
 # RejectDomainNameAccessAssociation
 
 Rejects a domain name access association with a private custom domain name.

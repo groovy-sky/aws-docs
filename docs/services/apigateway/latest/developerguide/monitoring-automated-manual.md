@@ -1,3 +1,7 @@
+---
+title: "Monitoring tools in AWS for API Gateway"
+---
+
 # Monitoring tools in AWS for API Gateway
 
 AWS provides various tools that you can use to monitor API Gateway. You can

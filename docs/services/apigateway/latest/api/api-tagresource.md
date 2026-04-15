@@ -1,3 +1,7 @@
+---
+title: "TagResource"
+---
+
 # TagResource
 
 Adds or updates a tag on a given resource.

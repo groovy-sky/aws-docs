@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a REST API with an HTTP proxy integration"
+---
+
 # Tutorial: Create a REST API with an HTTP proxy integration
 
 HTTP proxy integration is a simple, powerful, and versatile mechanism to build an API that

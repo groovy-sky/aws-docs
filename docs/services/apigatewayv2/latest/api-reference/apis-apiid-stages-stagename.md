@@ -1,3 +1,7 @@
+---
+title: "Stage"
+---
+
 # Stage
 
 Represents an API stage.

@@ -1,3 +1,7 @@
+---
+title: "Import a Regional API into API Gateway"
+---
+
 # Import a Regional API into API Gateway
 
 When importing an API, you can choose the regional endpoint configuration for the API. You

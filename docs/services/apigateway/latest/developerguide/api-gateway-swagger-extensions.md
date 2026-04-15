@@ -1,3 +1,7 @@
+---
+title: "OpenAPI extensions for API Gateway"
+---
+
 # OpenAPI extensions for API Gateway
 
 The API Gateway extensions support the AWS-specific authorization and API Gateway-specific API

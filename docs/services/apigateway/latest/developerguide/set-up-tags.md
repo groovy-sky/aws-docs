@@ -1,3 +1,7 @@
+---
+title: "Set up tags for an API stage in API Gateway"
+---
+
 # Set up tags for an API stage in API Gateway
 
 In API Gateway, you can add a tag to an API stage, remove the tag from the stage, or view the

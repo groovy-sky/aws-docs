@@ -1,3 +1,7 @@
+---
+title: "Control access to HTTP APIs with JWT authorizers in API Gateway"
+---
+
 # Control access to HTTP APIs with JWT authorizers in API Gateway
 
 You can use JSON Web Tokens (JWTs) as a part of [OpenID Connect\

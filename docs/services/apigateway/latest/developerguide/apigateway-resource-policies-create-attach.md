@@ -1,3 +1,7 @@
+---
+title: "Create and attach an API Gateway resource policy to an API"
+---
+
 # Create and attach an API Gateway resource policy to an API
 
 To allow a user to access your API by calling the API execution service, you must create an API Gateway resource
@@ -202,7 +206,7 @@ To troubleshoot this error, we first recommend that you check the policy syntax.
 that all the principals specified are valid and haven’t been deleted.
 
 In addition, if your API is in an [opt-in\
-Region](../../../glossary/latest/reference/glos-chap-icmpid-docs-homepage-addtlrcs.md#optinregion), verify that all accounts in the resource policy have the Region enabled.
+Region](../../../glossary/latest/reference/glos-chap.md#optinregion), verify that all accounts in the resource policy have the Region enabled.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

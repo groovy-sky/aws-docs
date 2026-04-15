@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-authorizer object"
+---
+
 # x-amazon-apigateway-authorizer object
 
 Defines a Lambda authorizer, Amazon Cognito user pool, or JWT authorizer to be applied for authorization of

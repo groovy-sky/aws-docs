@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-integration.requestTemplates object"
+---
+
 # x-amazon-apigateway-integration.requestTemplates object
 
 Specifies mapping templates for a request payload of the specified MIME types.

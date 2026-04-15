@@ -1,3 +1,7 @@
+---
+title: "DeleteIntegration"
+---
+
 # DeleteIntegration
 
 Represents a delete integration.

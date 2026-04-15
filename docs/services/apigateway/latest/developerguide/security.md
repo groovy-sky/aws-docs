@@ -1,3 +1,7 @@
+---
+title: "Security in Amazon API Gateway"
+---
+
 # Security in Amazon API Gateway
 
 Cloud security at AWS is the highest priority. As an AWS customer, you benefit from a data center and network architecture that is built to meet

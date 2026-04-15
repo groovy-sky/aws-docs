@@ -1,3 +1,7 @@
+---
+title: "Set up a proxy integration with a proxy resource"
+---
+
 # Set up a proxy integration with a proxy resource
 
 To set up a proxy integration in an API Gateway API with a [proxy resource](api-gateway-method-settings-method-request.md#api-gateway-proxy-resource), you perform the

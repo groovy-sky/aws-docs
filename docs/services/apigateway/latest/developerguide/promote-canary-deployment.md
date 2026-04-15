@@ -1,3 +1,7 @@
+---
+title: "Promote a canary release"
+---
+
 # Promote a canary release
 
 When you promote a canary release, the canary release replaces the current stage settings. Promoting a canary

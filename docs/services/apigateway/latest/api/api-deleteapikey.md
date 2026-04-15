@@ -1,3 +1,7 @@
+---
+title: "DeleteApiKey"
+---
+
 # DeleteApiKey
 
 Deletes the ApiKey resource.

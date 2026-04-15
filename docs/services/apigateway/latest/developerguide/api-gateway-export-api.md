@@ -1,3 +1,7 @@
+---
+title: "Export a REST API from API Gateway"
+---
+
 # Export a REST API from API Gateway
 
 Once you created and configured a REST API in API Gateway, using the API Gateway console or

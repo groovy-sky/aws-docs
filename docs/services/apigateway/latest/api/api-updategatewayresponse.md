@@ -1,3 +1,7 @@
+---
+title: "UpdateGatewayResponse"
+---
+
 # UpdateGatewayResponse
 
 Updates a GatewayResponse of a specified response type on the given RestApi.

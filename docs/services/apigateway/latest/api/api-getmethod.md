@@ -1,3 +1,7 @@
+---
+title: "GetMethod"
+---
+
 # GetMethod
 
 Describe an existing Method resource.

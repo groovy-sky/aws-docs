@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-any-method object"
+---
+
 # x-amazon-apigateway-any-method object
 
 Specifies the [OpenAPI Operation Object](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md) for the API Gateway catch-all `ANY` method in

@@ -1,3 +1,7 @@
+---
+title: "MethodSetting"
+---
+
 # MethodSetting
 
 Specifies the method setting properties.

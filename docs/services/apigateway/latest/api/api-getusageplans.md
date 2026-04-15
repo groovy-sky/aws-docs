@@ -1,3 +1,7 @@
+---
+title: "GetUsagePlans"
+---
+
 # GetUsagePlans
 
 Gets all the usage plans of the caller's account.

@@ -1,3 +1,7 @@
+---
+title: "Custom domain names for WebSocket APIs in API Gateway"
+---
+
 # Custom domain names for WebSocket APIs in API Gateway
 
 _Custom domain names_ are simpler and more intuitive URLs that you can

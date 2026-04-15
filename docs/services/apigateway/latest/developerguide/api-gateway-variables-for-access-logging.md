@@ -1,3 +1,7 @@
+---
+title: "Variables for access logging for API Gateway"
+---
+
 # Variables for access logging for API Gateway
 
 In access logging, you, as an API developer, want to log who has accessed your API and how the caller accessed

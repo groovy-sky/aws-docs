@@ -1,3 +1,7 @@
+---
+title: "Security best practices in Amazon API Gateway"
+---
+
 # Security best practices in Amazon API Gateway
 
 API Gateway provides a number of security features to consider as you develop and implement your own security policies. The following best

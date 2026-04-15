@@ -1,3 +1,7 @@
+---
+title: "GetClientCertificate"
+---
+
 # GetClientCertificate
 
 Gets information about the current ClientCertificate resource.

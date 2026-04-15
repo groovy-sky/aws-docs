@@ -1,3 +1,7 @@
+---
+title: "Use API mappings to connect API stages to a custom domain name for REST APIs"
+---
+
 # Use API mappings to connect API stages to a custom domain name for REST APIs
 
 You use API mappings to connect API stages to a custom domain name. This sends traffic to your APIs through your

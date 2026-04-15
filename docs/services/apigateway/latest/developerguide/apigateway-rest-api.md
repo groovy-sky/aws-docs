@@ -1,3 +1,7 @@
+---
+title: "API Gateway REST APIs"
+---
+
 # API Gateway REST APIs
 
 A REST API in API Gateway is a collection of resources and methods that are integrated with

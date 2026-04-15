@@ -1,3 +1,7 @@
+---
+title: "Simple calculator API in API Gateway"
+---
+
 # Simple calculator API in API Gateway
 
 Our simple calculator API exposes three methods (GET, POST, GET) to invoke the [Simple calculator Lambda function](simple-calc-nodejs-lambda-function.md). A graphical

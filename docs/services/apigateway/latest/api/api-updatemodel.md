@@ -1,3 +1,7 @@
+---
+title: "UpdateModel"
+---
+
 # UpdateModel
 
 Changes information about a model. The maximum size of the model is 400 KB.

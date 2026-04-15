@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-integration.requestParameters object"
+---
+
 # x-amazon-apigateway-integration.requestParameters object
 
 For REST APIs, specifies mappings from named method request parameters to integration request

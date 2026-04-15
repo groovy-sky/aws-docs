@@ -1,3 +1,7 @@
+---
+title: "Enable CORS on a resource using the API Gateway console"
+---
+
 # Enable CORS on a resource using the API Gateway console
 
 You can use the API Gateway console to enable CORS support for one or all methods on a REST

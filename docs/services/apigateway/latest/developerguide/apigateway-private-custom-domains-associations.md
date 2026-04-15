@@ -1,3 +1,7 @@
+---
+title: "Tasks of API providers and API consumers for custom domain names for private APIs"
+---
+
 # Tasks of API providers and API consumers for custom domain names for private APIs
 
 When you create a private custom domain name, you're an _API provider_. When you

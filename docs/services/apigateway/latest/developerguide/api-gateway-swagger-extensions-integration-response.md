@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-integration.response object"
+---
+
 # x-amazon-apigateway-integration.response object
 
 Defines a response and specifies parameter mappings or payload mappings from the

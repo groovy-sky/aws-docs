@@ -1,3 +1,7 @@
+---
+title: "API consumer: Associate your VPC endpoint with a private custom domain name shared with you"
+---
+
 # API consumer: Associate your VPC endpoint with a private custom domain name shared with you
 
 The following procedure shows how to consume a private domain name in another AWS account. Depending

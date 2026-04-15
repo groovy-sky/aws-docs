@@ -1,3 +1,7 @@
+---
+title: "Amazon API Gateway important notes"
+---
+
 # Amazon API Gateway important notes
 
 The following section details notes that might impact your use of API Gateway.

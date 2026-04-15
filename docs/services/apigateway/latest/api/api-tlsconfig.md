@@ -1,3 +1,7 @@
+---
+title: "TlsConfig"
+---
+
 # TlsConfig
 
 Specifies the TLS configuration for an integration.

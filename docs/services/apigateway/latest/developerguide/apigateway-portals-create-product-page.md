@@ -1,3 +1,7 @@
+---
+title: "Create a product page in API Gateway"
+---
+
 # Create a product page in API Gateway
 
 A product page helps your product consumers understand and use your products. The documentation is at the

@@ -1,3 +1,7 @@
+---
+title: "Migrate a custom domain name to a different API endpoint type in API Gateway"
+---
+
 # Migrate a custom domain name to a different API endpoint type in API Gateway
 
 You can migrate your custom domain name between edge-optimized and Regional endpoints. You can't migrate a

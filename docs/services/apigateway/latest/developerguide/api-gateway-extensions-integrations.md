@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-integrations object"
+---
+
 # x-amazon-apigateway-integrations object
 
 Defines a collection of integrations. You can define integrations in the

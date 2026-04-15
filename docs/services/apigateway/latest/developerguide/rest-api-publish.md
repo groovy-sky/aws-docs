@@ -1,3 +1,7 @@
+---
+title: "Publish REST APIs for customers to invoke"
+---
+
 # Publish REST APIs for customers to invoke
 
 Simply creating and developing an API Gateway API doesn't automatically make it callable by your

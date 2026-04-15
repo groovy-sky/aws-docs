@@ -1,3 +1,7 @@
+---
+title: "UsagePlan"
+---
+
 # UsagePlan
 
 Represents a usage plan used to specify who can assess associated API stages. Optionally, target request rate and quota limits can be set.

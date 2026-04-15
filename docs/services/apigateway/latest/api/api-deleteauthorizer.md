@@ -1,3 +1,7 @@
+---
+title: "DeleteAuthorizer"
+---
+
 # DeleteAuthorizer
 
 Deletes an existing Authorizer resource.

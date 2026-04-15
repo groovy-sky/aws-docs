@@ -1,3 +1,7 @@
+---
+title: "PutIntegration"
+---
+
 # PutIntegration
 
 Sets up a method's integration.

@@ -1,3 +1,7 @@
+---
+title: "Representation of API documentation in API Gateway"
+---
+
 # Representation of API documentation in API Gateway
 
 API Gateway API documentation consists of individual documentation parts associated with

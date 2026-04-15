@@ -1,3 +1,7 @@
+---
+title: "Invoke REST APIs in API Gateway"
+---
+
 # Invoke REST APIs in API Gateway
 
 To call a deployed API, clients submit requests to the URL for the API Gateway component service

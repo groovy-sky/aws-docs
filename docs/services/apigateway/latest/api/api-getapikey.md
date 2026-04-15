@@ -1,3 +1,7 @@
+---
+title: "GetApiKey"
+---
+
 # GetApiKey
 
 Gets information about the current ApiKey resource.

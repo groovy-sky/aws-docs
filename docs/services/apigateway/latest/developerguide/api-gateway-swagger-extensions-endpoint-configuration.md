@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-endpoint-configuration object"
+---
+
 # x-amazon-apigateway-endpoint-configuration object
 
 Specifies details of the endpoint configuration for an API. This extension

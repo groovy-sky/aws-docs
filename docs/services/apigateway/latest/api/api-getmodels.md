@@ -1,3 +1,7 @@
+---
+title: "GetModels"
+---
+
 # GetModels
 
 Describes existing Models defined for a RestApi resource.

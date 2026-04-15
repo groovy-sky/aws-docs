@@ -1,3 +1,7 @@
+---
+title: "CreateResource"
+---
+
 # CreateResource
 
 Creates a Resource resource.

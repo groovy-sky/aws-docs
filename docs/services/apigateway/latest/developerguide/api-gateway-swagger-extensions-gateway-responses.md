@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-gateway-responses object"
+---
+
 # x-amazon-apigateway-gateway-responses object
 
 Defines the gateway responses for an API as a string-to- [GatewayResponse](../api/api-gatewayresponse.md) map of key-value pairs. The extension applies to the root-level OpenAPI structure.

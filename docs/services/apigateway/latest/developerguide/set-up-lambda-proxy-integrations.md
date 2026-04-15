@@ -1,3 +1,7 @@
+---
+title: "Lambda proxy integrations in API Gateway"
+---
+
 # Lambda proxy integrations in API Gateway
 
 The following section shows how to use a Lambda proxy integration.

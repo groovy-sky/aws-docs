@@ -1,3 +1,7 @@
+---
+title: "GetTags"
+---
+
 # GetTags
 
 Gets the Tags collection for a given resource.

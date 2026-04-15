@@ -1,3 +1,7 @@
+---
+title: "Sell your API Gateway APIs through AWS Marketplace"
+---
+
 # Sell your API Gateway APIs through AWS Marketplace
 
 After you build, test, and deploy your APIs, you can package them in an API Gateway [usage plan](api-gateway-api-usage-plans.md) and sell the plan as a Software

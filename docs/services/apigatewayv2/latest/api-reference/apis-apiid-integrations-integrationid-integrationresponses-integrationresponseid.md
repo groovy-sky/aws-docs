@@ -1,3 +1,7 @@
+---
+title: "IntegrationResponse"
+---
+
 # IntegrationResponse
 
 Represents an integration response. Supported only for WebSocket APIs.

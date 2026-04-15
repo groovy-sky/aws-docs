@@ -1,3 +1,7 @@
+---
+title: "DeploymentCanarySettings"
+---
+
 # DeploymentCanarySettings
 
 The input configuration for a canary deployment.

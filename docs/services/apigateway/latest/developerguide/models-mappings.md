@@ -1,3 +1,7 @@
+---
+title: "Mapping template transformations for REST APIs in API Gateway"
+---
+
 # Mapping template transformations for REST APIs in API Gateway
 
 A mapping template transformation uses a mapping template to modify your integration request or integration

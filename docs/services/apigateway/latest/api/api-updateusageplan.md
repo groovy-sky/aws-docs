@@ -1,3 +1,7 @@
+---
+title: "UpdateUsagePlan"
+---
+
 # UpdateUsagePlan
 
 Updates a usage plan of a given plan Id.

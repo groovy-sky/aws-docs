@@ -1,3 +1,7 @@
+---
+title: "AWS CloudFormation template of a sample API with basic request validation"
+---
+
 # AWS CloudFormation template of a sample API with basic request validation
 
 The following CloudFormation example template definition defines a sample API with request validation

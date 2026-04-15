@@ -1,3 +1,7 @@
+---
+title: "GenerateClientCertificate"
+---
+
 # GenerateClientCertificate
 
 Generates a ClientCertificate resource.

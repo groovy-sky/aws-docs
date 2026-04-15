@@ -1,3 +1,7 @@
+---
+title: "Gateway responses for REST APIs in API Gateway"
+---
+
 # Gateway responses for REST APIs in API Gateway
 
 A gateway response is identified by a response type that is defined by API Gateway. The

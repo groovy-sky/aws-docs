@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-gateway-responses.gatewayResponse object"
+---
+
 # x-amazon-apigateway-gateway-responses.gatewayResponse object
 
 Defines a gateway response of a given response type, including the status code, any

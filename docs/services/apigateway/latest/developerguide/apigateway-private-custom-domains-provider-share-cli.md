@@ -1,3 +1,7 @@
+---
+title: "API provider: Share your private custom domain name using the API Gateway AWS CLI"
+---
+
 # API provider: Share your private custom domain name using the API Gateway AWS CLI
 
 You can share a private custom domain name using the API Gateway AWS CLI, but we recommend that you use AWS RAM to reduce

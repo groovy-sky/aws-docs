@@ -1,3 +1,7 @@
+---
+title: "DeleteUsagePlanKey"
+---
+
 # DeleteUsagePlanKey
 
 Deletes a usage plan key and remove the underlying API key from the associated usage plan.

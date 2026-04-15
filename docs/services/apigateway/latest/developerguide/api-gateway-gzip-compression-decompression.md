@@ -1,3 +1,7 @@
+---
+title: "Payload compression for REST APIs in API Gateway"
+---
+
 # Payload compression for REST APIs in API Gateway
 
 API Gateway allows your client to call your API with compressed payloads by using one of the

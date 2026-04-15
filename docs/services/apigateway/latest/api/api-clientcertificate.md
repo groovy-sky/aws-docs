@@ -1,3 +1,7 @@
+---
+title: "ClientCertificate"
+---
+
 # ClientCertificate
 
 Represents a client certificate used to configure client-side SSL authentication while sending requests to the integration endpoint.

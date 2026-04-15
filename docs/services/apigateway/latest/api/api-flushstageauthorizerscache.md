@@ -1,3 +1,7 @@
+---
+title: "FlushStageAuthorizersCache"
+---
+
 # FlushStageAuthorizersCache
 
 Flushes all authorizer cache entries on a stage.

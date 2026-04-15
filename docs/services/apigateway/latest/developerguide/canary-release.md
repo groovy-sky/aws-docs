@@ -1,3 +1,7 @@
+---
+title: "Set up an API Gateway canary release deployment"
+---
+
 # Set up an API Gateway canary release deployment
 
 [Canary release](https://martinfowler.com/bliki/CanaryRelease.html) is a

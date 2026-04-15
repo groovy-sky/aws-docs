@@ -1,3 +1,7 @@
+---
+title: "Deploy WebSocket APIs in API Gateway"
+---
+
 # Deploy WebSocket APIs in API Gateway
 
 After creating your WebSocket API, you must deploy it to make it available for your users

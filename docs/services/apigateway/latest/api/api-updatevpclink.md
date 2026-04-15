@@ -1,3 +1,7 @@
+---
+title: "UpdateVpcLink"
+---
+
 # UpdateVpcLink
 
 Updates an existing VpcLink of a specified identifier.

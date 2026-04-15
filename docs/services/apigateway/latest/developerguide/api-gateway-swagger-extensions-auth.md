@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-auth object"
+---
+
 # x-amazon-apigateway-auth object
 
 Defines an authorization type to be applied for authorization of method invocations in

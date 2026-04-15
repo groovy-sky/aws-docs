@@ -1,3 +1,7 @@
+---
+title: "Lambda integrations for REST APIs in API Gateway"
+---
+
 # Lambda integrations for REST APIs in API Gateway
 
 You can integrate an API method with a Lambda function using Lambda proxy integration or

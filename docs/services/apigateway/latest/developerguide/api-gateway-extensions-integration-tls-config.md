@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-integration.tlsConfig object"
+---
+
 # x-amazon-apigateway-integration.tlsConfig object
 
 Specifies the TLS configuration for an integration.

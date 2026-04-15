@@ -1,3 +1,7 @@
+---
+title: "FlushStageCache"
+---
+
 # FlushStageCache
 
 Flushes a stage's cache.

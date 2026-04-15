@@ -1,3 +1,7 @@
+---
+title: "Methods for REST APIs in API Gateway"
+---
+
 # Methods for REST APIs in API Gateway
 
 In API Gateway, an API method embodies a [method\

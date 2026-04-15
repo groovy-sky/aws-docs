@@ -1,3 +1,7 @@
+---
+title: "GetDomainNames"
+---
+
 # GetDomainNames
 
 Represents a collection of DomainName resources.

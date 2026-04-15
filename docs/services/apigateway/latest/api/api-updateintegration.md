@@ -1,3 +1,7 @@
+---
+title: "UpdateIntegration"
+---
+
 # UpdateIntegration
 
 Represents an update integration.

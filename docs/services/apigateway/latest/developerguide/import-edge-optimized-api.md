@@ -1,3 +1,7 @@
+---
+title: "Import an edge-optimized API into API Gateway"
+---
+
 # Import an edge-optimized API into API Gateway
 
 You can import an API's OpenAPI definition file to create a new edge-optimized API by

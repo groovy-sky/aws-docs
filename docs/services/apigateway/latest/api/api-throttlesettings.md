@@ -1,3 +1,7 @@
+---
+title: "ThrottleSettings"
+---
+
 # ThrottleSettings
 
 The API request rate limits.

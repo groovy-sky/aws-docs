@@ -1,3 +1,7 @@
+---
+title: "Private integrations for REST APIs in API Gateway"
+---
+
 # Private integrations for REST APIs in API Gateway
 
 Use a private integration to expose your HTTP/HTTPS resources within an Amazon VPC for access by clients outside of

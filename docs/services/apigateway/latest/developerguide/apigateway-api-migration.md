@@ -1,3 +1,7 @@
+---
+title: "Change a public or private API endpoint type in API Gateway"
+---
+
 # Change a public or private API endpoint type in API Gateway
 
 Changing an API endpoint type requires you to update the API's configuration. You can change an existing API

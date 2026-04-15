@@ -1,3 +1,7 @@
+---
+title: "Examples of how API Gateway evaluates routing rules"
+---
+
 # Examples of how API Gateway evaluates routing rules
 
 The following section shows four examples of how API Gateway evaluates routing rules and API mappings.

@@ -1,3 +1,7 @@
+---
+title: "Set up Lambda custom integrations in API Gateway"
+---
+
 # Set up Lambda custom integrations in API Gateway
 
 To show how to set up the Lambda custom, or non-proxy,integration, we create an API Gateway API to expose

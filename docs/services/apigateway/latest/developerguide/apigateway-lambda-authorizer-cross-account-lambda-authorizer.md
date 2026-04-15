@@ -1,3 +1,7 @@
+---
+title: "Configure a cross-account API Gateway Lambda authorizer"
+---
+
 # Configure a cross-account API Gateway Lambda authorizer
 
 You can now also use an AWS Lambda function from a different AWS account as your API authorizer function.

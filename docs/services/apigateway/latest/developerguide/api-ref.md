@@ -1,3 +1,7 @@
+---
+title: "API references"
+---
+
 # API references
 
 Amazon API Gateway provides APIs for creating and deploying your own HTTP and WebSocket

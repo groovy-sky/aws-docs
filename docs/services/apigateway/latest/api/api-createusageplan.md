@@ -1,3 +1,7 @@
+---
+title: "CreateUsagePlan"
+---
+
 # CreateUsagePlan
 
 Creates a usage plan with the throttle and quota limits, as well as the associated API stages, specified in the payload.

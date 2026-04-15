@@ -1,3 +1,7 @@
+---
+title: "Stream the integration response for your proxy integrations in API Gateway"
+---
+
 # Stream the integration response for your proxy integrations in API Gateway
 
 You can configure your proxy integration to control how API Gateway returns your integration response. By default,

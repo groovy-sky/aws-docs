@@ -1,3 +1,7 @@
+---
+title: "Routing rules to connect API stages to a custom domain name for REST APIs"
+---
+
 # Routing rules to connect API stages to a custom domain name for REST APIs
 
 A routing rule is a set of conditions that when matched, invoke an action. For example, a rule can route any

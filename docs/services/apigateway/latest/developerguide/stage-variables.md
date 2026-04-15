@@ -1,3 +1,7 @@
+---
+title: "Use stage variables for a REST API in API Gateway"
+---
+
 # Use stage variables for a REST API in API Gateway
 
 Stage variables are key-value pairs that you can define as configuration attributes associated with a deployment

@@ -1,3 +1,7 @@
+---
+title: "Set up stage variables for REST APIs in API Gateway"
+---
+
 # Set up stage variables for REST APIs in API Gateway
 
 This section shows how to set up various stage variables for two deployment stages of a sample API by using

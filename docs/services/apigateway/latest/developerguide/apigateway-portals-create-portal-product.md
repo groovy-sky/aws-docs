@@ -1,3 +1,7 @@
+---
+title: "Create a portal product in API Gateway"
+---
+
 # Create a portal product in API Gateway
 
 The following procedure shows how to create a portal product. A portal is a collection of

@@ -1,3 +1,7 @@
+---
+title: "Choose an API Gateway API integration type"
+---
+
 # Choose an API Gateway API integration type
 
 You choose an API integration type according to the types of integration endpoint

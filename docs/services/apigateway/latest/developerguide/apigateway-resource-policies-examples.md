@@ -1,3 +1,7 @@
+---
+title: "API Gateway resource policy examples"
+---
+
 # API Gateway resource policy examples
 
 This page presents a few examples of typical use cases for API Gateway resource policies.

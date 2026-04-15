@@ -1,3 +1,7 @@
+---
+title: "Use wscat to connect to a WebSocket API and send messages to it"
+---
+
 # Use `wscat` to connect to a WebSocket API and send messages to it
 
 The `wscat`

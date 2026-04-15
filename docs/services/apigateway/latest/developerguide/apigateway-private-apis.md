@@ -1,3 +1,7 @@
+---
+title: "Private REST APIs in API Gateway"
+---
+
 # Private REST APIs in API Gateway
 
 A private API is a REST API that is only callable from within an Amazon VPC. You can access your API using

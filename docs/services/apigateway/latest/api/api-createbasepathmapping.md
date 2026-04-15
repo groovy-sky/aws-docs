@@ -1,3 +1,7 @@
+---
+title: "CreateBasePathMapping"
+---
+
 # CreateBasePathMapping
 
 Creates a new BasePathMapping resource.

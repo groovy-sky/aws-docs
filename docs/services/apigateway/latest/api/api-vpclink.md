@@ -1,3 +1,7 @@
+---
+title: "VpcLink"
+---
+
 # VpcLink
 
 An API Gateway VPC link for a RestApi to access resources in an Amazon Virtual Private Cloud (VPC).

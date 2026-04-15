@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-integration object"
+---
+
 # x-amazon-apigateway-integration object
 
 Specifies details of the backend integration used for this method.

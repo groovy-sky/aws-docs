@@ -1,3 +1,7 @@
+---
+title: "Errors and warnings from importing your API into API Gateway"
+---
+
 # Errors and warnings from importing your API into API Gateway
 
 When you import your external definition file into API Gateway, API Gateway might generate warnings and errors. The

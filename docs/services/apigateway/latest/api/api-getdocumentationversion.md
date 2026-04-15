@@ -1,3 +1,7 @@
+---
+title: "GetDocumentationVersion"
+---
+
 # GetDocumentationVersion
 
 Gets a documentation version.

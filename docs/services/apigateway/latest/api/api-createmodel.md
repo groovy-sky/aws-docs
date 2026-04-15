@@ -1,3 +1,7 @@
+---
+title: "CreateModel"
+---
+
 # CreateModel
 
 Adds a new Model resource to an existing RestApi resource.

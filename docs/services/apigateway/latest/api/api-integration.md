@@ -1,3 +1,7 @@
+---
+title: "Integration"
+---
+
 # Integration
 
 Represents an `HTTP`, `HTTP_PROXY`, `AWS`, `AWS_PROXY`, or Mock integration.

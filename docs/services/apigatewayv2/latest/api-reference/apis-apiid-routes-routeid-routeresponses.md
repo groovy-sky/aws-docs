@@ -1,3 +1,7 @@
+---
+title: "RouteResponses"
+---
+
 # RouteResponses
 
 Represents the collection of responses for a route. Supported only for WebSocket APIs.

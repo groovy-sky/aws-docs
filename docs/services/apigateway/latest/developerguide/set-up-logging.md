@@ -1,3 +1,7 @@
+---
+title: "Set up CloudWatch logging for REST APIs in API Gateway"
+---
+
 # Set up CloudWatch logging for REST APIs in API Gateway
 
 To help debug issues related to request execution or client access to your API, you can

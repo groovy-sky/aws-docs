@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a REST API with a Lambda proxy integration"
+---
+
 # Tutorial: Create a REST API with a Lambda proxy integration
 
 [Lambda proxy integration](set-up-lambda-proxy-integrations.md) is a

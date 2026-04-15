@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a private REST API"
+---
+
 # Tutorial: Create a private REST API
 
 In this tutorial, you create a private REST API. Clients can access the API only from within your Amazon VPC. The API

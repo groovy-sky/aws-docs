@@ -1,3 +1,7 @@
+---
+title: "Create routes for HTTP APIs in API Gateway"
+---
+
 # Create routes for HTTP APIs in API Gateway
 
 Routes direct incoming API requests to backend resources. Routes consist of two parts: an

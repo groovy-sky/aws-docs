@@ -1,3 +1,7 @@
+---
+title: "DeleteClientCertificate"
+---
+
 # DeleteClientCertificate
 
 Deletes the ClientCertificate resource.

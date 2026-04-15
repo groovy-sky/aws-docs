@@ -1,3 +1,7 @@
+---
+title: "Log REST API calls to Amazon Data Firehose in API Gateway"
+---
+
 # Log REST API calls to Amazon Data Firehose in API Gateway
 
 To help debug issues related to client access to your API, you can log API calls to

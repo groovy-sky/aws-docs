@@ -1,3 +1,7 @@
+---
+title: "Control access for invoking an API"
+---
+
 # Control access for invoking an API
 
 In this section, you learn about the permissions model for controlling access to your API using IAM

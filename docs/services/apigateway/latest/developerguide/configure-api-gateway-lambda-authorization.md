@@ -1,3 +1,7 @@
+---
+title: "Configure an API Gateway Lambda authorizer"
+---
+
 # Configure an API Gateway Lambda authorizer
 
 After you create a Lambda function, you configure the Lambda function as an authorizer for your API. You then

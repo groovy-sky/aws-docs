@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create and invoke a custom domain name for private APIs"
+---
+
 # Tutorial: Create and invoke a custom domain name for private APIs
 
 In this tutorial, you create a private custom domain name that you can invoke in a VPC in your own account. To

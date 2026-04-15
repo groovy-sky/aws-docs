@@ -1,3 +1,7 @@
+---
+title: "x-amazon-apigateway-importexport-version"
+---
+
 # x-amazon-apigateway-importexport-version
 
 Specifies the version of the API Gateway import and export algorithm for HTTP APIs.

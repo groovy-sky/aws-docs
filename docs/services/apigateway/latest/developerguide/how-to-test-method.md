@@ -1,3 +1,7 @@
+---
+title: "Use the API Gateway console to test a REST API method"
+---
+
 # Use the API Gateway console to test a REST API method
 
 Use the API Gateway console to test a REST API method.

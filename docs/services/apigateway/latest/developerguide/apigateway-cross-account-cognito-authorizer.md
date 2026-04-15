@@ -1,3 +1,7 @@
+---
+title: "Configure cross-account Amazon Cognito authorizer for a REST API using the API Gateway console"
+---
+
 # Configure cross-account Amazon Cognito authorizer for a REST API using the API Gateway console
 
 You can now also use a Amazon Cognito user pool from a different AWS account as your API

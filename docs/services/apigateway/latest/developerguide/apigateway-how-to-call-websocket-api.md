@@ -1,3 +1,7 @@
+---
+title: "Invoke WebSocket APIs"
+---
+
 # Invoke WebSocket APIs
 
 After you've deployed your WebSocket API, client applications can connect to it and send

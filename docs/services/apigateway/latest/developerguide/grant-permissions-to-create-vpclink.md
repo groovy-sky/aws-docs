@@ -1,3 +1,7 @@
+---
+title: "Grant permissions for API Gateway to create a VPC link (legacy)"
+---
+
 # Grant permissions for API Gateway to create a VPC link (legacy)
 
 ###### Note

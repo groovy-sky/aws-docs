@@ -1,3 +1,7 @@
+---
+title: "Authorizer"
+---
+
 # Authorizer
 
 Represents an authorization layer for methods. If enabled on a method, API Gateway will activate the authorizer when a client calls the method.

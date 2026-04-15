@@ -1,3 +1,7 @@
+---
+title: "API endpoint types for REST APIs in API Gateway"
+---
+
 # API endpoint types for REST APIs in API Gateway
 
 An _[API\_
