@@ -31,9 +31,13 @@ const indexHTML = `<!doctype html>
     li { margin: 4px 0; }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .dir { color: #c4d4ea; font-weight: 600; }
+    .dir { color: #c4d4ea; font-weight: 600; cursor: default; }
     .file { color: var(--text); }
     .raw { color: var(--muted); margin-left:8px; font-size: 0.9em; }
+    details > summary { cursor: pointer; list-style: none; display: inline; }
+    details > summary::-webkit-details-marker { display: none; }
+    details > summary.dir::before { content: '▶ '; font-size: 0.75em; opacity: 0.7; }
+    details[open] > summary.dir::before { content: '▼ '; font-size: 0.75em; opacity: 0.7; }
   </style>
 </head>
 <body>
@@ -69,7 +73,8 @@ const indexHTML = `<!doctype html>
       return { name, children: {}, filePath: null };
     }
 
-    function renderNode(node, basePath = '') {
+    function renderNode(node, basePath, afterLatest) {
+      afterLatest = !!afterLatest;
       const keys = Object.keys(node.children).sort((a, b) => a.localeCompare(b));
       const ul = document.createElement('ul');
       for (const key of keys) {
@@ -77,16 +82,27 @@ const indexHTML = `<!doctype html>
         const li = document.createElement('li');
         const hasChildren = Object.keys(child.children).length > 0;
         if (hasChildren) {
-          const label = document.createElement('span');
-          label.className = 'dir';
-          label.textContent = key + '/';
-          li.appendChild(label);
-          li.appendChild(renderNode(child, basePath ? basePath + '/' + key : key));
+          const childAfterLatest = afterLatest || key === 'latest';
+          if (afterLatest) {
+            const details = document.createElement('details');
+            const summary = document.createElement('summary');
+            summary.className = 'dir';
+            summary.textContent = key + '/';
+            details.appendChild(summary);
+            details.appendChild(renderNode(child, basePath ? basePath + '/' + key : key, childAfterLatest));
+            li.appendChild(details);
+          } else {
+            const label = document.createElement('span');
+            label.className = 'dir';
+            label.textContent = key + '/';
+            li.appendChild(label);
+            li.appendChild(renderNode(child, basePath ? basePath + '/' + key : key, childAfterLatest));
+          }
         } else {
           const view = document.createElement('a');
           view.href = 'viewer.html?path=' + encodeURIComponent(child.filePath);
           view.className = 'file';
-          view.textContent = key;
+          view.textContent = key.endsWith('.md') ? key.slice(0, -3) : key;
           li.appendChild(view);
 
           const raw = document.createElement('a');
@@ -111,7 +127,10 @@ const indexHTML = `<!doctype html>
         }
       }
       treeEl.innerHTML = '';
-      treeEl.appendChild(renderNode(root));
+      treeEl.appendChild(renderNode(root, '', false));
+      if (q) {
+        treeEl.querySelectorAll('details').forEach(d => d.open = true);
+      }
     }
 
     fetch('docs-index.json')
