@@ -1,3 +1,7 @@
+---
+title: "RequestCancelActivityTaskDecisionAttributes"
+---
+
 # RequestCancelActivityTaskDecisionAttributes
 
 Provides the details of the `RequestCancelActivityTask` decision.

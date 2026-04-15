@@ -1,3 +1,7 @@
+---
+title: "RespondActivityTaskCanceled"
+---
+
 # RespondActivityTaskCanceled
 
 Used by workers to tell the service that the [ActivityTask](api-activitytask.md) identified

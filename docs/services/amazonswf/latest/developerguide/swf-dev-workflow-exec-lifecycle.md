@@ -1,3 +1,7 @@
+---
+title: "Life cycle of a Amazon SWF workflow"
+---
+
 # Life cycle of a Amazon SWF workflow
 
 From the start of a workflow execution to its completion, Amazon SWF interacts with actors by assigning them

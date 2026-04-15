@@ -1,3 +1,7 @@
+---
+title: "Working in the Amazon SWF console"
+---
+
 # Working in the Amazon SWF console
 
 The Amazon SWF console provides options to configure, initiate, and manage workflow executions.

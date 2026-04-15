@@ -1,3 +1,7 @@
+---
+title: "TagResource"
+---
+
 # TagResource
 
 Add a tag to a Amazon SWF domain.

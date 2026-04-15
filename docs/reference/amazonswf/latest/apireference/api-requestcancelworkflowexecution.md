@@ -1,3 +1,7 @@
+---
+title: "RequestCancelWorkflowExecution"
+---
+
 # RequestCancelWorkflowExecution
 
 Records a `WorkflowExecutionCancelRequested` event in the currently running

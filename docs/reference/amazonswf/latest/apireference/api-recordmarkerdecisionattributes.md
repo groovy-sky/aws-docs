@@ -1,3 +1,7 @@
+---
+title: "RecordMarkerDecisionAttributes"
+---
+
 # RecordMarkerDecisionAttributes
 
 Provides the details of the `RecordMarker` decision.

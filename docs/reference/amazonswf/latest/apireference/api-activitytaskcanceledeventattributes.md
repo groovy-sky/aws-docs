@@ -1,3 +1,7 @@
+---
+title: "ActivityTaskCanceledEventAttributes"
+---
+
 # ActivityTaskCanceledEventAttributes
 
 Provides the details of the `ActivityTaskCanceled` event.

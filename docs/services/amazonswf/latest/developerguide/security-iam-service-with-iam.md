@@ -1,3 +1,7 @@
+---
+title: "How Amazon Simple Workflow Service works with IAM"
+---
+
 # How Amazon Simple Workflow Service works with IAM
 
 Before you use IAM to manage access to Amazon SWF, learn what IAM features are

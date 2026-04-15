@@ -1,3 +1,7 @@
+---
+title: "Implementing Workflow Applications with the AWS Flow Framework"
+---
+
 # Implementing Workflow Applications with the AWS Flow Framework
 
 The typical steps involved in developing a workflow with the AWS Flow Framework are:

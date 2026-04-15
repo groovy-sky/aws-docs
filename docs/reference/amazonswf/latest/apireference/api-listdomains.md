@@ -1,3 +1,7 @@
+---
+title: "ListDomains"
+---
+
 # ListDomains
 
 Returns the list of domains registered in the account. The results may be split into

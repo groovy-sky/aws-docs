@@ -1,3 +1,7 @@
+---
+title: "Handling errors in Amazon SWF"
+---
+
 # Handling errors in Amazon SWF
 
 There are a number of different types of errors that can occur during the course of a workflow

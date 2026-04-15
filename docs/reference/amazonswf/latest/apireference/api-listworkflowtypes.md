@@ -1,3 +1,7 @@
+---
+title: "ListWorkflowTypes"
+---
+
 # ListWorkflowTypes
 
 Returns information about workflow types in the specified domain. The results may be

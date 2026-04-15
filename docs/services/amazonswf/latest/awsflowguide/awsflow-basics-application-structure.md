@@ -1,3 +1,7 @@
+---
+title: "AWS Flow Framework Basic Concepts: Application Structure"
+---
+
 # AWS Flow Framework Basic Concepts: Application Structure
 
 Conceptually, an AWS Flow Framework application consists of three basic components: _workflow_

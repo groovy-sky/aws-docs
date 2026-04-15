@@ -1,3 +1,7 @@
+---
+title: "LambdaFunctionStartedEventAttributes"
+---
+
 # LambdaFunctionStartedEventAttributes
 
 Provides the details of the `LambdaFunctionStarted` event. It isn't set for

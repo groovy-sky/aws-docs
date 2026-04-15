@@ -1,3 +1,7 @@
+---
+title: "WorkflowExecutionSignaledEventAttributes"
+---
+
 # WorkflowExecutionSignaledEventAttributes
 
 Provides the details of the `WorkflowExecutionSignaled` event.

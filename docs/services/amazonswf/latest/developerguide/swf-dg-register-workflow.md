@@ -1,3 +1,7 @@
+---
+title: "Registering a Workflow Type with Amazon SWF"
+---
+
 # Registering a Workflow Type with Amazon SWF
 
 The example discussed in this section registers a workflow type using the Amazon SWF API. The

@@ -1,3 +1,7 @@
+---
+title: "StartChildWorkflowExecutionInitiatedEventAttributes"
+---
+
 # StartChildWorkflowExecutionInitiatedEventAttributes
 
 Provides the details of the `StartChildWorkflowExecutionInitiated` event.

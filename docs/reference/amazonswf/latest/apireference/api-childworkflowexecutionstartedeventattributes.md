@@ -1,3 +1,7 @@
+---
+title: "ChildWorkflowExecutionStartedEventAttributes"
+---
+
 # ChildWorkflowExecutionStartedEventAttributes
 
 Provides the details of the `ChildWorkflowExecutionStarted` event.

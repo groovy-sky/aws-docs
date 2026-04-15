@@ -1,3 +1,7 @@
+---
+title: "LambdaFunctionScheduledEventAttributes"
+---
+
 # LambdaFunctionScheduledEventAttributes
 
 Provides the details of the `LambdaFunctionScheduled` event. It isn't set

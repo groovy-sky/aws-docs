@@ -1,3 +1,7 @@
+---
+title: "RecordMarkerFailedEventAttributes"
+---
+
 # RecordMarkerFailedEventAttributes
 
 Provides the details of the `RecordMarkerFailed` event.

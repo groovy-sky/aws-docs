@@ -1,3 +1,7 @@
+---
+title: "Child Workflow Executions"
+---
+
 # Child Workflow Executions
 
 In the examples so far, we have started workflow execution directly from an application.

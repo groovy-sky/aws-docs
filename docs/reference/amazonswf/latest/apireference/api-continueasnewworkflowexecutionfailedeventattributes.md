@@ -1,3 +1,7 @@
+---
+title: "ContinueAsNewWorkflowExecutionFailedEventAttributes"
+---
+
 # ContinueAsNewWorkflowExecutionFailedEventAttributes
 
 Provides the details of the `ContinueAsNewWorkflowExecutionFailed` event.

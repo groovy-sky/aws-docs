@@ -1,3 +1,7 @@
+---
+title: "StartChildWorkflowExecutionDecisionAttributes"
+---
+
 # StartChildWorkflowExecutionDecisionAttributes
 
 Provides the details of the `StartChildWorkflowExecution` decision.

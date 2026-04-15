@@ -1,3 +1,7 @@
+---
+title: "Making HTTP Requests to Amazon SWF"
+---
+
 # Making HTTP Requests to Amazon SWF
 
 If you don't use one of the AWS SDKs, you can perform Amazon Simple Workflow Service (Amazon SWF) operations over HTTP using the POST

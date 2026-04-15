@@ -1,3 +1,7 @@
+---
+title: "Setting task priority in Amazon SWF"
+---
+
 # Setting task priority in Amazon SWF
 
 By default, tasks on a task list are delivered based upon their _arrival_

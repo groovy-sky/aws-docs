@@ -1,3 +1,7 @@
+---
+title: "ChildWorkflowExecutionCompletedEventAttributes"
+---
+
 # ChildWorkflowExecutionCompletedEventAttributes
 
 Provides the details of the `ChildWorkflowExecutionCompleted` event.

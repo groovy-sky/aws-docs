@@ -1,3 +1,7 @@
+---
+title: "CloseStatusFilter"
+---
+
 # CloseStatusFilter
 
 Used to filter the closed workflow executions in visibility APIs by their close status.

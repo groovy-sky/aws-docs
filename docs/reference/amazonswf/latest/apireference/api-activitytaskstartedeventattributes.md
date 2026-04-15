@@ -1,3 +1,7 @@
+---
+title: "ActivityTaskStartedEventAttributes"
+---
+
 # ActivityTaskStartedEventAttributes
 
 Provides the details of the `ActivityTaskStarted` event.

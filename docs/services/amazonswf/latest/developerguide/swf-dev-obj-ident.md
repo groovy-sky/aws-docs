@@ -1,3 +1,7 @@
+---
+title: "Object identifiers in Amazon SWF"
+---
+
 # Object identifiers in Amazon SWF
 
 The following list describes how Amazon SWF objects, such as workflow executions, are uniquely identified.

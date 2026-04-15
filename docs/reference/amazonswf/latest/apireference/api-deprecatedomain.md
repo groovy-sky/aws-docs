@@ -1,3 +1,7 @@
+---
+title: "DeprecateDomain"
+---
+
 # DeprecateDomain
 
 Deprecates the specified domain. After a domain has been deprecated it cannot be used

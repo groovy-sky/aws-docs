@@ -1,3 +1,7 @@
+---
+title: "HelloWorldWorkflowParallel Application"
+---
+
 # HelloWorldWorkflowParallel Application
 
 The preceding versions of Hello World! all use a linear workflow topology. However, Amazon SWF

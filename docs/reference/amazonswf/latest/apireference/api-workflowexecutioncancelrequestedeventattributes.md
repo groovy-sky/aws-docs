@@ -1,3 +1,7 @@
+---
+title: "WorkflowExecutionCancelRequestedEventAttributes"
+---
+
 # WorkflowExecutionCancelRequestedEventAttributes
 
 Provides the details of the `WorkflowExecutionCancelRequested` event.

@@ -1,3 +1,7 @@
+---
+title: "Continuous Workflows"
+---
+
 # Continuous Workflows
 
 In some use cases, you may need a workflow that executes forever or runs for a long

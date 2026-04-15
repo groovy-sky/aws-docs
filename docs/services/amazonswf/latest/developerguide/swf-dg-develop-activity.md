@@ -1,3 +1,7 @@
+---
+title: "Developing an Activity Worker in Amazon SWF"
+---
+
 # Developing an Activity Worker in Amazon SWF
 
 An activity worker provides the implementation of one or more activity types. An activity worker communicates

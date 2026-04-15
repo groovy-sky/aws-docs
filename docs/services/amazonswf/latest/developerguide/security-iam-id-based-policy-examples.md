@@ -1,3 +1,7 @@
+---
+title: "Identity-based policy examples for Amazon Simple Workflow Service"
+---
+
 # Identity-based policy examples for Amazon Simple Workflow Service
 
 By default, users and roles don't have permission to create or modify Amazon SWF

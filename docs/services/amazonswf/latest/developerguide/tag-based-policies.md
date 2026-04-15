@@ -1,3 +1,7 @@
+---
+title: "Tag-based Policies"
+---
+
 # Tag-based Policies
 
 Amazon SWF supports policies based on tags. For instance, you could restrict Amazon SWF domains

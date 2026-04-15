@@ -1,3 +1,7 @@
+---
+title: "AWS Flow Framework Basic Concepts: Data Exchange Between Applications and Workflow Executions"
+---
+
 # AWS Flow Framework Basic Concepts: Data Exchange Between Applications and Workflow Executions
 
 A workflow entry point method can have one or more parameters, which allows the workflow starter to pass

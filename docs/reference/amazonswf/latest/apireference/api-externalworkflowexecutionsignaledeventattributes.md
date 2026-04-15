@@ -1,3 +1,7 @@
+---
+title: "ExternalWorkflowExecutionSignaledEventAttributes"
+---
+
 # ExternalWorkflowExecutionSignaledEventAttributes
 
 Provides the details of the `ExternalWorkflowExecutionSignaled` event.

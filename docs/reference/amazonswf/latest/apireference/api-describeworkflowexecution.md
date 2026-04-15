@@ -1,3 +1,7 @@
+---
+title: "DescribeWorkflowExecution"
+---
+
 # DescribeWorkflowExecution
 
 Returns information about the specified workflow execution including its type and some

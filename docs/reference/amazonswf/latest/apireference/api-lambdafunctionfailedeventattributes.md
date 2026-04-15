@@ -1,3 +1,7 @@
+---
+title: "LambdaFunctionFailedEventAttributes"
+---
+
 # LambdaFunctionFailedEventAttributes
 
 Provides the details of the `LambdaFunctionFailed` event. It isn't set for

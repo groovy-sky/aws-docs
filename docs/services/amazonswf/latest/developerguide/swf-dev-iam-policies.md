@@ -1,3 +1,7 @@
+---
+title: "Amazon SWF IAM Policies"
+---
+
 # Amazon SWF IAM Policies
 
 An IAM policy contains one or more `Statement` elements, each of which

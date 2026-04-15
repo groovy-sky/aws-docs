@@ -1,3 +1,7 @@
+---
+title: "WorkflowExecutionFailedEventAttributes"
+---
+
 # WorkflowExecutionFailedEventAttributes
 
 Provides the details of the `WorkflowExecutionFailed` event.

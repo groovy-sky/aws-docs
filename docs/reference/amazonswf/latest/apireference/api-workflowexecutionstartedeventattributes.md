@@ -1,3 +1,7 @@
+---
+title: "WorkflowExecutionStartedEventAttributes"
+---
+
 # WorkflowExecutionStartedEventAttributes
 
 Provides details of `WorkflowExecutionStarted` event.

@@ -1,3 +1,7 @@
+---
+title: "CancelTimerFailedEventAttributes"
+---
+
 # CancelTimerFailedEventAttributes
 
 Provides the details of the `CancelTimerFailed` event.

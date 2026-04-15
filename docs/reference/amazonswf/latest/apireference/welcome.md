@@ -1,3 +1,7 @@
+---
+title: "Welcome"
+---
+
 # Welcome
 
 The Amazon Simple Workflow Service (Amazon SWF) makes it easy to build applications that use Amazon's cloud to
@@ -13,7 +17,7 @@ state.
 This documentation serves as reference only. For a broader overview of the Amazon SWF
 programming model, see the _[Amazon SWF Developer Guide](../../../../services/amazonswf/latest/developerguide.md)_.
 
-This document was last published on April 8, 2026.
+This document was last published on April 14, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

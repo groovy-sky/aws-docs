@@ -1,3 +1,7 @@
+---
+title: "ScheduleActivityTaskFailedEventAttributes"
+---
+
 # ScheduleActivityTaskFailedEventAttributes
 
 Provides the details of the `ScheduleActivityTaskFailed` event.

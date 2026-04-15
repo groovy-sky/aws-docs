@@ -1,3 +1,7 @@
+---
+title: "DeleteActivityType"
+---
+
 # DeleteActivityType
 
 Deletes the specified _activity type_.

@@ -1,3 +1,7 @@
+---
+title: "Polling for tasks in Amazon SWF"
+---
+
 # Polling for tasks in Amazon SWF
 
 Deciders and activity workers communicate with Amazon SWF using _long polling_. The decider or

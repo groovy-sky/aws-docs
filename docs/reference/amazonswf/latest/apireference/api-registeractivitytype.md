@@ -1,3 +1,7 @@
+---
+title: "RegisterActivityType"
+---
+
 # RegisterActivityType
 
 Registers a new _activity type_ along with its configuration

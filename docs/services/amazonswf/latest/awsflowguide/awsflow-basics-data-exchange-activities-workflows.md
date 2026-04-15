@@ -1,3 +1,7 @@
+---
+title: "AWS Flow Framework Basic Concepts: Data Exchange Between Activities and Workflows"
+---
+
 # AWS Flow Framework Basic Concepts: Data Exchange Between Activities and Workflows
 
 When you call an asynchronous activity client method, it immediately returns a _Promise_

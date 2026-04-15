@@ -1,3 +1,7 @@
+---
+title: "CancelTimerDecisionAttributes"
+---
+
 # CancelTimerDecisionAttributes
 
 Provides the details of the `CancelTimer` decision.

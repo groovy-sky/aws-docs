@@ -1,3 +1,7 @@
+---
+title: "DeleteWorkflowType"
+---
+
 # DeleteWorkflowType
 
 Deletes the specified _workflow type_.

@@ -1,3 +1,7 @@
+---
+title: "HelloWorldWorkflowAsync Application"
+---
+
 # HelloWorldWorkflowAsync Application
 
 Sometimes, it's preferable to have a workflow perform certain tasks locally instead of using

@@ -1,3 +1,7 @@
+---
+title: "HistoryEvent"
+---
+
 # HistoryEvent
 
 Event within a workflow execution. A history event can be one of these types:

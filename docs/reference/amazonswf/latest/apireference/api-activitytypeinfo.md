@@ -1,3 +1,7 @@
+---
+title: "ActivityTypeInfo"
+---
+
 # ActivityTypeInfo
 
 Detailed information about an activity type.

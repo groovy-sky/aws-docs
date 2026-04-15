@@ -1,3 +1,7 @@
+---
+title: "ContinueAsNewWorkflowExecutionDecisionAttributes"
+---
+
 # ContinueAsNewWorkflowExecutionDecisionAttributes
 
 Provides the details of the `ContinueAsNewWorkflowExecution` decision.

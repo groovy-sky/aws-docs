@@ -1,3 +1,7 @@
+---
+title: "ActivityTaskCompletedEventAttributes"
+---
+
 # ActivityTaskCompletedEventAttributes
 
 Provides the details of the `ActivityTaskCompleted` event.

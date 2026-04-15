@@ -1,3 +1,7 @@
+---
+title: "Signals"
+---
+
 # Signals
 
 Signals enable you to inject information into a running workflow execution. In some scenarios, you might

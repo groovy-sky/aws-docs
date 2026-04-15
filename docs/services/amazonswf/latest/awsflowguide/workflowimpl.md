@@ -1,3 +1,7 @@
+---
+title: "Workflow Implementation"
+---
+
 # Workflow Implementation
 
 In order to implement a workflow, you write a class that implements the desired

@@ -1,3 +1,7 @@
+---
+title: "SignalExternalWorkflowExecutionDecisionAttributes"
+---
+
 # SignalExternalWorkflowExecutionDecisionAttributes
 
 Provides the details of the `SignalExternalWorkflowExecution` decision.

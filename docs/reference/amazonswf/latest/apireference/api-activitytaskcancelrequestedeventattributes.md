@@ -1,3 +1,7 @@
+---
+title: "ActivityTaskCancelRequestedEventAttributes"
+---
+
 # ActivityTaskCancelRequestedEventAttributes
 
 Provides the details of the `ActivityTaskCancelRequested` event.

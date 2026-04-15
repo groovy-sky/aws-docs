@@ -1,3 +1,7 @@
+---
+title: "WorkflowTypeInfo"
+---
+
 # WorkflowTypeInfo
 
 Contains information about a workflow type.

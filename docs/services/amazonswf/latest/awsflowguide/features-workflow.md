@@ -1,3 +1,7 @@
+---
+title: "Workflow and Activity Contracts"
+---
+
 # Workflow and Activity Contracts
 
 Java interfaces are used to declare the signatures of workflows and activities. The interface forms the

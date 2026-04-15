@@ -1,3 +1,7 @@
+---
+title: "CancelWorkflowExecutionDecisionAttributes"
+---
+
 # CancelWorkflowExecutionDecisionAttributes
 
 Provides the details of the `CancelWorkflowExecution` decision.

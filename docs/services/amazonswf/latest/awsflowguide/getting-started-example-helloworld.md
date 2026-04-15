@@ -1,3 +1,7 @@
+---
+title: "HelloWorld Application"
+---
+
 # HelloWorld Application
 
 To introduce the way Amazon SWF applications are structured, we'll create a Java application that behaves like a

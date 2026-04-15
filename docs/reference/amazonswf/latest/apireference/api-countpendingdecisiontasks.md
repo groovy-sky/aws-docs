@@ -1,3 +1,7 @@
+---
+title: "CountPendingDecisionTasks"
+---
+
 # CountPendingDecisionTasks
 
 Returns the estimated number of decision tasks in the specified task list. The count

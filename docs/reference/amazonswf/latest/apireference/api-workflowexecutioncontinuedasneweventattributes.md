@@ -1,3 +1,7 @@
+---
+title: "WorkflowExecutionContinuedAsNewEventAttributes"
+---
+
 # WorkflowExecutionContinuedAsNewEventAttributes
 
 Provides the details of the `WorkflowExecutionContinuedAsNew` event.

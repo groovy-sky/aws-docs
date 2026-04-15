@@ -1,3 +1,7 @@
+---
+title: "ChildWorkflowExecutionCanceledEventAttributes"
+---
+
 # ChildWorkflowExecutionCanceledEventAttributes
 
 Provide details of the `ChildWorkflowExecutionCanceled` event.

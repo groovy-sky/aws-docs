@@ -1,3 +1,7 @@
+---
+title: "What Is AWS Amplify Admin UI?"
+---
+
 # What Is AWS Amplify Admin UI?
 
 Welcome to AWS Amplify Admin UI API Reference. Admin UI is now a part of Amplify Studio.

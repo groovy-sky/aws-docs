@@ -1,3 +1,7 @@
+---
+title: "GetWorkflowExecutionHistory"
+---
+
 # GetWorkflowExecutionHistory
 
 Returns the history of the specified workflow execution. The results may be split into

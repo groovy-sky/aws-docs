@@ -1,3 +1,7 @@
+---
+title: "RespondDecisionTaskCompleted"
+---
+
 # RespondDecisionTaskCompleted
 
 Used by deciders to tell the service that the [DecisionTask](api-decisiontask.md) identified

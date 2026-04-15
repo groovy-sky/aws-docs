@@ -1,3 +1,7 @@
+---
+title: "Getting Started with the AWS Flow Framework for Java"
+---
+
 # Getting Started with the AWS Flow Framework for Java
 
 This section introduces the AWS Flow Framework by walking you through a series of simple example applications that

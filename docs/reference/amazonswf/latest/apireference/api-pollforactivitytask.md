@@ -1,3 +1,7 @@
+---
+title: "PollForActivityTask"
+---
+
 # PollForActivityTask
 
 Used by workers to get an [ActivityTask](api-activitytask.md) from the specified activity

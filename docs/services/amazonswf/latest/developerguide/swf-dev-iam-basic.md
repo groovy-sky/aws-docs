@@ -1,3 +1,7 @@
+---
+title: "Basic Principles"
+---
+
 # Basic Principles
 
 Amazon SWF access control is based primarily on two types of permissions:

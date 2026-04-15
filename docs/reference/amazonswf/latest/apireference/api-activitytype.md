@@ -1,3 +1,7 @@
+---
+title: "ActivityType"
+---
+
 # ActivityType
 
 Represents an activity type.

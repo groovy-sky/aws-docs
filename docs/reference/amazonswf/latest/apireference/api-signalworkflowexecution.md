@@ -1,3 +1,7 @@
+---
+title: "SignalWorkflowExecution"
+---
+
 # SignalWorkflowExecution
 
 Records a `WorkflowExecutionSignaled` event in the workflow execution

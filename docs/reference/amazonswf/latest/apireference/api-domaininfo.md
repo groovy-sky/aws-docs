@@ -1,3 +1,7 @@
+---
+title: "DomainInfo"
+---
+
 # DomainInfo
 
 Contains general information about a domain.

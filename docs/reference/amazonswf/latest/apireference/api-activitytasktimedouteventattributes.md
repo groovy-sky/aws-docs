@@ -1,3 +1,7 @@
+---
+title: "ActivityTaskTimedOutEventAttributes"
+---
+
 # ActivityTaskTimedOutEventAttributes
 
 Provides the details of the `ActivityTaskTimedOut` event.

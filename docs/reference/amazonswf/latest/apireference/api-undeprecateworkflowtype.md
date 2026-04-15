@@ -1,3 +1,7 @@
+---
+title: "UndeprecateWorkflowType"
+---
+
 # UndeprecateWorkflowType
 
 Undeprecates a previously deprecated _workflow type_. After a workflow type has

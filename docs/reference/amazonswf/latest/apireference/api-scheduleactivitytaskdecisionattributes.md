@@ -1,3 +1,7 @@
+---
+title: "ScheduleActivityTaskDecisionAttributes"
+---
+
 # ScheduleActivityTaskDecisionAttributes
 
 Provides the details of the `ScheduleActivityTask` decision.

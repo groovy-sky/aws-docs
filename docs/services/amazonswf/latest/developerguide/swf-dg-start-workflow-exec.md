@@ -1,3 +1,7 @@
+---
+title: "Starting workflows in Amazon SWF"
+---
+
 # Starting workflows in Amazon SWF
 
 You can start a workflow execution of a registered workflow type from any application using

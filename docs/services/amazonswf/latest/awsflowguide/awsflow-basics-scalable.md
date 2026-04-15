@@ -1,3 +1,7 @@
+---
+title: "AWS Flow Framework Basic Concepts: Scalable Applications"
+---
+
 # AWS Flow Framework Basic Concepts: Scalable Applications
 
 Amazon SWF has two key features that make it easy to scale a workflow application to handle the

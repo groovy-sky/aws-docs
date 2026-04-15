@@ -1,3 +1,7 @@
+---
+title: "Amazon VPC endpoints for Amazon SWF"
+---
+
 # Amazon VPC endpoints for Amazon SWF
 
 ###### Note

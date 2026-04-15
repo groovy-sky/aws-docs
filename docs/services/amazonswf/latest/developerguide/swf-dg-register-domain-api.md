@@ -1,3 +1,7 @@
+---
+title: "Registering a Domain with Amazon SWF"
+---
+
 # Registering a Domain with Amazon SWF
 
 Your workflow and activity types and the workflow execution itself are all scoped to a

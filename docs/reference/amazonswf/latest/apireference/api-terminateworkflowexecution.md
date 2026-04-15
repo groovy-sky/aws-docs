@@ -1,3 +1,7 @@
+---
+title: "TerminateWorkflowExecution"
+---
+
 # TerminateWorkflowExecution
 
 Records a `WorkflowExecutionTerminated` event and forces closure of the

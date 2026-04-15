@@ -1,3 +1,7 @@
+---
+title: "FailWorkflowExecutionDecisionAttributes"
+---
+
 # FailWorkflowExecutionDecisionAttributes
 
 Provides the details of the `FailWorkflowExecution` decision.

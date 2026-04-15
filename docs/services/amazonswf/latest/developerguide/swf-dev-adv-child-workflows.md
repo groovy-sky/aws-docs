@@ -1,3 +1,7 @@
+---
+title: "Child workflows in Amazon SWF"
+---
+
 # Child workflows in Amazon SWF
 
 Complicated workflows can be broken into smaller, more manageable, and potentially reusable components by

@@ -1,3 +1,7 @@
+---
+title: "CountOpenWorkflowExecutions"
+---
+
 # CountOpenWorkflowExecutions
 
 Returns the number of open workflow executions within the given domain that meet the

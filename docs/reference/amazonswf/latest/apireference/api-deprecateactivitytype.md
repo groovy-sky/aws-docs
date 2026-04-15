@@ -1,3 +1,7 @@
+---
+title: "DeprecateActivityType"
+---
+
 # DeprecateActivityType
 
 Deprecates the specified _activity type_. After an activity type has

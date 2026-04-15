@@ -1,3 +1,7 @@
+---
+title: "Amazon SWF Timeout Types"
+---
+
 # Amazon SWF Timeout Types
 
 To ensure that workflow executions run correctly, you can set different types of timeouts with Amazon SWF. Some

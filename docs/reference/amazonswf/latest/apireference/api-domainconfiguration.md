@@ -1,3 +1,7 @@
+---
+title: "DomainConfiguration"
+---
+
 # DomainConfiguration
 
 Contains the configuration settings of a domain.

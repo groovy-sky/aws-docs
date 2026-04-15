@@ -1,3 +1,7 @@
+---
+title: "DescribeDomain"
+---
+
 # DescribeDomain
 
 Returns information about the specified domain, including description and

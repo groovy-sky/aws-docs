@@ -1,3 +1,7 @@
+---
+title: "ListClosedWorkflowExecutions"
+---
+
 # ListClosedWorkflowExecutions
 
 Returns a list of closed workflow executions in the specified domain that meet the

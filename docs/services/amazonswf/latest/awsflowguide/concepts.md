@@ -1,3 +1,7 @@
+---
+title: "Understanding AWS Flow Framework for Java"
+---
+
 # Understanding AWS Flow Framework for Java
 
 The AWS Flow Framework for Java works with Amazon SWF to make it easy to create scalable and fault-tolerant applications to

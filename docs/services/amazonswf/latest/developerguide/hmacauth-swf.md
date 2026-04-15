@@ -1,3 +1,7 @@
+---
+title: "Calculating the HMAC-SHA Signature for Amazon SWF"
+---
+
 # Calculating the HMAC-SHA Signature for Amazon SWF
 
 Every request to Amazon SWF must be authenticated. The AWS SDKs automatically sign your requests

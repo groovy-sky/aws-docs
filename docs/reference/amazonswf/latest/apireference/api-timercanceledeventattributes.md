@@ -1,3 +1,7 @@
+---
+title: "TimerCanceledEventAttributes"
+---
+
 # TimerCanceledEventAttributes
 
 Provides the details of the `TimerCanceled` event.

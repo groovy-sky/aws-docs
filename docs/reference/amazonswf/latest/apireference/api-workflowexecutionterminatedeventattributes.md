@@ -1,3 +1,7 @@
+---
+title: "WorkflowExecutionTerminatedEventAttributes"
+---
+
 # WorkflowExecutionTerminatedEventAttributes
 
 Provides the details of the `WorkflowExecutionTerminated` event.

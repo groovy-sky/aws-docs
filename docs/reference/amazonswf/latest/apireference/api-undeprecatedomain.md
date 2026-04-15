@@ -1,3 +1,7 @@
+---
+title: "UndeprecateDomain"
+---
+
 # UndeprecateDomain
 
 Undeprecates a previously deprecated domain. After a domain has been undeprecated it can be used

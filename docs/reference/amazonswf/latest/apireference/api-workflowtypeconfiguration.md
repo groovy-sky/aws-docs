@@ -1,3 +1,7 @@
+---
+title: "WorkflowTypeConfiguration"
+---
+
 # WorkflowTypeConfiguration
 
 The configuration settings of a workflow type.

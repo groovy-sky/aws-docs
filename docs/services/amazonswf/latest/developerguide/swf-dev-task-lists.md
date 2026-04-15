@@ -1,3 +1,7 @@
+---
+title: "Task lists in Amazon SWF"
+---
+
 # Task lists in Amazon SWF
 
 Task lists provide a way of organizing the various tasks associated with a workflow. You can think of task lists

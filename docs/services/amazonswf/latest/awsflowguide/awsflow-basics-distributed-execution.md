@@ -1,3 +1,7 @@
+---
+title: "AWS Flow Framework Basic Concepts: Distributed Execution"
+---
+
 # AWS Flow Framework Basic Concepts: Distributed Execution
 
 A _workflow instance_ is essentially a virtual thread of execution that can span activities

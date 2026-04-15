@@ -1,3 +1,7 @@
+---
+title: "RegisterWorkflowType"
+---
+
 # RegisterWorkflowType
 
 Registers a new _workflow type_ and its configuration settings in

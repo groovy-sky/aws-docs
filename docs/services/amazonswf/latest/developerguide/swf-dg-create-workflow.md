@@ -1,3 +1,7 @@
+---
+title: "Creating a workflow in Amazon SWF"
+---
+
 # Creating a workflow in Amazon SWF
 
 Creating a basic sequential workflow involves the following stages.

@@ -1,3 +1,7 @@
+---
+title: "CountClosedWorkflowExecutions"
+---
+
 # CountClosedWorkflowExecutions
 
 Returns the number of closed workflow executions within the given domain that meet the

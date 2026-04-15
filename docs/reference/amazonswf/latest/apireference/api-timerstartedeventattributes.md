@@ -1,3 +1,7 @@
+---
+title: "TimerStartedEventAttributes"
+---
+
 # TimerStartedEventAttributes
 
 Provides the details of the `TimerStarted` event.

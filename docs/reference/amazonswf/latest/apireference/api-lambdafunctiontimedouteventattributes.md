@@ -1,3 +1,7 @@
+---
+title: "LambdaFunctionTimedOutEventAttributes"
+---
+
 # LambdaFunctionTimedOutEventAttributes
 
 Provides details of the `LambdaFunctionTimedOut` event.

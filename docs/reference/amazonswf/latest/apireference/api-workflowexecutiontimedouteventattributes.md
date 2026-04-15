@@ -1,3 +1,7 @@
+---
+title: "WorkflowExecutionTimedOutEventAttributes"
+---
+
 # WorkflowExecutionTimedOutEventAttributes
 
 Provides the details of the `WorkflowExecutionTimedOut` event.

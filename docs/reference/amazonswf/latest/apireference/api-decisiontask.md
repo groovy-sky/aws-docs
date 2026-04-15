@@ -1,3 +1,7 @@
+---
+title: "DecisionTask"
+---
+
 # DecisionTask
 
 A structure that represents a decision task. Decision tasks are sent to deciders in order for them to make decisions.

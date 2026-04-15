@@ -1,3 +1,7 @@
+---
+title: "ListActivityTypes"
+---
+
 # ListActivityTypes
 
 Returns information about all activities registered in the specified domain that match

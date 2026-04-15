@@ -1,3 +1,7 @@
+---
+title: "StartChildWorkflowExecutionFailedEventAttributes"
+---
+
 # StartChildWorkflowExecutionFailedEventAttributes
 
 Provides the details of the `StartChildWorkflowExecutionFailed` event.

@@ -1,3 +1,7 @@
+---
+title: "What is Amazon Simple Workflow Service?"
+---
+
 # What is Amazon Simple Workflow Service?
 
 With Amazon Simple Workflow Service (Amazon SWF) you can build, run, and scale background jobs that have parallel or sequential steps. You can coordinate work across distributed components and track the state of tasks.

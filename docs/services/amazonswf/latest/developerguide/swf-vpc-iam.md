@@ -1,3 +1,7 @@
+---
+title: "Amazon Virtual Private Cloud Endpoint Policies for Amazon SWF"
+---
+
 # Amazon Virtual Private Cloud Endpoint Policies for Amazon SWF
 
 You can create an Amazon VPC endpoint policy for Amazon SWF in which you specify the

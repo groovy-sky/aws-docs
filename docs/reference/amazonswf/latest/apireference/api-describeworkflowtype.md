@@ -1,3 +1,7 @@
+---
+title: "DescribeWorkflowType"
+---
+
 # DescribeWorkflowType
 
 Returns information about the specified _workflow type_. This

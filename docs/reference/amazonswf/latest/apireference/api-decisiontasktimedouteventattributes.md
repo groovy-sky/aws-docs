@@ -1,3 +1,7 @@
+---
+title: "DecisionTaskTimedOutEventAttributes"
+---
+
 # DecisionTaskTimedOutEventAttributes
 
 Provides the details of the `DecisionTaskTimedOut` event.

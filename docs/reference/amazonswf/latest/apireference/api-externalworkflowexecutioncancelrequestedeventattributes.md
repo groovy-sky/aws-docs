@@ -1,3 +1,7 @@
+---
+title: "ExternalWorkflowExecutionCancelRequestedEventAttributes"
+---
+
 # ExternalWorkflowExecutionCancelRequestedEventAttributes
 
 Provides the details of the `ExternalWorkflowExecutionCancelRequested` event.

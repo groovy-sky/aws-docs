@@ -1,3 +1,7 @@
+---
+title: "Tags in Amazon SWF"
+---
+
 # Tags in Amazon SWF
 
 Amazon SWF supports tagging a workflow execution. This is especially useful when you have many

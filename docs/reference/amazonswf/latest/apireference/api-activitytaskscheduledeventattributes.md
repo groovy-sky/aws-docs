@@ -1,3 +1,7 @@
+---
+title: "ActivityTaskScheduledEventAttributes"
+---
+
 # ActivityTaskScheduledEventAttributes
 
 Provides the details of the `ActivityTaskScheduled` event.

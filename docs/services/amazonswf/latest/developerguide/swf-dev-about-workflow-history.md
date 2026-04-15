@@ -1,3 +1,7 @@
+---
+title: "Workflow history in Amazon SWF"
+---
+
 # Workflow history in Amazon SWF
 
 Amazon SWF records the progress of every workflow execution in the _workflow history_

@@ -1,3 +1,7 @@
+---
+title: "DecisionTaskStartedEventAttributes"
+---
+
 # DecisionTaskStartedEventAttributes
 
 Provides the details of the `DecisionTaskStarted` event.

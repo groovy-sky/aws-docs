@@ -1,3 +1,7 @@
+---
+title: "DecisionTaskCompletedEventAttributes"
+---
+
 # DecisionTaskCompletedEventAttributes
 
 Provides the details of the `DecisionTaskCompleted` event.

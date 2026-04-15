@@ -1,3 +1,7 @@
+---
+title: "Workflow execution closure in Amazon SWF"
+---
+
 # Workflow execution closure in Amazon SWF
 
 Once you start a workflow execution, it is _open_. An open workflow execution could be closed as completed,

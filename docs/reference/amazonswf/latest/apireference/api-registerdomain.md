@@ -1,3 +1,7 @@
+---
+title: "RegisterDomain"
+---
+
 # RegisterDomain
 
 Registers a new domain.

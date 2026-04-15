@@ -1,3 +1,7 @@
+---
+title: "List of Amazon SWF Actions by Category"
+---
+
 # List of Amazon SWF Actions by Category
 
 This section lists the reference topics for Amazon SWF actions in the Amazon SWF application programming interface (API).

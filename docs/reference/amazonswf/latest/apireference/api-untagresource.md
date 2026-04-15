@@ -1,3 +1,7 @@
+---
+title: "UntagResource"
+---
+
 # UntagResource
 
 Remove a tag from a Amazon SWF domain.

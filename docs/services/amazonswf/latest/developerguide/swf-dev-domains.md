@@ -1,3 +1,7 @@
+---
+title: "Domains in Amazon SWF"
+---
+
 # Domains in Amazon SWF
 
 Workflows run in an AWS resource called a _domain_ which provide a way of scoping Amazon SWF

@@ -1,3 +1,7 @@
+---
+title: "ScheduleLambdaFunctionFailedEventAttributes"
+---
+
 # ScheduleLambdaFunctionFailedEventAttributes
 
 Provides the details of the `ScheduleLambdaFunctionFailed` event. It isn't

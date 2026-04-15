@@ -1,3 +1,7 @@
+---
+title: "RecordActivityTaskHeartbeat"
+---
+
 # RecordActivityTaskHeartbeat
 
 Used by activity workers to report to the service that the [ActivityTask](api-activitytask.md) represented by the specified `taskToken` is still making progress. The worker

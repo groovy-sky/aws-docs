@@ -1,3 +1,7 @@
+---
+title: "Additional resources and reference info for Amazon SWF"
+---
+
 # Additional resources and reference info for Amazon SWF
 
 This chapter provides additional resources and reference information that is useful when developing workflows

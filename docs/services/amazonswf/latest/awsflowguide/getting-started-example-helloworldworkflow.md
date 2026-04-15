@@ -1,3 +1,7 @@
+---
+title: "HelloWorldWorkflow Application"
+---
+
 # HelloWorldWorkflow Application
 
 Although the basic [HelloWorld](getting-started-example-helloworld.md) example is structured

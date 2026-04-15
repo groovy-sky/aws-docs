@@ -1,3 +1,7 @@
+---
+title: "WorkflowType"
+---
+
 # WorkflowType
 
 Represents a workflow type.

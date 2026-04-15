@@ -1,3 +1,7 @@
+---
+title: "Developing workflow components with Amazon SWF"
+---
+
 # Developing workflow components with Amazon SWF
 
 Developing distributed applications requires coordinating many components and dealing with

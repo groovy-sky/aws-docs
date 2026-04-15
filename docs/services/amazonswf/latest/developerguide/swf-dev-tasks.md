@@ -1,3 +1,7 @@
+---
+title: "Tasks in Amazon SWF"
+---
+
 # Tasks in Amazon SWF
 
 Amazon SWF interacts with activity workers and deciders by providing them with work assignments known as tasks.

@@ -1,3 +1,7 @@
+---
+title: "RequestCancelActivityTaskFailedEventAttributes"
+---
+
 # RequestCancelActivityTaskFailedEventAttributes
 
 Provides the details of the `RequestCancelActivityTaskFailed` event.

@@ -1,3 +1,7 @@
+---
+title: "Developing deciders in Amazon SWF"
+---
+
 # Developing deciders in Amazon SWF
 
 A decider is an implementation of the coordination logic of your workflow type that runs during the execution

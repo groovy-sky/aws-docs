@@ -1,3 +1,7 @@
+---
+title: "Registering an Activity Type with Amazon SWF"
+---
+
 # Registering an Activity Type with Amazon SWF
 
 The following example registers an activity type by using the Amazon SWF API. The name and version that you specify

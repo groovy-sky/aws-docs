@@ -1,3 +1,7 @@
+---
+title: "Workflow and Activity Type Registration"
+---
+
 # Workflow and Activity Type Registration
 
 Amazon SWF requires activity and workflow types to be registered before they can be used. The framework

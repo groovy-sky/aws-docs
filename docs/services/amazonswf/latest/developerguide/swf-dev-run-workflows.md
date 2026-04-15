@@ -1,3 +1,7 @@
+---
+title: "Running workflows in Amazon SWF"
+---
+
 # Running workflows in Amazon SWF
 
 After the coordination logic and the activities have been designed, you register these components as workflow

@@ -1,3 +1,7 @@
+---
+title: "ResourceTag"
+---
+
 # ResourceTag
 
 Tags are key-value pairs that can be associated with Amazon SWF state machines and

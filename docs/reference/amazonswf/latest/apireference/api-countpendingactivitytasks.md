@@ -1,3 +1,7 @@
+---
+title: "CountPendingActivityTasks"
+---
+
 # CountPendingActivityTasks
 
 Returns the estimated number of activity tasks in the specified task list. The count

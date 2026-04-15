@@ -1,3 +1,7 @@
+---
+title: "SignalExternalWorkflowExecutionInitiatedEventAttributes"
+---
+
 # SignalExternalWorkflowExecutionInitiatedEventAttributes
 
 Provides the details of the `SignalExternalWorkflowExecutionInitiated` event.

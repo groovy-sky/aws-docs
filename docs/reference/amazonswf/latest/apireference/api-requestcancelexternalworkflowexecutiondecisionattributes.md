@@ -1,3 +1,7 @@
+---
+title: "RequestCancelExternalWorkflowExecutionDecisionAttributes"
+---
+
 # RequestCancelExternalWorkflowExecutionDecisionAttributes
 
 Provides the details of the `RequestCancelExternalWorkflowExecution` decision.

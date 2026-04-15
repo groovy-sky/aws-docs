@@ -1,3 +1,7 @@
+---
+title: "TimerFiredEventAttributes"
+---
+
 # TimerFiredEventAttributes
 
 Provides the details of the `TimerFired` event.

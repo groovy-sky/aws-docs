@@ -1,3 +1,7 @@
+---
+title: "Activity Implementation"
+---
+
 # Activity Implementation
 
 Activities are implemented by providing an implementation of the `@Activities`

@@ -1,3 +1,7 @@
+---
+title: "Daemon Tasks"
+---
+
 # Daemon Tasks
 
 The AWS Flow Framework for Java allows the marking of certain tasks as `daemon`. This allows you to create tasks

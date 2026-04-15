@@ -1,3 +1,7 @@
+---
+title: "Identity and Access Management in Amazon Simple Workflow Service"
+---
+
 # Identity and Access Management in Amazon Simple Workflow Service
 
 Access to Amazon SWF requires credentials that AWS can use to authenticate your requests. These

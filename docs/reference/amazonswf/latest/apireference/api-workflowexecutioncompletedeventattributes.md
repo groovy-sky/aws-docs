@@ -1,3 +1,7 @@
+---
+title: "WorkflowExecutionCompletedEventAttributes"
+---
+
 # WorkflowExecutionCompletedEventAttributes
 
 Provides the details of the `WorkflowExecutionCompleted` event.

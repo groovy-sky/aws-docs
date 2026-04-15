@@ -1,3 +1,7 @@
+---
+title: "DescribeActivityType"
+---
+
 # DescribeActivityType
 
 Returns information about the specified activity type. This includes configuration

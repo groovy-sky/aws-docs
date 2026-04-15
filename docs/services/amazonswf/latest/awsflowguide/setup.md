@@ -1,3 +1,7 @@
+---
+title: "Setting up the AWS Flow Framework for Java"
+---
+
 # Setting up the AWS Flow Framework for Java
 
 The AWS Flow Framework for Java is included with the [AWS SDK for Java](https://aws.amazon.com/sdkforjava). If you have not already set up the AWS SDK for Java, visit [Getting\

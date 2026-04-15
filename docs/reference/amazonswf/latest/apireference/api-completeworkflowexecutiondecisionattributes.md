@@ -1,3 +1,7 @@
+---
+title: "CompleteWorkflowExecutionDecisionAttributes"
+---
+
 # CompleteWorkflowExecutionDecisionAttributes
 
 Provides the details of the `CompleteWorkflowExecution` decision.

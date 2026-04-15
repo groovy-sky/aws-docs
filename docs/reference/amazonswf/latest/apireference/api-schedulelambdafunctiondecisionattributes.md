@@ -1,3 +1,7 @@
+---
+title: "ScheduleLambdaFunctionDecisionAttributes"
+---
+
 # ScheduleLambdaFunctionDecisionAttributes
 
 Decision attributes specified in `scheduleLambdaFunctionDecisionAttributes` within the list of

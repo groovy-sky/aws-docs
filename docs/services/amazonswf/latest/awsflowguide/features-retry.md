@@ -1,3 +1,7 @@
+---
+title: "Retry Failed Activities"
+---
+
 # Retry Failed Activities
 
 Activities sometimes fail for ephemeral reasons, such as a temporary loss of connectivity. At another time,

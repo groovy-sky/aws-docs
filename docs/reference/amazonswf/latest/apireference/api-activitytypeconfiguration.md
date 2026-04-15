@@ -1,3 +1,7 @@
+---
+title: "ActivityTypeConfiguration"
+---
+
 # ActivityTypeConfiguration
 
 Configuration settings registered with the activity type.

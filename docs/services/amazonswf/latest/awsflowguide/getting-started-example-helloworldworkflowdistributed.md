@@ -1,3 +1,7 @@
+---
+title: "HelloWorldWorkflowDistributed Application"
+---
+
 # HelloWorldWorkflowDistributed Application
 
 With HelloWorldWorkflow and HelloWorldWorkflowAsync, Amazon SWF mediates the interaction between the workflow and

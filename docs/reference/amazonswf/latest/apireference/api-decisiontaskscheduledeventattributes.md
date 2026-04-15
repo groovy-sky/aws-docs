@@ -1,3 +1,7 @@
+---
+title: "DecisionTaskScheduledEventAttributes"
+---
+
 # DecisionTaskScheduledEventAttributes
 
 Provides details about the `DecisionTaskScheduled` event.

@@ -1,3 +1,7 @@
+---
+title: "Decision"
+---
+
 # Decision
 
 Specifies a decision made by the decider. A decision can be one of these types:

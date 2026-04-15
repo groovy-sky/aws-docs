@@ -1,3 +1,7 @@
+---
+title: "LambdaFunctionCompletedEventAttributes"
+---
+
 # LambdaFunctionCompletedEventAttributes
 
 Provides the details of the `LambdaFunctionCompleted` event. It isn't set

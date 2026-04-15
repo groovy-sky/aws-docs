@@ -1,3 +1,7 @@
+---
+title: "Working with Amazon SWF APIs"
+---
+
 # Working with Amazon SWF APIs
 
 In addition to using the AWS SDKs that are described in [Develop with AWS SDKs](intro.md#aws-sdks), you can use the HTTP API directly.

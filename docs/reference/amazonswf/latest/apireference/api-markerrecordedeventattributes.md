@@ -1,3 +1,7 @@
+---
+title: "MarkerRecordedEventAttributes"
+---
+
 # MarkerRecordedEventAttributes
 
 Provides the details of the `MarkerRecorded` event.

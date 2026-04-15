@@ -1,3 +1,7 @@
+---
+title: "SignalExternalWorkflowExecutionFailedEventAttributes"
+---
+
 # SignalExternalWorkflowExecutionFailedEventAttributes
 
 Provides the details of the `SignalExternalWorkflowExecutionFailed` event.
