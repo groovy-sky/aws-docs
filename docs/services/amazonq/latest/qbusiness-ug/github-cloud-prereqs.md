@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for connecting Amazon Q Business to GitHub (Cloud)"
+---
+
 # Prerequisites for connecting Amazon Q Business to GitHub (Cloud)
 
 Before you begin, make sure that you have completed the following

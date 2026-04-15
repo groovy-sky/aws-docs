@@ -1,3 +1,7 @@
+---
+title: "Enhancing an Amazon Q Business application environment"
+---
+
 # Enhancing an Amazon Q Business application environment
 
 After you finish configuring your application environment, you can optionally choose to enhance

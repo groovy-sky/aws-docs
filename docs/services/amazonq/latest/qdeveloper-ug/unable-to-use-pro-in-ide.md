@@ -1,3 +1,7 @@
+---
+title: "Users unable to use their subscription in the IDE"
+---
+
 # Users unable to use their subscription in the IDE
 
 **Problem: IAM Identity Center workforce users are unable to use their Pro subscriptions**

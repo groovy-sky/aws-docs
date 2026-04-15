@@ -1,3 +1,7 @@
+---
+title: "AuthChallengeResponse"
+---
+
 # AuthChallengeResponse
 
 Contains details of the authentication information received from a third party

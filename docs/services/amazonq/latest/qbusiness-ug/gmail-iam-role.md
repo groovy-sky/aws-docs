@@ -1,3 +1,7 @@
+---
+title: "IAM role for Amazon Q Business Gmail connector"
+---
+
 # IAM role for Amazon Q Business Gmail connector
 
 ###### Note

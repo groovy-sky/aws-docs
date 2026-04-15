@@ -1,3 +1,7 @@
+---
+title: "Managing subscriptions for applications using IAM Federation"
+---
+
 # Managing subscriptions for applications using IAM Federation
 
 To manage user subscriptions added to an application environment, you can perform the

@@ -1,3 +1,7 @@
+---
+title: "Amazon Q Business features"
+---
+
 # Amazon Q Business features
 
 ###### Note

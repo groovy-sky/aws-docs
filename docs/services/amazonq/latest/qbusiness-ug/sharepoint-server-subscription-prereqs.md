@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for connecting Amazon Q Business to SharePoint Server (Subscription Edition)"
+---
+
 # Prerequisites for connecting Amazon Q Business to SharePoint Server (Subscription Edition)
 
 The following page outlines the prerequisites you need to complete before connecting

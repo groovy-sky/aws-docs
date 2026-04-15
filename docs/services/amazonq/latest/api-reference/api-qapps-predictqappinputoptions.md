@@ -1,3 +1,7 @@
+---
+title: "PredictQAppInputOptions"
+---
+
 # PredictQAppInputOptions
 
 The input options for generating an Q App definition.

@@ -1,3 +1,7 @@
+---
+title: "DataSourceSyncJobMetrics"
+---
+
 # DataSourceSyncJobMetrics
 
 Maps a batch delete document request to a specific Amazon Q Business data source connector

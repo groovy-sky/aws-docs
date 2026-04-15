@@ -1,3 +1,7 @@
+---
+title: "How the User Store works"
+---
+
 # How the User Store works
 
 Each document in any data source has access control list (ACL) information

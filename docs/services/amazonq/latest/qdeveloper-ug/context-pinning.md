@@ -1,3 +1,7 @@
+---
+title: "Pinning context items"
+---
+
 # Pinning context items
 
 ###### Note

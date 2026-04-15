@@ -1,3 +1,7 @@
+---
+title: "Chatting inline with Amazon Q Developer"
+---
+
 # Chatting inline with Amazon Q Developer
 
 The _inline chat_ feature lets you chat with Amazon Q from your IDE's main coding window.

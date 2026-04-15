@@ -1,3 +1,7 @@
+---
+title: "CreateIndex"
+---
+
 # CreateIndex
 
 Creates an Amazon Q Business index.

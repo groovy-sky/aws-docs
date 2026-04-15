@@ -1,3 +1,7 @@
+---
+title: "CreatePlugin"
+---
+
 # CreatePlugin
 
 Creates an Amazon Q Business plugin.

@@ -1,3 +1,7 @@
+---
+title: "PrincipalUser"
+---
+
 # PrincipalUser
 
 Provides information about a user associated with a principal.

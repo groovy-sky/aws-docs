@@ -1,3 +1,7 @@
+---
+title: "Data encryption in Amazon Q Developer"
+---
+
 # Data encryption in Amazon Q Developer
 
 This topic provides information specific to Amazon Q Developer about encryption in transit and

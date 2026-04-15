@@ -1,3 +1,7 @@
+---
+title: "Managing user subscriptions for IAM Identity Center-integrated applications"
+---
+
 # Managing user subscriptions for IAM Identity Center-integrated applications
 
 To manage user subscriptions added to an application environment, you can perform the

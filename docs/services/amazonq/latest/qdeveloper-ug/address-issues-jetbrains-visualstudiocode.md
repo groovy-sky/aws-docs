@@ -1,3 +1,7 @@
+---
+title: "Address code issues in JetBrains and Visual Studio Code"
+---
+
 # Address code issues in JetBrains and Visual Studio Code
 
 To address a code issue in JetBrains and Visual Studio Code, you will either have the option to generate an in-place

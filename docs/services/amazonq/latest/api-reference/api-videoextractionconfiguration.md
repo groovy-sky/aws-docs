@@ -1,3 +1,7 @@
+---
+title: "VideoExtractionConfiguration"
+---
+
 # VideoExtractionConfiguration
 
 Configuration settings for video content extraction and processing.

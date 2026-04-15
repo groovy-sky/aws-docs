@@ -1,3 +1,7 @@
+---
+title: "Connecting SharePoint Server 2016 to Amazon Q Business"
+---
+
 # Connecting SharePoint Server 2016 to Amazon Q Business
 
 Microsoft SharePoint is a collaborative website building service that lets

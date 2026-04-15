@@ -1,3 +1,7 @@
+---
+title: "QQueryCardInput"
+---
+
 # QQueryCardInput
 
 The input shape for defining a query card in an Amazon Q App.

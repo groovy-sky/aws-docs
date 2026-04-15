@@ -1,3 +1,7 @@
+---
+title: "Connecting Google Calendar to Amazon Q Business (Preview)"
+---
+
 # Connecting Google Calendar to Amazon Q Business (Preview)
 
 ###### Note

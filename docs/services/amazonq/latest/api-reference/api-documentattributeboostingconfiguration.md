@@ -1,3 +1,7 @@
+---
+title: "DocumentAttributeBoostingConfiguration"
+---
+
 # DocumentAttributeBoostingConfiguration
 
 Provides information on boosting supported Amazon Q Business document attribute types.

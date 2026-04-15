@@ -1,3 +1,7 @@
+---
+title: "UpdateChatControlsConfiguration"
+---
+
 # UpdateChatControlsConfiguration
 
 Updates a set of chat controls configured for an existing Amazon Q Business

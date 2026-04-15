@@ -1,3 +1,7 @@
+---
+title: "Upgrading to Amazon Q Developer Pro"
+---
+
 # Upgrading to Amazon Q Developer Pro
 
 How you upgrade to the Pro tier from the Free tier depends on whether you're an end-user with a

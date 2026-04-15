@@ -1,3 +1,7 @@
+---
+title: "Microsoft Teams connector versions"
+---
+
 # Microsoft Teams connector versions
 
 You can choose between two Microsoft Teams connector versions:

@@ -1,3 +1,7 @@
+---
+title: "Integrating Slack with Amazon Q Business"
+---
+
 # Integrating Slack with Amazon Q Business
 
 Amazon Q Business can enhance your users' Slack experience by increasing their productivity,

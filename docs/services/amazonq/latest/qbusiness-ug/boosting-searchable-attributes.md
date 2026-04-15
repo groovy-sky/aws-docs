@@ -1,3 +1,7 @@
+---
+title: "Enabling document attributes for search in Amazon Q Business"
+---
+
 # Enabling document attributes for search in Amazon Q Business
 
 ###### Note

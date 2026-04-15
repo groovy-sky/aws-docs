@@ -1,3 +1,7 @@
+---
+title: "Uploading files"
+---
+
 # Uploading files
 
 To upload documents directly to an Amazon Q Business application environment, you can use

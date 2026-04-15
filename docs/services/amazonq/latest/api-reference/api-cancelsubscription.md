@@ -1,3 +1,7 @@
+---
+title: "CancelSubscription"
+---
+
 # CancelSubscription
 
 Unsubscribes a user or a group from their pricing tier in an Amazon Q Business

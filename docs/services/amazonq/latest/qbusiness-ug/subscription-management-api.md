@@ -1,3 +1,7 @@
+---
+title: "Managing subscriptions for an Amazon Q Business application using APIs"
+---
+
 # Managing subscriptions for an Amazon Q Business application using APIs
 
 Amazon Q Business provides APIs to manage subscriptions in your Amazon Q Business application. You can use these APIs to implement your own

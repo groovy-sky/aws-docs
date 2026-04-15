@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting issues with Java transformations"
+---
+
 # Troubleshooting issues with Java transformations
 
 The following information can help you troubleshoot common issues when transforming Java

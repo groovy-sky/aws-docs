@@ -1,3 +1,7 @@
+---
+title: "QAppSessionData"
+---
+
 # QAppSessionData
 
 The response collected for a Amazon Q App session. This container represents a single

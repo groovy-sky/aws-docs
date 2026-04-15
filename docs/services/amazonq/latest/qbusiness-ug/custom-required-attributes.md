@@ -1,3 +1,7 @@
+---
+title: "Required attributes"
+---
+
 # Required attributes
 
 When you submit a document to Amazon Q using the

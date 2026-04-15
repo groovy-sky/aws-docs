@@ -1,3 +1,7 @@
+---
+title: "IAM role for Amazon Q Business data source connectors"
+---
+
 # IAM role for Amazon Q Business data source connectors
 
 You can use either the Amazon Q Business console or the [CreateDataSource](../api-reference/api-createdatasource.md) API operation to connect your data source.

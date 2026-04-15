@@ -1,3 +1,7 @@
+---
+title: "Connecting Web Crawler to Amazon Q Business"
+---
+
 # Connecting Web Crawler to Amazon Q Business
 
 An Amazon Q Business Web Crawler connector crawls and indexes either public facing

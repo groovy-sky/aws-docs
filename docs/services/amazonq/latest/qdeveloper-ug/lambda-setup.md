@@ -1,3 +1,7 @@
+---
+title: "Using Amazon Q Developer with AWS Lambda"
+---
+
 # Using Amazon Q Developer with AWS Lambda
 
 This document describes how to set up and activate Amazon Q Developer for the Lambda console.

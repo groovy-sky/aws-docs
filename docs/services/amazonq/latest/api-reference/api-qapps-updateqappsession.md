@@ -1,3 +1,7 @@
+---
+title: "UpdateQAppSession"
+---
+
 # UpdateQAppSession
 
 Updates the session for a given Q App `sessionId`. This is only valid when at

@@ -1,3 +1,7 @@
+---
+title: "Configuring a robots.txt file for Amazon Q Business Web Crawler"
+---
+
 # Configuring a `robots.txt` file for Amazon Q Business Web Crawler
 
 The `robots.txt` file is a standard used to implement the Robots Exclusion

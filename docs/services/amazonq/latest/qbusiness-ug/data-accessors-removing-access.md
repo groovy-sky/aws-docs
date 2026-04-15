@@ -1,3 +1,7 @@
+---
+title: "Deleting or removing a data accessor's access from your Amazon Q index"
+---
+
 # Deleting or removing a data accessor's access from your Amazon Q index
 
 You can remove a data accessor's permissions to your Amazon Q index using the Amazon Q Business

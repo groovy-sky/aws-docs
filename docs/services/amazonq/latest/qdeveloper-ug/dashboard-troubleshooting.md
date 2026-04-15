@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting the Amazon Q Developer dashboard"
+---
+
 # Troubleshooting the Amazon Q Developer dashboard
 
 If the Amazon Q Developer dashboard page is not available, do the following:

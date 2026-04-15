@@ -1,3 +1,7 @@
+---
+title: "Using topic-level controls in Amazon Q Business"
+---
+
 # Using topic-level controls in Amazon Q Business
 
 You can use topic-level controls to specify special topics within your

@@ -1,3 +1,7 @@
+---
+title: "CreateRetriever"
+---
+
 # CreateRetriever
 
 Adds a retriever to your Amazon Q Business application.

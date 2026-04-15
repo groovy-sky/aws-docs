@@ -1,3 +1,7 @@
+---
+title: "Rule"
+---
+
 # Rule
 
 Guardrail rules for an Amazon Q Business application. Amazon Q Business supports only one rule

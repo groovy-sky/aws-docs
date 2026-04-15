@@ -1,3 +1,7 @@
+---
+title: "Quick prompts in Amazon Q Business"
+---
+
 # Quick prompts in Amazon Q Business
 
 The Amazon Q Business web experience welcome page provides sample prompts to

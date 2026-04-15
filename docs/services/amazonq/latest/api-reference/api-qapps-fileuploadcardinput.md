@@ -1,3 +1,7 @@
+---
+title: "FileUploadCardInput"
+---
+
 # FileUploadCardInput
 
 Represents a file upload card. It can optionally receive a `filename` and

@@ -1,3 +1,7 @@
+---
+title: "Understand error codes in the Amazon Q Business Confluence (Server/Data Center) connector"
+---
+
 # Understand error codes in the Amazon Q Business Confluence (Server/Data Center) connector
 
 The following table provides information about error codes you may see for the

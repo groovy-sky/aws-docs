@@ -1,3 +1,7 @@
+---
+title: "Starting a new data collection"
+---
+
 # Starting a new data collection
 
 You can start a new data collection with the web experience or with the Q Apps

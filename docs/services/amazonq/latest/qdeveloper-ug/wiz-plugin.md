@@ -1,3 +1,7 @@
+---
+title: "Configuring the Amazon Q Developer Wiz plugin"
+---
+
 # Configuring the Amazon Q Developer Wiz plugin
 
 Wiz is a cloud security platform that provides security posture management, risk

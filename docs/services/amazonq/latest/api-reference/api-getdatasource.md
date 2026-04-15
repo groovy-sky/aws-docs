@@ -1,3 +1,7 @@
+---
+title: "GetDataSource"
+---
+
 # GetDataSource
 
 Gets information about an existing Amazon Q Business data source connector.

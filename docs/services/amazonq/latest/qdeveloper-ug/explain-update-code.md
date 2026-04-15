@@ -1,3 +1,7 @@
+---
+title: "Explaining and updating code with Amazon Q Developer"
+---
+
 # Explaining and updating code with Amazon Q Developer
 
 Amazon Q Developer can explain and update specific lines of code in your integrated development

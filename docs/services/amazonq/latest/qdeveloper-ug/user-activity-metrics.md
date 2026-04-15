@@ -1,3 +1,7 @@
+---
+title: "User activity report metrics"
+---
+
 # User activity report metrics
 
 The following table describes the metrics that are included in the user activity reports generated

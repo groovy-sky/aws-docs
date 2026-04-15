@@ -1,3 +1,7 @@
+---
+title: "GetMedia"
+---
+
 # GetMedia
 
 Returns the image bytes corresponding to a media object. If you have implemented your own application with the Chat and ChatSync APIs, and

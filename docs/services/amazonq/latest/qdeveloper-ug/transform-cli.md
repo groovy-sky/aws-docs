@@ -1,3 +1,7 @@
+---
+title: "Transforming code on the command line with Amazon Q Developer"
+---
+
 # Transforming code on the command line with Amazon Q Developer
 
 You can transform your applications from the command line with the Amazon Q Developer command line

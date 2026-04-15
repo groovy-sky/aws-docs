@@ -1,3 +1,7 @@
+---
+title: "Data collection in Amazon Q Apps"
+---
+
 # Data collection in Amazon Q Apps
 
 ###### Note

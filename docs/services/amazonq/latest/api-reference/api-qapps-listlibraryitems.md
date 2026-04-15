@@ -1,3 +1,7 @@
+---
+title: "ListLibraryItems"
+---
+
 # ListLibraryItems
 
 Lists the library items for Amazon Q Apps that are published and available for users in your

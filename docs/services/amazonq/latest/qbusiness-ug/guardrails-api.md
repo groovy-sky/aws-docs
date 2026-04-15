@@ -1,3 +1,7 @@
+---
+title: "Managing admin controls and guardrails using APIs"
+---
+
 # Managing admin controls and guardrails using APIs
 
 Amazon Q Business supports admin controls and guardrails configuration through

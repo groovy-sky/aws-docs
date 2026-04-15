@@ -1,3 +1,7 @@
+---
+title: "APISchema"
+---
+
 # APISchema
 
 Contains details about the OpenAPI schema for a custom plugin. For more information,

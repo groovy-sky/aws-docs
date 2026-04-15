@@ -1,3 +1,7 @@
+---
+title: "Code examples"
+---
+
 # Code examples
 
 Amazon Q can suggest code in different scenarios. To understand how it can help you as you

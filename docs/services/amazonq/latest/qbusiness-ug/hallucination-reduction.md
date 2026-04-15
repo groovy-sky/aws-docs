@@ -1,3 +1,7 @@
+---
+title: "Hallucination mitigation in Amazon Q Business"
+---
+
 # Hallucination mitigation in Amazon Q Business
 
 A [hallucination](concepts-terms.md#hallucination), in the machine learning context, is a

@@ -1,3 +1,7 @@
+---
+title: "Principal"
+---
+
 # Principal
 
 Provides user and group information used for filtering documents to use for generating

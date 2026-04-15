@@ -1,3 +1,7 @@
+---
+title: "Migrating an Amazon Q Business direct SAML 2.0 application to IAM Identity Center"
+---
+
 # Migrating an Amazon Q Business direct SAML 2.0 application to IAM Identity Center
 
 ###### Important

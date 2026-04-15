@@ -1,3 +1,7 @@
+---
+title: "Setting up Salesforce Online for connecting to Amazon Q Business"
+---
+
 # Setting up Salesforce Online for connecting to Amazon Q Business
 
 Before you connect Salesforce Online to Amazon Q Business, you need to create and

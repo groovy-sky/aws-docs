@@ -1,3 +1,7 @@
+---
+title: "MCP configuration for Q Developer in the IDE"
+---
+
 # MCP configuration for Q Developer in the IDE
 
 This page covers IDE-specific options for configuring MCP servers.

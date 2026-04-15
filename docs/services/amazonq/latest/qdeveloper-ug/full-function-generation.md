@@ -1,3 +1,7 @@
+---
+title: "Using Amazon Q Developer for full function generation"
+---
+
 # Using Amazon Q Developer for full function generation
 
 Amazon Q can generate an entire function based on a comment that you've

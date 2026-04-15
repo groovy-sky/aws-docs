@@ -1,3 +1,7 @@
+---
+title: "UntagResource"
+---
+
 # UntagResource
 
 Removes a tag from an Amazon Q Business application or a data source.

@@ -1,3 +1,7 @@
+---
+title: "Supported document formats in Amazon Q Business"
+---
+
 # Supported document formats in Amazon Q Business
 
 When you add documents to an Amazon Q Business application environment ( [directly](upload-docs.md)

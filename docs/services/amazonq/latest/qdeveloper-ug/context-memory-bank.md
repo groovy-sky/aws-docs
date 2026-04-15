@@ -1,3 +1,7 @@
+---
+title: "Generating a memory bank for Amazon Q chat"
+---
+
 # Generating a memory bank for Amazon Q chat
 
 Amazon Q can automatically generate memory bank files that provide a quick index of your project's

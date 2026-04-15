@@ -1,3 +1,7 @@
+---
+title: "Plugin"
+---
+
 # Plugin
 
 Information about an Amazon Q Business plugin and its configuration.

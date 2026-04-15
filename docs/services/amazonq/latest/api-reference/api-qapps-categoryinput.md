@@ -1,3 +1,7 @@
+---
+title: "CategoryInput"
+---
+
 # CategoryInput
 
 A label that web experience users associate with a library item. Web experience users use

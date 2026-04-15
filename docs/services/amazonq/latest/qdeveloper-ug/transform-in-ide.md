@@ -1,3 +1,7 @@
+---
+title: "Transforming code in the IDE with Amazon Q Developer"
+---
+
 # Transforming code in the IDE with Amazon Q Developer
 
 Amazon Q Developer can transform your code in integrated development environments (IDEs) by

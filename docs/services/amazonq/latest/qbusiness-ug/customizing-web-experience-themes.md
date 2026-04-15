@@ -1,3 +1,7 @@
+---
+title: "Customizing visual themes"
+---
+
 # Customizing visual themes
 
 This topic shows how to customize the visual theme using the Amazon Q Business console and

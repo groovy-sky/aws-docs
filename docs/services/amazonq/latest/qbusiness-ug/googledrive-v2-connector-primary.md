@@ -1,3 +1,7 @@
+---
+title: "Connecting Google Drive to Amazon Q Business (New)"
+---
+
 # Connecting Google Drive to Amazon Q Business (New)
 
 With the new connector, you can build and refresh your index significantly faster than

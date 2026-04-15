@@ -1,3 +1,7 @@
+---
+title: "Configuring the Amazon Q Business Microsoft Teams (Teams) integration for use"
+---
+
 # Configuring the Amazon Q Business Microsoft Teams (Teams) integration for use
 
 ###### Note

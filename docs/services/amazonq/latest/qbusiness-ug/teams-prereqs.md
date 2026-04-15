@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for connecting Amazon Q Business to Microsoft Teams"
+---
+
 # Prerequisites for connecting Amazon Q Business to Microsoft Teams
 
 Before you begin, make sure that you have completed the following

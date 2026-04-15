@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting issues for Amazon Q Developer for GitHub"
+---
+
 # Troubleshooting issues for Amazon Q Developer for GitHub
 
 Consult the following section to troubleshoot common problems when using Amazon Q Developer for

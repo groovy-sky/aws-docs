@@ -1,3 +1,7 @@
+---
+title: "Connecting GitHub (Server) to Amazon Q Business"
+---
+
 # Connecting GitHub (Server) to Amazon Q Business
 
 GitHub (Server) is a web-based hosting service for software development providing code

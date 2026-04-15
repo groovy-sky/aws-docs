@@ -1,3 +1,7 @@
+---
+title: "Amazon Q Business chat metrics"
+---
+
 # Amazon Q Business chat metrics
 
 The following table shows the [Chat and conversation\

@@ -1,3 +1,7 @@
+---
+title: "Creating a new Q App with a data collection form"
+---
+
 # Creating a new Q App with a data collection form
 
 To create a new data collection app, you create a new app, add a data collection form

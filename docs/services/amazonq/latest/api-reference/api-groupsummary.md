@@ -1,3 +1,7 @@
+---
+title: "GroupSummary"
+---
+
 # GroupSummary
 
 Summary information for groups.

@@ -1,3 +1,7 @@
+---
+title: "OAuth 2.0 authentication"
+---
+
 # OAuth 2.0 authentication
 
 You can connect Amazon Q to Confluence (Cloud) using OAuth 2.0

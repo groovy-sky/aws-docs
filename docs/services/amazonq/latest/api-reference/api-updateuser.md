@@ -1,3 +1,7 @@
+---
+title: "UpdateUser"
+---
+
 # UpdateUser
 
 Updates a information associated with a user id.

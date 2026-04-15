@@ -1,3 +1,7 @@
+---
+title: "Setting up Zendesk for connecting to Amazon Q Business"
+---
+
 # Setting up Zendesk for connecting to Amazon Q Business
 
 Before you connect Zendesk to Amazon Q Business, you need to create and

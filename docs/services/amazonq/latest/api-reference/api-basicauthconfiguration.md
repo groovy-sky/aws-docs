@@ -1,3 +1,7 @@
+---
+title: "BasicAuthConfiguration"
+---
+
 # BasicAuthConfiguration
 
 Information about the basic authentication credentials used to configure a

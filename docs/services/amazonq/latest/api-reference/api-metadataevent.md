@@ -1,3 +1,7 @@
+---
+title: "MetadataEvent"
+---
+
 # MetadataEvent
 
 A metadata event for a AI-generated text output message in a Amazon Q Business

@@ -1,3 +1,7 @@
+---
+title: "PredictAppDefinition"
+---
+
 # PredictAppDefinition
 
 The definition of an Amazon Q App generated based on input such as a conversation or problem

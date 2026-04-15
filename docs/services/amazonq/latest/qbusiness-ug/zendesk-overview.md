@@ -1,3 +1,7 @@
+---
+title: "Zendesk connector overview"
+---
+
 # Zendesk connector overview
 
 The following table gives an overview of the Zendesk connector and its

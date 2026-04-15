@@ -1,3 +1,7 @@
+---
+title: "Amazon Q Business subscription tiers and index types"
+---
+
 # Amazon Q Business subscription tiers and index types
 
 Amazon Q Business offers multiple index types and user subscription tiers. You can

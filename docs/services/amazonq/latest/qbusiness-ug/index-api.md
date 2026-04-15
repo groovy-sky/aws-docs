@@ -1,3 +1,7 @@
+---
+title: "Creating an Amazon Q Business index using APIs"
+---
+
 # Creating an Amazon Q Business index using APIs
 
 All Amazon Q Business index actions are supported both on the console and using

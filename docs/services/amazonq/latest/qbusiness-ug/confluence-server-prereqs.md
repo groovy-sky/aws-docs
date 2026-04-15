@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for connecting Amazon Q to Confluence (Server/Data Center)"
+---
+
 # Prerequisites for connecting Amazon Q to Confluence (Server/Data Center)
 
 Before you begin, make sure that you have completed the following

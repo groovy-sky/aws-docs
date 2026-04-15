@@ -1,3 +1,7 @@
+---
+title: "ScoreAttributes"
+---
+
 # ScoreAttributes
 
 Provides information about the relevance score of content.

@@ -1,3 +1,7 @@
+---
+title: "SharePoint Server 2019 connector overview"
+---
+
 # SharePoint Server 2019 connector overview
 
 The following table gives an overview of the Amazon Q Business

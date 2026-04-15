@@ -1,3 +1,7 @@
+---
+title: "Integrating Microsoft Word with the Amazon Q Business Add-in"
+---
+
 # Integrating Microsoft Word with the Amazon Q Business Add-in
 
 Amazon Q Business can enhance your users' Microsoft Word (Word) experience by

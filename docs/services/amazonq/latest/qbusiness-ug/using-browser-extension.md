@@ -1,3 +1,7 @@
+---
+title: "Using the Amazon Q Business browser extension"
+---
+
 # Using the Amazon Q Business browser extension
 
 The browser extension is available to Amazon Q Business users on Google

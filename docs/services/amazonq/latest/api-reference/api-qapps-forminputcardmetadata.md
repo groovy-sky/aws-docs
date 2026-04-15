@@ -1,3 +1,7 @@
+---
+title: "FormInputCardMetadata"
+---
+
 # FormInputCardMetadata
 
 The metadata of the form input card.

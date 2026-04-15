@@ -1,3 +1,7 @@
+---
+title: "DeleteChatControlsConfiguration"
+---
+
 # DeleteChatControlsConfiguration
 
 Deletes chat controls configured for an existing Amazon Q Business application.

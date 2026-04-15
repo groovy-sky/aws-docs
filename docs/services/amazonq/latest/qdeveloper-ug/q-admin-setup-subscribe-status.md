@@ -1,3 +1,7 @@
+---
+title: "Amazon Q Developer subscription statuses"
+---
+
 # Amazon Q Developer subscription statuses
 
 Subscription status information varies depending on whether you're an end-user with a personal

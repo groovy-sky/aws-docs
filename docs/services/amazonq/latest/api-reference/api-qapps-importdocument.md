@@ -1,3 +1,7 @@
+---
+title: "ImportDocument"
+---
+
 # ImportDocument
 
 Uploads a file that can then be used either as a default in a `FileUploadCard`

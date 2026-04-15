@@ -1,3 +1,7 @@
+---
+title: "Key terms for Amazon Q Business guardrails and chat controls"
+---
+
 # Key terms for Amazon Q Business guardrails and chat controls
 
 The following are key terms to understand guardrails in Amazon Q Business:

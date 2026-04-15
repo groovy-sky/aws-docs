@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for connecting Amazon Q Business to SharePoint (Online)"
+---
+
 # Prerequisites for connecting Amazon Q Business to SharePoint (Online)
 
 The following page outlines the prerequisites you need to complete before connecting

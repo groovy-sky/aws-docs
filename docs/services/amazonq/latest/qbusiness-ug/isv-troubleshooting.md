@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting"
+---
+
 # Troubleshooting
 
 If ISVs encounter issues with accessing the Amazon Q index, consider the

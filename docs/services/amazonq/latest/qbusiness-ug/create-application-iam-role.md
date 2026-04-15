@@ -1,3 +1,7 @@
+---
+title: "IAM role for an Amazon Q Business application"
+---
+
 # IAM role for an Amazon Q Business application
 
 When you create an Amazon Q Business application, you must provide Amazon Q with an

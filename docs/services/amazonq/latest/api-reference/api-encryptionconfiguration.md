@@ -1,3 +1,7 @@
+---
+title: "EncryptionConfiguration"
+---
+
 # EncryptionConfiguration
 
 Provides the identifier of the AWS KMS key used to encrypt data indexed by

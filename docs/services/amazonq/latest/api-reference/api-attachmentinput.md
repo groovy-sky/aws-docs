@@ -1,3 +1,7 @@
+---
+title: "AttachmentInput"
+---
+
 # AttachmentInput
 
 This is either a file directly uploaded into a web experience chat or a reference to an existing attachment that is part of a web experience chat.

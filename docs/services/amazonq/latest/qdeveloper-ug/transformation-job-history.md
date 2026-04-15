@@ -1,3 +1,7 @@
+---
+title: "Viewing transformation job history"
+---
+
 # Viewing transformation job history
 
 Amazon Q provides a comprehensive overview of your Java transformation job history, allowing you

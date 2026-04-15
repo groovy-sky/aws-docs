@@ -1,3 +1,7 @@
+---
+title: "CustomizationConfiguration"
+---
+
 # CustomizationConfiguration
 
 Contains the configuration information to customize the logo, font, and color of an Amazon Q Business web experience with individual files for each property or a CSS file for them all.

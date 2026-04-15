@@ -1,3 +1,7 @@
+---
+title: "Chatting with Amazon Q Developer about AWS"
+---
+
 # Chatting with Amazon Q Developer about AWS
 
 ###### Introducing generative AI-based Q artifacts

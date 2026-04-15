@@ -1,3 +1,7 @@
+---
+title: "What is the Amazon Q Developer profile?"
+---
+
 # What is the Amazon Q Developer profile?
 
 ###### Note

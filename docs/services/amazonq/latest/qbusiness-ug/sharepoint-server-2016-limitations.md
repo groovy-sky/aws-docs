@@ -1,3 +1,7 @@
+---
+title: "Known limitations for the Amazon Q Business SharePoint Server 2016 connector"
+---
+
 # Known limitations for the Amazon Q Business SharePoint Server 2016 connector
 
 The SharePoint Server 2016 connector has the following known limitations:

@@ -1,3 +1,7 @@
+---
+title: "Understanding and managing Verified Amazon Q Apps"
+---
+
 # Understanding and managing Verified Amazon Q Apps
 
 The Verified Q Apps feature empowers administrators to endorse published Amazon Q Apps.

@@ -1,3 +1,7 @@
+---
+title: "Message"
+---
+
 # Message
 
 A message in an Amazon Q Business web experience.

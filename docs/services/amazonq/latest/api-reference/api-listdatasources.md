@@ -1,3 +1,7 @@
+---
+title: "ListDataSources"
+---
+
 # ListDataSources
 
 Lists the Amazon Q Business data source connectors that you have created.

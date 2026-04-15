@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for connecting Amazon Q Business to SharePoint Server 2016"
+---
+
 # Prerequisites for connecting Amazon Q Business to SharePoint Server 2016
 
 The following page outlines the prerequisites you need to complete before connecting

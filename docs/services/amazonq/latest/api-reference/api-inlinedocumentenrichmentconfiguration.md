@@ -1,3 +1,7 @@
+---
+title: "InlineDocumentEnrichmentConfiguration"
+---
+
 # InlineDocumentEnrichmentConfiguration
 
 Provides the configuration information for applying basic logic to alter document

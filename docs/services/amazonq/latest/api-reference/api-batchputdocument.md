@@ -1,3 +1,7 @@
+---
+title: "BatchPutDocument"
+---
+
 # BatchPutDocument
 
 Adds one or more documents to an Amazon Q Business index.

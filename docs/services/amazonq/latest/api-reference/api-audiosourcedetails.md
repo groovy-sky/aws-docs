@@ -1,3 +1,7 @@
+---
+title: "AudioSourceDetails"
+---
+
 # AudioSourceDetails
 
 Details about an audio source, including its identifier, format, and time information.

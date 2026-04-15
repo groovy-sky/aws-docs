@@ -1,3 +1,7 @@
+---
+title: "Configuring the Amazon Q Business browser extension for use"
+---
+
 # Configuring the Amazon Q Business browser extension for use
 
 After installation and authentication, your users can access Amazon Q

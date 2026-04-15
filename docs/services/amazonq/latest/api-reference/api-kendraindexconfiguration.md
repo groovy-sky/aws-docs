@@ -1,3 +1,7 @@
+---
+title: "KendraIndexConfiguration"
+---
+
 # KendraIndexConfiguration
 
 Stores an Amazon Kendra index as a retriever.

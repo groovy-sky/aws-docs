@@ -1,3 +1,7 @@
+---
+title: "UpdateLibraryItem"
+---
+
 # UpdateLibraryItem
 
 Updates the library item for an Amazon Q App.

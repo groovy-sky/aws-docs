@@ -1,3 +1,7 @@
+---
+title: "OrchestrationConfiguration"
+---
+
 # OrchestrationConfiguration
 
 Configuration information required to enable chat orchestration for your Amazon Q Business

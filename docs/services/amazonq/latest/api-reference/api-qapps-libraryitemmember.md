@@ -1,3 +1,7 @@
+---
+title: "LibraryItemMember"
+---
+
 # LibraryItemMember
 
 A library item is a snapshot of an Amazon Q App that can be published so the users in their

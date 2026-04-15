@@ -1,3 +1,7 @@
+---
+title: "Service access roles for Amazon Q Business custom plugins"
+---
+
 # Service access roles for Amazon Q Business custom plugins
 
 To connect Amazon Q Business to third party applications that require

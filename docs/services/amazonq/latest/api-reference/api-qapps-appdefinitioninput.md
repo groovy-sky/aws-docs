@@ -1,3 +1,7 @@
+---
+title: "AppDefinitionInput"
+---
+
 # AppDefinitionInput
 
 The input for defining an Q App.

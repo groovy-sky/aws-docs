@@ -1,3 +1,7 @@
+---
+title: "Extracting semantic meaning from embedded visual content with Amazon Q Business"
+---
+
 # Extracting semantic meaning from embedded visual content with Amazon Q Business
 
 When Amazon Q Business processes your input files from a data source, it uses advanced image

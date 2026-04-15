@@ -1,3 +1,7 @@
+---
+title: "Understand error codes in the Microsoft Exchange connector"
+---
+
 # Understand error codes in the Microsoft Exchange connector
 
 The following table provides information about error codes you may see for the

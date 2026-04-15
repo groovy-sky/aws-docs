@@ -1,3 +1,7 @@
+---
+title: "Connecting Google Drive to Amazon Q Business (Original)"
+---
+
 # Connecting Google Drive to Amazon Q Business (Original)
 
 ###### Note

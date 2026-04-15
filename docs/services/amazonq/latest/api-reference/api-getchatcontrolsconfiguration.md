@@ -1,3 +1,7 @@
+---
+title: "GetChatControlsConfiguration"
+---
+
 # GetChatControlsConfiguration
 
 Gets information about chat controls configured for an existing Amazon Q Business

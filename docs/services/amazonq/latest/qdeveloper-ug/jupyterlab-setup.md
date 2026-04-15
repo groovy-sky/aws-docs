@@ -1,3 +1,7 @@
+---
+title: "Using Amazon Q Developer with JupyterLab"
+---
+
 # Using Amazon Q Developer with JupyterLab
 
 This page describes how to set up and activate Amazon Q Developer for JupyterLab. Once activated, Amazon Q can

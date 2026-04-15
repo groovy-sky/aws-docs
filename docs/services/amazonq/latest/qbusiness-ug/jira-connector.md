@@ -1,3 +1,7 @@
+---
+title: "Connecting Jira to Amazon Q Business"
+---
+
 # Connecting Jira to Amazon Q Business
 
 Jira is a project management tool for software development, product

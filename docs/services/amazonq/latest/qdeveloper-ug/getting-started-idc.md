@@ -1,3 +1,7 @@
+---
+title: "Getting started with IAM Identity Center"
+---
+
 # Getting started with IAM Identity Center
 
 _IAM Identity Center_ is a service that is used by administrators to manage the identities

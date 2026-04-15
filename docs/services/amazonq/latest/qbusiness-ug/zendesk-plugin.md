@@ -1,3 +1,7 @@
+---
+title: "Configuring a Zendesk plugin for Amazon Q Business"
+---
+
 # Configuring a Zendesk plugin for Amazon Q Business
 
 Zendesk is a customer relationship management system that helps businesses

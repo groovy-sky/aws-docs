@@ -1,3 +1,7 @@
+---
+title: "Getting started with a personal account (Builder ID)"
+---
+
 # Getting started with a personal account (Builder ID)
 
 If you want to use Amazon Q Developer for personal projects, and you don't need to administer other

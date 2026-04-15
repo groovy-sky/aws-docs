@@ -1,3 +1,7 @@
+---
+title: "Retrieving XPaths (XML Path Language) for Web Crawler"
+---
+
 # Retrieving XPaths (XML Path Language) for Web Crawler
 
 If the website you are crawling with Amazon Q Business Web Crawler uses Form or

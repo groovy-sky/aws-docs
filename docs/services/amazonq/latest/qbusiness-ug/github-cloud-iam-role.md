@@ -1,3 +1,7 @@
+---
+title: "IAM role for GitHub (Cloud) connector"
+---
+
 # IAM role for GitHub (Cloud) connector
 
 If you use the AWS CLI or an AWS SDK, you must create an AWS Identity and Access Management (IAM) policy

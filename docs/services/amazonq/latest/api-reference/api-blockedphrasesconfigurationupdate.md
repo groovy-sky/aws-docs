@@ -1,3 +1,7 @@
+---
+title: "BlockedPhrasesConfigurationUpdate"
+---
+
 # BlockedPhrasesConfigurationUpdate
 
 Updates a blocked phrases configuration in your Amazon Q Business application.

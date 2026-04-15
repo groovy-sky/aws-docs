@@ -1,3 +1,7 @@
+---
+title: "Using Amazon Q Developer with other services"
+---
+
 # Using Amazon Q Developer with other services
 
 ## AWS Identity and Access Management permissions for other services

@@ -1,3 +1,7 @@
+---
+title: "Upload files to a chat in Amazon Q Business"
+---
+
 # Upload files to a chat in Amazon Q Business
 
 Users using the Amazon Q Business web experience can upload documents and use

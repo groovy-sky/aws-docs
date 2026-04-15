@@ -1,3 +1,7 @@
+---
+title: "Connecting Google Drive to Amazon Q Business"
+---
+
 # Connecting Google Drive to Amazon Q Business
 
 Google Drive is a cloud-based file storage service. Amazon Q Business

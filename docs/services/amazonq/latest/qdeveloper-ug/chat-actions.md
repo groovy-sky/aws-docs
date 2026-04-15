@@ -1,3 +1,7 @@
+---
+title: "Chatting about your resources with Amazon Q Developer"
+---
+
 # Chatting about your resources with Amazon Q Developer
 
 Amazon Q Developer answers questions about your AWS account resources to help you understand your

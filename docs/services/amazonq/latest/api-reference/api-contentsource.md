@@ -1,3 +1,7 @@
+---
+title: "ContentSource"
+---
+
 # ContentSource
 
 Specifies the source of content to search in.

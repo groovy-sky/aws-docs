@@ -1,3 +1,7 @@
+---
+title: "Making authenticated Amazon Q Business API calls using IAM federation"
+---
+
 # Making authenticated Amazon Q Business API calls using IAM federation
 
 Amazon Q Business can securely handle data with integrated authentication and

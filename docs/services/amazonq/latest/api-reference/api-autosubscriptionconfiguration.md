@@ -1,3 +1,7 @@
+---
+title: "AutoSubscriptionConfiguration"
+---
+
 # AutoSubscriptionConfiguration
 
 Subscription configuration information for an Amazon Q Business application

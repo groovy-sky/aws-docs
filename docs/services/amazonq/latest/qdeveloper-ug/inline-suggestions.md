@@ -1,3 +1,7 @@
+---
+title: "Generating inline suggestions with Amazon Q Developer"
+---
+
 # Generating inline suggestions with Amazon Q Developer
 
 Amazon Q can provide you with code recommendations in real time. As you write

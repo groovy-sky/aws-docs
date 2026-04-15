@@ -1,3 +1,7 @@
+---
+title: "Creating an Amazon Q Business application using IAM Federation through Okta"
+---
+
 # Creating an Amazon Q Business application using IAM Federation through Okta
 
 As the first step toward creating a generative artificial intelligence (AI) assistant,

@@ -1,3 +1,7 @@
+---
+title: "ListQApps"
+---
+
 # ListQApps
 
 Lists the Amazon Q Apps owned by or associated with the user either because they created it

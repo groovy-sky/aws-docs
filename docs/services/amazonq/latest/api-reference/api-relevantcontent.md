@@ -1,3 +1,7 @@
+---
+title: "RelevantContent"
+---
+
 # RelevantContent
 
 Represents a piece of content that is relevant to a search query.

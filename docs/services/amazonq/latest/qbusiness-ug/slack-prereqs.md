@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for connecting Amazon Q Business to Slack"
+---
+
 # Prerequisites for connecting Amazon Q Business to Slack
 
 Before you begin, make sure that you have completed the following

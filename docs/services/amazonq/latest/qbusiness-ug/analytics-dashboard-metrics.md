@@ -1,3 +1,7 @@
+---
+title: "Amazon Q Business Analytics dashboard metrics"
+---
+
 # Amazon Q Business Analytics dashboard metrics
 
 The Amazon Q Business dashboard provides a comprehensive view of key metrics to help admins

@@ -1,3 +1,7 @@
+---
+title: "QuickSightConfiguration"
+---
+
 # QuickSightConfiguration
 
 The Amazon Quick configuration for an Amazon Q Business application that uses Quick as the identity provider.

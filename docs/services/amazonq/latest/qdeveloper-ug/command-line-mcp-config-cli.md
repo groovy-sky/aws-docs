@@ -1,3 +1,7 @@
+---
+title: "MCP configuration in the CLI"
+---
+
 # MCP configuration in the CLI
 
 This page covers CLI-specific options for configuring MCP servers.

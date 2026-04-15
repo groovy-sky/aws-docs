@@ -1,3 +1,7 @@
+---
+title: "Configuring a Zendesk Suite plugin for Amazon Q Business"
+---
+
 # Configuring a Zendesk Suite plugin for Amazon Q Business
 
 Zendesk Suite is a customer relationship management system that helps businesses

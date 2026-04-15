@@ -1,3 +1,7 @@
+---
+title: "TextInputCard"
+---
+
 # TextInputCard
 
 A card in an Amazon Q App that allows the user to input text.

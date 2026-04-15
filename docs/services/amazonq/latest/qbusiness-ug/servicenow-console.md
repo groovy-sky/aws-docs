@@ -1,3 +1,7 @@
+---
+title: "Connecting Amazon Q Business to ServiceNow Online using the console"
+---
+
 # Connecting Amazon Q Business to ServiceNow Online using the console
 
 The following procedure outlines how to connect Amazon Q Business to

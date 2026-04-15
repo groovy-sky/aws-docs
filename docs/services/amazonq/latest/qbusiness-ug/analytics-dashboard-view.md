@@ -1,3 +1,7 @@
+---
+title: "Viewing the analytics dashboards"
+---
+
 # Viewing the analytics dashboards
 
 To view the Amazon Q Business Analytics dashboard or Amazon Q Apps Analytics dashboard with the Amazon Q Business

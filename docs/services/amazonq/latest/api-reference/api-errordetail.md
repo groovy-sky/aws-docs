@@ -1,3 +1,7 @@
+---
+title: "ErrorDetail"
+---
+
 # ErrorDetail
 
 Provides information about a Amazon Q Business request error.

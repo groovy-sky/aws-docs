@@ -1,3 +1,7 @@
+---
+title: "CreateQApp"
+---
+
 # CreateQApp
 
 Creates a new Amazon Q App based on the provided definition. The Q App definition specifies

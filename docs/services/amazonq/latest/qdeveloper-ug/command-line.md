@@ -1,3 +1,7 @@
+---
+title: "Using Amazon Q Developer on the command line"
+---
+
 # Using Amazon Q Developer on the command line
 
 The Q CLI has become the Kiro CLI.

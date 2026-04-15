@@ -1,3 +1,7 @@
+---
+title: "Configuring actions in Amazon Q Business"
+---
+
 # Configuring actions in Amazon Q Business
 
 After you configure your application environment, you can optionally choose to add

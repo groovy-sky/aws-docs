@@ -1,3 +1,7 @@
+---
+title: "FormInputCardInput"
+---
+
 # FormInputCardInput
 
 Represents a form input card for an Amazon Q App.

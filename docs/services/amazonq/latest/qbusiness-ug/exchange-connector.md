@@ -1,3 +1,7 @@
+---
+title: "Connecting Microsoft Exchange to Amazon Q Business"
+---
+
 # Connecting Microsoft Exchange to Amazon Q Business
 
 You can connect your Microsoft Exchange enterprise messaging system to Amazon Q Business to unlock valuable organizational knowledge. This connection allows your users to search emails, calendar events, and shared content directly through the Amazon Q web experience.

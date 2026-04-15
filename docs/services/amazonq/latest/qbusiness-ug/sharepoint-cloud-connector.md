@@ -1,3 +1,7 @@
+---
+title: "Connecting SharePoint (Online) to Amazon Q Business"
+---
+
 # Connecting SharePoint (Online) to Amazon Q Business
 
 Microsoft SharePoint is a collaborative website building service that lets

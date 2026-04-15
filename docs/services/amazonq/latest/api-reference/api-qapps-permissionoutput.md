@@ -1,3 +1,7 @@
+---
+title: "PermissionOutput"
+---
+
 # PermissionOutput
 
 The permission granted to the Amazon Q App.

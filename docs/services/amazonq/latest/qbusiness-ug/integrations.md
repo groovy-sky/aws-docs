@@ -1,3 +1,7 @@
+---
+title: "Integrations"
+---
+
 # Integrations
 
 Amazon Q Business integrations enhance user productivity by bringing AI-powered assistance

@@ -1,3 +1,7 @@
+---
+title: "Identity and access management for Amazon Q Developer"
+---
+
 # Identity and access management for Amazon Q Developer
 
 AWS Identity and Access Management (IAM) is an AWS service that helps an administrator

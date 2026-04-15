@@ -1,3 +1,7 @@
+---
+title: "Chatting about email sending"
+---
+
 # Chatting about email sending
 
 Amazon Q can help you set up email sending in Amazon Simple Email Service (Amazon SES),

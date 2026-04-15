@@ -1,3 +1,7 @@
+---
+title: "Using the Amazon Q Business Add-in for Microsoft Outlook"
+---
+
 # Using the Amazon Q Business Add-in for Microsoft Outlook
 
 ###### Topics

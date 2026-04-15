@@ -1,3 +1,7 @@
+---
+title: "TextDocumentStatistics"
+---
+
 # TextDocumentStatistics
 
 Provides information about text documents in an index.

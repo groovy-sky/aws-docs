@@ -1,3 +1,7 @@
+---
+title: "Using Amazon Q Developer with Amazon SageMaker AI Studio"
+---
+
 # Using Amazon Q Developer with Amazon SageMaker AI Studio
 
 You can chat with Amazon Q inside Amazon SageMaker AI Studio. You can also make code recommendations automatically as you write

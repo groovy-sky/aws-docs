@@ -1,3 +1,7 @@
+---
+title: "NumberAttributeBoostingConfiguration"
+---
+
 # NumberAttributeBoostingConfiguration
 
 Provides information on boosting `NUMBER` type document attributes.

@@ -1,3 +1,7 @@
+---
+title: "FileUploadCard"
+---
+
 # FileUploadCard
 
 A card in an Amazon Q App that allows the user to upload a file.

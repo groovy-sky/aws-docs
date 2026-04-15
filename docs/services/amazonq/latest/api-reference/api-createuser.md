@@ -1,3 +1,7 @@
+---
+title: "CreateUser"
+---
+
 # CreateUser
 
 Creates a universally unique identifier (UUID) mapped to a list of local user ids

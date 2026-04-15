@@ -1,3 +1,7 @@
+---
+title: "Adding document metadata in Amazon S3"
+---
+
 # Adding document metadata in Amazon S3
 
 To customize chat results for your end users, you can add metadata or document attributes

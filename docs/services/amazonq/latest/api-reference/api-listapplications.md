@@ -1,3 +1,7 @@
+---
+title: "ListApplications"
+---
+
 # ListApplications
 
 Lists Amazon Q Business applications.

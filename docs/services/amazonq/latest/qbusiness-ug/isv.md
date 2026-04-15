@@ -1,3 +1,7 @@
+---
+title: "Amazon Q index for independent software vendors (ISVs)"
+---
+
 # Amazon Q index for independent software vendors (ISVs)
 
 As an ISV, you can leverage Amazon Q index to access and integrate your

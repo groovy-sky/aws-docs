@@ -1,3 +1,7 @@
+---
+title: "ListIndices"
+---
+
 # ListIndices
 
 Lists the Amazon Q Business indices you have created.

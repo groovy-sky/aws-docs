@@ -1,3 +1,7 @@
+---
+title: "GroupStatusDetail"
+---
+
 # GroupStatusDetail
 
 Provides the details of a group's status.

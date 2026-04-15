@@ -1,3 +1,7 @@
+---
+title: "Managing Amazon Q Business application resources"
+---
+
 # Managing Amazon Q Business application resources
 
 You can choose to manage your Amazon Q Business application environment and associated

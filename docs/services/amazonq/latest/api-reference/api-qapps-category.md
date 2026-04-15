@@ -1,3 +1,7 @@
+---
+title: "Category"
+---
+
 # Category
 
 A category used to classify and filter library items for Amazon Q Apps.

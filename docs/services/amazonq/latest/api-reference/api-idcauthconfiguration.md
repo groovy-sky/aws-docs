@@ -1,3 +1,7 @@
+---
+title: "IdcAuthConfiguration"
+---
+
 # IdcAuthConfiguration
 
 Information about the AWS IAM Identity Center Application used to configure authentication for a plugin.

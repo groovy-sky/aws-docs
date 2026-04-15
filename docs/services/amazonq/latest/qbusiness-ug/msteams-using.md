@@ -1,3 +1,7 @@
+---
+title: "Using the Amazon Q Business Microsoft Teams app"
+---
+
 # Using the Amazon Q Business Microsoft Teams app
 
 ###### Topics

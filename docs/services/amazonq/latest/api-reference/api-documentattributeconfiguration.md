@@ -1,3 +1,7 @@
+---
+title: "DocumentAttributeConfiguration"
+---
+
 # DocumentAttributeConfiguration
 
 Configuration information for document attributes. Document attributes are metadata or

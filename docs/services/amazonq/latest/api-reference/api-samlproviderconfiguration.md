@@ -1,3 +1,7 @@
+---
+title: "SamlProviderConfiguration"
+---
+
 # SamlProviderConfiguration
 
 Information about the SAML 2.0-compliant identity provider (IdP) used to authenticate

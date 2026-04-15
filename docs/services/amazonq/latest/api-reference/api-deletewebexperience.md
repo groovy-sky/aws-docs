@@ -1,3 +1,7 @@
+---
+title: "DeleteWebExperience"
+---
+
 # DeleteWebExperience
 
 Deletes an Amazon Q Business web experience.

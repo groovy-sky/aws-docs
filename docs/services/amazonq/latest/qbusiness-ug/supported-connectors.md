@@ -1,3 +1,7 @@
+---
+title: "Connecting Amazon Q Business data source connectors"
+---
+
 # Connecting Amazon Q Business data source connectors
 
 ###### Note

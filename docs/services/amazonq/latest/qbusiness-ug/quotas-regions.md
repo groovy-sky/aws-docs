@@ -1,3 +1,7 @@
+---
+title: "Service quotas for Amazon Q Business"
+---
+
 # Service quotas for Amazon Q Business
 
 The following are the service endpoints and service quotas for Amazon Q Business To

@@ -1,3 +1,7 @@
+---
+title: "Checking Jira connectivity"
+---
+
 # Checking Jira connectivity
 
 Before you sync your Jira data source connector after [configuring it](jira-console.md), we recommend you check the connection between

@@ -1,3 +1,7 @@
+---
+title: "WebExperienceAuthConfiguration"
+---
+
 # WebExperienceAuthConfiguration
 
 Provides the authorization configuration information needed to deploy a Amazon Q Business

@@ -1,3 +1,7 @@
+---
+title: "ContentRetrievalRule"
+---
+
 # ContentRetrievalRule
 
 Rules for retrieving content from data sources connected to a Amazon Q Business

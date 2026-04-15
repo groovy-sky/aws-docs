@@ -1,3 +1,7 @@
+---
+title: "Using the Amazon Q Business Add-in for Microsoft Word"
+---
+
 # Using the Amazon Q Business Add-in for Microsoft Word
 
 ###### Topics

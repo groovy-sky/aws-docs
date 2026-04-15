@@ -1,3 +1,7 @@
+---
+title: "CreateSubscription"
+---
+
 # CreateSubscription
 
 Subscribes an IAM Identity Center user or a group to a pricing tier for an

@@ -1,3 +1,7 @@
+---
+title: "Deleting documents uploaded in an Amazon Q Business application"
+---
+
 # Deleting documents uploaded in an Amazon Q Business application
 
 To delete documents that have been directly uploaded to an application environment, you can

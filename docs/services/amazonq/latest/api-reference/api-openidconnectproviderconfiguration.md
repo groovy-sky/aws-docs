@@ -1,3 +1,7 @@
+---
+title: "OpenIDConnectProviderConfiguration"
+---
+
 # OpenIDConnectProviderConfiguration
 
 Information about the OIDC-compliant identity provider (IdP) used to authenticate end

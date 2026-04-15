@@ -1,3 +1,7 @@
+---
+title: "Using Amazon Q Developer plugins"
+---
+
 # Using Amazon Q Developer plugins
 
 Amazon Q Developer integrates with third party monitoring tools and security platforms so you can

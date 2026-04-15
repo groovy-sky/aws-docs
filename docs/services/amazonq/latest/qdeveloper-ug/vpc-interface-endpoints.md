@@ -1,3 +1,7 @@
+---
+title: "Amazon Q Developer and interface endpoints (AWS PrivateLink)"
+---
+
 # Amazon Q Developer and interface endpoints (AWS PrivateLink)
 
 ###### Note

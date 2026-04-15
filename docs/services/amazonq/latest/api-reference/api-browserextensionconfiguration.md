@@ -1,3 +1,7 @@
+---
+title: "BrowserExtensionConfiguration"
+---
+
 # BrowserExtensionConfiguration
 
 The container for browser extension configuration for an Amazon Q Business web experience.

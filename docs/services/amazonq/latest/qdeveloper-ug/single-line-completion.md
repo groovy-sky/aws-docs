@@ -1,3 +1,7 @@
+---
+title: "Using Amazon Q Developer for single-line code completion"
+---
+
 # Using Amazon Q Developer for single-line code completion
 
 When you start typing out single lines of code, Amazon Q makes suggestions based on your

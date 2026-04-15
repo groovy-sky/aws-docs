@@ -1,3 +1,7 @@
+---
+title: "DocumentAttributeTarget"
+---
+
 # DocumentAttributeTarget
 
 The target document attribute or metadata field you want to alter when ingesting

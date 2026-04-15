@@ -1,3 +1,7 @@
+---
+title: "DeleteQApp"
+---
+
 # DeleteQApp
 
 Deletes an Amazon Q App owned by the user. If the Q App was previously published to the

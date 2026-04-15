@@ -1,3 +1,7 @@
+---
+title: "DeleteGroup"
+---
+
 # DeleteGroup
 
 Deletes a group so that all users and sub groups that belong to the group can no

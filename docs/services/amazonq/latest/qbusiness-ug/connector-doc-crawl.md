@@ -1,3 +1,7 @@
+---
+title: "What is a document?"
+---
+
 # What is a document?
 
 When you connect Amazon Q Business to a data source, what Amazon Q Business considers—and crawls—as a document varies by

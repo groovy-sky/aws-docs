@@ -1,3 +1,7 @@
+---
+title: "Creating an Amazon Quick-integrated Amazon Q Business application"
+---
+
 # Creating an Amazon Quick-integrated Amazon Q Business application
 
 With an Amazon Quick-integrated Amazon Q Business application, Quick users authenticate through

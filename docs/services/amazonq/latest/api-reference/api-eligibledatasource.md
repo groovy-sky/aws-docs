@@ -1,3 +1,7 @@
+---
+title: "EligibleDataSource"
+---
+
 # EligibleDataSource
 
 The identifier of the data source Amazon Q Business will generate responses from.

@@ -1,3 +1,7 @@
+---
+title: "Supported connectors"
+---
+
 # Supported connectors
 
 Amazon Q Business supports the following connectors:

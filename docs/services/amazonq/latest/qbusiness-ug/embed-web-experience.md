@@ -1,3 +1,7 @@
+---
+title: "Add Amazon Q embedded to your website"
+---
+
 # Add Amazon Q embedded to your website
 
 You can embed your Amazon Q Business web experience by adding an

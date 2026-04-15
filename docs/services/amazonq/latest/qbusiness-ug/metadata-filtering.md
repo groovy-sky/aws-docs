@@ -1,3 +1,7 @@
+---
+title: "Filtering chat responses using document attributes and metadata"
+---
+
 # Filtering chat responses using document attributes and metadata
 
 ###### Note

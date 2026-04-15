@@ -1,3 +1,7 @@
+---
+title: "Connecting Amazon Q Business to Microsoft Teams using APIs"
+---
+
 # Connecting Amazon Q Business to Microsoft Teams using APIs
 
 You use the [CreateDataSource](../api-reference/api-createdatasource.md) action to connect a data source to your

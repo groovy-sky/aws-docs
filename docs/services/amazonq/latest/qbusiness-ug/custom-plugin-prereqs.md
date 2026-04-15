@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for Amazon Q Business custom plugins"
+---
+
 # Prerequisites for Amazon Q Business custom plugins
 
 **Before you configure your Amazon Q custom plugin, you must**

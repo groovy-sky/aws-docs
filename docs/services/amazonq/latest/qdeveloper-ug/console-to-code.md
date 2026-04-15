@@ -1,3 +1,7 @@
+---
+title: "Automating AWS services with Amazon Q Developer Console-to-Code"
+---
+
 # Automating AWS services with Amazon Q Developer Console-to-Code
 
 ## What is Console-to-Code?

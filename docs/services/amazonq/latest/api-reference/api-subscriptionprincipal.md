@@ -1,3 +1,7 @@
+---
+title: "SubscriptionPrincipal"
+---
+
 # SubscriptionPrincipal
 
 A user or group in the IAM Identity Center instance connected to the Amazon Q Business

@@ -1,3 +1,7 @@
+---
+title: "ImageExtractionConfiguration"
+---
+
 # ImageExtractionConfiguration
 
 The configuration for extracting semantic meaning from images in documents. For more information, see [Extracting semantic meaning from images and visuals](../qbusiness-ug/extracting-meaning-from-images.md).

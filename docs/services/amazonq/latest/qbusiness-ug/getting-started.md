@@ -1,3 +1,7 @@
+---
+title: "Getting started with Amazon Q Business"
+---
+
 # Getting started with Amazon Q Business
 
 To start using Amazon Q Business, set up an AWS account and create the necessary

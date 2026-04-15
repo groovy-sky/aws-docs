@@ -1,3 +1,7 @@
+---
+title: "CreateLibraryItem"
+---
+
 # CreateLibraryItem
 
 Creates a new library item for an Amazon Q App, allowing it to be discovered and used by

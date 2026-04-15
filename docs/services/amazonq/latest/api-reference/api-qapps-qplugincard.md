@@ -1,3 +1,7 @@
+---
+title: "QPluginCard"
+---
+
 # QPluginCard
 
 A card in an Q App that integrates with a third-party plugin or service.

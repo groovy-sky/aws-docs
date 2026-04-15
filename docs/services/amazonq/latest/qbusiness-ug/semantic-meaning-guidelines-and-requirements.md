@@ -1,3 +1,7 @@
+---
+title: "Guidelines and requirements"
+---
+
 # Guidelines and requirements
 
 The following are guidelines and requirements for extracting content from

@@ -1,3 +1,7 @@
+---
+title: "Permissions for monitoring Amazon Q Business with Amazon CloudWatch Logs"
+---
+
 # Permissions for monitoring Amazon Q Business with Amazon CloudWatch Logs
 
 To set up Amazon CloudWatch Logs for Amazon Q Business, use the following IAM policy to grant the necessary

@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting data source connectors"
+---
+
 # Troubleshooting data source connectors
 
 This section can help you fix issues with Amazon Q Business data source

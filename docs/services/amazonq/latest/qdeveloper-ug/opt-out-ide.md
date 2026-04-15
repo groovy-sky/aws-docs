@@ -1,3 +1,7 @@
+---
+title: "Opt out of data sharing in the IDE and command line"
+---
+
 # Opt out of data sharing in the IDE and command line
 
 This page explains how to opt out of sharing your data in the IDE or command line where

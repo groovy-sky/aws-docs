@@ -1,3 +1,7 @@
+---
+title: "Understand error codes in the Amazon Q Business Confluence (Cloud) connector"
+---
+
 # Understand error codes in the Amazon Q Business Confluence (Cloud) connector
 
 The following table provides information about error codes you may see for the

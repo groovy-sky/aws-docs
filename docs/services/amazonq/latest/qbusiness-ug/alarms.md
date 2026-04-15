@@ -1,3 +1,7 @@
+---
+title: "Creating a CloudWatch alarm"
+---
+
 # Creating a CloudWatch alarm
 
 You can create a CloudWatch alarm that sends an Amazon Simple Notification Service (Amazon SNS) message when the alarm

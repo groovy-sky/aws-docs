@@ -1,3 +1,7 @@
+---
+title: "SourceDetails"
+---
+
 # SourceDetails
 
 Container for details about different types of media sources (image, audio, or video).

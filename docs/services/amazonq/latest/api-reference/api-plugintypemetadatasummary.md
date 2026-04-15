@@ -1,3 +1,7 @@
+---
+title: "PluginTypeMetadataSummary"
+---
+
 # PluginTypeMetadataSummary
 
 Summary metadata information for a Amazon Q Business plugin.

@@ -1,3 +1,7 @@
+---
+title: "Connecting Amazon Q Business to SharePoint Server 2016 using APIs"
+---
+
 # Connecting Amazon Q Business to SharePoint Server 2016 using APIs
 
 You use the [CreateDataSource](../api-reference/api-createdatasource.md) action to connect a data source to your

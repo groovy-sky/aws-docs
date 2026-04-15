@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot Amazon Q Developer"
+---
+
 # Troubleshoot Amazon Q Developer
 
 This troubleshooting guide helps you resolve common issues when using Amazon Q Developer. Each section provides clear problem descriptions, possible causes, step-by-step solutions, and verification steps to get you back on track quickly.

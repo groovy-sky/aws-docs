@@ -1,3 +1,7 @@
+---
+title: "Quickstart: Installing, using features in GitHub, and increasing usage limits"
+---
+
 # Quickstart: Installing, using features in GitHub, and increasing usage limits
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "Unsubscribing from Amazon Q Developer Pro"
+---
+
 # Unsubscribing from Amazon Q Developer Pro
 
 How you unsubscribe from the Pro tier depends on whether you're an end-user with a personal

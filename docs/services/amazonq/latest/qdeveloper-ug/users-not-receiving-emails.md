@@ -1,3 +1,7 @@
+---
+title: "Users not receiving activation emails"
+---
+
 # Users not receiving activation emails
 
 **Problem: Users are not receiving activation emails**

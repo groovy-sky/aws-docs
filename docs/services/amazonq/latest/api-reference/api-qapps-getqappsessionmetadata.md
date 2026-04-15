@@ -1,3 +1,7 @@
+---
+title: "GetQAppSessionMetadata"
+---
+
 # GetQAppSessionMetadata
 
 Retrieves the current configuration of a Q App session.

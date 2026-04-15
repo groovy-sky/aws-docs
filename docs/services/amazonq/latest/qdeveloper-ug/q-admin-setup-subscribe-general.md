@@ -1,3 +1,7 @@
+---
+title: "Amazon Q Developer Pro subscriptions"
+---
+
 # Amazon Q Developer Pro subscriptions
 
 An _Amazon Q Developer Pro subscription_, also called a _Pro tier_

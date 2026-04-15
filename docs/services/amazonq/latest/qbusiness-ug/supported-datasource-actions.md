@@ -1,3 +1,7 @@
+---
+title: "Managing Amazon Q Business data sources"
+---
+
 # Managing Amazon Q Business data sources
 
 To manage data source connectors, you can perform the following actions:

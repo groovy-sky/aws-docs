@@ -1,3 +1,7 @@
+---
+title: "IAM role for an Amazon Q Business web experience using IAM Federation"
+---
+
 # IAM role for an Amazon Q Business web experience using IAM Federation
 
 ###### Important

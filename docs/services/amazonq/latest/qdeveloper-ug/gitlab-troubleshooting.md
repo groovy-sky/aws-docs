@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting issues for GitLab Duo with Amazon Q"
+---
+
 # Troubleshooting issues for GitLab Duo with Amazon Q
 
 Consult the following section to troubleshoot common onboarding problems when using GitLab Duo

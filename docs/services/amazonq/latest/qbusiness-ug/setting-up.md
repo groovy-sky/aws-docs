@@ -1,3 +1,7 @@
+---
+title: "Setting up for Amazon Q Business"
+---
+
 # Setting up for Amazon Q Business
 
 Before you begin using Amazon Q Business for the first time, complete the following

@@ -1,3 +1,7 @@
+---
+title: "Connecting Microsoft OneDrive to Amazon Q Business"
+---
+
 # Connecting Microsoft OneDrive to Amazon Q Business
 
 Microsoft OneDrive is a cloud-based storage service that you can use to

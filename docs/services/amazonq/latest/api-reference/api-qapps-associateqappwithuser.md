@@ -1,3 +1,7 @@
+---
+title: "AssociateQAppWithUser"
+---
+
 # AssociateQAppWithUser
 
 This operation creates a link between the user's identity calling the operation and a

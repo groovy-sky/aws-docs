@@ -1,3 +1,7 @@
+---
+title: "Enabling Amazon Q Business user conversation logging"
+---
+
 # Enabling Amazon Q Business user conversation logging
 
 You can enable Amazon Q Business user conversation logging within the Amazon Q Business console or using the

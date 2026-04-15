@@ -1,3 +1,7 @@
+---
+title: "GetQApp"
+---
+
 # GetQApp
 
 Retrieves the full details of an Q App, including its definition specifying the cards and

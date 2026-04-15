@@ -1,3 +1,7 @@
+---
+title: "UpdateApplication"
+---
+
 # UpdateApplication
 
 Updates an existing Amazon Q Business application.

@@ -1,3 +1,7 @@
+---
+title: "SubscriptionDetails"
+---
+
 # SubscriptionDetails
 
 The details of an Amazon Q Business subscription.

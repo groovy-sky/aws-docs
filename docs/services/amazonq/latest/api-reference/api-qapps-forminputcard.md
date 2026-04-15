@@ -1,3 +1,7 @@
+---
+title: "FormInputCard"
+---
+
 # FormInputCard
 
 A card in an Amazon Q App that allows the user to submit a response.

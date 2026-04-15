@@ -1,3 +1,7 @@
+---
+title: "HookConfiguration"
+---
+
 # HookConfiguration
 
 Provides the configuration information for invoking a Lambda function in

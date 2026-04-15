@@ -1,3 +1,7 @@
+---
+title: "Amazon Q Developer command line transformation tool version history"
+---
+
 # Amazon Q Developer command line transformation tool version history
 
 Review the following information for details about current and past releases of the Amazon Q Developer

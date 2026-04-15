@@ -1,3 +1,7 @@
+---
+title: "Add a data accessor (ISV) to connect to your Amazon Q index"
+---
+
 # Add a data accessor (ISV) to connect to your Amazon Q index
 
 After setting up your application environment and connecting your data source(s), Amazon Q Business

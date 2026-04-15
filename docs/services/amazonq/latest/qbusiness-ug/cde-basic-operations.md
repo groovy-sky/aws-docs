@@ -1,3 +1,7 @@
+---
+title: "Using basic operations for Amazon Q Business document enrichment"
+---
+
 # Using basic operations for Amazon Q Business document enrichment
 
 With document enrichment, you can use basic operations to manipulate document

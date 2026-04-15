@@ -1,3 +1,7 @@
+---
+title: "Adding context to Amazon Q Developer chat in the IDE"
+---
+
 # Adding context to Amazon Q Developer chat in the IDE
 
 When you chat with Amazon Q in the integrated development environment (IDE), you can provide Amazon Q with

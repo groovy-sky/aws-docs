@@ -1,3 +1,7 @@
+---
+title: "Boosting chat responses using metadata boosting"
+---
+
 # Boosting chat responses using metadata boosting
 
 ###### Note

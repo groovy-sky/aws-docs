@@ -1,3 +1,7 @@
+---
+title: "QQueryCard"
+---
+
 # QQueryCard
 
 A card in a Amazon Q App that generates a response based on the Amazon Q Business service.

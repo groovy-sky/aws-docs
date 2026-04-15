@@ -1,3 +1,7 @@
+---
+title: "What is Amazon Q Business?"
+---
+
 # What is Amazon Q Business?
 
 **Powered by Amazon Bedrock:** AWS implements [automated\

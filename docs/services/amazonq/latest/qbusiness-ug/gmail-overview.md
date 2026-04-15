@@ -1,3 +1,7 @@
+---
+title: "Gmail connector overview"
+---
+
 # Gmail connector overview
 
 The following table gives an overview of the Gmail connector and its

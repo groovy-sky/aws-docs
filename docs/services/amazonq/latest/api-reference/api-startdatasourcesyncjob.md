@@ -1,3 +1,7 @@
+---
+title: "StartDataSourceSyncJob"
+---
+
 # StartDataSourceSyncJob
 
 Starts a data source connector synchronization job. If a synchronization job is

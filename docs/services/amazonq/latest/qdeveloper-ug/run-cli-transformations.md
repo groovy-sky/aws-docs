@@ -1,3 +1,7 @@
+---
+title: "Running a transformation on the command line with Amazon Q Developer"
+---
+
 # Running a transformation on the command line with Amazon Q Developer
 
 Complete these steps to transform your code on the command line with the Amazon Q Developer command line

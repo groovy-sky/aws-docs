@@ -1,3 +1,7 @@
+---
+title: "TagResource"
+---
+
 # TagResource
 
 Adds the specified tag to the specified Amazon Q Business application or data source

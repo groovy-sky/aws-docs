@@ -1,3 +1,7 @@
+---
+title: "AppliedCreatorModeConfiguration"
+---
+
 # AppliedCreatorModeConfiguration
 
 The creator mode specific admin controls configured for an Amazon Q Business application.

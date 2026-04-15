@@ -1,3 +1,7 @@
+---
+title: "ExportQAppSessionData"
+---
+
 # ExportQAppSessionData
 
 Exports the collected data of a Q App data collection session.

@@ -1,3 +1,7 @@
+---
+title: "IndexCapacityConfiguration"
+---
+
 # IndexCapacityConfiguration
 
 Provides information about index capacity configuration.

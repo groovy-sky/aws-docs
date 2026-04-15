@@ -1,3 +1,7 @@
+---
+title: "Connecting Box to Amazon Q Business"
+---
+
 # Connecting Box to Amazon Q Business
 
 Box is a cloud storage service that offers file hosting capabilities. You

@@ -1,3 +1,7 @@
+---
+title: "AccessConfiguration"
+---
+
 # AccessConfiguration
 
 Used to configure access permissions for a document.

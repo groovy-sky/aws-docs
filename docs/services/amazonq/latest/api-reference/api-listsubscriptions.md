@@ -1,3 +1,7 @@
+---
+title: "ListSubscriptions"
+---
+
 # ListSubscriptions
 
 Lists all subscriptions created in an Amazon Q Business application.

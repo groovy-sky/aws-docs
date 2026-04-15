@@ -1,3 +1,7 @@
+---
+title: "Using the Quick plugin to get insights from structured data"
+---
+
 # Using the Quick plugin to get insights from structured data
 
 ###### Note

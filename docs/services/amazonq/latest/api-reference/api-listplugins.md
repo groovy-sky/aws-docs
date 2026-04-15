@@ -1,3 +1,7 @@
+---
+title: "ListPlugins"
+---
+
 # ListPlugins
 
 Lists configured Amazon Q Business plugins.

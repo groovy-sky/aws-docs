@@ -1,3 +1,7 @@
+---
+title: "OAuth 2.0 authentication"
+---
+
 # OAuth 2.0 authentication
 
 You can connect Amazon Q to Jira using OAuth 2.0

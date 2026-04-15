@@ -1,3 +1,7 @@
+---
+title: "How Amazon Q Business connector crawls Salesforce ACLs"
+---
+
 # How Amazon Q Business connector crawls Salesforce ACLs
 
 Connectors support crawling ACL and identity information where applicable based on the data source.

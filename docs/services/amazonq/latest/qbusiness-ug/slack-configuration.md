@@ -1,3 +1,7 @@
+---
+title: "Configuring the Amazon Q Business Slack integration for use"
+---
+
 # Configuring the Amazon Q Business Slack integration for use
 
 The Amazon Q Business integration for Slack is only available for use by Amazon Q Business Pro

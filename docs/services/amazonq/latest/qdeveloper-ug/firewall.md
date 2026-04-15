@@ -1,3 +1,7 @@
+---
+title: "Configuring a firewall, proxy server, or data perimeter for Amazon Q Developer"
+---
+
 # Configuring a firewall, proxy server, or data perimeter for Amazon Q Developer
 
 If you're using a firewall, proxy server, or [data perimeter](https://aws.amazon.com/identity/data-perimeters-on-aws), make sure to

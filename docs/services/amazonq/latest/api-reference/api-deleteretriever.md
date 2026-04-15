@@ -1,3 +1,7 @@
+---
+title: "DeleteRetriever"
+---
+
 # DeleteRetriever
 
 Deletes the retriever used by an Amazon Q Business application.

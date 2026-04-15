@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for connecting Amazon Q Business to Jira"
+---
+
 # Prerequisites for connecting Amazon Q Business to Jira
 
 Before you begin, make sure that you have completed the following

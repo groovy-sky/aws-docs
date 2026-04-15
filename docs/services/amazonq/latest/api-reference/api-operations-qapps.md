@@ -1,3 +1,7 @@
+---
+title: "QApps"
+---
+
 # QApps
 
 The following actions are supported by QApps:

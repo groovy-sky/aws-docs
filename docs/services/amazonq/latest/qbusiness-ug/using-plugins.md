@@ -1,3 +1,7 @@
+---
+title: "Using Amazon Q Business built-in plugins"
+---
+
 # Using Amazon Q Business built-in plugins
 
 After plugins have been configured, you can use them to perform supported actions in your

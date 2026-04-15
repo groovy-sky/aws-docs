@@ -1,3 +1,7 @@
+---
+title: "Manage access to Amazon Q Developer with policies"
+---
+
 # Manage access to Amazon Q Developer with policies
 
 ###### Note

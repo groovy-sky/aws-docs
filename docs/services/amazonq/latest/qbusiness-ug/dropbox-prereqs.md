@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for connecting Amazon Q Business to Dropbox"
+---
+
 # Prerequisites for connecting Amazon Q Business to Dropbox
 
 Before you begin, make sure that you have completed the following

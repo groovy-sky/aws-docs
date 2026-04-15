@@ -1,3 +1,7 @@
+---
+title: "Connecting Smartsheet to Amazon Q Business"
+---
+
 # Connecting Smartsheet to Amazon Q Business
 
 Smartsheet is an enterprise work management platform that lets users manage

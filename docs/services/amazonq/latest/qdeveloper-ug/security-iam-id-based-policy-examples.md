@@ -1,3 +1,7 @@
+---
+title: "Identity-based policy examples for Amazon Q Developer"
+---
+
 # Identity-based policy examples for Amazon Q Developer
 
 The following example IAM policies control permissions for various Amazon Q Developer actions. Use

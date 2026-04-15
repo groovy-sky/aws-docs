@@ -1,3 +1,7 @@
+---
+title: "Known limitations for the Amazon Q Business Confluence (Server/Data Center) connector"
+---
+
 # Known limitations for the Amazon Q Business Confluence (Server/Data Center) connector
 
 The Amazon Q Confluence (Server/Data Center) connector has the following known

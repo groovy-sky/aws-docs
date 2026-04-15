@@ -1,3 +1,7 @@
+---
+title: "Connecting Zendesk to Amazon Q Business"
+---
+
 # Connecting Zendesk to Amazon Q Business
 
 Zendesk is a customer relationship management system that helps businesses

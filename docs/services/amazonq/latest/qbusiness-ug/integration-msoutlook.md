@@ -1,3 +1,7 @@
+---
+title: "Integrating Microsoft Outlook with the Amazon Q Business Add-in"
+---
+
 # Integrating Microsoft Outlook with the Amazon Q Business Add-in
 
 Amazon Q Business can enhance your users' Microsoft Outlook (Outlook) experience

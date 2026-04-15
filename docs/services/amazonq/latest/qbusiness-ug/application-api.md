@@ -1,3 +1,7 @@
+---
+title: "Creating an Amazon Q Business application using APIs"
+---
+
 # Creating an Amazon Q Business application using APIs
 
 All Amazon Q Business application environment actions are supported both on the console

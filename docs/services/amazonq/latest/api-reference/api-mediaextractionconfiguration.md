@@ -1,3 +1,7 @@
+---
+title: "MediaExtractionConfiguration"
+---
+
 # MediaExtractionConfiguration
 
 The configuration for extracting information from media in documents.

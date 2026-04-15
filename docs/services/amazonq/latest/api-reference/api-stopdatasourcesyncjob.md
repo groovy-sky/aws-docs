@@ -1,3 +1,7 @@
+---
+title: "StopDataSourceSyncJob"
+---
+
 # StopDataSourceSyncJob
 
 Stops an Amazon Q Business data source connector synchronization job already in

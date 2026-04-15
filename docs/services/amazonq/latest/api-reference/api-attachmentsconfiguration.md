@@ -1,3 +1,7 @@
+---
+title: "AttachmentsConfiguration"
+---
+
 # AttachmentsConfiguration
 
 Configuration information for the file upload during chat feature.

@@ -1,3 +1,7 @@
+---
+title: "ConfigurationEvent"
+---
+
 # ConfigurationEvent
 
 A configuration event activated by an end user request to select a specific chat

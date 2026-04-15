@@ -1,3 +1,7 @@
+---
+title: "UpdateQAppSessionMetadata"
+---
+
 # UpdateQAppSessionMetadata
 
 Updates the configuration metadata of a session for a given Q App

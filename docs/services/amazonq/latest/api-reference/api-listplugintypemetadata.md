@@ -1,3 +1,7 @@
+---
+title: "ListPluginTypeMetadata"
+---
+
 # ListPluginTypeMetadata
 
 Lists metadata for all Amazon Q Business plugin types.

@@ -1,3 +1,7 @@
+---
+title: "Manage access to Amazon Q Developer for third-party integration"
+---
+
 # Manage access to Amazon Q Developer for third-party integration
 
 For third-party integrations, you must use the AWS Key Management Service (KMS) to manage access

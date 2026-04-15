@@ -1,3 +1,7 @@
+---
+title: "Chat history compaction in Amazon Q Developer"
+---
+
 # Chat history compaction in Amazon Q Developer
 
 As you interact with Amazon Q Developer in your IDE, your conversation accumulates in the chat

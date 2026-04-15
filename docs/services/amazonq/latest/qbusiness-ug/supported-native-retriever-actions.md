@@ -1,3 +1,7 @@
+---
+title: "Managing Amazon Q Business indices"
+---
+
 # Managing Amazon Q Business indices
 
 To manage Amazon Q Business indexes, you can take the following

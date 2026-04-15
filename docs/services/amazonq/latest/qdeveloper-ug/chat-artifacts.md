@@ -1,3 +1,7 @@
+---
+title: "Using Q artifacts in Amazon Q"
+---
+
 # Using Q artifacts in Amazon Q
 
 Amazon Q artifacts enable Amazon Q to deliver responses enriched with table and chart visualizations. When you ask natural language questions

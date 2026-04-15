@@ -1,3 +1,7 @@
+---
+title: "IAM role for Amazon Q Business SharePoint Server (Subscription Edition) connector"
+---
+
 # IAM role for Amazon Q Business SharePoint Server (Subscription Edition) connector
 
 ###### Note

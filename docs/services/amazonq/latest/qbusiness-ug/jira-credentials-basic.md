@@ -1,3 +1,7 @@
+---
+title: "Basic authentication"
+---
+
 # Basic authentication
 
 You can connect Amazon Q to Jira using basic

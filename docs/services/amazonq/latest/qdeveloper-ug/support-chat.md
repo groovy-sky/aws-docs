@@ -1,3 +1,7 @@
+---
+title: "Using Amazon Q Developer to chat with Support"
+---
+
 # Using Amazon Q Developer to chat with Support
 
 You can use Amazon Q Developer to create a support case and contact Support from anywhere in the

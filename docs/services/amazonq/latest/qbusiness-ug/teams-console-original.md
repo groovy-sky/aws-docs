@@ -1,3 +1,7 @@
+---
+title: "Connecting using the legacy Microsoft Teams connector (Console)"
+---
+
 # Connecting using the legacy Microsoft Teams connector (Console)
 
 The legacy Microsoft Teams connector provides comprehensive configuration options including entity type selection, field mappings, and VPC settings. Use this procedure to connect Amazon Q Business to Microsoft Teams using the legacy connector.

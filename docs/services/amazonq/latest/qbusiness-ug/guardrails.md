@@ -1,3 +1,7 @@
+---
+title: "Admin controls and guardrails in Amazon Q Business"
+---
+
 # Admin controls and guardrails in Amazon Q Business
 
 With Amazon Q Business, you can customize your application environment to your

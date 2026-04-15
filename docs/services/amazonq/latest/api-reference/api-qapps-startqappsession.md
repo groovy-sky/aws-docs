@@ -1,3 +1,7 @@
+---
+title: "StartQAppSession"
+---
+
 # StartQAppSession
 
 Starts a new session for an Amazon Q App, allowing inputs to be provided and the app to be

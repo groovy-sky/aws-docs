@@ -1,3 +1,7 @@
+---
+title: "Amazon Q Developer permissions reference"
+---
+
 # Amazon Q Developer permissions reference
 
 Amazon Q Developer uses two types of APIs to provide the service:

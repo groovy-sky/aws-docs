@@ -1,3 +1,7 @@
+---
+title: "UpdateLibraryItemMetadata"
+---
+
 # UpdateLibraryItemMetadata
 
 Updates the verification status of a library item for an Amazon Q App.

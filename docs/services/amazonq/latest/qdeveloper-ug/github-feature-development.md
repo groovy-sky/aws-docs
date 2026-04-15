@@ -1,3 +1,7 @@
+---
+title: "Developing features and iterating with Amazon Q Developer in GitHub"
+---
+
 # Developing features and iterating with Amazon Q Developer in GitHub
 
 ###### Note

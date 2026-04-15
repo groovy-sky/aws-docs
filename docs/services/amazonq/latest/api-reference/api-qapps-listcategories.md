@@ -1,3 +1,7 @@
+---
+title: "ListCategories"
+---
+
 # ListCategories
 
 Lists the categories of a Amazon Q Business application environment instance. For more information, see

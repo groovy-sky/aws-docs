@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for connecting Amazon Q Business to Smartsheet"
+---
+
 # Prerequisites for connecting Amazon Q Business to Smartsheet
 
 Before you begin, make sure that you have completed the following

@@ -1,3 +1,7 @@
+---
+title: "Chatting with Amazon Q Developer about code"
+---
+
 # Chatting with Amazon Q Developer about code
 
 Chat with Amazon Q Developer in your integrated development environment (IDE) to ask questions about

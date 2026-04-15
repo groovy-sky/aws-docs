@@ -1,3 +1,7 @@
+---
+title: "Amazon Q Business SharePoint Server (Subscription Edition) data source connector field mappings"
+---
+
 # Amazon Q Business SharePoint Server (Subscription Edition) data source connector field mappings
 
 To help you structure data for retrieval and chat filtering, Amazon Q Business

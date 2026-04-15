@@ -1,3 +1,7 @@
+---
+title: "AudioExtractionConfiguration"
+---
+
 # AudioExtractionConfiguration
 
 Configuration settings for audio content extraction and processing.

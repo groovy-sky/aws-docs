@@ -1,3 +1,7 @@
+---
+title: "AttributeFilter"
+---
+
 # AttributeFilter
 
 Enables filtering of responses based on document attributes or metadata fields.

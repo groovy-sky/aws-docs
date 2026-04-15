@@ -1,3 +1,7 @@
+---
+title: "ChatModeConfiguration"
+---
+
 # ChatModeConfiguration
 
 Configuration information for Amazon Q Business conversation modes.

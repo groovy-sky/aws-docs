@@ -1,3 +1,7 @@
+---
+title: "IAM role for Amazon Q Confluence (Server/Data Center) connector"
+---
+
 # IAM role for Amazon Q Confluence (Server/Data Center) connector
 
 If you use the AWS CLI or an AWS SDK, you must create an AWS Identity and Access Management (IAM)

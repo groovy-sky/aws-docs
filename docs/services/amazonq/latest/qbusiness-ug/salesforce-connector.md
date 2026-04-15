@@ -1,3 +1,7 @@
+---
+title: "Connecting Salesforce Online to Amazon Q Business"
+---
+
 # Connecting Salesforce Online to Amazon Q Business
 
 Salesforce is a customer relationship management (CRM) tool for managing

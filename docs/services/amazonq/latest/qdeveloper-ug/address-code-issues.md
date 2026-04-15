@@ -1,3 +1,7 @@
+---
+title: "Addressing code issues with Amazon Q Developer"
+---
+
 # Addressing code issues with Amazon Q Developer
 
 The topics in this section explain how to address and resolve code issues, and, where

@@ -1,3 +1,7 @@
+---
+title: "PermissionInput"
+---
+
 # PermissionInput
 
 The permission to grant or revoke for a Amazon Q App.

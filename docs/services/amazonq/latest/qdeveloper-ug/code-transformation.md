@@ -1,3 +1,7 @@
+---
+title: "Upgrading Java versions with Amazon Q Developer"
+---
+
 # Upgrading Java versions with Amazon Q Developer
 
 Amazon Q Developer can upgrade your Java applications to newer language versions in

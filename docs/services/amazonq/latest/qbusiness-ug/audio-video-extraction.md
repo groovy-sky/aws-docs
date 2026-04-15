@@ -1,3 +1,7 @@
+---
+title: "Extracting semantic meaning from audio and video content"
+---
+
 # Extracting semantic meaning from audio and video content
 
 Amazon Q Business extracts semantic information from audio and video files,

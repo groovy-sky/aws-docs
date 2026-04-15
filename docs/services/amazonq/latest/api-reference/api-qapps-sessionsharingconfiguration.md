@@ -1,3 +1,7 @@
+---
+title: "SessionSharingConfiguration"
+---
+
 # SessionSharingConfiguration
 
 The sharing configuration of an Amazon Q App data collection session.

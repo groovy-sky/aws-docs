@@ -1,3 +1,7 @@
+---
+title: "IAM permissions for using Amazon Q Apps"
+---
+
 # IAM permissions for using Amazon Q Apps
 
 If the users of your deployed web experience want to create lightweight, purpose-built

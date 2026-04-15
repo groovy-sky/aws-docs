@@ -1,3 +1,7 @@
+---
+title: "DeleteDocument"
+---
+
 # DeleteDocument
 
 A document deleted from an Amazon Q Business data source connector.

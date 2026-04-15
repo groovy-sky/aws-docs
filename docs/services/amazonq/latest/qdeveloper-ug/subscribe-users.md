@@ -1,3 +1,7 @@
+---
+title: "Step 2: Subscribe workforce users to Amazon Q Developer Pro"
+---
+
 # Step 2: Subscribe workforce users to Amazon Q Developer Pro
 
 After choosing a deployment option as described in [Step 1: Choose a deployment option](deployment-options.md), you are ready to subscribe workforce users.

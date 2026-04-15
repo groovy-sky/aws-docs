@@ -1,3 +1,7 @@
+---
+title: "Managing Amazon Q Business plugins"
+---
+
 # Managing Amazon Q Business plugins
 
 To manage Amazon Q plugins, you can take the following actions:
