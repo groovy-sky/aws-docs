@@ -6,3 +6,7 @@
 .DS_Store
 /.tmp/
 .tmp/
+
+# Local build artifacts
+/pages_artifact/
+/build-static-site

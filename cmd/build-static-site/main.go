@@ -1,26 +1,18 @@
-#!/usr/bin/env bash
-set -euo pipefail
+package main
 
-ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
-PUBLIC_DIR="$ROOT_DIR/public"
-STATIC_DIR="$ROOT_DIR/static"
+import (
+	"encoding/json"
+	"errors"
+	"flag"
+	"fmt"
+	"io"
+	"io/fs"
+	"os"
+	"path/filepath"
+	"sort"
+)
 
-mkdir -p "$PUBLIC_DIR"
-
-# Copy search-index.json if it exists
-[ -f "$STATIC_DIR/search-index.json" ] && cp "$STATIC_DIR/search-index.json" "$PUBLIC_DIR/"
-
-# Copy CSS/JS assets
-[ -d "$STATIC_DIR/css" ] && mkdir -p "$PUBLIC_DIR/css" && cp "$STATIC_DIR/css"/* "$PUBLIC_DIR/css/" 2>/dev/null || true
-[ -d "$STATIC_DIR/js" ] && mkdir -p "$PUBLIC_DIR/js" && cp "$STATIC_DIR/js"/* "$PUBLIC_DIR/js/" 2>/dev/null || true
-
-# Populate docs-index.json by walking docs/ and finding all .md files
-# Build Go program (ensures it's executable, especially in CI environments)
-go build -o cmd/gen-index/gen-index cmd/gen-index/main.go
-./cmd/gen-index/gen-index
-
-cat > "$PUBLIC_DIR/index.html" <<'HTML'
-<!doctype html>
+const indexHTML = `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -135,10 +127,9 @@ cat > "$PUBLIC_DIR/index.html" <<'HTML'
   </script>
 </body>
 </html>
-HTML
+`
 
-cat > "$PUBLIC_DIR/viewer.html" <<'HTML'
-<!doctype html>
+const viewerHTML = `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -201,6 +192,173 @@ cat > "$PUBLIC_DIR/viewer.html" <<'HTML'
   </script>
 </body>
 </html>
-HTML
+`
 
-echo "Static site built at $PUBLIC_DIR"
+func main() {
+	rootFlag := flag.String("root", "", "project root directory (defaults to current working directory)")
+	flag.Parse()
+
+	rootDir, err := resolveRootDir(*rootFlag)
+	if err != nil {
+		fatalf("resolve root: %v", err)
+	}
+
+	publicDir := filepath.Join(rootDir, "public")
+	staticDir := filepath.Join(rootDir, "static")
+	docsDir := filepath.Join(rootDir, "docs")
+
+	if err := os.MkdirAll(publicDir, 0o755); err != nil {
+		fatalf("create public dir: %v", err)
+	}
+
+	if err := copyIfExists(filepath.Join(staticDir, "search-index.json"), filepath.Join(publicDir, "search-index.json")); err != nil {
+		fatalf("copy search-index.json: %v", err)
+	}
+
+	if err := copyDirFilesIfExists(filepath.Join(staticDir, "css"), filepath.Join(publicDir, "css")); err != nil {
+		fatalf("copy css: %v", err)
+	}
+
+	if err := copyDirFilesIfExists(filepath.Join(staticDir, "js"), filepath.Join(publicDir, "js")); err != nil {
+		fatalf("copy js: %v", err)
+	}
+
+	paths, err := collectMarkdownPaths(docsDir)
+	if err != nil {
+		fatalf("walk docs: %v", err)
+	}
+
+	if err := writeJSON(filepath.Join(publicDir, "docs-index.json"), paths); err != nil {
+		fatalf("write docs-index.json: %v", err)
+	}
+
+	if err := writeText(filepath.Join(publicDir, "index.html"), indexHTML); err != nil {
+		fatalf("write index.html: %v", err)
+	}
+
+	if err := writeText(filepath.Join(publicDir, "viewer.html"), viewerHTML); err != nil {
+		fatalf("write viewer.html: %v", err)
+	}
+
+	fmt.Printf("Static site built at %s\n", publicDir)
+}
+
+func resolveRootDir(rootFlag string) (string, error) {
+	if rootFlag != "" {
+		return filepath.Abs(rootFlag)
+	}
+	wd, err := os.Getwd()
+	if err != nil {
+		return "", err
+	}
+	return wd, nil
+}
+
+func copyIfExists(src, dst string) error {
+	if !pathExists(src) {
+		return nil
+	}
+	if err := os.MkdirAll(filepath.Dir(dst), 0o755); err != nil {
+		return err
+	}
+	return copyFile(src, dst)
+}
+
+func copyDirFilesIfExists(srcDir, dstDir string) error {
+	entries, err := os.ReadDir(srcDir)
+	if err != nil {
+		if errors.Is(err, fs.ErrNotExist) {
+			return nil
+		}
+		return err
+	}
+
+	if err := os.MkdirAll(dstDir, 0o755); err != nil {
+		return err
+	}
+
+	for _, entry := range entries {
+		if !entry.Type().IsRegular() {
+			continue
+		}
+		srcPath := filepath.Join(srcDir, entry.Name())
+		dstPath := filepath.Join(dstDir, entry.Name())
+		if err := copyFile(srcPath, dstPath); err != nil {
+			return err
+		}
+	}
+
+	return nil
+}
+
+func copyFile(src, dst string) error {
+	in, err := os.Open(src)
+	if err != nil {
+		return err
+	}
+	defer in.Close()
+
+	info, err := in.Stat()
+	if err != nil {
+		return err
+	}
+
+	out, err := os.OpenFile(dst, os.O_CREATE|os.O_WRONLY|os.O_TRUNC, info.Mode().Perm())
+	if err != nil {
+		return err
+	}
+	defer out.Close()
+
+	if _, err := io.Copy(out, in); err != nil {
+		return err
+	}
+	return out.Sync()
+}
+
+func collectMarkdownPaths(docsDir string) ([]string, error) {
+	var paths []string
+
+	err := filepath.WalkDir(docsDir, func(path string, d fs.DirEntry, err error) error {
+		if err != nil {
+			return err
+		}
+		if d.IsDir() || filepath.Ext(path) != ".md" {
+			return nil
+		}
+
+		rel, err := filepath.Rel(docsDir, path)
+		if err != nil {
+			return err
+		}
+		paths = append(paths, filepath.ToSlash(rel))
+		return nil
+	})
+	if err != nil {
+		return nil, err
+	}
+
+	sort.Strings(paths)
+	return paths, nil
+}
+
+func writeJSON(path string, v any) error {
+	data, err := json.MarshalIndent(v, "", "  ")
+	if err != nil {
+		return err
+	}
+	return os.WriteFile(path, data, 0o644)
+}
+
+func writeText(path, content string) error {
+	return os.WriteFile(path, []byte(content), 0o644)
+}
+
+func pathExists(path string) bool {
+	_, err := os.Stat(path)
+	return err == nil
+}
+
+func fatalf(format string, args ...any) {
+	fmt.Fprintf(os.Stderr, format+"\n", args...)
+	os.Exit(1)
+}

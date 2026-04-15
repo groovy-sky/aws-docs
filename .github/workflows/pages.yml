@@ -48,7 +48,7 @@ jobs:
           rm -rf pages_artifact
           mkdir -p pages_artifact
 
-          # Copy with dereference to avoid symlinks in the deploy artifact.
+          # Copy generated site files with dereference to avoid symlinks in the deploy artifact.
           rsync -a --delete --copy-links public/ pages_artifact/
 
           symlink_path="$(find pages_artifact -type l -print -quit)"
