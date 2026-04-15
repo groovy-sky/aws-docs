@@ -15,10 +15,8 @@ mkdir -p "$PUBLIC_DIR"
 [ -d "$STATIC_DIR/js" ] && mkdir -p "$PUBLIC_DIR/js" && cp "$STATIC_DIR/js"/* "$PUBLIC_DIR/js/" 2>/dev/null || true
 
 # Populate docs-index.json by walking docs/ and finding all .md files
-# Build Go program if not already built, then run it
-if ! [ -f cmd/gen-index/gen-index ]; then
-  go build -o cmd/gen-index/gen-index cmd/gen-index/main.go
-fi
+# Build Go program (ensures it's executable, especially in CI environments)
+go build -o cmd/gen-index/gen-index cmd/gen-index/main.go
 ./cmd/gen-index/gen-index
 
 cat > "$PUBLIC_DIR/index.html" <<'HTML'
