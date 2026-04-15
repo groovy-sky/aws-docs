@@ -1,3 +1,7 @@
+---
+title: "Subscribe to participant resume events in Amazon Connect Agent Workspace"
+---
+
 # Subscribe to participant resume events in Amazon Connect Agent Workspace
 
 Subscribes to events when any participant is taken off hold.

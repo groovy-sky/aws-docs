@@ -1,3 +1,7 @@
+---
+title: "Data protection in Amazon MQ"
+---
+
 # Data protection in Amazon MQ
 
 The AWS [shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model)

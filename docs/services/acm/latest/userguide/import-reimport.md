@@ -1,3 +1,7 @@
+---
+title: "Reimport a certificate"
+---
+
 # Reimport a certificate
 
 If you imported a certificate and associated it with other AWS services, you can

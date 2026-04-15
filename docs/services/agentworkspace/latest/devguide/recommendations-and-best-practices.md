@@ -1,3 +1,7 @@
+---
+title: "Recommendations and best practices for Amazon Connect Agent Workspace"
+---
+
 # Recommendations and best practices for Amazon Connect Agent Workspace
 
 Use the following recommendations and best practices to optimize applications in the Amazon Connect agent workspace.

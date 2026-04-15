@@ -1,3 +1,7 @@
+---
+title: "Amazon Connect Agent Workspace Contact API"
+---
+
 # Amazon Connect Agent Workspace Contact API
 
 The Amazon Connect SDK provides an `ContactClient` which serves as an interface that your app

@@ -1,3 +1,7 @@
+---
+title: "Amazon MQ for ActiveMQ storage types"
+---
+
 # Amazon MQ for ActiveMQ storage types
 
 Amazon MQ for ActiveMQ supports Amazon Elastic File System (EFS) and Amazon Elastic Block Store (EBS). By default, ActiveMQ brokers use Amazon EFS for broker storage.

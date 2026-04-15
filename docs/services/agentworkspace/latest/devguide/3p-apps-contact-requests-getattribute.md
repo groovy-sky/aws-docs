@@ -1,3 +1,7 @@
+---
+title: "Get specific attributes for a contact in Amazon Connect Agent Workspace"
+---
+
 # Get specific attributes for a contact in Amazon Connect Agent Workspace
 
 Returns the requested attribute associated with the contact in the Amazon Connect

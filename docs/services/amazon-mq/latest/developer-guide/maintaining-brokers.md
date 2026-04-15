@@ -1,3 +1,7 @@
+---
+title: "Scheduling the maintenance window for an Amazon MQ broker"
+---
+
 # Scheduling the maintenance window for an Amazon MQ broker
 
 Periodically, Amazon MQ performs maintenance to the hardware, operating system,

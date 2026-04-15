@@ -1,3 +1,7 @@
+---
+title: "RabbitMQ on Amazon MQ: Invalid AWS Key Management Service Key"
+---
+
 # RabbitMQ on Amazon MQ: Invalid AWS Key Management Service Key
 
 RabbitMQ on Amazon MQ will raise an INVALID\_KMS\_KEY critical action required code when a broker created

@@ -1,3 +1,7 @@
+---
+title: "Get the application catalog in Amazon Connect Agent Workspace"
+---
+
 # Get the application catalog in Amazon Connect Agent Workspace
 
 Returns all the applications that are available in the Amazon Connect agent workspace for

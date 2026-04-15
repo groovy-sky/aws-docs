@@ -1,3 +1,7 @@
+---
+title: "Test your application for Amazon Connect Agent Workspace locally"
+---
+
 # Test your application for Amazon Connect Agent Workspace locally
 
 Once you have a minimal version of the app that you want to use in the Amazon Connect

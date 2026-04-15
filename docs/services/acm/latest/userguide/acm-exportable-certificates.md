@@ -1,3 +1,7 @@
+---
+title: "AWS Certificate Manager exportable public certificates"
+---
+
 # AWS Certificate Manager exportable public certificates
 
 AWS Certificate Manager exportable public certificates lets you provision, manage, and deploy [SSL/TLS certificates](acm-concepts.md#concept-sslcert) anywhere - including Amazon EC2

@@ -1,3 +1,7 @@
+---
+title: "Start uploading a file to Amazon Connect Agent Workspace"
+---
+
 # Start uploading a file to Amazon Connect Agent Workspace
 
 Provides a pre-signed Amazon S3 URL in response to upload a new attached

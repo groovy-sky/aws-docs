@@ -1,3 +1,7 @@
+---
+title: "Deployment options for Amazon MQ for RabbitMQ brokers"
+---
+
 # Deployment options for Amazon MQ for RabbitMQ brokers
 
 RabbitMQ brokers can be created as _single-instance brokers_ or in a

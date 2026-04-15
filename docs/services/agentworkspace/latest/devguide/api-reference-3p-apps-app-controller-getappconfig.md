@@ -1,3 +1,7 @@
+---
+title: "Get the application configuration in Amazon Connect Agent Workspace"
+---
+
 # Get the application configuration in Amazon Connect Agent Workspace
 
 Returns the application configuration for the given application ARN in the Amazon Connect

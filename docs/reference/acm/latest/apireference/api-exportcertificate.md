@@ -1,3 +1,7 @@
+---
+title: "ExportCertificate"
+---
+
 # ExportCertificate
 
 Exports a private certificate issued by a private certificate authority (CA) or a

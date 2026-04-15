@@ -1,3 +1,7 @@
+---
+title: "RabbitMQ 4"
+---
+
 # RabbitMQ 4
 
 Amazon MQ supports RabbitMQ 4.2 in the RabbitMQ 4 release series only on the mq.m7g instance type across all supported instance sizes.

@@ -1,3 +1,7 @@
+---
+title: "Connecting to Amazon MQ"
+---
+
 # Connecting to Amazon MQ
 
 You can connect to Amazon MQ from other AWS services using service endpoints and broker endpoints.

@@ -1,3 +1,7 @@
+---
+title: "RevokeCertificate"
+---
+
 # RevokeCertificate
 
 Revokes a public ACM certificate. You can only revoke certificates that have been

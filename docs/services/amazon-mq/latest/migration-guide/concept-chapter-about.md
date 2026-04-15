@@ -1,3 +1,7 @@
+---
+title: "What is the Amazon MQ migration guide?"
+---
+
 # What is the Amazon MQ migration guide?
 
 Amazon MQ is a managed message broker service that makes it easy to migrate to a message broker in the cloud.

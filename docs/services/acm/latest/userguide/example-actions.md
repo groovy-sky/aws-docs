@@ -1,3 +1,7 @@
+---
+title: "Initiating actions with Amazon EventBridge in ACM"
+---
+
 # Initiating actions with Amazon EventBridge in ACM
 
 You can create Amazon EventBridge rules based on these events and use the Amazon EventBridge console

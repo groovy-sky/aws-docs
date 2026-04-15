@@ -1,3 +1,7 @@
+---
+title: "CertificateOptions"
+---
+
 # CertificateOptions
 
 Structure that contains options for your certificate. You can use this structure to

@@ -1,3 +1,7 @@
+---
+title: "Get the limit of contacts for the agent in Amazon Connect Agent Workspace"
+---
+
 # Get the limit of contacts for the agent in Amazon Connect Agent Workspace
 
 Returns a map of `ChannelType`-to-number indicating how many concurrent

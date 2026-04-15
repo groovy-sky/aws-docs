@@ -1,3 +1,7 @@
+---
+title: "Create your application for Amazon Connect Agent Workspace"
+---
+
 # Create your application for Amazon Connect Agent Workspace
 
 An application is a website that can be loaded from an HTTPS URL into an iframe in the

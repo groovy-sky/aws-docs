@@ -1,3 +1,7 @@
+---
+title: "CertificateDetail"
+---
+
 # CertificateDetail
 
 Contains metadata about an ACM certificate. This structure is returned in the

@@ -1,3 +1,7 @@
+---
+title: "Broker"
+---
+
 # Broker
 
 A broker is a message broker environment running on Amazon MQ. It is the basic

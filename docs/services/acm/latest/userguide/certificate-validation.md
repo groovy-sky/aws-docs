@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot certificate validation"
+---
+
 # Troubleshoot certificate validation
 
 If the ACM certificate request status is **Pending validation**, the

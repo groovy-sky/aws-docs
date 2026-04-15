@@ -1,3 +1,7 @@
+---
+title: "Configuring mTLS"
+---
+
 # Configuring mTLS
 
 Amazon MQ for RabbitMQ supports mutual TLS (mTLS) for secure connections to various endpoints and external services. mTLS provides enhanced security by requiring both client and server to authenticate using certificates.

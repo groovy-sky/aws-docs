@@ -1,3 +1,7 @@
+---
+title: "Amazon Connect Agent Workspace Voice API"
+---
+
 # Amazon Connect Agent Workspace Voice API
 
 The Amazon Connect SDK provides an `VoiceClient` which serves as an interface that your app in the

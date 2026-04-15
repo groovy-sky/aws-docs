@@ -1,3 +1,7 @@
+---
+title: "Private certificate renewal in AWS Certificate Manager"
+---
+
 # Private certificate renewal in AWS Certificate Manager
 
 ACM certificates that were signed by a private CA from AWS Private CA are eligible for

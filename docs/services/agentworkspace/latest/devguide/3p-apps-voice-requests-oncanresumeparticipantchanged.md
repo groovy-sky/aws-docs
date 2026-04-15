@@ -1,3 +1,7 @@
+---
+title: "Subscribe to participant resume capability change events in Amazon Connect Agent Workspace"
+---
+
 # Subscribe to participant resume capability change events in Amazon Connect Agent Workspace
 
 Subscribes to events when a participant's capability to be resumed from hold changes.

@@ -1,3 +1,7 @@
+---
+title: "ACM API actions supported in CloudTrail logging"
+---
+
 # ACM API actions supported in CloudTrail logging
 
 ACM supports logging the following actions as events in CloudTrail log files:
@@ -40,6 +44,8 @@ operations.
 - [Resending validation email (ResendValidationEmail)](#ct-acm-resendmail)
 
 - [Retrieving a certificate (GetCertificate)](#ct-acm-get)
+
+- [Searching certificates (SearchCertificates)](#ct-acm-search)
 
 ## Adding tags to a certificate ( [AddTagsToCertificate](../../../../reference/acm/latest/apireference/api-addtagstocertificate.md))
 
@@ -647,6 +653,47 @@ The following CloudTrail example shows the results of a call to the [GetCertific
          },
          "requestID":"744dd891-ec9c-11e5-ac34-d1e4dfe1a11b",
          "eventID":"7aa4f909-00dd-478a-9a00-b2709bcad2bb",
+         "eventType":"AwsApiCall",
+         "recipientAccountId":"123456789012"
+      }
+   ]
+}
+```
+
+## Searching certificates ( [SearchCertificates](../../../../reference/acm/latest/apireference/api-searchcertificates.md))
+
+The following CloudTrail example shows the results of a call to the [SearchCertificates](../../../../reference/acm/latest/apireference/api-searchcertificates.md) API.
+
+```nohighlight
+
+{
+
+   "Records":[
+      {
+         "eventVersion":"1.04",
+         "userIdentity":{
+            "type":"IAMUser",
+            "principalId":"AWS_ACCESS_KEY_ID_REDACTED",
+            "arn":"arn:aws:iam::123456789012:user/Alice",
+            "accountId":"123456789012",
+            "accessKeyId":"AWS_ACCESS_KEY_ID_REDACTED",
+            "userName":"Alice"
+         },
+         "eventTime":"2016-04-06T13:53:53Z",
+         "eventSource":"acm.amazonaws.com",
+         "eventName":"SearchCertificates",
+         "awsRegion":"us-east-1",
+         "sourceIPAddress":"192.0.2.0",
+         "userAgent":"aws-cli/1.10.16",
+         "readOnly":true,
+         "requestParameters":{
+            "maxResults":10,
+            "sortBy":"CREATED_AT",
+            "sortOrder":"DESCENDING"
+         },
+         "responseElements":null,
+         "requestID":"01234567-89ab-cdef-0123-456789abcdef",
+         "eventID":"01234567-89ab-cdef-0123-456789abcdef",
          "eventType":"AwsApiCall",
          "recipientAccountId":"123456789012"
       }

@@ -1,3 +1,7 @@
+---
+title: "Logging API calls for integrated services"
+---
+
 # Logging API calls for integrated services
 
 You can use CloudTrail to audit API calls made by services that are integrated with

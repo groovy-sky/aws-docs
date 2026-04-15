@@ -1,3 +1,7 @@
+---
+title: "Getting started: Creating and connecting to a RabbitMQ broker"
+---
+
 # Getting started: Creating and connecting to a RabbitMQ broker
 
 A _broker_ is a message broker environment running on Amazon MQ. It is the basic building block of Amazon MQ. The combined description of the

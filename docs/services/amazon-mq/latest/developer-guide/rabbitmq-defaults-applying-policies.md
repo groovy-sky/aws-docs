@@ -1,3 +1,7 @@
+---
+title: "Applying policies to Amazon MQ for RabbitMQ"
+---
+
 # Applying policies to Amazon MQ for RabbitMQ
 
 You can apply custom policies and limits with Amazon MQ recommended default values. If you have deleted the

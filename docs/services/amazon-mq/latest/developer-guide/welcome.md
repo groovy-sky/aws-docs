@@ -1,3 +1,7 @@
+---
+title: "What is Amazon MQ?"
+---
+
 # What is Amazon MQ?
 
 Amazon MQ is a managed message broker service for [Apache ActiveMQ](http://activemq.apache.org/) Classic

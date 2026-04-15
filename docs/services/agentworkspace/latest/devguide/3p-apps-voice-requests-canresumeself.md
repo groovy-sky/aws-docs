@@ -1,3 +1,7 @@
+---
+title: "Check if the current user can be resumed from hold in Amazon Connect Agent Workspace"
+---
+
 # Check if the current user can be resumed from hold in Amazon Connect Agent Workspace
 
 Checks whether the current user's participant can be resumed from hold for a specific

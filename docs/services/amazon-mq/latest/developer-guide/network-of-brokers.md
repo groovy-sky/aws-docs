@@ -1,3 +1,7 @@
+---
+title: "Amazon MQ network of brokers"
+---
+
 # Amazon MQ network of brokers
 
 Amazon MQ supports ActiveMQ's network of brokers feature.

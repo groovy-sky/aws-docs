@@ -1,3 +1,7 @@
+---
+title: "Deleting an Amazon MQ broker"
+---
+
 # Deleting an Amazon MQ broker
 
 If you don't use an Amazon MQ broker (and don't foresee using it in the near future), it is a best practice to delete it from Amazon MQ to reduce your AWS costs.

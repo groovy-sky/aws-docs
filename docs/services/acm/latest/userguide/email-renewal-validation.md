@@ -1,3 +1,7 @@
+---
+title: "Renewal for email-validated domains"
+---
+
 # Renewal for email-validated domains
 
 ACM certificates are valid for 198 days. Renewing a certificate requires action by the domain owner. ACM begins sending renewal notices to the email addresses associated with the domain 45 days before expiration. The notifications contain a link that the

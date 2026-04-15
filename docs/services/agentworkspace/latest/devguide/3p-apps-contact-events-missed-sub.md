@@ -1,3 +1,7 @@
+---
+title: "Subscribe a callback function when an Amazon Connect Agent Workspace contact is missed"
+---
+
 # Subscribe a callback function when an Amazon Connect Agent Workspace contact is missed
 
 Subscribes a callback function to-be-invoked whenever a contact missed event

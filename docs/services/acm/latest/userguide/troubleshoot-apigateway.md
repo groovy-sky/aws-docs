@@ -1,3 +1,7 @@
+---
+title: "API Gateway problems"
+---
+
 # API Gateway problems
 
 When you deploy an _edge-optimized_ API endpoint, API Gateway sets up a

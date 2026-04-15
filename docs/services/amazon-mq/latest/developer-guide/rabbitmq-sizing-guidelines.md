@@ -1,3 +1,7 @@
+---
+title: "Amazon MQ for RabbitMQ sizing guidelines"
+---
+
 # Amazon MQ for RabbitMQ sizing guidelines
 
 You can choose the broker instance type that best supports your application.

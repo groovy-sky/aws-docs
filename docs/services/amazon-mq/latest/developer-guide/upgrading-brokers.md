@@ -1,3 +1,7 @@
+---
+title: "Upgrading an Amazon MQ broker engine version"
+---
+
 # Upgrading an Amazon MQ broker engine version
 
 Amazon MQ regularly provides new broker engine versions for all supported broker engine types. New engine versions

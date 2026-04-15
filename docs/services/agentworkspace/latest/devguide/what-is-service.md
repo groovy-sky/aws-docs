@@ -1,3 +1,7 @@
+---
+title: "What is the Amazon Connect agent workspace?"
+---
+
 # What is the Amazon Connect agent workspace?
 
 Amazon Connect agent workspace is a single, intuitive application that provides your agents with all of the tools and

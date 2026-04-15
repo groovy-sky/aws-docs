@@ -1,3 +1,7 @@
+---
+title: "AWS Certificate Manager email validation"
+---
+
 # AWS Certificate Manager email validation
 
 Before the Amazon certificate authority (CA) can issue a certificate for your site,

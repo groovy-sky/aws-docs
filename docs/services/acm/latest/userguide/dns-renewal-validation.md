@@ -1,3 +1,7 @@
+---
+title: "Renewal for domains validated by DNS"
+---
+
 # Renewal for domains validated by DNS
 
 Managed renewal is fully automated for ACM certificates that were originally

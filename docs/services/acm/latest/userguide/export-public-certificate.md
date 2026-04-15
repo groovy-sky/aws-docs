@@ -1,3 +1,7 @@
+---
+title: "Export an AWS Certificate Manager public certificate"
+---
+
 # Export an AWS Certificate Manager public certificate
 
 The following procedures walks you through how you can export an ACM public

@@ -1,3 +1,7 @@
+---
+title: "Renew ACM public certificates"
+---
+
 # Renew ACM public certificates
 
 When issuing a managed, publicly trusted certificate, AWS Certificate Manager requires you to prove

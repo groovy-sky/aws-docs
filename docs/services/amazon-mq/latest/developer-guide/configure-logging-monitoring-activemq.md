@@ -1,3 +1,7 @@
+---
+title: "Configuring Amazon MQ for ActiveMQ logs"
+---
+
 # Configuring Amazon MQ for ActiveMQ logs
 
 To allow Amazon MQ to publish logs to CloudWatch Logs, you must [add a permission to your Amazon MQ user](#security-logging-monitoring-configure-cloudwatch-permissions)

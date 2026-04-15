@@ -1,3 +1,7 @@
+---
+title: "Using mTLS for AMQP and management endpoints"
+---
+
 # Using mTLS for AMQP and management endpoints
 
 This tutorial describes how to configure mutual TLS (mTLS) for AMQP client connections and the RabbitMQ management interface using a private certificate authority.

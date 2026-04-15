@@ -1,3 +1,7 @@
+---
+title: "What is the right AWS certificate service for my needs?"
+---
+
 # What is the right AWS certificate service for my needs?
 
 AWS offers two options to customers deploying managed X.509 certificates. Choose

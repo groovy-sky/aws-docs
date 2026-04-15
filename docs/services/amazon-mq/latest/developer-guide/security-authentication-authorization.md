@@ -1,3 +1,7 @@
+---
+title: "Integrating ActiveMQ brokers with LDAP"
+---
+
 # Integrating ActiveMQ brokers with LDAP
 
 ###### Important

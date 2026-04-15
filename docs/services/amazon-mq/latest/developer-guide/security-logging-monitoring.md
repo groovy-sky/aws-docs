@@ -1,3 +1,7 @@
+---
+title: "Logging and monitoring Amazon MQ brokers"
+---
+
 # Logging and monitoring Amazon MQ brokers
 
 Monitoring is an important part of maintaining the reliability, availability, and

@@ -1,3 +1,7 @@
+---
+title: "Get the type of contact in Amazon Connect Agent Workspace"
+---
+
 # Get the type of contact in Amazon Connect Agent Workspace
 
 Get the type of the contact in Amazon Connect agent workspace. This indicates

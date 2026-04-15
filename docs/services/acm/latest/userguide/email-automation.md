@@ -1,3 +1,7 @@
+---
+title: "Automate AWS Certificate Manager email validation"
+---
+
 # Automate AWS Certificate Manager email validation
 
 Email-validated ACM certificates normally require manual action

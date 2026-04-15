@@ -1,3 +1,7 @@
+---
+title: "Broker Reboot"
+---
+
 # Broker Reboot
 
 To apply a new configuration to a broker or to initiate a failover in a multi-AZ broker, you can reboot the broker. In addition,

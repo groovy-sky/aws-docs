@@ -1,3 +1,7 @@
+---
+title: "ListTagsForCertificate"
+---
+
 # ListTagsForCertificate
 
 Lists the tags that have been applied to the ACM certificate. Use the certificate's

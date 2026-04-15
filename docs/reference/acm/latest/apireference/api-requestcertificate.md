@@ -1,3 +1,7 @@
+---
+title: "RequestCertificate"
+---
+
 # RequestCertificate
 
 Requests an ACM certificate for use with other AWS services. To request an ACM

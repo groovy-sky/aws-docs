@@ -1,3 +1,7 @@
+---
+title: "Use a service-linked role (SLR) with ACM"
+---
+
 # Use a service-linked role (SLR) with ACM
 
 AWS Certificate Manager uses an AWS Identity and Access Management (IAM) [service-linked role](../../../iam/latest/userguide/id-roles-terms-and-concepts.md#iam-term-service-linked-role) to enable enable automatic renewals of private certificates issued from a private CA for another account shared by AWS Resource Access Manager. A service-linked role (SLR) is an IAM role that is

@@ -1,3 +1,7 @@
+---
+title: "Broker Engine Types"
+---
+
 # Broker Engine Types
 
 Retrieve information about available broker engines. AWS does not support all

@@ -1,3 +1,7 @@
+---
+title: "Responding to an event with Amazon SNS"
+---
+
 # Responding to an event with Amazon SNS
 
 This section shows how to configure Amazon SNS to send a text notification whenever

@@ -1,3 +1,7 @@
+---
+title: "Amazon MQ for RabbitMQ broker defaults"
+---
+
 # Amazon MQ for RabbitMQ broker defaults
 
 When you create an Amazon MQ for RabbitMQ broker, Amazon MQ applies a default set of

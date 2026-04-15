@@ -1,3 +1,7 @@
+---
+title: "Setting up Amazon MQ"
+---
+
 # Setting up Amazon MQ
 
 Before you can use Amazon MQ, you must complete the following steps.

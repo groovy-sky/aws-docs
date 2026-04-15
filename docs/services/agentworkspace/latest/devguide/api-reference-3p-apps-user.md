@@ -1,3 +1,7 @@
+---
+title: "Amazon Connect Agent Workspace User API"
+---
+
 # Amazon Connect Agent Workspace User API
 
 The Amazon Connect SDK provides an `SettingsClient` which serves as an interface that your app

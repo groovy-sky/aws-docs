@@ -1,3 +1,7 @@
+---
+title: "Configuration Revisions"
+---
+
 # Configuration Revisions
 
 This is a collection of configuration revisions. To keep track of the changes you

@@ -1,3 +1,7 @@
+---
+title: "Using Amazon EventBridge"
+---
+
 # Using Amazon EventBridge
 
 You can use [Amazon EventBridge](../../../eventbridge/latest/userguide.md) (formerly CloudWatch Events) to automate

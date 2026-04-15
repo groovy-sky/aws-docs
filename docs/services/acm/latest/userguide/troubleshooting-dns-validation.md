@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot DNS validation problems"
+---
+
 # Troubleshoot DNS validation problems
 
 Consult the following guidance if you are having trouble validating a certificate with

@@ -1,3 +1,7 @@
+---
+title: "Check if a participant is on hold in Amazon Connect Agent Workspace"
+---
+
 # Check if a participant is on hold in Amazon Connect Agent Workspace
 
 Checks whether a specific participant is currently on hold.

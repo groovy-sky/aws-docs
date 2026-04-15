@@ -1,3 +1,7 @@
+---
+title: "Available CloudWatch metrics Amazon MQ for ActiveMQ brokers"
+---
+
 # Available CloudWatch metrics Amazon MQ for ActiveMQ brokers
 
 ## Amazon MQ for ActiveMQ metrics

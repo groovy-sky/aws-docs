@@ -1,3 +1,7 @@
+---
+title: "Integrate application with Amazon Connect Agent Workspace contact data"
+---
+
 # Integrate application with Amazon Connect Agent Workspace contact data
 
 To integrate your application with contact data from the Amazon Connect

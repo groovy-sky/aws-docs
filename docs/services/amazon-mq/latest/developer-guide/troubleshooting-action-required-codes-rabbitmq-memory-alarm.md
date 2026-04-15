@@ -1,3 +1,7 @@
+---
+title: "Amazon MQ for RabbitMQ: High memory alarm"
+---
+
 # Amazon MQ for RabbitMQ: High memory alarm
 
 Amazon MQ for RabbitMQ will raise a high memory alarm when the broker's memory usage, identified by CloudWatch metric

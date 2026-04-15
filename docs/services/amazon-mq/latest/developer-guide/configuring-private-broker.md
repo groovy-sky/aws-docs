@@ -1,3 +1,7 @@
+---
+title: "Configuring a private Amazon MQ broker"
+---
+
 # Configuring a private Amazon MQ broker
 
 A private broker does not have public accessibility and cannot be accessed from outside of your VPC.

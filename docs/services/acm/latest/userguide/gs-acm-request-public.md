@@ -1,3 +1,7 @@
+---
+title: "AWS Certificate Manager public certificates"
+---
+
 # AWS Certificate Manager public certificates
 
 After you request a public certificate you must validate domain ownership, as described in

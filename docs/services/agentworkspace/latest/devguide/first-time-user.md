@@ -1,3 +1,7 @@
+---
+title: "Are you a first-time Amazon Connect agent workspace user?"
+---
+
 # Are you a first-time Amazon Connect agent workspace user?
 
 If you are a first-time user of Amazon Connect agent workspace, we recommend that you begin by reading the following

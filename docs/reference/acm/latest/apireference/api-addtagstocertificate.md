@@ -1,3 +1,7 @@
+---
+title: "AddTagsToCertificate"
+---
+
 # AddTagsToCertificate
 
 Adds one or more tags to an ACM certificate. Tags are labels that you can use to

@@ -1,3 +1,7 @@
+---
+title: "AMQP client SSL configuration"
+---
+
 # AMQP client SSL configuration
 
 Federation and shovel use AMQP for communication between upstream and downstream brokers.

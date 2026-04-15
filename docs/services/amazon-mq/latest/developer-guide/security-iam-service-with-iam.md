@@ -1,3 +1,7 @@
+---
+title: "How Amazon MQ works with IAM"
+---
+
 # How Amazon MQ works with IAM
 
 Before you use IAM to manage access to Amazon MQ, you should understand what

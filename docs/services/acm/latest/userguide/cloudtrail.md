@@ -1,3 +1,7 @@
+---
+title: "Using CloudTrail with AWS Certificate Manager"
+---
+
 # Using CloudTrail with AWS Certificate Manager
 
 AWS Certificate Manager is integrated with AWS CloudTrail, a service that provides a record of actions

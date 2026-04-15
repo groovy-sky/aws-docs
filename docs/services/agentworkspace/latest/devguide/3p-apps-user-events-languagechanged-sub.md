@@ -1,3 +1,7 @@
+---
+title: "Subscribe a callback function when an Amazon Connect Agent Workspace user changes languages"
+---
+
 # Subscribe a callback function when an Amazon Connect Agent Workspace user changes languages
 
 Subscribes a callback function to-be-invoked whenever a user LanguageChanged event

@@ -1,3 +1,7 @@
+---
+title: "Managing Amazon MQ for RabbitMQ engine versions"
+---
+
 # Managing Amazon MQ for RabbitMQ engine versions
 
 RabbitMQ organizes version numbers according to semantic versioning specification as

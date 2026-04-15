@@ -1,3 +1,7 @@
+---
+title: "Quotas"
+---
+
 # Quotas
 
 The following AWS Certificate Manager (ACM) service quotas apply to each AWS region per each AWS
@@ -145,6 +149,10 @@ API callRequests per second
 `ResendValidationEmail`
 
 1
+
+`SearchCertificates`
+
+5
 
 `UpdateCertificateOptions`
 

@@ -1,3 +1,7 @@
+---
+title: "Deployment options for Amazon MQ for ActiveMQ brokers"
+---
+
 # Deployment options for Amazon MQ for ActiveMQ brokers
 
 Amazon MQ offers single instance and cluster deployment options for brokers.

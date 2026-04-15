@@ -1,3 +1,7 @@
+---
+title: "Edit an ActiveMQ broker user"
+---
+
 # Edit an ActiveMQ broker user
 
 To edit an existing user, do the following:

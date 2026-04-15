@@ -1,3 +1,7 @@
+---
+title: "Subscribe to draft email creation notifications in Amazon Connect Agent Workspace"
+---
+
 # Subscribe to draft email creation notifications in Amazon Connect Agent Workspace
 
 Subscribes a callback function to-be-invoked whenever a draft email contact has

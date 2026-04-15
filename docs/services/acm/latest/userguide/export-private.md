@@ -1,3 +1,7 @@
+---
+title: "Export an AWS Certificate Manager private certificate"
+---
+
 # Export an AWS Certificate Manager private certificate
 
 You can export a certificate issued by AWS Private CA for use anywhere in your private

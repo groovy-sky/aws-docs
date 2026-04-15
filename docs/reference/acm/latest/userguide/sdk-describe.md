@@ -1,3 +1,7 @@
+---
+title: "Describing a certificate"
+---
+
 # Describing a certificate
 
 The following example shows how to use the [DescribeCertificate](../apireference/api-describecertificate.md)

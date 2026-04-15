@@ -1,3 +1,7 @@
+---
+title: "Unsubscribe from agent routing profile changes in Amazon Connect Agent Workspace"
+---
+
 # Unsubscribe from agent routing profile changes in Amazon Connect Agent Workspace
 
 Unsubscribes from RoutingProfileChanged event.

@@ -1,3 +1,7 @@
+---
+title: "The create event in Amazon Connect Agent Workspace"
+---
+
 # The create event in Amazon Connect Agent Workspace
 
 The create event in the Amazon Connect agent workspace results in the `

@@ -1,3 +1,7 @@
+---
+title: "ResendValidationEmail"
+---
+
 # ResendValidationEmail
 
 Resends the email that requests domain ownership validation. The domain owner or an

@@ -1,3 +1,7 @@
+---
+title: "Using HTTP authentication and authorization for Amazon MQ for RabbitMQ"
+---
+
 # Using HTTP authentication and authorization for Amazon MQ for RabbitMQ
 
 This tutorial describes how to configure HTTP authentication and authorization for your Amazon MQ for RabbitMQ brokers using an external HTTP server.

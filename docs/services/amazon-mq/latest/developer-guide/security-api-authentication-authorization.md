@@ -1,3 +1,7 @@
+---
+title: "API authentication and authorization for Amazon MQ"
+---
+
 # API authentication and authorization for Amazon MQ
 
 Amazon MQ uses standard AWS request signing for API authentication. For more

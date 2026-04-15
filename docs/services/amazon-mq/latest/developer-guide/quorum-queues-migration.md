@@ -1,3 +1,7 @@
+---
+title: "Migrating from classic queues to quorum queues on Amazon MQ for RabbitMQ"
+---
+
 # Migrating from classic queues to quorum queues on Amazon MQ for RabbitMQ
 
 You can migrate your classic mirrored queues to quorum queues on

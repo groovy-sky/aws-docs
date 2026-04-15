@@ -1,3 +1,7 @@
+---
+title: "Configurable values"
+---
+
 # Configurable values
 
 You can set the value of the following broker configuration options by modifying the broker configuration file in the AWS Management Console.

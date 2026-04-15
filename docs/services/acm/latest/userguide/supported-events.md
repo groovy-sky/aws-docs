@@ -1,3 +1,7 @@
+---
+title: "Amazon EventBridge support for ACM"
+---
+
 # Amazon EventBridge support for ACM
 
 This topic lists and describes the ACM related events supported by

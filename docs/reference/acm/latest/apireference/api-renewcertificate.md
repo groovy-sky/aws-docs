@@ -1,3 +1,7 @@
+---
+title: "RenewCertificate"
+---
+
 # RenewCertificate
 
 Renews an [eligible ACM certificate](../../../../services/acm/latest/userguide/managed-renewal.md). In order to renew your AWS Private CA certificates

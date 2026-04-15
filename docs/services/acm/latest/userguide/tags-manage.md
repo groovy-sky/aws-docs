@@ -1,3 +1,7 @@
+---
+title: "Managing tags"
+---
+
 # Managing tags
 
 You can add, edit, and delete tags by using the AWS Management Console, the

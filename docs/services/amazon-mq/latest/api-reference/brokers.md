@@ -1,3 +1,7 @@
+---
+title: "Brokers"
+---
+
 # Brokers
 
 This is a collection of brokers. A broker is a message broker environment running

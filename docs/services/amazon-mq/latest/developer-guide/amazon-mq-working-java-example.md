@@ -1,3 +1,7 @@
+---
+title: "Working examples of using Java Message Service (JMS) with ActiveMQ"
+---
+
 # Working examples of using Java Message Service (JMS) with ActiveMQ
 
 The following examples show how you can work with ActiveMQ programmatically:

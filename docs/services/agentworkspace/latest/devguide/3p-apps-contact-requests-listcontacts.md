@@ -1,3 +1,7 @@
+---
+title: "List all contacts for the current agent in Amazon Connect Agent Workspace"
+---
+
 # List all contacts for the current agent in Amazon Connect Agent Workspace
 
 Lists all contacts for the current agent.

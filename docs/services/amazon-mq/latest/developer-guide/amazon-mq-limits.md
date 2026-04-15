@@ -1,3 +1,7 @@
+---
+title: "Quotas in Amazon MQ"
+---
+
 # Quotas in Amazon MQ
 
 This topic lists limits within Amazon MQ. Many of the following limits can be changed for

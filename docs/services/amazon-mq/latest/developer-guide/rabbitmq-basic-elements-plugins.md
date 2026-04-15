@@ -1,3 +1,7 @@
+---
+title: "Plugins"
+---
+
 # Plugins
 
 Amazon MQ for RabbitMQ also supports the following plugins.

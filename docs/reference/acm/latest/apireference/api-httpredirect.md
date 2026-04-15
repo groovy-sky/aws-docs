@@ -1,3 +1,7 @@
+---
+title: "HttpRedirect"
+---
+
 # HttpRedirect
 
 Contains information for HTTP-based domain validation of certificates requested through Amazon CloudFront and issued by ACM.

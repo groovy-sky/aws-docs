@@ -1,3 +1,7 @@
+---
+title: "Creating an ActiveMQ broker user"
+---
+
 # Creating an ActiveMQ broker user
 
 An ActiveMQ _user_ is a person or an application that can access the queues and topics of an ActiveMQ broker.

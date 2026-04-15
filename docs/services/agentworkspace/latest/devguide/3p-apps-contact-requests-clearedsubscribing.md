@@ -1,3 +1,7 @@
+---
+title: "Creates a subscription whenever a contact cleared event occurs in Amazon Connect Agent Workspace"
+---
+
 # Creates a subscription whenever a contact cleared event occurs in Amazon Connect Agent Workspace
 
 It creates a subscription whenever a contact cleared event occurs in Amazon

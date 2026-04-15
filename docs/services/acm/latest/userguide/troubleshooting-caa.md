@@ -1,3 +1,7 @@
+---
+title: "Certification Authority Authorization (CAA) problems"
+---
+
 # Certification Authority Authorization (CAA) problems
 
 You can use CAA DNS records to specify that the Amazon certificate authority (CA) can

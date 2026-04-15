@@ -1,3 +1,7 @@
+---
+title: "Welcome"
+---
+
 # Welcome
 
 Welcome to the Amazon MQ REST API reference. In this guide, you can find descriptions of REST

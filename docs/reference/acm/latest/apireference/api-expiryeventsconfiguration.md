@@ -1,3 +1,7 @@
+---
+title: "ExpiryEventsConfiguration"
+---
+
 # ExpiryEventsConfiguration
 
 Object containing expiration events options associated with an AWS account.
