@@ -1,3 +1,7 @@
+---
+title: "Gateway routes"
+---
+
 # Gateway routes
 
 ###### Important

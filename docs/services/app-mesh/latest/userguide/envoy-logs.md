@@ -1,3 +1,7 @@
+---
+title: "Logging"
+---
+
 # Logging
 
 ###### Important

@@ -1,3 +1,7 @@
+---
+title: "Envoy configuration variables"
+---
+
 # Envoy configuration variables
 
 ###### Important

@@ -1,3 +1,7 @@
+---
+title: "Virtual nodes"
+---
+
 # Virtual nodes
 
 ###### Important

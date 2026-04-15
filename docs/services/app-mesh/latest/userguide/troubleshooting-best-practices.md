@@ -1,3 +1,7 @@
+---
+title: "App Mesh troubleshooting best practices"
+---
+
 # App Mesh troubleshooting best practices
 
 ###### Important

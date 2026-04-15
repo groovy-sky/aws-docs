@@ -1,3 +1,7 @@
+---
+title: "Virtual gateways"
+---
+
 # Virtual gateways
 
 ###### Important

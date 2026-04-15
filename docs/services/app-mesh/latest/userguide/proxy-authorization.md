@@ -1,3 +1,7 @@
+---
+title: "Envoy Proxy authorization"
+---
+
 # Envoy Proxy authorization
 
 ###### Important
