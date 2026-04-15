@@ -170,14 +170,19 @@ const viewerHTML = `<!doctype html>
       return path.split('/').map(encodeURIComponent).join('/');
     }
 
-    if (!path || path.startsWith('/') || path.includes('..')) {
+    let docPath = path || '';
+    if (docPath.startsWith('docs/')) {
+      docPath = docPath.slice(5);
+    }
+
+    if (!docPath || docPath.startsWith('/') || docPath.includes('..')) {
       contentEl.textContent = 'Missing or invalid path.';
       throw new Error('invalid path');
     }
 
-    pathEl.textContent = 'docs/' + path;
+    pathEl.textContent = 'docs/' + docPath;
 
-    fetch(RAW_BASE + encodePath(path))
+    fetch(RAW_BASE + encodePath(docPath))
       .then(r => {
         if (!r.ok) throw new Error('HTTP ' + r.status);
         return r.text();
