@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot issues with AWS Certificate Manager"
+---
+
 # Troubleshoot issues with AWS Certificate Manager
 
 Consult the following topics if you encounter problems using AWS Certificate Manager.

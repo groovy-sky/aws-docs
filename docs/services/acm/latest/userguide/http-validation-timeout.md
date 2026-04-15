@@ -1,3 +1,7 @@
+---
+title: "Validation timeout"
+---
+
 # Validation timeout
 
 HTTP validation may time out if the content isn't available within the expected time

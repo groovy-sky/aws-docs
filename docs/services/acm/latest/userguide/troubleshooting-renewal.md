@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot managed certificate renewal"
+---
+
 # Troubleshoot managed certificate renewal
 
 ACM tries to automatically renew your ACM certificates before they expire so that no

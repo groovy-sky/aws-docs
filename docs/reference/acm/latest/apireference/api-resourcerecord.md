@@ -1,3 +1,7 @@
+---
+title: "ResourceRecord"
+---
+
 # ResourceRecord
 
 Contains a DNS record value that you can use to validate ownership or control of a

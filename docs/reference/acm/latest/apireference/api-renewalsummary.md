@@ -1,3 +1,7 @@
+---
+title: "RenewalSummary"
+---
+
 # RenewalSummary
 
 Contains information about the status of ACM's [managed renewal](../../../../services/acm/latest/userguide/acm-renewal.md) for the certificate. This

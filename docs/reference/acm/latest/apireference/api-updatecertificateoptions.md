@@ -1,3 +1,7 @@
+---
+title: "UpdateCertificateOptions"
+---
+
 # UpdateCertificateOptions
 
 Updates a certificate. You can use this function to specify whether to opt in to or

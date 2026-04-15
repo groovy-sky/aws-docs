@@ -1,3 +1,7 @@
+---
+title: "DomainValidationOption"
+---
+
 # DomainValidationOption
 
 Contains information about the domain names that you want ACM to use to send you

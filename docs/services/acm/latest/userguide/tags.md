@@ -1,3 +1,7 @@
+---
+title: "Tag AWS Certificate Manager resources"
+---
+
 # Tag AWS Certificate Manager resources
 
 A _tag_ is a label that you can assign to an ACM certificate. Each

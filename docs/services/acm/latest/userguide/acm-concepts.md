@@ -1,3 +1,7 @@
+---
+title: "AWS Certificate Manager concepts"
+---
+
 # AWS Certificate Manager concepts
 
 This section provides definitions of concepts used by AWS Certificate Manager.

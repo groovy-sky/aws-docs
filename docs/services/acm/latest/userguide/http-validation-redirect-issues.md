@@ -1,3 +1,7 @@
+---
+title: "HTTP redirect issues"
+---
+
 # HTTP redirect issues
 
 If you're using a redirect instead of serving the content directly, follow these steps

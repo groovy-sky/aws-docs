@@ -1,3 +1,7 @@
+---
+title: "DeleteCertificate"
+---
+
 # DeleteCertificate
 
 Deletes a certificate and its associated private key. If this action succeeds, the

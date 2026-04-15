@@ -1,3 +1,7 @@
+---
+title: "Renewing a certificate"
+---
+
 # Renewing a certificate
 
 The following example shows how to use the [RenewCertificate](../apireference/api-renewcertificate.md) function. The function renews a private certificate issued

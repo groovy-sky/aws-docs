@@ -1,3 +1,7 @@
+---
+title: "AWS Certificate Manager DNS validation"
+---
+
 # AWS Certificate Manager DNS validation
 
 The Domain Name System (DNS) is a directory service for resources that are connected

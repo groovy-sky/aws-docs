@@ -1,3 +1,7 @@
+---
+title: "Check a certificate's renewal status"
+---
+
 # Check a certificate's renewal status
 
 When you have attempted to renew a certificate, ACM provides a _Renewal status_ information field in the certificate

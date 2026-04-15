@@ -1,3 +1,7 @@
+---
+title: "Welcome"
+---
+
 # Welcome
 
 Welcome to the AWS Certificate Manager (ACM) API Reference. This guide provides descriptions, syntax,

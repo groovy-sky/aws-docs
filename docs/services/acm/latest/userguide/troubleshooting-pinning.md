@@ -1,3 +1,7 @@
+---
+title: "Certificate pinning problems"
+---
+
 # Certificate pinning problems
 
 To renew a certificate, ACM generates a new public-private key pair. If your

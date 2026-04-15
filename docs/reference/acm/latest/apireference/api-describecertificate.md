@@ -1,3 +1,7 @@
+---
+title: "DescribeCertificate"
+---
+
 # DescribeCertificate
 
 Returns detailed metadata about the specified ACM certificate.

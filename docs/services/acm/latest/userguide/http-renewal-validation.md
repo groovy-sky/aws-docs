@@ -1,3 +1,7 @@
+---
+title: "Renewal for domains validated by HTTP"
+---
+
 # Renewal for domains validated by HTTP
 
 ACM provides automated managed renewal for certificates that were originally

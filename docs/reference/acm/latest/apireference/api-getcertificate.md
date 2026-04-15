@@ -1,3 +1,7 @@
+---
+title: "GetCertificate"
+---
+
 # GetCertificate
 
 Retrieves a certificate and its certificate chain. The certificate may be either a

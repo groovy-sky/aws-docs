@@ -1,3 +1,7 @@
+---
+title: "CertificateSummary"
+---
+
 # CertificateSummary
 
 This structure is returned in the response object of [ListCertificates](api-listcertificates.md) action.

@@ -1,3 +1,7 @@
+---
+title: "Import a certificate"
+---
+
 # Import a certificate
 
 You can import an externally obtained certificate (that is, one provided by a

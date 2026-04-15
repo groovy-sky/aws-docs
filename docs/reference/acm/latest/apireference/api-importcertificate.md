@@ -1,3 +1,7 @@
+---
+title: "ImportCertificate"
+---
+
 # ImportCertificate
 
 Imports a certificate into AWS Certificate Manager (ACM) to use with services that are integrated

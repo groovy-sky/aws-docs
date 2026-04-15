@@ -1,3 +1,7 @@
+---
+title: "Request a public certificate in AWS Certificate Manager"
+---
+
 # Request a public certificate in AWS Certificate Manager
 
 You can request AWS Certificate Manager public certificates from the ACM console, AWS CLI, or API.

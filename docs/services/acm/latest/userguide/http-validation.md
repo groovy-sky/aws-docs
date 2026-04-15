@@ -1,3 +1,7 @@
+---
+title: "AWS Certificate Manager HTTP validation"
+---
+
 # AWS Certificate Manager HTTP validation
 
 Hypertext Transfer Protocol (HTTP) is a foundational protocol for data communication

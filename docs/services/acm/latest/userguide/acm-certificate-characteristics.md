@@ -1,3 +1,7 @@
+---
+title: "AWS Certificate Manager public certificate characteristics and limitations"
+---
+
 # AWS Certificate Manager public certificate characteristics and limitations
 
 Public certificates provided by ACM have the following characteristics and

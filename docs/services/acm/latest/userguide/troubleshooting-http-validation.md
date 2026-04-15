@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting HTTP validation problems"
+---
+
 # Troubleshooting HTTP validation problems
 
 Consult the following guidance if you're having trouble validating a certificate with

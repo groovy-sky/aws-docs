@@ -1,3 +1,7 @@
+---
+title: "Request a private certificate in AWS Certificate Manager"
+---
+
 # Request a private certificate in AWS Certificate Manager
 
 ## Request a private certificate (console)

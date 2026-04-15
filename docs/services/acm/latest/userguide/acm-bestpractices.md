@@ -1,3 +1,7 @@
+---
+title: "Best practices"
+---
+
 # Best practices
 
 Best practices are recommendations that can help you use AWS Certificate Manager (AWS Certificate Manager) more

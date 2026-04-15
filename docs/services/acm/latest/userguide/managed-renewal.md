@@ -1,3 +1,7 @@
+---
+title: "Managed certificate renewal in AWS Certificate Manager"
+---
+
 # Managed certificate renewal in AWS Certificate Manager
 
 ACM provides managed renewal for your Amazon-issued SSL/TLS certificates. This means

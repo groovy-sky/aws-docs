@@ -1,3 +1,7 @@
+---
+title: "DomainValidation"
+---
+
 # DomainValidation
 
 Contains information about the validation of each domain name in the
