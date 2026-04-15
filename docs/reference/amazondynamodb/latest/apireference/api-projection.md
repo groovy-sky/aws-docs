@@ -1,3 +1,7 @@
+---
+title: "Projection"
+---
+
 # Projection
 
 Represents attributes that are copied (projected) from the table into an index. These

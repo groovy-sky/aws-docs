@@ -1,3 +1,7 @@
+---
+title: "BatchStatementResponse"
+---
+
 # BatchStatementResponse
 
 A PartiQL batch statement response..

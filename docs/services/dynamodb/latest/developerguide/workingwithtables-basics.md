@@ -1,3 +1,7 @@
+---
+title: "Basic operations on DynamoDB tables"
+---
+
 # Basic operations on DynamoDB tables
 
 Similar to other database systems, Amazon DynamoDB stores data in tables. You can manage

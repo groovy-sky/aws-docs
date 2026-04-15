@@ -1,3 +1,7 @@
+---
+title: "Higher-level programming interfaces for DynamoDB"
+---
+
 # Higher-level programming interfaces for DynamoDB
 
 The AWS SDKs provide applications with low-level interfaces for working with Amazon DynamoDB.

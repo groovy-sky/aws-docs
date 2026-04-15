@@ -1,3 +1,7 @@
+---
+title: "Amazon DynamoDB"
+---
+
 # Amazon DynamoDB
 
 The following actions are supported by Amazon DynamoDB:

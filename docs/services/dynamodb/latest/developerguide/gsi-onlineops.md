@@ -1,3 +1,7 @@
+---
+title: "Managing Global Secondary Indexes in DynamoDB"
+---
+
 # Managing Global Secondary Indexes in DynamoDB
 
 This section describes how to create, modify, and delete global secondary indexes in

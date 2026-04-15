@@ -1,3 +1,7 @@
+---
+title: "ReplicaGlobalSecondaryIndexSettingsUpdate"
+---
+
 # ReplicaGlobalSecondaryIndexSettingsUpdate
 
 Represents the settings of a global secondary index for a global table that will be

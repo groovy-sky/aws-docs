@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting common ABAC errors for DynamoDB tables and indexes"
+---
+
 # Troubleshooting common ABAC errors for DynamoDB tables and indexes
 
 This topic provides troubleshooting advice for common errors and issues that you might encounter while implementing ABAC in DynamoDB tables or indexes.

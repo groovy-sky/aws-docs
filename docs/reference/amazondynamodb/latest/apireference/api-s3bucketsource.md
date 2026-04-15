@@ -1,3 +1,7 @@
+---
+title: "S3BucketSource"
+---
+
 # S3BucketSource
 
 The S3 bucket that is being imported from.

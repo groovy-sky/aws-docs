@@ -1,3 +1,7 @@
+---
+title: "Migrate a table using AWS Backup for cross-account backup and restore"
+---
+
 # Migrate a table using AWS Backup for cross-account backup and restore
 
 **Prerequisites**

@@ -1,3 +1,7 @@
+---
+title: "Restore a table in DynamoDB"
+---
+
 # Restore a table in DynamoDB
 
 You can restore a DynamoDB table from your PITR backup or your on-demand backups using the

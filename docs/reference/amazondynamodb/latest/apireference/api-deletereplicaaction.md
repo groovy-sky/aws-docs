@@ -1,3 +1,7 @@
+---
+title: "DeleteReplicaAction"
+---
+
 # DeleteReplicaAction
 
 Represents a replica to be removed.

@@ -1,3 +1,7 @@
+---
+title: "StreamRecord"
+---
+
 # StreamRecord
 
 A description of a single data modification that was performed on an item in a DynamoDB table.

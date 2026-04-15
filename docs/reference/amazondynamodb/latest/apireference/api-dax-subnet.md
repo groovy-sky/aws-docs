@@ -1,3 +1,7 @@
+---
+title: "Subnet"
+---
+
 # Subnet
 
 Represents the subnet associated with a DAX cluster. This parameter

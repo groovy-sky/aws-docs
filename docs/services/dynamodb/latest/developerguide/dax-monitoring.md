@@ -1,3 +1,7 @@
+---
+title: "Monitoring DynamoDB Accelerator"
+---
+
 # Monitoring DynamoDB Accelerator
 
 Monitoring is an important part of maintaining the reliability, availability, and

@@ -1,3 +1,7 @@
+---
+title: "Use DeleteTable with an AWS SDK or CLI"
+---
+
 # Use `DeleteTable` with an AWS SDK or CLI
 
 The following code examples show how to use `DeleteTable`.

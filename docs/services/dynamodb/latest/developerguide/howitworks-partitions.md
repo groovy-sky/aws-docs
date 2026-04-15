@@ -1,3 +1,7 @@
+---
+title: "Partitions and data distribution in DynamoDB"
+---
+
 # Partitions and data distribution in DynamoDB
 
 Amazon DynamoDB stores data in partitions. A _partition_ is an allocation

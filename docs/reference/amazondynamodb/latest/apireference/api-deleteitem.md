@@ -1,3 +1,7 @@
+---
+title: "DeleteItem"
+---
+
 # DeleteItem
 
 Deletes a single item in a table by primary key. You can perform a conditional delete

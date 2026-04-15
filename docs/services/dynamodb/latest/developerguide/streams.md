@@ -1,3 +1,7 @@
+---
+title: "Change data capture for DynamoDB Streams"
+---
+
 # Change data capture for DynamoDB Streams
 
 DynamoDB Streams captures a time-ordered sequence of item-level modifications in any DynamoDB table

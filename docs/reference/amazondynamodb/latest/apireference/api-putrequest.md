@@ -1,3 +1,7 @@
+---
+title: "PutRequest"
+---
+
 # PutRequest
 
 Represents a request to perform a `PutItem` operation on an item.

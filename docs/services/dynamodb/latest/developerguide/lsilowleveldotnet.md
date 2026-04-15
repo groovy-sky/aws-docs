@@ -1,3 +1,7 @@
+---
+title: "Working with Local Secondary Indexes: .NET"
+---
+
 # Working with Local Secondary Indexes: .NET
 
 ###### Topics

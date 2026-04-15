@@ -1,3 +1,7 @@
+---
+title: "Create and manage DynamoDB global tables demonstrating MREC using an AWS SDK"
+---
+
 # Create and manage DynamoDB global tables demonstrating MREC using an AWS SDK
 
 The following code example shows how to create and manage DynamoDB global tables with replicas across multiple Regions.

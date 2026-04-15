@@ -1,3 +1,7 @@
+---
+title: "Evaluate your costs at the table level"
+---
+
 # Evaluate your costs at the table level
 
 The Cost Explorer tool found within the AWS Management Console allows you to see costs broken down by type,

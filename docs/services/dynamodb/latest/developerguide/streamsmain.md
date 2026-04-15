@@ -1,3 +1,7 @@
+---
+title: "Change data capture with Amazon DynamoDB"
+---
+
 # Change data capture with Amazon DynamoDB
 
 Many applications benefit from capturing changes to items stored in a DynamoDB table, at the

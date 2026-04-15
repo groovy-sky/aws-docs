@@ -1,3 +1,7 @@
+---
+title: "Continue learning about DynamoDB"
+---
+
 # Continue learning about DynamoDB
 
 For more information about using Amazon DynamoDB, see the following topics:

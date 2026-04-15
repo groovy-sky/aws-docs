@@ -1,3 +1,7 @@
+---
+title: "Step 2: Launch an Amazon EMR cluster"
+---
+
 # Step 2: Launch an Amazon EMR cluster
 
 In this step, you will configure and launch an Amazon EMR cluster. Hive and a storage

@@ -1,3 +1,7 @@
+---
+title: "Local secondary indexes"
+---
+
 # Local secondary indexes
 
 Some applications only need to query data using the base table's primary key. However,

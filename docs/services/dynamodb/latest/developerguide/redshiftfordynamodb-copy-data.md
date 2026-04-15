@@ -1,3 +1,7 @@
+---
+title: "Loading data from DynamoDB into Amazon Redshift with the COPY command"
+---
+
 # Loading data from DynamoDB into Amazon Redshift with the COPY command
 
 Amazon Redshift works with Amazon DynamoDB with advanced business intelligence capabilities and a

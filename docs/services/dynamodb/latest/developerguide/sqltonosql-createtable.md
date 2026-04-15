@@ -1,3 +1,7 @@
+---
+title: "Differences between a relational (SQL) database and DynamoDB when creating a table"
+---
+
 # Differences between a relational (SQL) database and DynamoDB when creating a table
 
 Tables are the fundamental data structures in relational databases and in Amazon DynamoDB. A

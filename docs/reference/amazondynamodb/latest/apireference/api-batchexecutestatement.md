@@ -1,3 +1,7 @@
+---
+title: "BatchExecuteStatement"
+---
+
 # BatchExecuteStatement
 
 This operation allows you to perform batch reads or writes on data stored in DynamoDB,

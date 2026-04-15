@@ -1,3 +1,7 @@
+---
+title: "Best practices for managing many-to-many relationships in DynamoDB tables"
+---
+
 # Best practices for managing many-to-many relationships in DynamoDB tables
 
 Adjacency lists are a design pattern that is useful for modeling many-to-many relationships

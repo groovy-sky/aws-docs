@@ -1,3 +1,7 @@
+---
+title: "Scenarios for DynamoDB using AWS SDKs"
+---
+
 # Scenarios for DynamoDB using AWS SDKs
 
 The following code examples show you how to implement common scenarios in DynamoDB

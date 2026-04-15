@@ -1,3 +1,7 @@
+---
+title: "AutoScalingPolicyUpdate"
+---
+
 # AutoScalingPolicyUpdate
 
 Represents the auto scaling policy to be modified.

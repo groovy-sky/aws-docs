@@ -1,3 +1,7 @@
+---
+title: "BatchGetItem"
+---
+
 # BatchGetItem
 
 The `BatchGetItem` operation returns the attributes of one or more items

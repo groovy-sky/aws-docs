@@ -1,3 +1,7 @@
+---
+title: "Invoke a Lambda function from a DynamoDB trigger"
+---
+
 # Invoke a Lambda function from a DynamoDB trigger
 
 The following code examples show how to implement a Lambda function that receives an event triggered by receiving records from a DynamoDB stream. The function retrieves the DynamoDB payload and logs the record contents.

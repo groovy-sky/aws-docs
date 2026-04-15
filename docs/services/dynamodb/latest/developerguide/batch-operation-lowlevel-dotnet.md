@@ -1,3 +1,7 @@
+---
+title: "Example: Batch operations using the AWS SDK for .NET low-level API"
+---
+
 # Example: Batch operations using the AWS SDK for .NET low-level API
 
 ###### Topics

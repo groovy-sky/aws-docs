@@ -1,3 +1,7 @@
+---
+title: "DynamoDBContext class from the .NET object persistence model"
+---
+
 # DynamoDBContext class from the .NET object persistence model
 
 The `DynamoDBContext` class is the entry point to the Amazon DynamoDB database.

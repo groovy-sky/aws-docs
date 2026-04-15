@@ -1,3 +1,7 @@
+---
+title: "DynamoDB encryption at rest usage notes"
+---
+
 # DynamoDB encryption at rest usage notes
 
 Consider the following when you are using encryption at rest in Amazon DynamoDB.

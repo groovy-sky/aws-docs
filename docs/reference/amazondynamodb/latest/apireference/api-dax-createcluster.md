@@ -1,3 +1,7 @@
+---
+title: "CreateCluster"
+---
+
 # CreateCluster
 
 Creates a DAX cluster. All nodes in the cluster run the same DAX caching software.

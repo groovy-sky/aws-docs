@@ -1,3 +1,7 @@
+---
+title: "PartiQL arithmetic, comparison, and logical operators for DynamoDB"
+---
+
 # PartiQL arithmetic, comparison, and logical operators for DynamoDB
 
 PartiQL in Amazon DynamoDB supports the following [SQL standard\

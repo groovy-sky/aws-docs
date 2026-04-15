@@ -1,3 +1,7 @@
+---
+title: "AWS community contributions for DynamoDB"
+---
+
 # AWS community contributions for DynamoDB
 
 _AWS community contributions_ are examples that were created and are maintained by multiple teams across AWS. To provide feedback, use the mechanism provided in the linked repositories.

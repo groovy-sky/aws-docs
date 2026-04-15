@@ -1,3 +1,7 @@
+---
+title: "DynamoDB API"
+---
+
 # DynamoDB API
 
 To work with Amazon DynamoDB, your application must use a few simple API operations. The

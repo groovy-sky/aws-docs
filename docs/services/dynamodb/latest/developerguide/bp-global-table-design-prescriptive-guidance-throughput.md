@@ -1,3 +1,7 @@
+---
+title: "Throughput capacity planning for DynamoDB global tables"
+---
+
 # Throughput capacity planning for DynamoDB global tables
 
 Migrating traffic from one Region to another requires careful consideration of DynamoDB table settings

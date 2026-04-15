@@ -1,3 +1,7 @@
+---
+title: "Overview of AWS SDK support for DynamoDB"
+---
+
 # Overview of AWS SDK support for DynamoDB
 
 The following diagram provides a high-level overview of Amazon DynamoDB application

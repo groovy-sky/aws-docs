@@ -1,3 +1,7 @@
+---
+title: "DAX encryption in transit"
+---
+
 # DAX encryption in transit
 
 Amazon DynamoDB Accelerator (DAX) supports encryption in transit of data between your application

@@ -1,3 +1,7 @@
+---
+title: "Accessing DynamoDB"
+---
+
 # Accessing DynamoDB
 
 You can access Amazon DynamoDB using the AWS Management Console, the AWS Command Line Interface (AWS CLI), or the DynamoDB

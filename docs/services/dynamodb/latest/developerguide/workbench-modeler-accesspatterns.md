@@ -1,3 +1,7 @@
+---
+title: "Adding and validating access patterns"
+---
+
 # Adding and validating access patterns
 
 You can use NoSQL Workbench for Amazon DynamoDB to create, store, and validate _access patterns_.

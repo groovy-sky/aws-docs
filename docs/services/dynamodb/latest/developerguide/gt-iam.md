@@ -1,3 +1,7 @@
+---
+title: "Using IAM with global tables"
+---
+
 # Using IAM with global tables
 
 ###### Important

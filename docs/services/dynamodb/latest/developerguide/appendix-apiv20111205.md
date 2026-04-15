@@ -1,3 +1,7 @@
+---
+title: "Previous low-level DynamoDB API version (2011-12-05)"
+---
+
 # Previous low-level DynamoDB API version (2011-12-05)
 
 This section documents the operations available in the previous

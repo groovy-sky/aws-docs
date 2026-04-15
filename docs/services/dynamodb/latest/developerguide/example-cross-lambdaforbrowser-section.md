@@ -1,3 +1,7 @@
+---
+title: "Invoke a Lambda function from a browser"
+---
+
 # Invoke a Lambda function from a browser
 
 The following code example shows how to invoke an AWS Lambda function from a browser.

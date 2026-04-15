@@ -1,3 +1,7 @@
+---
+title: "Monitoring global tables"
+---
+
 # Monitoring global tables
 
 ###### Important

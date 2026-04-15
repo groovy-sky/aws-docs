@@ -1,3 +1,7 @@
+---
+title: "TransactGetItems"
+---
+
 # TransactGetItems
 
 `TransactGetItems` is a synchronous operation that atomically retrieves

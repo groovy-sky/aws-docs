@@ -1,3 +1,7 @@
+---
+title: "Use DescribeTable with an AWS SDK or CLI"
+---
+
 # Use `DescribeTable` with an AWS SDK or CLI
 
 The following code examples show how to use `DescribeTable`.

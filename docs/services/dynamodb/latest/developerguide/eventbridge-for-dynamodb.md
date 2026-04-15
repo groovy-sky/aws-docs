@@ -1,3 +1,7 @@
+---
+title: "Integrating DynamoDB with Amazon EventBridge"
+---
+
 # Integrating DynamoDB with Amazon EventBridge
 
 Amazon DynamoDB offers DynamoDB Streams for change data capture, enabling the capture of item-level changes

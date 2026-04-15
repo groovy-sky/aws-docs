@@ -1,3 +1,7 @@
+---
+title: "Parameter"
+---
+
 # Parameter
 
 Describes an individual setting that controls some aspect of DAX

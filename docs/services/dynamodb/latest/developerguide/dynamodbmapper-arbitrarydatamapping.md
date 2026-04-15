@@ -1,3 +1,7 @@
+---
+title: "Mapping arbitrary data in DynamoDB"
+---
+
 # Mapping arbitrary data in DynamoDB
 
 In addition to the supported Java types (see [Supported data types for DynamoDBMapper for Java](dynamodbmapper-datatypes.md)), you can use types in your application

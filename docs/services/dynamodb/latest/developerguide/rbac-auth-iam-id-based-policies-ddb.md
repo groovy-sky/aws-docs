@@ -1,3 +1,7 @@
+---
+title: "Authorization with IAM identity-based policies and DynamoDB resource-based policies"
+---
+
 # Authorization with IAM identity-based policies and DynamoDB resource-based policies
 
 **Identity-based policies** are attached to an identity, such

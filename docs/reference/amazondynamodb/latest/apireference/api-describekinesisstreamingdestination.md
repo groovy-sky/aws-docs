@@ -1,3 +1,7 @@
+---
+title: "DescribeKinesisStreamingDestination"
+---
+
 # DescribeKinesisStreamingDestination
 
 Returns information about the status of Kinesis streaming.

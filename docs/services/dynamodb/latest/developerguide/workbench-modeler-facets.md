@@ -1,3 +1,7 @@
+---
+title: "Facets"
+---
+
 # Facets
 
 In NoSQL Workbench, _Facets_ give you a way to view a subset of the data in a table, without having to see records that don't meet the constraints of the facet.

@@ -1,3 +1,7 @@
+---
+title: "Connecting to live datasets"
+---
+
 # Connecting to live datasets
 
 To connect to your Amazon DynamoDB tables with NoSQL Workbench, you must first connect to

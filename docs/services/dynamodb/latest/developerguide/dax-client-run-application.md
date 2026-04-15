@@ -1,3 +1,7 @@
+---
+title: "Step 4: Run a sample application"
+---
+
 # Step 4: Run a sample application
 
 To help you test Amazon DynamoDB Accelerator (DAX) functionality, you can run one of the

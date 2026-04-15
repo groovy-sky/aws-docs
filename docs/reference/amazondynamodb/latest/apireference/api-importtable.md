@@ -1,3 +1,7 @@
+---
+title: "ImportTable"
+---
+
 # ImportTable
 
 Imports table data from an S3 bucket.

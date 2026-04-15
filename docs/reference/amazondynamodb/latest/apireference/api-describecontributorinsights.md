@@ -1,3 +1,7 @@
+---
+title: "DescribeContributorInsights"
+---
+
 # DescribeContributorInsights
 
 Returns information about contributor insights for a given table or global secondary

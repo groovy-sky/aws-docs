@@ -1,3 +1,7 @@
+---
+title: "ListTags"
+---
+
 # ListTags
 
 List all of the tags for a DAX cluster. You can call

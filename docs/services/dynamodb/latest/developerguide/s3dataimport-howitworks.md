@@ -1,3 +1,7 @@
+---
+title: "DynamoDB data import from Amazon S3: how it works"
+---
+
 # DynamoDB data import from Amazon S3: how it works
 
 To import data into DynamoDB, your data must be in an Amazon S3 bucket in CSV, DynamoDB JSON, or

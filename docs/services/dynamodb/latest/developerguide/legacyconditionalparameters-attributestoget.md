@@ -1,3 +1,7 @@
+---
+title: "AttributesToGet (legacy)"
+---
+
 # AttributesToGet (legacy)
 
 ###### Note

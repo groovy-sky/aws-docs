@@ -1,3 +1,7 @@
+---
+title: "AWS PrivateLink for DynamoDB Streams"
+---
+
 # AWS PrivateLink for DynamoDB Streams
 
 With AWS PrivateLink for Amazon DynamoDB Streams, you can provision interface Amazon VPC endpoints

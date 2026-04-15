@@ -1,3 +1,7 @@
+---
+title: "GetShardIterator"
+---
+
 # GetShardIterator
 
 Returns a shard iterator. A shard iterator provides information

@@ -1,3 +1,7 @@
+---
+title: "Restoring a DynamoDB table from a backup"
+---
+
 # Restoring a DynamoDB table from a backup
 
 This section describes how to restore a table from a backup using the Amazon DynamoDB console or

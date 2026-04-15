@@ -1,3 +1,7 @@
+---
+title: "01-create-table.py"
+---
+
 # 01-create-table.py
 
 The `01-create-table.py` program creates a table

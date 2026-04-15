@@ -1,3 +1,7 @@
+---
+title: "Python and DAX"
+---
+
 # Python and DAX
 
 Follow this procedure to run the Python sample application on your Amazon EC2

@@ -1,3 +1,7 @@
+---
+title: "Integrating with Amazon Redshift"
+---
+
 # Integrating with Amazon Redshift
 
 Amazon Redshift is a fast, fully managed, petabyte-scale data warehouse service that makes it simple

@@ -1,3 +1,7 @@
+---
+title: "06-DeleteTable.cs"
+---
+
 # 06-DeleteTable.cs
 
 The `06-DeleteTable.cs` program deletes

@@ -1,3 +1,7 @@
+---
+title: "Requesting a table export in DynamoDB"
+---
+
 # Requesting a table export in DynamoDB
 
 DynamoDB table exports allow you to export table data to an Amazon S3 bucket, enabling you to

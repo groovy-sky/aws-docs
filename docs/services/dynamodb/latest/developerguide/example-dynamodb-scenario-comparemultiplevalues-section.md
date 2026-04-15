@@ -1,3 +1,7 @@
+---
+title: "Compare multiple values with a single attribute in DynamoDB with an AWS SDK"
+---
+
 # Compare multiple values with a single attribute in DynamoDB with an AWS SDK
 
 The following code examples show how to compare multiple values with a single attribute in DynamoDB.

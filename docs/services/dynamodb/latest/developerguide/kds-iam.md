@@ -1,3 +1,7 @@
+---
+title: "Using IAM policies for Amazon Kinesis Data Streams and Amazon DynamoDB"
+---
+
 # Using IAM policies for Amazon Kinesis Data Streams and Amazon DynamoDB
 
 The first time that you enable Amazon Kinesis Data Streams for Amazon DynamoDB, DynamoDB

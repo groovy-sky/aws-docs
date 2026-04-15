@@ -1,3 +1,7 @@
+---
+title: "Cheat sheet for DynamoDB"
+---
+
 # Cheat sheet for DynamoDB
 
 This cheat sheet provides a quick reference for working with Amazon DynamoDB and its

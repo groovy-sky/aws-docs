@@ -1,3 +1,7 @@
+---
+title: "AWS PrivateLink for DynamoDB"
+---
+
 # AWS PrivateLink for DynamoDB
 
 With AWS PrivateLink for DynamoDB, you can provision _interface Amazon VPC_

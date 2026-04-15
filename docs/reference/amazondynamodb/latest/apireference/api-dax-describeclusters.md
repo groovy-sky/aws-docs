@@ -1,3 +1,7 @@
+---
+title: "DescribeClusters"
+---
+
 # DescribeClusters
 
 Returns information about all provisioned DAX clusters if no cluster identifier is

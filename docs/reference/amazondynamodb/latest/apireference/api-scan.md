@@ -1,3 +1,7 @@
+---
+title: "Scan"
+---
+
 # Scan
 
 The `Scan` operation returns one or more items and item attributes by

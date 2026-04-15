@@ -1,3 +1,7 @@
+---
+title: "CreateParameterGroup"
+---
+
 # CreateParameterGroup
 
 Creates a new parameter group. A parameter group is a collection of parameters that

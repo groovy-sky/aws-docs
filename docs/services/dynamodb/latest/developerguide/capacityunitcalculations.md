@@ -1,3 +1,7 @@
+---
+title: "DynamoDB item sizes and formats"
+---
+
 # DynamoDB item sizes and formats
 
 DynamoDB tables are schemaless, except for the primary key, so the items in a table can

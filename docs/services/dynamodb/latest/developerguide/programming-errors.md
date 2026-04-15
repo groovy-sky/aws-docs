@@ -1,3 +1,7 @@
+---
+title: "Error handling with DynamoDB"
+---
+
 # Error handling with DynamoDB
 
 This section describes runtime errors and how to handle them. It also describes error

@@ -1,3 +1,7 @@
+---
+title: "ReplicaGlobalSecondaryIndexAutoScalingUpdate"
+---
+
 # ReplicaGlobalSecondaryIndexAutoScalingUpdate
 
 Represents the auto scaling settings of a global secondary index for a replica that

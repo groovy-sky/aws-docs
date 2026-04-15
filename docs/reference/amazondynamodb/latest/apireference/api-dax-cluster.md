@@ -1,3 +1,7 @@
+---
+title: "Cluster"
+---
+
 # Cluster
 
 Contains all of the attributes of a specific DAX cluster.

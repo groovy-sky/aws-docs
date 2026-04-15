@@ -1,3 +1,7 @@
+---
+title: "Optimizing costs on DynamoDB tables"
+---
+
 # Optimizing costs on DynamoDB tables
 
 This section covers best practices on how to optimize costs for your existing DynamoDB tables.

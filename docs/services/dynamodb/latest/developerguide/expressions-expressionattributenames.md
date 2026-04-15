@@ -1,3 +1,7 @@
+---
+title: "Expression attribute names (aliases) in DynamoDB"
+---
+
 # Expression attribute names (aliases) in DynamoDB
 
 An _expression attribute name_ is an alias (or placeholder) that you

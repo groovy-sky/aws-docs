@@ -1,3 +1,7 @@
+---
+title: "WarmThroughput"
+---
+
 # WarmThroughput
 
 Provides visibility into the number of read and write operations your table or

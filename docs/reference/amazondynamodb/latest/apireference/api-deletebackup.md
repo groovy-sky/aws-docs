@@ -1,3 +1,7 @@
+---
+title: "DeleteBackup"
+---
+
 # DeleteBackup
 
 Deletes an existing backup of a table.

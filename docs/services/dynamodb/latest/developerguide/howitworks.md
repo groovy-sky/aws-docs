@@ -1,3 +1,7 @@
+---
+title: "Amazon DynamoDB: How it works"
+---
+
 # Amazon DynamoDB: How it works
 
 The following sections provide an overview of Amazon DynamoDB service components and how they

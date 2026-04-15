@@ -1,3 +1,7 @@
+---
+title: "Perform map operations in DynamoDB with an AWS SDK"
+---
+
 # Perform map operations in DynamoDB with an AWS SDK
 
 The following code examples show how to perform map operations in DynamoDB.

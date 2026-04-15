@@ -1,3 +1,7 @@
+---
+title: "PartiQL select statements for DynamoDB"
+---
+
 # PartiQL select statements for DynamoDB
 
 Use the `SELECT` statement to retrieve data from a table in

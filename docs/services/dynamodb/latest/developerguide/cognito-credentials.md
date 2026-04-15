@@ -1,3 +1,7 @@
+---
+title: "Configuring AWS credentials using Amazon Cognito for DynamoDB"
+---
+
 # Configuring AWS credentials using Amazon Cognito for DynamoDB
 
 The recommended way to obtain AWS credentials for your web and mobile applications

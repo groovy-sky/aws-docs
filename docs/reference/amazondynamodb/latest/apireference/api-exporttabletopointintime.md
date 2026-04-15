@@ -1,3 +1,7 @@
+---
+title: "ExportTableToPointInTime"
+---
+
 # ExportTableToPointInTime
 
 Exports table data to an S3 bucket. The table must have point in time recovery

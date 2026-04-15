@@ -1,3 +1,7 @@
+---
+title: "DynamoDB multi-account global tables"
+---
+
 # DynamoDB multi-account global tables
 
 Multi-account global tables automatically replicate your DynamoDB table data across multiple AWS

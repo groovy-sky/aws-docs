@@ -1,3 +1,7 @@
+---
+title: "StreamSpecification"
+---
+
 # StreamSpecification
 
 Represents the DynamoDB Streams configuration for a table in DynamoDB.

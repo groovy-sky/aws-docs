@@ -1,3 +1,7 @@
+---
+title: "Editing an existing data model"
+---
+
 # Editing an existing data model
 
 ###### To edit an existing model

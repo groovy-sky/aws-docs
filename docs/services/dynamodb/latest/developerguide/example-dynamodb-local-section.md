@@ -1,3 +1,7 @@
+---
+title: "Connect to a local DynamoDB instance using an AWS SDK"
+---
+
 # Connect to a local DynamoDB instance using an AWS SDK
 
 The following code example shows how to override an endpoint URL to connect to a local development deployment of DynamoDB and an AWS SDK.

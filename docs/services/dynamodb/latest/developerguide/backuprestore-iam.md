@@ -1,3 +1,7 @@
+---
+title: "Using IAM with DynamoDB backup and restore"
+---
+
 # Using IAM with DynamoDB backup and restore
 
 You can use AWS Identity and Access Management (IAM) to restrict Amazon DynamoDB backup and restore actions for some

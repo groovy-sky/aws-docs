@@ -1,3 +1,7 @@
+---
+title: "ReplicaDescription"
+---
+
 # ReplicaDescription
 
 Contains the details of the replica.

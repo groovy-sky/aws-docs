@@ -1,3 +1,7 @@
+---
+title: "Requesting a table import in DynamoDB"
+---
+
 # Requesting a table import in DynamoDB
 
 DynamoDB import allows you to import data from an Amazon S3 bucket to a new DynamoDB table.

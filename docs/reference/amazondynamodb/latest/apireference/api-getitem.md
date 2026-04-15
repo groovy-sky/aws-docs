@@ -1,3 +1,7 @@
+---
+title: "GetItem"
+---
+
 # GetItem
 
 The `GetItem` operation returns a set of attributes for the item with the

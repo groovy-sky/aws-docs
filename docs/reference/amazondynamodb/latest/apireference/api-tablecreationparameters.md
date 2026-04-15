@@ -1,3 +1,7 @@
+---
+title: "TableCreationParameters"
+---
+
 # TableCreationParameters
 
 The parameters for the table created as part of the import operation.

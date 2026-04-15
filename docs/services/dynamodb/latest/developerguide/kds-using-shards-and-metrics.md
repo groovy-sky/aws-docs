@@ -1,3 +1,7 @@
+---
+title: "Using shards and metrics with DynamoDB Streams and Kinesis Data Streams"
+---
+
 # Using shards and metrics with DynamoDB Streams and Kinesis Data Streams
 
 ## Shard management considerations for Kinesis Data Streams

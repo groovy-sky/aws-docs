@@ -1,3 +1,7 @@
+---
+title: "06-delete-table.js"
+---
+
 # 06-delete-table.js
 
 The `06-delete-table.js` program deletes `TryDaxTable`.

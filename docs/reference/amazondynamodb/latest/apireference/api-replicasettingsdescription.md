@@ -1,3 +1,7 @@
+---
+title: "ReplicaSettingsDescription"
+---
+
 # ReplicaSettingsDescription
 
 Represents the properties of a replica.

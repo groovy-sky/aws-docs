@@ -1,3 +1,7 @@
+---
+title: "ReplicaSettingsUpdate"
+---
+
 # ReplicaSettingsUpdate
 
 Represents the settings for a global table in a Region that will be modified.

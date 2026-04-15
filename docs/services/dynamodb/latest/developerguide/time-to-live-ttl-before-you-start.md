@@ -1,3 +1,7 @@
+---
+title: "Computing time to live (TTL) in DynamoDB"
+---
+
 # Computing time to live (TTL) in DynamoDB
 
 A common way to implement TTL is to set an expiration time for items based on when they

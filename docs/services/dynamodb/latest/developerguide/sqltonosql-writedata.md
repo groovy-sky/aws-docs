@@ -1,3 +1,7 @@
+---
+title: "Differences between a relational (SQL) database and DynamoDB when writing data to a table"
+---
+
 # Differences between a relational (SQL) database and DynamoDB when writing data to a table
 
 Relational database tables contain _rows_ of data. Rows are

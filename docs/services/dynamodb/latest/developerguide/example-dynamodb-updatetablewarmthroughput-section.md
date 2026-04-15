@@ -1,3 +1,7 @@
+---
+title: "Update a DynamoDB table setting with warm throughput using an AWS SDK"
+---
+
 # Update a DynamoDB table setting with warm throughput using an AWS SDK
 
 The following code examples show how to update a table's warm throughput setting.

@@ -1,3 +1,7 @@
+---
+title: "Accelerate DynamoDB reads with DAX using an AWS SDK"
+---
+
 # Accelerate DynamoDB reads with DAX using an AWS SDK
 
 The following code example shows how to:

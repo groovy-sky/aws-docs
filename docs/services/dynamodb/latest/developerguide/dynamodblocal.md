@@ -1,3 +1,7 @@
+---
+title: "Setting up DynamoDB local (downloadable version)"
+---
+
 # Setting up DynamoDB local (downloadable version)
 
 With the downloadable version of Amazon DynamoDB, you can develop and test applications

@@ -1,3 +1,7 @@
+---
+title: "Accessing DAX across AWS accounts"
+---
+
 # Accessing DAX across AWS accounts
 
 Imagine that you have a DynamoDB Accelerator (DAX) cluster running in one AWS account (account

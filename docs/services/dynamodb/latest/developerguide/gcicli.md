@@ -1,3 +1,7 @@
+---
+title: "Working with Global Secondary Indexes in DynamoDB using AWS CLI"
+---
+
 # Working with Global Secondary Indexes in DynamoDB using AWS CLI
 
 You can use the AWS CLI to create an Amazon DynamoDB table with one or more global secondary

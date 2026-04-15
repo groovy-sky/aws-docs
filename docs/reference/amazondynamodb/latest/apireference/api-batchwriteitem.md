@@ -1,3 +1,7 @@
+---
+title: "BatchWriteItem"
+---
+
 # BatchWriteItem
 
 The `BatchWriteItem` operation puts or deletes multiple items in one or

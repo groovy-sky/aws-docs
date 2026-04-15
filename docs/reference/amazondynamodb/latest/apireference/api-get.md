@@ -1,3 +1,7 @@
+---
+title: "Get"
+---
+
 # Get
 
 Specifies an item and related attribute values to retrieve in a

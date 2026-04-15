@@ -1,3 +1,7 @@
+---
+title: "DeleteTable"
+---
+
 # DeleteTable
 
 The `DeleteTable` operation deletes a table and all of its items. After a

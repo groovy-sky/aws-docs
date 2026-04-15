@@ -1,3 +1,7 @@
+---
+title: "Using the EXISTS function with PartiQL for DynamoDB"
+---
+
 # Using the EXISTS function with PartiQL for DynamoDB
 
 You can use EXISTS to perform the same function as `ConditionCheck` does in

@@ -1,3 +1,7 @@
+---
+title: "DecreaseReplicationFactor"
+---
+
 # DecreaseReplicationFactor
 
 Removes one or more nodes from a DAX cluster.

@@ -1,3 +1,7 @@
+---
+title: "How Amazon DynamoDB works with IAM"
+---
+
 # How Amazon DynamoDB works with IAM
 
 Before you use IAM to manage access to DynamoDB, learn what IAM features are

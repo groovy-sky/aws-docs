@@ -1,3 +1,7 @@
+---
+title: "Importing sample data from a CSV file"
+---
+
 # Importing sample data from a CSV file
 
 If you have preexisting sample data in a CSV file, you can import it into NoSQL Workbench. This enables you to quickly populate your model with sample data without having to enter it line by line.

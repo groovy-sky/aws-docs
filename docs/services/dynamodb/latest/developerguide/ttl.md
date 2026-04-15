@@ -1,3 +1,7 @@
+---
+title: "Using time to live (TTL) in DynamoDB"
+---
+
 # Using time to live (TTL) in DynamoDB
 
 Time To Live (TTL) for DynamoDB is a cost-effective method for deleting items that are no

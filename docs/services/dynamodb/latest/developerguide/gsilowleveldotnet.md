@@ -1,3 +1,7 @@
+---
+title: "Working with Global Secondary Indexes: .NET"
+---
+
 # Working with Global Secondary Indexes: .NET
 
 You can use the AWS SDK for .NET low-level API to create an Amazon DynamoDB table with one or more

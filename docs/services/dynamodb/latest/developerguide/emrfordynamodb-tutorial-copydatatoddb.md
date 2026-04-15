@@ -1,3 +1,7 @@
+---
+title: "Step 5: Copy data to DynamoDB"
+---
+
 # Step 5: Copy data to DynamoDB
 
 In this step, you will copy data from the Hive table ( `hive_features`)

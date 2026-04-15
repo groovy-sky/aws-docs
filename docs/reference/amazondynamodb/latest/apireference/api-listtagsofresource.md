@@ -1,3 +1,7 @@
+---
+title: "ListTagsOfResource"
+---
+
 # ListTagsOfResource
 
 List all tags on an Amazon DynamoDB resource. You can call ListTagsOfResource up to 10

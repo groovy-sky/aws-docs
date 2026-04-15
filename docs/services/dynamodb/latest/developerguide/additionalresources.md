@@ -1,3 +1,7 @@
+---
+title: "Amazon DynamoDB learning resources and tools"
+---
+
 # Amazon DynamoDB learning resources and tools
 
 You can use the following additional resources to understand and work with DynamoDB.

@@ -1,3 +1,7 @@
+---
+title: "DynamoDB reserved capacity"
+---
+
 # DynamoDB reserved capacity
 
 For provisioned capacity tables that use the Standard [table class](howitworks-tableclasses.md), DynamoDB offers the ability

@@ -1,3 +1,7 @@
+---
+title: "Query DynamoDB data using PartiQL SELECT statements with an AWS SDK"
+---
+
 # Query DynamoDB data using PartiQL SELECT statements with an AWS SDK
 
 The following code example shows how to query data using PartiQL SELECT statements.

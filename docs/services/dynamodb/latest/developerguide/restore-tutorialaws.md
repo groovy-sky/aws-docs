@@ -1,3 +1,7 @@
+---
+title: "Restoring a backup of a DynamoDB table from AWS Backup"
+---
+
 # Restoring a backup of a DynamoDB table from AWS Backup
 
 This section describes how to restore a backup of a DynamoDB table from AWS Backup.

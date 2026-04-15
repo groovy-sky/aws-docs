@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Running a sample application using DynamoDB Accelerator (DAX)"
+---
+
 # Tutorial: Running a sample application using DynamoDB Accelerator (DAX)
 
 This tutorial demonstrates how to launch an Amazon EC2 instance in your default virtual private

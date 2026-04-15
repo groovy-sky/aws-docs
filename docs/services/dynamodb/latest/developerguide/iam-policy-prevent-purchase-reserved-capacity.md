@@ -1,3 +1,7 @@
+---
+title: "IAM policy to prevent the purchase of DynamoDB reserved capacity"
+---
+
 # IAM policy to prevent the purchase of DynamoDB reserved capacity
 
 With Amazon DynamoDB reserved capacity, you pay a one-time, upfront fee and commit

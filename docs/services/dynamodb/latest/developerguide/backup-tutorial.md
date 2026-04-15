@@ -1,3 +1,7 @@
+---
+title: "Backing up a DynamoDB table"
+---
+
 # Backing up a DynamoDB table
 
 This section describes how to use the Amazon DynamoDB console or the AWS Command Line Interface to back up a table.

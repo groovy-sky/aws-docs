@@ -1,3 +1,7 @@
+---
+title: "ListBackups"
+---
+
 # ListBackups
 
 List DynamoDB backups that are associated with an AWS account and

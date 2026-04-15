@@ -1,3 +1,7 @@
+---
+title: "Using the MISSING function with PartiQL for DynamoDB"
+---
+
 # Using the MISSING function with PartiQL for DynamoDB
 
 Returns `TRUE` if the item does not contain the attribute specified. Only equality and inequality operators can be used with this function.

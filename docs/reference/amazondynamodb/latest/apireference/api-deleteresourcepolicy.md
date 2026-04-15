@@ -1,3 +1,7 @@
+---
+title: "DeleteResourcePolicy"
+---
+
 # DeleteResourcePolicy
 
 Deletes the resource-based policy attached to the resource, which can be a table or

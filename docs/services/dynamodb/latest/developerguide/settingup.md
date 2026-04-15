@@ -1,3 +1,7 @@
+---
+title: "Setting up DynamoDB"
+---
+
 # Setting up DynamoDB
 
 In addition to the Amazon DynamoDB web service, AWS provides a downloadable version of DynamoDB

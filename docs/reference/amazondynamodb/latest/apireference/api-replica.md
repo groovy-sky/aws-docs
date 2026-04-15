@@ -1,3 +1,7 @@
+---
+title: "Replica"
+---
+
 # Replica
 
 Represents the properties of a replica.

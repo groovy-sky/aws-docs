@@ -1,3 +1,7 @@
+---
+title: "Using the SIZE function with PartiQL for amazon DynamoDB"
+---
+
 # Using the SIZE function with PartiQL for amazon DynamoDB
 
 Returns a number representing an attribute's size in bytes. The following are valid data types

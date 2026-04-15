@@ -1,3 +1,7 @@
+---
+title: "AutoScalingSettingsUpdate"
+---
+
 # AutoScalingSettingsUpdate
 
 Represents the auto scaling settings to be modified for a global table or global

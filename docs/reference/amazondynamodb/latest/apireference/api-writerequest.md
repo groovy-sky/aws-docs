@@ -1,3 +1,7 @@
+---
+title: "WriteRequest"
+---
+
 # WriteRequest
 
 Represents an operation to perform - either `DeleteItem` or

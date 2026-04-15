@@ -1,3 +1,7 @@
+---
+title: "UpdateGlobalTableSettings"
+---
+
 # UpdateGlobalTableSettings
 
 Updates settings for a global table.

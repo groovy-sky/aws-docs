@@ -1,3 +1,7 @@
+---
+title: "DescribeContinuousBackups"
+---
+
 # DescribeContinuousBackups
 
 Checks the status of continuous backups and point in time recovery on the specified

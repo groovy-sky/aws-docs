@@ -1,3 +1,7 @@
+---
+title: "Best practices and requirements for managing global tables"
+---
+
 # Best practices and requirements for managing global tables
 
 ###### Important

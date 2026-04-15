@@ -1,3 +1,7 @@
+---
+title: "Stream"
+---
+
 # Stream
 
 Represents all of the data describing a particular stream.

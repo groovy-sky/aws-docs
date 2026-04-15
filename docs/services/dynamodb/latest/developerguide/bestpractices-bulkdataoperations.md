@@ -1,3 +1,7 @@
+---
+title: "Best practices for using bulk data operations in DynamoDB"
+---
+
 # Best practices for using bulk data operations in DynamoDB
 
 DynamoDB supports batch operations such as `BatchWriteItem` using which you can

@@ -1,3 +1,7 @@
+---
+title: "SourceTableFeatureDetails"
+---
+
 # SourceTableFeatureDetails
 
 Contains the details of the features enabled on the table when the backup was created.

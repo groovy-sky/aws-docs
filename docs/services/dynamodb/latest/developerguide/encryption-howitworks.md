@@ -1,3 +1,7 @@
+---
+title: "DynamoDB encryption at rest: How it works"
+---
+
 # DynamoDB encryption at rest: How it works
 
 Amazon DynamoDB encryption at rest encrypts your data using 256-bit Advanced Encryption Standard

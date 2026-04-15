@@ -1,3 +1,7 @@
+---
+title: "Evaluate your provisioned capacity for right-sized provisioning in your DynamoDB table"
+---
+
 # Evaluate your provisioned capacity for right-sized provisioning in your DynamoDB table
 
 This section provides an overview of how to evaluate if you have right-sized provisioning on

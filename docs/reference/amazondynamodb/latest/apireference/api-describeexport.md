@@ -1,3 +1,7 @@
+---
+title: "DescribeExport"
+---
+
 # DescribeExport
 
 Describes an existing table export.

@@ -1,3 +1,7 @@
+---
+title: "DescribeImport"
+---
+
 # DescribeImport
 
 Represents the properties of the import.

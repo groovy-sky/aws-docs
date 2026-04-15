@@ -1,3 +1,7 @@
+---
+title: "UpdateTableReplicaAutoScaling"
+---
+
 # UpdateTableReplicaAutoScaling
 
 Updates auto scaling settings on your global tables at once.

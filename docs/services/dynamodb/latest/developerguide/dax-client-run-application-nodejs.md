@@ -1,3 +1,7 @@
+---
+title: "Node.js and DAX"
+---
+
 # Node.js and DAX
 
 Follow these steps to run the Node.js sample application on your Amazon EC2

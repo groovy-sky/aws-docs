@@ -1,3 +1,7 @@
+---
+title: "Creating CloudWatch alarms in DynamoDB"
+---
+
 # Creating CloudWatch alarms in DynamoDB
 
 A [CloudWatch alarm](../../../amazoncloudwatch/latest/monitoring/alarmthatsendsemail.md) watches a single metric over a specified time period, and performs one or

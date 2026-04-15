@@ -1,3 +1,7 @@
+---
+title: "Expected (legacy)"
+---
+
 # Expected (legacy)
 
 ###### Note

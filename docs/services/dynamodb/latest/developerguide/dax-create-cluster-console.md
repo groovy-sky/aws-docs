@@ -1,3 +1,7 @@
+---
+title: "Creating a DAX cluster using the AWS Management Console"
+---
+
 # Creating a DAX cluster using the AWS Management Console
 
 This section describes how to create an Amazon DynamoDB Accelerator (DAX) cluster using the

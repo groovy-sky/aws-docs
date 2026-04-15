@@ -1,3 +1,7 @@
+---
+title: "BatchStatementError"
+---
+
 # BatchStatementError
 
 An error associated with a statement in a PartiQL batch that was run.

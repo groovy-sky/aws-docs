@@ -1,3 +1,7 @@
+---
+title: "Java code examples"
+---
+
 # Java code examples
 
 ###### Topics

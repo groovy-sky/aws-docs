@@ -1,3 +1,7 @@
+---
+title: "Managing DAX clusters"
+---
+
 # Managing DAX clusters
 
 This section addresses some of the common management tasks for Amazon DynamoDB Accelerator

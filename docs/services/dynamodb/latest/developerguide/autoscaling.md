@@ -1,3 +1,7 @@
+---
+title: "Managing throughput capacity automatically with DynamoDB auto scaling"
+---
+
 # Managing throughput capacity automatically with DynamoDB auto scaling
 
 Many database workloads are cyclical in nature, while others are difficult to predict in

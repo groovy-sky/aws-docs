@@ -1,3 +1,7 @@
+---
+title: "Count expression operators in DynamoDB with an AWS SDK"
+---
+
 # Count expression operators in DynamoDB with an AWS SDK
 
 The following code examples show how to count expression operators in DynamoDB.

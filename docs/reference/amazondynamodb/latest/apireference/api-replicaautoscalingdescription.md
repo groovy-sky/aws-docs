@@ -1,3 +1,7 @@
+---
+title: "ReplicaAutoScalingDescription"
+---
+
 # ReplicaAutoScalingDescription
 
 Represents the auto scaling settings of the replica.

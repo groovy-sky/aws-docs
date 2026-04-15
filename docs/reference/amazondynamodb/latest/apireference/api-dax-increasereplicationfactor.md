@@ -1,3 +1,7 @@
+---
+title: "IncreaseReplicationFactor"
+---
+
 # IncreaseReplicationFactor
 
 Adds one or more nodes to a DAX cluster.

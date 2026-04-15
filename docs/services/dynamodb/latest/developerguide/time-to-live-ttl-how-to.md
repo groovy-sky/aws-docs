@@ -1,3 +1,7 @@
+---
+title: "Enable time to live (TTL) in DynamoDB"
+---
+
 # Enable time to live (TTL) in DynamoDB
 
 ###### Note

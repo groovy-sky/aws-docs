@@ -1,3 +1,7 @@
+---
+title: "ProvisionedThroughput"
+---
+
 # ProvisionedThroughput
 
 Represents the provisioned throughput settings for the specified global secondary

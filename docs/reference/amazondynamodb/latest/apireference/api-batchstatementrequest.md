@@ -1,3 +1,7 @@
+---
+title: "BatchStatementRequest"
+---
+
 # BatchStatementRequest
 
 A PartiQL batch statement request.

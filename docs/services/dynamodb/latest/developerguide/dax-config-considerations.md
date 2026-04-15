@@ -1,3 +1,7 @@
+---
+title: "Configuring your DAX cluster"
+---
+
 # Configuring your DAX cluster
 
 The DAX cluster is a managed cluster, but you can adjust its configurations to fit your application requirements. Because of its close integration with DynamoDB API operations, you should consider the following aspects when integrating your application with DAX.

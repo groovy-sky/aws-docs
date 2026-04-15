@@ -1,3 +1,7 @@
+---
+title: "Shard"
+---
+
 # Shard
 
 A uniquely identified group of stream records within a stream.

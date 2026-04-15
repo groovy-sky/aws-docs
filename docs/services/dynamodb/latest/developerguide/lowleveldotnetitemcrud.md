@@ -1,3 +1,7 @@
+---
+title: "Working with items: .NET"
+---
+
 # Working with items: .NET
 
 You can use the AWS SDK for .NET low-level API to perform typical create, read, update, and delete

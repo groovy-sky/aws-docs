@@ -1,3 +1,7 @@
+---
+title: "DynamoDB API reference"
+---
+
 # DynamoDB API reference
 
 The [Amazon DynamoDB API reference](../../../../reference/amazondynamodb/latest/apireference/welcome.md) contains a complete list of operations supported by:

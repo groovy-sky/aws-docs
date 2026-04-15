@@ -1,3 +1,7 @@
+---
+title: "Copying a backup of a DynamoDB table with AWS Backup"
+---
+
 # Copying a backup of a DynamoDB table with AWS Backup
 
 You can make a copy of a current backup. You can copy backups to multiple AWS accounts or AWS Regions on demand or automatically as part of a scheduled backup plan.

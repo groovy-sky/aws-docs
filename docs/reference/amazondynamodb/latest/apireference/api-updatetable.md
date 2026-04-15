@@ -1,3 +1,7 @@
+---
+title: "UpdateTable"
+---
+
 # UpdateTable
 
 Modifies the provisioned throughput settings, global secondary indexes, or DynamoDB

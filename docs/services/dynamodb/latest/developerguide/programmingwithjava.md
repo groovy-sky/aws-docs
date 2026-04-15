@@ -1,3 +1,7 @@
+---
+title: "Programming DynamoDB with the AWS SDK for Java 2.x"
+---
+
 # Programming DynamoDB with the AWS SDK for Java 2.x
 
 This

@@ -1,3 +1,7 @@
+---
+title: "DescribeParameters"
+---
+
 # DescribeParameters
 
 Returns the detailed parameter list for a particular parameter group.

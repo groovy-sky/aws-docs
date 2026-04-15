@@ -1,3 +1,7 @@
+---
+title: "IncrementalExportSpecification"
+---
+
 # IncrementalExportSpecification
 
 Optional object containing the parameters specific to an incremental export.

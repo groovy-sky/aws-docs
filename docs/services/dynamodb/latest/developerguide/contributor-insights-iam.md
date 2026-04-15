@@ -1,3 +1,7 @@
+---
+title: "Using IAM with CloudWatch contributor insights for DynamoDB"
+---
+
 # Using IAM with CloudWatch contributor insights for DynamoDB
 
 The first time that you enable Amazon CloudWatch Contributor Insights for Amazon DynamoDB, DynamoDB

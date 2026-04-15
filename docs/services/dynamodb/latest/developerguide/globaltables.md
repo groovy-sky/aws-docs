@@ -1,3 +1,7 @@
+---
+title: "Global tables - multi-active, multi-Region replication"
+---
+
 # Global tables - multi-active, multi-Region replication
 
 _Amazon DynamoDB global tables_ is a fully managed,

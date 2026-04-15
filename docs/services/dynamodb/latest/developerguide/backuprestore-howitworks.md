@@ -1,3 +1,7 @@
+---
+title: "Using on-demand DynamoDB backup and restore"
+---
+
 # Using on-demand DynamoDB backup and restore
 
 Amazon DynamoDB supports stand-alone on-demand backup and restore features. Those features are

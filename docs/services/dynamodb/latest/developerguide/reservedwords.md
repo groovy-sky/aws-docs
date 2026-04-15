@@ -1,3 +1,7 @@
+---
+title: "Reserved words in DynamoDB"
+---
+
 # Reserved words in DynamoDB
 
 The following keywords are reserved for use by DynamoDB. Don't use any of these words as

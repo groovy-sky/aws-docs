@@ -1,3 +1,7 @@
+---
+title: "Create a DynamoDB table with warm throughput setting using an AWS SDK"
+---
+
 # Create a DynamoDB table with warm throughput setting using an AWS SDK
 
 The following code examples show how to create a table with warm throughput enabled.

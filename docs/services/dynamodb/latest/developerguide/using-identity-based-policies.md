@@ -1,3 +1,7 @@
+---
+title: "Using identity-based policies with Amazon DynamoDB"
+---
+
 # Using identity-based policies with Amazon DynamoDB
 
 This topic covers using identity-based AWS Identity and Access Management (IAM) policies with Amazon DynamoDB and

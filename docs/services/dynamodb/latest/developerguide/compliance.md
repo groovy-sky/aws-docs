@@ -1,3 +1,7 @@
+---
+title: "Compliance validation by industry for DynamoDB"
+---
+
 # Compliance validation by industry for DynamoDB
 
 To learn whether an AWS service is within the scope of specific compliance programs, see

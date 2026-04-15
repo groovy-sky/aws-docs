@@ -1,3 +1,7 @@
+---
+title: "CloudWatch contributor insights for DynamoDB: How it works"
+---
+
 # CloudWatch contributor insights for DynamoDB: How it works
 
 Amazon DynamoDB integrates with [CloudWatch Contributor\

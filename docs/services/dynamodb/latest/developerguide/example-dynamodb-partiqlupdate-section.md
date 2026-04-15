@@ -1,3 +1,7 @@
+---
+title: "Update DynamoDB data using PartiQL UPDATE statements with an AWS SDK"
+---
+
 # Update DynamoDB data using PartiQL UPDATE statements with an AWS SDK
 
 The following code example shows how to update data using PartiQL UPDATE statements.

@@ -1,3 +1,7 @@
+---
+title: "KeySchemaElement"
+---
+
 # KeySchemaElement
 
 Represents _a single element_ of a key schema. A key schema

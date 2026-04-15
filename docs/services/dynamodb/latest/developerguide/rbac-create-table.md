@@ -1,3 +1,7 @@
+---
+title: "Create a table with a resource-based policy"
+---
+
 # Create a table with a resource-based policy
 
 You can add a resource-based policy while you create a table by using the DynamoDB console,

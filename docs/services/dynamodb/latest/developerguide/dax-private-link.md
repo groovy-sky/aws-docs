@@ -1,3 +1,7 @@
+---
+title: "Using AWS PrivateLink for DynamoDB Accelerator (DAX)"
+---
+
 # Using AWS PrivateLink for DynamoDB Accelerator (DAX)
 
 AWS PrivateLink for DynamoDB Accelerator (DAX) enables you to securely access DAX management APIs such

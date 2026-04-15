@@ -1,3 +1,7 @@
+---
+title: "AWS managed policies for Amazon DynamoDB"
+---
+
 # AWS managed policies for Amazon DynamoDB
 
 DynamoDB uses AWS managed policies to define a set of permissions the service needs to perform specific actions.

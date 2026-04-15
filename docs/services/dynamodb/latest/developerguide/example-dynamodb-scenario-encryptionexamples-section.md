@@ -1,3 +1,7 @@
+---
+title: "Work with DynamoDB table encryption using AWS Command Line Interface v2"
+---
+
 # Work with DynamoDB table encryption using AWS Command Line Interface v2
 
 The following code example shows how to manage encryption options for DynamoDB tables.

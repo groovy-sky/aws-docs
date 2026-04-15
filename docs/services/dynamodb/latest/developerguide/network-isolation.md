@@ -1,3 +1,7 @@
+---
+title: "Infrastructure security in Amazon DynamoDB"
+---
+
 # Infrastructure security in Amazon DynamoDB
 
 As a managed service, Amazon DynamoDB is protected by the AWS global network security

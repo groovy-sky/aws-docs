@@ -1,3 +1,7 @@
+---
+title: "Best practices for understanding your AWS billing and usage reports in DynamoDB"
+---
+
 # Best practices for understanding your AWS billing and usage reports in DynamoDB
 
 This document explains the `UsageType` billing codes for charges related to DynamoDB.

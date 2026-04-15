@@ -1,3 +1,7 @@
+---
+title: "Using the AWS CLI to manage DynamoDB auto scaling"
+---
+
 # Using the AWS CLI to manage DynamoDB auto scaling
 
 Instead of using the AWS Management Console, you can use the AWS Command Line Interface (AWS CLI) to manage Amazon DynamoDB auto

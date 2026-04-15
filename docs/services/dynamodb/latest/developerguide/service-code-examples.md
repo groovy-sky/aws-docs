@@ -1,3 +1,7 @@
+---
+title: "Code examples for DynamoDB using AWS SDKs"
+---
+
 # Code examples for DynamoDB using AWS SDKs
 
 The following code examples show how to use DynamoDB with an AWS software development kit (SDK).

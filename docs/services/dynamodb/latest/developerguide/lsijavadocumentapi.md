@@ -1,3 +1,7 @@
+---
+title: "Working with Local Secondary Indexes: Java"
+---
+
 # Working with Local Secondary Indexes: Java
 
 You can use the AWS SDK for Java Document API to create an Amazon DynamoDB table with one or more

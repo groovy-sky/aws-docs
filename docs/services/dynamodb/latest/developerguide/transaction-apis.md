@@ -1,3 +1,7 @@
+---
+title: "Amazon DynamoDB Transactions: How it works"
+---
+
 # Amazon DynamoDB Transactions: How it works
 
 With Amazon DynamoDB transactions, you can group multiple actions together and submit them as a

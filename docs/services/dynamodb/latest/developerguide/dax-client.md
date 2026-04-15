@@ -1,3 +1,7 @@
+---
+title: "Developing with the DynamoDB Accelerator (DAX) client"
+---
+
 # Developing with the DynamoDB Accelerator (DAX) client
 
 To use DAX from an application, you use the DAX client for your programming language.

@@ -1,3 +1,7 @@
+---
+title: "Global tables: How it works"
+---
+
 # Global tables: How it works
 
 ###### Important

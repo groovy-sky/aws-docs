@@ -1,3 +1,7 @@
+---
+title: "ExportDescription"
+---
+
 # ExportDescription
 
 Represents the properties of the exported table.

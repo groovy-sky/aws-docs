@@ -1,3 +1,7 @@
+---
+title: "Integrating DynamoDB with Amazon S3"
+---
+
 # Integrating DynamoDB with Amazon S3
 
 Amazon DynamoDB import and export capabilities provide a simple and efficient way to move data between

@@ -1,3 +1,7 @@
+---
+title: "Perform set operations in DynamoDB with an AWS SDK"
+---
+
 # Perform set operations in DynamoDB with an AWS SDK
 
 The following code examples show how to perform set operations in DynamoDB.

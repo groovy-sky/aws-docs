@@ -1,3 +1,7 @@
+---
+title: "ScanFilter (legacy)"
+---
+
 # ScanFilter (legacy)
 
 ###### Note

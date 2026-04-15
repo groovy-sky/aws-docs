@@ -1,3 +1,7 @@
+---
+title: "Building complex operations"
+---
+
 # Building complex operations
 
 The operation builder in NoSQL Workbench for Amazon DynamoDB provides a visual interface

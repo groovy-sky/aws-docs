@@ -1,3 +1,7 @@
+---
+title: "UpdateParameterGroup"
+---
+
 # UpdateParameterGroup
 
 Modifies the parameters of a parameter group. You can modify up to 20 parameters in

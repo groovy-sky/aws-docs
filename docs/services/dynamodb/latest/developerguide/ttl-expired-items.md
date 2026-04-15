@@ -1,3 +1,7 @@
+---
+title: "Working with expired items and time to live (TTL)"
+---
+
 # Working with expired items and time to live (TTL)
 
 Expired items that are pending deletion can be filtered from read and write operations.

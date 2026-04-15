@@ -1,3 +1,7 @@
+---
+title: "Write modes with DynamoDB global tables"
+---
+
 # Write modes with DynamoDB global tables
 
 Global tables are always active-active at the table level. However, especially for MREC

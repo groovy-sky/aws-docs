@@ -1,3 +1,7 @@
+---
+title: "Tutorial #1: Using filters to process all events with Amazon DynamoDB and AWS Lambda using the AWS CLI"
+---
+
 # Tutorial \#1: Using filters to process all events with Amazon DynamoDB and AWS Lambda using the AWS CLI
 
 In this tutorial, you will create an AWS Lambda trigger to process a stream from a

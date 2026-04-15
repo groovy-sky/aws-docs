@@ -1,3 +1,7 @@
+---
+title: "Backup and restore for DynamoDB"
+---
+
 # Backup and restore for DynamoDB
 
 DynamoDB offers on-demand backups and point-in-time recovery (PITR) backups to help protect

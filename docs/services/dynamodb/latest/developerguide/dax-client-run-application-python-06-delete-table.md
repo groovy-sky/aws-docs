@@ -1,3 +1,7 @@
+---
+title: "06-delete-table.py"
+---
+
 # 06-delete-table.py
 
 The `06-delete-table.py` program deletes

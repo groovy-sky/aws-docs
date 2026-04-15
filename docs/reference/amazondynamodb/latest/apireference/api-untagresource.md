@@ -1,3 +1,7 @@
+---
+title: "UntagResource"
+---
+
 # UntagResource
 
 Removes the association of tags from an Amazon DynamoDB resource. You can call

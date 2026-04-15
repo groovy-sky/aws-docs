@@ -1,3 +1,7 @@
+---
+title: "Deploying a cluster"
+---
+
 # Deploying a cluster
 
 Creating a new DAX cluster requires configurations beyond those needed for DynamoDB. These configurations are particularly for networking because DAX is based on [Amazon VPC](../../../vpc/latest/userguide/what-is-amazon-vpc.md). This gives you complete control over your virtual networking environment, including resource placement, connectivity, and security. This section presents the best practices for the settings needed during cluster creation.

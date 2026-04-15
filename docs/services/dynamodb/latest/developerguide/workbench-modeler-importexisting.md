@@ -1,3 +1,7 @@
+---
+title: "Importing an existing data model"
+---
+
 # Importing an existing data model
 
 You can use NoSQL Workbench for Amazon DynamoDB to build a data model by importing and

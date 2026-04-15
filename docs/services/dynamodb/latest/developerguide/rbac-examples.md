@@ -1,3 +1,7 @@
+---
+title: "DynamoDB resource-based policy examples"
+---
+
 # DynamoDB resource-based policy examples
 
 When you specify an ARN in the `Resource` field of a resource-based policy, the

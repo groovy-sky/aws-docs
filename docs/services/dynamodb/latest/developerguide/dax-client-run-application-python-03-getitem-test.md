@@ -1,3 +1,7 @@
+---
+title: "03-getitem-test.py"
+---
+
 # 03-getitem-test.py
 
 The `03-getitem-test.py` program performs `GetItem`

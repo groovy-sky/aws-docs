@@ -1,3 +1,7 @@
+---
+title: "TableAutoScalingDescription"
+---
+
 # TableAutoScalingDescription
 
 Represents the auto scaling configuration for a global table.

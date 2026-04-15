@@ -1,3 +1,7 @@
+---
+title: "UpdateItem"
+---
+
 # UpdateItem
 
 Edits an existing item's attributes, or adds a new item to the table if it does not

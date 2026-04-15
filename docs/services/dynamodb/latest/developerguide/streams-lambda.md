@@ -1,3 +1,7 @@
+---
+title: "DynamoDB Streams and AWS Lambda triggers"
+---
+
 # DynamoDB Streams and AWS Lambda triggers
 
 Amazon DynamoDB is integrated with AWS Lambda so that you can create

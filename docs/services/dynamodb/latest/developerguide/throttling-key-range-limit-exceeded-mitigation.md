@@ -1,3 +1,7 @@
+---
+title: "1- Key range throughput exceeded (hot partitions)"
+---
+
 # 1- Key range throughput exceeded (hot partitions)
 
 Amazon DynamoDB enforces specific throughput limits at the partition level for both table and

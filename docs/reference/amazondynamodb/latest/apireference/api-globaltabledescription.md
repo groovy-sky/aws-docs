@@ -1,3 +1,7 @@
+---
+title: "GlobalTableDescription"
+---
+
 # GlobalTableDescription
 
 Contains details about the global table.

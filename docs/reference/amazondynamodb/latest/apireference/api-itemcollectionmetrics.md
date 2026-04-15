@@ -1,3 +1,7 @@
+---
+title: "ItemCollectionMetrics"
+---
+
 # ItemCollectionMetrics
 
 Information about item collections, if any, that were affected by the operation.

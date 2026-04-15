@@ -1,3 +1,7 @@
+---
+title: "4- On-demand maximum throughput exceeded"
+---
+
 # 4- On-demand maximum throughput exceeded
 
 When you configure an [on-demand](on-demand-capacity-mode.md) table or

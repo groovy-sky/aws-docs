@@ -1,3 +1,7 @@
+---
+title: "AWS Identity and Access Management (IAM) and DynamoDB"
+---
+
 # AWS Identity and Access Management (IAM) and DynamoDB
 
 AWS Identity and Access Management is an AWS service that helps an administrator securely control access to AWS resources. Administrators control

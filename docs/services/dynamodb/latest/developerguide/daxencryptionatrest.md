@@ -1,3 +1,7 @@
+---
+title: "DAX encryption at rest"
+---
+
 # DAX encryption at rest
 
 Amazon DynamoDB Accelerator (DAX) encryption at rest provides an additional layer of data

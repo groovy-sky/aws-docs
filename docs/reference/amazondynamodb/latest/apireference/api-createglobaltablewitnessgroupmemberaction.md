@@ -1,3 +1,7 @@
+---
+title: "CreateGlobalTableWitnessGroupMemberAction"
+---
+
 # CreateGlobalTableWitnessGroupMemberAction
 
 Specifies the action to add a new witness Region to a MRSC global table. A MRSC global

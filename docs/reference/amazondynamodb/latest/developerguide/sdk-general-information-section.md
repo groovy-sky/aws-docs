@@ -1,3 +1,7 @@
+---
+title: "Using DynamoDB with an AWS SDK"
+---
+
 # Using DynamoDB with an AWS SDK
 
 AWS software development kits (SDKs) are available for many popular programming languages. Each SDK provides an API, code examples, and documentation that

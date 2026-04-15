@@ -1,3 +1,7 @@
+---
+title: "DescribeParameterGroups"
+---
+
 # DescribeParameterGroups
 
 Returns a list of parameter group descriptions. If a parameter group name is

@@ -1,3 +1,7 @@
+---
+title: "DAX access control"
+---
+
 # DAX access control
 
 DynamoDB Accelerator (DAX) is designed to work together with DynamoDB, to seamlessly add a caching

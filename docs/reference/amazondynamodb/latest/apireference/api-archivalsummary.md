@@ -1,3 +1,7 @@
+---
+title: "ArchivalSummary"
+---
+
 # ArchivalSummary
 
 Contains details of a table archival operation.

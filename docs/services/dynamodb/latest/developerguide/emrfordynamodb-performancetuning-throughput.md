@@ -1,3 +1,7 @@
+---
+title: "DynamoDB provisioned throughput"
+---
+
 # DynamoDB provisioned throughput
 
 When you issue HiveQL statements against the external DynamoDB table, the

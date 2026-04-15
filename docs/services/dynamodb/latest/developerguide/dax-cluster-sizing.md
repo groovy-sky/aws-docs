@@ -1,3 +1,7 @@
+---
+title: "Sizing your DAX cluster"
+---
+
 # Sizing your DAX cluster
 
 A DAX cluster's total capacity and availability depends on node type and count. More nodes in the cluster increase its read capacity, but not the write capacity. Larger node types (up to r5.8xlarge) can handle more writes, but too few nodes can impact availability when a node failure occurs. For more information about sizing your DAX cluster, see the [DAX cluster sizing guide](dax-sizing-guide.md).

@@ -1,3 +1,7 @@
+---
+title: "Using the DynamoDB Well-Architected Lens to optimize your DynamoDB workload"
+---
+
 # Using the DynamoDB Well-Architected Lens to optimize your DynamoDB workload
 
 This section describes the Amazon DynamoDB Well-Architected Lens, a collection of design

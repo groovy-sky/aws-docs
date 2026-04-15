@@ -1,3 +1,7 @@
+---
+title: "Understanding Global Secondary Index (GSI) write throttling and back pressure in DynamoDB"
+---
+
 # Understanding Global Secondary Index (GSI) write throttling and back pressure in DynamoDB
 
 GSI back-pressure throttling represents one of the most complex throttling scenarios

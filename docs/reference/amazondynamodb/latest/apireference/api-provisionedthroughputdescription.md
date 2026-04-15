@@ -1,3 +1,7 @@
+---
+title: "ProvisionedThroughputDescription"
+---
+
 # ProvisionedThroughputDescription
 
 Represents the provisioned throughput settings for the table, consisting of read and

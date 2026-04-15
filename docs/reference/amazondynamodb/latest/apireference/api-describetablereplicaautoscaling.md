@@ -1,3 +1,7 @@
+---
+title: "DescribeTableReplicaAutoScaling"
+---
+
 # DescribeTableReplicaAutoScaling
 
 Describes auto scaling settings across replicas of the global table at once.

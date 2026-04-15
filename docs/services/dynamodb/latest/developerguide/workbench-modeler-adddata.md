@@ -1,3 +1,7 @@
+---
+title: "Adding sample data to a data model"
+---
+
 # Adding sample data to a data model
 
 ###### To auto-generate sample data

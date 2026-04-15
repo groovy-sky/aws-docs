@@ -1,3 +1,7 @@
+---
+title: "DescribeTable"
+---
+
 # DescribeTable
 
 Returns information about the table, including the current status of the table, when

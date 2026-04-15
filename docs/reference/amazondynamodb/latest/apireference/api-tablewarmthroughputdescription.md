@@ -1,3 +1,7 @@
+---
+title: "TableWarmThroughputDescription"
+---
+
 # TableWarmThroughputDescription
 
 Represents the warm throughput value (in read units per second and write units per

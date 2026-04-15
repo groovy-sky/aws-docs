@@ -1,3 +1,7 @@
+---
+title: "Serverless examples for DynamoDB"
+---
+
 # Serverless examples for DynamoDB
 
 The following code examples show how to use DynamoDB with AWS SDKs.

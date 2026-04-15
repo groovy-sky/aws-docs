@@ -1,3 +1,7 @@
+---
+title: "Tutorials: Creating global tables"
+---
+
 # Tutorials: Creating global tables
 
 This section provides step-by-step instructions for creating DynamoDB global tables

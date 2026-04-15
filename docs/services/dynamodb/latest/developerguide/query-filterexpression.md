@@ -1,3 +1,7 @@
+---
+title: "Filter expressions for the Query operation in DynamoDB"
+---
+
 # Filter expressions for the Query operation in DynamoDB
 
 If you need to further refine the `Query` results, you can optionally

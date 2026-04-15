@@ -1,3 +1,7 @@
+---
+title: "3- Account limits exceeded"
+---
+
 # 3- Account limits exceeded
 
 On-demand tables do not have provisioned capacity levels to manage, but DynamoDB enforces

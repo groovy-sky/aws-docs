@@ -1,3 +1,7 @@
+---
+title: "Modifying an existing application to use DAX"
+---
+
 # Modifying an existing application to use DAX
 
 If you already have a Java application that uses Amazon DynamoDB, you can modify it so that

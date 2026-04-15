@@ -1,3 +1,7 @@
+---
+title: "Considerations when choosing a table class in DynamoDB"
+---
+
 # Considerations when choosing a table class in DynamoDB
 
 DynamoDB offers two table classes designed to help you optimize for cost. The DynamoDB

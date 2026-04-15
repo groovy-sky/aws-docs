@@ -1,3 +1,7 @@
+---
+title: "Using the AWS Management Console with DynamoDB auto scaling"
+---
+
 # Using the AWS Management Console with DynamoDB auto scaling
 
 When you use the AWS Management Console to create a new table, Amazon DynamoDB auto scaling is enabled for

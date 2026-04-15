@@ -1,3 +1,7 @@
+---
+title: "PartiQL - a SQL-compatible query language for Amazon DynamoDB"
+---
+
 # PartiQL - a SQL-compatible query language for Amazon DynamoDB
 
 Amazon DynamoDB supports [PartiQL](https://partiql.org/), a SQL-compatible

@@ -1,3 +1,7 @@
+---
+title: "Best practices for global tables"
+---
+
 # Best practices for global tables
 
 The following sections describe best practices for deploying and using global

@@ -1,3 +1,7 @@
+---
+title: "Evaluate your DynamoDB table's capacity mode"
+---
+
 # Evaluate your DynamoDB table's capacity mode
 
 This section provides an overview of how to select the appropriate capacity mode for your

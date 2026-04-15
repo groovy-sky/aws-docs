@@ -1,3 +1,7 @@
+---
+title: "03-getitem-test.js"
+---
+
 # 03-getitem-test.js
 
 The `03-getitem-test.js` program performs `GetItem`

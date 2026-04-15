@@ -1,3 +1,7 @@
+---
+title: ".NET and DAX"
+---
+
 # .NET and DAX
 
 Follow these steps to run the .NET sample on your Amazon EC2 instance.

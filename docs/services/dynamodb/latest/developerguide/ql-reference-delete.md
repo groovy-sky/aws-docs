@@ -1,3 +1,7 @@
+---
+title: "PartiQL delete statements for DynamoDB"
+---
+
 # PartiQL delete statements for DynamoDB
 
 Use the `DELETE` statement to delete an existing item from your

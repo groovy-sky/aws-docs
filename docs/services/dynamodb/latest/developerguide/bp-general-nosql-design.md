@@ -1,3 +1,7 @@
+---
+title: "NoSQL design for DynamoDB"
+---
+
 # NoSQL design for DynamoDB
 
 NoSQL database systems like Amazon DynamoDB use alternative models for data management, such as

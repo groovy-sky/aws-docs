@@ -1,3 +1,7 @@
+---
+title: "Work with advanced DynamoDB Global Secondary Index scenarios using AWS Command Line Interface v2"
+---
+
 # Work with advanced DynamoDB Global Secondary Index scenarios using AWS Command Line Interface v2
 
 The following code example shows how to work with advanced Global Secondary Index configurations.

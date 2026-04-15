@@ -1,3 +1,7 @@
+---
+title: "Using data compression"
+---
+
 # Using data compression
 
 When you use Hive to copy data among different data sources, you can request

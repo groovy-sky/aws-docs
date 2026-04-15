@@ -1,3 +1,7 @@
+---
+title: "CancellationReason"
+---
+
 # CancellationReason
 
 An ordered list of errors for each item in the request which caused the transaction to

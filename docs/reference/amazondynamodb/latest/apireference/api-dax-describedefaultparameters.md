@@ -1,3 +1,7 @@
+---
+title: "DescribeDefaultParameters"
+---
+
 # DescribeDefaultParameters
 
 Returns the default system parameter information for the DAX caching

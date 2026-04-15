@@ -1,3 +1,7 @@
+---
+title: "DeleteReplicationGroupMemberAction"
+---
+
 # DeleteReplicationGroupMemberAction
 
 Represents a replica to be deleted.

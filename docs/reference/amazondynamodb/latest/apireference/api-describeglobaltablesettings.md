@@ -1,3 +1,7 @@
+---
+title: "DescribeGlobalTableSettings"
+---
+
 # DescribeGlobalTableSettings
 
 Describes Region-specific settings for a global table.

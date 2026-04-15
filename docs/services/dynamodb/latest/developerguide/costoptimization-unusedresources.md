@@ -1,3 +1,7 @@
+---
+title: "Identify your unused resources in DynamoDB"
+---
+
 # Identify your unused resources in DynamoDB
 
 This section provides an overview of how to evaluate your unused resources regularly. As

@@ -1,3 +1,7 @@
+---
+title: "Restoring a DynamoDB table to a point in time"
+---
+
 # Restoring a DynamoDB table to a point in time
 
 Amazon DynamoDB point-in-time recovery (PITR) provides continuous backups of your DynamoDB table

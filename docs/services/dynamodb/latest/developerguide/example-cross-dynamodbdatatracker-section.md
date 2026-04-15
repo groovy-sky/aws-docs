@@ -1,3 +1,7 @@
+---
+title: "Create a web application to track DynamoDB data"
+---
+
 # Create a web application to track DynamoDB data
 
 The following code examples show how to create a web application that tracks work items in an Amazon DynamoDB table and uses Amazon Simple Email Service (Amazon SES) to send reports.

@@ -1,3 +1,7 @@
+---
+title: "Considerations when switching capacity modes in DynamoDB"
+---
+
 # Considerations when switching capacity modes in DynamoDB
 
 When you create a DynamoDB table, you must select either on-demand or provisioned capacity mode.

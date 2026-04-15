@@ -1,3 +1,7 @@
+---
+title: "Viewing all tables in a data model using aggregate view"
+---
+
 # Viewing all tables in a data model using aggregate view
 
 The aggregate view in NoSQL Workbench for Amazon DynamoDB allows you to visualize all the tables and indexes in a data model. For each table, the following information appears:

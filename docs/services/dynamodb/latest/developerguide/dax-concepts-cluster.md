@@ -1,3 +1,7 @@
+---
+title: "DAX cluster components"
+---
+
 # DAX cluster components
 
 An Amazon DynamoDB Accelerator (DAX) cluster consists of AWS infrastructure components. This

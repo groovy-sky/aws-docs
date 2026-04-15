@@ -1,3 +1,7 @@
+---
+title: "Take advantage of sparse indexes"
+---
+
 # Take advantage of sparse indexes
 
 For any item in a table, DynamoDB writes a corresponding index entry **only if the index key attributes are present in the item**. For a global secondary index, this

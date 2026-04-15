@@ -1,3 +1,7 @@
+---
+title: "Cross-account integration considerations with CMK"
+---
+
 # Cross-account integration considerations with CMK
 
 When you attempt to integrate from DynamoDB to Amazon Redshift, the initial action is launched from Amazon Redshift.

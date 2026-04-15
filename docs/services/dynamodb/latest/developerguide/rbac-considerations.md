@@ -1,3 +1,7 @@
+---
+title: "DynamoDB resource-based policy considerations"
+---
+
 # DynamoDB resource-based policy considerations
 
 When you define resource-based policies for your DynamoDB resources, the following

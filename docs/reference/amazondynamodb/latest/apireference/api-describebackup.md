@@ -1,3 +1,7 @@
+---
+title: "DescribeBackup"
+---
+
 # DescribeBackup
 
 Describes an existing backup of a table.

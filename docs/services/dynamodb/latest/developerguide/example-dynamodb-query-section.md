@@ -1,3 +1,7 @@
+---
+title: "Use Query with an AWS SDK or CLI"
+---
+
 # Use `Query` with an AWS SDK or CLI
 
 The following code examples show how to use `Query`.

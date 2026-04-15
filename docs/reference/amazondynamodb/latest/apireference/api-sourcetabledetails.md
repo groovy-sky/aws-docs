@@ -1,3 +1,7 @@
+---
+title: "SourceTableDetails"
+---
+
 # SourceTableDetails
 
 Contains the details of the table when the backup was created.

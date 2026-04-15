@@ -1,3 +1,7 @@
+---
+title: "Actions for DynamoDB using AWS SDKs"
+---
+
 # Actions for DynamoDB using AWS SDKs
 
 The following code examples demonstrate how to perform individual DynamoDB

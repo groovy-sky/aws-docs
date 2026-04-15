@@ -1,3 +1,7 @@
+---
+title: "UpdateCluster"
+---
+
 # UpdateCluster
 
 Modifies the settings for a DAX cluster. You can use this action to

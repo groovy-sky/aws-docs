@@ -1,3 +1,7 @@
+---
+title: "Getting started with CloudWatch Contributor Insights for DynamoDB"
+---
+
 # Getting started with CloudWatch Contributor Insights for DynamoDB
 
 This section describes how to enable and use Amazon CloudWatch Contributor Insights in different

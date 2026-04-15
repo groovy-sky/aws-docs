@@ -1,3 +1,7 @@
+---
+title: "DynamoDB and optimistic locking with version number"
+---
+
 # DynamoDB and optimistic locking with version number
 
 _Optimistic locking_ is a strategy to ensure that the client-side

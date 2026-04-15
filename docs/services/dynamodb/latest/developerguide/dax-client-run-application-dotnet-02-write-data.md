@@ -1,3 +1,7 @@
+---
+title: "02-Write-Data.cs"
+---
+
 # 02-Write-Data.cs
 
 The `02-Write-Data.cs` program writes test data to

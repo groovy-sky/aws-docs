@@ -1,3 +1,7 @@
+---
+title: "BackupDetails"
+---
+
 # BackupDetails
 
 Contains the details of the backup created for the table.

@@ -1,3 +1,7 @@
+---
+title: "OnDemandThroughputOverride"
+---
+
 # OnDemandThroughputOverride
 
 Overrides the on-demand throughput settings for this replica table. If you don't

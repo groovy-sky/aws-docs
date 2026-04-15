@@ -1,3 +1,7 @@
+---
+title: "TableDescription"
+---
+
 # TableDescription
 
 Represents the properties of a table.

@@ -1,3 +1,7 @@
+---
+title: "Creating a DAX cluster"
+---
+
 # Creating a DAX cluster
 
 This section walks you through the first-time setup and usage of Amazon DynamoDB Accelerator

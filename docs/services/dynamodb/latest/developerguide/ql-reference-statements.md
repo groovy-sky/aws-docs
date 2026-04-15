@@ -1,3 +1,7 @@
+---
+title: "PartiQL statements for DynamoDB"
+---
+
 # PartiQL statements for DynamoDB
 
 Amazon DynamoDB supports the following PartiQL statements.

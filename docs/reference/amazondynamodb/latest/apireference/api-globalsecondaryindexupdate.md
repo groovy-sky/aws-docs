@@ -1,3 +1,7 @@
+---
+title: "GlobalSecondaryIndexUpdate"
+---
+
 # GlobalSecondaryIndexUpdate
 
 Represents one of the following:

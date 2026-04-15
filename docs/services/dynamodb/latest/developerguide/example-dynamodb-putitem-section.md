@@ -1,3 +1,7 @@
+---
+title: "Use PutItem with an AWS SDK or CLI"
+---
+
 # Use `PutItem` with an AWS SDK or CLI
 
 The following code examples show how to use `PutItem`.

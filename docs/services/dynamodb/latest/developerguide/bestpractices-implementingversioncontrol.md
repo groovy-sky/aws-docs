@@ -1,3 +1,7 @@
+---
+title: "Best practices for handling concurrent updates in DynamoDB"
+---
+
 # Best practices for handling concurrent updates in DynamoDB
 
 In distributed systems, multiple processes or users may attempt to modify the same data at

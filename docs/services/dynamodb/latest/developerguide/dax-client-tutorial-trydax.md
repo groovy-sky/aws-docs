@@ -1,3 +1,7 @@
+---
+title: "TryDax.js"
+---
+
 # TryDax.js
 
 ```javascript

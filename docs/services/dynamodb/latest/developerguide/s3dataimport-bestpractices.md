@@ -1,3 +1,7 @@
+---
+title: "Best practices for importing from Amazon S3 into DynamoDB"
+---
+
 # Best practices for importing from Amazon S3 into DynamoDB
 
 The following are the best practices for importing data from Amazon S3 into DynamoDB.

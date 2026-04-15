@@ -1,3 +1,7 @@
+---
+title: "Query a DynamoDB table with a dynamic filter expression with an AWS SDK"
+---
+
 # Query a DynamoDB table with a dynamic filter expression with an AWS SDK
 
 The following code examples show how to query a table with a dynamic filter expression.

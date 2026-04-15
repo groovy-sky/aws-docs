@@ -1,3 +1,7 @@
+---
+title: "Multi-attribute keys pattern"
+---
+
 # Multi-attribute keys pattern
 
 ## Overview

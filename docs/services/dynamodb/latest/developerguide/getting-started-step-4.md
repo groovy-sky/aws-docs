@@ -1,3 +1,7 @@
+---
+title: "Step 4: Update data in a DynamoDB table"
+---
+
 # Step 4: Update data in a DynamoDB table
 
 In this step, you update an item that you created in [Step 2: Write data to a DynamoDB table](getting-started-step-2.md). You can

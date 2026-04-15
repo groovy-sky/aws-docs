@@ -1,3 +1,7 @@
+---
+title: "DynamoDBMapper Class"
+---
+
 # DynamoDBMapper Class
 
 The `DynamoDBMapper` class is the entry point to Amazon DynamoDB. It provides

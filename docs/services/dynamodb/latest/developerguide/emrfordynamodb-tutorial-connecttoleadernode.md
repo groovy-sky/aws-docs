@@ -1,3 +1,7 @@
+---
+title: "Step 3: Connect to the Leader node"
+---
+
 # Step 3: Connect to the Leader node
 
 When the status of your Amazon EMR cluster changes to `Waiting`, you will be

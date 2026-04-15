@@ -1,3 +1,7 @@
+---
+title: "Evaluate your DynamoDB table's auto scaling settings"
+---
+
 # Evaluate your DynamoDB table's auto scaling settings
 
 This section provides an overview of how to evaluate the auto scaling settings on your DynamoDB

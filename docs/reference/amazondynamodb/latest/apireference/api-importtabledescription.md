@@ -1,3 +1,7 @@
+---
+title: "ImportTableDescription"
+---
+
 # ImportTableDescription
 
 Represents the properties of the table being imported into.

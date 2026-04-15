@@ -1,3 +1,7 @@
+---
+title: "DynamoDB Streams low-level API: Java example"
+---
+
 # DynamoDB Streams low-level API: Java example
 
 ###### Note

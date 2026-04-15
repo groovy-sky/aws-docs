@@ -1,3 +1,7 @@
+---
+title: "Java 1.x: DynamoDBMapper"
+---
+
 # Java 1.x: DynamoDBMapper
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "Creating an external table in Hive"
+---
+
 # Creating an external table in Hive
 
 In [Tutorial: Working with Amazon DynamoDB and Apache Hive](emrfordynamodb-tutorial.md),

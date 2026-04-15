@@ -1,3 +1,7 @@
+---
+title: "DynamoDB Metrics and dimensions"
+---
+
 # DynamoDB Metrics and dimensions
 
 When you interact with DynamoDB, it sends metrics and dimensions to CloudWatch.

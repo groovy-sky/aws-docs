@@ -1,3 +1,7 @@
+---
+title: "DescribeLimits"
+---
+
 # DescribeLimits
 
 Returns the current provisioned-capacity quotas for your AWS account in

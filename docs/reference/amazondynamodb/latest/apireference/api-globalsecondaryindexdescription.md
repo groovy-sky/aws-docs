@@ -1,3 +1,7 @@
+---
+title: "GlobalSecondaryIndexDescription"
+---
+
 # GlobalSecondaryIndexDescription
 
 Represents the properties of a global secondary index.

@@ -1,3 +1,7 @@
+---
+title: "GlobalTable"
+---
+
 # GlobalTable
 
 Represents the properties of a global table.

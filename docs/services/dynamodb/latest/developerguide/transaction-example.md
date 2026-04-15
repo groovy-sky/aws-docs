@@ -1,3 +1,7 @@
+---
+title: "DynamoDB transactions example"
+---
+
 # DynamoDB transactions example
 
 As an example of a situation in which Amazon DynamoDB transactions can be useful,

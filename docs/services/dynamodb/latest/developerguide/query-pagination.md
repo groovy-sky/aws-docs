@@ -1,3 +1,7 @@
+---
+title: "Paginating table query results in DynamoDB"
+---
+
 # Paginating table query results in DynamoDB
 
 DynamoDB _paginates_ the results from `Query` operations.

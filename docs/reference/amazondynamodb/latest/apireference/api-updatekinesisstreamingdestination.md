@@ -1,3 +1,7 @@
+---
+title: "UpdateKinesisStreamingDestination"
+---
+
 # UpdateKinesisStreamingDestination
 
 The command to update the Kinesis stream destination.

@@ -1,3 +1,7 @@
+---
+title: "ReplicationGroupUpdate"
+---
+
 # ReplicationGroupUpdate
 
 Represents one of the following:

@@ -1,3 +1,7 @@
+---
+title: "DynamoDB read and write operations"
+---
+
 # DynamoDB read and write operations
 
 DynamoDB read operations allow you to retrieve one or more items from a table by

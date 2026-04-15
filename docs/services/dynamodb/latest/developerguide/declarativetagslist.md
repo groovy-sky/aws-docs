@@ -1,3 +1,7 @@
+---
+title: "DynamoDB attributes from the .NET object persistence model"
+---
+
 # DynamoDB attributes from the .NET object persistence model
 
 This section describes the attributes that the object persistence model offers so that

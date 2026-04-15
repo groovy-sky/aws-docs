@@ -1,3 +1,7 @@
+---
+title: "Work with DynamoDB Streams and Time-to-Live using AWS Command Line Interface v2"
+---
+
 # Work with DynamoDB Streams and Time-to-Live using AWS Command Line Interface v2
 
 The following code example shows how to manage DynamoDB Streams and Time-to-Live features.

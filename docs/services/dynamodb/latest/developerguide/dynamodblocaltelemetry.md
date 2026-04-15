@@ -1,3 +1,7 @@
+---
+title: "Telemetry in DynamoDB local"
+---
+
 # Telemetry in DynamoDB local
 
 At AWS, we develop and launch services based on what we learn from interactions with customers, and we use

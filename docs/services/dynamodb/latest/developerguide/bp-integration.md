@@ -1,3 +1,7 @@
+---
+title: "Best practices for integrating with DynamoDB"
+---
+
 # Best practices for integrating with DynamoDB
 
 When integrating DynamoDB with other services, you should always follow the best practices for

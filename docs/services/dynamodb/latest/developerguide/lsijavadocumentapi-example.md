@@ -1,3 +1,7 @@
+---
+title: "Example: Local Secondary Indexes using the Java document API"
+---
+
 # Example: Local Secondary Indexes using the Java document API
 
 The following Java code example shows how to work with local secondary indexes in

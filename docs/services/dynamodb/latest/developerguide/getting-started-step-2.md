@@ -1,3 +1,7 @@
+---
+title: "Step 2: Write data to a DynamoDB table"
+---
+
 # Step 2: Write data to a DynamoDB table
 
 In this step, you insert several items into the `Music` table that you

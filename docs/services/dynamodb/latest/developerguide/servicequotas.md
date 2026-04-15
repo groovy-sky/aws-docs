@@ -1,3 +1,7 @@
+---
+title: "Quotas in Amazon DynamoDB"
+---
+
 # Quotas in Amazon DynamoDB
 
 This section describes current quotas, formerly referred to as limits, within Amazon DynamoDB.

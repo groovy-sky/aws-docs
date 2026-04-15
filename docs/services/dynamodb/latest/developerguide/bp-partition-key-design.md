@@ -1,3 +1,7 @@
+---
+title: "Best practices for designing and using partition keys effectively in DynamoDB"
+---
+
 # Best practices for designing and using partition keys effectively in DynamoDB
 
 The primary key that uniquely identifies each item in an Amazon DynamoDB table can be simple (a

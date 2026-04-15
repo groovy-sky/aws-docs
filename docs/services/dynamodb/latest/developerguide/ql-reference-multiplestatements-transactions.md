@@ -1,3 +1,7 @@
+---
+title: "Performing transactions with PartiQL for DynamoDB"
+---
+
 # Performing transactions with PartiQL for DynamoDB
 
 This section describes how to use transactions with PartiQL for DynamoDB. PartiQL

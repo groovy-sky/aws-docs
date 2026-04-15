@@ -1,3 +1,7 @@
+---
+title: "Differences between a relational (SQL) database and DynamoDB when modifying data in a table"
+---
+
 # Differences between a relational (SQL) database and DynamoDB when modifying data in a table
 
 The SQL language provides the `UPDATE` statement for modifying data.

@@ -1,3 +1,7 @@
+---
+title: "Migrating a DynamoDB table from one account to another"
+---
+
 # Migrating a DynamoDB table from one account to another
 
 You can migrate an Amazon DynamoDB table from one account to another to implement a multi-account

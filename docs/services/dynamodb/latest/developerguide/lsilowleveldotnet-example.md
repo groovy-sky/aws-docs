@@ -1,3 +1,7 @@
+---
+title: "Example: Local Secondary Indexes using the AWS SDK for .NET low-level API"
+---
+
 # Example: Local Secondary Indexes using the AWS SDK for .NET low-level API
 
 The following C# code example shows how to work with local secondary indexes in

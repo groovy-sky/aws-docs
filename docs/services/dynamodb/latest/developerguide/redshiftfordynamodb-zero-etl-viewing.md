@@ -1,3 +1,7 @@
+---
+title: "Viewing DynamoDB zero-ETL integrations with Amazon Redshift"
+---
+
 # Viewing DynamoDB zero-ETL integrations with Amazon Redshift
 
 You can view the details of a zero-ETL integration to see its configuration

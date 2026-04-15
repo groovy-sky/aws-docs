@@ -1,3 +1,7 @@
+---
+title: "DAX T3/T2 burstable instances"
+---
+
 # DAX T3/T2 burstable instances
 
 DAX allows you to choose between fixed performance instances (such as R4, R5, and R7) and

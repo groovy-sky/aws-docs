@@ -1,3 +1,7 @@
+---
+title: "Supported data types for DynamoDBMapper for Java"
+---
+
 # Supported data types for DynamoDBMapper for Java
 
 This section describes the supported primitive Java data types, collections, and

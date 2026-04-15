@@ -1,3 +1,7 @@
+---
+title: "Step 1: Create a table in DynamoDB"
+---
+
 # Step 1: Create a table in DynamoDB
 
 In this step, you create a `Music` table in Amazon DynamoDB. The table has the

@@ -1,3 +1,7 @@
+---
+title: "In-memory acceleration with DynamoDB Accelerator (DAX)"
+---
+
 # In-memory acceleration with DynamoDB Accelerator (DAX)
 
 Amazon DynamoDB is designed for scale and performance. In most cases, the DynamoDB response times

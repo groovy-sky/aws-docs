@@ -1,3 +1,7 @@
+---
+title: "OnDemandThroughput"
+---
+
 # OnDemandThroughput
 
 Sets the maximum number of read and write units for the specified on-demand table. If

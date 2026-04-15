@@ -1,3 +1,7 @@
+---
+title: "RestoreTableToPointInTime"
+---
+
 # RestoreTableToPointInTime
 
 Restores the specified table to the specified point in time within

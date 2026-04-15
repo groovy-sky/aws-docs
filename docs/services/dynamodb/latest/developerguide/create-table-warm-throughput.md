@@ -1,3 +1,7 @@
+---
+title: "Create a new DynamoDB table with higher warm throughput"
+---
+
 # Create a new DynamoDB table with higher warm throughput
 
 You can adjust the warm throughput values when you create your DynamoDB table by

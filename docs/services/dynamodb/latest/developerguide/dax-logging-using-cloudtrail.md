@@ -1,3 +1,7 @@
+---
+title: "Logging DAX operations using AWS CloudTrail"
+---
+
 # Logging DAX operations using AWS CloudTrail
 
 Amazon DynamoDB Accelerator (DAX) is integrated with AWS CloudTrail, a service that provides a record of

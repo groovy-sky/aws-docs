@@ -1,3 +1,7 @@
+---
+title: "Security and compliance in Amazon DynamoDB"
+---
+
 # Security and compliance in Amazon DynamoDB
 
 Cloud security at AWS is the highest priority. As an AWS customer, you benefit from a

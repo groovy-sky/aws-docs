@@ -1,3 +1,7 @@
+---
+title: "DynamoDB same-account global table"
+---
+
 # DynamoDB same-account global table
 
 Same-account global tables automatically replicate your DynamoDB table data across AWS Regions within a

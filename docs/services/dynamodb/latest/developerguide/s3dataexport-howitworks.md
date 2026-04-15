@@ -1,3 +1,7 @@
+---
+title: "DynamoDB data export to Amazon S3: how it works"
+---
+
 # DynamoDB data export to Amazon S3: how it works
 
 DynamoDB export to S3 is a fully managed solution for exporting your DynamoDB data to an Amazon S3

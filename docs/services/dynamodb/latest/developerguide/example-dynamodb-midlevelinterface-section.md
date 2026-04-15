@@ -1,3 +1,7 @@
+---
+title: "Use a document model for DynamoDB using an AWS SDK"
+---
+
 # Use a document model for DynamoDB using an AWS SDK
 
 The following code example shows how to perform Create, Read, Update, and Delete (CRUD) and batch operations using a document model for DynamoDB and an AWS SDK.
