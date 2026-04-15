@@ -1,3 +1,7 @@
+---
+title: "Updating the SSL/TLS certificate for a domain"
+---
+
 # Updating the SSL/TLS certificate for a domain
 
 You can change the SSL/TLS certificate that is in use for a domain at any time. For

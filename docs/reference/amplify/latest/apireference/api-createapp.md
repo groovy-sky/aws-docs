@@ -1,3 +1,7 @@
+---
+title: "CreateApp"
+---
+
 # CreateApp
 
 Creates a new Amplify app.

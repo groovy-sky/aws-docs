@@ -1,3 +1,7 @@
+---
+title: "Automatic build-time generation of Amplify config (Gen 1 apps only)"
+---
+
 # Automatic build-time generation of Amplify config (Gen 1 apps only)
 
 ###### Note

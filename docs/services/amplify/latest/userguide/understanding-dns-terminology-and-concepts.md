@@ -1,3 +1,7 @@
+---
+title: "Understanding DNS terminology and concepts"
+---
+
 # Understanding DNS terminology and concepts
 
 If you are unfamiliar with the terms and concepts associated with Domain Name System

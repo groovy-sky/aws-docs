@@ -1,3 +1,7 @@
+---
+title: "Managing the cache configuration for an app"
+---
+
 # Managing the cache configuration for an app
 
 Amplify uses Amazon CloudFront to manage the caching configuration for your hosted applications. A

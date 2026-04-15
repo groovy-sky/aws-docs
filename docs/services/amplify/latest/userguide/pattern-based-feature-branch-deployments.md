@@ -1,3 +1,7 @@
+---
+title: "Pattern-based feature branch deployments"
+---
+
 # Pattern-based feature branch deployments
 
 Pattern-based branch deployments allow you to automatically deploy branches that match a

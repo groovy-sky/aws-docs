@@ -1,3 +1,7 @@
+---
+title: "Use Amplify backends across apps (Gen 1 apps only)"
+---
+
 # Use Amplify backends across apps (Gen 1 apps only)
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "How Amplify integrates with AWS WAF"
+---
+
 # How Amplify integrates with AWS WAF
 
 The following list provides specific details about how Firewall support is integrated with

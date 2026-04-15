@@ -1,3 +1,7 @@
+---
+title: "UpdateApp"
+---
+
 # UpdateApp
 
 Updates an existing Amplify app.

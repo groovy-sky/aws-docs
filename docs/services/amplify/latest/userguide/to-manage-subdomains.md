@@ -1,3 +1,7 @@
+---
+title: "Managing subdomains"
+---
+
 # Managing subdomains
 
 A subdomain is the part of your URL that appears before your domain name. For example,

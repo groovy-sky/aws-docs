@@ -1,3 +1,7 @@
+---
+title: "Managing environment secrets"
+---
+
 # Managing environment secrets
 
 With the release of Amplify Gen 2, the workflow for environment secrets is streamlined

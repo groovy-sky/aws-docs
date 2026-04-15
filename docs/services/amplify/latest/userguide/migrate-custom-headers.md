@@ -1,3 +1,7 @@
+---
+title: "Migrating custom headers out of the build specification and amplify.yml"
+---
+
 # Migrating custom headers out of the build specification and amplify.yml
 
 Previously, custom HTTP headers were specified for an app either by editing the build specification

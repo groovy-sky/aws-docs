@@ -1,3 +1,7 @@
+---
+title: "Amplify Hosting service quotas"
+---
+
 # Amplify Hosting service quotas
 
 The following are the service quotas for AWS Amplify Hosting. Service quotas (previously

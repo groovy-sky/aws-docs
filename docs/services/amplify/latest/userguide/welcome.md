@@ -1,3 +1,7 @@
+---
+title: "Welcome to AWS Amplify Hosting"
+---
+
 # Welcome to AWS Amplify Hosting
 
 Amplify Hosting provides a Git-based workflow for hosting full-stack serverless web

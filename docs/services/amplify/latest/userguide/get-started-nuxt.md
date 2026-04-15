@@ -1,3 +1,7 @@
+---
+title: "Deploy a Nuxt.js app to Amplify Hosting"
+---
+
 # Deploy a Nuxt.js app to Amplify Hosting
 
 Use the following instructions to deploy a Nuxt.js application to Amplify Hosting.

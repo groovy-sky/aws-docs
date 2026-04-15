@@ -1,3 +1,7 @@
+---
+title: "Setting custom headers for an Amplify app"
+---
+
 # Setting custom headers for an Amplify app
 
 Custom HTTP headers enable you to specify headers for every HTTP response. Response headers

@@ -1,3 +1,7 @@
+---
+title: "Deploy a SvelteKit app to Amplify Hosting"
+---
+
 # Deploy a SvelteKit app to Amplify Hosting
 
 Use the following instructions to deploy a SvelteKit application to Amplify Hosting.

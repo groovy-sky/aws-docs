@@ -1,3 +1,7 @@
+---
+title: "Setting environment variables"
+---
+
 # Setting environment variables
 
 Use the following instructions to set environment variables for an application in the Amplify console.

@@ -1,3 +1,7 @@
+---
+title: "Configuring the build instance for an Amplify application"
+---
+
 # Configuring the build instance for an Amplify application
 
 Amplify Hosting offers configurable build instance sizes that enable you to provide your

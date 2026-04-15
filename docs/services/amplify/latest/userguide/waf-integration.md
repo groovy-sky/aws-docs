@@ -1,3 +1,7 @@
+---
+title: "Firewall support for Amplify hosted sites"
+---
+
 # Firewall support for Amplify hosted sites
 
 Firewall support for Amplify hosted sites enables you to protect your web applications with a direct

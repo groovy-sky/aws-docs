@@ -1,3 +1,7 @@
+---
+title: "Setting up wildcard subdomains"
+---
+
 # Setting up wildcard subdomains
 
 Amplify Hosting now supports wildcard subdomains. A wildcard subdomain is a catch-all

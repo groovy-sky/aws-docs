@@ -1,3 +1,7 @@
+---
+title: "App"
+---
+
 # App
 
 Represents the different branches of a repository for building, deploying, and hosting

@@ -1,3 +1,7 @@
+---
+title: "Using the Cache-Control header to increase app performance"
+---
+
 # Using the Cache-Control header to increase app performance
 
 Amplify's default hosting architecture optimizes the balance between hosting performance

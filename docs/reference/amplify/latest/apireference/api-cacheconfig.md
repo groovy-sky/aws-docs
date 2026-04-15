@@ -1,3 +1,7 @@
+---
+title: "CacheConfig"
+---
+
 # CacheConfig
 
 Describes the cache configuration for an Amplify app.

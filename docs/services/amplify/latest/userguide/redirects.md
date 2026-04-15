@@ -1,3 +1,7 @@
+---
+title: "Setting up redirects and rewrites for an Amplify application"
+---
+
 # Setting up redirects and rewrites for an Amplify application
 
 Redirects enable a web server to reroute navigation from one URL to another. Common reasons

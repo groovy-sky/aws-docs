@@ -1,3 +1,7 @@
+---
+title: "WafConfiguration"
+---
+
 # WafConfiguration
 
 Describes the Firewall configuration for a hosted Amplify application.

@@ -1,3 +1,7 @@
+---
+title: "Updating DNS records for a domain managed by GoDaddy"
+---
+
 # Updating DNS records for a domain managed by GoDaddy
 
 If GoDaddy is your DNS provider, use the following instructions to update your DNS

@@ -1,3 +1,7 @@
+---
+title: "JobConfig"
+---
+
 # JobConfig
 
 Describes the configuration details that apply to the jobs for an Amplify app.

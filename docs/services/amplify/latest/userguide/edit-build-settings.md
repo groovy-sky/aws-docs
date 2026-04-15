@@ -1,3 +1,7 @@
+---
+title: "Editing the build specification"
+---
+
 # Editing the build specification
 
 You can customize an application's build settings by editing the build specification (buildspec) in

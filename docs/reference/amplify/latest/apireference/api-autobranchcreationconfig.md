@@ -1,3 +1,7 @@
+---
+title: "AutoBranchCreationConfig"
+---
+
 # AutoBranchCreationConfig
 
 Describes the automated branch creation configuration.

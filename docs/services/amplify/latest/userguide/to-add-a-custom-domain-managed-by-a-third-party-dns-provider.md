@@ -1,3 +1,7 @@
+---
+title: "Adding a custom domain managed by a third-party DNS provider"
+---
+
 # Adding a custom domain managed by a third-party DNS provider
 
 If you are not using Amazon Route 53 to manage your domain, you can add a custom domain

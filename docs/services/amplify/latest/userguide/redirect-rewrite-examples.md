@@ -1,3 +1,7 @@
+---
+title: "Redirects and rewrites example reference"
+---
+
 # Redirects and rewrites example reference
 
 This section provides examples for a variety of common redirect scenarios.

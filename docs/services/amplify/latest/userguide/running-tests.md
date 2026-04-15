@@ -1,3 +1,7 @@
+---
+title: "Setting up end-to-end Cypress tests for your Amplify application"
+---
+
 # Setting up end-to-end Cypress tests for your Amplify application
 
 You can run end-to-end (E2E) tests in the test phase of your Amplify app to catch

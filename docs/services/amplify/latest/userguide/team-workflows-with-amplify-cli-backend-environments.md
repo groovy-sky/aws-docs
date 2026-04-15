@@ -1,3 +1,7 @@
+---
+title: "Team workflows with fullstack Amplify Gen 1 apps"
+---
+
 # Team workflows with fullstack Amplify Gen 1 apps
 
 A feature branch deployment consists of a **frontend**, and

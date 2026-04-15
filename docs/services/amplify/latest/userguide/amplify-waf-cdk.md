@@ -1,3 +1,7 @@
+---
+title: "Enabling AWS WAF for an Amplify application using the AWS CDK"
+---
+
 # Enabling AWS WAF for an Amplify application using the AWS CDK
 
 You can use the AWS Cloud Development Kit (AWS CDK) to enable AWS WAF for an Amplify application. To learn more about using the CDK, see [What is the CDK?](../../../cdk/v2/guide/home.md) in the _AWS Cloud Development Kit (AWS CDK) Developer Guide_.

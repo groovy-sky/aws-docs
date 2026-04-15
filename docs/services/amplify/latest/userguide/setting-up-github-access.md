@@ -1,3 +1,7 @@
+---
+title: "Setting up Amplify access to GitHub repositories"
+---
+
 # Setting up Amplify access to GitHub repositories
 
 Amplify now uses the GitHub Apps feature to authorize Amplify read-only access to GitHub

@@ -1,3 +1,7 @@
+---
+title: "Create a backend for a Gen 2 app"
+---
+
 # Create a backend for a Gen 2 app
 
 For a tutorial that guides you through the steps for creating an Amplify Gen 2

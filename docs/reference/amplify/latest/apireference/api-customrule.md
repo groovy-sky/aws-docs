@@ -1,3 +1,7 @@
+---
+title: "CustomRule"
+---
+
 # CustomRule
 
 Describes a custom rewrite or redirect rule.

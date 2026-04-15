@@ -1,3 +1,7 @@
+---
+title: "Welcome"
+---
+
 # Welcome
 
 Welcome to the AWS
@@ -16,7 +20,7 @@ The Amplify Framework is a comprehensive set of SDKs, libraries, tools, and
 documentation for client app development. For more information, see the [Amplify Framework](https://docs.amplify.aws/). For more information about
 deploying an Amplify application to AWS, see the [Amplify User Guide](../../../../services/amplify/latest/userguide/welcome.md).
 
-This document was last published on April 8, 2026.
+This document was last published on April 14, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

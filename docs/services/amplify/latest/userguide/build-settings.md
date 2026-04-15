@@ -1,3 +1,7 @@
+---
+title: "Configuring the build settings for an Amplify application"
+---
+
 # Configuring the build settings for an Amplify application
 
 When you deploy an application, Amplify automatically detects the frontend framework and

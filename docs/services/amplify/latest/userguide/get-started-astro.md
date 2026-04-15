@@ -1,3 +1,7 @@
+---
+title: "Deploy an Astro.js app to Amplify Hosting"
+---
+
 # Deploy an Astro.js app to Amplify Hosting
 
 Use the following instructions to deploy an Astro.js application to Amplify Hosting.

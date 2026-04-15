@@ -1,3 +1,7 @@
+---
+title: "Build specification reference"
+---
+
 # Build specification reference
 
 The build specification (buildspec) for an Amplify application is a collection of YAML settings and

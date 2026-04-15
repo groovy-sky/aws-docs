@@ -1,3 +1,7 @@
+---
+title: "Firewall pricing for Amplify applications"
+---
+
 # Firewall pricing for Amplify applications
 
 The cost of implementing AWS WAF on an Amplify application is calculated based on the following two components:

@@ -1,3 +1,7 @@
+---
+title: "Managing cache key cookies"
+---
+
 # Managing cache key cookies
 
 When you deploy your app to Amplify, you can choose whether you want to include or exclude

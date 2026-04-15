@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting custom domains"
+---
+
 # Troubleshooting custom domains
 
 If you encounter issues when connecting a custom domain to your Amplify application,

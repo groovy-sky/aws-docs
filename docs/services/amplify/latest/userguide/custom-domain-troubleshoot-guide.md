@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting custom domains"
+---
+
 # Troubleshooting custom domains
 
 If you encounter issues when adding a custom domain to an app in the AWS Amplify

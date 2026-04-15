@@ -1,3 +1,7 @@
+---
+title: "Team workflows with fullstack Amplify Gen 2 apps"
+---
+
 # Team workflows with fullstack Amplify Gen 2 apps
 
 AWS Amplify Gen 2 introduces a TypeScript-based, code-first developer experience for

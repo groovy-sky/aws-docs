@@ -1,3 +1,7 @@
+---
+title: "Feature branch deployments and team workflows"
+---
+
 # Feature branch deployments and team workflows
 
 Amplify Hosting is designed to work with feature branch and GitFlow workflows. Amplify

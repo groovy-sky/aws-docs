@@ -1,3 +1,7 @@
+---
+title: "Enabling AWS WAF for an Amplify application in the AWS Management Console"
+---
+
 # Enabling AWS WAF for an Amplify application in the AWS Management Console
 
 You can enable AWS WAF protections for an Amplify app either in the Amplify console or in

@@ -1,3 +1,7 @@
+---
+title: "How Amplify applies cache configuration to an app"
+---
+
 # How Amplify applies cache configuration to an app
 
 To manage caching for your app, Amplify determines the type of content that is being

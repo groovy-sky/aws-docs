@@ -1,3 +1,7 @@
+---
+title: "Deploy a Next.js app to Amplify Hosting"
+---
+
 # Deploy a Next.js app to Amplify Hosting
 
 This tutorial walks you through

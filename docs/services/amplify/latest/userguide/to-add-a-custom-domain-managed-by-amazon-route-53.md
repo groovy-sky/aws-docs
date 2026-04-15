@@ -1,3 +1,7 @@
+---
+title: "Adding a custom domain managed by Amazon Route 53"
+---
+
 # Adding a custom domain managed by Amazon Route 53
 
 Amazon Route 53 is a highly available and scalable DNS service. For more information, see

@@ -1,3 +1,7 @@
+---
+title: "Adding an SSR Compute role to allow access to AWS resources"
+---
+
 # Adding an SSR Compute role to allow access to AWS resources
 
 This integration, enables you to assign an IAM role to the Amplify SSR Compute

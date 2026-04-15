@@ -1,3 +1,7 @@
+---
+title: "Deploying a Next.js SSR application to Amplify"
+---
+
 # Deploying a Next.js SSR application to Amplify
 
 By default, Amplify deploys new SSR apps using Amplify Hosting's compute service

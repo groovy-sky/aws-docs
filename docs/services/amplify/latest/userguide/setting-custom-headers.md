@@ -1,3 +1,7 @@
+---
+title: "Setting custom headers"
+---
+
 # Setting custom headers
 
 There are two ways to specify custom HTTP headers for an Amplify app. You can specify

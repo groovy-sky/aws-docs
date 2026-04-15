@@ -1,3 +1,7 @@
+---
+title: "Using environment variables in an Amplify application"
+---
+
 # Using environment variables in an Amplify application
 
 Environment variables are key-value pairs that you can add to your application's settings

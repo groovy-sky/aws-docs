@@ -1,3 +1,7 @@
+---
+title: "Custom header YAML reference"
+---
+
 # Custom header YAML reference
 
 Specify custom headers using the following YAML format:

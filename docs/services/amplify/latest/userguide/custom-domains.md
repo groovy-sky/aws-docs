@@ -1,3 +1,7 @@
+---
+title: "Connecting a custom domain"
+---
+
 # Connecting a custom domain
 
 You can connect an app that you’ve deployed with Amplify Hosting to a custom domain. When

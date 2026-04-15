@@ -1,3 +1,7 @@
+---
+title: "Getting started with deploying an app to Amplify Hosting"
+---
+
 # Getting started with deploying an app to Amplify Hosting
 
 To help you understand how Amplify Hosting works, the following tutorials walk
