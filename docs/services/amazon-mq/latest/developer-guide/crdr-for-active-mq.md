@@ -1,3 +1,7 @@
+---
+title: "Cross-Region data replication for Amazon MQ for ActiveMQ"
+---
+
 # Cross-Region data replication for Amazon MQ for ActiveMQ
 
 Amazon MQ for ActiveMQ offers a Cross-Region data replication (CRDR) feature that allows for asynchronous message replication

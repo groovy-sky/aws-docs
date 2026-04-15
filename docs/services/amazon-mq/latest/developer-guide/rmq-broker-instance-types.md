@@ -1,3 +1,7 @@
+---
+title: "Amazon MQ for RabbitMQ broker instance types"
+---
+
 # Amazon MQ for RabbitMQ broker instance types
 
 The combined description of the broker instance class (m7g) and size (large, medium) is called the broker instance type (for example, mq.m7g.large).

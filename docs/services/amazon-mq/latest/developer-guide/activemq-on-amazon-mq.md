@@ -1,3 +1,7 @@
+---
+title: "ActiveMQ tutorials"
+---
+
 # ActiveMQ tutorials
 
 The following tutorials show how you can create and connect to your ActiveMQ brokers. To use the ActiveMQ Java example code, you must install the

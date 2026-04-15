@@ -1,3 +1,7 @@
+---
+title: "Creating and configuring an Amazon MQ network of brokers"
+---
+
 # Creating and configuring an Amazon MQ network of brokers
 
 A _network of brokers_ is comprised of multiple simultaneously

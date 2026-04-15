@@ -1,3 +1,7 @@
+---
+title: "Configuration"
+---
+
 # Configuration
 
 A configuration contains all of the settings for your broker. For more information, see [Amazon MQ for RabbitMQ broker configurations](../developer-guide/rabbitmq-broker-configuration-parameters.md) and

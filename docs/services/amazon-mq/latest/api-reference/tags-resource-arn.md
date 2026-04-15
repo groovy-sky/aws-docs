@@ -1,3 +1,7 @@
+---
+title: "Tag"
+---
+
 # Tag
 
 A tag is a key-value pair associated with a resource. You can use these metadata

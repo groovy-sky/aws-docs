@@ -1,3 +1,7 @@
+---
+title: "Amazon MQ for ActiveMQ best practices"
+---
+
 # Amazon MQ for ActiveMQ best practices
 
 Use this as a reference to quickly find recommendations for maximizing performance and minimizing throughput costs when working with

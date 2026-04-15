@@ -1,3 +1,7 @@
+---
+title: "Best practices for performance optimization and efficiency in Amazon MQ for RabbitMQ"
+---
+
 # Best practices for performance optimization and efficiency in Amazon MQ for RabbitMQ
 
 You can optimize your Amazon MQ for RabbitMQ broker performance by maximizing throughput, minimizing latency, and ensuring efficient resource utilization.

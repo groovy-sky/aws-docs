@@ -1,3 +1,7 @@
+---
+title: "Connecting a Java application to your Amazon MQ broker"
+---
+
 # Connecting a Java application to your Amazon MQ broker
 
 After you create an Amazon MQ ActiveMQ broker, you can

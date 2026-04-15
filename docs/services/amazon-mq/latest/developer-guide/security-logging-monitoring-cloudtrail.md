@@ -1,3 +1,7 @@
+---
+title: "Logging Amazon MQ API calls using AWS CloudTrail"
+---
+
 # Logging Amazon MQ API calls using AWS CloudTrail
 
 Amazon MQ is integrated with AWS CloudTrail, a service that provides a record of the Amazon MQ calls

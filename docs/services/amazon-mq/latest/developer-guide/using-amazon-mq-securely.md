@@ -1,3 +1,7 @@
+---
+title: "Security best practices for Amazon MQ"
+---
+
 # Security best practices for Amazon MQ
 
 The following design patterns can improve the security of your Amazon MQ broker.

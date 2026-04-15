@@ -1,3 +1,7 @@
+---
+title: "Simple authentication and authorization"
+---
+
 # Simple authentication and authorization
 
 ## Amazon MQ for RabbitMQ broker users

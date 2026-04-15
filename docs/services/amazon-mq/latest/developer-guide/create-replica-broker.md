@@ -1,3 +1,7 @@
+---
+title: "Creating an Amazon MQ cross-Region data replication broker"
+---
+
 # Creating an Amazon MQ cross-Region data replication broker
 
 With Cross-Region data replication (CRDR), you can switch between Amazon MQ for ActiveMQ message brokers in two AWS Regions as needed.

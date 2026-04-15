@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting ActiveMQ on Amazon MQ"
+---
+
 # Troubleshooting ActiveMQ on Amazon MQ
 
 Use the information in this section to help you diagnose and resolve common issues you might encounter when working

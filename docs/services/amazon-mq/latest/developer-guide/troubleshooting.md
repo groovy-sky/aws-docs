@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting Amazon MQ"
+---
+
 # Troubleshooting Amazon MQ
 
 This section describes common issues you might encounter when using Amazon MQ brokers, and the steps you can take to resolve them.

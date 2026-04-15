@@ -1,3 +1,7 @@
+---
+title: "ActiveMQ on Amazon MQ: Broker Out Of Memory alarm"
+---
+
 # ActiveMQ on Amazon MQ: Broker Out Of Memory alarm
 
 ActiveMQ on Amazon MQ will raise a BROKER\_OOM alarm when the broker undergoes a restart loop due to

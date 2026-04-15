@@ -1,3 +1,7 @@
+---
+title: "Amazon MQ broker statuses"
+---
+
 # Amazon MQ broker statuses
 
 A broker's current condition is indicated by a _status_.

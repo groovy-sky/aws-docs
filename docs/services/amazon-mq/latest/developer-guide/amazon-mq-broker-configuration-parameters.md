@@ -1,3 +1,7 @@
+---
+title: "Amazon MQ for ActiveMQ broker configurations"
+---
+
 # Amazon MQ for ActiveMQ broker configurations
 
 A configuration contains all of the settings for your ActiveMQ broker in XML format

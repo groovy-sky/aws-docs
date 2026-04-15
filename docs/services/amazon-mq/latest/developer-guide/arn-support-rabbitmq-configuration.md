@@ -1,3 +1,7 @@
+---
+title: "ARN support in RabbitMQ configuration"
+---
+
 # ARN support in RabbitMQ configuration
 
 Amazon MQ for RabbitMQ supports AWS ARNs for the values of some RabbitMQ configuration settings. This is enabled by the RabbitMQ community plugin [rabbitmq-aws](https://github.com/amazon-mq/rabbitmq-aws). This plugin is developed and maintained by Amazon MQ and can also be used in self-hosted RabbitMQ brokers not managed by Amazon MQ.

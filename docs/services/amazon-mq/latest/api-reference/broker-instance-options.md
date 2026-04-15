@@ -1,3 +1,7 @@
+---
+title: "Broker Instance Options"
+---
+
 # Broker Instance Options
 
 You can retrieve information about broker instances. For more information about the different components of an Amazon MQ broker, see

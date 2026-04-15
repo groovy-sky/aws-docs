@@ -1,3 +1,7 @@
+---
+title: "Elements and Their Attributes Permitted in Amazon MQ Configurations"
+---
+
 # Elements and Their Attributes Permitted in Amazon MQ Configurations
 
 The following is a detailed listing of the elements and their attributes permitted in

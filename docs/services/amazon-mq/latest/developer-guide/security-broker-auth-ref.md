@@ -1,3 +1,7 @@
+---
+title: "Broker authentication and authorization"
+---
+
 # Broker authentication and authorization
 
 Amazon MQ provides different authentication and authorization methods depending on your broker engine type.

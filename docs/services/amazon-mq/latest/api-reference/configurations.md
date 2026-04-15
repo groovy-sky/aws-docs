@@ -1,3 +1,7 @@
+---
+title: "Configurations"
+---
+
 # Configurations
 
 This is a collection of configurations. A configuration contains all of the

@@ -1,3 +1,7 @@
+---
+title: "Resolving RabbitMQ paused queue synchronization"
+---
+
 # Resolving RabbitMQ paused queue synchronization
 
 In an Amazon MQ for RabbitMQ [cluster\

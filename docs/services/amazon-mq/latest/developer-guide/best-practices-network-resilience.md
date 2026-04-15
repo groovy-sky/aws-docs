@@ -1,3 +1,7 @@
+---
+title: "Best practices for network resilience and monitoring in Amazon MQ for RabbitMQ"
+---
+
 # Best practices for network resilience and monitoring in Amazon MQ for RabbitMQ
 
 Network resilience and monitoring broker metrics are essential for maintaining reliable messaging applications.

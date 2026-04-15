@@ -1,3 +1,7 @@
+---
+title: "Best practices for broker setup and connection management in Amazon MQ for RabbitMQ"
+---
+
 # Best practices for broker setup and connection management in Amazon MQ for RabbitMQ
 
 Broker setup and connection management are the first step in preventing issues with broker message throughput,

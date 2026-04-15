@@ -1,3 +1,7 @@
+---
+title: "Quorum queues for RabbitMQ on Amazon MQ"
+---
+
 # Quorum queues for RabbitMQ on Amazon MQ
 
 Quorum queues are a replicated queue type made up of a leader (primary replica) and followers (other replicas).

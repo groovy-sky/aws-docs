@@ -1,3 +1,7 @@
+---
+title: "Available CloudWatch metrics for Amazon MQ for RabbitMQ brokers"
+---
+
 # Available CloudWatch metrics for Amazon MQ for RabbitMQ brokers
 
 ## RabbitMQ broker metrics

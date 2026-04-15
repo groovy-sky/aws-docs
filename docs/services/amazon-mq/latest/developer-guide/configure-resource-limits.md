@@ -1,3 +1,7 @@
+---
+title: "Resource Limit Configuration"
+---
+
 # Resource Limit Configuration
 
 Amazon MQ for RabbitMQ supports configuring broker resource limits from RabbitMQ 4 onwards.

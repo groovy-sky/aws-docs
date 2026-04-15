@@ -1,3 +1,7 @@
+---
+title: "Using Amazon MQ for RabbitMQ"
+---
+
 # Using Amazon MQ for RabbitMQ
 
 Amazon MQ makes it easy to create a message broker with the computing and storage resources

@@ -1,3 +1,7 @@
+---
+title: "Amazon MQ Identity-based policy examples"
+---
+
 # Amazon MQ Identity-based policy examples
 
 By default, users and roles don't have permission to create or modify

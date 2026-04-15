@@ -1,3 +1,7 @@
+---
+title: "Editing broker preferences"
+---
+
 # Editing broker preferences
 
 You can edit your broker preferences, such as enabling or disabling CloudWatch logs using the AWS Management Console.

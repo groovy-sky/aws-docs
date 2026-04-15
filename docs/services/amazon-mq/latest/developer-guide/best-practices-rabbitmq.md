@@ -1,3 +1,7 @@
+---
+title: "Amazon MQ for RabbitMQ best practices"
+---
+
 # Amazon MQ for RabbitMQ best practices
 
 Follow these production-readiness guidelines to maximize broker performance and optimize message throughput efficiency when working with

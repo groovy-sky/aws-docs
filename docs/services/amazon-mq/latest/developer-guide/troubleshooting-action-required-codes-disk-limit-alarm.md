@@ -1,3 +1,7 @@
+---
+title: "RabbitMQ on Amazon MQ: Disk limit alarm"
+---
+
 # RabbitMQ on Amazon MQ: Disk limit alarm
 
 Disk limit alarm is an indication that the volume of disk used by a RabbitMQ node has decreased due to

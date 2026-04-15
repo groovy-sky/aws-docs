@@ -1,3 +1,7 @@
+---
+title: "Reducing the number of connections and channels"
+---
+
 # Reducing the number of connections and channels
 
 Connections to your RabbitMQ on Amazon MQ broker can be closed either by your client applications, or by

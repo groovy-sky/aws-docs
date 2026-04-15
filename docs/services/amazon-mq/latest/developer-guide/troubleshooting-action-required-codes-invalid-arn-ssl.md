@@ -1,3 +1,7 @@
+---
+title: "RabbitMQ on Amazon MQ: Invalid SSL ARN"
+---
+
 # RabbitMQ on Amazon MQ: Invalid SSL ARN
 
 RabbitMQ on Amazon MQ will raise an INVALID\_ARN\_SSL critical action required code when one or more ARNs of CA certificate truststore for EXTERNAL auth\_mechanism are invalid or inaccessible. This applies to ARNS specified in `aws.arns.ssl_options.cacertfile` or `aws.arns.management.ssl.cacertfile`, which must reference Amazon S3 or ACM PCA object containing the certificate.

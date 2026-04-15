@@ -1,3 +1,7 @@
+---
+title: "Using Python Pika with Amazon MQ for RabbitMQ"
+---
+
 # Using Python Pika with Amazon MQ for RabbitMQ
 
 The following tutorial shows how you can set up a [Python Pika](https://github.com/pika/pika) client with TLS configured to connect to an Amazon MQ for RabbitMQ broker.

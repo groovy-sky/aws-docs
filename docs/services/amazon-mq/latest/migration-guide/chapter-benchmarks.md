@@ -1,3 +1,7 @@
+---
+title: "Amazon MQ for ActiveMQ Throughput benchmarks"
+---
+
 # Amazon MQ for ActiveMQ Throughput benchmarks
 
 Benchmarking can help you choose the correct instance type and size for your workload

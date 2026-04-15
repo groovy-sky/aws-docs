@@ -1,3 +1,7 @@
+---
+title: "Configuration Revision"
+---
+
 # Configuration Revision
 
 To keep track of the changes you make to your configuration, you can create

@@ -1,3 +1,7 @@
+---
+title: "Configuring SSL certificate authentication"
+---
+
 # Configuring SSL certificate authentication
 
 For information about SSL certificate authentication configuration values and setting up SSL certificate authentication for your brokers, see [SSL certificate authentication](ssl-for-amq-for-rabbitmq.md) and [Using SSL certificate authentication](rabbitmq-ssl-tutorial.md).

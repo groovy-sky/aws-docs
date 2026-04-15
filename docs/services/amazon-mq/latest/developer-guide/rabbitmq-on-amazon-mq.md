@@ -1,3 +1,7 @@
+---
+title: "RabbitMQ tutorials"
+---
+
 # RabbitMQ tutorials
 
 The following tutorials show how you can configure and use RabbitMQ on Amazon MQ. To learn more about working with supported client libraries in

@@ -1,3 +1,7 @@
+---
+title: "Creating and applying RabbitMQ broker configurations"
+---
+
 # Creating and applying RabbitMQ broker configurations
 
 A _configuration_ contains all of the settings for your RabbitMQ broker in Cuttlefish format. You can create a configuration before creating any brokers. You can then apply the configuration to one or more brokers

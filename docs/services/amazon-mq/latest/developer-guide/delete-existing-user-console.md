@@ -1,3 +1,7 @@
+---
+title: "Delete an ActiveMQ broker user"
+---
+
 # Delete an ActiveMQ broker user
 
 When you no longer need a user, you can delete the user.

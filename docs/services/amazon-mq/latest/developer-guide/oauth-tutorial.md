@@ -1,3 +1,7 @@
+---
+title: "Using OAuth 2.0 authentication and authorization for Amazon MQ for RabbitMQ"
+---
+
 # Using OAuth 2.0 authentication and authorization for Amazon MQ for RabbitMQ
 
 This tutorial describes how to configure [OAuth 2.0 authentication](oauth-for-amq-for-rabbitmq.md) for your Amazon MQ for RabbitMQ brokers using Amazon Cognito as the OAuth 2.0 provider.

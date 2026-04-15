@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting: General Amazon MQ"
+---
+
 # Troubleshooting: General Amazon MQ
 
 Use the information in this section to help you diagnose common issues you might encounter when working
@@ -200,7 +204,7 @@ the broker `Connection.log` log group. If this metric is greater than zero, ther
 If the metric shows zero connections, then perform the `telnet` path test again. You may need to repeat this process if the connection closes before
 your broker has published new connection metrics to CloudWatch. Metrics are published every minute.
 
-- For brokers without public accessibility, if the `telnet` command fails, check the status of your broker's [elastic network interfaces](../../../userguide/using-eni-icmpid-docs-ec2-console.md),
+- For brokers without public accessibility, if the `telnet` command fails, check the status of your broker's [elastic network interfaces](../../../userguide/using-eni.md),
 and confirm that the status is `in-use`. [Create an Amazon VPC flow log](../../../vpc/latest/userguide/working-with-flow-logs.md#create-flow-log) for each network interface,
 and review the generated flow logs. Look for the broker's private IP addresses when you the `telnet` command was invoked, and confirm the connection packets are `ACCEPTED`, including a return packet.
 For more information, and to see a flow log example, see [Flow log record examples](../../../vpc/latest/userguide/flow-logs-records-examples.md) in the _Amazon VPC Developer Guide_.

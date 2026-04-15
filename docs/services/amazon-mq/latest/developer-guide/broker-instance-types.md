@@ -1,3 +1,7 @@
+---
+title: "Amazon MQ for ActiveMQ broker instance types"
+---
+
 # Amazon MQ for ActiveMQ broker instance types
 
 The combined description of the

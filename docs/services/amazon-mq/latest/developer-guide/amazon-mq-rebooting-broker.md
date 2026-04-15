@@ -1,3 +1,7 @@
+---
+title: "Rebooting an Amazon MQ broker"
+---
+
 # Rebooting an Amazon MQ broker
 
 To apply a new configuration to a broker, you can reboot the broker.

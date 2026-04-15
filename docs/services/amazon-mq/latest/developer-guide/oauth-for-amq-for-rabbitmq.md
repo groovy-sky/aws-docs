@@ -1,3 +1,7 @@
+---
+title: "OAuth 2.0 authentication and authorization for Amazon MQ for RabbitMQ"
+---
+
 # OAuth 2.0 authentication and authorization for Amazon MQ for RabbitMQ
 
 Amazon MQ for RabbitMQ supports multiple authentication and authorization methods. For information about all supported methods, see [Authentication and authorization for Amazon MQ for RabbitMQ brokers](rabbitmq-authentication.md).

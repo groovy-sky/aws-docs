@@ -1,3 +1,7 @@
+---
+title: "Amazon MQ Child Element Attributes"
+---
+
 # Amazon MQ Child Element Attributes
 
 The following is a detailed explanation of child element attributes. For more

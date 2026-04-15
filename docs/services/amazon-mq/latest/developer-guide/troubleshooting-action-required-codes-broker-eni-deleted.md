@@ -1,3 +1,7 @@
+---
+title: "ActiveMQ on Amazon MQ: Deleted Elastic Network Interface alarm"
+---
+
 # ActiveMQ on Amazon MQ: Deleted Elastic Network Interface alarm
 
 ActiveMQ on Amazon MQ will raise a BROKER\_ENI\_DELETED alarm when you delete a broker’s Elastic Network Interface (ENI).

@@ -1,3 +1,7 @@
+---
+title: "Configuring HTTP authentication and authorization"
+---
+
 # Configuring HTTP authentication and authorization
 
 For information about HTTP authentication configuration values and setting up HTTP authentication for your brokers, see [HTTP authentication and authorization](http-for-amq-for-rabbitmq.md) and [Using HTTP authentication and authorization](rabbitmq-http-tutorial.md).

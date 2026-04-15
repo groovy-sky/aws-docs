@@ -1,3 +1,7 @@
+---
+title: "Adding tags to Amazon MQ resources"
+---
+
 # Adding tags to Amazon MQ resources
 
 To organize and identify your Amazon MQ resources for cost allocation, you can add

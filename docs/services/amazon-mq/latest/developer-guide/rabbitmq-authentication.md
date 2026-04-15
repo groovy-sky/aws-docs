@@ -1,3 +1,7 @@
+---
+title: "Amazon MQ for RabbitMQ Authentication and Authorization"
+---
+
 # Amazon MQ for RabbitMQ Authentication and Authorization
 
 Amazon MQ for RabbitMQ supports the following authentication and authorization methods:
