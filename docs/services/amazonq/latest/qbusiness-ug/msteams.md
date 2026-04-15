@@ -1,3 +1,7 @@
+---
+title: "Integrating Microsoft Teams (Teams) with Amazon Q Business"
+---
+
 # Integrating Microsoft Teams (Teams) with Amazon Q Business
 
 Amazon Q Business can enhance your users' Microsoft Teams (Teams) experience by increasing

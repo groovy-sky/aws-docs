@@ -1,3 +1,7 @@
+---
+title: "Connecting Dropbox to Amazon Q Business"
+---
+
 # Connecting Dropbox to Amazon Q Business
 
 Dropbox is a file hosting service that offers cloud storage, document

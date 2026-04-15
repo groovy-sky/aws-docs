@@ -1,3 +1,7 @@
+---
+title: "Subscribe users to Amazon Q Developer Pro in a management account"
+---
+
 # Subscribe users to Amazon Q Developer Pro in a management account
 
 A _management account_ is an AWS account that is part of an organization

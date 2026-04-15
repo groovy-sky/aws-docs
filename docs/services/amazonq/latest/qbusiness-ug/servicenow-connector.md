@@ -1,3 +1,7 @@
+---
+title: "Connecting ServiceNow Online to Amazon Q Business"
+---
+
 # Connecting ServiceNow Online to Amazon Q Business
 
 ServiceNow provides a cloud-based service management system to create and

@@ -1,3 +1,7 @@
+---
+title: "Amazon Q Developer for GitHub (Preview)"
+---
+
 # Amazon Q Developer for GitHub (Preview)
 
 ###### Note

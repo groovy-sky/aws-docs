@@ -1,3 +1,7 @@
+---
+title: "IAM role for Amazon Q Business Web Crawler connector"
+---
+
 # IAM role for Amazon Q Business Web Crawler connector
 
 To connect Web Crawler to Amazon Q Business, you must give Amazon Q an IAM role that has the following permissions.

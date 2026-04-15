@@ -1,3 +1,7 @@
+---
+title: "DeleteDataSource"
+---
+
 # DeleteDataSource
 
 Deletes an Amazon Q Business data source connector. While the data source is being

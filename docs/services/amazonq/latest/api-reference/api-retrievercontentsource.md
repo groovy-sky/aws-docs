@@ -1,3 +1,7 @@
+---
+title: "RetrieverContentSource"
+---
+
 # RetrieverContentSource
 
 Specifies a retriever as the content source for a search.

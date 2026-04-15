@@ -1,3 +1,7 @@
+---
+title: "Upgrade to Kiro"
+---
+
 # Upgrade to Kiro
 
 The Amazon Q Developer CLI has been rebranded to Kiro.

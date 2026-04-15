@@ -1,3 +1,7 @@
+---
+title: "Creating an Amazon Q custom connector"
+---
+
 # Creating an Amazon Q custom connector
 
 To use a custom data source, create an application environment that is responsible for updating

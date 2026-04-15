@@ -1,3 +1,7 @@
+---
+title: "AppliedAttachmentsConfiguration"
+---
+
 # AppliedAttachmentsConfiguration
 
 Configuration information about the file upload during chat feature for your

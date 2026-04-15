@@ -1,3 +1,7 @@
+---
+title: "Using Amazon Q Developer for line-by-line recommendations"
+---
+
 # Using Amazon Q Developer for line-by-line recommendations
 
 Depending on your use case, Amazon Q may not be able to generate an entire function block

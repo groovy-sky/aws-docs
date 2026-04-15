@@ -1,3 +1,7 @@
+---
+title: "QAppsConfiguration"
+---
+
 # QAppsConfiguration
 
 Configuration information about Amazon Q Apps.

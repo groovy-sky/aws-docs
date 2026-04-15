@@ -1,3 +1,7 @@
+---
+title: "How Amazon Q works with Jira access and refresh tokens"
+---
+
 # How Amazon Q works with Jira access and refresh tokens
 
 The following are important points to note about using Jira access

@@ -1,3 +1,7 @@
+---
+title: "StringListAttributeBoostingConfiguration"
+---
+
 # StringListAttributeBoostingConfiguration
 
 Provides information on boosting `STRING_LIST` type document

@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting transformations on the command line"
+---
+
 # Troubleshooting transformations on the command line
 
 The following information can help you troubleshoot common issues when transforming applications on the command line with Amazon Q Developer.

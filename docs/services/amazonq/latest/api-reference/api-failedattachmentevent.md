@@ -1,3 +1,7 @@
+---
+title: "FailedAttachmentEvent"
+---
+
 # FailedAttachmentEvent
 
 A failed file upload during web experience chat.

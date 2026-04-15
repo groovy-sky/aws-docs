@@ -1,3 +1,7 @@
+---
+title: "Source attribution with citations in Amazon Q Business"
+---
+
 # Source attribution with citations in Amazon Q Business
 
 The Amazon Q Business web experience chat response provides in-text source

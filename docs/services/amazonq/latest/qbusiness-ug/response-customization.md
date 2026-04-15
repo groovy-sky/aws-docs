@@ -1,3 +1,7 @@
+---
+title: "Customizing responses in Amazon Q Business"
+---
+
 # Customizing responses in Amazon Q Business
 
 _Response customization_ in Amazon Q Business allows you to

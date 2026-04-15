@@ -1,3 +1,7 @@
+---
+title: "GetGroup"
+---
+
 # GetGroup
 
 Describes a group by group name.

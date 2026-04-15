@@ -1,3 +1,7 @@
+---
+title: "Card"
+---
+
 # Card
 
 A card representing a component or step in an Amazon Q App's flow.

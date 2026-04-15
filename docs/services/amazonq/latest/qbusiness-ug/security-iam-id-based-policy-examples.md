@@ -1,3 +1,7 @@
+---
+title: "Identity-based policy examples for Amazon Q Business"
+---
+
 # Identity-based policy examples for Amazon Q Business
 
 By default, users and roles don't have permission to create or modify Amazon Q

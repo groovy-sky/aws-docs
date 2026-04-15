@@ -1,3 +1,7 @@
+---
+title: "PrincipalGroup"
+---
+
 # PrincipalGroup
 
 Provides information about a group associated with the principal.

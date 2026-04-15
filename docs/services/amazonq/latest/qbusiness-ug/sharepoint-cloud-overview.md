@@ -1,3 +1,7 @@
+---
+title: "SharePoint (Online) connector overview"
+---
+
 # SharePoint (Online) connector overview
 
 The following table gives an overview of the Amazon Q Business

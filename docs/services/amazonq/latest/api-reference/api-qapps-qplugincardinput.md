@@ -1,3 +1,7 @@
+---
+title: "QPluginCardInput"
+---
+
 # QPluginCardInput
 
 The input shape for defining a plugin card in an Amazon Q App.

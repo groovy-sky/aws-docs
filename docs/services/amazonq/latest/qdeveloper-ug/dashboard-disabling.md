@@ -1,3 +1,7 @@
+---
+title: "Disabling the Amazon Q Developer dashboard"
+---
+
 # Disabling the Amazon Q Developer dashboard
 
 You might want to disable the Amazon Q Developer dashboard if you have concerns about data privacy, page load

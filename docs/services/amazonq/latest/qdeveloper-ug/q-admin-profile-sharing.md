@@ -1,3 +1,7 @@
+---
+title: "Enabling profile sharing in Amazon Q Developer"
+---
+
 # Enabling profile sharing in Amazon Q Developer
 
 ###### Note

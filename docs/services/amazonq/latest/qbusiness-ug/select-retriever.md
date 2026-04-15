@@ -1,3 +1,7 @@
+---
+title: "Creating an index for an Amazon Q Business application"
+---
+
 # Creating an index for an Amazon Q Business application
 
 Before you can add data in your Amazon Q Business application, you need to

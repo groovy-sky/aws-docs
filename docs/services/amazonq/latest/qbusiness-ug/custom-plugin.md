@@ -1,3 +1,7 @@
+---
+title: "Custom plugins for Amazon Q Business"
+---
+
 # Custom plugins for Amazon Q Business
 
 You can use the Amazon Q Business console or APIs to create custom plugins for your

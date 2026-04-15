@@ -1,3 +1,7 @@
+---
+title: "What is Amazon Q Developer?"
+---
+
 # What is Amazon Q Developer?
 
 ###### Note

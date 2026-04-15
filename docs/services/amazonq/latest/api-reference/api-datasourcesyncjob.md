@@ -1,3 +1,7 @@
+---
+title: "DataSourceSyncJob"
+---
+
 # DataSourceSyncJob
 
 Provides information about an Amazon Q Business data source connector synchronization

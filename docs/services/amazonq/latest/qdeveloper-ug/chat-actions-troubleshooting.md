@@ -1,3 +1,7 @@
+---
+title: "Asking Amazon Q to troubleshoot your resources"
+---
+
 # Asking Amazon Q to troubleshoot your resources
 
 In the AWS Management Console, you can ask Amazon Q to troubleshoot issues you're having with your

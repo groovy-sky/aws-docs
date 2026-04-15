@@ -1,3 +1,7 @@
+---
+title: "Retriever"
+---
+
 # Retriever
 
 Summary information for the retriever used for your Amazon Q Business application.

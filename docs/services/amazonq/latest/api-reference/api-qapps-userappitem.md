@@ -1,3 +1,7 @@
+---
+title: "UserAppItem"
+---
+
 # UserAppItem
 
 An Amazon Q App associated with a user, either owned by the user or favorited.

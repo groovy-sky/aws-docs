@@ -1,3 +1,7 @@
+---
+title: "GetPlugin"
+---
+
 # GetPlugin
 
 Gets information about an existing Amazon Q Business plugin.

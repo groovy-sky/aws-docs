@@ -1,3 +1,7 @@
+---
+title: "Configuring the Amazon Q Developer Datadog plugin"
+---
+
 # Configuring the Amazon Q Developer Datadog plugin
 
 Datadog is a monitoring and security platform that provides infrastructure, application,

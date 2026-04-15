@@ -1,3 +1,7 @@
+---
+title: "Data storage in Amazon Q Developer"
+---
+
 # Data storage in Amazon Q Developer
 
 Amazon Q stores your questions, its responses, and additional context, such as console

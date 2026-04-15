@@ -1,3 +1,7 @@
+---
+title: "Connecting multiple Amazon Q Business applications to an Identity Provider"
+---
+
 # Connecting multiple Amazon Q Business applications to an Identity Provider
 
 You can connect multiple Amazon Q Business custom applications to a single SAML

@@ -1,3 +1,7 @@
+---
+title: "Known limitations for the Amazon Q Business Asana connector (Preview)"
+---
+
 # Known limitations for the Amazon Q Business Asana connector (Preview)
 
 The Asana connector has the following known limitations:

@@ -1,3 +1,7 @@
+---
+title: "Tag"
+---
+
 # Tag
 
 A list of key/value pairs that identify an index, FAQ, or data source. Tag keys and

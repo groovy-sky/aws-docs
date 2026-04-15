@@ -1,3 +1,7 @@
+---
+title: "DeleteApplication"
+---
+
 # DeleteApplication
 
 Deletes an Amazon Q Business application.

@@ -1,3 +1,7 @@
+---
+title: "Removing the browser extension as an integration"
+---
+
 # Removing the browser extension as an integration
 
 To disable the browser extension to your existing web experience, Admin users can

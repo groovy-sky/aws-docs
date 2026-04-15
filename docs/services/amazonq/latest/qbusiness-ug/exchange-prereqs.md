@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for connecting Amazon Q Business to Microsoft Exchange"
+---
+
 # Prerequisites for connecting Amazon Q Business to Microsoft Exchange
 
 **In Microsoft Exchange, make sure you**

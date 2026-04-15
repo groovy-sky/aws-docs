@@ -1,3 +1,7 @@
+---
+title: "Best practices for OpenAPI schema definition for custom plugins"
+---
+
 # Best practices for OpenAPI schema definition for custom plugins
 
 While application programming interfaces (APIs) have traditionally been used by

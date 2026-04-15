@@ -1,3 +1,7 @@
+---
+title: "DeleteLibraryItem"
+---
+
 # DeleteLibraryItem
 
 Deletes a library item for an Amazon Q App, removing it from the library so it can no longer

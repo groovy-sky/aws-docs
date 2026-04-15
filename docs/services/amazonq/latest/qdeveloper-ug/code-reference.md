@@ -1,3 +1,7 @@
+---
+title: "Using code references"
+---
+
 # Using code references
 
 Amazon Q learns, in part, from open-source projects. Sometimes, a suggestion it's giving you

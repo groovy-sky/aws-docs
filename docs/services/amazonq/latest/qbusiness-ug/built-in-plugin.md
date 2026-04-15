@@ -1,3 +1,7 @@
+---
+title: "Built-in plugins for Amazon Q Business"
+---
+
 # Built-in plugins for Amazon Q Business
 
 Built-in plugins have already been built by Amazon Q Business for common use cases across

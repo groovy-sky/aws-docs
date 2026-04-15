@@ -1,3 +1,7 @@
+---
+title: "PluginAuthConfiguration"
+---
+
 # PluginAuthConfiguration
 
 Authentication configuration information for an Amazon Q Business plugin.

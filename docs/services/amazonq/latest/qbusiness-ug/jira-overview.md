@@ -1,3 +1,7 @@
+---
+title: "Jira connector overview"
+---
+
 # Jira connector overview
 
 The following table gives an overview of the Amazon Q Business

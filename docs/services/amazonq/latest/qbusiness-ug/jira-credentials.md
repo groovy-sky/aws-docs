@@ -1,3 +1,7 @@
+---
+title: "Setting up Jira for connecting to Amazon Q Business"
+---
+
 # Setting up Jira for connecting to Amazon Q Business
 
 Before you connect Jira to Amazon Q Business, you need to create

@@ -1,3 +1,7 @@
+---
+title: "PluginConfiguration"
+---
+
 # PluginConfiguration
 
 Configuration information required to invoke chat in `PLUGIN_MODE`.

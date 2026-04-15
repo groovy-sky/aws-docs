@@ -1,3 +1,7 @@
+---
+title: "GetLibraryItem"
+---
+
 # GetLibraryItem
 
 Retrieves details about a library item for an Amazon Q App, including its metadata,

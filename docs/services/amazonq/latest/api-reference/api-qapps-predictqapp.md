@@ -1,3 +1,7 @@
+---
+title: "PredictQApp"
+---
+
 # PredictQApp
 
 Generates an Amazon Q App definition based on either a conversation or a problem statement

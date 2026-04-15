@@ -1,3 +1,7 @@
+---
+title: "SubmissionMutation"
+---
+
 # SubmissionMutation
 
 Represents an action performed on a submission.

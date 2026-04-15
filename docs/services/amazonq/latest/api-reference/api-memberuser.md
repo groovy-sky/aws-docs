@@ -1,3 +1,7 @@
+---
+title: "MemberUser"
+---
+
 # MemberUser
 
 The users that belong to a group.

@@ -1,3 +1,7 @@
+---
+title: "AssociateLibraryItemReview"
+---
+
 # AssociateLibraryItemReview
 
 Associates a rating or review for a library item with the user submitting the request.

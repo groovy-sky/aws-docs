@@ -1,3 +1,7 @@
+---
+title: "Connecting Amazon Q custom connector to Amazon Q Business"
+---
+
 # Connecting Amazon Q custom connector to Amazon Q Business
 
 Use a custom data source when you have a repository that Amazon Q Business doesn’t

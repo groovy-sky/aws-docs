@@ -1,3 +1,7 @@
+---
+title: "Document enrichment in Amazon Q Business"
+---
+
 # Document enrichment in Amazon Q Business
 
 ###### Important

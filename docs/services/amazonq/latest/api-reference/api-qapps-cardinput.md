@@ -1,3 +1,7 @@
+---
+title: "CardInput"
+---
+
 # CardInput
 
 The properties defining an input card in an Amazon Q App.

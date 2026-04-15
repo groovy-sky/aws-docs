@@ -1,3 +1,7 @@
+---
+title: "GitLab Duo concepts"
+---
+
 # GitLab Duo concepts
 
 Here are some concepts and terms to know when using

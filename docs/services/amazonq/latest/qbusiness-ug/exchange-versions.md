@@ -1,3 +1,7 @@
+---
+title: "Microsoft Exchange connector versions"
+---
+
 # Microsoft Exchange connector versions
 
 You can choose between two Microsoft Exchange connector versions:

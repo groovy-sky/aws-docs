@@ -1,3 +1,7 @@
+---
+title: "Creating an Amazon Q Business application environment"
+---
+
 # Creating an Amazon Q Business application environment
 
 To create an Amazon Q Business application environment, you can use either the AWS Management Console

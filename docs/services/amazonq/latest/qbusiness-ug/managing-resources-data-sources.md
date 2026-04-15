@@ -1,3 +1,7 @@
+---
+title: "Managing Amazon Q Business data source resources"
+---
+
 # Managing Amazon Q Business data source resources
 
 You can choose to manage your Amazon Q Business application environment and associated

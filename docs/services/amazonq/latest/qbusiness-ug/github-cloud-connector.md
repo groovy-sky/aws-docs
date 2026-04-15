@@ -1,3 +1,7 @@
+---
+title: "Connecting GitHub (Cloud) to Amazon Q Business"
+---
+
 # Connecting GitHub (Cloud) to Amazon Q Business
 
 GitHub (Cloud) is a web-based hosting service for software development providing code

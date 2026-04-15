@@ -1,3 +1,7 @@
+---
+title: "Can't see subscribed users"
+---
+
 # Can't see subscribed users
 
 **Problem: Subscribed users are not appearing in the Amazon Q Developer**

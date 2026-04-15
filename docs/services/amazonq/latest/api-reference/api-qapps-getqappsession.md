@@ -1,3 +1,7 @@
+---
+title: "GetQAppSession"
+---
+
 # GetQAppSession
 
 Retrieves the current state and results for an active session of an Amazon Q App.

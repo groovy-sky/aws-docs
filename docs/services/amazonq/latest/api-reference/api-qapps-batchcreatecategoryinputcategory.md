@@ -1,3 +1,7 @@
+---
+title: "BatchCreateCategoryInputCategory"
+---
+
 # BatchCreateCategoryInputCategory
 
 The category object to be created.

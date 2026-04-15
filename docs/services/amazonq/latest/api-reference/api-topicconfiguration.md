@@ -1,3 +1,7 @@
+---
+title: "TopicConfiguration"
+---
+
 # TopicConfiguration
 
 The topic specific controls configured for an Amazon Q Business application.

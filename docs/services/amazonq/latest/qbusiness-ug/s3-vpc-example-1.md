@@ -1,3 +1,7 @@
+---
+title: "Using Amazon VPC with an Amazon S3 data source"
+---
+
 # Using Amazon VPC with an Amazon S3 data source
 
 This topic describes the requirements for connecting Amazon Q Business

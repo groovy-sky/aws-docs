@@ -1,3 +1,7 @@
+---
+title: "Sharing Amazon Q Apps"
+---
+
 # Sharing Amazon Q Apps
 
 Amazon Q Apps allows you to privately share your Q Apps with specific users within

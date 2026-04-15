@@ -1,3 +1,7 @@
+---
+title: "Unable to subscribe users"
+---
+
 # Unable to subscribe users
 
 **Problem: Unable to subscribe users to Amazon Q Developer Pro**

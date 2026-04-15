@@ -1,3 +1,7 @@
+---
+title: "Connecting an Amazon Q Business data source using APIs"
+---
+
 # Connecting an Amazon Q Business data source using APIs
 
 Amazon Q Business supports data source connector configuration through both the

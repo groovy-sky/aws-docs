@@ -1,3 +1,7 @@
+---
+title: "Configuring the Amazon Q Developer CloudZero plugin"
+---
+
 # Configuring the Amazon Q Developer CloudZero plugin
 
 CloudZero is a cloud cost optimization platform that evaluates costs to improve cloud efficiency. If

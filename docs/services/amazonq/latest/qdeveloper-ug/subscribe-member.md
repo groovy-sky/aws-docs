@@ -1,3 +1,7 @@
+---
+title: "Subscribe users to Amazon Q Developer Pro in a member account"
+---
+
 # Subscribe users to Amazon Q Developer Pro in a member account
 
 A _member account_ is an AWS account, other than the management account, that

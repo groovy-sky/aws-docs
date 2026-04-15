@@ -1,3 +1,7 @@
+---
+title: "Amazon Q Developer service improvement"
+---
+
 # Amazon Q Developer service improvement
 
 To help Amazon Q Developer provide the most relevant information, we may use certain content

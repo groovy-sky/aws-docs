@@ -1,3 +1,7 @@
+---
+title: "DeleteUser"
+---
+
 # DeleteUser
 
 Deletes a user by email id.

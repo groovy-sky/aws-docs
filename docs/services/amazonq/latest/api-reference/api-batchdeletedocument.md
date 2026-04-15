@@ -1,3 +1,7 @@
+---
+title: "BatchDeleteDocument"
+---
+
 # BatchDeleteDocument
 
 Asynchronously deletes one or more documents added using the

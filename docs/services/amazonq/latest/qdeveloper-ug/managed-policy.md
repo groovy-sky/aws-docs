@@ -1,3 +1,7 @@
+---
+title: "AWS managed policies for Amazon Q Developer"
+---
+
 # AWS managed policies for Amazon Q Developer
 
 An AWS managed policy is a standalone policy that is created and administered by AWS. AWS

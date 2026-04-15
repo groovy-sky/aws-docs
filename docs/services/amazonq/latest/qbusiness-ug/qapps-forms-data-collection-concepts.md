@@ -1,3 +1,7 @@
+---
+title: "Data collection concepts"
+---
+
 # Data collection concepts
 
 This topic outlines specific concepts and features of Data collection forms in

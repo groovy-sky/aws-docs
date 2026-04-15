@@ -1,3 +1,7 @@
+---
+title: "Supported languages for Amazon Q Business"
+---
+
 # Supported languages for Amazon Q Business
 
 Amazon Q Business is optimized to respond in English. Amazon Q Business only

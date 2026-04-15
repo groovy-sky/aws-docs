@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting your Microsoft Teams connector"
+---
+
 # Troubleshooting your Microsoft Teams connector
 
 The following table provides information about error codes you might see for the

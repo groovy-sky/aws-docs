@@ -1,3 +1,7 @@
+---
+title: "Managing users and groups for an Amazon Q Business application using APIs"
+---
+
 # Managing users and groups for an Amazon Q Business application using APIs
 
 Amazon Q Business provides APIs to manage users and groups in your Amazon Q Business. You can't configure user management using the

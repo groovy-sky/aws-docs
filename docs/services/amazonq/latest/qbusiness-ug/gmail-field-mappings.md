@@ -1,3 +1,7 @@
+---
+title: "Gmail data source connector field mappings"
+---
+
 # Gmail data source connector field mappings
 
 You can improve search results and customize your users' chat experience by mapping document attributes from your Gmail data to fields in your Amazon Q index.

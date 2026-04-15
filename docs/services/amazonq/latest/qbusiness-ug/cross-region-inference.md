@@ -1,3 +1,7 @@
+---
+title: "Cross-region inference in Amazon Q Business"
+---
+
 # Cross-region inference in Amazon Q Business
 
 With cross-region inference, Amazon Q Business will automatically select the optimal

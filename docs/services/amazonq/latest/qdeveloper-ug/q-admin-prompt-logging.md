@@ -1,3 +1,7 @@
+---
+title: "Logging users' prompts in Amazon Q Developer"
+---
+
 # Logging users' prompts in Amazon Q Developer
 
 Administrators can enable the logging of all [inline\

@@ -1,3 +1,7 @@
+---
+title: "Amazon Q Developer rename - Summary of changes"
+---
+
 # Amazon Q Developer rename - Summary of changes
 
 On April 30, 2024, Amazon CodeWhisperer became a part of Amazon Q Developer. This section points you to

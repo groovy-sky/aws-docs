@@ -1,3 +1,7 @@
+---
+title: "Custom labels for Amazon Q Apps"
+---
+
 # Custom labels for Amazon Q Apps
 
 To organize and classify apps based on your unique business needs, Administrators can

@@ -1,3 +1,7 @@
+---
+title: "Configuring a Jira plugin for Amazon Q Business"
+---
+
 # Configuring a Jira plugin for Amazon Q Business
 
 Jira is a project management tool that creates issues (tickets) for software

@@ -1,3 +1,7 @@
+---
+title: "UpdateSubscription"
+---
+
 # UpdateSubscription
 
 Updates the pricing tier for an Amazon Q Business subscription. Upgrades are instant.

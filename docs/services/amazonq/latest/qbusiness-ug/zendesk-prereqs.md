@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for connecting Amazon Q Business to Zendesk"
+---
+
 # Prerequisites for connecting Amazon Q Business to Zendesk
 
 Before you begin, make sure that you have completed the following

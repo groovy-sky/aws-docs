@@ -1,3 +1,7 @@
+---
+title: "AuthChallengeRequestEvent"
+---
+
 # AuthChallengeRequestEvent
 
 An authentication verification event activated by an end user request to use a custom

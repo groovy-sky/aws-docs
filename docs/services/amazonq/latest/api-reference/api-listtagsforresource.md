@@ -1,3 +1,7 @@
+---
+title: "ListTagsForResource"
+---
+
 # ListTagsForResource
 
 Gets a list of tags associated with a specified resource. Amazon Q Business applications

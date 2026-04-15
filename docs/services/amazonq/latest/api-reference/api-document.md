@@ -1,3 +1,7 @@
+---
+title: "Document"
+---
+
 # Document
 
 A document in an Amazon Q Business application.

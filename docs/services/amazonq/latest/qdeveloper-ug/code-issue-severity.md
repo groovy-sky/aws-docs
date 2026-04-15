@@ -1,3 +1,7 @@
+---
+title: "Code issue severity in Amazon Q Developer code reviews"
+---
+
 # Code issue severity in Amazon Q Developer code reviews
 
 Amazon Q defines the severity of the code issues detected in your code so

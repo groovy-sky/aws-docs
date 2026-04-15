@@ -1,3 +1,7 @@
+---
+title: "Subscribe users to Amazon Q Developer Pro in a standalone account"
+---
+
 # Subscribe users to Amazon Q Developer Pro in a standalone account
 
 A _standalone_ account is one that is _not_ part of an

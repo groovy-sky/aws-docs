@@ -1,3 +1,7 @@
+---
+title: "ImageSourceDetails"
+---
+
 # ImageSourceDetails
 
 Details about an image source, including its identifier and format.

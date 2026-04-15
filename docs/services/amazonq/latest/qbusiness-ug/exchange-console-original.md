@@ -1,3 +1,7 @@
+---
+title: "Connecting using the Legacy Microsoft Exchange Connector (Console)"
+---
+
 # Connecting using the Legacy Microsoft Exchange Connector (Console)
 
 The legacy Microsoft Exchange connector provides comprehensive configuration options including entity type selection, field mappings, and VPC settings. The following procedure shows how to connect Amazon Q Business to Microsoft Exchange using the legacy connector.

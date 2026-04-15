@@ -1,3 +1,7 @@
+---
+title: "Viewing, deleting, and exporting the Amazon Q Developer conversation history"
+---
+
 # Viewing, deleting, and exporting the Amazon Q Developer conversation history
 
 When you chat with Amazon Q in the integrated development environment (IDE), Amazon Q saves each of your

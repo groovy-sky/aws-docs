@@ -1,3 +1,7 @@
+---
+title: "Using Amazon Q Developer with AWS Glue Studio"
+---
+
 # Using Amazon Q Developer with AWS Glue Studio
 
 This page describes how to set up and activate Amazon Q Developer for [AWS Glue Studio Notebook](../../../glue/latest/ug/notebooks-chapter.md). Once

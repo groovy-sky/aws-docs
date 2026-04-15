@@ -1,3 +1,7 @@
+---
+title: "Amazon Q Business chat message and feedback log examples"
+---
+
 # Amazon Q Business chat message and feedback log examples
 
 The following are examples of Amazon Q Business chat message and feedback logs in CloudWatch Logs.

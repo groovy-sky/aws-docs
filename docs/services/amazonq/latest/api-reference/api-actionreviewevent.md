@@ -1,3 +1,7 @@
+---
+title: "ActionReviewEvent"
+---
+
 # ActionReviewEvent
 
 An output event that Amazon Q Business returns to an user who wants to perform a plugin

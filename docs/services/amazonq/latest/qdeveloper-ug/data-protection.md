@@ -1,3 +1,7 @@
+---
+title: "Data protection in Amazon Q Developer"
+---
+
 # Data protection in Amazon Q Developer
 
 The AWS

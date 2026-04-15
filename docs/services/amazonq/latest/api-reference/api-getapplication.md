@@ -1,3 +1,7 @@
+---
+title: "GetApplication"
+---
+
 # GetApplication
 
 Gets information about an existing Amazon Q Business application.

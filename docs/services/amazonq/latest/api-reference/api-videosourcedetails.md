@@ -1,3 +1,7 @@
+---
+title: "VideoSourceDetails"
+---
+
 # VideoSourceDetails
 
 Details about a video source, including its identifier, format, and time information.

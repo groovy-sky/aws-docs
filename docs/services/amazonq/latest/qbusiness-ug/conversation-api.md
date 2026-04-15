@@ -1,3 +1,7 @@
+---
+title: "Chat and conversation management for an Amazon Q Business application using APIs"
+---
+
 # Chat and conversation management for an Amazon Q Business application using APIs
 
 Chatting in an Amazon Q Business web experience preview and a deployed Amazon Q Business web experience uses the following API operations.

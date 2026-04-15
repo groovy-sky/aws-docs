@@ -1,3 +1,7 @@
+---
+title: "IndexStatistics"
+---
+
 # IndexStatistics
 
 Provides information about the number of documents in an index.

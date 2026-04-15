@@ -1,3 +1,7 @@
+---
+title: "Amazon Q Business boosting types"
+---
+
 # Amazon Q Business boosting types
 
 ###### Note

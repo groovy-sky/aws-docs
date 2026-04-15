@@ -1,3 +1,7 @@
+---
+title: "Configuring registered installation details"
+---
+
 # Configuring registered installation details
 
 ###### Note

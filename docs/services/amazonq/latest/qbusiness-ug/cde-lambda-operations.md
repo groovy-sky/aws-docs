@@ -1,3 +1,7 @@
+---
+title: "Using Lambda functions for Amazon Q Business document enrichment"
+---
+
 # Using Lambda functions for Amazon Q Business document enrichment
 
 You can use Lambda functions to prepare your document attributes for

@@ -1,3 +1,7 @@
+---
+title: "NoAuthConfiguration"
+---
+
 # NoAuthConfiguration
 
 Information about invoking a custom plugin without any authentication or authorization

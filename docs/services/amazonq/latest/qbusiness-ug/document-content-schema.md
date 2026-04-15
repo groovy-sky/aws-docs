@@ -1,3 +1,7 @@
+---
+title: "GetDocumentContent Output Schema"
+---
+
 # GetDocumentContent Output Schema
 
 When you use the [GetDocumentContent](../api-reference/api-getdocumentcontent.md) API with `outputFormat`

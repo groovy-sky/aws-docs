@@ -1,3 +1,7 @@
+---
+title: "Using Amazon Q Developer with Amazon EMR Studio"
+---
+
 # Using Amazon Q Developer with Amazon EMR Studio
 
 This page describes how to set up and activate Amazon Q Developer for Amazon EMR Studio. Once

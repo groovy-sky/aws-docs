@@ -1,3 +1,7 @@
+---
+title: "BlockedPhrasesConfiguration"
+---
+
 # BlockedPhrasesConfiguration
 
 Provides information about the phrases blocked from chat by your chat control

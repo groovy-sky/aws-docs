@@ -1,3 +1,7 @@
+---
+title: "Known limitations for the Dropbox connector"
+---
+
 # Known limitations for the Dropbox connector
 
 The Dropbox connector has the following known limitations:

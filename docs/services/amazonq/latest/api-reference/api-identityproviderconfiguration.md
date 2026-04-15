@@ -1,3 +1,7 @@
+---
+title: "IdentityProviderConfiguration"
+---
+
 # IdentityProviderConfiguration
 
 Provides information about the identity provider (IdP) used to authenticate end users

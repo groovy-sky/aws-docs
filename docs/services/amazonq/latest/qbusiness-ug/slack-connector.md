@@ -1,3 +1,7 @@
+---
+title: "Connecting Slack to Amazon Q Business"
+---
+
 # Connecting Slack to Amazon Q Business
 
 Slack is an enterprise communications app that lets users send messages and

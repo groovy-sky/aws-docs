@@ -1,3 +1,7 @@
+---
+title: "Submission"
+---
+
 # Submission
 
 A record created when a user submits a form card.

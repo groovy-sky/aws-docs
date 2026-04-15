@@ -1,3 +1,7 @@
+---
+title: "Configuring metadata controls in Amazon Q Business"
+---
+
 # Configuring metadata controls in Amazon Q Business
 
 ###### Note

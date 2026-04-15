@@ -1,3 +1,7 @@
+---
+title: "DocumentAttribute"
+---
+
 # DocumentAttribute
 
 A document attribute or metadata field.

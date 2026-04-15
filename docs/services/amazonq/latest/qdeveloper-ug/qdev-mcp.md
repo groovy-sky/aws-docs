@@ -1,3 +1,7 @@
+---
+title: "Using MCP with Amazon Q Developer"
+---
+
 # Using MCP with Amazon Q Developer
 
 The Model Context Protocol (MCP) is an open standard that enables AI assistants to interact with external tools and services. Amazon Q Developer CLI now supports MCP, allowing you to extend Q's capabilities by connecting it to custom tools and services.

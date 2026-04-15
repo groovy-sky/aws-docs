@@ -1,3 +1,7 @@
+---
+title: "OAuth2ClientCredentialConfiguration"
+---
+
 # OAuth2ClientCredentialConfiguration
 
 Information about the OAuth 2.0 authentication credential/token used to configure a

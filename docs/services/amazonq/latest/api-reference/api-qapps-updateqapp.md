@@ -1,3 +1,7 @@
+---
+title: "UpdateQApp"
+---
+
 # UpdateQApp
 
 Updates an existing Amazon Q App, allowing modifications to its title, description, and

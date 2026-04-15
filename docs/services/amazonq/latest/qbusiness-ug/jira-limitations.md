@@ -1,3 +1,7 @@
+---
+title: "Known limitations for the Amazon Q Jira connector"
+---
+
 # Known limitations for the Amazon Q Jira connector
 
 The Amazon Q Jira connector has the following known

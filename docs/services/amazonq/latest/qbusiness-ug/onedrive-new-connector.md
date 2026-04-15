@@ -1,3 +1,7 @@
+---
+title: "Connecting Microsoft OneDrive to Amazon Q Business (New)"
+---
+
 # Connecting Microsoft OneDrive to Amazon Q Business (New)
 
 ###### Note

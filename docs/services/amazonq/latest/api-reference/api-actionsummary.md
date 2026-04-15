@@ -1,3 +1,7 @@
+---
+title: "ActionSummary"
+---
+
 # ActionSummary
 
 Summary information for an Amazon Q Business plugin action.

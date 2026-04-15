@@ -1,3 +1,7 @@
+---
+title: "CreateDataSource"
+---
+
 # CreateDataSource
 
 Creates a data source connector for an Amazon Q Business application.

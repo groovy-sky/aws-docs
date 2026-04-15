@@ -1,3 +1,7 @@
+---
+title: "Creating an Amazon Q Business application using Identity Federation through IAM"
+---
+
 # Creating an Amazon Q Business application using Identity Federation through IAM
 
 This section walks you through creating and configuring an Amazon Q Business

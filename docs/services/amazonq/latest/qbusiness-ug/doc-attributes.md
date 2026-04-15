@@ -1,3 +1,7 @@
+---
+title: "Document attributes in Amazon Q Business"
+---
+
 # Document attributes in Amazon Q Business
 
 Every document has structural attributes—or metadata—attached to it.

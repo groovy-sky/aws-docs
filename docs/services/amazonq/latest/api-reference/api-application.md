@@ -1,3 +1,7 @@
+---
+title: "Application"
+---
+
 # Application
 
 Summary information for an Amazon Q Business application.

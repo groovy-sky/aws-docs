@@ -1,3 +1,7 @@
+---
+title: "GetIndex"
+---
+
 # GetIndex
 
 Gets information about an existing Amazon Q Business index.

@@ -1,3 +1,7 @@
+---
+title: "Connecting Confluence (Server/Data Center) to Amazon Q Business"
+---
+
 # Connecting Confluence (Server/Data Center) to Amazon Q Business
 
 Atlassian Confluence is a collaborative work-management tool designed for sharing, storing,

@@ -1,3 +1,7 @@
+---
+title: "Subscription"
+---
+
 # Subscription
 
 Information about an Amazon Q Business subscription.

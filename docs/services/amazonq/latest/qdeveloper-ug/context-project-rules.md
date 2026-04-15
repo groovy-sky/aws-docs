@@ -1,3 +1,7 @@
+---
+title: "Creating project rules for use with Amazon Q Developer chat"
+---
+
 # Creating project rules for use with Amazon Q Developer chat
 
 You can build a library of project rules that you can use when chatting with Amazon Q in the IDE.

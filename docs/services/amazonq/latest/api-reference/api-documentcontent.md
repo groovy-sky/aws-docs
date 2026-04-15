@@ -1,3 +1,7 @@
+---
+title: "DocumentContent"
+---
+
 # DocumentContent
 
 The contents of a document.

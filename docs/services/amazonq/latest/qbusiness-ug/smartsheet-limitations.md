@@ -1,3 +1,7 @@
+---
+title: "Known limitations for the Smartsheet connector"
+---
+
 # Known limitations for the Smartsheet connector
 
 The Smartsheet connector has the following known limitations:

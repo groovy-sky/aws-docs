@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting Amazon Q Developer Pro subscriptions"
+---
+
 # Troubleshooting Amazon Q Developer Pro subscriptions
 
 If you are having trouble with Amazon Q Developer Pro subscriptions, review the following issues to understand

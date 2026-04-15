@@ -1,3 +1,7 @@
+---
+title: "UpdatePlugin"
+---
+
 # UpdatePlugin
 
 Updates an Amazon Q Business plugin.

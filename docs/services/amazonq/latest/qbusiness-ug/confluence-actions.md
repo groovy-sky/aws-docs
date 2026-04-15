@@ -1,3 +1,7 @@
+---
+title: "Configuring an Atlassian Confluence plugin for Amazon Q Business"
+---
+
 # Configuring an Atlassian Confluence plugin for Amazon Q Business
 
 Atlassian Confluence is a collaborative work-management tool designed for sharing, storing,

@@ -1,3 +1,7 @@
+---
+title: "EndOfInputEvent"
+---
+
 # EndOfInputEvent
 
 The end of the streaming input for the `Chat` API.

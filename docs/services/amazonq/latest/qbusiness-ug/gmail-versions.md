@@ -1,3 +1,7 @@
+---
+title: "Gmail connector versions"
+---
+
 # Gmail connector versions
 
 Gmail offers two connector versions to meet different configuration needs:

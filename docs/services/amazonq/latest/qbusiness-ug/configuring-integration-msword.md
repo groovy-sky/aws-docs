@@ -1,3 +1,7 @@
+---
+title: "Configuring the Amazon Q Business Microsoft Word Add-in for use"
+---
+
 # Configuring the Amazon Q Business Microsoft Word Add-in for use
 
 ###### Note

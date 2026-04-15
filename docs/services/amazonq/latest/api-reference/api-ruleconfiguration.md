@@ -1,3 +1,7 @@
+---
+title: "RuleConfiguration"
+---
+
 # RuleConfiguration
 
 Provides configuration information about a rule.

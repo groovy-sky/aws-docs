@@ -1,3 +1,7 @@
+---
+title: "IAM role for an Amazon Q Business web experience using IAM Identity Center"
+---
+
 # IAM role for an Amazon Q Business web experience using IAM Identity Center
 
 ###### Important

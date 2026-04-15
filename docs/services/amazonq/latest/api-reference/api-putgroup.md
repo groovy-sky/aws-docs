@@ -1,3 +1,7 @@
+---
+title: "PutGroup"
+---
+
 # PutGroup
 
 Create, or updates, a mapping of users—who have access to a document—to

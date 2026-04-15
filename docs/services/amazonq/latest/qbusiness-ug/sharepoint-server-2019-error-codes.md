@@ -1,3 +1,7 @@
+---
+title: "Understand error codes in the SharePoint Server 2019 connector"
+---
+
 # Understand error codes in the SharePoint Server 2019 connector
 
 The following table provides information about error codes you may see for the

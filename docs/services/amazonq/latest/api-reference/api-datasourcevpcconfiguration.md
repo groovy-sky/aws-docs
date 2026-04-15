@@ -1,3 +1,7 @@
+---
+title: "DataSourceVpcConfiguration"
+---
+
 # DataSourceVpcConfiguration
 
 Provides configuration information needed to connect to an Amazon VPC (Virtual

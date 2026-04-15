@@ -1,3 +1,7 @@
+---
+title: "CreateApplication"
+---
+
 # CreateApplication
 
 Creates an Amazon Q Business application.

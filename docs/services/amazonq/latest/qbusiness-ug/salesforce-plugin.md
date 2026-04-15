@@ -1,3 +1,7 @@
+---
+title: "Configuring a Salesforce plugin for Amazon Q Business"
+---
+
 # Configuring a Salesforce plugin for Amazon Q Business
 
 Salesforce is a customer relationship management (CRM) tool for managing support,

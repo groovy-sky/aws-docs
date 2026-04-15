@@ -1,3 +1,7 @@
+---
+title: "AppDefinition"
+---
+
 # AppDefinition
 
 The definition of the Q App, specifying the cards and flow.

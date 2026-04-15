@@ -1,3 +1,7 @@
+---
+title: "Index"
+---
+
 # Index
 
 Summary information for your Amazon Q Business index.

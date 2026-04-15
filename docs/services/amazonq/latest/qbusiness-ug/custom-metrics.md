@@ -1,3 +1,7 @@
+---
+title: "Viewing metrics"
+---
+
 # Viewing metrics
 
 After a sync job is finished, you can use the `DataSourceSyncJobMetrics`

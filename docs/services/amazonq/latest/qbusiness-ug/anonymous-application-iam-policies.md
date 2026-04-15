@@ -1,3 +1,7 @@
+---
+title: "Example IAM policies for Amazon Q Business application environment supporting anonymous access"
+---
+
 # Example IAM policies for Amazon Q Business application environment supporting anonymous access
 
 We strongly recommend that you use a restricted policies for the role that will be

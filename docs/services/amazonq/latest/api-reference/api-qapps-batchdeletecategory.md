@@ -1,3 +1,7 @@
+---
+title: "BatchDeleteCategory"
+---
+
 # BatchDeleteCategory
 
 Deletes Categories for the Amazon Q Business application environment instance. Web experience users use

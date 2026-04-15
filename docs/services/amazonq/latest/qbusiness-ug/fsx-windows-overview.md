@@ -1,3 +1,7 @@
+---
+title: "Amazon FSx (Windows) connector overview"
+---
+
 # Amazon FSx (Windows) connector overview
 
 The following table gives an overview of the Amazon FSx (Windows) connector and its

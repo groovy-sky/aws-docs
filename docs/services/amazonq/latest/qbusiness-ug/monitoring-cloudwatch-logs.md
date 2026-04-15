@@ -1,3 +1,7 @@
+---
+title: "Monitoring Amazon Q Business user conversations with Amazon CloudWatch Logs"
+---
+
 # Monitoring Amazon Q Business user conversations with Amazon CloudWatch Logs
 
 You can use [Amazon CloudWatch Logs](../../../amazoncloudwatch/latest/logs/aws-logs-and-resource-policy.md) to

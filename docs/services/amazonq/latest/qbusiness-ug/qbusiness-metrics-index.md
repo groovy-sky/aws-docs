@@ -1,3 +1,7 @@
+---
+title: "Amazon Q Business index metrics"
+---
+
 # Amazon Q Business index metrics
 
 The following table shows the [Index](concepts-terms.md#index) metrics that

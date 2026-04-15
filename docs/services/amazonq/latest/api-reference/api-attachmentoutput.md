@@ -1,3 +1,7 @@
+---
+title: "AttachmentOutput"
+---
+
 # AttachmentOutput
 
 The details of a file uploaded during chat.

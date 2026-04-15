@@ -1,3 +1,7 @@
+---
+title: "Connecting Gmail to Amazon Q Business"
+---
+
 # Connecting Gmail to Amazon Q Business
 
 With Amazon Q Business, you can connect your Gmail enterprise email

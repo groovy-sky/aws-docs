@@ -1,3 +1,7 @@
+---
+title: "Administrator permissions"
+---
+
 # Administrator permissions
 
 The following policies allow Amazon Q Developer administrators to perform administrative tasks in

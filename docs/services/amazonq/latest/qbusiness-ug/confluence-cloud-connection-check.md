@@ -1,3 +1,7 @@
+---
+title: "Checking Confluence (Cloud) connectivity"
+---
+
 # Checking Confluence (Cloud) connectivity
 
 Before you sync your Confluence (Cloud) data source connector after [configuring it](confluence-cloud-console.md), we recommend you check the

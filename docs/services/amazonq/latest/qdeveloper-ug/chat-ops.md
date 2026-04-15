@@ -1,3 +1,7 @@
+---
+title: "Chatting about your telemetry and operations"
+---
+
 # Chatting about your telemetry and operations
 
 Amazon Q analyzes your CloudWatch telemetry and operational data to help manage your AWS environment. It

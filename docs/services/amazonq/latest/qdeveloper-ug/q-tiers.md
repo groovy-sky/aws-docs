@@ -1,3 +1,7 @@
+---
+title: "Tiers of service for Q Developer – Free and Pro"
+---
+
 # Tiers of service for Q Developer – Free and Pro
 
 With Amazon Q Developer, you either use Amazon Q Developer at the Free or Pro tier. Review the

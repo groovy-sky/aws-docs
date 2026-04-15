@@ -1,3 +1,7 @@
+---
+title: "ChatSync"
+---
+
 # ChatSync
 
 Starts or continues a non-streaming Amazon Q Business conversation.

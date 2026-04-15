@@ -1,3 +1,7 @@
+---
+title: "Defining OpenAPI schemas for custom plugins"
+---
+
 # Defining OpenAPI schemas for custom plugins
 
 Amazon Q Business uses the configured third-party OpenAPI specifications to

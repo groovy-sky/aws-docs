@@ -1,3 +1,7 @@
+---
+title: "Enhancing web browsing with Amazon Q Business"
+---
+
 # Enhancing web browsing with Amazon Q Business
 
 The Amazon Q Business browser extension enhances your users' web browsing

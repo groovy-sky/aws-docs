@@ -1,3 +1,7 @@
+---
+title: "User permissions"
+---
+
 # User permissions
 
 The following policies allow users to access features of Amazon Q Developer on AWS apps and

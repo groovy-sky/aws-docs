@@ -1,3 +1,7 @@
+---
+title: "Chat"
+---
+
 # Chat
 
 Starts or continues a streaming Amazon Q Business conversation.

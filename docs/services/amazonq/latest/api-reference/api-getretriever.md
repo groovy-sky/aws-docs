@@ -1,3 +1,7 @@
+---
+title: "GetRetriever"
+---
+
 # GetRetriever
 
 Gets information about an existing retriever used by an Amazon Q Business

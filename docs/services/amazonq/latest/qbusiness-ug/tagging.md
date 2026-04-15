@@ -1,3 +1,7 @@
+---
+title: "Tagging Amazon Q Business resources"
+---
+
 # Tagging Amazon Q Business resources
 
 Manage your Amazon Q Business applications and web experiences by assigning tags.

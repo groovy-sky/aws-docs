@@ -1,3 +1,7 @@
+---
+title: "Supported languages for Amazon Q Developer in the IDE"
+---
+
 # Supported languages for Amazon Q Developer in the IDE
 
 You can use the following features of Amazon Q Developer in the IDE with any programming

@@ -1,3 +1,7 @@
+---
+title: "Installing the Amazon Q Developer extension or plugin in your IDE"
+---
+
 # Installing the Amazon Q Developer extension or plugin in your IDE
 
 To set up Amazon Q Developer in your integrated development environment (IDE), complete the following steps.

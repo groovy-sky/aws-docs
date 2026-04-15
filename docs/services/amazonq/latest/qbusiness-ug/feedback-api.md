@@ -1,3 +1,7 @@
+---
+title: "User feedback using Amazon Q Business APIs"
+---
+
 # User feedback using Amazon Q Business APIs
 
 Amazon Q Business captures end user feedback to chat responses to help address

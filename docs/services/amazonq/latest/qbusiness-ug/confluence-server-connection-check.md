@@ -1,3 +1,7 @@
+---
+title: "Checking Confluence (Server/Data Center) connectivity"
+---
+
 # Checking Confluence (Server/Data Center) connectivity
 
 Before you sync your Confluence (Server/Data Center) data source connector after [configuring it](confluence-server-console.md), we recommend you check the connection

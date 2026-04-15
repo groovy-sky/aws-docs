@@ -1,3 +1,7 @@
+---
+title: "TextOutputEvent"
+---
+
 # TextOutputEvent
 
 An output event for an AI-generated response in an Amazon Q Business web

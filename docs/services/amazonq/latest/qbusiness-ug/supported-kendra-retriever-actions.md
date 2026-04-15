@@ -1,3 +1,7 @@
+---
+title: "Managing Amazon Kendra indices"
+---
+
 # Managing Amazon Kendra indices
 
 To manage Amazon Kendra indices being used as retrievers, you can take the following

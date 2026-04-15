@@ -1,3 +1,7 @@
+---
+title: "Configuring Amazon VPC support for Amazon Q Business connectors"
+---
+
 # Configuring Amazon VPC support for Amazon Q Business connectors
 
 To configure Amazon VPC for use with your Amazon Q Business

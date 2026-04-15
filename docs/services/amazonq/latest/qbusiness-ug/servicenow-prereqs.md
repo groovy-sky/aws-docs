@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for connecting Amazon Q Business to ServiceNow Online"
+---
+
 # Prerequisites for connecting Amazon Q Business to ServiceNow Online
 
 Before you begin, make sure that you have completed the following

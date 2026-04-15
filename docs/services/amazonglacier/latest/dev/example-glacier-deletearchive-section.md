@@ -1,3 +1,7 @@
+---
+title: "Use DeleteArchive with an AWS SDK or CLI"
+---
+
 **This page is only for existing customers of the Amazon Glacier service using Vaults and the original REST API from 2012.**
 
 If you're looking for archival storage solutions, we recommend using the Amazon Glacier storage classes in Amazon S3, S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, and S3 Glacier Deep Archive. To learn more about these storage options, see [Amazon Glacier storage classes](https://aws.amazon.com/s3/storage-classes/glacier).

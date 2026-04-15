@@ -1,3 +1,7 @@
+---
+title: "Document history for Amazon Q Developer User Guide"
+---
+
 # Document history for Amazon Q Developer User Guide
 
 The following table describes the document history for the _Amazon Q Developer User_

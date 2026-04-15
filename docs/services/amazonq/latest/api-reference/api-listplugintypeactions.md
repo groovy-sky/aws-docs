@@ -1,3 +1,7 @@
+---
+title: "ListPluginTypeActions"
+---
+
 # ListPluginTypeActions
 
 Lists configured Amazon Q Business actions for any plugin type—both

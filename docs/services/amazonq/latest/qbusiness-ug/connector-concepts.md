@@ -1,3 +1,7 @@
+---
+title: "Data source connector concepts"
+---
+
 # Data source connector concepts
 
 This topic outlines specific concepts and features of Amazon Q Business data

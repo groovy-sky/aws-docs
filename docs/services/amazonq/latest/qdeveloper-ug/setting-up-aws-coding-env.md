@@ -1,3 +1,7 @@
+---
+title: "Generating inline suggestions in AWS coding environments"
+---
+
 # Generating inline suggestions in AWS coding environments
 
 In addition to third-party IDEs, Amazon Q Developer can generate inline suggestions within AWS

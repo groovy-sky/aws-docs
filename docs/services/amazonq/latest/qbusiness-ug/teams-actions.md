@@ -1,3 +1,7 @@
+---
+title: "Configuring a Microsoft Teams plugin for Amazon Q Business"
+---
+
 # Configuring a Microsoft Teams plugin for Amazon Q Business
 
 Microsoft Teams is an enterprise collaboration tool for messaging, meetings, and file

@@ -1,3 +1,7 @@
+---
+title: "Getting data insights from Amazon Quick answers"
+---
+
 # Getting data insights from Amazon Quick answers
 
 After you complete [Configuring the\

@@ -1,3 +1,7 @@
+---
+title: "Creating an Amazon Q Business application using IAM federation through Microsoft Entra ID"
+---
+
 # Creating an Amazon Q Business application using IAM federation through Microsoft Entra ID
 
 As the first step toward creating a generative artificial intelligence (AI) assistant,

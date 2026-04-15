@@ -1,3 +1,7 @@
+---
+title: "Creating purpose-built Amazon Q Apps"
+---
+
 # Creating purpose-built _Amazon Q Apps_
 
 ###### Important

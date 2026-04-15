@@ -1,3 +1,7 @@
+---
+title: "UpdateIndex"
+---
+
 # UpdateIndex
 
 Updates an Amazon Q Business index.

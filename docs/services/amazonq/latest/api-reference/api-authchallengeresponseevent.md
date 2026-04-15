@@ -1,3 +1,7 @@
+---
+title: "AuthChallengeResponseEvent"
+---
+
 # AuthChallengeResponseEvent
 
 An authentication verification event response by a third party authentication server

@@ -1,3 +1,7 @@
+---
+title: "DataSource"
+---
+
 # DataSource
 
 A data source in an Amazon Q Business application.

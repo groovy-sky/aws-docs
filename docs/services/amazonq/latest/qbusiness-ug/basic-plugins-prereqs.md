@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for configuring Amazon Q Business built-in plugins"
+---
+
 # Prerequisites for configuring Amazon Q Business built-in plugins
 
 ###### Important

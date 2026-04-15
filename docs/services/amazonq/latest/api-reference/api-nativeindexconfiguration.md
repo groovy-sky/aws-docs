@@ -1,3 +1,7 @@
+---
+title: "NativeIndexConfiguration"
+---
+
 # NativeIndexConfiguration
 
 Configuration information for an Amazon Q Business index.

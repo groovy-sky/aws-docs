@@ -1,3 +1,7 @@
+---
+title: "Address code issues in Visual Studio"
+---
+
 # Address code issues in Visual Studio
 
 To view code issues detected by Amazon Q in Visual Studio, open the Visual Studio **Error**

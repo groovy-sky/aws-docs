@@ -1,3 +1,7 @@
+---
+title: "MCP governance for Q Developer"
+---
+
 # MCP governance for Q Developer
 
 Pro-tier customers using IAM Identity Center as the sign-in method can control MCP access for users within their

@@ -1,3 +1,7 @@
+---
+title: "Amazon Q Developer endpoints and quotas"
+---
+
 # Amazon Q Developer endpoints and quotas
 
 Service quotas, also referred to as limits, are the maximum number of service resources or

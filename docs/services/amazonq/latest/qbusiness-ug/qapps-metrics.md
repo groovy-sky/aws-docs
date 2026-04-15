@@ -1,3 +1,7 @@
+---
+title: "Amazon Q Apps metrics"
+---
+
 # Amazon Q Apps metrics
 
 The following table shows the metrics that Amazon Q Apps sends to CloudWatch in real

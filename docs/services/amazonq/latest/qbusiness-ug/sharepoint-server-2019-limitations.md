@@ -1,3 +1,7 @@
+---
+title: "Known limitations for the Amazon Q Business SharePoint Server 2019 connector"
+---
+
 # Known limitations for the Amazon Q Business SharePoint Server 2019 connector
 
 The SharePoint Server 2019 connector has the following known limitations:

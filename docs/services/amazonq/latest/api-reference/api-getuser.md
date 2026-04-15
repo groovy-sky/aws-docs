@@ -1,3 +1,7 @@
+---
+title: "GetUser"
+---
+
 # GetUser
 
 Describes the universally unique identifier (UUID) associated with a local user in a

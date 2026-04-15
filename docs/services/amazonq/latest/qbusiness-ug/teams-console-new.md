@@ -1,3 +1,7 @@
+---
+title: "Connecting using the latest Microsoft Teams connector (Console)"
+---
+
 # Connecting using the latest Microsoft Teams connector (Console)
 
 The latest Microsoft Teams connector provides a simplified configuration experience with essential features. Use this procedure to connect Amazon Q Business to Microsoft Teams using the latest connector.

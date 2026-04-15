@@ -1,3 +1,7 @@
+---
+title: "Increasing usage limits and configuring details in Amazon Q Developer console"
+---
+
 # Increasing usage limits and configuring details in Amazon Q Developer console
 
 ###### Note

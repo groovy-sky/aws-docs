@@ -1,3 +1,7 @@
+---
+title: "DocumentEnrichmentConfiguration"
+---
+
 # DocumentEnrichmentConfiguration
 
 Provides the configuration information for altering document metadata and content

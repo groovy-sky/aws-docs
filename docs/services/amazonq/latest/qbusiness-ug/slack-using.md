@@ -1,3 +1,7 @@
+---
+title: "Using the Amazon Q Business Slack App"
+---
+
 # Using the Amazon Q Business Slack App
 
 The Amazon Q Business Slack app is available to all Amazon Q Business users.

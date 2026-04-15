@@ -1,3 +1,7 @@
+---
+title: "DeleteIndex"
+---
+
 # DeleteIndex
 
 Deletes an Amazon Q Business index.

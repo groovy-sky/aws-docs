@@ -1,3 +1,7 @@
+---
+title: "Connecting Amazon FSx (Windows) to Amazon Q Business"
+---
+
 # Connecting Amazon FSx (Windows) to Amazon Q Business
 
 Amazon FSx (Windows) is a fully managed, cloud based file server system that offers shared

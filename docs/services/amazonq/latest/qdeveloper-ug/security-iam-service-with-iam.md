@@ -1,3 +1,7 @@
+---
+title: "How Amazon Q Developer works with IAM"
+---
+
 # How Amazon Q Developer works with IAM
 
 Before you use IAM to manage access to Amazon Q Developer, learn what IAM features are

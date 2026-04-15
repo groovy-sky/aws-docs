@@ -1,3 +1,7 @@
+---
+title: "How Amazon Q Business connector crawls Gmail ACLs"
+---
+
 # How Amazon Q Business connector crawls Gmail ACLs
 
 Connectors support crawling ACL and identity information where applicable based on the data source.

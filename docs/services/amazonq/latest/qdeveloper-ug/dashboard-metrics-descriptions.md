@@ -1,3 +1,7 @@
+---
+title: "Descriptions of Amazon Q Developer dashboard usage metrics"
+---
+
 # Descriptions of Amazon Q Developer dashboard usage metrics
 
 The following table describes the metrics shown in the Amazon Q Developer dashboard.

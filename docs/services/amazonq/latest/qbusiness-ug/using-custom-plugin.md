@@ -1,3 +1,7 @@
+---
+title: "Using an Amazon Q Business custom plugin"
+---
+
 # Using an Amazon Q Business custom plugin
 
 Once a custom plugin is deployed, end users can launch it from the menu icon in the

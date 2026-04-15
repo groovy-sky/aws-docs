@@ -1,3 +1,7 @@
+---
+title: "User"
+---
+
 # User
 
 A user of an Amazon Q App.

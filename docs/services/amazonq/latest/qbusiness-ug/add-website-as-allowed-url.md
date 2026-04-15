@@ -1,3 +1,7 @@
+---
+title: "Add your website as an allowed URL"
+---
+
 # Add your website as an allowed URL
 
 To configure allowed websites for your existing web experience, you can use the

@@ -1,3 +1,7 @@
+---
+title: "Configuring an Amazon Q Business application using AWS IAM Identity Center"
+---
+
 # Configuring an Amazon Q Business application using AWS IAM Identity Center
 
 As the first step towards creating a generative artificial intelligence (AI) assistant,

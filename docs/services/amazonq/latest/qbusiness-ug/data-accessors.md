@@ -1,3 +1,7 @@
+---
+title: "Share your enterprise data with data accessors using Amazon Q index"
+---
+
 # Share your enterprise data with data accessors using Amazon Q index
 
 The Amazon Q Business data accessors feature allows you to securely share your enterprise data

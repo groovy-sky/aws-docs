@@ -1,3 +1,7 @@
+---
+title: "UpdateDataSource"
+---
+
 # UpdateDataSource
 
 Updates an existing Amazon Q Business data source connector.

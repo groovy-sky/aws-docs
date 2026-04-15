@@ -1,3 +1,7 @@
+---
+title: "Saving prompts to a library for use with Amazon Q Developer chat"
+---
+
 # Saving prompts to a library for use with Amazon Q Developer chat
 
 You can build a library of common prompts that you can use when chatting with Amazon Q in the IDE. By

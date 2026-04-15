@@ -1,3 +1,7 @@
+---
+title: "Using plugins in Amazon Q Apps"
+---
+
 # Using plugins in Amazon Q Apps
 
 If [plugins](plugins.md) are configured for your Amazon Q Business application environment you

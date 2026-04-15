@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for connecting Amazon Q Business to Confluence (Cloud)"
+---
+
 # Prerequisites for connecting Amazon Q Business to Confluence (Cloud)
 
 Before you begin, make sure that you have completed the following

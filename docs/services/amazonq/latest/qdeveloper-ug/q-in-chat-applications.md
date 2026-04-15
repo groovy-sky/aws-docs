@@ -1,3 +1,7 @@
+---
+title: "Chatting with Amazon Q Developer in chat applications"
+---
+
 # Chatting with Amazon Q Developer in chat applications
 
 You can chat with Amazon Q Developer in Microsoft Teams and Slack chat applications.

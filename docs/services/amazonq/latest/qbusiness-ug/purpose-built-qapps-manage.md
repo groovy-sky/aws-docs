@@ -1,3 +1,7 @@
+---
+title: "Managing Amazon Q Apps"
+---
+
 # Managing Amazon Q Apps
 
 You can enable or disable the ability for web experience users to create and run their

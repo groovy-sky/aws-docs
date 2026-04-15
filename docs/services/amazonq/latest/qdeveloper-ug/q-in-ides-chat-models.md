@@ -1,3 +1,7 @@
+---
+title: "Selecting a model for Amazon Q chat in IDEs"
+---
+
 # Selecting a model for Amazon Q chat in IDEs
 
 You can select the model you want Amazon Q to use while chatting

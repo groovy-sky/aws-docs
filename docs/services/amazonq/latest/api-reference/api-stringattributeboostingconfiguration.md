@@ -1,3 +1,7 @@
+---
+title: "StringAttributeBoostingConfiguration"
+---
+
 # StringAttributeBoostingConfiguration
 
 Provides information on boosting `STRING` type document attributes.

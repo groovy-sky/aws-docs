@@ -1,3 +1,7 @@
+---
+title: "Creating an Amazon Q index on behalf of a customer"
+---
+
 # Creating an Amazon Q index on behalf of a customer
 
 We recommend creating one Amazon Q Business application environment per customer for better security

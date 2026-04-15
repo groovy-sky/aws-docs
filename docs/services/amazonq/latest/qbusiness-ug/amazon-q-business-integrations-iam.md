@@ -1,3 +1,7 @@
+---
+title: "IAM roles and trust policy for your integrations"
+---
+
 # IAM roles and trust policy for your integrations
 
 In order for your integrations to work, you will need to add the following two IAM

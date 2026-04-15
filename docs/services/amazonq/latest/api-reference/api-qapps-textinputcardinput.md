@@ -1,3 +1,7 @@
+---
+title: "TextInputCardInput"
+---
+
 # TextInputCardInput
 
 The input shape for defining a text input card in an Amazon Q App.

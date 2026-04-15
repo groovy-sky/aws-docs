@@ -1,3 +1,7 @@
+---
+title: "TextInputEvent"
+---
+
 # TextInputEvent
 
 An input event for a end user message in an Amazon Q Business web experience.

@@ -1,3 +1,7 @@
+---
+title: "Getting access to your customer's Amazon Q index"
+---
+
 # Getting access to your customer's Amazon Q index
 
 There are two non-mutually exclusive ways to get access to a customer's Amazon Q

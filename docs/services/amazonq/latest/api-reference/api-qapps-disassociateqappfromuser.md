@@ -1,3 +1,7 @@
+---
+title: "DisassociateQAppFromUser"
+---
+
 # DisassociateQAppFromUser
 
 Disassociates a Q App from a user removing the user's access to run the Q App.

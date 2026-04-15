@@ -1,3 +1,7 @@
+---
+title: "DateAttributeBoostingConfiguration"
+---
+
 # DateAttributeBoostingConfiguration
 
 Provides information on boosting `DATE` type document attributes.

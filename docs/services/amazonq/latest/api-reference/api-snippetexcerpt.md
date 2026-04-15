@@ -1,3 +1,7 @@
+---
+title: "SnippetExcerpt"
+---
+
 # SnippetExcerpt
 
 Contains the relevant text excerpt from a source that was used to generate a citation

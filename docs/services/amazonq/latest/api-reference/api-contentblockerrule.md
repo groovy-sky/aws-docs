@@ -1,3 +1,7 @@
+---
+title: "ContentBlockerRule"
+---
+
 # ContentBlockerRule
 
 A rule for configuring how Amazon Q Business responds when it encounters a a blocked

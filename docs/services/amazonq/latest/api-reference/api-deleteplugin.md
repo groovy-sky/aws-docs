@@ -1,3 +1,7 @@
+---
+title: "DeletePlugin"
+---
+
 # DeletePlugin
 
 Deletes an Amazon Q Business plugin.

@@ -1,3 +1,7 @@
+---
+title: "Creating Amazon Q Business plugins using APIs"
+---
+
 # Creating Amazon Q Business plugins using APIs
 
 Amazon Q Business supports plugin creation through both the console and the

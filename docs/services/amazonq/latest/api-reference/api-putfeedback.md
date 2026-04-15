@@ -1,3 +1,7 @@
+---
+title: "PutFeedback"
+---
+
 # PutFeedback
 
 Enables your end user to provide feedback on their Amazon Q Business generated chat

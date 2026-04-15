@@ -1,3 +1,7 @@
+---
+title: "Making authenticated Amazon Q Business API calls using IAM Identity Center"
+---
+
 # Making authenticated Amazon Q Business API calls using IAM Identity Center
 
 ###### Important

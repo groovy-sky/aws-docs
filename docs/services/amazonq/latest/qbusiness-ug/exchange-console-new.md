@@ -1,3 +1,7 @@
+---
+title: "Connecting using the Latest Microsoft Exchange Connector (Console)"
+---
+
 # Connecting using the Latest Microsoft Exchange Connector (Console)
 
 The latest Microsoft Exchange connector provides a simplified configuration experience with essential features. The following procedure shows how to connect Amazon Q Business to Microsoft Exchange using the latest connector.

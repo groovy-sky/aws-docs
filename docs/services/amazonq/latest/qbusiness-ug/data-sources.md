@@ -1,3 +1,7 @@
+---
+title: "Connecting Amazon Q Business data sources"
+---
+
 # Connecting Amazon Q Business data sources
 
 A _data source_ allows you to combine data from different

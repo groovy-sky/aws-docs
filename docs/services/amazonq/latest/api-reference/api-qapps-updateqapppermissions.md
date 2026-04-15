@@ -1,3 +1,7 @@
+---
+title: "UpdateQAppPermissions"
+---
+
 # UpdateQAppPermissions
 
 Updates read permissions for a Amazon Q App in Amazon Q Business application environment instance.

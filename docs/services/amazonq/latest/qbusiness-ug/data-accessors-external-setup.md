@@ -1,3 +1,7 @@
+---
+title: "Completing the process to add a data accessor"
+---
+
 # Completing the process to add a data accessor
 
 After you grant a software provider (ISV) data accessor permissions, you'll need to

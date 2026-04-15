@@ -1,3 +1,7 @@
+---
+title: "Converting embedded SQL in Java applications with Amazon Q Developer"
+---
+
 # Converting embedded SQL in Java applications with Amazon Q Developer
 
 The Amazon Q Developer agent for code transformation in the IDE can help you convert embedded SQL to

@@ -1,3 +1,7 @@
+---
+title: "CustomPluginConfiguration"
+---
+
 # CustomPluginConfiguration
 
 Configuration information required to create a custom plugin.

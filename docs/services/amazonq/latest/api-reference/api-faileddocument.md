@@ -1,3 +1,7 @@
+---
+title: "FailedDocument"
+---
+
 # FailedDocument
 
 A list of documents that could not be removed from an Amazon Q Business index. Each entry

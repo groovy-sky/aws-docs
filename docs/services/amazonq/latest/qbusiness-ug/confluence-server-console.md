@@ -1,3 +1,7 @@
+---
+title: "Connecting Amazon Q Business to Confluence (Server/Data Center) using the console"
+---
+
 # Connecting Amazon Q Business to Confluence (Server/Data Center) using the console
 
 On the **Confluence** page, enter the following information:

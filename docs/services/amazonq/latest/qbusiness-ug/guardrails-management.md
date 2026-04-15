@@ -1,3 +1,7 @@
+---
+title: "Managing Amazon Q Business admin controls and guardrails"
+---
+
 # Managing Amazon Q Business admin controls and guardrails
 
 To manage Amazon Q Business admin controls and guardrails, you can take the

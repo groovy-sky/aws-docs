@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for connecting Amazon Q Business to Amazon FSx (Windows)"
+---
+
 # Prerequisites for connecting Amazon Q Business to Amazon FSx (Windows)
 
 Before you begin, make sure that you have completed the following

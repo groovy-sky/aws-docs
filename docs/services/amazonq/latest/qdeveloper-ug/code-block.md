@@ -1,3 +1,7 @@
+---
+title: "Using Amazon Q Developer for block completion"
+---
+
 # Using Amazon Q Developer for block completion
 
 Block completion is used to complete your `if/for/while/try` code

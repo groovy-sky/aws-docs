@@ -1,3 +1,7 @@
+---
+title: "Configuring a ServiceNow plugin for Amazon Q Business"
+---
+
 # Configuring a ServiceNow plugin for Amazon Q Business
 
 ServiceNow provides a cloud-based service management system to create and manage

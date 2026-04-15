@@ -1,3 +1,7 @@
+---
+title: "Connecting Amazon S3 to Amazon Q Business using the New connector"
+---
+
 # Connecting Amazon S3 to Amazon Q Business using the New connector
 
 ###### Note

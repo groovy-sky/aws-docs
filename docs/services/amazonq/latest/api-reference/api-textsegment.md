@@ -1,3 +1,7 @@
+---
+title: "TextSegment"
+---
+
 # TextSegment
 
 Provides information about a text extract in a chat response that can be attributed to

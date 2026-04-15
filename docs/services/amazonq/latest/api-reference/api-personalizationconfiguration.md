@@ -1,3 +1,7 @@
+---
+title: "PersonalizationConfiguration"
+---
+
 # PersonalizationConfiguration
 
 Configuration information about chat response personalization. For more information,

@@ -1,3 +1,7 @@
+---
+title: "Known limitations for the Google Calendar connector (Preview)"
+---
+
 # Known limitations for the Google Calendar connector (Preview)
 
 The connector employs a rolling window approach for indexing data. This rolling window

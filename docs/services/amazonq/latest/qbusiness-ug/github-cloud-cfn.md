@@ -1,3 +1,7 @@
+---
+title: "Connecting Amazon Q Business to GitHub (Cloud) using AWS CloudFormation"
+---
+
 # Connecting Amazon Q Business to GitHub (Cloud) using AWS CloudFormation
 
 You use the [`AWS::QBusiness::DataSource`](../../../cloudformation/latest/userguide/aws-resource-qbusiness-datasource.md) resource to connect a data source to

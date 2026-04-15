@@ -1,3 +1,7 @@
+---
+title: "CardValue"
+---
+
 # CardValue
 
 The value or result associated with a card in a Amazon Q App session.

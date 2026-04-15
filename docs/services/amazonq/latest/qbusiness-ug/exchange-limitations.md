@@ -1,3 +1,7 @@
+---
+title: "Known limitations for the Microsoft Exchange connector"
+---
+
 # Known limitations for the Microsoft Exchange connector
 
 ###### Note

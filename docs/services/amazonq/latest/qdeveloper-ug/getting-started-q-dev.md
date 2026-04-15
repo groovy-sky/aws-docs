@@ -1,3 +1,7 @@
+---
+title: "Getting started with Amazon Q Developer"
+---
+
 # Getting started with Amazon Q Developer
 
 This section provides comprehensive guidance on getting started with Amazon Q Developer. It covers the

@@ -1,3 +1,7 @@
+---
+title: "How Amazon Q Business works"
+---
+
 # How Amazon Q Business works
 
 With Amazon Q Business, you can build an interactive chat application environment for your

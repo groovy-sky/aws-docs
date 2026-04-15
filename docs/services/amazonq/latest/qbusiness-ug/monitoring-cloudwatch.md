@@ -1,3 +1,7 @@
+---
+title: "Monitoring Amazon Q Business and Amazon Q Apps with Amazon CloudWatch"
+---
+
 # Monitoring Amazon Q Business and Amazon Q Apps with Amazon CloudWatch
 
 You can monitor Amazon Q Business and Amazon Q Apps with Amazon CloudWatch, which collects raw data and

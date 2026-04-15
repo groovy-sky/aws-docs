@@ -1,3 +1,7 @@
+---
+title: "Known limitations for the Amazon Q Business SharePoint Server (Subscription Edition) connector"
+---
+
 # Known limitations for the Amazon Q Business SharePoint Server (Subscription Edition) connector
 
 The SharePoint Server (Subscription Edition) connector has the following known limitations:

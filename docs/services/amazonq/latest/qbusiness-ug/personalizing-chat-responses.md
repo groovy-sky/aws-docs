@@ -1,3 +1,7 @@
+---
+title: "Personalizing Amazon Q Business chat responses"
+---
+
 # Personalizing Amazon Q Business chat responses
 
 Amazon Q Business uses location and job-related information from your IAM Identity Center

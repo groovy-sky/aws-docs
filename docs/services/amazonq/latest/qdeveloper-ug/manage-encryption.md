@@ -1,3 +1,7 @@
+---
+title: "Managing the encryption method in Amazon Q Developer"
+---
+
 # Managing the encryption method in Amazon Q Developer
 
 ###### Note

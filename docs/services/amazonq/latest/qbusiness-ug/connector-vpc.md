@@ -1,3 +1,7 @@
+---
+title: "Using Amazon VPC with Amazon Q Business connectors"
+---
+
 # Using Amazon VPC with Amazon Q Business connectors
 
 Amazon Q Business can connect to a virtual private cloud (VPC) that you

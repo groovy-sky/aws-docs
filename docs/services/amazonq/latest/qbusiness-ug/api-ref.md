@@ -1,3 +1,7 @@
+---
+title: "API reference for Amazon Q Business"
+---
+
 # API reference for Amazon Q Business
 
 For information on Amazon Q Business APIs, see the [Amazon Q Business API\

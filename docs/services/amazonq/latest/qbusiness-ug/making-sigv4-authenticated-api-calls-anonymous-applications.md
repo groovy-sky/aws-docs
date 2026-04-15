@@ -1,3 +1,7 @@
+---
+title: "Making authenticated Amazon Q Business API calls for application environment supporting anonymous access"
+---
+
 # Making authenticated Amazon Q Business API calls for application environment supporting anonymous access
 
 Amazon Q Business can securely handle data with integrated authentication and

@@ -1,3 +1,7 @@
+---
+title: "GitHub (Cloud) connector overview"
+---
+
 # GitHub (Cloud) connector overview
 
 The following table gives an overview of the Amazon Q Business

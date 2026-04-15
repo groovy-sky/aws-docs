@@ -1,3 +1,7 @@
+---
+title: "IAM role for Amazon Q Business Google Calendar connector (Preview)"
+---
+
 # IAM role for Amazon Q Business Google Calendar connector (Preview)
 
 If you use the AWS CLI or an AWS SDK, you must create an AWS Identity and Access Management (IAM) policy

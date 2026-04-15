@@ -1,3 +1,7 @@
+---
+title: "Configuring an Asana plugin for Amazon Q Business"
+---
+
 # Configuring an Asana plugin for Amazon Q Business
 
 Asana is a web-based work management platform that helps teams organize,

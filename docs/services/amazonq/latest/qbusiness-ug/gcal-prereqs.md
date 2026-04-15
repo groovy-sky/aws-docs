@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for connecting Amazon Q Business to Google Calendar (Preview)"
+---
+
 # Prerequisites for connecting Amazon Q Business to Google Calendar (Preview)
 
 Before you begin, make sure that you have completed the following

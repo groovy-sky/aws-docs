@@ -1,3 +1,7 @@
+---
+title: "AccessControl"
+---
+
 # AccessControl
 
 A list of principals. Each principal can be either a `USER` or a

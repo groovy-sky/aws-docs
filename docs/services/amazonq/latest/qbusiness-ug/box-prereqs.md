@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for connecting Amazon Q Business to Box"
+---
+
 # Prerequisites for connecting Amazon Q Business to Box
 
 Before you begin, make sure that you have completed the following

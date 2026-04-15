@@ -1,3 +1,7 @@
+---
+title: "IAM role for Amazon Q Business SharePoint Server 2019 connector"
+---
+
 # IAM role for Amazon Q Business SharePoint Server 2019 connector
 
 ###### Note

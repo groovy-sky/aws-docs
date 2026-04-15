@@ -1,3 +1,7 @@
+---
+title: "Viewing Amazon Q Business and Q App metrics in analytics dashboards"
+---
+
 # Viewing Amazon Q Business and Q App metrics in analytics dashboards
 
 The analytics dashboards in Amazon Q Business offer a comprehensive view of key usage metrics and

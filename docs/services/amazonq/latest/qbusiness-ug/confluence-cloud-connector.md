@@ -1,3 +1,7 @@
+---
+title: "Connecting Confluence (Cloud) to Amazon Q Business"
+---
+
 # Connecting Confluence (Cloud) to Amazon Q Business
 
 Atlassian Confluence is a collaborative work-management tool designed for

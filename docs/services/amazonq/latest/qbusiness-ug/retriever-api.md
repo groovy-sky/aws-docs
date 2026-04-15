@@ -1,3 +1,7 @@
+---
+title: "Creating a retriever for an Amazon Q Business application using APIs"
+---
+
 # Creating a retriever for an Amazon Q Business application using APIs
 
 You can't create an Amazon Q Business retriever using the AWS Management Console. If you use

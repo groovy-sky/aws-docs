@@ -1,3 +1,7 @@
+---
+title: "Configuring an Amazon Q Business application to use the plugin"
+---
+
 # Configuring an Amazon Q Business application to use the plugin
 
 You configure an Amazon Q Business application to get insights from Quick answers in

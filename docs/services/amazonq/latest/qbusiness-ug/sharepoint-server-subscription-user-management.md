@@ -1,3 +1,7 @@
+---
+title: "How Amazon Q Business connector crawls SharePoint Server (Subscription Edition) ACLs"
+---
+
 # How Amazon Q Business connector crawls SharePoint Server (Subscription Edition) ACLs
 
 When you connect an SharePoint Server (Subscription Edition) data source to Amazon Q Business, Amazon Q Business crawls ACL information attached to a document (user and group

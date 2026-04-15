@@ -1,3 +1,7 @@
+---
+title: "UpdateRetriever"
+---
+
 # UpdateRetriever
 
 Updates the retriever used for your Amazon Q Business application.

@@ -1,3 +1,7 @@
+---
+title: "Viewing the activity of specific users in Amazon Q Developer"
+---
+
 # Viewing the activity of specific users in Amazon Q Developer
 
 You can configure Amazon Q to collect user activity telemetry of individual Amazon Q Developer subscribers in your

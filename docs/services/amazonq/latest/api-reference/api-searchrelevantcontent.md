@@ -1,3 +1,7 @@
+---
+title: "SearchRelevantContent"
+---
+
 # SearchRelevantContent
 
 Searches for relevant content in a Amazon Q Business application based on a query. This

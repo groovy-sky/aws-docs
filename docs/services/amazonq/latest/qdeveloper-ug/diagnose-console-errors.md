@@ -1,3 +1,7 @@
+---
+title: "Diagnosing common errors in the console with Amazon Q Developer"
+---
+
 # Diagnosing common errors in the console with Amazon Q Developer
 
 In the AWS Management Console, Amazon Q Developer diagnoses common errors you encounter while working with AWS

@@ -1,3 +1,7 @@
+---
+title: "Step 1: Choose a deployment option"
+---
+
 # Step 1: Choose a deployment option
 
 Before you can subscribe users, you'll need to decide which AWS account or accounts you'll

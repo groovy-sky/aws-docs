@@ -1,3 +1,7 @@
+---
+title: "Customizing text elements"
+---
+
 # Customizing text elements
 
 This topic shows how to customize text elements using the AWS Management Console and the

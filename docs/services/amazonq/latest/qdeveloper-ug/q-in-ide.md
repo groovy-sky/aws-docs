@@ -1,3 +1,7 @@
+---
+title: "Using Amazon Q Developer in the IDE"
+---
+
 # Using Amazon Q Developer in the IDE
 
 Use Amazon Q Developer in integrated development environments (IDEs) to learn about AWS and get

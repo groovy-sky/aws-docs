@@ -1,3 +1,7 @@
+---
+title: "How Amazon Q Business works with IAM"
+---
+
 # How Amazon Q Business works with IAM
 
 Before you use IAM to manage access to Amazon Q, learn what IAM features are

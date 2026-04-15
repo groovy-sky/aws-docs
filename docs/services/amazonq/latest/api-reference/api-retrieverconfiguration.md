@@ -1,3 +1,7 @@
+---
+title: "RetrieverConfiguration"
+---
+
 # RetrieverConfiguration
 
 Provides information on how the retriever used for your Amazon Q Business application is

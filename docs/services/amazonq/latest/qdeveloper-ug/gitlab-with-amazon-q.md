@@ -1,3 +1,7 @@
+---
+title: "GitLab Duo with Amazon Q"
+---
+
 # GitLab Duo with Amazon Q
 
 [GitLab Duo with Amazon Q](https://docs.gitlab.com/ee/user/duo_amazon_q)

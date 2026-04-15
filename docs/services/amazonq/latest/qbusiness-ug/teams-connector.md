@@ -1,3 +1,7 @@
+---
+title: "Connecting Microsoft Teams to Amazon Q Business"
+---
+
 # Connecting Microsoft Teams to Amazon Q Business
 
 You can connect Microsoft Teams to Amazon Q Business to index and search your team's messages, channel posts, and files. This connection enables your organization to find relevant information from Teams conversations and shared content through your Amazon Q web experience.

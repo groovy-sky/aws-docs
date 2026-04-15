@@ -1,3 +1,7 @@
+---
+title: "StopQAppSession"
+---
+
 # StopQAppSession
 
 Stops an active session for an Amazon Q App.This deletes all data related to the session and

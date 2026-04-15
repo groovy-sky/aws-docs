@@ -1,3 +1,7 @@
+---
+title: "Pausing integration with Quick"
+---
+
 # Pausing integration with Quick
 
 After you enable the plugin, it automatically queries Amazon Quick for every user prompt.

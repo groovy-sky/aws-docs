@@ -1,3 +1,7 @@
+---
+title: "Document history"
+---
+
 # Document history
 
 - **Latest documentation update:** August 14, 2025

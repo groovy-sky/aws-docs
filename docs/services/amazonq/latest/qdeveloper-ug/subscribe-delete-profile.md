@@ -1,3 +1,7 @@
+---
+title: "Deleting the Amazon Q Developer profile"
+---
+
 # Deleting the Amazon Q Developer profile
 
 ###### Note

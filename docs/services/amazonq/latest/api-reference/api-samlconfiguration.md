@@ -1,3 +1,7 @@
+---
+title: "SamlConfiguration"
+---
+
 # SamlConfiguration
 
 Provides the SAML 2.0 compliant identity provider (IdP) configuration information

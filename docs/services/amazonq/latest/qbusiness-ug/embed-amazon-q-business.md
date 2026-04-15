@@ -1,3 +1,7 @@
+---
+title: "Amazon Q embedded"
+---
+
 # Amazon Q embedded
 
 Amazon Q embedded is a feature that lets you embed the Amazon Q Business

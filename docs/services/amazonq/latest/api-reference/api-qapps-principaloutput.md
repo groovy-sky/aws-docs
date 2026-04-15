@@ -1,3 +1,7 @@
+---
+title: "PrincipalOutput"
+---
+
 # PrincipalOutput
 
 The principal for which the permission applies.

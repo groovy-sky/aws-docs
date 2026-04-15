@@ -1,3 +1,7 @@
+---
+title: "Using shortcut keys"
+---
+
 # Using shortcut keys
 
 While getting inline suggestions from Amazon Q, you can use keyboard shortcuts for common

@@ -1,3 +1,7 @@
+---
+title: "Using global controls in Amazon Q Business"
+---
+
 # Using global controls in Amazon Q Business
 
 You can use Amazon Q Business global controls to configure settings that

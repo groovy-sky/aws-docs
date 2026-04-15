@@ -1,3 +1,7 @@
+---
+title: "HallucinationReductionConfiguration"
+---
+
 # HallucinationReductionConfiguration
 
 Configuration information required to setup hallucination reduction. For more

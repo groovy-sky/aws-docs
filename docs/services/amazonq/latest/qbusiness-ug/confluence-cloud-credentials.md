@@ -1,3 +1,7 @@
+---
+title: "Setting up Confluence (Cloud) for connecting to Amazon Q Business"
+---
+
 # Setting up Confluence (Cloud) for connecting to Amazon Q Business
 
 Before you connect Confluence (Cloud) to Amazon Q Business, you need to create

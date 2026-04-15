@@ -1,3 +1,7 @@
+---
+title: "Microsoft Teams data source connector field mappings"
+---
+
 # Microsoft Teams data source connector field mappings
 
 To help you structure data for retrieval and chat filtering, Amazon Q Business

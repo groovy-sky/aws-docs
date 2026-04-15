@@ -1,3 +1,7 @@
+---
+title: "Principal mapping"
+---
+
 # Principal mapping
 
 Amazon Q Business uses _principal_

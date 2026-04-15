@@ -1,3 +1,7 @@
+---
+title: "CardStatus"
+---
+
 # CardStatus
 
 The current status and value of a card in an active Amazon Q App session.

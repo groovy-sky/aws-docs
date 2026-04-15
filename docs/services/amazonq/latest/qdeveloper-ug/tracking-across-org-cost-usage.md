@@ -1,3 +1,7 @@
+---
+title: "Amazon Q Developer Pro subscription billing"
+---
+
 # Amazon Q Developer Pro subscription billing
 
 Billing information for the Pro tier varies depending on whether you're an end-user with a
@@ -37,7 +41,7 @@ the _AWS Billing User Guide_.
 You can identify the cost of Amazon Q subscriptions for specific users with resource IDs through
 AWS Billing and Cost Management. To do so, in the Billing and Cost Management console under [Data Exports](https://console.aws.amazon.com/costmanagement/home), create either a standard
 data export or a legacy CUR export with the **Include resource IDs** option
-selected. To learn more, refer to [Creating data exports](../../../cur/latest/userguide/dataexports-create-icmpid-docs-costmanagement-hp-dataexports-export-type.md) in the _AWS Data Exports User Guide_.
+selected. To learn more, refer to [Creating data exports](../../../cur/latest/userguide/dataexports-create.md) in the _AWS Data Exports User Guide_.
 
 If you unsubscribe users, billing stops at the end of the billing cycle. For more
 information, see [Unsubscribing from Amazon Q Developer Pro](q-admin-setup-unsubscribe.md).

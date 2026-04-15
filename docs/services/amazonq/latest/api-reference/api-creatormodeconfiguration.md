@@ -1,3 +1,7 @@
+---
+title: "CreatorModeConfiguration"
+---
+
 # CreatorModeConfiguration
 
 Configuration information required to invoke chat in `CREATOR_MODE`.

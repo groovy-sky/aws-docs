@@ -1,3 +1,7 @@
+---
+title: "MemberGroup"
+---
+
 # MemberGroup
 
 The sub groups that belong to a group.

@@ -1,3 +1,7 @@
+---
+title: "Using Amazon Q Developer on AWS apps and websites"
+---
+
 # Using Amazon Q Developer on AWS apps and websites
 
 Use Amazon Q Developer in the AWS Management Console, AWS Console Mobile Application, AWS Marketing website, AWS Documentation website,

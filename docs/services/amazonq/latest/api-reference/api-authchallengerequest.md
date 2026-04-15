@@ -1,3 +1,7 @@
+---
+title: "AuthChallengeRequest"
+---
+
 # AuthChallengeRequest
 
 A request made by Amazon Q Business to a third paty authentication server to authenticate

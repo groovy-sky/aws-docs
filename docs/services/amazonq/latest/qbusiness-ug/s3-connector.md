@@ -1,3 +1,7 @@
+---
+title: "Connecting Amazon S3 to Amazon Q Business"
+---
+
 # Connecting Amazon S3 to Amazon Q Business
 
 [Amazon Simple Storage Service](../../../s3/latest/userguide/welcome.md)

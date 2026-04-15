@@ -1,3 +1,7 @@
+---
+title: "How Amazon Q works with Confluence (Cloud) access and refresh tokens"
+---
+
 # How Amazon Q works with Confluence (Cloud) access and refresh tokens
 
 The following are important points to note about using Confluence (Cloud) access
