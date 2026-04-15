@@ -1,3 +1,7 @@
+---
+title: "DAX: How it works"
+---
+
 # DAX: How it works
 
 Amazon DynamoDB Accelerator (DAX) is designed to run within an Amazon Virtual Private Cloud (Amazon VPC) environment. The

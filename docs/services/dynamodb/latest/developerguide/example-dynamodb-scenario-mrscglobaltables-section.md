@@ -1,3 +1,7 @@
+---
+title: "Create and manage DynamoDB global tables with Multi-Region Strong Consistency using an AWS SDK"
+---
+
 # Create and manage DynamoDB global tables with Multi-Region Strong Consistency using an AWS SDK
 
 The following code examples show how to create and manage DynamoDB global tables with Multi-Region Strong Consistency (MRSC).

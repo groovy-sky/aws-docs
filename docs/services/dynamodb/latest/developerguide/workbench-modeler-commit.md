@@ -1,3 +1,7 @@
+---
+title: "Committing a data model to DynamoDB"
+---
+
 # Committing a data model to DynamoDB
 
 When you are satisfied with your data model, you can commit the model to

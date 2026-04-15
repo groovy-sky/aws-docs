@@ -1,3 +1,7 @@
+---
+title: "Endpoint"
+---
+
 # Endpoint
 
 Represents the information required for client programs to connect to the endpoint

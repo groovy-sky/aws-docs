@@ -1,3 +1,7 @@
+---
+title: "Remove a resource-based policy from a DynamoDB table"
+---
+
 # Remove a resource-based policy from a DynamoDB table
 
 You can delete a resource-based policy from an existing table by using the DynamoDB console,

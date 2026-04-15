@@ -1,3 +1,7 @@
+---
+title: "DynamoDB maximum throughput for on-demand tables"
+---
+
 # DynamoDB maximum throughput for on-demand tables
 
 For on-demand tables, you can optionally specify maximum read or write (or both)

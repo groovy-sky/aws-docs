@@ -1,3 +1,7 @@
+---
+title: "DynamoDB Streams and Apache Flink"
+---
+
 # DynamoDB Streams and Apache Flink
 
 You can consume Amazon DynamoDB Streams records with Apache Flink. With [Amazon Managed Service for Apache Flink](https://aws.amazon.com/managed-service-apache-flink), you can

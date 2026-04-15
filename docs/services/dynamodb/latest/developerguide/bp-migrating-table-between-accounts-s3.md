@@ -1,3 +1,7 @@
+---
+title: "Migrate a table using export to S3 and import from S3"
+---
+
 # Migrate a table using export to S3 and import from S3
 
 **Prerequisites**

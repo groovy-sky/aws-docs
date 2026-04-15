@@ -1,3 +1,7 @@
+---
+title: "Differences between a relational (SQL) database and DynamoDB when deleting data from a table"
+---
+
 # Differences between a relational (SQL) database and DynamoDB when deleting data from a table
 
 In SQL, the `DELETE` statement removes one or more rows from a table.

@@ -1,3 +1,7 @@
+---
+title: "Using Global Secondary Indexes for materialized aggregation queries in DynamoDB"
+---
+
 # Using Global Secondary Indexes for materialized aggregation queries in DynamoDB
 
 Maintaining near real-time aggregations and key metrics on top of rapidly changing data is

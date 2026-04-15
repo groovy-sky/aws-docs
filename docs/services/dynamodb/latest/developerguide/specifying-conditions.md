@@ -1,3 +1,7 @@
+---
+title: "Using IAM policy conditions for fine-grained access control"
+---
+
 # Using IAM policy conditions for fine-grained access control
 
 When you grant permissions in DynamoDB, you can specify conditions that determine how a

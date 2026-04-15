@@ -1,3 +1,7 @@
+---
+title: "Detecting and correcting index key violations in DynamoDB"
+---
+
 # Detecting and correcting index key violations in DynamoDB
 
 During the backfill phase of global secondary index creation, Amazon DynamoDB examines each item in the table to

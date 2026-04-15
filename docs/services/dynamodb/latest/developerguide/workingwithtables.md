@@ -1,3 +1,7 @@
+---
+title: "Working with tables and data in DynamoDB"
+---
+
 # Working with tables and data in DynamoDB
 
 This section describes how to use the AWS Command Line Interface (AWS CLI) and the AWS SDKs to create,

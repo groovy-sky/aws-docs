@@ -1,3 +1,7 @@
+---
+title: "Use atomic counter operations in DynamoDB with an AWS SDK"
+---
+
 # Use atomic counter operations in DynamoDB with an AWS SDK
 
 The following code examples show how to use atomic counter operations in DynamoDB.

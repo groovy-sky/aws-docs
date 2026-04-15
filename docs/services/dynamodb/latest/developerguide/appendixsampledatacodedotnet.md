@@ -1,3 +1,7 @@
+---
+title: "Creating example tables and uploading data using the AWS SDK for .NET"
+---
+
 # Creating example tables and uploading data using the AWS SDK for .NET
 
 The following C# code example creates tables and uploads data

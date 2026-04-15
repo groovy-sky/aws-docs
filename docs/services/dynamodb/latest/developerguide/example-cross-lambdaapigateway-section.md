@@ -1,3 +1,7 @@
+---
+title: "Use API Gateway to invoke a Lambda function"
+---
+
 # Use API Gateway to invoke a Lambda function
 
 The following code examples show how to create an AWS Lambda function invoked by Amazon API Gateway.

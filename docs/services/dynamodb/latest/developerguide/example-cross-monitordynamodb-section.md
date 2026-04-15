@@ -1,3 +1,7 @@
+---
+title: "Monitor performance of Amazon DynamoDB using an AWS SDK"
+---
+
 # Monitor performance of Amazon DynamoDB using an AWS SDK
 
 The following code example shows how to configure an application's use of DynamoDB to monitor performance.

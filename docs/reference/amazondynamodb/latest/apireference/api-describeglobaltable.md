@@ -1,3 +1,7 @@
+---
+title: "DescribeGlobalTable"
+---
+
 # DescribeGlobalTable
 
 Returns information about the specified global table.

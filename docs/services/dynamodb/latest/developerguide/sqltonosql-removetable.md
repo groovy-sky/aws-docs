@@ -1,3 +1,7 @@
+---
+title: "Differences between a relational (SQL) database and DynamoDB when removing a table"
+---
+
 # Differences between a relational (SQL) database and DynamoDB when removing a table
 
 In SQL, you use the `DROP TABLE` statement to remove a table. In Amazon DynamoDB,

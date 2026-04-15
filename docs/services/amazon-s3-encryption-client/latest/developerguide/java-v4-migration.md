@@ -1,3 +1,7 @@
+---
+title: "S3 Encryption Client Migration (V3 to V4)"
+---
+
 # S3 Encryption Client Migration (V3 to V4)
 
 Version 4. _x_ of the Amazon S3 Encryption Client introduces AES GCM with Key Commitment (ALG\_AES\_256\_GCM\_HKDF\_SHA512\_COMMIT\_KEY) and Commitment Policies to enhance security by protecting against data key tampering in Instruction Files. This migration guide explains how to safely upgrade from 3. _x_ to 4. _x_ while maintaining backward compatibility during the transition.

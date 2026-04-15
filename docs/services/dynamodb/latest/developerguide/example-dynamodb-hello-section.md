@@ -1,3 +1,7 @@
+---
+title: "Hello DynamoDB"
+---
+
 # Hello DynamoDB
 
 The following code examples show how to get started using DynamoDB.

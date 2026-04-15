@@ -1,3 +1,7 @@
+---
+title: "02-write-data.js"
+---
+
 # 02-write-data.js
 
 The `02-write-data.js` program writes test data to

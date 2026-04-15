@@ -1,3 +1,7 @@
+---
+title: "Programming Amazon DynamoDB with JavaScript"
+---
+
 # Programming Amazon DynamoDB with JavaScript
 
 This guide provides an orientation to programmers wanting to use Amazon DynamoDB with

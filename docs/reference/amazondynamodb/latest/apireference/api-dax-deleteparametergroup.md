@@ -1,3 +1,7 @@
+---
+title: "DeleteParameterGroup"
+---
+
 # DeleteParameterGroup
 
 Deletes the specified parameter group. You cannot delete a parameter group if it is

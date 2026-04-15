@@ -1,3 +1,7 @@
+---
+title: "DynamoDB on-demand capacity mode"
+---
+
 # DynamoDB on-demand capacity mode
 
 Amazon DynamoDB on-demand offers a truly serverless database experience that automatically

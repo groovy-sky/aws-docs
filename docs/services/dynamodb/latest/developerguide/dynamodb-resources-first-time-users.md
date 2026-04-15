@@ -1,3 +1,7 @@
+---
+title: "Amazon DynamoDB resources for first-time users"
+---
+
 # Amazon DynamoDB resources for first-time users
 
 We recommend that first time users begin by reading the following sections, and refer to them as needed.

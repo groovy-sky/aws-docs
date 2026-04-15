@@ -1,3 +1,7 @@
+---
+title: "Efficient bulk operations"
+---
+
 # Efficient bulk operations
 
 ###### When to use this pattern

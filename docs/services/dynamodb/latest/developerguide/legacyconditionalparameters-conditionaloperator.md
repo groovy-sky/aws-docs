@@ -1,3 +1,7 @@
+---
+title: "ConditionalOperator (legacy)"
+---
+
 # ConditionalOperator (legacy)
 
 ###### Note

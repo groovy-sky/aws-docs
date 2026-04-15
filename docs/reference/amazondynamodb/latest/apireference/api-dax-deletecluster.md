@@ -1,3 +1,7 @@
+---
+title: "DeleteCluster"
+---
+
 # DeleteCluster
 
 Deletes a previously provisioned DAX cluster.

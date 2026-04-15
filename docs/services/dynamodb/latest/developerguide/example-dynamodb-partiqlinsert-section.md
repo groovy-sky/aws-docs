@@ -1,3 +1,7 @@
+---
+title: "Insert DynamoDB data using PartiQL INSERT statements with an AWS SDK"
+---
+
 # Insert DynamoDB data using PartiQL INSERT statements with an AWS SDK
 
 The following code example shows how to insert data using PartiQL INSERT statements.

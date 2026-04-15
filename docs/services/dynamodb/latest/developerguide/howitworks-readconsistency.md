@@ -1,3 +1,7 @@
+---
+title: "DynamoDB read consistency"
+---
+
 # DynamoDB read consistency
 
 Amazon DynamoDB reads data from tables, local secondary indexes (LSIs), global secondary

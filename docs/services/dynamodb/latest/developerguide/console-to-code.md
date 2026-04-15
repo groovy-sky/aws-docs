@@ -1,3 +1,7 @@
+---
+title: "Generate infrastructure code for Amazon DynamoDB using Console-to-Code"
+---
+
 # Generate infrastructure code for Amazon DynamoDB using Console-to-Code
 
 Amazon Q Developer's Console-to-Code feature simplifies infrastructure management for Amazon DynamoDB by

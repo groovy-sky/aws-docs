@@ -1,3 +1,7 @@
+---
+title: "Welcome"
+---
+
 # Welcome
 
 Amazon DynamoDB provides low-level API actions for managing database tables and

@@ -1,3 +1,7 @@
+---
+title: "ProvisionedThroughputOverride"
+---
+
 # ProvisionedThroughputOverride
 
 Replica-specific provisioned throughput settings. If not specified, uses the source

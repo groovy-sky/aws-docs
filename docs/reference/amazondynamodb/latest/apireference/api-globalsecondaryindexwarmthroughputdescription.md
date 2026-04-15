@@ -1,3 +1,7 @@
+---
+title: "GlobalSecondaryIndexWarmThroughputDescription"
+---
+
 # GlobalSecondaryIndexWarmThroughputDescription
 
 The description of the warm throughput value on a global secondary index.

@@ -1,3 +1,7 @@
+---
+title: "Understanding DynamoDB log file entries"
+---
+
 # Understanding DynamoDB log file entries
 
 A trail is a configuration that enables delivery of events as log files to an Amazon S3

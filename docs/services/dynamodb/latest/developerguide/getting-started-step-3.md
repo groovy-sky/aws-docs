@@ -1,3 +1,7 @@
+---
+title: "Step 3: Read data from a DynamoDB table"
+---
+
 # Step 3: Read data from a DynamoDB table
 
 In this step, you'll read back one of the items that you created in [Step 2: Write data to a DynamoDB table](getting-started-step-2.md). You can

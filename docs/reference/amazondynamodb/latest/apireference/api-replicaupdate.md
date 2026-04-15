@@ -1,3 +1,7 @@
+---
+title: "ReplicaUpdate"
+---
+
 # ReplicaUpdate
 
 Represents one of the following:

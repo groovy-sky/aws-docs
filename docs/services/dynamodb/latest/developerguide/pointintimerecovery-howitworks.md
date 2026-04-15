@@ -1,3 +1,7 @@
+---
+title: "Enable point-in-time recovery in DynamoDB"
+---
+
 # Enable point-in-time recovery in DynamoDB
 
 Amazon DynamoDB point-in-time recovery (PITR) provides automatic backups of your DynamoDB table

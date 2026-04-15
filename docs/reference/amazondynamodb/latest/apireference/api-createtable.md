@@ -1,3 +1,7 @@
+---
+title: "CreateTable"
+---
+
 # CreateTable
 
 The `CreateTable` operation adds a new table to your account. In an AWS account, table names must be unique within each Region. That is, you can

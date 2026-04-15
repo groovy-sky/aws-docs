@@ -1,3 +1,7 @@
+---
+title: "Scanning tables in DynamoDB"
+---
+
 # Scanning tables in DynamoDB
 
 A `Scan` operation in Amazon DynamoDB reads every item in a table or a secondary index. By

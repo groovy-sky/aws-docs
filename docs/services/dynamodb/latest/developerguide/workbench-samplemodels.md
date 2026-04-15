@@ -1,3 +1,7 @@
+---
+title: "Sample data models for NoSQL Workbench"
+---
+
 # Sample data models for NoSQL Workbench
 
 The home page for the modeler displays a number of sample models that ship

@@ -1,3 +1,7 @@
+---
+title: "Differences in querying a table"
+---
+
 # Differences in querying a table
 
 Another common access pattern is reading multiple items from a table, based on

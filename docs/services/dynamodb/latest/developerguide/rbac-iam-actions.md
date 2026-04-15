@@ -1,3 +1,7 @@
+---
+title: "DynamoDB API operations supported by resource-based policies"
+---
+
 # DynamoDB API operations supported by resource-based policies
 
 This topic lists the API operations that are supported by resource-based policies.

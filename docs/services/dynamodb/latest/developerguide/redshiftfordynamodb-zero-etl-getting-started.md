@@ -1,3 +1,7 @@
+---
+title: "Creating a DynamoDB zero-ETL integration with Amazon Redshift"
+---
+
 # Creating a DynamoDB zero-ETL integration with Amazon Redshift
 
 Before creating a zero-ETL integration, you must first set up your source DynamoDB

@@ -1,3 +1,7 @@
+---
+title: "Query a DynamoDB table using PartiQL and an AWS SDK"
+---
+
 # Query a DynamoDB table using PartiQL and an AWS SDK
 
 The following code examples show how to:

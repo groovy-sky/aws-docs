@@ -1,3 +1,7 @@
+---
+title: "Attach a policy to an DynamoDB existing table"
+---
+
 # Attach a policy to an DynamoDB existing table
 
 You can attach a resource-based policy to an existing table or modify an existing policy

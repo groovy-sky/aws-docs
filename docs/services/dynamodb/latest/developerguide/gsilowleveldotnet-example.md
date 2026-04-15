@@ -1,3 +1,7 @@
+---
+title: "Example: Global Secondary Indexes using the AWS SDK for .NET low-level API"
+---
+
 # Example: Global Secondary Indexes using the AWS SDK for .NET low-level API
 
 The following C# code example shows how to work with global secondary indexes. The

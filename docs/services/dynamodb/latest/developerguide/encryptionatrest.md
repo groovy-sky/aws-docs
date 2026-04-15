@@ -1,3 +1,7 @@
+---
+title: "DynamoDB encryption at rest"
+---
+
 # DynamoDB encryption at rest
 
 All user data stored in Amazon DynamoDB is fully encrypted at rest. DynamoDB encryption at rest

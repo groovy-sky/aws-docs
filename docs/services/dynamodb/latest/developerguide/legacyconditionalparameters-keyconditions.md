@@ -1,3 +1,7 @@
+---
+title: "KeyConditions (legacy)"
+---
+
 # KeyConditions (legacy)
 
 ###### Note

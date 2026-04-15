@@ -1,3 +1,7 @@
+---
+title: "PartiQL insert statements for DynamoDB"
+---
+
 # PartiQL insert statements for DynamoDB
 
 Use the `INSERT` statement to add an item to a table in

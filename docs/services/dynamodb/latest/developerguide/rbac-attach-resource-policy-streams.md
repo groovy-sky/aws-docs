@@ -1,3 +1,7 @@
+---
+title: "Attach a resource-based policy to a DynamoDB stream"
+---
+
 # Attach a resource-based policy to a DynamoDB stream
 
 You can attach a resource-based policy to an existing table's stream or modify an existing

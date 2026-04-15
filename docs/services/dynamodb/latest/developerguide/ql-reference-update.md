@@ -1,3 +1,7 @@
+---
+title: "PartiQL update statements for DynamoDB"
+---
+
 # PartiQL update statements for DynamoDB
 
 Use the `UPDATE` statement to modify the value of one or more

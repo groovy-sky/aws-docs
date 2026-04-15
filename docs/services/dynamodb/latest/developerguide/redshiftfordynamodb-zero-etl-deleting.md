@@ -1,3 +1,7 @@
+---
+title: "Deleting DynamoDB zero-ETL integrations with Amazon Redshift"
+---
+
 # Deleting DynamoDB zero-ETL integrations with Amazon Redshift
 
 When you delete a zero-ETL integration, your data isn't deleted from DynamoDB or

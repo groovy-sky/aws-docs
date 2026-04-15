@@ -1,3 +1,7 @@
+---
+title: "S3 Encryption Client Migration (V2 to V3)"
+---
+
 # S3 Encryption Client Migration (V2 to V3)
 
 ###### Note

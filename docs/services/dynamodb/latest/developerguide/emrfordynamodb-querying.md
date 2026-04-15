@@ -1,3 +1,7 @@
+---
+title: "Querying data in DynamoDB"
+---
+
 # Querying data in DynamoDB
 
 The following examples show some ways that you can use HiveQL to query data stored in

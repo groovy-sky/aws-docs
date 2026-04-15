@@ -1,3 +1,7 @@
+---
+title: "DynamoDB table export output format"
+---
+
 # DynamoDB table export output format
 
 A DynamoDB table export includes manifest files in addition to the files containing your

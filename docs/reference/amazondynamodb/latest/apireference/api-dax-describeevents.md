@@ -1,3 +1,7 @@
+---
+title: "DescribeEvents"
+---
+
 # DescribeEvents
 
 Returns events related to DAX clusters and parameter groups. You can

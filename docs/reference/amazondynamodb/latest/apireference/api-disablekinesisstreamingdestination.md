@@ -1,3 +1,7 @@
+---
+title: "DisableKinesisStreamingDestination"
+---
+
 # DisableKinesisStreamingDestination
 
 Stops replication from the DynamoDB table to the Kinesis data stream. This

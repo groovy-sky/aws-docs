@@ -1,3 +1,7 @@
+---
+title: "Learn the basics of DynamoDB with an AWS SDK"
+---
+
 # Learn the basics of DynamoDB with an AWS SDK
 
 The following code examples show how to:

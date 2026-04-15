@@ -1,3 +1,7 @@
+---
+title: "DynamoDB global tables versions"
+---
+
 # DynamoDB global tables versions
 
 There are two versions of DynamoDB global tables available: Global Tables version 2019.11.21

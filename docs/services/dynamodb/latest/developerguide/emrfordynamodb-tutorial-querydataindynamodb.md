@@ -1,3 +1,7 @@
+---
+title: "Step 6: Query the data in the DynamoDB table"
+---
+
 # Step 6: Query the data in the DynamoDB table
 
 In this step, you will use HiveQL to query the Features table in DynamoDB. Try the

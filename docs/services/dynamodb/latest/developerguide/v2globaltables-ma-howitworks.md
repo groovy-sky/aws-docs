@@ -1,3 +1,7 @@
+---
+title: "How DynamoDB global tables work"
+---
+
 # How DynamoDB global tables work
 
 Multi-account global tables extend DynamoDB global tables fully managed, serverless, multi-Region, and multi-active

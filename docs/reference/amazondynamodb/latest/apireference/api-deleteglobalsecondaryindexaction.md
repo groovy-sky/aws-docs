@@ -1,3 +1,7 @@
+---
+title: "DeleteGlobalSecondaryIndexAction"
+---
+
 # DeleteGlobalSecondaryIndexAction
 
 Represents a global secondary index to be deleted from an existing table.

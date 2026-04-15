@@ -1,3 +1,7 @@
+---
+title: "Release history for DynamoDB local"
+---
+
 # Release history for DynamoDB local
 
 The following table describes the important changes in each release of _DynamoDB local_.

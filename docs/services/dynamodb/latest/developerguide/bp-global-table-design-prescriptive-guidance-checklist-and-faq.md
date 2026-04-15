@@ -1,3 +1,7 @@
+---
+title: "Preparation checklist for DynamoDB global tables"
+---
+
 # Preparation checklist for DynamoDB global tables
 
 Use the following checklist for decisions and tasks when you deploy global tables.

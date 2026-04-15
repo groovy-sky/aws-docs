@@ -1,3 +1,7 @@
+---
+title: "Designing partition keys to distribute your workload in DynamoDB"
+---
+
 # Designing partition keys to distribute your workload in DynamoDB
 
 The partition key portion of a table's primary key determines the logical partitions in

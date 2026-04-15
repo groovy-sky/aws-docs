@@ -1,3 +1,7 @@
+---
+title: "Query DynamoDB tables using date and time patterns with an AWS SDK"
+---
+
 # Query DynamoDB tables using date and time patterns with an AWS SDK
 
 The following code examples show how to query tables using date and time patterns.

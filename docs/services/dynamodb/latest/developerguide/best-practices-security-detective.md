@@ -1,3 +1,7 @@
+---
+title: "DynamoDB detective security best practices"
+---
+
 # DynamoDB detective security best practices
 
 The following best practices for Amazon DynamoDB can help you detect potential security

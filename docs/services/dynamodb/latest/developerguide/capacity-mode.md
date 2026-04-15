@@ -1,3 +1,7 @@
+---
+title: "DynamoDB throughput capacity"
+---
+
 # DynamoDB throughput capacity
 
 This section provides an overview of the two throughput modes available for your DynamoDB

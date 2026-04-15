@@ -1,3 +1,7 @@
+---
+title: "Use UpdateTable with an AWS SDK or CLI"
+---
+
 # Use `UpdateTable` with an AWS SDK or CLI
 
 The following code examples show how to use `UpdateTable`.

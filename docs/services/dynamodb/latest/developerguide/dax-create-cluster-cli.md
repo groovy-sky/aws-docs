@@ -1,3 +1,7 @@
+---
+title: "Creating a DAX cluster using the AWS CLI"
+---
+
 # Creating a DAX cluster using the AWS CLI
 
 This section describes how to create an Amazon DynamoDB Accelerator (DAX) cluster using the

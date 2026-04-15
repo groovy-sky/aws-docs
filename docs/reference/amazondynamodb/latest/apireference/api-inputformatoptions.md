@@ -1,3 +1,7 @@
+---
+title: "InputFormatOptions"
+---
+
 # InputFormatOptions
 
 The format options for the data that was imported into the target table. There is one

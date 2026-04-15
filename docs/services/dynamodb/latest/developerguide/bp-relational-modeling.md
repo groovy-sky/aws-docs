@@ -1,3 +1,7 @@
+---
+title: "Best practices for modeling relational data in DynamoDB"
+---
+
 # Best practices for modeling relational data in DynamoDB
 
 This section provides best practices for modeling relational data in Amazon DynamoDB. First, we

@@ -1,3 +1,7 @@
+---
+title: "Evaluate your DynamoDB table class selection"
+---
+
 # Evaluate your DynamoDB table class selection
 
 This section provides an overview of how to select the appropriate table class for your

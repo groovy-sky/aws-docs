@@ -1,3 +1,7 @@
+---
+title: "Setting up DynamoDB (web service)"
+---
+
 # Setting up DynamoDB (web service)
 
 To use the Amazon DynamoDB web service:

@@ -1,3 +1,7 @@
+---
+title: "Enabling ABAC in DynamoDB"
+---
+
 # Enabling ABAC in DynamoDB
 
 For most of the AWS accounts, ABAC is enabled by default. Using the [DynamoDB console](https://console.aws.amazon.com/dynamodb), you can confirm if ABAC is enabled for your account. To do this, make sure that you open the DynamoDB console with a role that has the [dynamodb:GetAbacStatus](#required-permissions-abac) permission. Then, open the **Settings** page of the DynamoDB console.

@@ -1,3 +1,7 @@
+---
+title: "Common Error Types"
+---
+
 # Common Error Types
 
 This section lists common error types that this AWS service may return. Not all services return all error types listed here. For errors specific to an API action for this service, see the topic for that API action.

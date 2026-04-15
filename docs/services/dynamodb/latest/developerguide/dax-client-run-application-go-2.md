@@ -1,3 +1,7 @@
+---
+title: "DAX SDK for Go"
+---
+
 # DAX SDK for Go
 
 Follow this procedure to run the Amazon DynamoDB Accelerator (DAX) SDK for Go sample application

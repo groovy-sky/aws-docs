@@ -1,3 +1,7 @@
+---
+title: "Referring to item attributes when using expressions in DynamoDB"
+---
+
 # Referring to item attributes when using expressions in DynamoDB
 
 This section describes how to refer to item attributes in an expression in Amazon DynamoDB.

@@ -1,3 +1,7 @@
+---
+title: "Routing strategies in DynamoDB"
+---
+
 # Routing strategies in DynamoDB
 
 Perhaps the most complex piece of a global table deployment is managing request routing.

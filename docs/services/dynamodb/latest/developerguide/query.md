@@ -1,3 +1,7 @@
+---
+title: "Querying tables in DynamoDB"
+---
+
 # Querying tables in DynamoDB
 
 You can use the `Query` API operation in Amazon DynamoDB to find items based on

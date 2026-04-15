@@ -1,3 +1,7 @@
+---
+title: "DeleteSubnetGroup"
+---
+
 # DeleteSubnetGroup
 
 Deletes a subnet group.

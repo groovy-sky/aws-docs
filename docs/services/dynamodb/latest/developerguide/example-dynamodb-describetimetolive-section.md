@@ -1,3 +1,7 @@
+---
+title: "Use DescribeTimeToLive with an AWS SDK or CLI"
+---
+
 # Use `DescribeTimeToLive` with an AWS SDK or CLI
 
 The following code examples show how to use `DescribeTimeToLive`.

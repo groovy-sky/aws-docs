@@ -1,3 +1,7 @@
+---
+title: "SecurityGroupMembership"
+---
+
 # SecurityGroupMembership
 
 An individual VPC security group and its status.

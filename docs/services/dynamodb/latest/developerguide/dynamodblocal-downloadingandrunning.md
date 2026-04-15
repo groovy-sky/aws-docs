@@ -1,3 +1,7 @@
+---
+title: "Deploying DynamoDB locally on your computer"
+---
+
 # Deploying DynamoDB locally on your computer
 
 ###### Note

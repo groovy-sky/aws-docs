@@ -1,3 +1,7 @@
+---
+title: "DynamoDB throttling resolution guide"
+---
+
 # DynamoDB throttling resolution guide
 
 This section provides targeted resolution guidance for each specific throttling reason

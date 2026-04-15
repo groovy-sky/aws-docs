@@ -1,3 +1,7 @@
+---
+title: "Copying data between DynamoDB and Amazon S3"
+---
+
 # Copying data between DynamoDB and Amazon S3
 
 If you have data in a DynamoDB table, you can use Hive to copy the data to an Amazon S3

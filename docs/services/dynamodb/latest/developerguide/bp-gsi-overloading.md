@@ -1,3 +1,7 @@
+---
+title: "Overloading Global Secondary Indexes in DynamoDB"
+---
+
 # Overloading Global Secondary Indexes in DynamoDB
 
 Although Amazon DynamoDB has a default quota of 20 global secondary indexes per

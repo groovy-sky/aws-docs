@@ -1,3 +1,7 @@
+---
+title: "ListStreams"
+---
+
 # ListStreams
 
 Returns an array of stream ARNs associated with the current account and endpoint. If the

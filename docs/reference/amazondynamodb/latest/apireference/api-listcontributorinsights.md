@@ -1,3 +1,7 @@
+---
+title: "ListContributorInsights"
+---
+
 # ListContributorInsights
 
 Returns a list of ContributorInsightsSummary for a table and all its global secondary

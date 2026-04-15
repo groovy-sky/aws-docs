@@ -1,3 +1,7 @@
+---
+title: "SequenceNumberRange"
+---
+
 # SequenceNumberRange
 
 The beginning and ending sequence numbers for the stream records contained within a shard.

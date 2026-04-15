@@ -1,3 +1,7 @@
+---
+title: "UpdateContinuousBackups"
+---
+
 # UpdateContinuousBackups
 
 `UpdateContinuousBackups` enables or disables point in time recovery for

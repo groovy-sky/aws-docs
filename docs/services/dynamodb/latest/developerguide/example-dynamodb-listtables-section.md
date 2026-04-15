@@ -1,3 +1,7 @@
+---
+title: "Use ListTables with an AWS SDK or CLI"
+---
+
 # Use `ListTables` with an AWS SDK or CLI
 
 The following code examples show how to use `ListTables`.

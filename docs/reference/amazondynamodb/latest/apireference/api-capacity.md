@@ -1,3 +1,7 @@
+---
+title: "Capacity"
+---
+
 # Capacity
 
 Represents the amount of provisioned throughput capacity consumed on a table or an

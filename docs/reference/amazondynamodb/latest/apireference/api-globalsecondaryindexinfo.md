@@ -1,3 +1,7 @@
+---
+title: "GlobalSecondaryIndexInfo"
+---
+
 # GlobalSecondaryIndexInfo
 
 Represents the properties of a global secondary index for the table when the backup

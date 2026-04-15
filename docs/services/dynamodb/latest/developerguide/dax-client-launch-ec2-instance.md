@@ -1,3 +1,7 @@
+---
+title: "Step 1: Launch an Amazon EC2 instance"
+---
+
 # Step 1: Launch an Amazon EC2 instance
 
 When your Amazon DynamoDB Accelerator (DAX) cluster is available, you can launch an Amazon EC2

@@ -1,3 +1,7 @@
+---
+title: "Use expression attribute names in DynamoDB with an AWS SDK"
+---
+
 # Use expression attribute names in DynamoDB with an AWS SDK
 
 The following code examples show how to use expression attribute names in DynamoDB.

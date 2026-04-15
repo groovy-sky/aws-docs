@@ -1,3 +1,7 @@
+---
+title: "Evaluate your DynamoDB table usage patterns"
+---
+
 # Evaluate your DynamoDB table usage patterns
 
 This section provides an overview of how to evaluate if you are efficiently using your DynamoDB

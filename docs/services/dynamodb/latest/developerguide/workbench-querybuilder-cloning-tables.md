@@ -1,3 +1,7 @@
+---
+title: "Cloning tables with NoSQL Workbench"
+---
+
 # Cloning tables with NoSQL Workbench
 
 Cloning tables will copy a table’s key schema (and optionally GSI schema and items)

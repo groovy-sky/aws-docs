@@ -1,3 +1,7 @@
+---
+title: "Performance tuning"
+---
+
 # Performance tuning
 
 When you create a Hive external table that maps to a DynamoDB table, you do not consume

@@ -1,3 +1,7 @@
+---
+title: "DynamoDB zero-ETL integration with Amazon SageMaker Lakehouse"
+---
+
 # DynamoDB zero-ETL integration with Amazon SageMaker Lakehouse
 
 DynamoDB zero-ETL integration with Amazon SageMaker Lakehouse eliminates the need to build

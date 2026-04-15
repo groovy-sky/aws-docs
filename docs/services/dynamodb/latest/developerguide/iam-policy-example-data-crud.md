@@ -1,3 +1,7 @@
+---
+title: "IAM policy to read, write, update, and delete access on a DynamoDB table"
+---
+
 # IAM policy to read, write, update, and delete access on a DynamoDB table
 
 Use this policy if you need to allow your application to create, read, update, and

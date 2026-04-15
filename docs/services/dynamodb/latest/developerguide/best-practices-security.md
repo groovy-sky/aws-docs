@@ -1,3 +1,7 @@
+---
+title: "Security best practices for Amazon DynamoDB"
+---
+
 # Security best practices for Amazon DynamoDB
 
 Amazon DynamoDB provides a number of security features to consider as you develop and implement

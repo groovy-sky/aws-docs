@@ -1,3 +1,7 @@
+---
+title: "GlobalSecondaryIndexAutoScalingUpdate"
+---
+
 # GlobalSecondaryIndexAutoScalingUpdate
 
 Represents the auto scaling settings of a global secondary index for a global table

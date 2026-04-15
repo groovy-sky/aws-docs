@@ -1,3 +1,7 @@
+---
+title: "Best practices for designing and architecting with DynamoDB"
+---
+
 # Best practices for designing and architecting with DynamoDB
 
 Use this section to quickly find recommendations for maximizing performance and minimizing

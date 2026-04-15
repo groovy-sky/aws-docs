@@ -1,3 +1,7 @@
+---
+title: "Item collections - how to model one-to-many relationships in DynamoDB"
+---
+
 # Item collections - how to model one-to-many relationships in DynamoDB
 
 In DynamoDB, an _item collection_ is a group of items that share the same

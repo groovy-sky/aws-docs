@@ -1,3 +1,7 @@
+---
+title: "Using AWS Backup with DynamoDB"
+---
+
 # Using AWS Backup with DynamoDB
 
 Amazon DynamoDB can help you meet regulatory compliance and business continuity requirements

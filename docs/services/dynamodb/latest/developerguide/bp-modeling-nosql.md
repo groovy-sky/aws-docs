@@ -1,3 +1,7 @@
+---
+title: "First steps for modeling relational data in DynamoDB"
+---
+
 # First steps for modeling relational data in DynamoDB
 
 ###### Note

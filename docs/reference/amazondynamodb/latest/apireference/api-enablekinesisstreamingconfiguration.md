@@ -1,3 +1,7 @@
+---
+title: "EnableKinesisStreamingConfiguration"
+---
+
 # EnableKinesisStreamingConfiguration
 
 Enables setting the configuration for Kinesis Streaming.

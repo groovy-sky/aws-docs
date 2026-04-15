@@ -1,3 +1,7 @@
+---
+title: "Configuring your DAX client"
+---
+
 # Configuring your DAX client
 
 The DAX cluster is an instance-based cluster that can be accessed using various DAX SDKs.

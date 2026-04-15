@@ -1,3 +1,7 @@
+---
+title: "Java and DAX"
+---
+
 # Java and DAX
 
 DAX SDK for Java 2.x is compatible with [AWS\

@@ -1,3 +1,7 @@
+---
+title: "Creating a new data model"
+---
+
 # Creating a new data model
 
 Follow these steps to create a new data model in Amazon DynamoDB using NoSQL Workbench.

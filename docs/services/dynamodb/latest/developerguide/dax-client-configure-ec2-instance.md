@@ -1,3 +1,7 @@
+---
+title: "Step 3: Configure an Amazon EC2 instance"
+---
+
 # Step 3: Configure an Amazon EC2 instance
 
 When your Amazon EC2 instance is available, you can log in to the instance and prepare it

@@ -1,3 +1,7 @@
+---
+title: "ListTables"
+---
+
 # ListTables
 
 Returns an array of table names associated with the current account and endpoint. The

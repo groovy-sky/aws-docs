@@ -1,3 +1,7 @@
+---
+title: "Using Global Secondary Indexes in DynamoDB"
+---
+
 # Using Global Secondary Indexes in DynamoDB
 
 Some applications might need to perform many kinds of queries, using a variety of

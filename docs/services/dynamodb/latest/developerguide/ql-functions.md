@@ -1,3 +1,7 @@
+---
+title: "Use PartiQL functions with DynamoDB"
+---
+
 # Use PartiQL functions with DynamoDB
 
 PartiQL in Amazon DynamoDB supports the following built-in variants of SQL standard

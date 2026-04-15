@@ -1,3 +1,7 @@
+---
+title: "Delete DynamoDB data using PartiQL DELETE statements with an AWS SDK"
+---
+
 # Delete DynamoDB data using PartiQL DELETE statements with an AWS SDK
 
 The following code example shows how to delete data using PartiQL DELETE statements.

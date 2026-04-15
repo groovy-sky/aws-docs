@@ -1,3 +1,7 @@
+---
+title: "GlobalTableWitnessGroupUpdate"
+---
+
 # GlobalTableWitnessGroupUpdate
 
 Represents one of the following:

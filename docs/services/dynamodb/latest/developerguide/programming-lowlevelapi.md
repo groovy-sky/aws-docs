@@ -1,3 +1,7 @@
+---
+title: "DynamoDB low-level API"
+---
+
 # DynamoDB low-level API
 
 The Amazon DynamoDB _low-level API_ is the protocol-level interface for

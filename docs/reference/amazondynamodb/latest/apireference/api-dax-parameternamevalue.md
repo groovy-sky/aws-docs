@@ -1,3 +1,7 @@
+---
+title: "ParameterNameValue"
+---
+
 # ParameterNameValue
 
 An individual DAX parameter.

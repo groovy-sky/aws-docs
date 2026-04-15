@@ -1,3 +1,7 @@
+---
+title: "RestoreSummary"
+---
+
 # RestoreSummary
 
 Contains details for the restore.

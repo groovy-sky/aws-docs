@@ -1,3 +1,7 @@
+---
+title: "Legacy DynamoDB conditional parameters"
+---
+
 # Legacy DynamoDB conditional parameters
 
 This document provides an overview of legacy conditional parameters in DynamoDB and recommends

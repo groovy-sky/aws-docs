@@ -1,3 +1,7 @@
+---
+title: "RestoreTableFromBackup"
+---
+
 # RestoreTableFromBackup
 
 Creates a new table from an existing backup. Any number of users can execute up to 50

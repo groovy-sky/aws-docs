@@ -1,3 +1,7 @@
+---
+title: "GlobalTableWitnessDescription"
+---
+
 # GlobalTableWitnessDescription
 
 Represents the properties of a witness Region in a MRSC global table.

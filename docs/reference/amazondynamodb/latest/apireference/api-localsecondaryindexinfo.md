@@ -1,3 +1,7 @@
+---
+title: "LocalSecondaryIndexInfo"
+---
+
 # LocalSecondaryIndexInfo
 
 Represents the properties of a local secondary index for the table when the backup was

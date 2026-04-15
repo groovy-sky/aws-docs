@@ -1,3 +1,7 @@
+---
+title: "Using web identity federation"
+---
+
 # Using web identity federation
 
 If you are writing an application targeted at large numbers of users, you can

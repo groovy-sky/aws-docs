@@ -1,3 +1,7 @@
+---
+title: "Writing conditions with legacy parameters"
+---
+
 # Writing conditions with legacy parameters
 
 ###### Note

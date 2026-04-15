@@ -1,3 +1,7 @@
+---
+title: "DynamoDB resource-based policy best practices"
+---
+
 # DynamoDB resource-based policy best practices
 
 This topic describes the best practices for defining access permissions for your DynamoDB

@@ -1,3 +1,7 @@
+---
+title: "Exploring datasets and building operations with NoSQL Workbench"
+---
+
 # Exploring datasets and building operations with NoSQL Workbench
 
 NoSQL Workbench for Amazon DynamoDB provides a rich graphical user interface for developing and

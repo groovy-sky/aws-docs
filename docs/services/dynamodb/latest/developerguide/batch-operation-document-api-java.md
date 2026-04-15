@@ -1,3 +1,7 @@
+---
+title: "Example: Batch operations using AWS SDK for Java document API"
+---
+
 # Example: Batch operations using AWS SDK for Java document API
 
 This section provides examples of batch write and batch get operations in Amazon DynamoDB using

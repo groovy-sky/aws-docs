@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting latency issues in Amazon DynamoDB"
+---
+
 # Troubleshooting latency issues in Amazon DynamoDB
 
 If your workload appears to experience high latency, you can analyze the CloudWatch

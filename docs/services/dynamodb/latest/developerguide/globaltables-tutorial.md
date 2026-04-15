@@ -1,3 +1,7 @@
+---
+title: "Creating a global table (Version 2017.11.29)"
+---
+
 # Creating a global table (Version 2017.11.29)
 
 ###### Important

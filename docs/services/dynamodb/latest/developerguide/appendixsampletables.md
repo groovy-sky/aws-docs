@@ -1,3 +1,7 @@
+---
+title: "Example tables and data for use in DynamoDB"
+---
+
 # Example tables and data for use in DynamoDB
 
 The _Amazon DynamoDB Developer Guide_ uses sample tables to

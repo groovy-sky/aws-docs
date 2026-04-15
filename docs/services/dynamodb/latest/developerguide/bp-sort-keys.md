@@ -1,3 +1,7 @@
+---
+title: "Best practices for using sort keys to organize data in DynamoDB"
+---
+
 # Best practices for using sort keys to organize data in DynamoDB
 
 In an Amazon DynamoDB table, the primary key that uniquely identifies each item in the table can

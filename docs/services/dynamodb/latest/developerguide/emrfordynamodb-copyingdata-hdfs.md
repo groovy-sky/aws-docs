@@ -1,3 +1,7 @@
+---
+title: "Copying data between DynamoDB and HDFS"
+---
+
 # Copying data between DynamoDB and HDFS
 
 If you have data in a DynamoDB table, you can use Hive to copy the data to the Hadoop

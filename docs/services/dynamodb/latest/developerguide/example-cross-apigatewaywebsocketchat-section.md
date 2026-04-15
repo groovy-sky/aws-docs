@@ -1,3 +1,7 @@
+---
+title: "Create a websocket chat application with API Gateway"
+---
+
 # Create a websocket chat application with API Gateway
 
 The following code example shows how to create a chat application that is served by a websocket API built on Amazon API Gateway.

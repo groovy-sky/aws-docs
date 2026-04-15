@@ -1,3 +1,7 @@
+---
+title: "Programming with DynamoDB and the AWS SDKs"
+---
+
 # Programming with DynamoDB and the AWS SDKs
 
 This section covers developer-related topics. If you want to run code examples instead,

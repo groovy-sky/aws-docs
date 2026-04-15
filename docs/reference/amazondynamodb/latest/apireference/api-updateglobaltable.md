@@ -1,3 +1,7 @@
+---
+title: "UpdateGlobalTable"
+---
+
 # UpdateGlobalTable
 
 Adds or removes replicas in the specified global table. The global table must already

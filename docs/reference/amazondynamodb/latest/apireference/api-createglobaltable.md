@@ -1,3 +1,7 @@
+---
+title: "CreateGlobalTable"
+---
+
 # CreateGlobalTable
 
 Creates a global table from an existing table. A global table creates a replication

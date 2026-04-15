@@ -1,3 +1,7 @@
+---
+title: "Programmatic interfaces that work with DynamoDB"
+---
+
 # Programmatic interfaces that work with DynamoDB
 
 Every [AWS SDK](https://aws.amazon.com/tools) provides one or more

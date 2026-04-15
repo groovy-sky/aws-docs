@@ -1,3 +1,7 @@
+---
+title: "Using Kinesis Data Streams to capture changes to DynamoDB"
+---
+
 # Using Kinesis Data Streams to capture changes to DynamoDB
 
 You can use Amazon Kinesis Data Streams to capture changes to Amazon DynamoDB.

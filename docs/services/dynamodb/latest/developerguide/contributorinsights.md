@@ -1,3 +1,7 @@
+---
+title: "Analyzing data access using CloudWatch contributor insights for DynamoDB"
+---
+
 # Analyzing data access using CloudWatch contributor insights for DynamoDB
 
 Amazon CloudWatch Contributor Insights for Amazon DynamoDB is a diagnostic tool for identifying the

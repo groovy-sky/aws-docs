@@ -1,3 +1,7 @@
+---
+title: "Query a DynamoDB table by using batches of PartiQL statements and an AWS SDK"
+---
+
 # Query a DynamoDB table by using batches of PartiQL statements and an AWS SDK
 
 The following code examples show how to:

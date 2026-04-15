@@ -1,3 +1,7 @@
+---
+title: "Modifying an existing SDK for Java 1.x application to use DAX"
+---
+
 # Modifying an existing SDK for Java 1.x application to use DAX
 
 If you already have a Java application that uses Amazon DynamoDB, you have to modify it so that

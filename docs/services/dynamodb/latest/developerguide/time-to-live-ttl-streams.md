@@ -1,3 +1,7 @@
+---
+title: "DynamoDB Streams and Time to Live"
+---
+
 # DynamoDB Streams and Time to Live
 
 You can back up, or otherwise process, items that are deleted by [Time to Live](ttl.md) (TTL) by enabling Amazon DynamoDB Streams on the table and processing the streams records

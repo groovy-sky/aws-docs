@@ -1,3 +1,7 @@
+---
+title: "Use BatchExecuteStatement with an AWS SDK"
+---
+
 # Use `BatchExecuteStatement` with an AWS SDK
 
 The following code examples show how to use `BatchExecuteStatement`.

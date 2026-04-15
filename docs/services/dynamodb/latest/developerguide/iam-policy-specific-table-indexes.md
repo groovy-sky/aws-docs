@@ -1,3 +1,7 @@
+---
+title: "IAM policy to grant access to a specific DynamoDB table and its indexes"
+---
+
 # IAM policy to grant access to a specific DynamoDB table and its indexes
 
 The following policy grants permissions for data modification actions on a DynamoDB

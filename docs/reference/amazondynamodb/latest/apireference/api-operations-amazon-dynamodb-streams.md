@@ -1,3 +1,7 @@
+---
+title: "Amazon DynamoDB Streams"
+---
+
 # Amazon DynamoDB Streams
 
 The following actions are supported by Amazon DynamoDB Streams:

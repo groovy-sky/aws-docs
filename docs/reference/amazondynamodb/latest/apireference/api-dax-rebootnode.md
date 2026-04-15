@@ -1,3 +1,7 @@
+---
+title: "RebootNode"
+---
+
 # RebootNode
 
 Reboots a single node of a DAX cluster. The reboot action takes

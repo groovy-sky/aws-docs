@@ -1,3 +1,7 @@
+---
+title: "Create a messenger application with Step Functions"
+---
+
 # Create a messenger application with Step Functions
 
 The following code example shows how to create an AWS Step Functions messenger application that retrieves message records from a database table.

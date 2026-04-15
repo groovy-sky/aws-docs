@@ -1,3 +1,7 @@
+---
+title: "Creating backups of DynamoDB tables with AWS Backup"
+---
+
 # Creating backups of DynamoDB tables with AWS Backup
 
 This section describes how to turn on AWS Backup to create on-demand and scheduled backups from your DynamoDB tables.

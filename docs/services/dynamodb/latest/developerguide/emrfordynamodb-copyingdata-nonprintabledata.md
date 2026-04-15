@@ -1,3 +1,7 @@
+---
+title: "Reading non-printable UTF-8 character data"
+---
+
 # Reading non-printable UTF-8 character data
 
 To read and write non-printable UTF-8 character data, you can use the `STORED

@@ -1,3 +1,7 @@
+---
+title: "SSESpecification"
+---
+
 # SSESpecification
 
 Represents the settings used to enable server-side encryption.

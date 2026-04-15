@@ -1,3 +1,7 @@
+---
+title: "Manage DynamoDB Global Secondary Indexes using AWS Command Line Interface v2"
+---
+
 # Manage DynamoDB Global Secondary Indexes using AWS Command Line Interface v2
 
 The following code example shows how to manage the complete lifecycle of Global Secondary Indexes.

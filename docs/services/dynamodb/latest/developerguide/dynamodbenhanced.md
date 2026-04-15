@@ -1,3 +1,7 @@
+---
+title: "Java 2.x: DynamoDB Enhanced Client"
+---
+
 # Java 2.x: DynamoDB Enhanced Client
 
 The DynamoDB enhanced client is a high-level library that is part of the AWS SDK for Java version 2

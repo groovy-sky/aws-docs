@@ -1,3 +1,7 @@
+---
+title: "Download NoSQL Workbench for DynamoDB"
+---
+
 # Download NoSQL Workbench for DynamoDB
 
 Follow these instructions to download NoSQL Workbench and DynamoDB local for Amazon DynamoDB.

@@ -1,3 +1,7 @@
+---
+title: "UpdateKinesisStreamingConfiguration"
+---
+
 # UpdateKinesisStreamingConfiguration
 
 Enables updating the configuration for Kinesis Streaming.

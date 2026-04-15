@@ -1,3 +1,7 @@
+---
+title: "CloudWatch throttling metrics"
+---
+
 # CloudWatch throttling metrics
 
 This page provides a comprehensive guide to CloudWatch metrics specifically designed to help you

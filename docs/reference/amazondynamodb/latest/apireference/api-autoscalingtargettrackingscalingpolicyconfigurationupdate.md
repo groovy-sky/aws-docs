@@ -1,3 +1,7 @@
+---
+title: "AutoScalingTargetTrackingScalingPolicyConfigurationUpdate"
+---
+
 # AutoScalingTargetTrackingScalingPolicyConfigurationUpdate
 
 Represents the settings of a target tracking scaling policy that will be

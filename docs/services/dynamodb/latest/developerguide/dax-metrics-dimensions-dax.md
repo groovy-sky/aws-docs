@@ -1,3 +1,7 @@
+---
+title: "Viewing DAX metrics and dimensions"
+---
+
 # Viewing DAX metrics and dimensions
 
 When you interact with Amazon DynamoDB, it sends metrics and dimensions to Amazon CloudWatch. You

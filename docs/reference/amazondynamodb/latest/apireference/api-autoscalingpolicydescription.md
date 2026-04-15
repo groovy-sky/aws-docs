@@ -1,3 +1,7 @@
+---
+title: "AutoScalingPolicyDescription"
+---
+
 # AutoScalingPolicyDescription
 
 Represents the properties of the scaling policy.

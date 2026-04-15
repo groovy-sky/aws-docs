@@ -1,3 +1,7 @@
+---
+title: "DeleteRequest"
+---
+
 # DeleteRequest
 
 Represents a request to perform a `DeleteItem` operation on an item.

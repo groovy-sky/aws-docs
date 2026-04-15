@@ -1,3 +1,7 @@
+---
+title: "Create a DynamoDB table with a Global Secondary Index using the AWS SDK"
+---
+
 # Create a DynamoDB table with a Global Secondary Index using the AWS SDK
 
 The following code example shows how to create a table with global secondary index.

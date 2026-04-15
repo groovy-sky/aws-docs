@@ -1,3 +1,7 @@
+---
+title: "Query a DynamoDB table using a Global Secondary Index with an AWS SDK"
+---
+
 # Query a DynamoDB table using a Global Secondary Index with an AWS SDK
 
 The following code examples show how to query a table using a Global Secondary Index.

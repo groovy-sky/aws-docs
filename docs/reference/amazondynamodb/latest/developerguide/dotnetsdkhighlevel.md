@@ -1,3 +1,7 @@
+---
+title: "Working with the .NET object persistence model and DynamoDB"
+---
+
 # Working with the .NET object persistence model and DynamoDB
 
 The AWS SDK for .NET provides an object persistence model that enables you to map your

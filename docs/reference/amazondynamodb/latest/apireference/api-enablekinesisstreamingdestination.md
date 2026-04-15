@@ -1,3 +1,7 @@
+---
+title: "EnableKinesisStreamingDestination"
+---
+
 # EnableKinesisStreamingDestination
 
 Starts table data replication to the specified Kinesis data stream at a timestamp

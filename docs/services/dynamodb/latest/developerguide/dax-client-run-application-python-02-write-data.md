@@ -1,3 +1,7 @@
+---
+title: "02-write-data.py"
+---
+
 # 02-write-data.py
 
 The `02-write-data.py` program writes test data to

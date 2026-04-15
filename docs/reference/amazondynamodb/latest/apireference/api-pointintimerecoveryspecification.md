@@ -1,3 +1,7 @@
+---
+title: "PointInTimeRecoverySpecification"
+---
+
 # PointInTimeRecoverySpecification
 
 Represents the settings used to enable point in time recovery.

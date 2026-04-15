@@ -1,3 +1,7 @@
+---
+title: "Step 1: Create an Amazon EC2 key pair"
+---
+
 # Step 1: Create an Amazon EC2 key pair
 
 In this step, you will create the Amazon EC2 key pair you need to connect to an Amazon EMR

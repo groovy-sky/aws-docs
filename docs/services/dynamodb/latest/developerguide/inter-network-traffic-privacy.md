@@ -1,3 +1,7 @@
+---
+title: "Securing DynamoDB connections using VPC endpoints and IAM policies\""
+---
+
 # Securing DynamoDB connections using VPC endpoints and IAM policies"
 
 Connections are protected both between Amazon DynamoDB and on-premises applications and between

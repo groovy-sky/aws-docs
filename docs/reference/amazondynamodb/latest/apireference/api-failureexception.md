@@ -1,3 +1,7 @@
+---
+title: "FailureException"
+---
+
 # FailureException
 
 Represents a failure a contributor insights operation.

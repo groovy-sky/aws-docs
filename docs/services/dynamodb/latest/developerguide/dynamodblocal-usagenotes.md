@@ -1,3 +1,7 @@
+---
+title: "DynamoDB local usage notes"
+---
+
 # DynamoDB local usage notes
 
 Except for the endpoint, applications that run with the downloadable version of

@@ -1,3 +1,7 @@
+---
+title: "Java Annotations for DynamoDB"
+---
+
 # Java Annotations for DynamoDB
 
 This section describes the annotations that are available for mapping your classes and

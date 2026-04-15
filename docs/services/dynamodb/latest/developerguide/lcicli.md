@@ -1,3 +1,7 @@
+---
+title: "Working with Local Secondary Indexes in DynamoDB AWS CLI"
+---
+
 # Working with Local Secondary Indexes in DynamoDB AWS CLI
 
 You can use the AWS CLI to create an Amazon DynamoDB table with one or more

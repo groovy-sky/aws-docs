@@ -1,3 +1,7 @@
+---
+title: "Best practices for handling time series data in DynamoDB"
+---
+
 # Best practices for handling time series data in DynamoDB
 
 General design principles in Amazon DynamoDB recommend that you keep the number of tables you use

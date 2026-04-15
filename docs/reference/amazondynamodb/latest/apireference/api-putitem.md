@@ -1,3 +1,7 @@
+---
+title: "PutItem"
+---
+
 # PutItem
 
 Creates a new item, or replaces an old item with a new item. If an item that has the

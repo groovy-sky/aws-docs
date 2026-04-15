@@ -1,3 +1,7 @@
+---
+title: "DynamoDB table classes"
+---
+
 # DynamoDB table classes
 
 DynamoDB offers two table classes designed to help you optimize for cost. The DynamoDB

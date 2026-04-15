@@ -1,3 +1,7 @@
+---
+title: "ContributorInsightsSummary"
+---
+
 # ContributorInsightsSummary
 
 Represents a Contributor Insights summary entry.

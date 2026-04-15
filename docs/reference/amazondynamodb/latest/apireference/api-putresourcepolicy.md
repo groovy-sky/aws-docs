@@ -1,3 +1,7 @@
+---
+title: "PutResourcePolicy"
+---
+
 # PutResourcePolicy
 
 Attaches a resource-based policy document to the resource, which can be a table or

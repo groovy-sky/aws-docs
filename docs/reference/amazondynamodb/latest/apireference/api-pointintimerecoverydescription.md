@@ -1,3 +1,7 @@
+---
+title: "PointInTimeRecoveryDescription"
+---
+
 # PointInTimeRecoveryDescription
 
 The description of the point in time settings applied to the table.

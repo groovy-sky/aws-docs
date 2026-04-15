@@ -1,3 +1,7 @@
+---
+title: "Adding tags and labels to resources in DynamoDB"
+---
+
 # Adding tags and labels to resources in DynamoDB
 
 You can label Amazon DynamoDB resources using _tags_. Tags let you

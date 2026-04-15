@@ -1,3 +1,7 @@
+---
+title: "SSEDescription"
+---
+
 # SSEDescription
 
 The description of the server-side encryption status on the specified DAX

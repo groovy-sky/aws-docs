@@ -1,3 +1,7 @@
+---
+title: "Distributing write activity efficiently during data upload in DynamoDB"
+---
+
 # Distributing write activity efficiently during data upload in DynamoDB
 
 Typically, when you load data from other data sources, Amazon DynamoDB partitions your table data

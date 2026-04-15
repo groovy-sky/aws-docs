@@ -1,3 +1,7 @@
+---
+title: "TryDaxHelper.java"
+---
+
 # TryDaxHelper.java
 
 The `TryDaxHelper.java` file contains utility methods.

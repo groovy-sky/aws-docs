@@ -1,3 +1,7 @@
+---
+title: "Examples for using ABAC with DynamoDB tables and indexes"
+---
+
 # Examples for using ABAC with DynamoDB tables and indexes
 
 The following examples depict some use cases to implement attribute-based conditions using tags.

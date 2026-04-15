@@ -1,3 +1,7 @@
+---
+title: "Step 5: Query data in a DynamoDB table"
+---
+
 # Step 5: Query data in a DynamoDB table
 
 In this step, you query the data that you wrote to the `Music` table in

@@ -1,3 +1,7 @@
+---
+title: "Understanding DynamoDB warm throughput"
+---
+
 # Understanding DynamoDB warm throughput
 
 _Warm throughput_ refers to the number of read and write operations

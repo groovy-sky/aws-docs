@@ -1,3 +1,7 @@
+---
+title: "Use Step Functions to invoke Lambda functions"
+---
+
 # Use Step Functions to invoke Lambda functions
 
 The following code example shows how to create an AWS Step Functions state machine that invokes AWS Lambda functions in sequence.

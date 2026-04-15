@@ -1,3 +1,7 @@
+---
+title: "Copying data to and from Amazon DynamoDB"
+---
+
 # Copying data to and from Amazon DynamoDB
 
 In the [Tutorial: Working with Amazon DynamoDB and Apache Hive](emrfordynamodb-tutorial.md), you copied data from a native Hive table into an external DynamoDB table, and then

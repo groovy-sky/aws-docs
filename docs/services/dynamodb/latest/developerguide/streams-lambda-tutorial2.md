@@ -1,3 +1,7 @@
+---
+title: "Tutorial #2: Using filters to process some events with DynamoDB and Lambda"
+---
+
 # Tutorial \#2: Using filters to process some events with DynamoDB and Lambda
 
 In this tutorial, you will create an AWS Lambda trigger to process only some events in

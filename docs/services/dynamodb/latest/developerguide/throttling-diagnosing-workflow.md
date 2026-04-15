@@ -1,3 +1,7 @@
+---
+title: "Diagnosing throttling"
+---
+
 # Diagnosing throttling
 
 When your application experiences throttling, DynamoDB provides detailed exception

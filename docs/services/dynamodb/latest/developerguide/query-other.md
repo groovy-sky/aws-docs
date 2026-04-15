@@ -1,3 +1,7 @@
+---
+title: "Other aspects of working with the Query operation in DynamoDB"
+---
+
 # Other aspects of working with the Query operation in DynamoDB
 
 This section covers additional aspects of the DynamoDB Query operation, including

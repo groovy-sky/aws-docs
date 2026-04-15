@@ -1,3 +1,7 @@
+---
+title: "GetRecords"
+---
+
 # GetRecords
 
 Retrieves the stream records from a given shard.

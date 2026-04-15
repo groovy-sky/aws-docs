@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Working with Amazon DynamoDB and Apache Hive"
+---
+
 # Tutorial: Working with Amazon DynamoDB and Apache Hive
 
 In this tutorial, you will launch an Amazon EMR cluster, and then use Apache Hive to

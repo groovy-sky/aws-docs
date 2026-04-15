@@ -1,3 +1,7 @@
+---
+title: "IAM policy to grant read access for a DynamoDB stream only (not for the table)"
+---
+
 # IAM policy to grant read access for a DynamoDB stream only (not for the table)
 
 When you enable DynamoDB Streams on a table, information is captured about every modification

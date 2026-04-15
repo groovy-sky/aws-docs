@@ -1,3 +1,7 @@
+---
+title: "DAX cluster sizing guide"
+---
+
 # DAX cluster sizing guide
 
 This guide provides advice for choosing an appropriate Amazon DynamoDB Accelerator (DAX) cluster

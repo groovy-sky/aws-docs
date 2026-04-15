@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 Encryption Client programming languages"
+---
+
 # Amazon S3 Encryption Client programming languages
 
 The Amazon S3 Encryption Client is supported in the following programming languages and platforms. This guide

@@ -1,3 +1,7 @@
+---
+title: "CreateGlobalSecondaryIndexAction"
+---
+
 # CreateGlobalSecondaryIndexAction
 
 Represents a new global secondary index to be added to an existing table.

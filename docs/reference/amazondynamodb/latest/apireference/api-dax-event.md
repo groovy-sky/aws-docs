@@ -1,3 +1,7 @@
+---
+title: "Event"
+---
+
 # Event
 
 Represents a single occurrence of something interesting within the system. Some

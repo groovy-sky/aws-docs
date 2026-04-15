@@ -1,3 +1,7 @@
+---
+title: "ThrottlingReason"
+---
+
 # ThrottlingReason
 
 Represents the specific reason why a DynamoDB request was throttled and the

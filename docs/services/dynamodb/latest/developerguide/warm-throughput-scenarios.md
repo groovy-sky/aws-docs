@@ -1,3 +1,7 @@
+---
+title: "Understanding DynamoDB warm throughput in different scenarios"
+---
+
 # Understanding DynamoDB warm throughput in different scenarios
 
 Here are some different scenarios you might encounter when working with DynamoDB warm

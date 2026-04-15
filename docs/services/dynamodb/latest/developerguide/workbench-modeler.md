@@ -1,3 +1,7 @@
+---
+title: "Building data models with NoSQL Workbench"
+---
+
 # Building data models with NoSQL Workbench
 
 You can use the data modeler tool in NoSQL Workbench for Amazon DynamoDB to build new data models,

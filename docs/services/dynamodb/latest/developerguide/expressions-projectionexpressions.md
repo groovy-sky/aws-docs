@@ -1,3 +1,7 @@
+---
+title: "Using projection expressions in DynamoDB"
+---
+
 # Using projection expressions in DynamoDB
 
 To read data from a table, you use operations such as `GetItem`,

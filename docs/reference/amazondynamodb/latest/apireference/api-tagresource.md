@@ -1,3 +1,7 @@
+---
+title: "TagResource"
+---
+
 # TagResource
 
 Associate a set of tags with an Amazon DynamoDB resource. You can then activate these

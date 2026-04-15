@@ -1,3 +1,7 @@
+---
+title: "Perform advanced DynamoDB query operations using an AWS SDK"
+---
+
 # Perform advanced DynamoDB query operations using an AWS SDK
 
 The following code examples show how to perform advanced query operations in DynamoDB.

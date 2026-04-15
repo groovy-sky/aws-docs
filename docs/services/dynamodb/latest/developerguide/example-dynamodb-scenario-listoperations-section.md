@@ -1,3 +1,7 @@
+---
+title: "Perform list operations in DynamoDB with an AWS SDK"
+---
+
 # Perform list operations in DynamoDB with an AWS SDK
 
 The following code examples show how to perform list operations in DynamoDB.

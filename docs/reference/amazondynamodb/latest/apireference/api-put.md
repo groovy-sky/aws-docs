@@ -1,3 +1,7 @@
+---
+title: "Put"
+---
+
 # Put
 
 Represents a request to perform a `PutItem` operation.

@@ -1,3 +1,7 @@
+---
+title: "Best practices using DynamoDB Streams with Lambda"
+---
+
 # Best practices using DynamoDB Streams with Lambda
 
 An AWS Lambda function runs within a _container_—an execution

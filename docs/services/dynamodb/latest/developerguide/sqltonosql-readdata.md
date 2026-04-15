@@ -1,3 +1,7 @@
+---
+title: "Differences between a relational (SQL) database and DynamoDB when reading data from a table"
+---
+
 # Differences between a relational (SQL) database and DynamoDB when reading data from a table
 
 With SQL, you use the `SELECT` statement to retrieve one or more rows from

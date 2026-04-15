@@ -1,3 +1,7 @@
+---
+title: "Differences between a relational (SQL) database and DynamoDB when managing indexes"
+---
+
 # Differences between a relational (SQL) database and DynamoDB when managing indexes
 
 Indexes give you access to alternate query patterns, and can speed up queries. This

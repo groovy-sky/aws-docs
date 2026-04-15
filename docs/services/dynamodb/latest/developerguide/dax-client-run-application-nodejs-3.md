@@ -1,3 +1,7 @@
+---
+title: "Node.js and DAX"
+---
+
 # Node.js and DAX
 
 The DAX SDK for Node.js v3.x is compatible with [AWS\

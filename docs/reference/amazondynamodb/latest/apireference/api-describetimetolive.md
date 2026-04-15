@@ -1,3 +1,7 @@
+---
+title: "DescribeTimeToLive"
+---
+
 # DescribeTimeToLive
 
 Gives a description of the Time to Live (TTL) status on the specified table.

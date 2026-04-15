@@ -1,3 +1,7 @@
+---
+title: "Release history for NoSQL Workbench"
+---
+
 # Release history for NoSQL Workbench
 
 The following table describes the important changes in each release of the _NoSQL Workbench_ client tool.

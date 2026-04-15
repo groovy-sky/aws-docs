@@ -1,3 +1,7 @@
+---
+title: "Understand update expression order in DynamoDB with an AWS SDK"
+---
+
 # Understand update expression order in DynamoDB with an AWS SDK
 
 The following code examples show how to understand update expression order.

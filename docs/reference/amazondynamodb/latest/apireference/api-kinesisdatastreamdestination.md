@@ -1,3 +1,7 @@
+---
+title: "KinesisDataStreamDestination"
+---
+
 # KinesisDataStreamDestination
 
 Describes a Kinesis data stream destination.

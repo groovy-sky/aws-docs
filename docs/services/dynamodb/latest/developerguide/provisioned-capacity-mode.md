@@ -1,3 +1,7 @@
+---
+title: "DynamoDB provisioned capacity mode"
+---
+
 # DynamoDB provisioned capacity mode
 
 When you create a new provisioned table in DynamoDB, you must specify its

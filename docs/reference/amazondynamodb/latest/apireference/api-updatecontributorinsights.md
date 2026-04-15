@@ -1,3 +1,7 @@
+---
+title: "UpdateContributorInsights"
+---
+
 # UpdateContributorInsights
 
 Updates the status for contributor insights for a specific table or index. CloudWatch

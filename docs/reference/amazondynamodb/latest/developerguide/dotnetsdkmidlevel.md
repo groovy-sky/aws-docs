@@ -1,3 +1,7 @@
+---
+title: "Working with the .NET document model in DynamoDB"
+---
+
 # Working with the .NET document model in DynamoDB
 
 The AWS SDK for .NET provides document model classes that wrap some of the low-level Amazon DynamoDB

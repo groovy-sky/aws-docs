@@ -1,3 +1,7 @@
+---
+title: "Delete"
+---
+
 # Delete
 
 Represents a request to perform a `DeleteItem` operation.

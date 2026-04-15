@@ -1,3 +1,7 @@
+---
+title: "Creating CloudWatch alarms to monitor DAX"
+---
+
 # Creating CloudWatch alarms to monitor DAX
 
 You can create an Amazon CloudWatch alarm that sends an Amazon Simple Notification Service (Amazon SNS) message when the

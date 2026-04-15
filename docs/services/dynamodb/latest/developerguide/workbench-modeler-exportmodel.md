@@ -1,3 +1,7 @@
+---
+title: "Exporting a data model"
+---
+
 # Exporting a data model
 
 After you create a data model using NoSQL Workbench for Amazon DynamoDB, you can save and

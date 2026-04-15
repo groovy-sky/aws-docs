@@ -1,3 +1,7 @@
+---
+title: "AttributeUpdates (legacy)"
+---
+
 # AttributeUpdates (legacy)
 
 ###### Note

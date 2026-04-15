@@ -1,3 +1,7 @@
+---
+title: "Example: Handling binary type attributes using the AWS SDK for Java document API"
+---
+
 # Example: Handling binary type attributes using the AWS SDK for Java document API
 
 The following Java code example illustrates handling binary type attributes. The example

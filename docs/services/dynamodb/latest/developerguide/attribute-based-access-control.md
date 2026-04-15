@@ -1,3 +1,7 @@
+---
+title: "Using attribute-based access control with DynamoDB"
+---
+
 # Using attribute-based access control with DynamoDB
 
 [Attribute-based access control (ABAC)](../../../iam/latest/userguide/introduction-attribute-based-access-control.md) is an authorization strategy that defines

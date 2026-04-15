@@ -1,3 +1,7 @@
+---
+title: "Tutorials: Creating multi-account global tables"
+---
+
 # Tutorials: Creating multi-account global tables
 
 This section provides step-by-step instructions for creating DynamoDB global tables that span across multiple AWS accounts.

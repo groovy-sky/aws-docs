@@ -1,3 +1,7 @@
+---
+title: "How DynamoDB global tables work"
+---
+
 # How DynamoDB global tables work
 
 The following sections describe the concepts and behaviors of global tables in

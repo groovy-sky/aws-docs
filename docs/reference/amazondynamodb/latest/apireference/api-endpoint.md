@@ -1,3 +1,7 @@
+---
+title: "Endpoint"
+---
+
 # Endpoint
 
 An endpoint information details.

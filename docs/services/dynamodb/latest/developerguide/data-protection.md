@@ -1,3 +1,7 @@
+---
+title: "Data protection in DynamoDB"
+---
+
 # Data protection in DynamoDB
 
 Amazon DynamoDB provides a highly durable storage infrastructure designed for mission-critical

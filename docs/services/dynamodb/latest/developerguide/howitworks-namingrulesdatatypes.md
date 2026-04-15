@@ -1,3 +1,7 @@
+---
+title: "Supported data types and naming rules in Amazon DynamoDB"
+---
+
 # Supported data types and naming rules in Amazon DynamoDB
 
 This section describes the Amazon DynamoDB naming rules and the various data types that

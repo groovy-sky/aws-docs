@@ -1,3 +1,7 @@
+---
+title: "DynamoDB burst and adaptive capacity"
+---
+
 # DynamoDB burst and adaptive capacity
 
 To minimize throttling because of throughput exceptions, DynamoDB uses _burst_

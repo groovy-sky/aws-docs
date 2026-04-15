@@ -1,3 +1,7 @@
+---
+title: "General guidelines for secondary indexes in DynamoDB"
+---
+
 # General guidelines for secondary indexes in DynamoDB
 
 Amazon DynamoDB supports two types of secondary indexes:

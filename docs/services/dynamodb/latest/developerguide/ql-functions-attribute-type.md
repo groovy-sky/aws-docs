@@ -1,3 +1,7 @@
+---
+title: "Using the ATTRIBUTE_TYPE function with PartiQL for DynamoDB"
+---
+
 # Using the ATTRIBUTE\_TYPE function with PartiQL for DynamoDB
 
 Returns `TRUE` if the attribute at the specified path is of a particular

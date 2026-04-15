@@ -1,3 +1,7 @@
+---
+title: "Using DynamoDB with other AWS services"
+---
+
 # Using DynamoDB with other AWS services
 
 Amazon DynamoDB is integrated with other AWS services, letting you automate repeating tasks or

@@ -1,3 +1,7 @@
+---
+title: "Query a DynamoDB table using a begins_with condition with an AWS SDK"
+---
+
 # Query a DynamoDB table using a begins\_with condition with an AWS SDK
 
 The following code examples show how to query a table using a begins\_with condition.

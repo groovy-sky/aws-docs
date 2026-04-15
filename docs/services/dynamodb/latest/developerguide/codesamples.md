@@ -1,3 +1,7 @@
+---
+title: "Running the code examples in this Developer Guide"
+---
+
 # Running the code examples in this Developer Guide
 
 The AWS SDKs provide broad support for Amazon DynamoDB in the following languages:

@@ -1,3 +1,7 @@
+---
+title: "ListGlobalTables"
+---
+
 # ListGlobalTables
 
 Lists all global tables that have a replica in the specified Region.

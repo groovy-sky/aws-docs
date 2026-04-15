@@ -1,3 +1,7 @@
+---
+title: "UpdateGlobalSecondaryIndexAction"
+---
+
 # UpdateGlobalSecondaryIndexAction
 
 Represents the new provisioned throughput settings to be applied to a global secondary

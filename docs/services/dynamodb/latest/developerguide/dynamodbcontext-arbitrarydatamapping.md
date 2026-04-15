@@ -1,3 +1,7 @@
+---
+title: "Mapping arbitrary data with DynamoDB using the AWS SDK for .NET object persistence model"
+---
+
 # Mapping arbitrary data with DynamoDB using the AWS SDK for .NET object persistence model
 
 In addition to the supported .NET types (see [Supported data types](../../../../reference/amazondynamodb/latest/developerguide/dotnetsdkhighlevel.md#DotNetDynamoDBContext.SupportedTypes)), you can use types in your

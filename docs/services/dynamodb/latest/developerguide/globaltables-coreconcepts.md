@@ -1,3 +1,7 @@
+---
+title: "Global tables core concepts"
+---
+
 # Global tables core concepts
 
 The following sections describe the concepts and behaviors of global tables in Amazon DynamoDB

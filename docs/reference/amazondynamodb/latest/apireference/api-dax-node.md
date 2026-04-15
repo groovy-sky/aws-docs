@@ -1,3 +1,7 @@
+---
+title: "Node"
+---
+
 # Node
 
 Represents an individual node within a DAX cluster.

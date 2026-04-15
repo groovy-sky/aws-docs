@@ -1,3 +1,7 @@
+---
+title: "Using Global Secondary Indexes to create an eventually consistent replica in DynamoDB"
+---
+
 # Using Global Secondary Indexes to create an eventually consistent replica in DynamoDB
 
 You can use a global secondary index to create an eventually consistent replica of a table.

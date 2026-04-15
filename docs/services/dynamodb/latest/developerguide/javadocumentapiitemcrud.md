@@ -1,3 +1,7 @@
+---
+title: "Working with items: Java"
+---
+
 # Working with items: Java
 
 You can use the AWS SDK for Java Document API to perform typical create, read, update, and delete

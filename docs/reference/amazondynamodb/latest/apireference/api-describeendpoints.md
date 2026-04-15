@@ -1,3 +1,7 @@
+---
+title: "DescribeEndpoints"
+---
+
 # DescribeEndpoints
 
 Returns the regional endpoint information. For more information on policy permissions,

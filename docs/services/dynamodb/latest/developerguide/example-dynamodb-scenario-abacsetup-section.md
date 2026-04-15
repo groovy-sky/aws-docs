@@ -1,3 +1,7 @@
+---
+title: "Set up Attribute-Based Access Control for DynamoDB using AWS Command Line Interface v2"
+---
+
 # Set up Attribute-Based Access Control for DynamoDB using AWS Command Line Interface v2
 
 The following code example shows how to implement Attribute-Based Access Control (ABAC) for DynamoDB.

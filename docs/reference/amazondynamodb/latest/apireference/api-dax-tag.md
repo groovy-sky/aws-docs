@@ -1,3 +1,7 @@
+---
+title: "Tag"
+---
+
 # Tag
 
 A description of a tag. Every tag is a key-value pair. You can add up to 50 tags to

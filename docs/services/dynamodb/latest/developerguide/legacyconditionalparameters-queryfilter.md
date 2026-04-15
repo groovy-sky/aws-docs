@@ -1,3 +1,7 @@
+---
+title: "QueryFilter (legacy)"
+---
+
 # QueryFilter (legacy)
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "Manage DynamoDB resource-based policies using AWS Command Line Interface v2"
+---
+
 # Manage DynamoDB resource-based policies using AWS Command Line Interface v2
 
 The following code example shows how to manage the complete lifecycle of resource-based policies for DynamoDB tables.

@@ -1,3 +1,7 @@
+---
+title: "Differences in scanning a table"
+---
+
 # Differences in scanning a table
 
 In SQL, a `SELECT` statement without a `WHERE` clause will

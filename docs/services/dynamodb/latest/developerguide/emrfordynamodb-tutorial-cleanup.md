@@ -1,3 +1,7 @@
+---
+title: "Step 7: (Optional) clean up"
+---
+
 # Step 7: (Optional) clean up
 
 Now that you have completed the tutorial, you can continue reading this section to

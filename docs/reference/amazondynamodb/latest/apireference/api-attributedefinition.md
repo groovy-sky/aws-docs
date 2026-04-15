@@ -1,3 +1,7 @@
+---
+title: "AttributeDefinition"
+---
+
 # AttributeDefinition
 
 Represents an attribute for describing the schema for the table and indexes.

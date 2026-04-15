@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting throttling in Amazon DynamoDB"
+---
+
 # Troubleshooting throttling in Amazon DynamoDB
 
 DynamoDB implements throttling for two primary purposes: maintaining overall service

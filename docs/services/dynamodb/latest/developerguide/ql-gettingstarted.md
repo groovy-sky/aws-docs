@@ -1,3 +1,7 @@
+---
+title: "Getting started with PartiQL for DynamoDB"
+---
+
 # Getting started with PartiQL for DynamoDB
 
 This section describes how to use PartiQL for DynamoDB from the Amazon DynamoDB console, the

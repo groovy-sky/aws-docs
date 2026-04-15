@@ -1,3 +1,7 @@
+---
+title: "Step 4: Load data into HDFS"
+---
+
 # Step 4: Load data into HDFS
 
 In this step, you will copy a data file into Hadoop Distributed File System

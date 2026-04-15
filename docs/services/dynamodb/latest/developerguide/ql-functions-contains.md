@@ -1,3 +1,7 @@
+---
+title: "Using the CONTAINS function with PartiQL for DynamoDB"
+---
+
 # Using the CONTAINS function with PartiQL for DynamoDB
 
 Returns `TRUE` if the attribute specified by the path is one of the

@@ -1,3 +1,7 @@
+---
+title: "UpdateReplicationGroupMemberAction"
+---
+
 # UpdateReplicationGroupMemberAction
 
 Represents a replica to be modified.

@@ -1,3 +1,7 @@
+---
+title: "Constraints in Amazon DynamoDB"
+---
+
 # Constraints in Amazon DynamoDB
 
 This section describes current constraints, formerly referred to as limits, within Amazon DynamoDB.

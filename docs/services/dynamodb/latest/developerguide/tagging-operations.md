@@ -1,3 +1,7 @@
+---
+title: "Tagging resources in DynamoDB"
+---
+
 # Tagging resources in DynamoDB
 
 You can use the Amazon DynamoDB console or the AWS Command Line Interface (AWS CLI) to add, list, edit, or delete

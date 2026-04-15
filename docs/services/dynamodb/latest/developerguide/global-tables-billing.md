@@ -1,3 +1,7 @@
+---
+title: "Understanding Amazon DynamoDB billing for global tables"
+---
+
 # Understanding Amazon DynamoDB billing for global tables
 
 This guide describes how DynamoDB billing works for global tables, identifying the

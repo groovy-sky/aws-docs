@@ -1,3 +1,7 @@
+---
+title: "Best practices for DynamoDB table design"
+---
+
 # Best practices for DynamoDB table design
 
 General design principles in Amazon DynamoDB recommend that you keep the number of tables

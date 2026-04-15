@@ -1,3 +1,7 @@
+---
+title: "Using DynamoDB global tables"
+---
+
 # Using DynamoDB global tables
 
 Global tables build on Amazon DynamoDB’s global footprint to provide you with a fully managed,

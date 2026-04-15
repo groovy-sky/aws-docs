@@ -1,3 +1,7 @@
+---
+title: "IAM policy to grant permissions to all DynamoDB actions on a table"
+---
+
 # IAM policy to grant permissions to all DynamoDB actions on a table
 
 The following policy grants permissions for _all_ DynamoDB actions

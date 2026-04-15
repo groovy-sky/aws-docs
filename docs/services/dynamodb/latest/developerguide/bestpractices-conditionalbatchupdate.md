@@ -1,3 +1,7 @@
+---
+title: "Conditional batch update"
+---
+
 # Conditional batch update
 
 DynamoDB supports batch operations such as `BatchWriteItem` using which you can perform up to 25

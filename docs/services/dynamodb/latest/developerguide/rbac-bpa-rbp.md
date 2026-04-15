@@ -1,3 +1,7 @@
+---
+title: "Blocking public access with resource-based policies in DynamoDB"
+---
+
 # Blocking public access with resource-based policies in DynamoDB
 
 Block Public Access (BPA) is a feature that identifies

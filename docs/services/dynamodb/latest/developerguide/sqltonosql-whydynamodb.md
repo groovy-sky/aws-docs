@@ -1,3 +1,7 @@
+---
+title: "Choosing between relational (SQL) and NoSQL"
+---
+
 # Choosing between relational (SQL) and NoSQL
 
 Today's applications have more demanding requirements than ever before. For example,

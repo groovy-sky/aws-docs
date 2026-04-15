@@ -1,3 +1,7 @@
+---
+title: "GetResourcePolicy"
+---
+
 # GetResourcePolicy
 
 Returns the resource-based policy document attached to the resource, which can be a

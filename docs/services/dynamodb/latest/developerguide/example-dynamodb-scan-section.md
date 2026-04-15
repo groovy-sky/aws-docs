@@ -1,3 +1,7 @@
+---
+title: "Use Scan with an AWS SDK or CLI"
+---
+
 # Use `Scan` with an AWS SDK or CLI
 
 The following code examples show how to use `Scan`.

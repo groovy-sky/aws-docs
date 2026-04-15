@@ -1,3 +1,7 @@
+---
+title: "Differences in accessing a relational (SQL) database and DynamoDB"
+---
+
 # Differences in accessing a relational (SQL) database and DynamoDB
 
 Before your application can access a database, it must be

@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting SSL/TLS connection establishment issues with DynamoDB"
+---
+
 # Troubleshooting SSL/TLS connection establishment issues with DynamoDB
 
 Amazon DynamoDB is in the process of moving our endpoints to secure

@@ -1,3 +1,7 @@
+---
+title: "Work with DynamoDB global tables and multi-Region replication with eventual consistency (MREC) using AWS Command Line Interface v2"
+---
+
 # Work with DynamoDB global tables and multi-Region replication with eventual consistency (MREC) using AWS Command Line Interface v2
 
 The following code example shows how to manage DynamoDB global tables with multi-Region replication with eventual consistency (MREC).

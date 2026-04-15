@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 Encryption Client for Java"
+---
+
 # Amazon S3 Encryption Client for Java
 
 ###### Note

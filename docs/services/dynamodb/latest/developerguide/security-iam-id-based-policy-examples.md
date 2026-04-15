@@ -1,3 +1,7 @@
+---
+title: "Identity-based policy examples for Amazon DynamoDB"
+---
+
 # Identity-based policy examples for Amazon DynamoDB
 
 By default, users and roles don't have permission to create or modify DynamoDB

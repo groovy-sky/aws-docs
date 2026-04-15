@@ -1,3 +1,7 @@
+---
+title: "Query a DynamoDB table for TTL items using an AWS SDK"
+---
+
 # Query a DynamoDB table for TTL items using an AWS SDK
 
 The following code examples show how to query for TTL items.

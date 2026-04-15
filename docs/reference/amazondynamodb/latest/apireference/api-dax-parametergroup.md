@@ -1,3 +1,7 @@
+---
+title: "ParameterGroup"
+---
+
 # ParameterGroup
 
 A named set of parameters that are applied to all of the nodes in a DAX cluster.

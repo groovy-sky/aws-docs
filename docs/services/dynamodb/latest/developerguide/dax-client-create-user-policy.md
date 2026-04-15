@@ -1,3 +1,7 @@
+---
+title: "Step 2: Create a user and policy"
+---
+
 # Step 2: Create a user and policy
 
 In this step, you create a user with a policy that grants access to your Amazon

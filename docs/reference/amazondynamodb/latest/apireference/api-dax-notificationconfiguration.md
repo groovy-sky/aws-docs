@@ -1,3 +1,7 @@
+---
+title: "NotificationConfiguration"
+---
+
 # NotificationConfiguration
 
 Describes a notification topic and its status. Notification topics are used for

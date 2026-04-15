@@ -1,3 +1,7 @@
+---
+title: "Using resource-based policies for DynamoDB"
+---
+
 # Using resource-based policies for DynamoDB
 
 DynamoDB supports resource-based policies for tables, indexes, and streams. Resource-based

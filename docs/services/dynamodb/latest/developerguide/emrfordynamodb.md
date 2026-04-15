@@ -1,3 +1,7 @@
+---
+title: "Processing DynamoDB data with Apache Hive on Amazon EMR"
+---
+
 # Processing DynamoDB data with Apache Hive on Amazon EMR
 
 Amazon DynamoDB is integrated with Apache Hive, a data warehousing application that runs on

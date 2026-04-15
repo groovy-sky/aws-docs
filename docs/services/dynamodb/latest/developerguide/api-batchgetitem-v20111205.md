@@ -1,3 +1,7 @@
+---
+title: "BatchGetItem"
+---
+
 # BatchGetItem
 
 ###### Important

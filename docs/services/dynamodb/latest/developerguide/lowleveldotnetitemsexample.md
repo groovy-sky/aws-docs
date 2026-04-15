@@ -1,3 +1,7 @@
+---
+title: "Example: CRUD operations using the AWS SDK for .NET low-level API"
+---
+
 # Example: CRUD operations using the AWS SDK for .NET low-level API
 
 The following C# code example illustrates CRUD operations on an Amazon DynamoDB item. The

@@ -1,3 +1,7 @@
+---
+title: "Optional configuration settings for DynamoDBMapper"
+---
+
 # Optional configuration settings for DynamoDBMapper
 
 When you create an instance of `DynamoDBMapper`, it has certain default

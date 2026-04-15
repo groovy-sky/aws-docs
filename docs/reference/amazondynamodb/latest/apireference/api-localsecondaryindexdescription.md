@@ -1,3 +1,7 @@
+---
+title: "LocalSecondaryIndexDescription"
+---
+
 # LocalSecondaryIndexDescription
 
 Represents the properties of a local secondary index.

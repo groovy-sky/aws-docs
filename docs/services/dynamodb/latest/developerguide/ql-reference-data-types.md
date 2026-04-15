@@ -1,3 +1,7 @@
+---
+title: "PartiQL data types for DynamoDB"
+---
+
 # PartiQL data types for DynamoDB
 
 The following table lists the data types you can use with PartiQL for DynamoDB.

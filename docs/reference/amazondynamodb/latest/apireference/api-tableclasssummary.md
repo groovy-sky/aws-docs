@@ -1,3 +1,7 @@
+---
+title: "TableClassSummary"
+---
+
 # TableClassSummary
 
 Contains details of the table class.

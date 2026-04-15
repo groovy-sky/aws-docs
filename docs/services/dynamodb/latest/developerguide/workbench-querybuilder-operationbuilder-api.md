@@ -1,3 +1,7 @@
+---
+title: "Building API operations"
+---
+
 # Building API operations
 
 To use NoSQL Workbench to build DynamoDB CRUD APIs, select **Operation**

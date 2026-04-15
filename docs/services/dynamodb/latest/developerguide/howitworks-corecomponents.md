@@ -1,3 +1,7 @@
+---
+title: "Core components of Amazon DynamoDB"
+---
+
 # Core components of Amazon DynamoDB
 
 In DynamoDB, tables, items, and attributes are the core components that you work with. A

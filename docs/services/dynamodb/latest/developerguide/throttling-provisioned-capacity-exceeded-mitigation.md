@@ -1,3 +1,7 @@
+---
+title: "2- Provisioned throughput exceeded"
+---
+
 # 2- Provisioned throughput exceeded
 
 Provisioned capacity throttling occurs when your application's consumption rate exceeds

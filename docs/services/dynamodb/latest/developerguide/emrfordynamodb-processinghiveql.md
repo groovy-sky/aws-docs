@@ -1,3 +1,7 @@
+---
+title: "Processing HiveQL statements"
+---
+
 # Processing HiveQL statements
 
 Hive is an application that runs on Hadoop, which is a batch-oriented framework for

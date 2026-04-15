@@ -1,3 +1,7 @@
+---
+title: "DynamoDB zero-ETL integration with Amazon Redshift"
+---
+
 # DynamoDB zero-ETL integration with Amazon Redshift
 
 Amazon DynamoDB zero-ETL integration with Amazon Redshift enables seamless analytics on

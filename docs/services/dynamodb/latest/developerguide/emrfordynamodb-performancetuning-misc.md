@@ -1,3 +1,7 @@
+---
+title: "Additional topics"
+---
+
 # Additional topics
 
 The following are some more ways to tune applications that use Hive to access

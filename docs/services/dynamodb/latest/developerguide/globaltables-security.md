@@ -1,3 +1,7 @@
+---
+title: "DynamoDB global tables security"
+---
+
 # DynamoDB global tables security
 
 Global tables replicas are DynamoDB tables, so you use the same methods for controlling

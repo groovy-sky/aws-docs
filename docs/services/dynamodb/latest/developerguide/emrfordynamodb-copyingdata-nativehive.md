@@ -1,3 +1,7 @@
+---
+title: "Copying data between DynamoDB and a native Hive table"
+---
+
 # Copying data between DynamoDB and a native Hive table
 
 If you have data in a DynamoDB table, you can copy the data to a native Hive table.

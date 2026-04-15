@@ -1,3 +1,7 @@
+---
+title: "Differences between getting table information from a relational (SQL) database and DynamoDB"
+---
+
 # Differences between getting table information from a relational (SQL) database and DynamoDB
 
 You can verify that a table has been created according to your specifications. In a

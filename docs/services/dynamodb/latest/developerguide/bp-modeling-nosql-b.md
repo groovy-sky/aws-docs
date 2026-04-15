@@ -1,3 +1,7 @@
+---
+title: "Example of modeling relational data in DynamoDB"
+---
+
 # Example of modeling relational data in DynamoDB
 
 This example describes how to model relational data in Amazon DynamoDB. The DynamoDB table design

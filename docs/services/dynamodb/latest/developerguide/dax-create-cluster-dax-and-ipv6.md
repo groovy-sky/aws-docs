@@ -1,3 +1,7 @@
+---
+title: "DAX and IPv6"
+---
+
 # DAX and IPv6
 
 DynamoDB DAX now supports IPv6 addressing, that allows you to create clusters that

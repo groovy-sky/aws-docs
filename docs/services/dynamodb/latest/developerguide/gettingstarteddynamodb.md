@@ -1,3 +1,7 @@
+---
+title: "Getting started with DynamoDB"
+---
+
 # Getting started with DynamoDB
 
 You’ll learn how to connect to, create, and manage DynamoDB tables in the following

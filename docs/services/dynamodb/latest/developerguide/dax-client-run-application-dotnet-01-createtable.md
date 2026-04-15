@@ -1,3 +1,7 @@
+---
+title: "01-CreateTable.cs"
+---
+
 # 01-CreateTable.cs
 
 The `01-CreateTable.cs` program creates a table

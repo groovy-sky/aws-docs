@@ -1,3 +1,7 @@
+---
+title: "Getting started with Kinesis Data Streams for Amazon DynamoDB"
+---
+
 # Getting started with Kinesis Data Streams for Amazon DynamoDB
 
 This section describes how to use Kinesis Data Streams for Amazon DynamoDB tables with the Amazon DynamoDB console,

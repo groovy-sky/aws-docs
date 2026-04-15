@@ -1,3 +1,7 @@
+---
+title: "Using IAM with DynamoDB transactions"
+---
+
 # Using IAM with DynamoDB transactions
 
 You can use AWS Identity and Access Management (IAM) to restrict the actions that transactional operations can

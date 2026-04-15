@@ -1,3 +1,7 @@
+---
+title: "DynamoDB API permissions: Actions, resources, and conditions reference"
+---
+
 # DynamoDB API permissions: Actions, resources, and conditions reference
 
 When you are setting up

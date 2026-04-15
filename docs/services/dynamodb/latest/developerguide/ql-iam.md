@@ -1,3 +1,7 @@
+---
+title: "IAM security policies with PartiQL for DynamoDB"
+---
+
 # IAM security policies with PartiQL for DynamoDB
 
 The following permissions are required:

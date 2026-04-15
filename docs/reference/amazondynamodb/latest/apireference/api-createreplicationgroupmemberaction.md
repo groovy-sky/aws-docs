@@ -1,3 +1,7 @@
+---
+title: "CreateReplicationGroupMemberAction"
+---
+
 # CreateReplicationGroupMemberAction
 
 Represents a replica to be created.

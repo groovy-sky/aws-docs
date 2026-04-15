@@ -1,3 +1,7 @@
+---
+title: "Query"
+---
+
 # Query
 
 You must provide the name of the partition key attribute and a single value for that

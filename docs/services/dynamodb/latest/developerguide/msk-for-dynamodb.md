@@ -1,3 +1,7 @@
+---
+title: "Integrating DynamoDB with Amazon Managed Streaming for Apache Kafka"
+---
+
 # Integrating DynamoDB with Amazon Managed Streaming for Apache Kafka
 
 [Amazon Managed Streaming for Apache Kafka\

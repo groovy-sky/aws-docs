@@ -1,3 +1,7 @@
+---
+title: "DeleteGlobalTableWitnessGroupMemberAction"
+---
+
 # DeleteGlobalTableWitnessGroupMemberAction
 
 Specifies the action to remove a witness Region from a MRSC global table. You cannot

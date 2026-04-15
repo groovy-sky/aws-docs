@@ -1,3 +1,7 @@
+---
+title: "Condition and filter expressions, operators, and functions in DynamoDB"
+---
+
 # Condition and filter expressions, operators, and functions in DynamoDB
 
 To manipulate data in an DynamoDB table, you use the `PutItem`, `UpdateItem`, and

@@ -1,3 +1,7 @@
+---
+title: "DynamoDBMapper examples"
+---
+
 # DynamoDBMapper examples
 
 The AWS SDK for Java provides a `DynamoDBMapper` class, allowing you to map

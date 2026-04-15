@@ -1,3 +1,7 @@
+---
+title: "Building PartiQL statements"
+---
+
 # Building PartiQL statements
 
 To use NoSQL Workbench to build [PartiQL for\

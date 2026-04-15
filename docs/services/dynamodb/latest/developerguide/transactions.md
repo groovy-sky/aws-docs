@@ -1,3 +1,7 @@
+---
+title: "Managing complex workflows with DynamoDB transactions"
+---
+
 # Managing complex workflows with DynamoDB transactions
 
 Amazon DynamoDB transactions simplify the developer experience of making coordinated,

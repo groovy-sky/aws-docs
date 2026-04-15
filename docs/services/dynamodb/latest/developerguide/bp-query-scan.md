@@ -1,3 +1,7 @@
+---
+title: "Best practices for querying and scanning data in DynamoDB"
+---
+
 # Best practices for querying and scanning data in DynamoDB
 
 This section covers some best practices for using `Query` and `Scan`

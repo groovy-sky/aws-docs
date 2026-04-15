@@ -1,3 +1,7 @@
+---
+title: "Migrating to DynamoDB from a relational database"
+---
+
 # Migrating to DynamoDB from a relational database
 
 Migrating a relational database into DynamoDB requires careful planning to ensure a successful

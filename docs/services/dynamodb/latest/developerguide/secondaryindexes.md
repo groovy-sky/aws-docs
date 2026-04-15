@@ -1,3 +1,7 @@
+---
+title: "Improving data access with secondary indexes in DynamoDB"
+---
+
 # Improving data access with secondary indexes in DynamoDB
 
 Amazon DynamoDB provides fast access to items in a table by specifying primary key values.

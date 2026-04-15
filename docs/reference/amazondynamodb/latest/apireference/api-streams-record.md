@@ -1,3 +1,7 @@
+---
+title: "Record"
+---
+
 # Record
 
 A description of a unique event within a stream.

@@ -1,3 +1,7 @@
+---
+title: "Work with DynamoDB Local Secondary Indexes using AWS Command Line Interface v2"
+---
+
 # Work with DynamoDB Local Secondary Indexes using AWS Command Line Interface v2
 
 The following code example shows how to create and query tables with Local Secondary Indexes.

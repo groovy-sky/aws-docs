@@ -1,3 +1,7 @@
+---
+title: "Global tables version 2017.11.29 (Legacy)"
+---
+
 # Global tables version 2017.11.29 (Legacy)
 
 ###### Important

@@ -1,3 +1,7 @@
+---
+title: "Programming Amazon DynamoDB with Python and Boto3"
+---
+
 # Programming Amazon DynamoDB with Python and Boto3
 
 This guide provides an orientation to programmers wanting to use Amazon DynamoDB with

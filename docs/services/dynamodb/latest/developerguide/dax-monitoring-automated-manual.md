@@ -1,3 +1,7 @@
+---
+title: "Monitoring tools for DynamoDB Accelerator"
+---
+
 # Monitoring tools for DynamoDB Accelerator
 
 AWS provides tools that you can use to monitor Amazon DynamoDB Accelerator (DAX). You can

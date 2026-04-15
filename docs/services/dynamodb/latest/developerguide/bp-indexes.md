@@ -1,3 +1,7 @@
+---
+title: "Best practices for using secondary indexes in DynamoDB"
+---
+
 # Best practices for using secondary indexes in DynamoDB
 
 Secondary indexes are often essential to support the query patterns that your application

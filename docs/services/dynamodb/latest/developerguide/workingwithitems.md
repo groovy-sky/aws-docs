@@ -1,3 +1,7 @@
+---
+title: "Working with items and attributes in DynamoDB"
+---
+
 # Working with items and attributes in DynamoDB
 
 In Amazon DynamoDB, an _item_ is a collection of attributes. Each attribute

@@ -1,3 +1,7 @@
+---
+title: "ReplicaGlobalSecondaryIndex"
+---
+
 # ReplicaGlobalSecondaryIndex
 
 Represents the properties of a replica global secondary index.

@@ -1,3 +1,7 @@
+---
+title: "ItemResponse"
+---
+
 # ItemResponse
 
 Details for the requested item.

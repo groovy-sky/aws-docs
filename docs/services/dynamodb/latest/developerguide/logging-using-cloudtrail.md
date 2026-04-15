@@ -1,3 +1,7 @@
+---
+title: "Logging DynamoDB operations by using AWS CloudTrail"
+---
+
 # Logging DynamoDB operations by using AWS CloudTrail
 
 DynamoDB is integrated with AWS CloudTrail, a service that provides a record of actions taken by a

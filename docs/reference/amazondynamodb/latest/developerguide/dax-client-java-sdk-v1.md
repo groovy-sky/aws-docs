@@ -1,3 +1,7 @@
+---
+title: "Using DAX with AWS SDK for Java 1.x"
+---
+
 # Using DAX with AWS SDK for Java 1.x
 
 Follow this procedure to run the Java sample for Amazon DynamoDB Accelerator (DAX) on your Amazon EC2

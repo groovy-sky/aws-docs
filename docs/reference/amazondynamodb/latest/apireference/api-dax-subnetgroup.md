@@ -1,3 +1,7 @@
+---
+title: "SubnetGroup"
+---
+
 # SubnetGroup
 
 Represents the output of one of the following actions:

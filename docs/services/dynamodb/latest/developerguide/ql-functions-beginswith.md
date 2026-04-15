@@ -1,3 +1,7 @@
+---
+title: "Using the BEGINS_WITH function with PartiQL for DynamoDB"
+---
+
 # Using the BEGINS\_WITH function with PartiQL for DynamoDB
 
 Returns `TRUE` if the attribute specified begins with a particular substring.

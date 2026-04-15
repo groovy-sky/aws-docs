@@ -1,3 +1,7 @@
+---
+title: "Using the DynamoDB Streams Kinesis adapter to process stream records"
+---
+
 # Using the DynamoDB Streams Kinesis adapter to process stream records
 
 Using the Amazon Kinesis Adapter is the recommended way to consume streams from Amazon DynamoDB. The

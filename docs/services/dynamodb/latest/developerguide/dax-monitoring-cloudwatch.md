@@ -1,3 +1,7 @@
+---
+title: "Monitoring with Amazon CloudWatch"
+---
+
 # Monitoring with Amazon CloudWatch
 
 You can monitor DynamoDB Accelerator (DAX) using Amazon CloudWatch, which collects and processes raw data

@@ -1,3 +1,7 @@
+---
+title: "Adjusting the mappers"
+---
+
 # Adjusting the mappers
 
 When Hive launches a Hadoop job, the job is processed by one or more mapper tasks.

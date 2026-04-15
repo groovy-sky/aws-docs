@@ -1,3 +1,7 @@
+---
+title: ".NET code examples"
+---
+
 # .NET code examples
 
 ###### Topics

@@ -1,3 +1,7 @@
+---
+title: "DescribeSubnetGroups"
+---
+
 # DescribeSubnetGroups
 
 Returns a list of subnet group descriptions. If a subnet group name is specified,

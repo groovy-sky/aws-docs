@@ -1,3 +1,7 @@
+---
+title: "BillingModeSummary"
+---
+
 # BillingModeSummary
 
 Contains the details for the read/write capacity mode. This page talks about

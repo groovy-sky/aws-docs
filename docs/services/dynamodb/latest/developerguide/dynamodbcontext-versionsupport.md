@@ -1,3 +1,7 @@
+---
+title: "Optimistic locking using DynamoDB and the AWS SDK for .NET object persistence model"
+---
+
 # Optimistic locking using DynamoDB and the AWS SDK for .NET object persistence model
 
 Optimistic locking support in the object persistence model ensures that the item

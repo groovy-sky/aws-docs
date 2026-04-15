@@ -1,3 +1,7 @@
+---
+title: "ParameterizedStatement"
+---
+
 # ParameterizedStatement
 
 Represents a PartiQL statement that uses parameters.

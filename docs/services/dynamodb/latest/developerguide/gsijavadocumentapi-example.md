@@ -1,3 +1,7 @@
+---
+title: "Example: Global Secondary Indexes using the AWS SDK for Java document API"
+---
+
 # Example: Global Secondary Indexes using the AWS SDK for Java document API
 
 The following Java code example shows how to work with global secondary indexes. The
