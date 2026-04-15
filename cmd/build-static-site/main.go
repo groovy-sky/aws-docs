@@ -199,7 +199,13 @@ const viewerHTML = `<!doctype html>
       throw new Error('invalid path');
     }
 
-    pathEl.textContent = 'docs/' + docPath;
+    const githubUrl = 'https://github.com/groovy-sky/aws-docs/blob/main/docs/' + encodePath(docPath);
+    const pathLink = document.createElement('a');
+    pathLink.href = githubUrl;
+    pathLink.target = '_blank';
+    pathLink.rel = 'noopener noreferrer';
+    pathLink.textContent = githubUrl;
+    pathEl.appendChild(pathLink);
 
     fetch(RAW_BASE + encodePath(docPath))
       .then(r => {
