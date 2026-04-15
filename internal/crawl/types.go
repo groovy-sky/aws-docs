@@ -13,6 +13,11 @@ type FetchResult struct {
 	RequestFailed         error
 }
 
+type FetchOptions struct {
+	IfNoneMatch     string
+	IfModifiedSince string
+}
+
 type ExtractedDocument struct {
 	CanonicalURL string
 	Title        string

@@ -11,8 +11,10 @@ import (
 	"path/filepath"
 	"sort"
 	"strings"
+	"time"
 
 	"github.com/groovy-sky/aws-docs/internal/config"
+	"github.com/groovy-sky/aws-docs/internal/model"
 	"github.com/groovy-sky/aws-docs/internal/store"
 	"github.com/groovy-sky/aws-docs/internal/write"
 )
@@ -431,8 +433,17 @@ func (c *Crawler) processURL(ctx context.Context, pageURL string) ([]string, err
 	}
 	c.logf("crawl process-start: url=%s", pageURL)
 
-	result, err := c.fetcher.Fetch(ctx, pageURL)
+	pageRecord, hasPageRecord, err := c.loadPageRecord(pageURL)
 	if err != nil {
+		return nil, err
+	}
+
+	result, err := c.fetcher.Fetch(ctx, pageURL, FetchOptions{
+		IfNoneMatch:     pageRecord.ETag,
+		IfModifiedSince: pageRecord.LastModified,
+	})
+	if err != nil {
+		_ = c.storeFetchFailure(pageURL, pageRecord, hasPageRecord, result, err)
 		if result.PotentialBotChallenge {
 			log.Printf("potential bot challenge: url=%s reason=%s", pageURL, result.BotChallengeReason)
 		}
@@ -440,17 +451,37 @@ func (c *Crawler) processURL(ctx context.Context, pageURL string) ([]string, err
 	}
 	if !c.allowedByRobots(result.FinalURL) {
 		c.logf("crawl final-url-blocked-by-robots: source=%s final=%s", pageURL, result.FinalURL)
+		_ = c.storeFetchFailure(pageURL, pageRecord, hasPageRecord, result, fmt.Errorf("final URL blocked by robots.txt"))
 		return nil, fmt.Errorf("final URL blocked by robots.txt")
+	}
+	if result.NotModified {
+		if err := c.storeNotModifiedPage(pageURL, result, pageRecord, hasPageRecord); err != nil {
+			return nil, err
+		}
+		c.logf("crawl not-modified: url=%s final-url=%s", pageURL, result.FinalURL)
+		return nil, nil
 	}
 
 	extracted, err := c.extractor.Extract(result.FinalURL, result.Body)
 	if err != nil {
+		_ = c.storeFetchFailure(pageURL, pageRecord, hasPageRecord, result, err)
 		return nil, err
 	}
 	if strings.TrimSpace(extracted.RedirectURL) != "" {
 		resolved, err := ResolveURL(result.FinalURL, extracted.RedirectURL, c.config)
 		if err != nil {
+			_ = c.storeFetchFailure(pageURL, pageRecord, hasPageRecord, result, err)
 			return nil, fmt.Errorf("resolve redirect target %q: %w", extracted.RedirectURL, err)
+		}
+		if err := c.storePageRecordAliases(model.PageRecord{
+			URL:          pageURL,
+			RepoPath:     c.mapper.RepoPath(resolved),
+			ETag:         result.ETag,
+			LastModified: result.LastModified,
+			LastFetched:  time.Now().UTC(),
+			StatusCode:   result.StatusCode,
+		}, pageURL, result.FinalURL, resolved); err != nil {
+			return nil, err
 		}
 		c.logf("crawl meta-refresh: source=%s target=%s", result.FinalURL, resolved)
 		return []string{resolved}, nil
@@ -468,11 +499,29 @@ func (c *Crawler) processURL(ctx context.Context, pageURL string) ([]string, err
 
 	repoPath := c.mapper.RepoPath(canonicalURL)
 	contentWithFrontMatter := addTitleFrontMatter(extracted.Title, markdownDocument.Markdown)
-	if err := c.writer.Write(repoPath, contentWithFrontMatter); err != nil {
+	wroteFile, err := c.writer.WriteIfChanged(repoPath, contentWithFrontMatter)
+	if err != nil {
+		_ = c.storeFetchFailure(pageURL, pageRecord, hasPageRecord, result, err)
 		return nil, fmt.Errorf("write %s: %w", repoPath, err)
 	}
+	if err := c.storePageRecordAliases(model.PageRecord{
+		URL:          pageURL,
+		RepoPath:     repoPath,
+		ETag:         result.ETag,
+		LastModified: result.LastModified,
+		ContentHash:  markdownDocument.ContentHash,
+		LastFetched:  time.Now().UTC(),
+		StatusCode:   result.StatusCode,
+		LastError:    "",
+	}, pageURL, result.FinalURL, canonicalURL); err != nil {
+		return nil, err
+	}
 	c.recordSearchEntry(repoPath, extracted.Title, markdownDocument.Markdown)
-	c.logf("crawl wrote: canonical-url=%s path=%s markdown-bytes=%d", canonicalURL, repoPath, len(markdownDocument.Markdown))
+	if wroteFile {
+		c.logf("crawl wrote: canonical-url=%s path=%s markdown-bytes=%d", canonicalURL, repoPath, len(markdownDocument.Markdown))
+	} else {
+		c.logf("crawl skip-write-unchanged: canonical-url=%s path=%s", canonicalURL, repoPath)
+	}
 
 	discovered := make([]string, 0, len(extracted.Links))
 	for _, link := range extracted.Links {
@@ -486,6 +535,115 @@ func (c *Crawler) processURL(ctx context.Context, pageURL string) ([]string, err
 	}
 
 	return discovered, nil
+}
+
+func (c *Crawler) loadPageRecord(pageURL string) (model.PageRecord, bool, error) {
+	if c.store == nil {
+		return model.PageRecord{}, false, nil
+	}
+	record, found, err := c.store.GetPage(pageURL)
+	if err != nil || found {
+		return record, found, err
+	}
+
+	normalizedURL, err := NormalizeURL(pageURL, c.config)
+	if err != nil || normalizedURL == pageURL {
+		return model.PageRecord{}, false, nil
+	}
+
+	return c.store.GetPage(normalizedURL)
+}
+
+func (c *Crawler) storeNotModifiedPage(pageURL string, result FetchResult, existing model.PageRecord, found bool) error {
+	if c.store == nil {
+		return nil
+	}
+
+	record := existing
+	if !found {
+		record = model.PageRecord{}
+	}
+	record.URL = pageURL
+	if record.RepoPath == "" {
+		record.RepoPath = c.mapper.RepoPath(result.FinalURL)
+	}
+	if strings.TrimSpace(result.ETag) != "" {
+		record.ETag = result.ETag
+	}
+	if strings.TrimSpace(result.LastModified) != "" {
+		record.LastModified = result.LastModified
+	}
+	record.LastFetched = time.Now().UTC()
+	record.StatusCode = result.StatusCode
+	record.LastError = ""
+
+	return c.storePageRecordAliases(record, pageURL, result.FinalURL)
+}
+
+func (c *Crawler) storeFetchFailure(pageURL string, existing model.PageRecord, found bool, result FetchResult, fetchErr error) error {
+	if c.store == nil {
+		return nil
+	}
+
+	record := existing
+	if !found {
+		record = model.PageRecord{}
+	}
+	record.URL = pageURL
+	if record.RepoPath == "" {
+		record.RepoPath = c.mapper.RepoPath(pageURL)
+	}
+	if strings.TrimSpace(result.FinalURL) != "" && record.RepoPath == "" {
+		record.RepoPath = c.mapper.RepoPath(result.FinalURL)
+	}
+	if strings.TrimSpace(result.ETag) != "" {
+		record.ETag = result.ETag
+	}
+	if strings.TrimSpace(result.LastModified) != "" {
+		record.LastModified = result.LastModified
+	}
+	record.LastFetched = time.Now().UTC()
+	record.StatusCode = result.StatusCode
+	record.LastError = fetchErr.Error()
+
+	return c.storePageRecordAliases(record, pageURL, result.FinalURL)
+}
+
+func (c *Crawler) storePageRecordAliases(record model.PageRecord, rawURLs ...string) error {
+	if c.store == nil {
+		return nil
+	}
+
+	seen := make(map[string]struct{}, len(rawURLs))
+	for _, rawURL := range rawURLs {
+		trimmed := strings.TrimSpace(rawURL)
+		if trimmed == "" {
+			continue
+		}
+
+		candidates := []string{trimmed}
+		if normalized, err := NormalizeURL(trimmed, c.config); err == nil && normalized != trimmed {
+			candidates = append(candidates, normalized)
+		}
+
+		for _, candidate := range candidates {
+			if _, exists := seen[candidate]; exists {
+				continue
+			}
+			seen[candidate] = struct{}{}
+
+			aliasRecord := record
+			aliasRecord.URL = candidate
+			if aliasRecord.RepoPath == "" {
+				aliasRecord.RepoPath = c.mapper.RepoPath(candidate)
+			}
+			if err := c.store.PutPage(aliasRecord); err != nil {
+				return err
+			}
+		}
+	}
+
+	return nil
 }
 
 func (c *Crawler) logf(format string, args ...any) {

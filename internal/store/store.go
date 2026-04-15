@@ -8,12 +8,14 @@ import (
 	"sort"
 	"strconv"
 
+	"github.com/groovy-sky/aws-docs/internal/model"
 	bolt "go.etcd.io/bbolt"
 )
 
 var (
 	seedsBucket      = []byte("seeds")
 	seedsKey         = []byte("all")
+	pagesBucket      = []byte("pages")
 	stateBucket      = []byte("state")
 	sectionCursorKey = []byte("section_cursor")
 )
@@ -33,6 +35,9 @@ func Open(path string) (*Store, error) {
 	store := &Store{db: database}
 	if err := store.db.Update(func(tx *bolt.Tx) error {
 		if _, err := tx.CreateBucketIfNotExists(seedsBucket); err != nil {
+			return err
+		}
+		if _, err := tx.CreateBucketIfNotExists(pagesBucket); err != nil {
 			return err
 		}
 		if _, err := tx.CreateBucketIfNotExists(stateBucket); err != nil {
@@ -122,5 +127,39 @@ func (s *Store) PutSeeds(seeds []string) error {
 			return err
 		}
 		return tx.Bucket(seedsBucket).Put(seedsKey, encoded)
+	})
+}
+
+func (s *Store) GetPage(url string) (model.PageRecord, bool, error) {
+	var record model.PageRecord
+	found := false
+	err := s.db.View(func(tx *bolt.Tx) error {
+		value := tx.Bucket(pagesBucket).Get([]byte(url))
+		if value == nil {
+			return nil
+		}
+		if err := json.Unmarshal(value, &record); err != nil {
+			return err
+		}
+		found = true
+		return nil
+	})
+	if err != nil {
+		return model.PageRecord{}, false, fmt.Errorf("get page %q: %w", url, err)
+	}
+	return record, found, nil
+}
+
+func (s *Store) PutPage(record model.PageRecord) error {
+	if record.URL == "" {
+		return fmt.Errorf("put page: missing URL")
+	}
+
+	return s.db.Update(func(tx *bolt.Tx) error {
+		encoded, err := json.Marshal(record)
+		if err != nil {
+			return err
+		}
+		return tx.Bucket(pagesBucket).Put([]byte(record.URL), encoded)
 	})
 }

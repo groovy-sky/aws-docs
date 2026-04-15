@@ -77,7 +77,7 @@ func (f *Fetcher) HTTPClient() *http.Client {
 	return f.client
 }
 
-func (f *Fetcher) Fetch(ctx context.Context, rawURL string) (FetchResult, error) {
+func (f *Fetcher) Fetch(ctx context.Context, rawURL string, options FetchOptions) (FetchResult, error) {
 	var result FetchResult
 	attempt := 0
 	operation := func() error {
@@ -98,6 +98,12 @@ func (f *Fetcher) Fetch(ctx context.Context, rawURL string) (FetchResult, error)
 		request.Header.Set("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8")
 		request.Header.Set("Accept-Language", "en-US,en;q=0.9")
 		request.Header.Set("Upgrade-Insecure-Requests", "1")
+		if strings.TrimSpace(options.IfNoneMatch) != "" {
+			request.Header.Set("If-None-Match", strings.TrimSpace(options.IfNoneMatch))
+		}
+		if strings.TrimSpace(options.IfModifiedSince) != "" {
+			request.Header.Set("If-Modified-Since", strings.TrimSpace(options.IfModifiedSince))
+		}
 
 		response, err := f.client.Do(request)
 		if err != nil {

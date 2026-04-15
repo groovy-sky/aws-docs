@@ -46,26 +46,31 @@ High-level flow in `Crawler.Run`:
 URL processing (`processURL`) sequence:
 
 1. Validate robots rule.
-2. Fetch page via `Fetcher.Fetch` (rate-limited with retry).
-3. If fetch detects a likely anti-bot challenge page, crawler logs it and skips the URL when retries are exhausted.
-4. Validate robots rule again for the resolved final URL after HTTP redirects.
-5. Extract content via `Extractor.Extract`.
-6. If extractor returns `RedirectURL` (meta refresh wrapper pages), resolve target and enqueue it instead of writing markdown.
-7. Normalize canonical URL.
-8. Convert cleaned HTML to markdown using `Converter.Convert`.
-9. Map canonical URL to repository path via `Mapper.RepoPath`.
-10. Write markdown file with YAML front matter title (`title: "..."`) followed by converted markdown body.
-11. Upsert a search index entry for the written page (title, permalink, content snippet, section label).
-12. Resolve extracted links and return discovered allowed URLs.
+2. Load page metadata for the URL when present and send `If-None-Match` / `If-Modified-Since` validators on the fetch request.
+3. Fetch page via `Fetcher.Fetch` (rate-limited with retry).
+4. If fetch detects a likely anti-bot challenge page, crawler logs it and skips the URL when retries are exhausted.
+5. Validate robots rule again for the resolved final URL after HTTP redirects.
+6. If the server returns `304 Not Modified`, refresh the page metadata timestamps/status and skip extraction, conversion, and file writes.
+7. Extract content via `Extractor.Extract`.
+8. If extractor returns `RedirectURL` (meta refresh wrapper pages), resolve target, persist the refreshed metadata, and enqueue the target instead of writing markdown.
+9. Normalize canonical URL.
+10. Convert cleaned HTML to markdown using `Converter.Convert`.
+11. Map canonical URL to repository path via `Mapper.RepoPath`.
+12. Compare generated markdown against the existing file and only rewrite the file when bytes changed.
+13. Upsert page metadata (repo path, HTTP validators, content hash, fetch status, last fetch time).
+14. Upsert a search index entry for the processed page (title, permalink, content snippet, section label).
+15. Resolve extracted links and return discovered allowed URLs.
 
 Fetcher behavior:
 
 - Uses a persistent `http.Client` session with a cookie jar.
 - Sends browser-like request headers (`User-Agent`, `Accept`, `Accept-Language`, `Upgrade-Insecure-Requests`) on initial requests and redirect hops.
+- Reuses persisted `ETag` and `Last-Modified` values by sending conditional request headers when page metadata exists.
 - Follows redirects with a max depth of 10 and records the resolved final URL.
 - Applies rate-limiter gating plus randomized per-request jitter delay (`min_request_delay_ms` to `max_request_delay_ms`).
 - Retries transient failures using exponential backoff, including statuses `403`, `429`, `503`, and all `5xx` responses.
 - Detects likely anti-bot challenge HTML responses (captcha/human-verification markers) and treats them as retryable failures.
+- Preserves `304 Not Modified` responses so callers can skip downstream work while still refreshing metadata.
 - When `detailed-logging` is enabled, logs request starts, responses, redirects, retries, and terminal fetch failures.
 
 Crawler logging behavior:
@@ -114,7 +119,7 @@ Current redirect handling:
 
 ## Seed and Metadata Behavior
 
-- Metadata DB stores seed URLs in BoltDB bucket `seeds` and run state in bucket `state`.
+- Metadata DB stores seed URLs in BoltDB bucket `seeds`, per-page crawl metadata in bucket `pages`, and run state in bucket `state`.
 - `seedQueue` prioritizes stored seeds, canonicalizes, deduplicates, and prunes unreachable seeds.
 - Reachability pruning follows HTTP redirects first and keeps only the final normalized URL when it is still allowed by include/exclude filters and `robots.txt`; redirected seeds that land in excluded paths are removed before section selection.
 - Queue seed construction merges both sources: site/stored seeds and robots-derived seeds (robots structure roots plus sitemap-derived section roots), with deduplication and allowlist filtering applied before section selection.
@@ -122,6 +127,9 @@ Current redirect handling:
 - If no stored seeds exist, crawler discovers from robots-derived structure and sitemaps, then persists.
 - In `full` mode, sitemap URLs are added to queue for broader coverage.
 - In `incremental` and `partial` mode with `max_sections > 0`, section selection rotates across runs using a persisted cursor in metadata state (`section_cursor`) so each run advances to the next section window instead of always reusing the first sections.
+- Page metadata is keyed by normalized URL and stores repo path, `ETag`, `Last-Modified`, markdown content hash, fetch status, last fetch time, and last error text.
+- After successful fetches, `304` responses, and meta-refresh wrapper handling, metadata is refreshed for the requested URL plus resolved final/canonical aliases when they differ.
+- Fetch or write failures update the page record with the latest status/error so later runs still retain validators and prior repo path information.
 
 ## Seed Persistence After Crawl Run
 
@@ -134,6 +142,12 @@ At the end of every non-`refresh-url` run, `persistDiscoveredSeeds` is called wi
 - Each processed page write updates or inserts an entry keyed by permalink so incremental runs refresh only touched pages.
 - At run end, crawler writes the sorted merged index back to `static/search-index.json`.
 - Hugo no longer generates home JSON output for search; frontend search fetches this crawler-managed static index.
+
+## File Write Behavior
+
+- `FileWriter.WriteIfChanged` compares sanitized content against the current on-disk file and skips `os.WriteFile` when the bytes already match.
+- `FileWriter.Write` delegates to the same comparison logic, so unchanged generated files keep their previous modification times.
+- This skip-write behavior applies to crawled markdown output, search index writes, and `SERVICES.md` generation because they share the same writer.
 
 ## Practical Maintenance Notes
 
