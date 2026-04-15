@@ -1,3 +1,7 @@
+---
+title: "Supported encryption algorithms"
+---
+
 # Supported encryption algorithms
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 Encryption Client concepts"
+---
+
 # Amazon S3 Encryption Client concepts
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "How the Amazon S3 Encryption Client works"
+---
+
 # How the Amazon S3 Encryption Client works
 
 ###### Note

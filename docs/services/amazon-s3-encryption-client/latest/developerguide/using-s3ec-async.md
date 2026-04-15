@@ -1,3 +1,7 @@
+---
+title: "Asynchronous programming in the Amazon S3 Encryption Client for Java"
+---
+
 # Asynchronous programming in the Amazon S3 Encryption Client for Java
 
 Version 3. _x_ and later of the Amazon S3 Encryption Client provides a nonblocking asynchronous client that implements high

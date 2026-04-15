@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 Encryption Client for Go examples"
+---
+
 # Amazon S3 Encryption Client for Go examples
 
 The following examples show you how to use the Amazon S3 Encryption Client for Go to encrypt and decrypt Amazon S3

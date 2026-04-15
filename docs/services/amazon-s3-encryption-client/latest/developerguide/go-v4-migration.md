@@ -1,3 +1,7 @@
+---
+title: "S3 Encryption Client Migration (3.x to 4.x)"
+---
+
 # S3 Encryption Client Migration (3. _x_ to 4. _x_)
 
 **Note:** If you're using version 2. _x_ of the Amazon S3 Encryption Client for Go and want to migrate to version 4. _x_, you must first migrate to version 3. _x_. See [S3 Encryption Client Migration (2.x to 3.x)](go-v3-migration.md).

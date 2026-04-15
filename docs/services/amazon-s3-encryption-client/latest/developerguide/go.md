@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 Encryption Client for Go"
+---
+
 # Amazon S3 Encryption Client for Go
 
 ###### Note

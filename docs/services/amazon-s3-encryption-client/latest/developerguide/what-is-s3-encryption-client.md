@@ -1,3 +1,7 @@
+---
+title: "What is the Amazon S3 Encryption Client?"
+---
+
 # What is the Amazon S3 Encryption Client?
 
 ###### Note
