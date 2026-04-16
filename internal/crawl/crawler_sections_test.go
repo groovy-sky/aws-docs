@@ -155,3 +155,24 @@ func TestSelectSectionsByName(t *testing.T) {
 		t.Fatalf("selection size = %d, want 0", len(none))
 	}
 }
+
+func TestSectionModeSeedCandidates(t *testing.T) {
+	candidates := sectionModeSeedCandidates("docs.aws.amazon.com", "vpc")
+
+	if len(candidates) != 8 {
+		t.Fatalf("candidate length = %d, want 8", len(candidates))
+	}
+	if candidates[0] != "https://docs.aws.amazon.com/vpc/latest/userguide/" {
+		t.Fatalf("first candidate = %q, want %q", candidates[0], "https://docs.aws.amazon.com/vpc/latest/userguide/")
+	}
+	if candidates[len(candidates)-1] != "https://docs.aws.amazon.com/vpc/latest/" {
+		t.Fatalf("last candidate = %q, want %q", candidates[len(candidates)-1], "https://docs.aws.amazon.com/vpc/latest/")
+	}
+}
+
+func TestSectionModeSeedCandidatesEmptyHost(t *testing.T) {
+	candidates := sectionModeSeedCandidates("   ", "vpc")
+	if len(candidates) != 0 {
+		t.Fatalf("candidate length = %d, want 0", len(candidates))
+	}
+}

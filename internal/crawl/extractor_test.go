@@ -122,3 +122,36 @@ func TestExtractorExtractsLandingPageXMLListCardLinks(t *testing.T) {
 		t.Fatalf("second link = %q, want %q", document.Links[1], "/cli/latest/userguide/cli-chap-welcome.html")
 	}
 }
+
+func TestExtractorCollectsLinksOutsideMainSelection(t *testing.T) {
+	extractor := NewExtractor(config.Default())
+	body := []byte(`<!DOCTYPE html>
+<html>
+  <head><title>Amazon VPC</title></head>
+  <body>
+    <header>
+      <a href="/vpc/latest/privatelink">PrivateLink</a>
+    </header>
+    <main id="main-content">
+      <h1>Amazon VPC</h1>
+      <p>Overview.</p>
+      <a href="/vpc/latest/peering/">Peering</a>
+    </main>
+  </body>
+</html>`)
+
+	document, err := extractor.Extract("https://docs.aws.amazon.com/vpc/latest/userguide/", body)
+	if err != nil {
+		t.Fatalf("Extract returned error: %v", err)
+	}
+
+	if len(document.Links) != 2 {
+		t.Fatalf("Links length = %d, want 2", len(document.Links))
+	}
+	if document.Links[0] != "/vpc/latest/peering/" {
+		t.Fatalf("first link = %q, want %q", document.Links[0], "/vpc/latest/peering/")
+	}
+	if document.Links[1] != "/vpc/latest/privatelink" {
+		t.Fatalf("second link = %q, want %q", document.Links[1], "/vpc/latest/privatelink")
+	}
+}

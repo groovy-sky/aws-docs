@@ -6,6 +6,7 @@ import (
 	"encoding/hex"
 	"fmt"
 	"net/url"
+	"path"
 	"regexp"
 	"strings"
 
@@ -85,7 +86,8 @@ func (c *Converter) rewriteHref(sourceURL string, href string) string {
 	if err != nil {
 		return href
 	}
-	if parsedResolvedOriginal, err := url.Parse(resolvedOriginal); err == nil && isImagePath(parsedResolvedOriginal.Path) {
+	parsedResolvedOriginal, err := url.Parse(resolvedOriginal)
+	if err == nil && isImagePath(parsedResolvedOriginal.Path) {
 		return resolvedOriginal
 	}
 
@@ -101,6 +103,9 @@ func (c *Converter) rewriteHref(sourceURL string, href string) string {
 	if !hostAllowed(parsedResolved.Host, c.config) {
 		return resolved
 	}
+	if err == nil && shouldKeepAbsoluteSectionShortcut(parsedResolvedOriginal.Path) {
+		return resolved
+	}
 	if !isLikelyDocumentHref(parsedResolved.Path) {
 		return resolved
 	}
@@ -113,6 +118,17 @@ func (c *Converter) rewriteHref(sourceURL string, href string) string {
 	// Rewrite in-domain document links to local relative paths regardless of
 	// include/exclude crawl filters so markdown stays repository-local.
 	return c.mapper.RelativeLink(sourceURL, resolved) + anchor
+}
+
+func shouldKeepAbsoluteSectionShortcut(pathValue string) bool {
+	if pathValue == "" || pathValue == "/" || strings.HasSuffix(pathValue, "/") {
+		return false
+	}
+	last := path.Base(pathValue)
+	if last == "" || strings.Contains(last, ".") {
+		return false
+	}
+	return true
 }
 
 func isLikelyDocumentHref(pathValue string) bool {

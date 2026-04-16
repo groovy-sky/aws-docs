@@ -369,16 +369,17 @@ func (c *Crawler) seedQueue(ctx context.Context, options RunOptions) ([]string, 
 		}
 
 		for _, host := range c.config.AllowedHosts {
-			candidate := "https://" + strings.TrimSpace(host) + "/" + sectionName + "/latest/"
-			normalized, err := canonicalizeSeedURL(candidate, c.config)
-			if err != nil || normalized == "" {
-				continue
+			for _, candidate := range sectionModeSeedCandidates(host, sectionName) {
+				normalized, err := canonicalizeSeedURL(candidate, c.config)
+				if err != nil || normalized == "" {
+					continue
+				}
+				if _, exists := seen[normalized]; exists || !IsAllowedURL(normalized, c.config) || !c.allowedByRobots(normalized) {
+					continue
+				}
+				seen[normalized] = struct{}{}
+				queue = append(queue, normalized)
 			}
-			if _, exists := seen[normalized]; exists || !IsAllowedURL(normalized, c.config) || !c.allowedByRobots(normalized) {
-				continue
-			}
-			seen[normalized] = struct{}{}
-			queue = append(queue, normalized)
 		}
 	}
 
@@ -423,6 +424,25 @@ func sectionNameMatches(rawURL string, sectionName string) bool {
 	}
 	firstSegment := strings.SplitN(trimmedPath, "/", 2)[0]
 	return strings.EqualFold(firstSegment, sectionName)
+}
+
+func sectionModeSeedCandidates(host string, sectionName string) []string {
+	trimmedHost := strings.TrimSpace(host)
+	if trimmedHost == "" {
+		return nil
+	}
+
+	base := "https://" + trimmedHost + "/" + sectionName + "/latest"
+	return []string{
+		base + "/userguide/",
+		base + "/developerguide/",
+		base + "/ug/",
+		base + "/dg/",
+		base + "/apireference/",
+		base + "/api-reference/",
+		base + "/reference/",
+		base + "/",
+	}
 }
 
 func uniqueSectionsCount(urls []string) int {

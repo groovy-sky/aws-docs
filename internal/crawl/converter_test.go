@@ -93,3 +93,27 @@ func TestRewriteAssetURLResolvesRelativeImageToAbsoluteWithoutDroppingParts(t *t
 		t.Fatalf("rewriteAssetURL = %q, want %q", rewritten, want)
 	}
 }
+
+func TestRewriteHrefKeepsSectionShortcutAbsolute(t *testing.T) {
+	converter := NewConverter(config.Default(), NewMapper("docs"), nil)
+
+	source := "https://docs.aws.amazon.com/vpc/latest/userguide/"
+	href := "/vpc/latest/privatelink"
+
+	rewritten := converter.rewriteHref(source, href)
+	if rewritten != "https://docs.aws.amazon.com/vpc/latest/privatelink" {
+		t.Fatalf("rewriteHref = %q, want absolute docs URL", rewritten)
+	}
+}
+
+func TestRewriteHrefStillRewritesSlashTerminatedSectionToLocal(t *testing.T) {
+	converter := NewConverter(config.Default(), NewMapper("docs"), nil)
+
+	source := "https://docs.aws.amazon.com/vpc/latest/userguide/"
+	href := "/vpc/latest/peering/"
+
+	rewritten := converter.rewriteHref(source, href)
+	if rewritten != "peering.md" {
+		t.Fatalf("rewriteHref = %q, want %q", rewritten, "peering.md")
+	}
+}

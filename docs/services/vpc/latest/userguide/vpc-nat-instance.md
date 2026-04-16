@@ -1,3 +1,7 @@
+---
+title: "NAT instances"
+---
+
 # NAT instances
 
 A NAT instance provides network address translation (NAT). You can use a NAT instance to allow
@@ -38,17 +42,19 @@ The NAT instance must have internet access, so it must be in a public subnet (a 
 that has a route table with a route to the internet gateway), and it must have a public IP
 address or an Elastic IP address.
 
-![Diagram showing the setup of a NAT instance in a VPC](../../../images/vpc/latest/userguide/images/nat-instance-updated-png.md)
+![Diagram showing the setup of a NAT instance in a VPC](https://docs.aws.amazon.com/images/vpc/latest/userguide/images/nat-instance_updated.png)
 
 To get started with NAT instances, create a NAT AMI, create a security group for the
 NAT instance, and launch the NAT instance into your VPC.
 
 Your NAT instance quota depends on your instance quota for the Region. For more information,
-see [Amazon EC2 service quotas](../../../../general/general/latest/gr/ec2-service.md#limits_ec2) in the
+see [Amazon EC2 service quotas](../../../../general/latest/gr/ec2-service.md#limits_ec2) in the
 _AWS General Reference_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Pricing
 
 NAT instance tutorial
+
+All content copied from https://docs.aws.amazon.com/.

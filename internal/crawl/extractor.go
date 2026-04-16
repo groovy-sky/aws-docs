@@ -46,7 +46,7 @@ func (e *Extractor) Extract(rawURL string, body []byte) (ExtractedDocument, erro
 	}
 
 	cleaned := root.Clone()
-	links := extractSelectionLinks(cleaned)
+	links := mergeUniqueLinks(extractSelectionLinks(cleaned), extractSelectionLinks(document.Selection))
 	for _, selector := range e.config.ExcludeSelectors {
 		if selector == "" {
 			continue
@@ -98,6 +98,21 @@ func extractSelectionLinks(selection *goquery.Selection) []string {
 		links = append(links, href)
 	})
 	return links
+}
+
+func mergeUniqueLinks(linkSets ...[]string) []string {
+	merged := make([]string, 0)
+	seen := make(map[string]struct{})
+	for _, linkSet := range linkSets {
+		for _, href := range linkSet {
+			if _, exists := seen[href]; exists {
+				continue
+			}
+			seen[href] = struct{}{}
+			merged = append(merged, href)
+		}
+	}
+	return merged
 }
 
 func extractDocumentRedirectURL(document *goquery.Document) (string, bool) {

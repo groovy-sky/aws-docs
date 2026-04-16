@@ -125,8 +125,12 @@ func isLikelyDocPath(pathValue string) bool {
 		"/security/",
 		"/gr/",
 	}
+	pathWithBoundary := pathValue
+	if !strings.HasSuffix(pathWithBoundary, "/") {
+		pathWithBoundary += "/"
+	}
 	for _, segment := range docSegments {
-		if strings.Contains(pathValue, segment) {
+		if strings.Contains(pathWithBoundary, segment) {
 			return true
 		}
 	}

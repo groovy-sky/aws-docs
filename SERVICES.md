@@ -52,7 +52,7 @@ This file is auto-generated after crawl runs and lists currently mirrored conten
 - [Awsconsolehelpdocs](docs/services/awsconsolehelpdocs/latest/gsg/access-fave.md)
 - [Cli](docs/services/cli/latest/reference/elasticache/create-cache-cluster.md)
 - [Cloudformation](docs/services/cloudformation/latest/userguide/welcome.md)
-- [Cost Management](docs/services/cost-management/latest/userguide/ce-ris.md)
+- [Cost Management](docs/services/cost-management/latest/userguide/budgets-managing-costs.md)
 - [Dynamodb](docs/services/dynamodb/latest/developerguide/abac-enable-ddb.md)
 - [Ebs](docs/services/ebs/latest/userguide/ebs-encryption.md)
 - [Ec2](docs/services/ec2/latest/devguide/ec2-api-idempotency.md)
@@ -124,4 +124,4 @@ This file is auto-generated after crawl runs and lists currently mirrored conten
 
 ## Last run
 
-Last run: mode=section, status=error, updated_at_utc=2026-04-16T07:34:12Z, error=section mode: no seed URLs found for section "vpc"
+Last run: mode=section, status=success, updated_at_utc=2026-04-16T21:07:48Z
