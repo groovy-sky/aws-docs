@@ -1,3 +1,7 @@
+---
+title: "Provide Access Through a Web Browser"
+---
+
 # Provide Access Through a Web Browser
 
 Your users can start an WorkSpaces Applications streaming session by using a web browser or the WorkSpaces Applications client application for a supported device. The following topics provide information to help you provide user access through a web browser.

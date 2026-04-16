@@ -1,3 +1,7 @@
+---
+title: "Function Keys"
+---
+
 # Function Keys
 
 You can use keyboard shortcuts during WorkSpaces Applications streaming sessions to enter

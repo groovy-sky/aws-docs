@@ -1,3 +1,7 @@
+---
+title: "Remap the Windows Logo Key or Command Key"
+---
+
 # Remap the Windows Logo Key or Command Key
 
 You can remap the Mac Option and Command keys on your keyboard.

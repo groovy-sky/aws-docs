@@ -1,3 +1,7 @@
+---
+title: "Run Scripts After Streaming Sessions End"
+---
+
 # Run Scripts After Streaming Sessions End
 
 You can also configure your scripts to run after users' streaming sessions end.

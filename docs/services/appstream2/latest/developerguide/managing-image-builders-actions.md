@@ -1,3 +1,7 @@
+---
+title: "Image Builder Actions"
+---
+
 # Image Builder Actions
 
 You can perform the following actions on an image builder, depending on the current

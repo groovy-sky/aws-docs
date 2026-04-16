@@ -1,3 +1,7 @@
+---
+title: "DeleteConnection"
+---
+
 # DeleteConnection
 
 ###### Important

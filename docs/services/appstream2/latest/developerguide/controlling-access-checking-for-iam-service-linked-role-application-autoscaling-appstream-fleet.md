@@ -1,3 +1,7 @@
+---
+title: "Checking for the AWSServiceRoleForApplicationAutoScaling_AppStreamFleet Service-Linked Role and Policies"
+---
+
 # Checking for the `AWSServiceRoleForApplicationAutoScaling_AppStreamFleet` Service-Linked Role and Policies
 
 Complete the steps in this section to check whether the

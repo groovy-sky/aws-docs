@@ -1,3 +1,7 @@
+---
+title: "Use Session Scripts to Manage Your Amazon WorkSpaces Applications Users' Streaming Experience"
+---
+
 # Use Session Scripts to Manage Your Amazon WorkSpaces Applications Users' Streaming Experience
 
 WorkSpaces Applications provides on-instance session scripts. You can use these scripts to run your own

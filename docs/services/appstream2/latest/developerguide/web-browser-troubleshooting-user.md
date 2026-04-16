@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting"
+---
+
 # Troubleshooting
 
 If issues occur when you use WorkSpaces Applications, your WorkSpaces Applications session ID can help your administrator with troubleshooting. This section describes how to find the session ID.

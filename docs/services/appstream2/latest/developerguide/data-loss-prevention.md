@@ -1,3 +1,7 @@
+---
+title: "Data Loss Prevention"
+---
+
 # Data Loss Prevention
 
 We'll look at two kinds of data loss prevention.

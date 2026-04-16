@@ -1,3 +1,7 @@
+---
+title: "ListConnections"
+---
+
 # ListConnections
 
 ###### Important

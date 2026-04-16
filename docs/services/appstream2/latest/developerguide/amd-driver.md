@@ -1,3 +1,7 @@
+---
+title: "Install AMD Driver on Graphics Design Instances"
+---
+
 # Install AMD Driver on Graphics Design Instances
 
 If you need to update the AMD driver on your Windows Image Builder that is using a

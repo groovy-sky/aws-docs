@@ -1,3 +1,7 @@
+---
+title: "Dimensions for Amazon WorkSpaces Applications Metrics"
+---
+
 # Dimensions for Amazon WorkSpaces Applications Metrics
 
 The `AWS/AppStream` namespace includes the following dimensions and dimension groups.

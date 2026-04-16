@@ -1,3 +1,7 @@
+---
+title: "Optimizing the Launch Performance of Your Applications with the Image Assistant CLI Operations"
+---
+
 # Optimizing the Launch Performance of Your Applications with the Image Assistant CLI Operations
 
 WorkSpaces Applications lets you optimize the launch performance of your applications for your

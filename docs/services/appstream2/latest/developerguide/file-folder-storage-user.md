@@ -1,3 +1,7 @@
+---
+title: "File Storage Options"
+---
+
 # File Storage Options
 
 If your WorkSpaces Applications administrator has enabled it, you can use one or more of the following storage options for your files and folders during application streaming sessions.

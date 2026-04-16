@@ -1,3 +1,7 @@
+---
+title: "Drawing Tablet Support"
+---
+
 # Drawing Tablet Support
 
 Drawing tablets, also known as pen tablets, are computer input devices that let

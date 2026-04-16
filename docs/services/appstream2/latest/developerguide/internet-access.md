@@ -1,3 +1,7 @@
+---
+title: "Internet Access"
+---
+
 # Internet Access
 
 If your fleets, app block builders, and image builders require internet access, you

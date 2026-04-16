@@ -1,3 +1,7 @@
+---
+title: "Logging Amazon WorkSpaces Applications API Calls with AWS CloudTrail"
+---
+
 # Logging Amazon WorkSpaces Applications API Calls with AWS CloudTrail
 
 Amazon WorkSpaces Applications is integrated with AWS CloudTrail. CloudTrail is a service that provides a record of actions taken

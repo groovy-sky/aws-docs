@@ -1,3 +1,7 @@
+---
+title: "Creating Default Application and Windows Settings with the Image Assistant CLI operations"
+---
+
 # Creating Default Application and Windows Settings with the Image Assistant CLI operations
 
 You can create default application and Windows settings so that your users can get

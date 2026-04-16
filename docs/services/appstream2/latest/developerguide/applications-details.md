@@ -1,3 +1,7 @@
+---
+title: "Applications Details"
+---
+
 # Applications Details
 
 Applications details contains information about pre-warm manifests and app catalog configurations.

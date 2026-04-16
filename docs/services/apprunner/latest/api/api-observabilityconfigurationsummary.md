@@ -1,3 +1,7 @@
+---
+title: "ObservabilityConfigurationSummary"
+---
+
 # ObservabilityConfigurationSummary
 
 Provides summary information about an AWS App Runner observability configuration resource.

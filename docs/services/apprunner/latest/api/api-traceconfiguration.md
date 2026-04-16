@@ -1,3 +1,7 @@
+---
+title: "TraceConfiguration"
+---
+
 # TraceConfiguration
 
 Describes the configuration of the tracing feature within an AWS App Runner observability configuration.

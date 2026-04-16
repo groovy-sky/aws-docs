@@ -1,3 +1,7 @@
+---
+title: "Adding, Editing, and Deleting Tags for Existing Resources in the Amazon WorkSpaces Applications Console"
+---
+
 # Adding, Editing, and Deleting Tags for Existing Resources in the Amazon WorkSpaces Applications Console
 
 You can add, edit, and delete tags for existing resources by using the WorkSpaces Applications console.

@@ -1,3 +1,7 @@
+---
+title: "ComputeCapacityStatus"
+---
+
 # ComputeCapacityStatus
 
 Describes the capacity status for a fleet.

@@ -1,3 +1,7 @@
+---
+title: "FleetError"
+---
+
 # FleetError
 
 Describes a fleet error.

@@ -1,3 +1,7 @@
+---
+title: "Install or uninstall license included applications"
+---
+
 # Install or uninstall license included applications
 
 ###### Install or uninstall license included applications

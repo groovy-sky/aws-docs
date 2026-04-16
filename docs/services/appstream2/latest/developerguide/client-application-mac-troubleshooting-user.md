@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting"
+---
+
 # Troubleshooting
 
 Use the following steps to enable diagnostic log uploads and determine your

@@ -1,3 +1,7 @@
+---
+title: "ImageRepository"
+---
+
 # ImageRepository
 
 Describes a source image repository.

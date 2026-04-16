@@ -1,3 +1,7 @@
+---
+title: "UserStackAssociation"
+---
+
 # UserStackAssociation
 
 Describes a user in the user pool and the associated stack.

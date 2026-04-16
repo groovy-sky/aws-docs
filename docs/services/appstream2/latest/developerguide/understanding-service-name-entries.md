@@ -1,3 +1,7 @@
+---
+title: "Example: WorkSpaces Applications Log File Entries"
+---
+
 # Example: WorkSpaces Applications Log File Entries
 
 A trail is a configuration that enables delivery of events as log files to an Amazon S3 bucket

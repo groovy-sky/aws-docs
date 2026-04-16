@@ -1,3 +1,7 @@
+---
+title: "Use the WorkSpaces Applications Dynamic Application Framework to Build a Dynamic App Provider"
+---
+
 # Use the WorkSpaces Applications Dynamic Application Framework to Build a Dynamic App Provider
 
 The WorkSpaces Applications dynamic application framework provides API operations within an WorkSpaces Applications

@@ -1,3 +1,7 @@
+---
+title: "WorkSpaces Applications Windows Client Release Notes"
+---
+
 # WorkSpaces Applications Windows Client Release Notes
 
 The WorkSpaces Applications client is a native application that is designed for users who require additional functionality during their WorkSpaces Applications streaming sessions. The following table describes the latest updates that are available in released versions
@@ -6,6 +10,16 @@ of the WorkSpaces Applications client.
 For more information about the client, see [Provide Access Through the WorkSpaces Applications Client](client-application.md).
 
 Client versionRelease dateChanges
+
+1.2.1792
+
+04-13-2026
+
+- Made an improvement so that the client automatically attempts to reconnect your session after temporary network interruptions.
+
+- Fixed an issue with certificate-based authentication to better handle certificate errors.
+
+- Other bug fixes and enhancements.
 
 1.2.1778
 

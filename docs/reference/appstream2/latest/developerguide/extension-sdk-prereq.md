@@ -1,3 +1,7 @@
+---
+title: "Extension SDK Prerequisites for Amazon WorkSpaces Applications"
+---
+
 # Extension SDK Prerequisites for Amazon WorkSpaces Applications
 
 Before you start working with the Amazon DCV Extension SDK, make sure that your WorkSpaces Applications

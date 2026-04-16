@@ -1,3 +1,7 @@
+---
+title: "Image"
+---
+
 # Image
 
 Describes an image.

@@ -1,3 +1,7 @@
+---
+title: "Default Application and Windows Settings and Application Launch Performance in Amazon WorkSpaces Applications"
+---
+
 # Default Application and Windows Settings and Application Launch Performance in Amazon WorkSpaces Applications
 
 You can create default application and Windows settings to enable your users to get

@@ -1,3 +1,7 @@
+---
+title: "ApplicationSettingsResponse"
+---
+
 # ApplicationSettingsResponse
 
 Describes the persistent application settings for users of a stack.

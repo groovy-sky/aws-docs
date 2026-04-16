@@ -1,3 +1,7 @@
+---
+title: "Manage License Included Applications on Your Image in Amazon WorkSpaces Applications"
+---
+
 # Manage License Included Applications on Your Image in Amazon WorkSpaces Applications
 
 You can stream the following Microsoft license included applications using WorkSpaces Applications. You

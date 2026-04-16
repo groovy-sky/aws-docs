@@ -1,3 +1,7 @@
+---
+title: "Configure Default Regional Settings for Your WorkSpaces Applications Users"
+---
+
 # Configure Default Regional Settings for Your WorkSpaces Applications Users
 
 ###### Note

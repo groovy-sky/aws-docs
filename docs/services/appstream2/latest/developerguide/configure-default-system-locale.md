@@ -1,3 +1,7 @@
+---
+title: "Specify a Default System Locale"
+---
+
 # Specify a Default System Locale
 
 To specify a default system locale for your users’ streaming sessions, perform the

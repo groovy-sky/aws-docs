@@ -1,3 +1,7 @@
+---
+title: "Process Overview for Programmatically Creating an Amazon WorkSpaces Applications Image"
+---
+
 # Process Overview for Programmatically Creating an Amazon WorkSpaces Applications Image
 
 You can use the Image Assistant CLI operations with your application

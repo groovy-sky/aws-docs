@@ -1,3 +1,7 @@
+---
+title: "Update a Fleet with a New Image in Amazon WorkSpaces Applications"
+---
+
 # Update a Fleet with a New Image in Amazon WorkSpaces Applications
 
 To apply operating system updates or make new applications available to users,

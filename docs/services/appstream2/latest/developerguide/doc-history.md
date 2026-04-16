@@ -1,3 +1,7 @@
+---
+title: "Document History for Amazon WorkSpaces Applications"
+---
+
 # Document History for Amazon WorkSpaces Applications
 
 - **API version:** 2016-12-01

@@ -1,3 +1,7 @@
+---
+title: "WorkSpaces Applications Interface VPC Endpoints"
+---
+
 # WorkSpaces Applications Interface VPC Endpoints
 
 A virtual private cloud (VPC) is a virtual network in your own logically isolated area in the Amazon Web Services Cloud. If you use Amazon Virtual Private Cloud to host your AWS resources, you can establish a private connection between your VPC and WorkSpaces Applications. You can use this connection to enable WorkSpaces Applications to communicate with your resources on your VPC without going through the public internet.

@@ -1,3 +1,7 @@
+---
+title: "ListAssociatedStacks"
+---
+
 # ListAssociatedStacks
 
 Retrieves the name of the stack with which the specified fleet is associated.

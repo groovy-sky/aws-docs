@@ -1,3 +1,7 @@
+---
+title: "Granting Local Administrator Rights on Image Builders"
+---
+
 # Granting Local Administrator Rights on Image Builders
 
 By default, Active Directory domain users do not have local administrator rights

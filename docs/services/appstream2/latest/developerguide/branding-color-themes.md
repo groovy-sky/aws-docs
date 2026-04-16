@@ -1,3 +1,7 @@
+---
+title: "Color Theme Palettes in Amazon WorkSpaces Applications"
+---
+
 # Color Theme Palettes in Amazon WorkSpaces Applications
 
 When you choose a color theme, the colors for that theme are applied to the website

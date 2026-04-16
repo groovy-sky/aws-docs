@@ -1,3 +1,7 @@
+---
+title: "Update the WorkSpaces Applications Agent Software by Using Managed WorkSpaces Applications Agent Versions"
+---
+
 # Update the WorkSpaces Applications Agent Software by Using Managed WorkSpaces Applications Agent Versions
 
 WorkSpaces Applications provides an automated way to update your image builder with newer WorkSpaces Applications agent

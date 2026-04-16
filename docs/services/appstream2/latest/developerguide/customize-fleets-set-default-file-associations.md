@@ -1,3 +1,7 @@
+---
+title: "Set Default File Associations for Your Users in Amazon WorkSpaces Applications"
+---
+
 # Set Default File Associations for Your Users in Amazon WorkSpaces Applications
 
 The associations for application file extensions are set on a per-user basis and so

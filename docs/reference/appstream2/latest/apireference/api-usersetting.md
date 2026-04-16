@@ -1,3 +1,7 @@
+---
+title: "UserSetting"
+---
+
 # UserSetting
 
 Describes an action and whether the action is enabled or disabled for users during their streaming sessions.

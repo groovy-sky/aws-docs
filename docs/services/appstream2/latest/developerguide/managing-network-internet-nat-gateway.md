@@ -1,3 +1,7 @@
+---
+title: "Configure a VPC with Private Subnets and a NAT Gateway"
+---
+
 # Configure a VPC with Private Subnets and a NAT Gateway
 
 If you plan to provide your streaming instances (fleet instances, app block

@@ -1,3 +1,7 @@
+---
+title: "Logging and Monitoring"
+---
+
 # Logging and Monitoring
 
 You can use CloudTrail to record API calls to a private CA by WorkSpaces Applications. For more

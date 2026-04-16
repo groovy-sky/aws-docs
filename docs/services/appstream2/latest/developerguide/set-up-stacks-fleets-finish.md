@@ -1,3 +1,7 @@
+---
+title: "Clean Up Resources in Amazon WorkSpaces Applications"
+---
+
 # Clean Up Resources in Amazon WorkSpaces Applications
 
 You can stop your running fleet and delete your active stack to free up resources and

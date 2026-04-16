@@ -1,3 +1,7 @@
+---
+title: "Tagging Basics for Amazon WorkSpaces Applications"
+---
+
 # Tagging Basics for Amazon WorkSpaces Applications
 
 Tags consist of a key-value pair, similar to other AWS services tags. To tag a

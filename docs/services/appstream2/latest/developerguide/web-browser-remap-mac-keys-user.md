@@ -1,3 +1,7 @@
+---
+title: "Remap the Mac Option and Command Keys"
+---
+
 # Remap the Mac Option and Command Keys
 
 When you use a device that runs macOS or Mac OS X to connect to WorkSpaces Applications, you

@@ -1,3 +1,7 @@
+---
+title: "Use the Default VPC, Public Subnet, and Security Group"
+---
+
 # Use the Default VPC, Public Subnet, and Security Group
 
 Your Amazon Web Services account, if it was created after 2013-12-04, has a default VPC

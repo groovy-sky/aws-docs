@@ -1,3 +1,7 @@
+---
+title: "ComputeCapacity"
+---
+
 # ComputeCapacity
 
 Describes the capacity for a fleet.

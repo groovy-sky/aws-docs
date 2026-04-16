@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 Bucket Permissions"
+---
+
 # Amazon S3 Bucket Permissions
 
 The Amazon S3 bucket that you choose must have a bucket policy that

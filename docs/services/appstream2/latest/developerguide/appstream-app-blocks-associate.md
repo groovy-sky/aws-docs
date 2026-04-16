@@ -1,3 +1,7 @@
+---
+title: "Associate an App Block in Amazon WorkSpaces Applications"
+---
+
 # Associate an App Block in Amazon WorkSpaces Applications
 
 In order to create, test, or activate your app block with WorkSpaces Applications packaging, you

@@ -1,3 +1,7 @@
+---
+title: "Qualify USB Devices for Use with Streaming Applications"
+---
+
 # Qualify USB Devices for Use with Streaming Applications
 
 There are two methods for specifying which USB devices your users can redirect

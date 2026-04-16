@@ -1,3 +1,7 @@
+---
+title: "DeleteVpcIngressConnection"
+---
+
 # DeleteVpcIngressConnection
 
 ###### Important

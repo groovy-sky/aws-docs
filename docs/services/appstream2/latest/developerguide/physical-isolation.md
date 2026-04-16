@@ -1,3 +1,7 @@
+---
+title: "Isolation on Physical Hosts"
+---
+
 # Isolation on Physical Hosts
 
 Different streaming instances on the same physical host are isolated from each other as though they are on separate physical hosts. The hypervisor isolates CPU and memory, and the instances are provided virtualized disks instead of access to the raw disk devices.

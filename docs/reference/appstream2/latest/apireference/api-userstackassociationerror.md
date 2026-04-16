@@ -1,3 +1,7 @@
+---
+title: "UserStackAssociationError"
+---
+
 # UserStackAssociationError
 
 Describes the error that is returned when a user can’t be associated with or disassociated from a stack.

@@ -1,3 +1,7 @@
+---
+title: "Best Practices for Enabling Application Settings Persistence"
+---
+
 # Best Practices for Enabling Application Settings Persistence
 
 To enable application settings persistence without providing internet access to

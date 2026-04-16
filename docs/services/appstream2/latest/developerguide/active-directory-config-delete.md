@@ -1,3 +1,7 @@
+---
+title: "Deleting a Directory Configuration"
+---
+
 # Deleting a Directory Configuration
 
 You can delete an WorkSpaces Applications directory configuration that is no longer needed.

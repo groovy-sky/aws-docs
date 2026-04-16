@@ -1,3 +1,7 @@
+---
+title: "Adding Tags during Resource Creation in the Amazon WorkSpaces Applications Console"
+---
+
 # Adding Tags during Resource Creation in the Amazon WorkSpaces Applications Console
 
 When you create a resource in the WorkSpaces Applications console, you can add one or more tags to

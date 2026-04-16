@@ -1,3 +1,7 @@
+---
+title: "Release: App Runner increases the maximum instance startup time to five minutes on December 07, 2023"
+---
+
 AWS App Runner will no longer be open to new customers starting April 30, 2026. If you would like to use
 App Runner, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see
 [AWS App Runner availability\

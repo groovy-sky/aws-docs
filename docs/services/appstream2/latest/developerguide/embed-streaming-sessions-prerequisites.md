@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for Embedding Amazon WorkSpaces Applications Streaming Sessions"
+---
+
 # Prerequisites for Embedding Amazon WorkSpaces Applications Streaming Sessions
 
 To embed an WorkSpaces Applications streaming session in a website, you must have the following:

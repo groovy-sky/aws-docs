@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 Bucket Storage"
+---
+
 # Amazon S3 Bucket Storage
 
 WorkSpaces Applications manages user content stored in home folders by using Amazon S3 buckets

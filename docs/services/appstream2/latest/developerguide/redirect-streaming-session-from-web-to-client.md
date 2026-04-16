@@ -1,3 +1,7 @@
+---
+title: "Redirect a Streaming Session from the Web Browser to the WorkSpaces Applications Client"
+---
+
 # Redirect a Streaming Session from the Web Browser to the WorkSpaces Applications Client
 
 You can configure WorkSpaces Applications to redirect a streaming session from a web browser to the

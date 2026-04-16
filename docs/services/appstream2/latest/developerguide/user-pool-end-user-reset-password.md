@@ -1,3 +1,7 @@
+---
+title: "Resetting a Forgotten Password in Amazon WorkSpaces Applications"
+---
+
 # Resetting a Forgotten Password in Amazon WorkSpaces Applications
 
 If users forget their password, follow these steps to connect to the login portal

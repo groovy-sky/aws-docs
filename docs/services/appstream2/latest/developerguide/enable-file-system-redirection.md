@@ -1,3 +1,7 @@
+---
+title: "Enable File System Redirection for Your WorkSpaces Applications Users"
+---
+
 # Enable File System Redirection for Your WorkSpaces Applications Users
 
 WorkSpaces Applications file system redirection lets users who have the WorkSpaces Applications client installed

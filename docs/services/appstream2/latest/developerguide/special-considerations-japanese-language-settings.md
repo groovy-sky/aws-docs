@@ -1,3 +1,7 @@
+---
+title: "Special Considerations for Japanese Language Settings"
+---
+
 # Special Considerations for Japanese Language Settings
 
 This section describes key points to keep in mind when configuring Japanese language

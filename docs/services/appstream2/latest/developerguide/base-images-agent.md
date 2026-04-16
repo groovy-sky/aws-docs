@@ -1,3 +1,7 @@
+---
+title: "Manage WorkSpaces Applications Agent Versions"
+---
+
 # Manage WorkSpaces Applications Agent Versions
 
 The WorkSpaces Applications agent is software that runs on your streaming instances and enables users

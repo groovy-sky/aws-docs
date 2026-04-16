@@ -1,3 +1,7 @@
+---
+title: "Use the WorkSpaces Applications Template User Account to Change the Default Internet Explorer Home Page"
+---
+
 # Use the WorkSpaces Applications Template User Account to Change the Default Internet Explorer Home Page
 
 Follow these steps to use the **Template User** account to change

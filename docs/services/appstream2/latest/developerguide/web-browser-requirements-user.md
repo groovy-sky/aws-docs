@@ -1,3 +1,7 @@
+---
+title: "Requirements"
+---
+
 # Requirements
 
 You can connect to WorkSpaces Applications from any location by using an HTML5-capable web browser. Supported browsers include the following:

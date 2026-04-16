@@ -1,3 +1,7 @@
+---
+title: "Configure a Connection Method for Your WorkSpaces Applications Users (Web Browser)"
+---
+
 # Configure a Connection Method for Your WorkSpaces Applications Users (Web Browser)
 
 Depending on your

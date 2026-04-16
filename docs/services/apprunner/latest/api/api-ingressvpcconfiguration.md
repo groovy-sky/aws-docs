@@ -1,3 +1,7 @@
+---
+title: "IngressVpcConfiguration"
+---
+
 # IngressVpcConfiguration
 
 The configuration of your VPC and the associated VPC endpoint. The VPC endpoint is an AWS PrivateLink resource that allows access to your App Runner

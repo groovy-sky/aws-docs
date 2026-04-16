@@ -1,3 +1,7 @@
+---
+title: "Image Builders"
+---
+
 # Image Builders
 
 Amazon WorkSpaces Applications uses EC2 instances to stream applications. You launch instances from base images,

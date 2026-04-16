@@ -1,3 +1,7 @@
+---
+title: "Assigning Stacks to Users in Amazon WorkSpaces Applications"
+---
+
 # Assigning Stacks to Users in Amazon WorkSpaces Applications
 
 You can assign one or more stacks to one or more users in the user pool. After

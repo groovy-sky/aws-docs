@@ -1,3 +1,7 @@
+---
+title: "Enable Amazon S3 Object Versioning and Revert a User's Application Settings"
+---
+
 # Enable Amazon S3 Object Versioning and Revert a User's Application Settings
 
 You can use Amazon S3 object versioning and lifecycle policies to manage your users’

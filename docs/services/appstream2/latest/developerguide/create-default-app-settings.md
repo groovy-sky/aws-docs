@@ -1,3 +1,7 @@
+---
+title: "Creating Default Application Settings for Your Users"
+---
+
 # Creating Default Application Settings for Your Users
 
 Follow these steps to create default application settings for your users.

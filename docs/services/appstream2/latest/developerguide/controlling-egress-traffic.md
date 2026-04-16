@@ -1,3 +1,7 @@
+---
+title: "Controlling egress traffic"
+---
+
 # Controlling egress traffic
 
 Where data loss is a concern, it’s important to cover off what a User can access once they

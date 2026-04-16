@@ -1,3 +1,7 @@
+---
+title: "Guidance for WorkSpaces Applications Users"
+---
+
 # Guidance for WorkSpaces Applications Users
 
 If you are an WorkSpaces Applications administrator, you can provide your users with the guidance in this section to help them get started with using WorkSpaces Applications.

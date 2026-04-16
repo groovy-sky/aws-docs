@@ -1,3 +1,7 @@
+---
+title: "Create and Specify Session Scripts"
+---
+
 # Create and Specify Session Scripts
 
 You can configure and specify session scripts for Always-on, On-demand, and

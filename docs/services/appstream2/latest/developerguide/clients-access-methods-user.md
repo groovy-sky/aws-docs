@@ -1,3 +1,7 @@
+---
+title: "WorkSpaces Applications Access Methods and Clients"
+---
+
 # WorkSpaces Applications Access Methods and Clients
 
 You can connect to WorkSpaces Applications by using a web browser or the WorkSpaces Applications client for Windows.

@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Creating and Streaming from Interface VPC Endpoints"
+---
+
 # Tutorial: Creating and Streaming from Interface VPC Endpoints
 
 You can use an interface VPC endpoint in your Amazon Web Services account to restrict all network

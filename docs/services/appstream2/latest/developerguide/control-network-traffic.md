@@ -1,3 +1,7 @@
+---
+title: "Controlling Network Traffic"
+---
+
 # Controlling Network Traffic
 
 To help control network traffic to your WorkSpaces Applications streaming instances, consider these

@@ -1,3 +1,7 @@
+---
+title: "NetworkAccessConfiguration"
+---
+
 # NetworkAccessConfiguration
 
 Describes the network details of the fleet or image builder instance.

@@ -1,3 +1,7 @@
+---
+title: "Remember My Settings"
+---
+
 # Remember My Settings
 
 The WorkSpaces Applications macOS client application can save the preferences you configured in

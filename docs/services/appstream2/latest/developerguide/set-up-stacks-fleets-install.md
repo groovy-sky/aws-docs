@@ -1,3 +1,7 @@
+---
+title: "Create a Stack in Amazon WorkSpaces Applications"
+---
+
 # Create a Stack in Amazon WorkSpaces Applications
 
 Set up and create a stack to control access to your fleet.

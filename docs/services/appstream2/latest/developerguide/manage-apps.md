@@ -1,3 +1,7 @@
+---
+title: "Manage Applications Associated to an Elastic Fleet in Amazon WorkSpaces Applications"
+---
+
 # Manage Applications Associated to an Elastic Fleet in Amazon WorkSpaces Applications
 
 You can associate and disassociate applications from an Elastic fleet at any time.

@@ -1,3 +1,7 @@
+---
+title: "Peripheral Devices"
+---
+
 # Peripheral Devices
 
 The WorkSpaces Applications client provides the following support for peripheral devices such

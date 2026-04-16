@@ -1,3 +1,7 @@
+---
+title: "Fleet Auto Scaling for Amazon WorkSpaces Applications"
+---
+
 # Fleet Auto Scaling for Amazon WorkSpaces Applications
 
 Fleet Auto Scaling lets you change the size of your WorkSpaces Applications Always-On or On-Demand fleet

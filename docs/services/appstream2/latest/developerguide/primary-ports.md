@@ -1,3 +1,7 @@
+---
+title: "Customer Network Interface Ports in Amazon WorkSpaces Applications"
+---
+
 # Customer Network Interface Ports in Amazon WorkSpaces Applications
 
 Follow the guidance below for customer network interface ports.

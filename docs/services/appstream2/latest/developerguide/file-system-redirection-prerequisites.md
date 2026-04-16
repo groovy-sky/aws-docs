@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for File System Redirection"
+---
+
 # Prerequisites for File System Redirection
 
 To enable WorkSpaces Applications file redirection:

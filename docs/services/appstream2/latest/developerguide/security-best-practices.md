@@ -1,3 +1,7 @@
+---
+title: "Security Best Practices in Amazon WorkSpaces Applications"
+---
+
 # Security Best Practices in Amazon WorkSpaces Applications
 
 Cloud security at Amazon Web Services (AWS) is the highest priority.

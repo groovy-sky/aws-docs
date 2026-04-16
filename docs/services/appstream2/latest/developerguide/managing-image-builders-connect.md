@@ -1,3 +1,7 @@
+---
+title: "Connect to an Image Builder in Amazon WorkSpaces Applications"
+---
+
 # Connect to an Image Builder in Amazon WorkSpaces Applications
 
 You can connect to an image builder by doing either of the following:

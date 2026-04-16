@@ -1,3 +1,7 @@
+---
+title: "Identity and Access Management for Amazon WorkSpaces Applications"
+---
+
 # Identity and Access Management for Amazon WorkSpaces Applications
 
 Your security credentials identify you to services in AWS and grant you unlimited use of

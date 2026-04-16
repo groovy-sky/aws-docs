@@ -1,3 +1,7 @@
+---
+title: "Cookie-Based Authentication in Amazon WorkSpaces Applications"
+---
+
 # Cookie-Based Authentication in Amazon WorkSpaces Applications
 
 WorkSpaces Applications uses browser cookies to authenticate streaming sessions and allow users to

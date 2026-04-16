@@ -1,3 +1,7 @@
+---
+title: "Increase the Size of the Application Settings VHD"
+---
+
 # Increase the Size of the Application Settings VHD
 
 The default VHD maximum size is 1 GB for Elastic fleets and 5GB for Always-On and

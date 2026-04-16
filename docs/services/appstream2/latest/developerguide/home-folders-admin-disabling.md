@@ -1,3 +1,7 @@
+---
+title: "Disable Home Folders"
+---
+
 # Disable Home Folders
 
 You can disable home folders for a stack without losing user content already

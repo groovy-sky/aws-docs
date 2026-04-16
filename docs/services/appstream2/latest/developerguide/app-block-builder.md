@@ -1,3 +1,7 @@
+---
+title: "App Block Builder"
+---
+
 # App Block Builder
 
 An app block builder is a reusable resource that you can use to package your applications

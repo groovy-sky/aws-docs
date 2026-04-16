@@ -1,3 +1,7 @@
+---
+title: "WorkSpaces Applications Applications Reports"
+---
+
 # WorkSpaces Applications Applications Reports
 
 For each day that users launch at least one application during their streaming sessions,

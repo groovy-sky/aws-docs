@@ -1,3 +1,7 @@
+---
+title: "Manage Multi-Session Fleet Instances"
+---
+
 # Manage Multi-Session Fleet Instances
 
 When running multi-session fleets on Amazon WorkSpaces Applications, multiple user sessions share a fleet

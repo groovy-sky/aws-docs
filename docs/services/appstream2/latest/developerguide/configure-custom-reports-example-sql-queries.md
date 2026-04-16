@@ -1,3 +1,7 @@
+---
+title: "Working with Athena Queries"
+---
+
 # Working with Athena Queries
 
 This section provides SQL queries that you can run in Athena to analyze the usage reports data in your Amazon S3 bucket.

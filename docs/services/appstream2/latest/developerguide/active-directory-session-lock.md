@@ -1,3 +1,7 @@
+---
+title: "Locking the Streaming Session When the User is Idle"
+---
+
 # Locking the Streaming Session When the User is Idle
 
 WorkSpaces Applications relies on a setting that you configure in the GPMC to lock the streaming

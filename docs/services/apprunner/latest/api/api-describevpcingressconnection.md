@@ -1,3 +1,7 @@
+---
+title: "DescribeVpcIngressConnection"
+---
+
 # DescribeVpcIngressConnection
 
 ###### Important

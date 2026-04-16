@@ -1,3 +1,7 @@
+---
+title: "Store Application Icon, Setup Script, Session Script, and VHD in an S3 Bucket"
+---
+
 # Store Application Icon, Setup Script, Session Script, and VHD in an S3 Bucket
 
 You must store the application icons, setup scripts, session scripts, and VHDs that

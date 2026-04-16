@@ -1,3 +1,7 @@
+---
+title: "Allowed Domains"
+---
+
 # Allowed Domains
 
 For WorkSpaces Applications users to access streaming instances, you must allow the following

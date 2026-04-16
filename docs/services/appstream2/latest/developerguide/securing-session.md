@@ -1,3 +1,7 @@
+---
+title: "Securing an WorkSpaces Applications Session"
+---
+
 # Securing an WorkSpaces Applications Session
 
 ## Limiting application and operating system controls

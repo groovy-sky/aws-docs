@@ -1,3 +1,7 @@
+---
+title: "UpdateImagePermissions"
+---
+
 # UpdateImagePermissions
 
 Adds or updates permissions for the specified private image.

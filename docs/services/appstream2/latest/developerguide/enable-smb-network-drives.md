@@ -1,3 +1,7 @@
+---
+title: "Enable and Administer Custom Shared Folders (Server Message Block (SMB) Network Drives) for Your WorkSpaces Applications Users"
+---
+
 # Enable and Administer Custom Shared Folders (Server Message Block (SMB) Network Drives) for Your WorkSpaces Applications Users
 
 You can enable one or more options for your organization. When you enable and map the

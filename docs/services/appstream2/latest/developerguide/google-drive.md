@@ -1,3 +1,7 @@
+---
+title: "Enable and Administer Google Drive for Your WorkSpaces Applications Users"
+---
+
 # Enable and Administer Google Drive for Your WorkSpaces Applications Users
 
 ###### Note

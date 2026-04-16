@@ -1,3 +1,7 @@
+---
+title: "Create the VHD"
+---
+
 # Create the VHD
 
 A VHD is a single file that when mounted to the operating system is treated like a

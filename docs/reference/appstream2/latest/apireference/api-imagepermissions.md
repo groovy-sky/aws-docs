@@ -1,3 +1,7 @@
+---
+title: "ImagePermissions"
+---
+
 # ImagePermissions
 
 Describes the permissions for an image.

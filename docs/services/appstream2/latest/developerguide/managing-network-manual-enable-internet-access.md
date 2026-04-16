@@ -1,3 +1,7 @@
+---
+title: "Enable Internet Access for Your Fleet, Image Builder, or App Block Builder in Amazon WorkSpaces Applications"
+---
+
 # Enable Internet Access for Your Fleet, Image Builder, or App Block Builder in Amazon WorkSpaces Applications
 
 After your NAT gateway is available on a VPC, you can enable internet

@@ -1,3 +1,7 @@
+---
+title: "EgressConfiguration"
+---
+
 # EgressConfiguration
 
 Describes configuration settings related to outbound network traffic of an AWS App Runner service.

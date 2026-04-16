@@ -1,3 +1,7 @@
+---
+title: "Scaling Concepts for Amazon WorkSpaces Applications"
+---
+
 # Scaling Concepts for Amazon WorkSpaces Applications
 
 WorkSpaces Applications scaling is provided by Application Auto Scaling. For more information, see the [Application Auto Scaling API Reference](../../../../reference/autoscaling/application/apireference.md).

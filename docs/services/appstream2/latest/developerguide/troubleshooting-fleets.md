@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting Fleets"
+---
+
 # Troubleshooting Fleets
 
 The following are issues that might occur when users connect to Amazon WorkSpaces Applications streaming sessions launched from fleet instances.

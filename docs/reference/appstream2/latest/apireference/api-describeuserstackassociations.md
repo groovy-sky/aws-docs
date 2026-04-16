@@ -1,3 +1,7 @@
+---
+title: "DescribeUserStackAssociations"
+---
+
 # DescribeUserStackAssociations
 
 Retrieves a list that describes the UserStackAssociation objects. You must specify either or both of the following:

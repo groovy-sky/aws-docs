@@ -1,3 +1,7 @@
+---
+title: "StorageConnector"
+---
+
 # StorageConnector
 
 Describes a connector that enables persistent storage for users.

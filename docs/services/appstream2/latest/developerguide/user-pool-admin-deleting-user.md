@@ -1,3 +1,7 @@
+---
+title: "Deleting a User in Amazon WorkSpaces Applications"
+---
+
 # Deleting a User in Amazon WorkSpaces Applications
 
 You can enable or disable a user, but you cannot delete a user by using

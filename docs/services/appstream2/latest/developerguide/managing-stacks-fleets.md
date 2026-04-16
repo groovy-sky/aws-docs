@@ -1,3 +1,7 @@
+---
+title: "Fleets and Stacks in Fleet Type in Amazon WorkSpaces Applications"
+---
+
 # Fleets and Stacks in Fleet Type in Amazon WorkSpaces Applications
 
 With Amazon WorkSpaces Applications, you create fleet instances and stacks as part of the process of streaming

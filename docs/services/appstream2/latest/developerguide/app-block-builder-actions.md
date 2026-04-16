@@ -1,3 +1,7 @@
+---
+title: "App Block Builder Actions"
+---
+
 # App Block Builder Actions
 
 You can perform the following actions on an app block builder, depending on the

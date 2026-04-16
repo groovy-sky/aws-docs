@@ -1,3 +1,7 @@
+---
+title: "Bandwidth Recommendations"
+---
+
 # Bandwidth Recommendations
 
 To optimize the performance of WorkSpaces Applications, make sure that your network bandwidth and

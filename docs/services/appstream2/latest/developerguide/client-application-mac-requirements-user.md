@@ -1,3 +1,7 @@
+---
+title: "Requirements"
+---
+
 # Requirements
 
 The WorkSpaces Applications client for macOS must be installed on a computer that meets the

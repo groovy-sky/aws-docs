@@ -1,3 +1,7 @@
+---
+title: "Network Access to Your Streaming Instance"
+---
+
 # Network Access to Your Streaming Instance
 
 A security group acts as a stateful firewall that controls what traffic is allowed to

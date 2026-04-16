@@ -1,3 +1,7 @@
+---
+title: "ApplicationSettings"
+---
+
 # ApplicationSettings
 
 The persistent application settings for users of a stack.

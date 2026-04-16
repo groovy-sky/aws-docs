@@ -1,3 +1,7 @@
+---
+title: "How to Get Started with Amazon WorkSpaces Applications"
+---
+
 # How to Get Started with Amazon WorkSpaces Applications
 
 If you are using WorkSpaces Applications for the first time, you can use the **Try**

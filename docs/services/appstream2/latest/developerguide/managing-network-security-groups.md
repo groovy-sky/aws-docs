@@ -1,3 +1,7 @@
+---
+title: "Security Groups in Amazon WorkSpaces Applications"
+---
+
 # Security Groups in Amazon WorkSpaces Applications
 
 You can provide additional access control to your VPC from streaming instances in a

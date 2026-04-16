@@ -1,3 +1,7 @@
+---
+title: "Third-party vendor extensions for Amazon WorkSpaces Applications"
+---
+
 # Third-party vendor extensions for Amazon WorkSpaces Applications
 
 AWS supports the Amazon DCV Extension SDK API within the WorkSpaces Applications host and client

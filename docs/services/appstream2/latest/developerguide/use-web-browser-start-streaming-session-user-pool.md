@@ -1,3 +1,7 @@
+---
+title: "WorkSpaces Applications User Pool"
+---
+
 # WorkSpaces Applications User Pool
 
 When you create a new user in the WorkSpaces Applications user pool, or assign a user pool user to an

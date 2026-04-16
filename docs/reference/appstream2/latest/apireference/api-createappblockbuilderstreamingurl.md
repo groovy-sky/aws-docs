@@ -1,3 +1,7 @@
+---
+title: "CreateAppBlockBuilderStreamingURL"
+---
+
 # CreateAppBlockBuilderStreamingURL
 
 Creates a URL to start a create app block builder streaming session.

@@ -1,3 +1,7 @@
+---
+title: "Example: WorkSpaces Applications Application Amazon S3 bucket policy cross-service confused deputy prevention"
+---
+
 # Example: WorkSpaces Applications Application Amazon S3 bucket policy cross-service confused deputy prevention
 
 When you store data in an Amazon S3 bucket, the bucket might be exposed to confused deputy

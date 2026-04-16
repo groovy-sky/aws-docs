@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting Persistent Storage Issues"
+---
+
 # Troubleshooting Persistent Storage Issues
 
 Amazon WorkSpaces Applications supports the following options for persistent storage: Home folders, Google

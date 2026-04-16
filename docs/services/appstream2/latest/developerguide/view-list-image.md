@@ -1,3 +1,7 @@
+---
+title: "View the list of license included applications installed on your image"
+---
+
 # View the list of license included applications installed on your image
 
 ###### View the list of license included applications installed on your image

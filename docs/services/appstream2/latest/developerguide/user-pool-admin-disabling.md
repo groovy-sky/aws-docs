@@ -1,3 +1,7 @@
+---
+title: "Disabling Users in Amazon WorkSpaces Applications"
+---
+
 # Disabling Users in Amazon WorkSpaces Applications
 
 You can disable one or more users in the user pool, one at a time. After they are

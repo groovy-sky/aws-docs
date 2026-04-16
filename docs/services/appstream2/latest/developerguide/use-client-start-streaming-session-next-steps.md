@@ -1,3 +1,7 @@
+---
+title: "Next Steps"
+---
+
 # Next Steps
 
 After you configure a client connection method, you can provide your users with the

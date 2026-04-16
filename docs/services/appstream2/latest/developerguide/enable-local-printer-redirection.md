@@ -1,3 +1,7 @@
+---
+title: "Enable Local Printer Redirection for Your WorkSpaces Applications Users"
+---
+
 # Enable Local Printer Redirection for Your WorkSpaces Applications Users
 
 With local printer redirection, your WorkSpaces Applications users can redirect print jobs from

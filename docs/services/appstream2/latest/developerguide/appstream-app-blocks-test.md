@@ -1,3 +1,7 @@
+---
+title: "Test an App Block"
+---
+
 # Test an App Block
 
 You can use an app block builder to test your app block and verify your

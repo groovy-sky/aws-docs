@@ -1,3 +1,7 @@
+---
+title: "AutoScalingConfigurationSummary"
+---
+
 # AutoScalingConfigurationSummary
 
 Provides summary information about an AWS App Runner automatic scaling configuration resource.

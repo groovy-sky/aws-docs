@@ -1,3 +1,7 @@
+---
+title: "Best Practices for Using IAM Roles With WorkSpaces Applications Streaming Instances"
+---
+
 # Best Practices for Using IAM Roles With WorkSpaces Applications Streaming Instances
 
 When you use IAM roles with WorkSpaces Applications streaming instances, we recommend that you follow these practices:

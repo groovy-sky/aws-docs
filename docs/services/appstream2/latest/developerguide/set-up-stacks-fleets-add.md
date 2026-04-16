@@ -1,3 +1,7 @@
+---
+title: "Provide Access to Users in Amazon WorkSpaces Applications"
+---
+
 # Provide Access to Users in Amazon WorkSpaces Applications
 
 After you create a stack with an associated fleet, you can provide access to users

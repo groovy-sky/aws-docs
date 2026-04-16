@@ -1,3 +1,7 @@
+---
+title: "CodeRepository"
+---
+
 # CodeRepository
 
 Describes a source code repository.

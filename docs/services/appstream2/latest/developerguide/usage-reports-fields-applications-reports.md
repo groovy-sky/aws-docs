@@ -1,3 +1,7 @@
+---
+title: "Applications Report Fields"
+---
+
 # Applications Report Fields
 
 The following table describes the fields included in WorkSpaces Applications applications reports.

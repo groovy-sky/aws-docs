@@ -1,3 +1,7 @@
+---
+title: "AuthenticationConfiguration"
+---
+
 # AuthenticationConfiguration
 
 Describes resources needed to authenticate access to some source repositories. The specific resource depends on the repository provider.

@@ -1,3 +1,7 @@
+---
+title: "Connect to WorkSpaces Applications"
+---
+
 # Connect to WorkSpaces Applications
 
 Follow these steps to connect to WorkSpaces Applications and start an application streaming

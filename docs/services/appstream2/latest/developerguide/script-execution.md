@@ -1,3 +1,7 @@
+---
+title: "App block setup script execution in Amazon WorkSpaces Applications"
+---
+
 # App block setup script execution in Amazon WorkSpaces Applications
 
 The following diagrams indicate where in the process the setup script runs.

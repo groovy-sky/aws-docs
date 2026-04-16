@@ -1,3 +1,7 @@
+---
+title: "Using Active Directory with WorkSpaces Applications"
+---
+
 # Using Active Directory with WorkSpaces Applications
 
 You can join your Amazon WorkSpaces Applications Always-On and On-Demand Windows fleets and image builders to

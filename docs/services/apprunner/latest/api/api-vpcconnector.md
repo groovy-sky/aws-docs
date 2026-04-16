@@ -1,3 +1,7 @@
+---
+title: "VpcConnector"
+---
+
 # VpcConnector
 
 Describes an AWS App Runner VPC connector resource. A VPC connector describes the Amazon Virtual Private Cloud (Amazon VPC) that an App Runner service is

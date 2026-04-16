@@ -1,3 +1,7 @@
+---
+title: "Before You Begin Using Active Directory with Amazon WorkSpaces Applications"
+---
+
 # Before You Begin Using Active Directory with Amazon WorkSpaces Applications
 
 Before you use Microsoft Active Directory domains with WorkSpaces Applications, be aware of the

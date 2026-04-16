@@ -1,3 +1,7 @@
+---
+title: "DeleteFleet"
+---
+
 # DeleteFleet
 
 Deletes the specified fleet.

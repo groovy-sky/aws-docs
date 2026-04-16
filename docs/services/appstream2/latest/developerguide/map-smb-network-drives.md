@@ -1,3 +1,7 @@
+---
+title: "Map Server Message Block (SMB) Network Drives"
+---
+
 # Map Server Message Block (SMB) Network Drives
 
 You can use any machine that is under the targeted network of the SMBs. If

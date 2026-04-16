@@ -1,3 +1,7 @@
+---
+title: "Managing Fleet Scaling Using the AWS CLI for Amazon WorkSpaces Applications"
+---
+
 # Managing Fleet Scaling Using the AWS CLI for Amazon WorkSpaces Applications
 
 You can set up and manage fleet scaling by using the AWS Command Line Interface (AWS CLI). For more

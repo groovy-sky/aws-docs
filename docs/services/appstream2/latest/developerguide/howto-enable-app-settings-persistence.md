@@ -1,3 +1,7 @@
+---
+title: "How to Enable Application Settings Persistence"
+---
+
 # How to Enable Application Settings Persistence
 
 You can enable or disable application settings persistence while creating a stack

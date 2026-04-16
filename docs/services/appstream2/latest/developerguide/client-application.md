@@ -1,3 +1,7 @@
+---
+title: "Provide Access Through the WorkSpaces Applications Client"
+---
+
 # Provide Access Through the WorkSpaces Applications Client
 
 Your users can start WorkSpaces Applications streaming sessions by using the WorkSpaces Applications client application for a

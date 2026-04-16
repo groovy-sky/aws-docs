@@ -1,3 +1,7 @@
+---
+title: "Extension SDK Developer Guide for Amazon WorkSpaces Applications"
+---
+
 # Extension SDK Developer Guide for Amazon WorkSpaces Applications
 
 Amazon WorkSpaces Applications uses Amazon DCV technology to provide secure, high-performance access to your

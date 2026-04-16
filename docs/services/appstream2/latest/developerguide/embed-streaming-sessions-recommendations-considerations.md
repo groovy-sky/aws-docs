@@ -1,3 +1,7 @@
+---
+title: "Recommendations and Usage Considerations for Embedding Amazon WorkSpaces Applications Streaming Sessions"
+---
+
 # Recommendations and Usage Considerations for Embedding Amazon WorkSpaces Applications Streaming Sessions
 
 Consider the following recommendations and usage notes for embedded WorkSpaces Applications streaming sessions.

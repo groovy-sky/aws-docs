@@ -1,3 +1,7 @@
+---
+title: "Web Browser Access"
+---
+
 # Web Browser Access
 
 The following information helps you use a web browser to connect to WorkSpaces Applications and

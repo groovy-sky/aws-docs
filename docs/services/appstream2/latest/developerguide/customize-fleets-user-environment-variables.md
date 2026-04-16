@@ -1,3 +1,7 @@
+---
+title: "Change User Environment Variables"
+---
+
 # Change User Environment Variables
 
 Follow these steps to change user environment variables across your fleet

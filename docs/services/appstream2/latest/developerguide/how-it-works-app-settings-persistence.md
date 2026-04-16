@@ -1,3 +1,7 @@
+---
+title: "How Application Settings Persistence Works"
+---
+
 # How Application Settings Persistence Works
 
 Persistent application settings are saved to a Virtual Hard Disk (VHD) file. This file

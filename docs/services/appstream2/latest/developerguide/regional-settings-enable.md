@@ -1,3 +1,7 @@
+---
+title: "Enable Regional Settings for Your WorkSpaces Applications Users"
+---
+
 # Enable Regional Settings for Your WorkSpaces Applications Users
 
 To enable users to configure regional settings for a given stack during their WorkSpaces Applications

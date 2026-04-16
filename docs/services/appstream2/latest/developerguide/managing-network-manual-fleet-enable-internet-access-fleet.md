@@ -1,3 +1,7 @@
+---
+title: "Enable Internet Access for Your Fleet in Amazon WorkSpaces Applications"
+---
+
 # Enable Internet Access for Your Fleet in Amazon WorkSpaces Applications
 
 You can enable internet access either when you create the fleet or later.

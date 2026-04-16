@@ -1,3 +1,7 @@
+---
+title: "Change the Default Internet Explorer Home Page for Users' Streaming Sessions in Amazon WorkSpaces Applications"
+---
+
 # Change the Default Internet Explorer Home Page for Users' Streaming Sessions in Amazon WorkSpaces Applications
 
 You can use Group Policy to change the default Internet Explorer home page for users'

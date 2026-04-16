@@ -1,3 +1,7 @@
+---
+title: "Enable Google Drive for Your WorkSpaces Applications Users"
+---
+
 # Enable Google Drive for Your WorkSpaces Applications Users
 
 Before enabling Google Drive, you must do the following:

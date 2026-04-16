@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting"
+---
+
 # Troubleshooting
 
 If you encounter difficulties when working with Amazon WorkSpaces Applications, consult the following troubleshooting resources.

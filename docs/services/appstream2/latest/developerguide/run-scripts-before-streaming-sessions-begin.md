@@ -1,3 +1,7 @@
+---
+title: "Run Scripts Before Streaming Sessions Begin"
+---
+
 # Run Scripts Before Streaming Sessions Begin
 
 You can configure your scripts to run for a maximum of 60 seconds before your

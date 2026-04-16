@@ -1,3 +1,7 @@
+---
+title: "VPC Setup Recommendations"
+---
+
 # VPC Setup Recommendations
 
 When you create a fleet, or launch an image builder or app block builder, you

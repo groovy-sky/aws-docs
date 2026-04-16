@@ -1,3 +1,7 @@
+---
+title: "Using Amazon S3 VPC Endpoints for WorkSpaces Applications Features"
+---
+
 # Using Amazon S3 VPC Endpoints for WorkSpaces Applications Features
 
 When you enable Application Settings Persistence or Home folders on a stack, WorkSpaces Applications

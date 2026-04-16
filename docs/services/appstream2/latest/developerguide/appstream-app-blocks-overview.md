@@ -1,3 +1,7 @@
+---
+title: "Overview"
+---
+
 # Overview
 
 To create an app block with WorkSpaces Applications packaging, you need to initiate a streaming

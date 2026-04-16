@@ -1,3 +1,7 @@
+---
+title: "CodeConfigurationValues"
+---
+
 # CodeConfigurationValues
 
 Describes the basic configuration needed for building and running an AWS App Runner service. This type doesn't support the full set of possible

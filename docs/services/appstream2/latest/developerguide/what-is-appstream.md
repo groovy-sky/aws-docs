@@ -1,3 +1,7 @@
+---
+title: "What Is Amazon WorkSpaces Applications?"
+---
+
 # What Is Amazon WorkSpaces Applications?
 
 Amazon WorkSpaces Applications is a fully managed application streaming service that provides users with

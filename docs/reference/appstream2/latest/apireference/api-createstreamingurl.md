@@ -1,3 +1,7 @@
+---
+title: "CreateStreamingURL"
+---
+
 # CreateStreamingURL
 
 Creates a temporary URL to start an WorkSpaces Applications streaming session for the specified user. A streaming URL enables application streaming to be tested without user setup.

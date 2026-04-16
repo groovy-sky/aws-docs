@@ -1,3 +1,7 @@
+---
+title: "Session Scripts Configuration File"
+---
+
 # Session Scripts Configuration File
 
 To locate the session scripts configuration file in a Windows instance, navigate

@@ -1,3 +1,7 @@
+---
+title: "App Blocks"
+---
+
 # App Blocks
 
 App blocks represent a virtual hard disk (VHD) that is stored within an Amazon S3 bucket

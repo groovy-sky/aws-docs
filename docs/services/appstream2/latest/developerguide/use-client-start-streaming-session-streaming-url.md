@@ -1,3 +1,7 @@
+---
+title: "Streaming URL"
+---
+
 # Streaming URL
 
 To create a streaming URL, use one of the following methods:

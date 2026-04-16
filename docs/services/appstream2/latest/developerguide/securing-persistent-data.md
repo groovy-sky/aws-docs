@@ -1,3 +1,7 @@
+---
+title: "Securing Persistent Data"
+---
+
 # Securing Persistent Data
 
 Deployments of WorkSpaces Applications can require the user state to persist

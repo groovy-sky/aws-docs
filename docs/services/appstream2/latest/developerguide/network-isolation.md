@@ -1,3 +1,7 @@
+---
+title: "Network Isolation"
+---
+
 # Network Isolation
 
 A virtual private cloud (VPC) is a virtual network in your own logically isolated area in the Amazon Web Services Cloud. Use separate VPCs to isolate infrastructure by workload or organizational entity.

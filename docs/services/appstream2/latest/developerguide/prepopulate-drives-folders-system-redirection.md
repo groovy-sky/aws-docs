@@ -1,3 +1,7 @@
+---
+title: "Make Default Drives and Folders Available for Your Users to Share"
+---
+
 # Make Default Drives and Folders Available for Your Users to Share
 
 By default, when you enable file direction for users of a stack, the following

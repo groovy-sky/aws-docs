@@ -1,3 +1,7 @@
+---
+title: "Create the Setup Script for the VHD in Amazon WorkSpaces Applications"
+---
+
 # Create the Setup Script for the VHD in Amazon WorkSpaces Applications
 
 WorkSpaces Applications uses a setup script that you provide to mount the VHD before the

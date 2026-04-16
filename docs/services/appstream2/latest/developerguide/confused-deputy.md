@@ -1,3 +1,7 @@
+---
+title: "Amazon WorkSpaces Applications Cross-Service Confused Deputy Prevention"
+---
+
 # Amazon WorkSpaces Applications Cross-Service Confused Deputy Prevention
 
 The confused deputy problem is a security issue where an entity that doesn't have

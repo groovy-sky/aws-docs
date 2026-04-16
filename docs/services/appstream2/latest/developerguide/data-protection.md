@@ -1,3 +1,7 @@
+---
+title: "Data Protection in Amazon WorkSpaces Applications"
+---
+
 # Data Protection in Amazon WorkSpaces Applications
 
 The AWS [shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model)

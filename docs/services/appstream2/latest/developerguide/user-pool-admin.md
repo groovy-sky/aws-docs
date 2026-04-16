@@ -1,3 +1,7 @@
+---
+title: "User Pool Administration in Amazon WorkSpaces Applications"
+---
+
 # User Pool Administration in Amazon WorkSpaces Applications
 
 To create and manage users in the user pool, sign in to the WorkSpaces Applications console for the AWS

@@ -1,3 +1,7 @@
+---
+title: "StreamingExperienceSettings"
+---
+
 # StreamingExperienceSettings
 
 The streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client.

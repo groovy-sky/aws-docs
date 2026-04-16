@@ -1,3 +1,7 @@
+---
+title: "Enable Dynamic App Providers"
+---
+
 # Enable Dynamic App Providers
 
 Dynamic app providers must first be enabled within an WorkSpaces Applications image. After you

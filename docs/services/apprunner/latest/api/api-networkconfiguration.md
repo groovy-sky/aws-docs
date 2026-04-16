@@ -1,3 +1,7 @@
+---
+title: "NetworkConfiguration"
+---
+
 # NetworkConfiguration
 
 Describes configuration settings related to network traffic of an AWS App Runner service. Consists of embedded objects for each configurable network

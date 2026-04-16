@@ -1,3 +1,7 @@
+---
+title: "ConnectionSummary"
+---
+
 # ConnectionSummary
 
 Provides summary information about an AWS App Runner connection resource.

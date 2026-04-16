@@ -1,3 +1,7 @@
+---
+title: "DescribeObservabilityConfiguration"
+---
+
 # DescribeObservabilityConfiguration
 
 ###### Important

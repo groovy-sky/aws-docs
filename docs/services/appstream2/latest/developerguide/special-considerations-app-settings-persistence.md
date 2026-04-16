@@ -1,3 +1,7 @@
+---
+title: "Special Considerations for Application Settings Persistence"
+---
+
 # Special Considerations for Application Settings Persistence
 
 When you create a stack in the WorkSpaces Applications console, in **Step 3: User**

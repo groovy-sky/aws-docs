@@ -1,3 +1,7 @@
+---
+title: "Enable WorkSpaces Applications Usage Reports"
+---
+
 # Enable WorkSpaces Applications Usage Reports
 
 To receive usage reports, you subscribe to them by using the WorkSpaces Applications console, the

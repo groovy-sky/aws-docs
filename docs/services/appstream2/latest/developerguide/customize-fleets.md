@@ -1,3 +1,7 @@
+---
+title: "Customize an Amazon WorkSpaces Applications Fleet to Optimize Your Users' Application Streaming Experience"
+---
+
 # Customize an Amazon WorkSpaces Applications Fleet to Optimize Your Users' Application Streaming Experience
 
 By customizing WorkSpaces Applications fleet instances, you can define specific aspects of your WorkSpaces Applications

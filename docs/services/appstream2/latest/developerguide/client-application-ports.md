@@ -1,3 +1,7 @@
+---
+title: "IP Address and Port Requirements for WorkSpaces Applications User Devices"
+---
+
 # IP Address and Port Requirements for WorkSpaces Applications User Devices
 
 WorkSpaces Applications users' devices require outbound access on port 443 (TCP) and port 8433

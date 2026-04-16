@@ -1,3 +1,7 @@
+---
+title: "Adding Your Custom Branding to Amazon WorkSpaces Applications"
+---
+
 # Adding Your Custom Branding to Amazon WorkSpaces Applications
 
 To customize WorkSpaces Applications with your organizational branding, use the WorkSpaces Applications console to

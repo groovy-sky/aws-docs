@@ -1,3 +1,7 @@
+---
+title: "Use Custom Shared Network Folders"
+---
+
 # Use Custom Shared Network Folders
 
 If your WorkSpaces Applications administrator has enabled this file storage option, after you sign in

@@ -1,3 +1,7 @@
+---
+title: "Step 1: Specify a Host Domain to Embedded Amazon WorkSpaces Applications Streaming Sessions"
+---
+
 # Step 1: Specify a Host Domain to Embedded Amazon WorkSpaces Applications Streaming Sessions
 
 To embed an WorkSpaces Applications streaming session in a webpage, first update your stack to specify

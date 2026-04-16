@@ -1,3 +1,7 @@
+---
+title: "Resilience in Amazon WorkSpaces Applications"
+---
+
 # Resilience in Amazon WorkSpaces Applications
 
 The AWS global infrastructure is built around AWS Regions and Availability Zones. Regions

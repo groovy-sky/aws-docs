@@ -1,3 +1,7 @@
+---
+title: "VolumeConfig"
+---
+
 # VolumeConfig
 
 Configuration for the root volume of fleet instances and image builders. This allows you to customize the storage capacity beyond the default 200 GB.

@@ -1,3 +1,7 @@
+---
+title: "Associate Applications to Elastic Fleets"
+---
+
 # Associate Applications to Elastic Fleets
 
 Applications must be associated to Elastic fleets before they appear to users in the

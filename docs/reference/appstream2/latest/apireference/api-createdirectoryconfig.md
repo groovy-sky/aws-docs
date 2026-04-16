@@ -1,3 +1,7 @@
+---
+title: "CreateDirectoryConfig"
+---
+
 # CreateDirectoryConfig
 
 Creates a Directory Config object in WorkSpaces Applications. This object includes the configuration information required to join fleets and image builders to Microsoft Active Directory domains.

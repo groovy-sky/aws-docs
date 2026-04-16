@@ -1,3 +1,7 @@
+---
+title: "Relative Mouse Offset"
+---
+
 # Relative Mouse Offset
 
 By default, during users' streaming sessions, WorkSpaces Applications transmits information about

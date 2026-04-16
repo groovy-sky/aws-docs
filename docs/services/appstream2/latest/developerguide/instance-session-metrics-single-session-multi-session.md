@@ -1,3 +1,7 @@
+---
+title: "Instance and Session Performance Metrics for Single-session and Multi-session Fleets"
+---
+
 # Instance and Session Performance Metrics for Single-session and Multi-session Fleets
 
 The following are instance and session performance metrics for single-session and multi-session fleets.

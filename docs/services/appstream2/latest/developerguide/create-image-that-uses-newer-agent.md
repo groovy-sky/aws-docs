@@ -1,3 +1,7 @@
+---
+title: "Create an Image That Uses a Newer Version of the WorkSpaces Applications Agent"
+---
+
 # Create an Image That Uses a Newer Version of the WorkSpaces Applications Agent
 
 If you pin your image to a specific WorkSpaces Applications agent version, you must update to a newer

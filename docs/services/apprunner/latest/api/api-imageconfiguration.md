@@ -1,3 +1,7 @@
+---
+title: "ImageConfiguration"
+---
+
 # ImageConfiguration
 
 Describes the configuration that AWS App Runner uses to run an App Runner service using an image pulled from a source image repository.

@@ -1,3 +1,7 @@
+---
+title: "WorkSpaces Applications Instance Families"
+---
+
 # WorkSpaces Applications Instance Families
 
 Amazon WorkSpaces Applications users stream applications from stacks that you create. Each stack

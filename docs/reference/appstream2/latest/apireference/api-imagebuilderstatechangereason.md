@@ -1,3 +1,7 @@
+---
+title: "ImageBuilderStateChangeReason"
+---
+
 # ImageBuilderStateChangeReason
 
 Describes the reason why the last image builder state change occurred.

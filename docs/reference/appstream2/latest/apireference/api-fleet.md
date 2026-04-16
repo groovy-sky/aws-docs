@@ -1,3 +1,7 @@
+---
+title: "Fleet"
+---
+
 # Fleet
 
 Describes a fleet.

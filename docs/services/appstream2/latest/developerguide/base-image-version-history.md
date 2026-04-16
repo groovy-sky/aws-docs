@@ -1,3 +1,7 @@
+---
+title: "WorkSpaces Applications Base Image and Managed Image Update Release Notes"
+---
+
 # WorkSpaces Applications Base Image and Managed Image Update Release Notes
 
 Amazon WorkSpaces Applications provides base images to help you create images that include your own
@@ -131,7 +135,7 @@ updates.
 Windows
 
 Software componentLatest base images (December 18, 2025)Managed image updates (February 18,
-2026)Amazon AWS (AvsCamera) Driver1.0.23.01.0.23.0Amazon CloudWatch Agent1.4.379171.300063SSM Agent3.3.3050.03.3.3598.0NICE DCV Virtual Display2024.0-191432025.0-20850AMD Driver for Graphics Design instances24.20.13028.7002 24.20.13028.7002AppStream 2.0 AgentLATEST (02-09-2026)--AWS Command Line Interface (AWS CLI)
+2026)Amazon AWS (AvsCamera) Driver1.0.23.01.0.23.0Amazon CloudWatch Agent1.4.379171.300063SSM Agent3.3.3050.03.3.3598.0NICE DCV Virtual Display2024.0-191432025.0-20850AMD Driver for Graphics Design instances24.20.13028.7002 24.20.13028.7002AppStream 2.0 AgentLATEST (03-30-2026)--AWS Command Line Interface (AWS CLI)
 
 1.40.24 (Windows Server 2016/2019)
 

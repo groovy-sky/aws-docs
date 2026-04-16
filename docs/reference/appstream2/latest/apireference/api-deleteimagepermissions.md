@@ -1,3 +1,7 @@
+---
+title: "DeleteImagePermissions"
+---
+
 # DeleteImagePermissions
 
 Deletes permissions for the specified private image. After you delete permissions for an image, AWS accounts to which you previously granted these permissions can no longer use the image.

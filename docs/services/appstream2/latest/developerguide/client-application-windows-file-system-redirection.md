@@ -1,3 +1,7 @@
+---
+title: "Local File Access"
+---
+
 # Local File Access
 
 WorkSpaces Applications file redirection lets you access files on your local computer from your

@@ -1,3 +1,7 @@
+---
+title: "UpdateStack"
+---
+
 # UpdateStack
 
 Updates the specified fields for the specified stack.

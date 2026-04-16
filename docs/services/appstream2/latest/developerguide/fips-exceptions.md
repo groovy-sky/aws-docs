@@ -1,3 +1,7 @@
+---
+title: "Exceptions"
+---
+
 # Exceptions
 
 FIPS-compliant connections are not supported in the following scenarios:

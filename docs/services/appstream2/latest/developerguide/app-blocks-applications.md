@@ -1,3 +1,7 @@
+---
+title: "Applications Manager"
+---
+
 # Applications Manager
 
 When using an Elastic fleet, you can create app blocks and applications. _App_

@@ -1,3 +1,7 @@
+---
+title: "Infrastructure Security in Amazon WorkSpaces Applications"
+---
+
 # Infrastructure Security in Amazon WorkSpaces Applications
 
 As a managed service, Amazon WorkSpaces Applications is protected by AWS global network security. For

@@ -1,3 +1,7 @@
+---
+title: "InstanceConfiguration"
+---
+
 # InstanceConfiguration
 
 Describes the runtime configuration of an AWS App Runner service instance (scaling unit).

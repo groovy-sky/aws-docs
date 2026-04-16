@@ -1,3 +1,7 @@
+---
+title: "CertificateBasedAuthProperties"
+---
+
 # CertificateBasedAuthProperties
 
 The certificate-based authentication properties used to authenticate SAML 2.0 Identity

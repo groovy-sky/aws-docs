@@ -1,3 +1,7 @@
+---
+title: "Tag Restrictions for Amazon WorkSpaces Applications"
+---
+
 # Tag Restrictions for Amazon WorkSpaces Applications
 
 - The maximum number of tags per WorkSpaces Applications resource is 50.

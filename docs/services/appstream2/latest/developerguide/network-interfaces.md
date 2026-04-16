@@ -1,3 +1,7 @@
+---
+title: "Network Interfaces in Amazon WorkSpaces Applications"
+---
+
 # Network Interfaces in Amazon WorkSpaces Applications
 
 Each WorkSpaces Applications streaming instance has the following network interfaces:

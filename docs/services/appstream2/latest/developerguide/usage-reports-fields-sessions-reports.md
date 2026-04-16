@@ -1,3 +1,7 @@
+---
+title: "Sessions Report Fields"
+---
+
 # Sessions Report Fields
 
 The following table describes the fields included in WorkSpaces Applications sessions reports.

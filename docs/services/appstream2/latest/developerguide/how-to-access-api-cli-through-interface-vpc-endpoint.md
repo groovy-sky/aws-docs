@@ -1,3 +1,7 @@
+---
+title: "Use an Interface Endpoint to Access WorkSpaces Applications API Operations and CLI Commands"
+---
+
 # Use an Interface Endpoint to Access WorkSpaces Applications API Operations and CLI Commands
 
 After the status of the interface VPC endpoint that you create changes to

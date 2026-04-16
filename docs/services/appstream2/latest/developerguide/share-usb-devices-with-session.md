@@ -1,3 +1,7 @@
+---
+title: "Enable Users to Share a USB Device with an WorkSpaces Applications Streaming Session"
+---
+
 # Enable Users to Share a USB Device with an WorkSpaces Applications Streaming Session
 
 Before users share their USB devices with an WorkSpaces Applications session, the USB devices must be

@@ -1,3 +1,7 @@
+---
+title: "WorkSpaces Applications Usage Reports"
+---
+
 # WorkSpaces Applications Usage Reports
 
 You can subscribe to Amazon WorkSpaces Applications usage reports to receive detailed reports about how your

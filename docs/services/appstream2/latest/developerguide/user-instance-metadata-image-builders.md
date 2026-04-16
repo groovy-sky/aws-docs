@@ -1,3 +1,7 @@
+---
+title: "Instance Metadata for WorkSpaces Applications Image Builders"
+---
+
 # Instance Metadata for WorkSpaces Applications Image Builders
 
 WorkSpaces Applications image builder instances have instance metadata available through Windows

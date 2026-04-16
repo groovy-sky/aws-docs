@@ -1,3 +1,7 @@
+---
+title: "Step 3: Download the Embedded Amazon WorkSpaces Applications Files"
+---
+
 # Step 3: Download the Embedded Amazon WorkSpaces Applications Files
 
 To host embedded WorkSpaces Applications streaming sessions, you must download and configure the provided

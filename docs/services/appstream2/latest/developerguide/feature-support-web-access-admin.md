@@ -1,3 +1,7 @@
+---
+title: "Feature and Device Support"
+---
+
 # Feature and Device Support
 
 WorkSpaces Applications provides the following feature and peripheral device support for users who access WorkSpaces Applications through a web browser.

@@ -1,3 +1,7 @@
+---
+title: "Create Custom Reports and Analyze WorkSpaces Applications Usage Data"
+---
+
 # Create Custom Reports and Analyze WorkSpaces Applications Usage Data
 
 Amazon Athena is a serverless, interactive query service that you can use to analyze data

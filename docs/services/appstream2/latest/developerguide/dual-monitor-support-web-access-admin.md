@@ -1,3 +1,7 @@
+---
+title: "Dual-Monitor Support"
+---
+
 # Dual-Monitor Support
 
 WorkSpaces Applications supports the use of multiple monitors during streaming sessions,

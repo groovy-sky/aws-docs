@@ -1,3 +1,7 @@
+---
+title: "ObservabilityConfiguration"
+---
+
 # ObservabilityConfiguration
 
 Describes an AWS App Runner observability configuration resource. Multiple revisions of a configuration have the same

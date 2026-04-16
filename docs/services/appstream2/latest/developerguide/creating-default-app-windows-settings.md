@@ -1,3 +1,7 @@
+---
+title: "Creating Default Application and Windows Settings for Your WorkSpaces Applications Users"
+---
+
 # Creating Default Application and Windows Settings for Your WorkSpaces Applications Users
 
 Application customizations and Windows settings that are saved to the Windows user profile folder or

@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting Image Builders"
+---
+
 # Troubleshooting Image Builders
 
 The following are issues that might occur when you use Amazon WorkSpaces Applications image

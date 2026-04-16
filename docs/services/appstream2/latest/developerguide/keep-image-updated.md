@@ -1,3 +1,7 @@
+---
+title: "Keep Your Amazon WorkSpaces Applications Image Up-to-Date"
+---
+
 # Keep Your Amazon WorkSpaces Applications Image Up-to-Date
 
 You can keep your WorkSpaces Applications image up-to-date by doing either of the following:

@@ -1,3 +1,7 @@
+---
+title: "WorkSpaces Applications Client Application for macOS"
+---
+
 # WorkSpaces Applications Client Application for macOS
 
 The following information helps you use the WorkSpaces Applications client for macOS to connect to

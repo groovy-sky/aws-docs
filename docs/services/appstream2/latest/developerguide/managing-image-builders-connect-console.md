@@ -1,3 +1,7 @@
+---
+title: "WorkSpaces Applications Console (Web Connection)"
+---
+
 # WorkSpaces Applications Console (Web Connection)
 
 To use the WorkSpaces Applications console to connect to an image builder through a web browser, complete the following steps.

@@ -1,3 +1,7 @@
+---
+title: "S3Location"
+---
+
 # S3Location
 
 Describes the S3 location.

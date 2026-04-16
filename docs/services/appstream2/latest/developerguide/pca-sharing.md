@@ -1,3 +1,7 @@
+---
+title: "Enable Cross-account PCA Sharing"
+---
+
 # Enable Cross-account PCA Sharing
 
 Private CA (PCA) cross-account sharing offers the ability to grant permissions for

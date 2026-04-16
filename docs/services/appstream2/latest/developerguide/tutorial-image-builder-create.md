@@ -1,3 +1,7 @@
+---
+title: "Launch an Image Builder to Install and Configure Streaming Applications"
+---
+
 # Launch an Image Builder to Install and Configure Streaming Applications
 
 To install and configure applications to stream to your users, you start by launching

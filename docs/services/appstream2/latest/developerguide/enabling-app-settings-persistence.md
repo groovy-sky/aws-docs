@@ -1,3 +1,7 @@
+---
+title: "Enabling Application Settings Persistence"
+---
+
 # Enabling Application Settings Persistence
 
 Review the following topics to learn how to enable application settings persistence for your WorkSpaces Applications

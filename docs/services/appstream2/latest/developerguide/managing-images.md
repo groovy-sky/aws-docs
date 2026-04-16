@@ -1,3 +1,7 @@
+---
+title: "Images"
+---
+
 # Images
 
 You can create Amazon WorkSpaces Applications images that contain applications you can stream to your users

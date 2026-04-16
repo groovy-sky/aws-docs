@@ -1,3 +1,7 @@
+---
+title: "Managing Fleet Scaling Using the Amazon WorkSpaces Applications Console"
+---
+
 # Managing Fleet Scaling Using the Amazon WorkSpaces Applications Console
 
 You can set up and manage fleet scaling by using the WorkSpaces Applications console in either of the

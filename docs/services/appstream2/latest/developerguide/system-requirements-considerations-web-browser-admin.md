@@ -1,3 +1,7 @@
+---
+title: "System Requirements and Considerations"
+---
+
 # System Requirements and Considerations
 
 Users can access WorkSpaces Applications through an HTML5-capable web browser on a desktop computer

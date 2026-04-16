@@ -1,3 +1,7 @@
+---
+title: "Example: WorkSpaces Applications Elastic fleets session script Amazon S3 bucket policy cross-service confused deputy prevention"
+---
+
 # Example: WorkSpaces Applications Elastic fleets session script Amazon S3 bucket policy cross-service confused deputy prevention
 
 ###### Example `aws:SourceAccount` Conditional:

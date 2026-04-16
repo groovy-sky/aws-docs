@@ -1,3 +1,7 @@
+---
+title: "Unsupported Applications"
+---
+
 # Unsupported Applications
 
 Applications might encounter failures when installing or running in the following

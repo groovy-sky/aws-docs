@@ -1,3 +1,7 @@
+---
+title: "Working with Tags by Using the Amazon WorkSpaces Applications API, an AWS SDK, or AWS CLI"
+---
+
 # Working with Tags by Using the Amazon WorkSpaces Applications API, an AWS SDK, or AWS CLI
 
 If you're using the WorkSpaces Applications API, an AWS SDK, or the AWS Command Line Interface (AWS

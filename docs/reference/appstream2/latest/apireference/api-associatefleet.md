@@ -1,3 +1,7 @@
+---
+title: "AssociateFleet"
+---
+
 # AssociateFleet
 
 Associates the specified fleet with the specified stack.

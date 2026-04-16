@@ -1,3 +1,7 @@
+---
+title: "Drawing Tablets"
+---
+
 # Drawing Tablets
 
 Drawing tablets, also known as pen tablets, are computer input devices

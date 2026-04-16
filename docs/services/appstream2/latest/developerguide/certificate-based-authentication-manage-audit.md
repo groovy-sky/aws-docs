@@ -1,3 +1,7 @@
+---
+title: "Audit Reports"
+---
+
 # Audit Reports
 
 You can create an audit report to list all of the certificates that your

@@ -1,3 +1,7 @@
+---
+title: "WorkSpaces Applications Client Application for Windows"
+---
+
 # WorkSpaces Applications Client Application for Windows
 
 The following information helps you use the WorkSpaces Applications client for Windows to connect

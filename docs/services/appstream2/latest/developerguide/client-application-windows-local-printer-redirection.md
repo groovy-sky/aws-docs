@@ -1,3 +1,7 @@
+---
+title: "Printer Redirection"
+---
+
 # Printer Redirection
 
 WorkSpaces Applications local printer redirection lets you access printers that are connected

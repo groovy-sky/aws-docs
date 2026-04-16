@@ -1,3 +1,7 @@
+---
+title: "Editing the Directory Configuration"
+---
+
 # Editing the Directory Configuration
 
 After a WorkSpaces Applications directory configuration has been created, you can edit it to add,

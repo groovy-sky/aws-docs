@@ -1,3 +1,7 @@
+---
+title: "Disconnect and End Session"
+---
+
 # Disconnect and End Session
 
 To disconnect the streaming session, choose one of the following

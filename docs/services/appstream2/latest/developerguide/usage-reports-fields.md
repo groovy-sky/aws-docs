@@ -1,3 +1,7 @@
+---
+title: "WorkSpaces Applications Usage Reports Fields"
+---
+
 # WorkSpaces Applications Usage Reports Fields
 
 This topic provides information about the fields included in WorkSpaces Applications usage reports.

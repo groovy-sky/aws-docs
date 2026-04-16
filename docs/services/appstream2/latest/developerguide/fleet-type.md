@@ -1,3 +1,7 @@
+---
+title: "WorkSpaces Applications Fleet Types"
+---
+
 # WorkSpaces Applications Fleet Types
 
 The fleet type determines when your instances run and how you pay for them. You can

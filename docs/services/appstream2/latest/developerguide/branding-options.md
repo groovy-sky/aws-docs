@@ -1,3 +1,7 @@
+---
+title: "Custom Branding Options for Amazon WorkSpaces Applications"
+---
+
 # Custom Branding Options for Amazon WorkSpaces Applications
 
 You can customize the appearance of the streaming application catalog page by using

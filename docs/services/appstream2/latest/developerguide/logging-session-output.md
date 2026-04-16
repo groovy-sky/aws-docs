@@ -1,3 +1,7 @@
+---
+title: "Logging Session Script Output"
+---
+
 # Logging Session Script Output
 
 When this option is enabled in the configuration file, WorkSpaces Applications automatically

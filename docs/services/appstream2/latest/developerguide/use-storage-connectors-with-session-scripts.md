@@ -1,3 +1,7 @@
+---
+title: "Use Storage Connectors with Session Scripts"
+---
+
 # Use Storage Connectors with Session Scripts
 
 When WorkSpaces Applications storage connectors are enabled, they begin mounting when the session

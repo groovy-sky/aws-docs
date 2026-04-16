@@ -1,3 +1,7 @@
+---
+title: "Copy an Image That You Own to Another AWS Region in Amazon WorkSpaces Applications"
+---
+
 # Copy an Image That You Own to Another AWS Region in Amazon WorkSpaces Applications
 
 ###### Important

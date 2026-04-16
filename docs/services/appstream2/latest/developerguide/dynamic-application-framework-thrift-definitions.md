@@ -1,3 +1,7 @@
+---
+title: "Dynamic Application Framework Thrift Definitions and Named Pipe Name"
+---
+
 # Dynamic Application Framework Thrift Definitions and Named Pipe Name
 
 Thrift enables you to use simple definition files provided by WorkSpaces Applications to

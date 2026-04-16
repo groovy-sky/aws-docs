@@ -1,3 +1,7 @@
+---
+title: "How to Disable Local Printer Redirection"
+---
+
 # How to Disable Local Printer Redirection
 
 To disable local printer redirection follow these steps.

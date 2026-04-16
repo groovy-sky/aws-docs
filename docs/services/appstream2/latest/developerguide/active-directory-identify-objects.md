@@ -1,3 +1,7 @@
+---
+title: "Managing WorkSpaces Applications Computer Objects in Active Directory"
+---
+
 # Managing WorkSpaces Applications Computer Objects in Active Directory
 
 WorkSpaces Applications does not delete computer objects from Active Directory. These computer

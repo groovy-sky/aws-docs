@@ -1,3 +1,7 @@
+---
+title: "Persist Environment Variables in Amazon WorkSpaces Applications"
+---
+
 # Persist Environment Variables in Amazon WorkSpaces Applications
 
 Environment variables enable you to dynamically pass settings across applications. For

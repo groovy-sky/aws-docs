@@ -1,3 +1,7 @@
+---
+title: "Domain-Joined WorkSpaces Applications Streaming Instances"
+---
+
 # Domain-Joined WorkSpaces Applications Streaming Instances
 
 SAML 2.0-based user federation is required for application streaming from

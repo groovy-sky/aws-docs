@@ -1,3 +1,7 @@
+---
+title: "Amazon WorkSpaces Applications Connections to Your VPC"
+---
+
 # Amazon WorkSpaces Applications Connections to Your VPC
 
 To enable WorkSpaces Applications connectivity to network resources and the internet, configure your

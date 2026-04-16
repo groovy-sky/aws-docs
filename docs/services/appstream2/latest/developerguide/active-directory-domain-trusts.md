@@ -1,3 +1,7 @@
+---
+title: "Configuring WorkSpaces Applications to Use Domain Trusts"
+---
+
 # Configuring WorkSpaces Applications to Use Domain Trusts
 
 WorkSpaces Applications supports Active Directory domain environments where network resources such

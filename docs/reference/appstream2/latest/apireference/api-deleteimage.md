@@ -1,3 +1,7 @@
+---
+title: "DeleteImage"
+---
+
 # DeleteImage
 
 Deletes the specified image. You cannot delete an image when it is in use.

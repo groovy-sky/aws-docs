@@ -1,3 +1,7 @@
+---
+title: "Amazon WorkSpaces Applications Console (Browser Connection)"
+---
+
 # Amazon WorkSpaces Applications Console (Browser Connection)
 
 To use the WorkSpaces Applications console to connect to an app block builder through a browser,

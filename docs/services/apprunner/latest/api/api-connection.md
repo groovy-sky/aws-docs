@@ -1,3 +1,7 @@
+---
+title: "Connection"
+---
+
 # Connection
 
 Describes an AWS App Runner connection resource.

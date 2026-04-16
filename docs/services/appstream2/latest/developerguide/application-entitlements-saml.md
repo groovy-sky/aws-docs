@@ -1,3 +1,7 @@
+---
+title: "Attribute-Based Application Entitlements Using a Third-Party SAML 2.0 Identity Provider"
+---
+
 # Attribute-Based Application Entitlements Using a Third-Party SAML 2.0 Identity Provider
 
 Application entitlements control access to specific applications within your WorkSpaces Applications

@@ -1,3 +1,7 @@
+---
+title: "Connect to an App Block Builder in Amazon WorkSpaces Applications"
+---
+
 # Connect to an App Block Builder in Amazon WorkSpaces Applications
 
 You can connect to an app block builder by doing either of the following:

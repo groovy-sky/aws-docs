@@ -1,3 +1,7 @@
+---
+title: "CustomDomain"
+---
+
 # CustomDomain
 
 Describes a custom domain that's associated with an AWS App Runner service.

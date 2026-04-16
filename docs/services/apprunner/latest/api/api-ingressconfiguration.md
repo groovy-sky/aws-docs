@@ -1,3 +1,7 @@
+---
+title: "IngressConfiguration"
+---
+
 # IngressConfiguration
 
 Network configuration settings for inbound network traffic.

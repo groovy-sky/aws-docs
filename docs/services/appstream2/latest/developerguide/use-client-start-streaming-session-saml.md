@@ -1,3 +1,7 @@
+---
+title: "SAML 2.0"
+---
+
 # SAML 2.0
 
 If you use external identity providers to federate your users to an WorkSpaces Applications stack, you must create a

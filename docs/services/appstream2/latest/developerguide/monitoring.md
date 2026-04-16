@@ -1,3 +1,7 @@
+---
+title: "Monitoring Amazon WorkSpaces Applications Resources"
+---
+
 # Monitoring Amazon WorkSpaces Applications Resources
 
 WorkSpaces Applications publishes metrics to Amazon CloudWatch to enabled detailed tracking and deep dive analysis.

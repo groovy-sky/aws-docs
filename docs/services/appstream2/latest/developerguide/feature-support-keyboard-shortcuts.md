@@ -1,3 +1,7 @@
+---
+title: "Keyboard Shortcuts"
+---
+
 # Keyboard Shortcuts
 
 For the Windows client, most operating system keyboard shortcuts are

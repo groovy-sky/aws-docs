@@ -1,3 +1,7 @@
+---
+title: "Administer Your Home Folders"
+---
+
 # Administer Your Home Folders
 
 Review the following topics to learn how to administer your home folders.

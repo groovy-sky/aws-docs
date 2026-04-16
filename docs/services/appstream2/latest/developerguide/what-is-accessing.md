@@ -1,3 +1,7 @@
+---
+title: "Accessing Amazon WorkSpaces Applications"
+---
+
 # Accessing Amazon WorkSpaces Applications
 
 You can work with WorkSpaces Applications using any of the following interfaces:

@@ -1,3 +1,7 @@
+---
+title: "Using AWS Managed Policies and Linked Roles to Manage Administrator Access to WorkSpaces Applications Resources"
+---
+
 # Using AWS Managed Policies and Linked Roles to Manage Administrator Access to WorkSpaces Applications Resources
 
 By default, IAM users don't have the permissions required to create or modify WorkSpaces Applications

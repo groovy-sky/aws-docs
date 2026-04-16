@@ -1,3 +1,7 @@
+---
+title: "Encryption at Rest"
+---
+
 # Encryption at Rest
 
 WorkSpaces Applications fleet instances are ephemeral in nature. After a user's streaming session is

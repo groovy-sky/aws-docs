@@ -1,3 +1,7 @@
+---
+title: "Import Image"
+---
+
 # Import Image
 
 You can create WorkSpaces Applications images by importing your customized EC2 AMIs. Here's how it works:

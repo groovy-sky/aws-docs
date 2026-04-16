@@ -1,3 +1,7 @@
+---
+title: "FIPS Endpoints for Administrative Use"
+---
+
 # FIPS Endpoints for Administrative Use
 
 To specify a FIPS endpoint when you run an AWS CLI command for WorkSpaces Applications, use the `endpoint-url` parameter. The following example uses the WorkSpaces Applications FIPS endpoint in the US West (Oregon) Region to retrieve a list of all stacks in the Region:

@@ -1,3 +1,7 @@
+---
+title: "ListObservabilityConfigurations"
+---
+
 # ListObservabilityConfigurations
 
 ###### Important

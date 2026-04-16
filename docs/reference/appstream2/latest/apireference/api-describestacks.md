@@ -1,3 +1,7 @@
+---
+title: "DescribeStacks"
+---
+
 # DescribeStacks
 
 Retrieves a list that describes one or more specified stacks, if the stack names are provided. Otherwise, all stacks in the account are described.

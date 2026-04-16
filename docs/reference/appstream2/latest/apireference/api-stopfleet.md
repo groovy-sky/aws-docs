@@ -1,3 +1,7 @@
+---
+title: "StopFleet"
+---
+
 # StopFleet
 
 Stops the specified fleet.

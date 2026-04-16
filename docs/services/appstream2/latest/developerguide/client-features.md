@@ -1,3 +1,7 @@
+---
+title: "Supported Features"
+---
+
 # Supported Features
 
 The following table compares the features that are supported by the different access

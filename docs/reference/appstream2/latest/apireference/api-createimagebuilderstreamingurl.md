@@ -1,3 +1,7 @@
+---
+title: "CreateImageBuilderStreamingURL"
+---
+
 # CreateImageBuilderStreamingURL
 
 Creates a URL to start an image builder streaming session.

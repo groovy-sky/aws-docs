@@ -1,3 +1,7 @@
+---
+title: "Application"
+---
+
 # Application
 
 Describes an application in the application catalog.

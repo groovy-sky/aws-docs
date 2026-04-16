@@ -1,3 +1,7 @@
+---
+title: "Additional Resources"
+---
+
 # Additional Resources
 
 The following links provide information and other resources to help you package and

@@ -1,3 +1,7 @@
+---
+title: "Using IAM Policies to Manage Administrator Access to Application Auto Scaling"
+---
+
 # Using IAM Policies to Manage Administrator Access to Application Auto Scaling
 
 Automatic scaling for fleets is made possible by a combination of the WorkSpaces Applications,

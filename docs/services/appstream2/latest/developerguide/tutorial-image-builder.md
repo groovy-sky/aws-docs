@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a Custom WorkSpaces Applications Image by Using the WorkSpaces Applications Console"
+---
+
 # Tutorial: Create a Custom WorkSpaces Applications Image by Using the WorkSpaces Applications Console
 
 This tutorial describes how to create WorkSpaces Applications images that are based on Microsoft Windows

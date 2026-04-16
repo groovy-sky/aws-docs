@@ -1,3 +1,7 @@
+---
+title: "DeleteObservabilityConfiguration"
+---
+
 # DeleteObservabilityConfiguration
 
 ###### Important

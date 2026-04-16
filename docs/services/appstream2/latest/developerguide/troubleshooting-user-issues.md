@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting WorkSpaces Applications User Issues"
+---
+
 # Troubleshooting WorkSpaces Applications User Issues
 
 ## Enable advanced logging

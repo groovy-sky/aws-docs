@@ -1,3 +1,7 @@
+---
+title: "Use Group Policy to Change the Default Internet Explorer Home Page"
+---
+
 # Use Group Policy to Change the Default Internet Explorer Home Page
 
 In Active Directory environments, you use the Group Policy Management (GPMC)

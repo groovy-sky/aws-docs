@@ -1,3 +1,7 @@
+---
+title: "Session"
+---
+
 # Session
 
 Describes a streaming session.

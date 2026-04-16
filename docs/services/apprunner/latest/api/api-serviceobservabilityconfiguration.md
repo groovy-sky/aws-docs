@@ -1,3 +1,7 @@
+---
+title: "ServiceObservabilityConfiguration"
+---
+
 # ServiceObservabilityConfiguration
 
 Describes the observability configuration of an AWS App Runner service. These are additional observability features, like tracing, that you choose to

@@ -1,3 +1,7 @@
+---
+title: "ImageBuilder"
+---
+
 # ImageBuilder
 
 Describes a virtual machine that is used to create an image.

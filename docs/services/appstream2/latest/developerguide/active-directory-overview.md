@@ -1,3 +1,7 @@
+---
+title: "Overview of Active Directory Domains"
+---
+
 # Overview of Active Directory Domains
 
 Using Active Directory domains with WorkSpaces Applications requires an understanding of how they work

@@ -1,3 +1,7 @@
+---
+title: "Disable OneDrive for Your WorkSpaces Applications Users"
+---
+
 # Disable OneDrive for Your WorkSpaces Applications Users
 
 You can disable OneDrive for a stack without losing user content that is already

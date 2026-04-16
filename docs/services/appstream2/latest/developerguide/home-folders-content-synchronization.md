@@ -1,3 +1,7 @@
+---
+title: "Home Folder Content Synchronization"
+---
+
 # Home Folder Content Synchronization
 
 When home folders are enabled, WorkSpaces Applications creates a unique folder for each user in

@@ -1,3 +1,7 @@
+---
+title: "User Authentication"
+---
+
 # User Authentication
 
 The following topics provide information about Amazon WorkSpaces Applications user authentication and authorization.

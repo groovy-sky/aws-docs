@@ -1,3 +1,7 @@
+---
+title: "Specify a Default Time Zone"
+---
+
 # Specify a Default Time Zone
 
 To specify a default time zone to be used in your users’ streaming sessions, perform

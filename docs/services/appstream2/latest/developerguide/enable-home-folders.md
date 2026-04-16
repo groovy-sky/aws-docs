@@ -1,3 +1,7 @@
+---
+title: "Enable Home Folders for Your WorkSpaces Applications Users"
+---
+
 # Enable Home Folders for Your WorkSpaces Applications Users
 
 Before enabling home folders, you must do the following:

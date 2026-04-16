@@ -1,3 +1,7 @@
+---
+title: "View the list of license included applications on your image builder"
+---
+
 # View the list of license included applications on your image builder
 
 ###### View the list of license included applications on your image builder

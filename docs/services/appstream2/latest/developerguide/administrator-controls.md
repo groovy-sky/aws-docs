@@ -1,3 +1,7 @@
+---
+title: "Administrator Controls"
+---
+
 # Administrator Controls
 
 WorkSpaces Applications provides administrative controls that you can use to limit the ways in which users can transfer data between their local computer and an WorkSpaces Applications fleet instance.

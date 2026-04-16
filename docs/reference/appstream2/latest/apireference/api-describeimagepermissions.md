@@ -1,3 +1,7 @@
+---
+title: "DescribeImagePermissions"
+---
+
 # DescribeImagePermissions
 
 Retrieves a list that describes the permissions for shared AWS account IDs on a private image that you own.

@@ -1,3 +1,7 @@
+---
+title: "Configure a Connection Method for Your WorkSpaces Applications Client Users"
+---
+
 # Configure a Connection Method for Your WorkSpaces Applications Client Users
 
 After you install the WorkSpaces Applications client on your users' local computers, they can use

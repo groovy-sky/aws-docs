@@ -1,3 +1,7 @@
+---
+title: "Enable updates for license included applications on image builder with Managed Image Update"
+---
+
 # Enable updates for license included applications on image builder with Managed Image Update
 
 To enable updates for license included applications on image builder with Managed

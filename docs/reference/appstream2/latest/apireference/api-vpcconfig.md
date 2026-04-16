@@ -1,3 +1,7 @@
+---
+title: "VpcConfig"
+---
+
 # VpcConfig
 
 Describes VPC configuration information for fleets and image builders.

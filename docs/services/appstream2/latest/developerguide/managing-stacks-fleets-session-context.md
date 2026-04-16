@@ -1,3 +1,7 @@
+---
+title: "Session Context in Amazon WorkSpaces Applications"
+---
+
 # Session Context in Amazon WorkSpaces Applications
 
 You can pass parameters to your streaming application by using either of the following

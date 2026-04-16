@@ -1,3 +1,7 @@
+---
+title: "ResourceError"
+---
+
 # ResourceError
 
 Describes a resource error.

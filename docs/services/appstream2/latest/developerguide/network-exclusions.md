@@ -1,3 +1,7 @@
+---
+title: "Network Exclusions"
+---
+
 # Network Exclusions
 
 The WorkSpaces Applications management network range ( `198.19.0.0/16`) and

@@ -1,3 +1,7 @@
+---
+title: "UpdateVpcIngressConnection"
+---
+
 # UpdateVpcIngressConnection
 
 ###### Important

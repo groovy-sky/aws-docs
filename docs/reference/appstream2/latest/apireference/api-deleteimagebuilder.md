@@ -1,3 +1,7 @@
+---
+title: "DeleteImageBuilder"
+---
+
 # DeleteImageBuilder
 
 Deletes the specified image builder and releases the capacity.

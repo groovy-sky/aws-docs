@@ -1,3 +1,7 @@
+---
+title: "Create an WorkSpaces Applications App Block"
+---
+
 # Create an WorkSpaces Applications App Block
 
 Follow these steps to create an app block with the WorkSpaces Applications packaging type.

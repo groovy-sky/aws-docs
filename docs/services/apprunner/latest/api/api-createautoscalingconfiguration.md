@@ -1,3 +1,7 @@
+---
+title: "CreateAutoScalingConfiguration"
+---
+
 # CreateAutoScalingConfiguration
 
 ###### Important

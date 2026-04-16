@@ -1,3 +1,7 @@
+---
+title: "How to Enable Local Printer Redirection"
+---
+
 # How to Enable Local Printer Redirection
 
 By default, local printer redirection is enabled when the WorkSpaces Applications client is

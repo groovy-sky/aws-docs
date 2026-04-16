@@ -1,3 +1,7 @@
+---
+title: "USB Devices"
+---
+
 # USB Devices
 
 The following sections provide information about WorkSpaces Applications support for USB

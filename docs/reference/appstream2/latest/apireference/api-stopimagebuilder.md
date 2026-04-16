@@ -1,3 +1,7 @@
+---
+title: "StopImageBuilder"
+---
+
 # StopImageBuilder
 
 Stops the specified image builder.

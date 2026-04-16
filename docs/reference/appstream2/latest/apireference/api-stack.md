@@ -1,3 +1,7 @@
+---
+title: "Stack"
+---
+
 # Stack
 
 Describes a stack.

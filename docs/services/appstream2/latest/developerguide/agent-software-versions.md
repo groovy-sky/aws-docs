@@ -1,3 +1,7 @@
+---
+title: "WorkSpaces Applications Agent Release Notes"
+---
+
 # WorkSpaces Applications Agent Release Notes
 
 The Amazon WorkSpaces Applications agent software runs on your streaming instances, enabling end users to
@@ -16,7 +20,15 @@ see [Tutorial: Create a Custom WorkSpaces Applications Image by Using the WorkSp
 The following table describes the latest updates that are available in released versions
 of the WorkSpaces Applications agent for Windows instances.
 
-Amazon WorkSpaces Applications agent versionChanges02-09-2026
+Amazon WorkSpaces Applications agent versionChanges03-30-2026
+
+- Resolves an idle disconnect issue for streaming sessions
+
+- 4K resolution support for WorkSpaces Pools
+
+- General bug fixes and improvements
+
+02-09-2026
 
 - Security patch for multisession S3 storage functionality
 

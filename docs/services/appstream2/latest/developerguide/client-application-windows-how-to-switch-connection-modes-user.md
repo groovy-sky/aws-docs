@@ -1,3 +1,7 @@
+---
+title: "How to Switch WorkSpaces Applications Connection Modes"
+---
+
 # How to Switch WorkSpaces Applications Connection Modes
 
 If your administrator has not disabled native application mode for your streaming sessions, you can switch between native application mode and classic mode.

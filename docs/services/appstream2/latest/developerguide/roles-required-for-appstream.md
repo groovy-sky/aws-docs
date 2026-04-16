@@ -1,3 +1,7 @@
+---
+title: "Roles Required for WorkSpaces Applications, Application Auto Scaling, and AWS Certificate Manager Private CA"
+---
+
 # Roles Required for WorkSpaces Applications, Application Auto Scaling, and AWS Certificate Manager Private CA
 
 In AWS, IAM roles are used to grant permissions to an AWS service so it can

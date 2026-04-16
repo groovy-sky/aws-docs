@@ -1,3 +1,7 @@
+---
+title: "Custom App Blocks"
+---
+
 # Custom App Blocks
 
 Elastic fleet streaming instances utilize applications that are installed on virtual

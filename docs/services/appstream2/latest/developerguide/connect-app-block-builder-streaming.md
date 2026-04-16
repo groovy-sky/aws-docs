@@ -1,3 +1,7 @@
+---
+title: "Streaming URL (Amazon WorkSpaces Applications Client or Browser Connection)"
+---
+
 # Streaming URL (Amazon WorkSpaces Applications Client or Browser Connection)
 
 You can create a streaming URL to connect to an app block builder through a

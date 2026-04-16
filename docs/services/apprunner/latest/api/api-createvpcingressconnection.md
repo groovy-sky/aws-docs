@@ -1,3 +1,7 @@
+---
+title: "CreateVpcIngressConnection"
+---
+
 # CreateVpcIngressConnection
 
 ###### Important

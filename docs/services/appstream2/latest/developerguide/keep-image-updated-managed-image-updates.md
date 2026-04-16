@@ -1,3 +1,7 @@
+---
+title: "Update an Image by Using Managed WorkSpaces Applications Image Updates"
+---
+
 # Update an Image by Using Managed WorkSpaces Applications Image Updates
 
 WorkSpaces Applications provides an automated way to update your image with the latest

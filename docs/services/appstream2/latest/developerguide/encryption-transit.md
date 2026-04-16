@@ -1,3 +1,7 @@
+---
+title: "Encryption in Transit"
+---
+
 # Encryption in Transit
 
 The following table provides information about how data is encrypted in transit. Where applicable, other data protection methods for WorkSpaces Applications are also listed.

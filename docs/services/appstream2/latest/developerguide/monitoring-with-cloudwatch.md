@@ -1,3 +1,7 @@
+---
+title: "WorkSpaces Applications Metrics and Dimensions"
+---
+
 # WorkSpaces Applications Metrics and Dimensions
 
 Amazon WorkSpaces Applications sends the following metrics and dimension information to Amazon CloudWatch.

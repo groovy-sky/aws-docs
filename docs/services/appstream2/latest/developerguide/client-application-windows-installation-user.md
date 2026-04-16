@@ -1,3 +1,7 @@
+---
+title: "Setup for Windows"
+---
+
 # Setup for Windows
 
 Follow these steps to install the client.

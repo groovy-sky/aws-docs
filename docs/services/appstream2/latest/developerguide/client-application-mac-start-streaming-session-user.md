@@ -1,3 +1,7 @@
+---
+title: "Connect to WorkSpaces Applications on macOS client"
+---
+
 # Connect to WorkSpaces Applications on macOS client
 
 After the WorkSpaces Applications client for macOS is installed on your PC, you can use it to

@@ -1,3 +1,7 @@
+---
+title: "Share an Image That You Own With Another AWS Account in Amazon WorkSpaces Applications"
+---
+
 # Share an Image That You Own With Another AWS Account in Amazon WorkSpaces Applications
 
 WorkSpaces Applications images are a regional resource, so you can share an image that you own with

@@ -1,3 +1,7 @@
+---
+title: "Group Policy Settings"
+---
+
 # Group Policy Settings
 
 Verify your configuration for the following Group Policy settings. If required, update the

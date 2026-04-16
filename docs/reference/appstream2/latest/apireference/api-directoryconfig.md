@@ -1,3 +1,7 @@
+---
+title: "DirectoryConfig"
+---
+
 # DirectoryConfig
 
 Describes the configuration information required to join fleets and image builders to Microsoft Active Directory domains.

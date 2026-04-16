@@ -1,3 +1,7 @@
+---
+title: "UpdateDefaultAutoScalingConfiguration"
+---
+
 # UpdateDefaultAutoScalingConfiguration
 
 ###### Important

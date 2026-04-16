@@ -1,3 +1,7 @@
+---
+title: "Additional Resources"
+---
+
 # Additional Resources
 
 For more information about managing Amazon S3 buckets and best practices, see the

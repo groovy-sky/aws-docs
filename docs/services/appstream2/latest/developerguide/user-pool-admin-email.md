@@ -1,3 +1,7 @@
+---
+title: "Re-Sending Welcome Email in Amazon WorkSpaces Applications"
+---
+
 # Re-Sending Welcome Email in Amazon WorkSpaces Applications
 
 You can re-send the welcome email with connection instructions to users in the

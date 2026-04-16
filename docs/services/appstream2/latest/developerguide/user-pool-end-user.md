@@ -1,3 +1,7 @@
+---
+title: "User Pool End User Experience for Amazon WorkSpaces Applications"
+---
+
 # User Pool End User Experience for Amazon WorkSpaces Applications
 
 The following steps summarize the initial connection experience for users in the user

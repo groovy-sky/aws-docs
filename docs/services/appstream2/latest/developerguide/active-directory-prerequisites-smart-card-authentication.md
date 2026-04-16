@@ -1,3 +1,7 @@
+---
+title: "Smart Card Authentication"
+---
+
 # Smart Card Authentication
 
 WorkSpaces Applications supports the use of Active Directory domain passwords or smart cards such as [Common Access Card (CAC)](https://www.cac.mil/Common-Access-Card)

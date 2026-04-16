@@ -1,3 +1,7 @@
+---
+title: "Key Concepts of Amazon WorkSpaces Applications"
+---
+
 # Key Concepts of Amazon WorkSpaces Applications
 
 To get the most out of WorkSpaces Applications, be familiar with the following concepts:

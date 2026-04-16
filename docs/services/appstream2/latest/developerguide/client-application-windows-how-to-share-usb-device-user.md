@@ -1,3 +1,7 @@
+---
+title: "How to Share a USB Device with WorkSpaces Applications"
+---
+
 # How to Share a USB Device with WorkSpaces Applications
 
 If you are using a drawing tablet, USB redirection might not be required to use it with WorkSpaces Applications. However, if

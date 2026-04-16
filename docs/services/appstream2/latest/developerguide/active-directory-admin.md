@@ -1,3 +1,7 @@
+---
+title: "WorkSpaces Applications Active Directory Administration"
+---
+
 # WorkSpaces Applications Active Directory Administration
 
 Setting up and using Active Directory with WorkSpaces Applications involves the following

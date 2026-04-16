@@ -1,3 +1,7 @@
+---
+title: "VpcDNSTarget"
+---
+
 # VpcDNSTarget
 
 DNS Target record for a custom domain of this Amazon VPC.

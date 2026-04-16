@@ -1,3 +1,7 @@
+---
+title: "Manage Certificate-based Authentication"
+---
+
 # Manage Certificate-based Authentication
 
 After you enable certificate-based authentication, review the following

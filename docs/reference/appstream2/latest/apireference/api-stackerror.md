@@ -1,3 +1,7 @@
+---
+title: "StackError"
+---
+
 # StackError
 
 Describes a stack error.

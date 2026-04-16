@@ -1,3 +1,7 @@
+---
+title: "WorkSpaces Applications Client Connection Modes"
+---
+
 # WorkSpaces Applications Client Connection Modes
 
 The WorkSpaces Applications client provides two connection modes: _Native_

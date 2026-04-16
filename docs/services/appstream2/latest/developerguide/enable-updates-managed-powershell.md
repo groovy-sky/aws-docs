@@ -1,3 +1,7 @@
+---
+title: "Enable updates for license included applications on image builder with Powershell"
+---
+
 # Enable updates for license included applications on image builder with Powershell
 
 To enable updates for license included applications on image builder with

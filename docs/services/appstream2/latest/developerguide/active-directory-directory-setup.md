@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Setting Up Active Directory"
+---
+
 # Tutorial: Setting Up Active Directory
 
 To use Active Directory with WorkSpaces Applications, you must first register your directory

@@ -1,3 +1,7 @@
+---
+title: "Example Authentication Workflow"
+---
+
 # Example Authentication Workflow
 
 The following diagram illustrates the authentication flow between WorkSpaces Applications and a

@@ -1,3 +1,7 @@
+---
+title: "Applications"
+---
+
 # Applications
 
 Applications contain the details necessary to launch your application after the VHD

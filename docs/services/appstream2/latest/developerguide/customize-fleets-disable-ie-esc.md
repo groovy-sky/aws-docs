@@ -1,3 +1,7 @@
+---
+title: "Disable Internet Explorer Enhanced Security Configuration in Amazon WorkSpaces Applications"
+---
+
 # Disable Internet Explorer Enhanced Security Configuration in Amazon WorkSpaces Applications
 
 Internet Explorer Enhanced Security Configuration (ESC) places servers and Internet

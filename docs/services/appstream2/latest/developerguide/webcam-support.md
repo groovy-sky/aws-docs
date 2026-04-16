@@ -1,3 +1,7 @@
+---
+title: "Enabling and Disabling Webcam Support"
+---
+
 # Enabling and Disabling Webcam Support
 
 WorkSpaces Applications supports real-time audio-video (AV) by redirecting local webcam video input to

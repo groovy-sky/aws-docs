@@ -1,3 +1,7 @@
+---
+title: "Management Network Interface IP Address Range and Ports in Amazon WorkSpaces Applications"
+---
+
 # Management Network Interface IP Address Range and Ports in Amazon WorkSpaces Applications
 
 The management network interface IP address range is 198.19.0.0/16. The following

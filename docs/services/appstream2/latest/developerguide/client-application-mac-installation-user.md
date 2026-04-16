@@ -1,3 +1,7 @@
+---
+title: "Setup and installation for macOS"
+---
+
 # Setup and installation for macOS
 
 Follow these steps to download and install the client application.

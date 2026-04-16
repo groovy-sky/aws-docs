@@ -1,3 +1,7 @@
+---
+title: "Touchscreen Device Support"
+---
+
 # Touchscreen Device Support
 
 WorkSpaces Applications supports gestures on touch-enabled iPads, Android tablets, and Windows devices. All touch events are passed through to the streaming session and handled according to Windows conventions. Examples of supported touch gestures include long-tap to right-click, swipe to scroll, pinch to zoom, and two-finger rotation for supporting applications.

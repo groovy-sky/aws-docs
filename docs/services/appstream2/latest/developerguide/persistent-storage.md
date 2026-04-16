@@ -1,3 +1,7 @@
+---
+title: "Enable and Administer Persistent Storage for Your WorkSpaces Applications Users"
+---
+
 # Enable and Administer Persistent Storage for Your WorkSpaces Applications Users
 
 Amazon WorkSpaces Applications supports the following persistent storage options for users in your

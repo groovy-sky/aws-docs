@@ -1,3 +1,7 @@
+---
+title: "SELinux on Red Hat Enterprise Linux and Rocky Linux"
+---
+
 # SELinux on Red Hat Enterprise Linux and Rocky Linux
 
 By default, Security Enhanced Linux (SELinux) is `enabled` and set to

@@ -1,3 +1,7 @@
+---
+title: "Use Home Folders"
+---
+
 # Use Home Folders
 
 If your WorkSpaces Applications administrator has enabled this file storage option, when you are signed in to an WorkSpaces Applications streaming session, you can use your home folder. You can do the following with your home folder:

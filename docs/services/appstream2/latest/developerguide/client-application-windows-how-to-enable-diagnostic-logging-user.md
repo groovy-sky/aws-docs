@@ -1,3 +1,7 @@
+---
+title: "Logging"
+---
+
 # Logging
 
 To help with troubleshooting if an issue with the WorkSpaces Applications client occurs, you

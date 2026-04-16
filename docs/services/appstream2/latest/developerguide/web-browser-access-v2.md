@@ -1,3 +1,7 @@
+---
+title: "WorkSpaces Applications Web Browser Access (Version 2)"
+---
+
 # WorkSpaces Applications Web Browser Access (Version 2)
 
 WorkSpaces Applications web browser access version 2 offers an enhanced end user experience,

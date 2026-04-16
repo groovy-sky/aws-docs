@@ -1,3 +1,7 @@
+---
+title: "Using Group Policy preferences"
+---
+
 # Using Group Policy preferences
 
 You can use Group Policy preferences to grant local administrator rights to

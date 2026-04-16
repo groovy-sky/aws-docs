@@ -1,3 +1,7 @@
+---
+title: "FIPS Endpoints for User Streaming Sessions"
+---
+
 # FIPS Endpoints for User Streaming Sessions
 
 If you use SAML 2.0 or a streaming URL to authenticate users, you can configure FIPS-compliant connections for your users' streaming sessions.

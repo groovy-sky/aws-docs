@@ -1,3 +1,7 @@
+---
+title: "Automatic and On-Demand Diagnostic Log Uploads"
+---
+
 # Automatic and On-Demand Diagnostic Log Uploads
 
 To help with troubleshooting issues that might occur when your users are using

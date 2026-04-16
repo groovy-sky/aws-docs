@@ -1,3 +1,7 @@
+---
+title: "CodeConfiguration"
+---
+
 # CodeConfiguration
 
 Describes the configuration that AWS App Runner uses to build and run an App Runner service from a source code repository.

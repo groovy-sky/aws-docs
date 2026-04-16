@@ -1,3 +1,7 @@
+---
+title: "About the Dynamic Application Framework"
+---
+
 # About the Dynamic Application Framework
 
 The dynamic application framework uses the [Apache Thrift software framework](https://thrift.apache.org/)

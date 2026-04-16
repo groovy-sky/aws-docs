@@ -1,3 +1,7 @@
+---
+title: "Certificate-Based Authentication"
+---
+
 # Certificate-Based Authentication
 
 You can use certificate-based authentication with WorkSpaces Applications fleets joined to Microsoft

@@ -1,3 +1,7 @@
+---
+title: "Update an Amazon WorkSpaces Applications Fleet"
+---
+
 # Update an Amazon WorkSpaces Applications Fleet
 
 You can make updates to an existing WorkSpaces Applications fleet.

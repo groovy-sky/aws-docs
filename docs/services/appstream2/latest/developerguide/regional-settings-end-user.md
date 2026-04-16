@@ -1,3 +1,7 @@
+---
+title: "Configure Regional Settings"
+---
+
 # Configure Regional Settings
 
 You can configure regional settings so that your WorkSpaces Applications Windows streaming sessions use

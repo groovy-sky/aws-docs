@@ -1,3 +1,7 @@
+---
+title: "CreateFleet"
+---
+
 # CreateFleet
 
 Creates a fleet. A fleet consists of streaming instances that your users access for their applications and desktops.

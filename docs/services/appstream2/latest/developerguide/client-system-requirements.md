@@ -1,3 +1,7 @@
+---
+title: "System Requirements and Considerations"
+---
+
 # System Requirements and Considerations
 
 The WorkSpaces Applications client requires the following:

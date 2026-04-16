@@ -1,3 +1,7 @@
+---
+title: "Home Folder Formats"
+---
+
 # Home Folder Formats
 
 The hierarchy of a user folder depends on how a user launches a streaming

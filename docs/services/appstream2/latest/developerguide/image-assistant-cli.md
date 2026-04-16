@@ -1,3 +1,7 @@
+---
+title: "Using the Image Assistant CLI Tool for Linux"
+---
+
 # Using the Image Assistant CLI Tool for Linux
 
 On a Linux-based image builder, you can use the Image Assistant CLI tool

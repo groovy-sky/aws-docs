@@ -1,3 +1,7 @@
+---
+title: "Multi-Session Recommendations"
+---
+
 # Multi-Session Recommendations
 
 When deciding the maximum number of user sessions on an instance in a multi-session

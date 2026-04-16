@@ -1,3 +1,7 @@
+---
+title: "ExpireSession"
+---
+
 # ExpireSession
 
 Immediately stops the specified streaming session.

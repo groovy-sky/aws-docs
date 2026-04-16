@@ -1,3 +1,7 @@
+---
+title: "Image Assistant CLI Operations for Creating and Managing Your Amazon WorkSpaces Applications Image"
+---
+
 # Image Assistant CLI Operations for Creating and Managing Your Amazon WorkSpaces Applications Image
 
 This section describes the Image Assistant CLI operations that you can use to create

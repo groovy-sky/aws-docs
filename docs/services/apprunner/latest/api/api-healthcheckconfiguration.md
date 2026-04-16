@@ -1,3 +1,7 @@
+---
+title: "HealthCheckConfiguration"
+---
+
 # HealthCheckConfiguration
 
 Describes the settings for the health check that AWS App Runner performs to monitor the health of a service.

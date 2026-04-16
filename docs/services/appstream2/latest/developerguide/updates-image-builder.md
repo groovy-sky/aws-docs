@@ -1,3 +1,7 @@
+---
+title: "Enable updates for license included applications on image builder"
+---
+
 # Enable updates for license included applications on image builder
 
 ###### Enable updates for license included applications on image builder

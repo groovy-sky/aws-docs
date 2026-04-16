@@ -1,3 +1,7 @@
+---
+title: "Step 4. Configure Your Website for Integration with Amazon WorkSpaces Applications"
+---
+
 # Step 4. Configure Your Website for Integration with Amazon WorkSpaces Applications
 
 The following sections provide information about how to configure your webpage to host embedded WorkSpaces Applications streaming sessions.

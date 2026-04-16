@@ -1,3 +1,7 @@
+---
+title: "How to Use a Smart Card During a Streaming Session"
+---
+
 # How to Use a Smart Card During a Streaming Session
 
 Depending on the authentication settings that your administrator has enabled,

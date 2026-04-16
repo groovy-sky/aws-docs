@@ -1,3 +1,7 @@
+---
+title: "CreateImageBuilder"
+---
+
 # CreateImageBuilder
 
 Creates an image builder. An image builder is a virtual machine that is used to create an image.

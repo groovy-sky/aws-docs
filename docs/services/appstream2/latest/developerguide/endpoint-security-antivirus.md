@@ -1,3 +1,7 @@
+---
+title: "Endpoint Security and Antivirus"
+---
+
 # Endpoint Security and Antivirus
 
 The brief ephemeral nature of WorkSpaces Applications instances and the lack of persistency

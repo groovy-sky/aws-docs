@@ -1,3 +1,7 @@
+---
+title: "Activate an App Block"
+---
+
 # Activate an App Block
 
 If an app block with WorkSpaces Applications packaging was created, but the application package

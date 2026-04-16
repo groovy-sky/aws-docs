@@ -1,3 +1,7 @@
+---
+title: "Get Started with Amazon WorkSpaces Applications: Set Up With Sample Applications"
+---
+
 # Get Started with Amazon WorkSpaces Applications: Set Up With Sample Applications
 
 To stream your applications, Amazon WorkSpaces Applications requires an environment that includes a fleet that is associated with a stack, and at least one application image. This tutorial describes how to configure a

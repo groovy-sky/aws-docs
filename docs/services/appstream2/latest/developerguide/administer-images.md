@@ -1,3 +1,7 @@
+---
+title: "Administer Your Amazon WorkSpaces Applications Images"
+---
+
 # Administer Your Amazon WorkSpaces Applications Images
 
 Available images are listed in the **Image**

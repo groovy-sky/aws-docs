@@ -1,3 +1,7 @@
+---
+title: "Create an App Block Builder"
+---
+
 # Create an App Block Builder
 
 You can use app block builder instance to create your application package for WorkSpaces Applications

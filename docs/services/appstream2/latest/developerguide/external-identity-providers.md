@@ -1,3 +1,7 @@
+---
+title: "Amazon WorkSpaces Applications Integration with SAML 2.0"
+---
+
 # Amazon WorkSpaces Applications Integration with SAML 2.0
 
 Amazon WorkSpaces Applications supports identity federation to WorkSpaces Applications stacks through Security Assertion Markup

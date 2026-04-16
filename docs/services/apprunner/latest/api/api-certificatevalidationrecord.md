@@ -1,3 +1,7 @@
+---
+title: "CertificateValidationRecord"
+---
+
 # CertificateValidationRecord
 
 Describes a certificate CNAME record to add to your DNS. For more information, see [AssociateCustomDomain](api-associatecustomdomain.md).

@@ -1,3 +1,7 @@
+---
+title: "CreateObservabilityConfiguration"
+---
+
 # CreateObservabilityConfiguration
 
 ###### Important

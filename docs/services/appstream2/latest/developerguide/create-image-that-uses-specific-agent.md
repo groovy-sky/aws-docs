@@ -1,3 +1,7 @@
+---
+title: "Create an Image That Uses a Specific Version of the WorkSpaces Applications Agent"
+---
+
 # Create an Image That Uses a Specific Version of the WorkSpaces Applications Agent
 
 You may want to control WorkSpaces Applications agent updates rather than always using the latest

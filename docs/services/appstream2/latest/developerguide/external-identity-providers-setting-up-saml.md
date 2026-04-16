@@ -1,3 +1,7 @@
+---
+title: "Setting Up SAML"
+---
+
 # Setting Up SAML
 
 To enable users to sign in to WorkSpaces Applications by using their existing credentials, and start

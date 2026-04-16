@@ -1,3 +1,7 @@
+---
+title: "More Info"
+---
+
 # More Info
 
 For more information related to this topic, see the following resources:

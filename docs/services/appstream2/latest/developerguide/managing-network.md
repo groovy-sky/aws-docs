@@ -1,3 +1,7 @@
+---
+title: "Networking and Access for Amazon WorkSpaces Applications"
+---
+
 # Networking and Access for Amazon WorkSpaces Applications
 
 The following topics provide information about enabling users to connect to WorkSpaces Applications

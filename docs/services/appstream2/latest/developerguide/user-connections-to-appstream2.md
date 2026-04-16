@@ -1,3 +1,7 @@
+---
+title: "User Connections to Amazon WorkSpaces Applications"
+---
+
 # User Connections to Amazon WorkSpaces Applications
 
 Users can connect to WorkSpaces Applications streaming instances through the default public

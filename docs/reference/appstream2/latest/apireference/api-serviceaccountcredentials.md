@@ -1,3 +1,7 @@
+---
+title: "ServiceAccountCredentials"
+---
+
 # ServiceAccountCredentials
 
 Describes the credentials for the service account used by the fleet or image builder to connect to the directory.

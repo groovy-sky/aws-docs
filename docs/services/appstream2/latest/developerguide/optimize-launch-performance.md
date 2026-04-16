@@ -1,3 +1,7 @@
+---
+title: "Optimizing the Launch Performance of Your Linux Applications"
+---
+
 # Optimizing the Launch Performance of Your Linux Applications
 
 If you are using the Image Assistant GUI tool, the tool optimizes launch performance

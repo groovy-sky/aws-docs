@@ -1,3 +1,7 @@
+---
+title: "Creating Session Scripts"
+---
+
 # Creating Session Scripts
 
 WorkSpaces Applications provides on-instance session scripts on both Windows- and Linux-based streaming

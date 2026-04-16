@@ -1,3 +1,7 @@
+---
+title: "ImageStateChangeReason"
+---
+
 # ImageStateChangeReason
 
 Describes the reason why the last image state change occurred.

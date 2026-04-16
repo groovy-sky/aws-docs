@@ -1,3 +1,7 @@
+---
+title: "Private CA Certificate"
+---
+
 # Private CA Certificate
 
 In a typical configuration, the private CA certificate has a validity period

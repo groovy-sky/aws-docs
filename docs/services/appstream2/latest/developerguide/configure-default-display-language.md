@@ -1,3 +1,7 @@
+---
+title: "Specify a Default Display Language"
+---
+
 # Specify a Default Display Language
 
 There are two ways to specify the default display language for your users’ streaming

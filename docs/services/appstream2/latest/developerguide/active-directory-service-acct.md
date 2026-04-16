@@ -1,3 +1,7 @@
+---
+title: "Updating the Service Account Used for Joining the Domain"
+---
+
 # Updating the Service Account Used for Joining the Domain
 
 To update the service account that WorkSpaces Applications uses for joining the domain, we

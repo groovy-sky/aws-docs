@@ -1,3 +1,7 @@
+---
+title: "Tagging Your Amazon WorkSpaces Applications Resources"
+---
+
 # Tagging Your Amazon WorkSpaces Applications Resources
 
 AWS enables you to assign metadata to your AWS resources in the form of tags. You can use

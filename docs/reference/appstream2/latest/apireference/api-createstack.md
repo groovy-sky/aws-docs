@@ -1,3 +1,7 @@
+---
+title: "CreateStack"
+---
+
 # CreateStack
 
 Creates a stack to start streaming applications to users. A stack consists of an associated fleet, user access policies, and storage configurations.

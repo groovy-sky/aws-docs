@@ -1,3 +1,7 @@
+---
+title: "Test Dynamic App Providers (Optional)"
+---
+
 # Test Dynamic App Providers (Optional)
 
 After you enable your dynamic app provider on an image builder, you can test

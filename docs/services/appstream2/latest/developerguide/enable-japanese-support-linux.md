@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Enable Japanese Support for Your Linux Images"
+---
+
 # Tutorial: Enable Japanese Support for Your Linux Images
 
 This tutorial describes how to enable Japanese support for a Linux image. This enables

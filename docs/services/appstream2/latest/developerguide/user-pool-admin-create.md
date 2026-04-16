@@ -1,3 +1,7 @@
+---
+title: "Creating a User in Amazon WorkSpaces Applications"
+---
+
 # Creating a User in Amazon WorkSpaces Applications
 
 You must enter a valid and unique email address for each new user within a Region.

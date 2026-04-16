@@ -1,3 +1,7 @@
+---
+title: "Using the local Administrators group on the image builder"
+---
+
 # Using the local Administrators group on the image builder
 
 To grant Active Directory users or groups local administrator rights on your

@@ -1,3 +1,7 @@
+---
+title: "Configure a New or Existing VPC with a Public Subnet"
+---
+
 # Configure a New or Existing VPC with a Public Subnet
 
 If you created your Amazon Web Services account after 2013-12-04, you have a [default VPC](default-vpc-with-public-subnet.md) in each AWS Region that includes default public subnets. However, you may want to create your own nondefault VPC or configure an existing VPC to use with WorkSpaces Applications. This topic describes how to configure a nondefault VPC and public subnet to use with WorkSpaces Applications.

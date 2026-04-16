@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a Custom Linux-Based WorkSpaces Applications Image"
+---
+
 # Tutorial: Create a Custom Linux-Based WorkSpaces Applications Image
 
 This tutorial describes how to create a custom Linux-based Amazon WorkSpaces Applications image that contains

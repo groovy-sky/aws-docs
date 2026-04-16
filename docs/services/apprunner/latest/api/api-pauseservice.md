@@ -1,3 +1,7 @@
+---
+title: "PauseService"
+---
+
 # PauseService
 
 ###### Important

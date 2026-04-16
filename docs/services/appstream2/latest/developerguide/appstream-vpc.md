@@ -1,3 +1,7 @@
+---
+title: "Configure a VPC for WorkSpaces Applications"
+---
+
 # Configure a VPC for WorkSpaces Applications
 
 When you set up WorkSpaces Applications, you must specify the virtual private cloud (VPC) and at least one subnet in which to launch your fleet instances and image builders. A VPC is a virtual network in your own logically isolated area within the

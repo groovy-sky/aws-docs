@@ -1,3 +1,7 @@
+---
+title: "Example: WorkSpaces Applications fleet machine role cross-service confused deputy prevention"
+---
+
 # Example: WorkSpaces Applications fleet machine role cross-service confused deputy prevention
 
 ###### Example `aws:SourceAccount` Conditional:

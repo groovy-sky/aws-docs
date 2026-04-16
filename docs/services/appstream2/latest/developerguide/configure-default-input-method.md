@@ -1,3 +1,7 @@
+---
+title: "Specify a Default Input Method"
+---
+
 # Specify a Default Input Method
 
 To specify a default input method to be used in your users’ streaming sessions,

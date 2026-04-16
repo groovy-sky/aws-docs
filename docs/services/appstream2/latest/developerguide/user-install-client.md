@@ -1,3 +1,7 @@
+---
+title: "Have Your Users Install the WorkSpaces Applications Client Themselves"
+---
+
 # Have Your Users Install the WorkSpaces Applications Client Themselves
 
 For step-by-step guidance that you can provide your users to help them install the

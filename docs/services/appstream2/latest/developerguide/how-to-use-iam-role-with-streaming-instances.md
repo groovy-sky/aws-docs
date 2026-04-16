@@ -1,3 +1,7 @@
+---
+title: "How to Use the IAM Role With WorkSpaces Applications Streaming Instances"
+---
+
 # How to Use the IAM Role With WorkSpaces Applications Streaming Instances
 
 After you create an IAM role, you can apply it to an image builder or fleet streaming instance when you launch the image builder or create a fleet. You can also apply an IAM role to existing fleets. For information about how to apply IAM role when you launch an image builder, see [Launch an Image Builder to Install and Configure Streaming Applications](tutorial-image-builder-create.md). For information about how to apply IAM role when you create a fleet, see [Create a Fleet in Amazon WorkSpaces Applications](set-up-stacks-fleets-create.md).

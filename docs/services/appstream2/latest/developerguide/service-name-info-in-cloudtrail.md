@@ -1,3 +1,7 @@
+---
+title: "WorkSpaces Applications Information in CloudTrail"
+---
+
 # WorkSpaces Applications Information in CloudTrail
 
 CloudTrail is enabled on your AWS account when you create the account. When supported event

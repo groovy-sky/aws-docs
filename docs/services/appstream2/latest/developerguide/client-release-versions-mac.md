@@ -1,3 +1,7 @@
+---
+title: "WorkSpaces Applications macOS Client Release Notes"
+---
+
 # WorkSpaces Applications macOS Client Release Notes
 
 The following table describes the latest updates that are available in released

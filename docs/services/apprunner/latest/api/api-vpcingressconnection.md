@@ -1,3 +1,7 @@
+---
+title: "VpcIngressConnection"
+---
+
 # VpcIngressConnection
 
 The AWS App Runner resource that specifies an App Runner endpoint for incoming traffic. It establishes a connection between a VPC interface endpoint and a App Runner

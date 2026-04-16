@@ -1,3 +1,7 @@
+---
+title: "Feature and Device Support"
+---
+
 # Feature and Device Support
 
 The WorkSpaces Applications client supports the following features and devices.

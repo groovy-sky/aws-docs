@@ -1,3 +1,7 @@
+---
+title: "Previewing Your Custom Branding Changes in Amazon WorkSpaces Applications"
+---
+
 # Previewing Your Custom Branding Changes in Amazon WorkSpaces Applications
 
 You can preview how your branding changes will appear to your users by applying your

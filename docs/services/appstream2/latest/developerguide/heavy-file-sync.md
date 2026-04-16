@@ -1,3 +1,7 @@
+---
+title: "Enabling and Disabling Heavy File Sync Mode for Home Folders"
+---
+
 # Enabling and Disabling Heavy File Sync Mode for Home Folders
 
 You can enable Amazon Simple Storage Service Home Folders options for your organization. When you

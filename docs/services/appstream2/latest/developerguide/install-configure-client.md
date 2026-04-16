@@ -1,3 +1,7 @@
+---
+title: "Install and Configure the WorkSpaces Applications Client"
+---
+
 # Install and Configure the WorkSpaces Applications Client
 
 You can have your users install the WorkSpaces Applications client themselves, or you can install the WorkSpaces Applications client for them by running PowerShell scripts remotely.

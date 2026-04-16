@@ -1,3 +1,7 @@
+---
+title: "Create a Fleet in Amazon WorkSpaces Applications"
+---
+
 # Create a Fleet in Amazon WorkSpaces Applications
 
 Set up and create a fleet from which user applications are launched and

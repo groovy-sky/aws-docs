@@ -1,3 +1,7 @@
+---
+title: "Amazon WorkSpaces Applications User Pools"
+---
+
 # Amazon WorkSpaces Applications User Pools
 
 The WorkSpaces Applications user pool provides a simplified way to manage access to applications for your

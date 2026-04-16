@@ -1,3 +1,7 @@
+---
+title: "Deleting the Amazon S3 Bucket for Home Folders and Application Settings Persistence"
+---
+
 # Deleting the Amazon S3 Bucket for Home Folders and Application Settings Persistence
 
 WorkSpaces Applications adds an Amazon S3 bucket policy to the buckets that it creates to prevent them from

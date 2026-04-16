@@ -1,3 +1,7 @@
+---
+title: "SAML 2.0"
+---
+
 # SAML 2.0
 
 Users enter the URL that you provide for them to access your internal

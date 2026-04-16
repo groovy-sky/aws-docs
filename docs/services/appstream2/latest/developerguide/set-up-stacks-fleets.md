@@ -1,3 +1,7 @@
+---
+title: "Create an Amazon WorkSpaces Applications Fleet and Stack"
+---
+
 # Create an Amazon WorkSpaces Applications Fleet and Stack
 
 To stream your applications, Amazon WorkSpaces Applications requires an environment that includes a fleet that

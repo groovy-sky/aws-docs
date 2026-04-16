@@ -1,3 +1,7 @@
+---
+title: "API Actions for Managing App Entitlement for WorkSpaces Applications"
+---
+
 # API Actions for Managing App Entitlement for WorkSpaces Applications
 
 You can use the following API operations to manage application entitlement for

@@ -1,3 +1,7 @@
+---
+title: "Enabling Users in Amazon WorkSpaces Applications"
+---
+
 # Enabling Users in Amazon WorkSpaces Applications
 
 You can enable one or more users in the user pool, one at a time. After they are

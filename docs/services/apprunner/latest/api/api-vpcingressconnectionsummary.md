@@ -1,3 +1,7 @@
+---
+title: "VpcIngressConnectionSummary"
+---
+
 # VpcIngressConnectionSummary
 
 Provides summary information about an VPC Ingress Connection, which includes its VPC Ingress Connection ARN and its associated Service ARN.

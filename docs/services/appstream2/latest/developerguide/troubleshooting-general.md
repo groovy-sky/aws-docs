@@ -1,3 +1,7 @@
+---
+title: "General Troubleshooting"
+---
+
 # General Troubleshooting
 
 The following are general issues that might occur when you use Amazon WorkSpaces Applications.

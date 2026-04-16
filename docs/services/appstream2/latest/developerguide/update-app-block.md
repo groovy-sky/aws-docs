@@ -1,3 +1,7 @@
+---
+title: "Update the App Block, VHD, and Setup Script"
+---
+
 # Update the App Block, VHD, and Setup Script
 
 App block resources are immutable and do not allow you to change them once

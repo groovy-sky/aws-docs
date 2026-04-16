@@ -1,3 +1,7 @@
+---
+title: "Step 2: Create a Streaming URL for User Authentication"
+---
+
 # Step 2: Create a Streaming URL for User Authentication
 
 You must create a streaming URL to authenticate users for embedded WorkSpaces Applications streaming

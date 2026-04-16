@@ -1,3 +1,7 @@
+---
+title: "Create and Configure a New VPC"
+---
+
 # Create and Configure a New VPC
 
 This topic describes how to use the VPC wizard to create a VPC with a

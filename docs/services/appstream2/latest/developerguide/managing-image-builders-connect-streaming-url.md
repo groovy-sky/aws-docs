@@ -1,3 +1,7 @@
+---
+title: "Streaming URL (WorkSpaces Applications Client or Web Connection)"
+---
+
 # Streaming URL (WorkSpaces Applications Client or Web Connection)
 
 You can create a streaming URL to connect to an image builder through a web

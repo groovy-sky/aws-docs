@@ -1,3 +1,7 @@
+---
+title: "Access WorkSpaces Applications API Operations and CLI Commands Through an Interface VPC Endpoint"
+---
+
 # Access WorkSpaces Applications API Operations and CLI Commands Through an Interface VPC Endpoint
 
 If you use Amazon Virtual Private Cloud to host your AWS resources, you can connect directly to WorkSpaces Applications API operations or command line interface (CLI) commands through an [interface VPC\

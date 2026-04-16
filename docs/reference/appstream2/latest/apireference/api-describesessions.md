@@ -1,3 +1,7 @@
+---
+title: "DescribeSessions"
+---
+
 # DescribeSessions
 
 Retrieves a list that describes the streaming sessions for a specified stack and fleet. If a UserId is provided for the stack and fleet,

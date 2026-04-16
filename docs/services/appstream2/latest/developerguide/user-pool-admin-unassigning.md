@@ -1,3 +1,7 @@
+---
+title: "Unassigning Stacks from Users in Amazon WorkSpaces Applications"
+---
+
 # Unassigning Stacks from Users in Amazon WorkSpaces Applications
 
 You can unassign a stack from one or more users in the user pool. After a stack is

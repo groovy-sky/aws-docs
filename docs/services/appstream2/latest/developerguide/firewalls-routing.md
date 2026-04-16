@@ -1,3 +1,7 @@
+---
+title: "Firewalls and Routing"
+---
+
 # Firewalls and Routing
 
 When creating an WorkSpaces Applications fleet, subnets and a Security Group must be assigned.

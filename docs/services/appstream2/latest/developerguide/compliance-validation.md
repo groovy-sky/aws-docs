@@ -1,3 +1,7 @@
+---
+title: "Compliance Validation for Amazon WorkSpaces Applications"
+---
+
 # Compliance Validation for Amazon WorkSpaces Applications
 
 Third-party auditors assess the security and compliance of Amazon WorkSpaces Applications as part of

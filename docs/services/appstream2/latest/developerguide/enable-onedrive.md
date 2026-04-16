@@ -1,3 +1,7 @@
+---
+title: "Enable OneDrive for Your WorkSpaces Applications Users"
+---
+
 # Enable OneDrive for Your WorkSpaces Applications Users
 
 Before enabling OneDrive, you must do the following:

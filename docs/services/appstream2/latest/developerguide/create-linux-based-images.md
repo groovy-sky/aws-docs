@@ -1,3 +1,7 @@
+---
+title: "Create Your Linux-Based Images"
+---
+
 # Create Your Linux-Based Images
 
 You can create Linux-based Amazon WorkSpaces Applications images by connecting to a Linux image builder,

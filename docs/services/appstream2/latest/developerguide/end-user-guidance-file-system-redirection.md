@@ -1,3 +1,7 @@
+---
+title: "Provide Your WorkSpaces Applications Users with Guidance for Working with File System Redirection"
+---
+
 # Provide Your WorkSpaces Applications Users with Guidance for Working with File System Redirection
 
 To help your users understand how to work with file redirection during their

@@ -1,3 +1,7 @@
+---
+title: "Add Your Custom Branding to Amazon WorkSpaces Applications"
+---
+
 # Add Your Custom Branding to Amazon WorkSpaces Applications
 
 To create a familiar experience for your users when they stream applications, you can

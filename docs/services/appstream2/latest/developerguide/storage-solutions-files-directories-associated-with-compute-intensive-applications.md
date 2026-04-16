@@ -1,3 +1,7 @@
+---
+title: "Files and Directories Associated with Compute-Intensive Applications"
+---
+
 # Files and Directories Associated with Compute-Intensive Applications
 
 During WorkSpaces Applications streaming sessions, saving large files and directories associated

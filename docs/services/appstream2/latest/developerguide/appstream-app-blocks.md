@@ -1,3 +1,7 @@
+---
+title: "WorkSpaces Applications App Blocks"
+---
+
 # WorkSpaces Applications App Blocks
 
 Elastic fleet streaming instances utilize applications that are installed on virtual

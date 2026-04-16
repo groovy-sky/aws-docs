@@ -1,3 +1,7 @@
+---
+title: "DescribeVpcConnector"
+---
+
 # DescribeVpcConnector
 
 ###### Important

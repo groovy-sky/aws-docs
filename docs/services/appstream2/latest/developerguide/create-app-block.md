@@ -1,3 +1,7 @@
+---
+title: "Create a Custom App Block"
+---
+
 # Create a Custom App Block
 
 You can use the WorkSpaces Applications console to create the app block resource once you have your

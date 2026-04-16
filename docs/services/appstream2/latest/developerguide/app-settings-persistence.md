@@ -1,3 +1,7 @@
+---
+title: "Enable Application Settings Persistence for Your WorkSpaces Applications Users"
+---
+
 # Enable Application Settings Persistence for Your WorkSpaces Applications Users
 
 WorkSpaces Applications supports persistent application settings for Windows-based stacks. This means that

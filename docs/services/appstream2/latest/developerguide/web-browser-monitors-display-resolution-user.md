@@ -1,3 +1,7 @@
+---
+title: "Monitors and Display Resolution"
+---
+
 # Monitors and Display Resolution
 
 WorkSpaces Applications supports the use of multiple monitors during streaming sessions,
