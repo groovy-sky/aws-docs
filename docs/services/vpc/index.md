@@ -1,3 +1,7 @@
+---
+title: "Amazon Virtual Private Cloud Documentation"
+---
+
 # Amazon Virtual Private Cloud Documentation
 
 Amazon Virtual Private Cloud (Amazon VPC) enables you to provision a logically isolated
