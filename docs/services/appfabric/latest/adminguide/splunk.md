@@ -1,3 +1,7 @@
+---
+title: "Splunk"
+---
+
 # Splunk
 
 Splunk helps make organizations more resilient. Leading organizations use

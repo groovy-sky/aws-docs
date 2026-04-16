@@ -1,3 +1,7 @@
+---
+title: "Creating a multi-variant feature flag"
+---
+
 # Creating a multi-variant feature flag
 
 Use the procedures in this section to create variants of a feature flag.

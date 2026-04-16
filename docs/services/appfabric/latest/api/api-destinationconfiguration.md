@@ -1,3 +1,7 @@
+---
+title: "DestinationConfiguration"
+---
+
 # DestinationConfiguration
 
 Contains information about the destination of ingested data.

@@ -1,3 +1,7 @@
+---
+title: "Singularity Cloud"
+---
+
 # Singularity Cloud
 
 The Singularity Cloud platform protects your enterprise from threats of all

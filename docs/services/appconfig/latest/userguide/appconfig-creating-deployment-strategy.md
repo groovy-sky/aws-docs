@@ -1,3 +1,7 @@
+---
+title: "Working with deployment strategies"
+---
+
 # Working with deployment strategies
 
 A deployment strategy enables you to slowly release changes to all targets or specific segments over minutes or hours—either session based or along your own target dimension by leveraging entity-based deployments.

@@ -1,3 +1,7 @@
+---
+title: "ExtensionAssociationSummary"
+---
+
 # ExtensionAssociationSummary
 
 Information about an association between an extension and an AWS AppConfig

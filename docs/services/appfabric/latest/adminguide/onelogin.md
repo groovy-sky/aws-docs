@@ -1,3 +1,7 @@
+---
+title: "Configure OneLogin by One Identity for AppFabric"
+---
+
 # Configure OneLogin by One Identity for AppFabric
 
 OneLogin by One Identity is a modern, cloud-based access management

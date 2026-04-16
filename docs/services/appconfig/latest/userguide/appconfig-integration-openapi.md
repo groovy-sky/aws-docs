@@ -1,3 +1,7 @@
+---
+title: "Generating a client using the OpenAPI specification"
+---
+
 # Generating a client using the OpenAPI specification
 
 You can use the following YAML specification for OpenAPI to create an SDK using a tool

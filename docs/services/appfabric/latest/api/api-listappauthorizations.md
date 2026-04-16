@@ -1,3 +1,7 @@
+---
+title: "ListAppAuthorizations"
+---
+
 # ListAppAuthorizations
 
 Returns a list of all app authorizations configured for an app bundle.

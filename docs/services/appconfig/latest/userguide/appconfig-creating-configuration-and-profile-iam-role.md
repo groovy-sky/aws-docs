@@ -1,3 +1,7 @@
+---
+title: "Understanding the configuration profile IAM role"
+---
+
 # Understanding the configuration profile IAM role
 
 You can create the IAM role that provides access to the configuration data by using

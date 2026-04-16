@@ -1,3 +1,7 @@
+---
+title: "Barracuda XDR"
+---
+
 # Barracuda XDR
 
 Barracuda Networks is a trusted partner and leading provider of

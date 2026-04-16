@@ -1,3 +1,7 @@
+---
+title: "ConnectAppAuthorization"
+---
+
 # ConnectAppAuthorization
 
 Establishes a connection between AWS AppFabric and an application, which allows AppFabric to

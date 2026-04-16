@@ -1,3 +1,7 @@
+---
+title: "Configure Zendesk for AppFabric"
+---
+
 # Configure Zendesk for AppFabric
 
 Zendesk started the customer experience revolution in 2007 by enabling any

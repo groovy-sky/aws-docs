@@ -1,3 +1,7 @@
+---
+title: "ValidateConfiguration"
+---
+
 # ValidateConfiguration
 
 Uses the validators in a configuration profile to validate a configuration.

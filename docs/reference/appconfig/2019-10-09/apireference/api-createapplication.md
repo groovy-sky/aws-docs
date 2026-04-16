@@ -1,3 +1,7 @@
+---
+title: "CreateApplication"
+---
+
 # CreateApplication
 
 Creates an application. In AWS AppConfig, an application is simply an

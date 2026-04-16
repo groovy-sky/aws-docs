@@ -1,3 +1,7 @@
+---
+title: "IngestionSummary"
+---
+
 # IngestionSummary
 
 Contains a summary of an ingestion.

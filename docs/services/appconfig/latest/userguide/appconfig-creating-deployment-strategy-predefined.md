@@ -1,3 +1,7 @@
+---
+title: "Using predefined deployment strategies"
+---
+
 # Using predefined deployment strategies
 
 AWS AppConfig includes predefined deployment strategies to help you quickly deploy a

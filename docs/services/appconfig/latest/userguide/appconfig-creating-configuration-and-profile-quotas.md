@@ -1,3 +1,7 @@
+---
+title: "Understanding configuration store quotas and limitations"
+---
+
 # Understanding configuration store quotas and limitations
 
 Configuration stores supported by AWS AppConfig have the following quotas and

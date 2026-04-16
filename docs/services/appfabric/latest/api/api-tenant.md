@@ -1,3 +1,7 @@
+---
+title: "Tenant"
+---
+
 # Tenant
 
 Contains information about an application tenant.

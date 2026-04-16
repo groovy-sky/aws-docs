@@ -1,3 +1,7 @@
+---
+title: "StopDeployment"
+---
+
 # StopDeployment
 
 Stops a deployment. This API action works only on deployments that have a status of

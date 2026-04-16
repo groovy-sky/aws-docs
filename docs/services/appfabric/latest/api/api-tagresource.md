@@ -1,3 +1,7 @@
+---
+title: "TagResource"
+---
+
 # TagResource
 
 Assigns one or more tags (key-value pairs) to the specified resource.

@@ -1,3 +1,7 @@
+---
+title: "Configure Salesforce for AppFabric"
+---
+
 # Configure Salesforce for AppFabric
 
 Salesforce makes cloud-based software designed to help businesses find more

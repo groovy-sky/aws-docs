@@ -1,3 +1,7 @@
+---
+title: "TaskError"
+---
+
 # TaskError
 
 Contains information about an error returned from a user access task.

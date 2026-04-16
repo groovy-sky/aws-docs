@@ -1,3 +1,7 @@
+---
+title: "Using the AWS AppConfig deployment events to Amazon SQS extension"
+---
+
 # Using the AWS AppConfig deployment events to Amazon SQS extension
 
 The `AWS AppConfig deployment events to Amazon SQS` extension is an AWS authored

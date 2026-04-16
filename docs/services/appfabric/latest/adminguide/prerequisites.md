@@ -1,3 +1,7 @@
+---
+title: "Prerequisites and recommendations to use AWS AppFabric"
+---
+
 # Prerequisites and recommendations to use AWS AppFabric
 
 If you're a new AWS customer, complete the setup prerequisites that are listed on this

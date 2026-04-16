@@ -1,3 +1,7 @@
+---
+title: "DeleteIngestionDestination"
+---
+
 # DeleteIngestionDestination
 
 Deletes an ingestion destination.

@@ -1,3 +1,7 @@
+---
+title: "How to use AWS AppConfig Agent to retrieve configuration data"
+---
+
 # How to use AWS AppConfig Agent to retrieve configuration data
 
 The AWS AppConfig Agent is the recommended method for retrieving AWS AppConfig feature flags or free

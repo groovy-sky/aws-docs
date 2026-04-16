@@ -1,3 +1,7 @@
+---
+title: "GetConfigurationProfile"
+---
+
 # GetConfigurationProfile
 
 Retrieves information about a configuration profile.

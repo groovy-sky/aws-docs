@@ -1,3 +1,7 @@
+---
+title: "Configure Microsoft 365 for AppFabric"
+---
+
 # Configure Microsoft 365 for AppFabric
 
 Microsoft 365 is a product family of productivity software, collaboration,

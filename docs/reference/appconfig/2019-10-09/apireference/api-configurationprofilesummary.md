@@ -1,3 +1,7 @@
+---
+title: "ConfigurationProfileSummary"
+---
+
 # ConfigurationProfileSummary
 
 A summary of a configuration profile.

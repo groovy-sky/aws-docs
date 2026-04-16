@@ -1,3 +1,7 @@
+---
+title: "GetIngestionDestination"
+---
+
 # GetIngestionDestination
 
 Returns information about an ingestion destination.

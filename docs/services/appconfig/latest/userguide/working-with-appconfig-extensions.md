@@ -1,3 +1,7 @@
+---
+title: "Extending AWS AppConfig workflows using extensions"
+---
+
 # Extending AWS AppConfig workflows using extensions
 
 An extension augments your ability to inject logic or behavior at different points during

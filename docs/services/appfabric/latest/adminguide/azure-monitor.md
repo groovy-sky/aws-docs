@@ -1,3 +1,7 @@
+---
+title: "Configure Azure Monitor for AppFabric"
+---
+
 # Configure Azure Monitor for AppFabric
 
 Azure Monitor is a comprehensive monitoring solution for collecting,

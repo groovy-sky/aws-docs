@@ -1,3 +1,7 @@
+---
+title: "Understanding multi-variant feature flag concepts and common use cases"
+---
+
 # Understanding multi-variant feature flag concepts and common use cases
 
 To help you better understand feature flag variants, this section explains flag

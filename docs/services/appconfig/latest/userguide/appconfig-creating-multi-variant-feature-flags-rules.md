@@ -1,3 +1,7 @@
+---
+title: "Understanding multi-variant feature flag rules"
+---
+
 # Understanding multi-variant feature flag rules
 
 When you create a feature flag variant, you specify a rule for it. Rules are

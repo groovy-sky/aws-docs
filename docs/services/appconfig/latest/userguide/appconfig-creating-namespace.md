@@ -1,3 +1,7 @@
+---
+title: "Creating a namespace for your application in AWS AppConfig"
+---
+
 # Creating a namespace for your application in AWS AppConfig
 
 The procedures in this section help you create an AWS AppConfig artifact called an application.

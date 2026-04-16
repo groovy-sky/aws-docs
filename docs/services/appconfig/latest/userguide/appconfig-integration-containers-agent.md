@@ -1,3 +1,7 @@
+---
+title: "Using AWS AppConfig Agent with Amazon ECS and Amazon EKS"
+---
+
 # Using AWS AppConfig Agent with Amazon ECS and Amazon EKS
 
 You can integrate AWS AppConfig with Amazon Elastic Container Service (Amazon ECS) and Amazon Elastic Kubernetes Service (Amazon EKS) by using AWS AppConfig Agent.

@@ -1,3 +1,7 @@
+---
+title: "DeleteConfigurationProfile"
+---
+
 # DeleteConfigurationProfile
 
 Deletes a configuration profile.

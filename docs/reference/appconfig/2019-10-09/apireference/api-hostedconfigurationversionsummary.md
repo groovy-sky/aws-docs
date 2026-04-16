@@ -1,3 +1,7 @@
+---
+title: "HostedConfigurationVersionSummary"
+---
+
 # HostedConfigurationVersionSummary
 
 Information about the configuration.

@@ -1,3 +1,7 @@
+---
+title: "ListTagsForResource"
+---
+
 # ListTagsForResource
 
 Retrieves the list of key-value tags assigned to the resource.

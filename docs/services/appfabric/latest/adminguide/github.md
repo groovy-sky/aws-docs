@@ -1,3 +1,7 @@
+---
+title: "Configure GitHub for AppFabric"
+---
+
 # Configure GitHub for AppFabric
 
 GitHub is a platform and cloud-based service for software development and

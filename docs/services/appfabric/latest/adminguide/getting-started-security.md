@@ -1,3 +1,7 @@
+---
+title: "Get started with AWS AppFabric for security"
+---
+
 # Get started with AWS AppFabric for security
 
 To get started with AWS AppFabric for security, you must first create an app bundle and then

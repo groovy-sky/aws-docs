@@ -1,6 +1,14 @@
+---
+title: "StartDeployment"
+---
+
 # StartDeployment
 
 Starts a deployment.
+
+###### Note
+
+AWS AppConfig Agent supports deploying feature flag or free-form configuration data to specific segments or individual users during a gradual rollout. Entity-based gradual deployments ensure that once a user or segment receives a configuration version, they continue to receive that same version throughout the deployment period, regardless of which compute resource serves their requests. For more information, see [Using AWS AppConfig Agent for user-based or entity-based gradual deployments](../../../../services/appconfig/latest/userguide/appconfig-agent-how-to-use.md#appconfig-entity-based-gradual-deployments)
 
 ## Request Syntax
 

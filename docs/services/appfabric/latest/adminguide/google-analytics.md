@@ -1,3 +1,7 @@
+---
+title: "Configure Google Analytics for AppFabric"
+---
+
 # Configure Google Analytics for AppFabric
 
 Google Analytics is a web analytics service that provides statistics and

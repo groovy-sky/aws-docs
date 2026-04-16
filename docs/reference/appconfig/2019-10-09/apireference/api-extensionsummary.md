@@ -1,3 +1,7 @@
+---
+title: "ExtensionSummary"
+---
+
 # ExtensionSummary
 
 Information about an extension. Call `GetExtension` to get more information

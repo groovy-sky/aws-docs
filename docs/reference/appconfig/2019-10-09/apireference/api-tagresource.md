@@ -1,3 +1,7 @@
+---
+title: "TagResource"
+---
+
 # TagResource
 
 Assigns metadata to an AWS AppConfig resource. Tags help organize and categorize

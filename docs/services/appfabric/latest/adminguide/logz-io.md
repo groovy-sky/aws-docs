@@ -1,3 +1,7 @@
+---
+title: "Logz.io"
+---
+
 # Logz.io
 
 Logz.io helps cloud native businesses monitor and secure their environments

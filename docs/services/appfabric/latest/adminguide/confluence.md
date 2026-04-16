@@ -1,3 +1,7 @@
+---
+title: "Configure Atlassian Confluence for AppFabric"
+---
+
 # Configure Atlassian Confluence for AppFabric
 
 Create, collaborate, and organize all your work in one place. Confluence is

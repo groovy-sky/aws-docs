@@ -1,3 +1,7 @@
+---
+title: "IngestionDestinationSummary"
+---
+
 # IngestionDestinationSummary
 
 Contains a summary of an ingestion destination.

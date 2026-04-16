@@ -1,3 +1,7 @@
+---
+title: "ListApplications"
+---
+
 # ListApplications
 
 Lists all applications in your AWS account.

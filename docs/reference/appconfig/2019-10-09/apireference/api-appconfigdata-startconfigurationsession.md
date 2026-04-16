@@ -1,3 +1,7 @@
+---
+title: "StartConfigurationSession"
+---
+
 # StartConfigurationSession
 
 Starts a configuration session used to retrieve a deployed configuration. For more

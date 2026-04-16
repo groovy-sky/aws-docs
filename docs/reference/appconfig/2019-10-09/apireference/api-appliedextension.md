@@ -1,3 +1,7 @@
+---
+title: "AppliedExtension"
+---
+
 # AppliedExtension
 
 An extension that was invoked during a deployment.

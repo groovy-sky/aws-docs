@@ -1,3 +1,7 @@
+---
+title: "Creating a feature flag configuration profile in AWS AppConfig"
+---
+
 # Creating a feature flag configuration profile in AWS AppConfig
 
 You can use feature flags to enable or disable features within your applications or to

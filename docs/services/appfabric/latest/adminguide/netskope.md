@@ -1,3 +1,7 @@
+---
+title: "Netskope"
+---
+
 # Netskope
 
 Netskope, a global cybersecurity leader, is redefining cloud, data, and

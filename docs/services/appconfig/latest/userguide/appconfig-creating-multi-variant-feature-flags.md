@@ -1,3 +1,7 @@
+---
+title: "Creating multi-variant feature flags"
+---
+
 # Creating multi-variant feature flags
 
 Feature flag variants enable you to define a set of possible flag values to return for

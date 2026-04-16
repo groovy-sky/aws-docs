@@ -1,3 +1,7 @@
+---
+title: "Using a manifest to enable additional retrieval features"
+---
+
 # Using a manifest to enable additional retrieval features
 
 AWS AppConfig Agent offers the following additional features to help you retrieve

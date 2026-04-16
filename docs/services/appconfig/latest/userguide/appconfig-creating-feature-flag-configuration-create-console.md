@@ -1,3 +1,7 @@
+---
+title: "Creating a feature flag configuration profile (console)"
+---
+
 # Creating a feature flag configuration profile (console)
 
 Use the following procedure to create an AWS AppConfig feature flag configuration profile by

@@ -1,3 +1,7 @@
+---
+title: "NetWitness"
+---
+
 # NetWitness
 
 NetWitness is a leading developer of extended detection and response (XDR)

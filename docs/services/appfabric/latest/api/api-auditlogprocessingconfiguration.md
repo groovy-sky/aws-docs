@@ -1,3 +1,7 @@
+---
+title: "AuditLogProcessingConfiguration"
+---
+
 # AuditLogProcessingConfiguration
 
 Contains information about an audit log processing configuration.

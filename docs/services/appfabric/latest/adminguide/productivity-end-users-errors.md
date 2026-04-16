@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot end user errors in AppFabric for productivity"
+---
+
 # Troubleshoot end user errors in AppFabric for productivity
 
 The AWS AppFabric for productivity feature is in preview and is subject to change.

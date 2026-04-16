@@ -1,3 +1,7 @@
+---
+title: "AppAuthorizationSummary"
+---
+
 # AppAuthorizationSummary
 
 Contains a summary of an app authorization.

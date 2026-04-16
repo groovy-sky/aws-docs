@@ -1,3 +1,7 @@
+---
+title: "GetEnvironment"
+---
+
 # GetEnvironment
 
 Retrieves information about an environment. An environment is a deployment group of

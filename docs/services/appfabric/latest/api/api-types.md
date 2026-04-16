@@ -1,3 +1,7 @@
+---
+title: "Data Types"
+---
+
 # Data Types
 
 The AppFabric API contains several data types that various actions use. This section describes each data type in detail.

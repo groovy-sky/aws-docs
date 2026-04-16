@@ -1,3 +1,7 @@
+---
+title: "CreateHostedConfigurationVersion"
+---
+
 # CreateHostedConfigurationVersion
 
 Creates a new configuration in the AWS AppConfig hosted configuration store. If

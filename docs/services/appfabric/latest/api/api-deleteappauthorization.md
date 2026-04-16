@@ -1,3 +1,7 @@
+---
+title: "DeleteAppAuthorization"
+---
+
 # DeleteAppAuthorization
 
 Deletes an app authorization. You must delete the associated ingestion before you can

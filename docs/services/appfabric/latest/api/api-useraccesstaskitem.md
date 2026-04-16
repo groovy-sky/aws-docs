@@ -1,3 +1,7 @@
+---
+title: "UserAccessTaskItem"
+---
+
 # UserAccessTaskItem
 
 Contains information about a user access task.

@@ -1,3 +1,7 @@
+---
+title: "DeleteDeploymentStrategy"
+---
+
 # DeleteDeploymentStrategy
 
 Deletes a deployment strategy.

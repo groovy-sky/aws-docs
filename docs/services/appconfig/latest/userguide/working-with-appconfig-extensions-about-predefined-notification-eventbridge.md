@@ -1,3 +1,7 @@
+---
+title: "Using the AWS AppConfig deployment events to Amazon EventBridge extension"
+---
+
 # Using the AWS AppConfig deployment events to Amazon EventBridge extension
 
 The `AWS AppConfig deployment events to Amazon EventBridge` extension is an AWS authored

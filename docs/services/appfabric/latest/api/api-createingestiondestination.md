@@ -1,3 +1,7 @@
+---
+title: "CreateIngestionDestination"
+---
+
 # CreateIngestionDestination
 
 Creates an ingestion destination, which specifies how an application's ingested data is

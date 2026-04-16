@@ -1,3 +1,7 @@
+---
+title: "Configure 1Password for AppFabric"
+---
+
 # Configure 1Password for AppFabric
 
 1Password is a password manager that helps you create, store, and use

@@ -1,3 +1,7 @@
+---
+title: "Document history for the AppFabric Administration Guide"
+---
+
 # Document history for the AppFabric Administration Guide
 
 The following table describes the documentation releases for AWS AppFabric.

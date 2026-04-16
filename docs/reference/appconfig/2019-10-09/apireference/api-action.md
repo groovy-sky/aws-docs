@@ -1,3 +1,7 @@
+---
+title: "Action"
+---
+
 # Action
 
 An action defines the tasks that the extension performs during the AWS AppConfig

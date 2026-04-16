@@ -1,3 +1,7 @@
+---
+title: "Manage access to AppFabric for productivity (preview) features for IT and security administrators"
+---
+
 # Manage access to AppFabric for productivity (preview) features for IT and security administrators
 
 The AWS AppFabric for productivity feature is in preview and is subject to change.

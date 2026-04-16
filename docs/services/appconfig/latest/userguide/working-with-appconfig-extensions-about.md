@@ -1,3 +1,7 @@
+---
+title: "Understanding AWS AppConfig extensions"
+---
+
 # Understanding AWS AppConfig extensions
 
 This topic introduces AWS AppConfig extension concepts and terminology. The information is

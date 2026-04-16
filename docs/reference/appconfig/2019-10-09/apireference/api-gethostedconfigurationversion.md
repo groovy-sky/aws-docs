@@ -1,3 +1,7 @@
+---
+title: "GetHostedConfigurationVersion"
+---
+
 # GetHostedConfigurationVersion
 
 Retrieves information about a specific configuration version.

@@ -1,3 +1,7 @@
+---
+title: "Amazon Quick"
+---
+
 # Amazon Quick
 
 Amazon Quick powers data-driven organizations with unified business intelligence (BI) at

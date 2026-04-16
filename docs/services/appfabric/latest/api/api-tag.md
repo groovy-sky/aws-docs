@@ -1,3 +1,7 @@
+---
+title: "Tag"
+---
+
 # Tag
 
 The key or keys of the key-value pairs for the tag or tags assigned to a

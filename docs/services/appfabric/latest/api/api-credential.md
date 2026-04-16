@@ -1,3 +1,7 @@
+---
+title: "Credential"
+---
+
 # Credential
 
 Contains credential information for an application.

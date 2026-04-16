@@ -1,3 +1,7 @@
+---
+title: "DeleteExtensionAssociation"
+---
+
 # DeleteExtensionAssociation
 
 Deletes an extension association. This action doesn't delete extensions defined in the

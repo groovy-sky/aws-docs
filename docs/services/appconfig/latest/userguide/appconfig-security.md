@@ -1,3 +1,7 @@
+---
+title: "Security in AWS AppConfig"
+---
+
 # Security in AWS AppConfig
 
 Cloud security at AWS is the highest priority. As an AWS customer, you benefit from a

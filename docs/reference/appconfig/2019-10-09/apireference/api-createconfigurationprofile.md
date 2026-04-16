@@ -1,3 +1,7 @@
+---
+title: "CreateConfigurationProfile"
+---
+
 # CreateConfigurationProfile
 
 Creates a configuration profile, which is information that enables AWS AppConfig

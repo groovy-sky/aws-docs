@@ -1,3 +1,7 @@
+---
+title: "Retrieving configuration data for applications running in Amazon ECS and Amazon EKS"
+---
+
 # Retrieving configuration data for applications running in Amazon ECS and Amazon EKS
 
 You can retrieve configuration data from AWS AppConfig Agent for applications running in

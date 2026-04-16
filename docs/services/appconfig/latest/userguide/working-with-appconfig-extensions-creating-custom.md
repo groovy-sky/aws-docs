@@ -1,3 +1,7 @@
+---
+title: "Walkthrough: Creating custom AWS AppConfig extensions"
+---
+
 # Walkthrough: Creating custom AWS AppConfig extensions
 
 To create a custom AWS AppConfig extension, complete the following tasks. Each task is described

@@ -1,3 +1,7 @@
+---
+title: "(Optional) Using environment variables to configure AWS AppConfig Agent for Amazon ECS and Amazon EKS"
+---
+
 # (Optional) Using environment variables to configure AWS AppConfig Agent for Amazon ECS and Amazon EKS
 
 You can configure AWS AppConfig Agent by changing the following environment variables for

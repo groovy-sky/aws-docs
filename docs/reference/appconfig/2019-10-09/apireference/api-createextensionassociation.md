@@ -1,3 +1,7 @@
+---
+title: "CreateExtensionAssociation"
+---
+
 # CreateExtensionAssociation
 
 When you create an extension or configure an AWS authored extension, you

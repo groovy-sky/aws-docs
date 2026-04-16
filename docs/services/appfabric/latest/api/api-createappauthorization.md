@@ -1,3 +1,7 @@
+---
+title: "CreateAppAuthorization"
+---
+
 # CreateAppAuthorization
 
 Creates an app authorization within an app bundle, which allows AppFabric to connect to an

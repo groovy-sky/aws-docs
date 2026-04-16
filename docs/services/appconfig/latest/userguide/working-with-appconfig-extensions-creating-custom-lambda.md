@@ -1,3 +1,7 @@
+---
+title: "Step 1: Create a Lambda function for a custom AWS AppConfig extension"
+---
+
 # Step 1: Create a Lambda function for a custom AWS AppConfig extension
 
 For most use-cases, to create a custom extension, you must create an AWS Lambda function to perform any computation and processing defined in the

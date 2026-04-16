@@ -1,3 +1,7 @@
+---
+title: "Configuring the AWS AppConfig Agent Lambda extension"
+---
+
 # Configuring the AWS AppConfig Agent Lambda extension
 
 You can configure the extension by changing the following AWS Lambda environment

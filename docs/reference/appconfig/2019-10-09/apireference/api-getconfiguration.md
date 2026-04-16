@@ -1,3 +1,7 @@
+---
+title: "GetConfiguration"
+---
+
 # GetConfiguration
 
 (Deprecated) Retrieves the latest deployed configuration.

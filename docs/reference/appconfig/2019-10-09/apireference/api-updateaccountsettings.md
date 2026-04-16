@@ -1,3 +1,7 @@
+---
+title: "UpdateAccountSettings"
+---
+
 # UpdateAccountSettings
 
 Updates the value of the `DeletionProtection` parameter.

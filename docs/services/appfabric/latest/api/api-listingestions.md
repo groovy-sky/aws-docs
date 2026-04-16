@@ -1,3 +1,7 @@
+---
+title: "ListIngestions"
+---
+
 # ListIngestions
 
 Returns a list of all ingestions configured for an app bundle.

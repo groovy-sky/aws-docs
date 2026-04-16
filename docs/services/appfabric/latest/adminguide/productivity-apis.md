@@ -1,3 +1,7 @@
+---
+title: "AppFabric for productivity APIs (preview)"
+---
+
 # AppFabric for productivity APIs (preview)
 
 The AWS AppFabric for productivity feature is in preview and is subject to change.

@@ -1,3 +1,7 @@
+---
+title: "AppBundle"
+---
+
 # AppBundle
 
 Contains information about an app bundle.

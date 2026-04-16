@@ -1,3 +1,7 @@
+---
+title: "Configure Box for AppFabric"
+---
+
 # Configure Box for AppFabric
 
 Box is the leading Content Cloud, a single platform that empowers

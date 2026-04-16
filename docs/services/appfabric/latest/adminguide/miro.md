@@ -1,3 +1,7 @@
+---
+title: "Configure Miro for AppFabric"
+---
+
 # Configure Miro for AppFabric
 
 Miro is an online workspace for innovation that enables distributed teams

@@ -1,3 +1,7 @@
+---
+title: "Using AWS AppConfig Agent with Amazon EC2 and on-premises machines"
+---
+
 # Using AWS AppConfig Agent with Amazon EC2 and on-premises machines
 
 You can integrate AWS AppConfig with applications running on your Amazon Elastic Compute Cloud (Amazon EC2) Linux

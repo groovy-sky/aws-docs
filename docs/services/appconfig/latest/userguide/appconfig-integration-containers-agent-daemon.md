@@ -1,3 +1,7 @@
+---
+title: "(Optional) Running AWS AppConfig as a DaemonSet in Amazon EKS"
+---
+
 # (Optional) Running AWS AppConfig as a DaemonSet in Amazon EKS
 
 With Amazon EKS, you can run AWS AppConfig Agent as a sidecar, which results in one agent

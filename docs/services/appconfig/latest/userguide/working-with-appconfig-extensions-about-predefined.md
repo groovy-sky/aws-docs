@@ -1,3 +1,7 @@
+---
+title: "Working with AWS authored extensions"
+---
+
 # Working with AWS authored extensions
 
 AWS AppConfig includes the following AWS authored extensions. These extensions can help you

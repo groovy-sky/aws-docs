@@ -1,3 +1,7 @@
+---
+title: "GetApplication"
+---
+
 # GetApplication
 
 Retrieves information about an application.

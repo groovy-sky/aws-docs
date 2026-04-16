@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot AppClients in AppFabric for productivity"
+---
+
 # Troubleshoot AppClients in AppFabric for productivity
 
 The AWS AppFabric for productivity feature is in preview and is subject to change.

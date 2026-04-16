@@ -1,3 +1,7 @@
+---
+title: "Supported applications in AppFabric for security"
+---
+
 # Supported applications in AppFabric for security
 
 AWS AppFabric for security supports integration with the following applications. Choose the name

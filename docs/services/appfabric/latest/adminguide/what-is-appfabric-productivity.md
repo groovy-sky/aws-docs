@@ -1,3 +1,7 @@
+---
+title: "What is AWS AppFabric for productivity?"
+---
+
 # What is AWS AppFabric for productivity?
 
 The AWS AppFabric for productivity feature is in preview and is subject to change.

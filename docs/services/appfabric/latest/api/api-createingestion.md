@@ -1,3 +1,7 @@
+---
+title: "CreateIngestion"
+---
+
 # CreateIngestion
 
 Creates a data ingestion for an application.

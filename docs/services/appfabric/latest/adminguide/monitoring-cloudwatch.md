@@ -1,3 +1,7 @@
+---
+title: "Monitoring AWS AppFabric with Amazon CloudWatch"
+---
+
 # Monitoring AWS AppFabric with Amazon CloudWatch
 
 You can monitor AWS AppFabric using CloudWatch, which collects raw data and processes it into

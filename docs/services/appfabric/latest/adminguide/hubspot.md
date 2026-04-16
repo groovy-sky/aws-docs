@@ -1,3 +1,7 @@
+---
+title: "Configure HubSpot for AppFabric"
+---
+
 # Configure HubSpot for AppFabric
 
 HubSpot is a customer platform with all the software, integrations, and

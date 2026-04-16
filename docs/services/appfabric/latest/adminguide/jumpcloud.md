@@ -1,3 +1,7 @@
+---
+title: "Configure JumpCloud for AppFabric"
+---
+
 # Configure JumpCloud for AppFabric
 
 JumpCloud Inc. is an American enterprise software company that provides a cloud-based

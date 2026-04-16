@@ -1,3 +1,7 @@
+---
+title: "Configuring AWS AppConfig deletion protection"
+---
+
 # Configuring AWS AppConfig deletion protection
 
 AWS AppConfig provides an account setting to help prevent users from unintentionally deleting

@@ -1,3 +1,7 @@
+---
+title: "ListExtensions"
+---
+
 # ListExtensions
 
 Lists all custom and AWS authored AWS AppConfig extensions in the

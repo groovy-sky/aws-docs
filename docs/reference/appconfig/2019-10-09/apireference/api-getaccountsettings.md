@@ -1,3 +1,7 @@
+---
+title: "GetAccountSettings"
+---
+
 # GetAccountSettings
 
 Returns information about the status of the `DeletionProtection`

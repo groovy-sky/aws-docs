@@ -1,3 +1,7 @@
+---
+title: "What is AWS AppFabric?"
+---
+
 # What is AWS AppFabric?
 
 AWS AppFabric quickly connects software as a service (SaaS) applications across your

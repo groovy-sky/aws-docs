@@ -1,3 +1,7 @@
+---
+title: "Configure Cisco Duo for AppFabric"
+---
+
 # Configure Cisco Duo for AppFabric
 
 Cisco Duo protects against breaches with a leading access management suite

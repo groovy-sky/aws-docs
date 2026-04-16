@@ -1,3 +1,7 @@
+---
+title: "AppClientSummary"
+---
+
 # AppClientSummary
 
 The AWS AppFabric for productivity feature is in preview and is subject to change.

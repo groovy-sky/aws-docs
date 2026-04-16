@@ -1,3 +1,7 @@
+---
+title: "Using the AWS AppConfig deployment events to Amazon SNS extension"
+---
+
 # Using the AWS AppConfig deployment events to Amazon SNS extension
 
 The `AWS AppConfig deployment events to Amazon SNS` extension is an AWS authored

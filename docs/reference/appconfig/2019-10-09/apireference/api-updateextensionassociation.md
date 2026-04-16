@@ -1,3 +1,7 @@
+---
+title: "UpdateExtensionAssociation"
+---
+
 # UpdateExtensionAssociation
 
 Updates an association. For more information about extensions and associations, see

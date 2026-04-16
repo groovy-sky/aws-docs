@@ -1,3 +1,7 @@
+---
+title: "Retrieving feature flags and configuration data in AWS AppConfig"
+---
+
 # Retrieving feature flags and configuration data in AWS AppConfig
 
 Your application retrieves feature flags and free form configuration data by establishing a

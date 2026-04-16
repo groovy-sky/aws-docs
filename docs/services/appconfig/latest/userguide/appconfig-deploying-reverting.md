@@ -1,3 +1,7 @@
+---
+title: "Reverting a configuration"
+---
+
 # Reverting a configuration
 
 During a deployment, you can mitigate situations where malformed or incorrect

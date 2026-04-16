@@ -1,3 +1,7 @@
+---
+title: "Understanding how the AWS AppConfig Agent Lambda extension works"
+---
+
 # Understanding how the AWS AppConfig Agent Lambda extension works
 
 If you use AWS AppConfig to manage configurations for a Lambda function

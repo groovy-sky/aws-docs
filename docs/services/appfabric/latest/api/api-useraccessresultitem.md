@@ -1,3 +1,7 @@
+---
+title: "UserAccessResultItem"
+---
+
 # UserAccessResultItem
 
 Contains information about a user's access to an application.

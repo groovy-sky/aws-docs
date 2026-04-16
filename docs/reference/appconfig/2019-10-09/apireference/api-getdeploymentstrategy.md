@@ -1,3 +1,7 @@
+---
+title: "GetDeploymentStrategy"
+---
+
 # GetDeploymentStrategy
 
 Retrieves information about a deployment strategy. A deployment strategy defines

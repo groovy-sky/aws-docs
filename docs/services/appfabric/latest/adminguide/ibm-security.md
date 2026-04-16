@@ -1,3 +1,7 @@
+---
+title: "Configure IBM Security® Verify for AppFabric"
+---
+
 # Configure IBM Security® Verify for AppFabric
 
 The IBM Security® Verify family provides automated, cloud-based and

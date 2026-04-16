@@ -1,3 +1,7 @@
+---
+title: "AppBundleSummary"
+---
+
 # AppBundleSummary
 
 Contains a summary of an app bundle.

@@ -1,3 +1,7 @@
+---
+title: "UpdateConfigurationProfile"
+---
+
 # UpdateConfigurationProfile
 
 Updates a configuration profile.

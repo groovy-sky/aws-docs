@@ -1,3 +1,7 @@
+---
+title: "ListExtensionAssociations"
+---
+
 # ListExtensionAssociations
 
 Lists all AWS AppConfig extension associations in the account. For more

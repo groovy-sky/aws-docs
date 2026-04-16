@@ -1,3 +1,7 @@
+---
+title: "Open Cybersecurity Schema Framework for AWS AppFabric"
+---
+
 # Open Cybersecurity Schema Framework for AWS AppFabric
 
 The [Open Cybersecurity Schema Framework](https://schema.ocsf.io/)

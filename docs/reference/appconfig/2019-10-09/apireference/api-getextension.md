@@ -1,3 +1,7 @@
+---
+title: "GetExtension"
+---
+
 # GetExtension
 
 Returns information about an AWS AppConfig extension.

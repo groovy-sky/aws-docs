@@ -1,3 +1,7 @@
+---
+title: "Step 3: Create a custom AWS AppConfig extension"
+---
+
 # Step 3: Create a custom AWS AppConfig extension
 
 An extension defines one or more actions that it performs during an AWS AppConfig workflow. For

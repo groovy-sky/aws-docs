@@ -1,3 +1,7 @@
+---
+title: "DeleteHostedConfigurationVersion"
+---
+
 # DeleteHostedConfigurationVersion
 
 Deletes a version of a configuration from the AWS AppConfig hosted configuration

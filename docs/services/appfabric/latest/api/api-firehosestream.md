@@ -1,3 +1,7 @@
+---
+title: "FirehoseStream"
+---
+
 # FirehoseStream
 
 Contains information about an Amazon Data Firehose delivery stream.

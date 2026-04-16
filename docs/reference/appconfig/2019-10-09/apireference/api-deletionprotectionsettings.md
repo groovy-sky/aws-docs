@@ -1,3 +1,7 @@
+---
+title: "DeletionProtectionSettings"
+---
+
 # DeletionProtectionSettings
 
 A parameter to configure deletion protection. Deletion protection prevents a user from

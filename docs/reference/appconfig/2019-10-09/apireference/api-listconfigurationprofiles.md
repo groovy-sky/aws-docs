@@ -1,3 +1,7 @@
+---
+title: "ListConfigurationProfiles"
+---
+
 # ListConfigurationProfiles
 
 Lists the configuration profiles for an application.

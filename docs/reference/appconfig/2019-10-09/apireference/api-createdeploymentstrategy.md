@@ -1,3 +1,7 @@
+---
+title: "CreateDeploymentStrategy"
+---
+
 # CreateDeploymentStrategy
 
 Creates a deployment strategy that defines important criteria for rolling out your
@@ -37,6 +41,10 @@ The request accepts the following data in JSON format.
 **[DeploymentDurationInMinutes](#API_CreateDeploymentStrategy_RequestSyntax)**
 
 Total amount of time for a deployment to last.
+
+###### Note
+
+AWS AppConfig Agent supports deploying feature flag or free-form configuration data to specific segments or individual users during a gradual rollout. Entity-based gradual deployments ensure that once a user or segment receives a configuration version, they continue to receive that same version throughout the deployment period, regardless of which compute resource serves their requests. For more information, see [Using AWS AppConfig Agent for user-based or entity-based gradual deployments](../../../../services/appconfig/latest/userguide/appconfig-agent-how-to-use.md#appconfig-entity-based-gradual-deployments)
 
 Type: Integer
 

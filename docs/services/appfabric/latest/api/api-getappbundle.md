@@ -1,3 +1,7 @@
+---
+title: "GetAppBundle"
+---
+
 # GetAppBundle
 
 Returns information about an app bundle.

@@ -1,3 +1,7 @@
+---
+title: "ListIngestionDestinations"
+---
+
 # ListIngestionDestinations
 
 Returns a list of all ingestion destinations configured for an ingestion.

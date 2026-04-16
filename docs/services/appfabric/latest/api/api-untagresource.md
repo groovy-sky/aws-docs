@@ -1,3 +1,7 @@
+---
+title: "UntagResource"
+---
+
 # UntagResource
 
 Removes a tag or tags from a resource.

@@ -1,3 +1,7 @@
+---
+title: "Monitoring deployments for automatic rollback"
+---
+
 # Monitoring deployments for automatic rollback
 
 During a deployment, you can mitigate situations where malformed or incorrect

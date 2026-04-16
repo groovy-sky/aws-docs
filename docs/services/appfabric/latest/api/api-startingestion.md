@@ -1,3 +1,7 @@
+---
+title: "StartIngestion"
+---
+
 # StartIngestion
 
 Starts (enables) an ingestion, which collects data from an application.

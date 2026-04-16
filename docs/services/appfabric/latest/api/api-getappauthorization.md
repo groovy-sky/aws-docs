@@ -1,3 +1,7 @@
+---
+title: "GetAppAuthorization"
+---
+
 # GetAppAuthorization
 
 Returns information about an app authorization.

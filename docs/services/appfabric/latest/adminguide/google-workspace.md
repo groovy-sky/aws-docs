@@ -1,3 +1,7 @@
+---
+title: "Configure Google Workspace for AppFabric"
+---
+
 # Configure Google Workspace for AppFabric
 
 Google Workspace is a collection of cloud computing, productivity and

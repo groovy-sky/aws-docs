@@ -1,3 +1,7 @@
+---
+title: "DeleteExtension"
+---
+
 # DeleteExtension
 
 Deletes an AWS AppConfig extension. You must delete all associations to an

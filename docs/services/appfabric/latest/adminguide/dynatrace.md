@@ -1,3 +1,7 @@
+---
+title: "Dynatrace"
+---
+
 # Dynatrace
 
 The Dynatrace® Platform combines broad and deep observability and

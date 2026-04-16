@@ -1,3 +1,7 @@
+---
+title: "ListHostedConfigurationVersions"
+---
+
 # ListHostedConfigurationVersions
 
 Lists configurations stored in the AWS AppConfig hosted configuration store by

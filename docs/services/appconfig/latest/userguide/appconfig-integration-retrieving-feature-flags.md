@@ -1,3 +1,7 @@
+---
+title: "Retrieving basic and multi-variant feature flags"
+---
+
 # Retrieving basic and multi-variant feature flags
 
 For feature flag configurations (configurations of type

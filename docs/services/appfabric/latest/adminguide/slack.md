@@ -1,3 +1,7 @@
+---
+title: "Configure Slack for AppFabric"
+---
+
 # Configure Slack for AppFabric
 
 Slack is on a mission to make people’s working lives simpler, more

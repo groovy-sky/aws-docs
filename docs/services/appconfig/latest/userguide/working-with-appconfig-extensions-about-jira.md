@@ -1,3 +1,7 @@
+---
+title: "Using the Atlassian Jira extension for AWS AppConfig"
+---
+
 # Using the Atlassian Jira extension for AWS AppConfig
 
 By integrating with Atlassian Jira, AWS AppConfig can create and update issues in the Atlassian

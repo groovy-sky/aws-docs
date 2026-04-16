@@ -1,3 +1,7 @@
+---
+title: "Setting up AWS AppConfig"
+---
+
 # Setting up AWS AppConfig
 
 If you haven't already done so, sign up for an AWS account and create an

@@ -1,3 +1,7 @@
+---
+title: "IngestionDestination"
+---
+
 # IngestionDestination
 
 Contains information about an ingestion destination.

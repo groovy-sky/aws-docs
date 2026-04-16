@@ -1,3 +1,7 @@
+---
+title: "CreateExtension"
+---
+
 # CreateExtension
 
 Creates an AWS AppConfig extension. An extension augments your ability to inject

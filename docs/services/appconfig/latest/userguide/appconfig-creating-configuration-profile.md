@@ -1,3 +1,7 @@
+---
+title: "Creating a configuration profile in AWS AppConfig"
+---
+
 # Creating a configuration profile in AWS AppConfig
 
 _Configuration data_ is a collection of settings that influence the

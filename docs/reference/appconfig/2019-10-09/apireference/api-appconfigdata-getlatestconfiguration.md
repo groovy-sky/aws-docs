@@ -1,3 +1,7 @@
+---
+title: "GetLatestConfiguration"
+---
+
 # GetLatestConfiguration
 
 Retrieves the latest deployed configuration. This API may return empty configuration

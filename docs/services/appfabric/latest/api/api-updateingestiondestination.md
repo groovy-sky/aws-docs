@@ -1,3 +1,7 @@
+---
+title: "UpdateIngestionDestination"
+---
+
 # UpdateIngestionDestination
 
 Updates an ingestion destination, which specifies how an application's ingested data is

@@ -1,3 +1,7 @@
+---
+title: "S3Bucket"
+---
+
 # S3Bucket
 
 Contains information about an Amazon S3 bucket.

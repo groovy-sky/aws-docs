@@ -1,3 +1,7 @@
+---
+title: "Retrieving configuration data without AWS AppConfig Agent"
+---
+
 # Retrieving configuration data without AWS AppConfig Agent
 
 The recommended way to retrieve configuration data from AWS AppConfig is by using the

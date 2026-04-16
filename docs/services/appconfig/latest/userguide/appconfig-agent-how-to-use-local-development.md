@@ -1,3 +1,7 @@
+---
+title: "Working with AWS AppConfig Agent local development mode"
+---
+
 # Working with AWS AppConfig Agent local development mode
 
 AWS AppConfig Agent supports a _local development mode_. If you enable local

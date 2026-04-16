@@ -1,3 +1,7 @@
+---
+title: "AWS AppConfig Data"
+---
+
 # AWS AppConfig Data
 
 The following actions are supported by AWS AppConfig Data:

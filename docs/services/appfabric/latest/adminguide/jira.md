@@ -1,3 +1,7 @@
+---
+title: "Configure Atlassian Jira suite for AppFabric"
+---
+
 # Configure Atlassian Jira suite for AppFabric
 
 Atlassian unleashes the potential of every team. Their agile and DevOps, IT

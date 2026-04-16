@@ -1,3 +1,7 @@
+---
+title: "AppAuthorization"
+---
+
 # AppAuthorization
 
 Contains information about an app authorization.

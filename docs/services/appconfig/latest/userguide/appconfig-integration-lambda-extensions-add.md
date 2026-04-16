@@ -1,3 +1,7 @@
+---
+title: "Adding the AWS AppConfig Agent Lambda extension"
+---
+
 # Adding the AWS AppConfig Agent Lambda extension
 
 To use the AWS AppConfig Agent Lambda extension, you need to add the extension to your Lambda.

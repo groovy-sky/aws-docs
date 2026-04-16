@@ -1,3 +1,7 @@
+---
+title: "AuthRequest"
+---
+
 # AuthRequest
 
 Contains authorization request information, which is required for AWS AppFabric to get the

@@ -1,3 +1,7 @@
+---
+title: "UntagResource"
+---
+
 # UntagResource
 
 Deletes a tag key and value from an AWS AppConfig resource.

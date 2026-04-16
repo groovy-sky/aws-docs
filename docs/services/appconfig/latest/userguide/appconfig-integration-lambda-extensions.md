@@ -1,3 +1,7 @@
+---
+title: "Using AWS AppConfig Agent with AWS Lambda"
+---
+
 # Using AWS AppConfig Agent with AWS Lambda
 
 An AWS Lambda extension is a companion process that augments the capabilities of a Lambda

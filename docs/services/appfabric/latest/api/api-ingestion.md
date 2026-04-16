@@ -1,3 +1,7 @@
+---
+title: "Ingestion"
+---
+
 # Ingestion
 
 Contains information about an ingestion.

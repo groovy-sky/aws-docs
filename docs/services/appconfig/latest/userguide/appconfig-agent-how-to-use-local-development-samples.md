@@ -1,3 +1,7 @@
+---
+title: "Feature flag samples for AWS AppConfig Agent local development mode"
+---
+
 # Feature flag samples for AWS AppConfig Agent local development mode
 
 This section includes feature flag samples you can use with AWS AppConfig Agent in local

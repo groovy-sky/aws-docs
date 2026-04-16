@@ -1,3 +1,7 @@
+---
+title: "DeleteAppBundle"
+---
+
 # DeleteAppBundle
 
 Deletes an app bundle. You must delete all associated app authorizations before you can

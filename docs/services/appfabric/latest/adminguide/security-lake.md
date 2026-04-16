@@ -1,3 +1,7 @@
+---
+title: "Amazon Security Lake"
+---
+
 # Amazon Security Lake
 
 Amazon Security Lake automatically centralizes security data from AWS environments,

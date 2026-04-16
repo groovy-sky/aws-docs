@@ -1,3 +1,7 @@
+---
+title: "Starting the AWS AppConfig agent for Amazon EKS integration"
+---
+
 # Starting the AWS AppConfig agent for Amazon EKS integration
 
 The AWS AppConfig Agent sidecar container is automatically available in your Amazon EKS

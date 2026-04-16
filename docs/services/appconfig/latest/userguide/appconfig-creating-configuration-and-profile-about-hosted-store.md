@@ -1,3 +1,7 @@
+---
+title: "Understanding the AWS AppConfig hosted configuration store"
+---
+
 # Understanding the AWS AppConfig hosted configuration store
 
 AWS AppConfig includes an internal or hosted configuration store. Configurations must be 2 MB

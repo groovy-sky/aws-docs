@@ -1,3 +1,7 @@
+---
+title: "Configure Ping Identity for AppFabric"
+---
+
 # Configure Ping Identity for AppFabric
 
 At Ping Identity, we believe in making digital experiences both secure and

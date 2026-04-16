@@ -1,3 +1,7 @@
+---
+title: "Oauth2Credential"
+---
+
 # Oauth2Credential
 
 Contains OAuth2 client credential information.

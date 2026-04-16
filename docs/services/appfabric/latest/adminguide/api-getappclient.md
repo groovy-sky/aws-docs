@@ -1,3 +1,7 @@
+---
+title: "GetAppClient"
+---
+
 # GetAppClient
 
 The AWS AppFabric for productivity feature is in preview and is subject to change.

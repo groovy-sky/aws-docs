@@ -1,3 +1,7 @@
+---
+title: "Validator"
+---
+
 # Validator
 
 A validator provides a syntactic or semantic check to ensure the configuration that you

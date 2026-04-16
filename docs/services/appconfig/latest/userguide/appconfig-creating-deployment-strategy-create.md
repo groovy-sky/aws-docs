@@ -1,3 +1,7 @@
+---
+title: "Create a deployment strategy"
+---
+
 # Create a deployment strategy
 
 If you don't want to use one of the predefined deployment strategies, you can create

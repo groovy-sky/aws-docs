@@ -1,3 +1,7 @@
+---
+title: "ProcessingConfiguration"
+---
+
 # ProcessingConfiguration
 
 Contains information about how ingested data is processed.

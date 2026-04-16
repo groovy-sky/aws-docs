@@ -1,3 +1,7 @@
+---
+title: "UpdateAppAuthorization"
+---
+
 # UpdateAppAuthorization
 
 Updates an app authorization within an app bundle, which allows AppFabric to connect to an

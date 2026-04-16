@@ -1,3 +1,7 @@
+---
+title: "UpdateExtension"
+---
+
 # UpdateExtension
 
 Updates an AWS AppConfig extension. For more information about extensions, see

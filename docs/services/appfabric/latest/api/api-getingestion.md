@@ -1,3 +1,7 @@
+---
+title: "GetIngestion"
+---
+
 # GetIngestion
 
 Returns information about an ingestion.

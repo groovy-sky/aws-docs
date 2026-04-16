@@ -1,3 +1,7 @@
+---
+title: "StopIngestion"
+---
+
 # StopIngestion
 
 Stops (disables) an ingestion.

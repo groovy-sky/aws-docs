@@ -1,3 +1,7 @@
+---
+title: "DeleteIngestion"
+---
+
 # DeleteIngestion
 
 Deletes an ingestion. You must stop (disable) the ingestion and you must delete all

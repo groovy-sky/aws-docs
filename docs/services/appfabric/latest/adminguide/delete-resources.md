@@ -1,3 +1,7 @@
+---
+title: "Delete AWS AppFabric for security resources"
+---
+
 # Delete AWS AppFabric for security resources
 
 If you don't want to continue using AWS AppFabric for security, be sure to delete the data in the output

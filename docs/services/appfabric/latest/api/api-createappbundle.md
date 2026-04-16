@@ -1,3 +1,7 @@
+---
+title: "CreateAppBundle"
+---
+
 # CreateAppBundle
 
 Creates an app bundle to collect data from an application using AppFabric.

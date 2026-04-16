@@ -1,3 +1,7 @@
+---
+title: "Configure Genesys Cloud for AppFabric"
+---
+
 # Configure Genesys Cloud for AppFabric
 
 Genesys Cloud creates fluid conversations across digital and voice channels

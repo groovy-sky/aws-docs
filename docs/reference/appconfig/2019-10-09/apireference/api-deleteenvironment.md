@@ -1,3 +1,7 @@
+---
+title: "DeleteEnvironment"
+---
+
 # DeleteEnvironment
 
 Deletes an environment.

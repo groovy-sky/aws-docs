@@ -1,3 +1,7 @@
+---
+title: "AuditLogDestinationConfiguration"
+---
+
 # AuditLogDestinationConfiguration
 
 Contains information about an audit log destination configuration.

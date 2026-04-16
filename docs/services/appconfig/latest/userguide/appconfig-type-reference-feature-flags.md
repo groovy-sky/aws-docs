@@ -1,3 +1,7 @@
+---
+title: "Understanding the type reference for AWS.AppConfig.FeatureFlags"
+---
+
 # Understanding the type reference for AWS.AppConfig.FeatureFlags
 
 Use the `AWS.AppConfig.FeatureFlags` JSON schema as a

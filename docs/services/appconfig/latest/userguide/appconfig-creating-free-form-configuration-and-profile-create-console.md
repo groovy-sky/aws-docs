@@ -1,3 +1,7 @@
+---
+title: "Creating an AWS AppConfig freeform configuration profile (console)"
+---
+
 # Creating an AWS AppConfig freeform configuration profile (console)
 
 Use the following procedure to create an AWS AppConfig freeform configuration profile and

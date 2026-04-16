@@ -1,3 +1,7 @@
+---
+title: "Configure Smartsheet for AppFabric"
+---
+
 # Configure Smartsheet for AppFabric
 
 Smartsheet is a work management platform that helps you align work, people,

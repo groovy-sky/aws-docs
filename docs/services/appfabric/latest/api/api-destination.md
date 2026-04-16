@@ -1,3 +1,7 @@
+---
+title: "Destination"
+---
+
 # Destination
 
 Contains information about an audit log destination.

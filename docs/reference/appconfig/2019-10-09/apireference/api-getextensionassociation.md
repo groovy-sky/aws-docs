@@ -1,3 +1,7 @@
+---
+title: "GetExtensionAssociation"
+---
+
 # GetExtensionAssociation
 
 Returns information about an AWS AppConfig extension association. For more

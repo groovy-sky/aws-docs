@@ -1,3 +1,7 @@
+---
+title: "Data protection in AWS AppFabric"
+---
+
 # Data protection in AWS AppFabric
 
 The AWS [shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model)

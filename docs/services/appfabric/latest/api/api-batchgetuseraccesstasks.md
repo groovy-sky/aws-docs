@@ -1,3 +1,7 @@
+---
+title: "BatchGetUserAccessTasks"
+---
+
 # BatchGetUserAccessTasks
 
 Gets user access details in a batch request.

@@ -1,3 +1,7 @@
+---
+title: "What is AWS AppFabric for security?"
+---
+
 # What is AWS AppFabric for security?
 
 AWS AppFabric for security quickly connects software as a service (SaaS) applications across your

@@ -1,3 +1,7 @@
+---
+title: "AWS managed policies for AWS AppFabric"
+---
+
 # AWS managed policies for AWS AppFabric
 
 To add permissions to users, groups, and roles, it is easier to use AWS managed policies

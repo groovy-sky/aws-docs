@@ -1,3 +1,7 @@
+---
+title: "Creating a feature flag configuration profile (command line)"
+---
+
 # Creating a feature flag configuration profile (command line)
 
 The following procedure describes how to use the AWS Command Line Interface (on Linux or Windows) or

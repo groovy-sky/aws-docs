@@ -1,3 +1,7 @@
+---
+title: "Parameter"
+---
+
 # Parameter
 
 A value such as an Amazon Resource Name (ARN) or an Amazon Simple Notification Service topic entered

@@ -1,3 +1,7 @@
+---
+title: "Configure Singularity Cloud for AppFabric"
+---
+
 # Configure Singularity Cloud for AppFabric
 
 The Singularity Cloud platform protects your enterprise from threats of all

@@ -1,3 +1,7 @@
+---
+title: "Configure Dropbox for AppFabric"
+---
+
 # Configure Dropbox for AppFabric
 
 Dropbox helps your organization get better work done faster by bringing

@@ -1,3 +1,7 @@
+---
+title: "Deploying a configuration"
+---
+
 # Deploying a configuration
 
 After you [create\
