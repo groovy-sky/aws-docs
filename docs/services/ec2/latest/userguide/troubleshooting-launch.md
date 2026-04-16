@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot Amazon EC2 instance launch issues"
+---
+
 # Troubleshoot Amazon EC2 instance launch issues
 
 The following are troubleshooting tips to help you solve issues when launching an Amazon EC2 instance.
@@ -314,8 +318,10 @@ IMDSv2 enforcement, set `HttpTokensEnforced` to
 `disabled`. For more information, see [ModifyInstanceMetadataDefaults](../../../../reference/awsec2/latest/apireference/api-modifyinstancemetadatadefaults.md) in the Amazon EC2 API Reference. If you prefer to
 configure this setting using the console, see [Enforce IMDSv2 at the account level](configuring-imds-new-instances.md#enforce-imdsv2-at-the-account-level).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Troubleshoot
 
 Instance stop issues
+
+All content copied from https://docs.aws.amazon.com/.

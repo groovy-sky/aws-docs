@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot impaired Windows instance with the EC2Rescue GUI"
+---
+
 # Troubleshoot impaired Windows instance with the EC2Rescue GUI
 
 EC2Rescue for Windows Server can perform the following analysis on **offline instances**:
@@ -214,8 +218,10 @@ following command and then try again:
 
 8. Choose **Finish**.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 EC2Rescue for Windows instances
 
 Troubleshoot using EC2Rescue CLI
+
+All content copied from https://docs.aws.amazon.com/.

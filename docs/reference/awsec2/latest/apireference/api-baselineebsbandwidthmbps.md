@@ -1,3 +1,7 @@
+---
+title: "BaselineEbsBandwidthMbps"
+---
+
 # BaselineEbsBandwidthMbps
 
 The minimum and maximum baseline bandwidth to Amazon EBS, in Mbps. For more information, see
@@ -34,8 +38,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/baselineebsbandwidthmbps.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AvailableCapacity
 
 BaselineEbsBandwidthMbpsRequest
+
+All content copied from https://docs.aws.amazon.com/.

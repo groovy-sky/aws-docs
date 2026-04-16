@@ -1,3 +1,7 @@
+---
+title: "Elastic Fabric Adapter release notes"
+---
+
 # Elastic Fabric Adapter release notes
 
 The following table describes the version history and changelog for the Elastic Fabric Adapter software.
@@ -806,8 +810,10 @@ July 20191.4.0
 
 July 2019
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Verify the EFA installer
 
 EC2 topology
+
+All content copied from https://docs.aws.amazon.com/.

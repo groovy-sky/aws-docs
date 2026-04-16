@@ -1,3 +1,7 @@
+---
+title: "Develop EC2Rescue modules for Amazon EC2 Linux instances"
+---
+
 # Develop EC2Rescue modules for Amazon EC2 Linux instances
 
 Modules are written in YAML, a data serialization standard. A module's YAML file consists
@@ -296,8 +300,10 @@ constraint:
   parallelexclusive: !!str
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Run EC2Rescue commands
 
 EC2Rescue for Windows instances
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Manage CloudWatch alarms for your EC2 instances in the Amazon EC2 console"
+---
+
 # Manage CloudWatch alarms for your EC2 instances in the Amazon EC2 console
 
 From the **Instances** screen in the Amazon EC2 console, you can manage the
@@ -8,7 +12,7 @@ these console controls, numbered **1** ( **View alarms**) and
 **2** (a **+** sign for creating or editing an
 alarm).
 
-![The controls in the Instances table in the EC2 console for viewing and creating alarms. 1. View alarms 2. Plus sign symbol.](../../../images/awsec2/latest/userguide/images/instance-alarms-png.md)
+![The controls in the Instances table in the EC2 console for viewing and creating alarms. 1. View alarms 2. Plus sign symbol.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/instance-alarms.png)
 
 ## View alarms from the Instances screen
 
@@ -66,8 +70,10 @@ screen.
 4. In the **Manage CloudWatch alarms** screen, edit your alarm. For more
     information, see [Edit or delete a CloudWatch alarm](../../../amazoncloudwatch/latest/monitoring/manage-cloudwatch-alarm.md#Edit-CloudWatch-Alarm) in the _Amazon CloudWatch User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Monitor your instances using CloudWatch
 
 Manage detailed monitoring
+
+All content copied from https://docs.aws.amazon.com/.

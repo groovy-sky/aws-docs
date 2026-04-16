@@ -1,3 +1,7 @@
+---
+title: "Recommendations for creating shared Linux AMIs"
+---
+
 # Recommendations for creating shared Linux AMIs
 
 Use the following guidelines to reduce the attack surface and improve the reliability of the
@@ -268,9 +272,11 @@ and remove or exclude unnecessary dot-files and dot-directories.
 certificate. Put these and other credentials in a location that is not
 bundled (such as the instance store).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Cancel having an AMI shared with your
 account
 
 Monitor AMI events
+
+All content copied from https://docs.aws.amazon.com/.

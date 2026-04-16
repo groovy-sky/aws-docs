@@ -1,3 +1,7 @@
+---
+title: "Hibernate your Amazon EC2 instance"
+---
+
 # Hibernate your Amazon EC2 instance
 
 When you hibernate an instance, Amazon EC2 signals the operating system to perform hibernation
@@ -56,8 +60,10 @@ instance](hibernating-resuming.md)
 
 - [Troubleshoot](troubleshoot-instance-hibernate.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Enable stop protection
 
 How it works
+
+All content copied from https://docs.aws.amazon.com/.

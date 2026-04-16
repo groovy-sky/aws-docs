@@ -1,3 +1,7 @@
+---
+title: "LaunchTemplateHibernationOptionsRequest"
+---
+
 # LaunchTemplateHibernationOptionsRequest
 
 Indicates whether the instance is configured for hibernation. This parameter is valid
@@ -27,8 +31,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/launchtemplatehibernationoptionsrequest.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 LaunchTemplateHibernationOptions
 
 LaunchTemplateIamInstanceProfileSpecification
+
+All content copied from https://docs.aws.amazon.com/.

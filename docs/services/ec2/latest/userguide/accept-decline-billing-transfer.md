@@ -1,3 +1,7 @@
+---
+title: "Accept or reject billing of a shared EC2 Capacity Reservation"
+---
+
 # Accept or reject billing of a shared EC2 Capacity Reservation
 
 If you receive a billing assignment request for a Capacity Reservation that is shared with
@@ -91,8 +95,10 @@ Deny-EC2CapacityReservationBillingOwnership `
     -CapacityReservationId cr-01234567890abcdef
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 View billing assignment requests
 
 Cancel or revoke requests
+
+All content copied from https://docs.aws.amazon.com/.

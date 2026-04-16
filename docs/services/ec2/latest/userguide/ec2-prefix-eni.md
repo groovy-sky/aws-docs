@@ -1,3 +1,7 @@
+---
+title: "Prefix delegation for Amazon EC2 network interfaces"
+---
+
 # Prefix delegation for Amazon EC2 network interfaces
 
 You can assign a private IPv4 or IPv6 CIDR range, either automatically or manually, to your
@@ -116,8 +120,10 @@ network interfaces. They are for use only on Amazon Linux.
 Kubernetes plug-in, or `dockerd` if you use Docker to manage your
 containers.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Requester-managed network interfaces
 
 Manage prefixes
+
+All content copied from https://docs.aws.amazon.com/.

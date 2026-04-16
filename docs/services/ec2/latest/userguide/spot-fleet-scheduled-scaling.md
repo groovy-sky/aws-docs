@@ -1,3 +1,7 @@
+---
+title: "Scheduled scaling: Scale Spot Fleet on a schedule"
+---
+
 # Scheduled scaling: Scale Spot Fleet on a schedule
 
 Scaling your fleet on a schedule enables you to scale your application in response
@@ -131,8 +135,10 @@ Use the following commands:
 
 - [delete-scheduled-action](../../../cli/latest/reference/application-autoscaling/delete-scheduled-action.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Step scaling
 
 Monitor your fleet
+
+All content copied from https://docs.aws.amazon.com/.

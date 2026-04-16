@@ -1,3 +1,7 @@
+---
+title: "Share Capacity Blocks"
+---
+
 # Share Capacity Blocks
 
 Capacity Block sharing enables Capacity Block owners to share Amazon EC2 Capacity Blocks with other AWS accounts within an AWS Organization.
@@ -216,8 +220,10 @@ Owners also pay for operating system charges for instances they run on the Capac
 Consumers are billed only for the operating system charges for instances they run in the shared Capacity Block.
 Consumers are not charged for the Capacity Block reservation itself.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Extend
 
 Create UltraServer group
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "CreateTransitGatewayConnect"
+---
+
 # CreateTransitGatewayConnect
 
 Creates a Connect attachment from a specified transit gateway attachment. A Connect attachment is a GRE-based tunnel attachment that you can use to establish a connection between a transit gateway and an appliance.
@@ -86,8 +90,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createtransitgatewayconnect.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreateTransitGateway
 
 CreateTransitGatewayConnectPeer
+
+All content copied from https://docs.aws.amazon.com/.

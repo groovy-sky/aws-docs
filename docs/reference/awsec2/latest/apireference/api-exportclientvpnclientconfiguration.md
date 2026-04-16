@@ -1,3 +1,7 @@
+---
+title: "ExportClientVpnClientConfiguration"
+---
+
 # ExportClientVpnClientConfiguration
 
 Downloads the contents of the Client VPN endpoint configuration file for the specified Client VPN endpoint. The Client VPN endpoint configuration
@@ -110,8 +114,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/exportclientvpnclientconfiguration.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ExportClientVpnClientCertificateRevocationList
 
 ExportImage
+
+All content copied from https://docs.aws.amazon.com/.

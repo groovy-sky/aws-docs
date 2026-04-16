@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot your Amazon EC2 instance using the EC2 Serial Console"
+---
+
 # Troubleshoot your Amazon EC2 instance using the EC2 Serial Console
 
 By using EC2 Serial Console, you can troubleshoot boot, network configuration, and other
@@ -202,13 +206,13 @@ SAC, you can disable it later. For more information, see [Disable SAC and the bo
 If SAC is enabled on the instance, the serial console displays the
     `SAC>` prompt.
 
-![SAC prompt displayed in the serial console.](../../../images/awsec2/latest/userguide/images/win-boot-3-png.md)
+![SAC prompt displayed in the serial console.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/win-boot-3.png)
 
 2. To display the SAC commands, enter ?, and then press **Enter**.
 
 Expected output
 
-![Enter a question mark to display the SAC commands.](../../../images/awsec2/latest/userguide/images/win-boot-4-png.md)
+![Enter a question mark to display the SAC commands.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/win-boot-4.png)
 
 3. To create a command prompt channel (such as `cmd0001` or
     `cmd0002`), enter cmd, and then press **Enter**.
@@ -218,7 +222,7 @@ Expected output
 
 Expected output
 
-![The command prompt channel.](../../../images/awsec2/latest/userguide/images/win-boot-5-png.md)
+![The command prompt channel.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/win-boot-5.png)
 
 5. To switch channels, press **ESC+TAB+channel number**
     together. For example, to switch to the `cmd0002` channel (if it has been
@@ -226,27 +230,27 @@ Expected output
 
 6. Enter the credentials required by the command prompt channel.
 
-![The command prompt requiring credentials.](../../../images/awsec2/latest/userguide/images/win-boot-6-png.md)
+![The command prompt requiring credentials.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/win-boot-6.png)
 
 The command prompt is the same full-featured command shell that you get on a
     desktop, but with the exception that it does not allow the reading of characters that
     were already output.
 
-![A full-featured command shell.](../../../images/awsec2/latest/userguide/images/win-boot-7-png.md)
+![A full-featured command shell.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/win-boot-7.png)
 
 **PowerShell can also be used from the command**
 **prompt.**
 
 Note that you might need to set the progress preference to silent mode.
 
-![PowerShell within the command prompt.](../../../images/awsec2/latest/userguide/images/win-boot-8-png.md)
+![PowerShell within the command prompt.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/win-boot-8.png)
 
 ### Use the boot menu
 
 If the instance has the boot menu enabled and is restarted after connecting through SSH,
 you should see the boot menu, as follows.
 
-![Boot menu in the command prompt.](../../../images/awsec2/latest/userguide/images/win-boot-1-png.md)
+![Boot menu in the command prompt.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/win-boot-1.png)
 
 **Boot menu commands**
 
@@ -274,7 +278,7 @@ Goes back to the initial boot menu.
 The ESC key alone does not take you back to the main menu because Windows is
 waiting to see if an escape sequence is in progress.
 
-![Advanced boot options.](../../../images/awsec2/latest/userguide/images/win-boot-2-png.md)
+![Advanced boot options.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/win-boot-2.png)
 
 ### Disable SAC and the boot menu
 
@@ -340,8 +344,10 @@ bcdedit /ems {current} off
 shutdown -r -t 0
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Disconnect from the EC2 Serial Console
 
 Send diagnostic interrupts
+
+All content copied from https://docs.aws.amazon.com/.

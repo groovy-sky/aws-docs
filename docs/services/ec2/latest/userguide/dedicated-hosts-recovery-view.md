@@ -1,3 +1,7 @@
+---
+title: "View the host recovery setting for your Amazon EC2 Dedicated Host"
+---
+
 # View the host recovery setting for your Amazon EC2 Dedicated Host
 
 You can view the host recovery configuration for a Dedicated Host at any time.
@@ -55,8 +59,10 @@ HostRecovery
 on
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Manage host recovery
 
 Manually recovery unsupported instances
+
+All content copied from https://docs.aws.amazon.com/.

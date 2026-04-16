@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 Dedicated Host pricing and billing"
+---
+
 # Amazon EC2 Dedicated Host pricing and billing
 
 The price for a Dedicated Host varies by payment option.
@@ -90,8 +94,10 @@ to run the SQL Server workload. Windows Server AMIs provided by Amazon are suppo
 on current generation instance types only. For more information,
 see [Amazon EC2 Dedicated Hosts Pricing](https://aws.amazon.com/ec2/dedicated-hosts/pricing).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Dedicated Hosts
 
 Instance capacity configurations
+
+All content copied from https://docs.aws.amazon.com/.

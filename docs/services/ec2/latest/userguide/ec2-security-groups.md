@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 security groups for your EC2 instances"
+---
+
 # Amazon EC2 security groups for your EC2 instances
 
 A _security group_ acts as a virtual firewall for your EC2 instances to
@@ -50,7 +54,7 @@ then you can connect to your instance from your computer using SSH. If the secur
 contains a rule that allows all traffic from the resources associated with it, then each instance
 can receive any traffic sent from the other instances.
 
-![A VPC with a security group. The EC2 instances in the subnet are associated with the security group.](../../../images/awsec2/latest/userguide/images/ec2-security-groups-png.md)
+![A VPC with a security group. The EC2 instances in the subnet are associated with the security group.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ec2-security-groups.png)
 
 Security groups are stateful—if you send a request from your instance,
 the response traffic for that request is allowed to flow in regardless of inbound
@@ -58,8 +62,10 @@ security group rules. Also, responses to allowed inbound traffic are allowed to
 flow out, regardless of outbound rules. For more information, see
 [Connection tracking](security-group-connection-tracking.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Verify the fingerprint
 
 Create a security group
+
+All content copied from https://docs.aws.amazon.com/.

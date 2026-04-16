@@ -1,3 +1,7 @@
+---
+title: "Determine whether Amazon EC2 terminated a Spot Instance"
+---
+
 # Determine whether Amazon EC2 terminated a Spot Instance
 
 A Spot Instance runs until Amazon EC2 terminates it in response to a Spot Instance interruption, or until
@@ -60,8 +64,10 @@ your Spot Instance, use Amazon EventBridge to respond to the [EC2 Spot Instance 
     information about the event record for `TerminateInstances`, see
     [Amazon EC2 API event examples](monitor-with-cloudtrail.md#cloudtrail-event-examples).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Find interrupted Spot Instances
 
 Billing
+
+All content copied from https://docs.aws.amazon.com/.

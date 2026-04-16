@@ -1,3 +1,7 @@
+---
+title: "Review ENA Express settings for your EC2 instance"
+---
+
 # Review ENA Express settings for your EC2 instance
 
 You can verify the ENA Express settings by instance or by network interface. To update
@@ -163,9 +167,11 @@ EnaSrdEnabled       : True
 EnaSrdUdpEnabled    : False
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ENA Express
 
 Configure instance
 settings
+
+All content copied from https://docs.aws.amazon.com/.

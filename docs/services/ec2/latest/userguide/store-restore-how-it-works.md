@@ -1,3 +1,7 @@
+---
+title: "How AMI store and restore works"
+---
+
 # How AMI store and restore works
 
 To store and restore an AMI using S3, you use the following APIs:
@@ -128,8 +132,10 @@ path1/path2/ami-0abcdef1234567890.bin
 When you restore the AMI, you specify both the bucket name and the object
 key. For examples, see [Create a store image task](work-with-ami-store-restore.md#create-store-image-task).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Store and restore an AMI
 
 Create a store image task
+
+All content copied from https://docs.aws.amazon.com/.

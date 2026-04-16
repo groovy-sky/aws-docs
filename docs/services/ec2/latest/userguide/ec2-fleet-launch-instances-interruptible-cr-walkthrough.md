@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Configure your EC2 Fleet to launch instances into Interruptible Capacity Reservations"
+---
+
 # Tutorial: Configure your EC2 Fleet to launch instances into Interruptible Capacity Reservations
 
 This tutorial walks you through the steps that you must perform so that your EC2 Fleet
@@ -220,8 +224,10 @@ automatically when the capacity owner reclaims the capacity.
 
 - [Store instance launch parameters in Amazon EC2 launch templates](ec2-launch-templates.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Tutorial: Configure your EC2 Fleet to launch instances into Capacity Blocks
 
 Example CLI configurations for EC2 Fleet
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "EC2 Fast Launch prerequisites for Windows"
+---
+
 # EC2 Fast Launch prerequisites for Windows
 
 Before you set up EC2 Fast Launch, verify that you've met the following
@@ -52,8 +56,10 @@ For more information, see
 [Requesting a quota increase](../../../servicequotas/latest/userguide/request-quota-increase.md)
 in the _Service Quotas User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 EC2 Fast Launch for Windows
 
 Configure EC2 Fast Launch settings
+
+All content copied from https://docs.aws.amazon.com/.

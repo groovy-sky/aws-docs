@@ -1,3 +1,7 @@
+---
+title: "Create CloudWatch alarms for Amazon EC2 instances that fail status checks"
+---
+
 # Create CloudWatch alarms for Amazon EC2 instances that fail status checks
 
 You can use the [status check metrics](viewing-metrics-with-cloudwatch.md#status-check-metrics)
@@ -175,9 +179,11 @@ must be compared to the threshold. This example uses 2. The
 alarm actions are the actions to perform when this alarm is
 triggered.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 View status checks
 
 State change
 events
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "CreateCapacityManagerDataExport"
+---
+
 # CreateCapacityManagerDataExport
 
 Creates a new data export configuration for EC2 Capacity Manager. This allows you to automatically export capacity usage data to an S3 bucket on a scheduled basis.
@@ -88,6 +92,34 @@ Type: String
 
 For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
 
+## Examples
+
+### Example
+
+This example creates a data export configuration that delivers hourly Parquet files to an S3 bucket.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=CreateCapacityManagerDataExport
+&S3BucketName=my-capacity-exports-bucket
+&S3BucketPrefix=capacity-data/
+&Schedule=hourly
+&OutputFormat=parquet
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```
+
+<CreateCapacityManagerDataExportResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+    <requestId>d4904fd9-82c2-4ea5-adfe-a9cc3EXAMPLE</requestId>
+    <capacityManagerDataExportId>cmde-0abcd1234EXAMPLE</capacityManagerDataExportId>
+</CreateCapacityManagerDataExportResponse>
+```
+
 ## See Also
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
@@ -112,8 +144,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createcapacitymanagerdataexport.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CopyVolumes
 
 CreateCapacityReservation
+
+All content copied from https://docs.aws.amazon.com/.

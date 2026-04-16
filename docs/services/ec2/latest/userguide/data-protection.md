@@ -1,3 +1,7 @@
+---
+title: "Data protection in Amazon EC2"
+---
+
 # Data protection in Amazon EC2
 
 The AWS [shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model)
@@ -186,8 +190,10 @@ It is your responsibility to use an encryption protocol, such as Transport Layer
 AWS API endpoints or other sensitive remote network services. You can enforce this through
 an outbound security group or [Windows Firewall](https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/windows-firewall) rules.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Security
 
 Infrastructure security
+
+All content copied from https://docs.aws.amazon.com/.

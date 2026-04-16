@@ -1,3 +1,7 @@
+---
+title: "Monitor your EC2 Fleet or Spot Fleet using CloudWatch"
+---
+
 # Monitor your EC2 Fleet or Spot Fleet using CloudWatch
 
 You can monitor your EC2 Fleet or Spot Fleet using the Amazon CloudWatch metrics described in this
@@ -152,9 +156,11 @@ type
 5. To view the data for a metric, select the checkbox next to the
     metric.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Monitor your fleet
 
 Monitor your fleet
 using EventBridge
+
+All content copied from https://docs.aws.amazon.com/.

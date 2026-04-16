@@ -1,3 +1,7 @@
+---
+title: "Connect to your EC2 instance"
+---
+
 # Connect to your EC2 instance
 
 Your Amazon EC2 instance is a virtual server in the AWS Cloud. To log on to your instance,
@@ -148,8 +152,10 @@ EC2 Instance Connect](connect-linux-inst-eic.md)
 - [Connect using a\
 private IP and EC2 Instance Connect Endpoint](connect-with-ec2-instance-connect-endpoint.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Launch from an AWS Marketplace AMI
 
 General connection prerequisites
+
+All content copied from https://docs.aws.amazon.com/.

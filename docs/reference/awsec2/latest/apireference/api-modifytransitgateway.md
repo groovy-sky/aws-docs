@@ -1,3 +1,7 @@
+---
+title: "ModifyTransitGateway"
+---
+
 # ModifyTransitGateway
 
 Modifies the specified transit gateway. When you modify a transit gateway, the modified options are applied to new transit gateway attachments only. Your existing transit gateway attachments are not modified.
@@ -84,8 +88,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifytransitgateway.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ModifyTrafficMirrorSession
 
 ModifyTransitGatewayMeteringPolicy
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Access Amazon EC2 using an interface VPC endpoint"
+---
+
 # Access Amazon EC2 using an interface VPC endpoint
 
 You can improve the security posture of your VPC by creating a private connection between
@@ -93,8 +97,10 @@ JSON
 
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Credential Guard for Windows instances
 
 Storage
+
+All content copied from https://docs.aws.amazon.com/.

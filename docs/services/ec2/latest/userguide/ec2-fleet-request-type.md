@@ -1,3 +1,7 @@
+---
+title: "EC2 Fleet and Spot Fleet request types"
+---
+
 # EC2 Fleet and Spot Fleet request types
 
 The request type for an EC2 Fleet or Spot Fleet determines whether the request is synchronous or
@@ -36,9 +40,11 @@ automatically replenishing any interrupted Spot Instances. When creating a Spot 
 type `maintain` using the console, select the **Maintain**
 **target capacity** checkbox
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Configuration
 options
 
 EC2 Fleet 'instant' type
+
+All content copied from https://docs.aws.amazon.com/.

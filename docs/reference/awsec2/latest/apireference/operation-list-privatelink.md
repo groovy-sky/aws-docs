@@ -1,3 +1,7 @@
+---
+title: "AWS PrivateLink actions"
+---
+
 # AWS PrivateLink actions
 
 The following API actions are available for AWS PrivateLink. To learn more about
@@ -51,8 +55,10 @@ Guide](../../../../services/vpc/latest/privatelink.md).
 
 - [ModifyVpcEndpointConnectionNotification](api-modifyvpcendpointconnectionnotification.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AWS Outposts actions
 
 Recycle Bin
+
+All content copied from https://docs.aws.amazon.com/.

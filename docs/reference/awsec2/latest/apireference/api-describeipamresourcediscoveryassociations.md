@@ -1,3 +1,7 @@
+---
+title: "DescribeIpamResourceDiscoveryAssociations"
+---
+
 # DescribeIpamResourceDiscoveryAssociations
 
 Describes resource discovery association with an Amazon VPC IPAM. An associated resource discovery is a resource discovery that has been associated with an IPAM..
@@ -100,8 +104,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describeipamresourcediscoveryassociations.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeIpamResourceDiscoveries
 
 DescribeIpams
+
+All content copied from https://docs.aws.amazon.com/.

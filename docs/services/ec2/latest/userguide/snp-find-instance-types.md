@@ -1,3 +1,7 @@
+---
+title: "Find EC2 instance types that support AMD SEV-SNP"
+---
+
 # Find EC2 instance types that support AMD SEV-SNP
 
 You can find instance types that support AMD SEV-SNP. The Amazon EC2 console
@@ -74,8 +78,10 @@ r6a.large
 r6a.xlarge
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AMD SEV-SNP
 
 Enable AMD SEV-SNP
+
+All content copied from https://docs.aws.amazon.com/.

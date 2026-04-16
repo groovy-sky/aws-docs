@@ -1,3 +1,7 @@
+---
+title: "Manage your Amazon EC2 resources"
+---
+
 # Manage your Amazon EC2 resources
 
 A _resource_ is an entity that you can work with. Amazon EC2 creates
@@ -32,9 +36,11 @@ Amazon EC2 Global View.
 
 - [Amazon EC2 service quotas](ec2-resource-limits.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Amazon File Cache
 
 Select a Region for
 your resources
+
+All content copied from https://docs.aws.amazon.com/.

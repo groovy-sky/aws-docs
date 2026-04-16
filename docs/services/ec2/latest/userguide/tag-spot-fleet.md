@@ -1,3 +1,7 @@
+---
+title: "Tag a new or existing Spot Fleet request and the instances and volumes it launches"
+---
+
 # Tag a new or existing Spot Fleet request and the instances and volumes it launches
 
 To help categorize and manage your Spot Fleet requests and the instances and volumes that it
@@ -433,8 +437,10 @@ aws ec2 describe-spot-fleet-requests \
 }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create a Spot Fleet
 
 Describe a Spot Fleet
+
+All content copied from https://docs.aws.amazon.com/.

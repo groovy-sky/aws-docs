@@ -1,3 +1,7 @@
+---
+title: "PathFilter"
+---
+
 # PathFilter
 
 Describes a set of filters for a path analysis. Use path filters to scope the analysis when
@@ -55,8 +59,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/pathfilter.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 PathComponent
 
 PathRequestFilter
+
+All content copied from https://docs.aws.amazon.com/.

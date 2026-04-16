@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot impaired Amazon EC2 Windows instance using EC2Rescue"
+---
+
 # Troubleshoot impaired Amazon EC2 Windows instance using EC2Rescue
 
 EC2Rescue for Windows Server is an easy-to-use tool that you run on an Amazon EC2 Windows Server
@@ -43,8 +47,10 @@ If you are using a Linux instance, see [Troubleshoot impaired Amazon EC2 Linux i
 
 - [Troubleshoot using EC2Rescue and Systems Manager](ec2rw-ssm.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Develop EC2Rescue modules
 
 Troubleshoot using EC2Rescue GUI
+
+All content copied from https://docs.aws.amazon.com/.

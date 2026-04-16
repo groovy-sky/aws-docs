@@ -1,3 +1,7 @@
+---
+title: "Disable an Amazon EC2 AMI"
+---
+
 # Disable an Amazon EC2 AMI
 
 You can disable an AMI to prevent it from being used for instance launches. You can't launch
@@ -159,7 +163,7 @@ Console
 
 3. From the filter bar, choose **Disabled images**.
 
-![The Disabled images filter.](../../../images/awsec2/latest/userguide/images/ami-filter-by-disabled-images-png.md)
+![The Disabled images filter.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ami-filter-by-disabled-images.png)
 
 AWS CLI
 
@@ -308,8 +312,10 @@ cmdlet.
 Enable-EC2Image -ImageId ami-0abcdef1234567890
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Deprecate an AMI
 
 Deregister an AMI
+
+All content copied from https://docs.aws.amazon.com/.

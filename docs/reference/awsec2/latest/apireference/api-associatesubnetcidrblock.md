@@ -1,3 +1,7 @@
+---
+title: "AssociateSubnetCidrBlock"
+---
+
 # AssociateSubnetCidrBlock
 
 Associates a CIDR block with your subnet. You can only associate a single IPv6 CIDR
@@ -124,8 +128,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/associatesubnetcidrblock.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AssociateSecurityGroupVpc
 
 AssociateTransitGatewayMulticastDomain
+
+All content copied from https://docs.aws.amazon.com/.

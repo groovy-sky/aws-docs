@@ -1,3 +1,7 @@
+---
+title: "Bring your own software licenses to Amazon EC2 Dedicated Hosts"
+---
+
 # Bring your own software licenses to Amazon EC2 Dedicated Hosts
 
 Dedicated Hosts allow you to use your existing per-socket, per-core, or per-VM software
@@ -31,8 +35,10 @@ To track how your images are used in AWS, enable host recording in AWS Config.
 You can use AWS Config to record configuration changes to a Dedicated Host and use the output as
 a data source for license reporting. For more information, see [Track Amazon EC2 Dedicated Host configuration changes using AWS Config](dedicated-hosts-aws-config.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Burstable instances on Dedicated Hosts
 
 Auto-placement and affinity
+
+All content copied from https://docs.aws.amazon.com/.

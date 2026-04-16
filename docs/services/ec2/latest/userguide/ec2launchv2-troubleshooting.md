@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot issues with the EC2Launch v2 agent"
+---
+
 # Troubleshoot issues with the EC2Launch v2 agent
 
 This section shows common troubleshooting scenarios for EC2Launch v2, information
@@ -520,8 +524,10 @@ EC2LaunchTelemetry: {telemetry property}
 {"type":"EC2AgentTelemetry","agentId":"WindowsLaunchAgentV2" ... }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Task definitions
 
 Version histories
+
+All content copied from https://docs.aws.amazon.com/.

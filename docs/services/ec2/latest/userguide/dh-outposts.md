@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 Dedicated Hosts on AWS Outposts"
+---
+
 # Amazon EC2 Dedicated Hosts on AWS Outposts
 
 AWS Outposts is a fully managed service that extends AWS infrastructure, services, APIs,
@@ -88,8 +92,10 @@ For more information, see [Amazon EC2 Dedicated Host auto-placement and host aff
 
 - Simplified automatic recovery is not supported for instances with Dedicated Host tenancy on Outposts.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 View shared Dedicated Hosts
 
 Allocate Dedicated Host on Outpost
+
+All content copied from https://docs.aws.amazon.com/.

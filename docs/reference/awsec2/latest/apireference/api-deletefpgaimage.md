@@ -1,3 +1,7 @@
+---
+title: "DeleteFpgaImage"
+---
+
 # DeleteFpgaImage
 
 Deletes the specified Amazon FPGA Image (AFI).
@@ -93,8 +97,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deletefpgaimage.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DeleteFlowLogs
 
 DeleteImageUsageReport
+
+All content copied from https://docs.aws.amazon.com/.

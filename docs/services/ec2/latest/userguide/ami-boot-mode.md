@@ -1,3 +1,7 @@
+---
+title: "Determine the boot mode parameter of an Amazon EC2 AMI"
+---
+
 # Determine the boot mode parameter of an Amazon EC2 AMI
 
 The AMI boot mode parameter is optional. An AMI can have one of the following boot
@@ -93,8 +97,10 @@ A value of `uefi` indicates that the AMI supports UEFI. A value of
 and Legacy BIOS. If there is no value, the instances launched from the AMI
 use the default value of the instance type.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Requirements for UEFI boot mode
 
 Instance type boot mode
+
+All content copied from https://docs.aws.amazon.com/.

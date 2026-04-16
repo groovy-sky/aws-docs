@@ -1,3 +1,7 @@
+---
+title: "BlobAttributeValue"
+---
+
 # BlobAttributeValue
 
 Describes Base64-encoded binary data.
@@ -12,8 +16,10 @@ Type: Base64-encoded binary data
 
 Required: No
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 BaselinePerformanceFactorsRequest
 
 BlockDeviceMapping
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Migrate to Nitro-based Amazon EC2 Dedicated Hosts"
+---
+
 # Migrate to Nitro-based Amazon EC2 Dedicated Hosts
 
 The Nitro System is a collection of hardware and software components built by AWS
@@ -133,8 +137,10 @@ After you have migrated your workloads from the Xen-based Dedicated Host to the 
 you can [release the Xen-based Dedicated Host](dedicated-hosts-releasing.md) if you no
 longer need it.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Release Dedicated Host
 
 Cross-account sharing
+
+All content copied from https://docs.aws.amazon.com/.

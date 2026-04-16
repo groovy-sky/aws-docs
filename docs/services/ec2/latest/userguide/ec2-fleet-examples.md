@@ -1,3 +1,7 @@
+---
+title: "Example CLI configurations for EC2 Fleet"
+---
+
 # Example CLI configurations for EC2 Fleet
 
 You can define your EC2 Fleet configuration in a JSON file, and then reference that file
@@ -932,8 +936,10 @@ see [InstanceRequirements](../../../../reference/awsec2/latest/apireference/api-
 }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Tutorial: Configure your EC2 Fleet to launch instances into Interruptible Capacity Reservations
 
 Example CLI configurations Spot Fleet
+
+All content copied from https://docs.aws.amazon.com/.

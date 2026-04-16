@@ -1,3 +1,7 @@
+---
+title: "Identity-based policies for Amazon EC2"
+---
+
 # Identity-based policies for Amazon EC2
 
 By default, users don't have permission to create or modify Amazon EC2 resources, or perform
@@ -562,8 +566,10 @@ diagnostic information. You can decode the message using the
 [DecodeAuthorizationMessage](../../../../reference/sts/latest/apireference/api-decodeauthorizationmessage.md) in the
 _AWS Security Token Service API Reference_, and [decode-authorization-message](../../../cli/latest/reference/sts/decode-authorization-message.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Identity and access management
 
 Example policies for the API
+
+All content copied from https://docs.aws.amazon.com/.

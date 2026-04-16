@@ -1,3 +1,7 @@
+---
+title: "Connect to your Linux instance using a public IP address and EC2 Instance Connect"
+---
+
 # Connect to your Linux instance using a public IP address and EC2 Instance Connect
 
 Amazon EC2 Instance Connect provides a secure way to connect to your Linux instances over Secure Shell
@@ -28,7 +32,7 @@ EC2 Instance Connect is available at no additional cost.
 
 ###### Region availability
 
-EC2 Instance Connect is available in all AWS Regions, except Asia Pacific (Taipei). It is not
+EC2 Instance Connect is available in all AWS Regions. It is not
 supported in Local Zones.
 
 ###### Contents
@@ -49,8 +53,10 @@ EC2 Instance Connect](ec2-instance-connect-set-up.md)
 For a blog post that discusses how to improve the security of your bastion hosts using
 EC2 Instance Connect, see [Securing your bastion hosts with Amazon EC2 Instance Connect](https://aws.amazon.com/blogs/infrastructure-and-automation/securing-your-bastion-hosts-with-amazon-ec2-instance-connect).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Connect using Session Manager
 
 Tutorial
+
+All content copied from https://docs.aws.amazon.com/.

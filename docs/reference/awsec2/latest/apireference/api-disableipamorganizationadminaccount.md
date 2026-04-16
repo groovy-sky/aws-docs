@@ -1,3 +1,7 @@
+---
+title: "DisableIpamOrganizationAdminAccount"
+---
+
 # DisableIpamOrganizationAdminAccount
 
 Disable the IPAM account. For more information, see [Enable integration with AWS Organizations](../../../../services/vpc/latest/ipam/enable-integ-ipam.md) in the _Amazon VPC IPAM User Guide_.
@@ -68,8 +72,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/disableipamorganizationadminaccount.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DisableInstanceSqlHaStandbyDetections
 
 DisableIpamPolicy
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Find supported macOS versions for your Amazon EC2 Mac Dedicated Host"
+---
+
 # Find supported macOS versions for your Amazon EC2 Mac Dedicated Host
 
 You can view the latest macOS versions supported by your Amazon EC2 Mac Dedicated Host. With this functionality, you can validate whether your Dedicated Host can support instance launches with your preferred macOS versions.
@@ -58,8 +62,10 @@ $ aws ec2 describe-mac-hosts --region us-east-1
   }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Configure SIP settings
 
 Subscribe to macOS AMI notifications
+
+All content copied from https://docs.aws.amazon.com/.

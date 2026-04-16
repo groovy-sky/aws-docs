@@ -1,3 +1,7 @@
+---
+title: "ReleaseIpamPoolAllocation"
+---
+
 # ReleaseIpamPoolAllocation
 
 Release an allocation within an IPAM pool. The Region you use should be the IPAM pool locale. The locale is the AWS Region where this IPAM pool is available for allocations. You can only use this action to release manual allocations. To remove an allocation for a resource without deleting the resource, set its monitored state to false using [ModifyIpamResourceCidr](api-modifyipamresourcecidr.md). For more information, see [Release an allocation](../../../../services/vpc/latest/ipam/release-alloc-ipam.md) in the _Amazon VPC IPAM User Guide_.
@@ -88,8 +92,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/releaseipampoolallocation.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ReleaseHosts
 
 ReplaceIamInstanceProfileAssociation
+
+All content copied from https://docs.aws.amazon.com/.

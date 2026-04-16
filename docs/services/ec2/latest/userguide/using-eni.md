@@ -1,3 +1,7 @@
+---
+title: "Elastic network interfaces"
+---
+
 # Elastic network interfaces
 
 An _elastic network interface_ is a logical networking component in a VPC that
@@ -184,8 +188,10 @@ the number of network interfaces that an instance type supports, see
 
 Instance typeNumber of network cards`c6in.32xlarge`2`c6in.metal`2`c8gb.48xlarge`2`c8gb.metal-48xl`2`c8gn.48xlarge`2`c8gn.metal-48xl`2`dl1.24xlarge`4`g6e.24xlarge`2`g6e.48xlarge`4`g7e.24xlarge`2`g7e.48xlarge`4`hpc6id.32xlarge`2`hpc7a.12xlarge`2`hpc7a.24xlarge`2`hpc7a.48xlarge`2`hpc7a.96xlarge`2`hpc8a.96xlarge`2`m6idn.32xlarge`2`m6idn.metal`2`m6in.32xlarge`2`m6in.metal`2`m8gb.48xlarge`2`m8gb.metal-48xl`2`m8gn.48xlarge`2`m8gn.metal-48xl`2`p4d.24xlarge`4`p4de.24xlarge`4`p5.48xlarge`32`p5e.48xlarge`32`p5en.48xlarge`16`p6-b200.48xlarge`8`p6-b300.48xlarge`17`p6e-gb200.36xlarge`17`r8gb.48xlarge`2`r8gb.metal-48xl`2`r8gn.48xlarge`2`r8gn.metal-48xl`2`r6idn.32xlarge`2`r6idn.metal`2`r6in.32xlarge`2`r6in.metal`2`trn1.32xlarge`8`trn1n.32xlarge`16`trn2.48xlarge`16`trn2u.48xlarge`16`u7in-16tb.224xlarge`2`u7in-24tb.224xlarge`2`u7in-32tb.224xlarge`2`u7inh-32tb.480xlarge`2
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Use reverse DNS for email applications
 
 IP addresses per network interface
+
+All content copied from https://docs.aws.amazon.com/.

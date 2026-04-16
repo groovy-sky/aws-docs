@@ -1,3 +1,7 @@
+---
+title: "VpcBlockPublicAccessOptions"
+---
+
 # VpcBlockPublicAccessOptions
 
 VPC Block Public Access (BPA) enables you to block resources in VPCs and subnets that you own in a Region from reaching or being reached from the internet through internet gateways and egress-only internet gateways. To learn more about VPC BPA, see [Block public access to VPCs and subnets](../../../../services/vpc/latest/userguide/security-vpc-bpa.md) in the _Amazon VPC User Guide_.
@@ -98,8 +102,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/vpcblockpublicaccessoptions.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 VpcBlockPublicAccessExclusion
 
 VpcCidrBlockAssociation
+
+All content copied from https://docs.aws.amazon.com/.

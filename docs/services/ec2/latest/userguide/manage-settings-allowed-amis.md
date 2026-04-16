@@ -1,3 +1,7 @@
+---
+title: "Manage the settings for Allowed AMIs"
+---
+
 # Manage the settings for Allowed AMIs
 
 You can manage the settings for Allowed AMIs. These settings are per Region per
@@ -541,8 +545,10 @@ your instances.
 For more information, see [Adding AWS Config rules](../../../config/latest/developerguide/evaluate-config-add-rules.md) and [ec2-instance-launched-with-allowed-ami](../../../config/latest/developerguide/ec2-instance-launched-with-allowed-ami.md) in the
 _AWS Config Developer Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Allowed AMIs
 
 Make your AMI public
+
+All content copied from https://docs.aws.amazon.com/.

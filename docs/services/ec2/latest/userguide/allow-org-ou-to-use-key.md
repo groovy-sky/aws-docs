@@ -1,3 +1,7 @@
+---
+title: "Allow organizations and OUs to use a KMS key"
+---
+
 # Allow organizations and OUs to use a KMS key
 
 If you share an AMI that is backed by encrypted snapshots, you must also allow the
@@ -90,8 +94,10 @@ For more example condition statements, see [aws:PrincipalOrgID](../../../iam/lat
 For information about cross-account access, see [Allowing users in other accounts to use a KMS key](../../../kms/latest/developerguide/key-policy-modifying-external-accounts.md) in the
 _AWS Key Management Service Developer Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Get the ARN of an organization or organizational unit
 
 Manage AMI sharing with an organization or OU
+
+All content copied from https://docs.aws.amazon.com/.

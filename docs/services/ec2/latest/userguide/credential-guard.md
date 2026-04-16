@@ -1,3 +1,7 @@
+---
+title: "Credential Guard for Windows instances"
+---
+
 # Credential Guard for Windows instances
 
 The AWS Nitro System supports Credential Guard for Amazon Elastic Compute Cloud (Amazon EC2) Windows instances. Credential Guard is a Windows virtualization-based
@@ -196,7 +200,7 @@ as **Not Configured**.
 The following image displays the VBS settings configured as described
     previously:
 
-![Virtualization Based Security Group Policy Object settings with Turn On Virtualization Based Security enabled.](../../../images/awsec2/latest/userguide/images/vbs-credential-guard-gpo-enabled-png.md)
+![Virtualization Based Security Group Policy Object settings with Turn On Virtualization Based Security enabled.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/vbs-credential-guard-gpo-enabled.png)
 
 9. Reboot the instance to apply the settings.
 
@@ -227,10 +231,12 @@ enable Credential Guard.
 
 The following image displays VBS is running as described previously:
 
-![An image of the Microsoft System Information Tool with the Virtualization-based security line showing a status of Running, confirming Credential Guard is running.](../../../images/awsec2/latest/userguide/images/vbs-credential-guard-msinfo32-enabled-png.md)
+![An image of the Microsoft System Information Tool with the Virtualization-based security line showing a status of Running, confirming Credential Guard is running.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/vbs-credential-guard-msinfo32-enabled.png)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Updating Attestable AMIs that have no interactive access
 
 AWS PrivateLink
+
+All content copied from https://docs.aws.amazon.com/.

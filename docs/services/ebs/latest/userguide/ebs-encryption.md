@@ -1,3 +1,7 @@
+---
+title: "Amazon EBS encryption"
+---
+
 # Amazon EBS encryption
 
 Use Amazon EBS encryption as a straight-forward encryption solution for your Amazon EBS resources
@@ -80,8 +84,10 @@ If you enable your account for encryption by default, volumes and snapshot copie
 created from unencrypted snapshots are always encrypted. Otherwise, you must specify
 the encryption parameters in the request. For more information, see [Enable encryption by default](encryption-by-default.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Local snapshots in Local Zones
 
 How EBS encryption works
+
+All content copied from https://docs.aws.amazon.com/.

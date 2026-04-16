@@ -1,3 +1,7 @@
+---
+title: "Create a key pair for your Amazon EC2 instance"
+---
+
 # Create a key pair for your Amazon EC2 instance
 
 You can use Amazon EC2 to create your key pairs, or you can use a third-party tool to create
@@ -355,8 +359,10 @@ Use the [Get-EC2KeyPair](../../../powershell/latest/reference/items/get-ec2keypa
 Get-EC2KeyPair -KeyName my-key-pair
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Key pairs
 
 Describe your key pairs
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "UEFI Secure Boot for Amazon EC2 instances"
+---
+
 # UEFI Secure Boot for Amazon EC2 instances
 
 UEFI Secure Boot builds on the long-standing secure boot process of Amazon EC2, and provides
@@ -18,8 +22,10 @@ prevents unauthorized modification of the instance boot flow.
 
 - [Create the AWS binary blob for UEFI Secure Boot](aws-binary-blob-creation.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 UEFI variables
 
 How UEFI Secure Boot works
+
+All content copied from https://docs.aws.amazon.com/.

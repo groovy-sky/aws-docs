@@ -1,3 +1,7 @@
+---
+title: "GetEbsDefaultKmsKeyId"
+---
+
 # GetEbsDefaultKmsKeyId
 
 Describes the default AWS KMS key for EBS encryption by default for your account in this Region.
@@ -63,8 +67,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/getebsdefaultkmskeyid.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 GetDefaultCreditSpecification
 
 GetEbsEncryptionByDefault
+
+All content copied from https://docs.aws.amazon.com/.

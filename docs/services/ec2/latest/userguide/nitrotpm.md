@@ -1,3 +1,7 @@
+---
+title: "NitroTPM for Amazon EC2 instances"
+---
+
 # NitroTPM for Amazon EC2 instances
 
 Nitro Trusted Platform Module (NitroTPM) is a virtual device that is provided by the [AWS Nitro System](https://aws.amazon.com/ec2/nitro) and conforms to the [TPM 2.0 specification](https://trustedcomputinggroup.org/resource/trusted-platform-module-2-0-a-brief-introduction). It securely stores artifacts (such as passwords, certificates,
@@ -40,8 +44,10 @@ that you use.
 
 - [Retrieve the public endorsement key](retrieve-ekpub.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Security group rules for different use cases
 
 Requirements
+
+All content copied from https://docs.aws.amazon.com/.

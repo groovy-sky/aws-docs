@@ -1,3 +1,7 @@
+---
+title: "Modify an EC2 Fleet"
+---
+
 # Modify an EC2 Fleet
 
 You can modify the total target capacity, Spot capacity, and On-Demand capacity of an
@@ -121,8 +125,10 @@ Edit-EC2Fleet `
     -ExcessCapacityTerminationPolicy "NoTermination"
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Describe an EC2 Fleet
 
 Delete an EC2 Fleet
+
+All content copied from https://docs.aws.amazon.com/.

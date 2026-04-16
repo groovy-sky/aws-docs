@@ -1,3 +1,7 @@
+---
+title: "View the state of a Capacity Reservation"
+---
+
 # View the state of a Capacity Reservation
 
 Amazon EC2 constantly monitors the state of your Capacity Reservations.
@@ -109,9 +113,11 @@ the future-dated Capacity Reservation request due to capacity constraints. You c
 unsupported requests for 30 days. The Capacity Reservation will not be
 delivered.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create a Capacity Reservation
 
 Launch instances into
 Capacity Reservation
+
+All content copied from https://docs.aws.amazon.com/.

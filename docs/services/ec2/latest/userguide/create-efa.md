@@ -1,3 +1,7 @@
+---
+title: "Create and attach an Elastic Fabric Adapter to an Amazon EC2 instance"
+---
+
 # Create and attach an Elastic Fabric Adapter to an Amazon EC2 instance
 
 You can create an EFA and attach it to an Amazon EC2 instance much like any other elastic
@@ -247,8 +251,10 @@ or [AWS ParallelCluster](../../../parallelcluster/latest/ug/what-is-aws-parallel
 
 For more information about creating launch templates, see [Create an Amazon EC2 launch template](create-launch-template.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Maximize network bandwidth
 
 Detach and delete an EFA
+
+All content copied from https://docs.aws.amazon.com/.

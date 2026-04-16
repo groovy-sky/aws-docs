@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Configure EC2 Fleet to use On-Demand Instances as the primary capacity"
+---
+
 # Tutorial: Configure EC2 Fleet to use On-Demand Instances as the primary capacity
 
 This tutorial uses a fictitious company called ABC Online to illustrate the process of
@@ -73,8 +77,10 @@ The allocation strategy determines that the On-Demand capacity is always
 fulfilled, while the balance of the target capacity is fulfilled as Spot if there is
 available capacity.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Tutorial: Configure EC2 Fleet to use instance weighting
 
 Tutorial: Configure EC2 Fleet to launch On-Demand Instances using targeted Capacity Reservations
+
+All content copied from https://docs.aws.amazon.com/.

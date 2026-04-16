@@ -1,3 +1,7 @@
+---
+title: "Manually recover instances that are not supported by Amazon EC2 Dedicated Host recovery"
+---
+
 # Manually recover instances that are not supported by Amazon EC2 Dedicated Host recovery
 
 Host recovery does not support recovering instances that use instance store
@@ -31,8 +35,10 @@ we recommend that you do the following:
 
 3. Terminate the original instance on the impaired Dedicated Host.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 View host recovery setting
 
 Host maintenance
+
+All content copied from https://docs.aws.amazon.com/.

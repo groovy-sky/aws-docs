@@ -1,3 +1,7 @@
+---
+title: "Manage detailed monitoring for your EC2 instances"
+---
+
 # Manage detailed monitoring for your EC2 instances
 
 Amazon CloudWatch provides two categories of monitoring: _basic monitoring_
@@ -151,8 +155,10 @@ cmdlet.
 Stop-EC2InstanceMonitoring -InstanceId i-1234567890abcdef0
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Instance alarms
 
 CloudWatch metrics
+
+All content copied from https://docs.aws.amazon.com/.

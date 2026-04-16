@@ -1,3 +1,7 @@
+---
+title: "Bring your own IP addresses (BYOIP) to Amazon EC2"
+---
+
 # Bring your own IP addresses (BYOIP) to Amazon EC2
 
 You can bring part or all of your publicly routable IPv4 or IPv6 address range from your
@@ -102,7 +106,7 @@ the RDAP records still need to be updated.
 - You can bring a total of five BYOIP IPv4 and IPv6 address ranges per AWS Region to
 your AWS account. You cannot adjust the quotas for BYOIP CIDRs using the Service Quotas
 console, but you can request a quota increase by contacting the AWS Support
-Center as described in [AWS service quotas](../../../../general/general/latest/gr/aws-service-limits.md)
+Center as described in [AWS service quotas](../../../../general/latest/gr/aws-service-limits.md)
 in the _AWS General Reference_.
 
 - You cannot share your IP address range with other accounts using AWS RAM unless you use
@@ -233,8 +237,10 @@ same network border group.
 You cannot provision or advertise BYOIPv6 address ranges in Local Zones at this
 time.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Hostname types
 
 Prerequisites
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Use EC2 Fast Launch for your Windows instances"
+---
+
 # Use EC2 Fast Launch for your Windows instances
 
 When you configure a Windows Server AMI for EC2 Fast Launch, Amazon EC2 creates
@@ -126,8 +130,10 @@ continues to launch more instances until the total number of snapshots
 available has reached the target resource count. The value for
 **Max parallel launches** must be 6 or greater.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Version history
 
 EC2 Fast Launch prerequisites
+
+All content copied from https://docs.aws.amazon.com/.

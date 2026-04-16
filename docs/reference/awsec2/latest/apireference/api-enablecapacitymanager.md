@@ -1,3 +1,7 @@
+---
+title: "EnableCapacityManager"
+---
+
 # EnableCapacityManager
 
 Enables EC2 Capacity Manager for your account. This starts data ingestion for your EC2 capacity usage across On-Demand, Spot, and Capacity Reservations.
@@ -60,6 +64,32 @@ Type: String
 
 For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
 
+## Examples
+
+### Example
+
+This example enables Capacity Manager with Organizations access for cross-account data aggregation.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=EnableCapacityManager
+&OrganizationsAccess=true
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```
+
+<EnableCapacityManagerResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+    <requestId>d4904fd9-82c2-4ea5-adfe-a9cc3EXAMPLE</requestId>
+    <capacityManagerStatus>enabled</capacityManagerStatus>
+    <organizationsAccess>true</organizationsAccess>
+</EnableCapacityManagerResponse>
+```
+
 ## See Also
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
@@ -84,8 +114,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/enablecapacitymanager.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 EnableAwsNetworkPerformanceMetricSubscription
 
 EnableEbsEncryptionByDefault
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Use your BYOIP address range in Amazon EC2"
+---
+
 # Use your BYOIP address range in Amazon EC2
 
 You can view and use the IPv4 and IPv6 address ranges that you've provisioned in your
@@ -63,8 +67,10 @@ aws ec2 get-associated-ipv6-pool-cidrs --pool-id pool-id --region us-east-1
 If you disassociate the IPv6 CIDR block from your VPC, it's released back into
 your IPv6 address pool.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Onboard your address range
 
 Elastic IP addresses
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Store and restore an AMI using S3"
+---
+
 # Store and restore an AMI using S3
 
 You can store an Amazon Machine Image (AMI) in an Amazon S3 bucket, copy the AMI to another S3
@@ -137,8 +141,10 @@ the store and restore APIs, and for data transfer. The APIs use S3 and the EBS D
 API (used internally by these APIs to access the snapshot data). For more information,
 see [Amazon S3 pricing](https://aws.amazon.com/s3/pricing) and [Amazon EBS pricing](https://aws.amazon.com/ebs/pricing).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 How AMI copy works
 
 How AMI store and restore works
+
+All content copied from https://docs.aws.amazon.com/.

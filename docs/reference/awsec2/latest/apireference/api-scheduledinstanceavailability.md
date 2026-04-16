@@ -1,3 +1,7 @@
+---
+title: "ScheduledInstanceAvailability"
+---
+
 # ScheduledInstanceAvailability
 
 Describes a schedule that is available for your Scheduled Instances.
@@ -118,8 +122,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/scheduledinstanceavailability.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ScheduledInstance
 
 ScheduledInstanceRecurrence
+
+All content copied from https://docs.aws.amazon.com/.

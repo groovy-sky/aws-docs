@@ -1,3 +1,7 @@
+---
+title: "Enable hibernation for an Amazon EC2 instance"
+---
+
 # Enable hibernation for an Amazon EC2 instance
 
 To hibernate an instance, you must first enable it for hibernation while launching the
@@ -399,8 +403,10 @@ are enabled for hibernation.
     -Filter @{Name="hibernation-options.configured"; Values="true"}).Instances
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Configure a Linux AMI to support hibernation
 
 Disable KASLR on an instance (Ubuntu only)
+
+All content copied from https://docs.aws.amazon.com/.

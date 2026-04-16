@@ -1,3 +1,7 @@
+---
+title: "Get started with EFA and NIXL for inference workloads on Amazon EC2"
+---
+
 # Get started with EFA and NIXL for inference workloads on Amazon EC2
 
 The NVIDIA Inference Xfer Library (NIXL) is a high-throughput, low-latency communication
@@ -1002,8 +1006,10 @@ and scenarios where the role distinction is not predetermined.
 
 - NIXL backend to `LIBFABRIC`, which enables NIXL traffic to go over EFA.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Get started with EFA and NCCL
 
 Maximize network bandwidth
+
+All content copied from https://docs.aws.amazon.com/.

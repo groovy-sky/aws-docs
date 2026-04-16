@@ -1,3 +1,7 @@
+---
+title: "Scheduled events for Amazon EC2 instances"
+---
+
 # Scheduled events for Amazon EC2 instances
 
 To ensure infrastructure reliability and performance, AWS can schedule events to
@@ -151,9 +155,11 @@ NotBeforeDeadline : 2020-04-05T11:00:00.000Z
 
 - [Create custom event windows for scheduled events that affect your Amazon EC2 instances](event-windows.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create alarm for instance state changes
 
 Manage instances scheduled
 to stop or retire
+
+All content copied from https://docs.aws.amazon.com/.

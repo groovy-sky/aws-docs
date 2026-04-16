@@ -1,3 +1,7 @@
+---
+title: "Add block device mappings to Amazon EC2 instance"
+---
+
 # Add block device mappings to Amazon EC2 instance
 
 By default, an instance that you launch includes any storage devices specified in the
@@ -432,9 +436,11 @@ name to the previous query, as shown here.
 PS C:\> Invoke-RestMethod -uri http://169.254.169.254/latest/meta-data/block-device-mapping/ephemeral0
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Add block device mapping to AMI
 
 How volumes are attached and mapped for Windows
 instances
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "InstanceMetadataDefaultsResponse"
+---
+
 # InstanceMetadataDefaultsResponse
 
 The default instance metadata service (IMDS) settings that were set at the account
@@ -99,8 +103,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/instancemetadatadefaultsresponse.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 InstanceMarketOptionsRequest
 
 InstanceMetadataOptionsRequest
+
+All content copied from https://docs.aws.amazon.com/.

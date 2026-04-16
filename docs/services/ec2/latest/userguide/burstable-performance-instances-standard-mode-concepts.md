@@ -1,3 +1,7 @@
+---
+title: "Standard mode concepts for burstable instances"
+---
+
 # Standard mode concepts for burstable instances
 
 The `standard` mode is a configuration option for burstable performance
@@ -182,8 +186,10 @@ CloudWatch metric `CPUCreditBalance`. For more information, see
 `CPUCreditBalance` in the [CloudWatch metrics\
 table](burstable-performance-instances-monitoring-cpu-credits.md#burstable-performance-instances-CW-metrics-table).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Standard mode
 
 Examples
+
+All content copied from https://docs.aws.amazon.com/.

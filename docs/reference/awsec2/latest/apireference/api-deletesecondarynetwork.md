@@ -1,3 +1,7 @@
+---
+title: "DeleteSecondaryNetwork"
+---
+
 # DeleteSecondaryNetwork
 
 Deletes a secondary network. You must delete all secondary subnets in the secondary network before you can delete the secondary network.
@@ -126,8 +130,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deletesecondarynetwork.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DeleteRouteTable
 
 DeleteSecondarySubnet
+
+All content copied from https://docs.aws.amazon.com/.

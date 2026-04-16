@@ -1,3 +1,7 @@
+---
+title: "Allocate an Amazon EC2 Dedicated Host on AWS Outposts"
+---
+
 # Allocate an Amazon EC2 Dedicated Host on AWS Outposts
 
 You allocate and use Dedicated Hosts on Outposts in the same way that would with Dedicated Hosts in an
@@ -118,8 +122,10 @@ New-EC2Host `
 3. Configure the instance as needed and then launch the instance. For more
     information, see [Launch Amazon EC2 instances on an Amazon EC2 Dedicated Host](launching-dedicated-hosts-instances.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Dedicated Hosts on Outposts
 
 Host recovery
+
+All content copied from https://docs.aws.amazon.com/.

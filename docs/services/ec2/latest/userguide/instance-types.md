@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 instance types"
+---
+
 # Amazon EC2 instance types
 
 When you launch an instance, the _instance type_ that you specify
@@ -265,8 +269,10 @@ the _Amazon Elastic Container Service Developer Guide_.
 information, see [Inferentia\
 support](../../../eks/latest/userguide/inferentia-support.md) in the _Amazon EKS User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Instances
 
 Find an instance type
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot Amazon EC2 Windows instance start issues"
+---
+
 # Troubleshoot Amazon EC2 Windows instance start issues
 
 The following are troubleshooting tips to help you solve password and activation issues with
@@ -514,8 +518,10 @@ behavior of Windows Update or your ability to manage update settings.
 6. Reopen the Windows Update Settings. You should not see the message "Some
     settings are managed by your organization."
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Windows instance RDP issues
 
 Windows instance issues
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 instance IP addressing"
+---
+
 # Amazon EC2 instance IP addressing
 
 Amazon EC2 and Amazon VPC support both the IPv4 and IPv6 addressing protocols. By default, Amazon VPC
@@ -378,8 +382,10 @@ known as the Amazon DNS server)
 
 - [AWS KMS servers](common-messages.md#activate-windows)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Regions and Zones
 
 IPv4 addresses
+
+All content copied from https://docs.aws.amazon.com/.

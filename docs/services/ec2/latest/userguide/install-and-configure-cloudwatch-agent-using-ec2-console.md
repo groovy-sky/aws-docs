@@ -1,3 +1,7 @@
+---
+title: "Install and configure the CloudWatch agent using the Amazon EC2 console to add additional metrics"
+---
+
 # Install and configure the CloudWatch agent using the Amazon EC2 console to add additional metrics
 
 Installing and configuring the CloudWatch agent using the Amazon EC2 console is in beta for
@@ -200,8 +204,10 @@ You can manually customize the configuration that the EC2 console created. For m
 information, see [Manually create or edit the CloudWatch agent configuration file](../../../amazoncloudwatch/latest/monitoring/cloudwatch-agent-configuration-file-details.md) in the
 _Amazon CloudWatch User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CloudWatch metrics
 
 Statistics for metrics
+
+All content copied from https://docs.aws.amazon.com/.

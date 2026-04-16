@@ -1,3 +1,7 @@
+---
+title: "Create an Amazon EC2 AMI using Windows Sysprep"
+---
+
 # Create an Amazon EC2 AMI using Windows Sysprep
 
 The Microsoft System Preparation (Windows Sysprep) tool creates a generalized version of
@@ -72,8 +76,10 @@ profile data or failure to complete Windows Sysprep.
 
 - Learn which [Sysprep Support for Server Roles](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/sysprep-support-for-server-roles).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Convert your S3-backed AMI
 
 Use Windows Sysprep with EC2Launch v2
+
+All content copied from https://docs.aws.amazon.com/.

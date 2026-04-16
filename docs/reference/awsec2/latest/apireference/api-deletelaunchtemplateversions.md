@@ -1,3 +1,7 @@
+---
+title: "DeleteLaunchTemplateVersions"
+---
+
 # DeleteLaunchTemplateVersions
 
 Deletes one or more versions of a launch template.
@@ -147,8 +151,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deletelaunchtemplateversions.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DeleteLaunchTemplate
 
 DeleteLocalGatewayRoute
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "AWS public certificates for instance identity document signatures"
+---
+
 # AWS public certificates for instance identity document signatures
 
 The following AWS public certificates can be used to verify the contents of an instance's
@@ -2808,8 +2812,10 @@ Qf8xdt1SaPKC26zJsrCkiMZJNm4aa8KqvhqBHVjV4NrGeVGCcdlmSDiL71Egk9kh
 -----END CERTIFICATE-----
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Verify instance identity document
 
 STIG compliance
+
+All content copied from https://docs.aws.amazon.com/.

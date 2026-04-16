@@ -1,3 +1,7 @@
+---
+title: "RouteServerRouteInstallationDetail"
+---
+
 # RouteServerRouteInstallationDetail
 
 Describes the installation status of a route in a route table.
@@ -40,8 +44,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/routeserverrouteinstallationdetail.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 RouteServerRoute
 
 RouteTable
+
+All content copied from https://docs.aws.amazon.com/.

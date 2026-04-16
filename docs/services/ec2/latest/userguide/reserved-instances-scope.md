@@ -1,3 +1,7 @@
+---
+title: "Regional and zonal Reserved Instances (scope)"
+---
+
 # Regional and zonal Reserved Instances (scope)
 
 When you purchase a Reserved Instance, you determine the scope of the Reserved Instance. The scope is either
@@ -63,8 +67,10 @@ You can't queue purchases for zonal Reserved Instances.
 
 For more information and examples, see [How Reserved Instance discounts are applied](apply-ri.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Reserved Instances
 
 Types of Reserved Instances (offering classes)
+
+All content copied from https://docs.aws.amazon.com/.

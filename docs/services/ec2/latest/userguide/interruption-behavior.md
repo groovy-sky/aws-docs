@@ -1,3 +1,7 @@
+---
+title: "Behavior of Spot Instance interruptions"
+---
+
 # Behavior of Spot Instance interruptions
 
 When you create a Spot request, you can specify the interruption behavior. The following
@@ -68,8 +72,10 @@ When Amazon EC2 interrupts a Spot Instance, it terminates the instance by defaul
 different interruption behavior, such as stop or hibernate. For more information,
 see [Terminate Amazon EC2 instances](terminating-instances.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Spot Instance interruptions
 
 Prepare for interruptions
+
+All content copied from https://docs.aws.amazon.com/.

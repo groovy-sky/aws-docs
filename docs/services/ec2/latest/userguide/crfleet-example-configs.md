@@ -1,3 +1,7 @@
+---
+title: "Example Capacity Reservation Fleet configurations"
+---
+
 # Example Capacity Reservation Fleet configurations
 
 The following example creates a Capacity Reservation Fleet that uses two instance types:
@@ -58,9 +62,11 @@ The following is the contents of
 ]
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Cancel
 
 Using service-linked
 roles
+
+All content copied from https://docs.aws.amazon.com/.

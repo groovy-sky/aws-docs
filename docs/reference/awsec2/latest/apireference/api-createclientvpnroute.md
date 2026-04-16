@@ -1,3 +1,7 @@
+---
+title: "CreateClientVpnRoute"
+---
+
 # CreateClientVpnRoute
 
 Adds a route to a network to a Client VPN endpoint. Each Client VPN endpoint has a route table that describes the
@@ -140,8 +144,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createclientvpnroute.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreateClientVpnEndpoint
 
 CreateCoipCidr
+
+All content copied from https://docs.aws.amazon.com/.

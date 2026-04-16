@@ -1,3 +1,7 @@
+---
+title: "Monitor your EC2 Fleet or Spot Fleet"
+---
+
 # Monitor your EC2 Fleet or Spot Fleet
 
 Effective monitoring of your EC2 Fleet or Spot Fleet is essential for maintaining optimal
@@ -18,9 +22,11 @@ efficiency.
 
 - [Monitor and programmatically respond to the events emitted by your EC2 Fleet or Spot Fleet using Amazon EventBridge](monitor-ec2-fleet-using-eventbridge.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Scheduled scaling
 
 Monitor your fleet using
 CloudWatch
+
+All content copied from https://docs.aws.amazon.com/.

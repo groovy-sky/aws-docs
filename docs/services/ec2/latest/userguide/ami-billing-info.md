@@ -1,3 +1,7 @@
+---
+title: "Understand AMI billing information"
+---
+
 # Understand AMI billing information
 
 There are many Amazon Machine Images (AMIs) to choose from when launching your instances, and
@@ -28,8 +32,10 @@ For more information about instance pricing, see
 
 - [Verify AMI charges on your bill](verify-ami-charges.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Monitor AMI events
 
 AMI billing fields
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "DescribeByoipCidrs"
+---
+
 # DescribeByoipCidrs
 
 Describes the IP address ranges that were provisioned for use with AWS resources
@@ -89,8 +93,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describebyoipcidrs.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeBundleTasks
 
 DescribeCapacityBlockExtensionHistory
+
+All content copied from https://docs.aws.amazon.com/.

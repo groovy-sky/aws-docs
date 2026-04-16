@@ -1,3 +1,7 @@
+---
+title: "Instance store temporary block storage for EC2 instances"
+---
+
 # Instance store temporary block storage for EC2 instances
 
 An _instance store_ provides temporary block-level storage for your EC2
@@ -19,7 +23,7 @@ volume is `ephemeral0`. With an instance type that supports four instance
 store volumes, the virtual device names of the four volumes are as follows: `ephemeral0`,
 `ephemeral1`, `ephemeral2` and `ephemeral3`.
 
-![Amazon EC2 instance storage](../../../images/awsec2/latest/userguide/images/instance-storage-png.md)
+![Amazon EC2 instance storage](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/instance_storage.png)
 
 ###### Instance store pricing
 
@@ -42,8 +46,10 @@ instance. Instance store volumes are included as part of the usage cost of the i
 
 - [Detailed performance statistics for Amazon EC2 instance store volumes](nvme-detailed-performance-stats.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 EBS cards
 
 Data persistence
+
+All content copied from https://docs.aws.amazon.com/.

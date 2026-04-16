@@ -1,3 +1,7 @@
+---
+title: "Placement groups for your Amazon EC2 instances"
+---
+
 # Placement groups for your Amazon EC2 instances
 
 To meet the needs of your workload, you can launch a group of
@@ -64,8 +68,10 @@ interruption in a placement group.
 
 - [Placement groups on AWS Outposts](placement-groups-outpost.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Examples
 
 Placement strategies
+
+All content copied from https://docs.aws.amazon.com/.

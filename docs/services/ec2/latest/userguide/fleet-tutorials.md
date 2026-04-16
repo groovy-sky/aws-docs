@@ -1,3 +1,7 @@
+---
+title: "Tutorials for EC2 Fleet"
+---
+
 # Tutorials for EC2 Fleet
 
 There are different ways to configure an EC2 Fleet. The configuration you choose depends on
@@ -59,9 +63,11 @@ reclaimed, EC2 terminates the instances after a 2-minute notice.
 
 [Tutorial: Configure your EC2 Fleet to launch instances into Interruptible Capacity Reservations](ec2-fleet-launch-instances-interruptible-cr-walkthrough.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Monitor your fleet
 using EventBridge
 
 Tutorial: Configure EC2 Fleet to use instance weighting
+
+All content copied from https://docs.aws.amazon.com/.

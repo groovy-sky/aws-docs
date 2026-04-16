@@ -1,3 +1,7 @@
+---
+title: "Initialize instance store volumes on EC2 instances"
+---
+
 # Initialize instance store volumes on EC2 instances
 
 Because of the way that Amazon EC2 virtualizes disks, the first write to any location on some
@@ -54,8 +58,10 @@ configuring software-based RAID, make sure to change the minimum reconstruction 
 echo $((30*1024)) > /proc/sys/dev/raid/speed_limit_min
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Enable swap volume for M1 and C1 instances
 
 Detailed performance statistics instance store volumes
+
+All content copied from https://docs.aws.amazon.com/.

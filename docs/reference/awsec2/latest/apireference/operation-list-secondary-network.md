@@ -1,3 +1,7 @@
+---
+title: "Secondary Networks actions"
+---
+
 # Secondary Networks actions
 
 The following API actions are available for Secondary Networks.
@@ -24,8 +28,10 @@ The following API actions are available for Secondary Networks.
 
 - Secondary interfaces are created through [RunInstances](api-runinstances.md) and deleted through [TerminateInstances](api-terminateinstances.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Amazon VPC actions
 
 Amazon VPC IPAM actions
+
+All content copied from https://docs.aws.amazon.com/.

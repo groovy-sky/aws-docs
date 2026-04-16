@@ -1,3 +1,7 @@
+---
+title: "CPU options for Amazon EC2 instances"
+---
+
 # CPU options for Amazon EC2 instances
 
 Many Amazon EC2 instances support simultaneous multithreading (SMT), which enables multiple
@@ -49,8 +53,10 @@ you're charged the same as instances that are launched with the default CPU opti
 
 - [Optimize CPUs](optimize-cpu.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Enable EBS optimization
 
 Rules for specifying CPU options
+
+All content copied from https://docs.aws.amazon.com/.

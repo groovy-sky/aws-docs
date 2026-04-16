@@ -1,3 +1,7 @@
+---
+title: "Modify supported instance types for an existing Amazon EC2 Dedicated Host"
+---
+
 # Modify supported instance types for an existing Amazon EC2 Dedicated Host
 
 You can modify a Dedicated Host to change the instance types that it supports. If it
@@ -127,8 +131,10 @@ Edit-EC2Host `
     -HostId h-012a3456b7890cdef
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Modify Dedicated Host auto-placement
 
 Modify tenancy and affinity for an instance
+
+All content copied from https://docs.aws.amazon.com/.

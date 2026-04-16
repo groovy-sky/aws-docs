@@ -1,3 +1,7 @@
+---
+title: "DescribeFleetHistory"
+---
+
 # DescribeFleetHistory
 
 Describes the events for the specified EC2 Fleet during the specified time.
@@ -143,8 +147,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describefleethistory.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeFastSnapshotRestores
 
 DescribeFleetInstances
+
+All content copied from https://docs.aws.amazon.com/.

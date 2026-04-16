@@ -1,3 +1,7 @@
+---
+title: "CpuOptionsRequest"
+---
+
 # CpuOptionsRequest
 
 The CPU options for the instance. Both the core count and threads per core must be
@@ -57,8 +61,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/cpuoptionsrequest.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CpuOptions
 
 CpuPerformanceFactor
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Grant permissions to attach an IAM role to an instance"
+---
+
 # Grant permissions to attach an IAM role to an instance
 
 The identities in your AWS account, such as IAM users, must have specific
@@ -59,8 +63,10 @@ JSON
 To grant permissions to complete the same tasks using the Amazon EC2 console,
 you must also include the `iam:ListInstanceProfiles` API action.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Retrieve security credentials
 
 Attach a role to an instance
+
+All content copied from https://docs.aws.amazon.com/.

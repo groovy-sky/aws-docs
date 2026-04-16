@@ -1,3 +1,7 @@
+---
+title: "ENA queues"
+---
+
 # ENA queues
 
 ENA queues are allocated to network interfaces with default static limits based on
@@ -126,8 +130,10 @@ aws ec2 modify-network-interface-attribute \
 --attachment AttachmentId=eni-attach-12345678,DefaultEnaQueueCount=true
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Enable ENA for an instance
 
 Troubleshoot ENA on Linux
+
+All content copied from https://docs.aws.amazon.com/.

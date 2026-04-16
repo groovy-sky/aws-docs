@@ -1,3 +1,7 @@
+---
+title: "Cross-origin resource sharing support and Amazon EC2"
+---
+
 # Cross-origin resource sharing support and Amazon EC2
 
 The Amazon EC2 API supports cross-origin resource sharing (CORS). CORS defines a way for client
@@ -130,8 +134,10 @@ REST.
 actual request. Amazon EC2 accepts any headers in preflight requests. If the HTTP headers are
 not relevant in the actual request, they are ignored.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Troubleshooting API request errors
 
 VM Import Manifest
+
+All content copied from https://docs.aws.amazon.com/.

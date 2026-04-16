@@ -1,3 +1,7 @@
+---
+title: "Disable KASLR on an instance (Ubuntu only)"
+---
+
 # Disable KASLR on an instance (Ubuntu only)
 
 To run hibernation on a newly launched instance with Ubuntu 16.04 LTS (Xenial Xerus),
@@ -54,9 +58,11 @@ cat /proc/cmdline
 The output of the command should include the `nokaslr`
     option.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Enable instance
 hibernation
 
 Hibernate an instance
+
+All content copied from https://docs.aws.amazon.com/.

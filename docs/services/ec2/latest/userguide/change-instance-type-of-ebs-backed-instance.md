@@ -1,3 +1,7 @@
+---
+title: "Change the instance type for your Amazon EC2 instance"
+---
+
 # Change the instance type for your Amazon EC2 instance
 
 Use the following instructions to change the instance type of an Amazon EBS-backed instance if
@@ -128,8 +132,10 @@ password reset, see [Configure initialization tasks](ec2launch-config.md#ec2laun
 PS C:\> C:\ProgramData\Amazon\EC2-Windows\Launch\Scripts\InitializeInstance.ps1 -Schedule
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Compatibility
 
 Migrate to a new instance type
+
+All content copied from https://docs.aws.amazon.com/.

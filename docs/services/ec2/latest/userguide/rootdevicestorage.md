@@ -1,3 +1,7 @@
+---
+title: "Root volumes for your Amazon EC2 instances"
+---
+
 # Root volumes for your Amazon EC2 instances
 
 When you launch an instance, we create a _root volume_ for the instance.
@@ -40,7 +44,7 @@ you can modify the properties of the instance, change its size, or update the ke
 using, or you can attach its root volume to a different running instance for debugging or any
 other purpose. For more information, see [Amazon EBS volumes](../../../ebs/latest/userguide/ebs-volumes.md).
 
-![Root volume and other Amazon EBS volumes of an instance launched from an Amazon EBS-backed AMI](../../../images/awsec2/latest/userguide/images/ebs-backed-instance-png.md)
+![Root volume and other Amazon EBS volumes of an instance launched from an Amazon EBS-backed AMI](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ebs_backed_instance.png)
 
 ###### Limitation
 
@@ -84,7 +88,7 @@ this data is deleted when the instance is terminated (instances with an instance
 volume do not support the **Stop** action) or if it fails (such as if an
 underlying drive has issues). For more information, see [Instance store temporary block storage for EC2 instances](instancestorage.md).
 
-![Root volume on an Amazon EC2 instance launched from an Amazon S3-backed AMI](../../../images/awsec2/latest/userguide/images/instance-store-backed-instance-png.md)
+![Root volume on an Amazon EC2 instance launched from an Amazon S3-backed AMI](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/instance_store_backed_instance.png)
 
 ###### Supported instance types
 
@@ -99,8 +103,10 @@ recommend that you distribute the data on your instance store volumes across mul
 Availability Zones. You should also back up critical data from your instance store volumes
 to persistent storage on a regular basis.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Detailed performance statistics instance store volumes
 
 Keep root volume after instance termination
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "AddIpamOrganizationalUnitExclusion"
+---
+
 # AddIpamOrganizationalUnitExclusion
 
 Add an Organizational Unit (OU) exclusion to your IPAM. If your IPAM is integrated with AWS Organizations and you add an organizational unit (OU) exclusion, IPAM will not manage the IP addresses in accounts in that OU exclusion. There is a limit on the number of exclusions you can create. For more information, see [Quotas for your IPAM](../../../../services/vpc/latest/ipam/quotas-ipam.md) in the _Amazon VPC IPAM User Guide_.
@@ -38,8 +42,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/addipamorganizationalunitexclusion.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AddIpamOperatingRegion
 
 AdditionalDetail
+
+All content copied from https://docs.aws.amazon.com/.

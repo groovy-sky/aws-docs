@@ -1,3 +1,7 @@
+---
+title: "Add or replace a public key on your Linux instance"
+---
+
 # Add or replace a public key on your Linux instance
 
 If you lose a private key, you lose access to any instances that use the key
@@ -73,8 +77,10 @@ If you remove all the public keys from an instance and disconnect from the insta
 you can't connect to the instance again unless you've configured an alternate way to
 log in.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Delete your key pair
 
 Verify the fingerprint
+
+All content copied from https://docs.aws.amazon.com/.

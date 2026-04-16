@@ -1,3 +1,7 @@
+---
+title: "Enable or stop using NitroTPM on an Amazon EC2 instance"
+---
+
 # Enable or stop using NitroTPM on an Amazon EC2 instance
 
 You can enable an Amazon EC2 instance for NitroTPM only at launch. Once an instance is enabled
@@ -28,8 +32,10 @@ disabling the TPM 2.0 device driver on the instance by using the following tools
 
 For more information about disabling the device driver, see the documentation for your operating system.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Verify that an AMI is enabled for NitroTPM
 
 Verify that an instance is enabled for NitroTPM
+
+All content copied from https://docs.aws.amazon.com/.

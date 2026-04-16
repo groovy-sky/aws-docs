@@ -1,3 +1,7 @@
+---
+title: "Set the MTU for your Amazon EC2 instances"
+---
+
 # Set the MTU for your Amazon EC2 instances
 
 The maximum transmission unit (MTU) of a network connection is the size, in bytes,
@@ -309,8 +313,10 @@ Use the following command to disable jumbo frames.
 netsh interface ipv4 set subinterface "Ethernet" mtu=1500
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Network MTU
 
 Virtual private clouds
+
+All content copied from https://docs.aws.amazon.com/.

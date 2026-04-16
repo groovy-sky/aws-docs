@@ -1,3 +1,7 @@
+---
+title: "Copy an Amazon EC2 AMI"
+---
+
 # Copy an Amazon EC2 AMI
 
 When you need a consistent Amazon EC2 instance configuration across multiple Regions, you can use
@@ -462,8 +466,10 @@ Use the [Unregister-EC2Image](../../../powershell/latest/reference/items/unregis
 Unregister-EC2Image -ImageId ami-0abcdef1234567890
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Use Windows Sysprep with EC2Config
 
 Permissions
+
+All content copied from https://docs.aws.amazon.com/.

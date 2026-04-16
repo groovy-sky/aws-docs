@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot issues with Amazon EC2 Windows instances"
+---
+
 # Troubleshoot issues with Amazon EC2 Windows instances
 
 The following are troubleshooting tips to help you solve the issues with Amazon EC2 Windows
@@ -346,8 +350,10 @@ you are not familiar with the Windows Registry or how to safely make changes usi
     DISKPART> uniqueid disk id=E9EB3AA5
     ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Windows instance start issues
 
 Reset Windows administrator password
+
+All content copied from https://docs.aws.amazon.com/.

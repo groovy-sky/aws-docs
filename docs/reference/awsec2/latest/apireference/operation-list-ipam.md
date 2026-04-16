@@ -1,3 +1,7 @@
+---
+title: "Amazon VPC IPAM actions"
+---
+
 # Amazon VPC IPAM actions
 
 The following API actions are available for Amazon VPC IP Address Manager (IPAM). For more
@@ -108,8 +112,10 @@ Guide](../../../../services/vpc/latest/ipam.md).
 
 - [ModifyIpamScope](api-modifyipamscope.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Secondary Networks actions
 
 AWS Wavelength actions
+
+All content copied from https://docs.aws.amazon.com/.

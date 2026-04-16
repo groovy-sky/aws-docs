@@ -1,3 +1,7 @@
+---
+title: "ClientRouteEnforcementResponseOptions"
+---
+
 # ClientRouteEnforcementResponseOptions
 
 The current status of Client Route Enforcement.
@@ -27,8 +31,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/clientrouteenforcementresponseoptions.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ClientRouteEnforcementOptions
 
 ClientVpnAuthentication
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Service-linked role for Spot Instance requests"
+---
+
 # Service-linked role for Spot Instance requests
 
 Amazon EC2 uses service-linked roles for the permissions that it requires to call other
@@ -102,8 +106,10 @@ aws kms create-grant \
       --operations "Decrypt" "Encrypt" "GenerateDataKey" "GenerateDataKeyWithoutPlaintext" "CreateGrant" "DescribeKey" "ReEncryptFrom" "ReEncryptTo"
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Spot Instance data feed
 
 Spot Instance quotas
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Test whether enhanced networking is enabled"
+---
+
 # Test whether enhanced networking is enabled
 
 You can test whether enhanced networking is enabled in your instances or your AMIs.
@@ -128,8 +132,10 @@ supports-register-dump: no
 supports-priv-flags: no
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Elastic Network Adapter (ENA)
 
 Enable ENA for an instance
+
+All content copied from https://docs.aws.amazon.com/.

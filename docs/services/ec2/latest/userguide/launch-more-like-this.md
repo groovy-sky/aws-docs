@@ -1,3 +1,7 @@
+---
+title: "Launch an EC2 instance using details from an existing instance"
+---
+
 # Launch an EC2 instance using details from an existing instance
 
 The Amazon EC2 console provides a **Launch more like this**
@@ -92,8 +96,10 @@ When you are ready to launch your instance, choose **Launch**
 5. If the instance fails to launch or the state immediately goes to
     `terminated` instead of `running`, see [Troubleshoot Amazon EC2 instance launch issues](troubleshooting-launch.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Launch using a launch template
 
 Launch from an AWS Marketplace AMI
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Improve network latency for Linux based EC2 instances"
+---
+
 # Improve network latency for Linux based EC2 instances
 
 Network latency is the amount of time it takes for a packet of data to travel from its
@@ -158,10 +162,12 @@ To disable interrupt modification and dynamic interrupt moderation, use the foll
 [ec2-user ~]$ sudo ethtool -C interface adaptive-rx off rx-usecs 0 tx-usecs 0
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Monitor network
 performance
 
 Nitro performance
 considerations
+
+All content copied from https://docs.aws.amazon.com/.

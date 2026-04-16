@@ -1,3 +1,7 @@
+---
+title: "ImageUsageReportEntry"
+---
+
 # ImageUsageReportEntry
 
 A single entry in an image usage report, detailing how an image is being used by a
@@ -64,8 +68,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/imageusagereportentry.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ImageUsageReport
 
 ImageUsageResourceType
+
+All content copied from https://docs.aws.amazon.com/.

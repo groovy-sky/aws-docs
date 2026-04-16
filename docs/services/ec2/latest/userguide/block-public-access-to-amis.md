@@ -1,3 +1,7 @@
+---
+title: "Understand block public access for AMIs"
+---
+
 # Understand block public access for AMIs
 
 To prevent the public sharing of your AMIs, you can enable _block public access_
@@ -52,8 +56,10 @@ Disabled
 **Block public access for AMIs** is disabled by default for
 your account, even if you subsequently made all the AMIs private.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Make your AMI public
 
 Manage the block public access setting for AMIs
+
+All content copied from https://docs.aws.amazon.com/.

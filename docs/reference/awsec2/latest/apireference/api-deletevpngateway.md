@@ -1,3 +1,7 @@
+---
+title: "DeleteVpnGateway"
+---
+
 # DeleteVpnGateway
 
 Deletes the specified virtual private gateway. You must first detach the virtual
@@ -97,8 +101,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deletevpngateway.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DeleteVpnConnectionRoute
 
 DeprovisionByoipCidr
+
+All content copied from https://docs.aws.amazon.com/.

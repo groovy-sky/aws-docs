@@ -1,3 +1,7 @@
+---
+title: "Check when an Amazon EC2 AMI was last used"
+---
+
 # Check when an Amazon EC2 AMI was last used
 
 Amazon EC2 automatically tracks the date and time when an AMI was last used to launch an
@@ -111,8 +115,10 @@ The following is example output.
 2025-02-17T20:22:19Z
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 View your AMI usage
 
 Identify your resources referencing specified AMIs
+
+All content copied from https://docs.aws.amazon.com/.

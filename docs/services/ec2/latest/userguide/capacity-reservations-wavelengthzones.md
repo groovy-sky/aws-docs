@@ -1,3 +1,7 @@
+---
+title: "Capacity Reservations in Wavelength Zones"
+---
+
 # Capacity Reservations in Wavelength Zones
 
 _AWS Wavelength_ enables developers to build applications that deliver
@@ -43,8 +47,10 @@ _Guide_.
     target it by ID) that's required for the Capacity Reservation that you created in the Wavelength.
     For more information, see [Launch instances into an existing Capacity Reservation](capacity-reservations-launch.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Capacity Reservations in Local Zones
 
 Capacity Reservations on AWS Outposts
+
+All content copied from https://docs.aws.amazon.com/.

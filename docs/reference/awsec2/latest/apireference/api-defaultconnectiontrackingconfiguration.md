@@ -1,3 +1,7 @@
+---
+title: "DefaultConnectionTrackingConfiguration"
+---
+
 # DefaultConnectionTrackingConfiguration
 
 Indicates default conntrack information for the instance type. For more
@@ -40,8 +44,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/defaultconnectiontrackingconfiguration.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DeclarativePoliciesReport
 
 DeleteFleetError
+
+All content copied from https://docs.aws.amazon.com/.

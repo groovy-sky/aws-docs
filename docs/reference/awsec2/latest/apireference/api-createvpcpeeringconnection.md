@@ -1,3 +1,7 @@
+---
+title: "CreateVpcPeeringConnection"
+---
+
 # CreateVpcPeeringConnection
 
 Requests a VPC peering connection between two VPCs: a requester VPC that you own and
@@ -207,8 +211,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createvpcpeeringconnection.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreateVpcEndpointServiceConfiguration
 
 CreateVpnConcentrator
+
+All content copied from https://docs.aws.amazon.com/.

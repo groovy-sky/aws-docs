@@ -1,3 +1,7 @@
+---
+title: "Instance identity documents for Amazon EC2 instances"
+---
+
 # Instance identity documents for Amazon EC2 instances
 
 Each instance that you launch has an instance identity document that provides information about the instance itself.
@@ -71,8 +75,10 @@ The Region in which the instance is running.
 
 The version of the instance identity document format.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Detect whether a host is an EC2 instance
 
 Retrieve the instance identity document
+
+All content copied from https://docs.aws.amazon.com/.

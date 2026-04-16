@@ -1,3 +1,7 @@
+---
+title: "Retrieve the public endorsement key for an EC2 instance"
+---
+
 # Retrieve the public endorsement key for an EC2 instance
 
 You can securely retrieve the public endorsement key for an instance at any time.
@@ -101,8 +105,10 @@ Get-EC2InstanceTpmEkPub `
     -KeyType rsa-2048
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Verify that an instance is enabled for NitroTPM
 
 EC2 instance attestation
+
+All content copied from https://docs.aws.amazon.com/.

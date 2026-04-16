@@ -1,3 +1,7 @@
+---
+title: "Remove a Capacity Reservation from a group"
+---
+
 # Remove a Capacity Reservation from a group
 
 You can use the following examples to remove a Capacity Reservation from a group.
@@ -36,8 +40,10 @@ Remove-RGResource `
         "arn:aws:ec2:sa-east-1:123456789012:capacity-reservation/cr-54321abcdef567890"
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Add Capacity Reservation to group
 
 Delete group
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot impaired Windows instance with EC2Rescue and Systems Manager"
+---
+
 # Troubleshoot impaired Windows instance with EC2Rescue and Systems Manager
 
 Support provides you with a Systems Manager Run Command document to interface with your
@@ -175,8 +179,10 @@ aws ssm send-command --instance-ids "i-0cb2b964d3e14fd9f" --document-name "AWSSu
 In this example, the KMS key is
 `a133dc3c-a2g4-4fc6-a873-6c0720104bf0`.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Troubleshoot using EC2Rescue CLI
 
 EC2 Serial Console
+
+All content copied from https://docs.aws.amazon.com/.

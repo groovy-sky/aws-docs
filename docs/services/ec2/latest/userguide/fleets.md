@@ -1,3 +1,7 @@
+---
+title: "EC2 Fleet and Spot Fleet"
+---
+
 # EC2 Fleet and Spot Fleet
 
 EC2 Fleet and Spot Fleet are designed to be a useful way to launch a fleet of tens, hundreds, or
@@ -67,9 +71,11 @@ reserve On-Demand capacity. A fleet can also include [Capacity Blocks for ML](ec
 GPU instances on a future date to support short duration machine
 learning (ML) workloads.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Option 3: Manually connect
 
 Which fleet method to
 use?
+
+All content copied from https://docs.aws.amazon.com/.

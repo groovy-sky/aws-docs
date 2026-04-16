@@ -1,3 +1,7 @@
+---
+title: "Install the ENA driver on EC2 Windows instances"
+---
+
 # Install the ENA driver on EC2 Windows instances
 
 If your instance isn't based on one of the latest Windows Amazon Machine Images
@@ -197,8 +201,10 @@ about the device driver package selection process, see
 Windows selects a driver package for a device](https://learn.microsoft.com/en-us/windows-hardware/drivers/install/how-windows-selects-a-driver-for-a-device)
 on the _Microsoft documentation website_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Install gaming drivers
 
 ENA Windows driver releases
+
+All content copied from https://docs.aws.amazon.com/.

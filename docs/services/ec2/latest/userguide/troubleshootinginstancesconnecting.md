@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot issues connecting to your Amazon EC2 Linux instance"
+---
+
 # Troubleshoot issues connecting to your Amazon EC2 Linux instance
 
 The following information and common errors can help you troubleshoot connecting to your
@@ -1069,8 +1073,10 @@ file when you connect to your instance.
 Select the temporary instance, and choose **Instance state**,
 **Terminate (delete) instance**.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Common screenshots for Windows instances
 
 Linux instance failed status checks
+
+All content copied from https://docs.aws.amazon.com/.

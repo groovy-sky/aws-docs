@@ -1,3 +1,7 @@
+---
+title: "GetIpamDiscoveredAccounts"
+---
+
 # GetIpamDiscoveredAccounts
 
 Gets IPAM discovered accounts. A discovered account is an AWS account that is monitored under a resource discovery. If you have integrated IPAM with AWS Organizations, all accounts in the organization are discovered accounts. Only the IPAM account can get all discovered accounts in the organization.
@@ -108,8 +112,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/getipamdiscoveredaccounts.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 GetIpamAddressHistory
 
 GetIpamDiscoveredPublicAddresses
+
+All content copied from https://docs.aws.amazon.com/.

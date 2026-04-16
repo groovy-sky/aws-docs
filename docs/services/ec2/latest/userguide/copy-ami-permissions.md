@@ -1,3 +1,7 @@
+---
+title: "Grant permissions to copy Amazon EC2 AMIs"
+---
+
 # Grant permissions to copy Amazon EC2 AMIs
 
 To copy an EBS-backed or Amazon S3-backed AMI, you need the following IAM permissions:
@@ -174,8 +178,10 @@ Amazon S3-backed AMI to an individual Region. After that, the Amazon S3 bucket t
 already created in the Region is used to store all future AMIs that you copy
 to that Region.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Copy an AMI
 
 How AMI copy works
+
+All content copied from https://docs.aws.amazon.com/.

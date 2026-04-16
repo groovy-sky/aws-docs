@@ -1,3 +1,7 @@
+---
+title: "Modify an EC2 Instance Connect Endpoint"
+---
+
 # Modify an EC2 Instance Connect Endpoint
 
 You can modify existing EC2 Instance Connect Endpoints using the AWS CLI or an SDK. The Amazon EC2 console
@@ -145,8 +149,10 @@ The following is example output.
 update-complete
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create an EC2 Instance Connect Endpoint
 
 Delete an EC2 Instance Connect Endpoint
+
+All content copied from https://docs.aws.amazon.com/.

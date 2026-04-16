@@ -1,3 +1,7 @@
+---
+title: "DeleteCapacityManagerDataExport"
+---
+
 # DeleteCapacityManagerDataExport
 
 Deletes an existing Capacity Manager data export configuration. This stops future scheduled exports but does not delete previously exported files from S3.
@@ -43,6 +47,31 @@ Type: String
 
 For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
 
+## Examples
+
+### Example
+
+This example deletes a data export configuration.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=DeleteCapacityManagerDataExport
+&CapacityManagerDataExportId=cmde-0abcd1234EXAMPLE
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```
+
+<DeleteCapacityManagerDataExportResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+    <requestId>d4904fd9-82c2-4ea5-adfe-a9cc3EXAMPLE</requestId>
+    <capacityManagerDataExportId>cmde-0abcd1234EXAMPLE</capacityManagerDataExportId>
+</DeleteCapacityManagerDataExportResponse>
+```
+
 ## See Also
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
@@ -67,8 +96,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deletecapacitymanagerdataexport.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreateVpnGateway
 
 DeleteCarrierGateway
+
+All content copied from https://docs.aws.amazon.com/.

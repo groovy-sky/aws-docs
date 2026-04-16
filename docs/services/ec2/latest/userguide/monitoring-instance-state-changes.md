@@ -1,3 +1,7 @@
+---
+title: "State change events for Amazon EC2 instances"
+---
+
 # State change events for Amazon EC2 instances
 
 Amazon EC2 sends an `EC2 Instance State-change Notification` event to Amazon EventBridge
@@ -46,8 +50,10 @@ then the `running` state. When you stop an instance, it enters the
 terminate an instance, it enters the `shutting-down` state and then the
 `terminated` state. For more information, see [Amazon EC2 instance state changes](ec2-instance-lifecycle.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create status check alarms
 
 Create alarm for instance state changes
+
+All content copied from https://docs.aws.amazon.com/.

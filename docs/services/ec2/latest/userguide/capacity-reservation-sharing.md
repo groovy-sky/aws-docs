@@ -1,3 +1,7 @@
+---
+title: "Shared Capacity Reservations"
+---
+
 # Shared Capacity Reservations
 
 Capacity Reservation sharing enables Capacity Reservation owners to share their reserved capacity with other AWS
@@ -127,8 +131,10 @@ Instances launched into the shared capacity by consumers count towards the Capac
 owner's On-Demand Instance limit. Consumers' instance limits are a sum of their own On-Demand Instance limits
 and the capacity available in the shared Capacity Reservations to which they have access.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Capacity Reservations on AWS Outposts
 
 Share a Capacity Reservation
+
+All content copied from https://docs.aws.amazon.com/.

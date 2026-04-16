@@ -1,3 +1,7 @@
+---
+title: "MetricValue"
+---
+
 # MetricValue
 
 Represents a single metric value with its associated statistic, such as the sum or average of unused capacity hours.
@@ -32,8 +36,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/metricvalue.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 MetricPoint
 
 ModifyTransitGatewayOptions
+
+All content copied from https://docs.aws.amazon.com/.

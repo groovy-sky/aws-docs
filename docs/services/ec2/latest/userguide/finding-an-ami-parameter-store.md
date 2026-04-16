@@ -1,3 +1,7 @@
+---
+title: "Reference the latest AMIs using Systems Manager public parameters"
+---
+
 # Reference the latest AMIs using Systems Manager public parameters
 
 AWS Systems Manager provides public parameters for public AMIs maintained by AWS. You can use the
@@ -116,8 +120,10 @@ instance using the latest AMI for Windows Server 2022.
 For more examples that use Systems Manager parameters, see [Query for the latest Amazon Linux AMI IDs Using AWS Systems Manager Parameter Store](https://aws.amazon.com/blogs/compute/query-for-the-latest-amazon-linux-ami-ids-using-aws-systems-manager-parameter-store)
 and [Query for the Latest Windows AMI Using AWS Systems Manager Parameter Store](https://aws.amazon.com/blogs/mt/query-for-the-latest-windows-ami-using-systems-manager-parameter-store).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Systems Manager parameters
 
 Paid AMIs in the AWS Marketplace
+
+All content copied from https://docs.aws.amazon.com/.

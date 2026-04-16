@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Configure EC2 Fleet to launch On-Demand Instances using targeted Capacity Reservations"
+---
+
 # Tutorial: Configure EC2 Fleet to launch On-Demand Instances using targeted Capacity Reservations
 
 This tutorial walks you through all the steps that you must perform so that your EC2 Fleet
@@ -308,8 +312,10 @@ all of the Capacity Reservations in all of the pools were used.
 }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Tutorial: Configure EC2 Fleet to use On-Demand Instances as the primary capacity
 
 Tutorial: Configure your EC2 Fleet to launch instances into Capacity Blocks
+
+All content copied from https://docs.aws.amazon.com/.

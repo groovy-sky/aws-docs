@@ -1,3 +1,7 @@
+---
+title: "CreateInterruptibleCapacityReservationAllocation"
+---
+
 # CreateInterruptibleCapacityReservationAllocation
 
 Creates an interruptible Capacity Reservation by specifying the number of unused instances you want to allocate from your source reservation. This helps you make unused capacity available for other workloads within your account while maintaining control to reclaim it.
@@ -112,8 +116,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createinterruptiblecapacityreservationallocation.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreateInternetGateway
 
 CreateIpam
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Reschedule a scheduled event for an EC2 instance"
+---
+
 # Reschedule a scheduled event for an EC2 instance
 
 You can reschedule an event so that it occurs at a specific date and time that
@@ -84,8 +88,10 @@ Edit-EC2InstanceEventStartTime `
     -NotBefore 2020-03-25T10:00:00.000
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Customize scheduled event notifications
 
 Create custom event windows
+
+All content copied from https://docs.aws.amazon.com/.

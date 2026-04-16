@@ -1,3 +1,7 @@
+---
+title: "Multiple network interfaces for your Amazon EC2 instances"
+---
+
 # Multiple network interfaces for your Amazon EC2 instances
 
 Attaching multiple network interfaces to an instance is useful when you need the following:
@@ -50,7 +54,7 @@ To ensure failover capabilities, consider using a secondary private IPv4 for inc
 traffic on a network interface. In the event of an instance failure, you can move
 the interface and/or secondary private IPv4 address to a standby instance.
 
-![Creating a management network](../../../images/awsec2/latest/userguide/images/ec2-eni-management-network-png.md)
+![Creating a management network](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/EC2_ENI_management_network.png)
 
 ## Network and security appliances
 
@@ -103,8 +107,10 @@ Users experience a brief loss of connectivity between the time the instance fail
 and the time that the network interface is attached to the standby instance, but no
 changes to the route table or your DNS server are required.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Modify network interface attributes
 
 Requester-managed network interfaces
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Hibernate an Amazon EC2 instance"
+---
+
 # Hibernate an Amazon EC2 instance
 
 You can initiate hibernation on an On-Demand Instance or Spot Instance if the instance is an EBS-backed
@@ -113,9 +117,11 @@ Get-EC2Instance `
     -Filter @{Name="state-reason-code";Value="Client.UserInitiatedHibernate"}
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Disable KASLR on an instance (Ubuntu only)
 
 Start a hibernated
 instance
+
+All content copied from https://docs.aws.amazon.com/.

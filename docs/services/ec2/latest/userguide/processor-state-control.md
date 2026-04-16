@@ -1,3 +1,7 @@
+---
+title: "Processor state control for Amazon EC2 Linux instances"
+---
+
 # Processor state control for Amazon EC2 Linux instances
 
 **C-states** control the sleep levels that a core can enter when it is idle. C-states are
@@ -177,8 +181,10 @@ your configuration for Amazon Linux, see [Processor state control for Amazon EC2
 instance](../../../linux/al2/ug/processor-state-control.md) in the _Amazon Linux 2 User Guide_. These procedures were written for, and apply to Amazon Linux; however, they might also work for other Linux distributions
 with a Linux kernel of 3.9 or newer. For more information about other Linux distributions and processor state control, see your system-specific documentation.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Attestation with AMD SEV-SNP
 
 Managed instances
+
+All content copied from https://docs.aws.amazon.com/.

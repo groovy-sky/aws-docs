@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot issues connecting to your Amazon EC2 Windows instance"
+---
+
 # Troubleshoot issues connecting to your Amazon EC2 Windows instance
 
 The following information and common errors can help you troubleshoot issues when connecting to your
@@ -443,8 +447,10 @@ to reset the password using an Systems Manager document, see [Reset passwords an
 SSH keys on EC2 instances](../../../systems-manager/latest/userguide/automation-ec2reset.md) in the
 _AWS Systems Manager User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Linux instance boots from wrong volume
 
 Windows instance start issues
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 instance state changes"
+---
+
 # Amazon EC2 instance state changes
 
 An Amazon EC2 instance transitions through different states from the moment you launch it through
@@ -5,7 +9,7 @@ to its termination.
 
 The following illustration represents the transitions between instance states.
 
-![The instance lifecycle.](../../../images/awsec2/latest/userguide/images/instance-lifecycle-png.md)
+![The instance lifecycle.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/instance_lifecycle.png)
 
 You can receive notifications when your instances change states. For more information, see
 [State change events for Amazon EC2 instances](monitoring-instance-state-changes.md).
@@ -292,8 +296,10 @@ Operating system shutdown commands always terminate an instance with an instance
 root volume. You can control whether operating system shutdown commands stop or
 terminate an instance with an EBS root volume. For more information, see [Change instance initiated shutdown behavior](using-changinginstanceinitiatedshutdownbehavior.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Quotas
 
 Stop and start
+
+All content copied from https://docs.aws.amazon.com/.

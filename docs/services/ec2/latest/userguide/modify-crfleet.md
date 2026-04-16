@@ -1,3 +1,7 @@
+---
+title: "Modify a Capacity Reservation Fleet"
+---
+
 # Modify a Capacity Reservation Fleet
 
 You can modify the total target capacity and date of a Capacity Reservation Fleet at any time. When
@@ -86,8 +90,10 @@ Edit-EC2CapacityReservationFleet `
     -RemoveEndDate
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create
 
 Cancel
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Manage Amazon EC2 instances scheduled for reboot"
+---
+
 # Manage Amazon EC2 instances scheduled for reboot
 
 When AWS must perform tasks such as installing updates or maintaining the
@@ -298,10 +302,12 @@ Edit-EC2InstanceMaintenanceOption `
     -RebootMigration Enabled
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Manage instances scheduled
 to stop or retire
 
 Manage instances
 scheduled for maintenance
+
+All content copied from https://docs.aws.amazon.com/.

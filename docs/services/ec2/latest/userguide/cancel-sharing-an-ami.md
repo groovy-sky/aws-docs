@@ -1,3 +1,7 @@
+---
+title: "Cancel having an AMI shared with your AWS account"
+---
+
 # Cancel having an AMI shared with your AWS account
 
 An Amazon Machine Image (AMI) can be [shared with specific\
@@ -70,8 +74,10 @@ Stop-EC2ImageLaunchPermission `
     -Region us-east-1
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Share an AMI with specific AWS accounts
 
 Recommendations for creating shared Linux AMIs
+
+All content copied from https://docs.aws.amazon.com/.

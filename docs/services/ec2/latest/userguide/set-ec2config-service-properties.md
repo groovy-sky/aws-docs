@@ -1,3 +1,7 @@
+---
+title: "Set EC2Config service properties from the system dialog on your EC2 Windows instance"
+---
+
 # Set EC2Config service properties from the system dialog on your EC2 Windows instance
 
 The following procedure describes how to use the **EC2 Service Properties**
@@ -9,7 +13,7 @@ system dialog to enable or disable settings.
 **Programs**, and then click **EC2ConfigService**
 **Settings**.
 
-![EC2Config service properties shown in the General tab.](../../../images/awsec2/latest/userguide/images/ec2configproperties-general-png.md)
+![EC2Config service properties shown in the General tab.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/EC2ConfigProperties_General.png)
 
 3. On the **General** tab of the **EC2 Service Properties**
     system dialog, you can enable or disable the following settings.
@@ -51,7 +55,7 @@ Use this setting to display system information on the desktop
 background. The following is an example of the information displayed
 on the desktop background.
 
-![Wallpaper Information displayed on the desktop background.](../../../images/awsec2/latest/userguide/images/ec2configproperties-wallpaper-png.md)
+![Wallpaper Information displayed on the desktop background.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/EC2ConfigProperties_Wallpaper.png)
 
 The information displayed on the desktop background is controlled
 by the settings file
@@ -64,7 +68,7 @@ Use this setting to allow EC2 to signal the operating system to perform hibernat
 4. Click the **Storage** tab. You can enable or disable the
     following settings.
 
-![Storage tab within EC2 Service Properties.](../../../images/awsec2/latest/userguide/images/ec2configproperties-storage-png.md)
+![Storage tab within EC2 Service Properties.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/EC2ConfigProperties_Storage.png)
 
 **Root Volume**
 
@@ -96,7 +100,7 @@ letters that avoid conflicts with drive letters that are likely to
 be in use, such as drive letters in the middle of the
 alphabet.
 
-![DriveLetterSetting dialog box.](../../../images/awsec2/latest/userguide/images/ec2configproperties-driver-letter-mapping-png.md)
+![DriveLetterSetting dialog box.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/EC2ConfigProperties_driver_letter_mapping.png)
 
 After you specify a drive letter mapping and attach a volume with
 same label as one of the volume names that you specified, EC2Config
@@ -111,8 +115,10 @@ letter mapping.
     finished customizing your instance and want to create an AMI from that instance,
     see [Create an Amazon EC2 AMI using Windows Sysprep](ami-create-win-sysprep.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Configure proxy settings
 
 Troubleshoot EC2Config
+
+All content copied from https://docs.aws.amazon.com/.

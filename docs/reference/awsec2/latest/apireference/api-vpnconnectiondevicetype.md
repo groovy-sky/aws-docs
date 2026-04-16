@@ -1,3 +1,7 @@
+---
+title: "VpnConnectionDeviceType"
+---
+
 # VpnConnectionDeviceType
 
 List of customer gateway devices that have a sample configuration file available for
@@ -49,8 +53,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/vpnconnectiondevicetype.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 VpnConnection
 
 VpnConnectionOptions
+
+All content copied from https://docs.aws.amazon.com/.

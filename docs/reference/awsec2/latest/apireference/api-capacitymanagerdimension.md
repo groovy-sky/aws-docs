@@ -1,3 +1,7 @@
+---
+title: "CapacityManagerDimension"
+---
+
 # CapacityManagerDimension
 
 Represents dimension values for capacity metrics, including resource identifiers, geographic information, and reservation details used for grouping and filtering capacity data.
@@ -7,6 +11,14 @@ Represents dimension values for capacity metrics, including resource identifiers
 **accountId**
 
 The AWS account ID that owns the capacity resource.
+
+Type: String
+
+Required: No
+
+**accountName**
+
+The name of the AWS account that owns the capacity resource. This dimension is only available when Organizations access is enabled for Capacity Manager.
 
 Type: String
 
@@ -139,6 +151,14 @@ Type: String
 
 Required: No
 
+**TagSet.N**
+
+The tags associated with the capacity resource, represented as key-value pairs. Only tags that have been activated for monitoring via `UpdateCapacityManagerMonitoredTagKeys` are included.
+
+Type: Array of [CapacityManagerTagDimension](api-capacitymanagertagdimension.md) objects
+
+Required: No
+
 **tenancy**
 
 The tenancy of the EC2 instances associated with this capacity dimension. Valid values are 'default' for shared tenancy, 'dedicated' for dedicated instances, or 'host' for dedicated hosts.
@@ -159,8 +179,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/capacitymanagerdimension.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CapacityManagerDataExportResponse
 
-CapacityReservation
+CapacityManagerMonitoredTagKey
+
+All content copied from https://docs.aws.amazon.com/.

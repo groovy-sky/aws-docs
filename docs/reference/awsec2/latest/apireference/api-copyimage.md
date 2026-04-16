@@ -1,3 +1,7 @@
+---
+title: "CopyImage"
+---
+
 # CopyImage
 
 Initiates an AMI copy operation. You must specify the source AMI ID and both the source
@@ -336,8 +340,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/copyimage.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CopyFpgaImage
 
 CopySnapshot
+
+All content copied from https://docs.aws.amazon.com/.

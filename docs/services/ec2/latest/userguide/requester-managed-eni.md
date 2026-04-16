@@ -1,3 +1,7 @@
+---
+title: "Requester-managed network interfaces"
+---
+
 # Requester-managed network interfaces
 
 A requester-managed network interface is a network interface that an AWS service
@@ -104,8 +108,10 @@ VPC Endpoint Interface: vpce-0cc199f605eaeace7   interface
 VPC Endpoint Interface vpce-019b90d6f16d4f958    interface
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Multiple network interfaces
 
 Prefix delegation
+
+All content copied from https://docs.aws.amazon.com/.

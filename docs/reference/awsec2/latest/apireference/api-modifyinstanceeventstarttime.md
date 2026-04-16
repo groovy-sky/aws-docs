@@ -1,3 +1,7 @@
+---
+title: "ModifyInstanceEventStartTime"
+---
+
 # ModifyInstanceEventStartTime
 
 Modifies the start time for a scheduled Amazon EC2 instance event.
@@ -104,8 +108,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifyinstanceeventstarttime.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ModifyInstanceCreditSpecification
 
 ModifyInstanceEventWindow
+
+All content copied from https://docs.aws.amazon.com/.

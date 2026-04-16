@@ -1,3 +1,7 @@
+---
+title: "How Amazon EC2 Dedicated Host recovery works"
+---
+
 # How Amazon EC2 Dedicated Host recovery works
 
 Dedicated Hosts and the host resource groups recovery process use host-level health checks
@@ -127,8 +131,10 @@ after the host recovery is complete. Follow the remedial steps described in the
 retirement notification within the specified time period to manually recover the
 remaining instances on the impaired Dedicated Host.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Host recovery
 
 Manage host recovery
+
+All content copied from https://docs.aws.amazon.com/.

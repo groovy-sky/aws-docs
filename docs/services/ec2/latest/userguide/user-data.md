@@ -1,3 +1,7 @@
+---
+title: "Run commands when you launch an EC2 instance with user data input"
+---
+
 # Run commands when you launch an EC2 instance with user data input
 
 When you launch an Amazon EC2 instance, you can pass user data to the instance that
@@ -53,7 +57,7 @@ the script is run every time you reboot or start the instance. If you leave the
 **User data has already been base64 encoded** checkbox empty,
 the Amazon EC2 console performs the base64 encoding for you.
 
-![Advance Details user data text field.](../../../images/awsec2/latest/userguide/images/configure-ec2config-userdata-png.md)
+![Advance Details user data text field.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/configure_ec2config_userdata.png)
 
 For more information, see Specify instance user data at launch with the Launch Wizard. For a Linux example that
 uses the AWS CLI, see [User data and the AWS CLI](#user-data-api-cli). For a Windows example that
@@ -94,7 +98,7 @@ To preserve this data, back it up to persistent storage.
     `<persist>true</persist>`, as shown in the
     following example:
 
-![Edit User Data dialog box.](../../../images/awsec2/latest/userguide/images/view-change-user-data-png.md)
+![Edit User Data dialog box.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/view-change-user-data.png)
 
 7. Start the instance. If you enabled user data execution for subsequent
     reboots or starts, the updated user data scripts are run as part of the
@@ -1163,10 +1167,12 @@ IMDSv1
 </powershell>
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 For existing
 instances
 
 Example: AMI launch index
 value
+
+All content copied from https://docs.aws.amazon.com/.

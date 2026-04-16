@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for EC2 instance hibernation"
+---
+
 # Prerequisites for EC2 instance hibernation
 
 You can enable hibernation support for an On-Demand Instance or a Spot Instance when you launch it. You
@@ -229,8 +233,10 @@ For Spot Instances, the following requirements apply:
 
 - You can't specify a launch group in the Spot Instance request.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 How it works
 
 Configure a Linux AMI to support hibernation
+
+All content copied from https://docs.aws.amazon.com/.

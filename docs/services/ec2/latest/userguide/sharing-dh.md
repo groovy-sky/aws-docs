@@ -1,3 +1,7 @@
+---
+title: "Share an Amazon EC2 Dedicated Host across AWS accounts"
+---
+
 # Share an Amazon EC2 Dedicated Host across AWS accounts
 
 When an owner shares a Dedicated Host, it enables consumers to launch instances on the host.
@@ -83,8 +87,10 @@ New-RAMResourceShare `
     -ResourceArn arn:aws:ec2:us-east-2:123456789012:dedicated-host/h-07879acf49EXAMPLE
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Cross-account sharing
 
 Unshare a Dedicated Host
+
+All content copied from https://docs.aws.amazon.com/.

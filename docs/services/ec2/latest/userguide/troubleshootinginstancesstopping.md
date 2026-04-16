@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot Amazon EC2 instance stop issues"
+---
+
 # Troubleshoot Amazon EC2 instance stop issues
 
 If your Amazon EBS-backed instance appears stuck in the `stopping` state, the issue
@@ -286,8 +290,10 @@ New-EC2Image `
 Remove-EC2Instance -InstanceId i-1234567890abcdef0
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Instance launch issues
 
 Instance termination issues
+
+All content copied from https://docs.aws.amazon.com/.

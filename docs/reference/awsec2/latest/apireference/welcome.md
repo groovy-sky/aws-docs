@@ -1,3 +1,7 @@
+---
+title: "Welcome"
+---
+
 # Welcome
 
 This is the _Amazon EC2 API Reference_. It provides descriptions, API request
@@ -37,6 +41,8 @@ Get descriptions of the API error codes
 
 [Error codes for the Amazon EC2 API](errors-overview.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Actions by service
+
+All content copied from https://docs.aws.amazon.com/.

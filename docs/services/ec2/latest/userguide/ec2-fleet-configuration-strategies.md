@@ -1,3 +1,7 @@
+---
+title: "Configuration options for your EC2 Fleet or Spot Fleet"
+---
+
 # Configuration options for your EC2 Fleet or Spot Fleet
 
 When planning your EC2 Fleet or Spot Fleet, we recommend that you consider the following options when
@@ -21,9 +25,11 @@ and performance, so that Amazon EC2 can select any combination of available
 instance types to fulfil your desired target capacity?[Use instance weighting to manage cost and performance of your EC2 Fleet or Spot Fleet](ec2-fleet-instance-weighting.md)Allocation strategiesDo you want to decide whether to optimize for available capacity, price, or instance
 types to use for the Spot Instances and On-Demand Instances in your fleet?[Use allocation strategies to determine how EC2 Fleet or Spot Fleet fulfills Spot and On-Demand capacity](ec2-fleet-allocation-strategy.md)Capacity RebalancingDo you want your fleet to automatically replace at-risk Spot Instances?[Use Capacity Rebalancing in EC2 Fleet and Spot Fleet to replace at-risk Spot Instances](ec2-fleet-capacity-rebalance.md)On-Demand Capacity ReservationDo you want to reserve capacity for the On-Demand Instances in your fleet?[Use Capacity Reservations to reserve On-Demand capacity in EC2 Fleet](ec2-fleet-on-demand-capacity-reservations.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Which fleet method to
 use?
 
 Request types
+
+All content copied from https://docs.aws.amazon.com/.

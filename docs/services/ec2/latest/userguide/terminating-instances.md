@@ -1,3 +1,7 @@
+---
+title: "Terminate Amazon EC2 instances"
+---
+
 # Terminate Amazon EC2 instances
 
 ###### Warning
@@ -172,9 +176,11 @@ attempt to force terminate it. If it remains in the `shutting-down` state, it
 should be cleaned up (terminated) by automated processes within the Amazon EC2 service. For
 more information, see [Delayed instance termination](troubleshootinginstancesshuttingdown.md#instance-stuck-terminating).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Reboot
 
 How it
 works
+
+All content copied from https://docs.aws.amazon.com/.

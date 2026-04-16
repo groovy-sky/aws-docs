@@ -1,3 +1,7 @@
+---
+title: "UpdateSecurityGroupRuleDescriptionsEgress"
+---
+
 # UpdateSecurityGroupRuleDescriptionsEgress
 
 Updates the description of an egress (outbound) security group rule. You
@@ -133,8 +137,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/updatesecuritygroupruledescriptionsegress.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 UpdateInterruptibleCapacityReservationAllocation
 
 UpdateSecurityGroupRuleDescriptionsIngress
+
+All content copied from https://docs.aws.amazon.com/.

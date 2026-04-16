@@ -1,3 +1,7 @@
+---
+title: "Get started with GPU accelerated instances"
+---
+
 # Get started with GPU accelerated instances
 
 The latest generation of GPU accelerated instance types, such as those shown in the following list
@@ -47,8 +51,10 @@ The latest AWS Deep Learning Base GPU AMIs are preconfigured to not use deeper C
 
 For networking and Elastic Fabric Adapter (EFA) configuration see [Maximize network bandwidth on Amazon EC2 instances with multiple network cards](efa-acc-inst-types.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Set up dual 4K displays on G4ad
 
 Mac instances
+
+All content copied from https://docs.aws.amazon.com/.

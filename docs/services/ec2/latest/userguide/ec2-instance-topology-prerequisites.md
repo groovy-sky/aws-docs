@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for Amazon EC2 topology"
+---
+
 # Prerequisites for Amazon EC2 topology
 
 To describe your Amazon EC2 topology, ensure that your instances and Capacity Reservations meet the
@@ -90,8 +94,10 @@ permissions:
 
 - `ec2:DescribeCapacityReservationTopology`
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 How it works
 
 Examples
+
+All content copied from https://docs.aws.amazon.com/.

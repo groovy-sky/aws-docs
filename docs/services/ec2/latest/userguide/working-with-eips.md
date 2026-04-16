@@ -1,3 +1,7 @@
+---
+title: "Associate an Elastic IP address with an instance"
+---
+
 # Associate an Elastic IP address with an instance
 
 After you allocate an Elastic IP address, you can associate it with an AWS resource,
@@ -284,8 +288,10 @@ cmdlet.
 Unregister-EC2Address -AssociationId eipassoc-12345678
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Elastic IP addresses
 
 Transfer an Elastic IP address
+
+All content copied from https://docs.aws.amazon.com/.

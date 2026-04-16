@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for EC2 Instance Connect"
+---
+
 # Prerequisites for EC2 Instance Connect
 
 ###### The following are the prerequisites for installing and using  EC2 Instance Connect:
@@ -113,8 +117,10 @@ digit ( `0-9`), or an underscore ( `_`)
 
 - Maximum length: 31 characters
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Tutorial
 
 Permissions
+
+All content copied from https://docs.aws.amazon.com/.

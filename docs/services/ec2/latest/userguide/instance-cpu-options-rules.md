@@ -1,3 +1,7 @@
+---
+title: "Rules for specifying CPU options for an Amazon EC2 instance"
+---
+
 # Rules for specifying CPU options for an Amazon EC2 instance
 
 To specify the CPU options for your instance, be aware of the following rules:
@@ -43,8 +47,10 @@ fewer than four vCPUs, default billing is applied.
 
 - Optimize CPUs for License-Included instances is not supported on T3 instance types.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CPU options
 
 Supported CPU options
+
+All content copied from https://docs.aws.amazon.com/.

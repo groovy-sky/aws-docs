@@ -1,3 +1,7 @@
+---
+title: "Find a paid AMI"
+---
+
 # Find a paid AMI
 
 A paid AMI is an Amazon Machine Image (AMI) that is available for purchase.
@@ -105,8 +109,10 @@ the most recent AMI with the specified product code.
 (Get-EC2Image -Owner aws-marketplace -Filter @{"Name"="product-code";"Value"="cdef1234abc567def8EXAMPLE"} | sort CreationDate -Descending | Select-Object -First 1).ImageId
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Paid AMIs in the AWS Marketplace
 
 Purchase a paid AMI
+
+All content copied from https://docs.aws.amazon.com/.

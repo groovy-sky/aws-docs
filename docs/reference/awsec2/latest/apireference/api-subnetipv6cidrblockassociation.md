@@ -1,3 +1,7 @@
+---
+title: "SubnetIpv6CidrBlockAssociation"
+---
+
 # SubnetIpv6CidrBlockAssociation
 
 Describes an association between a subnet and an IPv6 CIDR block.
@@ -58,8 +62,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/subnetipv6cidrblockassociation.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 SubnetIpPrefixes
 
 Subscription
+
+All content copied from https://docs.aws.amazon.com/.

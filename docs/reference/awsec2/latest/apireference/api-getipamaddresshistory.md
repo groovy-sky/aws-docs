@@ -1,3 +1,7 @@
+---
+title: "GetIpamAddressHistory"
+---
+
 # GetIpamAddressHistory
 
 Retrieve historical information about a CIDR within an IPAM scope. For more information, see [View the history of IP addresses](../../../../services/vpc/latest/ipam/view-history-cidr-ipam.md) in the _Amazon VPC IPAM User Guide_.
@@ -125,8 +129,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/getipamaddresshistory.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 GetInstanceUefiData
 
 GetIpamDiscoveredAccounts
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Isolate data from your own operators"
+---
+
 # Isolate data from your own operators
 
 The AWS Nitro System has [zero operator access](../../../whitepapers/latest/security-design-of-aws-nitro-system/no-aws-operator-access.md). There is no mechanism for any AWS system or person to log in to Amazon EC2 Nitro hosts,
@@ -23,8 +27,10 @@ to the instance.
 - **Restrict instance access** to authenticated, authorized, and logged API
 calls.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Integrating with AWS KMS
 
 Updating Attestable AMIs that have no interactive access
+
+All content copied from https://docs.aws.amazon.com/.

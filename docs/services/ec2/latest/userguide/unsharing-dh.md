@@ -1,3 +1,7 @@
+---
+title: "Unshare a Dedicated Host that is shared with other AWS accounts"
+---
+
 # Unshare a Dedicated Host that is shared with other AWS accounts
 
 The Dedicated Host owner can unshare a shared Dedicated Host at any time. When you unshare a shared
@@ -63,8 +67,10 @@ Disconnect-RAMResourceShare `
     -ResourceArn "arn:aws:ec2:us-east-2:123456789012:dedicated-host/h-07879acf49EXAMPLE"
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Share a Dedicated Host
 
 View shared Dedicated Hosts
+
+All content copied from https://docs.aws.amazon.com/.

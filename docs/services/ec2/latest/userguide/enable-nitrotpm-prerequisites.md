@@ -1,3 +1,7 @@
+---
+title: "Requirements for using NitroTPM with Amazon EC2 instances"
+---
+
 # Requirements for using NitroTPM with Amazon EC2 instances
 
 To launch an instance with NitroTPM enabled, you must meet the following requirements.
@@ -74,8 +78,10 @@ original instance.
 
 - NitroTPM is not supported on AWS Outposts., Local Zones, or Wavelength Zones.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 NitroTPM
 
 Enable a Linux AMI for NitroTPM
+
+All content copied from https://docs.aws.amazon.com/.

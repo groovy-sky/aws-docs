@@ -1,3 +1,7 @@
+---
+title: "Release an Elastic IP address"
+---
+
 # Release an Elastic IP address
 
 If you no longer need an Elastic IP address, we recommend that you release it. The Elastic
@@ -78,8 +82,10 @@ New-EC2Address `
     -Region us-east-1
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Transfer an Elastic IP address
 
 Use reverse DNS for email applications
+
+All content copied from https://docs.aws.amazon.com/.

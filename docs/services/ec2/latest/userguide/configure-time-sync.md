@@ -1,3 +1,7 @@
+---
+title: "Set the time reference on your EC2 instance or any internet-connected device to use the public Amazon Time Sync Service"
+---
+
 # Set the time reference on your EC2 instance or any internet-connected device to use the public Amazon Time Sync Service
 
 You can set your instance, or any internet-connected device such as your local
@@ -92,8 +96,10 @@ sudo service ntp reload
 
 - Follow [Microsoft's instructions](https://support.microsoft.com/en-us/kb/816042) to update your registry.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Use the local Amazon Time Sync Service
 
 Compare timestamps for your Linux instances
+
+All content copied from https://docs.aws.amazon.com/.

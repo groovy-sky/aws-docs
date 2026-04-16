@@ -1,3 +1,7 @@
+---
+title: "CreateInstanceEventWindow"
+---
+
 # CreateInstanceEventWindow
 
 Creates an event window in which scheduled events for the associated Amazon EC2 instances can
@@ -140,8 +144,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createinstanceeventwindow.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreateInstanceConnectEndpoint
 
 CreateInstanceExportTask
+
+All content copied from https://docs.aws.amazon.com/.

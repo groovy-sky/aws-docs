@@ -1,3 +1,7 @@
+---
+title: "TransitGatewayPolicyRuleMetaData"
+---
+
 # TransitGatewayPolicyRuleMetaData
 
 Describes the meta data tags associated with a transit gateway policy rule.
@@ -30,8 +34,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/transitgatewaypolicyrulemetadata.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 TransitGatewayPolicyRule
 
 TransitGatewayPolicyTable
+
+All content copied from https://docs.aws.amazon.com/.

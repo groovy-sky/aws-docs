@@ -1,3 +1,7 @@
+---
+title: "Enhanced networking with the Intel 82599 VF interface"
+---
+
 # Enhanced networking with the Intel 82599 VF interface
 
 For [Xen-based instances](instance-types.md#instance-hypervisor-type), the Intel 82599 Virtual Function (VF) interface provides enhanced
@@ -631,10 +635,12 @@ instance unreachable.
 For more information, see [How\
 do I turn on and configure enhanced networking on my EC2 instances?](https://repost.aws/knowledge-center/enable-configure-enhanced-networking)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Configure instance
 settings
 
 Monitor network
 performance
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Monitor AMI events using Amazon EventBridge"
+---
+
 # Monitor AMI events using Amazon EventBridge
 
 When the state of an Amazon Machine Image (AMI) changes, Amazon EC2 generates an event that is
@@ -231,8 +235,10 @@ successful.
 }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Recommendations for creating shared Linux AMIs
 
 Understand AMI billing
+
+All content copied from https://docs.aws.amazon.com/.

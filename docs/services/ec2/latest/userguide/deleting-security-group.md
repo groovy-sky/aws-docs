@@ -1,3 +1,7 @@
+---
+title: "Delete an Amazon EC2 security group"
+---
+
 # Delete an Amazon EC2 security group
 
 When you are finished with a security group that you created for use with your
@@ -66,8 +70,10 @@ cmdlet.
 Remove-EC2SecurityGroup -GroupId sg-1234567890abcdef0
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Change security groups for your instance
 
 Connection tracking
+
+All content copied from https://docs.aws.amazon.com/.

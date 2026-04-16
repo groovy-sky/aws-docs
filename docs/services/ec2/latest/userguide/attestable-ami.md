@@ -1,3 +1,7 @@
+---
+title: "Attestable AMIs"
+---
+
 # Attestable AMIs
 
 An Attestable AMI is an Amazon Machine Image (AMI) with a corresponding cryptographic hash that
@@ -66,8 +70,10 @@ utility, see [Compute PCR measurements for a custom AMI](create-pcr-compute.md).
 AWS provides a sample Amazon Linux 2023 image description that includes all configurations needed to configure an EC2
 instance in an isolated compute environment. For more information, see [Build the sample Amazon Linux 2023 image description](build-sample-ami.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 EC2 instance attestation
 
 Build the sample image description
+
+All content copied from https://docs.aws.amazon.com/.

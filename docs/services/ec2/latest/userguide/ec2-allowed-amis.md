@@ -1,3 +1,7 @@
+---
+title: "Control the discovery and use of AMIs in Amazon EC2 with Allowed AMIs"
+---
+
 # Control the discovery and use of AMIs in Amazon EC2 with Allowed AMIs
 
 To control the discovery and use of Amazon Machine Images (AMIs) by users in your
@@ -63,7 +67,7 @@ criteria against which to evaluate the AMIs. The criteria are made up of one or 
 `ImageCriterion` as shown in the following diagram. An explanation
 follows the diagram.
 
-![The Allowed AMIs ImageCriteria configuration hierarchy.](../../../images/awsec2/latest/userguide/images/ami-allowed-amis-imagecriteria-png.md)
+![The Allowed AMIs ImageCriteria configuration hierarchy.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ami_allowed-amis-imagecriteria.png)
 
 The configuration has three levels:
 
@@ -471,8 +475,10 @@ To use the Allowed AMIs feature, you need the following IAM permissions:
 
 - `ReplaceImageCriteriaInAllowedImagesSettings`
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Prepare to use shared AMIs for Linux
 
 Manage the settings for Allowed AMIs
+
+All content copied from https://docs.aws.amazon.com/.

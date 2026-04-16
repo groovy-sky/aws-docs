@@ -1,3 +1,7 @@
+---
+title: "Select a Region for your Amazon EC2 resources"
+---
+
 # Select a Region for your Amazon EC2 resources
 
 Amazon EC2 resources are specific to the AWS Region or zone in which they reside. When
@@ -21,7 +25,7 @@ Regions](../../../global-infrastructure/latest/regions/aws-regions.md).
 2. From the navigation bar, choose the **Regions** selector and
     then choose the Region.
 
-![View your Regions](../../../images/awsec2/latest/userguide/images/ec2-select-region-png.md)
+![View your Regions](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/EC2_select_region.png)
 
 3. The Regions selector includes all resources that are available for use in your
     AWS account. Choose the underlined text near the bottom of the list to view
@@ -49,8 +53,10 @@ command, add the following parameter.
 -Region us-east-1
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Manage resources
 
 Find your resources
+
+All content copied from https://docs.aws.amazon.com/.

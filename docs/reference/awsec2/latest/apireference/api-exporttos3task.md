@@ -1,3 +1,7 @@
+---
+title: "ExportToS3Task"
+---
+
 # ExportToS3Task
 
 Describes the format and location for the export task.
@@ -53,8 +57,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/exporttos3task.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ExportTaskS3LocationRequest
 
 ExportToS3TaskSpecification
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Retrieve macOS AMI IDs using AWS Systems Manager Parameter Store API"
+---
+
 # Retrieve macOS AMI IDs using AWS Systems Manager Parameter Store API
 
 You must specify an AMI when you launch an instance. An AMI is specific to an AWS Region,
@@ -36,8 +40,10 @@ aws ssm get-parameter --name /aws/service/ec2-macos/sonoma/x86_64_mac/latest/ima
 For more information, see [Calling AMI public parameters for macOS](../../../systems-manager/latest/userguide/parameter-store-public-parameters-ami.md#public-parameters-ami-macos) in the
 _AWS Systems Manager User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Subscribe to macOS AMI notifications
 
 macOS AMIs release notes
+
+All content copied from https://docs.aws.amazon.com/.

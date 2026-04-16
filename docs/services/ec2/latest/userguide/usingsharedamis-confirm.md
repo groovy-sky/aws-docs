@@ -1,3 +1,7 @@
+---
+title: "Prepare to use shared AMIs for Linux"
+---
+
 # Prepare to use shared AMIs for Linux
 
 Before you use a shared AMI for Linux, take the following steps to confirm that there are no
@@ -60,8 +64,10 @@ Restart the sshd service.
 If you discover a public AMI that you feel presents a security risk, contact the
 AWS security team. For more information, see the [AWS Security Center](https://aws.amazon.com/security).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Find shared AMIs
 
 Allowed AMIs
+
+All content copied from https://docs.aws.amazon.com/.

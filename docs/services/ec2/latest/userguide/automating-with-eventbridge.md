@@ -1,3 +1,7 @@
+---
+title: "Automate Amazon EC2 using EventBridge"
+---
+
 # Automate Amazon EC2 using EventBridge
 
 You can use Amazon EventBridge to automate your AWS services and respond automatically to system
@@ -69,8 +73,10 @@ Amazon EC2 supports the following event types:
 
 For information about the event types supported by Amazon EBS, see [Amazon EventBridge for Amazon EBS](../../../ebs/latest/userguide/ebs-cloud-watch-events.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Amazon CloudWatch alarm action scenarios
 
 Log API calls using CloudTrail
+
+All content copied from https://docs.aws.amazon.com/.

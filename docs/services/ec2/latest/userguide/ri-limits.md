@@ -1,3 +1,7 @@
+---
+title: "Reserved Instance quotas"
+---
+
 # Reserved Instance quotas
 
 You can purchase new Reserved Instances each month. The number of new Reserved Instances that you can purchase
@@ -55,7 +59,7 @@ In the following screenshot, the selected line represents a
     the detail view (outlined in the screenshot) indicate that there
     are 10 Reserved Instances for this configuration.
 
-![This image shows the Reserved Instances screen in the Amazon EC2 console. The Instance count field is outlined in the screenshot.](../../../images/awsec2/latest/userguide/images/ri-instance-count-png.md)
+![This image shows the Reserved Instances screen in the Amazon EC2 console. The Instance count field is outlined in the screenshot.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ri-instance-count.png)
 
 AWS CLI
 
@@ -166,8 +170,10 @@ zonal Reserved Instances, giving you a total of 40 running instances.
 The Amazon EC2 console provides quota information. You can also request an increase in
 your quotas. For more information, see [View your current quotas](ec2-resource-limits.md#view-limits) and [Request an increase](ec2-resource-limits.md#request-increase).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Exchange Convertible Reserved Instances
 
 Spot Instances
+
+All content copied from https://docs.aws.amazon.com/.

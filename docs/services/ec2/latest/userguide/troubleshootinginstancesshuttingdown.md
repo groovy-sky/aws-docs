@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot Amazon EC2 instance termination issues"
+---
+
 # Troubleshoot Amazon EC2 instance termination issues
 
 Shutting down or deleting your instance is known as instance termination. The following
@@ -162,8 +166,10 @@ your computing resources automatically based on criteria that you've defined:
 To stop automatic scaling, find the Auto Scaling group or the fleet that is launching the instances
 and either set its capacity to 0 or delete it.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Instance stop issues
 
 Unreachable instances
+
+All content copied from https://docs.aws.amazon.com/.

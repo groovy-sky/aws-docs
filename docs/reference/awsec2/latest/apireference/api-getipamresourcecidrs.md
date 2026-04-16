@@ -1,3 +1,7 @@
+---
+title: "GetIpamResourceCidrs"
+---
+
 # GetIpamResourceCidrs
 
 Returns resource CIDRs managed by IPAM in a given scope. If an IPAM is associated with more than one resource discovery, the resource CIDRs across all of the resource discoveries is returned. A resource discovery is an IPAM component that enables IPAM to manage and monitor resources that belong to the owning account.
@@ -142,8 +146,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/getipamresourcecidrs.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 GetIpamPrefixListResolverVersions
 
 GetLaunchTemplateData
+
+All content copied from https://docs.aws.amazon.com/.

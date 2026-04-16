@@ -1,3 +1,7 @@
+---
+title: "Launch a Mac instance using the AWS Management Console or the AWS CLI"
+---
+
 # Launch a Mac instance using the AWS Management Console or the AWS CLI
 
 EC2 Mac instances require a [Dedicated Host](dedicated-hosts-overview.md). You
@@ -128,8 +132,10 @@ checks.
 }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Mac instances
 
 Connect to your Mac instance
+
+All content copied from https://docs.aws.amazon.com/.

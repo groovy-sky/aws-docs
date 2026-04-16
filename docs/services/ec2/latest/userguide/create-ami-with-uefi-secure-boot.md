@@ -1,3 +1,7 @@
+---
+title: "Create a Linux AMI with custom UEFI Secure Boot keys"
+---
+
 # Create a Linux AMI with custom UEFI Secure Boot keys
 
 These instructions show you how to create a Linux AMI with UEFI Secure Boot and
@@ -453,8 +457,10 @@ aws ec2 register-image \
     --boot-mode uefi
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Verify if an instance is enabled for UEFI Secure Boot
 
 Create the AWS binary blob
+
+All content copied from https://docs.aws.amazon.com/.

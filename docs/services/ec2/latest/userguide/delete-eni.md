@@ -1,3 +1,7 @@
+---
+title: "Delete a network interface"
+---
+
 # Delete a network interface
 
 Deleting a network interface releases all attributes associated with the interface
@@ -45,8 +49,10 @@ cmdlet.
 Remove-EC2NetworkInterface -NetworkInterfaceId eni-1234567890abcdef0
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Manage prefixes
 
 Network bandwidth
+
+All content copied from https://docs.aws.amazon.com/.

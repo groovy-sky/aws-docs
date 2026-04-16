@@ -1,3 +1,7 @@
+---
+title: "Deprecate an Amazon EC2 AMI"
+---
+
 # Deprecate an Amazon EC2 AMI
 
 You can deprecate an AMI to indicate that it is out of date and should not be used. You can
@@ -311,8 +315,10 @@ cmdlet.
 Disable-EC2ImageDeprecation -ImageId ami-0abcdef1234567890
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Identify your resources referencing specified AMIs
 
 Disable an AMI
+
+All content copied from https://docs.aws.amazon.com/.

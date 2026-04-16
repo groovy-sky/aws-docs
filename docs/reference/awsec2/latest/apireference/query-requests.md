@@ -1,3 +1,7 @@
+---
+title: "Query requests for Amazon EC2"
+---
+
 # Query requests for Amazon EC2
 
 Query requests are HTTP or HTTPS requests that use the HTTP verb GET or POST and a
@@ -274,8 +278,10 @@ The following example policy prevents users from sending requests over HTTP.
 }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Making API requests
 
 Troubleshooting API request errors
+
+All content copied from https://docs.aws.amazon.com/.

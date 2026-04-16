@@ -1,3 +1,7 @@
+---
+title: "Determine the supported boot modes of an EC2 instance type"
+---
+
 # Determine the supported boot modes of an EC2 instance type
 
 You can determine the supported boot modes of an instance type.
@@ -161,8 +165,10 @@ Get-EC2InstanceType | `
         @{Name="SupportedArchitectures"; Expression={$_.ProcessorInfo.SupportedArchitectures}}
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AMI boot mode parameter
 
 Instance boot mode
+
+All content copied from https://docs.aws.amazon.com/.

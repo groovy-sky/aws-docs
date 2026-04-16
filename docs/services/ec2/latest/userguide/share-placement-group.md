@@ -1,3 +1,7 @@
+---
+title: "Shared placement groups"
+---
+
 # Shared placement groups
 
 Placement group sharing allows you to influence the placement of interdependent
@@ -122,8 +126,10 @@ from the placement group, but remain available to you in your AWS account.
 
 For more information, see [Deleting a resource share](../../../ram/latest/userguide/working-with-sharing-delete.md) in the _AWS RAM User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Delete a placement group
 
 Placement groups on AWS Outposts
+
+All content copied from https://docs.aws.amazon.com/.

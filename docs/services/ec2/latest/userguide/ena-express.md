@@ -1,3 +1,7 @@
+---
+title: "Improve network performance between EC2 instances with ENA Express"
+---
+
 # Improve network performance between EC2 instances with ENA Express
 
 ENA Express is powered by AWS Scalable Reliable Datagram (SRD) technology.
@@ -207,9 +211,11 @@ can run the following script that's available on the Amazon GitHub repository:
 The script runs a series of tests and suggests both recommended and required
 configuration changes.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Troubleshoot ENA on Windows
 
 Review instance
 settings
+
+All content copied from https://docs.aws.amazon.com/.

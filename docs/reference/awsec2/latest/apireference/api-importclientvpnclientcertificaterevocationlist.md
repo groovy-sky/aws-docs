@@ -1,3 +1,7 @@
+---
+title: "ImportClientVpnClientCertificateRevocationList"
+---
+
 # ImportClientVpnClientCertificateRevocationList
 
 Uploads a client certificate revocation list to the specified Client VPN endpoint. Uploading a client certificate revocation list overwrites the existing client certificate revocation list.
@@ -77,8 +81,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/importclientvpnclientcertificaterevocationlist.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 GetVpnTunnelReplacementStatus
 
 ImportImage
+
+All content copied from https://docs.aws.amazon.com/.

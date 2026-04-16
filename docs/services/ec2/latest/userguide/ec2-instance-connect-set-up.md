@@ -1,3 +1,7 @@
+---
+title: "Install EC2 Instance Connect on your EC2 instances"
+---
+
 # Install EC2 Instance Connect on your EC2 instances
 
 To connect to a Linux instance using EC2 Instance Connect, the instance must have
@@ -616,8 +620,10 @@ If you previously configured
 EC2 Instance Connect installation will not change the values and
 you will not be able to use EC2 Instance Connect.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Permissions
 
 Connect to an instance
+
+All content copied from https://docs.aws.amazon.com/.

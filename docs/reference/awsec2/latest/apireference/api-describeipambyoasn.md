@@ -1,3 +1,7 @@
+---
+title: "DescribeIpamByoasn"
+---
+
 # DescribeIpamByoasn
 
 Describes your Autonomous System Numbers (ASNs), their provisioning statuses, and the BYOIP CIDRs with which they are associated. For more information, see [Tutorial: Bring your ASN to IPAM](../../../../services/vpc/latest/ipam/tutorials-byoasn.md) in the _Amazon VPC IPAM guide_.
@@ -85,8 +89,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describeipambyoasn.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeInternetGateways
 
 DescribeIpamExternalResourceVerificationTokens
+
+All content copied from https://docs.aws.amazon.com/.

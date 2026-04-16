@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot an unreachable Amazon EC2 instance"
+---
+
 # Troubleshoot an unreachable Amazon EC2 instance
 
 The following information can help you troubleshoot unreachable Amazon EC2 instances. You can capture screenshots or access console output to help diagnose problems and determine if you should reboot your instance. For unreachable
@@ -210,8 +214,10 @@ instance. If it's not, start it manually. To prevent this issue in the future,
 implement a recovery plan to ensure your workload or application functions properly
 after instance recovery.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Instance termination issues
 
 Common screenshots for Windows instances
+
+All content copied from https://docs.aws.amazon.com/.

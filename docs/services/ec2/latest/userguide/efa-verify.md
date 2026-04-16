@@ -1,3 +1,7 @@
+---
+title: "Verify the EFA installer using a checksum"
+---
+
 # Verify the EFA installer using a checksum
 
 You can optionally verify the EFA tarball ( `.tar.gz` file) using an MD5 or SHA256
@@ -442,8 +446,10 @@ EFA 1.8.4
 
 **SHA256:** `0d974655a09b213d7859e658965e56dc4f23a0eee2dc44bb41b6d039cc5bab45`
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Monitor an EFA
 
 Release notes
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "AMD SEV-SNP for Amazon EC2 instances"
+---
+
 # AMD SEV-SNP for Amazon EC2 instances
 
 AMD Secure Encrypted Virtualization-Secure Nested Paging (AMD SEV-SNP) is a CPU
@@ -109,8 +113,10 @@ you are charged an additional hourly usage fee that is equivalent to 10 percent 
 selected instance type. If the allocation strategy uses price as an input, Spot Fleet does not
 include this additional fee; only the Spot price is used.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Optimize CPUs
 
 Find supported instance types
+
+All content copied from https://docs.aws.amazon.com/.

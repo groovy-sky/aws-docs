@@ -1,3 +1,7 @@
+---
+title: "ModifySnapshotTier"
+---
+
 # ModifySnapshotTier
 
 Archives an Amazon EBS snapshot. When you archive a snapshot, it is converted to a full
@@ -88,8 +92,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifysnapshottier.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ModifySnapshotAttribute
 
 ModifySpotFleetRequest
+
+All content copied from https://docs.aws.amazon.com/.

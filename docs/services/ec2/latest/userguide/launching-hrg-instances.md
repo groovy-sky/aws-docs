@@ -1,3 +1,7 @@
+---
+title: "Launch Amazon EC2 instances into a host resource group"
+---
+
 # Launch Amazon EC2 instances into a host resource group
 
 Dedicated Hosts are also integrated with AWS License Manager. With License Manager, you can create a host resource
@@ -101,8 +105,10 @@ and specify the ARN of the host resource group.
 -Placement_HostResourceGroupArn arn:aws:resource-groups:us-east-2:123456789012:group/my-resource-group
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Launch instances on a Dedicated Host
 
 Modify Dedicated Host auto-placement
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "CreateVerifiedAccessGroup"
+---
+
 # CreateVerifiedAccessGroup
 
 An AWS Verified Access group is a collection of AWS Verified Access endpoints who's associated applications have
@@ -112,8 +116,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createverifiedaccessgroup.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreateVerifiedAccessEndpoint
 
 CreateVerifiedAccessInstance
+
+All content copied from https://docs.aws.amazon.com/.

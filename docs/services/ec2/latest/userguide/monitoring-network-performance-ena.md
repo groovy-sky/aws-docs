@@ -1,3 +1,7 @@
+---
+title: "Monitor network performance for ENA settings on your EC2 instance"
+---
+
 # Monitor network performance for ENA settings on your EC2 instance
 
 The Elastic Network Adapter (ENA) driver publishes network performance metrics from the
@@ -509,8 +513,10 @@ latest set of collected metrics by running the following command.
 sysctl dev.ena.network_interface.eni_metrics
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Intel 82599 VF
 
 Improve network latency on Linux
+
+All content copied from https://docs.aws.amazon.com/.

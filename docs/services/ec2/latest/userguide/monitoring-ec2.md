@@ -1,3 +1,7 @@
+---
+title: "Monitor Amazon EC2 resources"
+---
+
 # Monitor Amazon EC2 resources
 
 Monitoring is an important part of maintaining the reliability, availability, and
@@ -74,8 +78,10 @@ metrics from both hosts and guests on your EC2 instances and on-premises
 servers. For more information, see [Collecting Metrics and Logs from Amazon EC2 Instances and On-Premises\
 Servers with the CloudWatch Agent](../../../amazoncloudwatch/latest/monitoring/install-cloudwatch-agent.md) in the _Amazon CloudWatch User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Service quotas
 
 Monitor the status of your instances
+
+All content copied from https://docs.aws.amazon.com/.

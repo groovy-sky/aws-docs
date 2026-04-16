@@ -1,3 +1,7 @@
+---
+title: "Describe an EC2 Fleet, its instances, and its events"
+---
+
 # Describe an EC2 Fleet, its instances, and its events
 
 You can describe your EC2 Fleet configuration, the instances in your EC2 Fleet, and the event
@@ -218,8 +222,10 @@ Get-EC2FleetHistory `
     -UtcStartTime 2020-06-01T00:00:00Z
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Tag an EC2 Fleet
 
 Modify an EC2 Fleet
+
+All content copied from https://docs.aws.amazon.com/.

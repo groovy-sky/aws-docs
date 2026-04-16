@@ -1,3 +1,7 @@
+---
+title: "Configure burstable performance instances"
+---
+
 # Configure burstable performance instances
 
 The steps for launching, monitoring, and modifying burstable performance instances (T
@@ -414,8 +418,10 @@ Edit-EC2DefaultCreditSpecification `
     -CpuCredit unlimited
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Examples
 
 Monitor your CPU credits
+
+All content copied from https://docs.aws.amazon.com/.

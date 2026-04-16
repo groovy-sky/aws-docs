@@ -1,3 +1,7 @@
+---
+title: "Host maintenance for Amazon EC2 Dedicated Host"
+---
+
 # Host maintenance for Amazon EC2 Dedicated Host
 
 With host maintenance, in the rare event that a Dedicated Host becomes degraded, we automatically
@@ -76,8 +80,10 @@ If the degraded Dedicated Host was billed using the On-Demand rate, the replacem
 also billed using the On-Demand rate. If the degraded Dedicated Host had an active Dedicated Host Reservation, it
 is transferred to the new Dedicated Host.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Manually recovery unsupported instances
 
 How host maintenance works
+
+All content copied from https://docs.aws.amazon.com/.

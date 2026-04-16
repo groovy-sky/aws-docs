@@ -1,3 +1,7 @@
+---
+title: "Using Capacity Reservation in cluster placement groups with a Capacity Reservation group"
+---
+
 # Using Capacity Reservation in cluster placement groups with a Capacity Reservation group
 
 Amazon EC2 provides different launch methods for you to use Capacity Reservations in a cluster placement group
@@ -32,8 +36,10 @@ When you launch instances by specifying only a Capacity Reservation group, the i
 launched into the Capacity Reservations that are created in the cluster placement group, but
 the instances are not directly attached to the cluster placement group.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Delete group
 
 Capacity Reservations in Local Zones
+
+All content copied from https://docs.aws.amazon.com/.

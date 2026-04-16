@@ -1,3 +1,7 @@
+---
+title: "Compliance validation for Amazon EC2"
+---
+
 # Compliance validation for Amazon EC2
 
 To learn whether an AWS service is within the scope of specific compliance programs, see
@@ -12,8 +16,10 @@ of your data, your company's compliance objectives, and applicable laws and
 regulations. For more information about your compliance responsibility when using AWS services, see
 [AWS Security Documentation](../../../security/index.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Resilience
 
 Identity and access management
+
+All content copied from https://docs.aws.amazon.com/.

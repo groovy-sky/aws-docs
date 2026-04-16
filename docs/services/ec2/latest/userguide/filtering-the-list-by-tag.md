@@ -1,3 +1,7 @@
+---
+title: "Filter Amazon EC2 resources by tag"
+---
+
 # Filter Amazon EC2 resources by tag
 
 After you add tags, you can filter your Amazon EC2 resources based tag keys and tag
@@ -107,8 +111,10 @@ cmdlet to describe all EC2 resources with the tag Stack=test.
 -Filter @{Name="tag:Stack"; Values="test"}
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Add and remove tags
 
 View tags using instance metadata
+
+All content copied from https://docs.aws.amazon.com/.

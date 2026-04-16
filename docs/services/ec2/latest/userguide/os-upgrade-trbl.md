@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot an operating system upgrade on an EC2 Windows instance"
+---
+
 # Troubleshoot an operating system upgrade on an EC2 Windows instance
 
 AWS provides upgrade support for issues or problems with the Upgrade Helper Service,
@@ -33,9 +37,11 @@ another instance in ["Waiting for the metadata service"](common-messages.md#meta
 For other issues or problems with an operating system upgrade or migration, we
 recommend reviewing the articles listed in [Before you begin an in-place upgrade](os-inplaceupgrade.md#os-upgrade-before).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Migrate to a Nitro-based instance type
 
 Tutorial:
 Connect EC2 instance to RDS database
+
+All content copied from https://docs.aws.amazon.com/.

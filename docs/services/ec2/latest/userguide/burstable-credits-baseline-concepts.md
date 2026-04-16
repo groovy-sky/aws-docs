@@ -1,3 +1,7 @@
+---
+title: "Key concepts for burstable performance instances"
+---
+
 # Key concepts for burstable performance instances
 
 Traditional Amazon EC2 instance types provide fixed CPU resources, while burstable
@@ -561,7 +565,7 @@ discarded, as indicated by the following image. The full bucket indicates the CP
 balance limit, and the spillover indicates the newly earned credits that exceed the
 limit.
 
-![New credits earned are discarded once the limit is exceeded.](../../../images/awsec2/latest/userguide/images/t2-t3-bucket-png.md)
+![New credits earned are discarded once the limit is exceeded.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/t2-t3-bucket.png)
 
 The CPU credit balance limit differs for each instance size. For example, a
 `t3.micro` instance can accrue a maximum of 288 earned CPU credits in the
@@ -617,10 +621,12 @@ in a baseline utilization of 30% ( `(36/2)/60`).
 The following graph provides an example of a `t3.large` with an average
 CPU utilization below the baseline.
 
-![A graph of a t3.large instance with an average CPU utilization below baseline.](../../../images/awsec2/latest/userguide/images/baseline-utilization-png.md)
+![A graph of a t3.large instance with an average CPU utilization below baseline.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/baseline-utilization.png)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Burstable performance instances
 
 Unlimited mode
+
+All content copied from https://docs.aws.amazon.com/.

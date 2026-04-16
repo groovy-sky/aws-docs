@@ -1,3 +1,7 @@
+---
+title: "Tag your Amazon EC2 resources"
+---
+
 # Tag your Amazon EC2 resources
 
 To help you manage your instances, images, and other Amazon EC2 resources, you can assign your own
@@ -48,7 +52,7 @@ The following diagram illustrates how tagging works. In this example, you've ass
 tags to each of your instances—one tag with the key `Owner` and
 another with the key `Stack`. Each tag also has an associated value.
 
-![Tag example](../../../images/awsec2/latest/userguide/images/tag-example-png.md)
+![Tag example](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/Tag_Example.png)
 
 We recommend that you devise a set of tag keys that meets your needs for each resource type.
 Using a consistent set of tag keys makes it easier for you to manage your resources. You can
@@ -189,8 +193,10 @@ volumes and snapshots](../../../awsaccountbilling/latest/aboutv2/checklistforunw
 
 Elastic IP addresses that are tagged do not appear on your cost allocation report.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AWS Global View
 
 Tag resource permissions
+
+All content copied from https://docs.aws.amazon.com/.

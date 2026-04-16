@@ -1,3 +1,7 @@
+---
+title: "Data persistence for Amazon EC2 instance store volumes"
+---
+
 # Data persistence for Amazon EC2 instance store volumes
 
 Instance store volumes are attached only at instance launch. You can't attach instance
@@ -43,8 +47,10 @@ instance stops or terminations as a result of shutdowns initiated through the
 operating system on the instance. Data stored on instance store volumes does not
 persist in both instance stop and termination events.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Amazon EC2 instance store
 
 Instance store volume limits
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Elastic Fabric Adapter for AI/ML and HPC workloads on Amazon EC2"
+---
+
 # Elastic Fabric Adapter for AI/ML and HPC workloads on Amazon EC2
 
 An Elastic Fabric Adapter (EFA) is a network device that you can attach to your Amazon EC2 instance to
@@ -69,7 +73,7 @@ reliable transport functionality that allows EFA interface to provide better app
 performance for HPC and ML applications on Amazon EC2. While the ENA device offers traditional
 IP networking.
 
-![Contrasting a traditional HPC software stack with one that uses an EFA.](../../../images/awsec2/latest/userguide/images/efa-stack-png.md)
+![Contrasting a traditional HPC software stack with one that uses an EFA.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/efa_stack.png)
 
 Traditionally, AI/ML applications use NCCL and NIXL (for disaggregated inference).
 HPC applications use the Message Passing Interface (MPI) to interface with the system's network
@@ -213,8 +217,10 @@ either an EFA (EFA with ENA) or EFA-only interface.
 EFA is available as an optional Amazon EC2 networking feature that you can enable on any supported
 instance at no additional cost.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Optimize network performance on Windows
 
 Get started with EFA and MPI
+
+All content copied from https://docs.aws.amazon.com/.

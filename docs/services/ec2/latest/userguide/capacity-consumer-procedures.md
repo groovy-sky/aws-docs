@@ -1,3 +1,7 @@
+---
+title: "Interruptible Capacity Reservations for capacity consumers"
+---
+
 # Interruptible Capacity Reservations for capacity consumers
 
 The capacity consumer is the account that launches instances into shared interruptible Capacity Reservations, understanding that their instances may be terminated when the owner reclaims capacity.
@@ -120,8 +124,10 @@ When capacity is reclaimed by the owner, you receive an interruption notice 2 mi
 
 The EventBridge event includes details about which instances will be terminated and the exact termination time. For more information, see [Instance interruption warning](monitor-interruptible-cr.md#instance-interruption-warning).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Capacity owners
 
 Monitor with EventBridge and CloudTrail
+
+All content copied from https://docs.aws.amazon.com/.

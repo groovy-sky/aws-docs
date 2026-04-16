@@ -1,3 +1,7 @@
+---
+title: "Error codes for the Amazon EC2 API"
+---
+
 # Error codes for the Amazon EC2 API
 
 Amazon EC2 has two types of error codes:
@@ -791,6 +795,8 @@ may not be immediately visible to subsequent API commands, which can result in a
 
 For more information about eventual consistency and how to manage it, see [Eventual consistency](../../../../services/ec2/latest/devguide/eventual-consistency.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Permissions
+
+All content copied from https://docs.aws.amazon.com/.

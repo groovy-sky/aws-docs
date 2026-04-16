@@ -1,3 +1,7 @@
+---
+title: "Placement groups on AWS Outposts"
+---
+
 # Placement groups on AWS Outposts
 
 AWS Outposts is a fully managed service that extends AWS infrastructure, services, APIs,
@@ -47,8 +51,10 @@ _User Guide_.
     an instance on the Outpost](../../../outposts/latest/userguide/launch-instance.md#launch-instances) in the _AWS Outposts User_
 _Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Shared placement groups
 
 Network MTU
+
+All content copied from https://docs.aws.amazon.com/.

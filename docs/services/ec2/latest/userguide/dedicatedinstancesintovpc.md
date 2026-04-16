@@ -1,3 +1,7 @@
+---
+title: "Launch Dedicated Instances into a VPC with default tenancy"
+---
+
 # Launch Dedicated Instances into a VPC with default tenancy
 
 When you create a VPC, you have the option of specifying its instance tenancy. If
@@ -59,8 +63,10 @@ cmdlet with the `-Placement_Tenancy` parameter.
 -Placement_Tenancy dedicated
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Dedicated Instances
 
 Change the tenancy of an instance
+
+All content copied from https://docs.aws.amazon.com/.

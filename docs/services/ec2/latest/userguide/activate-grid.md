@@ -1,3 +1,7 @@
+---
+title: "Activate NVIDIA GRID Virtual Applications on your Amazon EC2 GPU-based instances"
+---
+
 # Activate NVIDIA GRID Virtual Applications on your Amazon EC2 GPU-based instances
 
 To activate the GRID Virtual Applications on GPU-based instances that have NVIDIA GPUs (NVIDIA GRID Virtual
@@ -67,8 +71,10 @@ FeatureType=0 IgnoreSP=TRUE
 
 11. Close the registry editor.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 GPU instances
 
 Optimize GPU settings
+
+All content copied from https://docs.aws.amazon.com/.

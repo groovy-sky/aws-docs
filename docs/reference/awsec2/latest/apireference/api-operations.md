@@ -1,3 +1,7 @@
+---
+title: "Actions"
+---
+
 # Actions
 
 The following actions are supported:
@@ -1064,6 +1068,8 @@ The following actions are supported:
 
 - [GetCapacityManagerMetricDimensions](api-getcapacitymanagermetricdimensions.md)
 
+- [GetCapacityManagerMonitoredTagKeys](api-getcapacitymanagermonitoredtagkeys.md)
+
 - [GetCapacityReservationUsage](api-getcapacityreservationusage.md)
 
 - [GetCoipPoolUsage](api-getcoippoolusage.md)
@@ -1504,6 +1510,8 @@ The following actions are supported:
 
 - [UnmonitorInstances](api-unmonitorinstances.md)
 
+- [UpdateCapacityManagerMonitoredTagKeys](api-updatecapacitymanagermonitoredtagkeys.md)
+
 - [UpdateCapacityManagerOrganizationsAccess](api-updatecapacitymanagerorganizationsaccess.md)
 
 - [UpdateInterruptibleCapacityReservationAllocation](api-updateinterruptiblecapacityreservationallocation.md)
@@ -1514,8 +1522,10 @@ The following actions are supported:
 
 - [WithdrawByoipCidr](api-withdrawbyoipcidr.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AWS Wavelength actions
 
 AcceptAddressTransfer
+
+All content copied from https://docs.aws.amazon.com/.

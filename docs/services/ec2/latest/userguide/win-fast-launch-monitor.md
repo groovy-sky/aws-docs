@@ -1,3 +1,7 @@
+---
+title: "Monitor EC2 Fast Launch"
+---
+
 # Monitor EC2 Fast Launch
 
 This section covers how to monitor the Amazon EC2 Windows Server AMIs in your
@@ -148,8 +152,10 @@ FastLaunchSnapshotCreationTime
 Measures the time it took for Amazon EC2 to launch an instance and create a snapshot
 for a EC2 Fast Launch enabled AMI.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Manage resource costs
 
 Service-linked role
+
+All content copied from https://docs.aws.amazon.com/.

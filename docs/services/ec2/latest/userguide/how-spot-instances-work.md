@@ -1,3 +1,7 @@
+---
+title: "How Spot Instances work"
+---
+
 # How Spot Instances work
 
 To launch a Spot Instance, either you create a _Spot Instance request_, or Amazon EC2 creates a
@@ -65,7 +69,7 @@ The following illustration represents the transitions between the request states
 Notice that the transitions depend on the request type (one-time or
 persistent).
 
-![Spot Instance request states.](../../../images/awsec2/latest/userguide/images/spot-request-states-png.md)
+![Spot Instance request states.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/spot_request_states.png)
 
 A one-time Spot Instance request remains active until Amazon EC2 launches the Spot Instance, the request expires,
 or you cancel the request. If capacity is not available, your Spot Instance is terminated and
@@ -190,8 +194,10 @@ All instance families support Dedicated Spot Instances except T instances. For e
 instance family, only the largest instance size or metal size supports Dedicated
 Spot Instances.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Best practices
 
 View pricing history
+
+All content copied from https://docs.aws.amazon.com/.

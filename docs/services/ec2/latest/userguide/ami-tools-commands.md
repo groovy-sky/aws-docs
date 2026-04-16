@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 AMI tools reference"
+---
+
 # Amazon EC2 AMI tools reference
 
 You can use the AMI tools commands to create and manage Amazon S3-backed Linux AMIs. To set up the
@@ -1218,8 +1222,10 @@ Runs in batch mode, suppressing interactive prompts.
 Displays information that can be useful when troubleshooting
 problems.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Set up the AMI tools
 
 Convert your S3-backed AMI
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Monitor Capacity Blocks using EventBridge"
+---
+
 # Monitor Capacity Blocks using EventBridge
 
 When your Capacity Block reservation starts, Amazon EC2 will emit an event through EventBridge that
@@ -79,9 +83,11 @@ The following example shows an event for EC2 Capacity Reservation Instance Inter
 }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create UltraServer group
 
 Logging API calls
 with CloudTrail
+
+All content copied from https://docs.aws.amazon.com/.

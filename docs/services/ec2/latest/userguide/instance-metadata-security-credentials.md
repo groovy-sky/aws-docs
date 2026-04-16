@@ -1,3 +1,7 @@
+---
+title: "Retrieve security credentials from instance metadata"
+---
+
 # Retrieve security credentials from instance metadata
 
 An application on the instance retrieves the security credentials provided by the
@@ -111,8 +115,10 @@ access key, secret key, and the session token. For more information, see [Using 
 Security Credentials to Request Access to AWS Resources](../../../iam/latest/userguide/id-credentials-temp-use-resources.md) in the
 _IAM User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 IAM roles
 
 Permissions to attach a role to an instance
+
+All content copied from https://docs.aws.amazon.com/.

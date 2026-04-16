@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 actions"
+---
+
 # Amazon EC2 actions
 
 The following API actions are available for Amazon EC2. To learn more about Amazon EC2, see the
@@ -545,8 +549,10 @@ The following API actions are available for Amazon EC2. To learn more about Amaz
 
 - [DescribeTags](api-describetags.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Amazon EBS actions
 
 AWS Network Manager actions
+
+All content copied from https://docs.aws.amazon.com/.

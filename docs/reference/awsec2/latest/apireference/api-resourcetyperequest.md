@@ -1,3 +1,7 @@
+---
+title: "ResourceTypeRequest"
+---
+
 # ResourceTypeRequest
 
 A resource type to check for image references. Associated options can also be specified if the
@@ -35,8 +39,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/resourcetyperequest.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ResourceTypeOption
 
 ResponseError
+
+All content copied from https://docs.aws.amazon.com/.

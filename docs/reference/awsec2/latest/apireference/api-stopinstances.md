@@ -1,3 +1,7 @@
+---
+title: "StopInstances"
+---
+
 # StopInstances
 
 Stops an Amazon EBS-backed instance. You can restart your instance at any time using
@@ -190,8 +194,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/stopinstances.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 StartVpcEndpointServicePrivateDnsVerification
 
 TerminateClientVpnConnections
+
+All content copied from https://docs.aws.amazon.com/.

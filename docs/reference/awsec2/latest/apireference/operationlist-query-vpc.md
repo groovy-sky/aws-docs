@@ -1,3 +1,7 @@
+---
+title: "Amazon VPC actions"
+---
+
 # Amazon VPC actions
 
 The following API actions are available for Amazon VPC. To learn more about Amazon VPC, see the
@@ -315,8 +319,10 @@ The following API actions are available for Amazon VPC. To learn more about Amaz
 
 - [RejectVpcPeeringConnection](api-rejectvpcpeeringconnection.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 VM Import/Export actions
 
 Secondary Networks actions
+
+All content copied from https://docs.aws.amazon.com/.

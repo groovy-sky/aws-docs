@@ -1,3 +1,7 @@
+---
+title: "CapacityBlock"
+---
+
 # CapacityBlock
 
 Reserve powerful GPU instances on a future date to support your short duration machine learning (ML) workloads. Instances that run inside a Capacity Block are automatically placed close together inside [Amazon EC2 UltraClusters](http://aws.amazon.com/ec2/ultraclusters), for low-latency, petabit-scale, non-blocking networking.
@@ -99,8 +103,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/capacityblock.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CapacityAllocationMetadataEntry
 
 CapacityBlockExtension
+
+All content copied from https://docs.aws.amazon.com/.

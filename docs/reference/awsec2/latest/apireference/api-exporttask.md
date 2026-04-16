@@ -1,3 +1,7 @@
+---
+title: "ExportTask"
+---
+
 # ExportTask
 
 Describes an export instance task.
@@ -72,8 +76,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/exporttask.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ExportImageTask
 
 ExportTaskS3Location
+
+All content copied from https://docs.aws.amazon.com/.

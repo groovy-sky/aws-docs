@@ -1,3 +1,7 @@
+---
+title: "Enable stop protection for your EC2 instances"
+---
+
 # Enable stop protection for your EC2 instances
 
 To prevent an instance from being accidentally stopped, you can enable stop protection
@@ -197,8 +201,10 @@ Edit-EC2InstanceAttribute `
     -DisableApiStop $false
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Methods for stopping an instance
 
 Hibernate
+
+All content copied from https://docs.aws.amazon.com/.

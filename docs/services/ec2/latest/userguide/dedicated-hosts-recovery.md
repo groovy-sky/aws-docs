@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 Dedicated Host recovery"
+---
+
 # Amazon EC2 Dedicated Host recovery
 
 Dedicated Host auto recovery restarts your instances on to a new replacement host when certain
@@ -54,8 +58,10 @@ If the impaired Dedicated Host was billed using the On-Demand rate, the replacem
 also billed using the On-Demand rate. If the impaired Dedicated Host had an active Dedicated Host Reservation, it
 is transferred to the replacement Dedicated Host.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Allocate Dedicated Host on Outpost
 
 How host recovery works
+
+All content copied from https://docs.aws.amazon.com/.

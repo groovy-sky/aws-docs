@@ -1,3 +1,7 @@
+---
+title: "Create a Capacity Reservation Fleet"
+---
+
 # Create a Capacity Reservation Fleet
 
 When you create a Capacity Reservation Fleet it automatically creates Capacity Reservations for the instance types
@@ -94,8 +98,10 @@ $specification.EbsOptimized = $true
 $specification.Priority = 1
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Concepts and planning
 
 Modify
+
+All content copied from https://docs.aws.amazon.com/.

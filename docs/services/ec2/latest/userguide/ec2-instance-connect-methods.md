@@ -1,3 +1,7 @@
+---
+title: "Connect to a Linux instance using EC2 Instance Connect"
+---
+
 # Connect to a Linux instance using EC2 Instance Connect
 
 The following instructions explain how to connect to your Linux instance using EC2 Instance Connect
@@ -251,9 +255,11 @@ following:
 - [How do I troubleshoot issues connecting to my EC2 instance using EC2\
 Instance Connect?](https://repost.aws/knowledge-center/ec2-instance-connect-troubleshooting)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Install
 EC2 Instance Connect
 
 Uninstall EC2 Instance Connect
+
+All content copied from https://docs.aws.amazon.com/.

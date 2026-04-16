@@ -1,3 +1,7 @@
+---
+title: "OutpostLag"
+---
+
 # OutpostLag
 
 Describes an Outpost link aggregation group (LAG).
@@ -70,8 +74,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/outpostlag.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 OperatorResponse
 
 PacketHeaderStatement
+
+All content copied from https://docs.aws.amazon.com/.

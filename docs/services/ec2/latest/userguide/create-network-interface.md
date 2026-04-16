@@ -1,3 +1,7 @@
+---
+title: "Create a network interface for your EC2 instance"
+---
+
 # Create a network interface for your EC2 instance
 
 You can create a network interface for use by your EC2 instances. When you create a network
@@ -273,8 +277,10 @@ $secondary.PrivateIpAddress = "10.0.1.31"
 $secondary.Primary = $false
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 IP addresses per network interface
 
 Network interface attachments
+
+All content copied from https://docs.aws.amazon.com/.

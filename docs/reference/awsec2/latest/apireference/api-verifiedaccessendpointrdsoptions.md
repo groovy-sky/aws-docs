@@ -1,3 +1,7 @@
+---
+title: "VerifiedAccessEndpointRdsOptions"
+---
+
 # VerifiedAccessEndpointRdsOptions
 
 Describes the RDS options for a Verified Access endpoint.
@@ -74,8 +78,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/verifiedaccessendpointrdsoptions.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 VerifiedAccessEndpointPortRange
 
 VerifiedAccessEndpointStatus
+
+All content copied from https://docs.aws.amazon.com/.

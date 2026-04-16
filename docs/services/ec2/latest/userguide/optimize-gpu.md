@@ -1,3 +1,7 @@
+---
+title: "Optimize GPU settings on Amazon EC2 instances"
+---
+
 # Optimize GPU settings on Amazon EC2 instances
 
 There are several GPU setting optimizations that you can perform to achieve the best
@@ -199,8 +203,10 @@ PS C:\> .\nvidia-smi -ac "2505,875"
 PS C:\> .\nvidia-smi -ac "877,1530"
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Activate NVIDIA GRID Virtual Applications
 
 Set up dual 4K displays on G4ad
+
+All content copied from https://docs.aws.amazon.com/.

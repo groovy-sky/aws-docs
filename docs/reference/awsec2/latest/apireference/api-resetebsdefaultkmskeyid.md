@@ -1,3 +1,7 @@
+---
+title: "ResetEbsDefaultKmsKeyId"
+---
+
 # ResetEbsDefaultKmsKeyId
 
 Resets the default AWS KMS key for EBS encryption for your account in this Region
@@ -66,8 +70,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/resetebsdefaultkmskeyid.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ResetAddressAttribute
 
 ResetFpgaImageAttribute
+
+All content copied from https://docs.aws.amazon.com/.

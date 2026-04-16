@@ -1,3 +1,7 @@
+---
+title: "Create a Capacity Reservation"
+---
+
 # Create a Capacity Reservation
 
 You can create a Capacity Reservation at any time to ensure that you have compute capacity available
@@ -260,9 +264,11 @@ Add-EC2CapacityReservation `
     -StartDate  YYYY-MMDDThh:mm:ss.sssZ
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Pricing and
 billing
 
 View the state of a Capacity Reservation
+
+All content copied from https://docs.aws.amazon.com/.

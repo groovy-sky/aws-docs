@@ -1,3 +1,7 @@
+---
+title: "Verify that an Amazon EC2 instance is enabled for NitroTPM"
+---
+
 # Verify that an Amazon EC2 instance is enabled for NitroTPM
 
 You can verify whether an Amazon EC2 instance is enabled for NitroTPM. If NitroTPM support is enabled
@@ -46,10 +50,12 @@ The **TPM Management on Local Computer** window opens.
 3. Check the **TPM Manufacturer Information** field. It contains the
     manufacturer's name and the version of the NitroTPM on the instance.
 
-![The TPM Management on Local Computer window and the TPM Manufacturer Information field showing the version of the NitroTPM on the instance.](../../../images/awsec2/latest/userguide/images/tpm-1-png.md)
+![The TPM Management on Local Computer window and the TPM Manufacturer Information field showing the version of the NitroTPM on the instance.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/tpm-1.png)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Enable or stop using NitroTPM
 
 Retrieve the public endorsement key
+
+All content copied from https://docs.aws.amazon.com/.

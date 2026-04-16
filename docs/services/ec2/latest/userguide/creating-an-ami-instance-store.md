@@ -1,3 +1,7 @@
+---
+title: "Create an Amazon S3-backed AMI"
+---
+
 # Create an Amazon S3-backed AMI
 
 The AMI that you specify when you launch your instance determines the type of root
@@ -38,7 +42,7 @@ The AMI creation process is different for Amazon EBS-backed AMIs. For more infor
 The following diagram summarizes the process of creating an AMI from an instance with an
 instance store root volume.
 
-![Creating an Amazon S3-backed AMI.](../../../images/awsec2/latest/userguide/images/ami-create-instance-store-png.md)
+![Creating an Amazon S3-backed AMI.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ami_create_instance_store.png)
 
 First, launch an instance from an AMI that's similar to the AMI that you'd like to
 create. You can connect to your instance and customize it. When the instance is set up
@@ -347,8 +351,10 @@ instead of `/tmp`.
 If you previously specified a Region for the [ec2-upload-bundle](ami-tools-commands.md#ami-upload-bundle) command, specify that Region
 again for this command.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create an AMI
 
 Set up the AMI tools
+
+All content copied from https://docs.aws.amazon.com/.

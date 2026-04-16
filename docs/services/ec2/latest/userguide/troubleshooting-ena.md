@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot the ENA kernel driver on Linux"
+---
+
 # Troubleshoot the ENA kernel driver on Linux
 
 The Elastic Network Adapter (ENA) is designed to improve operating system health and
@@ -654,8 +658,10 @@ Set your Tx queues to the maximum depth:
 ethtool -G interface tx depth
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ENA queues
 
 Troubleshoot ENA on Windows
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Precision clock and time synchronization on your EC2 instance"
+---
+
 # Precision clock and time synchronization on your EC2 instance
 
 A consistent and accurate time reference on your Amazon EC2 instance is crucial for many server
@@ -96,8 +100,10 @@ event.
 
 - (Linux) [https://chrony-project.org/](https://chrony-project.org/)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Apply STIG settings with Systems Manager
 
 Use the local Amazon Time Sync Service
+
+All content copied from https://docs.aws.amazon.com/.

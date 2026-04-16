@@ -1,3 +1,7 @@
+---
+title: "Add instance store volumes to an EC2 instance"
+---
+
 # Add instance store volumes to an EC2 instance
 
 For instance types with **NVMe instance store volumes**, all
@@ -41,8 +45,10 @@ Amazon EBS volume. Instance store is not supported for the root volume.
 
 - [Make instance store volume available for use on an EC2 instance](making-instance-stores-available-on-your-instances.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 SSD instance store volumes
 
 Add instance store volumes to an AMI
+
+All content copied from https://docs.aws.amazon.com/.

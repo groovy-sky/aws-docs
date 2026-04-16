@@ -1,3 +1,7 @@
+---
+title: "AMI billing information fields"
+---
+
 # AMI billing information fields
 
 The following fields provide billing information associated with an AMI:
@@ -117,8 +121,10 @@ Linux Spot Instance-hour in US East (N. Virginia) in Zone 6.
 3 This appears as RunInstances (Linux/UNIX) in
 your usage reports.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Understand AMI billing
 
 Find AMI billing information
+
+All content copied from https://docs.aws.amazon.com/.

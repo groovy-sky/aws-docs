@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 key pairs and Amazon EC2 instances"
+---
+
 # Amazon EC2 key pairs and Amazon EC2 instances
 
 A key pair, consisting of a public key and a private key, is a set of security credentials
@@ -11,7 +15,7 @@ following diagram. It's important that you store your private key in a secure pl
 anyone who possesses your private key can connect to your instances that use the key
 pair.
 
-![A key pair consists of a private key for your computer and a public key for your instance.](../../../images/awsec2/latest/userguide/images/ec2-key-pair-png.md)
+![A key pair consists of a private key for your computer and a public key for your instance.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ec2-key-pair.png)
 
 When you launch an instance, you can [specify a key pair](ec2-instance-launch-parameters.md#liw-key-pair),
 so that you can connect to your instance using a method that requires a key pair. Depending on
@@ -46,8 +50,10 @@ your instance with an interactive one-click browser-based shell or the AWS Comma
 
 - [Verify the fingerprint of your key pair](verify-keys.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Best practices for Windows instances
 
 Create a key pair
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Use allocation strategies to determine how EC2 Fleet or Spot Fleet fulfills Spot and On-Demand capacity"
+---
+
 # Use allocation strategies to determine how EC2 Fleet or Spot Fleet fulfills Spot and On-Demand capacity
 
 When you use multiple capacity pools (each comprising an instance type and Availability
@@ -330,9 +334,11 @@ are used in the order of priority, as follows:
 
 - `m5a.large` – priority 3
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Instance weighting
 
 Capacity
 Rebalancing
+
+All content copied from https://docs.aws.amazon.com/.

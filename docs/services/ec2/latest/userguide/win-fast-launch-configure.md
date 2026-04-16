@@ -1,3 +1,7 @@
+---
+title: "Configure EC2 Fast Launch settings for your Amazon EC2 Windows Server AMI"
+---
+
 # Configure EC2 Fast Launch settings for your Amazon EC2 Windows Server AMI
 
 You can configure EC2 Fast Launch for Windows AMIs that you own, or AMIs
@@ -339,8 +343,10 @@ cmdlet with the `-LaunchTemplate_LaunchTemplateId` or
 For more information about EC2 launch templates, see
 [Store instance launch parameters in Amazon EC2 launch templates](ec2-launch-templates.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 EC2 Fast Launch prerequisites
 
 View EC2 Fast Launch AMIs
+
+All content copied from https://docs.aws.amazon.com/.

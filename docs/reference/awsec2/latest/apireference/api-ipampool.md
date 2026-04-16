@@ -1,3 +1,7 @@
+---
+title: "IpamPool"
+---
+
 # IpamPool
 
 In IPAM, a pool is a collection of contiguous IP addresses CIDRs. Pools enable you to organize your IP addresses according to your routing and security needs. For example, if you have separate routing and security needs for development and production applications, you can create a pool for each.
@@ -246,8 +250,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ipampool.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 IpamPolicyOrganizationTarget
 
 IpamPoolAllocation
+
+All content copied from https://docs.aws.amazon.com/.

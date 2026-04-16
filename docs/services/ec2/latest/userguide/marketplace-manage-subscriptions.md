@@ -1,3 +1,7 @@
+---
+title: "Manage your AWS Marketplace subscriptions"
+---
+
 # Manage your AWS Marketplace subscriptions
 
 On the AWS Marketplace website, you can check your subscription details, view the vendor's usage
@@ -64,8 +68,10 @@ retain after the termination to persistent storage.
 3. Choose **Cancel subscription**. You are prompted to confirm your
     cancellation.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Use paid support
 
 AMI lifecycle
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "DescribeIpamPrefixListResolverTargets"
+---
+
 # DescribeIpamPrefixListResolverTargets
 
 Describes one or more IPAM prefix list resolver Targets. Use this operation to view the configuration and status of resolver targets.
@@ -108,8 +112,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describeipamprefixlistresolvertargets.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeIpamPrefixListResolvers
 
 DescribeIpamResourceDiscoveries
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Onboard your address range for use in Amazon EC2"
+---
+
 # Onboard your address range for use in Amazon EC2
 
 The onboarding process for BYOIP includes the following tasks, depending on your needs.
@@ -434,8 +438,10 @@ A status of `“unknown”` indicates the ROA object for the address range has
 not been created. A status of `“invalid_asn”` indicates that the ROA object
 for the address range was not created successfully.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Prerequisites
 
 Use your address range
+
+All content copied from https://docs.aws.amazon.com/.

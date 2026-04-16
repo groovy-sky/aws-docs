@@ -1,3 +1,7 @@
+---
+title: "GetCapacityManagerAttributes"
+---
+
 # GetCapacityManagerAttributes
 
 Retrieves the current configuration and status of EC2 Capacity Manager for your account, including enablement status, Organizations access settings, and data ingestion status.
@@ -76,6 +80,36 @@ Type: String
 
 For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
 
+## Examples
+
+### Example
+
+This example retrieves the current Capacity Manager attributes for your account.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=GetCapacityManagerAttributes
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```
+
+<GetCapacityManagerAttributesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+    <requestId>d4904fd9-82c2-4ea5-adfe-a9cc3EXAMPLE</requestId>
+    <capacityManagerStatus>enabled</capacityManagerStatus>
+    <organizationsAccess>true</organizationsAccess>
+    <dataExportCount>2</dataExportCount>
+    <ingestionStatus>ingestion-complete</ingestionStatus>
+    <ingestionStatusMessage>Data ingestion is up to date.</ingestionStatusMessage>
+    <earliestDatapointTimestamp>2025-12-23T20:00:00+00:00</earliestDatapointTimestamp>
+    <latestDatapointTimestamp>2026-03-23T15:00:00+00:00</latestDatapointTimestamp>
+</GetCapacityManagerAttributesResponse>
+```
+
 ## See Also
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
@@ -100,8 +134,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/getcapacitymanagerattributes.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 GetAwsNetworkPerformanceData
 
 GetCapacityManagerMetricData
+
+All content copied from https://docs.aws.amazon.com/.

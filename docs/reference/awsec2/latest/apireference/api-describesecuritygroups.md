@@ -1,3 +1,7 @@
+---
+title: "DescribeSecurityGroups"
+---
+
 # DescribeSecurityGroups
 
 Describes the specified security groups or all of your security groups.
@@ -434,8 +438,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describesecuritygroups.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeSecurityGroupRules
 
 DescribeSecurityGroupVpcAssociations
+
+All content copied from https://docs.aws.amazon.com/.

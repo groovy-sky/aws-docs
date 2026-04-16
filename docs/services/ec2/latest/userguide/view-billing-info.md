@@ -1,3 +1,7 @@
+---
+title: "Finding AMI billing and usage details"
+---
+
 # Finding AMI billing and usage details
 
 The following properties can help you verify AMI charges on your bill:
@@ -127,8 +131,10 @@ PlatformDetails : Windows
 UsageOperation  : RunInstances:0002
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AMI billing fields
 
 Verify AMI charges on your bill
+
+All content copied from https://docs.aws.amazon.com/.

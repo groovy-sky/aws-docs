@@ -1,3 +1,7 @@
+---
+title: "Initiate a Spot Instance interruption"
+---
+
 # Initiate a Spot Instance interruption
 
 You can select a Spot Instance request or a Spot Fleet request in the Amazon EC2 console and initiate a Spot Instance
@@ -170,8 +174,10 @@ To view all the quotas for AWS FIS, open the [Service Quotas console](https://co
 view all the [quotas for AWS Fault Injection Service](../../../fis/latest/userguide/fis-quotas.md) in
 the _AWS Fault Injection Service User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Prepare for interruptions
 
 Spot Instance interruption notices
+
+All content copied from https://docs.aws.amazon.com/.

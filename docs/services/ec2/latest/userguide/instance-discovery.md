@@ -1,3 +1,7 @@
+---
+title: "Find an Amazon EC2 instance type"
+---
+
 # Find an Amazon EC2 instance type
 
 Before you can launch an instance, you must select an instance type to use. The instance type
@@ -363,8 +367,10 @@ The following example displays the instance types that support hibernation.
     -Filter @{Name="hibernation-supported"; Values="true"}).InstanceType | Sort-Object
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Instance types
 
 EC2 instance type finder
+
+All content copied from https://docs.aws.amazon.com/.

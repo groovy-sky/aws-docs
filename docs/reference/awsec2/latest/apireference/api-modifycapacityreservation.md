@@ -1,3 +1,7 @@
+---
+title: "ModifyCapacityReservation"
+---
+
 # ModifyCapacityReservation
 
 Modifies a Capacity Reservation's capacity, instance eligibility, and the conditions
@@ -173,8 +177,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifycapacityreservation.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ModifyAvailabilityZoneGroup
 
 ModifyCapacityReservationFleet
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Create the AWS binary blob for UEFI Secure Boot"
+---
+
 # Create the AWS binary blob for UEFI Secure Boot
 
 You can use the following steps to customize the UEFI Secure Boot variables during
@@ -164,8 +168,10 @@ If Microsoft updates the KEK, you must use the latest KEK.
     Replacing dbx
     ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create a Linux AMI with custom keys
 
 AMI encryption
+
+All content copied from https://docs.aws.amazon.com/.

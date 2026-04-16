@@ -1,3 +1,7 @@
+---
+title: "Modify network interface attributes"
+---
+
 # Modify network interface attributes
 
 You can change the following network interface attributes:
@@ -223,8 +227,10 @@ Edit-EC2NetworkInterfaceAttribute `
     -ConnectionTrackingSpecification_UdpTimeout 60
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Manage IP addresses
 
 Multiple network interfaces
+
+All content copied from https://docs.aws.amazon.com/.

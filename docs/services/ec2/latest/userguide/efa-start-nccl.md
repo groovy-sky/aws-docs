@@ -1,3 +1,7 @@
+---
+title: "Get started with EFA and NCCL for ML workloads on Amazon EC2"
+---
+
 # Get started with EFA and NCCL for ML workloads on Amazon EC2
 
 The NVIDIA Collective Communications Library (NCCL) is a library of standard collective
@@ -138,7 +142,11 @@ can launch your EFA-enabled instances.
 7. In the **Network settings** section, choose **Edit**,
     and then do the following:
 1. For **Subnet**, choose the subnet in which to launch the
-       instance. If you do not select a subnet, you can't enable the instance for EFA.
+       instance.
+
+      ###### Important
+
+      You must select a subnet. If you do not select a subnet, you can't enable the instance for EFA.
 
 2. For **Firewall (security groups)**, choose **Select**
       **existing security group**, and then select the security group that you
@@ -1110,8 +1118,10 @@ $ ssh member_node_private_ip
 
 You should connect to the member node without being prompted for a key or password.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Get started with EFA and MPI
 
 Get started with EFA and NIXL
+
+All content copied from https://docs.aws.amazon.com/.

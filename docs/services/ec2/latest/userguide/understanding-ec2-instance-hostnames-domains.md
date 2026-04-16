@@ -1,3 +1,7 @@
+---
+title: "Understanding EC2 instance hostnames and domains"
+---
+
 # Understanding EC2 instance hostnames and domains
 
 A EC2 instance address is made up of different components. The following is an example of an EC2 instance address that uses the private IPv4 address of the instance:
@@ -25,8 +29,10 @@ Where:
 
 Depending on the hostname type you choose for the instance or primary network interface attached to the instance, the hostname and domain name formats will be different from the example above. This section explains the hostname type options.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 EC2 instance hostnames and domains
 
 Hostname types
+
+All content copied from https://docs.aws.amazon.com/.

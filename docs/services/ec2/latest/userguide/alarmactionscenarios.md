@@ -1,3 +1,7 @@
+---
+title: "Amazon CloudWatch alarm action scenarios"
+---
+
 # Amazon CloudWatch alarm action scenarios
 
 You can use the Amazon EC2 console to create alarm actions that stop or terminate an Amazon EC2
@@ -5,7 +9,7 @@ instance when certain conditions are met. In the following screen capture of the
 where you set the alarm actions, we've numbered the settings. We've also numbered the settings
 in the scenarios that follow, to help you create the appropriate actions.
 
-![Manage Cloudwatch alarms page.](../../../images/awsec2/latest/userguide/images/manage-cloudwatch-alarms-png.md)
+![Manage Cloudwatch alarms page.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/manage-cloudwatch-alarms.png)
 
 ## Scenario 1: Stop idle development and test instances
 
@@ -217,8 +221,10 @@ Network Out
 
 5 Minutes
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create alarms that stop, terminate, reboot, or recover an instance
 
 Automate using EventBridge
+
+All content copied from https://docs.aws.amazon.com/.

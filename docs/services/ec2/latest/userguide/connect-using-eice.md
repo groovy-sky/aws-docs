@@ -1,3 +1,7 @@
+---
+title: "Connect to an Amazon EC2 instance using EC2 Instance Connect Endpoint"
+---
+
 # Connect to an Amazon EC2 instance using EC2 Instance Connect Endpoint
 
 You can use EC2 Instance Connect Endpoint to connect to an Amazon EC2 instance that supports SSH or
@@ -285,7 +289,7 @@ Note that the following screenshot of the **Edit PC**
     window is from Microsoft Remote Desktop on a Mac. If you are using a Windows
     client, the window might be different.
 
-![The RDP client with the example "localhost:5555" in the PC name field.](../../../images/awsec2/latest/userguide/images/ec2-instance-connect-endpoint-rdp-png.md)
+![The RDP client with the example "localhost:5555" in the PC name field.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ec2-instance-connect-endpoint-rdp.png)
 
 6. In the RDP client, right-click the PC (that you just configured) and
     choose **Connect** to connect to your instance.
@@ -327,9 +331,11 @@ If you receive an `AccessDeniedException` error, and the
 sure to specify the `--max-tunnel-duration` parameter when connecting
 to an instance. For more information about this parameter, see [open-tunnel](../../../cli/latest/reference/ec2-instance-connect/open-tunnel.md) in the _AWS CLI Command Reference_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Delete an EC2 Instance Connect Endpoint
 
 Log
 connections
+
+All content copied from https://docs.aws.amazon.com/.

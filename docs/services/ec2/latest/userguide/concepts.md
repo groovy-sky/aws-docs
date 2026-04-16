@@ -1,3 +1,7 @@
+---
+title: "What is Amazon EC2?"
+---
+
 # What is Amazon EC2?
 
 Amazon Elastic Compute Cloud (Amazon EC2) provides on-demand, scalable computing capacity in the Amazon Web
@@ -12,7 +16,7 @@ the instance type that you specify determines the hardware available to your ins
 Each instance type offers a different balance of compute, memory, network, and storage
 resources. For more information, see the [Amazon EC2 Instance Types Guide](../instancetypes/instance-types.md).
 
-![Each EC2 instance type provides a balance of compute, memory, network, and storage resources.](../../../images/awsec2/latest/userguide/images/instance-types-png.md)
+![Each EC2 instance type provides a balance of compute, memory, network, and storage resources.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/instance-types.png)
 
 ## Features of Amazon EC2
 
@@ -277,6 +281,8 @@ AWS Cost Explorer](../../../cost-management/latest/userguide/ce-what-is.md) in t
 
 - [Windows on AWS](https://aws.amazon.com/windows)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Get started tutorial
+
+All content copied from https://docs.aws.amazon.com/.

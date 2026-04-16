@@ -1,3 +1,7 @@
+---
+title: "EC2Launch version history"
+---
+
 # EC2Launch version history
 
 To download and install the latest version of EC2Launch, see [Install the latest version of EC2Launch](ec2launch-download.md).
@@ -410,8 +414,10 @@ suffix list.
 
 Initial release.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Configure EC2Launch
 
 EC2Config service
+
+All content copied from https://docs.aws.amazon.com/.

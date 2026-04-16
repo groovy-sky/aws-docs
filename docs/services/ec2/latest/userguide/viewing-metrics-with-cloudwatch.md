@@ -1,3 +1,7 @@
+---
+title: "CloudWatch metrics that are available for your instances"
+---
+
 # CloudWatch metrics that are available for your instances
 
 Amazon EC2 sends metrics to Amazon CloudWatch. You can use the AWS Management Console, the AWS CLI, or an API to list
@@ -773,9 +777,11 @@ The values for this dimension define the first letter of the instance types that
 `Standard/OnDemand` returns information about all running instances with types that start with A, C, D, H, I, M, R, T, and Z, and
 `G/OnDemand` returns information about all running instances with types that start with G.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Manage detailed monitoring
 
 Install and configure
 the CloudWatch agent
+
+All content copied from https://docs.aws.amazon.com/.

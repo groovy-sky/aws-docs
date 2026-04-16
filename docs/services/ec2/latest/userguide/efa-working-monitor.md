@@ -1,3 +1,7 @@
+---
+title: "Monitor an Elastic Fabric Adapter on Amazon EC2"
+---
+
 # Monitor an Elastic Fabric Adapter on Amazon EC2
 
 You can use the following features to monitor the performance of your Elastic Fabric Adapters.
@@ -338,8 +342,10 @@ CloudWatch Container Insights. Amazon CloudWatch Container Insights supports all
 For more information, see [Amazon EKS and Kubernetes Container Insights metrics](../../../amazoncloudwatch/latest/monitoring/container-insights-metrics-enhanced-eks.md#Container-Insights-metrics-EFA) in the
 _Amazon CloudWatch User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Detach and delete an EFA
 
 Verify the EFA installer
+
+All content copied from https://docs.aws.amazon.com/.

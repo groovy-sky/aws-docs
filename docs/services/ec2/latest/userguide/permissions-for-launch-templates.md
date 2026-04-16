@@ -1,3 +1,7 @@
+---
+title: "IAM permissions required for Amazon EC2 launch templates"
+---
+
 # IAM permissions required for Amazon EC2 launch templates
 
 You can use IAM permissions to control whether users can list, view, create, or
@@ -356,8 +360,10 @@ templates in the specified account and Region.
 For more information about conditions keys that you can use to control the tag
 keys and values that can be applied to Amazon EC2 resources, see [Control access to specific tags](supported-iam-actions-tagging.md#control-tagging).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Restrictions
 
 Control launching instances
+
+All content copied from https://docs.aws.amazon.com/.

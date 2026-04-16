@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for BYOIP in Amazon EC2"
+---
+
 # Prerequisites for BYOIP in Amazon EC2
 
 The onboarding process for BYOIP has two phases, for which you must perform three
@@ -44,7 +48,7 @@ Key Infrastructure (RPKI) of your RIR.
 
 A ROA is not required for non-publicly advertisable IPv6 address space.
 
-![The 3-step onboarding process for BYOIP.](../../../images/awsec2/latest/userguide/images/byoip-preonboarding-png.md)
+![The 3-step onboarding process for BYOIP.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/byoip-preonboarding.png)
 
 To bring on multiple non-contiguous address ranges, you must repeat this process with
 each address range. However, the preparation and RIR configuration steps don't need to
@@ -343,8 +347,10 @@ range.
 This step is not required for non-publicly advertisable IPv6 address
 space.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Bring your own IP addresses
 
 Onboard your address range
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Hostname types"
+---
+
 # Hostname types
 
 AWS provides two types of hostnames: **private** and **public**. The following table compares the key differences between private and public hostnames, including how they resolve, how they're configured, and when to use each type.
@@ -653,8 +657,10 @@ Edit-EC2PrivateDnsNameOption `
     -EnableResourceNameDnsARecord $true
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Understanding EC2 instance hostnames and domains
 
 Bring your own IP addresses
+
+All content copied from https://docs.aws.amazon.com/.

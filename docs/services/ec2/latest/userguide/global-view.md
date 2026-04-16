@@ -1,3 +1,7 @@
+---
+title: "View resources across Regions using AWS Global View"
+---
+
 # View resources across Regions using AWS Global View
 
 AWS Global View enables you to view some of your Amazon EC2 and Amazon VPC resources across a
@@ -192,8 +196,10 @@ Regions and resource types, in the navigation panel, choose
 and **Regions** tabs, select the Regions and resource types that
 you do not want to be displayed in AWS Global View.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Find your resources
 
 Tag your resources
+
+All content copied from https://docs.aws.amazon.com/.

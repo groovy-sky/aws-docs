@@ -1,3 +1,7 @@
+---
+title: "UnassignIpv6Addresses"
+---
+
 # UnassignIpv6Addresses
 
 Unassigns the specified IPv6 addresses or Prefix Delegation prefixes from a network
@@ -119,8 +123,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/unassignipv6addresses.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 TerminateInstances
 
 UnassignPrivateIpAddresses
+
+All content copied from https://docs.aws.amazon.com/.

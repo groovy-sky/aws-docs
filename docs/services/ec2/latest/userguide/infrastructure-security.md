@@ -1,3 +1,7 @@
+---
+title: "Infrastructure security in Amazon EC2"
+---
+
 # Infrastructure security in Amazon EC2
 
 As a managed service, Amazon Elastic Compute Cloud is protected by AWS global network security. For
@@ -147,8 +151,10 @@ for critical business application servers.
 Amazon VPC supports additional network security controls, such as gateways, proxy servers, and network
 monitoring options. For more information, see [Control network traffic](../../../vpc/latest/userguide/infrastructure-security.md#control-network-traffic) in the _Amazon VPC User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Data protection
 
 Resilience
+
+All content copied from https://docs.aws.amazon.com/.

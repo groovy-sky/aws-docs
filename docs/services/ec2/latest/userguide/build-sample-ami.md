@@ -1,3 +1,7 @@
+---
+title: "Build the sample Amazon Linux 2023 image description"
+---
+
 # Build the sample Amazon Linux 2023 image description
 
 AWS provides a sample Amazon Linux 2023 image description that you can use as a starting point for creating your own custom Attestable AMIs
@@ -134,8 +138,10 @@ aws ec2 register-image \
    --ena-support
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Attestable AMIs
 
 Sample Amazon Linux 2023 image description
+
+All content copied from https://docs.aws.amazon.com/.

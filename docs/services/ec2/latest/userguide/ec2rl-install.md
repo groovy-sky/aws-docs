@@ -1,3 +1,7 @@
+---
+title: "Install EC2Rescue on an Amazon EC2 Linux instance"
+---
+
 # Install EC2Rescue on an Amazon EC2 Linux instance
 
 The EC2Rescue for Linux tool can be installed on an Amazon EC2 Linux instance that meets the
@@ -209,8 +213,10 @@ trust).
 
 For more information, see [https://www.gnupg.org/](https://www.gnupg.org/).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 EC2Rescue for Linux instances
 
 Run EC2Rescue commands
+
+All content copied from https://docs.aws.amazon.com/.

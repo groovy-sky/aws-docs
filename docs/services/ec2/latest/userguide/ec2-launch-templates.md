@@ -1,3 +1,7 @@
+---
+title: "Store instance launch parameters in Amazon EC2 launch templates"
+---
+
 # Store instance launch parameters in Amazon EC2 launch templates
 
 You can use an Amazon EC2 _launch template_ to store instance launch
@@ -21,7 +25,7 @@ instance. The third version uses different values for some of the parameters. Ve
 set as the default version. If you launched an instance from this launch template, the
 launch parameters from version 2 would be used if no other version were specified.
 
-![Launch template with three versions.](../../../images/awsec2/latest/userguide/images/launch-template-diagram-png.md)
+![Launch template with three versions.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/launch-template-diagram.png)
 
 ###### Contents
 
@@ -37,9 +41,11 @@ launch parameters from version 2 would be used if no other version were specifie
 
 - [Delete a launch template or a launch template version](delete-launch-template.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Logging API calls
 with CloudTrail
 
 Restrictions
+
+All content copied from https://docs.aws.amazon.com/.

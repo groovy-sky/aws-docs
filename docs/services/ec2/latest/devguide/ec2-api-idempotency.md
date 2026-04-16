@@ -1,3 +1,7 @@
+---
+title: "Ensuring idempotency in Amazon EC2 API requests"
+---
+
 # Ensuring idempotency in Amazon EC2 API requests
 
 When you make a mutating API request, the request typically returns a result before the
@@ -393,8 +397,10 @@ Retry
 The error is caused by an AWS server-side issue and is generally transient.
 Repeat the request with an appropriate backoff strategy.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Eventual consistency
 
 API request throttling
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Connect to your Windows instance using Fleet Manager"
+---
+
 # Connect to your Windows instance using Fleet Manager
 
 You can use Fleet Manager, a capability of AWS Systems Manager, to connect to Windows instances
@@ -41,8 +45,10 @@ _AWS Systems Manager User Guide_.
 For more information, see [Connecting to a Windows Server managed instance using Remote Desktop](../../../systems-manager/latest/userguide/fleet-manager-remote-desktop-connections.md) in the
 _AWS Systems Manager User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Connect using an RDP client
 
 Transfer files using RDP
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "EC2Config version history"
+---
+
 # EC2Config version history
 
 The following table describes the released versions of EC2Config. For information about
@@ -1043,8 +1047,10 @@ upon first logon (not disconnect/reconnect)
 surrounding the code with
 <powershell></powershell>
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Troubleshoot EC2Config
 
 EC2 Fast Launch for Windows
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Release an Amazon EC2 Dedicated Host"
+---
+
 # Release an Amazon EC2 Dedicated Host
 
 If you no longer need Dedicated Host, you can stop the instances running on the host, direct them to launch on a different host, and then _release_
@@ -63,8 +67,10 @@ The instances that were stopped are still available for use and are listed on th
 **Instances** page. They retain their `host` tenancy
 setting.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Modify tenancy and affinity for an instance
 
 Migrate to Nitro-based Amazon EC2 Dedicated Hosts
+
+All content copied from https://docs.aws.amazon.com/.

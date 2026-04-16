@@ -1,3 +1,7 @@
+---
+title: "View Capacity Blocks"
+---
+
 # View Capacity Blocks
 
 After you reserve a Capacity Block, you can view the Capacity Block reservation in your AWS
@@ -90,8 +94,10 @@ Get-EC2CapacityReservation `
     -Filter @{Name="reservation-type"; Values="capacity-block"}
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Launch instances
 
 Extend
+
+All content copied from https://docs.aws.amazon.com/.

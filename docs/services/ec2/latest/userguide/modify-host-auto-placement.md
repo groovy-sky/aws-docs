@@ -1,3 +1,7 @@
+---
+title: "Modify the auto-placement setting for an existing Amazon EC2 Dedicated Host"
+---
+
 # Modify the auto-placement setting for an existing Amazon EC2 Dedicated Host
 
 You can modify the auto-placement settings of a Dedicated Host after you have allocated it
@@ -49,8 +53,10 @@ Edit-EC2Host `
     -HostId h-012a3456b7890cdef
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Launch instances into a host resource group
 
 Modify supported instance types
+
+All content copied from https://docs.aws.amazon.com/.

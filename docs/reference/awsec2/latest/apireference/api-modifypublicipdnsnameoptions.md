@@ -1,3 +1,7 @@
+---
+title: "ModifyPublicIpDnsNameOptions"
+---
+
 # ModifyPublicIpDnsNameOptions
 
 Modify public hostname options for a network interface. For more information, see [EC2 instance hostnames, DNS names, and domains](../../../../services/ec2/latest/userguide/ec2-instance-naming.md) in the _Amazon EC2 User Guide_.
@@ -84,8 +88,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifypublicipdnsnameoptions.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ModifyPrivateDnsNameOptions
 
 ModifyReservedInstances
+
+All content copied from https://docs.aws.amazon.com/.

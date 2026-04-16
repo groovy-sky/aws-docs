@@ -1,3 +1,7 @@
+---
+title: "DescribeInstances"
+---
+
 # DescribeInstances
 
 Describes the specified instances or all instances.
@@ -888,8 +892,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describeinstances.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeInstanceImageMetadata
 
 DescribeInstanceSqlHaHistoryStates
+
+All content copied from https://docs.aws.amazon.com/.

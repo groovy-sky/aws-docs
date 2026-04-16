@@ -1,3 +1,7 @@
+---
+title: "Phase1EncryptionAlgorithmsListValue"
+---
+
 # Phase1EncryptionAlgorithmsListValue
 
 The encryption algorithm for phase 1 IKE negotiations.
@@ -22,8 +26,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/phase1encryptionalgorithmslistvalue.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Phase1DHGroupNumbersRequestListValue
 
 Phase1EncryptionAlgorithmsRequestListValue
+
+All content copied from https://docs.aws.amazon.com/.

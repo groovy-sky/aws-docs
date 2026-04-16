@@ -1,3 +1,7 @@
+---
+title: "Reset Windows admin password for EC2 instance using EC2Launch v2"
+---
+
 # Reset Windows admin password for EC2 instance using EC2Launch v2
 
 If you have lost your Windows administrator password and are using a supported Windows AMI
@@ -239,8 +243,10 @@ For more information, see [Amazon EC2 instance state changes](ec2-instance-lifec
     **Instance State**,
     **Terminate instance**.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Reset Windows administrator password
 
 Reset password using EC2Launch
+
+All content copied from https://docs.aws.amazon.com/.

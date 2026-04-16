@@ -1,3 +1,7 @@
+---
+title: "Share an AMI with specific AWS accounts"
+---
+
 # Share an AMI with specific AWS accounts
 
 You can share an AMI with specific AWS accounts without making the AMI public. All you
@@ -17,7 +21,7 @@ must own the AMI.
 - **Sharing limits** – For the maximum
 number of entities to which an AMI can be shared within a Region, see the
 [Amazon EC2 service\
-quotas](../../../../general/general/latest/gr/ec2-service.md#limits_ec2).
+quotas](../../../../general/latest/gr/ec2-service.md#limits_ec2).
 
 - **Tags** – You can't share user-defined tags (tags
 that you attach to an AMI). When you share an AMI, your user-defined tags
@@ -183,9 +187,11 @@ Reset-EC2ImageAttribute `
     -Attribute launchPermission
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Manage AMI sharing with an organization or OU
 
 Cancel having an AMI shared with your
 account
+
+All content copied from https://docs.aws.amazon.com/.

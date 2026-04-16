@@ -1,3 +1,7 @@
+---
+title: "View shared Amazon EC2 Dedicated Hosts in your AWS account"
+---
+
 # View shared Amazon EC2 Dedicated Hosts in your AWS account
 
 You can view Dedicated Host that you are sharing with other accounts, and Dedicated Hosts that are shared with
@@ -55,8 +59,10 @@ the instances running on the host.
 Get-EC2Host -Filter @{Name="state"; Values="available"}
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Unshare a Dedicated Host
 
 Dedicated Hosts on Outposts
+
+All content copied from https://docs.aws.amazon.com/.

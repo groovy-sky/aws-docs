@@ -1,3 +1,7 @@
+---
+title: "Run EC2Rescue commands on an Amazon EC2 Linux instance"
+---
+
 # Run EC2Rescue commands on an Amazon EC2 Linux instance
 
 EC2Rescue is a command line tool. After you have installed EC2Rescue on your Linux
@@ -117,8 +121,10 @@ of the volume to back up.
 ./ec2rl run --backup=vol-01234567890abcdef
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Install EC2Rescue
 
 Develop EC2Rescue modules
+
+All content copied from https://docs.aws.amazon.com/.

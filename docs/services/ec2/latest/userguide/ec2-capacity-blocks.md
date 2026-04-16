@@ -1,3 +1,7 @@
+---
+title: "Capacity Blocks for ML"
+---
+
 # Capacity Blocks for ML
 
 Capacity Blocks for ML allow you to reserve GPU-based accelerated computing instances on a future date to
@@ -314,8 +318,10 @@ For more information about AWS Parallel Computing Service, see
 For more information about AWS ParallelCluster, see
 [What is AWS ParallelCluster](../../../parallelcluster/latest/ug/what-is-aws-parallelcluster.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Monitor with EventBridge and CloudTrail
 
 How it works
+
+All content copied from https://docs.aws.amazon.com/.

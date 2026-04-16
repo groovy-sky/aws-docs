@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 AMI lifecycle"
+---
+
 # Amazon EC2 AMI lifecycle
 
 An Amazon Machine Image (AMI) is an image that contains the software configuration required
@@ -70,8 +74,10 @@ Image Builder User Guide](../../../imagebuilder/latest/userguide/what-is-image-b
 
 - [Deregister an AMI](deregister-ami.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Manage your subscriptions
 
 Create an AMI
+
+All content copied from https://docs.aws.amazon.com/.

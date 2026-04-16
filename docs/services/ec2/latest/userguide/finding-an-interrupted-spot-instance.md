@@ -1,3 +1,7 @@
+---
+title: "Find interrupted Spot Instances"
+---
+
 # Find interrupted Spot Instances
 
 When you describe your EC2 instances, the results include your Spot Instances. The instance
@@ -88,8 +92,10 @@ If the interruption behavior is to stop the Spot Instances, use the following ex
             @{Key="state-reason-code"; Values="Server.SpotInstanceTermination"}).Instances.InstanceId
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Spot Instance interruption notices
 
 Determine whether Amazon EC2 terminated a Spot Instance
+
+All content copied from https://docs.aws.amazon.com/.

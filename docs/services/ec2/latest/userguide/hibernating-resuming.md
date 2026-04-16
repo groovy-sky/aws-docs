@@ -1,3 +1,7 @@
+---
+title: "Start a hibernated Amazon EC2 instance"
+---
+
 # Start a hibernated Amazon EC2 instance
 
 Start a hibernated instance by starting it in the same way that you would start a
@@ -47,8 +51,10 @@ Use the [Start-EC2Instance](../../../powershell/latest/reference/items/start-ec2
 Start-EC2Instance -InstanceId i-1234567890abcdef0
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Hibernate an instance
 
 Troubleshoot
+
+All content copied from https://docs.aws.amazon.com/.

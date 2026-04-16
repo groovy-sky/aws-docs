@@ -1,3 +1,7 @@
+---
+title: "DeleteIpamPrefixListResolver"
+---
+
 # DeleteIpamPrefixListResolver
 
 Deletes an IPAM prefix list resolver. Before deleting a resolver, you must first delete all resolver targets associated with it.
@@ -68,8 +72,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deleteipamprefixlistresolver.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DeleteIpamPool
 
 DeleteIpamPrefixListResolverTarget
+
+All content copied from https://docs.aws.amazon.com/.

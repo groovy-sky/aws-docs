@@ -1,3 +1,7 @@
+---
+title: "DeleteVpcBlockPublicAccessExclusion"
+---
+
 # DeleteVpcBlockPublicAccessExclusion
 
 Delete a VPC Block Public Access (BPA) exclusion. A VPC BPA exclusion is a mode that can be applied to a single VPC or subnet that exempts it from the account’s BPA mode and will allow bidirectional or egress-only access. You can create BPA exclusions for VPCs and subnets even when BPA is not enabled on the account to ensure that there is no traffic disruption to the exclusions when VPC BPA is turned on. To learn more about VPC BPA, see [Block public access to VPCs and subnets](../../../../services/vpc/latest/userguide/security-vpc-bpa.md) in the _Amazon VPC User Guide_.
@@ -68,8 +72,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deletevpcblockpublicaccessexclusion.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DeleteVpc
 
 DeleteVpcEncryptionControl
+
+All content copied from https://docs.aws.amazon.com/.

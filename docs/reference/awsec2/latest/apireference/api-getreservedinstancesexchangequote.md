@@ -1,3 +1,7 @@
+---
+title: "GetReservedInstancesExchangeQuote"
+---
+
 # GetReservedInstancesExchangeQuote
 
 Returns a quote and exchange information for exchanging one or more specified Convertible
@@ -182,8 +186,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/getreservedinstancesexchangequote.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 GetPasswordData
 
 GetRouteServerAssociations
+
+All content copied from https://docs.aws.amazon.com/.

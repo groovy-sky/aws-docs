@@ -1,3 +1,7 @@
+---
+title: "Find and purchase Capacity Blocks"
+---
+
 # Find and purchase Capacity Blocks
 
 To reserve a Capacity Block, you first need to find a block of time when capacity is
@@ -191,9 +195,11 @@ New-EC2EC2CapacityBlock `
 -InstancePlatform Linux/UNIX
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Pricing and
 billing
 
 Launch instances
+
+All content copied from https://docs.aws.amazon.com/.

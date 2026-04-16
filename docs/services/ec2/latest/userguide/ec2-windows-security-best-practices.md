@@ -1,3 +1,7 @@
+---
+title: "Security best practices for Windows instances"
+---
+
 # Security best practices for Windows instances
 
 We recommend that you follow these security best practices for your Windows instances.
@@ -230,8 +234,10 @@ security, application, and Internet Information Services (IIS) logs to CloudWatc
 integrated with Amazon CloudWatch metrics and alarms. Customers can also create scripts that export
 Windows performance counters to Amazon CloudWatch custom metrics.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Update management
 
 Key pairs
+
+All content copied from https://docs.aws.amazon.com/.

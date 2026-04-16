@@ -1,3 +1,7 @@
+---
+title: "Using service-linked roles for EC2 Capacity Manager"
+---
+
 # Using service-linked roles for EC2 Capacity Manager
 
 EC2 Capacity Manager uses AWS Identity and Access Management (IAM) [service-linked roles](../../../iam/latest/userguide/id-roles-terms-and-concepts.md#iam-term-service-linked-role). A service-linked role is a unique type of IAM role that is
@@ -92,15 +96,17 @@ role. For more information, see [Deleting a service-linked role](../../../iam/la
 ## Supported Regions for Capacity Manager service-linked roles
 
 Capacity Manager supports using service-linked roles in all of the Regions where the service
-is available. For more information, see [AWS Regions and endpoints](../../../../general/general/latest/gr/rande.md).
+is available. For more information, see [AWS Regions and endpoints](../../../../general/latest/gr/rande.md).
 
 Capacity Manager does not support using service-linked roles in every Region where the
 service is available. You can use the AWSServiceRoleForEC2CapacityManager role in the following Regions.
 
 Region nameRegion identitySupport in Capacity ManagerUS East (N. Virginia)us-east-1YesUS East (Ohio)us-east-2YesUS West (N. California)us-west-1YesUS West (Oregon)us-west-2YesAfrica (Cape Town)af-south-1NoAsia Pacific (Hong Kong)ap-east-1NoAsia Pacific (Jakarta)ap-southeast-3NoAsia Pacific (Mumbai)ap-south-1YesAsia Pacific (Osaka)ap-northeast-3YesAsia Pacific (Seoul)ap-northeast-2YesAsia Pacific (Singapore)ap-southeast-1YesAsia Pacific (Sydney)ap-southeast-2YesAsia Pacific (Tokyo)ap-northeast-1YesCanada (Central)ca-central-1YesEurope (Frankfurt)eu-central-1YesEurope (Ireland)eu-west-1YesEurope (London)eu-west-2YesEurope (Milan)eu-south-1NoEurope (Paris)eu-west-3YesEurope (Stockholm)eu-north-1YesMiddle East (Bahrain)me-south-1NoMiddle East (UAE)me-central-1NoSouth America (São Paulo)sa-east-1YesAWS GovCloud (US-East)us-gov-east-1NoAWS GovCloud (US-West)us-gov-west-1No
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Registering a delegated administrator
 
 Organizing your data
+
+All content copied from https://docs.aws.amazon.com/.

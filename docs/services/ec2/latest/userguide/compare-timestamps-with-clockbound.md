@@ -1,3 +1,7 @@
+---
+title: "Compare timestamps for your Linux instances"
+---
+
 # Compare timestamps for your Linux instances
 
 If you're using the Amazon Time Sync Service, you can compare the timestamps on your Amazon EC2 Linux
@@ -68,8 +72,10 @@ PTP hardware clock. For more information about measuring and monitoring clock ac
 see [Manage Amazon EC2 instance clock accuracy using Amazon Time Sync Service and Amazon\
 CloudWatch – Part 1](https://aws.amazon.com/blogs/mt/manage-amazon-ec2-instance-clock-accuracy-using-amazon-time-sync-service-and-amazon-cloudwatch-part-1).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Use the public Amazon Time Sync Service
 
 Change the time zone of your instance
+
+All content copied from https://docs.aws.amazon.com/.

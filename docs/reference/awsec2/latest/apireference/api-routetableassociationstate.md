@@ -1,3 +1,7 @@
+---
+title: "RouteTableAssociationState"
+---
+
 # RouteTableAssociationState
 
 Describes the state of an association between a route table and a subnet or gateway.
@@ -32,8 +36,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/routetableassociationstate.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 RouteTableAssociation
 
 RuleGroupRuleOptionsPair
+
+All content copied from https://docs.aws.amazon.com/.

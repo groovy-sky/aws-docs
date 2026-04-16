@@ -1,3 +1,7 @@
+---
+title: "Detach and delete an EFA from an Amazon EC2 instance"
+---
+
 # Detach and delete an EFA from an Amazon EC2 instance
 
 You can detach an EFA from an Amazon EC2 instance and delete it in the same way as any
@@ -19,8 +23,10 @@ an EFA while it is attached to an instance.
 You delete EFAs in the same way that you delete elastic network interfaces. For more
 information, see [Delete a network interface](delete-eni.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create and attach an EFA
 
 Monitor an EFA
+
+All content copied from https://docs.aws.amazon.com/.

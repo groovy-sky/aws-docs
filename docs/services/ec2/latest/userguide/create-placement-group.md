@@ -1,3 +1,7 @@
+---
+title: "Create a placement group for your EC2 instances"
+---
+
 # Create a placement group for your EC2 instances
 
 You can use a placement group to control the placement of instances
@@ -96,8 +100,10 @@ New-EC2PlacementGroup `
     -PartitionCount 5
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Placement strategies
 
 Change instance placement
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Launch an Amazon EC2 instance"
+---
+
 # Launch an Amazon EC2 instance
 
 An instance is a virtual server in the AWS Cloud. You launch an instance from an Amazon
@@ -140,8 +144,10 @@ Python](../../../goto/boto3/ec2-2016-11-15/runinstances.md)
 [AWS SDK for\
 Ruby V3](../../../../reference/goto/sdkforrubyv3/ec2-2016-11-15/runinstances.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Delete
 
 Tutorials
+
+All content copied from https://docs.aws.amazon.com/.

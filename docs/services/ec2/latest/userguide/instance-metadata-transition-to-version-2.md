@@ -1,3 +1,7 @@
+---
+title: "Transition to using Instance Metadata Service Version 2"
+---
+
 # Transition to using Instance Metadata Service Version 2
 
 If you want to configure your instances to only accept Instance Metadata Service Version 2 (IMDSv2) calls,
@@ -426,9 +430,11 @@ an `UnauthorizedOperation` response.
 
 For example IAM policies, see [Work with instance metadata](examplepolicies-ec2.md#iam-example-instance-metadata).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Use the IMDS
 
 Limit access to
 IMDS
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Update management for Amazon EC2 instances"
+---
+
 # Update management for Amazon EC2 instances
 
 We recommend that you regularly patch, update, and secure the operating system and
@@ -20,8 +24,10 @@ in the _Amazon Linux 2 User Guide_
 
 - Windows instances – [Update management](ec2-windows-security-best-practices.md#ec2-windows-update-management)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Attach a role to an instance
 
 Best practices for Windows instances
+
+All content copied from https://docs.aws.amazon.com/.

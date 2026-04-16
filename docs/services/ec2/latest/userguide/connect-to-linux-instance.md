@@ -1,3 +1,7 @@
+---
+title: "Connect to your Linux instance using SSH"
+---
+
 # Connect to your Linux instance using SSH
 
 There are multiple ways to connect to your Linux instance using SSH. Some ways depend on the
@@ -34,8 +38,10 @@ using SSH.
 If you can't connect to your instance and need help troubleshooting, see
 [Troubleshoot issues connecting to your Amazon EC2 Linux instance](troubleshootinginstancesconnecting.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 General connection prerequisites
 
 Connect using an SSH client
+
+All content copied from https://docs.aws.amazon.com/.

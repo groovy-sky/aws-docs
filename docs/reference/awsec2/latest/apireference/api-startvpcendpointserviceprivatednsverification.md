@@ -1,3 +1,7 @@
+---
+title: "StartVpcEndpointServicePrivateDnsVerification"
+---
+
 # StartVpcEndpointServicePrivateDnsVerification
 
 Initiates the verification process to prove that the service provider owns the private
@@ -73,8 +77,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/startvpcendpointserviceprivatednsverification.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 StartNetworkInsightsAnalysis
 
 StopInstances
+
+All content copied from https://docs.aws.amazon.com/.

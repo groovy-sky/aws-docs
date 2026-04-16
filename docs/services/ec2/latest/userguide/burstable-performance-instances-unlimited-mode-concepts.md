@@ -1,3 +1,7 @@
+---
+title: "Unlimited mode concepts for burstable instances"
+---
+
 # Unlimited mode concepts for burstable instances
 
 The `unlimited` mode is a credit configuration option for burstable
@@ -26,7 +30,7 @@ instance runs at 40% CPU utilization on average over a 24-hour period, as shown 
 the graph, the instance is billed for the additional 10% CPU usage at a [flat additional rate](https://aws.amazon.com/ec2/pricing/on-demand) per
 vCPU-hour.
 
-![CPU billing usage of a t3.large instance.](../../../images/awsec2/latest/userguide/images/t3-cpu-usage-png.md)
+![CPU billing usage of a t3.large instance.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/t3-cpu-usage.png)
 
 For more information about the baseline utilization per vCPU for each instance
 type and how many credits each instance type earns, see the [credit table](burstable-credits-baseline-concepts.md#burstable-performance-instances-credit-table).
@@ -61,7 +65,7 @@ CPU usage point for a `t3.large` is 42.5%. If the average CPU usage is at
 the lower price of the `t3.large` while getting the same performance as an
 `m5.large`.
 
-![The breakeven CPU usage point for a t3.large instance is 42.5%.](../../../images/awsec2/latest/userguide/images/t3-unltd-when-to-use-png.md)
+![The breakeven CPU usage point for a t3.large instance is 42.5%.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/T3-unltd-when-to-use.png)
 
 The following table shows how to calculate the breakeven CPU usage threshold so
 that you can determine when it's less expensive to use a burstable performance
@@ -277,8 +281,10 @@ To see if your instance is spending more credits than the baseline provides, you
 can use CloudWatch metrics to track usage, and you can set up hourly alarms to be notified
 of credit usage. For more information, see [Monitor CPU credits for burstable instances](burstable-performance-instances-monitoring-cpu-credits.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Unlimited mode
 
 Examples
+
+All content copied from https://docs.aws.amazon.com/.

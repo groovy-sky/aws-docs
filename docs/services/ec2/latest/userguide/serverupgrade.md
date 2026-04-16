@@ -1,3 +1,7 @@
+---
+title: "Upgrade an EC2 Windows instance to a newer version of Windows Server"
+---
+
 # Upgrade an EC2 Windows instance to a newer version of Windows Server
 
 If it's time to upgrade the Windows Server operating system on your EC2 Windows instance
@@ -39,8 +43,10 @@ upgrade can be faster, but software incompatibilities can produce errors.
 
 - [Troubleshoot an operating system upgrade on an EC2 Windows instance](os-upgrade-trbl.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Windows Utility Driver releases
 
 Perform an in-place upgrade
+
+All content copied from https://docs.aws.amazon.com/.

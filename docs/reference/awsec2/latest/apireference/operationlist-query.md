@@ -1,3 +1,7 @@
+---
+title: "Actions by service"
+---
+
 # Actions by service
 
 The Amazon EC2 API consists of actions and data types for multiple services. To view the
@@ -37,8 +41,10 @@ actions for each service, see the following pages.
 
 - [AWS Wavelength actions](operation-list-wavelength.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Welcome
 
 AWS Client VPN actions
+
+All content copied from https://docs.aws.amazon.com/.

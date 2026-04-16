@@ -1,3 +1,7 @@
+---
+title: "Quotas for EC2 Fleet and Spot Fleet"
+---
+
 # Quotas for EC2 Fleet and Spot Fleet
 
 Your AWS account has default quotas, formerly referred to as limits, for each AWS
@@ -71,8 +75,10 @@ quota increase.
 
 10. Choose **Submit**.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Example CLI configurations Spot Fleet
 
 Networking
+
+All content copied from https://docs.aws.amazon.com/.

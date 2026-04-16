@@ -1,3 +1,7 @@
+---
+title: "Add instance store volumes to an Amazon EC2 AMI"
+---
+
 # Add instance store volumes to an Amazon EC2 AMI
 
 You can create an AMI with a block device mapping that includes instance store volumes.
@@ -116,8 +120,10 @@ $sdd.VirtualName = "ephemeral1"
 $bdm += $sdd
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Add instance store volumes
 
 Add instance store volumes to an instance
+
+All content copied from https://docs.aws.amazon.com/.

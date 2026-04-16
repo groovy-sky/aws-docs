@@ -1,3 +1,7 @@
+---
+title: "Create a reverse DNS record for email on Amazon EC2"
+---
+
 # Create a reverse DNS record for email on Amazon EC2
 
 If you intend to send email to third parties from an EC2 instance, we recommend that you
@@ -200,8 +204,10 @@ PtrRecordUpdate :
                   Value  : example.net.
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Release an Elastic IP address
 
 Network interfaces
+
+All content copied from https://docs.aws.amazon.com/.

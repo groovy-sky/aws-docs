@@ -1,3 +1,7 @@
+---
+title: "Manage prefixes for your network interfaces"
+---
+
 # Manage prefixes for your network interfaces
 
 When you assign prefixes to a network interface, you can choose whether to let us automatically
@@ -423,8 +427,10 @@ Unregister-EC2Ipv6AddressList `
     -Ipv6Prefix '2600:1f13:fc2:a700:18bb::/80'
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Prefix delegation
 
 Delete a network interface
+
+All content copied from https://docs.aws.amazon.com/.

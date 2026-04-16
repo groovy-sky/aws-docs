@@ -1,3 +1,7 @@
+---
+title: "Change the security groups for your Amazon EC2 instance"
+---
+
 # Change the security groups for your Amazon EC2 instance
 
 You can specify security groups for your Amazon EC2 instances when you launch them.
@@ -313,8 +317,10 @@ Edit-EC2SecurityGroupRule  `
     -SecurityGroupRule $sgr
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create a security group
 
 Delete a security group
+
+All content copied from https://docs.aws.amazon.com/.

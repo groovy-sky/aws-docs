@@ -1,3 +1,7 @@
+---
+title: "View status checks for Amazon EC2 instances"
+---
+
 # View status checks for Amazon EC2 instances
 
 If your instance has a failed status check, you typically must
@@ -109,8 +113,10 @@ Get-EC2InstanceStatus \
 -Filter @{Name="instance-status.status"; Values="impaired"}
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Status checks
 
 Create status check alarms
+
+All content copied from https://docs.aws.amazon.com/.

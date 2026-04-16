@@ -1,3 +1,7 @@
+---
+title: "Spot Instances"
+---
+
 # Spot Instances
 
 A Spot Instance is an instance that uses spare EC2 capacity that is available for less than the
@@ -127,8 +131,10 @@ see [Savings from purchasing Spot Instances](spot-savings.md).
 Your bill provides details about your service usage. For more information, see [Viewing your bill](../../../awsaccountbilling/latest/aboutv2/getting-viewing-bill.md) in the
 _AWS Billing User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Reserved Instance quotas
 
 Best practices
+
+All content copied from https://docs.aws.amazon.com/.

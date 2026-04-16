@@ -1,3 +1,7 @@
+---
+title: "Storage options for your Amazon EC2 instances"
+---
+
 # Storage options for your Amazon EC2 instances
 
 Amazon EC2 provides you with flexible, cost effective, and easy-to-use data storage options for
@@ -49,7 +53,7 @@ hundreds of GB/s of throughput, and up to millions of IOPS.
 
 The following figure shows the relationship between these storage options and your instance.
 
-![Storage options for Amazon EC2](../../../images/awsec2/latest/userguide/images/architecture-storage-png.md)
+![Storage options for Amazon EC2](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/architecture_storage.png)
 
 ## AWS Storage pricing
 
@@ -57,8 +61,10 @@ Open [AWS Pricing](https://aws.amazon.com/pricing), scroll to **Pricing**
 **for AWS products** and select **Storage**. Choose the storage product
 to open its pricing page.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AWS PrivateLink
 
 Amazon EBS
+
+All content copied from https://docs.aws.amazon.com/.

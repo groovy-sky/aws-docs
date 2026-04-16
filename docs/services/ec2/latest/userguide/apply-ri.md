@@ -1,3 +1,7 @@
+---
+title: "How Reserved Instance discounts are applied"
+---
+
 # How Reserved Instance discounts are applied
 
 Reserved Instances are not physical instances, but rather a billing discount that is applied to the
@@ -100,13 +104,13 @@ Reserved Instance in the US East (N. Virginia) and you have two running `t2.smal
 instances in your account in that Region, the billing benefit is applied in full
 to both instances.
 
-![Applying a Regional Reserved Instance.](../../../images/awsec2/latest/userguide/images/ri-instance-flex-full-png.md)
+![Applying a Regional Reserved Instance.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ri-instance-flex-full.png)
 
 Or, if you have one `t2.large` instance running in your account in
 the US East (N. Virginia) Region, the billing benefit is applied to 50% of the
 usage of the instance.
 
-![Applying a Regional Reserved Instance.](../../../images/awsec2/latest/userguide/images/ri-instance-flex-partial-png.md)
+![Applying a Regional Reserved Instance.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ri-instance-flex-partial.png)
 
 The normalization factor is also applied when modifying Reserved Instances. For more
 information, see [Modify Reserved Instances](ri-modifying.md).
@@ -409,8 +413,10 @@ Zonal Reserved Instances reserve capacity only for the owning account and cannot
 with other AWS accounts. If you need to share capacity with other
 AWS accounts, use [Reserve compute capacity with EC2 On-Demand Capacity Reservations](ec2-capacity-reservations.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Types of Reserved Instances (offering classes)
 
 Use your Reserved Instances
+
+All content copied from https://docs.aws.amazon.com/.

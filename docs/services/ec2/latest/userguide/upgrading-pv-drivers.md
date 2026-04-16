@@ -1,3 +1,7 @@
+---
+title: "Upgrade PV drivers on EC2 Windows instances"
+---
+
 # Upgrade PV drivers on EC2 Windows instances
 
 We recommend that you install the latest PV drivers to improve the stability and
@@ -418,7 +422,7 @@ using DHCP.
     If you do not see the uninstaller dialog box, choose **Red Hat**
     **Paravirtualize** in the Windows taskbar.
 
-    ![Red Hat Paravirtualized in taskbar.](../../../images/awsec2/latest/userguide/images/win2003-citrix-taskbar-png.md)
+    ![Red Hat Paravirtualized in taskbar.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/win2003-citrix-taskbar.png)
 
 07. Check that the instance has rebooted and is ready to be used.
     1. Open the Amazon EC2 console at
@@ -433,7 +437,7 @@ using DHCP.
         times. You can see this in the log file by the number of times
         `Windows is Ready to use` is displayed.
 
-       ![Windows system log.](../../../images/awsec2/latest/userguide/images/win2008-sys-log-png.md)
+       ![Windows system log.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/win2008-sys-log.png)
 08. Connect to your instance and log in as the local administrator.
 
 09. Close the **Red Hat Paravirtualized Xen Drivers for Windows**
@@ -444,7 +448,7 @@ using DHCP.
      open the `PVUpgrade.log` file, and then check for the
      text `INSTALLATION IS COMPLETE`.
 
-    ![PVUpgrade log file.](../../../images/awsec2/latest/userguide/images/win2008-pvupgrade-log-png.md)
+    ![PVUpgrade log file.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/win2008-pvupgrade-log.png)
 
 ## Upgrade your Citrix Xen guest agent service
 
@@ -500,9 +504,11 @@ If you create an AMI, make sure you do the following:
 
 7. Reboot your instance.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Windows PV drivers
 
 Troubleshoot PV
 drivers
+
+All content copied from https://docs.aws.amazon.com/.

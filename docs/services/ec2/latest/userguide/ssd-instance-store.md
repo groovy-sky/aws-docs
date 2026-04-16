@@ -1,3 +1,7 @@
+---
+title: "SSD instance store volumes for EC2 instances"
+---
+
 # SSD instance store volumes for EC2 instances
 
 Like other instance store volumes, you must map the SSD instance store volumes for your
@@ -174,8 +178,10 @@ periodic TRIM. On **Windows instances**, use the `fsutil
           behavior set DisableDeleteNotify 0` command to ensure TRIM support is enabled
 during normal operation.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Instance store volume limits
 
 Add instance store volumes
+
+All content copied from https://docs.aws.amazon.com/.

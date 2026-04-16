@@ -1,3 +1,7 @@
+---
+title: "IAM roles for Amazon EC2"
+---
+
 # IAM roles for Amazon EC2
 
 Applications must sign their API requests with AWS credentials. Therefore, if you
@@ -171,8 +175,10 @@ arn:aws:iam::0123456789012:assumed-role/aws:ec2-instance/i-1234567890abcdef0
 For more information about ARNs, see [Amazon Resource Names\
 (ARNs)](../../../iam/latest/userguide/reference-arns.md) in the _IAM User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AWS managed policies
 
 Retrieve security credentials
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Network interface attachments for your EC2 instance"
+---
+
 # Network interface attachments for your EC2 instance
 
 You can create network interfaces to be used by your EC2 instances as primary or secondary
@@ -205,8 +209,10 @@ cmdlet.
 Dismount-EC2NetworkInterface -AttachmentId eni-attach-016c93267131892c9
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create a network interface
 
 Manage IP addresses
+
+All content copied from https://docs.aws.amazon.com/.

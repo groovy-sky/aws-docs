@@ -1,3 +1,7 @@
+---
+title: "Modify a Spot Fleet request"
+---
+
 # Modify a Spot Fleet request
 
 You can modify an active Spot Fleet request to complete the following tasks:
@@ -105,9 +109,11 @@ Edit-EC2SpotFleetRequest `
     -ExcessCapacityTerminationPolicy "NoTermination"
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Describe a Spot Fleet
 
 Cancel (delete) a Spot Fleet
 request
+
+All content copied from https://docs.aws.amazon.com/.

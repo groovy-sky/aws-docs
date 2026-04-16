@@ -1,3 +1,7 @@
+---
+title: "InstanceCapacity"
+---
+
 # InstanceCapacity
 
 Information about the number of instances that can be launched onto the Dedicated
@@ -41,8 +45,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/instancecapacity.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 InstanceBlockDeviceMappingSpecification
 
 InstanceConnectEndpointDnsNames
+
+All content copied from https://docs.aws.amazon.com/.

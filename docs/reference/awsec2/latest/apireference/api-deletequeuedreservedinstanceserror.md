@@ -1,3 +1,7 @@
+---
+title: "DeleteQueuedReservedInstancesError"
+---
+
 # DeleteQueuedReservedInstancesError
 
 Describes the error for a Reserved Instance whose queued purchase could not be
@@ -33,8 +37,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deletequeuedreservedinstanceserror.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DeleteLaunchTemplateVersionsResponseSuccessItem
 
 DeleteSnapshotReturnCode
+
+All content copied from https://docs.aws.amazon.com/.

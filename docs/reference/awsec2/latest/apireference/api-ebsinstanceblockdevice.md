@@ -1,3 +1,7 @@
+---
+title: "EbsInstanceBlockDevice"
+---
+
 # EbsInstanceBlockDevice
 
 Describes a parameter used to set up an EBS volume in a block device mapping.
@@ -84,8 +88,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ebsinstanceblockdevice.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 EbsInfo
 
 EbsInstanceBlockDeviceSpecification
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "CancelExportTask"
+---
+
 # CancelExportTask
 
 Cancels an active export task. The request removes all artifacts of the export, including any partially-created
@@ -86,8 +90,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/cancelexporttask.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CancelDeclarativePoliciesReport
 
 CancelImageLaunchPermission
+
+All content copied from https://docs.aws.amazon.com/.

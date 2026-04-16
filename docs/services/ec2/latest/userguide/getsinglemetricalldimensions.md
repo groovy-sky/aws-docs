@@ -1,3 +1,7 @@
+---
+title: "Aggregate statistics across instances"
+---
+
 # Aggregate statistics across instances
 
 Aggregate statistics are available for instances that have detailed monitoring enabled.
@@ -34,7 +38,7 @@ statistics that include the data point.
     icon. To change the time range, select one of the predefined values or choose
     **custom**.
 
-![Metrics aggregated across your EC2 instances](../../../images/awsec2/latest/userguide/images/metric-aggregated-instances-png.md)
+![Metrics aggregated across your EC2 instances](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/metric_aggregated_instances.png)
 
 5. To change the statistic or the period for the metric, choose the **Graphed**
 **metrics** tab. Choose the column heading or an individual value, and then
@@ -84,8 +88,10 @@ The following is example output:
 }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Get statistics for a specific instance
 
 Aggregate statistics by Auto Scaling group
+
+All content copied from https://docs.aws.amazon.com/.

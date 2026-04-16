@@ -1,3 +1,7 @@
+---
+title: "Add a Capacity Reservation to a group"
+---
+
 # Add a Capacity Reservation to a group
 
 If you add a Capacity Reservation that is shared with you to a group, and that Capacity Reservation is unshared,
@@ -38,8 +42,10 @@ Add-RGResource `
         "arn:aws:ec2:sa-east-1:123456789012:capacity-reservation/cr-54321abcdef567890"
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create a group
 
 Remove Capacity Reservation from group
+
+All content copied from https://docs.aws.amazon.com/.

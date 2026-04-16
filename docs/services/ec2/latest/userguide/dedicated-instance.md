@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 Dedicated Instances"
+---
+
 # Amazon EC2 Dedicated Instances
 
 By default, EC2 instances run on shared tenancy hardware. This means that multiple AWS
@@ -205,8 +209,10 @@ single-tenant hardware.
 Pricing for Dedicated Instances is different from pricing for On-Demand Instances. For more information, see the
 [Amazon EC2 Dedicated Instances](https://aws.amazon.com/ec2/pricing/dedicated-instances).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Track configuration changes
 
 Launch Dedicated Instances
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Specify attributes for instance type selection for EC2 Fleet or Spot Fleet"
+---
+
 # Specify attributes for instance type selection for EC2 Fleet or Spot Fleet
 
 When you create an EC2 Fleet or Spot Fleet, you must specify one or more instance types for
@@ -1723,8 +1727,10 @@ Example output
     instance attributes that you used so that you can use them when configuring your
     fleet request.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Spending limit
 
 Instance weighting
+
+All content copied from https://docs.aws.amazon.com/.

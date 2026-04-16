@@ -1,3 +1,7 @@
+---
+title: "Connect to your Mac instance using SSH or a GUI"
+---
+
 # Connect to your Mac instance using SSH or a GUI
 
 You can connect to your Mac instance using SSH or a graphical user interface (GUI).
@@ -148,8 +152,10 @@ displayplacer "id:69784AF1-CD7D-B79B-E5D4-60D937407F68 res:${RES} scaling:off or
 
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Launch a Mac instance
 
 Update operating system and software
+
+All content copied from https://docs.aws.amazon.com/.

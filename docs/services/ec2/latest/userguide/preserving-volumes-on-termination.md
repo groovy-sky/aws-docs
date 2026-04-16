@@ -1,3 +1,7 @@
+---
+title: "Preserve data when an instance is terminated"
+---
+
 # Preserve data when an instance is terminated
 
 When an Amazon EC2 instance is terminated, you can preserve the data on your instance store
@@ -218,9 +222,11 @@ $bdm.DeviceName = "/dev/sda1"
 $bdm.Ebs = $ebd
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Change
 initiated shutdown behavior
 
 Retire
+
+All content copied from https://docs.aws.amazon.com/.

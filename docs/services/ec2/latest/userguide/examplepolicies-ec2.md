@@ -1,3 +1,7 @@
+---
+title: "Example policies to control access the Amazon EC2 API"
+---
+
 # Example policies to control access the Amazon EC2 API
 
 You can use IAM policies to grant users the permissions required to work with Amazon EC2.
@@ -2022,8 +2026,10 @@ JSON
 
 For example policies for working with Amazon EBS volumes and snapshots, see [Identity-based policy examples for Amazon EBS](../../../ebs/latest/userguide/security-iam-id-based-policy-examples.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Identity-based policies
 
 Example policies for the console
+
+All content copied from https://docs.aws.amazon.com/.

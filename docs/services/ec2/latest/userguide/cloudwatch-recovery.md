@@ -1,3 +1,7 @@
+---
+title: "Configure CloudWatch action based recovery on an EC2 instance"
+---
+
 # Configure CloudWatch action based recovery on an EC2 instance
 
 ###### Important
@@ -184,8 +188,10 @@ If the instance’s system status check failure persists despite multiple recove
 attempts, see [Troubleshoot instances with failed\
 status checks](troubleshootinginstances.md) for additional guidance.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Simplified automatic recovery
 
 Instance metadata
+
+All content copied from https://docs.aws.amazon.com/.

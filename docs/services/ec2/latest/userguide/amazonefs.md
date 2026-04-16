@@ -1,3 +1,7 @@
+---
+title: "Use Amazon EFS with Amazon EC2 Linux instances"
+---
+
 # Use Amazon EFS with Amazon EC2 Linux instances
 
 ###### Note
@@ -177,8 +181,10 @@ If you no longer need your file system, you can delete it.
 4. When prompted for confirmation, enter the file system ID and choose
     **Delete file system**.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Amazon S3
 
 Amazon FSx
+
+All content copied from https://docs.aws.amazon.com/.

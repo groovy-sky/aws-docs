@@ -1,3 +1,7 @@
+---
+title: "ApplySecurityGroupsToClientVpnTargetNetwork"
+---
+
 # ApplySecurityGroupsToClientVpnTargetNetwork
 
 Applies a security group to the association between the target network and the Client VPN endpoint. This action replaces the existing
@@ -113,8 +117,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/applysecuritygroupstoclientvpntargetnetwork.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AllocateIpamPoolCidr
 
 AssignIpv6Addresses
+
+All content copied from https://docs.aws.amazon.com/.

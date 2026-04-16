@@ -1,3 +1,7 @@
+---
+title: "Determine the boot mode of the operating system for your EC2 instance"
+---
+
 # Determine the boot mode of the operating system for your EC2 instance
 
 The boot mode of the AMI guides Amazon EC2 on which boot mode to use to boot an instance. To view
@@ -77,10 +81,12 @@ Expected output from an instance booted in UEFI boot mode
 2. Go to **System Information** and check the **BIOS Mode**
     row.
 
-![System Information window showing the BIOS Mode row selected. The value for BIOS Mode is Legacy.](../../../images/awsec2/latest/userguide/images/bios-mode-win-png.md)
+![System Information window showing the BIOS Mode row selected. The value for BIOS Mode is Legacy.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/BIOS-mode-win.png)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Instance boot mode
 
 Set AMI boot mode
+
+All content copied from https://docs.aws.amazon.com/.

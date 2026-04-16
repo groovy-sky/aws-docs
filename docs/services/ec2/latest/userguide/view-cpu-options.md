@@ -1,3 +1,7 @@
+---
+title: "View CPU threads and cores for an Amazon EC2 instance"
+---
+
 # View CPU threads and cores for an Amazon EC2 instance
 
 You can view the CPU options for an existing instance by describing the instance.
@@ -75,8 +79,10 @@ You can use AWS Config to record, assess, audit, and evaluate configuration chan
 instances, including terminated instances. For more information, see [Getting Started with AWS Config](../../../config/latest/developerguide/getting-started.md) in the
 _AWS Config Developer Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Specify CPU options
 
 Optimize CPUs
+
+All content copied from https://docs.aws.amazon.com/.

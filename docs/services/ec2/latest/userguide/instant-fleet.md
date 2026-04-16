@@ -1,3 +1,7 @@
+---
+title: "Configure an EC2 Fleet of type instant"
+---
+
 # Configure an EC2 Fleet of type instant
 
 The EC2 Fleet of type _instant_ is a synchronous one-time
@@ -1163,8 +1167,10 @@ support specifying a System Manager parameter instead of an AMI ID.
 }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Request types
 
 Spending limit
+
+All content copied from https://docs.aws.amazon.com/.

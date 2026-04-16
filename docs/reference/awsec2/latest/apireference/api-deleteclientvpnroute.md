@@ -1,3 +1,7 @@
+---
+title: "DeleteClientVpnRoute"
+---
+
 # DeleteClientVpnRoute
 
 Deletes a route from a Client VPN endpoint. You can only delete routes that you manually added using
@@ -114,8 +118,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deleteclientvpnroute.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DeleteClientVpnEndpoint
 
 DeleteCoipCidr
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Create a store image task"
+---
+
 # Create a store image task
 
 When you store an AMI in an S3 bucket, a store image task is created. You can use the
@@ -224,8 +228,10 @@ The following is example output.
 ImageId         : ami-1234567890abcdef0
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 How AMI store and restore works
 
 AMI ancestry
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Resilience in Amazon EC2"
+---
+
 # Resilience in Amazon EC2
 
 The AWS global infrastructure is built around AWS Regions and Availability Zones. Regions
@@ -39,8 +43,10 @@ to support your data resiliency:
 - Distributing incoming traffic across multiple instances in a single Availability Zone
 or multiple Availability Zones using Elastic Load Balancing
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Infrastructure security
 
 Compliance validation
+
+All content copied from https://docs.aws.amazon.com/.

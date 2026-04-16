@@ -1,3 +1,7 @@
+---
+title: "Find shared AMIs to use for Amazon EC2 instances"
+---
+
 # Find shared AMIs to use for Amazon EC2 instances
 
 You can use the Amazon EC2 console or the command line to find public or private shared
@@ -167,8 +171,10 @@ EBS-backed AMIs.
 -Filter @{Name="root-device-type"; Values="ebs"}
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Shared AMIs
 
 Prepare to use shared AMIs for Linux
+
+All content copied from https://docs.aws.amazon.com/.

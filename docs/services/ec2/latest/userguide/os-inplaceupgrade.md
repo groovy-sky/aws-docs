@@ -1,3 +1,7 @@
+---
+title: "Perform an in-place upgrade on your EC2 Windows instance"
+---
+
 # Perform an in-place upgrade on your EC2 Windows instance
 
 Before you perform an in-place upgrade, you must determine which network drivers the
@@ -210,8 +214,10 @@ If the instance has not passed all status checks after several hours, see [Troub
 
 4. Re-enable antivirus and anti-spyware software and firewalls.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Upgrade Windows instances
 
 Perform an automated upgrade
+
+All content copied from https://docs.aws.amazon.com/.

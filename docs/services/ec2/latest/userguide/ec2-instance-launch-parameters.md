@@ -1,3 +1,7 @@
+---
+title: "Reference for Amazon EC2 instance configuration parameters"
+---
+
 # Reference for Amazon EC2 instance configuration parameters
 
 The launch instance wizard and launch template in the Amazon EC2 console provide all the
@@ -668,9 +672,11 @@ navigate directly to a section by choosing its link in the
 - When you're ready to launch your instance, choose **Launch**
 **instance**.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Tutorial 2: Launch a
 test instance
 
 Launch using the launch instance wizard
+
+All content copied from https://docs.aws.amazon.com/.

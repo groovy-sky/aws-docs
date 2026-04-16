@@ -1,3 +1,7 @@
+---
+title: "Modify instance metadata options for existing instances"
+---
+
 # Modify instance metadata options for existing instances
 
 You can modify the instance metadata options for existing instances.
@@ -458,9 +462,11 @@ you prefer to configure this setting using the console, see [Enforce IMDSv2 at t
 We recommend that you use IMDSv2 only ( `httpTokens=required`). For
 more information, see [Transition to using Instance Metadata Service Version 2](instance-metadata-transition-to-version-2.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 For new
 instances
 
 Run commands at launch
+
+All content copied from https://docs.aws.amazon.com/.

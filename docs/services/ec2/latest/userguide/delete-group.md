@@ -1,3 +1,7 @@
+---
+title: "Delete a Capacity Reservation group"
+---
+
 # Delete a Capacity Reservation group
 
 You can use the following examples to delete a Capacity Reservation group.
@@ -25,9 +29,11 @@ cmdlet.
 Remove-RGGroup -GroupName MyCRGroup
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Remove Capacity Reservation from group
 
 Using Capacity Reservation in cluster placement groups
 with a Capacity Reservation group
+
+All content copied from https://docs.aws.amazon.com/.

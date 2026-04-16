@@ -1,3 +1,7 @@
+---
+title: "DescribeRouteTables"
+---
+
 # DescribeRouteTables
 
 Describes your route tables. The default is to describe all your route tables.
@@ -232,8 +236,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describeroutetables.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeRouteServers
 
 DescribeScheduledInstanceAvailability
+
+All content copied from https://docs.aws.amazon.com/.

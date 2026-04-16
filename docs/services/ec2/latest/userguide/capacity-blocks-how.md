@@ -1,3 +1,7 @@
+---
+title: "How Amazon EC2 Capacity Blocks work"
+---
+
 # How Amazon EC2 Capacity Blocks work
 
 You can reserve a Capacity Block with the following specifications:
@@ -38,9 +42,11 @@ terminating any instances that are running in the Capacity Block. We use this ti
 your instances before delivering the Capacity Block to the next customer. We emit an event through
 EventBridge 10 minutes before the termination process begins. For more information, see [Monitor Capacity Blocks using EventBridge](capacity-blocks-monitor.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Capacity Blocks for ML
 
 Pricing and
 billing
+
+All content copied from https://docs.aws.amazon.com/.

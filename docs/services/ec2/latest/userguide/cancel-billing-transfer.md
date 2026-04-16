@@ -1,3 +1,7 @@
+---
+title: "Cancel or revoke billing assignment requests for shared EC2 Capacity Reservations"
+---
+
 # Cancel or revoke billing assignment requests for shared EC2 Capacity Reservations
 
 Only the Capacity Reservation owner can cancel a `pending` billing assignment
@@ -61,9 +65,11 @@ Unregister-EC2CapacityReservationBillingOwner `
     -UnusedReservationBillingOwnerId 123456789012
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Accept or reject billing
 
 Monitor
 requests
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "How Amazon EC2 topology works"
+---
+
 # How Amazon EC2 topology works
 
 The AWS network is arranged in a hierarchy of layers. EC2 instances connect into the
@@ -20,7 +24,7 @@ EC2 topology. The network nodes are identified as **NN1**
 Instances connect to a node in the bottom layer, identified by **iii** in the following diagram. More than one instance can connect to the
 same node.
 
-![Graphic representation of the instance topology.](../../../images/awsec2/latest/userguide/images/instance-topology-png.md)
+![Graphic representation of the instance topology.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/instance-topology.png)
 
 In this example:
 
@@ -268,8 +272,10 @@ Use cases
 \\* For Capacity Blocks for Ultraservers, the network node set is the same when
 describing the topology for an `active` Capacity Reservation or its running instance.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 EC2 topology
 
 Prerequisites
+
+All content copied from https://docs.aws.amazon.com/.

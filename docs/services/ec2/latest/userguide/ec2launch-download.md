@@ -1,3 +1,7 @@
+---
+title: "Install the latest version of EC2Launch"
+---
+
 # Install the latest version of EC2Launch
 
 Use the following procedure to download and install the latest version of EC2Launch on
@@ -68,8 +72,10 @@ Import-LocalizedData -BaseDirectory C:\ProgramData\Amazon\EC2-Windows\Launch\Mod
 $moduleManifest.Get_Item('ModuleVersion')
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 EC2Launch
 
 Configure EC2Launch
+
+All content copied from https://docs.aws.amazon.com/.

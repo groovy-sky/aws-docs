@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 instance type changes"
+---
+
 # Amazon EC2 instance type changes
 
 As your needs change, you might find that your instance is over-utilized (the instance type
@@ -30,8 +34,10 @@ Use the following table to determine which instructions to follow.
 
 Root volumeCompatibilityUse these instructionsEBSCompatible[Change the instance type](change-instance-type-of-ebs-backed-instance.md)EBSNot compatible[Migrate to a new instance type](migrate-instance-configuration.md)Instance storeNot applicable[Migrate to a new instance type](migrate-instance-configuration.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Compute Optimizer recommendations
 
 Compatibility
+
+All content copied from https://docs.aws.amazon.com/.

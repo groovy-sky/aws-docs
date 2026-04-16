@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot changing the instance type"
+---
+
 # Troubleshoot changing the instance type
 
 Use the following information to help diagnose and fix issues that you might encounter when changing the instance type.
@@ -45,8 +49,10 @@ To retain the public IPv4 address between instance stops and starts, we
 recommend that you use an Elastic IP address, at no extra cost provided your
 instance is running. For more information, see [Elastic IP addresses](elastic-ip-addresses-eip.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Migrate to a new instance type
 
 Burstable performance instances
+
+All content copied from https://docs.aws.amazon.com/.

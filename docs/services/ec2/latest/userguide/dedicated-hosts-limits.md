@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 Dedicated Host instance capacity configurations"
+---
+
 # Amazon EC2 Dedicated Host instance capacity configurations
 
 Dedicated Hosts support different configurations (physical cores, sockets, and VCPUs) that allow
@@ -135,8 +139,10 @@ require a host for either `a1.medium` or `a1.large`
 instances, we recommend that you allocate separate hosts for those instance
 types.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Pricing and billing
 
 Burstable instances on Dedicated Hosts
+
+All content copied from https://docs.aws.amazon.com/.

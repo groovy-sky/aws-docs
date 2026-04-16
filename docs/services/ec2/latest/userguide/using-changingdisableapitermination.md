@@ -1,3 +1,7 @@
+---
+title: "Change instance termination protection"
+---
+
 # Change instance termination protection
 
 To prevent your instance from being accidentally terminated using the Amazon EC2 API,
@@ -140,9 +144,11 @@ instance is enabled for termination protection.
 
 - **Instance 3** and **Instance 4** fail to terminate because **Instance 3** is enabled for termination protection.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Methods for terminating an instance
 
 Change
 initiated shutdown behavior
+
+All content copied from https://docs.aws.amazon.com/.

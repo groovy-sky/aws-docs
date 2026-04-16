@@ -1,3 +1,7 @@
+---
+title: "Monitor Capacity Reservation underutilization"
+---
+
 # Monitor Capacity Reservation underutilization
 
 You can monitor Capacity Reservation underutilization using the following:
@@ -217,9 +221,11 @@ EventBridge, you can create rules that activate automatic actions, such as sendi
 notifications or triggering AWS Lambda functions, in response to such events. For
 more information, see [Monitor Capacity Reservation underutilization](cr-eventbridge.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Monitor with CloudWatch
 metrics
 
 Monitor state changes
+
+All content copied from https://docs.aws.amazon.com/.

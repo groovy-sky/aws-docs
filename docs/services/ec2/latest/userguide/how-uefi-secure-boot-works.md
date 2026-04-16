@@ -1,3 +1,7 @@
+---
+title: "How UEFI Secure Boot works with Amazon EC2 instances"
+---
+
 # How UEFI Secure Boot works with Amazon EC2 instances
 
 UEFI Secure Boot is a feature specified in UEFI, which provides verification about the
@@ -60,8 +64,10 @@ When the system is in `SetupMode`, all key variables can be updated without
 a cryptographic signature. When the PK is set, UEFI Secure Boot is enabled and the
 SetupMode is exited.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 UEFI Secure Boot
 
 Requirements for UEFI Secure Boot
+
+All content copied from https://docs.aws.amazon.com/.

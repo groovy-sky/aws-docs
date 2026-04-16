@@ -1,3 +1,7 @@
+---
+title: "Prepare for Spot Instance interruptions"
+---
+
 # Prepare for Spot Instance interruptions
 
 Demand for Spot Instances can vary significantly from moment to moment, and the
@@ -48,8 +52,10 @@ yourself.
 - Run a controlled fault injection experiment with AWS Fault Injection Service to test how your application responds when your Spot Instance is interrupted. For more
 information, see the [Tutorial: Test Spot Instance interruptions using AWS FIS](../../../fis/latest/userguide/fis-tutorial-spot-interruptions.md) in the _AWS Fault Injection Service User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Interruption behavior
 
 Initiate an interruption
+
+All content copied from https://docs.aws.amazon.com/.

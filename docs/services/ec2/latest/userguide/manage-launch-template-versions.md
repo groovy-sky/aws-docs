@@ -1,3 +1,7 @@
+---
+title: "Modify a launch template (manage launch template versions)"
+---
+
 # Modify a launch template (manage launch template versions)
 
 Launch templates are immutable; after you create a launch template, you can't modify
@@ -241,8 +245,10 @@ Get-EC2TemplateVersion `
     -Version '$Latest','$Default'
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create
 
 Delete
+
+All content copied from https://docs.aws.amazon.com/.

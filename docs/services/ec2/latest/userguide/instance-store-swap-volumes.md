@@ -1,3 +1,7 @@
+---
+title: "Enable instance store swap volume for M1 and C1 EC2 instances"
+---
+
 # Enable instance store swap volume for M1 and C1 EC2 instances
 
 ###### Note
@@ -182,8 +186,10 @@ Instance store volume data is lost when an instance is stopped or hibernated; th
 includes the instance store swap space formatting created in [Step 3](#step_mkswap). If you stop and restart an instance that has been configured to use instance store
 swap space, you must repeat [Step 1](#step_swap_start) through [Step 5](#step_swap_enable) on the new instance store volume.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Make instance store volumes available for use
 
 Initialize instance store volumes
+
+All content copied from https://docs.aws.amazon.com/.

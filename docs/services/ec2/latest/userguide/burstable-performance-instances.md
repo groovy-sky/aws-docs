@@ -1,10 +1,14 @@
+---
+title: "Burstable performance instances"
+---
+
 # Burstable performance instances
 
 Many general purpose workloads are on average not busy, and do not require a high level of
 sustained CPU performance. The following graph illustrates the CPU utilization for many common
 workloads that customers run in the AWS Cloud today.
 
-![Many common workloads look like this: the average CPU utilization is at or below the baseline, with some spikes above the baseline.](../../../images/awsec2/latest/userguide/images/cpu-common-workloads-png.md)
+![Many common workloads look like this: the average CPU utilization is at or below the baseline, with some spikes above the baseline.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/CPU-common-workloads.png)
 
 These low-to-moderate CPU utilization workloads lead to wastage of CPU cycles and, as a
 result, you pay for more than you use. To overcome this, you can leverage the low-cost
@@ -130,8 +134,10 @@ instance type based on your scenario. For more information, see [Viewing EC2\
 instance recommendations](../../../compute-optimizer/latest/ug/view-ec2-recommendations.md) in the _AWS Compute Optimizer User_
 _Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Troubleshoot
 
 Key concepts
+
+All content copied from https://docs.aws.amazon.com/.

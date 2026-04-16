@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Configure your EC2 Fleet to launch instances into Capacity Blocks"
+---
+
 # Tutorial: Configure your EC2 Fleet to launch instances into Capacity Blocks
 
 This tutorial walks you through the steps that you must perform so that your EC2 Fleet launches
@@ -109,8 +113,10 @@ aws ec2 create-fleet --cli-input-json file://config.json
 
 For more information, see [Create an EC2 Fleet](create-ec2-fleet.md#create-ec2-fleet-procedure).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Tutorial: Configure EC2 Fleet to launch On-Demand Instances using targeted Capacity Reservations
 
 Tutorial: Configure your EC2 Fleet to launch instances into Interruptible Capacity Reservations
+
+All content copied from https://docs.aws.amazon.com/.

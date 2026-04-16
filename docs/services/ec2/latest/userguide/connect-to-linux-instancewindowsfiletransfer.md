@@ -1,3 +1,7 @@
+---
+title: "Transfer files to a Windows instance using RDP"
+---
+
 # Transfer files to a Windows instance using RDP
 
 You can work with your Windows instance in the same way that you would work with any Windows
@@ -42,14 +46,14 @@ Windows
 5. Under **Local devices and resources**, choose
     **More...**
 
-![RDP Local Resources window.](../../../images/awsec2/latest/userguide/images/windows-connect-rdp-local-resources-png.md)
+![RDP Local Resources window.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/windows-connect-rdp-local-resources.png)
 
 6. Open **Drives** and select the local drive to map
     to your Windows instance.
 
 7. Choose **OK**.
 
-![RDP Local devices and resources window.](../../../images/awsec2/latest/userguide/images/windows-connect-rdp-drives-png.md)
+![RDP Local devices and resources window.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/windows-connect-rdp-drives.png)
 
 8. Choose **Connect** to connect to your Windows
     instance.
@@ -69,7 +73,7 @@ macOS X
 4. Choose the **Folders** tab, and select the
     **Redirect folders** checkbox.
 
-![Microsoft Remote Desktop Edit PC window.](../../../images/awsec2/latest/userguide/images/mac-map-folder-1-png.md)
+![Microsoft Remote Desktop Edit PC window.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/mac-map-folder-1.png)
 
 5. Choose the **+** icon at bottom left, browse to
     the folder to map, and choose **Open**. Repeat this
@@ -86,13 +90,15 @@ macOS X
     local computer was mapped to the remote session drive on the
     instance.
 
-![Microsoft Remote Desktop Edit PC window.](../../../images/awsec2/latest/userguide/images/mac-map-folder-2-png.md)
+![Microsoft Remote Desktop Edit PC window.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/mac-map-folder-2.png)
 
 For more information on making local devices available to a remote session
 on a Mac computer, see [Get started with the macOS client](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-mac).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Connect using Fleet Manager
 
 Connect using Session Manager
+
+All content copied from https://docs.aws.amazon.com/.

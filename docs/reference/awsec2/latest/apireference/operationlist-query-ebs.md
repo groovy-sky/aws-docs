@@ -1,3 +1,7 @@
+---
+title: "Amazon EBS actions"
+---
+
 # Amazon EBS actions
 
 The following API actions are available for Amazon EBS. To learn more about Amazon EBS, see the
@@ -91,8 +95,10 @@ The following API actions are available for Amazon EBS. To learn more about Amaz
 
 - [ModifyVolumeAttribute](api-modifyvolumeattribute.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AWS Client VPN actions
 
 Amazon EC2 actions
+
+All content copied from https://docs.aws.amazon.com/.

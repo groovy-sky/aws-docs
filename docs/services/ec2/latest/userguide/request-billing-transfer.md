@@ -1,3 +1,7 @@
+---
+title: "Assign billing of a shared EC2 Capacity Reservation to another account"
+---
+
 # Assign billing of a shared EC2 Capacity Reservation to another account
 
 To assign billing of the available capacity of a shared Capacity Reservation to another
@@ -68,8 +72,10 @@ Register-EC2CapacityReservationBillingOwner `
     -UnusedReservationBillingOwnerId 123456789012
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Billing assignment
 
 View billing assignment requests
+
+All content copied from https://docs.aws.amazon.com/.

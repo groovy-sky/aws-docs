@@ -1,3 +1,7 @@
+---
+title: "EnableFastSnapshotRestoreStateError"
+---
+
 # EnableFastSnapshotRestoreStateError
 
 Describes an error that occurred when enabling fast snapshot restores.
@@ -30,8 +34,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/enablefastsnapshotrestorestateerror.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 EnableFastSnapshotRestoreErrorItem
 
 EnableFastSnapshotRestoreStateErrorItem
+
+All content copied from https://docs.aws.amazon.com/.

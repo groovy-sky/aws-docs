@@ -1,3 +1,7 @@
+---
+title: "ImportKeyPair"
+---
+
 # ImportKeyPair
 
 Imports the public key from an RSA or ED25519 key pair that you created using a third-party tool.
@@ -158,8 +162,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/importkeypair.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ImportInstance
 
 ImportSnapshot
+
+All content copied from https://docs.aws.amazon.com/.

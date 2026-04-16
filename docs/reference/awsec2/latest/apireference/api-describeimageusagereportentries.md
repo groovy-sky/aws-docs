@@ -1,3 +1,7 @@
+---
+title: "DescribeImageUsageReportEntries"
+---
+
 # DescribeImageUsageReportEntries
 
 Describes the entries in image usage reports, showing how your images are used across
@@ -130,8 +134,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describeimageusagereportentries.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeImages
 
 DescribeImageUsageReports
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Get the status of a Spot Instance request"
+---
+
 # Get the status of a Spot Instance request
 
 To help you track your Spot Instance requests and plan your use of Spot Instances, use the request
@@ -15,7 +19,7 @@ interrupts a Spot Instance or if you stop a Spot Instance. If the request is per
 opened again after your Spot Instance is interrupted. If the request is persistent and you stop
 your Spot Instance, the request only opens after you start your Spot Instance.
 
-![How Spot Instance requests work.](../../../images/awsec2/latest/userguide/images/spot-lifecycle-png.md)
+![How Spot Instance requests work.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/spot_lifecycle.png)
 
 ###### Contents
 
@@ -238,8 +242,10 @@ The following is example data for this event.
 
 For more information, see the [Amazon EventBridge User Guide](../../../eventbridge/latest/userguide.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Example launch specifications
 
 State changes for a Spot request
+
+All content copied from https://docs.aws.amazon.com/.

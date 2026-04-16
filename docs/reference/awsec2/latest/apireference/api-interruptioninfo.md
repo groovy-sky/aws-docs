@@ -1,3 +1,7 @@
+---
+title: "InterruptionInfo"
+---
+
 # InterruptionInfo
 
 Contains information about how and when instances in an interruptible reservation can be terminated when capacity is reclaimed.
@@ -32,8 +36,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/interruptioninfo.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 InterruptibleCapacityAllocation
 
 Ipam
+
+All content copied from https://docs.aws.amazon.com/.

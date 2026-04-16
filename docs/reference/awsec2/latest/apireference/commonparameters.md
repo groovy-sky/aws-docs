@@ -1,3 +1,7 @@
+---
+title: "Common query parameters"
+---
+
 # Common query parameters
 
 Most Amazon EC2 API actions support the parameters described in the following tables. The common
@@ -188,8 +192,10 @@ Parameter values must be URL-encoded. This is true for any Query parameter passe
 and is typically necessary in the `Signature` parameter. Some clients do
 this automatically, but this is not the norm.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 VM Import Manifest
 
 Permissions
+
+All content copied from https://docs.aws.amazon.com/.

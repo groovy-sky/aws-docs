@@ -1,3 +1,7 @@
+---
+title: "Monitor interruptible Capacity Reservations with EventBridge and CloudTrail"
+---
+
 # Monitor interruptible Capacity Reservations with EventBridge and CloudTrail
 
 Interruptible Capacity Reservations send EventBridge notifications and CloudTrail events to help you monitor and respond to capacity changes.
@@ -76,8 +80,10 @@ CloudTrail logs these events for interruptible Capacity Reservations:
 
 - `InterruptibleCapacityReservationInstancesTerminated` — When we terminate instances during reclamation
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Capacity consumers
 
 Capacity Blocks for ML
+
+All content copied from https://docs.aws.amazon.com/.

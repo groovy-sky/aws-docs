@@ -1,3 +1,7 @@
+---
+title: "Customize scheduled event notifications for your EC2 instances"
+---
+
 # Customize scheduled event notifications for your EC2 instances
 
 You can customize scheduled event notifications to include tags in the email
@@ -230,8 +234,10 @@ cmdlet.
 Get-EC2InstanceEventNotificationAttribute
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 View scheduled events
 
 Reschedule scheduled events
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Delete a placement group"
+---
+
 # Delete a placement group
 
 If you need to replace a placement group or no longer need one, you can delete it.
@@ -45,8 +49,10 @@ Use the [Remove-EC2PlacementGroup](../../../powershell/latest/reference/items/re
 Remove-EC2PlacementGroup -GroupName my-cluster
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Change instance placement
 
 Shared placement groups
+
+All content copied from https://docs.aws.amazon.com/.

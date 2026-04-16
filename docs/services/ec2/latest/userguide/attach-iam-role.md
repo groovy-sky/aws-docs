@@ -1,3 +1,7 @@
+---
+title: "Attach an IAM role to an instance"
+---
+
 # Attach an IAM role to an instance
 
 You can create an IAM role and attach it to an instance during or after launch.
@@ -251,8 +255,10 @@ PowerShell
 Unregister-EC2IamInstanceProfile -AssociationId iip-assoc-0044d817db6c0a4ba
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Permissions to attach a role to an instance
 
 Update management
+
+All content copied from https://docs.aws.amazon.com/.

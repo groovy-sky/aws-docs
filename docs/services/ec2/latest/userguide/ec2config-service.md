@@ -1,3 +1,7 @@
+---
+title: "Use the EC2Config service to perform tasks during EC2 legacy Windows operating system instance launch"
+---
+
 # Use the EC2Config service to perform tasks during EC2 legacy Windows operating system instance launch
 
 ###### Note
@@ -443,8 +447,10 @@ _DisableInitializeDrives_
 Disables formatting for new drives. Use this setting to initialize drives
 manually.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Version history
 
 Install EC2Config
+
+All content copied from https://docs.aws.amazon.com/.

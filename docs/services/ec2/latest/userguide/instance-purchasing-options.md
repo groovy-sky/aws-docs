@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 billing and purchasing options"
+---
+
 # Amazon EC2 billing and purchasing options
 
 You can use the following options to optimize your costs for Amazon EC2:
@@ -42,8 +46,10 @@ costs by using your existing server-bound software licenses.
 For more information, see [Amazon EC2 Pricing](https://aws.amazon.com/ec2/pricing)
 and [Amazon EC2 managed instances](amazon-ec2-managed-instances.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Nested virtualization
 
 On-Demand Instances
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Map NVMe disks on Amazon EC2 Windows instance to volumes"
+---
+
 # Map NVMe disks on Amazon EC2 Windows instance to volumes
 
 With [Nitro-based instances](instance-types.md#instance-hypervisor-type), EBS volumes are exposed as NVMe devices. This topic
@@ -35,7 +39,7 @@ The following is an example that shows the disks that are available if you
     launch an `r5d.4xlarge` instance with two additional EBS
     volumes.
 
-![Disk Management with a root volume, two instance store volumes, and two EBS volumes.](../../../images/awsec2/latest/userguide/images/disk-management-nvme-png.md)
+![Disk Management with a root volume, two instance store volumes, and two EBS volumes.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/disk_management_nvme.png)
 
 PowerShell
 
@@ -196,9 +200,11 @@ Volume ID: vol-0a4064b39e5f534a2
 Device Name: xvdc
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 How volumes are attached and mapped for Windows
 instances
 
 Map non-NVME disks to volumes
+
+All content copied from https://docs.aws.amazon.com/.

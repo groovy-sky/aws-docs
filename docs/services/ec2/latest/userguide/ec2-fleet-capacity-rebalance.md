@@ -1,3 +1,7 @@
+---
+title: "Use Capacity Rebalancing in EC2 Fleet and Spot Fleet to replace at-risk Spot Instances"
+---
+
 # Use Capacity Rebalancing in EC2 Fleet and Spot Fleet to replace at-risk Spot Instances
 
 With Capacity Rebalancing, your EC2 Fleet or Spot Fleet can maintain the desired Spot capacity by
@@ -265,9 +269,11 @@ marked for rebalance are not counted by the fleet as part of the
 target capacity. You need to manually terminate these instances,
 or you can leave them running.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Allocation
 strategies
 
 Capacity Reservations
+
+All content copied from https://docs.aws.amazon.com/.

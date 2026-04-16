@@ -1,3 +1,7 @@
+---
+title: "TargetGroupsConfig"
+---
+
 # TargetGroupsConfig
 
 Describes the target groups to attach to a Spot Fleet. Spot Fleet registers the
@@ -25,8 +29,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/targetgroupsconfig.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 TargetGroup
 
 TargetNetwork
+
+All content copied from https://docs.aws.amazon.com/.

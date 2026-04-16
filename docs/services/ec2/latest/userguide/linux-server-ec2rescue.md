@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot impaired Amazon EC2 Linux instance using EC2Rescue"
+---
+
 # Troubleshoot impaired Amazon EC2 Linux instance using EC2Rescue
 
 EC2Rescue for Linux is an easy-to-use, open-source tool that can be run on an Amazon EC2 Linux
@@ -30,8 +34,10 @@ If you are using a Windows instance, see [Troubleshoot impaired Amazon EC2 Windo
 
 - [Develop EC2Rescue modules](ec2rl-moduledev.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Troubleshoot Sysprep issues
 
 Install EC2Rescue
+
+All content copied from https://docs.aws.amazon.com/.

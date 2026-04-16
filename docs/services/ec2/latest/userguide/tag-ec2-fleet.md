@@ -1,3 +1,7 @@
+---
+title: "Tag a new or existing EC2 Fleet request and the instances and volumes it launches"
+---
+
 # Tag a new or existing EC2 Fleet request and the instances and volumes it launches
 
 To help categorize and manage your EC2 Fleet requests and the instances and volumes that it
@@ -82,8 +86,10 @@ aws ec2 create-tags \
     --tags Key=purpose,Value=test
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create an EC2 Fleet
 
 Describe an EC2 Fleet
+
+All content copied from https://docs.aws.amazon.com/.

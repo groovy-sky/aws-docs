@@ -1,3 +1,7 @@
+---
+title: "Block device mappings for volumes on Amazon EC2 instances"
+---
+
 # Block device mappings for volumes on Amazon EC2 instances
 
 Each instance that you launch has an associated root volume, which is either an Amazon EBS volume
@@ -92,7 +96,7 @@ volume supports. (Used only with `io1` and `io2` volumes.)
 
 - Some instance types support more than one EBS card. You can select the EBS card for
 the volume to be attached to by specifying the EBS card index. For more information,
-see [EBS cards](ebs-cards.md#ebs_cards.title).
+see [EBS cards](ebs-cards.md).
 
 ### Block device mapping instance store caveats
 
@@ -135,7 +139,7 @@ This figure shows an example block device mapping for an EBS-backed instance. It
 one to `/dev/sdh` and the other to `/dev/sdj`. It also
 shows the EBS volume that is the root volume, `/dev/sda1`.
 
-![Relationship between instance, instance store volumes, and EBS volumes.](../../../images/awsec2/latest/userguide/images/block-device-mapping-figure-png.md)
+![Relationship between instance, instance store volumes, and EBS volumes.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/block_device_mapping_figure.png)
 
 Note that this example block device mapping is used in the example commands and APIs in
 this topic. You can find example commands and APIs that create block device mappings in
@@ -166,8 +170,10 @@ volume is mounted as `C:\`. The instance store volumes are mounted as
 mounted, it can be mounted using any available drive letter. However, you can configure how
 drive letters are assigned to EBS volumes; for more information, see [Windows launch agents on Amazon EC2 Windows instances](configure-launch-agents.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Device names for volumes
 
 Add block device mapping to AMI
+
+All content copied from https://docs.aws.amazon.com/.

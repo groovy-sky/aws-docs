@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 security group connection tracking"
+---
+
 # Amazon EC2 security group connection tracking
 
 Your security groups use connection tracking to track information about traffic to
@@ -235,8 +239,10 @@ If you remove the outbound rule for IPv4 traffic, all inbound and outbound IPv4 
 including traffic on port 80 (HTTP). The same applies for IPv6 traffic if you remove the outbound
 rule for IPv6 traffic.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Delete a security group
 
 Security group rules for different use cases
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Cancel a Capacity Reservation Fleet"
+---
+
 # Cancel a Capacity Reservation Fleet
 
 When you no longer need a Capacity Reservation Fleet and the capacity it reserves, you can cancel
@@ -46,8 +50,10 @@ Stop-EC2CapacityReservationFleet `
     -CapacityReservationFleetId crf-abcdef01234567890
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Modify
 
 Example configurations
+
+All content copied from https://docs.aws.amazon.com/.

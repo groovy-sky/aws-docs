@@ -1,3 +1,7 @@
+---
+title: "Purchasing On-Demand Instances for Amazon EC2"
+---
+
 # Purchasing On-Demand Instances for Amazon EC2
 
 With On-Demand Instances, you pay for compute capacity by the second with no long-term commitments. You
@@ -93,8 +97,10 @@ You can use the Price List Service API or the AWS Price List API to query the
 prices of On-Demand Instances. For more information, see [Using the AWS Price List API](../../../awsaccountbilling/latest/aboutv2/price-changes.md)
 in the _AWS Billing User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Billing and purchasing options
 
 Reserved Instances
+
+All content copied from https://docs.aws.amazon.com/.

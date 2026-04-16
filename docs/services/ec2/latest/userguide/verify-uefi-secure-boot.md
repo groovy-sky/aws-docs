@@ -1,3 +1,7 @@
+---
+title: "Verify whether an Amazon EC2 instance is enabled for UEFI Secure Boot"
+---
+
 # Verify whether an Amazon EC2 instance is enabled for UEFI Secure Boot
 
 You can use the following procedures to determine whether an Amazon EC2 is enabled for
@@ -37,15 +41,17 @@ or `Failed to read SecureBoot`.
     If UEFI Secure Boot is enabled, the value is **Supported**,
     as shown in the following image.
 
-![Secure Boot State within System Information.](../../../images/awsec2/latest/userguide/images/secure-boot-state-win-png.md)
+![Secure Boot State within System Information.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/secure-boot-state-win.png)
 
 You can also use the Windows PowerShell Cmdlet
 `Confirm-SecureBootUEFI` to check the Secure Boot status. For more
 information about the cmdlet, see
 [Confirm-SecureBootUEFI](https://learn.microsoft.com/en-us/powershell/module/secureboot/confirm-securebootuefi) in the Microsoft Documentation.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Requirements for UEFI Secure Boot
 
 Create a Linux AMI with custom keys
+
+All content copied from https://docs.aws.amazon.com/.

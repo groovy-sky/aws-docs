@@ -1,3 +1,7 @@
+---
+title: "DisassociateIpamByoasn"
+---
+
 # DisassociateIpamByoasn
 
 Remove the association between your Autonomous System Number (ASN) and your BYOIP CIDR. You may want to use this action to disassociate an ASN from a CIDR or if you want to swap ASNs.
@@ -77,8 +81,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/disassociateipambyoasn.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DisassociateInstanceEventWindow
 
 DisassociateIpamResourceDiscovery
+
+All content copied from https://docs.aws.amazon.com/.

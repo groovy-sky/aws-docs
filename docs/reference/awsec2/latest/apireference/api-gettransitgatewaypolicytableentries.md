@@ -1,3 +1,7 @@
+---
+title: "GetTransitGatewayPolicyTableEntries"
+---
+
 # GetTransitGatewayPolicyTableEntries
 
 Returns a list of transit gateway policy table entries.
@@ -95,8 +99,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/gettransitgatewaypolicytableentries.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 GetTransitGatewayPolicyTableAssociations
 
 GetTransitGatewayPrefixListReferences
+
+All content copied from https://docs.aws.amazon.com/.

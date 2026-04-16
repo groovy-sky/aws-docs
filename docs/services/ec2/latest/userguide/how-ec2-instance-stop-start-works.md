@@ -1,3 +1,7 @@
+---
+title: "How EC2 instance stop and start works"
+---
+
 # How EC2 instance stop and start works
 
 When you stop an Amazon EC2 instance, changes are registered at the operating system (OS)
@@ -91,7 +95,7 @@ labeled **Running EC2 instance**, shows the instance in the
 labeled **Lost**, shows the resources that are lost when the
 instance is stopped.
 
-![The public IPv4 address, RAM, and instance storage data are lost when an instance is stopped.](../../../images/awsec2/latest/userguide/images/stop-instance-png.md)
+![The public IPv4 address, RAM, and instance storage data are lost when an instance is stopped.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/stop-instance.png)
 
 For information about what happens when you stop a Mac instance,
 see [Stop or terminate your Amazon EC2 Mac instance](mac-instance-stop.md).
@@ -142,8 +146,10 @@ for 20 seconds and then stop it, you are charged for a minute of usage. If you r
 an instance for 3 minutes and 40 seconds, you are charged for 3 minutes and 40
 seconds of usage.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Stop and start
 
 Methods for stopping an instance
+
+All content copied from https://docs.aws.amazon.com/.

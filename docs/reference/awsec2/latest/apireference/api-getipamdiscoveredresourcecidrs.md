@@ -1,3 +1,7 @@
+---
+title: "GetIpamDiscoveredResourceCidrs"
+---
+
 # GetIpamDiscoveredResourceCidrs
 
 Returns the resource CIDRs that are monitored as part of a resource discovery. A discovered resource is a resource CIDR monitored under a resource discovery. The following resources can be discovered: VPCs, Public IPv4 pools, VPC subnets, and Elastic IP addresses.
@@ -108,8 +112,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/getipamdiscoveredresourcecidrs.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 GetIpamDiscoveredPublicAddresses
 
 GetIpamPolicyAllocationRules
+
+All content copied from https://docs.aws.amazon.com/.

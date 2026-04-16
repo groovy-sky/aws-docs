@@ -1,3 +1,7 @@
+---
+title: "Manage Amazon EC2 instances scheduled for maintenance"
+---
+
 # Manage Amazon EC2 instances scheduled for maintenance
 
 When AWS must maintain the underlying host for an instance, it schedules the
@@ -59,9 +63,11 @@ window:
 
 3. Terminate the original instance.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Manage instances scheduled
 for reboot
 
 View scheduled events
+
+All content copied from https://docs.aws.amazon.com/.

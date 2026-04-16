@@ -1,3 +1,7 @@
+---
+title: "Service-linked role for EC2 Fast Launch"
+---
+
 # Service-linked role for EC2 Fast Launch
 
 Amazon EC2 uses service-linked roles for the permissions that it requires to call other
@@ -134,8 +138,10 @@ see [Delete a service-linked role](../../../iam/latest/userguide/id-roles-manage
 Amazon EC2 supports the EC2 Fast Launch service-linked role in all of the Regions
 where the Amazon EC2 service is available.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Monitor EC2 Fast Launch
 
 Troubleshoot EC2 Fast Launch
+
+All content copied from https://docs.aws.amazon.com/.

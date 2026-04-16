@@ -1,3 +1,7 @@
+---
+title: "Launch instances using Capacity Blocks"
+---
+
 # Launch instances using Capacity Blocks
 
 To use your Capacity Block, you must specify the Capacity Block reservation ID when launching
@@ -141,9 +145,11 @@ _Amazon EKS User Guide_.
 - To set up AWS ParallelCluster using a Capacity Block, see [ML on\
 AWS ParallelCluster](https://catalog.workshops.aws/ml-on-aws-parallelcluster/en-US).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Find and
 purchase
 
 View
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "NVIDIA drivers for your Amazon EC2 instance"
+---
+
 # NVIDIA drivers for your Amazon EC2 instance
 
 An instance with an attached NVIDIA GPU, such as a P- or G- series instance types, must
@@ -101,8 +105,10 @@ instance.
 
 4. [Install NVIDIA gaming drivers (G7e, G6, G6e, G5, and G4dn instances)](nvidia-gaming-driver.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AMD drivers
 
 AMIs with NVIDIA drivers
+
+All content copied from https://docs.aws.amazon.com/.

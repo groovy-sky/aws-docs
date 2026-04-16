@@ -1,3 +1,7 @@
+---
+title: "AWS Client VPN actions"
+---
+
 # AWS Client VPN actions
 
 The following API actions are available for AWS Client VPN. To learn more about Client VPN,
@@ -55,8 +59,10 @@ see the [Site-to-Site VPN product page](https://aws.amazon.com/vpn) and the [Sit
 
 - [DisassociateClientVpnTargetNetwork](api-disassociateclientvpntargetnetwork.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Actions by service
 
 Amazon EBS actions
+
+All content copied from https://docs.aws.amazon.com/.

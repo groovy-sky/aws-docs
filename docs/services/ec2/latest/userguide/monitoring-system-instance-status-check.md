@@ -1,3 +1,7 @@
+---
+title: "Status checks for Amazon EC2 instances"
+---
+
 # Status checks for Amazon EC2 instances
 
 With instance status monitoring, you can quickly determine whether Amazon EC2 has detected
@@ -167,8 +171,10 @@ the _Amazon EC2 Auto Scaling User Guide_.
 The attached EBS status check metric is available only for Nitro
 instances.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Monitor the status of your instances
 
 View status checks
+
+All content copied from https://docs.aws.amazon.com/.

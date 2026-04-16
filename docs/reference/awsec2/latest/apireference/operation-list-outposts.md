@@ -1,3 +1,7 @@
+---
+title: "AWS Outposts actions"
+---
+
 # AWS Outposts actions
 
 The following Amazon EC2 API actions are available for AWS Outposts. There is also an API for
@@ -70,8 +74,10 @@ Reference](../../../outposts/latest/apireference/api-operations.md).
 
 - [DescribeOutpostLags](api-describeoutpostlags.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AWS Nitro Enclaves
 
 AWS PrivateLink actions
+
+All content copied from https://docs.aws.amazon.com/.

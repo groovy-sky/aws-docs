@@ -1,3 +1,7 @@
+---
+title: "Windows Service administration for EC2Launch v2 and EC2Config agents"
+---
+
 # Windows Service administration for EC2Launch v2 and EC2Config agents
 
 If you've logged into your instance as a user with administrative rights, you can manage the
@@ -111,8 +115,10 @@ sc delete ec2config
 You can see what launch agent version is installed in the
 **Version** column.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Subscribe to SNS notifications
 
 EC2Launch v2
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Billing for interrupted Spot Instances"
+---
+
 # Billing for interrupted Spot Instances
 
 When a Spot Instance is interrupted, you're charged for instance and EBS volume usage, and you might
@@ -27,8 +31,10 @@ preserved.
 With EC2 Fleet and Spot Fleet, if you have many stopped instances, you can exceed the
 limit on the number of EBS volumes for your account.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Determine whether Amazon EC2 terminated a Spot Instance
 
 Rebalance recommendations
+
+All content copied from https://docs.aws.amazon.com/.

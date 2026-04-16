@@ -1,3 +1,7 @@
+---
+title: "Spot placement score"
+---
+
 # Spot placement score
 
 The Spot placement score feature can recommend an AWS Region or Availability Zone based
@@ -65,8 +69,10 @@ different.
 
 There is no additional charge for using the Spot placement score feature.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Rebalance recommendations
 
 How Spot placement score works
+
+All content copied from https://docs.aws.amazon.com/.

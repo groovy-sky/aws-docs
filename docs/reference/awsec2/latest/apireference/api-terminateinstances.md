@@ -1,3 +1,7 @@
+---
+title: "TerminateInstances"
+---
+
 # TerminateInstances
 
 Terminates (deletes) the specified instances. This operation is [idempotent](../../../../services/ec2/latest/devguide/ec2-api-idempotency.md); if you
@@ -203,8 +207,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/terminateinstances.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 TerminateClientVpnConnections
 
 UnassignIpv6Addresses
+
+All content copied from https://docs.aws.amazon.com/.

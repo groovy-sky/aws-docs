@@ -1,3 +1,7 @@
+---
+title: "Interruptible Capacity Reservations for capacity owners"
+---
+
 # Interruptible Capacity Reservations for capacity owners
 
 The capacity owner is the account that owns the source Capacity Reservation and creates the interruptible Capacity Reservation to share unused capacity with other teams while retaining control to reclaim it when needed.
@@ -217,8 +221,10 @@ Considerations:
 
 For complete sharing procedures, see [Sharing Capacity Reservations](capacity-reservation-sharing.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Interruptible Capacity Reservations
 
 Capacity consumers
+
+All content copied from https://docs.aws.amazon.com/.

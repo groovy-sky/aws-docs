@@ -1,3 +1,7 @@
+---
+title: "Share an AMI with organizations and organizational units"
+---
+
 # Share an AMI with organizations and organizational units
 
 [AWS Organizations](../../../organizations/latest/userguide/orgs-integrate-services-list.md) is an account management service that enables
@@ -22,7 +26,7 @@ AMI. The accounts in the organization and OU outside the dotted line (indicated 
 number **3**) do not have access to the AMI because they
 are not children of the OU that the AMI is shared with.
 
-![The AMI is shared with an OU, and all children OUs and accounts get access to the AMI.](../../../images/awsec2/latest/userguide/images/ami-share-with-orgs-and-ous-png.md)
+![The AMI is shared with an OU, and all children OUs and accounts get access to the AMI.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ami-share-with-orgs-and-ous.png)
 
 ###### Topics
 
@@ -48,7 +52,7 @@ not a member of.
 
 For the maximum number of entities to which an AMI can be shared within a Region, see the
 [Amazon EC2 service\
-quotas](../../../../general/general/latest/gr/ec2-service.md#limits_ec2).
+quotas](../../../../general/latest/gr/ec2-service.md#limits_ec2).
 
 - **Tags** – You can't share user-defined tags (tags
 that you attach to an AMI). When you share an AMI, your user-defined tags
@@ -111,8 +115,10 @@ used by other AWS accounts to launch instances. The accounts that launch
 instances using the AMI are billed for the instances that they
 launch.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Manage the block public access setting for AMIs
 
 Get the ARN of an organization or organizational unit
+
+All content copied from https://docs.aws.amazon.com/.

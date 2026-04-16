@@ -1,3 +1,7 @@
+---
+title: "Enable enhanced networking with ENA on your EC2 instances"
+---
+
 # Enable enhanced networking with ENA on your EC2 instances
 
 Amazon EC2 provides enhanced networking capabilities through the Elastic Network Adapter
@@ -95,8 +99,10 @@ preferably your local desktop or laptop. For more information, see [Access Amazo
 [AWS CloudShell User Guide](../../../cloudshell/latest/userguide/welcome.md). Enhanced networking
 cannot be managed from the Amazon EC2 console.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Enhanced networking
 
 Check whether ENA is enabled
+
+All content copied from https://docs.aws.amazon.com/.

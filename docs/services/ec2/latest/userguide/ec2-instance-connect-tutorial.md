@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Complete the configuration required to connect to your instance using EC2 Instance Connect"
+---
+
 # Tutorial: Complete the configuration required to connect to your instance using EC2 Instance Connect
 
 To connect to your instance using EC2 Instance Connect in the Amazon EC2 console, you first need
@@ -145,9 +149,9 @@ environment, we recommend that your IAM policy is configured to provide [least-p
 
 5. Choose **Attach policy**.
 
-![This animation shows how to create an IAM policy. For the text version of this animation, see the steps in the preceding procedure.](../../../images/awsec2/latest/userguide/images/eic-tut1-task1-create-iam-policy-gif.md)
+![This animation shows how to create an IAM policy. For the text version of this animation, see the steps in the preceding procedure.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/eic-tut1-task1-create-iam-policy.gif)
 
-![This animation shows how to attach an IAM policy to an IAM identity. For the text version of this animation, see the steps in the preceding procedure.](../../../images/awsec2/latest/userguide/images/eic-tut1-task1-attach-iam-policy-gif.md)
+![This animation shows how to attach an IAM policy to an IAM identity. For the text version of this animation, see the steps in the preceding procedure.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/eic-tut1-task1-attach-iam-policy.gif)
 
 ## Task 2: Allow inbound traffic from the EC2 Instance Connect service to your instance
 
@@ -208,7 +212,7 @@ prefix list in the Region in which your instance is located.
        **com.amazonaws.us-east-1.ec2-instance-connect**
 6. Choose **Create security group**.
 
-![This animation shows how to configure a security group. For the text version of this animation, see the steps in the preceding procedure.](../../../images/awsec2/latest/userguide/images/tut1-task2-eic-security-group-gif.md)
+![This animation shows how to configure a security group. For the text version of this animation, see the steps in the preceding procedure.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/tut1-task2-eic-security-group.gif)
 
 ## Task 3: Launch your instance
 
@@ -282,7 +286,7 @@ launch your instance.
 9. In the **Summary** panel, choose **Launch**
 **instance**.
 
-![This animation shows how to launch an instance. For the text version of this animation, see the steps in the preceding procedure.](../../../images/awsec2/latest/userguide/images/tut1-task3-launch-an-instance-gif.md)
+![This animation shows how to launch an instance. For the text version of this animation, see the steps in the preceding procedure.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/tut1-task3-launch-an-instance.gif)
 
 ## Task 4: Connect to your instance
 
@@ -326,11 +330,13 @@ steps, see [View an animation: Connect to your instance](#eic-tut1-task4-animati
 A terminal window opens in the browser, and you are connected to your
     instance.
 
-![This animation shows how to connect an instance using EC2 Instance Connect. For the text version of this animation, see the steps in the preceding procedure.](../../../images/awsec2/latest/userguide/images/eic-tut1-task4-connect-gif.md)
+![This animation shows how to connect an instance using EC2 Instance Connect. For the text version of this animation, see the steps in the preceding procedure.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/eic-tut1-task4-connect.gif)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Connect using a public IP and
 EC2 Instance Connect
 
 Prerequisites
+
+All content copied from https://docs.aws.amazon.com/.

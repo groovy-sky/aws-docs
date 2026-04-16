@@ -1,3 +1,7 @@
+---
+title: "InstanceIpv4Prefix"
+---
+
 # InstanceIpv4Prefix
 
 Information about an IPv4 prefix.
@@ -22,8 +26,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/instanceipv4prefix.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 InstanceImageMetadata
 
 InstanceIpv6Address
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Use Amazon EC2 launch templates to control launching Amazon EC2 instances"
+---
+
 # Use Amazon EC2 launch templates to control launching Amazon EC2 instances
 
 You can control the configuration of your Amazon EC2 instances by specifying that users can
@@ -83,8 +87,10 @@ _IAM User Guide_.
 
 For more information, see [Control the use of launch templates](#launch-template-permissions) and [Example: Work with launch templates](examplepolicies-ec2.md#iam-example-launch-templates).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Permissions
 
 Create
+
+All content copied from https://docs.aws.amazon.com/.

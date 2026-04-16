@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting API request errors"
+---
+
 # Troubleshooting API request errors
 
 In the Amazon EC2 Query API, errors codes are indicated as being either client or server.
@@ -59,8 +63,10 @@ For more information about which ARNs you can use with which Amazon EC2 API acti
 [Actions, resources, and condition keys for Amazon EC2](../../../../services/service-authorization/latest/reference/list-amazonec2.md)
 in the _Service Authorization Reference_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Query requests
 
 CORS support
+
+All content copied from https://docs.aws.amazon.com/.

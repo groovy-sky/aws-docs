@@ -1,3 +1,7 @@
+---
+title: "Protect an Amazon EC2 AMI from deregistration"
+---
+
 # Protect an Amazon EC2 AMI from deregistration
 
 You can turn on _deregistration protection_ on an AMI to
@@ -131,8 +135,10 @@ Use the [Disable-EC2ImageDeregistrationProtection](../../../powershell/latest/re
 Disable-EC2ImageDeregistrationProtection -ImageId ami-0abcdef1234567890
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Deregister an AMI
 
 Boot modes
+
+All content copied from https://docs.aws.amazon.com/.

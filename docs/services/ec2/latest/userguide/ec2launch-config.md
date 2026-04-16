@@ -1,3 +1,7 @@
+---
+title: "Configure the EC2Launch v1 agent on your Windows instance"
+---
+
 # Configure the EC2Launch v1 agent on your Windows instance
 
 After your instance has been initialized the first time, you can configure EC2Launch
@@ -240,8 +244,10 @@ Task.
 C:\ProgramData\Amazon\EC2-Windows\Launch\Scripts\SendWindowsIsReady.ps1 -Schedule
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Install EC2Launch
 
 Version history
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Manage system users on your Amazon EC2 Linux instance"
+---
+
 # Manage system users on your Amazon EC2 Linux instance
 
 Each Linux instance launches with a default Linux system user. You can add users to your
@@ -231,8 +235,10 @@ parameter.
 [ec2-user ~]$ sudo userdel -r olduser
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Transfer files using SCP
 
 Connect to your Windows instance using RDP
+
+All content copied from https://docs.aws.amazon.com/.

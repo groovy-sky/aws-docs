@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot impaired Windows instance with the EC2Rescue CLI"
+---
+
 # Troubleshoot impaired Windows instance with the EC2Rescue CLI
 
 The EC2Rescue for Windows Server command line interface (CLI) allows you to run an
@@ -357,8 +361,10 @@ Restore the last Windows registry backup on a volume:
 EC2RescueCmd /accepteula /offline:xvdf /restore:regback
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Troubleshoot using EC2Rescue GUI
 
 Troubleshoot using EC2Rescue and Systems Manager
+
+All content copied from https://docs.aws.amazon.com/.

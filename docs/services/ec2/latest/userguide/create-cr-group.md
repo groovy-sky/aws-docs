@@ -1,3 +1,7 @@
+---
+title: "Capacity Reservation groups"
+---
+
 # Capacity Reservation groups
 
 You can use AWS Resource Groups to create logical collections of Capacity Reservations, called
@@ -47,8 +51,10 @@ instance is automatically moved into its reserved capacity.
 - [Using Capacity Reservation in cluster placement groups\
 with a Capacity Reservation group](using-cpg-odcr-crg.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Use Capacity Reservations with cluster placement groups
 
 Create a group
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "GetCoipPoolUsage"
+---
+
 # GetCoipPoolUsage
 
 Describes the allocations from the specified customer-owned address pool.
@@ -121,8 +125,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/getcoippoolusage.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 GetCapacityReservationUsage
 
 GetConsoleOutput
+
+All content copied from https://docs.aws.amazon.com/.

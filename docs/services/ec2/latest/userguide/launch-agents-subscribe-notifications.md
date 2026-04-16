@@ -1,3 +1,7 @@
+---
+title: "Subscribe to EC2 Windows launch agent notifications"
+---
+
 # Subscribe to EC2 Windows launch agent notifications
 
 Amazon SNS can notify you when new versions of the EC2 launch agents are released. Use
@@ -60,8 +64,10 @@ following procedure to unsubscribe.
     **Delete subscriptions**. When prompted for confirmation,
     choose **Delete**.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Configure DNS Suffix
 
 Windows Service administration
+
+All content copied from https://docs.aws.amazon.com/.

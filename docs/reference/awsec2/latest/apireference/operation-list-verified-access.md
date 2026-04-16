@@ -1,3 +1,7 @@
+---
+title: "AWS Verified Access actions"
+---
+
 # AWS Verified Access actions
 
 The following API actions are available for AWS Verified Access. To learn more about
@@ -66,8 +70,10 @@ product page](https://aws.amazon.com/verified-access) and the [Verified Access d
 
 - [ModifyVerifiedAccessTrustProvider](api-modifyverifiedaccesstrustprovider.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AWS Transit Gateway actions
 
 VM Import/Export actions
+
+All content copied from https://docs.aws.amazon.com/.

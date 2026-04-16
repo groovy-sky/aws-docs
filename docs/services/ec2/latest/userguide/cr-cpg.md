@@ -1,3 +1,7 @@
+---
+title: "Use Capacity Reservations with cluster placement groups"
+---
+
 # Use Capacity Reservations with cluster placement groups
 
 You can create Capacity Reservations in a cluster placement group to reserve Amazon EC2 compute capacity
@@ -360,8 +364,10 @@ For more information, see the following resources.
 
 - [Shared placement groups](share-placement-group.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Cancel a Capacity Reservation
 
 Capacity Reservation groups
+
+All content copied from https://docs.aws.amazon.com/.

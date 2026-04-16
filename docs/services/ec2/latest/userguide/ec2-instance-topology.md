@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 topology"
+---
+
 # Amazon EC2 topology
 
 Amazon EC2 topology provides a hierarchical view of the relative proximity of your compute
@@ -64,8 +68,10 @@ There is no additional cost for describing your EC2 topology.
 
 - [Examples](ec2-instance-topology-examples.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Release notes
 
 How it works
+
+All content copied from https://docs.aws.amazon.com/.

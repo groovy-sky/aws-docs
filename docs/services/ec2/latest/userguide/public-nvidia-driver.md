@@ -1,3 +1,7 @@
+---
+title: "Install NVIDIA public drivers"
+---
+
 # Install NVIDIA public drivers
 
 If the AWS Marketplace AMIs described in [Use AMIs that include NVIDIA drivers](preinstalled-nvidia-driver.md) don't fit your use case, you can
@@ -314,8 +318,10 @@ rebooted might fail.
 4. To achieve the best performance from your GPU, complete the
     optimization steps in [Optimize GPU settings on Amazon EC2 instances](optimize-gpu.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AMIs with NVIDIA drivers
 
 Install GRID drivers
+
+All content copied from https://docs.aws.amazon.com/.

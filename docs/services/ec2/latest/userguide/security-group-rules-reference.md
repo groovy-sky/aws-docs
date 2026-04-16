@@ -1,3 +1,7 @@
+---
+title: "Security group rules for different use cases"
+---
+
 # Security group rules for different use cases
 
 You can create a security group and add rules that reflect the role of the instance that's
@@ -156,8 +160,10 @@ For more information, see the following in the Elastic Load Balancing documentat
 
 - [Configure security groups for your Classic Load Balancer](../../../elasticloadbalancing/latest/classic/elb-vpc-security-groups.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Connection tracking
 
 NitroTPM
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Understand automatic scaling for Spot Fleet"
+---
+
 # Understand automatic scaling for Spot Fleet
 
 _Automatic scaling_ enables your Spot Fleet to increase or decrease its
@@ -75,10 +79,12 @@ more information, see [Manage detailed monitoring for your EC2 instances](manage
 - **AWS CLI** – If you use the AWS CLI for
 configuring scaling for Spot Fleet, you'll use the [application-autoscaling](../../../cli/latest/reference/application-autoscaling.md) commands.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Cancel (delete) a Spot Fleet
 request
 
 IAM
 permissions
+
+All content copied from https://docs.aws.amazon.com/.

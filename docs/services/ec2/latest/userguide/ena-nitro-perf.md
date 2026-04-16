@@ -1,3 +1,7 @@
+---
+title: "Nitro system considerations for performance tuning"
+---
+
 # Nitro system considerations for performance tuning
 
 The Nitro System is a collection of hardware and software components built by AWS that
@@ -391,8 +395,10 @@ You can use Ethtool metrics on Linux instances to monitor instance networking
 performance indicators such as bandwidth, packet rate, and connection tracking. For
 more information, see [Monitor network performance for ENA settings on your EC2 instance](monitoring-network-performance-ena.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Improve network latency on Linux
 
 Optimize network performance on Windows
+
+All content copied from https://docs.aws.amazon.com/.

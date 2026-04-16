@@ -1,3 +1,7 @@
+---
+title: "Maximum IP addresses per network interface"
+---
+
 # Maximum IP addresses per network interface
 
 Each instance type supports a maximum number of network interfaces, maximum number of private IPv4
@@ -121,8 +125,10 @@ c8i.32xlarge                         24                        64
 c8i.metal-48xl                       24                        64
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Network interfaces
 
 Create a network interface
+
+All content copied from https://docs.aws.amazon.com/.

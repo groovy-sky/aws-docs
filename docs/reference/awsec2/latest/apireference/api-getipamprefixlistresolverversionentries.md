@@ -1,3 +1,7 @@
+---
+title: "GetIpamPrefixListResolverVersionEntries"
+---
+
 # GetIpamPrefixListResolverVersionEntries
 
 Retrieves the CIDR entries for a specific version of an IPAM prefix list resolver. This shows the actual CIDRs that were selected and synchronized at a particular point in time.
@@ -100,8 +104,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/getipamprefixlistresolverversionentries.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 GetIpamPrefixListResolverRules
 
 GetIpamPrefixListResolverVersions
+
+All content copied from https://docs.aws.amazon.com/.

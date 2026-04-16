@@ -1,3 +1,7 @@
+---
+title: "DimensionCondition"
+---
+
 # DimensionCondition
 
 Specifies a condition for filtering capacity data based on dimension values. Used to create precise filters for metric queries and dimension lookups.
@@ -22,7 +26,7 @@ Type: String
 
 Length Constraints: Minimum length of 0. Maximum length of 300.
 
-Valid Values: `resource-region | availability-zone-id | account-id | instance-family | instance-type | instance-platform | reservation-arn | reservation-id | reservation-type | reservation-create-timestamp | reservation-start-timestamp | reservation-end-timestamp | reservation-end-date-type | tenancy | reservation-state | reservation-instance-match-criteria | reservation-unused-financial-owner`
+Valid Values: `resource-region | availability-zone-id | account-id | account-name | instance-family | instance-type | instance-platform | reservation-arn | reservation-id | reservation-type | reservation-create-timestamp | reservation-start-timestamp | reservation-end-timestamp | reservation-end-date-type | tenancy | reservation-state | reservation-instance-match-criteria | reservation-unused-financial-owner`
 
 Required: No
 
@@ -48,8 +52,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/dimensioncondition.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DhcpOptions
 
 DirectoryServiceAuthentication
+
+All content copied from https://docs.aws.amazon.com/.

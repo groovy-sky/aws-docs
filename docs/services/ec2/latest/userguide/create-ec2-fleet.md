@@ -1,3 +1,7 @@
+---
+title: "Create an EC2 Fleet"
+---
+
 # Create an EC2 Fleet
 
 To create an EC2 Fleet, define the fleet configuration in a JSON file and reference the
@@ -426,8 +430,10 @@ The following is example output.
 }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 EC2 Fleet prerequisites
 
 Tag an EC2 Fleet
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Ipam"
+---
+
 # Ipam
 
 IPAM is a VPC feature that you can use to automate your IP address management workflows including assigning, tracking, troubleshooting, and auditing IP addresses across AWS Regions and accounts throughout your AWS Organization. For more information, see [What is IPAM?](../../../../services/vpc/latest/ipam/what-is-it-ipam.md) in the _Amazon VPC IPAM User Guide_.
@@ -175,8 +179,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ipam.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 InterruptionInfo
 
 IpamAddressHistoryRecord
+
+All content copied from https://docs.aws.amazon.com/.

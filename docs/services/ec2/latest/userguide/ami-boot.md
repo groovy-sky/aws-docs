@@ -1,3 +1,7 @@
+---
+title: "Instance launch behavior with Amazon EC2 boot modes"
+---
+
 # Instance launch behavior with Amazon EC2 boot modes
 
 When a computer boots, the first software that it runs is responsible for initializing the
@@ -63,8 +67,10 @@ UEFI boot is not supported in Wavelength Zones.
 
 - [UEFI Secure Boot for Amazon EC2 instances](uefi-secure-boot.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Protect an AMI from deregistration
 
 Requirements for UEFI boot mode
+
+All content copied from https://docs.aws.amazon.com/.

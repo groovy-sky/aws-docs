@@ -1,3 +1,7 @@
+---
+title: "DescribeManagedPrefixLists"
+---
+
 # DescribeManagedPrefixLists
 
 Describes your managed prefix lists and any AWS-managed prefix lists.
@@ -154,8 +158,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describemanagedprefixlists.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeMacModificationTasks
 
 DescribeMovingAddresses
+
+All content copied from https://docs.aws.amazon.com/.

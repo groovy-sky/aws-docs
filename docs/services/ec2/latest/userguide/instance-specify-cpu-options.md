@@ -1,3 +1,7 @@
+---
+title: "Specify CPU options for an Amazon EC2 instance"
+---
+
 # Specify CPU options for an Amazon EC2 instance
 
 You can specify CPU options during or after instance launch.
@@ -454,8 +458,10 @@ Edit-EC2InstanceCpuOption `
     -ThreadsPerCore 1
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Supported CPU options
 
 View CPU options
+
+All content copied from https://docs.aws.amazon.com/.

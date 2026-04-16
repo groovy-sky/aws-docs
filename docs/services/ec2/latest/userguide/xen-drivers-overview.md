@@ -1,3 +1,7 @@
+---
+title: "Paravirtual drivers for Windows instances"
+---
+
 # Paravirtual drivers for Windows instances
 
 Windows AMIs contain a set of drivers to permit access to virtualized hardware. These
@@ -462,8 +466,10 @@ Connect-SNSNotification `
     -Endpoint "YourUserName@YourDomainName.ext"
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ENA Windows driver releases
 
 Upgrade PV drivers
+
+All content copied from https://docs.aws.amazon.com/.

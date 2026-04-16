@@ -1,3 +1,7 @@
+---
+title: "Methods for stopping an instance"
+---
+
 # Methods for stopping an instance
 
 There are four ways to perform a user-initiated stop: default stop, stop with skip OS
@@ -71,7 +75,7 @@ the StopInstances command, the instance transitions from the `running`
 state, to `stopping`, and finally to `stopped`, as illustrated
 by the following diagram:
 
-![Default stop flow](../../../images/awsec2/latest/userguide/images/stop-instance-flow-1-png.md)
+![Default stop flow](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/stop-instance-flow-1.png)
 
 **Purpose:** Normal instance shutdown with attempted
 graceful OS shutdown.
@@ -95,7 +99,7 @@ When bypassing the graceful OS shutdown is required, the stop with skip OS
 shutdown method can be used to stop an instance and bypass the graceful OS shutdown,
 as illustrated by the following diagram:
 
-![Stop with skip OS shutdown flow](../../../images/awsec2/latest/userguide/images/stop-instance-flow-3-png.md)
+![Stop with skip OS shutdown flow](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/stop-instance-flow-3.png)
 
 ###### Warning
 
@@ -131,7 +135,7 @@ The force stop method first attempts a default stop. If the instance remains stu
 down the instance and transitions the instance to the `stopped` state, as
 indicated by the following diagram:
 
-![Force stop flow](../../../images/awsec2/latest/userguide/images/stop-instance-flow-2-png.md)
+![Force stop flow](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/stop-instance-flow-2.png)
 
 **Purpose:** Handles instances stuck in the
 `stopping` state. Attempts a default stop first. If the instance
@@ -150,7 +154,7 @@ When force stopping and bypassing the graceful OS shutdown is required, the forc
 stop with skip OS shutdown method can be used to bring an instance to the
 `stopped` state, as illustrated in the following diagram:
 
-![Force stop with skip OS shutdown flow](../../../images/awsec2/latest/userguide/images/stop-instance-flow-4-png.md)
+![Force stop with skip OS shutdown flow](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/stop-instance-flow-4.png)
 
 **Purpose:** Combines force stop with bypassing a graceful OS
 shutdown when stopping an instance.
@@ -166,9 +170,11 @@ instance will stop and you want to bypass the graceful OS shutdown. If used whil
 default stop with graceful OS shutdown is in progress, the graceful OS shutdown will
 be bypassed.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 How it
 works
 
 Enable stop protection
+
+All content copied from https://docs.aws.amazon.com/.

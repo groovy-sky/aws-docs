@@ -1,3 +1,7 @@
+---
+title: "DescribeCapacityManagerDataExports"
+---
+
 # DescribeCapacityManagerDataExports
 
 Describes one or more Capacity Manager data export configurations. Returns information about export settings, delivery status, and recent export activity.
@@ -75,6 +79,43 @@ Type: String
 
 For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
 
+## Examples
+
+### Example
+
+This example describes a specific data export configuration.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=DescribeCapacityManagerDataExports
+&CapacityManagerDataExportId.1=cmde-0abcd1234EXAMPLE
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```
+
+<DescribeCapacityManagerDataExportsResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+    <requestId>d4904fd9-82c2-4ea5-adfe-a9cc3EXAMPLE</requestId>
+    <capacityManagerDataExportSet>
+        <item>
+            <capacityManagerDataExportId>cmde-0abcd1234EXAMPLE</capacityManagerDataExportId>
+            <s3BucketName>my-capacity-exports-bucket</s3BucketName>
+            <s3BucketPrefix>capacity-data/</s3BucketPrefix>
+            <schedule>hourly</schedule>
+            <outputFormat>parquet</outputFormat>
+            <createTime>2024-01-15T10:30:00.000Z</createTime>
+            <latestDeliveryStatus>delivered</latestDeliveryStatus>
+            <latestDeliveryTime>2024-01-16T02:00:00.000Z</latestDeliveryTime>
+            <latestDeliveryS3LocationUri>s3://my-capacity-exports-bucket/capacity-data/20240116.parquet</latestDeliveryS3LocationUri>
+        </item>
+    </capacityManagerDataExportSet>
+</DescribeCapacityManagerDataExportsResponse>
+```
+
 ## See Also
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
@@ -99,8 +140,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describecapacitymanagerdataexports.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeCapacityBlockStatus
 
 DescribeCapacityReservationBillingRequests
+
+All content copied from https://docs.aws.amazon.com/.

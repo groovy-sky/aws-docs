@@ -1,3 +1,7 @@
+---
+title: "Identity and access management for Amazon EC2"
+---
+
 # Identity and access management for Amazon EC2
 
 AWS Identity and Access Management (IAM) is an AWS service that helps an administrator securely control access
@@ -33,8 +37,10 @@ practices in IAM](../../../iam/latest/userguide/best-practices.md) in the _IAM U
 
 - [IAM roles for Amazon EC2](iam-roles-for-amazon-ec2.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Compliance validation
 
 Identity-based policies
+
+All content copied from https://docs.aws.amazon.com/.

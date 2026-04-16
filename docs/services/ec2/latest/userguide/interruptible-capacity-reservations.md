@@ -1,3 +1,7 @@
+---
+title: "Interruptible Capacity Reservations"
+---
+
 # Interruptible Capacity Reservations
 
 Interruptible Capacity Reservations help you make unused capacity temporarily available for other workloads within your account. This gives you control to reclaim capacity when needed. When you reclaim capacity, any instances running inside the interruptible reservation are terminated. After creating an interruptible reservation, you can share it with additional AWS accounts or your AWS organization using AWS Resource Access Manager (RAM).
@@ -70,8 +74,10 @@ Before using interruptible Capacity Reservations, review the following limitatio
 
 - Your instances will be terminated when the owner reclaims capacity - there is no fallback to On-Demand or Spot. For more information, see [Interruption experience](capacity-consumer-procedures.md#interruption-experience).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Monitor state changes
 
 Capacity owners
+
+All content copied from https://docs.aws.amazon.com/.

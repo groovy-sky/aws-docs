@@ -1,3 +1,7 @@
+---
+title: "How Spot placement score works"
+---
+
 # How Spot placement score works
 
 When you use the Spot placement score feature, you first specify your compute requirements for your
@@ -151,8 +155,10 @@ likely—but not guaranteed—to succeed, for best results we
 recommend that you act on a score immediately. We also recommend that you
 get a fresh score each time you attempt a capacity request.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Spot placement score
 
 Required permissions
+
+All content copied from https://docs.aws.amazon.com/.

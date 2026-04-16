@@ -1,3 +1,7 @@
+---
+title: "IpamOperatingRegion"
+---
+
 # IpamOperatingRegion
 
 The operating Regions for an IPAM. Operating Regions are AWS Regions where the IPAM is allowed to manage IP address CIDRs. IPAM only discovers and monitors resources in the AWS Regions you select as operating Regions.
@@ -24,8 +28,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ipamoperatingregion.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 IpamExternalResourceVerificationToken
 
 IpamOrganizationalUnitExclusion
+
+All content copied from https://docs.aws.amazon.com/.

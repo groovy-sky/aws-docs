@@ -1,3 +1,7 @@
+---
+title: "IpamScope"
+---
+
 # IpamScope
 
 In IPAM, a scope is the highest-level container within IPAM. An IPAM contains two default scopes. Each scope represents the IP space for a single network. The private scope is intended for all private IP address space. The public scope is intended for all public IP address space. Scopes enable you to reuse IP addresses across multiple unconnected networks without causing IP address overlap or conflict.
@@ -125,8 +129,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ipamscope.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 IpamResourceTag
 
 IpamScopeExternalAuthorityConfiguration
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "DeleteRouteTable"
+---
+
 # DeleteRouteTable
 
 Deletes the specified route table. You must disassociate the route table from any subnets before you can delete it. You can't delete the main route table.
@@ -93,8 +97,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deleteroutetable.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DeleteRouteServerPeer
 
 DeleteSecondaryNetwork
+
+All content copied from https://docs.aws.amazon.com/.

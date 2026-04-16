@@ -1,3 +1,7 @@
+---
+title: "Spot Instance interruption notices"
+---
+
 # Spot Instance interruption notices
 
 A _Spot Instance interruption notice_ is a warning that is issued
@@ -149,8 +153,10 @@ If Amazon EC2 fails to terminate the instance, the request status is set to
 the instance metadata with the original approximate time, which is now in the
 past.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Initiate an interruption
 
 Find interrupted Spot Instances
+
+All content copied from https://docs.aws.amazon.com/.

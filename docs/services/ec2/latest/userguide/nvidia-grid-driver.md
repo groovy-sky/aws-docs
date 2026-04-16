@@ -1,3 +1,7 @@
+---
+title: "Install NVIDIA GRID drivers (G7e, G6, Gr6, G6e, G6f, Gr6f, G5, G4dn, and G3 instances)"
+---
+
 # Install NVIDIA GRID drivers (G7e, G6, Gr6, G6e, G6f, Gr6f, G5, G4dn, and G3 instances)
 
 These downloads are available to AWS customers only. By downloading, in order to adhere
@@ -935,8 +939,10 @@ reg add "HKLM\SOFTWARE\NVIDIA Corporation\Global\GridLicensing" /v NvCplDisableM
        hosting capabilities, complete the GRID Virtual Application
        activation steps in [Activate NVIDIA GRID Virtual Applications on your Amazon EC2 GPU-based instances](activate-grid.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Install public drivers
 
 Install gaming drivers
+
+All content copied from https://docs.aws.amazon.com/.

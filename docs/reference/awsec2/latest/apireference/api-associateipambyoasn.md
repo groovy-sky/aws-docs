@@ -1,3 +1,7 @@
+---
+title: "AssociateIpamByoasn"
+---
+
 # AssociateIpamByoasn
 
 Associates your Autonomous System Number (ASN) with a BYOIP CIDR that you own in the same AWS Region.
@@ -80,8 +84,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/associateipambyoasn.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AssociateInstanceEventWindow
 
 AssociateIpamResourceDiscovery
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 instance network bandwidth"
+---
+
 # Amazon EC2 instance network bandwidth
 
 Instance bandwidth specifications apply to both inbound and outbound traffic for the
@@ -172,8 +176,10 @@ microsecond spikes.
 - [Monitor network\
 performance](monitoring-network-performance-ena.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Delete a network interface
 
 Bandwidth weighting
+
+All content copied from https://docs.aws.amazon.com/.

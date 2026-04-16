@@ -1,3 +1,7 @@
+---
+title: "Requirements for UEFI Secure Boot on Amazon EC2"
+---
+
 # Requirements for UEFI Secure Boot on Amazon EC2
 
 When you [launch an Amazon EC2 instance](launchingandusinginstances.md)
@@ -55,8 +59,10 @@ Secure Boot. For the instance types that support UEFI Secure Boot, see
 
 Bare metal instance types do not support UEFI Secure Boot.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 How UEFI Secure Boot works
 
 Verify if an instance is enabled for UEFI Secure Boot
+
+All content copied from https://docs.aws.amazon.com/.

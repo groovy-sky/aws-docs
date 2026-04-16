@@ -1,3 +1,7 @@
+---
+title: "Manage costs for EC2 Fast Launch underlying resources"
+---
+
 # Manage costs for EC2 Fast Launch underlying resources
 
 There is no service charge to configure Windows AMIs for EC2 Fast Launch. However,
@@ -99,8 +103,10 @@ You can also create custom Windows AMIs that are configured for EC2 Fast Launch 
 EC2 Image Builder. For more information, see [Create \
 distribution settings for a Windows AMI with EC2 Fast Launch enabled (AWS CLI)](../../../imagebuilder/latest/userguide/cr-upd-ami-distribution-settings.md#cli-create-ami-dist-config-win-fast-launch).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 View EC2 Fast Launch AMIs
 
 Monitor EC2 Fast Launch
+
+All content copied from https://docs.aws.amazon.com/.

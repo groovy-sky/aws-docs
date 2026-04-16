@@ -1,3 +1,7 @@
+---
+title: "Change the time zone of your instance"
+---
+
 # Change the time zone of your instance
 
 Amazon EC2 instances are set to the UTC (Coordinated Universal Time) time zone by default.
@@ -129,8 +133,10 @@ HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation
        RealTimeIsUniversal             REG_DWORD     0x1
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Compare timestamps for your Linux instances
 
 EC2 Capacity Manager
+
+All content copied from https://docs.aws.amazon.com/.

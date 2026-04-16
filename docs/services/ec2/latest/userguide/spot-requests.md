@@ -1,3 +1,7 @@
+---
+title: "Create a Spot Instance request"
+---
+
 # Create a Spot Instance request
 
 To use Spot Instances, you create a Spot Instance request that includes the desired number of instances, the
@@ -299,8 +303,10 @@ $marketOptions.MarketType = "spot"
 $marketOptions.SpotOptions = $spotOptions
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 View savings
 
 Example launch specifications
+
+All content copied from https://docs.aws.amazon.com/.

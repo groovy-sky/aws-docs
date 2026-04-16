@@ -1,3 +1,7 @@
+---
+title: "Capacity Blocks pricing and billing"
+---
+
 # Capacity Blocks pricing and billing
 
 With Amazon EC2 Capacity Blocks for ML, you pay only for what you reserve. The price of a Capacity Block depends
@@ -56,9 +60,11 @@ months. In your AWS Cost and Usage Report, the Capacity Block reservation ID is 
 in your anniversary bill so that you can associate the usage to the corresponding
 upfront price.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 How it works
 
 Find and
 purchase
+
+All content copied from https://docs.aws.amazon.com/.

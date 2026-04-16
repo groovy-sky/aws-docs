@@ -1,3 +1,7 @@
+---
+title: "How host maintenance works for Amazon EC2 Dedicated Hosts"
+---
+
 # How host maintenance works for Amazon EC2 Dedicated Hosts
 
 When a degradation is detected on a Dedicated Host that is enabled for host maintenance,
@@ -139,8 +143,10 @@ C1, C3, D2, I2, M1, M2, M3, R3, and X1.
 You can continue to access your instances on the degraded Dedicated Host before the scheduled
 event.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Host maintenance
 
 Configure host maintenance
+
+All content copied from https://docs.aws.amazon.com/.

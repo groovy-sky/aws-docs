@@ -1,3 +1,7 @@
+---
+title: "Set a spending limit for your EC2 Fleet or Spot Fleet"
+---
+
 # Set a spending limit for your EC2 Fleet or Spot Fleet
 
 You can set a limit on how much you're willing to spend per hour on your EC2 Fleet or Spot Fleet.
@@ -98,8 +102,10 @@ you require sustained CPU, you can earn credits (by idling over some period), us
 [Unlimited\
 mode](burstable-performance-instances-unlimited-mode.md) for T2 Spot Instances, or use an instance type with dedicated CPU.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 EC2 Fleet 'instant' type
 
 Attribute-based instance type selection
+
+All content copied from https://docs.aws.amazon.com/.

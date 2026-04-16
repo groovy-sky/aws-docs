@@ -1,3 +1,7 @@
+---
+title: "Delete your key pair"
+---
+
 # Delete your key pair
 
 You can delete a key pair, which removes the public key that is stored in Amazon EC2. Deleting
@@ -56,8 +60,10 @@ Use the [Remove-EC2KeyPair](../../../powershell/latest/reference/items/remove-ec
 Remove-EC2KeyPair -KeyName my-key-pair
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Describe your key pairs
 
 Add or replace a public key on your Linux instance
+
+All content copied from https://docs.aws.amazon.com/.

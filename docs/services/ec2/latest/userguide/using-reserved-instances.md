@@ -1,3 +1,7 @@
+---
+title: "Use your Reserved Instances"
+---
+
 # Use your Reserved Instances
 
 Reserved Instances are automatically applied to running On-Demand Instances provided that the specifications
@@ -48,8 +52,10 @@ information about the different launch methods, see [Launch an Amazon EC2 instan
 You can also use Amazon EC2 Auto Scaling to launch an instance. For more information, see the
 [Amazon EC2 Auto Scaling User Guide](../../../autoscaling/ec2/userguide.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 How Reserved Instance discounts are applied
 
 How billing works with Reserved Instances
+
+All content copied from https://docs.aws.amazon.com/.

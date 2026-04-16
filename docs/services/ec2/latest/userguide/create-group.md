@@ -1,3 +1,7 @@
+---
+title: "Create a Capacity Reservation group"
+---
+
 # Create a Capacity Reservation group
 
 You can use the following examples to create a resource group for Capacity Reservations with the following
@@ -44,8 +48,10 @@ New-RGGroup `
         @{"Type"="AWS::ResourceGroups::Generic"; "Parameters"=@{"allowed-resource-types"=@{"Values"="AWS::EC2::CapacityReservations"}}}
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Capacity Reservation groups
 
 Add Capacity Reservation to group
+
+All content copied from https://docs.aws.amazon.com/.

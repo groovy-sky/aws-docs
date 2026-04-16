@@ -1,3 +1,7 @@
+---
+title: "Connect to your Linux instance using PuTTY"
+---
+
 # Connect to your Linux instance using PuTTY
 
 You can connect to your Linux instance using PuTTY, a free SSH client for Windows.
@@ -72,14 +76,14 @@ PuTTY.
     your version of PuTTYgen does not include this option, choose
     **SSH-2 RSA**.
 
-![RSA key in PuTTYgen.](../../../images/awsec2/latest/userguide/images/puttygen-key-type-png.md)
+![RSA key in PuTTYgen.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/puttygen-key-type.png)
 
 3. Choose **Load**. By default, PuTTYgen displays only files with the
     extension `.ppk`. To locate your
     `.pem` file, choose the option to display files
     of all types.
 
-![Select all file types.](../../../images/awsec2/latest/userguide/images/puttygen-load-key-png.md)
+![Select all file types.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/puttygen-load-key.png)
 
 4. Select your `.pem` file for the key pair that you specified when you
     launched your instance and choose **Open**. PuTTYgen
@@ -141,7 +145,7 @@ name or IPv6 address of your instance, see [Get the required instance details](c
 3. Under **Connection type**, select
        **SSH**.
 
-![PuTTY configuration - Session.](../../../images/awsec2/latest/userguide/images/putty-session-config-png.md)
+![PuTTY configuration - Session.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/putty-session-config.png)
 
 3. (Optional) You can configure PuTTY to automatically send 'keepalive' data at regular
     intervals to keep the session active. This is useful to avoid disconnecting
@@ -189,8 +193,10 @@ name or IPv6 address of your instance, see [Get the required instance details](c
 
 If you receive an error while attempting to connect to your instance, see [Troubleshoot issues connecting to your Amazon EC2 Linux instance](troubleshootinginstancesconnecting.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Connect using an SSH client
 
 Transfer files using SCP
+
+All content copied from https://docs.aws.amazon.com/.

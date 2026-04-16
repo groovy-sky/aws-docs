@@ -1,3 +1,7 @@
+---
+title: "Monitor and programmatically respond to the events emitted by your EC2 Fleet or Spot Fleet using Amazon EventBridge"
+---
+
 # Monitor and programmatically respond to the events emitted by your EC2 Fleet or Spot Fleet using Amazon EventBridge
 
 When the state of an EC2 Fleet or Spot Fleet changes, it emits a notification. The
@@ -909,9 +913,11 @@ launch.
 The configuration is not valid. For more information, see the
 description of the event.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Monitor your fleet using
 CloudWatch
 
 Tutorials
+
+All content copied from https://docs.aws.amazon.com/.

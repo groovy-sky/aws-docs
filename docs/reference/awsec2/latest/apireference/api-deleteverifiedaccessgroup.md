@@ -1,3 +1,7 @@
+---
+title: "DeleteVerifiedAccessGroup"
+---
+
 # DeleteVerifiedAccessGroup
 
 Delete an AWS Verified Access group.
@@ -77,8 +81,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deleteverifiedaccessgroup.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DeleteVerifiedAccessEndpoint
 
 DeleteVerifiedAccessInstance
+
+All content copied from https://docs.aws.amazon.com/.

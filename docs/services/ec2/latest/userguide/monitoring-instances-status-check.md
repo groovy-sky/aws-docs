@@ -1,3 +1,7 @@
+---
+title: "Monitor the status of your Amazon EC2 instances"
+---
+
 # Monitor the status of your Amazon EC2 instances
 
 You can monitor the status of your instances by viewing status checks and scheduled events
@@ -21,8 +25,10 @@ time of each event.
 
 - [Scheduled events for Amazon EC2 instances](monitoring-instances-status-check-sched.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Monitor resources
 
 Status checks
+
+All content copied from https://docs.aws.amazon.com/.

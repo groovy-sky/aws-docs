@@ -1,3 +1,7 @@
+---
+title: "CreateImage"
+---
+
 # CreateImage
 
 Creates an Amazon EBS-backed AMI from an Amazon EBS-backed instance that is either running or
@@ -279,8 +283,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createimage.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreateFpgaImage
 
 CreateImageUsageReport
+
+All content copied from https://docs.aws.amazon.com/.

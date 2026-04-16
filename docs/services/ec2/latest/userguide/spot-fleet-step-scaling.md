@@ -1,3 +1,7 @@
+---
+title: "Step scaling: Scale Spot Fleet using step scaling policies"
+---
+
 # Step scaling: Scale Spot Fleet using step scaling policies
 
 With step scaling policies, you specify CloudWatch alarms to trigger the scaling
@@ -174,8 +178,10 @@ enable it by default.
 
 3. Create an alarm that triggers the scaling policy using the [put-metric-alarm](../../../cli/latest/reference/cloudwatch/put-metric-alarm.md) command.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Target tracking scaling
 
 Scheduled scaling
+
+All content copied from https://docs.aws.amazon.com/.

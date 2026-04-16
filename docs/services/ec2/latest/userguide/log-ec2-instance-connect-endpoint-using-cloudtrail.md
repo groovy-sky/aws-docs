@@ -1,3 +1,7 @@
+---
+title: "Log connections established over EC2 Instance Connect Endpoint"
+---
+
 # Log connections established over EC2 Instance Connect Endpoint
 
 You can log resource operations and audit connections established over the
@@ -74,8 +78,10 @@ was logged in CloudTrail.
 }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Connect to an instance
 
 Service-linked role
+
+All content copied from https://docs.aws.amazon.com/.

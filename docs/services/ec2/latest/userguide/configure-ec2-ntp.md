@@ -1,3 +1,7 @@
+---
+title: "Set the time reference on your EC2 instance to use the local Amazon Time Sync Service"
+---
+
 # Set the time reference on your EC2 instance to use the local Amazon Time Sync Service
 
 The local Amazon Time Sync Service either uses the Network Time Protocol (NTP), or provides a local
@@ -662,8 +666,10 @@ In the output that's returned, `*` indicates the
     hardware clock. You might need to wait a few seconds after
     restarting chrony for the asterisk to appear.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Clock synchronization
 
 Use the public Amazon Time Sync Service
+
+All content copied from https://docs.aws.amazon.com/.

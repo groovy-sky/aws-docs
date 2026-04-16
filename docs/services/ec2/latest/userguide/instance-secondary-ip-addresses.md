@@ -1,3 +1,7 @@
+---
+title: "Secondary IP addresses for your EC2 instances"
+---
+
 # Secondary IP addresses for your EC2 instances
 
 The first IPv4 address assigned to a network interface is known as the primary IP
@@ -221,8 +225,10 @@ Unregister-EC2PrivateIpAddress `
     -PrivateIpAddress 10.251.50.12
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 IPv6 addresses
 
 IPv4 addresses on Windows
+
+All content copied from https://docs.aws.amazon.com/.

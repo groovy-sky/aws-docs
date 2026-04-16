@@ -1,3 +1,7 @@
+---
+title: "Subscribe to macOS AMI notifications"
+---
+
 # Subscribe to macOS AMI notifications
 
 To be notified when new AMIs are released or when bridgeOS has been updated,
@@ -73,8 +77,10 @@ these notifications, use the following procedure to unsubscribe.
     **Delete subscriptions** When prompted for confirmation, choose
     **Delete**.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Find supported macOS versions
 
 Retrieve macOS AMI IDs
+
+All content copied from https://docs.aws.amazon.com/.

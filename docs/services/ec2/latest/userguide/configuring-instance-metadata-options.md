@@ -1,3 +1,7 @@
+---
+title: "Configure the Instance Metadata Service options"
+---
+
 # Configure the Instance Metadata Service options
 
 The Instance Metadata Service (IMDS) runs locally on every EC2 instance. The _instance metadata options_ refer to a set of configurations
@@ -221,7 +225,7 @@ determined by the settings at the different levels of the configuration and
 where enforcement is evaluated. The table that follows provides the specific
 settings at each level.
 
-![A flowchart that shows the evaluation points for the instance metadata version and IMDSv2 enforcement.](../../../images/awsec2/latest/userguide/images/imds-defaults-launch-flow-png.md)
+![A flowchart that shows the evaluation points for the instance metadata version and IMDSv2 enforcement.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/imds-defaults-launch-flow.png)
 
 The table shows how the metadata version for an instance at launch (indicated by
 **Resulting instance configuration** in column 4) is
@@ -276,10 +280,12 @@ retrieving the token.
 [update to Windows Management Framework 4.0](https://devblogs.microsoft.com/powershell/windows-management-framework-wmf-4-0-update-now-available-for-windows-server-2012-windows-server-2008-r2-sp1-and-windows-7-sp1) to require the use
 of IMDSv2.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Limit access to
 IMDS
 
 For new
 instances
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot Amazon EC2 Linux instances with failed status checks"
+---
+
 # Troubleshoot Amazon EC2 Linux instances with failed status checks
 
 The following information can help you troubleshoot issues if your Linux instance fails a status
@@ -1309,8 +1313,10 @@ Do one of the following:
 - Modify the AMI to use a modern kernel, and launch a new instance using this
 AMI.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Linux instance SSH issues
 
 Linux instance boots from wrong volume
+
+All content copied from https://docs.aws.amazon.com/.

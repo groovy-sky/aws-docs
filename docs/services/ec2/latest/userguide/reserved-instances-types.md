@@ -1,3 +1,7 @@
+---
+title: "Types of Reserved Instances (offering classes)"
+---
+
 # Types of Reserved Instances (offering classes)
 
 The offering class of a Reserved Instance is either Standard or Convertible. A Standard Reserved Instance
@@ -17,8 +21,10 @@ Standard Reserved InstanceConvertible Reserved InstanceModify Reserved Instances
 attributes, including instance family, instance type, platform,
 scope, or tenancy. For more information, see [Exchange Convertible Reserved Instances](ri-convertible-exchange.md).Sell in the Reserved Instance MarketplaceCan be sold in the Reserved Instance Marketplace.Can't be sold in the Reserved Instance Marketplace.Buy in the Reserved Instance MarketplaceCan be bought in the Reserved Instance Marketplace.Can't be bought in the Reserved Instance Marketplace.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Regional and zonal Reserved Instances (scope)
 
 How Reserved Instance discounts are applied
+
+All content copied from https://docs.aws.amazon.com/.

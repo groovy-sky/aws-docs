@@ -1,3 +1,7 @@
+---
+title: "Configure DNS Suffix for EC2 Windows launch agents"
+---
+
 # Configure DNS Suffix for EC2 Windows launch agents
 
 With Amazon EC2 launch agents, you can configure a list of DNS suffixes that Windows
@@ -92,8 +96,10 @@ The following examples show domain name progression through the devolution proce
 2. Progresses to `corp.example.com`. The progression
     stops here, due to the level setting.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Windows launch agents
 
 Subscribe to SNS notifications
+
+All content copied from https://docs.aws.amazon.com/.

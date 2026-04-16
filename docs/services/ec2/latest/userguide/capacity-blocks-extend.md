@@ -1,3 +1,7 @@
+---
+title: "Extend Capacity Blocks"
+---
+
 # Extend Capacity Blocks
 
 With Capacity Blocks, you reserve compute capacity for your workloads, ensuring availability and consistency. To accommodate your changing needs, you can extend the duration of your existing Capacity Blocks as required.
@@ -102,8 +106,10 @@ Invoke-EC2CapacityBlockExtension `
     -CapacityReservationId cr-1234567890abcdefg
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 View
 
 Share
+
+All content copied from https://docs.aws.amazon.com/.

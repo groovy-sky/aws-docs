@@ -1,3 +1,7 @@
+---
+title: "View tags for your EC2 instances using instance metadata"
+---
+
 # View tags for your EC2 instances using instance metadata
 
 You can access an instance's tags from the instance metadata. By accessing tags from the
@@ -308,8 +312,10 @@ Edit-EC2InstanceMetadataOption `
     -InstanceMetadataTag disabled
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Filter resources by tag
 
 Service quotas
+
+All content copied from https://docs.aws.amazon.com/.

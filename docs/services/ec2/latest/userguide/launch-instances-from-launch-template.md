@@ -1,3 +1,7 @@
+---
+title: "Launch EC2 instances using a launch template"
+---
+
 # Launch EC2 instances using a launch template
 
 An Amazon EC2 launch template stores instance launch parameters so that you don't have to
@@ -339,8 +343,10 @@ that are specified in the launch template. For more information, see [Create a S
 `LaunchTemplateConfigs` parameter to specify the launch
 template and any overrides for the launch template.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Launch using the launch instance wizard
 
 Launch from an existing instance
+
+All content copied from https://docs.aws.amazon.com/.

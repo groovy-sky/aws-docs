@@ -1,3 +1,7 @@
+---
+title: "View Spot Instance pricing history"
+---
+
 # View Spot Instance pricing history
 
 Spot Instance prices are set by Amazon EC2 and adjust gradually based on long-term trends in supply
@@ -37,7 +41,7 @@ history.
 
 The following screenshot shows a price comparison for different instance types.
 
-![The Spot Instance pricing history tool in the Amazon EC2 console.](../../../images/awsec2/latest/userguide/images/spot-instance-pricing-history-png.md)
+![The Spot Instance pricing history tool in the Amazon EC2 console.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/spot-instance-pricing-history.png)
 
 5. Hover (move your pointer) over the graph to display the prices at specific times in the
     selected date range. The prices are displayed in the information blocks above
@@ -79,8 +83,10 @@ Get-EC2SpotPriceHistory `
     -UtcEndTime 2025-04-02T00:00:0
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 How Spot Instances work
 
 View savings
+
+All content copied from https://docs.aws.amazon.com/.

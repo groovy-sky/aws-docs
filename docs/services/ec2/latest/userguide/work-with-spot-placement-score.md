@@ -1,3 +1,7 @@
+---
+title: "Calculate the Spot placement score"
+---
+
 # Calculate the Spot placement score
 
 You can calculate a Spot placement score based on target capacity and compute requirements. For more
@@ -483,8 +487,10 @@ Zones.
 }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Required permissions
 
 Spot Instance data feed
+
+All content copied from https://docs.aws.amazon.com/.

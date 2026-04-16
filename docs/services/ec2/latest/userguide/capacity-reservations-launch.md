@@ -1,3 +1,7 @@
+---
+title: "Launch instances into an existing Capacity Reservation"
+---
+
 # Launch instances into an existing Capacity Reservation
 
 You can only launch an instance into a Capacity Reservation that:
@@ -229,8 +233,10 @@ New-EC2Instance `
     -CapacityReservationTarget_CapacityReservationId cr-1234abcd56EXAMPLE
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 View the state of a Capacity Reservation
 
 Modify Capacity Reservation
+
+All content copied from https://docs.aws.amazon.com/.

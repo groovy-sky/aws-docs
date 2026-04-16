@@ -1,3 +1,7 @@
+---
+title: "GetAllowedImagesSettings"
+---
+
 # GetAllowedImagesSettings
 
 Gets the current state of the Allowed AMIs setting and the list of Allowed AMIs criteria
@@ -103,8 +107,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/getallowedimagessettings.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 GetActiveVpnTunnelStatus
 
 GetAssociatedEnclaveCertificateIamRoles
+
+All content copied from https://docs.aws.amazon.com/.

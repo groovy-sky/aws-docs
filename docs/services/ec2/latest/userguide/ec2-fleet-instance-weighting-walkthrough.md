@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Configure EC2 Fleet to use instance weighting"
+---
+
 # Tutorial: Configure EC2 Fleet to use instance weighting
 
 This tutorial uses a fictitious company called Example Corp to illustrate the process
@@ -185,8 +189,10 @@ from all three pools. The EC2 Fleet would launch 6 `r3.2xlarge` instances
 units), and 2 `r3.8xlarge` instances (which provide 8 units), for a total
 of 20 units.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Tutorials
 
 Tutorial: Configure EC2 Fleet to use On-Demand Instances as the primary capacity
+
+All content copied from https://docs.aws.amazon.com/.

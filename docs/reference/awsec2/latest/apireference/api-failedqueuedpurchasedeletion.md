@@ -1,3 +1,7 @@
+---
+title: "FailedQueuedPurchaseDeletion"
+---
+
 # FailedQueuedPurchaseDeletion
 
 Describes a Reserved Instance whose queued purchase was not deleted.
@@ -30,8 +34,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/failedqueuedpurchasedeletion.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 FailedCapacityReservationFleetCancellationResult
 
 FastLaunchLaunchTemplateSpecificationRequest
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Verify AMI charges on your bill"
+---
+
 # Verify AMI charges on your bill
 
 To ensure that you're not incurring unplanned costs, you can verify that the billing
@@ -20,8 +24,10 @@ If you launched an instance using this AMI, you can find the instance ID in
 your CUR, and check the corresponding value in the `lineitem/Operation` column. In this example, the value should be
 `RunInstances:0010`.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Find AMI billing information
 
 AMI quotas
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Security groups for EC2 Instance Connect Endpoint"
+---
+
 # Security groups for EC2 Instance Connect Endpoint
 
 A security group controls the traffic that is allowed to reach and leave the resources
@@ -94,8 +98,10 @@ the address of the client.
 ProtocolSourcePort rangeCommentTCP`Public IPv4 address range`22Allows inbound traffic from the specified client IPv4 address
 range
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Permissions
 
 Create an EC2 Instance Connect Endpoint
+
+All content copied from https://docs.aws.amazon.com/.

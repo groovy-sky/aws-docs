@@ -1,3 +1,7 @@
+---
+title: "Identify each instance launched in a single request"
+---
+
 # Identify each instance launched in a single request
 
 This example demonstrates how you can use both user data and instance metadata to
@@ -145,8 +149,10 @@ IMDSv1
 replicate-every=5min
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Run commands at launch
 
 Detect whether a host is an EC2 instance
+
+All content copied from https://docs.aws.amazon.com/.

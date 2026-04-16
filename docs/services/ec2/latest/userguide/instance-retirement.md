@@ -1,3 +1,7 @@
+---
+title: "Instance retirement"
+---
+
 # Instance retirement
 
 An instance is scheduled to be retired when AWS detects irreparable failure of the
@@ -65,7 +69,7 @@ Console
     associated with your Amazon EC2 instances and volumes, organized by
     Region.
 
-![Scheduled events](../../../images/awsec2/latest/userguide/images/dashboard-scheduled-events-png.md)
+![Scheduled events](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/dashboard-scheduled-events.png)
 
 3. If you have an instance with a scheduled event listed, select its link below the
     Region name to go to the **Events** page.
@@ -193,8 +197,10 @@ Transfer your data to an EBS volume, take a snapshot of the volume, and then cre
 AMI from the snapshot. You can launch a replacement instance from your new AMI. For
 more information, see [Convert your Amazon S3-backed AMI to an EBS-backed AMI](using-convertings3toebs.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Preserve data when an instance is terminated
 
 Automatic instance recovery
+
+All content copied from https://docs.aws.amazon.com/.

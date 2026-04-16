@@ -1,3 +1,7 @@
+---
+title: "Monitor billing assignment requests for shared Capacity Reservations"
+---
+
 # Monitor billing assignment requests for shared Capacity Reservations
 
 Amazon EC2 sends Amazon EventBridge events when the state of a billing assignment request
@@ -68,8 +72,10 @@ shared Capacity Reservation ( `cr-01234567890abcdef`).
 }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Cancel or revoke requests
 
 Capacity Reservation Fleets
+
+All content copied from https://docs.aws.amazon.com/.

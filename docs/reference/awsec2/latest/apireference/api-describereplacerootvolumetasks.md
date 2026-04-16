@@ -1,3 +1,7 @@
+---
+title: "DescribeReplaceRootVolumeTasks"
+---
+
 # DescribeReplaceRootVolumeTasks
 
 Describes a root volume replacement task. For more information, see
@@ -107,8 +111,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describereplacerootvolumetasks.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeRegions
 
 DescribeReservedInstances
+
+All content copied from https://docs.aws.amazon.com/.

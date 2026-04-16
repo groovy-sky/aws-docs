@@ -1,3 +1,7 @@
+---
+title: "Purchase a paid AMI in the AWS Marketplace"
+---
+
 # Purchase a paid AMI in the AWS Marketplace
 
 You must sign up for (purchase) a paid AMI before you can launch an Amazon EC2 instance using the AMI.
@@ -26,8 +30,10 @@ quickly with the 1-Click deployment feature. For more information, see
 launch an instance directly from the wizard. For more information, see
 [Launch an Amazon EC2 instance from an AWS Marketplace AMI](launch-marketplace-console.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Find a paid AMI
 
 Retrieve the product code
+
+All content copied from https://docs.aws.amazon.com/.

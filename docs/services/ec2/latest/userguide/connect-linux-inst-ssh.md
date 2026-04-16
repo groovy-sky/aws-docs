@@ -1,3 +1,7 @@
+---
+title: "Connect to your Linux instance using an SSH client"
+---
+
 # Connect to your Linux instance using an SSH client
 
 You can use Secure Shell (SSH) to connect to your Linux instance from your local computer.
@@ -182,8 +186,10 @@ You see a response like the following:
 Warning: Permanently added 'ec2-198-51-100-1.compute-1.amazonaws.com' (ECDSA) to the list of known hosts.
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Connect to your Linux instance using SSH
 
 Connect using PuTTY
+
+All content copied from https://docs.aws.amazon.com/.

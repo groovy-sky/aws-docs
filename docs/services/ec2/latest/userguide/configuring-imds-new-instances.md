@@ -1,3 +1,7 @@
+---
+title: "Configure instance metadata options for new instances"
+---
+
 # Configure instance metadata options for new instances
 
 You can configure the following instance metadata options for new
@@ -1131,10 +1135,12 @@ tag _keys_ must comply with specific character
 restrictions, otherwise the instance launch will fail. For more information, see
 [Enable access to tags in instance metadata](work-with-tags-in-imds.md#allow-access-to-tags-in-IMDS).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Configure
 IMDS options
 
 For existing
 instances
+
+All content copied from https://docs.aws.amazon.com/.

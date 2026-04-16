@@ -1,3 +1,7 @@
+---
+title: "ImageDiskContainer"
+---
+
 # ImageDiskContainer
 
 Describes the disk container object for an import image task.
@@ -65,8 +69,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/imagediskcontainer.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ImageCriterionRequest
 
 ImageMetadata
+
+All content copied from https://docs.aws.amazon.com/.

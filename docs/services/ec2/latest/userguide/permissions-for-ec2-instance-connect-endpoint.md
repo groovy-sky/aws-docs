@@ -1,3 +1,7 @@
+---
+title: "Grant permissions to use EC2 Instance Connect Endpoint"
+---
+
 # Grant permissions to use EC2 Instance Connect Endpoint
 
 By default, IAM entities don't have permission to create, describe, or modify
@@ -278,9 +282,11 @@ JSON
 
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Connect using a
 private IP and EC2 Instance Connect Endpoint
 
 Security groups
+
+All content copied from https://docs.aws.amazon.com/.

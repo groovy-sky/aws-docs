@@ -1,3 +1,7 @@
+---
+title: "Detailed performance statistics for Amazon EC2 instance store volumes"
+---
+
 # Detailed performance statistics for Amazon EC2 instance store volumes
 
 Amazon EC2 provides real-time, high-resolution performance statistics for NVMe instance store volumes
@@ -124,8 +128,10 @@ example:
 .\nvme_amzn.exe stats --details disk_number
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Initialize instance store volumes
 
 Root volumes
+
+All content copied from https://docs.aws.amazon.com/.

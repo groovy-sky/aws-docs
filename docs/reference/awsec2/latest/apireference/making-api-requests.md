@@ -1,3 +1,7 @@
+---
+title: "Making requests to the Amazon EC2 API"
+---
+
 # Making requests to the Amazon EC2 API
 
 ###### Important
@@ -55,8 +59,10 @@ started.
 
 For more information, see [Create Amazon EC2 resources using an AWS SDK](../../../ec2/latest/devguide/sdk-general-information-section.md) in the _Amazon EC2 Developer Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 VpnTunnelOptionsSpecification
 
 Query requests
+
+All content copied from https://docs.aws.amazon.com/.

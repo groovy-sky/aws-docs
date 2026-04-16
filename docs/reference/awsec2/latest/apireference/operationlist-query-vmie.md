@@ -1,3 +1,7 @@
+---
+title: "VM Import/Export actions"
+---
+
 # VM Import/Export actions
 
 The following API actions are available for VM Import/Export. For more information, see the
@@ -36,8 +40,10 @@ documentation](../../../../services/vm-import/latest/userguide.md).
 
 - [ImportVolume](api-importvolume.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AWS Verified Access actions
 
 Amazon VPC actions
+
+All content copied from https://docs.aws.amazon.com/.

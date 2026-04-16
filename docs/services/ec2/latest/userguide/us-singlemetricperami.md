@@ -1,3 +1,7 @@
+---
+title: "Aggregate statistics by AMI"
+---
+
 # Aggregate statistics by AMI
 
 You can aggregate statistics by AMI for your instances that have detailed monitoring enabled.
@@ -68,8 +72,10 @@ percentage for the EC2 instances running the specified AMI.
 }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Aggregate statistics by Auto Scaling group
 
 View monitoring graphs
+
+All content copied from https://docs.aws.amazon.com/.

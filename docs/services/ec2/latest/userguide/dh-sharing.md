@@ -1,3 +1,7 @@
+---
+title: "Cross-account Amazon EC2 Dedicated Host sharing"
+---
+
 # Cross-account Amazon EC2 Dedicated Host sharing
 
 Dedicated Host sharing enables Dedicated Host owners to share their Dedicated Hosts with other AWS accounts or
@@ -141,8 +145,10 @@ the same consumers.
 
 For more information, see [Amazon EC2 Dedicated Host recovery](dedicated-hosts-recovery.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Migrate to Nitro-based Amazon EC2 Dedicated Hosts
 
 Share a Dedicated Host
+
+All content copied from https://docs.aws.amazon.com/.

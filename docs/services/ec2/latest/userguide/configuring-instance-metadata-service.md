@@ -1,3 +1,7 @@
+---
+title: "Use the Instance Metadata Service to access instance metadata"
+---
+
 # Use the Instance Metadata Service to access instance metadata
 
 You can access instance metadata from a running instance using one of the following
@@ -924,9 +928,11 @@ If access to instance tags in the instance metadata is turned on, you can get th
 tags for a instance from instance metadata. For more information, see
 [Retrieve tags from instance metadata](work-with-tags-in-imds.md#retrieve-tags-from-IMDS).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Access instance metadata
 
 Transition to
 IMDSv2
+
+All content copied from https://docs.aws.amazon.com/.

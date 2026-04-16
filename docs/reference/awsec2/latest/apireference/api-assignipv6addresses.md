@@ -1,3 +1,7 @@
+---
+title: "AssignIpv6Addresses"
+---
+
 # AssignIpv6Addresses
 
 Assigns the specified IPv6 addresses to the specified network interface. You can
@@ -184,8 +188,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/assignipv6addresses.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ApplySecurityGroupsToClientVpnTargetNetwork
 
 AssignPrivateIpAddresses
+
+All content copied from https://docs.aws.amazon.com/.

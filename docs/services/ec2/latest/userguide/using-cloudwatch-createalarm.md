@@ -1,3 +1,7 @@
+---
+title: "Create a CloudWatch alarm for an instance"
+---
+
 # Create a CloudWatch alarm for an instance
 
 You can create a CloudWatch alarm that monitors CloudWatch metrics for one of your instances. CloudWatch
@@ -48,8 +52,10 @@ want to delete your alarm, you can do so from the CloudWatch console. For more i
 [Edit or delete a\
 CloudWatch alarm](../../../amazoncloudwatch/latest/monitoring/manage-cloudwatch-alarm.md#Edit-CloudWatch-Alarm) in the _Amazon CloudWatch User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 View monitoring graphs
 
 Create alarms that stop, terminate, reboot, or recover an instance
+
+All content copied from https://docs.aws.amazon.com/.

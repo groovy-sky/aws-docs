@@ -1,3 +1,7 @@
+---
+title: "Unlimited mode examples for burstable instances"
+---
+
 # Unlimited mode examples for burstable instances
 
 The following examples explain credit use for instances that are configured as
@@ -74,7 +78,7 @@ example, the instance is idle and CPU utilization is 0%. During this time, the
 instance earns 144 credits, which it uses to pay down the
 `CPUSurplusCreditBalance`.
 
-![The t3 instance earned 144 credits after 24 hours.](../../../images/awsec2/latest/userguide/images/t3-unlimited-graph-png.md)
+![The t3 instance earned 144 credits after 24 hours.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/t3_unlimited_graph.png)
 
 ## Example 2: Explain credit use with T2 Unlimited
 
@@ -127,7 +131,7 @@ credits every 5 minutes), which it uses to pay down the
 accrue earned credits in its `CPUCreditBalance` at 0.25 credits every 5
 minutes.
 
-![Graphed CPU utilization of a t2.nano instance launched as unlimited.](../../../images/awsec2/latest/userguide/images/t2-unlimited-graph-png.md)
+![Graphed CPU utilization of a t2.nano instance launched as unlimited.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/t2_unlimited_graph.png)
 
 ###### Calculating the bill (Linux instance)
 
@@ -136,7 +140,7 @@ credits between 01:55 and 02:20, which is equivalent to 0.42 vCPU-hours. Additio
 for this instance are 0.42 vCPU-hours x $0.05/vCPU-hour = $0.021, rounded to $0.02. Here
 is the month-end bill for this T2 Unlimited instance:
 
-![Example bill for a T2 Unlimited instance.](../../../images/awsec2/latest/userguide/images/t2-unlimited-bill-linux-png.md)
+![Example bill for a T2 Unlimited instance.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/t2_unlimited_bill_linux.png)
 
 ###### Calculating the bill (Windows instance)
 
@@ -145,13 +149,15 @@ credits between 01:55 and 02:20, which is equivalent to 0.42 vCPU-hours. Additio
 for this instance are 0.42 vCPU-hours x $0.096/vCPU-hour = $0.04032, rounded to $0.04.
 Here is the month-end bill for this T2 Unlimited instance:
 
-![Example bill for a T2 Unlimited instance.](../../../images/awsec2/latest/userguide/images/t2-unlimited-bill-windows-png.md)
+![Example bill for a T2 Unlimited instance.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/t2_unlimited_bill_windows.png)
 
 You can set billing alerts to be notified every hour of any accruing charges, and
 take action if required.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Concepts
 
 Standard mode
+
+All content copied from https://docs.aws.amazon.com/.

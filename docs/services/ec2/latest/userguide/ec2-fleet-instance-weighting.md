@@ -1,3 +1,7 @@
+---
+title: "Use instance weighting to manage cost and performance of your EC2 Fleet or Spot Fleet"
+---
+
 # Use instance weighting to manage cost and performance of your EC2 Fleet or Spot Fleet
 
 With instance weighting, you assign a weight to each instance type in your EC2 Fleet or
@@ -140,9 +144,11 @@ The fleet would launch four instances (30 divided by 8, result rounded up). With
 three pools, and the fourth instance in whichever of the three pools provides the lowest
 price per unit.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Attribute-based instance type selection
 
 Allocation
 strategies
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Recycle Bin"
+---
+
 # Recycle Bin
 
 The following API actions are available for Recycle Bin. For more information, see the
@@ -22,8 +26,10 @@ documentation](../../../../services/ebs/latest/userguide/recycle-bin.md).
 
 - [RestoreImageFromRecycleBin](api-restoreimagefromrecyclebin.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AWS PrivateLink actions
 
 AWS Site-to-Site VPN actions
+
+All content copied from https://docs.aws.amazon.com/.

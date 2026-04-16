@@ -1,3 +1,7 @@
+---
+title: "Create alarms that stop, terminate, reboot, or recover an instance"
+---
+
 # Create alarms that stop, terminate, reboot, or recover an instance
 
 Using Amazon CloudWatch alarm actions, you can create alarms that automatically stop, terminate,
@@ -90,7 +94,7 @@ on instance store volumes is lost when the instance is terminated or stopped.
 3. Select the instance and choose **Actions**, **Monitor**
 **and troubleshoot**, **Manage CloudWatch alarms**.
 
-Alternatively, you can choose the plus sign ( ![Plus sign.](../../../images/awsec2/latest/userguide/images/add-plus-png.md) ) in the **Alarm status** column.
+Alternatively, you can choose the plus sign ( ![Plus sign.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/add-plus.png) ) in the **Alarm status** column.
 
 4. On the **Manage CloudWatch alarms** page, do the
     following:
@@ -150,7 +154,7 @@ for an instance, see [Change instance termination protection](using-changingdisa
 3. Select the instance and choose **Actions**, **Monitor**
 **and troubleshoot**, **Manage CloudWatch alarms**.
 
-Alternatively, you can choose the plus sign ( ![Plus sign.](../../../images/awsec2/latest/userguide/images/add-plus-png.md) ) in the **Alarm status** column.
+Alternatively, you can choose the plus sign ( ![Plus sign.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/add-plus.png) ) in the **Alarm status** column.
 
 4. On the **Manage CloudWatch alarms** page, do the
     following:
@@ -224,7 +228,7 @@ alarm](../../../amazoncloudwatch/latest/monitoring/alarmthatsendsemail.md#alarm-
 3. Select the instance and choose **Actions**, **Monitor**
 **and troubleshoot**, **Manage CloudWatch alarms**.
 
-Alternatively, you can choose the plus sign ( ![Plus sign.](../../../images/awsec2/latest/userguide/images/add-plus-png.md) ) in the **Alarm status** column.
+Alternatively, you can choose the plus sign ( ![Plus sign.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/add-plus.png) ) in the **Alarm status** column.
 
 4. On the **Manage CloudWatch alarms** page, do the
     following:
@@ -315,7 +319,7 @@ alarm](../../../amazoncloudwatch/latest/monitoring/alarmthatsendsemail.md#alarm-
 3. Select the instance and choose **Actions**, **Monitor**
 **and troubleshoot**, **Manage CloudWatch alarms**.
 
-Alternatively, you can choose the plus sign ( ![Plus sign.](../../../images/awsec2/latest/userguide/images/add-plus-png.md) ) in the **Alarm status** column.
+Alternatively, you can choose the plus sign ( ![Plus sign.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/add-plus.png) ) in the **Alarm status** column.
 
 4. On the **Manage CloudWatch alarms** page, do the
     following:
@@ -355,8 +359,10 @@ Alternatively, you can choose the plus sign ( ![Plus sign.](../../../images/awse
 
 7. Choose **Create**.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create an alarm
 
 Amazon CloudWatch alarm action scenarios
+
+All content copied from https://docs.aws.amazon.com/.

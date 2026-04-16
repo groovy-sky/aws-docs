@@ -1,3 +1,7 @@
+---
+title: "Create a Spot Fleet"
+---
+
 # Create a Spot Fleet
 
 Using the AWS Management Console, you can quickly create a Spot Fleet request by choosing only an AMI and
@@ -473,8 +477,10 @@ parameter.
 -SpotFleetRequestConfig_ReplaceUnhealthyInstance $true
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Spot Fleet permissions
 
 Tag a Spot Fleet
+
+All content copied from https://docs.aws.amazon.com/.

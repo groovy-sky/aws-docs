@@ -1,3 +1,7 @@
+---
+title: "Get EC2 instance recommendations from Compute Optimizer"
+---
+
 # Get EC2 instance recommendations from Compute Optimizer
 
 AWS Compute Optimizer provides Amazon EC2 recommendations to help you improve performance, save
@@ -128,8 +132,10 @@ validate whether the recommended instance type meets the performance requirement
 workload. We also recommend rigorous load and performance testing before and after making
 any changes.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 EC2 instance type finder
 
 Instance type changes
+
+All content copied from https://docs.aws.amazon.com/.

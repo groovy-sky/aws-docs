@@ -1,3 +1,7 @@
+---
+title: "Enable enhanced networking on your instance"
+---
+
 # Enable enhanced networking on your instance
 
 The procedure that you use depends on the operating system of the instance.
@@ -507,8 +511,10 @@ Edit-EC2InstanceAttribute -InstanceId i-1234567890abcdef0 -EnaSupport $false
     `enaSupport` attribute from the instance. Therefore, you can
     use this AMI to launch another instance with ENA enabled by default.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Check whether ENA is enabled
 
 ENA queues
+
+All content copied from https://docs.aws.amazon.com/.

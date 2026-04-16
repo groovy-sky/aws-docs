@@ -1,3 +1,7 @@
+---
+title: "User provided kernels"
+---
+
 # User provided kernels
 
 If you need a custom kernel on your Amazon EC2 instances, you can start with an AMI
@@ -296,8 +300,10 @@ aws ec2 modify-instance-attribute --instance-id instance_id --kernel kernel_id -
 aws ec2 start-instances --instance-ids instance_id --region region
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Configure network interfaces using ec2-net-utils
 
 AL2 AMI release notifications
+
+All content copied from https://docs.aws.amazon.com/.

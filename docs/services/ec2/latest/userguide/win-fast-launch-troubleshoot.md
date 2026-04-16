@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot Windows EC2 Fast Launch"
+---
+
 # Troubleshoot Windows EC2 Fast Launch
 
 ## Troubleshooting scenarios
@@ -103,8 +107,10 @@ policy grants full access to all EC2 Fast Launch resources. To view the permissi
 for this policy, see the [EC2FastLaunchFullAccess](../../../aws-managed-policy/latest/reference/ec2fastlaunchfullaccess.md)
 policy in the _AWS Managed Policy Reference_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Service-linked role
 
 Change the Windows Administrator password
+
+All content copied from https://docs.aws.amazon.com/.

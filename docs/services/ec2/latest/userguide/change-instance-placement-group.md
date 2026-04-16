@@ -1,3 +1,7 @@
+---
+title: "Change the placement for an EC2 instance"
+---
+
 # Change the placement for an EC2 instance
 
 You can change the placement group for an instance as follows:
@@ -93,8 +97,10 @@ Edit-EC2InstancePlacement `
     -GroupName ""
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create a placement group
 
 Delete a placement group
+
+All content copied from https://docs.aws.amazon.com/.

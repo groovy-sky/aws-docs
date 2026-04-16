@@ -1,3 +1,7 @@
+---
+title: "GetSerialConsoleAccessStatus"
+---
+
 # GetSerialConsoleAccessStatus
 
 Retrieves the access status of your account to the EC2 serial console of all instances. By
@@ -76,8 +80,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/getserialconsoleaccessstatus.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 GetSecurityGroupsForVpc
 
 GetSnapshotBlockPublicAccessState
+
+All content copied from https://docs.aws.amazon.com/.

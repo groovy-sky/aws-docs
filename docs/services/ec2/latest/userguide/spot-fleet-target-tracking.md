@@ -1,3 +1,7 @@
+---
+title: "Target tracking scaling: Scale Spot Fleet by targeting a value for a specific metric"
+---
+
 # Target tracking scaling: Scale Spot Fleet by targeting a value for a specific metric
 
 With target tracking scaling, you create a target tracking scaling policy by
@@ -77,9 +81,11 @@ Automatic scaling is not supported for requests of type
 
 2. Create a scaling policy using the [put-scaling-policy](../../../cli/latest/reference/application-autoscaling/put-scaling-policy.md) command.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 IAM
 permissions
 
 Step scaling
+
+All content copied from https://docs.aws.amazon.com/.

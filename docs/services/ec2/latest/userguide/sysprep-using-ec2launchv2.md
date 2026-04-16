@@ -1,3 +1,7 @@
+---
+title: "Create an AMI using Windows Sysprep with EC2Launch v2"
+---
+
 # Create an AMI using Windows Sysprep with EC2Launch v2
 
 When you create an image from an instance with the EC2Launch v2 agent installed, EC2Launch v2
@@ -214,8 +218,10 @@ command:
 "%programfiles%\amazon\ec2launch\ec2launch.exe" sysprep --shutdown=true
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create an AMI using Windows Sysprep
 
 Use Windows Sysprep with EC2Launch
+
+All content copied from https://docs.aws.amazon.com/.

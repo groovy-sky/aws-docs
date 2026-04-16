@@ -1,3 +1,7 @@
+---
+title: "Grant IAM permissions for EC2 Instance Connect"
+---
+
 # Grant IAM permissions for EC2 Instance Connect
 
 To connect to an instance using EC2 Instance Connect, you must create an IAM policy that
@@ -150,9 +154,11 @@ JSON
 
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Prerequisites
 
 Install
 EC2 Instance Connect
+
+All content copied from https://docs.aws.amazon.com/.

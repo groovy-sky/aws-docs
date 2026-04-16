@@ -1,3 +1,7 @@
+---
+title: "Example CLI configurations Spot Fleet"
+---
+
 # Example CLI configurations Spot Fleet
 
 You can define your Spot Fleet configuration in a JSON file, and then reference that file
@@ -858,8 +862,10 @@ see [InstanceRequirements](../../../../reference/awsec2/latest/apireference/api-
 }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Example CLI configurations for EC2 Fleet
 
 Fleet quotas
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Work with Spot Fleet"
+---
+
 # Work with Spot Fleet
 
 To start using a Spot Fleet, create a request that includes the total target capacity for Spot Instances,
@@ -39,8 +43,10 @@ until they're interrupted or you terminate them.
 
 - [Understand automatic scaling for Spot Fleet](spot-fleet-automatic-scaling.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Delete an EC2 Fleet
 
 Spot Fleet request states
+
+All content copied from https://docs.aws.amazon.com/.

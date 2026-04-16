@@ -1,3 +1,7 @@
+---
+title: "CapacityReservationBillingRequest"
+---
+
 # CapacityReservationBillingRequest
 
 Information about a request to assign billing of the unused capacity of a Capacity
@@ -78,8 +82,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/capacityreservationbillingrequest.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CapacityReservation
 
 CapacityReservationCommitmentInfo
+
+All content copied from https://docs.aws.amazon.com/.

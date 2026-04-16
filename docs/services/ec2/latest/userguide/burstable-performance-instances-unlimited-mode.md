@@ -1,3 +1,7 @@
+---
+title: "Unlimited mode for burstable performance instances"
+---
+
 # Unlimited mode for burstable performance instances
 
 A burstable performance instance configured as `unlimited` can sustain high
@@ -55,8 +59,10 @@ T3 instances launched on a Dedicated Host launch as `standard` by default;
 
   - [Example 2: Explain credit use with T2 Unlimited](unlimited-mode-examples.md#t2_unlimited_example)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Key concepts
 
 Concepts
+
+All content copied from https://docs.aws.amazon.com/.

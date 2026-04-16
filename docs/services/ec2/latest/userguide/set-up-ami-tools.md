@@ -1,3 +1,7 @@
+---
+title: "Set up the Amazon EC2 AMI tools"
+---
+
 # Set up the Amazon EC2 AMI tools
 
 You can use the AMI tools to create and manage Amazon S3-backed Linux AMIs. To use the tools,
@@ -212,8 +216,10 @@ To delete a certificate, use the [delete-signing-certificate](../../../cli/lates
 aws iam delete-signing-certificate --user-name user-name --certificate-id OFHPLP4ZULTHYPMSYEX7O4BEXAMPLE
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create an Amazon S3-backed AMI
 
 AMI tools reference
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Configure a Linux AMI to support hibernation"
+---
+
 # Configure a Linux AMI to support hibernation
 
 The following Linux AMIs can support hibernating an Amazon EC2 instance, provided you complete
@@ -411,9 +415,11 @@ Ubuntu 18.04 LTS (Bionic Beaver) AMI.
 [ec2-user ~]$ uname -a
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Prerequisites
 
 Enable instance
 hibernation
+
+All content copied from https://docs.aws.amazon.com/.

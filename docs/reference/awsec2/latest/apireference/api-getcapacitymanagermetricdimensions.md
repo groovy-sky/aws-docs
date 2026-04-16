@@ -1,3 +1,7 @@
+---
+title: "GetCapacityManagerMetricDimensions"
+---
+
 # GetCapacityManagerMetricDimensions
 
 Retrieves the available dimension values for capacity metrics within a specified time range. This is useful for discovering what accounts,
@@ -44,7 +48,7 @@ Array Members: Minimum number of 0 items. Maximum number of 20 items.
 
 Length Constraints: Minimum length of 0. Maximum length of 300.
 
-Valid Values: `resource-region | availability-zone-id | account-id | instance-family | instance-type | instance-platform | reservation-arn | reservation-id | reservation-type | reservation-create-timestamp | reservation-start-timestamp | reservation-end-timestamp | reservation-end-date-type | tenancy | reservation-state | reservation-instance-match-criteria | reservation-unused-financial-owner`
+Valid Values: `resource-region | availability-zone-id | account-id | account-name | instance-family | instance-type | instance-platform | reservation-arn | reservation-id | reservation-type | reservation-create-timestamp | reservation-start-timestamp | reservation-end-timestamp | reservation-end-date-type | tenancy | reservation-state | reservation-instance-match-criteria | reservation-unused-financial-owner`
 
 Required: Yes
 
@@ -111,6 +115,107 @@ Type: String
 
 For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
 
+## Examples
+
+### Example
+
+This example retrieves the available instance families that have unused capacity data in a given time range.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=GetCapacityManagerMetricDimensions
+&GroupBy.1=instanceFamily
+&MetricName.1=reservation-unused-total-capacity-hrs-vcpu
+&StartTime=2024-01-15T00:00:00Z
+&EndTime=2024-01-16T00:00:00Z
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```
+
+<GetCapacityManagerMetricDimensionsResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+    <requestId>d4904fd9-82c2-4ea5-adfe-a9cc3EXAMPLE</requestId>
+    <metricDimensionResultSet>
+        <item>
+            <dimension>
+                <instanceFamily>m5</instanceFamily>
+            </dimension>
+        </item>
+        <item>
+            <dimension>
+                <instanceFamily>c5</instanceFamily>
+            </dimension>
+        </item>
+        <item>
+            <dimension>
+                <instanceFamily>r5</instanceFamily>
+            </dimension>
+        </item>
+    </metricDimensionResultSet>
+</GetCapacityManagerMetricDimensionsResponse>
+```
+
+### Example 2
+
+This example retrieves the unique values of the `environment` tag dimension that have On-Demand usage data in a given time range.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=GetCapacityManagerMetricDimensions
+&GroupBy.1=tag:environment
+&MetricName.1=unreserved-total-usage-hrs-vcpu
+&StartTime=2024-01-15T00:00:00Z
+&EndTime=2024-01-16T00:00:00Z
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```
+
+<GetCapacityManagerMetricDimensionsResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+    <requestId>a1b2c3d4-e5f6-7890-abcd-5678EXAMPLE</requestId>
+    <metricDimensionResultSet>
+        <item>
+            <dimension>
+                <tagSet>
+                    <item>
+                        <key>environment</key>
+                        <value>prod</value>
+                    </item>
+                </tagSet>
+            </dimension>
+        </item>
+        <item>
+            <dimension>
+                <tagSet>
+                    <item>
+                        <key>environment</key>
+                        <value>staging</value>
+                    </item>
+                </tagSet>
+            </dimension>
+        </item>
+        <item>
+            <dimension>
+                <tagSet>
+                    <item>
+                        <key>environment</key>
+                        <value/>
+                    </item>
+                </tagSet>
+            </dimension>
+        </item>
+    </metricDimensionResultSet>
+</GetCapacityManagerMetricDimensionsResponse>
+```
+
 ## See Also
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
@@ -135,8 +240,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/getcapacitymanagermetricdimensions.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 GetCapacityManagerMetricData
 
-GetCapacityReservationUsage
+GetCapacityManagerMonitoredTagKeys
+
+All content copied from https://docs.aws.amazon.com/.

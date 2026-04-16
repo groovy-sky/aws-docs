@@ -1,3 +1,7 @@
+---
+title: "Reset the Windows administrator password for an Amazon EC2 Windows instance"
+---
+
 # Reset the Windows administrator password for an Amazon EC2 Windows instance
 
 If you are no longer able to connect to your Amazon EC2 Windows instance because the Windows
@@ -39,8 +43,10 @@ Systems Manager Run Command](ec2rw-ssm.md).
 
 - [Reset Windows admin password for EC2 instance using EC2Config](resettingadminpassword-ec2config.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Windows instance issues
 
 Reset password using EC2Launch v2
+
+All content copied from https://docs.aws.amazon.com/.

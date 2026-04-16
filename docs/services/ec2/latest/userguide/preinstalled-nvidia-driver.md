@@ -1,3 +1,7 @@
+---
+title: "Use AMIs that include NVIDIA drivers"
+---
+
 # Use AMIs that include NVIDIA drivers
 
 AWS and NVIDIA offer different Amazon Machine Images (AMIs) that come with
@@ -37,8 +41,10 @@ offerings, the AMI must be a standardized image created with
 Windows Sysprep to ensure that the GRID driver works. For more
 information, see [Create an Amazon EC2 AMI using Windows Sysprep](ami-create-win-sysprep.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 NVIDIA drivers
 
 Install public drivers
+
+All content copied from https://docs.aws.amazon.com/.

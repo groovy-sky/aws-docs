@@ -1,3 +1,7 @@
+---
+title: "EC2 Serial Console for instances"
+---
+
 # EC2 Serial Console for instances
 
 With the EC2 serial console, you have access to your Amazon EC2 instance's serial port, which you
@@ -28,8 +32,10 @@ The serial console is available at no additional cost.
 
 - [Troubleshoot your Amazon EC2 instance using the EC2 Serial Console](troubleshoot-using-serial-console.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Troubleshoot using EC2Rescue and Systems Manager
 
 Prerequisites
+
+All content copied from https://docs.aws.amazon.com/.

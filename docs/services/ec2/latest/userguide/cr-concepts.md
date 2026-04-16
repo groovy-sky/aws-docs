@@ -1,3 +1,7 @@
+---
+title: "Concepts for Amazon EC2 Capacity Reservations"
+---
+
 # Concepts for Amazon EC2 Capacity Reservations
 
 The following key concepts apply to Capacity Reservations.
@@ -167,9 +171,11 @@ matching instances will automatically run in the Capacity Reservation, which cou
 unintentional capacity usage and prevent you from launching new instances for the
 full requested instance count.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 On-Demand Capacity Reservations
 
 Pricing and
 billing
+
+All content copied from https://docs.aws.amazon.com/.

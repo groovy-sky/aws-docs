@@ -1,3 +1,7 @@
+---
+title: "Methods for terminating an instance"
+---
+
 # Methods for terminating an instance
 
 ###### Warning
@@ -70,10 +74,12 @@ For instructions on how to use each method, see the following:
 
 - [Force terminate an instance](troubleshootinginstancesshuttingdown.md#force-terminate-ec2-instance)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 How it
 works
 
 Change termination
 protection
+
+All content copied from https://docs.aws.amazon.com/.

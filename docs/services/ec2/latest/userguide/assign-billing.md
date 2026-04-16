@@ -1,3 +1,7 @@
+---
+title: "Billing assignment for shared Amazon EC2 Capacity Reservations"
+---
+
 # Billing assignment for shared Amazon EC2 Capacity Reservations
 
 By default, when a Capacity Reservation is shared, the owner is billed for the instances they run
@@ -145,8 +149,10 @@ organization, or if the Capacity Reservation is no longer shared with them.
 and revoke billing from an assigned account after the request has been
 accepted.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Stop sharing a Capacity Reservation
 
 Assign billing
+
+All content copied from https://docs.aws.amazon.com/.

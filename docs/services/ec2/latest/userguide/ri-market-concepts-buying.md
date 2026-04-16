@@ -1,3 +1,7 @@
+---
+title: "Buy Reserved Instances for Amazon EC2"
+---
+
 # Buy Reserved Instances for Amazon EC2
 
 To buy a Reserved Instance for Amazon EC2, you can use the Amazon EC2 console, a command line tool, or an SDK
@@ -701,8 +705,10 @@ You must renew a Reserved Instance using the Amazon EC2 console.
 5. To complete the order, choose **Order all**, and then
     **Close**.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 How billing works with Reserved Instances
 
 Sell Reserved Instances
+
+All content copied from https://docs.aws.amazon.com/.

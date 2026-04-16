@@ -1,3 +1,7 @@
+---
+title: "Get started with EFA and MPI for HPC workloads on Amazon EC2"
+---
+
 # Get started with EFA and MPI for HPC workloads on Amazon EC2
 
 This tutorial helps you to launch an EFA and MPI-enabled instance cluster for HPC workloads.
@@ -127,7 +131,11 @@ can launch your EFA-enabled instances.
 7. In the **Network settings** section, choose **Edit**,
     and then do the following:
 1. For **Subnet**, choose the subnet in which to launch the
-       instance. If you do not select a subnet, you can't enable the instance for EFA.
+       instance.
+
+      ###### Important
+
+      You must select a subnet. If you do not select a subnet, you can't enable the instance for EFA.
 
 2. For **Firewall (security groups)**, choose **Select**
       **existing security group**, and then select the security group that you
@@ -730,7 +738,11 @@ can create a Capacity Reservation for your cluster placement group. For more inf
 07. In the **Network settings** section, choose **Edit**,
      and then do the following:
     1. For **Subnet**, choose the subnet in which to launch the
-        instance. If you do not select a subnet, you can't enable the instance for EFA.
+        instance.
+
+       ###### Important
+
+       You must select a subnet. If you do not select a subnet, you can't enable the instance for EFA.
 
     2. For **Firewall (security groups)**, choose **Select**
        **existing security group**, and then select the security group that you
@@ -832,8 +844,10 @@ $ ssh member_node_private_ip
 
 You should connect to the member node without being prompted for a key or password.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Elastic Fabric Adapter
 
 Get started with EFA and NCCL
+
+All content copied from https://docs.aws.amazon.com/.

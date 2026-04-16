@@ -1,3 +1,7 @@
+---
+title: "ProvisionIpamPoolCidr"
+---
+
 # ProvisionIpamPoolCidr
 
 Provision a CIDR to an IPAM pool. You can use this action to provision new CIDRs to a top-level pool or to transfer a CIDR from a top-level pool to a pool within it.
@@ -120,8 +124,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/provisionipampoolcidr.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ProvisionIpamByoasn
 
 ProvisionPublicIpv4PoolCidr
+
+All content copied from https://docs.aws.amazon.com/.

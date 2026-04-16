@@ -1,3 +1,7 @@
+---
+title: "Connect to your Amazon EC2 instance using Session Manager"
+---
+
 # Connect to your Amazon EC2 instance using Session Manager
 
 Session Manager is a fully-managed AWS Systems Manager capability for managing your Amazon EC2 instances
@@ -28,7 +32,7 @@ Session Manager](../../../systems-manager/latest/userguide/session-manager-getti
 
 5. Choose **Connect** to start the session.
 
-![The Connect button on the Session Manager tab.](../../../images/awsec2/latest/userguide/images/connect-method-session-manager-png.md)
+![The Connect button on the Session Manager tab.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/connect-method-session-manager.png)
 
 ###### Troubleshooting
 
@@ -38,9 +42,11 @@ you must update your policies to allow you to start sessions from the Amazon EC2
 console. For more information and instructions, see [Quickstart default IAM policies for Session Manager](../../../systems-manager/latest/userguide/getting-started-restrict-access-quickstart.md) in the
 _AWS Systems Manager User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Transfer files using RDP
 
 Connect using a public IP and
 EC2 Instance Connect
+
+All content copied from https://docs.aws.amazon.com/.

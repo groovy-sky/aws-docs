@@ -1,3 +1,7 @@
+---
+title: "Requirements to launch an EC2 instance in UEFI boot mode"
+---
+
 # Requirements to launch an EC2 instance in UEFI boot mode
 
 The boot mode of an instance is determined by the configuration of the AMI, the operating system
@@ -57,8 +61,10 @@ the boot mode support of the instance type (column 3).
 
 AMI boot mode parameterOperating system boot mode configurationInstance type boot mode supportResulting instance boot modeUEFIUEFIUEFIUEFILegacy BIOSLegacy BIOSLegacy BIOSLegacy BIOSUEFI PreferredUEFIUEFIUEFIUEFI PreferredUEFIUEFI and Legacy BIOSUEFIUEFI PreferredLegacy BIOSLegacy BIOSLegacy BIOSUEFI PreferredLegacy BIOSUEFI and Legacy BIOSLegacy BIOSNo boot mode specified - ARMUEFIUEFIUEFINo boot mode specified - x86Legacy BIOSUEFI and Legacy BIOSLegacy BIOS
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Boot modes
 
 AMI boot mode parameter
+
+All content copied from https://docs.aws.amazon.com/.

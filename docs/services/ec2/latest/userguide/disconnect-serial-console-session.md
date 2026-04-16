@@ -1,3 +1,7 @@
+---
+title: "Disconnect from the EC2 Serial Console"
+---
+
 # Disconnect from the EC2 Serial Console
 
 If you no longer need to be connected to your instance's EC2 Serial Console, you can
@@ -34,9 +38,11 @@ connection. This command must be run immediately following a new line.
 The command that you use for closing an SSH connection might be different depending on the
 SSH client that you're using.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Connect to the EC2 Serial Console
 
 Troubleshoot your instance
 using the EC2 Serial Console
+
+All content copied from https://docs.aws.amazon.com/.

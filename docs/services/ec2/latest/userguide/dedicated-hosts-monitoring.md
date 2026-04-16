@@ -1,3 +1,7 @@
+---
+title: "Monitor the state of your Amazon EC2 Dedicated Hosts"
+---
+
 # Monitor the state of your Amazon EC2 Dedicated Hosts
 
 Amazon EC2 constantly monitors the state of your Dedicated Hosts. Updates are communicated on the
@@ -58,8 +62,10 @@ this state.`released-permanent-failure`AWS permanently releases Dedicated Hosts 
 have running instances on them. The Dedicated Host ID is no longer available
 for use.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Configure host maintenance
 
 Track configuration changes
+
+All content copied from https://docs.aws.amazon.com/.

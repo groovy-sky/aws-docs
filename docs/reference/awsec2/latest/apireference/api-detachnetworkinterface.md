@@ -1,3 +1,7 @@
+---
+title: "DetachNetworkInterface"
+---
+
 # DetachNetworkInterface
 
 Detaches a network interface from an instance.
@@ -118,8 +122,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/detachnetworkinterface.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DetachInternetGateway
 
 DetachVerifiedAccessTrustProvider
+
+All content copied from https://docs.aws.amazon.com/.

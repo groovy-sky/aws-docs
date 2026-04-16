@@ -1,3 +1,7 @@
+---
+title: "Compute PCR measurements for a custom AMI"
+---
+
 # Compute PCR measurements for a custom AMI
 
 The `nitro-tpm-pcr-compute` utility enables you to generate the reference measurements
@@ -57,8 +61,10 @@ The utility returns the reference measurements in the following JSON format:
 For a practical example of how to use the `nitro-tpm-pcr-compute` utility,
 see the `edit_boot_install.sh` script included in the [sample Amazon Linux 2023 image description](build-sample-ami.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Customize the sample image description
 
 Prepare AWS KMS for attestation
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "EBS cards"
+---
+
 # EBS cards
 
 Most instance types support one EBS card. Instance types that support multiple EBS cards
@@ -16,10 +20,12 @@ be attached to EBS card index 0.
 The following instance types support multiple EBS cards. For information about the number
 of Amazon EBS volumes that an instance type supports, see [Amazon EBS volume limits for Amazon EC2 instances](volume-limits.md).
 
-Instance TypeNumber of EBS cards**General Purpose**m8gb.48xlarge2m8gb.metal-48xl2**Compute Optimized**c8gb.48xlarge2c8gb.metal-48xl2**Memory Optimized**r8gb.48xlarge2r8gb.metal-48xl2
+Instance TypeNumber of EBS cards**General Purpose**m8gb.48xlarge2m8gb.metal-48xl2m8gn.48xlarge2m8gn.metal-48xl2**Compute Optimized**c8gb.48xlarge2c8gb.metal-48xl2c8gn.48xlarge2c8gn.metal-48xl2**Memory Optimized**r8gb.48xlarge2r8gb.metal-48xl2r8gn.48xlarge2r8gn.metal-48xl2
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 EBS volume limits
 
 Amazon EC2 instance store
+
+All content copied from https://docs.aws.amazon.com/.

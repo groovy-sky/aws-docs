@@ -1,3 +1,7 @@
+---
+title: "Get statistics for a specific instance"
+---
+
 # Get statistics for a specific instance
 
 You can use the AWS Management Console or the AWS CLI to get statistics for a specific instance. The following examples show you how to use the AWS Management Console or the AWS CLI to determine the
@@ -28,13 +32,13 @@ more information, see [Manage detailed monitoring for your EC2 instances](manage
     the pencil icon. To change the time range, select one of the predefined values or choose
     **custom**.
 
-![Graph a single metric](../../../images/awsec2/latest/userguide/images/metric-statistics-ec2-instance-png.md)
+![Graph a single metric](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/metric_statistics_ec2_instance.png)
 
 6. To change the statistic or the period for the metric, choose the **Graphed**
 **metrics** tab. Choose the column heading or an individual value, and then
     choose a different value.
 
-![Change the statistic or period for a metric](../../../images/awsec2/latest/userguide/images/metric-statistics-ec2-instance-statistic-period-png.md)
+![Change the statistic or period for a metric](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/metric_statistics_ec2_instance_statistic_period.png)
 
 ###### To get the CPU utilization for a specific instance (AWS CLI)
 
@@ -80,8 +84,10 @@ percentage for a single EC2 instance.
 }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Statistics for metrics
 
 Aggregate statistics across instances
+
+All content copied from https://docs.aws.amazon.com/.

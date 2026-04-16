@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 macOS AMIs release notes"
+---
+
 # Amazon EC2 macOS AMIs release notes
 
 The following information provides details about the packages included by default in the EC2 macOS AMIs and summarizes the changes for each EC2 macOS AMI release.
@@ -591,8 +595,10 @@ ReleaseChanges2026.03.17
 
 - [Security content of Safari 17.4.1](https://support.apple.com/en-us/120888)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Retrieve macOS AMI IDs
 
 EBS optimization
+
+All content copied from https://docs.aws.amazon.com/.

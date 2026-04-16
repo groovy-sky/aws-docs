@@ -1,3 +1,7 @@
+---
+title: "Configure the host maintenance setting for an Amazon EC2 Dedicated Host"
+---
+
 # Configure the host maintenance setting for an Amazon EC2 Dedicated Host
 
 Enable host maintenance to ensure that your instances running on a Dedicated Host are
@@ -87,8 +91,10 @@ Edit-EC2Host `
     -HostId h-0d123456bbf78910d
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 How host maintenance works
 
 Monitor Dedicated Hosts
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Manage the IPv4 addresses for your EC2 instances"
+---
+
 # Manage the IPv4 addresses for your EC2 instances
 
 You can assign a public IPv4 address to your instance when you launch it. You can view
@@ -301,8 +305,10 @@ instance.
 Invoke-RestMethod http://169.254.169.254/latest/meta-data/public-ipv4
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Instance IP addressing
 
 IPv6 addresses
+
+All content copied from https://docs.aws.amazon.com/.

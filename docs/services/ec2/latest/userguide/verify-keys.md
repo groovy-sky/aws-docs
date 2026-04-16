@@ -1,3 +1,7 @@
+---
+title: "Verify the fingerprint of your key pair"
+---
+
 # Verify the fingerprint of your key pair
 
 To verify the fingerprint of your key pair, compare the fingerprint displayed on the
@@ -114,8 +118,10 @@ ssh-keygen -ef path_to_private_key -m PEM | openssl rsa -RSAPublicKey_in -outfor
 ssh-keygen -l -f path_to_private_key
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Add or replace a public key on your Linux instance
 
 Security groups
+
+All content copied from https://docs.aws.amazon.com/.

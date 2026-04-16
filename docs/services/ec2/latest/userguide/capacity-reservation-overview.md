@@ -1,3 +1,7 @@
+---
+title: "On-Demand Capacity Reservations and Capacity Blocks for ML"
+---
+
 # On-Demand Capacity Reservations and Capacity Blocks for ML
 
 Capacity Reservations allow you to reserve compute capacity for Amazon EC2 instances in a specific Availability Zone.
@@ -45,8 +49,10 @@ fine-tuning ML models, short experimentation runs, and handling temporary surges
 demand in the future. With Capacity Blocks, you can ensure that you'll have access to GPU resources
 on a specific date to run your ML workloads.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Change the tenancy of a VPC
 
 On-Demand Capacity Reservations
+
+All content copied from https://docs.aws.amazon.com/.

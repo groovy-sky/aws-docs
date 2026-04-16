@@ -1,3 +1,7 @@
+---
+title: "DescribeBundleTasks"
+---
+
 # DescribeBundleTasks
 
 Describes the specified bundle tasks or all of your bundle tasks.
@@ -173,8 +177,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describebundletasks.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeAwsNetworkPerformanceMetricSubscriptions
 
 DescribeByoipCidrs
+
+All content copied from https://docs.aws.amazon.com/.

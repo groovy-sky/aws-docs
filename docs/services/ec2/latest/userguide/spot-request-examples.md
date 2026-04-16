@@ -1,3 +1,7 @@
+---
+title: "Spot Instance request example launch specifications"
+---
+
 # Spot Instance request example launch specifications
 
 The following examples show launch configurations that you can use with the [request-spot-instances](../../../cli/latest/reference/ec2/request-spot-instances.md) command to create a Spot Instance request. For more
@@ -124,8 +128,10 @@ A Dedicated Spot Instance must be launched in a VPC.
 }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create a Spot Instance request
 
 Get the status of a Spot Instance request
+
+All content copied from https://docs.aws.amazon.com/.

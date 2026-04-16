@@ -1,3 +1,7 @@
+---
+title: "Add optional Windows Server components to Amazon EC2 Windows instances"
+---
+
 # Add optional Windows Server components to Amazon EC2 Windows instances
 
 To access and install the optional components, you must find the correct EBS snapshot for
@@ -261,8 +265,10 @@ Do not initialize the volume.
     the volume from your instance. After you detach the volume, you can use the [Remove-EC2Volume](../../../powershell/latest/reference/items/remove-ec2volume.md) cmdlet to
     delete the volume.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Change the Windows Administrator password
 
 Install WSL on Windows
+
+All content copied from https://docs.aws.amazon.com/.

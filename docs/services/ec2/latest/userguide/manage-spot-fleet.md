@@ -1,3 +1,7 @@
+---
+title: "Describe a Spot Fleet request, its instances, and event history"
+---
+
 # Describe a Spot Fleet request, its instances, and event history
 
 You can describe your Spot Fleet configuration, the instances in your Spot Fleet, and the event
@@ -88,8 +92,10 @@ Get-EC2SpotFleetRequestHistory `
     -UtcStartTime 2024-05-18T00:00:00Z
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Tag a Spot Fleet
 
 Modify a Spot Fleet request
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Windows launch agents on Amazon EC2 Windows instances"
+---
+
 # Windows launch agents on Amazon EC2 Windows instances
 
 Each AWS Windows AMI includes a Windows launch agent that's pre-configured with default
@@ -55,8 +59,10 @@ EC2Config documentation is provided for historical reference only. The operating
 versions it runs on are no longer supported by Microsoft. We strongly recommend that
 you upgrade to the latest launch service.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Configure Windows instances
 
 Configure DNS Suffix
+
+All content copied from https://docs.aws.amazon.com/.

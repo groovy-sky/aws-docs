@@ -1,3 +1,7 @@
+---
+title: "EC2 Fleet request states"
+---
+
 # EC2 Fleet request states
 
 An EC2 Fleet request can be one of various states, with each state indicating a different
@@ -45,8 +49,10 @@ remains in this state until all instances are terminated.
 The EC2 Fleet request is deleted and has no running instances. The request is deleted two days
 after its instances are terminated.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Work with EC2 Fleet
 
 EC2 Fleet prerequisites
+
+All content copied from https://docs.aws.amazon.com/.

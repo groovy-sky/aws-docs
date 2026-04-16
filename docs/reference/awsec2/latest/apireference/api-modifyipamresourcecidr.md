@@ -1,3 +1,7 @@
+---
+title: "ModifyIpamResourceCidr"
+---
+
 # ModifyIpamResourceCidr
 
 Modify a resource CIDR. You can use this action to transfer resource CIDRs between scopes and ignore resource CIDRs that you do not want to manage. If set to false, the resource will not be tracked for overlap, it cannot be auto-imported into a pool, and it will be removed from any pool it has an allocation in.
@@ -110,8 +114,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifyipamresourcecidr.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ModifyIpamPrefixListResolverTarget
 
 ModifyIpamResourceDiscovery
+
+All content copied from https://docs.aws.amazon.com/.

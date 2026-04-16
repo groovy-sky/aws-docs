@@ -1,3 +1,7 @@
+---
+title: "AdvertiseByoipCidr"
+---
+
 # AdvertiseByoipCidr
 
 Advertises an IPv4 or IPv6 address range that is provisioned for use with your AWS resources through
@@ -111,8 +115,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/advertisebyoipcidr.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AcceptVpcPeeringConnection
 
 AllocateAddress
+
+All content copied from https://docs.aws.amazon.com/.

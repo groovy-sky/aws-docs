@@ -1,3 +1,7 @@
+---
+title: "Integrating with AWS KMS"
+---
+
 # Integrating with AWS KMS
 
 Your instance should have an application that can make AWS KMS API requests with the Attestation Document retrieved from the
@@ -21,8 +25,10 @@ For more information, see the [Cryptographic attestation for NitroTPM](../../../
 If you are attesting to a third-party service, you must build your own custom mechanisms for receiving,
 parsing, and validating Attestation Documents. For more information, see [Validate a NitroTPM Attestation Document](nitrotpm-attestation-document-validate.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Validate Attestation Document
 
 Isolate data from your own operators
+
+All content copied from https://docs.aws.amazon.com/.

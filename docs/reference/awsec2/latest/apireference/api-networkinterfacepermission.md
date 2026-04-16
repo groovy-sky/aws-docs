@@ -1,3 +1,7 @@
+---
+title: "NetworkInterfacePermission"
+---
+
 # NetworkInterfacePermission
 
 Describes a permission for a network interface.
@@ -64,8 +68,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/networkinterfacepermission.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 NetworkInterfaceIpv6Address
 
 NetworkInterfacePermissionState
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "IpamPrefixListResolverVersionEntry"
+---
+
 # IpamPrefixListResolverVersionEntry
 
 Describes a CIDR entry in a specific version of an IPAM prefix list resolver. This represents a CIDR that was selected and synchronized at a particular point in time.
@@ -22,8 +26,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ipamprefixlistresolverversionentry.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 IpamPrefixListResolverVersion
 
 IpamPublicAddressSecurityGroup
+
+All content copied from https://docs.aws.amazon.com/.

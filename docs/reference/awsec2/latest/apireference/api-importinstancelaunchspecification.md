@@ -1,3 +1,7 @@
+---
+title: "ImportInstanceLaunchSpecification"
+---
+
 # ImportInstanceLaunchSpecification
 
 Describes the launch specification for VM import.
@@ -110,8 +114,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/importinstancelaunchspecification.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ImportImageTask
 
 ImportInstanceTaskDetails
+
+All content copied from https://docs.aws.amazon.com/.

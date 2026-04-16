@@ -1,3 +1,7 @@
+---
+title: "AddressTransfer"
+---
+
 # AddressTransfer
 
 Details on the Elastic IP address transfer. For more information, see [Transfer Elastic IP addresses](../../../../services/vpc/latest/userguide/vpc-eips.md#transfer-EIPs-intro) in the _Amazon VPC User Guide_.
@@ -66,8 +70,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/addresstransfer.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AddressAttribute
 
 AllowedPrincipal
+
+All content copied from https://docs.aws.amazon.com/.

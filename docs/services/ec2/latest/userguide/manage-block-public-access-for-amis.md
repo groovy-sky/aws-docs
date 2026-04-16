@@ -1,3 +1,7 @@
+---
+title: "Manage the block public access setting for AMIs"
+---
+
 # Manage the block public access setting for AMIs
 
 You can manage the block public access setting for your AMIs to control whether
@@ -451,8 +455,10 @@ eu-west-3      unblocked
 ...
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Block public access for AMIs
 
 Share an AMI with organizations and organizational units
+
+All content copied from https://docs.aws.amazon.com/.

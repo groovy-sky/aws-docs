@@ -1,3 +1,7 @@
+---
+title: "Add instance store volumes to an EC2 instance during launch"
+---
+
 # Add instance store volumes to an EC2 instance during launch
 
 When you launch an instance type with **non-NVMe instance store volumes**,
@@ -106,8 +110,10 @@ $sdd.VirtualName = "ephemeral1"
 $bdm += $sdd
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Add instance store volumes to an AMI
 
 Make instance store volumes available for use
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Create an Amazon EBS-backed AMI"
+---
+
 # Create an Amazon EBS-backed AMI
 
 You can create your own Amazon EBS-backed AMI from an Amazon EC2 instance or from a snapshot of the
@@ -35,7 +39,7 @@ running EC2 instance: Start with an existing AMI, launch an instance, customize 
 create a new AMI from it, and finally launch an instance of your new AMI. The
 numbers in the diagram match the numbers in the description that follows.
 
-![Workflow for creating an AMI from an instance](../../../images/awsec2/latest/userguide/images/running-instance-png.md)
+![Workflow for creating an AMI from an instance](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/running-instance.png)
 
 **1 – AMI #1: Start with an existing**
 **AMI**
@@ -442,8 +446,10 @@ Register-EC2Image `
     -BlockDeviceMapping @{DeviceName="/dev/xvda";Ebs=$block}
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AMI lifecycle
 
 Create an Amazon S3-backed AMI
+
+All content copied from https://docs.aws.amazon.com/.

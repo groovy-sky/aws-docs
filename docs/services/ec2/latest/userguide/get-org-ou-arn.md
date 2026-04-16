@@ -1,3 +1,7 @@
+---
+title: "Get the ARN of an organization or organizational unit"
+---
+
 # Get the ARN of an organization or organizational unit
 
 The organization and the organizational unit ARNs contain the 12-digit management account
@@ -104,8 +108,10 @@ The following is example output.
 arn:aws:organizations::123456789012:ou/o-1234567abc/ou-a123-b4567890
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Share an AMI with organizations and organizational units
 
 Allow organizations and OUs to use a KMS key
+
+All content copied from https://docs.aws.amazon.com/.

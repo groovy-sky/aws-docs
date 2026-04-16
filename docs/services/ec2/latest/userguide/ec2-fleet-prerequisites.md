@@ -1,3 +1,7 @@
+---
+title: "EC2 Fleet prerequisites"
+---
+
 # EC2 Fleet prerequisites
 
 ###### To create an EC2 Fleet, the following prerequisites must be in  place:
@@ -218,8 +222,10 @@ in the _IAM User Guide_.
 
 - (Not recommended) Attach a policy directly to a user or add a user to a user group. Follow the instructions in [Adding permissions to a user (console)](../../../iam/latest/userguide/id-users-change-permissions.md#users_change_permissions-add-console) in the _IAM User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 EC2 Fleet request states
 
 Create an EC2 Fleet
+
+All content copied from https://docs.aws.amazon.com/.

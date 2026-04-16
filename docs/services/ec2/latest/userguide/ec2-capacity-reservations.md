@@ -1,3 +1,7 @@
+---
+title: "Reserve compute capacity with EC2 On-Demand Capacity Reservations"
+---
+
 # Reserve compute capacity with EC2 On-Demand Capacity Reservations
 
 Amazon EC2 Capacity Reservations allow you to reserve compute capacity for your Amazon EC2 instances in a specific
@@ -297,8 +301,10 @@ _vCPUs_).
 - You can request future-dated Capacity Reservations for instance types in the following series only:
 C, G, I, M, R, and T.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Capacity Reservations
 
 Concepts
+
+All content copied from https://docs.aws.amazon.com/.

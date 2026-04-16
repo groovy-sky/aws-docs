@@ -1,3 +1,7 @@
+---
+title: "Configure access to the EC2 Serial Console"
+---
+
 # Configure access to the EC2 Serial Console
 
 To configure access to the serial console, you must grant serial console access at the
@@ -514,8 +518,10 @@ New password:
 
 4. At the prompt, re-enter the password.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Prerequisites
 
 Connect to the EC2 Serial Console
+
+All content copied from https://docs.aws.amazon.com/.

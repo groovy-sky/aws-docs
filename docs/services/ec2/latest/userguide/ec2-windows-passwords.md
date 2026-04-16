@@ -1,3 +1,7 @@
+---
+title: "Change the Windows Administrator password for your Amazon EC2 instance"
+---
+
 # Change the Windows Administrator password for your Amazon EC2 instance
 
 If you launch your instance from an AWS Windows AMI, the launch agents that are pre-installed
@@ -47,8 +51,10 @@ net user Administrator "new_password"
 If you lose your password or it expires, you can generate a new password. For password
 reset procedures, see [Reset the Windows administrator password for an Amazon EC2 Windows instance](resettingadminpassword.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Troubleshoot EC2 Fast Launch
 
 Add Windows System components
+
+All content copied from https://docs.aws.amazon.com/.

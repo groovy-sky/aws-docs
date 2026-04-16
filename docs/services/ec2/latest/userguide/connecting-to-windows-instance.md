@@ -1,3 +1,7 @@
+---
+title: "Connect to your Windows instance using RDP"
+---
+
 # Connect to your Windows instance using RDP
 
 You can connect to Amazon EC2 instances created from most Windows Amazon Machine Images (AMIs) using
@@ -24,8 +28,10 @@ configuration, and other issues for instances built on the [AWS Nitro System](ht
 
 - [Transfer files to a Windows instance using RDP](connect-to-linux-instancewindowsfiletransfer.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Manage Linux system users
 
 Connect using an RDP client
+
+All content copied from https://docs.aws.amazon.com/.

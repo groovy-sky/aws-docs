@@ -1,3 +1,7 @@
+---
+title: "Configure .NET proxy settings for the EC2Config service"
+---
+
 # Configure .NET proxy settings for the EC2Config service
 
 You can configure the EC2Config service to communicate through a proxy using one of
@@ -139,8 +143,10 @@ Group Policy settings on the instance.
 9. Specify address and port information and then choose
     **OK**.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Install EC2Config
 
 Set EC2Config service properties
+
+All content copied from https://docs.aws.amazon.com/.

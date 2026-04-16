@@ -1,10 +1,14 @@
+---
+title: "State changes for a Spot request"
+---
+
 # State changes for a Spot request
 
 The following diagram shows you the paths that your Spot request can follow throughout its
 lifecycle, from submission to termination. Each step is depicted as a node, and the
 status code for each node describes the status of the Spot request and Spot Instance.
 
-![Life cycle of a Spot Instance request.](../../../images/awsec2/latest/userguide/images/spot-request-status-diagram-png.md)
+![Life cycle of a Spot Instance request.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/spot-request-status-diagram.png)
 
 ###### Pending evaluation
 
@@ -165,8 +169,10 @@ When your Spot Instances are terminated (either by you or Amazon EC2), if the Sp
 is a persistent request, it returns to the `pending-evaluation` state
 and then Amazon EC2 can launch a new Spot Instance when the constraints are met.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Get the status of a Spot Instance request
 
 Tag Spot Instance requests
+
+All content copied from https://docs.aws.amazon.com/.

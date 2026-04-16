@@ -1,3 +1,7 @@
+---
+title: "AMI types and characteristics in Amazon EC2"
+---
+
 # AMI types and characteristics in Amazon EC2
 
 When you launch an instance, the AMI that you choose must be compatible with the instance
@@ -159,9 +163,11 @@ still see performance advantages in storage and network I/O by using them. With 
 on HVM drivers, HVM guests can get the same, or better, performance than paravirtual
 guests.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Amazon Machine Images
 
 Identify the AMI root volume
 type
+
+All content copied from https://docs.aws.amazon.com/.

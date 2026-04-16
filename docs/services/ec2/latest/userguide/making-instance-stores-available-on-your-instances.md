@@ -1,3 +1,7 @@
+---
+title: "Make instance store volume available for use on an EC2 instance"
+---
+
 # Make instance store volume available for use on an EC2 instance
 
 After you launch an instance with attached instance store volumes, you must mount the
@@ -103,8 +107,10 @@ see [List non-NVMe disks](windows-list-disks.md#windows-disks).
 
 9. Choose **Next**, **Finish**.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Add instance store volumes to an instance
 
 Enable swap volume for M1 and C1 instances
+
+All content copied from https://docs.aws.amazon.com/.

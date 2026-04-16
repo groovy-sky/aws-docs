@@ -1,3 +1,7 @@
+---
+title: "Stop or terminate your Amazon EC2 Mac instance"
+---
+
 # Stop or terminate your Amazon EC2 Mac instance
 
 When you stop a Mac instance, the instance remains in the `stopping` state
@@ -43,8 +47,10 @@ release the host until the allocation period exceeds the 24-hour minimum.
 
 6. When prompted for confirmation, choose **Release**.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Increase size of EBS volume
 
 Configure SIP settings
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Best practices for Amazon EC2"
+---
+
 # Best practices for Amazon EC2
 
 To ensure the maximum benefit from Amazon EC2, we recommend that you perform the
@@ -85,8 +89,10 @@ If you use a smaller value, there is a risk that the TTL will expire while
 application traffic is in transit, causing reachability issues for your
 instances.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Get started tutorial
 
 Amazon Machine Images
+
+All content copied from https://docs.aws.amazon.com/.

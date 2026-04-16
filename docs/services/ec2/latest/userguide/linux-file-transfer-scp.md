@@ -1,3 +1,7 @@
+---
+title: "Transfer files to a Linux instance using SCP"
+---
+
 # Transfer files to a Linux instance using SCP
 
 One way to transfer files between your local computer and a Linux instance is to use
@@ -109,8 +113,10 @@ my-file.txt                                100%   480     24.4KB/s   00:00
      scp -i /path/key-pair-name.pem ec2-user@\[2001:db8::1234:5678:1.2.3.4\]:path/my-file.txt path/my-file2.txt
      ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Connect using PuTTY
 
 Manage Linux system users
+
+All content copied from https://docs.aws.amazon.com/.

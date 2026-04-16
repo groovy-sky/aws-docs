@@ -1,3 +1,7 @@
+---
+title: "Filter"
+---
+
 # Filter
 
 A filter name and value pair that is used to return a more specific list of results from a describe operation.
@@ -60,8 +64,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/filter.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 FederatedAuthenticationRequest
 
 FilterPortRange
+
+All content copied from https://docs.aws.amazon.com/.

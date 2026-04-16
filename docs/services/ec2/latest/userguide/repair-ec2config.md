@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot issues with the EC2Config launch agent"
+---
+
 # Troubleshoot issues with the EC2Config launch agent
 
 The following information can help you troubleshoot issues with the EC2Config
@@ -120,8 +124,10 @@ instance that is inaccessible using Remote Desktop.
 23. Delete or stop the temporary instance you created in this
      procedure.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Set EC2Config service properties
 
 Version history
+
+All content copied from https://docs.aws.amazon.com/.

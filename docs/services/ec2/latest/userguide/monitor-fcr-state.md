@@ -1,3 +1,7 @@
+---
+title: "Monitor state changes for future-dated Capacity Reservations"
+---
+
 # Monitor state changes for future-dated Capacity Reservations
 
 Amazon EC2 sends an event to Amazon EventBridge when the state of a future-dated Capacity Reservation changes.
@@ -85,8 +89,10 @@ future-dated Capacity Reservation enters the `active` state.
 }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Monitor underutilization
 
 Interruptible Capacity Reservations
+
+All content copied from https://docs.aws.amazon.com/.

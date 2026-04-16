@@ -1,3 +1,7 @@
+---
+title: "Capacity Reservation Fleets"
+---
+
 # Capacity Reservation Fleets
 
 An _On-Demand Capacity Reservation Fleet_ is a group of Capacity Reservations.
@@ -95,9 +99,11 @@ There are no additional charges for using Capacity Reservation Fleets. You are b
 individual Capacity Reservations that are created by your Capacity Reservation Fleets. For more information about how
 Capacity Reservations are billed, see [Capacity Reservation pricing and billing](capacity-reservations-pricing-billing.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Monitor
 requests
 
 Concepts and planning
+
+All content copied from https://docs.aws.amazon.com/.

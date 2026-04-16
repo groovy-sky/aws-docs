@@ -1,3 +1,7 @@
+---
+title: "Optimize network performance on EC2 Windows instances"
+---
+
 # Optimize network performance on EC2 Windows instances
 
 To achieve the maximum network performance on your Windows instances with enhanced networking,
@@ -66,9 +70,11 @@ Special note for SQL workloads: We also recommend that you review your I/O threa
 affinity settings along with your elastic network interface RSS configuration to minimize I/O and network
 contention for the same CPUs. See [Server configuration: affinity mask](https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/affinity-mask-server-configuration-option).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Nitro performance
 considerations
 
 Elastic Fabric Adapter
+
+All content copied from https://docs.aws.amazon.com/.

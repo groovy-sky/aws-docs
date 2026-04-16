@@ -1,3 +1,7 @@
+---
+title: "Manage Amazon EC2 instances scheduled to stop or retire"
+---
+
 # Manage Amazon EC2 instances scheduled to stop or retire
 
 When AWS detects irreparable failure of the underlying host for your instance,
@@ -58,9 +62,11 @@ actions:
 
 For more information about the actions you can take, see [Instance retirement](instance-retirement.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Scheduled events
 
 Manage instances scheduled
 for reboot
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Monitor Capacity Reservations usage with CloudWatch metrics"
+---
+
 # Monitor Capacity Reservations usage with CloudWatch metrics
 
 With CloudWatch metrics, you can efficiently monitor your Capacity Reservations and identify unused capacity
@@ -101,7 +105,7 @@ dimensions. You can use the following procedures to view the metrics for your Ca
     [https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch).
 
 2. If necessary, change the Region. From the navigation bar, select the
-    Region where your Capacity Reservation resides. For more information, see [Regions and Endpoints](../../../../general/general/latest/gr/rande.md).
+    Region where your Capacity Reservation resides. For more information, see [Regions and Endpoints](../../../../general/latest/gr/rande.md).
 
 3. In the navigation pane, choose **Metrics**.
 
@@ -130,9 +134,11 @@ Use the following [list-metrics](../../../cli/latest/reference/cloudwatch/list-m
 aws cloudwatch list-metrics --namespace "AWS/EC2CapacityReservations"
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Using service-linked
 roles
 
 Monitor underutilization
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot issues with Amazon EC2 instances"
+---
+
 # Troubleshoot issues with Amazon EC2 instances
 
 The following procedures and tips can help you troubleshoot issues with your Amazon EC2
@@ -37,8 +41,10 @@ instances.
 
 - [Send diagnostic interrupts](diagnostic-interrupt.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Inventory your EC2 instances
 
 Instance launch issues
+
+All content copied from https://docs.aws.amazon.com/.

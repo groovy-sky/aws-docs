@@ -1,3 +1,7 @@
+---
+title: "Create custom event windows for scheduled events that affect your Amazon EC2 instances"
+---
+
 # Create custom event windows for scheduled events that affect your Amazon EC2 instances
 
 You can define custom event windows that recur weekly for scheduled events that
@@ -881,8 +885,10 @@ Remove-EC2InstanceEventWindow `
     -ForceDelete $true
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Reschedule scheduled events
 
 Monitor your instances using CloudWatch
+
+All content copied from https://docs.aws.amazon.com/.

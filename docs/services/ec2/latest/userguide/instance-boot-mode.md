@@ -1,3 +1,7 @@
+---
+title: "Determine the boot mode of an EC2 instance"
+---
+
 # Determine the boot mode of an EC2 instance
 
 The boot mode of an instance is displayed in the **Boot mode** field in the Amazon EC2 console, and by the
@@ -87,8 +91,10 @@ InstanceType            : c5a.large
 ImageId                 : ami-0abcdef1234567890
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Instance type boot mode
 
 Operating system boot mode
+
+All content copied from https://docs.aws.amazon.com/.

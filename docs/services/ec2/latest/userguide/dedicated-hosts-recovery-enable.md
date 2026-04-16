@@ -1,3 +1,7 @@
+---
+title: "Manage Amazon EC2 Dedicated Host recovery"
+---
+
 # Manage Amazon EC2 Dedicated Host recovery
 
 Dedicated Host auto recovery restarts your instances on to a new replacement host when certain
@@ -114,8 +118,10 @@ Edit-EC2Host `
     -HostId h-012a3456b7890cdef
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 How host recovery works
 
 View host recovery setting
+
+All content copied from https://docs.aws.amazon.com/.

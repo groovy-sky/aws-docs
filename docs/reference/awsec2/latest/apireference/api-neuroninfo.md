@@ -1,3 +1,7 @@
+---
+title: "NeuronInfo"
+---
+
 # NeuronInfo
 
 Describes the neuron accelerators for the instance type.
@@ -31,8 +35,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/neuroninfo.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 NeuronDeviceMemoryInfo
 
 NewDhcpConfiguration
+
+All content copied from https://docs.aws.amazon.com/.

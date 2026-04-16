@@ -1,3 +1,7 @@
+---
+title: "Standard mode for burstable performance instances"
+---
+
 # Standard mode for burstable performance instances
 
 A burstable performance instance configured as `standard` is suited to
@@ -39,8 +43,10 @@ depleted. For more information, see [Key concepts for burstable performance inst
 
     - [Period 7: 91 – 96 hours](standard-mode-examples.md#period-7)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Examples
 
 Concepts
+
+All content copied from https://docs.aws.amazon.com/.

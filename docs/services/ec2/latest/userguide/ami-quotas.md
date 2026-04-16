@@ -1,3 +1,7 @@
+---
+title: "AMI quotas in Amazon EC2"
+---
+
 # AMI quotas in Amazon EC2
 
 The following quotas apply to creating and sharing AMIs. The quotas apply per
@@ -60,8 +64,10 @@ set to the new value.
 
 For more information, see the [Service Quotas User Guide](../../../servicequotas/latest/userguide/request-quota-increase.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Verify AMI charges on your bill
 
 Instances
+
+All content copied from https://docs.aws.amazon.com/.

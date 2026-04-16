@@ -1,3 +1,7 @@
+---
+title: "Manage device drivers for your EC2 instance"
+---
+
 # Manage device drivers for your EC2 instance
 
 Device drivers are software components that communicate with the virtualized hardware for
@@ -51,8 +55,10 @@ _Amazon EBS User Guide_.
 
 - For Windows instances, see [AWS NVMe drivers](aws-nvme-drivers.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Creating a data export
 
 AMD drivers
+
+All content copied from https://docs.aws.amazon.com/.

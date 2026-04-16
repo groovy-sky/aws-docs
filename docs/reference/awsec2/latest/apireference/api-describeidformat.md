@@ -1,3 +1,7 @@
+---
+title: "DescribeIdFormat"
+---
+
 # DescribeIdFormat
 
 Describes the ID format settings for your resources on a per-Region basis, for example, to view which resource types are enabled for longer IDs. This request only returns information about resource types whose ID formats can be modified; it does not return information about other resource types.
@@ -226,8 +230,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describeidformat.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeIdentityIdFormat
 
 DescribeImageAttribute
+
+All content copied from https://docs.aws.amazon.com/.

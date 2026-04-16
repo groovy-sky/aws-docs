@@ -1,3 +1,7 @@
+---
+title: "Capacity Reservations in Local Zones"
+---
+
 # Capacity Reservations in Local Zones
 
 A Local Zone is an extension of an AWS Region that is geographically close to your
@@ -40,9 +44,11 @@ _User Guide_.
     the specification (either `open` or target it by ID) that's required
     for the Capacity Reservation that you created in the Local Zone. For more information, see [Launch instances into an existing Capacity Reservation](capacity-reservations-launch.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Using Capacity Reservation in cluster placement groups
 with a Capacity Reservation group
 
 Capacity Reservations in Wavelength Zones
+
+All content copied from https://docs.aws.amazon.com/.

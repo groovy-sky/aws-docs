@@ -1,3 +1,7 @@
+---
+title: "Supported CPU options for Amazon EC2 instance types"
+---
+
 # Supported CPU options for Amazon EC2 instance types
 
 The following tables list the instance types that support specifying CPU
@@ -41,8 +45,10 @@ Instance typeDefault vCPUsDefault CPU coresDefault threads per coreValid CPU cor
 
 Instance typeDefault vCPUsDefault CPU coresDefault threads per coreValid CPU coresValid threads per core`hpc6id.32xlarge`646414, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 641`hpc8a.96xlarge`192192124, 48, 72, 96, 120, 144, 168, 1921
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Rules for specifying CPU options
 
 Specify CPU options
+
+All content copied from https://docs.aws.amazon.com/.

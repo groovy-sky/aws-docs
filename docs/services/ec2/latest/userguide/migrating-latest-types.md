@@ -1,3 +1,7 @@
+---
+title: "Migrate an EC2 Windows instance to a Nitro-based instance type"
+---
+
 # Migrate an EC2 Windows instance to a Nitro-based instance type
 
 The AWS Windows AMIs are configured with the default settings used by the Microsoft
@@ -382,8 +386,10 @@ with the `ssm.*` endpoints.
     an online upgrade, and up to 25 minutes to complete an offline
     upgrade.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Perform an automated upgrade
 
 Troubleshoot an upgrade
+
+All content copied from https://docs.aws.amazon.com/.

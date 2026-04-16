@@ -1,3 +1,7 @@
+---
+title: "Get the NitroTPM Attestation Document"
+---
+
 # Get the NitroTPM Attestation Document
 
 The Attestation Document is a key component of the NitroTPM attestation process. It contains a series
@@ -72,8 +76,10 @@ Use the following command and optional parameters:
 For a complete example that shows how to generate an RSA key pair, and how to request an attestation
 with the public key, see the [nitro-tpm-attest GitHub repo](https://github.com/aws/NitroTPM-Tools).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Prepare AWS KMS for attestation
 
 NitroTPM Attestation Document
+
+All content copied from https://docs.aws.amazon.com/.

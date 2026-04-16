@@ -1,3 +1,7 @@
+---
+title: "Configure EC2Launch v2 settings for Windows instances"
+---
+
 # Configure EC2Launch v2 settings for Windows instances
 
 This section contains information about how to configure settings for EC2Launch v2.
@@ -33,7 +37,7 @@ receive an error. For example schema, see [Example: agent-config.yml](#ec2launch
 **Sysprep**, make sure that you save any changes that you want
     to apply when you run the shutdown.
 
-![EC2 Launch settings application.](../../../images/awsec2/latest/userguide/images/ec2launchv2-settings-png.md)
+![EC2 Launch settings application.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ec2launchv2-settings.png)
 
 3. On the **General** tab of the **EC2Launch**
 **settings** dialog box, you can enable or disable the following
@@ -130,7 +134,7 @@ receive an error. For example schema, see [Example: agent-config.yml](#ec2launch
     the variables `$REGION` and `$AZ`. Only suffixes that
     do not already exist will be added to the list.
 
-![EC2 Launch settings application.](../../../images/awsec2/latest/userguide/images/ec2launchv2-dns-png.md)
+![EC2 Launch settings application.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ec2launchv2-dns.png)
 
 5. On the **Wallpaper** tab, you can configure your instance
     wallpaper with a background image, and specify instance details for the
@@ -174,7 +178,7 @@ You must enable tags in metadata to show tags on the wallpaper. For more
 information about instance tags and metadata, see
 [View tags for your EC2 instances using instance metadata](work-with-tags-in-imds.md).
 
-![EC2 Launch settings Wallpaper tab.](../../../images/awsec2/latest/userguide/images/ec2launchv2-wallpaper-02-png.md)
+![EC2 Launch settings Wallpaper tab.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ec2launchv2-wallpaper-02.png)
 
 6. On the **Volumes** tab, select whether you want to
     initialize the volumes that are attached to the instance. Enabling sets
@@ -197,7 +201,7 @@ information about instance tags and metadata, see
     table, or the first 4 KB of the disk contain data, then the disk is skipped
     and the action logged.
 
-![EC2 Launch settings application.](../../../images/awsec2/latest/userguide/images/ec2launchv2-volumes-png.md)
+![EC2 Launch settings application.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ec2launchv2-volumes.png)
 
 ## Configure EC2Launch v2 using the CLI
 
@@ -877,8 +881,10 @@ If you create an AMI from an instance after updating its settings, the new
 settings are applied to any instance that's launched from the new AMI. For
 information about creating an AMI, see [Create an Amazon EBS-backed AMI](creating-an-ami-ebs.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Install EC2Launch v2
 
 Task definitions
+
+All content copied from https://docs.aws.amazon.com/.

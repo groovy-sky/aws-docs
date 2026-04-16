@@ -1,3 +1,7 @@
+---
+title: "Burstable T3 instances on Amazon EC2 Dedicated Hosts"
+---
+
 # Burstable T3 instances on Amazon EC2 Dedicated Hosts
 
 Dedicated Hosts support burstable performance T3 instances. T3 instances provide a
@@ -55,8 +59,10 @@ monitor the vCPU utilization of a Dedicated Host. The metric is available in the
 `EC2` namespace and `Per-Host-Metrics` dimension. For more
 information, see [Dedicated Host metrics](viewing-metrics-with-cloudwatch.md#dh-metrics).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Instance capacity configurations
 
 Bring your own licenses
+
+All content copied from https://docs.aws.amazon.com/.

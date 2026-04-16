@@ -1,3 +1,7 @@
+---
+title: "Launch an EC2 instance using the launch instance wizard in the console"
+---
+
 # Launch an EC2 instance using the launch instance wizard in the console
 
 You can launch an Amazon EC2 instance using the launch instance wizard in the Amazon EC2 console.
@@ -170,8 +174,10 @@ If the instance fails to launch or the state immediately goes to
      information, see [Creating a billing alarm to monitor your estimated AWS charges](../../../amazoncloudwatch/latest/monitoring/monitor-estimated-charges-with-cloudwatch.md) in
      the _Amazon CloudWatch User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Instance parameter reference
 
 Launch using a launch template
+
+All content copied from https://docs.aws.amazon.com/.

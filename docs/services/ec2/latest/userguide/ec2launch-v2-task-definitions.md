@@ -1,3 +1,7 @@
+---
+title: "Task definitions for EC2Launch v2 startup tasks"
+---
+
 # Task definitions for EC2Launch v2 startup tasks
 
 Each task that EC2Launch v2 runs during launch or startup has its own set of properties
@@ -873,8 +877,10 @@ inputs:
   content: Windows Has Booted
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Configure EC2Launch v2
 
 Troubleshoot EC2Launch v2
+
+All content copied from https://docs.aws.amazon.com/.

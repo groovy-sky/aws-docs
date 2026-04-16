@@ -1,3 +1,7 @@
+---
+title: "Deregister an Amazon EC2 AMI"
+---
+
 # Deregister an Amazon EC2 AMI
 
 When you deregister an AMI, Amazon EC2 permanently deletes it. After you deregister an AMI, you can't
@@ -174,8 +178,10 @@ use for that bucket, you can [delete the bucket](../../../s3/latest/userguide/de
 [terminate](terminating-instances.md#terminating-instances-console) them.
 To list the instances, filter by the ID of the AMI.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Disable an AMI
 
 Protect an AMI from deregistration
+
+All content copied from https://docs.aws.amazon.com/.

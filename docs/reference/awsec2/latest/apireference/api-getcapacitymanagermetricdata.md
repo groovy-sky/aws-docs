@@ -1,3 +1,7 @@
+---
+title: "GetCapacityManagerMetricData"
+---
+
 # GetCapacityManagerMetricData
 
 Retrieves capacity usage metrics for your EC2 resources. Returns time-series data for metrics like unused capacity, utilization rates, and costs
@@ -44,7 +48,7 @@ Array Members: Minimum number of 0 items. Maximum number of 20 items.
 
 Length Constraints: Minimum length of 0. Maximum length of 300.
 
-Valid Values: `resource-region | availability-zone-id | account-id | instance-family | instance-type | instance-platform | reservation-arn | reservation-id | reservation-type | reservation-create-timestamp | reservation-start-timestamp | reservation-end-timestamp | reservation-end-date-type | tenancy | reservation-state | reservation-instance-match-criteria | reservation-unused-financial-owner`
+Valid Values: `resource-region | availability-zone-id | account-id | account-name | instance-family | instance-type | instance-platform | reservation-arn | reservation-id | reservation-type | reservation-create-timestamp | reservation-start-timestamp | reservation-end-timestamp | reservation-end-date-type | tenancy | reservation-state | reservation-instance-match-criteria | reservation-unused-financial-owner`
 
 Required: No
 
@@ -120,6 +124,108 @@ Type: String
 
 For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
 
+## Examples
+
+### Example
+
+This example retrieves hourly unused capacity metrics grouped by instance family for a specific time range.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=GetCapacityManagerMetricData
+&MetricName.1=reservation-unused-total-capacity-hrs-vcpu
+&StartTime=2024-01-15T00:00:00Z
+&EndTime=2024-01-16T00:00:00Z
+&Period=3600
+&GroupBy.1=instanceFamily
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```
+
+<GetCapacityManagerMetricDataResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+    <requestId>d4904fd9-82c2-4ea5-adfe-a9cc3EXAMPLE</requestId>
+    <metricDataResultSet>
+        <item>
+            <dimension>
+                <instanceFamily>m5</instanceFamily>
+            </dimension>
+            <timestamp>2024-01-15T00:00:00.000Z</timestamp>
+            <metricValueSet>
+                <item>
+                    <metric>reservation-unused-total-capacity-hrs-vcpu</metric>
+                    <value>150.0</value>
+                </item>
+            </metricValueSet>
+        </item>
+        <item>
+            <dimension>
+                <instanceFamily>c5</instanceFamily>
+            </dimension>
+            <timestamp>2024-01-15T00:00:00.000Z</timestamp>
+            <metricValueSet>
+                <item>
+                    <metric>reservation-unused-total-capacity-hrs-vcpu</metric>
+                    <value>75.5</value>
+                </item>
+            </metricValueSet>
+        </item>
+    </metricDataResultSet>
+</GetCapacityManagerMetricDataResponse>
+```
+
+### Example 2
+
+This example retrieves On-Demand usage metrics grouped by the `environment` tag dimension and filtered to only production resources.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=GetCapacityManagerMetricData
+&MetricName.1=unreserved-total-usage-hrs-vcpu
+&StartTime=2024-01-15T00:00:00Z
+&EndTime=2024-01-16T00:00:00Z
+&Period=3600
+&GroupBy.1=tag:environment
+&FilterBy.1.DimensionCondition.Dimension=tag:environment
+&FilterBy.1.DimensionCondition.Comparison=equals
+&FilterBy.1.DimensionCondition.Value.1=prod
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```
+
+<GetCapacityManagerMetricDataResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+    <requestId>a1b2c3d4-e5f6-7890-abcd-1234EXAMPLE</requestId>
+    <metricDataResultSet>
+        <item>
+            <dimension>
+                <tagSet>
+                    <item>
+                        <key>environment</key>
+                        <value>prod</value>
+                    </item>
+                </tagSet>
+            </dimension>
+            <timestamp>2024-01-15T00:00:00.000Z</timestamp>
+            <metricValueSet>
+                <item>
+                    <metric>unreserved-total-usage-hrs-vcpu</metric>
+                    <value>320.0</value>
+                </item>
+            </metricValueSet>
+        </item>
+    </metricDataResultSet>
+</GetCapacityManagerMetricDataResponse>
+```
+
 ## See Also
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
@@ -144,8 +250,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/getcapacitymanagermetricdata.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 GetCapacityManagerAttributes
 
 GetCapacityManagerMetricDimensions
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "ResetAddressAttribute"
+---
+
 # ResetAddressAttribute
 
 Resets the attribute of the specified IP address. For requirements, see [Using reverse DNS for email applications](../../../../services/ec2/latest/userguide/elastic-ip-addresses-eip.md#Using_Elastic_Addressing_Reverse_DNS).
@@ -78,8 +82,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/resetaddressattribute.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 RequestSpotInstances
 
 ResetEbsDefaultKmsKeyId
+
+All content copied from https://docs.aws.amazon.com/.

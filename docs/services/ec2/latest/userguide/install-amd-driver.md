@@ -1,3 +1,7 @@
+---
+title: "AMD drivers for your EC2 instance"
+---
+
 # AMD drivers for your EC2 instance
 
 An instance with an attached AMD GPU, such as a G4ad instance, must have the
@@ -336,8 +340,10 @@ pnputil /add-driver $home\Desktop\AMD\$KeyPrefix\*.inf /install /subdirs
 8. To help take advantage of the four displays of up to 4K resolution, set up
     the high-performance display protocol, [Amazon DCV](../../../dcv/index.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Manage device drivers
 
 NVIDIA drivers
+
+All content copied from https://docs.aws.amazon.com/.

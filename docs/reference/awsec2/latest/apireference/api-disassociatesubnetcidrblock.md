@@ -1,3 +1,7 @@
+---
+title: "DisassociateSubnetCidrBlock"
+---
+
 # DisassociateSubnetCidrBlock
 
 Disassociates a CIDR block from a subnet. Currently, you can disassociate an IPv6 CIDR block only. You must detach or delete all gateways and resources that are associated with the CIDR block before you can disassociate it.
@@ -95,8 +99,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/disassociatesubnetcidrblock.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DisassociateSecurityGroupVpc
 
 DisassociateTransitGatewayMulticastDomain
+
+All content copied from https://docs.aws.amazon.com/.

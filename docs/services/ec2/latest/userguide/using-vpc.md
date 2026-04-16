@@ -1,3 +1,7 @@
+---
+title: "Virtual private clouds for your EC2 instances"
+---
+
 # Virtual private clouds for your EC2 instances
 
 Amazon Virtual Private Cloud (Amazon VPC) enables you to define a virtual network in your own logically isolated
@@ -30,7 +34,7 @@ internet gateway attached to the VPC, and there's a route in the main route tabl
 sends all traffic (0.0.0.0/0) to the internet gateway. You can modify the configuration
 of your default VPCs as needed. For example, you can add subnets and route tables.
 
-![We create a default VPC in each Region, with a default subnet in each Availability Zone.](../../../images/awsec2/latest/userguide/images/default-vpc-png.md)
+![We create a default VPC in each Region, with a default subnet in each Availability Zone.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/default-vpc.png)
 
 ## Nondefault VPCs
 
@@ -110,8 +114,10 @@ in the _Amazon VPC User Guide_.
 An EC2 instance launched in an IPv6-only subnet receives an IPv6 address but not an IPv4 address.
 Any instances that you launch into an IPv6-only subnet must be [Nitro-based instances](instance-types.md#instance-hypervisor-type).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Set the MTU for your instances
 
 Secondary Networks
+
+All content copied from https://docs.aws.amazon.com/.

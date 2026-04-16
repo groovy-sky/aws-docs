@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 service quotas"
+---
+
 # Amazon EC2 service quotas
 
 When you create your AWS account, we set default _quotas_ (also
@@ -16,7 +20,7 @@ time that you'll need them.
 
 ###### Related quota documentation
 
-- [Amazon EC2 endpoints and quotas](../../../../general/general/latest/gr/ec2-service.md)
+- [Amazon EC2 endpoints and quotas](../../../../general/latest/gr/ec2-service.md)
 
 - [Amazon EC2 instance type quotas](../instancetypes/ec2-instance-quotas.md)
 
@@ -93,8 +97,10 @@ network interface exists.
 [RFC\
 4193](https://datatracker.ietf.org/doc/html/rfc4193).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 View tags using instance metadata
 
 Monitor resources
+
+All content copied from https://docs.aws.amazon.com/.

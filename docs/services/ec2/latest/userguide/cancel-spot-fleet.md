@@ -1,3 +1,7 @@
+---
+title: "Cancel (delete) a Spot Fleet request"
+---
+
 # Cancel (delete) a Spot Fleet request
 
 If you no longer require a Spot Fleet, you can cancel the Spot Fleet request, which deletes the
@@ -139,9 +143,11 @@ Stop-EC2SpotFleetRequest `
     -TerminateInstance $false
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Modify a Spot Fleet request
 
 Automatic scaling for
 Spot Fleet
+
+All content copied from https://docs.aws.amazon.com/.

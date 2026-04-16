@@ -1,3 +1,7 @@
+---
+title: "Savings from purchasing Spot Instances"
+---
+
 # Savings from purchasing Spot Instances
 
 You can view the usage and savings information for Spot Instances at the per-fleet level, or
@@ -8,7 +12,7 @@ information from the last hour or the last three days.
 The following screenshot from the **Savings** section shows the Spot usage
 and savings information for a Spot Fleet.
 
-![The Savings section on the Spot Fleet details page.](../../../images/awsec2/latest/userguide/images/spot-savings-png.md)
+![The Savings section on the Spot Fleet details page.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/spot-savings.png)
 
 You can view the following usage and savings information:
 
@@ -76,8 +80,10 @@ Alternatively, select the checkbox next to the Spot Fleet request ID and choose 
 
 3. Choose **Savings summary**.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 View pricing history
 
 Create a Spot Instance request
+
+All content copied from https://docs.aws.amazon.com/.

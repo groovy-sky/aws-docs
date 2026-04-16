@@ -1,3 +1,7 @@
+---
+title: "AttachVpnGateway"
+---
+
 # AttachVpnGateway
 
 Attaches an available virtual private gateway to a VPC. You can attach one virtual private
@@ -112,8 +116,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/attachvpngateway.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AttachVolume
 
 AuthorizeClientVpnIngress
+
+All content copied from https://docs.aws.amazon.com/.

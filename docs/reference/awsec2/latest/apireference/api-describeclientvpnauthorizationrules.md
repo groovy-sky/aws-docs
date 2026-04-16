@@ -1,3 +1,7 @@
+---
+title: "DescribeClientVpnAuthorizationRules"
+---
+
 # DescribeClientVpnAuthorizationRules
 
 Describes the authorization rules for a specified Client VPN endpoint.
@@ -141,8 +145,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describeclientvpnauthorizationrules.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeClassicLinkInstances
 
 DescribeClientVpnConnections
+
+All content copied from https://docs.aws.amazon.com/.

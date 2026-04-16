@@ -1,3 +1,7 @@
+---
+title: "DescribeTransitGatewayAttachments"
+---
+
 # DescribeTransitGatewayAttachments
 
 Describes one or more attachments between resources and transit gateways. By default, all attachments are described.
@@ -123,8 +127,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describetransitgatewayattachments.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeTrafficMirrorTargets
 
 DescribeTransitGatewayConnectPeers
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Track Amazon EC2 Dedicated Host configuration changes using AWS Config"
+---
+
 # Track Amazon EC2 Dedicated Host configuration changes using AWS Config
 
 You can use AWS Config to record configuration changes for Dedicated Hosts, and for instances that are
@@ -100,8 +104,10 @@ _Developer Guide_.
 
 - Amazon EC2 API: [GetResourceConfigHistory](../../../../reference/config/latest/apireference/api-getresourceconfighistory.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Monitor Dedicated Hosts
 
 Dedicated Instances
+
+All content copied from https://docs.aws.amazon.com/.

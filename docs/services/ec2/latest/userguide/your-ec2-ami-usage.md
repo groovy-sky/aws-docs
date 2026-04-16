@@ -1,3 +1,7 @@
+---
+title: "View your AMI usage"
+---
+
 # View your AMI usage
 
 If you share your Amazon Machine Images (AMIs) with other AWS accounts—whether with
@@ -640,8 +644,10 @@ AWS Region.
 
 DescriptionQuotaIn-progress ( `pending`) AMI usage reports per AWS account2,000In-progress ( `pending`) AMI usage reports per AMI1
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AMI usage
 
 Check when an AMI was last used
+
+All content copied from https://docs.aws.amazon.com/.

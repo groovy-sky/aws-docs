@@ -1,3 +1,7 @@
+---
+title: "Use the EC2Launch v2 agent to perform tasks during EC2 Windows instance launch"
+---
+
 # Use the EC2Launch v2 agent to perform tasks during EC2 Windows instance launch
 
 All supported instances of Amazon EC2 that are launched from AWS Windows Server 2022 and
@@ -375,8 +379,10 @@ msiexec /i ".\AmazonEC2Launch.msi" Remove="Telemetry" /q
 
 - [EC2Launch v2 version histories](ec2launchv2-versions.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Windows Service administration
 
 Install EC2Launch v2
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "AssociateClientVpnTargetNetwork"
+---
+
 # AssociateClientVpnTargetNetwork
 
 Associates a target network with a Client VPN endpoint. A target network is a subnet in a VPC. You can associate multiple subnets from the same VPC with a Client VPN endpoint. You can associate only one subnet in each Availability Zone. We recommend that you associate at least two subnets to provide Availability Zone redundancy.
@@ -120,8 +124,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/associateclientvpntargetnetwork.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AssociateCapacityReservationBillingOwner
 
 AssociateDhcpOptions
+
+All content copied from https://docs.aws.amazon.com/.

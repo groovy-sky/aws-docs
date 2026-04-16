@@ -1,3 +1,7 @@
+---
+title: "View AMIs with EC2 Fast Launch enabled"
+---
+
 # View AMIs with EC2 Fast Launch enabled
 
 You can use the [describe-fast-launch-images](../../../cli/latest/reference/ec2/describe-fast-launch-images.md) command in the AWS CLI, or the [Get-EC2FastLaunchImage](../../../powershell/latest/reference/items/get-ec2fastlaunchimage.md)
@@ -108,8 +112,10 @@ StateTransitionReason : Client.UserInitiated
 StateTransitionTime   : 2/25/2022 12:54:43 PM
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Configure EC2 Fast Launch settings
 
 Manage resource costs
+
+All content copied from https://docs.aws.amazon.com/.

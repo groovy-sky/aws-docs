@@ -1,3 +1,7 @@
+---
+title: "DisableFastSnapshotRestoreSuccessItem"
+---
+
 # DisableFastSnapshotRestoreSuccessItem
 
 Describes fast snapshot restores that were successfully disabled.
@@ -118,8 +122,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/disablefastsnapshotrestoresuccessitem.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DisableFastSnapshotRestoreStateErrorItem
 
 DiskImage
+
+All content copied from https://docs.aws.amazon.com/.

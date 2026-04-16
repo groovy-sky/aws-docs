@@ -1,3 +1,7 @@
+---
+title: "Verify if automatic instance recovery occurred"
+---
+
 # Verify if automatic instance recovery occurred
 
 If your instance appears to have been offline and then unexpectedly rebooted, it might
@@ -79,8 +83,10 @@ underlying hardware or software issue.
 
 For more information, see [Automatic instance recovery](ec2-instance-recover.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Automatic instance recovery
 
 Simplified automatic recovery
+
+All content copied from https://docs.aws.amazon.com/.

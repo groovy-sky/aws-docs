@@ -1,3 +1,7 @@
+---
+title: "Use paid support for supported AWS Marketplace offerings"
+---
+
 # Use paid support for supported AWS Marketplace offerings
 
 Amazon EC2 also enables developers to offer support for software (or
@@ -42,8 +46,10 @@ Edit-EC2ImageAttribute `
     -ProductCode "cdef1234abc567def8EXAMPLE"
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Retrieve the product code
 
 Manage your subscriptions
+
+All content copied from https://docs.aws.amazon.com/.

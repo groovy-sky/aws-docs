@@ -1,3 +1,7 @@
+---
+title: "IAM permissions required for Spot Fleet automatic scaling"
+---
+
 # IAM permissions required for Spot Fleet automatic scaling
 
 Automatic scaling for Spot Fleet is made possible by a combination of the Amazon EC2,
@@ -63,9 +67,11 @@ The service-linked role is the default role for Application Auto Scaling. For mo
 [Service-linked roles for Application Auto Scaling](../../../autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md) in the _Application Auto Scaling User_
 _Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Automatic scaling for
 Spot Fleet
 
 Target tracking scaling
+
+All content copied from https://docs.aws.amazon.com/.

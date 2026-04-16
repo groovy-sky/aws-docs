@@ -1,3 +1,7 @@
+---
+title: "AWS Network Manager actions"
+---
+
 # AWS Network Manager actions
 
 The following API actions are available for AWS Network Manager.
@@ -46,8 +50,10 @@ The following API actions are available for AWS Network Manager.
 
 - [StartNetworkInsightsAnalysis](api-startnetworkinsightsanalysis.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Amazon EC2 actions
 
 AWS Nitro Enclaves
+
+All content copied from https://docs.aws.amazon.com/.

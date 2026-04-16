@@ -1,3 +1,7 @@
+---
+title: "Allocate an Amazon EC2 Dedicated Host for use in your account"
+---
+
 # Allocate an Amazon EC2 Dedicated Host for use in your account
 
 To begin using a Dedicated Host, you must first allocate it in your account. After you
@@ -140,8 +144,10 @@ New-EC2Host `
     -Quantity 1
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Auto-placement and affinity
 
 Launch instances on a Dedicated Host
+
+All content copied from https://docs.aws.amazon.com/.

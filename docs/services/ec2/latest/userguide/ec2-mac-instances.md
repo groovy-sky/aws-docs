@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 Mac instances"
+---
+
 # Amazon EC2 Mac instances
 
 EC2 Mac instances are ideal for developing, building, testing, and signing applications
@@ -204,8 +208,10 @@ For more information about Mac instances, see [Amazon EC2 Mac Instances](https:/
 For more information about hardware specifications and network performance of Mac instances, see
 [General purpose instances](../instancetypes/gp.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Get started with GPU accelerated instances
 
 Launch a Mac instance
+
+All content copied from https://docs.aws.amazon.com/.

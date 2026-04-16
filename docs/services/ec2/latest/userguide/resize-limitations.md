@@ -1,3 +1,7 @@
+---
+title: "Compatibility for changing the instance type"
+---
+
 # Compatibility for changing the instance type
 
 You can change the instance type only if the instance's current configuration is
@@ -97,8 +101,10 @@ If you launched the instance using an AMI with [NitroTPM](nitrotpm.md)
 enabled and an instance type that supports NitroTPM, the instance launches with NitroTPM
 enabled. You can only change to an instance type that also supports NitroTPM.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Instance type changes
 
 Change the instance type
+
+All content copied from https://docs.aws.amazon.com/.

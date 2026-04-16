@@ -1,3 +1,7 @@
+---
+title: "Aggregate statistics by Auto Scaling group"
+---
+
 # Aggregate statistics by Auto Scaling group
 
 You can aggregate statistics for the EC2 instances in an Auto Scaling group. Note that Amazon CloudWatch
@@ -60,8 +64,10 @@ The following is example output:
 }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Aggregate statistics across instances
 
 Aggregate statistics by AMI
+
+All content copied from https://docs.aws.amazon.com/.

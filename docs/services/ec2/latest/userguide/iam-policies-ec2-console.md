@@ -1,3 +1,7 @@
+---
+title: "Example policies to control access to the Amazon EC2 console"
+---
+
 # Example policies to control access to the Amazon EC2 console
 
 You can use IAM policies to grant users the permissions required to work with Amazon EC2.
@@ -601,8 +605,10 @@ You can adjust the API actions to limit user access, for example removing
 `ec2:DescribeAvailabilityZones` means the user has read-only
 access.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Example policies for the API
 
 AWS managed policies
+
+All content copied from https://docs.aws.amazon.com/.

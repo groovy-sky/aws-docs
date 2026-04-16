@@ -1,3 +1,7 @@
+---
+title: "Create a security group for your Amazon EC2 instance"
+---
+
 # Create a security group for your Amazon EC2 instance
 
 Security groups act as a firewall for associated instances, controlling both inbound
@@ -114,8 +118,10 @@ New-EC2SecurityGroup `
 
 For examples that add rules, see [Configure security group rules](changing-security-group.md#add-remove-security-group-rules).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Security groups
 
 Change security groups for your instance
+
+All content copied from https://docs.aws.amazon.com/.

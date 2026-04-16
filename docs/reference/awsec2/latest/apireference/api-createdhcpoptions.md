@@ -1,3 +1,7 @@
+---
+title: "CreateDhcpOptions"
+---
+
 # CreateDhcpOptions
 
 Creates a custom set of DHCP options. After you create a DHCP option set, you associate
@@ -179,8 +183,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createdhcpoptions.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreateDelegateMacVolumeOwnershipTask
 
 CreateEgressOnlyInternetGateway
+
+All content copied from https://docs.aws.amazon.com/.

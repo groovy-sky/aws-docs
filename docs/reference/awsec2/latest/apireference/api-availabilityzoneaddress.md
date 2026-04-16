@@ -1,3 +1,7 @@
+---
+title: "AvailabilityZoneAddress"
+---
+
 # AvailabilityZoneAddress
 
 For regional NAT gateways only: The configuration specifying which Elastic IP address (EIP) to use for handling outbound NAT traffic from a specific Availability Zone.
@@ -46,8 +50,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/availabilityzoneaddress.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AvailabilityZone
 
 AvailabilityZoneGeography
+
+All content copied from https://docs.aws.amazon.com/.

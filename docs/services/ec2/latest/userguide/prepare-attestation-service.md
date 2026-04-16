@@ -1,3 +1,7 @@
+---
+title: "Prepare AWS KMS for attestation"
+---
+
 # Prepare AWS KMS for attestation
 
 ###### Note
@@ -50,8 +54,10 @@ Attestation Document with specific PCR 4 and PCR 12 values.
 }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Compute PCR measurements
 
 Get the NitroTPM Attestation Document
+
+All content copied from https://docs.aws.amazon.com/.

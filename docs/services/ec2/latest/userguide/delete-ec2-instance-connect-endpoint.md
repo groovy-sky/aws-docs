@@ -1,3 +1,7 @@
+---
+title: "Delete an EC2 Instance Connect Endpoint"
+---
+
 # Delete an EC2 Instance Connect Endpoint
 
 When you are finished with an EC2 Instance Connect Endpoint, you can delete it.
@@ -103,8 +107,10 @@ The following is example output.
 
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Modify an EC2 Instance Connect Endpoint
 
 Connect to an instance
+
+All content copied from https://docs.aws.amazon.com/.

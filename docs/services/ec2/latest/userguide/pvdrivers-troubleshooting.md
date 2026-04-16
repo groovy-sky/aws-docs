@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot PV drivers on Windows instances"
+---
+
 # Troubleshoot PV drivers on Windows instances
 
 The following are solutions to issues that you might encounter with older Amazon EC2 images
@@ -177,7 +181,7 @@ failed to resolve the problem.
 12. For each key, double-click **UpperFilters**, enter a
      value of XENFILT, and then choose **OK**.
 
-    ![Registry key for affected volume.](../../../images/awsec2/latest/userguide/images/troubleshooting-server2012r2-regedit-png.md)
+    ![Registry key for affected volume.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/troubleshooting-server2012R2-regedit.png)
 
 13. Locate the following key:
 
@@ -315,7 +319,7 @@ instance.
 05. Right-click **Citrix PV Ethernet Adapter #0** and select
      **Properties**.
 
-    ![Local area connection properties.](../../../images/awsec2/latest/userguide/images/citrix-local-area-conn-png.md)
+    ![Local area connection properties.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/citrix-local-area-conn.png)
 
 06. In the **Local Area Connection Properties** dialog box,
      choose **Configure** to open the **Citrix PV**
@@ -549,8 +553,10 @@ Set-ItemProperty -Type DWORD -Path HKLM:\System\CurrentControlSet\Services\xenvb
 
 4. Reboot your instance.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Upgrade PV drivers
 
 AWS NVMe drivers
+
+All content copied from https://docs.aws.amazon.com/.

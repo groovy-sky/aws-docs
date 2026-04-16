@@ -1,3 +1,7 @@
+---
+title: "Move capacity between Capacity Reservations"
+---
+
 # Move capacity between Capacity Reservations
 
 You can move capacity from one Capacity Reservation to another to redistribute your reserved compute
@@ -132,10 +136,12 @@ Move-EC2CapacityReservationInstance `
     -InstanceCount 10
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Modify instance Capacity Reservation
 settings
 
 Split off
 capacity
+
+All content copied from https://docs.aws.amazon.com/.

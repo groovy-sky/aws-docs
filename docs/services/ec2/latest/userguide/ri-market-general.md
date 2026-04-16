@@ -1,3 +1,7 @@
+---
+title: "Sell Reserved Instances for Amazon EC2 in the Reserved Instance Marketplace"
+---
+
 # Sell Reserved Instances for Amazon EC2 in the Reserved Instance Marketplace
 
 The Amazon EC2 Reserved Instance Marketplace is a platform that facilitates the sale of unused Standard Reserved Instances
@@ -92,7 +96,7 @@ each Standard Reserved Instance you sell in the Reserved Instance Marketplace. T
 price the seller is charging for the Standard Reserved Instance.
 
 - When you register as a seller, the bank you specify must have a US
-address. For more information, see [Additional seller requirements for paid products](../../../marketplace/latest/userguide/user-guide-for-sellers.md) in the
+address. For more information, see [Additional seller requirements for paid products](../../../marketplace/latest/userguide/user-guide-for-sellers.md#additional-seller-requirements-for-paid-products) in the
 _AWS Marketplace Seller Guide_.
 
 - Amazon Web Services India Private Limited (AWS India) customers can't register as
@@ -134,7 +138,7 @@ the Reserved Instance Marketplace.
 
 AWS must have your bank information in order to disburse funds collected when
 you sell your Reserved Instance. The bank you specify must have a US address. For more
-information, see [Additional seller requirements for paid products](../../../marketplace/latest/userguide/user-guide-for-sellers.md) in the _AWS Marketplace Seller Guide_.
+information, see [Additional seller requirements for paid products](../../../marketplace/latest/userguide/user-guide-for-sellers.md#additional-seller-requirements-for-paid-products) in the _AWS Marketplace Seller Guide_.
 
 ###### To register a default bank account for disbursements
 
@@ -494,8 +498,10 @@ AWS cannot offer tax advice, but if your tax specialist determines that you need
 specific additional information, [contact\
 Support](https://aws.amazon.com/contact-us).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Buy Reserved Instances
 
 Modify Reserved Instances
+
+All content copied from https://docs.aws.amazon.com/.

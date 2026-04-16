@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 managed instances"
+---
+
 # Amazon EC2 managed instances
 
 An _Amazon EC2 managed instance_ is an EC2 instance that is
@@ -163,8 +167,10 @@ cmdlet. This example displays only the IDs of the managed instances.
 For guidance on using managed instances, see [Automate cluster infrastructure with EKS\
 Auto Mode](../../../eks/latest/userguide/automode.md) in the _Amazon EKS User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Processor state control
 
 Nested virtualization
+
+All content copied from https://docs.aws.amazon.com/.

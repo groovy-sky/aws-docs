@@ -1,3 +1,7 @@
+---
+title: "Spot Instance quotas"
+---
+
 # Spot Instance quotas
 
 There are quotas for the number of running Spot Instances and pending Spot Instance requests per AWS account
@@ -32,8 +36,10 @@ You can also configure alarms to warn about approaching quotas. For more informa
 Quotas and Amazon CloudWatch alarms](../../../servicequotas/latest/userguide/configure-cloudwatch.md) in the _Service_
 _Quotas User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Service-linked role for Spot Instance requests
 
 Dedicated Hosts
+
+All content copied from https://docs.aws.amazon.com/.

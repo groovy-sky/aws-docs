@@ -1,3 +1,7 @@
+---
+title: "Modify Amazon EC2 Dedicated Host tenancy and affinity for an Amazon EC2 instance"
+---
+
 # Modify Amazon EC2 Dedicated Host tenancy and affinity for an Amazon EC2 instance
 
 You can change the tenancy of an instance after
@@ -109,8 +113,10 @@ Edit-EC2InstancePlacement `
     -HostId h-012a3456b7890cdef
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Modify supported instance types
 
 Release Dedicated Host
+
+All content copied from https://docs.aws.amazon.com/.

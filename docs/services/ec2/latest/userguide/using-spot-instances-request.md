@@ -1,3 +1,7 @@
+---
+title: "Manage your Spot Instances"
+---
+
 # Manage your Spot Instances
 
 Amazon EC2 launches a Spot Instance when capacity is available. A Spot Instance runs until it is interrupted or
@@ -353,8 +357,10 @@ cmdlet.
 Remove-EC2Instance -InstanceId i-1234567890abcdef0
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Cancel a Spot Instance request
 
 Spot Instance interruptions
+
+All content copied from https://docs.aws.amazon.com/.

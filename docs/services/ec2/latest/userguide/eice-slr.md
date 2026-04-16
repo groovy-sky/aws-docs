@@ -1,3 +1,7 @@
+---
+title: "Service-linked role for EC2 Instance Connect Endpoint"
+---
+
 # Service-linked role for EC2 Instance Connect Endpoint
 
 Amazon EC2 uses AWS Identity and Access Management (IAM) [service-linked\
@@ -51,9 +55,11 @@ You must configure permissions to allow an IAM entity (a user, group, or role) t
 edit, or delete a service-linked role. For more information, see [Service-linked role permissions](../../../iam/latest/userguide/id-roles-create-service-linked-role.md#service-linked-role-permissions) in the
 _IAM User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Log
 connections
 
 Quotas
+
+All content copied from https://docs.aws.amazon.com/.

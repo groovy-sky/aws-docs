@@ -1,3 +1,7 @@
+---
+title: "StartInstances"
+---
+
 # StartInstances
 
 Starts an Amazon EBS-backed instance that you've previously stopped.
@@ -136,8 +140,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/startinstances.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 StartDeclarativePoliciesReport
 
 StartNetworkInsightsAccessScopeAnalysis
+
+All content copied from https://docs.aws.amazon.com/.

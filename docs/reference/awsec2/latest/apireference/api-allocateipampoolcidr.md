@@ -1,3 +1,7 @@
+---
+title: "AllocateIpamPoolCidr"
+---
+
 # AllocateIpamPoolCidr
 
 Allocate a CIDR from an IPAM pool. The Region you use should be the IPAM pool locale. The locale is the AWS Region where this IPAM pool is available for allocations.
@@ -142,8 +146,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/allocateipampoolcidr.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AllocateHosts
 
 ApplySecurityGroupsToClientVpnTargetNetwork
+
+All content copied from https://docs.aws.amazon.com/.

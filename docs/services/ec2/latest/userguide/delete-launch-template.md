@@ -1,3 +1,7 @@
+---
+title: "Delete a launch template or a launch template version"
+---
+
 # Delete a launch template or a launch template version
 
 If you no longer require a launch template, you can delete it. Deleting a launch
@@ -122,9 +126,11 @@ Remove-EC2TemplateVersion `
     -Version 1
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Modify (manage
 versions)
 
 Launch an instance
+
+All content copied from https://docs.aws.amazon.com/.

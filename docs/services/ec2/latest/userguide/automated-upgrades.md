@@ -1,3 +1,7 @@
+---
+title: "Use Automation runbooks to upgrade an EC2 Windows instance"
+---
+
 # Use Automation runbooks to upgrade an EC2 Windows instance
 
 You can perform an automated upgrade of your Windows and SQL Server instances on AWS
@@ -553,8 +557,10 @@ instance before creating an AMI for the upgrade.
 21. Verify that the new SQL Server version is the database engine on the
      new instance.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Perform an in-place upgrade
 
 Migrate to a Nitro-based instance type
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "EC2 instance rebalance recommendations"
+---
+
 # EC2 instance rebalance recommendations
 
 An EC2 instance _rebalance recommendation_ is a signal that
@@ -301,8 +305,10 @@ _Amazon EC2 Auto Scaling User Guide_
 - [Use Capacity Rebalancing in EC2 Fleet and Spot Fleet to replace at-risk Spot Instances](ec2-fleet-capacity-rebalance.md) in the EC2 Fleet and Spot Fleet topic in
 this user guide
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Billing
 
 Spot placement score
+
+All content copied from https://docs.aws.amazon.com/.

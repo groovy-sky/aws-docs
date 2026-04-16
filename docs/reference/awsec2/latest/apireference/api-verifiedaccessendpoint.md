@@ -1,3 +1,7 @@
+---
+title: "VerifiedAccessEndpoint"
+---
+
 # VerifiedAccessEndpoint
 
 An AWS Verified Access endpoint specifies the application that AWS Verified Access provides access to. It must be
@@ -192,8 +196,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/verifiedaccessendpoint.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 VCpuInfo
 
 VerifiedAccessEndpointCidrOptions
+
+All content copied from https://docs.aws.amazon.com/.

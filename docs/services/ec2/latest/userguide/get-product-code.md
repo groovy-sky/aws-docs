@@ -1,3 +1,7 @@
+---
+title: "Retrieve the AWS Marketplace product code from your instance"
+---
+
 # Retrieve the AWS Marketplace product code from your instance
 
 You can retrieve the AWS Marketplace product code for your instance using its instance metadata.
@@ -52,8 +56,10 @@ Run the following command from your Windows instance.
 Invoke-RestMethod -Uri http://169.254.169.254/latest/meta-data/product-codes
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Purchase a paid AMI
 
 Use paid support
+
+All content copied from https://docs.aws.amazon.com/.

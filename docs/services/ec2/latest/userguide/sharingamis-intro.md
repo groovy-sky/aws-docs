@@ -1,3 +1,7 @@
+---
+title: "Make your AMI publicly available for use in Amazon EC2"
+---
+
 # Make your AMI publicly available for use in Amazon EC2
 
 You can make your AMI publicly available by sharing it with all AWS accounts.
@@ -191,8 +195,10 @@ Edit-EC2ImageAttribute `
        -UserGroup all
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Manage the settings for Allowed AMIs
 
 Block public access for AMIs
+
+All content copied from https://docs.aws.amazon.com/.

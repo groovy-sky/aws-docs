@@ -1,3 +1,7 @@
+---
+title: "CreateCarrierGateway"
+---
+
 # CreateCarrierGateway
 
 Creates a carrier gateway. For more information about carrier gateways, see [Carrier gateways](../../../../services/wavelength/latest/developerguide/how-wavelengths-work.md#wavelength-carrier-gateway) in the _AWS Wavelength Developer Guide_.
@@ -86,8 +90,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createcarriergateway.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreateCapacityReservationFleet
 
 CreateClientVpnEndpoint
+
+All content copied from https://docs.aws.amazon.com/.

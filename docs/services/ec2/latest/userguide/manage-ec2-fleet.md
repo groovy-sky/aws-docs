@@ -1,3 +1,7 @@
+---
+title: "Work with EC2 Fleet"
+---
+
 # Work with EC2 Fleet
 
 To start using an EC2 Fleet, create a request that includes the total target capacity,
@@ -37,8 +41,10 @@ they're interrupted or you terminate them.
 
 - [Delete an EC2 Fleet request and the instances in the fleet](delete-fleet.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Capacity Reservations
 
 EC2 Fleet request states
+
+All content copied from https://docs.aws.amazon.com/.

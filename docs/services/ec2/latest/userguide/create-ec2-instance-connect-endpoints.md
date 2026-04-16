@@ -1,3 +1,7 @@
+---
+title: "Create an EC2 Instance Connect Endpoint"
+---
+
 # Create an EC2 Instance Connect Endpoint
 
 You can create an EC2 Instance Connect Endpoint to allow secure connection to your instances.
@@ -231,8 +235,10 @@ The following is example output.
 create-complete
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Security groups
 
 Modify an EC2 Instance Connect Endpoint
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "AssociateEnclaveCertificateIamRole"
+---
+
 # AssociateEnclaveCertificateIamRole
 
 Associates an AWS Identity and Access Management (IAM) role with an AWS Certificate Manager (ACM) certificate.
@@ -101,8 +105,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/associateenclavecertificateiamrole.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AssociateDhcpOptions
 
 AssociateIamInstanceProfile
+
+All content copied from https://docs.aws.amazon.com/.

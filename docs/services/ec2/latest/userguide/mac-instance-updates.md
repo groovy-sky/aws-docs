@@ -1,3 +1,7 @@
+---
+title: "Update the operating system and software on Amazon EC2 Mac instances"
+---
+
 # Update the operating system and software on Amazon EC2 Mac instances
 
 The following topic explains how to update the operating system and software on Apple silicon Mac
@@ -494,8 +498,10 @@ To install all updates instead, use the following command.
 [ec2-user ~]$ brew upgrade
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Connect to your Mac instance
 
 Increase size of EBS volume
+
+All content copied from https://docs.aws.amazon.com/.

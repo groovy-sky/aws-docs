@@ -1,3 +1,7 @@
+---
+title: "Add and remove tags for Amazon EC2 resources"
+---
+
 # Add and remove tags for Amazon EC2 resources
 
 When you create an Amazon EC2 resource, such as an Amazon EC2 instance, you can specify
@@ -229,8 +233,10 @@ TagSpecifications:
 ]
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Tag resource permissions
 
 Filter resources by tag
+
+All content copied from https://docs.aws.amazon.com/.

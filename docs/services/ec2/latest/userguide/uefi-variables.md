@@ -1,3 +1,7 @@
+---
+title: "UEFI variables for Amazon EC2 instances"
+---
+
 # UEFI variables for Amazon EC2 instances
 
 When you launch an instance where the boot mode is set to UEFI, a key-value store for variables
@@ -25,8 +29,10 @@ as non-volatile are persisted on reboot and stop/start.
 - Bare metal instances don't preserve UEFI non-volatile variables across instance stop/start
 operations.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Set AMI boot mode
 
 UEFI Secure Boot
+
+All content copied from https://docs.aws.amazon.com/.

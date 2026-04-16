@@ -1,3 +1,7 @@
+---
+title: "Reference AMIs using Systems Manager parameters"
+---
+
 # Reference AMIs using Systems Manager parameters
 
 When you launch an instance using the EC2 launch instance wizard in the Amazon EC2 console,
@@ -196,8 +200,10 @@ specifies version 2 of the `golden-ami` parameter.
 -ImageId "resolve:ssm:/golden-ami:2"
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Find an AMI
 
 Systems Manager public parameters
+
+All content copied from https://docs.aws.amazon.com/.

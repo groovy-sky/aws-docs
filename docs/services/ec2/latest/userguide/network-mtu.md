@@ -1,3 +1,7 @@
+---
+title: "Network maximum transmission unit (MTU) for your EC2 instance"
+---
+
 # Network maximum transmission unit (MTU) for your EC2 instance
 
 The maximum transmission unit (MTU) of a network connection is the size, in bytes, of the
@@ -127,8 +131,10 @@ If you experience connectivity issues between your EC2 instance and an Amazon Re
 when using jumbo frames, see [Queries appear to hang and sometimes fail to reach the cluster](../../../redshift/latest/mgmt/troubleshooting-connections.md#connecting-drop-issues)
 in the _Amazon Redshift Management Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Placement groups on AWS Outposts
 
 Set the MTU for your instances
+
+All content copied from https://docs.aws.amazon.com/.

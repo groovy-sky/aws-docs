@@ -1,3 +1,7 @@
+---
+title: "Use Amazon FSx with Amazon EC2 instances"
+---
+
 # Use Amazon FSx with Amazon EC2 instances
 
 The Amazon FSx family of services makes it easy to launch, run, and scale shared storage
@@ -162,8 +166,10 @@ runcmd:
 
 9. Choose **Launch**.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Amazon EFS
 
 Amazon File Cache
+
+All content copied from https://docs.aws.amazon.com/.

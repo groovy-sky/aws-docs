@@ -1,3 +1,7 @@
+---
+title: "Change instance initiated shutdown behavior"
+---
+
 # Change instance initiated shutdown behavior
 
 ###### Warning
@@ -80,9 +84,11 @@ Edit-EC2InstanceAttribute `
     -InstanceInitiatedShutdownBehavior terminate
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Change termination
 protection
 
 Preserve data when an instance is terminated
+
+All content copied from https://docs.aws.amazon.com/.

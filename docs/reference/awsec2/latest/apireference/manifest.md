@@ -1,3 +1,7 @@
+---
+title: "VM Import Manifest"
+---
+
 # VM Import Manifest
 
 The import manifest is an XML file created and consumed by the Amazon EC2 API operations [ImportInstance](api-importinstance.md) and [ImportVolume](api-importvolume.md). Note that these operations
@@ -253,8 +257,10 @@ uploaded to Amazon S3.
 </manifest>
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CORS support
 
 Common query parameters
+
+All content copied from https://docs.aws.amazon.com/.

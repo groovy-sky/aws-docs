@@ -1,3 +1,7 @@
+---
+title: "Statistics for CloudWatch metrics for your instances"
+---
+
 # Statistics for CloudWatch metrics for your instances
 
 You can get statistics for the CloudWatch metrics for your instances. _Statistics_ are metric data aggregations over
@@ -49,9 +53,11 @@ up to two decimal places (for example, p95.45).
 
 - [Aggregate statistics by AMI](us-singlemetricperami.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Install and configure
 the CloudWatch agent
 
 Get statistics for a specific instance
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Use the EC2Launch v1 agent to perform tasks during EC2 Windows instance launch"
+---
+
 # Use the EC2Launch v1 agent to perform tasks during EC2 Windows instance launch
 
 Amazon managed AMIs for Windows Server 2016 and 2019 include a set of Windows Powershell
@@ -177,8 +181,10 @@ follows:
 
 - [EC2Launch version history](ec2launch-version-details.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Version histories
 
 Install EC2Launch
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Increase the size of an EBS volume on your Mac instance"
+---
+
 # Increase the size of an EBS volume on your Mac instance
 
 You can increase the size of your Amazon EBS volumes on your Mac instance. For more information, see
@@ -41,8 +45,10 @@ yes | sudo diskutil repairDisk $PDISK
 [ec2-user ~]$ sudo diskutil apfs resizeContainer $APFSCONT 0
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Update operating system and software
 
 Stop or terminate Mac instance
+
+All content copied from https://docs.aws.amazon.com/.

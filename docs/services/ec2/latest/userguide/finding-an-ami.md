@@ -1,3 +1,7 @@
+---
+title: "Find an AMI that meets the requirements for your EC2 instance"
+---
+
 # Find an AMI that meets the requirements for your EC2 instance
 
 An AMI includes the components and applications, such as the operating system and type of
@@ -173,9 +177,11 @@ use when launching an instance, see the following:
 
 - [Reference the latest AMIs using Systems Manager public parameters](finding-an-ami-parameter-store.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Identify the AMI root volume
 type
 
 Systems Manager parameters
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "DescribeConversionTasks"
+---
+
 # DescribeConversionTasks
 
 Describes the specified conversion tasks or all your conversion tasks. For more information, see the
@@ -119,8 +123,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describeconversiontasks.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeCoipPools
 
 DescribeCustomerGateways
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,9 +1,13 @@
+---
+title: "How Amazon EC2 instance hibernation works"
+---
+
 # How Amazon EC2 instance hibernation works
 
 The following diagram shows a basic overview of the hibernation process for EC2
 instances.
 
-![Overview of the hibernation flow.](../../../images/awsec2/latest/userguide/images/hibernation-flow-png.md)
+![Overview of the hibernation flow.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/hibernation-flow.png)
 
 ## What happens when you hibernate an instance
 
@@ -118,8 +122,10 @@ notice two minutes before hibernation starts.
 
 For more information, see [Spot Instance interruptions](spot-interruptions.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Hibernate
 
 Prerequisites
+
+All content copied from https://docs.aws.amazon.com/.

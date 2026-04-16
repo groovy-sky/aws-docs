@@ -1,3 +1,7 @@
+---
+title: "Add block device mappings to an AMI"
+---
+
 # Add block device mappings to an AMI
 
 Each AMI has a block device mapping that specifies the block devices to attach to an
@@ -209,8 +213,10 @@ cmdlet.
 (Get-EC2Image -ImageId ami-0abcdef1234567890).BlockDeviceMappings
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Block device mappings
 
 Add block device mapping to instance
+
+All content copied from https://docs.aws.amazon.com/.

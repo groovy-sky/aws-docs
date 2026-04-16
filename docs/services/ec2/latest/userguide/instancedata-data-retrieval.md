@@ -1,3 +1,7 @@
+---
+title: "Access instance metadata for an EC2 instance"
+---
+
 # Access instance metadata for an EC2 instance
 
 You can access EC2 instance metadata from inside of the instance itself or from the
@@ -491,8 +495,10 @@ see [Retrieve security credentials from instance metadata](instance-metadata-sec
 If you are throttled while accessing the IMDS, retry your query with an
 exponential backoff strategy.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Instance metadata
 
 Use the IMDS
+
+All content copied from https://docs.aws.amazon.com/.

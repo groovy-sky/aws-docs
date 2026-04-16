@@ -1,3 +1,7 @@
+---
+title: "Amazon EBS volume limits for Amazon EC2 instances"
+---
+
 # Amazon EBS volume limits for Amazon EC2 instances
 
 The maximum number of Amazon EBS volumes that you can attach to an instance depends on
@@ -156,8 +160,10 @@ supported on a best effort basis only and is not guaranteed.
 For more information about how device names are related to volumes, see
 [How volumes are attached and mapped for Amazon EC2 Windows instances](ec2-windows-volumes.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Amazon EBS
 
 EBS cards
+
+All content copied from https://docs.aws.amazon.com/.

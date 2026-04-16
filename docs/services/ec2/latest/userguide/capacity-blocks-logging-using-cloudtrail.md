@@ -1,3 +1,7 @@
+---
+title: "Logging Capacity Blocks API calls with AWS CloudTrail"
+---
+
 # Logging Capacity Blocks API calls with AWS CloudTrail
 
 Capacity Blocks is integrated with AWS CloudTrail, a service that provides a record of actions
@@ -307,8 +311,10 @@ Some fields have been redacted from the examples for data privacy.
 
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Monitor using EventBridge
 
 Launch templates
+
+All content copied from https://docs.aws.amazon.com/.

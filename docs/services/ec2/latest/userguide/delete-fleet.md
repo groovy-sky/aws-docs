@@ -1,3 +1,7 @@
+---
+title: "Delete an EC2 Fleet request and the instances in the fleet"
+---
+
 # Delete an EC2 Fleet request and the instances in the fleet
 
 If you no longer require an EC2 Fleet request, you can delete it. After you delete a fleet
@@ -232,8 +236,10 @@ PT9vrHtQiILor5VVTsjSPWg7edj__1rsnXhwPSu8gI48ZLRGrPQqFq0RmKO_QIE8N8s6NWzCK4yoX-9g
 To resolve the error, you must add the `ec2:TerminateInstances` action
 to the IAM policy, as shown in the following example.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Modify an EC2 Fleet
 
 Work with Spot Fleet
+
+All content copied from https://docs.aws.amazon.com/.

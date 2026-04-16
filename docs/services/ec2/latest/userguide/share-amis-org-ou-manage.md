@@ -1,3 +1,7 @@
+---
+title: "Manage AMI sharing with an organization or OU"
+---
+
 # Manage AMI sharing with an organization or OU
 
 You can manage AMI sharing with organizations and organization units (OU) to control whether
@@ -272,8 +276,10 @@ Reset-EC2ImageAttribute `
     -Attribute LaunchPermission
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Allow organizations and OUs to use a KMS key
 
 Share an AMI with specific AWS accounts
+
+All content copied from https://docs.aws.amazon.com/.

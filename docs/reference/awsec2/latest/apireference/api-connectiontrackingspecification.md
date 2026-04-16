@@ -1,3 +1,7 @@
+---
+title: "ConnectionTrackingSpecification"
+---
+
 # ConnectionTrackingSpecification
 
 A security group connection tracking specification that enables you to set the idle
@@ -48,8 +52,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/connectiontrackingspecification.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ConnectionTrackingConfiguration
 
 ConnectionTrackingSpecificationRequest
+
+All content copied from https://docs.aws.amazon.com/.

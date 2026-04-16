@@ -1,3 +1,7 @@
+---
+title: "Convert your Amazon S3-backed AMI to an EBS-backed AMI"
+---
+
 # Convert your Amazon S3-backed AMI to an EBS-backed AMI
 
 You can convert an Amazon S3-backed Linux AMI that you own to an Amazon EBS-backed Linux AMI.
@@ -227,8 +231,10 @@ You can't convert an AMI that you don't own.
     aws ec2 delete-volume --volume-id vol-01234567890abcdef
     ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AMI tools reference
 
 Create an AMI using Windows Sysprep
+
+All content copied from https://docs.aws.amazon.com/.

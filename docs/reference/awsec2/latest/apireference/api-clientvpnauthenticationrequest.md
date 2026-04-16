@@ -1,3 +1,7 @@
+---
+title: "ClientVpnAuthenticationRequest"
+---
+
 # ClientVpnAuthenticationRequest
 
 Describes the authentication method to be used by a Client VPN endpoint. For more information, see [Authentication](../../../../services/vpn/latest/clientvpn-admin/authentication-authrization.md#client-authentication)
@@ -49,8 +53,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/clientvpnauthenticationrequest.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ClientVpnAuthentication
 
 ClientVpnAuthorizationRuleStatus
+
+All content copied from https://docs.aws.amazon.com/.

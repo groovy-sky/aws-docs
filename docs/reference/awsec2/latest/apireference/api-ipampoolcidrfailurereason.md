@@ -1,3 +1,7 @@
+---
+title: "IpamPoolCidrFailureReason"
+---
+
 # IpamPoolCidrFailureReason
 
 Details related to why an IPAM pool CIDR failed to be provisioned.
@@ -32,8 +36,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ipampoolcidrfailurereason.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 IpamPoolCidr
 
 IpamPoolSourceResource
+
+All content copied from https://docs.aws.amazon.com/.

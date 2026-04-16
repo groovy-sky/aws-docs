@@ -1,3 +1,7 @@
+---
+title: "Track your Spot Instance costs using the Spot Instance data feed"
+---
+
 # Track your Spot Instance costs using the Spot Instance data feed
 
 To help you understand the charges for your Spot Instances, Amazon EC2 provides a data feed that describes
@@ -254,8 +258,10 @@ Use the [Remove-EC2SpotDatafeedSubscription](../../../powershell/latest/referenc
 Remove-EC2SpotDatafeedSubscription
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Calculate the Spot placement score
 
 Service-linked role for Spot Instance requests
+
+All content copied from https://docs.aws.amazon.com/.

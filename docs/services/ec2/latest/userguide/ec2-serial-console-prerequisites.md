@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for the EC2 Serial Console"
+---
+
 # Prerequisites for the EC2 Serial Console
 
 ###### To connect to the EC2 Serial Console and use your chosen tool for  troubleshooting, the following prerequisites must be met:
@@ -22,7 +26,7 @@
 
 ## AWS Regions
 
-Supported in all AWS Regions except Asia Pacific (Taipei).
+Supported in all AWS Regions.
 
 ## Wavelength Zones and AWS Outposts
 
@@ -373,8 +377,10 @@ bcdedit /set {bootmgr} bootems yes
 shutdown -r -t 0
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 EC2 Serial Console
 
 Configure access to the EC2 Serial Console
+
+All content copied from https://docs.aws.amazon.com/.

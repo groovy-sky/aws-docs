@@ -1,3 +1,7 @@
+---
+title: "Transfer an Elastic IP address between AWS accounts"
+---
+
 # Transfer an Elastic IP address between AWS accounts
 
 You can transfer an Elastic IP address from one AWS account to another. This can be
@@ -292,8 +296,10 @@ Use the [Disable-EC2AddressTransfer](../../../powershell/latest/reference/items/
 Disable-EC2AddressTransfer -AllocationId eipalloc-09ad461b0d03f6aaf
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Associate an Elastic IP address
 
 Release an Elastic IP address
+
+All content copied from https://docs.aws.amazon.com/.

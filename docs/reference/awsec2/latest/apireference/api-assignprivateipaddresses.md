@@ -1,3 +1,7 @@
+---
+title: "AssignPrivateIpAddresses"
+---
+
 # AssignPrivateIpAddresses
 
 Assigns the specified secondary private IP addresses to the specified network
@@ -212,8 +216,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/assignprivateipaddresses.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AssignIpv6Addresses
 
 AssignPrivateNatGatewayAddress
+
+All content copied from https://docs.aws.amazon.com/.

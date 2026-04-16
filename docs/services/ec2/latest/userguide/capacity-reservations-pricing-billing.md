@@ -1,3 +1,7 @@
+---
+title: "Capacity Reservation pricing and billing"
+---
+
 # Capacity Reservation pricing and billing
 
 The topics in this section provide an overview of pricing and billing for
@@ -57,7 +61,7 @@ canceled and the `m4.large` instance runs normally outside of the
 reserved capacity. For that hour, it is charged at the On-Demand rate of the
 `m4.large` instance type.
 
-![Capacity Reservation billing example](../../../images/awsec2/latest/userguide/images/cr-billing-example-png.md)
+![Capacity Reservation billing example](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/cr-billing-example.png)
 
 ## Billing discounts
 
@@ -95,8 +99,10 @@ your Capacity Reservations.
 You can view the charges online, or you can download a CSV file. For more
 information, see [Capacity Reservation line items](../../../cur/latest/userguide/monitor-ondemand-reservations.md#capacity-reservation-li).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Concepts
 
 Create a Capacity Reservation
+
+All content copied from https://docs.aws.amazon.com/.

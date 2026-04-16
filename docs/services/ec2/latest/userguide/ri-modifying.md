@@ -1,3 +1,7 @@
+---
+title: "Modify Reserved Instances"
+---
+
 # Modify Reserved Instances
 
 When your needs change, you can modify your Standard or Convertible Reserved Instances and continue to benefit
@@ -218,7 +222,7 @@ reservations to a single reservation with one `t2.medium` instance (2
 units), the footprint of the new reservation equals the footprint of the
 combined reservations.
 
-![Modifying Reserved Instances.](../../../images/awsec2/latest/userguide/images/ri-modify-merge-png.md)
+![Modifying Reserved Instances.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ri-modify-merge.png)
 
 You can also modify a reservation to divide it into two or more reservations.
 In the following example, you have a reservation with a `t2.medium`
@@ -226,7 +230,7 @@ instance (2 units). You can divide the reservation into two reservations, one
 with two `t2.nano` instances (.5 units) and the other with three
 `t2.micro` instances (1.5 units).
 
-![Modifying Reserved Instances.](../../../images/awsec2/latest/userguide/images/ri-modify-divide-png.md)
+![Modifying Reserved Instances.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ri-modify-divide.png)
 
 ### Normalization factors for bare metal instances
 
@@ -461,8 +465,10 @@ modifying. Try submitting the modification requests again, but ensure that the
 instance details of the reservations match, and that the target configurations for
 all subsets being modified are unique.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Sell Reserved Instances
 
 Exchange Convertible Reserved Instances
+
+All content copied from https://docs.aws.amazon.com/.

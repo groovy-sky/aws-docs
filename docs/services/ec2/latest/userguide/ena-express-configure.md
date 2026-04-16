@@ -1,3 +1,7 @@
+---
+title: "Configure ENA Express settings for your EC2 instance"
+---
+
 # Configure ENA Express settings for your EC2 instance
 
 You can configure ENA Express for supported EC2 instance types without needing to
@@ -289,9 +293,11 @@ wizard.
 ENA Express at launch when you use a launch template. For more information,
 see the [Create an Amazon EC2 launch template](create-launch-template.md) page, then expand the **Network settings** section and review the **Advanced network configuration**.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Review instance
 settings
 
 Intel 82599 VF
+
+All content copied from https://docs.aws.amazon.com/.

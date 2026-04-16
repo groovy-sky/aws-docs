@@ -1,3 +1,7 @@
+---
+title: "Verify the instance identity document for an Amazon EC2 instance"
+---
+
 # Verify the instance identity document for an Amazon EC2 instance
 
 If you intend to use the contents of the instance identity document for an important purpose, you should verify
@@ -470,8 +474,10 @@ PS C:\> [Linq.Enumerable]::SequenceEqual($SignatureDocument.ContentInfo.Content,
 If the content of the instance identity document is valid, the command returns `True`.
     If instance identity document can't be validated, contact AWS Support.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Retrieve the instance identity document
 
 Public certificates
+
+All content copied from https://docs.aws.amazon.com/.

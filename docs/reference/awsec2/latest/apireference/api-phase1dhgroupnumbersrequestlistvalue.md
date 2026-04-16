@@ -1,3 +1,7 @@
+---
+title: "Phase1DHGroupNumbersRequestListValue"
+---
+
 # Phase1DHGroupNumbersRequestListValue
 
 Specifies a Diffie-Hellman group number for the VPN tunnel for phase 1 IKE
@@ -23,8 +27,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/phase1dhgroupnumbersrequestlistvalue.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Phase1DHGroupNumbersListValue
 
 Phase1EncryptionAlgorithmsListValue
+
+All content copied from https://docs.aws.amazon.com/.

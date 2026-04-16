@@ -1,3 +1,7 @@
+---
+title: "How volumes are attached and mapped for Amazon EC2 Windows instances"
+---
+
 # How volumes are attached and mapped for Amazon EC2 Windows instances
 
 ###### Note
@@ -25,8 +29,10 @@ instance store and EBS volumes to Windows disks and drive letters.
 
 - [Map non-NVME disks to volumes](windows-list-disks.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Add block device mapping to instance
 
 Map NVME disks to volumes
+
+All content copied from https://docs.aws.amazon.com/.

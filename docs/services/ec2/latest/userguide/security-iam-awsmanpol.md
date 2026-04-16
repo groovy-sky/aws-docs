@@ -1,3 +1,7 @@
+---
+title: "AWS managed policies for Amazon EC2"
+---
+
 # AWS managed policies for Amazon EC2
 
 To add permissions to users, groups, and roles, it is easier to use AWS managed policies
@@ -203,8 +207,10 @@ create an EC2 Instance Connect Endpoint.January 24, 2023[EC2FastLaunchServiceRol
 New policyAmazon EC2 added the EC2 Fast Launch feature to enable Windows AMIs to launch instances faster by creating a set
 of pre-provisioned snapshots.November 26, 2021Amazon EC2 started tracking changesAmazon EC2 started tracking changes to its AWS managed policiesMarch 1, 2021
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Example policies for the console
 
 IAM roles
+
+All content copied from https://docs.aws.amazon.com/.

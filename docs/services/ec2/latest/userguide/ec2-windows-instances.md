@@ -1,3 +1,7 @@
+---
+title: "Configure your Amazon EC2 Windows instance"
+---
+
 # Configure your Amazon EC2 Windows instance
 
 After you've launched a Windows instance, you can log in as an administrator
@@ -107,9 +111,11 @@ Windows Server 2008 R2AWS PV version 8.3.5
 
 3 For instance types C1, M1, M2, M3, T1, T2, X1, and X1e.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 NVMe Windows driver
 releases
 
 Windows launch agents
+
+All content copied from https://docs.aws.amazon.com/.

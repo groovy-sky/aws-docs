@@ -1,3 +1,7 @@
+---
+title: "Keep an Amazon EBS root volume after an Amazon EC2 instance terminates"
+---
+
 # Keep an Amazon EBS root volume after an Amazon EC2 instance terminates
 
 By default, the Amazon EBS root volume for an instance is deleted when the instance terminates.
@@ -217,8 +221,10 @@ Status              : attached
 VolumeId            : vol-1234567890abcdef0
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Root volumes
 
 Replace a root volume
+
+All content copied from https://docs.aws.amazon.com/.

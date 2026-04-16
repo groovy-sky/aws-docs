@@ -1,3 +1,7 @@
+---
+title: "Cancel a Capacity Reservation"
+---
+
 # Cancel a Capacity Reservation
 
 You can cancel a Capacity Reservation that is in one of the following states:
@@ -66,9 +70,11 @@ Remove-EC2CapacityReservation `
     -CapacityReservationId cr-1234567890abcdef0
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Split off
 capacity
 
 Use Capacity Reservations with cluster placement groups
+
+All content copied from https://docs.aws.amazon.com/.

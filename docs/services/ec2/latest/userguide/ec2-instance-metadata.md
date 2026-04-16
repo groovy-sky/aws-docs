@@ -1,3 +1,7 @@
+---
+title: "Use instance metadata to manage your EC2 instance"
+---
+
 # Use instance metadata to manage your EC2 instance
 
 _Instance metadata_ is data about your instance that you can use to
@@ -254,8 +258,10 @@ address, etc. See [Instance identity documents for Amazon EC2 instances](instanc
 signature. See [Instance identity documents for Amazon EC2 instances](instance-identity-documents.md). 2009-04-04`instance-identity/signature`Data that can be used by other parties to verify its origin and
 authenticity. See [Instance identity documents for Amazon EC2 instances](instance-identity-documents.md). 2009-04-04
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CloudWatch action based recovery
 
 Access instance metadata
+
+All content copied from https://docs.aws.amazon.com/.

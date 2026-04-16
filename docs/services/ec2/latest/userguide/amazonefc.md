@@ -1,3 +1,7 @@
+---
+title: "Use Amazon File Cache with Amazon EC2 instances"
+---
+
 # Use Amazon File Cache with Amazon EC2 instances
 
 Amazon File Cache provides a fully managed, high-speed cache on AWS that makes it easier to process
@@ -19,8 +23,10 @@ in a shared VPC.
 
 To get started, see [Getting started with Amazon File Cache](../../../fsx/latest/filecacheguide/getting-started.md) in the _Amazon File Cache User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Amazon FSx
 
 Manage resources
+
+All content copied from https://docs.aws.amazon.com/.

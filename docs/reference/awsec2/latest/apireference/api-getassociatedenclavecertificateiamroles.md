@@ -1,3 +1,7 @@
+---
+title: "GetAssociatedEnclaveCertificateIamRoles"
+---
+
 # GetAssociatedEnclaveCertificateIamRoles
 
 Returns the IAM roles that are associated with the specified ACM (ACM) certificate.
@@ -70,8 +74,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/getassociatedenclavecertificateiamroles.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 GetAllowedImagesSettings
 
 GetAssociatedIpv6PoolCidrs
+
+All content copied from https://docs.aws.amazon.com/.

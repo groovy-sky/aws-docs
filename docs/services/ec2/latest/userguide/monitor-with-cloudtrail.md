@@ -1,3 +1,7 @@
+---
+title: "Log Amazon EC2 API calls using AWS CloudTrail"
+---
+
 # Log Amazon EC2 API calls using AWS CloudTrail
 
 The Amazon EC2 API is integrated with [AWS CloudTrail](../../../awscloudtrail/latest/userguide.md), a service that
@@ -186,8 +190,10 @@ If you have configured your AWS account to collect CloudTrail events in an
     more information, see [Getting and\
     viewing your CloudTrail log files](../../../awscloudtrail/latest/userguide/get-and-view-cloudtrail-log-files.md) in the _AWS CloudTrail User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Automate using EventBridge
 
 Monitor .NET and SQL Server applications
+
+All content copied from https://docs.aws.amazon.com/.

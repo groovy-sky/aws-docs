@@ -1,3 +1,7 @@
+---
+title: "AWS Nitro Enclaves"
+---
+
 # AWS Nitro Enclaves
 
 The following API actions are available for AWS Certificate Manager (ACM) for Nitro
@@ -9,8 +13,10 @@ Enclaves.
 
 - [GetAssociatedEnclaveCertificateIamRoles](api-getassociatedenclavecertificateiamroles.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AWS Network Manager actions
 
 AWS Outposts actions
+
+All content copied from https://docs.aws.amazon.com/.

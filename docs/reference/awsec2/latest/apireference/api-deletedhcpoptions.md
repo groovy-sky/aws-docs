@@ -1,3 +1,7 @@
+---
+title: "DeleteDhcpOptions"
+---
+
 # DeleteDhcpOptions
 
 Deletes the specified set of DHCP options. You must disassociate the set of DHCP options before you can delete it. You can disassociate the set of DHCP options by associating either a new set of options or the default set of options with the VPC.
@@ -93,8 +97,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deletedhcpoptions.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DeleteCustomerGateway
 
 DeleteEgressOnlyInternetGateway
+
+All content copied from https://docs.aws.amazon.com/.

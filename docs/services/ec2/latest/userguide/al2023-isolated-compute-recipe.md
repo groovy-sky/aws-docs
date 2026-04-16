@@ -1,3 +1,7 @@
+---
+title: "Sample Amazon Linux 2023 image description"
+---
+
 # Sample Amazon Linux 2023 image description
 
 The sample Amazon Linux 2023 image description has the following characteristics:
@@ -25,8 +29,10 @@ removes the operators' ability to login to the serial console.Disabled via kerne
 
 \\* For more information, see [Image Description Elements](https://osinside.github.io/kiwi/image_description/elements.html).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Build the sample image description
 
 Customize the sample image description
+
+All content copied from https://docs.aws.amazon.com/.

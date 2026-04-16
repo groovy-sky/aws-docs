@@ -1,3 +1,7 @@
+---
+title: "Configure simplified automatic recovery on an Amazon EC2 instance"
+---
+
 # Configure simplified automatic recovery on an Amazon EC2 instance
 
 ###### Important
@@ -242,9 +246,11 @@ If the instance’s system status check failure persists despite multiple recove
 attempts, see [Troubleshoot instances with failed\
 status checks](troubleshootinginstances.md) for additional guidance.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Verify if automatic
 recovery occurred
 
 CloudWatch action based recovery
+
+All content copied from https://docs.aws.amazon.com/.

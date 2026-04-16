@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot Amazon EC2 instance hibernation"
+---
+
 # Troubleshoot Amazon EC2 instance hibernation
 
 Use this information to help diagnose and fix issues that you might encounter when
@@ -136,9 +140,11 @@ Note that even if the instance failed to resume, without the hibernated state
 preserved, the instance can still be started in the same way as starting from the
 `stopped` state.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Start a hibernated
 instance
 
 Reboot
+
+All content copied from https://docs.aws.amazon.com/.

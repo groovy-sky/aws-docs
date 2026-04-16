@@ -1,3 +1,7 @@
+---
+title: "Performance acceleration with GPU instances"
+---
+
 # Performance acceleration with GPU instances
 
 GPU-based instances provide access to NVIDIA GPUs with thousands of compute cores. You
@@ -25,8 +29,10 @@ instance, see [AMD drivers](install-amd-driver.md).
 
 - [Get started with GPU accelerated instances](gpu-instances-started.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Monitor your CPU credits
 
 Activate NVIDIA GRID Virtual Applications
+
+All content copied from https://docs.aws.amazon.com/.

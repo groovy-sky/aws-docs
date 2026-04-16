@@ -1,3 +1,7 @@
+---
+title: "DescribeAddresses"
+---
+
 # DescribeAddresses
 
 Describes the specified Elastic IP addresses or all of your Elastic IP addresses.
@@ -144,8 +148,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describeaddresses.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeAccountAttributes
 
 DescribeAddressesAttribute
+
+All content copied from https://docs.aws.amazon.com/.

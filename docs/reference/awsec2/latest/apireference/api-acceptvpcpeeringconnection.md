@@ -1,3 +1,7 @@
+---
+title: "AcceptVpcPeeringConnection"
+---
+
 # AcceptVpcPeeringConnection
 
 Accept a VPC peering connection request. To accept a request, the VPC peering connection must
@@ -122,8 +126,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/acceptvpcpeeringconnection.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AcceptVpcEndpointConnections
 
 AdvertiseByoipCidr
+
+All content copied from https://docs.aws.amazon.com/.

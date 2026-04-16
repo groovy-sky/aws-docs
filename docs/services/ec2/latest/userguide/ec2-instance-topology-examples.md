@@ -1,3 +1,7 @@
+---
+title: "Examples for Amazon EC2 instance topology"
+---
+
 # Examples for Amazon EC2 instance topology
 
 You can use the [describe-instance-topology](../../../cli/latest/reference/ec2/describe-instance-topology.md) command to describe the
@@ -761,8 +765,10 @@ Get-EC2CapacityReservationTopology `
     -Filter @{Name="instance-type"; Values="p5en.48xlarge"}
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Prerequisites
 
 Placement groups
+
+All content copied from https://docs.aws.amazon.com/.

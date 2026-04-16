@@ -1,3 +1,7 @@
+---
+title: "IpamDiscoveredResourceCidr"
+---
+
 # IpamDiscoveredResourceCidr
 
 An IPAM discovered resource CIDR. A discovered resource is a resource CIDR monitored under a resource discovery. The following resources can be discovered: VPCs, Public IPv4 pools, VPC subnets, and Elastic IP addresses. The discovered resource CIDR is the IP address range in CIDR notation that is associated with the resource.
@@ -138,8 +142,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ipamdiscoveredresourcecidr.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 IpamDiscoveredPublicAddress
 
 IpamDiscoveryFailureReason
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Change the instance tenancy of a VPC"
+---
+
 # Change the instance tenancy of a VPC
 
 You can change the instance tenancy of a virtual private cloud (VPC) from
@@ -44,8 +48,10 @@ Edit-EC2VpcTenancy `
     -InstanceTenancy Default
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Change the tenancy of an instance
 
 Capacity Reservations
+
+All content copied from https://docs.aws.amazon.com/.

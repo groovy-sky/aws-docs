@@ -1,3 +1,7 @@
+---
+title: "Elastic IP addresses"
+---
+
 # Elastic IP addresses
 
 An _Elastic IP address_ is a static IPv4 address designed for dynamic
@@ -108,8 +112,10 @@ you can request a quota increase directly from the Service Quotas console. To re
 increase, choose **Request increase at account-level**. For more
 information, see [Amazon EC2 service quotas](ec2-resource-limits.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Use your address range
 
 Associate an Elastic IP address
+
+All content copied from https://docs.aws.amazon.com/.

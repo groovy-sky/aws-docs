@@ -1,3 +1,7 @@
+---
+title: "CreatePublicIpv4Pool"
+---
+
 # CreatePublicIpv4Pool
 
 Creates a public IPv4 address pool. A public IPv4 pool is an EC2 IP address pool required for the public IPv4 CIDRs that you own and bring to AWS to manage with IPAM. IPv6 addresses you bring to AWS, however, use IPAM pools only. To monitor the status of pool creation, use [DescribePublicIpv4Pools](api-describepublicipv4pools.md).
@@ -77,8 +81,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createpublicipv4pool.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreatePlacementGroup
 
 CreateReplaceRootVolumeTask
+
+All content copied from https://docs.aws.amazon.com/.

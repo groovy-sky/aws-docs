@@ -1,3 +1,7 @@
+---
+title: "Uninstall EC2 Instance Connect"
+---
+
 # Uninstall EC2 Instance Connect
 
 To disable EC2 Instance Connect, connect to your Linux instance and uninstall the
@@ -64,9 +68,11 @@ $ ssh -i my_ec2_private_key.pem ubuntu@ec2-a-b-c-d.us-west-2.compute.amazonaws.c
 ubuntu:~$ sudo apt-get remove ec2-instance-connect
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Connect to an instance
 
 Connect using a
 private IP and EC2 Instance Connect Endpoint
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Change the tenancy of an EC2 instance"
+---
+
 # Change the tenancy of an EC2 instance
 
 You can change the tenancy of a stopped instance after launch.
@@ -49,8 +53,10 @@ Edit-EC2InstancePlacement `
     -Tenancy Dedicated
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Launch Dedicated Instances
 
 Change the tenancy of a VPC
+
+All content copied from https://docs.aws.amazon.com/.

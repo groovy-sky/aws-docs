@@ -1,3 +1,7 @@
+---
+title: "VerifiedAccessSseSpecificationRequest"
+---
+
 # VerifiedAccessSseSpecificationRequest
 
 AWS Verified Access provides server side encryption by default to data at rest using AWS-owned KMS keys. You also have the option of using customer managed KMS keys, which can be specified using the options below.
@@ -32,8 +36,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/verifiedaccessssespecificationrequest.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 VerifiedAccessLogS3DestinationOptions
 
 VerifiedAccessSseSpecificationResponse
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Launch Amazon EC2 instances on an Amazon EC2 Dedicated Host"
+---
+
 # Launch Amazon EC2 instances on an Amazon EC2 Dedicated Host
 
 After you have allocated a Dedicated Host, you can launch instances onto it. You can't
@@ -191,8 +195,10 @@ Dedicated Host with auto-placement enabled and matching instance type:
 -Placement_Tenancy host
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Allocate a Dedicated Host
 
 Launch instances into a host resource group
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 Dedicated Hosts"
+---
+
 # Amazon EC2 Dedicated Hosts
 
 An Amazon EC2 Dedicated Host is a physical server that is fully dedicated for your use. You can optionally choose to share the instance capacity with other
@@ -288,8 +292,10 @@ New-EC2HostReservation `
        -HostIdSet h-013abcd2a00cbd123
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Spot Instance quotas
 
 Pricing and billing
+
+All content copied from https://docs.aws.amazon.com/.

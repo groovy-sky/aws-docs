@@ -1,3 +1,7 @@
+---
+title: "Manage and monitor AMI usage"
+---
+
 # Manage and monitor AMI usage
 
 AWS provides several features to help you manage and monitor your AMI usage effectively.
@@ -43,8 +47,10 @@ AMIs.
 
 - [Identify your resources referencing specified AMIs](ec2-ami-references.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AMI ancestry
 
 View your AMI usage
+
+All content copied from https://docs.aws.amazon.com/.

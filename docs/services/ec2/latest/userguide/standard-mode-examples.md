@@ -1,3 +1,7 @@
+---
+title: "Standard mode examples for burstable instances"
+---
+
 # Standard mode examples for burstable instances
 
 The following examples explain credit use when instances are configured as
@@ -74,7 +78,7 @@ example, the instance is idle and CPU utilization is 0%. During this time, the
 instance earns 144 credits, which it accrues in its
 `CPUCreditBalance`.
 
-![T3 Standard instance CPU utilization.](../../../images/awsec2/latest/userguide/images/t3-standard-graph-png.md)
+![T3 Standard instance CPU utilization.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/t3_standard_graph.png)
 
 ## Example 2: Explain credit use with T2 Standard
 
@@ -116,7 +120,7 @@ exceeds 72 credits because the unspent launch credits are accrued in the credit
 balance—the credit balance is 102 credits: 30 launch credits + 72 earned
 credits.
 
-![In period 1 for the T2 standard, the credit balance is 102 credits.](../../../images/awsec2/latest/userguide/images/t2-graph1-png.md)
+![In period 1 for the T2 standard, the credit balance is 102 credits.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/t2-graph1.png)
 
 Credit Spend Rate0 credits per 24 hours (0% CPU utilization)Credit Earn Rate72 credits per 24 hoursCredit Discard Rate0 credits per 24 hoursCredit Balance
 
@@ -139,7 +143,7 @@ but the credit balance does not increase. It plateaus at 102 credits (30 launch
 credits + 72 earned credits). The credit balance has reached its limit of 72
 accrued earned credits, so newly earned credits are discarded.
 
-![The credit balance has reached its limit of 72 accrued earned credits.](../../../images/awsec2/latest/userguide/images/t2-graph2-png.md)
+![The credit balance has reached its limit of 72 accrued earned credits.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/t2-graph2.png)
 
 Credit Spend Rate0 credits per 24 hours (0% CPU utilization)Credit Earn Rate72 credits per 24 hours (3 credits per hour)Credit Discard Rate72 credits per 24 hours (100% of credit earn rate)Credit Balance
 
@@ -162,7 +166,7 @@ balance decreases because the accrued _launch_
 credits are spent first, while newly earned credits are discarded because the
 credit balance is already at its limit of 72 earned credits.
 
-![Newly earned credits are discarded because the credit balance is already at its limit.](../../../images/awsec2/latest/userguide/images/t2-graph3-png.md)
+![Newly earned credits are discarded because the credit balance is already at its limit.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/t2-graph3.png)
 
 Credit Spend Rate28.8 credits per 24 hours (1.2 credits per hour, 2% CPU
 utilization, 40% of credit earn rate)—30 credits over 25
@@ -192,7 +196,7 @@ that exceed the limit are discarded. The balance plateaus at 72 credits, which i
 different from the plateau of 102 credits during Period 2, because there are no
 accrued launch credits.
 
-![The balance plateaus at 72 credits, because there are no accrued launch credits.](../../../images/awsec2/latest/userguide/images/t2-graph4-png.md)
+![The balance plateaus at 72 credits, because there are no accrued launch credits.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/t2-graph4.png)
 
 Credit Spend Rate28.8 credits per 24 hours (1.2 credits per hour, 2% CPU
 utilization, 40% of credit earn rate)—13.2 credits over 11
@@ -215,7 +219,7 @@ requires 36 credits. The instance earns nine credits in the same three hours,
 which results in a net balance decrease of 27 credits. At the end of three hours,
 the credit balance is 45 accrued earned credits.
 
-![At the end of three hours, the credit balance is 45 accrued earned credits.](../../../images/awsec2/latest/userguide/images/t2-graph5-png.md)
+![At the end of three hours, the credit balance is 45 accrued earned credits.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/t2-graph5.png)
 
 Credit Spend Rate288 credits per 24 hours (12 credits per hour, 20% CPU
 utilization, 400% of credit earn rate)—36 credits over 3
@@ -249,7 +253,7 @@ earned credits in the balance is below the limit. No earned credits are discarde
 Furthermore, the instance earns more credits than it spends, resulting in an
 increase in the credit balance.
 
-![The instance earns more credits than it spends.](../../../images/awsec2/latest/userguide/images/t2-graph6-png.md)
+![The instance earns more credits than it spends.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/t2-graph6.png)
 
 Credit Spend Rate28.8 credits per 24 hours (1.2 credits per hour, 2% CPU
 utilization, 40% of credit earn rate)—18 credits over 15
@@ -276,7 +280,7 @@ credits were spent in Period 3. A running instance cannot get more launch credit
 After its credit balance limit is reached, any earned credits that exceed the
 limit are discarded.
 
-![Earned credits that exceed the limit are discarded.](../../../images/awsec2/latest/userguide/images/t2-graph7-png.md)
+![Earned credits that exceed the limit are discarded.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/t2-graph7.png)
 
 Credit Spend Rate0 credits per 24 hours (0% CPU utilization)Credit Earn Rate72 credits per 24 hoursCredit Discard Rate72 credits per 24 hours (100% of credit earn rate)Credit Balance
 
@@ -291,8 +295,10 @@ number of credits that an instance can earn in 24 hours. For more information
 about credit balance limits, see the [credit\
 table](burstable-credits-baseline-concepts.md#burstable-performance-instances-credit-table).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Concepts
 
 Configure burstable performance instances
+
+All content copied from https://docs.aws.amazon.com/.

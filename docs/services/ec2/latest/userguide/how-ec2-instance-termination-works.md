@@ -1,3 +1,7 @@
+---
+title: "How instance termination works"
+---
+
 # How instance termination works
 
 When you terminate an instance, changes are registered at the operating system (OS)
@@ -9,7 +13,7 @@ data stored in the instance RAM is erased. Any Elastic IP addresses associated w
 instance are detached. For Amazon EBS root volumes and data volumes, the outcome depends on
 the **Delete on termination** setting of each volume.
 
-![The IP addresses, RAM, instance store volumes, and EBS root volume are lost when an instance is terminated.](../../../images/awsec2/latest/userguide/images/terminate-instance-png.md)
+![The IP addresses, RAM, instance store volumes, and EBS root volume are lost when an instance is terminated.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/terminate-instance.png)
 
 ## Considerations
 
@@ -104,8 +108,10 @@ attribute is set to `false`.
 You can use AWS Fault Injection Service to test how your application responds when your instance is
 terminated. For more information, see the [AWS Fault Injection Service User Guide](../../../fis/latest/userguide/what-is.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Terminate
 
 Methods for terminating an instance
+
+All content copied from https://docs.aws.amazon.com/.

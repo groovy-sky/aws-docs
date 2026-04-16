@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot an Amazon EC2 Linux instance booting from wrong volume"
+---
+
 # Troubleshoot an Amazon EC2 Linux instance booting from wrong volume
 
 In some situations, a volume other than the volume attached to
@@ -89,8 +93,10 @@ use as the root volume, you must perform the above procedure again and change th
 back to its original value. Otherwise, the other instance does not boot because the ramdisk is
 unable to find the volume with the label `/`.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Linux instance failed status checks
 
 Windows instance RDP issues
+
+All content copied from https://docs.aws.amazon.com/.

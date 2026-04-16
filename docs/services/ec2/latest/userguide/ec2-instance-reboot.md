@@ -1,3 +1,7 @@
+---
+title: "Reboot your Amazon EC2 instance"
+---
+
 # Reboot your Amazon EC2 instance
 
 An instance reboot is equivalent to an operating system reboot. In most cases, it takes only
@@ -81,8 +85,10 @@ Restart-EC2Instance -InstanceId i-1234567890abcdef0
 You can use AWS Fault Injection Service to test how your application responds when your instance is rebooted. For more
 information, see the [AWS Fault Injection Service User Guide](../../../fis/latest/userguide/what-is.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Troubleshoot
 
 Terminate
+
+All content copied from https://docs.aws.amazon.com/.

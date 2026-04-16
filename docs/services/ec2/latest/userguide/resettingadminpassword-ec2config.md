@@ -1,3 +1,7 @@
+---
+title: "Reset Windows admin password for EC2 instance using EC2Config"
+---
+
 # Reset Windows admin password for EC2 instance using EC2Config
 
 If you have lost your Windows administrator password and are using a Windows AMI
@@ -193,7 +197,7 @@ After you have attached the volume to the temporary instance as a secondary volu
        the state from `Disabled` to `Enabled` and
        save the file.
 
-      ![The area of the Config.xml file to change](../../../images/awsec2/latest/userguide/images/pwreset-config-png.md)
+      ![The area of the Config.xml file to change](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/pwreset_config.png)
 2. After you have modified the configuration file, detach the secondary volume from the temporary instance as follows:
 1. Using the **Disk Management** utility, bring the
        volume offline.
@@ -245,8 +249,10 @@ For more information, see [Amazon EC2 instance state changes](ec2-instance-lifec
     **Instance State**,
     **Terminate instance**.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Reset password using EC2Launch
 
 Troubleshoot Sysprep issues
+
+All content copied from https://docs.aws.amazon.com/.

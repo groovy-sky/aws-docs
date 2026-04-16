@@ -1,3 +1,7 @@
+---
+title: "DisableFastSnapshotRestoreErrorItem"
+---
+
 # DisableFastSnapshotRestoreErrorItem
 
 Contains information about the errors that occurred when disabling fast snapshot restores.
@@ -30,8 +34,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/disablefastsnapshotrestoreerroritem.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DirectoryServiceAuthenticationRequest
 
 DisableFastSnapshotRestoreStateError
+
+All content copied from https://docs.aws.amazon.com/.

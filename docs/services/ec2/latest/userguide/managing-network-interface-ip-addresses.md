@@ -1,3 +1,7 @@
+---
+title: "Manage the IP addresses for your network interface"
+---
+
 # Manage the IP addresses for your network interface
 
 You can manage the following IP addresses for your network interfaces:
@@ -202,8 +206,10 @@ cmdlet to disassociate an Elastic IP address from the primary private IPv4 addre
 Unregister-EC2Address -AssociationId eipassoc-2bebb745a1EXAMPLE
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Network interface attachments
 
 Modify network interface attributes
+
+All content copied from https://docs.aws.amazon.com/.

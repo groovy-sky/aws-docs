@@ -1,3 +1,7 @@
+---
+title: "Monitor your instances using CloudWatch"
+---
+
 # Monitor your instances using CloudWatch
 
 You can monitor your instances using Amazon CloudWatch, which collects and processes raw data from
@@ -33,8 +37,10 @@ For Amazon CloudWatch billing and cost information, see [CloudWatch billing and 
 
 - [Create alarms that stop, terminate, reboot, or recover an instance](usingalarmactions.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create custom event windows
 
 Instance alarms
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Exchange Convertible Reserved Instances"
+---
+
 # Exchange Convertible Reserved Instances
 
 You can exchange one or more Convertible Reserved Instances for another Convertible Reserved Instance with a different configuration,
@@ -184,7 +188,7 @@ the reservation. To exchange two `t2.micro` instances for an
 2. Exchange one of the new `t2.micro` Convertible Reserved Instances for an
     `m4.xlarge` Convertible Reserved Instance.
 
-![Modifying and exchange Reserved Instances.](../../../images/awsec2/latest/userguide/images/ri-split-cri-multiple-png.md)
+![Modifying and exchange Reserved Instances.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ri-split-cri-multiple.png)
 
 ###### Example: Convertible Reserved Instance with a single instance
 
@@ -200,7 +204,7 @@ instance:
 2. Exchange one of the new `t2.medium` Convertible Reserved Instances for an
     `m3.medium` Convertible Reserved Instance.
 
-![Modify and exchange Reserved Instances.](../../../images/awsec2/latest/userguide/images/ri-split-cri-single-png.md)
+![Modify and exchange Reserved Instances.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ri-split-cri-single.png)
 
 For more information, see [Support for modifying instance sizes](ri-modifying.md#ri-modification-instancemove) and [Submit exchange requests](#ri-exchange-process).
 
@@ -259,8 +263,10 @@ PowerShell
 3. Perform the exchange by using the [Approve-EC2ReservedInstancesExchangeQuote](../../../powershell/latest/reference/items/approve-ec2reservedinstancesexchangequote.md)
     cmdlet
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Modify Reserved Instances
 
 Reserved Instance quotas
+
+All content copied from https://docs.aws.amazon.com/.

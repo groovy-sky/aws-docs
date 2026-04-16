@@ -1,3 +1,7 @@
+---
+title: "Create an AMI using Windows Sysprep with EC2Config"
+---
+
 # Create an AMI using Windows Sysprep with EC2Config
 
 When you create an image from an instance with the EC2Config service installed, EC2Config
@@ -332,8 +336,10 @@ settings files, see [EC2Config settings files](ec2config-service.md#UsingConfigX
 running Windows Sysprep from the command line, see
 `Ec2ConfigService\Scripts\InstallUpdates.ps1`.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Use Windows Sysprep with EC2Launch
 
 Copy an AMI
+
+All content copied from https://docs.aws.amazon.com/.

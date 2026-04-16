@@ -1,3 +1,7 @@
+---
+title: "Install the latest version of EC2Config"
+---
+
 # Install the latest version of EC2Config
 
 ###### Note
@@ -105,8 +109,10 @@ following command and then try again:
 Verify the installation by checking `C:\Program Files\Amazon\` for the
 `Ec2ConfigService` directory.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 EC2Config service
 
 Configure proxy settings
+
+All content copied from https://docs.aws.amazon.com/.

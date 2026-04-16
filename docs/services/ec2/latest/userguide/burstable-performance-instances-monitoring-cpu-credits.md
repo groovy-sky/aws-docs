@@ -1,3 +1,7 @@
+---
+title: "Monitor CPU credits for burstable instances"
+---
+
 # Monitor CPU credits for burstable instances
 
 EC2 sends metrics to Amazon CloudWatch. You can see the CPU credit metrics in the Amazon EC2
@@ -248,8 +252,10 @@ Finally, when the instance terminates, any surplus credits tracked by the
 `unlimited` to `standard`, any remaining
 `CPUSurplusCreditBalance` is also charged.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Configure burstable performance instances
 
 GPU instances
+
+All content copied from https://docs.aws.amazon.com/.

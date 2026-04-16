@@ -1,3 +1,7 @@
+---
+title: "Modify the Capacity Reservation settings of your instance"
+---
+
 # Modify the Capacity Reservation settings of your instance
 
 You can modify the following Capacity Reservation settings for a stopped instance at any time:
@@ -184,8 +188,10 @@ Edit-EC2InstanceCapacityReservationAttribute `
     -CapacityReservationTarget_CapacityReservationId cr-1234567890abcdef0
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Modify Capacity Reservation
 
 Move capacity
+
+All content copied from https://docs.aws.amazon.com/.

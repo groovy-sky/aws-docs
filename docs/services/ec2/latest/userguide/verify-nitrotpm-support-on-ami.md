@@ -1,3 +1,7 @@
+---
+title: "Verify that an AMI is enabled for NitroTPM"
+---
+
 # Verify that an AMI is enabled for NitroTPM
 
 To enable NitroTPM for an instance, you must launch the instance using an AMI
@@ -109,8 +113,10 @@ Get-EC2Image `
     -Filter @{Name="tpm-support; Values="v2.0"} | Select ImageId
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Enable a Linux AMI for NitroTPM
 
 Enable or stop using NitroTPM
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "AWS Site-to-Site VPN actions"
+---
+
 # AWS Site-to-Site VPN actions
 
 The following API actions are available for AWS Site-to-Site VPN. To learn more about Site-to-Site VPN, see
@@ -67,8 +71,10 @@ the [Site-to-Site VPN product page](https://aws.amazon.com/vpn) and the [Site-to
 
 - [DescribeVpnConcentrators](api-describevpnconcentrators.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Recycle Bin
 
 AWS Transit Gateway actions
+
+All content copied from https://docs.aws.amazon.com/.

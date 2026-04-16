@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot Sysprep issues with Amazon EC2 Windows instances"
+---
+
 # Troubleshoot Sysprep issues with Amazon EC2 Windows instances
 
 If you experience problems or receive error messages during image preparations, review
@@ -67,8 +71,10 @@ file
 3. Run Sysprep again. Note that this configuration change will delete the
     built-in administrator user profile after Sysprep completes.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Reset password using EC2Config
 
 EC2Rescue for Linux instances
+
+All content copied from https://docs.aws.amazon.com/.

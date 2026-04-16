@@ -1,3 +1,7 @@
+---
+title: "Instance store volume limits for EC2 instances"
+---
+
 # Instance store volume limits for EC2 instances
 
 The number, size, and type of instance store volumes are determined by the instance type.
@@ -208,8 +212,10 @@ Disks.SizeInGB    : 3800
 Disks.Type        : ssd
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Data persistence
 
 SSD instance store volumes
+
+All content copied from https://docs.aws.amazon.com/.

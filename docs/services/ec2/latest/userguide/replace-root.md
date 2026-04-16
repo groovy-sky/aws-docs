@@ -1,3 +1,7 @@
+---
+title: "Replace the root volume for an Amazon EC2 instance without stopping it"
+---
+
 # Replace the root volume for an Amazon EC2 instance without stopping it
 
 Amazon EC2 enables you to replace the root Amazon EBS volume for a running
@@ -412,8 +416,10 @@ Alternatively, specify the `instance-id` filter to filter the results by instanc
 PS C:\> Get-EC2ReplaceRootVolumeTask -Filters @{Name = 'instance-id'; Values = 'i-1234567890abcdef0'} | Format-Table
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Keep root volume after instance termination
 
 Device names for volumes
+
+All content copied from https://docs.aws.amazon.com/.

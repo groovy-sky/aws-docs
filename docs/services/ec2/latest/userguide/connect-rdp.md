@@ -1,3 +1,7 @@
+---
+title: "Connect to your Windows instance using an RDP client"
+---
+
 # Connect to your Windows instance using an RDP client
 
 You can connect to your Windows instance using an RDP client as follows.
@@ -151,10 +155,12 @@ and selecting **Properties**. Choose **Remote**
 **settings**, and choose **Select Users** to add the
 user to the **Remote Desktop Users** group.
 
-![System Properties window.](../../../images/awsec2/latest/userguide/images/windows-connect-properties-rdp-png.md)
+![System Properties window.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/windows-connect-properties-rdp.png)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Connect to your Windows instance using RDP
 
 Connect using Fleet Manager
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Manage the IPv6 addresses for your EC2 instances"
+---
+
 # Manage the IPv6 addresses for your EC2 instances
 
 If your VPC and subnet have IPv6 CIDR blocks associated with them, you can assign an
@@ -319,9 +323,11 @@ Unregister-EC2Ipv6AddressList `
     -Ipv6Address 2001:db8::1234:5678:1.2.3.4
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 IPv4 addresses
 
 Secondary IP
 addresses
+
+All content copied from https://docs.aws.amazon.com/.

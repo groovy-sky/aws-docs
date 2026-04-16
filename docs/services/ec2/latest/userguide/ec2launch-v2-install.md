@@ -1,3 +1,7 @@
+---
+title: "Install the latest version of EC2Launch v2"
+---
+
 # Install the latest version of EC2Launch v2
 
 You can use one of the following methods to install the
@@ -238,7 +242,7 @@ the current installation and enable telemetry. This configuration performs an
 install without replacing the agent configuration file, and sets the
 `EC2LAUNCH_TELEMETRY` environment variable to a value of `1`.
 
-![EC2Launch v2 upgrade configuration.](../../../images/awsec2/latest/userguide/images/ec2launchv2-clean-default-config-png.md)
+![EC2Launch v2 upgrade configuration.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ec2launchv2-clean-default-config.png)
 
 Command line
 
@@ -324,8 +328,10 @@ For the latest version of EC2Launch v2, see [EC2Launch v2 version history](ec2la
 You can receive notifications when new versions of the EC2Launch v2 service are
 released. For more information, see [Subscribe to EC2 Windows launch agent notifications](launch-agents-subscribe-notifications.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 EC2Launch v2
 
 Configure EC2Launch v2
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Recover deleted EBS volumes, EBS snapshots, and EBS-backed AMIs with Recycle Bin"
+---
+
 # Recover deleted EBS volumes, EBS snapshots, and EBS-backed AMIs with Recycle Bin
 
 Recycle Bin is a data recovery feature that enables you to restore accidentally
@@ -133,8 +137,10 @@ allocation purposes when using AWS Billing and Cost Management.
 For more information, see [AWS-generated cost\
 allocation tags](../../../awsaccountbilling/latest/aboutv2/aws-tags.md) in the _AWS Billing and Cost Management User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 FAQs
 
 How does it work?
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Modify an active Capacity Reservation"
+---
+
 # Modify an active Capacity Reservation
 
 If you have an existing Capacity Reservation which isn't a good fit for the workload that needs the
@@ -87,10 +91,12 @@ Edit-EC2CapacityReservation `
     -InstanceCount 8
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Launch instances into
 Capacity Reservation
 
 Modify instance Capacity Reservation
 settings
+
+All content copied from https://docs.aws.amazon.com/.

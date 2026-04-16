@@ -1,3 +1,7 @@
+---
+title: "Device names for volumes on Amazon EC2 instances"
+---
+
 # Device names for volumes on Amazon EC2 instances
 
 When you attach a volume to your instance, you include a device name for the volume. This
@@ -244,8 +248,10 @@ devices and their mount points, use the **lsblk** command (Linux instances),
 or the Disk Management utility or the **diskpart** command (Windows
 instances).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Replace a root volume
 
 Block device mappings
+
+All content copied from https://docs.aws.amazon.com/.

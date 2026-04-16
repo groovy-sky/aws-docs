@@ -1,3 +1,7 @@
+---
+title: "DisassociateSecurityGroupVpc"
+---
+
 # DisassociateSecurityGroupVpc
 
 Disassociates a security group from a VPC. You cannot disassociate the security group if any Elastic network interfaces in the associated VPC are still associated with the security group.
@@ -80,8 +84,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/disassociatesecuritygroupvpc.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DisassociateRouteTable
 
 DisassociateSubnetCidrBlock
+
+All content copied from https://docs.aws.amazon.com/.

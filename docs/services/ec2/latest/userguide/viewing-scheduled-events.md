@@ -1,3 +1,7 @@
+---
+title: "View scheduled events that affect your Amazon EC2 instances"
+---
+
 # View scheduled events that affect your Amazon EC2 instances
 
 In addition to receiving notification of scheduled events in email, you can check
@@ -13,14 +17,14 @@ Console
 2. The dashboard displays any resources with an associated event
     under **Scheduled events**.
 
-![Viewing events using the dashboard.](../../../images/awsec2/latest/userguide/images/dashboard-scheduled-events-png.md)
+![Viewing events using the dashboard.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/dashboard-scheduled-events.png)
 
 3. For more detail, choose **Events** in the
     navigation pane. Any resources with an associated event are
     displayed. You can filter by characteristics such as event type,
     resource type, and Availability Zone.
 
-![Viewing events using the Events page.](../../../images/awsec2/latest/userguide/images/events-instance-scheduled-stop-png.md)
+![Viewing events using the Events page.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/events-instance-scheduled-stop.png)
 
 AWS CLI
 
@@ -191,9 +195,11 @@ For more information, see [Getting\
 started with your AWS Health Dashboard](../../../health/latest/ug/getting-started-health-dashboard.md) in the
 _AWS Health User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Manage instances
 scheduled for maintenance
 
 Customize scheduled event notifications
+
+All content copied from https://docs.aws.amazon.com/.

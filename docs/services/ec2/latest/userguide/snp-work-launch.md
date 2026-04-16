@@ -1,3 +1,7 @@
+---
+title: "Enable AMD SEV-SNP for an EC2 instance"
+---
+
 # Enable AMD SEV-SNP for an EC2 instance
 
 You can launch an instance with AMD SEV-SNP enabled. You can't enable AMD SEV-SNP after launch.
@@ -96,8 +100,10 @@ indicates that AMD SEV-SNP is enabled for the instance.
 "cpuOptions": {"AmdSevSnp": "enabled"}
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Find supported instance types
 
 Attestation with AMD SEV-SNP
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "EC2 instance hostnames and domains"
+---
+
 # EC2 instance hostnames and domains
 
 Understanding EC2 instance hostnames and domains is important for effectively managing and accessing your Amazon EC2 instances. Each EC2 instance can have different types of hostnames - private and public - that serve different purposes and follow specific naming conventions.
@@ -10,8 +14,10 @@ This topic explains the structure of EC2 instance hostnames, how they're constru
 
 - [Hostname types](hostname-types.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 IPv4 addresses on Windows
 
 Understanding EC2 instance hostnames and domains
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Describe your key pairs"
+---
+
 # Describe your key pairs
 
 You can describe the key pairs that you stored in Amazon EC2. You can also retrieve the public
@@ -31,7 +35,7 @@ Console
 3. You can view the information about each public key in the **Key**
 **pairs** table.
 
-![Key pairs table.](../../../images/awsec2/latest/userguide/images/key-pairs-describe-console-png.md)
+![Key pairs table.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/key-pairs-describe-console.png)
 
 4. To view a public key's tags, select the checkbox next to the key, and then
     choose **Actions**, **Manage tags**.
@@ -239,8 +243,10 @@ KeyName
 key-pair-name
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create a key pair
 
 Delete your key pair
+
+All content copied from https://docs.aws.amazon.com/.

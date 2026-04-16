@@ -1,3 +1,7 @@
+---
+title: "Paid AMIs in the AWS Marketplace for Amazon EC2 instances"
+---
+
 # Paid AMIs in the AWS Marketplace for Amazon EC2 instances
 
 A _paid AMI_ is an AMI that is listed for sale in the AWS Marketplace. The
@@ -57,8 +61,10 @@ charged for using any paid or supported AMIs during the month. This bill is sepa
 from your regular Amazon EC2 bill. For more information, see [Paying for\
 products](../../../marketplace/latest/buyerguide/buyer-paying-for-products.md) in the _AWS Marketplace Buyer Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Systems Manager public parameters
 
 Find a paid AMI
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Validate a NitroTPM Attestation Document"
+---
+
 # Validate a NitroTPM Attestation Document
 
 ###### Note
@@ -216,8 +220,10 @@ validateCertsPath(certChain, rootCertficate) {
 }
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 NitroTPM Attestation Document
 
 Integrating with AWS KMS
+
+All content copied from https://docs.aws.amazon.com/.

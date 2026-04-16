@@ -1,3 +1,7 @@
+---
+title: "AcceptAddressTransfer"
+---
+
 # AcceptAddressTransfer
 
 Accepts an Elastic IP address transfer. For more information, see [Accept a transferred Elastic IP address](../../../../services/vpc/latest/userguide/vpc-eips.md#using-instance-addressing-eips-transfer-accept) in the _Amazon VPC User Guide_.
@@ -77,8 +81,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/acceptaddresstransfer.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Actions
 
 AcceptCapacityReservationBillingOwnership
+
+All content copied from https://docs.aws.amazon.com/.

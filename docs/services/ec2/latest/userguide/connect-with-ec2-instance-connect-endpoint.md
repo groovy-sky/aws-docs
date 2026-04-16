@@ -1,3 +1,7 @@
+---
+title: "Connect to your instances using a private IP address and EC2 Instance Connect Endpoint"
+---
+
 # Connect to your instances using a private IP address and EC2 Instance Connect Endpoint
 
 EC2 Instance Connect Endpoint allows you to connect securely to an instance from the internet, without
@@ -72,7 +76,7 @@ point for traffic destined to your instances in the VPC. If the route table for 
 allows traffic from subnet A, then you can use the endpoint to reach instances in subnet
 B.
 
-![Overview of the EC2 Instance Connect Endpoint flow.](../../../images/awsec2/latest/userguide/images/ec2-instance-connect-endpoint-png.md)
+![Overview of the EC2 Instance Connect Endpoint flow.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ec2-instance-connect-endpoint.png)
 
 ## Considerations
 
@@ -147,8 +151,10 @@ using the EC2 Instance Connect Endpoint console experience, set **Max tunnel dur
 credentials. If your IAM credentials expire early, terminate the connection to
 your instance by closing the browser page.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Uninstall EC2 Instance Connect
 
 Permissions
+
+All content copied from https://docs.aws.amazon.com/.

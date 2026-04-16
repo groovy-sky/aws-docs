@@ -1,3 +1,7 @@
+---
+title: "DescribeCapacityBlockOfferings"
+---
+
 # DescribeCapacityBlockOfferings
 
 Describes Capacity Block offerings available for purchase in the AWS Region that you're currently using. With Capacity Blocks, you can
@@ -155,8 +159,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describecapacityblockofferings.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeCapacityBlockExtensionOfferings
 
 DescribeCapacityBlocks
+
+All content copied from https://docs.aws.amazon.com/.

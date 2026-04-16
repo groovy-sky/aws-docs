@@ -1,3 +1,7 @@
+---
+title: "ModifyTransitGatewayPrefixListReference"
+---
+
 # ModifyTransitGatewayPrefixListReference
 
 Modifies a reference (route) to a prefix list in a specified transit gateway route table.
@@ -131,8 +135,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifytransitgatewayprefixlistreference.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 ModifyTransitGatewayMeteringPolicy
 
 ModifyTransitGatewayVpcAttachment
+
+All content copied from https://docs.aws.amazon.com/.

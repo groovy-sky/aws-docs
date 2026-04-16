@@ -1,3 +1,7 @@
+---
+title: "Split off capacity from an existing Capacity Reservation"
+---
+
 # Split off capacity from an existing Capacity Reservation
 
 You can split off capacity from an existing Capacity Reservation to create a new reservation. By
@@ -179,8 +183,10 @@ New-EC2CapacityReservationBySplitting `
     -InstanceCount 10
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Move capacity
 
 Cancel a Capacity Reservation
+
+All content copied from https://docs.aws.amazon.com/.

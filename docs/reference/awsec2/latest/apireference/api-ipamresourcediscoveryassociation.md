@@ -1,3 +1,7 @@
+---
+title: "IpamResourceDiscoveryAssociation"
+---
+
 # IpamResourceDiscoveryAssociation
 
 An IPAM resource discovery association. An associated resource discovery is a resource discovery that has been associated with an IPAM. IPAM aggregates the resource CIDRs discovered by the associated resource discovery.
@@ -132,8 +136,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ipamresourcediscoveryassociation.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 IpamResourceDiscovery
 
 IpamResourceTag
+
+All content copied from https://docs.aws.amazon.com/.

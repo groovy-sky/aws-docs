@@ -1,3 +1,7 @@
+---
+title: "AWS Transit Gateway actions"
+---
+
 # AWS Transit Gateway actions
 
 The following API actions are available for AWS Transit Gateway. For more
@@ -143,8 +147,10 @@ information, see the [Amazon VPC Transit Gateways](../../../../services/vpc/late
 
 - [SearchTransitGatewayRoutes](api-searchtransitgatewayroutes.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AWS Site-to-Site VPN actions
 
 AWS Verified Access actions
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Best practices for Amazon EC2 Spot"
+---
+
 # Best practices for Amazon EC2 Spot
 
 Amazon EC2 provides access to spare EC2 compute capacity in the AWS Cloud through Spot Instances at
@@ -256,8 +260,10 @@ DO NOT USE. RequestSpotInstances is legacy API with no planned investment.
 
 No
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Spot Instances
 
 How Spot Instances work
+
+All content copied from https://docs.aws.amazon.com/.

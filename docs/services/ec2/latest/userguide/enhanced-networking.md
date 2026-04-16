@@ -1,3 +1,7 @@
+---
+title: "Enhanced networking on Amazon EC2 instances"
+---
+
 # Enhanced networking on Amazon EC2 instances
 
 Enhanced networking uses single root I/O virtualization (SR-IOV) to provide
@@ -50,8 +54,10 @@ considerations](ena-nitro-perf.md)
 
 - [Optimize network performance on Windows](enhanced-networking-os.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Bandwidth weighting
 
 Elastic Network Adapter (ENA)
+
+All content copied from https://docs.aws.amazon.com/.

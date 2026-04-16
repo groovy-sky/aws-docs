@@ -1,3 +1,7 @@
+---
+title: "Set the boot mode of an Amazon EC2 AMI"
+---
+
 # Set the boot mode of an Amazon EC2 AMI
 
 By default, an AMI inherits the boot mode of the EC2 instance used to create the AMI.
@@ -315,8 +319,10 @@ The following is example output.
 uefi
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Operating system boot mode
 
 UEFI variables
+
+All content copied from https://docs.aws.amazon.com/.

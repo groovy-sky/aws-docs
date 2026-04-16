@@ -1,3 +1,7 @@
+---
+title: "DeprovisionIpamPoolCidr"
+---
+
 # DeprovisionIpamPoolCidr
 
 Deprovision a CIDR provisioned from an IPAM pool. If you deprovision a CIDR from a pool that has a source pool, the CIDR is recycled back into the source pool. For more information, see [Deprovision pool CIDRs](../../../../services/vpc/latest/ipam/depro-pool-cidr-ipam.md) in the _Amazon VPC IPAM User Guide_.
@@ -76,8 +80,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deprovisionipampoolcidr.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DeprovisionIpamByoasn
 
 DeprovisionPublicIpv4PoolCidr
+
+All content copied from https://docs.aws.amazon.com/.

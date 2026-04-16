@@ -1,3 +1,7 @@
+---
+title: "S3Storage"
+---
+
 # S3Storage
 
 Describes the storage parameters for Amazon S3 and Amazon S3 buckets for an instance store-backed
@@ -60,8 +64,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/s3storage.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 S3ObjectTag
 
 ScheduledInstance
+
+All content copied from https://docs.aws.amazon.com/.

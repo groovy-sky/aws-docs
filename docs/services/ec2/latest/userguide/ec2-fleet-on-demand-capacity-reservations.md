@@ -1,3 +1,7 @@
+---
+title: "Use Capacity Reservations to reserve On-Demand capacity in EC2 Fleet"
+---
+
 # Use Capacity Reservations to reserve On-Demand capacity in EC2 Fleet
 
 With On-Demand Capacity Reservations, you can reserve compute capacity for your On-Demand Instances in a
@@ -56,9 +60,11 @@ fleet, and viewing how many Capacity Reservations are remaining, see [Tutorial: 
 the [On-Demand\
 Capacity Reservation FAQs](https://aws.amazon.com/ec2/faqs).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Capacity
 Rebalancing
 
 Work with EC2 Fleet
+
+All content copied from https://docs.aws.amazon.com/.

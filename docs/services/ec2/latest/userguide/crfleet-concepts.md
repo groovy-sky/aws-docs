@@ -1,3 +1,7 @@
+---
+title: "Capacity Reservation Fleet concepts and planning"
+---
+
 # Capacity Reservation Fleet concepts and planning
 
 The following information describes how to plan a Capacity Reservation Fleet and describes
@@ -125,8 +129,10 @@ the instance types specified for the Fleet should be prioritized for use.
 
 Lower priority values indicate a higher priority for use.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Capacity Reservation Fleets
 
 Create
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Cancel a Spot Instance request"
+---
+
 # Cancel a Spot Instance request
 
 If you no longer want your Spot Instance request, you can cancel it. You can only cancel Spot Instance
@@ -58,8 +62,10 @@ cmdlet.
 Stop-EC2SpotInstanceRequest -SpotInstanceRequestId sir-0e54a519c9EXAMPLE
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Tag Spot Instance requests
 
 Manage your Spot Instances
+
+All content copied from https://docs.aws.amazon.com/.

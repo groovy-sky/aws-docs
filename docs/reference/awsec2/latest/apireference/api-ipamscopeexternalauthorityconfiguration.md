@@ -1,3 +1,7 @@
+---
+title: "IpamScopeExternalAuthorityConfiguration"
+---
+
 # IpamScopeExternalAuthorityConfiguration
 
 The configuration that links an Amazon VPC IPAM scope to an external authority system. It specifies the type of external system and the external resource identifier that identifies your account or instance in that system.
@@ -34,8 +38,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ipamscopeexternalauthorityconfiguration.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 IpamScope
 
 IpPermission
+
+All content copied from https://docs.aws.amazon.com/.

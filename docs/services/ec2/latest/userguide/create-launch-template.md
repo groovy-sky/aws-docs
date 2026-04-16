@@ -1,3 +1,7 @@
+---
+title: "Create an Amazon EC2 launch template"
+---
+
 # Create an Amazon EC2 launch template
 
 You can create an Amazon EC2 launch template by specifying your own values for the instance
@@ -500,7 +504,7 @@ _template remains unchanged._ When an instance is launched using this
 launch template, the AMI ID resolves to the new
 `ami-00112233445566778`.
 
-![Using Systems Manager parameters in the Parameter Store to update a launch template.](../../../images/awsec2/latest/userguide/images/launch-template-ami-alias-png.md)
+![Using Systems Manager parameters in the Parameter Store to update a launch template.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/launch-template-ami-alias.png)
 
 ### Systems Manager parameter format for AMI IDs
 
@@ -782,9 +786,11 @@ attribute-based instance selection, you must specify the AMI ID.
 - Amazon EC2 Auto Scaling provides other restrictions. For more information, see [Use AWS Systems Manager parameters instead of AMI IDs in launch\
 templates](../../../autoscaling/ec2/userguide/using-systems-manager-parameters.md) in the _Amazon EC2 Auto Scaling User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Control launching instances
 
 Modify (manage
 versions)
+
+All content copied from https://docs.aws.amazon.com/.

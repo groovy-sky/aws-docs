@@ -1,3 +1,7 @@
+---
+title: "Grant permission to tag Amazon EC2 resources during creation"
+---
+
 # Grant permission to tag Amazon EC2 resources during creation
 
 Some resource-creating Amazon EC2 API actions enable you to specify tags when you
@@ -168,8 +172,10 @@ specified as a value in the condition.
 For example IAM policies, see [Example policies to control access the Amazon EC2 API](examplepolicies-ec2.md). For more information, see [Conditions with multiple context keys or values](../../../iam/latest/userguide/reference-policies-condition-logic-multiple-context-keys-or-values.md) in the
 _IAM User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Tag your resources
 
 Add and remove tags
+
+All content copied from https://docs.aws.amazon.com/.

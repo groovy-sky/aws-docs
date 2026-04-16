@@ -1,3 +1,7 @@
+---
+title: "Spot Fleet permissions"
+---
+
 # Spot Fleet permissions
 
 If your users will create or manage a Spot Fleet, you need to grant them the required
@@ -469,8 +473,10 @@ Note that this role may not be usable for other Spot Fleets.
 Also, this role cannot be used to launch any new Spot Fleets
 through request-spot-fleet.`arn:aws:ec2:us-east-1:123456789012:spot-fleet-request/sfr-11111111-1111-1111-1111-111111111111`
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Spot Fleet request states
 
 Create a Spot Fleet
+
+All content copied from https://docs.aws.amazon.com/.

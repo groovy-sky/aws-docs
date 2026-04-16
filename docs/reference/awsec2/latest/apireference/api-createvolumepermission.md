@@ -1,3 +1,7 @@
+---
+title: "CreateVolumePermission"
+---
+
 # CreateVolumePermission
 
 Describes the user or group to be added or removed from the list of create volume
@@ -33,8 +37,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createvolumepermission.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 CreateVerifiedAccessTrustProviderOidcOptions
 
 CreateVolumePermissionModifications
+
+All content copied from https://docs.aws.amazon.com/.

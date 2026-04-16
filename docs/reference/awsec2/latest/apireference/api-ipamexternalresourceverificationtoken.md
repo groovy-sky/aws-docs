@@ -1,3 +1,7 @@
+---
+title: "IpamExternalResourceVerificationToken"
+---
+
 # IpamExternalResourceVerificationToken
 
 A verification token is an AWS-generated random value that you can use to prove ownership of an external resource. For example, you can use a verification token to validate that you control a public IP address range when you bring an IP address range to AWS (BYOIP).
@@ -110,8 +114,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ipamexternalresourceverificationtoken.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 IpamDiscoveryFailureReason
 
 IpamOperatingRegion
+
+All content copied from https://docs.aws.amazon.com/.

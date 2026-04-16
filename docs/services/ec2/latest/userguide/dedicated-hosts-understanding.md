@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 Dedicated Host auto-placement and host affinity"
+---
+
 # Amazon EC2 Dedicated Host auto-placement and host affinity
 
 Placement control for Dedicated Hosts happens on both the instance level and host
@@ -35,8 +39,10 @@ When affinity is set to `Default`, and you stop and restart the
 instance, it can be restarted on any available host. However, it tries to launch
 back onto the last Dedicated Host on which it ran (on a best-effort basis).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Bring your own licenses
 
 Allocate a Dedicated Host
+
+All content copied from https://docs.aws.amazon.com/.

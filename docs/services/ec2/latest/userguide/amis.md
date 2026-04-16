@@ -1,3 +1,7 @@
+---
+title: "Amazon Machine Images in Amazon EC2"
+---
+
 # Amazon Machine Images in Amazon EC2
 
 An Amazon Machine Image (AMI) is an image that provides the software that is required to set up
@@ -23,7 +27,7 @@ You can launch multiple instances from a single AMI when you require multiple in
 same configuration. You can use different AMIs to launch instances when you require
 instances with different configurations, as shown in the following diagram.
 
-![Launch multiple instances from an AMI.](../../../images/awsec2/latest/userguide/images/launch-from-ami-png.md)
+![Launch multiple instances from an AMI.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/launch-from-ami.png)
 
 You can create an AMI from your Amazon EC2 instances and then use it to launch instances
 with the same configuration. You can copy an AMI to another AWS Region, and then use it
@@ -53,8 +57,10 @@ AMI using the AWS Marketplace.
 
 - [AMI quotas](ami-quotas.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Best practices
 
 AMI characteristics
+
+All content copied from https://docs.aws.amazon.com/.

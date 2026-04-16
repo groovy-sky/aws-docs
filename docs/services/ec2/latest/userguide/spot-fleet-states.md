@@ -1,3 +1,7 @@
+---
+title: "Spot Fleet request states"
+---
+
 # Spot Fleet request states
 
 A Spot Fleet request can be one of various states, with each state indicating a different
@@ -41,8 +45,10 @@ request remains in this state until all instances are terminated.
 The Spot Fleet is canceled (deleted) and has no running instances. The request
 is deleted two days after its instances are terminated.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Work with Spot Fleet
 
 Spot Fleet permissions
+
+All content copied from https://docs.aws.amazon.com/.

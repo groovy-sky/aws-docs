@@ -1,3 +1,7 @@
+---
+title: "Security in Amazon EC2"
+---
+
 # Security in Amazon EC2
 
 Cloud security at AWS is the highest priority. As an AWS customer, you benefit from a
@@ -60,8 +64,10 @@ resources.
 
 - [AWS PrivateLink](interface-vpc-endpoints.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Secondary Networks
 
 Data protection
+
+All content copied from https://docs.aws.amazon.com/.

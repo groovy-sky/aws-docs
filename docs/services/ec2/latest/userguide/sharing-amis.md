@@ -1,3 +1,7 @@
+---
+title: "Understand shared AMI usage in Amazon EC2"
+---
+
 # Understand shared AMI usage in Amazon EC2
 
 _A shared AMI_ is an AMI that a developer created and made available for
@@ -56,8 +60,10 @@ the _AWS Marketplace Seller Guide_.
 AWS Marketplace, see the [AWS Marketplace\
 Documentation](../../../marketplace/index.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 AMI encryption
 
 Find shared AMIs
+
+All content copied from https://docs.aws.amazon.com/.

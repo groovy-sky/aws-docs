@@ -1,3 +1,7 @@
+---
+title: "DisableCapacityManager"
+---
+
 # DisableCapacityManager
 
 Disables EC2 Capacity Manager for your account. This stops data ingestion and removes access to capacity analytics and optimization recommendations.
@@ -52,6 +56,31 @@ Type: String
 
 For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
 
+## Examples
+
+### Example
+
+This example disables Capacity Manager for your account.
+
+#### Sample Request
+
+```
+
+https://ec2.amazonaws.com/?Action=DisableCapacityManager
+&AUTHPARAMS
+```
+
+#### Sample Response
+
+```
+
+<DisableCapacityManagerResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+    <requestId>d4904fd9-82c2-4ea5-adfe-a9cc3EXAMPLE</requestId>
+    <capacityManagerStatus>disabled</capacityManagerStatus>
+    <organizationsAccess>false</organizationsAccess>
+</DisableCapacityManagerResponse>
+```
+
 ## See Also
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
@@ -76,8 +105,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/disablecapacitymanager.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DisableAwsNetworkPerformanceMetricSubscription
 
 DisableEbsEncryptionByDefault
+
+All content copied from https://docs.aws.amazon.com/.

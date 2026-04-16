@@ -1,3 +1,7 @@
+---
+title: "DeleteVpc"
+---
+
 # DeleteVpc
 
 Deletes the specified VPC. You must detach or delete all gateways and resources that are associated
@@ -100,8 +104,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deletevpc.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DeleteVolume
 
 DeleteVpcBlockPublicAccessExclusion
+
+All content copied from https://docs.aws.amazon.com/.

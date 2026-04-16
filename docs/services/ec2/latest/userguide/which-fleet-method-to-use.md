@@ -1,3 +1,7 @@
+---
+title: "Which is the best fleet method to use?"
+---
+
 # Which is the best fleet method to use?
 
 As a general best practice, we recommend launching fleets of Spot and On-Demand Instances with
@@ -61,9 +65,11 @@ rather use an Auto Scaling group.
 Use Spot Fleet only if you need console support for a use case for when
 you would use EC2 Fleet.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Fleets
 
 Configuration
 options
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "View billing assignment requests for shared EC2 Capacity Reservations"
+---
+
 # View billing assignment requests for shared EC2 Capacity Reservations
 
 A Capacity Reservation owner can view only the most recent billing assignment request that
@@ -106,8 +110,10 @@ AWS organization.
 `expired`The request expired because the consumer account did not
 accept or reject it within 12 hours.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Assign billing
 
 Accept or reject billing
+
+All content copied from https://docs.aws.amazon.com/.

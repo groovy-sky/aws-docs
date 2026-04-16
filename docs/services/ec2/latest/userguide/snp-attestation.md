@@ -1,3 +1,7 @@
+---
+title: "Attest an Amazon EC2 instance with AMD SEV-SNP"
+---
+
 # Attest an Amazon EC2 instance with AMD SEV-SNP
 
 Attestation is a process that allows your instance to prove its state and identity. After
@@ -109,8 +113,10 @@ Reported TCB Microcode from certificate matches the attestation report.
 VEK signed the Attestation Report!
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Enable AMD SEV-SNP
 
 Processor state control
+
+All content copied from https://docs.aws.amazon.com/.

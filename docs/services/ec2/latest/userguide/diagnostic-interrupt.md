@@ -1,3 +1,7 @@
+---
+title: "Send a diagnostic interrupt to debug an unreachable Amazon EC2 instance"
+---
+
 # Send a diagnostic interrupt to debug an unreachable Amazon EC2 instance
 
 ###### Warning
@@ -200,9 +204,11 @@ Use the [Send-EC2DiagnosticInterrupt](../../../powershell/latest/reference/items
 Send-EC2DiagnosticInterrupt -InstanceId i-1234567890abcdef0
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Troubleshoot your instance
 using the EC2 Serial Console
 
 Document history
+
+All content copied from https://docs.aws.amazon.com/.

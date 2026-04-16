@@ -1,3 +1,7 @@
+---
+title: "Regions and Zones"
+---
+
 # Regions and Zones
 
 Amazon EC2 is hosted in multiple locations world-wide. These locations are composed of
@@ -78,7 +82,7 @@ Availability Zone A and Availability Zone B each have one subnet, and each subne
 instances. Availability Zone C has no subnets, therefore you can't launch instances into
 this Availability Zone.
 
-![A Region with instances in one Availability Zone.](../../../images/awsec2/latest/userguide/images/region-with-azs-png.md)
+![A Region with instances in one Availability Zone.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/region-with-azs.png)
 
 For more information, see [Virtual private clouds for your EC2 instances](using-vpc.md).
 
@@ -117,7 +121,7 @@ Availability Zones, and two of its Local Zones. The VPC spans the Availability Z
 one of the Local Zones. Each zone in the VPC has one subnet, and each subnet has an
 instance.
 
-![A VPC with Availability Zones and Local Zones.](../../../images/awsec2/latest/userguide/images/region-with-lzs-png.md)
+![A VPC with Availability Zones and Local Zones.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/region-with-lzs.png)
 
 ### Available Local Zones
 
@@ -169,7 +173,7 @@ Availability Zones, and a Wavelength Zone. The VPC spans the Availability Zones 
 Wavelength Zone. Each zone in the VPC has one subnet, and each subnet has an
 instance.
 
-![A VPC with Availability Zones and a Wavelength Zone.](../../../images/awsec2/latest/userguide/images/region-with-wavelength-zones-png.md)
+![A VPC with Availability Zones and a Wavelength Zone.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/region-with-wavelength-zones.png)
 
 Wavelength Zones are not available in every Region. For information about the Regions
 that support Wavelength Zones, see [Available Wavelength Zones](../../../wavelength/latest/developerguide/wavelength-quotas.md#concepts-available-zones) in the _AWS Wavelength Developer_
@@ -208,7 +212,7 @@ Availability Zones, and an Outpost. The VPC spans the Availability Zones and the
 Outpost. The Outpost is in an on-premises customer data center. Each zone in the VPC has
 one subnet, and each subnet has an instance.
 
-![A VPC with Availability Zones and an Outpost.](../../../images/awsec2/latest/userguide/images/region-with-outpost-png.md)
+![A VPC with Availability Zones and an Outpost.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/region-with-outpost.png)
 
 ### Instances on an Outpost
 
@@ -259,8 +263,10 @@ Choose an Amazon EBS-backed AMI with only a single EBS snapshot.
 Choose an instance size with enough instance storage to meet the needs of your
 application. For more information, see [Instance store volume limits](instance-store-volumes.md).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Networking
 
 Instance IP addressing
+
+All content copied from https://docs.aws.amazon.com/.

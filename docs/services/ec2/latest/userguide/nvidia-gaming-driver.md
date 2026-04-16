@@ -1,3 +1,7 @@
+---
+title: "Install NVIDIA gaming drivers (G7e, G6, G6e, G5, and G4dn instances)"
+---
+
 # Install NVIDIA gaming drivers (G7e, G6, G6e, G5, and G4dn instances)
 
 These drivers are available to AWS customers only. By downloading them, you agree to use the
@@ -1199,8 +1203,10 @@ License Status            : Licensed (Expiry: N/A)
     resolution, set up the high-performance display protocol [Amazon DCV](../../../dcv/index.md). If you do not
     require this functionality, do not complete this step.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Install GRID drivers
 
 Install the ENA driver on Windows
+
+All content copied from https://docs.aws.amazon.com/.

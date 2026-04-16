@@ -1,3 +1,7 @@
+---
+title: "Required permissions for Spot placement score"
+---
+
 # Required permissions for Spot placement score
 
 By default, IAM identities (users, roles, or groups) don't have permission to use
@@ -46,8 +50,10 @@ in the _IAM User Guide_.
 
 - (Not recommended) Attach a policy directly to a user or add a user to a user group. Follow the instructions in [Adding permissions to a user (console)](../../../iam/latest/userguide/id-users-change-permissions.md#users_change_permissions-add-console) in the _IAM User Guide_.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 How Spot placement score works
 
 Calculate the Spot placement score
+
+All content copied from https://docs.aws.amazon.com/.

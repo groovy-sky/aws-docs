@@ -1,3 +1,7 @@
+---
+title: "Spot Instance interruptions"
+---
+
 # Spot Instance interruptions
 
 You can launch Spot Instances on spare EC2 capacity for steep discounts in exchange for returning
@@ -48,8 +52,10 @@ depending on the interruption behavior that you specified when you created the S
 
 - [Billing](billing-for-interrupted-spot-instances.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Manage your Spot Instances
 
 Interruption behavior
+
+All content copied from https://docs.aws.amazon.com/.

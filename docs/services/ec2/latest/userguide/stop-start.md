@@ -1,3 +1,7 @@
+---
+title: "Stop and start Amazon EC2 instances"
+---
+
 # Stop and start Amazon EC2 instances
 
 You can stop and start your instance if it has an Amazon EBS volume as its root volume. When you
@@ -438,9 +442,11 @@ The following is example output.
 Friday, April 19, 2024 12:47:08 AM
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Instance state changes
 
 How it
 works
+
+All content copied from https://docs.aws.amazon.com/.

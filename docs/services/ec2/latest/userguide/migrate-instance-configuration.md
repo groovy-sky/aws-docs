@@ -1,3 +1,7 @@
+---
+title: "Migrate to a new instance type by launching a new EC2 instance"
+---
+
 # Migrate to a new instance type by launching a new EC2 instance
 
 You can change the instance type of an EC2 instance only if it is an EBS-backed instance
@@ -95,8 +99,10 @@ To move an EBS volume from the original instance to the new instance,
     choose **Instance state**, **Terminate**
 **instance**.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Change the instance type
 
 Troubleshoot
+
+All content copied from https://docs.aws.amazon.com/.

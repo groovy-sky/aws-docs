@@ -1,3 +1,7 @@
+---
+title: "Set up Dual 4K displays on G4ad Linux instances"
+---
+
 # Set up Dual 4K displays on G4ad Linux instances
 
 After you launch a G4ad instance, you can set up dual 4K displays.
@@ -202,7 +206,7 @@ Virtual-1 connected 1920x1080+1920+0 (normal left inverted right x axis y axis) 
 9. When you connect into DCV, change the resolution to 2x4K, confirming the dual
     monitor support is registered by DCV.
 
-![DCV resolution changes](../../../images/awsec2/latest/userguide/images/dm-dcv-example-png.md)
+![DCV resolution changes](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/dm-dcv-example.png)
 
 ## Set up an interactive desktop for Linux
 
@@ -378,8 +382,10 @@ $ sudo reboot
     protocol, and then [connect to a Amazon DCV\
     session](../../../dcv/latest/userguide/using-connecting.md) using your preferred client.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Optimize GPU settings
 
 Get started with GPU accelerated instances
+
+All content copied from https://docs.aws.amazon.com/.

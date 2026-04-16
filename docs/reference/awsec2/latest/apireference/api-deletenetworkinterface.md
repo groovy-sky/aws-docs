@@ -1,3 +1,7 @@
+---
+title: "DeleteNetworkInterface"
+---
+
 # DeleteNetworkInterface
 
 Deletes the specified network interface. You must detach the network interface before
@@ -95,8 +99,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deletenetworkinterface.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DeleteNetworkInsightsPath
 
 DeleteNetworkInterfacePermission
+
+All content copied from https://docs.aws.amazon.com/.

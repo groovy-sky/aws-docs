@@ -1,3 +1,7 @@
+---
+title: "Automatic instance recovery"
+---
+
 # Automatic instance recovery
 
 ###### Important
@@ -194,9 +198,11 @@ Guide](../../../autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.md)
 
 - [REL11-BP02 Fail over to healthy resources](../../../wellarchitected/latest/reliability-pillar/rel-withstand-component-failures-failover2good.md) in the _Reliability Pillar AWS Well-Architected Framework_
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Retire
 
 Verify if automatic
 recovery occurred
+
+All content copied from https://docs.aws.amazon.com/.

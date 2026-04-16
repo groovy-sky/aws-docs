@@ -1,3 +1,7 @@
+---
+title: "Use AMI ancestry to trace the origin of an AMI"
+---
+
 # Use AMI ancestry to trace the origin of an AMI
 
 AMI ancestry helps you trace the origin of an AMI by returning the IDs and Regions of all
@@ -283,8 +287,10 @@ SourceImageId           SourceImageRegion
 ami-0abcdef1234567890 us-west-2
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Create a store image task
 
 AMI usage
+
+All content copied from https://docs.aws.amazon.com/.

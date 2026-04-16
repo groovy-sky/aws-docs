@@ -1,3 +1,7 @@
+---
+title: "DescribeSpotPriceHistory"
+---
+
 # DescribeSpotPriceHistory
 
 Describes the Spot price history. For more information, see [Spot Instance pricing history](../../../../services/ec2/latest/userguide/using-spot-instances-history.md) in the
@@ -244,8 +248,10 @@ For more information about using this API in one of the language-specific AWS SD
 
 - [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describespotpricehistory.md)
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 DescribeSpotInstanceRequests
 
 DescribeStaleSecurityGroups
+
+All content copied from https://docs.aws.amazon.com/.

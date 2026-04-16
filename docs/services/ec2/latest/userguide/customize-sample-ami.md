@@ -1,3 +1,7 @@
+---
+title: "Customize the sample Amazon Linux 2023 image description for your workload"
+---
+
 # Customize the sample Amazon Linux 2023 image description for your workload
 
 You can customize the sample Amazon Linux 2023 image description and include the software packages,
@@ -72,8 +76,10 @@ location, without the need to explicitly reference them in the image description
 For more information about the scripts supported by KIWI NG, see
 [User-Defined Scripts](https://osinside.github.io/kiwi/concept_and_workflow/shell_scripts.html).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Sample Amazon Linux 2023 image description
 
 Compute PCR measurements
+
+All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "Using service-linked roles for Capacity Reservation Fleet"
+---
+
 # Using service-linked roles for Capacity Reservation Fleet
 
 On-Demand Capacity Reservation Fleet uses AWS Identity and Access Management (IAM) [service-linked roles](../../../iam/latest/userguide/id-roles.md#id_roles_terms-and-concepts). A service-linked role is a unique type of IAM
@@ -82,11 +86,13 @@ minutes and try the operation again.
 ## Supported Regions for Capacity Reservation Fleet service-linked roles
 
 Capacity Reservation Fleet supports using service-linked roles in all of the Regions where
-the service is available. For more information, see [AWS Regions and Endpoints](../../../../general/general/latest/gr/ec2-service.md#ec2_region).
+the service is available. For more information, see [AWS Regions and Endpoints](../../../../general/latest/gr/ec2-service.md#ec2_region).
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Example configurations
 
 Monitor with CloudWatch
 metrics
+
+All content copied from https://docs.aws.amazon.com/.

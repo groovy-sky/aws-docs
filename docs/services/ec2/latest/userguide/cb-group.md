@@ -1,3 +1,7 @@
+---
+title: "Create a resource group for UltraServer Capacity Blocks"
+---
+
 # Create a resource group for UltraServer Capacity Blocks
 
 You can use AWS Resource Groups to create logical collections of UltraServer Capacity Blocks. After you create
@@ -136,8 +140,10 @@ Add-RGResource `
 -ResourceArn CapacityReservationArn
 ```
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Share
 
 Monitor using EventBridge
+
+All content copied from https://docs.aws.amazon.com/.

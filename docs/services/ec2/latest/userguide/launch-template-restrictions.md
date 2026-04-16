@@ -1,3 +1,7 @@
+---
+title: "Restrictions for Amazon EC2 launch templates"
+---
+
 # Restrictions for Amazon EC2 launch templates
 
 The following restrictions apply to launch templates and launch template
@@ -35,8 +39,10 @@ launch template.
 versions are numbered in the order in which they are created. When you create a
 launch template version, you can't specify the version number yourself.
 
-[Document Conventions](../../../../general/general/latest/gr/docconventions.md)
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Launch templates
 
 Permissions
+
+All content copied from https://docs.aws.amazon.com/.
