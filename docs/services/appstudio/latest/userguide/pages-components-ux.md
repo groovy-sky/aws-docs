@@ -1,3 +1,7 @@
+---
+title: "Pages and components: Build your app's user interface"
+---
+
 # Pages and components: Build your app's user interface
 
 ###### Topics

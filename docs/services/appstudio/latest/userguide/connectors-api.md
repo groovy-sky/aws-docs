@@ -1,3 +1,7 @@
+---
+title: "Connect to third-party services and APIs (generic)"
+---
+
 # Connect to third-party services and APIs (generic)
 
 Use the following procedure to create a generic **API Connector** in App Studio. The **API Connector** is used to

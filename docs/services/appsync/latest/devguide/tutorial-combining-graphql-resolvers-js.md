@@ -1,3 +1,7 @@
+---
+title: "Combining GraphQL resolvers in AWS AppSync"
+---
+
 # Combining GraphQL resolvers in AWS AppSync
 
 Resolvers and fields in a GraphQL schema have 1:1 relationships with a large degree of flexibility. Because a

@@ -1,3 +1,7 @@
+---
+title: "Automations and actions: Define your app's business logic"
+---
+
 # Automations and actions: Define your app's business logic
 
 **Automations** are how you define the business logic of your application.

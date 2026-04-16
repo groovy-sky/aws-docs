@@ -1,3 +1,7 @@
+---
+title: "Certificate Authorities (CA) Recognized by AWS AppSync for HTTPS Endpoints"
+---
+
 # Certificate Authorities (CA) Recognized by AWS AppSync for HTTPS Endpoints
 
 ###### Note

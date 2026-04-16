@@ -1,3 +1,7 @@
+---
+title: "Entities and data actions: Configure your app's data model"
+---
+
 # Entities and data actions: Configure your app's data model
 
 **Entities** are data tables in App Studio. Entities interact directly with tables in

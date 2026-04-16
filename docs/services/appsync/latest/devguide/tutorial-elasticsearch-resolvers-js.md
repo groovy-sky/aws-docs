@@ -1,3 +1,7 @@
+---
+title: "Using Amazon OpenSearch Service resolvers in AWS AppSync"
+---
+
 # Using Amazon OpenSearch Service resolvers in AWS AppSync
 
 AWS AppSync supports using Amazon OpenSearch Service from domains that you have provisioned in your own

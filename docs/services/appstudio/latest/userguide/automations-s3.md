@@ -1,3 +1,7 @@
+---
+title: "Interacting with Amazon Simple Storage Service with components and automations"
+---
+
 # Interacting with Amazon Simple Storage Service with components and automations
 
 You can invoke various Amazon S3 operations from an App Studio app. For example, you could create

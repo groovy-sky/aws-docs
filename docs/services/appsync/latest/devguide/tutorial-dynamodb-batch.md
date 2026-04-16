@@ -1,3 +1,7 @@
+---
+title: "Using DynamoDB batch operations in AWS AppSync"
+---
+
 # Using DynamoDB batch operations in AWS AppSync
 
 ###### Note

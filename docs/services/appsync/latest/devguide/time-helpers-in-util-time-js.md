@@ -1,3 +1,7 @@
+---
+title: "Time helpers in util.time"
+---
+
 # Time helpers in util.time
 
 The `util.time` variable contains datetime methods to help generate

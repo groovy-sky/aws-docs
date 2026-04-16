@@ -1,3 +1,7 @@
+---
+title: "AWS AppSync JavaScript resolvers overview"
+---
+
 # AWS AppSync JavaScript resolvers overview
 
 AWS AppSync lets you respond to GraphQL requests by performing operations on your data

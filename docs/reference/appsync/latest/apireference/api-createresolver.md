@@ -1,3 +1,7 @@
+---
+title: "CreateResolver"
+---
+
 # CreateResolver
 
 Creates a `Resolver` object.

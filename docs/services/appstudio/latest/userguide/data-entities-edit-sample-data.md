@@ -1,3 +1,7 @@
+---
+title: "Adding or deleting sample data"
+---
+
 # Adding or deleting sample data
 
 You can add sample data to entities in an App Studio application. Because application's don't communicate with external services until they are published,

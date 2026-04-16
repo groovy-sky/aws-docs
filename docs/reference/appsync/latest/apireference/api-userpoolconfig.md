@@ -1,3 +1,7 @@
+---
+title: "UserPoolConfig"
+---
+
 # UserPoolConfig
 
 Describes an Amazon Cognito user pool configuration.

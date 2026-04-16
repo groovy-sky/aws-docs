@@ -1,3 +1,7 @@
+---
+title: "Data dependencies and timing considerations"
+---
+
 # Data dependencies and timing considerations
 
 When building complex applications in App Studio, it's crucial to understand and manage data

@@ -1,3 +1,7 @@
+---
+title: "Automation actions reference"
+---
+
 # Automation actions reference
 
 The following is the reference documentation for automation actions used in App Studio.

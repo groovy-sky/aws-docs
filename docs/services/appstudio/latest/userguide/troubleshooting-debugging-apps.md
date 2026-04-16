@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting and debugging apps"
+---
+
 # Troubleshooting and debugging apps
 
 The following topics include information for troubleshooting and debugging App Studio apps.

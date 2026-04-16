@@ -1,3 +1,7 @@
+---
+title: "Connect to Amazon Simple Storage Service (Amazon S3)"
+---
+
 # Connect to Amazon Simple Storage Service (Amazon S3)
 
 To connect App Studio with Amazon S3 to enable builders to access and use Amazon S3 resources in applications, perform

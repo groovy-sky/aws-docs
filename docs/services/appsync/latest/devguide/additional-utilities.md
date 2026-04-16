@@ -1,3 +1,7 @@
+---
+title: "Bundling, TypeScript, and source maps for the APPSYNC_JS runtime"
+---
+
 # Bundling, TypeScript, and source maps for the `APPSYNC_JS` runtime
 
 TypeScript enhances AWS AppSync development by providing type safety and early error

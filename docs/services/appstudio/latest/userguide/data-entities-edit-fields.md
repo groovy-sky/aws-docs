@@ -1,3 +1,7 @@
+---
+title: "Adding, editing, or deleting entity fields"
+---
+
 # Adding, editing, or deleting entity fields
 
 ###### Tip

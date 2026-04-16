@@ -1,3 +1,7 @@
+---
+title: "LambdaConflictHandlerConfig"
+---
+
 # LambdaConflictHandlerConfig
 
 The `LambdaConflictHandlerConfig` object when configuring `LAMBDA`

@@ -1,3 +1,7 @@
+---
+title: "Deleting an application"
+---
+
 # Deleting an application
 
 Use the following procedure to delete an application in App Studio.

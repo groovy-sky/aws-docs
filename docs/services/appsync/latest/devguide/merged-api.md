@@ -1,3 +1,7 @@
+---
+title: "Merging APIs in AWS AppSync"
+---
+
 # Merging APIs in AWS AppSync
 
 As the use of GraphQL expands within an organization, trade-offs between API ease-of-use and

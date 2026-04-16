@@ -1,3 +1,7 @@
+---
+title: "BatchGetItem"
+---
+
 # BatchGetItem
 
 The `BatchGetItem` request object lets you tell the AWS AppSync DynamoDB function to

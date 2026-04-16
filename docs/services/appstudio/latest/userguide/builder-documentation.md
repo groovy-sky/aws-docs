@@ -1,3 +1,7 @@
+---
+title: "Builder documentation"
+---
+
 # Builder documentation
 
 The following topics contain information to help users in App Studio who are creating, editing, and publishing applications.

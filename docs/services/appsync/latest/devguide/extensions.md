@@ -1,3 +1,7 @@
+---
+title: "Extensions"
+---
+
 # Extensions
 
 ###### Note

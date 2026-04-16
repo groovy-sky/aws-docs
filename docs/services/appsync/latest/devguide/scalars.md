@@ -1,3 +1,7 @@
+---
+title: "Scalar types in GraphQL"
+---
+
 # Scalar types in GraphQL
 
 A GraphQL object type has a name and fields, and those fields can have sub-fields. Ultimately, an object type's

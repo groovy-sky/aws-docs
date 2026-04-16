@@ -1,3 +1,7 @@
+---
+title: "OpenIDConnectConfig"
+---
+
 # OpenIDConnectConfig
 
 Describes an OpenID Connect (OIDC) configuration.

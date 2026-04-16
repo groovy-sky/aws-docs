@@ -1,3 +1,7 @@
+---
+title: "AppSyncRuntime"
+---
+
 # AppSyncRuntime
 
 Describes a runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note

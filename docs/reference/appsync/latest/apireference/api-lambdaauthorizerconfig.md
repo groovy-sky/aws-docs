@@ -1,3 +1,7 @@
+---
+title: "LambdaAuthorizerConfig"
+---
+
 # LambdaAuthorizerConfig
 
 A `LambdaAuthorizerConfig` specifies how to authorize AWS AppSync

@@ -1,3 +1,7 @@
+---
+title: "Exporting applications"
+---
+
 # Exporting applications
 
 You can export a snapshot of your application to share it with other App Studio instances. When you

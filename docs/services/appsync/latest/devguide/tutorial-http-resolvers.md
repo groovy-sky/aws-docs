@@ -1,3 +1,7 @@
+---
+title: "Using HTTP resolvers in AWS AppSync"
+---
+
 # Using HTTP resolvers in AWS AppSync
 
 ###### Note

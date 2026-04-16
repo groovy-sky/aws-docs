@@ -1,3 +1,7 @@
+---
+title: "Testing and debugging resolvers in AWS AppSync (VTL)"
+---
+
 # Testing and debugging resolvers in AWS AppSync (VTL)
 
 ###### Note

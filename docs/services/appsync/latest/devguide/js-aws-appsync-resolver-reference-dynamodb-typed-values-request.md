@@ -1,3 +1,7 @@
+---
+title: "Type system (request mapping)"
+---
+
 # Type system (request mapping)
 
 When using the AWS AppSync DynamoDB function to call your DynamoDB tables, AWS AppSync needs to know

@@ -1,3 +1,7 @@
+---
+title: "Structuring a GraphQL API (blank or imported APIs)"
+---
+
 # Structuring a GraphQL API (blank or imported APIs)
 
 Before you create your GraphQL API from a blank template, it would help to review the concepts surrounding

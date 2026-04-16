@@ -1,3 +1,7 @@
+---
+title: "Query"
+---
+
 # Query
 
 The `Query` request object lets you tell the AWS AppSync DynamoDB resolver to make a

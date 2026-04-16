@@ -1,3 +1,7 @@
+---
+title: "AWS AppSync resolver mapping template reference for OpenSearch"
+---
+
 # AWS AppSync resolver mapping template reference for OpenSearch
 
 ###### Note

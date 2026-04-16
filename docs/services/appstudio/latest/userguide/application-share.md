@@ -1,3 +1,7 @@
+---
+title: "Sharing published applications"
+---
+
 # Sharing published applications
 
 When you publish an application that has not been published yet, it is not available for users until it is shared. Once a published

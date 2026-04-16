@@ -1,3 +1,7 @@
+---
+title: "Publishing events"
+---
+
 # Publishing events
 
 AWS AppSync Events allows you to publish events via your API’s HTTP or WebSocket endpoint. Use

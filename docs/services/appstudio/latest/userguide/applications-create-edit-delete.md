@@ -1,3 +1,7 @@
+---
+title: "Creating, editing, and deleting applications"
+---
+
 # Creating, editing, and deleting applications
 
 ###### Contents

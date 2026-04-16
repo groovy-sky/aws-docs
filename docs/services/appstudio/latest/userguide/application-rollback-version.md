@@ -1,3 +1,7 @@
+---
+title: "Rolling back to a previously published version"
+---
+
 # Rolling back to a previously published version
 
 Use the following procedure to roll back the Production environment of your App Studio app to a previously published version. Your application end users

@@ -1,3 +1,7 @@
+---
+title: "Security considerations and mitigations"
+---
+
 # Security considerations and mitigations
 
 ## Security considerations

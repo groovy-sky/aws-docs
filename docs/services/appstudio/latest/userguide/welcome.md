@@ -1,3 +1,7 @@
+---
+title: "What is AWS App Studio?"
+---
+
 # What is AWS App Studio?
 
 AWS App Studio is a generative AI–powered service that uses natural language to help

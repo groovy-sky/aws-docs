@@ -1,3 +1,7 @@
+---
+title: "Creating a simple post application using DynamoDB resolvers"
+---
+
 # Creating a simple post application using DynamoDB resolvers
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "Managing components"
+---
+
 # Managing components
 
 Use the following procedures to add, edit, and delete components in or from pages in the App Studio application studio

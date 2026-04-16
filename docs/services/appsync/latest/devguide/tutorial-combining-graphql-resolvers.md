@@ -1,3 +1,7 @@
+---
+title: "Combining GraphQL resolvers in AWS AppSync"
+---
+
 # Combining GraphQL resolvers in AWS AppSync
 
 ###### Note

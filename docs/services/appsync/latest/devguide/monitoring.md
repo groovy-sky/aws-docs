@@ -1,3 +1,7 @@
+---
+title: "Using CloudWatch to monitor and log GraphQL API data"
+---
+
 # Using CloudWatch to monitor and log GraphQL API data
 
 You can log and debug your GraphQL API using CloudWatch metrics and CloudWatch logs. These

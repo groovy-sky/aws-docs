@@ -1,3 +1,7 @@
+---
+title: "LogConfig"
+---
+
 # LogConfig
 
 The Amazon CloudWatch Logs configuration.

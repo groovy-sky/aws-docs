@@ -1,3 +1,7 @@
+---
+title: "Access control use cases for securing requests and responses"
+---
+
 # Access control use cases for securing requests and responses
 
 In the [Security](security-authz.md#aws-appsync-security) section you learned about the different

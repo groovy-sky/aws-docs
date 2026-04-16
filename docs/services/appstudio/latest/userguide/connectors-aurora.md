@@ -1,3 +1,7 @@
+---
+title: "Connect to Amazon Aurora"
+---
+
 # Connect to Amazon Aurora
 
 To connect App Studio with Aurora to enable builders to access and use Aurora resources in applications, you must perform

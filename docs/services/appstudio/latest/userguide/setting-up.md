@@ -1,3 +1,7 @@
+---
+title: "Setting up and signing in to AWS App Studio"
+---
+
 # Setting up and signing in to AWS App Studio
 
 Setting up AWS App Studio is different depending on your role:

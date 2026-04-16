@@ -1,3 +1,7 @@
+---
+title: "Connect to AWS Lambda"
+---
+
 # Connect to AWS Lambda
 
 To connect App Studio with Lambda to enable builders to access and use Lambda resources in applications, you must perform

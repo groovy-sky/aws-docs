@@ -1,3 +1,7 @@
+---
+title: "Using pipeline resolvers in AWS AppSync"
+---
+
 # Using pipeline resolvers in AWS AppSync
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "AWS AppSync directives"
+---
+
 # AWS AppSync directives
 
 ###### Note

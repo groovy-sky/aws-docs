@@ -1,3 +1,7 @@
+---
+title: "Connect to AWS services using the Other AWS services connector"
+---
+
 # Connect to AWS services using the Other AWS services connector
 
 While App Studio offers some connectors that are specific to certain AWS services, you can also connect to other AWS services

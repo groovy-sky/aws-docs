@@ -1,3 +1,7 @@
+---
+title: "AdditionalAuthenticationProvider"
+---
+
 # AdditionalAuthenticationProvider
 
 Describes an additional authentication provider.

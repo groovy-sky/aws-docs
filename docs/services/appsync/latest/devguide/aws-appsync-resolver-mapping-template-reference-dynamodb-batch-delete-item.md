@@ -1,3 +1,7 @@
+---
+title: "BatchDeleteItem"
+---
+
 # BatchDeleteItem
 
 The `BatchDeleteItem` request mapping document lets you tell the AWS AppSync DynamoDB resolver to make a

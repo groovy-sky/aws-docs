@@ -1,3 +1,7 @@
+---
+title: "Edit a previously published app version"
+---
+
 # Edit a previously published app version
 
 Use the following procedure to edit a previously published version of your App Studio application. After you choose to edit

@@ -1,3 +1,7 @@
+---
+title: "GetItem"
+---
+
 # GetItem
 
 The `GetItem` request lets you tell the AWS AppSync DynamoDB function to make a

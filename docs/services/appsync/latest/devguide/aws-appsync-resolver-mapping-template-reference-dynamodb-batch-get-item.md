@@ -1,3 +1,7 @@
+---
+title: "BatchGetItem"
+---
+
 # BatchGetItem
 
 The `BatchGetItem` request mapping document lets you tell the AWS AppSync DynamoDB resolver to make a

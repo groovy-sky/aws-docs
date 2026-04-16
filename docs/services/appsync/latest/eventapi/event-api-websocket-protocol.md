@@ -1,3 +1,7 @@
+---
+title: "Understanding the Event API WebSocket protocol"
+---
+
 # Understanding the Event API WebSocket protocol
 
 AWS AppSync Events' WebSocket API allows a client to subscribe and receive events in real-time.

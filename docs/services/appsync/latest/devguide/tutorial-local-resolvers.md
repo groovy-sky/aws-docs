@@ -1,3 +1,7 @@
+---
+title: "Using local resolvers in AWS AppSync"
+---
+
 # Using local resolvers in AWS AppSync
 
 ###### Note

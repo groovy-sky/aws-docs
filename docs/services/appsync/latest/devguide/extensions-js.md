@@ -1,3 +1,7 @@
+---
+title: "Extensions"
+---
+
 # Extensions
 
 `extensions` contains a set of methods to make additional actions within your

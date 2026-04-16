@@ -1,3 +1,7 @@
+---
+title: "AWS AppSync resolver reference (JavaScript)"
+---
+
 # AWS AppSync resolver reference (JavaScript)
 
 The following sections contain the `APPSYNC_JS` runtime and JavaScript resolver

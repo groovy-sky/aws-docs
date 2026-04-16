@@ -1,3 +1,7 @@
+---
+title: "Creating, editing, or deleting data actions"
+---
+
 # Creating, editing, or deleting data actions
 
 Data actions are used in applications to run actions

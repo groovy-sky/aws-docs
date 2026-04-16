@@ -1,3 +1,7 @@
+---
+title: "Creating basic queries (JavaScript)"
+---
+
 # Creating basic queries (JavaScript)
 
 GraphQL resolvers connect the fields in a type’s schema to a data source. Resolvers are the mechanism by which

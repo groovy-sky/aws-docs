@@ -1,3 +1,7 @@
+---
+title: "Page and automation parameters"
+---
+
 # Page and automation parameters
 
 Parameters are a powerful feature in AWS App Studio that are used to pass dynamic values between

@@ -1,3 +1,7 @@
+---
+title: "GraphQL schemas"
+---
+
 # GraphQL schemas
 
 The GraphQL schema is the foundation of a GraphQL API. It serves as the blueprint that defines the shape

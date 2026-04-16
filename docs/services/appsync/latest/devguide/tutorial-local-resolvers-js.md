@@ -1,3 +1,7 @@
+---
+title: "Using local resolvers in AWS AppSync"
+---
+
 # Using local resolvers in AWS AppSync
 
 AWS AppSync allows you to use supported data sources (AWS Lambda, Amazon DynamoDB, or Amazon OpenSearch Service)

@@ -1,3 +1,7 @@
+---
+title: "Viewing or updating your app's content security settings"
+---
+
 # Viewing or updating your app's content security settings
 
 Every application in App Studio has content security settings that can be used to restrict external media or resources such as images, iFrames, and PDFs from being loaded, or

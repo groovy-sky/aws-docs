@@ -1,3 +1,7 @@
+---
+title: "DynamoDB helpers in $util.dynamodb"
+---
+
 # DynamoDB helpers in $util.dynamodb
 
 ###### Note

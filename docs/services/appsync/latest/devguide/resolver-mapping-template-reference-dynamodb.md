@@ -1,3 +1,7 @@
+---
+title: "AWS AppSync resolver mapping template reference for DynamoDB"
+---
+
 # AWS AppSync resolver mapping template reference for DynamoDB
 
 ###### Note

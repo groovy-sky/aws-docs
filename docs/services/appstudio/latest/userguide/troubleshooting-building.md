@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting in the application studio"
+---
+
 # Troubleshooting in the application studio
 
 This topic contains troubleshooting and debugging guidance for issues when building applications.

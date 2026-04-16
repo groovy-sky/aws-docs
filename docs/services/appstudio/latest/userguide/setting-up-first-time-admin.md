@@ -1,3 +1,7 @@
+---
+title: "Creating and setting up an App Studio instance for the first time"
+---
+
 # Creating and setting up an App Studio instance for the first time
 
 ## Sign up for an AWS account

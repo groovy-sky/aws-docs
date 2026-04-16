@@ -1,3 +1,7 @@
+---
+title: "How AWS App Studio works"
+---
+
 # How AWS App Studio works
 
 There are a few key concepts to understand when using AWS App Studio to build

@@ -1,3 +1,7 @@
+---
+title: "Page parameters"
+---
+
 # Page parameters
 
 Page parameters are a way to send information between pages and are often used when

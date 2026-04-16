@@ -1,3 +1,7 @@
+---
+title: "Identity-based policies for AWS AppSync"
+---
+
 # Identity-based policies for AWS AppSync
 
 By default, users and roles don't have permission to create or modify AWS AppSync

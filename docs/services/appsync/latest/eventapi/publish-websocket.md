@@ -1,3 +1,7 @@
+---
+title: "Publish events via WebSocket"
+---
+
 # Publish events via WebSocket
 
 AWS AppSync Events allows you to publish events via your API’s WebSocket endpoint after you connect to it.

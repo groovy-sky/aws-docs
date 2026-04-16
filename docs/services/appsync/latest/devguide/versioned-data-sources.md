@@ -1,3 +1,7 @@
+---
+title: "Versioning DynamoDB data sources in AWS AppSync"
+---
+
 # Versioning DynamoDB data sources in AWS AppSync
 
 AWS AppSync currently supports versioning on DynamoDB data sources. Conflict Detection,

@@ -1,3 +1,7 @@
+---
+title: "GraphQL type reference"
+---
+
 # GraphQL type reference
 
 Scalar types in GraphQL represent primitive leaf values in a GraphQL schema. These are the

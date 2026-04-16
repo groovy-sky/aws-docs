@@ -1,3 +1,7 @@
+---
+title: "Built-in modules"
+---
+
 # Built-in modules
 
 Modules are a part of the `APPSYNC_JS` runtime and provide utilities to help

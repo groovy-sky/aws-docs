@@ -1,3 +1,7 @@
+---
+title: "How AWS AppSync works with IAM"
+---
+
 # How AWS AppSync works with IAM
 
 Before you use IAM to manage access to AWS AppSync, learn what IAM features are

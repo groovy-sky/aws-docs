@@ -1,3 +1,7 @@
+---
+title: "Example pipeline resolver with Amazon DynamoDB"
+---
+
 # Example pipeline resolver with Amazon DynamoDB
 
 Suppose you wanted to attach a pipeline resolver on a field named `getPost(id:ID!)` that returns

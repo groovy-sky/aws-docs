@@ -1,3 +1,7 @@
+---
+title: "AWS AppSync resolver mapping template reference for RDS"
+---
+
 # AWS AppSync resolver mapping template reference for RDS
 
 The AWS AppSync RDS resolver mapping templates allow developers to send SQL queries to a

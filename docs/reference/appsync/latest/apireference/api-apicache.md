@@ -1,3 +1,7 @@
+---
+title: "ApiCache"
+---
+
 # ApiCache
 
 The `ApiCache` object.

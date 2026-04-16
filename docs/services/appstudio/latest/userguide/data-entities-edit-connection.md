@@ -1,3 +1,7 @@
+---
+title: "Add or edit connected data source and map fields"
+---
+
 # Add or edit connected data source and map fields
 
 ###### Tip

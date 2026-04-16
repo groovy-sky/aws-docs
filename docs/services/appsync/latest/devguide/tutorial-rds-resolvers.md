@@ -1,3 +1,7 @@
+---
+title: "Using Aurora Serverless v2 with AWS AppSync"
+---
+
 # Using Aurora Serverless v2 with AWS AppSync
 
 Connect your GraphQL API to Aurora Serverless databases using AWS AppSync. This integration

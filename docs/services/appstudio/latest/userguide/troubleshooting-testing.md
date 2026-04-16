@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting in the Testing environment"
+---
+
 # Troubleshooting in the Testing environment
 
 This topic contains information about troubleshooting apps published to the Testing environment.

@@ -1,3 +1,7 @@
+---
+title: "Using an AWS AppSync API with the AWS CDK"
+---
+
 # Using an AWS AppSync API with the AWS CDK
 
 ###### Tip

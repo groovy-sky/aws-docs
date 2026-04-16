@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting connectors"
+---
+
 # Troubleshooting connectors
 
 This topic contains troubleshooting guidance for common connector issues. You must be a member of an admin group to view or edit connectors.

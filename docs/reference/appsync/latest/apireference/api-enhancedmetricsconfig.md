@@ -1,3 +1,7 @@
+---
+title: "EnhancedMetricsConfig"
+---
+
 # EnhancedMetricsConfig
 
 Enables and controls the enhanced metrics feature. Enhanced metrics emit granular data

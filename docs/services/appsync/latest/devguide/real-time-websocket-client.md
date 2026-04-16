@@ -1,3 +1,7 @@
+---
+title: "Building a real-time WebSocket client in AWS AppSync"
+---
+
 # Building a real-time WebSocket client in AWS AppSync
 
 ###### Important

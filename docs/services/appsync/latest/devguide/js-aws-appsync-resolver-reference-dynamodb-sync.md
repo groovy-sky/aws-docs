@@ -1,3 +1,7 @@
+---
+title: "Sync"
+---
+
 # Sync
 
 The `Sync` request object lets you retrieve all the results from a DynamoDB

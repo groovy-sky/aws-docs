@@ -1,3 +1,7 @@
+---
+title: "Type system (request mapping)"
+---
+
 # Type system (request mapping)
 
 When using the AWS AppSync DynamoDB resolver to call your DynamoDB tables, AWS AppSync needs to know the type of each

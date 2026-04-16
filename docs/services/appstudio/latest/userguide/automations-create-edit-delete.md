@@ -1,3 +1,7 @@
+---
+title: "Creating, editing, and deleting automations"
+---
+
 # Creating, editing, and deleting automations
 
 ###### Contents

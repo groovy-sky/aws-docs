@@ -1,3 +1,7 @@
+---
+title: "Configuring and using pipeline resolvers in AWS AppSync (VTL)"
+---
+
 # Configuring and using pipeline resolvers in AWS AppSync (VTL)
 
 ###### Note

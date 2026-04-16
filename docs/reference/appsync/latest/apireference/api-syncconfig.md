@@ -1,3 +1,7 @@
+---
+title: "SyncConfig"
+---
+
 # SyncConfig
 
 Describes a Sync configuration for a resolver.

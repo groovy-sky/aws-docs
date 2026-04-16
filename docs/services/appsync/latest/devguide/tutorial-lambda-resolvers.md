@@ -1,3 +1,7 @@
+---
+title: "Using AWS Lambda resolvers in AWS AppSync"
+---
+
 # Using AWS Lambda resolvers in AWS AppSync
 
 ###### Note

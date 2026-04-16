@@ -1,3 +1,7 @@
+---
+title: "Creating an application"
+---
+
 # Creating an application
 
 Use the following procedure to create an application in App Studio.

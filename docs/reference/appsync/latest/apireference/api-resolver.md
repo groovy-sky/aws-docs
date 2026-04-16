@@ -1,3 +1,7 @@
+---
+title: "Resolver"
+---
+
 # Resolver
 
 Describes a resolver.

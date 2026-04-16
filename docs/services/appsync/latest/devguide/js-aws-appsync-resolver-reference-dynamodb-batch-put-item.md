@@ -1,3 +1,7 @@
+---
+title: "BatchPutItem"
+---
+
 # BatchPutItem
 
 The `BatchPutItem` request object lets you tell the AWS AppSync DynamoDB function to

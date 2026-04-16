@@ -1,3 +1,7 @@
+---
+title: "Sync"
+---
+
 # Sync
 
 The `Sync` request mapping document lets you retrieve all the results from a DynamoDB table and then

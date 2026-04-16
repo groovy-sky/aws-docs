@@ -1,3 +1,7 @@
+---
+title: "Designing your GraphQL schema"
+---
+
 # Designing your GraphQL schema
 
 The GraphQL schema is the foundation of any GraphQL server implementation. Each GraphQL API is defined by a

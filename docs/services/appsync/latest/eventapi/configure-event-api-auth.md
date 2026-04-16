@@ -1,3 +1,7 @@
+---
+title: "Configuring authorization and authentication to secure Event APIs"
+---
+
 # Configuring authorization and authentication to secure Event APIs
 
 AWS AppSync Events offers the following authorization types to secure Event APIs: API keys,

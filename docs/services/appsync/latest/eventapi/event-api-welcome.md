@@ -1,3 +1,7 @@
+---
+title: "What is AWS AppSync Events?"
+---
+
 # What is AWS AppSync Events?
 
 AWS AppSync Events lets you create secure and performant serverless WebSocket APIs that can

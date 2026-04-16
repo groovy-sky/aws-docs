@@ -1,3 +1,7 @@
+---
+title: "Attaching a data source in AWS AppSync"
+---
+
 # Attaching a data source in AWS AppSync
 
 Data sources are resources in your AWS account that GraphQL APIs can interact with. AWS AppSync supports a

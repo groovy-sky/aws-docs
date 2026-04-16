@@ -1,3 +1,7 @@
+---
+title: "PutItem"
+---
+
 # PutItem
 
 The `PutItem` request mapping document lets you tell the AWS AppSync DynamoDB

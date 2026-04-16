@@ -1,3 +1,7 @@
+---
+title: "Supported runtime features"
+---
+
 # Supported runtime features
 
 The sections below describe the supported feature set of the APPSYNC\_JS runtime.

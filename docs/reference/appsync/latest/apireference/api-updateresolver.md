@@ -1,3 +1,7 @@
+---
+title: "UpdateResolver"
+---
+
 # UpdateResolver
 
 Updates a `Resolver` object.

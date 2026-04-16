@@ -1,3 +1,7 @@
+---
+title: "DeleteItem"
+---
+
 # DeleteItem
 
 The `DeleteItem` request mapping document lets you tell the AWS AppSync DynamoDB resolver to make a

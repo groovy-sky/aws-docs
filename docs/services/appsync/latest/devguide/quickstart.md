@@ -1,3 +1,7 @@
+---
+title: "Getting started: Creating your first GraphQL API in AWS AppSync"
+---
+
 # Getting started: Creating your first GraphQL API in AWS AppSync
 
 You can use the AWS AppSync console to

@@ -1,3 +1,7 @@
+---
+title: "Using Amazon OpenSearch Service resolvers in AWS AppSync"
+---
+
 # Using Amazon OpenSearch Service resolvers in AWS AppSync
 
 ###### Note

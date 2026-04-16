@@ -1,3 +1,7 @@
+---
+title: "Best practices when designing data models"
+---
+
 # Best practices when designing data models
 
 Use the following best practices to create a robust, scalable, and secure relational data model in AWS for use in your App Studio application

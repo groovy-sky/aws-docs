@@ -1,3 +1,7 @@
+---
+title: "TransactGetItems"
+---
+
 # TransactGetItems
 
 The `TransactGetItems` request mapping document lets you to tell the AWS AppSync DynamoDB resolver to

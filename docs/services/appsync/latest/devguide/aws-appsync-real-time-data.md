@@ -1,3 +1,7 @@
+---
+title: "Using subscriptions for real-time data applications in AWS AppSync"
+---
+
 # Using subscriptions for real-time data applications in AWS AppSync
 
 ###### Important

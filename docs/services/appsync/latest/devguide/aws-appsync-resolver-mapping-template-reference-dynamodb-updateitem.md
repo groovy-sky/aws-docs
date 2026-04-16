@@ -1,3 +1,7 @@
+---
+title: "UpdateItem"
+---
+
 # UpdateItem
 
 The `UpdateItem` request mapping document enables you to tell the

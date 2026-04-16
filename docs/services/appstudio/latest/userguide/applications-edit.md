@@ -1,3 +1,7 @@
+---
+title: "Editing or building an application"
+---
+
 # Editing or building an application
 
 Use the following procedure to edit an application in App Studio.

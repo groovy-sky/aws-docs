@@ -1,3 +1,7 @@
+---
+title: "Automation parameters"
+---
+
 # Automation parameters
 
 Automation parameters are a powerful feature in App Studio that can be used to create flexible and reusable

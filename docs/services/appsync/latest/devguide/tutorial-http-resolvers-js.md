@@ -1,3 +1,7 @@
+---
+title: "Using HTTP resolvers in AWS AppSync"
+---
+
 # Using HTTP resolvers in AWS AppSync
 
 AWS AppSync enables you to use supported data sources (that is, AWS Lambda, Amazon DynamoDB,

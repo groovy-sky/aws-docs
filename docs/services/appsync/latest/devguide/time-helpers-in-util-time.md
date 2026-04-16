@@ -1,3 +1,7 @@
+---
+title: "Time helpers in $util.time"
+---
+
 # Time helpers in $util.time
 
 ###### Note

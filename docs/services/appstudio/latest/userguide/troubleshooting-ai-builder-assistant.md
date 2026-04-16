@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting AI builder assistant and chat"
+---
+
 # Troubleshooting AI builder assistant and chat
 
 This topic contains troubleshooting guidance for common issues when using the AI builder assistant.

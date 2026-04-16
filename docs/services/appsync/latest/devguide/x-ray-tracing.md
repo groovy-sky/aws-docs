@@ -1,3 +1,7 @@
+---
+title: "Using AWS X-Ray to trace requests in AWS AppSync"
+---
+
 # Using AWS X-Ray to trace requests in AWS AppSync
 
 You can use [AWS X-Ray](../../../xray/latest/devguide/aws-xray.md) to trace requests as they are

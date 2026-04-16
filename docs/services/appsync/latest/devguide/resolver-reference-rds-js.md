@@ -1,3 +1,7 @@
+---
+title: "AWS AppSync JavaScript resolver function reference for Amazon RDS"
+---
+
 # AWS AppSync JavaScript resolver function reference for Amazon RDS
 
 The AWS AppSync RDS function and resolver allows developers to send SQL queries

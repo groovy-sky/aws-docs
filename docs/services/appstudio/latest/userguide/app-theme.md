@@ -1,3 +1,7 @@
+---
+title: "Change colors in your app with app themes"
+---
+
 # Change colors in your app with app themes
 
 Use the following procedure to update the colors in your application by configuring an app theme.

@@ -1,3 +1,7 @@
+---
+title: "What is AWS AppSync?"
+---
+
 # What is AWS AppSync?
 
 AWS AppSync enables developers to connect their applications and services to data and

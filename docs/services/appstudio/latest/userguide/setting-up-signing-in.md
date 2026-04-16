@@ -1,3 +1,7 @@
+---
+title: "Accepting an invitation to join App Studio"
+---
+
 # Accepting an invitation to join App Studio
 
 Access to App Studio is managed by IAM Identity Center. That means that each user who wants to use App Studio must configure a user in IAM Identity Center and belong to

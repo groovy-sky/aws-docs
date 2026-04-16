@@ -1,3 +1,7 @@
+---
+title: "Publishing applications"
+---
+
 # Publishing applications
 
 When you've finished creating and configuring your application the next step is to publish it to test data transfers or share it with end users.

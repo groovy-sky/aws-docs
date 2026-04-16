@@ -1,3 +1,7 @@
+---
+title: "Testing and debugging resolvers in AWS AppSync (JavaScript)"
+---
+
 # Testing and debugging resolvers in AWS AppSync (JavaScript)
 
 AWS AppSync executes resolvers on a GraphQL field against a data source. When working with pipeline

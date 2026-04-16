@@ -1,3 +1,7 @@
+---
+title: "Build an AI text summarizer app with Amazon Bedrock"
+---
+
 # Build an AI text summarizer app with Amazon Bedrock
 
 In this tutorial, you will build an application in App Studio that uses Amazon Bedrock to provide

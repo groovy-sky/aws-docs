@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting App Studio setup, permissions, and onboarding"
+---
+
 # Troubleshooting App Studio setup, permissions, and onboarding
 
 This topic includes information about troubleshooting common issues when setting up or onboarding to App Studio, and managing permissions.

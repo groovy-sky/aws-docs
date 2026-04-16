@@ -1,3 +1,7 @@
+---
+title: "JavaScript resolver tutorials for AWS AppSync"
+---
+
 # JavaScript resolver tutorials for AWS AppSync
 
 Data sources and resolvers are used by AWS AppSync to translate GraphQL requests and

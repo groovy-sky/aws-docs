@@ -1,3 +1,7 @@
+---
+title: "Using AWS Lambda resolvers in AWS AppSync"
+---
+
 # Using AWS Lambda resolvers in AWS AppSync
 
 You can use AWS Lambda with AWS AppSync to resolve any GraphQL field. For example, a GraphQL

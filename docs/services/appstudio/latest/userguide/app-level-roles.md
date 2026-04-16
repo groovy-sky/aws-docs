@@ -1,3 +1,7 @@
+---
+title: "Configuring role-based visibility of pages"
+---
+
 # Configuring role-based visibility of pages
 
 You can create roles within an App Studio app and configure the visbility of pages based on those roles. For example, you can create

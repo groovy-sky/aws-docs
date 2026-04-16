@@ -1,3 +1,7 @@
+---
+title: "Using AWS WAF to protect your AWS AppSync APIs"
+---
+
 # Using AWS WAF to protect your AWS AppSync APIs
 
 AWS WAF is a web application firewall that helps protect web applications and APIs from

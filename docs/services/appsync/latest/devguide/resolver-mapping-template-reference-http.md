@@ -1,3 +1,7 @@
+---
+title: "AWS AppSync resolver mapping template reference for HTTP"
+---
+
 # AWS AppSync resolver mapping template reference for HTTP
 
 ###### Note

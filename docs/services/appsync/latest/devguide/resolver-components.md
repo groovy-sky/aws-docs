@@ -1,3 +1,7 @@
+---
+title: "Resolvers"
+---
+
 # Resolvers
 
 From the previous sections, you learned about the components of the schema and data source. Now, we need

@@ -1,3 +1,7 @@
+---
+title: "Using AWS AppSync Private APIs"
+---
+
 # Using AWS AppSync Private APIs
 
 If you use Amazon Virtual Private Cloud (Amazon VPC), you can create AWS AppSync Private APIs, which are APIs that can only be accessed from

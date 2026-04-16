@@ -1,3 +1,7 @@
+---
+title: "AWS AppSync resolver mapping template reference for Lambda"
+---
+
 # AWS AppSync resolver mapping template reference for Lambda
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "Deleting an App Studio instance"
+---
+
 # Deleting an App Studio instance
 
 Use the procedure in this topic to delete your App Studio instance. If you created resources in other services for use with App Studio, review and delete them

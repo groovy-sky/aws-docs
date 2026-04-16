@@ -1,3 +1,7 @@
+---
+title: "Components reference"
+---
+
 # Components reference
 
 This topic details each of App Studio's components, their properties, and includes configuration examples.

@@ -1,3 +1,7 @@
+---
+title: "AWS managed policies for AWS AppSync"
+---
+
 # AWS managed policies for AWS AppSync
 
 To add permissions to users, groups, and roles, it is easier to use AWS managed

@@ -1,3 +1,7 @@
+---
+title: "Connect App Studio to other services with connectors"
+---
+
 # Connect App Studio to other services with connectors
 
 A **connector** is a connection between App Studio and other AWS

@@ -1,3 +1,7 @@
+---
+title: "Creating a simple post application using DynamoDB JavaScript resolvers"
+---
+
 # Creating a simple post application using DynamoDB JavaScript resolvers
 
 In this tutorial, you will import your Amazon DynamoDB tables to AWS AppSync and connect them to build a fully-functional

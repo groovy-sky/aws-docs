@@ -1,3 +1,7 @@
+---
+title: "Connect to Amazon Bedrock"
+---
+
 # Connect to Amazon Bedrock
 
 To connect App Studio with Amazon Bedrock so builders can access and use Amazon Bedrock in applications, you must perform

@@ -1,3 +1,7 @@
+---
+title: "Deleting an entity"
+---
+
 # Deleting an entity
 
 Use the following procedure to delete an entity from an App Studio application.

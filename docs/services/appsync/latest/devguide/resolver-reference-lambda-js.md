@@ -1,3 +1,7 @@
+---
+title: "AWS AppSync JavaScript resolver function reference for Lambda"
+---
+
 # AWS AppSync JavaScript resolver function reference for Lambda
 
 You can use AWS AppSync functions and resolvers to invoke Lambda functions located in

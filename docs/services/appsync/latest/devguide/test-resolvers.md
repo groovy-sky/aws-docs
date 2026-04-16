@@ -1,3 +1,7 @@
+---
+title: "Testing your resolver and function handlers in AWS AppSync"
+---
+
 # Testing your resolver and function handlers in AWS AppSync
 
 You can use the `EvaluateCode` API command to remotely test your resolver and function handlers

@@ -1,3 +1,7 @@
+---
+title: "GraphqlApi"
+---
+
 # GraphqlApi
 
 Describes a GraphQL API.

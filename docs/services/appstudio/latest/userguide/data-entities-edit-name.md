@@ -1,3 +1,7 @@
+---
+title: "Editing the entity name"
+---
+
 # Editing the entity name
 
 1. If necessary, navigate to the entity you want to edit.

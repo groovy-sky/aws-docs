@@ -1,3 +1,7 @@
+---
+title: "Filters"
+---
+
 # Filters
 
 When querying objects in DynamoDB using the `Query` and `Scan` operations, you can

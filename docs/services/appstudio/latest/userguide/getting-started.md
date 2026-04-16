@@ -1,3 +1,7 @@
+---
+title: "Getting started with AWS App Studio"
+---
+
 # Getting started with AWS App Studio
 
 The following getting started tutorials walk you through building your first application in App Studio.

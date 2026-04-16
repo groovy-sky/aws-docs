@@ -1,3 +1,7 @@
+---
+title: "Configuring or editing an entity in an App Studio app"
+---
+
 # Configuring or editing an entity in an App Studio app
 
 Use the following topics to configure an entity in an App Studio application.

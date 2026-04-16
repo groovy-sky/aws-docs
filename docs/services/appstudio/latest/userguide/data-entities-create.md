@@ -1,3 +1,7 @@
+---
+title: "Creating an entity in an App Studio app"
+---
+
 # Creating an entity in an App Studio app
 
 There are four methods for creating an entity in an App Studio app. The following list contains each method, its benefits, and a link to the instructions for using

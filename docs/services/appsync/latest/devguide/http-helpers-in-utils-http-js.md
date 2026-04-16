@@ -1,3 +1,7 @@
+---
+title: "HTTP helpers in util.http"
+---
+
 # HTTP helpers in util.http
 
 The `util.http` utility provides helper methods that you can use to manage

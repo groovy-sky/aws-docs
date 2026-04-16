@@ -1,3 +1,7 @@
+---
+title: "Duplicating applications"
+---
+
 # Duplicating applications
 
 Application owners and co-owners can duplicate their apps to create an exact copy of the app. Duplicating apps is helpful if you want to preserve

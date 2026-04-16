@@ -1,3 +1,7 @@
+---
+title: "TransactGetItems"
+---
+
 # TransactGetItems
 
 The `TransactGetItems` request object lets you to tell the AWS AppSync DynamoDB

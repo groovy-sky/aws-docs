@@ -1,3 +1,7 @@
+---
+title: "Connect to Amazon Redshift"
+---
+
 # Connect to Amazon Redshift
 
 To connect App Studio with Amazon Redshift to enable builders to access and use Amazon Redshift resources in applications, you must perform

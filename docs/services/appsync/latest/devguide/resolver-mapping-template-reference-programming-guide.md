@@ -1,3 +1,7 @@
+---
+title: "AWS AppSync resolver mapping template programming guide"
+---
+
 # AWS AppSync resolver mapping template programming guide
 
 ###### Note

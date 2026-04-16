@@ -1,3 +1,7 @@
+---
+title: "Identity and access management for AWS AppSync"
+---
+
 # Identity and access management for AWS AppSync
 
 AWS Identity and Access Management (IAM) is an AWS service that helps an administrator securely control access

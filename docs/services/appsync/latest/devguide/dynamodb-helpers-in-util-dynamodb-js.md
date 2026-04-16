@@ -1,3 +1,7 @@
+---
+title: "DynamoDB helpers in util.dynamodb"
+---
+
 # DynamoDB helpers in util.dynamodb
 
 `util.dynamodb` contains helper methods that make it easier to write and read

@@ -1,3 +1,7 @@
+---
+title: "DeleteItem"
+---
+
 # DeleteItem
 
 The `DeleteItem` request lets you tell the AWS AppSync DynamoDB function to make a

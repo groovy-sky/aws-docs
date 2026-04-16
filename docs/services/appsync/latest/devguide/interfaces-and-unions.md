@@ -1,3 +1,7 @@
+---
+title: "Interfaces and unions in GraphQL"
+---
+
 # Interfaces and unions in GraphQL
 
 The GraphQL type system supports [Interfaces](https://graphql.org/learn/schema).

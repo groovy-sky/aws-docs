@@ -1,3 +1,7 @@
+---
+title: "Connect to services with OpenAPI"
+---
+
 # Connect to services with OpenAPI
 
 To connect App Studio with services using OpenAPI to enable builders to build applications that send requests and receive responses from the services,

@@ -1,3 +1,7 @@
+---
+title: "Configuring resolvers in AWS AppSync"
+---
+
 # Configuring resolvers in AWS AppSync
 
 In the previous sections, you learned how to create your GraphQL schema and data source, then linked them

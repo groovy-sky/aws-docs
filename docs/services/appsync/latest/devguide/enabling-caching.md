@@ -1,3 +1,7 @@
+---
+title: "Configuring server-side caching and API payload compression in AWS AppSync"
+---
+
 # Configuring server-side caching and API payload compression in AWS AppSync
 
 AWS AppSync's server-side data caching capabilities make data available in a high speed,

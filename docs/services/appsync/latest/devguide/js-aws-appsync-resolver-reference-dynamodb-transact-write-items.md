@@ -1,3 +1,7 @@
+---
+title: "TransactWriteItems"
+---
+
 # TransactWriteItems
 
 The `TransactWriteItems` request object lets you tell the AWS AppSync DynamoDB

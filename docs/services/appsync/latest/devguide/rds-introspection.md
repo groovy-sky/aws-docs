@@ -1,3 +1,7 @@
+---
+title: "Building GraphQL APIs with RDS introspection"
+---
+
 # Building GraphQL APIs with RDS introspection
 
 AWS AppSync's introspection utility can discover models from database tables and propose GraphQL

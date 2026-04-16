@@ -1,3 +1,7 @@
+---
+title: "Defining enhanced subscriptions filters in AWS AppSync"
+---
+
 # Defining enhanced subscriptions filters in AWS AppSync
 
 ###### Important

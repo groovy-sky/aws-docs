@@ -1,3 +1,7 @@
+---
+title: "Supplemental sections for the AWS AppSync console"
+---
+
 # Supplemental sections for the AWS AppSync console
 
 These sections are a reference for more advanced AWS AppSync topics. We recommend following the _Supplemental reading_ section before doing anything else.

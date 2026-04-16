@@ -1,3 +1,7 @@
+---
+title: "Previewing applications"
+---
+
 # Previewing applications
 
 You can preview applications in App Studio to see how they will appear to users and also test its functionality by using it

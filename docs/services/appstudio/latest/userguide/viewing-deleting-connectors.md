@@ -1,3 +1,7 @@
+---
+title: "Viewing, editing, and deleting connectors"
+---
+
 # Viewing, editing, and deleting connectors
 
 ###### To view, edit, or delete existing connectors

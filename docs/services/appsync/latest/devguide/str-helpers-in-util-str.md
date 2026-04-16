@@ -1,3 +1,7 @@
+---
+title: "String helpers in $util.str"
+---
+
 # String helpers in $util.str
 
 ###### Note

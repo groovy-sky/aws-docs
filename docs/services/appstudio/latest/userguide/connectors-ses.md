@@ -1,3 +1,7 @@
+---
+title: "Connect to Amazon Simple Email Service"
+---
+
 # Connect to Amazon Simple Email Service
 
 To connect App Studio with Amazon SES to enable builders to use it to send email notifications from their apps, you must perform

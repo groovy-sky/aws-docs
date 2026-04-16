@@ -1,3 +1,7 @@
+---
+title: "Configuring utilities for the APPSYNC_JS runtime"
+---
+
 # Configuring utilities for the `APPSYNC_JS` runtime
 
 AWS AppSync provides two libraries that aid in the development of resolvers with the `APPSYNC_JS`

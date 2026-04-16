@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting previewing apps"
+---
+
 # Troubleshooting previewing apps
 
 This topic contains information about troubleshooting issues when trying to preview apps.

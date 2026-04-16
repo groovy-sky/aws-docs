@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting publishing and sharing applications"
+---
+
 # Troubleshooting publishing and sharing applications
 
 This topic contains troubleshooting guidance for common issues when publishing or sharing App Studio applications.

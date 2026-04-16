@@ -1,3 +1,7 @@
+---
+title: "Built-in utilities"
+---
+
 # Built-in utilities
 
 The `util` variable contains general utility methods to help you work with

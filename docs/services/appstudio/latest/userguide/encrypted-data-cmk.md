@@ -1,3 +1,7 @@
+---
+title: "Use encrypted data sources with CMKs"
+---
+
 # Use encrypted data sources with CMKs
 
 This topic contains information about setting up and connecting App Studio to data sources that are encrypted using a

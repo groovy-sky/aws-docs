@@ -1,3 +1,7 @@
+---
+title: "AWS App Studio concepts"
+---
+
 # AWS App Studio concepts
 
 Get familiar with the key App Studio concepts to help speed up creating applications and

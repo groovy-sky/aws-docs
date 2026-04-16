@@ -1,3 +1,7 @@
+---
+title: "Connect to Salesforce"
+---
+
 # Connect to Salesforce
 
 To connect App Studio with Salesforce to enable builders to access and use Salesforce resources in applications, you must create and configure a connected app

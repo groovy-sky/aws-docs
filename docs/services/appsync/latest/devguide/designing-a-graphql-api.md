@@ -1,3 +1,7 @@
+---
+title: "Designing GraphQL APIs with AWS AppSync"
+---
+
 # Designing GraphQL APIs with AWS AppSync
 
 AWS AppSync allows you to create GraphQL APIs using the console experience. You caught a glimpse of this in the

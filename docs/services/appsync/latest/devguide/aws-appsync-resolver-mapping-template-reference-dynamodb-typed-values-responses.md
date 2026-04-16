@@ -1,3 +1,7 @@
+---
+title: "Type system (response mapping)"
+---
+
 # Type system (response mapping)
 
 When receiving a response from DynamoDB, AWS AppSync automatically converts it into GraphQL and JSON primitive

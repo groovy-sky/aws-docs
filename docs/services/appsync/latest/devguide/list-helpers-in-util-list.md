@@ -1,3 +1,7 @@
+---
+title: "List helpers in $util.list"
+---
+
 # List helpers in $util.list
 
 ###### Note

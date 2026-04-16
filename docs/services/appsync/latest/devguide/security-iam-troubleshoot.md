@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting AWS AppSync identity and access"
+---
+
 # Troubleshooting AWS AppSync identity and access
 
 Use the following information to help you diagnose and fix common issues that you might

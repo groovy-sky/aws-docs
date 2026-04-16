@@ -1,3 +1,7 @@
+---
+title: "Taking a tour of the AWS AppSync console"
+---
+
 # Taking a tour of the AWS AppSync console
 
 Before we add data to our DynamoDB table, we should review the basic features of the AWS AppSync console

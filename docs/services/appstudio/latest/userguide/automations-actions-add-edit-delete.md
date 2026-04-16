@@ -1,3 +1,7 @@
+---
+title: "Adding, editing, and deleting automation actions"
+---
+
 # Adding, editing, and deleting automation actions
 
 An automation action, commonly referred to as an **action**,

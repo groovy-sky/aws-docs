@@ -1,3 +1,7 @@
+---
+title: "BatchDeleteItem"
+---
+
 # BatchDeleteItem
 
 The `BatchDeleteItem` request object lets you tell the AWS AppSync DynamoDB function

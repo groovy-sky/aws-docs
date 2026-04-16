@@ -1,3 +1,7 @@
+---
+title: "Data sources"
+---
+
 # Data sources
 
 In the previous section, we learned that a schema defines the shape of your data. However, we never

@@ -1,3 +1,7 @@
+---
+title: "Debugging with logs from published apps in Amazon CloudWatch Logs"
+---
+
 # Debugging with logs from published apps in Amazon CloudWatch Logs
 
 Amazon CloudWatch Logs monitors your AWS resources and the applications you run on AWS

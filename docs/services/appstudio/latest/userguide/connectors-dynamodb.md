@@ -1,3 +1,7 @@
+---
+title: "Connect to Amazon DynamoDB"
+---
+
 # Connect to Amazon DynamoDB
 
 To connect App Studio with DynamoDB to enable builders to access and use DynamoDB resources in applications, you must perform

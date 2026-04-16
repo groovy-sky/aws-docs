@@ -1,3 +1,7 @@
+---
+title: "GetItem"
+---
+
 # GetItem
 
 The `GetItem` request mapping document lets you tell the AWS AppSync DynamoDB resolver to make a

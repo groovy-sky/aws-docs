@@ -1,3 +1,7 @@
+---
+title: "Managed data entities in AWS App Studio"
+---
+
 # Managed data entities in AWS App Studio
 
 Typically, you configure an entity in App Studio with a connection to an external database table, and you must create and map each entity field with

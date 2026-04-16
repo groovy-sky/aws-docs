@@ -1,3 +1,7 @@
+---
+title: "StartDataSourceIntrospection"
+---
+
 # StartDataSourceIntrospection
 
 Creates a new introspection. Returns the `introspectionId` of the new

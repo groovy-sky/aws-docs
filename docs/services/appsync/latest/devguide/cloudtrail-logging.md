@@ -1,3 +1,7 @@
+---
+title: "Logging AWS AppSync API calls using AWS CloudTrail"
+---
+
 # Logging AWS AppSync API calls using AWS CloudTrail
 
 AWS AppSync is integrated with AWS CloudTrail, a service that provides a record of actions taken by a

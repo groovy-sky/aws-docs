@@ -1,3 +1,7 @@
+---
+title: "RdsDataApiConfig"
+---
+
 # RdsDataApiConfig
 
 Contains the metadata required to introspect the RDS cluster.

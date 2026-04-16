@@ -1,3 +1,7 @@
+---
+title: "AWS AppSync JavaScript resolver function reference for DynamoDB"
+---
+
 # AWS AppSync JavaScript resolver function reference for DynamoDB
 
 The AWS AppSync DynamoDB function allows you to use [GraphQL](https://graphql.org/) to store and retrieve data in existing Amazon DynamoDB tables in your account by

@@ -1,3 +1,7 @@
+---
+title: "UpdateItem"
+---
+
 # UpdateItem
 
 The `UpdateItem` request enables you to tell the AWS AppSync DynamoDB function to

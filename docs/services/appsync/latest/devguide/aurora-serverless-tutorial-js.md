@@ -1,3 +1,7 @@
+---
+title: "Using Aurora PostgreSQL with Data API in AWS AppSync"
+---
+
 # Using Aurora PostgreSQL with Data API in AWS AppSync
 
 Learn how to connect your GraphQL API to Aurora PostgreSQL databases using AWS AppSync.

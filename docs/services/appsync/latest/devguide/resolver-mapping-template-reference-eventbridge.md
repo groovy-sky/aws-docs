@@ -1,3 +1,7 @@
+---
+title: "AWS AppSync resolver mapping template reference for EventBridge"
+---
+
 # AWS AppSync resolver mapping template reference for EventBridge
 
 ###### Note

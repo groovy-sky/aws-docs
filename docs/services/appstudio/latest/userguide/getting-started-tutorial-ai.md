@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Generate an app using AI"
+---
+
 # Tutorial: Generate an app using AI
 
 AWS App Studio contains generative AI features throughout the service to help speed up

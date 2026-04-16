@@ -1,3 +1,7 @@
+---
+title: "Scan"
+---
+
 # Scan
 
 The `Scan` request lets you tell the AWS AppSync DynamoDB function to make a

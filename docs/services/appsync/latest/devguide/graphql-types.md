@@ -1,3 +1,7 @@
+---
+title: "GraphQL types"
+---
+
 # GraphQL types
 
 GraphQL supports many different types. As you saw in the previous section, types define the shape or

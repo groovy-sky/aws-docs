@@ -1,3 +1,7 @@
+---
+title: "Performing DynamoDB transactions in AWS AppSync"
+---
+
 # Performing DynamoDB transactions in AWS AppSync
 
 ###### Note

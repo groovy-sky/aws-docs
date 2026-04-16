@@ -1,3 +1,7 @@
+---
+title: "Configuring authorization and authentication to secure your GraphQL APIs"
+---
+
 # Configuring authorization and authentication to secure your GraphQL APIs
 
 AWS AppSync offers the following authorization types to secure GraphQL APIs: API keys,

@@ -1,3 +1,7 @@
+---
+title: "Creating basic queries (VTL)"
+---
+
 # Creating basic queries (VTL)
 
 ###### Note

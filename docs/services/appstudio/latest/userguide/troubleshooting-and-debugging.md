@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting and debugging App Studio"
+---
+
 # Troubleshooting and debugging App Studio
 
 ###### Topics

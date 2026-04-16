@@ -1,3 +1,7 @@
+---
+title: "Ordering and organizing pages in the app navigation"
+---
+
 # Ordering and organizing pages in the app navigation
 
 This topic includes information about reordering and organizing pages in App Studio applications. There are two areas of the product where app pages

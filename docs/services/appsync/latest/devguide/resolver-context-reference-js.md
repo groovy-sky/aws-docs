@@ -1,3 +1,7 @@
+---
+title: "AWS AppSync JavaScript resolver context object reference"
+---
+
 # AWS AppSync JavaScript resolver context object reference
 
 AWS AppSync defines a set of variables and functions for working with request and response

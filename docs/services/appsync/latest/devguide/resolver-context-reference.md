@@ -1,3 +1,7 @@
+---
+title: "AWS AppSync resolver mapping template context reference"
+---
+
 # AWS AppSync resolver mapping template context reference
 
 ###### Note

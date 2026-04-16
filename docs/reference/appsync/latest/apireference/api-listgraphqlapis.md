@@ -1,3 +1,7 @@
+---
+title: "ListGraphqlApis"
+---
+
 # ListGraphqlApis
 
 Lists your GraphQL APIs.

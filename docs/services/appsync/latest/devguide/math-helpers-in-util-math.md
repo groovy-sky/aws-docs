@@ -1,3 +1,7 @@
+---
+title: "Math helpers in $util.math"
+---
+
 # Math helpers in $util.math
 
 ###### Note

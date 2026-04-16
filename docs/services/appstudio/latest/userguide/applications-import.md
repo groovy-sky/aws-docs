@@ -1,3 +1,7 @@
+---
+title: "Importing applications"
+---
+
 # Importing applications
 
 You can import a copy of an exported application to your App Studio instance. You can import apps that

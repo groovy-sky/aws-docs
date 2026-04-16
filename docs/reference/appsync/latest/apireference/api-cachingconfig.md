@@ -1,3 +1,7 @@
+---
+title: "CachingConfig"
+---
+
 # CachingConfig
 
 The caching configuration for a resolver that has caching activated.

@@ -1,3 +1,7 @@
+---
+title: "Using JavaScript to write expressions in App Studio"
+---
+
 # Using JavaScript to write expressions in App Studio
 
 In AWS App Studio, you can use JavaScript expressions to dynamically control

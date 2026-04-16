@@ -1,3 +1,7 @@
+---
+title: "Projections"
+---
+
 # Projections
 
 When reading objects in DynamoDB using the `GetItem`, `Scan`,
