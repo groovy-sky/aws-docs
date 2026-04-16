@@ -1,3 +1,7 @@
+---
+title: "JDBC connector for Amazon AppFlow"
+---
+
 # JDBC connector for Amazon AppFlow
 
 Java Database Connectivity (JDBC) is a Java API that developers use to connect

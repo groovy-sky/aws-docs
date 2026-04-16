@@ -1,3 +1,7 @@
+---
+title: "ServiceNowMetadata"
+---
+
 # ServiceNowMetadata
 
 The connector metadata specific to ServiceNow.

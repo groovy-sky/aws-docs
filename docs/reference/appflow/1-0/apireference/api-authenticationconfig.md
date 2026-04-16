@@ -1,3 +1,7 @@
+---
+title: "AuthenticationConfig"
+---
+
 # AuthenticationConfig
 
 Contains information about the authentication config that the connector supports.

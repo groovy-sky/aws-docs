@@ -1,3 +1,7 @@
+---
+title: "Step 3: Transfer data from Amazon S3 to a SaaS destination"
+---
+
 # Step 3: Transfer data from Amazon S3 to a SaaS destination
 
 Amazon S3 now hosts your data, but you still need to synchronize all your records in the

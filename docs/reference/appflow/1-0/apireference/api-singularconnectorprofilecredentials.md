@@ -1,3 +1,7 @@
+---
+title: "SingularConnectorProfileCredentials"
+---
+
 # SingularConnectorProfileCredentials
 
 The connector-specific profile credentials required when using Singular.

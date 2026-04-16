@@ -1,3 +1,7 @@
+---
+title: "S3Metadata"
+---
+
 # S3Metadata
 
 The connector metadata specific to Amazon S3.

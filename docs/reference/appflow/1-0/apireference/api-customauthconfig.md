@@ -1,3 +1,7 @@
+---
+title: "CustomAuthConfig"
+---
+
 # CustomAuthConfig
 
 Configuration information required for custom authentication.

@@ -1,3 +1,7 @@
+---
+title: "ConnectorProfileProperties"
+---
+
 # ConnectorProfileProperties
 
 The connector-specific profile properties required by each connector.

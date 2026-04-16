@@ -1,3 +1,7 @@
+---
+title: "Monitoring Amazon AppFlow with Amazon CloudWatch"
+---
+
 # Monitoring Amazon AppFlow with Amazon CloudWatch
 
 You can monitor your Amazon AppFlow flows by using CloudWatch, which collects raw data and processes it

@@ -1,3 +1,7 @@
+---
+title: "Mixpanel connector for Amazon AppFlow"
+---
+
 # Mixpanel connector for Amazon AppFlow
 
 Mixpanel is a service that provides analytics about user engagement in web and mobile

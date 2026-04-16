@@ -1,3 +1,7 @@
+---
+title: "OAuthCredentials"
+---
+
 # OAuthCredentials
 
 The OAuth credentials required for OAuth type authentication.

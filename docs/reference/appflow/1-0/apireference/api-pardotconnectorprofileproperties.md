@@ -1,3 +1,7 @@
+---
+title: "PardotConnectorProfileProperties"
+---
+
 # PardotConnectorProfileProperties
 
 The connector-specific profile properties required when using Salesforce Pardot.

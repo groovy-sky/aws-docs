@@ -1,3 +1,7 @@
+---
+title: "SAPODataConnectorProfileProperties"
+---
+
 # SAPODataConnectorProfileProperties
 
 The connector-specific profile properties required when using SAPOData.

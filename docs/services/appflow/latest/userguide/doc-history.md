@@ -1,3 +1,7 @@
+---
+title: "Document history for user guide"
+---
+
 # Document history for user guide
 
 The following table describes the important changes in each release of the

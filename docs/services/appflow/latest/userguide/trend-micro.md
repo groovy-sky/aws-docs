@@ -1,3 +1,7 @@
+---
+title: "Trend Micro"
+---
+
 # Trend Micro
 
 The following are the requirements and connection instructions for using Trend Micro with

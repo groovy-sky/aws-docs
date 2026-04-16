@@ -1,3 +1,7 @@
+---
+title: "Mailchimp connector for Amazon AppFlow"
+---
+
 # Mailchimp connector for Amazon AppFlow
 
 Mailchimp is a marketing automation platform and email marketing service. If you're

@@ -1,3 +1,7 @@
+---
+title: "UpdateConnectorProfile"
+---
+
 # UpdateConnectorProfile
 
 Updates a given connector profile associated with your account.

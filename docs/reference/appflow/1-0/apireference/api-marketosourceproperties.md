@@ -1,3 +1,7 @@
+---
+title: "MarketoSourceProperties"
+---
+
 # MarketoSourceProperties
 
 The properties that are applied when Marketo is being used as a source.

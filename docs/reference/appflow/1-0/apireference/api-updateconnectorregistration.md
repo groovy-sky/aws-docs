@@ -1,3 +1,7 @@
+---
+title: "UpdateConnectorRegistration"
+---
+
 # UpdateConnectorRegistration
 
 Updates a custom connector that you've previously registered. This operation updates the

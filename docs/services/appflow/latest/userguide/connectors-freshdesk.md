@@ -1,3 +1,7 @@
+---
+title: "Freshdesk connector for Amazon AppFlow"
+---
+
 # Freshdesk connector for Amazon AppFlow
 
 Freshdesk is an online customer service solution. If you're a Freshdesk

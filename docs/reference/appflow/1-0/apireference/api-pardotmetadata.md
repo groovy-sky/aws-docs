@@ -1,3 +1,7 @@
+---
+title: "PardotMetadata"
+---
+
 # PardotMetadata
 
 The connector metadata specific to Salesforce Pardot.

@@ -1,3 +1,7 @@
+---
+title: "AmplitudeSourceProperties"
+---
+
 # AmplitudeSourceProperties
 
 The properties that are applied when Amplitude is being used as a source.

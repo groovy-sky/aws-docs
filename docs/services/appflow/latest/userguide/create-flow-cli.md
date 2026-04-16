@@ -1,3 +1,7 @@
+---
+title: "Create a flow using the AWS CLI"
+---
+
 # Create a flow using the AWS CLI
 
 You may also use the [CLI](../../../cli/latest/reference/appflow/index.md) to create a

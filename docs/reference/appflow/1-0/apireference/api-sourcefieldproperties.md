@@ -1,3 +1,7 @@
+---
+title: "SourceFieldProperties"
+---
+
 # SourceFieldProperties
 
 The properties that can be applied to a field when the connector is being used as a

@@ -1,3 +1,7 @@
+---
+title: "VeevaConnectorProfileCredentials"
+---
+
 # VeevaConnectorProfileCredentials
 
 The connector-specific profile credentials required when using Veeva.

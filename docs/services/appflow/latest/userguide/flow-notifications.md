@@ -1,3 +1,7 @@
+---
+title: "Flow notifications"
+---
+
 # Flow notifications
 
 Amazon AppFlow is integrated with Amazon EventBridge to publish events related to the status of a flow.

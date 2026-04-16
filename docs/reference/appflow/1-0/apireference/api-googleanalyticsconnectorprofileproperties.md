@@ -1,3 +1,7 @@
+---
+title: "GoogleAnalyticsConnectorProfileProperties"
+---
+
 # GoogleAnalyticsConnectorProfileProperties
 
 The connector-specific profile properties required by Google Analytics.

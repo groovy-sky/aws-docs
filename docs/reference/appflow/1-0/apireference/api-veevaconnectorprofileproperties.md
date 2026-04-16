@@ -1,3 +1,7 @@
+---
+title: "VeevaConnectorProfileProperties"
+---
+
 # VeevaConnectorProfileProperties
 
 The connector-specific profile properties required when using Veeva.

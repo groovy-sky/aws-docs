@@ -1,3 +1,7 @@
+---
+title: "Flow triggers"
+---
+
 # Flow triggers
 
 A _trigger_ determines how a flow runs. The following are the supported

@@ -1,3 +1,7 @@
+---
+title: "Amazon Redshift connector for Amazon AppFlow"
+---
+
 # Amazon Redshift connector for Amazon AppFlow
 
 Amazon Redshift is a data warehouse service in AWS. If you use Amazon Redshift, you can also use Amazon AppFlow to

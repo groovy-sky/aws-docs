@@ -1,3 +1,7 @@
+---
+title: "Snapchat Ads connector for Amazon AppFlow"
+---
+
 # Snapchat Ads connector for Amazon AppFlow
 
 You can use the Snapchat Ads connector in Amazon AppFlow to transfer data about the ads that

@@ -1,3 +1,7 @@
+---
+title: "Okta connector for Amazon AppFlow"
+---
+
 # Okta connector for Amazon AppFlow
 
 Okta is an identity and access management solution. If you you're an

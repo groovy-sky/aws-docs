@@ -1,3 +1,7 @@
+---
+title: "GitLab connector for Amazon AppFlow"
+---
+
 # GitLab connector for Amazon AppFlow
 
 GitLab is an open source code repository and software development platform. If

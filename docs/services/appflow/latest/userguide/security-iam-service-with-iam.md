@@ -1,3 +1,7 @@
+---
+title: "How Amazon AppFlow works with IAM"
+---
+
 # How Amazon AppFlow works with IAM
 
 Before you use IAM to manage access to Amazon AppFlow, learn what IAM features are

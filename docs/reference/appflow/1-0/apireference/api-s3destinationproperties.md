@@ -1,3 +1,7 @@
+---
+title: "S3DestinationProperties"
+---
+
 # S3DestinationProperties
 
 The properties that are applied when Amazon S3 is used as a destination.

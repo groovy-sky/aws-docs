@@ -1,3 +1,7 @@
+---
+title: "Slack"
+---
+
 # Slack
 
 The following are the requirements and connection instructions for using Slack with

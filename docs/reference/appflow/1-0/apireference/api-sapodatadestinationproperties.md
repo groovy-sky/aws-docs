@@ -1,3 +1,7 @@
+---
+title: "SAPODataDestinationProperties"
+---
+
 # SAPODataDestinationProperties
 
 The properties that are applied when using SAPOData as a flow destination

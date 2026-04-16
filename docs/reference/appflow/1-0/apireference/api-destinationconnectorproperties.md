@@ -1,3 +1,7 @@
+---
+title: "DestinationConnectorProperties"
+---
+
 # DestinationConnectorProperties
 
 This stores the information that is required to query a particular connector.

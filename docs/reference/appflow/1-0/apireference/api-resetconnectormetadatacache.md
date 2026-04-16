@@ -1,3 +1,7 @@
+---
+title: "ResetConnectorMetadataCache"
+---
+
 # ResetConnectorMetadataCache
 
 Resets metadata about your connector entities that Amazon AppFlow stored in its

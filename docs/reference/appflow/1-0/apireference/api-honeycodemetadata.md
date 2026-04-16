@@ -1,3 +1,7 @@
+---
+title: "HoneycodeMetadata"
+---
+
 # HoneycodeMetadata
 
 The connector metadata specific to Amazon Honeycode.

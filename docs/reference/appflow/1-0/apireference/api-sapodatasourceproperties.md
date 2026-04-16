@@ -1,3 +1,7 @@
+---
+title: "SAPODataSourceProperties"
+---
+
 # SAPODataSourceProperties
 
 The properties that are applied when using SAPOData as a flow source.

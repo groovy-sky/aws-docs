@@ -1,3 +1,7 @@
+---
+title: "IncrementalPullConfig"
+---
+
 # IncrementalPullConfig
 
 Specifies the configuration used when importing incremental records from the source.

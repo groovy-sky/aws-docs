@@ -1,3 +1,7 @@
+---
+title: "Google Sheets connector for Amazon AppFlow"
+---
+
 # Google Sheets connector for Amazon AppFlow
 
 Google Sheets is a spreadsheet based collaboration service that helps teams share data

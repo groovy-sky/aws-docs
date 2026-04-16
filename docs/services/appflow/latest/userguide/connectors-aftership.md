@@ -1,3 +1,7 @@
+---
+title: "AfterShip connector for Amazon AppFlow"
+---
+
 # AfterShip connector for Amazon AppFlow
 
 AfterShip is a shipment tracking software as a service (SaaS) solution for

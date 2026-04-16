@@ -1,3 +1,7 @@
+---
+title: "VeevaMetadata"
+---
+
 # VeevaMetadata
 
 The connector metadata specific to Veeva.

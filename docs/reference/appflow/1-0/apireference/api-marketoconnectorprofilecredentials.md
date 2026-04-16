@@ -1,3 +1,7 @@
+---
+title: "MarketoConnectorProfileCredentials"
+---
+
 # MarketoConnectorProfileCredentials
 
 The connector-specific profile credentials required by Marketo.

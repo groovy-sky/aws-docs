@@ -1,3 +1,7 @@
+---
+title: "UpsolverDestinationProperties"
+---
+
 # UpsolverDestinationProperties
 
 The properties that are applied when Upsolver is used as a destination.

@@ -1,3 +1,7 @@
+---
+title: "ServiceNowConnectorProfileProperties"
+---
+
 # ServiceNowConnectorProfileProperties
 
 The connector-specific profile properties required when using ServiceNow.

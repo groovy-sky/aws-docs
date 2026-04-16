@@ -1,3 +1,7 @@
+---
+title: "Productboard connector for Amazon AppFlow"
+---
+
 # Productboard connector for Amazon AppFlow
 
 Productboard is a product management solution. If you're a Productboard user,

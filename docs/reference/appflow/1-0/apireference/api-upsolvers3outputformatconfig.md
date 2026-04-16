@@ -1,3 +1,7 @@
+---
+title: "UpsolverS3OutputFormatConfig"
+---
+
 # UpsolverS3OutputFormatConfig
 
 The configuration that determines how Amazon AppFlow formats the flow output data

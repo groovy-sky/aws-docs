@@ -1,3 +1,7 @@
+---
+title: "ZendeskDestinationProperties"
+---
+
 # ZendeskDestinationProperties
 
 The properties that are applied when Zendesk is used as a destination.

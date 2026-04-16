@@ -1,3 +1,7 @@
+---
+title: "DestinationFieldProperties"
+---
+
 # DestinationFieldProperties
 
 The properties that can be applied to a field when connector is being used as a

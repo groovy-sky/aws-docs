@@ -1,3 +1,7 @@
+---
+title: "Typeform connector for Amazon AppFlow"
+---
+
 # Typeform connector for Amazon AppFlow
 
 Typeform is an online survey tool. If you're a Typeform user, your

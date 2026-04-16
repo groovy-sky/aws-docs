@@ -1,3 +1,7 @@
+---
+title: "ZendeskMetadata"
+---
+
 # ZendeskMetadata
 
 The connector metadata specific to Zendesk.

@@ -1,3 +1,7 @@
+---
+title: "Facebook Page Insights connector for Amazon AppFlow"
+---
+
 # Facebook Page Insights connector for Amazon AppFlow
 
 Facebook Page Insights provides Facebook Page owners with information about the performance and

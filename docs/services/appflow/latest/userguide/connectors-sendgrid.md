@@ -1,3 +1,7 @@
+---
+title: "SendGrid connector for Amazon AppFlow"
+---
+
 # SendGrid connector for Amazon AppFlow
 
 SendGrid is a marketing automation platform and email marketing service. If you're

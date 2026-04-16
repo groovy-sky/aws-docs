@@ -1,3 +1,7 @@
+---
+title: "MarketoConnectorProfileProperties"
+---
+
 # MarketoConnectorProfileProperties
 
 The connector-specific profile properties required when using Marketo.

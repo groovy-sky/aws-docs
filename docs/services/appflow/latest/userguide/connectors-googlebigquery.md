@@ -1,3 +1,7 @@
+---
+title: "Google BigQuery connector for Amazon AppFlow"
+---
+
 # Google BigQuery connector for Amazon AppFlow
 
 Google BigQuery is a query and analysis solution. If you’re a Google BigQuery user,

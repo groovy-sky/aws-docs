@@ -1,3 +1,7 @@
+---
+title: "CancelFlowExecutions"
+---
+
 # CancelFlowExecutions
 
 Cancels active runs for a flow.

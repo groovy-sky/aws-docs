@@ -1,3 +1,7 @@
+---
+title: "HoneycodeConnectorProfileProperties"
+---
+
 # HoneycodeConnectorProfileProperties
 
 The connector-specific properties required when using Amazon Honeycode.

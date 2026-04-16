@@ -1,3 +1,7 @@
+---
+title: "DataTransferApi"
+---
+
 # DataTransferApi
 
 The API of the connector application that Amazon AppFlow uses to transfer your

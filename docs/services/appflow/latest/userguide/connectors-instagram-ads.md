@@ -1,3 +1,7 @@
+---
+title: "Instagram Ads connector for Amazon AppFlow"
+---
+
 # Instagram Ads connector for Amazon AppFlow
 
 Instagram Ads is an advertising solution for Instagram. If you run ads on Instagram,

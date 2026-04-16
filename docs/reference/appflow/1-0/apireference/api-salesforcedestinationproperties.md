@@ -1,3 +1,7 @@
+---
+title: "SalesforceDestinationProperties"
+---
+
 # SalesforceDestinationProperties
 
 The properties that are applied when Salesforce is being used as a destination.

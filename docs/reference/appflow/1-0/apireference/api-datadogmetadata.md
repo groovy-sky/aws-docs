@@ -1,3 +1,7 @@
+---
+title: "DatadogMetadata"
+---
+
 # DatadogMetadata
 
 The connector metadata specific to Datadog.

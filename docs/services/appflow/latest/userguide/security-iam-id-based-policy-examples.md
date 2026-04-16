@@ -1,3 +1,7 @@
+---
+title: "Identity-based policy examples for Amazon AppFlow"
+---
+
 # Identity-based policy examples for Amazon AppFlow
 
 By default, users and roles don't have permission to create or modify Amazon AppFlow

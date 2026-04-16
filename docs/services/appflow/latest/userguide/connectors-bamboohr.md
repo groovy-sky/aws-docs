@@ -1,3 +1,7 @@
+---
+title: "BambooHR connector for Amazon AppFlow"
+---
+
 # BambooHR connector for Amazon AppFlow
 
 BambooHR is a human resources software as a service (SaaS) solution. If you’re a

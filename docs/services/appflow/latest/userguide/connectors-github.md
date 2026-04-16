@@ -1,3 +1,7 @@
+---
+title: "GitHub connector for Amazon AppFlow"
+---
+
 # GitHub connector for Amazon AppFlow
 
 GitHub is a service that hosts code repositories for software developers, and it

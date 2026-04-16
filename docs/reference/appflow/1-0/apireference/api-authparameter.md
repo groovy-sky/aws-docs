@@ -1,3 +1,7 @@
+---
+title: "AuthParameter"
+---
+
 # AuthParameter
 
 Information about required authentication parameters.

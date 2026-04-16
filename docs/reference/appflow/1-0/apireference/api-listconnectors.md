@@ -1,3 +1,7 @@
+---
+title: "ListConnectors"
+---
+
 # ListConnectors
 
 Returns the list of all registered custom connectors in your AWS account.

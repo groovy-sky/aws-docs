@@ -1,3 +1,7 @@
+---
+title: "Intercom connector for Amazon AppFlow"
+---
+
 # Intercom connector for Amazon AppFlow
 
 Intercom is a customer engagement solution. It helps organizations learn who is

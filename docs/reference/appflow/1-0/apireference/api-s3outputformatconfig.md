@@ -1,3 +1,7 @@
+---
+title: "S3OutputFormatConfig"
+---
+
 # S3OutputFormatConfig
 
 The configuration that determines how Amazon AppFlow should format the flow output

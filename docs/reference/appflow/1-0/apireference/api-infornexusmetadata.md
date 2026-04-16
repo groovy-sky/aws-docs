@@ -1,3 +1,7 @@
+---
+title: "InforNexusMetadata"
+---
+
 # InforNexusMetadata
 
 The connector metadata specific to Infor Nexus.

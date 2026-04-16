@@ -1,3 +1,7 @@
+---
+title: "CircleCI connector for Amazon AppFlow"
+---
+
 # CircleCI connector for Amazon AppFlow
 
 CircleCI is a continuous integration and continuous delivery platform. If you're a

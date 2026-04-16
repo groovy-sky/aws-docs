@@ -1,3 +1,7 @@
+---
+title: "ConnectorProvisioningConfig"
+---
+
 # ConnectorProvisioningConfig
 
 Contains information about the configuration of the connector being registered.

@@ -1,3 +1,7 @@
+---
+title: "OAuth2CustomParameter"
+---
+
 # OAuth2CustomParameter
 
 Custom parameter required for OAuth 2.0 authentication.

@@ -1,3 +1,7 @@
+---
+title: "SAPODataConnectorProfileCredentials"
+---
+
 # SAPODataConnectorProfileCredentials
 
 The connector-specific profile credentials required when using SAPOData.

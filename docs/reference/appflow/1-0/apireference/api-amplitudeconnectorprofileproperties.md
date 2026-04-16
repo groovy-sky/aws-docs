@@ -1,3 +1,7 @@
+---
+title: "AmplitudeConnectorProfileProperties"
+---
+
 # AmplitudeConnectorProfileProperties
 
 The connector-specific profile properties required when using Amplitude.

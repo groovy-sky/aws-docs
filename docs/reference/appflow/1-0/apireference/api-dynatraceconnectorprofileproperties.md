@@ -1,3 +1,7 @@
+---
+title: "DynatraceConnectorProfileProperties"
+---
+
 # DynatraceConnectorProfileProperties
 
 The connector-specific profile properties required by Dynatrace.

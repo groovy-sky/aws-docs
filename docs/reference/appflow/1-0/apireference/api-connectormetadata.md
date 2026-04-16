@@ -1,3 +1,7 @@
+---
+title: "ConnectorMetadata"
+---
+
 # ConnectorMetadata
 
 A structure to specify connector-specific metadata such as `oAuthScopes`,

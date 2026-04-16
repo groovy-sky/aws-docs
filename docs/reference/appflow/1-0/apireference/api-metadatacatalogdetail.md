@@ -1,3 +1,7 @@
+---
+title: "MetadataCatalogDetail"
+---
+
 # MetadataCatalogDetail
 
 Describes the metadata catalog, metadata table, and data partitions that Amazon AppFlow used for the associated flow run.

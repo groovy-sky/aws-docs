@@ -1,3 +1,7 @@
+---
+title: "OAuth2Credentials"
+---
+
 # OAuth2Credentials
 
 The OAuth 2.0 credentials required for OAuth 2.0 authentication.

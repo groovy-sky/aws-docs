@@ -1,3 +1,7 @@
+---
+title: "AggregationConfig"
+---
+
 # AggregationConfig
 
 The aggregation settings that you can use to customize the output format of your flow

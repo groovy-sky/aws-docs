@@ -1,3 +1,7 @@
+---
+title: "Delighted connector for Amazon AppFlow"
+---
+
 # Delighted connector for Amazon AppFlow
 
 Delighted is a cloud-based survey tool that helps its users distribute surveys and

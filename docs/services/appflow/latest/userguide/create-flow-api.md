@@ -1,3 +1,7 @@
+---
+title: "Create a flow using the Amazon AppFlow APIs"
+---
+
 # Create a flow using the Amazon AppFlow APIs
 
 You may also use the APIs to create a connector profile and configure a flow using the

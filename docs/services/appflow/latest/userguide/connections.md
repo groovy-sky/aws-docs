@@ -1,3 +1,7 @@
+---
+title: "Managing Amazon AppFlow connections"
+---
+
 # Managing Amazon AppFlow connections
 
 To enable data flows in Amazon AppFlow, you provide access to your source and destination

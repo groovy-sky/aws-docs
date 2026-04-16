@@ -1,3 +1,7 @@
+---
+title: "ConnectorOAuthRequest"
+---
+
 # ConnectorOAuthRequest
 
 Used by select connectors for which the OAuth workflow is supported, such as Salesforce,

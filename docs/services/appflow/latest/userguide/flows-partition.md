@@ -1,3 +1,7 @@
+---
+title: "Partitioning and aggregating data output from an Amazon AppFlow flow"
+---
+
 # Partitioning and aggregating data output from an Amazon AppFlow flow
 
 When you use Amazon AppFlow to transfer data to Amazon S3 with a flow, you get the options to do the

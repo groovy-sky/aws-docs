@@ -1,3 +1,7 @@
+---
+title: "TrendmicroMetadata"
+---
+
 # TrendmicroMetadata
 
 The connector metadata specific to Trend Micro.

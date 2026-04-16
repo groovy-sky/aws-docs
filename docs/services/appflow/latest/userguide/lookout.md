@@ -1,3 +1,7 @@
+---
+title: "Amazon Lookout for Metrics"
+---
+
 # Amazon Lookout for Metrics
 
 The following are the requirements and connection instructions for using Amazon Lookout for

@@ -1,3 +1,7 @@
+---
+title: "EventBridgeMetadata"
+---
+
 # EventBridgeMetadata
 
 The connector metadata specific to Amazon EventBridge.

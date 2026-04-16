@@ -1,3 +1,7 @@
+---
+title: "Infor Nexus"
+---
+
 # Infor Nexus
 
 The following are the requirements and connection instructions for using Infor Nexus with

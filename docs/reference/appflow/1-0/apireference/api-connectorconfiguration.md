@@ -1,3 +1,7 @@
+---
+title: "ConnectorConfiguration"
+---
+
 # ConnectorConfiguration
 
 The configuration settings related to a given connector.

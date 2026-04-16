@@ -1,3 +1,7 @@
+---
+title: "Coupa connector for Amazon AppFlow"
+---
+
 # Coupa connector for Amazon AppFlow
 
 Coupa is a business spend software as a service (SaaS) solution. If you’re a

@@ -1,3 +1,7 @@
+---
+title: "Google Analytics"
+---
+
 # Google Analytics
 
 The following are the requirements and connection instructions for using Google Analytics

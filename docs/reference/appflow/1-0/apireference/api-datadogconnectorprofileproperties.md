@@ -1,3 +1,7 @@
+---
+title: "DatadogConnectorProfileProperties"
+---
+
 # DatadogConnectorProfileProperties
 
 The connector-specific profile properties required by Datadog.

@@ -1,3 +1,7 @@
+---
+title: "OAuth2Defaults"
+---
+
 # OAuth2Defaults
 
 Contains the default values required for OAuth 2.0 authentication.

@@ -1,3 +1,7 @@
+---
+title: "Private Amazon AppFlow flows"
+---
+
 # Private Amazon AppFlow flows
 
 With Amazon AppFlow, you can create private flows between AWS services and supported software

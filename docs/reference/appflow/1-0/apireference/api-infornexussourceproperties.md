@@ -1,3 +1,7 @@
+---
+title: "InforNexusSourceProperties"
+---
+
 # InforNexusSourceProperties
 
 The properties that are applied when Infor Nexus is being used as a source.

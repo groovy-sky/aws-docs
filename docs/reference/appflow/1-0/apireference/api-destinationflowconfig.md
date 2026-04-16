@@ -1,3 +1,7 @@
+---
+title: "DestinationFlowConfig"
+---
+
 # DestinationFlowConfig
 
 Contains information about the configuration of destination connectors present in the

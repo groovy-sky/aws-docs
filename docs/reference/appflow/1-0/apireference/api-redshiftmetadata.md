@@ -1,3 +1,7 @@
+---
+title: "RedshiftMetadata"
+---
+
 # RedshiftMetadata
 
 The connector metadata specific to Amazon Redshift.

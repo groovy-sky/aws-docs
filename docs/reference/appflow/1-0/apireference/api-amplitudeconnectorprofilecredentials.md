@@ -1,3 +1,7 @@
+---
+title: "AmplitudeConnectorProfileCredentials"
+---
+
 # AmplitudeConnectorProfileCredentials
 
 The connector-specific credentials required when using Amplitude.

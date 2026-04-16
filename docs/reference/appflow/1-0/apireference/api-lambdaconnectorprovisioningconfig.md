@@ -1,3 +1,7 @@
+---
+title: "LambdaConnectorProvisioningConfig"
+---
+
 # LambdaConnectorProvisioningConfig
 
 Contains information about the configuration of the lambda which is being registered as

@@ -1,3 +1,7 @@
+---
+title: "Range"
+---
+
 # Range
 
 The range of values that the property supports.

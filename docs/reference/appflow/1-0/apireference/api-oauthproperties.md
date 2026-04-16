@@ -1,3 +1,7 @@
+---
+title: "OAuthProperties"
+---
+
 # OAuthProperties
 
 The OAuth properties required for OAuth type authentication.

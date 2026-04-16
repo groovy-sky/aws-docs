@@ -1,3 +1,7 @@
+---
+title: "ErrorInfo"
+---
+
 # ErrorInfo
 
 Provides details in the event of a failed flow, including the failure count and the

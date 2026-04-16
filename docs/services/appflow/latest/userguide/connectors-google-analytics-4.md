@@ -1,3 +1,7 @@
+---
+title: "Google Analytics 4 connector for Amazon AppFlow"
+---
+
 # Google Analytics 4 connector for Amazon AppFlow
 
 Google Analytics 4 is an analytics service that tracks and reports metrics about visitor

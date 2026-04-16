@@ -1,3 +1,7 @@
+---
+title: "PayPal connector for Amazon AppFlow"
+---
+
 # PayPal connector for Amazon AppFlow
 
 PayPal is a payments system that facilitates online money transfers between

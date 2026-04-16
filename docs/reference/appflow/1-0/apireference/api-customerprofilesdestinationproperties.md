@@ -1,3 +1,7 @@
+---
+title: "CustomerProfilesDestinationProperties"
+---
+
 # CustomerProfilesDestinationProperties
 
 The properties that are applied when Amazon Connect Customer Profiles is used as a

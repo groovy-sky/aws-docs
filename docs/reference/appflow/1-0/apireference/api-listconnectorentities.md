@@ -1,3 +1,7 @@
+---
+title: "ListConnectorEntities"
+---
+
 # ListConnectorEntities
 
 Returns the list of available connector entities supported by Amazon AppFlow. For

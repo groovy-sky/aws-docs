@@ -1,3 +1,7 @@
+---
+title: "SalesforceMetadata"
+---
+
 # SalesforceMetadata
 
 The connector metadata specific to Salesforce.

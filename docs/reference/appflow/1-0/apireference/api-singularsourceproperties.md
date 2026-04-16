@@ -1,3 +1,7 @@
+---
+title: "SingularSourceProperties"
+---
+
 # SingularSourceProperties
 
 The properties that are applied when Singular is being used as a source.

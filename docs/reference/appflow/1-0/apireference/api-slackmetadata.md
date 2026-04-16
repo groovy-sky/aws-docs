@@ -1,3 +1,7 @@
+---
+title: "SlackMetadata"
+---
+
 # SlackMetadata
 
 The connector metadata specific to Slack.

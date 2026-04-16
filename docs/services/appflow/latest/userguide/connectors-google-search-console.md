@@ -1,3 +1,7 @@
+---
+title: "Google Search Console connector for Amazon AppFlow"
+---
+
 # Google Search Console connector for Amazon AppFlow
 
 Google Search Console is a service from Google that allows website owners to optimize and manage

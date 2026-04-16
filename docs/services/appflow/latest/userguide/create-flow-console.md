@@ -1,3 +1,7 @@
+---
+title: "Create a flow using the AWS console"
+---
+
 # Create a flow using the AWS console
 
 There are several ways to gets started with creating your first flow by using the AWS console

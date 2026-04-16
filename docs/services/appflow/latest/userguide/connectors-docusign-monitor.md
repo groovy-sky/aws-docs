@@ -1,3 +1,7 @@
+---
+title: "DocuSign Monitor connector for Amazon AppFlow"
+---
+
 # DocuSign Monitor connector for Amazon AppFlow
 
 DocuSign Monitor provides data about digital agreements that are processed through

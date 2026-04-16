@@ -1,3 +1,7 @@
+---
+title: "DynatraceConnectorProfileCredentials"
+---
+
 # DynatraceConnectorProfileCredentials
 
 The connector-specific profile credentials required by Dynatrace.

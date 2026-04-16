@@ -1,3 +1,7 @@
+---
+title: "RedshiftConnectorProfileProperties"
+---
+
 # RedshiftConnectorProfileProperties
 
 The connector-specific profile properties when using Amazon Redshift.

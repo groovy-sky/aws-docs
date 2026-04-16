@@ -1,3 +1,7 @@
+---
+title: "DescribeConnector"
+---
+
 # DescribeConnector
 
 Describes the given custom connector registered in your AWS account. This

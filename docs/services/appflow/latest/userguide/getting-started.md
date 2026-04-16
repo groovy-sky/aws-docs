@@ -1,3 +1,7 @@
+---
+title: "Getting started with Amazon AppFlow"
+---
+
 # Getting started with Amazon AppFlow
 
 This section provides an introduction to Amazon AppFlow with prerequisites for getting started.

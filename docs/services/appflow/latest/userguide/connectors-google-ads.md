@@ -1,3 +1,7 @@
+---
+title: "Google Ads connector for Amazon AppFlow"
+---
+
 # Google Ads connector for Amazon AppFlow
 
 Google Ads is a platform that advertisers use to display ads on the web, such as in Google

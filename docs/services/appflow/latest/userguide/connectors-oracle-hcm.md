@@ -1,3 +1,7 @@
+---
+title: "Oracle HCM connector for Amazon AppFlow"
+---
+
 # Oracle HCM connector for Amazon AppFlow
 
 Oracle Human Capital Management (HCM) is a cloud-based application for human resources (HR)

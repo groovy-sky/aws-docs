@@ -1,3 +1,7 @@
+---
+title: "Microsoft Dynamics 365 connector for Amazon AppFlow"
+---
+
 # Microsoft Dynamics 365 connector for Amazon AppFlow
 
 Microsoft Dynamics 365 is a portfolio of business applications for enterprise resource planning

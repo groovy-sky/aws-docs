@@ -1,3 +1,7 @@
+---
+title: "SnowflakeConnectorProfileCredentials"
+---
+
 # SnowflakeConnectorProfileCredentials
 
 The connector-specific profile credentials required when using Snowflake.

@@ -1,3 +1,7 @@
+---
+title: "Zendesk Chat connector for Amazon AppFlow"
+---
+
 # Zendesk Chat connector for Amazon AppFlow
 
 Zendesk Chat is a live chat service that Zendesk offers as part of its platform.

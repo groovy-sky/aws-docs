@@ -1,3 +1,7 @@
+---
+title: "HoneycodeDestinationProperties"
+---
+
 # HoneycodeDestinationProperties
 
 The properties that are applied when Amazon Honeycode is used as a destination.

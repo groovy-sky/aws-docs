@@ -1,3 +1,7 @@
+---
+title: "RedshiftConnectorProfileCredentials"
+---
+
 # RedshiftConnectorProfileCredentials
 
 The connector-specific profile credentials required when using Amazon Redshift.

@@ -1,3 +1,7 @@
+---
+title: "ConnectorProfileConfig"
+---
+
 # ConnectorProfileConfig
 
 Defines the connector-specific configuration and credentials for the connector profile.

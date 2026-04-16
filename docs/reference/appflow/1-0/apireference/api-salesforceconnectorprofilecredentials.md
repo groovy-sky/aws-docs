@@ -1,3 +1,7 @@
+---
+title: "SalesforceConnectorProfileCredentials"
+---
+
 # SalesforceConnectorProfileCredentials
 
 The connector-specific profile credentials required when using Salesforce.

@@ -1,3 +1,7 @@
+---
+title: "UnregisterConnector"
+---
+
 # UnregisterConnector
 
 Unregisters the custom connector registered in your account that matches the connector

@@ -1,3 +1,7 @@
+---
+title: "UpsolverMetadata"
+---
+
 # UpsolverMetadata
 
 The connector metadata specific to Upsolver.

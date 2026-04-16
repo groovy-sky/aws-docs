@@ -1,3 +1,7 @@
+---
+title: "SourceConnectorProperties"
+---
+
 # SourceConnectorProperties
 
 Specifies the information that is required to query a particular connector.

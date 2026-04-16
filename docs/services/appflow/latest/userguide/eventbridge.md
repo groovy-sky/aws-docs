@@ -1,3 +1,7 @@
+---
+title: "Amazon EventBridge"
+---
+
 # Amazon EventBridge
 
 The following are the requirements and connection instructions for using Amazon EventBridge with

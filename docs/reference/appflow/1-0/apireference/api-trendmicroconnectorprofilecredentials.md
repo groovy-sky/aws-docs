@@ -1,3 +1,7 @@
+---
+title: "TrendmicroConnectorProfileCredentials"
+---
+
 # TrendmicroConnectorProfileCredentials
 
 The connector-specific profile credentials required when using Trend Micro.

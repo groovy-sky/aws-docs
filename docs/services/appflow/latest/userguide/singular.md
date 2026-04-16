@@ -1,3 +1,7 @@
+---
+title: "Singular"
+---
+
 # Singular
 
 The following are the requirements and connection instructions for using Singular with

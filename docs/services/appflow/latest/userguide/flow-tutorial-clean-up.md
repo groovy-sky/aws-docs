@@ -1,3 +1,7 @@
+---
+title: "Step 5: Clean up your resources"
+---
+
 # Step 5: Clean up your resources
 
 After you've completed the tutorial, it's good practice to clean up any resources that you no

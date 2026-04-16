@@ -1,3 +1,7 @@
+---
+title: "PardotConnectorProfileCredentials"
+---
+
 # PardotConnectorProfileCredentials
 
 The connector-specific profile credentials required when using Salesforce Pardot.

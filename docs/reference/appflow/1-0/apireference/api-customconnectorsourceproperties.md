@@ -1,3 +1,7 @@
+---
+title: "CustomConnectorSourceProperties"
+---
+
 # CustomConnectorSourceProperties
 
 The properties that are applied when the custom connector is being used as a

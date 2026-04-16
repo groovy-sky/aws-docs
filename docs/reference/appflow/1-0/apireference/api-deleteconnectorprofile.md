@@ -1,3 +1,7 @@
+---
+title: "DeleteConnectorProfile"
+---
+
 # DeleteConnectorProfile
 
 Enables you to delete an existing connector profile.

@@ -1,3 +1,7 @@
+---
+title: "GoogleAnalyticsConnectorProfileCredentials"
+---
+
 # GoogleAnalyticsConnectorProfileCredentials
 
 The connector-specific profile credentials required by Google Analytics.

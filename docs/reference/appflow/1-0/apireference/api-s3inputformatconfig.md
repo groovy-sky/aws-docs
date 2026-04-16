@@ -1,3 +1,7 @@
+---
+title: "S3InputFormatConfig"
+---
+
 # S3InputFormatConfig
 
 When you use Amazon S3 as the source, the configuration format that you provide

@@ -1,3 +1,7 @@
+---
+title: "Salesforce connector for Amazon AppFlow"
+---
+
 # Salesforce connector for Amazon AppFlow
 
 Salesforce provides customer relationship management (CRM) software that help you

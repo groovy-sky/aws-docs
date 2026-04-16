@@ -1,3 +1,7 @@
+---
+title: "CreateConnectorProfile"
+---
+
 # CreateConnectorProfile
 
 Creates a new connector profile associated with your AWS account. There is

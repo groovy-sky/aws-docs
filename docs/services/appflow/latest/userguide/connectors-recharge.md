@@ -1,3 +1,7 @@
+---
+title: "Recharge connector for Amazon AppFlow"
+---
+
 # Recharge connector for Amazon AppFlow
 
 Recharge is a subscription payment solution designed for merchants to set up and

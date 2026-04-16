@@ -1,3 +1,7 @@
+---
+title: "Facebook Ads connector for Amazon AppFlow"
+---
+
 # Facebook Ads connector for Amazon AppFlow
 
 You can use the Facebook Ads connector in Amazon AppFlow to transfer data about the ads that you run

@@ -1,3 +1,7 @@
+---
+title: "Stripe connector for Amazon AppFlow"
+---
+
 # Stripe connector for Amazon AppFlow
 
 Stripe powers ecommerce with payment processing and other commerce solutions for

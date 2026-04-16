@@ -1,3 +1,7 @@
+---
+title: "Snowflake"
+---
+
 # Snowflake
 
 The following are the requirements and connection instructions for using Snowflake with

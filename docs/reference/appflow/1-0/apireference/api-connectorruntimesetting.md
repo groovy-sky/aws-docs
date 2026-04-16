@@ -1,3 +1,7 @@
+---
+title: "ConnectorRuntimeSetting"
+---
+
 # ConnectorRuntimeSetting
 
 Contains information about the connector runtime settings that are required for flow

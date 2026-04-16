@@ -1,3 +1,7 @@
+---
+title: "LinkedIn Pages connector for Amazon AppFlow"
+---
+
 # LinkedIn Pages connector for Amazon AppFlow
 
 LinkedIn Pages is a solution for organizations to post industry updates, job

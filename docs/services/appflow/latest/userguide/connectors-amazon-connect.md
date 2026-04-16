@@ -1,3 +1,7 @@
+---
+title: "Amazon Connect connector for Amazon AppFlow"
+---
+
 # Amazon Connect connector for Amazon AppFlow
 
 Amazon Connect is an AWS service that you can use to set up an omnichannel, cloud-based contact

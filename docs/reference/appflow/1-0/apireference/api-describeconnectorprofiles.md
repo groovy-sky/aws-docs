@@ -1,3 +1,7 @@
+---
+title: "DescribeConnectorProfiles"
+---
+
 # DescribeConnectorProfiles
 
 Returns a list of `connector-profile` details matching the provided

@@ -1,3 +1,7 @@
+---
+title: "Zendesk Sunshine connector for Amazon AppFlow"
+---
+
 # Zendesk Sunshine connector for Amazon AppFlow
 
 Zendesk Sunshine is an application that helps builders create custom experiences on the

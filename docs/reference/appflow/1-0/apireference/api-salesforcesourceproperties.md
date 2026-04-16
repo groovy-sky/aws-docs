@@ -1,3 +1,7 @@
+---
+title: "SalesforceSourceProperties"
+---
+
 # SalesforceSourceProperties
 
 The properties that are applied when Salesforce is being used as a source.

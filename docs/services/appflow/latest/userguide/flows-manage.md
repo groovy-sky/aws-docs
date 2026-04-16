@@ -1,3 +1,7 @@
+---
+title: "Managing Amazon AppFlow flows"
+---
+
 # Managing Amazon AppFlow flows
 
 After you create one or more flows, you can use the **Flows** page in the

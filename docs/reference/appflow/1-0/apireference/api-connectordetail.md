@@ -1,3 +1,7 @@
+---
+title: "ConnectorDetail"
+---
+
 # ConnectorDetail
 
 Information about the registered connector.

@@ -1,3 +1,7 @@
+---
+title: "MarketoMetadata"
+---
+
 # MarketoMetadata
 
 The connector metadata specific to Marketo.

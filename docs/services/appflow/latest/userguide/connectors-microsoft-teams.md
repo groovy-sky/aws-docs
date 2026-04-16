@@ -1,3 +1,7 @@
+---
+title: "Microsoft Teams connector for Amazon AppFlow"
+---
+
 # Microsoft Teams connector for Amazon AppFlow
 
 Microsoft Teams is a platform developed by Microsoft that helps teams collaborate through

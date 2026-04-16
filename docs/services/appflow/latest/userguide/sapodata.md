@@ -1,3 +1,7 @@
+---
+title: "SAP OData connector for Amazon AppFlow"
+---
+
 # SAP OData connector for Amazon AppFlow
 
 The Amazon AppFlow SAP OData connector provides the ability to fetch, create, and update records

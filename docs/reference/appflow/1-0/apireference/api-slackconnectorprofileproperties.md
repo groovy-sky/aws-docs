@@ -1,3 +1,7 @@
+---
+title: "SlackConnectorProfileProperties"
+---
+
 # SlackConnectorProfileProperties
 
 The connector-specific profile properties required when using Slack.

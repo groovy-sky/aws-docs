@@ -1,3 +1,7 @@
+---
+title: "RegistrationOutput"
+---
+
 # RegistrationOutput
 
 Describes the status of an attempt from Amazon AppFlow to register a resource.

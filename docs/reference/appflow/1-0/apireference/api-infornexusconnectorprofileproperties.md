@@ -1,3 +1,7 @@
+---
+title: "InforNexusConnectorProfileProperties"
+---
+
 # InforNexusConnectorProfileProperties
 
 The connector-specific profile properties required by Infor Nexus.

@@ -1,3 +1,7 @@
+---
+title: "SingularConnectorProfileProperties"
+---
+
 # SingularConnectorProfileProperties
 
 The connector-specific profile properties required when using Singular.

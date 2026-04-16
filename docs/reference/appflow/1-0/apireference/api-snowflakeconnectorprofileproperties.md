@@ -1,3 +1,7 @@
+---
+title: "SnowflakeConnectorProfileProperties"
+---
+
 # SnowflakeConnectorProfileProperties
 
 The connector-specific profile properties required when using Snowflake.

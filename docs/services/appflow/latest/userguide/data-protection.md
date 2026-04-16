@@ -1,3 +1,7 @@
+---
+title: "Data protection in Amazon AppFlow"
+---
+
 # Data protection in Amazon AppFlow
 
 The AWS [shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model)

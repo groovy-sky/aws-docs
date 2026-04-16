@@ -1,3 +1,7 @@
+---
+title: "TriggerProperties"
+---
+
 # TriggerProperties
 
 Specifies the configuration details that control the trigger for a flow. Currently, these

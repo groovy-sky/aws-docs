@@ -1,3 +1,7 @@
+---
+title: "Smartsheet connector for Amazon AppFlow"
+---
+
 # Smartsheet connector for Amazon AppFlow
 
 Smartsheet is a spreadsheet-based online collaboration service that helps teams plan

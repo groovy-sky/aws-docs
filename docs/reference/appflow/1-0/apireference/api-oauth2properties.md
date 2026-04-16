@@ -1,3 +1,7 @@
+---
+title: "OAuth2Properties"
+---
+
 # OAuth2Properties
 
 The OAuth 2.0 properties required for OAuth 2.0 authentication.

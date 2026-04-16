@@ -1,3 +1,7 @@
+---
+title: "Zendesk Sell connector for Amazon AppFlow"
+---
+
 # Zendesk Sell connector for Amazon AppFlow
 
 Zendesk Sell is a customer relationship management (CRM) service that Zendesk offers as

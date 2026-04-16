@@ -1,3 +1,7 @@
+---
+title: "ConnectorProfileCredentials"
+---
+
 # ConnectorProfileCredentials
 
 The connector-specific credentials required by a connector.

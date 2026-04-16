@@ -1,3 +1,7 @@
+---
+title: "Salesforce Marketing Cloud connector for Amazon AppFlow"
+---
+
 # Salesforce Marketing Cloud connector for Amazon AppFlow
 
 Marketing Cloud is a Salesforce platform for digital marketing that helps its customers

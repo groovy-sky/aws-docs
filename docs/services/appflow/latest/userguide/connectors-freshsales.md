@@ -1,3 +1,7 @@
+---
+title: "Freshsales connector for Amazon AppFlow"
+---
+
 # Freshsales connector for Amazon AppFlow
 
 Freshsales is a Customer Relationship Management (CRM) service that helps companies

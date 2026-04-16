@@ -1,3 +1,7 @@
+---
+title: "ServiceNowConnectorProfileCredentials"
+---
+
 # ServiceNowConnectorProfileCredentials
 
 The connector-specific profile credentials required when using ServiceNow.

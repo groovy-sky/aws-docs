@@ -1,3 +1,7 @@
+---
+title: "DescribeConnectorEntity"
+---
+
 # DescribeConnectorEntity
 
 Provides details regarding the entity used with the connector, with a description of the

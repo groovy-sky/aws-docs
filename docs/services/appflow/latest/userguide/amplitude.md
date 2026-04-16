@@ -1,3 +1,7 @@
+---
+title: "Amplitude"
+---
+
 # Amplitude
 
 The following are the requirements and connection instructions for using Amplitude with

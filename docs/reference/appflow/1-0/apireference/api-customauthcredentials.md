@@ -1,3 +1,7 @@
+---
+title: "CustomAuthCredentials"
+---
+
 # CustomAuthCredentials
 
 The custom credentials required for custom authentication.

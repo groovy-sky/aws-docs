@@ -1,3 +1,7 @@
+---
+title: "Domo connector for Amazon AppFlow"
+---
+
 # Domo connector for Amazon AppFlow
 
 Domo is a business intelligence solution. If you're a Domo user,

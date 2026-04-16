@@ -1,3 +1,7 @@
+---
+title: "Pendo connector for Amazon AppFlow"
+---
+
 # Pendo connector for Amazon AppFlow
 
 Pendo is a product analytics solution that helps teams record, monitor, and

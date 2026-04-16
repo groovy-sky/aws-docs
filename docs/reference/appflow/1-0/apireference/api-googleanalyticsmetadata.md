@@ -1,3 +1,7 @@
+---
+title: "GoogleAnalyticsMetadata"
+---
+
 # GoogleAnalyticsMetadata
 
 The connector metadata specific to Google Analytics.

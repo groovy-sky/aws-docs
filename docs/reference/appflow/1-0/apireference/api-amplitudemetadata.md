@@ -1,3 +1,7 @@
+---
+title: "AmplitudeMetadata"
+---
+
 # AmplitudeMetadata
 
 The connector metadata specific to Amplitude.

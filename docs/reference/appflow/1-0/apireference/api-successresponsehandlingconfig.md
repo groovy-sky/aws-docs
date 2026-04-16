@@ -1,3 +1,7 @@
+---
+title: "SuccessResponseHandlingConfig"
+---
+
 # SuccessResponseHandlingConfig
 
 Determines how Amazon AppFlow handles the success response that it gets from the

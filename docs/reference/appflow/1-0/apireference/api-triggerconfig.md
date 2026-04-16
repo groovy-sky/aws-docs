@@ -1,3 +1,7 @@
+---
+title: "TriggerConfig"
+---
+
 # TriggerConfig
 
 The trigger settings that determine how and when Amazon AppFlow runs the specified

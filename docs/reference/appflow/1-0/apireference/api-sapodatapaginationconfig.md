@@ -1,3 +1,7 @@
+---
+title: "SAPODataPaginationConfig"
+---
+
 # SAPODataPaginationConfig
 
 Sets the page size for each _concurrent process_ that transfers OData

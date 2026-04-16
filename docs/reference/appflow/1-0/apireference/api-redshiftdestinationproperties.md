@@ -1,3 +1,7 @@
+---
+title: "RedshiftDestinationProperties"
+---
+
 # RedshiftDestinationProperties
 
 The properties that are applied when Amazon Redshift is being used as a destination.

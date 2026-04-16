@@ -1,3 +1,7 @@
+---
+title: "SAPODataParallelismConfig"
+---
+
 # SAPODataParallelismConfig
 
 Sets the number of _concurrent processes_ that transfer OData records

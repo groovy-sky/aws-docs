@@ -1,3 +1,7 @@
+---
+title: "Cataloging the data output from an Amazon AppFlow flow"
+---
+
 # Cataloging the data output from an Amazon AppFlow flow
 
 When you use Amazon AppFlow to transfer data with a flow that meets certain requirements, you get the

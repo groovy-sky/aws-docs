@@ -1,3 +1,7 @@
+---
+title: "CustomConnectorProfileCredentials"
+---
+
 # CustomConnectorProfileCredentials
 
 The connector-specific profile credentials that are required when using the custom

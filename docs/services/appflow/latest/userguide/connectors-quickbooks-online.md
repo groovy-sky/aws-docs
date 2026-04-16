@@ -1,3 +1,7 @@
+---
+title: "QuickBooks Online connector for Amazon AppFlow"
+---
+
 # QuickBooks Online connector for Amazon AppFlow
 
 QuickBooks Online is a cloud-based accounting solution for businesses. If you're a

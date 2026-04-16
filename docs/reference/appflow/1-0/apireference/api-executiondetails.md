@@ -1,3 +1,7 @@
+---
+title: "ExecutionDetails"
+---
+
 # ExecutionDetails
 
 Describes the details of the flow run, including the timestamp, status, and message.

@@ -1,3 +1,7 @@
+---
+title: "ZendeskSourceProperties"
+---
+
 # ZendeskSourceProperties
 
 The properties that are applied when using Zendesk as a flow source.

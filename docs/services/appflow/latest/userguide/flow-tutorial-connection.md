@@ -1,3 +1,7 @@
+---
+title: "Step 2: Connect Amazon AppFlow to an application"
+---
+
 # Step 2: Connect Amazon AppFlow to an application
 
 You can securely move your data between supported source and destination applications with a

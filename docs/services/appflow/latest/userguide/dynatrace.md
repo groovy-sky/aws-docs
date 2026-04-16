@@ -1,3 +1,7 @@
+---
+title: "Dynatrace"
+---
+
 # Dynatrace
 
 The following are the requirements and connection instructions for using Dynatrace with

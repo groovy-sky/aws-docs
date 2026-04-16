@@ -1,3 +1,7 @@
+---
+title: "LinkedIn Ads connector for Amazon AppFlow"
+---
+
 # LinkedIn Ads connector for Amazon AppFlow
 
 LinkedIn Ads is an ad platform that helps organizations and brands to reach audiences

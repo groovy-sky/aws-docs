@@ -1,3 +1,7 @@
+---
+title: "GlueDataCatalogConfig"
+---
+
 # GlueDataCatalogConfig
 
 Specifies the configuration that Amazon AppFlow uses when it catalogs your data with

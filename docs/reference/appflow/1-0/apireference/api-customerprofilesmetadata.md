@@ -1,3 +1,7 @@
+---
+title: "CustomerProfilesMetadata"
+---
+
 # CustomerProfilesMetadata
 
 The connector metadata specific to Amazon Connect Customer Profiles.

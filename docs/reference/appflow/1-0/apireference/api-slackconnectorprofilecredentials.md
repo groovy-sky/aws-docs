@@ -1,3 +1,7 @@
+---
+title: "SlackConnectorProfileCredentials"
+---
+
 # SlackConnectorProfileCredentials
 
 The connector-specific profile credentials required when using Slack.

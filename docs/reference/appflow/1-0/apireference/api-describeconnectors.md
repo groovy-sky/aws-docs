@@ -1,3 +1,7 @@
+---
+title: "DescribeConnectors"
+---
+
 # DescribeConnectors
 
 Describes the connectors vended by Amazon AppFlow for specified connector types. If

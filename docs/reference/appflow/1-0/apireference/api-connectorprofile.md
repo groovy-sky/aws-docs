@@ -1,3 +1,7 @@
+---
+title: "ConnectorProfile"
+---
+
 # ConnectorProfile
 
 Describes an instance of a connector. This includes the provided name, credentials ARN,

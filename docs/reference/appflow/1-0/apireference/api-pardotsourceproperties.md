@@ -1,3 +1,7 @@
+---
+title: "PardotSourceProperties"
+---
+
 # PardotSourceProperties
 
 The properties that are applied when Salesforce Pardot is being used as a source.

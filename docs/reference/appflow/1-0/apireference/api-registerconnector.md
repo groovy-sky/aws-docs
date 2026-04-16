@@ -1,3 +1,7 @@
+---
+title: "RegisterConnector"
+---
+
 # RegisterConnector
 
 Registers a new custom connector with your AWS account. Before you can

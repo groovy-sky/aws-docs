@@ -1,3 +1,7 @@
+---
+title: "ConnectorOperator"
+---
+
 # ConnectorOperator
 
 The operation to be performed on the provided source fields.

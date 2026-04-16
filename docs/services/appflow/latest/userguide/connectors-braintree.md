@@ -1,3 +1,7 @@
+---
+title: "Braintree connector for Amazon AppFlow"
+---
+
 # Braintree connector for Amazon AppFlow
 
 Braintree is an online payment processing solution. If you're a Braintree

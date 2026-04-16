@@ -1,3 +1,7 @@
+---
+title: "ServiceNowSourceProperties"
+---
+
 # ServiceNowSourceProperties
 
 The properties that are applied when ServiceNow is being used as a source.

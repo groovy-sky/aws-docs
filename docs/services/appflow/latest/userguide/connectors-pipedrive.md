@@ -1,3 +1,7 @@
+---
+title: "Pipedrive connector for Amazon AppFlow"
+---
+
 # Pipedrive connector for Amazon AppFlow
 
 Pipedrive is a Customer Relationship Management (CRM) service that helps companies

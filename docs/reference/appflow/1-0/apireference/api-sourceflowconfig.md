@@ -1,3 +1,7 @@
+---
+title: "SourceFlowConfig"
+---
+
 # SourceFlowConfig
 
 Contains information about the configuration of the source connector used in the flow.

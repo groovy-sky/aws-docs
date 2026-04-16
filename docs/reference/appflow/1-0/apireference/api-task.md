@@ -1,3 +1,7 @@
+---
+title: "Task"
+---
+
 # Task
 
 A class for modeling different type of tasks. Task implementation varies based on the

@@ -1,3 +1,7 @@
+---
+title: "MarketoDestinationProperties"
+---
+
 # MarketoDestinationProperties
 
 The properties that Amazon AppFlow applies when you use Marketo as a flow

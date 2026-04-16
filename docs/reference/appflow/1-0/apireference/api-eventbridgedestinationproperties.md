@@ -1,3 +1,7 @@
+---
+title: "EventBridgeDestinationProperties"
+---
+
 # EventBridgeDestinationProperties
 
 The properties that are applied when Amazon EventBridge is being used as a

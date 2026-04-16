@@ -1,3 +1,7 @@
+---
+title: "HoneycodeConnectorProfileCredentials"
+---
+
 # HoneycodeConnectorProfileCredentials
 
 The connector-specific credentials required when using Amazon Honeycode.

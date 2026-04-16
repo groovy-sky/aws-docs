@@ -1,3 +1,7 @@
+---
+title: "Datadog"
+---
+
 # Datadog
 
 The following are the requirements and connection instructions for using Datadog with

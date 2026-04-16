@@ -1,3 +1,7 @@
+---
+title: "SupportedFieldTypeDetails"
+---
+
 # SupportedFieldTypeDetails
 
 Contains details regarding all the supported `FieldTypes` and their

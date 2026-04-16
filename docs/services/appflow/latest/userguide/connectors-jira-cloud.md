@@ -1,3 +1,7 @@
+---
+title: "Jira Cloud connector for Amazon AppFlow"
+---
+
 # Jira Cloud connector for Amazon AppFlow
 
 Jira Cloud is a platform developed by Atlassian. The platform includes issue tracking

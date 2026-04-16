@@ -1,3 +1,7 @@
+---
+title: "WooCommerce connector for Amazon AppFlow"
+---
+
 # WooCommerce connector for Amazon AppFlow
 
 WooCommerce helps online merchants build commercial websites with a plugin for

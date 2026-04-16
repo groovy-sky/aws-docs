@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for PostgreSQL connector for Amazon AppFlow"
+---
+
 # Amazon RDS for PostgreSQL connector for Amazon AppFlow
 
 Amazon Relational Database Service (Amazon RDS) helps you set up and manage relational databases in the AWS Cloud. With

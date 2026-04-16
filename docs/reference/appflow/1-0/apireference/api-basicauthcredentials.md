@@ -1,3 +1,7 @@
+---
+title: "BasicAuthCredentials"
+---
+
 # BasicAuthCredentials
 
 The basic auth credentials required for basic authentication.

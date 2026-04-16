@@ -1,3 +1,7 @@
+---
+title: "What is Amazon AppFlow?"
+---
+
 # What is Amazon AppFlow?
 
 Amazon AppFlow is a fully-managed integration service that enables you to securely exchange data

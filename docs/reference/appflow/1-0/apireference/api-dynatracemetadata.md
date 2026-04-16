@@ -1,3 +1,7 @@
+---
+title: "DynatraceMetadata"
+---
+
 # DynatraceMetadata
 
 The connector metadata specific to Dynatrace.

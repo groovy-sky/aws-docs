@@ -1,3 +1,7 @@
+---
+title: "TrendmicroConnectorProfileProperties"
+---
+
 # TrendmicroConnectorProfileProperties
 
 The connector-specific profile properties required when using Trend Micro.

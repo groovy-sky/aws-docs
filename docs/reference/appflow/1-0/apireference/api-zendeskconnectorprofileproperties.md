@@ -1,3 +1,7 @@
+---
+title: "ZendeskConnectorProfileProperties"
+---
+
 # ZendeskConnectorProfileProperties
 
 The connector-specific profile properties required when using Zendesk.

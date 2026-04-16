@@ -1,3 +1,7 @@
+---
+title: "SalesforceConnectorProfileProperties"
+---
+
 # SalesforceConnectorProfileProperties
 
 The connector-specific profile properties required when using Salesforce.

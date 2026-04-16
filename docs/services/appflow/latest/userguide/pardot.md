@@ -1,3 +1,7 @@
+---
+title: "Salesforce Pardot"
+---
+
 # Salesforce Pardot
 
 The following are the requirements and connection instructions for using Pardot with

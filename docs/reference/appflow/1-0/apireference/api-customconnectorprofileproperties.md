@@ -1,3 +1,7 @@
+---
+title: "CustomConnectorProfileProperties"
+---
+
 # CustomConnectorProfileProperties
 
 The profile properties required by the custom connector.

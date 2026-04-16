@@ -1,3 +1,7 @@
+---
+title: "Create a flow using CloudFormation resources"
+---
+
 # Create a flow using CloudFormation resources
 
 You may also use CloudFormation to create a connector profile and configure a flow using the

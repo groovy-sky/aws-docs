@@ -1,3 +1,7 @@
+---
+title: "SnowflakeMetadata"
+---
+
 # SnowflakeMetadata
 
 The connector metadata specific to Snowflake.

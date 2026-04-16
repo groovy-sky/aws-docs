@@ -1,3 +1,7 @@
+---
+title: "Blackbaud Raiser's Edge NXT connector for Amazon AppFlow"
+---
+
 # Blackbaud Raiser's Edge NXT connector for Amazon AppFlow
 
 Blackbaud Raiser's Edge NXT is a customer relationship management (CRM) software as a service (SaaS)

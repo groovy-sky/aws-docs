@@ -1,3 +1,7 @@
+---
+title: "ScheduledTriggerProperties"
+---
+
 # ScheduledTriggerProperties
 
 Specifies the configuration details of a schedule-triggered flow as defined by the user.

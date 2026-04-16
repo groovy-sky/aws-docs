@@ -1,3 +1,7 @@
+---
+title: "Logging Amazon AppFlow API calls with AWS CloudTrail"
+---
+
 # Logging Amazon AppFlow API calls with AWS CloudTrail
 
 Amazon AppFlow is integrated with AWS CloudTrail, a service that provides a record of actions taken

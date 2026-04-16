@@ -1,3 +1,7 @@
+---
+title: "InforNexusConnectorProfileCredentials"
+---
+
 # InforNexusConnectorProfileCredentials
 
 The connector-specific profile credentials required by Infor Nexus.

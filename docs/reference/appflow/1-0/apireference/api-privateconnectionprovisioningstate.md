@@ -1,3 +1,7 @@
+---
+title: "PrivateConnectionProvisioningState"
+---
+
 # PrivateConnectionProvisioningState
 
 Specifies the private connection provisioning state.

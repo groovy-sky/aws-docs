@@ -1,3 +1,7 @@
+---
+title: "PrefixConfig"
+---
+
 # PrefixConfig
 
 Specifies elements that Amazon AppFlow includes in the file and folder names in the flow

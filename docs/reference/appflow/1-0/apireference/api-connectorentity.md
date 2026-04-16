@@ -1,3 +1,7 @@
+---
+title: "ConnectorEntity"
+---
+
 # ConnectorEntity
 
 The high-level entity that can be queried in Amazon AppFlow. For example, a

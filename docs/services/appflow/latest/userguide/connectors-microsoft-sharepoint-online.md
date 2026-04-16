@@ -1,3 +1,7 @@
+---
+title: "Microsoft SharePoint Online connector for Amazon AppFlow"
+---
+
 # Microsoft SharePoint Online connector for Amazon AppFlow
 
 Microsoft SharePoint Online is a collaboration solution that teams use to share files, data, and other

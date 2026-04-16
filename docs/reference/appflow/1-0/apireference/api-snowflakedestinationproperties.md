@@ -1,3 +1,7 @@
+---
+title: "SnowflakeDestinationProperties"
+---
+
 # SnowflakeDestinationProperties
 
 The properties that are applied when Snowflake is being used as a destination.

@@ -1,3 +1,7 @@
+---
+title: "SAPODataMetadata"
+---
+
 # SAPODataMetadata
 
 The connector metadata specific to SAPOData.

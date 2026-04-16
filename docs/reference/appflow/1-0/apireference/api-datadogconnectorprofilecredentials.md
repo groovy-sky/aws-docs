@@ -1,3 +1,7 @@
+---
+title: "DatadogConnectorProfileCredentials"
+---
+
 # DatadogConnectorProfileCredentials
 
 The connector-specific credentials required by Datadog.

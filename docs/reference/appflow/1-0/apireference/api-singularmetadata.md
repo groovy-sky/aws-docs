@@ -1,3 +1,7 @@
+---
+title: "SingularMetadata"
+---
+
 # SingularMetadata
 
 The connector metadata specific to Singular.

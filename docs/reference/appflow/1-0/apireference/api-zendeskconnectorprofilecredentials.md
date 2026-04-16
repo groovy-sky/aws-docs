@@ -1,3 +1,7 @@
+---
+title: "ZendeskConnectorProfileCredentials"
+---
+
 # ZendeskConnectorProfileCredentials
 
 The connector-specific profile credentials required when using Zendesk.
