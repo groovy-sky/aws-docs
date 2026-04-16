@@ -1,3 +1,7 @@
+---
+title: "Sustainability settings"
+---
+
 # Sustainability settings
 
 To enhance your account security, you can use multifactor authentication.

@@ -1,3 +1,7 @@
+---
+title: "trading_partner"
+---
+
 # trading\_partner
 
 **Primary key (PK)**

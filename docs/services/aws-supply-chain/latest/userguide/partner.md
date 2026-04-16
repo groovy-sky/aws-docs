@@ -1,3 +1,7 @@
+---
+title: "N-Tier Visibility"
+---
+
 # N-Tier Visibility
 
 You can use N-Tier Visibility for the following:

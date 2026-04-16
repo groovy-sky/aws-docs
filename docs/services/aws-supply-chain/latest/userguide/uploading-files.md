@@ -1,3 +1,7 @@
+---
+title: "Uploading files for the first time"
+---
+
 # Uploading files for the first time
 
 You can use the AWS Supply Chain Auto-association feature to upload your raw data and automatically associate your raw data with AWS Supply Chain data model. You can also view the _required_

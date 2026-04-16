@@ -1,3 +1,7 @@
+---
+title: "Manage Demand Plan settings"
+---
+
 # Manage Demand Plan settings
 
 You can update the Demand Planning settings at any time to make sure that your forecasts are more accurate

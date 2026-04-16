@@ -1,3 +1,7 @@
+---
+title: "sourcing_schedule_details"
+---
+
 # sourcing\_schedule\_details
 
 **Primary key (PK)**

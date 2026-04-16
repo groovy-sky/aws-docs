@@ -1,3 +1,7 @@
+---
+title: "Data Validation Error Export"
+---
+
 # Data Validation Error Export
 
 Error records can be exported by choosing **Download** on the

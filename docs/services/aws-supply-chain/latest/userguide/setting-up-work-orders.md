@@ -1,3 +1,7 @@
+---
+title: "Configuring Order Planning and Tracking for the first time"
+---
+
 # Configuring Order Planning and Tracking for the first time
 
 As an administrator, you can create multiple processes and milestones to track your orders.

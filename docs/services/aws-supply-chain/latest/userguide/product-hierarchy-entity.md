@@ -1,3 +1,7 @@
+---
+title: "product_hierarchy"
+---
+
 # product\_hierarchy
 
 **Primary key (PK)**

@@ -1,3 +1,7 @@
+---
+title: "Logistics"
+---
+
 # Logistics
 
 You can view the logistics details for all the items ordered as part of a order. You can select the **Material Name** to view the corresponding material summary for any supply chain process.

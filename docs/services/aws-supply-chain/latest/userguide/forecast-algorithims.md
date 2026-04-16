@@ -1,3 +1,7 @@
+---
+title: "Forecast Algorithms"
+---
+
 # Forecast Algorithms
 
 AWS Supply Chain Demand Planning offers a combination of 25 built-in forecast models to create baseline

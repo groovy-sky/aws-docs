@@ -1,3 +1,7 @@
+---
+title: "outbound_shipment"
+---
+
 # outbound\_shipment
 
 **Primary key (PK)**

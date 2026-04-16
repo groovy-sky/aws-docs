@@ -1,3 +1,7 @@
+---
+title: "Demand plan"
+---
+
 # Demand plan
 
 After the forecast is generated, you can review the forecast values on the **Demand Plan** tab. The

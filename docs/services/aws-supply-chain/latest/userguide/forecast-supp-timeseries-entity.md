@@ -1,3 +1,7 @@
+---
+title: "supplementary_time_series"
+---
+
 # supplementary\_time\_series
 
 ###### Note

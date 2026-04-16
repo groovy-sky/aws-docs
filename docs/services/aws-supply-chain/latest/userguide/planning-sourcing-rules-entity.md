@@ -1,3 +1,7 @@
+---
+title: "sourcing_rules"
+---
+
 # sourcing\_rules
 
 **Primary key (PK)**

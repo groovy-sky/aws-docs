@@ -1,3 +1,7 @@
+---
+title: "Connecting to SAP ECC 6.0"
+---
+
 # Connecting to SAP ECC 6.0
 
 To extract your data from SAP ECC 6.0, follow the procedure below.

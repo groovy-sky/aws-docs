@@ -1,3 +1,7 @@
+---
+title: "N-Tier Visibility settings"
+---
+
 # N-Tier Visibility settings
 
 You can update the forecast commits and purchase orders response settings in

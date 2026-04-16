@@ -1,3 +1,7 @@
+---
+title: "N-Tier Visibility dashboard"
+---
+
 # N-Tier Visibility dashboard
 
 You can user the n-tier dashboard to navigate through partner onboarding and collaboration. The N-Tier Visibility dashboard displays the following tabs:

@@ -1,3 +1,7 @@
+---
+title: "shipment_lot"
+---
+
 # shipment\_lot
 
 **Primary key (PK)**

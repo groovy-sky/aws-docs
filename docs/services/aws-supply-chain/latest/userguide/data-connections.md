@@ -1,3 +1,7 @@
+---
+title: "Data lake"
+---
+
 # Data lake
 
 You can use AWS Supply Chain to ingest your data stored in the following data sources and

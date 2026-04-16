@@ -1,3 +1,7 @@
+---
+title: "Adding users"
+---
+
 # Adding users
 
 As an AWS Supply Chain administrator, you can add users to access the AWS Supply Chain web application. Users first must be added to IAM

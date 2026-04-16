@@ -1,3 +1,7 @@
+---
+title: "Forecast lock"
+---
+
 # Forecast lock
 
 You can use the forecast lock feature to lock specific periods in your forecast to prevent any further edits or adjustments. To configure the forecast lock,

@@ -1,3 +1,7 @@
+---
+title: "Orders settings"
+---
+
 # Orders settings
 
 You can setup orders and track the material status from vendor to delivery using the following procedure.

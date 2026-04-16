@@ -1,3 +1,7 @@
+---
+title: "Creating insight watchlist"
+---
+
 # Creating insight watchlist
 
 You can create an insight watchlist to track and notify you on supply chain risks and

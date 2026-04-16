@@ -1,3 +1,7 @@
+---
+title: "Uploading data to an Amazon S3 bucket"
+---
+
 # Uploading data to an Amazon S3 bucket
 
 ###### Note

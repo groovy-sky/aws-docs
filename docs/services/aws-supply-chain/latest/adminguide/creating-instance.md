@@ -1,3 +1,7 @@
+---
+title: "Step 2: Create an instance"
+---
+
 # Step 2: Create an instance
 
 Creating an instance in AWS Supply Chain establishes a dedicated environment for supply chain management and analytics. To set up an instance, you configure basic details, establish settings, and define initial user access permissions.

@@ -1,3 +1,7 @@
+---
+title: "What is AWS Supply Chain?"
+---
+
 # What is AWS Supply Chain?
 
 AWS Supply Chain is a cloud-based supply chain management application that unifies data and provides ML-powered forecasting methods to improve demand

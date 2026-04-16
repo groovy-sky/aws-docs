@@ -1,3 +1,7 @@
+---
+title: "Lead time insights"
+---
+
 # Lead time insights
 
 AWS Supply Chain provides insights on the lead time deviation for a vendor, product, and destination site level. The vendor lead time deviation insights also includes transportation mode, source locations, and identify lead

@@ -1,3 +1,7 @@
+---
+title: "Planning configuration data"
+---
+
 # Planning configuration data
 
 This section lists all the required fields used by Supply Planning and describes how

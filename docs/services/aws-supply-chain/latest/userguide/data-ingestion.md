@@ -1,3 +1,7 @@
+---
+title: "Data lake dashboard"
+---
+
 # Data lake dashboard
 
 You can use AWS Supply Chain data lake to ingest your data from various data sources.

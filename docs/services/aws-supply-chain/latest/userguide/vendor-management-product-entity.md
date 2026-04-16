@@ -1,3 +1,7 @@
+---
+title: "vendor_product"
+---
+
 # vendor\_product
 
 **Primary key (PK)**

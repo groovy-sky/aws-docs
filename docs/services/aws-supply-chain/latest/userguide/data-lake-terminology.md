@@ -1,3 +1,7 @@
+---
+title: "Terminology used in data lake"
+---
+
 # Terminology used in data lake
 
 The following terms are used in data lake:

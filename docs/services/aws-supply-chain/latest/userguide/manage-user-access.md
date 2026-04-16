@@ -1,3 +1,7 @@
+---
+title: "Managing user access"
+---
+
 # Managing user access
 
 AWS Supply Chain administrators can modify roles and permissions.

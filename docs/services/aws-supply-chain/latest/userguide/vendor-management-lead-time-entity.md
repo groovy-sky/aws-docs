@@ -1,3 +1,7 @@
+---
+title: "vendor_lead_time"
+---
+
 # vendor\_lead\_time
 
 **Primary key (PK)**

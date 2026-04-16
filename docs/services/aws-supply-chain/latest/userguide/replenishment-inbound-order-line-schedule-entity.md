@@ -1,3 +1,7 @@
+---
+title: "inbound_order_line_schedule"
+---
+
 # inbound\_order\_line\_schedule
 
 **Primary key (PK)**

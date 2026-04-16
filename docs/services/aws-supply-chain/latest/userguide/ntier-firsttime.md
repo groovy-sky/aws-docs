@@ -1,3 +1,7 @@
+---
+title: "Using N-Tier Visibility for the first time"
+---
+
 # Using N-Tier Visibility for the first time
 
 You can use N-Tier Visibility with Supply Planning or Work Order Insights to extend visibility beyond your organization to your external trading partners. This visibility lets you align and confirm orders with suppliers, improving the accuracy of planning and execution processes.

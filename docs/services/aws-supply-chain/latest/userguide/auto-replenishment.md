@@ -1,3 +1,7 @@
+---
+title: "Auto Replenishment"
+---
+
 # Auto Replenishment
 
 You can use the Auto Replenishment feature to determine the amount of inventory to

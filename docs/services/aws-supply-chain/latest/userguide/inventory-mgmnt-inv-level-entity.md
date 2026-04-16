@@ -1,3 +1,7 @@
+---
+title: "inv_level"
+---
+
 # inv\_level
 
 **Primary key (PK)**

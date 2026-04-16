@@ -1,3 +1,7 @@
+---
+title: "customer_cost"
+---
+
 # customer\_cost
 
 **Primary key (PK)**

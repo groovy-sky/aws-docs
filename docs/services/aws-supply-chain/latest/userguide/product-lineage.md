@@ -1,3 +1,7 @@
+---
+title: "Product lineage"
+---
+
 # Product lineage
 
 _Product lineage_ refers to the relationship established between

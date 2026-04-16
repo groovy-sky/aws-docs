@@ -1,3 +1,7 @@
+---
+title: "Deleting users"
+---
+
 # Deleting users
 
 As an AWS Supply Chain administrator, you can delete users from the

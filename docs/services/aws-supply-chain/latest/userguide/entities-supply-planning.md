@@ -1,3 +1,7 @@
+---
+title: "Supply Planning"
+---
+
 # Supply Planning
 
 The table below list the data entities and columns used by Supply Planning.

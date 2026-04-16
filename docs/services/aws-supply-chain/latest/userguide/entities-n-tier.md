@@ -1,3 +1,7 @@
+---
+title: "N-Tier Visibility"
+---
+
 # N-Tier Visibility
 
 The table below list the data entities and columns used by N-Tier Visibility.

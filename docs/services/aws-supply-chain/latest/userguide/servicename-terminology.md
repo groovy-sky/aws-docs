@@ -1,3 +1,7 @@
+---
+title: "Terminology used in Demand Planning"
+---
+
 # Terminology used in Demand Planning
 
 The following is the common terminology that you may frequently use in Demand

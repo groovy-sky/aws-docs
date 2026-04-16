@@ -1,3 +1,7 @@
+---
+title: "Demand Pattern and Recommendation"
+---
+
 # Demand Pattern and Recommendation
 
 Demand Pattern and Recommendation examines the transformed historical demand input at

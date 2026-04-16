@@ -1,3 +1,7 @@
+---
+title: "Updating user permissions"
+---
+
 # Updating user permissions
 
 To update the user permission role for the current AWS Supply Chain users, follow these steps.

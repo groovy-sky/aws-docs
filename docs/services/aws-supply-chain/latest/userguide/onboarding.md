@@ -1,3 +1,7 @@
+---
+title: "Create your first demand plan"
+---
+
 # Create your first demand plan
 
 When you log into Demand Planning for the first time, you will be able to view the onboarding pages that highlight

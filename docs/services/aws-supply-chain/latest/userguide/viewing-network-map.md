@@ -1,3 +1,7 @@
+---
+title: "Viewing the network map"
+---
+
 # Viewing the network map
 
 After ingesting the required datasets for Insights, the network map displays the current and projected inventory for products and locations

@@ -1,3 +1,7 @@
+---
+title: "product_alternate"
+---
+
 # product\_alternate
 
 **Primary key (PK)**

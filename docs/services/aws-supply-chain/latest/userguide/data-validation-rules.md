@@ -1,3 +1,7 @@
+---
+title: "Data Validation Rules"
+---
+
 # Data Validation Rules
 
 The validations performed prior to forecast creation are below. For more information, see [Demand Planning](required-entities.md).

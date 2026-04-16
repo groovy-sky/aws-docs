@@ -1,3 +1,7 @@
+---
+title: "Data Validation and Demand Pattern Analysis"
+---
+
 # Data Validation and Demand Pattern Analysis
 
 Data Validation and Demand Pattern Analysis tools help you evaluate the quality of your data and identify key patterns

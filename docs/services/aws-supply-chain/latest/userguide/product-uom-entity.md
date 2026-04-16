@@ -1,3 +1,7 @@
+---
+title: "product_uom"
+---
+
 # product\_uom
 
 **Primary key (PK)**

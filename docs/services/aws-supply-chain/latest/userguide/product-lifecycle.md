@@ -1,3 +1,7 @@
+---
+title: "Product lifecycle"
+---
+
 # Product lifecycle
 
 Product lifecycle describes the lifecycle of a product from introduction to End of Life

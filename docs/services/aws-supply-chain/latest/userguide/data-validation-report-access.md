@@ -1,3 +1,7 @@
+---
+title: "Data Validation Report Access"
+---
+
 # Data Validation Report Access
 
 When creating a forecast for the first time, navigate to the **Demand**

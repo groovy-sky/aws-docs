@@ -1,3 +1,7 @@
+---
+title: "Use standard configuration"
+---
+
 # Use standard configuration
 
 Standard configuration creates your AWS Supply Chain instance using default security and

@@ -1,3 +1,7 @@
+---
+title: "inbound_order_line"
+---
+
 # inbound\_order\_line
 
 **Primary key (PK)**

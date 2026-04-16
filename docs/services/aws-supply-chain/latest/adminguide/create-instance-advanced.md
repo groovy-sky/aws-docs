@@ -1,3 +1,7 @@
+---
+title: "Use advanced configuration"
+---
+
 # Use advanced configuration
 
 Advanced configuration allows you to customize your instance by setting your own parameters. To create an AWS Supply Chain instance

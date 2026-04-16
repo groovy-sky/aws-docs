@@ -1,3 +1,7 @@
+---
+title: "Forecast based on demand drivers"
+---
+
 # Forecast based on demand drivers
 
 To enhance forecast accuracy while configuring your forecast, you can use demand drivers.

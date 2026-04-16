@@ -1,3 +1,7 @@
+---
+title: "Insight settings"
+---
+
 # Insight settings
 
 After creating an instance, follow the procedure below:

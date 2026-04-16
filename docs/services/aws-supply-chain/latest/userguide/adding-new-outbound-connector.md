@@ -1,3 +1,7 @@
+---
+title: "Adding a new outbound source for Supply Planning"
+---
+
 # Adding a new outbound source for Supply Planning
 
 You can use the new outbound source to upload the updated _Supply Planning_ purchase order requests or plan enhancements.

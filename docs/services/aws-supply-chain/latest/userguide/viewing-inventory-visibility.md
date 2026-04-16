@@ -1,3 +1,7 @@
+---
+title: "Viewing inventory visibility"
+---
+
 # Viewing inventory visibility
 
 You can use inventory visibility to view the inventory projections for all the ingested products and site combinations. You can change the projections view by product or location.

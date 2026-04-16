@@ -1,3 +1,7 @@
+---
+title: "Demand Planning"
+---
+
 # Demand Planning
 
 The following table lists the data entities and columns used by Demand Planning.

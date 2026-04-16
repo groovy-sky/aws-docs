@@ -1,3 +1,7 @@
+---
+title: "Insights"
+---
+
 # Insights
 
 You can use AWS Supply Chain Insights to generate inventory shortage and excess and lead time deviation insights based on the watchlist configured. Insights also provides recommendations on how to

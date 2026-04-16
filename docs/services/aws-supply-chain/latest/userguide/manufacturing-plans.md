@@ -1,3 +1,7 @@
+---
+title: "Manufacturing Plans"
+---
+
 # Manufacturing Plans
 
 Manufacturing Plans helps you to determine production, transfer, and material

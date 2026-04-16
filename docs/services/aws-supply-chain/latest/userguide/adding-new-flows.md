@@ -1,3 +1,7 @@
+---
+title: "Adding a new data source"
+---
+
 # Adding a new data source
 
 You can use AWS Supply Chain to ingest your data stored in your data source and

@@ -1,3 +1,7 @@
+---
+title: "Responding to requests as a Partner"
+---
+
 # Responding to requests as a Partner
 
 As a Partner, you can accept or decline Partner requests, review and respond to data requests.

@@ -1,3 +1,7 @@
+---
+title: "Log on to AWS Supply Chain web application"
+---
+
 # Log on to AWS Supply Chain web application
 
 As an AWS Supply Chain administrator, you should have received an email invite to the

@@ -1,3 +1,7 @@
+---
+title: "Connecting to an EDI"
+---
+
 # Connecting to an EDI
 
 To ingest data from an EDI data source, follow the procedure below.

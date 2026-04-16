@@ -1,3 +1,7 @@
+---
+title: "Data entities and columns used in AWS Supply Chain"
+---
+
 # Data entities and columns used in AWS Supply Chain
 
 This chapter describes the data entities and columns supported by each AWS Supply Chain module.

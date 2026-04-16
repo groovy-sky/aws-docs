@@ -1,3 +1,7 @@
+---
+title: "company"
+---
+
 # company
 
 **Primary key (PK)**

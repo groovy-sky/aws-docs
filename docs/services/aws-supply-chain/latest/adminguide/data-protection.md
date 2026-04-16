@@ -1,3 +1,7 @@
+---
+title: "Data protection in AWS Supply Chain"
+---
+
 # Data protection in AWS Supply Chain
 
 The AWS [shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model)

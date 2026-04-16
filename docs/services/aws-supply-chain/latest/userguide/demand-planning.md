@@ -1,3 +1,7 @@
+---
+title: "Demand Planning"
+---
+
 # Demand Planning
 
 Demand Planning is a web-based application that allows business users to

@@ -1,3 +1,7 @@
+---
+title: "inv_policy"
+---
+
 # inv\_policy
 
 **Primary key (PK)**

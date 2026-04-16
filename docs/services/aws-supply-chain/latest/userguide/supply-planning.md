@@ -1,3 +1,7 @@
+---
+title: "Supply Planning"
+---
+
 # Supply Planning
 
 AWS Supply Chain supports two types of supply plans to help you accurately plan inventory

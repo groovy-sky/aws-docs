@@ -1,3 +1,7 @@
+---
+title: "Sustainability"
+---
+
 # Sustainability
 
 Using Sustainability, you can request data from your partners who have accepted your

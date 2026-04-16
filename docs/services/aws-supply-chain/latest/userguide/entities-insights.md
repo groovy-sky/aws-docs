@@ -1,3 +1,7 @@
+---
+title: "Insights"
+---
+
 # Insights
 
 The table below list the data entities and columns used by Insights for the Inventory Visibility, Network Map, Inventory Insights, and Rebalance Recommendations features. See the table below

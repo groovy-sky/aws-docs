@@ -1,3 +1,7 @@
+---
+title: "Data entities supported in AWS Supply Chain"
+---
+
 # Data entities supported in AWS Supply Chain
 
 The following is an overview of the data entities supported in AWS Supply Chain.

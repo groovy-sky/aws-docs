@@ -1,3 +1,7 @@
+---
+title: "Sustainability"
+---
+
 # Sustainability
 
 The table below list the data entities and columns used by Sustainability for partner invitations and onboarding.

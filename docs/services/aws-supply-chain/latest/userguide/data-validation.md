@@ -1,3 +1,7 @@
+---
+title: "Data Validation"
+---
+
 # Data Validation
 
 Data Validation is a crucial step early in the forecast creation process that ensures

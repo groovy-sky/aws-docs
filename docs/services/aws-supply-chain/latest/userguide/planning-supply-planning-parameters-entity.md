@@ -1,3 +1,7 @@
+---
+title: "supply_planning_parameters"
+---
+
 # supply\_planning\_parameters
 
 **Primary key (PK)**

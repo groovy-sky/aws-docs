@@ -1,3 +1,7 @@
+---
+title: "Ingesting data for existing connections"
+---
+
 # Ingesting data for existing connections
 
 The following are the ingestion options if you're using Amazon S3:

@@ -1,3 +1,7 @@
+---
+title: "Forecast model analyzer"
+---
+
 # Forecast model analyzer
 
 Forecast model analyzer is a self-service tool that you can use to execute forecast experiments on multiple forecast models (forecast period in past and future). Once executed, you can review the results of the different forecast models.

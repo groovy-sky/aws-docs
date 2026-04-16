@@ -1,3 +1,7 @@
+---
+title: "What is the AWS MCP Server (Preview)?"
+---
+
 # What is the AWS MCP Server (Preview)?
 
 ###### Important

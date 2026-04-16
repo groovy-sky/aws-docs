@@ -1,3 +1,7 @@
+---
+title: "Viewing inventory insights"
+---
+
 # Viewing inventory insights
 
 When you create a watchlist for a specific product, site, risk type, and planning horizon, depending on the notifications settings, you will get notified when Insights detects an inventory risk. You will receive notifications through the web application or email. You can view the inventory risks

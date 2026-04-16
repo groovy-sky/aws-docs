@@ -1,3 +1,7 @@
+---
+title: "Connecting to S/4 HANA"
+---
+
 # Connecting to S/4 HANA
 
 Before you can connect to your S/4 HANA data source, you must complete the following

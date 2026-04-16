@@ -1,3 +1,7 @@
+---
+title: "Adding new users"
+---
+
 # Adding new users
 
 To add new users, follow these steps:

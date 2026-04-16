@@ -1,3 +1,7 @@
+---
+title: "Sustainability dashboard"
+---
+
 # Sustainability dashboard
 
 You can invite partners by using the AWS Supply Chain data lake connectors and by mapping

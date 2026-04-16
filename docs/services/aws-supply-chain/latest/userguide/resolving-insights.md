@@ -1,3 +1,7 @@
+---
+title: "Resolving an inventory risk insight"
+---
+
 # Resolving an inventory risk insight
 
 Insights recommends one or more ways to resolve an inventory risk depending on the distance, time horizon, available transportation modes in the ingested data (transportation\_lane.trans\_mode), shipping
