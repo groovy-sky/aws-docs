@@ -1,3 +1,7 @@
+---
+title: "GatewayDetails"
+---
+
 # GatewayDetails
 
 The details of gateway.

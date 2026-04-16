@@ -1,3 +1,7 @@
+---
+title: "SearchJobSummary"
+---
+
 # SearchJobSummary
 
 This is information pertaining to a search job.

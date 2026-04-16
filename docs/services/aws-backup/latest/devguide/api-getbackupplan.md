@@ -1,3 +1,7 @@
+---
+title: "GetBackupPlan"
+---
+
 # GetBackupPlan
 
 Returns `BackupPlan` details for the specified `BackupPlanId`. The

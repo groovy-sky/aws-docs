@@ -1,3 +1,7 @@
+---
+title: "ScanJobCreator"
+---
+
 # ScanJobCreator
 
 Contains identifying information about the creation of a scan job, including the backup plan and rule that initiated the scan.

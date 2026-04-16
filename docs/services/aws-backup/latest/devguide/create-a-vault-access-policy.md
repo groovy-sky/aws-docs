@@ -1,3 +1,7 @@
+---
+title: "Vault access policies"
+---
+
 # Vault access policies
 
 With AWS Backup, you can assign policies to backup vaults and the resources they contain.

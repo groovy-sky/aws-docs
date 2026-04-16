@@ -1,3 +1,7 @@
+---
+title: "DescribeReportPlan"
+---
+
 # DescribeReportPlan
 
 Returns a list of all report plans for an AWS account and AWS Region.

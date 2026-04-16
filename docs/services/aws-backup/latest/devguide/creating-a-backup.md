@@ -1,3 +1,7 @@
+---
+title: "Backup creation by resource type"
+---
+
 # Backup creation by resource type
 
 With AWS Backup, you can create backups automatically using backup plans or manually by

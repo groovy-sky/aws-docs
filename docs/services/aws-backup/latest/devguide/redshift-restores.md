@@ -1,3 +1,7 @@
+---
+title: "Restore an Amazon Redshift cluster"
+---
+
 # Restore an Amazon Redshift cluster
 
 You can restore automated and manual snapshots in the AWS Backup console or through

@@ -1,3 +1,7 @@
+---
+title: "UpdateGatewaySoftwareNow"
+---
+
 # UpdateGatewaySoftwareNow
 
 Updates the gateway virtual machine (VM) software.

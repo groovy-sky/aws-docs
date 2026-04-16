@@ -1,3 +1,7 @@
+---
+title: "Updating report plans"
+---
+
 # Updating report plans
 
 You can update an existing report plan's description, its delivery destination, and

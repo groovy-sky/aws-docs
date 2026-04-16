@@ -1,3 +1,7 @@
+---
+title: "CreateReportPlan"
+---
+
 # CreateReportPlan
 
 Creates a report plan. A report plan is a document that contains information about the

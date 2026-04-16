@@ -1,3 +1,7 @@
+---
+title: "PutHypervisorPropertyMappings"
+---
+
 # PutHypervisorPropertyMappings
 
 This action sets the property mappings for the specified hypervisor.

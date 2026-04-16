@@ -1,3 +1,7 @@
+---
+title: "Using service-linked roles in Aurora DSQL"
+---
+
 # Using service-linked roles in Aurora DSQL
 
 Aurora DSQL uses AWS Identity and Access Management (IAM) [service-linked roles](../../../iam/latest/userguide/id-roles.md#id_roles_terms-and-concepts). A service-linked role is a unique type of IAM role that is linked directly to Aurora DSQL.

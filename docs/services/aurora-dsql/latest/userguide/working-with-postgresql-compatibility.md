@@ -1,3 +1,7 @@
+---
+title: "SQL feature compatibility in Aurora DSQL"
+---
+
 # SQL feature compatibility in Aurora DSQL
 
 In the following sections, learn about

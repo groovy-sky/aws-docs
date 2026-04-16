@@ -1,3 +1,7 @@
+---
+title: "How Amazon Aurora DSQL works with IAM"
+---
+
 # How Amazon Aurora DSQL works with IAM
 
 Before you use IAM to manage access to Aurora DSQL, learn what IAM features are

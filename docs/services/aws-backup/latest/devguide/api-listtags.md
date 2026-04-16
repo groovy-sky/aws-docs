@@ -1,3 +1,7 @@
+---
+title: "ListTags"
+---
+
 # ListTags
 
 Returns the tags assigned to the resource, such as a target recovery point, backup plan,

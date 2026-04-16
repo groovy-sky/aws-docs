@@ -1,3 +1,7 @@
+---
+title: "ALTER SEQUENCE"
+---
+
 # `ALTER SEQUENCE`
 
 `ALTER SEQUENCE` — change the definition of a sequence generator.

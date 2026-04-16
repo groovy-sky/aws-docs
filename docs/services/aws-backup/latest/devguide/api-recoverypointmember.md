@@ -1,3 +1,7 @@
+---
+title: "RecoveryPointMember"
+---
+
 # RecoveryPointMember
 
 This is a recovery point which is a child (nested) recovery point

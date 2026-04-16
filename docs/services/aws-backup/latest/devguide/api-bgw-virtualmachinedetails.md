@@ -1,3 +1,7 @@
+---
+title: "VirtualMachineDetails"
+---
+
 # VirtualMachineDetails
 
 Your `VirtualMachine` objects, ordered by their Amazon Resource Names (ARNs).

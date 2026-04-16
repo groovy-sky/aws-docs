@@ -1,3 +1,7 @@
+---
+title: "DeleteReportPlan"
+---
+
 # DeleteReportPlan
 
 Deletes the report plan specified by a report plan name.

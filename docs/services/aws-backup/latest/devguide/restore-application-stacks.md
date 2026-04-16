@@ -1,3 +1,7 @@
+---
+title: "Restore CloudFormation stacks"
+---
+
 # Restore CloudFormation stacks
 
 A CloudFormation composite backup is a combination of a CloudFormation template and all

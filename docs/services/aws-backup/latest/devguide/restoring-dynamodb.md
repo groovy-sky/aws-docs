@@ -1,3 +1,7 @@
+---
+title: "Restore a Amazon DynamoDB table"
+---
+
 # Restore a Amazon DynamoDB table
 
 ## Use the AWS Backup console to restore DynamoDB recovery points

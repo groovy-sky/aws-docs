@@ -1,3 +1,7 @@
+---
+title: "DeleteGateway"
+---
+
 # DeleteGateway
 
 Deletes a backup gateway.

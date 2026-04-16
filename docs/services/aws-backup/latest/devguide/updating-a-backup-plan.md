@@ -1,3 +1,7 @@
+---
+title: "Update a backup plan"
+---
+
 # Update a backup plan
 
 After creating a backup plan, you can edit the plan—for example, you can add tags,

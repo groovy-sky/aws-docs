@@ -1,3 +1,7 @@
+---
+title: "GetGateway"
+---
+
 # GetGateway
 
 By providing the ARN (Amazon Resource Name), this

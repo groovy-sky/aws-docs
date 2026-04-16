@@ -1,3 +1,7 @@
+---
+title: "ScanResult"
+---
+
 # ScanResult
 
 Contains the results of a security scan, including scanner information, scan state, and any findings discovered.

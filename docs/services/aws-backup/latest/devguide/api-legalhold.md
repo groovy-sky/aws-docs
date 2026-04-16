@@ -1,3 +1,7 @@
+---
+title: "LegalHold"
+---
+
 # LegalHold
 
 A legal hold is an administrative tool that helps prevent backups

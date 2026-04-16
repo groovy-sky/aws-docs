@@ -1,3 +1,7 @@
+---
+title: "Identity columns"
+---
+
 # Identity columns
 
 ###### Important

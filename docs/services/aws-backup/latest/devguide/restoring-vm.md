@@ -1,3 +1,7 @@
+---
+title: "Restore a virtual machine using AWS Backup"
+---
+
 # Restore a virtual machine using AWS Backup
 
 You can restore a virtual machine to VMware, VMware Cloud on AWS, VMware Cloud on

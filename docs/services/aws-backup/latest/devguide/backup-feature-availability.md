@@ -1,3 +1,7 @@
+---
+title: "AWS Backup feature availability"
+---
+
 # AWS Backup feature availability
 
 AWS Backup features are offered according to resource and AWS Region.
@@ -117,7 +121,11 @@ Amazon DocumentDB in Regions where opt-in is required.
 Asia Pacific (Jakarta), Israel (Tel Aviv),
 Middle East (Bahrain), and Middle East (UAE) Regions.
 
-**Cross-Region** copy of FSx for Lustre, FSx for Windows File Server, FSx for ONTAP, and FSx for OpenZFS is
+**Cross-Region** copy of FSx for Lustre,
+FSx for Windows File Server, and FSx for OpenZFS is
+**not supported** in Middle East (Bahrain) and Middle East (UAE).
+
+**Cross-Region** copy of FSx for ONTAP is
 **not supported** in Regions where opt-in is required.
 
 - **Cross-account** copy is **not supported** for CloudFormation, Neptune,
@@ -185,7 +193,7 @@ and the listed resource operates:
 
 AWS Backup cannot be deployed or operated locally on AWS Outposts infrastructure. All backup operations and storage are performed in the associated AWS Region, and local backup retention on Outposts is not supported.
 
-Region and service[Aurora DSQL](backup-aurora.md)[Amazon FSx](restoring-fsx.md)[SAP HANA on EC2 instances](backup-saphana.md)[Amazon S3](s3-backups.md)[Storage Gateway](working-with-gateways.md)[Amazon Timestream](timestream-backup.md)[VMware](backing-up-vms.md) and [Backup gateway](working-with-gateways.md)[Amazon EKS](eks-backups.md)[Amazon Neptune](creating-a-backup.md)[Amazon DocumentDB](creating-a-backup.md)US East (N. Virginia)✓✓✓✓✓✓✓✓✓✓US East (Ohio)✓✓✓✓✓✓✓✓✓✓US West (N. California)✓✓✓✓✓✓✓US West (Oregon)✓✓✓✓✓✓✓✓✓✓Africa (Cape Town)✓✓✓✓✓✓✓Asia Pacific (Hong Kong)✓✓✓✓✓✓✓Asia Pacific (Hyderabad)✓✓✓✓✓Asia Pacific (Jakarta)✓✓✓✓✓Asia Pacific (Malaysia)✓✓Asia Pacific (Melbourne)Windows; Lustre; ONTAP✓✓✓Asia Pacific (Mumbai)✓✓✓✓✓✓✓✓✓Asia Pacific (New Zealand)✓✓Asia Pacific (Osaka)✓✓✓✓✓✓✓✓Asia Pacific (Seoul)✓✓✓✓✓✓✓✓✓Asia Pacific (Singapore)✓✓✓✓✓✓✓✓Asia Pacific (Sydney)✓✓✓✓✓✓✓✓✓Asia Pacific (Taipei)✓✓Asia Pacific (Thailand)✓✓Asia Pacific (Tokyo)✓✓✓✓✓✓✓✓✓✓Canada (Central)✓✓✓✓✓✓✓✓Canada West (Calgary)✓✓China (Beijing)Windows; Lustre✓ 1✓✓✓China (Ningxia)Windows; Lustre✓ 1✓✓✓Europe (Frankfurt)✓✓✓✓✓✓✓✓✓✓Europe (Ireland)✓✓✓✓✓✓✓✓✓✓Europe (London)✓✓✓✓✓✓✓✓✓Europe (Milan)✓✓✓✓✓✓✓Europe (Paris)✓✓✓✓✓✓✓✓✓Europe (Spain)✓✓✓✓Europe (Stockholm)✓✓✓✓✓✓✓Europe (Zurich)✓✓✓✓Israel (Tel Aviv)✓✓✓✓✓Mexico (Central)✓✓Middle East (Bahrain)✓✓✓✓✓✓✓Middle East (UAE)✓✓✓✓✓✓South America (São Paulo)✓✓✓✓✓✓AWS GovCloud (US-West)Windows; Lustre; ONTAP✓✓✓✓✓✓✓AWS GovCloud (US-East)Windows; Lustre; ONTAP✓✓✓✓✓AWS European Sovereign Cloud (Germany)✓
+Region and service[Aurora DSQL](backup-aurora.md)[Amazon FSx](restoring-fsx.md)[SAP HANA on EC2 instances](backup-saphana.md)[Amazon S3](s3-backups.md)[Storage Gateway](working-with-gateways.md)[Amazon Timestream](timestream-backup.md)[VMware](backing-up-vms.md) and [Backup gateway](working-with-gateways.md)[Amazon EKS](eks-backups.md)[Amazon Neptune](creating-a-backup.md)[Amazon DocumentDB](creating-a-backup.md)US East (N. Virginia)✓✓✓✓✓✓✓✓✓✓US East (Ohio)✓✓✓✓✓✓✓✓✓✓US West (N. California)✓✓✓✓✓✓✓US West (Oregon)✓✓✓✓✓✓✓✓✓✓Africa (Cape Town)✓✓✓✓✓✓✓Asia Pacific (Hong Kong)✓✓✓✓✓✓✓Asia Pacific (Hyderabad)✓✓✓✓✓Asia Pacific (Jakarta)✓✓✓✓✓Asia Pacific (Malaysia)✓✓✓Asia Pacific (Melbourne)Windows; Lustre; ONTAP✓✓✓Asia Pacific (Mumbai)✓✓✓✓✓✓✓✓✓Asia Pacific (New Zealand)✓✓Asia Pacific (Osaka)✓✓✓✓✓✓✓✓Asia Pacific (Seoul)✓✓✓✓✓✓✓✓✓Asia Pacific (Singapore)✓✓✓✓✓✓✓✓Asia Pacific (Sydney)✓✓✓✓✓✓✓✓✓Asia Pacific (Taipei)✓✓✓Asia Pacific (Thailand)✓✓✓Asia Pacific (Tokyo)✓✓✓✓✓✓✓✓✓✓Canada (Central)✓✓✓✓✓✓✓✓Canada West (Calgary)✓✓✓China (Beijing)Windows; Lustre✓ 1✓✓✓China (Ningxia)Windows; Lustre✓ 1✓✓✓Europe (Frankfurt)✓✓✓✓✓✓✓✓✓✓Europe (Ireland)✓✓✓✓✓✓✓✓✓✓Europe (London)✓✓✓✓✓✓✓✓✓Europe (Milan)✓✓✓✓✓✓✓Europe (Paris)✓✓✓✓✓✓✓✓✓Europe (Spain)✓✓✓✓Europe (Stockholm)✓✓✓✓✓✓✓Europe (Zurich)✓✓✓✓Israel (Tel Aviv)✓✓✓✓✓Mexico (Central)✓✓✓Middle East (Bahrain)✓✓✓✓✓✓✓Middle East (UAE)✓✓✓✓✓✓South America (São Paulo)✓✓✓✓✓✓AWS GovCloud (US-West)Windows; Lustre; ONTAP✓✓✓✓✓✓✓AWS GovCloud (US-East)Windows; Lustre; ONTAP✓✓✓✓✓AWS European Sovereign Cloud (Germany)✓
 
 A check under Amazon FSx indicates that FSx for Windows File Server, FSx for Lustre, FSx for ONTAP, and
 FSx for OpenZFS are all supported in that Region by AWS Backup; otherwise, the supported

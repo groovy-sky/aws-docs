@@ -1,3 +1,7 @@
+---
+title: "Assign AWS Backup resources through CloudFormation"
+---
+
 # Assign AWS Backup resources through CloudFormation
 
 This end-to-end CloudFormation template creates a resource assignment, a backup plan, and a

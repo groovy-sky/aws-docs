@@ -1,3 +1,7 @@
+---
+title: "ListBackupPlanTemplates"
+---
+
 # ListBackupPlanTemplates
 
 Lists the backup plan templates.

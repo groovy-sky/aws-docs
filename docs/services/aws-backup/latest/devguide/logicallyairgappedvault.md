@@ -1,3 +1,7 @@
+---
+title: "Logically air-gapped vault"
+---
+
 # Logically air-gapped vault
 
 ## Overview of logically air-gapped vaults

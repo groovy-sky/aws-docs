@@ -1,3 +1,7 @@
+---
+title: "ListRecoveryPointsByLegalHold"
+---
+
 # ListRecoveryPointsByLegalHold
 
 This action returns recovery point ARNs (Amazon Resource Names) of the

@@ -1,3 +1,7 @@
+---
+title: "RestoreAccessBackupVaultListMember"
+---
+
 # RestoreAccessBackupVaultListMember
 
 Contains information about a restore access backup vault.

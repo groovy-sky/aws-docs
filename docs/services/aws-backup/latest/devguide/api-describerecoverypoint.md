@@ -1,3 +1,7 @@
+---
+title: "DescribeRecoveryPoint"
+---
+
 # DescribeRecoveryPoint
 
 Returns metadata associated with a recovery point, including ID, status, encryption, and

@@ -1,3 +1,7 @@
+---
+title: "PutBandwidthRateLimitSchedule"
+---
+
 # PutBandwidthRateLimitSchedule
 
 This action sets the bandwidth rate limit schedule for a specified gateway.

@@ -1,3 +1,7 @@
+---
+title: "CREATE VIEW"
+---
+
 # `CREATE VIEW`
 
 `CREATE VIEW` defines a new persistent view. Aurora DSQL does not support temporary views;

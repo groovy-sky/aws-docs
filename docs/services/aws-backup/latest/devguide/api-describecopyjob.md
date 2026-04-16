@@ -1,3 +1,7 @@
+---
+title: "DescribeCopyJob"
+---
+
 # DescribeCopyJob
 
 Returns metadata associated with creating a copy of a resource.

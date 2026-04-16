@@ -1,3 +1,7 @@
+---
+title: "ScanSetting"
+---
+
 # ScanSetting
 
 Contains configuration settings for malware scanning, including the scanner type, target resource types, and scanner role.

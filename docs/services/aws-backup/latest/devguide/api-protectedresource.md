@@ -1,3 +1,7 @@
+---
+title: "ProtectedResource"
+---
+
 # ProtectedResource
 
 A structure that contains information about a backed-up resource.

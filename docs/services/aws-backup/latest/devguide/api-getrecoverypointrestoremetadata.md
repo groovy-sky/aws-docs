@@ -1,3 +1,7 @@
+---
+title: "GetRecoveryPointRestoreMetadata"
+---
+
 # GetRecoveryPointRestoreMetadata
 
 Returns a set of metadata key-value pairs that were used to create the backup.

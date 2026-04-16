@@ -1,3 +1,7 @@
+---
+title: "CreateBackupVault"
+---
+
 # CreateBackupVault
 
 Creates a logical container where backups are stored. A `CreateBackupVault`

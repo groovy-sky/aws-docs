@@ -1,3 +1,7 @@
+---
+title: "ListTagsForResource"
+---
+
 # ListTagsForResource
 
 Lists the tags applied to the resource identified by its Amazon Resource Name

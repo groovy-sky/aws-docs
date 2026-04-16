@@ -1,3 +1,7 @@
+---
+title: "Monitoring AWS Backup events using Amazon EventBridge"
+---
+
 # Monitoring AWS Backup events using Amazon EventBridge
 
 AWS Backup sends events to Amazon EventBridge when the state of a backup or copy job changes. You can use

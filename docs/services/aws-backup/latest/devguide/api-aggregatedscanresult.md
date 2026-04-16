@@ -1,3 +1,7 @@
+---
+title: "AggregatedScanResult"
+---
+
 # AggregatedScanResult
 
 Contains aggregated scan results across multiple scan operations, providing a summary of scan status and findings.

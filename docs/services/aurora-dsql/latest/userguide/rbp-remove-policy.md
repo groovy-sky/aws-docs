@@ -1,3 +1,7 @@
+---
+title: "Removing resource-based policies"
+---
+
 # Removing resource-based policies
 
 You can remove resource-based policies from clusters to change access controls.

@@ -1,3 +1,7 @@
+---
+title: "ListLegalHolds"
+---
+
 # ListLegalHolds
 
 This action returns metadata about active and previous legal holds.

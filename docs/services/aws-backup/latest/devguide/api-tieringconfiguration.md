@@ -1,3 +1,7 @@
+---
+title: "TieringConfiguration"
+---
+
 # TieringConfiguration
 
 This contains metadata about a tiering configuration.

@@ -1,3 +1,7 @@
+---
+title: "Creating frameworks using the AWS Backup console"
+---
+
 # Creating frameworks using the AWS Backup console
 
 After turning on resource tracking, create a framework using the following steps.

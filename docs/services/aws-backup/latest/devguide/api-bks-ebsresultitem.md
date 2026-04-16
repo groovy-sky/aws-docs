@@ -1,3 +1,7 @@
+---
+title: "EBSResultItem"
+---
+
 # EBSResultItem
 
 These are the items returned in the results of

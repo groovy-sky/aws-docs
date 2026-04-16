@@ -1,3 +1,7 @@
+---
+title: "Configuring SSL/TLS certificates for Aurora DSQL connections"
+---
+
 # Configuring SSL/TLS certificates for Aurora DSQL connections
 
 Aurora DSQL requires all connections to use Transport Layer Security (TLS) encryption. To

@@ -1,3 +1,7 @@
+---
+title: "GetSearchJob"
+---
+
 # GetSearchJob
 
 This operation retrieves metadata of a search job,

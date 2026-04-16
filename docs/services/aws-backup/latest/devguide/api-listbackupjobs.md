@@ -1,3 +1,7 @@
+---
+title: "ListBackupJobs"
+---
+
 # ListBackupJobs
 
 Returns a list of existing backup jobs for an authenticated account for the last 30

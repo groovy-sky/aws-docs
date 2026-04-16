@@ -1,3 +1,7 @@
+---
+title: "TieringConfigurationInputForUpdate"
+---
+
 # TieringConfigurationInputForUpdate
 
 This contains metadata about a tiering configuration for update operations.

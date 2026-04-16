@@ -1,3 +1,7 @@
+---
+title: "ListTagsForResource"
+---
+
 # ListTagsForResource
 
 This operation returns the tags for a resource type.

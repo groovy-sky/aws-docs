@@ -1,3 +1,7 @@
+---
+title: "Sequence manipulation functions"
+---
+
 # Sequence manipulation functions
 
 This section describes functions for operating on sequence objects, also called sequence

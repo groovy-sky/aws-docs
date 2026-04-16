@@ -1,3 +1,7 @@
+---
+title: "GetSearchResultExportJob"
+---
+
 # GetSearchResultExportJob
 
 This operation retrieves the metadata of an export job.

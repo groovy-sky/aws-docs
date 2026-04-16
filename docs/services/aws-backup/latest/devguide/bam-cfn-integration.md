@@ -1,3 +1,7 @@
+---
+title: "Using AWS Backup Audit Manager with CloudFormation"
+---
+
 # Using AWS Backup Audit Manager with CloudFormation
 
 We provide the following sample CloudFormation templates for your reference:

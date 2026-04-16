@@ -1,3 +1,7 @@
+---
+title: "Data encryption for Amazon Aurora DSQL"
+---
+
 # Data encryption for Amazon Aurora DSQL
 
 Amazon Aurora DSQL encrypts all user data at rest. For enhanced security, this encryption uses

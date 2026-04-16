@@ -1,3 +1,7 @@
+---
+title: "Virtual machine backups"
+---
+
 # Virtual machine backups
 
 AWS Backup supports centralized and automated data protection for on-premises VMware virtual

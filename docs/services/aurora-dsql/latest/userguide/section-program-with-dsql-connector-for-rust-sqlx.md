@@ -1,3 +1,7 @@
+---
+title: "Aurora DSQL Connector for Rust SQLx"
+---
+
 # Aurora DSQL Connector for Rust SQLx
 
 The [Aurora DSQL Connector for Rust](https://github.com/awslabs/aurora-dsql-connectors/tree/main/rust/sqlx) is a Rust connector built on [SQLx](https://github.com/launchbadge/sqlx) that integrates IAM authentication for connecting Rust applications to Amazon Aurora DSQL clusters.

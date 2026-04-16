@@ -1,3 +1,7 @@
+---
+title: "ExportBackupPlanTemplate"
+---
+
 # ExportBackupPlanTemplate
 
 Returns the backup plan that is specified by the plan ID as a backup template.

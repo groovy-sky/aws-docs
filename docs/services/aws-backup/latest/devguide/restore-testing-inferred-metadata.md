@@ -1,3 +1,7 @@
+---
+title: "Restore testing inferred metadata"
+---
+
 # Restore testing inferred metadata
 
 Restoring a recovery point requires restore metadata. To perform restore tests, AWS Backup

@@ -1,3 +1,7 @@
+---
+title: "Restore a backup by resource type"
+---
+
 # Restore a backup by resource type
 
 ## How to restore

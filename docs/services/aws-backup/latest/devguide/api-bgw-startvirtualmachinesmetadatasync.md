@@ -1,3 +1,7 @@
+---
+title: "StartVirtualMachinesMetadataSync"
+---
+
 # StartVirtualMachinesMetadataSync
 
 This action sends a request to sync metadata across the specified virtual machines.

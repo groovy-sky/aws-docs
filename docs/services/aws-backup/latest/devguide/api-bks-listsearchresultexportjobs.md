@@ -1,3 +1,7 @@
+---
+title: "ListSearchResultExportJobs"
+---
+
 # ListSearchResultExportJobs
 
 This operation exports search results of a search job

@@ -1,3 +1,7 @@
+---
+title: "IndexedRecoveryPoint"
+---
+
 # IndexedRecoveryPoint
 
 This is a recovery point that has an associated backup index.

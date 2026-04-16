@@ -1,3 +1,7 @@
+---
+title: "Considerations for working with Amazon Aurora DSQL"
+---
+
 # Considerations for working with Amazon Aurora DSQL
 
 Consider the following behaviors when you work with Amazon Aurora DSQL. For more information about

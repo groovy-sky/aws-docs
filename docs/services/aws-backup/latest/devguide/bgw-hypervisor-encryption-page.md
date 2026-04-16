@@ -1,3 +1,7 @@
+---
+title: "Virtual machine hypervisor credential encryption"
+---
+
 # Virtual machine hypervisor credential encryption
 
 Virtual machines [managed by a hypervisor](working-with-hypervisors.md) use [AWS Backup Gateway](working-with-gateways.md) to connect on-premises systems to AWS Backup.

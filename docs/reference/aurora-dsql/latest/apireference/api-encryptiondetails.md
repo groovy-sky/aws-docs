@@ -1,3 +1,7 @@
+---
+title: "EncryptionDetails"
+---
+
 # EncryptionDetails
 
 Configuration details about encryption for the cluster including the AWS KMS key ARN, encryption type, and encryption status.

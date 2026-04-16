@@ -1,3 +1,7 @@
+---
+title: "Configure your infrastructure to use Backup gateway"
+---
+
 # Configure your infrastructure to use Backup gateway
 
 Backup gateway requires the following network, firewall, and hardware configurations

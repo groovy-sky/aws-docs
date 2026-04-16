@@ -1,3 +1,7 @@
+---
+title: "UpdateRecoveryPointLifecycle"
+---
+
 # UpdateRecoveryPointLifecycle
 
 Sets the transition lifecycle of a recovery point.

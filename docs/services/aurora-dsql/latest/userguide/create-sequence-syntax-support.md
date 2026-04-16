@@ -1,3 +1,7 @@
+---
+title: "CREATE SEQUENCE"
+---
+
 # `CREATE SEQUENCE`
 
 `CREATE SEQUENCE` — define a new sequence generator.

@@ -1,3 +1,7 @@
+---
+title: "Continuous backups and point-in-time recovery (PITR)"
+---
+
 # Continuous backups and point-in-time recovery (PITR)
 
 For some resources, AWS Backup supports continuous backups and point-in-time recovery (PITR) in

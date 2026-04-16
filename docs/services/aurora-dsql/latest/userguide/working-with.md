@@ -1,3 +1,7 @@
+---
+title: "Aurora DSQL and PostgreSQL"
+---
+
 # Aurora DSQL and PostgreSQL
 
 Aurora DSQL is a PostgreSQL-compatible, distributed relational database designed for transactional

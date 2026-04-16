@@ -1,3 +1,7 @@
+---
+title: "Controls and remediation"
+---
+
 # Controls and remediation
 
 This page lists the available controls for AWS Backup Audit Manager. You can choose the right

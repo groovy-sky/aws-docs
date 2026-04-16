@@ -1,3 +1,7 @@
+---
+title: "ListRecoveryPointsByBackupVault"
+---
+
 # ListRecoveryPointsByBackupVault
 
 Returns detailed information about the recovery points stored in a backup vault.

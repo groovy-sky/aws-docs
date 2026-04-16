@@ -1,3 +1,7 @@
+---
+title: "GetRestoreTestingInferredMetadata"
+---
+
 # GetRestoreTestingInferredMetadata
 
 This request returns the minimal required set of metadata needed to

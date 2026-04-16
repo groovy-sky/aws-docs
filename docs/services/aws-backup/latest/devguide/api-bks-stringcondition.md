@@ -1,3 +1,7 @@
+---
+title: "StringCondition"
+---
+
 # StringCondition
 
 This contains the value of the string and can contain

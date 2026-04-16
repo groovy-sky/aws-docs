@@ -1,3 +1,7 @@
+---
+title: "ListProtectedResourcesByBackupVault"
+---
+
 # ListProtectedResourcesByBackupVault
 
 This request lists the protected resources corresponding to each backup vault.

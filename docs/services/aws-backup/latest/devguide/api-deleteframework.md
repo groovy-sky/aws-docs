@@ -1,3 +1,7 @@
+---
+title: "DeleteFramework"
+---
+
 # DeleteFramework
 
 Deletes the framework specified by a framework name.

@@ -1,3 +1,7 @@
+---
+title: "ControlScope"
+---
+
 # ControlScope
 
 A framework consists of one or more controls. Each control has its own control scope.

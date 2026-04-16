@@ -1,3 +1,7 @@
+---
+title: "Using IAM condition keys with Amazon Aurora DSQL"
+---
+
 # Using IAM condition keys with Amazon Aurora DSQL
 
 When you grant permissions in Aurora DSQL you can specify conditions that determine how a permissions policy

@@ -1,3 +1,7 @@
+---
+title: "CreateGateway"
+---
+
 # CreateGateway
 
 Creates a backup gateway. After you create a gateway, you can associate it with a server

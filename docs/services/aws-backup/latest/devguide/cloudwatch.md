@@ -1,3 +1,7 @@
+---
+title: "AWS Backup metrics with Amazon CloudWatch"
+---
+
 # AWS Backup metrics with Amazon CloudWatch
 
 ###### Topics
@@ -127,7 +131,7 @@ console; it cannot be tracked via CloudWatch.
 The following table lists all the metrics available to you.
 
 MetricDescription`NumberOfBackupJobsCreated`The number of backup jobs that AWS Backup created.`NumberOfBackupJobsPending`The number of backup jobs about to run in AWS Backup.`NumberOfBackupJobsRunning`The number of backup jobs currently running in AWS Backup.`NumberOfBackupJobsAborted`The number of user cancelled backup jobs.`NumberOfBackupJobsCompleted`The number of backup jobs that AWS Backup finished.`NumberOfBackupJobsFailed`The number of backup jobs with status of `Failed`. Often caused by
-scheduling a backup job during or 1 hour before a database resource or 4 hours
+scheduling a backup job during or 1 hour before a database resource or 3 hours
 before or during a Amazon FSx maintenance window or automated backup window and not using
 AWS Backup to perform continuous backup for point-in-time restores. See [Point-in-Time Recovery](point-in-time-recovery.md) for a list of supported services and instructions
 on how to use AWS Backup to take continuous backups, or reschedule your backup jobs.

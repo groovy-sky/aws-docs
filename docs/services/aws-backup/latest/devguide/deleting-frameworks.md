@@ -1,3 +1,7 @@
+---
+title: "Deleting audit frameworks"
+---
+
 # Deleting audit frameworks
 
 ###### To delete an existing framework

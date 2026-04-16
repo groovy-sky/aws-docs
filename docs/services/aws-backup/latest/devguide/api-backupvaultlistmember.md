@@ -1,3 +1,7 @@
+---
+title: "BackupVaultListMember"
+---
+
 # BackupVaultListMember
 
 Contains metadata about a backup vault.

@@ -1,3 +1,7 @@
+---
+title: "Turning on resource tracking"
+---
+
 # Turning on resource tracking
 
 Before you create your first compliance-related framework, you must turn on resource

@@ -1,3 +1,7 @@
+---
+title: "DeleteBackupVault"
+---
+
 # DeleteBackupVault
 
 Deletes the backup vault identified by its name. A vault can be deleted only if it is

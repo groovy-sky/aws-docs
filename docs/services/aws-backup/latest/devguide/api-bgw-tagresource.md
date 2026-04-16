@@ -1,3 +1,7 @@
+---
+title: "TagResource"
+---
+
 # TagResource
 
 Tag the resource.

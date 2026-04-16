@@ -1,3 +1,7 @@
+---
+title: "RecoveryPointByResource"
+---
+
 # RecoveryPointByResource
 
 Contains detailed information about a saved recovery point.

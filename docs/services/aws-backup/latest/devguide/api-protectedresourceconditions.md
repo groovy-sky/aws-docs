@@ -1,3 +1,7 @@
+---
+title: "ProtectedResourceConditions"
+---
+
 # ProtectedResourceConditions
 
 The conditions that you define for resources in

@@ -1,3 +1,7 @@
+---
+title: "DROP SEQUENCE"
+---
+
 # `DROP SEQUENCE`
 
 `DROP SEQUENCE` — remove a sequence.

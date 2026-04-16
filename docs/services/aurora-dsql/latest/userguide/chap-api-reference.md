@@ -1,3 +1,7 @@
+---
+title: "Aurora DSQL API reference"
+---
+
 # Aurora DSQL API reference
 
 In addition to the AWS Management Console and the AWS Command Line Interface (AWS CLI), Aurora DSQL also provides an API interface.

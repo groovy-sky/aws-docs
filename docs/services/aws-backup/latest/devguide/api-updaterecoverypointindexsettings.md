@@ -1,3 +1,7 @@
+---
+title: "UpdateRecoveryPointIndexSettings"
+---
+
 # UpdateRecoveryPointIndexSettings
 
 This operation updates the settings of a recovery point index.

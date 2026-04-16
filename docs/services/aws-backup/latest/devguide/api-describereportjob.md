@@ -1,3 +1,7 @@
+---
+title: "DescribeReportJob"
+---
+
 # DescribeReportJob
 
 Returns the details associated with creating a report as specified by its

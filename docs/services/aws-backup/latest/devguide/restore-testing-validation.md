@@ -1,3 +1,7 @@
+---
+title: "Restore testing validation"
+---
+
 # Restore testing validation
 
 You have the option of creating an event-driven validation that runs when a restore

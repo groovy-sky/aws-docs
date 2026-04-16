@@ -1,3 +1,7 @@
+---
+title: "UpdateRegionSettings"
+---
+
 # UpdateRegionSettings
 
 Updates the current service opt-in settings for the Region.

@@ -1,3 +1,7 @@
+---
+title: "HypervisorDetails"
+---
+
 # HypervisorDetails
 
 These are the details of the specified hypervisor. A hypervisor is hardware,

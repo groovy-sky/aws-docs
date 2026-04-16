@@ -1,3 +1,7 @@
+---
+title: "PutBackupVaultNotifications"
+---
+
 # PutBackupVaultNotifications
 
 Turns on notifications on a backup vault for the specified topic and events.

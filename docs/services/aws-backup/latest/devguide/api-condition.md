@@ -1,3 +1,7 @@
+---
+title: "Condition"
+---
+
 # Condition
 
 Contains an array of triplets made up of a condition type (such as

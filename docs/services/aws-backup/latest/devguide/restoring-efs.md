@@ -1,3 +1,7 @@
+---
+title: "Restore an Amazon EFS file system"
+---
+
 # Restore an Amazon EFS file system
 
 If you are restoring an Amazon Elastic File System (Amazon EFS) instance, you can perform a full restore or an

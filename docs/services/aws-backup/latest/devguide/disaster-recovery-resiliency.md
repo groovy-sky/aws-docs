@@ -1,3 +1,7 @@
+---
+title: "Resilience in AWS Backup"
+---
+
 # Resilience in AWS Backup
 
 AWS Backup takes its resilience — and your data security — extremely seriously.

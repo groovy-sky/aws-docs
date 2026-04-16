@@ -1,3 +1,7 @@
+---
+title: "BackupRuleInput"
+---
+
 # BackupRuleInput
 
 Specifies a scheduled task used to back up a selection of resources.

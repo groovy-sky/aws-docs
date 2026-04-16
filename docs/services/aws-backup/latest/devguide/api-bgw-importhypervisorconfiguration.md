@@ -1,3 +1,7 @@
+---
+title: "ImportHypervisorConfiguration"
+---
+
 # ImportHypervisorConfiguration
 
 Connect to a hypervisor by importing its configuration.

@@ -1,3 +1,7 @@
+---
+title: "Authentication"
+---
+
 # Authentication
 
 Access to AWS Backup or the AWS services that you are backing up requires credentials that

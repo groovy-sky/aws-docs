@@ -1,3 +1,7 @@
+---
+title: "Aurora DSQL Connector for Java JDBC"
+---
+
 # Aurora DSQL Connector for Java JDBC
 
 The [Aurora DSQL Connector for JDBC](https://github.com/awslabs/aurora-dsql-connectors/tree/main/java/jdbc) is designed as an authentication plugin that extends the functionality of the PostgreSQL JDBC driver to enable applications to authenticate with Aurora DSQL using IAM credentials. The connector does not connect directly to the database, but provides seamless IAM authentication on top of the underlying PostgreSQL JDBC driver.

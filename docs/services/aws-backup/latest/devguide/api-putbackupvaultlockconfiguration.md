@@ -1,3 +1,7 @@
+---
+title: "PutBackupVaultLockConfiguration"
+---
+
 # PutBackupVaultLockConfiguration
 
 Applies AWS Backup Vault Lock to a backup vault, preventing attempts to delete

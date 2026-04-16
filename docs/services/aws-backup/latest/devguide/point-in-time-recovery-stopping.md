@@ -1,3 +1,7 @@
+---
+title: "Stopping or deleting continuous backups"
+---
+
 # Stopping or deleting continuous backups
 
 You can stop the creation of continuous backups or you can delete specific backups

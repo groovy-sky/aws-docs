@@ -1,3 +1,7 @@
+---
+title: "ListSearchJobBackups"
+---
+
 # ListSearchJobBackups
 
 This operation returns a list of all backups (recovery

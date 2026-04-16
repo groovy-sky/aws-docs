@@ -1,3 +1,7 @@
+---
+title: "Advanced DynamoDB backup"
+---
+
 # Advanced DynamoDB backup
 
 AWS Backup supports additional, advanced features for your Amazon DynamoDB data protection needs.

@@ -1,3 +1,7 @@
+---
+title: "Use JetBrains DataGrip to access Aurora DSQL"
+---
+
 # Use JetBrains DataGrip to access Aurora DSQL
 
 JetBrains DataGrip is a cross-platform IDE for working with SQL and databases, including

@@ -1,3 +1,7 @@
+---
+title: "BackupSelection"
+---
+
 # BackupSelection
 
 Used to specify a set of resources to a backup plan.

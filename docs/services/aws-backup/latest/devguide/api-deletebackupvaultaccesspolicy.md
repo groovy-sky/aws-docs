@@ -1,3 +1,7 @@
+---
+title: "DeleteBackupVaultAccessPolicy"
+---
+
 # DeleteBackupVaultAccessPolicy
 
 Deletes the policy document that manages permissions on a backup vault.

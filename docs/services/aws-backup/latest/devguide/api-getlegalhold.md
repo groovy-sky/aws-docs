@@ -1,3 +1,7 @@
+---
+title: "GetLegalHold"
+---
+
 # GetLegalHold
 
 This action returns details for a specified legal hold. The details are the

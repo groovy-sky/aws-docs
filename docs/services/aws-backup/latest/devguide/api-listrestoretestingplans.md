@@ -1,3 +1,7 @@
+---
+title: "ListRestoreTestingPlans"
+---
+
 # ListRestoreTestingPlans
 
 Returns a list of restore testing plans.

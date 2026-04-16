@@ -1,3 +1,7 @@
+---
+title: "Asynchronous indexes in Aurora DSQL"
+---
+
 # Asynchronous indexes in Aurora DSQL
 
 The `CREATE INDEX ASYNC` command creates an index on one or more columns of a

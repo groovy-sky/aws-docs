@@ -1,3 +1,7 @@
+---
+title: "DROP VIEW"
+---
+
 # `DROP VIEW`
 
 The `DROP VIEW` statement removes an existing view. Aurora DSQL supports the full PostgreSQL syntax for this command.

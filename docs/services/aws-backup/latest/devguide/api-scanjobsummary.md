@@ -1,3 +1,7 @@
+---
+title: "ScanJobSummary"
+---
+
 # ScanJobSummary
 
 Contains summary information about scan jobs, including counts and metadata for a specific time period and criteria.

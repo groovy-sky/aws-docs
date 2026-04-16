@@ -1,3 +1,7 @@
+---
+title: "Restoring a continuous backup"
+---
+
 # Restoring a continuous backup
 
 ###### To restore a continuous backup using the AWS Backup console

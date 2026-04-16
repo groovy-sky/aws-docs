@@ -1,3 +1,7 @@
+---
+title: "ListReportPlans"
+---
+
 # ListReportPlans
 
 Returns a list of your report plans. For detailed information about a single report

@@ -1,3 +1,7 @@
+---
+title: "ListTagsForResource"
+---
+
 # ListTagsForResource
 
 Lists all of the tags for a resource.

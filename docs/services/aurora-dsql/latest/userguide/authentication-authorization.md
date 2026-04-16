@@ -1,3 +1,7 @@
+---
+title: "Authentication and authorization for Aurora DSQL"
+---
+
 # Authentication and authorization for Aurora DSQL
 
 Aurora DSQL uses IAM roles and policies for cluster authorization. You associate IAM roles

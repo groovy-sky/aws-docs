@@ -1,3 +1,7 @@
+---
+title: "CloudFormation stack backups"
+---
+
 # CloudFormation stack backups
 
 A CloudFormation stack consists of multiple stateful

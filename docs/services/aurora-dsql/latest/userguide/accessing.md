@@ -1,3 +1,7 @@
+---
+title: "Accessing Aurora DSQL with PostgreSQL-compatible clients"
+---
+
 # Accessing Aurora DSQL with PostgreSQL-compatible clients
 
 Aurora DSQL uses the [PostgreSQL\

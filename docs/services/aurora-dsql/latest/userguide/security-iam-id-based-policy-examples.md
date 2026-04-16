@@ -1,3 +1,7 @@
+---
+title: "Identity-based policy examples for Amazon Aurora DSQL"
+---
+
 # Identity-based policy examples for Amazon Aurora DSQL
 
 By default, users and roles don't have permission to create or modify Aurora DSQL

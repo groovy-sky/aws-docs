@@ -1,3 +1,7 @@
+---
+title: "ListTieringConfigurations"
+---
+
 # ListTieringConfigurations
 
 Returns a list of tiering configurations.

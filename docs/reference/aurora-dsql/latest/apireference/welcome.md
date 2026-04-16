@@ -1,3 +1,7 @@
+---
+title: "Welcome"
+---
+
 # Welcome
 
 This is an interface reference for Amazon Aurora DSQL. It contains documentation for one of the
@@ -8,7 +12,7 @@ is available in both single-Region and multi-Region configurations, so your
 clusters and databases are always available even if an Availability Zone or an AWS Region are unavailable. lets you focus on using your data to
 acquire new insights for your business and customers.
 
-This document was last published on April 9, 2026.
+This document was last published on April 14, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

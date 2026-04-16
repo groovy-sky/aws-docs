@@ -1,3 +1,7 @@
+---
+title: "Aurora DSQL Connector for .NET Npgsql"
+---
+
 # Aurora DSQL Connector for .NET Npgsql
 
 The [Aurora DSQL Connector for .NET](https://github.com/awslabs/aurora-dsql-connectors/tree/main/dotnet/npgsql) is a .NET connector built on [Npgsql](https://www.npgsql.org/) that integrates IAM authentication for connecting .NET applications to Amazon Aurora DSQL clusters.
@@ -164,7 +168,7 @@ For more information on authentication in Aurora DSQL, see [Authentication and a
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Ruby connector
+PHP connector
 
 Rust connector
 

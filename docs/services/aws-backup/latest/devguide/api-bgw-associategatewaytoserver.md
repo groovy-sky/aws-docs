@@ -1,3 +1,7 @@
+---
+title: "AssociateGatewayToServer"
+---
+
 # AssociateGatewayToServer
 
 Associates a backup gateway with your server. After you complete the association process,

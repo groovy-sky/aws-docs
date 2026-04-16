@@ -1,3 +1,7 @@
+---
+title: "TagResource"
+---
+
 # TagResource
 
 Tags a resource with a map of key and value pairs.

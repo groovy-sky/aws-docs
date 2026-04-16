@@ -1,3 +1,7 @@
+---
+title: "LatestRevokeRequest"
+---
+
 # LatestRevokeRequest
 
 Contains information about the latest request to revoke access to a backup vault.

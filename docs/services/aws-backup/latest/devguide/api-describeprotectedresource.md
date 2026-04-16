@@ -1,3 +1,7 @@
+---
+title: "DescribeProtectedResource"
+---
+
 # DescribeProtectedResource
 
 Returns information about a saved resource, including the last time it was backed up,

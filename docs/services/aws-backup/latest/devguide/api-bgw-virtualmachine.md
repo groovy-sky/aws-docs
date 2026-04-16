@@ -1,3 +1,7 @@
+---
+title: "VirtualMachine"
+---
+
 # VirtualMachine
 
 A virtual machine that is on a hypervisor.

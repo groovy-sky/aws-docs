@@ -1,3 +1,7 @@
+---
+title: "UpdateCluster"
+---
+
 # UpdateCluster
 
 The _UpdateCluster_ API allows you to modify both single-Region and multi-Region cluster configurations. With the _multiRegionProperties_ parameter, you can add or modify witness Region support and manage peer relationships with clusters in other Regions.

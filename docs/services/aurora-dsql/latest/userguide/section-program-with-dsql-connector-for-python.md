@@ -1,3 +1,7 @@
+---
+title: "Aurora DSQL Connector for Python"
+---
+
 # Aurora DSQL Connector for Python
 
 The [Aurora DSQL Connector for Python](https://github.com/awslabs/aurora-dsql-connectors/tree/main/python/connector) integrates IAM Authentication

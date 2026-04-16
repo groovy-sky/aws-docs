@@ -1,3 +1,7 @@
+---
+title: "Cluster quotas and database limits in Amazon Aurora DSQL"
+---
+
 # Cluster quotas and database limits in Amazon Aurora DSQL
 
 The following sections describe the cluster quotas and database limits for Aurora DSQL.

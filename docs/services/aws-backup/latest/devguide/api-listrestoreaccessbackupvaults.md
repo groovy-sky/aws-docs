@@ -1,3 +1,7 @@
+---
+title: "ListRestoreAccessBackupVaults"
+---
+
 # ListRestoreAccessBackupVaults
 
 Returns a list of restore access backup vaults associated with a specified backup vault.

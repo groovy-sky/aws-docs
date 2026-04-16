@@ -1,3 +1,7 @@
+---
+title: "ListProtectedResources"
+---
+
 # ListProtectedResources
 
 Returns an array of resources with recovery points created by AWS Backup

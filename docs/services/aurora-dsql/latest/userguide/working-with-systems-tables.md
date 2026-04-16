@@ -1,3 +1,7 @@
+---
+title: "System tables and commands in Aurora DSQL"
+---
+
 # System tables and commands in Aurora DSQL
 
 See the following sections to learn about the supported system tables and catalogs in

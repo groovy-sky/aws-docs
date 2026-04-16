@@ -1,3 +1,7 @@
+---
+title: "Blocking public access with resource-based policies in Aurora DSQL"
+---
+
 # Blocking public access with resource-based policies in Aurora DSQL
 
 Block Public Access (BPA) is a feature that identifies and prevents the attaching of resource-based policies that grant public access to your Aurora DSQL clusters across your AWS accounts. With BPA, you can prevent public access to your Aurora DSQL resources. BPA performs checks during the creation or modification of a resource-based policy and helps improve your security posture with Aurora DSQL.

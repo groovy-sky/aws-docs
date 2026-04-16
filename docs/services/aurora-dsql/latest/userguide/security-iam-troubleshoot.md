@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting Amazon Aurora DSQL identity and access"
+---
+
 # Troubleshooting Amazon Aurora DSQL identity and access
 
 Use the following information to help you diagnose and fix common issues that you might

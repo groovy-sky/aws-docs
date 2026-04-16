@@ -1,3 +1,7 @@
+---
+title: "ReportPlan"
+---
+
 # ReportPlan
 
 Contains detailed information about a report plan.

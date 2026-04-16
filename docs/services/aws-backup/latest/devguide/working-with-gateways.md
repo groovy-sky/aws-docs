@@ -1,3 +1,7 @@
+---
+title: "Working with gateways"
+---
+
 # Working with gateways
 
 To back up and restore your virtual machines (VMs) using AWS Backup, you must first install

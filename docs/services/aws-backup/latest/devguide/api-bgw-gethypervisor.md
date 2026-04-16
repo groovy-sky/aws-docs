@@ -1,3 +1,7 @@
+---
+title: "GetHypervisor"
+---
+
 # GetHypervisor
 
 This action requests information about the specified hypervisor to which the gateway will connect.

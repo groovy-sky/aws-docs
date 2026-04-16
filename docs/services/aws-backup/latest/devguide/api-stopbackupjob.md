@@ -1,3 +1,7 @@
+---
+title: "StopBackupJob"
+---
+
 # StopBackupJob
 
 Attempts to cancel a job to create a one-time backup of a resource.

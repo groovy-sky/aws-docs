@@ -1,3 +1,7 @@
+---
+title: "Resource-based policies for Aurora DSQL"
+---
+
 # Resource-based policies for Aurora DSQL
 
 Use resource-based policies for Aurora DSQL to restrict or grant access to your

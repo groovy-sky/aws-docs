@@ -1,3 +1,7 @@
+---
+title: "CreateTieringConfiguration"
+---
+
 # CreateTieringConfiguration
 
 Creates a tiering configuration.

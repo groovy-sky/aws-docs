@@ -1,3 +1,7 @@
+---
+title: "GetTieringConfiguration"
+---
+
 # GetTieringConfiguration
 
 Returns `TieringConfiguration` details for the specified

@@ -1,3 +1,7 @@
+---
+title: "Common resource-based policy examples"
+---
+
 # Common resource-based policy examples
 
 These examples show common patterns for controlling access to your Aurora DSQL clusters. You can combine and modify these patterns to meet your specific access requirements.

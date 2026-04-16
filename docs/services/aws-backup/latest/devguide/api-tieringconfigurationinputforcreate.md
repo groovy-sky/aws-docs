@@ -1,3 +1,7 @@
+---
+title: "TieringConfigurationInputForCreate"
+---
+
 # TieringConfigurationInputForCreate
 
 This contains metadata about a tiering configuration for create operations.

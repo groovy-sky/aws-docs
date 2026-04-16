@@ -1,3 +1,7 @@
+---
+title: "DescribeFramework"
+---
+
 # DescribeFramework
 
 Returns the framework details for the specified `FrameworkName`.

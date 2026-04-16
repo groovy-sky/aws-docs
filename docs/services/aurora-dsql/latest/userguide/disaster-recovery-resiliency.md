@@ -1,3 +1,7 @@
+---
+title: "Resilience in Amazon Aurora DSQL"
+---
+
 # Resilience in Amazon Aurora DSQL
 
 The AWS global infrastructure is built around AWS Regions and Availability Zones (AZ). AWS Regions provide multiple physically separated and isolated

@@ -1,3 +1,7 @@
+---
+title: "PutBackupVaultAccessPolicy"
+---
+
 # PutBackupVaultAccessPolicy
 
 Sets a resource-based policy that is used to manage access permissions on the target

@@ -1,3 +1,7 @@
+---
+title: "Restore an Amazon EC2 instance"
+---
+
 # Restore an Amazon EC2 instance
 
 When you restore an EC2 instance, AWS Backup creates an Amazon Machine Image (AMI), an

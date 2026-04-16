@@ -1,3 +1,7 @@
+---
+title: "Getting started with Aurora DSQL"
+---
+
 # Getting started with Aurora DSQL
 
 Amazon Aurora DSQL is a serverless, fully managed, distributed relational database optimized for transactional

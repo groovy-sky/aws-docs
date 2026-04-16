@@ -1,3 +1,7 @@
+---
+title: "S3ItemFilter"
+---
+
 # S3ItemFilter
 
 This contains arrays of objects, which may include

@@ -1,3 +1,7 @@
+---
+title: "Concurrency control in Aurora DSQL"
+---
+
 # Concurrency control in Aurora DSQL
 
 _Concurrency_ allows multiple sessions to access and modify data

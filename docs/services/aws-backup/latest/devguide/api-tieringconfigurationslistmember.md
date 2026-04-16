@@ -1,3 +1,7 @@
+---
+title: "TieringConfigurationsListMember"
+---
+
 # TieringConfigurationsListMember
 
 This contains metadata about a tiering configuration returned in a list.

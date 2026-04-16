@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot VM issues"
+---
+
 # Troubleshoot VM issues
 
 ## Incremental Backups / CBT issues and messages

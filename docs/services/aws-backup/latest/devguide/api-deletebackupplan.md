@@ -1,3 +1,7 @@
+---
+title: "DeleteBackupPlan"
+---
+
 # DeleteBackupPlan
 
 Deletes a backup plan. A backup plan can only be deleted after all associated selections

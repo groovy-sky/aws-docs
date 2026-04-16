@@ -1,3 +1,7 @@
+---
+title: "DeleteBackupSelection"
+---
+
 # DeleteBackupSelection
 
 Deletes the resource selection associated with a backup plan that is specified by the

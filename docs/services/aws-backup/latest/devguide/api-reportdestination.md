@@ -1,3 +1,7 @@
+---
+title: "ReportDestination"
+---
+
 # ReportDestination
 
 Contains information from your report job about your report destination.

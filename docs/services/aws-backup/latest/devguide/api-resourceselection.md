@@ -1,3 +1,7 @@
+---
+title: "ResourceSelection"
+---
+
 # ResourceSelection
 
 This contains metadata about resource selection for tiering configurations.

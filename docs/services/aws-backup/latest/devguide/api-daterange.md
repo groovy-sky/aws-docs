@@ -1,3 +1,7 @@
+---
+title: "DateRange"
+---
+
 # DateRange
 
 This is a resource filter containing FromDate: DateTime

@@ -1,3 +1,7 @@
+---
+title: "CalculatedLifecycle"
+---
+
 # CalculatedLifecycle
 
 Contains `DeleteAt` and `MoveToColdStorageAt` timestamps, which

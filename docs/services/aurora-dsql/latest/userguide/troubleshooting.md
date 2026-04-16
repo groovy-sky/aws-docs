@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting issues in Aurora DSQL"
+---
+
 # Troubleshooting issues in Aurora DSQL
 
 ###### Note

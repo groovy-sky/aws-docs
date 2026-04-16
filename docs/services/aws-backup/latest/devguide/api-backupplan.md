@@ -1,3 +1,7 @@
+---
+title: "BackupPlan"
+---
+
 # BackupPlan
 
 Contains an optional backup plan display name and an array of `BackupRule`

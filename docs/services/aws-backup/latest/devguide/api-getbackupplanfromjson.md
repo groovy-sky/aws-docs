@@ -1,3 +1,7 @@
+---
+title: "GetBackupPlanFromJSON"
+---
+
 # GetBackupPlanFromJSON
 
 Returns a valid JSON document specifying a backup plan or an error.

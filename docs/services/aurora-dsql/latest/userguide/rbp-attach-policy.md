@@ -1,3 +1,7 @@
+---
+title: "Adding and editing resource-based policies for clusters"
+---
+
 # Adding and editing resource-based policies for clusters
 
 ###### To add a resource-based policy to an existing cluster

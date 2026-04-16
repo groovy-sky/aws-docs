@@ -1,3 +1,7 @@
+---
+title: "UpdateHypervisor"
+---
+
 # UpdateHypervisor
 
 Updates a hypervisor metadata, including its host, username, and password. Specify which

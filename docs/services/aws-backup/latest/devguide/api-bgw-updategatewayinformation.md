@@ -1,3 +1,7 @@
+---
+title: "UpdateGatewayInformation"
+---
+
 # UpdateGatewayInformation
 
 Updates a gateway's name. Specify which gateway to update using the Amazon Resource Name

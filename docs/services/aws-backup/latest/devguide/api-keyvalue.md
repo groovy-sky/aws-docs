@@ -1,3 +1,7 @@
+---
+title: "KeyValue"
+---
+
 # KeyValue
 
 Pair of two related strings. Allowed characters

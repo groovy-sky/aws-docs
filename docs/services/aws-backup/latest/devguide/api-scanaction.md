@@ -1,3 +1,7 @@
+---
+title: "ScanAction"
+---
+
 # ScanAction
 
 Defines a scanning action that specifies the malware scanner and scan mode to use.

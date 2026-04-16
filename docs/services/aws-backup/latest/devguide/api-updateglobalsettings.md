@@ -1,3 +1,7 @@
+---
+title: "UpdateGlobalSettings"
+---
+
 # UpdateGlobalSettings
 
 Updates whether the AWS account has enabled different cross-account management options, including cross-account backup, multi-party approval, and delegated administrator. Returns an error if the account is not an Organizations management account. Use the `DescribeGlobalSettings` API to determine the current settings.

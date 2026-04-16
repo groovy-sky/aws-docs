@@ -1,3 +1,7 @@
+---
+title: "Choosing your controls"
+---
+
 # Choosing your controls
 
 The following table lists the AWS Backup Audit Manager controls, their customizable

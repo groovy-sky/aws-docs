@@ -1,3 +1,7 @@
+---
+title: "ListIndexedRecoveryPoints"
+---
+
 # ListIndexedRecoveryPoints
 
 This operation returns a list of recovery points that have an

@@ -1,3 +1,7 @@
+---
+title: "SearchScopeSummary"
+---
+
 # SearchScopeSummary
 
 The summary of the specified search job scope,

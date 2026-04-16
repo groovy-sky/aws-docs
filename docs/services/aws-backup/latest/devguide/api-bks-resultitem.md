@@ -1,3 +1,7 @@
+---
+title: "ResultItem"
+---
+
 # ResultItem
 
 This is an object representing the item

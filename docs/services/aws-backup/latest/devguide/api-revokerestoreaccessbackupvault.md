@@ -1,3 +1,7 @@
+---
+title: "RevokeRestoreAccessBackupVault"
+---
+
 # RevokeRestoreAccessBackupVault
 
 Revokes access to a restore access backup vault, removing the ability to restore from its recovery points and permanently deleting the vault.

@@ -1,3 +1,7 @@
+---
+title: "Amazon Redshift Serverless restore"
+---
+
 # Amazon Redshift Serverless restore
 
 You can restore manual snapshots of databases or tables using the AWS Backup console or

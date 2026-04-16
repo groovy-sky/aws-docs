@@ -1,3 +1,7 @@
+---
+title: "ListRecoveryPointsByResource"
+---
+
 # ListRecoveryPointsByResource
 
 The information about the recovery points of the type specified by a

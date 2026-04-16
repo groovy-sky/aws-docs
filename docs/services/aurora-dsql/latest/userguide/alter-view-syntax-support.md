@@ -1,3 +1,7 @@
+---
+title: "ALTER VIEW"
+---
+
 # `ALTER VIEW`
 
 The `ALTER VIEW` statement allows changing various properties of an existing view, and Aurora DSQL supports all the PostgreSQL syntax for this command.

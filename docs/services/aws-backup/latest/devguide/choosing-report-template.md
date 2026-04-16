@@ -1,3 +1,7 @@
+---
+title: "Choosing your report template"
+---
+
 # Choosing your report template
 
 A report template defines the information that your report plan includes in your report.

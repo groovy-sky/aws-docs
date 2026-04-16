@@ -1,3 +1,7 @@
+---
+title: "SearchScope"
+---
+
 # SearchScope
 
 The search scope is all backup

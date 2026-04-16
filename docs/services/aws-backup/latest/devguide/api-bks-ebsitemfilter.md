@@ -1,3 +1,7 @@
+---
+title: "EBSItemFilter"
+---
+
 # EBSItemFilter
 
 This contains arrays of objects, which may include

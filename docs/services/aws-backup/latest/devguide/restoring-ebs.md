@@ -1,3 +1,7 @@
+---
+title: "Restore an Amazon EBS volume"
+---
+
 # Restore an Amazon EBS volume
 
 When you restore an Amazon Elastic Block Store (EBS) snapshot, you can choose to restore it as an EBS

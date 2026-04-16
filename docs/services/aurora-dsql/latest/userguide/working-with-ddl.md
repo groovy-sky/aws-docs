@@ -1,3 +1,7 @@
+---
+title: "DDL and distributed transactions in Aurora DSQL"
+---
+
 # DDL and distributed transactions in Aurora DSQL
 
 Data definition language (DDL) behaves differently in Aurora DSQL from PostgreSQL. Aurora DSQL features

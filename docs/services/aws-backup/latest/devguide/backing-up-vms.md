@@ -1,3 +1,7 @@
+---
+title: "Backing up virtual machines"
+---
+
 # Backing up virtual machines
 
 After [Adding a hypervisor](working-with-hypervisors.md#add-hypervisor), Backup gateway

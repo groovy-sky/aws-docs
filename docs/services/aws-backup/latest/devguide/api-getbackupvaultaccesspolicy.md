@@ -1,3 +1,7 @@
+---
+title: "GetBackupVaultAccessPolicy"
+---
+
 # GetBackupVaultAccessPolicy
 
 Returns the access policy document that is associated with the named backup

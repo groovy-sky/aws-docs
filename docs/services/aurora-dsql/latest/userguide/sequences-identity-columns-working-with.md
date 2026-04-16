@@ -1,3 +1,7 @@
+---
+title: "Working with sequences and identity columns"
+---
+
 # Working with sequences and identity columns
 
 This section helps you understand how best to use sequences and identity

@@ -1,3 +1,7 @@
+---
+title: "Backup instant access permissions"
+---
+
 # Backup instant access permissions
 
 When using Amazon GuardDuty Malware Protection for AWS Backup with S3 backups, Amazon GuardDuty accesses your S3 backups through three APIs: CreateBackupAccessPoint, DescribeBackupAccessPoint, and DeleteBackupAccessPoint.

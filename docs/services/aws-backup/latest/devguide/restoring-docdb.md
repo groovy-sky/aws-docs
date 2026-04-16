@@ -1,3 +1,7 @@
+---
+title: "Restoring a DocumentDB cluster"
+---
+
 # Restoring a DocumentDB cluster
 
 ## Use the AWS Backup console to restore Amazon DocumentDB recovery points

@@ -1,3 +1,7 @@
+---
+title: "S3ResultItem"
+---
+
 # S3ResultItem
 
 These are the items returned in the results of

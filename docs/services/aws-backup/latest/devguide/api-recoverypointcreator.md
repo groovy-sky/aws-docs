@@ -1,3 +1,7 @@
+---
+title: "RecoveryPointCreator"
+---
+
 # RecoveryPointCreator
 
 Contains information about the backup plan and rule that AWS Backup used to

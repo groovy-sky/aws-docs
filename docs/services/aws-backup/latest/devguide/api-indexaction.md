@@ -1,3 +1,7 @@
+---
+title: "IndexAction"
+---
+
 # IndexAction
 
 This is an optional array within a BackupRule.

@@ -1,3 +1,7 @@
+---
+title: "DeleteRecoveryPoint"
+---
+
 # DeleteRecoveryPoint
 
 Deletes the recovery point specified by a recovery point ID.

@@ -1,3 +1,7 @@
+---
+title: "Restoring an Amazon Aurora cluster"
+---
+
 # Restoring an Amazon Aurora cluster
 
 ## Use the AWS Backup console to restore Aurora recovery points

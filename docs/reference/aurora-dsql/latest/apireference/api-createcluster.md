@@ -1,3 +1,7 @@
+---
+title: "CreateCluster"
+---
+
 # CreateCluster
 
 The CreateCluster API allows you to create both single-Region clusters and multi-Region

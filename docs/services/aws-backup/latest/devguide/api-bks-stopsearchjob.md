@@ -1,3 +1,7 @@
+---
+title: "StopSearchJob"
+---
+
 # StopSearchJob
 
 This operations ends a search job.

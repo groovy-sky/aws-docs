@@ -1,3 +1,7 @@
+---
+title: "Stop a backup job"
+---
+
 # Stop a backup job
 
 You can stop a backup job in AWS Backup after it has been initiated. When you do this, the

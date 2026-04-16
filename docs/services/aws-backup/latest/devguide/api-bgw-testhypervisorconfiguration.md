@@ -1,3 +1,7 @@
+---
+title: "TestHypervisorConfiguration"
+---
+
 # TestHypervisorConfiguration
 
 Tests your hypervisor configuration to validate that backup gateway can connect with the

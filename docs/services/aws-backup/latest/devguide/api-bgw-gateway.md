@@ -1,3 +1,7 @@
+---
+title: "Gateway"
+---
+
 # Gateway
 
 A gateway is an AWS Backup Gateway appliance that runs on the customer's network

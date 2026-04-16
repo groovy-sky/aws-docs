@@ -1,3 +1,7 @@
+---
+title: "Logging Aurora DSQL operations using AWS CloudTrail"
+---
+
 # Logging Aurora DSQL operations using AWS CloudTrail
 
 Amazon Aurora DSQL is integrated with [AWS CloudTrail](../../../awscloudtrail/latest/userguide/cloudtrail-user-guide.md), a service

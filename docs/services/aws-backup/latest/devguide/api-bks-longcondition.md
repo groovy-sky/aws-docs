@@ -1,3 +1,7 @@
+---
+title: "LongCondition"
+---
+
 # LongCondition
 
 The long condition contains a `Value`

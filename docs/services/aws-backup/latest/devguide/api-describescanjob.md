@@ -1,3 +1,7 @@
+---
+title: "DescribeScanJob"
+---
+
 # DescribeScanJob
 
 Returns scan job details for the specified ScanJobID.

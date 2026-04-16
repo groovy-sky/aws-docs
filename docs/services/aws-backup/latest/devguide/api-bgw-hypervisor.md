@@ -1,3 +1,7 @@
+---
+title: "Hypervisor"
+---
+
 # Hypervisor
 
 Represents the hypervisor's permissions to which the gateway will connect.

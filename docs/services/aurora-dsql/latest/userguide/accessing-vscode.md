@@ -1,3 +1,7 @@
+---
+title: "Use Aurora DSQL driver for SQLTools"
+---
+
 # Use Aurora DSQL driver for SQLTools
 
 The Aurora DSQL Driver for SQLTools is a Visual Studio Code

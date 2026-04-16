@@ -1,3 +1,7 @@
+---
+title: "ScanResultInfo"
+---
+
 # ScanResultInfo
 
 Contains information about the results of a scan job.

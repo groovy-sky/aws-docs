@@ -1,3 +1,7 @@
+---
+title: "GetBackupSelection"
+---
+
 # GetBackupSelection
 
 Returns selection metadata and a document in JSON format that specifies a list of

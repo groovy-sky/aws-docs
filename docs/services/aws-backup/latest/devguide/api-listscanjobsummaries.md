@@ -1,3 +1,7 @@
+---
+title: "ListScanJobSummaries"
+---
+
 # ListScanJobSummaries
 
 This is a request for a summary of scan jobs created or running within the most recent 30 days.

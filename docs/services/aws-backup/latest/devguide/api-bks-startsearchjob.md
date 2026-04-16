@@ -1,3 +1,7 @@
+---
+title: "StartSearchJob"
+---
+
 # StartSearchJob
 
 This operation creates a search job which returns

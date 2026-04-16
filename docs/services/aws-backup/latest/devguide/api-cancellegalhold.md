@@ -1,3 +1,7 @@
+---
+title: "CancelLegalHold"
+---
+
 # CancelLegalHold
 
 Removes the specified legal hold on a recovery point. This action can only be performed

@@ -1,3 +1,7 @@
+---
+title: "Backup deletion"
+---
+
 # Backup deletion
 
 We recommend you use AWS Backup to automatically delete the backups that you no longer need by

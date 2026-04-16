@@ -1,3 +1,7 @@
+---
+title: "Restore a Storage Gateway volume"
+---
+
 # Restore a Storage Gateway volume
 
 If you are restoring an AWS Storage Gateway volume snapshot, you can choose to restore the

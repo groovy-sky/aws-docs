@@ -1,3 +1,7 @@
+---
+title: "BackupSelectionsListMember"
+---
+
 # BackupSelectionsListMember
 
 Contains metadata about a `BackupSelection` object.

@@ -1,3 +1,7 @@
+---
+title: "MultiRegionProperties"
+---
+
 # MultiRegionProperties
 
 Defines the structure for multi-Region cluster configurations, containing the witness region and linked cluster settings.

@@ -1,3 +1,7 @@
+---
+title: "SearchJobBackupsResult"
+---
+
 # SearchJobBackupsResult
 
 This contains the information about recovery

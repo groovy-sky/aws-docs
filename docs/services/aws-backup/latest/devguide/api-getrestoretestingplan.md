@@ -1,3 +1,7 @@
+---
+title: "GetRestoreTestingPlan"
+---
+
 # GetRestoreTestingPlan
 
 Returns `RestoreTestingPlan` details for the specified

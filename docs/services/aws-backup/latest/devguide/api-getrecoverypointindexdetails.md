@@ -1,3 +1,7 @@
+---
+title: "GetRecoveryPointIndexDetails"
+---
+
 # GetRecoveryPointIndexDetails
 
 This operation returns the metadata and details specific to

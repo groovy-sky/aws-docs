@@ -1,3 +1,7 @@
+---
+title: "ListRestoreJobs"
+---
+
 # ListRestoreJobs
 
 Returns a list of jobs that AWS Backup initiated to restore a saved resource,

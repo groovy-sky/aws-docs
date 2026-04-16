@@ -1,3 +1,7 @@
+---
+title: "CreateLegalHold"
+---
+
 # CreateLegalHold
 
 Creates a legal hold on a recovery point (backup). A legal hold is a restraint on

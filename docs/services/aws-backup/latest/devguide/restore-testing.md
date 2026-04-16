@@ -1,3 +1,7 @@
+---
+title: "Restore testing"
+---
+
 # Restore testing
 
 _Restore testing_, a feature offered by AWS Backup, provides automated and

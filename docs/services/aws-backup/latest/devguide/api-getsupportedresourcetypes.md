@@ -1,3 +1,7 @@
+---
+title: "GetSupportedResourceTypes"
+---
+
 # GetSupportedResourceTypes
 
 Returns the AWS resource types supported by AWS Backup.

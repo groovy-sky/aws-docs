@@ -1,3 +1,7 @@
+---
+title: "Backup vault creation and deletion"
+---
+
 # Backup vault creation and deletion
 
 You must create at least one vault before creating a backup plan or starting a backup

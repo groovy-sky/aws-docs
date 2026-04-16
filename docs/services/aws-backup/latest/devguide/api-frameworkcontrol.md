@@ -1,3 +1,7 @@
+---
+title: "FrameworkControl"
+---
+
 # FrameworkControl
 
 Contains detailed information about all of the controls of a framework. Each framework

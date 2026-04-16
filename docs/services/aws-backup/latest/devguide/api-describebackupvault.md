@@ -1,3 +1,7 @@
+---
+title: "DescribeBackupVault"
+---
+
 # DescribeBackupVault
 
 Returns metadata about a backup vault specified by its name.

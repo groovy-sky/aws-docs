@@ -1,3 +1,7 @@
+---
+title: "Viewing audit reports"
+---
+
 # Viewing audit reports
 
 You can open, view, and analyze AWS Backup Audit Manager reports using the programs that you

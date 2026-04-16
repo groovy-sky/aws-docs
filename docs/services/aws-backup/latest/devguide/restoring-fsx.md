@@ -1,3 +1,7 @@
+---
+title: "Restore an FSx file system"
+---
+
 # Restore an FSx file system
 
 The restore options that are available when you use AWS Backup to restore Amazon FSx file systems

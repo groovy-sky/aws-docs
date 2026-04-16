@@ -1,3 +1,7 @@
+---
+title: "Restore an RDS database"
+---
+
 # Restore an RDS database
 
 Restoring an Amazon RDS database requires specifying multiple restore options. For more

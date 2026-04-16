@@ -1,3 +1,7 @@
+---
+title: "What is Amazon Aurora DSQL?"
+---
+
 # What is Amazon Aurora DSQL?
 
 Amazon Aurora DSQL is a serverless, distributed relational database service optimized for

@@ -1,3 +1,7 @@
+---
+title: "UpdateTieringConfiguration"
+---
+
 # UpdateTieringConfiguration
 
 This request will send changes to your specified tiering

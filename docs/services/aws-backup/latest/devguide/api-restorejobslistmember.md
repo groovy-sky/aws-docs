@@ -1,3 +1,7 @@
+---
+title: "RestoreJobsListMember"
+---
+
 # RestoreJobsListMember
 
 Contains metadata about a restore job.

@@ -1,3 +1,7 @@
+---
+title: "DisassociateBackupVaultMpaApprovalTeam"
+---
+
 # DisassociateBackupVaultMpaApprovalTeam
 
 Removes the association between an MPA approval team and a backup vault, disabling the MPA approval workflow for restore operations.

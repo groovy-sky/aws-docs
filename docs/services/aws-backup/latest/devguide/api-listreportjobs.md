@@ -1,3 +1,7 @@
+---
+title: "ListReportJobs"
+---
+
 # ListReportJobs
 
 Returns details about your report jobs.

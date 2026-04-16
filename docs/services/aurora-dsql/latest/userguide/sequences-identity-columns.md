@@ -1,3 +1,7 @@
+---
+title: "Sequences and identity columns"
+---
+
 # Sequences and identity columns
 
 Sequences and identity columns generate integer values and are useful when

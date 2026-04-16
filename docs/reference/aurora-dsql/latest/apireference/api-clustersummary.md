@@ -1,3 +1,7 @@
+---
+title: "ClusterSummary"
+---
+
 # ClusterSummary
 
 A summary of the properties of a cluster.

@@ -1,3 +1,7 @@
+---
+title: "DeleteClusterPolicy"
+---
+
 # DeleteClusterPolicy
 
 Deletes the resource-based policy attached to a cluster. This removes all access permissions defined by the policy, reverting to default access controls.

@@ -1,3 +1,7 @@
+---
+title: "ALTER TABLE"
+---
+
 # `ALTER TABLE`
 
 `ALTER TABLE` changes the definition of a table.

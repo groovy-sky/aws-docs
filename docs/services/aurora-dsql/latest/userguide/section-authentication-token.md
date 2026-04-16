@@ -1,3 +1,7 @@
+---
+title: "Generating an authentication token in Amazon Aurora DSQL"
+---
+
 # Generating an authentication token in Amazon Aurora DSQL
 
 To connect to Amazon Aurora DSQL with a SQL client, generate an authentication token to use as
@@ -410,6 +414,10 @@ end
 ```
 
 PHP SDK
+
+###### Tip
+
+AWS recommends using the [Aurora DSQL Connector for PHP PDO\_PGSQL](section-program-with-dsql-connector-for-php-pdo-pgsql.md), which handles token generation automatically.
 
 You can generate the token in the following ways:
 

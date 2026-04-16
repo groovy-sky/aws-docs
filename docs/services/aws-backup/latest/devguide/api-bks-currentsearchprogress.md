@@ -1,3 +1,7 @@
+---
+title: "CurrentSearchProgress"
+---
+
 # CurrentSearchProgress
 
 This contains information results retrieved from

@@ -1,3 +1,7 @@
+---
+title: "ReportSetting"
+---
+
 # ReportSetting
 
 Contains detailed information about a report setting.

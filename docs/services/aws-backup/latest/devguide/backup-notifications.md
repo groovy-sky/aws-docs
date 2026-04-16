@@ -1,3 +1,7 @@
+---
+title: "Notification options with AWS Backup"
+---
+
 # Notification options with AWS Backup
 
 There are two ways to receive notifications about AWS Backup:

@@ -1,3 +1,7 @@
+---
+title: "Delete a backup plan"
+---
+
 # Delete a backup plan
 
 You can delete a backup plan only after all associated selections of resources have been

@@ -1,3 +1,7 @@
+---
+title: "DescribeRestoreJob"
+---
+
 # DescribeRestoreJob
 
 Returns metadata associated with a restore job that is specified by a job ID.

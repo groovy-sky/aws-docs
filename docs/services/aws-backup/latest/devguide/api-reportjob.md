@@ -1,3 +1,7 @@
+---
+title: "ReportJob"
+---
+
 # ReportJob
 
 Contains detailed information about a report job. A report job compiles a report based

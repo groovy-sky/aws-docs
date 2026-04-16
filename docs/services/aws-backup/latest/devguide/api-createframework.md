@@ -1,3 +1,7 @@
+---
+title: "CreateFramework"
+---
+
 # CreateFramework
 
 Creates a framework with one or more controls. A framework is a collection of controls

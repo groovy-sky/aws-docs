@@ -1,3 +1,7 @@
+---
+title: "Using database roles and IAM authentication"
+---
+
 # Using database roles and IAM authentication
 
 Aurora DSQL supports authentication using both IAM roles and IAM users. You can use either method to authenticate and access Aurora DSQL databases.

@@ -1,3 +1,7 @@
+---
+title: "GetHypervisorPropertyMappings"
+---
+
 # GetHypervisorPropertyMappings
 
 This action retrieves the property mappings for the specified hypervisor.

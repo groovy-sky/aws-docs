@@ -1,3 +1,7 @@
+---
+title: "Assign resources using the AWS Backup console"
+---
+
 # Assign resources using the AWS Backup console
 
 ###### To navigate to the **Assign resources** page:

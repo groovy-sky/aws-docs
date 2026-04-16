@@ -1,3 +1,7 @@
+---
+title: "DescribeRegionSettings"
+---
+
 # DescribeRegionSettings
 
 Returns the current service opt-in settings for the Region. If service opt-in is enabled

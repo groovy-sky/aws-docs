@@ -1,3 +1,7 @@
+---
+title: "Deleting report plans"
+---
+
 # Deleting report plans
 
 You can delete an existing report plan. When you delete a report plan, any reports

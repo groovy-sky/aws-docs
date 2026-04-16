@@ -1,3 +1,7 @@
+---
+title: "Access control"
+---
+
 # Access control
 
 You can have valid credentials to authenticate your requests, but unless you have the

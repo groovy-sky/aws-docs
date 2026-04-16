@@ -1,3 +1,7 @@
+---
+title: "Tag"
+---
+
 # Tag
 
 A key-value pair you can use to manage, filter, and search for your resources. Allowed

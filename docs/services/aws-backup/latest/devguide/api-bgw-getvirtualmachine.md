@@ -1,3 +1,7 @@
+---
+title: "GetVirtualMachine"
+---
+
 # GetVirtualMachine
 
 By providing the ARN (Amazon Resource Name), this API returns the virtual machine.

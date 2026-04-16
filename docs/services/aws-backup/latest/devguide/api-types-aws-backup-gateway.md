@@ -1,3 +1,7 @@
+---
+title: "AWS Backup gateway"
+---
+
 # AWS Backup gateway
 
 The following data types are supported by AWS Backup gateway:

@@ -1,3 +1,7 @@
+---
+title: "Amazon Aurora DSQL cluster connectivity tools"
+---
+
 # Amazon Aurora DSQL cluster connectivity tools
 
 Aurora DSQL is compatible with many third-party database drivers and ORM libraries. AWS provides two types of tools to simplify working with Aurora DSQL:

@@ -1,3 +1,7 @@
+---
+title: "ListRestoreJobsByProtectedResource"
+---
+
 # ListRestoreJobsByProtectedResource
 
 This returns restore jobs that contain the specified protected resource.

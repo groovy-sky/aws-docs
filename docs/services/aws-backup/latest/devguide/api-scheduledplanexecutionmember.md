@@ -1,3 +1,7 @@
+---
+title: "ScheduledPlanExecutionMember"
+---
+
 # ScheduledPlanExecutionMember
 
 Contains information about a scheduled backup plan execution, including the execution time, rule type, and associated rule identifier.

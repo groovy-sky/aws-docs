@@ -1,3 +1,7 @@
+---
+title: "ListBackupSelections"
+---
+
 # ListBackupSelections
 
 Returns an array containing metadata of the resources associated with the target backup

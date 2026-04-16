@@ -1,3 +1,7 @@
+---
+title: "Creating clusters with resource-based policies"
+---
+
 # Creating clusters with resource-based policies
 
 You can attach resource-based policies when creating a new cluster to ensure access controls are in place from the start. Each cluster can have a single inline policy attached directly to the cluster.

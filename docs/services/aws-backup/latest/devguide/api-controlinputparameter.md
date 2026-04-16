@@ -1,3 +1,7 @@
+---
+title: "ControlInputParameter"
+---
+
 # ControlInputParameter
 
 The parameters for a control. A control can have zero, one, or more than one

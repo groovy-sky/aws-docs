@@ -1,3 +1,7 @@
+---
+title: "Encryption for backups in AWS Backup"
+---
+
 # Encryption for backups in AWS Backup
 
 ## Independent encryption

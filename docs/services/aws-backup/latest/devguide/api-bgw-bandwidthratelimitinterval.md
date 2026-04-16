@@ -1,3 +1,7 @@
+---
+title: "BandwidthRateLimitInterval"
+---
+
 # BandwidthRateLimitInterval
 
 Describes a bandwidth rate limit interval for a gateway. A bandwidth

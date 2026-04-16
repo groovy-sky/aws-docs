@@ -1,3 +1,7 @@
+---
+title: "GetClusterPolicy"
+---
+
 # GetClusterPolicy
 
 Retrieves the resource-based policy document attached to a cluster. This policy defines the access permissions and conditions for the cluster.

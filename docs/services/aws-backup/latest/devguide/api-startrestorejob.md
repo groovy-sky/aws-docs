@@ -1,3 +1,7 @@
+---
+title: "StartRestoreJob"
+---
+
 # StartRestoreJob
 
 Recovers the saved resource identified by an Amazon Resource Name (ARN).

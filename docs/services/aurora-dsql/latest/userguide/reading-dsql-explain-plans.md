@@ -1,3 +1,7 @@
+---
+title: "Reading Aurora DSQL EXPLAIN plans"
+---
+
 # Reading Aurora DSQL EXPLAIN plans
 
 Understanding how to read EXPLAIN plans is key to optimizing query performance. In this section, we’ll walk through real examples of Aurora DSQL query plans, show how different scan types behave, explain where filters are applied, and highlight opportunities for optimization.

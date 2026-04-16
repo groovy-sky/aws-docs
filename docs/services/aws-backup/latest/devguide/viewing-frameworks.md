@@ -1,3 +1,7 @@
+---
+title: "Viewing framework compliance status"
+---
+
 # Viewing framework compliance status
 
 Once you create an audit framework, it appears in your **Frameworks**

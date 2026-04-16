@@ -1,3 +1,7 @@
+---
+title: "ListGateways"
+---
+
 # ListGateways
 
 Lists backup gateways owned by an AWS account in an AWS Region. The returned list is ordered by gateway Amazon Resource Name (ARN).

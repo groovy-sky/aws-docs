@@ -1,3 +1,7 @@
+---
+title: "LatestMpaApprovalTeamUpdate"
+---
+
 # LatestMpaApprovalTeamUpdate
 
 Contains information about the latest update to an MPA approval team association.

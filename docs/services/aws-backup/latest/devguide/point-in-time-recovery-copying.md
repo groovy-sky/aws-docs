@@ -1,3 +1,7 @@
+---
+title: "Copying continuous backups"
+---
+
 # Copying continuous backups
 
 If a continuous backup rule also specifies a cross-account or cross-Region copy and

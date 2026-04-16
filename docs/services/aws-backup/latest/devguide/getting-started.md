@@ -1,3 +1,7 @@
+---
+title: "Getting started with AWS Backup"
+---
+
 # Getting started with AWS Backup
 
 This tutorial shows you the generic steps for using AWS Backup features and functionality. As

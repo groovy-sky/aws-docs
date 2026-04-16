@@ -1,3 +1,7 @@
+---
+title: "DeleteTieringConfiguration"
+---
+
 # DeleteTieringConfiguration
 
 Deletes the tiering configuration specified by a tiering configuration name.

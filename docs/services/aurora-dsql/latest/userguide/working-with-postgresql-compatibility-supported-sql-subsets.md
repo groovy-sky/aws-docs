@@ -1,3 +1,7 @@
+---
+title: "Supported subsets of SQL commands in Aurora DSQL"
+---
+
 # Supported subsets of SQL commands in Aurora DSQL
 
 This section provides detailed information about supported SQL commands,

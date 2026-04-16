@@ -1,3 +1,7 @@
+---
+title: "Creating on-demand reports"
+---
+
 # Creating on-demand reports
 
 You can generate new reports at your convenience by creating an on-demand report with

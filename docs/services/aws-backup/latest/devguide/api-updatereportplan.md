@@ -1,3 +1,7 @@
+---
+title: "UpdateReportPlan"
+---
+
 # UpdateReportPlan
 
 Updates the specified report plan.

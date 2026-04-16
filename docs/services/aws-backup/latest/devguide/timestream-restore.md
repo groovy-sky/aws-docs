@@ -1,3 +1,7 @@
+---
+title: "Restore an Amazon Timestream table"
+---
+
 # Restore an Amazon Timestream table
 
 When you restore a Amazon Timestream table, there are several options to configure, including

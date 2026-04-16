@@ -1,3 +1,7 @@
+---
+title: "GetBackupPlanFromTemplate"
+---
+
 # GetBackupPlanFromTemplate
 
 Returns the template specified by its `templateId` as a backup plan.

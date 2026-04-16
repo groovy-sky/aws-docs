@@ -1,3 +1,7 @@
+---
+title: "Use the PostgreSQL interactive terminal (psql) to access Aurora DSQL"
+---
+
 # Use the PostgreSQL interactive terminal (psql) to access Aurora DSQL
 
 ## Use AWS CloudShell to access Aurora DSQL with the PostgreSQL interactive terminal (psql)

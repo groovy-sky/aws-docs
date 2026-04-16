@@ -1,3 +1,7 @@
+---
+title: "Backup vaults"
+---
+
 # Backup vaults
 
 In AWS Backup, a _backup vault_ is a container that stores and organizes your

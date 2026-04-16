@@ -1,3 +1,7 @@
+---
+title: "DeleteRestoreTestingPlan"
+---
+
 # DeleteRestoreTestingPlan
 
 This request deletes the specified restore testing plan.

@@ -1,3 +1,7 @@
+---
+title: "Assign resources with AWS CLI"
+---
+
 # Assign resources with AWS CLI
 
 ## Filter by services or resource types

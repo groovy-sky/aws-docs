@@ -1,3 +1,7 @@
+---
+title: "Working with Aurora DSQL EXPLAIN plans"
+---
+
 # Working with Aurora DSQL EXPLAIN plans
 
 Aurora DSQL uses a similar EXPLAIN plan structure to PostgreSQL,

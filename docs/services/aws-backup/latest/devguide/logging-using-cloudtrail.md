@@ -1,3 +1,7 @@
+---
+title: "Logging AWS Backup API calls with CloudTrail"
+---
+
 # Logging AWS Backup API calls with CloudTrail
 
 AWS Backup is integrated with [AWS CloudTrail](../../../awscloudtrail/latest/userguide/cloudtrail-user-guide.md) a service that provides a record of actions taken by a user, role, or an

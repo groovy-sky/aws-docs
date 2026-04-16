@@ -1,3 +1,7 @@
+---
+title: "ScanJob"
+---
+
 # ScanJob
 
 Contains metadata about a scan job, including information about the scanning process, results, and associated resources.

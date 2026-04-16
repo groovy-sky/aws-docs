@@ -1,3 +1,7 @@
+---
+title: "GetBandwidthRateLimitSchedule"
+---
+
 # GetBandwidthRateLimitSchedule
 
 Retrieves the bandwidth rate limit schedule for a specified gateway.

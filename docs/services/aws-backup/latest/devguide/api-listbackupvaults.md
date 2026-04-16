@@ -1,3 +1,7 @@
+---
+title: "ListBackupVaults"
+---
+
 # ListBackupVaults
 
 Returns a list of recovery point storage containers along with information about

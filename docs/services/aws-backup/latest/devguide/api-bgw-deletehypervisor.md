@@ -1,3 +1,7 @@
+---
+title: "DeleteHypervisor"
+---
+
 # DeleteHypervisor
 
 Deletes a hypervisor.

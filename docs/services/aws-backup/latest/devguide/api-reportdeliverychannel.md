@@ -1,3 +1,7 @@
+---
+title: "ReportDeliveryChannel"
+---
+
 # ReportDeliveryChannel
 
 Contains information from your report plan about where to deliver your reports,

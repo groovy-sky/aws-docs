@@ -1,3 +1,7 @@
+---
+title: "ListScanJobs"
+---
+
 # ListScanJobs
 
 Returns a list of existing scan jobs for an authenticated account for the last 30 days.

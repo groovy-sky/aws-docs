@@ -1,3 +1,7 @@
+---
+title: "Working with hypervisors"
+---
+
 # Working with hypervisors
 
 After you finish [Creating a gateway](working-with-gateways.md#create-gateway), you

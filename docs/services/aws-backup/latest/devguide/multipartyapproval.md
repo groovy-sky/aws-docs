@@ -1,3 +1,7 @@
+---
+title: "Multi-party approval for logically air-gapped vaults"
+---
+
 # Multi-party approval for logically air-gapped vaults
 
 ## Overview of Multi-party approval in a logically air-gapped vault

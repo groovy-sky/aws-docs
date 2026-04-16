@@ -1,3 +1,7 @@
+---
+title: "Removing the only continuous backup rule from a backup plan"
+---
+
 # Removing the only continuous backup rule from a backup plan
 
 When you create a backup plan with a continuous backup rule and then you remove that

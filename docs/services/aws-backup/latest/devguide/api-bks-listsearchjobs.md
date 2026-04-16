@@ -1,3 +1,7 @@
+---
+title: "ListSearchJobs"
+---
+
 # ListSearchJobs
 
 This operation returns a list of search jobs belonging

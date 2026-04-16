@@ -1,3 +1,7 @@
+---
+title: "GetBackupVaultNotifications"
+---
+
 # GetBackupVaultNotifications
 
 Returns event notifications for the specified backup vault.

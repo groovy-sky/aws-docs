@@ -1,3 +1,7 @@
+---
+title: "Amazon Redshift backups"
+---
+
 # Amazon Redshift backups
 
 Amazon Redshift is a fully managed, scalable cloud data warehouse that accelerates your time to

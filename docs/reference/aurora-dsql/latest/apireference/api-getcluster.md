@@ -1,3 +1,7 @@
+---
+title: "GetCluster"
+---
+
 # GetCluster
 
 Retrieves information about a cluster.

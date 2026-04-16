@@ -1,3 +1,7 @@
+---
+title: "Viewing resource-based policies"
+---
+
 # Viewing resource-based policies
 
 You can view resource-based policies attached to your clusters to understand the current access controls in place.

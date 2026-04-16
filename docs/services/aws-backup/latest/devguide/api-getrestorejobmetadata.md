@@ -1,3 +1,7 @@
+---
+title: "GetRestoreJobMetadata"
+---
+
 # GetRestoreJobMetadata
 
 This request returns the metadata for the specified restore job.

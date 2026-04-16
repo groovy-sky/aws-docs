@@ -1,3 +1,7 @@
+---
+title: "DeleteBackupVaultNotifications"
+---
+
 # DeleteBackupVaultNotifications
 
 Deletes event notifications for the specified backup vault.

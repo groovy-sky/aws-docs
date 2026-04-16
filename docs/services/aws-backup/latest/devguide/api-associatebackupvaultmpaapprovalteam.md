@@ -1,3 +1,7 @@
+---
+title: "AssociateBackupVaultMpaApprovalTeam"
+---
+
 # AssociateBackupVaultMpaApprovalTeam
 
 Associates an MPA approval team with a backup vault.

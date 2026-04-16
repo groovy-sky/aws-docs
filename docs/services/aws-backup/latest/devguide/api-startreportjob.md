@@ -1,3 +1,7 @@
+---
+title: "StartReportJob"
+---
+
 # StartReportJob
 
 Starts an on-demand report job for the specified report plan.

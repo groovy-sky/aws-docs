@@ -1,3 +1,7 @@
+---
+title: "Programming with Aurora DSQL"
+---
+
 # Programming with Aurora DSQL
 
 Aurora DSQL provides you with the following tools to manage your Aurora DSQL resources

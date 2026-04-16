@@ -1,3 +1,7 @@
+---
+title: "Supported data types in Aurora DSQL"
+---
+
 # Supported data types in Aurora DSQL
 
 Aurora DSQL supports a subset of the common PostgreSQL types.

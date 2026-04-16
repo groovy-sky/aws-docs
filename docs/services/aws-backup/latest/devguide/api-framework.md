@@ -1,3 +1,7 @@
+---
+title: "Framework"
+---
+
 # Framework
 
 Contains detailed information about a framework. Frameworks contain controls, which

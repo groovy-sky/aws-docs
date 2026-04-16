@@ -1,3 +1,7 @@
+---
+title: "Lifecycle"
+---
+
 # Lifecycle
 
 Specifies the time period, in days, before a recovery point transitions to cold storage

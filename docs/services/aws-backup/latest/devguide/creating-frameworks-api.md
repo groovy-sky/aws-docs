@@ -1,3 +1,7 @@
+---
+title: "Creating frameworks using the AWS Backup API"
+---
+
 # Creating frameworks using the AWS Backup API
 
 The following table contains sample API requests to [CreateFramework](api-createframework.md) for each control, along with sample API responses to

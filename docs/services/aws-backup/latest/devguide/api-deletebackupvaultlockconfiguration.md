@@ -1,3 +1,7 @@
+---
+title: "DeleteBackupVaultLockConfiguration"
+---
+
 # DeleteBackupVaultLockConfiguration
 
 Deletes AWS Backup Vault Lock from a backup vault specified by a backup vault

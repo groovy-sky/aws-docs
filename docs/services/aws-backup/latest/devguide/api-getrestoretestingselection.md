@@ -1,3 +1,7 @@
+---
+title: "GetRestoreTestingSelection"
+---
+
 # GetRestoreTestingSelection
 
 Returns RestoreTestingSelection, which displays resources

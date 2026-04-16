@@ -1,3 +1,7 @@
+---
+title: "CREATE TABLE"
+---
+
 # `CREATE TABLE`
 
 `CREATE TABLE` defines a new table.

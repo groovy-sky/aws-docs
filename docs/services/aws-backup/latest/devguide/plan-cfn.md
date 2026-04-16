@@ -1,3 +1,7 @@
+---
+title: "CloudFormation templates for backup plans"
+---
+
 # CloudFormation templates for backup plans
 
 We provide three sample CloudFormation templates for your reference. The first template creates a

@@ -1,3 +1,7 @@
+---
+title: "Restore an SAP HANA database on an Amazon EC2 instance"
+---
+
 # Restore an SAP HANA database on an Amazon EC2 instance
 
 SAP HANA databases on EC2 instances can be restored using the AWS Backup console, using API,

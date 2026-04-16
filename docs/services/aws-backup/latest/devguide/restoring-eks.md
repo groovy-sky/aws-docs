@@ -1,3 +1,7 @@
+---
+title: "Restore an Amazon EKS cluster"
+---
+
 # Restore an Amazon EKS cluster
 
 You can restore EKS cluster backups using the AWS Backup console or CLI.
